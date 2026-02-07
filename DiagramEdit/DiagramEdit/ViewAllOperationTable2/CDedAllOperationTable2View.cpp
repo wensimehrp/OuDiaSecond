@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍAtake-okm‚ªì¬‚µ‚½OuDia‚ğ‰ü‘¢‚µ‚½ƒ\ƒtƒgƒEƒFƒA‚Å‚·B
-‚±‚ÌƒvƒƒOƒ‰ƒ€—˜—p‚É‚Â‚¢‚Ä‚ÍAtake-okm‹LÚ‚Ì‰º‹L•¶‘‚É€‹’‚µ‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã€take-okmæ°ãŒä½œæˆã—ãŸOuDiaã‚’æ”¹é€ ã—ãŸã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ åˆ©ç”¨ã«ã¤ã„ã¦ã¯ã€take-okmæ°è¨˜è¼‰ã®ä¸‹è¨˜æ–‡æ›¸ã«æº–æ‹ ã—ã¾ã™ã€‚
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,40 +35,40 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(–ó: 
+(è¨³: 
 
-	OuDia - —ñÔ•\‚ğ‚à‚Æ‚ÉAƒ_ƒCƒ„ƒOƒ‰ƒ€‚ğ•`‰æ‚·‚éWin32ƒAƒvƒŠƒP[ƒV
-ƒ‡ƒ“B
+	OuDia - åˆ—è»Šæ™‚åˆ»è¡¨ã‚’ã‚‚ã¨ã«ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚’æç”»ã™ã‚‹Win32ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·
+ãƒ§ãƒ³ã€‚
 
 Copyright (C) 2006-2017 take-okm 
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍƒtƒŠ[ƒ\ƒtƒgƒEƒFƒA‚Å‚·B‚ ‚È‚½‚Í‚±‚ê‚ğAƒtƒŠ[ƒ\ƒtƒgƒEƒFƒAà
-’c‚É‚æ‚Á‚Ä”­s‚³‚ê‚½GNU ˆê”ÊŒöO—˜—p‹–‘ø‘(ƒo[ƒWƒ‡ƒ“3‚©A‚»‚êˆÈ~‚Ìƒo[ƒWƒ‡
-ƒ“‚Ì‚¤‚¿‚Ç‚ê‚©)‚ª’è‚ß‚éğŒ‚Ì‰º‚ÅÄ”Ğ•z‚Ü‚½‚Í‰ü•Ï ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚ã‚ãªãŸã¯ã“ã‚Œã‚’ã€ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢è²¡
+å›£ã«ã‚ˆã£ã¦ç™ºè¡Œã•ã‚ŒãŸGNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸(ãƒãƒ¼ã‚¸ãƒ§ãƒ³3ã‹ã€ãã‚Œä»¥é™ã®ãƒãƒ¼ã‚¸ãƒ§
+ãƒ³ã®ã†ã¡ã©ã‚Œã‹)ãŒå®šã‚ã‚‹æ¡ä»¶ã®ä¸‹ã§å†é ’å¸ƒã¾ãŸã¯æ”¹å¤‰ ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚Í—L—p‚Å‚ ‚é‚±‚Æ‚ğŠè‚Á‚Ä”Ğ•z‚³‚ê‚Ü‚·‚ªA*‘S‚­‚Ì–³•ÛØ *‚Å‚·B
-¤‹Æ‰Â”\«‚Ì•ÛØ‚â“Á’è–Ú“I‚Ö‚Ì“K‡«‚ÍAŒ¾ŠO‚É¦‚³‚ê‚½‚à‚Ì‚à ŠÜ‚ßA‘S‚­‘¶İ
-‚µ‚Ü‚¹‚ñBÚ‚µ‚­‚ÍGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ğ‚²——‚­‚¾‚³‚¢B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯æœ‰ç”¨ã§ã‚ã‚‹ã“ã¨ã‚’é¡˜ã£ã¦é ’å¸ƒã•ã‚Œã¾ã™ãŒã€*å…¨ãã®ç„¡ä¿è¨¼ *ã§ã™ã€‚
+å•†æ¥­å¯èƒ½æ€§ã®ä¿è¨¼ã‚„ç‰¹å®šç›®çš„ã¸ã®é©åˆæ€§ã¯ã€è¨€å¤–ã«ç¤ºã•ã‚ŒãŸã‚‚ã®ã‚‚ å«ã‚ã€å…¨ãå­˜åœ¨
+ã—ã¾ã›ã‚“ã€‚è©³ã—ãã¯GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã‚’ã”è¦§ãã ã•ã„ã€‚
 
-‚ ‚È‚½‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚Æ‹¤‚ÉAGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ÌƒRƒs[‚ğˆê•” ó‚¯æ‚Á
-‚Ä‚¢‚é‚Í‚¸‚Å‚·B‚à‚µó‚¯æ‚Á‚Ä‚¢‚È‚¯‚ê‚ÎA<http://www.gnu.org/licenses/> ‚ğ
-‚²——‚­‚¾‚³‚¢B
+ã‚ãªãŸã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¨å…±ã«ã€GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã®ã‚³ãƒ”ãƒ¼ã‚’ä¸€éƒ¨ å—ã‘å–ã£
+ã¦ã„ã‚‹ã¯ãšã§ã™ã€‚ã‚‚ã—å—ã‘å–ã£ã¦ã„ãªã‘ã‚Œã°ã€<http://www.gnu.org/licenses/> ã‚’
+ã”è¦§ãã ã•ã„ã€‚
 
 )
 
-  ‰Á‚¦‚ÄA“Á•Ê‚È—áŠO‚Æ‚µ‚ÄAtake-okm ‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÌƒR[ƒh‚ğ 
+  åŠ ãˆã¦ã€ç‰¹åˆ¥ãªä¾‹å¤–ã¨ã—ã¦ã€take-okm ã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ã‚³ãƒ¼ãƒ‰ã‚’ 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ‚ ‚é‚¢‚Í "MFC Version 9.0" ‚Æ“¯‚¶ƒ‰ƒCƒZƒ“ƒX‚ª“K—p‚³‚ê‚½
-  "MFC Version 9.0" ‚Ì‰ü•Ï‚³‚ê‚½ƒo[ƒWƒ‡ƒ“)‚ÆƒŠƒ“ƒN‚µA
-  ƒŠƒ“ƒN‚³‚ê‚½—¼Ò‚ğŠÜ‚ŞŒ‹‡’˜ì•¨‚ğ”Ğ•z‚·‚é‹–‰Â‚ğ—^‚¦‚Ü‚·B
-  ‚ ‚È‚½‚Í "MFC" ˆÈŠO‚Åg‚í‚ê‚Ä‚¢‚é‚·‚×‚Ä
-  ‚ÌƒR[ƒh‚ÉŠÖ‚µ‚Ä‚Í‘S–Ê“I‚ÉGNUˆê”ÊŒöO—˜—p‹–‘øŒ_–ñ‘‚É]‚í‚È‚¯‚ê‚Î
-  ‚È‚è‚Ü‚¹‚ñB‚ ‚È‚½‚ª‚±‚Ìƒtƒ@ƒCƒ‹‚ğ‰ü•Ï‚µ‚½‚È‚ç‚ÎA‚ ‚È‚½‚Í‚±‚Ì—áŠO
-  ‚ğ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚Ìƒtƒ@ƒCƒ‹‚Éˆø‚«‘±‚«İ‚¯‚é‚±‚Æ‚à‚Å‚«‚Ü‚·‚ªA‚»
-  ‚¤‚·‚é‹`–±‚Í‚ ‚è‚Ü‚¹‚ñB‚à‚µ—áŠO‚ğİ‚¯‚½‚­‚È‚¯‚ê‚ÎA‚±‚Ì—áŠOğ€‚ğ
-  ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚©‚ç‚Ííœ‚µ‚Ä‚­‚¾‚³‚¢B)
+  (  ã‚ã‚‹ã„ã¯ "MFC Version 9.0" ã¨åŒã˜ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ãŒé©ç”¨ã•ã‚ŒãŸ
+  "MFC Version 9.0" ã®æ”¹å¤‰ã•ã‚ŒãŸãƒãƒ¼ã‚¸ãƒ§ãƒ³)ã¨ãƒªãƒ³ã‚¯ã—ã€
+  ãƒªãƒ³ã‚¯ã•ã‚ŒãŸä¸¡è€…ã‚’å«ã‚€çµåˆè‘—ä½œç‰©ã‚’é ’å¸ƒã™ã‚‹è¨±å¯ã‚’ä¸ãˆã¾ã™ã€‚
+  ã‚ãªãŸã¯ "MFC" ä»¥å¤–ã§ä½¿ã‚ã‚Œã¦ã„ã‚‹ã™ã¹ã¦
+  ã®ã‚³ãƒ¼ãƒ‰ã«é–¢ã—ã¦ã¯å…¨é¢çš„ã«GNUä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾å¥‘ç´„æ›¸ã«å¾“ã‚ãªã‘ã‚Œã°
+  ãªã‚Šã¾ã›ã‚“ã€‚ã‚ãªãŸãŒã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ”¹å¤‰ã—ãŸãªã‚‰ã°ã€ã‚ãªãŸã¯ã“ã®ä¾‹å¤–
+  ã‚’ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®ãƒ•ã‚¡ã‚¤ãƒ«ã«å¼•ãç¶šãè¨­ã‘ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ãŒã€ã
+  ã†ã™ã‚‹ç¾©å‹™ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ã‚‚ã—ä¾‹å¤–ã‚’è¨­ã‘ãŸããªã‘ã‚Œã°ã€ã“ã®ä¾‹å¤–æ¡é …ã‚’
+  ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‹ã‚‰ã¯å‰Šé™¤ã—ã¦ãã ã•ã„ã€‚)
 */
-// CDedAllOperationTable2View.cpp : ƒCƒ“ƒvƒŠƒƒ“ƒe[ƒVƒ‡ƒ“ ƒtƒ@ƒCƒ‹
+// CDedAllOperationTable2View.cpp : ã‚¤ãƒ³ãƒ—ãƒªãƒ¡ãƒ³ãƒ†ãƒ¼ã‚·ãƒ§ãƒ³ ãƒ•ã‚¡ã‚¤ãƒ«
 //	$Id: CDedAllOperationTable2View.cpp 
 
 #include "stdafx.h"
@@ -76,18 +76,18 @@ Copyright (C) 2006-2017 take-okm
 #include "NsMu/CaMuPtref.h"
 #include "NsOu/dynamic_castOu.h"
 #include "NsOu/OuNew.h"
-#include "LogMsg\LogMsg.h"
-#include "DcDraw\CConverter_WinGdi.h"
-#include "DcDraw\CaDcdTargetItemPosition.h"
+#include "LogMsgÂ¥LogMsg.h"
+#include "DcDrawÂ¥CConverter_WinGdi.h"
+#include "DcDrawÂ¥CaDcdTargetItemPosition.h"
 #include "DcDrawMfc/CDcdTargetMfcPrintInfo.h"
 #include "DcDraw/print/CaDcdTargetZoomDisplay.h"
 #include "str/strToInt.h"
 
-#include "..\diagramedit.h"
-#include "..\entDed\CentDedRosen.h"
-#include "..\CRfEditCmdHolder.h"
-#include "..\DedRosenFileData\EditCmd\EditCmd.h"
-#include "..\Print\CconvCdPrintPageProp.h"
+#include "..Â¥diagramedit.h"
+#include "..Â¥entDedÂ¥CentDedRosen.h"
+#include "..Â¥CRfEditCmdHolder.h"
+#include "..Â¥DedRosenFileDataÂ¥EditCmdÂ¥EditCmd.h"
+#include "..Â¥PrintÂ¥CconvCdPrintPageProp.h"
 #include "CaDcdAllOperationTable2_PageSelector.h"
 #include "CDedAllOperationTable2View.h"
 #include "CDlgAllOperationTable2ViewProp.h"
@@ -101,12 +101,12 @@ using namespace DcDrawLib::DcDrawMfc;
 /////////////////////////////////////////////////////////////////////////////
 // CDedAllOperationTable2View
 /**
-	ƒ_ƒCƒ„ƒOƒ‰ƒ€À•W‚Ì‹–—eŒë·’l
+	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åº§æ¨™ã®è¨±å®¹èª¤å·®å€¤
 */
 const int ALLOWED_DIFFERENCE = 1 ;
 
 // --------------------------------
-//@name OnUpdate‰º¿ŠÖ”
+//@name OnUpdateä¸‹è«‹é–¢æ•°
 // --------------------------------
 
 void CDedAllOperationTable2View::splitOperationNumber(
@@ -131,7 +131,7 @@ void CDedAllOperationTable2View::splitOperationNumber(
 				strOperationNumberOut.push_back(tstring());
 				break;
 			}
-			//”š‚Ìê‡
+			//æ•°å­—ã®å ´åˆ
 			bIsDigit = true;
 		}
 		else
@@ -142,7 +142,7 @@ void CDedAllOperationTable2View::splitOperationNumber(
 				strOperationNumberOut.push_back(strOperationNumberTemp);
 				break;
 			}
-			//‚»‚êˆÈŠO‚Ìê‡
+			//ãã‚Œä»¥å¤–ã®å ´åˆ
 			bIsDigit = false;
 		}
 		idx++;
@@ -171,7 +171,7 @@ void CDedAllOperationTable2View::splitOperationNumber(
 			}
 			if (_istdigit(strOperationNumberTemp[idx]) != 0)
 			{
-				//idxˆÊ’u‚ª”š‚ÅAæ“ª‚ª•¶š‚Ìê‡
+				//idxä½ç½®ãŒæ•°å­—ã§ã€å…ˆé ­ãŒæ–‡å­—ã®å ´åˆ
 				if (!bIsDigit)
 				{
 					iOperationNumber.push_back(INT_MIN);
@@ -183,7 +183,7 @@ void CDedAllOperationTable2View::splitOperationNumber(
 			}
 			else
 			{
-				//idxˆÊ’u‚ª•¶š‚ÅAæ“ª‚ª”š‚Ìê‡
+				//idxä½ç½®ãŒæ–‡å­—ã§ã€å…ˆé ­ãŒæ•°å­—ã®å ´åˆ
 				if (bIsDigit)
 				{
 					iOperationNumber.push_back(
@@ -227,7 +227,7 @@ bool CDedAllOperationTable2View::SortOperationNumber(
 		for (int idx = 1; idx <= iMin; idx++)
 		{
 			// --------------------------------
-			//	- ”š‚Æ‚»‚êˆÈŠO‚Å‚Í”š‚Ì•û‚ªæ
+			//	- æ•°å­—ã¨ãã‚Œä»¥å¤–ã§ã¯æ•°å­—ã®æ–¹ãŒå…ˆ
 			// --------------------------------
 			{
 				if (iOperationNumber1[iSize1 - idx] != INT_MIN && iOperationNumber2[iSize2 - idx] == INT_MIN)
@@ -242,9 +242,9 @@ bool CDedAllOperationTable2View::SortOperationNumber(
 
 			if (iOperationNumber1[iSize1 - idx] == INT_MIN)
 			{
-				//‹¤‚É”šˆÈŠO‚Ìê‡A•¶š”¨«‘‡
+				//å…±ã«æ•°å­—ä»¥å¤–ã®å ´åˆã€æ–‡å­—æ•°â†’è¾æ›¸é †
 				// --------------------------------
-				//	- •¶š•”‚Ì’·‚³‚ª’Z‚¢•û‚ªæ
+				//	- æ–‡å­—éƒ¨ã®é•·ã•ãŒçŸ­ã„æ–¹ãŒå…ˆ
 				// --------------------------------
 				{
 					if (strOperationNumber1Part[iSize1 - idx].length() < strOperationNumber2Part[iSize2 - idx].length())
@@ -257,7 +257,7 @@ bool CDedAllOperationTable2View::SortOperationNumber(
 					}
 				}
 				// --------------------------------
-				//	- •¶š•”‚ª«‘‡‚Å‘‚¢•û‚ªæB
+				//	- æ–‡å­—éƒ¨ãŒè¾æ›¸é †ã§æ—©ã„æ–¹ãŒå…ˆã€‚
 				// --------------------------------
 				{
 					if (strOperationNumber1Part[iSize1 - idx] < strOperationNumber2Part[iSize2 - idx])
@@ -272,9 +272,9 @@ bool CDedAllOperationTable2View::SortOperationNumber(
 			}
 			else
 			{
-				//‹¤‚É”š‚Ìê‡A”š‚Ì‘å¬
+				//å…±ã«æ•°å­—ã®å ´åˆã€æ•°å­—ã®å¤§å°
 				// --------------------------------
-				//	- ”š‚ª¬‚³‚¢‚à‚Ì‚ªæ
+				//	- æ•°å­—ãŒå°ã•ã„ã‚‚ã®ãŒå…ˆ
 				// --------------------------------
 				{
 					if (iOperationNumber1[iSize1 - idx] < iOperationNumber2[iSize2 - idx])
@@ -296,7 +296,7 @@ bool CDedAllOperationTable2View::SortOperationNumber(
 		for (int idx = 0; idx < iMin; idx++)
 		{
 			// --------------------------------
-			//	- ”š‚Æ‚»‚êˆÈŠO‚Å‚Í”š‚Ì•û‚ªæ
+			//	- æ•°å­—ã¨ãã‚Œä»¥å¤–ã§ã¯æ•°å­—ã®æ–¹ãŒå…ˆ
 			// --------------------------------
 			{
 				if (iOperationNumber1[idx] != INT_MIN && iOperationNumber2[idx] == INT_MIN)
@@ -311,9 +311,9 @@ bool CDedAllOperationTable2View::SortOperationNumber(
 
 			if (iOperationNumber1[idx] == INT_MIN)
 			{
-				//‹¤‚É”šˆÈŠO‚Ìê‡A•¶š”¨«‘‡
+				//å…±ã«æ•°å­—ä»¥å¤–ã®å ´åˆã€æ–‡å­—æ•°â†’è¾æ›¸é †
 				// --------------------------------
-				//	- •¶š•”‚Ì’·‚³‚ª’Z‚¢•û‚ªæ
+				//	- æ–‡å­—éƒ¨ã®é•·ã•ãŒçŸ­ã„æ–¹ãŒå…ˆ
 				// --------------------------------
 				{
 					if (strOperationNumber1Part[idx].length() < strOperationNumber2Part[idx].length())
@@ -326,7 +326,7 @@ bool CDedAllOperationTable2View::SortOperationNumber(
 					}
 				}
 				// --------------------------------
-				//	- •¶š•”‚ª«‘‡‚Å‘‚¢•û‚ªæB
+				//	- æ–‡å­—éƒ¨ãŒè¾æ›¸é †ã§æ—©ã„æ–¹ãŒå…ˆã€‚
 				// --------------------------------
 				{
 					if (strOperationNumber1Part[idx] < strOperationNumber2Part[idx])
@@ -341,9 +341,9 @@ bool CDedAllOperationTable2View::SortOperationNumber(
 			}
 			else
 			{
-				//‹¤‚É”š‚Ìê‡A”š‚Ì‘å¬
+				//å…±ã«æ•°å­—ã®å ´åˆã€æ•°å­—ã®å¤§å°
 				// --------------------------------
-				//	- ”š‚ª¬‚³‚¢‚à‚Ì‚ªæ
+				//	- æ•°å­—ãŒå°ã•ã„ã‚‚ã®ãŒå…ˆ
 				// --------------------------------
 				{
 					if (iOperationNumber1[idx] < iOperationNumber2[idx])
@@ -360,7 +360,7 @@ bool CDedAllOperationTable2View::SortOperationNumber(
 		}
 	}
 	// --------------------------------
-	//	- —v‘f”‚ª­‚È‚¢‚à‚Ì‚ªæ
+	//	- è¦ç´ æ•°ãŒå°‘ãªã„ã‚‚ã®ãŒå…ˆ
 	// --------------------------------
 	{
 		if (iOperationNumber1.size() < iOperationNumber2.size())
@@ -394,9 +394,9 @@ bool CDedAllOperationTable2View::SortOperation(
 	if (m_eOperationSort == EOperationSort_OperationNumber)
 	{
 		/**
-			‰^—p”Ô†‡
-			‰^—p”Ô†‚ğCompareBottom‚ÉŠî‚Ã‚­‡‚Å”»’è‚µ‚Ü‚·
-			“¯ˆê‚Ì‰^—p”Ô†‚Í–³‚¢‚Ì‚ÅAŒ‹‰Ê‚ÍˆêˆÓ‚ÉŒˆ‚Ü‚è‚Ü‚·
+			é‹ç”¨ç•ªå·é †
+			é‹ç”¨ç•ªå·ã‚’CompareBottomã«åŸºã¥ãé †ã§åˆ¤å®šã—ã¾ã™
+			åŒä¸€ã®é‹ç”¨ç•ªå·ã¯ç„¡ã„ã®ã§ã€çµæœã¯ä¸€æ„ã«æ±ºã¾ã‚Šã¾ã™
 		*/
 		return SortOperationNumber(strOperationNumber1, strOperationNumber2);
 	}
@@ -404,16 +404,16 @@ bool CDedAllOperationTable2View::SortOperation(
 		m_eOperationSort == EOperationSort_InEki)
 	{
 		/**
-			o‹æ‰w‡
-			(1)o‹æ‰w‡
-			(2)”­‡
-			(3)‰^—p”Ô†‡‚Å•À‚×‚Ü‚·
-			(1)o‹æ‰w‡‚ÍA•ªŠò‰w‚Ìê‡iPosition=0‚Ì‰w‚ÉW–ñ‚µ‚Ü‚·B
-				‚Ü‚½A˜HüŠOn”­‚Ìê‡Aƒˆ‚Èo‹æ‚æ‚è‚àŒã‚É‚È‚èA
-				˜HüŠOn”­“¯m‚Ìê‡A˜HüŠOn”­‰wIndex‚ª¬‚³‚¢‚à‚Ì‚ªæ‚É‚È‚è‚Ü‚·
-			(2)o‹æ‰w‚ªˆê’v‚µ‚Ä‚¢‚éê‡A”­‡‚Å•À‚×‚Ü‚·B
-				‚È‚¨A˜HüŠOn”­‰w‚ªˆê’v‚µ‚Ä‚¢‚éê‡‚ÍA˜HüŠOn”­‰w”­‚Å”äŠr‚µ‚Ü‚·
-			(3)o‹æ‰wi˜HüŠOn”­‰wjA”­‚ªˆê’v‚µ‚Ä‚¢‚éê‡‚ÍA‰^—p”Ô†‡‚Å•À‚×‚Ü‚·B
+			å‡ºåŒºé§…é †
+			(1)å‡ºåŒºé§…é †
+			(2)ç™ºæ™‚åˆ»é †
+			(3)é‹ç”¨ç•ªå·é †ã§ä¸¦ã¹ã¾ã™
+			(1)å‡ºåŒºé§…é †ã¯ã€åˆ†å²é§…ã®å ´åˆiPosition=0ã®é§…ã«é›†ç´„ã—ã¾ã™ã€‚
+				ã¾ãŸã€è·¯ç·šå¤–å§‹ç™ºã®å ´åˆã€ç´”ç²‹ãªå‡ºåŒºã‚ˆã‚Šã‚‚å¾Œã«ãªã‚Šã€
+				è·¯ç·šå¤–å§‹ç™ºåŒå£«ã®å ´åˆã€è·¯ç·šå¤–å§‹ç™ºé§…IndexãŒå°ã•ã„ã‚‚ã®ãŒå…ˆã«ãªã‚Šã¾ã™
+			(2)å‡ºåŒºé§…ãŒä¸€è‡´ã—ã¦ã„ã‚‹å ´åˆã€ç™ºæ™‚åˆ»é †ã§ä¸¦ã¹ã¾ã™ã€‚
+				ãªãŠã€è·¯ç·šå¤–å§‹ç™ºé§…ãŒä¸€è‡´ã—ã¦ã„ã‚‹å ´åˆã¯ã€è·¯ç·šå¤–å§‹ç™ºé§…ç™ºæ™‚åˆ»ã§æ¯”è¼ƒã—ã¾ã™
+			(3)å‡ºåŒºé§…ï¼ˆè·¯ç·šå¤–å§‹ç™ºé§…ï¼‰ã€ç™ºæ™‚åˆ»ãŒä¸€è‡´ã—ã¦ã„ã‚‹å ´åˆã¯ã€é‹ç”¨ç•ªå·é †ã§ä¸¦ã¹ã¾ã™ã€‚
 		*/
 
 		if (iEkiIndex1 < iEkiIndex2)
@@ -449,10 +449,10 @@ bool CDedAllOperationTable2View::SortOperation(
 		m_eOperationSort == EOperationSort_InJikoku)
 	{
 		/**
-			”­‡
-			(1)”­‡
-			(2)‰^—p”Ô†‡‚Å•À‚×‚Ü‚·B
-			(1)”­‡‚ÍA˜HüŠOn”­‚Ìê‡A˜HüŠOn”­‰w”­‚ğ—p‚¢‚Ä”äŠr‚µ‚Ü‚·
+			ç™ºæ™‚åˆ»é †
+			(1)ç™ºæ™‚åˆ»é †
+			(2)é‹ç”¨ç•ªå·é †ã§ä¸¦ã¹ã¾ã™ã€‚
+			(1)ç™ºæ™‚åˆ»é †ã¯ã€è·¯ç·šå¤–å§‹ç™ºã®å ´åˆã€è·¯ç·šå¤–å§‹ç™ºé§…ç™ºæ™‚åˆ»ã‚’ç”¨ã„ã¦æ¯”è¼ƒã—ã¾ã™
 		*/
 
 		if (Jikoku1.compare(Jikoku2, KitenJikoku) < 0)
@@ -644,11 +644,11 @@ void CDedAllOperationTable2View::OnUpdate_All()
 
 	LogMsg(_T("CDedAllOperationTable2View::OnUpdate_All()") ) ;
 	// --------------------------------
-	//	wƒ_ƒCƒ„ƒOƒ‰ƒ€‰wxƒIƒuƒWƒFƒNƒg‚ğ¶¬
+	//	ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ é§…ã€ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆ
 	// --------------------------------
 
 	// --------------------------------		
-	//	‘S—v‘f‚ğXV
+	//	å…¨è¦ç´ ã‚’æ›´æ–°
 	// --------------------------------
 
 	SortOperation();
@@ -684,62 +684,62 @@ void CDedAllOperationTable2View::OnUpdate_All()
 
 
 /**
-  ®”(•â³‘ÎÛ’l)‚ªA‘Œ¸’PˆÊ‚Ì”{”}ƒ¿(Œë·‹–—e’l) ‚È‚çA
-  ÅŠñ‚Ì‘Œ¸’PˆÊ‚Ì”{”’š“x‚Ì’l‚É•â³‚µ‚Ü‚·B
+  æ•´æ•°(è£œæ­£å¯¾è±¡å€¤)ãŒã€å¢—æ¸›å˜ä½ã®å€æ•°Â±Î±(èª¤å·®è¨±å®¹å€¤) ãªã‚‰ã€
+  æœ€å¯„ã®å¢—æ¸›å˜ä½ã®å€æ•°ä¸åº¦ã®å€¤ã«è£œæ­£ã—ã¾ã™ã€‚
 
-(—á)iUnit=5,iAllowedDifference=1 ‚Ìê‡Avalue‚É‘Î‚·‚éŒ‹‰Ê‚ÍˆÈ‰º‚Ì‚Æ‚¨‚è‚Å‚·B
+(ä¾‹)iUnit=5,iAllowedDifference=1 ã®å ´åˆã€valueã«å¯¾ã™ã‚‹çµæœã¯ä»¥ä¸‹ã®ã¨ãŠã‚Šã§ã™ã€‚
 
-@- value=3 ‚È‚ç return=3
-@- value=4 ‚È‚ç return=5
-@- value=5 ‚È‚ç return=5
-@- value=6 ‚È‚ç return=5
-@- value=7 ‚È‚ç return=7
+ã€€- value=3 ãªã‚‰ return=3
+ã€€- value=4 ãªã‚‰ return=5
+ã€€- value=5 ãªã‚‰ return=5
+ã€€- value=6 ãªã‚‰ return=5
+ã€€- value=7 ãªã‚‰ return=7
 
 
-@‚±‚ÌŠÖ”‚ÍAˆÈ‰º‚Ì‚½‚ß‚Ég‚¢‚Ü‚·B
+ã€€ã“ã®é–¢æ•°ã¯ã€ä»¥ä¸‹ã®ãŸã‚ã«ä½¿ã„ã¾ã™ã€‚
 
-	uCDcdDiagram::getZone_Dgr()‚Åæ“¾‚µ‚½(•`‰æ”ÍˆÍ‚Ì•(ƒ_ƒCƒ„ƒOƒ‰ƒ€À•WŒn))‚ª
-	‘Œ¸’PˆÊ‚Ì”{”}ƒ¿(Œë·‹–—e’l)‚È‚çA(•`‰æ”ÍˆÍ‚Ì•(ƒ_ƒCƒ„ƒOƒ‰ƒ€À•WŒn))‚ğ
-	ÅŠñ‚Ì‘Œ¸’PˆÊ‚Ì”{”’š“x‚Ì’l‚É•â³‚·‚év
+	ã€ŒCDcdDiagram::getZone_Dgr()ã§å–å¾—ã—ãŸ(æç”»ç¯„å›²ã®å¹…(ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åº§æ¨™ç³»))ãŒ
+	å¢—æ¸›å˜ä½ã®å€æ•°Â±Î±(èª¤å·®è¨±å®¹å€¤)ãªã‚‰ã€(æç”»ç¯„å›²ã®å¹…(ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åº§æ¨™ç³»))ã‚’
+	æœ€å¯„ã®å¢—æ¸›å˜ä½ã®å€æ•°ä¸åº¦ã®å€¤ã«è£œæ­£ã™ã‚‹ã€
 
 @param value [in]
-	•â³‘ÎÛ’l‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B”ÍˆÍ‚Í0ˆÈã‚Å‚·B
+	è£œæ­£å¯¾è±¡å€¤ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚ç¯„å›²ã¯0ä»¥ä¸Šã§ã™ã€‚
 @param iUnit [in]
-	‘Œ¸’PˆÊ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B”ÍˆÍ‚Í1ˆÈã‚Å‚·B
+	å¢—æ¸›å˜ä½ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚ç¯„å›²ã¯1ä»¥ä¸Šã§ã™ã€‚
 @param iAllowedDifference [in]
-	Œë·‹–—e’l
+	èª¤å·®è¨±å®¹å€¤
 @return
-	•â³‚³‚ê‚½’l‚ğ•Ô‚µ‚Ü‚·B
+	è£œæ­£ã•ã‚ŒãŸå€¤ã‚’è¿”ã—ã¾ã™ã€‚
 */
 static int adjustForNearestUnit( int value , int iUnit , int iAllowedDifference ) 
 {
 
-	//•â³‚PF(Œ»İ’l%‘Œ¸’PˆÊ)…(Œë·‹–—e’l) ‚È‚çA
-	//@Œ»İ’l=Œ»İ’l-(Œ»İ’l%‘Œ¸’PˆÊ)
+	//è£œæ­£ï¼‘ï¼š(ç¾åœ¨å€¤%å¢—æ¸›å˜ä½)â‰¦(èª¤å·®è¨±å®¹å€¤) ãªã‚‰ã€
+	//ã€€ç¾åœ¨å€¤=ç¾åœ¨å€¤-(ç¾åœ¨å€¤%å¢—æ¸›å˜ä½)
 	//
-	//(—á)
-	//@‘Œ¸’PˆÊ=1800
-	//@Œ»İ’l=1801
-	//@(Œë·‹–—e’l)=1
-	//‚Ìê‡
-	//@(1801%1800)=1 (Œ»İ’l%‘Œ¸’PˆÊ)
-	//@1801-(1801%1800)=1800
+	//(ä¾‹)
+	//ã€€å¢—æ¸›å˜ä½=1800
+	//ã€€ç¾åœ¨å€¤=1801
+	//ã€€(èª¤å·®è¨±å®¹å€¤)=1
+	//ã®å ´åˆ
+	//ã€€(1801%1800)=1 (ç¾åœ¨å€¤%å¢—æ¸›å˜ä½)
+	//ã€€1801-(1801%1800)=1800
 	//
 	if ( value % iUnit <= iAllowedDifference )
 	{
 		value = value - ( value % iUnit ) ; 
 	}
 
-	//•â³‚QF(Œ»İ’l%‘Œ¸’PˆÊ)†(‘Œ¸’PˆÊ-Œë·‹–—e’l) ‚È‚çA
-	//@Œ»İ’l=Œ»İ’l+(‘Œ¸’PˆÊ-(Œ»İ’l%‘Œ¸’PˆÊ))
+	//è£œæ­£ï¼’ï¼š(ç¾åœ¨å€¤%å¢—æ¸›å˜ä½)â‰§(å¢—æ¸›å˜ä½-èª¤å·®è¨±å®¹å€¤) ãªã‚‰ã€
+	//ã€€ç¾åœ¨å€¤=ç¾åœ¨å€¤+(å¢—æ¸›å˜ä½-(ç¾åœ¨å€¤%å¢—æ¸›å˜ä½))
 	//
-	//(—á)
-	//@‘Œ¸’PˆÊ=1800
-	//@Œ»İ’l=3599
-	//@(Œë·‹–—e’l)=1
-	//‚Ìê‡
-	//@(3599%1800)=1799 (Œ»İ’l%‘Œ¸’PˆÊ)
-	//@3599+(1800-(3599%1800))=3600
+	//(ä¾‹)
+	//ã€€å¢—æ¸›å˜ä½=1800
+	//ã€€ç¾åœ¨å€¤=3599
+	//ã€€(èª¤å·®è¨±å®¹å€¤)=1
+	//ã®å ´åˆ
+	//ã€€(3599%1800)=1799 (ç¾åœ¨å€¤%å¢—æ¸›å˜ä½)
+	//ã€€3599+(1800-(3599%1800))=3600
 	else if ( ( value % iUnit ) >= ( iUnit - iAllowedDifference ) )
 	{
 		value = value + ( iUnit - ( value % iUnit ) ) ; 
@@ -750,7 +750,7 @@ static int adjustForNearestUnit( int value , int iUnit , int iAllowedDifference 
 
 
 	// --------------------------------
-	//@param ƒƒbƒZ[ƒW ƒ}ƒbƒvŠÖ”‚Ì‰º¿ŠÖ”
+	//@param ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ ãƒãƒƒãƒ—é–¢æ•°ã®ä¸‹è«‹é–¢æ•°
 	// --------------------------------
 int CDedAllOperationTable2View::OnAllOperationTable2XDgrSizeInc_Process( BOOL bQueryEnable )
 {
@@ -758,16 +758,16 @@ int CDedAllOperationTable2View::OnAllOperationTable2XDgrSizeInc_Process( BOOL bQ
 	CString	strErrorMsg ;	
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
-	//	‰¡²•ûŒük¬
+	//	æ¨ªè»¸æ–¹å‘ç¸®å°
 	CdDcdZoneXy	zonexyCWndDiagram_Dgr = m_pCWndAllOperationTable2->getZone_Dgr() ;
 	CdDcdZone	zoneCWndDiagram_Dgr = zonexyCWndDiagram_Dgr.getX() ;
 
-	//	ƒEƒCƒ“ƒhƒE‚Ö‚Ì•\¦”ÍˆÍ‚Ì‘Œ¸’PˆÊ‚ğZo
+	//	ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã¸ã®è¡¨ç¤ºç¯„å›²ã®å¢—æ¸›å˜ä½ã‚’ç®—å‡º
 	//	
-	//	‰^—pˆê——}‘S‘Ì‚ª‰æ–Ê“à‚Éû‚Ü‚Á‚Ä‚¢‚È‚¢ê‡:30•ª
-	//	‰^—pˆê——}‘S‘Ì‚ª‰æ–Ê“à‚Éû‚Ü‚Á‚Ä‚¢‚éê‡  :12ŠÔ
+	//	é‹ç”¨ä¸€è¦§å›³å…¨ä½“ãŒç”»é¢å†…ã«åã¾ã£ã¦ã„ãªã„å ´åˆ:30åˆ†
+	//	é‹ç”¨ä¸€è¦§å›³å…¨ä½“ãŒç”»é¢å†…ã«åã¾ã£ã¦ã„ã‚‹å ´åˆ  :12æ™‚é–“
 	int iUnit = 30*60 ;
 	if ( iRv >= 0 )
 	{
@@ -779,27 +779,27 @@ int CDedAllOperationTable2View::OnAllOperationTable2XDgrSizeInc_Process( BOOL bQ
 		}
 		if ( iUnit == 0 )
 		{
-			iUnit = 1 ;	//	‚ ‚Æ‚ÌŠ„‚èZ‚É”õ‚¦‚ÄA0 ‚Í 1 ‚É‚µ‚Ä‚¨‚«‚Ü‚·B
+			iUnit = 1 ;	//	ã‚ã¨ã®å‰²ã‚Šç®—ã«å‚™ãˆã¦ã€0 ã¯ 1 ã«ã—ã¦ãŠãã¾ã™ã€‚
 		}
 	}
-		//iUnit = ƒEƒCƒ“ƒhƒE‚Ö‚Ì•\¦”ÍˆÍ‚Ì‘Œ¸’PˆÊ(ƒ_ƒCƒ„ƒOƒ‰ƒ€ƒGƒ“ƒeƒBƒeƒBXÀ•W)
+		//iUnit = ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã¸ã®è¡¨ç¤ºç¯„å›²ã®å¢—æ¸›å˜ä½(ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚¨ãƒ³ãƒ†ã‚£ãƒ†ã‚£Xåº§æ¨™)
 
-	//	•`‰æ”ÍˆÍ‚Ì•(ƒ_ƒCƒ„ƒOƒ‰ƒ€À•WŒn)‚ª‘Œ¸’PˆÊ‚Ì”{”‚É‹ß‚¢ê‡‚ÍA
-	//	‘Œ¸’PˆÊ‚Ì”{”’š“x‚Ì’l‚É•â³‚·‚é
-	//	‚±‚ê‚ÍACDcdDiagram ‚É‘Î‚µ‚Ä setZone_Dgr() ‚Åİ’è‚µ‚½
-	//	w•`‰æ‚ğs‚¤—Ìˆæ‚Ì”ÍˆÍ(ƒ_ƒCƒ„ƒOƒ‰ƒ€ƒGƒ“ƒeƒBƒeƒBÀ•WŒn)x‚Æ 
-	//	getZone_Dgr() ‚Åæ“¾‚µ‚½’l‚ªˆê’v‚µ‚È‚¢ê‡‚ª‚ ‚é‚½‚ß‚Å‚·B
+	//	æç”»ç¯„å›²ã®å¹…(ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åº§æ¨™ç³»)ãŒå¢—æ¸›å˜ä½ã®å€æ•°ã«è¿‘ã„å ´åˆã¯ã€
+	//	å¢—æ¸›å˜ä½ã®å€æ•°ä¸åº¦ã®å€¤ã«è£œæ­£ã™ã‚‹
+	//	ã“ã‚Œã¯ã€CDcdDiagram ã«å¯¾ã—ã¦ setZone_Dgr() ã§è¨­å®šã—ãŸ
+	//	ã€æç”»ã‚’è¡Œã†é ˜åŸŸã®ç¯„å›²(ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚¨ãƒ³ãƒ†ã‚£ãƒ†ã‚£åº§æ¨™ç³»)ã€ã¨ 
+	//	getZone_Dgr() ã§å–å¾—ã—ãŸå€¤ãŒä¸€è‡´ã—ãªã„å ´åˆãŒã‚ã‚‹ãŸã‚ã§ã™ã€‚
 	zoneCWndDiagram_Dgr.setSize( 
 		adjustForNearestUnit( 
 			zoneCWndDiagram_Dgr.getSize() , iUnit , ALLOWED_DIFFERENCE ) ) ;
 
 	if ( iRv >= 0 )
 	{
-		//	ƒEƒCƒ“ƒhƒEã‚Éƒ_ƒCƒ„ƒOƒ‰ƒ€‚ª•\¦‚³‚ê‚Ä‚¢‚È‚¢ê‡‚ÍA
-		//	X•ûŒü‚Ì•\¦”ÍˆÍ‚Í•ÏX‚Å‚«‚Ü‚¹‚ñB
+		//	ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ä¸Šã«ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ãŒè¡¨ç¤ºã•ã‚Œã¦ã„ãªã„å ´åˆã¯ã€
+		//	Xæ–¹å‘ã®è¡¨ç¤ºç¯„å›²ã¯å¤‰æ›´ã§ãã¾ã›ã‚“ã€‚
 		if ( m_pCWndAllOperationTable2->calcDiagramZoneDcd().getX().getSize() <= 0 )
 		{
-			iRv = -2 ;	//	ƒ_ƒCƒ„ƒOƒ‰ƒ€‚Í•\¦‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
+			iRv = -2 ;	//	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã¯è¡¨ç¤ºã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
 		}
 	}
 	if ( iRv >= 0 )
@@ -807,8 +807,8 @@ int CDedAllOperationTable2View::OnAllOperationTable2XDgrSizeInc_Process( BOOL bQ
 		if (zoneCWndDiagram_Dgr.getEndPos() >=
 			m_CdDcdZoneXy.getX().getEndPos())
 		{
-			//	‚±‚êˆÈã•\¦”ÍˆÍ‚ğL‚°‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB
-			iRv = -1;	//Œ»İ‚ÍÀs‚Å‚«‚Ü‚¹‚ñ(ƒGƒ‰[ƒƒbƒZ[ƒW‚Í•\¦‚µ‚Ü‚¹‚ñ)
+			//	ã“ã‚Œä»¥ä¸Šè¡¨ç¤ºç¯„å›²ã‚’åºƒã’ã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚
+			iRv = -1;	//ç¾åœ¨ã¯å®Ÿè¡Œã§ãã¾ã›ã‚“(ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã¯è¡¨ç¤ºã—ã¾ã›ã‚“)
 		}
 	}
 
@@ -816,7 +816,7 @@ int CDedAllOperationTable2View::OnAllOperationTable2XDgrSizeInc_Process( BOOL bQ
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œ
 		// ****************************************************************
 		DcdSize	iDcdSize = zoneCWndDiagram_Dgr.getSize() ;
 		int iMod = iDcdSize % (iUnit) ;
@@ -827,7 +827,7 @@ int CDedAllOperationTable2View::OnAllOperationTable2XDgrSizeInc_Process( BOOL bQ
 		}
 		zoneCWndDiagram_Dgr.setSize( iDcdSize ) ;
 
-		LogMsg(_T("\t") _T("zoneCWndDiagram_Dgr=%d,%d") ,
+		LogMsg(_T("Â¥t") _T("zoneCWndDiagram_Dgr=%d,%d") ,
 			zoneCWndDiagram_Dgr.getPos() , zoneCWndDiagram_Dgr.getSize() ) ;
 
 		zonexyCWndDiagram_Dgr.setX( zoneCWndDiagram_Dgr ) ;
@@ -837,7 +837,7 @@ int CDedAllOperationTable2View::OnAllOperationTable2XDgrSizeInc_Process( BOOL bQ
 		{
 			switch( iRv )
 			{
-			case -1 :	//	Œ»İ‚ÍÀs‚Å‚«‚Ü‚¹‚ñB(ƒGƒ‰[ƒƒbƒZ[ƒW‚Í•\¦‚µ‚Ü‚¹‚ñ)
+			case -1 :	//	ç¾åœ¨ã¯å®Ÿè¡Œã§ãã¾ã›ã‚“ã€‚(ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã¯è¡¨ç¤ºã—ã¾ã›ã‚“)
 				break ;
 			default:
 				strErrorMsg.Format( _T( "Error %d") , iRv ) ;
@@ -849,7 +849,7 @@ int CDedAllOperationTable2View::OnAllOperationTable2XDgrSizeInc_Process( BOOL bQ
 			}
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -862,16 +862,16 @@ int CDedAllOperationTable2View::OnAllOperationTable2XDgrSizeDec_Process( BOOL bQ
 	int iRv = 0 ;
 	CString	strErrorMsg ;	
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	// 
 	CdDcdZoneXy	zonexyCWndDiagram_Dgr = m_pCWndAllOperationTable2->getZone_Dgr() ;
 	CdDcdZone	zoneCWndDiagram_Dgr = zonexyCWndDiagram_Dgr.getX() ;
 
-	//	ƒEƒCƒ“ƒhƒE‚Ö‚Ì•\¦”ÍˆÍ‚Ì‘Œ¸’PˆÊ‚ğZo
+	//	ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã¸ã®è¡¨ç¤ºç¯„å›²ã®å¢—æ¸›å˜ä½ã‚’ç®—å‡º
 	//	
-	//	‰^—pˆê——}‘S‘Ì‚ª‰æ–Ê“à‚Éû‚Ü‚Á‚Ä‚¢‚È‚¢ê‡:30•ª
-	//	‰^—pˆê——}‘S‘Ì‚ª‰æ–Ê“à‚Éû‚Ü‚Á‚Ä‚¢‚éê‡  :12ŠÔ
+	//	é‹ç”¨ä¸€è¦§å›³å…¨ä½“ãŒç”»é¢å†…ã«åã¾ã£ã¦ã„ãªã„å ´åˆ:30åˆ†
+	//	é‹ç”¨ä¸€è¦§å›³å…¨ä½“ãŒç”»é¢å†…ã«åã¾ã£ã¦ã„ã‚‹å ´åˆ  :12æ™‚é–“
 	int iUnit = 30*60 ;
 	if ( iRv >= 0 )
 	{
@@ -887,43 +887,43 @@ int CDedAllOperationTable2View::OnAllOperationTable2XDgrSizeDec_Process( BOOL bQ
 		}
 		if ( iUnit == 0 )
 		{
-			iRv = -2 ;	//	‰^—pˆê——}‚Í•\¦‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
+			iRv = -2 ;	//	é‹ç”¨ä¸€è¦§å›³ã¯è¡¨ç¤ºã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
 		}
 	}
-		//iUnit=ƒEƒCƒ“ƒhƒE‚Ö‚Ì•\¦”ÍˆÍ‚Ì‘Œ¸’PˆÊ(ƒ_ƒCƒ„ƒOƒ‰ƒ€ƒGƒ“ƒeƒBƒeƒBXÀ•W)
+		//iUnit=ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã¸ã®è¡¨ç¤ºç¯„å›²ã®å¢—æ¸›å˜ä½(ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚¨ãƒ³ãƒ†ã‚£ãƒ†ã‚£Xåº§æ¨™)
 
 
-	//	•`‰æ”ÍˆÍ‚Ì•(ƒ_ƒCƒ„ƒOƒ‰ƒ€À•WŒn)‚ª‘Œ¸’PˆÊ‚Ì”{”‚É‹ß‚¢ê‡‚ÍA
-	//	‘Œ¸’PˆÊ‚Ì”{”’š“x‚Ì’l‚É•â³‚·‚é
-	//	‚±‚ê‚ÍACDcdDiagram ‚É‘Î‚µ‚Ä setZone_Dgr() ‚Åİ’è‚µ‚½
-	//	w•`‰æ‚ğs‚¤—Ìˆæ‚Ì”ÍˆÍ(ƒ_ƒCƒ„ƒOƒ‰ƒ€ƒGƒ“ƒeƒBƒeƒBÀ•WŒn)x‚Æ 
-	//	getZone_Dgr() ‚Åæ“¾‚µ‚½’l‚ªˆê’v‚µ‚È‚¢ê‡‚ª‚ ‚é‚½‚ß‚Å‚·B
+	//	æç”»ç¯„å›²ã®å¹…(ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åº§æ¨™ç³»)ãŒå¢—æ¸›å˜ä½ã®å€æ•°ã«è¿‘ã„å ´åˆã¯ã€
+	//	å¢—æ¸›å˜ä½ã®å€æ•°ä¸åº¦ã®å€¤ã«è£œæ­£ã™ã‚‹
+	//	ã“ã‚Œã¯ã€CDcdDiagram ã«å¯¾ã—ã¦ setZone_Dgr() ã§è¨­å®šã—ãŸ
+	//	ã€æç”»ã‚’è¡Œã†é ˜åŸŸã®ç¯„å›²(ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚¨ãƒ³ãƒ†ã‚£ãƒ†ã‚£åº§æ¨™ç³»)ã€ã¨ 
+	//	getZone_Dgr() ã§å–å¾—ã—ãŸå€¤ãŒä¸€è‡´ã—ãªã„å ´åˆãŒã‚ã‚‹ãŸã‚ã§ã™ã€‚
 	zoneCWndDiagram_Dgr.setSize( 
 		adjustForNearestUnit( 
 			zoneCWndDiagram_Dgr.getSize() , iUnit , ALLOWED_DIFFERENCE ) ) ;
 
 	if ( iRv >= 0 )
 	{
-		//	ƒEƒCƒ“ƒhƒEã‚É‰^—pˆê——}‚ª•\¦‚³‚ê‚Ä‚¢‚È‚¢ê‡‚ÍA
-		//	X•ûŒü‚Ì•\¦”ÍˆÍ‚Í•ÏX‚Å‚«‚Ü‚¹‚ñB
+		//	ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ä¸Šã«é‹ç”¨ä¸€è¦§å›³ãŒè¡¨ç¤ºã•ã‚Œã¦ã„ãªã„å ´åˆã¯ã€
+		//	Xæ–¹å‘ã®è¡¨ç¤ºç¯„å›²ã¯å¤‰æ›´ã§ãã¾ã›ã‚“ã€‚
 		if ( m_pCWndAllOperationTable2->calcDiagramZoneDcd().getX().getSize() <= 0 )
 		{
-			iRv = -2 ;	//	ƒ_ƒCƒ„ƒOƒ‰ƒ€‚Í•\¦‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
+			iRv = -2 ;	//	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã¯è¡¨ç¤ºã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
 		}
 	}
 	if ( iRv >= 0 )
 	{
 		if ( zoneCWndDiagram_Dgr.getSize() <= (iUnit) )
 		{
-			//	‚±‚êˆÈã•\¦”ÍˆÍ‚ğL‚°‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB
-			iRv = -1 ;	//Œ»İ‚ÍÀs‚Å‚«‚Ü‚¹‚ñ(ƒGƒ‰[ƒƒbƒZ[ƒW‚Í•\¦‚µ‚Ü‚¹‚ñ)
+			//	ã“ã‚Œä»¥ä¸Šè¡¨ç¤ºç¯„å›²ã‚’åºƒã’ã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚
+			iRv = -1 ;	//ç¾åœ¨ã¯å®Ÿè¡Œã§ãã¾ã›ã‚“(ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã¯è¡¨ç¤ºã—ã¾ã›ã‚“)
 		}
 	}
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œ
 		// ****************************************************************
 		DcdSize	iDcdSize = zoneCWndDiagram_Dgr.getSize() ;
 		int iMod = iDcdSize % (iUnit) ;
@@ -934,19 +934,19 @@ int CDedAllOperationTable2View::OnAllOperationTable2XDgrSizeDec_Process( BOOL bQ
 		}
 		zoneCWndDiagram_Dgr.setSize( iDcdSize ) ;
 
-		LogMsg(_T("\t") _T("zoneCWndDiagram_Dgr=%d,%d") ,
+		LogMsg(_T("Â¥t") _T("zoneCWndDiagram_Dgr=%d,%d") ,
 			zoneCWndDiagram_Dgr.getPos() , zoneCWndDiagram_Dgr.getSize() ) ;
 
 		zonexyCWndDiagram_Dgr.setX( zoneCWndDiagram_Dgr ) ;
 		m_pCWndAllOperationTable2->setZone_Dgr( zonexyCWndDiagram_Dgr ) ;
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 		if ( iRv < 0 )
 		{
 			switch( iRv )
 			{
-			case -1 :	//	Œ»İ‚ÍÀs‚Å‚«‚Ü‚¹‚ñB(ƒGƒ‰[ƒƒbƒZ[ƒW‚Í•\¦‚µ‚Ü‚¹‚ñ)
+			case -1 :	//	ç¾åœ¨ã¯å®Ÿè¡Œã§ãã¾ã›ã‚“ã€‚(ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã¯è¡¨ç¤ºã—ã¾ã›ã‚“)
 				break ;
 			default:
 				strErrorMsg.Format( _T( "Error %d") , iRv ) ;
@@ -967,22 +967,22 @@ int CDedAllOperationTable2View::OnAllOperationTable2XDgrSizeReset_Process( BOOL 
 	int iRv = 0 ;
 	CString	strErrorMsg ;	
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if ( iRv >= 0 )
 	{
-		//	ƒEƒCƒ“ƒhƒEã‚Éƒ_ƒCƒ„ƒOƒ‰ƒ€‚ª•\¦‚³‚ê‚Ä‚¢‚È‚¢ê‡‚ÍA
-		//	Y•ûŒü‚Ì•\¦”ÍˆÍ‚Í•ÏX‚Å‚«‚Ü‚¹‚ñB
+		//	ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ä¸Šã«ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ãŒè¡¨ç¤ºã•ã‚Œã¦ã„ãªã„å ´åˆã¯ã€
+		//	Yæ–¹å‘ã®è¡¨ç¤ºç¯„å›²ã¯å¤‰æ›´ã§ãã¾ã›ã‚“ã€‚
 		if ( m_pCWndAllOperationTable2->calcDiagramZoneDcd().getX().getSize() <= 0 )
 		{
-			iRv = -2 ;	//	ƒ_ƒCƒ„ƒOƒ‰ƒ€‚Í•\¦‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
+			iRv = -2 ;	//	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã¯è¡¨ç¤ºã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
 		}
 	}
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œ
 		// ****************************************************************
 		CdDcdZoneXy	zonexyCWndAllOperationTable2_Dgr = m_pCWndAllOperationTable2->getZone_Dgr() ;
 		CdDcdZone	zoneCWndDiagram_Dgr = zonexyCWndAllOperationTable2_Dgr.getX() ;
@@ -993,13 +993,13 @@ int CDedAllOperationTable2View::OnAllOperationTable2XDgrSizeReset_Process( BOOL 
 		m_pCWndAllOperationTable2->setZone_Dgr( zonexyCWndAllOperationTable2_Dgr ) ;
 
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 		if ( iRv < 0 )
 		{
 			switch( iRv )
 			{
-			case -1 :	//	Œ»İ‚ÍÀs‚Å‚«‚Ü‚¹‚ñB(ƒGƒ‰[ƒƒbƒZ[ƒW‚Í•\¦‚µ‚Ü‚¹‚ñ)
+			case -1 :	//	ç¾åœ¨ã¯å®Ÿè¡Œã§ãã¾ã›ã‚“ã€‚(ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã¯è¡¨ç¤ºã—ã¾ã›ã‚“)
 				break ;
 			default:
 				strErrorMsg.Format( _T( "Error %d") , iRv ) ;
@@ -1019,23 +1019,23 @@ int CDedAllOperationTable2View::OnAllOperationTable2MemoriDown_Process( BOOL bQu
 {
 	int iRv = 0 ;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	int idxVlineMode = m_pCWndAllOperationTable2->getVlineMode() ;
 	bool	bRv = true ;	
 	if ( idxVlineMode <= 0 ){
-		iRv = -1 ;	//	ƒRƒ}ƒ“ƒh‚ğ–³Œø
+		iRv = -1 ;	//	ã‚³ãƒãƒ³ãƒ‰ã‚’ç„¡åŠ¹
 	}
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œ
 		// ****************************************************************
 		m_pCWndAllOperationTable2->setVlineMode( idxVlineMode - 1 ) ;
 
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -1046,21 +1046,21 @@ int CDedAllOperationTable2View::OnAllOperationTable2MemoriUp_Process( BOOL bQuer
 {
 	int iRv = 0 ;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	int idxVlineMode = m_pCWndAllOperationTable2->getVlineMode() ;
 	if ( idxVlineMode + 1 >= m_pCWndAllOperationTable2->getVlineChoices( NULL ) ){
-		iRv = -1 ;	//	ƒRƒ}ƒ“ƒh‚ğ–³Œø
+		iRv = -1 ;	//	ã‚³ãƒãƒ³ãƒ‰ã‚’ç„¡åŠ¹
 	}
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œ
 		// ****************************************************************
 		m_pCWndAllOperationTable2->setVlineMode( idxVlineMode + 1 ) ;
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -1072,7 +1072,7 @@ int CDedAllOperationTable2View::OnAllOperationTable2EkimeiJikoku_Process(BOOL bQ
 {
 	int iRv = 0;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (m_pCWndAllOperationTable2->getDisplayEkimeiJikoku())
 	{
@@ -1083,12 +1083,12 @@ int CDedAllOperationTable2View::OnAllOperationTable2EkimeiJikoku_Process(BOOL bQ
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œ
 		// ****************************************************************
 		m_pCWndAllOperationTable2->setDisplayEkimeiJikoku(
 			!m_pCWndAllOperationTable2->getDisplayEkimeiJikoku());
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -1100,7 +1100,7 @@ int CDedAllOperationTable2View::OnAllOperationTable2Ressyabangou_Process( BOOL b
 {
 	int iRv = 0 ;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if ( m_pCWndAllOperationTable2->getDisplayRessyabangou() )
 	{
@@ -1111,12 +1111,12 @@ int CDedAllOperationTable2View::OnAllOperationTable2Ressyabangou_Process( BOOL b
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œ
 		// ****************************************************************
 		m_pCWndAllOperationTable2->setDisplayRessyabangou( 
 			!m_pCWndAllOperationTable2->getDisplayRessyabangou() ) ;
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -1128,7 +1128,7 @@ int CDedAllOperationTable2View::OnUpdateAllOperationTable2SyubetsuRyakusyou_Proc
 {
 	int iRv = 0;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (m_pCWndAllOperationTable2->getDisplaySyubetsuRyakusyou())
 	{
@@ -1138,12 +1138,12 @@ int CDedAllOperationTable2View::OnUpdateAllOperationTable2SyubetsuRyakusyou_Proc
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œ
 		// ****************************************************************
 		m_pCWndAllOperationTable2->setDisplaySyubetsuRyakusyou(
 			!m_pCWndAllOperationTable2->getDisplaySyubetsuRyakusyou());
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -1155,7 +1155,7 @@ int CDedAllOperationTable2View::OnUpdateAllOperationTable2Ressyamei_Process( BOO
 {
 	int iRv = 0 ;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if ( m_pCWndAllOperationTable2->getDisplayRessyamei() )
 	{
@@ -1165,12 +1165,12 @@ int CDedAllOperationTable2View::OnUpdateAllOperationTable2Ressyamei_Process( BOO
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œ
 		// ****************************************************************
 		m_pCWndAllOperationTable2->setDisplayRessyamei( 
 			!m_pCWndAllOperationTable2->getDisplayRessyamei() ) ;
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -1182,7 +1182,7 @@ int CDedAllOperationTable2View::OnUpdateAllOperationTable2JikokuMinute_Process(B
 {
 	int iRv = 0;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (m_pCWndAllOperationTable2->getDisplayJikokuMinute())
 	{
@@ -1192,12 +1192,12 @@ int CDedAllOperationTable2View::OnUpdateAllOperationTable2JikokuMinute_Process(B
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œ
 		// ****************************************************************
 		m_pCWndAllOperationTable2->setDisplayJikokuMinute(
 			!m_pCWndAllOperationTable2->getDisplayJikokuMinute());
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -1210,7 +1210,7 @@ int CDedAllOperationTable2View::OneDisplayParentSyubetsu_Process(BOOL bQueryEnab
 {
 	int iRv = 0;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (m_pCWndAllOperationTable2->getDisplayParentSyubetsu())
 	{
@@ -1220,12 +1220,12 @@ int CDedAllOperationTable2View::OneDisplayParentSyubetsu_Process(BOOL bQueryEnab
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œ
 		// ****************************************************************
 		m_pCWndAllOperationTable2->setDisplayParentSyubetsu(
 			!m_pCWndAllOperationTable2->getDisplayParentSyubetsu());
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -1237,7 +1237,7 @@ int CDedAllOperationTable2View::OnViewUpdate_Process( BOOL bQueryEnable )
 {
 	int iRv = 0 ;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	//if (m_bWaitOperationConnect)
 	//{
@@ -1248,12 +1248,12 @@ int CDedAllOperationTable2View::OnViewUpdate_Process( BOOL bQueryEnable )
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œ
 		// ****************************************************************
-		//	ƒrƒ…[‚ğ‘SXV‚µ‚Ü‚·B
+		//	ãƒ“ãƒ¥ãƒ¼ã‚’å…¨æ›´æ–°ã—ã¾ã™ã€‚
 		OnUpdate( NULL , 0 , NULL ) ;
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -1265,23 +1265,23 @@ int CDedAllOperationTable2View::OnAllOperationTable2ViewProp_Process( BOOL bQuer
 {
 	int iRv = 0 ;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
-		//	ƒEƒCƒ“ƒhƒE“à‚ÅAƒ_ƒCƒ„ƒOƒ‰ƒ€‚ğ•`‰æ‚·‚é—Ìˆæ‚Ì‘å‚«‚³‚ğ‹‚ß‚Ü‚·B
-		//	’PˆÊ‚ÍA IfDcdTarget ã‚ÌÀ•W‚Å‚·B
+		//	ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦å†…ã§ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚’æç”»ã™ã‚‹é ˜åŸŸã®å¤§ãã•ã‚’æ±‚ã‚ã¾ã™ã€‚
+		//	å˜ä½ã¯ã€ IfDcdTarget ä¸Šã®åº§æ¨™ã§ã™ã€‚
 		CdDcdZoneXy	zoneDiagramZoneDcd = m_pCWndAllOperationTable2->calcDiagramZoneDcd() ;
 
 		CDlgAllOperationTable2ViewProp aDlg(
 			m_CdDcdZoneXy.getX(),
-			//	ƒEƒCƒ“ƒhƒE‚ÌX•ûŒü•‚ªAƒ_ƒCƒ„ƒOƒ‰ƒ€‚ª•\¦‰Â”\‚È‘å‚«‚³‚Å‚ ‚é‚©
-			//	”Û‚©‚ğw’è
+			//	ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã®Xæ–¹å‘å¹…ãŒã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ãŒè¡¨ç¤ºå¯èƒ½ãªå¤§ãã•ã§ã‚ã‚‹ã‹
+			//	å¦ã‹ã‚’æŒ‡å®š
 			zoneDiagramZoneDcd.getX().getSize() > 0 ,
-			//	ƒEƒCƒ“ƒhƒE‚ÌY•ûŒü•‚ªAƒ_ƒCƒ„ƒOƒ‰ƒ€‚ª•\¦‰Â”\‚È‘å‚«‚³‚Å‚ ‚é‚©
-			//	”Û‚©‚ğw’è
+			//	ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã®Yæ–¹å‘å¹…ãŒã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ãŒè¡¨ç¤ºå¯èƒ½ãªå¤§ãã•ã§ã‚ã‚‹ã‹
+			//	å¦ã‹ã‚’æŒ‡å®š
 			//zoneDiagramZoneDcd.getY().getSize() > 0 ,
 			m_pCWndAllOperationTable2->getZone_Dgr() ,
 			m_pCWndAllOperationTable2->getVlineMode() ,
@@ -1296,7 +1296,7 @@ int CDedAllOperationTable2View::OnAllOperationTable2ViewProp_Process( BOOL bQuer
 			m_pCWndAllOperationTable2->setVlineMode( aDlg.getVlineMode() ) ;
 		}	
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -1309,7 +1309,7 @@ int CDedAllOperationTable2View::OnAllOperationTable2ViewProp_Process( BOOL bQuer
 //	CDedAllOperationTable2View
 // ********************************
 	// ********************************
-	//@name CDedAllOperationTable2View-‘€ì
+	//@name CDedAllOperationTable2View-æ“ä½œ
 	// ********************************
 int CDedAllOperationTable2View::setZone_Dgr( 
 		const CdDedJikoku& aCdDedJikoku ,
@@ -1317,13 +1317,13 @@ int CDedAllOperationTable2View::setZone_Dgr(
 {
 	CdDcdZoneXy	zonexyZone_Dgr = m_pCWndAllOperationTable2->getZone_Dgr() ;
 	
-	//XÀ•W‚ğ•ÏX
+	//Xåº§æ¨™ã‚’å¤‰æ›´
 	if ( !aCdDedJikoku.isNull() ){
 		CdDcdZone	aCdDcdZone = zonexyZone_Dgr.getX() ;
 		aCdDcdZone.setPos( aCdDedJikoku.getTotalSeconds() ) ;
 		zonexyZone_Dgr.setX( aCdDcdZone ) ;
 	}
-	//YÀ•W‚ğ•ÏX
+	//Yåº§æ¨™ã‚’å¤‰æ›´
 	if ( 0 <= iOperationNumberIndex && iOperationNumberIndex < (int)m_strOperationNumber.size() ){
 		CdDcdZone	aCdDcdZone = zonexyZone_Dgr.getY() ;
 		int iYZahyou =
@@ -1347,7 +1347,7 @@ CDedAllOperationTable2View::CDedAllOperationTable2View()
 {
 }
 
-CDedAllOperationTable2View::~CDedAllOperationTable2View()
+CDedAllOperationTable2View::â€¾CDedAllOperationTable2View()
 {
 }
 
@@ -1391,7 +1391,7 @@ BEGIN_MESSAGE_MAP(CDedAllOperationTable2View, CView)
 	ON_COMMAND(ID_VIEW_UPDATE, OnViewUpdate)
 	ON_UPDATE_COMMAND_UI(ID_VIEW_UPDATE, OnUpdateViewUpdate)
 	//}}AFX_MSG_MAP
-	// •W€ˆóüƒRƒ}ƒ“ƒh
+	// æ¨™æº–å°åˆ·ã‚³ãƒãƒ³ãƒ‰
 	ON_COMMAND(ID_VIEW_DisplayParentSyubetsu, &CDedAllOperationTable2View::OnDisplayParentSyubetsu)
 	ON_UPDATE_COMMAND_UI(ID_VIEW_DisplayParentSyubetsu, &CDedAllOperationTable2View::OnUpdateDisplayParentSyubetsu)
 	ON_COMMAND(ID_FILE_PRINT, &CDedAllOperationTable2View::OnFilePrint)
@@ -1399,16 +1399,16 @@ BEGIN_MESSAGE_MAP(CDedAllOperationTable2View, CView)
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
-// CDedAllOperationTable2View •`‰æ
+// CDedAllOperationTable2View æç”»
 
 void CDedAllOperationTable2View::OnDraw(CDC* pDC)
 {
 	CDocument* pDoc = GetDocument();
-	// TODO: ‚±‚ÌˆÊ’u‚É•`‰æ—p‚ÌƒR[ƒh‚ğ’Ç‰Á‚µ‚Ä‚­‚¾‚³‚¢
+	// TODO: ã“ã®ä½ç½®ã«æç”»ç”¨ã®ã‚³ãƒ¼ãƒ‰ã‚’è¿½åŠ ã—ã¦ãã ã•ã„
 }
 
 /////////////////////////////////////////////////////////////////////////////
-// CDedAllOperationTable2View f’f
+// CDedAllOperationTable2View è¨ºæ–­
 
 #ifdef _DEBUG
 void CDedAllOperationTable2View::AssertValid() const
@@ -1423,7 +1423,7 @@ void CDedAllOperationTable2View::Dump(CDumpContext& dc) const
 #endif //_DEBUG
 
 /////////////////////////////////////////////////////////////////////////////
-// CDedAllOperationTable2View ƒƒbƒZ[ƒW ƒnƒ“ƒhƒ‰
+// CDedAllOperationTable2View ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ ãƒãƒ³ãƒ‰ãƒ©
 
 
 
@@ -1435,36 +1435,36 @@ void CDedAllOperationTable2View::OnUpdate(CView* pSender, LPARAM lHint, CObject*
 	// --------------------------------
 
 	//pHint= 
-	//	pHint‚ª CRfEditCmdHolder ƒIƒuƒWƒFƒNƒg‚È‚çA
-	//	‘Î‰‚·‚é•ÒWƒRƒ}ƒ“ƒh CRfEditCmd ‚ğ•Û‚µ‚Ä‚¢‚Ü‚·B
-	//	‚±‚Ìê‡Athis ‚Í CRfEditCmd ‚Ì“à—e‚ÉÅ“K‰»‚µ‚½
-	//	XV‚ğs‚¢‚Ü‚·B
-	//	NULL‚È‚çA‘SXV‚ª—v‹‚³‚ê‚Ä‚¢‚Ü‚·B
+	//	pHintãŒ CRfEditCmdHolder ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãªã‚‰ã€
+	//	å¯¾å¿œã™ã‚‹ç·¨é›†ã‚³ãƒãƒ³ãƒ‰ CRfEditCmd ã‚’ä¿æŒã—ã¦ã„ã¾ã™ã€‚
+	//	ã“ã®å ´åˆã€this ã¯ CRfEditCmd ã®å†…å®¹ã«æœ€é©åŒ–ã—ãŸ
+	//	æ›´æ–°ã‚’è¡Œã„ã¾ã™ã€‚
+	//	NULLãªã‚‰ã€å…¨æ›´æ–°ãŒè¦æ±‚ã•ã‚Œã¦ã„ã¾ã™ã€‚
 
 	if ( m_bUpdate_All_Requested )
 	{
-		//	‘SXV‚ª•Û—¯‚³‚ê‚Ä‚¢‚éê‡‚ÍA
-		//	‚»‚ÌŒã‚ÍƒRƒ}ƒ“ƒh‚É‚æ‚éÅ“K‰»‚³‚ê‚½’P‘Ì‚Ì‚¢‚©‚È‚é
-		//	XV—v‹‚É‘Î‚µ‚Ä‚àA‘SXV‚ğs‚¢‚Ü‚·B
-		//memo:CDedAllOperationTable2View‚Ì‘SXV
-		//	‚±‚ê‚ğs‚í‚È‚¢‚ÆA
-		//	(1)ƒ_ƒCƒ„ƒOƒ‰ƒ€ƒrƒ…[‚ğŠJ‚¢‚½ó‘Ô‚É‚·‚é
-		//	(2)‰w‚ğ’Ç‰Á
-		//		( m_bUpdate_All_Requested =true ‚Æ‚È‚è‚Ü‚·‚ªA
-		//		ƒrƒ…[‚ªƒAƒNƒeƒBƒu‚Å‚È‚¢‚½‚ßA
-		//		CentDedDgrDia::m_CentDedDgrEkiCont ‚Ì
-		//		XV‚ªs‚í‚ê‚Ü‚¹‚ñB
-		//	(3)‚»‚Ì‰w‚É‰^s‚·‚é—ñÔ‚ğ“ü—Í‚·‚é
-		//		•ÒWƒRƒ}ƒ“ƒh‚Í CRfEditCmd_Ressya 
-		//		‚È‚Ì‚ÅA—ñÔ‚ÌXV‚ªs‚í‚ê‚Ü‚·B
-		//		‚µ‚©‚µACentDedDgrDia::m_CentDedDgrEkiCont ‚ª
-		//		XV‚³‚ê‚Ä‚¢‚È‚¢‚½‚ßAƒAƒvƒŠƒP[ƒVƒ‡ƒ“ƒGƒ‰[‚É‚È‚è‚Ü‚·B
+		//	å…¨æ›´æ–°ãŒä¿ç•™ã•ã‚Œã¦ã„ã‚‹å ´åˆã¯ã€
+		//	ãã®å¾Œã¯ã‚³ãƒãƒ³ãƒ‰ã«ã‚ˆã‚‹æœ€é©åŒ–ã•ã‚ŒãŸå˜ä½“ã®ã„ã‹ãªã‚‹
+		//	æ›´æ–°è¦æ±‚ã«å¯¾ã—ã¦ã‚‚ã€å…¨æ›´æ–°ã‚’è¡Œã„ã¾ã™ã€‚
+		//memo:CDedAllOperationTable2Viewã®å…¨æ›´æ–°
+		//	ã“ã‚Œã‚’è¡Œã‚ãªã„ã¨ã€
+		//	(1)ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ãƒ“ãƒ¥ãƒ¼ã‚’é–‹ã„ãŸçŠ¶æ…‹ã«ã™ã‚‹
+		//	(2)é§…ã‚’è¿½åŠ 
+		//		( m_bUpdate_All_Requested =true ã¨ãªã‚Šã¾ã™ãŒã€
+		//		ãƒ“ãƒ¥ãƒ¼ãŒã‚¢ã‚¯ãƒ†ã‚£ãƒ–ã§ãªã„ãŸã‚ã€
+		//		CentDedDgrDia::m_CentDedDgrEkiCont ã®
+		//		æ›´æ–°ãŒè¡Œã‚ã‚Œã¾ã›ã‚“ã€‚
+		//	(3)ãã®é§…ã«é‹è¡Œã™ã‚‹åˆ—è»Šã‚’å…¥åŠ›ã™ã‚‹
+		//		ç·¨é›†ã‚³ãƒãƒ³ãƒ‰ã¯ CRfEditCmd_Ressya 
+		//		ãªã®ã§ã€åˆ—è»Šã®æ›´æ–°ãŒè¡Œã‚ã‚Œã¾ã™ã€‚
+		//		ã—ã‹ã—ã€CentDedDgrDia::m_CentDedDgrEkiCont ãŒ
+		//		æ›´æ–°ã•ã‚Œã¦ã„ãªã„ãŸã‚ã€ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã‚¨ãƒ©ãƒ¼ã«ãªã‚Šã¾ã™ã€‚
 		//		
 		pHint = NULL ;
 	}
 
 	// --------------------------------
-	//	CRfEditCmd ‚ÉÅ“K‰»‚³‚ê‚½XV
+	//	CRfEditCmd ã«æœ€é©åŒ–ã•ã‚ŒãŸæ›´æ–°
 	// --------------------------------
 	Ou<CRfEditCmd> pCmd ;
 	if ( pHint != NULL && pHint->IsKindOf( 
@@ -1474,7 +1474,7 @@ void CDedAllOperationTable2View::OnUpdate(CView* pSender, LPARAM lHint, CObject*
 			(CRfEditCmdHolder*)pHint ;
 		pCmd = pHolder->getCmd() ; 
 	}
-	//pCmd = (pCmd‚ªNULL‚Å‚È‚¢ê‡‚Í)‘Î‰‚·‚é•ÒWƒRƒ}ƒ“ƒh
+	//pCmd = (pCmdãŒNULLã§ãªã„å ´åˆã¯)å¯¾å¿œã™ã‚‹ç·¨é›†ã‚³ãƒãƒ³ãƒ‰
 
 	if ( pCmd != NULL )
 	{
@@ -1483,37 +1483,37 @@ void CDedAllOperationTable2View::OnUpdate(CView* pSender, LPARAM lHint, CObject*
 			dynamic_castOu<CRfEditCmd_DiaProp>( pCmd ) || 
 			dynamic_castOu<CRfEditCmd_RessyasyubetsuSwap>( pCmd ) ) 
 		{
-			//	‚±‚Ìƒrƒ…[‚ÍA
-			//		ƒRƒƒ“ƒg‚Ì•ÏX
-			//		ƒ_ƒCƒ„‚Ì•ÏX
-			//		ƒ_ƒCƒ„‚ÌƒvƒƒpƒeƒB‚Ì•ÏX
-			//		—ñÔí•Ê‚Ì“ü‘Ö
-			//	‚Ìê‡‚ÍAXV‚ğs‚¢‚Ü‚¹‚ñB
+			//	ã“ã®ãƒ“ãƒ¥ãƒ¼ã¯ã€
+			//		ã‚³ãƒ¡ãƒ³ãƒˆã®å¤‰æ›´
+			//		ãƒ€ã‚¤ãƒ¤ã®å¤‰æ›´
+			//		ãƒ€ã‚¤ãƒ¤ã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å¤‰æ›´
+			//		åˆ—è»Šç¨®åˆ¥ã®å…¥æ›¿
+			//	ã®å ´åˆã¯ã€æ›´æ–°ã‚’è¡Œã„ã¾ã›ã‚“ã€‚
 		}
 		else
 		{
 			//	CRfEditCmd_Ressya
-			//	—ñÔ‚Ì•ÏX
+			//	åˆ—è»Šã®å¤‰æ›´
 			//CRfEditCmd_Eki
-			//	‰w‚Ì•ÏX‚ÍA‘SXV‚ª•K—v‚Å‚·B
+			//	é§…ã®å¤‰æ›´ã¯ã€å…¨æ›´æ–°ãŒå¿…è¦ã§ã™ã€‚
 			//CRfEditCmd_Ressyasyubetsu
-			//	—ñÔí•Ê‚Ì•ÏX‚ÍA‘SXV‚ª•K—v‚Å‚·B
+			//	åˆ—è»Šç¨®åˆ¥ã®å¤‰æ›´ã¯ã€å…¨æ›´æ–°ãŒå¿…è¦ã§ã™ã€‚
 			//CRfEditCmd_DedRosenFileDataProp
-			//	  ˜Hüƒtƒ@ƒCƒ‹‚ÌƒvƒƒpƒeƒB‚Ì•ÏX‚ÍA
-			//	ƒtƒHƒ“ƒg‚Ì•Ï‰»‚ğ”º‚¤‚½‚ßA‘SXV‚ª•K—v‚Å‚·B
+			//	  è·¯ç·šãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å¤‰æ›´ã¯ã€
+			//	ãƒ•ã‚©ãƒ³ãƒˆã®å¤‰åŒ–ã‚’ä¼´ã†ãŸã‚ã€å…¨æ›´æ–°ãŒå¿…è¦ã§ã™ã€‚
 			//CRfEditCmd_Rosen
 			//CRfEditCmd_RosenFileData
-			//	‰w‚ğ•ïŠÜ‚·‚éƒIƒuƒWƒFƒNƒg‚Å‚·B‚±‚ê‚ªXV‚³‚ê‚½ê‡‚ÍA
-			//	‘SXV‚ª•K—v‚Å‚·B
+			//	é§…ã‚’åŒ…å«ã™ã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ã™ã€‚ã“ã‚ŒãŒæ›´æ–°ã•ã‚ŒãŸå ´åˆã¯ã€
+			//	å…¨æ›´æ–°ãŒå¿…è¦ã§ã™ã€‚
 
-			pHint = NULL ;	//	‘SXV‚Ì—v‹
+			pHint = NULL ;	//	å…¨æ›´æ–°ã®è¦æ±‚
 		}
 	}
 
-	if ( pHint == NULL )	//	‘SXV
+	if ( pHint == NULL )	//	å…¨æ›´æ–°
 	{
 		// --------------------------------		
-		//	‘S—v‘f‚ğXV
+		//	å…¨è¦ç´ ã‚’æ›´æ–°
 		// --------------------------------
 		CView *pView = getCDiagramEditApp()->getCMainFrame()->
 			getMDIChildActiveView() ;
@@ -1543,7 +1543,7 @@ int CDedAllOperationTable2View::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 void CDedAllOperationTable2View::OnDestroy() 
 {
-	//	ƒ_ƒCƒ„ƒOƒ‰ƒ€ƒrƒ…[‚Ì‘®«‚ğ .ini ƒtƒ@ƒCƒ‹‚É‘‚«‚İB
+	//	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ãƒ“ãƒ¥ãƒ¼ã®å±æ€§ã‚’ .ini ãƒ•ã‚¡ã‚¤ãƒ«ã«æ›¸ãè¾¼ã¿ã€‚
 	//getCDiagramEditApp()->writeCWndAllOperationTable2ViewProp( m_pCWndAllOperationTable2 ) ;
 
 	if ( m_pCWndAllOperationTable2 != NULL ){
@@ -1560,36 +1560,36 @@ void CDedAllOperationTable2View::OnDestroy()
 
 void CDedAllOperationTable2View::OnSize(UINT nType, int cx, int cy) 
 {
-	if ( nType == SIZE_MAXIMIZED	//ƒEƒBƒ“ƒhƒE‚ÍÅ‘å•\¦‚³‚ê‚Ü‚·B
-		|| nType == SIZE_RESTORED 	// ƒEƒBƒ“ƒhƒE‚ÍƒTƒCƒY•ÏX‚³‚ê‚Ü‚·‚ªA
-									//	SIZE_MINIMIZED ‚Æ SIZE_MAXIMIZED ‚Í
-									//	“K—p‚³‚ê‚Ü‚¹‚ñB
+	if ( nType == SIZE_MAXIMIZED	//ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã¯æœ€å¤§è¡¨ç¤ºã•ã‚Œã¾ã™ã€‚
+		|| nType == SIZE_RESTORED 	// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã¯ã‚µã‚¤ã‚ºå¤‰æ›´ã•ã‚Œã¾ã™ãŒã€
+									//	SIZE_MINIMIZED ã¨ SIZE_MAXIMIZED ã¯
+									//	é©ç”¨ã•ã‚Œã¾ã›ã‚“ã€‚
 	){
 		//memo:CDedAllOperationTable2View::OnSize()
-		//	‚±‚ÌŠÖ”‚ğg‚¤‚ÆAƒŠƒTƒCƒY‚ÉƒEƒCƒ“ƒhƒE‚Ì‘S—Ìˆæ‚ª–³Œø‚É‚È‚è‚Ü‚·B
+		//	ã“ã®é–¢æ•°ã‚’ä½¿ã†ã¨ã€ãƒªã‚µã‚¤ã‚ºæ™‚ã«ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã®å…¨é ˜åŸŸãŒç„¡åŠ¹ã«ãªã‚Šã¾ã™ã€‚
 		m_pCWndAllOperationTable2->MoveWindow( 0 , 0 , cx , cy , TRUE ) ; 
 
 		////memo:CDedAllOperationTable2View::OnSize()
-		////	‚±‚ÌŠÖ”‚ğg‚Á‚Ä‚àAƒŠƒTƒCƒY‚ÉƒEƒCƒ“ƒhƒE‚Ì
-		////	‘S—Ìˆæ‚ª–³Œø‚É‚È‚è‚Ü‚·
+		////	ã“ã®é–¢æ•°ã‚’ä½¿ã£ã¦ã‚‚ã€ãƒªã‚µã‚¤ã‚ºæ™‚ã«ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã®
+		////	å…¨é ˜åŸŸãŒç„¡åŠ¹ã«ãªã‚Šã¾ã™
 		//m_pCWndAllOperationTable2->SetWindowPos( 
 		//	NULL , 
 		//	0 , 0 , 
 		//	cx , cy , 
-		//	SWP_NOACTIVATE	//	ƒEƒBƒ“ƒhƒE‚ğƒAƒNƒeƒBƒu‚É‚µ‚Ü‚¹‚ñB
-		//	                //	‚±‚Ìƒtƒ‰ƒO‚ªİ’è‚³‚ê‚Ä‚¢‚È‚¢‚ÆA
-		//	                //	ƒEƒBƒ“ƒhƒE‚ÍƒAƒNƒeƒBƒu‚É‚È‚èA
-		//	                //	ÅãˆÊ‚Ü‚½‚Í”ñÅãˆÊ‚ÌƒEƒBƒ“ƒhƒE 
-		//	                //	ƒOƒ‹[ƒv‚Ì‚¢‚¸‚ê‚©‚Ìæ“ª‚ÉˆÚ“®‚³‚ê‚Ü‚· 
-		//	                //(ƒpƒ‰ƒ[ƒ^ pWndInsertAfter ‚Ìİ’è‚ÉˆË‘¶‚µ‚Ü‚·)B
-		//	| SWP_NOZORDER	//  Œ»İ‚Ì‡˜‚ğ•Û‚µ‚Ü‚· 
-		//	                //	(pWndInsertAfter ‚ğ–³‹‚µ‚Ü‚·)B
-		//	| SWP_NOMOVE ) ;// Œ»İˆÊ’u‚ğ•Û‚µ‚Ü‚· 
-		//	                //(x ƒpƒ‰ƒ[ƒ^‚Æ y ƒpƒ‰ƒ[ƒ^‚ğ–³‹‚µ‚Ü‚·)B
+		//	SWP_NOACTIVATE	//	ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚’ã‚¢ã‚¯ãƒ†ã‚£ãƒ–ã«ã—ã¾ã›ã‚“ã€‚
+		//	                //	ã“ã®ãƒ•ãƒ©ã‚°ãŒè¨­å®šã•ã‚Œã¦ã„ãªã„ã¨ã€
+		//	                //	ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã¯ã‚¢ã‚¯ãƒ†ã‚£ãƒ–ã«ãªã‚Šã€
+		//	                //	æœ€ä¸Šä½ã¾ãŸã¯éæœ€ä¸Šä½ã®ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ 
+		//	                //	ã‚°ãƒ«ãƒ¼ãƒ—ã®ã„ãšã‚Œã‹ã®å…ˆé ­ã«ç§»å‹•ã•ã‚Œã¾ã™ 
+		//	                //(ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ pWndInsertAfter ã®è¨­å®šã«ä¾å­˜ã—ã¾ã™)ã€‚
+		//	| SWP_NOZORDER	//  ç¾åœ¨ã®é †åºã‚’ä¿æŒã—ã¾ã™ 
+		//	                //	(pWndInsertAfter ã‚’ç„¡è¦–ã—ã¾ã™)ã€‚
+		//	| SWP_NOMOVE ) ;// ç¾åœ¨ä½ç½®ã‚’ä¿æŒã—ã¾ã™ 
+		//	                //(x ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã¨ y ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã‚’ç„¡è¦–ã—ã¾ã™)ã€‚
 
 		////memo:CDedAllOperationTable2View::OnSize()
-		////	‚±‚ÌŠÖ”‚ğg‚Á‚Ä‚àAƒŠƒTƒCƒY‚ÉƒEƒCƒ“ƒhƒE‚Ì
-		////	‘S—Ìˆæ‚ª–³Œø‚É‚È‚è‚Ü‚·B
+		////	ã“ã®é–¢æ•°ã‚’ä½¿ã£ã¦ã‚‚ã€ãƒªã‚µã‚¤ã‚ºæ™‚ã«ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã®
+		////	å…¨é ˜åŸŸãŒç„¡åŠ¹ã«ãªã‚Šã¾ã™ã€‚
 		//m_pCWndAllOperationTable2->MoveWindow( 0 , 0 , cx , cy , FALSE ) ; 
 
 		return ;
@@ -1748,7 +1748,7 @@ BOOL CDedAllOperationTable2View::OnPreparePrinting(CPrintInfo* pInfo)
 {
 	BOOL bRv = TRUE ;
 
-	// ƒfƒtƒHƒ‹ƒg‚Ìˆóü€”õ
+	// ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®å°åˆ·æº–å‚™
 	//CaDcdAllOperationTable2_PageSelector	aPageSelector(
 	//	m_pCWndAllOperationTable2->getCDcdAllOperationTable2() , 
 	//	m_sizePrintSize_Dgr ) ;
@@ -1761,18 +1761,18 @@ BOOL CDedAllOperationTable2View::OnPreparePrinting(CPrintInfo* pInfo)
 	{
 		if ( aPageSelector.getPageCount() == 0 )
 		{
-			//	ˆóü‚·‚éƒy[ƒW‚ª‚ ‚è‚Ü‚¹‚ñB
+			//	å°åˆ·ã™ã‚‹ãƒšãƒ¼ã‚¸ãŒã‚ã‚Šã¾ã›ã‚“ã€‚
 			bRv = FALSE ;
 		}
 	}
 	if ( bRv )
 	{
-		//	ƒEƒCƒ“ƒhƒEã‚Éƒ_ƒCƒ„ƒOƒ‰ƒ€‚ª•\¦‚³‚ê‚Ä‚¢‚È‚¢ê‡‚ÍA
-		//	ˆóü‚Ís‚¢‚Ü‚¹‚ñB
+		//	ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ä¸Šã«ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ãŒè¡¨ç¤ºã•ã‚Œã¦ã„ãªã„å ´åˆã¯ã€
+		//	å°åˆ·ã¯è¡Œã„ã¾ã›ã‚“ã€‚
 		if ( m_pCWndAllOperationTable2->calcDiagramZoneDcd().getX().getSize() <= 0 ||
 			m_pCWndAllOperationTable2->calcDiagramZoneDcd().getY().getSize() <= 0 )
 		{
-			//	ˆóü‚·‚éƒy[ƒW‚ª‚ ‚è‚Ü‚¹‚ñB
+			//	å°åˆ·ã™ã‚‹ãƒšãƒ¼ã‚¸ãŒã‚ã‚Šã¾ã›ã‚“ã€‚
 			bRv = FALSE ;
 		}
 	}
@@ -1791,9 +1791,9 @@ BOOL CDedAllOperationTable2View::OnPreparePrinting(CPrintInfo* pInfo)
 
 void CDedAllOperationTable2View::OnBeginPrinting(CDC* pDC, CPrintInfo* pInfo) 
 {
-	//	‚±‚Ì“_‚Å‚ÍA 
+	//	ã“ã®æ™‚ç‚¹ã§ã¯ã€ 
 	//	pInfo->m_rectDraw
-	//	‚Ì’l‚ÍŒˆ’è‚µ‚Ä‚¢‚Ü‚¹‚ñB
+	//	ã®å€¤ã¯æ±ºå®šã—ã¦ã„ã¾ã›ã‚“ã€‚
 
 	if ( m_bUpdate_All_Requested ){
 		OnUpdate_All() ;
@@ -1805,11 +1805,11 @@ void CDedAllOperationTable2View::OnBeginPrinting(CDC* pDC, CPrintInfo* pInfo)
 
 void CDedAllOperationTable2View::OnPrepareDC(CDC* pDC, CPrintInfo* pInfo) 
 {
-	//	‚±‚Ì“_‚Å‚ÍA 
+	//	ã“ã®æ™‚ç‚¹ã§ã¯ã€ 
 	//	pInfo->m_rectDraw
-	//	‚Ì’l‚ÍŒˆ’è‚µ‚Ä‚¢‚Ü‚¹‚ñB
+	//	ã®å€¤ã¯æ±ºå®šã—ã¦ã„ã¾ã›ã‚“ã€‚
 
-	// TODO: ‚±‚ÌˆÊ’u‚ÉŒÅ—L‚Ìˆ—‚ğ’Ç‰Á‚·‚é‚©A‚Ü‚½‚ÍŠî–{ƒNƒ‰ƒX‚ğŒÄ‚Ño‚µ‚Ä‚­‚¾‚³‚¢
+	// TODO: ã“ã®ä½ç½®ã«å›ºæœ‰ã®å‡¦ç†ã‚’è¿½åŠ ã™ã‚‹ã‹ã€ã¾ãŸã¯åŸºæœ¬ã‚¯ãƒ©ã‚¹ã‚’å‘¼ã³å‡ºã—ã¦ãã ã•ã„
 	
 	CView::OnPrepareDC(pDC, pInfo);
 }
@@ -1835,14 +1835,14 @@ void CDedAllOperationTable2View::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 	LogMsg( CDcdTargetMfcPrintInfo::stringOf( pInfo ).c_str() ) ;
 
 	// --------------------------------
-	//	•`‰æ–Ê‚ğì¬
+	//	æç”»é¢ã‚’ä½œæˆ
 	// --------------------------------
 	CDcdTargetMfcPrintInfo	aCDcdTargetMfcPrintInfo( pDC, pInfo ) ;
 
 	LogMsg(_T("CDedAllOperationTable2View::OnPrint()1") ) ;
 	
 	// --------------------------------
-	//	—]”’‚ğœ‚¢‚½—Ìˆæ‚ğì¬
+	//	ä½™ç™½ã‚’é™¤ã„ãŸé ˜åŸŸã‚’ä½œæˆ
 	// --------------------------------
 	CaDcdTargetItemPosition	aTargetInnerMargin( &aCDcdTargetMfcPrintInfo , 
 		CdDcdZoneXy() ) ;
@@ -1868,23 +1868,23 @@ void CDedAllOperationTable2View::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 
 	}
 
-	//aTargetInnerMargin = —]”’•”•ª‚ğœ‚¢‚½•`‰æ—ÌˆæB
-	//	’PˆÊ‚ÍƒvƒŠƒ“ƒ^‚ÌƒsƒNƒZƒ‹‚Å‚·B
+	//aTargetInnerMargin = ä½™ç™½éƒ¨åˆ†ã‚’é™¤ã„ãŸæç”»é ˜åŸŸã€‚
+	//	å˜ä½ã¯ãƒ—ãƒªãƒ³ã‚¿ã®ãƒ”ã‚¯ã‚»ãƒ«ã§ã™ã€‚
 
 	LogMsg(_T("CDedAllOperationTable2View::OnPrint()2") ) ;
 	// --------------------------------
-	//	˜_—À•W‚ğİ’è
+	//	è«–ç†åº§æ¨™ã‚’è¨­å®š
 	// --------------------------------
 	CaDcdTargetZoomDisplay	aCaDcdTargetZoomDisplay( 
 		&aTargetInnerMargin , 
 		aCDcdTargetMfcPrintInfo.getPrinterHdc() ) ;
-	//aCaDcdTargetZoomDisplay = —]”’•”•ª‚ğœ‚¢‚½•`‰æ—ÌˆæB
-	//	’PˆÊ‚ÍA‰æ–Êã‚Ì‚PƒsƒNƒZƒ‹‘Š“–‚É‚È‚è‚Ü‚µ‚½B
+	//aCaDcdTargetZoomDisplay = ä½™ç™½éƒ¨åˆ†ã‚’é™¤ã„ãŸæç”»é ˜åŸŸã€‚
+	//	å˜ä½ã¯ã€ç”»é¢ä¸Šã®ï¼‘ãƒ”ã‚¯ã‚»ãƒ«ç›¸å½“ã«ãªã‚Šã¾ã—ãŸã€‚
 
 	LogMsg(_T("CDedAllOperationTable2View::OnPrint()3") ) ;
 	
 	// --------------------------------
-	//	ƒLƒƒƒvƒVƒ‡ƒ“‚Æƒy[ƒW”Ô†‚Ì•”•i‚ğì¬
+	//	ã‚­ãƒ£ãƒ—ã‚·ãƒ§ãƒ³ã¨ãƒšãƒ¼ã‚¸ç•ªå·ã®éƒ¨å“ã‚’ä½œæˆ
 	// --------------------------------
 	Ou<CDcdText>	pdcdCaption ;
 	Ou<CDcdText>	pdcdPage ;
@@ -1895,12 +1895,12 @@ void CDedAllOperationTable2View::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 		CDedAllOperationTable2Doc* pCDedAllOperationTable2Doc = (CDedAllOperationTable2Doc*)GetDocument();
 
 		tstring	strText ;
-		//	˜Hü–¼
+		//	è·¯ç·šå
 		if ( !pCentDedRosen->getName().empty() ){
 			strText += pCentDedRosen->getName() ;
 			strText += _T(" ") ;
 		}
-		//	ƒ_ƒCƒ„–¼
+		//	ãƒ€ã‚¤ãƒ¤å
 		if ( !pCDedAllOperationTable2Doc->getDiaName().empty() ){
 			strText += pCDedAllOperationTable2Doc->getDiaName() ;
 			strText += _T(" ") ;
@@ -1925,8 +1925,8 @@ void CDedAllOperationTable2View::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 
 	LogMsg(_T("CDedAllOperationTable2View::OnPrint()4") ) ;
 	// --------------------------------
-	//	ƒLƒƒƒvƒVƒ‡ƒ“‚Æƒy[ƒW”Ô†‚Ì•”•iE
-	//	ƒOƒŠƒbƒh‚ÌƒŒƒCƒAƒEƒg‚ğŒˆ‚ß‚é	
+	//	ã‚­ãƒ£ãƒ—ã‚·ãƒ§ãƒ³ã¨ãƒšãƒ¼ã‚¸ç•ªå·ã®éƒ¨å“ãƒ»
+	//	ã‚°ãƒªãƒƒãƒ‰ã®ãƒ¬ã‚¤ã‚¢ã‚¦ãƒˆã‚’æ±ºã‚ã‚‹	
 	// --------------------------------
 	Ou<IfDcdTarget>	pTargetCaption ;
 	Ou<IfDcdTarget>	pTargetGrid ;
@@ -1942,8 +1942,8 @@ void CDedAllOperationTable2View::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 		{
 			zoneGrid.setY(CdDcdZone().setBeginEndPos(
 				zoneCaption.getY().getEndPos(), zoneGrid.getY().getEndPos()));
-			//zoneCaption = ‘S—Ìˆæ‚Ìã•”‚ğAƒLƒƒƒvƒVƒ‡ƒ“—p‚ÉŠ„‚è“–‚Ä‚Ä‚¢‚Ü‚·B
-			//zoneGrid = ‘S—Ìˆæ‚©‚çAã•”‚ÌƒLƒƒƒvƒVƒ‡ƒ“—Ìˆæ‚ğœ‚¢‚½—Ìˆæ‚Å‚·B
+			//zoneCaption = å…¨é ˜åŸŸã®ä¸Šéƒ¨ã‚’ã€ã‚­ãƒ£ãƒ—ã‚·ãƒ§ãƒ³ç”¨ã«å‰²ã‚Šå½“ã¦ã¦ã„ã¾ã™ã€‚
+			//zoneGrid = å…¨é ˜åŸŸã‹ã‚‰ã€ä¸Šéƒ¨ã®ã‚­ãƒ£ãƒ—ã‚·ãƒ§ãƒ³é ˜åŸŸã‚’é™¤ã„ãŸé ˜åŸŸã§ã™ã€‚
 
 		}
 
@@ -1956,9 +1956,9 @@ void CDedAllOperationTable2View::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 			zoneGrid.setY(CdDcdZone().setBeginEndPos(
 				zoneGrid.getY().getPos(), zonePage.getY().getPos()));
 			//zoneCaption.getY().getEndPos(), zonePage.getY().getPos()));
-			//zonePage = ‘S—Ìˆæ‚Ì‰º•”‚ğAƒy[ƒW—p‚ÉŠ„‚è“–‚Ä‚Ä‚¢‚Ü‚·B
-			//zoneGrid = ã•”‚ÌƒLƒƒƒvƒVƒ‡ƒ“‚É‘±‚¢‚ÄA‰º•”‚Ìƒy[ƒW—Ìˆæ‚àœ‚¢‚½
-			//			—Ìˆæ‚Å‚·B
+			//zonePage = å…¨é ˜åŸŸã®ä¸‹éƒ¨ã‚’ã€ãƒšãƒ¼ã‚¸ç”¨ã«å‰²ã‚Šå½“ã¦ã¦ã„ã¾ã™ã€‚
+			//zoneGrid = ä¸Šéƒ¨ã®ã‚­ãƒ£ãƒ—ã‚·ãƒ§ãƒ³ã«ç¶šã„ã¦ã€ä¸‹éƒ¨ã®ãƒšãƒ¼ã‚¸é ˜åŸŸã‚‚é™¤ã„ãŸ
+			//			é ˜åŸŸã§ã™ã€‚
 		}
 
 
@@ -1973,7 +1973,7 @@ void CDedAllOperationTable2View::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 				&aCaDcdTargetZoomDisplay , zonePage ) ) ;
 	}
 	// --------------------------------
-	//	ƒ_ƒCƒ„ƒOƒ‰ƒ€‚ğ•`‰æ
+	//	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚’æç”»
 	// --------------------------------
 	
 	int iPage = 0 ;
@@ -2001,7 +2001,7 @@ void CDedAllOperationTable2View::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 		pCDcdAllOperationTable2->setClippingCount(0);
 
 		if ( (int)pInfo->m_nCurPage >= aPageSelector.getPageCount() ){
-			//ÅIƒy[ƒW‚ğˆóü‚µ‚½‚çAˆóüƒ‹[ƒv‚ğI‚í‚è‚Ü‚·B
+			//æœ€çµ‚ãƒšãƒ¼ã‚¸ã‚’å°åˆ·ã—ãŸã‚‰ã€å°åˆ·ãƒ«ãƒ¼ãƒ—ã‚’çµ‚ã‚ã‚Šã¾ã™ã€‚
 			pInfo->m_bContinuePrinting = false ;
 		}	else	{
 			pInfo->m_bContinuePrinting = true ;
@@ -2016,10 +2016,10 @@ void CDedAllOperationTable2View::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 	LogMsg(_T("CDedAllOperationTable2View::OnPrint()5") ) ;
 	LogMsg(_T("CDedAllOperationTable2View::OnPrint()6") ) ;
 	// --------------------------------
-	//	ƒLƒƒƒvƒVƒ‡ƒ“‚Æƒy[ƒW”Ô†‚ÌƒeƒLƒXƒg‚ğì¬
+	//	ã‚­ãƒ£ãƒ—ã‚·ãƒ§ãƒ³ã¨ãƒšãƒ¼ã‚¸ç•ªå·ã®ãƒ†ã‚­ã‚¹ãƒˆã‚’ä½œæˆ
 	// --------------------------------
 	{
-		//ƒLƒƒƒvƒVƒ‡ƒ“‚Éƒy[ƒW‚ğ’Ç‰Á
+		//ã‚­ãƒ£ãƒ—ã‚·ãƒ§ãƒ³ã«ãƒšãƒ¼ã‚¸ã‚’è¿½åŠ 
 		{
 			tstring	strCaption = pdcdCaption->getText() ;
 			CString	strSono ;
@@ -2028,7 +2028,7 @@ void CDedAllOperationTable2View::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 			strCaption += _T(" ") ;
 			pdcdCaption->setText( strCaption ) ;
 		}
-		//ƒy[ƒW”Ô†‚àŒˆ’è
+		//ãƒšãƒ¼ã‚¸ç•ªå·ã‚‚æ±ºå®š
 		{
 			tstring	strPage = stringOf( iPage + 1) ;
 			pdcdPage->setText( strPage ) ;
@@ -2037,7 +2037,7 @@ void CDedAllOperationTable2View::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 
 	LogMsg(_T("CDedAllOperationTable2View::OnPrint()7") ) ;
 	// --------------------------------
-	//	ƒLƒƒƒvƒVƒ‡ƒ“‚Æƒy[ƒW”Ô†‚ğ•`‰æ
+	//	ã‚­ãƒ£ãƒ—ã‚·ãƒ§ãƒ³ã¨ãƒšãƒ¼ã‚¸ç•ªå·ã‚’æç”»
 	// --------------------------------
 	{
 		if (getCDiagramEditApp()->getCdPrintPageProp().getPrintHeader() > 0)
@@ -2057,13 +2057,13 @@ void CDedAllOperationTable2View::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 void CDedAllOperationTable2View::OnEndPrinting(CDC* pDC, CPrintInfo* pInfo) 
 {
 
-	//	ˆóüI—¹Œã‚É‰æ–Ê•\¦‚ª•ö‚ê‚é–â‘è‚ğ‰ñ”ğB
+	//	å°åˆ·çµ‚äº†å¾Œã«ç”»é¢è¡¨ç¤ºãŒå´©ã‚Œã‚‹å•é¡Œã‚’å›é¿ã€‚
 	//
-	//	‚±‚ÌƒNƒ‰ƒX‚ÍAˆóü’†‚ÍƒXƒNƒ[ƒ‹ˆÊ’u‚ğ
-	//	ˆê“I‚É•ÏX‚µ‚Ü‚·B
-	//	‚±‚Ì‚Æ‚«‚É m_pCWndAllOperationTable2 ‚ÉÄ•`‰æ‚ª”­¶‚·‚é‚ÆA
-	//	‰æ–Ê‚É‚Íˆê“I‚ÉˆÊ’u‚Ì•ÏX‚³‚ê‚½ƒRƒ“ƒeƒ“ƒc‚ª
-	//	•`‰æ‚³‚ê‚é‚½‚ßA‰æ–Ê‚ª•ö‚ê‚Ü‚·B
+	//	ã“ã®ã‚¯ãƒ©ã‚¹ã¯ã€å°åˆ·ä¸­ã¯ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ä½ç½®ã‚’
+	//	ä¸€æ™‚çš„ã«å¤‰æ›´ã—ã¾ã™ã€‚
+	//	ã“ã®ã¨ãã« m_pCWndAllOperationTable2 ã«å†æç”»ãŒç™ºç”Ÿã™ã‚‹ã¨ã€
+	//	ç”»é¢ã«ã¯ä¸€æ™‚çš„ã«ä½ç½®ã®å¤‰æ›´ã•ã‚ŒãŸã‚³ãƒ³ãƒ†ãƒ³ãƒ„ãŒ
+	//	æç”»ã•ã‚Œã‚‹ãŸã‚ã€ç”»é¢ãŒå´©ã‚Œã¾ã™ã€‚
 	m_pCWndAllOperationTable2->Invalidate() ;
 	
 	CView::OnEndPrinting(pDC, pInfo);
@@ -2093,7 +2093,7 @@ void CDedAllOperationTable2View::OnActivateView(BOOL bActivate, CView* pActivate
 
 void CDedAllOperationTable2View::OnFilePrint()
 {
-	//	ˆóü‚ÉA‚Pƒy[ƒW‚Éˆóü‚·‚éƒ_ƒCƒ„ƒOƒ‰ƒ€‚Ì”ÍˆÍ‚ğ•Û‘¶
+	//	å°åˆ·æ™‚ã«ã€ï¼‘ãƒšãƒ¼ã‚¸ã«å°åˆ·ã™ã‚‹ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã®ç¯„å›²ã‚’ä¿å­˜
 	m_sizePrintSize_Dgr = m_pCWndAllOperationTable2->getZone_Dgr().getSize() ;
 	m_sizePrintSize_DgrLeft = m_pCWndAllOperationTable2->getZone_Dgr(-1).getSize();
 	m_sizePrintSize_DgrCenter = m_pCWndAllOperationTable2->getZone_Dgr(0).getSize();
@@ -2104,7 +2104,7 @@ void CDedAllOperationTable2View::OnFilePrint()
 
 void CDedAllOperationTable2View::OnFilePrintPreview()
 {
-	//	ˆóü‚ÉA‚Pƒy[ƒW‚Éˆóü‚·‚éƒ_ƒCƒ„ƒOƒ‰ƒ€‚Ì”ÍˆÍ‚ğ•Û‘¶
+	//	å°åˆ·æ™‚ã«ã€ï¼‘ãƒšãƒ¼ã‚¸ã«å°åˆ·ã™ã‚‹ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã®ç¯„å›²ã‚’ä¿å­˜
 	m_sizePrintSize_Dgr = m_pCWndAllOperationTable2->getZone_Dgr().getSize() ;
 	m_sizePrintSize_DgrLeft = m_pCWndAllOperationTable2->getZone_Dgr(-1).getSize();
 	m_sizePrintSize_DgrCenter = m_pCWndAllOperationTable2->getZone_Dgr(0).getSize();

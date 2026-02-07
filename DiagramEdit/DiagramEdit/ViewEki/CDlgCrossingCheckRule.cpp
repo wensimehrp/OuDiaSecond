@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,51 +35,51 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
-// CDlgCrossingCheckRule.cpp : �C���v�������e�[�V���� �t�@�C��
+// CDlgCrossingCheckRule.cpp : インプリメンテーション ファイル
 //
 
 #include "stdafx.h"
 
-#include "..\DiagramEdit.h"
+#include "..¥DiagramEdit.h"
 #include "CDlgCrossingCheckRule.h"
 #include "str/stringSplit.h"
-//#include "..\DedRosenFileData\EditCmd\EditCmd.h"
-#include "Str\strToWstr.h"
-#include "MfcUtil\MfcUtil.h"
-#include "..\resource.h"
+//#include "..¥DedRosenFileData¥EditCmd¥EditCmd.h"
+#include "Str¥strToWstr.h"
+#include "MfcUtil¥MfcUtil.h"
+#include "..¥resource.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -95,7 +95,7 @@ namespace ViewEki{
 //	CDlgCrossingCheckRule::CPropEditUiInternal
 // ================================================================
 	// ================================
-	//@name CPropEditUi - UiData - UiControl �Ԃ̃f�[�^�]��
+	//@name CPropEditUi - UiData - UiControl 間のデータ転送
 	// ================================
 void CDlgCrossingCheckRule::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData ) 
 {
@@ -105,20 +105,20 @@ void CDlgCrossingCheckRule::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiDa
 	{
 		const CrossingCheckRule* pCrossingCheckRuleSel = &pUiData->ContCrossingCheckRule[pUiData->iListSelected];
 		/**
-			���[���̒ǉ��E�폜�{�^���̗L�������ݒ�
-			�I���ꏊ�̍�ƁA�ʒu�ɂ���āA�L���ȃ{�^�����ς��܂�
-			�E�ǉ�
-				��ɗL��
-			�E�R�s�[
-				���[��0������
-			�E�폜
-				���[��0������
-			�E���
-				���[��0������
-				�ł���̃��[���̏ꍇ�����B
-			�E����
-				���[��0������
-				�ł����̃��[���̏ꍇ�����B
+			ルールの追加・削除ボタンの有効無効設定
+			選択場所の作業、位置によって、有効なボタンが変わります
+			・追加
+				常に有効
+			・コピー
+				ルール0個時無効
+			・削除
+				ルール0個時無効
+			・上へ
+				ルール0個時無効
+				最も上のルールの場合無効。
+			・下へ
+				ルール0個時無効
+				最も下のルールの場合無効。
 		*/
 		CButton* pButtonAdd = (CButton*)pOuter->GetDlgItem(IDC_BUTTON_CrossingCheckRuleAdd);
 		CButton* pButtonCopy = (CButton*)pOuter->GetDlgItem(IDC_BUTTON_CrossingCheckRuleCopy);
@@ -183,7 +183,7 @@ void CDlgCrossingCheckRule::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiDa
 			pButton8->EnableWindow(true);
 		}
 		// --------------------------------
-		//	DDX��p�����AUiControl�ւ̐ݒ�
+		//	DDXを用いた、UiControlへの設定
 		// --------------------------------
 		{
 			// IDC_RADIO_BeforeArrDep
@@ -207,9 +207,9 @@ void CDlgCrossingCheckRule::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiDa
 		}
 
 		// --------------------------------
-		//	DDX��p���Ȃ��AUiControl�ւ̐ݒ�
-		//	�����́ADDX�ɂ��l�ݒ�̌��
-		//	�s��Ȃ��Ă͂Ȃ�܂���B
+		//	DDXを用いない、UiControlへの設定
+		//	これらは、DDXによる値設定の後で
+		//	行わなくてはなりません。
 		// --------------------------------
 		//IDC_EDIT_CrossingCheckRuleCaption
 		{
@@ -358,7 +358,7 @@ void CDlgCrossingCheckRule::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiDa
 			strTemp += _T("] ");
 			if (!pUiData->ContCrossingCheckRule[idx].bEnable)
 			{
-				strTemp += _T("[����] ");
+				strTemp += _T("[無効] ");
 			}
 			strTemp += pUiData->ContCrossingCheckRule[idx].strCaption;
 			pListBox->AddString(strTemp.c_str());
@@ -377,16 +377,16 @@ void CDlgCrossingCheckRule::CPropEditUiInternal::UiDataFromUi( UIDATA* pUiData )
 	int iRv = 0 ;
 	
 	// --------------------------------
-	//	DDX��p�����AUiControl�ւ̐ݒ�
+	//	DDXを用いた、UiControlへの設定
 	// --------------------------------
 	if ( !pOuter->UpdateData( TRUE ) )
 	{
-		iRv = -1 ;	//	UpdateData �ŃG���[���������܂����B
+		iRv = -1 ;	//	UpdateData でエラーが発生しました。
 	}
 
 	/**
-		iUiOperation��0�̎��ȊO�́A���̓���̓X�L�b�v�����̂ŁA
-		iUiOperation��0�ł���Ɖ��肵�Đi�߂�
+		iUiOperationが0の時以外は、この動作はスキップされるので、
+		iUiOperationが0であると仮定して進める
 	*/
 	if (iRv >= 0)
 	{
@@ -633,7 +633,7 @@ void CDlgCrossingCheckRule::CPropEditUiInternal::SetFocus( int iOffsetofUiDataMe
 }	
 
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 CDlgCrossingCheckRule::CPropEditUiInternal::CPropEditUiInternal(
 	CentDedEki* pTarget ,
@@ -644,15 +644,15 @@ CDlgCrossingCheckRule::CPropEditUiInternal::CPropEditUiInternal(
 }
 
 /////////////////////////////////////////////////////////////////////////////
-//// CDlgCrossingCheckRule �_�C�A���O
+//// CDlgCrossingCheckRule ダイアログ
 
 	// --------------------------------
-	//@name �����֐�
+	//@name 下請関数
 	// --------------------------------
 
 
 // ********************************
-	//@name ����
+	//@name 属性
 	// ********************************
 // ----------------------------------------------------------------
 //	MFC
@@ -728,7 +728,7 @@ BEGIN_MESSAGE_MAP(CDlgCrossingCheckRule, CDialog)
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
-// CDlgCrossingCheckRule ���b�Z�[�W �n���h��
+// CDlgCrossingCheckRule メッセージ ハンドラ
 
 BOOL CDlgCrossingCheckRule::OnInitDialog() 
 {
@@ -772,7 +772,7 @@ BOOL CDlgCrossingCheckRule::OnInitDialog()
 		pCentDedEkiCont->getEkiIndexBrunchLoop(m_iEkiIndex, iEkiIndexBranchLoop);
 		sort(iEkiIndexBranchLoop.begin(), iEkiIndexBranchLoop.end());
 
-		//MapTrackContentToList�̓��A���w�Ɗ֌W�Ȃ��w�̕����𖄂߂邽�߂ɗp���܂��B
+		//MapTrackContentToListの内、当駅と関係ない駅の部分を埋めるために用います。
 		//int iPrevPushBack = 0;
 		vector<int> MapTrackContentToList1;
 		vector<int> MapTrackContentToList2;
@@ -787,9 +787,9 @@ BOOL CDlgCrossingCheckRule::OnInitDialog()
 				m_MapListToTrackContent[iListIndex] = TrackContent(ETrackType::TrackType_Origin, iEkiIndexBranchLoop[idx]);
 
 				/**
-					Listbox�ɕ\�����邽�߂̕���������߂�B
-					�`�`����(�N�_��)�́A�`�`�ɓ���w�́A���̉w����k���Ĉ�ԋ߂���v�w��p���܂��B�������AiEkiIndexBranchLoop[idx - 1]�������(�܂�)�͏����܂�
-					��v�w��������Ȃ��ꍇ�́A���O�̉w��p���܂�
+					Listboxに表示するための文字列を求める。
+					〜〜方面(起点側)の、〜〜に入る駅は、この駅から遡って一番近い主要駅を用います。ただし、iEkiIndexBranchLoop[idx - 1]よりも後ろ(含む)は除きます
+					主要駅が見つからない場合は、直前の駅を用います
 				*/
 				int iEkiIndexLoopPrev = -1;
 				if (idx > 0)
@@ -811,7 +811,7 @@ BOOL CDlgCrossingCheckRule::OnInitDialog()
 					const CentDedEki* pCentDedEkiPrev = pCentDedEkiCont->getMuPtr()->get(iEkiIndexBranchLoop[idx] - 1);
 					strTemp = pCentDedEkiPrev->getEkimei();
 				}
-				strTemp += _T("����(�N�_��)");
+				strTemp += _T("方面(起点側)");
 				pListBoxBF->AddString(strTemp.c_str());
 				pListBoxBT->AddString(strTemp.c_str());
 				pListBoxAF->AddString(strTemp.c_str());
@@ -826,9 +826,9 @@ BOOL CDlgCrossingCheckRule::OnInitDialog()
 				m_MapListToTrackContent[iListIndex] = TrackContent(ETrackType::TrackType_Terminal, iEkiIndexBranchLoop[idx]);
 
 				/**
-					Listbox�ɕ\�����邽�߂̕���������߂�B
-					�`�`����(�N�_��)�́A�`�`�ɓ���w�́A���̉w����k���Ĉ�ԋ߂���v�w��p���܂��B�������AiEkiIndexBranchLoop[idx - 1]�������(�܂�)�͏����܂�
-					��v�w��������Ȃ��ꍇ�́A���O�̉w��p���܂�
+					Listboxに表示するための文字列を求める。
+					〜〜方面(起点側)の、〜〜に入る駅は、この駅から遡って一番近い主要駅を用います。ただし、iEkiIndexBranchLoop[idx - 1]よりも後ろ(含む)は除きます
+					主要駅が見つからない場合は、直前の駅を用います
 				*/
 				int iEkiIndexLoopNext = pCentDedEkiCont->size();
 				if (idx < (int)iEkiIndexBranchLoop.size()-1)
@@ -850,7 +850,7 @@ BOOL CDlgCrossingCheckRule::OnInitDialog()
 					const CentDedEki* pCentDedEkiNext = pCentDedEkiCont->getMuPtr()->get(iEkiIndexBranchLoop[idx] + 1);
 					strTemp = pCentDedEkiNext->getEkimei();
 				}
-				strTemp += _T("����(�I�_��)");
+				strTemp += _T("方面(終点側)");
 				pListBoxBF->AddString(strTemp.c_str());
 				pListBoxBT->AddString(strTemp.c_str());
 				pListBoxAF->AddString(strTemp.c_str());
@@ -862,7 +862,7 @@ BOOL CDlgCrossingCheckRule::OnInitDialog()
 		m_MapTrackContentToList.push_back(MapTrackContentToList1);
 		m_MapTrackContentToList.push_back(MapTrackContentToList2);
 
-		//�H���O�I���w
+		//路線外終着駅
 		const vector<OuterTerminal> OuterTerminalCont = pCentDedEkiCont->get(m_iEkiIndex).getOuterTerminalEkimeiCont();
 		vector<int> MapTrackContentToList3;
 		for (int iOuterTerminalIndex = 0; iOuterTerminalIndex < (int)OuterTerminalCont.size(); iOuterTerminalIndex++)
@@ -870,7 +870,7 @@ BOOL CDlgCrossingCheckRule::OnInitDialog()
 			MapTrackContentToList3.push_back(iListIndex);
 			m_MapListToTrackContent[iListIndex] = TrackContent(ETrackType::TrackType_Outer, iOuterTerminalIndex);
 			tstring strTemp = OuterTerminalCont[iOuterTerminalIndex].OuterTerminalEkimei;
-			strTemp += _T("����(�H���O)");
+			strTemp += _T("方面(路線外)");
 			pListBoxBF->AddString(strTemp.c_str());
 			pListBoxBT->AddString(strTemp.c_str());
 			pListBoxAF->AddString(strTemp.c_str());
@@ -879,8 +879,8 @@ BOOL CDlgCrossingCheckRule::OnInitDialog()
 		}
 		m_MapTrackContentToList.push_back(MapTrackContentToList3);
 
-		//�Ԑ����X�g�̐��ɍ��킹�āA�_�C�A���O�̃T�C�Y��ς��܂�
-		//�ύX����̂́A���X�g�{�b�N�X(4��)�AOK�E�L�����Z���{�^��(�ʒu�̂�)�A�g�A�_�C�A���O�S��
+		//番線リストの数に合わせて、ダイアログのサイズを変えます
+		//変更するのは、リストボックス(4つ)、OK・キャンセルボタン(位置のみ)、枠、ダイアログ全体
 		{
 			const int yExpand = 15 * (min(40, pListBoxBF->GetCount() - 1));
 			RECT RECTDialog{};
@@ -930,12 +930,12 @@ BOOL CDlgCrossingCheckRule::OnInitDialog()
 		}
 	}
 
-	//	�ҏW���J�n
+	//	編集を開始
 	m_PropEditUiInternal.StartEdit() ;
 	
 	// --------------------------------
-	return TRUE;  // �R���g���[���Ƀt�H�[�J�X��ݒ肵�Ȃ��Ƃ��A�߂�l�� TRUE �ƂȂ�܂�
-	              // ��O: OCX �v���p�e�B �y�[�W�̖߂�l�� FALSE �ƂȂ�܂�
+	return TRUE;  // コントロールにフォーカスを設定しないとき、戻り値は TRUE となります
+	              // 例外: OCX プロパティ ページの戻り値は FALSE となります
 }
 
 void CDlgCrossingCheckRule::OnOK() 
@@ -957,9 +957,9 @@ void CDlgCrossingCheckRule::OnShowWindow(BOOL bShow, UINT nStatus)
 	//if ( bShow )
 	//{
 	//	// --------------------------------
-	//	//	�t�H�[�J�X���ړ�
+	//	//	フォーカスを移動
 	//	// --------------------------------
-	//	//�w��
+	//	//駅名
 	//	if ( m_iFocusItem == 0 ){
 	//		CEdit*	pControl = (CEdit*)GetDlgItem( IDC_EDIT_Ekimei );
 	//		GotoDlgCtrl( pControl ) ;
@@ -967,7 +967,7 @@ void CDlgCrossingCheckRule::OnShowWindow(BOOL bShow, UINT nStatus)
 	//			m_pCKeyinputSenderToModalDlg->registerCtrl( pControl->GetSafeHwnd() ) ;
 	//		}
 	//	}
-	//	//�w�����`��
+	//	//駅時刻形式
 	//	if ( m_iFocusItem == 1 ){
 	//		CWnd*	pControl = GetDlgItem( IDC_RADIO_Jikokukeisiki );
 	//		GotoDlgCtrl( pControl ) ;
@@ -975,7 +975,7 @@ void CDlgCrossingCheckRule::OnShowWindow(BOOL bShow, UINT nStatus)
 	//			m_pCKeyinputSenderToModalDlg->registerCtrl( pControl->GetSafeHwnd() ) ;
 	//		}
 	//	}
-	//	//�w�K��
+	//	//駅規模
 	//	if ( m_iFocusItem == 2 ){
 	//		CWnd*	pControl = GetDlgItem( IDC_RADIO_Ekikibo );
 	//		GotoDlgCtrl( pControl ) ;
@@ -983,7 +983,7 @@ void CDlgCrossingCheckRule::OnShowWindow(BOOL bShow, UINT nStatus)
 	//			m_pCKeyinputSenderToModalDlg->registerCtrl( pControl->GetSafeHwnd() ) ;
 	//		}
 	//	}
-	//	//�w�K��
+	//	//駅規模
 	//	if (m_iFocusItem == 3) {
 	//		CWnd*	pControl = GetDlgItem(IDC_CHECK_Brunch);
 	//		GotoDlgCtrl(pControl);
@@ -991,7 +991,7 @@ void CDlgCrossingCheckRule::OnShowWindow(BOOL bShow, UINT nStatus)
 	//			m_pCKeyinputSenderToModalDlg->registerCtrl(pControl->GetSafeHwnd());
 	//		}
 	//	}
-	//	//�w�K��
+	//	//駅規模
 	//	if (m_iFocusItem == 4) {
 	//		CWnd*	pControl = GetDlgItem(IDC_CHECK_Loop);
 	//		GotoDlgCtrl(pControl);
@@ -1110,9 +1110,9 @@ void ViewEki::CDlgCrossingCheckRule::OnLbnSelchangeListCrossingCheckRule()
 
 void ViewEki::CDlgCrossingCheckRule::OnBnClickedButtonListCrossingCheckadd()
 {
-	//UiData�ɊO����A�N�Z�X���A���ڍ�Ƃ�ǉ����܂��B
+	//UiDataに外からアクセスし、直接作業を追加します。
 	CrossingCheckRule CrossingCheckRuleTemp;
-	CrossingCheckRuleTemp.strCaption = _T("���[��") + to_tstring(m_PropEditUiInternal.GetUiData()->ContCrossingCheckRule.size() + 1);
+	CrossingCheckRuleTemp.strCaption = _T("ルール") + to_tstring(m_PropEditUiInternal.GetUiData()->ContCrossingCheckRule.size() + 1);
 	m_PropEditUiInternal.GetUiData()->ContCrossingCheckRule.push_back(CrossingCheckRuleTemp);
 	m_PropEditUiInternal.GetUiData()->iListSelected = m_PropEditUiInternal.GetUiData()->ContCrossingCheckRule.size() - 1;
 	//CListBox* pListBox = (CListBox*)GetDlgItem(IDC_LIST_CrossingCheckRule);
@@ -1123,7 +1123,7 @@ void ViewEki::CDlgCrossingCheckRule::OnBnClickedButtonListCrossingCheckadd()
 
 void ViewEki::CDlgCrossingCheckRule::OnBnClickedButtonListCrossingCheckcopy()
 {
-	//UiData�ɊO����A�N�Z�X���A���ڍ�Ƃ�ǉ����܂��B
+	//UiDataに外からアクセスし、直接作業を追加します。
 	int iListSelected = m_PropEditUiInternal.GetUiData()->iListSelected;
 	if (iListSelected >= 0)
 	{
@@ -1142,7 +1142,7 @@ void ViewEki::CDlgCrossingCheckRule::OnBnClickedButtonListCrossingCheckcopy()
 
 void ViewEki::CDlgCrossingCheckRule::OnBnClickedButtonListCrossingCheckclear()
 {
-	//UiData�ɊO����A�N�Z�X���A���ڍ�Ƃ��폜���܂��B
+	//UiDataに外からアクセスし、直接作業を削除します。
 	int iListSelected = m_PropEditUiInternal.GetUiData()->iListSelected;
 	if (iListSelected >= 0)
 	{
@@ -1163,7 +1163,7 @@ void ViewEki::CDlgCrossingCheckRule::OnBnClickedButtonListCrossingCheckclear()
 
 void ViewEki::CDlgCrossingCheckRule::OnBnClickedButtonListCrossingCheckup()
 {
-	//UiData�ɊO����A�N�Z�X���A���ڃ��[�������ւ��܂��B
+	//UiDataに外からアクセスし、直接ルールを入れ替えます。
 	int iListSelected = m_PropEditUiInternal.GetUiData()->iListSelected;
 	if (iListSelected > 0)
 	{
@@ -1181,7 +1181,7 @@ void ViewEki::CDlgCrossingCheckRule::OnBnClickedButtonListCrossingCheckup()
 
 void ViewEki::CDlgCrossingCheckRule::OnBnClickedButtonListCrossingCheckdown()
 {
-	//UiData�ɊO����A�N�Z�X���A���ڃ��[�������ւ��܂��B
+	//UiDataに外からアクセスし、直接ルールを入れ替えます。
 	int iListSelected = m_PropEditUiInternal.GetUiData()->iListSelected;
 	if (iListSelected >= 0 && iListSelected < (int)m_PropEditUiInternal.GetUiData()->ContCrossingCheckRule.size() - 1)
 	{

@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,54 +35,54 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
-// ViewRosen\CDlgRosenCreateSubRosen.cpp : �����t�@�C��
+// ViewRosen¥CDlgRosenCreateSubRosen.cpp : 実装ファイル
 //
 
 #include "stdafx.h"
 
-#include "str\strToWstr.h"
-#include "str\tstring.h"
+#include "str¥strToWstr.h"
+#include "str¥tstring.h"
 
-#include "..\DiagramEdit.h"
+#include "..¥DiagramEdit.h"
 #include "CDlgRosenCreateSubRosen.h"
 
 namespace ViewRosen{
 using namespace OuLib ;
 
-// CDlgRosenCreateSubRosen �_�C�A���O
+// CDlgRosenCreateSubRosen ダイアログ
 
 IMPLEMENT_DYNAMIC(CDlgRosenCreateSubRosen, CDialog)
 
@@ -98,7 +98,7 @@ CDlgRosenCreateSubRosen::CDlgRosenCreateSubRosen(
 	}
 }
 
-CDlgRosenCreateSubRosen::~CDlgRosenCreateSubRosen()
+CDlgRosenCreateSubRosen::‾CDlgRosenCreateSubRosen()
 {
 }
 
@@ -116,7 +116,7 @@ BEGIN_MESSAGE_MAP(CDlgRosenCreateSubRosen, CDialog)
 END_MESSAGE_MAP()
 
 
-// CDlgRosenCreateSubRosen ���b�Z�[�W �n���h��
+// CDlgRosenCreateSubRosen メッセージ ハンドラ
 
 BOOL CDlgRosenCreateSubRosen::OnInitDialog()
 {
@@ -130,7 +130,7 @@ BOOL CDlgRosenCreateSubRosen::OnInitDialog()
 	{
 		if ( m_arstrEkimei.size() < 3 )
 		{
-			iRv = -11 ;	//	3�w�����̘H���ł͎g�p�ł��܂���B
+			iRv = -11 ;	//	3駅未満の路線では使用できません。
 		}
 		else
 		{
@@ -153,7 +153,7 @@ BOOL CDlgRosenCreateSubRosen::OnInitDialog()
 	{
 		switch( iRv )
 		{
-		case -11 :	//	3�w�����̘H���ł͎g�p�ł��܂���B
+		case -11 :	//	3駅未満の路線では使用できません。
 			GetDlgItem( IDC_ERR_EKI_TOO_FEW )->GetWindowText( strErrorMsg ) ;
 			break ;
 		default:
@@ -167,7 +167,7 @@ BOOL CDlgRosenCreateSubRosen::OnInitDialog()
 		EndDialog( IDCANCEL ) ;
 	}
 	return TRUE;  // return TRUE unless you set the focus to a control
-	// ��O : OCX �v���p�e�B �y�[�W�͕K�� FALSE ��Ԃ��܂��B
+	// 例外 : OCX プロパティ ページは必ず FALSE を返します。
 }
 
 void CDlgRosenCreateSubRosen::OnOK()
@@ -188,7 +188,7 @@ void CDlgRosenCreateSubRosen::OnOK()
 		}
 		if ( !( m_iSihatsuEkiIndex < m_iSyuuchakuEkiIndex ) )
 		{
-			iRv = -12 ;	//	�n���w���I���w����ɂ��Ă��������B
+			iRv = -12 ;	//	始発駅より終着駅を後にしてください。
 		}
 		m_bEnableOuter = (m_bEDIT_EnableOuter > 0);
 	}
@@ -198,7 +198,7 @@ void CDlgRosenCreateSubRosen::OnOK()
 		CString strErrorMsg ;
 		switch( iRv )
 		{
-		case -12 :	//	3�w�����̘H���ł͎g�p�ł��܂���B
+		case -12 :	//	3駅未満の路線では使用できません。
 			GetDlgItem( IDC_ERR_EKIINDEX_ORDER )->GetWindowText( strErrorMsg ) ;
 			break ;
 		default:

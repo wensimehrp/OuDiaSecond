@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -71,7 +71,7 @@ Copyright (C) 2006-2017 take-okm
 #ifndef  CdColorProp_h
 #define  CdColorProp_h
 
-#include "DcdCd\Pos\DcdType.h"
+#include "DcdCd¥Pos¥DcdType.h"
 
 namespace DcDrawLib{
 namespace DcdCd{
@@ -82,37 +82,37 @@ namespace DcDrawProp{
 // ****************************************************************
 /**
  @brief
- �y�T�v�z
-	�F�̑�����ێ�����P���f�[�^�N���X�ł��B
+ 【概要】
+	色の属性を保持する単純データクラスです。
 
-	CConverter_WinGdi �N���X���g�p����ƁACOLORREF�\���̂Ƃ̊Ԃő��ݕϊ�
-	���s�����Ƃ��ł��܂��B
+	CConverter_WinGdi クラスを使用すると、COLORREF構造体との間で相互変換
+	を行うことができます。
 */
 class CdColorProp
 {
 // ********************************
-///@name	����
+///@name	属性
 // ********************************
 ///@{
  private:
 	/**
-	*	�F�̐Ԃ̗v�f�ł��B
+	*	色の赤の要素です。
 	*/
 	unsigned char m_iRed ;
 	
 	/**
-	*	�F�̗΂̗v�f�ł��B
+	*	色の緑の要素です。
 	*/
 	unsigned char m_iGreen ;
 	
 	/**
-	*	�F�̐̗v�f�ł��B
+	*	色の青の要素です。
 	*/
 	unsigned char m_iBlue ;
 	
 ///@}
 // ********************************
-//	�R���X�g���N�^
+//	コンストラクタ
 // ********************************
  public:
 	CdColorProp( 
@@ -135,7 +135,7 @@ class CdColorProp
 // ********************************
 public:
 	// ********************************
-	///@name	����
+	///@name	属性
 	// ********************************
 	///@{
 	unsigned char getRed()const{	return m_iRed ;};
@@ -148,11 +148,11 @@ public:
 
 
 	/**
-	 *	2�̃I�u�W�F�N�g�̊e���������������ǂ����𔻒肵�܂��B
+	 *	2つのオブジェクトの各属性が等しいかどうかを判定します。
 	 * @param value [in]
-	 *	��r�̑ΏۂƂȂ�I�u�W�F�N�g���w�肵�Ă��������B
+	 *	比較の対象となるオブジェクトを指定してください。
 	 * @return 
-	 *	value �� *this �Ƃ̊ԂŁA���ׂĂ̑�������������ΐ^�ł��B
+	 *	value と *this との間で、すべての属性が等しければ真です。
 	 */
 	bool isEqualTo( const CdColorProp& value )const
 	{
@@ -162,20 +162,20 @@ public:
 			m_iBlue == value.m_iBlue );
 	};
 	/**
-	 *	isEqualTo() �Ɠ����ł��B
+	 *	isEqualTo() と等価です。
 	 */
 	bool operator==( const CdColorProp& value )const
 	{	return ( isEqualTo( value ) ) ;	};	
 	bool operator!=( const CdColorProp& value )const
 	{	return ( !isEqualTo( value ) ) ;};	
 	/**
-	 *	this �� b ���
-	 *	�������i�������O�ɂȂ�j�Ȃ�^�ł��B
+	 *	this が b より
+	 *	小さい（順序が前になる）なら真です。
 	 * @param b [in]
-	 *	��r�̑ΏۂƂȂ�I�u�W�F�N�g���w�肵�Ă��������B
+	 *	比較の対象となるオブジェクトを指定してください。
 	 * @return 
-	 *	this �� b ���
-	 *	�������i�������O�ɂȂ�j�Ȃ�^�ł��B
+	 *	this が b より
+	 *	小さい（順序が前になる）なら真です。
 	 */
 	bool  less( const CdColorProp& value )const
 	{
@@ -194,7 +194,7 @@ public:
 		return ( false ) ;
 	};
 	/**
-	 *	less() �Ɠ����ł��B
+	 *	less() と等価です。
 	 */
 	bool operator<( const CdColorProp& b )const
 	{	return less( b );	};

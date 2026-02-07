@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -81,7 +81,7 @@ namespace Hidemdi{
 //	CHidemdiCSubdoctemplate
 // ****************************************************************
 // ********************************
-//	�R���X�g���N�^
+//	コンストラクタ
 // ********************************
 CHidemdiRootDoctmpl::CHidemdiRootDoctmpl( UINT nIDResource
 				, CRuntimeClass* pDocClass ) : 
@@ -91,7 +91,7 @@ CHidemdiRootDoctmpl::CHidemdiRootDoctmpl( UINT nIDResource
 		RUNTIME_CLASS(CHidemdiRootView) ) 
 {
 }
-CHidemdiRootDoctmpl::~CHidemdiRootDoctmpl() 
+CHidemdiRootDoctmpl::‾CHidemdiRootDoctmpl() 
 {
 }
 
@@ -101,37 +101,37 @@ CHidemdiRootDoctmpl::~CHidemdiRootDoctmpl()
 CDocument* CHidemdiRootDoctmpl::OpenDocumentFile( LPCTSTR lpszPathName
 								//, BOOL bMakeVisible )
 	,BOOL bAddToMRU, BOOL bMakeVisible )
-		//�y�I�[�o���C�h�z
-		//	�����̃h�L�������g�����ׂĕ��Ă���A
-		//	�V�����h�L�������g�𐶐����܂��B
+		//【オーバライド】
+		//	既存のドキュメントをすべて閉じてから、
+		//	新しいドキュメントを生成します。
 {
 
 	CDocument*	pRv = NULL ;
 	BOOL	bLSaveIsContinued = TRUE ;
 
 	//--------------------------------
-	//	���[�g�h�L�������g��ۑ�
+	//	ルートドキュメントを保存
 	//--------------------------------
 	if ( bLSaveIsContinued ){
 		bLSaveIsContinued = super::SaveAllModified() ;
-			//bLSaveIsContinued = ���[�g�h�L�������g�̕ۑ���
-			//	�L�����Z�����ꂽ��U�ł�
+			//bLSaveIsContinued = ルートドキュメントの保存が
+			//	キャンセルされたら偽です
 	}
 	if ( bLSaveIsContinued )
 	{
 		//--------------------------------
-		//	���ׂẴT�u�h�L�������g�����
+		//	すべてのサブドキュメントを閉じる
 		//--------------------------------
 		CloseAllSubDocuviews( FALSE ) ;
 
 		//--------------------------------
-		//	���[�g�h�L�������g���Ȃ��Ȃ琶��
-		//	����Ȃ�A�����̗v�f��j��
+		//	ルートドキュメントがないなら生成
+		//	あるなら、既存の要素を破棄
 		//--------------------------------
 		CDocument*	pDocument = ((CHidemdiApp*)AfxGetApp())->pRootDoc() ;
 		if ( pDocument == NULL )
 		{
-			//	���[�gDocument���Ȃ��Ȃ琶��
+			//	ルートDocumentがないなら生成
 			pDocument = CreateNewDocument();
 
 		}	else	{
@@ -139,8 +139,8 @@ CDocument* CHidemdiRootDoctmpl::OpenDocumentFile( LPCTSTR lpszPathName
 		}
 
 		//--------------------------------
-		//	�t�@�C�������w�肳��Ă�����A
-		//	�t�@�C�����J��
+		//	ファイル名が指定されていたら、
+		//	ファイルを開く
 		//--------------------------------
 		if (lpszPathName == NULL)
 		{
@@ -154,7 +154,7 @@ CDocument* CHidemdiRootDoctmpl::OpenDocumentFile( LPCTSTR lpszPathName
 			if (!pDocument->OnNewDocument())
 			{
 				// user has be alerted to what failed in OnNewDocument
-				TRACE0("CDocument::OnNewDocument returned FALSE.\n");
+				TRACE0("CDocument::OnNewDocument returned FALSE.¥n");
 				//pFrame->DestroyWindow();
 				return NULL;
 			}
@@ -169,7 +169,7 @@ CDocument* CHidemdiRootDoctmpl::OpenDocumentFile( LPCTSTR lpszPathName
 			if (!pDocument->OnOpenDocument(lpszPathName))
 			{
 				// user has be alerted to what failed in OnOpenDocument
-				TRACE0("CDocument::OnOpenDocument returned FALSE.\n");
+				TRACE0("CDocument::OnOpenDocument returned FALSE.¥n");
 				//pFrame->DestroyWindow();
 				return NULL;
 			}
@@ -187,7 +187,7 @@ CDocument* CMultiDocTemplate::OpenDocumentFile(LPCTSTR lpszPathName,
 	CDocument* pDocument = CreateNewDocument();
 	if (pDocument == NULL)
 	{
-		TRACE0("CDocTemplate::CreateNewDocument returned NULL.\n");
+		TRACE0("CDocTemplate::CreateNewDocument returned NULL.¥n");
 		AfxMessageBox(AFX_IDP_FAILED_TO_CREATE_DOC);
 		return NULL;
 	}
@@ -217,7 +217,7 @@ CDocument* CMultiDocTemplate::OpenDocumentFile(LPCTSTR lpszPathName,
 		if (!pDocument->OnNewDocument())
 		{
 			// user has be alerted to what failed in OnNewDocument
-			TRACE0("CDocument::OnNewDocument returned FALSE.\n");
+			TRACE0("CDocument::OnNewDocument returned FALSE.¥n");
 			pFrame->DestroyWindow();
 			return NULL;
 		}
@@ -232,7 +232,7 @@ CDocument* CMultiDocTemplate::OpenDocumentFile(LPCTSTR lpszPathName,
 		if (!pDocument->OnOpenDocument(lpszPathName))
 		{
 			// user has be alerted to what failed in OnOpenDocument
-			TRACE0("CDocument::OnOpenDocument returned FALSE.\n");
+			TRACE0("CDocument::OnOpenDocument returned FALSE.¥n");
 			pFrame->DestroyWindow();
 			return NULL;
 		}
@@ -246,8 +246,8 @@ CDocument* CMultiDocTemplate::OpenDocumentFile(LPCTSTR lpszPathName,
 */
 
 BOOL CHidemdiRootDoctmpl::SaveAllModified( )
-		//�y�I�[�o���C�h�z
-		//	���ׂẴT�uDocview��ۑ����Ă���A����Docview��ۑ����܂�
+		//【オーバライド】
+		//	すべてのサブDocviewを保存してから、このDocviewを保存します
 {
 	BOOL	bLSaveIsContinued = TRUE ;
 	if ( bLSaveIsContinued ){
@@ -258,9 +258,9 @@ BOOL CHidemdiRootDoctmpl::SaveAllModified( )
 	
 void CHidemdiRootDoctmpl::CloseAllDocuments( BOOL bEndSession )
 {
-		//�y�I�[�o���C�h�z
-		//	���ׂẴT�uDocview��CloseAllDocuments�����s���Ă���A
-		//	����Docview����܂�
+		//【オーバライド】
+		//	すべてのサブDocviewにCloseAllDocumentsを実行してから、
+		//	このDocviewを閉じます
 	CloseAllSubDocuviews( bEndSession ) ;
 	super::CloseAllDocuments( bEndSession ) ;
 }
@@ -278,8 +278,8 @@ BOOL CHidemdiRootDoctmpl::SaveAllModifiedSubDocviews( )
 
 		if ( pLDocTemplate != this ){
 			bLSaveIsContinued = pLDocTemplate->SaveAllModified() ;
-				//bLSaveIsContinued = �T�u�h�L�������g�̕ۑ���
-				//	�L�����Z�����ꂽ��U�ł�
+				//bLSaveIsContinued = サブドキュメントの保存が
+				//	キャンセルされたら偽です
 		}
 	}
 
@@ -287,7 +287,7 @@ BOOL CHidemdiRootDoctmpl::SaveAllModifiedSubDocviews( )
 }
 
 void CHidemdiRootDoctmpl::CloseAllSubDocuviews( BOOL bEndSession )
-		//	���ׂẴT�uDocview����܂�
+		//	すべてのサブDocviewを閉じます
 {
 
 	POSITION	LPosition = AfxGetApp()->GetFirstDocTemplatePosition() ;

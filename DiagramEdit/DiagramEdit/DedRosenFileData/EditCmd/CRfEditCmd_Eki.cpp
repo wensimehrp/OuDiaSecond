@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -96,7 +96,7 @@ namespace DedRosenFileData{ namespace EditCmd{
 //	CRfEditCmd_Eki
 // ****************************************************************
 // ********************************
-//	�R���X�g���N�^
+//	コンストラクタ
 // ********************************
 CRfEditCmd_Eki::CRfEditCmd_Eki( 
 		int iIndexDst ,
@@ -148,7 +148,7 @@ CRfEditCmd_Eki::CRfEditCmd_Eki(
 
 
 
-CRfEditCmd_Eki::~CRfEditCmd_Eki() 
+CRfEditCmd_Eki::‾CRfEditCmd_Eki() 
 {
 	if ( m_pCentDedEkiContOld != NULL )
 	{
@@ -162,7 +162,7 @@ CRfEditCmd_Eki::~CRfEditCmd_Eki()
 	}
 }
 // ********************************
-//@name	CRfEditCmd-����
+//@name	CRfEditCmd-操作
 // ********************************
 int CRfEditCmd_Eki::execute( CDedRosenFileData* pCDedRosenFileData ) 
 {
@@ -172,7 +172,7 @@ int CRfEditCmd_Eki::execute( CDedRosenFileData* pCDedRosenFileData )
 	CentDedEkiCont*	pCentDedEkiCont = pCentDedRosen->getCentDedEkiCont() ;
 	if ( iRv >= 0 ){
 		if ( m_iIndexDst == INT_MAX && m_iSizeDst == INT_MAX ){
-			iRv = -1 ;	//	m_iDiaIndex �̒l���s���ł��B
+			iRv = -1 ;	//	m_iDiaIndex の値が不正です。
 		}	else	{
 			if ( m_iIndexDst == INT_MAX ){
 				m_iIndexDst = pCentDedEkiCont->size()  - m_iSizeDst ;
@@ -181,12 +181,12 @@ int CRfEditCmd_Eki::execute( CDedRosenFileData* pCDedRosenFileData )
 			}
 			if ( !( 0 <= m_iIndexDst && 
 				m_iIndexDst + m_iSizeDst<= pCentDedEkiCont->size() ) ){
-				iRv = -1 ;	//	m_iDiaIndex �̒l���s���ł��B
+				iRv = -1 ;	//	m_iDiaIndex の値が不正です。
 			}
 		}
 	}
 	// --------------------------------
-	//	�폜�f�[�^��ۑ�
+	//	削除データを保存
 	// --------------------------------
 	if ( iRv >= 0 ){
 		if ( m_pCentDedEkiContOld != NULL ){
@@ -197,9 +197,9 @@ int CRfEditCmd_Eki::execute( CDedRosenFileData* pCDedRosenFileData )
 			delete m_pCentDedRosen ;
 			m_pCentDedRosen = NULL ;
 		}
-		//	[�w�������w�����`���ɐ��K������]�ݒ�=OFF
-		//	AND �v�f��u�����E�܂��͒ǉ����s�����ꍇ
-		//	(�w�������ω����Ă��Ȃ��ꍇ)
+		//	[駅時刻を駅時刻形式に正規化する]設定=OFF
+		//	AND 要素を置換え・または追加を行った場合
+		//	(駅時刻が変化していない場合)
 		if ( !m_bAdjustByEkijikokukeisiki &&
 			m_iSizeDst <= m_CentDedEkiContSrc.size() )
 		{
@@ -210,29 +210,29 @@ int CRfEditCmd_Eki::execute( CDedRosenFileData* pCDedRosenFileData )
 				m_iIndexDst , 
 				m_iSizeDst , 0 ) ;
 		}
-		//	[�w�������w�����`���ɐ��K������]�ݒ�=ON
-		//	OR �v�f�̍팸 �̏ꍇ�́A
-		//	�H���S�̂�ۑ�����K�v������܂�
-		//	(�ҏW����ŏ��ł���w�������������邽��)
+		//	[駅時刻を駅時刻形式に正規化する]設定=ON
+		//	OR 要素の削減 の場合は、
+		//	路線全体を保存する必要があります
+		//	(編集動作で消滅する駅時刻が発生するため)
 		else
 		{
 			m_pCentDedRosen = new CentDedRosen( *pCentDedRosen ) ; 
 		}
 	}
 	//--------------
-	//	iEkiIndexGroupOld�����߂�
+	//	iEkiIndexGroupOldを求める
 	//--------------
 	std::deque<int> iEkiIndexBrunchLoopOld;
 	int iSize;
 	if (m_CentDedEkiContSrc.size() == 1 &&
-		m_iSizeDst == 1)//�u�������̏ꍇ�̂�
+		m_iSizeDst == 1)//置き換えの場合のみ
 	{
 		iSize = pCentDedRosen->getCentDedEkiCont()
 			->getEkiIndexBrunchLoop(m_iIndexDst, iEkiIndexBrunchLoopOld);
 	}
 
 	// --------------------------------
-	//	�������̗v�f�̍폜
+	//	減少分の要素の削除
 	// --------------------------------
 	if ( iRv >= 0 )
 	{
@@ -244,12 +244,12 @@ int CRfEditCmd_Eki::execute( CDedRosenFileData* pCDedRosenFileData )
 				iGensyouSize
 			) ;
 			if ( iResult < 0 ){
-				iRv = -11 ;	//	�v�f�̍폜�Ɏ��s���܂����B
+				iRv = -11 ;	//	要素の削除に失敗しました。
 			}
 		}
 	}
 	// --------------------------------
-	//	�v�f�̒u������
+	//	要素の置き換え
 	// --------------------------------
 	int iOkikaeSize = 0 ;
 	if ( iRv >= 0 )
@@ -260,12 +260,12 @@ int CRfEditCmd_Eki::execute( CDedRosenFileData* pCDedRosenFileData )
 				m_CentDedEkiContSrc.get( cnt ) , 
 				m_iIndexDst + cnt )  ;
 			if ( iResult < 0 ){
-				iRv = -13 ;	//	�v�f�̒u�������Ɏ��s���܂����B
+				iRv = -13 ;	//	要素の置き換えに失敗しました。
 			}
 		}
 	}
 	// --------------------------------
-	//	�������̗v�f�̒ǉ�
+	//	増加分の要素の追加
 	// --------------------------------
 	if ( iRv >= 0 )
 	{
@@ -279,7 +279,7 @@ int CRfEditCmd_Eki::execute( CDedRosenFileData* pCDedRosenFileData )
 					m_iIndexDst + iOkikaeSize + cnt ) ; 
 				if ( iResult < 0 )
 				{
-					iRv = -12 ;	//	�v�f�̒ǉ��Ɏ��s���܂����B
+					iRv = -12 ;	//	要素の追加に失敗しました。
 				}
 			}
 		}
@@ -292,7 +292,7 @@ int CRfEditCmd_Eki::execute( CDedRosenFileData* pCDedRosenFileData )
 	}
 
 	// --------------------------------
-	//	[�w�������w�����`���ɐ��K������]�ݒ�B
+	//	[駅時刻を駅時刻形式に正規化する]設定。
 	// --------------------------------
 	if ( iRv >= 0 && !getCrossingCheckRuleEdit() && m_bAdjustByEkijikokukeisiki )
 	{
@@ -305,11 +305,11 @@ int CRfEditCmd_Eki::execute( CDedRosenFileData* pCDedRosenFileData )
 	}
 
 	// --------------------------------
-	//	�Ԑ��̒��� �H���O�n���I���w�̒���
+	//	番線の調整 路線外始発終着駅の調整
 	// --------------------------------
-	//size1�̏ꍇ�́A���g���������Ă��Ȃ����A�Ԑ��V�t�g�͍s���K�v������̂ŁAadjust���s��
-	//Ver2.0�H���O�n���I���w������ǉ�
-	//Ver2.05.03 �����x��`�F�b�N���[��������ǉ�
+	//size1の場合は、自身しか入っていないが、番線シフトは行う必要があるので、adjustを行う
+	//Ver2.0路線外始発終着駅調整を追加
+	//Ver2.05.03 交差支障チェックルール調整を追加
 	if (iRv >= 0 && !getCrossingCheckRuleEdit() && (int)iEkiIndexBrunchLoopOld.size() > 0)
 	{
 		pCentDedRosen->adjustBrunchLoopEkiTrack2OuterTerminal(
@@ -319,9 +319,9 @@ int CRfEditCmd_Eki::execute( CDedRosenFileData* pCDedRosenFileData )
 			m_iOuterTerminalEkimeiMap);
 	}
 	// --------------------------------
-	//	�����x��`�F�b�N���[���̒���
+	//	交差支障チェックルールの調整
 	// --------------------------------
-	//size=1�̏ꍇ�͎��{���Ȃ��B
+	//size=1の場合は実施しない。
 	if (iRv >= 0 && getCrossingCheckRuleEdit() && (int)iEkiIndexBrunchLoopOld.size() > 1)
 	{
 		pCentDedEkiCont->adjustCrossingCheckRule(
@@ -329,11 +329,11 @@ int CRfEditCmd_Eki::execute( CDedRosenFileData* pCDedRosenFileData )
 			iEkiIndexBrunchLoopOld);
 	}
 	// --------------------------------
-	//	����w�E����̐ݒ�B
+	//	分岐駅・環状線の設定。
 	// --------------------------------
 	if (iRv >= 0)
 	{
-		//�w�v���p�e�B�̕ύX�A�������͐V�K�ǉ��̏ꍇ�B
+		//駅プロパティの変更、もしくは新規追加の場合。
 		if (m_CentDedEkiContSrc.size() == 1 &&
 			m_iSizeDst <= 1) 
 		{
@@ -365,17 +365,17 @@ int CRfEditCmd_Eki::execute( CDedRosenFileData* pCDedRosenFileData )
 		}
 	}
 
-	//��Ƃ̒������s��
+	//作業の調整を行う
 	{
 		pCentDedRosen->adjustOperation();
 	}
 
-	//�����x��`�F�b�N���[���̒���(�w�����`��������E��֌W����
+	//交差支障チェックルールの調整(駅時刻形式＆分岐・環状関係絡み
 	{
 		pCentDedEkiCont->adjustCrossingCheckRuleByEkiEdit();
 	}
 
-	//�^�p�̒T��
+	//運用の探索
 	for (int idx = 0; idx < pCentDedRosen->getCentDedDiaCont()->size(); idx++)
 	{
 		pCentDedRosen->OperationConnect(idx);

@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -82,71 +82,71 @@ namespace DcDraw{
 // ****************************************************************
 /**
 * @brief
-* �y�T�v�z
-*	�E�C���h�E��WM_PAINT�����������Ƃ��́A�`��̈��\���N���X�ł��B
+* 【概要】
+*	ウインドウにWM_PAINTが到着したときの、描画領域を表すクラスです。
 *
-* 	  ���̃N���X�́AWM_PAINT���b�Z�[�W�����������Ƃ��̃C�x���g�n���h����
-* 	�X�^�b�N��ɐ������邱�Ƃ�z�肵�Ă��܂��B
-* 	  DcDraw���f���ɂ�����A�`����s���̈��\���I�u�W�F�N�g�̃C���^�[�t�F�[�X
-* 	�ł��B
+* 	  このクラスは、WM_PAINTメッセージが到着したときのイベントハンドラで
+* 	スタック上に生成することを想定しています。
+* 	  DcDrawモデルにおける、描画を行う領域を表すオブジェクトのインターフェース
+* 	です。
 *
-* �y�g�����z
+* 【使い方】
 *
-* �P�D WM_PAINT ���b�Z�[�W���E�C���h�E�ɓ��������Ƃ��ɂ����A
-* 	�I�u�W�F�N�g���X�^�b�N��ɐ������Ă��������B
-* 	  �g�����́A���̂R�ʂ肪����܂��B
+* １． WM_PAINT メッセージがウインドウに到着したときにだけ、
+* 	オブジェクトをスタック上に生成してください。
+* 	  使い方は、次の３通りがあります。
 *
-* 	�i�P�j  BeginPaint() ���Ăяo���āA�R���X�g���N�^��PAINTSTRUCT��n����
-* 	���������B
+* 	（１）  BeginPaint() を呼び出して、コンストラクタでPAINTSTRUCTを渡して
+* 	ください。
 *
-* 	�i�Q�j   MFC�A�v���P�[�V�����̏ꍇ�́ACPaintDC�I�u�W�F�N�g�𐶐�����
-* 	���̃����o CPaintDC::m_ps ���R���X�g���N�^�ɓn���Ă��������B
+* 	（２）   MFCアプリケーションの場合は、CPaintDCオブジェクトを生成して
+* 	そのメンバ CPaintDC::m_ps をコンストラクタに渡してください。
 *
-* 	�i�R�j�E�C���h�E�n���h�����A�R���X�g���N�^�ɓn���Ă��������B
-* 	���̃N���X�́A�R���X�g���N�^�� BeginPaint() ���Ăяo���ADC���擾���܂��B
-* 	  ���̏ꍇ�Athis�̓f�X�g���N�^�ł�EndPaint() �����s���܂��B
+* 	（３）ウインドウハンドルを、コンストラクタに渡してください。
+* 	このクラスは、コンストラクタで BeginPaint() を呼び出し、DCを取得します。
+* 	  この場合、thisはデストラクタではEndPaint() を実行します。
 *
-* �Q�D   this �� IfDcDraw �I�u�W�F�N�g�ɓn���āA�`����s�킹�Ă��������B
+* ２．   this を IfDcDraw オブジェクトに渡して、描画を行わせてください。
 * 
 */
 class CDcdTargetOnPaint : public IfDcdTarget
 {
 // --------------------------------
-///@name	�����f�[�^
+///@name	内部データ
 // --------------------------------
 ///@{
  private:
 	/**
-	* 	�E�C���h�E�n���h���B
-	* 	�R���X�g���N�^�Ō��܂�܂��B
-	* 	���̃E�C���h�E��,this��蒷���������Ȃ��Ă͂Ȃ�܂���B
+	* 	ウインドウハンドル。
+	* 	コンストラクタで決まります。
+	* 	このウインドウは,thisより長く生存しなくてはなりません。
 	*/
 	HWND		m_hWnd ;
 	
 	/**
-	* 	�`��̈��\���\���̂ł��B
-	* 	�R���X�g���N�^�Ō��܂�܂��B
+	* 	描画領域を表す構造体です。
+	* 	コンストラクタで決まります。
 	* 
-	* 	�R���X�g���N�^��PAINTSTRUCT���n���ꂽ�ꍇ�́A���̃A�h���X��
-	* 	�ێ����܂��B
-	* 	���̏ꍇ�AEndPaint() �̐Ӗ��́A�N���X���[�U�[�ɂ���܂��B
-	* 	this���������Ă���Ԃ́AEndPaint()�����Ă͂����܂���B
-	* 	�܂��APAINTSTRUCT��this���Ȃ����������Ȃ��Ă͂Ȃ�܂���B
+	* 	コンストラクタでPAINTSTRUCTが渡された場合は、そのアドレスを
+	* 	保持します。
+	* 	この場合、EndPaint() の責務は、クラスユーザーにあります。
+	* 	thisが生存している間は、EndPaint()をしてはいけません。
+	* 	また、PAINTSTRUCTもthisよりながく存続しなくてはなりません。
 	* 
-	* 	�R���X�g���N�^��PAINTSTRUCT���n���ꂽ�Ȃ������ꍇ�́A
-	* 	�R���X�g���N�^��PAINTSTRUCT�𐶐����ABeginPaint()���s���܂��B
-	* 	���̏ꍇ�AEndPaint() �̐Ӗ��́Athis�ɂ���܂��B
+	* 	コンストラクタでPAINTSTRUCTが渡されたなかった場合は、
+	* 	コンストラクタはPAINTSTRUCTを生成し、BeginPaint()を行います。
+	* 	この場合、EndPaint() の責務は、thisにあります。
 	*/
 	PAINTSTRUCT*	m_pPaintstruct ;
 	
 	/**
-	* 	this���R���X�g���N�^��BeginPaint()���s�����ꍇ�͐^�ɂȂ�܂��B
+	* 	thisがコンストラクタでBeginPaint()を行った場合は真になります。
 	*/
 	bool			m_bPaintstructEndPaintObligatory ;
 	
 	
 	/**
-	 *	GDI�I�u�W�F�N�g�̑����ƁA�n���h���̑Ώƕ\��ێ����܂��B
+	 *	GDIオブジェクトの属性と、ハンドルの対照表を保持します。
 	 */
 	CGdiCache	m_CGdiCache ;
 
@@ -156,27 +156,27 @@ class CDcdTargetOnPaint : public IfDcdTarget
 ///@}
 
 // ********************************
-//	�R���X�g���N�^
+//	コンストラクタ
 // ********************************
  public:
 	/**
 	* @param hWnd [in]
-	* 	�E�C���h�E�n���h���B
-	* 	���̃E�C���h�E��,this��蒷���������Ȃ��Ă͂Ȃ�܂���B
+	* 	ウインドウハンドル。
+	* 	このウインドウは,thisより長く生存しなくてはなりません。
 	* @param pPaintstruct [in]
-	* 	�`��̈��\���\���̂ł��B
-	* 	�R���X�g���N�^�Ō��܂�܂��B
+	* 	描画領域を表す構造体です。
+	* 	コンストラクタで決まります。
 	*/
 	CDcdTargetOnPaint( HWND hWnd , PAINTSTRUCT* pPaintstruct /*, bool bEnableBuffer = false*/) ;
 
 	/**
 	* @param hWnd [in]
-	* 	�E�C���h�E�n���h���B
-	* 	���̃E�C���h�E��,this��蒷���������Ȃ��Ă͂Ȃ�܂���B
+	* 	ウインドウハンドル。
+	* 	このウインドウは,thisより長く生存しなくてはなりません。
 	*/
 	CDcdTargetOnPaint( HWND hWnd ) ;
 	
-	virtual ~CDcdTargetOnPaint() ;
+	virtual ‾CDcdTargetOnPaint() ;
 
 
 
@@ -189,55 +189,55 @@ class CDcdTargetOnPaint : public IfDcdTarget
  public:
 	/**
 	* @return
-	* 	�`����s��DC���擾���܂��B
-	* 	����HDC�̔j���̐Ӗ��́Athis�ɂ���܂��B
+	* 	描画を行うDCを取得します。
+	* 	このHDCの破棄の責務は、thisにあります。
 	*/
 	virtual HDC	getHdc() ;
 	
 	/**
 	* @return
-	* 	�`��̕K�v�ȗ̈�̍��W�͈͂��擾���邱�Ƃ��ł��܂��B
-	* 	�P�ʂ́A�_���P�ʂł��B
+	* 	描画の必要な領域の座標範囲を取得することができます。
+	* 	単位は、論理単位です。
 	*/
 	virtual CdDcdZoneXy getZone() ;
 	
 	/**
 	* @return
-	* 	�`�悪�L���Ȕ͈͂��擾�ł��܂��B
-	* 	�ʏ�́AgetZone()�Ɠ����̈�ƂȂ�܂��B
+	* 	描画が有効な範囲を取得できます。
+	* 	通常は、getZone()と同じ領域となります。
 	* 
-	* 	�E�C���h�E��WM_PAINT�ɂ��`��̏ꍇ�A���̊֐����Ԃ��̂́A
-	* 	�ĕ`�悪�K�v�ȗ̈�ƂȂ�܂��B
-	* 	���̗̈�𖳎����Ă����܂��܂���B�������A���͈̔͊O�ւ̕`���
-	* 	�Ӗ�������܂���̂ŁA���͈̔͊O�ւ̕`���}������悤�ɂ���΁A
-	* 	�`�揈���̌����̉��P�����҂ł��܂��B
+	* 	ウインドウのWM_PAINTによる描画の場合、この関数が返すのは、
+	* 	再描画が必要な領域となります。
+	* 	この領域を無視してもかまいません。ただし、この範囲外への描画は
+	* 	意味がありませんので、この範囲外への描画を抑制するようにすれば、
+	* 	描画処理の効率の改善が期待できます。
 	*/
 	virtual CdDcdZoneXy getDrawableZone() ;
 
 	/**
-	 	CdFontProp�I�u�W�F�N�g�̑��������ƂɁA�t�H���g�𐶐����܂�
+	 	CdFontPropオブジェクトの属性をもとに、フォントを生成します
 	 @param aCdFontProp [in]
-	 	�t�H���g�������w�肵�Ă��������B
+	 	フォント属性を指定してください。
 	 @return
-		�t�H���g�̃n���h����ێ����� CGdiHFontHolder ��Ԃ��܂��B
+		フォントのハンドルを保持する CGdiHFontHolder を返します。
 	*/
 	virtual Ou<CGdiHFontHolder>	createGdiHFontHolder(  const CdFontProp& aCdFontProp ) ;
 	
 	/**
-	 	CdPenProp�I�u�W�F�N�g�̑��������ƂɁA�y���𐶐����܂�
+	 	CdPenPropオブジェクトの属性をもとに、ペンを生成します
 	 @param aCdPenProp [in]
-	 	�y���������w�肵�Ă��������B
+	 	ペン属性を指定してください。
 	 @return
-		�y���̃n���h����ێ����� CGdiHPenHolder ��Ԃ��܂��B
+		ペンのハンドルを保持する CGdiHPenHolder を返します。
 	*/
 	virtual  Ou<CGdiHPenHolder>		createGdiHPenHolder(  const CdPenProp& aCdPenProp ) ;
 
 	/**
-	 	CdBrushProp�I�u�W�F�N�g�̑��������ƂɁA�u���V�𐶐����܂�
+	 	CdBrushPropオブジェクトの属性をもとに、ブラシを生成します
 	 @param aCdBrushProp [in]
-	 	�u���V�������w�肵�Ă��������B
+	 	ブラシ属性を指定してください。
 	 @return
-		�u���V�̃n���h����ێ����� CGdiHBrushHolder ��Ԃ��܂��B
+		ブラシのハンドルを保持する CGdiHBrushHolder を返します。
 	*/
 	virtual Ou<CGdiHBrushHolder>	createGdiHBrushHolder(  const CdBrushProp& aCdBrushProp ) ;
 

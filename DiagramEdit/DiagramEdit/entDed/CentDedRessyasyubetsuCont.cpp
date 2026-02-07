@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍAtake-okm‚ªì¬‚µ‚½OuDia‚ğ‰ü‘¢‚µ‚½ƒ\ƒtƒgƒEƒFƒA‚Å‚·B
-‚±‚ÌƒvƒƒOƒ‰ƒ€—˜—p‚É‚Â‚¢‚Ä‚ÍAtake-okm‹LÚ‚Ì‰º‹L•¶‘‚É€‹’‚µ‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã€take-okmæ°ãŒä½œæˆã—ãŸOuDiaã‚’æ”¹é€ ã—ãŸã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ åˆ©ç”¨ã«ã¤ã„ã¦ã¯ã€take-okmæ°è¨˜è¼‰ã®ä¸‹è¨˜æ–‡æ›¸ã«æº–æ‹ ã—ã¾ã™ã€‚
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(–ó: 
+(è¨³: 
 
-	OuDia - —ñÔ•\‚ğ‚à‚Æ‚ÉAƒ_ƒCƒ„ƒOƒ‰ƒ€‚ğ•`‰æ‚·‚éWin32ƒAƒvƒŠƒP[ƒV
-ƒ‡ƒ“B
+	OuDia - åˆ—è»Šæ™‚åˆ»è¡¨ã‚’ã‚‚ã¨ã«ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚’æç”»ã™ã‚‹Win32ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·
+ãƒ§ãƒ³ã€‚
 
 Copyright (C) 2006-2017 take-okm 
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍƒtƒŠ[ƒ\ƒtƒgƒEƒFƒA‚Å‚·B‚ ‚È‚½‚Í‚±‚ê‚ğAƒtƒŠ[ƒ\ƒtƒgƒEƒFƒAà
-’c‚É‚æ‚Á‚Ä”­s‚³‚ê‚½GNU ˆê”ÊŒöO—˜—p‹–‘ø‘(ƒo[ƒWƒ‡ƒ“3‚©A‚»‚êˆÈ~‚Ìƒo[ƒWƒ‡
-ƒ“‚Ì‚¤‚¿‚Ç‚ê‚©)‚ª’è‚ß‚éğŒ‚Ì‰º‚ÅÄ”Ğ•z‚Ü‚½‚Í‰ü•Ï ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚ã‚ãªãŸã¯ã“ã‚Œã‚’ã€ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢è²¡
+å›£ã«ã‚ˆã£ã¦ç™ºè¡Œã•ã‚ŒãŸGNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸(ãƒãƒ¼ã‚¸ãƒ§ãƒ³3ã‹ã€ãã‚Œä»¥é™ã®ãƒãƒ¼ã‚¸ãƒ§
+ãƒ³ã®ã†ã¡ã©ã‚Œã‹)ãŒå®šã‚ã‚‹æ¡ä»¶ã®ä¸‹ã§å†é ’å¸ƒã¾ãŸã¯æ”¹å¤‰ ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚Í—L—p‚Å‚ ‚é‚±‚Æ‚ğŠè‚Á‚Ä”Ğ•z‚³‚ê‚Ü‚·‚ªA*‘S‚­‚Ì–³•ÛØ *‚Å‚·B
-¤‹Æ‰Â”\«‚Ì•ÛØ‚â“Á’è–Ú“I‚Ö‚Ì“K‡«‚ÍAŒ¾ŠO‚É¦‚³‚ê‚½‚à‚Ì‚à ŠÜ‚ßA‘S‚­‘¶İ
-‚µ‚Ü‚¹‚ñBÚ‚µ‚­‚ÍGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ğ‚²——‚­‚¾‚³‚¢B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯æœ‰ç”¨ã§ã‚ã‚‹ã“ã¨ã‚’é¡˜ã£ã¦é ’å¸ƒã•ã‚Œã¾ã™ãŒã€*å…¨ãã®ç„¡ä¿è¨¼ *ã§ã™ã€‚
+å•†æ¥­å¯èƒ½æ€§ã®ä¿è¨¼ã‚„ç‰¹å®šç›®çš„ã¸ã®é©åˆæ€§ã¯ã€è¨€å¤–ã«ç¤ºã•ã‚ŒãŸã‚‚ã®ã‚‚ å«ã‚ã€å…¨ãå­˜åœ¨
+ã—ã¾ã›ã‚“ã€‚è©³ã—ãã¯GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã‚’ã”è¦§ãã ã•ã„ã€‚
 
-‚ ‚È‚½‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚Æ‹¤‚ÉAGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ÌƒRƒs[‚ğˆê•” ó‚¯æ‚Á
-‚Ä‚¢‚é‚Í‚¸‚Å‚·B‚à‚µó‚¯æ‚Á‚Ä‚¢‚È‚¯‚ê‚ÎA<http://www.gnu.org/licenses/> ‚ğ
-‚²——‚­‚¾‚³‚¢B
+ã‚ãªãŸã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¨å…±ã«ã€GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã®ã‚³ãƒ”ãƒ¼ã‚’ä¸€éƒ¨ å—ã‘å–ã£
+ã¦ã„ã‚‹ã¯ãšã§ã™ã€‚ã‚‚ã—å—ã‘å–ã£ã¦ã„ãªã‘ã‚Œã°ã€<http://www.gnu.org/licenses/> ã‚’
+ã”è¦§ãã ã•ã„ã€‚
 
 )
 
-  ‰Á‚¦‚ÄA“Á•Ê‚È—áŠO‚Æ‚µ‚ÄAtake-okm ‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÌƒR[ƒh‚ğ 
+  åŠ ãˆã¦ã€ç‰¹åˆ¥ãªä¾‹å¤–ã¨ã—ã¦ã€take-okm ã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ã‚³ãƒ¼ãƒ‰ã‚’ 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ‚ ‚é‚¢‚Í "MFC Version 9.0" ‚Æ“¯‚¶ƒ‰ƒCƒZƒ“ƒX‚ª“K—p‚³‚ê‚½
-  "MFC Version 9.0" ‚Ì‰ü•Ï‚³‚ê‚½ƒo[ƒWƒ‡ƒ“)‚ÆƒŠƒ“ƒN‚µA
-  ƒŠƒ“ƒN‚³‚ê‚½—¼Ò‚ğŠÜ‚ŞŒ‹‡’˜ì•¨‚ğ”Ğ•z‚·‚é‹–‰Â‚ğ—^‚¦‚Ü‚·B
-  ‚ ‚È‚½‚Í "MFC" ˆÈŠO‚Åg‚í‚ê‚Ä‚¢‚é‚·‚×‚Ä
-  ‚ÌƒR[ƒh‚ÉŠÖ‚µ‚Ä‚Í‘S–Ê“I‚ÉGNUˆê”ÊŒöO—˜—p‹–‘øŒ_–ñ‘‚É]‚í‚È‚¯‚ê‚Î
-  ‚È‚è‚Ü‚¹‚ñB‚ ‚È‚½‚ª‚±‚Ìƒtƒ@ƒCƒ‹‚ğ‰ü•Ï‚µ‚½‚È‚ç‚ÎA‚ ‚È‚½‚Í‚±‚Ì—áŠO
-  ‚ğ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚Ìƒtƒ@ƒCƒ‹‚Éˆø‚«‘±‚«İ‚¯‚é‚±‚Æ‚à‚Å‚«‚Ü‚·‚ªA‚»
-  ‚¤‚·‚é‹`–±‚Í‚ ‚è‚Ü‚¹‚ñB‚à‚µ—áŠO‚ğİ‚¯‚½‚­‚È‚¯‚ê‚ÎA‚±‚Ì—áŠOğ€‚ğ
-  ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚©‚ç‚Ííœ‚µ‚Ä‚­‚¾‚³‚¢B)
+  (  ã‚ã‚‹ã„ã¯ "MFC Version 9.0" ã¨åŒã˜ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ãŒé©ç”¨ã•ã‚ŒãŸ
+  "MFC Version 9.0" ã®æ”¹å¤‰ã•ã‚ŒãŸãƒãƒ¼ã‚¸ãƒ§ãƒ³)ã¨ãƒªãƒ³ã‚¯ã—ã€
+  ãƒªãƒ³ã‚¯ã•ã‚ŒãŸä¸¡è€…ã‚’å«ã‚€çµåˆè‘—ä½œç‰©ã‚’é ’å¸ƒã™ã‚‹è¨±å¯ã‚’ä¸ãˆã¾ã™ã€‚
+  ã‚ãªãŸã¯ "MFC" ä»¥å¤–ã§ä½¿ã‚ã‚Œã¦ã„ã‚‹ã™ã¹ã¦
+  ã®ã‚³ãƒ¼ãƒ‰ã«é–¢ã—ã¦ã¯å…¨é¢çš„ã«GNUä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾å¥‘ç´„æ›¸ã«å¾“ã‚ãªã‘ã‚Œã°
+  ãªã‚Šã¾ã›ã‚“ã€‚ã‚ãªãŸãŒã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ”¹å¤‰ã—ãŸãªã‚‰ã°ã€ã‚ãªãŸã¯ã“ã®ä¾‹å¤–
+  ã‚’ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®ãƒ•ã‚¡ã‚¤ãƒ«ã«å¼•ãç¶šãè¨­ã‘ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ãŒã€ã
+  ã†ã™ã‚‹ç¾©å‹™ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ã‚‚ã—ä¾‹å¤–ã‚’è¨­ã‘ãŸããªã‘ã‚Œã°ã€ã“ã®ä¾‹å¤–æ¡é …ã‚’
+  ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‹ã‚‰ã¯å‰Šé™¤ã—ã¦ãã ã•ã„ã€‚)
 */
 /*
 // ****************************************************************
@@ -91,7 +91,7 @@ namespace entDed{
 //	CentDedRessyasyubetsuCont
 // ****************************************************************
 // ********************************
-//	ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+//	ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 // ********************************
 CentDedRessyasyubetsuCont::CentDedRessyasyubetsuCont() 
 {
@@ -99,8 +99,8 @@ CentDedRessyasyubetsuCont::CentDedRessyasyubetsuCont()
 CentDedRessyasyubetsuCont& 
 CentDedRessyasyubetsuCont::operator=( const CentDedRessyasyubetsuCont& value ) 
 {
-	//	¢ƒRƒ“ƒeƒi‚Ì‘ã“ü(operator=):ƒRƒ“ƒeƒi‚ª˜Hü‚Ìˆê•”‚Å‚ ‚éê‡‚ÅA‰E•Ó‚Ì—v‘f”‚ª0‚Ìê‡‚ÍA
-	//	ƒCƒ“ƒfƒNƒX0”Ô‚Ì—ñÔí•Ê‚ğ’Ç‰Á‚µ‚ÄA—ñÔí•Ê‚Ì”‚ª0‚É‚È‚ç‚È‚¢‚æ‚¤‚É‚·‚é
+	//	â–³ã‚³ãƒ³ãƒ†ãƒŠã®ä»£å…¥(operator=):ã‚³ãƒ³ãƒ†ãƒŠãŒè·¯ç·šã®ä¸€éƒ¨ã§ã‚ã‚‹å ´åˆã§ã€å³è¾ºã®è¦ç´ æ•°ãŒ0ã®å ´åˆã¯ã€
+	//	ã‚¤ãƒ³ãƒ‡ã‚¯ã‚¹0ç•ªã®åˆ—è»Šç¨®åˆ¥ã‚’è¿½åŠ ã—ã¦ã€åˆ—è»Šç¨®åˆ¥ã®æ•°ãŒ0ã«ãªã‚‰ãªã„ã‚ˆã†ã«ã™ã‚‹
 	if ( value.size() == 0 && getRosen() != NULL )
 	{
 		insert( CentDedRessyasyubetsu( _T("00") , _T("") ) ) ;
@@ -125,20 +125,20 @@ int CentDedRessyasyubetsuCont::insert( const CentDedRessyasyubetsu& element , in
 	}
 
 	//rinji
-	//	¢—ñÔí•Ê‚Ì’Ç‰Á(insert):‚±‚ÌƒRƒ“ƒeƒi‚ª˜Hü‚Ìˆê•”‚Å‚ ‚éê‡A–¼‘O‚ª‹ó‚Ì—ñÔí•Ê‚Ì’Ç‰Á‚ÍƒGƒ‰[
+	//	â–³åˆ—è»Šç¨®åˆ¥ã®è¿½åŠ (insert):ã“ã®ã‚³ãƒ³ãƒ†ãƒŠãŒè·¯ç·šã®ä¸€éƒ¨ã§ã‚ã‚‹å ´åˆã€åå‰ãŒç©ºã®åˆ—è»Šç¨®åˆ¥ã®è¿½åŠ ã¯ã‚¨ãƒ©ãƒ¼
 	if ( getRosen() != NULL && element.getSyubetsumei().length() == 0 )
 	{
-		iRv = -11 ;	//	name‚ª‹ó‚Ì CentDedRessyasyubetsu‚ğã‘‚«‚·‚é‚ÆƒGƒ‰[B
+		iRv = -11 ;	//	nameãŒç©ºã® CentDedRessyasyubetsuã‚’ä¸Šæ›¸ãã™ã‚‹ã¨ã‚¨ãƒ©ãƒ¼ã€‚
 	}
 	if ( iRv >= 0 )
 	{
 		iRv = super::insert( element , iIndex ) ; 
 	}
-	//—ñÔí•Ê‚Ì‘}“ü‚É”º‚¤Aeí•Ê‹@”\‚ÌIndex•â³‚ğs‚¢‚Ü‚·
+	//åˆ—è»Šç¨®åˆ¥ã®æŒ¿å…¥ã«ä¼´ã†ã€è¦ªç¨®åˆ¥æ©Ÿèƒ½ã®Indexè£œæ­£ã‚’è¡Œã„ã¾ã™
 	if (iRv >= 0)
 	{
-		//iParentSyubetsuIndex‚ªiIndexˆÈã‚Ìê‡A
-		//iParentSyubetsuIndex‚É1‰ÁZ‚µ‚Ü‚·B
+		//iParentSyubetsuIndexãŒiIndexä»¥ä¸Šã®å ´åˆã€
+		//iParentSyubetsuIndexã«1åŠ ç®—ã—ã¾ã™ã€‚
 		for (int idx = 0; idx < size(); idx++)
 		{
 				//if (m_iBrunchCoreEkiIndex >= iEkiIndex &&
@@ -156,9 +156,9 @@ int CentDedRessyasyubetsuCont::insert( const CentDedRessyasyubetsu& element , in
 
 		}
 	}
-	//	  ‚±‚ÌƒRƒ“ƒeƒi‚ª CentDedRosen ‚É•ïŠÜ‚³‚ê‚Ä‚¢‚éê‡A insert() 
-	//	ƒƒ\ƒbƒh‚ÍACentDedRosen::onRessyasyubetsuInsert( iEkiIndex ) 
-	//	‚Éˆ—‚ğˆÏ÷‚µ‚Ü‚·B
+	//	  ã“ã®ã‚³ãƒ³ãƒ†ãƒŠãŒ CentDedRosen ã«åŒ…å«ã•ã‚Œã¦ã„ã‚‹å ´åˆã€ insert() 
+	//	ãƒ¡ã‚½ãƒƒãƒ‰ã¯ã€CentDedRosen::onRessyasyubetsuInsert( iEkiIndex ) 
+	//	ã«å‡¦ç†ã‚’å§”è­²ã—ã¾ã™ã€‚
 	if ( iRv >= 0 )
 	{
 		CentDedRosen* pRosen = getRosen() ;
@@ -186,13 +186,13 @@ int CentDedRessyasyubetsuCont::erase( int iIndex  , int iSize )
 	// --------------------------------	
 	if ( !( 0 <= iIndex && iIndex + iSize <= size() ) )
 	{
-		iRv = -1 ;	//	ƒCƒ“ƒfƒNƒX‚ª”ÍˆÍŠO‚Å‚·B
+		iRv = -1 ;	//	ã‚¤ãƒ³ãƒ‡ã‚¯ã‚¹ãŒç¯„å›²å¤–ã§ã™ã€‚
 	}
 	if ( iRv >= 0 )
 	{
 		if ( size() <= iSize && getRosen() != NULL )
 		{
-			iRv = -11 ;	//	¢—ñÔí•Ê‚Ìíœ(erase):@—ñÔí•Ê‚ª0ŒÂ‚É‚È‚é‚æ‚¤‚Èíœ‚ÍƒGƒ‰[
+			iRv = -11 ;	//	â–³åˆ—è»Šç¨®åˆ¥ã®å‰Šé™¤(erase):ã€€åˆ—è»Šç¨®åˆ¥ãŒ0å€‹ã«ãªã‚‹ã‚ˆã†ãªå‰Šé™¤ã¯ã‚¨ãƒ©ãƒ¼
 
 		}
 	}
@@ -200,12 +200,12 @@ int CentDedRessyasyubetsuCont::erase( int iIndex  , int iSize )
 	{
 		iRv = super::erase( iIndex , iSize ) ;
 	}
-	//—ñÔí•Ê‚Ìíœ‚É”º‚¤Aeí•Ê‹@”\‚ÌIndex•â³‚ğs‚¢‚Ü‚·
+	//åˆ—è»Šç¨®åˆ¥ã®å‰Šé™¤ã«ä¼´ã†ã€è¦ªç¨®åˆ¥æ©Ÿèƒ½ã®Indexè£œæ­£ã‚’è¡Œã„ã¾ã™
 	if (iRv >= 0)
 	{
-		//iParentSyubetsuIndex‚ªiIndexˆÈã‚Ìê‡A
-		//iParentSyubetsuIndex‚©‚çiSize‚ğŒ¸Z‚µ‚Ü‚·B
-		//(Œµ–§‚É‚ÍAiParentSyubetsuIndex‚ÉiIndexˆÈãiIndex+iSize–¢–‚Ì’l‚ÍŒ»‚ê‚È‚¢(íœ‚Å‚«‚È‚¢))
+		//iParentSyubetsuIndexãŒiIndexä»¥ä¸Šã®å ´åˆã€
+		//iParentSyubetsuIndexã‹ã‚‰iSizeã‚’æ¸›ç®—ã—ã¾ã™ã€‚
+		//(å³å¯†ã«ã¯ã€iParentSyubetsuIndexã«iIndexä»¥ä¸ŠiIndex+iSizeæœªæº€ã®å€¤ã¯ç¾ã‚Œãªã„(å‰Šé™¤ã§ããªã„))
 		for (int idx = 0; idx < size(); idx++)
 		{
 			CentDedRessyasyubetsu* pCentDedRessyasyubetsu = getMuPtr()->get(idx);
@@ -217,9 +217,9 @@ int CentDedRessyasyubetsuCont::erase( int iIndex  , int iSize )
 
 		}
 	}
-	//	  ‚±‚ÌƒRƒ“ƒeƒi‚ª  CentDedRosen ‚É•ïŠÜ‚³‚ê‚Ä‚¢‚éê‡A erase() 
-	//	ƒƒ\ƒbƒh‚ÍACentDedRosen::onEkiErase( iEkiIndex )
-	//	‚Éˆ—‚ğˆÏ÷‚µ‚Ü‚·B
+	//	  ã“ã®ã‚³ãƒ³ãƒ†ãƒŠãŒ  CentDedRosen ã«åŒ…å«ã•ã‚Œã¦ã„ã‚‹å ´åˆã€ erase() 
+	//	ãƒ¡ã‚½ãƒƒãƒ‰ã¯ã€CentDedRosen::onEkiErase( iEkiIndex )
+	//	ã«å‡¦ç†ã‚’å§”è­²ã—ã¾ã™ã€‚
 	if ( iRv >= 0 )
 	{
 		CentDedRosen* pRosen = getRosen() ;
@@ -245,7 +245,7 @@ int CentDedRessyasyubetsuCont::set( const CentDedRessyasyubetsu& element , int i
 }
 
 	// ********************************
-	//@name CentDedRessyasyubetsuCont-‘€ì
+	//@name CentDedRessyasyubetsuCont-æ“ä½œ
 	// ********************************
 int CentDedRessyasyubetsuCont::setable(  const CentDedRessyasyubetsu& element , int iIndex )const 
 {
@@ -257,7 +257,7 @@ int CentDedRessyasyubetsuCont::setable(  const CentDedRessyasyubetsu& element , 
 
 	if ( element.getSyubetsumei().length() == 0 )
 	{
-		//›”Ôü‚Ìã‘‚«(set): name‚ª‹ó‚Ì CentDedRessyasyubetsu‚ğã‘‚«‚·‚é‚ÆƒGƒ‰[B
+		//â—‹ç•ªç·šã®ä¸Šæ›¸ã(set): nameãŒç©ºã® CentDedRessyasyubetsuã‚’ä¸Šæ›¸ãã™ã‚‹ã¨ã‚¨ãƒ©ãƒ¼ã€‚
 		iRv = -11 ;	//	
 	}
 

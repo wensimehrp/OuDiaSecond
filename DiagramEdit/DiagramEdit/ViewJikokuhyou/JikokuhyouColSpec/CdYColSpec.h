@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍAtake-okm‚ªì¬‚µ‚½OuDia‚ğ‰ü‘¢‚µ‚½ƒ\ƒtƒgƒEƒFƒA‚Å‚·B
-‚±‚ÌƒvƒƒOƒ‰ƒ€—˜—p‚É‚Â‚¢‚Ä‚ÍAtake-okm‹LÚ‚Ì‰º‹L•¶‘‚É€‹’‚µ‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã€take-okmæ°ãŒä½œæˆã—ãŸOuDiaã‚’æ”¹é€ ã—ãŸã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ åˆ©ç”¨ã«ã¤ã„ã¦ã¯ã€take-okmæ°è¨˜è¼‰ã®ä¸‹è¨˜æ–‡æ›¸ã«æº–æ‹ ã—ã¾ã™ã€‚
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(–ó: 
+(è¨³: 
 
-	OuDia - —ñÔ•\‚ğ‚à‚Æ‚ÉAƒ_ƒCƒ„ƒOƒ‰ƒ€‚ğ•`‰æ‚·‚éWin32ƒAƒvƒŠƒP[ƒV
-ƒ‡ƒ“B
+	OuDia - åˆ—è»Šæ™‚åˆ»è¡¨ã‚’ã‚‚ã¨ã«ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚’æç”»ã™ã‚‹Win32ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·
+ãƒ§ãƒ³ã€‚
 
 Copyright (C) 2006-2017 take-okm 
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍƒtƒŠ[ƒ\ƒtƒgƒEƒFƒA‚Å‚·B‚ ‚È‚½‚Í‚±‚ê‚ğAƒtƒŠ[ƒ\ƒtƒgƒEƒFƒAà
-’c‚É‚æ‚Á‚Ä”­s‚³‚ê‚½GNU ˆê”ÊŒöO—˜—p‹–‘ø‘(ƒo[ƒWƒ‡ƒ“3‚©A‚»‚êˆÈ~‚Ìƒo[ƒWƒ‡
-ƒ“‚Ì‚¤‚¿‚Ç‚ê‚©)‚ª’è‚ß‚éğŒ‚Ì‰º‚ÅÄ”Ğ•z‚Ü‚½‚Í‰ü•Ï ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚ã‚ãªãŸã¯ã“ã‚Œã‚’ã€ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢è²¡
+å›£ã«ã‚ˆã£ã¦ç™ºè¡Œã•ã‚ŒãŸGNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸(ãƒãƒ¼ã‚¸ãƒ§ãƒ³3ã‹ã€ãã‚Œä»¥é™ã®ãƒãƒ¼ã‚¸ãƒ§
+ãƒ³ã®ã†ã¡ã©ã‚Œã‹)ãŒå®šã‚ã‚‹æ¡ä»¶ã®ä¸‹ã§å†é ’å¸ƒã¾ãŸã¯æ”¹å¤‰ ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚Í—L—p‚Å‚ ‚é‚±‚Æ‚ğŠè‚Á‚Ä”Ğ•z‚³‚ê‚Ü‚·‚ªA*‘S‚­‚Ì–³•ÛØ *‚Å‚·B
-¤‹Æ‰Â”\«‚Ì•ÛØ‚â“Á’è–Ú“I‚Ö‚Ì“K‡«‚ÍAŒ¾ŠO‚É¦‚³‚ê‚½‚à‚Ì‚à ŠÜ‚ßA‘S‚­‘¶İ
-‚µ‚Ü‚¹‚ñBÚ‚µ‚­‚ÍGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ğ‚²——‚­‚¾‚³‚¢B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯æœ‰ç”¨ã§ã‚ã‚‹ã“ã¨ã‚’é¡˜ã£ã¦é ’å¸ƒã•ã‚Œã¾ã™ãŒã€*å…¨ãã®ç„¡ä¿è¨¼ *ã§ã™ã€‚
+å•†æ¥­å¯èƒ½æ€§ã®ä¿è¨¼ã‚„ç‰¹å®šç›®çš„ã¸ã®é©åˆæ€§ã¯ã€è¨€å¤–ã«ç¤ºã•ã‚ŒãŸã‚‚ã®ã‚‚ å«ã‚ã€å…¨ãå­˜åœ¨
+ã—ã¾ã›ã‚“ã€‚è©³ã—ãã¯GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã‚’ã”è¦§ãã ã•ã„ã€‚
 
-‚ ‚È‚½‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚Æ‹¤‚ÉAGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ÌƒRƒs[‚ğˆê•” ó‚¯æ‚Á
-‚Ä‚¢‚é‚Í‚¸‚Å‚·B‚à‚µó‚¯æ‚Á‚Ä‚¢‚È‚¯‚ê‚ÎA<http://www.gnu.org/licenses/> ‚ğ
-‚²——‚­‚¾‚³‚¢B
+ã‚ãªãŸã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¨å…±ã«ã€GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã®ã‚³ãƒ”ãƒ¼ã‚’ä¸€éƒ¨ å—ã‘å–ã£
+ã¦ã„ã‚‹ã¯ãšã§ã™ã€‚ã‚‚ã—å—ã‘å–ã£ã¦ã„ãªã‘ã‚Œã°ã€<http://www.gnu.org/licenses/> ã‚’
+ã”è¦§ãã ã•ã„ã€‚
 
 )
 
-  ‰Á‚¦‚ÄA“Á•Ê‚È—áŠO‚Æ‚µ‚ÄAtake-okm ‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÌƒR[ƒh‚ğ 
+  åŠ ãˆã¦ã€ç‰¹åˆ¥ãªä¾‹å¤–ã¨ã—ã¦ã€take-okm ã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ã‚³ãƒ¼ãƒ‰ã‚’ 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ‚ ‚é‚¢‚Í "MFC Version 9.0" ‚Æ“¯‚¶ƒ‰ƒCƒZƒ“ƒX‚ª“K—p‚³‚ê‚½
-  "MFC Version 9.0" ‚Ì‰ü•Ï‚³‚ê‚½ƒo[ƒWƒ‡ƒ“)‚ÆƒŠƒ“ƒN‚µA
-  ƒŠƒ“ƒN‚³‚ê‚½—¼Ò‚ğŠÜ‚ŞŒ‹‡’˜ì•¨‚ğ”Ğ•z‚·‚é‹–‰Â‚ğ—^‚¦‚Ü‚·B
-  ‚ ‚È‚½‚Í "MFC" ˆÈŠO‚Åg‚í‚ê‚Ä‚¢‚é‚·‚×‚Ä
-  ‚ÌƒR[ƒh‚ÉŠÖ‚µ‚Ä‚Í‘S–Ê“I‚ÉGNUˆê”ÊŒöO—˜—p‹–‘øŒ_–ñ‘‚É]‚í‚È‚¯‚ê‚Î
-  ‚È‚è‚Ü‚¹‚ñB‚ ‚È‚½‚ª‚±‚Ìƒtƒ@ƒCƒ‹‚ğ‰ü•Ï‚µ‚½‚È‚ç‚ÎA‚ ‚È‚½‚Í‚±‚Ì—áŠO
-  ‚ğ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚Ìƒtƒ@ƒCƒ‹‚Éˆø‚«‘±‚«İ‚¯‚é‚±‚Æ‚à‚Å‚«‚Ü‚·‚ªA‚»
-  ‚¤‚·‚é‹`–±‚Í‚ ‚è‚Ü‚¹‚ñB‚à‚µ—áŠO‚ğİ‚¯‚½‚­‚È‚¯‚ê‚ÎA‚±‚Ì—áŠOğ€‚ğ
-  ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚©‚ç‚Ííœ‚µ‚Ä‚­‚¾‚³‚¢B)
+  (  ã‚ã‚‹ã„ã¯ "MFC Version 9.0" ã¨åŒã˜ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ãŒé©ç”¨ã•ã‚ŒãŸ
+  "MFC Version 9.0" ã®æ”¹å¤‰ã•ã‚ŒãŸãƒãƒ¼ã‚¸ãƒ§ãƒ³)ã¨ãƒªãƒ³ã‚¯ã—ã€
+  ãƒªãƒ³ã‚¯ã•ã‚ŒãŸä¸¡è€…ã‚’å«ã‚€çµåˆè‘—ä½œç‰©ã‚’é ’å¸ƒã™ã‚‹è¨±å¯ã‚’ä¸ãˆã¾ã™ã€‚
+  ã‚ãªãŸã¯ "MFC" ä»¥å¤–ã§ä½¿ã‚ã‚Œã¦ã„ã‚‹ã™ã¹ã¦
+  ã®ã‚³ãƒ¼ãƒ‰ã«é–¢ã—ã¦ã¯å…¨é¢çš„ã«GNUä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾å¥‘ç´„æ›¸ã«å¾“ã‚ãªã‘ã‚Œã°
+  ãªã‚Šã¾ã›ã‚“ã€‚ã‚ãªãŸãŒã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ”¹å¤‰ã—ãŸãªã‚‰ã°ã€ã‚ãªãŸã¯ã“ã®ä¾‹å¤–
+  ã‚’ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®ãƒ•ã‚¡ã‚¤ãƒ«ã«å¼•ãç¶šãè¨­ã‘ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ãŒã€ã
+  ã†ã™ã‚‹ç¾©å‹™ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ã‚‚ã—ä¾‹å¤–ã‚’è¨­ã‘ãŸããªã‘ã‚Œã°ã€ã“ã®ä¾‹å¤–æ¡é …ã‚’
+  ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‹ã‚‰ã¯å‰Šé™¤ã—ã¦ãã ã•ã„ã€‚)
 */
 // ****************************************************************
 // $Id: CdYColSpec.h 137 2012-10-07 06:42:01Z okm $
@@ -80,153 +80,153 @@ namespace ViewJikokuhyou{ namespace JikokuhyouColSpec{
 
 /**
 @brief
-@•\ƒrƒ…[‚Ì CWndJikokuhyou ‚É‚¨‚¢‚ÄAƒOƒŠƒbƒh‚ÌY—ñ‚É•\¦
-  ‚·‚×‚«“à—e‚ğ‹Lq‚µ‚½A’Pƒƒf[ƒ^ƒNƒ‰ƒX‚Å‚·B
+ã€€æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã® CWndJikokuhyou ã«ãŠã„ã¦ã€ã‚°ãƒªãƒƒãƒ‰ã®Yåˆ—ã«è¡¨ç¤º
+  ã™ã¹ãå†…å®¹ã‚’è¨˜è¿°ã—ãŸã€å˜ç´”ãƒ‡ãƒ¼ã‚¿ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
 
-  ‚±‚Ì’l‚Í NULL ó‘Ô‚ğ‚¿‚Ü‚·B
+  ã“ã®å€¤ã¯ NULL çŠ¶æ…‹ã‚’æŒã¡ã¾ã™ã€‚
 */
 class CdYColSpec
 {
 public:
 	// ********************************
-	//	ƒCƒ“ƒi[ƒ^ƒCƒv
+	//	ã‚¤ãƒ³ãƒŠãƒ¼ã‚¿ã‚¤ãƒ—
 	// ********************************
-	/** Y—ñ‚Ìí—Ş */
+	/** Yåˆ—ã®ç¨®é¡ */
 	enum EColumnType
 	{
-		/**	—ñÔ”Ô† */
+		/**	åˆ—è»Šç•ªå· */
 		ColumnType_Ressyabangou = 0 ,
-		/**	‰^—p”Ô† */
+		/**	é‹ç”¨ç•ªå· */
 		ColumnType_OperationNumber,
-		/**	—ñÔí•Ê */
+		/**	åˆ—è»Šç¨®åˆ¥ */
 		ColumnType_Ressyasyubetsu ,
-		/**	—ñÔ–¼ */
+		/**	åˆ—è»Šå */
 		ColumnType_Ressyamei ,
-		/**	†” */
+		/**	å·æ•° */
 		ColumnType_Gousuu ,
-		/**	u†v•\¦ */
+		/**	ã€Œå·ã€è¡¨ç¤º */
 		ColumnType_Gou ,
-		/**	n”­‰w–¼ */
+		/**	å§‹ç™ºé§…å */
 		ColumnType_ShihatsuEkimei,
-		/**	n”­‰wì‹Æ1 */
+		/**	å§‹ç™ºé§…ä½œæ¥­1 */
 		ColumnType_Operation_Shihatsu1,
-		/**	n”­‰wì‹Æ2 */
+		/**	å§‹ç™ºé§…ä½œæ¥­2 */
 		ColumnType_Operation_Shihatsu2,
-		/**	n”­‰wì‹Æ3 */
+		/**	å§‹ç™ºé§…ä½œæ¥­3 */
 		ColumnType_Operation_Shihatsu3,
-		/**	n”­‰wì‹Æ4 */
+		/**	å§‹ç™ºé§…ä½œæ¥­4 */
 		ColumnType_Operation_Shihatsu4,
-		/**	I’…‰w–¼ */
+		/**	çµ‚ç€é§…å */
 		ColumnType_ShuchakuEkimei,
-		/**	I’…‰wì‹Æ1 */
+		/**	çµ‚ç€é§…ä½œæ¥­1 */
 		ColumnType_Operation_Shuchaku1,
-		/**	I’…‰wì‹Æ2 */
+		/**	çµ‚ç€é§…ä½œæ¥­2 */
 		ColumnType_Operation_Shuchaku2,
-		/**	I’…‰wì‹Æ3 */
+		/**	çµ‚ç€é§…ä½œæ¥­3 */
 		ColumnType_Operation_Shuchaku3,
-		/**	˜HüŠOn”­‰w1 */
+		/**	è·¯ç·šå¤–å§‹ç™ºé§…1 */
 		ColumnType_Outer_Shihatsu1,
-		/**	˜HüŠOn”­‰w2 */
+		/**	è·¯ç·šå¤–å§‹ç™ºé§…2 */
 		ColumnType_Outer_Shihatsu2,
 
-		/**	˜HüŠOE‘O—ñÔn”­‰w1 */
+		/**	è·¯ç·šå¤–ãƒ»å‰åˆ—è»Šå§‹ç™ºé§…1 */
 		ColumnType_EkiOuter_Shihatsu1,
-		/**	˜HüŠOE‘O—ñÔn”­‰w2 */
+		/**	è·¯ç·šå¤–ãƒ»å‰åˆ—è»Šå§‹ç™ºé§…2 */
 		ColumnType_EkiOuter_Shihatsu2,
-		/**	’… */
+		/**	ç€æ™‚åˆ» */
 		ColumnType_Ekijikoku_Chaku ,
-		/**	‘Oì‹Æ‘Œ‹•Ò¬‘Oì‹Æ1 */
+		/**	å‰ä½œæ¥­å¢—çµç·¨æˆå‰ä½œæ¥­1 */
 		ColumnType_BeforeOperationBefore1,
-		/**	‘Oì‹Æ‘Œ‹•Ò¬‘Oì‹Æ2 */
+		/**	å‰ä½œæ¥­å¢—çµç·¨æˆå‰ä½œæ¥­2 */
 		ColumnType_BeforeOperationBefore2,
-		/**	‘Oì‹Æ‘Œ‹•Ò¬‘Oì‹Æ3 */
+		/**	å‰ä½œæ¥­å¢—çµç·¨æˆå‰ä½œæ¥­3 */
 		ColumnType_BeforeOperationBefore3,
-		/**	‘Oì‹Æ‘Œ‹•Ò¬‘Oì‹Æ4 */
+		/**	å‰ä½œæ¥­å¢—çµç·¨æˆå‰ä½œæ¥­4 */
 		ColumnType_BeforeOperationBefore4,
-		/**	‘Oì‹Æ1 */
+		/**	å‰ä½œæ¥­1 */
 		ColumnType_BeforeOperation1,
-		/**	‘Oì‹Æ2 */
+		/**	å‰ä½œæ¥­2 */
 		ColumnType_BeforeOperation2,
-		/**	‘Oì‹Æ‰ğŒ‹•Ò¬Œãì‹Æ1 */
+		/**	å‰ä½œæ¥­è§£çµç·¨æˆå¾Œä½œæ¥­1 */
 		ColumnType_BeforeOperationAfter1,
-		/**	‘Oì‹Æ‰ğŒ‹•Ò¬Œãì‹Æ2 */
+		/**	å‰ä½œæ¥­è§£çµç·¨æˆå¾Œä½œæ¥­2 */
 		ColumnType_BeforeOperationAfter2,
-		/**	‘Oì‹Æ‰ğŒ‹•Ò¬Œãì‹Æ3 */
+		/**	å‰ä½œæ¥­è§£çµç·¨æˆå¾Œä½œæ¥­3 */
 		ColumnType_BeforeOperationAfter3,
-		/** ”Ôü•\¦ */
+		/** ç•ªç·šè¡¨ç¤º */
 		ColumnType_Track,
-		/**	Œãì‹Æ‘Œ‹•Ò¬‘Oì‹Æ1 */
+		/**	å¾Œä½œæ¥­å¢—çµç·¨æˆå‰ä½œæ¥­1 */
 		ColumnType_AfterOperationBefore1,
-		/**	Œãì‹Æ‘Œ‹•Ò¬‘Oì‹Æ2 */
+		/**	å¾Œä½œæ¥­å¢—çµç·¨æˆå‰ä½œæ¥­2 */
 		ColumnType_AfterOperationBefore2,
-		/**	Œãì‹Æ‘Œ‹•Ò¬‘Oì‹Æ3 */
+		/**	å¾Œä½œæ¥­å¢—çµç·¨æˆå‰ä½œæ¥­3 */
 		ColumnType_AfterOperationBefore3,
-		/**	Œãì‹Æ‘Œ‹•Ò¬‘Oì‹Æ4 */
+		/**	å¾Œä½œæ¥­å¢—çµç·¨æˆå‰ä½œæ¥­4 */
 		ColumnType_AfterOperationBefore4,
-		/**	Œãì‹Æ1 */
+		/**	å¾Œä½œæ¥­1 */
 		ColumnType_AfterOperation1,
-		/**	Œãì‹Æ2 */
+		/**	å¾Œä½œæ¥­2 */
 		ColumnType_AfterOperation2,
-		/**	Œãì‹Æ‰ğŒ‹•Ò¬Œãì‹Æ1 */
+		/**	å¾Œä½œæ¥­è§£çµç·¨æˆå¾Œä½œæ¥­1 */
 		ColumnType_AfterOperationAfter1,
-		/**	Œãì‹Æ‰ğŒ‹•Ò¬Œãì‹Æ2 */
+		/**	å¾Œä½œæ¥­è§£çµç·¨æˆå¾Œä½œæ¥­2 */
 		ColumnType_AfterOperationAfter2,
-		/**	Œãì‹Æ‰ğŒ‹•Ò¬Œãì‹Æ3 */
+		/**	å¾Œä½œæ¥­è§£çµç·¨æˆå¾Œä½œæ¥­3 */
 		ColumnType_AfterOperationAfter3,
-		/**	—ñÔ”Ô†(‰wEí•Ê•ÏX—p) */
+		/**	åˆ—è»Šç•ªå·(é§…ãƒ»ç¨®åˆ¥å¤‰æ›´ç”¨) */
 		ColumnType_EkiRessyabangou,
-		/**	‰^—p”Ô†(‰wEí•Ê•ÏX—p) */
+		/**	é‹ç”¨ç•ªå·(é§…ãƒ»ç¨®åˆ¥å¤‰æ›´ç”¨) */
 		ColumnType_EkiOperationNumber,
-		/**	—ñÔí•Ê(‰wEí•Ê•ÏX—p) */
+		/**	åˆ—è»Šç¨®åˆ¥(é§…ãƒ»ç¨®åˆ¥å¤‰æ›´ç”¨) */
 		ColumnType_EkiRessyasyubetsu,
-		/**	—ñÔ–¼(‰wEí•Ê•ÏX—p) */
+		/**	åˆ—è»Šå(é§…ãƒ»ç¨®åˆ¥å¤‰æ›´ç”¨) */
 		ColumnType_EkiRessyamei,
-		/**	†”(‰wEí•Ê•ÏX—p) */
+		/**	å·æ•°(é§…ãƒ»ç¨®åˆ¥å¤‰æ›´ç”¨) */
 		ColumnType_EkiGousuu,
-		/**	u†v•\¦(‰wEí•Ê•ÏX—p) */
+		/**	ã€Œå·ã€è¡¨ç¤º(é§…ãƒ»ç¨®åˆ¥å¤‰æ›´ç”¨) */
 		ColumnType_EkiGou,
-		/**	”­ */
+		/**	ç™ºæ™‚åˆ» */
 		ColumnType_Ekijikoku_Hatsu ,
-		/**	˜HüŠOEŸ—ñÔI’…‰w1 */
+		/**	è·¯ç·šå¤–ãƒ»æ¬¡åˆ—è»Šçµ‚ç€é§…1 */
 		ColumnType_EkiOuter_Shuchaku1,
-		/**	˜HüŠOEŸ—ñÔI’…‰w2 */
+		/**	è·¯ç·šå¤–ãƒ»æ¬¡åˆ—è»Šçµ‚ç€é§…2 */
 		ColumnType_EkiOuter_Shuchaku2,
 
-		/**	˜HüŠOI’…‰w1 */
+		/**	è·¯ç·šå¤–çµ‚ç€é§…1 */
 		ColumnType_Outer_Shuchaku1,
-		/**	˜HüŠOI’…‰w2 */
+		/**	è·¯ç·šå¤–çµ‚ç€é§…2 */
 		ColumnType_Outer_Shuchaku2,
-		/**	”õl */
+		/**	å‚™è€ƒ */
 		ColumnType_Bikou ,
 
-		/**	NULLó‘Ô‚ğ¦‚µ‚Ü‚· */
+		/**	NULLçŠ¶æ…‹ã‚’ç¤ºã—ã¾ã™ */
 		ColumnType_NULL = -1 
 	};
 
 private:
 	// ********************************
-	///@name ‘®«
+	///@name å±æ€§
 	// ********************************
 	///@{
-	/** Y—ñ‚Ìí—Ş */
+	/** Yåˆ—ã®ç¨®é¡ */
 	EColumnType	m_eColumnType ;
 
 	/** 
-		‰wOrderB
-		m_eColumnType ‚ª ColumnType_Ekijikoku_Chaku ‚©‚ç
-		ColumnType_Ekijikoku_Hatsu ‚Ìê‡‚É‚Ì‚İ—LŒø‚Å‚·B
+		é§…Orderã€‚
+		m_eColumnType ãŒ ColumnType_Ekijikoku_Chaku ã‹ã‚‰
+		ColumnType_Ekijikoku_Hatsu ã®å ´åˆã«ã®ã¿æœ‰åŠ¹ã§ã™ã€‚
 
-		‚»‚Ì‘¼‚Ìê‡‚ÍˆÓ–¡‚ğ‚¿‚Ü‚¹‚ñB-1 ‚Æ‚È‚è‚Ü‚·B
+		ãã®ä»–ã®å ´åˆã¯æ„å‘³ã‚’æŒã¡ã¾ã›ã‚“ã€‚-1 ã¨ãªã‚Šã¾ã™ã€‚
 	*/
 	int m_iEkiOrder ;
 
 	/**
-		ì‹Æ•\¦Index‚Ü‚½‚Í‰^—p”Ô†’i”IndexB
-		m_eColumnType ‚ª ColumnType_Operation_Before1,ColumnType_Operation_Before2,
-		ColumnType_Operation_After1,ColumnType_Operation_After2 ‚Ü‚½‚Í
-		ColumnType_OperationNumber,ColumnType_EkiOperationNumber ‚Ìê‡‚É‚Ì‚İ—LŒø‚Å‚·B
+		ä½œæ¥­è¡¨ç¤ºIndexã¾ãŸã¯é‹ç”¨ç•ªå·æ®µæ•°Indexã€‚
+		m_eColumnType ãŒ ColumnType_Operation_Before1,ColumnType_Operation_Before2,
+		ColumnType_Operation_After1,ColumnType_Operation_After2 ã¾ãŸã¯
+		ColumnType_OperationNumber,ColumnType_EkiOperationNumber ã®å ´åˆã«ã®ã¿æœ‰åŠ¹ã§ã™ã€‚
 
-		‚»‚Ì‘¼‚Ìê‡‚ÍˆÓ–¡‚ğ‚¿‚Ü‚¹‚ñB-1 ‚Æ‚È‚è‚Ü‚·B
+		ãã®ä»–ã®å ´åˆã¯æ„å‘³ã‚’æŒã¡ã¾ã›ã‚“ã€‚-1 ã¨ãªã‚Šã¾ã™ã€‚
 	*/
 	int m_iOperationIndex;
 
@@ -234,17 +234,17 @@ private:
 
 public:
 	// ********************************
-	//	ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	//	ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 	// ********************************
 
 	/**
 	@param eColumnType 
-		Y—ñ‚Ìí—Ş 
+		Yåˆ—ã®ç¨®é¡ 
 	@param iEkiOrder 
-		‰wOrderB
-		m_eColumnType ‚ª ColumnType_Ekijikoku_Chaku ‚©‚ç
-		ColumnType_Ekijikoku_Hatsu ‚Ìê‡‚É‚Ì‚İ—LŒø‚Å‚·B
-		‚»‚Ì‘¼‚Ìê‡‚ÍˆÓ–¡‚ğ‚¿‚Ü‚¹‚ñB
+		é§…Orderã€‚
+		m_eColumnType ãŒ ColumnType_Ekijikoku_Chaku ã‹ã‚‰
+		ColumnType_Ekijikoku_Hatsu ã®å ´åˆã«ã®ã¿æœ‰åŠ¹ã§ã™ã€‚
+		ãã®ä»–ã®å ´åˆã¯æ„å‘³ã‚’æŒã¡ã¾ã›ã‚“ã€‚
 	*/
 	CdYColSpec( 
 		EColumnType eColumnType , 
@@ -271,7 +271,7 @@ public:
 
 public:
 	// ********************************
-	///@name CdYColSpec-‘®«
+	///@name CdYColSpec-å±æ€§
 	// ********************************
 	EColumnType	getColumnType()const{	return m_eColumnType ;};
 	int getEkiOrder()const{ return m_iEkiOrder ;};
@@ -279,7 +279,7 @@ public:
 
 	/**
 	@return
-		‚±‚Ì—ñ‚ª‰w(’…E”­—¼•û‚ğŠÜ‚Ş)‚È‚ç true ‚ğ•Ô‚µ‚Ü‚·B
+		ã“ã®åˆ—ãŒé§…æ™‚åˆ»(ç€ãƒ»ç™ºä¸¡æ–¹ã‚’å«ã‚€)ãªã‚‰ true ã‚’è¿”ã—ã¾ã™ã€‚
 	*/
 	bool isEkiJikoku()const
 	{	return ( m_eColumnType == ColumnType_Ekijikoku_Chaku 
@@ -287,8 +287,8 @@ public:
 
 	/**
 	@return
-		—ñ‚Ìí—Ş‚ª
-		ColumnType_Ressyabangou(—ñÔ”Ô†)`ColumnType_Gou(u†v•\¦) ‚Å‚·B
+		åˆ—ã®ç¨®é¡ãŒ
+		ColumnType_Ressyabangou(åˆ—è»Šç•ªå·)ã€œColumnType_Gou(ã€Œå·ã€è¡¨ç¤º) ã§ã™ã€‚
 	*/
 	bool isRessyaProp()const
 	{
@@ -300,9 +300,9 @@ public:
 	}
 
 	/**
-		—ñ‚Ìí—Ş‚ªAŠe‰w‚Ì—v‘f‚É‚ ‚½‚é‚à‚Ì‚È‚çtrue‚ğ•Ô‚µ‚Ü‚·B
-		‹ï‘Ì“I‚É‚ÍAm_iEkiOrder‚ª—LŒø‚È‚à‚Ì
-		ColumnType_EkiOuter_Shihatsu1 ‚©‚ç ColumnType_EkiOuter_Shuchaku2‚Ü‚Å‚Å‚·B
+		åˆ—ã®ç¨®é¡ãŒã€å„é§…ã®è¦ç´ ã«ã‚ãŸã‚‹ã‚‚ã®ãªã‚‰trueã‚’è¿”ã—ã¾ã™ã€‚
+		å…·ä½“çš„ã«ã¯ã€m_iEkiOrderãŒæœ‰åŠ¹ãªã‚‚ã®
+		ColumnType_EkiOuter_Shihatsu1 ã‹ã‚‰ ColumnType_EkiOuter_Shuchaku2ã¾ã§ã§ã™ã€‚
 	*/
 	bool isEkiComponent()const
 	{
@@ -321,16 +321,16 @@ public:
 			m_eColumnType == ColumnType_AfterOperation2);
 	}
 	/**
-		’l‚ğİ’è‚µ‚Ü‚·B
+		å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
 	@param eColumnType 
-		Y—ñ‚Ìí—Ş 
+		Yåˆ—ã®ç¨®é¡ 
 	@param iEkiOrder 
-		‰wOrderB
-		m_eColumnType ‚ª ColumnType_Ekijikoku_Chaku,
+		é§…Orderã€‚
+		m_eColumnType ãŒ ColumnType_Ekijikoku_Chaku,
 		ColumnType_Ekijikoku_Hatsu, ColumnType_Track,
 		ColumnType_Operation_Before1,ColumnType_Operation_Before2,
-		ColumnType_Operation_After1,ColumnType_Operation_After2‚Ìê‡‚É‚Ì‚İ—LŒø‚Å‚·B
-		‚»‚Ì‘¼‚Ìê‡‚ÍˆÓ–¡‚ğ‚¿‚Ü‚¹‚ñB
+		ColumnType_Operation_After1,ColumnType_Operation_After2ã®å ´åˆã«ã®ã¿æœ‰åŠ¹ã§ã™ã€‚
+		ãã®ä»–ã®å ´åˆã¯æ„å‘³ã‚’æŒã¡ã¾ã›ã‚“ã€‚
 	*/
 	void set( 
 		EColumnType eColumnType , 
@@ -353,24 +353,24 @@ public:
 
 	bool isNull()const{	return m_eColumnType == ColumnType_NULL ;};
 	/* 
-		this ‚ğNULLó‘Ô‚É‚µ‚Ü‚·B
+		this ã‚’NULLçŠ¶æ…‹ã«ã—ã¾ã™ã€‚
 	*/
 	void setNull(){	*this = CdYColSpec() ;};	
 
 	/**
-		‘¼‚ÌƒIƒuƒWƒFƒNƒg‚Æ‚ÌŠÔ‚ÅA‘®«‚ª“¯ˆê‚©”Û‚©‚ğ”»’è‚µ‚Ü‚·B
+		ä»–ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¨ã®é–“ã§ã€å±æ€§ãŒåŒä¸€ã‹å¦ã‹ã‚’åˆ¤å®šã—ã¾ã™ã€‚
 	@param value
-		”äŠr‘ÎÛ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		æ¯”è¼ƒå¯¾è±¡ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 	@return
-		‘®«‚ª“¯ˆê‚Å‚ ‚ê‚Î true 
+		å±æ€§ãŒåŒä¸€ã§ã‚ã‚Œã° true 
 	*/
 	bool isEqualTo( const CdYColSpec& value )const
 	{
 		bool bRv = false ;
 		if ( m_eColumnType == value.m_eColumnType )
 		{
-			//	—ñ‚ª’…E”ÔüE”­‚Ìê‡‚ÍA
-			//	Y—ñ‚Ìí—Ş‚Æ‰wOrder‚Ìˆê’v‚ÅAˆê’v‚Æ‚İ‚È‚µ‚Ü‚·B
+			//	åˆ—ãŒç€æ™‚åˆ»ãƒ»ç•ªç·šãƒ»ç™ºæ™‚åˆ»ã®å ´åˆã¯ã€
+			//	Yåˆ—ã®ç¨®é¡ã¨é§…Orderã®ä¸€è‡´ã§ã€ä¸€è‡´ã¨ã¿ãªã—ã¾ã™ã€‚
 			//if ( m_eColumnType == ColumnType_Ekijikoku_Chaku ||
 			//	m_eColumnType == ColumnType_Track ||
 			//	m_eColumnType == ColumnType_Ekijikoku_Hatsu )
@@ -400,8 +400,8 @@ public:
 			}
 			else
 			{
-				//	—ñ‚ª’…E”­ˆÈŠO‚È‚çAA
-				//	‰wOrder ‚ÍŠÖŒW‚ ‚è‚Ü‚¹‚ñB
+				//	åˆ—ãŒç€æ™‚åˆ»ãƒ»ç™ºæ™‚åˆ»ä»¥å¤–ãªã‚‰ã€ã€
+				//	é§…Order ã¯é–¢ä¿‚ã‚ã‚Šã¾ã›ã‚“ã€‚
 				bRv = true ;
 			}
 		}

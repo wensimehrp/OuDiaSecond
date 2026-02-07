@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -71,8 +71,8 @@ Copyright (C) 2006-2017 take-okm
 #ifndef  CDcdFreeLine_h
 #define  CDcdFreeLine_h
 
-#include "DcDraw\IfDcDraw.h"
-#include "DcdCd\DcDrawProp\CdDcdFreeLineProp.h"
+#include "DcDraw¥IfDcDraw.h"
+#include "DcdCd¥DcDrawProp¥CdDcdFreeLineProp.h"
 
 namespace DcDrawLib{
 namespace DcDraw{
@@ -82,74 +82,74 @@ namespace DcDraw{
 // ****************************************************************
 /**
  * @brief
- * �y�T�v�z
- * IfDcdTarget �Ŏw�肳�ꂽ�̈���́A�����Ŏw�肳�ꂽ�Q�̍��W�̊ԂɁA
- * ������`�悵�܂��B
+ * 【概要】
+ * IfDcdTarget で指定された領域内の、属性で指定された２つの座標の間に、
+ * 直線を描画します。
  * 
- * 	���̃N���X�́A IfDcdTarget::getZone() �̗̈�O�ւ̐��̕`���
- *	�N���b�v���܂��B
+ * 	このクラスは、 IfDcdTarget::getZone() の領域外への線の描画を
+ *	クリップします。
  * 
- * ���̃N���X�ł́A���̃X�^�C���E�F�́A CDcdFreeLine::CdLineProp ��
- * �w�肵�܂��B
- * ���̃N���X�́A���̃X�^�C���Ƃ��āA�ʏ�� Win32 �̃y���ł̓T�|�[�g
- * ����Ȃ��u�����̔j���v�u�����̓_���v�Ȃǂ̕`�悪�ł��܂��B
+ * このクラスでは、線のスタイル・色は、 CDcdFreeLine::CdLineProp で
+ * 指定します。
+ * このクラスは、線のスタイルとして、通常の Win32 のペンではサポート
+ * されない「太線の破線」「太線の点線」などの描画ができます。
  * 
  */
 class CDcdFreeLine : public IfDcDraw
 {
 // ********************************
-//	�C���i�[�^�C�v
+//	インナータイプ
 // ********************************
  public:
 
 // ********************************
-///@name	����
+///@name	属性
 // ********************************
 ///@{
  private:
 	/**
-	 *	�N�_�̍��W�B
+	 *	起点の座標。
 	 */
 	CdDcdPosXy	m_posOrg ;
 	/**
-	 *	�I�_�̍��W�B
+	 *	終点の座標。
 	 */
 	CdDcdPosXy	m_posDst ;
 	
 	/**
-	 *	�P���f�[�^�N���X�ł��B���̌`��ƐF�̑�����ێ����܂��B
+	 *	単純データクラスです。線の形状と色の属性を保持します。
 	 */
 	CdDcdFreeLineProp	m_CdLineProp ;
 	
 	/**
-	 *	DcdTarget�͈̔͂ɁA�N�_�ƏI�_��␳����w��ł��B
+	 *	DcdTargetの範囲に、起点と終点を補正する指定です。
 	 *
-	 *	���̑������^�Ȃ�A���̃N���X�� DcDraw() �́A
-	 *	m_posOrg , m_posDst �� DcdTarget��Zone �̓����ɕ␳���Ă���
-	 *	�`����s���܂��B
+	 *	この属性が真なら、このクラスの DcDraw() は、
+	 *	m_posOrg , m_posDst を DcdTargetのZone の内側に補正してから
+	 *	描画を行います。
 	 *
-	 *	����ɂ��A�`��� DcdTarget �� Zone �͈̔͂ŃN���b�s���O
-	 *	���邱�Ƃ��ł��܂����A�ʏ�͂��̕��@���g�킸�A
-	 *	DC �ɃN���b�s���O�̈��ݒ肷��i CaDcdTargetClip ���g���j
-	 *	�����ȒP�ł��B
+	 *	これにより、描画を DcdTarget の Zone の範囲でクリッピング
+	 *	することができますが、通常はこの方法を使わず、
+	 *	DC にクリッピング領域を設定する（ CaDcdTargetClip を使う）
+	 *	方が簡単です。
 	 *	
-	 *	����l�� false �ł��B
+	 *	既定値は false です。
 	 */
 	bool m_bAdjustForDcdTarget ;
 	
 ///@}
 
 // ********************************
-//	�R���X�g���N�^
+//	コンストラクタ
 // ********************************
  public:
 	/**
 	 * @param posOrg [in]
-	 *	�N�_�̍��W�B
+	 *	起点の座標。
 	 * @param posDst [in]
-	 *	�I�_�̍��W�B
+	 *	終点の座標。
 	 * @param aCdLineProp [in]
-	 *	�P���f�[�^�N���X�ł��B���̌`��ƐF�̑�����ێ����܂��B
+	 *	単純データクラスです。線の形状と色の属性を保持します。
 	 */
 	CDcdFreeLine( const CdDcdPosXy& posOrg , const CdDcdPosXy& posDst , 
 		const CdDcdFreeLineProp& aCdLineProp ) :
@@ -158,7 +158,7 @@ class CDcdFreeLine : public IfDcDraw
 		m_bAdjustForDcdTarget( false ) {};
 	/**
 	 * @param aCdLineProp [in]
-	 *	�P���f�[�^�N���X�ł��B���̌`��ƐF�̑�����ێ����܂��B
+	 *	単純データクラスです。線の形状と色の属性を保持します。
 	 */
 	CDcdFreeLine( const CdDcdFreeLineProp& aCdLineProp ) :
 		m_CdLineProp( aCdLineProp ) , 
@@ -173,36 +173,36 @@ class CDcdFreeLine : public IfDcDraw
 ///@{
  public:
 	/**
-	 * 	�`���v�����܂��B
-	 * 	���̊֐��́A pIfDcdTarget �ɁA�`����s���܂��B
+	 * 	描画を要求します。
+	 * 	この関数は、 pIfDcdTarget に、描画を行います。
 	 * @param pIfDcdTarget  [in]
-	 * 	���̃I�u�W�F�N�g�ɕ`����s�킹����DC�Ɨ̈���w�肵�Ă��������B
+	 * 	このオブジェクトに描画を行わせたいDCと領域を指定してください。
 	 * @return
-	 * 	�`����s�����ꍇ�͐^�E���̗̈�ւ̕`�悪�ł��Ȃ������ꍇ�͋U�ł��B
+	 * 	描画を行った場合は真・この領域への描画ができなかった場合は偽です。
 	 */
 	virtual bool DcDraw( IfDcdTarget* pIfDcdTarget ) ;
 	
 	/**
-	 * 	���̃I�u�W�F�N�g���`�悷��A�C�e���̑傫�������܂��Ă���ꍇ�́A
-	 * 	���̑傫���𒲂ׂ邱�Ƃ��ł��܂��B
-	 * 	�֐��Ăяo������������ IfDcDraw �I�u�W�F�N�g��`�悷��ꍇ�ɂ́A
-	 * 	�֐��Ăяo�����́A���̊֐��ŃA�C�e���̑傫���𒲂ׂāA
-	 * 	�K�؂ȃ��C�A�E�g���l���Ă���ADcDraw() �����s���邱�Ƃ��ł��܂��B
+	 * 	このオブジェクトが描画するアイテムの大きさが決まっている場合は、
+	 * 	その大きさを調べることができます。
+	 * 	関数呼び出し元が複数の IfDcDraw オブジェクトを描画する場合には、
+	 * 	関数呼び出し元は、この関数でアイテムの大きさを調べて、
+	 * 	適切なレイアウトを考えてから、DcDraw() を実行することができます。
 	 * @param pIfDcdTarget [in]
-	 * 	���̃I�u�W�F�N�g�ɕ`����s�킹����DC�Ɨ̈���w�肵�Ă��������B
+	 * 	このオブジェクトに描画を行わせたいDCと領域を指定してください。
 	 * @param pCdDcdSizeXy [out]
-	 * 	���̃I�u�W�F�N�g�̕`�悷��A�C�e���̑傫�������܂��Ă���ꍇ�́A
-	 * 	���̊֐��͂��̃A�h���X�ɁA���̃A�C�e���̃T�C�Y��Ԃ��܂��B
-	 * 	���̃I�u�W�F�N�g�̕`�悷��A�C�e���̑傫�������܂��Ă��Ȃ��ꍇ�́A
-	 * 	���̒l�͕s��ł��B
+	 * 	このオブジェクトの描画するアイテムの大きさが決まっている場合は、
+	 * 	この関数はこのアドレスに、そのアイテムのサイズを返します。
+	 * 	このオブジェクトの描画するアイテムの大きさが決まっていない場合は、
+	 * 	この値は不定です。
 	 * @return
-	 * 	���̃I�u�W�F�N�g�̕`�悷��A�C�e���̑傫�������܂��Ă��āA
-	 * 	���̑傫���� *pCdDcdSizeXy�ɏ������񂾏ꍇ�͐^�ł��B
-	 * 	�����łȂ��ꍇ�́A�U�ł��B
+	 * 	このオブジェクトの描画するアイテムの大きさが決まっていて、
+	 * 	その大きさを *pCdDcdSizeXyに書き込んだ場合は真です。
+	 * 	そうでない場合は、偽です。
 	 *
-	 * [�I�[�o���C�h]
-	 *	  ���̋N�_�ƏI�_��\�� m_posOrg , m_posDst ���͂ޒ����`�̈�ɁA
-	 *	�y���̑��������������̈��Ԃ��܂��B
+	 * [オーバライド]
+	 *	  線の起点と終点を表す m_posOrg , m_posDst を囲む長方形領域に、
+	 *	ペンの太さを加味した領域を返します。
 	 */
 	virtual bool getItemSize( IfDcdTarget* pIfDcdTarget , 
 							CdDcdSizeXy* pCdDcdSizeXy ) ;
@@ -213,7 +213,7 @@ class CDcdFreeLine : public IfDcDraw
 // ********************************
  public:
 	// ********************************
-	///@name	����
+	///@name	属性
 	// ********************************
 	///@{
 	CdDcdPosXy	getOrg()const{	return 	m_posOrg ;};

@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 //$Id: CentDedEkiJikokuCont.cpp 378 2016-11-16 21:10:54Z okm $
 /** @file */
@@ -78,7 +78,7 @@ Copyright (C) 2006-2017 take-okm
 namespace entDed{
 
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 CentDedEkiJikokuCont::CentDedEkiJikokuCont() 
 {
@@ -87,7 +87,7 @@ CentDedEkiJikokuCont& CentDedEkiJikokuCont::operator=( const CentDedEkiJikokuCon
 {
 	CentDedRosen* pRosen = getRosen() ;
 
-	//��operator=: this ���H���̈ꕔ�ł���ꍇ�́A�w�����̐��͕ύX���܂���
+	//△operator=: this が路線の一部である場合は、駅時刻の数は変更しません
 	if ( pRosen != NULL )
 	{
 		int i ; 
@@ -95,7 +95,7 @@ CentDedEkiJikokuCont& CentDedEkiJikokuCont::operator=( const CentDedEkiJikokuCon
 		{
 			this->set( value.get( i ) , i ) ; 
 		}
-		//	�E�ӂ̕����v�f�����Ȃ��ꍇ�́A���ӂ̎c��v�f�͋�Ŗ��߂܂��B
+		//	右辺の方が要素が少ない場合は、左辺の残り要素は空で埋めます。
 		for ( ; i < this->size() ; i++ )
 		{
 			this->set( CentDedEkiJikoku() , i ) ; 
@@ -116,12 +116,12 @@ int CentDedEkiJikokuCont::insert( const CentDedEkiJikoku& element , int iIndex )
 {
 	CentDedRosen* pRosen = getRosen() ;
 
-	//	��Ԃ��H���̈ꕔ�ł���ꍇ�̓G���[�B
-	//	(���Ƃ��Ɖw���Ɖw�����̐�����v���Ă��Ȃ��ꍇ�́A�G���[�ɂ��Ȃ��ق���
-	//	�悢��������܂���B)
+	//	列車が路線の一部である場合はエラー。
+	//	(もともと駅数と駅時刻の数が一致していない場合は、エラーにしないほうが
+	//	よいかもしれません。)
 	if ( pRosen != NULL && pRosen->getCentDedEkiCont()->size() == size() )
 	{
-		return -11 ;	//	��Ԃ��H���̈ꕔ�ł���ꍇ�A�w�����̒ǉ��͂ł��܂���B
+		return -11 ;	//	列車が路線の一部である場合、駅時刻の追加はできません。
 	}
 
 	return super::insert( element , iIndex ) ;
@@ -131,10 +131,10 @@ int CentDedEkiJikokuCont::erase( int iIndex  , int iSize )
 {
 	CentDedRosen* pRosen = getRosen() ;
 
-	//	��Ԃ��H���̈ꕔ�ł���ꍇ�̓G���[�B
+	//	列車が路線の一部である場合はエラー。
 	if ( pRosen != NULL && pRosen->getCentDedEkiCont()->size()  == size() )
 	{
-		return -11 ;	//	��Ԃ��H���̈ꕔ�ł���ꍇ�A�w�����̍폜�͂ł��܂���B
+		return -11 ;	//	列車が路線の一部である場合、駅時刻の削除はできません。
 	}
 	return super::erase( iIndex , iSize ) ;
 }
@@ -146,7 +146,7 @@ int CentDedEkiJikokuCont::set( const CentDedEkiJikoku& element , int iIndex )
 
 
 	// ********************************
-	//@name CentDedEkiJikokuCont-�֘A
+	//@name CentDedEkiJikokuCont-関連
 	// ********************************
 CentDedRosen* CentDedEkiJikokuCont::getRosen()
 {
@@ -166,7 +166,7 @@ const CentDedRosen* CentDedEkiJikokuCont::getRosen()const
 }
 
 	// ********************************
-	//@name CentDedEkiJikokuTrackCont-����
+	//@name CentDedEkiJikokuTrackCont-操作
 	// ********************************
 int CentDedEkiJikokuCont::setable(  const CentDedEkiJikoku& element , int iIndex )const 
 {
@@ -187,18 +187,18 @@ int CentDedEkiJikokuCont::getIndex( const CentDedEkiJikoku* element )const
 }
 void CentDedEkiJikokuCont::adjust()
 {
-	//���w����(CentDedEkiJikoku)�̗v�f�����w�R���e�i(CentDedEkiCont)
-	//�ƈقȂ�ꍇ�́A�w������ǉ��E�폜���܂��B
+	//△駅時刻(CentDedEkiJikoku)の要素数が駅コンテナ(CentDedEkiCont)
+	//と異なる場合は、駅時刻を追加・削除します。
 	CentDedRosen* pCentDedRosen = getRosen() ;
 	if ( pCentDedRosen != NULL )
 	{
 		CentDedEkiCont* pCentDedEkiCont = pCentDedRosen->getCentDedEkiCont() ;
-		//	�w���������Ȃ��ꍇ�͒ǉ�
+		//	駅時刻が少ない場合は追加
 		while ( size() < pCentDedEkiCont->size() )
 		{
 			insert( CentDedEkiJikoku() ) ; 
 		}
-		//	�w�����������ꍇ�͍폜
+		//	駅時刻が多い場合は削除
 		while( size() >  pCentDedEkiCont->size() )
 		{
 			erase( INT_MAX ) ;
@@ -214,7 +214,7 @@ void CentDedEkiJikokuCont::adjust()
 }
 
 	// ********************************
-	//@name CentDedRosen-�q�I�u�W�F�N�g�̑����̒ʒm
+	//@name CentDedRosen-子オブジェクトの増減の通知
 	// ********************************
 void CentDedEkiJikokuCont::onEkiInsert( int iEkiOrder, const int iMainTrack)
 {
@@ -263,7 +263,7 @@ void CentDedEkiJikokuCont::adjustBrunchLoopForTransferSort(
 			for (int ordl = (iEkiOrderLoop[idxl - 1] + 1); ordl < iEkiOrderLoop[idxl]; ordl++)
 			{
 				CentDedEkiJikoku* pCentDedEkiJikokuLoop = getMuPtr()->get(ordl);
-				//�����Ԃł́A�r���S�ĉ^�s�����̏ꍇ�̂ݓ��O���[�v
+				//環状線区間では、途中全て運行無しの場合のみ同グループ
 				if (pCentDedEkiJikokuLoop->getEkiatsukai() != CentDedEkiJikoku::Ekiatsukai_None)
 				{
 					bLoopAllNone = false;

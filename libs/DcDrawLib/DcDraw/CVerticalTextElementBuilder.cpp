@@ -29,47 +29,47 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
 //	CVerticalTextElementBuilder.cpp
 // ****************************************************************
 */
-#include "DcDraw\CVerticalTextElementBuilder.h"
-#include "LogMsg\logmsg.h"
-#include "Str\Str.h"
+#include "DcDraw¥CVerticalTextElementBuilder.h"
+#include "LogMsg¥logmsg.h"
+#include "Str¥Str.h"
 
 namespace DcDrawLib{
 namespace DcDraw{
@@ -81,7 +81,7 @@ namespace DcDraw{
 bool CVerticalTextElementBuilder::isSpace( const string& aStr )
 {
 	const char* const kyoukai[] = {
-		" " , "�@" ,
+		" " , "　" ,
 	};
 	for ( int idx = 0 ; idx < sizeof(kyoukai) / sizeof(kyoukai[0]) ; idx ++ ){
 		if ( aStr == kyoukai[idx] ) {
@@ -94,10 +94,10 @@ bool CVerticalTextElementBuilder::isSpace( const string& aStr )
 bool CVerticalTextElementBuilder::isDelimiter( const string& aStr )
 {
 	const char* const kyoukai[] = {
-		"," , "�C" ,
-		"." , "�D" ,
-		      "�B" , 
-		      "�A" , 
+		"," , "，" ,
+		"." , "．" ,
+		      "。" , 
+		      "、" , 
 	};
 	for ( int idx = 0 ; idx < sizeof(kyoukai) / sizeof(kyoukai[0]) ; idx ++ ){
 		if ( aStr == kyoukai[idx] ) {
@@ -109,7 +109,7 @@ bool CVerticalTextElementBuilder::isDelimiter( const string& aStr )
 
 
 	// ********************************
-	//@name CVerticalTextElementBuilder-����
+	//@name CVerticalTextElementBuilder-操作
 	// ********************************
 void CVerticalTextElementBuilder::scan( 
 		const std::string& aStr , 
@@ -118,7 +118,7 @@ void CVerticalTextElementBuilder::scan(
 {
 	int iRv = 0 ;
 
-	//	���̃R���e�i������܂ŕێ����Ă����v�f�͔j�����܂��B
+	//	このコンテナがそれまで保持していた要素は破棄します。
 	muCVerticalTextElement->erase( 0 , INT_MAX ) ;
 
 	CStrCharSizeMb	aCStrCharSizeMb( aStr ) ;
@@ -136,37 +136,37 @@ void CVerticalTextElementBuilder::scan(
 		{
 			aElementPrev = muCVerticalTextElement->get( INT_MAX ) ;
 		}
-		//strChar = ����̕����B
-		//aElementPrev = ���O�̕�����v�f
+		//strChar = 今回の文字。
+		//aElementPrev = 直前の文字列要素
 
 		if ( aCStrCharSizeMb.CsizeOfBidx( bidx ) == 1 )
 		{
-			//	����̕����͂P�o�C�g����
+			//	今回の文字は１バイト文字
 
 			string strCharPrev ;
 			if ( !aElementPrev.isNull() ){
 				strCharPrev = aElementPrev.getString().substr( 
 					aElementPrev.getString().size() - 1 , 1 ) ;
 			}
-			//strCharPrev = ���O�̕�����v�f�̖����̕���
+			//strCharPrev = 直前の文字列要素の末尾の文字
 
 			if ( !isSpace( strChar ) && 
 				!aElementPrev.isNull() && 
 				aElementPrev.getType() == aElementPrev.V_HANKAKU &&
 				!isDelimiter( strCharPrev ) && !isSpace( strCharPrev ) )
 			{
-				//	����̕����͋󔒈ȊO�̂P�o�C�g�����ŁA
-				//	( ���O�̕�����v�f�� V_HANKAKU �A
-				//	���A���O�̕�����v�f����؂蕶����󔒂ŏI����Ă��Ȃ�
+				//	今回の文字は空白以外の１バイト文字で、
+				//	( 直前の文字列要素が V_HANKAKU 、
+				//	かつ、直前の文字列要素が区切り文字や空白で終わっていない
 				//	) 
-				//	�ꍇ�́A���O�̕�����v�f�ɕ�����ǉ����܂��B
+				//	場合は、直前の文字列要素に文字を追加します。
 				//
 				aElementPrev.setString( aElementPrev.getString() + strChar );
 				muCVerticalTextElement->set( aElementPrev , INT_MAX ) ;
 			}
 			else
 			{
-				//	������v�f��ǉ����܂��B
+				//	文字列要素を追加します。
 				CVerticalTextElement	aElement( strChar , CVerticalTextElement::V_HANKAKU ) ;
 
 				muCVerticalTextElement->insert( aElement ) ;
@@ -174,12 +174,12 @@ void CVerticalTextElementBuilder::scan(
 		}
 		else if ( aCStrCharSizeMb.CsizeOfBidx( bidx ) == 2 )
 		{
-			//	����̕����͂Q�o�C�g�����ł���ꍇ�́A������v�f��ǉ����܂��B
+			//	今回の文字は２バイト文字である場合は、文字列要素を追加します。
 
-			//	����̕����͂Q�o�C�g�̋�؂蕶���ŁA
-			//	( ���O�̕�����v�f�� V_ZENKAKU 
+			//	今回の文字は２バイトの区切り文字で、
+			//	( 直前の文字列要素が V_ZENKAKU 
 			//	) 
-			//	�ꍇ�́A���O�̕�����v�f�ɕ�����ǉ����܂��B
+			//	場合は、直前の文字列要素に文字を追加します。
 			//
 			if ( isDelimiter( strChar ) && 
 				!aElementPrev.isNull() && 
@@ -191,7 +191,7 @@ void CVerticalTextElementBuilder::scan(
 			}
 			else
 			{
-				//	�V����������v�f��ǉ����܂��B
+				//	新しい文字列要素を追加します。
 				CVerticalTextElement aElement( strChar , CVerticalTextElement::V_ZENKAKU ) ;
 				muCVerticalTextElement->insert( aElement ) ;
 
@@ -199,15 +199,15 @@ void CVerticalTextElementBuilder::scan(
 		}
 
 	}
-	//muCVerticalTextElement = ������� V_ZENKAKU �� V_HANKAKU �̂Q��
-	//	�v�f�ɕ������܂����B
-	//	V_ZENKAKU �́A�����Ƃ��đS�p�����P�ł��B
-	//	�A���A[�S�p����][�S�p��؂蕶��]
-	//	�́A[�S�p����+�S�p��؂蕶��]�̂P�̗v�f�ɂȂ��Ă��܂��B
-	//	V_HANKAKU �́A�A���������p�������P�̗v�f�Ƃ��܂��B
+	//muCVerticalTextElement = 文字列を V_ZENKAKU と V_HANKAKU の２つの
+	//	要素に分割しました。
+	//	V_ZENKAKU は、原則として全角文字１つです。
+	//	但し、[全角文字][全角区切り文字]
+	//	は、[全角文字+全角区切り文字]の１つの要素になっています。
+	//	V_HANKAKU は、連続した半角文字を１つの要素とします。
 
 	// --------------------------------
-	//	2���ȉ��̔��p�������������ɂ���
+	//	2桁以下の半角数字を横書きにする
 	// --------------------------------
 	if ( bTwoDegiLateral  )
 	{
@@ -217,15 +217,15 @@ void CVerticalTextElementBuilder::scan(
 				idxMojiretsuyouso < muCVerticalTextElement->size() ;
 				idxMojiretsuyouso ++ )
 		{
-			//	����̕�����v�f�����p�p�����P�������Q���� 
+			//	今回の文字列要素が半角英数字１文字か２文字 
 			//	AND 
 			//	( 
-			//		( �O�̕�����v�f�����݂��Ȃ�)
+			//		( 前の文字列要素が存在しない)
 			//		OR
-			//		( �O�̕�����v�f���i�󔒈ȊO�̔��p������̗v�f�j�łȂ�)
+			//		( 前の文字列要素が（空白以外の半角文字列の要素）でない)
 			//	) 
 			//	
-			//	�̏ꍇ�́A���������ɔ��p�p������1�����E2�����ŕ��ׂ܂��B
+			//	の場合は、水平方向に半角英数字を1文字・2文字で並べます。
 			CVerticalTextElement aElementPrev ;
 			if ( idxMojiretsuyouso > 0 )
 			{

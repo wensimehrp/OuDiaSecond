@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2018 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -77,12 +77,12 @@ Copyright (C) 2006-2017 take-okm
 #ifndef  CdDedDispProp_h
 #define  CdDedDispProp_h
 
-#include "DcdCd\DcDrawProp\CdFontProp.h"
-#include "DcdCd\DcDrawProp\CdColorProp.h"
+#include "DcdCd¥DcDrawProp¥CdFontProp.h"
+#include "DcdCd¥DcDrawProp¥CdColorProp.h"
 
-#include "..\entDed\CentDed.h"
-#include "..\entDed\CentDedRessyasyubetsu.h"
-#include "..\entDed\CentDedEki.h"
+#include "..¥entDed¥CentDed.h"
+#include "..¥entDed¥CentDedRessyasyubetsu.h"
+#include "..¥entDed¥CentDedEki.h"
 
 namespace DedRosenFileData{
 	using namespace DcDrawLib::DcdCd::DcDrawProp;
@@ -91,274 +91,274 @@ namespace DedRosenFileData{
 // ****************************************************************
 /**
   @brief
- 	�y�T�v�z  DiagramEdit �̕\���Ɋ֌W����v���p�e�B��ێ�����
- 	�P���f�[�^�N���X�ł��B
+ 	【概要】  DiagramEdit の表示に関係するプロパティを保持する
+ 	単純データクラスです。
  */
 class CdDedDispProp
 {
 private:
 	// ********************************
-	///@name ����
+	///@name 属性
 	// ********************************
 	///@{
 	/**
-		 �����\��ʁE�������t�H���g�B
+		 時刻表画面・横書きフォント。
 
-		�K��l�́A	CdFontProp( 9 ,"Meiryo UI"  ) �B
-		�����Ĉȉ��̑������ǉ�����܂��B
-		- [1]��Bold
-		- [2]��Itaric
-		- [3] �� Bold | Itaric 
+		規定値は、	CdFontProp( 9 ,"Meiryo UI"  ) 。
+		加えて以下の属性が追加されます。
+		- [1]はBold
+		- [2]はItaric
+		- [3] は Bold | Itaric 
 	 */
 	CdFontProp	m_arJikokuhyouFont[entDed::CentDedRessyasyubetsu::JIKOKUHYOUFONT_COUNT] ;
 
 	/**
-		 �����\��ʁE�c�����t�H���g�B
+		 時刻表画面・縦書きフォント。
 
-		�K��l�́A	CdFontProp( 9 ,"@Meiryo UI"  ) �B
+		規定値は、	CdFontProp( 9 ,"@Meiryo UI"  ) 。
 	 */
 	CdFontProp	m_fontpropJikokuhyouVFont ;
 
 	/**
-		 �_�C����ʉw���t�H���g�B
-		�K��l�́A	CdFontProp( 9 ,"Meiryo UI"  ) �B
+		 ダイヤ画面駅名フォント。
+		規定値は、	CdFontProp( 9 ,"Meiryo UI"  ) 。
 	 */
 	CdFontProp	m_fontpropDiaEkimeiFont ;
 
 	/**
-		 �_�C����ʎ����t�H���g�B
-		�K��l�́A	CdFontProp( 9 ,"Meiryo UI"  ) �B
+		 ダイヤ画面時刻フォント。
+		規定値は、	CdFontProp( 9 ,"Meiryo UI"  ) 。
 	 */
 	CdFontProp	m_fontpropDiaJikokuFont ;
 
 	/**
-		 �_�C����ʗ�ԃt�H���g�B
-		�K��l�́A	CdFontProp( 9 ,"Meiryo UI"  ) �B
+		 ダイヤ画面列車フォント。
+		規定値は、	CdFontProp( 9 ,"Meiryo UI"  ) 。
 	 */
 	CdFontProp	m_fontpropDiaRessyaFont ;
 
 	/**
-		�^�p�\�E�^�p�ꗗ�\��{�t�H���g�B
-		�K��l�́A	CdFontProp( 9 ,"Meiryo UI"  ) �B
+		運用表・運用一覧表基本フォント。
+		規定値は、	CdFontProp( 9 ,"Meiryo UI"  ) 。
 	 */
 	CdFontProp	m_fontpropOperationTableFont;
 
 	/**
-		 �^�p�ꗗ�\�����t�H���g�B
-		�K��l�́A	CdFontProp( 8 ,"Meiryo UI"  ) �B
+		 運用一覧表時刻フォント。
+		規定値は、	CdFontProp( 8 ,"Meiryo UI"  ) 。
 	 */
 	CdFontProp	m_fontpropAllOperationTableJikokuFont;
 
 	/**
-		 �R�����g�r���[�t�H���g�B
-		�K��l�́A	CdFontProp( 9 ,"Meiryo UI"  ) �B
+		 コメントビューフォント。
+		規定値は、	CdFontProp( 9 ,"Meiryo UI"  ) 。
 	 */
 	CdFontProp	m_fontpropViewComment ;
 
 	/**
-		 �_�C����ʕ����F�B
-		�K��l�́A���B
+		 ダイヤ画面文字色。
+		規定値は、黒。
 	 */
 	CdColorProp	m_colorDiaMojiColor ;
 	/**
-		 �_�C����ʔw�i�F�B
-		�K��l�́A���B
+		 ダイヤ画面背景色。
+		規定値は、白。
 	 */
 	CdColorProp	m_arColorDiaBackColor[entDed::CentDedEki::DIAGRAMBACKCOLOR_COUNT] ;
 
 	/**
-		 �_�C����ʗ�Ԑ��F�B
-		�K��l�́A���B
+		 ダイヤ画面列車線色。
+		規定値は、黒。
 
 	@todo
-	 ���̃t�B�[���h�́A�t�@�C���t�H�[�}�b�g�������ɔp�~���܂��B
+	 このフィールドは、ファイルフォーマット改訂時に廃止します。
 	*/
 	CdColorProp	m_colorDiaRessyaColor ;
 
 	/**
-		 �_�C����ʏc�����F�B
-		�K��l�́A���B
+		 ダイヤ画面縦横軸色。
+		規定値は、黒。
 	 */
 	CdColorProp	m_colorDiaJikuColor ;
 
 	/**
-	�����\��ʔw�i�F�B
-	�K��l�́A���A�D�F�A���A���B
+	時刻表画面背景色。
+	規定値は、白、灰色、白、白。
 	*/
 	CdColorProp	m_colorJikokuhyouBackColor[CentDedDia::JIKOKUHYOUCOLOR_COUNT];
 	
 	/**
-	��^�]�����������w�i�F�B
-	�K��l�́A�ԁB
+	基準運転時分未満時背景色。
+	規定値は、赤。
 	*/
 	CdColorProp	m_colorStdOpeTimeLowerColor;
 
 	/**
-	��^�]�������ߎ��w�i�F�B
-	�K��l�́A�B
+	基準運転時分超過時背景色。
+	規定値は、青。
 	*/
 	CdColorProp	m_colorStdOpeTimeHigherColor;
 
 	/**
-	��^�]��������`���w�i�F�B
-	�K��l�́A���F�B
+	基準運転時分未定義時背景色。
+	規定値は、黄色。
 	*/
 	CdColorProp	m_colorStdOpeTimeUndefColor;
 
 	/**
-	��^�]�����s�K�؎��w�i�F�B
-	�K��l�́A�D�F�B
+	基準運転時分不適切時背景色。
+	規定値は、灰色。
 	*/
 	CdColorProp	m_colorStdOpeTimeIllegalColor;
 
 	/**
-		 �^�p�\�E�^�p�ꗗ�\�����F�B
-		�K��l�́A���B
+		 運用表・運用一覧表文字色。
+		規定値は、黒。
 	 */
 	CdColorProp	m_colorOperationStringColor;
 	/**
-		 �^�p�\�E�^�p�ꗗ�\�g�F�B
-		�K��l�́A���B
+		 運用表・運用一覧表枠色。
+		規定値は、黒。
 	 */
 	CdColorProp	m_colorOperationGridColor;
 	/**
-		�w�����̕���ێ����܂��B
-		�P�ʂ́A�S�p�ł̕������ł��B
-		�܂�A�w�����̕��́A
+		駅名欄の幅を保持します。
+		単位は、全角での文字数です。
+		つまり、駅名欄の幅は、
 	
-			�����̍��� �~ m_iEkimeiLength 
+			文字の高さ × m_iEkimeiLength 
 		
-		�ƂȂ�܂��B
-		�f�t�H���g�l�� 6 �Ƃ��܂��B�ŏ��l�� 1�E�ő�l��29(���p�Ȃ�58) �ł��B
+		となります。
+		デフォルト値は 6 とします。最小値は 1・最大値は29(半角なら58) です。
 	 */
 	int m_iEkimeiLength ;
 
 	/**
-		�����\�r���[�́A��ԗ��̕���ێ����܂��B
-		�P�ʂ́A���p�ł̕������ł��B
+		時刻表ビューの、列車欄の幅を保持します。
+		単位は、半角での文字数です。
 
-		��ԗ��̕��́A �����̍����~m_iJikokuhyouRessyaWidth / 2 �ƂȂ�܂��B
+		列車欄の幅は、 文字の高さ×m_iJikokuhyouRessyaWidth / 2 となります。
 
-		�K��l�� 5 �Ƃ��܂��B�ŏ��l�� 4,�ő�l��255�ł��B
+		規定値は 5 とします。最小値は 4,最大値は255です。
 	*/
 	int m_iJikokuhyouRessyaWidth ;
 
 	//add_by_d_mania
 	/**
-		�����\�r���[�́A�C�ӕb�ړ�1�̈ړ��b����ێ����܂��B
-		�P�ʂ́A�b�ł��B
+		時刻表ビューの、任意秒移動1の移動秒数を保持します。
+		単位は、秒です。
 
-		�K��l�� 5 �Ƃ��܂��B�ŏ��l�� 1,�ő�l��60�ł��B
+		規定値は 5 とします。最小値は 1,最大値は60です。
 	*/
 	int m_iAnySecondIncDec1 ;
 
 	//add_by_d_mania
 	/**
-		�����\�r���[�́A�C�ӕb�ړ�2�̈ړ��b����ێ����܂��B
-		�P�ʂ́A�b�ł��B
+		時刻表ビューの、任意秒移動2の移動秒数を保持します。
+		単位は、秒です。
 
-		�K��l�� 15 �Ƃ��܂��B�ŏ��l�� 1,�ő�l��60�ł��B
+		規定値は 15 とします。最小値は 1,最大値は60です。
 	*/
 	int m_iAnySecondIncDec2 ;
 
 	/**
-	�����\�r���[�ɁA��Ԗ��E������\�����邩�ۂ���ێ����܂��B
+	時刻表ビューに、列車名・号数を表示するか否かを保持します。
 
-	�K��l�� true�ł��B
+	規定値は trueです。
 	*/
 	bool m_bDisplayRessyamei;
 
 	/**
-	�����\�r���[�ɁA�N�_���̘H���O��������\�����邩�ۂ���ێ����܂��B
+	時刻表ビューに、起点側の路線外発着欄を表示するか否かを保持します。
 
-	�K��l�� true�ł��B
+	規定値は trueです。
 	*/
 	bool m_bDisplayOuterTerminalO;
 
 	/**
-	�����\�r���[�ɁA�I�_���̘H���O��������\�����邩�ۂ���ێ����܂��B
+	時刻表ビューに、終点側の路線外発着欄を表示するか否かを保持します。
 
-	�K��l�� true�ł��B
+	規定値は trueです。
 	*/
 	bool m_bDisplayOuterTerminalT;
 
 	/**
-		�_�C���O�����r���[�̍ݐ��\��\���w�ŁA
-		�H���O������Ԃ̉^�p�ԍ��E�w���̕\�����@��ێ����܂��B
-		0:�w��+�^�p�ԍ�(�f�t�H���g)
-		1:�w��
-		2:�^�p�ԍ�
-		3:�Ȃ�
+		ダイヤグラムビューの在線表非表示駅で、
+		路線外発着列車の運用番号・駅名の表示方法を保持します。
+		0:駅名+運用番号(デフォルト)
+		1:駅名
+		2:運用番号
+		3:なし
 	*/
 	int m_iDiagramDisplayOuterTerminal;
 
 	/**
-		�����\�r���[�ŕb�P�ʕ\��OFF���ɁA
-		�������̕b�P�ʎ����̏������@�������܂��B
+		時刻表ビューで秒単位表示OFF時に、
+		着時刻の秒単位時刻の処理方法を示します。
 		
-		0:�؂�̂�(�f�t�H���g)
-		1:�ۂ�(30�b�ȏ�؂�グ)
-		2:�؂�グ
+		0:切り捨て(デフォルト)
+		1:丸め(30秒以上切り上げ)
+		2:切り上げ
 	*/
 	int m_iSecondRoundChaku;
 
 	/**
-		�����\�r���[�ŕb�P�ʕ\��OFF���ɁA
-		�������̕b�P�ʎ����̏������@�������܂��B
+		時刻表ビューで秒単位表示OFF時に、
+		発時刻の秒単位時刻の処理方法を示します。
 
-		0:�؂�̂�(�f�t�H���g)
-		1:�ۂ�(30�b�ȏ�؂�グ)
-		2:�؂�グ
+		0:切り捨て(デフォルト)
+		1:丸め(30秒以上切り上げ)
+		2:切り上げ
 	*/
 	int m_iSecondRoundHatsu;
 
 	/**
-		�����\�r���[�ŁA��������0��0���̏ꍇ�ɁA2400�\�L���邩�ۂ��������܂��B
+		時刻表ビューで、着時刻が0時0分の場合に、2400表記するか否かを示します。
 
-		�K��l�� false�ł��B
+		規定値は falseです。
 	*/
 	bool m_bDisplay2400;
 
 	/**
-		�����\�r���[�ł̉^�p�ԍ����̒i��
-		�͈͂�1~5�ł��B
-		���̒l�̐������A�����\�ɉ^�p�ԍ�����\�����܂��B
+		時刻表ビューでの運用番号欄の段数
+		範囲は1‾5です。
+		この値の数だけ、時刻表に運用番号欄を表示します。
 	*/
 	int m_iOperationNumberRows;
 
 	/**
-	�����\�r���[�ɁA���o��A�g�R�[�h����\�����邩�ۂ���ێ����܂��B
+	時刻表ビューに、入出区連携コード欄を表示するか否かを保持します。
 
-	�K��l�� true�ł��B
+	規定値は trueです。
 	*/
 	bool m_bDisplayInOutLinkCode;
 	///@}
 
 public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	CdDedDispProp() ;
 	
 	
 public:
 	// ********************************
-	///@name CdDedDispProp-����
+	///@name CdDedDispProp-属性
 	// ********************************
 	///@{
 	/**
 	@param idx [in]
-		�C���f�N�X���w�肵�Ă��������B
-		�͈͂́A 0 �ȏ�A JIKOKUHYOUFONT_COUNT �����ł��B
+		インデクスを指定してください。
+		範囲は、 0 以上、 JIKOKUHYOUFONT_COUNT 未満です。
 	*/
 	CdFontProp	getJikokuhyouFont( int idx )const;
 
 	/**
 	@param idx [in]
-		�C���f�N�X���w�肵�Ă��������B
-		�͈͂́A 0 �ȏ�A JIKOKUHYOUFONT_COUNT �����ł��B
+		インデクスを指定してください。
+		範囲は、 0 以上、 JIKOKUHYOUFONT_COUNT 未満です。
 	@param value [in]
-		�t�H���g�������w�肵�Ă��������B
+		フォント属性を指定してください。
 	*/
 	CdDedDispProp& setJikokuhyouFont( int idx , const CdFontProp& value );
 
@@ -389,17 +389,17 @@ public:
 
 	/**
 	@param idx [in]
-	�C���f�N�X���w�肵�Ă��������B
-	�͈͂́A 0 �ȏ�A JIKOKUHYOUCOLOR_COUNT �����ł��B
+	インデクスを指定してください。
+	範囲は、 0 以上、 JIKOKUHYOUCOLOR_COUNT 未満です。
 	*/
 	CdColorProp	getJikokuhyouBackColor(int idx)const;
 
 	/**
 	@param idx [in]
-	�C���f�N�X���w�肵�Ă��������B
-	�͈͂́A 0 �ȏ�A JIKOKUHYOUCOLOR_COUNT �����ł��B
+	インデクスを指定してください。
+	範囲は、 0 以上、 JIKOKUHYOUCOLOR_COUNT 未満です。
 	@param value [in]
-	�t�H���g�������w�肵�Ă��������B
+	フォント属性を指定してください。
 	*/
 	CdDedDispProp& setJikokuhyouBackColor(int idx, const CdColorProp& value);
 
@@ -457,16 +457,16 @@ public:
 
 	/**
 	 @return
-		�w���̕����擾���邽�߂̕�������쐬���܂��B
-		���̊֐��́A�S�p������ m_iEkimeiLength �������ׂ�
-		������i���e�͎g��Ȃ��j��Ԃ��܂��B
+		駅名の幅を取得するための文字列を作成します。
+		この関数は、全角文字を m_iEkimeiLength 文字並べた
+		文字列（内容は使わない）を返します。
 	 */
 	tstring createEkimeiExtentString()const ;
 
 	/**
-		���ׂĂ̑������A
-		������ԁi�f�t�H���g�R���X�g���N�^�Ő���������ԁj
-		�ɂ��܂��B
+		すべての属性を、
+		初期状態（デフォルトコンストラクタで生成した状態）
+		にします。
 	 */
 	void clear() ;
 	///@}

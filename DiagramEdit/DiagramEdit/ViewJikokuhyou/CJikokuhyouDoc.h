@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 #if !defined(AFX_CJIKOKUHYOUDOC_H__FCE36EB0_2EBD_4E11_B59B_A7EBE1843A4E__INCLUDED_)
 #define AFX_CJIKOKUHYOUDOC_H__FCE36EB0_2EBD_4E11_B59B_A7EBE1843A4E__INCLUDED_
@@ -74,68 +74,68 @@ Copyright (C) 2006-2017 take-okm
 #if _MSC_VER > 1000
 #pragma once
 #endif // _MSC_VER > 1000
-// CJikokuhyouDoc.h : �w�b�_�[ �t�@�C��
+// CJikokuhyouDoc.h : ヘッダー ファイル
 //$Id: CJikokuhyouDoc.h 261 2016-01-23 03:59:53Z okm $
 /** @file */
 
-#include "..\entDed\CentDed.h"
-#include "Hidemdi\Hidemdi.h"
+#include "..¥entDed¥CentDed.h"
+#include "Hidemdi¥Hidemdi.h"
 
 namespace ViewJikokuhyou{
 using namespace entDed;
 using namespace OuMfc::Hidemdi;
 /////////////////////////////////////////////////////////////////////////////
-// CJikokuhyouDoc �h�L�������g
+// CJikokuhyouDoc ドキュメント
 /**
  * @brief
- *	��Ԃ̎����\�r���[�́A
- *	�h�L�������g�N���X�ł��B
+ *	列車の時刻表ビューの、
+ *	ドキュメントクラスです。
  *	
  *	
- *	Docstr = "<�_�C����>\n<��ԕ���>"
+ *	Docstr = "<ダイヤ名>¥n<列車方向>"
  */
 class CJikokuhyouDoc : public CHidemdiSubDoc
 {
 // ********************************
-//	�C���i�[�^�C�v
+//	インナータイプ
 // ********************************
  public:
 	typedef CHidemdiSubDoc super ;
 // ********************************
-///@name �֘A
+///@name 関連
 // ********************************
 ///@{
  private:
 	/**
-	 *	���̃h�L�������g/�r���[���\�����Ă���_�C���̃_�C�������w���܂��B
-	 *	���̃I�u�W�F�N�g�̔j���̐Ӗ��́A�N���X���[�U�[�ɂ���܂��B
+	 *	このドキュメント/ビューが表示しているダイヤのダイヤ名を指します。
+	 *	このオブジェクトの破棄の責務は、クラスユーザーにあります。
 	 *
-	 *	SetTitle() �Ō��܂�܂��B
+	 *	SetTitle() で決まります。
 	 *
-	 *	this �́A���̃I�u�W�F�N�g�����[�g�h�L�������g
-	 *	CDiagramEditDoc ����
-	 *	�폜���ꂽ���Ƃ����m������A
-	 *	this �� CDocTemplate::RemoveDocument() ��
-	 *	�폜���܂��B
+	 *	this は、このオブジェクトがルートドキュメント
+	 *	CDiagramEditDoc から
+	 *	削除されたことを検知したら、
+	 *	this を CDocTemplate::RemoveDocument() で
+	 *	削除します。
 	 */
 	tstring	m_strDiaName ;
 
 	/**
-	 *	���̃h�L�������g/�r���[���\������
-	 *	��ԕ����������񋓂ł��B
-	 *	-	���� Ressyahoukou_Kudari
-	 *	-	��� Ressyahoukou_Nobori ,
+	 *	このドキュメント/ビューが表示する
+	 *	列車方向を示す列挙です。
+	 *	-	下り Ressyahoukou_Kudari
+	 *	-	上り Ressyahoukou_Nobori ,
 	 *
-	 *	SetTitle() �Ō��܂�܂��B
+	 *	SetTitle() で決まります。
 	 */
 	ERessyahoukou	m_eRessyahoukou ; 
 
 	/**
-		�J�X�^�}�C�Y�����\���ۂ��B
-		��{ false
-		�J�X�^�}�C�Y true
+		カスタマイズ時刻表か否か。
+		基本 false
+		カスタマイズ true
 
-		SetTitle() �Ō��܂�܂��B
+		SetTitle() で決まります。
 	*/
 	bool m_bCustomizeDisplayMode;
 //@}
@@ -145,9 +145,9 @@ class CJikokuhyouDoc : public CHidemdiSubDoc
 ///@{
  protected:
 	/**
-	 *	���̃h�L�������g���������ꂽ�Ƃ��ɌĂяo����܂��B
+	 *	このドキュメントが生成されたときに呼び出されます。
 	 *
-	 *	strDocument= "<�_�C���̃C���f�N�X>,<��ԕ���>"
+	 *	strDocument= "<ダイヤのインデクス>,<列車方向>"
 	 */
 	virtual void SetTitle( LPCTSTR lpszTitle );
 
@@ -160,7 +160,7 @@ public:
 // ********************************
  public:
 	// ********************************
-	///@name CJikokuhyouDoc-�֘A
+	///@name CJikokuhyouDoc-関連
 	// ********************************
 	///@{
 	tstring getDiaName()
@@ -180,41 +180,41 @@ public:
 
 // ----------------------------------------------------------------
 protected:
-	CJikokuhyouDoc();           // ���I�����Ɏg�p�����v���e�N�g �R���X�g���N�^�B
+	CJikokuhyouDoc();           // 動的生成に使用されるプロテクト コンストラクタ。
 	DECLARE_DYNCREATE(CJikokuhyouDoc)
 
-// �A�g���r���[�g
+// アトリビュート
 public:
 
-// �I�y���[�V����
+// オペレーション
 public:
 
-// �I�[�o�[���C�h
-	// ClassWizard �͉��z�֐��̃I�[�o�[���C�h�𐶐����܂��B
+// オーバーライド
+	// ClassWizard は仮想関数のオーバーライドを生成します。
 	//{{AFX_VIRTUAL(CJikokuhyouDoc)
 	public:
 	protected:
 	virtual BOOL OnNewDocument();
 	//}}AFX_VIRTUAL
 
-// �C���v�������e�[�V����
+// インプリメンテーション
 public:
-	virtual ~CJikokuhyouDoc();
+	virtual ‾CJikokuhyouDoc();
 #ifdef _DEBUG
 	virtual void AssertValid() const;
 	virtual void Dump(CDumpContext& dc) const;
 #endif
 
-	// ���b�Z�[�W �}�b�v�֐��̐���
+	// メッセージ マップ関数の生成
 protected:
 	//{{AFX_MSG(CJikokuhyouDoc)
-		// ���� - ClassWizard �͂��̈ʒu�Ƀ����o�֐���ǉ��܂��͍폜���܂��B
+		// メモ - ClassWizard はこの位置にメンバ関数を追加または削除します。
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
 };
 
 //{{AFX_INSERT_LOCATION}}
-// Microsoft Visual C++ �͑O�s�̒��O�ɒǉ��̐錾��}�����܂��B
+// Microsoft Visual C++ は前行の直前に追加の宣言を挿入します。
 
 } //namespace ViewJikokuhyou
 

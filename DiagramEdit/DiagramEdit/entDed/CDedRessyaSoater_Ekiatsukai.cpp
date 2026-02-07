@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -78,8 +78,8 @@ Copyright (C) 2006-2017 take-okm
 #include "stdafx.h"
 #include <algorithm>
 #include "CDedRessyaSoater_Ekiatsukai.h"
-#include "NsMu\CaMui.h"
-#include "NsMu\CMup_vector.h"
+#include "NsMu¥CaMui.h"
+#include "NsMu¥CMup_vector.h"
 
 namespace entDed{
 
@@ -90,51 +90,51 @@ using namespace std ;
 //	CDedRessyaSoater_Ekiatsukai_CompareFunction
 // ****************************************************************
 /**
-	const Mu<const CentDedRessya*> �Ŏw�肳�ꂽ��ԃR���e�i����
-	��Ԃ̏��ɏ]���A
-	��ԃC���f�N�X���r����֐��I�u�W�F�N�g�ł��B
+	const Mu<const CentDedRessya*> で指定された列車コンテナ内の
+	列車の情報に従い、
+	列車インデクスを比較する関数オブジェクトです。
 
 */
 class CDedRessyaSoater_Ekiatsukai_CompareFunction
 {
 private:
 	// ********************************
-	///@name �֘A
+	///@name 関連
 	// ********************************
 	///@{
 	/**
-		��ԃR���e�i�B
+		列車コンテナ。
 	*/
 	const Mu<const CentDedRessya*>* m_muCentDedRessya ;
 	///@}
 	// ********************************
-	///@name ����
+	///@name 属性
 	// ********************************
 	///@{
 	/**
-	�\�[�g�̑ΏۂƂȂ鎞��Order�B
+	ソートの対象となる時刻Order。
 	*/
 	CdDedJikokuOrder m_JikokuOrder ;
 	/**
-	�_�C���O�����N�_�������w�肵�Ă��������B
-	���̊֐��́A�\�[�g���ɁA���̒l���ł�������������
-	�݂Ȃ��܂��B
-	(��F���̎�����5:00���w�肳�ꂽ�ꍇ�́A5:00<23:59<0:00<4:59 �Ƃ��Ĕ�r���s���܂�)
+	ダイヤグラム起点時刻を指定してください。
+	この関数は、ソート時に、この値を最も小さい時刻と
+	みなします。
+	(例：この時刻に5:00が指定された場合は、5:00<23:59<0:00<4:59 として比較を行います)
 	*/
 	CdDedJikoku m_jikokuKitenJikoku ;
 	///@}
 
 	// --------------------------------
-	///@name �����֐�
+	///@name 下請関数
 	// --------------------------------
 	///@{
 	/**
-		�w�����A���я������������l�ɕϊ����܂��B
+		駅扱を、並び順を示す整数値に変換します。
 	@param eEkiatsukai [in]
-		�w�����w�肵�Ă��������B
+		駅扱を指定してください。
 	@return
-		�w���̕��я���\�������l��Ԃ��܂��B
-		��ԁE�ʉ߁E�^�s�Ȃ��̏��ƂȂ�܂��B
+		駅扱の並び順を表す整数値を返します。
+		停車・通過・運行なしの順となります。
 	*/
 	int sortOrderOfEEkiatsukai( CentDedEkiJikoku::EEkiatsukai eEkiatsukai ) 
 	{
@@ -161,14 +161,14 @@ public:
 	/**
 	@return
 		(m_muCentDedRessya->get(left) < m_muCentDedRessya->get(right) 
-		�Ȃ�^�ł��B
+		なら真です。
 
 	@note
-	  ��r��́A
-			- �w��wIndex�̉w���́A��ԁE�ʉ߁E�^�s�Ȃ��̏�
-			- �w������NULL�łȂ����̂�NULL�̂��̂Ƃł́ANULL�łȂ����̂���B
-			- �w�����̏��������̂���
-			- �w�����������Ȃ�RessyaIdx�̏������ق�����B
+	  比較基準は、
+			- 指定駅Indexの駅扱は、停車・通過・運行なしの順
+			- 駅時刻がNULLでないものとNULLのものとでは、NULLでないものが先。
+			- 駅時刻の小さいものが先
+			- 駅時刻が同じならRessyaIdxの小さいほうが先。
 	*/
 	bool operator()( 
 		int idxleft , 
@@ -182,7 +182,7 @@ public:
 		CentDedEkiJikoku	aEkiJikokuRight = pRessyaRight->getCentDedEkiJikoku( m_JikokuOrder.getEkiOrder() ) ;
 		
 		// --------------------------------
-		//	- �w��wIndex�̉w���́A��ԁE�ʉ߁E�^�s�Ȃ��̏�
+		//	- 指定駅Indexの駅扱は、停車・通過・運行なしの順
 		// --------------------------------
 		{
 			int iEkiatsukaiLeft = sortOrderOfEEkiatsukai( aEkiJikokuLeft.getEkiatsukai() ) ;
@@ -198,19 +198,19 @@ public:
 		}
 
 		// --------------------------------
-		//	�\�[�g�Ώۂ̉w����Order�̉w�������擾���܂��B
-		//	NULL�̏ꍇ�́A���Ȃ甭�E���Ȃ璅�ő��
+		//	ソート対象の駅時刻Orderの駅時刻を取得します。
+		//	NULLの場合は、着なら発・発なら着で代替
 		// --------------------------------
-		//	�\�[�g�Ώۂ̉w����Order�̉w�������擾���܂��B
+		//	ソート対象の駅時刻Orderの駅時刻を取得します。
 		CdDedJikokuOrder	aJikokuOrderLeft = m_JikokuOrder ;
 		CdDedJikoku	aJikokuLeft = pRessyaLeft->getEkiJikoku( aJikokuOrderLeft ) ;
 		CdDedJikokuOrder	aJikokuOrderRight = m_JikokuOrder ;
 		CdDedJikoku	aJikokuRight = pRessyaRight->getEkiJikoku( aJikokuOrderRight ) ;
 		
-		//	�\�[�g�Ώۂ̉w����Order���������ŁA
-		//	��Ԃ̔�������NULL�̏ꍇ�́A���������擾���܂��B
-		//	�\�[�g�Ώۂ̉w����Order���������ŁA
-		//	��Ԃ̒�������NULL�̏ꍇ�́A���������擾���܂��B
+		//	ソート対象の駅時刻Orderが発時刻で、
+		//	列車の発時刻がNULLの場合は、着時刻を取得します。
+		//	ソート対象の駅時刻Orderが着時刻で、
+		//	列車の着時刻がNULLの場合は、発時刻を取得します。
 		if ( aJikokuLeft.isNull() )
 		{
 			aJikokuOrderLeft.EkiJikokuItemInvert() ;
@@ -225,22 +225,22 @@ public:
 		}
 
 		// --------------------------------
-		//	- �w������NULL�łȂ����̂�NULL�̂��̂Ƃł́ANULL�łȂ����̂���B
+		//	- 駅時刻がNULLでないものとNULLのものとでは、NULLでないものが先。
 		// --------------------------------
 		if ( !aJikokuLeft.isNull() && aJikokuRight.isNull() )
 		{
-			//	left�͔�NULL�ŁAright��NULL
+			//	leftは非NULLで、rightはNULL
 			return true ;
 		}
 		else if ( aJikokuLeft.isNull() && !aJikokuRight.isNull() )
 		{
-			//	left��NULL�ŁAright�͔�NULL
+			//	leftはNULLで、rightは非NULL
 			return false ;
 		}
 
 
 		// --------------------------------
-		//	- �w�����̏��������̂���
+		//	- 駅時刻の小さいものが先
 		// --------------------------------
 		int iResult = aJikokuLeft.compare( aJikokuRight , m_jikokuKitenJikoku ) ;
 		if ( iResult == -1 )
@@ -253,7 +253,7 @@ public:
 		}
 
 		// --------------------------------
-		//	�������Ɣ������ł́A����������
+		//	着時刻と発時刻では、着時刻が先
 		// --------------------------------
 		if ( aJikokuOrderLeft.getEkiJikokuItem() == CdDedJikokuOrder::EkiJikokuItem_Chaku && 
 			aJikokuOrderRight.getEkiJikokuItem() == CdDedJikokuOrder::EkiJikokuItem_Hatsu ) 
@@ -266,7 +266,7 @@ public:
 			return false ;
 		}
 		// --------------------------------
-		//	- �w�����������Ȃ�RessyaIdx�̏������ق�����B
+		//	- 駅時刻が同じならRessyaIdxの小さいほうが先。
 		// --------------------------------
 		if ( idxleft < idxright )
 		{
@@ -288,7 +288,7 @@ public:
 //	CDedRessyaSoater_Ekiatsukai
 // ****************************************************************
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 CDedRessyaSoater_Ekiatsukai::CDedRessyaSoater_Ekiatsukai(
 		CdDedJikokuOrder  aJikokuOrder,  
@@ -298,13 +298,13 @@ CDedRessyaSoater_Ekiatsukai::CDedRessyaSoater_Ekiatsukai(
 {
 }
 
-CDedRessyaSoater_Ekiatsukai::~CDedRessyaSoater_Ekiatsukai() 
+CDedRessyaSoater_Ekiatsukai::‾CDedRessyaSoater_Ekiatsukai() 
 {
 }
 	
 
 	// ********************************
-	//@name ����
+	//@name 操作
 	// ********************************
 
 
@@ -317,20 +317,20 @@ void CDedRessyaSoater_Ekiatsukai::sortRessyaIndex(
 	bool bAbort = false ;
 
 	const Mu<const CentDedRessya*>* pCentDedRessyaCont = pRessyaCont->getMuPtr() ; 
-	//pCentDedRessyaCont = CentDedRessyaCont �I�u�W�F�N�g�ւ̃|�C���^��ێ�����
-	//	�R���e�i�ł��B
+	//pCentDedRessyaCont = CentDedRessyaCont オブジェクトへのポインタを保持する
+	//	コンテナです。
 
 	// --------------------------------
-	//	�\�[�g�p�w�����̃R���e�i�̓��e�ɏ]���A
-	//	�C���f�N�X���\�[�g
+	//	ソート用駅時刻のコンテナの内容に従い、
+	//	インデクスをソート
 	// --------------------------------
 	{
-		//	�\�[�g�� std::sort ���g�����߁A
-		//	�C���f�N�X�R���e�i�� std::vector �Ɉ�U�R�s�[����
+		//	ソートは std::sort を使うため、
+		//	インデクスコンテナを std::vector に一旦コピーする
 		CMup_vector<int>	contiRessyaIndexOrder ;
 		CaMui<int>( &contiRessyaIndexOrder ).insert( muRessyaIndexOrder , 0 , INT_MAX ) ;
 
-		//	std::vector �̓��e���\�[�g
+		//	std::vector の内容をソート
 		std::sort( 
 			contiRessyaIndexOrder.getAdaptee()->begin() ,
 			contiRessyaIndexOrder.getAdaptee()->end() ,
@@ -340,7 +340,7 @@ void CDedRessyaSoater_Ekiatsukai::sortRessyaIndex(
 				m_jikokuKitenJikoku ) ) ;
 
 
-		//	�\�[�g���ʂ��A���̃R���e�i�ɖ߂�
+		//	ソート結果を、元のコンテナに戻す
 		muRessyaIndexOrder->erase( 0 , INT_MAX ) ;
 		CaMui<int>( muRessyaIndexOrder ).insert( &contiRessyaIndexOrder , 0 , INT_MAX ) ;
 	}

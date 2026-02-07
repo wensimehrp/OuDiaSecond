@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 //****************************************************************
@@ -70,9 +70,9 @@ Copyright (C) 2006-2017 take-okm
 /** @file */
 #ifndef  CdDrawTextProp_h
 #define  CdDrawTextProp_h
-#include "DcdCd\DcDrawProp\CdColorProp.h"
-#include "DcdCd\DcDrawProp\CdFontProp.h"
-#include "DcdCd\DcDrawProp\CdDrawTextFormat.h"
+#include "DcdCd¥DcDrawProp¥CdColorProp.h"
+#include "DcdCd¥DcDrawProp¥CdFontProp.h"
+#include "DcdCd¥DcDrawProp¥CdDrawTextFormat.h"
 
 namespace DcDrawLib{
 namespace DcdCd{
@@ -83,63 +83,63 @@ namespace DcDrawProp{
 //****************************************************************
 /**
   @brief
-  �y�T�v�z
-  	�e�L�X�g��`�悷��ۂ̑�����ێ�����A�P���f�[�^�N���X�ł��B
+  【概要】
+  	テキストを描画する際の属性を保持する、単純データクラスです。
   
  */
 class CdDrawTextProp
 {
  private:
 	// ********************************
-	/// @name	����
+	/// @name	属性
 	// ********************************
 	///@{
 	/** 
-	 	�t�H���g���� 
-	 	�f�t�H���g�ł́A�����l�ƂȂ�܂��B�ݒ�K�{�̑����ł��B
+	 	フォント属性 
+	 	デフォルトでは、無効値となります。設定必須の属性です。
 	 */
 	CdFontProp	m_CdFontProp ;
 
 	/**	
-	 	�e�L�X�g��`�悷��ꍇ�̕����F�ł��B
-	 	�f�t�H���g�͍��ł��B
+	 	テキストを描画する場合の文字色です。
+	 	デフォルトは黒です。
 	 */
 	CdColorProp	m_colorrefText ;
 	
 	/**
-	  	�e�L�X�g�̔w�i��h�邩�ۂ��������܂�
-	  	�^�Ȃ�w�i��h��܂��B
+	  	テキストの背景を塗るか否かを示します
+	  	真なら背景を塗ります。
 	 
-	 	�f�t�H���g�͋U�ł��B
+	 	デフォルトは偽です。
 	 */
 	bool		m_bIsOpaque ;
 
 	/**
-	  	�e�L�X�g��`�悷��ꍇ�́A�w�i�F�ł��B
-	  	m_bIsOpaque ���^�̏ꍇ�ɂ����A�L���ł��B
+	  	テキストを描画する場合の、背景色です。
+	  	m_bIsOpaque が真の場合にだけ、有効です。
 	 */
 	CdColorProp	m_colorrefBack ;
 	
 	/**
-	 	�e�L�X�g�`�掞�̑�����\���t���O
+	 	テキスト描画時の属性を表すフラグ
 	 */
 	CdDrawTextFormat	m_CdDrawTextFormat ;
 	///@}
 	
  public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	/**
-	  	�e�L�X�g�̔w�i�F���ŁA������ݒ肷��R���X�g���N�^�ł��B
+	  	テキストの背景色つきで、属性を設定するコンストラクタです。
 	  @param aCdFontProp [in]
-	  �t�H���g���� 
+	  フォント属性 
 	  @param colorrefText [in]
-	 	�e�L�X�g��`�悷��ꍇ�̕����F�ł��B
+	 	テキストを描画する場合の文字色です。
 	  @param colorrefBack [in]
-	  	�e�L�X�g��`�悷��ꍇ�́A�w�i�F�ł��B
+	  	テキストを描画する場合の、背景色です。
 	  @param aCdDrawTextFormat [in]
-	 	�e�L�X�g�`�掞�̑�����\���t���O
+	 	テキスト描画時の属性を表すフラグ
 	 */
 	CdDrawTextProp( 
 			const CdFontProp& aCdFontProp ,
@@ -153,13 +153,13 @@ class CdDrawTextProp
 		m_CdDrawTextFormat( aCdDrawTextFormat ) {};
 
 	/**
-	  	�e�L�X�g�̔w�i�F�Ȃ��i�����j�́A������ݒ肷��R���X�g���N�^�ł��B
+	  	テキストの背景色なし（透明）の、属性を設定するコンストラクタです。
 	  @param aCdFontProp [in]
-	  �t�H���g���� 
+	  フォント属性 
 	  @param colorrefText [in]
-	 	�e�L�X�g��`�悷��ꍇ�̕����F�ł��B
+	 	テキストを描画する場合の文字色です。
 	  @param aCdDrawTextFormat [in]
-	 	�e�L�X�g�`�掞�̑�����\���t���O
+	 	テキスト描画時の属性を表すフラグ
 	 */
 	CdDrawTextProp( 
 			const CdFontProp& aCdFontProp ,
@@ -172,8 +172,8 @@ class CdDrawTextProp
 		m_CdDrawTextFormat( aCdDrawTextFormat ) {};
 
 	/**
-	 	�f�t�H���g�R���X�g���N�^�ł��B
-	  	�e�L�X�g�̔w�i�F�Ȃ��i�����j�ł��B
+	 	デフォルトコンストラクタです。
+	  	テキストの背景色なし（透明）です。
 	 */
 	CdDrawTextProp() :
 		m_colorrefText( CdColorProp( 0 , 0 , 0 ) ) ,
@@ -186,7 +186,7 @@ class CdDrawTextProp
 // ********************************
  public:
 	// ********************************
-	/// @name	����
+	/// @name	属性
 	// ********************************
 	///@{
 	CdFontProp	getCdFontProp()const{

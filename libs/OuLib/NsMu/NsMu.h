@@ -29,44 +29,44 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 //$Id: NsMu.h 355 2016-08-18 16:41:28Z okm $
 /**
  @file 
  @brief
-	���O��Ԃ̊֐��Q�E�N���X�Q�̂��ׂĂ��C���N���[�h���܂��B
+	名前空間の関数群・クラス群のすべてをインクルードします。
 */
 
 
@@ -75,37 +75,37 @@ namespace OuLib{
 #ifndef NO_NSMU
 /**
 @brief
-  NsMu �́A�z��`���̃R���e�i(�R���N�V����)�̃N���X�Q�������閼�O��Ԃł��B
+  NsMu は、配列形式のコンテナ(コレクション)のクラス群が属する名前空間です。
 
-  ���̖��O��Ԃ̒��S�ɂȂ� Mu (Multi object) �́A�z��`���̃R���e�i�ւ̒��ۃC���^�[�t�F�[�X�ł��B�v�f�𕡐��ێ����Ă���R���e�i�ɁA�����C���f�N�X�ŗv�f�ɃA�N�Z�X����@�\��񋟂��܂��B
+  この名前空間の中心になる Mu (Multi object) は、配列形式のコンテナへの抽象インターフェースです。要素を複数保持しているコンテナに、整数インデクスで要素にアクセスする機能を提供します。
   
-  NsMu �́A���� Mu �C���^�[�t�F�[�X���T�|�[�g����R���e�i�N���X�Q���W�񂷂閼�O��Ԃł��B
+  NsMu は、この Mu インターフェースをサポートするコンテナクラス群を集約する名前空間です。
 
-  ���̖��O��Ԃ̃N���X�́A��肷���̌X�������邽�߁A�p�r�ɓK�����N���X��������ɂ����Ȃ��Ă��܂��B
-  �N���X�I���̃K�C�h���C���́A�ȉ��̒ʂ�ł��B����́A���p���т��画���������ʂł��B
+  この名前空間のクラスは、作りすぎの傾向があるため、用途に適したクラスが分かりにくくなっています。
+  クラス選択のガイドラインは、以下の通りです。これは、利用実績から判明した結果です。
   
 <H4>
-�T�C�Y�̏�����(�R�s�[�ɃR�X�g�̂�����Ȃ�)�f�[�^���i�[����ꍇ
+サイズの小さい(コピーにコストのかからない)データを格納する場合
 </H4>
 
-�@�ʏ��STL�̃R���e�i�B�܂��́A CMup_deque,CMup_vector �B
-
-<H4>
-�T�C�Y�̑傫���N���X���i�[����ꍇ
-</H4>
-  CMuiCopied �B
+　通常のSTLのコンテナ。または、 CMup_deque,CMup_vector 。
 
 <H4>
-�N���X�I�u�W�F�N�g���i�[���A�I�u�W�F�N�g�̃��\�b�h�𒼐ڌĂяo�������ꍇ�B�A���A��{�N���X���i�[����R���e�i�ɔh���N���X�̃I�u�W�F�N�g���i�[���邱�Ƃ͂Ȃ��B
+サイズの大きいクラスを格納する場合
 </H4>
-  CMuiCopied �B�e�q�R���e�i�p�^�[�����g�p����ꍇ�� CMuiCopiedParent �B
+  CMuiCopied 。
+
+<H4>
+クラスオブジェクトを格納し、オブジェクトのメソッドを直接呼び出したい場合。但し、基本クラスを格納するコンテナに派生クラスのオブジェクトを格納することはない。
+</H4>
+  CMuiCopied 。親子コンテナパターンを使用する場合は CMuiCopiedParent 。
   
 @ref parent_child_container
   
 <H4>
-��{�N���X���i�[����R���e�i�ɔh���N���X�̃I�u�W�F�N�g���i�[���A���ԓ�����s���ꍇ
+基本クラスを格納するコンテナに派生クラスのオブジェクトを格納し、多態動作を行う場合
 </H4>
-  CMuiOu �B �e�q�R���e�i�p�^�[�����g�p����ꍇ�� CMuiOuParent �B
+  CMuiOu 。 親子コンテナパターンを使用する場合は CMuiOuParent 。
   
 */
 namespace NsMu{
@@ -116,25 +116,25 @@ namespace NsMu{
 } //namespace OuLib
 
 
-#include "NsMu\CaMuCast.h"
-#include "NsMu\CaMui.h"
-#include "NsMu\CaMuiFilter.h"
-#include "NsMu\CaMup.h"
-#include "NsMu\CaMuPtref.h"
-#include "NsMu\CaMuiSelect.h"
-#include "NsMu\CaMup_list.h"
-#include "NsMu\CaMup_vector.h"
-#include "NsMu\CChildBase.h"
-#include "NsMu\CConvTable.h"
-#include "NsMu\CMuiCopied.h"
-#include "NsMu\CMuiCopiedParent.h"
-#include "NsMu\CMuiOu.h"
-#include "NsMu\CMuiOuParent.h"
-#include "NsMu\CMup_deque.h"
-#include "NsMu\CMup_list.h"
-#include "NsMu\CMup_vector.h"
-#include "NsMu\CParentBase.h"
-#include "NsMu\Mu.h"
-#include "NsMu\Mui.h"
-#include "NsMu\Mup.h"
+#include "NsMu¥CaMuCast.h"
+#include "NsMu¥CaMui.h"
+#include "NsMu¥CaMuiFilter.h"
+#include "NsMu¥CaMup.h"
+#include "NsMu¥CaMuPtref.h"
+#include "NsMu¥CaMuiSelect.h"
+#include "NsMu¥CaMup_list.h"
+#include "NsMu¥CaMup_vector.h"
+#include "NsMu¥CChildBase.h"
+#include "NsMu¥CConvTable.h"
+#include "NsMu¥CMuiCopied.h"
+#include "NsMu¥CMuiCopiedParent.h"
+#include "NsMu¥CMuiOu.h"
+#include "NsMu¥CMuiOuParent.h"
+#include "NsMu¥CMup_deque.h"
+#include "NsMu¥CMup_list.h"
+#include "NsMu¥CMup_vector.h"
+#include "NsMu¥CParentBase.h"
+#include "NsMu¥Mu.h"
+#include "NsMu¥Mui.h"
+#include "NsMu¥Mup.h"
 

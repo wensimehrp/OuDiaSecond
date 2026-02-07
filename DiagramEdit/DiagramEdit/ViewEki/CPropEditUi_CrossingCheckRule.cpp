@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 // ****************************************************************
 //	$Id: CPropEditUi_CrossingCheckRule.cpp
@@ -81,35 +81,35 @@ namespace ViewEki {
 
 
 	// ********************************
-	//@name �G���[���b�Z�[�W
+	//@name エラーメッセージ
 	// ********************************
-	/// �O����̈ړ����Ԑ�����ȏ�I�����Ă��������B
+	/// 前動作の移動元番線を一つ以上選択してください。
 const TCHAR* const CPropEditUi_CrossingCheckRule::ERRMSG_EMPTY_BEFOREFROM = _T("Before-From-List no select.") ;
 
-/// �O����̈ړ���Ԑ�����ȏ�I�����Ă��������B
+/// 前動作の移動先番線を一つ以上選択してください。
 const TCHAR* const CPropEditUi_CrossingCheckRule::ERRMSG_EMPTY_BEFORETO = _T("Before-To-List no select.");
 
-/// �㓮��̈ړ����Ԑ�����ȏ�I�����Ă��������B
+/// 後動作の移動元番線を一つ以上選択してください。
 const TCHAR* const CPropEditUi_CrossingCheckRule::ERRMSG_EMPTY_AFTERFROM = _T("After-From-List no select.");
 
-/// �㓮��̈ړ���Ԑ�����ȏ�I�����Ă��������B
+/// 後動作の移動先番線を一つ以上選択してください。
 const TCHAR* const CPropEditUi_CrossingCheckRule::ERRMSG_EMPTY_AFTERTO = _T("After-To-List no select.");
 
-/// ���u����̓��͂�����������܂���B
+/// 時隔上限の入力が正しくありません。
 const TCHAR* const CPropEditUi_CrossingCheckRule::ERRMSG_INVALID_HEADWAY = _T("Headway is invalid.");
 
-/// ���u�����̓��͂�����������܂���B
+/// 時隔下限の入力が正しくありません。
 const TCHAR* const CPropEditUi_CrossingCheckRule::ERRMSG_INVALID_HEADWAYMINIMUM = _T("Headway is invalid.");
 
-/// ���u�̑召�֌W������������܂���B
+/// 時隔の大小関係が正しくありません。
 const TCHAR* const CPropEditUi_CrossingCheckRule::ERRMSG_INVALID_HEADWAYRELATION = _T("Headway relation is invalid.");
 
- //���[�������󔒂ł��B
+ //ルール名が空白です。
 const TCHAR* const CPropEditUi_CrossingCheckRule::ERRMSG_EMPTY_CAPTION = _T("Rule-Name is empty.");
 
 
 //	// ================================
-//	//@name �����֐�
+//	//@name 下請関数
 //	// ================================
 //
 void CPropEditUi_CrossingCheckRule::InitUiData(UIDATA * pUiData)
@@ -118,13 +118,13 @@ void CPropEditUi_CrossingCheckRule::InitUiData(UIDATA * pUiData)
 	//pUiData->iEkijikokukeisiki = (int)pTarget->getEkijikokukeisiki();
 	//EkiTrack2 aEkiTrack2;
 
-	//aEkiTrack2.strTrackName = _T("1�Ԑ�");
+	//aEkiTrack2.strTrackName = _T("1番線");
 	//aEkiTrack2.strTrackRyakusyou = _T("1");
 	//aEkiTrack2.strTrackNoboriRyakusyou = _T("");
 	//aEkiTrack2.iMainTrack = 1;
 	//pUiData->sEkiTrack2.push_back(aEkiTrack2);
 
-	//aEkiTrack2.strTrackName = _T("2�Ԑ�");
+	//aEkiTrack2.strTrackName = _T("2番線");
 	//aEkiTrack2.strTrackRyakusyou = _T("2");
 	//aEkiTrack2.strTrackNoboriRyakusyou = _T("");
 	//aEkiTrack2.iMainTrack = 2;
@@ -132,7 +132,7 @@ void CPropEditUi_CrossingCheckRule::InitUiData(UIDATA * pUiData)
 
 }
 	// ================================
-	//	�I�[�o�[���C�g�̕K�v�ȃ��\�b�h1-Target�Ɉˑ����鏈��
+	//	オーバーライトの必要なメソッド1-Targetに依存する処理
 	// ================================
 void CPropEditUi_CrossingCheckRule::UiDataFromTarget( UIDATA* pUiData ) 
 {
@@ -149,9 +149,9 @@ void CPropEditUi_CrossingCheckRule::AdjustUiData(
 		bool bStartEdit )
 {
 	/**
-		iUiOperation��0(�ڍוύX)�̂Ƃ��ɍs���܂��B
-		�E���������E�o�������̈Ⴂ�ɂ��A�ړ��O��Ԑ��̐���
-		�E��ԁE�ʉ߂̈Ⴂ�ɂ��A�ړ��O��Ԑ��̐���
+		iUiOperationが0(詳細変更)のときに行われます。
+		・到着時刻・出発時刻の違いによる、移動前後番線の制限
+		・停車・通過の違いによる、移動前後番線の制限
 	*/
 	if (pUiData->iUiOperation == 0 &&
 		pUiData->iListSelected >= 0)
@@ -161,8 +161,8 @@ void CPropEditUi_CrossingCheckRule::AdjustUiData(
 		if (bStartEdit || pCrossingCheckRule->BeforeFromTrackContentCont.size() != pCrossingCheckRulePrev->BeforeFromTrackContentCont.size())
 		{
 			/**
-				List�̑I����Ԃ��ς�����Ƃ��́A�����E�o���A��ԁE�ʉ߂̏�Ԃɍ��v���Ȃ����̂ɂ��āA�I����Ԃ��������܂�
-				�ړ����Ԑ��̏ꍇ�A�o�������̏ꍇ�͔Ԑ��ȊO���A���������E�ʉ߂̏ꍇ�͔Ԑ����������܂��B
+				Listの選択状態が変わったときは、到着・出発、停車・通過の状態に合致しないものについて、選択状態を解除します
+				移動元番線の場合、出発時刻の場合は番線以外を、到着時刻・通過の場合は番線を解除します。
 			*/
 			if (!pCrossingCheckRule->bBeforeIsArrival)
 			{
@@ -190,8 +190,8 @@ void CPropEditUi_CrossingCheckRule::AdjustUiData(
 		if (bStartEdit || pCrossingCheckRule->BeforeToTrackContentCont.size() != pCrossingCheckRulePrev->BeforeToTrackContentCont.size())
 		{
 			/**
-				List�̑I����Ԃ��ς�����Ƃ��́A�����E�o���A��ԁE�ʉ߂̏�Ԃɍ��v���Ȃ����̂ɂ��āA�I����Ԃ��������܂�
-				�ړ���Ԑ��̏ꍇ�A���������̏ꍇ�͔Ԑ��ȊO���A�o�������E�ʉ߂̏ꍇ�͔Ԑ����������܂��B
+				Listの選択状態が変わったときは、到着・出発、停車・通過の状態に合致しないものについて、選択状態を解除します
+				移動先番線の場合、到着時刻の場合は番線以外を、出発時刻・通過の場合は番線を解除します。
 			*/
 			if (pCrossingCheckRule->bBeforeIsArrival)
 			{
@@ -219,8 +219,8 @@ void CPropEditUi_CrossingCheckRule::AdjustUiData(
 		if (bStartEdit || pCrossingCheckRule->AfterFromTrackContentCont.size() != pCrossingCheckRulePrev->AfterFromTrackContentCont.size())
 		{
 			/**
-				List�̑I����Ԃ��ς�����Ƃ��́A�����E�o���A��ԁE�ʉ߂̏�Ԃɍ��v���Ȃ����̂ɂ��āA�I����Ԃ��������܂�
-				�ړ����Ԑ��̏ꍇ�A�o�������̏ꍇ�͔Ԑ��ȊO���A���������E�ʉ߂̏ꍇ�͔Ԑ����������܂��B
+				Listの選択状態が変わったときは、到着・出発、停車・通過の状態に合致しないものについて、選択状態を解除します
+				移動元番線の場合、出発時刻の場合は番線以外を、到着時刻・通過の場合は番線を解除します。
 			*/
 			if (!pCrossingCheckRule->bAfterIsArrival)
 			{
@@ -248,8 +248,8 @@ void CPropEditUi_CrossingCheckRule::AdjustUiData(
 		if (bStartEdit || pCrossingCheckRule->AfterToTrackContentCont.size() != pCrossingCheckRulePrev->AfterToTrackContentCont.size())
 		{
 			/**
-				List�̑I����Ԃ��ς�����Ƃ��́A�����E�o���A��ԁE�ʉ߂̏�Ԃɍ��v���Ȃ����̂ɂ��āA�I����Ԃ��������܂�
-				�ړ���Ԑ��̏ꍇ�A���������̏ꍇ�͔Ԑ��ȊO���A�o�������E�ʉ߂̏ꍇ�͔Ԑ����������܂��B
+				Listの選択状態が変わったときは、到着・出発、停車・通過の状態に合致しないものについて、選択状態を解除します
+				移動先番線の場合、到着時刻の場合は番線以外を、出発時刻・通過の場合は番線を解除します。
 			*/
 			if (pCrossingCheckRule->bAfterIsArrival)
 			{
@@ -278,14 +278,14 @@ void CPropEditUi_CrossingCheckRule::AdjustUiData(
 		{
 			if (pCrossingCheckRule->bBeforeIsTsuuka)
 			{
-				//�ʉ߂̏ꍇ�́A�S�Ă�I���������܂�
+				//通過の場合は、全てを選択解除します
 				pCrossingCheckRule->BeforeFromTrackContentCont.clear();
 				pCrossingCheckRule->BeforeToTrackContentCont.clear();
 
 			}
 			else if (pCrossingCheckRule->bBeforeIsArrival)
 			{
-				//�O���삪�o�����������������ɕς�����ꍇ�A�ړ���Ԑ��̂����A�Ԑ��ȊO��I���������܂��B
+				//前動作が出発時刻→到着時刻に変わった場合、移動先番線のうち、番線以外を選択解除します。
 				for (int idx = pCrossingCheckRule->BeforeToTrackContentCont.size() - 1; idx >= 0; idx--)
 				{
 					if (pCrossingCheckRule->BeforeToTrackContentCont[idx].eTrackType != ETrackType::TrackType_Track)
@@ -297,7 +297,7 @@ void CPropEditUi_CrossingCheckRule::AdjustUiData(
 			}
 			else
 			{
-				//�O���삪�����������o�������ɕς�����ꍇ�A�ړ����Ԑ��̂����A�Ԑ��ȊO��I���������܂��B
+				//前動作が到着時刻→出発時刻に変わった場合、移動元番線のうち、番線以外を選択解除します。
 				for (int idx = pCrossingCheckRule->BeforeFromTrackContentCont.size() - 1; idx >= 0; idx--)
 				{
 					if (pCrossingCheckRule->BeforeFromTrackContentCont[idx].eTrackType != ETrackType::TrackType_Track)
@@ -313,14 +313,14 @@ void CPropEditUi_CrossingCheckRule::AdjustUiData(
 		{
 			if (pCrossingCheckRule->bAfterIsTsuuka)
 			{
-				//�ʉ߂̏ꍇ�́A�S�Ă�I���������܂�
+				//通過の場合は、全てを選択解除します
 				pCrossingCheckRule->AfterFromTrackContentCont.clear();
 				pCrossingCheckRule->AfterToTrackContentCont.clear();
 
 			}
 			else if (pCrossingCheckRule->bAfterIsArrival)
 			{
-				//�O���삪�o�����������������ɕς�����ꍇ�A�ړ���Ԑ��̂����A�Ԑ��ȊO��I���������܂��B
+				//前動作が出発時刻→到着時刻に変わった場合、移動先番線のうち、番線以外を選択解除します。
 				for (int idx = pCrossingCheckRule->AfterToTrackContentCont.size() - 1; idx >= 0; idx--)
 				{
 					if (pCrossingCheckRule->AfterToTrackContentCont[idx].eTrackType != ETrackType::TrackType_Track)
@@ -332,7 +332,7 @@ void CPropEditUi_CrossingCheckRule::AdjustUiData(
 			}
 			else
 			{
-				//�O���삪�����������o�������ɕς�����ꍇ�A�ړ����Ԑ��̂����A�Ԑ��ȊO��I���������܂��B
+				//前動作が到着時刻→出発時刻に変わった場合、移動元番線のうち、番線以外を選択解除します。
 				for (int idx = pCrossingCheckRule->AfterFromTrackContentCont.size() - 1; idx >= 0; idx--)
 				{
 					if (pCrossingCheckRule->AfterFromTrackContentCont[idx].eTrackType != ETrackType::TrackType_Track)
@@ -345,7 +345,7 @@ void CPropEditUi_CrossingCheckRule::AdjustUiData(
 		}
 		if (bStartEdit || pCrossingCheckRule->bBeforeIsTsuuka != pCrossingCheckRulePrev->bBeforeIsTsuuka)
 		{
-			//�ʉ߁E��Ԃ��؂�ւ�����Ƃ��́A��ԁ��ʉ߂ɂȂ����Ƃ��̂݁A�o�������̈ړ���̔Ԑ��A�����������̈ړ��O�̔Ԑ����폜���܂��B
+			//通過・停車が切り替わったときは、停車→通過になったときのみ、出発時刻の移動先の番線、到着時刻時の移動前の番線を削除します。
 			if (pCrossingCheckRule->bBeforeIsTsuuka)
 			{
 				if (pCrossingCheckRule->bBeforeIsArrival)
@@ -374,7 +374,7 @@ void CPropEditUi_CrossingCheckRule::AdjustUiData(
 		}
 		if (bStartEdit || pCrossingCheckRule->bAfterIsTsuuka != pCrossingCheckRulePrev->bAfterIsTsuuka)
 		{
-			//�ʉ߁E��Ԃ��؂�ւ�����Ƃ��́A��ԁ��ʉ߂ɂȂ����Ƃ��̂݁A�o�������̈ړ���̔Ԑ��A�����������̈ړ��O�̔Ԑ����폜���܂��B
+			//通過・停車が切り替わったときは、停車→通過になったときのみ、出発時刻の移動先の番線、到着時刻時の移動前の番線を削除します。
 			if (pCrossingCheckRule->bAfterIsTsuuka)
 			{
 				if (pCrossingCheckRule->bAfterIsArrival)
@@ -422,7 +422,7 @@ int CPropEditUi_CrossingCheckRule::CheckUiData(
 			{
 				ShowError(ERRMSG_EMPTY_CAPTION, strInfo);
 				SetFocus(offsetof(CrossingCheckRule, strCaption));
-				iRv = -1;	//	���[�������󔒂ł��B
+				iRv = -1;	//	ルール名が空白です。
 			}
 		}
 		if (iRv >= 0)
@@ -432,7 +432,7 @@ int CPropEditUi_CrossingCheckRule::CheckUiData(
 			{
 				ShowError(ERRMSG_INVALID_HEADWAY, strInfo);
 				SetFocus(offsetof(CrossingCheckRule, iHeadwaySecond));
-				iRv = -2;	//	���u����̓��͂�����������܂���B
+				iRv = -2;	//	時隔上限の入力が正しくありません。
 			}
 		}
 		if (iRv >= 0)
@@ -442,7 +442,7 @@ int CPropEditUi_CrossingCheckRule::CheckUiData(
 			{
 				ShowError(ERRMSG_INVALID_HEADWAYMINIMUM, strInfo);
 				SetFocus(offsetof(CrossingCheckRule, iHeadwaySecondMinimum));
-				iRv = -3;	//	���u�����̓��͂�����������܂���B
+				iRv = -3;	//	時隔下限の入力が正しくありません。
 			}
 		}
 		if (iRv >= 0)
@@ -452,7 +452,7 @@ int CPropEditUi_CrossingCheckRule::CheckUiData(
 			{
 				ShowError(ERRMSG_INVALID_HEADWAYRELATION, strInfo);
 				SetFocus(offsetof(CrossingCheckRule, iHeadwaySecond));
-				iRv = -4;	//	���u�̑召�֌W������������܂���B
+				iRv = -4;	//	時隔の大小関係が正しくありません。
 			}
 		}
 		if (iRv >= 0)
@@ -462,7 +462,7 @@ int CPropEditUi_CrossingCheckRule::CheckUiData(
 			{
 				ShowError(ERRMSG_EMPTY_BEFOREFROM, strInfo);
 				SetFocus(offsetof(CrossingCheckRule, BeforeFromTrackContentCont));
-				iRv = -11;	//	�O����̈ړ����Ԑ�����ȏ�I�����Ă��������B
+				iRv = -11;	//	前動作の移動元番線を一つ以上選択してください。
 			}
 		}
 		if (iRv >= 0)
@@ -472,7 +472,7 @@ int CPropEditUi_CrossingCheckRule::CheckUiData(
 			{
 				ShowError(ERRMSG_EMPTY_BEFORETO, strInfo);
 				SetFocus(offsetof(CrossingCheckRule, BeforeToTrackContentCont));
-				iRv = -12;	//	�O����̈ړ���Ԑ�����ȏ�I�����Ă��������B
+				iRv = -12;	//	前動作の移動先番線を一つ以上選択してください。
 			}
 		}
 		if (iRv >= 0)
@@ -482,7 +482,7 @@ int CPropEditUi_CrossingCheckRule::CheckUiData(
 			{
 				ShowError(ERRMSG_EMPTY_AFTERFROM, strInfo);
 				SetFocus(offsetof(CrossingCheckRule, AfterFromTrackContentCont));
-				iRv = -13;	//	�㓮��̈ړ����Ԑ�����ȏ�I�����Ă��������B
+				iRv = -13;	//	後動作の移動元番線を一つ以上選択してください。
 			}
 		}
 		if (iRv >= 0)
@@ -492,7 +492,7 @@ int CPropEditUi_CrossingCheckRule::CheckUiData(
 			{
 				ShowError(ERRMSG_EMPTY_AFTERTO, strInfo);
 				SetFocus(offsetof(CrossingCheckRule, AfterToTrackContentCont));
-				iRv = -14;	//	�㓮��̈ړ���Ԑ�����ȏ�I�����Ă��������B
+				iRv = -14;	//	後動作の移動先番線を一つ以上選択してください。
 			}
 		}
 	}
@@ -514,7 +514,7 @@ int CPropEditUi_CrossingCheckRule::UiDataToTarget(
 
 
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 CPropEditUi_CrossingCheckRule::CPropEditUi_CrossingCheckRule( 
 	CentDedEki* pTarget ,

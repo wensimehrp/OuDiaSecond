@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -76,8 +76,8 @@ Copyright (C) 2006-2017 take-okm
 */
 #include "stdafx.h"
 #include "CRessyaTrackDraw.h"
-#include "DcDraw\CDcdLine.h"
-#include "DcDraw\CaDcdTargetItemPosition.h"
+#include "DcDraw¥CDcdLine.h"
+#include "DcDraw¥CaDcdTargetItemPosition.h"
 
 //namespace entDgr{
 namespace ViewDiagram {
@@ -86,7 +86,7 @@ namespace ViewDiagram {
 //	CRessyaTrackDraw
 // ****************************************************************
 	//*******************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	//*******************************
 //CRessyaTrackDraw::CRessyaTrackDraw(
 //		const CentDedDgrDia* pCentDedDgrDia ,
@@ -116,7 +116,7 @@ CRessyaTrackDraw::CRessyaTrackDraw(CDcdDiagram* pCDcdDiagram,
 	m_zonexyDgrZone(pCDcdDiagram->DgrFromDcd(pIfDcdTarget, pIfDcdTarget->getZone())) 
 {
 };
-CRessyaTrackDraw::~CRessyaTrackDraw()
+CRessyaTrackDraw::‾CRessyaTrackDraw()
 {
 }
 
@@ -128,9 +128,9 @@ void CRessyaTrackDraw::onCentDedDgrRessya(
 		int iRessyaIdx ,
 		const CentDedDgrRessya* pCentDedDgrRessya ) 
 {
-	//	�ΏۂƂȂ�`��̈���A
-	//	�w�_�C���O�����G���e�B�e�B���W�n�x�ŕێ����܂��B
-	//	����́A����`����s���͈͂�\���Ă��܂��B
+	//	対象となる描画領域を、
+	//	『ダイヤグラムエンティティ座標系』で保持します。
+	//	これは、今回描画を行う範囲を表しています。
 	CdDcdZoneXy	zonexyDgrZone = m_zonexyDgrZone ;
 
 	for (int idx = 0; idx < pCentDedDgrRessya->getCentDedDgrRessyaTrackLineCont()->size(); idx++)
@@ -139,9 +139,9 @@ void CRessyaTrackDraw::onCentDedDgrRessya(
 			pCentDedDgrRessya->getCentDedDgrRessyaTrackLineCont()->get(idx);
 		if (pCentDedDgrRessyaTrackLine->getChakuOperation() < 0)
 		{
-			//������Ԃ́A�w������Ԑ����܂ł̏c����`�ʂ��܂�
+			//到着列車の、駅線から番線線までの縦線を描写します
 			// --------------------------------
-			//	�Ԑ������͂ދ�`�̈�����߂�
+			//	番線線を囲む矩形領域を求める
 			// --------------------------------
 			{
 				CdDcdPosXy	posRessyaTrackKiten;
@@ -197,9 +197,9 @@ void CRessyaTrackDraw::onCentDedDgrRessya(
 		}
 		if (pCentDedDgrRessyaTrackLine->getHatsuOperation() < 0)
 		{
-			//�o����Ԃ́A�Ԑ�������w���܂ł̏c����`�ʂ��܂�
+			//出発列車の、番線線から駅線までの縦線を描写します
 			// --------------------------------
-			//	�Ԑ������͂ދ�`�̈�����߂�
+			//	番線線を囲む矩形領域を求める
 			// --------------------------------
 			{
 				CdDcdPosXy	posRessyaTrackKiten;
@@ -256,9 +256,9 @@ void CRessyaTrackDraw::onCentDedDgrRessya(
 		if (pCentDedDgrRessyaTrackLine->getChakuOperation() < 0 &&
 			pCentDedDgrRessyaTrackLine->getHatsuOperation() < 0)
 		{
-			//���w�����ԉw�̗�Ԃ́A�ݐ�������������`�ʂ��܂�
+			//当駅が中間駅の列車の、在線を示す横線を描写します
 			// --------------------------------
-			//	�ݐ����̍��W�����߂܂�
+			//	在線線の座標を求めます
 			// --------------------------------
 			CdDcdPosXy	posRessyaTrackKiten;
 			CdDcdPosXy	posRessyaTrackSyuuten;
@@ -284,8 +284,8 @@ void CRessyaTrackDraw::onCentDedDgrRessya(
 				posRessyaTrackKiten,
 				posRessyaTrackDummy))
 			{
-				//iX_Dcd,iY_Dcd = ��ԏ���\������w�̔������̍��W
-				//	�P�ʂ́A IfDcdTarget �̍��W�n
+				//iX_Dcd,iY_Dcd = 列車情報を表示する駅の発時刻の座標
+				//	単位は、 IfDcdTarget の座標系
 				int iX_Left_Dcd = m_pCDcdDiagram->XDgrToDcd(m_pIfDcdTarget,
 					posRessyaTrackKiten.getX());
 				int iX_Right_Dcd = m_pCDcdDiagram->XDgrToDcd(m_pIfDcdTarget,
@@ -331,7 +331,7 @@ void CRessyaTrackDraw::onCentDedDgrRessya(
 						iX_Right_Dcd + 4,
 						iY_Dcd + 4);
 					// --------------------------------
-					//	GDI�I�u�W�F�N�g�̑I��������
+					//	GDIオブジェクトの選択を解除
 					if (hPenPrev != NULL)
 					{
 						SelectObject(m_pIfDcdTarget->getHdc(), hPenPrev);
@@ -383,7 +383,7 @@ void CRessyaTrackDraw::onCentDedDgrRessya(
 						iX_Right_Dcd + 4,
 						iY_Dcd - 4);
 					// --------------------------------
-					//	GDI�I�u�W�F�N�g�̑I��������
+					//	GDIオブジェクトの選択を解除
 					if (hPenPrev != NULL)
 					{
 						SelectObject(m_pIfDcdTarget->getHdc(), hPenPrev);
@@ -418,9 +418,9 @@ void CRessyaTrackDraw::onCentDedDgrRessya(
 			{
 				iCompareTrack = 1;
 			}
-			//�I���w�E�����ɂ�����A��������������������܂ł̉���
+			//終着駅・入換における、着時刻から入換発時刻までの横線
 			// --------------------------------
-			//	�ݐ����̍��W�����߂܂�
+			//	在線線の座標を求めます
 			// --------------------------------
 			{
 				CdDcdPosXy	posRessyaTrackKiten;
@@ -466,10 +466,10 @@ void CRessyaTrackDraw::onCentDedDgrRessya(
 				}
 			}
 
-			//�����ɂ�����A�Ԑ��ړ��̏c��
+			//入換における、番線移動の縦線
 			{
 				// --------------------------------
-				//	�Ԑ������͂ދ�`�̈�����߂�
+				//	番線線を囲む矩形領域を求める
 				// --------------------------------
 				CdDcdPosXy	posRessyaTrackKiten;
 				CdDcdPosXy	posRessyaTrackSyuuten;
@@ -502,9 +502,9 @@ void CRessyaTrackDraw::onCentDedDgrRessya(
 				}
 			}
 
-			//�I���w�E�����ɂ�����A������������1����܂ł̉���
+			//終着駅・入換における、入換時刻から1分後までの横線
 			// --------------------------------
-			//	�ݐ����̍��W�����߂܂�
+			//	在線線の座標を求めます
 			// --------------------------------
 			{
 				CdDcdPosXy	posRessyaTrackKiten;
@@ -549,9 +549,9 @@ void CRessyaTrackDraw::onCentDedDgrRessya(
 			(pCentDedDgrRessyaTrackLine->getHatsuOperation() == 0 ||
 				pCentDedDgrRessyaTrackLine->getHatsuOperation() == 2))
 		{
-			//�I���w�E��ƂȂ�or���ɂɂ�����A������������1����܂ł̉���
+			//終着駅・作業なしor入庫における、到着時刻から1分後までの横線
 			// --------------------------------
-			//	�ݐ����̍��W�����߂܂�
+			//	在線線の座標を求めます
 			// --------------------------------
 			{
 				CdDcdPosXy	posRessyaTrackKiten;
@@ -593,9 +593,9 @@ void CRessyaTrackDraw::onCentDedDgrRessya(
 		if (pCentDedDgrRessyaTrackLine->getChakuOperation() < 0 &&
 			pCentDedDgrRessyaTrackLine->getHatsuOperation() == 2)
 		{
-			//�I���w�E���ɂɂ�����A���܂��́���̕`��
+			//終着駅・入庫における、△または▽印の描写
 			// --------------------------------
-			//	���Ƀ}�[�N��`�悷��ʒu���Z�o
+			//	入庫マークを描画する位置を算出
 			// --------------------------------
 			CdDcdPosXy	posTriangle_Dcd[3];
 
@@ -621,8 +621,8 @@ void CRessyaTrackDraw::onCentDedDgrRessya(
 				posRessyaTrackUp,
 				posRessyaTrackDown))
 			{
-				//iX_Dcd,iY_Dcd = ��ԏ���\������w�̔������̍��W
-				//	�P�ʂ́A IfDcdTarget �̍��W�n
+				//iX_Dcd,iY_Dcd = 列車情報を表示する駅の発時刻の座標
+				//	単位は、 IfDcdTarget の座標系
 				// --------------------------------
 				int iY_DcdUp = m_pCDcdDiagram->YDgrToDcd(m_pIfDcdTarget,
 					posRessyaTrackUp.getY());
@@ -671,7 +671,7 @@ void CRessyaTrackDraw::onCentDedDgrRessya(
 					pointTriangle,
 					3);
 				// --------------------------------
-				//	GDI�I�u�W�F�N�g�̑I��������
+				//	GDIオブジェクトの選択を解除
 				if (hPenPrev != NULL)
 				{
 					SelectObject(m_pIfDcdTarget->getHdc(), hPenPrev);
@@ -706,9 +706,9 @@ void CRessyaTrackDraw::onCentDedDgrRessya(
 			{
 				iCompareTrack = 1;
 			}
-			//�n���w�E�����ɂ�����A�����������甭�����܂ł̉���
+			//始発駅・入換における、入換時刻から発時刻までの横線
 			// --------------------------------
-			//	�ݐ����̍��W�����߂܂�
+			//	在線線の座標を求めます
 			// --------------------------------
 			{
 				CdDcdPosXy	posRessyaTrackKiten;
@@ -753,10 +753,10 @@ void CRessyaTrackDraw::onCentDedDgrRessya(
 						1);
 				}
 			}
-			//�����ɂ�����A�Ԑ��ړ��̏c��
+			//入換における、番線移動の縦線
 			{
 				// --------------------------------
-				//	�Ԑ������͂ދ�`�̈�����߂�
+				//	番線線を囲む矩形領域を求める
 				// --------------------------------
 				CdDcdPosXy	posRessyaTrackKiten;
 				CdDcdPosXy	posRessyaTrackSyuuten;
@@ -788,9 +788,9 @@ void CRessyaTrackDraw::onCentDedDgrRessya(
 				}
 			}
 
-			//�n���w�E�����ɂ�����A1���O������������܂ł̉���
+			//始発駅・入換における、1分前から入換時刻までの横線
 			// --------------------------------
-			//	�ݐ����̍��W�����߂܂�
+			//	在線線の座標を求めます
 			// --------------------------------
 			{
 				CdDcdPosXy	posRessyaTrackKiten;
@@ -835,9 +835,9 @@ void CRessyaTrackDraw::onCentDedDgrRessya(
 			pCentDedDgrRessyaTrackLine->getChakuOperation() == 2 )&&
 			pCentDedDgrRessyaTrackLine->getHatsuOperation() < 0)
 		{
-			//�n���w�E��ƂȂ�or�o��ɂ�����A1���O���甭�Ԏ����܂ł̉���
+			//始発駅・作業なしor出区における、1分前から発車時刻までの横線
 			// --------------------------------
-			//	�ݐ����̍��W�����߂܂�
+			//	在線線の座標を求めます
 			// --------------------------------
 			{
 				CdDcdPosXy	posRessyaTrackKiten;
@@ -880,7 +880,7 @@ void CRessyaTrackDraw::onCentDedDgrRessya(
 			pCentDedDgrRessyaTrackLine->getHatsuOperation() < 0)
 		{
 			// --------------------------------
-			//	�o�Ƀ}�[�N��`�悷��ʒu���Z�o
+			//	出庫マークを描画する位置を算出
 			// --------------------------------
 
 			CdDcdPosXy	posRessyaTrackUp;
@@ -901,8 +901,8 @@ void CRessyaTrackDraw::onCentDedDgrRessya(
 					true,
 					-60);
 
-			//iX_Dcd,iY_Dcd = ��ԏ���\������w�̔������̍��W
-			//	�P�ʂ́A IfDcdTarget �̍��W�n
+			//iX_Dcd,iY_Dcd = 列車情報を表示する駅の発時刻の座標
+			//	単位は、 IfDcdTarget の座標系
 			// --------------------------------
 			if (zonexyDgrRessyasenOnDgrZone(
 				posRessyaTrackUp,
@@ -947,7 +947,7 @@ void CRessyaTrackDraw::onCentDedDgrRessya(
 						iY_DcdDown);
 				}
 				// --------------------------------
-				//	GDI�I�u�W�F�N�g�̑I��������
+				//	GDIオブジェクトの選択を解除
 				if (hPenPrev != NULL)
 				{
 					SelectObject(m_pIfDcdTarget->getHdc(), hPenPrev);
@@ -982,14 +982,14 @@ bool CRessyaTrackDraw::zonexyDgrRessyasenOnDgrZone(
 		{
 			if (zoneDgrX.getSize() == 0)
 			{
-				//	�n�_�ƏI�_��X���W������̏ꍇ(������)�́A��O�I�ɕ���1�Ƃ��܂�
-				//	(0�Ƃ��Ă��܂��ƁA�����`�悳��܂���)
+				//	始点と終点のX座標が同一の場合(垂直線)は、例外的に幅を1とします
+				//	(0としてしまうと、線が描画されません)
 				zoneDgrX.setSize(1);
 			}
 			if (zoneDgrY.getSize() == 0)
 			{
-				//	�n�_�ƏI�_��Y���W������̏ꍇ(������)�́A��O�I�ɕ���1�Ƃ��܂�
-				//	(0�Ƃ��Ă��܂��ƁA�����`�悳��܂���)
+				//	始点と終点のY座標が同一の場合(水平線)は、例外的に幅を1とします
+				//	(0としてしまうと、線が描画されません)
 				zoneDgrY.setSize(1);
 			}
 		}
@@ -999,8 +999,8 @@ bool CRessyaTrackDraw::zonexyDgrRessyasenOnDgrZone(
 	}
 	CdDcdZoneXy	zonexyDgrRessyaTrackOnDgrZone = m_zonexyDgrZone.CrossZone(zonexyDgrRessyaTrack);
 	//zonexyDgrRessyasenOnDgrZone
-	//	��Ԑ��ƕ`��̈�́A�����̈�
-	//	���̒l�̃T�C�Y��0�Ȃ�A���̗�Ԑ��͕`��\�ȗ̈�ɂ͂���܂���B
+	//	列車線と描画領域の、交差領域
+	//	この値のサイズが0なら、この列車線は描画可能な領域にはありません。
 
 	if (zonexyDgrRessyaTrackOnDgrZone.getX().getSize() > 0 &&
 		zonexyDgrRessyaTrackOnDgrZone.getY().getSize() > 0)
@@ -1021,7 +1021,7 @@ void CRessyaTrackDraw::onCentDedDgrRessyaTrack(
 	int iYShiftSyuuten)
 {
 	// --------------------------------
-	//	�����̌`�������
+	//	直線の形状を決定
 	// --------------------------------
 	CdDcdFreeLineProp	aCdLineProp;
 	{
@@ -1039,7 +1039,7 @@ void CRessyaTrackDraw::onCentDedDgrRessyaTrack(
 	}
 
 	// --------------------------------
-	//	�����̕`��ʒu������
+	//	直線の描画位置を決定
 	// --------------------------------
 	CDcdFreeLine	aCDcdFreeLine(aCdLineProp);
 	CdDcdPosXy posKitenDcd = m_pCDcdDiagram->DgrToDcd(
@@ -1083,7 +1083,7 @@ void CRessyaTrackDraw::onCentDedDgrRessyaTrackHorizontal(
 	int iYChamferRight)
 {
 	// --------------------------------
-	//	�����̌`�������
+	//	直線の形状を決定
 	// --------------------------------
 	CdDcdFreeLineProp	aCdLineProp;
 	{
@@ -1237,7 +1237,7 @@ void CRessyaTrackDraw::onCentDedDgrRessyaTrackHorizontal(
 		}
 		else
 		{
-			//����A�����A�E���A�E��̏��Őݒ肵�܂�
+			//左上、左下、右下、右上の順で設定します
 			CdDcdPosXy	posQuadrilateral_Dcd[4];
 			if (iYChamferLeft == 0)
 			{
@@ -1301,7 +1301,7 @@ void CRessyaTrackDraw::onCentDedDgrRessyaTrackHorizontal(
 
 		}
 		// --------------------------------
-		//	GDI�I�u�W�F�N�g�̑I��������
+		//	GDIオブジェクトの選択を解除
 		if (hPenPrev != NULL)
 		{
 			SelectObject(m_pIfDcdTarget->getHdc(), hPenPrev);
@@ -1316,14 +1316,14 @@ void CRessyaTrackDraw::onCentDedDgrRessyaTrackHorizontal(
 }
 
 	// ********************************
-	//@name CEnumRessyasen-�֘A
+	//@name CEnumRessyasen-関連
 	// ********************************
 const CentDedDgrDia*	CRessyaTrackDraw::getCentDedDgrDia()
 {	
 		return m_pCentDedDgrDia ; 
 } ;
 	// ********************************
-	//@name CEnumRessyasen-����
+	//@name CEnumRessyasen-属性
 	// ********************************
 CdDcdZoneXy	CRessyaTrackDraw::getDgrZone()
 {
@@ -1341,13 +1341,13 @@ bool CRessyaTrackDraw::getDisplayRessyaTrack(  ERessyahoukou eRessyahoukou )cons
 	return ( bRv ) ;
 }
 	// ********************************
-	//@name CEnumRessyasen-����
+	//@name CEnumRessyasen-操作
 	// ********************************
 void CRessyaTrackDraw::execute()
 {
-	//	�ΏۂƂȂ�`��̈���A
-	//	�w�_�C���O�����G���e�B�e�B���W�n�x�ŕێ����܂��B
-	//	����́A����`����s���͈͂�\���Ă��܂��B
+	//	対象となる描画領域を、
+	//	『ダイヤグラムエンティティ座標系』で保持します。
+	//	これは、今回描画を行う範囲を表しています。
 	CdDcdZoneXy	zonexyDgrZone = m_zonexyDgrZone ;
 
 
@@ -1356,16 +1356,16 @@ void CRessyaTrackDraw::execute()
 		iRessyahoukou ++ )
 	{
 		// --------------------------------
-		//	��ԕ����̏��������s���邩�ۂ��̔���
+		//	列車方向の処理を実行するか否かの判定
 		// --------------------------------
 		ERessyahoukou	eRessyahoukou = (ERessyahoukou)iRessyahoukou ;
 		if ( !getDisplayRessyaTrack( eRessyahoukou ) ) 
 		{
-			//	���̕����̏����͍s���܂���B
+			//	この方向の処理は行いません。
 			continue ;
 		}
 		// --------------------------------
-		//	��ԕ������̏���
+		//	列車方向毎の処理
 		// --------------------------------
 		const Mu<const CentDedDgrRessya*>*	pMuCentDedDgrRessya = 
 			m_pCentDedDgrDia->getCentDedDgrRessyaCont( eRessyahoukou );
@@ -1378,7 +1378,7 @@ void CRessyaTrackDraw::execute()
 			iRessyaIdx++)
 		{
 			// --------------------------------
-			//	��Ԗ��̏���
+			//	列車毎の処理
 			// --------------------------------
 			const CentDedDgrRessya* pCentDedDgrRessya = 
 				pMuCentDedDgrRessya->get( iRessyaIdx ) ;
@@ -1386,36 +1386,36 @@ void CRessyaTrackDraw::execute()
 				pCentDedDgrRessya->getCentDedDgrRessyaTrackLineCont()->size() <= 0)
 				//pCentDedDgrRessya->getCentDedDgrRessyasenCont()->size() <= 0 )
 			{
-				//	NULL��ԁE��ԍݐ����̑S���Ȃ���Ԃ͑ΏۊO
+				//	NULL列車・列車在線線の全くない列車は対象外
 				continue ;
 			}
 			// --------------------------------
 
 			CentDedDgrRessya	aCentDedDgrRessya( *pCentDedDgrRessya ) ;
-			//	��Ԃ̍ő��DgrX���W���_�C���O������
-			//	���[��DgrX���W�ɂȂ�܂ŁA
-			//	��ԑS�̂�DgrX���W��24���Ԃ����Z����B
+			//	列車の最大のDgrX座標＜ダイヤグラムの
+			//	左端のDgrX座標になるまで、
+			//	列車全体のDgrX座標を24時間ずつ減算する。
 			//
-			//	���̏����́A��Ԃ��_�C���O�������[��
-			//	�ׂ��ł���ꍇ�ɁA�K�v�ł��B
-			//	���Ƃ��΁A�_�C���O�����̍��[�� 00:00:00
-			//	�ɂȂ��Ă���_�C���̏ꍇ�A
-			//	23:00 ���� 01:00 �Ɍ������đ����Ă����Ԃ�
-			//	-01:00��01:00 
-			//	 23:00��25:00
-			//	�̂Q�ӏ��ɗ�Ԑ���`�悵�Ȃ��Ă͂Ȃ�܂���B
-			//	���̃��[�v�ł́A��U��Ԃ̎�����
-			//	-25:00��-23:00 
-			//	�ɂ��܂��B
+			//	この処理は、列車がダイヤグラム左端を
+			//	跨いでいる場合に、必要です。
+			//	たとえば、ダイヤグラムの左端が 00:00:00
+			//	になっているダイヤの場合、
+			//	23:00 から 01:00 に向かって走っている列車は
+			//	-01:00→01:00 
+			//	 23:00→25:00
+			//	の２箇所に列車線を描画しなくてはなりません。
+			//	このループでは、一旦列車の時刻を
+			//	-25:00→-23:00 
+			//	にします。
 			while ( !( aCentDedDgrRessya.getDgrXZone().getEndPos() < 
 				zonexyDgrZone.getX().getPos() ) )
 			{
 				aCentDedDgrRessya.modifyDgrXPos( - CdDedJikoku::TOTALSECONDS_A_DAY ) ;
 			}
 
-			//	�����ŁA24���ԉ��Z���܂��B����ɂ��A��Ԏ�����
-			//	-01:00��01:00 
-			//	�ƂȂ�܂��B
+			//	ここで、24時間加算します。これにより、列車時刻は
+			//	-01:00→01:00 
+			//	となります。
 			aCentDedDgrRessya.modifyDgrXPos( + CdDedJikoku::TOTALSECONDS_A_DAY ) ;
 			
 			for ( ; aCentDedDgrRessya.getDgrXZone().getPos() < 
@@ -1423,13 +1423,13 @@ void CRessyaTrackDraw::execute()
 				aCentDedDgrRessya.modifyDgrXPos( + CdDedJikoku::TOTALSECONDS_A_DAY ) )
 			{
 				// --------------------------------
-				//	��Ԃ̕\���ʒu�i�Q�S���ԊԊu�j���̏���
+				//	列車の表示位置（２４時間間隔）毎の処理
 				// --------------------------------
 				CdDcdZone	zoneDgrXCross = zonexyDgrZone.getX().CrossZone(
 					aCentDedDgrRessya.getDgrXZone() ) ;
 				if ( zoneDgrXCross.getSize() > 0 )
 				{
-					//	���̗�Ԃ́A�ΏۂƂȂ�`��̈���ɂ���܂��B
+					//	この列車は、対象となる描画領域内にあります。
 					onCentDedDgrRessya( 
 						eRessyahoukou ,
 						iRessyaIdx ,

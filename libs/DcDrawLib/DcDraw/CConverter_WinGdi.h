@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -73,18 +73,18 @@ Copyright (C) 2006-2017 take-okm
 
 #include <windows.h>
 
-#include "str\tstring.h"
-#include "NsOu\Ou.h"
+#include "str¥tstring.h"
+#include "NsOu¥Ou.h"
 
-#include "DcdCd\Pos\CdDcdPosXy.h"
-#include "DcdCd\Pos\CdDcdZoneXy.h"
-#include "DcdCd\Pos\CdDcdSizeXy.h"
+#include "DcdCd¥Pos¥CdDcdPosXy.h"
+#include "DcdCd¥Pos¥CdDcdZoneXy.h"
+#include "DcdCd¥Pos¥CdDcdSizeXy.h"
 
-#include "DcdCd\DcDrawProp\CdDrawTextProp.h"
-#include "DcdCd\DcDrawProp\CdColorProp.h"
-#include "DcdCd\DcDrawProp\CdFontProp.h"
-#include "DcdCd\DcDrawProp\CdPenProp.h"
-#include "DcdCd\DcDrawProp\CdBrushProp.h"
+#include "DcdCd¥DcDrawProp¥CdDrawTextProp.h"
+#include "DcdCd¥DcDrawProp¥CdColorProp.h"
+#include "DcdCd¥DcDrawProp¥CdFontProp.h"
+#include "DcdCd¥DcDrawProp¥CdPenProp.h"
+#include "DcdCd¥DcDrawProp¥CdBrushProp.h"
 #include "CGdiHFontHolder.h"
 #include "CGdiHPenHolder.h"
 #include "CGdiHBrushHolder.h"
@@ -101,30 +101,30 @@ namespace DcDraw{
 //	CConverter_WinGdi
 // ****************************************************************
 /**
-	CConverter_WinGdi �̊֐��̐錾�ł��B
-	���݂́A�w��Ȃ�(�񉼑z�E��static �����o�֐�) �Ƃ��Ă��܂��B
+	CConverter_WinGdi の関数の宣言です。
+	現在は、指定なし(非仮想・非static メンバ関数) としています。
 */
 #define CConverter_WinGdi_METHOD 
 
 /**
  @brief
- �y�T�v�z
- 	WIN32�Ŏg�p����\���̂ƁADcDraw�Ŏg�p����N���X�Ƃ̊Ԃ̑��ݕϊ���
- 	�s���܂��B
+ 【概要】
+ 	WIN32で使用する構造体と、DcDrawで使用するクラスとの間の相互変換を
+ 	行います。
 */
 class CConverter_WinGdi
 {
 public:
 	// ********************************
-	///	@name ���W�������֐��Q
+	///	@name 座標を扱う関数群
 	// ********************************
 	///@{
 	/**
-		POINT �^�� CdDcdPosXy �ɕϊ����܂��B
+		POINT 型を CdDcdPosXy に変換します。
 	 @param aPOINT [in]
-		�ϊ���
+		変換元
 	 @param pCdDcdPosXy [out]
-		���̊֐��͂��̃A�h���X�ɁA�ϊ������l���������݂܂��B
+		この関数はこのアドレスに、変換した値を書き込みます。
 	 */
 	CConverter_WinGdi_METHOD 
 		void toCdDcdPosXy( const POINT& aPOINT , CdDcdPosXy* pCdDcdPosXy ) ; 
@@ -138,11 +138,11 @@ public:
 	};
 	
 	/**
-		CdDcdPosXy �� POINT �^�ɕϊ����܂��B
+		CdDcdPosXy を POINT 型に変換します。
 	 @param aCdDcdPosXy [in]
-		�ϊ���
+		変換元
 	 @param pPOINT [out]
-		���̊֐��͂��̃A�h���X�ɁA�ϊ������l���������݂܂��B
+		この関数はこのアドレスに、変換した値を書き込みます。
 	 */
 	CConverter_WinGdi_METHOD 
 		void toPOINT( const CdDcdPosXy& aCdDcdPosXy , POINT* pPOINT ) ;
@@ -156,11 +156,11 @@ public:
 	};
 
 	/**
-		RECT �^�� CdDcdZoneXy �ɕϊ����܂��B
+		RECT 型を CdDcdZoneXy に変換します。
 	 @param aPOINT [in]
-		�ϊ���
+		変換元
 	 @param pCdDcdZoneXy [out]
-		���̊֐��͂��̃A�h���X�ɁA�ϊ������l���������݂܂��B
+		この関数はこのアドレスに、変換した値を書き込みます。
 	 */
 	CConverter_WinGdi_METHOD 
 		void toCdDcdZoneXy( const RECT& aRECT , CdDcdZoneXy* pCdDcdZoneXy ) ; 
@@ -174,11 +174,11 @@ public:
 	};
 	
 	/**
-		CdDcdZoneXy �� RECT �^�ɕϊ����܂��B
+		CdDcdZoneXy を RECT 型に変換します。
 	 @param aCdDcdPosXy [in]
-		�ϊ���
+		変換元
 	 @param pPOINT [out]
-		���̊֐��͂��̃A�h���X�ɁA�ϊ������l���������݂܂��B
+		この関数はこのアドレスに、変換した値を書き込みます。
 	 */
 	CConverter_WinGdi_METHOD 
 		void toRECT( const CdDcdZoneXy& aCdDcdZoneXy , RECT* pRECT ) ;
@@ -192,72 +192,72 @@ public:
 
 	///@}
 	// ********************************
-	///	@name Color�������֐��Q
+	///	@name Colorを扱う関数群
 	// ********************************
 	///@{
 	/**
-		COLORREF ���ACdColorProp �ɕϊ����܂��B
+		COLORREF を、CdColorProp に変換します。
 	@param value [in]
-		�ϊ����̒l���w�肵�Ă��������B
+		変換元の値を指定してください。
 	@return 
-		�ϊ���̒l���w�肵�Ă��������B
+		変換後の値を指定してください。
 	*/
 	CConverter_WinGdi_METHOD 
 		CdColorProp CdColorPropOf( COLORREF value );
 
 	/**
-		CdColorProp �� COLORREF �ɕϊ����܂��B
+		CdColorProp を COLORREF に変換します。
 	@param value [in]
-		�ϊ����̒l���w�肵�Ă��������B
+		変換元の値を指定してください。
 	@return 
-		�ϊ���̒l���w�肵�Ă��������B
+		変換後の値を指定してください。
 	*/
 	CConverter_WinGdi_METHOD 
 		COLORREF COLORREFOf( const CdColorProp& value );
 
 	/**
-		 �V�X�e���J���[�̑������A
-		CdColorProp �I�u�W�F�N�g�֕ϊ����܂��B
+		 システムカラーの属性を、
+		CdColorProp オブジェクトへ変換します。
 	 @param fnObject [in]
-	 	GetSysColor() �Ŏw�肷��A�\���v�f
-		�̒萔���w�肵�Ă��������B
+	 	GetSysColor() で指定する、表示要素
+		の定数を指定してください。
 	 @return
-	 	 CdColorProp �\���̂�Ԃ��܂��B
+	 	 CdColorProp 構造体を返します。
 	*/
 	CConverter_WinGdi_METHOD 
 		CdColorProp CdColorPropOfSysColor( int nIndex ) ;
 	
 	///@}
 	// ********************************
-	///	@name Font�������֐��Q
+	///	@name Fontを扱う関数群
 	// ********************************
 	///@{
 	
 	/**
-		CdFontProp�I�u�W�F�N�g�̓��e���A LOGFONT �\���̂֕ϊ����܂��B
+		CdFontPropオブジェクトの内容を、 LOGFONT 構造体へ変換します。
 	
-	 	CdFontProp �I�u�W�F�N�g�ɐݒ肳��Ă��鍂��������
-	 	PointTextHeight �Ŏw�肳��Ă���ꍇ�́ALOGFONT�ɕϊ�
-	 	����ۂɂ́A���̕ϊ��ɂ́A�t�H���g�̕`����s��HDC���K�v�ł��B
-	 	�����A���̃P�[�X��HDC�̎w����ȗ������ꍇ�́A�X�N���[��DC��
-	 	���Ƃ�LOGFONT�\���̂��쐬���܂��B
+	 	CdFontProp オブジェクトに設定されている高さ属性が
+	 	PointTextHeight で指定されている場合は、LOGFONTに変換
+	 	する際には、その変換には、フォントの描画を行うHDCが必要です。
+	 	もし、このケースでHDCの指定を省略した場合は、スクリーンDCを
+	 	もとにLOGFONT構造体を作成します。
 
-		CdFontProp::m_strFacename ���󕶎���Ƃ����ꍇ�́A
-		DEFAULT_GUI_FONT �ō̗p����Ă���t�H���g���[�����܂��B
+		CdFontProp::m_strFacename を空文字列とした場合は、
+		DEFAULT_GUI_FONT で採用されているフォントを充当します。
 	 @param aCdFontProp [in]
-	 	�t�H���g�������w�肵�Ă��������B
+	 	フォント属性を指定してください。
 	 @param pLOGFONT [out]
-	 	���̊֐��͂��̍\���̂ɁA�������������݂܂��B
+	 	この関数はこの構造体に、属性を書き込みます。
 	 @param hDc [in]
-	 	CdFontProp �I�u�W�F�N�g�ɐݒ肳��Ă��鍂��������
-	 	PointTextHeight �Ŏw�肳��Ă���ꍇ�́ALOGFONT�ɕϊ�
-	 	����ۂɂ́A���̕ϊ��ɂ́A�t�H���g�̕`����s��HDC���K�v�ł��B
-	 	�����ɂ́A����HDC���w�肵�Ă��������B
-	 	�����A���̃P�[�X��HDC�̎w����ȗ������ꍇ�́A�X�N���[��DC��
-	 	���Ƃ�LOGFONT�\���̂��쐬���܂��B
-	 	CdFontProp �I�u�W�F�N�g�ɐݒ肳��Ă��鍂��������
-	 	Logicalunit... �Ŏw�肳��Ă���ꍇ�́A����HDC�ɂ�
-	 	�Ӗ�������܂���B
+	 	CdFontProp オブジェクトに設定されている高さ属性が
+	 	PointTextHeight で指定されている場合は、LOGFONTに変換
+	 	する際には、その変換には、フォントの描画を行うHDCが必要です。
+	 	ここには、そのHDCを指定してください。
+	 	もし、このケースでHDCの指定を省略した場合は、スクリーンDCを
+	 	もとにLOGFONT構造体を作成します。
+	 	CdFontProp オブジェクトに設定されている高さ属性が
+	 	Logicalunit... で指定されている場合は、このHDCには
+	 	意味がありません。
 	*/
 	CConverter_WinGdi_METHOD 
 		void toLOGFONT( const CdFontProp& aCdFontProp , 
@@ -265,11 +265,11 @@ public:
 			HDC hDc = NULL ) ;
 
 	/**
-		CdFontProp�I�u�W�F�N�g����A LOGFONT �\���̂֕ϊ����܂��B
-		�����́AtoLOGFONT �Ɠ����ł�
+		CdFontPropオブジェクトから、 LOGFONT 構造体へ変換します。
+		引数は、toLOGFONT と同じです
 	
 	 @retval 
-	 	�쐬����LOGFONT�\���̂�Ԃ��܂��B
+	 	作成したLOGFONT構造体を返します。
 	*/
 	CConverter_WinGdi_METHOD 
 		LOGFONT LOGFONTOf( const CdFontProp& aCdFontProp , 
@@ -281,40 +281,40 @@ public:
 	};
 
 	/**
-		 LOGFONT �\���̂̓��e���ACdFontProp�I�u�W�F�N�g�֕ϊ����܂��B
-		�������ACdFontProp�ۗ̕L������ʂ�LOGFONT�\���̂������Ȃ����߁A
-		�ϊ����CdFontProp�I�u�W�F�N�g�ł́A��񂪈ꕔ�����܂��B
+		 LOGFONT 構造体の内容を、CdFontPropオブジェクトへ変換します。
+		ただし、CdFontPropの保有する情報量はLOGFONT構造体よりも少ないため、
+		変換後のCdFontPropオブジェクトでは、情報が一部失われます。
 	 @param aLOGFONT [in]
-	 	LOGFONT�\���̂��w�肵�Ă��������B
+	 	LOGFONT構造体を指定してください。
 	 @param pCdFontProp [out]
-	 	���̊֐��͂��̃I�u�W�F�N�g�\���̂ɁA�������������݂܂��B
+	 	この関数はこのオブジェクト構造体に、属性を書き込みます。
 	*/
 	CConverter_WinGdi_METHOD void toCdFontProp( 
 			const LOGFONT&	aLOGFONT ,
 			CdFontProp* pCdFontProp ) ;
 
 	/**
-		�X�g�b�N�I�u�W�F�N�g�̑������A
-		CdFontProp�I�u�W�F�N�g�֕ϊ����܂��B
-		�������ACdFontProp�ۗ̕L������ʂ�LOGFONT�\���̂������Ȃ����߁A
-		�ϊ����CdFontProp�I�u�W�F�N�g�ł́A��񂪈ꕔ�����܂��B
+		ストックオブジェクトの属性を、
+		CdFontPropオブジェクトへ変換します。
+		ただし、CdFontPropの保有する情報量はLOGFONT構造体よりも少ないため、
+		変換後のCdFontPropオブジェクトでは、情報が一部失われます。
 	 @param fnObject [in]
-	 	GetStockObject() �Ŏw�肷��A�X�g�b�N�t�H���g�I�u�W�F�N�g
-		�̒萔���w�肵�Ă��������B
+	 	GetStockObject() で指定する、ストックフォントオブジェクト
+		の定数を指定してください。
 	 @param pCdFontProp [out]
-	 	���̊֐��͂��̃I�u�W�F�N�g�\���̂ɁA�������������݂܂��B
+	 	この関数はこのオブジェクト構造体に、属性を書き込みます。
 	*/
 	CConverter_WinGdi_METHOD void toCdFontProp( 
 			int fnObject ,
 			CdFontProp* pCdFontProp ) ;
 
 	/**
-		 LOGFONT �\���̂̓��e���ACdFontProp�I�u�W�F�N�g�֕ϊ����܂��B
-		�����́AtoCdFontProp �Ɠ����ł�
+		 LOGFONT 構造体の内容を、CdFontPropオブジェクトへ変換します。
+		引数は、toCdFontProp と同じです
 	 @param aLOGFONT [in]
-	 	LOGFONT�\���̂��w�肵�Ă��������B
+	 	LOGFONT構造体を指定してください。
 	 @return
-	 	 CdFontProp �\���̂�Ԃ��܂��B
+	 	 CdFontProp 構造体を返します。
 	*/
 	CConverter_WinGdi_METHOD CdFontProp CdFontPropOf( 
 			const LOGFONT&	aLOGFONT )
@@ -324,14 +324,14 @@ public:
 		return ( rv ) ;
 	};
 	/**
-		 �X�g�b�N�I�u�W�F�N�g�̑������A
-		CdFontProp�I�u�W�F�N�g�֕ϊ����܂��B
-		�����́AtoCdFontProp �Ɠ����ł�
+		 ストックオブジェクトの属性を、
+		CdFontPropオブジェクトへ変換します。
+		引数は、toCdFontProp と同じです
 	 @param fnObject [in]
-	 	GetStockObject() �Ŏw�肷��A�X�g�b�N�t�H���g�I�u�W�F�N�g
-		�̒萔���w�肵�Ă��������B
+	 	GetStockObject() で指定する、ストックフォントオブジェクト
+		の定数を指定してください。
 	 @return
-	 	 CdFontProp �\���̂�Ԃ��܂��B
+	 	 CdFontProp 構造体を返します。
 	*/
 	CConverter_WinGdi_METHOD CdFontProp CdFontPropOf( int fnObject )
 	{
@@ -341,46 +341,46 @@ public:
 	};
 
 	/**
-	 	CdFontProp�I�u�W�F�N�g�̑��������ƂɁA�t�H���g�𐶐����܂�
+	 	CdFontPropオブジェクトの属性をもとに、フォントを生成します
 	 @param aCdFontProp [in]
-	 	�t�H���g�������w�肵�Ă��������B
+	 	フォント属性を指定してください。
 	 @param hDc [in]
-	 	CdFontProp �I�u�W�F�N�g�ɐݒ肳��Ă��鍂��������
-	 	PointTextHeight �Ŏw�肳��Ă���ꍇ�́ALOGFONT�ɕϊ�
-	 	����ۂɂ́A���̕ϊ��ɂ́A�t�H���g�̕`����s��HDC���K�v�ł��B
-		�����ɂ́A����HDC���w�肵�Ă��������B
-	 	�����A���̃P�[�X��HDC�̎w����ȗ������ꍇ�́A�X�N���[��DC��
-	 	���Ƃ�LOGFONT�\���̂��쐬���܂��B
-	 	CdFontProp �I�u�W�F�N�g�ɐݒ肳��Ă��鍂��������
-	 	Logicalunit... �Ŏw�肳��Ă���ꍇ�́A����HDC�ɂ�
-	 	�Ӗ�������܂���B
+	 	CdFontProp オブジェクトに設定されている高さ属性が
+	 	PointTextHeight で指定されている場合は、LOGFONTに変換
+	 	する際には、その変換には、フォントの描画を行うHDCが必要です。
+		ここには、そのHDCを指定してください。
+	 	もし、このケースでHDCの指定を省略した場合は、スクリーンDCを
+	 	もとにLOGFONT構造体を作成します。
+	 	CdFontProp オブジェクトに設定されている高さ属性が
+	 	Logicalunit... で指定されている場合は、このHDCには
+	 	意味がありません。
 	 @return
-		�t�H���g�̃n���h����Ԃ��܂��B
-		���̃n���h���̔j���̐Ӗ��́A�֐��ďo���ɂ���܂��B
-		�֐��ďo���́A�n���h�����s�v�ɂȂ����� DeleteObject() ��
-		�n���h����������Ȃ��Ă͂Ȃ�܂���B
+		フォントのハンドルを返します。
+		このハンドルの破棄の責務は、関数呼出元にあります。
+		関数呼出元は、ハンドルが不要になったら DeleteObject() で
+		ハンドルを解放しなくてはなりません。
 	*/
 	CConverter_WinGdi_METHOD 
 		HFONT	CreateFont(  const CdFontProp& aCdFontProp , 
 			HDC hDc = NULL ) ;
 
 	/**
-	 	CdFontProp�I�u�W�F�N�g�̑��������ƂɁA�t�H���g�𐶐����܂�
+	 	CdFontPropオブジェクトの属性をもとに、フォントを生成します
 	 @param aCdFontProp [in]
-	 	�t�H���g�������w�肵�Ă��������B
+	 	フォント属性を指定してください。
 	 @param hDc [in]
-	 	CdFontProp �I�u�W�F�N�g�ɐݒ肳��Ă��鍂��������
-	 	PointTextHeight �Ŏw�肳��Ă���ꍇ�́ALOGFONT�ɕϊ�
-	 	����ۂɂ́A���̕ϊ��ɂ́A�t�H���g�̕`����s��HDC���K�v�ł��B
-		�����ɂ́A����HDC���w�肵�Ă��������B
-	 	�����A���̃P�[�X��HDC�̎w����ȗ������ꍇ�́A�X�N���[��DC��
-	 	���Ƃ�LOGFONT�\���̂��쐬���܂��B
-	 	CdFontProp �I�u�W�F�N�g�ɐݒ肳��Ă��鍂��������
-	 	Logicalunit... �Ŏw�肳��Ă���ꍇ�́A����HDC�ɂ�
-	 	�Ӗ�������܂���B
+	 	CdFontProp オブジェクトに設定されている高さ属性が
+	 	PointTextHeight で指定されている場合は、LOGFONTに変換
+	 	する際には、その変換には、フォントの描画を行うHDCが必要です。
+		ここには、そのHDCを指定してください。
+	 	もし、このケースでHDCの指定を省略した場合は、スクリーンDCを
+	 	もとにLOGFONT構造体を作成します。
+	 	CdFontProp オブジェクトに設定されている高さ属性が
+	 	Logicalunit... で指定されている場合は、このHDCには
+	 	意味がありません。
 	 @return
-		�t�H���g�̃n���h����ێ����� CGdiHFontHolder ��Ԃ��܂��B
-		�n���h���̐����ɂ����ꍇ�́ANULL�ł��B
+		フォントのハンドルを保持する CGdiHFontHolder を返します。
+		ハンドルの生成にした場合は、NULLです。
 	*/
 	CConverter_WinGdi_METHOD  
 		Ou<CGdiHFontHolder>	createGdiHFontHolder( 
@@ -389,29 +389,29 @@ public:
 	
 
 	/**
-	 	CdFontProp�I�u�W�F�N�g�̑�����DC�����ƂɁA
-		�w��̃e�L�X�g��`�悵���ꍇ�̑傫�����v�Z���܂��B
+	 	CdFontPropオブジェクトの属性とDCをもとに、
+		指定のテキストを描画した場合の大きさを計算します。
 	 @param strTextExtent [in]
-		���̊֐��́A���̕������\���ł��镝��Ԃ��܂��B
+		この関数は、この文字列を表示できる幅を返します。
 	 @param iLinesExtent [in]
-		���̊֐��́A���̍s����\���ł��鍂����Ԃ��܂��B
+		この関数は、この行数を表示できる高さを返します。
 	 @param aCdDrawTextProp [in]
-	 	�t�H���g�������w�肵�Ă��������B
+	 	フォント属性を指定してください。
 	 @param hDc [in]
-	 	CdFontProp �I�u�W�F�N�g�ɐݒ肳��Ă��鍂��������
-	 	PointTextHeight �Ŏw�肳��Ă���ꍇ�́ALOGFONT�ɕϊ�
-	 	����ۂɂ́A���̕ϊ��ɂ́A�t�H���g�̕`����s��HDC���K�v�ł��B
-	 	�����ɂ́A����HDC���w�肵�Ă��������B
-	 	�����A���̃P�[�X��HDC�̎w����ȗ������ꍇ�́A�X�N���[��DC��
-	 	���Ƃ�LOGFONT�\���̂��쐬���܂��B
-	 	CdFontProp �I�u�W�F�N�g�ɐݒ肳��Ă��鍂��������
-	 	Logicalunit... �Ŏw�肳��Ă���ꍇ�́A����HDC�ɂ�
-	 	�Ӗ�������܂���B
+	 	CdFontProp オブジェクトに設定されている高さ属性が
+	 	PointTextHeight で指定されている場合は、LOGFONTに変換
+	 	する際には、その変換には、フォントの描画を行うHDCが必要です。
+	 	ここには、そのHDCを指定してください。
+	 	もし、このケースでHDCの指定を省略した場合は、スクリーンDCを
+	 	もとにLOGFONT構造体を作成します。
+	 	CdFontProp オブジェクトに設定されている高さ属性が
+	 	Logicalunit... で指定されている場合は、このHDCには
+	 	意味がありません。
 	 @return
-		�t�H���g�̃n���h����Ԃ��܂��B
-		���̃n���h���̔j���̐Ӗ��́A�֐��ďo���ɂ���܂��B
-		�֐��ďo���́A�n���h�����s�v�ɂȂ����� DeleteObject() ��
-		�n���h����������Ȃ��Ă͂Ȃ�܂���B
+		フォントのハンドルを返します。
+		このハンドルの破棄の責務は、関数呼出元にあります。
+		関数呼出元は、ハンドルが不要になったら DeleteObject() で
+		ハンドルを解放しなくてはなりません。
 	*/
 	CConverter_WinGdi_METHOD CdDcdSizeXy	DrawtextCalcrect( 
 		const tstring& strExtent ,
@@ -420,14 +420,14 @@ public:
 		HDC hDc = NULL ) ;
 	
 	/**
-		CdDrawTextFormat �I�u�W�F�N�g�̑��������ƂɁA
-		CdWinGdi_DrawText_Format �I�u�W�F�N�g�𐶐����܂��B
-		���̒l�́A Win32 �� DrawText() �� uiFlags �p�����[�^��
-		�n�����Ƃ��ł��܂��B
+		CdDrawTextFormat オブジェクトの属性をもとに、
+		CdWinGdi_DrawText_Format オブジェクトを生成します。
+		この値は、 Win32 の DrawText() の uiFlags パラメータに
+		渡すことができます。
 	@param aCdDrawTextFormat [in]
-		�ϊ��O�̒l���w�肵�Ă��������B
+		変換前の値を指定してください。
 	@return 
-		�ϊ���̒l��Ԃ��܂��B
+		変換後の値を返します。
 	*/
 	CConverter_WinGdi_METHOD 
 		CdWinGdi_DrawText_Format	CdWinGdi_DrawText_FormatOf(
@@ -436,29 +436,29 @@ public:
 	///@}
 	
 	// ********************************
-	///	@name Pen�������֐��Q
+	///	@name Penを扱う関数群
 	// ********************************
 	
 	///@{
 	
 	/**
-		CdPenProp�I�u�W�F�N�g�̓��e���A LOGPEN �\���̂֕ϊ����܂��B
+		CdPenPropオブジェクトの内容を、 LOGPEN 構造体へ変換します。
 	
 	 @param aCdPenProp [in]
-	 	�y���������w�肵�Ă��������B
+	 	ペン属性を指定してください。
 	 @param pLOGPEN [out]
-	 	���̊֐��͂��̍\���̂ɁA�������������݂܂��B
+	 	この関数はこの構造体に、属性を書き込みます。
 	*/
 	CConverter_WinGdi_METHOD 
 		void toLOGPEN( const CdPenProp& aCdPenProp , 
 			LOGPEN*	pLogPen ) ;
 
 	/**
-		CdPenProp�I�u�W�F�N�g����A LOGPEN �\���̂֕ϊ����܂��B
-		�����́AtoLOGPEN �Ɠ����ł�
+		CdPenPropオブジェクトから、 LOGPEN 構造体へ変換します。
+		引数は、toLOGPEN と同じです
 	
 	 @retval 
-	 	�쐬����LOGFONT�\���̂�Ԃ��܂��B
+	 	作成したLOGFONT構造体を返します。
 	*/
 	CConverter_WinGdi_METHOD LOGPEN LOGPENOf( const CdPenProp& aCdPenProp ) 
 	{
@@ -468,35 +468,35 @@ public:
 	};
 
 	/**
-		 LOGPEN �\���̂̓��e���ACdPenProp�I�u�W�F�N�g�֕ϊ����܂��B
+		 LOGPEN 構造体の内容を、CdPenPropオブジェクトへ変換します。
 	 @param aLOGPEN [in]
-	 	LOGPEN�\���̂��w�肵�Ă��������B
+	 	LOGPEN構造体を指定してください。
 	 @param pCdPenProp [out]
-	 	���̊֐��͂��̃I�u�W�F�N�g�\���̂ɁA�������������݂܂��B
+	 	この関数はこのオブジェクト構造体に、属性を書き込みます。
 	*/
 	CConverter_WinGdi_METHOD void toCdPenProp( 
 			const LOGPEN&	aLOGPEN ,
 			CdPenProp* pCdPenProp ) ;
 
 	/**
-		�X�g�b�N�I�u�W�F�N�g�̑������A
-		CdPenProp�I�u�W�F�N�g�֕ϊ����܂��B
+		ストックオブジェクトの属性を、
+		CdPenPropオブジェクトへ変換します。
 	 @param fnObject [in]
-	 	GetStockObject() �Ŏw�肷��A�X�g�b�N�t�H���g�I�u�W�F�N�g
-		�̒萔���w�肵�Ă��������B
+	 	GetStockObject() で指定する、ストックフォントオブジェクト
+		の定数を指定してください。
 	 @param pCdPenProp [out]
-	 	���̊֐��͂��̃I�u�W�F�N�g�\���̂ɁA�������������݂܂��B
+	 	この関数はこのオブジェクト構造体に、属性を書き込みます。
 	*/
 	CConverter_WinGdi_METHOD void toCdPenProp( 
 			int fnObject ,
 			CdPenProp* pCdPenProp ) ;
 	
 	/**
-		 LOGPEN �\���̂̓��e���ACdPenProp�I�u�W�F�N�g�֕ϊ����܂��B
+		 LOGPEN 構造体の内容を、CdPenPropオブジェクトへ変換します。
 	 @param aLOGPEN [in]
-	 	LOGPEN�\���̂��w�肵�Ă��������B
+	 	LOGPEN構造体を指定してください。
 	 @return
-	 	 CdPenProp �\���̂�Ԃ��܂��B
+	 	 CdPenProp 構造体を返します。
 	*/
 	CConverter_WinGdi_METHOD CdPenProp CdPenPropOf( 
 			const LOGPEN&	aLOGPEN ){
@@ -505,13 +505,13 @@ public:
 		return ( rv ) ;
 	};
 	/**
-		�X�g�b�N�I�u�W�F�N�g�̑������A
-		CdPenProp�I�u�W�F�N�g�֕ϊ����܂��B
+		ストックオブジェクトの属性を、
+		CdPenPropオブジェクトへ変換します。
 	 @param fnObject [in]
-	 	GetStockObject() �Ŏw�肷��A�X�g�b�N�t�H���g�I�u�W�F�N�g
-		�̒萔���w�肵�Ă��������B
+	 	GetStockObject() で指定する、ストックフォントオブジェクト
+		の定数を指定してください。
 	 @return
-	 	 CdPenProp �\���̂�Ԃ��܂��B
+	 	 CdPenProp 構造体を返します。
 	*/
 	CConverter_WinGdi_METHOD CdPenProp CdPenPropOf( 
 						int fnObject )
@@ -522,49 +522,49 @@ public:
 	};
 
 	/**
-	 	CdPenProp�I�u�W�F�N�g�̑��������ƂɁA�y���𐶐����܂�
+	 	CdPenPropオブジェクトの属性をもとに、ペンを生成します
 	 @param aCdPenProp [in]
-	 	�y���������w�肵�Ă��������B
+	 	ペン属性を指定してください。
 	 @return
-		�y���̃n���h����Ԃ��܂��B
-		���̃n���h���̔j���̐Ӗ��́A�֐��ďo���ɂ���܂��B
-		�֐��ďo���́A�n���h�����s�v�ɂȂ����� DeleteObject() ��
-		�n���h����������Ȃ��Ă͂Ȃ�܂���B
+		ペンのハンドルを返します。
+		このハンドルの破棄の責務は、関数呼出元にあります。
+		関数呼出元は、ハンドルが不要になったら DeleteObject() で
+		ハンドルを解放しなくてはなりません。
 	*/
 	CConverter_WinGdi_METHOD HPEN	CreatePen(  const CdPenProp& aCdPenProp ) ;
 	
 	/**
-	 	CdPenProp�I�u�W�F�N�g�̑��������ƂɁA�y���𐶐����܂�
+	 	CdPenPropオブジェクトの属性をもとに、ペンを生成します
 	 @param aCdPenProp [in]
-	 	�y���������w�肵�Ă��������B
+	 	ペン属性を指定してください。
 	 @return
-		�y���̃n���h����ێ����� CGdiHPenHolder ��Ԃ��܂��B
-		�n���h���̐����ɂ����ꍇ�́ANULL�ł��B
+		ペンのハンドルを保持する CGdiHPenHolder を返します。
+		ハンドルの生成にした場合は、NULLです。
 	*/
 	CConverter_WinGdi_METHOD Ou<CGdiHPenHolder>		createGdiHPenHolder(  const CdPenProp& aCdPenProp ) ;
 	///@}
 
 	// ********************************
-	///	@name Brush�������֐��Q
+	///	@name Brushを扱う関数群
 	// ********************************
 	
 	///@{
 	/**
-		CdBrushProp�I�u�W�F�N�g�̓��e���A LOGBRUSH �\���̂֕ϊ����܂��B
+		CdBrushPropオブジェクトの内容を、 LOGBRUSH 構造体へ変換します。
 	
 	 @param aCdBrushProp [in]
-	 	�u���V�������w�肵�Ă��������B
+	 	ブラシ属性を指定してください。
 	 @param pLOGBRUSH [out]
-	 	���̊֐��͂��̍\���̂ɁA�������������݂܂��B
+	 	この関数はこの構造体に、属性を書き込みます。
 	*/
 	CConverter_WinGdi_METHOD void toLOGBRUSH( const CdBrushProp& aCdBrushProp , 
 			LOGBRUSH*	pLogbrush ) ;
 	/**
-		CdBrushProp�I�u�W�F�N�g����A LOGBRUSH �\���̂֕ϊ����܂��B
-		�����́AtoLOGBRUSH �Ɠ����ł�
+		CdBrushPropオブジェクトから、 LOGBRUSH 構造体へ変換します。
+		引数は、toLOGBRUSH と同じです
 	
 	 @retval 
-	 	�쐬����LOGBRUSH�\���̂�Ԃ��܂��B
+	 	作成したLOGBRUSH構造体を返します。
 	*/
 	CConverter_WinGdi_METHOD 
 		LOGBRUSH LOGBRUSHOf( const CdBrushProp& aCdBrushProp ) 
@@ -575,36 +575,36 @@ public:
 	};
 
 	/**
-		 LOGBRUSH �\���̂̓��e���ACdBrushProp�I�u�W�F�N�g�֕ϊ����܂��B
+		 LOGBRUSH 構造体の内容を、CdBrushPropオブジェクトへ変換します。
 	 @param aLOGBRUSH [in]
-	 	LOGBRUSH�\���̂��w�肵�Ă��������B
+	 	LOGBRUSH構造体を指定してください。
 	 @param pCdBrushProp [out]
-	 	���̊֐��͂��̃I�u�W�F�N�g�\���̂ɁA�������������݂܂��B
+	 	この関数はこのオブジェクト構造体に、属性を書き込みます。
 	*/
 	CConverter_WinGdi_METHOD void toCdBrushProp( 
 			const LOGBRUSH&	aLOGBRUSH ,
 			CdBrushProp* pCdBrushProp ) ;
 
 	/**
-		�X�g�b�N�I�u�W�F�N�g�̑������A
-		CdBrushProp�I�u�W�F�N�g�֕ϊ����܂��B
+		ストックオブジェクトの属性を、
+		CdBrushPropオブジェクトへ変換します。
 	 @param fnObject [in]
-	 	GetStockObject() �Ŏw�肷��A�X�g�b�N�t�H���g�I�u�W�F�N�g
-		�̒萔���w�肵�Ă��������B
+	 	GetStockObject() で指定する、ストックフォントオブジェクト
+		の定数を指定してください。
 	 @param pCdBrushProp [out]
-	 	���̊֐��͂��̃I�u�W�F�N�g�\���̂ɁA�������������݂܂��B
+	 	この関数はこのオブジェクト構造体に、属性を書き込みます。
 	*/
 	CConverter_WinGdi_METHOD void toCdBrushProp( 
 			int fnObject ,
 			CdBrushProp* pCdBrushProp ) ;
 	
 	/**
-		 LOGBRUSH �\���̂̓��e���ACdBrushProp�I�u�W�F�N�g�֕ϊ����܂��B
-		�����́AtoCdBrushProp �Ɠ����ł�
+		 LOGBRUSH 構造体の内容を、CdBrushPropオブジェクトへ変換します。
+		引数は、toCdBrushProp と同じです
 	 @param aLOGBRUSH [in]
-	 	LOGBRUSH�\���̂��w�肵�Ă��������B
+	 	LOGBRUSH構造体を指定してください。
 	 @return
-	 	 CdBrushProp �\���̂�Ԃ��܂��B
+	 	 CdBrushProp 構造体を返します。
 	*/
 	CConverter_WinGdi_METHOD CdBrushProp CdBrushPropOf( 
 			const LOGBRUSH&	aLOGBRUSH )
@@ -614,13 +614,13 @@ public:
 		return ( rv ) ;
 	};
 	/**
-		 �X�g�b�N�I�u�W�F�N�g�̑�����
-		CdBrushProp�I�u�W�F�N�g�֕ϊ����܂��B
+		 ストックオブジェクトの属性を
+		CdBrushPropオブジェクトへ変換します。
 	 @param fnObject [in]
-	 	GetStockObject() �Ŏw�肷��A�X�g�b�N�t�H���g�I�u�W�F�N�g
-		�̒萔���w�肵�Ă��������B
+	 	GetStockObject() で指定する、ストックフォントオブジェクト
+		の定数を指定してください。
 	 @return
-	 	 CdBrushProp �\���̂�Ԃ��܂��B
+	 	 CdBrushProp 構造体を返します。
 	*/
 	CConverter_WinGdi_METHOD CdBrushProp CdBrushPropOf( 
 						int fnObject )
@@ -631,112 +631,112 @@ public:
 	};
 
 	/**
-	 	CdBrushProp�I�u�W�F�N�g�̑��������ƂɁA�y���𐶐����܂�
+	 	CdBrushPropオブジェクトの属性をもとに、ペンを生成します
 	 @param aCdBrushProp [in]
-	 	�y���������w�肵�Ă��������B
+	 	ペン属性を指定してください。
 	 @return
-		�y���̃n���h����Ԃ��܂��B
-		���̃n���h���̔j���̐Ӗ��́A�֐��ďo���ɂ���܂��B
-		�֐��ďo���́A�n���h�����s�v�ɂȂ����� DeleteObject() ��
-		�n���h����������Ȃ��Ă͂Ȃ�܂���B
+		ペンのハンドルを返します。
+		このハンドルの破棄の責務は、関数呼出元にあります。
+		関数呼出元は、ハンドルが不要になったら DeleteObject() で
+		ハンドルを解放しなくてはなりません。
 	*/
 	CConverter_WinGdi_METHOD 
 		HBRUSH	CreateBrush(  const CdBrushProp& aCdBrushProp ) ;
 	
 	/**
-	 	CdBrushProp�I�u�W�F�N�g�̑��������ƂɁA�u���V�𐶐����܂�
+	 	CdBrushPropオブジェクトの属性をもとに、ブラシを生成します
 	 @param aCdBrushProp [in]
-	 	�u���V�������w�肵�Ă��������B
+	 	ブラシ属性を指定してください。
 	 @return
-		�u���V�̃n���h����ێ����� CGdiHBrushHolder ��Ԃ��܂��B
-		�n���h���̐����ɂ����ꍇ�́ANULL�ł��B
+		ブラシのハンドルを保持する CGdiHBrushHolder を返します。
+		ハンドルの生成にした場合は、NULLです。
 	*/
 	CConverter_WinGdi_METHOD 
 		Ou<CGdiHBrushHolder> createGdiHBrushHolder( 
 			const CdBrushProp& aCdBrushProp ) ;
 	///@}
 	// ********************************
-	///@name	�_�����W�ƃf�o�C�X���W�̕ϊ�	
+	///@name	論理座標とデバイス座標の変換	
 	// ********************************
 	///@{
 	/**
-		�f�o�C�X���W��_�����W�֕ϊ����܂�
+		デバイス座標を論理座標へ変換します
 	 @param value [in] 
-		�ϊ��O�̍��W�l���w�肵�Ă��������B
+		変換前の座標値を指定してください。
 	 @param hdc [in] 
-		�f�o�C�X�R���e�L�X�g�̃n���h�����w�肵�܂��B 
+		デバイスコンテキストのハンドルを指定します。 
 	 */
 	CConverter_WinGdi_METHOD 
 		CdDcdPosXy DPtoLP( const CdDcdPosXy& value , HDC hDc ) ;  
 
 	/**
-		�_�����W���f�o�C�X���W�֕ϊ����܂�
+		論理座標をデバイス座標へ変換します
 	 @param value [in] 
-		�ϊ��O�̍��W�l���w�肵�Ă��������B
+		変換前の座標値を指定してください。
 	 @param hdc [in] 
-		�f�o�C�X�R���e�L�X�g�̃n���h�����w�肵�܂��B 
+		デバイスコンテキストのハンドルを指定します。 
 	 */
 	CConverter_WinGdi_METHOD 
 		CdDcdPosXy LPtoDP( const CdDcdPosXy& value , HDC hDc ) ;  
 
 	/**
-		�f�o�C�X���W��_�����W�֕ϊ����܂�
+		デバイス座標を論理座標へ変換します
 	 @param value [in] 
-		�ϊ��O�̍��W�l���w�肵�Ă��������B
+		変換前の座標値を指定してください。
 	 @param hdc [in] 
-		�f�o�C�X�R���e�L�X�g�̃n���h�����w�肵�܂��B 
+		デバイスコンテキストのハンドルを指定します。 
 	 */
 	CConverter_WinGdi_METHOD 
 		CdDcdSizeXy DPtoLP( const CdDcdSizeXy& value , HDC hDc ) ;  
 
 	/**
-		�_�����W���f�o�C�X���W�֕ϊ����܂�
+		論理座標をデバイス座標へ変換します
 	 @param value [in] 
-		�ϊ��O�̍��W�l���w�肵�Ă��������B
+		変換前の座標値を指定してください。
 	 @param hdc [in] 
-		�f�o�C�X�R���e�L�X�g�̃n���h�����w�肵�܂��B 
+		デバイスコンテキストのハンドルを指定します。 
 	 */
 	CConverter_WinGdi_METHOD 
 		CdDcdSizeXy LPtoDP( const CdDcdSizeXy& value , HDC hDc ) ;  
 
 
 	/**
-		�f�o�C�X���W��_�����W�֕ϊ����܂�
+		デバイス座標を論理座標へ変換します
 	 @param value [in] 
-		�ϊ��O�̍��W�l���w�肵�Ă��������B
+		変換前の座標値を指定してください。
 	 @param hdc [in] 
-		�f�o�C�X�R���e�L�X�g�̃n���h�����w�肵�܂��B 
+		デバイスコンテキストのハンドルを指定します。 
 	 */
 	CConverter_WinGdi_METHOD 
 		CdDcdZoneXy DPtoLP( const CdDcdZoneXy& value , HDC hDc ) ;  
 
 	/**
-		�_�����W���f�o�C�X���W�֕ϊ����܂�
+		論理座標をデバイス座標へ変換します
 	 @param value [in] 
-		�ϊ��O�̍��W�l���w�肵�Ă��������B
+		変換前の座標値を指定してください。
 	 @param hdc [in] 
-		�f�o�C�X�R���e�L�X�g�̃n���h�����w�肵�܂��B 
+		デバイスコンテキストのハンドルを指定します。 
 	 */
 	CConverter_WinGdi_METHOD 
 		CdDcdZoneXy LPtoDP( const CdDcdZoneXy& value , HDC hDc ) ;  
 	///@}
 };
 // ****************************************************************
-//	���ʊ֐�
+//	普通関数
 // ****************************************************************
 /**
- *	�w��̃f�o�C�X �� HDC �� 
- *	GetDeviceCaps() �̒l�̂��������L�q����
- *	��������쐬���܂��B
- *	���̕�����͉ǃe�L�X�g�ł���A
- *	�f�o�b�O�ȊO�̎g�����͂���܂���B
+ *	指定のデバイス の HDC の 
+ *	GetDeviceCaps() の値のいくつかを記述した
+ *	文字列を作成します。
+ *	この文字列は可読テキストであり、
+ *	デバッグ以外の使い道はありません。
  *
  * @param hDc [in]
- *	�ΏۂƂȂ�f�o�C�X�� HDC ���w�肵�Ă��������B
+ *	対象となるデバイスの HDC を指定してください。
  * @return
- *	�������Ԃ��܂��B
+ *	文字列を返します。
  *
- *	�ΏۂƂȂ�f�o�C�X�̑����l�́A�ȉ��̂��̂ł��B
+ *	対象となるデバイスの属性値は、以下のものです。
  *
  *	- TECHNOLOGY
  *	- HORZSIZE

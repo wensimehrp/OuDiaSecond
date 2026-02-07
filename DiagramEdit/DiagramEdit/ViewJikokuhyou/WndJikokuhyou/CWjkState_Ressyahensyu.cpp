@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍAtake-okm‚ªì¬‚µ‚½OuDia‚ğ‰ü‘¢‚µ‚½ƒ\ƒtƒgƒEƒFƒA‚Å‚·B
-‚±‚ÌƒvƒƒOƒ‰ƒ€—˜—p‚É‚Â‚¢‚Ä‚ÍAtake-okm‹LÚ‚Ì‰º‹L•¶‘‚É€‹’‚µ‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã€take-okmæ°ãŒä½œæˆã—ãŸOuDiaã‚’æ”¹é€ ã—ãŸã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ åˆ©ç”¨ã«ã¤ã„ã¦ã¯ã€take-okmæ°è¨˜è¼‰ã®ä¸‹è¨˜æ–‡æ›¸ã«æº–æ‹ ã—ã¾ã™ã€‚
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(–ó: 
+(è¨³: 
 
-	OuDia - —ñÔ•\‚ğ‚à‚Æ‚ÉAƒ_ƒCƒ„ƒOƒ‰ƒ€‚ğ•`‰æ‚·‚éWin32ƒAƒvƒŠƒP[ƒV
-ƒ‡ƒ“B
+	OuDia - åˆ—è»Šæ™‚åˆ»è¡¨ã‚’ã‚‚ã¨ã«ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚’æç”»ã™ã‚‹Win32ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·
+ãƒ§ãƒ³ã€‚
 
 Copyright (C) 2006-2017 take-okm 
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍƒtƒŠ[ƒ\ƒtƒgƒEƒFƒA‚Å‚·B‚ ‚È‚½‚Í‚±‚ê‚ğAƒtƒŠ[ƒ\ƒtƒgƒEƒFƒAà
-’c‚É‚æ‚Á‚Ä”­s‚³‚ê‚½GNU ˆê”ÊŒöO—˜—p‹–‘ø‘(ƒo[ƒWƒ‡ƒ“3‚©A‚»‚êˆÈ~‚Ìƒo[ƒWƒ‡
-ƒ“‚Ì‚¤‚¿‚Ç‚ê‚©)‚ª’è‚ß‚éğŒ‚Ì‰º‚ÅÄ”Ğ•z‚Ü‚½‚Í‰ü•Ï ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚ã‚ãªãŸã¯ã“ã‚Œã‚’ã€ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢è²¡
+å›£ã«ã‚ˆã£ã¦ç™ºè¡Œã•ã‚ŒãŸGNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸(ãƒãƒ¼ã‚¸ãƒ§ãƒ³3ã‹ã€ãã‚Œä»¥é™ã®ãƒãƒ¼ã‚¸ãƒ§
+ãƒ³ã®ã†ã¡ã©ã‚Œã‹)ãŒå®šã‚ã‚‹æ¡ä»¶ã®ä¸‹ã§å†é ’å¸ƒã¾ãŸã¯æ”¹å¤‰ ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚Í—L—p‚Å‚ ‚é‚±‚Æ‚ğŠè‚Á‚Ä”Ğ•z‚³‚ê‚Ü‚·‚ªA*‘S‚­‚Ì–³•ÛØ *‚Å‚·B
-¤‹Æ‰Â”\«‚Ì•ÛØ‚â“Á’è–Ú“I‚Ö‚Ì“K‡«‚ÍAŒ¾ŠO‚É¦‚³‚ê‚½‚à‚Ì‚à ŠÜ‚ßA‘S‚­‘¶İ
-‚µ‚Ü‚¹‚ñBÚ‚µ‚­‚ÍGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ğ‚²——‚­‚¾‚³‚¢B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯æœ‰ç”¨ã§ã‚ã‚‹ã“ã¨ã‚’é¡˜ã£ã¦é ’å¸ƒã•ã‚Œã¾ã™ãŒã€*å…¨ãã®ç„¡ä¿è¨¼ *ã§ã™ã€‚
+å•†æ¥­å¯èƒ½æ€§ã®ä¿è¨¼ã‚„ç‰¹å®šç›®çš„ã¸ã®é©åˆæ€§ã¯ã€è¨€å¤–ã«ç¤ºã•ã‚ŒãŸã‚‚ã®ã‚‚ å«ã‚ã€å…¨ãå­˜åœ¨
+ã—ã¾ã›ã‚“ã€‚è©³ã—ãã¯GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã‚’ã”è¦§ãã ã•ã„ã€‚
 
-‚ ‚È‚½‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚Æ‹¤‚ÉAGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ÌƒRƒs[‚ğˆê•” ó‚¯æ‚Á
-‚Ä‚¢‚é‚Í‚¸‚Å‚·B‚à‚µó‚¯æ‚Á‚Ä‚¢‚È‚¯‚ê‚ÎA<http://www.gnu.org/licenses/> ‚ğ
-‚²——‚­‚¾‚³‚¢B
+ã‚ãªãŸã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¨å…±ã«ã€GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã®ã‚³ãƒ”ãƒ¼ã‚’ä¸€éƒ¨ å—ã‘å–ã£
+ã¦ã„ã‚‹ã¯ãšã§ã™ã€‚ã‚‚ã—å—ã‘å–ã£ã¦ã„ãªã‘ã‚Œã°ã€<http://www.gnu.org/licenses/> ã‚’
+ã”è¦§ãã ã•ã„ã€‚
 
 )
 
-  ‰Á‚¦‚ÄA“Á•Ê‚È—áŠO‚Æ‚µ‚ÄAtake-okm ‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÌƒR[ƒh‚ğ 
+  åŠ ãˆã¦ã€ç‰¹åˆ¥ãªä¾‹å¤–ã¨ã—ã¦ã€take-okm ã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ã‚³ãƒ¼ãƒ‰ã‚’ 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ‚ ‚é‚¢‚Í "MFC Version 9.0" ‚Æ“¯‚¶ƒ‰ƒCƒZƒ“ƒX‚ª“K—p‚³‚ê‚½
-  "MFC Version 9.0" ‚Ì‰ü•Ï‚³‚ê‚½ƒo[ƒWƒ‡ƒ“)‚ÆƒŠƒ“ƒN‚µA
-  ƒŠƒ“ƒN‚³‚ê‚½—¼Ò‚ğŠÜ‚ŞŒ‹‡’˜ì•¨‚ğ”Ğ•z‚·‚é‹–‰Â‚ğ—^‚¦‚Ü‚·B
-  ‚ ‚È‚½‚Í "MFC" ˆÈŠO‚Åg‚í‚ê‚Ä‚¢‚é‚·‚×‚Ä
-  ‚ÌƒR[ƒh‚ÉŠÖ‚µ‚Ä‚Í‘S–Ê“I‚ÉGNUˆê”ÊŒöO—˜—p‹–‘øŒ_–ñ‘‚É]‚í‚È‚¯‚ê‚Î
-  ‚È‚è‚Ü‚¹‚ñB‚ ‚È‚½‚ª‚±‚Ìƒtƒ@ƒCƒ‹‚ğ‰ü•Ï‚µ‚½‚È‚ç‚ÎA‚ ‚È‚½‚Í‚±‚Ì—áŠO
-  ‚ğ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚Ìƒtƒ@ƒCƒ‹‚Éˆø‚«‘±‚«İ‚¯‚é‚±‚Æ‚à‚Å‚«‚Ü‚·‚ªA‚»
-  ‚¤‚·‚é‹`–±‚Í‚ ‚è‚Ü‚¹‚ñB‚à‚µ—áŠO‚ğİ‚¯‚½‚­‚È‚¯‚ê‚ÎA‚±‚Ì—áŠOğ€‚ğ
-  ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚©‚ç‚Ííœ‚µ‚Ä‚­‚¾‚³‚¢B)
+  (  ã‚ã‚‹ã„ã¯ "MFC Version 9.0" ã¨åŒã˜ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ãŒé©ç”¨ã•ã‚ŒãŸ
+  "MFC Version 9.0" ã®æ”¹å¤‰ã•ã‚ŒãŸãƒãƒ¼ã‚¸ãƒ§ãƒ³)ã¨ãƒªãƒ³ã‚¯ã—ã€
+  ãƒªãƒ³ã‚¯ã•ã‚ŒãŸä¸¡è€…ã‚’å«ã‚€çµåˆè‘—ä½œç‰©ã‚’é ’å¸ƒã™ã‚‹è¨±å¯ã‚’ä¸ãˆã¾ã™ã€‚
+  ã‚ãªãŸã¯ "MFC" ä»¥å¤–ã§ä½¿ã‚ã‚Œã¦ã„ã‚‹ã™ã¹ã¦
+  ã®ã‚³ãƒ¼ãƒ‰ã«é–¢ã—ã¦ã¯å…¨é¢çš„ã«GNUä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾å¥‘ç´„æ›¸ã«å¾“ã‚ãªã‘ã‚Œã°
+  ãªã‚Šã¾ã›ã‚“ã€‚ã‚ãªãŸãŒã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ”¹å¤‰ã—ãŸãªã‚‰ã°ã€ã‚ãªãŸã¯ã“ã®ä¾‹å¤–
+  ã‚’ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®ãƒ•ã‚¡ã‚¤ãƒ«ã«å¼•ãç¶šãè¨­ã‘ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ãŒã€ã
+  ã†ã™ã‚‹ç¾©å‹™ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ã‚‚ã—ä¾‹å¤–ã‚’è¨­ã‘ãŸããªã‘ã‚Œã°ã€ã“ã®ä¾‹å¤–æ¡é …ã‚’
+  ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‹ã‚‰ã¯å‰Šé™¤ã—ã¦ãã ã•ã„ã€‚)
 */
 /*
 // ****************************************************************
@@ -83,33 +83,33 @@ Copyright (C) 2006-2017 take-okm
 #include "DcDraw/CDcdLine.h"
 #include "NsOu/OuNew.h"
 #include "NsOu/dynamic_castOu.h"
-#include "NsMu\CaMui.h"
+#include "NsMuÂ¥CaMui.h"
 
 #include "CWjkState_Ressyahensyu.h"
 #include "CWjkState_Renzoku.h"
-#include "..\..\DiagramEdit.h"
-#include "..\CDlgRessyaProp.h"
-#include "..\CDlgEkiJikokuProp.h"
-#include "..\CDlgOperationProp.h"
-#include "..\CDlgModifyEkijikokuOperation2.h"
-#include "..\..\CRfEditCmdHolder.h"
-#include "..\..\DedRosenFileData\EditCmd\EditCmd.h"
+#include "..Â¥..Â¥DiagramEdit.h"
+#include "..Â¥CDlgRessyaProp.h"
+#include "..Â¥CDlgEkiJikokuProp.h"
+#include "..Â¥CDlgOperationProp.h"
+#include "..Â¥CDlgModifyEkijikokuOperation2.h"
+#include "..Â¥..Â¥CRfEditCmdHolder.h"
+#include "..Â¥..Â¥DedRosenFileDataÂ¥EditCmdÂ¥EditCmd.h"
 
-#include "..\..\entDed\CDedRessyaSoater_Ressyasyubetsu.h"
-#include "..\..\entDed\CDedRessyaSoater_Bikou.h"
-#include "..\..\entDed\CDedRessyaSoater_Ekiatsukai.h"
-#include "..\..\entDed\CDedRessyaSoater_OperationNumber.h"
-#include "..\..\entDed\CDedRessyaSoater_RessyaTrack.h"
-#include "..\..\entDed\CDedRessyaSoater_Ressyamei.h"
-#include "..\..\entDed\CDedRessyaSoater_Ressyabangou.h"
-#include "..\..\entDed\CRessyaContUnifier.h"
-#include "..\..\entDgr\CDedRessyaSoater_Transfer.h"
+#include "..Â¥..Â¥entDedÂ¥CDedRessyaSoater_Ressyasyubetsu.h"
+#include "..Â¥..Â¥entDedÂ¥CDedRessyaSoater_Bikou.h"
+#include "..Â¥..Â¥entDedÂ¥CDedRessyaSoater_Ekiatsukai.h"
+#include "..Â¥..Â¥entDedÂ¥CDedRessyaSoater_OperationNumber.h"
+#include "..Â¥..Â¥entDedÂ¥CDedRessyaSoater_RessyaTrack.h"
+#include "..Â¥..Â¥entDedÂ¥CDedRessyaSoater_Ressyamei.h"
+#include "..Â¥..Â¥entDedÂ¥CDedRessyaSoater_Ressyabangou.h"
+#include "..Â¥..Â¥entDedÂ¥CRessyaContUnifier.h"
+#include "..Â¥..Â¥entDgrÂ¥CDedRessyaSoater_Transfer.h"
 
-#include "..\..\CDlgProgress.h"
-#include "..\JikokuhyouColSpec\JikokuhyouColSpec.h"
-#include "..\..\ViewOperationTable\COperationTableView.h"
-#include "..\..\ViewEkiJikokuhyou\CEkiJikokuhyouView.h"
-#include "..\..\ViewCrossingCheck\CCrossingCheckView.h"
+#include "..Â¥..Â¥CDlgProgress.h"
+#include "..Â¥JikokuhyouColSpecÂ¥JikokuhyouColSpec.h"
+#include "..Â¥..Â¥ViewOperationTableÂ¥COperationTableView.h"
+#include "..Â¥..Â¥ViewEkiJikokuhyouÂ¥CEkiJikokuhyouView.h"
+#include "..Â¥..Â¥ViewCrossingCheckÂ¥CCrossingCheckView.h"
 
 
 
@@ -127,7 +127,7 @@ namespace ViewJikokuhyou{ namespace WndJikokuhyou{
 //	CWjkState_Ressyahensyu
 // ****************************************************************
 // --------------------------------
-//@name OnUpdate‰º¿ŠÖ”
+//@name OnUpdateä¸‹è«‹é–¢æ•°
 // --------------------------------
 void CWjkState_Ressyahensyu::OnUpdate_All() 
 {
@@ -156,8 +156,8 @@ void CWjkState_Ressyahensyu::OnUpdate_CentDedRessya(
 	//if (iBackColorPattern == 2 ||
 	//	iBackColorPattern == 4)
 	//{
-	//	//cÈEs¼–Í—l‚Ìê‡A•ÒW‰ÓŠ‚æ‚èŒã•û‚Ì–Í—l‚ª‚¸‚ê‚é‚Ì‚Å‘S—ñÔXVB
-		//ƒZƒ‹ˆÊ’u‚Ì–â‘è‚âA•\¦‘¬“x‚ÌŠÏ“_‚©‚çA‚â‚Í‚è¡‚Ü‚Å’Ê‚è‚É‚µ‚Ä‚¨‚­B
+	//	//ç¸¦ç¸ãƒ»å¸‚æ¾æ¨¡æ§˜ã®å ´åˆã€ç·¨é›†ç®‡æ‰€ã‚ˆã‚Šå¾Œæ–¹ã®æ¨¡æ§˜ãŒãšã‚Œã‚‹ã®ã§å…¨åˆ—è»Šæ›´æ–°ã€‚
+		//ã‚»ãƒ«ä½ç½®ã®å•é¡Œã‚„ã€è¡¨ç¤ºé€Ÿåº¦ã®è¦³ç‚¹ã‹ã‚‰ã€ã‚„ã¯ã‚Šä»Šã¾ã§é€šã‚Šã«ã—ã¦ãŠãã€‚
 	//	getCWndDcdGrid()->updateUISetAllRessya();
 	//	//OnUpdate_All();
 	//}
@@ -169,7 +169,7 @@ void CWjkState_Ressyahensyu::OnUpdate_CentDedRessya(
 	{
 		if (pCommand->getRessyahoukou() == GetDocument()->getRessyahoukou())
 		{
-			//	—ñÔ‚ÌƒZƒ‹‚ğ’u‚«Š·‚¦
+			//	åˆ—è»Šã®ã‚»ãƒ«ã‚’ç½®ãæ›ãˆ
 			getCWndDcdGrid()->updateUI_ReplaceRessyaAndAllOperationNumber(
 				pCommand->getIndexDst(),
 				pCommand->getSizeDst(),
@@ -184,7 +184,7 @@ void CWjkState_Ressyahensyu::OnUpdate_CentDedRessya(
 	{
 		if (pCommand->getRessyahoukou() == GetDocument()->getRessyahoukou())
 		{
-			//	—ñÔ‚ÌƒZƒ‹‚ğ’u‚«Š·‚¦
+			//	åˆ—è»Šã®ã‚»ãƒ«ã‚’ç½®ãæ›ãˆ
 			getCWndDcdGrid()->updateUI_ReplaceRessya(
 				pCommand->getIndexDst(),
 				pCommand->getSizeDst(),
@@ -203,7 +203,7 @@ void CWjkState_Ressyahensyu::OnUpdate_Operation(Ou<CRfEditCmd_Operation> pComman
 	{
 		return;
 	}
-	//	—ñÔ‚ÌƒZƒ‹‚ğ’u‚«Š·‚¦
+	//	åˆ—è»Šã®ã‚»ãƒ«ã‚’ç½®ãæ›ãˆ
 	getCWndDcdGrid()->updateUI_AllOperationNumber();
 }
 
@@ -214,18 +214,18 @@ int CWjkState_Ressyahensyu::
 {
 	int iRv = 0 ;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	
-	//iType = { 0: ‰w‚Ì•ÒW,1: —ñÔ‚Ì•ÒW,2:‰w‚Ì•ÒW ,3:‰^—p•\‚ÖˆÚ“®} 
+	//iType = { 0: é§…æ™‚åˆ»ã®ç·¨é›†,1: åˆ—è»Šã®ç·¨é›†,2:é§…ã®ç·¨é›† ,3:é‹ç”¨è¡¨ã¸ç§»å‹•} 
 	int iType = -1 ;
 	if ( iRv >= 0 && iType == -1 )
 	{
-		//	‰wƒvƒƒpƒeƒBƒ_ƒCƒAƒƒO‚Ìg—p‚ğ”»’è
+		//	é§…ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã®ä½¿ç”¨ã‚’åˆ¤å®š
 		int iResult = execCDlgEkiProp( TRUE ) ;
 		if ( iResult >= 0 )
 		{
-			iType = 2;	//	‰w‚Ì•ÒW
+			iType = 2;	//	é§…ã®ç·¨é›†
 		}
 	}
 	if ( iRv >= 0 && iType == -1 )
@@ -233,7 +233,7 @@ int CWjkState_Ressyahensyu::
 		int iResult = execCDlgEkijikokuProp( bInsert , TRUE ) ;
 		if ( iResult >= 0 )
 		{	
-			iType = 0 ;	// ‰w‚Ì•ÒW
+			iType = 0 ;	// é§…æ™‚åˆ»ã®ç·¨é›†
 		}
 	}
 	if (iRv >= 0 && iType == -1)
@@ -241,21 +241,21 @@ int CWjkState_Ressyahensyu::
 		int iResult = execCDlgOperationProp(bInsert, TRUE);
 		if (iResult >= 0)
 		{
-			iType = 4;	// ì‹Æ‚Ì•ÒW
+			iType = 4;	// ä½œæ¥­ã®ç·¨é›†
 		}
 	}
 	if ( iRv >= 0 && iType == -1 )
 	{
 		int iResult = execCDlgRessyaProp( bInsert , TRUE ) ;
 		//iResult = 
- 		//	-	1 ;	//	—ñÔ‚Ì’Ç‰ÁE‚Ü‚½‚ÍƒvƒƒpƒeƒB‚Ì•ÏX‚ğs‚¢‚Ü‚µ‚½B
- 		//	-	0 ;	//	ƒ_ƒCƒAƒƒO‚ªƒLƒƒƒ“ƒZƒ‹‚ÅI—¹‚µ‚½‚½‚ßA
- 		//		//	•ÏX‚Í”­¶‚µ‚Ü‚¹‚ñ‚Å‚µ‚½B
- 		//	-	-1 ;	//	X—ñ”Ô†‚ª•s³‚Å‚·B
- 		//	-	-2 ;	//	Y—ñ”Ô†‚ª•s³‚Å‚·B
+ 		//	-	1 ;	//	åˆ—è»Šã®è¿½åŠ ãƒ»ã¾ãŸã¯ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å¤‰æ›´ã‚’è¡Œã„ã¾ã—ãŸã€‚
+ 		//	-	0 ;	//	ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãŒã‚­ãƒ£ãƒ³ã‚»ãƒ«ã§çµ‚äº†ã—ãŸãŸã‚ã€
+ 		//		//	å¤‰æ›´ã¯ç™ºç”Ÿã—ã¾ã›ã‚“ã§ã—ãŸã€‚
+ 		//	-	-1 ;	//	Xåˆ—ç•ªå·ãŒä¸æ­£ã§ã™ã€‚
+ 		//	-	-2 ;	//	Yåˆ—ç•ªå·ãŒä¸æ­£ã§ã™ã€‚
 		if ( iResult >= 0 )
 		{	
-			iType = 1 ;	// —ñÔ‚Ì•ÒW
+			iType = 1 ;	// åˆ—è»Šã®ç·¨é›†
 		}
 		//else
 		//{
@@ -264,66 +264,66 @@ int CWjkState_Ressyahensyu::
 	}
 	if (iRv >= 0 && iType == -1)
 	{
-		//	‰^—p•\ˆÚ“®‚Ìg—p‚ğ”»’è
+		//	é‹ç”¨è¡¨ç§»å‹•ã®ä½¿ç”¨ã‚’åˆ¤å®š
 		int iResult = OnJikokuhyouOpenOperationTable_Process(TRUE);
 		if (iResult >= 0)
 		{
-			iType = 3;	//	‰w‚Ì•ÒW
+			iType = 3;	//	é§…ã®ç·¨é›†
 		}
 	}
-	//iType = { 0: ‰w‚Ì•ÒW,1: —ñÔ‚Ì•ÒW,2;‰w‚Ì•ÒW } 
+	//iType = { 0: é§…æ™‚åˆ»ã®ç·¨é›†,1: åˆ—è»Šã®ç·¨é›†,2;é§…ã®ç·¨é›† } 
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		if (iType == 4)
 		{
 			iRv = execCDlgOperationProp(bInsert, FALSE);
 		}
-		if ( iType == 2 ) //	2;‰w‚Ì•ÒW
+		if ( iType == 2 ) //	2;é§…ã®ç·¨é›†
 		{
 			iRv = execCDlgEkiProp( FALSE ) ;
 		}
-		if ( iType == 1 ) //	1: —ñÔ‚Ì•ÒW
+		if ( iType == 1 ) //	1: åˆ—è»Šã®ç·¨é›†
 		{
 			// --------------------------------
-			//	w—ñÔƒvƒƒpƒeƒBxƒ_ƒCƒAƒƒO‚ğŠJ‚­
+			//	ã€åˆ—è»Šãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã€ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã‚’é–‹ã
 			// --------------------------------
 			iRv = execCDlgRessyaProp( bInsert , FALSE ) ;
 			//iRv = 
-	 		//	-	1 ;	//	—ñÔ‚Ì’Ç‰ÁE‚Ü‚½‚ÍƒvƒƒpƒeƒB‚Ì•ÏX‚ğs‚¢‚Ü‚µ‚½B
-	 		//	-	0 ;	//	ƒ_ƒCƒAƒƒO‚ªƒLƒƒƒ“ƒZƒ‹‚ÅI—¹‚µ‚½‚½‚ßA@n
-	 		//			•ÏX‚Í”­¶‚µ‚Ü‚¹‚ñ‚Å‚µ‚½B
-	 		//	-	-1 ;	//	X—ñ”Ô†‚ª•s³‚Å‚·B
+	 		//	-	1 ;	//	åˆ—è»Šã®è¿½åŠ ãƒ»ã¾ãŸã¯ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å¤‰æ›´ã‚’è¡Œã„ã¾ã—ãŸã€‚
+	 		//	-	0 ;	//	ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãŒã‚­ãƒ£ãƒ³ã‚»ãƒ«ã§çµ‚äº†ã—ãŸãŸã‚ã€@n
+	 		//			å¤‰æ›´ã¯ç™ºç”Ÿã—ã¾ã›ã‚“ã§ã—ãŸã€‚
+	 		//	-	-1 ;	//	Xåˆ—ç•ªå·ãŒä¸æ­£ã§ã™ã€‚
 		}
-		if ( iType == 0 )	//0: ‰w‚Ì•ÒW,, } 
+		if ( iType == 0 )	//0: é§…æ™‚åˆ»ã®ç·¨é›†,, } 
 		{
 			// --------------------------------
-			//	w‰w‚ÌƒvƒƒpƒeƒBxƒ_ƒCƒAƒƒO‚ğŠJ‚­
+			//	ã€é§…æ™‚åˆ»ã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã€ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã‚’é–‹ã
 			// --------------------------------
 			iRv = execCDlgEkijikokuProp( bInsert , FALSE ) ;
 			//iRv = 
-	 		//	-	1 ;	//	—ñÔ‚Ì’Ç‰ÁE‚Ü‚½‚ÍƒvƒƒpƒeƒB‚Ì•ÏX‚ğs‚¢‚Ü‚µ‚½B
-	 		//	-	0 ;	//	ƒ_ƒCƒAƒƒO‚ªƒLƒƒƒ“ƒZƒ‹‚ÅI—¹‚µ‚½‚½‚ßA
-	 		//		//	•ÏX‚Í”­¶‚µ‚Ü‚¹‚ñ‚Å‚µ‚½B
-	 		//	-	-1 ;	//	X—ñ”Ô†‚ª•s³‚Å‚·B
-	 		//	-	-2 ;	//	Y—ñ”Ô†‚ª•s³‚Å‚·B
+	 		//	-	1 ;	//	åˆ—è»Šã®è¿½åŠ ãƒ»ã¾ãŸã¯ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å¤‰æ›´ã‚’è¡Œã„ã¾ã—ãŸã€‚
+	 		//	-	0 ;	//	ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãŒã‚­ãƒ£ãƒ³ã‚»ãƒ«ã§çµ‚äº†ã—ãŸãŸã‚ã€
+	 		//		//	å¤‰æ›´ã¯ç™ºç”Ÿã—ã¾ã›ã‚“ã§ã—ãŸã€‚
+	 		//	-	-1 ;	//	Xåˆ—ç•ªå·ãŒä¸æ­£ã§ã™ã€‚
+	 		//	-	-2 ;	//	Yåˆ—ç•ªå·ãŒä¸æ­£ã§ã™ã€‚
 		}
 		if (iType == 3)
 		{
 			iRv= OnJikokuhyouOpenOperationTable_Process(FALSE);
 			//iRv =
-			//-1 ƒtƒH[ƒJƒX‚ª—ñÔˆÈŠO‚É‚ ‚è‚Ü‚·
-			//-2 NULLó‘Ô‚Ì—ñÔ‚Å‚·B
-			//-3 ‰^—p”Ô†‚ª‚ ‚è‚Ü‚¹‚ñB
-			//-4 ‰^—p•\ƒrƒ…[‚ÌƒI[ƒvƒ“‚É¸”s‚µ‚Ü‚µ‚½
-			//-5 ‰^—pXV—}~ó‘Ô‚Å‚·
-			//-6 ƒtƒH[ƒJƒX‚ª‰^—p”Ô†—“ˆÈŠO‚É‚ ‚è‚Ü‚·
+			//-1 ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ãŒåˆ—è»Šä»¥å¤–ã«ã‚ã‚Šã¾ã™
+			//-2 NULLçŠ¶æ…‹ã®åˆ—è»Šã§ã™ã€‚
+			//-3 é‹ç”¨ç•ªå·ãŒã‚ã‚Šã¾ã›ã‚“ã€‚
+			//-4 é‹ç”¨è¡¨ãƒ“ãƒ¥ãƒ¼ã®ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ
+			//-5 é‹ç”¨æ›´æ–°æŠ‘æ­¢çŠ¶æ…‹ã§ã™
+			//-6 ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ãŒé‹ç”¨ç•ªå·æ¬„ä»¥å¤–ã«ã‚ã‚Šã¾ã™
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -336,19 +336,19 @@ execAltJikokuhyouPropDlg(bool bInsert, BOOL bQueryEnable)
 {
 	int iRv = 0;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 
-	//iType = { 0: ‰w‚Ì•ÒW,1: —ñÔ‚Ì•ÒW,2:‰w‚Ì•ÒW ,3:‰^—p•\‚ÖˆÚ“®} 
+	//iType = { 0: é§…æ™‚åˆ»ã®ç·¨é›†,1: åˆ—è»Šã®ç·¨é›†,2:é§…ã®ç·¨é›† ,3:é‹ç”¨è¡¨ã¸ç§»å‹•} 
 	int iType = -1;
 
 	if (iRv >= 0 && iType == -1)
 	{
-		//	‰wƒvƒƒpƒeƒBƒ_ƒCƒAƒƒO‚Ìg—p‚ğ”»’è
+		//	é§…ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã®ä½¿ç”¨ã‚’åˆ¤å®š
 		int iResult = execCDlgEkiProp(TRUE);
 		if (iResult >= 0)
 		{
-			iType = 2;	//	‰w‚Ì•ÒW
+			iType = 2;	//	é§…ã®ç·¨é›†
 		}
 	}
 	if (iRv >= 0 && iType == -1)
@@ -356,7 +356,7 @@ execAltJikokuhyouPropDlg(bool bInsert, BOOL bQueryEnable)
 		int iResult = execCDlgOperationProp(bInsert, TRUE);
 		if (iResult >= 0)
 		{
-			iType = 4;	// ‰wì‹Æ‚Ì•ÒW
+			iType = 4;	// é§…ä½œæ¥­ã®ç·¨é›†
 		}
 	}
 	if (iRv >= 0 && iType == -1)
@@ -364,89 +364,89 @@ execAltJikokuhyouPropDlg(bool bInsert, BOOL bQueryEnable)
 		int iResult = execCDlgEkijikokuProp(bInsert, TRUE);
 		if (iResult >= 0)
 		{
-			iType = 0;	// ‰w‚Ì•ÒW
+			iType = 0;	// é§…æ™‚åˆ»ã®ç·¨é›†
 		}
 	}
 	if (iRv >= 0 && iType == -1)
 	{
-		//	‰^—p•\ˆÚ“®‚Ìg—p‚ğ”»’è
+		//	é‹ç”¨è¡¨ç§»å‹•ã®ä½¿ç”¨ã‚’åˆ¤å®š
 		int iResult = OnJikokuhyouOpenOperationTable_Process(TRUE);
 		if (iResult >= 0)
 		{
-			iType = 3;	//	‰w‚Ì•ÒW
+			iType = 3;	//	é§…ã®ç·¨é›†
 		}
 	}
 	if (iRv >= 0 && iType == -1)
 	{
 		int iResult = execCDlgRessyaProp(bInsert, TRUE);
 		//iResult = 
-		//	-	1 ;	//	—ñÔ‚Ì’Ç‰ÁE‚Ü‚½‚ÍƒvƒƒpƒeƒB‚Ì•ÏX‚ğs‚¢‚Ü‚µ‚½B
-		//	-	0 ;	//	ƒ_ƒCƒAƒƒO‚ªƒLƒƒƒ“ƒZƒ‹‚ÅI—¹‚µ‚½‚½‚ßA
-		//		//	•ÏX‚Í”­¶‚µ‚Ü‚¹‚ñ‚Å‚µ‚½B
-		//	-	-1 ;	//	X—ñ”Ô†‚ª•s³‚Å‚·B
-		//	-	-2 ;	//	Y—ñ”Ô†‚ª•s³‚Å‚·B
+		//	-	1 ;	//	åˆ—è»Šã®è¿½åŠ ãƒ»ã¾ãŸã¯ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å¤‰æ›´ã‚’è¡Œã„ã¾ã—ãŸã€‚
+		//	-	0 ;	//	ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãŒã‚­ãƒ£ãƒ³ã‚»ãƒ«ã§çµ‚äº†ã—ãŸãŸã‚ã€
+		//		//	å¤‰æ›´ã¯ç™ºç”Ÿã—ã¾ã›ã‚“ã§ã—ãŸã€‚
+		//	-	-1 ;	//	Xåˆ—ç•ªå·ãŒä¸æ­£ã§ã™ã€‚
+		//	-	-2 ;	//	Yåˆ—ç•ªå·ãŒä¸æ­£ã§ã™ã€‚
 		if (iResult >= 0)
 		{
-			iType = 1;	// —ñÔ‚Ì•ÒW
+			iType = 1;	// åˆ—è»Šã®ç·¨é›†
 		}
 		else
 		{
 			iRv = iResult;
 		}
 	}
-	//iType = { 0: ‰w‚Ì•ÒW,1: —ñÔ‚Ì•ÒW,2;‰w‚Ì•ÒW } 
+	//iType = { 0: é§…æ™‚åˆ»ã®ç·¨é›†,1: åˆ—è»Šã®ç·¨é›†,2;é§…ã®ç·¨é›† } 
 	// ****************************************************************
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		if (iType == 4)
 		{
 			iRv = execCDlgOperationProp(bInsert, FALSE);
 		}
-		if (iType == 2) //	2;‰w‚Ì•ÒW
+		if (iType == 2) //	2;é§…ã®ç·¨é›†
 		{
 			iRv = execCDlgEkiProp(FALSE);
 		}
-		if (iType == 1) //	1: —ñÔ‚Ì•ÒW
+		if (iType == 1) //	1: åˆ—è»Šã®ç·¨é›†
 		{
 			// --------------------------------
-			//	w—ñÔƒvƒƒpƒeƒBxƒ_ƒCƒAƒƒO‚ğŠJ‚­
+			//	ã€åˆ—è»Šãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã€ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã‚’é–‹ã
 			// --------------------------------
 			iRv = execCDlgRessyaProp(bInsert, FALSE);
 			//iRv = 
-			//	-	1 ;	//	—ñÔ‚Ì’Ç‰ÁE‚Ü‚½‚ÍƒvƒƒpƒeƒB‚Ì•ÏX‚ğs‚¢‚Ü‚µ‚½B
-			//	-	0 ;	//	ƒ_ƒCƒAƒƒO‚ªƒLƒƒƒ“ƒZƒ‹‚ÅI—¹‚µ‚½‚½‚ßA@n
-			//			•ÏX‚Í”­¶‚µ‚Ü‚¹‚ñ‚Å‚µ‚½B
-			//	-	-1 ;	//	X—ñ”Ô†‚ª•s³‚Å‚·B
+			//	-	1 ;	//	åˆ—è»Šã®è¿½åŠ ãƒ»ã¾ãŸã¯ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å¤‰æ›´ã‚’è¡Œã„ã¾ã—ãŸã€‚
+			//	-	0 ;	//	ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãŒã‚­ãƒ£ãƒ³ã‚»ãƒ«ã§çµ‚äº†ã—ãŸãŸã‚ã€@n
+			//			å¤‰æ›´ã¯ç™ºç”Ÿã—ã¾ã›ã‚“ã§ã—ãŸã€‚
+			//	-	-1 ;	//	Xåˆ—ç•ªå·ãŒä¸æ­£ã§ã™ã€‚
 		}
-		if (iType == 0)	//0: ‰w‚Ì•ÒW,, } 
+		if (iType == 0)	//0: é§…æ™‚åˆ»ã®ç·¨é›†,, } 
 		{
 			// --------------------------------
-			//	w‰w‚ÌƒvƒƒpƒeƒBxƒ_ƒCƒAƒƒO‚ğŠJ‚­
+			//	ã€é§…æ™‚åˆ»ã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã€ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã‚’é–‹ã
 			// --------------------------------
 			iRv = execCDlgEkijikokuProp(bInsert, FALSE);
 			//iRv = 
-			//	-	1 ;	//	—ñÔ‚Ì’Ç‰ÁE‚Ü‚½‚ÍƒvƒƒpƒeƒB‚Ì•ÏX‚ğs‚¢‚Ü‚µ‚½B
-			//	-	0 ;	//	ƒ_ƒCƒAƒƒO‚ªƒLƒƒƒ“ƒZƒ‹‚ÅI—¹‚µ‚½‚½‚ßA
-			//		//	•ÏX‚Í”­¶‚µ‚Ü‚¹‚ñ‚Å‚µ‚½B
-			//	-	-1 ;	//	X—ñ”Ô†‚ª•s³‚Å‚·B
-			//	-	-2 ;	//	Y—ñ”Ô†‚ª•s³‚Å‚·B
+			//	-	1 ;	//	åˆ—è»Šã®è¿½åŠ ãƒ»ã¾ãŸã¯ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å¤‰æ›´ã‚’è¡Œã„ã¾ã—ãŸã€‚
+			//	-	0 ;	//	ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãŒã‚­ãƒ£ãƒ³ã‚»ãƒ«ã§çµ‚äº†ã—ãŸãŸã‚ã€
+			//		//	å¤‰æ›´ã¯ç™ºç”Ÿã—ã¾ã›ã‚“ã§ã—ãŸã€‚
+			//	-	-1 ;	//	Xåˆ—ç•ªå·ãŒä¸æ­£ã§ã™ã€‚
+			//	-	-2 ;	//	Yåˆ—ç•ªå·ãŒä¸æ­£ã§ã™ã€‚
 		}
 		if (iType == 3)
 		{
 			iRv = OnJikokuhyouOpenOperationTable_Process(FALSE);
 			//iRv =
-			//-1 ƒtƒH[ƒJƒX‚ª—ñÔˆÈŠO‚É‚ ‚è‚Ü‚·
-			//-2 NULLó‘Ô‚Ì—ñÔ‚Å‚·B
-			//-3 ‰^—p”Ô†‚ª‚ ‚è‚Ü‚¹‚ñB
-			//-4 ‰^—p•\ƒrƒ…[‚ÌƒI[ƒvƒ“‚É¸”s‚µ‚Ü‚µ‚½
-			//-5 ‰^—pXV—}~ó‘Ô‚Å‚·
-			//-6 ƒtƒH[ƒJƒX‚ª‰^—p”Ô†—“ˆÈŠO‚É‚ ‚è‚Ü‚·
+			//-1 ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ãŒåˆ—è»Šä»¥å¤–ã«ã‚ã‚Šã¾ã™
+			//-2 NULLçŠ¶æ…‹ã®åˆ—è»Šã§ã™ã€‚
+			//-3 é‹ç”¨ç•ªå·ãŒã‚ã‚Šã¾ã›ã‚“ã€‚
+			//-4 é‹ç”¨è¡¨ãƒ“ãƒ¥ãƒ¼ã®ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ
+			//-5 é‹ç”¨æ›´æ–°æŠ‘æ­¢çŠ¶æ…‹ã§ã™
+			//-6 ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ãŒé‹ç”¨ç•ªå·æ¬„ä»¥å¤–ã«ã‚ã‚Šã¾ã™
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -469,7 +469,7 @@ int CWjkState_Ressyahensyu::
 	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -484,14 +484,14 @@ int CWjkState_Ressyahensyu::
 		{
 			if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_NewItem , ppCmd ) )
 			{
-				iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+				iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 			}
 		}
 		else
 		{
 			if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Select , ppCmd ) )
 			{
-				iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+				iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 			}
 		}
 	}
@@ -508,10 +508,10 @@ int CWjkState_Ressyahensyu::
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	w—ñÔƒvƒƒpƒeƒBxƒ_ƒCƒAƒƒO‚ğŠJ‚­
+		//	ã€åˆ—è»Šãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã€ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã‚’é–‹ã
 		// --------------------------------
 		CdYColSpecCont	aYColSpecCont
 			= getCWndDcdGrid()->createYColSpecCont() ;
@@ -523,29 +523,29 @@ int CWjkState_Ressyahensyu::
 		if (aYColSpec.getColumnType()
 			== CdYColSpec::ColumnType_Ressyabangou)
 		{
-			iFocus = 1;	//	—ñÔ”Ô†
+			iFocus = 1;	//	åˆ—è»Šç•ªå·
 		}
 		else if (aYColSpec.getColumnType()
 			== CdYColSpec::ColumnType_Ressyasyubetsu)
 		{
-			iFocus = 2;	//	—ñÔí•Ê
+			iFocus = 2;	//	åˆ—è»Šç¨®åˆ¥
 		}
 		else if (aYColSpec.getColumnType()
 			== CdYColSpec::ColumnType_Ressyamei)
 		{
-			iFocus = 3;	//	—ñÔ–¼
+			iFocus = 3;	//	åˆ—è»Šå
 		}
 		else if (aYColSpec.getColumnType()
 			== CdYColSpec::ColumnType_Gousuu ||
 			aYColSpec.getColumnType()
 			== CdYColSpec::ColumnType_Gou )
 		{
-			iFocus = 4	;	//	†”
+			iFocus = 4	;	//	å·æ•°
 		}
 		else if ( aYColSpec.getColumnType() 
 			== CdYColSpec::ColumnType_Bikou )
 		{
-			iFocus = 5	;	//	”õl
+			iFocus = 5	;	//	å‚™è€ƒ
 		}
 
 		CDlgRessyaProp	aDlg( 
@@ -559,32 +559,32 @@ int CWjkState_Ressyahensyu::
 			iRv = 1 ;
 		}
 		//iRv = 
-		//	1 ;	//	—ñÔ‚Ì’Ç‰ÁE‚Ü‚½‚ÍƒvƒƒpƒeƒB‚Ì•ÏX‚ğs‚¢‚Ü‚µ‚½B
-		//	0 ;	//	ƒ_ƒCƒAƒƒO‚ªƒLƒƒƒ“ƒZƒ‹‚ÅI—¹‚µ‚½‚½‚ßA
-		//		//	•ÏX‚Í”­¶‚µ‚Ü‚¹‚ñ‚Å‚µ‚½B
+		//	1 ;	//	åˆ—è»Šã®è¿½åŠ ãƒ»ã¾ãŸã¯ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å¤‰æ›´ã‚’è¡Œã„ã¾ã—ãŸã€‚
+		//	0 ;	//	ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãŒã‚­ãƒ£ãƒ³ã‚»ãƒ«ã§çµ‚äº†ã—ãŸãŸã‚ã€
+		//		//	å¤‰æ›´ã¯ç™ºç”Ÿã—ã¾ã›ã‚“ã§ã—ãŸã€‚
 		//pCentDedRessyaSelectedCont = 
-		//	ƒ_ƒCƒAƒƒO‚ªOK‚ÅI—¹‚µ‚½ê‡‚ÍA
-		//	pCentDedRessyaSelectedCont->m_pRessyaContAdaptee ‚Ì
-		//	“à—e‚ª•ÏX‚³‚ê‚Ä‚¢‚Ü‚·B
+		//	ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãŒOKã§çµ‚äº†ã—ãŸå ´åˆã¯ã€
+		//	pCentDedRessyaSelectedCont->m_pRessyaContAdaptee ã®
+		//	å†…å®¹ãŒå¤‰æ›´ã•ã‚Œã¦ã„ã¾ã™ã€‚
 
 
 		// --------------------------------
-		//	ƒ_ƒCƒAƒƒOOK‚Ìˆ—
+		//	ãƒ€ã‚¤ã‚¢ãƒ­ã‚°OKæ™‚ã®å‡¦ç†
 		// --------------------------------
 		if ( iRv == 1 )
 		{
 			// --------------------------------
-			//	•ÒWƒRƒ}ƒ“ƒh‚ğÀs
+			//	ç·¨é›†ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œ
 			// --------------------------------
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 
 			// --------------------------------
-			//	ƒtƒH[ƒJƒXƒZƒ‹‚ğAVİ—ñÔ‚Ìn”­‰w‚É
-			//	ˆÚ‚µ‚Ü‚·B
+			//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã‚’ã€æ–°è¨­åˆ—è»Šã®å§‹ç™ºé§…ã«
+			//	ç§»ã—ã¾ã™ã€‚
 			// --------------------------------
 			if ( bInsert )
 			{
-				//	ƒtƒH[ƒJƒXƒZƒ‹‚ğAVİ—ñÔ‚ÌX—ñ‚ÉˆÚ“®
+				//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã‚’ã€æ–°è¨­åˆ—è»Šã®Xåˆ—ã«ç§»å‹•
 				CDcdGridCell*	pCell = getCWndDcdGrid()->
 					getCXDcdGrid()->calcMovedCell( 
 						getCWndDcdGrid()->getCFocus()->getFocusCell() , 
@@ -597,10 +597,10 @@ int CWjkState_Ressyahensyu::
 			}
 
 			// --------------------------------
-			//	ƒtƒH[ƒJƒXƒZƒ‹‚ÌY—ñ”Ô†‚ª
-			//	—ñÔ”Ô†E—ñÔí•ÊE—ñÔ–¼E†”E”õl‚Ì
-			//	‚¢‚¸‚ê‚©‚É‚ ‚éê‡‚¾‚¯AŸ‚ÌˆÊ’u‚ÉƒtƒH[ƒJƒX‚ğ
-			//	ˆÚ“®‚µ‚Ü‚·B
+			//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®Yåˆ—ç•ªå·ãŒ
+			//	åˆ—è»Šç•ªå·ãƒ»åˆ—è»Šç¨®åˆ¥ãƒ»åˆ—è»Šåãƒ»å·æ•°ãƒ»å‚™è€ƒã®
+			//	ã„ãšã‚Œã‹ã«ã‚ã‚‹å ´åˆã ã‘ã€æ¬¡ã®ä½ç½®ã«ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’
+			//	ç§»å‹•ã—ã¾ã™ã€‚
 			// --------------------------------
 			{
 				CdYColSpecCont	aYColSpecCont
@@ -628,7 +628,7 @@ int  CWjkState_Ressyahensyu::
 {
 	int iRv = 0 ;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	//if (iRv >= 0)
 	//{
@@ -660,15 +660,15 @@ int  CWjkState_Ressyahensyu::
 		}
 		else
 		{
-			iRv = -1 ;	//	ƒZƒ‹‚ÌˆÊ’u‚ª‰w–¼‚Å‚Í‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	ã‚»ãƒ«ã®ä½ç½®ãŒé§…åã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
-	//iEkiIndex = ‰wIndex
+	//iEkiIndex = é§…Index
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		CEkiView* pCEkiView = NULL ;
 		getCDiagramEditApp()->openCEkiDoc( &pCEkiView ) ;
@@ -677,7 +677,7 @@ int  CWjkState_Ressyahensyu::
 			pCEkiView->openCDlgEkiProp( iEkiIndex ) ;
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -699,7 +699,7 @@ execCDlgEkijikokuProp(bool bInsert, BOOL bQueryEnable)
 		ppCmd = &pCmd;
 	}
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -715,22 +715,22 @@ execCDlgEkijikokuProp(bool bInsert, BOOL bQueryEnable)
 		{
 			if (!getCWndDcdGrid()->createCmd(CWndJikokuhyou::ECreateCmd_NewItem, ppCmd))
 			{
-				iRv = -1;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+				iRv = -1;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 			}
 		}
 		else
 		{
 			if (!getCWndDcdGrid()->createCmd(CWndJikokuhyou::ECreateCmd_Select, ppCmd))
 			{
-				iRv = -1;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+				iRv = -1;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 			}
 		}
 	}
 	int iEkiOrder;
 	int iFocusItem;
-	//-0;	//	‰wˆµ
-	//-1;	//	’…
-	//-2;	//	”­
+	//-0;	//	é§…æ‰±
+	//-1;	//	ç€æ™‚åˆ»
+	//-2;	//	ç™ºæ™‚åˆ»
 	CdYColSpec	aYColSpec =
 		getCWndDcdGrid()->getYColSpecOfFocus();
 	if (iRv >= 0)
@@ -816,7 +816,7 @@ execCDlgEkijikokuProp(bool bInsert, BOOL bQueryEnable)
 				getCWndDcdGrid()->getYColSpecOfFocus());
 			if (aCdJikokuOrder.getIsNull())
 			{
-				iRv = -2;	//	Y—ñ”Ô†‚ª•s³‚Å‚·B
+				iRv = -2;	//	Yåˆ—ç•ªå·ãŒä¸æ­£ã§ã™ã€‚
 			}
 			else
 			{
@@ -826,16 +826,16 @@ execCDlgEkijikokuProp(bool bInsert, BOOL bQueryEnable)
 			}
 		}
 	}
-	//aCdJikokuOrder = •ÒW‘ÎÛ‚ÌOrder‚Å‚·
+	//aCdJikokuOrder = ç·¨é›†å¯¾è±¡ã®æ™‚åˆ»Orderã§ã™
 
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	w‰w‚ÌƒvƒƒpƒeƒBxƒ_ƒCƒAƒƒO‚ğŠJ‚­
+		//	ã€é§…æ™‚åˆ»ã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã€ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã‚’é–‹ã
 		// --------------------------------
 		bool bJikokuModify = getCWndDcdGrid()->getModifyEkijikoku() ;
 		const CentDedEkiCont* pCentDedEkiCont = getCDiagramEditDoc()->getCDedRosenFileData()
@@ -844,7 +844,7 @@ execCDlgEkijikokuProp(bool bInsert, BOOL bQueryEnable)
 			(getCWndDcdGrid()->getRessyahoukou(), iEkiOrder);
 		int iMainTrack = pCentDedEkiCont->getMuPtr()->get(iEkiIndex)->getMainTrack(getCWndDcdGrid()->getRessyahoukou());
 
-		//•ÒW‘O‰wˆµ‚¢‚ğæ“¾
+		//ç·¨é›†å‰é§…æ‰±ã„ã‚’å–å¾—
 		deque<int> iEkiAtsukaiPrev;
 		if (bInsert)
 		{
@@ -895,16 +895,16 @@ execCDlgEkijikokuProp(bool bInsert, BOOL bQueryEnable)
 			iRv = 1 ;
 		}
 		// --------------------------------
-		//	ƒ_ƒCƒAƒƒOOK‚Ìˆ—
+		//	ãƒ€ã‚¤ã‚¢ãƒ­ã‚°OKæ™‚ã®å‡¦ç†
 		// --------------------------------
 		if ( iRv == 1 )
 		{
-			//	CWndJikokuhyou ƒIƒuƒWƒFƒNƒg‚É
-			//	ŒJã‚°EŒJ‰º‚°‚Ìİ’è‚ğ”½‰f
+			//	CWndJikokuhyou ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«
+			//	ç¹°ä¸Šã’ãƒ»ç¹°ä¸‹ã’ã®è¨­å®šã‚’åæ˜ 
 			getCWndDcdGrid()->setModifyEkijikoku( bJikokuModify ) ;
 
 			// --------------------------------
-			//	•ªŠò‰wEŠÂóüEì‹Æ‚Ì’²®
+			//	åˆ†å²é§…ãƒ»ç’°çŠ¶ç·šãƒ»ä½œæ¥­ã®èª¿æ•´
 			// --------------------------------
 			const Mu<CentDedEkiCont::CdDedEki>* pMuCentDedEki =
 				pCentDedEkiCont->getMuPtr(getRessyahoukou());
@@ -921,21 +921,21 @@ execCDlgEkijikokuProp(bool bInsert, BOOL bQueryEnable)
 			}
 
 			// --------------------------------
-			//	•ÒWƒRƒ}ƒ“ƒh‚ğÀs
+			//	ç·¨é›†ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œ
 			// --------------------------------
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 
 			// --------------------------------
-			//	ƒtƒH[ƒJƒXƒZƒ‹‚ğˆÚ‚µ‚Ü‚·B
+			//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã‚’ç§»ã—ã¾ã™ã€‚
 			// --------------------------------
 			if ( bInsert )
 			{
 				// --------------------------------
-				//	ƒtƒH[ƒJƒXƒZƒ‹‚ğAVİ—ñÔ‚ÌŸ‚Ì‰w‚É
-				//	ˆÚ‚µ‚Ü‚·B
+				//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã‚’ã€æ–°è¨­åˆ—è»Šã®æ¬¡ã®é§…ã«
+				//	ç§»ã—ã¾ã™ã€‚
 				// --------------------------------
 
-				//	ƒtƒH[ƒJƒXƒZƒ‹‚ğAVİ—ñÔ‚ÌX—ñ‚ÉˆÚ“®
+				//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã‚’ã€æ–°è¨­åˆ—è»Šã®Xåˆ—ã«ç§»å‹•
 				{
 					CDcdGridCell*	pCell = getCWndDcdGrid()->
 						getCXDcdGrid()->calcMovedCell( 
@@ -946,17 +946,17 @@ execCDlgEkijikokuProp(bool bInsert, BOOL bQueryEnable)
 						getCWndDcdGrid()->getCFocus()->setFocusCell( pCell ) ;
 					}
 				}
-				//	ƒtƒH[ƒJƒXƒZƒ‹‚ğŸ‚ÖˆÚ‚µ‚Ü‚·B
+				//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã‚’æ¬¡ã¸ç§»ã—ã¾ã™ã€‚
 				moveFocusCellToNext( true ) ;	
 			}
 			else 
 			{
-				//	ƒtƒH[ƒJƒXƒZƒ‹‚ğŸ‚ÖˆÚ‚µ‚Ü‚·B
+				//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã‚’æ¬¡ã¸ç§»ã—ã¾ã™ã€‚
 				moveFocusCellToNext( true ) ;
 			}
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -976,7 +976,7 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 		ppCmd = &pCmd;
 	}
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -992,14 +992,14 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 		{
 			if (!getCWndDcdGrid()->createCmd(CWndJikokuhyou::ECreateCmd_NewItem, ppCmd))
 			{
-				iRv = -1;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+				iRv = -1;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 			}
 		}
 		else
 		{
 			if (!getCWndDcdGrid()->createCmd(CWndJikokuhyou::ECreateCmd_Focus, ppCmd))
 			{
-				iRv = -1;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+				iRv = -1;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 			}
 		}
 	}
@@ -1009,17 +1009,17 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 	bool bFocusAfter = false;
 	int iFocusIndex = -1;
 	bool bFocusChild = false;
-	//-0;	//	ì‹Æí—Ş
-	//-1;	//	ƒRƒ“ƒ{1 “üŠ·”Ôü
-	//-2;	//	ƒGƒfƒBƒbƒg1
-	//-3;	//	ƒGƒfƒBƒbƒg2
-	//-4;	//	‰^—p”Ô†
-	//-5;	//	ƒ`ƒFƒbƒN1
-	//-6;	//	í•Ê•ÏX
-	//-7;	//	ƒRƒ“ƒ{1 ‘Œ‹ˆÊ’u
-	//-8;	//	ƒRƒ“ƒ{1 ‰ğŒ‹ˆÊ’u
-	//-9;	//	ƒRƒ“ƒ{1 ˜HüŠO”­’…‰w–¼
-	//-10;	//	“üo‹æ˜AŒgƒR[ƒh
+	//-0;	//	ä½œæ¥­ç¨®é¡
+	//-1;	//	ã‚³ãƒ³ãƒœ1 å…¥æ›ç•ªç·š
+	//-2;	//	ã‚¨ãƒ‡ã‚£ãƒƒãƒˆ1
+	//-3;	//	ã‚¨ãƒ‡ã‚£ãƒƒãƒˆ2
+	//-4;	//	é‹ç”¨ç•ªå·
+	//-5;	//	ãƒã‚§ãƒƒã‚¯1
+	//-6;	//	ç¨®åˆ¥å¤‰æ›´
+	//-7;	//	ã‚³ãƒ³ãƒœ1 å¢—çµä½ç½®
+	//-8;	//	ã‚³ãƒ³ãƒœ1 è§£çµä½ç½®
+	//-9;	//	ã‚³ãƒ³ãƒœ1 è·¯ç·šå¤–ç™ºç€é§…å
+	//-10;	//	å…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰
 	CdYColSpec	aYColSpec =
 		getCWndDcdGrid()->getYColSpecOfFocus();
 	if (iRv >= 0)
@@ -1071,9 +1071,9 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 						bFocusAfter = false;
 						iFocusIndex = 0;
 						/**
-							‘O—ñÔÚ‘±Fì‹Æí—Ş(‹ó”’)
-							o‹æFì‹Æí—Ş("o‹æ")
-							˜HüŠOn”­FƒRƒ“ƒ{(˜HüŠOn”­‰w–¼)
+							å‰åˆ—è»Šæ¥ç¶šï¼šä½œæ¥­ç¨®é¡(ç©ºç™½)
+							å‡ºåŒºï¼šä½œæ¥­ç¨®é¡("å‡ºåŒº")
+							è·¯ç·šå¤–å§‹ç™ºï¼šã‚³ãƒ³ãƒœ(è·¯ç·šå¤–å§‹ç™ºé§…å)
 						*/
 						if (pCentDedRessya->getFirstOperation().getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Outer)
 						{
@@ -1089,9 +1089,9 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 						bFocusAfter = false;
 						iFocusIndex = 0;
 						/**
-							‘O—ñÔÚ‘±FƒGƒfƒBƒbƒg1(‹N“_)
-							o‹æFƒGƒfƒBƒbƒg1(o‹æ)
-							˜HüŠOn”­FƒGƒfƒBƒbƒg2(“–‰w’…)
+							å‰åˆ—è»Šæ¥ç¶šï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ1(èµ·ç‚¹æ™‚åˆ»)
+							å‡ºåŒºï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ1(å‡ºåŒºæ™‚åˆ»)
+							è·¯ç·šå¤–å§‹ç™ºï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ2(å½“é§…ç€æ™‚åˆ»)
 						*/
 						if (pCentDedRessya->getFirstOperation().getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Junction ||
 							pCentDedRessya->getFirstOperation().getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Out)
@@ -1108,9 +1108,9 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 						bFocusAfter = false;
 						iFocusIndex = 0;
 						/**
-							‘O—ñÔÚ‘±F‰^—p”Ô†(‰¼‰^—p”Ô†)
-							o‹æF‰^—p”Ô†(‰^—p”Ô†)
-							˜HüŠOn”­F‰^—p”Ô†(‰^—p”Ô†)
+							å‰åˆ—è»Šæ¥ç¶šï¼šé‹ç”¨ç•ªå·(ä»®é‹ç”¨ç•ªå·)
+							å‡ºåŒºï¼šé‹ç”¨ç•ªå·(é‹ç”¨ç•ªå·)
+							è·¯ç·šå¤–å§‹ç™ºï¼šé‹ç”¨ç•ªå·(é‹ç”¨ç•ªå·)
 						*/
 						iFocusItem = 4;
 					}
@@ -1119,9 +1119,9 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 						bFocusAfter = false;
 						iFocusIndex = 0;
 						/**
-							‘O—ñÔÚ‘±Fì‹Æí—Ş(‚È‚µ)
-							o‹æF“üo‹æ˜AŒgƒR[ƒh(“üo‹æ˜AŒgƒR[ƒh)
-							˜HüŠOn”­F“üo‹æ˜AŒgƒR[ƒh(“üo‹æ˜AŒgƒR[ƒh)
+							å‰åˆ—è»Šæ¥ç¶šï¼šä½œæ¥­ç¨®é¡(ãªã—)
+							å‡ºåŒºï¼šå…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰(å…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰)
+							è·¯ç·šå¤–å§‹ç™ºï¼šå…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰(å…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰)
 						*/
 						if (pCentDedRessya->getFirstOperation().getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Outer ||
 							pCentDedRessya->getFirstOperation().getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Out)
@@ -1135,13 +1135,13 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 					}
 					else if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_Outer_Shihatsu1)
 					{
-						//Ver2.0 ‚±‚Ì€–Ú‚ªA•ÒWƒ‚[ƒh‚É“‹Ú‚³‚ê‚é‚©‚Ç‚¤‚©‚Í–¢’è
+						//Ver2.0 ã“ã®é …ç›®ãŒã€ç·¨é›†ãƒ¢ãƒ¼ãƒ‰ã«æ­è¼‰ã•ã‚Œã‚‹ã‹ã©ã†ã‹ã¯æœªå®š
 						bFocusAfter = false;
 						iFocusIndex = 0;
 						/**
-							‘O—ñÔÚ‘±Fì‹Æí—Ş(‹ó”’)
-							o‹æFì‹Æí—Ş(‹ó”’)
-							˜HüŠOn”­FƒRƒ“ƒ{(˜HüŠOn”­‰w–¼)
+							å‰åˆ—è»Šæ¥ç¶šï¼šä½œæ¥­ç¨®é¡(ç©ºç™½)
+							å‡ºåŒºï¼šä½œæ¥­ç¨®é¡(ç©ºç™½)
+							è·¯ç·šå¤–å§‹ç™ºï¼šã‚³ãƒ³ãƒœ(è·¯ç·šå¤–å§‹ç™ºé§…å)
 						*/
 						if (pCentDedRessya->getFirstOperation().getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Outer)
 						{
@@ -1154,13 +1154,13 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 					}
 					else if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_Outer_Shihatsu2)
 					{
-						//Ver2.0 ‚±‚Ì€–Ú‚ªA•ÒWƒ‚[ƒh‚É“‹Ú‚³‚ê‚é‚©‚Ç‚¤‚©‚Í–¢’è
+						//Ver2.0 ã“ã®é …ç›®ãŒã€ç·¨é›†ãƒ¢ãƒ¼ãƒ‰ã«æ­è¼‰ã•ã‚Œã‚‹ã‹ã©ã†ã‹ã¯æœªå®š
 						bFocusAfter = false;
 						iFocusIndex = 0;
 						/**
-							‘O—ñÔÚ‘±Fì‹Æí—Ş(‹ó”’)
-							o‹æFì‹Æí—Ş(‹ó”’)
-							˜HüŠOn”­FƒGƒfƒBƒbƒg1(˜HüŠOn”­‰w”­)
+							å‰åˆ—è»Šæ¥ç¶šï¼šä½œæ¥­ç¨®é¡(ç©ºç™½)
+							å‡ºåŒºï¼šä½œæ¥­ç¨®é¡(ç©ºç™½)
+							è·¯ç·šå¤–å§‹ç™ºï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ1(è·¯ç·šå¤–å§‹ç™ºé§…ç™ºæ™‚åˆ»)
 						*/
 						if (pCentDedRessya->getFirstOperation().getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Outer)
 						{
@@ -1214,9 +1214,9 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 						iFocusIndex = pCentDedRessya->getCentDedEkiJikoku(iChakuEkiOrder).getCentDedAfterOperationCont()->size() - 1;
 						//iFocusIndex = INT_MAX;
 						/**
-							Ÿ—ñÔÚ‘±Fì‹Æí—Ş(‹ó”’)
-							“ü‹æFì‹Æí—Ş("“ü‹æ")
-							˜HüŠOI’…FƒRƒ“ƒ{(˜HüŠOI’…‰w–¼)
+							æ¬¡åˆ—è»Šæ¥ç¶šï¼šä½œæ¥­ç¨®é¡(ç©ºç™½)
+							å…¥åŒºï¼šä½œæ¥­ç¨®é¡("å…¥åŒº")
+							è·¯ç·šå¤–çµ‚ç€ï¼šã‚³ãƒ³ãƒœ(è·¯ç·šå¤–çµ‚ç€é§…å)
 						*/
 						if (pCentDedRessya->getLastOperation().getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Outer)
 						{
@@ -1233,9 +1233,9 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 						iFocusIndex = pCentDedRessya->getCentDedEkiJikoku(iChakuEkiOrder).getCentDedAfterOperationCont()->size() - 1;
 						//iFocusIndex = INT_MAX;
 						/**
-							Ÿ—ñÔÚ‘±FƒGƒfƒBƒbƒg1(I“_)
-							“ü‹æFƒGƒfƒBƒbƒg1(“ü‹æ)
-							˜HüŠOI’…FƒGƒfƒBƒbƒg1(“–‰w”­)
+							æ¬¡åˆ—è»Šæ¥ç¶šï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ1(çµ‚ç‚¹æ™‚åˆ»)
+							å…¥åŒºï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ1(å…¥åŒºæ™‚åˆ»)
+							è·¯ç·šå¤–çµ‚ç€ï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ1(å½“é§…ç™ºæ™‚åˆ»)
 						*/
 						iFocusItem = 2;
 					}
@@ -1244,9 +1244,9 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 						bFocusAfter = true;
 						iFocusIndex = pCentDedRessya->getCentDedEkiJikoku(iChakuEkiOrder).getCentDedAfterOperationCont()->size() - 1;
 						/**
-							Ÿ—ñÔÚ‘±Fì‹Æí—Ş(‚È‚µ)
-							“ü‹æF“üo‹æ˜AŒgƒR[ƒh(“üo‹æ˜AŒgƒR[ƒh)
-							˜HüŠOI’…F“üo‹æ˜AŒgƒR[ƒh(“üo‹æ˜AŒgƒR[ƒh)
+							æ¬¡åˆ—è»Šæ¥ç¶šï¼šä½œæ¥­ç¨®é¡(ãªã—)
+							å…¥åŒºï¼šå…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰(å…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰)
+							è·¯ç·šå¤–çµ‚ç€ï¼šå…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰(å…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰)
 						*/
 						if (pCentDedRessya->getLastOperation().getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Outer ||
 							pCentDedRessya->getLastOperation().getAOperation() == CentDedAfterOperation::EAOperation::AOperation_In)
@@ -1260,14 +1260,14 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 					}
 					else if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_Outer_Shuchaku1)
 					{
-						//Ver2.0 ‚±‚Ì€–Ú‚ªA•ÒWƒ‚[ƒh‚É“‹Ú‚³‚ê‚é‚©‚Ç‚¤‚©‚Í–¢’è
+						//Ver2.0 ã“ã®é …ç›®ãŒã€ç·¨é›†ãƒ¢ãƒ¼ãƒ‰ã«æ­è¼‰ã•ã‚Œã‚‹ã‹ã©ã†ã‹ã¯æœªå®š
 						bFocusAfter = true;
 						iFocusIndex = pCentDedRessya->getCentDedEkiJikoku(iChakuEkiOrder).getCentDedAfterOperationCont()->size() - 1;
 						//iFocusIndex = INT_MAX;
 						/**
-							Ÿ—ñÔÚ‘±Fì‹Æí—Ş(‹ó”’)
-							“ü‹æFì‹Æí—Ş(‹ó”’)
-							˜HüŠOI’…FƒRƒ“ƒ{(˜HüŠOI’…‰w–¼)
+							æ¬¡åˆ—è»Šæ¥ç¶šï¼šä½œæ¥­ç¨®é¡(ç©ºç™½)
+							å…¥åŒºï¼šä½œæ¥­ç¨®é¡(ç©ºç™½)
+							è·¯ç·šå¤–çµ‚ç€ï¼šã‚³ãƒ³ãƒœ(è·¯ç·šå¤–çµ‚ç€é§…å)
 						*/
 						if (pCentDedRessya->getLastOperation().getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Outer)
 						{
@@ -1280,14 +1280,14 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 					}
 					else if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_Outer_Shuchaku2)
 					{
-						//Ver2.0 ‚±‚Ì€–Ú‚ªA•ÒWƒ‚[ƒh‚É“‹Ú‚³‚ê‚é‚©‚Ç‚¤‚©‚Í–¢’è
+						//Ver2.0 ã“ã®é …ç›®ãŒã€ç·¨é›†ãƒ¢ãƒ¼ãƒ‰ã«æ­è¼‰ã•ã‚Œã‚‹ã‹ã©ã†ã‹ã¯æœªå®š
 						bFocusAfter = true;
 						iFocusIndex = pCentDedRessya->getCentDedEkiJikoku(iChakuEkiOrder).getCentDedAfterOperationCont()->size() - 1;
 						//iFocusIndex = INT_MAX;
 						/**
-							Ÿ—ñÔÚ‘±Fì‹Æí—Ş(‹ó”’)
-							“ü‹æFì‹Æí—Ş(‹ó”’)
-							˜HüŠOI’…FƒGƒfƒBƒbƒg2(˜HüŠOI’…‰w’…)
+							æ¬¡åˆ—è»Šæ¥ç¶šï¼šä½œæ¥­ç¨®é¡(ç©ºç™½)
+							å…¥åŒºï¼šä½œæ¥­ç¨®é¡(ç©ºç™½)
+							è·¯ç·šå¤–çµ‚ç€ï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ2(è·¯ç·šå¤–çµ‚ç€é§…ç€æ™‚åˆ»)
 						*/
 						if (pCentDedRessya->getLastOperation().getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Outer)
 						{
@@ -1347,8 +1347,8 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 					else if(pBeforeCont->getMuPtr()->get(0)->isFirstOperation())
 					{
 						/**
-							iTargetPos‚ÍA‘I‘ğ‚³‚ê‚½ˆÊ’u‚ÉA•\¦‚³‚ê‚Ä‚¢‚éì‹Æ‚ÌCont“àIndexB
-							‚½‚¾‚µAì‹Æ”‚ª•\¦”‚æ‚è‚à­‚È‚¢ê‡‚ÍA‹ó”’‚Ìê‡‚à‚ ‚é‚Ì‚ÅA”äŠr‚ğs‚¤
+							iTargetPosã¯ã€é¸æŠã•ã‚ŒãŸä½ç½®ã«ã€è¡¨ç¤ºã•ã‚Œã¦ã„ã‚‹ä½œæ¥­ã®Contå†…Indexã€‚
+							ãŸã ã—ã€ä½œæ¥­æ•°ãŒè¡¨ç¤ºæ•°ã‚ˆã‚Šã‚‚å°‘ãªã„å ´åˆã¯ã€ç©ºç™½ã®å ´åˆã‚‚ã‚ã‚‹ã®ã§ã€æ¯”è¼ƒã‚’è¡Œã†
 						*/
 						int iTargetPos =
 							max((pBeforeCont->size() - aEki.getJikokuhyouBeforeOperation() + aYColSpec.getOperationIndex()),
@@ -1359,10 +1359,10 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 							if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_BeforeOperation1)
 							{
 								/**
-									“üŠ·FƒRƒ“ƒ{1(“üŠ·”Ôü)
-									‘Œ‹FƒRƒ“ƒ{1(‘Œ‹ˆÊ’u)
-									‰ğŒ‹FƒRƒ“ƒ{1(‰ğŒ‹ˆÊ’uE”)
-									‰^—p”Ô†•ÏXFì‹Æí—Ş("‰^”Ô•ÏX")
+									å…¥æ›ï¼šã‚³ãƒ³ãƒœ1(å…¥æ›ç•ªç·š)
+									å¢—çµï¼šã‚³ãƒ³ãƒœ1(å¢—çµä½ç½®)
+									è§£çµï¼šã‚³ãƒ³ãƒœ1(è§£çµä½ç½®ãƒ»æ•°)
+									é‹ç”¨ç•ªå·å¤‰æ›´ï¼šä½œæ¥­ç¨®é¡("é‹ç•ªå¤‰æ›´")
 								*/
 								if (pBeforeCont->getMuPtr()->get(iTargetPos)->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Shunt)
 								{
@@ -1384,10 +1384,10 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 							else if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_BeforeOperation2)
 							{
 								/**
-									“üŠ·FƒGƒfƒBƒbƒg1(“üŠ·”­)
-									‘Œ‹FƒGƒfƒBƒbƒg1(‘Œ‹)
-									‰ğŒ‹FƒGƒfƒBƒbƒg2(‰ğŒ‹)
-									‰^—p”Ô†•ÏXF‰^—p”Ô†(‰^—p”Ô†)
+									å…¥æ›ï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ1(å…¥æ›ç™ºæ™‚åˆ»)
+									å¢—çµï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ1(å¢—çµæ™‚åˆ»)
+									è§£çµï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ2(è§£çµæ™‚åˆ»)
+									é‹ç”¨ç•ªå·å¤‰æ›´ï¼šé‹ç”¨ç•ªå·(é‹ç”¨ç•ªå·)
 								*/
 								if (pBeforeCont->getMuPtr()->get(iTargetPos)->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Release)
 								{
@@ -1413,8 +1413,8 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 					else
 					{
 						/**
-							iTargetPos‚ÍA‘I‘ğ‚³‚ê‚½ˆÊ’u‚ÉA•\¦‚³‚ê‚Ä‚¢‚éì‹Æ‚ÌCont“àIndexB
-							‚½‚¾‚µAì‹Æ”‚ª•\¦”‚æ‚è‚à­‚È‚¢ê‡‚ÍA‹ó”’‚Ìê‡‚à‚ ‚é‚Ì‚ÅA”äŠr‚ğs‚¤
+							iTargetPosã¯ã€é¸æŠã•ã‚ŒãŸä½ç½®ã«ã€è¡¨ç¤ºã•ã‚Œã¦ã„ã‚‹ä½œæ¥­ã®Contå†…Indexã€‚
+							ãŸã ã—ã€ä½œæ¥­æ•°ãŒè¡¨ç¤ºæ•°ã‚ˆã‚Šã‚‚å°‘ãªã„å ´åˆã¯ã€ç©ºç™½ã®å ´åˆã‚‚ã‚ã‚‹ã®ã§ã€æ¯”è¼ƒã‚’è¡Œã†
 						*/
 						int iTargetPos = 
 							max((pBeforeCont->size() - aEki.getJikokuhyouBeforeOperation() + aYColSpec.getOperationIndex()),
@@ -1425,10 +1425,10 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 							if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_BeforeOperation1)
 							{
 								/**
-									“üŠ·FƒRƒ“ƒ{1(“üŠ·”Ôü)
-									‘Œ‹FƒRƒ“ƒ{1(‘Œ‹ˆÊ’u)
-									‰ğŒ‹FƒRƒ“ƒ{1(‰ğŒ‹ˆÊ’uE”)
-									‰^—p”Ô†•ÏXFì‹Æí—Ş("‰^”Ô•ÏX")
+									å…¥æ›ï¼šã‚³ãƒ³ãƒœ1(å…¥æ›ç•ªç·š)
+									å¢—çµï¼šã‚³ãƒ³ãƒœ1(å¢—çµä½ç½®)
+									è§£çµï¼šã‚³ãƒ³ãƒœ1(è§£çµä½ç½®ãƒ»æ•°)
+									é‹ç”¨ç•ªå·å¤‰æ›´ï¼šä½œæ¥­ç¨®é¡("é‹ç•ªå¤‰æ›´")
 								*/
 								if (pBeforeCont->getMuPtr()->get(iTargetPos)->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Shunt)
 								{
@@ -1450,10 +1450,10 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 							else if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_BeforeOperation2)
 							{
 								/**
-									“üŠ·FƒGƒfƒBƒbƒg1(“üŠ·”­)
-									‘Œ‹FƒGƒfƒBƒbƒg1(‘Œ‹)
-									‰ğŒ‹FƒGƒfƒBƒbƒg2(‰ğŒ‹)
-									‰^—p”Ô†•ÏXF‰^—p”Ô†(‰^—p”Ô†)
+									å…¥æ›ï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ1(å…¥æ›ç™ºæ™‚åˆ»)
+									å¢—çµï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ1(å¢—çµæ™‚åˆ»)
+									è§£çµï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ2(è§£çµæ™‚åˆ»)
+									é‹ç”¨ç•ªå·å¤‰æ›´ï¼šé‹ç”¨ç•ªå·(é‹ç”¨ç•ªå·)
 								*/
 								if (pBeforeCont->getMuPtr()->get(iTargetPos)->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Release)
 								{
@@ -1524,10 +1524,10 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 						else if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_AfterOperation1)
 						{
 							/**
-								“üŠ·FƒRƒ“ƒ{1(“üŠ·”Ôü)
-								‘Œ‹FƒRƒ“ƒ{1(‘Œ‹ˆÊ’u)
-								‰ğŒ‹FƒRƒ“ƒ{1(‰ğŒ‹ˆÊ’uE”)
-								‰^—p”Ô†•ÏXFì‹Æí—Ş("‰^”Ô•ÏX")
+								å…¥æ›ï¼šã‚³ãƒ³ãƒœ1(å…¥æ›ç•ªç·š)
+								å¢—çµï¼šã‚³ãƒ³ãƒœ1(å¢—çµä½ç½®)
+								è§£çµï¼šã‚³ãƒ³ãƒœ1(è§£çµä½ç½®ãƒ»æ•°)
+								é‹ç”¨ç•ªå·å¤‰æ›´ï¼šä½œæ¥­ç¨®é¡("é‹ç•ªå¤‰æ›´")
 							*/
 							iFocusIndex = aYColSpec.getOperationIndex();
 							if (pAfterCont->getMuPtr()->get(iFocusIndex)->getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Shunt)
@@ -1550,10 +1550,10 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 						else if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_AfterOperation2)
 						{
 							/**
-								“üŠ·FƒGƒfƒBƒbƒg1(“üŠ·”­)
-								‘Œ‹FƒGƒfƒBƒbƒg1(‘Œ‹)
-								‰ğŒ‹FƒGƒfƒBƒbƒg2(‰ğŒ‹)
-								‰^—p”Ô†•ÏXF‰^—p”Ô†(‰^—p”Ô†)
+								å…¥æ›ï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ1(å…¥æ›ç™ºæ™‚åˆ»)
+								å¢—çµï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ1(å¢—çµæ™‚åˆ»)
+								è§£çµï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ2(è§£çµæ™‚åˆ»)
+								é‹ç”¨ç•ªå·å¤‰æ›´ï¼šé‹ç”¨ç•ªå·(é‹ç”¨ç•ªå·)
 							*/
 							iFocusIndex = aYColSpec.getOperationIndex();
 							if (pAfterCont->getMuPtr()->get(iFocusIndex)->getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Release)
@@ -1634,9 +1634,9 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 						if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_BeforeOperationBefore1)
 						{
 							/**
-								‘O—ñÔÚ‘±Fì‹Æí—Ş("‘OÚ‘±")
-								o‹æFì‹Æí—Ş("o‹æ")
-								˜HüŠOn”­FƒRƒ“ƒ{(˜HüŠOn”­‰w–¼)
+								å‰åˆ—è»Šæ¥ç¶šï¼šä½œæ¥­ç¨®é¡("å‰æ¥ç¶š")
+								å‡ºåŒºï¼šä½œæ¥­ç¨®é¡("å‡ºåŒº")
+								è·¯ç·šå¤–å§‹ç™ºï¼šã‚³ãƒ³ãƒœ(è·¯ç·šå¤–å§‹ç™ºé§…å)
 							*/
 							if (pFirstOperation->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Outer)
 							{
@@ -1650,9 +1650,9 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 						else if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_BeforeOperationBefore2)
 						{
 							/**
-								‘O—ñÔÚ‘±FƒGƒfƒBƒbƒg1(‹N“_)
-								o‹æFƒGƒfƒBƒbƒg1(o‹æ)
-								˜HüŠOn”­FƒGƒfƒBƒbƒg2(“–‰w’…)
+								å‰åˆ—è»Šæ¥ç¶šï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ1(èµ·ç‚¹æ™‚åˆ»)
+								å‡ºåŒºï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ1(å‡ºåŒºæ™‚åˆ»)
+								è·¯ç·šå¤–å§‹ç™ºï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ2(å½“é§…ç€æ™‚åˆ»)
 							*/
 							if (pFirstOperation->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Junction ||
 								pFirstOperation->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Out)
@@ -1667,18 +1667,18 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 						else if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_BeforeOperationBefore3)
 						{
 							/**
-								‘O—ñÔÚ‘±F‰^—p”Ô†(‰¼‰^—p”Ô†)
-								o‹æF‰^—p”Ô†(‰^—p”Ô†)
-								˜HüŠOn”­F‰^—p”Ô†(‰^—p”Ô†)
+								å‰åˆ—è»Šæ¥ç¶šï¼šé‹ç”¨ç•ªå·(ä»®é‹ç”¨ç•ªå·)
+								å‡ºåŒºï¼šé‹ç”¨ç•ªå·(é‹ç”¨ç•ªå·)
+								è·¯ç·šå¤–å§‹ç™ºï¼šé‹ç”¨ç•ªå·(é‹ç”¨ç•ªå·)
 							*/
 							iFocusItem = 4;
 						}
 						else if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_BeforeOperationBefore4)
 						{
 							/**
-								‘O—ñÔÚ‘±Fì‹Æí—Ş(‚È‚µ)
-								o‹æF“üo‹æ˜AŒgƒR[ƒh(“üo‹æ˜AŒgƒR[ƒh)
-								˜HüŠOn”­F“üo‹æ˜AŒgƒR[ƒh(“üo‹æ˜AŒgƒR[ƒh)
+								å‰åˆ—è»Šæ¥ç¶šï¼šä½œæ¥­ç¨®é¡(ãªã—)
+								å‡ºåŒºï¼šå…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰(å…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰)
+								è·¯ç·šå¤–å§‹ç™ºï¼šå…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰(å…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰)
 							*/
 							if (pFirstOperation->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Outer ||
 								pFirstOperation->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Out)
@@ -1755,9 +1755,9 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 						if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_BeforeOperationAfter1)
 						{
 							/**
-								Ÿ—ñÔÚ‘±Fì‹Æí—Ş("ŸÚ‘±")
-								“ü‹æFì‹Æí—Ş("“ü‹æ")
-								˜HüŠOI’…FƒRƒ“ƒ{(˜HüŠOI’…‰w–¼)
+								æ¬¡åˆ—è»Šæ¥ç¶šï¼šä½œæ¥­ç¨®é¡("æ¬¡æ¥ç¶š")
+								å…¥åŒºï¼šä½œæ¥­ç¨®é¡("å…¥åŒº")
+								è·¯ç·šå¤–çµ‚ç€ï¼šã‚³ãƒ³ãƒœ(è·¯ç·šå¤–çµ‚ç€é§…å)
 							*/
 							if (pLastOperation->getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Outer)
 							{
@@ -1771,18 +1771,18 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 						else if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_BeforeOperationAfter2)
 						{
 							/**
-								Ÿ—ñÔÚ‘±FƒGƒfƒBƒbƒg1(I“_)
-								“ü‹æFƒGƒfƒBƒbƒg1(“ü‹æ)
-								˜HüŠOI’…FƒGƒfƒBƒbƒg1(“–‰w”­)
+								æ¬¡åˆ—è»Šæ¥ç¶šï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ1(çµ‚ç‚¹æ™‚åˆ»)
+								å…¥åŒºï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ1(å…¥åŒºæ™‚åˆ»)
+								è·¯ç·šå¤–çµ‚ç€ï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ1(å½“é§…ç™ºæ™‚åˆ»)
 							*/
 							iFocusItem = 2;
 						}
 						else if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_BeforeOperationAfter3)
 						{
 							/**
-								Ÿ—ñÔÚ‘±Fì‹Æí—Ş(‚È‚µ)
-								“ü‹æF“üo‹æ˜AŒgƒR[ƒh(“üo‹æ˜AŒgƒR[ƒh)
-								˜HüŠOI’…F“üo‹æ˜AŒgƒR[ƒh(“üo‹æ˜AŒgƒR[ƒh)
+								æ¬¡åˆ—è»Šæ¥ç¶šï¼šä½œæ¥­ç¨®é¡(ãªã—)
+								å…¥åŒºï¼šå…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰(å…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰)
+								è·¯ç·šå¤–çµ‚ç€ï¼šå…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰(å…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰)
 							*/
 							if (pLastOperation->getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Outer ||
 								pLastOperation->getAOperation() == CentDedAfterOperation::EAOperation::AOperation_In)
@@ -1859,9 +1859,9 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 						if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_AfterOperationBefore1)
 						{
 							/**
-								‘O—ñÔÚ‘±Fì‹Æí—Ş("‘OÚ‘±")
-								o‹æFì‹Æí—Ş("o‹æ")
-								˜HüŠOn”­FƒRƒ“ƒ{(˜HüŠOn”­‰w–¼)
+								å‰åˆ—è»Šæ¥ç¶šï¼šä½œæ¥­ç¨®é¡("å‰æ¥ç¶š")
+								å‡ºåŒºï¼šä½œæ¥­ç¨®é¡("å‡ºåŒº")
+								è·¯ç·šå¤–å§‹ç™ºï¼šã‚³ãƒ³ãƒœ(è·¯ç·šå¤–å§‹ç™ºé§…å)
 							*/
 							if (pFirstOperation->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Outer)
 							{
@@ -1875,9 +1875,9 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 						else if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_AfterOperationBefore2)
 						{
 							/**
-								‘O—ñÔÚ‘±FƒGƒfƒBƒbƒg1(‹N“_)
-								o‹æFƒGƒfƒBƒbƒg1(o‹æ)
-								˜HüŠOn”­FƒGƒfƒBƒbƒg2(“–‰w’…)
+								å‰åˆ—è»Šæ¥ç¶šï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ1(èµ·ç‚¹æ™‚åˆ»)
+								å‡ºåŒºï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ1(å‡ºåŒºæ™‚åˆ»)
+								è·¯ç·šå¤–å§‹ç™ºï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ2(å½“é§…ç€æ™‚åˆ»)
 							*/
 							if (pFirstOperation->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Junction ||
 								pFirstOperation->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Out)
@@ -1892,18 +1892,18 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 						else if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_AfterOperationBefore3)
 						{
 							/**
-								‘O—ñÔÚ‘±F‰^—p”Ô†(‰¼‰^—p”Ô†)
-								o‹æF‰^—p”Ô†(‰^—p”Ô†)
-								˜HüŠOn”­F‰^—p”Ô†(‰^—p”Ô†)
+								å‰åˆ—è»Šæ¥ç¶šï¼šé‹ç”¨ç•ªå·(ä»®é‹ç”¨ç•ªå·)
+								å‡ºåŒºï¼šé‹ç”¨ç•ªå·(é‹ç”¨ç•ªå·)
+								è·¯ç·šå¤–å§‹ç™ºï¼šé‹ç”¨ç•ªå·(é‹ç”¨ç•ªå·)
 							*/
 							iFocusItem = 4;
 						}
 						else if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_AfterOperationBefore4)
 						{
 							/**
-								‘O—ñÔÚ‘±Fì‹Æí—Ş(‚È‚µ)
-								o‹æF“üo‹æ˜AŒgƒR[ƒh(“üo‹æ˜AŒgƒR[ƒh)
-								˜HüŠOn”­F“üo‹æ˜AŒgƒR[ƒh(“üo‹æ˜AŒgƒR[ƒh)
+								å‰åˆ—è»Šæ¥ç¶šï¼šä½œæ¥­ç¨®é¡(ãªã—)
+								å‡ºåŒºï¼šå…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰(å…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰)
+								è·¯ç·šå¤–å§‹ç™ºï¼šå…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰(å…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰)
 							*/
 							if (pFirstOperation->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Outer ||
 								pFirstOperation->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Out)
@@ -1980,9 +1980,9 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 						if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_AfterOperationAfter1)
 						{
 							/**
-								Ÿ—ñÔÚ‘±Fì‹Æí—Ş("ŸÚ‘±")
-								“ü‹æFì‹Æí—Ş("“ü‹æ")
-								˜HüŠOI’…FƒRƒ“ƒ{(˜HüŠOI’…‰w–¼)
+								æ¬¡åˆ—è»Šæ¥ç¶šï¼šä½œæ¥­ç¨®é¡("æ¬¡æ¥ç¶š")
+								å…¥åŒºï¼šä½œæ¥­ç¨®é¡("å…¥åŒº")
+								è·¯ç·šå¤–çµ‚ç€ï¼šã‚³ãƒ³ãƒœ(è·¯ç·šå¤–çµ‚ç€é§…å)
 							*/
 							if (pLastOperation->getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Outer)
 							{
@@ -1996,18 +1996,18 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 						else if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_AfterOperationAfter2)
 						{
 							/**
-								Ÿ—ñÔÚ‘±FƒGƒfƒBƒbƒg1(I“_)
-								“ü‹æFƒGƒfƒBƒbƒg1(“ü‹æ)
-								˜HüŠOI’…FƒGƒfƒBƒbƒg1(“–‰w”­)
+								æ¬¡åˆ—è»Šæ¥ç¶šï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ1(çµ‚ç‚¹æ™‚åˆ»)
+								å…¥åŒºï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ1(å…¥åŒºæ™‚åˆ»)
+								è·¯ç·šå¤–çµ‚ç€ï¼šã‚¨ãƒ‡ã‚£ãƒƒãƒˆ1(å½“é§…ç™ºæ™‚åˆ»)
 							*/
 							iFocusItem = 2;
 						}
 						else if (aYColSpec.getColumnType() == CdYColSpec::ColumnType_AfterOperationAfter3)
 						{
 							/**
-								Ÿ—ñÔÚ‘±Fì‹Æí—Ş(‚È‚µ)
-								“ü‹æF“üo‹æ˜AŒgƒR[ƒh(“üo‹æ˜AŒgƒR[ƒh)
-								˜HüŠOI’…F“üo‹æ˜AŒgƒR[ƒh(“üo‹æ˜AŒgƒR[ƒh)
+								æ¬¡åˆ—è»Šæ¥ç¶šï¼šä½œæ¥­ç¨®é¡(ãªã—)
+								å…¥åŒºï¼šå…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰(å…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰)
+								è·¯ç·šå¤–çµ‚ç€ï¼šå…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰(å…¥å‡ºåŒºé€£æºã‚³ãƒ¼ãƒ‰)
 							*/
 							if (pLastOperation->getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Outer ||
 								pLastOperation->getAOperation() == CentDedAfterOperation::EAOperation::AOperation_In)
@@ -2038,7 +2038,7 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 				getCWndDcdGrid()->getYColSpecOfFocus());
 			if (aCdJikokuOrder.getIsNull())
 			{
-				iRv = -2;	//	Y—ñ”Ô†‚ª•s³‚Å‚·B
+				iRv = -2;	//	Yåˆ—ç•ªå·ãŒä¸æ­£ã§ã™ã€‚
 			}
 			else
 			{
@@ -2065,7 +2065,7 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 		pCentDedRessya = pCentDedRessyaCont->getMuPtr()->get(aCdXColSpec.getRessyaIndex());
 		if (iChakuEkiOrder == pCentDedRessya->getValidSihatsuEki())
 		{
-			//—LŒø‚Èn”­‰w‚Ì—vŒ‚ÉA‚»‚Ì‰w‚Ì”­‚ª‘¶İ‚·‚é‚±‚Æ‚ªŠÜ‚Ü‚ê‚Ä‚¢‚é‚Ì‚ÅA‚Ìƒ`ƒFƒbƒN‚Í•s—vB
+			//æœ‰åŠ¹ãªå§‹ç™ºé§…ã®è¦ä»¶ã«ã€ãã®é§…ã®ç™ºæ™‚åˆ»ãŒå­˜åœ¨ã™ã‚‹ã“ã¨ãŒå«ã¾ã‚Œã¦ã„ã‚‹ã®ã§ã€æ™‚åˆ»ã®ãƒã‚§ãƒƒã‚¯ã¯ä¸è¦ã€‚
 			iHatsuEkiOrder = iChakuEkiOrder;
 			iChakuEkiOrder = -1;
 		}
@@ -2084,11 +2084,11 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 			else/* if (aEkiJikoku.getEkiatsukai() == CentDedEkiJikoku::Ekiatsukai_Teisya)*/
 			{
 				/**
-					’âÔ‚Ìê‡A‘OŒã‚Ì‰wˆµ‚¢‚ğŠm”FB—¼‘¤‚Æ‚àŒo—R–³‚µE‰^s–³‚µ‚È‚ç–³Œø
-					•Ğ‘¤‚Ì‚İ‰^s–³‚µ‚È‚ç–³Œø
-					•Ğ‘¤‚Ì‚İŒo—R–³‚µ‚È‚çAŒo—R–³‚µ‚ğ‹²‚ñ‚ÅAŒo—R–³‚µˆÈŠO‚Ì‰w‚ğæ“¾A
-						‰wˆµ‚¢‚Ìˆê’v‹y‚Ñ‰w‚Ì—L–³“™‚ğŠm”FB
-					—¼‘¤‚Æ‚à’âÔE’Ê‰ß‚Ìê‡‚ÍA“–‰w‚É’…”­—¼‚ª—L‚é‚©‚ğƒ`ƒFƒbƒN
+					åœè»Šã®å ´åˆã€å‰å¾Œã®é§…æ‰±ã„ã‚’ç¢ºèªã€‚ä¸¡å´ã¨ã‚‚çµŒç”±ç„¡ã—ãƒ»é‹è¡Œç„¡ã—ãªã‚‰ç„¡åŠ¹
+					ç‰‡å´ã®ã¿é‹è¡Œç„¡ã—ãªã‚‰ç„¡åŠ¹
+					ç‰‡å´ã®ã¿çµŒç”±ç„¡ã—ãªã‚‰ã€çµŒç”±ç„¡ã—ã‚’æŒŸã‚“ã§ã€çµŒç”±ç„¡ã—ä»¥å¤–ã®é§…ã‚’å–å¾—ã€
+						é§…æ‰±ã„ã®ä¸€è‡´åŠã³é§…æ™‚åˆ»ã®æœ‰ç„¡ç­‰ã‚’ç¢ºèªã€‚
+					ä¸¡å´ã¨ã‚‚åœè»Šãƒ»é€šéã®å ´åˆã¯ã€å½“é§…ã«ç€ç™ºä¸¡æ™‚åˆ»ãŒæœ‰ã‚‹ã‹ã‚’ãƒã‚§ãƒƒã‚¯
 				*/
 				const CentDedEkiCont* pEkiCont = getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()->getCentDedEkiCont();
 
@@ -2097,8 +2097,8 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 					->getCentDedEkiCont()->getMuPtr(getRessyahoukou());
 				CentDedEkiCont::CdDedEki aEki = muCdDedEki->get(iChakuEkiOrder);
 				/**
-					‘OŒã‚Æ‚àisRunBetweenNextEki‚ªtrue‚Ìê‡‚ÍA
-					‰w‚ª’…”­‚Æ‚à‘¶İ‚·‚é‚±‚Æ‚ğŠm”F‚·‚éB
+					å‰å¾Œã¨ã‚‚isRunBetweenNextEkiãŒtrueã®å ´åˆã¯ã€
+					é§…æ™‚åˆ»ãŒç€ç™ºã¨ã‚‚å­˜åœ¨ã™ã‚‹ã“ã¨ã‚’ç¢ºèªã™ã‚‹ã€‚
 				*/
 				if (aEki.isHatsuChakuHyouji() && 
 					pCentDedRessya->isRunBetweenNextEki(iChakuEkiOrder - 1) &&
@@ -2107,12 +2107,12 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 					!aEkiJikoku.getHatsujikoku().isNull())
 				{
 						iHatsuEkiOrder = iChakuEkiOrder;
-						//’†ŠÔ‰w‚È‚Ì‚ÉA‘OŒã‚ÉŒo—R–³‚µE‰^s–³‚µ‚ª‚ ‚éB‚à‚µ‚­‚ÍA”­’…‚Ì‚¢‚¸‚ê‚©E—¼•û‚ª‚È‚¢
+						//ä¸­é–“é§…ãªã®ã«ã€å‰å¾Œã«çµŒç”±ç„¡ã—ãƒ»é‹è¡Œç„¡ã—ãŒã‚ã‚‹ã€‚ã‚‚ã—ãã¯ã€ç™ºç€æ™‚åˆ»ã®ã„ãšã‚Œã‹ãƒ»ä¸¡æ–¹ãŒãªã„
 				}
 				/**
-					Œã‚ë‚Ì‚İisRunBetweenNextEki‚ªtrue‚Ìê‡‚ÍA
-					‘O•û‚É‚³‚©‚Ì‚Ú‚Á‚ÄAisRunBetweenNextEki‚ªtrue‚Ì‰w‚ğ’T‚µA—¼‰w‚ª•ªŠò‰wŠÖŒW‚Ìê‡‚ÍA
-					‰wˆµ‚¢A—L–³‚ğŠm”F‚·‚éB
+					å¾Œã‚ã®ã¿isRunBetweenNextEkiãŒtrueã®å ´åˆã¯ã€
+					å‰æ–¹ã«ã•ã‹ã®ã¼ã£ã¦ã€isRunBetweenNextEkiãŒtrueã®é§…ã‚’æ¢ã—ã€ä¸¡é§…ãŒåˆ†å²é§…é–¢ä¿‚ã®å ´åˆã¯ã€
+					é§…æ‰±ã„ã€æ™‚åˆ»æœ‰ç„¡ã‚’ç¢ºèªã™ã‚‹ã€‚
 				*/
 				else if (aEki.getHatsujikokuHyouji() &&
 					!pCentDedRessya->isRunBetweenNextEki(iChakuEkiOrder - 1) &&
@@ -2128,7 +2128,7 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 					}
 					if (iRv >= 0)
 					{
-						//‰wˆµ‚¢‚¨‚æ‚ÑğŒ‚Ìƒ`ƒFƒbƒN‚É“ü‚é
+						//é§…æ‰±ã„ãŠã‚ˆã³æ™‚åˆ»æ¡ä»¶ã®ãƒã‚§ãƒƒã‚¯ã«å…¥ã‚‹
 						CentDedEkiJikoku aEkiJikokuChaku = pCentDedRessya->getCentDedEkiJikoku(iChakuEkiOrder);
 						CentDedEkiCont::CdDedEki aEkiChaku = muCdDedEki->get(iChakuEkiOrder);
 						if (aEkiChaku.getChakujikokuHyouji()&&
@@ -2139,16 +2139,16 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 						}
 						else
 						{
-							//ŠîŠ²‰w‚Ì‰wˆµ‚¢‚ª”­‘¤‚Æˆê’v‚µ‚È‚¢A‚à‚µ‚­‚Í’…‚ª–³‚¢B
+							//åŸºå¹¹é§…ã®é§…æ‰±ã„ãŒç™ºå´ã¨ä¸€è‡´ã—ãªã„ã€ã‚‚ã—ãã¯ç€æ™‚åˆ»ãŒç„¡ã„ã€‚
 							iRv = -202;
 						}
 
 					}
 				}
 				/**
-					‘O‚Ì‚İisRunBetweenNextEki‚ªtrue‚Ìê‡‚ÍA
-					Œã•û‚Éi‚ñ‚ÅAisRunBetweenNextEki‚ªtrue‚Ì‰w‚ğ’T‚µA—¼‰w‚ª•ªŠò‰wŠÖŒW‚Ìê‡‚ÍA
-					‰wˆµ‚¢A—L–³‚ğŠm”F‚·‚éB
+					å‰ã®ã¿isRunBetweenNextEkiãŒtrueã®å ´åˆã¯ã€
+					å¾Œæ–¹ã«é€²ã‚“ã§ã€isRunBetweenNextEkiãŒtrueã®é§…ã‚’æ¢ã—ã€ä¸¡é§…ãŒåˆ†å²é§…é–¢ä¿‚ã®å ´åˆã¯ã€
+					é§…æ‰±ã„ã€æ™‚åˆ»æœ‰ç„¡ã‚’ç¢ºèªã™ã‚‹ã€‚
 				*/
 				else if (aEki.getChakujikokuHyouji() &&
 					pCentDedRessya->isRunBetweenNextEki(iChakuEkiOrder - 1) &&
@@ -2163,7 +2163,7 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 					}
 					if (iRv >= 0)
 					{
-						//‰wˆµ‚¢‚¨‚æ‚ÑğŒ‚Ìƒ`ƒFƒbƒN‚É“ü‚é
+						//é§…æ‰±ã„ãŠã‚ˆã³æ™‚åˆ»æ¡ä»¶ã®ãƒã‚§ãƒƒã‚¯ã«å…¥ã‚‹
 						CentDedEkiJikoku aEkiJikokuHatsu = pCentDedRessya->getCentDedEkiJikoku(iHatsuEkiOrder);
 						CentDedEkiCont::CdDedEki aEkiHatsu = muCdDedEki->get(iHatsuEkiOrder);
 						if (aEkiHatsu.getHatsujikokuHyouji()&&
@@ -2174,17 +2174,17 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 						}
 						else
 						{
-							//ŠîŠ²‰w‚Ì‰wˆµ‚¢‚ª’…‘¤‚Æˆê’v‚µ‚È‚¢A‚à‚µ‚­‚Í”­‚ª–³‚¢B
+							//åŸºå¹¹é§…ã®é§…æ‰±ã„ãŒç€å´ã¨ä¸€è‡´ã—ãªã„ã€ã‚‚ã—ãã¯ç™ºæ™‚åˆ»ãŒç„¡ã„ã€‚
 							iRv = -302;
 						}
 					}
 
 				}
 				/**
-					’†ŠÔ‰w‚¾‚ª‚ªŒ‡‚¯‚Ä‚¢‚éB
-					•Ğ•û‚Ì‚İisRunBetweenNextEki‚ªtrue‚¾‚ªA‘Î‰‚·‚é‚ª–³‚¢
-					—¼•û‚Æ‚àisRunBetweenNextEki‚ªfalse
-					‚Ìê‡‚ÍAƒRƒ}ƒ“ƒh–³Œø‚Æ‚·‚é
+					ä¸­é–“é§…ã ãŒæ™‚åˆ»ãŒæ¬ ã‘ã¦ã„ã‚‹ã€‚
+					ç‰‡æ–¹ã®ã¿isRunBetweenNextEkiãŒtrueã ãŒã€å¯¾å¿œã™ã‚‹æ™‚åˆ»ãŒç„¡ã„
+					ä¸¡æ–¹ã¨ã‚‚isRunBetweenNextEkiãŒfalse
+					ã®å ´åˆã¯ã€ã‚³ãƒãƒ³ãƒ‰ç„¡åŠ¹ã¨ã™ã‚‹
 				*/
 				else
 				{
@@ -2197,16 +2197,16 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 			iRv = -30;
 		}
 	}
-	//aCdJikokuOrder = •ÒW‘ÎÛ‚ÌOrder‚Å‚·
+	//aCdJikokuOrder = ç·¨é›†å¯¾è±¡ã®æ™‚åˆ»Orderã§ã™
 
 	// ****************************************************************
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	wì‹Æ‚ÌƒvƒƒpƒeƒBxƒ_ƒCƒAƒƒO‚ğŠJ‚­
+		//	ã€ä½œæ¥­ã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã€ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã‚’é–‹ã
 		// --------------------------------
 
 		const CentDedRosen* pCentDedRosen =
@@ -2252,13 +2252,13 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 			iRv = 1;
 		}
 		// --------------------------------
-		//	ƒ_ƒCƒAƒƒOOK‚Ìˆ—
+		//	ãƒ€ã‚¤ã‚¢ãƒ­ã‚°OKæ™‚ã®å‡¦ç†
 		// --------------------------------
 		if (iRv == 1)
 		{
 
 			// --------------------------------
-			//	•ªŠò‰wEŠÂóü‚Ì’²®
+			//	åˆ†å²é§…ãƒ»ç’°çŠ¶ç·šã®èª¿æ•´
 			// --------------------------------
 			//for (int idx = 0; idx < pCmd->getCaMuiSelect()->size(); idx++)
 			//{
@@ -2269,21 +2269,21 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 			//}
 
 			// --------------------------------
-			//	•ÒWƒRƒ}ƒ“ƒh‚ğÀs
+			//	ç·¨é›†ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œ
 			// --------------------------------
 			getCDiagramEditDoc()->executeEditCmd(pCmd);
 
 			// --------------------------------
-			//	ƒtƒH[ƒJƒXƒZƒ‹‚ğˆÚ‚µ‚Ü‚·B
+			//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã‚’ç§»ã—ã¾ã™ã€‚
 			// --------------------------------
 			if (bInsert)
 			{
 				// --------------------------------
-				//	ƒtƒH[ƒJƒXƒZƒ‹‚ğAVİ—ñÔ‚ÌŸ‚Ì‰w‚É
-				//	ˆÚ‚µ‚Ü‚·B
+				//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã‚’ã€æ–°è¨­åˆ—è»Šã®æ¬¡ã®é§…ã«
+				//	ç§»ã—ã¾ã™ã€‚
 				// --------------------------------
 
-				//	ƒtƒH[ƒJƒXƒZƒ‹‚ğAVİ—ñÔ‚ÌX—ñ‚ÉˆÚ“®
+				//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã‚’ã€æ–°è¨­åˆ—è»Šã®Xåˆ—ã«ç§»å‹•
 				{
 					CDcdGridCell*	pCell = getCWndDcdGrid()->
 						getCXDcdGrid()->calcMovedCell(
@@ -2296,7 +2296,7 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 				}
 				if (m_bJikokuhyouFocusMoveRight)
 				{
-					//	ƒtƒH[ƒJƒXƒZƒ‹‚ğŸ‚ÖˆÚ‚µ‚Ü‚·B
+					//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã‚’æ¬¡ã¸ç§»ã—ã¾ã™ã€‚
 					moveFocusCellToNext(true);
 				}
 			}
@@ -2304,13 +2304,13 @@ execCDlgOperationProp(bool bInsert, BOOL bQueryEnable)
 			{
 				if (m_bJikokuhyouFocusMoveRight)
 				{
-					//	ƒtƒH[ƒJƒXƒZƒ‹‚ğŸ‚ÖˆÚ‚µ‚Ü‚·B
+					//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã‚’æ¬¡ã¸ç§»ã—ã¾ã™ã€‚
 					moveFocusCellToNext(true);
 				}
 			}
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -2336,7 +2336,7 @@ int CWjkState_Ressyahensyu::
 }
 
 // ********************************
-//	ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+//	ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 // ********************************
 CWjkState_Ressyahensyu::
 	CWjkState_Ressyahensyu( 
@@ -2346,7 +2346,7 @@ CWjkState_Ressyahensyu::
 {
 }
 CWjkState_Ressyahensyu::
-	~CWjkState_Ressyahensyu() 
+	â€¾CWjkState_Ressyahensyu() 
 {
 }
 
@@ -2354,11 +2354,11 @@ CWjkState_Ressyahensyu::
 	//	CWjkState
 	// ********************************
 		// ********************************
-		//@name ‘€ì
+		//@name æ“ä½œ
 		// ********************************
 void CWjkState_Ressyahensyu::onEnter() 
 {
-	//	‘I‘ğ”ÍˆÍ‚Ìİ’è
+	//	é¸æŠç¯„å›²ã®è¨­å®š
 	getCWndDcdGrid()->getCSelect()->setSelectMode( CSelect::SelectMode_XColumn ) ;
 
 	const CentDedRessyaCont* pCentDedRessyaCont = getCentDedRessyaCont() ;
@@ -2372,7 +2372,7 @@ void CWjkState_Ressyahensyu::onEnter()
 			) );
 	}
 
-	//	‚±‚Ìó‘Ô‚É“üê‚ÍA‘S—ñÔ‘I‘ğ‚ğ‰ğœ
+	//	ã“ã®çŠ¶æ…‹ã«å…¥å ´æ™‚ã¯ã€å…¨åˆ—è»Šé¸æŠã‚’è§£é™¤
 	getCWndDcdGrid()->clearSelect() ;
 	
 
@@ -2382,7 +2382,7 @@ void CWjkState_Ressyahensyu::onExit()
 }
 
 	// ********************************
-	//@name CView ‚©‚ç‚ÌˆÏ÷
+	//@name CView ã‹ã‚‰ã®å§”è­²
 	// ********************************
 void CWjkState_Ressyahensyu::
 	OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint)
@@ -2393,27 +2393,27 @@ void CWjkState_Ressyahensyu::
 	}
 	// --------------------------------
 	//pHint= 
-	//	pHint‚ª CRfEditCmdHolder ƒIƒuƒWƒFƒNƒg‚È‚çA
-	//	‘Î‰‚·‚é•ÒWƒRƒ}ƒ“ƒh CRfEditCmd ‚ğ•Û‚µ‚Ä‚¢‚Ü‚·B
-	//	‚±‚Ìê‡Athis ‚Í CRfEditCmd ‚Ì“à—e‚ÉÅ“K‰»‚µ‚½
-	//	XV‚ğs‚¢‚Ü‚·B
-	//	NULL‚È‚çA‘SXV‚ª—v‹‚³‚ê‚Ä‚¢‚Ü‚·B
+	//	pHintãŒ CRfEditCmdHolder ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãªã‚‰ã€
+	//	å¯¾å¿œã™ã‚‹ç·¨é›†ã‚³ãƒãƒ³ãƒ‰ CRfEditCmd ã‚’ä¿æŒã—ã¦ã„ã¾ã™ã€‚
+	//	ã“ã®å ´åˆã€this ã¯ CRfEditCmd ã®å†…å®¹ã«æœ€é©åŒ–ã—ãŸ
+	//	æ›´æ–°ã‚’è¡Œã„ã¾ã™ã€‚
+	//	NULLãªã‚‰ã€å…¨æ›´æ–°ãŒè¦æ±‚ã•ã‚Œã¦ã„ã¾ã™ã€‚
 
 
-	//	‚±‚Ìƒrƒ…[‚ª”ñƒAƒNƒeƒBƒu‚ÅA‘SXV‚ª—v‹‚³‚ê‚Ä‚¢‚éê‡‚Í
-	//	XV‚Ís‚¢‚Ü‚¹‚ñB
+	//	ã“ã®ãƒ“ãƒ¥ãƒ¼ãŒéã‚¢ã‚¯ãƒ†ã‚£ãƒ–ã§ã€å…¨æ›´æ–°ãŒè¦æ±‚ã•ã‚Œã¦ã„ã‚‹å ´åˆã¯
+	//	æ›´æ–°ã¯è¡Œã„ã¾ã›ã‚“ã€‚
 	CView *pActiveView = getCDiagramEditApp()->getCMainFrame()->
 		getMDIChildActiveView() ;
 	if ( pActiveView != getCWndDcdGrid()->GetParent() && getCWndDcdGrid()->getUpdate_All_Requested() )
 	{
-		//	‚±‚Ìƒrƒ…[‚ª”ñƒAƒNƒeƒBƒu‚ÅA‘SXV‚ª—v‹‚³‚ê‚Ä‚¢‚éê‡‚Í
-		//	‚·‚×‚Ä‚ÌXV‚ğs‚¢‚Ü‚¹‚ñB
+		//	ã“ã®ãƒ“ãƒ¥ãƒ¼ãŒéã‚¢ã‚¯ãƒ†ã‚£ãƒ–ã§ã€å…¨æ›´æ–°ãŒè¦æ±‚ã•ã‚Œã¦ã„ã‚‹å ´åˆã¯
+		//	ã™ã¹ã¦ã®æ›´æ–°ã‚’è¡Œã„ã¾ã›ã‚“ã€‚
 	}
 	else
 	{
 		bool bUpdateComplete = false ;
 		// --------------------------------
-		//	CRfEditCmd ‚ÉÅ“K‰»‚³‚ê‚½XV
+		//	CRfEditCmd ã«æœ€é©åŒ–ã•ã‚ŒãŸæ›´æ–°
 		// --------------------------------
 
 		Ou<CRfEditCmd> pCmd ;
@@ -2431,16 +2431,16 @@ void CWjkState_Ressyahensyu::
 				dynamic_castOu<CRfEditCmd_Dia>( pCmd ) || 
 				dynamic_castOu<CRfEditCmd_RessyasyubetsuSwap>( pCmd )) 
 			{
-				//	‚±‚Ìƒrƒ…[‚ÍA
-				//		ƒRƒƒ“ƒg‚Ì•ÏX
-				//		ƒ_ƒCƒ„‚Ì•ÏX
-				//		—ñÔí•Ê‚Ì“ü‘Ö
-				//	‚Ìê‡‚ÍAXV‚ğs‚¢‚Ü‚¹‚ñB
+				//	ã“ã®ãƒ“ãƒ¥ãƒ¼ã¯ã€
+				//		ã‚³ãƒ¡ãƒ³ãƒˆã®å¤‰æ›´
+				//		ãƒ€ã‚¤ãƒ¤ã®å¤‰æ›´
+				//		åˆ—è»Šç¨®åˆ¥ã®å…¥æ›¿
+				//	ã®å ´åˆã¯ã€æ›´æ–°ã‚’è¡Œã„ã¾ã›ã‚“ã€‚
 				bUpdateComplete = true ;
 			}
 			else if ( dynamic_castOu<CRfEditCmd_Ressya>( pCmd )	) 
 			{
-				//	—ñÔ‚Ì•ÏX
+				//	åˆ—è»Šã®å¤‰æ›´
 				Ou<CRfEditCmd_Ressya>	pCommand = 
 					dynamic_castOu<CRfEditCmd_Ressya>( pCmd );
 				OnUpdate_CentDedRessya( pCommand ) ;
@@ -2448,7 +2448,7 @@ void CWjkState_Ressyahensyu::
 			}
 			else if (dynamic_castOu<CRfEditCmd_Operation>(pCmd))
 			{
-				//‰^—pXV
+				//é‹ç”¨æ›´æ–°
 				Ou<CRfEditCmd_Operation>	pCommand =
 					dynamic_castOu<CRfEditCmd_Operation>(pCmd);
 				OnUpdate_Operation(pCommand);
@@ -2457,40 +2457,40 @@ void CWjkState_Ressyahensyu::
 			else if (dynamic_castOu<CRfEditCmd_DedRosenFileDataProp>(pCmd))
 			{
 				//CRfEditCmd_DedRosenFileDataProp
-				//ƒ_ƒCƒ„‚ÌƒvƒƒpƒeƒB‚Ì•ÏX‚ÍA
-				//ƒ_ƒCƒ„•Ê–¼‹y‚Ñ‰^—p‹@”\‚Ì•ÏX‚ğŠÜ‚Ş‚Ì‚ÅAƒEƒBƒ“ƒhƒEƒ^ƒCƒgƒ‹‚ğXV‚µ‚Ü‚·
+				//ãƒ€ã‚¤ãƒ¤ã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å¤‰æ›´ã¯ã€
+				//ãƒ€ã‚¤ãƒ¤åˆ¥ååŠã³é‹ç”¨æ©Ÿèƒ½ã®å¤‰æ›´ã‚’å«ã‚€ã®ã§ã€ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚¿ã‚¤ãƒˆãƒ«ã‚’æ›´æ–°ã—ã¾ã™
 				GetDocument()->UpdateTitle();
 			}
 			else
 			{
 				//CRfEditCmd_Eki
-				//	‰w‚Ì•ÏX‚ÍA‘SXV‚ª•K—v‚Å‚·B
+				//	é§…ã®å¤‰æ›´ã¯ã€å…¨æ›´æ–°ãŒå¿…è¦ã§ã™ã€‚
 				//CRfEditCmd_Ressyasyubetsu
-				//	—ñÔí•Ê‚Ì•ÏX‚ÍA‘SXV‚ª•K—v‚Å‚·B
+				//	åˆ—è»Šç¨®åˆ¥ã®å¤‰æ›´ã¯ã€å…¨æ›´æ–°ãŒå¿…è¦ã§ã™ã€‚
 				//CRfEditCmd_DedRosenFileDataProp
-				//	  ˜Hüƒtƒ@ƒCƒ‹‚ÌƒvƒƒpƒeƒB‚Ì•ÏX‚ÍA
-				//	ƒtƒHƒ“ƒg‚Ì•Ï‰»‚ğ”º‚¤‚½‚ßA‘SXV‚ª•K—v‚Å‚·B
+				//	  è·¯ç·šãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å¤‰æ›´ã¯ã€
+				//	ãƒ•ã‚©ãƒ³ãƒˆã®å¤‰åŒ–ã‚’ä¼´ã†ãŸã‚ã€å…¨æ›´æ–°ãŒå¿…è¦ã§ã™ã€‚
 				//CRfEditCmd_Rosen
 				//CRfEditCmd_RosenFileData
-				//	‰w‚ğ•ïŠÜ‚·‚éƒIƒuƒWƒFƒNƒg‚Å‚·B‚±‚ê‚ªXV‚³‚ê‚½ê‡‚ÍA
-				//	‘SXV‚ª•K—v‚Å‚·B
+				//	é§…ã‚’åŒ…å«ã™ã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ã™ã€‚ã“ã‚ŒãŒæ›´æ–°ã•ã‚ŒãŸå ´åˆã¯ã€
+				//	å…¨æ›´æ–°ãŒå¿…è¦ã§ã™ã€‚
 				//CRfEditCmd_DiaProp
-				//	ƒ_ƒCƒ„‚ÌƒvƒƒpƒeƒB‚Ì•ÏX
-				//	”wŒiF•ÏX‚Ìê‡‚ª‚ ‚é‚Ì‚ÅA‘SXV‚ª•K—v‚Å‚·
+				//	ãƒ€ã‚¤ãƒ¤ã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å¤‰æ›´
+				//	èƒŒæ™¯è‰²å¤‰æ›´ã®å ´åˆãŒã‚ã‚‹ã®ã§ã€å…¨æ›´æ–°ãŒå¿…è¦ã§ã™
 				//CRfEditCmd_EkiTrack2
-				//@”Ôü—ªÌ‚Ì•ÏX‚Ìê‡‚ª‚ ‚é‚Ì‚ÅAXV‚ª•K—v‚Å‚·
+				//ã€€ç•ªç·šç•¥ç§°ã®å¤‰æ›´ã®å ´åˆãŒã‚ã‚‹ã®ã§ã€æ›´æ–°ãŒå¿…è¦ã§ã™
 			}
 		}
 		// --------------------------------
 		if ( !bUpdateComplete )
 		{
-			//	‘S—v‘f‚ğXV
+			//	å…¨è¦ç´ ã‚’æ›´æ–°
 			OnUpdate_All() ;
 		}
 	}
 
 	// --------------------------------
-	//	—ñ‘I‘ğ”ÍˆÍ‚ğİ’è
+	//	åˆ—é¸æŠç¯„å›²ã‚’è¨­å®š
 	// --------------------------------
 	{
 		getCWndDcdGrid()->getCSelect()->setSelectMode( CSelect::SelectMode_XColumn ) ;
@@ -2506,7 +2506,7 @@ void CWjkState_Ressyahensyu::
 }
 
 	// ********************************
-	//@name ƒƒbƒZ[ƒWƒnƒ“ƒhƒ‰EƒRƒ}ƒ“ƒhƒnƒ“ƒhƒ‰-CWnd
+	//@name ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒãƒ³ãƒ‰ãƒ©ãƒ»ã‚³ãƒãƒ³ãƒ‰ãƒãƒ³ãƒ‰ãƒ©-CWnd
 	// ********************************
 void CWjkState_Ressyahensyu::
 	OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
@@ -2514,12 +2514,12 @@ void CWjkState_Ressyahensyu::
 	LogMsg(_T("CWjkState_Ressyahensyu::OnKeyDown %02x %d %02x") , nChar , nRepCnt , nFlags ) ;
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 
-	//	ƒtƒH[ƒJƒXƒZƒ‹‚ªV‹K—ñÔˆÊ’u‚É‚ ‚é‚Æ‚«‚ÍA
-	//	uV‹K—ñÔ‚ÌƒvƒƒpƒeƒB“ü—Í‚ğs‚¢A‚»‚ê‚ğ––”ö‚É‘}“ü‚·‚év‚Æ‚¢‚¤
-	//	“®ì‚É‚È‚è‚Ü‚·B
+	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒæ–°è¦åˆ—è»Šä½ç½®ã«ã‚ã‚‹ã¨ãã¯ã€
+	//	ã€Œæ–°è¦åˆ—è»Šã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£å…¥åŠ›ã‚’è¡Œã„ã€ãã‚Œã‚’æœ«å°¾ã«æŒ¿å…¥ã™ã‚‹ã€ã¨ã„ã†
+	//	å‹•ä½œã«ãªã‚Šã¾ã™ã€‚
 	bool bInsert = false ;
 	CdXColSpec aXColSpec = getCWndDcdGrid()->getXColSpecOfFocus() ;
 	if ( aXColSpec.getColumnType() == CdXColSpec::ColumnType_NewRessya )
@@ -2529,8 +2529,8 @@ void CWjkState_Ressyahensyu::
 
 	// ****************************************************************
 
-	//	•¶šƒL[‚ª‰Ÿ‚³‚ê‚Ä‚¢‚ÄAƒ_ƒCƒAƒƒOƒ{ƒbƒNƒX‚ªŠJ‚¢‚Ä‚¢‚È‚¢ê‡‚Í
-	//	ƒ_ƒCƒAƒƒOƒ{ƒbƒNƒX‚ğŠJ‚«‚Ü‚·B
+	//	æ–‡å­—ã‚­ãƒ¼ãŒæŠ¼ã•ã‚Œã¦ã„ã¦ã€ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãƒœãƒƒã‚¯ã‚¹ãŒé–‹ã„ã¦ã„ãªã„å ´åˆã¯
+	//	ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãƒœãƒƒã‚¯ã‚¹ã‚’é–‹ãã¾ã™ã€‚
 	if ( CKeyinputSenderToModalDlg::AnyLetterOrDigitKeyIsDown() && 
 			m_CKeyinputSenderToModalDlg.startSend() >= 0 )
 	{
@@ -2538,7 +2538,7 @@ void CWjkState_Ressyahensyu::
 		execJikokuhyouPropDlg( bInsert , FALSE ) ;
 		m_CKeyinputSenderToModalDlg.endSend() ;
 	}
-	//	‚·‚Å‚Éƒ_ƒCƒAƒƒO‚ª‹N“®’†¨ƒ_ƒCƒAƒƒOƒ{ƒbƒNƒX‚ÉƒƒbƒZ[ƒW‚ğ“]‘—
+	//	ã™ã§ã«ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãŒèµ·å‹•ä¸­â†’ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãƒœãƒƒã‚¯ã‚¹ã«ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è»¢é€
 	else
 	{
 		if ( !m_CKeyinputSenderToModalDlg.OnKeyDown( nChar , nRepCnt , nFlags ) )
@@ -2563,9 +2563,9 @@ void CWjkState_Ressyahensyu::
 void CWjkState_Ressyahensyu::
 	OnLButtonDblClk(UINT nFlags, CPoint point)
 {
-	//	ƒtƒH[ƒJƒXƒZƒ‹‚ªV‹K—ñÔˆÊ’u‚É‚ ‚é‚Æ‚«‚ÍA
-	//	uV‹K—ñÔ‚ÌƒvƒƒpƒeƒB“ü—Í‚ğs‚¢A‚»‚ê‚ğ––”ö‚É‘}“ü‚·‚év‚Æ‚¢‚¤
-	//	“®ì‚É‚È‚è‚Ü‚·B
+	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒæ–°è¦åˆ—è»Šä½ç½®ã«ã‚ã‚‹ã¨ãã¯ã€
+	//	ã€Œæ–°è¦åˆ—è»Šã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£å…¥åŠ›ã‚’è¡Œã„ã€ãã‚Œã‚’æœ«å°¾ã«æŒ¿å…¥ã™ã‚‹ã€ã¨ã„ã†
+	//	å‹•ä½œã«ãªã‚Šã¾ã™ã€‚
 	bool bInsert = false ;
 	CdXColSpec aXColSpec = getCWndDcdGrid()->getXColSpecOfFocus() ;
 	if ( aXColSpec.getColumnType() == CdXColSpec::ColumnType_NewRessya )
@@ -2607,7 +2607,7 @@ OnEditCut_Process( BOOL bQueryEnable )
 	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -2620,25 +2620,25 @@ OnEditCut_Process( BOOL bQueryEnable )
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Select , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	íœ‚³‚ê‚é—ñÔ‚ğæ“¾
+		//	å‰Šé™¤ã•ã‚Œã‚‹åˆ—è»Šã‚’å–å¾—
 		// --------------------------------
 		CentDedRessyaCont	aCentDedRessyaCont( getCentDedRessyaCont()->createEmptyCont() ) ;
 		CaMui<CentDedRessya> aCaMui( &aCentDedRessyaCont ) ;
 		aCaMui.insert( pCmd->getCaMuiSelect() ) ;
 
 		// -------------------------------- 
-		//	—ñÔ‚ğƒNƒŠƒbƒvƒ{[ƒh‚ÉŠi”[
-		//	w“\‚è•t‚¯ˆÚ“®—Ê(•b)x‚Ì’l‚ÍA‚O‚É‚µ‚Ü‚·B
+		//	åˆ—è»Šã‚’ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã«æ ¼ç´
+		//	ã€è²¼ã‚Šä»˜ã‘ç§»å‹•é‡(ç§’)ã€ã®å€¤ã¯ã€ï¼ã«ã—ã¾ã™ã€‚
 		// --------------------------------
 		getCDiagramEditDoc()->CentDedRessyaCont_To_Cliboard( 
 			aCentDedRessyaCont ) ;
@@ -2650,19 +2650,19 @@ OnEditCut_Process( BOOL bQueryEnable )
 		getCWndDcdGrid()->m_iGouPasteIdouryouPrevValue = 0;
 		
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†
 		// --------------------------------
 		{
 			pCmd->getCaMuiSelect()->erase( 0 , INT_MAX ) ;
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -2683,7 +2683,7 @@ OnEditCopy_Process( BOOL bQueryEnable )
 	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -2696,25 +2696,25 @@ OnEditCopy_Process( BOOL bQueryEnable )
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Select , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	íœ‚³‚ê‚é—ñÔ‚ğæ“¾
+		//	å‰Šé™¤ã•ã‚Œã‚‹åˆ—è»Šã‚’å–å¾—
 		// --------------------------------
 		CentDedRessyaCont	aCentDedRessyaCont( getCentDedRessyaCont()->createEmptyCont() ) ;
 		CaMui<CentDedRessya> aCaMui( &aCentDedRessyaCont ) ;
 		aCaMui.insert( pCmd->getCaMuiSelect() ) ;
 
 		// -------------------------------- 
-		//	—ñÔ‚ğƒNƒŠƒbƒvƒ{[ƒh‚ÉŠi”[
-		//	w“\‚è•t‚¯ˆÚ“®—Ê(•b)x‚Ì’l‚ÍA‚O‚É‚µ‚Ü‚·B
+		//	åˆ—è»Šã‚’ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã«æ ¼ç´
+		//	ã€è²¼ã‚Šä»˜ã‘ç§»å‹•é‡(ç§’)ã€ã®å€¤ã¯ã€ï¼ã«ã—ã¾ã™ã€‚
 		// --------------------------------
 		getCDiagramEditDoc()->CentDedRessyaCont_To_Cliboard( 
 			aCentDedRessyaCont ) ;
@@ -2726,10 +2726,10 @@ OnEditCopy_Process( BOOL bQueryEnable )
 		getCWndDcdGrid()->m_iGouPasteIdouryouPrevValue = 0;
 		
 		// -------------------------------- 
-		//	ƒtƒH[ƒJƒXƒZƒ‹‚ğA‘I‘ğ—ñÔ’†‚ÅÅ‘å‚Ì—ñÔIndex‚ÌŸˆÊ‚ÉˆÚ“®
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã‚’ã€é¸æŠåˆ—è»Šä¸­ã§æœ€å¤§ã®åˆ—è»ŠIndexã®æ¬¡ä½ã«ç§»å‹•
 		// --------------------------------
 		{
-			//	ƒtƒH[ƒJƒXƒZƒ‹‚ÌˆÚ“®‚É‚æ‚éƒZƒ‹‘I‘ğ‚ğ–³Œø‰»‚µ‚Ü‚·B
+			//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ç§»å‹•ã«ã‚ˆã‚‹ã‚»ãƒ«é¸æŠã‚’ç„¡åŠ¹åŒ–ã—ã¾ã™ã€‚
 			CPropStack	aPropStack( getCWndDcdGrid() ) ;
 			aPropStack.CSelect_setSelectMode( CSelect::SelectMode_NONE ) ;
 		
@@ -2745,7 +2745,7 @@ OnEditCopy_Process( BOOL bQueryEnable )
 					}
 				}
 			}
-			//iRessyaIndexMax = ‘I‘ğ‚³‚ê‚Ä‚¢‚é—ñÔ‚Ì‚¤‚¿AÅ‘å‚ÌIndex
+			//iRessyaIndexMax = é¸æŠã•ã‚Œã¦ã„ã‚‹åˆ—è»Šã®ã†ã¡ã€æœ€å¤§ã®Index
 			
 			int iXColumnNumber = -1 ;
 			{
@@ -2754,8 +2754,8 @@ OnEditCopy_Process( BOOL bQueryEnable )
 								CdXColSpec::ColumnType_Ressya , 
 								iRessyaIndexMax ) ) + 1 ;
 			}
-			//iXColumnNumber = ‘I‘ğ‚³‚ê‚Ä‚¢‚é—ñÔ‚Ì‚¤‚¿AÅ‘å‚ÌIndex‚Ì—ñÔ‚Ì‰E‚Ì—ñ”Ô†
-			//	‚±‚ê‚ªAŸ‚ÌƒtƒH[ƒJƒXƒZƒ‹‚Ì—ñ”Ô†‚É‚È‚è‚Ü‚·B
+			//iXColumnNumber = é¸æŠã•ã‚Œã¦ã„ã‚‹åˆ—è»Šã®ã†ã¡ã€æœ€å¤§ã®Indexã®åˆ—è»Šã®å³ã®åˆ—ç•ªå·
+			//	ã“ã‚ŒãŒã€æ¬¡ã®ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®åˆ—ç•ªå·ã«ãªã‚Šã¾ã™ã€‚
 
 			int iYColumnNmber = -1 ;
 			{
@@ -2765,7 +2765,7 @@ OnEditCopy_Process( BOOL bQueryEnable )
 					iYColumnNmber = getCWndDcdGrid()->getCXDcdGrid()->getYColumnNumberOfCell( pCDcdGridCell ) ;
 				}
 			}
-			//iYColumnNmber = Œ»İ‚ÌƒtƒH[ƒJƒXƒZƒ‹BŸ‚ÌƒtƒH[ƒJƒXƒZƒ‹‚à“¯‚¶ˆÊ’u‚É‚È‚è‚Ü‚·B
+			//iYColumnNmber = ç¾åœ¨ã®ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã€‚æ¬¡ã®ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã‚‚åŒã˜ä½ç½®ã«ãªã‚Šã¾ã™ã€‚
 
 			{
 				CDcdGridCell* pCDcdGridCellNew = getCWndDcdGrid()->getCXDcdGrid()->getCell( 
@@ -2778,7 +2778,7 @@ OnEditCopy_Process( BOOL bQueryEnable )
 		}
 
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -2799,7 +2799,7 @@ OnEditPaste_Process( BOOL bQueryEnable )
 	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -2832,7 +2832,7 @@ OnEditPaste_Process( BOOL bQueryEnable )
 		}
 		else
 		{
-			iRv = -2;	//	ƒNƒŠƒbƒvƒ{[ƒh‚Éƒf[ƒ^‚ª‚ ‚è‚Ü‚¹‚ñB
+			iRv = -2;	//	ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã«ãƒ‡ãƒ¼ã‚¿ãŒã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 
@@ -2840,28 +2840,28 @@ OnEditPaste_Process( BOOL bQueryEnable )
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_NewItem , ppCmd ) )
 		{
-			iRv = -3 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -3 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 && iType == 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒNƒŠƒbƒvƒ{[ƒh‚©‚ç—ñÔ‚ğæ“¾
+		//	ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã‹ã‚‰åˆ—è»Šã‚’å–å¾—
 		// --------------------------------
 		CentDedRessyaCont	aCentDedRessyaCont(
 			getCentDedRessyaCont()->createEmptyCont());
 		iRv = getCDiagramEditDoc()->CentDedRessyaCont_From_Cliboard(
 			&aCentDedRessyaCont);
-		//aCentDedRessyaCont = ƒNƒŠƒbƒvƒ{[ƒh“à‚Ì—ñÔ
+		//aCentDedRessyaCont = ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰å†…ã®åˆ—è»Š
 
 		if (iRv >= 0 && aCentDedRessyaCont.size() > 0)
 		{
 			// --------------------------------
-			//	“\‚è•t‚¯‚é—ñÔ‚ÉˆÚ“®—Ê‚ğ‰ÁZE”ÔüIndexA˜HüŠO”­’…‰wIndex‚Ì•â³‚ğs‚¤
+			//	è²¼ã‚Šä»˜ã‘ã‚‹åˆ—è»Šã«ç§»å‹•é‡ã‚’åŠ ç®—ãƒ»ç•ªç·šIndexã€è·¯ç·šå¤–ç™ºç€é§…Indexã®è£œæ­£ã‚’è¡Œã†
 			// --------------------------------
 			{
 				CdDedJikan	aCdDedJikan = getCWndDcdGrid()->m_jikanPasteIdouryouPrevValue +
@@ -2890,9 +2890,9 @@ OnEditPaste_Process( BOOL bQueryEnable )
 						->getCentDedRosen()->getCentDedEkiCont()->getMuPtr(getRessyahoukou());
 					for (int iEkiOrder = 0; iEkiOrder < pCentDedRessya->getCentDedEkiJikokuCount() && iEkiOrder < pCdDedEkiCont->size(); iEkiOrder++)
 					{
-						//ì‹Æ‚Ì“à—e‚ªA‰wİ’è‚É‡’v‚µ‚Ä‚¢‚é‚©‚ğƒ`ƒFƒbƒN‚µ‚Ü‚·B
-						//“üŠ·”Ôü‚ªA‰w”Ôü”“à‚Éû‚Ü‚Á‚Ä‚¢‚é‚©B˜HüŠO”­’…‰wIndex‚ªA˜HüŠO”­’…‰w”“à‚Éû‚Ü‚Á‚Ä‚¢‚é‚©B
-						//˜HüŠO”­’…‰w‚ª‚È‚¢ê‡‚ÍAì‹Æ‚ğo‹æ‚É•ÏX‚µ‚Ü‚·B
+						//ä½œæ¥­ã®å†…å®¹ãŒã€é§…è¨­å®šã«åˆè‡´ã—ã¦ã„ã‚‹ã‹ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¾ã™ã€‚
+						//å…¥æ›ç•ªç·šãŒã€é§…ç•ªç·šæ•°å†…ã«åã¾ã£ã¦ã„ã‚‹ã‹ã€‚è·¯ç·šå¤–ç™ºç€é§…IndexãŒã€è·¯ç·šå¤–ç™ºç€é§…æ•°å†…ã«åã¾ã£ã¦ã„ã‚‹ã‹ã€‚
+						//è·¯ç·šå¤–ç™ºç€é§…ãŒãªã„å ´åˆã¯ã€ä½œæ¥­ã‚’å‡ºåŒºã«å¤‰æ›´ã—ã¾ã™ã€‚
 
 						const CentDedEkiCont::CdDedEki aCdDedEki = pCdDedEkiCont->get(iEkiOrder);
 						int iEkiTrackCount = aCdDedEki.getCentDedEkiTrack2Cont().size();
@@ -2921,7 +2921,7 @@ OnEditPaste_Process( BOOL bQueryEnable )
 			//	}
 			//}
 			// --------------------------------
-			//	“\‚è•t‚¯ˆÚ“®—Ê(•b)‚ğ’Ç‰Á
+			//	è²¼ã‚Šä»˜ã‘ç§»å‹•é‡(ç§’)ã‚’è¿½åŠ 
 			// --------------------------------
 			getCWndDcdGrid()->m_jikanPasteIdouryouPrevValue +=
 				getCWndDcdGrid()->m_jikanPasteIdouryou;
@@ -2930,19 +2930,19 @@ OnEditPaste_Process( BOOL bQueryEnable )
 			getCWndDcdGrid()->m_iGouPasteIdouryouPrevValue +=
 				getCWndDcdGrid()->m_iGouPasteIdouryou;
 			// --------------------------------
-			//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW
+			//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†
 			// --------------------------------
 			{
-				//	CWndJikokuhyou::ECreateCmd_NewTrain ‚É‚æ‚Á‚Ä¶¬‚³‚ê‚½
-				//	V‹KƒAƒCƒeƒ€‚Ííœ‚µ‚Ü‚·B
+				//	CWndJikokuhyou::ECreateCmd_NewTrain ã«ã‚ˆã£ã¦ç”Ÿæˆã•ã‚ŒãŸ
+				//	æ–°è¦ã‚¢ã‚¤ãƒ†ãƒ ã¯å‰Šé™¤ã—ã¾ã™ã€‚
 				pCmd->getCaMuiSelect()->erase(0, INT_MAX);
 
-				//	ƒRƒ}ƒ“ƒh‚ÉƒNƒŠƒbƒvƒ{[ƒh‚©‚ç‚ÌƒAƒCƒeƒ€‚ğ’Ç‰Á‚µ‚Ü‚·B
+				//	ã‚³ãƒãƒ³ãƒ‰ã«ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã‹ã‚‰ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 				CaMui<CentDedRessya> aCaMui(pCmd->getCaMuiSelect());
 				aCaMui.insert(&aCentDedRessyaCont, 0, INT_MAX, 0);
 			}
 			// --------------------------------
-			//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+			//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 			// --------------------------------
 			{
 				getCDiagramEditDoc()->executeEditCmd(pCmd);
@@ -2974,7 +2974,7 @@ OnEditOperationPaste_Process(BOOL bQueryEnable)
 	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -2987,7 +2987,7 @@ OnEditOperationPaste_Process(BOOL bQueryEnable)
 	{
 		if (!getCWndDcdGrid()->createCmd(CWndJikokuhyou::ECreateCmd_Select, ppCmd))
 		{
-			iRv = -1;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	if (iRv >= 0)
@@ -2995,17 +2995,17 @@ OnEditOperationPaste_Process(BOOL bQueryEnable)
 		if (!getCDiagramEditDoc()->
 			CentDedOperation_IsClipboardFormatAvailable())
 		{
-			iRv = -2;	//	ƒNƒŠƒbƒvƒ{[ƒh‚Éƒf[ƒ^‚ª‚ ‚è‚Ü‚¹‚ñB
+			iRv = -2;	//	ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã«ãƒ‡ãƒ¼ã‚¿ãŒã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	// ****************************************************************
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒNƒŠƒbƒvƒ{[ƒh‚©‚ç‰wì‹Æ‚ğæ“¾
+		//	ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã‹ã‚‰é§…ä½œæ¥­ã‚’å–å¾—
 		// --------------------------------
 		CentDedEkiJikoku aCentDedEkiJikokuBase;
 		bool bSyubetsuChange = false;
@@ -3020,12 +3020,12 @@ OnEditOperationPaste_Process(BOOL bQueryEnable)
 			->getCentDedRosen()->getCentDedEkiCont()->size())
 		{
 			// --------------------------------
-			//	”ÔüIndexA˜HüŠO”­’…‰wIndex‚Ì•â³‚ğs‚¤
+			//	ç•ªç·šIndexã€è·¯ç·šå¤–ç™ºç€é§…Indexã®è£œæ­£ã‚’è¡Œã†
 			// --------------------------------
 
-			//ì‹Æ‚Ì“à—e‚ªA‰wİ’è‚É‡’v‚µ‚Ä‚¢‚é‚©‚ğƒ`ƒFƒbƒN‚µ‚Ü‚·B
-			//“üŠ·”Ôü‚ªA‰w”Ôü”“à‚Éû‚Ü‚Á‚Ä‚¢‚é‚©B˜HüŠO”­’…‰wIndex‚ªA˜HüŠO”­’…‰w”“à‚Éû‚Ü‚Á‚Ä‚¢‚é‚©B
-			//˜HüŠO”­’…‰w‚ª‚È‚¢ê‡‚ÍAì‹Æ‚ğo‹æ‚É•ÏX‚µ‚Ü‚·B
+			//ä½œæ¥­ã®å†…å®¹ãŒã€é§…è¨­å®šã«åˆè‡´ã—ã¦ã„ã‚‹ã‹ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¾ã™ã€‚
+			//å…¥æ›ç•ªç·šãŒã€é§…ç•ªç·šæ•°å†…ã«åã¾ã£ã¦ã„ã‚‹ã‹ã€‚è·¯ç·šå¤–ç™ºç€é§…IndexãŒã€è·¯ç·šå¤–ç™ºç€é§…æ•°å†…ã«åã¾ã£ã¦ã„ã‚‹ã‹ã€‚
+			//è·¯ç·šå¤–ç™ºç€é§…ãŒãªã„å ´åˆã¯ã€ä½œæ¥­ã‚’å‡ºåŒºã«å¤‰æ›´ã—ã¾ã™ã€‚
 			const CentDedEkiCont::CdDedEki aCdDedEki = getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()
 				->getCentDedEkiCont()->getMuPtr(getRessyahoukou())->get(iEkiOrder);
 			int iEkiTrackCount = aCdDedEki.getCentDedEkiTrack2Cont().size();
@@ -3062,23 +3062,23 @@ OnEditOperationPaste_Process(BOOL bQueryEnable)
 					{
 						aCentDedEkiJikoku.getCentDedBeforeOperationCont()->modifyOperationJikoku(iDifSecond);
 						/**
-							Œ³‚Ì‘Oì‹Æ‚ÉŠJnì‹Æ‚ª‚ ‚éê‡
-								“\‚è•t‚¯‚éì‹Æ‚ÉŠJnì‹Æ‚ª‚ ‚éê‡‚ÍAŠÛ‚²‚Æã‘‚«
-								‚È‚¢ê‡‚ÍAŒ³‚Ìì‹Æ‚ÌŠJnì‹Æ‚Ì‚İ‚ğc‚µA‘¼‚Íã‘‚«
-							Œ³‚Ì‘Oì‹Æ‚ÉŠJnì‹Æ‚ª‚È‚¢ê‡
-								“\‚è•t‚¯‚éì‹Æ‚É‚¨‚¯‚éŠJnì‹Æ‚Ì—L–³‚É‚©‚©‚í‚ç‚¸A
-								ŠÛ‚²‚Æã‘‚«‚·‚éB
-								‚à‚µAŠJnì‹Æ‚ª‚ ‚Á‚Ä‚àAadjustOperation‚Å©“®íœ‚³‚ê‚éB
+							å…ƒã®å‰ä½œæ¥­ã«é–‹å§‹ä½œæ¥­ãŒã‚ã‚‹å ´åˆ
+								è²¼ã‚Šä»˜ã‘ã‚‹ä½œæ¥­ã«é–‹å§‹ä½œæ¥­ãŒã‚ã‚‹å ´åˆã¯ã€ä¸¸ã”ã¨ä¸Šæ›¸ã
+								ãªã„å ´åˆã¯ã€å…ƒã®ä½œæ¥­ã®é–‹å§‹ä½œæ¥­ã®ã¿ã‚’æ®‹ã—ã€ä»–ã¯ä¸Šæ›¸ã
+							å…ƒã®å‰ä½œæ¥­ã«é–‹å§‹ä½œæ¥­ãŒãªã„å ´åˆ
+								è²¼ã‚Šä»˜ã‘ã‚‹ä½œæ¥­ã«ãŠã‘ã‚‹é–‹å§‹ä½œæ¥­ã®æœ‰ç„¡ã«ã‹ã‹ã‚ã‚‰ãšã€
+								ä¸¸ã”ã¨ä¸Šæ›¸ãã™ã‚‹ã€‚
+								ã‚‚ã—ã€é–‹å§‹ä½œæ¥­ãŒã‚ã£ã¦ã‚‚ã€adjustOperationã§è‡ªå‹•å‰Šé™¤ã•ã‚Œã‚‹ã€‚
 						*/
 						if (pCentDedEkiJikoku->getCentDedBeforeOperationCont()->size() > 0 &&
 							pCentDedEkiJikoku->getCentDedBeforeOperationCont()->get(0).isFirstOperation() &&
 							!aCentDedEkiJikoku.getCentDedBeforeOperationCont()->get(0).isFirstOperation())
 						{
 							/**
-								Œ³‚Ì‘Oì‹Æ‚ÉŠJnì‹Æ‚ª‚ ‚èA
-								“\‚è•t‚¯‚éì‹Æ‚ÉŠJnì‹Æ‚ª‚È‚¢ê‡B
-								Œ³‚Ìì‹Æ‚ÌŠJnì‹Æ‚Ì‚İ‚ğc‚µA‘¼‚Íã‘‚«‚·‚é‚ªA
-								Œ³‚Ìì‹Æ‚ÌŠJnì‹Æ‚ğAaCentDedEkiJikoku‚Ìæ“ª‚É‘}“ü‚µ‚Ä‚©‚çAŠÛ‚²‚Æã‘‚«‚·‚é‚Æ‚¢‚¤•û–@‚Åˆ—‚·‚éB
+								å…ƒã®å‰ä½œæ¥­ã«é–‹å§‹ä½œæ¥­ãŒã‚ã‚Šã€
+								è²¼ã‚Šä»˜ã‘ã‚‹ä½œæ¥­ã«é–‹å§‹ä½œæ¥­ãŒãªã„å ´åˆã€‚
+								å…ƒã®ä½œæ¥­ã®é–‹å§‹ä½œæ¥­ã®ã¿ã‚’æ®‹ã—ã€ä»–ã¯ä¸Šæ›¸ãã™ã‚‹ãŒã€
+								å…ƒã®ä½œæ¥­ã®é–‹å§‹ä½œæ¥­ã‚’ã€aCentDedEkiJikokuã®å…ˆé ­ã«æŒ¿å…¥ã—ã¦ã‹ã‚‰ã€ä¸¸ã”ã¨ä¸Šæ›¸ãã™ã‚‹ã¨ã„ã†æ–¹æ³•ã§å‡¦ç†ã™ã‚‹ã€‚
 
 							*/
 							aCentDedEkiJikoku.getCentDedBeforeOperationCont()->insert(
@@ -3107,23 +3107,23 @@ OnEditOperationPaste_Process(BOOL bQueryEnable)
 					{
 						aCentDedEkiJikoku.getCentDedAfterOperationCont()->modifyOperationJikoku(iDifSecond);
 						/**
-							Œ³‚ÌŒãì‹Æ‚ÉI—¹ì‹Æ‚ª‚ ‚éê‡
-								“\‚è•t‚¯‚éì‹Æ‚ÉI—¹ì‹Æ‚ª‚ ‚éê‡‚ÍAŠÛ‚²‚Æã‘‚«
-								‚È‚¢ê‡‚ÍAŒ³‚Ìì‹Æ‚ÌI—¹ì‹Æ‚Ì‚İ‚ğc‚µA‘¼‚Íã‘‚«
-							Œ³‚ÌŒãì‹Æ‚ÉI—¹ì‹Æ‚ª‚È‚¢ê‡
-								“\‚è•t‚¯‚éì‹Æ‚É‚¨‚¯‚éI—¹ì‹Æ‚Ì—L–³‚É‚©‚©‚í‚ç‚¸A
-								ŠÛ‚²‚Æã‘‚«‚·‚éB
-								‚à‚µAI—¹ì‹Æ‚ª‚ ‚Á‚Ä‚àAadjustOperation‚Å©“®íœ‚³‚ê‚éB
+							å…ƒã®å¾Œä½œæ¥­ã«çµ‚äº†ä½œæ¥­ãŒã‚ã‚‹å ´åˆ
+								è²¼ã‚Šä»˜ã‘ã‚‹ä½œæ¥­ã«çµ‚äº†ä½œæ¥­ãŒã‚ã‚‹å ´åˆã¯ã€ä¸¸ã”ã¨ä¸Šæ›¸ã
+								ãªã„å ´åˆã¯ã€å…ƒã®ä½œæ¥­ã®çµ‚äº†ä½œæ¥­ã®ã¿ã‚’æ®‹ã—ã€ä»–ã¯ä¸Šæ›¸ã
+							å…ƒã®å¾Œä½œæ¥­ã«çµ‚äº†ä½œæ¥­ãŒãªã„å ´åˆ
+								è²¼ã‚Šä»˜ã‘ã‚‹ä½œæ¥­ã«ãŠã‘ã‚‹çµ‚äº†ä½œæ¥­ã®æœ‰ç„¡ã«ã‹ã‹ã‚ã‚‰ãšã€
+								ä¸¸ã”ã¨ä¸Šæ›¸ãã™ã‚‹ã€‚
+								ã‚‚ã—ã€çµ‚äº†ä½œæ¥­ãŒã‚ã£ã¦ã‚‚ã€adjustOperationã§è‡ªå‹•å‰Šé™¤ã•ã‚Œã‚‹ã€‚
 						*/
 						if (pCentDedEkiJikoku->getCentDedAfterOperationCont()->size() > 0 &&
 							pCentDedEkiJikoku->getCentDedAfterOperationCont()->get(INT_MAX).isLastOperation() &&
 							!aCentDedEkiJikoku.getCentDedAfterOperationCont()->get(INT_MAX).isLastOperation())
 						{
 							/**
-								Œ³‚ÌŒãì‹Æ‚ÉI—¹ì‹Æ‚ª‚ ‚èA
-								“\‚è•t‚¯‚éì‹Æ‚ÉI—¹ì‹Æ‚ª‚È‚¢ê‡B
-								Œ³‚Ìì‹Æ‚ÌI—¹ì‹Æ‚Ì‚İ‚ğc‚µA‘¼‚Íã‘‚«‚·‚é‚ªA
-								Œ³‚Ìì‹Æ‚ÌI—¹ì‹Æ‚ğAaCentDedEkiJikoku‚Ì––”ö‚É‘}“ü‚µ‚Ä‚©‚çAŠÛ‚²‚Æã‘‚«‚·‚é‚Æ‚¢‚¤•û–@‚Åˆ—‚·‚éB
+								å…ƒã®å¾Œä½œæ¥­ã«çµ‚äº†ä½œæ¥­ãŒã‚ã‚Šã€
+								è²¼ã‚Šä»˜ã‘ã‚‹ä½œæ¥­ã«çµ‚äº†ä½œæ¥­ãŒãªã„å ´åˆã€‚
+								å…ƒã®ä½œæ¥­ã®çµ‚äº†ä½œæ¥­ã®ã¿ã‚’æ®‹ã—ã€ä»–ã¯ä¸Šæ›¸ãã™ã‚‹ãŒã€
+								å…ƒã®ä½œæ¥­ã®çµ‚äº†ä½œæ¥­ã‚’ã€aCentDedEkiJikokuã®æœ«å°¾ã«æŒ¿å…¥ã—ã¦ã‹ã‚‰ã€ä¸¸ã”ã¨ä¸Šæ›¸ãã™ã‚‹ã¨ã„ã†æ–¹æ³•ã§å‡¦ç†ã™ã‚‹ã€‚
 
 							*/
 							aCentDedEkiJikoku.getCentDedAfterOperationCont()->insert(
@@ -3136,11 +3136,11 @@ OnEditOperationPaste_Process(BOOL bQueryEnable)
 				pCentDedRessya->adjustOperation();
 
 				/**
-					E“\‚è•t‚¯‰w‚ª—LŒøI’…‰w
-					E“\‚è•t‚¯‚éŒãì‹Æ‚Ì––”ö‚ªŸ—ñÔÚ‘±(“\‚è•t‚¯‚éì‹Æ‚ª—LŒøI’…‰w‚Ì‚à‚Ì‚¾‚Á‚½)
-					ˆÈã‚ÌğŒ‚ğ–‚½‚·ê‡‚ÍAƒNƒŠƒbƒvƒ{[ƒh‚©‚çæ“¾‚µ‚½í•Ê•ÏX‚ğ‘‚«‚ŞB
+					ãƒ»è²¼ã‚Šä»˜ã‘é§…ãŒæœ‰åŠ¹çµ‚ç€é§…
+					ãƒ»è²¼ã‚Šä»˜ã‘ã‚‹å¾Œä½œæ¥­ã®æœ«å°¾ãŒæ¬¡åˆ—è»Šæ¥ç¶š(è²¼ã‚Šä»˜ã‘ã‚‹ä½œæ¥­ãŒæœ‰åŠ¹çµ‚ç€é§…ã®ã‚‚ã®ã ã£ãŸ)
+					ä»¥ä¸Šã®æ¡ä»¶ã‚’æº€ãŸã™å ´åˆã¯ã€ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã‹ã‚‰å–å¾—ã—ãŸç¨®åˆ¥å¤‰æ›´ã‚’æ›¸ãè¾¼ã‚€ã€‚
 				*/
-				//Ver2.05 ‰¼ˆ—
+				//Ver2.05 ä»®å‡¦ç†
 				//if (iEkiOrder == pCentDedRessya->getValidSyuuchakuEki() &&
 				//	aCentDedEkiJikoku.getCentDedAfterOperationCont()->size() > 0 &&
 				//	aCentDedEkiJikoku.getCentDedAfterOperationCont()->get(INT_MAX).getAOperation() ==
@@ -3152,7 +3152,7 @@ OnEditOperationPaste_Process(BOOL bQueryEnable)
 		}
 
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd(pCmd);
@@ -3175,7 +3175,7 @@ OnEditOperationInsert_Process(BOOL bQueryEnable)
 	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -3188,7 +3188,7 @@ OnEditOperationInsert_Process(BOOL bQueryEnable)
 	{
 		if (!getCWndDcdGrid()->createCmd(CWndJikokuhyou::ECreateCmd_Select, ppCmd))
 		{
-			iRv = -1;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	if (iRv >= 0)
@@ -3196,17 +3196,17 @@ OnEditOperationInsert_Process(BOOL bQueryEnable)
 		if (!getCDiagramEditDoc()->
 			CentDedOperation_IsClipboardFormatAvailable())
 		{
-			iRv = -2;	//	ƒNƒŠƒbƒvƒ{[ƒh‚Éƒf[ƒ^‚ª‚ ‚è‚Ü‚¹‚ñB
+			iRv = -2;	//	ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã«ãƒ‡ãƒ¼ã‚¿ãŒã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	// ****************************************************************
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒNƒŠƒbƒvƒ{[ƒh‚©‚ç‰wì‹Æ‚ğæ“¾
+		//	ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã‹ã‚‰é§…ä½œæ¥­ã‚’å–å¾—
 		// --------------------------------
 		CentDedEkiJikoku aCentDedEkiJikokuBase;
 		int iEkiOrder;
@@ -3221,12 +3221,12 @@ OnEditOperationInsert_Process(BOOL bQueryEnable)
 			->getCentDedRosen()->getCentDedEkiCont()->size())
 		{
 			// --------------------------------
-			//	”ÔüIndexA˜HüŠO”­’…‰wIndex‚Ì•â³‚ğs‚¤
+			//	ç•ªç·šIndexã€è·¯ç·šå¤–ç™ºç€é§…Indexã®è£œæ­£ã‚’è¡Œã†
 			// --------------------------------
 
-			//ì‹Æ‚Ì“à—e‚ªA‰wİ’è‚É‡’v‚µ‚Ä‚¢‚é‚©‚ğƒ`ƒFƒbƒN‚µ‚Ü‚·B
-			//“üŠ·”Ôü‚ªA‰w”Ôü”“à‚Éû‚Ü‚Á‚Ä‚¢‚é‚©B˜HüŠO”­’…‰wIndex‚ªA˜HüŠO”­’…‰w”“à‚Éû‚Ü‚Á‚Ä‚¢‚é‚©B
-			//˜HüŠO”­’…‰w‚ª‚È‚¢ê‡‚ÍAì‹Æ‚ğo‹æ‚É•ÏX‚µ‚Ü‚·B
+			//ä½œæ¥­ã®å†…å®¹ãŒã€é§…è¨­å®šã«åˆè‡´ã—ã¦ã„ã‚‹ã‹ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¾ã™ã€‚
+			//å…¥æ›ç•ªç·šãŒã€é§…ç•ªç·šæ•°å†…ã«åã¾ã£ã¦ã„ã‚‹ã‹ã€‚è·¯ç·šå¤–ç™ºç€é§…IndexãŒã€è·¯ç·šå¤–ç™ºç€é§…æ•°å†…ã«åã¾ã£ã¦ã„ã‚‹ã‹ã€‚
+			//è·¯ç·šå¤–ç™ºç€é§…ãŒãªã„å ´åˆã¯ã€ä½œæ¥­ã‚’å‡ºåŒºã«å¤‰æ›´ã—ã¾ã™ã€‚
 			const CentDedEkiCont::CdDedEki aCdDedEki = getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()
 				->getCentDedEkiCont()->getMuPtr(getRessyahoukou())->get(iEkiOrder);
 			int iEkiTrackCount = aCdDedEki.getCentDedEkiTrack2Cont().size();
@@ -3263,24 +3263,24 @@ OnEditOperationInsert_Process(BOOL bQueryEnable)
 					{
 						aCentDedEkiJikoku.getCentDedBeforeOperationCont()->modifyOperationJikoku(iDifSecond);
 						/**
-							Œ³‚Ì‘Oì‹Æ‚ÉŠJnì‹Æ‚ª‚ ‚éê‡
-								“\‚è•t‚¯‚éì‹Æ‚ÉŠJnì‹Æ‚ª‚ ‚éê‡‚ÍAŠJnì‹Æ‚Íã‘‚«A‘¼‚ÍŠJnì‹Æ‚Ì’¼Œã‚É‘}“ü
-								‚È‚¢ê‡‚ÍAŒ³‚Ìì‹Æ‚ÌŠJnì‹Æ‚Ì’¼Œã‚É‘}“ü
-							Œ³‚Ì‘Oì‹Æ‚ÉŠJnì‹Æ‚ª‚È‚¢ê‡
-								“\‚è•t‚¯‚éì‹Æ‚É‚¨‚¯‚éŠJnì‹Æ‚Ì—L–³‚É‚©‚©‚í‚ç‚¸A
-								æ“ª‚É‘}“ü‚·‚é
-								‚à‚µAŠJnì‹Æ‚ª‚ ‚Á‚Ä‚àAadjustOperation‚Å©“®íœ‚³‚ê‚éB
+							å…ƒã®å‰ä½œæ¥­ã«é–‹å§‹ä½œæ¥­ãŒã‚ã‚‹å ´åˆ
+								è²¼ã‚Šä»˜ã‘ã‚‹ä½œæ¥­ã«é–‹å§‹ä½œæ¥­ãŒã‚ã‚‹å ´åˆã¯ã€é–‹å§‹ä½œæ¥­ã¯ä¸Šæ›¸ãã€ä»–ã¯é–‹å§‹ä½œæ¥­ã®ç›´å¾Œã«æŒ¿å…¥
+								ãªã„å ´åˆã¯ã€å…ƒã®ä½œæ¥­ã®é–‹å§‹ä½œæ¥­ã®ç›´å¾Œã«æŒ¿å…¥
+							å…ƒã®å‰ä½œæ¥­ã«é–‹å§‹ä½œæ¥­ãŒãªã„å ´åˆ
+								è²¼ã‚Šä»˜ã‘ã‚‹ä½œæ¥­ã«ãŠã‘ã‚‹é–‹å§‹ä½œæ¥­ã®æœ‰ç„¡ã«ã‹ã‹ã‚ã‚‰ãšã€
+								å…ˆé ­ã«æŒ¿å…¥ã™ã‚‹
+								ã‚‚ã—ã€é–‹å§‹ä½œæ¥­ãŒã‚ã£ã¦ã‚‚ã€adjustOperationã§è‡ªå‹•å‰Šé™¤ã•ã‚Œã‚‹ã€‚
 						*/
 						if (pCentDedEkiJikoku->getCentDedBeforeOperationCont()->size() > 0 &&
 							pCentDedEkiJikoku->getCentDedBeforeOperationCont()->get(0).isFirstOperation() &&
 							!aCentDedEkiJikoku.getCentDedBeforeOperationCont()->get(0).isFirstOperation())
 						{
 							/**
-								Œ³‚Ì‘Oì‹Æ‚ÉŠJnì‹Æ‚ª‚ ‚èA
-								“\‚è•t‚¯‚éì‹Æ‚ÉŠJnì‹Æ‚ª‚È‚¢ê‡B
-								Œ³‚Ìì‹Æ‚ÌŠJnì‹Æ‚ÌŒã‚É‘}“ü‚·‚éB
-								Œ³‚Ìì‹Æ‚ÌŠJnì‹Æ‚ğAaCentDedEkiJikoku‚Ìæ“ª‚É‘}“ü‚µA
-								‚»‚êˆÈŠO‚Ìì‹Æ‚ğAaCentDedEkiJikoku‚ÌÅŒã‚É’Ç‰Á‚µAŠÛ‚²‚Æã‘‚«‚·‚é‚Æ‚¢‚¤•û–@‚Åˆ—‚·‚éB
+								å…ƒã®å‰ä½œæ¥­ã«é–‹å§‹ä½œæ¥­ãŒã‚ã‚Šã€
+								è²¼ã‚Šä»˜ã‘ã‚‹ä½œæ¥­ã«é–‹å§‹ä½œæ¥­ãŒãªã„å ´åˆã€‚
+								å…ƒã®ä½œæ¥­ã®é–‹å§‹ä½œæ¥­ã®å¾Œã«æŒ¿å…¥ã™ã‚‹ã€‚
+								å…ƒã®ä½œæ¥­ã®é–‹å§‹ä½œæ¥­ã‚’ã€aCentDedEkiJikokuã®å…ˆé ­ã«æŒ¿å…¥ã—ã€
+								ãã‚Œä»¥å¤–ã®ä½œæ¥­ã‚’ã€aCentDedEkiJikokuã®æœ€å¾Œã«è¿½åŠ ã—ã€ä¸¸ã”ã¨ä¸Šæ›¸ãã™ã‚‹ã¨ã„ã†æ–¹æ³•ã§å‡¦ç†ã™ã‚‹ã€‚
 
 							*/
 							aCentDedEkiJikoku.getCentDedBeforeOperationCont()->insert(
@@ -3294,7 +3294,7 @@ OnEditOperationInsert_Process(BOOL bQueryEnable)
 						else
 						{
 							/**
-								Œ³‚Ìì‹Æ‚ğAaCentDedEkiJikoku‚ÌÅŒã‚É’Ç‰Á‚µAŠÛ‚²‚Æã‘‚«‚·‚é‚Æ‚¢‚¤•û–@‚Åˆ—‚·‚éB
+								å…ƒã®ä½œæ¥­ã‚’ã€aCentDedEkiJikokuã®æœ€å¾Œã«è¿½åŠ ã—ã€ä¸¸ã”ã¨ä¸Šæ›¸ãã™ã‚‹ã¨ã„ã†æ–¹æ³•ã§å‡¦ç†ã™ã‚‹ã€‚
 							*/
 							for (int idxb = 0; idxb < pCentDedEkiJikoku->getCentDedBeforeOperationCont()->size(); idxb++)
 							{
@@ -3324,24 +3324,24 @@ OnEditOperationInsert_Process(BOOL bQueryEnable)
 					{
 						aCentDedEkiJikoku.getCentDedAfterOperationCont()->modifyOperationJikoku(iDifSecond);
 						/**
-							Œ³‚ÌŒãì‹Æ‚ÉI—¹ì‹Æ‚ª‚ ‚éê‡
-								“\‚è•t‚¯‚éì‹Æ‚ÉI—¹ì‹Æ‚ª‚ ‚éê‡‚ÍAI—¹ì‹Æ‚Íã‘‚«A‘¼‚ÍI—¹ì‹Æ‚Ì’¼‘O‚É‘}“ü
-								‚È‚¢ê‡‚ÍAŒ³‚Ìì‹Æ‚ÌI—¹ì‹Æ‚Ì’¼‘O‚É‘}“ü
-							Œ³‚ÌŒãì‹Æ‚ÉI—¹ì‹Æ‚ª‚È‚¢ê‡
-								“\‚è•t‚¯‚éì‹Æ‚É‚¨‚¯‚éI—¹ì‹Æ‚Ì—L–³‚É‚©‚©‚í‚ç‚¸A
-								––”ö‚É‘}“ü‚·‚é
-								‚à‚µAI—¹ì‹Æ‚ª‚ ‚Á‚Ä‚àAadjustOperation‚Å©“®íœ‚³‚ê‚éB
+							å…ƒã®å¾Œä½œæ¥­ã«çµ‚äº†ä½œæ¥­ãŒã‚ã‚‹å ´åˆ
+								è²¼ã‚Šä»˜ã‘ã‚‹ä½œæ¥­ã«çµ‚äº†ä½œæ¥­ãŒã‚ã‚‹å ´åˆã¯ã€çµ‚äº†ä½œæ¥­ã¯ä¸Šæ›¸ãã€ä»–ã¯çµ‚äº†ä½œæ¥­ã®ç›´å‰ã«æŒ¿å…¥
+								ãªã„å ´åˆã¯ã€å…ƒã®ä½œæ¥­ã®çµ‚äº†ä½œæ¥­ã®ç›´å‰ã«æŒ¿å…¥
+							å…ƒã®å¾Œä½œæ¥­ã«çµ‚äº†ä½œæ¥­ãŒãªã„å ´åˆ
+								è²¼ã‚Šä»˜ã‘ã‚‹ä½œæ¥­ã«ãŠã‘ã‚‹çµ‚äº†ä½œæ¥­ã®æœ‰ç„¡ã«ã‹ã‹ã‚ã‚‰ãšã€
+								æœ«å°¾ã«æŒ¿å…¥ã™ã‚‹
+								ã‚‚ã—ã€çµ‚äº†ä½œæ¥­ãŒã‚ã£ã¦ã‚‚ã€adjustOperationã§è‡ªå‹•å‰Šé™¤ã•ã‚Œã‚‹ã€‚
 						*/
 						if (pCentDedEkiJikoku->getCentDedAfterOperationCont()->size() > 0 &&
 							pCentDedEkiJikoku->getCentDedAfterOperationCont()->get(INT_MAX).isLastOperation() &&
 							!aCentDedEkiJikoku.getCentDedAfterOperationCont()->get(INT_MAX).isLastOperation())
 						{
 							/**
-								Œ³‚ÌŒãì‹Æ‚ÉI—¹ì‹Æ‚ª‚ ‚èA
-								“\‚è•t‚¯‚éì‹Æ‚ÉI—¹ì‹Æ‚ª‚È‚¢ê‡B
-								Œ³‚Ìì‹Æ‚ÌI—¹ì‹Æ‚Ì’¼‘O‚É‘}“ü‚·‚éB
-								Œ³‚Ìì‹Æ‚ÌI—¹ì‹Æ‚ğAaCentDedEkiJikoku‚Ì––”ö‚É’Ç‰Á‚µA
-								‚»‚êˆÈŠO‚Ìì‹Æ‚ğAaCentDedEkiJikoku‚Ìæ“ª‚É‘}“ü‚µAŠÛ‚²‚Æã‘‚«‚·‚é‚Æ‚¢‚¤•û–@‚Åˆ—‚·‚éB
+								å…ƒã®å¾Œä½œæ¥­ã«çµ‚äº†ä½œæ¥­ãŒã‚ã‚Šã€
+								è²¼ã‚Šä»˜ã‘ã‚‹ä½œæ¥­ã«çµ‚äº†ä½œæ¥­ãŒãªã„å ´åˆã€‚
+								å…ƒã®ä½œæ¥­ã®çµ‚äº†ä½œæ¥­ã®ç›´å‰ã«æŒ¿å…¥ã™ã‚‹ã€‚
+								å…ƒã®ä½œæ¥­ã®çµ‚äº†ä½œæ¥­ã‚’ã€aCentDedEkiJikokuã®æœ«å°¾ã«è¿½åŠ ã—ã€
+								ãã‚Œä»¥å¤–ã®ä½œæ¥­ã‚’ã€aCentDedEkiJikokuã®å…ˆé ­ã«æŒ¿å…¥ã—ã€ä¸¸ã”ã¨ä¸Šæ›¸ãã™ã‚‹ã¨ã„ã†æ–¹æ³•ã§å‡¦ç†ã™ã‚‹ã€‚
 
 							*/
 							aCentDedEkiJikoku.getCentDedAfterOperationCont()->insert(
@@ -3355,7 +3355,7 @@ OnEditOperationInsert_Process(BOOL bQueryEnable)
 						else
 						{
 							/**
-								Œ³‚Ìì‹Æ‚ğaCentDedEkiJikoku‚Ìæ“ª‚É‘}“ü‚µAŠÛ‚²‚Æã‘‚«‚·‚é‚Æ‚¢‚¤•û–@‚Åˆ—‚·‚éB
+								å…ƒã®ä½œæ¥­ã‚’aCentDedEkiJikokuã®å…ˆé ­ã«æŒ¿å…¥ã—ã€ä¸¸ã”ã¨ä¸Šæ›¸ãã™ã‚‹ã¨ã„ã†æ–¹æ³•ã§å‡¦ç†ã™ã‚‹ã€‚
 							*/
 							for (int idxa = pCentDedEkiJikoku->getCentDedAfterOperationCont()->size() - 1; idxa >= 0; idxa--)
 							{
@@ -3370,11 +3370,11 @@ OnEditOperationInsert_Process(BOOL bQueryEnable)
 				pCentDedRessya->adjustOperation();
 
 				/**
-					E“\‚è•t‚¯‰w‚ª—LŒøI’…‰w
-					E“\‚è•t‚¯‚éŒãì‹Æ‚Ì––”ö‚ªŸ—ñÔÚ‘±(“\‚è•t‚¯‚éì‹Æ‚ª—LŒøI’…‰w‚Ì‚à‚Ì‚¾‚Á‚½)
-					ˆÈã‚ÌğŒ‚ğ–‚½‚·ê‡‚ÍAƒNƒŠƒbƒvƒ{[ƒh‚©‚çæ“¾‚µ‚½í•Ê•ÏX‚ğ‘‚«‚ŞB
+					ãƒ»è²¼ã‚Šä»˜ã‘é§…ãŒæœ‰åŠ¹çµ‚ç€é§…
+					ãƒ»è²¼ã‚Šä»˜ã‘ã‚‹å¾Œä½œæ¥­ã®æœ«å°¾ãŒæ¬¡åˆ—è»Šæ¥ç¶š(è²¼ã‚Šä»˜ã‘ã‚‹ä½œæ¥­ãŒæœ‰åŠ¹çµ‚ç€é§…ã®ã‚‚ã®ã ã£ãŸ)
+					ä»¥ä¸Šã®æ¡ä»¶ã‚’æº€ãŸã™å ´åˆã¯ã€ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã‹ã‚‰å–å¾—ã—ãŸç¨®åˆ¥å¤‰æ›´ã‚’æ›¸ãè¾¼ã‚€ã€‚
 				*/
-				//Ver2.05 ‰¼ˆ—
+				//Ver2.05 ä»®å‡¦ç†
 				/*if (iEkiOrder == pCentDedRessya->getValidSyuuchakuEki() &&
 					aCentDedEkiJikoku.getCentDedAfterOperationCont()->size() > 0 &&
 					aCentDedEkiJikoku.getCentDedAfterOperationCont()->get(INT_MAX).getAOperation() ==
@@ -3386,7 +3386,7 @@ OnEditOperationInsert_Process(BOOL bQueryEnable)
 		}
 
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd(pCmd);
@@ -3409,7 +3409,7 @@ OnEditRessyaJouhouPaste_Process(BOOL bQueryEnable)
 	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -3423,7 +3423,7 @@ OnEditRessyaJouhouPaste_Process(BOOL bQueryEnable)
 	{
 		if (!getCWndDcdGrid()->createCmd(CWndJikokuhyou::ECreateCmd_Focus, ppCmd))
 		{
-			iRv = -1;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 
@@ -3432,28 +3432,28 @@ OnEditRessyaJouhouPaste_Process(BOOL bQueryEnable)
 		if (!getCDiagramEditDoc()->
 			RessyaJouhou_IsClipboardFormatAvailable())
 		{
-			iRv = -2;	//	ƒNƒŠƒbƒvƒ{[ƒh‚Éƒf[ƒ^‚ª‚ ‚è‚Ü‚¹‚ñB
+			iRv = -2;	//	ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã«ãƒ‡ãƒ¼ã‚¿ãŒã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	// ****************************************************************
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒNƒŠƒbƒvƒ{[ƒh‚©‚ç—ñÔ‚ğæ“¾
+		//	ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã‹ã‚‰åˆ—è»Šã‚’å–å¾—
 		// --------------------------------
 		CentDedRessya	aCentDedRessya =
 			getCentDedRessyaCont()->createNullRessya();
 		iRv = getCDiagramEditDoc()->RessyaJouhou_From_Cliboard(
 			&aCentDedRessya);
-		//aCentDedRessya = ƒNƒŠƒbƒvƒ{[ƒh“à‚Ì—ñÔ
+		//aCentDedRessya = ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰å†…ã®åˆ—è»Š
 
 		if (iRv >= 0 && !aCentDedRessya.isNull())
 		{
 			// --------------------------------
-			//	“\‚è•t‚¯‚é—ñÔ‚ÉˆÚ“®—Ê‚ğ‰ÁZE”ÔüIndexA˜HüŠO”­’…‰wIndex‚Ì•â³‚ğs‚¤
+			//	è²¼ã‚Šä»˜ã‘ã‚‹åˆ—è»Šã«ç§»å‹•é‡ã‚’åŠ ç®—ãƒ»ç•ªç·šIndexã€è·¯ç·šå¤–ç™ºç€é§…Indexã®è£œæ­£ã‚’è¡Œã†
 			// --------------------------------
 			CentDedRessya* pCentDedRessya = pCmd->getCaMuiSelect()->getMuPtr()->get(0);
 			if(!aCentDedRessya.getRessyabangou().empty())
@@ -3474,14 +3474,14 @@ OnEditRessyaJouhouPaste_Process(BOOL bQueryEnable)
 				pCentDedRessya->setGousuu(aCentDedRessya.getGousuu());
 			}
 			// --------------------------------
-			//	“\‚è•t‚¯ˆÚ“®—Ê‚ğ’Ç‰Á
+			//	è²¼ã‚Šä»˜ã‘ç§»å‹•é‡ã‚’è¿½åŠ 
 			// --------------------------------
 			getCWndDcdGrid()->m_iRessyaBangouPasteIdouryouPrevValue +=
 				getCWndDcdGrid()->m_iRessyaBangouPasteIdouryou;
 			getCWndDcdGrid()->m_iGouPasteIdouryouPrevValue +=
 				getCWndDcdGrid()->m_iGouPasteIdouryou;
 			// --------------------------------
-			//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+			//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 			// --------------------------------
 			{
 				getCDiagramEditDoc()->executeEditCmd(pCmd);
@@ -3489,7 +3489,7 @@ OnEditRessyaJouhouPaste_Process(BOOL bQueryEnable)
 		}
 
 		// --------------------------------
-		//	ƒtƒH[ƒJƒX‚ğˆÚ“®
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’ç§»å‹•
 		// --------------------------------
 		if (iRv >= 0)
 		{
@@ -3511,7 +3511,7 @@ OnEditClear_Process( BOOL bQueryEnable )
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -3532,29 +3532,29 @@ OnEditClear_Process( BOOL bQueryEnable )
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Select , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†
 		// --------------------------------
 		{
 			pCmd->getCaMuiSelect()->erase( 0 , INT_MAX ) ;
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -3573,7 +3573,7 @@ int CWjkState_Ressyahensyu::OnEditOperationCopy_Process(BOOL bQueryEnable)
 	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -3586,7 +3586,7 @@ int CWjkState_Ressyahensyu::OnEditOperationCopy_Process(BOOL bQueryEnable)
 	{
 		if (!getCWndDcdGrid()->createCmd(CWndJikokuhyou::ECreateCmd_Focus, ppCmd))
 		{
-			iRv = -1;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdYColSpec	aYColSpec =
@@ -3692,17 +3692,17 @@ int CWjkState_Ressyahensyu::OnEditOperationCopy_Process(BOOL bQueryEnable)
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒs[‚·‚é‰w‚ğæ“¾
+		//	ã‚³ãƒ”ãƒ¼ã™ã‚‹é§…æ™‚åˆ»ã‚’å–å¾—
 		// --------------------------------
 		CentDedEkiJikoku aCentDedEkiJikoku = pCentDedRessya->getCentDedEkiJikoku(iEkiOrder);
 
 		// -------------------------------- 
-		//	‰w‚ğƒNƒŠƒbƒvƒ{[ƒh‚ÉŠi”[
+		//	é§…æ™‚åˆ»ã‚’ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã«æ ¼ç´
 		// --------------------------------
-				//Ver2.05 ‰¼ˆ—
+				//Ver2.05 ä»®å‡¦ç†
 		getCDiagramEditDoc()->CentDedOperation_To_Cliboard(
 			aCentDedEkiJikoku,
 			//pCentDedRessya->getSyubetsuChange(),
@@ -3710,10 +3710,10 @@ int CWjkState_Ressyahensyu::OnEditOperationCopy_Process(BOOL bQueryEnable)
 			iEkiOrder);
 
 		// -------------------------------- 
-		//	ƒtƒH[ƒJƒXƒZƒ‹‚ğA‘I‘ğ—ñÔ’†‚ÅÅ‘å‚Ì—ñÔIndex‚ÌŸˆÊ‚ÉˆÚ“®
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã‚’ã€é¸æŠåˆ—è»Šä¸­ã§æœ€å¤§ã®åˆ—è»ŠIndexã®æ¬¡ä½ã«ç§»å‹•
 		// --------------------------------
 		//{
-		//	//	ƒtƒH[ƒJƒXƒZƒ‹‚ÌˆÚ“®‚É‚æ‚éƒZƒ‹‘I‘ğ‚ğ–³Œø‰»‚µ‚Ü‚·B
+		//	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ç§»å‹•ã«ã‚ˆã‚‹ã‚»ãƒ«é¸æŠã‚’ç„¡åŠ¹åŒ–ã—ã¾ã™ã€‚
 		//	CPropStack	aPropStack(getCWndDcdGrid());
 		//	aPropStack.CSelect_setSelectMode(CSelect::SelectMode_NONE);
 
@@ -3729,7 +3729,7 @@ int CWjkState_Ressyahensyu::OnEditOperationCopy_Process(BOOL bQueryEnable)
 		//			}
 		//		}
 		//	}
-		//	//iRessyaIndexMax = ‘I‘ğ‚³‚ê‚Ä‚¢‚é—ñÔ‚Ì‚¤‚¿AÅ‘å‚ÌIndex
+		//	//iRessyaIndexMax = é¸æŠã•ã‚Œã¦ã„ã‚‹åˆ—è»Šã®ã†ã¡ã€æœ€å¤§ã®Index
 
 		//	int iXColumnNumber = -1;
 		//	{
@@ -3738,8 +3738,8 @@ int CWjkState_Ressyahensyu::OnEditOperationCopy_Process(BOOL bQueryEnable)
 		//			CdXColSpec::ColumnType_Ressya,
 		//			iRessyaIndexMax)) + 1;
 		//	}
-		//	//iXColumnNumber = ‘I‘ğ‚³‚ê‚Ä‚¢‚é—ñÔ‚Ì‚¤‚¿AÅ‘å‚ÌIndex‚Ì—ñÔ‚Ì‰E‚Ì—ñ”Ô†
-		//	//	‚±‚ê‚ªAŸ‚ÌƒtƒH[ƒJƒXƒZƒ‹‚Ì—ñ”Ô†‚É‚È‚è‚Ü‚·B
+		//	//iXColumnNumber = é¸æŠã•ã‚Œã¦ã„ã‚‹åˆ—è»Šã®ã†ã¡ã€æœ€å¤§ã®Indexã®åˆ—è»Šã®å³ã®åˆ—ç•ªå·
+		//	//	ã“ã‚ŒãŒã€æ¬¡ã®ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®åˆ—ç•ªå·ã«ãªã‚Šã¾ã™ã€‚
 
 		//	int iYColumnNmber = -1;
 		//	{
@@ -3749,7 +3749,7 @@ int CWjkState_Ressyahensyu::OnEditOperationCopy_Process(BOOL bQueryEnable)
 		//			iYColumnNmber = getCWndDcdGrid()->getCXDcdGrid()->getYColumnNumberOfCell(pCDcdGridCell);
 		//		}
 		//	}
-		//	//iYColumnNmber = Œ»İ‚ÌƒtƒH[ƒJƒXƒZƒ‹BŸ‚ÌƒtƒH[ƒJƒXƒZƒ‹‚à“¯‚¶ˆÊ’u‚É‚È‚è‚Ü‚·B
+		//	//iYColumnNmber = ç¾åœ¨ã®ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã€‚æ¬¡ã®ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã‚‚åŒã˜ä½ç½®ã«ãªã‚Šã¾ã™ã€‚
 
 		//	{
 		//		CDcdGridCell* pCDcdGridCellNew = getCWndDcdGrid()->getCXDcdGrid()->getCell(
@@ -3762,7 +3762,7 @@ int CWjkState_Ressyahensyu::OnEditOperationCopy_Process(BOOL bQueryEnable)
 		//}
 
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -3783,7 +3783,7 @@ int CWjkState_Ressyahensyu::OnEditRessyaJouhouCopy_Process(BOOL bQueryEnable)
 	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -3796,7 +3796,7 @@ int CWjkState_Ressyahensyu::OnEditRessyaJouhouCopy_Process(BOOL bQueryEnable)
 	{
 		if (!getCWndDcdGrid()->createCmd(CWndJikokuhyou::ECreateCmd_Focus, ppCmd))
 		{
-			iRv = -1;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdYColSpec	aYColSpec =
@@ -3828,12 +3828,12 @@ int CWjkState_Ressyahensyu::OnEditRessyaJouhouCopy_Process(BOOL bQueryEnable)
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 
 		// -------------------------------- 
-		//	—ñÔ‚ğƒNƒŠƒbƒvƒ{[ƒh‚ÉŠi”[
-		//	w“\‚è•t‚¯ˆÚ“®—Ê(•b)x‚Ì’l‚ÍA‚O‚É‚µ‚Ü‚·B
+		//	åˆ—è»Šã‚’ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã«æ ¼ç´
+		//	ã€è²¼ã‚Šä»˜ã‘ç§»å‹•é‡(ç§’)ã€ã®å€¤ã¯ã€ï¼ã«ã—ã¾ã™ã€‚
 		// --------------------------------
 		getCDiagramEditDoc()->RessyaJouhou_To_Cliboard(
 			pCentDedRessya);
@@ -3843,14 +3843,14 @@ int CWjkState_Ressyahensyu::OnEditRessyaJouhouCopy_Process(BOOL bQueryEnable)
 		getCWndDcdGrid()->m_iGouPasteIdouryouPrevValue = 0;
 
 		// -------------------------------- 
-		//	‰w‚ğƒNƒŠƒbƒvƒ{[ƒh‚ÉŠi”[
+		//	é§…æ™‚åˆ»ã‚’ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã«æ ¼ç´
 		// --------------------------------
-				//Ver2.05 ‰¼ˆ—
+				//Ver2.05 ä»®å‡¦ç†
 		getCDiagramEditDoc()->RessyaJouhou_To_Cliboard(
 			pCentDedRessya);
 
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -3871,7 +3871,7 @@ OnEditPasteEkiJikoku_Process( BOOL bQueryEnable )
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -3895,42 +3895,42 @@ OnEditPasteEkiJikoku_Process( BOOL bQueryEnable )
 		}
 		else
 		{
-			iRv = -2;	//	ƒNƒŠƒbƒvƒ{[ƒh‚Éƒf[ƒ^‚ª‚ ‚è‚Ü‚¹‚ñB
+			iRv = -2;	//	ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã«ãƒ‡ãƒ¼ã‚¿ãŒã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	if ( iRv >= 0 && iType == 0)
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Focus , ppCmd ) )
 		{
-			iRv = -3 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -3 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 && iType == 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		if (iType == 0)
 		{
 			// --------------------------------
-			//	ƒNƒŠƒbƒvƒ{[ƒh‚©‚ç—ñÔ‚ğæ“¾
+			//	ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã‹ã‚‰åˆ—è»Šã‚’å–å¾—
 			// --------------------------------
 			CentDedRessyaCont	aCentDedRessyaCont(
 				getCentDedRessyaCont()->createEmptyCont());
 			getCDiagramEditDoc()->CentDedRessyaCont_From_Cliboard(
 				&aCentDedRessyaCont);
-			//aCentDedRessyaCont = ƒNƒŠƒbƒvƒ{[ƒh“à‚Ì—ñÔ
+			//aCentDedRessyaCont = ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰å†…ã®åˆ—è»Š
 
 			// --------------------------------
-			//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW
+			//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†
 			// --------------------------------
 			{
 				CentDedRessya* pCentDedRessya = pCmd->getCaMuiSelect()->getMuPtr()->get(0);
 				pCentDedRessya->pasteEkiJikoku(aCentDedRessyaCont.get(0));
 			}
 			// --------------------------------
-			//	•ªŠò‰w‚Ì‰wˆµ‚¢E”Ôü‚Ì•â³
+			//	åˆ†å²é§…ã®é§…æ‰±ã„ãƒ»ç•ªç·šã®è£œæ­£
 			// --------------------------------
 			AdjustBrunchLoop(
 				-1,
@@ -3938,7 +3938,7 @@ OnEditPasteEkiJikoku_Process( BOOL bQueryEnable )
 				0);
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
@@ -3962,14 +3962,14 @@ int CWjkState_Ressyahensyu::OnEditSelectAll_Process(
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		getCWndDcdGrid()->selectAll() ;
 	}
@@ -3983,12 +3983,12 @@ int CWjkState_Ressyahensyu::
 {
 	int iRv = 0 ;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 
-	//	ƒtƒH[ƒJƒXƒZƒ‹‚ªV‹K—ñÔˆÊ’u‚É‚ ‚é‚Æ‚«‚ÍA
-	//	uV‹K—ñÔ‚ÌƒvƒƒpƒeƒB“ü—Í‚ğs‚¢A‚»‚ê‚ğ––”ö‚É‘}“ü‚·‚év‚Æ‚¢‚¤
-	//	“®ì‚É‚È‚è‚Ü‚·B
+	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒæ–°è¦åˆ—è»Šä½ç½®ã«ã‚ã‚‹ã¨ãã¯ã€
+	//	ã€Œæ–°è¦åˆ—è»Šã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£å…¥åŠ›ã‚’è¡Œã„ã€ãã‚Œã‚’æœ«å°¾ã«æŒ¿å…¥ã™ã‚‹ã€ã¨ã„ã†
+	//	å‹•ä½œã«ãªã‚Šã¾ã™ã€‚
 	bool bInsert = false ;
 	CdXColSpec aXColSpec = getCWndDcdGrid()->getXColSpecOfFocus() ;
 	if ( aXColSpec.getColumnType() == CdXColSpec::ColumnType_NewRessya )
@@ -3999,20 +3999,20 @@ int CWjkState_Ressyahensyu::
 	iRv = execCDlgRessyaProp( bInsert , TRUE ) ;
 
 	//iRv = 
-	// 	-	1 ;	//	—ñÔ‚Ì’Ç‰ÁE‚Ü‚½‚ÍƒvƒƒpƒeƒB‚Ì•ÏX‚ğs‚¢‚Ü‚µ‚½B
-	//	-	0 ;	//	ƒ_ƒCƒAƒƒO‚ªƒLƒƒƒ“ƒZƒ‹‚ÅI—¹‚µ‚½‚½‚ßA@n
-	//				•ÏX‚Í”­¶‚µ‚Ü‚¹‚ñ‚Å‚µ‚½B
-	//	-	-1 ;	//	X—ñ”Ô†‚ª•s³‚Å‚·B
+	// 	-	1 ;	//	åˆ—è»Šã®è¿½åŠ ãƒ»ã¾ãŸã¯ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å¤‰æ›´ã‚’è¡Œã„ã¾ã—ãŸã€‚
+	//	-	0 ;	//	ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãŒã‚­ãƒ£ãƒ³ã‚»ãƒ«ã§çµ‚äº†ã—ãŸãŸã‚ã€@n
+	//				å¤‰æ›´ã¯ç™ºç”Ÿã—ã¾ã›ã‚“ã§ã—ãŸã€‚
+	//	-	-1 ;	//	Xåˆ—ç•ªå·ãŒä¸æ­£ã§ã™ã€‚
 
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		iRv = execCDlgRessyaProp( bInsert , FALSE ) ;
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -4030,7 +4030,7 @@ OnJikokuhyouRessyaInsert_Process( BOOL bQueryEnable )
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -4043,24 +4043,24 @@ OnJikokuhyouRessyaInsert_Process( BOOL bQueryEnable )
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_NewItem , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
-		//	—ñÔ‚Ì‘}“ü‚Ìê‡‚ÍA‹ó—ñÔ(—ñÔí•ÊIndex=0)‚Å‚Í‚È‚­A
-		//	NULL—ñÔ‚ğ‘}“ü‚µ‚Ü‚·B
-		//	Command “à‚Ì—ñÔ‚ğ’u‚«Š·‚¦‚Ü‚·B
+		//	åˆ—è»Šã®æŒ¿å…¥ã®å ´åˆã¯ã€ç©ºåˆ—è»Š(åˆ—è»Šç¨®åˆ¥Index=0)ã§ã¯ãªãã€
+		//	NULLåˆ—è»Šã‚’æŒ¿å…¥ã—ã¾ã™ã€‚
+		//	Command å†…ã®åˆ—è»Šã‚’ç½®ãæ›ãˆã¾ã™ã€‚
 		{
 			Mu<CentDedRessya*>* pmuRessya = pCmd->getCaMuiSelect()->getMuPtr() ;
 			pmuRessya->get( 0 )->setIsNull( true ) ; 
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
@@ -4075,22 +4075,22 @@ int CWjkState_Ressyahensyu::
 {
 	int iRv = 0 ;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if ( !m_bJikokuhyouFocusMoveRight )
 	{
-		iRv = 1 ;	//(bQueryEnable=TRUE‚Ìê‡)‚±‚Ì€–Ú‚Í‚·‚Å‚É‘I‘ğ‚³‚ê‚Ä‚¢‚Ü‚·
+		iRv = 1 ;	//(bQueryEnable=TRUEã®å ´åˆ)ã“ã®é …ç›®ã¯ã™ã§ã«é¸æŠã•ã‚Œã¦ã„ã¾ã™
 	}
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		m_bJikokuhyouFocusMoveRight = false ;
 		
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -4103,21 +4103,21 @@ int CWjkState_Ressyahensyu::
 {
 	int iRv = 0 ;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if ( m_bJikokuhyouFocusMoveRight )
 	{
-		iRv = 1 ;	//(bQueryEnable=TRUE‚Ìê‡)‚±‚Ì€–Ú‚Í‚·‚Å‚É‘I‘ğ‚³‚ê‚Ä‚¢‚Ü‚·
+		iRv = 1 ;	//(bQueryEnable=TRUEã®å ´åˆ)ã“ã®é …ç›®ã¯ã™ã§ã«é¸æŠã•ã‚Œã¦ã„ã¾ã™
 	}
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		m_bJikokuhyouFocusMoveRight = true ;
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -4133,7 +4133,7 @@ int CWjkState_Ressyahensyu::
 	CString strErrorMessage ;
 	const CentDedRessyaCont* pCentDedRessyaCont = getCentDedRessyaCont() ;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -4149,7 +4149,7 @@ int CWjkState_Ressyahensyu::
 				aCdYColSpec.getColumnType() == CdYColSpec::ColumnType_Ekijikoku_Hatsu ||
 				aCdYColSpec.getColumnType() == CdYColSpec::ColumnType_Track) )
 		{
-			iRv = -1 ;	//	ƒtƒH[ƒJƒXƒZƒ‹‚ÌˆÊ’u‚ª•s³‚Å‚·B
+			iRv = -1 ;	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ä½ç½®ãŒä¸æ­£ã§ã™ã€‚
 		}
 	}
 	if ( iRv >= 0 )
@@ -4157,14 +4157,14 @@ int CWjkState_Ressyahensyu::
 		if ( !( 0 <= aCdYColSpec.getEkiOrder() 
 			&& aCdYColSpec.getEkiOrder() <  pCentDedRessyaCont->getEkiCount() - 1 ) )
 		{
-			iRv = -2 ;	//	ƒtƒH[ƒJƒXƒZƒ‹‚ªI’…‰w‚É‚ ‚éê‡‚ÍÀs‚Å‚«‚Ü‚¹‚ñB
+			iRv = -2 ;	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒçµ‚ç€é§…ã«ã‚ã‚‹å ´åˆã¯å®Ÿè¡Œã§ãã¾ã›ã‚“ã€‚
 		}
 	}
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		int iEkikanSaisyouSecRessyaIndex = -1 ;
 
@@ -4207,21 +4207,21 @@ int CWjkState_Ressyahensyu::
 			aStr.Format( strFmt , strEkimei0 , strEkimei1 ) ;
 			
 			strErrorMessage = aStr ;
-			iRv = -21 ;	//	‰wŠÔÅ¬Š—v•b”—ñÔ‚ªŒˆ’è‚Å‚«‚Ü‚¹‚ñB
-						//	‚ª%s‰w‚Æ%s‰w‚Ì—¼•û‚Éİ’è‚³‚ê‚½—ñÔ‚ª‚P–{‚à
-						//	‚ ‚è‚Ü‚¹‚ñB"
+			iRv = -21 ;	//	é§…é–“æœ€å°æ‰€è¦ç§’æ•°åˆ—è»ŠãŒæ±ºå®šã§ãã¾ã›ã‚“ã€‚
+						//	æ™‚åˆ»ãŒ%sé§…ã¨%sé§…ã®ä¸¡æ–¹ã«è¨­å®šã•ã‚ŒãŸåˆ—è»ŠãŒï¼‘æœ¬ã‚‚
+						//	ã‚ã‚Šã¾ã›ã‚“ã€‚"
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 		if ( iRv < 0 )
 		{
 			switch( iRv )
 			{
-			case -1 :	//	ƒtƒH[ƒJƒXƒZƒ‹‚ÌˆÊ’u‚ª•s³‚Å‚·B
-			case -2 :	//	ƒtƒH[ƒJƒXƒZƒ‹‚ªI’…‰w‚É‚ ‚éê‡‚ÍA
-						//	‚±‚Ì‹@”\‚ÍÀs‚Å‚«‚Ü‚¹‚ñ
-			case -21 :	//	‰wŠÔÅ¬Š—v•b”—ñÔ‚ªŒˆ’è‚Å‚«‚Ü‚¹‚ñB
+			case -1 :	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ä½ç½®ãŒä¸æ­£ã§ã™ã€‚
+			case -2 :	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒçµ‚ç€é§…ã«ã‚ã‚‹å ´åˆã¯ã€
+						//	ã“ã®æ©Ÿèƒ½ã¯å®Ÿè¡Œã§ãã¾ã›ã‚“
+			case -21 :	//	é§…é–“æœ€å°æ‰€è¦ç§’æ•°åˆ—è»ŠãŒæ±ºå®šã§ãã¾ã›ã‚“ã€‚
 				break ;
 			default:
 				strErrorMessage.Format( _T( "Error=%d" ) , iRv ) ;
@@ -4250,7 +4250,7 @@ int CWjkState_Ressyahensyu::
 	CdYColSpec aCdYColSpec = getCWndDcdGrid()->getYColSpecOfFocus() ;
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -4270,7 +4270,7 @@ int CWjkState_Ressyahensyu::
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_All , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	if ( iRv >= 0 )
@@ -4297,7 +4297,7 @@ int CWjkState_Ressyahensyu::
 		else if ( aCdYColSpec.getColumnType() == 
 			CdYColSpec::ColumnType_Bikou )
  		{
-			//	ƒtƒH[ƒJƒXƒZƒ‹‚ª”õl—ñ‚É‚ ‚éê‡‚ÍA”õl‚Åƒ\[ƒg
+			//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒå‚™è€ƒåˆ—ã«ã‚ã‚‹å ´åˆã¯ã€å‚™è€ƒã§ã‚½ãƒ¼ãƒˆ
 			bBikouSort = true ;
 		}
 		else if ( aCdYColSpec.getColumnType() == 
@@ -4314,33 +4314,33 @@ int CWjkState_Ressyahensyu::
 			CdYColSpec::ColumnType_OperationNumber &&
 			getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()->getEnableOperation() > 1)
 		{
-			//‰^—p”Ô†‚Åƒ\[ƒg
+			//é‹ç”¨ç•ªå·ã§ã‚½ãƒ¼ãƒˆ
 			bOperationNumberSort = true;
 		}
 		else if (aCdYColSpec.getColumnType() ==
 			CdYColSpec::ColumnType_Track)
 		{
-			//”Ôü‚Åƒ\[ƒg
+			//ç•ªç·šã§ã‚½ãƒ¼ãƒˆ
 			bRessyaTrackSort = true;
 		}
 		else
 		{
-			iRv = -1 ;	//	ƒtƒH[ƒJƒXƒZƒ‹‚ÌˆÊ’u‚ª•s³‚Å‚·B
+			iRv = -1 ;	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ä½ç½®ãŒä¸æ­£ã§ã™ã€‚
 		}
 	}
-	//bRessyasyubetsuSort = —ñÔí•Ê‚Åƒ\[ƒg‚·‚éê‡‚Ítrue ;
-	//iJikokuOrder = w’è‚ÌƒZƒ‹‚É‘Î‰‚·‚éwOrderx
-	//bBikouSort = ”õl‚Åƒ\[ƒg‚·‚éê‡‚Ítrue ;
+	//bRessyasyubetsuSort = åˆ—è»Šç¨®åˆ¥ã§ã‚½ãƒ¼ãƒˆã™ã‚‹å ´åˆã¯true ;
+	//iJikokuOrder = æŒ‡å®šã®ã‚»ãƒ«ã«å¯¾å¿œã™ã‚‹ã€æ™‚åˆ»Orderã€
+	//bBikouSort = å‚™è€ƒã§ã‚½ãƒ¼ãƒˆã™ã‚‹å ´åˆã¯true ;
 
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		CWaitCursor	aCursor ;	
 
 		// --------------------------------
-		//	‘ÎÛ—ñÔ‚ğæ“¾‚µAƒ\[ƒg—p‚ÌƒRƒ“ƒeƒi‚ÉˆÚ“®
+		//	å¯¾è±¡åˆ—è»Šã‚’å–å¾—ã—ã€ã‚½ãƒ¼ãƒˆç”¨ã®ã‚³ãƒ³ãƒ†ãƒŠã«ç§»å‹•
 		// --------------------------------
 		CentDedRessyaCont aCentDedRessyaCont( getCentDedRessyaCont()->createEmptyCont() ) ;
 		CaMui<CentDedRessya> aCaMui( &aCentDedRessyaCont ) ;
@@ -4348,37 +4348,37 @@ int CWjkState_Ressyahensyu::
 
 
 		// --------------------------------
-		//	‘ÎÛ—ñÔ‚ğƒ\[ƒg
+		//	å¯¾è±¡åˆ—è»Šã‚’ã‚½ãƒ¼ãƒˆ
 		// --------------------------------
 		if ( bRessyasyubetsuSort )
 		{
-			//	—ñÔí•Ê‚Åƒ\[ƒg
+			//	åˆ—è»Šç¨®åˆ¥ã§ã‚½ãƒ¼ãƒˆ
 			CDedRessyaSoater_Ressyasyubetsu	aSoater(getCWndDcdGrid()->getCompareBottom()) ;
 			aSoater.sort( &aCentDedRessyaCont , NULL ) ;
 		}
 		else if (bRessyameiSort)
 		{
-			//	—ñÔ–¼‚Åƒ\[ƒg
+			//	åˆ—è»Šåã§ã‚½ãƒ¼ãƒˆ
 			CDedRessyaSoater_Ressyamei	aSoater(getCWndDcdGrid()->getCompareBottom());
 			aSoater.sort(&aCentDedRessyaCont, NULL);
 		}
 		else if (bRessyabangouSort)
 		{
-			//	—ñÔ”Ô†‚Åƒ\[ƒg
+			//	åˆ—è»Šç•ªå·ã§ã‚½ãƒ¼ãƒˆ
 			CDedRessyaSoater_Ressyabangou	aSoater(getCWndDcdGrid()->getCompareBottom());
 			aSoater.sort(&aCentDedRessyaCont, NULL);
 		}
 		else if ( bBikouSort )
 		{
-			//	”õl‚Åƒ\[ƒg
+			//	å‚™è€ƒã§ã‚½ãƒ¼ãƒˆ
 			CDedRessyaSoater_Bikou	aSoater ;
 			aSoater.sort( &aCentDedRessyaCont , NULL ) ;
 
 		}
 		else if (bOperationNumberSort)
 		{
-			//	‰^—p”Ô†‚Åƒ\[ƒg
-				//	‹N“_
+			//	é‹ç”¨ç•ªå·ã§ã‚½ãƒ¼ãƒˆ
+				//	èµ·ç‚¹æ™‚åˆ»
 			CdDedJikoku jikokuKitenJikoku = getCDiagramEditDoc()
 				->getCDedRosenFileData()->getCentDedRosen()
 				->getKitenJikoku();
@@ -4390,8 +4390,8 @@ int CWjkState_Ressyahensyu::
 		}
 		else if (bRessyaTrackSort)
 		{
-			//	—ñÔ”Ôü‚Åƒ\[ƒg
-				//	‹N“_
+			//	åˆ—è»Šç•ªç·šã§ã‚½ãƒ¼ãƒˆ
+				//	èµ·ç‚¹æ™‚åˆ»
 			CdDedJikoku jikokuKitenJikoku = getCDiagramEditDoc()
 				->getCDedRosenFileData()->getCentDedRosen()
 				->getKitenJikoku();
@@ -4405,14 +4405,14 @@ int CWjkState_Ressyahensyu::
 			if ( getCWndDcdGrid()->getEkijikokuSort() 
 				== CWndJikokuhyou::EEkijikokuSort_Ekiatsukai )
 			{
-				//	‰wˆµƒ\[ƒg
+				//	é§…æ‰±ã‚½ãƒ¼ãƒˆ
 
-				//	‹N“_
+				//	èµ·ç‚¹æ™‚åˆ»
 				CdDedJikoku jikokuKitenJikoku = getCDiagramEditDoc()
 					->getCDedRosenFileData()->getCentDedRosen()
 					->getKitenJikoku() ;
 
-				//	‰w‚Åƒ\[ƒg
+				//	é§…æ™‚åˆ»ã§ã‚½ãƒ¼ãƒˆ
 				CDedRessyaSoater_Ekiatsukai	aSoater( 
 					aJikokuOrder ,
 					jikokuKitenJikoku ) ;
@@ -4423,9 +4423,9 @@ int CWjkState_Ressyahensyu::
 			else if ( getCWndDcdGrid()->getEkijikokuSort() 
 				== CWndJikokuhyou::EEkijikokuSort_Transfer )
 			{
-				//	æŒpƒ\[ƒg
+				//	ä¹—ç¶™ã‚½ãƒ¼ãƒˆ
 
-				//	i’»ƒ_ƒCƒAƒƒO‚Ìì¬
+				//	é€²æ—ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã®ä½œæˆ
 				CWnd* pWndToDisable = AfxGetMainWnd() ;
 				pWndToDisable->EnableWindow( FALSE ) ;
 
@@ -4434,7 +4434,7 @@ int CWjkState_Ressyahensyu::
 				aDlg.ShowWindow( SW_SHOW ) ;
 				aDlg.CenterWindow() ;
 
-				//	ƒ\[ƒgƒIƒuƒWƒFƒNƒg‚ğ¶¬
+				//	ã‚½ãƒ¼ãƒˆã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆ
 				CDedRessyaSoater_Transfer	aRessyaContTransferSort( 
 					getCDiagramEditDoc()->getCDedRosenFileData()
 						->getCentDedRosen() , 
@@ -4444,7 +4444,7 @@ int CWjkState_Ressyahensyu::
 					pCmd->getSizeDst()) ;
 				aRessyaContTransferSort.validate() ;
 
-				//	æŒpƒ\[ƒg
+				//	ä¹—ç¶™ã‚½ãƒ¼ãƒˆ
 				aRessyaContTransferSort.sort(
 					&aCentDedRessyaCont ,
 					&aDlg ) ;
@@ -4454,8 +4454,8 @@ int CWjkState_Ressyahensyu::
 			}
 		}
 		// --------------------------------
-		//	ƒ\[ƒg—p‚ÌƒRƒ“ƒeƒi‚Ì“à—e‚ğƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚É
-		//	‘‚«–ß‚·
+		//	ã‚½ãƒ¼ãƒˆç”¨ã®ã‚³ãƒ³ãƒ†ãƒŠã®å†…å®¹ã‚’ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«
+		//	æ›¸ãæˆ»ã™
 		// --------------------------------
 		{
 			for ( int i = 0 ; i < pCmd->getCaMuiSelect()->size() ; i ++ )
@@ -4464,7 +4464,7 @@ int CWjkState_Ressyahensyu::
 			}
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
@@ -4482,7 +4482,7 @@ OnJikokuhyouUnify_Process( BOOL bQueryEnable )
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -4495,7 +4495,7 @@ OnJikokuhyouUnify_Process( BOOL bQueryEnable )
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_All , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdYColSpec	aCdYColSpec ;
@@ -4505,20 +4505,20 @@ OnJikokuhyouUnify_Process( BOOL bQueryEnable )
 		if ( !aCdYColSpec.isEkiJikoku() &&
 			aCdYColSpec.getColumnType() != CdYColSpec::ColumnType_Track)
 		{
-			iRv = -1 ;	//	ƒZƒ‹‚ÌˆÊ’u‚ªA“Á’è‚Ì—ñÔ‚Ì“Á’è‚Ì‚ÌêŠ‚Å‚Í‚È‚¢B
+			iRv = -1 ;	//	ã‚»ãƒ«ã®ä½ç½®ãŒã€ç‰¹å®šã®åˆ—è»Šã®ç‰¹å®šã®æ™‚åˆ»ã®å ´æ‰€ã§ã¯ãªã„ã€‚
 		}
 	}
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		CWaitCursor	aCursor ;	
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†
 		// --------------------------------
 		{
-			//	i’»ƒ_ƒCƒAƒƒO‚Ìì¬
+			//	é€²æ—ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã®ä½œæˆ
 			CWnd* pWndToDisable = AfxGetMainWnd() ;
 			pWndToDisable->EnableWindow( FALSE ) ;
 			CDlgProgress	aDlg ;
@@ -4526,7 +4526,7 @@ OnJikokuhyouUnify_Process( BOOL bQueryEnable )
 			aDlg.ShowWindow( SW_SHOW ) ;
 			aDlg.CenterWindow() ;
 
-			//	•ÒW‘€ì‚ğÀs
+			//	ç·¨é›†æ“ä½œã‚’å®Ÿè¡Œ
 			{
 				Mui<CentDedRessya>* muCentDedRessya = 
 					pCmd->getCaMuiSelect() ;
@@ -4537,12 +4537,12 @@ OnJikokuhyouUnify_Process( BOOL bQueryEnable )
 					&aDlg ) ;
 			}
 
-			//	i’»ƒ_ƒCƒAƒƒO‚ğ•Â‚¶‚é
+			//	é€²æ—ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã‚’é–‰ã˜ã‚‹
 			pWndToDisable->EnableWindow( TRUE ) ;
 			aDlg.DestroyWindow() ;
 		}
 		// --------------------------------
-		//	•ªŠò‰wEŠÂóü‚Ì‰wˆµ‚¢E”Ôü‚Ì•â³
+		//	åˆ†å²é§…ãƒ»ç’°çŠ¶ç·šã®é§…æ‰±ã„ãƒ»ç•ªç·šã®è£œæ­£
 		// --------------------------------
 		for (int idx = 0; idx < pCmd->getCaMuiSelect()->size(); idx++)
 		{
@@ -4557,7 +4557,7 @@ OnJikokuhyouUnify_Process( BOOL bQueryEnable )
 				0);
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
@@ -4576,11 +4576,11 @@ int CWjkState_Ressyahensyu::
 	int iRv = 0 ;
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
-	//	ƒtƒH[ƒJƒXƒZƒ‹‚ªV‹K—ñÔˆÊ’u‚É‚ ‚é‚Æ‚«‚ÍA
-	//	uV‹K—ñÔ‚ÌƒvƒƒpƒeƒB“ü—Í‚ğs‚¢A‚»‚ê‚ğ––”ö‚É‘}“ü‚·‚év‚Æ‚¢‚¤
-	//	“®ì‚É‚È‚è‚Ü‚·B
+	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒæ–°è¦åˆ—è»Šä½ç½®ã«ã‚ã‚‹ã¨ãã¯ã€
+	//	ã€Œæ–°è¦åˆ—è»Šã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£å…¥åŠ›ã‚’è¡Œã„ã€ãã‚Œã‚’æœ«å°¾ã«æŒ¿å…¥ã™ã‚‹ã€ã¨ã„ã†
+	//	å‹•ä½œã«ãªã‚Šã¾ã™ã€‚
 	if (iRv >= 0)
 	{
 		if (getCWndDcdGrid()->getCustomizeDisplayMode())
@@ -4600,21 +4600,21 @@ int CWjkState_Ressyahensyu::
 	}
 
 	//iRv = 
-	//	-	1 ;	//	—ñÔ‚Ì’Ç‰ÁE‚Ü‚½‚ÍƒvƒƒpƒeƒB‚Ì•ÏX‚ğs‚¢‚Ü‚µ‚½B
-	//	-	0 ;	//	ƒ_ƒCƒAƒƒO‚ªƒLƒƒƒ“ƒZƒ‹‚ÅI—¹‚µ‚½‚½‚ßA
-	//			//	•ÏX‚Í”­¶‚µ‚Ü‚¹‚ñ‚Å‚µ‚½B
-	//	-	-1 ;	//	X—ñ”Ô†‚ª•s³‚Å‚·B
-	//	-	-2 ;	//	Y—ñ”Ô†‚ª•s³‚Å‚·B
+	//	-	1 ;	//	åˆ—è»Šã®è¿½åŠ ãƒ»ã¾ãŸã¯ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å¤‰æ›´ã‚’è¡Œã„ã¾ã—ãŸã€‚
+	//	-	0 ;	//	ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãŒã‚­ãƒ£ãƒ³ã‚»ãƒ«ã§çµ‚äº†ã—ãŸãŸã‚ã€
+	//			//	å¤‰æ›´ã¯ç™ºç”Ÿã—ã¾ã›ã‚“ã§ã—ãŸã€‚
+	//	-	-1 ;	//	Xåˆ—ç•ªå·ãŒä¸æ­£ã§ã™ã€‚
+	//	-	-2 ;	//	Yåˆ—ç•ªå·ãŒä¸æ­£ã§ã™ã€‚
 
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		iRv = execJikokuhyouPropDlg( bInsert , FALSE ) ;
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -4629,11 +4629,11 @@ OnJikokuhyouOperationProp_Process(BOOL bQueryEnable)
 	int iRv = 0;
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
-	//	ƒtƒH[ƒJƒXƒZƒ‹‚ªV‹K—ñÔˆÊ’u‚É‚ ‚é‚Æ‚«‚ÍA
-	//	uV‹K—ñÔ‚ÌƒvƒƒpƒeƒB“ü—Í‚ğs‚¢A‚»‚ê‚ğ––”ö‚É‘}“ü‚·‚év‚Æ‚¢‚¤
-	//	“®ì‚É‚È‚è‚Ü‚·B
+	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒæ–°è¦åˆ—è»Šä½ç½®ã«ã‚ã‚‹ã¨ãã¯ã€
+	//	ã€Œæ–°è¦åˆ—è»Šã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£å…¥åŠ›ã‚’è¡Œã„ã€ãã‚Œã‚’æœ«å°¾ã«æŒ¿å…¥ã™ã‚‹ã€ã¨ã„ã†
+	//	å‹•ä½œã«ãªã‚Šã¾ã™ã€‚
 	if (iRv >= 0)
 	{
 		if (getCWndDcdGrid()->getCustomizeDisplayMode())
@@ -4653,21 +4653,21 @@ OnJikokuhyouOperationProp_Process(BOOL bQueryEnable)
 	}
 
 	//iRv = 
-	//	-	1 ;	//	—ñÔ‚Ì’Ç‰ÁE‚Ü‚½‚ÍƒvƒƒpƒeƒB‚Ì•ÏX‚ğs‚¢‚Ü‚µ‚½B
-	//	-	0 ;	//	ƒ_ƒCƒAƒƒO‚ªƒLƒƒƒ“ƒZƒ‹‚ÅI—¹‚µ‚½‚½‚ßA
-	//			//	•ÏX‚Í”­¶‚µ‚Ü‚¹‚ñ‚Å‚µ‚½B
-	//	-	-1 ;	//	X—ñ”Ô†‚ª•s³‚Å‚·B
-	//	-	-2 ;	//	Y—ñ”Ô†‚ª•s³‚Å‚·B
+	//	-	1 ;	//	åˆ—è»Šã®è¿½åŠ ãƒ»ã¾ãŸã¯ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å¤‰æ›´ã‚’è¡Œã„ã¾ã—ãŸã€‚
+	//	-	0 ;	//	ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãŒã‚­ãƒ£ãƒ³ã‚»ãƒ«ã§çµ‚äº†ã—ãŸãŸã‚ã€
+	//			//	å¤‰æ›´ã¯ç™ºç”Ÿã—ã¾ã›ã‚“ã§ã—ãŸã€‚
+	//	-	-1 ;	//	Xåˆ—ç•ªå·ãŒä¸æ­£ã§ã™ã€‚
+	//	-	-2 ;	//	Yåˆ—ç•ªå·ãŒä¸æ­£ã§ã™ã€‚
 
 	// ****************************************************************
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		iRv = execAltJikokuhyouPropDlg(bInsert, FALSE);
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -4685,7 +4685,7 @@ int CWjkState_Ressyahensyu::
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -4698,7 +4698,7 @@ int CWjkState_Ressyahensyu::
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Select , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdYColSpec	aCdYColSpec ;
@@ -4707,39 +4707,39 @@ int CWjkState_Ressyahensyu::
 		aCdYColSpec = getCWndDcdGrid()->getYColSpecOfFocus() ;
 		if ( !aCdYColSpec.isEkiJikoku() )
 		{
-			iRv = -1 ;	//	ƒZƒ‹‚ÌˆÊ’u‚ªA“Á’è‚Ì—ñÔ‚Ì“Á’è‚Ì‚ÌêŠ‚Å‚Í‚È‚¢B
+			iRv = -1 ;	//	ã‚»ãƒ«ã®ä½ç½®ãŒã€ç‰¹å®šã®åˆ—è»Šã®ç‰¹å®šã®æ™‚åˆ»ã®å ´æ‰€ã§ã¯ãªã„ã€‚
 		}
 	}
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†
 		// --------------------------------
 		Mu<CentDedRessya*>* muCentDedRessya =  pCmd->getCaMuiSelect()->getMuPtr() ;
 		for ( int i = 0 ; iRv >= 0 && i < muCentDedRessya->size() ; i++ )
 		{
 			CentDedRessya* pCentDedRessya = muCentDedRessya->get( i ) ;
 
-			//	ƒtƒH[ƒJƒX‚Ì‚ ‚é‚ğNULL‚É‚µ‚Ü‚·B
+			//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã®ã‚ã‚‹æ™‚åˆ»ã‚’NULLæ™‚åˆ»ã«ã—ã¾ã™ã€‚
 			//
-			//	‚±‚ê‚É”º‚Á‚ÄA’…E”­‚Æ‚àNULL‚É‚È‚é‚ÆA‰wˆµ‚Í Ekiatsukai_None 
-			//	‚É‚È‚è‚Ü‚·B
+			//	ã“ã‚Œã«ä¼´ã£ã¦ã€ç€ãƒ»ç™ºã¨ã‚‚NULLæ™‚åˆ»ã«ãªã‚‹ã¨ã€é§…æ‰±ã¯ Ekiatsukai_None 
+			//	ã«ãªã‚Šã¾ã™ã€‚
 			CentDedEkiJikoku aCentDedEkiJikoku =
 				pCentDedRessya->getCentDedEkiJikoku( aCdYColSpec.getEkiOrder() ) ;
 
 			if ( aCdYColSpec.getColumnType() == CdYColSpec::ColumnType_Ekijikoku_Chaku )
-			{	//	’…‚ÌÁ‹
+			{	//	ç€æ™‚åˆ»ã®æ¶ˆå»
 				aCentDedEkiJikoku.setChakujikoku( CdDedJikoku() ) ;
 			}
 			else
-			{	//	”­‚ÌÁ‹
+			{	//	ç™ºæ™‚åˆ»ã®æ¶ˆå»
 				aCentDedEkiJikoku.setHatsujikoku( CdDedJikoku() ) ;
 			}
-			//	‚±‚ê‚É”º‚Á‚ÄA’…E”­‚Æ‚àNULL‚É‚È‚é‚ÆA‰wˆµ‚Í Ekiatsukai_None 
-			//	‚É‚È‚è‚Ü‚·B
+			//	ã“ã‚Œã«ä¼´ã£ã¦ã€ç€ãƒ»ç™ºã¨ã‚‚NULLæ™‚åˆ»ã«ãªã‚‹ã¨ã€é§…æ‰±ã¯ Ekiatsukai_None 
+			//	ã«ãªã‚Šã¾ã™ã€‚
 			if ( aCentDedEkiJikoku.getChakujikoku().isNull() && 
 				aCentDedEkiJikoku.getHatsujikoku().isNull() )
 			{
@@ -4755,21 +4755,21 @@ int CWjkState_Ressyahensyu::
 				-1,
 				pCentDedRessya,
 				0);
-			//‚ ‚é‰w‚ğ‰^s‚È‚µ‚É‚·‚é‚±‚Æ‚É‚æ‚Á‚ÄA•ªŠòEŠÂóüİ’è‚É‰e‹¿‚ğ‹y‚Ú‚·‰Â”\«‚ª‚ ‚é‚Ì‚ÅA
-			//iEkiOrder=-1‚Å’²®‚ğs‚¤
+			//ã‚ã‚‹é§…ã‚’é‹è¡Œãªã—ã«ã™ã‚‹ã“ã¨ã«ã‚ˆã£ã¦ã€åˆ†å²ãƒ»ç’°çŠ¶ç·šè¨­å®šã«å½±éŸ¿ã‚’åŠã¼ã™å¯èƒ½æ€§ãŒã‚ã‚‹ã®ã§ã€
+			//iEkiOrder=-1ã§èª¿æ•´ã‚’è¡Œã†
 
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// --------------------------------
-		//	ƒtƒH[ƒJƒX‚ğˆÚ“®
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’ç§»å‹•
 		// --------------------------------
-		//	’…”­•\¦‚ÅA’…‚ÉƒtƒH[ƒJƒX‚ª‚ ‚éê‡A
-		//	”­‚ÉˆÚ“®‚µ‚Ü‚·B
+		//	ç€ç™ºè¡¨ç¤ºã§ã€ç€ã«ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ãŒã‚ã‚‹å ´åˆã€
+		//	ç™ºã«ç§»å‹•ã—ã¾ã™ã€‚
 		{
 			moveFocusCellToNext( false ) ;
 		}
@@ -4789,7 +4789,7 @@ int CWjkState_Ressyahensyu
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -4802,7 +4802,7 @@ int CWjkState_Ressyahensyu
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Select , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdYColSpec	aCdYColSpec ;
@@ -4812,16 +4812,16 @@ int CWjkState_Ressyahensyu
 		if ( !aCdYColSpec.isEkiJikoku() &&
 			aCdYColSpec.getColumnType() != CdYColSpec::ColumnType_Track)
 		{
-			iRv = -1 ;	//	ƒZƒ‹‚ÌˆÊ’u‚ªA“Á’è‚Ì—ñÔ‚Ì“Á’è‚Ì‚ÌêŠ‚Å‚Í‚È‚¢B
+			iRv = -1 ;	//	ã‚»ãƒ«ã®ä½ç½®ãŒã€ç‰¹å®šã®åˆ—è»Šã®ç‰¹å®šã®æ™‚åˆ»ã®å ´æ‰€ã§ã¯ãªã„ã€‚
 		}
 	}
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW••ªŠò‰wEŠÂóü‚Ì‰wˆµ‚¢E”Ôü‚Ì•â³
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†ï¼†åˆ†å²é§…ãƒ»ç’°çŠ¶ç·šã®é§…æ‰±ã„ãƒ»ç•ªç·šã®è£œæ­£
 		// --------------------------------
 		Mu<CentDedRessya*>* muCentDedRessya =  pCmd->getCaMuiSelect()->getMuPtr() ;
 
@@ -4841,8 +4841,8 @@ int CWjkState_Ressyahensyu
 			}
 			aCentDedEkiJikoku.setEkiatsukai( CentDedEkiJikoku::Ekiatsukai_Tsuuka ) ;
 
-			//	‰w‚àNULL‚É‚·‚é
-			//	‚±‚Ì‚Ù‚¤‚ª•Ö—˜
+			//	é§…æ™‚åˆ»ã‚‚NULLã«ã™ã‚‹
+			//	ã“ã®ã»ã†ãŒä¾¿åˆ©
 			aCentDedEkiJikoku.setChakujikoku( CdDedJikoku() ) ;
 			aCentDedEkiJikoku.setHatsujikoku( CdDedJikoku() ) ;
 
@@ -4873,18 +4873,18 @@ int CWjkState_Ressyahensyu
 				iEkiOrder,
 				pCentDedRessya,
 				0);
-			//Œ³X’âÔE’Ê‰ß‚Ìê‡‚ÍA”Ôü‚Ì“¯Šú‚ª‚Æ‚ê‚Ä‚¢‚é‚Ì‚ÅAtrue‚Å‚àfalse‚Å‚à•Ï‚í‚ç‚È‚¢B
-			//‰^s–³‚µEŒo—R–³‚µ‚Ìê‡A‚±‚¿‚ç‚Íå–{ü‚È‚Ì‚ÅAfalse‚É‚µAŠù‚É”Ôü‚ª‚ ‚éê‡‚Í‚»‚¿‚ç‚ğ—Dæ‚·‚éB
-			//‚È‚Ì‚ÅAiEkiAtsukaiPrev‚Í0‚ÅŒÅ’è‚µ‚Ä‚µ‚Ü‚¤B
+			//å…ƒã€…åœè»Šãƒ»é€šéã®å ´åˆã¯ã€ç•ªç·šã®åŒæœŸãŒã¨ã‚Œã¦ã„ã‚‹ã®ã§ã€trueã§ã‚‚falseã§ã‚‚å¤‰ã‚ã‚‰ãªã„ã€‚
+			//é‹è¡Œç„¡ã—ãƒ»çµŒç”±ç„¡ã—ã®å ´åˆã€ã“ã¡ã‚‰ã¯ä¸»æœ¬ç·šãªã®ã§ã€falseã«ã—ã€æ—¢ã«ç•ªç·šãŒã‚ã‚‹å ´åˆã¯ãã¡ã‚‰ã‚’å„ªå…ˆã™ã‚‹ã€‚
+			//ãªã®ã§ã€iEkiAtsukaiPrevã¯0ã§å›ºå®šã—ã¦ã—ã¾ã†ã€‚
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// --------------------------------
-		//	ƒtƒH[ƒJƒX‚ğˆÚ“®
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’ç§»å‹•
 		// --------------------------------
 		if ( iRv >= 0 )
 		{
@@ -4906,7 +4906,7 @@ int CWjkState_Ressyahensyu::
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -4919,7 +4919,7 @@ int CWjkState_Ressyahensyu::
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Select , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdYColSpec	aCdYColSpec ;
@@ -4929,16 +4929,16 @@ int CWjkState_Ressyahensyu::
 		if ( !aCdYColSpec.isEkiJikoku() &&
 			aCdYColSpec.getColumnType() != CdYColSpec::ColumnType_Track)
 		{
-			iRv = -1 ;	//	ƒZƒ‹‚ÌˆÊ’u‚ªA“Á’è‚Ì—ñÔ‚Ì“Á’è‚Ì‚ÌêŠ‚Å‚Í‚È‚¢B
+			iRv = -1 ;	//	ã‚»ãƒ«ã®ä½ç½®ãŒã€ç‰¹å®šã®åˆ—è»Šã®ç‰¹å®šã®æ™‚åˆ»ã®å ´æ‰€ã§ã¯ãªã„ã€‚
 		}
 	}
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW••ªŠò‰wEŠÂóü‚Ì‰wˆµ‚¢E”Ôü‚Ì•â³
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†ï¼†åˆ†å²é§…ãƒ»ç’°çŠ¶ç·šã®é§…æ‰±ã„ãƒ»ç•ªç·šã®è£œæ­£
 		// --------------------------------
 		Mu<CentDedRessya*>* muCentDedRessya =  pCmd->getCaMuiSelect()->getMuPtr() ;
 
@@ -4952,22 +4952,22 @@ int CWjkState_Ressyahensyu::
 			
 			if ( aCentDedEkiJikoku.getEkiatsukai() == CentDedEkiJikoku::Ekiatsukai_Tsuuka )
 			{
-				//ƒtƒH[ƒJƒXƒZƒ‹‚ÌˆÊ’u‚ªw’Ê‰ßx‚È‚ç‚Îw’âÔx‚É•ÏX‚µ‚Ü‚·B‰w‚Í•ÏX‚µ‚Ü‚¹‚ñB
-				//‚Ü‚½A‰w”Ôü‚à•ÏX‚µ‚Ü‚¹‚ñ
+				//ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ä½ç½®ãŒã€é€šéã€ãªã‚‰ã°ã€åœè»Šã€ã«å¤‰æ›´ã—ã¾ã™ã€‚é§…æ™‚åˆ»ã¯å¤‰æ›´ã—ã¾ã›ã‚“ã€‚
+				//ã¾ãŸã€é§…ç•ªç·šã‚‚å¤‰æ›´ã—ã¾ã›ã‚“
 				aCentDedEkiJikoku.setEkiatsukai( CentDedEkiJikoku::Ekiatsukai_Teisya ) ;
 			}
 			else if (aCentDedEkiJikoku.getEkiatsukai() == CentDedEkiJikoku::Ekiatsukai_Teisya)
 			{
-				//ƒtƒH[ƒJƒXƒZƒ‹‚ÌˆÊ’u‚Ìw‰wx‚ªw’âÔx‚È‚çA
-				//w’Ê‰ßx‚É•ÏX‚µ‚Ü‚·B‰w‚Í•ÏX‚µ‚Ü‚¹‚ñB
-				//‚Ü‚½A‰w”Ôü‚à•ÏX‚µ‚Ü‚¹‚ñ
+				//ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ä½ç½®ã®ã€é§…æ™‚åˆ»ã€ãŒã€åœè»Šã€ãªã‚‰ã€
+				//ã€é€šéã€ã«å¤‰æ›´ã—ã¾ã™ã€‚é§…æ™‚åˆ»ã¯å¤‰æ›´ã—ã¾ã›ã‚“ã€‚
+				//ã¾ãŸã€é§…ç•ªç·šã‚‚å¤‰æ›´ã—ã¾ã›ã‚“
 				aCentDedEkiJikoku.setEkiatsukai( CentDedEkiJikoku::Ekiatsukai_Tsuuka ) ;
 			}
 			else
 			{
-				//ƒtƒH[ƒJƒXƒZƒ‹‚ÌˆÊ’u‚Ìw‰wx‚ªw‰^s‚È‚µxwŒo—R‚È‚µx‚È‚çA
-				//w’Ê‰ßx‚É•ÏX‚µ‚Ü‚·B‰w‚Í•ÏX‚µ‚Ü‚¹‚ñB
-				//‚Ü‚½A—ñÔ”Ôü‚ğAŠî€”Ôü‚Éİ’è‚µ‚Ü‚·
+				//ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ä½ç½®ã®ã€é§…æ™‚åˆ»ã€ãŒã€é‹è¡Œãªã—ã€ã€çµŒç”±ãªã—ã€ãªã‚‰ã€
+				//ã€é€šéã€ã«å¤‰æ›´ã—ã¾ã™ã€‚é§…æ™‚åˆ»ã¯å¤‰æ›´ã—ã¾ã›ã‚“ã€‚
+				//ã¾ãŸã€åˆ—è»Šç•ªç·šã‚’ã€åŸºæº–ç•ªç·šã«è¨­å®šã—ã¾ã™
 				aCentDedEkiJikoku.setEkiatsukai(CentDedEkiJikoku::Ekiatsukai_Tsuuka);
 
 				int iStandardRessyaTrackIndex[2] = { 0,0 };
@@ -4995,25 +4995,25 @@ int CWjkState_Ressyahensyu::
 				iEkiOrder,
 				pCentDedRessya,
 				0);
-			//Œ³X’âÔE’Ê‰ß‚Ìê‡‚ÍA”Ôü‚Ì“¯Šú‚ª‚Æ‚ê‚Ä‚¢‚é‚Ì‚ÅAtrue‚Å‚àfalse‚Å‚à•Ï‚í‚ç‚È‚¢B
-			//‰^s–³‚µEŒo—R–³‚µ‚Ìê‡A‚±‚¿‚ç‚Íå–{ü‚È‚Ì‚ÅAfalse‚É‚µAŠù‚É”Ôü‚ª‚ ‚éê‡‚Í‚»‚¿‚ç‚ğ—Dæ‚·‚éB
-			//‚È‚Ì‚ÅAiEkiAtsukaiPrev‚Í0‚ÅŒÅ’è‚µ‚Ä‚µ‚Ü‚¤B
+			//å…ƒã€…åœè»Šãƒ»é€šéã®å ´åˆã¯ã€ç•ªç·šã®åŒæœŸãŒã¨ã‚Œã¦ã„ã‚‹ã®ã§ã€trueã§ã‚‚falseã§ã‚‚å¤‰ã‚ã‚‰ãªã„ã€‚
+			//é‹è¡Œç„¡ã—ãƒ»çµŒç”±ç„¡ã—ã®å ´åˆã€ã“ã¡ã‚‰ã¯ä¸»æœ¬ç·šãªã®ã§ã€falseã«ã—ã€æ—¢ã«ç•ªç·šãŒã‚ã‚‹å ´åˆã¯ãã¡ã‚‰ã‚’å„ªå…ˆã™ã‚‹ã€‚
+			//ãªã®ã§ã€iEkiAtsukaiPrevã¯0ã§å›ºå®šã—ã¦ã—ã¾ã†ã€‚
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// --------------------------------
-		//	ƒtƒH[ƒJƒX‚ğˆÚ“®
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’ç§»å‹•
 		// --------------------------------
 		if ( iRv >= 0 )
 		{
 			moveFocusCellToNext( true ) ;
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -5031,7 +5031,7 @@ int CWjkState_Ressyahensyu::
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -5044,7 +5044,7 @@ int CWjkState_Ressyahensyu::
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Select , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdYColSpec	aCdYColSpec ;
@@ -5054,16 +5054,16 @@ int CWjkState_Ressyahensyu::
 		if ( !aCdYColSpec.isEkiJikoku() &&
 			aCdYColSpec.getColumnType() != CdYColSpec::ColumnType_Track)
 		{
-			iRv = -1 ;	//	ƒZƒ‹‚ÌˆÊ’u‚ªA“Á’è‚Ì—ñÔ‚Ì“Á’è‚Ì‚ÌêŠ‚Å‚Í‚È‚¢B
+			iRv = -1 ;	//	ã‚»ãƒ«ã®ä½ç½®ãŒã€ç‰¹å®šã®åˆ—è»Šã®ç‰¹å®šã®æ™‚åˆ»ã®å ´æ‰€ã§ã¯ãªã„ã€‚
 		}
 	}
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW••ªŠò‰wEŠÂóü‚Ì‰wˆµ‚¢E”Ôü‚Ì•â³
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†ï¼†åˆ†å²é§…ãƒ»ç’°çŠ¶ç·šã®é§…æ‰±ã„ãƒ»ç•ªç·šã®è£œæ­£
 		// --------------------------------
 		Mu<CentDedRessya*>* muCentDedRessya =  pCmd->getCaMuiSelect()->getMuPtr() ;
 		for ( int i = 0 ; iRv >= 0 && i < muCentDedRessya->size() ; i++ )
@@ -5072,7 +5072,7 @@ int CWjkState_Ressyahensyu::
 			CentDedEkiJikoku aCentDedEkiJikoku =
 					pCentDedRessya->getCentDedEkiJikoku( aCdYColSpec.getEkiOrder() ) ;
 
-			//Ver2.0b’è‘[’u ‰wˆµ‚¢‚ğ‰^s‚È‚µ‚É•ÏX
+			//Ver2.0æš«å®šæªç½® é§…æ‰±ã„ã‚’é‹è¡Œãªã—ã«å¤‰æ›´
 			aCentDedEkiJikoku.setEkiatsukai( 
 				CentDedEkiJikoku::Ekiatsukai_None ) ;
 
@@ -5084,24 +5084,24 @@ int CWjkState_Ressyahensyu::
 				-1,
 				pCentDedRessya,
 				0);
-			//‚ ‚é‰w‚ğŒo—R‚È‚µ‚É‚·‚é‚±‚Æ‚É‚æ‚Á‚ÄA•ªŠòEŠÂóüİ’è‚É‰e‹¿‚ğ‹y‚Ú‚·‰Â”\«‚ª‚ ‚é‚Ì‚ÅA
-			//iEkiOrder=-1‚Å’²®‚ğs‚¤
+			//ã‚ã‚‹é§…ã‚’çµŒç”±ãªã—ã«ã™ã‚‹ã“ã¨ã«ã‚ˆã£ã¦ã€åˆ†å²ãƒ»ç’°çŠ¶ç·šè¨­å®šã«å½±éŸ¿ã‚’åŠã¼ã™å¯èƒ½æ€§ãŒã‚ã‚‹ã®ã§ã€
+			//iEkiOrder=-1ã§èª¿æ•´ã‚’è¡Œã†
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// --------------------------------
-		//	ƒtƒH[ƒJƒX‚ğˆÚ“®
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’ç§»å‹•
 		// --------------------------------
 		if ( iRv >= 0 )
 		{
 			moveFocusCellToNext( true ) ;
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -5120,7 +5120,7 @@ int CWjkState_Ressyahensyu::
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -5133,7 +5133,7 @@ int CWjkState_Ressyahensyu::
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Select , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdYColSpec	aCdYColSpec ;
@@ -5143,41 +5143,41 @@ int CWjkState_Ressyahensyu::
 		if ( !aCdYColSpec.isEkiJikoku() &&
 			aCdYColSpec.getColumnType() != CdYColSpec::ColumnType_Track)
 		{
-			iRv = -1 ;	//	ƒZƒ‹‚ÌˆÊ’u‚ªA“Á’è‚Ì—ñÔ‚Ì“Á’è‚Ì‚ÌêŠ‚Å‚Í‚È‚¢B
+			iRv = -1 ;	//	ã‚»ãƒ«ã®ä½ç½®ãŒã€ç‰¹å®šã®åˆ—è»Šã®ç‰¹å®šã®æ™‚åˆ»ã®å ´æ‰€ã§ã¯ãªã„ã€‚
 		}
 	}
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†
 		// --------------------------------
 		Mu<CentDedRessya*>* muCentDedRessya =  pCmd->getCaMuiSelect()->getMuPtr() ;
 		for ( int i = 0 ; iRv >= 0 && i < muCentDedRessya->size() ; i++ )
 		{
 			CentDedRessya* pCentDedRessya = muCentDedRessya->get( i ) ;
 
-			//	ƒRƒ“ƒeƒi‚Ì—ñÔ‚ğ•ÒW
+			//	ã‚³ãƒ³ãƒ†ãƒŠã®åˆ—è»Šã‚’ç·¨é›†
 			pCentDedRessya->setSihatsuEki(  aCdYColSpec.getEkiOrder() ) ;
 
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// --------------------------------
-		//	ƒtƒH[ƒJƒX‚ğˆÚ“®
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’ç§»å‹•
 		// --------------------------------
 		if ( iRv >= 0 )
 		{
 			moveFocusCellToNext( true ) ;
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -5196,7 +5196,7 @@ int CWjkState_Ressyahensyu::
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -5209,7 +5209,7 @@ int CWjkState_Ressyahensyu::
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Select , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdYColSpec	aCdYColSpec ;
@@ -5219,41 +5219,41 @@ int CWjkState_Ressyahensyu::
 		if ( !aCdYColSpec.isEkiJikoku() &&
 			aCdYColSpec.getColumnType() != CdYColSpec::ColumnType_Track)
 		{
-			iRv = -1 ;	//	ƒZƒ‹‚ÌˆÊ’u‚ªA“Á’è‚Ì—ñÔ‚Ì“Á’è‚Ì‚ÌêŠ‚Å‚Í‚È‚¢B
+			iRv = -1 ;	//	ã‚»ãƒ«ã®ä½ç½®ãŒã€ç‰¹å®šã®åˆ—è»Šã®ç‰¹å®šã®æ™‚åˆ»ã®å ´æ‰€ã§ã¯ãªã„ã€‚
 		}
 	}
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†
 		// --------------------------------
 		Mu<CentDedRessya*>* muCentDedRessya =  pCmd->getCaMuiSelect()->getMuPtr() ;
 		for ( int i = 0 ; iRv >= 0 && i < muCentDedRessya->size() ; i++ )
 		{
 			CentDedRessya* pCentDedRessya = muCentDedRessya->get( i ) ;
 
-			//	ƒRƒ“ƒeƒi‚Ì—ñÔ‚ğ•ÒW
+			//	ã‚³ãƒ³ãƒ†ãƒŠã®åˆ—è»Šã‚’ç·¨é›†
 			pCentDedRessya->setSyuuchakuEki(  aCdYColSpec.getEkiOrder() ) ;
 
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// --------------------------------
-		//	ƒtƒH[ƒJƒX‚ğˆÚ“®
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’ç§»å‹•
 		// --------------------------------
 		if ( iRv >= 0 )
 		{
 			moveFocusCellToNext( true ) ;
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -5272,7 +5272,7 @@ int CWjkState_Ressyahensyu::
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -5285,7 +5285,7 @@ int CWjkState_Ressyahensyu::
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Focus , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdYColSpec	aCdYColSpec ;
@@ -5295,7 +5295,7 @@ int CWjkState_Ressyahensyu::
 		if ( !aCdYColSpec.isEkiJikoku() &&
 			aCdYColSpec.getColumnType() != CdYColSpec::ColumnType_Track)
 		{
-			iRv = -1 ;	//	ƒZƒ‹‚ÌˆÊ’u‚ªA“Á’è‚Ì—ñÔ‚Ì“Á’è‚Ì‚ÌêŠ‚Å‚Í‚È‚¢B
+			iRv = -1 ;	//	ã‚»ãƒ«ã®ä½ç½®ãŒã€ç‰¹å®šã®åˆ—è»Šã®ç‰¹å®šã®æ™‚åˆ»ã®å ´æ‰€ã§ã¯ãªã„ã€‚
 		}
 	}
 	const CentDedRessyaCont* pCentDedRessyaCont = NULL ;
@@ -5309,21 +5309,21 @@ int CWjkState_Ressyahensyu::
 		pCentDedRessya = pCentDedRessyaCont->getMuPtr()->get( aCdXColSpec.getRessyaIndex() ) ;
 	}
 
-	//›“r’†‰w~‚Ü‚è—ñÔ‚ğæ“¾@@@@@@CentDedRessyaCont
-	//[ƒtƒH[ƒJƒXƒZƒ‹‚ÌˆÊ’u‚ªA‚»‚Ì—ñÔ‚ÌI’…‰wOrder‚æ‚èã]¨ƒGƒ‰[
+	//â—‹é€”ä¸­é§…æ­¢ã¾ã‚Šåˆ—è»Šã‚’å–å¾—ã€€ã€€ã€€ã€€ã€€ã€€CentDedRessyaCont
+	//â—‡[ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ä½ç½®ãŒã€ãã®åˆ—è»Šã®çµ‚ç€é§…Orderã‚ˆã‚Šä¸Š]â†’ã‚¨ãƒ©ãƒ¼
 	if ( iRv >= 0 )
 	{
 		if ( aCdYColSpec.getEkiOrder() < pCentDedRessya->getSyuuchakuEki() )
 		{
-			iRv = -13;	//	ƒZƒ‹‚ÌˆÊ’u‚ªAI’…‰w‚æ‚èã
+			iRv = -13;	//	ã‚»ãƒ«ã®ä½ç½®ãŒã€çµ‚ç€é§…ã‚ˆã‚Šä¸Š
 		}
 	}
-	//idxRessyaSyuuchaku = ƒtƒH[ƒJƒX‚Ì‚ ‚éˆÊ’u‚Ì—ñÔ
-	//pCentDedRessya = ƒtƒH[ƒJƒXƒZƒ‹‚Ì‚ ‚éˆÊ’u‚Ì—ñÔ
+	//idxRessyaSyuuchaku = ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã®ã‚ã‚‹ä½ç½®ã®åˆ—è»Š
+	//pCentDedRessya = ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ã‚ã‚‹ä½ç½®ã®åˆ—è»Š
 
 
-	//›‘Î‰‚·‚é“r’†‰wn”­—ñÔ‚ğŒŸõ      CentDedRessyaCont
-	//[‘Î‰‚·‚é—ñÔ‚ª‚È‚¢]¨ˆ—I—¹
+	//â—‹å¯¾å¿œã™ã‚‹é€”ä¸­é§…å§‹ç™ºåˆ—è»Šã‚’æ¤œç´¢      CentDedRessyaCont
+	//â—‡[å¯¾å¿œã™ã‚‹åˆ—è»ŠãŒãªã„]â†’å‡¦ç†çµ‚äº†
 	int idxRessyaSihatsu = -1 ;
 	if ( iRv >= 0 )
 	{
@@ -5332,25 +5332,25 @@ int CWjkState_Ressyahensyu::
 			aCdYColSpec.getEkiOrder() ) ;
 		if ( idxRessyaSihatsu < 0 )
 		{
-			iRv = -14 ;	//	‘Î‰‚·‚én”­—ñÔ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB
+			iRv = -14 ;	//	å¯¾å¿œã™ã‚‹å§‹ç™ºåˆ—è»ŠãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
-	//idxRessyaSihatsu = ‘Î‰‚·‚én”­—ñÔ‚ÌƒCƒ“ƒfƒNƒX
+	//idxRessyaSihatsu = å¯¾å¿œã™ã‚‹å§‹ç™ºåˆ—è»Šã®ã‚¤ãƒ³ãƒ‡ã‚¯ã‚¹
 
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğ¶¬
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆ
 		// --------------------------------
 		if ( !getCWndDcdGrid()->createCmd( idxRessyaSyuuchaku , idxRessyaSihatsu - idxRessyaSyuuchaku + 1  , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg“à‚Ì—ñÔ‚ğ•ÒW••ªŠò‰wEŠÂóü‚Ì‰wˆµ‚¢E”Ôü‚Ì•â³
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆå†…ã®åˆ—è»Šã‚’ç·¨é›†ï¼†åˆ†å²é§…ãƒ»ç’°çŠ¶ç·šã®é§…æ‰±ã„ãƒ»ç•ªç·šã®è£œæ­£
 		// --------------------------------
 		if ( iRv >= 0 )
 		{
@@ -5358,11 +5358,11 @@ int CWjkState_Ressyahensyu::
 			CentDedRessya aCentDedRessyaToDirect = pCmd->getCaMuiSelect()->get( INT_MAX ) ;
 			int iResult = aRessyaSyuuchaku.direct( aCentDedRessyaToDirect ) ;
 			//iResult = 
-			//-	-1 ;	//	‚±‚Ì—ñÔ‚É‚Í‰w‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
-			//-	-2 ;	//	n”­—ñÔ‚É‚Í‰w‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
-			//-	-3 ;	//	aRessyaSihatsu ‚Æ‚Ì’¼’Ê‰»‚Í‚Å‚«‚Ü‚¹‚ñB\n
-			//	//aRessyaSihatsu ‚Ìn”­‰w‚ÍA	this ‚ÌI’…‰w‚Æ“¯‚¶‚©A
-			//	//	‚»‚êˆÈ~‚Å‚È‚­‚Ä‚Í‚È‚è‚Ü‚¹‚ñB
+			//-	-1 ;	//	ã“ã®åˆ—è»Šã«ã¯é§…æ™‚åˆ»ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
+			//-	-2 ;	//	å§‹ç™ºåˆ—è»Šã«ã¯é§…æ™‚åˆ»ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
+			//-	-3 ;	//	aRessyaSihatsu ã¨ã®ç›´é€šåŒ–ã¯ã§ãã¾ã›ã‚“ã€‚Â¥n
+			//	//aRessyaSihatsu ã®å§‹ç™ºé§…ã¯ã€	this ã®çµ‚ç€é§…ã¨åŒã˜ã‹ã€
+			//	//	ãã‚Œä»¥é™ã§ãªãã¦ã¯ãªã‚Šã¾ã›ã‚“ã€‚
 
 			if ( iResult < 0 )
 			{
@@ -5379,13 +5379,13 @@ int CWjkState_Ressyahensyu::
 			}
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// --------------------------------
-		//	ƒtƒH[ƒJƒX‚ğˆÚ“®
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’ç§»å‹•
 		// --------------------------------
 		if ( iRv >= 0 )
 		{
@@ -5393,7 +5393,7 @@ int CWjkState_Ressyahensyu::
 		}
 
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 		CString strErrorMsg ;
 		if ( iRv < 0 )
@@ -5427,7 +5427,7 @@ int CWjkState_Ressyahensyu::
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -5440,7 +5440,7 @@ int CWjkState_Ressyahensyu::
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Focus , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdYColSpec	aCdYColSpec ;
@@ -5450,7 +5450,7 @@ int CWjkState_Ressyahensyu::
 		if ( !aCdYColSpec.isEkiJikoku() &&
 			aCdYColSpec.getColumnType() != CdYColSpec::ColumnType_Track)
 		{
-			iRv = -1 ;	//	ƒZƒ‹‚ÌˆÊ’u‚ªA“Á’è‚Ì—ñÔ‚Ì“Á’è‚Ì‚ÌêŠ‚Å‚Í‚È‚¢B
+			iRv = -1 ;	//	ã‚»ãƒ«ã®ä½ç½®ãŒã€ç‰¹å®šã®åˆ—è»Šã®ç‰¹å®šã®æ™‚åˆ»ã®å ´æ‰€ã§ã¯ãªã„ã€‚
 		}
 	}
 	const CentDedRessyaCont* pCentDedRessyaCont = NULL ;
@@ -5462,20 +5462,20 @@ int CWjkState_Ressyahensyu::
 		pCentDedRessya = pCentDedRessyaCont->getMuPtr()->get( aCdXColSpec.getRessyaIndex() ) ;
 	}
 
-	//œƒƒjƒ…[[‰w]-[•ª’f]
-	//«
-	//›•ª’f‚·‚é—ñÔ‚ğæ“¾	CentDedRessyaCont
-	//[!(‚»‚Ì—ñÔ‚Ìn”­‰wOrder<ƒtƒH[ƒJƒXƒZƒ‹‚ÌˆÊ’u<I’…‰wOrder)]¨ƒGƒ‰[
+	//â—ãƒ¡ãƒ‹ãƒ¥ãƒ¼[é§…æ™‚åˆ»]-[åˆ†æ–­]
+	//â†“
+	//â—‹åˆ†æ–­ã™ã‚‹åˆ—è»Šã‚’å–å¾—	CentDedRessyaCont
+	//â—‡[!(ãã®åˆ—è»Šã®å§‹ç™ºé§…Order<ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ä½ç½®<çµ‚ç€é§…Order)]â†’ã‚¨ãƒ©ãƒ¼
 	if ( iRv >= 0 )
 	{
 		if ( !( pCentDedRessya->getSihatsuEki() < aCdYColSpec.getEkiOrder() 
 			&& aCdYColSpec.getEkiOrder() < pCentDedRessya->getSyuuchakuEki()
 		) )
 		{
-			iRv = -21 ;	//	‚»‚Ì—ñÔ‚Ìn”­‰wEI’…‰w‚Å‚Í•ª’f‚Í‚Å‚«‚Ü‚¹‚ñB
+			iRv = -21 ;	//	ãã®åˆ—è»Šã®å§‹ç™ºé§…ãƒ»çµ‚ç€é§…ã§ã¯åˆ†æ–­ã¯ã§ãã¾ã›ã‚“ã€‚
 		}
 	}
-	//[‰w‚É’…‚à”­‚àw’è‚³‚ê‚Ä‚¢‚È‚¢‰w‚Å‚ÍA‚±‚Ì‹@”\‚Íg—p‚Å‚«‚Ü‚¹‚ñ]¨ƒGƒ‰[
+	//â—‡[é§…æ™‚åˆ»ã«ç€æ™‚åˆ»ã‚‚ç™ºæ™‚åˆ»ã‚‚æŒ‡å®šã•ã‚Œã¦ã„ãªã„é§…ã§ã¯ã€ã“ã®æ©Ÿèƒ½ã¯ä½¿ç”¨ã§ãã¾ã›ã‚“]â†’ã‚¨ãƒ©ãƒ¼
 	if ( iRv >= 0 )
 	{
 		CentDedEkiJikoku	aCentDedEkiJikoku 
@@ -5484,16 +5484,16 @@ int CWjkState_Ressyahensyu::
 		if ( aCentDedEkiJikoku.getChakujikoku().isNull() && 
 			aCentDedEkiJikoku.getHatsujikoku().isNull() )
 		{
-			iRv = -22 ;	//	‰w‚É’…‚à”­‚àw’è‚³‚ê‚Ä‚¢‚È‚¢‰w‚Å‚ÍA‚±‚Ì‹@”\‚Íg—p‚Å‚«‚Ü‚¹‚ñ
+			iRv = -22 ;	//	é§…æ™‚åˆ»ã«ç€æ™‚åˆ»ã‚‚ç™ºæ™‚åˆ»ã‚‚æŒ‡å®šã•ã‚Œã¦ã„ãªã„é§…ã§ã¯ã€ã“ã®æ©Ÿèƒ½ã¯ä½¿ç”¨ã§ãã¾ã›ã‚“
 		}
 	}
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg“à‚Ì—ñÔ‚ğ•ÒW
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆå†…ã®åˆ—è»Šã‚’ç·¨é›†
 		// --------------------------------
 		CentDedRessya aRessyaSyuuchaku( getCentDedRessyaCont()->createNullRessya() ) ;
 		CentDedRessya aRessyaSihatsu( getCentDedRessyaCont()->createNullRessya() ) ;
@@ -5506,7 +5506,7 @@ int CWjkState_Ressyahensyu::
 				&aRessyaSyuuchaku, 
 				&aRessyaSihatsu ) ;
 			//iResult = 
-			//	-	-1 ;	//	w’è‚Ì‰wOrder‚Å‚ÍA•ª’f‚Í‚Å‚«‚Ü‚¹‚ñ
+			//	-	-1 ;	//	æŒ‡å®šã®é§…Orderã§ã¯ã€åˆ†æ–­ã¯ã§ãã¾ã›ã‚“
 			if ( iResult < 0 )
 			{
 				iRv = iResult - 30 ;
@@ -5517,24 +5517,24 @@ int CWjkState_Ressyahensyu::
 				pCmd->getCaMuiSelect()->insert( aRessyaSihatsu , 1 ) ; 
 			}
 			//iRv = 
-			//	-	-31 ;	//	w’è‚Ì‰wOrder‚Å‚ÍA•ª’f‚Í‚Å‚«‚Ü‚¹‚ñ
+			//	-	-31 ;	//	æŒ‡å®šã®é§…Orderã§ã¯ã€åˆ†æ–­ã¯ã§ãã¾ã›ã‚“
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		if ( iRv >= 0 )
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// --------------------------------
-		//	ƒtƒH[ƒJƒX‚ğˆÚ“®
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’ç§»å‹•
 		// --------------------------------
 		if ( iRv >= 0 ){
 			moveFocusCellToNext( true ) ;
 		}
 
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 		CString strErrorMsg ;
 		if ( iRv < 0 )
@@ -5561,7 +5561,7 @@ int CWjkState_Ressyahensyu::
 {
 	int iRv = 0 ;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -5576,18 +5576,18 @@ int CWjkState_Ressyahensyu::
 	int iResult = pCState->canEnter() ;
 	if ( iResult < 0 )
 	{
-		iRv = -1 ;	//	Œ»İA‚±‚ÌƒRƒ}ƒ“ƒh‚Í‘I‘ğ‚Å‚«‚Ü‚¹‚ñ
+		iRv = -1 ;	//	ç¾åœ¨ã€ã“ã®ã‚³ãƒãƒ³ãƒ‰ã¯é¸æŠã§ãã¾ã›ã‚“
 	}
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		getCWndDcdGrid()->getStateMachine()->setCurrentStateIdx( 
 			CWndJikokuhyou::StateIdx_Renzoku ) ;
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 	}
 	return iRv ;
@@ -5604,11 +5604,11 @@ int CWjkState_Ressyahensyu::
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 
-	//Ver2.0 ì‹ÆƒAƒbƒvƒf[ƒg‚É”º‚¢A“––Ê–³Œø‰»B
-	//Ver2.2.5 d—l‚ğ’²®‚µ‚ÄÄÀ‘•
+	//Ver2.0 ä½œæ¥­ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã«ä¼´ã„ã€å½“é¢ç„¡åŠ¹åŒ–ã€‚
+	//Ver2.2.5 ä»•æ§˜ã‚’èª¿æ•´ã—ã¦å†å®Ÿè£…
 
 	if (iRv >= 0)
 	{
@@ -5621,7 +5621,7 @@ int CWjkState_Ressyahensyu::
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Select , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdYColSpec	aCdYColSpec ;
@@ -5631,7 +5631,7 @@ int CWjkState_Ressyahensyu::
 		if ( !aCdYColSpec.isEkiJikoku() &&
 			aCdYColSpec.getColumnType() != CdYColSpec::ColumnType_Track)
 		{
-			iRv = -1 ;	//	ƒZƒ‹‚ÌˆÊ’u‚ªA“Á’è‚Ì—ñÔ‚Ì“Á’è‚Ì‚ÌêŠ‚Å‚Í‚È‚¢B
+			iRv = -1 ;	//	ã‚»ãƒ«ã®ä½ç½®ãŒã€ç‰¹å®šã®åˆ—è»Šã®ç‰¹å®šã®æ™‚åˆ»ã®å ´æ‰€ã§ã¯ãªã„ã€‚
 		}
 	}
 	if ( iRv >= 0 ){
@@ -5639,18 +5639,18 @@ int CWjkState_Ressyahensyu::
 			aCdYColSpec.getEkiOrder() 
 			< getCentDedRessyaCont()->getEkiCount() - 1 ) )
 		{
-			iRv = -2 ;	//	ˆê”Ô‰º‚Ì‰w‚Å‚ÍA‚±‚Ì‘€ì‚Í‚Å‚«‚Ü‚¹‚ñB
+			iRv = -2 ;	//	ä¸€ç•ªä¸‹ã®é§…ã§ã¯ã€ã“ã®æ“ä½œã¯ã§ãã¾ã›ã‚“ã€‚
 		}
 	}
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW&•ªŠò‰wEŠÂóü‚Ì‰wˆµ‚¢E”Ôü‚Ì•â³
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†&åˆ†å²é§…ãƒ»ç’°çŠ¶ç·šã®é§…æ‰±ã„ãƒ»ç•ªç·šã®è£œæ­£
 		// --------------------------------
-		//”Ôü‚ÍŒJ‚è‰º‚°‚ğs‚í‚È‚¢A“r’†‰w‚Ìì‹Æ‚Ííœ‚Æ‚È‚éAŒJ‚è‰º‚°I—¹Œã‚ÉAdjustOperation‚ğs‚¢AI—¹ì‹Æ“™‚Ì’²®‚ğs‚¤B
+		//ç•ªç·šã¯ç¹°ã‚Šä¸‹ã’ã‚’è¡Œã‚ãªã„ã€é€”ä¸­é§…ã®ä½œæ¥­ã¯å‰Šé™¤ã¨ãªã‚‹ã€ç¹°ã‚Šä¸‹ã’çµ‚äº†å¾Œã«AdjustOperationã‚’è¡Œã„ã€çµ‚äº†ä½œæ¥­ç­‰ã®èª¿æ•´ã‚’è¡Œã†ã€‚
 		const CentDedRessyaCont* pCentDedRessyaCont  =  getCentDedRessyaCont() ;
 
 		Mu<CentDedRessya*>* muCentDedRessya =  pCmd->getCaMuiSelect()->getMuPtr() ;
@@ -5666,12 +5666,12 @@ int CWjkState_Ressyahensyu::
 				CentDedEkiJikoku aCentDedEkiJikoku = 
 					pCentDedRessya->getCentDedEkiJikoku( iEkiOrderCurr - 1 ) ;
 				/**
-					“\‚è•t‚¯Œ³‚Ææ‚Ì‰wˆµ‚¢‚É‚æ‚Á‚Ä‚ÍAå–{ü(ƒfƒtƒHƒ‹ƒg”Ôü)‚Ìæ“¾‚ª•K—v‚É‚È‚è‚Ü‚·B
-					Œ³(iEkiOrderCurr - 1):æ(iEkiOrderCurr)
-					‰^s‚È‚µ:‰^s‚È‚µ@”Ôüˆ—‚Í•K—v‚È‚¢
-					‰^s‚È‚µ:’âÔ’Ê‰ß@‰^s‚È‚µ‚É•Ï‚í‚é‚Ì‚Å”Ôüˆ—‚Í•K—v‚È‚¢
-					’âÔ’Ê‰ß:‰^s‚È‚µ@’âÔ’Ê‰ß‚É•Ï‚í‚é‚Ì‚ÅAå–{ü(ƒfƒtƒHƒ‹ƒg”Ôü)‚ğæ“¾‚·‚é•K—v‚ª‚ ‚é
-					’âÔ’Ê‰ß:’âÔ’Ê‰ß@æ‚©‚çæ“¾‚µ‚½Buffer‚ğ‚»‚Ì‚Ü‚Ü“K—pB
+					è²¼ã‚Šä»˜ã‘å…ƒã¨å…ˆã®é§…æ‰±ã„ã«ã‚ˆã£ã¦ã¯ã€ä¸»æœ¬ç·š(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆç•ªç·š)ã®å–å¾—ãŒå¿…è¦ã«ãªã‚Šã¾ã™ã€‚
+					å…ƒ(iEkiOrderCurr - 1):å…ˆ(iEkiOrderCurr)
+					é‹è¡Œãªã—:é‹è¡Œãªã—ã€€ç•ªç·šå‡¦ç†ã¯å¿…è¦ãªã„
+					é‹è¡Œãªã—:åœè»Šé€šéã€€é‹è¡Œãªã—ã«å¤‰ã‚ã‚‹ã®ã§ç•ªç·šå‡¦ç†ã¯å¿…è¦ãªã„
+					åœè»Šé€šé:é‹è¡Œãªã—ã€€åœè»Šé€šéã«å¤‰ã‚ã‚‹ã®ã§ã€ä¸»æœ¬ç·š(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆç•ªç·š)ã‚’å–å¾—ã™ã‚‹å¿…è¦ãŒã‚ã‚‹
+					åœè»Šé€šé:åœè»Šé€šéã€€å…ˆã‹ã‚‰å–å¾—ã—ãŸBufferã‚’ãã®ã¾ã¾é©ç”¨ã€‚
 				*/
 				if (pCentDedRessya->getCentDedEkiJikoku(iEkiOrderCurr).getEkiatsukai() == CentDedEkiJikoku::Ekiatsukai_None &&
 					aCentDedEkiJikoku.getEkiatsukai() != CentDedEkiJikoku::Ekiatsukai_None)
@@ -5702,8 +5702,8 @@ int CWjkState_Ressyahensyu::
 			}
 			CentDedEkiJikoku aCentDedEkiJikoku ;
 
-			//‘}“ü‚ğs‚Á‚½‘OŒã‚Ì‰w‚ª‚Æ‚à‚É‰^s‚È‚µˆÈŠO‚Ìê‡‚ÍA‘}“ü‚µ‚½‰w‚Ì‰wˆµ‚¢‚ğ’Ê‰ß‚É‚µ‚Ü‚·B
-			//‘}“ü‰ÓŠ‚ªæ“ª‰w‚Ìê‡‚ÍAŒã‚Ì‰w‚ª‰^s‚È‚µˆÈŠO‚Å‚àA‰^s‚È‚µ‚Ì‚Ü‚Ü‚É‚µ‚Ü‚·B
+			//æŒ¿å…¥ã‚’è¡Œã£ãŸå‰å¾Œã®é§…ãŒã¨ã‚‚ã«é‹è¡Œãªã—ä»¥å¤–ã®å ´åˆã¯ã€æŒ¿å…¥ã—ãŸé§…ã®é§…æ‰±ã„ã‚’é€šéã«ã—ã¾ã™ã€‚
+			//æŒ¿å…¥ç®‡æ‰€ãŒå…ˆé ­é§…ã®å ´åˆã¯ã€å¾Œã®é§…ãŒé‹è¡Œãªã—ä»¥å¤–ã§ã‚‚ã€é‹è¡Œãªã—ã®ã¾ã¾ã«ã—ã¾ã™ã€‚
 			if (pCentDedRessya->getCentDedEkiJikoku(iEkiOrderCurr + 1).getEkiatsukai() != CentDedEkiJikoku::Ekiatsukai_None &&
 				iEkiOrderCurr != 0 &&
 				pCentDedRessya->getCentDedEkiJikoku(iEkiOrderCurr - 1).getEkiatsukai() != CentDedEkiJikoku::Ekiatsukai_None)
@@ -5730,13 +5730,13 @@ int CWjkState_Ressyahensyu::
 				0);
 		}	
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 	}
 	return iRv ;
@@ -5755,10 +5755,10 @@ int CWjkState_Ressyahensyu::
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 
-	//Ver2.0 ì‹ÆƒAƒbƒvƒf[ƒg‚É”º‚¢A“––Ê–³Œø‰»B
+	//Ver2.0 ä½œæ¥­ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã«ä¼´ã„ã€å½“é¢ç„¡åŠ¹åŒ–ã€‚
 
 	if (iRv >= 0)
 	{
@@ -5771,7 +5771,7 @@ int CWjkState_Ressyahensyu::
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Select , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdYColSpec	aCdYColSpec ;
@@ -5781,18 +5781,18 @@ int CWjkState_Ressyahensyu::
 		if ( !aCdYColSpec.isEkiJikoku() &&
 			aCdYColSpec.getColumnType() != CdYColSpec::ColumnType_Track)
 		{
-			iRv = -1 ;	//	ƒZƒ‹‚ÌˆÊ’u‚ªA“Á’è‚Ì—ñÔ‚Ì“Á’è‚Ì‚ÌêŠ‚Å‚Í‚È‚¢B
+			iRv = -1 ;	//	ã‚»ãƒ«ã®ä½ç½®ãŒã€ç‰¹å®šã®åˆ—è»Šã®ç‰¹å®šã®æ™‚åˆ»ã®å ´æ‰€ã§ã¯ãªã„ã€‚
 		}
 	}
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW&•ªŠò‰wEŠÂóü‚Ì‰wˆµ‚¢E”Ôü‚Ì•â³
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†&åˆ†å²é§…ãƒ»ç’°çŠ¶ç·šã®é§…æ‰±ã„ãƒ»ç•ªç·šã®è£œæ­£
 		// --------------------------------
-		//”Ôü‚ÍŒJ‚èã‚°‚ğs‚í‚È‚¢A“r’†‰w‚Ìì‹Æ‚Ííœ‚Æ‚È‚éAŒJ‚è‰º‚°I—¹Œã‚ÉAdjustOperation‚ğs‚¢AI—¹ì‹Æ“™‚Ì’²®‚ğs‚¤B
+		//ç•ªç·šã¯ç¹°ã‚Šä¸Šã’ã‚’è¡Œã‚ãªã„ã€é€”ä¸­é§…ã®ä½œæ¥­ã¯å‰Šé™¤ã¨ãªã‚‹ã€ç¹°ã‚Šä¸‹ã’çµ‚äº†å¾Œã«AdjustOperationã‚’è¡Œã„ã€çµ‚äº†ä½œæ¥­ç­‰ã®èª¿æ•´ã‚’è¡Œã†ã€‚
 		const CentDedRessyaCont* pCentDedRessyaCont  =  getCentDedRessyaCont() ;
 		const CentDedEkiCont* pCentDedEkiCont = getCDiagramEditDoc()->getCDedRosenFileData()
 			->getCentDedRosen()->getCentDedEkiCont();
@@ -5809,12 +5809,12 @@ int CWjkState_Ressyahensyu::
 				CentDedEkiJikoku aCentDedEkiJikoku = 
 					pCentDedRessya->getCentDedEkiJikoku( iEkiOrderCurr + 1 ) ;
 				/**
-					“\‚è•t‚¯Œ³‚Ææ‚Ì‰wˆµ‚¢‚É‚æ‚Á‚Ä‚ÍAå–{ü(ƒfƒtƒHƒ‹ƒg”Ôü)‚Ìæ“¾‚ª•K—v‚É‚È‚è‚Ü‚·B
-					Œ³(iEkiOrderCurr + 1):æ(iEkiOrderCurr)
-					‰^s‚È‚µ:‰^s‚È‚µ@”Ôüˆ—‚Í•K—v‚È‚¢
-					‰^s‚È‚µ:’âÔ’Ê‰ß@‰^s‚È‚µ‚É•Ï‚í‚é‚Ì‚Å”Ôüˆ—‚Í•K—v‚È‚¢
-					’âÔ’Ê‰ß:‰^s‚È‚µ@’âÔ’Ê‰ß‚É•Ï‚í‚é‚Ì‚ÅAå–{ü(ƒfƒtƒHƒ‹ƒg”Ôü)‚ğæ“¾‚·‚é•K—v‚ª‚ ‚é
-					’âÔ’Ê‰ß:’âÔ’Ê‰ß@æ‚©‚çæ“¾‚µ‚½Buffer‚ğ‚»‚Ì‚Ü‚Ü“K—pB
+					è²¼ã‚Šä»˜ã‘å…ƒã¨å…ˆã®é§…æ‰±ã„ã«ã‚ˆã£ã¦ã¯ã€ä¸»æœ¬ç·š(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆç•ªç·š)ã®å–å¾—ãŒå¿…è¦ã«ãªã‚Šã¾ã™ã€‚
+					å…ƒ(iEkiOrderCurr + 1):å…ˆ(iEkiOrderCurr)
+					é‹è¡Œãªã—:é‹è¡Œãªã—ã€€ç•ªç·šå‡¦ç†ã¯å¿…è¦ãªã„
+					é‹è¡Œãªã—:åœè»Šé€šéã€€é‹è¡Œãªã—ã«å¤‰ã‚ã‚‹ã®ã§ç•ªç·šå‡¦ç†ã¯å¿…è¦ãªã„
+					åœè»Šé€šé:é‹è¡Œãªã—ã€€åœè»Šé€šéã«å¤‰ã‚ã‚‹ã®ã§ã€ä¸»æœ¬ç·š(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆç•ªç·š)ã‚’å–å¾—ã™ã‚‹å¿…è¦ãŒã‚ã‚‹
+					åœè»Šé€šé:åœè»Šé€šéã€€å…ˆã‹ã‚‰å–å¾—ã—ãŸBufferã‚’ãã®ã¾ã¾é©ç”¨ã€‚
 				*/
 				if (pCentDedRessya->getCentDedEkiJikoku(iEkiOrderCurr).getEkiatsukai() == CentDedEkiJikoku::Ekiatsukai_None &&
 					aCentDedEkiJikoku.getEkiatsukai() != CentDedEkiJikoku::Ekiatsukai_None)
@@ -5855,13 +5855,13 @@ int CWjkState_Ressyahensyu::
 				0);
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 	}
 	return iRv ;
@@ -5877,7 +5877,7 @@ OnJikokuhyouModifyEkijikokuCmd_Process( BOOL bQueryEnable )
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -5890,7 +5890,7 @@ OnJikokuhyouModifyEkijikokuCmd_Process( BOOL bQueryEnable )
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Select , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdDedJikokuOrder aCdJikokuOrder ;
@@ -5900,20 +5900,20 @@ OnJikokuhyouModifyEkijikokuCmd_Process( BOOL bQueryEnable )
 			getCWndDcdGrid()->getYColSpecOfFocus() ) ;
 		if ( aCdJikokuOrder.getIsNull() )
 		{
-			iRv = -1 ;	//	ƒZƒ‹‚ÌˆÊ’u‚ªA“Á’è‚Ì—ñÔ‚Ì“Á’è‚Ì‚ÌêŠ‚Å‚Í‚È‚¢
+			iRv = -1 ;	//	ã‚»ãƒ«ã®ä½ç½®ãŒã€ç‰¹å®šã®åˆ—è»Šã®ç‰¹å®šã®æ™‚åˆ»ã®å ´æ‰€ã§ã¯ãªã„
 		}
 	}
-	//aCdJikokuOrder = w’è‚ÌƒZƒ‹‚É‘Î‰‚·‚éwOrderx
+	//aCdJikokuOrder = æŒ‡å®šã®ã‚»ãƒ«ã«å¯¾å¿œã™ã‚‹ã€æ™‚åˆ»Orderã€
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		bool bRepeat = false ;
 		do{
 			bRepeat = false ;
 			// --------------------------------
-			//	ƒ_ƒCƒAƒƒO‚ğ‹N“®
+			//	ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã‚’èµ·å‹•
 			// --------------------------------
 			CDlgModifyEkijikokuOperation2 aCDlgModifyEkijikokuOperation2( 
 				getCWndDcdGrid()->getEkijikokuModifyOperation2() , 
@@ -5926,27 +5926,27 @@ OnJikokuhyouModifyEkijikokuCmd_Process( BOOL bQueryEnable )
 					aCDlgModifyEkijikokuOperation2.getCentDedRessya_EkijikokuModifyOperation2() ) ;
 
 				// --------------------------------
-				//	‰w•ÏX‚Ì“®ì‚ğÀs
+				//	é§…æ™‚åˆ»å¤‰æ›´ã®å‹•ä½œã‚’å®Ÿè¡Œ
 				// --------------------------------
 				int iResult = getCWndDcdGrid()->execCdModifyEkijikokuCmd(
 					pCmd , 
 					aCdJikokuOrder ) ;
 				if  ( iResult < 0 )
 				{
-					//	ƒGƒ‰[‚ª”­¶‚µ‚½ê‡‚ÍAƒ_ƒCƒAƒƒO‚ğÄ“xŠJ‚«‚Ü‚·B
+					//	ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ãŸå ´åˆã¯ã€ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã‚’å†åº¦é–‹ãã¾ã™ã€‚
 					bRepeat = true ;
 				}
 				else
 				{
 					// --------------------------------
-					//	ƒtƒH[ƒJƒXƒZƒ‹‚ğŸ‚ÖˆÚ‚µ‚Ü‚·B
+					//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã‚’æ¬¡ã¸ç§»ã—ã¾ã™ã€‚
 					// --------------------------------
 					moveFocusCellToNext( true ) ;
 				}
 			}
 		}	while ( bRepeat ) ;
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 	}
 	return iRv ;
@@ -5965,7 +5965,7 @@ int CWjkState_Ressyahensyu::OnJikokuhyouModifyEkijikokuCmdRepeat_Process( BOOL b
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -5978,7 +5978,7 @@ int CWjkState_Ressyahensyu::OnJikokuhyouModifyEkijikokuCmdRepeat_Process( BOOL b
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Select , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdDedJikokuOrder aCdJikokuOrder ;
@@ -5988,33 +5988,33 @@ int CWjkState_Ressyahensyu::OnJikokuhyouModifyEkijikokuCmdRepeat_Process( BOOL b
 			getCWndDcdGrid()->getYColSpecOfFocus() ) ;
 		if ( aCdJikokuOrder.getIsNull() )
 		{
-			iRv = -1 ;	//	ƒZƒ‹‚ÌˆÊ’u‚ªA“Á’è‚Ì—ñÔ‚Ì“Á’è‚Ì‚ÌêŠ‚Å‚Í‚È‚¢
+			iRv = -1 ;	//	ã‚»ãƒ«ã®ä½ç½®ãŒã€ç‰¹å®šã®åˆ—è»Šã®ç‰¹å®šã®æ™‚åˆ»ã®å ´æ‰€ã§ã¯ãªã„
 		}
 	}
-	//aCdJikokuOrder = w’è‚ÌƒZƒ‹‚É‘Î‰‚·‚éwOrderx
+	//aCdJikokuOrder = æŒ‡å®šã®ã‚»ãƒ«ã«å¯¾å¿œã™ã‚‹ã€æ™‚åˆ»Orderã€
 	if ( iRv >= 0 )
 	{
 		if ( getCWndDcdGrid()->getEkijikokuModifyOperation2().isNull() )
 		{
-			iRv = -1 ;	//	‘O‰ñ‚Ìu‰w•ÏXv‚ª–³Œø‚Å‚·B
+			iRv = -1 ;	//	å‰å›ã®ã€Œé§…æ™‚åˆ»å¤‰æ›´ã€ãŒç„¡åŠ¹ã§ã™ã€‚
 		}
 	}
 
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		{
 				// --------------------------------
-				//	‰w•ÏX‚Ì“®ì‚ğÀs
+				//	é§…æ™‚åˆ»å¤‰æ›´ã®å‹•ä½œã‚’å®Ÿè¡Œ
 				// --------------------------------
 				int iResult = getCWndDcdGrid()->execCdModifyEkijikokuCmd(
 					pCmd , 
 					aCdJikokuOrder ) ;
 				if  ( iResult >= 0 )
 				{
-					//	ƒtƒH[ƒJƒXƒZƒ‹‚ğŸ‚ÖˆÚ‚µ‚Ü‚·B
+					//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã‚’æ¬¡ã¸ç§»ã—ã¾ã™ã€‚
 					moveFocusCellToNext( true ) ;
 				}
 		}
@@ -6033,7 +6033,7 @@ int CWjkState_Ressyahensyu::
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -6046,7 +6046,7 @@ int CWjkState_Ressyahensyu::
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Select , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdDedJikokuOrder aCdJikokuOrder ;
@@ -6127,14 +6127,14 @@ int CWjkState_Ressyahensyu::
 			iRv = -1;
 		}
 	}
-	//aCdJikokuOrder = w’è‚ÌƒZƒ‹‚É‘Î‰‚·‚éwOrderx
+	//aCdJikokuOrder = æŒ‡å®šã®ã‚»ãƒ«ã«å¯¾å¿œã™ã‚‹ã€æ™‚åˆ»Orderã€
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†
 		// --------------------------------
 		if (iType == 0)
 		{
@@ -6248,20 +6248,20 @@ int CWjkState_Ressyahensyu::
 			}
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// --------------------------------
-		//	ƒtƒH[ƒJƒX‚ğˆÚ“®
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’ç§»å‹•
 		// --------------------------------
 		if(iType == 0 || iType == 10)
 		{
 			moveFocusCellToNext( false ) ;
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 	}
 	return iRv ;
@@ -6278,7 +6278,7 @@ OnJikokuhyouEkijikokuDecNoMove_Process( BOOL bQueryEnable, bool bAlt)
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -6291,7 +6291,7 @@ OnJikokuhyouEkijikokuDecNoMove_Process( BOOL bQueryEnable, bool bAlt)
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Select , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdDedJikokuOrder aCdJikokuOrder ;
@@ -6371,14 +6371,14 @@ OnJikokuhyouEkijikokuDecNoMove_Process( BOOL bQueryEnable, bool bAlt)
 			iRv = -1;
 		}
 	}
-	//aCdJikokuOrder = w’è‚ÌƒZƒ‹‚É‘Î‰‚·‚éwOrderx
+	//aCdJikokuOrder = æŒ‡å®šã®ã‚»ãƒ«ã«å¯¾å¿œã™ã‚‹ã€æ™‚åˆ»Orderã€
 	if ( !bQueryEnable && iRv >= 0   )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†
 		// --------------------------------
 		if (iType == 0)
 		{
@@ -6492,13 +6492,13 @@ OnJikokuhyouEkijikokuDecNoMove_Process( BOOL bQueryEnable, bool bAlt)
 		}
 
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 	}
 	return iRv ;
@@ -6511,7 +6511,7 @@ int CWjkState_Ressyahensyu::
 {
 	int iRv = 0 ;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	CDcdGridCell*	pCDcdGridCell = NULL ;
 	if (iRv >= 0)
@@ -6526,25 +6526,25 @@ int CWjkState_Ressyahensyu::
 		pCDcdGridCell = getCWndDcdGrid()->getCFocus()->getFocusCell() ;
 		if ( pCDcdGridCell == NULL )
 		{
-			iRv = -11  ;	//	ƒZƒ‹‚ÌêŠ‚ª•s³
+			iRv = -11  ;	//	ã‚»ãƒ«ã®å ´æ‰€ãŒä¸æ­£
 		}
 	}
-	//pCDcdGridCell = •ÒW’†‚ÌƒZƒ‹
+	//pCDcdGridCell = ç·¨é›†ä¸­ã®ã‚»ãƒ«
 	
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒtƒH[ƒJƒX‚ğˆÚ“®
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’ç§»å‹•
 		// --------------------------------
 		{
 			moveFocusCellToNext( false ) ;
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 	}
 	return iRv ;
@@ -6557,7 +6557,7 @@ int CWjkState_Ressyahensyu::
 {
 	int iRv = 0 ;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	CDcdGridCell*	pCDcdGridCell = NULL ;
 	if (iRv >= 0)
@@ -6572,25 +6572,25 @@ int CWjkState_Ressyahensyu::
 		pCDcdGridCell = getCWndDcdGrid()->getCFocus()->getFocusCell() ;
 		if ( pCDcdGridCell == NULL )
 		{
-			iRv = -11  ;	//	ƒZƒ‹‚ÌêŠ‚ª•s³
+			iRv = -11  ;	//	ã‚»ãƒ«ã®å ´æ‰€ãŒä¸æ­£
 		}
 	}
-	//pCDcdGridCell = •ÒW’†‚ÌƒZƒ‹
+	//pCDcdGridCell = ç·¨é›†ä¸­ã®ã‚»ãƒ«
 	
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒtƒH[ƒJƒX‚ğˆÚ“®
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’ç§»å‹•
 		// --------------------------------
 		{
 			moveFocusCellToPrev( false ) ;
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 	}
 	return iRv ;
@@ -6605,7 +6605,7 @@ int CWjkState_Ressyahensyu::
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -6618,7 +6618,7 @@ int CWjkState_Ressyahensyu::
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Select , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdDedJikokuOrder aCdJikokuOrder ;
@@ -6698,14 +6698,14 @@ int CWjkState_Ressyahensyu::
 			iRv = -1;
 		}
 	}
-	//aCdJikokuOrder = w’è‚ÌƒZƒ‹‚É‘Î‰‚·‚éwOrderx
+	//aCdJikokuOrder = æŒ‡å®šã®ã‚»ãƒ«ã«å¯¾å¿œã™ã‚‹ã€æ™‚åˆ»Orderã€
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†
 		// --------------------------------
 		if (iType == 0)
 		{
@@ -6817,20 +6817,20 @@ int CWjkState_Ressyahensyu::
 			}
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// --------------------------------
-		//	ƒtƒH[ƒJƒX‚ğˆÚ“®
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’ç§»å‹•
 		// --------------------------------
 		if (iType == 0 || iType == 10)
 		{
 			moveFocusCellToNext( false ) ;
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 	}
 	return iRv ;
@@ -6847,7 +6847,7 @@ int CWjkState_Ressyahensyu::
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -6860,7 +6860,7 @@ int CWjkState_Ressyahensyu::
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Select , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdDedJikokuOrder aCdJikokuOrder ;
@@ -6940,14 +6940,14 @@ int CWjkState_Ressyahensyu::
 			iRv = -1;
 		}
 	}
-	//aCdJikokuOrder = w’è‚ÌƒZƒ‹‚É‘Î‰‚·‚éwOrderx
+	//aCdJikokuOrder = æŒ‡å®šã®ã‚»ãƒ«ã«å¯¾å¿œã™ã‚‹ã€æ™‚åˆ»Orderã€
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†
 		// --------------------------------
 		if (iType == 0)
 		{
@@ -7059,13 +7059,13 @@ int CWjkState_Ressyahensyu::
 			}
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 	}
 	return iRv ;
@@ -7074,7 +7074,7 @@ int CWjkState_Ressyahensyu::
 
 }
 
-//‚±‚±‚©‚çchange_by_d_mania
+//ã“ã“ã‹ã‚‰change_by_d_mania
 
 int CWjkState_Ressyahensyu::
 OnJikokuhyouEkijikokuDecAnySecNoMove_Process( BOOL bQueryEnable, bool bAlt)
@@ -7085,7 +7085,7 @@ OnJikokuhyouEkijikokuDecAnySecNoMove_Process( BOOL bQueryEnable, bool bAlt)
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -7098,7 +7098,7 @@ OnJikokuhyouEkijikokuDecAnySecNoMove_Process( BOOL bQueryEnable, bool bAlt)
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Select , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdDedJikokuOrder aCdJikokuOrder ;
@@ -7178,14 +7178,14 @@ OnJikokuhyouEkijikokuDecAnySecNoMove_Process( BOOL bQueryEnable, bool bAlt)
 			iRv = -1;
 		}
 	}
-	//aCdJikokuOrder = w’è‚ÌƒZƒ‹‚É‘Î‰‚·‚éwOrderx
+	//aCdJikokuOrder = æŒ‡å®šã®ã‚»ãƒ«ã«å¯¾å¿œã™ã‚‹ã€æ™‚åˆ»Orderã€
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†
 		// --------------------------------
 		if (iType == 0)
 		{
@@ -7195,7 +7195,7 @@ OnJikokuhyouEkijikokuDecAnySecNoMove_Process( BOOL bQueryEnable, bool bAlt)
 			{
 				CentDedRessya* pCentDedRessya = muCentDedRessya->get(i);
 
-				//17.4.15 ”CˆÓ•b‘Î‰‰»_by_d_mania
+				//17.4.15 ä»»æ„ç§’å¯¾å¿œåŒ–_by_d_mania
 				CdDedDispProp aCdDedDispProp = getCDiagramEditDoc()->getCDedRosenFileData()->getCdDedDispProp();
 				pCentDedRessya->modifyRessyaJikoku(CdDedJikan(-1 * aCdDedDispProp.getAnySecondIncDec1()),
 					aCdJikokuOrder);
@@ -7272,7 +7272,7 @@ OnJikokuhyouEkijikokuDecAnySecNoMove_Process( BOOL bQueryEnable, bool bAlt)
 			{
 				CentDedRessya* pCentDedRessya = muCentDedRessya->get(i);
 
-				//17.4.15 ”CˆÓ•b‘Î‰‰»_by_d_mania
+				//17.4.15 ä»»æ„ç§’å¯¾å¿œåŒ–_by_d_mania
 				CdDedDispProp aCdDedDispProp = getCDiagramEditDoc()->getCDedRosenFileData()->getCdDedDispProp();
 				pCentDedRessya->modifyRessyaJikokuRev(CdDedJikan(-1 * aCdDedDispProp.getAnySecondIncDec1()),
 					aCdJikokuOrder);
@@ -7302,13 +7302,13 @@ OnJikokuhyouEkijikokuDecAnySecNoMove_Process( BOOL bQueryEnable, bool bAlt)
 		}
 
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 	}
 	return iRv ;
@@ -7323,7 +7323,7 @@ int CWjkState_Ressyahensyu::
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -7336,7 +7336,7 @@ int CWjkState_Ressyahensyu::
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Select , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdDedJikokuOrder aCdJikokuOrder ;
@@ -7416,14 +7416,14 @@ int CWjkState_Ressyahensyu::
 			iRv = -1;
 		}
 	}
-	//aCdJikokuOrder = w’è‚ÌƒZƒ‹‚É‘Î‰‚·‚éwOrderx
+	//aCdJikokuOrder = æŒ‡å®šã®ã‚»ãƒ«ã«å¯¾å¿œã™ã‚‹ã€æ™‚åˆ»Orderã€
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†
 		// --------------------------------
 		if (iType == 0)
 		{
@@ -7433,7 +7433,7 @@ int CWjkState_Ressyahensyu::
 			{
 				CentDedRessya* pCentDedRessya = muCentDedRessya->get(i);
 
-				//17.4.15 ”CˆÓ•b‘Î‰‰»_by_d_mania
+				//17.4.15 ä»»æ„ç§’å¯¾å¿œåŒ–_by_d_mania
 				CdDedDispProp aCdDedDispProp = getCDiagramEditDoc()->getCDedRosenFileData()->getCdDedDispProp();
 				pCentDedRessya->modifyRessyaJikoku(CdDedJikan(+1 * aCdDedDispProp.getAnySecondIncDec1()),
 					aCdJikokuOrder);
@@ -7513,7 +7513,7 @@ int CWjkState_Ressyahensyu::
 			{
 				CentDedRessya* pCentDedRessya = muCentDedRessya->get(i);
 
-				//17.4.15 ”CˆÓ•b‘Î‰‰»_by_d_mania
+				//17.4.15 ä»»æ„ç§’å¯¾å¿œåŒ–_by_d_mania
 				CdDedDispProp aCdDedDispProp = getCDiagramEditDoc()->getCDedRosenFileData()->getCdDedDispProp();
 				pCentDedRessya->modifyRessyaJikokuRev(CdDedJikan(+1 * aCdDedDispProp.getAnySecondIncDec1()),
 					aCdJikokuOrder);
@@ -7544,13 +7544,13 @@ int CWjkState_Ressyahensyu::
 			}
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 	}
 	return iRv ;
@@ -7565,7 +7565,7 @@ OnJikokuhyouEkijikokuDecAny2SecNoMove_Process( BOOL bQueryEnable, bool bAlt )
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -7578,7 +7578,7 @@ OnJikokuhyouEkijikokuDecAny2SecNoMove_Process( BOOL bQueryEnable, bool bAlt )
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Select , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdDedJikokuOrder aCdJikokuOrder ;
@@ -7658,14 +7658,14 @@ OnJikokuhyouEkijikokuDecAny2SecNoMove_Process( BOOL bQueryEnable, bool bAlt )
 			iRv = -1;
 		}
 	}
-	//aCdJikokuOrder = w’è‚ÌƒZƒ‹‚É‘Î‰‚·‚éwOrderx
+	//aCdJikokuOrder = æŒ‡å®šã®ã‚»ãƒ«ã«å¯¾å¿œã™ã‚‹ã€æ™‚åˆ»Orderã€
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†
 		// --------------------------------
 		if (iType == 0)
 		{
@@ -7675,7 +7675,7 @@ OnJikokuhyouEkijikokuDecAny2SecNoMove_Process( BOOL bQueryEnable, bool bAlt )
 			{
 				CentDedRessya* pCentDedRessya = muCentDedRessya->get(i);
 
-				//17.4.15 ”CˆÓ•b‘Î‰‰»_by_d_mania
+				//17.4.15 ä»»æ„ç§’å¯¾å¿œåŒ–_by_d_mania
 				CdDedDispProp aCdDedDispProp = getCDiagramEditDoc()->getCDedRosenFileData()->getCdDedDispProp();
 				pCentDedRessya->modifyRessyaJikoku(CdDedJikan(-1 * aCdDedDispProp.getAnySecondIncDec2()),
 					aCdJikokuOrder);
@@ -7783,13 +7783,13 @@ OnJikokuhyouEkijikokuDecAny2SecNoMove_Process( BOOL bQueryEnable, bool bAlt )
 			}
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 	}
 	return iRv ;
@@ -7804,7 +7804,7 @@ int CWjkState_Ressyahensyu::
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -7817,7 +7817,7 @@ int CWjkState_Ressyahensyu::
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Select , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdDedJikokuOrder aCdJikokuOrder ;
@@ -7897,14 +7897,14 @@ int CWjkState_Ressyahensyu::
 			iRv = -1;
 		}
 	}
-	//aCdJikokuOrder = w’è‚ÌƒZƒ‹‚É‘Î‰‚·‚éwOrderx
+	//aCdJikokuOrder = æŒ‡å®šã®ã‚»ãƒ«ã«å¯¾å¿œã™ã‚‹ã€æ™‚åˆ»Orderã€
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†
 		// --------------------------------
 		if (iType == 0)
 		{
@@ -7914,7 +7914,7 @@ int CWjkState_Ressyahensyu::
 			{
 				CentDedRessya* pCentDedRessya = muCentDedRessya->get(i);
 
-				//17.4.15 ”CˆÓ•b‘Î‰‰»_by_d_mania
+				//17.4.15 ä»»æ„ç§’å¯¾å¿œåŒ–_by_d_mania
 				CdDedDispProp aCdDedDispProp = getCDiagramEditDoc()->getCDedRosenFileData()->getCdDedDispProp();
 				pCentDedRessya->modifyRessyaJikoku(CdDedJikan(+1 * aCdDedDispProp.getAnySecondIncDec2()),
 					aCdJikokuOrder);
@@ -8022,13 +8022,13 @@ int CWjkState_Ressyahensyu::
 			}
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 	}
 	return iRv ;
@@ -8044,7 +8044,7 @@ int CWjkState_Ressyahensyu::
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -8057,7 +8057,7 @@ int CWjkState_Ressyahensyu::
 	{
 		if ( !getCWndDcdGrid()->createCmd( CWndJikokuhyou::ECreateCmd_Select , ppCmd ) )
 		{
-			iRv = -1 ;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdDedJikokuOrder aCdJikokuOrder ;
@@ -8068,7 +8068,7 @@ int CWjkState_Ressyahensyu::
 			getCWndDcdGrid()->getYColSpecOfFocus() ) ;
 		if ( !aCdJikokuOrder.getIsNull() )
 		{
-			//Šî€‰^“]•ª‹@”\&’Ê‰ß‰w•\¦‚ªOFF‚Ìê‡‚ÍA–³Œø
+			//åŸºæº–é‹è»¢æ™‚åˆ†æ©Ÿèƒ½&é€šéé§…æ™‚åˆ»è¡¨ç¤ºãŒOFFã®å ´åˆã¯ã€ç„¡åŠ¹
 			if (!(getCWndDcdGrid()->getDisplayTsuukaEkiJikoku()) ||
 				!(getCWndDcdGrid()->getStandardOperationTimeFunction()))
 			{
@@ -8103,14 +8103,14 @@ int CWjkState_Ressyahensyu::
 		}
 	}
 	
-	//aCdJikokuOrder = w’è‚ÌƒZƒ‹‚É‘Î‰‚·‚éwOrderx
+	//aCdJikokuOrder = æŒ‡å®šã®ã‚»ãƒ«ã«å¯¾å¿œã™ã‚‹ã€æ™‚åˆ»Orderã€
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†
 		// --------------------------------
 		if (iType == 0)
 		{
@@ -8120,9 +8120,9 @@ int CWjkState_Ressyahensyu::
 			{
 				CentDedRessya* pCentDedRessya = muCentDedRessya->get(i);
 
-				//Ver2.06.07 Šî€‰^“]•ªæ“¾Œ³ƒ_ƒCƒ„ƒCƒ“ƒfƒNƒX‹@”\’Ç‰Á‚É”º‚¤•ÏX
+				//Ver2.06.07 åŸºæº–é‹è»¢æ™‚åˆ†å–å¾—å…ƒãƒ€ã‚¤ãƒ¤ã‚¤ãƒ³ãƒ‡ã‚¯ã‚¹æ©Ÿèƒ½è¿½åŠ ã«ä¼´ã†å¤‰æ›´
 				int iDiaIndexStandard = getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()->getKijunDiaIndex();
-				//Šî€‰^“]•ªæ“¾Œ³ƒ_ƒCƒ„ˆÈŠO‚©‚ÂA—ñÔ‚Ìn”­‰w‚Å‚Í‚È‚¢
+				//åŸºæº–é‹è»¢æ™‚åˆ†å–å¾—å…ƒãƒ€ã‚¤ãƒ¤ä»¥å¤–ã‹ã¤ã€åˆ—è»Šã®å§‹ç™ºé§…ã§ã¯ãªã„
 				if (aCdJikokuOrder.getEkiOrder() > pCentDedRessya->getSihatsuEki() &&
 					getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()->getCentDedDiaCont()->findCentDedDiaByName(
 						pCentDedRessyaCont->getDia()->getName()) != iDiaIndexStandard)
@@ -8164,9 +8164,9 @@ int CWjkState_Ressyahensyu::
 			{
 				CentDedRessya* pCentDedRessya = muCentDedRessya->get(i);
 
-				//Ver2.06.07 Šî€‰^“]•ªæ“¾Œ³ƒ_ƒCƒ„ƒCƒ“ƒfƒNƒX‹@”\’Ç‰Á‚É”º‚¤•ÏX
+				//Ver2.06.07 åŸºæº–é‹è»¢æ™‚åˆ†å–å¾—å…ƒãƒ€ã‚¤ãƒ¤ã‚¤ãƒ³ãƒ‡ã‚¯ã‚¹æ©Ÿèƒ½è¿½åŠ ã«ä¼´ã†å¤‰æ›´
 				int iDiaIndexStandard = getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()->getKijunDiaIndex();
-				//Šî€‰^“]•ªæ“¾Œ³ƒ_ƒCƒ„ˆÈŠO‚©‚ÂA—ñÔ‚Ìn”­‰w‚Å‚Í‚È‚¢
+				//åŸºæº–é‹è»¢æ™‚åˆ†å–å¾—å…ƒãƒ€ã‚¤ãƒ¤ä»¥å¤–ã‹ã¤ã€åˆ—è»Šã®å§‹ç™ºé§…ã§ã¯ãªã„
 				if (aCdJikokuOrder.getEkiOrder() > pCentDedRessya->getSihatsuEki() &&
 					getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()->getCentDedDiaCont()->findCentDedDiaByName(
 						pCentDedRessyaCont->getDia()->getName()) != iDiaIndexStandard)
@@ -8191,19 +8191,19 @@ int CWjkState_Ressyahensyu::
 			}
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// --------------------------------
-		//	ƒtƒH[ƒJƒX‚ğˆÚ“®
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’ç§»å‹•
 		// --------------------------------
 		{
 			moveFocusCellToNext( false ) ;
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 	}
 	return iRv ;
@@ -8218,7 +8218,7 @@ OnJikokuhyouMoveToOutRessya_Process(BOOL bQueryEnable)
 	//if (!bQueryEnable) { ppCmd = &pCmd; }
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	CdXColSpec aCdXColSpec = getCWndDcdGrid()->getXColSpecOfFocus();
 
@@ -8226,7 +8226,7 @@ OnJikokuhyouMoveToOutRessya_Process(BOOL bQueryEnable)
 	{
 		if (aCdXColSpec.getColumnType() != CdXColSpec::ColumnType_Ressya)
 		{
-			iRv = -1;	//	ƒtƒH[ƒJƒX‚ª—ñÔˆÈŠO‚É‚ ‚è‚Ü‚·
+			iRv = -1;	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ãŒåˆ—è»Šä»¥å¤–ã«ã‚ã‚Šã¾ã™
 		}
 	}
 	if (iRv >= 0)
@@ -8234,14 +8234,14 @@ OnJikokuhyouMoveToOutRessya_Process(BOOL bQueryEnable)
 		if (getCDiagramEditDoc()->getCDedRosenFileData()
 			->getCentDedRosen()->getEnableOperation() < 2)
 		{
-			iRv = -7;	//‰^—p‹@”\‚ªOFF‚Ü‚½‚ÍŠÈˆÕƒ‚[ƒh‚Å‚·B
+			iRv = -7;	//é‹ç”¨æ©Ÿèƒ½ãŒOFFã¾ãŸã¯ç°¡æ˜“ãƒ¢ãƒ¼ãƒ‰ã§ã™ã€‚
 		}
 	}
 	if (iRv >= 0)
 	{
 		if (getCentDedDia()->getWaitOperationUpdate())
 		{
-			iRv = -5;	//‰^—pXV—}~ó‘Ô‚Å‚·
+			iRv = -5;	//é‹ç”¨æ›´æ–°æŠ‘æ­¢çŠ¶æ…‹ã§ã™
 		}
 	}
 	int iRessyaIndex = aCdXColSpec.getRessyaIndex();
@@ -8250,7 +8250,7 @@ OnJikokuhyouMoveToOutRessya_Process(BOOL bQueryEnable)
 		CustomizeJikokuhyouContent contRessyaIndex = getCentDedDia()->getcontCustomizeRessyaIndex(getRessyahoukou(),aCdXColSpec.getRessyaIndex());
 		if (contRessyaIndex.iRessyaIndexCont.empty())
 		{
-			iRv = -6;	//‘I‘ğ—ñ‚É—ñÔ‚ª‚ ‚è‚Ü‚¹‚ñ
+			iRv = -6;	//é¸æŠåˆ—ã«åˆ—è»ŠãŒã‚ã‚Šã¾ã›ã‚“
 		}
 		else
 		{
@@ -8262,23 +8262,23 @@ OnJikokuhyouMoveToOutRessya_Process(BOOL bQueryEnable)
 		const CentDedRessya* pCentDedRessya = getCentDedRessyaCont()->getMuPtr()->get(iRessyaIndex);
 		if (pCentDedRessya->isNull())
 		{
-			iRv = -2;	//NULLó‘Ô‚Ì—ñÔ‚Å‚·B
+			iRv = -2;	//NULLçŠ¶æ…‹ã®åˆ—è»Šã§ã™ã€‚
 		}
 		if (pCentDedRessya->getFirstOperation().getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Out ||
 			pCentDedRessya->getFirstOperation().getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Outer)
 		{
-			iRv = -3;	//‚±‚Ì—ñÔ‚ªo‹æ—ñÔ‚Å‚·B
+			iRv = -3;	//ã“ã®åˆ—è»ŠãŒå‡ºåŒºåˆ—è»Šã§ã™ã€‚
 		}
 		if (pCentDedRessya->getFirstOperation().getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Junction &&
 			pCentDedRessya->getFirstOperation().getOperationNumber().empty())
 		{
-			iRv = -4;	//‰^—p”Ô†‚ª‚ ‚è‚Ü‚¹‚ñB
+			iRv = -4;	//é‹ç”¨ç•ªå·ãŒã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 
 		//const CentDedRessyaCont* pCentDedRessyaCont = getCentDedRessyaCont();
@@ -8289,11 +8289,11 @@ OnJikokuhyouMoveToOutRessya_Process(BOOL bQueryEnable)
 		tstring strOperationNumberFirst = pCentDedRessya->getFirstOperation().getOperationNumber()[0];
 		if (strOperationNumberFirst.empty())
 		{
-			iRv = -11;//‹ó”’‰^”Ô‚È‚Ì‚ÅA’Tõ‚Ís‚¢‚Ü‚¹‚ñ
+			iRv = -11;//ç©ºç™½é‹ç•ªãªã®ã§ã€æ¢ç´¢ã¯è¡Œã„ã¾ã›ã‚“
 		}
 		if (getCentDedDia()->getcontOperationTableContent().count(strOperationNumberFirst) == 0)
 		{
-			iRv = -13;//‰^—p”Ô†‚É‘Î‚·‚é‰^—p•\‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½
+			iRv = -13;//é‹ç”¨ç•ªå·ã«å¯¾ã™ã‚‹é‹ç”¨è¡¨ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸ
 		}
 		CdDedRessyaProperty aRessyaPropertyOut;
 		int iOutSihatsuEkiOrder;
@@ -8318,14 +8318,14 @@ OnJikokuhyouMoveToOutRessya_Process(BOOL bQueryEnable)
 			}
 			if (aRessyaPropertyOut.getIsNull())
 			{
-				iRv = -12;//o‹æ—ñÔ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½B
+				iRv = -12;//å‡ºåŒºåˆ—è»ŠãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸã€‚
 			}
 		}
 		if (iRv >= 0)
 		{
 			if (pCentDedRessya->getRessyahoukou() == aRessyaPropertyOut.getRessyahoukou())
 			{
-				//o‹æ—ñÔ‚ªA‘I‘ğ—ñÔ‚Æ“¯‚¶—ñÔ•ûŒü‚Ìê‡B
+				//å‡ºåŒºåˆ—è»ŠãŒã€é¸æŠåˆ—è»Šã¨åŒã˜åˆ—è»Šæ–¹å‘ã®å ´åˆã€‚
 				int iRessyaIndexOut = aRessyaPropertyOut.getRessyaIndex();
 				if (getCWndDcdGrid()->getCustomizeDisplayMode())
 				{
@@ -8365,9 +8365,9 @@ OnJikokuhyouMoveToOutRessya_Process(BOOL bQueryEnable)
 			}
 			else
 			{
-				//o‹æ—ñÔ‚ªA‘I‘ğ—ñÔ‚Æ”½‘Î•ûŒü‚Ìê‡
+				//å‡ºåŒºåˆ—è»ŠãŒã€é¸æŠåˆ—è»Šã¨åå¯¾æ–¹å‘ã®å ´åˆ
 				// --------------------------------
-				//	”½‘Î•ûŒü‚Ì•\ƒrƒ…[‚ğŠJ‚­
+				//	åå¯¾æ–¹å‘ã®æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã‚’é–‹ã
 				// --------------------------------
 				CJikokuhyouView* pCJikokuhyouView = NULL;
 				if (iRv >= 0)
@@ -8383,11 +8383,11 @@ OnJikokuhyouMoveToOutRessya_Process(BOOL bQueryEnable)
 								&pCJikokuhyouView);
 						if (pCJikokuhyouView == NULL)
 						{
-							iRv = -5;	//	”½‘Î•ûŒü‚Ì•\ƒrƒ…[‚ÌƒI[ƒvƒ“‚É¸”s‚µ‚Ü‚µ‚½
+							iRv = -5;	//	åå¯¾æ–¹å‘ã®æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã®ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ
 						}
 					}
-					//pCJikokuhyouDoc = •\ƒhƒLƒ…ƒƒ“ƒg
-					//pCJikokuhyouView = •\ƒrƒ…[
+					//pCJikokuhyouDoc = æ™‚åˆ»è¡¨ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆ
+					//pCJikokuhyouView = æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼
 				}
 
 				if (iRv >= 0)
@@ -8414,14 +8414,14 @@ OnJikokuhyouMoveToOutRessya_Process(BOOL bQueryEnable)
 					}
 
 					pCJikokuhyouView->setFocusToRessyaIndex(iRessyaIndexOut, iOutSihatsuEkiOrder);
-					iRv = 1;	//	•\ƒrƒ…[‚ÖˆÚ“®‚µ‚Ü‚µ‚½
+					iRv = 1;	//	æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã¸ç§»å‹•ã—ã¾ã—ãŸ
 				}
 
 			}
 		}
 
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 	}
 	return iRv;
@@ -8436,7 +8436,7 @@ OnJikokuhyouMoveToPrevRessya_Process(BOOL bQueryEnable)
 	{
 		if (aCdXColSpec.getColumnType() != CdXColSpec::ColumnType_Ressya)
 		{
-			iRv = -1;	//	ƒtƒH[ƒJƒX‚ª—ñÔˆÈŠO‚É‚ ‚è‚Ü‚·
+			iRv = -1;	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ãŒåˆ—è»Šä»¥å¤–ã«ã‚ã‚Šã¾ã™
 		}
 	}
 	if (iRv >= 0)
@@ -8444,14 +8444,14 @@ OnJikokuhyouMoveToPrevRessya_Process(BOOL bQueryEnable)
 		if (getCDiagramEditDoc()->getCDedRosenFileData()
 			->getCentDedRosen()->getEnableOperation() < 2)
 		{
-			iRv = -8;	//‰^—p‹@”\‚ªOFF‚Ü‚½‚ÍŠÈˆÕƒ‚[ƒh‚Å‚·B
+			iRv = -8;	//é‹ç”¨æ©Ÿèƒ½ãŒOFFã¾ãŸã¯ç°¡æ˜“ãƒ¢ãƒ¼ãƒ‰ã§ã™ã€‚
 		}
 	}
 	if (iRv >= 0)
 	{
 		if (getCentDedDia()->getWaitOperationUpdate())
 		{
-			iRv = -6;	//‰^—pXV—}~ó‘Ô‚Å‚·
+			iRv = -6;	//é‹ç”¨æ›´æ–°æŠ‘æ­¢çŠ¶æ…‹ã§ã™
 		}
 	}
 	int iRessyaIndex = aCdXColSpec.getRessyaIndex();
@@ -8460,7 +8460,7 @@ OnJikokuhyouMoveToPrevRessya_Process(BOOL bQueryEnable)
 		CustomizeJikokuhyouContent contRessyaIndex = getCentDedDia()->getcontCustomizeRessyaIndex(getRessyahoukou(), aCdXColSpec.getRessyaIndex());
 		if (contRessyaIndex.iRessyaIndexCont.empty())
 		{
-			iRv = -7;	//‘I‘ğ—ñ‚É—ñÔ‚ª‚ ‚è‚Ü‚¹‚ñ
+			iRv = -7;	//é¸æŠåˆ—ã«åˆ—è»ŠãŒã‚ã‚Šã¾ã›ã‚“
 		}
 		else
 		{
@@ -8472,24 +8472,24 @@ OnJikokuhyouMoveToPrevRessya_Process(BOOL bQueryEnable)
 		const CentDedRessya* pCentDedRessya = getCentDedRessyaCont()->getMuPtr()->get(iRessyaIndex);
 		if (pCentDedRessya->isNull())
 		{
-			iRv = -2;	//NULLó‘Ô‚Ì—ñÔ‚Å‚·B
+			iRv = -2;	//NULLçŠ¶æ…‹ã®åˆ—è»Šã§ã™ã€‚
 		}
 		if (pCentDedRessya->getFirstOperation().getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Out ||
 			pCentDedRessya->getFirstOperation().getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Outer)
 		{
-			iRv = -3;	//‚±‚Ì—ñÔ‚ªo‹æ—ñÔ‚Å‚·B
+			iRv = -3;	//ã“ã®åˆ—è»ŠãŒå‡ºåŒºåˆ—è»Šã§ã™ã€‚
 		}
 		if (pCentDedRessya->getFirstOperation().getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Junction &&
 			pCentDedRessya->getFirstOperation().getOperationNumber().empty())
 		{
-			iRv = -4;	//‰^—p”Ô†‚ª‚ ‚è‚Ü‚¹‚ñB
+			iRv = -4;	//é‹ç”¨ç•ªå·ãŒã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 
 		const CentDedRessya* pCentDedRessya = getCentDedRessyaCont()->getMuPtr()->get(iRessyaIndex);
@@ -8498,11 +8498,11 @@ OnJikokuhyouMoveToPrevRessya_Process(BOOL bQueryEnable)
 		tstring strOperationNumberFirst = pCentDedRessya->getFirstOperation().getOperationNumber()[0];
 		if (strOperationNumberFirst.empty())
 		{
-			iRv = -11;//‹ó”’‰^”Ô‚È‚Ì‚ÅA’Tõ‚Ís‚¢‚Ü‚¹‚ñ
+			iRv = -11;//ç©ºç™½é‹ç•ªãªã®ã§ã€æ¢ç´¢ã¯è¡Œã„ã¾ã›ã‚“
 		}
 		if (getCentDedDia()->getcontOperationTableContent().count(strOperationNumberFirst) == 0)
 		{
-			iRv = -13;//‰^—p”Ô†‚É‘Î‚·‚é‰^—p•\‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½
+			iRv = -13;//é‹ç”¨ç•ªå·ã«å¯¾ã™ã‚‹é‹ç”¨è¡¨ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸ
 		}
 		CdDedRessyaProperty aRessyaPropertyPrev;
 		int iPrevSihatsuEkiOrder;
@@ -8529,7 +8529,7 @@ OnJikokuhyouMoveToPrevRessya_Process(BOOL bQueryEnable)
 			}
 			if (aRessyaPropertyPrev.getIsNull())
 			{
-				iRv = -12;//ˆê‚Â‘O‚Ì—ñÔ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½B
+				iRv = -12;//ä¸€ã¤å‰ã®åˆ—è»ŠãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸã€‚
 			}
 		}
 
@@ -8537,7 +8537,7 @@ OnJikokuhyouMoveToPrevRessya_Process(BOOL bQueryEnable)
 		{
 			if (pCentDedRessya->getRessyahoukou() == aRessyaPropertyPrev.getRessyahoukou())
 			{
-				//‘O‚Ì—ñÔ‚ªA‘I‘ğ—ñÔ‚Æ“¯‚¶—ñÔ•ûŒü‚Ìê‡B
+				//å‰ã®åˆ—è»ŠãŒã€é¸æŠåˆ—è»Šã¨åŒã˜åˆ—è»Šæ–¹å‘ã®å ´åˆã€‚
 				int iRessyaIndexPrev = aRessyaPropertyPrev.getRessyaIndex();
 				if (getCWndDcdGrid()->getCustomizeDisplayMode())
 				{
@@ -8577,9 +8577,9 @@ OnJikokuhyouMoveToPrevRessya_Process(BOOL bQueryEnable)
 			}
 			else
 			{
-				//‘O‚Ì—ñÔ‚ªA‘I‘ğ—ñÔ‚Æ”½‘Î•ûŒü‚Ìê‡
+				//å‰ã®åˆ—è»ŠãŒã€é¸æŠåˆ—è»Šã¨åå¯¾æ–¹å‘ã®å ´åˆ
 				// --------------------------------
-				//	”½‘Î•ûŒü‚Ì•\ƒrƒ…[‚ğŠJ‚­
+				//	åå¯¾æ–¹å‘ã®æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã‚’é–‹ã
 				// --------------------------------
 				CJikokuhyouView* pCJikokuhyouView = NULL;
 				if (iRv >= 0)
@@ -8596,11 +8596,11 @@ OnJikokuhyouMoveToPrevRessya_Process(BOOL bQueryEnable)
 								&pCJikokuhyouView);
 						if (pCJikokuhyouView == NULL)
 						{
-							iRv = -5;	//	”½‘Î•ûŒü‚Ì•\ƒrƒ…[‚ÌƒI[ƒvƒ“‚É¸”s‚µ‚Ü‚µ‚½
+							iRv = -5;	//	åå¯¾æ–¹å‘ã®æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã®ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ
 						}
 					}
-					//pCJikokuhyouDoc = •\ƒhƒLƒ…ƒƒ“ƒg
-					//pCJikokuhyouView = •\ƒrƒ…[
+					//pCJikokuhyouDoc = æ™‚åˆ»è¡¨ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆ
+					//pCJikokuhyouView = æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼
 				}
 
 				if (iRv >= 0)
@@ -8626,13 +8626,13 @@ OnJikokuhyouMoveToPrevRessya_Process(BOOL bQueryEnable)
 						}
 					}
 					pCJikokuhyouView->setFocusToRessyaIndex(iRessyaIndexPrev, iPrevSihatsuEkiOrder);
-					iRv = 1;	//	•\ƒrƒ…[‚ÖˆÚ“®‚µ‚Ü‚µ‚½
+					iRv = 1;	//	æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã¸ç§»å‹•ã—ã¾ã—ãŸ
 				}
 			}
 		}
 
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 	}
 	return iRv;
@@ -8647,7 +8647,7 @@ OnJikokuhyouMoveToNextRessya_Process(BOOL bQueryEnable)
 	{
 		if (aCdXColSpec.getColumnType() != CdXColSpec::ColumnType_Ressya)
 		{
-			iRv = -1;	//	ƒtƒH[ƒJƒX‚ª—ñÔˆÈŠO‚É‚ ‚è‚Ü‚·
+			iRv = -1;	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ãŒåˆ—è»Šä»¥å¤–ã«ã‚ã‚Šã¾ã™
 		}
 	}
 	if (iRv >= 0)
@@ -8655,14 +8655,14 @@ OnJikokuhyouMoveToNextRessya_Process(BOOL bQueryEnable)
 		if (getCDiagramEditDoc()->getCDedRosenFileData()
 			->getCentDedRosen()->getEnableOperation() < 2)
 		{
-			iRv = -8;	//‰^—p‹@”\‚ªOFF‚Ü‚½‚ÍŠÈˆÕƒ‚[ƒh‚Å‚·B
+			iRv = -8;	//é‹ç”¨æ©Ÿèƒ½ãŒOFFã¾ãŸã¯ç°¡æ˜“ãƒ¢ãƒ¼ãƒ‰ã§ã™ã€‚
 		}
 	}
 	if (iRv >= 0)
 	{
 		if (getCentDedDia()->getWaitOperationUpdate())
 		{
-			iRv = -6;	//‰^—pXV—}~ó‘Ô‚Å‚·
+			iRv = -6;	//é‹ç”¨æ›´æ–°æŠ‘æ­¢çŠ¶æ…‹ã§ã™
 		}
 	}
 	int iRessyaIndex = aCdXColSpec.getRessyaIndex();
@@ -8671,7 +8671,7 @@ OnJikokuhyouMoveToNextRessya_Process(BOOL bQueryEnable)
 		CustomizeJikokuhyouContent contRessyaIndex = getCentDedDia()->getcontCustomizeRessyaIndex(getRessyahoukou(), aCdXColSpec.getRessyaIndex());
 		if (contRessyaIndex.iRessyaIndexCont.empty())
 		{
-			iRv = -7;	//‘I‘ğ—ñ‚É—ñÔ‚ª‚ ‚è‚Ü‚¹‚ñ
+			iRv = -7;	//é¸æŠåˆ—ã«åˆ—è»ŠãŒã‚ã‚Šã¾ã›ã‚“
 		}
 		else
 		{
@@ -8683,29 +8683,29 @@ OnJikokuhyouMoveToNextRessya_Process(BOOL bQueryEnable)
 		const CentDedRessya* pCentDedRessya = getCentDedRessyaCont()->getMuPtr()->get(iRessyaIndex);
 		if (pCentDedRessya->isNull())
 		{
-			iRv = -2;	//NULLó‘Ô‚Ì—ñÔ‚Å‚·B
+			iRv = -2;	//NULLçŠ¶æ…‹ã®åˆ—è»Šã§ã™ã€‚
 		}
 		if (pCentDedRessya->getLastOperation().getAOperation() == CentDedAfterOperation::EAOperation::AOperation_In ||
 			pCentDedRessya->getLastOperation().getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Outer)
 		{
-			iRv = -3;	//‚±‚Ì—ñÔ‚ª“ü‹æ—ñÔ‚Å‚·B
+			iRv = -3;	//ã“ã®åˆ—è»ŠãŒå…¥åŒºåˆ—è»Šã§ã™ã€‚
 		}
 		if (pCentDedRessya->getLastOperation().getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Junction &&
 			pCentDedRessya->getLastOperation().getOperationNumber().empty())
 		{
-			iRv = -4;	//‰^—p”Ô†‚ª‚ ‚è‚Ü‚¹‚ñB
+			iRv = -4;	//é‹ç”¨ç•ªå·ãŒã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 		if (pCentDedRessya->getLastOperation().getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Junction &&
 			!pCentDedRessya->getLastOperation().getJunctionSucceed())
 		{
-			iRv = -5;	//Ÿ—ñÔ‚ª‚ ‚è‚Ü‚¹‚ñB
+			iRv = -5;	//æ¬¡åˆ—è»ŠãŒã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 
 		const CentDedRessya* pCentDedRessya = getCentDedRessyaCont()->getMuPtr()->get(iRessyaIndex);
@@ -8714,11 +8714,11 @@ OnJikokuhyouMoveToNextRessya_Process(BOOL bQueryEnable)
 		tstring strOperationNumberFirst = pCentDedRessya->getLastOperation().getOperationNumber()[0];
 		if (strOperationNumberFirst.empty())
 		{
-			iRv = -11;//‹ó”’‰^”Ô‚È‚Ì‚ÅA’Tõ‚Ís‚¢‚Ü‚¹‚ñ
+			iRv = -11;//ç©ºç™½é‹ç•ªãªã®ã§ã€æ¢ç´¢ã¯è¡Œã„ã¾ã›ã‚“
 		}
 		if (getCentDedDia()->getcontOperationTableContent().count(strOperationNumberFirst) == 0)
 		{
-			iRv = -13;//‰^—p”Ô†‚É‘Î‚·‚é‰^—p•\‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½
+			iRv = -13;//é‹ç”¨ç•ªå·ã«å¯¾ã™ã‚‹é‹ç”¨è¡¨ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸ
 		}
 		CdDedRessyaProperty aRessyaPropertyNext;
 		int iNextSihatsuEkiOrder;
@@ -8745,7 +8745,7 @@ OnJikokuhyouMoveToNextRessya_Process(BOOL bQueryEnable)
 			}
 			if (aRessyaPropertyNext.getIsNull())
 			{
-				iRv = -12;//ˆê‚Â‘O‚Ì—ñÔ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½B
+				iRv = -12;//ä¸€ã¤å‰ã®åˆ—è»ŠãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸã€‚
 			}
 		}
 
@@ -8753,7 +8753,7 @@ OnJikokuhyouMoveToNextRessya_Process(BOOL bQueryEnable)
 		{
 			if (pCentDedRessya->getRessyahoukou() == aRessyaPropertyNext.getRessyahoukou())
 			{
-				//Ÿ‚Ì—ñÔ‚ªA‘I‘ğ—ñÔ‚Æ“¯‚¶—ñÔ•ûŒü‚Ìê‡B
+				//æ¬¡ã®åˆ—è»ŠãŒã€é¸æŠåˆ—è»Šã¨åŒã˜åˆ—è»Šæ–¹å‘ã®å ´åˆã€‚
 				int iRessyaIndexNext = aRessyaPropertyNext.getRessyaIndex();
 				if (getCWndDcdGrid()->getCustomizeDisplayMode())
 				{
@@ -8793,9 +8793,9 @@ OnJikokuhyouMoveToNextRessya_Process(BOOL bQueryEnable)
 			}
 			else
 			{
-				//Ÿ‚Ì—ñÔ‚ªA‘I‘ğ—ñÔ‚Æ”½‘Î•ûŒü‚Ìê‡
+				//æ¬¡ã®åˆ—è»ŠãŒã€é¸æŠåˆ—è»Šã¨åå¯¾æ–¹å‘ã®å ´åˆ
 				// --------------------------------
-				//	”½‘Î•ûŒü‚Ì•\ƒrƒ…[‚ğŠJ‚­
+				//	åå¯¾æ–¹å‘ã®æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã‚’é–‹ã
 				// --------------------------------
 				CJikokuhyouView* pCJikokuhyouView = NULL;
 				if (iRv >= 0)
@@ -8812,11 +8812,11 @@ OnJikokuhyouMoveToNextRessya_Process(BOOL bQueryEnable)
 								&pCJikokuhyouView);
 						if (pCJikokuhyouView == NULL)
 						{
-							iRv = -5;	//	”½‘Î•ûŒü‚Ì•\ƒrƒ…[‚ÌƒI[ƒvƒ“‚É¸”s‚µ‚Ü‚µ‚½
+							iRv = -5;	//	åå¯¾æ–¹å‘ã®æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã®ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ
 						}
 					}
-					//pCJikokuhyouDoc = •\ƒhƒLƒ…ƒƒ“ƒg
-					//pCJikokuhyouView = •\ƒrƒ…[
+					//pCJikokuhyouDoc = æ™‚åˆ»è¡¨ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆ
+					//pCJikokuhyouView = æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼
 				}
 
 				if (iRv >= 0)
@@ -8842,13 +8842,13 @@ OnJikokuhyouMoveToNextRessya_Process(BOOL bQueryEnable)
 						}
 					}
 					pCJikokuhyouView->setFocusToRessyaIndex(iRessyaIndexNext, iNextSihatsuEkiOrder);
-					iRv = 1;	//	•\ƒrƒ…[‚ÖˆÚ“®‚µ‚Ü‚µ‚½
+					iRv = 1;	//	æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã¸ç§»å‹•ã—ã¾ã—ãŸ
 				}
 			}
 		}
 		
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 	}
 	return iRv;
@@ -8863,7 +8863,7 @@ OnJikokuhyouMoveToInRessya_Process(BOOL bQueryEnable)
 	{
 		if (aCdXColSpec.getColumnType() != CdXColSpec::ColumnType_Ressya)
 		{
-			iRv = -1;	//	ƒtƒH[ƒJƒX‚ª—ñÔˆÈŠO‚É‚ ‚è‚Ü‚·
+			iRv = -1;	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ãŒåˆ—è»Šä»¥å¤–ã«ã‚ã‚Šã¾ã™
 		}
 	}
 	if (iRv >= 0)
@@ -8871,14 +8871,14 @@ OnJikokuhyouMoveToInRessya_Process(BOOL bQueryEnable)
 		if (getCDiagramEditDoc()->getCDedRosenFileData()
 			->getCentDedRosen()->getEnableOperation() < 2)
 		{
-			iRv = -8;	//‰^—p‹@”\‚ªOFF‚Ü‚½‚ÍŠÈˆÕƒ‚[ƒh‚Å‚·B
+			iRv = -8;	//é‹ç”¨æ©Ÿèƒ½ãŒOFFã¾ãŸã¯ç°¡æ˜“ãƒ¢ãƒ¼ãƒ‰ã§ã™ã€‚
 		}
 	}
 	if (iRv >= 0)
 	{
 		if (getCentDedDia()->getWaitOperationUpdate())
 		{
-			iRv = -6;	//‰^—pXV—}~ó‘Ô‚Å‚·
+			iRv = -6;	//é‹ç”¨æ›´æ–°æŠ‘æ­¢çŠ¶æ…‹ã§ã™
 		}
 	}
 	int iRessyaIndex = aCdXColSpec.getRessyaIndex();
@@ -8887,7 +8887,7 @@ OnJikokuhyouMoveToInRessya_Process(BOOL bQueryEnable)
 		CustomizeJikokuhyouContent contRessyaIndex = getCentDedDia()->getcontCustomizeRessyaIndex(getRessyahoukou(), aCdXColSpec.getRessyaIndex());
 		if (contRessyaIndex.iRessyaIndexCont.empty())
 		{
-			iRv = -7;	//‘I‘ğ—ñ‚É—ñÔ‚ª‚ ‚è‚Ü‚¹‚ñ
+			iRv = -7;	//é¸æŠåˆ—ã«åˆ—è»ŠãŒã‚ã‚Šã¾ã›ã‚“
 		}
 		else
 		{
@@ -8899,28 +8899,28 @@ OnJikokuhyouMoveToInRessya_Process(BOOL bQueryEnable)
 		const CentDedRessya* pCentDedRessya = getCentDedRessyaCont()->getMuPtr()->get(iRessyaIndex);
 		if (pCentDedRessya->isNull())
 		{
-			iRv = -2;	//NULLó‘Ô‚Ì—ñÔ‚Å‚·B
+			iRv = -2;	//NULLçŠ¶æ…‹ã®åˆ—è»Šã§ã™ã€‚
 		}
 		if (pCentDedRessya->getLastOperation().getAOperation() == CentDedAfterOperation::EAOperation::AOperation_In ||
 			pCentDedRessya->getLastOperation().getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Outer)
 		{
-			iRv = -3;	//‚±‚Ì—ñÔ‚ª“ü‹æ—ñÔ‚Å‚·B
+			iRv = -3;	//ã“ã®åˆ—è»ŠãŒå…¥åŒºåˆ—è»Šã§ã™ã€‚
 		}
 		if (pCentDedRessya->getLastOperation().getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Junction &&
 			pCentDedRessya->getLastOperation().getOperationNumber().empty())
 		{
-			iRv = -4;	//‰^—p”Ô†‚ª‚ ‚è‚Ü‚¹‚ñB
+			iRv = -4;	//é‹ç”¨ç•ªå·ãŒã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 		if (pCentDedRessya->getLastOperation().getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Junction &&
 			!pCentDedRessya->getLastOperation().getJunctionSucceed())
 		{
-			iRv = -5;	//Ÿ—ñÔ‚ª‚ ‚è‚Ü‚¹‚ñB
+			iRv = -5;	//æ¬¡åˆ—è»ŠãŒã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 
 		const CentDedRessya* pCentDedRessya = getCentDedRessyaCont()->getMuPtr()->get(iRessyaIndex);
@@ -8929,11 +8929,11 @@ OnJikokuhyouMoveToInRessya_Process(BOOL bQueryEnable)
 		tstring strOperationNumberFirst = pCentDedRessya->getLastOperation().getOperationNumber()[0];
 		if (strOperationNumberFirst.empty())
 		{
-			iRv = -11;//‹ó”’‰^”Ô‚È‚Ì‚ÅA’Tõ‚Ís‚¢‚Ü‚¹‚ñ
+			iRv = -11;//ç©ºç™½é‹ç•ªãªã®ã§ã€æ¢ç´¢ã¯è¡Œã„ã¾ã›ã‚“
 		}
 		if (getCentDedDia()->getcontOperationTableContent().count(strOperationNumberFirst) == 0)
 		{
-			iRv = -13;//‰^—p”Ô†‚É‘Î‚·‚é‰^—p•\‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½
+			iRv = -13;//é‹ç”¨ç•ªå·ã«å¯¾ã™ã‚‹é‹ç”¨è¡¨ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸ
 		}
 		CdDedRessyaProperty aRessyaPropertyIn;
 		int iInSyuuchakuEkiOrder;
@@ -8964,7 +8964,7 @@ OnJikokuhyouMoveToInRessya_Process(BOOL bQueryEnable)
 			}
 			if (aRessyaPropertyIn.getIsNull())
 			{
-				iRv = -12;//ˆê‚Â‘O‚Ì—ñÔ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½B
+				iRv = -12;//ä¸€ã¤å‰ã®åˆ—è»ŠãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸã€‚
 			}
 		}
 
@@ -8972,7 +8972,7 @@ OnJikokuhyouMoveToInRessya_Process(BOOL bQueryEnable)
 		{
 			if (pCentDedRessya->getRessyahoukou() == aRessyaPropertyIn.getRessyahoukou())
 			{
-				//“ü‹æ—ñÔ‚ªA‘I‘ğ—ñÔ‚Æ“¯‚¶—ñÔ•ûŒü‚Ìê‡B
+				//å…¥åŒºåˆ—è»ŠãŒã€é¸æŠåˆ—è»Šã¨åŒã˜åˆ—è»Šæ–¹å‘ã®å ´åˆã€‚
 				int iRessyaIndexIn = aRessyaPropertyIn.getRessyaIndex();
 				if (getCWndDcdGrid()->getCustomizeDisplayMode())
 				{
@@ -9012,9 +9012,9 @@ OnJikokuhyouMoveToInRessya_Process(BOOL bQueryEnable)
 			}
 			else
 			{
-				//o‹æ—ñÔ‚ªA‘I‘ğ—ñÔ‚Æ”½‘Î•ûŒü‚Ìê‡
+				//å‡ºåŒºåˆ—è»ŠãŒã€é¸æŠåˆ—è»Šã¨åå¯¾æ–¹å‘ã®å ´åˆ
 				// --------------------------------
-				//	”½‘Î•ûŒü‚Ì•\ƒrƒ…[‚ğŠJ‚­
+				//	åå¯¾æ–¹å‘ã®æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã‚’é–‹ã
 				// --------------------------------
 				CJikokuhyouView* pCJikokuhyouView = NULL;
 				if (iRv >= 0)
@@ -9031,11 +9031,11 @@ OnJikokuhyouMoveToInRessya_Process(BOOL bQueryEnable)
 								&pCJikokuhyouView);
 						if (pCJikokuhyouView == NULL)
 						{
-							iRv = -5;	//	”½‘Î•ûŒü‚Ì•\ƒrƒ…[‚ÌƒI[ƒvƒ“‚É¸”s‚µ‚Ü‚µ‚½
+							iRv = -5;	//	åå¯¾æ–¹å‘ã®æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã®ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ
 						}
 					}
-					//pCJikokuhyouDoc = •\ƒhƒLƒ…ƒƒ“ƒg
-					//pCJikokuhyouView = •\ƒrƒ…[
+					//pCJikokuhyouDoc = æ™‚åˆ»è¡¨ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆ
+					//pCJikokuhyouView = æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼
 				}
 
 				if (iRv >= 0)
@@ -9061,13 +9061,13 @@ OnJikokuhyouMoveToInRessya_Process(BOOL bQueryEnable)
 						}
 					}
 					pCJikokuhyouView->setFocusToRessyaIndex(iRessyaIndexIn, iInSyuuchakuEkiOrder);
-					iRv = 1;	//	•\ƒrƒ…[‚ÖˆÚ“®‚µ‚Ü‚µ‚½
+					iRv = 1;	//	æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã¸ç§»å‹•ã—ã¾ã—ãŸ
 				}
 			}
 		}
 		
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 	}
 	return iRv;
@@ -9082,7 +9082,7 @@ OnJikokuhyouRessyabangouMove_Process(BOOL bQueryEnable)
 	//if (!bQueryEnable) { ppCmd = &pCmd; }
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	CdXColSpec aCdXColSpec = getCWndDcdGrid()->getXColSpecOfFocus();
 	tstring strSearchRessyabangou;
@@ -9097,7 +9097,7 @@ OnJikokuhyouRessyabangouMove_Process(BOOL bQueryEnable)
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 
 		int iFoundRessyaIndex = -1;
@@ -9113,7 +9113,7 @@ OnJikokuhyouRessyabangouMove_Process(BOOL bQueryEnable)
 
 		if (iFoundRessyaIndex >= 0)
 		{
-			//o‹æ—ñÔ‚ªA‘I‘ğ—ñÔ‚Æ“¯‚¶—ñÔ•ûŒü‚Ìê‡B
+			//å‡ºåŒºåˆ—è»ŠãŒã€é¸æŠåˆ—è»Šã¨åŒã˜åˆ—è»Šæ–¹å‘ã®å ´åˆã€‚
 			if (getCWndDcdGrid()->getCustomizeDisplayMode())
 			{
 				const vector<CustomizeJikokuhyouContent>& contCustomizeRessyaIndex =
@@ -9154,14 +9154,14 @@ OnJikokuhyouRessyabangouMove_Process(BOOL bQueryEnable)
 		else
 		{
 			CString strError;
-			strError += _T("—ñÔ”Ô†[");
+			strError += _T("åˆ—è»Šç•ªå·[");
 			strError += strSearchRessyabangou.c_str();
-			strError+= _T("]‚ÍŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½B");
+			strError+= _T("]ã¯è¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸã€‚");
 			AfxMessageBox(strError, MB_ICONASTERISK);
 		}
 
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 	}
 	return iRv;
@@ -9178,14 +9178,14 @@ int CWjkState_Ressyahensyu::OnJikokuhyouOpenOperationTable_Process(BOOL bQueryEn
 	{
 		if (aCdXColSpec.getColumnType() != CdXColSpec::ColumnType_Ressya)
 		{
-			iRv = -1;	//	ƒtƒH[ƒJƒX‚ª—ñÔˆÈŠO‚É‚ ‚è‚Ü‚·
+			iRv = -1;	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ãŒåˆ—è»Šä»¥å¤–ã«ã‚ã‚Šã¾ã™
 		}
 	}
 	//if (iRv >= 0)
 	//{
 	//	if (aCdYColSpec.getColumnType() != CdYColSpec::ColumnType_OperationNumber)
 	//	{
-	//		iRv = -6;	//	ƒtƒH[ƒJƒX‚ª‰^—p”Ô†—“ˆÈŠO‚É‚ ‚è‚Ü‚·
+	//		iRv = -6;	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ãŒé‹ç”¨ç•ªå·æ¬„ä»¥å¤–ã«ã‚ã‚Šã¾ã™
 	//	}
 	//}
 	if (iRv >= 0)
@@ -9193,14 +9193,14 @@ int CWjkState_Ressyahensyu::OnJikokuhyouOpenOperationTable_Process(BOOL bQueryEn
 		if (getCDiagramEditDoc()->getCDedRosenFileData()
 			->getCentDedRosen()->getEnableOperation() < 2)
 		{
-			iRv = -6;	//‰^—p‹@”\‚ªOFF‚Ü‚½‚ÍŠÈˆÕƒ‚[ƒh‚Å‚·B
+			iRv = -6;	//é‹ç”¨æ©Ÿèƒ½ãŒOFFã¾ãŸã¯ç°¡æ˜“ãƒ¢ãƒ¼ãƒ‰ã§ã™ã€‚
 		}
 	}
 	if (iRv >= 0)
 	{
 		if (getCentDedDia()->getWaitOperationUpdate())
 		{
-			iRv = -5;	//‰^—pXV—}~ó‘Ô‚Å‚·
+			iRv = -5;	//é‹ç”¨æ›´æ–°æŠ‘æ­¢çŠ¶æ…‹ã§ã™
 		}
 	}
 	if (iRv >= 0 && getCWndDcdGrid()->getCustomizeDisplayMode())
@@ -9208,7 +9208,7 @@ int CWjkState_Ressyahensyu::OnJikokuhyouOpenOperationTable_Process(BOOL bQueryEn
 		const CustomizeJikokuhyouContent contRessyaIndex = getCentDedDia()->getcontCustomizeRessyaIndex(getRessyahoukou(), aCdXColSpec.getRessyaIndex());
 		if (contRessyaIndex.iRessyaIndexCont.empty())
 		{
-			iRv = -7;	//‘I‘ğ—ñ‚É—ñÔ‚ª‚ ‚è‚Ü‚¹‚ñ
+			iRv = -7;	//é¸æŠåˆ—ã«åˆ—è»ŠãŒã‚ã‚Šã¾ã›ã‚“
 		}
 
 	}
@@ -9217,17 +9217,17 @@ int CWjkState_Ressyahensyu::OnJikokuhyouOpenOperationTable_Process(BOOL bQueryEn
 		const CentDedRessya* pCentDedRessya = getCentDedRessyaCont()->getMuPtr()->get(aCdXColSpec.getRessyaIndex());
 		if (pCentDedRessya->isNull())
 		{
-			iRv = -2;	//NULLó‘Ô‚Ì—ñÔ‚Å‚·B
+			iRv = -2;	//NULLçŠ¶æ…‹ã®åˆ—è»Šã§ã™ã€‚
 		}
 		//if (pCentDedRessya->getOperationNumber().empty())
 		//{
-		//	iRv = -3;	//‰^—p”Ô†‚ª‚ ‚è‚Ü‚¹‚ñB
+		//	iRv = -3;	//é‹ç”¨ç•ªå·ãŒã‚ã‚Šã¾ã›ã‚“ã€‚
 		//}
 	}
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 
 		vector<tstring> strOperationNumber;
@@ -9301,10 +9301,10 @@ int CWjkState_Ressyahensyu::OnJikokuhyouOpenOperationTable_Process(BOOL bQueryEn
 		}
 		{
 			// --------------------------------
-			//	‰^—p•\ƒrƒ…[‚ğŠJ‚­
+			//	é‹ç”¨è¡¨ãƒ“ãƒ¥ãƒ¼ã‚’é–‹ã
 			// --------------------------------
-			//Ver2.0b’èd—l@—ñÔ‚Ì—LŒøn”­‰w‚ğ”­Ô‚·‚é’iŠK‚Ì‰^—p”Ô†‚ğæ“¾‚µA
-			//‚»‚Ì‰^”Ô‚É‘Î‚µ‚ÄA‰^—p•\‚ğŠJ‚­B
+			//Ver2.0æš«å®šä»•æ§˜ã€€åˆ—è»Šã®æœ‰åŠ¹å§‹ç™ºé§…ã‚’ç™ºè»Šã™ã‚‹æ®µéšã®é‹ç”¨ç•ªå·ã‚’å–å¾—ã—ã€
+			//ãã®é‹ç•ªã«å¯¾ã—ã¦ã€é‹ç”¨è¡¨ã‚’é–‹ãã€‚
 			for (int idx = 0; idx < (int)strOperationNumber.size(); idx++)
 			{
 				if (strOperationNumber[idx].empty())
@@ -9323,11 +9323,11 @@ int CWjkState_Ressyahensyu::OnJikokuhyouOpenOperationTable_Process(BOOL bQueryEn
 								strOperationNumber[idx]);
 						//if (pCOperationTableView == NULL)
 						//{
-						//	iRv = -4;	//	‰^—p•\ƒrƒ…[‚ÌƒI[ƒvƒ“‚É¸”s‚µ‚Ü‚µ‚½
+						//	iRv = -4;	//	é‹ç”¨è¡¨ãƒ“ãƒ¥ãƒ¼ã®ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ
 						//}
 					}
-					//pCJikokuhyouDoc = •\ƒhƒLƒ…ƒƒ“ƒg
-					//pCJikokuhyouView = •\ƒrƒ…[
+					//pCJikokuhyouDoc = æ™‚åˆ»è¡¨ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆ
+					//pCJikokuhyouView = æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼
 				}
 			}
 
@@ -9335,13 +9335,13 @@ int CWjkState_Ressyahensyu::OnJikokuhyouOpenOperationTable_Process(BOOL bQueryEn
 			//{
 			//	int iEkiOrder = pCentDedRessyaOut->getSihatsuEki();
 			//	pCJikokuhyouView->setFocusToRessyaIndex(iRessyaidxOut, iEkiOrder);
-			//	iRv = 1;	//	•\ƒrƒ…[‚ÖˆÚ“®‚µ‚Ü‚µ‚½
+			//	iRv = 1;	//	æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã¸ç§»å‹•ã—ã¾ã—ãŸ
 			//}
 
 		}
 
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 	}
 	return iRv;
@@ -9352,14 +9352,14 @@ int CWjkState_Ressyahensyu::OnJikokuhyouOpenEki_Process(BOOL bQueryEnable)
 	int iRv = 0;
 	if (iRv >= 0)
 	{
-		//	‰wƒvƒƒpƒeƒBƒ_ƒCƒAƒƒO‚Ìg—p‚ğ”»’è
+		//	é§…ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã®ä½¿ç”¨ã‚’åˆ¤å®š
 		int iRv = execCDlgEkiProp(TRUE);
 	}
 
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		iRv = execCDlgEkiProp(FALSE);
 	}
@@ -9390,14 +9390,14 @@ int CWjkState_Ressyahensyu::OnJikokuhyouOpenEkiJikokuhyou_Process(BOOL bQueryEna
 		}
 		else
 		{
-			iRv = -1;	//	ƒZƒ‹‚ÌˆÊ’u‚ª‰w–¼‚Å‚Í‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1;	//	ã‚»ãƒ«ã®ä½ç½®ãŒé§…åã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		CEkiJikokuhyouView* pCEkiJikokuhyouView = NULL;
 		getCDiagramEditApp()->openCEkiJikokuhyouDoc(
@@ -9433,7 +9433,7 @@ int CWjkState_Ressyahensyu::OnJikokuhyouOpenCrossingCheck_Process(BOOL bQueryEna
 		}
 		else
 		{
-			iRv = -1;	//	ƒZƒ‹‚ÌˆÊ’u‚ª‰w–¼‚Å‚Í‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1;	//	ã‚»ãƒ«ã®ä½ç½®ãŒé§…åã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	if (iRv >= 0)
@@ -9449,7 +9449,7 @@ int CWjkState_Ressyahensyu::OnJikokuhyouOpenCrossingCheck_Process(BOOL bQueryEna
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		//CCrossingCheckView* pCrossingCheckView = NULL;
 		getCDiagramEditApp()->openCCrossingCheckDoc(
@@ -9473,7 +9473,7 @@ int CWjkState_Ressyahensyu::OnJikokuhyouUpdateOperation_Process(BOOL bQueryEnabl
 	}
 	if (iRv >= 0)
 	{
-		//‰^—pXV—}~’†‚Ì‚İƒRƒ}ƒ“ƒh‚ª—LŒø‚Å‚·B
+		//é‹ç”¨æ›´æ–°æŠ‘æ­¢ä¸­ã®ã¿ã‚³ãƒãƒ³ãƒ‰ãŒæœ‰åŠ¹ã§ã™ã€‚
 		if (!getCWndDcdGrid()->getOperationUpdateStop())
 		{
 			iRv = -1;
@@ -9482,13 +9482,13 @@ int CWjkState_Ressyahensyu::OnJikokuhyouUpdateOperation_Process(BOOL bQueryEnabl
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		OuNew<CRfEditCmd> pCmd(
 			new CRfEditCmd_Operation(
 				GetDocument()->getDiaIndex()));
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		getCDiagramEditDoc()->executeEditCmd(pCmd);
 	}
@@ -9504,7 +9504,7 @@ OnJikokuhyouRessyaComplementStdOpeTime_Process(BOOL bQueryEnable)
 	if (!bQueryEnable) { ppCmd = &pCmd; }
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -9517,7 +9517,7 @@ OnJikokuhyouRessyaComplementStdOpeTime_Process(BOOL bQueryEnable)
 	{
 		if (!getCWndDcdGrid()->createCmd(CWndJikokuhyou::ECreateCmd_Select, ppCmd))
 		{
-			iRv = -1;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	CdDedJikokuOrder aCdJikokuOrder;
@@ -9528,7 +9528,7 @@ OnJikokuhyouRessyaComplementStdOpeTime_Process(BOOL bQueryEnable)
 			getCWndDcdGrid()->getYColSpecOfFocus());
 		if (!aCdJikokuOrder.getIsNull())
 		{
-			//Šî€‰^“]•ª‹@”\&’Ê‰ß‰w•\¦‚ªOFF‚Ìê‡‚ÍA–³Œø
+			//åŸºæº–é‹è»¢æ™‚åˆ†æ©Ÿèƒ½&é€šéé§…æ™‚åˆ»è¡¨ç¤ºãŒOFFã®å ´åˆã¯ã€ç„¡åŠ¹
 			if (!(getCWndDcdGrid()->getDisplayTsuukaEkiJikoku()) ||
 				!(getCWndDcdGrid()->getStandardOperationTimeFunction()))
 			{
@@ -9551,14 +9551,14 @@ OnJikokuhyouRessyaComplementStdOpeTime_Process(BOOL bQueryEnable)
 		}
 	}
 
-	//aCdJikokuOrder = w’è‚ÌƒZƒ‹‚É‘Î‰‚·‚éwOrderx
+	//aCdJikokuOrder = æŒ‡å®šã®ã‚»ãƒ«ã«å¯¾å¿œã™ã‚‹ã€æ™‚åˆ»Orderã€
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†
 		// --------------------------------
 		if (iType == 0)
 		{
@@ -9568,9 +9568,9 @@ OnJikokuhyouRessyaComplementStdOpeTime_Process(BOOL bQueryEnable)
 			{
 				CentDedRessya* pCentDedRessya = muCentDedRessya->get(i);
 
-				//Ver2.06.07 Šî€‰^“]•ªæ“¾Œ³ƒ_ƒCƒ„ƒCƒ“ƒfƒNƒX‹@”\’Ç‰Á‚É”º‚¤•ÏX
+				//Ver2.06.07 åŸºæº–é‹è»¢æ™‚åˆ†å–å¾—å…ƒãƒ€ã‚¤ãƒ¤ã‚¤ãƒ³ãƒ‡ã‚¯ã‚¹æ©Ÿèƒ½è¿½åŠ ã«ä¼´ã†å¤‰æ›´
 				int iDiaIndexStandard = getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()->getKijunDiaIndex();
-				//Šî€‰^“]•ªæ“¾Œ³ƒ_ƒCƒ„ˆÈŠO
+				//åŸºæº–é‹è»¢æ™‚åˆ†å–å¾—å…ƒãƒ€ã‚¤ãƒ¤ä»¥å¤–
 				if (getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()->getCentDedDiaCont()->findCentDedDiaByName(
 					pCentDedRessyaCont->getDia()->getName()) != iDiaIndexStandard)
 				{
@@ -9635,19 +9635,19 @@ OnJikokuhyouRessyaComplementStdOpeTime_Process(BOOL bQueryEnable)
 
 		//}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd(pCmd);
 		}
 		// --------------------------------
-		//	ƒtƒH[ƒJƒX‚ğˆÚ“®
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’ç§»å‹•
 		// --------------------------------
 		{
 			moveFocusCellToNext(false);
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 	}
 	return iRv;
@@ -9658,7 +9658,7 @@ int CWjkState_Ressyahensyu::OnJikokuhyouLeft_Process(BOOL bQueryEnable)
 	int iRv = 0;
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -9691,13 +9691,13 @@ int CWjkState_Ressyahensyu::OnJikokuhyouLeft_Process(BOOL bQueryEnable)
 		else
 		{
 			/**
-				getSelectedCellCount‚ª1ˆÈã‚Ìê‡(ƒ‰ƒ“ƒ_ƒ€‘I‘ğ)‚ÍA˜A‘±‚µ‚½‘I‘ğ‚Å‚ ‚é‚©‚Ç‚¤‚©‚ğ’²‚×‚Ü‚·B
-				(1)Index=0‚©‚ç’²‚×‚éAgetXColumnNumberSelected‚ªfalse‚Ìê‡‚ÍŸ‚ÖA
-					true‚Ìê‡‚ÍAiSelectIndex‚É‚»‚Ì—ñÔ‚ÌRessyaIndex‚ğ“ü‚êAbSequential‚ğtrue‚É‚µ‚ÄŸ‚Ö
-					‚½‚¾‚µAu¶‚Öv‚Ìê‡‚ÍARessyaIndex‚ª0‚Ì‚Í–³Œø‚É‚·‚é(0‚¾‚Æ¶‚É‚ÍˆÚ“®‚Å‚«‚È‚¢‚Ì‚Å)
-				(2)bSequential‚ªtrue‚Ìê‡AgetXColumnNumberSelected‚ªtrue‚Ìê‡‚ÍŸ‚ÖA
-					false‚Ìê‡AiSelectSize‚ğŠm’è‚³‚¹AbSequential‚ğfalse‚É‚·‚éB
-				(3)iSelectIndex‚ª0ˆÈã‚©‚ÂAbSequential‚ªfalse‚Ìó‘Ô‚ÅAgetXColumnNumberSelected‚ªtrue‚Ìê‡‚ÍAƒ‰ƒ“ƒ_ƒ€‘I‘ğ‚È‚Ì‚ÅiRv-‚ÅI—¹B
+				getSelectedCellCountãŒ1ä»¥ä¸Šã®å ´åˆ(ãƒ©ãƒ³ãƒ€ãƒ é¸æŠ)ã¯ã€é€£ç¶šã—ãŸé¸æŠã§ã‚ã‚‹ã‹ã©ã†ã‹ã‚’èª¿ã¹ã¾ã™ã€‚
+				(1)Index=0ã‹ã‚‰èª¿ã¹ã‚‹ã€getXColumnNumberSelectedãŒfalseã®å ´åˆã¯æ¬¡ã¸ã€
+					trueã®å ´åˆã¯ã€iSelectIndexã«ãã®åˆ—è»Šã®RessyaIndexã‚’å…¥ã‚Œã€bSequentialã‚’trueã«ã—ã¦æ¬¡ã¸
+					ãŸã ã—ã€ã€Œå·¦ã¸ã€ã®å ´åˆã¯ã€RessyaIndexãŒ0ã®æ™‚ã¯ç„¡åŠ¹ã«ã™ã‚‹(0ã ã¨å·¦ã«ã¯ç§»å‹•ã§ããªã„ã®ã§)
+				(2)bSequentialãŒtrueã®å ´åˆã€getXColumnNumberSelectedãŒtrueã®å ´åˆã¯æ¬¡ã¸ã€
+					falseã®å ´åˆã€iSelectSizeã‚’ç¢ºå®šã•ã›ã€bSequentialã‚’falseã«ã™ã‚‹ã€‚
+				(3)iSelectIndexãŒ0ä»¥ä¸Šã‹ã¤ã€bSequentialãŒfalseã®çŠ¶æ…‹ã§ã€getXColumnNumberSelectedãŒtrueã®å ´åˆã¯ã€ãƒ©ãƒ³ãƒ€ãƒ é¸æŠãªã®ã§iRv-ã§çµ‚äº†ã€‚
 			
 			*/
 			CdXColSpecCont aCdXColSpecCont = getCWndDcdGrid()->createXColSpecCont();
@@ -9744,11 +9744,11 @@ int CWjkState_Ressyahensyu::OnJikokuhyouLeft_Process(BOOL bQueryEnable)
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒh‚ğ¶¬EÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚’ç”Ÿæˆãƒ»å®Ÿè¡Œ
 		// --------------------------------
 		{
 			OuNew<CRfEditCmd> pCmd(
@@ -9762,7 +9762,7 @@ int CWjkState_Ressyahensyu::OnJikokuhyouLeft_Process(BOOL bQueryEnable)
 		}
 
 		// --------------------------------
-		//	ƒtƒH[ƒJƒXˆÊ’u‚ğˆÚ“®
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ä½ç½®ã‚’ç§»å‹•
 		// --------------------------------
 		{
 			CDcdGridCell* pCell =
@@ -9794,7 +9794,7 @@ int CWjkState_Ressyahensyu::OnJikokuhyouRight_Process(BOOL bQueryEnable)
 	int iRv = 0;
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -9827,13 +9827,13 @@ int CWjkState_Ressyahensyu::OnJikokuhyouRight_Process(BOOL bQueryEnable)
 		else
 		{
 			/**
-				getSelectedCellCount‚ª1ˆÈã‚Ìê‡(ƒ‰ƒ“ƒ_ƒ€‘I‘ğ)‚ÍA˜A‘±‚µ‚½‘I‘ğ‚Å‚ ‚é‚©‚Ç‚¤‚©‚ğ’²‚×‚Ü‚·B
-				(1)Index=0‚©‚ç’²‚×‚éAgetXColumnNumberSelected‚ªfalse‚Ìê‡‚ÍŸ‚ÖA
-					true‚Ìê‡‚ÍAiSelectIndex‚É‚»‚Ì—ñÔ‚ÌRessyaIndex‚ğ“ü‚êAbSequential‚ğtrue‚É‚µ‚ÄŸ‚Ö
-				(2)bSequential‚ªtrue‚Ìê‡AgetXColumnNumberSelected‚ªtrue‚Ìê‡‚ÍŸ‚ÖA
-					false‚Ìê‡AiSelectSize‚ğŠm’è‚³‚¹AbSequential‚ğfalse‚É‚·‚éB
-					‚½‚¾‚µAu‰E‚Öv‚Ìê‡‚ÍAÅI—v‘f‚ª—ñÔ––”ö‚Ìê‡ifalse‚É‚È‚Á‚½—ñ‚ªV‹K—ñÔ—ñ)‚ÍA‰E‚ÖˆÚ“®‚Å‚«‚È‚¢‚Ì‚Å–³Œø‚É‚È‚é(iRv-)
-				(3)iSelectIndex‚ª0ˆÈã‚©‚ÂAbSequential‚ªfalse‚Ìó‘Ô‚ÅAgetXColumnNumberSelected‚ªtrue‚Ìê‡‚ÍAƒ‰ƒ“ƒ_ƒ€‘I‘ğ‚È‚Ì‚ÅiRv-‚ÅI—¹B
+				getSelectedCellCountãŒ1ä»¥ä¸Šã®å ´åˆ(ãƒ©ãƒ³ãƒ€ãƒ é¸æŠ)ã¯ã€é€£ç¶šã—ãŸé¸æŠã§ã‚ã‚‹ã‹ã©ã†ã‹ã‚’èª¿ã¹ã¾ã™ã€‚
+				(1)Index=0ã‹ã‚‰èª¿ã¹ã‚‹ã€getXColumnNumberSelectedãŒfalseã®å ´åˆã¯æ¬¡ã¸ã€
+					trueã®å ´åˆã¯ã€iSelectIndexã«ãã®åˆ—è»Šã®RessyaIndexã‚’å…¥ã‚Œã€bSequentialã‚’trueã«ã—ã¦æ¬¡ã¸
+				(2)bSequentialãŒtrueã®å ´åˆã€getXColumnNumberSelectedãŒtrueã®å ´åˆã¯æ¬¡ã¸ã€
+					falseã®å ´åˆã€iSelectSizeã‚’ç¢ºå®šã•ã›ã€bSequentialã‚’falseã«ã™ã‚‹ã€‚
+					ãŸã ã—ã€ã€Œå³ã¸ã€ã®å ´åˆã¯ã€æœ€çµ‚è¦ç´ ãŒåˆ—è»Šæœ«å°¾ã®å ´åˆï¼ˆï¼falseã«ãªã£ãŸåˆ—ãŒæ–°è¦åˆ—è»Šåˆ—)ã¯ã€å³ã¸ç§»å‹•ã§ããªã„ã®ã§ç„¡åŠ¹ã«ãªã‚‹(iRv-)
+				(3)iSelectIndexãŒ0ä»¥ä¸Šã‹ã¤ã€bSequentialãŒfalseã®çŠ¶æ…‹ã§ã€getXColumnNumberSelectedãŒtrueã®å ´åˆã¯ã€ãƒ©ãƒ³ãƒ€ãƒ é¸æŠãªã®ã§iRv-ã§çµ‚äº†ã€‚
 
 			*/
 			CdXColSpecCont aCdXColSpecCont = getCWndDcdGrid()->createXColSpecCont();
@@ -9877,11 +9877,11 @@ int CWjkState_Ressyahensyu::OnJikokuhyouRight_Process(BOOL bQueryEnable)
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒh‚ğ¶¬EÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚’ç”Ÿæˆãƒ»å®Ÿè¡Œ
 		// --------------------------------
 		{
 			OuNew<CRfEditCmd> pCmd(
@@ -9895,7 +9895,7 @@ int CWjkState_Ressyahensyu::OnJikokuhyouRight_Process(BOOL bQueryEnable)
 		}
 
 		// --------------------------------
-		//	ƒtƒH[ƒJƒXˆÊ’u‚ğˆÚ“®
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ä½ç½®ã‚’ç§»å‹•
 		// --------------------------------
 		{
 			CDcdGridCell* pCell =
@@ -9930,7 +9930,7 @@ int CWjkState_Ressyahensyu
 	if (!bQueryEnable) { ppCmd = &pCmd; }
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -9943,16 +9943,16 @@ int CWjkState_Ressyahensyu
 	{
 		if (!getCWndDcdGrid()->createCmd(CWndJikokuhyou::ECreateCmd_Select, ppCmd))
 		{
-			iRv = -1;	//	—ñÔ‘I‘ğˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1;	//	åˆ—è»Šé¸æŠä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†
 		// --------------------------------
 		Mu<CentDedRessya*>* muCentDedRessya = pCmd->getCaMuiSelect()->getMuPtr();
 
@@ -9963,13 +9963,13 @@ int CWjkState_Ressyahensyu
 			pCentDedRessya->setIsCanceled(!pCentDedRessya->isCanceled());
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd(pCmd);
 		}
 		// --------------------------------
-		//	ƒtƒH[ƒJƒX‚ğˆÚ“®
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’ç§»å‹•
 		// --------------------------------
 		if (iRv >= 0)
 		{
@@ -10000,7 +10000,7 @@ void CWjkState_Ressyahensyu::ChangeRessyaTrackNext(Mu<CentDedRessya*>* muCentDed
 			->getMuPtr(pCentDedRessya->getRessyahoukou())->get(iEkiOrder);
 		CentDedEkiTrack2Cont aCentDedEkiTrack2Cont = aCdDedEki.getCentDedEkiTrack2Cont();
 
-		//”Ôü‚ğˆê‚Â‚¸‚ç‚·
+		//ç•ªç·šã‚’ä¸€ã¤ãšã‚‰ã™
 		if (pCentDedEkiJikoku->getRessyaTrackIndex() < aCentDedEkiTrack2Cont.size() - 1)
 		{
 			pCentDedEkiJikoku->setRessyaTrackIndex(pCentDedEkiJikoku->getRessyaTrackIndex() + 1);
@@ -10034,7 +10034,7 @@ void CWjkState_Ressyahensyu::ChangeRessyaTrackPrev(Mu<CentDedRessya*>* muCentDed
 			->getMuPtr(pCentDedRessya->getRessyahoukou())->get(iEkiOrder);
 		CentDedEkiTrack2Cont aCentDedEkiTrack2Cont = aCdDedEki.getCentDedEkiTrack2Cont();
 
-		//”Ôü‚ğˆê‚Â‚¸‚ç‚·
+		//ç•ªç·šã‚’ä¸€ã¤ãšã‚‰ã™
 		if (pCentDedEkiJikoku->getRessyaTrackIndex() == 0)
 		{
 			pCentDedEkiJikoku->setRessyaTrackIndex(aCentDedEkiTrack2Cont.size() - 1);
@@ -10301,7 +10301,7 @@ void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOperationTypeNext(
 				pBeforeOperationCont->set(aBeforeOperation, 0);
 			}
 		}
-		else//I’…ì‹Æ
+		else//çµ‚ç€ä½œæ¥­
 		{
 			int iEkiOrder = -1;
 			if (getCWndDcdGrid()->getYColSpecOfFocus().getColumnType() == CdYColSpec::ColumnType_Operation_Shuchaku1)
@@ -10779,7 +10779,7 @@ void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOperationTypePrev(
 
 			}
 		}
-		else//I’…ì‹Æ
+		else//çµ‚ç€ä½œæ¥­
 		{
 			int iEkiOrder = -1;
 			if (getCWndDcdGrid()->getYColSpecOfFocus().getColumnType() == CdYColSpec::ColumnType_Operation_Shuchaku1)
@@ -11131,7 +11131,7 @@ void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOperationDataNext(
 					pFirstOperation->setOuterShihatsuekiIndex(iNewIndex);
 					if (iOuterTerminalJikan[iNewIndex][0] != 0)
 					{
-						//˜HüŠOn”­‰w‚Ì•ÏX‚Ìê‡A“–‰w’…‚Í‚Æ‚è‚ ‚¦‚¸•ÏX‚µ‚È‚¢‚±‚Æ‚É‚·‚éB
+						//è·¯ç·šå¤–å§‹ç™ºé§…ã®å¤‰æ›´ã®å ´åˆã€å½“é§…ç€æ™‚åˆ»ã¯ã¨ã‚Šã‚ãˆãšå¤‰æ›´ã—ãªã„ã“ã¨ã«ã™ã‚‹ã€‚
 						CdDedJikoku aOuterShihatsuJikoku = pCentDedRessya->getCentDedEkiJikokuCont()
 							->getMuPtr()->get(iEkiOrder)->getHatsujikoku();
 						//CdDedJikoku aChakuJikoku = aOuterShihatsuJikoku;
@@ -11146,7 +11146,7 @@ void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOperationDataNext(
 					pFirstOperation->setOuterShihatsuekiIndex(0);
 					if (iOuterTerminalJikan[0][0] != 0)
 					{
-						//˜HüŠOn”­‰w‚Ì•ÏX‚Ìê‡A“–‰w’…‚Í‚Æ‚è‚ ‚¦‚¸•ÏX‚µ‚È‚¢‚±‚Æ‚É‚·‚éB
+						//è·¯ç·šå¤–å§‹ç™ºé§…ã®å¤‰æ›´ã®å ´åˆã€å½“é§…ç€æ™‚åˆ»ã¯ã¨ã‚Šã‚ãˆãšå¤‰æ›´ã—ãªã„ã“ã¨ã«ã™ã‚‹ã€‚
 						CdDedJikoku aOuterShihatsuJikoku = pCentDedRessya->getCentDedEkiJikokuCont()
 							->getMuPtr()->get(iEkiOrder)->getHatsujikoku();
 						//CdDedJikoku aChakuJikoku = aOuterShihatsuJikoku;
@@ -11158,7 +11158,7 @@ void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOperationDataNext(
 				}
 			}
 		}
-		else//I’…ì‹Æ
+		else//çµ‚ç€ä½œæ¥­
 		{
 			int iEkiOrder = -1;
 			if (getCWndDcdGrid()->getYColSpecOfFocus().getColumnType() == CdYColSpec::ColumnType_Operation_Shuchaku1)
@@ -11235,7 +11235,7 @@ void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOperationDataNext(
 					pLastOperation->setOuterShuchakuekiIndex(iNewIndex);
 					if (iOuterTerminalJikan[iNewIndex][0] != 0)
 					{
-						//˜HüŠOI’…‰w‚Ì•ÏX‚Ìê‡A“–‰w”­‚Í‚Æ‚è‚ ‚¦‚¸•ÏX‚µ‚È‚¢‚±‚Æ‚É‚·‚éB
+						//è·¯ç·šå¤–çµ‚ç€é§…ã®å¤‰æ›´ã®å ´åˆã€å½“é§…ç™ºæ™‚åˆ»ã¯ã¨ã‚Šã‚ãˆãšå¤‰æ›´ã—ãªã„ã“ã¨ã«ã™ã‚‹ã€‚
 						CdDedJikoku aOuterSyuchakuJikoku = pCentDedRessya->getCentDedEkiJikokuCont()
 							->getMuPtr()->get(iEkiOrder)->getChakujikoku();
 						//CdDedJikoku aHatsuJikoku = aOuterSyuchakuJikoku;
@@ -11363,7 +11363,7 @@ void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOperationDataPrev(
 					pFirstOperation->setOuterShihatsuekiIndex(iOuterTerminalEkimeiCount - 1);
 					if (iOuterTerminalJikan[iOuterTerminalEkimeiCount - 1][0] != 0)
 					{
-						//˜HüŠOn”­‰w‚Ì•ÏX‚Ìê‡A“–‰w’…‚Í‚Æ‚è‚ ‚¦‚¸•ÏX‚µ‚È‚¢‚±‚Æ‚É‚·‚éB
+						//è·¯ç·šå¤–å§‹ç™ºé§…ã®å¤‰æ›´ã®å ´åˆã€å½“é§…ç€æ™‚åˆ»ã¯ã¨ã‚Šã‚ãˆãšå¤‰æ›´ã—ãªã„ã“ã¨ã«ã™ã‚‹ã€‚
 						CdDedJikoku aOuterShihatsuJikoku = pCentDedRessya->getCentDedEkiJikokuCont()
 							->getMuPtr()->get(iEkiOrder)->getHatsujikoku();
 						//CdDedJikoku aChakuJikoku = aOuterShihatsuJikoku;
@@ -11379,7 +11379,7 @@ void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOperationDataPrev(
 					pFirstOperation->setOuterShihatsuekiIndex(iNewIndex);
 					if (iOuterTerminalJikan[iNewIndex][0] != 0)
 					{
-						//˜HüŠOn”­‰w‚Ì•ÏX‚Ìê‡A“–‰w’…‚Í‚Æ‚è‚ ‚¦‚¸•ÏX‚µ‚È‚¢‚±‚Æ‚É‚·‚éB
+						//è·¯ç·šå¤–å§‹ç™ºé§…ã®å¤‰æ›´ã®å ´åˆã€å½“é§…ç€æ™‚åˆ»ã¯ã¨ã‚Šã‚ãˆãšå¤‰æ›´ã—ãªã„ã“ã¨ã«ã™ã‚‹ã€‚
 						CdDedJikoku aOuterShihatsuJikoku = pCentDedRessya->getCentDedEkiJikokuCont()
 							->getMuPtr()->get(iEkiOrder)->getHatsujikoku();
 						//CdDedJikoku aChakuJikoku = aOuterShihatsuJikoku;
@@ -11391,7 +11391,7 @@ void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOperationDataPrev(
 				}
 			}
 		}
-		else//I’…ì‹Æ
+		else//çµ‚ç€ä½œæ¥­
 		{
 			int iEkiOrder = -1;
 			if (getCWndDcdGrid()->getYColSpecOfFocus().getColumnType() == CdYColSpec::ColumnType_Operation_Shuchaku1)
@@ -11482,7 +11482,7 @@ void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOperationDataPrev(
 					pLastOperation->setOuterShuchakuekiIndex(iNewIndex);
 					if (iOuterTerminalJikan[iNewIndex][0] != 0)
 					{
-						//˜HüŠOI’…‰w‚Ì•ÏX‚Ìê‡A“–‰w”­‚Í‚Æ‚è‚ ‚¦‚¸•ÏX‚µ‚È‚¢‚±‚Æ‚É‚·‚éB
+						//è·¯ç·šå¤–çµ‚ç€é§…ã®å¤‰æ›´ã®å ´åˆã€å½“é§…ç™ºæ™‚åˆ»ã¯ã¨ã‚Šã‚ãˆãšå¤‰æ›´ã—ãªã„ã“ã¨ã«ã™ã‚‹ã€‚
 						CdDedJikoku aOuterSyuchakuJikoku = pCentDedRessya->getCentDedEkiJikokuCont()
 							->getMuPtr()->get(iEkiOrder)->getChakujikoku();
 						//CdDedJikoku aHatsuJikoku = aOuterSyuchakuJikoku;
@@ -11545,7 +11545,7 @@ void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOuterTerminalNext(
 					pFirstOperation->setOuterShihatsuekiIndex(iNewIndex);
 					if (iOuterTerminalJikan[iNewIndex][0] != 0)
 					{
-						//˜HüŠOn”­‰w‚Ì•ÏX‚Ìê‡A“–‰w’…‚Í‚Æ‚è‚ ‚¦‚¸•ÏX‚µ‚È‚¢‚±‚Æ‚É‚·‚éB
+						//è·¯ç·šå¤–å§‹ç™ºé§…ã®å¤‰æ›´ã®å ´åˆã€å½“é§…ç€æ™‚åˆ»ã¯ã¨ã‚Šã‚ãˆãšå¤‰æ›´ã—ãªã„ã“ã¨ã«ã™ã‚‹ã€‚
 						CdDedJikoku aOuterShihatsuJikoku = pCentDedRessya->getCentDedEkiJikokuCont()
 							->getMuPtr()->get(iValidSihatsuEkiOrder)->getHatsujikoku();
 						//CdDedJikoku aChakuJikoku = aOuterShihatsuJikoku;
@@ -11560,7 +11560,7 @@ void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOuterTerminalNext(
 					pFirstOperation->setOuterShihatsuekiIndex(0);
 					if (iOuterTerminalJikan[0][0] != 0)
 					{
-						//˜HüŠOn”­‰w‚Ì•ÏX‚Ìê‡A“–‰w’…‚Í‚Æ‚è‚ ‚¦‚¸•ÏX‚µ‚È‚¢‚±‚Æ‚É‚·‚éB
+						//è·¯ç·šå¤–å§‹ç™ºé§…ã®å¤‰æ›´ã®å ´åˆã€å½“é§…ç€æ™‚åˆ»ã¯ã¨ã‚Šã‚ãˆãšå¤‰æ›´ã—ãªã„ã“ã¨ã«ã™ã‚‹ã€‚
 						CdDedJikoku aOuterShihatsuJikoku = pCentDedRessya->getCentDedEkiJikokuCont()
 							->getMuPtr()->get(iValidSihatsuEkiOrder)->getHatsujikoku();
 						//CdDedJikoku aChakuJikoku = aOuterShihatsuJikoku;
@@ -11572,7 +11572,7 @@ void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOuterTerminalNext(
 				}
 			}
 		}
-		else//I’…ì‹Æ
+		else//çµ‚ç€ä½œæ¥­
 		{
 			int iValidSyuuchakuEkiOrder = pCentDedRessya->getValidSyuuchakuEki();
 			if (iValidSyuuchakuEkiOrder != -1 &&
@@ -11599,7 +11599,7 @@ void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOuterTerminalNext(
 					pLastOperation->setOuterShuchakuekiIndex(iNewIndex);
 					if (iOuterTerminalJikan[iNewIndex][0] != 0)
 					{
-						//˜HüŠOI’…‰w‚Ì•ÏX‚Ìê‡A“–‰w”­‚Í‚Æ‚è‚ ‚¦‚¸•ÏX‚µ‚È‚¢‚±‚Æ‚É‚·‚éB
+						//è·¯ç·šå¤–çµ‚ç€é§…ã®å¤‰æ›´ã®å ´åˆã€å½“é§…ç™ºæ™‚åˆ»ã¯ã¨ã‚Šã‚ãˆãšå¤‰æ›´ã—ãªã„ã“ã¨ã«ã™ã‚‹ã€‚
 						CdDedJikoku aOuterSyuchakuJikoku = pCentDedRessya->getCentDedEkiJikokuCont()
 							->getMuPtr()->get(iValidSyuuchakuEkiOrder)->getChakujikoku();
 						//CdDedJikoku aHatsuJikoku = aOuterSyuchakuJikoku;
@@ -11662,7 +11662,7 @@ void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOuterTerminalPrev(
 					pFirstOperation->setOuterShihatsuekiIndex(iOuterTerminalEkimeiCount - 1);
 					if (iOuterTerminalJikan[iOuterTerminalEkimeiCount - 1][0] != 0)
 					{
-						//˜HüŠOn”­‰w‚Ì•ÏX‚Ìê‡A“–‰w’…‚Í‚Æ‚è‚ ‚¦‚¸•ÏX‚µ‚È‚¢‚±‚Æ‚É‚·‚éB
+						//è·¯ç·šå¤–å§‹ç™ºé§…ã®å¤‰æ›´ã®å ´åˆã€å½“é§…ç€æ™‚åˆ»ã¯ã¨ã‚Šã‚ãˆãšå¤‰æ›´ã—ãªã„ã“ã¨ã«ã™ã‚‹ã€‚
 						CdDedJikoku aOuterShihatsuJikoku = pCentDedRessya->getCentDedEkiJikokuCont()
 							->getMuPtr()->get(iValidSihatsuEkiOrder)->getHatsujikoku();
 						//CdDedJikoku aChakuJikoku = aOuterShihatsuJikoku;
@@ -11678,7 +11678,7 @@ void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOuterTerminalPrev(
 					pFirstOperation->setOuterShihatsuekiIndex(iNewIndex);
 					if (iOuterTerminalJikan[iNewIndex][0] != 0)
 					{
-						//˜HüŠOn”­‰w‚Ì•ÏX‚Ìê‡A“–‰w’…‚Í‚Æ‚è‚ ‚¦‚¸•ÏX‚µ‚È‚¢‚±‚Æ‚É‚·‚éB
+						//è·¯ç·šå¤–å§‹ç™ºé§…ã®å¤‰æ›´ã®å ´åˆã€å½“é§…ç€æ™‚åˆ»ã¯ã¨ã‚Šã‚ãˆãšå¤‰æ›´ã—ãªã„ã“ã¨ã«ã™ã‚‹ã€‚
 						CdDedJikoku aOuterShihatsuJikoku = pCentDedRessya->getCentDedEkiJikokuCont()
 							->getMuPtr()->get(iValidSihatsuEkiOrder)->getHatsujikoku();
 						//CdDedJikoku aChakuJikoku = aOuterShihatsuJikoku;
@@ -11690,7 +11690,7 @@ void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOuterTerminalPrev(
 				}
 			}
 		}
-		else//I’…ì‹Æ
+		else//çµ‚ç€ä½œæ¥­
 		{
 			int iValidSyuuchakuEkiOrder = pCentDedRessya->getValidSyuuchakuEki();
 			if (iValidSyuuchakuEkiOrder != -1 &&
@@ -11731,7 +11731,7 @@ void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOuterTerminalPrev(
 					pLastOperation->setOuterShuchakuekiIndex(iNewIndex);
 					if (iOuterTerminalJikan[iNewIndex][0] != 0)
 					{
-						//˜HüŠOI’…‰w‚Ì•ÏX‚Ìê‡A“–‰w”­‚Í‚Æ‚è‚ ‚¦‚¸•ÏX‚µ‚È‚¢‚±‚Æ‚É‚·‚éB
+						//è·¯ç·šå¤–çµ‚ç€é§…ã®å¤‰æ›´ã®å ´åˆã€å½“é§…ç™ºæ™‚åˆ»ã¯ã¨ã‚Šã‚ãˆãšå¤‰æ›´ã—ãªã„ã“ã¨ã«ã™ã‚‹ã€‚
 						CdDedJikoku aOuterSyuchakuJikoku = pCentDedRessya->getCentDedEkiJikokuCont()
 							->getMuPtr()->get(iValidSyuuchakuEkiOrder)->getChakujikoku();
 						//CdDedJikoku aHatsuJikoku = aOuterSyuchakuJikoku;
@@ -11749,7 +11749,7 @@ void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOuterTerminalPrev(
 void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOperationJikoku(
 	Mu<CentDedRessya*>* muCentDedRessya, int iShiftSecond)
 {
-	//Ver2.0@˜HüŠO”­’…‚Ìê‡‚ÍA“–‰w”­/’…‚Ì•ÏX‚ğs‚¤i˜HüŠO‰w‚ÍA˜HüŠO”­’…‰w—“‚É•\¦‚³‚ê‚é‚Ì‚Å)
+	//Ver2.0ã€€è·¯ç·šå¤–ç™ºç€ã®å ´åˆã¯ã€å½“é§…ç™º/ç€æ™‚åˆ»ã®å¤‰æ›´ã‚’è¡Œã†ï¼ˆè·¯ç·šå¤–é§…æ™‚åˆ»ã¯ã€è·¯ç·šå¤–ç™ºç€é§…æ¬„ã«è¡¨ç¤ºã•ã‚Œã‚‹ã®ã§)
 	for (int i = 0; i < muCentDedRessya->size(); i++)
 	{
 		CentDedRessya* pCentDedRessya = muCentDedRessya->get(i);
@@ -11881,7 +11881,7 @@ void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOperationJikoku(
 				else if (getCWndDcdGrid()->getYColSpecOfFocus().getColumnType() == CdYColSpec::ColumnType_BeforeOperationBefore2)
 				{
 					/**
-						‘Œ‹•Ò¬‚Ì‹N“_ì‹Æ‚Ìê‡A‚»‚Ì‘¼‚Ì‘Oì‹Æ‹y‚Ñ‘Œ‹‚©‚çƒZƒbƒg‚·‚é‚ğ‹‚ß‚Ü‚·
+						å¢—çµç·¨æˆã®èµ·ç‚¹ä½œæ¥­ã®å ´åˆã€ãã®ä»–ã®å‰ä½œæ¥­åŠã³å¢—çµæ™‚åˆ»ã‹ã‚‰ã‚»ãƒƒãƒˆã™ã‚‹æ™‚åˆ»ã‚’æ±‚ã‚ã¾ã™
 					*/
 					CentDedBeforeOperationCont* pBeforeCont = pCentDedRessya->getCentDedEkiJikokuCont()
 						->getMuPtr()->get(iEkiOrder)->getCentDedBeforeOperationCont();
@@ -12025,7 +12025,7 @@ void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOperationJikoku(
 				else if (getCWndDcdGrid()->getYColSpecOfFocus().getColumnType() == CdYColSpec::ColumnType_BeforeOperationBefore2)
 				{
 					/**
-						‘Œ‹•Ò¬‚Ì‹N“_ì‹Æ‚Ìê‡A‚»‚Ì‘¼‚Ì‘Oì‹Æ‹y‚Ñ‘Œ‹‚©‚çƒZƒbƒg‚·‚é‚ğ‹‚ß‚Ü‚·
+						å¢—çµç·¨æˆã®èµ·ç‚¹ä½œæ¥­ã®å ´åˆã€ãã®ä»–ã®å‰ä½œæ¥­åŠã³å¢—çµæ™‚åˆ»ã‹ã‚‰ã‚»ãƒƒãƒˆã™ã‚‹æ™‚åˆ»ã‚’æ±‚ã‚ã¾ã™
 					*/
 					CentDedBeforeOperationCont* pBeforeCont = pCentDedRessya->getCentDedEkiJikokuCont()
 						->getMuPtr()->get(iEkiOrder)->getCentDedBeforeOperationCont();
@@ -12459,9 +12459,9 @@ void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOperationJikoku(
 void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOperationJikokuNull(
 	Mu<CentDedRessya*>* muCentDedRessya)
 {
-	//Ver2.0@‘O—ñÔÚ‘±‚Ì‹N“_‚¨‚æ‚ÑŸ—ñÔÚ‘±‚ÌI“_‚Ì‚İNULL‰»‚ğs‚¤
-	//19.12.7 ˜HüŠOn”­EI’…‚©‚Â‰wˆµ‚¢‚ª’Ê‰ß‚Ìê‡‚ÍA“–‰w”­E’…‚ÌNULL‰»‚ğs‚¤
-	//Ver2.05 ‘Œ‹•Ò¬‹y‚Ñ‰ğŒ‹•Ò¬‚Ìì‹Æ‚É‚Â‚¢‚Ä‚ÍA‘O—ñÔÚ‘±‚Ì‹N“_‚¨‚æ‚ÑŸ—ñÔÚ‘±‚ÌI“_‚Ì‚İNULL‰»‚ğs‚¤
+	//Ver2.0ã€€å‰åˆ—è»Šæ¥ç¶šã®èµ·ç‚¹æ™‚åˆ»ãŠã‚ˆã³æ¬¡åˆ—è»Šæ¥ç¶šã®çµ‚ç‚¹æ™‚åˆ»ã®ã¿NULLåŒ–ã‚’è¡Œã†
+	//19.12.7 è·¯ç·šå¤–å§‹ç™ºãƒ»çµ‚ç€ã‹ã¤é§…æ‰±ã„ãŒé€šéã®å ´åˆã¯ã€å½“é§…ç™ºãƒ»ç€æ™‚åˆ»ã®NULLåŒ–ã‚’è¡Œã†
+	//Ver2.05 å¢—çµç·¨æˆåŠã³è§£çµç·¨æˆã®ä½œæ¥­ã«ã¤ã„ã¦ã¯ã€å‰åˆ—è»Šæ¥ç¶šã®èµ·ç‚¹æ™‚åˆ»ãŠã‚ˆã³æ¬¡åˆ—è»Šæ¥ç¶šã®çµ‚ç‚¹æ™‚åˆ»ã®ã¿NULLåŒ–ã‚’è¡Œã†
 	for (int i = 0; i < muCentDedRessya->size(); i++)
 	{
 		CentDedRessya* pCentDedRessya = muCentDedRessya->get(i);
@@ -12654,7 +12654,7 @@ void CWjkState_Ressyahensyu::ChangeShihatsuShuchakuOuterJikoku(
 
 
 //17.4.19
-//AdjustStdOpeTime‚Ì‰º¿‚¯ŠÖ”
+//AdjustStdOpeTimeã®ä¸‹è«‹ã‘é–¢æ•°
 int CWjkState_Ressyahensyu::StdOpeTimeFunc( 
 	int iDiaIndexStandard,
 	const CdDedJikokuOrder aCdJikokuOrder,
@@ -12662,19 +12662,19 @@ int CWjkState_Ressyahensyu::StdOpeTimeFunc(
 	const Mu<CentDedEkiCont::CdDedEki>* muCdDedEki 
 	) 
 {
-	//•s“KØŒ`®‚ğ‚±‚±‚Å‚Í‚¶‚«o‚·
+	//ä¸é©åˆ‡å½¢å¼ã‚’ã“ã“ã§ã¯ã˜ãå‡ºã™
 //ALL
 	int iSearchEkiOrder = aCdJikokuOrder.getEkiOrder() ;
 	CdDedJikokuOrder::EEkiJikokuItem aEEkiJikokuItem = aCdJikokuOrder.getEkiJikokuItem() ;
 	
 	bool SkipFor = false ;
-	//’…‚Ìê‡Aˆê‚Â‘O‚ª‰^s‚È‚µ‚È‚çA‚±‚Ì‚ÍˆÓ–¡‚ğ‚½‚È‚¢B
+	//ç€æ™‚åˆ»ã®å ´åˆã€ä¸€ã¤å‰ãŒé‹è¡Œãªã—ãªã‚‰ã€ã“ã®æ™‚åˆ»ã¯æ„å‘³ã‚’æŒãŸãªã„ã€‚
 	if (aEEkiJikokuItem == CdDedJikokuOrder::EkiJikokuItem_Chaku &&
 		!pCentDedRessya->isRunBetweenNextEki(iSearchEkiOrder - 1))
 	{
 		return 0;
 	}
-	//”­‚Ìê‡Aˆê‚ÂŒã‚ª‰^s‚È‚µ‚È‚çA‚±‚Ì‚ÍˆÓ–¡‚ğ‚½‚È‚¢B
+	//ç™ºæ™‚åˆ»ã®å ´åˆã€ä¸€ã¤å¾ŒãŒé‹è¡Œãªã—ãªã‚‰ã€ã“ã®æ™‚åˆ»ã¯æ„å‘³ã‚’æŒãŸãªã„ã€‚
 	else if (aEEkiJikokuItem == CdDedJikokuOrder::EkiJikokuItem_Hatsu &&
 		!pCentDedRessya->isRunBetweenNextEki(iSearchEkiOrder))
 	{
@@ -12686,10 +12686,10 @@ int CWjkState_Ressyahensyu::StdOpeTimeFunc(
 	{
 		if (!pCentDedRessya->isRunBetweenNextEki(iSearchEkiOrder - 1))
 		{
-			//ˆê‚Â‘O‚Ì‰w‚ª‰^s‚È‚µ‚Ìê‡‚ÍA‚±‚Ì‰w‚Ì’…‚ÍˆÓ–¡‚ğ‚½‚È‚¢‚Ì‚ÅA
-			//‰^s‚È‚µ‚ğ‹²‚ñ‚Å‚ª‚ ‚é‰w‚ğŒ©‚Â‚¯‚éB
-			//Œ©‚Â‚©‚Á‚½‰w‚Æ‚±‚Ì‰w‚ªA•ªŠòEŠÂóüİ’è‚Å“¯ƒOƒ‹[ƒv‚Å‚Í‚È‚¢ê‡‚ÍAillegal‚Æ‚·‚é
-			//“¯ƒOƒ‹[ƒv‚Ìê‡‚ÍAiSearchEkiOrder‚ğŒ©‚Â‚©‚Á‚½‰w‚Åã‘‚«‚µA’…ŒŸ¸‚ğs‚¤B
+			//ä¸€ã¤å‰ã®é§…ãŒé‹è¡Œãªã—ã®å ´åˆã¯ã€ã“ã®é§…ã®ç€æ™‚åˆ»ã¯æ„å‘³ã‚’æŒãŸãªã„ã®ã§ã€
+			//é‹è¡Œãªã—ã‚’æŒŸã‚“ã§æ™‚åˆ»ãŒã‚ã‚‹é§…ã‚’è¦‹ã¤ã‘ã‚‹ã€‚
+			//è¦‹ã¤ã‹ã£ãŸé§…ã¨ã“ã®é§…ãŒã€åˆ†å²ãƒ»ç’°çŠ¶ç·šè¨­å®šã§åŒã‚°ãƒ«ãƒ¼ãƒ—ã§ã¯ãªã„å ´åˆã¯ã€illegalã¨ã™ã‚‹
+			//åŒã‚°ãƒ«ãƒ¼ãƒ—ã®å ´åˆã¯ã€iSearchEkiOrderã‚’è¦‹ã¤ã‹ã£ãŸé§…ã§ä¸Šæ›¸ãã—ã€ç€æ™‚åˆ»æ¤œæŸ»ã‚’è¡Œã†ã€‚
 			int iPrevEkiOrder = pCentDedRessya->getRunBetweenEkiBackward(iSearchEkiOrder);
 			if (getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()->getCentDedEkiCont()
 				->isSameBrunchLoopGroup(iPrevEkiOrder, iSearchEkiOrder, pCentDedRessya->getRessyahoukou()))
@@ -12711,47 +12711,47 @@ int CWjkState_Ressyahensyu::StdOpeTimeFunc(
 			{
 				if (aSearchEkiJikoku.getEkiatsukai() == CentDedEkiJikoku::Ekiatsukai_Teisya)
 				{
-					//’âÔ‚©‚ÂA’…‚ª–³‚¢‚È‚ç
+					//åœè»Šã‹ã¤ã€ç€æ™‚åˆ»ãŒç„¡ã„ãªã‚‰
 					return 0;
 				}
-				//else ‘O‰w‚Ö ’Ê‰ß
+				//else å‰é§…ã¸ é€šé
 			}
 			else
 			{
 				SkipFor = true;
-				//•]‰¿ ’…‚ª‘¶İ‚·‚é‚Ì‚ÅA’âÔŠÔ•]‰¿‰Â”\Afor‚É“ü‚ç‚È‚¢‚æ‚¤‚Éflag‚ğOn‚ÉB
+				//è©•ä¾¡ ç€æ™‚åˆ»ãŒå­˜åœ¨ã™ã‚‹ã®ã§ã€åœè»Šæ™‚é–“è©•ä¾¡å¯èƒ½ã€forã«å…¥ã‚‰ãªã„ã‚ˆã†ã«flagã‚’Onã«ã€‚
 			}
 		}
 	}
 	for (iSearchEkiOrder--; iSearchEkiOrder >= pCentDedRessya->getSihatsuEki() && !SkipFor; iSearchEkiOrder--)
 	{
-		//‘O’ñğŒ@‚±‚Ì‰w‚Í’âÔ‚Ü‚½‚Í’Ê‰ßEˆê‚ÂŸ‚Ì‰w‚à’âÔ‚Ü‚½‚Í’Ê‰ß¨”­‚ª—LŒø
+		//å‰ææ¡ä»¶ã€€ã“ã®é§…ã¯åœè»Šã¾ãŸã¯é€šéãƒ»ä¸€ã¤æ¬¡ã®é§…ã‚‚åœè»Šã¾ãŸã¯é€šéâ†’ç™ºæ™‚åˆ»ãŒæœ‰åŠ¹
 		const CentDedEkiJikoku aSearchHatsuEkiJikoku = pCentDedRessya->getCentDedEkiJikoku(iSearchEkiOrder);
 		const CentDedEkiCont::CdDedEki aSearchHatsuEki = muCdDedEki->get(iSearchEkiOrder);
 
 		if (aSearchHatsuEki.getHatsujikokuHyouji())
 		{
-			//‰wˆµ‚¢‚Í’âÔE’Ê‰ßA”­•\¦—L
+			//é§…æ‰±ã„ã¯åœè»Šãƒ»é€šéã€ç™ºæ™‚åˆ»è¡¨ç¤ºæœ‰
 			if (aSearchHatsuEkiJikoku.getHatsujikoku().isNull())
 			{
 				if (aSearchHatsuEkiJikoku.getEkiatsukai() == CentDedEkiJikoku::Ekiatsukai_Teisya)
 				{
 					return 0;
-					//(’Ê‰ß‰w‚Ìê‡‚ÆAŸ‰w‚ªŒo—R–³‚µ‚Ìê‡A”­‚ª–³‚­‚Ä‚à–â‘è‚È‚µ)
+					//(é€šéé§…ã®å ´åˆã¨ã€æ¬¡é§…ãŒçµŒç”±ç„¡ã—ã®å ´åˆã€ç™ºæ™‚åˆ»ãŒç„¡ãã¦ã‚‚å•é¡Œãªã—)
 				}
-				//’Ê‰ß‚Ìê‡‚Í’…ŒŸ¸‚Ö
+				//é€šéã®å ´åˆã¯ç€æ™‚åˆ»æ¤œæŸ»ã¸
 			}
 			else
 			{
-				break; //•]‰¿‰Â”\‚È‚Ì‚ÅAfor‚ğ”²‚¯‚Ä–{‘Ì‚Ö
+				break; //è©•ä¾¡å¯èƒ½ãªã®ã§ã€forã‚’æŠœã‘ã¦æœ¬ä½“ã¸
 			}
 		}
-		//‚±‚±‚Ü‚Å‚Í”­‚É’…–Ú
+		//ã“ã“ã¾ã§ã¯ç™ºæ™‚åˆ»ã«ç€ç›®
 
-		//ˆê‚Â‘O‚Ì‰w‚ª‰^s‚È‚µ‚Ìê‡‚ÍA‚±‚Ì‰w‚Ì’…‚ÍˆÓ–¡‚ğ‚½‚È‚¢‚Ì‚ÅA
-		//‰^s‚È‚µ‚ğ‹²‚ñ‚Å‚ª‚ ‚é‰w‚ğŒ©‚Â‚¯‚éB
-		//Œ©‚Â‚©‚Á‚½‰w‚Æ‚±‚Ì‰w‚ªA•ªŠòEŠÂóüİ’è‚Å“¯ƒOƒ‹[ƒv‚Å‚Í‚È‚¢ê‡‚ÍAillegal‚Æ‚·‚é
-		//“¯ƒOƒ‹[ƒv‚Ìê‡‚ÍAiSearchEkiOrder‚ğŒ©‚Â‚©‚Á‚½‰w‚Åã‘‚«‚µA’…ŒŸ¸‚ğs‚¤B
+		//ä¸€ã¤å‰ã®é§…ãŒé‹è¡Œãªã—ã®å ´åˆã¯ã€ã“ã®é§…ã®ç€æ™‚åˆ»ã¯æ„å‘³ã‚’æŒãŸãªã„ã®ã§ã€
+		//é‹è¡Œãªã—ã‚’æŒŸã‚“ã§æ™‚åˆ»ãŒã‚ã‚‹é§…ã‚’è¦‹ã¤ã‘ã‚‹ã€‚
+		//è¦‹ã¤ã‹ã£ãŸé§…ã¨ã“ã®é§…ãŒã€åˆ†å²ãƒ»ç’°çŠ¶ç·šè¨­å®šã§åŒã‚°ãƒ«ãƒ¼ãƒ—ã§ã¯ãªã„å ´åˆã¯ã€illegalã¨ã™ã‚‹
+		//åŒã‚°ãƒ«ãƒ¼ãƒ—ã®å ´åˆã¯ã€iSearchEkiOrderã‚’è¦‹ã¤ã‹ã£ãŸé§…ã§ä¸Šæ›¸ãã—ã€ç€æ™‚åˆ»æ¤œæŸ»ã‚’è¡Œã†ã€‚
 		if (!pCentDedRessya->isRunBetweenNextEki(iSearchEkiOrder - 1))
 		{
 			int iPrevEkiOrder = pCentDedRessya->getRunBetweenEkiBackward(iSearchEkiOrder);
@@ -12770,7 +12770,7 @@ int CWjkState_Ressyahensyu::StdOpeTimeFunc(
 		const CentDedEkiCont::CdDedEki aSearchChakuEki = muCdDedEki->get(iSearchEkiOrder);
 		if (aSearchChakuEki.getChakujikokuHyouji())
 		{
-			//’…•\¦—L
+			//ç€æ™‚åˆ»è¡¨ç¤ºæœ‰
 			if (aSearchChakuEkiJikoku.getChakujikoku().isNull())
 			{
 				if (aSearchChakuEkiJikoku.getEkiatsukai() == CentDedEkiJikoku::Ekiatsukai_Teisya)
@@ -12780,96 +12780,96 @@ int CWjkState_Ressyahensyu::StdOpeTimeFunc(
 			}
 			else
 			{
-				break; //•]‰¿‰Â”\‚È‚Ì‚ÅAfor‚ğ”²‚¯‚Ä–{‘Ì‚Ö
+				break; //è©•ä¾¡å¯èƒ½ãªã®ã§ã€forã‚’æŠœã‘ã¦æœ¬ä½“ã¸
 			}
 		}
 	}
-	//‚±‚±‚Ü‚Å–‘OŠm”F
+	//ã“ã“ã¾ã§äº‹å‰ç¢ºèª
 
 
 	//
-	//‚Ü‚¸‚ÍŠî€‘¤—ñÔƒRƒ“ƒeƒi‚Ü‚Å’è‹`
+	//ã¾ãšã¯åŸºæº–å´åˆ—è»Šã‚³ãƒ³ãƒ†ãƒŠã¾ã§å®šç¾©
 	const CentDedRessyaCont* pCentDedRessyaContStandard =
 		getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()->getCentDedDiaCont()
 		->getMuPtr()->get( iDiaIndexStandard )->getCentDedRessyaCont( pCentDedRessya->getRessyahoukou() ) ; 
-	//‘ÎÛ—ñÔí•Ê‚ğæ“¾(ˆø”‚©‚çŠO‚µ‚½)
+	//å¯¾è±¡åˆ—è»Šç¨®åˆ¥ã‚’å–å¾—(å¼•æ•°ã‹ã‚‰å¤–ã—ãŸ)
 	int idxRessyasyubetsu = pCentDedRessya->getRessyasyubetsuIndex() ;
-	//‘ÎÛ—ñÔ‚Æ“¯‚¶í•Ê‚ğŠî€‘¤‚Å’Tõ
+	//å¯¾è±¡åˆ—è»Šã¨åŒã˜ç¨®åˆ¥ã‚’åŸºæº–å´ã§æ¢ç´¢
 	for(int iRessyaIndexStandard = 0 ; 
-		iRessyaIndexStandard < pCentDedRessyaContStandard->size()/*ƒRƒ“ƒeƒi“à—ñÔ”*/ ; 
+		iRessyaIndexStandard < pCentDedRessyaContStandard->size()/*ã‚³ãƒ³ãƒ†ãƒŠå†…åˆ—è»Šæ•°*/ ; 
 		iRessyaIndexStandard++ )
 	{
-		//‘ÎÛ—ñÔ‚Æ“¯‚¶í•Ê‚©‚Ç‚¤‚©Šm”F
+		//å¯¾è±¡åˆ—è»Šã¨åŒã˜ç¨®åˆ¥ã‹ã©ã†ã‹ç¢ºèª
 		if( pCentDedRessyaContStandard->getMuPtr()->get( iRessyaIndexStandard )->getRessyasyubetsuIndex() != idxRessyasyubetsu )
 		{
-			continue ; //Ÿ—ñÔ‚ÉˆÚs
+			continue ; //æ¬¡åˆ—è»Šã«ç§»è¡Œ
 		}
-	//“¯‚¶í•Ê
+	//åŒã˜ç¨®åˆ¥
 		iSearchEkiOrder = aCdJikokuOrder.getEkiOrder();
 		const CentDedEkiJikoku aEkiJikoku = pCentDedRessya->getCentDedEkiJikoku(iSearchEkiOrder);
-		//Šî€‘¤—ñÔƒRƒ“ƒeƒiæ“¾
+		//åŸºæº–å´åˆ—è»Šã‚³ãƒ³ãƒ†ãƒŠå–å¾—
 		const CentDedRessya* pCentDedRessyaStandard = pCentDedRessyaContStandard->getMuPtr()->get( iRessyaIndexStandard ) ;
 		const CentDedEkiJikoku aStandardEkiJikoku = pCentDedRessyaStandard->getCentDedEkiJikoku(iSearchEkiOrder);
-		//‚Ü‚¸‚Í“–‰w‚Å‚Ì‚Ó‚é‚¢•ª‚¯
+		//ã¾ãšã¯å½“é§…ã§ã®ãµã‚‹ã„åˆ†ã‘
 	//ALL
 		if(aEkiJikoku.getEkiatsukai() !=
 			aStandardEkiJikoku.getEkiatsukai()  )
 		{
-			//‰wˆµ‚¢‚ªˆê’v‚µ‚È‚¢ê‡‚ÍŸ—ñÔ
+			//é§…æ‰±ã„ãŒä¸€è‡´ã—ãªã„å ´åˆã¯æ¬¡åˆ—è»Š
 			continue ;
 		}
-	//‰wˆµ‚¢‚Íˆê’v‚µ‚Ä‚¢‚é
+	//é§…æ‰±ã„ã¯ä¸€è‡´ã—ã¦ã„ã‚‹
 		if( aEEkiJikokuItem == CdDedJikokuOrder::EkiJikokuItem_Chaku && 
 			aStandardEkiJikoku.getChakujikoku().isNull() )
 		{ 
-			//•]‰¿‘ÎÛ‚ª’…‚È‚Ì‚ÉAŠî€‘¤‚É‚Í‚È‚¢‚Ì‚ÅAŸ—ñÔ
+			//è©•ä¾¡å¯¾è±¡ãŒç€æ™‚åˆ»ãªã®ã«ã€åŸºæº–å´ã«ã¯ãªã„ã®ã§ã€æ¬¡åˆ—è»Š
 			continue ;
 		}
-	//•]‰¿‘ÎÛ‚ª”­‚Ìê‡‚ÆA’…‚È‚çŠî€‘¤‚É‚à‘¶İ‚µ‚Ä‚¢‚é
+	//è©•ä¾¡å¯¾è±¡ãŒç™ºæ™‚åˆ»ã®å ´åˆã¨ã€ç€æ™‚åˆ»ãªã‚‰åŸºæº–å´ã«ã‚‚å­˜åœ¨ã—ã¦ã„ã‚‹
 		if( aEEkiJikokuItem == CdDedJikokuOrder::EkiJikokuItem_Hatsu && 
 			aStandardEkiJikoku.getHatsujikoku().isNull() )
 		{
-			//•]‰¿‘ÎÛ‚ª”­‚È‚Ì‚ÉAŠî€‘¤‚É‚Í‚È‚¢‚Ì‚ÅAŸ—ñÔ
+			//è©•ä¾¡å¯¾è±¡ãŒç™ºæ™‚åˆ»ãªã®ã«ã€åŸºæº–å´ã«ã¯ãªã„ã®ã§ã€æ¬¡åˆ—è»Š
 			continue ;
 		}
-	//’…‚Ìê‡A•]‰¿‘ÎÛ‚Ìˆê‚Â‘O‚ª‰^s‚È‚µ‚È‚çA‚±‚Ì‚ÍˆÓ–¡‚ğ‚½‚È‚¢‚Ì‚ÅAŸ—ñÔ‚Ö
+	//ç€æ™‚åˆ»ã®å ´åˆã€è©•ä¾¡å¯¾è±¡ã®ä¸€ã¤å‰ãŒé‹è¡Œãªã—ãªã‚‰ã€ã“ã®æ™‚åˆ»ã¯æ„å‘³ã‚’æŒãŸãªã„ã®ã§ã€æ¬¡åˆ—è»Šã¸
 		if (aEEkiJikokuItem == CdDedJikokuOrder::EkiJikokuItem_Chaku &&
 			!pCentDedRessyaStandard->isRunBetweenNextEki(iSearchEkiOrder - 1))
 		{
 			continue;
 		}
-	//”­‚Ìê‡A•]‰¿‘ÎÛ‚Ìˆê‚ÂŒã‚ª‰^s‚È‚µ‚È‚çA‚±‚Ì‚ÍˆÓ–¡‚ğ‚½‚È‚¢‚Ì‚ÅAŸ—ñÔ‚Ö
+	//ç™ºæ™‚åˆ»ã®å ´åˆã€è©•ä¾¡å¯¾è±¡ã®ä¸€ã¤å¾ŒãŒé‹è¡Œãªã—ãªã‚‰ã€ã“ã®æ™‚åˆ»ã¯æ„å‘³ã‚’æŒãŸãªã„ã®ã§ã€æ¬¡åˆ—è»Šã¸
 		if (aEEkiJikokuItem == CdDedJikokuOrder::EkiJikokuItem_Hatsu &&
 			!pCentDedRessyaStandard->isRunBetweenNextEki(iSearchEkiOrder))
 		{
 			continue;
 		}
-	//•]‰¿‘ÎÛ‚Æ“¯‚¶ƒ|ƒWƒVƒ‡ƒ“‚Ì‚ª‘¶İ‚·‚é
+	//è©•ä¾¡å¯¾è±¡ã¨åŒã˜ãƒã‚¸ã‚·ãƒ§ãƒ³ã®æ™‚åˆ»ãŒå­˜åœ¨ã™ã‚‹
 
 		if (aEEkiJikokuItem == CdDedJikokuOrder::EkiJikokuItem_Hatsu)
 		{
 			if (pCentDedRessya->isRunBetweenNextEki(iSearchEkiOrder - 1) !=
 				pCentDedRessyaStandard->isRunBetweenNextEki(iSearchEkiOrder - 1))
 			{
-				//‘O‰w‚ª‰^s‚È‚µ‚©”Û‚©‚ªˆÙ‚È‚éê‡‚ÍŸ—ñÔ‚Ö
+				//å‰é§…ãŒé‹è¡Œãªã—ã‹å¦ã‹ãŒç•°ãªã‚‹å ´åˆã¯æ¬¡åˆ—è»Šã¸
 				continue;
 			}
 
 			if (!pCentDedRessya->isRunBetweenNextEki(iSearchEkiOrder - 1))
 			{
-				//ˆê‚Â‘O‚Ì‰w‚ª‰^s‚È‚µ‚Ìê‡‚ÍA‚±‚Ì‰w‚Ì’…‚ÍˆÓ–¡‚ğ‚½‚È‚¢‚Ì‚ÅA
-				//‰^s‚È‚µ‚ğ‹²‚ñ‚Å‚ª‚ ‚é‰w‚ğŒ©‚Â‚¯‚éB
-				//Œ©‚Â‚©‚Á‚½‰w‚Æ‚±‚Ì‰w‚ªA•ªŠòEŠÂóüİ’è‚Å“¯ƒOƒ‹[ƒv‚Å‚Í‚È‚¢ê‡‚ÍAillegal‚Æ‚·‚é
-				//“¯ƒOƒ‹[ƒv‚Ìê‡‚ÍAiSearchEkiOrder‚ğŒ©‚Â‚©‚Á‚½‰w‚Åã‘‚«‚µA’…ŒŸ¸‚ğs‚¤B
+				//ä¸€ã¤å‰ã®é§…ãŒé‹è¡Œãªã—ã®å ´åˆã¯ã€ã“ã®é§…ã®ç€æ™‚åˆ»ã¯æ„å‘³ã‚’æŒãŸãªã„ã®ã§ã€
+				//é‹è¡Œãªã—ã‚’æŒŸã‚“ã§æ™‚åˆ»ãŒã‚ã‚‹é§…ã‚’è¦‹ã¤ã‘ã‚‹ã€‚
+				//è¦‹ã¤ã‹ã£ãŸé§…ã¨ã“ã®é§…ãŒã€åˆ†å²ãƒ»ç’°çŠ¶ç·šè¨­å®šã§åŒã‚°ãƒ«ãƒ¼ãƒ—ã§ã¯ãªã„å ´åˆã¯ã€illegalã¨ã™ã‚‹
+				//åŒã‚°ãƒ«ãƒ¼ãƒ—ã®å ´åˆã¯ã€iSearchEkiOrderã‚’è¦‹ã¤ã‹ã£ãŸé§…ã§ä¸Šæ›¸ãã—ã€ç€æ™‚åˆ»æ¤œæŸ»ã‚’è¡Œã†ã€‚
 				int iPrevEkiOrder = pCentDedRessya->getRunBetweenEkiBackward(iSearchEkiOrder);
 				int iPrevEkiOrderStandard = pCentDedRessyaStandard->getRunBetweenEkiBackward(iSearchEkiOrder);
 				if (iPrevEkiOrder != iPrevEkiOrderStandard)
 				{
-					//‰^s‚È‚µ‚Ì˜A‘±‚ªˆÙ‚È‚Á‚Ä‚¢‚é‚Ì‚ÅŸ—ñÔ‚Ö
+					//é‹è¡Œãªã—ã®é€£ç¶šãŒç•°ãªã£ã¦ã„ã‚‹ã®ã§æ¬¡åˆ—è»Šã¸
 					continue;
 				}
 
-				//æ‚Ìƒ`ƒFƒbƒN‚ÅAiPrevEkiOrder‚ªiSearchEkiOrder‚Æ“¯ˆê‰wˆµ‚¢‚È‚Ì‚ÍŠm”FÏ‚İ‚È‚Ì‚ÅAiSearchEkiOrder‚ğã‘‚«‚µA’…ƒ`ƒFƒbƒN‚ÖB
+				//å…ˆã®ãƒã‚§ãƒƒã‚¯ã§ã€iPrevEkiOrderãŒiSearchEkiOrderã¨åŒä¸€é§…æ‰±ã„ãªã®ã¯ç¢ºèªæ¸ˆã¿ãªã®ã§ã€iSearchEkiOrderã‚’ä¸Šæ›¸ãã—ã€ç€æ™‚åˆ»ãƒã‚§ãƒƒã‚¯ã¸ã€‚
 				iSearchEkiOrder = iPrevEkiOrder;
 			}
 
@@ -12885,9 +12885,9 @@ int CWjkState_Ressyahensyu::StdOpeTimeFunc(
 					aStandardSearchEkiJikoku.getChakujikoku().isNull())
 				{
 					if (!aSearchEkiJikoku.getChakujikoku().isNull())
-						//ˆê’v‚µA‚»‚ê‚ª—L‚è‚È‚ç
+						//ä¸€è‡´ã—ã€ãã‚ŒãŒæœ‰ã‚Šãªã‚‰
 					{
-						//•]‰¿
+						//è©•ä¾¡
 						int iElapsedTime = aEkiJikoku.getHatsujikoku().subJikoku(
 							aSearchEkiJikoku.getChakujikoku());
 						int iElapsedTimeStandard = aStandardEkiJikoku.getHatsujikoku().subJikoku(
@@ -12895,18 +12895,18 @@ int CWjkState_Ressyahensyu::StdOpeTimeFunc(
 
 						return iElapsedTimeStandard - iElapsedTime;
 					}
-					//else¦1 ’…—L–³‚ª–³‚µ‚Åˆê’v‚Ìê‡‘O‰w‚ÖA•s“KØƒP[ƒX‚Íô‚¢o‚µÏ‚İB
+					//elseâ€»1 ç€æ™‚åˆ»æœ‰ç„¡ãŒç„¡ã—ã§ä¸€è‡´ã®å ´åˆå‰é§…ã¸ã€ä¸é©åˆ‡ã‚±ãƒ¼ã‚¹ã¯æ´—ã„å‡ºã—æ¸ˆã¿ã€‚
 				}
 				else
 				{
-					//‰wˆµ‚¢•sˆê’v‚Ü‚½‚Í’…‚Ì—L–³‚ª•sˆê’v‚Ìê‡‚ÍAŸ—ñÔ‚Ö
+					//é§…æ‰±ã„ä¸ä¸€è‡´ã¾ãŸã¯ç€æ™‚åˆ»ã®æœ‰ç„¡ãŒä¸ä¸€è‡´ã®å ´åˆã¯ã€æ¬¡åˆ—è»Šã¸
 					continue;
 				}
 			}
 		}
 		for (iSearchEkiOrder--; iSearchEkiOrder >= pCentDedRessya->getSihatsuEki() && !SkipFor; iSearchEkiOrder--)
 		{
-			//‘O’ñğŒ@‚±‚Ì‰w‚Í’âÔ‚Ü‚½‚Í’Ê‰ßEˆê‚ÂŸ‚Ì‰w‚à’âÔ‚Ü‚½‚Í’Ê‰ß¨”­‚ª—LŒø
+			//å‰ææ¡ä»¶ã€€ã“ã®é§…ã¯åœè»Šã¾ãŸã¯é€šéãƒ»ä¸€ã¤æ¬¡ã®é§…ã‚‚åœè»Šã¾ãŸã¯é€šéâ†’ç™ºæ™‚åˆ»ãŒæœ‰åŠ¹
 			const CentDedEkiJikoku aSearchHatsuEkiJikoku = pCentDedRessya->getCentDedEkiJikoku(iSearchEkiOrder);
 			const CentDedEkiJikoku aStandardSearchHatsuEkiJikoku = pCentDedRessyaStandard->getCentDedEkiJikoku(iSearchEkiOrder);
 			const CentDedEkiCont::CdDedEki aSearchHatsuEki = muCdDedEki->get(iSearchEkiOrder);
@@ -12914,21 +12914,21 @@ int CWjkState_Ressyahensyu::StdOpeTimeFunc(
 			if (aSearchHatsuEkiJikoku.getEkiatsukai() !=
 				aStandardSearchHatsuEkiJikoku.getEkiatsukai())
 			{
-				break; //‰wˆµ‚¢‚ªˆê’v‚µ‚È‚©‚Á‚½‚Ì‚ÅŸ—ñÔ‚Ö
+				break; //é§…æ‰±ã„ãŒä¸€è‡´ã—ãªã‹ã£ãŸã®ã§æ¬¡åˆ—è»Šã¸
 			}
 
 			if (aSearchHatsuEki.getHatsujikokuHyouji())
 			{
-				//‰wˆµ‚¢‚Í’âÔE’Ê‰ß‚Åˆê’vA”­•\¦—L
+				//é§…æ‰±ã„ã¯åœè»Šãƒ»é€šéã§ä¸€è‡´ã€ç™ºæ™‚åˆ»è¡¨ç¤ºæœ‰
 				if (aSearchHatsuEkiJikoku.getHatsujikoku().isNull() !=
 					aStandardSearchHatsuEkiJikoku.getHatsujikoku().isNull())
 				{
-					break; //—L–³‚ª•sˆê’v‚Ìê‡‚ÍAŸ—ñÔ‚Ö
+					break; //æ™‚åˆ»æœ‰ç„¡ãŒä¸ä¸€è‡´ã®å ´åˆã¯ã€æ¬¡åˆ—è»Šã¸
 				}
-				//‰wˆµ‚¢‚Í’âÔE’Ê‰ß‚Åˆê’vA”­‚Ì—L–³‚Íˆê’v(’âÔ‚Ìê‡‚Í•K‚¸‚ ‚è)
+				//é§…æ‰±ã„ã¯åœè»Šãƒ»é€šéã§ä¸€è‡´ã€ç™ºæ™‚åˆ»ã®æœ‰ç„¡ã¯ä¸€è‡´(åœè»Šã®å ´åˆã¯å¿…ãšæ™‚åˆ»ã‚ã‚Š)
 				if (!aSearchHatsuEkiJikoku.getHatsujikoku().isNull())
 				{
-					//”­‚ª‘¶İ‚·‚é‚È‚ç
+					//ç™ºæ™‚åˆ»ãŒå­˜åœ¨ã™ã‚‹ãªã‚‰
 					int iElapsedTime = 0;
 					int iElapsedTimeStandard = 0;
 					if (aEEkiJikokuItem == CdDedJikokuOrder::EkiJikokuItem_Chaku)
@@ -12943,21 +12943,21 @@ int CWjkState_Ressyahensyu::StdOpeTimeFunc(
 					}
 					return iElapsedTimeStandard - iElapsedTime;
 				}
-				//else ’Ê‰ß&‚È‚µ‚Ìê‡‚Í’…ŒŸ¸‚ÖB‚±‚±‚Å•s“KØƒP[ƒX‚É‚È‚é‚à‚Ì‚ÍA–‘Oô‚¢o‚µÏ‚İ
+				//else é€šé&æ™‚åˆ»ãªã—ã®å ´åˆã¯ç€æ™‚åˆ»æ¤œæŸ»ã¸ã€‚ã“ã“ã§ä¸é©åˆ‡ã‚±ãƒ¼ã‚¹ã«ãªã‚‹ã‚‚ã®ã¯ã€äº‹å‰æ´—ã„å‡ºã—æ¸ˆã¿
 			}
-			//‚±‚±‚Ü‚Å‚Í”­‚É’…–Ú
+			//ã“ã“ã¾ã§ã¯ç™ºæ™‚åˆ»ã«ç€ç›®
 
-			//ˆê‚Â‘O‚Ì‰w‚ª‰^s‚È‚µ‚Ìê‡‚ÍA‚±‚Ì‰w‚Ì’…‚ÍˆÓ–¡‚ğ‚½‚È‚¢‚Ì‚ÅA
-			//‰^s‚È‚µ‚ğ‹²‚ñ‚Å‚ª‚ ‚é‰w‚ğŒ©‚Â‚¯‚éB
-			//Œ©‚Â‚©‚Á‚½‰w‚Æ‚±‚Ì‰w‚ªA•ªŠòEŠÂóüİ’è‚Å“¯ƒOƒ‹[ƒv‚Å‚Í‚È‚¢ê‡‚ÍAillegal‚Æ‚·‚é
-			//“¯ƒOƒ‹[ƒv‚Ìê‡‚ÍAiSearchEkiOrder‚ğŒ©‚Â‚©‚Á‚½‰w‚Åã‘‚«‚µA’…ŒŸ¸‚ğs‚¤B
+			//ä¸€ã¤å‰ã®é§…ãŒé‹è¡Œãªã—ã®å ´åˆã¯ã€ã“ã®é§…ã®ç€æ™‚åˆ»ã¯æ„å‘³ã‚’æŒãŸãªã„ã®ã§ã€
+			//é‹è¡Œãªã—ã‚’æŒŸã‚“ã§æ™‚åˆ»ãŒã‚ã‚‹é§…ã‚’è¦‹ã¤ã‘ã‚‹ã€‚
+			//è¦‹ã¤ã‹ã£ãŸé§…ã¨ã“ã®é§…ãŒã€åˆ†å²ãƒ»ç’°çŠ¶ç·šè¨­å®šã§åŒã‚°ãƒ«ãƒ¼ãƒ—ã§ã¯ãªã„å ´åˆã¯ã€illegalã¨ã™ã‚‹
+			//åŒã‚°ãƒ«ãƒ¼ãƒ—ã®å ´åˆã¯ã€iSearchEkiOrderã‚’è¦‹ã¤ã‹ã£ãŸé§…ã§ä¸Šæ›¸ãã—ã€ç€æ™‚åˆ»æ¤œæŸ»ã‚’è¡Œã†ã€‚
 			if (!pCentDedRessya->isRunBetweenNextEki(iSearchEkiOrder - 1))
 			{
 				int iPrevEkiOrder = pCentDedRessya->getRunBetweenEkiBackward(iSearchEkiOrder);
 				int iPrevEkiOrderStandard = pCentDedRessyaStandard->getRunBetweenEkiBackward(iSearchEkiOrder);
 				if (iPrevEkiOrder != iPrevEkiOrderStandard)
 				{
-					//‰^s‚È‚µ‚Ì˜A‘±‚ªˆÙ‚È‚Á‚Ä‚¢‚é‚Ì‚ÅŸ—ñÔ‚Ö
+					//é‹è¡Œãªã—ã®é€£ç¶šãŒç•°ãªã£ã¦ã„ã‚‹ã®ã§æ¬¡åˆ—è»Šã¸
 					break;
 				}
 				iSearchEkiOrder = iPrevEkiOrder;
@@ -12966,26 +12966,26 @@ int CWjkState_Ressyahensyu::StdOpeTimeFunc(
 			const CentDedEkiJikoku aSearchChakuEkiJikoku = pCentDedRessya->getCentDedEkiJikoku(iSearchEkiOrder);
 			const CentDedEkiJikoku aStandardSearchChakuEkiJikoku = pCentDedRessyaStandard->getCentDedEkiJikoku(iSearchEkiOrder);
 			const CentDedEkiCont::CdDedEki aSearchChakuEki = muCdDedEki->get(iSearchEkiOrder);
-			//”­‘¤‚Æ’…‘¤‚ÍA“¯ˆê‰w‚à‚µ‚­‚Í“¯ˆê‰wˆµ‚¢‚È‚Ì‚ÅA‰wˆµ‚¢‚Í“¯‚¶‚È‚Ì‚ÅA•s—v‚Å‚Í‚ ‚é‚ªˆê‰ƒ`ƒFƒbƒN‚·‚éB
+			//ç™ºå´ã¨ç€å´ã¯ã€åŒä¸€é§…ã‚‚ã—ãã¯åŒä¸€é§…æ‰±ã„ãªã®ã§ã€é§…æ‰±ã„ã¯åŒã˜ãªã®ã§ã€ä¸è¦ã§ã¯ã‚ã‚‹ãŒä¸€å¿œãƒã‚§ãƒƒã‚¯ã™ã‚‹ã€‚
 			if (aSearchChakuEkiJikoku.getEkiatsukai() !=
 				aStandardSearchChakuEkiJikoku.getEkiatsukai())
 			{
-				break; //‰wˆµ‚¢‚ªˆê’v‚µ‚È‚©‚Á‚½‚Ì‚ÅŸ—ñÔ‚Ö
+				break; //é§…æ‰±ã„ãŒä¸€è‡´ã—ãªã‹ã£ãŸã®ã§æ¬¡åˆ—è»Šã¸
 			}
 
 			if (aSearchChakuEki.getChakujikokuHyouji())
 			{
 
-				//‰wˆµ‚¢‚Í’âÔE’Ê‰ß‚Åˆê’vA’…•\¦—L
+				//é§…æ‰±ã„ã¯åœè»Šãƒ»é€šéã§ä¸€è‡´ã€ç€æ™‚åˆ»è¡¨ç¤ºæœ‰
 				if (aSearchChakuEkiJikoku.getChakujikoku().isNull() !=
 					aStandardSearchChakuEkiJikoku.getChakujikoku().isNull())
 				{
-					break; //—L–³‚ª•sˆê’v‚Ìê‡‚ÍAŸ—ñÔ‚Ö
+					break; //æ™‚åˆ»æœ‰ç„¡ãŒä¸ä¸€è‡´ã®å ´åˆã¯ã€æ¬¡åˆ—è»Šã¸
 				}
-				//‰wˆµ‚¢‚Í’âÔE’Ê‰ß‚Åˆê’vA’…‚Ì—L–³‚ªˆê’v(’âÔ‚Ìê‡‚Í•K‚¸‚ ‚è)
+				//é§…æ‰±ã„ã¯åœè»Šãƒ»é€šéã§ä¸€è‡´ã€ç€æ™‚åˆ»ã®æœ‰ç„¡ãŒä¸€è‡´(åœè»Šã®å ´åˆã¯å¿…ãšæ™‚åˆ»ã‚ã‚Š)
 				if (!aSearchChakuEkiJikoku.getChakujikoku().isNull())
 				{
-					//’…‚ª‘¶İ‚·‚é‚È‚ç
+					//ç€æ™‚åˆ»ãŒå­˜åœ¨ã™ã‚‹ãªã‚‰
 					int iElapsedTime = 0;
 					int iElapsedTimeStandard = 0;
 					if (aEEkiJikokuItem == CdDedJikokuOrder::EkiJikokuItem_Chaku)
@@ -13000,19 +13000,19 @@ int CWjkState_Ressyahensyu::StdOpeTimeFunc(
 					}
 					return iElapsedTimeStandard - iElapsedTime;
 				}
-				//’Ê‰ßE’…‚È‚µ‚Ìê‡‚ÍA‘O‰w‚Ö
+				//é€šéãƒ»ç€æ™‚åˆ»ãªã—ã®å ´åˆã¯ã€å‰é§…ã¸
 			}
 		}
 	}
-	//•s“KØ‚É“–‚Ä‚Í‚Ü‚ç‚¸A‚È‚¨‚©‚ÂŒ©‚Â‚©‚ç‚È‚©‚Á‚½ê‡
+	//ä¸é©åˆ‡ã«å½“ã¦ã¯ã¾ã‚‰ãšã€ãªãŠã‹ã¤è¦‹ã¤ã‹ã‚‰ãªã‹ã£ãŸå ´åˆ
 	return 0 ;
 }
 
 /**
-	Œo—R‚È‚µ‘Š“–‚É‘Î‚·‚é•ûj
-	EŒo—R‚È‚µ‘Š“–‚É‚È‚é‚Ì‚ÅAˆÓ–¡‚ğ‚½‚È‚¢ˆÊ’u‚É‚ª‚ ‚éê‡‚Å‚àA‚»‚Ì‚ğ—LŒøˆµ‚¢‚µ‚ÄŠî€“_‚ğŒˆ‚ß‚é
-	E’âÔ‚Ìê‡AŒo—R‚È‚µ‘Š“–‚É‚È‚é‚Ì‚ÅˆÓ–¡‚ğ‚½‚È‚¢ˆÊ’u‚É‚ª‚È‚¢ê‡‚ÍA‚»‚ê‚ğ‹–—e‚·‚é‚æ‚¤‚É‚·‚éB
-	¨Œo—R–³‚µ‚ğŒ©‚é‚Ì‚ÍA’âÔ‚ÅA‚ª‚È‚­‚Ä‚à–â‘è‚È‚¢ê‡‚ğŠm”F‚·‚é‚Æ‚«‚Ì‚İB
+	çµŒç”±ãªã—ç›¸å½“ã«å¯¾ã™ã‚‹æ–¹é‡
+	ãƒ»çµŒç”±ãªã—ç›¸å½“ã«ãªã‚‹ã®ã§ã€æ„å‘³ã‚’æŒãŸãªã„ä½ç½®ã«æ™‚åˆ»ãŒã‚ã‚‹å ´åˆã§ã‚‚ã€ãã®æ™‚åˆ»ã‚’æœ‰åŠ¹æ‰±ã„ã—ã¦åŸºæº–ç‚¹ã‚’æ±ºã‚ã‚‹
+	ãƒ»åœè»Šã®å ´åˆã€çµŒç”±ãªã—ç›¸å½“ã«ãªã‚‹ã®ã§æ„å‘³ã‚’æŒãŸãªã„ä½ç½®ã«æ™‚åˆ»ãŒãªã„å ´åˆã¯ã€ãã‚Œã‚’è¨±å®¹ã™ã‚‹ã‚ˆã†ã«ã™ã‚‹ã€‚
+	â†’çµŒç”±ç„¡ã—ã‚’è¦‹ã‚‹ã®ã¯ã€åœè»Šã§ã€æ™‚åˆ»ãŒãªãã¦ã‚‚å•é¡Œãªã„å ´åˆã‚’ç¢ºèªã™ã‚‹ã¨ãã®ã¿ã€‚
 */
 int CWjkState_Ressyahensyu::ComplementSihatsuStdOpeTime(
 	int iDiaIndexStandard, 
@@ -13028,13 +13028,13 @@ int CWjkState_Ressyahensyu::ComplementSihatsuStdOpeTime(
 		CentDedEkiJikoku aCentDedEkiJikoku = pCentDedRessya->getCentDedEkiJikoku(iEkiOrder);
 		if (aCentDedEkiJikoku.getEkiatsukai() == CentDedEkiJikoku::Ekiatsukai_Tsuuka)
 		{
-			//’Ê‰ß‚Ìê‡‚ÍA‰w•\¦‚ğŠî‚Éƒ`ƒFƒbƒNA’…•\¦—L‚Ìê‡A’…‚ª‘¶İ‚µ‚½‚ç
+			//é€šéã®å ´åˆã¯ã€é§…æ™‚åˆ»è¡¨ç¤ºã‚’åŸºã«ãƒã‚§ãƒƒã‚¯ã€ç€æ™‚åˆ»è¡¨ç¤ºæœ‰ã®å ´åˆã€ç€æ™‚åˆ»ãŒå­˜åœ¨ã—ãŸã‚‰
 			if (muCdDedEki->get(iEkiOrder).getChakujikokuHyouji())
 			{
 				if (!aCentDedEkiJikoku.getChakujikoku().isNull())
 				{
-					//’…‚ª‘¶İ‚µAˆê‚Â‘O‚ªŒo—R‚È‚µ‘Š“–‚Å‚Í‚È‚¢ê‡A‚±‚ÌOrder‚ªƒRƒs[‹N“_‚É‚È‚éB
-					//simplever,Œo—R–³‚µ‚ğŒ©‚È‚¢‚æ‚¤‚É‚ÉB
+					//ç€æ™‚åˆ»ãŒå­˜åœ¨ã—ã€ä¸€ã¤å‰ãŒçµŒç”±ãªã—ç›¸å½“ã§ã¯ãªã„å ´åˆã€ã“ã®æ™‚åˆ»OrderãŒã‚³ãƒ”ãƒ¼èµ·ç‚¹ã«ãªã‚‹ã€‚
+					//simplever,çµŒç”±ç„¡ã—ã‚’è¦‹ãªã„ã‚ˆã†ã«ã«ã€‚
 					//if (iTsuukaBegin == -1 ||
 					//	pCentDedRessya->isRunBetweenNextEki(iEkiOrder - 1))
 					//{
@@ -13043,33 +13043,33 @@ int CWjkState_Ressyahensyu::ComplementSihatsuStdOpeTime(
 					//}
 				}
 			}
-			//’…”ñ•\¦or’…NULL
+			//ç€æ™‚åˆ»éè¡¨ç¤ºorç€æ™‚åˆ»NULL
 			if (muCdDedEki->get(iEkiOrder).getHatsujikokuHyouji())
 			{
 				if (aCentDedEkiJikoku.getHatsujikoku().isNull())
 				{
-					//”­’…‚Æ‚àNULL‚Ìê‡AiTsuukaBegin‚ª‰Šú’l‚Ìê‡‚ÍA‚±‚Ì‰w‚ğ’Ê‰ßŒo—R–³‚µ‚Ì‹N“_‚É‚·‚éB
-					//‚½‚¾‚µAŒo—R‚È‚µ‘Š“–‚Å‚Í‚È‚¢ê‡‚ÉŒÀ‚é
+					//ç™ºç€æ™‚åˆ»ã¨ã‚‚NULLã®å ´åˆã€iTsuukaBeginãŒåˆæœŸå€¤ã®å ´åˆã¯ã€ã“ã®é§…ã‚’é€šéçµŒç”±ç„¡ã—ã®èµ·ç‚¹ã«ã™ã‚‹ã€‚
+					//ãŸã ã—ã€çµŒç”±ãªã—ç›¸å½“ã§ã¯ãªã„å ´åˆã«é™ã‚‹
 					if (iTsuukaBegin == -1/* &&
-						pCentDedRessya->isRunBetweenNextEki(iEkiOrder)*/)//simpleverAŒo—R–³‚µ‚ğŒ©‚È‚¢
+						pCentDedRessya->isRunBetweenNextEki(iEkiOrder)*/)//simpleverã€çµŒç”±ç„¡ã—ã‚’è¦‹ãªã„
 					{
 						iTsuukaBegin = iEkiOrder;
 					}
 				}
-				else/* if (pCentDedRessya->isRunBetweenNextEki(iEkiOrder))*///simpleverAŒo—R–³‚µ‚ğŒ©‚È‚¢
+				else/* if (pCentDedRessya->isRunBetweenNextEki(iEkiOrder))*///simpleverã€çµŒç”±ç„¡ã—ã‚’è¦‹ãªã„
 				{
-					//”­‚ª‘¶İ‚·‚é‚µAŒo—R‚È‚µ‘Š“–‚Å‚Í‚È‚¢ê‡A‚±‚ÌOrder‚ªƒRƒs[‹N“_‚É‚È‚éB
+					//ç™ºæ™‚åˆ»ãŒå­˜åœ¨ã™ã‚‹ã—ã€çµŒç”±ãªã—ç›¸å½“ã§ã¯ãªã„å ´åˆã€ã“ã®æ™‚åˆ»OrderãŒã‚³ãƒ”ãƒ¼èµ·ç‚¹ã«ãªã‚‹ã€‚
 					aCdDedJikokuOrderKiten = CdDedJikokuOrder(iEkiOrder, CdDedJikokuOrder::EkiJikokuItem_Hatsu);
 					break;
 				}
-				//Œo—R‚È‚µ‘Š“–‚Ìê‡‚ÍAiTsuukaBegin == -1‚Å‚ ‚Á‚Ä‚àA‚±‚Ì‰w‚ğ’Ê‰ß˜A‘±‚Ì‹N“_‚Æ‚µ‚È‚¢
+				//çµŒç”±ãªã—ç›¸å½“ã®å ´åˆã¯ã€iTsuukaBegin == -1ã§ã‚ã£ã¦ã‚‚ã€ã“ã®é§…ã‚’é€šéé€£ç¶šã®èµ·ç‚¹ã¨ã—ãªã„
 			}
 			else
 			{
-				//”­•\¦‚ª‚È‚¢ê‡AiTsuukaBegin‚ª‰Šú’l‚Ìê‡‚ÍA‚±‚Ì‰w‚ğ’Ê‰ßŒo—R–³‚µ‚Ì‹N“_‚É‚·‚é
-					//‚½‚¾‚µAŒo—R‚È‚µ‘Š“–‚Å‚Í‚È‚¢ê‡‚ÉŒÀ‚é
+				//ç™ºæ™‚åˆ»è¡¨ç¤ºãŒãªã„å ´åˆã€iTsuukaBeginãŒåˆæœŸå€¤ã®å ´åˆã¯ã€ã“ã®é§…ã‚’é€šéçµŒç”±ç„¡ã—ã®èµ·ç‚¹ã«ã™ã‚‹
+					//ãŸã ã—ã€çµŒç”±ãªã—ç›¸å½“ã§ã¯ãªã„å ´åˆã«é™ã‚‹
 				if (iTsuukaBegin == -1/* &&
-					pCentDedRessya->isRunBetweenNextEki(iEkiOrder)*/)//simpleverAŒo—R–³‚µ‚ğŒ©‚È‚¢
+					pCentDedRessya->isRunBetweenNextEki(iEkiOrder)*/)//simpleverã€çµŒç”±ç„¡ã—ã‚’è¦‹ãªã„
 				{
 					iTsuukaBegin = iEkiOrder;
 				}
@@ -13077,13 +13077,13 @@ int CWjkState_Ressyahensyu::ComplementSihatsuStdOpeTime(
 		}
 		else if (aCentDedEkiJikoku.getEkiatsukai() == CentDedEkiJikoku::Ekiatsukai_Teisya)
 		{
-			//’âÔ‚Ìê‡‚ÍA‰w•\¦‚ğŠî‚Éƒ`ƒFƒbƒNA’…•\¦—L‚Ìê‡A’…‚ª‘¶İ‚µ‚½‚ç
+			//åœè»Šã®å ´åˆã¯ã€é§…æ™‚åˆ»è¡¨ç¤ºã‚’åŸºã«ãƒã‚§ãƒƒã‚¯ã€ç€æ™‚åˆ»è¡¨ç¤ºæœ‰ã®å ´åˆã€ç€æ™‚åˆ»ãŒå­˜åœ¨ã—ãŸã‚‰
 			if (muCdDedEki->get(iEkiOrder).getChakujikokuHyouji())
 			{
 				if (aCentDedEkiJikoku.getChakujikoku().isNull())
 				{
-					//’…•\¦—L‚É‚à‚©‚©‚í‚ç‚¸A’…‚ª–³‚¢ê‡A‘O‚Ì‰w‚ªŒo—R–³‚µ‘Š“–‚È‚ç–â‘è‚È‚µB
-					//’Ê‰ß‚Ìê‡‚ÍAreturnA“–‰wn”­‚Ìê‡‚Í–â‘è‚È‚µ
+					//ç€æ™‚åˆ»è¡¨ç¤ºæœ‰ã«ã‚‚ã‹ã‹ã‚ã‚‰ãšã€ç€æ™‚åˆ»ãŒç„¡ã„å ´åˆã€å‰ã®é§…ãŒçµŒç”±ç„¡ã—ç›¸å½“ãªã‚‰å•é¡Œãªã—ã€‚
+					//é€šéã®å ´åˆã¯ã€returnã€å½“é§…å§‹ç™ºã®å ´åˆã¯å•é¡Œãªã—
 					if (iTsuukaBegin != -1 &&
 						pCentDedRessya->isRunBetweenNextEki(iEkiOrder - 1))
 					{
@@ -13092,17 +13092,17 @@ int CWjkState_Ressyahensyu::ComplementSihatsuStdOpeTime(
 				}
 				else
 				{
-					//’…‚ª‘¶İ‚·‚éê‡A‚±‚ÌOrder‚ªƒRƒs[‹N“_‚É‚È‚éB
+					//ç€æ™‚åˆ»ãŒå­˜åœ¨ã™ã‚‹å ´åˆã€ã“ã®æ™‚åˆ»OrderãŒã‚³ãƒ”ãƒ¼èµ·ç‚¹ã«ãªã‚‹ã€‚
 					aCdDedJikokuOrderKiten = CdDedJikokuOrder(iEkiOrder, CdDedJikokuOrder::EkiJikokuItem_Chaku);
 					break;
 				}
 			}
-			//’…”ñ•\¦or’…•\¦—L‚ÅNULL‚¾‚ªA‘O‚Ì‰w‚ªŒo—R–³‚µ‚à‚µ‚­‚Í‰^s–³‚µ‚à‚µ‚­‚Í’Tõ“ª‰w
+			//ç€æ™‚åˆ»éè¡¨ç¤ºorç€æ™‚åˆ»è¡¨ç¤ºæœ‰ã§NULLã ãŒã€å‰ã®é§…ãŒçµŒç”±ç„¡ã—ã‚‚ã—ãã¯é‹è¡Œç„¡ã—ã‚‚ã—ãã¯æ¢ç´¢é ­é§…
 			if (muCdDedEki->get(iEkiOrder).getHatsujikokuHyouji())
 			{
 				if (aCentDedEkiJikoku.getHatsujikoku().isNull())
 				{
-					//Ÿ‰w‚ª‰^s‚È‚µ(Œo—R‚È‚µ‘Š“–)‚Ìê‡‚ÍA‚È‚µ‚à‰Â
+					//æ¬¡é§…ãŒé‹è¡Œãªã—(çµŒç”±ãªã—ç›¸å½“)ã®å ´åˆã¯ã€æ™‚åˆ»ãªã—ã‚‚å¯
 					if (pCentDedRessya->isRunBetweenNextEki(iEkiOrder))
 					{
 						return -1;
@@ -13110,38 +13110,38 @@ int CWjkState_Ressyahensyu::ComplementSihatsuStdOpeTime(
 				}
 				else
 				{
-					//”­‚ª‘¶İ‚·‚éê‡A‚±‚ÌOrder‚ªƒRƒs[‹N“_‚É‚È‚éB
+					//ç™ºæ™‚åˆ»ãŒå­˜åœ¨ã™ã‚‹å ´åˆã€ã“ã®æ™‚åˆ»OrderãŒã‚³ãƒ”ãƒ¼èµ·ç‚¹ã«ãªã‚‹ã€‚
 					aCdDedJikokuOrderKiten = CdDedJikokuOrder(iEkiOrder, CdDedJikokuOrder::EkiJikokuItem_Hatsu);
 					break;
 				}
 			}
 		}
-		//‰^s–³‚µ‚Ìê‡AiTsuukaBegin‚ª-1‚Ìê‡‚ÍAn”­‰w‚æ‚è‘O‚È‚Ì‚Å‰½‚às‚í‚È‚¢A
+		//é‹è¡Œç„¡ã—ã®å ´åˆã€iTsuukaBeginãŒ-1ã®å ´åˆã¯ã€å§‹ç™ºé§…ã‚ˆã‚Šå‰ãªã®ã§ä½•ã‚‚è¡Œã‚ãªã„ã€
 	}
 	if (aCdDedJikokuOrderKiten.getIsNull())
 	{
-		//ƒRƒs[‚Ì‹N“_‚Æ‚È‚é‰w‚ªŒ©‚Â‚©‚ç‚È‚©‚Á‚½‚çreturn(Œo—R–³‚µ‚â‚È‚µ’Ê‰ß‚µ‚©‚È‚¢etc)
+		//ã‚³ãƒ”ãƒ¼ã®èµ·ç‚¹ã¨ãªã‚‹é§…ãŒè¦‹ã¤ã‹ã‚‰ãªã‹ã£ãŸã‚‰return(çµŒç”±ç„¡ã—ã‚„æ™‚åˆ»ãªã—é€šéã—ã‹ãªã„etc)
 		return -1;
 	}
-	//Šî€‰^“]•ªƒ_ƒCƒ„‚Ì’†‚©‚çAƒRƒs[‚Ì‘ÎÛ‚É‚Å‚«‚é—ñÔ‚ğ’T‚·B
+	//åŸºæº–é‹è»¢æ™‚åˆ†ãƒ€ã‚¤ãƒ¤ã®ä¸­ã‹ã‚‰ã€ã‚³ãƒ”ãƒ¼ã®å¯¾è±¡ã«ã§ãã‚‹åˆ—è»Šã‚’æ¢ã™ã€‚
 	const CentDedRessyaCont* pCentDedRessyaContStandard =
 		getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()->getCentDedDiaCont()
 		->getMuPtr()->get(iDiaIndexStandard)->getCentDedRessyaCont(pCentDedRessya->getRessyahoukou());
 	int idxRessyasyubetsu = pCentDedRessya->getRessyasyubetsuIndex();
 
 	for (int iRessyaIndexStandard = 0;
-		iRessyaIndexStandard < pCentDedRessyaContStandard->size()/*ƒRƒ“ƒeƒi“à—ñÔ”*/;
+		iRessyaIndexStandard < pCentDedRessyaContStandard->size()/*ã‚³ãƒ³ãƒ†ãƒŠå†…åˆ—è»Šæ•°*/;
 		iRessyaIndexStandard++)
 	{
-		//‘ÎÛ—ñÔ‚Æ“¯‚¶í•Ê‚©‚Ç‚¤‚©Šm”F
+		//å¯¾è±¡åˆ—è»Šã¨åŒã˜ç¨®åˆ¥ã‹ã©ã†ã‹ç¢ºèª
 		if (pCentDedRessyaContStandard->getMuPtr()->get(iRessyaIndexStandard)->getRessyasyubetsuIndex() != idxRessyasyubetsu)
 		{
-			continue; //Ÿ—ñÔ‚ÉˆÚs
+			continue; //æ¬¡åˆ—è»Šã«ç§»è¡Œ
 		}
 		const CentDedRessya* pCentDedRessyaStd = pCentDedRessyaContStandard->getMuPtr()->get(iRessyaIndexStandard);
-		//iTsuukaKeiyunasiBegin‚©‚çƒRƒs[‚Ì‹N“_‚Æ‚È‚é‰w‚Ìˆê‚Âã‚Ü‚Å‚Ì‰wˆµ‚¢‚ªˆê’v‚·‚é‚©A
-		//‚¨‚æ‚ÑA’Ê‰ß‚Ìê‡‚ÍA‰w‚ª‚È‚¢‚±‚Æ‚àˆê’v‚·‚é‚©‚ğƒ`ƒFƒbƒN‚·‚éB
-		//‚½‚¾‚µAŒo—R‚È‚µ‘Š“–‚É”º‚¤A–³Œø‚É’ˆÓ‚·‚é
+		//iTsuukaKeiyunasiBeginã‹ã‚‰ã‚³ãƒ”ãƒ¼ã®èµ·ç‚¹ã¨ãªã‚‹é§…ã®ä¸€ã¤ä¸Šã¾ã§ã®é§…æ‰±ã„ãŒä¸€è‡´ã™ã‚‹ã‹ã€
+		//ãŠã‚ˆã³ã€é€šéã®å ´åˆã¯ã€é§…æ™‚åˆ»ãŒãªã„ã“ã¨ã‚‚ä¸€è‡´ã™ã‚‹ã‹ã‚’ãƒã‚§ãƒƒã‚¯ã™ã‚‹ã€‚
+		//ãŸã ã—ã€çµŒç”±ãªã—ç›¸å½“ã«ä¼´ã†ã€æ™‚åˆ»ç„¡åŠ¹ã«æ³¨æ„ã™ã‚‹
 		bool bContinue = true;
 		for (int ord = iTsuukaBegin;
 			bContinue && iTsuukaBegin != -1 && ord < aCdDedJikokuOrderKiten.getEkiOrder();
@@ -13156,8 +13156,8 @@ int CWjkState_Ressyahensyu::ComplementSihatsuStdOpeTime(
 			}
 			else if (aCentDedEkiJikoku.getEkiatsukai() ==aCentDedEkiJikokuStd.getEkiatsukai())
 			{
-				//‰wˆµ‚¢‚ª’âÔE’Ê‰ß‚Åˆê’v‚Ìê‡A”­E’…ŠeX‚É‘Î‚µA•\¦—L‚Ìê‡‚ÉAstd‘¤‚Ì‚ªNULL‚Å‚Í‚È‚©‚Á‚½ê‡Aˆê’v‚µ‚Ä‚¢‚È‚¢‚Ì‚Åbreak
-				//‚È‚¨A’âÔ‚Ìê‡‚Å‚à•K‚¸‚ÍNULL‚É‚È‚é(‚±‚Ì‹æŠÔ‚É’âÔ‚ª‚­‚éê‡‚ÍA’…”­‹¤‚ÉŒo—R‚È‚µ‚É‚æ‚éˆÓ–¡‚ğ‚½‚È‚¢ê‡‚©‚Â‚ªNULL‚Ìê‡)
+				//é§…æ‰±ã„ãŒåœè»Šãƒ»é€šéã§ä¸€è‡´ã®å ´åˆã€ç™ºæ™‚åˆ»ãƒ»ç€æ™‚åˆ»å„ã€…ã«å¯¾ã—ã€è¡¨ç¤ºæœ‰ã®å ´åˆã«ã€stdå´ã®æ™‚åˆ»ãŒNULLã§ã¯ãªã‹ã£ãŸå ´åˆã€ä¸€è‡´ã—ã¦ã„ãªã„ã®ã§break
+				//ãªãŠã€åœè»Šã®å ´åˆã§ã‚‚å¿…ãšæ™‚åˆ»ã¯NULLã«ãªã‚‹(ã“ã®åŒºé–“ã«åœè»ŠãŒãã‚‹å ´åˆã¯ã€ç€ç™ºå…±ã«çµŒç”±ãªã—ã«ã‚ˆã‚‹æ„å‘³ã‚’æŒãŸãªã„å ´åˆã‹ã¤æ™‚åˆ»ãŒNULLã®å ´åˆ)
 				if (muCdDedEki->get(ord).getChakujikokuHyouji() &&
 					!aCentDedEkiJikokuStd.getChakujikoku().isNull())
 				{
@@ -13175,8 +13175,8 @@ int CWjkState_Ressyahensyu::ComplementSihatsuStdOpeTime(
 			//else if (aCentDedEkiJikoku.getEkiatsukai() == CentDedEkiJikoku::Ekiatsukai_Teisya &&
 			//	aCentDedEkiJikokuStd.getEkiatsukai() == CentDedEkiJikoku::Ekiatsukai_Teisya)
 			//{
-			//	//Œ³—ñÔ‚ª’âÔ‚Ìê‡‚ÍAŒo—R–³‚µ‘Š“–‚É‚æ‚èA—LŒø‚È—“‚ª–³‚¢‚©‚Â‚ª–¢“ü—Í‚Ìê‡B
-			//	//std‘¤‚àA‚ª–¢“ü—Í‚Å‚ ‚é•K—v‚ª‚ ‚é
+			//	//å…ƒåˆ—è»ŠãŒåœè»Šã®å ´åˆã¯ã€çµŒç”±ç„¡ã—ç›¸å½“ã«ã‚ˆã‚Šã€æœ‰åŠ¹ãªæ™‚åˆ»æ¬„ãŒç„¡ã„ã‹ã¤æ™‚åˆ»ãŒæœªå…¥åŠ›ã®å ´åˆã€‚
+			//	//stdå´ã‚‚ã€æ™‚åˆ»ãŒæœªå…¥åŠ›ã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚‹
 			//	if (muCdDedEki->get(ord).getChakujikokuHyouji() &&
 			//		!aCentDedEkiJikokuStd.getChakujikoku().isNull())
 			//	{
@@ -13191,17 +13191,17 @@ int CWjkState_Ressyahensyu::ComplementSihatsuStdOpeTime(
 			//	}
 			//	continue;
 			//}
-			//ˆê’v‚µ‚È‚©‚Á‚½ê‡Abreak
+			//ä¸€è‡´ã—ãªã‹ã£ãŸå ´åˆã€break
 			bContinue = false;
 			break;
 		}
-		//ˆê’v‚µ‚È‚©‚Á‚½‚à‚Ì‚ª‚ ‚Á‚½ê‡AbContinue‚ªfalse‚É‚È‚é‚Ì‚Å‚»‚Ìê‡‚ÍŸ—ñÔ‚ÉˆÚs
+		//ä¸€è‡´ã—ãªã‹ã£ãŸã‚‚ã®ãŒã‚ã£ãŸå ´åˆã€bContinueãŒfalseã«ãªã‚‹ã®ã§ãã®å ´åˆã¯æ¬¡åˆ—è»Šã«ç§»è¡Œ
 		if (!bContinue)
 		{
 			continue;
 		}
-		//aCdDedJikokuOrderKiten‚É‚Â‚¢‚Äƒ`ƒFƒbƒN‚ğs‚¤A
-		//‚Ü‚¸‚Í‰wˆµ‚¢‚ğƒ`ƒFƒbƒNAˆÙ‚È‚Á‚Ä‚¢‚éê‡‚ÍŸ—ñÔ‚Ö
+		//aCdDedJikokuOrderKitenã«ã¤ã„ã¦ãƒã‚§ãƒƒã‚¯ã‚’è¡Œã†ã€
+		//ã¾ãšã¯é§…æ‰±ã„ã‚’ãƒã‚§ãƒƒã‚¯ã€ç•°ãªã£ã¦ã„ã‚‹å ´åˆã¯æ¬¡åˆ—è»Šã¸
 		CentDedEkiJikoku aCentDedEkiJikoku = pCentDedRessya->getCentDedEkiJikoku(aCdDedJikokuOrderKiten.getEkiOrder());
 		CentDedEkiJikoku aCentDedEkiJikokuStd = pCentDedRessyaStd->getCentDedEkiJikoku(aCdDedJikokuOrderKiten.getEkiOrder());
 		if (aCentDedEkiJikoku.getEkiatsukai() != aCentDedEkiJikokuStd.getEkiatsukai())
@@ -13211,23 +13211,23 @@ int CWjkState_Ressyahensyu::ComplementSihatsuStdOpeTime(
 		int iDifferenceTime;
 		if (aCdDedJikokuOrderKiten.getEkiJikokuItem() == CdDedJikokuOrder::EkiJikokuItem_Chaku)
 		{
-			//’…‚Ìê‡‚ÍAaCentDedEkiJikokuStd‚Ì’…‚ªNULL‚È‚çAŸ—ñÔ‚Ö
+			//ç€æ™‚åˆ»ã®å ´åˆã¯ã€aCentDedEkiJikokuStdã®ç€æ™‚åˆ»ãŒNULLãªã‚‰ã€æ¬¡åˆ—è»Šã¸
 			if (aCentDedEkiJikokuStd.getChakujikoku().isNull())
 			{
 				continue;
 			}
-			//‚±‚±‚Ü‚Å—ˆ‚½‚çAƒRƒs[‚Ì‘Oì‹Æ‚Æ‚µ‚ÄAiDifferenceTime‚ğ‹‚ß‚éB
+			//ã“ã“ã¾ã§æ¥ãŸã‚‰ã€ã‚³ãƒ”ãƒ¼ã®å‰ä½œæ¥­ã¨ã—ã¦ã€iDifferenceTimeã‚’æ±‚ã‚ã‚‹ã€‚
 			iDifferenceTime = aCentDedEkiJikoku.getChakujikoku().subJikoku(aCentDedEkiJikokuStd.getChakujikoku());
 		}
 		else
 		{
-			//‘O’ñ@”­‚ªw’è‚³‚ê‚Ä‚¢‚éê‡AŒ³—ñÔ‚Ì’…‚Í•K‚¸NULL‚Å‚ ‚é
-			//(‹t‚ÉŒ¾‚¤‚ÆA’…‚ª‚ ‚éê‡‚ÍA‚»‚Ì’…‚ªw’è‚³‚ê‚Ä‚¢‚é‚Í‚¸)
-			//aCdDedJikokuOrderKiten‚Í’âÔ‚©’Ê‰ß‚Ì‚¢‚¸‚ê‚©‚È‚Ì‚ÅAif‚Í•s—v
+			//å‰æã€€ç™ºæ™‚åˆ»ãŒæŒ‡å®šã•ã‚Œã¦ã„ã‚‹å ´åˆã€å…ƒåˆ—è»Šã®ç€æ™‚åˆ»ã¯å¿…ãšNULLã§ã‚ã‚‹
+			//(é€†ã«è¨€ã†ã¨ã€ç€æ™‚åˆ»ãŒã‚ã‚‹å ´åˆã¯ã€ãã®ç€æ™‚åˆ»ãŒæŒ‡å®šã•ã‚Œã¦ã„ã‚‹ã¯ãš)
+			//aCdDedJikokuOrderKitenã¯åœè»Šã‹é€šéã®ã„ãšã‚Œã‹ãªã®ã§ã€ifã¯ä¸è¦
 			//if (aCentDedEkiJikoku.getEkiatsukai() == CentDedEkiJikoku::Ekiatsukai_Tsuuka)
 			//{
-				//’Ê‰ß‚Ìê‡A’…•\¦—L‚©‚Âstd‘¤‚É’…‚ª‘¶İ‚·‚é‚È‚çAŸ—ñÔ‚Ö
-				//iTsuukaBegin‚ª-1‚Ìê‡‚ÍA•ÒW‘ÎÛ—ñÔ‚ÌŒ»n”­‰w‚Å‚ ‚é‚Ì‚ÅA’…‚ª‚ ‚Á‚Ä‚à‘åä•v
+				//é€šéã®å ´åˆã€ç€æ™‚åˆ»è¡¨ç¤ºæœ‰ã‹ã¤stdå´ã«ç€æ™‚åˆ»ãŒå­˜åœ¨ã™ã‚‹ãªã‚‰ã€æ¬¡åˆ—è»Šã¸
+				//iTsuukaBeginãŒ-1ã®å ´åˆã¯ã€ç·¨é›†å¯¾è±¡åˆ—è»Šã®ç¾å§‹ç™ºé§…ã§ã‚ã‚‹ã®ã§ã€ç€æ™‚åˆ»ãŒã‚ã£ã¦ã‚‚å¤§ä¸ˆå¤«
 				if (muCdDedEki->get(aCdDedJikokuOrderKiten.getEkiOrder()).getChakujikokuHyouji() &&
 					!aCentDedEkiJikokuStd.getChakujikoku().isNull() &&
 					iTsuukaBegin != -1)
@@ -13237,21 +13237,21 @@ int CWjkState_Ressyahensyu::ComplementSihatsuStdOpeTime(
 			//}
 			//else if (aCentDedEkiJikoku.getEkiatsukai() == CentDedEkiJikoku::Ekiatsukai_Teisya)
 			//{
-			//	//’âÔ‚Ìê‡A’…•\¦—L‚©‚Âstd‘¤‚É’…‚ª‘¶İ‚·‚é‚È‚çAŸ—ñÔ‚Ö
+			//	//åœè»Šã®å ´åˆã€ç€æ™‚åˆ»è¡¨ç¤ºæœ‰ã‹ã¤stdå´ã«ç€æ™‚åˆ»ãŒå­˜åœ¨ã™ã‚‹ãªã‚‰ã€æ¬¡åˆ—è»Šã¸
 			//	if (muCdDedEki->get(aCdDedJikokuOrderKiten.getEkiOrder()).getChakujikokuHyouji()&&
 			//		!aCentDedEkiJikokuStd.getChakujikoku().isNull())
 			//	{
 			//		continue;
 			//	}
 			//}
-			//”­‚ªNULL‚È‚çŸ—ñÔ‚Ö
+			//ç™ºæ™‚åˆ»ãŒNULLãªã‚‰æ¬¡åˆ—è»Šã¸
 			if (aCentDedEkiJikokuStd.getHatsujikoku().isNull())
 			{
 				continue;
 			}
-			//‚±‚±‚Ü‚Å—ˆ‚½‚çAƒRƒs[‚Ì‘Oì‹Æ‚Æ‚µ‚ÄAiDifferenceTime‚ğ‹‚ß‚éB
+			//ã“ã“ã¾ã§æ¥ãŸã‚‰ã€ã‚³ãƒ”ãƒ¼ã®å‰ä½œæ¥­ã¨ã—ã¦ã€iDifferenceTimeã‚’æ±‚ã‚ã‚‹ã€‚
 			iDifferenceTime = aCentDedEkiJikoku.getHatsujikoku().subJikoku(aCentDedEkiJikokuStd.getHatsujikoku());
-			//’…•\¦—L‚Ìê‡‚ÍA’…•‘Oì‹Æ‚ÌƒRƒs[‚às‚Á‚Ä‚µ‚Ü‚¤B
+			//ç€æ™‚åˆ»è¡¨ç¤ºæœ‰ã®å ´åˆã¯ã€ç€æ™‚åˆ»ï¼†å‰ä½œæ¥­ã®ã‚³ãƒ”ãƒ¼ã‚‚è¡Œã£ã¦ã—ã¾ã†ã€‚
 			if (muCdDedEki->get(aCdDedJikokuOrderKiten.getEkiOrder()).getChakujikokuHyouji() &&
 				!aCentDedEkiJikokuStd.getChakujikoku().isNull())
 			{
@@ -13263,7 +13263,7 @@ int CWjkState_Ressyahensyu::ComplementSihatsuStdOpeTime(
 			}
 		}
 
-		//ƒRƒs[‚Ì‹N“_‰w‚Ìˆê‚Â‘O‚©‚çAƒtƒH[ƒJƒXˆÊ’u‚Ü‚Å‚ÌƒRƒs[‚ğs‚¤B
+		//ã‚³ãƒ”ãƒ¼ã®èµ·ç‚¹é§…ã®ä¸€ã¤å‰ã‹ã‚‰ã€ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ä½ç½®ã¾ã§ã®ã‚³ãƒ”ãƒ¼ã‚’è¡Œã†ã€‚
 		int ord = aCdDedJikokuOrderKiten.getEkiOrder() - 1;
 		if (iTsuukaBegin != -1)
 		{
@@ -13271,10 +13271,10 @@ int CWjkState_Ressyahensyu::ComplementSihatsuStdOpeTime(
 		}
 		for (; ord >= aCdJikokuOrder.getEkiOrder(); ord--)
 		{
-			//(1)ƒRƒs[Œ³‚Ìn”­‰w‚Ìê‡Aì‹ÆE˜HüŠO”­’…‚ğ•â³‚·‚éB
-			//(2)aCdJikokuOrder.getEkiOrder()‚ÅƒtƒH[ƒJƒX‚ª”­‚Ìê‡A’…‚ğNULL‚É‚·‚éB
-			//‚È‚¨AaCdJikokuOrder.getEkiOrder()‚©‚ÂƒRƒs[Œ³‚Ìn”­‰w‚Ìê‡‚Í(1)—Dæ‚É‚È‚é‚æ‚¤‚Éif•¶‚ğ\’z‚·‚é
-			//(3)‚Ç‚¿‚ç‚Å‚à‚È‚¢ê‡‚ÍA‚Ì•â³‚Ì‚İs‚¤
+			//(1)ã‚³ãƒ”ãƒ¼å…ƒã®å§‹ç™ºé§…ã®å ´åˆã€ä½œæ¥­æ™‚åˆ»ãƒ»è·¯ç·šå¤–ç™ºç€æ™‚åˆ»ã‚’è£œæ­£ã™ã‚‹ã€‚
+			//(2)aCdJikokuOrder.getEkiOrder()ã§ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ãŒç™ºæ™‚åˆ»ã®å ´åˆã€ç€æ™‚åˆ»ã‚’NULLã«ã™ã‚‹ã€‚
+			//ãªãŠã€aCdJikokuOrder.getEkiOrder()ã‹ã¤ã‚³ãƒ”ãƒ¼å…ƒã®å§‹ç™ºé§…ã®å ´åˆã¯(1)å„ªå…ˆã«ãªã‚‹ã‚ˆã†ã«ifæ–‡ã‚’æ§‹ç¯‰ã™ã‚‹
+			//(3)ã©ã¡ã‚‰ã§ã‚‚ãªã„å ´åˆã¯ã€æ™‚åˆ»ã®è£œæ­£ã®ã¿è¡Œã†
 
 			CentDedEkiJikoku aCentDedEkiJikokuNew(pCentDedRessyaStd->getCentDedEkiJikoku(ord));
 			aCentDedEkiJikokuNew.setChakujikoku(aCentDedEkiJikokuNew.getChakujikoku().addSeconds(iDifferenceTime));
@@ -13319,22 +13319,22 @@ int CWjkState_Ressyahensyu::ComplementSyuuchakuStdOpeTime(
 		CentDedEkiJikoku aCentDedEkiJikoku = pCentDedRessya->getCentDedEkiJikoku(iEkiOrder);
 		if (aCentDedEkiJikoku.getEkiatsukai() == CentDedEkiJikoku::Ekiatsukai_Tsuuka)
 		{
-			//’Ê‰ß‚Ìê‡‚ÍA‰w•\¦‚ğŠî‚Éƒ`ƒFƒbƒNA”­•\¦—L‚Ìê‡A”­‚ª‘¶İ‚µ‚½‚ç
+			//é€šéã®å ´åˆã¯ã€é§…æ™‚åˆ»è¡¨ç¤ºã‚’åŸºã«ãƒã‚§ãƒƒã‚¯ã€ç™ºæ™‚åˆ»è¡¨ç¤ºæœ‰ã®å ´åˆã€ç™ºæ™‚åˆ»ãŒå­˜åœ¨ã—ãŸã‚‰
 			if (muCdDedEki->get(iEkiOrder).getHatsujikokuHyouji())
 			{
 				if (!aCentDedEkiJikoku.getHatsujikoku().isNull())
 				{
-					//”­‚ª‘¶İ‚·‚éê‡A‚±‚ÌOrder‚ªƒRƒs[‹N“_‚É‚È‚éB
+					//ç™ºæ™‚åˆ»ãŒå­˜åœ¨ã™ã‚‹å ´åˆã€ã“ã®æ™‚åˆ»OrderãŒã‚³ãƒ”ãƒ¼èµ·ç‚¹ã«ãªã‚‹ã€‚
 					aCdDedJikokuOrderKiten = CdDedJikokuOrder(iEkiOrder, CdDedJikokuOrder::EkiJikokuItem_Hatsu);
 					break;
 				}
 			}
-			//”­”ñ•\¦or”­NULL
+			//ç™ºæ™‚åˆ»éè¡¨ç¤ºorç™ºæ™‚åˆ»NULL
 			if (muCdDedEki->get(iEkiOrder).getChakujikokuHyouji())
 			{
 				if (aCentDedEkiJikoku.getChakujikoku().isNull())
 				{
-					//”­’…‚Æ‚àNULL‚Ìê‡AiTsuukaKeiyunasiBegin‚ª‰Šú’l‚Ìê‡‚ÍA‚±‚Ì‰w‚ğ’Ê‰ßŒo—R–³‚µ‚Ì‹N“_‚É‚·‚é
+					//ç™ºç€æ™‚åˆ»ã¨ã‚‚NULLã®å ´åˆã€iTsuukaKeiyunasiBeginãŒåˆæœŸå€¤ã®å ´åˆã¯ã€ã“ã®é§…ã‚’é€šéçµŒç”±ç„¡ã—ã®èµ·ç‚¹ã«ã™ã‚‹
 					if (iTsuukaBegin == -1)
 					{
 						iTsuukaBegin = iEkiOrder;
@@ -13342,14 +13342,14 @@ int CWjkState_Ressyahensyu::ComplementSyuuchakuStdOpeTime(
 				}
 				else
 				{
-					//’…‚ª‘¶İ‚·‚éê‡A‚±‚ÌOrder‚ªƒRƒs[‹N“_‚É‚È‚éB
+					//ç€æ™‚åˆ»ãŒå­˜åœ¨ã™ã‚‹å ´åˆã€ã“ã®æ™‚åˆ»OrderãŒã‚³ãƒ”ãƒ¼èµ·ç‚¹ã«ãªã‚‹ã€‚
 					aCdDedJikokuOrderKiten = CdDedJikokuOrder(iEkiOrder, CdDedJikokuOrder::EkiJikokuItem_Chaku);
 					break;
 				}
 			}
 			else
 			{
-				//’…•\¦‚ª‚È‚¢ê‡AiTsuukaKeiyunasiBegin‚ª‰Šú’l‚Ìê‡‚ÍA‚±‚Ì‰w‚ğ’Ê‰ßŒo—R–³‚µ‚Ì‹N“_‚É‚·‚é
+				//ç€æ™‚åˆ»è¡¨ç¤ºãŒãªã„å ´åˆã€iTsuukaKeiyunasiBeginãŒåˆæœŸå€¤ã®å ´åˆã¯ã€ã“ã®é§…ã‚’é€šéçµŒç”±ç„¡ã—ã®èµ·ç‚¹ã«ã™ã‚‹
 				if (iTsuukaBegin == -1)
 				{
 					iTsuukaBegin = iEkiOrder;
@@ -13358,13 +13358,13 @@ int CWjkState_Ressyahensyu::ComplementSyuuchakuStdOpeTime(
 		}
 		else if (aCentDedEkiJikoku.getEkiatsukai() == CentDedEkiJikoku::Ekiatsukai_Teisya)
 		{
-			//’âÔ‚Ìê‡‚ÍA‰w•\¦‚ğŠî‚Éƒ`ƒFƒbƒNA”­•\¦—L‚Ìê‡A”­‚ª‘¶İ‚µ‚½‚ç
+			//åœè»Šã®å ´åˆã¯ã€é§…æ™‚åˆ»è¡¨ç¤ºã‚’åŸºã«ãƒã‚§ãƒƒã‚¯ã€ç™ºæ™‚åˆ»è¡¨ç¤ºæœ‰ã®å ´åˆã€ç™ºæ™‚åˆ»ãŒå­˜åœ¨ã—ãŸã‚‰
 			if (muCdDedEki->get(iEkiOrder).getHatsujikokuHyouji())
 			{
 				if (aCentDedEkiJikoku.getHatsujikoku().isNull())
 				{
-					//”­•\¦—L‚É‚à‚©‚©‚í‚ç‚¸A”­‚ª–³‚¢ê‡AŸ‚Ì‰w‚ªŒo—R–³‚µ‘Š“–‚È‚ç–â‘è‚È‚µB
-					//’Ê‰ß‚Ìê‡‚ÍAreturnA“–‰w‚Ç‚Ü‚è‚Ìê‡‚Í–â‘è‚È‚µ
+					//ç™ºæ™‚åˆ»è¡¨ç¤ºæœ‰ã«ã‚‚ã‹ã‹ã‚ã‚‰ãšã€ç™ºæ™‚åˆ»ãŒç„¡ã„å ´åˆã€æ¬¡ã®é§…ãŒçµŒç”±ç„¡ã—ç›¸å½“ãªã‚‰å•é¡Œãªã—ã€‚
+					//é€šéã®å ´åˆã¯ã€returnã€å½“é§…ã©ã¾ã‚Šã®å ´åˆã¯å•é¡Œãªã—
 					if (iTsuukaBegin != -1 &&
 						pCentDedRessya->isRunBetweenNextEki(iEkiOrder))
 					{
@@ -13373,17 +13373,17 @@ int CWjkState_Ressyahensyu::ComplementSyuuchakuStdOpeTime(
 				}
 				else
 				{
-					//”­‚ª‘¶İ‚·‚éê‡A‚±‚ÌOrder‚ªƒRƒs[‹N“_‚É‚È‚éB
+					//ç™ºæ™‚åˆ»ãŒå­˜åœ¨ã™ã‚‹å ´åˆã€ã“ã®æ™‚åˆ»OrderãŒã‚³ãƒ”ãƒ¼èµ·ç‚¹ã«ãªã‚‹ã€‚
 					aCdDedJikokuOrderKiten = CdDedJikokuOrder(iEkiOrder, CdDedJikokuOrder::EkiJikokuItem_Hatsu);
 					break;
 				}
 			}
-			//”­”ñ•\¦or”­•\¦—L‚ÅNULL‚¾‚ªA‘O‚Ì‰w‚ªŒo—R–³‚µ‚à‚µ‚­‚Í‰^s–³‚µ‚à‚µ‚­‚Í’Tõ“ª‰w
+			//ç™ºæ™‚åˆ»éè¡¨ç¤ºorç™ºæ™‚åˆ»è¡¨ç¤ºæœ‰ã§NULLã ãŒã€å‰ã®é§…ãŒçµŒç”±ç„¡ã—ã‚‚ã—ãã¯é‹è¡Œç„¡ã—ã‚‚ã—ãã¯æ¢ç´¢é ­é§…
 			if (muCdDedEki->get(iEkiOrder).getChakujikokuHyouji())
 			{
 				if (aCentDedEkiJikoku.getChakujikoku().isNull())
 				{
-					//‘O‰w‚ª‰^s‚È‚µ(Œo—R‚È‚µ‘Š“–)‚Ìê‡‚ÍA‚È‚µ‚à‰Â
+					//å‰é§…ãŒé‹è¡Œãªã—(çµŒç”±ãªã—ç›¸å½“)ã®å ´åˆã¯ã€æ™‚åˆ»ãªã—ã‚‚å¯
 					if (pCentDedRessya->isRunBetweenNextEki(iEkiOrder - 1))
 					{
 						return -1;
@@ -13391,7 +13391,7 @@ int CWjkState_Ressyahensyu::ComplementSyuuchakuStdOpeTime(
 				}
 				else
 				{
-					//’…‚ª‘¶İ‚·‚éê‡A‚±‚ÌOrder‚ªƒRƒs[‹N“_‚É‚È‚éB
+					//ç€æ™‚åˆ»ãŒå­˜åœ¨ã™ã‚‹å ´åˆã€ã“ã®æ™‚åˆ»OrderãŒã‚³ãƒ”ãƒ¼èµ·ç‚¹ã«ãªã‚‹ã€‚
 					aCdDedJikokuOrderKiten = CdDedJikokuOrder(iEkiOrder, CdDedJikokuOrder::EkiJikokuItem_Chaku);
 					break;
 				}
@@ -13400,27 +13400,27 @@ int CWjkState_Ressyahensyu::ComplementSyuuchakuStdOpeTime(
 	}
 	if (aCdDedJikokuOrderKiten.getIsNull())
 	{
-		//ƒRƒs[‚Ì‹N“_‚Æ‚È‚é‰w‚ªŒ©‚Â‚©‚ç‚È‚©‚Á‚½‚çreturn(Œo—R–³‚µ‚â‚È‚µ’Ê‰ß‚µ‚©‚È‚¢etc)
+		//ã‚³ãƒ”ãƒ¼ã®èµ·ç‚¹ã¨ãªã‚‹é§…ãŒè¦‹ã¤ã‹ã‚‰ãªã‹ã£ãŸã‚‰return(çµŒç”±ç„¡ã—ã‚„æ™‚åˆ»ãªã—é€šéã—ã‹ãªã„etc)
 		return -1;
 	}
-	//Šî€‰^“]•ªƒ_ƒCƒ„‚Ì’†‚©‚çAƒRƒs[‚Ì‘ÎÛ‚É‚Å‚«‚é—ñÔ‚ğ’T‚·B
+	//åŸºæº–é‹è»¢æ™‚åˆ†ãƒ€ã‚¤ãƒ¤ã®ä¸­ã‹ã‚‰ã€ã‚³ãƒ”ãƒ¼ã®å¯¾è±¡ã«ã§ãã‚‹åˆ—è»Šã‚’æ¢ã™ã€‚
 	const CentDedRessyaCont* pCentDedRessyaContStandard =
 		getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()->getCentDedDiaCont()
 		->getMuPtr()->get(iDiaIndexStandard)->getCentDedRessyaCont(pCentDedRessya->getRessyahoukou());
 	int idxRessyasyubetsu = pCentDedRessya->getRessyasyubetsuIndex();
 
 	for (int iRessyaIndexStandard = 0;
-		iRessyaIndexStandard < pCentDedRessyaContStandard->size()/*ƒRƒ“ƒeƒi“à—ñÔ”*/;
+		iRessyaIndexStandard < pCentDedRessyaContStandard->size()/*ã‚³ãƒ³ãƒ†ãƒŠå†…åˆ—è»Šæ•°*/;
 		iRessyaIndexStandard++)
 	{
-		//‘ÎÛ—ñÔ‚Æ“¯‚¶í•Ê‚©‚Ç‚¤‚©Šm”F
+		//å¯¾è±¡åˆ—è»Šã¨åŒã˜ç¨®åˆ¥ã‹ã©ã†ã‹ç¢ºèª
 		if (pCentDedRessyaContStandard->getMuPtr()->get(iRessyaIndexStandard)->getRessyasyubetsuIndex() != idxRessyasyubetsu)
 		{
-			continue; //Ÿ—ñÔ‚ÉˆÚs
+			continue; //æ¬¡åˆ—è»Šã«ç§»è¡Œ
 		}
 		const CentDedRessya* pCentDedRessyaStd = pCentDedRessyaContStandard->getMuPtr()->get(iRessyaIndexStandard);
-		//iTsuukaKeiyunasiBegin‚©‚çƒRƒs[‚Ì‹N“_‚Æ‚È‚é‰w‚Ìˆê‚Âã‚Ü‚Å‚Ì‰wˆµ‚¢‚ªˆê’v‚·‚é‚©A
-		//‚¨‚æ‚ÑA’Ê‰ß‚Ìê‡‚ÍA‰w‚ª‚È‚¢‚±‚Æ‚àˆê’v‚·‚é‚©‚ğƒ`ƒFƒbƒN‚·‚éB
+		//iTsuukaKeiyunasiBeginã‹ã‚‰ã‚³ãƒ”ãƒ¼ã®èµ·ç‚¹ã¨ãªã‚‹é§…ã®ä¸€ã¤ä¸Šã¾ã§ã®é§…æ‰±ã„ãŒä¸€è‡´ã™ã‚‹ã‹ã€
+		//ãŠã‚ˆã³ã€é€šéã®å ´åˆã¯ã€é§…æ™‚åˆ»ãŒãªã„ã“ã¨ã‚‚ä¸€è‡´ã™ã‚‹ã‹ã‚’ãƒã‚§ãƒƒã‚¯ã™ã‚‹ã€‚
 		bool bContinue = true;
 		for (int ord = iTsuukaBegin;
 			bContinue && iTsuukaBegin != -1 && ord > aCdDedJikokuOrderKiten.getEkiOrder();
@@ -13435,8 +13435,8 @@ int CWjkState_Ressyahensyu::ComplementSyuuchakuStdOpeTime(
 			}
 			else if (aCentDedEkiJikoku.getEkiatsukai() == aCentDedEkiJikokuStd.getEkiatsukai())
 			{
-				//‰wˆµ‚¢‚ª’âÔE’Ê‰ß‚Åˆê’v‚Ìê‡A”­E’…ŠeX‚É‘Î‚µA•\¦—L‚Ìê‡‚ÉAstd‘¤‚Ì‚ªNULL‚Å‚Í‚È‚©‚Á‚½ê‡Aˆê’v‚µ‚Ä‚¢‚È‚¢‚Ì‚Åbreak
-				//‚È‚¨A’âÔ‚Ìê‡‚Å‚à•K‚¸‚ÍNULL‚É‚È‚é(‚±‚Ì‹æŠÔ‚É’âÔ‚ª‚­‚éê‡‚ÍA’…”­‹¤‚ÉŒo—R‚È‚µ‚É‚æ‚éˆÓ–¡‚ğ‚½‚È‚¢ê‡‚©‚Â‚ªNULL‚Ìê‡)
+				//é§…æ‰±ã„ãŒåœè»Šãƒ»é€šéã§ä¸€è‡´ã®å ´åˆã€ç™ºæ™‚åˆ»ãƒ»ç€æ™‚åˆ»å„ã€…ã«å¯¾ã—ã€è¡¨ç¤ºæœ‰ã®å ´åˆã«ã€stdå´ã®æ™‚åˆ»ãŒNULLã§ã¯ãªã‹ã£ãŸå ´åˆã€ä¸€è‡´ã—ã¦ã„ãªã„ã®ã§break
+				//ãªãŠã€åœè»Šã®å ´åˆã§ã‚‚å¿…ãšæ™‚åˆ»ã¯NULLã«ãªã‚‹(ã“ã®åŒºé–“ã«åœè»ŠãŒãã‚‹å ´åˆã¯ã€ç€ç™ºå…±ã«çµŒç”±ãªã—ã«ã‚ˆã‚‹æ„å‘³ã‚’æŒãŸãªã„å ´åˆã‹ã¤æ™‚åˆ»ãŒNULLã®å ´åˆ)
 				if (muCdDedEki->get(ord).getHatsujikokuHyouji() &&
 					!aCentDedEkiJikokuStd.getHatsujikoku().isNull())
 				{
@@ -13451,17 +13451,17 @@ int CWjkState_Ressyahensyu::ComplementSyuuchakuStdOpeTime(
 				}
 				continue;
 			}
-			//ˆê’v‚µ‚È‚©‚Á‚½ê‡Abreak
+			//ä¸€è‡´ã—ãªã‹ã£ãŸå ´åˆã€break
 			bContinue = false;
 			break;
 		}
-		//ˆê’v‚µ‚È‚©‚Á‚½‚à‚Ì‚ª‚ ‚Á‚½ê‡AbContinue‚ªfalse‚É‚È‚é‚Ì‚Å‚»‚Ìê‡‚ÍŸ—ñÔ‚ÉˆÚs
+		//ä¸€è‡´ã—ãªã‹ã£ãŸã‚‚ã®ãŒã‚ã£ãŸå ´åˆã€bContinueãŒfalseã«ãªã‚‹ã®ã§ãã®å ´åˆã¯æ¬¡åˆ—è»Šã«ç§»è¡Œ
 		if (!bContinue)
 		{
 			continue;
 		}
-		//aCdDedJikokuOrderKiten‚É‚Â‚¢‚Äƒ`ƒFƒbƒN‚ğs‚¤A
-		//‚Ü‚¸‚Í‰wˆµ‚¢‚ğƒ`ƒFƒbƒNAˆÙ‚È‚Á‚Ä‚¢‚éê‡‚ÍŸ—ñÔ‚Ö
+		//aCdDedJikokuOrderKitenã«ã¤ã„ã¦ãƒã‚§ãƒƒã‚¯ã‚’è¡Œã†ã€
+		//ã¾ãšã¯é§…æ‰±ã„ã‚’ãƒã‚§ãƒƒã‚¯ã€ç•°ãªã£ã¦ã„ã‚‹å ´åˆã¯æ¬¡åˆ—è»Šã¸
 		CentDedEkiJikoku aCentDedEkiJikoku = pCentDedRessya->getCentDedEkiJikoku(aCdDedJikokuOrderKiten.getEkiOrder());
 		CentDedEkiJikoku aCentDedEkiJikokuStd = pCentDedRessyaStd->getCentDedEkiJikoku(aCdDedJikokuOrderKiten.getEkiOrder());
 		if (aCentDedEkiJikoku.getEkiatsukai() != aCentDedEkiJikokuStd.getEkiatsukai())
@@ -13471,22 +13471,22 @@ int CWjkState_Ressyahensyu::ComplementSyuuchakuStdOpeTime(
 		int iDifferenceTime;
 		if (aCdDedJikokuOrderKiten.getEkiJikokuItem() == CdDedJikokuOrder::EkiJikokuItem_Hatsu)
 		{
-			//”­‚Ìê‡‚ÍAaCentDedEkiJikokuStd‚Ì”­‚ªNULL‚È‚çAŸ—ñÔ‚Ö
+			//ç™ºæ™‚åˆ»ã®å ´åˆã¯ã€aCentDedEkiJikokuStdã®ç™ºæ™‚åˆ»ãŒNULLãªã‚‰ã€æ¬¡åˆ—è»Šã¸
 			if (aCentDedEkiJikokuStd.getHatsujikoku().isNull())
 			{
 				continue;
 			}
-			//‚±‚±‚Ü‚Å—ˆ‚½‚çAƒRƒs[‚Ì‘Oì‹Æ‚Æ‚µ‚ÄAiDifferenceTime‚ğ‹‚ß‚éB
+			//ã“ã“ã¾ã§æ¥ãŸã‚‰ã€ã‚³ãƒ”ãƒ¼ã®å‰ä½œæ¥­ã¨ã—ã¦ã€iDifferenceTimeã‚’æ±‚ã‚ã‚‹ã€‚
 			iDifferenceTime = aCentDedEkiJikoku.getHatsujikoku().subJikoku(aCentDedEkiJikokuStd.getHatsujikoku());
 		}
 		else
 		{
-			//‘O’ñ@”­‚ªw’è‚³‚ê‚Ä‚¢‚éê‡AŒ³—ñÔ‚Ì’…‚Í•K‚¸NULL‚Å‚ ‚é
-			//(‹t‚ÉŒ¾‚¤‚ÆA’…‚ª‚ ‚éê‡‚ÍA‚»‚Ì’…‚ªw’è‚³‚ê‚Ä‚¢‚é‚Í‚¸)
-			//aCdDedJikokuOrderKiten‚Í’âÔ‚©’Ê‰ß‚Ì‚¢‚¸‚ê‚©‚È‚Ì‚ÅAif‚Í•s—v
+			//å‰æã€€ç™ºæ™‚åˆ»ãŒæŒ‡å®šã•ã‚Œã¦ã„ã‚‹å ´åˆã€å…ƒåˆ—è»Šã®ç€æ™‚åˆ»ã¯å¿…ãšNULLã§ã‚ã‚‹
+			//(é€†ã«è¨€ã†ã¨ã€ç€æ™‚åˆ»ãŒã‚ã‚‹å ´åˆã¯ã€ãã®ç€æ™‚åˆ»ãŒæŒ‡å®šã•ã‚Œã¦ã„ã‚‹ã¯ãš)
+			//aCdDedJikokuOrderKitenã¯åœè»Šã‹é€šéã®ã„ãšã‚Œã‹ãªã®ã§ã€ifã¯ä¸è¦
 			//if (aCentDedEkiJikoku.getEkiatsukai() == CentDedEkiJikoku::Ekiatsukai_Tsuuka)
 			//{
-			//	//’Ê‰ß‚Ìê‡A”­•\¦—L‚©‚Â”­‚ª‘¶İ‚·‚é‚È‚çAŸ—ñÔ‚Ö
+			//	//é€šéã®å ´åˆã€ç™ºæ™‚åˆ»è¡¨ç¤ºæœ‰ã‹ã¤ç™ºæ™‚åˆ»ãŒå­˜åœ¨ã™ã‚‹ãªã‚‰ã€æ¬¡åˆ—è»Šã¸
 			//	if (muCdDedEki->get(aCdDedJikokuOrderKiten.getEkiOrder()).getHatsujikokuHyouji() &&
 			//		!aCentDedEkiJikokuStd.getHatsujikoku().isNull())
 			//	{
@@ -13495,10 +13495,10 @@ int CWjkState_Ressyahensyu::ComplementSyuuchakuStdOpeTime(
 			//}
 			//else if (aCentDedEkiJikoku.getEkiatsukai() == CentDedEkiJikoku::Ekiatsukai_Teisya)
 			//{
-				//’âÔ‚Ìê‡A”­‚ª‘¶İ‚µ‚Ä‚àAŸ—ñÔ‚Ös‚­‚Æ‚ÍŒÀ‚ç‚È‚¢
-				//iTsuukaKeiyunasiBegin‚ª-1ˆÈŠO‚Ìê‡‚ÍAˆê‚Â‰º‚Ì‰w‚ªŒo—R–³‚µ‚Æ‚È‚éB
-				//‚»‚Ìê‡‚ÍA”­•\¦—L‚©‚Â”­‚ª‘¶İ‚·‚é‚È‚çAŸ—ñÔ‚Ö
-				//iTsuukaKeiyunasiBegin‚ª-1‚Ìê‡‚ÍA•ÒW‘ÎÛ—ñÔ‚ÌŒ»I’…‰w‚Å‚ ‚é‚Ì‚ÅA”­‚ª‚ ‚Á‚Ä‚à‘åä•v
+				//åœè»Šã®å ´åˆã€ç™ºæ™‚åˆ»ãŒå­˜åœ¨ã—ã¦ã‚‚ã€æ¬¡åˆ—è»Šã¸è¡Œãã¨ã¯é™ã‚‰ãªã„
+				//iTsuukaKeiyunasiBeginãŒ-1ä»¥å¤–ã®å ´åˆã¯ã€ä¸€ã¤ä¸‹ã®é§…ãŒçµŒç”±ç„¡ã—ã¨ãªã‚‹ã€‚
+				//ãã®å ´åˆã¯ã€ç™ºæ™‚åˆ»è¡¨ç¤ºæœ‰ã‹ã¤ç™ºæ™‚åˆ»ãŒå­˜åœ¨ã™ã‚‹ãªã‚‰ã€æ¬¡åˆ—è»Šã¸
+				//iTsuukaKeiyunasiBeginãŒ-1ã®å ´åˆã¯ã€ç·¨é›†å¯¾è±¡åˆ—è»Šã®ç¾çµ‚ç€é§…ã§ã‚ã‚‹ã®ã§ã€ç™ºæ™‚åˆ»ãŒã‚ã£ã¦ã‚‚å¤§ä¸ˆå¤«
 				if (muCdDedEki->get(aCdDedJikokuOrderKiten.getEkiOrder()).getHatsujikokuHyouji() &&
 					!aCentDedEkiJikokuStd.getHatsujikoku().isNull() &&
 					iTsuukaBegin != -1)
@@ -13506,14 +13506,14 @@ int CWjkState_Ressyahensyu::ComplementSyuuchakuStdOpeTime(
 					continue;
 				}
 			//}
-			//’…‚ªNULL‚È‚çŸ—ñÔ‚Ö
+			//ç€æ™‚åˆ»ãŒNULLãªã‚‰æ¬¡åˆ—è»Šã¸
 			if (aCentDedEkiJikokuStd.getChakujikoku().isNull())
 			{
 				continue;
 			}
-			//‚±‚±‚Ü‚Å—ˆ‚½‚çAƒRƒs[‚Ì‘Oì‹Æ‚Æ‚µ‚ÄAiDifferenceTime‚ğ‹‚ß‚éB
+			//ã“ã“ã¾ã§æ¥ãŸã‚‰ã€ã‚³ãƒ”ãƒ¼ã®å‰ä½œæ¥­ã¨ã—ã¦ã€iDifferenceTimeã‚’æ±‚ã‚ã‚‹ã€‚
 			iDifferenceTime = aCentDedEkiJikoku.getChakujikoku().subJikoku(aCentDedEkiJikokuStd.getChakujikoku());
-			//”­•\¦—L‚Ìê‡‚ÍA”­‚ÌƒRƒs[‚às‚Á‚Ä‚µ‚Ü‚¤B
+			//ç™ºæ™‚åˆ»è¡¨ç¤ºæœ‰ã®å ´åˆã¯ã€ç™ºæ™‚åˆ»ã®ã‚³ãƒ”ãƒ¼ã‚‚è¡Œã£ã¦ã—ã¾ã†ã€‚
 			if (muCdDedEki->get(aCdDedJikokuOrderKiten.getEkiOrder()).getHatsujikokuHyouji() &&
 				!aCentDedEkiJikokuStd.getHatsujikoku().isNull())
 			{
@@ -13525,7 +13525,7 @@ int CWjkState_Ressyahensyu::ComplementSyuuchakuStdOpeTime(
 			}
 		}
 
-		//ƒRƒs[‚Ì‹N“_‰w‚Ìˆê‚ÂŒã‚©‚çAƒtƒH[ƒJƒXˆÊ’u‚Ü‚Å‚ÌƒRƒs[‚ğs‚¤B
+		//ã‚³ãƒ”ãƒ¼ã®èµ·ç‚¹é§…ã®ä¸€ã¤å¾Œã‹ã‚‰ã€ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ä½ç½®ã¾ã§ã®ã‚³ãƒ”ãƒ¼ã‚’è¡Œã†ã€‚
 		int ord = aCdDedJikokuOrderKiten.getEkiOrder() + 1;
 		if (iTsuukaBegin != -1)
 		{
@@ -13533,11 +13533,11 @@ int CWjkState_Ressyahensyu::ComplementSyuuchakuStdOpeTime(
 		}
 		for (; ord <= aCdJikokuOrder.getEkiOrder(); ord++)
 		{
-			//(1)ƒRƒs[Œ³‚ÌI’…‰w‚Ìê‡Aì‹ÆE˜HüŠO”­’…‚ğ•â³‚·‚éB
-			//(2)aCdJikokuOrder.getEkiOrder()‚ÅƒtƒH[ƒJƒX‚ª’…‚Ìê‡A”­‚ğNULL‚É‚·‚éB
-			//‚½‚¾‚µA’…•\¦‚ª‚È‚¢ê‡‚Íœ‚­
-			//‚È‚¨AaCdJikokuOrder.getEkiOrder()‚©‚ÂƒRƒs[Œ³‚ÌI’…‰w‚Ìê‡‚Í(1)—Dæ‚É‚È‚é‚æ‚¤‚Éif•¶‚ğ\’z‚·‚é
-			//(3)‚Ç‚¿‚ç‚Å‚à‚È‚¢ê‡‚ÍA‚Ì•â³‚Ì‚İs‚¤
+			//(1)ã‚³ãƒ”ãƒ¼å…ƒã®çµ‚ç€é§…ã®å ´åˆã€ä½œæ¥­æ™‚åˆ»ãƒ»è·¯ç·šå¤–ç™ºç€æ™‚åˆ»ã‚’è£œæ­£ã™ã‚‹ã€‚
+			//(2)aCdJikokuOrder.getEkiOrder()ã§ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ãŒç€æ™‚åˆ»ã®å ´åˆã€ç™ºæ™‚åˆ»ã‚’NULLã«ã™ã‚‹ã€‚
+			//ãŸã ã—ã€ç€æ™‚åˆ»è¡¨ç¤ºãŒãªã„å ´åˆã¯é™¤ã
+			//ãªãŠã€aCdJikokuOrder.getEkiOrder()ã‹ã¤ã‚³ãƒ”ãƒ¼å…ƒã®çµ‚ç€é§…ã®å ´åˆã¯(1)å„ªå…ˆã«ãªã‚‹ã‚ˆã†ã«ifæ–‡ã‚’æ§‹ç¯‰ã™ã‚‹
+			//(3)ã©ã¡ã‚‰ã§ã‚‚ãªã„å ´åˆã¯ã€æ™‚åˆ»ã®è£œæ­£ã®ã¿è¡Œã†
 
 			CentDedEkiJikoku aCentDedEkiJikokuNew(pCentDedRessyaStd->getCentDedEkiJikoku(ord));
 			aCentDedEkiJikokuNew.setChakujikoku(aCentDedEkiJikokuNew.getChakujikoku().addSeconds(iDifferenceTime));
@@ -13572,27 +13572,27 @@ int CWjkState_Ressyahensyu::ComplementChakuFromHatsuStdOpeTime(
 	int iEkiOrder,
 	CentDedRessya * pCentDedRessya)
 {
-	/*‚±‚±‚Ö—ˆ‚é—ñÔ‚ÍA
-		(1)—ñÔ‚Ìn”­‰w‚Å
-		(2)ƒtƒH[ƒJƒX‚ª”­’…•\¦‰w‚Ì’…‚Å
-		(3)’…‚Í‹ó‚Å”­‚ª—L‚è’âÔor’Ê‰ß
+	/*ã“ã“ã¸æ¥ã‚‹åˆ—è»Šã¯ã€
+		(1)åˆ—è»Šã®å§‹ç™ºé§…ã§
+		(2)ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ãŒç™ºç€æ™‚åˆ»è¡¨ç¤ºé§…ã®ç€æ™‚åˆ»ã§
+		(3)ç€æ™‚åˆ»ã¯ç©ºã§ç™ºæ™‚åˆ»ãŒæœ‰ã‚Šï¼åœè»Šoré€šé
 
-		]‚Á‚ÄAŠî€‰^“]•ª‚©‚çAí•Êˆê’vA’âÔor’Ê‰ßˆê’vE”­’…‹¤‚É‘¶İ‚Ì—ñÔ‚ğŒ©‚Â‚¯‚ÄAƒRƒs[‚·‚ê‚Î‚æ‚¢B
+		å¾“ã£ã¦ã€åŸºæº–é‹è»¢æ™‚åˆ†ã‹ã‚‰ã€ç¨®åˆ¥ä¸€è‡´ã€åœè»Šoré€šéä¸€è‡´ãƒ»ç™ºç€å…±ã«æ™‚åˆ»å­˜åœ¨ã®åˆ—è»Šã‚’è¦‹ã¤ã‘ã¦ã€ã‚³ãƒ”ãƒ¼ã™ã‚Œã°ã‚ˆã„ã€‚
 	*/
-	//Šî€‰^“]•ªƒ_ƒCƒ„‚Ì’†‚©‚çAƒRƒs[‚Ì‘ÎÛ‚É‚Å‚«‚é—ñÔ‚ğ’T‚·B
+	//åŸºæº–é‹è»¢æ™‚åˆ†ãƒ€ã‚¤ãƒ¤ã®ä¸­ã‹ã‚‰ã€ã‚³ãƒ”ãƒ¼ã®å¯¾è±¡ã«ã§ãã‚‹åˆ—è»Šã‚’æ¢ã™ã€‚
 	const CentDedRessyaCont* pCentDedRessyaContStandard =
 		getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()->getCentDedDiaCont()
 		->getMuPtr()->get(iDiaIndexStandard)->getCentDedRessyaCont(pCentDedRessya->getRessyahoukou());
 	int idxRessyasyubetsu = pCentDedRessya->getRessyasyubetsuIndex();
 
 	for (int iRessyaIndexStandard = 0;
-		iRessyaIndexStandard < pCentDedRessyaContStandard->size()/*ƒRƒ“ƒeƒi“à—ñÔ”*/;
+		iRessyaIndexStandard < pCentDedRessyaContStandard->size()/*ã‚³ãƒ³ãƒ†ãƒŠå†…åˆ—è»Šæ•°*/;
 		iRessyaIndexStandard++)
 	{
-		//‘ÎÛ—ñÔ‚Æ“¯‚¶í•Ê‚©‚Ç‚¤‚©Šm”F
+		//å¯¾è±¡åˆ—è»Šã¨åŒã˜ç¨®åˆ¥ã‹ã©ã†ã‹ç¢ºèª
 		if (pCentDedRessyaContStandard->getMuPtr()->get(iRessyaIndexStandard)->getRessyasyubetsuIndex() != idxRessyasyubetsu)
 		{
-			continue; //Ÿ—ñÔ‚ÉˆÚs
+			continue; //æ¬¡åˆ—è»Šã«ç§»è¡Œ
 		}
 		//const CentDedRessya* pCentDedRessyaStd = pCentDedRessyaContStandard->getMuPtr()->get(iRessyaIndexStandard);
 		CentDedEkiJikoku aCentDedEkiJikoku = pCentDedRessya->getCentDedEkiJikoku(iEkiOrder);
@@ -13619,27 +13619,27 @@ int CWjkState_Ressyahensyu::ComplementHatsuFromChakuStdOpeTime(
 	int iEkiOrder,
 	CentDedRessya * pCentDedRessya)
 {
-	/*‚±‚±‚Ö—ˆ‚é—ñÔ‚ÍA
-		(1)—ñÔ‚ÌI’…‰w‚Å
-		(2)ƒtƒH[ƒJƒX‚ª”­’…•\¦‰w‚Ì”­‚Å
-		(3)’…‚Í—L‚è‚Å”­‚ª‹ó’âÔor’Ê‰ß
+	/*ã“ã“ã¸æ¥ã‚‹åˆ—è»Šã¯ã€
+		(1)åˆ—è»Šã®çµ‚ç€é§…ã§
+		(2)ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ãŒç™ºç€æ™‚åˆ»è¡¨ç¤ºé§…ã®ç™ºæ™‚åˆ»ã§
+		(3)ç€æ™‚åˆ»ã¯æœ‰ã‚Šã§ç™ºæ™‚åˆ»ãŒç©ºï¼åœè»Šoré€šé
 
-		]‚Á‚ÄAŠî€‰^“]•ª‚©‚çAí•Êˆê’vA’âÔor’Ê‰ßˆê’vE”­’…‹¤‚É‘¶İ‚Ì—ñÔ‚ğŒ©‚Â‚¯‚ÄAƒRƒs[‚·‚ê‚Î‚æ‚¢B
+		å¾“ã£ã¦ã€åŸºæº–é‹è»¢æ™‚åˆ†ã‹ã‚‰ã€ç¨®åˆ¥ä¸€è‡´ã€åœè»Šoré€šéä¸€è‡´ãƒ»ç™ºç€å…±ã«æ™‚åˆ»å­˜åœ¨ã®åˆ—è»Šã‚’è¦‹ã¤ã‘ã¦ã€ã‚³ãƒ”ãƒ¼ã™ã‚Œã°ã‚ˆã„ã€‚
 	*/
-	//Šî€‰^“]•ªƒ_ƒCƒ„‚Ì’†‚©‚çAƒRƒs[‚Ì‘ÎÛ‚É‚Å‚«‚é—ñÔ‚ğ’T‚·B
+	//åŸºæº–é‹è»¢æ™‚åˆ†ãƒ€ã‚¤ãƒ¤ã®ä¸­ã‹ã‚‰ã€ã‚³ãƒ”ãƒ¼ã®å¯¾è±¡ã«ã§ãã‚‹åˆ—è»Šã‚’æ¢ã™ã€‚
 	const CentDedRessyaCont* pCentDedRessyaContStandard =
 		getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()->getCentDedDiaCont()
 		->getMuPtr()->get(iDiaIndexStandard)->getCentDedRessyaCont(pCentDedRessya->getRessyahoukou());
 	int idxRessyasyubetsu = pCentDedRessya->getRessyasyubetsuIndex();
 
 	for (int iRessyaIndexStandard = 0;
-		iRessyaIndexStandard < pCentDedRessyaContStandard->size()/*ƒRƒ“ƒeƒi“à—ñÔ”*/;
+		iRessyaIndexStandard < pCentDedRessyaContStandard->size()/*ã‚³ãƒ³ãƒ†ãƒŠå†…åˆ—è»Šæ•°*/;
 		iRessyaIndexStandard++)
 	{
-		//‘ÎÛ—ñÔ‚Æ“¯‚¶í•Ê‚©‚Ç‚¤‚©Šm”F
+		//å¯¾è±¡åˆ—è»Šã¨åŒã˜ç¨®åˆ¥ã‹ã©ã†ã‹ç¢ºèª
 		if (pCentDedRessyaContStandard->getMuPtr()->get(iRessyaIndexStandard)->getRessyasyubetsuIndex() != idxRessyasyubetsu)
 		{
-			continue; //Ÿ—ñÔ‚ÉˆÚs
+			continue; //æ¬¡åˆ—è»Šã«ç§»è¡Œ
 		}
 		//const CentDedRessya* pCentDedRessyaStd = pCentDedRessyaContStandard->getMuPtr()->get(iRessyaIndexStandard);
 		CentDedEkiJikoku aCentDedEkiJikoku = pCentDedRessya->getCentDedEkiJikoku(iEkiOrder);
@@ -13736,7 +13736,7 @@ void CWjkState_Ressyahensyu::ChangeOperationBeforeDataNext(
 					}
 				}
 			}
-			//‰^—p”Ô†•ÏX‚Ìê‡‚ÍA“®ì–³‚µ
+			//é‹ç”¨ç•ªå·å¤‰æ›´ã®å ´åˆã¯ã€å‹•ä½œç„¡ã—
 		}
 	}
 }
@@ -13816,7 +13816,7 @@ void CWjkState_Ressyahensyu::ChangeOperationBeforeDataPrev(
 					}
 				}
 			}
-			//‰^—p”Ô†•ÏX‚Ìê‡‚ÍA“®ì–³‚µ
+			//é‹ç”¨ç•ªå·å¤‰æ›´ã®å ´åˆã¯ã€å‹•ä½œç„¡ã—
 		}
 	}
 }
@@ -13884,7 +13884,7 @@ void CWjkState_Ressyahensyu::ChangeOperationAfterDataNext(
 					}
 				}
 			}
-			//‰^—p”Ô†•ÏX‚Ìê‡‚ÍA“®ì–³‚µ
+			//é‹ç”¨ç•ªå·å¤‰æ›´ã®å ´åˆã¯ã€å‹•ä½œç„¡ã—
 		}
 	}
 }
@@ -13953,7 +13953,7 @@ void CWjkState_Ressyahensyu::ChangeOperationAfterDataPrev(
 					}
 				}
 			}
-			//‰^—p”Ô†•ÏX‚Ìê‡‚ÍA“®ì–³‚µ
+			//é‹ç”¨ç•ªå·å¤‰æ›´ã®å ´åˆã¯ã€å‹•ä½œç„¡ã—
 		}
 	}
 }
@@ -13988,10 +13988,10 @@ void CWjkState_Ressyahensyu::ChangeOperationBeforeTypeNext(
 
 		if (iTargetPos < pBeforeCont->size())
 		{
-			//ì‹Æ‚ª‘¶İ‚·‚éê‡A“üŠ·‚È‚çíœA‰ğŒ‹‚È‚ç‰ğŒ‹Index‚Ì•ÏX‚ğs‚¤
-			//d—l•ÏX
-			//2.00.05Äd—l•ÏX
-			//“üŠ·¨‘Œ‹A‘Œ‹¨‰ğŒ‹A‰ğŒ‹E‰^—p”Ô†•ÏX¨íœ
+			//ä½œæ¥­ãŒå­˜åœ¨ã™ã‚‹å ´åˆã€å…¥æ›ãªã‚‰å‰Šé™¤ã€è§£çµãªã‚‰è§£çµIndexã®å¤‰æ›´ã‚’è¡Œã†
+			//ä»•æ§˜å¤‰æ›´
+			//2.00.05å†ä»•æ§˜å¤‰æ›´
+			//å…¥æ›â†’å¢—çµã€å¢—çµâ†’è§£çµã€è§£çµãƒ»é‹ç”¨ç•ªå·å¤‰æ›´â†’å‰Šé™¤
 			CentDedBeforeOperation* pBeforeOperation = pBeforeCont->getMuPtr()->get(iTargetPos);
 			if (pBeforeOperation->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Shunt)
 			{
@@ -14021,11 +14021,11 @@ void CWjkState_Ressyahensyu::ChangeOperationBeforeTypeNext(
 		}
 		else
 		{
-			//‹ó”’‰ÓŠ‚ğ‘I‘ğ‚µ‚Ä‚¢‚éê‡‚ÍA‚»‚±‚É“üŠ·ì‹Æ‚ğ’Ç‰Á‚·‚é
-			//Œµ–§‚É‚ÍA‚±‚Ì‰w‚Ì‰wˆµ‚¢‚â•ªŠòŠÖŒW‚ğŒ©‚ÄAì‹Æ•t‰Á‚Ì‰Â”Û‚ğ”»’è‚·‚é•K—v‚ª‚ ‚é‚ªA
-			//‚Æ‚è‚ ‚¦‚¸•t‰Á‚¾‚¯‚µ‚ÄAƒ`ƒFƒbƒNì‹Æ‚ÍadjustOperation‚ÉŠÛ“Š‚°‚·‚éB
+			//ç©ºç™½ç®‡æ‰€ã‚’é¸æŠã—ã¦ã„ã‚‹å ´åˆã¯ã€ãã“ã«å…¥æ›ä½œæ¥­ã‚’è¿½åŠ ã™ã‚‹
+			//å³å¯†ã«ã¯ã€ã“ã®é§…ã®é§…æ‰±ã„ã‚„åˆ†å²é–¢ä¿‚ã‚’è¦‹ã¦ã€ä½œæ¥­ä»˜åŠ ã®å¯å¦ã‚’åˆ¤å®šã™ã‚‹å¿…è¦ãŒã‚ã‚‹ãŒã€
+			//ã¨ã‚Šã‚ãˆãšä»˜åŠ ã ã‘ã—ã¦ã€ãƒã‚§ãƒƒã‚¯ä½œæ¥­ã¯adjustOperationã«ä¸¸æŠ•ã’ã™ã‚‹ã€‚
 			//iTargetPos = pBeforeCont->size();
-			//“üŠ·ì‹Æ‚ğ’Ç‰Á‚·‚é‚Æ‚«‚ÍAƒfƒtƒHƒ‹ƒg“üŠ·”Ôü‚ğæ“¾‚·‚é
+			//å…¥æ›ä½œæ¥­ã‚’è¿½åŠ ã™ã‚‹ã¨ãã¯ã€ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå…¥æ›ç•ªç·šã‚’å–å¾—ã™ã‚‹
 
 			CdDedJikoku aShuntJikoku;
 			if (!pCentDedRessya->getCentDedEkiJikoku(iEkiOrder).getChakujikoku(false).isNull())
@@ -14104,10 +14104,10 @@ void CWjkState_Ressyahensyu::ChangeOperationBeforeTypePrev(
 
 		if (iTargetPos < pBeforeCont->size())
 		{
-			//ì‹Æ‚ª‘¶İ‚·‚éê‡A“üŠ·‚È‚çíœA‰ğŒ‹‚È‚ç‰ğŒ‹Index‚Ì•ÏX‚ğs‚¤
-			//d—l•ÏX
-			//2.00.05Äd—l•ÏX
-			//“üŠ·¨íœA‘Œ‹¨“üŠ·A‰ğŒ‹¨‘Œ‹A‰^—p”Ô†•ÏX¨‰ğŒ‹
+			//ä½œæ¥­ãŒå­˜åœ¨ã™ã‚‹å ´åˆã€å…¥æ›ãªã‚‰å‰Šé™¤ã€è§£çµãªã‚‰è§£çµIndexã®å¤‰æ›´ã‚’è¡Œã†
+			//ä»•æ§˜å¤‰æ›´
+			//2.00.05å†ä»•æ§˜å¤‰æ›´
+			//å…¥æ›â†’å‰Šé™¤ã€å¢—çµâ†’å…¥æ›ã€è§£çµâ†’å¢—çµã€é‹ç”¨ç•ªå·å¤‰æ›´â†’è§£çµ
 			CentDedBeforeOperation* pBeforeOperation = pBeforeCont->getMuPtr()->get(iTargetPos);
 			if (pBeforeOperation->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Shunt)
 			{
@@ -14179,13 +14179,13 @@ void CWjkState_Ressyahensyu::ChangeOperationBeforeTypePrev(
 		}
 		else
 		{
-			//‹ó”’‰ÓŠ‚ğ‘I‘ğ‚µ‚Ä‚¢‚éê‡‚ÍA‚»‚±‚É“üŠ·ì‹Æ‚ğ’Ç‰Á‚·‚é
-			//Œµ–§‚É‚ÍA‚±‚Ì‰w‚Ì‰wˆµ‚¢‚â•ªŠòŠÖŒW‚ğŒ©‚ÄAì‹Æ•t‰Á‚Ì‰Â”Û‚ğ”»’è‚·‚é•K—v‚ª‚ ‚é‚ªA
-			//‚Æ‚è‚ ‚¦‚¸•t‰Á‚¾‚¯‚µ‚ÄAƒ`ƒFƒbƒNì‹Æ‚ÍadjustOperation‚ÉŠÛ“Š‚°‚·‚éB
+			//ç©ºç™½ç®‡æ‰€ã‚’é¸æŠã—ã¦ã„ã‚‹å ´åˆã¯ã€ãã“ã«å…¥æ›ä½œæ¥­ã‚’è¿½åŠ ã™ã‚‹
+			//å³å¯†ã«ã¯ã€ã“ã®é§…ã®é§…æ‰±ã„ã‚„åˆ†å²é–¢ä¿‚ã‚’è¦‹ã¦ã€ä½œæ¥­ä»˜åŠ ã®å¯å¦ã‚’åˆ¤å®šã™ã‚‹å¿…è¦ãŒã‚ã‚‹ãŒã€
+			//ã¨ã‚Šã‚ãˆãšä»˜åŠ ã ã‘ã—ã¦ã€ãƒã‚§ãƒƒã‚¯ä½œæ¥­ã¯adjustOperationã«ä¸¸æŠ•ã’ã™ã‚‹ã€‚
 			//iTargetPos = pBeforeCont->size();
-			//d—l•ÏX
-			//‰ğŒ‹ì‹Æ‚ğ’Ç‰Á‚·‚é
-			//2.00.05Äd—l•ÏX@‰^—p”Ô†•ÏXì‹Æ‚ğ’Ç‰Á‚·‚é
+			//ä»•æ§˜å¤‰æ›´
+			//è§£çµä½œæ¥­ã‚’è¿½åŠ ã™ã‚‹
+			//2.00.05å†ä»•æ§˜å¤‰æ›´ã€€é‹ç”¨ç•ªå·å¤‰æ›´ä½œæ¥­ã‚’è¿½åŠ ã™ã‚‹
 
 			CdDedJikoku aReleaseJikoku;
 			if (!pCentDedRessya->getCentDedEkiJikoku(iEkiOrder).getChakujikoku(false).isNull())
@@ -14224,10 +14224,10 @@ void CWjkState_Ressyahensyu::ChangeOperationAfterTypeNext(
 			->getCentDedEkiCont()->getMuPtr(pCentDedRessya->getRessyahoukou())->get(iEkiOrder);
 
 		/**
-			iOperationIndex‚ªpAfterCont->size()-1–¢–‚Ìê‡‚ÍAŠù‘¶ì‹Æ‚Ì•ÏX
-			iOperationIndex‚ªpAfterCont->size()-1‚Ìê‡‚ÍAì‹Æí—Ş‚ğŒ©‚ÄA
-				I’[ì‹Æ‚È‚ç“üŠ·‚ğ‘}“üA‚»‚êˆÈŠO‚È‚çŠù‘¶ì‹Æ‚Ì•ÏX
-			iOperationIndex‚ªpAfterCont->size()ˆÈã‚Ìê‡‚ÍA“üŠ·‚Ì‘}“ü
+			iOperationIndexãŒpAfterCont->size()-1æœªæº€ã®å ´åˆã¯ã€æ—¢å­˜ä½œæ¥­ã®å¤‰æ›´
+			iOperationIndexãŒpAfterCont->size()-1ã®å ´åˆã¯ã€ä½œæ¥­ç¨®é¡ã‚’è¦‹ã¦ã€
+				çµ‚ç«¯ä½œæ¥­ãªã‚‰å…¥æ›ã‚’æŒ¿å…¥ã€ãã‚Œä»¥å¤–ãªã‚‰æ—¢å­˜ä½œæ¥­ã®å¤‰æ›´
+			iOperationIndexãŒpAfterCont->size()ä»¥ä¸Šã®å ´åˆã¯ã€å…¥æ›ã®æŒ¿å…¥
 		*/
 		int iType = -1;
 		if (pAfterCont->size() -1 > iOperationIndex)
@@ -14252,9 +14252,9 @@ void CWjkState_Ressyahensyu::ChangeOperationAfterTypeNext(
 
 		if (iType == 1)
 		{
-			//‹ó”’‰ÓŠ‚ğ‘I‘ğ‚µ‚Ä‚¢‚éê‡‚ÍA‚»‚±‚É“üŠ·ì‹Æ‚ğ’Ç‰Á‚·‚é
-			//Œµ–§‚É‚ÍA‚±‚Ì‰w‚Ì‰wˆµ‚¢‚â•ªŠòŠÖŒW‚ğŒ©‚ÄAì‹Æ•t‰Á‚Ì‰Â”Û‚ğ”»’è‚·‚é•K—v‚ª‚ ‚é‚ªA
-			//‚Æ‚è‚ ‚¦‚¸•t‰Á‚¾‚¯‚µ‚ÄAƒ`ƒFƒbƒNì‹Æ‚ÍadjustOperation‚ÉŠÛ“Š‚°‚·‚éB
+			//ç©ºç™½ç®‡æ‰€ã‚’é¸æŠã—ã¦ã„ã‚‹å ´åˆã¯ã€ãã“ã«å…¥æ›ä½œæ¥­ã‚’è¿½åŠ ã™ã‚‹
+			//å³å¯†ã«ã¯ã€ã“ã®é§…ã®é§…æ‰±ã„ã‚„åˆ†å²é–¢ä¿‚ã‚’è¦‹ã¦ã€ä½œæ¥­ä»˜åŠ ã®å¯å¦ã‚’åˆ¤å®šã™ã‚‹å¿…è¦ãŒã‚ã‚‹ãŒã€
+			//ã¨ã‚Šã‚ãˆãšä»˜åŠ ã ã‘ã—ã¦ã€ãƒã‚§ãƒƒã‚¯ä½œæ¥­ã¯adjustOperationã«ä¸¸æŠ•ã’ã™ã‚‹ã€‚
 
 			CdDedJikoku aShuntJikoku;
 			if (!pCentDedRessya->getCentDedEkiJikoku(iEkiOrder).getHatsujikoku(false).isNull())
@@ -14312,7 +14312,7 @@ void CWjkState_Ressyahensyu::ChangeOperationAfterTypeNext(
 		}
 		else if (iType == 0)
 		{
-			//“üŠ·¨‘Œ‹A‘Œ‹¨‰ğŒ‹A‰ğŒ‹E‰^—p”Ô†•ÏX¨íœ
+			//å…¥æ›â†’å¢—çµã€å¢—çµâ†’è§£çµã€è§£çµãƒ»é‹ç”¨ç•ªå·å¤‰æ›´â†’å‰Šé™¤
 			CentDedAfterOperation* pAfterOperation = pAfterCont->getMuPtr()->get(iOperationIndex);
 			if (pAfterOperation->getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Shunt)
 			{
@@ -14357,10 +14357,10 @@ void CWjkState_Ressyahensyu::ChangeOperationAfterTypePrev(
 			->getCentDedEkiCont()->getMuPtr(pCentDedRessya->getRessyahoukou())->get(iEkiOrder);
 
 		/**
-			iOperationIndex‚ªpAfterCont->size()-1–¢–‚Ìê‡‚ÍAŠù‘¶ì‹Æ‚Ì•ÏX
-			iOperationIndex‚ªpAfterCont->size()-1‚Ìê‡‚ÍAì‹Æí—Ş‚ğŒ©‚ÄA
-				I’[ì‹Æ‚È‚ç“üŠ·‚ğ‘}“üA‚»‚êˆÈŠO‚È‚çŠù‘¶ì‹Æ‚Ì•ÏX
-			iOperationIndex‚ªpAfterCont->size()ˆÈã‚Ìê‡‚ÍA“üŠ·‚Ì‘}“ü
+			iOperationIndexãŒpAfterCont->size()-1æœªæº€ã®å ´åˆã¯ã€æ—¢å­˜ä½œæ¥­ã®å¤‰æ›´
+			iOperationIndexãŒpAfterCont->size()-1ã®å ´åˆã¯ã€ä½œæ¥­ç¨®é¡ã‚’è¦‹ã¦ã€
+				çµ‚ç«¯ä½œæ¥­ãªã‚‰å…¥æ›ã‚’æŒ¿å…¥ã€ãã‚Œä»¥å¤–ãªã‚‰æ—¢å­˜ä½œæ¥­ã®å¤‰æ›´
+			iOperationIndexãŒpAfterCont->size()ä»¥ä¸Šã®å ´åˆã¯ã€å…¥æ›ã®æŒ¿å…¥
 		*/
 		int iType = -1;
 		if (pAfterCont->size() - 1 > iOperationIndex)
@@ -14385,12 +14385,12 @@ void CWjkState_Ressyahensyu::ChangeOperationAfterTypePrev(
 
 		if (iType == 1)
 		{
-			//‹ó”’‰ÓŠ‚ğ‘I‘ğ‚µ‚Ä‚¢‚éê‡‚ÍA‚»‚±‚É“üŠ·ì‹Æ‚ğ’Ç‰Á‚·‚é
-			//Œµ–§‚É‚ÍA‚±‚Ì‰w‚Ì‰wˆµ‚¢‚â•ªŠòŠÖŒW‚ğŒ©‚ÄAì‹Æ•t‰Á‚Ì‰Â”Û‚ğ”»’è‚·‚é•K—v‚ª‚ ‚é‚ªA
-			//‚Æ‚è‚ ‚¦‚¸•t‰Á‚¾‚¯‚µ‚ÄAƒ`ƒFƒbƒNì‹Æ‚ÍadjustOperation‚ÉŠÛ“Š‚°‚·‚éB
-			//d—l•ÏX
-			//‰ğŒ‹ì‹Æ‚ğ’Ç‰Á‚·‚é
-			//2.00.05Äd—l•ÏX@‰^—p”Ô†•ÏXì‹Æ‚ğ’Ç‰Á‚·‚é
+			//ç©ºç™½ç®‡æ‰€ã‚’é¸æŠã—ã¦ã„ã‚‹å ´åˆã¯ã€ãã“ã«å…¥æ›ä½œæ¥­ã‚’è¿½åŠ ã™ã‚‹
+			//å³å¯†ã«ã¯ã€ã“ã®é§…ã®é§…æ‰±ã„ã‚„åˆ†å²é–¢ä¿‚ã‚’è¦‹ã¦ã€ä½œæ¥­ä»˜åŠ ã®å¯å¦ã‚’åˆ¤å®šã™ã‚‹å¿…è¦ãŒã‚ã‚‹ãŒã€
+			//ã¨ã‚Šã‚ãˆãšä»˜åŠ ã ã‘ã—ã¦ã€ãƒã‚§ãƒƒã‚¯ä½œæ¥­ã¯adjustOperationã«ä¸¸æŠ•ã’ã™ã‚‹ã€‚
+			//ä»•æ§˜å¤‰æ›´
+			//è§£çµä½œæ¥­ã‚’è¿½åŠ ã™ã‚‹
+			//2.00.05å†ä»•æ§˜å¤‰æ›´ã€€é‹ç”¨ç•ªå·å¤‰æ›´ä½œæ¥­ã‚’è¿½åŠ ã™ã‚‹
 
 			CdDedJikoku aReleaseJikoku;
 			if (!pCentDedRessya->getCentDedEkiJikoku(iEkiOrder).getHatsujikoku(false).isNull())
@@ -14427,7 +14427,7 @@ void CWjkState_Ressyahensyu::ChangeOperationAfterTypePrev(
 		}
 		else if (iType == 0)
 		{
-			//“üŠ·¨íœA‘Œ‹¨“üŠ·A‰ğŒ‹¨‘Œ‹A‰^—p”Ô†•ÏX¨‰ğŒ‹
+			//å…¥æ›â†’å‰Šé™¤ã€å¢—çµâ†’å…¥æ›ã€è§£çµâ†’å¢—çµã€é‹ç”¨ç•ªå·å¤‰æ›´â†’è§£çµ
 			CentDedAfterOperation* pAfterOperation = pAfterCont->getMuPtr()->get(iOperationIndex);
 			if (pAfterOperation->getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Shunt)
 			{
@@ -14615,7 +14615,7 @@ void CWjkState_Ressyahensyu::AdjustBrunchLoop(
 	int iEkiCount = pCentDedRessya->getCentDedEkiJikokuCount();
 	vector<bool> bEkiChecked(iEkiCount, false);
 
-	//‚Ü‚¸‚ÍA•ÒW‘ÎÛ‰w‚ğ²‚Æ‚µ‚ÄA’²®‚ğs‚¤B
+	//ã¾ãšã¯ã€ç·¨é›†å¯¾è±¡é§…ã‚’è»¸ã¨ã—ã¦ã€èª¿æ•´ã‚’è¡Œã†ã€‚
 	deque<int> iEkiOrderBrunchOriginSideThis;
 	deque<int> iEkiOrderLoopThis;
 	deque<int> iEkiOrderBrunchTerminalSideThis;
@@ -14662,7 +14662,7 @@ void CWjkState_Ressyahensyu::AdjustBrunchLoop(
 		}
 		bEkiChecked[iEkiOrder] = true;
 	}
-	//Ÿ‚ÉA‚»‚êˆÈŠO‚Ì‰w(—ñÔ‚Ì‰^s”ÍˆÍ)‚É‚Â‚¢‚ÄA’²®‚ğs‚¤B
+	//æ¬¡ã«ã€ãã‚Œä»¥å¤–ã®é§…(åˆ—è»Šã®é‹è¡Œç¯„å›²)ã«ã¤ã„ã¦ã€èª¿æ•´ã‚’è¡Œã†ã€‚
 	for (int ord = pCentDedRessya->getValidSihatsuEki();
 		ord <= pCentDedRessya->getValidSyuuchakuEki(); ord++)
 	{
@@ -14709,7 +14709,7 @@ void CWjkState_Ressyahensyu::AdjustBrunchLoop(
 		}
 	}
 }
-//‚±‚±‚Ü‚Åchange_by_d_mania
+//ã“ã“ã¾ã§change_by_d_mania
 
 		// ********************************
 		//@name	CWndDcdGrid

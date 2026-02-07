@@ -1,12 +1,12 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍAtake-okm‚ªì¬‚µ‚½OuDia‚ğ‰ü‘¢‚µ‚½ƒ\ƒtƒgƒEƒFƒA‚Å‚·B
-‚±‚ÌƒvƒƒOƒ‰ƒ€—˜—p‚É‚Â‚¢‚Ä‚ÍAtake-okm‹LÚ‚Ì‰º‹L•¶‘‚É€‹’‚µ‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã€take-okmæ°ãŒä½œæˆã—ãŸOuDiaã‚’æ”¹é€ ã—ãŸã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ åˆ©ç”¨ã«ã¤ã„ã¦ã¯ã€take-okmæ°è¨˜è¼‰ã®ä¸‹è¨˜æ–‡æ›¸ã«æº–æ‹ ã—ã¾ã™ã€‚
 */
 #include "stdafx.h"
 
-#include "..\DiagramEdit.h"
+#include "..Â¥DiagramEdit.h"
 #include "CEkiJikokuhyouDoc.h"
 //#include "str/stringSplit.h"
 
@@ -25,15 +25,15 @@ namespace ViewEkiJikokuhyou {
 
 	void CEkiJikokuhyouDoc::SetTitle(LPCTSTR lpszTitle)
 	{
-		vector<tstring>	arstrTitle = splitc< vector< tstring > >('\n', lpszTitle);
+		vector<tstring>	arstrTitle = splitc< vector< tstring > >('Â¥n', lpszTitle);
 		m_strDiaName = arstrTitle[0];
 		m_eRessyahoukou = (ERessyahoukou)_ttoi(arstrTitle[1].c_str());
 		//m_iEkiIndex = _ttoi(arstrTitle[2].c_str());
 		m_iEkiID = _ttoi(arstrTitle[2].c_str());
 
-		//•½“úƒ_ƒCƒ„ ››‰w ‰º‚è•\
+		//å¹³æ—¥ãƒ€ã‚¤ãƒ¤ â—‹â—‹é§… ä¸‹ã‚Šæ™‚åˆ»è¡¨
 		// --------------------------------
-		//	ƒ^ƒCƒgƒ‹•¶š—ñ‚Ìì¬
+		//	ã‚¿ã‚¤ãƒˆãƒ«æ–‡å­—åˆ—ã®ä½œæˆ
 		// --------------------------------
 		tstring	strTitle = m_strDiaName;
 		strTitle += _T(" ");
@@ -98,19 +98,19 @@ namespace ViewEkiJikokuhyou {
 		return TRUE;
 	}
 
-	CEkiJikokuhyouDoc::~CEkiJikokuhyouDoc()
+	CEkiJikokuhyouDoc::â€¾CEkiJikokuhyouDoc()
 	{
 	}
 
 
 	BEGIN_MESSAGE_MAP(CEkiJikokuhyouDoc, CHidemdiSubDoc)
 		//{{AFX_MSG_MAP(CEkiJikokuhyouDoc)
-		// ƒƒ‚ - ClassWizard ‚Í‚±‚ÌˆÊ’u‚Éƒ}ƒbƒsƒ“ƒO—p‚Ìƒ}ƒNƒ‚ğ’Ç‰Á‚Ü‚½‚Ííœ‚µ‚Ü‚·B
+		// ãƒ¡ãƒ¢ - ClassWizard ã¯ã“ã®ä½ç½®ã«ãƒãƒƒãƒ”ãƒ³ã‚°ç”¨ã®ãƒã‚¯ãƒ­ã‚’è¿½åŠ ã¾ãŸã¯å‰Šé™¤ã—ã¾ã™ã€‚
 		//}}AFX_MSG_MAP
 	END_MESSAGE_MAP()
 
 	/////////////////////////////////////////////////////////////////////////////
-	// CEkiJikokuhyouDoc f’f
+	// CEkiJikokuhyouDoc è¨ºæ–­
 
 #ifdef _DEBUG
 	void CEkiJikokuhyouDoc::AssertValid() const
@@ -125,21 +125,21 @@ namespace ViewEkiJikokuhyou {
 #endif //_DEBUG
 
 	/////////////////////////////////////////////////////////////////////////////
-	// CEkiJikokuhyouDoc ƒVƒŠƒAƒ‰ƒCƒY
+	// CEkiJikokuhyouDoc ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚º
 
 	void CEkiJikokuhyouDoc::Serialize(CArchive& ar)
 	{
 		if (ar.IsStoring())
 		{
-			// TODO: ‚±‚ÌˆÊ’u‚É•Û‘¶—p‚ÌƒR[ƒh‚ğ’Ç‰Á‚µ‚Ä‚­‚¾‚³‚¢
+			// TODO: ã“ã®ä½ç½®ã«ä¿å­˜ç”¨ã®ã‚³ãƒ¼ãƒ‰ã‚’è¿½åŠ ã—ã¦ãã ã•ã„
 		}
 		else
 		{
-			// TODO: ‚±‚ÌˆÊ’u‚É“Ç‚İ‚İ—p‚ÌƒR[ƒh‚ğ’Ç‰Á‚µ‚Ä‚­‚¾‚³‚¢
+			// TODO: ã“ã®ä½ç½®ã«èª­ã¿è¾¼ã¿ç”¨ã®ã‚³ãƒ¼ãƒ‰ã‚’è¿½åŠ ã—ã¦ãã ã•ã„
 		}
 	}
 
 	/////////////////////////////////////////////////////////////////////////////
-	// CEkiJikokuhyouDoc ƒRƒ}ƒ“ƒh
+	// CEkiJikokuhyouDoc ã‚³ãƒãƒ³ãƒ‰
 
 } //namespace ViewEkiJikokuhyou

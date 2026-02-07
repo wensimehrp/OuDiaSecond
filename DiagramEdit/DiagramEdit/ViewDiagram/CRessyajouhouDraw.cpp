@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 // ****************************************************************
 //	CRessyajouhouDraw.cpp
@@ -76,8 +76,8 @@ Copyright (C) 2006-2017 take-okm
 #include "stdafx.h"
 #include <math.h>
 
-#include "DcDraw\CDcdText.h"
-#include "DcDraw\CConverter_Wingdi.h"
+#include "DcDraw¥CDcdText.h"
+#include "DcDraw¥CConverter_Wingdi.h"
 
 #include "CRessyajouhouDraw.h"
 
@@ -86,17 +86,17 @@ namespace ViewDiagram{
 using namespace std ;
 
 // ****************************************************************
-///	�~����
+///	円周率
 const double Pi = 3.14159265 ;
 
 /**
- 	�p�x�̒P�ʂ��A�x���烉�W�A���֕ϊ����܂��B
+ 	角度の単位を、度からラジアンへ変換します。
  
- 	180 �x = 1�� ���W�A��
+ 	180 度 = 1π ラジアン
   @param value [in]
- 	�ϊ��Ώۂ̒l�B
+ 	変換対象の値。
   @return
- 	�ϊ���̒l�B
+ 	変換後の値。
 */
 static double DegToRad( double value )
 {
@@ -104,20 +104,20 @@ static double DegToRad( double value )
 }
 
 /**
- 	�p�x�̒P�ʂ��A���W�A������x�֕ϊ����܂��B
+ 	角度の単位を、ラジアンから度へ変換します。
  
- 	180 �x = 1�� ���W�A��
+ 	180 度 = 1π ラジアン
   @param value [in]
- 	�ϊ��Ώۂ̒l�B
+ 	変換対象の値。
   @return
- 	�ϊ���̒l�B
+ 	変換後の値。
 */
 static double RadToDeg( double value )
 {
 	return value * 180 / Pi ;
 }
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 CRessyajouhouDraw::CRessyajouhouDraw( CDcdDiagram* pCDcdDiagram , 
 			IfDcdTarget* pIfDcdTarget , 
@@ -148,16 +148,16 @@ void CRessyajouhouDraw::onCentDedDgrEkiJikoku(
 {
 	if ( iEkiOrder == pCentDedDgrRessyasen->getRessyasenSyuutenEkiOrder() )
 	{
-		//	��Ԑ��I�_�ɂ́A�e�L�X�g�̕`����s���܂���
+		//	列車線終点には、テキストの描画を行いません
 		return ;
 	}
 	if ( !pCentDedDgrEkiJikoku->getShouldRessyajouhouDraw() )
 	{
-		//	���̉w�����̈ʒu�ɂ́A�e�L�X�g�̕`����s���܂���B
+		//	この駅時刻の位置には、テキストの描画を行いません。
 		return ;
 	}
 	// --------------------------------
-	//	�e�L�X�g�̐F��I��
+	//	テキストの色を選択
 	// --------------------------------
 	CdColorProp	colorText ;
 	{
@@ -170,11 +170,11 @@ void CRessyajouhouDraw::onCentDedDgrEkiJikoku(
 			colorText = pCentDedDgrRessyasyubetsu->getJikokuhyouMojiColor() ;
 		}
 	}
-	//colorText = �e�L�X�g�̐F
+	//colorText = テキストの色
 
 	// --------------------------------
-	//	��ԏ��e�L�X�g�̓��e���쐬��
-	//	�傫�����v��
+	//	列車情報テキストの内容を作成し
+	//	大きさを計測
 	// --------------------------------
 	tstring	strRessyajouhou ;
 	if ( m_pCDcdDiagram->getDisplayRessyabangou() )
@@ -214,18 +214,18 @@ void CRessyajouhouDraw::onCentDedDgrEkiJikoku(
 	{
 		return ;
 	}
-	//strRessyajouhou = �\�������ԏ��̕�����
+	//strRessyajouhou = 表示する列車情報の文字列
 	CdDcdSizeXy	sizexyText_Dcd ;
 	{
 		CDcdText	dcdText( strRessyajouhou , 
 			m_pCDcdDiagram->getDiaRessyaFont() ) ;
 		dcdText.getItemSize( m_pIfDcdTarget , &sizexyText_Dcd ) ;
 	}
-	//sizexyText_Dcd = ��ԏ��e�L�X�g�̕��ƍ���
-	//	�i�����ɕ`�悵���ꍇ�̐��@�ł��j
+	//sizexyText_Dcd = 列車情報テキストの幅と高さ
+	//	（水平に描画した場合の寸法です）
 
 	// --------------------------------
-	//	��ԏ��̕`�悳��钼�����Z�o
+	//	列車情報の描画される直線を算出
 	// --------------------------------
 	CdDcdPosXy	posRessyasen_Pos1_Dcd ;
 	CdDcdPosXy	posRessyasen_Pos2_Dcd ;
@@ -239,8 +239,8 @@ void CRessyajouhouDraw::onCentDedDgrEkiJikoku(
 				pCentDedDgrRessya , 
 				pCentDedDgrRessyasen ) ;
 		//posDgrPosRessyasenKiten,posDgrPosRessyasenSyuuten = 
-		//	�w�_�C���O�����G���e�B�e�B��Ԑ��x�̋N�_�ƏI�_�̍��W
-		//	�P�ʂ́A�w�_�C���O�����G���e�B�e�B���W�n�x
+		//	『ダイヤグラムエンティティ列車線』の起点と終点の座標
+		//	単位は、『ダイヤグラムエンティティ座標系』
 
 		posRessyasen_Pos1_Dcd = m_pCDcdDiagram->DgrToDcd( 
 			m_pIfDcdTarget , 
@@ -250,11 +250,11 @@ void CRessyajouhouDraw::onCentDedDgrEkiJikoku(
 			posDgrPosRessyasenSyuuten ) ;
 	}
 	//posRessyasen_Pos1_Dcd,posRessyasen_Pos2_Dcd = 
-	//	�w�_�C���O�����G���e�B�e�B��Ԑ��x�̋N�_�ƏI�_�̍��W
-	//	�P�ʂ́A IfDcdTarget �̍��W
+	//	『ダイヤグラムエンティティ列車線』の起点と終点の座標
+	//	単位は、 IfDcdTarget の座標
 
 	// --------------------------------
-	//	��ԏ��̕`�悳���w�̗�Ԑ���ł̈ʒu���Z�o
+	//	列車情報の描画される駅の列車線上での位置を算出
 	// --------------------------------
 	int iX_Dcd = 0 ;
 	int iY_Dcd = 0 ;
@@ -268,17 +268,17 @@ void CRessyajouhouDraw::onCentDedDgrEkiJikoku(
 		if ( iResult < 0 ){
 			return ;
 		}
-		//iX_Dgr,iY_Dgr = ��ԏ���\������w�̔������̍��W
-		//	�P�ʂ́A�w�_�C���O�����G���e�B�e�B���W�n�x
+		//iX_Dgr,iY_Dgr = 列車情報を表示する駅の発時刻の座標
+		//	単位は、『ダイヤグラムエンティティ座標系』
 
 		iX_Dcd = m_pCDcdDiagram->XDgrToDcd( m_pIfDcdTarget , iX_Dgr  ) ;
 		iY_Dcd = m_pCDcdDiagram->YDgrToDcd( m_pIfDcdTarget , iY_Dgr  ) ;
 	}
-	//iX_Dcd,iY_Dcd = ��ԏ���\������w�̔������̍��W
-	//	�P�ʂ́A IfDcdTarget �̍��W�n
+	//iX_Dcd,iY_Dcd = 列車情報を表示する駅の発時刻の座標
+	//	単位は、 IfDcdTarget の座標系
 
 	// --------------------------------
-	//	�e�L�X�g�̈ʒu�Ɗp�x���v�Z
+	//	テキストの位置と角度を計算
 	// --------------------------------
 	CdDcdPosXy	posText_Dcd ;
 	int iDeg = 0 ;
@@ -311,24 +311,24 @@ void CRessyajouhouDraw::onCentDedDgrEkiJikoku(
 			iDeg = 90 -c ;
 		}
 	}
-	//posText_Dcd = �e�L�X�g�̍�����W
-	//iDeg = �e�L�X�g�̊p�x�i�P�ʂ͓x�j
+	//posText_Dcd = テキストの左上座標
+	//iDeg = テキストの角度（単位は度）
 
 	// --------------------------------
-	//	�e�L�X�g�̕`��
+	//	テキストの描画
 	// --------------------------------
 	{
-		//	�t�H���g�̑���
-		//	�p�x�w���ǉ����܂��B
+		//	フォントの属性
+		//	角度指定を追加します。
 		CdFontProp	aCdFontProp = m_pCDcdDiagram->getDiaRessyaFont() ;
 		aCdFontProp.setEscapement( iDeg * 10 ) ;
 
-		//	�t�H���g�̐���
+		//	フォントの生成
 		Ou<CGdiHFontHolder>	pHFontHolder = m_pIfDcdTarget->createGdiHFontHolder(
 			aCdFontProp ) ;
 		
 		// --------------------------------
-		//	�t�H���g�E�F�E�w�i���[�h�̑I��
+		//	フォント・色・背景モードの選択
 		HFONT	hFontPrev = NULL ;
 		hFontPrev = (HFONT)SelectObject( m_pIfDcdTarget->getHdc() , 
 			pHFontHolder->getHFont() ) ;
@@ -345,7 +345,7 @@ void CRessyajouhouDraw::onCentDedDgrEkiJikoku(
 			strRessyajouhou.c_str() , strRessyajouhou.size() ) ;
 
 		// --------------------------------
-		//	�t�H���g�E�F�E�w�i���[�h�̑I��������
+		//	フォント・色・背景モードの選択を解除
 		{
 			SetBkMode( m_pIfDcdTarget->getHdc() , iBkModePrev ) ;
 			SetTextColor( m_pIfDcdTarget->getHdc() , colorTextPrev ) ;
@@ -355,7 +355,7 @@ void CRessyajouhouDraw::onCentDedDgrEkiJikoku(
 			hFontPrev = NULL ;
 		}
 		// --------------------------------
-		//	�t�H���g��j��
+		//	フォントを破棄
 		if ( pHFontHolder != NULL )
 		{
 			pHFontHolder = Ou<CGdiHFontHolder>() ;

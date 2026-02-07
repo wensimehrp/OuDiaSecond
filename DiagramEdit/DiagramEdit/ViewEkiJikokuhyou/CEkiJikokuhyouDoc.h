@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍAtake-okmŽ‚ªì¬‚µ‚½OuDia‚ð‰ü‘¢‚µ‚½ƒ\ƒtƒgƒEƒFƒA‚Å‚·B
-‚±‚ÌƒvƒƒOƒ‰ƒ€—˜—p‚É‚Â‚¢‚Ä‚ÍAtake-okmŽ‹LÚ‚Ì‰º‹L•¶‘‚É€‹’‚µ‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã€take-okmæ°ãŒä½œæˆã—ãŸOuDiaã‚’æ”¹é€ ã—ãŸã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ åˆ©ç”¨ã«ã¤ã„ã¦ã¯ã€take-okmæ°è¨˜è¼‰ã®ä¸‹è¨˜æ–‡æ›¸ã«æº–æ‹ ã—ã¾ã™ã€‚
 */
 
 #if !defined(AFX_CEKIJIKOKUHYOUDOC_H__C1C2F04A_1254_4350_883A_7A236C003257__INCLUDED_)
@@ -16,13 +16,13 @@ OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 namespace ViewEkiJikokuhyou {
 
 	/////////////////////////////////////////////////////////////////////////////
-	// CEkiJikokuhyouDoc ƒhƒLƒ…ƒƒ“ƒg
+	// CEkiJikokuhyouDoc ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆ
 
 	/**
 	* @brief
-	*	‰wŽž•\ƒrƒ…[‚ÌƒhƒLƒ…ƒƒ“ƒgƒNƒ‰ƒX‚Å‚·B
+	*	é§…æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã®ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã‚¯ãƒ©ã‚¹ã§ã™ã€‚
 	*
-	*	‚±‚ÌƒNƒ‰ƒX‚É‚ÍA“Á‚Éˆ—‚Í‚ ‚è‚Ü‚¹‚ñB
+	*	ã“ã®ã‚¯ãƒ©ã‚¹ã«ã¯ã€ç‰¹ã«å‡¦ç†ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
 	*/
 class CEkiJikokuhyouDoc : public CHidemdiSubDoc
 {
@@ -58,40 +58,40 @@ public:
 	};
 
 protected:
-	//ƒ_ƒCƒ„–¼\n—ñŽÔ•ûŒü\n‰wIndex
+	//ãƒ€ã‚¤ãƒ¤åÂ¥nåˆ—è»Šæ–¹å‘Â¥né§…Index
 	virtual void SetTitle(LPCTSTR lpszTitle);
 
 	protected:
-		CEkiJikokuhyouDoc();           // “®“I¶¬‚ÉŽg—p‚³‚ê‚éƒvƒƒeƒNƒg ƒRƒ“ƒXƒgƒ‰ƒNƒ^B
+		CEkiJikokuhyouDoc();           // å‹•çš„ç”Ÿæˆã«ä½¿ç”¨ã•ã‚Œã‚‹ãƒ—ãƒ­ãƒ†ã‚¯ãƒˆ ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã€‚
 		DECLARE_DYNCREATE(CEkiJikokuhyouDoc)
 
-		// ƒAƒgƒŠƒrƒ…[ƒg
+		// ã‚¢ãƒˆãƒªãƒ“ãƒ¥ãƒ¼ãƒˆ
 	public:
 
-		// ƒIƒyƒŒ[ƒVƒ‡ƒ“
+		// ã‚ªãƒšãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³
 	public:
 
-		// ƒI[ƒo[ƒ‰ƒCƒh
-		// ClassWizard ‚Í‰¼‘zŠÖ”‚ÌƒI[ƒo[ƒ‰ƒCƒh‚ð¶¬‚µ‚Ü‚·B
+		// ã‚ªãƒ¼ãƒãƒ¼ãƒ©ã‚¤ãƒ‰
+		// ClassWizard ã¯ä»®æƒ³é–¢æ•°ã®ã‚ªãƒ¼ãƒãƒ¼ãƒ©ã‚¤ãƒ‰ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 		//{{AFX_VIRTUAL(CEkiJikokuhyouDoc)
 	public:
-		virtual void Serialize(CArchive& ar);   // ƒhƒLƒ…ƒƒ“ƒg I/O ‚É‘Î‚µ‚ÄƒI[ƒo[ƒ‰ƒCƒh‚³‚ê‚Ü‚·B
+		virtual void Serialize(CArchive& ar);   // ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆ I/O ã«å¯¾ã—ã¦ã‚ªãƒ¼ãƒãƒ¼ãƒ©ã‚¤ãƒ‰ã•ã‚Œã¾ã™ã€‚
 	protected:
 		virtual BOOL OnNewDocument();
 		//}}AFX_VIRTUAL
 
-		// ƒCƒ“ƒvƒŠƒƒ“ƒe[ƒVƒ‡ƒ“
+		// ã‚¤ãƒ³ãƒ—ãƒªãƒ¡ãƒ³ãƒ†ãƒ¼ã‚·ãƒ§ãƒ³
 	public:
-		virtual ~CEkiJikokuhyouDoc();
+		virtual â€¾CEkiJikokuhyouDoc();
 #ifdef _DEBUG
 		virtual void AssertValid() const;
 		virtual void Dump(CDumpContext& dc) const;
 #endif
 
-		// ƒƒbƒZ[ƒW ƒ}ƒbƒvŠÖ”‚Ì¶¬
+		// ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ ãƒžãƒƒãƒ—é–¢æ•°ã®ç”Ÿæˆ
 	protected:
 		//{{AFX_MSG(CEkiJikokuhyouDoc)
-		// ƒƒ‚ - ClassWizard ‚Í‚±‚ÌˆÊ’u‚Éƒƒ“ƒoŠÖ”‚ð’Ç‰Á‚Ü‚½‚Ííœ‚µ‚Ü‚·B
+		// ãƒ¡ãƒ¢ - ClassWizard ã¯ã“ã®ä½ç½®ã«ãƒ¡ãƒ³ãƒé–¢æ•°ã‚’è¿½åŠ ã¾ãŸã¯å‰Šé™¤ã—ã¾ã™ã€‚
 		//}}AFX_MSG
 		DECLARE_MESSAGE_MAP()
 	};

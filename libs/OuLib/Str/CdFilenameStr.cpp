@@ -29,46 +29,46 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
 //	CdFilenameStr.cpp
 // ****************************************************************
 */
-#include "Str\CdFilenameStr.h"
-#include "Str\CStrCharSizeMb.h"
+#include "Str¥CdFilenameStr.h"
+#include "Str¥CStrCharSizeMb.h"
 #include <tchar.h>
 
 
@@ -80,7 +80,7 @@ namespace Str {
 // ****************************************************************
 
 // ********************************
-//	�R���X�g���N�^�E�f�X�g���N�^
+//	コンストラクタ・デストラクタ
 // ********************************
 CdFilenameStr::CdFilenameStr() 
 	: m_bIsRelativePath( false ) 
@@ -88,13 +88,13 @@ CdFilenameStr::CdFilenameStr()
 {
 }
 	//[in]strFilename
-	//	�t���p�X���i�h���C�u�E�f�B���N�g���E�t�@�C��������������������j
-	//	���w�肵�Ă��������B
+	//	フルパス名（ドライブ・ディレクトリ・ファイル名が混合した文字列）
+	//	を指定してください。
 	//[in]bIsValidFilename
-	//	���̃p�X���A�t�@�C�����̂���`���ł���Ȃ�^�ł��B
-	//	���̏ꍇ�́A��ԉE�� '\' �̉E���̓t�@�C�����Ƃ݂Ȃ���܂��B
-	//	���̃p�X���A�t�@�C�����̂Ȃ��`���ł���΋U�ł��B
-	//	���̏ꍇ�́A��ԉE�� '\' �̉E�����f�B���N�g���Ƃ݂Ȃ��܂��B
+	//	このパスが、ファイル名のある形式であるなら真です。
+	//	この場合は、一番右の '¥' の右側はファイル名とみなされます。
+	//	このパスが、ファイル名のない形式であれば偽です。
+	//	この場合は、一番右の '¥' の右側もディレクトリとみなします。
 CdFilenameStr::
 CdFilenameStr( tstring strFilename , bool bIsValidFilename ) 
 {
@@ -106,7 +106,7 @@ CdFilenameStr( tstring strFilename , bool bIsValidFilename )
 //	CdFilenameStr
 // ********************************
 	// --------------------------------
-	//	����
+	//	属性
 	// --------------------------------
 
 tstring	CdFilenameStr::Drive() const 
@@ -228,27 +228,27 @@ CdFilenameStr& CdFilenameStr::setFilename( tstring ev )
 	//for ( iBidx = ite.BidxLast() ; iBidx >  0 ; iBidx = ite.BidxNextChar( iBidx , -1 ) ) {
 	//	if ( ite.CsizeOfBidx( iBidx ) == 1 ){
 	//		if ( ev[iBidx] == '.' ) {
-	//			break ;	//	iExtPeriod = �g���q�̑O��'.'�̃C���f�N�X�ł��B
+	//			break ;	//	iExtPeriod = 拡張子の前の'.'のインデクスです。
 	//		}
-	//		if ( ev[iBidx]  == '\\' || ev[iBidx]  == ':' ){
+	//		if ( ev[iBidx]  == '¥¥' || ev[iBidx]  == ':' ){
 	//			iBidx = -1 ;
 	//			break ;
-	//				//iBidx = -1�͊g���q���݂���Ȃ��������Ƃ������܂��B
+	//				//iBidx = -1は拡張子がみつからなかったことを示します。
 	//		}
 	//	}
 	//}
 	for (iBidx = ev.size()-1; iBidx > 0; iBidx--) {
 		if (ev[iBidx] == '.') {
-			break;	//	iExtPeriod = �g���q�̑O��'.'�̃C���f�N�X�ł��B
+			break;	//	iExtPeriod = 拡張子の前の'.'のインデクスです。
 		}
-		if (ev[iBidx] == '\\' || ev[iBidx] == ':') {
+		if (ev[iBidx] == '¥¥' || ev[iBidx] == ':') {
 			iBidx = -1;
 			break;
-			//iBidx = -1�͊g���q���݂���Ȃ��������Ƃ������܂��B
+			//iBidx = -1は拡張子がみつからなかったことを示します。
 		}
 	}
-	//iBidx = �g���q�̑O��'.'�̃C���f�N�X�ł��B
-	//	�݂���Ȃ����-1�ł�
+	//iBidx = 拡張子の前の'.'のインデクスです。
+	//	みつからなければ-1です
 	if ( iBidx > 0 ){
 		m_strBaseFilename = ev.substr( 0 , iBidx ) ; 
 		m_strExtension    = ev.substr( iBidx + 1 ) ; 
@@ -265,14 +265,14 @@ tstring CdFilenameStr::FullpathFilename() const
 {
 	tstring	strRv ;
 
-	//�h���C�u
+	//ドライブ
 	if ( !m_strDrive.empty() ){
 		strRv += m_strDrive ;
 		strRv += ':' ;
 	}
 
 	if ( !m_bIsRelativePath ){
-		strRv += '\\' ;
+		strRv += '¥¥' ;
 	}
 	
 	int idxDir ;
@@ -280,7 +280,7 @@ tstring CdFilenameStr::FullpathFilename() const
 		tstring strDir = m_contstrDir[ idxDir ] ;
 		strRv += strDir ;
 		if ( idxDir < (int)m_contstrDir.size() - 1 || m_bIsValidFilename ){
-			strRv += '\\' ;
+			strRv += '¥¥' ;
 		}
 	}
 	if ( m_bIsValidFilename ){
@@ -292,7 +292,7 @@ tstring CdFilenameStr::FullpathFilename() const
 CdFilenameStr& CdFilenameStr::setFullpathFilename( tstring ev ) 
 {
 	// --------------------------------
-	//	���ׂč폜
+	//	すべて削除
 	// --------------------------------
 	m_strDrive.erase() ;
 	m_contstrDir.clear() ;
@@ -300,7 +300,7 @@ CdFilenameStr& CdFilenameStr::setFullpathFilename( tstring ev )
 	m_strBaseFilename.erase() ;
 	m_strExtension.erase() ;
 	// --------------------------------
-	//	�h���C�u��
+	//	ドライブ名
 	// --------------------------------
 	{
 		//CStrCharSizeMb	ite( ev )  ;
@@ -309,24 +309,24 @@ CdFilenameStr& CdFilenameStr::setFullpathFilename( tstring ev )
 		//	if ( ite.CsizeOfBidx( iBidx ) == 1 ){
 		//		if ( ev[ iBidx ] == ':' ) {
 		//			break ;	
-		//			//iBidx = �h���C�u���̂��Ƃ�':'�̃C���f�N�X�ł��B
+		//			//iBidx = ドライブ名のあとの':'のインデクスです。
 		//		}
-		//		if (ev[ iBidx ] == '\\' || ev[ iBidx ] == '.' ){
+		//		if (ev[ iBidx ] == '¥¥' || ev[ iBidx ] == '.' ){
 		//			iBidx = ite.ByteLength() ;	
-		//			//iBidx = ite.ByteLength()  �́A
-		//			//		�h���C�u�����Ȃ����Ƃ������܂��B
+		//			//iBidx = ite.ByteLength()  は、
+		//			//		ドライブ名がないことを示します。
 		//		}
 		//	}
 		//}	
 		for (iBidx =  0; iBidx<(int)ev.size(); iBidx++) {
 			if (ev[iBidx] == '.') {
 				break;
-				//iBidx = �h���C�u���̂��Ƃ�':'�̃C���f�N�X�ł��B
+				//iBidx = ドライブ名のあとの':'のインデクスです。
 			}
-			if (ev[iBidx] == '\\' || ev[iBidx] == ':') {
+			if (ev[iBidx] == '¥¥' || ev[iBidx] == ':') {
 				iBidx = ev.size();
-				//iBidx = ev.size()  �́A
-				//		�h���C�u�����Ȃ����Ƃ������܂��B
+				//iBidx = ev.size()  は、
+				//		ドライブ名がないことを示します。
 			}
 		}
 		//if ( iBidx < ite.ByteLength()  ){
@@ -338,88 +338,88 @@ CdFilenameStr& CdFilenameStr::setFullpathFilename( tstring ev )
 			ev = ev.substr(iBidx + 1);
 		}
 	}	
-	//ev = �h���C�u�Ǝ���':'���폜�������̂�
-	//	�Ȃ�܂����B
+	//ev = ドライブと次の':'を削除したものに
+	//	なりました。
 
 	// --------------------------------
-	//	�t�@�C����	
+	//	ファイル名	
 	// --------------------------------
 	if ( m_bIsValidFilename ){
 		//CStrCharSizeMb	ite( ev )  ;
 		int	iBidx ;
 		//for ( iBidx = ite.BidxLast() ; iBidx >= 0 ; iBidx = ite.BidxNextChar( iBidx , -1 ) ){
 		//	if ( ite.CsizeOfBidx( iBidx ) == 1 ){
-		//		if ( ev[ iBidx ] == '\\' ){
-		//			break ;	//	iBidx = �t�@�C�����̒��O��'\'��':'�̃C���f�N�X�ł��B
+		//		if ( ev[ iBidx ] == '¥¥' ){
+		//			break ;	//	iBidx = ファイル名の直前の'¥'か':'のインデクスです。
 		//		}
 		//	}
 		//}
 		for (iBidx = ev.size(); iBidx >= 0; iBidx--) {
-			if (ev[iBidx] == '\\') {
-				break;	//	iBidx = �t�@�C�����̒��O��'\'��':'�̃C���f�N�X�ł��B
+			if (ev[iBidx] == '¥¥') {
+				break;	//	iBidx = ファイル名の直前の'¥'か':'のインデクスです。
 			}
 		}
 		setFilename( ev.substr( iBidx + 1 ) ) ;
 		ev = ev.substr( 0 , iBidx + 1 ) ; 
 	}
-	//ev = �t�@�C�������폜�������̂�
-	//	�Ȃ�܂����B
+	//ev = ファイル名を削除したものに
+	//	なりました。
 
 	// --------------------------------
-	//	�擪�Ɩ����� '\' ������
+	//	先頭と末尾の '¥' を扱う
 	// --------------------------------
 	if ( ev.length() > 0 ){
 		//CStrCharSizeMb	ite( ev )  ;
-		//if ( ite.CsizeOfBidx( 0 ) == 1 && ev[0] == '\\' ){
+		//if ( ite.CsizeOfBidx( 0 ) == 1 && ev[0] == '¥¥' ){
 		//	m_bIsRelativePath = false ;	
-		//	//	�f�B���N�g���̐擪��'\' �Ȃ�A��΃p�X�ł��B
+		//	//	ディレクトリの先頭が'¥' なら、絶対パスです。
 		//	ev = ev.substr( 1 ) ;
 		//}
-		if (ev[0] == '\\') {
+		if (ev[0] == '¥¥') {
 			m_bIsRelativePath = false;
-			//	�f�B���N�g���̐擪��'\' �Ȃ�A��΃p�X�ł��B
+			//	ディレクトリの先頭が'¥' なら、絶対パスです。
 			ev = ev.substr(1);
 		}
 	}
-	//ev=�擪�� '\' ���폜���܂����B
+	//ev=先頭の '¥' を削除しました。
 
 	if ( ev.length() > 0 ){
 		//CStrCharSizeMb	ite( ev )  ;
-		//if ( ite.CsizeOfBidx( ite.BidxLast() ) == 1 && ev[ite.BidxLast()] == '\\' ){
+		//if ( ite.CsizeOfBidx( ite.BidxLast() ) == 1 && ev[ite.BidxLast()] == '¥¥' ){
 		//	ev = ev.substr( 0 , ite.BidxLast() ) ;
 		//}
-		if (ev[ev.size()-1] == '\\') {
+		if (ev[ev.size()-1] == '¥¥') {
 			ev = ev.substr(0, ev.size() - 1);
 		}
 	}
-	//ev=������ '\' ���폜���܂����B
+	//ev=末尾の '¥' を削除しました。
 
 	// --------------------------------
-	//	�f�B���N�g�����A '\' �����E��
-	//	�؂藣���܂��B
+	//	ディレクトリを、 '¥' を境界で
+	//	切り離します。
 	// --------------------------------
 	while( ev.length() > 0 ){
 		//CStrCharSizeMb	ite( ev )  ;
 		int	iBidx ;
 		//for ( iBidx = 0 ; iBidx < ite.ByteLength() ; iBidx = ite.BidxNextChar( iBidx ) ){
 		//	if ( ite.CsizeOfBidx( iBidx ) == 1 ){
-		//		if ( ev[ iBidx ] == '\\' ) {
+		//		if ( ev[ iBidx ] == '¥¥' ) {
 		//			break ;	
-		//			//iBidx = �h���C�u���̂��Ƃ�'\'�̃C���f�N�X�ł��B
+		//			//iBidx = ドライブ名のあとの'¥'のインデクスです。
 		//		}
 		//	}
 		//}
 		for (iBidx = 0; iBidx < (int)ev.size(); iBidx++) {
-			if (ev[iBidx] == '\\') {
+			if (ev[iBidx] == '¥¥') {
 				break;
-				//iBidx = �h���C�u���̂��Ƃ�'\'�̃C���f�N�X�ł��B
+				//iBidx = ドライブ名のあとの'¥'のインデクスです。
 			}
 		}
 		m_contstrDir.push_back( ev.substr( 0 , iBidx ) ) ; 
 		ev = ev.substr( iBidx ) ; 
 		//ite.scan( ev ) ;
 		if (ev.size() > 0 ){
-			if ( ev[0] == '\\' ) {
+			if ( ev[0] == '¥¥' ) {
 				ev = ev.substr( 1 ) ;
 			}
 		}
@@ -437,10 +437,10 @@ CdFilenameStr& CdFilenameStr::setFullpathFilename( tstring ev ,
 CdFilenameStr& CdFilenameStr::ChangeDir( const CdFilenameStr& ev ) 
 {
 	// --------------------------------
-	//	�f�B���N�g��
+	//	ディレクトリ
 	// --------------------------------
 	if ( ev.IsRelativePath() ){
-		//	���΃p�X�̏ꍇ�́A�f�B���N�g���͑��Έړ��ƂȂ�܂��B
+		//	相対パスの場合は、ディレクトリは相対移動となります。
 		int idx ;
 		for ( idx = 0 ; idx < ev.DirCount() ; idx ++ ){
 			tstring strDir = ev.DirAt( idx ) ;
@@ -454,7 +454,7 @@ CdFilenameStr& CdFilenameStr::ChangeDir( const CdFilenameStr& ev )
 			}			
 		}
 	}	else	{
-		//	��΃p�X�̏ꍇ�́A�f�B���N�g���͂��������ɂȂ�܂��B
+		//	絶対パスの場合は、ディレクトリはおきかえになります。
 		m_contstrDir.clear() ;
 		int idx ;
 		for ( idx = 0 ; idx < ev.DirCount() ; idx ++ ){
@@ -462,13 +462,13 @@ CdFilenameStr& CdFilenameStr::ChangeDir( const CdFilenameStr& ev )
 		}
 	}
 	// --------------------------------
-	//	�h���C�u
+	//	ドライブ
 	// --------------------------------
 	if ( ev.Drive().length() > 0 ){
 		setDrive( ev.Drive() ) ;
 	}
 	// --------------------------------
-	//	�t�@�C����
+	//	ファイル名
 	// --------------------------------
 	if ( ev.Filename().length() > 0 ){
 		setFilename( ev.Filename() ) ;
@@ -482,14 +482,14 @@ int CdFilenameStr::ChangeToRelativeDir( const CdFilenameStr& ev )
 
 	CdFilenameStr	aFilenameStrBase( ev ) ;
 	// --------------------------------
-	//	�h���C�u
+	//	ドライブ
 	// --------------------------------
 	if ( merrRv >= 0 ){
 		if ( Drive().length() > 0 && ev.Drive().length() > 0 
 				&& Drive() != ev.Drive() ){
-			//	�o���ʁX�̃h���C�u���w�肳��Ă���ꍇ�́A
-			//	���΃p�X�ւ̕ϊ��͂ł��܂���B
-			merrRv = -1 ;	//	 �h���C�u���قȂ邽�߁A���΃p�X�ɂ͂ł��܂���B
+			//	双方別々のドライブが指定されている場合は、
+			//	相対パスへの変換はできません。
+			merrRv = -1 ;	//	 ドライブが異なるため、相対パスにはできません。
 		}	else	{
 			setDrive(_T("") ) ;
 			aFilenameStrBase.setDrive(_T("") ) ;
@@ -497,17 +497,17 @@ int CdFilenameStr::ChangeToRelativeDir( const CdFilenameStr& ev )
 	}
 
 	// --------------------------------
-	//	�f�B���N�g��
+	//	ディレクトリ
 	// --------------------------------
 	if ( merrRv >= 0 ){
 		if ( IsRelativePath() ){
-			merrRv = -2 ;	//	 this�����΃p�X�ł�
+			merrRv = -2 ;	//	 thisが相対パスです
 		}	else if ( aFilenameStrBase.IsRelativePath() ){
-			merrRv = -3 ;	//	 ev�����΃p�X�ł�
+			merrRv = -3 ;	//	 evが相対パスです
 		} 
 	}
 	if ( merrRv >= 0 ){
-		//this�𑊑΃p�X�ɕύX���܂��B
+		//thisを相対パスに変更します。
 		setIsRelativePath( true ) ;
 		aFilenameStrBase.setIsRelativePath( true ) ;
 		
@@ -519,7 +519,7 @@ int CdFilenameStr::ChangeToRelativeDir( const CdFilenameStr& ev )
 			delDirAt( 0 ) ;
 			aFilenameStrBase.delDirAt( 0 ) ;
 		} 
-		//	�擪���̋��ʂ̃f�B���N�g�����폜���܂��B
+		//	先頭よりの共通のディレクトリを削除します。
 
 		//	
 		int iLi ;
@@ -528,7 +528,7 @@ int CdFilenameStr::ChangeToRelativeDir( const CdFilenameStr& ev )
 		}
 	}
 	// --------------------------------
-	//	�t�@�C����
+	//	ファイル名
 	// --------------------------------
 	if ( merrRv >= 0 ){
 		if ( Filename().length() > 0 ){

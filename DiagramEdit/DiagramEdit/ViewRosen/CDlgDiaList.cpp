@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,40 +35,40 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
-// CDlgDiaList.cpp : �C���v�������e�[�V���� �t�@�C��
+// CDlgDiaList.cpp : インプリメンテーション ファイル
 //	$Id: CDlgDiaList.cpp 378 2016-11-16 21:10:54Z okm $
 
 #include "stdafx.h"
@@ -76,9 +76,9 @@ Copyright (C) 2006-2017 take-okm
 #include "NsOu/OuNew.h"
 #include "NsMu/CaMui.h"
 
-#include "..\DiagramEdit.h"
-#include "..\DedRosenFileData\EditCmd\CRfEditCmd_Dia.h"
-#include "..\DedRosenFileData\EditCmd\CRfEditCmd_DiaProp.h"
+#include "..¥DiagramEdit.h"
+#include "..¥DedRosenFileData¥EditCmd¥CRfEditCmd_Dia.h"
+#include "..¥DedRosenFileData¥EditCmd¥CRfEditCmd_DiaProp.h"
 #include "CDlgDiaList.h"
 #include "CDlgDiaProp.h"
 
@@ -93,7 +93,7 @@ using namespace std ;
 
 
 /////////////////////////////////////////////////////////////////////////////
-// CDlgDiaList �_�C�A���O
+// CDlgDiaList ダイアログ
 
 void CDlgDiaList::updateControl() 
 {
@@ -121,14 +121,14 @@ void CDlgDiaList::updateControl()
 				}
 			}
 		}
-		//bMustUpdate = ���X�g�{�b�N�X�̍X�V�̕K�v������Ȃ�^�ł�
+		//bMustUpdate = リストボックスの更新の必要があるなら真です
 		if ( bMustUpdate )
 		{	
 
 				int idxSelect = m_listboxDia.GetCurSel() ;
 
 				// --------------------------------
-				//	���X�g�{�b�N�X�̓��e��ݒ�
+				//	リストボックスの内容を設定
 				// --------------------------------
 				const Mu<const CentDedDia*>* pCentDedDiaContGet = pCentDedRosen->getCentDedDiaCont()->getMuPtr() ;
 				m_listboxDia.ResetContent() ;
@@ -142,7 +142,7 @@ void CDlgDiaList::updateControl()
 				}
 				
 				// --------------------------------
-				//	���X�g�{�b�N�X�̑I���ʒu��ݒ�
+				//	リストボックスの選択位置を設定
 				// --------------------------------
 				if ( 0 <= idxSelect && idxSelect < m_listboxDia.GetCount() ){
 					m_listboxDia.SetCurSel( idxSelect ) ;
@@ -209,8 +209,8 @@ void CDlgDiaList::execDlgDiaProp()
 	const CentDedDia*	pCentDedDia = pCentDedDiaContGet->get( idx ) ;
 	strDiaNamePrev = pCentDedDia->getName() ;
 	
-	//idx = �ύX����_�C���̃C���f�N�X
-	//strDiaNamePrev = �ύX����_�C���̃v���p�e�B(����)
+	//idx = 変更するダイヤのインデクス
+	//strDiaNamePrev = 変更するダイヤのプロパティ(名称)
 
 	CDlgDiaProp	aDlg( strDiaNamePrev , 
 		pCentDedDia->getMainBackColorIndex(),
@@ -224,7 +224,7 @@ void CDlgDiaList::execDlgDiaProp()
 		tstring strDiaName = aDlg.getName() ;
 		
 		// --------------------------------
-		//	���ꖼ�̃_�C���́A�G���[�ɂ��܂��B
+		//	同一名のダイヤは、エラーにします。
 		// --------------------------------
 		if ( strDiaName != strDiaNamePrev ){ 
 			int idxDia = pCentDedRosen->getCentDedDiaCont()->findCentDedDiaByName( strDiaName ) ;
@@ -236,7 +236,7 @@ void CDlgDiaList::execDlgDiaProp()
 			}
 		}
 		// --------------------------------
-		//	�R�}���h�I�u�W�F�N�g�𐶐��E���s
+		//	コマンドオブジェクトを生成・実行
 		// --------------------------------
 		{
 			OuNew<CRfEditCmd>	pCmd( 
@@ -254,7 +254,7 @@ void CDlgDiaList::execDlgDiaProp()
 		}
 
 		// --------------------------------
-		//	�_�C�A���O�̍X�V
+		//	ダイアログの更新
 		// --------------------------------
 		updateControl() ;
 	}
@@ -270,7 +270,7 @@ CDlgDiaList::CDlgDiaList(
 	, m_pCDiagramEditDoc( pCDiagramEditDoc ) 
 {
 	//{{AFX_DATA_INIT(CDlgDiaList)
-		// ���� - ClassWizard �͂��̈ʒu�Ƀ}�b�s���O�p�̃}�N����ǉ��܂��͍폜���܂��B
+		// メモ - ClassWizard はこの位置にマッピング用のマクロを追加または削除します。
 	//}}AFX_DATA_INIT
 }
 
@@ -298,7 +298,7 @@ BEGIN_MESSAGE_MAP(CDlgDiaList, CDialog)
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
-// CDlgDiaList ���b�Z�[�W �n���h��
+// CDlgDiaList メッセージ ハンドラ
 
 BOOL CDlgDiaList::OnInitDialog() 
 {
@@ -306,13 +306,13 @@ BOOL CDlgDiaList::OnInitDialog()
 	
 	updateControl() ;
 	
-	return TRUE;  // �R���g���[���Ƀt�H�[�J�X��ݒ肵�Ȃ��Ƃ��A�߂�l�� TRUE �ƂȂ�܂�
-	              // ��O: OCX �v���p�e�B �y�[�W�̖߂�l�� FALSE �ƂȂ�܂�
+	return TRUE;  // コントロールにフォーカスを設定しないとき、戻り値は TRUE となります
+	              // 例外: OCX プロパティ ページの戻り値は FALSE となります
 }
 
 void CDlgDiaList::OnOK() 
 {
-	//Return �L�[�ɂ��N���[�Y�͗}�~���܂��B	
+	//Return キーによるクローズは抑止します。	
 	//CDialog::OnOK();
 }
 
@@ -345,7 +345,7 @@ void CDlgDiaList::OnButtonNew()
 		tstring strDiaName = aDlg.getName() ;
 
 		// --------------------------------
-		//	���ꖼ�̃_�C���́A�G���[�ɂ��܂��B
+		//	同一名のダイヤは、エラーにします。
 		// --------------------------------
 		int idxDia = pCentDedRosen->getCentDedDiaCont()->findCentDedDiaByName( strDiaName ) ;
 		if ( idxDia >= 0 ){
@@ -355,7 +355,7 @@ void CDlgDiaList::OnButtonNew()
 			return ;
 		}
 		// --------------------------------
-		//	�R�}���h�I�u�W�F�N�g�𐶐��E���s
+		//	コマンドオブジェクトを生成・実行
 		// --------------------------------
 		{
 			CentDedDiaCont	aCentDedDiaCont ;
@@ -374,9 +374,9 @@ void CDlgDiaList::OnButtonNew()
 
 		
 		// --------------------------------
-		//	�_�C�A���O�̍X�V
+		//	ダイアログの更新
 		// --------------------------------
-		//	���X�g�{�b�N�X�ɃA�C�e����ǉ�
+		//	リストボックスにアイテムを追加
 		m_listboxDia.AddString( strDiaName.c_str() ) ;
 		m_listboxDia.SetCurSel( m_listboxDia.GetCount() - 1 ) ;
 
@@ -406,8 +406,8 @@ void CDlgDiaList::OnButtonCopy()
 	const CentDedDia* pCentDedDia = pCentDedDiaContGet->get(idx);
 	strDiaNamePrev = pCentDedDia->getName();
 
-	//idx = ��������_�C���̃C���f�N�X
-	//strDiaNamePrev = �v���p�e�B�ɐݒ肷�鏉����
+	//idx = 複製するダイヤのインデクス
+	//strDiaNamePrev = プロパティに設定する初期名
 
 
 	CDlgDiaProp	aDlg(strDiaNamePrev,
@@ -422,7 +422,7 @@ void CDlgDiaList::OnButtonCopy()
 		tstring strDiaName = aDlg.getName();
 
 		// --------------------------------
-		//	���ꖼ�̃_�C���́A�G���[�ɂ��܂��B
+		//	同一名のダイヤは、エラーにします。
 		// --------------------------------
 		int idxDia = pCentDedRosen->getCentDedDiaCont()->findCentDedDiaByName(strDiaName);
 		if (idxDia >= 0) {
@@ -432,7 +432,7 @@ void CDlgDiaList::OnButtonCopy()
 			return;
 		}
 		// --------------------------------
-		//	�R�}���h�I�u�W�F�N�g�𐶐��E���s
+		//	コマンドオブジェクトを生成・実行
 		// --------------------------------
 		{
 			CentDedDiaCont	aCentDedDiaCont;
@@ -451,9 +451,9 @@ void CDlgDiaList::OnButtonCopy()
 
 
 		// --------------------------------
-		//	�_�C�A���O�̍X�V
+		//	ダイアログの更新
 		// --------------------------------
-		//	���X�g�{�b�N�X�ɃA�C�e����ǉ�
+		//	リストボックスにアイテムを追加
 		m_listboxDia.AddString(strDiaName.c_str());
 		m_listboxDia.SetCurSel(m_listboxDia.GetCount() - 1);
 
@@ -476,10 +476,10 @@ void CDlgDiaList::OnButtonDelete()
 		const CentDedDia*	pCentDedDia = pCentDedDiaContGet->get( idx ) ;
 		strDiaName = pCentDedDia->getName() ;
 	}
-	//idx = �ύX����_�C���̃C���f�N�X
+	//idx = 変更するダイヤのインデクス
 
 	// --------------------------------
-	//	�폜�̊m�F
+	//	削除の確認
 	// --------------------------------
 	{
 		CString	strMsg ;
@@ -494,7 +494,7 @@ void CDlgDiaList::OnButtonDelete()
 		}
 	}	
 		// --------------------------------
-		//	�R�}���h�I�u�W�F�N�g�𐶐��E���s
+		//	コマンドオブジェクトを生成・実行
 		// --------------------------------
 		{
 			CentDedDiaCont	aCentDedDiaCont ;
@@ -505,7 +505,7 @@ void CDlgDiaList::OnButtonDelete()
 			ASSERT( iResult >= 0 ) ;
 		}
 	// --------------------------------
-	//	�_�C�A���O�̍X�V
+	//	ダイアログの更新
 	// --------------------------------
 	updateControl() ;
 }
@@ -522,7 +522,7 @@ void CDlgDiaList::OnButtonUp()
 		return ;
 	}
 	// --------------------------------
-	//	�R�}���h�I�u�W�F�N�g�𐶐��E���s
+	//	コマンドオブジェクトを生成・実行
 	// --------------------------------
 	{
 		CentDedDiaCont	aCentDedDiaCont;
@@ -536,7 +536,7 @@ void CDlgDiaList::OnButtonUp()
 		ASSERT( iResult >= 0 ) ;
 	}
 	// --------------------------------
-	//	�_�C�A���O�̍X�V
+	//	ダイアログの更新
 	// --------------------------------
 	m_listboxDia.SetCurSel( idx - 1 ) ;
 	updateControl() ;
@@ -554,7 +554,7 @@ void CDlgDiaList::OnButtonDown()
 		return ;
 	}
 	// --------------------------------
-	//	�R�}���h�I�u�W�F�N�g�𐶐��E���s
+	//	コマンドオブジェクトを生成・実行
 	// --------------------------------
 	{
 		CentDedDiaCont	aCentDedDiaCont ;
@@ -568,7 +568,7 @@ void CDlgDiaList::OnButtonDown()
 		ASSERT( iResult >= 0 ) ;
 	}
 	// --------------------------------
-	//	�_�C�A���O�̍X�V
+	//	ダイアログの更新
 	// --------------------------------
 	m_listboxDia.SetCurSel( idx + 1 ) ;
 	updateControl() ;

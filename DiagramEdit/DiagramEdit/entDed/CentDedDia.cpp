@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -95,7 +95,7 @@ namespace entDed{
 // ****************************************************************
 
 // ********************************
-//	�R���X�g���N�^
+//	コンストラクタ
 // ********************************
 	CentDedDia::CentDedDia(const tstring& strName)
 		: m_strName(strName)
@@ -203,8 +203,8 @@ CentDedDia& CentDedDia::operator=( const CentDedDia& value )
 	if ( pDiaCont != NULL )
 	{
 		/*
-		���㏑��(operator=): ���̃I�u�W�F�N�g���e�I�u�W�F�N�g CentDedDiaCont �̎q�ł���ꍇ�ŁA������̃_�C�������󕶎���ł���ꍇ�A�������͓������O�̃_�C���� CentDedDiaCont �ɂ���ꍇ�͗�O�X���[�B
-	�@	  (��������ACentDedDiaCont::set()�ɓn���ƃG���[�ɂȂ�悤�ȃI�u�W�F�N�g�ł���ꍇ�́A����͗�O�X���[�Ƃ��܂�)
+		△上書き(operator=): このオブジェクトが親オブジェクト CentDedDiaCont の子である場合で、代入元のダイヤ名が空文字列である場合、もしくは同じ名前のダイヤが CentDedDiaCont にある場合は例外スロー。
+	　	  (代入元が、CentDedDiaCont::set()に渡すとエラーになるようなオブジェクトである場合は、代入は例外スローとします)
 		*/
 		int iResult = pDiaCont->setable( value , pDiaCont->getIndex( this ) ) ;
 		if( iResult < 0 )
@@ -231,7 +231,7 @@ CentDedDia& CentDedDia::operator=( const CentDedDia& value )
 	return *this ;
 }
 		
-CentDedDia::~CentDedDia()
+CentDedDia::‾CentDedDia()
 {
 	delete m_CentDedRessyaCont[0] ;
 	delete m_CentDedRessyaCont[1] ;
@@ -239,7 +239,7 @@ CentDedDia::~CentDedDia()
 }
 
 	// ********************************
-	//@name CChildBase-����
+	//@name CChildBase-操作
 	// ********************************
 void CentDedDia::setParent( CParentBase* pParent )
 {
@@ -247,12 +247,12 @@ void CentDedDia::setParent( CParentBase* pParent )
 	adjust() ;
 }
 	// ********************************
-	//@name CentDedDia-����
+	//@name CentDedDia-属性
 	// ********************************
 void CentDedDia::setName( const tstring& value )
 {
-	//	���㏑��(operator=): ���̃I�u�W�F�N�g���e�I�u�W�F�N�g CentDedDiaCont �̎q�ł���ꍇ�ŁA
-	//	�_�C�������󕶎���ł���ꍇ�͗�O�X���[�B
+	//	△上書き(operator=): このオブジェクトが親オブジェクト CentDedDiaCont の子である場合で、
+	//	ダイヤ名が空文字列である場合は例外スロー。
 	if ( value.length() == 0 )
 	{
 		throw LException() ;
@@ -262,8 +262,8 @@ void CentDedDia::setName( const tstring& value )
 	if ( pDiaCont != NULL )
 	{
 		/*
-		���㏑��(operator=): ���̃I�u�W�F�N�g���e�I�u�W�F�N�g CentDedDiaCont �̎q�ł���ꍇ�ŁA
-			�������͓������O�̃_�C���� CentDedDiaCont �ɂ���ꍇ�͗�O�X���[�B
+		△上書き(operator=): このオブジェクトが親オブジェクト CentDedDiaCont の子である場合で、
+			もしくは同じ名前のダイヤが CentDedDiaCont にある場合は例外スロー。
 		*/
 		int iResult = pDiaCont->findCentDedDiaByName( value ) ;
 		if( iResult >= 0 && iResult != pDiaCont->getIndex( this ) )
@@ -317,7 +317,7 @@ const CustomizeJikokuhyouContent CentDedDia::getcontCustomizeRessyaIndex(
 
 
 	// ********************************
-	//@name CentDedDia-����
+	//@name CentDedDia-操作
 	// ********************************
 void CentDedDia::adjustByEkijikokukeisiki(
 		const CentDedEkiCont* pCentDedEkiCont ,
@@ -325,7 +325,7 @@ void CentDedDia::adjustByEkijikokukeisiki(
 {
 	int iRv = 0 ;
 
-	//		INT_MAX �́A�������w�肵�����ƂɂȂ�܂��B
+	//		INT_MAX は、末尾を指定したことになります。
 	if ( iRv >= 0 )
 	{
 		if ( iEkiIndex == INT_MAX )
@@ -334,7 +334,7 @@ void CentDedDia::adjustByEkijikokukeisiki(
 		}
 		if ( !( 0 <= iEkiIndex && iEkiIndex < pCentDedEkiCont->size() ) )
 		{
-			iRv = -1 ;	//	iEkiIndex ������������܂���B
+			iRv = -1 ;	//	iEkiIndex が正しくありません。
 		}
 	}
 	if ( iRv >= 0 )
@@ -416,27 +416,27 @@ void CentDedDia::omitInvalidRessyaFromCustomizeRessyaIndex(
 	for (int idx = m_contCustomizeRessyaIndexKudari.size() - 1; idx >= 0; idx--)
 	{
 		const CentDedRessya* pCentDedRessya = pCentDedRessyaContKudari->get(idx);
-		//NULL��Ԃ̏ꍇ�́A��s�̂܂܎c���܂��B
+		//NULL列車の場合は、空行のまま残します。
 		if (pCentDedRessya->isNull())
 		{
 			continue;
 		}
 
-		//�^�x���L���̏ꍇ�́AcontCustomizeRessyaIndex����폜����
+		//運休が有効の場合は、contCustomizeRessyaIndexから削除する
 		if (pCentDedRessya->isCanceled())
 		{
 			m_contCustomizeRessyaIndexKudari.erase(m_contCustomizeRessyaIndexKudari.begin() + idx);
 			continue;
 		}
 
-		//�B����ʂ̏ꍇ�́AcontCustomizeRessyaIndex����폜����
+		//隠し種別の場合は、contCustomizeRessyaIndexから削除する
 		if (contHidden[pCentDedRessya->getRessyasyubetsuIndex()])
 		{
 			m_contCustomizeRessyaIndexKudari.erase(m_contCustomizeRessyaIndexKudari.begin() + idx);
 			continue;
 		}
 
-		//�L���Ȏn���w�������͗L���ȏI���w�������ꍇ�́AcontCustomizeRessyaIndex����폜����
+		//有効な始発駅もしくは有効な終着駅が無い場合は、contCustomizeRessyaIndexから削除する
 		if (pCentDedRessya->getValidSihatsuEki() < 0 || pCentDedRessya->getValidSyuuchakuEki() < 0)
 		{
 			m_contCustomizeRessyaIndexKudari.erase(m_contCustomizeRessyaIndexKudari.begin() + idx);
@@ -448,27 +448,27 @@ void CentDedDia::omitInvalidRessyaFromCustomizeRessyaIndex(
 	for (int idx = m_contCustomizeRessyaIndexNobori.size() - 1; idx >= 0; idx--)
 	{
 		const CentDedRessya* pCentDedRessya = pCentDedRessyaContNobori->get(idx);
-		//NULL��Ԃ̏ꍇ�́A��s�̂܂܎c���܂��B
+		//NULL列車の場合は、空行のまま残します。
 		if (pCentDedRessya->isNull())
 		{
 			continue;
 		}
 
-		//�^�x���L���̏ꍇ�́AcontCustomizeRessyaIndex����폜����
+		//運休が有効の場合は、contCustomizeRessyaIndexから削除する
 		if (pCentDedRessya->isCanceled())
 		{
 			m_contCustomizeRessyaIndexNobori.erase(m_contCustomizeRessyaIndexNobori.begin() + idx);
 			continue;
 		}
 
-		//�B����ʂ̏ꍇ�́AcontCustomizeRessyaIndex����폜����
+		//隠し種別の場合は、contCustomizeRessyaIndexから削除する
 		if (contHidden[pCentDedRessya->getRessyasyubetsuIndex()])
 		{
 			m_contCustomizeRessyaIndexNobori.erase(m_contCustomizeRessyaIndexNobori.begin() + idx);
 			continue;
 		}
 
-		//�L���Ȏn���w�������͗L���ȏI���w�������ꍇ�́AcontCustomizeRessyaIndex����폜����
+		//有効な始発駅もしくは有効な終着駅が無い場合は、contCustomizeRessyaIndexから削除する
 		if (pCentDedRessya->getValidSihatsuEki() < 0 || pCentDedRessya->getValidSyuuchakuEki() < 0)
 		{
 			m_contCustomizeRessyaIndexNobori.erase(m_contCustomizeRessyaIndexNobori.begin() + idx);
@@ -532,7 +532,7 @@ void CentDedDia::clearInOutLinkCodeContent()
 }
 
 	// ********************************
-	//@name CentDedDia-�w���E��Ԏ�ʐ��̕ύX
+	//@name CentDedDia-駅数・列車種別数の変更
 	// ********************************
 
 int CentDedDia::isExistRessyaOfRessyasyubetsu( 
@@ -644,7 +644,7 @@ int CentDedDia::isExistRessyaOfOuterTerminal(
 	return (iRv);
 }
 	// ********************************
-	//@name CentDedRosen-�q�I�u�W�F�N�g�̑����̒ʒm
+	//@name CentDedRosen-子オブジェクトの増減の通知
 	// ********************************
 void CentDedDia::onEkiInsert( int iEkiIndex, const vector<int>& iMainTrack)
 {
@@ -663,9 +663,9 @@ void CentDedDia::onEkiInsert( int iEkiIndex, const vector<int>& iMainTrack)
 			m_CentDedRessyaCont[iRessyahoukou]->onEkiInsert( 
 				m_CentDedRessyaCont[iRessyahoukou]->EkiOrderOfEkiIndex( iEkiIndex ) + 1,
 				iMainTrack[iRessyahoukou]) ;
-			//	���� +1 �̈Ӗ��E�E�E
-			//	�S�w�̘H���ɁA�n���w�ł���wIndex0��ǉ�����ꍇ�A
-			//	���̃R���e�i�̉wOrder 4(����)  �ɒǉ����Ȃ��Ă͂Ȃ�܂���B 
+			//	この +1 の意味・・・
+			//	４駅の路線に、始発駅である駅Index0を追加する場合、
+			//	上りのコンテナの駅Order 4(末尾)  に追加しなくてはなりません。 
 		}
 	}
 }

@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 // ****************************************************************
 //	$Id: CPropEditUI_Operation.cpp 357 2016-08-18 16:59:16Z okm $
@@ -75,23 +75,23 @@ Copyright (C) 2006-2017 take-okm
 /** @file */
 
 #include "stdafx.h"
-#include "NsMu\CConvTable.h"
+#include "NsMu¥CConvTable.h"
 #include "CPropEditUI_Operation.h"
-#include "str\CStrCharSizeMb.h"
-#include "str\strLf.h"
-//#include "Str\tstring.h"
-#include "Str\strToWstr.h"
+#include "str¥CStrCharSizeMb.h"
+#include "str¥strLf.h"
+//#include "Str¥tstring.h"
+#include "Str¥strToWstr.h"
 #include "NsOu/dynamic_castOu.h"
 #include "NsOu/OuNew.h"
-#include "..\entDed\entDed.h"
-#include "Str\stringSplit.h"
+#include "..¥entDed¥entDed.h"
+#include "Str¥stringSplit.h"
 #include <stdexcept>
 
 namespace ViewJikokuhyou{
 	using namespace OuLib::Str;
 
 		
-/** �_�C�A���O�{�b�N�X�ւ̎����̏�����ێ����܂��B */
+/** ダイアログボックスへの時刻の書式を保持します。 */
 const CdDedJikoku::CConv	g_CdDedJikokuConv(
 	true ,		//	NoColon 
 	CdDedJikoku::CConv::EHour_ZeroToNone ,		//	HourZeroToNone 
@@ -99,24 +99,24 @@ const CdDedJikoku::CConv	g_CdDedJikokuConv(
 
 
 /**
-	������UI�`�������߂��āA�����ɕϊ����܂��B
-	�G�f�B�b�g�R���g���[���̓��e��2�������̏ꍇ�́A
-	�O�̉w����Order�����ƂɁA����⊮���܂��B
+	時刻のUI形式を解釈して、時刻に変換します。
+	エディットコントロールの内容が2桁数字の場合は、
+	前の駅時刻Orderをもとに、時を補完します。
 @param strUIJikoku [in]
-	UI�`���̎������w�肵�Ă��������B
+	UI形式の時刻を指定してください。
 @param jikokuRevOrder [in]
-	���O�́w�w�����x�B
-	���̒l�́AstrControl�����̂�(����2��)�̏ꍇ�A����⊮����̂Ɏg���܂��B
-	�wNULL��ԁx�̏ꍇ�A���̕⊮�͍s���܂���B
+	直前の『駅時刻』。
+	この値は、strControlが分のみ(数字2桁)の場合、時を補完するのに使います。
+	『NULL状態』の場合、時の補完は行われません。
 @param pCdDedJikoku [out]
-	���̊֐��́A������̉��߂ɐ���������A������̓��e��ϊ�����������
-	�����ɏ������݂܂��B
+	この関数は、文字列の解釈に成功したら、文字列の内容を変換した時刻を
+	ここに書き込みます。
 @param bBefore
-	true�̏ꍇ�AjikokuRevOrder���O�̎������Ƃ�悤�ɕϊ����܂�
+	trueの場合、jikokuRevOrderより前の時刻をとるように変換します
 @return
-	���������� 0 �ȏ�B�����ւ̕ϊ����ł��Ȃ���Ε��̐��ł��B
-	-	-1 ;	//	���ڐ����s�����Ă��܂��B
-	-	-2 ;	//	���E���E�b�̕\�L���s���ł��B
+	成功したら 0 以上。時刻への変換ができなければ負の数です。
+	-	-1 ;	//	項目数が不足しています。
+	-	-2 ;	//	時・分・秒の表記が不正です。
 */
 static int	getJikokuFromUI( 
 	const tstring& strUIJikoku , 
@@ -133,14 +133,14 @@ static int	getJikokuFromUI(
 	if ( iResult < 0 )
 	{
 		iRv = iResult ;
-		//	�����񂪉��߂ł��܂���B
+		//	文字列が解釈できません。
 	}
 	//iRv = 
-	//-	-1 ;	//	���ڐ����s�����Ă��܂��B
-	//-	-2 ;	//	���E���E�b�̕\�L���s���ł��B
+	//-	-1 ;	//	項目数が不足しています。
+	//-	-2 ;	//	時・分・秒の表記が不正です。
 
-	//	��������2���ŁA�O�̉w����������ꍇ�́A
-	//	�������Ɏ���⊮
+	//	着時刻が2桁で、前の駅時刻がある場合は、
+	//	着時刻に時を補完
 	if ( iRv == -1 && 
 		 !jikokuRevOrder.isNull() && 
 		strControl.size() == 2 && 
@@ -159,10 +159,10 @@ static int	getJikokuFromUI(
 				{
 					aCdDedJikoku = aCdDedJikoku.getTotalSeconds() - 60 * 60;
 				}
-				//aCdDedJikoku = ���ݓ��͂��ꂽ2���̕�����ɁA
-				//	jikokuRevOrder �Ȍ�ƂȂ鎞��⊮
+				//aCdDedJikoku = 現在入力された2桁の文字列に、
+				//	jikokuRevOrder 以後となる時を補完
 
-				iRv = 0;	//	�����⊮�ɐ������܂����B 
+				iRv = 0;	//	時刻補完に成功しました。 
 			}
 		}
 		else
@@ -177,10 +177,10 @@ static int	getJikokuFromUI(
 				{
 					aCdDedJikoku = aCdDedJikoku.getTotalSeconds() + 60 * 60;
 				}
-				//aCdDedJikoku = ���ݓ��͂��ꂽ2���̕�����ɁA
-				//	jikokuRevOrder �Ȍ�ƂȂ鎞��⊮
+				//aCdDedJikoku = 現在入力された2桁の文字列に、
+				//	jikokuRevOrder 以後となる時を補完
 
-				iRv = 0;	//	�����⊮�ɐ������܂����B 
+				iRv = 0;	//	時刻補完に成功しました。 
 			}
 		}
 	}
@@ -194,7 +194,7 @@ static int	getJikokuFromUI(
 }
 
 	// ********************************
-	//@name �G���[���b�Z�[�W
+	//@name エラーメッセージ
 	// ********************************
 
 const TCHAR* const CPropEditUI_Operation::ERRMSG_INVALID_SHUNTHATSUJIKOKU = _T("Invalid ShuntHatsuJikoku.");//01
@@ -231,7 +231,7 @@ const TCHAR* const CPropEditUI_Operation::ERRMSG_UNUSABLE_DOLLAR = _T("InOutLink
 
 
 	// ================================
-	//@name �����֐�
+	//@name 下請関数
 	// ================================
 
 //const CConvTable<CentDedOperationBeforeRelease::EBReleasePos, int>& getBReleasePosConvTable()
@@ -239,9 +239,9 @@ const TCHAR* const CPropEditUI_Operation::ERRMSG_UNUSABLE_DOLLAR = _T("InOutLink
 //	static CConvTable<CentDedOperationBeforeRelease::EBReleasePos, int>	aTable;
 //	if (aTable.size() == 0)
 //	{
-//		aTable.add(CentDedOperationBeforeRelease::BReleasePos_Back, 0);//	�㕔
-//		aTable.add(CentDedOperationBeforeRelease::BReleasePos_Front, 1);//	�O��
-//		aTable.add(CentDedOperationBeforeRelease::BReleasePos_FrontLeave, 2);//	�O����Ґ����w��
+//		aTable.add(CentDedOperationBeforeRelease::BReleasePos_Back, 0);//	後部
+//		aTable.add(CentDedOperationBeforeRelease::BReleasePos_Front, 1);//	前部
+//		aTable.add(CentDedOperationBeforeRelease::BReleasePos_FrontLeave, 2);//	前部主編成数指定
 //	}
 //	return aTable;
 //}
@@ -250,14 +250,14 @@ const TCHAR* const CPropEditUI_Operation::ERRMSG_UNUSABLE_DOLLAR = _T("InOutLink
 //	static CConvTable<CentDedOperationAfterRelease::EAReleasePos, int>	aTable;
 //	if (aTable.size() == 0)
 //	{
-//		aTable.add(CentDedOperationAfterRelease::AReleasePos_Back, 0);//	�㕔
-//		aTable.add(CentDedOperationAfterRelease::AReleasePos_Front, 1);//	�O��
-//		aTable.add(CentDedOperationAfterRelease::AReleasePos_FrontLeave, 2);//	�O����Ґ����w��
+//		aTable.add(CentDedOperationAfterRelease::AReleasePos_Back, 0);//	後部
+//		aTable.add(CentDedOperationAfterRelease::AReleasePos_Front, 1);//	前部
+//		aTable.add(CentDedOperationAfterRelease::AReleasePos_FrontLeave, 2);//	前部主編成数指定
 //	}
 //	return aTable;
 //}
 	// ================================
-	//@name UiData - Target�Ԃ̃f�[�^�]��
+	//@name UiData - Target間のデータ転送
 	// ================================
 
 	
@@ -305,7 +305,7 @@ vector<Operation> CPropEditUI_Operation::BeforeOperationFromTarget(
 					pBeforeOperation->getCentDedBeforeOperationCont(),
 					sOperationTemp.iLevel);
 
-			//�����̏ꍇ�A���n��ɉ����āA��Ɏq��Ƃ�UiData�ɒǉ��������ƁA���̑�����Ƃ�ǉ�����
+			//増結の場合、時系列に沿って、先に子作業をUiDataに追加したあと、この増結作業を追加する
 			sOperationB.insert(sOperationB.end(), sOperationBTemp.begin(), sOperationBTemp.end());
 			sOperationB.push_back(sOperationTemp);
 		}
@@ -325,7 +325,7 @@ vector<Operation> CPropEditUI_Operation::BeforeOperationFromTarget(
 					pBeforeOperation->getCentDedAfterOperationCont(),
 					sOperationTemp.iLevel);
 
-			//�����̏ꍇ�A���n��ɉ����āA��ɂ��̉�����Ƃ�ǉ��������ƁA�q��Ƃ�ǉ�����
+			//解結の場合、時系列に沿って、先にこの解結作業を追加したあと、子作業を追加する
 			sOperationB.push_back(sOperationTemp);
 			sOperationB.insert(sOperationB.end(), sOperationATemp.begin(), sOperationATemp.end());
 		}
@@ -389,7 +389,7 @@ vector<Operation> CPropEditUI_Operation::AfterOperationFromTarget(
 	const CentDedAfterOperationCont * pCentDedAfterOperationCont,
 	const vector<int> iLevel)
 {
-	//pCentDedOperationAfterCont�ɂ́A��Ƃ����n�񏇂Ɏ��߂��Ă���
+	//pCentDedOperationAfterContには、作業が時系列順に収められている
 	vector<Operation> sOperationA;
 	CdDedJikoku::CConv	aJikokuConv(g_CdDedJikokuConv);
 	for (int idx = 0; idx < pCentDedAfterOperationCont->size(); idx++)
@@ -528,19 +528,19 @@ void CPropEditUI_Operation::UiDataFromTarget(UIDATA* pUiData)
 	}
 
 	/**
-		������
+		着時刻
 	*/
 	pUiData->strChakujikoku = aJikokuConv.encode(
 		aChakuEkiJikoku.getChakujikoku());
 
 	/**
-		������
+		発時刻
 	*/
 	pUiData->strHatsujikoku = aJikokuConv.encode(
 		aHatsuEkiJikoku.getHatsujikoku());
 
 	/**
-		�O���
+		前作業
 	*/
 	pUiData->sOperationB = BeforeOperationFromTarget(
 		aChakuEkiJikoku.getCentDedBeforeOperationCont(),
@@ -554,7 +554,7 @@ void CPropEditUI_Operation::UiDataFromTarget(UIDATA* pUiData)
 
 
 	/**
-		����
+		後作業
 	*/
 	pUiData->sOperationA = AfterOperationFromTarget(
 		aHatsuEkiJikoku.getCentDedAfterOperationCont(),
@@ -581,9 +581,9 @@ void CPropEditUI_Operation::UiDataFromTarget(UIDATA* pUiData)
 					{
 						if (pUiData->sOperationA[idxa].iOperation == 1)
 						{
-							//�����̏ꍇ�A�����Ґ��O��Ƃ̐擪�ʒu��Ԃ��܂�
-							//�O��ƃR���e�i���t�����ɂ����̂ڂ��Ă����AiLevel�̈ꌅ�ڂ��Am_bFocusAfter�ƈ�v���Ȃ�����
-							//������������A���̈�オ�A�����Ґ��O��Ƃ̐擪�ʒu�ƂȂ�܂��B
+							//増結の場合、増結編成前作業の先頭位置を返します
+							//前作業コンテナを逆方向にさかのぼっていき、iLevelの一桁目が、m_bFocusAfterと一致しないもの
+							//が見つかったら、その一つ後が、増結編成前作業の先頭位置となります。
 							for (int idxc = idxa - 1; idxc >= 0; idxc--)
 							{
 								if (pUiData->sOperationA[idxc].iLevel.front() != m_iFocusIndex)
@@ -598,9 +598,9 @@ void CPropEditUI_Operation::UiDataFromTarget(UIDATA* pUiData)
 						}
 						else if (pUiData->sOperationA[idxa].iOperation == 2)
 						{
-							//�����̏ꍇ�A�����Ґ����Ƃ̖����ʒu��Ԃ��܂�
-							//�O��ƃR���e�i���������ɒH���Ă����AiLevel�̈ꌅ�ڂ��Am_bFocusAfter�ƈ�v���Ȃ�����
-							//������������A���̈�O���A�����Ґ����Ƃ̖����ʒu�ƂȂ�܂��B
+							//解結の場合、解結編成後作業の末尾位置を返します
+							//前作業コンテナを順方向に辿っていき、iLevelの一桁目が、m_bFocusAfterと一致しないもの
+							//が見つかったら、その一つ前が、解結編成後作業の末尾位置となります。
 							for (int idxc = idxa + 1; idxc < (int)pUiData->sOperationA.size(); idxc++)
 							{
 								if (pUiData->sOperationA[idxc].iLevel.front() != m_iFocusIndex)
@@ -636,9 +636,9 @@ void CPropEditUI_Operation::UiDataFromTarget(UIDATA* pUiData)
 					{
 						if (pUiData->sOperationB[idxb].iOperation == 1)
 						{
-							//�����̏ꍇ�A�����Ґ��O��Ƃ̐擪�ʒu��Ԃ��܂�
-							//�O��ƃR���e�i���t�����ɂ����̂ڂ��Ă����AiLevel�̈ꌅ�ڂ��Am_bFocusAfter�ƈ�v���Ȃ�����
-							//������������A���̈�オ�A�����Ґ��O��Ƃ̐擪�ʒu�ƂȂ�܂��B
+							//増結の場合、増結編成前作業の先頭位置を返します
+							//前作業コンテナを逆方向にさかのぼっていき、iLevelの一桁目が、m_bFocusAfterと一致しないもの
+							//が見つかったら、その一つ後が、増結編成前作業の先頭位置となります。
 							for (int idxc = idxb - 1; idxc >= 0; idxc--)
 							{
 								if (pUiData->sOperationB[idxc].iLevel.front() != m_iFocusIndex)
@@ -653,9 +653,9 @@ void CPropEditUI_Operation::UiDataFromTarget(UIDATA* pUiData)
 						}
 						else if (pUiData->sOperationB[idxb].iOperation == 2)
 						{
-							//�����̏ꍇ�A�����Ґ����Ƃ̖����ʒu��Ԃ��܂�
-							//�O��ƃR���e�i���������ɒH���Ă����AiLevel�̈ꌅ�ڂ��Am_bFocusAfter�ƈ�v���Ȃ�����
-							//������������A���̈�O���A�����Ґ����Ƃ̖����ʒu�ƂȂ�܂��B
+							//解結の場合、解結編成後作業の末尾位置を返します
+							//前作業コンテナを順方向に辿っていき、iLevelの一桁目が、m_bFocusAfterと一致しないもの
+							//が見つかったら、その一つ前が、解結編成後作業の末尾位置となります。
 							for (int idxc = idxb + 1; idxc < (int)pUiData->sOperationB.size(); idxc++)
 							{
 								if (pUiData->sOperationB[idxc].iLevel.front() != m_iFocusIndex)
@@ -689,9 +689,9 @@ void CPropEditUI_Operation::AdjustUiData(
 		bool bStartEdit )
 {
 	/**
-		iUiOperation��0(�ڍוύX)�̂Ƃ��ɍs���܂��B
-		�EiOperation�̕ύX�ɔ����A�s�v�p�����[�^�̍폜
-		�E���������͂��ꂽ�ꍇ�̐��K��
+		iUiOperationが0(詳細変更)のときに行われます。
+		・iOperationの変更に伴う、不要パラメータの削除
+		・時刻が入力された場合の正規化
 	*/
 	if (pUiData->iUiOperation == 0 &&
 		pUiData->iListSelected >= 0)
@@ -724,34 +724,34 @@ void CPropEditUI_Operation::AdjustUiData(
 		//	pOprationSelPrev = &pUiDataPrev->sOperationB[pUiData->iListSelected];
 		//}
 
-		//	��Ǝ��
+		//	作業種類
 		if (bStartEdit || sOprationSelPrev.iOperation != sOprationSel.iOperation)
 		{
 			if (sOprationSelPrev.iOperation == 1)
 			{
-				//����Ƃ������̏ꍇ�́A�O��Ƃ��폜����B
+				//旧作業が増結の場合は、前作業を削除する。
 				vector<int> iLevelParent = sOprationSelPrev.iLevel;
 				int iDelSize = 0;
 				for (int idxb = pUiData->iListSelected - 1; idxb >= 0; idxb--)
 				{
 					/**
-						�܂��Aidxb�ʒu��iLevel�̗v�f�����m�F�A�v�f����iDeliLevel�ȉ��Ȃ�A�q��Ƃł͂Ȃ��̂ŒT���I���ł�
+						まず、idxb位置のiLevelの要素数を確認、要素数がiDeliLevel以下なら、子作業ではないので探索終了です
 					*/
 					if (sOperationCont[idxb].iLevel.size() <= iLevelParent.size())
 					{
 						break;
 					}
 					/**
-						�v�f����iDeliLevel��葽���ꍇ�́AiDeliLevel�̗v�f���܂ł̒l���A��v���邩�ۂ��𒲂ׂ܂�
+						要素数がiDeliLevelより多い場合は、iDeliLevelの要素数までの値が、一致するか否かを調べます
 					*/
 					bool bMatch = true;
-					//iAddiLevel.size()��1�̏ꍇ�́Afor�ɓ���Ȃ������Ȃ��B�O���ɒl�������A�Ƃ����Ӗ��ň�v
+					//iAddiLevel.size()が1の場合は、forに入らないが問題ない。前方に値が無い、という意味で一致
 					for (int idxl = 0; idxl < (int)iLevelParent.size(); idxl++)
 					{
 						if (sOperationCont[idxb].iLevel[idxl] != iLevelParent[idxl])
 						{
 							/**
-								�l���s��v�̏ꍇ�A�������ɂ͎q��Ƃ͖����̂ŁAbMatch��false�ɂ��ĒT���𔲂��܂��B
+								値が不一致の場合、それより先には子作業は無いので、bMatchをfalseにして探索を抜けます。
 							*/
 							bMatch = false;
 							break;
@@ -762,8 +762,8 @@ void CPropEditUI_Operation::AdjustUiData(
 						break;
 					}
 					/**
-						iDeliLevel.size()�̒l����v�����ꍇ�A���̍�Ƃ͎q��Ƃł��A
-						iDelPosition��-1���AiDelSize��+1���܂��B(�폜�͌�ōs��)
+						iDeliLevel.size()個の値が一致した場合、その作業は子作業です、
+						iDelPositionを-1し、iDelSizeを+1します。(削除は後で行う)
 					*/
 					iDelSize++;
 				}
@@ -771,34 +771,34 @@ void CPropEditUI_Operation::AdjustUiData(
 				sOperationCont.erase(
 					sOperationCont.begin() + pUiData->iListSelected - iDelSize, 
 					sOperationCont.begin() + pUiData->iListSelected );
-				//�O��Ƃ��폜�������A�I���ʒu���ړ�����
+				//前作業を削除した分、選択位置を移動する
 				pUiData->iListSelected -= iDelSize;
 			}
 			if (sOprationSelPrev.iOperation == 2)
 			{
-				//����Ƃ������̏ꍇ�́A���Ƃ��폜����B
+				//旧作業が解結の場合は、後作業を削除する。
 				vector<int> iLevelParent = sOprationSelPrev.iLevel;
 				int iDelSize = 0;
 				for (int idxa = pUiData->iListSelected + 1; idxa < (int)sOperationCont.size(); idxa++)
 				{
 					/**
-						�܂��Aidxa�ʒu��iLevel�̗v�f�����m�F�A�v�f����iDeliLevel�ȉ��Ȃ�A�q��Ƃł͂Ȃ��̂ŒT���I���ł�
+						まず、idxa位置のiLevelの要素数を確認、要素数がiDeliLevel以下なら、子作業ではないので探索終了です
 					*/
 					if (sOperationCont[idxa].iLevel.size() <= iLevelParent.size())
 					{
 						break;
 					}
 					/**
-						�v�f����iDeliLevel��葽���ꍇ�́AiDeliLevel�̗v�f���܂ł̒l���A��v���邩�ۂ��𒲂ׂ܂�
+						要素数がiDeliLevelより多い場合は、iDeliLevelの要素数までの値が、一致するか否かを調べます
 					*/
 					bool bMatch = true;
-					//iAddiLevel.size()��1�̏ꍇ�́Afor�ɓ���Ȃ������Ȃ��B�O���ɒl�������A�Ƃ����Ӗ��ň�v
+					//iAddiLevel.size()が1の場合は、forに入らないが問題ない。前方に値が無い、という意味で一致
 					for (int idxl = 0; idxl < (int)iLevelParent.size(); idxl++)
 					{
 						if (sOperationCont[idxa].iLevel[idxl] != iLevelParent[idxl])
 						{
 							/**
-								�l���s��v�̏ꍇ�A�������ɂ͎q��Ƃ͖����̂ŁAbMatch��false�ɂ��ĒT���𔲂��܂��B
+								値が不一致の場合、それより先には子作業は無いので、bMatchをfalseにして探索を抜けます。
 							*/
 							bMatch = false;
 							break;
@@ -809,8 +809,8 @@ void CPropEditUI_Operation::AdjustUiData(
 						break;
 					}
 					/**
-						iDeliLevel.size()�̒l����v�����ꍇ�A���̍�Ƃ͎q��Ƃł��A
-						iDelSize��+1���܂��B(�폜�͌�ōs��)
+						iDeliLevel.size()個の値が一致した場合、その作業は子作業です、
+						iDelSizeを+1します。(削除は後で行う)
 					*/
 					iDelSize++;
 				}
@@ -823,17 +823,17 @@ void CPropEditUI_Operation::AdjustUiData(
 			if (sOprationSel.iOperation == 0)
 			{
 				/**
-					��Ǝ�ޕύX�̏ꍇ�A�O��Ƃɂ���āA�c���p�����[�^�E�����p�����[�^��������܂�
-					�E����
-						�����������A�����������ɂ��܂��B���̓��Z�b�g���܂�
-					�E����
-						�����������A�����������ɂ��܂��B���̓��Z�b�g���܂�
-					�E�^�p�ԍ��ύX
-						�l�����Z�b�g���܂�
+					作業種類変更の場合、前作業によって、残すパラメータ・消すパラメータが分かれます
+					・増結
+						増結時刻を、入換発時刻にします。他はリセットします
+					・解結
+						解結時刻を、入換発時刻にします。他はリセットします
+					・運用番号変更
+						値をリセットします
 				*/
 				if (sOprationSelPrev.iOperation == 1)
 				{
-					//strEditData1���A���������E�����������Ȃ̂ŁA���̂܂܎c���܂�
+					//strEditData1が、増結時刻・入換発時刻なので、そのまま残します
 					if (pUiData->bSelectedAfter)
 					{
 						sOperationCont[pUiData->iListSelected].iComboData1 = m_iStandardShuntTrackIndex[1];
@@ -866,17 +866,17 @@ void CPropEditUI_Operation::AdjustUiData(
 			else if (sOprationSel.iOperation == 1)
 			{
 				/**
-					��Ǝ�ޕύX�̏ꍇ�A�O��Ƃɂ���āA�c���p�����[�^�E�����p�����[�^��������܂�
-					�E����
-						�������������A���������ɂ��܂��B���̓��Z�b�g���܂�
-					�E����
-						�����������A���������ɂ��܂��B���̓��Z�b�g���܂�
-					�E�^�p�ԍ��ύX
-						�l�����Z�b�g���܂�
+					作業種類変更の場合、前作業によって、残すパラメータ・消すパラメータが分かれます
+					・入換
+						入換発時刻を、増結時刻にします。他はリセットします
+					・解結
+						解結時刻を、増結時刻にします。他はリセットします
+					・運用番号変更
+						値をリセットします
 				*/
 				if (sOprationSelPrev.iOperation == 0)
 				{
-					//strEditData1���A���������E�����������Ȃ̂ŁA���̂܂܎c���܂�
+					//strEditData1が、増結時刻・入換発時刻なので、そのまま残します
 					sOperationCont[pUiData->iListSelected].iComboData1 = 0;
 					sOperationCont[pUiData->iListSelected].strEditData2.clear();
 				}
@@ -892,7 +892,7 @@ void CPropEditUI_Operation::AdjustUiData(
 				//	sOperationCont[pUiData->iListSelected].strOperationNumber.clear();
 				//}
 
-				//��Ƃ������ɕς�����ꍇ�́A�O��Ƃ�ǉ����܂�
+				//作業が増結に変わった場合は、前作業を追加します
 				Operation sOperationAdd;
 				sOperationAdd.iOperation = 5;
 				sOperationAdd.iLevel = sOprationSel.iLevel;
@@ -900,19 +900,19 @@ void CPropEditUI_Operation::AdjustUiData(
 				sOperationCont.insert(
 					sOperationCont.begin() + pUiData->iListSelected,
 					sOperationAdd);
-				//��ƒǉ��ɂ��A�I���ʒu����̕␳���s���܂�
+				//作業追加による、選択位置ずれの補正を行います
 				pUiData->iListSelected++;
 			}
 			else if (sOprationSel.iOperation == 2)
 			{
 				/**
-					��Ǝ�ޕύX�̏ꍇ�A�O��Ƃɂ���āA�c���p�����[�^�E�����p�����[�^��������܂�
-					�E����
-						�������������A���������ɂ��܂��B���̓��Z�b�g���܂�
-					�E����
-						�����������A���������ɂ��܂��B���̓��Z�b�g���܂�
-					�E�^�p�ԍ��ύX
-						�l�����Z�b�g���܂�
+					作業種類変更の場合、前作業によって、残すパラメータ・消すパラメータが分かれます
+					・入換
+						入換発時刻を、解結時刻にします。他はリセットします
+					・増結
+						増結時刻を、解結時刻にします。他はリセットします
+					・運用番号変更
+						値をリセットします
 				*/
 				if (sOprationSelPrev.iOperation == 0)
 				{
@@ -932,7 +932,7 @@ void CPropEditUI_Operation::AdjustUiData(
 				//{
 				//	sOperationCont[pUiData->iListSelected].strOperationNumber.clear();
 				//}
-				//��Ƃ������ɕς�����ꍇ�́A���Ƃ�ǉ����܂�
+				//作業が解結に変わった場合は、後作業を追加します
 				Operation sOperationAdd;
 				sOperationAdd.iOperation = 5;
 				sOperationAdd.iLevel = sOprationSel.iLevel;
@@ -944,14 +944,14 @@ void CPropEditUI_Operation::AdjustUiData(
 			else if (sOprationSel.iOperation == 6)
 			{
 				/**
-					��ōčl
-					��Ǝ�ޕύX�̏ꍇ�A�O��Ƃɂ���āA�c���p�����[�^�E�����p�����[�^��������܂�
-					�E����
-						�l�����Z�b�g���܂�
-					�E����
-						�l�����Z�b�g���܂�
-					�E����
-						�l�����Z�b�g���܂�
+					後で再考
+					作業種類変更の場合、前作業によって、残すパラメータ・消すパラメータが分かれます
+					・入換
+						値をリセットします
+					・増結
+						値をリセットします
+					・解結
+						値をリセットします
 				*/
 				//if (sOprationSelPrev.iOperation == 0)
 				//{
@@ -961,7 +961,7 @@ void CPropEditUI_Operation::AdjustUiData(
 				//}
 				//if (sOprationSelPrev.iOperation == 1)
 				//{
-				//	//strEditData1���A���������E�����������Ȃ̂ŁA���̂܂܎c���܂�
+				//	//strEditData1が、増結時刻・入換発時刻なので、そのまま残します
 				//	sOperationCont[pUiData->iListSelected].iComboData1 = 0;
 				//	sOperationCont[pUiData->iListSelected].strEditData2.clear();
 				//}
@@ -1169,15 +1169,15 @@ void CPropEditUI_Operation::AdjustUiData(
 				sOprationSel.iOperation == 5)
 			{
 				/**
-					�����̐��K��
-					(1)���p�ϊ�
-					(2)���̕⊮
-						����⊮����Ƃ���
-						(a)�n���w�O��ƁE�I���w���������ƁE�����̑O��Ƃ͌������⊮
-						(b)�I���w���ƁE�n���w�������O��ƁE�����̌��Ƃ͑O������⊮����
-					�Ȃ��A�����̏ꍇ�́A�ŏ��ɓ�������������̕⊮���s���܂�
-					�H���O�n���̏ꍇ�́A�ŏ��ɓ��w����������̕⊮���s���܂�
-					�H���O�I���̏ꍇ�́A�I���w����������̕⊮�͍s���܂���
+					時刻の正規化
+					(1)半角変換
+					(2)時の補完
+						時を補完するときは
+						(a)始発駅前作業・終着駅を除く後作業・増結の前作業は後方から補完
+						(b)終着駅後作業・始発駅を除く前作業・解結の後作業は前方から補完する
+					なお、入換の場合は、最初に入換着時刻からの補完も行います
+					路線外始発の場合は、最初に当駅着時刻からの補完も行います
+					路線外終着の場合は、終着駅着時刻からの補完は行いません
 				*/
 				CdDedJikoku aJikokuOpeChaku;
 				if (sOprationSel.iOperation == 0)
@@ -1202,7 +1202,7 @@ void CPropEditUI_Operation::AdjustUiData(
 				if (aJikokuOpeChaku.isNull() && sOprationSel.iLevel.size() > 1)
 				{
 					/**
-						iLevel��2�v�f�ȏ゠��ꍇ�́A�q��ƂȂ̂ŁA�O��Ƃ����Ƃ����ׂ�K�v������܂�
+						iLevelが2要素以上ある場合は、子作業なので、前作業か後作業が調べる必要があります
 					*/
 					vector<int> iLevelSearch = sOprationSel.iLevel;
 					iLevelSearch.pop_back();
@@ -1211,10 +1211,10 @@ void CPropEditUI_Operation::AdjustUiData(
 						if (sOperationCont[idxp].iLevel == iLevelSearch &&
 							idxp > pUiData->iListSelected)
 						{
-							//idxp(����)����ɂ��遨�������⊮�A������Ƃ�����
+							//idxp(増結)が後にある→後方から補完、増結作業が下限
 							CdDedJikoku JikokuNext;
 
-							if (sOprationSel.iOperation == 4)//�H���O�n��
+							if (sOprationSel.iOperation == 4)//路線外始発
 							{
 								JikokuNext = CdDedJikoku(
 									sOprationSel.strEditData2);
@@ -1226,8 +1226,8 @@ void CPropEditUI_Operation::AdjustUiData(
 								if (sOperationCont[idxb].iLevel.size() > sOprationSel.iLevel.size())
 								{
 									/**
-										�T���ӏ���iLevel�v�f�����AsOprationSel���������ꍇ�́A
-										�ʍ�Ƃ̎q��ƂȂ̂ŁA�X�L�b�v����
+										探索箇所のiLevel要素数が、sOprationSelよりも多い場合は、
+										別作業の子作業なので、スキップする
 									*/
 									continue;
 								}
@@ -1235,7 +1235,7 @@ void CPropEditUI_Operation::AdjustUiData(
 									sOperationCont[idxb].iOperation == 1)
 								{
 									/**
-										�����E�����̏ꍇ�́AstrEditData1(�����������E��������)������
+										入換・増結の場合は、strEditData1(入換発時刻・増結時刻)を見る
 									*/
 									CdDedJikoku aJikoku(
 										sOperationCont[idxb].strEditData1);
@@ -1249,9 +1249,9 @@ void CPropEditUI_Operation::AdjustUiData(
 									sOperationCont[idxb].iOperation == 2)
 								{
 									/**
-										�����E�����̏ꍇ�́AstrEditData2(�����������E��������)������
-										���������������݂���ꍇ�́Abreak�ł����ɂ͓���Ȃ��B
-										�������Ƃ��āA���������������̓����������L��Ԃ͂Ȃ����A�ꉞ
+										入換・解結の場合は、strEditData2(入換着時刻・解結時刻)を見る
+										入換発時刻が存在する場合は、breakでここには入らない。
+										※原則として、入換発時刻無しの入換着時刻有状態はないが、一応
 									*/
 									CdDedJikoku aJikoku(
 										sOperationCont[idxb].strEditData2);
@@ -1281,7 +1281,7 @@ void CPropEditUI_Operation::AdjustUiData(
 						else if (sOperationCont[idxp].iLevel == iLevelSearch &&
 							idxp < pUiData->iListSelected)
 						{
-							//idxp(����)���O�ɂ��遨�O������⊮�A������Ƃ����
+							//idxp(解結)が前にある→前方から補完、解結作業が上限
 							CdDedJikoku JikokuPrev;
 							for (int idxa = pUiData->iListSelected - 1;
 								idxa >= idxp; idxa--)
@@ -1289,8 +1289,8 @@ void CPropEditUI_Operation::AdjustUiData(
 								if (sOperationCont[idxa].iLevel.size() > sOprationSel.iLevel.size())
 								{
 									/**
-										�T���ӏ���iLevel�v�f�����AsOprationSel���������ꍇ�́A
-										�ʍ�Ƃ̎q��ƂȂ̂ŁA�X�L�b�v����
+										探索箇所のiLevel要素数が、sOprationSelよりも多い場合は、
+										別作業の子作業なので、スキップする
 									*/
 									continue;
 								}
@@ -1298,7 +1298,7 @@ void CPropEditUI_Operation::AdjustUiData(
 									sOperationCont[idxa].iOperation == 2)
 								{
 									/**
-										�����E�����̏ꍇ�́AstrEditData2(�����������E��������)������
+										入換・解結の場合は、strEditData2(入換着時刻・解結時刻)を見る
 									*/
 									CdDedJikoku aJikoku(
 										sOperationCont[idxa].strEditData2);
@@ -1312,8 +1312,8 @@ void CPropEditUI_Operation::AdjustUiData(
 									sOperationCont[idxa].iOperation == 1)
 								{
 									/**
-										�����E�����̏ꍇ�́AstrEditData1(�����������E��������)������
-										���������������݂���ꍇ�́Abreak�ł����ɂ͓���Ȃ��B
+										入換・増結の場合は、strEditData1(入換発時刻・増結時刻)を見る
+										入換着時刻が存在する場合は、breakでここには入らない。
 									*/
 									CdDedJikoku aJikoku(
 										sOperationCont[idxa].strEditData1);
@@ -1349,11 +1349,11 @@ void CPropEditUI_Operation::AdjustUiData(
 					if (m_iChakuEkiOrder < 0 && !pUiData->bSelectedAfter)
 					{
 						/**
-							�n���w�O��Ƃ̏ꍇ�́A�܂��O��Ƃ�����Ɍ���B
-							�������H���O�n���̏ꍇ�́A���w���������ŏ��Ɍ���
+							始発駅前作業の場合は、まず前作業を後方に見る。
+							ただし路線外始発の場合は、当駅着時刻を最初に見る
 						*/
 
-						if (sOprationSel.iOperation == 4)//�H���O�n��
+						if (sOprationSel.iOperation == 4)//路線外始発
 						{
 							JikokuNext = CdDedJikoku(
 								sOprationSel.strEditData2);
@@ -1370,7 +1370,7 @@ void CPropEditUI_Operation::AdjustUiData(
 								pUiData->sOperationB[idxb].iOperation == 1)
 							{
 								/**
-									�����E�����̏ꍇ�́AstrEditData1(�����������E��������)������
+									入換・増結の場合は、strEditData1(入換発時刻・増結時刻)を見る
 								*/
 								CdDedJikoku aJikoku(
 									pUiData->sOperationB[idxb].strEditData1);
@@ -1384,9 +1384,9 @@ void CPropEditUI_Operation::AdjustUiData(
 								pUiData->sOperationB[idxb].iOperation == 2)
 							{
 								/**
-									�����E�����̏ꍇ�́AstrEditData2(�����������E��������)������
-									���������������݂���ꍇ�́Abreak�ł����ɂ͓���Ȃ��B
-									�������Ƃ��āA���������������̓����������L��Ԃ͂Ȃ����A�ꉞ
+									入換・解結の場合は、strEditData2(入換着時刻・解結時刻)を見る
+									入換発時刻が存在する場合は、breakでここには入らない。
+									※原則として、入換発時刻無しの入換着時刻有状態はないが、一応
 								*/
 								CdDedJikoku aJikoku(
 									pUiData->sOperationB[idxb].strEditData2);
@@ -1402,9 +1402,9 @@ void CPropEditUI_Operation::AdjustUiData(
 					if (m_iHatsuEkiOrder >= 0 && pUiData->bSelectedAfter)
 					{
 						/**
-							���ƒT���̏����ʒu�B
-							�n���w�O��ƂȂ�0����A
-							���ƂȂ�A���X�g�I���ʒu�̈������
+							後作業探索の初期位置。
+							始発駅前作業なら0から、
+							後作業なら、リスト選択位置の一つ下から
 						*/
 						idxa = pUiData->iListSelected + 1;
 					}
@@ -1419,7 +1419,7 @@ void CPropEditUI_Operation::AdjustUiData(
 							pUiData->sOperationA[idxa].iOperation == 1)
 						{
 							/**
-								�����E�����̏ꍇ�́AstrEditData1(�����������E��������)������
+								入換・増結の場合は、strEditData1(入換発時刻・増結時刻)を見る
 							*/
 							CdDedJikoku aJikoku(
 								pUiData->sOperationA[idxa].strEditData1);
@@ -1434,9 +1434,9 @@ void CPropEditUI_Operation::AdjustUiData(
 							pUiData->sOperationA[idxa].iOperation == 2)
 						{
 							/**
-								�����E�����̏ꍇ�́AstrEditData2(�����������E��������)������
-								���������������݂���ꍇ�́Abreak�ł����ɂ͓���Ȃ��B
-								�������Ƃ��āA���������������̓����������L��Ԃ͂Ȃ����A�ꉞ
+								入換・解結の場合は、strEditData2(入換着時刻・解結時刻)を見る
+								入換発時刻が存在する場合は、breakでここには入らない。
+								※原則として、入換発時刻無しの入換着時刻有状態はないが、一応
 							*/
 							CdDedJikoku aJikoku(
 								pUiData->sOperationA[idxa].strEditData2);
@@ -1451,7 +1451,7 @@ void CPropEditUI_Operation::AdjustUiData(
 					if (JikokuNext.isNull())
 					{
 						/**
-							���Ƃ����ׂČ��āA��̎�����������Ȃ�������A������������
+							後作業をすべて見て、後の時刻が見つからなかったら、発時刻を見る
 						*/
 						JikokuNext = CdDedJikoku(pUiData->strHatsujikoku);
 					}
@@ -1477,7 +1477,7 @@ void CPropEditUI_Operation::AdjustUiData(
 					if (m_iHatsuEkiOrder < 0 && pUiData->bSelectedAfter)
 					{
 						/**
-							�I���w���Ƃ̏ꍇ�́A�܂����Ƃ�O���Ɍ���B
+							終着駅後作業の場合は、まず後作業を前方に見る。
 						*/
 						for (int idxa = pUiData->iListSelected - 1;
 							idxa >= 0 && JikokuPrev.isNull(); idxa--)
@@ -1490,7 +1490,7 @@ void CPropEditUI_Operation::AdjustUiData(
 								pUiData->sOperationA[idxa].iOperation == 2)
 							{
 								/**
-									�����E�����̏ꍇ�́AstrEditData2(�����������E��������)������
+									入換・解結の場合は、strEditData2(入換着時刻・解結時刻)を見る
 								*/
 								CdDedJikoku aJikoku(
 									pUiData->sOperationA[idxa].strEditData2);
@@ -1504,8 +1504,8 @@ void CPropEditUI_Operation::AdjustUiData(
 								pUiData->sOperationA[idxa].iOperation == 1)
 							{
 								/**
-									�����E�����̏ꍇ�́AstrEditData1(�����������E��������)������
-									���������������݂���ꍇ�́Abreak�ł����ɂ͓���Ȃ��B
+									入換・増結の場合は、strEditData1(入換発時刻・増結時刻)を見る
+									入換着時刻が存在する場合は、breakでここには入らない。
 								*/
 								CdDedJikoku aJikoku(
 									pUiData->sOperationA[idxa].strEditData1);
@@ -1521,9 +1521,9 @@ void CPropEditUI_Operation::AdjustUiData(
 					if (m_iChakuEkiOrder >= 0 && !pUiData->bSelectedAfter)
 					{
 						/**
-							�O��ƒT���̏����ʒu�B
-							�I���w���ƂȂ烊�X�g��������A
-							�O��ƂȂ�A���X�g�I���ʒu�̈�ォ��
+							前作業探索の初期位置。
+							終着駅後作業ならリスト末尾から、
+							前作業なら、リスト選択位置の一つ上から
 						*/
 						idxb = pUiData->iListSelected - 1;
 					}
@@ -1538,7 +1538,7 @@ void CPropEditUI_Operation::AdjustUiData(
 							pUiData->sOperationB[idxb].iOperation == 2)
 						{
 							/**
-								�����E�����̏ꍇ�́AstrEditData2(�����������E��������)������
+								入換・解結の場合は、strEditData2(入換着時刻・解結時刻)を見る
 							*/
 							CdDedJikoku aJikoku(
 								pUiData->sOperationB[idxb].strEditData2);
@@ -1553,8 +1553,8 @@ void CPropEditUI_Operation::AdjustUiData(
 							pUiData->sOperationB[idxb].iOperation == 1)
 						{
 							/**
-								�����E�����̏ꍇ�́AstrEditData1(�����������E��������)������
-								���������������݂���ꍇ�́Abreak�ł����ɂ͓���Ȃ��B
+								入換・増結の場合は、strEditData1(入換発時刻・増結時刻)を見る
+								入換着時刻が存在する場合は、breakでここには入らない。
 							*/
 							CdDedJikoku aJikoku(
 								pUiData->sOperationB[idxb].strEditData1);
@@ -1569,7 +1569,7 @@ void CPropEditUI_Operation::AdjustUiData(
 					if (JikokuPrev.isNull())
 					{
 						/**
-							�O��Ƃ����ׂČ��āA�O�̎�����������Ȃ�������A������������
+							前作業をすべて見て、前の時刻が見つからなかったら、着時刻を見る
 						*/
 						JikokuPrev = CdDedJikoku(pUiData->strChakujikoku);
 					}
@@ -1592,7 +1592,7 @@ void CPropEditUI_Operation::AdjustUiData(
 
 			if (sOprationSel.iOperation == 0)
 			{
-				//	�����������̑O��l�E���ݒl�E�����������̓��͂��擾
+				//	入換発時刻の前回値・現在値・入換発時刻の入力を取得
 				CdDedJikoku	jikokuOperationHatsuPrev(sOprationSelPrev.strEditData1);
 				CdDedJikoku	jikokuOperationHatsu(sOprationSel.strEditData1);
 				CdDedJikoku jikokuOperationChaku(sOprationSel.strEditData2);
@@ -1616,15 +1616,15 @@ void CPropEditUI_Operation::AdjustUiData(
 				sOprationSel.iOperation == 4)
 			{
 				/**
-					�����̐��K��
-					(1)���p�ϊ�
-					(2)���̕⊮
-						����⊮����Ƃ���
-						(a)�n���w�O��ƁE�I���w���������ƁE�����̑O��Ƃ͌������⊮
-						(b)�I���w���ƁE�n���w�������O��ƁE�����̌��Ƃ͑O������⊮����
-					�Ȃ��A�����̏ꍇ�́A�ŏ��ɓ�������������̕⊮���s��
-					�H���O�n���̏ꍇ�́A�n���w����������̕⊮�͍s��Ȃ�
-					�H���O�I���̏ꍇ�́A���w����������̕⊮���s��
+					時刻の正規化
+					(1)半角変換
+					(2)時の補完
+						時を補完するときは
+						(a)始発駅前作業・終着駅を除く後作業・増結の前作業は後方から補完
+						(b)終着駅後作業・始発駅を除く前作業・解結の後作業は前方から補完する
+					なお、入換の場合は、最初に入換発時刻からの補完も行う
+					路線外始発の場合は、始発駅発時刻からの補完は行わない
+					路線外終着の場合は、当駅発時刻からの補完も行う
 				*/
 				CdDedJikoku aJikokuOpeHatsu;
 				if (sOprationSel.iOperation == 0)
@@ -1650,7 +1650,7 @@ void CPropEditUI_Operation::AdjustUiData(
 				{
 
 					/**
-						iLevel��2�v�f�ȏ゠��ꍇ�́A�q��ƂȂ̂ŁA�O��Ƃ����Ƃ����ׂ�K�v������܂�
+						iLevelが2要素以上ある場合は、子作業なので、前作業か後作業が調べる必要があります
 					*/
 					vector<int> iLevelSearch = sOprationSel.iLevel;
 					iLevelSearch.pop_back();
@@ -1659,7 +1659,7 @@ void CPropEditUI_Operation::AdjustUiData(
 						if (sOperationCont[idxp].iLevel == iLevelSearch &&
 							idxp > pUiData->iListSelected)
 						{
-							//idxp(����)����ɂ��遨�������⊮�A������Ƃ�����
+							//idxp(増結)が後にある→後方から補完、増結作業が下限
 							CdDedJikoku JikokuNext;
 							for (int idxb = pUiData->iListSelected + 1;
 								idxb <= idxp && JikokuNext.isNull(); idxb++)
@@ -1667,8 +1667,8 @@ void CPropEditUI_Operation::AdjustUiData(
 								if (sOperationCont[idxb].iLevel.size() > sOprationSel.iLevel.size())
 								{
 									/**
-										�T���ӏ���iLevel�v�f�����AsOprationSel���������ꍇ�́A
-										�ʍ�Ƃ̎q��ƂȂ̂ŁA�X�L�b�v����
+										探索箇所のiLevel要素数が、sOprationSelよりも多い場合は、
+										別作業の子作業なので、スキップする
 									*/
 									continue;
 								}
@@ -1676,7 +1676,7 @@ void CPropEditUI_Operation::AdjustUiData(
 									sOperationCont[idxb].iOperation == 1)
 								{
 									/**
-										�����E�����̏ꍇ�́AstrEditData1(�����������E��������)������
+										入換・増結の場合は、strEditData1(入換発時刻・増結時刻)を見る
 									*/
 									CdDedJikoku aJikoku(
 										sOperationCont[idxb].strEditData1);
@@ -1690,9 +1690,9 @@ void CPropEditUI_Operation::AdjustUiData(
 									sOperationCont[idxb].iOperation == 2)
 								{
 									/**
-										�����E�����̏ꍇ�́AstrEditData2(�����������E��������)������
-										���������������݂���ꍇ�́Abreak�ł����ɂ͓���Ȃ��B
-										�������Ƃ��āA���������������̓����������L��Ԃ͂Ȃ����A�ꉞ
+										入換・解結の場合は、strEditData2(入換着時刻・解結時刻)を見る
+										入換発時刻が存在する場合は、breakでここには入らない。
+										※原則として、入換発時刻無しの入換着時刻有状態はないが、一応
 									*/
 									CdDedJikoku aJikoku(
 										sOperationCont[idxb].strEditData2);
@@ -1722,10 +1722,10 @@ void CPropEditUI_Operation::AdjustUiData(
 						else if (sOperationCont[idxp].iLevel == iLevelSearch &&
 							idxp < pUiData->iListSelected)
 						{
-							//idxp(����)���O�ɂ��遨�O������⊮�A������Ƃ����
+							//idxp(解結)が前にある→前方から補完、解結作業が上限
 							CdDedJikoku JikokuPrev;
 
-							if (sOprationSel.iOperation == 4)//�H���O�I��
+							if (sOprationSel.iOperation == 4)//路線外終着
 							{
 								JikokuPrev = CdDedJikoku(
 									sOprationSel.strEditData1);
@@ -1737,8 +1737,8 @@ void CPropEditUI_Operation::AdjustUiData(
 								if (sOperationCont[idxa].iLevel.size() > sOprationSel.iLevel.size())
 								{
 									/**
-										�T���ӏ���iLevel�v�f�����AsOprationSel���������ꍇ�́A
-										�ʍ�Ƃ̎q��ƂȂ̂ŁA�X�L�b�v����
+										探索箇所のiLevel要素数が、sOprationSelよりも多い場合は、
+										別作業の子作業なので、スキップする
 									*/
 									continue;
 								}
@@ -1746,7 +1746,7 @@ void CPropEditUI_Operation::AdjustUiData(
 									sOperationCont[idxa].iOperation == 2)
 								{
 									/**
-										�����E�����̏ꍇ�́AstrEditData2(�����������E��������)������
+										入換・解結の場合は、strEditData2(入換着時刻・解結時刻)を見る
 									*/
 									CdDedJikoku aJikoku(
 										sOperationCont[idxa].strEditData2);
@@ -1760,8 +1760,8 @@ void CPropEditUI_Operation::AdjustUiData(
 									sOperationCont[idxa].iOperation == 1)
 								{
 									/**
-										�����E�����̏ꍇ�́AstrEditData1(�����������E��������)������
-										���������������݂���ꍇ�́Abreak�ł����ɂ͓���Ȃ��B
+										入換・増結の場合は、strEditData1(入換発時刻・増結時刻)を見る
+										入換着時刻が存在する場合は、breakでここには入らない。
 									*/
 									CdDedJikoku aJikoku(
 										sOperationCont[idxa].strEditData1);
@@ -1797,7 +1797,7 @@ void CPropEditUI_Operation::AdjustUiData(
 					if (m_iChakuEkiOrder < 0 && !pUiData->bSelectedAfter)
 					{
 						/**
-							�n���w�O��Ƃ̏ꍇ�́A�܂��O��Ƃ�����Ɍ���B
+							始発駅前作業の場合は、まず前作業を後方に見る。
 						*/
 						for (int idxb = pUiData->iListSelected + 1;
 							idxb < (int)pUiData->sOperationB.size(); idxb++)
@@ -1810,7 +1810,7 @@ void CPropEditUI_Operation::AdjustUiData(
 								pUiData->sOperationB[idxb].iOperation == 1)
 							{
 								/**
-									�����E�����̏ꍇ�́AstrEditData1(�����������E��������)������
+									入換・増結の場合は、strEditData1(入換発時刻・増結時刻)を見る
 								*/
 								CdDedJikoku aJikoku(
 									pUiData->sOperationB[idxb].strEditData1);
@@ -1824,9 +1824,9 @@ void CPropEditUI_Operation::AdjustUiData(
 								pUiData->sOperationB[idxb].iOperation == 2)
 							{
 								/**
-									�����E�����̏ꍇ�́AstrEditData2(�����������E��������)������
-									���������������݂���ꍇ�́Abreak�ł����ɂ͓���Ȃ��B
-									�������Ƃ��āA���������������̓����������L��Ԃ͂Ȃ����A�ꉞ
+									入換・解結の場合は、strEditData2(入換着時刻・解結時刻)を見る
+									入換発時刻が存在する場合は、breakでここには入らない。
+									※原則として、入換発時刻無しの入換着時刻有状態はないが、一応
 								*/
 								CdDedJikoku aJikoku(
 									pUiData->sOperationB[idxb].strEditData2);
@@ -1842,9 +1842,9 @@ void CPropEditUI_Operation::AdjustUiData(
 					if (m_iHatsuEkiOrder >= 0 && pUiData->bSelectedAfter)
 					{
 						/**
-							���ƒT���̏����ʒu�B
-							�n���w�O��ƂȂ�0����A
-							���ƂȂ�A���X�g�I���ʒu�̈������
+							後作業探索の初期位置。
+							始発駅前作業なら0から、
+							後作業なら、リスト選択位置の一つ下から
 						*/
 						idxa = pUiData->iListSelected + 1;
 					}
@@ -1859,7 +1859,7 @@ void CPropEditUI_Operation::AdjustUiData(
 							pUiData->sOperationA[idxa].iOperation == 1)
 						{
 							/**
-								�����E�����̏ꍇ�́AstrEditData1(�����������E��������)������
+								入換・増結の場合は、strEditData1(入換発時刻・増結時刻)を見る
 							*/
 							CdDedJikoku aJikoku(
 								pUiData->sOperationA[idxa].strEditData1);
@@ -1874,9 +1874,9 @@ void CPropEditUI_Operation::AdjustUiData(
 							pUiData->sOperationA[idxa].iOperation == 2)
 						{
 							/**
-								�����E�����̏ꍇ�́AstrEditData2(�����������E��������)������
-								���������������݂���ꍇ�́Abreak�ł����ɂ͓���Ȃ��B
-								�������Ƃ��āA���������������̓����������L��Ԃ͂Ȃ����A�ꉞ
+								入換・解結の場合は、strEditData2(入換着時刻・解結時刻)を見る
+								入換発時刻が存在する場合は、breakでここには入らない。
+								※原則として、入換発時刻無しの入換着時刻有状態はないが、一応
 							*/
 							CdDedJikoku aJikoku(
 								pUiData->sOperationA[idxa].strEditData2);
@@ -1891,7 +1891,7 @@ void CPropEditUI_Operation::AdjustUiData(
 					if (JikokuNext.isNull())
 					{
 						/**
-							���Ƃ����ׂČ��āA��̎�����������Ȃ�������A������������
+							後作業をすべて見て、後の時刻が見つからなかったら、発時刻を見る
 						*/
 						JikokuNext = CdDedJikoku(pUiData->strHatsujikoku);
 					}
@@ -1917,10 +1917,10 @@ void CPropEditUI_Operation::AdjustUiData(
 					if (m_iHatsuEkiOrder < 0 && pUiData->bSelectedAfter)
 					{
 						/**
-							�I���w���Ƃ̏ꍇ�́A�܂����Ƃ�O���Ɍ���B
-							�������A�H���O�I���̏ꍇ�́A���w���������ŏ��Ɍ���
+							終着駅後作業の場合は、まず後作業を前方に見る。
+							ただし、路線外終着の場合は、当駅発時刻を最初に見る
 						*/
-						if (sOprationSel.iOperation == 4)//�H���O�I��
+						if (sOprationSel.iOperation == 4)//路線外終着
 						{
 							JikokuPrev = CdDedJikoku(
 								sOprationSel.strEditData1);
@@ -1936,7 +1936,7 @@ void CPropEditUI_Operation::AdjustUiData(
 								pUiData->sOperationA[idxa].iOperation == 2)
 							{
 								/**
-									�����E�����̏ꍇ�́AstrEditData2(�����������E��������)������
+									入換・解結の場合は、strEditData2(入換着時刻・解結時刻)を見る
 								*/
 								CdDedJikoku aJikoku(
 									pUiData->sOperationA[idxa].strEditData2);
@@ -1950,8 +1950,8 @@ void CPropEditUI_Operation::AdjustUiData(
 								pUiData->sOperationA[idxa].iOperation == 1)
 							{
 								/**
-									�����E�����̏ꍇ�́AstrEditData1(�����������E��������)������
-									���������������݂���ꍇ�́Abreak�ł����ɂ͓���Ȃ��B
+									入換・増結の場合は、strEditData1(入換発時刻・増結時刻)を見る
+									入換着時刻が存在する場合は、breakでここには入らない。
 								*/
 								CdDedJikoku aJikoku(
 									pUiData->sOperationA[idxa].strEditData1);
@@ -1967,9 +1967,9 @@ void CPropEditUI_Operation::AdjustUiData(
 					if (m_iChakuEkiOrder >= 0 && !pUiData->bSelectedAfter)
 					{
 						/**
-							�O��ƒT���̏����ʒu�B
-							�I���w���ƂȂ烊�X�g��������A
-							�O��ƂȂ�A���X�g�I���ʒu�̈�ォ��
+							前作業探索の初期位置。
+							終着駅後作業ならリスト末尾から、
+							前作業なら、リスト選択位置の一つ上から
 						*/
 						idxb = pUiData->iListSelected - 1;
 					}
@@ -1984,7 +1984,7 @@ void CPropEditUI_Operation::AdjustUiData(
 							pUiData->sOperationB[idxb].iOperation == 2)
 						{
 							/**
-								�����E�����̏ꍇ�́AstrEditData2(�����������E��������)������
+								入換・解結の場合は、strEditData2(入換着時刻・解結時刻)を見る
 							*/
 							CdDedJikoku aJikoku(
 								pUiData->sOperationB[idxb].strEditData2);
@@ -1999,8 +1999,8 @@ void CPropEditUI_Operation::AdjustUiData(
 							pUiData->sOperationB[idxb].iOperation == 1)
 						{
 							/**
-								�����E�����̏ꍇ�́AstrEditData1(�����������E��������)������
-								���������������݂���ꍇ�́Abreak�ł����ɂ͓���Ȃ��B
+								入換・増結の場合は、strEditData1(入換発時刻・増結時刻)を見る
+								入換着時刻が存在する場合は、breakでここには入らない。
 							*/
 							CdDedJikoku aJikoku(
 								pUiData->sOperationB[idxb].strEditData1);
@@ -2015,7 +2015,7 @@ void CPropEditUI_Operation::AdjustUiData(
 					if (JikokuPrev.isNull())
 					{
 						/**
-							�O��Ƃ����ׂČ��āA�O�̎�����������Ȃ�������A������������
+							前作業をすべて見て、前の時刻が見つからなかったら、着時刻を見る
 						*/
 						JikokuPrev = CdDedJikoku(pUiData->strChakujikoku);
 					}
@@ -2090,8 +2090,8 @@ int CPropEditUI_Operation::CheckBeforeOperation(
 {
 	int iRv = 0;
 	/**
-		�܂��́A�����͈͂̍��v����ю����Ǝ��ʂł��Ȃ���������`�F�b�N�A
-		���̌�A�󔒎����̕⊮���s���B**�󔒎����̕⊮�́AUiDataToTarget�ōs���B
+		まずは、時刻範囲の合致および時刻と識別できない文字列をチェック、
+		その後、空白時刻の補完を行う。**空白時刻の補完は、UiDataToTargetで行う。
 	*/
 
 		for (int idx = 0; idx < (int)sOperationB.size() && iRv >= 0; idx++)
@@ -2099,12 +2099,12 @@ int CPropEditUI_Operation::CheckBeforeOperation(
 
 			const Operation& pOperation = sOperationB[idx];
 			/**
-				�`�F�b�N�ΏۂƂȂ�̂�
-				(1)iLevel�̏�ʁuiLevelSearch.size()�v�����AiLevelSearch.size()�ƈ�v����
-				(2)iLevel.size()��iLevelSearch.size()+1�Ɠ�����
-				(��1)iLevelSearch����̏ꍇ�́AiLevel.size()��1�̕��S�Ă��ΏۂɂȂ�B
-				(��2)iLevelSearch��(1,2)�̏ꍇ�́AiLevel��(1.2.0)��(1.2.2)���ΏۂƂȂ�A
-					(1.1.0)��(1.2.1.0)�͑ΏۂɂȂ�Ȃ�
+				チェック対象となるのは
+				(1)iLevelの上位「iLevelSearch.size()」桁が、iLevelSearch.size()と一致する
+				(2)iLevel.size()がiLevelSearch.size()+1と等しい
+				(例1)iLevelSearchが空の場合は、iLevel.size()が1の物全てが対象になる。
+				(例2)iLevelSearchが(1,2)の場合は、iLevelが(1.2.0)や(1.2.2)が対象となり、
+					(1.1.0)や(1.2.1.0)は対象にならない
 			*/
 
 			if (pOperation.iLevel.size() != iLevelSearch.size() + 1)
@@ -2127,8 +2127,8 @@ int CPropEditUI_Operation::CheckBeforeOperation(
 			if (pOperation.iOperation == 0)
 			{
 				/**
-					�����̏ꍇ
-						�����������E�������������s���łȂ����𒲂ׂ�
+					入換の場合
+						入換発時刻・入換着時刻が不正でないかを調べる
 				*/
 				if (iRv >= 0)
 				{
@@ -2157,10 +2157,10 @@ int CPropEditUI_Operation::CheckBeforeOperation(
 			else if (pOperation.iOperation == 1)
 			{
 				/**
-					�����̏ꍇ
-						�����������s���łȂ����𒲂ׂ�
+					増結の場合
+						増結時刻が不正でないかを調べる
 
-					�����Ґ��̑O��Ƃ̃`�F�b�N���s���B
+					増結編成の前作業のチェックを行う。
 				*/
 				if (iRv >= 0)
 				{
@@ -2185,12 +2185,12 @@ int CPropEditUI_Operation::CheckBeforeOperation(
 			else if (pOperation.iOperation == 2)
 			{
 				/**
-					�����̏ꍇ
-						�����������s���łȂ����𒲂ׂ�
-						�����ʒuIndex�������ł��邩�ǂ����A1-10�͈̔͂Ɏ��܂��Ă��邩�𒲂ׂ�
+					解結の場合
+						解結時刻が不正でないかを調べる
+						解結位置Indexが数字であるかどうか、1-10の範囲に収まっているかを調べる
 
-					������������̏ꍇ�ApJikokuBack�������������Ƃ݂Ȃ��A
-					�����Ґ��̌��Ƃ̃`�F�b�N���s���B
+					解結時刻が空の場合、pJikokuBackを仮解結時刻とみなし、
+					解結編成の後作業のチェックを行う。
 				*/
 				if (iRv >= 0)
 				{
@@ -2244,10 +2244,10 @@ int CPropEditUI_Operation::CheckBeforeOperation(
 			else if (pOperation.iOperation == 3)
 			{
 				/**
-					�o��̏ꍇ
-						�o�掞�����s���łȂ����𒲂ׂ�
-						�^�p�ԍ�����','���܂܂�Ă��Ȃ����ǂ����𒲂ׂ�
-						���o��A�g�R�[�h����','�A'/'�A'$'���܂܂�Ă��Ȃ����ǂ����𒲂ׂ�
+					出区の場合
+						出区時刻が不正でないかを調べる
+						運用番号内に','が含まれていないかどうかを調べる
+						入出区連携コード内に','、'/'、'$'が含まれていないかどうかを調べる
 				*/
 				if (iRv >= 0)
 				{
@@ -2303,11 +2303,11 @@ int CPropEditUI_Operation::CheckBeforeOperation(
 			else if (pOperation.iOperation == 4)
 			{
 				/**
-					�H���O�n���̏ꍇ
-						�H���O�n���w�������E���w���������s���łȂ����𒲂ׂ�
-						�H���O�n���w�������́A��̏ꍇ�ł��G���[�ɂ���
-						�^�p�ԍ�����','���܂܂�Ă��Ȃ����ǂ����𒲂ׂ�
-						���o��A�g�R�[�h����','�A'/'�A'$'���܂܂�Ă��Ȃ����ǂ����𒲂ׂ�
+					路線外始発の場合
+						路線外始発駅発時刻・当駅着時刻が不正でないかを調べる
+						路線外始発駅発時刻は、空の場合でもエラーにする
+						運用番号内に','が含まれていないかどうかを調べる
+						入出区連携コード内に','、'/'、'$'が含まれていないかどうかを調べる
 				*/
 				if (iRv >= 0)
 				{
@@ -2381,9 +2381,9 @@ int CPropEditUI_Operation::CheckBeforeOperation(
 			else if (pOperation.iOperation == 5)
 			{
 				/**
-					�O��Ԑڑ��̏ꍇ
-						�N�_�������s���łȂ����𒲂ׂ�
-						�^�p�ԍ�����','���܂܂�Ă��Ȃ����ǂ����𒲂ׂ�
+					前列車接続の場合
+						起点時刻が不正でないかを調べる
+						運用番号内に','が含まれていないかどうかを調べる
 				*/
 				if (iRv >= 0)
 				{
@@ -2414,9 +2414,9 @@ int CPropEditUI_Operation::CheckBeforeOperation(
 			else if (pOperation.iOperation == 6)
 			{
 				/**
-					�^�p�ԍ��ύX�̏ꍇ
-						�^�p�ԍ������]�������̏ꍇ�A�^�p�ԍ����󔒂��ǂ����𒲂ׂ�
-						�^�p�ԍ�����','���܂܂�Ă��Ȃ����ǂ����𒲂ׂ�
+					運用番号変更の場合
+						運用番号順反転が無効の場合、運用番号が空白かどうかを調べる
+						運用番号内に','が含まれていないかどうかを調べる
 				*/
 				if (iRv >= 0)
 				{
@@ -2455,20 +2455,20 @@ int CPropEditUI_Operation::CheckAfterOperation(
 {
 	int iRv = 0;
 	/**
-		�܂��́A�����͈͂̍��v����ю����Ǝ��ʂł��Ȃ���������`�F�b�N�A
-		���̌�A�󔒎����̕⊮���s���B**�󔒎����̕⊮�́AUiDataToTarget�ōs���B
+		まずは、時刻範囲の合致および時刻と識別できない文字列をチェック、
+		その後、空白時刻の補完を行う。**空白時刻の補完は、UiDataToTargetで行う。
 	*/
 	for (int idx = 0; idx < (int)sOperationA.size() && iRv >= 0; idx++)
 	{
 
 		const Operation& pOperation = sOperationA[idx];
 		/**
-			�`�F�b�N�ΏۂƂȂ�̂�
-			(1)iLevel�̏�ʁuiLevelSearch.size()�v�����AiLevelSearch.size()�ƈ�v����
-			(2)iLevel.size()��iLevelSearch.size()+1�Ɠ�����
-			(��1)iLevelSearch����̏ꍇ�́AiLevel.size()��1�̕��S�Ă��ΏۂɂȂ�B
-			(��2)iLevelSearch��(1,2)�̏ꍇ�́AiLevel��(1.2.0)��(1.2.2)���ΏۂƂȂ�A
-				(1.1.0)��(1.2.1.0)�͑ΏۂɂȂ�Ȃ�
+			チェック対象となるのは
+			(1)iLevelの上位「iLevelSearch.size()」桁が、iLevelSearch.size()と一致する
+			(2)iLevel.size()がiLevelSearch.size()+1と等しい
+			(例1)iLevelSearchが空の場合は、iLevel.size()が1の物全てが対象になる。
+			(例2)iLevelSearchが(1,2)の場合は、iLevelが(1.2.0)や(1.2.2)が対象となり、
+				(1.1.0)や(1.2.1.0)は対象にならない
 		*/
 		if (pOperation.iLevel.size() != iLevelSearch.size() + 1)
 		{
@@ -2490,8 +2490,8 @@ int CPropEditUI_Operation::CheckAfterOperation(
 		if (pOperation.iOperation == 0)
 		{
 			/**
-				�����̏ꍇ
-					�����������E�������������s���łȂ����𒲂ׂ�
+				入換の場合
+					入換発時刻・入換着時刻が不正でないかを調べる
 			*/
 			if (iRv >= 0)
 			{
@@ -2520,11 +2520,11 @@ int CPropEditUI_Operation::CheckAfterOperation(
 		else if (pOperation.iOperation == 1)
 		{
 			/**
-				�����̏ꍇ
-					�����������s���łȂ����𒲂ׂ�
+				増結の場合
+					増結時刻が不正でないかを調べる
 
-				������������̏ꍇ�ApJikokuFront�������������Ƃ݂Ȃ��A
-				�����Ґ��̑O��Ƃ̃`�F�b�N���s���B
+				増結時刻が空の場合、pJikokuFrontを仮増結時刻とみなし、
+				増結編成の前作業のチェックを行う。
 			*/
 			if (iRv >= 0)
 			{
@@ -2552,12 +2552,12 @@ int CPropEditUI_Operation::CheckAfterOperation(
 		else if (pOperation.iOperation == 2)
 		{
 			/**
-				�����̏ꍇ
-					�����������s���łȂ����𒲂ׂ�
-					�����ʒuIndex�������ł��邩�ǂ����A1-10�͈̔͂Ɏ��܂��Ă��邩�𒲂ׂ�
+				解結の場合
+					解結時刻が不正でないかを調べる
+					解結位置Indexが数字であるかどうか、1-10の範囲に収まっているかを調べる
 
-				������������̏ꍇ�ApJikokuFront�������������Ƃ݂Ȃ��A
-				�����Ґ��̌��Ƃ̃`�F�b�N���s���B
+				解結時刻が空の場合、pJikokuFrontを仮解結時刻とみなし、
+				解結編成の後作業のチェックを行う。
 			*/
 			if (iRv >= 0)
 			{
@@ -2611,9 +2611,9 @@ int CPropEditUI_Operation::CheckAfterOperation(
 		else if (pOperation.iOperation == 3)
 		{
 			/**
-				����̏ꍇ
-					���掞�����s���łȂ����𒲂ׂ�
-					���o��A�g�R�[�h����','�A'/'�A'$'���܂܂�Ă��Ȃ����ǂ����𒲂ׂ�
+				入区の場合
+					入区時刻が不正でないかを調べる
+					入出区連携コード内に','、'/'、'$'が含まれていないかどうかを調べる
 			*/
 			if (iRv >= 0)
 			{
@@ -2654,11 +2654,11 @@ int CPropEditUI_Operation::CheckAfterOperation(
 		else if (pOperation.iOperation == 4)
 		{
 			/**
-				�H���O�I���̏ꍇ
-					���w�������E�H���O�I���w���������s���łȂ����𒲂ׂ�
-					�H���O�I���w�������́A�͈̓`�F�b�N�̑Ώۂɂ͂��Ȃ��B
-					�H���O�I���w�������́A��̏ꍇ�ł��G���[�ɂ���
-					���o��A�g�R�[�h����','�A'/'�A'$'���܂܂�Ă��Ȃ����ǂ����𒲂ׂ�
+				路線外終着の場合
+					当駅発時刻・路線外終着駅着時刻が不正でないかを調べる
+					路線外終着駅着時刻は、範囲チェックの対象にはしない。
+					路線外終着駅着時刻は、空の場合でもエラーにする
+					入出区連携コード内に','、'/'、'$'が含まれていないかどうかを調べる
 			*/
 			if (iRv >= 0)
 			{
@@ -2718,8 +2718,8 @@ int CPropEditUI_Operation::CheckAfterOperation(
 		else if (pOperation.iOperation == 5)
 		{
 			/**
-				����Ԑڑ��̏ꍇ
-					�I�_�������s���łȂ����𒲂ׂ�
+				次列車接続の場合
+					終点時刻が不正でないかを調べる
 			*/
 			if (iRv >= 0)
 			{
@@ -2736,9 +2736,9 @@ int CPropEditUI_Operation::CheckAfterOperation(
 		else if (pOperation.iOperation == 6)
 		{
 			/**
-				�^�p�ԍ��ύX�̏ꍇ
-					�^�p�ԍ������]�������̏ꍇ�A�^�p�ԍ����󔒂��ǂ����𒲂ׂ�
-					�^�p�ԍ�����','���܂܂�Ă��Ȃ����ǂ����𒲂ׂ�
+				運用番号変更の場合
+					運用番号順反転が無効の場合、運用番号が空白かどうかを調べる
+					運用番号内に','が含まれていないかどうかを調べる
 			*/
 			if (iRv >= 0)
 			{
@@ -2776,18 +2776,18 @@ int CPropEditUI_Operation::CheckUiData(
 	int iRv = 0 ; 
 
 	/**
-		�����̃`�F�b�N
-			�ҏW�Ώۂ����ԉw�̏ꍇ�́A�����������������ɑS�Ă̎��������܂��Ă��Ȃ���΂Ȃ�Ȃ�
-				�Ȃ��A�T�������́A�O��Ɓ����Ƃ̏��ɂȂ�̂ŁA
-				���Ƃ͈̔͂́A�O��Ƃ̍ŏI�������������ɂȂ�B
-			�n���w�̏ꍇ�́A����������O24���Ԉȓ��ɑS�Ă̎��������܂��Ă��Ȃ���΂Ȃ�Ȃ�
-				�Ȃ��A�T�������́A���Ɓ��O��Ƃ̏��ɂȂ�̂ŁA
-				�O��Ƃ͈̔͂́A���Ƃ̔�������24���ԑO���ŏ��̎����ɂȂ�B
-			�I���w�̏ꍇ�́A�����������24���Ԉȓ��ɑS�Ă̎��������܂��Ă��Ȃ���΂Ȃ�Ȃ�
-				�Ȃ��A�T�������́A�O��Ɓ����Ƃ̏��ɂȂ�̂ŁA
-				���Ƃ͈̔͂́A�O��Ƃ̍ŏI��������������24���Ԍ�ɂȂ�B
+		時刻のチェック
+			編集対象が中間駅の場合は、着時刻→発時刻内に全ての時刻が収まっていなければならない
+				なお、探索順序は、前作業→後作業の順になるので、
+				後作業の範囲は、前作業の最終時刻→発時刻になる。
+			始発駅の場合は、発時刻から前24時間以内に全ての時刻が収まっていなければならない
+				なお、探索順序は、後作業→前作業の順になるので、
+				前作業の範囲は、後作業の発時刻の24時間前→最初の時刻になる。
+			終着駅の場合は、着時刻から後24時間以内に全ての時刻が収まっていなければならない
+				なお、探索順序は、前作業→後作業の順になるので、
+				後作業の範囲は、前作業の最終時刻→着時刻の24時間後になる。
 
-		�������̏����`�F�b�N�͕s�v�ɂ��A�s���`���̌��o�̂ݍs���B
+		※時刻の順序チェックは不要にし、不正形式の検出のみ行う。
 	*/
 	vector<int> iLevelErrorPos;
 	int iListErrorPos = -1;
@@ -2813,18 +2813,18 @@ int CPropEditUI_Operation::CheckUiData(
 			iLevelErrorPos);
 	}
 	//// --------------------------------
-	////	�G���[���b�Z�[�W��\�����܂�
+	////	エラーメッセージを表示します
 	//// --------------------------------
 	if ( iRv < 0 )
 	{
 		tstring strInfo;
 		if (bErrorIsAfter)
 		{
-			strInfo = _T("(����");
+			strInfo = _T("(後作業");
 		}
 		else
 		{
-			strInfo = _T("(�O���");
+			strInfo = _T("(前作業");
 		}
 
 		vector<tstring> strLevel;
@@ -3129,12 +3129,12 @@ void CPropEditUI_Operation::BeforeOperationComplement(
 		{
 			Operation& pOperation = sOperationB[idx];
 			/**
-				�`�F�b�N�ΏۂƂȂ�̂�
-				(1)iLevel�̏�ʁuiLevelSearch.size()�v�����AiLevelSearch.size()�ƈ�v����
-				(2)iLevel.size()��iLevelSearch.size()+1�Ɠ�����
-				(��1)iLevelSearch����̏ꍇ�́AiLevel.size()��1�̕��S�Ă��ΏۂɂȂ�B
-				(��2)iLevelSearch��(1,2)�̏ꍇ�́AiLevel��(1.2.0)��(1.2.2)���ΏۂƂȂ�A
-					(1.1.0)��(1.2.1.0)�͑ΏۂɂȂ�Ȃ�
+				チェック対象となるのは
+				(1)iLevelの上位「iLevelSearch.size()」桁が、iLevelSearch.size()と一致する
+				(2)iLevel.size()がiLevelSearch.size()+1と等しい
+				(例1)iLevelSearchが空の場合は、iLevel.size()が1の物全てが対象になる。
+				(例2)iLevelSearchが(1,2)の場合は、iLevelが(1.2.0)や(1.2.2)が対象となり、
+					(1.1.0)や(1.2.1.0)は対象にならない
 			*/
 
 			if (pOperation.iLevel.size() != iLevelTarget.size() + 1)
@@ -3157,11 +3157,11 @@ void CPropEditUI_Operation::BeforeOperationComplement(
 			if (pOperation.iOperation == 0)
 			{
 				/**
-					�����̏ꍇ
-						��������������̏ꍇ�́ApSourceJikoku��1�������������̂ŕ⊮����
-						�������A��������������łȂ��ꍇ�́A�����������ŕ⊮����
-						��łȂ��ꍇ�́A��������X�V����B
-						�����������͋�ł��悢�̂ŁA������̍X�V�̂ݍs��
+					入換の場合
+						入換発時刻が空の場合は、pSourceJikokuに1分を加えたもので補完する
+						ただし、入換着時刻が空でない場合は、入換着時刻で補完する
+						空でない場合は、基準時刻を更新する。
+						入換着時刻は空でもよいので、基準時刻の更新のみ行う
 				*/
 				if (pOperation.strEditData1.empty())
 				{
@@ -3190,10 +3190,10 @@ void CPropEditUI_Operation::BeforeOperationComplement(
 			else if (pOperation.iOperation == 1)
 			{
 				/**
-					�����̏ꍇ
-						������������̏ꍇ�́ApSourceJikoku�ŕ⊮����
+					増結の場合
+						増結時刻が空の場合は、pSourceJikokuで補完する
 
-					�����Ґ��̑O��Ƃ̃`�F�b�N���s���B
+					増結編成の前作業のチェックを行う。
 				*/
 				if (pOperation.strEditData1.empty())
 				{
@@ -3214,11 +3214,11 @@ void CPropEditUI_Operation::BeforeOperationComplement(
 			else if (pOperation.iOperation == 2)
 			{
 				/**
-					�����̏ꍇ
-						������������̏ꍇ�́ApSourceJikoku�ŕ⊮����
-						�����ʒuIndex����̏ꍇ�́A1������
+					解結の場合
+						解結時刻が空の場合は、pSourceJikokuで補完する
+						解結位置Indexが空の場合は、1を入れる
 
-					�����Ґ��̌��Ƃ̃`�F�b�N���s���B
+					解結編成の後作業のチェックを行う。
 				*/
 				if (pOperation.strEditData2.empty())
 				{
@@ -3248,12 +3248,12 @@ void CPropEditUI_Operation::BeforeOperationComplement(
 		{
 			Operation& pOperation = sOperationB[idx];
 			/**
-				�`�F�b�N�ΏۂƂȂ�̂�
-				(1)iLevel�̏�ʁuiLevelSearch.size()�v�����AiLevelSearch.size()�ƈ�v����
-				(2)iLevel.size()��iLevelSearch.size()+1�Ɠ�����
-				(��1)iLevelSearch����̏ꍇ�́AiLevel.size()��1�̕��S�Ă��ΏۂɂȂ�B
-				(��2)iLevelSearch��(1,2)�̏ꍇ�́AiLevel��(1.2.0)��(1.2.2)���ΏۂƂȂ�A
-					(1.1.0)��(1.2.1.0)�͑ΏۂɂȂ�Ȃ�
+				チェック対象となるのは
+				(1)iLevelの上位「iLevelSearch.size()」桁が、iLevelSearch.size()と一致する
+				(2)iLevel.size()がiLevelSearch.size()+1と等しい
+				(例1)iLevelSearchが空の場合は、iLevel.size()が1の物全てが対象になる。
+				(例2)iLevelSearchが(1,2)の場合は、iLevelが(1.2.0)や(1.2.2)が対象となり、
+					(1.1.0)や(1.2.1.0)は対象にならない
 			*/
 
 			if (pOperation.iLevel.size() != iLevelTarget.size() + 1)
@@ -3276,11 +3276,11 @@ void CPropEditUI_Operation::BeforeOperationComplement(
 			if (pOperation.iOperation == 0)
 			{
 				/**
-					�����̏ꍇ
-						��������������̏ꍇ�́ApSourceJikoku����1�������Z�������̂ŕ⊮����B
-						�������A��������������łȂ��ꍇ�́A�����������ŕ⊮����
-						��łȂ��ꍇ�́A��������X�V����B
-						�����������͋�ł��悢�̂ŁA������̍X�V�̂ݍs��
+					入換の場合
+						入換発時刻が空の場合は、pSourceJikokuから1分を減算したもので補完する。
+						ただし、入換着時刻が空でない場合は、入換着時刻で補完する
+						空でない場合は、基準時刻を更新する。
+						入換着時刻は空でもよいので、基準時刻の更新のみ行う
 				*/
 				if (pOperation.strEditData1.empty())
 				{
@@ -3303,10 +3303,10 @@ void CPropEditUI_Operation::BeforeOperationComplement(
 			else if (pOperation.iOperation == 1)
 			{
 				/**
-					�����̏ꍇ
-						������������̏ꍇ�́ApSourceJikoku�ŕ⊮����
+					増結の場合
+						増結時刻が空の場合は、pSourceJikokuで補完する
 
-					�����Ґ��̑O��Ƃ̃`�F�b�N���s���B
+					増結編成の前作業のチェックを行う。
 				*/
 				if (pOperation.strEditData1.empty())
 				{
@@ -3327,11 +3327,11 @@ void CPropEditUI_Operation::BeforeOperationComplement(
 			else if (pOperation.iOperation == 2)
 			{
 				/**
-					�����̏ꍇ
-						������������̏ꍇ�́ApSourceJikoku�ŕ⊮����
-						�����ʒuIndex����̏ꍇ�́A1������
+					解結の場合
+						解結時刻が空の場合は、pSourceJikokuで補完する
+						解結位置Indexが空の場合は、1を入れる
 
-					�����Ґ��̌��Ƃ̃`�F�b�N���s���B
+					解結編成の後作業のチェックを行う。
 				*/
 				if (pOperation.strEditData2.empty())
 				{
@@ -3356,8 +3356,8 @@ void CPropEditUI_Operation::BeforeOperationComplement(
 			else if (pOperation.iOperation == 3)
 			{
 				/**
-					�o��̏ꍇ
-						�o�掞������̏ꍇ�́ApSourceJikoku����1�������Z�������̂ŕ⊮����
+					出区の場合
+						出区時刻が空の場合は、pSourceJikokuから1分を減算したもので補完する
 				*/
 				if (pOperation.strEditData1.empty())
 				{
@@ -3365,15 +3365,15 @@ void CPropEditUI_Operation::BeforeOperationComplement(
 					pOperation.strEditData1 = aJikokuConv.encode(pSourceJikoku);
 				}
 			}
-			//19.11.26 �H���O�n���ɂ����āA���w�������͋�ł��悢���Ƃɂ���
-			//19.12.22 �ʉ߂̏ꍇ�̂݁A���w����������̂܂܂ɂ���悤�ɕύX
+			//19.11.26 路線外始発において、当駅着時刻は空でもよいことにする
+			//19.12.22 通過の場合のみ、当駅着時刻を空のままにするように変更
 			else if (pOperation.iOperation == 4 &&
 				bIsTeisya)
 			{
 				/**
-					�H���O�n���̏ꍇ
-						�H���O�n���w����������̏ꍇ�̓G���[�Ȃ̂ŁA�����ł̓`�F�b�N���Ȃ��B
-						���w����������̏ꍇ�́ApSourceJikoku����1�������Z�������̂ŕ⊮����
+					路線外始発の場合
+						路線外始発駅発時刻が空の場合はエラーなので、ここではチェックしない。
+						当駅着時刻が空の場合は、pSourceJikokuから1分を減算したもので補完する
 				*/
 				if (pOperation.strEditData2.empty())
 				{
@@ -3400,13 +3400,13 @@ void CPropEditUI_Operation::BeforeOperationToTarget(
 		if (sOperationTemp.iLevel.size() > 1)
 		{
 			/**
-				iLevel.size() > 1�ɊY�������Ƃ́A
-				pCentDedBeforOperationeCont�Ɋi�[�����Ƃ̎q��Ƃɂ����邽�߁A
-				�X�L�b�v����B
+				iLevel.size() > 1に該当する作業は、
+				pCentDedBeforOperationeContに格納する作業の子作業にあたるため、
+				スキップする。
 			*/
 			continue;
 		}
-		else if (sOperationTemp.iOperation == 0)//����
+		else if (sOperationTemp.iOperation == 0)//入換
 		{
 			aBeforeOperation =
 				CentDedBeforeOperation(
@@ -3416,7 +3416,7 @@ void CPropEditUI_Operation::BeforeOperationToTarget(
 					CdDedJikoku(sOperationTemp.strEditData2),
 					sOperationTemp.bCheckData1);
 		}
-		else if (sOperationTemp.iOperation == 1)//����
+		else if (sOperationTemp.iOperation == 1)//増結
 		{
 			aBeforeOperation =
 				CentDedBeforeOperation(
@@ -3424,12 +3424,12 @@ void CPropEditUI_Operation::BeforeOperationToTarget(
 					sOperationTemp.iComboData1,
 					CdDedJikoku(sOperationTemp.strEditData1));
 			/**
-				���̍�Ƃ̎q��Ƃ����߂�
-				sOperationBTemp�͂��̍�Ƃ̎q��ƂƂȂ�Operation�z��ƂȂ�B
-				���Ƃ�sOperationB����A
-				(1)iLevel[0]�����̍�Ƃƈ�v������́@����
-				(2)���̍�Ǝ��g�ȊO(index����v���Ȃ�)
-				�𔲂��o�������́B���̎��AiLevel[0]�͍폜���Ă���
+				この作業の子作業を求める
+				sOperationBTempはこの作業の子作業となるOperation配列となる。
+				もとのsOperationBから、
+				(1)iLevel[0]がこの作業と一致するもの　かつ
+				(2)この作業自身以外(indexが一致しない)
+				を抜き出したもの。その時、iLevel[0]は削除しておく
 			*/
 			vector<Operation> sOperationBTemp;
 			for (int idxb = 0; idxb < (int)sOperationB.size(); idxb++)
@@ -3446,7 +3446,7 @@ void CPropEditUI_Operation::BeforeOperationToTarget(
 				aBeforeOperation.getCentDedBeforeOperationCont(),
 				sOperationBTemp);
 		}
-		else if (sOperationTemp.iOperation == 2)//����
+		else if (sOperationTemp.iOperation == 2)//解結
 		{
 			aBeforeOperation =
 				CentDedBeforeOperation(
@@ -3455,13 +3455,13 @@ void CPropEditUI_Operation::BeforeOperationToTarget(
 					stoi(sOperationTemp.strEditData1),
 					CdDedJikoku(sOperationTemp.strEditData2));
 			/**
-				���̍�Ƃ̎q��Ƃ����߂�
-				sOperationATemp�͂��̍�Ƃ̎q��ƂƂȂ�Operation�z��ƂȂ�B
-				���Ƃ�sOperationB����A
-				(1)pCentDedBeforeOperationCont�ɓ����Ɓ�iLevel.size()=1�̂���
-				(2)pCentDedBeforeOperationCont�ɓ��鑼�̍�Ƃ̎q��ƂƂȂ����
-					��iLevel[0]�̒l���A���̍�ƂƈقȂ����
-				����菜�������́B���̎��AiLevel[0]�͍폜���Ă���
+				この作業の子作業を求める
+				sOperationATempはこの作業の子作業となるOperation配列となる。
+				もとのsOperationBから、
+				(1)pCentDedBeforeOperationContに入る作業＝iLevel.size()=1のもの
+				(2)pCentDedBeforeOperationContに入る他の作業の子作業となるもの
+					＝iLevel[0]の値が、この作業と異なるもの
+				を取り除いたもの。その時、iLevel[0]は削除しておく
 			*/
 			vector<Operation> sOperationATemp;
 			for (int idxa = 0; idxa < (int)sOperationB.size(); idxa++)
@@ -3478,7 +3478,7 @@ void CPropEditUI_Operation::BeforeOperationToTarget(
 				aBeforeOperation.getCentDedAfterOperationCont(),
 				sOperationATemp);
 		}
-		else if (sOperationTemp.iOperation == 3)//�o��
+		else if (sOperationTemp.iOperation == 3)//出区
 		{
 			aBeforeOperation =
 				CentDedBeforeOperation(
@@ -3487,7 +3487,7 @@ void CPropEditUI_Operation::BeforeOperationToTarget(
 					sOperationTemp.strOperationNumber,
 					sOperationTemp.strInOutLinkCode);
 		}
-		else if (sOperationTemp.iOperation == 4)//�H���O�n��
+		else if (sOperationTemp.iOperation == 4)//路線外始発
 		{
 			aBeforeOperation =
 				CentDedBeforeOperation(
@@ -3498,7 +3498,7 @@ void CPropEditUI_Operation::BeforeOperationToTarget(
 					sOperationTemp.strOperationNumber,
 					sOperationTemp.strInOutLinkCode);
 		}
-		else if (sOperationTemp.iOperation == 5)//�O��Ԑڑ�
+		else if (sOperationTemp.iOperation == 5)//前列車接続
 		{
 			aBeforeOperation =
 				CentDedBeforeOperation(
@@ -3506,9 +3506,9 @@ void CPropEditUI_Operation::BeforeOperationToTarget(
 					CdDedJikoku(sOperationTemp.strEditData1),
 					sOperationTemp.strOperationNumber);
 		}
-		else if (sOperationTemp.iOperation == 6)//�^�p�ԍ��ύX
+		else if (sOperationTemp.iOperation == 6)//運用番号変更
 		{
-			//Ver2.06.05 �^�p�ԍ������]�ݒ��ǉ��A�^�p�ԍ������]�ݒ肪�L���ȏꍇ�́A�^�p�ԍ��͋�ɂ���B
+			//Ver2.06.05 運用番号順反転設定を追加、運用番号順反転設定が有効な場合は、運用番号は空にする。
 			if (sOperationTemp.bCheckData1)
 			{
 				aBeforeOperation =
@@ -3526,7 +3526,7 @@ void CPropEditUI_Operation::BeforeOperationToTarget(
 						false);
 			}
 		}
-		else//(��Ƃ�ǉ�)
+		else//(作業を追加)
 		{
 			continue;
 		}
@@ -3563,12 +3563,12 @@ void CPropEditUI_Operation::AfterOperationComplement(
 		{
 			Operation& pOperation = sOperationA[idx];
 			/**
-				�`�F�b�N�ΏۂƂȂ�̂�
-				(1)iLevel�̏�ʁuiLevelSearch.size()�v�����AiLevelSearch.size()�ƈ�v����
-				(2)iLevel.size()��iLevelSearch.size()+1�Ɠ�����
-				(��1)iLevelSearch����̏ꍇ�́AiLevel.size()��1�̕��S�Ă��ΏۂɂȂ�B
-				(��2)iLevelSearch��(1,2)�̏ꍇ�́AiLevel��(1.2.0)��(1.2.2)���ΏۂƂȂ�A
-					(1.1.0)��(1.2.1.0)�͑ΏۂɂȂ�Ȃ�
+				チェック対象となるのは
+				(1)iLevelの上位「iLevelSearch.size()」桁が、iLevelSearch.size()と一致する
+				(2)iLevel.size()がiLevelSearch.size()+1と等しい
+				(例1)iLevelSearchが空の場合は、iLevel.size()が1の物全てが対象になる。
+				(例2)iLevelSearchが(1,2)の場合は、iLevelが(1.2.0)や(1.2.2)が対象となり、
+					(1.1.0)や(1.2.1.0)は対象にならない
 			*/
 
 			if (pOperation.iLevel.size() != iLevelTarget.size() + 1)
@@ -3591,11 +3591,11 @@ void CPropEditUI_Operation::AfterOperationComplement(
 			if (pOperation.iOperation == 0)
 			{
 				/**
-					�����̏ꍇ
-						��������������̏ꍇ�́ApSourceJikoku��1�������������̂ŕ⊮����
-						�������A��������������łȂ��ꍇ�́A�����������ŕ⊮����
-						��łȂ��ꍇ�́A��������X�V����B
-						�����������͋�ł��悢�̂ŁA������̍X�V�̂ݍs��
+					入換の場合
+						入換発時刻が空の場合は、pSourceJikokuに1分を加えたもので補完する
+						ただし、入換着時刻が空でない場合は、入換着時刻で補完する
+						空でない場合は、基準時刻を更新する。
+						入換着時刻は空でもよいので、基準時刻の更新のみ行う
 				*/
 				if (pOperation.strEditData1.empty())
 				{
@@ -3624,10 +3624,10 @@ void CPropEditUI_Operation::AfterOperationComplement(
 			else if (pOperation.iOperation == 1)
 			{
 				/**
-					�����̏ꍇ
-						������������̏ꍇ�́ApSourceJikoku�ŕ⊮����
+					増結の場合
+						増結時刻が空の場合は、pSourceJikokuで補完する
 
-					�����Ґ��̑O��Ƃ̃`�F�b�N���s���B
+					増結編成の前作業のチェックを行う。
 				*/
 				if (pOperation.strEditData1.empty())
 				{
@@ -3648,11 +3648,11 @@ void CPropEditUI_Operation::AfterOperationComplement(
 			else if (pOperation.iOperation == 2)
 			{
 				/**
-					�����̏ꍇ
-						������������̏ꍇ�́ApSourceJikoku�ŕ⊮����
-						�����ʒuIndex����̏ꍇ�́A1������
+					解結の場合
+						解結時刻が空の場合は、pSourceJikokuで補完する
+						解結位置Indexが空の場合は、1を入れる
 
-					�����Ґ��̌��Ƃ̃`�F�b�N���s���B
+					解結編成の後作業のチェックを行う。
 				*/
 				if (pOperation.strEditData2.empty())
 				{
@@ -3677,8 +3677,8 @@ void CPropEditUI_Operation::AfterOperationComplement(
 			else if (pOperation.iOperation == 3)
 			{
 				/**
-					����̏ꍇ
-						���掞������̏ꍇ�́ApSourceJikoku��1�������������̂ŕ⊮����
+					入区の場合
+						入区時刻が空の場合は、pSourceJikokuに1分を加えたもので補完する
 				*/
 				if (pOperation.strEditData1.empty())
 				{
@@ -3686,15 +3686,15 @@ void CPropEditUI_Operation::AfterOperationComplement(
 					pOperation.strEditData1 = aJikokuConv.encode(pSourceJikoku);
 				}
 			}
-			//19.11.26 �H���O�I���ɂ����āA���w�������͋�ł��悢���Ƃɂ���
-			//19.12.22 �ʉ߂̏ꍇ�̂݁A���w����������̂܂܂ɂ���悤�ɕύX
+			//19.11.26 路線外終着において、当駅発時刻は空でもよいことにする
+			//19.12.22 通過の場合のみ、当駅着時刻を空のままにするように変更
 			else if (pOperation.iOperation == 4 &&
 				bIsTeisya)
 			{
 				/**
-					�H���O�I���̏ꍇ
-						�H���O�I���w����������̏ꍇ�̓G���[�Ȃ̂ŁA�����ł̓`�F�b�N���Ȃ��B
-						���w����������̏ꍇ�́ApSourceJikoku��1�������������̂ŕ⊮����
+					路線外終着の場合
+						路線外終着駅着時刻が空の場合はエラーなので、ここではチェックしない。
+						当駅発時刻が空の場合は、pSourceJikokuに1分を加えたもので補完する
 				*/
 				if (pOperation.strEditData1.empty())
 				{
@@ -3710,12 +3710,12 @@ void CPropEditUI_Operation::AfterOperationComplement(
 		{
 			Operation& pOperation = sOperationA[idx];
 			/**
-				�`�F�b�N�ΏۂƂȂ�̂�
-				(1)iLevel�̏�ʁuiLevelSearch.size()�v�����AiLevelSearch.size()�ƈ�v����
-				(2)iLevel.size()��iLevelSearch.size()+1�Ɠ�����
-				(��1)iLevelSearch����̏ꍇ�́AiLevel.size()��1�̕��S�Ă��ΏۂɂȂ�B
-				(��2)iLevelSearch��(1,2)�̏ꍇ�́AiLevel��(1.2.0)��(1.2.2)���ΏۂƂȂ�A
-					(1.1.0)��(1.2.1.0)�͑ΏۂɂȂ�Ȃ�
+				チェック対象となるのは
+				(1)iLevelの上位「iLevelSearch.size()」桁が、iLevelSearch.size()と一致する
+				(2)iLevel.size()がiLevelSearch.size()+1と等しい
+				(例1)iLevelSearchが空の場合は、iLevel.size()が1の物全てが対象になる。
+				(例2)iLevelSearchが(1,2)の場合は、iLevelが(1.2.0)や(1.2.2)が対象となり、
+					(1.1.0)や(1.2.1.0)は対象にならない
 			*/
 
 			if (pOperation.iLevel.size() != iLevelTarget.size() + 1)
@@ -3738,11 +3738,11 @@ void CPropEditUI_Operation::AfterOperationComplement(
 			if (pOperation.iOperation == 0)
 			{
 				/**
-					�����̏ꍇ
-						��������������̏ꍇ�́ApSourceJikoku����1�������Z�������̂ŕ⊮����B
-						�������A��������������łȂ��ꍇ�́A�����������ŕ⊮����
-						��łȂ��ꍇ�́A��������X�V����B
-						�����������͋�ł��悢�̂ŁA������̍X�V�̂ݍs��
+					入換の場合
+						入換発時刻が空の場合は、pSourceJikokuから1分を減算したもので補完する。
+						ただし、入換着時刻が空でない場合は、入換着時刻で補完する
+						空でない場合は、基準時刻を更新する。
+						入換着時刻は空でもよいので、基準時刻の更新のみ行う
 				*/
 				if (pOperation.strEditData1.empty())
 				{
@@ -3765,10 +3765,10 @@ void CPropEditUI_Operation::AfterOperationComplement(
 			else if (pOperation.iOperation == 1)
 			{
 				/**
-					�����̏ꍇ
-						������������̏ꍇ�́ApSourceJikoku�ŕ⊮����
+					増結の場合
+						増結時刻が空の場合は、pSourceJikokuで補完する
 
-					�����Ґ��̑O��Ƃ̃`�F�b�N���s���B
+					増結編成の前作業のチェックを行う。
 				*/
 				if (pOperation.strEditData1.empty())
 				{
@@ -3789,11 +3789,11 @@ void CPropEditUI_Operation::AfterOperationComplement(
 			else if (pOperation.iOperation == 2)
 			{
 				/**
-					�����̏ꍇ
-						������������̏ꍇ�́ApSourceJikoku�ŕ⊮����
-						�����ʒuIndex����̏ꍇ�́A1������
+					解結の場合
+						解結時刻が空の場合は、pSourceJikokuで補完する
+						解結位置Indexが空の場合は、1を入れる
 
-					�����Ґ��̌��Ƃ̃`�F�b�N���s���B
+					解結編成の後作業のチェックを行う。
 				*/
 				if (pOperation.strEditData2.empty())
 				{
@@ -3832,13 +3832,13 @@ void CPropEditUI_Operation::AfterOperationToTarget(
 		if (sOperationTemp.iLevel.size() > 1)
 		{
 			/**
-				iLevel.size() > 1�ɊY�������Ƃ́A
-				pCentDedOperationAfterCont�Ɋi�[�����Ƃ̎q��Ƃɂ����邽�߁A
-				�X�L�b�v����B
+				iLevel.size() > 1に該当する作業は、
+				pCentDedOperationAfterContに格納する作業の子作業にあたるため、
+				スキップする。
 			*/
 			continue;
 		}
-		else if (sOperationTemp.iOperation == 0)//����
+		else if (sOperationTemp.iOperation == 0)//入換
 		{
 			aAfterOperation =
 				CentDedAfterOperation(
@@ -3848,7 +3848,7 @@ void CPropEditUI_Operation::AfterOperationToTarget(
 					CdDedJikoku(sOperationTemp.strEditData2),
 					sOperationTemp.bCheckData1);
 		}
-		else if (sOperationTemp.iOperation == 1)//����
+		else if (sOperationTemp.iOperation == 1)//増結
 		{
 			aAfterOperation =
 				CentDedAfterOperation(
@@ -3856,12 +3856,12 @@ void CPropEditUI_Operation::AfterOperationToTarget(
 					sOperationTemp.iComboData1,
 					CdDedJikoku(sOperationTemp.strEditData1));
 			/**
-				���̍�Ƃ̎q��Ƃ����߂�
-				sOperationBTemp�͂��̍�Ƃ̎q��ƂƂȂ�Operation�z��ƂȂ�B
-				���Ƃ�sOperationA����A
-				(1)iLevel[0]�����̍�Ƃƈ�v������́@����
-				(2)���̍�Ǝ��g�ȊO(index����v���Ȃ�)
-				�𔲂��o�������́B���̎��AiLevel[0]�͍폜���Ă���
+				この作業の子作業を求める
+				sOperationBTempはこの作業の子作業となるOperation配列となる。
+				もとのsOperationAから、
+				(1)iLevel[0]がこの作業と一致するもの　かつ
+				(2)この作業自身以外(indexが一致しない)
+				を抜き出したもの。その時、iLevel[0]は削除しておく
 			*/
 			vector<Operation> sOperationBTemp;
 			for (int idxb = 0; idxb < (int)sOperationA.size(); idxb++)
@@ -3878,7 +3878,7 @@ void CPropEditUI_Operation::AfterOperationToTarget(
 				aAfterOperation.getCentDedBeforeOperationCont(),
 				sOperationBTemp);
 		}
-		else if (sOperationTemp.iOperation == 2)//����
+		else if (sOperationTemp.iOperation == 2)//解結
 		{
 			aAfterOperation =
 				CentDedAfterOperation(
@@ -3887,13 +3887,13 @@ void CPropEditUI_Operation::AfterOperationToTarget(
 					stoi(sOperationTemp.strEditData1),
 					CdDedJikoku(sOperationTemp.strEditData2));
 			/**
-				���̍�Ƃ̎q��Ƃ����߂�
-				sOperationATemp�͂��̍�Ƃ̎q��ƂƂȂ�Operation�z��ƂȂ�B
-				���Ƃ�sOperationB����A
-				(1)pCentDedBeforeOperationCont�ɓ����Ɓ�iLevel.size()=1�̂���
-				(2)pCentDedBeforeOperationCont�ɓ��鑼�̍�Ƃ̎q��ƂƂȂ����
-					��iLevel[0]�̒l���A���̍�ƂƈقȂ����
-				����菜�������́B���̎��AiLevel[0]�͍폜���Ă���
+				この作業の子作業を求める
+				sOperationATempはこの作業の子作業となるOperation配列となる。
+				もとのsOperationBから、
+				(1)pCentDedBeforeOperationContに入る作業＝iLevel.size()=1のもの
+				(2)pCentDedBeforeOperationContに入る他の作業の子作業となるもの
+					＝iLevel[0]の値が、この作業と異なるもの
+				を取り除いたもの。その時、iLevel[0]は削除しておく
 			*/
 			vector<Operation> sOperationATemp;
 			for (int idxa = 0; idxa < (int)sOperationA.size(); idxa++)
@@ -3910,7 +3910,7 @@ void CPropEditUI_Operation::AfterOperationToTarget(
 				aAfterOperation.getCentDedAfterOperationCont(),
 				sOperationATemp);
 		}
-		else if (sOperationTemp.iOperation == 3)//����
+		else if (sOperationTemp.iOperation == 3)//入区
 		{
 			aAfterOperation =
 				CentDedAfterOperation(
@@ -3918,7 +3918,7 @@ void CPropEditUI_Operation::AfterOperationToTarget(
 					CdDedJikoku(sOperationTemp.strEditData1),
 					sOperationTemp.strInOutLinkCode);
 		}
-		else if (sOperationTemp.iOperation == 4)//�H���O�I��
+		else if (sOperationTemp.iOperation == 4)//路線外終着
 		{
 			aAfterOperation =
 				CentDedAfterOperation(
@@ -3928,7 +3928,7 @@ void CPropEditUI_Operation::AfterOperationToTarget(
 					CdDedJikoku(sOperationTemp.strEditData2),
 					sOperationTemp.strInOutLinkCode);
 		}
-		else if (sOperationTemp.iOperation == 5)//����Ԑڑ�
+		else if (sOperationTemp.iOperation == 5)//次列車接続
 		{
 			aAfterOperation =
 				CentDedAfterOperation(
@@ -3936,9 +3936,9 @@ void CPropEditUI_Operation::AfterOperationToTarget(
 					CdDedJikoku(sOperationTemp.strEditData1),
 					sOperationTemp.iComboData1);
 		}
-		else if (sOperationTemp.iOperation == 6)//�^�p�ԍ��ύX
+		else if (sOperationTemp.iOperation == 6)//運用番号変更
 		{
-			//Ver2.06.05 �^�p�ԍ������]�ݒ��ǉ��A�^�p�ԍ������]�ݒ肪�L���ȏꍇ�́A�^�p�ԍ��͋�ɂ���B
+			//Ver2.06.05 運用番号順反転設定を追加、運用番号順反転設定が有効な場合は、運用番号は空にする。
 			if (sOperationTemp.bCheckData1)
 			{
 				aAfterOperation =
@@ -3956,7 +3956,7 @@ void CPropEditUI_Operation::AfterOperationToTarget(
 						false);
 			}
 		}
-		else//(��Ƃ�ǉ�)
+		else//(作業を追加)
 		{
 			continue;
 		}
@@ -4003,11 +4003,11 @@ int CPropEditUI_Operation::UiDataToTarget(
 
 	vector<Operation> sOperationB = pUiData->sOperationB;
 	vector<Operation> sOperationA = pUiData->sOperationA;
-	if (m_iChakuEkiOrder == -1)//���w�n��
+	if (m_iChakuEkiOrder == -1)//当駅始発
 	{
 
 		/**
-			���� �����⊮
+			後作業 時刻補完
 		*/
 		CdDedJikoku aHatsuJikoku(pUiData->strHatsujikoku);
 
@@ -4019,7 +4019,7 @@ int CPropEditUI_Operation::UiDataToTarget(
 			bIsTeisya);
 
 		/**
-			�O��� �����⊮ �������s���A�����͌��Ƃ������p��
+			前作業 時刻補完 後方から行い、時刻は後作業を引き継ぐ
 		*/
 		BeforeOperationComplement(
 			sOperationB,
@@ -4028,10 +4028,10 @@ int CPropEditUI_Operation::UiDataToTarget(
 			false,
 			bIsTeisya);
 	}
-	else if (m_iHatsuEkiOrder == -1)//���w�~�܂�
+	else if (m_iHatsuEkiOrder == -1)//当駅止まり
 	{
 		/**
-			�O��� �����⊮
+			前作業 時刻補完
 		*/
 		CdDedJikoku aChakuJikoku(pUiData->strChakujikoku);
 
@@ -4043,7 +4043,7 @@ int CPropEditUI_Operation::UiDataToTarget(
 			bIsTeisya);
 
 		/**
-			���� �����⊮ �O������s���A�����͑O��Ƃ������p��
+			後作業 時刻補完 前方から行い、時刻は前作業を引き継ぐ
 		*/
 		AfterOperationComplement(
 			sOperationA,
@@ -4056,7 +4056,7 @@ int CPropEditUI_Operation::UiDataToTarget(
 	else
 	{
 		/**
-			�O��� �����⊮
+			前作業 時刻補完
 		*/
 		CdDedJikoku aChakuJikoku(pUiData->strChakujikoku);
 
@@ -4068,7 +4068,7 @@ int CPropEditUI_Operation::UiDataToTarget(
 			bIsTeisya);
 
 		/**
-			���� �����⊮
+			後作業 時刻補完
 		*/
 		CdDedJikoku aHatsuJikoku(pUiData->strHatsujikoku);
 
@@ -4081,7 +4081,7 @@ int CPropEditUI_Operation::UiDataToTarget(
 
 	}
 	/**
-		�O���
+		前作業
 	*/
 	CentDedEkiJikoku* pChakuEkiJikoku = pRessya->getCentDedEkiJikokuCont()
 		->getMuPtr()->get(iChakuEkiOrder);
@@ -4091,7 +4091,7 @@ int CPropEditUI_Operation::UiDataToTarget(
 		sOperationB);
 
 	/**
-		����
+		後作業
 	*/
 	CentDedEkiJikoku* pHatsuEkiJikoku = pRessya->getCentDedEkiJikokuCont()
 		->getMuPtr()->get(iHatsuEkiOrder);
@@ -4106,7 +4106,7 @@ int CPropEditUI_Operation::UiDataToTarget(
 
 
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 CPropEditUI_Operation::CPropEditUI_Operation( 
 		bool bNewItem , 

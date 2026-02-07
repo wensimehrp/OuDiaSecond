@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 // ****************************************************************
 //	$Id: CPropEditUi_Ressyasyubetsu.cpp 399 2016-11-26 08:45:03Z okm $
@@ -81,15 +81,15 @@ namespace ViewRessyasyubetsu {
 // ****************************************************************
 //	CPropEditUi_Ressyasyubetsu
 // ****************************************************************
-	// ��ʖ����w�肳��Ă��܂���
+	// 種別名が指定されていません
 const TCHAR* const CPropEditUi_Ressyasyubetsu::ERRMSG_SYUBETUSMEI_EMPTY = _T("Ressyasyubetsumei is empty.") ;
 
-	// ���̂��������܂�
+	// 略称が長すぎます
 const TCHAR* const CPropEditUi_Ressyasyubetsu::ERRMSG_RYAKUSYOULENGTH = _T("Ryakusyou is too long(Limit is 6 characters).") ;
 
 
 	// ================================
-	//  �I�[�o�[���C�g�̕K�v�ȃ��\�b�h1-Target�Ɉˑ����鏈��
+	//  オーバーライトの必要なメソッド1-Targetに依存する処理
 	// ================================
 void CPropEditUi_Ressyasyubetsu::UiDataFromTarget( UIDATA* pUiData ) 
 {
@@ -97,7 +97,7 @@ void CPropEditUi_Ressyasyubetsu::UiDataFromTarget( UIDATA* pUiData )
 	{
 		const CentDedRessyasyubetsu* pTarget = m_pTarget->get( i ) ; 
 
-		/* ��Ԏ�ʖ� */
+		/* 列車種別名 */
 		if ( i == 0 )
 		{
 			pUiData->strSyubetsumei = pTarget->getSyubetsumei() ;
@@ -107,9 +107,9 @@ void CPropEditUi_Ressyasyubetsu::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->strSyubetsumei = _T("") ;
 		}
 	
-		/* ��Ԏ�ʖ��̗L���E���� �́A�ΏۊO */
+		/* 列車種別名の有効・無効 は、対象外 */
 	
-		/** ���́i��ʖ��̗��́j */
+		/** 略称（種別名の略称） */
 		if ( i == 0 )
 		{
 			pUiData->strRyakusyou = pTarget->getRyakusyou();
@@ -119,7 +119,7 @@ void CPropEditUi_Ressyasyubetsu::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->strRyakusyou = _T("") ;
 		}
 	
-		/*	�����\�����F(�_�C���O�����̗�ԏ��̕����F�����˂܂�)	*/
+		/*	時刻表文字色(ダイヤグラムの列車情報の文字色を兼ねます)	*/
 		if ( i == 0 )
 		{
 			pUiData->colorJikokuhyouMojiColor = pTarget->getJikokuhyouMojiColor() ;
@@ -128,7 +128,7 @@ void CPropEditUi_Ressyasyubetsu::UiDataFromTarget( UIDATA* pUiData )
 		{
 			pUiData->colorJikokuhyouMojiColor.setIsNull( true ) ; 
 		}
-		/* �����\�r���[�ŁA���̗�Ԏ�ʂ̎�����\�����邽�߂̎����\�t�H���g */
+		/* 時刻表ビューで、この列車種別の時刻を表示するための時刻表フォント */
 		if ( i == 0 )
 		{
 			pUiData->iJikokuhyouFontIndex= pTarget->getJikokuhyouFontIndex() ;
@@ -138,7 +138,7 @@ void CPropEditUi_Ressyasyubetsu::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->iJikokuhyouFontIndex = -1 ;
 		}
 
-		/*	�����\�w�i�F(�w�i�F�p�^�[�����u��ʐF�v�̏ꍇ)*/
+		/*	時刻表背景色(背景色パターンが「種別色」の場合)*/
 		if (i == 0)
 		{
 			pUiData->colorJikokuhyouBackColor = pTarget->getJikokuhyouBackColor();
@@ -148,7 +148,7 @@ void CPropEditUi_Ressyasyubetsu::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->colorJikokuhyouBackColor.setIsNull(true);
 		}
 
-		/* �_�C���O�������̐F */
+		/* ダイヤグラム線の色 */
 		if ( i == 0 )
 		{
 			pUiData->colorDiagramSenColor = pTarget->getDiagramSenColor() ;
@@ -158,26 +158,26 @@ void CPropEditUi_Ressyasyubetsu::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->colorDiagramSenColor.setIsNull( true )  ;
 		}
 	
-		/* �_�C���O�������̐��X�^�C��	*/
+		/* ダイヤグラム線の線スタイル	*/
 		if ( i == 0 )
 		{
 			pUiData->iDiagramSenStyle = (int)pTarget->getDiagramSenStyle() ;
 		}
 		else if ( pUiData->iDiagramSenStyle = (int)pTarget->getDiagramSenStyle() )
 		{
-			pUiData->iDiagramSenStyle = -1 ;	// �s��
+			pUiData->iDiagramSenStyle = -1 ;	// 不定
 		}
-		/* �_�C���O�������̐��X�^�C�����������ۂ����w�肵�܂��B*/
+		/* ダイヤグラム線の線スタイルが太線か否かを指定します。*/
 		if( i == 0 )
 		{
 			pUiData->iDiagramSenIsBold = (int)pTarget->getDiagramSenIsBold() ;
 		} 
 		else if ( pUiData->iDiagramSenIsBold != (int)pTarget->getDiagramSenIsBold() )
 		{
-			pUiData->iDiagramSenIsBold = -1 ;	// �s��	
+			pUiData->iDiagramSenIsBold = -1 ;	// 不定	
 		}
 
-		/*  ��ԉw�����̕��@ */
+		/*  停車駅明示の方法 */
 		if ( i == 0 )
 		{
 			pUiData->iStopMarkDrawType = (int)pTarget->getStopMarkDrawType() ;
@@ -187,7 +187,7 @@ void CPropEditUi_Ressyasyubetsu::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->iStopMarkDrawType = -1 ;
 		}
 
-		/*  �e���Index */
+		/*  親種別Index */
 		if (i == 0)
 		{
 			pUiData->iParentSyubetsuIndex = pTarget->getParentSyubetsuIndex();
@@ -196,14 +196,14 @@ void CPropEditUi_Ressyasyubetsu::UiDataFromTarget( UIDATA* pUiData )
 		{
 			pUiData->iParentSyubetsuIndex = -1;
 		}
-		/* �J�X�^�}�C�Y�����\����щw�����\�ł��̎�ʂ̗�Ԃ��B�������w�肵�܂��B*/
+		/* カスタマイズ時刻表および駅時刻表でこの種別の列車を隠すかを指定します。*/
 		if (i == 0)
 		{
 			pUiData->iHidden = (int)pTarget->getHidden();
 		}
 		else if (pUiData->iHidden != (int)pTarget->getHidden())
 		{
-			pUiData->iHidden = -1;	// �s��	
+			pUiData->iHidden = -1;	// 不定	
 		}
 	}
 }
@@ -215,70 +215,70 @@ void CPropEditUi_Ressyasyubetsu::AdjustUiData(
 		const UIDATA* pUiDataPrev , 
 		bool bStartEdit )
 {
-	/* ��Ԏ�ʖ� */
+	/* 列車種別名 */
 	if ( bStartEdit || pUiDataPrev->strSyubetsumei != pUiData->strSyubetsumei)
 	{
-		// pUiData->�����o�[�� �̐��K�����s���R�[�h�B
+		// pUiData->メンバー名 の正規化を行うコード。
 	}
 	
-	/* ��Ԏ�ʖ��̗L���E���� */
+	/* 列車種別名の有効・無効 */
 	if ( bStartEdit || pUiDataPrev->bSyubetsumeiIsEnable != pUiData->bSyubetsumeiIsEnable)
 	{
-		// pUiData->�����o�[�� �̐��K�����s���R�[�h�B
+		// pUiData->メンバー名 の正規化を行うコード。
 	}
 	
-	/* ���́i��ʖ��̗��́j */
+	/* 略称（種別名の略称） */
 	if ( bStartEdit || pUiDataPrev->strRyakusyou != pUiData->strRyakusyou)
 	{
-		// pUiData->�����o�[�� �̐��K�����s���R�[�h�B
+		// pUiData->メンバー名 の正規化を行うコード。
 	}
-	/* �����\�����F(�_�C���O�����̗�ԏ��̕����F�����˂܂�)	*/
+	/* 時刻表文字色(ダイヤグラムの列車情報の文字色を兼ねます)	*/
 	if ( bStartEdit || pUiDataPrev->colorJikokuhyouMojiColor != pUiData->colorJikokuhyouMojiColor)
 	{
-		// pUiData->�����o�[�� �̐��K�����s���R�[�h�B
+		// pUiData->メンバー名 の正規化を行うコード。
 	}
 
-	/* �����\�r���[�ŁA���̗�Ԏ�ʂ̎�����\�����邽�߂̎����\�t�H���g */
+	/* 時刻表ビューで、この列車種別の時刻を表示するための時刻表フォント */
 	if ( bStartEdit || pUiDataPrev->iJikokuhyouFontIndex != pUiData->iJikokuhyouFontIndex)
 	{
-		// pUiData->�����o�[�� �̐��K�����s���R�[�h�B
+		// pUiData->メンバー名 の正規化を行うコード。
 	}
 
-	/* �����\�w�i�F(�w�i�F�p�^�[�����u��ʐF�v�̏ꍇ)	*/
+	/* 時刻表背景色(背景色パターンが「種別色」の場合)	*/
 	if (bStartEdit || pUiDataPrev->colorJikokuhyouBackColor != pUiData->colorJikokuhyouBackColor)
 	{
-		// pUiData->�����o�[�� �̐��K�����s���R�[�h�B
+		// pUiData->メンバー名 の正規化を行うコード。
 	}
 
 
-	/* �_�C���O�������̐F */
+	/* ダイヤグラム線の色 */
 	if ( bStartEdit || pUiDataPrev->colorDiagramSenColor != pUiData->colorDiagramSenColor)
 	{
-		// pUiData->�����o�[�� �̐��K�����s���R�[�h�B
+		// pUiData->メンバー名 の正規化を行うコード。
 	}
 	
-	/* �_�C���O�������̐��X�^�C��*/	
+	/* ダイヤグラム線の線スタイル*/	
 	if ( bStartEdit || pUiDataPrev->iDiagramSenStyle != pUiData->iDiagramSenStyle)
 	{
-		// pUiData->�����o�[�� �̐��K�����s���R�[�h�B
+		// pUiData->メンバー名 の正規化を行うコード。
 	}
 
-	/* �_�C���O�������̐��X�^�C�����������ۂ����w�肵�܂��B*/
+	/* ダイヤグラム線の線スタイルが太線か否かを指定します。*/
 	if ( bStartEdit || pUiDataPrev->iDiagramSenIsBold != pUiData->iDiagramSenIsBold)
 	{
-		// pUiData->�����o�[�� �̐��K�����s���R�[�h�B
+		// pUiData->メンバー名 の正規化を行うコード。
 	}
 	
-	/*	 ��ԉw�����̕��@ */
+	/*	 停車駅明示の方法 */
 	if ( bStartEdit || pUiDataPrev->iStopMarkDrawType != pUiData->iStopMarkDrawType)
 	{
-		// pUiData->�����o�[�� �̐��K�����s���R�[�h�B
+		// pUiData->メンバー名 の正規化を行うコード。
 	}
 
-	/* �J�X�^�}�C�Y�����\����щw�����\�ł��̎�ʂ̗�Ԃ��B�������w�肵�܂��B*/
+	/* カスタマイズ時刻表および駅時刻表でこの種別の列車を隠すかを指定します。*/
 	if (bStartEdit || pUiDataPrev->iHidden != pUiData->iHidden)
 	{
-		// pUiData->�����o�[�� �̐��K�����s���R�[�h�B
+		// pUiData->メンバー名 の正規化を行うコード。
 	}
 }
 
@@ -291,110 +291,110 @@ int CPropEditUi_Ressyasyubetsu::CheckUiData(
 	int iRv = 0 ;
 
 
-	/* ��Ԏ�ʖ� */
+	/* 列車種別名 */
 	if ( iRv >= 0 )
 	{
 		if ( bNewItem || pUiDataStartEdit->strSyubetsumei != pUiData->strSyubetsumei)
 		{
 			if ( pUiData->strSyubetsumei.length() == 0 )
 			{
-				iRv = -1 ;      //  ��ʖ����w�肳��Ă��܂���
+				iRv = -1 ;      //  種別名が指定されていません
 				ShowError( ERRMSG_SYUBETUSMEI_EMPTY ) ;
 				SetFocus( offsetof( UIDATA , strSyubetsumei )) ;
 			}
 		}
 	}
 		
-	/* ��Ԏ�ʖ��̗L���E���� */
+	/* 列車種別名の有効・無効 */
 	if ( iRv >= 0 )
 	{
 		if ( bNewItem || pUiDataStartEdit->bSyubetsumeiIsEnable != pUiData->bSyubetsumeiIsEnable)
 		{
-			// pUiData->�����o�[�� �̐��K�����s���R�[�h�B
+			// pUiData->メンバー名 の正規化を行うコード。
 		}
 	}
 		
-	/* ���́i��ʖ��̗��́j */
+	/* 略称（種別名の略称） */
 	if ( iRv >= 0 )
 	{
 		if ( bNewItem || pUiDataStartEdit->strRyakusyou != pUiData->strRyakusyou)
 		{
 			if ( pUiData->strRyakusyou.length() > 6 )
 			{
-				iRv = -2 ;      //  ���̂��������܂�(���̂�6�����܂�(���p)�ł�)
+				iRv = -2 ;      //  略称が長すぎます(略称は6文字まで(半角)です)
 				ShowError( ERRMSG_RYAKUSYOULENGTH ) ;
 				SetFocus( offsetof( UIDATA , strRyakusyou )) ;
 			}
 		}
 	}
-	/* �����\�����F(�_�C���O�����̗�ԏ��̕����F�����˂܂�)	*/
+	/* 時刻表文字色(ダイヤグラムの列車情報の文字色を兼ねます)	*/
 	if ( iRv >= 0 )
 	{
 		if ( bNewItem || pUiDataStartEdit->colorJikokuhyouMojiColor != pUiData->colorJikokuhyouMojiColor)
 		{
-			// pUiData->�����o�[�� �̐��K�����s���R�[�h�B
+			// pUiData->メンバー名 の正規化を行うコード。
 		}
 	}
 
-	/* �����\�r���[�ŁA���̗�Ԏ�ʂ̎�����\�����邽�߂̎����\�t�H���g */
+	/* 時刻表ビューで、この列車種別の時刻を表示するための時刻表フォント */
 	if ( iRv >= 0 )
 	{
 		if ( bNewItem || pUiDataStartEdit->iJikokuhyouFontIndex != pUiData->iJikokuhyouFontIndex)
 		{
-			// pUiData->�����o�[�� �̐��K�����s���R�[�h�B
+			// pUiData->メンバー名 の正規化を行うコード。
 		}
 	}
 
-	/* �����\�w�i�F(�w�i�F�p�^�[�����u��ʐF�v�̏ꍇ)	*/
+	/* 時刻表背景色(背景色パターンが「種別色」の場合)	*/
 	if (iRv >= 0)
 	{
 		if (bNewItem || pUiDataStartEdit->colorJikokuhyouBackColor != pUiData->colorJikokuhyouBackColor)
 		{
-			// pUiData->�����o�[�� �̐��K�����s���R�[�h�B
+			// pUiData->メンバー名 の正規化を行うコード。
 		}
 	}
-	/* �_�C���O�������̐F */
+	/* ダイヤグラム線の色 */
 	if ( iRv >= 0 )
 	{
 		if ( bNewItem || pUiDataStartEdit->colorDiagramSenColor != pUiData->colorDiagramSenColor)
 		{
-			// pUiData->�����o�[�� �̐��K�����s���R�[�h�B
+			// pUiData->メンバー名 の正規化を行うコード。
 		}
 	}
 		
-	/* �_�C���O�������̐��X�^�C��*/	
+	/* ダイヤグラム線の線スタイル*/	
 	if ( iRv >= 0 )
 	{
 		if ( bNewItem || pUiDataStartEdit->iDiagramSenStyle != pUiData->iDiagramSenStyle)
 		{
-			// pUiData->�����o�[�� �̐��K�����s���R�[�h�B
+			// pUiData->メンバー名 の正規化を行うコード。
 		}
 	}
 
-	/* �_�C���O�������̐��X�^�C�����������ۂ����w�肵�܂��B*/
+	/* ダイヤグラム線の線スタイルが太線か否かを指定します。*/
 	if ( iRv >= 0 )
 	{
 		if ( bNewItem || pUiDataStartEdit->iDiagramSenIsBold != pUiData->iDiagramSenIsBold)
 		{
-			// pUiData->�����o�[�� �̐��K�����s���R�[�h�B
+			// pUiData->メンバー名 の正規化を行うコード。
 		}
 	}
 		
-	/*	 ��ԉw�����̕��@ */
+	/*	 停車駅明示の方法 */
 	if ( iRv >= 0 )
 	{
 		if ( bNewItem || pUiDataStartEdit->iStopMarkDrawType != pUiData->iStopMarkDrawType)
 		{
-			// pUiData->�����o�[�� �̐��K�����s���R�[�h�B
+			// pUiData->メンバー名 の正規化を行うコード。
 		}
 	}
 
-	/* �J�X�^�}�C�Y�����\����щw�����\�ł��̎�ʂ̗�Ԃ��B�������w�肵�܂��B*/
+	/* カスタマイズ時刻表および駅時刻表でこの種別の列車を隠すかを指定します。*/
 	if (iRv >= 0)
 	{
 		if (bNewItem || pUiDataStartEdit->iHidden != pUiData->iHidden)
 		{
-			// pUiData->�����o�[�� �̐��K�����s���R�[�h�B
+			// pUiData->メンバー名 の正規化を行うコード。
 		}
 	}
 
@@ -410,65 +410,65 @@ int CPropEditUi_Ressyasyubetsu::UiDataToTarget(
 	{
 		CentDedRessyasyubetsu* pTarget = m_pTarget->get( i ) ; 
 
-		/* ��Ԏ�ʖ� */
+		/* 列車種別名 */
 		if ( bNewItem || pUiDataStartEdit->strSyubetsumei != pUiData->strSyubetsumei)
 		{
 			pTarget->setSyubetsumei( pUiData->strSyubetsumei ) ;
 		}
 		
-		/* ���́i��ʖ��̗��́j */
+		/* 略称（種別名の略称） */
 		if ( bNewItem || pUiDataStartEdit->strRyakusyou != pUiData->strRyakusyou)
 		{
 			pTarget->setRyakusyou( pUiData->strRyakusyou ) ;
 		}
-		/* �����\�����F(�_�C���O�����̗�ԏ��̕����F�����˂܂�)	*/
+		/* 時刻表文字色(ダイヤグラムの列車情報の文字色を兼ねます)	*/
 		if ( bNewItem || pUiDataStartEdit->colorJikokuhyouMojiColor != pUiData->colorJikokuhyouMojiColor)
 		{
 			pTarget->setJikokuhyouMojiColor( pUiData->colorJikokuhyouMojiColor ) ;
 		}
 
-		/* �����\�r���[�ŁA���̗�Ԏ�ʂ̎�����\�����邽�߂̎����\�t�H���g */
+		/* 時刻表ビューで、この列車種別の時刻を表示するための時刻表フォント */
 		if ( bNewItem || pUiDataStartEdit->iJikokuhyouFontIndex != pUiData->iJikokuhyouFontIndex)
 		{
 			pTarget->setJikokuhyouFontIndex( pUiData->iJikokuhyouFontIndex ) ;
 		}
 
-		/* �����\�w�i�F(�w�i�F�p�^�[�����u��ʐF�v�̏ꍇ)	*/
+		/* 時刻表背景色(背景色パターンが「種別色」の場合)	*/
 		if (bNewItem || pUiDataStartEdit->colorJikokuhyouBackColor != pUiData->colorJikokuhyouBackColor)
 		{
 			pTarget->setJikokuhyouBackColor(pUiData->colorJikokuhyouBackColor);
 		}
 
-		/* �_�C���O�������̐F */
+		/* ダイヤグラム線の色 */
 		if ( bNewItem || pUiDataStartEdit->colorDiagramSenColor != pUiData->colorDiagramSenColor)
 		{
 			pTarget->setDiagramSenColor( pUiData->colorDiagramSenColor ) ;
 		}
 		
-		/* �_�C���O�������̐��X�^�C��*/	
+		/* ダイヤグラム線の線スタイル*/	
 		if ( bNewItem || pUiDataStartEdit->iDiagramSenStyle != pUiData->iDiagramSenStyle)
 		{
 			pTarget->setDiagramSenStyle( (CentDedRessyasyubetsu::ESenStyle)pUiData->iDiagramSenStyle ) ;
 		}
 
-		/* �_�C���O�������̐��X�^�C�����������ۂ����w�肵�܂��B*/
+		/* ダイヤグラム線の線スタイルが太線か否かを指定します。*/
 		if ( bNewItem || pUiDataStartEdit->iDiagramSenIsBold != pUiData->iDiagramSenIsBold)
 		{
 			pTarget->setDiagramSenIsBold( pUiData->iDiagramSenIsBold == 1 ) ;
 		}
 		
-		/*	 ��ԉw�����̕��@ */
+		/*	 停車駅明示の方法 */
 		if ( bNewItem || pUiDataStartEdit->iStopMarkDrawType != pUiData->iStopMarkDrawType)
 		{
 			pTarget->setStopMarkDrawType( (CentDedRessyasyubetsu::EStopMarkDrawType)pUiData->iStopMarkDrawType ) ;
 		}
-		/*	 �e���Index */
+		/*	 親種別Index */
 		if (bNewItem || pUiDataStartEdit->iParentSyubetsuIndex != pUiData->iParentSyubetsuIndex)
 		{
 			pTarget->setParentSyubetsuIndex(pUiData->iParentSyubetsuIndex);
 		}
 
-		/* �J�X�^�}�C�Y�����\����щw�����\�ł��̎�ʂ̗�Ԃ��B�������w�肵�܂��B*/
+		/* カスタマイズ時刻表および駅時刻表でこの種別の列車を隠すかを指定します。*/
 		if (bNewItem || pUiDataStartEdit->iHidden != pUiData->iHidden)
 		{
 			pTarget->setHidden(pUiData->iHidden == 1);
@@ -480,7 +480,7 @@ int CPropEditUi_Ressyasyubetsu::UiDataToTarget(
 
 
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 CPropEditUi_Ressyasyubetsu::CPropEditUi_Ressyasyubetsu(
 	bool bNewItem , 

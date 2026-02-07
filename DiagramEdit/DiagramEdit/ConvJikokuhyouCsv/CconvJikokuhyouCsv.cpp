@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,49 +35,49 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 // ****************************************************************
 // $Id: CconvJikokuhyouCsv.cpp 
 // ****************************************************************
 #include "stdafx.h"
 #include "CconvJikokuhyouCsv.h"
-#include "str\strprintf.h"
-//#include "..\ViewJikokuhyou\JikokuhyouColSpec\CdYColSpecCont.h"
+#include "str¥strprintf.h"
+//#include "..¥ViewJikokuhyou¥JikokuhyouColSpec¥CdYColSpecCont.h"
 #include "Str/stringSplit.h"
-#include "..\entDed\CentDedBeforeOperation.h"
-#include "..\entDed\CentDedAfterOperation.h"
+#include "..¥entDed¥CentDedBeforeOperation.h"
+#include "..¥entDed¥CentDedAfterOperation.h"
 #include <algorithm>
 
 namespace ConvJikokuhyouCsv{
@@ -90,12 +90,12 @@ using namespace OuLib::Str ;
 //using ViewJikokuhyou::JikokuhyouColSpec::CdYColSpec;
 
 /**
-	FileType�� ���O
+	FileTypeの 名前
 */
 const TCHAR* const nameFileType = _T("FileType") ;
 
 /**
-	FileType �̒l
+	FileType の値
 */
 const TCHAR* const nameFileTypeValue = _T("OuDiaSecond.JikokuhyouCsv.2") ;
 
@@ -107,23 +107,23 @@ const int CSVROWINDEX_Gou = 8 ;
 const int CSVROWINDEX_Ekijikoku0 = 9 ;
 const int CSVCOLUMNINDEX_Ressya0 = 2 ;
 
-const tstring nameShunt(_T("�� "));
-const tstring nameConnect(_T("�� "));
-const tstring nameConnectFront(_T("�O��"));
-const tstring nameConnectBack(_T("���"));
-const tstring nameRelease(_T("�� "));
-const tstring nameReleaseFront(_T("�O"));
-const tstring nameReleaseBack(_T("��"));
-const tstring nameReleaseLeave(_T("�ȊO"));
-const tstring nameNumberChange(_T("�^�ԕύX"));
-const tstring nameNumberReverse(_T("�^�Ԕ��]"));
-const tstring nameOut(_T("�o��"));
-const tstring nameIn(_T("����"));
-const tstring nameClassChange(_T("��ʕύX"));
-const tstring namePropertyChange(_T("��ԏ��ύX"));
-const tstring namePropertySame(_T("�����Ԉ���"));
+const tstring nameShunt(_T("換 "));
+const tstring nameConnect(_T("増 "));
+const tstring nameConnectFront(_T("前方"));
+const tstring nameConnectBack(_T("後方"));
+const tstring nameRelease(_T("解 "));
+const tstring nameReleaseFront(_T("前"));
+const tstring nameReleaseBack(_T("後"));
+const tstring nameReleaseLeave(_T("以外"));
+const tstring nameNumberChange(_T("運番変更"));
+const tstring nameNumberReverse(_T("運番反転"));
+const tstring nameOut(_T("出区"));
+const tstring nameIn(_T("入区"));
+const tstring nameClassChange(_T("種別変更"));
+const tstring namePropertyChange(_T("列車情報変更"));
+const tstring namePropertySame(_T("同一列車扱い"));
 
-/** �����̏�����ێ����܂��B */
+/** 時刻の書式を保持します。 */
 //const CdDedJikoku::CConv
 //CconvJikokuhyouCsv::getCdDedJikokuConv(
 //	const bool bDisplaySecondEkiJikoku,
@@ -151,33 +151,33 @@ const tstring namePropertySame(_T("�����Ԉ���"));
 //
 //const CdDedJikoku::CConv	g_CdDedJikokuConv(
 //	true ,		//	NoColon 
-//	// ���� 00 ���� 09 �̏ꍇ�A10�̈ʂ� "0" ���폜���܂��B
+//	// 時が 00 から 09 の場合、10の位の "0" を削除します。
 //	CdDedJikoku::CConv::EHour_ZeroToNone ,	
-//	CdDedJikoku::CConv::ESecond_NoSecond 	// �b����ɏo�͂��܂���B 
+//	CdDedJikoku::CConv::ESecond_NoSecond 	// 秒を常に出力しません。 
 //	) ;
 //
 //const CdDedJikoku::CConv	g_CdDedJikokuConvSecond(
 //	true,		//	NoColon 
-//				// ���� 00 ���� 09 �̏ꍇ�A10�̈ʂ� "0" ���폜���܂��B
+//				// 時が 00 から 09 の場合、10の位の "0" を削除します。
 //	CdDedJikoku::CConv::EHour_ZeroToNone,
 //	CdDedJikoku::CConv::ESecond_Output 	
 //);
 //const CdDedJikoku::CConv	g_CdDedJikokuConvColon(
 //	false,		//	Colon 
-//				// ���� 00 ���� 09 �̏ꍇ�A10�̈ʂ� "0" ���폜���܂��B
+//				// 時が 00 から 09 の場合、10の位の "0" を削除します。
 //	CdDedJikoku::CConv::EHour_ZeroToNone,
-//	CdDedJikoku::CConv::ESecond_NoSecond 	// �b����ɏo�͂��܂���B 
+//	CdDedJikoku::CConv::ESecond_NoSecond 	// 秒を常に出力しません。 
 //);
 //
 //const CdDedJikoku::CConv	g_CdDedJikokuConvSecondColon(
 //	false,		//	Colon 
-//				// ���� 00 ���� 09 �̏ꍇ�A10�̈ʂ� "0" ���폜���܂��B
+//				// 時が 00 から 09 の場合、10の位の "0" を削除します。
 //	CdDedJikoku::CConv::EHour_ZeroToNone,
 //	CdDedJikoku::CConv::ESecond_Output
 //);
 
 	// --------------------------------
-	//@name	�w�����Z���̕�����̉���
+	//@name	駅時刻セルの文字列の解釈
 	// --------------------------------
 tstring CconvJikokuhyouCsv::encode_Ekijikoku( 
 		CentDedEkiJikoku::EEkiatsukai eEkiatsukai , 
@@ -334,18 +334,18 @@ void CconvJikokuhyouCsv::encode_BeforeOperation(
 		strText2 = _T("");
 	}
 	/**
-		��Ɨ��ɕ\������O��Ƃ́ABeforeCont�̉������Ɨ��A�������A�o�擙�̗�Ԑ�[�͏����B
-		�b�P�ʏ����́A�������ݒ�Ɋ�Â��s���܂��B
+		作業欄に表示する前作業は、BeforeContの下から作業欄個、ただし、出区等の列車先端は除く。
+		秒単位処理は、着時刻設定に基づき行います。
 	*/
 	else if (pBeforeOperationCont->getMuPtr()->get(0)->isFirstOperation())
 	{
 		/**
-			�܂��́A��Ɨ��ɕ\������͈͂̍ŏ�ʂ����߂�
-			idx=0�͗�Ԑ�[�Ȃ̂ŏ����Aidx=1�ƍ�Ɛ�-�\�����̂ǂ��炩�傫�������A�ŏ�ʈʒu�ɂȂ�܂��B
-			���̌�Aidxb(�\���ӏ���idx)�𑫂��ABeforeCont�ł��̒l��idx�Ƃ����Ƃ����݂���ꍇ�́A���̍�Ƃ�\�����܂�
-			�\����2�̏ꍇ
-			��Ɛ�1	:iTargetPos1,2	�������A1,2�̈ʒu�ɍ�Ƃ������̂ŁA�\�����ڂȂ�
-			2		:iTargetPos1,2	�������A2�̈ʒu�ɍ�Ƃ������̂ŁA1��Ɩڂ̂ݕ\��
+			まずは、作業欄に表示する範囲の最上位を求める
+			idx=0は列車先端なので除き、idx=1と作業数-表示数のどちらか大きい方が、最上位位置になります。
+			その後、idxb(表示箇所のidx)を足し、BeforeContでその値をidxとする作業が存在する場合は、その作業を表示します
+			表示数2の場合
+			作業数1	:iTargetPos1,2	ただし、1,2の位置に作業が無いので、表示項目なし
+			2		:iTargetPos1,2	ただし、2の位置に作業が無いので、1作業目のみ表示
 			3		:iTargetPos1,2
 			4		:iTargetPos2,3
 		*/
@@ -424,8 +424,8 @@ void CconvJikokuhyouCsv::encode_BeforeOperation(
 					bDisplay2400,
 					true);
 			}
-			//Ver2.00.05 �^�p�ԍ��ύX�Ή�
-			//Ver2.06.05 �^�p�ԍ������]�Ή�
+			//Ver2.00.05 運用番号変更対応
+			//Ver2.06.05 運用番号順反転対応
 			else if (pBeforeOperation->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_NumberChange)
 			{
 				if (pBeforeOperation->getOperationNumberReverse())
@@ -454,11 +454,11 @@ void CconvJikokuhyouCsv::encode_BeforeOperation(
 	else
 	{
 		/**
-			�܂��́A��Ɨ��ɕ\������͈͂̍ŏ�ʂ����߂�
-			idx=0�ƍ�Ɛ�-�\�����̂ǂ��炩�傫�������A�ŏ�ʈʒu�ɂȂ�܂��B
-			���̌�Aidxb(�\���ӏ���idx)�𑫂��ABeforeCont�ł��̒l��idx�Ƃ����Ƃ����݂���ꍇ�́A���̍�Ƃ�\�����܂�
-			�\����2�̏ꍇ
-			��Ɛ�1	:iTargetPos0,1	�������A1�̈ʒu�ɍ�Ƃ������̂ŁA1��Ɩڂ̂ݕ\��
+			まずは、作業欄に表示する範囲の最上位を求める
+			idx=0と作業数-表示数のどちらか大きい方が、最上位位置になります。
+			その後、idxb(表示箇所のidx)を足し、BeforeContでその値をidxとする作業が存在する場合は、その作業を表示します
+			表示数2の場合
+			作業数1	:iTargetPos0,1	ただし、1の位置に作業が無いので、1作業目のみ表示
 			2		:iTargetPos0,1
 			3		:iTargetPos1,2
 			4		:iTargetPos2,3
@@ -538,8 +538,8 @@ void CconvJikokuhyouCsv::encode_BeforeOperation(
 					bDisplay2400,
 					true);
 			}
-			//Ver2.00.05 �^�p�ԍ��ύX�Ή�
-			//Ver2.06.05 �^�p�ԍ������]�Ή�
+			//Ver2.00.05 運用番号変更対応
+			//Ver2.06.05 運用番号順反転対応
 			else if (pBeforeOperation->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_NumberChange)
 			{
 				if (pBeforeOperation->getOperationNumberReverse())
@@ -566,12 +566,12 @@ void CconvJikokuhyouCsv::encode_BeforeOperation(
 		}
 	}
 
-	//  �P�D�`�w�́w�w�����`���x���w�����x
-	//  �Q�D��Ԃe�́A�`�w�ł̉w�����w��ԁx���w�ʉ߁x�̂����ꂩ
-	//  �R�D��Ԃe�́A�`�w�̒���������
-	//  �S�D��Ԃe�́A�`�w�̑O�̉w�ł̉w�����w�o�R�Ȃ��x
+	//  １．Ａ駅の『駅時刻形式』が『発着』
+	//  ２．列車Ｆの、Ａ駅での駅扱が『停車』か『通過』のいずれか
+	//  ３．列車Ｆの、Ａ駅の着時刻が空
+	//  ４．列車Ｆの、Ａ駅の前の駅での駅扱が『経由なし』
 	//
-	//  ���̏ꍇ�́A�����\�r���[��ł́A��Ԃe�̂`�w�ł̒������� " || " �\���Ƃ��܂��B
+	//  この場合は、時刻表ビュー上では、列車ＦのＡ駅での着時刻は " || " 表示とします。
 	{
 		CentDedEkiJikoku aCentDedEkijikokuPrev;
 		if (0 <= iEkiOrder - 1
@@ -581,7 +581,7 @@ void CconvJikokuhyouCsv::encode_BeforeOperation(
 				pCentDedRessya->getCentDedEkiJikoku(
 					iEkiOrder - 1);
 		}
-		//aCentDedEkijikokuPrev = �O�̉w�̉w����
+		//aCentDedEkijikokuPrev = 前の駅の駅時刻
 
 		if ((aCentDedEkiJikoku.getEkiatsukai() ==
 				CentDedEkiJikoku::Ekiatsukai_Teisya ||
@@ -662,8 +662,8 @@ void CconvJikokuhyouCsv::encode_AfterOperation(
 	else if (!pAfterOperationCont->getMuPtr()->get(iOperationIndex)->isLastOperation())
 	{
 		/**
-			���Ƃ��A�\�����������A�O������\������
-			�b�P�ʏ����́A�������ݒ�Ɋ�Â��s���܂��B
+			後作業を、表示欄数だけ、前方から表示する
+			秒単位処理は、発時刻設定に基づき行います。
 		*/
 		const CentDedAfterOperation* pAfterOperation
 			= pAfterOperationCont->getMuPtr()->get(iOperationIndex);
@@ -711,7 +711,7 @@ void CconvJikokuhyouCsv::encode_AfterOperation(
 			strText1 = nameRelease;
 			if (pAfterOperation->getReleasePos() == 0)//Back
 			{
-				strText1 += _T("��");
+				strText1 += _T("後");
 				strText1 += to_tstring(pAfterOperation->getReleaseIndexCount());
 			}
 			else if (pAfterOperation->getReleasePos() == 1)//Front
@@ -736,8 +736,8 @@ void CconvJikokuhyouCsv::encode_AfterOperation(
 				bDisplay2400,
 				false);
 		}
-		//Ver2.00.05 �^�p�ԍ��ύX�Ή�
-		//Ver2.06.05 �^�p�ԍ������]�Ή�
+		//Ver2.00.05 運用番号変更対応
+		//Ver2.06.05 運用番号順反転対応
 		else if (pAfterOperation->getAOperation() == CentDedAfterOperation::EAOperation::AOperation_NumberChange)
 		{
 			if (pAfterOperation->getOperationNumberReverse())
@@ -763,13 +763,13 @@ void CconvJikokuhyouCsv::encode_AfterOperation(
 		strText2 = _T("");
 	}
 
-	//  �P�D�`�w�́w�w�����`���x���w�����x
-	//  �Q�D��Ԃe�́A�`�w�ł̉w�����w��ԁx���w�ʉ߁x�̂����ꂩ
-	//  �R�D��Ԃe�́A�`�w�̔���������
-	//  �S�D��Ԃe�́A�`�w�̎��̉w�ł̉w�����w�o�R�Ȃ��x
+	//  １．Ａ駅の『駅時刻形式』が『発着』
+	//  ２．列車Ｆの、Ａ駅での駅扱が『停車』か『通過』のいずれか
+	//  ３．列車Ｆの、Ａ駅の発時刻が空
+	//  ４．列車Ｆの、Ａ駅の次の駅での駅扱が『経由なし』
 	//
-	//	  ���̏ꍇ�́A�����\�r���[��ł́A��Ԃe�̂`�w�ł̔������� 
-	//	" || " �\���Ƃ��܂�
+	//	  この場合は、時刻表ビュー上では、列車ＦのＡ駅での発時刻は 
+	//	" || " 表示とします
 	{
 		CentDedEkiJikoku aCentDedEkijikokuNext;
 		if (0 <= iEkiOrder + 1
@@ -779,7 +779,7 @@ void CconvJikokuhyouCsv::encode_AfterOperation(
 				pCentDedRessya->getCentDedEkiJikoku(
 					iEkiOrder + 1);
 		}
-		//aCentDedEkijikokuNext = ���̉w�̉w����
+		//aCentDedEkijikokuNext = 次の駅の駅時刻
 
 		if ((aCentDedEkiJikoku.getEkiatsukai() ==
 				CentDedEkiJikoku::Ekiatsukai_Teisya ||
@@ -798,7 +798,7 @@ void CconvJikokuhyouCsv::encode_AfterOperation(
 }
 
 // --------------------------------
-	//@name encode() �̉����֐�	
+	//@name encode() の下請関数	
 	// --------------------------------
 
 int CconvJikokuhyouCsv::encode_AddRessya( 
@@ -827,7 +827,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 	{
 		if ( pCentDedRessya->isNull() )
 		{
-			iRv = -1 ;	//	pCentDedRessya �� Null �ł��B
+			iRv = -1 ;	//	pCentDedRessya は Null です。
 		}
 	}
 	// --------------------------------
@@ -842,10 +842,10 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 				->get(pCentDedRessyasyubetsu->getParentSyubetsuIndex());
 		}
 	}
-	//pCentDedRessysyubetsu = ��Ԏ�ʃI�u�W�F�N�g
+	//pCentDedRessysyubetsu = 列車種別オブジェクト
 
 	int iRowIndex = CSVROWINDEX_Ressyabangou;
-	//��2.5��5�s�� <��Ԕԍ�>
+	//＜2.5＞5行目 <列車番号>
 	if ( iRv >= 0 )
 	{
 		CdCsvRow	aRow = pCdCsvDocument->getRowCont()->get(iRowIndex) ;
@@ -854,7 +854,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 		iRowIndex++;
 	}
 
-	//��2.6�� <�^�p�ԍ�>
+	//＜2.6＞ <運用番号>
 	if (iRv >= 0 && iEnableOperation > 1)
 	{
 		vector<tstring> strOperationNumber = pCentDedRessya->getOperationNumber(pCentDedRessya->getValidSihatsuEki());
@@ -890,7 +890,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 		}
 	}
 
-	//��2.7�� <��Ԏ��>
+	//＜2.7＞ <列車種別>
 	if (iRv >= 0)
 	{
 		CdCsvRow	aRow = pCdCsvDocument->getRowCont()->get(iRowIndex);
@@ -899,7 +899,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 		iRowIndex++;
 	}
 
-	//��2.8��<��Ԗ�>
+	//＜2.8＞<列車名>
 	if ( iRv >= 0 && bDisplayRessyamei)
 	{
 		CdCsvRow	aRow = pCdCsvDocument->getRowCont()->get(iRowIndex) ;
@@ -908,7 +908,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 		iRowIndex++;
 	}
 
-	//��2.9��<����>
+	//＜2.9＞<号数>
 	if ( iRv >= 0 && bDisplayRessyamei)
 	{
 		CdCsvRow	aRow = pCdCsvDocument->getRowCont()->get(iRowIndex) ;
@@ -916,7 +916,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 		pCdCsvDocument->getRowCont()->set( aRow , iRowIndex) ;
 		iRowIndex++;
 	}
-	//��2.10��<���\��>
+	//＜2.10＞<号表示>
 	if ( iRv >= 0 && bDisplayRessyamei)
 	{
 		tstring	strValue ;
@@ -930,7 +930,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 		iRowIndex++;
 	}
 
-	//��2.11�� <�n���w��>
+	//＜2.11＞ <始発駅名>
 	if (iRv >= 0)
 	{
 		tstring strText;
@@ -944,7 +944,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 		iRowIndex++;
 	}
 
-	//��2.12�� <�n���w���>
+	//＜2.12＞ <始発駅作業>
 	if (iRv >= 0)
 	{
 		tstring strText1;
@@ -1003,7 +1003,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 			strText3 = joinc(';', aFirstOperation.getOperationNumberOriginal(), true);
 			strText4 = aFirstOperation.getInOutLinkCode();
 		}
-		//2.00.05 ���^�p�ԍ��ɑΉ�
+		//2.00.05 仮運用番号に対応
 		else if (aFirstOperation.getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Junction)
 		{
 			strText1 = _T("");
@@ -1044,7 +1044,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 		}
 	}
 
-	//��2.13�� <�I���w��>
+	//＜2.13＞ <終着駅名>
 	if (iRv >= 0)
 	{
 		tstring strText;
@@ -1058,7 +1058,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 		iRowIndex++;
 	}
 
-	//��2.14�� <�I���w���>
+	//＜2.14＞ <終着駅作業>
 	if (iRv >= 0)
 	{
 		tstring strText1;
@@ -1118,7 +1118,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 		}
 		else if (aLastOperation.getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Junction)
 		{
-			//Ver2.05 1�s�ڂɂ́A����Ԑڑ��^�C�v��\������
+			//Ver2.05 1行目には、次列車接続タイプを表示する
 			if (aLastOperation.getNextJunctionType() == 1)
 			{
 				strText1 = nameClassChange;
@@ -1163,7 +1163,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 		}
 	}
 
-	//��2.15�� <�H���O�n���w>
+	//＜2.15＞ <路線外始発駅>
 	if (iRv >= 0 && bDisplayOuterTerminalShihatsu)
 	{
 		tstring strText1;
@@ -1202,7 +1202,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 	}
 
 
-	//��2.10��10�s�ځ` �w����
+	//＜2.10＞10行目〜 駅時刻
 	
 	if (iRv >= 0)
 	{
@@ -1253,9 +1253,9 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 					if (!aCentDedEkiJikoku.getChakujikoku().isNull() && bDisplayTsuukaEkiJikoku)
 					{
 						/**
-							�b�P�ʕ\��OFF�̏ꍇ�́A�؂�グ�E�؂�̂Ă̏������s���܂����A
-							���̕⏕�̂��߁A���������؂�グ�ŁA��������30�b�ȏ�؂�グ�܂��͐؂�̂Ă̏ꍇ�́A�������̎擾���s���܂��B
-							���̉w�Ǝ��̉w�̊Ԃ��^�s�Ȃ��̏ꍇ�́A�^�s�Ȃ��𒴂�����̉w���玞�����擾���܂��B
+							秒単位表示OFFの場合は、切り上げ・切り捨ての処理を行いますが、
+							その補助のため、着時刻が切り上げで、発時刻が30秒以上切り上げまたは切り捨ての場合は、発時刻の取得を行います。
+							この駅と次の駅の間が運行なしの場合は、運行なしを超えた先の駅から時刻を取得します。
 						*/
 						CdDedJikoku aHatsuJikoku;
 						if (!bDisplaySecondEkiJikoku &&
@@ -1280,9 +1280,9 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 								}
 							}
 						}
-						//	�ʉ߉w�̉w�������ݒ肳��Ă���A
-						//	�w�ʉ߉w�̉w������\������x�w��ɂȂ��Ă���ꍇ��
-						//	������\��
+						//	通過駅の駅時刻が設定されており、
+						//	『通過駅の駅時刻を表示する』指定になっている場合は
+						//	時刻を表示
 						strText = encode_Ekijikoku(
 							aCentDedEkiJikoku.getEkiatsukai(),
 							aCentDedEkiJikoku.getChakujikoku(),
@@ -1294,7 +1294,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 							true,
 							aHatsuJikoku);
 					}
-					//�n���w���H���O�����ݒ�ŁA�w�����Ȃ�or�ʉ߉w�����\���Ȃ��Ȃ�A�o�R�����}�[�N��\��
+					//始発駅かつ路線外発着設定で、駅時刻なしor通過駅時刻表示なしなら、経由無しマークを表示
 					else if (iEkiOrder == pCentDedRessya->getSihatsuEki() &&
 						pCentDedRessya->getFirstOperation().getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Outer &&
 						bDisplayOuterTerminalShihatsu)
@@ -1310,13 +1310,13 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 				break;
 				case CentDedEkiJikoku::Ekiatsukai_Teisya:
 				{
-					//	��ԉw�̉w�������w�肳��Ă���
+					//	停車駅の駅時刻が指定されている
 					if (!aCentDedEkiJikoku.getChakujikoku().isNull())
 					{
 						/**
-							�b�P�ʕ\��OFF�̏ꍇ�́A�؂�グ�E�؂�̂Ă̏������s���܂����A
-							���̕⏕�̂��߁A���������؂�グ�ŁA��������30�b�ȏ�؂�グ�܂��͐؂�̂Ă̏ꍇ�́A�������̎擾���s���܂��B
-							���̉w�Ǝ��̉w�̊Ԃ��^�s�Ȃ��̏ꍇ�́A�^�s�Ȃ��𒴂�����̉w���玞�����擾���܂��B
+							秒単位表示OFFの場合は、切り上げ・切り捨ての処理を行いますが、
+							その補助のため、着時刻が切り上げで、発時刻が30秒以上切り上げまたは切り捨ての場合は、発時刻の取得を行います。
+							この駅と次の駅の間が運行なしの場合は、運行なしを超えた先の駅から時刻を取得します。
 						*/
 						CdDedJikoku aHatsuJikoku;
 						if (!bDisplaySecondEkiJikoku &&
@@ -1352,7 +1352,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 							true,
 							aHatsuJikoku);
 					}
-					//�n���w���H���O�����ݒ�ŁA�w�����Ȃ��Ȃ�A�o�R�����}�[�N��\��
+					//始発駅かつ路線外発着設定で、駅時刻なしなら、経由無しマークを表示
 					else if (iEkiOrder == pCentDedRessya->getSihatsuEki() &&
 						pCentDedRessya->getFirstOperation().getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Outer &&
 						bDisplayOuterTerminalShihatsu)
@@ -1364,12 +1364,12 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 				}
 
 
-				//  �P�D�`�w�́w�w�����`���x���w�����x
-				//  �Q�D��Ԃe�́A�`�w�ł̉w�����w��ԁx���w�ʉ߁x�̂����ꂩ
-				//  �R�D��Ԃe�́A�`�w�̒���������
-				//  �S�D��Ԃe�́A�`�w�̑O�̉w�ł̉w�����w�o�R�Ȃ��x
+				//  １．Ａ駅の『駅時刻形式』が『発着』
+				//  ２．列車Ｆの、Ａ駅での駅扱が『停車』か『通過』のいずれか
+				//  ３．列車Ｆの、Ａ駅の着時刻が空
+				//  ４．列車Ｆの、Ａ駅の前の駅での駅扱が『経由なし』
 				//
-				//  ���̏ꍇ�́A�����\�r���[��ł́A��Ԃe�̂`�w�ł̒������� " || " �\���Ƃ��܂��B
+				//  この場合は、時刻表ビュー上では、列車ＦのＡ駅での着時刻は " || " 表示とします。
 				{
 					CentDedEkiJikoku aCentDedEkijikokuPrev;
 					if (0 <= iEkiOrder - 1
@@ -1379,7 +1379,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 							pCentDedRessya->getCentDedEkiJikoku(
 								iEkiOrder - 1);
 					}
-					//aCentDedEkijikokuPrev = �O�̉w�̉w����
+					//aCentDedEkijikokuPrev = 前の駅の駅時刻
 
 					if (aCdDedEki.isHatsuChakuHyouji() &&
 						(aCentDedEkiJikoku.getEkiatsukai() ==
@@ -1436,9 +1436,9 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 					if (!aCentDedEkiJikoku.getHatsujikoku().isNull() && bDisplayTsuukaEkiJikoku)
 					{
 						/**
-							�b�P�ʕ\��OFF�̏ꍇ�́A�؂�グ�E�؂�̂Ă̏������s���܂����A
-							���̕⏕�̂��߁A���������؂�̂ĂŁA��������30�b�ȏ�؂�グ�܂��͐؂�グ�̏ꍇ�́A�������̎擾���s���܂��B
-							���̉w�ƑO�̉w�̊Ԃ��^�s�Ȃ��̏ꍇ�́A�^�s�Ȃ��𒴂�����̉w���玞�����擾���܂��B
+							秒単位表示OFFの場合は、切り上げ・切り捨ての処理を行いますが、
+							その補助のため、発時刻が切り捨てで、着時刻が30秒以上切り上げまたは切り上げの場合は、着時刻の取得を行います。
+							この駅と前の駅の間が運行なしの場合は、運行なしを超えた先の駅から時刻を取得します。
 						*/
 						CdDedJikoku aChakuJikoku;
 						if (!bDisplaySecondEkiJikoku &&
@@ -1464,9 +1464,9 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 							}
 						}
 
-						//	�ʉ߉w�̉w�������ݒ肳��Ă���A
-						//	�w�ʉ߉w�̉w������\������x�w��ɂȂ��Ă���ꍇ��
-						//	������\��
+						//	通過駅の駅時刻が設定されており、
+						//	『通過駅の駅時刻を表示する』指定になっている場合は
+						//	時刻を表示
 						strText = encode_Ekijikoku(
 							aCentDedEkiJikoku.getEkiatsukai(),
 							aCentDedEkiJikoku.getHatsujikoku(),
@@ -1478,7 +1478,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 							false,
 							aChakuJikoku);
 					}
-					//�I���w���H���O�����ݒ�ŁA�w�����Ȃ�or�ʉ߉w�����\���Ȃ��Ȃ�A�o�R�����}�[�N��\��
+					//終着駅かつ路線外発着設定で、駅時刻なしor通過駅時刻表示なしなら、経由無しマークを表示
 					else if (iEkiOrder == pCentDedRessya->getSyuuchakuEki() &&
 						pCentDedRessya->getLastOperation().getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Outer &&
 						bDisplayOuterTerminalShuchaku)
@@ -1493,13 +1493,13 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 				break;
 				case CentDedEkiJikoku::Ekiatsukai_Teisya:
 				{
-					//	��ԉw�̉w�������w�肳��Ă���
+					//	停車駅の駅時刻が指定されている
 					if (!aCentDedEkiJikoku.getHatsujikoku().isNull())
 					{
 						/**
-							�b�P�ʕ\��OFF�̏ꍇ�́A�؂�グ�E�؂�̂Ă̏������s���܂����A
-							���̕⏕�̂��߁A���������؂�̂ĂŁA��������30�b�ȏ�؂�グ�܂��͐؂�グ�̏ꍇ�́A�������̎擾���s���܂��B
-							���̉w�ƑO�̉w�̊Ԃ��^�s�Ȃ��̏ꍇ�́A�^�s�Ȃ��𒴂�����̉w���玞�����擾���܂��B
+							秒単位表示OFFの場合は、切り上げ・切り捨ての処理を行いますが、
+							その補助のため、発時刻が切り捨てで、着時刻が30秒以上切り上げまたは切り上げの場合は、着時刻の取得を行います。
+							この駅と前の駅の間が運行なしの場合は、運行なしを超えた先の駅から時刻を取得します。
 						*/
 						CdDedJikoku aChakuJikoku;
 						if (!bDisplaySecondEkiJikoku &&
@@ -1536,7 +1536,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 							false,
 							aChakuJikoku);
 					}
-					//�I���w���H���O�����ݒ�ŁA�w�����Ȃ��Ȃ�A�o�R�����}�[�N��\��
+					//終着駅かつ路線外発着設定で、駅時刻なしなら、経由無しマークを表示
 					else if (iEkiOrder == pCentDedRessya->getSyuuchakuEki() &&
 						pCentDedRessya->getLastOperation().getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Outer &&
 						bDisplayOuterTerminalShuchaku)
@@ -1549,13 +1549,13 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 				}
 
 
-				//  �P�D�`�w�́w�w�����`���x���w�����x
-				//  �Q�D��Ԃe�́A�`�w�ł̉w�����w��ԁx���w�ʉ߁x�̂����ꂩ
-				//  �R�D��Ԃe�́A�`�w�̔���������
-				//  �S�D��Ԃe�́A�`�w�̎��̉w�ł̉w�����w�o�R�Ȃ��x
+				//  １．Ａ駅の『駅時刻形式』が『発着』
+				//  ２．列車Ｆの、Ａ駅での駅扱が『停車』か『通過』のいずれか
+				//  ３．列車Ｆの、Ａ駅の発時刻が空
+				//  ４．列車Ｆの、Ａ駅の次の駅での駅扱が『経由なし』
 				//
-				//	  ���̏ꍇ�́A�����\�r���[��ł́A��Ԃe�̂`�w�ł̔������� 
-				//	" || " �\���Ƃ��܂�
+				//	  この場合は、時刻表ビュー上では、列車ＦのＡ駅での発時刻は 
+				//	" || " 表示とします
 				{
 					CentDedEkiJikoku aCentDedEkijikokuNext;
 					if (0 <= iEkiOrder + 1
@@ -1565,7 +1565,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 							pCentDedRessya->getCentDedEkiJikoku(
 								iEkiOrder + 1);
 					}
-					//aCentDedEkijikokuNext = ���̉w�̉w����
+					//aCentDedEkijikokuNext = 次の駅の駅時刻
 
 					if (aCdDedEki.isHatsuChakuHyouji() &&
 						(aCentDedEkiJikoku.getEkiatsukai() ==
@@ -1627,8 +1627,8 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 				pCdCsvDocument->getRowCont()->set(aRow, iRowIndex);
 				iRowIndex++;
 			}
-			//BeforeOperation2�����AfterOperation2�ɂ��ẮA1�ŕ\�����s���AiRowIndex���i�߂�
-			//BeforeOperationBefore2�������l
+			//BeforeOperation2およびAfterOperation2については、1で表示を行い、iRowIndexを二つ進める
+			//BeforeOperationBefore2等も同様
 
 			else if (aCdYColSpec.getColumnType() == CdYColSpec::ColumnType_BeforeOperationBefore1)
 			{
@@ -1703,7 +1703,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 						strText3 = joinc(';', pFirstOperation->getOperationNumberOriginal(), true);
 						strText4 = pFirstOperation->getInOutLinkCode();
 					}
-					//2.00.05 ���^�p�ԍ��ɑΉ�
+					//2.00.05 仮運用番号に対応
 					else if (pFirstOperation->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Junction)
 					{
 						strText1 = _T("");
@@ -1769,12 +1769,12 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 
 				}
 
-				//  �P�D�`�w�́w�w�����`���x���w�����x
-				//  �Q�D��Ԃe�́A�`�w�ł̉w�����w��ԁx���w�ʉ߁x�̂����ꂩ
-				//  �R�D��Ԃe�́A�`�w�̒���������
-				//  �S�D��Ԃe�́A�`�w�̑O�̉w�ł̉w�����w�o�R�Ȃ��x
+				//  １．Ａ駅の『駅時刻形式』が『発着』
+				//  ２．列車Ｆの、Ａ駅での駅扱が『停車』か『通過』のいずれか
+				//  ３．列車Ｆの、Ａ駅の着時刻が空
+				//  ４．列車Ｆの、Ａ駅の前の駅での駅扱が『経由なし』
 				//
-				//  ���̏ꍇ�́A�����\�r���[��ł́A��Ԃe�̂`�w�ł̒������� " || " �\���Ƃ��܂��B
+				//  この場合は、時刻表ビュー上では、列車ＦのＡ駅での着時刻は " || " 表示とします。
 				{
 					CentDedEkiJikoku aCentDedEkijikokuPrev;
 					if (0 <= iEkiOrder - 1
@@ -1784,7 +1784,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 							pCentDedRessya->getCentDedEkiJikoku(
 								iEkiOrder - 1);
 					}
-					//aCentDedEkijikokuPrev = �O�̉w�̉w����
+					//aCentDedEkijikokuPrev = 前の駅の駅時刻
 
 					if ((aCentDedEkiJikoku.getEkiatsukai() ==
 						CentDedEkiJikoku::Ekiatsukai_Teisya ||
@@ -1928,7 +1928,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 					}
 					else if (pLastOperation->getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Junction)
 					{
-						//Ver2.05 1�s�ڂɂ́A����Ԑڑ��^�C�v��\������
+						//Ver2.05 1行目には、次列車接続タイプを表示する
 						if (pLastOperation->getNextJunctionType() == 1)
 						{
 							strText1 = nameClassChange;
@@ -1999,12 +1999,12 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 					}
 				}
 
-				//  �P�D�`�w�́w�w�����`���x���w�����x
-				//  �Q�D��Ԃe�́A�`�w�ł̉w�����w��ԁx���w�ʉ߁x�̂����ꂩ
-				//  �R�D��Ԃe�́A�`�w�̒���������
-				//  �S�D��Ԃe�́A�`�w�̑O�̉w�ł̉w�����w�o�R�Ȃ��x
+				//  １．Ａ駅の『駅時刻形式』が『発着』
+				//  ２．列車Ｆの、Ａ駅での駅扱が『停車』か『通過』のいずれか
+				//  ３．列車Ｆの、Ａ駅の着時刻が空
+				//  ４．列車Ｆの、Ａ駅の前の駅での駅扱が『経由なし』
 				//
-				//  ���̏ꍇ�́A�����\�r���[��ł́A��Ԃe�̂`�w�ł̒������� " || " �\���Ƃ��܂��B
+				//  この場合は、時刻表ビュー上では、列車ＦのＡ駅での着時刻は " || " 表示とします。
 				{
 					CentDedEkiJikoku aCentDedEkijikokuPrev;
 					if (0 <= iEkiOrder - 1
@@ -2014,7 +2014,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 							pCentDedRessya->getCentDedEkiJikoku(
 								iEkiOrder - 1);
 					}
-					//aCentDedEkijikokuPrev = �O�̉w�̉w����
+					//aCentDedEkijikokuPrev = 前の駅の駅時刻
 
 					if ((aCentDedEkiJikoku.getEkiatsukai() ==
 						CentDedEkiJikoku::Ekiatsukai_Teisya ||
@@ -2120,7 +2120,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 						strText3 = joinc(';', pFirstOperation->getOperationNumberOriginal(), true);
 						strText4 = pFirstOperation->getInOutLinkCode();
 					}
-					//2.00.05 ���^�p�ԍ��ɑΉ�
+					//2.00.05 仮運用番号に対応
 					else if (pFirstOperation->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Junction)
 					{
 						strText1 = _T("");
@@ -2186,13 +2186,13 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 
 				}
 
-				//  �P�D�`�w�́w�w�����`���x���w�����x
-				//  �Q�D��Ԃe�́A�`�w�ł̉w�����w��ԁx���w�ʉ߁x�̂����ꂩ
-				//  �R�D��Ԃe�́A�`�w�̔���������
-				//  �S�D��Ԃe�́A�`�w�̎��̉w�ł̉w�����w�o�R�Ȃ��x
+				//  １．Ａ駅の『駅時刻形式』が『発着』
+				//  ２．列車Ｆの、Ａ駅での駅扱が『停車』か『通過』のいずれか
+				//  ３．列車Ｆの、Ａ駅の発時刻が空
+				//  ４．列車Ｆの、Ａ駅の次の駅での駅扱が『経由なし』
 				//
-				//	  ���̏ꍇ�́A�����\�r���[��ł́A��Ԃe�̂`�w�ł̔������� 
-				//	" || " �\���Ƃ��܂�
+				//	  この場合は、時刻表ビュー上では、列車ＦのＡ駅での発時刻は 
+				//	" || " 表示とします
 				{
 					CentDedEkiJikoku aCentDedEkijikokuNext;
 					if (0 <= iEkiOrder + 1
@@ -2202,7 +2202,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 							pCentDedRessya->getCentDedEkiJikoku(
 								iEkiOrder + 1);
 					}
-					//aCentDedEkijikokuNext = ���̉w�̉w����
+					//aCentDedEkijikokuNext = 次の駅の駅時刻
 
 					if ((aCentDedEkiJikoku.getEkiatsukai() ==
 						CentDedEkiJikoku::Ekiatsukai_Teisya ||
@@ -2347,7 +2347,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 					}
 					else if (pLastOperation->getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Junction)
 					{
-						//Ver2.05 1�s�ڂɂ́A����Ԑڑ��^�C�v��\������
+						//Ver2.05 1行目には、次列車接続タイプを表示する
 						if (pLastOperation->getNextJunctionType() == 1)
 						{
 							strText1 = nameClassChange;
@@ -2419,13 +2419,13 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 
 				}
 
-				//  �P�D�`�w�́w�w�����`���x���w�����x
-				//  �Q�D��Ԃe�́A�`�w�ł̉w�����w��ԁx���w�ʉ߁x�̂����ꂩ
-				//  �R�D��Ԃe�́A�`�w�̔���������
-				//  �S�D��Ԃe�́A�`�w�̎��̉w�ł̉w�����w�o�R�Ȃ��x
+				//  １．Ａ駅の『駅時刻形式』が『発着』
+				//  ２．列車Ｆの、Ａ駅での駅扱が『停車』か『通過』のいずれか
+				//  ３．列車Ｆの、Ａ駅の発時刻が空
+				//  ４．列車Ｆの、Ａ駅の次の駅での駅扱が『経由なし』
 				//
-				//	  ���̏ꍇ�́A�����\�r���[��ł́A��Ԃe�̂`�w�ł̔������� 
-				//	" || " �\���Ƃ��܂�
+				//	  この場合は、時刻表ビュー上では、列車ＦのＡ駅での発時刻は 
+				//	" || " 表示とします
 				{
 					CentDedEkiJikoku aCentDedEkijikokuNext;
 					if (0 <= iEkiOrder + 1
@@ -2435,7 +2435,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 							pCentDedRessya->getCentDedEkiJikoku(
 								iEkiOrder + 1);
 					}
-					//aCentDedEkijikokuNext = ���̉w�̉w����
+					//aCentDedEkijikokuNext = 次の駅の駅時刻
 
 					if ((aCentDedEkiJikoku.getEkiatsukai() ==
 						CentDedEkiJikoku::Ekiatsukai_Teisya ||
@@ -2471,7 +2471,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 		}
 	}
 
-	//��2.17�� <�H���O�I���w>
+	//＜2.17＞ <路線外終着駅>
 	if (iRv >= 0 && bDisplayOuterTerminalShuchaku)
 	{
 		tstring strText1;
@@ -2508,7 +2508,7 @@ int CconvJikokuhyouCsv::encode_AddRessya(
 		pCdCsvDocument->getRowCont()->set(aRow2, iRowIndex);
 		iRowIndex++;
 	}
-	//��2.11��[��1="���l" AND ��2=""]�̗�@���l��
+	//＜2.11＞[列1="備考" AND 列2=""]の列　備考列
 	if ( iRv >= 0 )
 	{
 			CdCsvRow	aRow = pCdCsvDocument->getRowCont()->get(iRowIndex) ;
@@ -2529,7 +2529,7 @@ int CconvJikokuhyouCsv::encode_AddRessyaNull(
 	// --------------------------------
 
 	int iRowIndex = CSVROWINDEX_Ressyabangou;
-	//��2.5��5�s�� <��Ԕԍ�>
+	//＜2.5＞5行目 <列車番号>
 	if ( iRv >= 0 )
 	{
 		CdCsvRow	aRow = pCdCsvDocument->getRowCont()->get(iRowIndex) ;
@@ -2538,7 +2538,7 @@ int CconvJikokuhyouCsv::encode_AddRessyaNull(
 		iRowIndex++;
 	}
 
-	//��2.6�� <�^�p�ԍ�>
+	//＜2.6＞ <運用番号>
 	if (iRv >= 0 && iEnableOperation > 1)
 	{
 		CdCsvRow	aRow = pCdCsvDocument->getRowCont()->get(iRowIndex);
@@ -2547,7 +2547,7 @@ int CconvJikokuhyouCsv::encode_AddRessyaNull(
 		iRowIndex++;
 	}
 
-	//��2.6��6�s�� <��Ԏ��>
+	//＜2.6＞6行目 <列車種別>
 	if ( iRv >= 0 )
 	{
 		CdCsvRow	aRow = pCdCsvDocument->getRowCont()->get(iRowIndex) ;
@@ -2556,7 +2556,7 @@ int CconvJikokuhyouCsv::encode_AddRessyaNull(
 		iRowIndex++;
 	}
 
-	//��2.7��7�s�� <��Ԗ�>
+	//＜2.7＞7行目 <列車名>
 	if ( iRv >= 0 && bDisplayRessyamei)
 	{
 		CdCsvRow	aRow = pCdCsvDocument->getRowCont()->get(iRowIndex) ;
@@ -2565,7 +2565,7 @@ int CconvJikokuhyouCsv::encode_AddRessyaNull(
 		iRowIndex++;
 	}
 
-	//��2.8��8�s�� <����>
+	//＜2.8＞8行目 <号数>
 	if ( iRv >= 0 && bDisplayRessyamei)
 	{
 		CdCsvRow	aRow = pCdCsvDocument->getRowCont()->get(iRowIndex) ;
@@ -2573,7 +2573,7 @@ int CconvJikokuhyouCsv::encode_AddRessyaNull(
 		pCdCsvDocument->getRowCont()->set( aRow , iRowIndex) ;
 		iRowIndex++;
 	}
-	//��2.9��9�s�� <���\��>
+	//＜2.9＞9行目 <号表示>
 	if ( iRv >= 0 && bDisplayRessyamei)
 	{
 		CdCsvRow	aRow = pCdCsvDocument->getRowCont()->get(iRowIndex) ;
@@ -2582,7 +2582,7 @@ int CconvJikokuhyouCsv::encode_AddRessyaNull(
 		iRowIndex++;
 	}
 
-	//��2.11�� <�n���w��>
+	//＜2.11＞ <始発駅名>
 	if (iRv >= 0)
 	{
 		CdCsvRow	aRow = pCdCsvDocument->getRowCont()->get(iRowIndex);
@@ -2591,7 +2591,7 @@ int CconvJikokuhyouCsv::encode_AddRessyaNull(
 		iRowIndex++;
 	}
 
-	//��2.12�� <�n���w���>
+	//＜2.12＞ <始発駅作業>
 	if (iRv >= 0)
 	{
 		CdCsvRow	aRow = pCdCsvDocument->getRowCont()->get(iRowIndex);
@@ -2611,7 +2611,7 @@ int CconvJikokuhyouCsv::encode_AddRessyaNull(
 		}
 	}
 
-	//��2.13�� <�I���w��>
+	//＜2.13＞ <終着駅名>
 	if (iRv >= 0)
 	{
 		CdCsvRow	aRow = pCdCsvDocument->getRowCont()->get(iRowIndex);
@@ -2620,7 +2620,7 @@ int CconvJikokuhyouCsv::encode_AddRessyaNull(
 		iRowIndex++;
 	}
 
-	//��2.14�� <�I���w���>
+	//＜2.14＞ <終着駅作業>
 	if (iRv >= 0)
 	{
 
@@ -2634,7 +2634,7 @@ int CconvJikokuhyouCsv::encode_AddRessyaNull(
 		iRowIndex++;
 	}
 
-	//��2.15�� <�H���O�n���w>
+	//＜2.15＞ <路線外始発駅>
 	if (iRv >= 0 && bDisplayOuterTerminalShihatsu)
 	{
 		CdCsvRow	aRow = pCdCsvDocument->getRowCont()->get(iRowIndex);
@@ -2646,11 +2646,11 @@ int CconvJikokuhyouCsv::encode_AddRessyaNull(
 		pCdCsvDocument->getRowCont()->set(aRow2, iRowIndex);
 		iRowIndex++;
 	}
-	//��2.16��10�s�ځ` �w����
+	//＜2.16＞10行目〜 駅時刻
 	
 	//contiJikokuOrderOfJikokuhyouIndex = 
-	//	 contiJikokuOrderOfJjikokuhyouIndex[<�����\Index>]=<����Order> �̖@���������܂��B
-	//	�v�f�̐��́A�����\�̗񐔂ł��B
+	//	 contiJikokuOrderOfJjikokuhyouIndex[<時刻表Index>]=<時刻Order> の法則を持ちます。
+	//	要素の数は、時刻表の列数です。
 
 	if ( iRv >= 0 )
 	{
@@ -2663,7 +2663,7 @@ int CconvJikokuhyouCsv::encode_AddRessyaNull(
 			iRowIndex++;
 		}
 	}
-	//��2.17�� <�H���O�I���w>
+	//＜2.17＞ <路線外終着駅>
 	if (iRv >= 0 && bDisplayOuterTerminalShuchaku)
 	{
 		CdCsvRow	aRow = pCdCsvDocument->getRowCont()->get(iRowIndex);
@@ -2675,7 +2675,7 @@ int CconvJikokuhyouCsv::encode_AddRessyaNull(
 		pCdCsvDocument->getRowCont()->set(aRow2, iRowIndex);
 		iRowIndex++;
 	}
-	//��2.18��[��1="���l" AND ��2=""]�̗�@���l��
+	//＜2.18＞[列1="備考" AND 列2=""]の列　備考列
 	if ( iRv >= 0 )
 	{
 			CdCsvRow	aRow = pCdCsvDocument->getRowCont()->get(iRowIndex) ;
@@ -2686,7 +2686,7 @@ int CconvJikokuhyouCsv::encode_AddRessyaNull(
 }
 
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 CconvJikokuhyouCsv::CconvJikokuhyouCsv(
 		const tstring& nameKudari ,
@@ -2767,7 +2767,7 @@ int CconvJikokuhyouCsv::encode(
 	const Mu<const CentDedRessya*>* pCentDedRessyaCont = NULL ;
 
 	// --------------------------------
-	//	�I�u�W�F�N�gCdCsvDocument ���N���A
+	//	オブジェクトCdCsvDocument をクリア
 	// --------------------------------
 	if ( iRv >= 0 )
 	{
@@ -2778,20 +2778,20 @@ int CconvJikokuhyouCsv::encode(
 		pCentDedDia = aCentDedRosen.getCentDedDiaCont()->getMuPtr()->get( iDiaIndex ) ;
 		if ( pCentDedDia == NULL )
 		{
-			iRv = -1 ;	//	iDiaIndex ���s���ł��B
+			iRv = -1 ;	//	iDiaIndex が不正です。
 		}
 	}
 	if ( iRv >= 0 )
 	{
 		pCentDedRessyaCont = pCentDedDia->getCentDedRessyaCont( eRessyahoukou )->getMuPtr() ;
 	}
-	//pCentDedRessyaCont = ��Ԃ̃R���e�i
+	//pCentDedRessyaCont = 列車のコンテナ
 	if ( iRv >= 0 )
 	{
 		if ( !( 0 <= iRessyaIndex && iRessyaIndex < pCentDedRessyaCont->size() ) 
 			&& iRessyaIndex != 0 )
 		{
-			iRv = -2 ;	//	iRessyaIndex ���s���ł��B
+			iRv = -2 ;	//	iRessyaIndex が不正です。
 		}
 	}
 	if ( iRv >= 0 )
@@ -2803,12 +2803,12 @@ int CconvJikokuhyouCsv::encode(
 		if ( !( 0 <= iRessyaIndex + iRessyaCount && 
 			iRessyaIndex + iRessyaCount <= pCentDedRessyaCont->size() ) )
 		{
-			iRv = -3 ;	//	iRessyaCount ���s���ł��B
+			iRv = -3 ;	//	iRessyaCount が不正です。
 		}
 	}
 
 	// --------------------------------
-	//	CdCsvDocument ���N���A
+	//	CdCsvDocument をクリア
 	// --------------------------------
 	if ( iRv >= 0 )
 	{
@@ -2816,9 +2816,9 @@ int CconvJikokuhyouCsv::encode(
 	}
 
 	// --------------------------------
-	//	�w�b�_��
+	//	ヘッダ列
 	// --------------------------------
-	//	1�s�� FileType�s
+	//	1行目 FileType行
 	if ( iRv >= 0 )
 	{
 		CdCsvRow	aRow ;
@@ -2826,14 +2826,14 @@ int CconvJikokuhyouCsv::encode(
 		aRow.getCellCont()->insert( CdCsvCell( nameFileTypeValue ) ) ;
 		pCdCsvDocument->getRowCont()->insert( aRow ) ;
 	}	
-	//	2�s�� DiaName�s
+	//	2行目 DiaName行
 	if ( iRv >= 0 )
 	{
 		CdCsvRow	aRow ;
 		aRow.getCellCont()->insert( CdCsvCell( pCentDedDia->getName() ) ) ;
 		pCdCsvDocument->getRowCont()->insert( aRow ) ;
 	}	
-	//��2.3�� 3�s�� <����,���>
+	//＜2.3＞ 3行目 <下り,上り>
 	if ( iRv >= 0 )
 	{
 		tstring strValue ;
@@ -2850,7 +2850,7 @@ int CconvJikokuhyouCsv::encode(
 		aRow.getCellCont()->insert( CdCsvCell( strValue ) ) ;
 		pCdCsvDocument->getRowCont()->insert( aRow ) ;
 	}
-	//��2.4��4�s�� 
+	//＜2.4＞4行目 
 	if ( iRv >= 0 )
 	{
 		CdCsvRow	aRow ;
@@ -2858,9 +2858,9 @@ int CconvJikokuhyouCsv::encode(
 	}
 
 	// --------------------------------
-	//	�����\�����̍���2��
+	//	時刻表部分の左側2列
 	// --------------------------------
-	//��2.5��5�s�� <��Ԕԍ�>
+	//＜2.5＞5行目 <列車番号>
 	if ( iRv >= 0 )
 	{
 		CdCsvRow	aRow ;
@@ -2869,7 +2869,7 @@ int CconvJikokuhyouCsv::encode(
 		pCdCsvDocument->getRowCont()->insert( aRow ) ;
 	}
 
-	//��2.6��6�s�� <�^�p�ԍ�>
+	//＜2.6＞6行目 <運用番号>
 	if (iRv >= 0 && iEnableOperation > 1)
 	{
 		CdCsvRow	aRow;
@@ -2886,7 +2886,7 @@ int CconvJikokuhyouCsv::encode(
 		}
 	}
 
-	//��2.7��7�s�� <��Ԏ��>
+	//＜2.7＞7行目 <列車種別>
 	if ( iRv >= 0 )
 	{
 		CdCsvRow	aRow ;
@@ -2895,7 +2895,7 @@ int CconvJikokuhyouCsv::encode(
 		pCdCsvDocument->getRowCont()->insert( aRow ) ;
 	}
 
-	//��2.8��8�s�� <��Ԗ�>
+	//＜2.8＞8行目 <列車名>
 	if ( iRv >= 0 && bDisplayRessyamei)
 	{
 		CdCsvRow	aRow ;
@@ -2904,7 +2904,7 @@ int CconvJikokuhyouCsv::encode(
 		pCdCsvDocument->getRowCont()->insert( aRow ) ;
 	}
 
-	//��2.9��9�s�� <����>
+	//＜2.9＞9行目 <号数>
 	if ( iRv >= 0 && bDisplayRessyamei)
 	{
 		CdCsvRow	aRow ;
@@ -2912,7 +2912,7 @@ int CconvJikokuhyouCsv::encode(
 		aRow.getCellCont()->insert( CdCsvCell( ) ) ;
 		pCdCsvDocument->getRowCont()->insert( aRow ) ;
 	}
-	//��2.10��10�s�� <���\��>
+	//＜2.10＞10行目 <号表示>
 	if ( iRv >= 0 && bDisplayRessyamei)
 	{
 		CdCsvRow	aRow ;
@@ -2920,7 +2920,7 @@ int CconvJikokuhyouCsv::encode(
 		aRow.getCellCont()->insert( CdCsvCell() ) ;
 		pCdCsvDocument->getRowCont()->insert( aRow ) ;
 	}
-	//��2.11��11�s�� <�n���w��>
+	//＜2.11＞11行目 <始発駅名>
 	if (iRv >= 0)
 	{
 		CdCsvRow	aRow;
@@ -2928,7 +2928,7 @@ int CconvJikokuhyouCsv::encode(
 		aRow.getCellCont()->insert(CdCsvCell());
 		pCdCsvDocument->getRowCont()->insert(aRow);
 	}
-	//��2.12��12�s�� <�n���w���>
+	//＜2.12＞12行目 <始発駅作業>
 	if (iRv >= 0)
 	{
 		CdCsvRow	aRow;
@@ -2954,7 +2954,7 @@ int CconvJikokuhyouCsv::encode(
 			}
 		}
 	}
-	//��2.13��13�s�� <�I���w��>
+	//＜2.13＞13行目 <終着駅名>
 	if (iRv >= 0)
 	{
 		CdCsvRow	aRow;
@@ -2962,7 +2962,7 @@ int CconvJikokuhyouCsv::encode(
 		aRow.getCellCont()->insert(CdCsvCell());
 		pCdCsvDocument->getRowCont()->insert(aRow);
 	}
-	//��2.14��14�s�� <�I���w���>
+	//＜2.14＞14行目 <終着駅作業>
 	if (iRv >= 0)
 	{
 		CdCsvRow	aRow;
@@ -2981,7 +2981,7 @@ int CconvJikokuhyouCsv::encode(
 			pCdCsvDocument->getRowCont()->insert(aRow3);
 		}
 	}
-	//��2.15��15�s�� <�H���O�n���w>
+	//＜2.15＞15行目 <路線外始発駅>
 	if (iRv >= 0 && bDisplayOuterTerminalShihatsu)
 	{
 		CdCsvRow	aRow;
@@ -2994,10 +2994,10 @@ int CconvJikokuhyouCsv::encode(
 		pCdCsvDocument->getRowCont()->insert(aRow2);
 	}
 
-	//�n���w�E�I���w
-	//�H���O�n��
-	//�O����
-	//��2.16��16�s�ځ` �w����
+	//始発駅・終着駅
+	//路線外始発
+	//前後作業
+	//＜2.16＞16行目〜 駅時刻
 	if (iRv >= 0)
 	{
 		m_CdYColSpecCont =
@@ -3148,7 +3148,7 @@ int CconvJikokuhyouCsv::encode(
 		}
 	}
 
-	//��2.17��<�H���O�I���w>
+	//＜2.17＞<路線外終着駅>
 	if (iRv >= 0 && bDisplayOuterTerminalShuchaku)
 	{
 		CdCsvRow	aRow;
@@ -3160,7 +3160,7 @@ int CconvJikokuhyouCsv::encode(
 		aRow2.getCellCont()->insert(CdCsvCell());
 		pCdCsvDocument->getRowCont()->insert(aRow2);
 	}
-	//��2.118��[��1="���l" AND ��2=""]�̗�@���l��
+	//＜2.118＞[列1="備考" AND 列2=""]の列　備考列
 	if ( iRv >= 0 )
 	{
 		CdCsvRow	aRow ;
@@ -3169,7 +3169,7 @@ int CconvJikokuhyouCsv::encode(
 		pCdCsvDocument->getRowCont()->insert( aRow ) ;
 	}
 	// --------------------------------
-	//	��Ԃ��o��(�����\������3��ڈȍ~)
+	//	列車を出力(時刻表部分の3列目以降)
 	// --------------------------------
 	for ( int idxRessya = iRessyaIndex ; 
 		iRv >= 0 && idxRessya < iRessyaIndex + iRessyaCount ; 

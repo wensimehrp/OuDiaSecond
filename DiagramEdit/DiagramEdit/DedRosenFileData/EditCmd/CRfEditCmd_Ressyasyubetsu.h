@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -77,8 +77,8 @@ Copyright (C) 2006-2017 take-okm
 #ifndef  CRfEditCmd_Ressyasyubetsu_h
 #define  CRfEditCmd_Ressyasyubetsu_h
 /** @file */
-#include "..\..\entDed\CentDedRessyasyubetsuCont.h"
-#include "..\..\entDed\CentDedRosen.h"
+#include "..¥..¥entDed¥CentDedRessyasyubetsuCont.h"
+#include "..¥..¥entDed¥CentDedRosen.h"
 #include "CRfEditCmd.h"
 
 namespace DedRosenFileData{ namespace EditCmd{
@@ -88,57 +88,57 @@ namespace DedRosenFileData{ namespace EditCmd{
 // ****************************************************************
 /**
 @brief
-  CDedRosenFileData �I�u�W�F�N�g���� CentDedRessyasyubetsu �I�u�W�F�N�g��
-�ǉ��E�폜�̕ҏW����ł��B
+  CDedRosenFileData オブジェクト内の CentDedRessyasyubetsu オブジェクトの
+追加・削除の編集動作です。
 
-  ���̃N���X�́A CDedRosenFileData �I�u�W�F�N�g���̗�Ԏ�ʂ�
-�ǉ��E�u���E�폜���s���܂��B
+  このクラスは、 CDedRosenFileData オブジェクト内の列車種別の
+追加・置換・削除を行います。
 
-�@�Ȃ��A�u���̓���́A�폜�ƒǉ��̑g�ݍ��킹�ŕ\�����܂��B
+　なお、置換の動作は、削除と追加の組み合わせで表現します。
 
-  ��Ԏ�ʂ̍폜�́A�S��Ԃ̉w�����̒ǉ���폜�𔺂��܂��B
-���̂��߁Aundo �̂��߂ɂ� CentDedRosen ��ۑ�����K�v������܂��B
+  列車種別の削除は、全列車の駅時刻の追加･削除を伴います。
+このため、undo のためには CentDedRosen を保存する必要があります。
  	
 <h2>
-�y�g����1-�u���Ώۂ͈̔͂ƁA�ǉ�����A�C�e�����w��z
+【使い方1-置換対象の範囲と、追加するアイテムを指定】
 </h2>
 
-(1)  1�Ԗڂ̃R���X�g���N�^���g�p���āA
-�u���Ώۂ̃A�C�e��Index�͈̔͂ƁA�u����̃A�C�e����ݒ肵�Ă��������B
+(1)  1番目のコンストラクタを使用して、
+置換対象のアイテムIndexの範囲と、置換後のアイテムを設定してください。
 
-(2)�@execute() ���\�b�h�����s���āACDedRosenFileData �I�u�W�F�N�g��
-�X�V���Ă��������B
-�@(OuDia�ł͒ʏ�ACRfEditCmd::execute() �𒼐ڌĂяo������ɁA
-CDiagramEditDoc::executeEditCmd  () ���g�p���āA�h�L�������g���X�V����
-���܂��B����ɂ��ACDiagramEditDoc::undo() �����������삵�܂��B)
+(2)　execute() メソッドを実行して、CDedRosenFileData オブジェクトを
+更新してください。
+　(OuDiaでは通常、CRfEditCmd::execute() を直接呼び出す代わりに、
+CDiagramEditDoc::executeEditCmd  () を使用して、ドキュメントを更新して
+います。これにより、CDiagramEditDoc::undo() が正しく動作します。)
 
 <h2>
-�y�g����2-�u���Ώۂ͈̔͂̃A�C�e���̃R�s�[���擾��A�R�s�[��ҏW�z
+【使い方2-置換対象の範囲のアイテムのコピーを取得後、コピーを編集】
 </h2>
 
-(1)�@2�Ԗڂ̃R���X�g���N�^���g�p���āA
-�ҏW�Ώۂ̃A�C�e��Index�͈̔͂��w�肵�Ă��������B
-�@���̃R���X�g���N�^�́A���̃I�u�W�F�N�g���ێ����� CentDedRessyasyubetsuCont
-( m_CentDedRessyasyubetsuContSrc) �ɁA�w�肳�ꂽ�͈͂̃A�C�e�����R�s�[���܂��B
-�@(OuDia�ł́ACRfEditCmd_Eki �R���X�g���N�^�𒼐ڎg�p�������ɁA
- ViewRessyasyubetsu::CWndDcdGridRessyasyubetsu::createCmd() ��
- �C���X�^���X�𐶐����Ă��܂�)
+(1)　2番目のコンストラクタを使用して、
+編集対象のアイテムIndexの範囲を指定してください。
+　このコンストラクタは、このオブジェクトが保持する CentDedRessyasyubetsuCont
+( m_CentDedRessyasyubetsuContSrc) に、指定された範囲のアイテムをコピーします。
+　(OuDiaでは、CRfEditCmd_Eki コンストラクタを直接使用する代わりに、
+ ViewRessyasyubetsu::CWndDcdGridRessyasyubetsu::createCmd() で
+ インスタンスを生成しています)
 
-(2)�@m_iDiaIndex,m_iSizeDst,m_CentDedEkiContSrc ��ҏW���Ă��������B
-�@m_CentDedEkiContSrc �̕ҏW�́A m_CaMuiSelect �A�_�v�^�����
-�s���Ă��������B
-( ViewRessyasyubetsu::CWndDcdGridRessyasyubetsu::createCmd() ��
-�C���X�^���X�𐶐������ꍇ�A createCmd() ���\�b�h��
-�E�C���h�E��ł̉w�̑I���󋵂��Am_CaMuiSelect �̑I����Ԃɔ��f�����܂��B
-�@�N���X���[�U�[�́Am_CaMuiSelect �őI������Ă��� CentDedRessyasyubetsu
-�݂̂�Ώۂɂ��� �ҏW������s�����Ƃɂ��A �E�C���h�E�őI�����ꂽ
-�w�݂̂�ύX���邱�Ƃ��ł��܂�)
+(2)　m_iDiaIndex,m_iSizeDst,m_CentDedEkiContSrc を編集してください。
+　m_CentDedEkiContSrc の編集は、 m_CaMuiSelect アダプタを介して
+行ってください。
+( ViewRessyasyubetsu::CWndDcdGridRessyasyubetsu::createCmd() で
+インスタンスを生成した場合、 createCmd() メソッドは
+ウインドウ上での駅の選択状況を、m_CaMuiSelect の選択状態に反映させます。
+　クラスユーザーは、m_CaMuiSelect で選択されている CentDedRessyasyubetsu
+のみを対象にして 編集操作を行うことにより、 ウインドウで選択された
+駅のみを変更することができます)
 
-(3)�@execute() ���\�b�h�����s���āACDedRosenFileData �I�u�W�F�N�g��
-�X�V���Ă��������B
-�@(OuDia�ł͒ʏ�ACRfEditCmd::execute() �𒼐ڌĂяo������ɁA
-CDiagramEditDoc::executeEditCmd  () ���g�p���āA�h�L�������g���X�V����
-���܂��B����ɂ��ACDiagramEditDoc::undo() �����������삵�܂��B)
+(3)　execute() メソッドを実行して、CDedRosenFileData オブジェクトを
+更新してください。
+　(OuDiaでは通常、CRfEditCmd::execute() を直接呼び出す代わりに、
+CDiagramEditDoc::executeEditCmd  () を使用して、ドキュメントを更新して
+います。これにより、CDiagramEditDoc::undo() が正しく動作します。)
 
 */
 class CRfEditCmd_Ressyasyubetsu : 
@@ -146,130 +146,130 @@ class CRfEditCmd_Ressyasyubetsu :
 {
 private:
 	// ********************************
-	///@name ����
+	///@name 属性
 	// ********************************
 	///@{
 	/**
-	CentDedRosen �I�u�W�F�N�g��
-	�ǉ��E�폜�ΏۂƂȂ� ��Ԏ�� �C���f�N�X�B
+	CentDedRosen オブジェクトの
+	追加・削除対象となる 列車種別 インデクス。
 
-	INT_MAX �͖������w�肵�����̂Ƃ݂Ȃ��܂��B
+	INT_MAX は末尾を指定したものとみなします。
 
-	�R���X�g���N�^�Ō��܂�܂��B
+	コンストラクタで決まります。
 	 */
 	int m_iIndexDst ;
 	
 	/**
-	CentDedRosen �I�u�W�F�N�g��
-	�폜�ΏۂƂȂ��Ԏ�ʂ̐��B
+	CentDedRosen オブジェクトの
+	削除対象となる列車種別の数。
 
-	���̒l��0�̏ꍇ�́Aexecute() �� 
-	m_CentDedRessyasyubetsuContSrc.size() ��
-	CentDedRessyasyubetsu �̒ǉ��������s���܂��B
+	この値が0の場合は、execute() は 
+	m_CentDedRessyasyubetsuContSrc.size() 個の
+	CentDedRessyasyubetsu の追加だけを行います。
 
-	���̒l�� m_CentDedRessyasyubetsuContSrc.size() �Ɠ������ꍇ�́A
-	CentDedRessyasyubetsu �̒u�������������s���܂��B
+	この値が m_CentDedRessyasyubetsuContSrc.size() と等しい場合は、
+	CentDedRessyasyubetsu の置き換えだけを行います。
 
-	INT_MAX �́Am_iDiaIndex ���疖���܂ł��w�肵�����̂Ƃ݂Ȃ��܂��B
-	m_iIndexSrc �� m_iDiaIndex �𗼕� INT_MAX �ɂ��邱�Ƃ͂ł��܂���B
+	INT_MAX は、m_iDiaIndex から末尾までを指定したものとみなします。
+	m_iIndexSrc と m_iDiaIndex を両方 INT_MAX にすることはできません。
 
-	�R���X�g���N�^�Ō��܂�܂��B
+	コンストラクタで決まります。
 	 */
 	int m_iSizeDst ;
 	
 	/**
-	CentDedRosen �I�u�W�F�N�g�ɑ΂��A
-	�ǉ������Ԏ�ʂ�ێ�����R���e�i�B
-	���̃R���e�i�̃T�C�Y�� 0 �̏ꍇ�́A
-	execute() �� CentDedRosen �I�u�W�F�N�g����
-	 m_iSizeDst �� CentDedRessyasyubetsu �̍폜�������s���܂��B
+	CentDedRosen オブジェクトに対し、
+	追加する列車種別を保持するコンテナ。
+	このコンテナのサイズが 0 の場合は、
+	execute() は CentDedRosen オブジェクトから
+	 m_iSizeDst 個の CentDedRessyasyubetsu の削除だけを行います。
 
-	�R���X�g���N�^�Ō��܂�܂��B
+	コンストラクタで決まります。
 	 */
 	CentDedRessyasyubetsuCont	m_CentDedRessyasyubetsuContSrc ;
 
 
 	/**
-	  m_CentDedRessyasyubetsuContSrc ����
-	�R���e�i�̈ꕔ�̗v�f��I�������`�́A
-	�����R���e�i�C���^�[�t�F�[�X���쐬���܂��B
-	  ���̃C���X�^���X�́A m_CentDedRessyasyubetsuContSrc
-	��Adaptee�Ƃ��܂��B
+	  m_CentDedRessyasyubetsuContSrc 内の
+	コンテナの一部の要素を選択した形の、
+	部分コンテナインターフェースを作成します。
+	  このインスタンスは、 m_CentDedRessyasyubetsuContSrc
+	をAdapteeとします。
 
-	�@�R���X�g���N�^�Ő������ꂽ����́Am_CentDedEkiContSrc ����
-	 ���ׂĂ̗v�f��I�����Ă��܂��B
+	　コンストラクタで生成された直後は、m_CentDedEkiContSrc 内の
+	 すべての要素を選択しています。
 
-	  execute() ���\�b�h�̓���́A���̃C���X�^���X�̉e�����󂯂܂���B
+	  execute() メソッドの動作は、このインスタンスの影響を受けません。
 
 	<h2>
-	�yViewRessyasyubetsu::CWndDcdGridRessyasyubetsu::createCmd() ��
-	�C���X�^���X�𐶐������ꍇ�z
+	【ViewRessyasyubetsu::CWndDcdGridRessyasyubetsu::createCmd() で
+	インスタンスを生成した場合】
 	</h2>
 
-	 ViewRessyasyubetsu::CWndDcdGridRessyasyubetsu::createCmd() ��
-	�C���X�^���X�𐶐������ꍇ�A createCmd() ���\�b�h��
-	�E�C���h�E��ł̉w�̑I���󋵂��A���̃I�u�W�F�N�g�̑I����Ԃɔ��f�����܂��B
-	���ɁA�E�C���h�E��Ŕ�A�������I�𑀍���s���Ă���ꍇ�AcreateCmd() ���\�b�h���A
-	��������C���X�^���X�� m_CaMuiSelect �ɂ́A�I���E��I�������݂��܂��B
+	 ViewRessyasyubetsu::CWndDcdGridRessyasyubetsu::createCmd() で
+	インスタンスを生成した場合、 createCmd() メソッドは
+	ウインドウ上での駅の選択状況を、このオブジェクトの選択状態に反映させます。
+	特に、ウインドウ上で非連続複数選択操作を行っている場合、createCmd() メソッドが、
+	生成するインスタンスの m_CaMuiSelect には、選択・非選択が混在します。
 	
-	�@�N���X���[�U�[�́Am_CaMuiSelect �őI������Ă��� CentDedRessyasyubetsu
-	�݂̂�Ώۂɂ��� �ҏW������s�����Ƃɂ��A �E�C���h�E�őI�����ꂽ
-	�w�݂̂�ύX���邱�Ƃ��ł��܂��B
+	　クラスユーザーは、m_CaMuiSelect で選択されている CentDedRessyasyubetsu
+	のみを対象にして 編集操作を行うことにより、 ウインドウで選択された
+	駅のみを変更することができます。
 	*/
 	CaMuiSelect<CentDedRessyasyubetsu>	m_CaMuiSelect ;
 	///@}
 private:
 	// --------------------------------
-	///@name �����f�[�^
+	///@name 内部データ
 	// --------------------------------
 	///@{
 
 	/**
-	������Ԃł� NULL �B
-	execute() �ŁA
-	�v�f��u�����E�܂��͒ǉ���
-	�s������́Aexecute() �ō폜�����v�f��
-	�ێ����܂��B
-	�v�f������������悤�ȑ�����s�����ꍇ�́A
-	���̃R���e�i�͐�������܂���B
+	初期状態では NULL 。
+	execute() で、
+	要素を置換え・または追加を
+	行った後は、execute() で削除した要素を
+	保持します。
+	要素を減少させるような操作を行った場合は、
+	このコンテナは生成されません。
 	 */
 	CentDedRessyasyubetsuCont*	m_pCentDedRessyasyubetsuContOld ;
 	/**
-	������Ԃł� NULL �B
-	execute() ��
-	�v�f��������������́A
-	�u�������O�� CentDedRosen ��
-	�ێ����܂��B
-	�v�f��u�����E�ǉ����s�����ꍇ�́A
-	���̃R���e�i�͐�������܂���B
+	初期状態では NULL 。
+	execute() で
+	要素を減少させた後は、
+	置き換え前の CentDedRosen を
+	保持します。
+	要素を置換え・追加を行った場合は、
+	このコンテナは生成されません。
 	 */
 	CentDedRosen*	m_pCentDedRosen ;
 	///@}
 
 public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	/**
-	 ���ׂĂ̑������A�����Ŏw�肵�܂��B
+	 すべての属性を、引数で指定します。
 
 	@param iIndexDst [in]
-		CentDedRosen �I�u�W�F�N�g��
-		�ǉ��E�폜�ΏۂƂȂ��Ԏ�ʃC���f�N�X�B
+		CentDedRosen オブジェクトの
+		追加・削除対象となる列車種別インデクス。
 	@param iSizeDst [in]
-		CentDedRosen �I�u�W�F�N�g��
-		�폜�ΏۂƂȂ��Ԏ�ʂ̐��B@n
-		���̒l��0�̏ꍇ�́Aexecute() �� 
-		m_CentDedRessyaContSrc.size() ��
-		��Ԏ�ʂ̒ǉ��������s���܂��B
+		CentDedRosen オブジェクトの
+		削除対象となる列車種別の数。@n
+		この値が0の場合は、execute() は 
+		m_CentDedRessyaContSrc.size() 個の
+		列車種別の追加だけを行います。
 	@param aCentDedRessyasyubetsuContSrc [in]
-		CentDedRosen �I�u�W�F�N�g�ɑ΂��A
-		�ǉ������Ԏ�ʂ�ێ�����R���e�i�B
-		���̃R���e�i�̃T�C�Y�� 0 �̏ꍇ�́A
-		execute() �� CentDedRosen �I�u�W�F�N�g����
-		 m_iSizeDst �̗�Ԏ�ʂ̍폜�������s���܂��B\n
-		���̃R���e�i�Ɋi�[����I�u�W�F�N�g�́A��Ԏ�ʐ��� CentDedRosen �Ɠ�����
-		�Ȃ��Ă͂Ȃ�܂���B
+		CentDedRosen オブジェクトに対し、
+		追加する列車種別を保持するコンテナ。
+		このコンテナのサイズが 0 の場合は、
+		execute() は CentDedRosen オブジェクトから
+		 m_iSizeDst 個の列車種別の削除だけを行います。¥n
+		このコンテナに格納するオブジェクトは、列車種別数が CentDedRosen と同じで
+		なくてはなりません。
 	 */
 	CRfEditCmd_Ressyasyubetsu( 
 		int iIndexDst ,
@@ -277,87 +277,87 @@ public:
 		const CentDedRessyasyubetsuCont& aCentDedRessyasyubetsuContSrc ) ;
 
 	/**
-	 m_CentDedRessyasyubetsuContSrc ���A
-	�w�肳�ꂽCDedRosenFileData �́A�w��͈̔͂̃A�C�e���ŏ��������܂��B
+	 m_CentDedRessyasyubetsuContSrc を、
+	指定されたCDedRosenFileData の、指定の範囲のアイテムで初期化します。
 
 	@param aCDedRosenFileData [in]
-		�ҏW�Ώۂ� CDedRosenFileData ���w�肵�Ă��������B
+		編集対象の CDedRosenFileData を指定してください。
 	@param iIndexDst [in]
-		�ҏW�Ώۂ̃A�C�e���̐擪�C���f�N�X���w�肵�Ă��������B
+		編集対象のアイテムの先頭インデクスを指定してください。
 	@param iSizeDst [in]
-		�ҏW�Ώۂ̃A�C�e���̐����w�肵�Ă��������B
+		編集対象のアイテムの数を指定してください。
 	
- 	���̃R���X�g���N�^�́A m_CentDedRessyasyubetsuContSrc ��
-	aCDedRosenFileData ���� iIndex ���� iSize �̉w�ŏ��������܂��B
+ 	このコンストラクタは、 m_CentDedRessyasyubetsuContSrc を
+	aCDedRosenFileData 内の iIndex から iSize 個の駅で初期化します。
 
-	���������āA���̃R���X�g���N�^�Ő��������I�u�W�F�N�g��
-	execute() �����s���Ă��A�h�L�������g�͕ω����܂���B
+	したがって、このコンストラクタで生成したオブジェクトで
+	execute() を実行しても、ドキュメントは変化しません。
 
-	���̃R���X�g���N�^�ŃI�u�W�F�N�g�𐶐�������́A
-	���\�b�h�� m_iDiaIndex , m_iSizeDst ,
-	m_CentDedRessyasyubetsuContSrc��ҏW���Ă���A
-	execute() �����s���Ă��������B
-	m_CentDedRessyasyubetsuContSrc �̕ҏW�́A m_CaMuiSelect �A�_�v�^��
-	�g�p���Ă��������B
+	このコンストラクタでオブジェクトを生成した後は、
+	メソッドで m_iDiaIndex , m_iSizeDst ,
+	m_CentDedRessyasyubetsuContSrcを編集してから、
+	execute() を実行してください。
+	m_CentDedRessyasyubetsuContSrc の編集は、 m_CaMuiSelect アダプタを
+	使用してください。
 	*/
 	CRfEditCmd_Ressyasyubetsu( 
 		const CDedRosenFileData& aCDedRosenFileData ,
 		int iIndexDst , 
 		int iSizeDst );
 
-	virtual ~CRfEditCmd_Ressyasyubetsu() ; 
+	virtual ‾CRfEditCmd_Ressyasyubetsu() ; 
 
 public:
 	// ********************************
-	///@name	CRfEditCmd-����
+	///@name	CRfEditCmd-操作
 	// ********************************
 	///@{
 	/**
-	CDedRosenFileData �I�u�W�F�N�g�ɑ΂��āA�ҏW��������s���܂��B
-�@	  �܂��A�ҏW����ɐ��������ꍇ�A this �́Aundo
-	�i�ҏW����̎������j���s���̂ɕK�v�ȃf�[�^���A
-	�����o�ϐ��ɕێ����܂��B
+	CDedRosenFileData オブジェクトに対して、編集操作を実行します。
+　	  また、編集動作に成功した場合、 this は、undo
+	（編集動作の取り消し）を行うのに必要なデータを、
+	メンバ変数に保持します。
 	@param pCDedRosenFileData [in,out]
-		���̊֐��͂��̃I�u�W�F�N�g�ɑ΂��āA�ҏW��������s���܂��B
+		この関数はこのオブジェクトに対して、編集操作を実行します。
 	@return
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	-1 ;	//	m_iDiaIndex �̒l���s���ł��B
-		-	-11 ;	//	�v�f�̍폜�Ɏ��s���܂����B
-		-	-12 ;	//	�v�f�̒ǉ��Ɏ��s���܂����B
-		-	-13 ;	//	�v�f�̒u�������Ɏ��s���܂����B
+		成功したら 0 以上、エラーなら負の数です。
+		-	-1 ;	//	m_iDiaIndex の値が不正です。
+		-	-11 ;	//	要素の削除に失敗しました。
+		-	-12 ;	//	要素の追加に失敗しました。
+		-	-13 ;	//	要素の置き換えに失敗しました。
 
 	<H4>
-	�y�I�[�o���C�h�z
+	【オーバライド】
 	</H4>
-	pCDedRosenFileData �I�u�W�F�N�g�ɑ΂��āA�ҏW��������s���Ă��������B
+	pCDedRosenFileData オブジェクトに対して、編集動作を実行してください。
 	 */
 	virtual int execute( CDedRosenFileData* pCDedRosenFileData ) ;
 	
 	/**
-	�u this->execute() �ōs�����ҏW�����������
-	�i this->execute() �ŕҏW������s��������� CDedRosenFileData 
-	�I�u�W�F�N�g���A this->execute() ���s�����O�̏�Ԃ�
-	����j�v���߂̕ҏW�R�}���h�I�u�W�F�N�g�𐶐����܂��B
+	「 this->execute() で行った編集操作を取り消す
+	（ this->execute() で編集動作を行った直後の CDedRosenFileData 
+	オブジェクトを、 this->execute() を行う直前の状態に
+	する）」ための編集コマンドオブジェクトを生成します。
 
-	���̃����o�֐����Ԃ����I�u�W�F�N�g���g���� execute() ��
-	�Ăяo�����Ƃɂ��A this->execute() ����̏�Ԃ� CentDedRosen
-	 �I�u�W�F�N�g���A this->execute() ���O�̏�Ԃɖ߂����Ƃ��ł��܂��B
+	このメンバ関数が返したオブジェクトを使って execute() を
+	呼び出すことにより、 this->execute() 直後の状態の CentDedRosen
+	 オブジェクトを、 this->execute() 直前の状態に戻すことができます。
 	@return
-		execute() �ōs�����ҏW������������A
-		 CDedRosenFileData �I�u�W�F�N�g�� execute() ���s�����O�̏�Ԃ�
-		���邽�߂̃R�}���h�I�u�W�F�N�g�𐶐����܂��B
+		execute() で行った編集操作を取り消し、
+		 CDedRosenFileData オブジェクトを execute() を行う直前の状態に
+		するためのコマンドオブジェクトを生成します。
 	<H4>
-	�y�I�[�o���C�h�z
+	【オーバライド】
 	</H4>
-		execute() �Ŏ��s�����ҏW���e�����ɖ߂��悤�ȃI�u�W�F�N�g��
-		�������ĕԂ��Ă��������B
+		execute() で実行した編集内容を元に戻すようなオブジェクトを
+		生成して返してください。
 	 */
 	virtual Ou<CRfEditCmd> createUndoCmd()  ;
 	
 	///@}
 public:
 	// ********************************
-	///@name CRfEditCmd_Ressyasyubetsu-����
+	///@name CRfEditCmd_Ressyasyubetsu-属性
 	// ********************************
 	///@{
 	int getIndexDst()const{	return m_iIndexDst ; } ;
@@ -378,7 +378,7 @@ public:
 
 	/**
 	@return
-		�w�̑I�����s���A�_�v�^�ւ̃C���^�[�t�F�[�X��Ԃ��܂��B
+		駅の選択を行うアダプタへのインターフェースを返します。
 	*/
 	CaMuiSelect<CentDedRessyasyubetsu>* getCaMuiSelect()
 	{
@@ -387,7 +387,7 @@ public:
 		
 	/**
 	@return
-		�w�̑I�����s���A�_�v�^�ւ̃C���^�[�t�F�[�X��Ԃ��܂��B
+		駅の選択を行うアダプタへのインターフェースを返します。
 	*/
 	const CaMuiSelect<CentDedRessyasyubetsu>* getCaMuiSelect()const 
 	{

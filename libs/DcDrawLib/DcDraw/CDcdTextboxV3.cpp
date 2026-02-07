@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -68,15 +68,15 @@ Copyright (C) 2006-2017 take-okm
 // ****************************************************************
 */
 #include <deque>
-#include "str\CStrCharSizeMb.h"
-#include "NsMu\CMup_deque.h"
-#include "logmsg\logmsg.h"
-#include "DcDraw\CaDcdTargetItemPosition.h"
-#include "DcDraw\CConverter_WinGdi.h"
-#include "DcDraw\CVerticalTextElement.h"
-#include "DcDraw\CVerticalTextElementBuilder.h"
+#include "str¥CStrCharSizeMb.h"
+#include "NsMu¥CMup_deque.h"
+#include "logmsg¥logmsg.h"
+#include "DcDraw¥CaDcdTargetItemPosition.h"
+#include "DcDraw¥CConverter_WinGdi.h"
+#include "DcDraw¥CVerticalTextElement.h"
+#include "DcDraw¥CVerticalTextElementBuilder.h"
 #include "CDcdTextboxV3.h"
-#include "str\strToWstr.h"
+#include "str¥strToWstr.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -91,7 +91,7 @@ namespace DcDraw{
 //	CDcdTextboxV3
 // ****************************************************************
 // --------------------------------
-//@name �����֐�
+//@name 下請関数
 // --------------------------------
 
 Ou<CGdiHFontHolder> CDcdTextboxV3::CreateVFont( 
@@ -134,17 +134,17 @@ CdDcdSizeXy CDcdTextboxV3::calcZenkakuCharExtent(
 		TEXTMETRIC	aTEXTMETRIC ;
 		GetTextMetrics( pIfDcdTarget->getHdc() , &aTEXTMETRIC ) ;
 
-		//	TEXTMETRIC::tmMaxCharWidth �́AWindows7�傫����(���{��ɂ�)
-		//	Windows7��Windows10�Ƃł́AGetTextMetrics() �֐��ɂ���ē����� 
+		//	TEXTMETRIC::tmMaxCharWidth は、Windows7大きすぎ(日本語には)
+		//	Windows7とWindows10とでは、GetTextMetrics() 関数によって得られる 
 		//	TEXTMETRIC::tmMaxCharWidth
 		//	(https://msdn.microsoft.com/en-us/library/windows/desktop/dd145132(v=vs.85).aspx) 
-		//	�̒l���قȂ�܂��B
-		//	"���l�r �S�V�b�N" ��9�|�C���g�̃t�H���g�̏ꍇ�ATEXTMETRIC::tmMaxCharWidth �̒l�́A
-		//	Windows7�ł� 13�AWindows10 �ł� 24 �ƂȂ�܂��B
-		//	Windows10 ��24�͗]��ɂ��傫�����܂��B���̂��߁A�����̃T�C�Y��
-		//	TEXTMETRIC.tmHeight ���������ƂɌ��߂邱�Ƃɂ��܂����B
+		//	の値が異なります。
+		//	"＠ＭＳ ゴシック" の9ポイントのフォントの場合、TEXTMETRIC::tmMaxCharWidth の値は、
+		//	Windows7では 13、Windows10 では 24 となります。
+		//	Windows10 の24は余りにも大きすぎます。このため、文字のサイズは
+		//	TEXTMETRIC.tmHeight だけをもとに決めることにしました。
 		
-		//// �ȑO�̃R�[�h
+		//// 以前のコード
 		//	sizeExtent.setX( aTEXTMETRIC.tmHeight ) ;
 		//	sizeExtent.setY( aTEXTMETRIC.tmMaxCharWidth ) ;
 		//	sizeExtent.setX( max( sizeExtent.getX() , sizeExtent.getY() ) ) ;
@@ -172,8 +172,8 @@ CDcdText CDcdTextboxV3::createCDcdTextH(
 		_T("") ,
 		CdDrawTextProp( aCdFontProp , colorrefText ) , 
 			_T("00") ) ;
-	//	aCDcdText �́A�㉺���E�����񂹂ɂ��܂��B
-	//	����́A���p�����P������\������ۂɁA�����ɕ\�����邽�߂ł��B
+	//	aCDcdText は、上下左右中央寄せにします。
+	//	これは、半角数字１文字を表示する際に、中央に表示するためです。
 	{
 		CdDrawTextProp	aCdDrawTextProp = aCDcdText.getCdDrawTextProp() ;
 		aCdDrawTextProp.setCdDrawTextFormat( 
@@ -200,7 +200,7 @@ int CDcdTextboxV3::VerticalTextElementToElementPlace(
 	CdDcdZoneXy	zonexyTarget = pIfDcdTarget->getZone() ;
 	pCStrElementPlaceCont->erase( 0 , INT_MAX ) ;
 	// --------------------------------
-	//	�t�H���g���쐬
+	//	フォントを作成
 	// --------------------------------
 	Ou<CGdiHFontHolder> fontVertical ; 
 	Ou<CGdiHFontHolder> fontHolyzontal ; 
@@ -212,10 +212,10 @@ int CDcdTextboxV3::VerticalTextElementToElementPlace(
 	}
 	CDcdText aCDcdText( createCDcdTextH( 
 				aCdFontProp , CdColorProp( 0 , 0 , 0 ) ) ) ;
-	//aCDcdText = �������e�L�X�g�p�́ADcDraw�I�u�W�F�N�g
+	//aCDcdText = 横書きテキスト用の、DcDrawオブジェクト
 	// --------------------------------
-	int logicalunitYOffset = 0 ;	//���݂́ADcDraw�̈�㕔�����Y���W
-	int iXLineNumber = 0 ;			//���݂́AX�����̍s�ԍ�
+	int logicalunitYOffset = 0 ;	//現在の、DcDraw領域上部からのY座標
+	int iXLineNumber = 0 ;			//現在の、X方向の行番号
 	
 	int idxMojiretsuyousoCont ;
 	for ( idxMojiretsuyousoCont = 0 ; 
@@ -223,18 +223,18 @@ int CDcdTextboxV3::VerticalTextElementToElementPlace(
 		CVerticalTextElement	aCStrElement = 
 			pCStrElementCont->get( idxMojiretsuyousoCont ) ;
 
-		//	�c����(���p�E�S�p)
+		//	縦書き(半角・全角)
 		if ( aCStrElement.getType() == CVerticalTextElement::V_ZENKAKU || 
 				aCStrElement.getType() == CVerticalTextElement::V_HANKAKU )
 		{
 			HFONT hFontOld = (HFONT)SelectObject( pIfDcdTarget->getHdc() , 
 				fontVertical->getHFont() ) ;
 			// --------------------------------
-			//	����������̌������s�����߂ɁA
-			//	������ނ̘A�������w����������x��
-			//	�I�[��T���܂��B
-			//	�A���A�s�ɕ\���ł��Ȃ��ꍇ�́A
-			//	������ł��؂�܂��B
+			//	部分文字列の結合を行うために、
+			//	同じ種類の連続した『部分文字列』の
+			//	終端を探します。
+			//	但し、行に表示できない場合は、
+			//	結合を打ち切ります。
 			// --------------------------------
 			tstring strMojiretsu ;
 			int idxMojiretsuyousoEnd = idxMojiretsuyousoCont ;
@@ -250,15 +250,15 @@ int CDcdTextboxV3::VerticalTextElementToElementPlace(
 				if ( aCStrElementEnd.getType() != 
 						aCStrElement.getType() )
 				{
-					//	����́w����������x�́A idxMojiretsuyousoCont �̈ʒu��
-					//	�w����������x�Ƃ͎�ނ��قȂ�܂��B
+					//	今回の『部分文字列』は、 idxMojiretsuyousoCont の位置の
+					//	『部分文字列』とは種類が異なります。
 					break ;
 				}
 
 
 				tstring aString = strMojiretsu + 
 					tstringOf(aCStrElementEnd.getString()) ;
-				//string�Ŏ󂯎�������̂�tstring�ɖ߂�
+				//stringで受け取ったものをtstringに戻す
 				SIZE	aSize ;
 				GetTextExtentPoint32( 
 					pIfDcdTarget->getHdc() , 
@@ -269,11 +269,11 @@ int CDcdTextboxV3::VerticalTextElementToElementPlace(
 				if ( logicalunitYOffset + aSize.cx <= 
 						zonexyTarget.getY().getSize() || 
 					( logicalunitYOffset == 0 && strMojiretsu.size() == 0 ) ){
-					//	����̕����́A���̍s�iiXLineNumber �̍s�j��
-					//	�\���ł��܂��B
+					//	今回の文字は、この行（iXLineNumber の行）に
+					//	表示できます。
 					//
-					//	���@�s�̐擪�ɂ͕K���P�w����������x��
-					//	���݂�����K�v������܂��B
+					//	※　行の先頭には必ず１つ『部分文字列』を
+					//	存在させる必要があります。
 					strMojiretsu = aString ;
 					logicalunitYSize = aSize.cx ;
 					iXLineWidth = aSize.cy ;
@@ -281,32 +281,32 @@ int CDcdTextboxV3::VerticalTextElementToElementPlace(
 					break ;
 				}
 			}
-			//idxMojiretsuyousoEnd = ���������w����������x�̎��̃C���f�N�X
-			//	�w����������x�����݂̍s�iiXLineNumber�j�Ɉ���`��ł��Ȃ�
-			//	�ꍇ�́A
-			//	idxMojiretsuyousoCont == idxMojiretsuyousoEnd �ƂȂ�܂��B
-			//strMojiretsu = �������ꂽ���ʂ̕�����
-			//logicalunitYSize = �������ꂽ���ʂ̕�����́AY�����̃T�C�Y
-			//	�i�_���P�ʁj
+			//idxMojiretsuyousoEnd = 結合される『部分文字列』の次のインデクス
+			//	『部分文字列』を現在の行（iXLineNumber）に一つも描画できない
+			//	場合は、
+			//	idxMojiretsuyousoCont == idxMojiretsuyousoEnd となります。
+			//strMojiretsu = 結合された結果の文字列
+			//logicalunitYSize = 結合された結果の文字列の、Y方向のサイズ
+			//	（論理単位）
 
 
 			if ( idxMojiretsuyousoCont == idxMojiretsuyousoEnd )
 			{
-				//	1�������\���ł��Ȃ������ꍇ�́A
-				//	���̍s�ւ̕\�������݂܂��B
+				//	1文字も表示できなかった場合は、
+				//	次の行への表示を試みます。
 				logicalunitYOffset = 0 ;
 				iXLineNumber ++ ;
 				continue ;
 			}
-			//	�������ʂ����ƂɁACStrElementPlace �I�u�W�F�N�g�𐶐����A
-			//	�R���e�i�Ɋi�[���܂��B
+			//	結合結果をもとに、CStrElementPlace オブジェクトを生成し、
+			//	コンテナに格納します。
 			CStrElementPlace aCStrElementPlace( 
 				CVerticalTextElement( stringOf(strMojiretsu) , aCStrElement.getType() ) ,
 				logicalunitYOffset , iXLineNumber , iXLineWidth ) ;
-			//tstring��string�ɂ��Ă���n��
+			//tstringをstringにしてから渡す
 			pCStrElementPlaceCont->insert( aCStrElementPlace ) ;
 			
-			//���݂́ADcDraw�̈�㕔�����Y���W���A��ɐi�߂�
+			//現在の、DcDraw領域上部からのY座標を、先に進める
 			logicalunitYOffset += logicalunitYSize ;
 
 			idxMojiretsuyousoCont = idxMojiretsuyousoEnd ;
@@ -314,13 +314,13 @@ int CDcdTextboxV3::VerticalTextElementToElementPlace(
 			SelectObject( pIfDcdTarget->getHdc() , hFontOld ) ;
 			hFontOld = NULL ;
 		}
-		//	������������
+		//	横書き文字列
 		else if ( aCStrElement.getType() == 
 				CVerticalTextElement::H_HANKAKU )
 		{
 			// --------------------------------
-			//	������ނ̘A�������w����������x��
-			//	�����͍s���܂���B
+			//	同じ種類の連続した『部分文字列』の
+			//	結合は行いません。
 			// --------------------------------
 			tstring strMojiretsu ;
 			int idxMojiretsuyousoEnd = idxMojiretsuyousoCont ;
@@ -340,29 +340,29 @@ int CDcdTextboxV3::VerticalTextElementToElementPlace(
 						zonexyTarget.getY().getSize() || 
 					( logicalunitYOffset == 0 && strMojiretsu.size() == 0 ) )
 				{
-					//	����̕����́A���̍s�iiXLineNumber �̍s�j��
-					//	�\���ł��܂��B
+					//	今回の文字は、この行（iXLineNumber の行）に
+					//	表示できます。
 					//
-					//	���@�s�̐擪�ɂ͕K���P�w����������x��
-					//	���݂�����K�v������܂��B
+					//	※　行の先頭には必ず１つ『部分文字列』を
+					//	存在させる必要があります。
 					strMojiretsu = aString ;
 					logicalunitYSize = aCdDcdSizeXy.getY() ;
 					iXLineWidth = aCdDcdSizeXy.getX() ;
 					idxMojiretsuyousoEnd ++ ;
 				}
 			}
-			//idxMojiretsuyousoEnd = ���������w����������x�̎��̃C���f�N�X
-			//	�w����������x�����݂̍s�iiXLineNumber�j�Ɉ���`��ł��Ȃ�
-			//	�ꍇ�́A
-			//	idxMojiretsuyousoCont == idxMojiretsuyousoEnd �ƂȂ�܂��B
-			//strMojiretsu = �������ꂽ���ʂ̕�����
-			//logicalunitYSize = �������ꂽ���ʂ̕�����́AY�����̃T�C�Y
-			//	�i�_���P�ʁj
+			//idxMojiretsuyousoEnd = 結合される『部分文字列』の次のインデクス
+			//	『部分文字列』を現在の行（iXLineNumber）に一つも描画できない
+			//	場合は、
+			//	idxMojiretsuyousoCont == idxMojiretsuyousoEnd となります。
+			//strMojiretsu = 結合された結果の文字列
+			//logicalunitYSize = 結合された結果の文字列の、Y方向のサイズ
+			//	（論理単位）
 
 			if ( idxMojiretsuyousoCont == idxMojiretsuyousoEnd )
 			{
-				//	1�������\���ł��Ȃ������ꍇ�́A
-				//	���̍s�ւ̕\�������݂܂��B
+				//	1文字も表示できなかった場合は、
+				//	次の行への表示を試みます。
 				logicalunitYOffset = 0 ;
 				iXLineNumber ++ ;
 				continue ;
@@ -372,7 +372,7 @@ int CDcdTextboxV3::VerticalTextElementToElementPlace(
 				logicalunitYOffset , iXLineNumber , iXLineWidth ) ;
 			pCStrElementPlaceCont->insert( aCStrElementPlace ) ;
 
-			//���݂́ADcDraw�̈�㕔�����Y���W���A��ɐi�߂�
+			//現在の、DcDraw領域上部からのY座標を、先に進める
 			logicalunitYOffset += logicalunitYSize ;
 
 			idxMojiretsuyousoCont = idxMojiretsuyousoEnd ;
@@ -392,7 +392,7 @@ int CDcdTextboxV3::VerticalTextElementToElementPlace(
 		for ( idx = 0 ; idx < pCStrElementPlaceCont->size() ; idx ++ ){
 			CStrElementPlace aCStrElementPlace = 
 				pCStrElementPlaceCont->get( idx ) ;
-			LogMsgL(3, _T("\t[%d] \"%s\" %d iY=%d iX=%d iXLineWidth=%d") ,
+			LogMsgL(3, _T("¥t[%d] ¥"%s¥" %d iY=%d iX=%d iXLineWidth=%d") ,
 				idx , 
 				aCStrElementPlace.getCStrElement().getString().c_str() ,
 				aCStrElementPlace.getCStrElement().getType() ,
@@ -421,27 +421,27 @@ bool CDcdTextboxV3::DcDrawElementPlace(
 	CdDcdZoneXy	zonexyTarget = pIfDcdTarget->getZone() ;
 
 	// --------------------------------
-	//	�t�H���g���쐬
+	//	フォントを作成
 	// --------------------------------
 	Ou<CGdiHFontHolder>  pfontVertical = CreateVFont( 
 		pIfDcdTarget , 
 		aFontProp ) ; 
 	CdDcdSizeXy	sizeExtent = calcZenkakuCharExtent( pIfDcdTarget , aFontProp) ;
-	//hFontVertical = �c�����̃t�H���g
-	//sizeExtent = �e�L�X�g�S�p�{�b�N�X�P����������̃T�C�Y�B
-	//	�������A�T�C�Y�͐����`�ɂȂ�悤�ɍœK�����܂��B
-	//	�܂�AX,Y�̂����A�傫�����̕ӂɍ��킹�܂��B
+	//hFontVertical = 縦書きのフォント
+	//sizeExtent = テキスト全角ボックス１文字あたりのサイズ。
+	//	ただし、サイズは正方形になるように最適化します。
+	//	つまり、X,Yのうち、大きい方の辺に合わせます。
 	
 	CDcdText aCDcdText( createCDcdTextH( 
 				aFontProp , colorTextColor ) ) ;
-	//aCDcdText = �������e�L�X�g�p�́ADcDraw�I�u�W�F�N�g
+	//aCDcdText = 横書きテキスト用の、DcDrawオブジェクト
 	// --------------------------------
 	int iLines = 1 ;
 	if ( pCStrElementPlaceCont->size() > 0 ){
 		iLines = pCStrElementPlaceCont->get( INT_MAX ).getXLineNumber() 
 			+ 1 ;
 	}
-	//iLines = X�����̍s��
+	//iLines = X方向の行数
 
 	int iXOffset = 0 ;
 	{
@@ -449,11 +449,11 @@ bool CDcdTextboxV3::DcDrawElementPlace(
 			( zonexyTarget.getX().getSize() - iLines * sizeExtent.getX() ) 
 			/ 2 ;
 	}
-	//iXOffset = m_strText �̕`��́A���[�̍��W�B
-	//	����́AzonexyTarget.X.Pos ����̃I�t�Z�b�g�ł�
+	//iXOffset = m_strText の描画の、左端の座標。
+	//	これは、zonexyTarget.X.Pos からのオフセットです
 
 	// --------------------------------
-	//	������`��
+	//	文字を描画
 	// --------------------------------
 	for ( int idxCStrElementPlaceCont = 0 ;
 			idxCStrElementPlaceCont < pCStrElementPlaceCont->size() ;
@@ -474,7 +474,7 @@ bool CDcdTextboxV3::DcDrawElementPlace(
 				aCStrElement.getType() == CVerticalTextElement::V_HANKAKU )
 		{
 			// --------------------------------
-			//	�c�����t�H���g
+			//	縦書きフォント
 			// --------------------------------
 			HFONT hfontOld = (HFONT)SelectObject( pIfDcdTarget->getHdc() , 
 				pfontVertical->getHFont() ) ;
@@ -486,7 +486,7 @@ bool CDcdTextboxV3::DcDrawElementPlace(
 				aConv.COLORREFOf( colorTextColor ) ) ;
 			// --------------------------------
 			TextOut( pIfDcdTarget->getHdc() , 
-				//	���́{�P�́A���ۂ̉�ʂ�������Œ��������l
+				//	下の＋１は、実際の画面を見た上で調整した値
 				iXPos + sizeExtent.getX() + 1 
 					- ( sizeExtent.getX() - aCStrElementPlace.getXLineWidth() ) / 2 ,
 				iYPos , 
@@ -503,7 +503,7 @@ bool CDcdTextboxV3::DcDrawElementPlace(
 		}	else if ( aCStrElement.getType() == 
 				CVerticalTextElement::H_HANKAKU ){
 			// --------------------------------
-			//	�������t�H���g
+			//	横書きフォント
 			// --------------------------------
 			CdDcdZoneXy	zoneChar( 
 				CdDcdZone( iXPos, sizeExtent.getX() ) , 
@@ -522,7 +522,7 @@ bool CDcdTextboxV3::DcDrawElementPlace(
 
 
 // ********************************
-//	�R���X�g���N�^
+//	コンストラクタ
 // ********************************
 
 CDcdTextboxV3::CDcdTextboxV3( 
@@ -558,7 +558,7 @@ CDcdTextboxV3::CDcdTextboxV3()
 {
 }
 	
-CDcdTextboxV3::~CDcdTextboxV3() 
+CDcdTextboxV3::‾CDcdTextboxV3() 
 {
 }
 // ********************************
@@ -569,7 +569,7 @@ bool CDcdTextboxV3::DcDraw( IfDcdTarget* pIfDcdTarget )
 	bool	bRv = false ;
 
 	// --------------------------------
-	//	�w�i�u���V�̕`��
+	//	背景ブラシの描画
 	// --------------------------------
 	{
 		if ( m_CDcdFillrect.DcDraw( pIfDcdTarget ) ) {
@@ -577,7 +577,7 @@ bool CDcdTextboxV3::DcDraw( IfDcdTarget* pIfDcdTarget )
 		}
 	}
 	// --------------------------------
-	//	�g���̕`��
+	//	枠線の描画
 	// --------------------------------
 	{
 		if ( m_CDcdRectangle.DcDraw( pIfDcdTarget ) ) {
@@ -586,7 +586,7 @@ bool CDcdTextboxV3::DcDraw( IfDcdTarget* pIfDcdTarget )
 	}
 
 	// ********************************
-	//	�e�L�X�g�̕`��
+	//	テキストの描画
 	// ********************************
 	CdDcdZoneXy	aCdDcdZoneXy ;
 	{
@@ -600,8 +600,8 @@ bool CDcdTextboxV3::DcDraw( IfDcdTarget* pIfDcdTarget )
 			aCdDcdZoneXy.getY().getSize() - m_logicalunitFrameHeight * 2 )
 			)  ;
 	}
-	//aCdDcdZoneXy = �e�L�X�g��`�悷��̈�ł��B
-	//	IfDcdTarget�̗̈悩��A�㉺���E�̘g�̈���������̈�ł��B
+	//aCdDcdZoneXy = テキストを描画する領域です。
+	//	IfDcdTargetの領域から、上下左右の枠領域を除いた領域です。
 
 	{
 		CaDcdTargetItemPosition aCaDcdTargetItemPosition( 

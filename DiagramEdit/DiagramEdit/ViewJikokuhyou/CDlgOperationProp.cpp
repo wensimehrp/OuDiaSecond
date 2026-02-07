@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,53 +35,53 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
-// CDlgOperationProp.cpp : �C���v�������e�[�V���� �t�@�C��
+// CDlgOperationProp.cpp : インプリメンテーション ファイル
 //
 
 #include "stdafx.h"
 
-#include "str\CStrCharSizeMb.h"
-#include "str\strLf.h"
-#include "LogMsg\LogMsg.h"
+#include "str¥CStrCharSizeMb.h"
+#include "str¥strLf.h"
+#include "LogMsg¥LogMsg.h"
 
-#include "..\DiagramEdit.h"
+#include "..¥DiagramEdit.h"
 #include "CDlgOperationProp.h"
-#include "str\tstring.h"
-#include "Str\strtoint.h"
-#include "str\stringSplit.h"
+#include "str¥tstring.h"
+#include "Str¥strtoint.h"
+#include "str¥stringSplit.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -104,7 +104,7 @@ tstring CDlgOperationProp::CPropEditUiInternal::CreateOperationString(
 {
 	CDlgOperationProp* pOuter = (CDlgOperationProp*)((BYTE*)this - offsetof(CDlgOperationProp, m_PropEditUiInternal));
 
-	/** �_�C�A���O�{�b�N�X�ւ̎����̏�����ێ����܂��B */
+	/** ダイアログボックスへの時刻の書式を保持します。 */
 	const CdDedJikoku::CConv	g_CdDedJikokuConv(
 		false,		//	Colon 
 		CdDedJikoku::CConv::EHour_ZeroToNone,		//	HourZeroToNone 
@@ -117,19 +117,19 @@ tstring CDlgOperationProp::CPropEditUiInternal::CreateOperationString(
 		strRev += _T(".");
 		strRev += to_tstring(aOperation.iLevel[idxl]);
 	}
-	if (aOperation.iOperation == 0)//����
+	if (aOperation.iOperation == 0)//入換
 	{
-		strRev += _T(" ���� ");
+		strRev += _T(" 入換 ");
 		const CentDedEki* pEki = getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()->
 			getCentDedEkiCont()->getMuPtr()->get(pOuter->m_iEkiIndex);
 		strRev += pEki->getEkiTrack2Cont()->get(aOperation.iComboData1).getTrackName().c_str();
 		if (bIsAfterOperation)
 		{
-			strRev += _T("�� ");
+			strRev += _T("へ ");
 		}
 		else
 		{
-			strRev += _T("���� ");
+			strRev += _T("から ");
 		}
 		CdDedJikoku aJikoku;
 		int iRev = aJikoku.decode(aOperation.strEditData1);
@@ -143,7 +143,7 @@ tstring CDlgOperationProp::CPropEditUiInternal::CreateOperationString(
 			{
 				strRev += g_CdDedJikokuConv.encode(aJikoku).c_str();
 			}
-			strRev += _T(" �� ");
+			strRev += _T(" 発 ");
 		}
 		iRev = aJikoku.decode(aOperation.strEditData2);
 		if (iRev >= 0)
@@ -156,12 +156,12 @@ tstring CDlgOperationProp::CPropEditUiInternal::CreateOperationString(
 			{
 				strRev += g_CdDedJikokuConv.encode(aJikoku).c_str();
 			}
-			strRev += _T(" �� ");
+			strRev += _T(" 着 ");
 		}
 	}
-	else if (aOperation.iOperation == 1)//����
+	else if (aOperation.iOperation == 1)//増結
 	{
-		strRev += _T("�� ���� ");
+		strRev += _T("┘ 増結 ");
 		CdDedJikoku aJikoku;
 		int iRev = aJikoku.decode(aOperation.strEditData1);
 		if (iRev >= 0)
@@ -177,17 +177,17 @@ tstring CDlgOperationProp::CPropEditUiInternal::CreateOperationString(
 		}
 		if (aOperation.iComboData1 == 0)
 		{
-			strRev += _T(" �Ґ�����ɑ���");
+			strRev += _T(" 編成後方に増結");
 		}
 		else
 		{
-			strRev += _T(" �Ґ��O���ɑ���");
+			strRev += _T(" 編成前方に増結");
 		}
 
 	}
-	else if (aOperation.iOperation == 2)//����
+	else if (aOperation.iOperation == 2)//解結
 	{
-		strRev += _T("�� ���� ");
+		strRev += _T("┐ 解結 ");
 		CdDedJikoku aJikoku;
 		int iRev = aJikoku.decode(aOperation.strEditData2);
 		if (iRev >= 0)
@@ -203,28 +203,28 @@ tstring CDlgOperationProp::CPropEditUiInternal::CreateOperationString(
 		}
 		if (aOperation.iComboData1 == 0)
 		{
-			strRev += _T(" ����� ");
+			strRev += _T(" 後方の ");
 			strRev += aOperation.strEditData1.c_str();
-			strRev += _T(" �Ґ�������");
+			strRev += _T(" 編成を解結");
 		}
 		else if (aOperation.iComboData1 == 1)
 		{
-			strRev += _T(" �O���� ");
+			strRev += _T(" 前方の ");
 			strRev += aOperation.strEditData1.c_str();
-			strRev += _T(" �Ґ�������");
+			strRev += _T(" 編成を解結");
 		}
 		else
 		{
-			strRev += _T(" �O���� ");
+			strRev += _T(" 前方の ");
 			strRev += aOperation.strEditData1.c_str();
-			strRev += _T(" �Ґ��ȊO������");
+			strRev += _T(" 編成以外を解結");
 		}
 	}
 	else if (aOperation.iOperation == 3)
 	{
-		if (bIsAfterOperation)//����
+		if (bIsAfterOperation)//入区
 		{
-			strRev += _T(" ���� ");
+			strRev += _T(" 入区 ");
 			CdDedJikoku aJikoku;
 			int iRev = aJikoku.decode(aOperation.strEditData1);
 			if (iRev >= 0)
@@ -244,9 +244,9 @@ tstring CDlgOperationProp::CPropEditUiInternal::CreateOperationString(
 				strRev += aOperation.strInOutLinkCode;
 			}
 		}
-		else//�o��
+		else//出区
 		{
-			strRev += _T(" �o�� ");
+			strRev += _T(" 出区 ");
 			CdDedJikoku aJikoku;
 			int iRev = aJikoku.decode(aOperation.strEditData1);
 			if (iRev >= 0)
@@ -274,14 +274,14 @@ tstring CDlgOperationProp::CPropEditUiInternal::CreateOperationString(
 	}
 	else if (aOperation.iOperation == 4)
 	{
-		if (bIsAfterOperation)//�H���O�I��
+		if (bIsAfterOperation)//路線外終着
 		{
-			strRev += _T(" �H���O�I�� ");
+			strRev += _T(" 路線外終着 ");
 			CdDedJikoku aJikoku;
 			int iRev = aJikoku.decode(aOperation.strEditData1);
 			if (iRev >= 0)
 			{
-				strRev += _T("���w ");
+				strRev += _T("当駅 ");
 				if (aJikoku.isNull())
 				{
 					strRev += _T("--:--");
@@ -290,7 +290,7 @@ tstring CDlgOperationProp::CPropEditUiInternal::CreateOperationString(
 				{
 					strRev += g_CdDedJikokuConv.encode(aJikoku).c_str();
 				}
-				strRev += _T(" �� ");
+				strRev += _T(" 発 ");
 			}
 			iRev = aJikoku.decode(aOperation.strEditData2);
 			if (iRev >= 0)
@@ -298,7 +298,7 @@ tstring CDlgOperationProp::CPropEditUiInternal::CreateOperationString(
 				const CentDedEki* pEki = getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()->
 					getCentDedEkiCont()->getMuPtr()->get(pOuter->m_iEkiIndex);
 				strRev += pEki->getOuterTerminalEkimei(aOperation.iComboData1);
-				strRev += _T("�w ");
+				strRev += _T("駅 ");
 				if (aJikoku.isNull())
 				{
 					strRev += _T("--:--");
@@ -307,7 +307,7 @@ tstring CDlgOperationProp::CPropEditUiInternal::CreateOperationString(
 				{
 					strRev += g_CdDedJikokuConv.encode(aJikoku).c_str();
 				}
-				strRev += _T(" ��");
+				strRev += _T(" 着");
 			}
 			if (!aOperation.strInOutLinkCode.empty())
 			{
@@ -315,9 +315,9 @@ tstring CDlgOperationProp::CPropEditUiInternal::CreateOperationString(
 				strRev += aOperation.strInOutLinkCode;
 			}
 		}
-		else//�H���O�n��
+		else//路線外始発
 		{
-			strRev += _T(" �H���O�n�� ");
+			strRev += _T(" 路線外始発 ");
 			CdDedJikoku aJikoku;
 			int iRev = aJikoku.decode(aOperation.strEditData1);
 			if (iRev >= 0)
@@ -325,7 +325,7 @@ tstring CDlgOperationProp::CPropEditUiInternal::CreateOperationString(
 				const CentDedEki* pEki = getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()->
 					getCentDedEkiCont()->getMuPtr()->get(pOuter->m_iEkiIndex);
 				strRev += pEki->getOuterTerminalEkimei(aOperation.iComboData1);
-				strRev += _T("�w ");
+				strRev += _T("駅 ");
 				if (aJikoku.isNull())
 				{
 					strRev += _T("--:--");
@@ -334,12 +334,12 @@ tstring CDlgOperationProp::CPropEditUiInternal::CreateOperationString(
 				{
 					strRev += g_CdDedJikokuConv.encode(aJikoku).c_str();
 				}
-				strRev += _T(" �� ");
+				strRev += _T(" 発 ");
 			}
 			iRev = aJikoku.decode(aOperation.strEditData2);
 			if (iRev >= 0)
 			{
-				strRev += _T("���w ");
+				strRev += _T("当駅 ");
 				if (aJikoku.isNull())
 				{
 					strRev += _T("--:--");
@@ -348,7 +348,7 @@ tstring CDlgOperationProp::CPropEditUiInternal::CreateOperationString(
 				{
 					strRev += g_CdDedJikokuConv.encode(aJikoku).c_str();
 				}
-				strRev += _T(" ��");
+				strRev += _T(" 着");
 			}
 
 			if (aOperation.strOperationNumber.size() > 0)
@@ -365,9 +365,9 @@ tstring CDlgOperationProp::CPropEditUiInternal::CreateOperationString(
 	}
 	else if (aOperation.iOperation == 5)
 	{
-		if (bIsAfterOperation)//����Ԑڑ�
+		if (bIsAfterOperation)//次列車接続
 		{
-			strRev += _T(" ����Ԑڑ� ");
+			strRev += _T(" 次列車接続 ");
 			CdDedJikoku aJikoku;
 			int iRev = aJikoku.decode(aOperation.strEditData1);
 			if (iRev >= 0)
@@ -383,24 +383,24 @@ tstring CDlgOperationProp::CPropEditUiInternal::CreateOperationString(
 			}
 			if (aOperation.iComboData1 == 0)
 			{
-				strRev += _T(" �ʗ��");
+				strRev += _T(" 別列車");
 			}
 			else if (aOperation.iComboData1 == 1)
 			{
-				strRev += _T(" ��ʕύX");
+				strRev += _T(" 種別変更");
 			}
 			else if (aOperation.iComboData1 == 2)
 			{
-				strRev += _T(" ��ԏ��ύX");
+				strRev += _T(" 列車情報変更");
 			}
 			else if (aOperation.iComboData1 == 3)
 			{
-				strRev += _T(" �����Ԉ���");
+				strRev += _T(" 同一列車扱い");
 			}
 		}
-		else//�O��Ԑڑ�
+		else//前列車接続
 		{
-			strRev += _T(" �O��Ԑڑ� ");
+			strRev += _T(" 前列車接続 ");
 			CdDedJikoku aJikoku;
 			int iRev = aJikoku.decode(aOperation.strEditData1);
 			if (iRev >= 0)
@@ -425,11 +425,11 @@ tstring CDlgOperationProp::CPropEditUiInternal::CreateOperationString(
 	{
 		if (aOperation.bCheckData1)
 		{
-			strRev += _T(" �^�p�ԍ������]");
+			strRev += _T(" 運用番号順反転");
 		}
 		else
 		{
-			strRev += _T(" �^�p�ԍ��ύX ");
+			strRev += _T(" 運用番号変更 ");
 			if (aOperation.strOperationNumber.size() > 0)
 			{
 				strRev += joinc(';', aOperation.strOperationNumber);
@@ -438,7 +438,7 @@ tstring CDlgOperationProp::CPropEditUiInternal::CreateOperationString(
 	}
 	else if (aOperation.iOperation == 7)
 	{
-		strRev = _T("(��Ƃ�ǉ�)");
+		strRev = _T("(作業を追加)");
 	}
 	return strRev;
 }
@@ -450,12 +450,12 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 	if (pUiData->iListSelected >= 0)
 	{
 		/**
-			��Ǝ�ރ{�^���̗L������
-			(�����Ȏd�l)�n���w�O��Ƃ̈�ԏ�ƁA�I���w���Ƃ̈�ԉ��A
-				�y�ё����̑O��Ƃ̈�ԏ�Ɖ������Ƃ̈�ԉ��́A���o��E�H���O�����E����(�O���Ԑڑ�)�̂����ꂩ�̂�
-				����ȊO�̍�Ƃ́A�����E�����E�����̂����ꂩ�Ɍ���
-			(�ȈՂȎ���)�I������Ă����Ƃ����o��E�H���O�����E�����̂����ꂩ�Ȃ�A���̎O���L���A���𖳌��ɁA
-				�����E�����E�����̂����ꂩ�Ȃ�A���̎O���L���A���𖳌��ɂ���B
+			作業種類ボタンの有効無効
+			(厳密な仕様)始発駅前作業の一番上と、終着駅後作業の一番下、
+				及び増結の前作業の一番上と解結後作業の一番下は、入出区・路線外発着・無し(前後列車接続)のいずれかのみ
+				それ以外の作業は、入換・増結・解結のいずれかに限定
+			(簡易な実装)選択されている作業が入出区・路線外発着・無しのいずれかなら、その三種を有効、他を無効に、
+				入換・増結・解結のいずれかなら、その三種を有効、他を無効にする。
 		*/
 		bool bIsAfterOperation = pUiData->bSelectedAfter;
 		const Operation* pOprationSel;
@@ -466,7 +466,7 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 			if (pOprationSel->iLevel.size() > 1)
 			{
 				/**
-					iLevel��2�v�f�ȏ゠��ꍇ�́A�q��ƂȂ̂ŁA�O��Ƃ����Ƃ����ׂ�K�v������܂�
+					iLevelが2要素以上ある場合は、子作業なので、前作業か後作業が調べる必要があります
 				*/
 				vector<int> iLevelSearch = pOprationSel->iLevel;
 				iLevelSearch.pop_back();
@@ -476,7 +476,7 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 					{
 						if (idxp > pUiData->iListSelected)
 						{
-							//idxp(����)����ɂ��遨�O���
+							//idxp(増結)が後にある→前作業
 							bIsAfterOperation = false;
 						}
 						break;
@@ -491,7 +491,7 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 			if (pOprationSel->iLevel.size() > 1)
 			{
 				/**
-					iLevel��2�v�f�ȏ゠��ꍇ�́A�q��ƂȂ̂ŁA�O��Ƃ����Ƃ����ׂ�K�v������܂�
+					iLevelが2要素以上ある場合は、子作業なので、前作業か後作業が調べる必要があります
 				*/
 				vector<int> iLevelSearch = pOprationSel->iLevel;
 				iLevelSearch.pop_back();
@@ -501,7 +501,7 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 					{
 						if (idxp < pUiData->iListSelected)
 						{
-							//idxp(����)���O�ɂ��遨����
+							//idxp(解結)が前にある→後作業
 							bIsAfterOperation = true;
 						}
 						break;
@@ -519,18 +519,18 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 		CButton* pButton7 = (CButton*)pOuter->GetDlgItem(IDC_RADIO_OperationType7);
 		if (bIsAfterOperation)
 		{
-			pButton4->SetWindowText(_T("����(&K)"));
-			pButton5->SetWindowText(_T("�H���O�I��(&O)"));
-			pButton6->SetWindowText(_T("����Ԑڑ�(&E)"));
+			pButton4->SetWindowText(_T("入区(&K)"));
+			pButton5->SetWindowText(_T("路線外終着(&O)"));
+			pButton6->SetWindowText(_T("次列車接続(&E)"));
 		}
 		else
 		{
-			pButton4->SetWindowText(_T("�o��(&K)"));
-			pButton5->SetWindowText(_T("�H���O�n��(&O)"));
-			pButton6->SetWindowText(_T("�O��Ԑڑ�(&E)"));
+			pButton4->SetWindowText(_T("出区(&K)"));
+			pButton5->SetWindowText(_T("路線外始発(&O)"));
+			pButton6->SetWindowText(_T("前列車接続(&E)"));
 		}
 		if (pOprationSel->iOperation <= 2 ||
-			pOprationSel->iOperation == 6)//�����E�����E�����E�^�p�ԍ��ύX
+			pOprationSel->iOperation == 6)//入換・増結・解結・運用番号変更
 		{
 			pButton1->EnableWindow(true);
 			pButton2->EnableWindow(true);
@@ -562,24 +562,24 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 		}
 
 		/**
-			��Ƃ̒ǉ��E�폜�{�^���̗L�������ݒ�
-			�I���ꏊ�̍�ƁA�ʒu�ɂ���āA�L���ȃ{�^�����ς��܂�
-			�E���ɒǉ�
-				���Ƃ̓���E�H���O�I���E����Ԑڑ��ł͖���
-			�E�}��
-				�O��Ƃ̏o��E�H���O�n���E�O��Ԑڑ��ł͖���
-			�E�q��ƒǉ�
-				�����y�щ����ł̂ݗL��
-			�E�폜
-				���o��E�H���O�n���I���E����ԑO��Ԑڑ��ł͖���
-			�E���
-				���o��E�H���O�n���I���E����ԑO��Ԑڑ��ł͖���
-				���̍�Ƃ��A���o��E�H���O�n���I���E����ԑO��Ԑڑ��Ȃ疳��
-				�ł���̍�Ƃ̏ꍇ�����B
-			�E����
-				���o��E�H���O�n���I���E����ԑO��Ԑڑ��ł͖���
-				����̍�Ƃ��A���o��E�H���O�n���I���E����ԑO��Ԑڑ��Ȃ疳��
-				�ł����̍�Ƃ̏ꍇ�����B
+			作業の追加・削除ボタンの有効無効設定
+			選択場所の作業、位置によって、有効なボタンが変わります
+			・下に追加
+				後作業の入区・路線外終着・次列車接続では無効
+			・挿入
+				前作業の出区・路線外始発・前列車接続では無効
+			・子作業追加
+				増結及び解結でのみ有効
+			・削除
+				入出区・路線外始発終着・次列車前列車接続では無効
+			・上へ
+				入出区・路線外始発終着・次列車前列車接続では無効
+				一つ上の作業が、入出区・路線外始発終着・次列車前列車接続なら無効
+				最も上の作業の場合無効。
+			・下へ
+				入出区・路線外始発終着・次列車前列車接続では無効
+				一つ下の作業が、入出区・路線外始発終着・次列車前列車接続なら無効
+				最も下の作業の場合無効。
 		*/
 		CButton* pButtonAdd = (CButton*)pOuter->GetDlgItem(IDC_BUTTON_OperationAdd);
 		CButton* pButtonIns = (CButton*)pOuter->GetDlgItem(IDC_BUTTON_OperationInsert);
@@ -596,11 +596,11 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 			pButtonCLR->EnableWindow(true);
 			if (pOprationSel->iOperation == 1)
 			{
-				pButtonCAdd->SetWindowTextW(_T("�����Ґ��̍�Ƃ�}��(&3)"));
+				pButtonCAdd->SetWindowTextW(_T("増結編成の作業を挿入(&3)"));
 			}
 			else if (pOprationSel->iOperation == 2)
 			{
-				pButtonCAdd->SetWindowTextW(_T("�����Ґ��̍�Ƃ�ǉ�(&3)"));
+				pButtonCAdd->SetWindowTextW(_T("解結編成の作業を追加(&3)"));
 			}
 		}
 		else if(pOprationSel->iOperation == 0 ||
@@ -709,9 +709,9 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 		}
 
 		/**
-			�����ύX�{�^���̗L�������ݒ�
-			Edit1:�����A�����A���o��A�H���O�����A�O���Ԑڑ����ɗL���A��������AnySec1�̂ݗL��
-			Edit2:�����A�����A�H���O�������ɗL��
+			時刻変更ボタンの有効無効設定
+			Edit1:入換、増結、入出区、路線外発着、前後列車接続時に有効、解結時はAnySec1のみ有効
+			Edit2:入換、解結、路線外発着時に有効
 		*/
 		CButton* pButton1_0 = (CButton*)pOuter->GetDlgItem(IDC_BUTTON_DecEdit1_1Min);
 		CButton* pButton1_1 = (CButton*)pOuter->GetDlgItem(IDC_BUTTON_IncEdit1_1Min);
@@ -810,7 +810,7 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 			pButton2_7->EnableWindow(false);
 		}
 		// --------------------------------
-		//	DDX��p�����AUiControl�ւ̐ݒ�
+		//	DDXを用いた、UiControlへの設定
 		// --------------------------------
 		{
 			//IDC_RADIO_Operation
@@ -822,9 +822,9 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 			pOuter->UpdateData(FALSE);
 		}
 		// --------------------------------
-		//	DDX��p���Ȃ��AUiControl�ւ̐ݒ�
-		//	�����́ADDX�ɂ��l�ݒ�̌��
-		//	�s��Ȃ��Ă͂Ȃ�܂���B
+		//	DDXを用いない、UiControlへの設定
+		//	これらは、DDXによる値設定の後で
+		//	行わなくてはなりません。
 		// --------------------------------
 		//IDC_COMBO_Data1
 		{
@@ -839,7 +839,7 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 				pComboBox0->EnableWindow(true);
 				pComboBox0->ShowWindow(SW_SHOW);
 				pComboBox0->SetCurSel(pOprationSel->iComboData1);
-				pStatic->SetWindowText(_T("�����Ԑ�(&U):"));
+				pStatic->SetWindowText(_T("入換番線(&U):"));
 
 				pComboBox1->EnableWindow(false);
 				pComboBox1->ShowWindow(SW_HIDE);
@@ -855,7 +855,7 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 				pComboBox1->EnableWindow(true);
 				pComboBox1->ShowWindow(SW_SHOW);
 				pComboBox1->SetCurSel(pOprationSel->iComboData1);
-				pStatic->SetWindowText(_T("�����ʒu(&U):"));
+				pStatic->SetWindowText(_T("増結位置(&U):"));
 
 				pComboBox0->EnableWindow(false);
 				pComboBox0->ShowWindow(SW_HIDE);
@@ -871,7 +871,7 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 				pComboBox2->EnableWindow(true);
 				pComboBox2->ShowWindow(SW_SHOW);
 				pComboBox2->SetCurSel(pOprationSel->iComboData1);
-				pStatic->SetWindowText(_T("�����ʒu(&U):"));
+				pStatic->SetWindowText(_T("解結位置(&U):"));
 
 				pComboBox0->EnableWindow(false);
 				pComboBox0->ShowWindow(SW_HIDE);
@@ -890,11 +890,11 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 
 				if (bIsAfterOperation)
 				{
-					pStatic->SetWindowText(_T("�H���O�I���w��(&U):"));
+					pStatic->SetWindowText(_T("路線外終着駅名(&U):"));
 				}
 				else
 				{
-					pStatic->SetWindowText(_T("�H���O�n���w��(&U):"));
+					pStatic->SetWindowText(_T("路線外始発駅名(&U):"));
 				}
 
 				pComboBox0->EnableWindow(false);
@@ -912,7 +912,7 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 				pComboBox5->EnableWindow(true);
 				pComboBox5->ShowWindow(SW_SHOW);
 				pComboBox5->SetCurSel(pOprationSel->iComboData1);
-				pStatic->SetWindowText(_T("����Ԑڑ��^�C�v(&U):"));
+				pStatic->SetWindowText(_T("次列車接続タイプ(&U):"));
 
 				pComboBox0->EnableWindow(false);
 				pComboBox0->ShowWindow(SW_HIDE);
@@ -943,21 +943,21 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 				pControl->EnableWindow(true);
 				pControl->SetWindowText(pOprationSel->strEditData1.c_str());
 				pControl->SetSel(0, -1);
-				pStatic->SetWindowText(_T("����������(&J):"));
+				pStatic->SetWindowText(_T("入換発時刻(&J):"));
 			}
 			else if (pOprationSel->iOperation == 1)
 			{
 				pControl->EnableWindow(true);
 				pControl->SetWindowText(pOprationSel->strEditData1.c_str());
 				pControl->SetSel(0, -1);
-				pStatic->SetWindowText(_T("��������(&J):"));
+				pStatic->SetWindowText(_T("増結時刻(&J):"));
 			}
 			else if (pOprationSel->iOperation == 2)
 			{
 				pControl->EnableWindow(true);
 				pControl->SetWindowText(pOprationSel->strEditData1.c_str());
 				pControl->SetSel(0, -1);
-				pStatic->SetWindowText(_T("�Ґ���(&J):"));
+				pStatic->SetWindowText(_T("編成数(&J):"));
 			}
 			else if (pOprationSel->iOperation == 3)
 			{
@@ -966,11 +966,11 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 				pControl->SetSel(0, -1);
 				if (bIsAfterOperation)
 				{
-					pStatic->SetWindowText(_T("���掞��(&J):"));
+					pStatic->SetWindowText(_T("入区時刻(&J):"));
 				}
 				else
 				{
-					pStatic->SetWindowText(_T("�o�掞��(&J):"));
+					pStatic->SetWindowText(_T("出区時刻(&J):"));
 				}
 			}
 			else if (pOprationSel->iOperation == 4)
@@ -980,11 +980,11 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 				pControl->SetSel(0, -1);
 				if (bIsAfterOperation)
 				{
-					pStatic->SetWindowText(_T("���w������(&J):"));
+					pStatic->SetWindowText(_T("当駅発時刻(&J):"));
 				}
 				else
 				{
-					pStatic->SetWindowText(_T("�n���w������(&J):"));
+					pStatic->SetWindowText(_T("始発駅発時刻(&J):"));
 				}
 			}
 			else if (pOprationSel->iOperation == 5)
@@ -994,11 +994,11 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 				pControl->SetSel(0, -1);
 				if (bIsAfterOperation)
 				{
-					pStatic->SetWindowText(_T("�I�_����(&J):"));
+					pStatic->SetWindowText(_T("終点時刻(&J):"));
 				}
 				else
 				{
-					pStatic->SetWindowText(_T("�N�_����(&J):"));
+					pStatic->SetWindowText(_T("起点時刻(&J):"));
 				}
 			}
 			else
@@ -1017,14 +1017,14 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 				pControl->EnableWindow(true);
 				pControl->SetWindowText(pOprationSel->strEditData2.c_str());
 				pControl->SetSel(0, -1);
-				pStatic->SetWindowText(_T("����������(&I):"));
+				pStatic->SetWindowText(_T("入換着時刻(&I):"));
 			}
 			else if (pOprationSel->iOperation == 2 )
 			{
 				pControl->EnableWindow(true);
 				pControl->SetWindowText(pOprationSel->strEditData2.c_str());
 				pControl->SetSel(0, -1);
-				pStatic->SetWindowText(_T("��������(&I):"));
+				pStatic->SetWindowText(_T("解結時刻(&I):"));
 			}
 			else if (pOprationSel->iOperation == 4)
 			{
@@ -1033,11 +1033,11 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 				pControl->SetSel(0, -1);
 				if (bIsAfterOperation)
 				{
-					pStatic->SetWindowText(_T("�I���w������(&J):"));
+					pStatic->SetWindowText(_T("終着駅着時刻(&J):"));
 				}
 				else
 				{
-					pStatic->SetWindowText(_T("���w������(&J):"));
+					pStatic->SetWindowText(_T("当駅着時刻(&J):"));
 				}
 			}
 			else
@@ -1064,11 +1064,11 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 
 				if (pOprationSel->iOperation == 5)
 				{
-					pStatic->SetWindowText(_T("���^�p�ԍ�(&N):"));
+					pStatic->SetWindowText(_T("仮運用番号(&N):"));
 				}
 				else
 				{
-					pStatic->SetWindowText(_T("�^�p�ԍ�(&N):"));
+					pStatic->SetWindowText(_T("運用番号(&N):"));
 				}
 
 			}
@@ -1078,7 +1078,7 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 				pControl->SetWindowText(CString());
 			}
 		}
-		//IDC_CHECK_JikokuDisplay(�������\���ȗ��ݒ�ǉ�)
+		//IDC_CHECK_JikokuDisplay(増解結表示省略設定追加)
 		{
 			CButton* pControl = (CButton*)(pOuter->GetDlgItem(IDC_CHECK_JikokuDisplay));
 			if (pOprationSel->iOperation == 0 && pOprationSel->iLevel.size() == 1)
@@ -1087,18 +1087,18 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 				pControl->SetCheck(pOprationSel->bCheckData1 ? BST_CHECKED : BST_UNCHECKED);
 				if (bIsAfterOperation)
 				{
-					pControl->SetWindowText(_T("�����������𓖉w�������ɂ���(&M)"));
+					pControl->SetWindowText(_T("入換発時刻を当駅発時刻にする(&M)"));
 				}
 				else
 				{
-					pControl->SetWindowText(_T("�����������𓖉w�������ɂ���(&M)"));
+					pControl->SetWindowText(_T("入換着時刻を当駅着時刻にする(&M)"));
 				}
 			}
 			else if (pOprationSel->iOperation == 6)
 			{
 				pControl->EnableWindow(true);
 				pControl->SetCheck(pOprationSel->bCheckData1 ? BST_CHECKED : BST_UNCHECKED);
-				pControl->SetWindowText(_T("�^�p�ԍ����𔽓]������(&M)"));
+				pControl->SetWindowText(_T("運用番号順を反転させる(&M)"));
 			}
 			else
 			{
@@ -1114,7 +1114,7 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 				pControl->EnableWindow(true);
 				pControl->SetWindowText(pOprationSel->strInOutLinkCode.c_str());
 				pControl->SetSel(0, -1);
-				pStatic->SetWindowText(_T("���o��A�g�R�[�h(&L):"));
+				pStatic->SetWindowText(_T("入出区連携コード(&L):"));
 
 			}
 			else
@@ -1191,7 +1191,7 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 			if (pUiData->sOperationB[idxb].iLevel.size() > 1)
 			{
 				/**
-					iLevel��2�v�f�ȏ゠��ꍇ�́A�q��ƂȂ̂ŁA�O��Ƃ����Ƃ����ׂ�K�v������܂�
+					iLevelが2要素以上ある場合は、子作業なので、前作業か後作業が調べる必要があります
 				*/
 				vector<int> iLevelSearch = pUiData->sOperationB[idxb].iLevel;
 				iLevelSearch.pop_back();
@@ -1201,7 +1201,7 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 					{
 						if (idxp < idxb)
 						{
-							//idxp(����)���O�ɂ��遨����
+							//idxp(解結)が前にある→後作業
 							bIsAfterOperation = true;
 						}
 						break;
@@ -1225,7 +1225,7 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 			if (pUiData->sOperationA[idxa].iLevel.size() > 1)
 			{
 				/**
-					iLevel��2�v�f�ȏ゠��ꍇ�́A�q��ƂȂ̂ŁA�O��Ƃ����Ƃ����ׂ�K�v������܂�
+					iLevelが2要素以上ある場合は、子作業なので、前作業か後作業が調べる必要があります
 				*/
 				vector<int> iLevelSearch = pUiData->sOperationA[idxa].iLevel;
 				iLevelSearch.pop_back();
@@ -1235,7 +1235,7 @@ void CDlgOperationProp::CPropEditUiInternal::UiDataToUi( const UIDATA* pUiData )
 					{
 						if (idxp > idxa)
 						{
-							//idxp(����)����ɂ��遨�O���
+							//idxp(増結)が後にある→前作業
 							bIsAfterOperation = false;
 						}
 						break;
@@ -1262,13 +1262,13 @@ void  CDlgOperationProp::CPropEditUiInternal::UiDataFromUi( UIDATA* pUiData )
 	{
 		if ( !pOuter->UpdateData( TRUE ) )
 		{
-			iRv = -1 ;	//	���̓G���[����
+			iRv = -1 ;	//	入力エラーあり
 		}
 	}
 
 	/**
-		iUiOperation��0�̎��ȊO�́A���̓���̓X�L�b�v�����̂ŁA
-		iUiOperation��0�ł���Ɖ��肵�Đi�߂�
+		iUiOperationが0の時以外は、この動作はスキップされるので、
+		iUiOperationが0であると仮定して進める
 	*/
 	if ( iRv >= 0 )
 	{
@@ -1289,7 +1289,7 @@ void  CDlgOperationProp::CPropEditUiInternal::UiDataFromUi( UIDATA* pUiData )
 				pOprationSel->iOperation = pOuter->m_iRADIO_OperationType;
 				if (pOprationSel->iOperation == -1)
 				{
-					pOprationSel->iOperation = 7;//(��Ƃ�ǉ�)
+					pOprationSel->iOperation = 7;//(作業を追加)
 				}
 			}
 
@@ -1704,13 +1704,13 @@ void CDlgOperationProp::CPropEditUiInternal::ShowError(
 	{
 		pOuter->GetDlgItem(IDC_ERR_EMPTY_OPERATIONNUMBER)->GetWindowText(strErrorMsg);
 	}
-	//strErrorMsg += _T("(���");
+	//strErrorMsg += _T("(作業");
 	strErrorMsg += strInfo.c_str();
 	//strErrorMsg += _T(")");
 	pOuter->MessageBox( strErrorMsg , NULL , MB_OK | MB_ICONEXCLAMATION ) ;
 }
 		// ********************************
-		//	�R���X�g���N�^
+		//	コンストラクタ
 		// ********************************
 CDlgOperationProp::CPropEditUiInternal::CPropEditUiInternal(
 			bool bNewItem , 
@@ -1736,7 +1736,7 @@ CDlgOperationProp::CPropEditUiInternal::CPropEditUiInternal(
 
 
 /////////////////////////////////////////////////////////////////////////////
-// CDlgOperationProp �_�C�A���O
+// CDlgOperationProp ダイアログ
 
 
 // ----------------------------------------------------------------
@@ -1777,7 +1777,7 @@ CDlgOperationProp::CDlgOperationProp(
 		m_iEkiIndex = pMuRessya->get(0)->EkiIndexOfEkiOrder(iChakuEkiOrder);
 	}
 
-	//�������������ԔԐ�
+	//発着時刻＆発車番線
 	{
 		if (m_iChakuEkiOrder >= 0)
 		{
@@ -1861,7 +1861,7 @@ BEGIN_MESSAGE_MAP(CDlgOperationProp, CDialog)
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
-// CDlgOperationProp ���b�Z�[�W �n���h��
+// CDlgOperationProp メッセージ ハンドラ
 
 BOOL CDlgOperationProp::OnInitDialog() 
 {
@@ -1871,13 +1871,13 @@ BOOL CDlgOperationProp::OnInitDialog()
 	LogMsg(_T("CDlgOperationProp::OnInitDialog()1 ") ) ;
 
 
-	//�������������ԔԐ�
+	//発着時刻＆発車番線
 	{
 		CStatic* pStaticTrack = (CStatic*)GetDlgItem(IDC_STATIC_RessyaTrack);
 		CStatic* pStaticChaku = (CStatic*)GetDlgItem(IDC_STATIC_ChakuJikoku);
 		CStatic* pStaticHatsu = (CStatic*)GetDlgItem(IDC_STATIC_HatsuJikoku);
 
-		/** �_�C�A���O�{�b�N�X�ւ̎����̏�����ێ����܂��B */
+		/** ダイアログボックスへの時刻の書式を保持します。 */
 		const CdDedJikoku::CConv	g_CdDedJikokuConv(
 			false,		//	Colon 
 			CdDedJikoku::CConv::EHour_ZeroToNone,		//	HourZeroToNone 
@@ -1885,7 +1885,7 @@ BOOL CDlgOperationProp::OnInitDialog()
 
 		if (m_ChakuJikoku.isNull())
 		{
-			pStaticChaku->SetWindowText(_T("���w�n��"));
+			pStaticChaku->SetWindowText(_T("当駅始発"));
 		}
 		else
 		{
@@ -1895,7 +1895,7 @@ BOOL CDlgOperationProp::OnInitDialog()
 
 		if (m_HatsuJikoku.isNull())
 		{
-			pStaticHatsu->SetWindowText(_T("���w�~�܂�"));
+			pStaticHatsu->SetWindowText(_T("当駅止まり"));
 		}
 		else
 		{
@@ -1907,7 +1907,7 @@ BOOL CDlgOperationProp::OnInitDialog()
 		pStaticTrack->SetWindowText(pCentDedEki->getEkiTrack2Cont()->get(m_iRessyaTrackIndex).getTrackName().c_str());
 	}
 
-	//IDC_COMBO_Data1_0 (�����Ԑ�)
+	//IDC_COMBO_Data1_0 (入換番線)
 	{
 		const CentDedRosen* pCentDedRosen = getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen();
 		const Mu<const CentDedEkiTrack2*>* pMuCentDedEkiTrack2 =
@@ -1931,29 +1931,29 @@ BOOL CDlgOperationProp::OnInitDialog()
 		}
 	}
 
-	//IDC_COMBO_Data1_1(�����ʒu)
+	//IDC_COMBO_Data1_1(増結位置)
 	{
 		CComboBox*	pCComboBox = (CComboBox*)GetDlgItem(IDC_COMBO_Data1_1);
 
-		tstring strTemp1 = _T("�Ґ�����ɑ���");
+		tstring strTemp1 = _T("編成後方に増結");
 		pCComboBox->AddString(strTemp1.c_str());
-		tstring strTemp2 = _T("�Ґ��O���ɑ���");
+		tstring strTemp2 = _T("編成前方に増結");
 		pCComboBox->AddString(strTemp2.c_str());
 	}
 
-	//IDC_COMBO_Data1_2(�����ʒu)
+	//IDC_COMBO_Data1_2(解結位置)
 	{
 		CComboBox*	pCComboBox = (CComboBox*)GetDlgItem(IDC_COMBO_Data1_2);
 
-		tstring strTemp1 = _T("����Ґ�������(������w��)");
+		tstring strTemp1 = _T("後方編成を解結(後方数指定)");
 		pCComboBox->AddString(strTemp1.c_str());
-		tstring strTemp2 = _T("�O���Ґ�������");
+		tstring strTemp2 = _T("前方編成を解結");
 		pCComboBox->AddString(strTemp2.c_str());
-		tstring strTemp3 = _T("����Ґ�������(�O�����w��)");
+		tstring strTemp3 = _T("後方編成を解結(前方数指定)");
 		pCComboBox->AddString(strTemp3.c_str());
 	}
 
-	//IDC_COMBO_Data1_4(�H���O�n���w)
+	//IDC_COMBO_Data1_4(路線外始発駅)
 	{
 		const CentDedRosen* pCentDedRosen = getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen();
 		CentDedEki aCentDedEki = pCentDedRosen->getCentDedEkiCont()->get(m_iEkiIndex);
@@ -1967,17 +1967,17 @@ BOOL CDlgOperationProp::OnInitDialog()
 			pCComboBox->AddString(aCentDedEki.getOuterTerminalEkimei(idx).c_str());
 		}
 	}
-	//IDC_COMBO_Data1_5(����Ԑڑ��^�C�v)
+	//IDC_COMBO_Data1_5(次列車接続タイプ)
 	{
 		CComboBox* pCComboBox = (CComboBox*)GetDlgItem(IDC_COMBO_Data1_5);
 
-		tstring strTemp1 = _T("�ʗ��");
+		tstring strTemp1 = _T("別列車");
 		pCComboBox->AddString(strTemp1.c_str());
-		tstring strTemp2 = _T("��ʕύX");
+		tstring strTemp2 = _T("種別変更");
 		pCComboBox->AddString(strTemp2.c_str());
-		tstring strTemp3 = _T("��ԏ��ύX");
+		tstring strTemp3 = _T("列車情報変更");
 		pCComboBox->AddString(strTemp3.c_str());
-		tstring strTemp4 = _T("�����Ԉ���");
+		tstring strTemp4 = _T("同一列車扱い");
 		pCComboBox->AddString(strTemp4.c_str());
 	}
 	{
@@ -2017,17 +2017,17 @@ BOOL CDlgOperationProp::OnInitDialog()
 		CStatic* pStaticAnySec1 = (CStatic*)GetDlgItem(IDC_STATIC_AnySec1);
 		CStatic* pStaticAnySec2 = (CStatic*)GetDlgItem(IDC_STATIC_AnySec2);
 
-		tstring strAnySec1 = to_tstring(m_AnySec1) + _T("�b");
+		tstring strAnySec1 = to_tstring(m_AnySec1) + _T("秒");
 		pStaticAnySec1->SetWindowText(strAnySec1.c_str());
-		tstring strAnySec2 = to_tstring(m_AnySec2) + _T("�b");
+		tstring strAnySec2 = to_tstring(m_AnySec2) + _T("秒");
 		pStaticAnySec2->SetWindowText(strAnySec2.c_str());
 
 	}
 	m_PropEditUiInternal.StartEdit() ;
 
 	LogMsg(_T("CDlgOperationProp::OnInitDialog()= ") ) ;
-	return TRUE;  // �R���g���[���Ƀt�H�[�J�X��ݒ肵�Ȃ��Ƃ��A�߂�l�� TRUE �ƂȂ�܂�
-	              // ��O: OCX �v���p�e�B �y�[�W�̖߂�l�� FALSE �ƂȂ�܂�
+	return TRUE;  // コントロールにフォーカスを設定しないとき、戻り値は TRUE となります
+	              // 例外: OCX プロパティ ページの戻り値は FALSE となります
 }
 
 void CDlgOperationProp::OnShowWindow(BOOL bShow, UINT nStatus) 
@@ -2039,37 +2039,37 @@ void CDlgOperationProp::OnShowWindow(BOOL bShow, UINT nStatus)
 	if ( bShow ){
 		CWnd* pControl = NULL ;
 		switch( m_iFocusItem ){
-		 case 0	:	//	�w��
+		 case 0	:	//	駅扱
 			pControl = GetDlgItem(IDC_RADIO_OperationType) ;
 			break ;
-		 case 1	:	//	�R���{1 �����Ԑ�
+		 case 1	:	//	コンボ1 入換番線
 			pControl = GetDlgItem(IDC_COMBO_Data1_0) ;
 			break ;
-		 case 2	:	//	�G�f�B�b�g1
+		 case 2	:	//	エディット1
 			pControl = GetDlgItem( IDC_EDIT_Data1 ) ;
 			break ;
-		 case 3:	//	�G�f�B�b�g2
+		 case 3:	//	エディット2
 			 pControl = GetDlgItem(IDC_EDIT_Data2);
 			 break;
-		 case 4:	//	�^�p�ԍ�
+		 case 4:	//	運用番号
 			 pControl = GetDlgItem(IDC_EDIT_OperationNumbers);
 			 break;
-		 case 5:	//	�`�F�b�N1
+		 case 5:	//	チェック1
 			 pControl = GetDlgItem(IDC_CHECK_JikokuDisplay);
 			 break;
-		 case 6:	//	�R���{1 ����Ԑڑ��^�C�v(Ver2.05����)
+		 case 6:	//	コンボ1 次列車接続タイプ(Ver2.05から)
 			 pControl = GetDlgItem(IDC_COMBO_Data1_5);
 			 break;
-		 case 7:	//	�R���{1 �����ʒu
+		 case 7:	//	コンボ1 増結位置
 			 pControl = GetDlgItem(IDC_COMBO_Data1_1);
 			 break;
-		 case 8:	//	�R���{1 �����ʒu
+		 case 8:	//	コンボ1 解結位置
 			 pControl = GetDlgItem(IDC_COMBO_Data1_2);
 			 break;
-		 case 9:	//	�R���{1 �H���O�����w��
+		 case 9:	//	コンボ1 路線外発着駅名
 			 pControl = GetDlgItem(IDC_COMBO_Data1_4);
 			 break;
-		 case 10:	//	���o��A�g�R�[�h(Ver2.05����)
+		 case 10:	//	入出区連携コード(Ver2.05から)
 			 pControl = GetDlgItem(IDC_EDIT_InOutLinkCode);
 			 break;
 		}
@@ -2235,26 +2235,26 @@ void ViewJikokuhyou::CDlgOperationProp::OnLbnSelchangeListOperationafter()
 
 void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationadd()
 {
-	//UiData�ɊO����A�N�Z�X���A���ڍ�Ƃ�ǉ����܂��B
-	//���̌�iLevel�̕␳���s���܂��B
+	//UiDataに外からアクセスし、直接作業を追加します。
+	//その後iLevelの補正も行います。
 	bool bSelectedAfter = m_PropEditUiInternal.GetUiData()->bSelectedAfter;
 	int iListSelected = m_PropEditUiInternal.GetUiData()->iListSelected;
 	if (iListSelected >= 0)
 	{
 		/**
-			�ǉ����ꂽ��Ƃ�����iLevel�ł��B������傫��iLevel�������̂́A��Âl���J�艺����܂�
-			�J�艺�������
-			(0)iAddPosition�������ɂ���
-			(1)iLevel�̗v�f�����AiAddiLevel�ȏ�̕�
-				���̒l��1,1,1�̏ꍇ��0�E1�E1,0�Ȃ�iLevel�̗v�f�������Ȃ����̂͑ΏۊO
-			(2)iLevel�̒l�̂����AiAddiLevel�̖����v�f�ȊO�̒l����v�������
-				���̒l��1,1,1�̏ꍇ��1,2,0�E2,1,1�ȂǁA�O����̒l���قȂ���̂͏��O
-			(3)iAddiLevel�̖����v�f�Ɠ����ʒu�̒l���AiAddiLevel�̖����v�f�̒l�ȏ�̂���
-				���̒l��1,1,1�̏ꍇ��1,1,0�E1,1,0,1�Ȃǂ͏��O
+			追加された作業が持つiLevelです。これより大きなiLevelを持つものは、一つづつ値が繰り下がります
+			繰り下がる条件
+			(0)iAddPositionよりも下にある
+			(1)iLevelの要素数が、iAddiLevel以上の物
+				この値が1,1,1の場合→0・1・1,0などiLevelの要素数が少ないものは対象外
+			(2)iLevelの値のうち、iAddiLevelの末尾要素以外の値が一致するもの
+				この値が1,1,1の場合→1,2,0・2,1,1など、前方二つの値が異なるものは除外
+			(3)iAddiLevelの末尾要素と同じ位置の値が、iAddiLevelの末尾要素の値以上のもの
+				この値が1,1,1の場合→1,1,0・1,1,0,1などは除外
 		*/
 		vector<int> iAddiLevel;
 
-		//��Ƃ�ǉ�����AsOperation��̈ʒu�ł��AiLevel�␳������čs��Ȃ����߂ɂ��p���܂��B
+		//作業を追加する、sOperation上の位置です、iLevel補正を誤って行わないためにも用います。
 		int iAddPosition = 0;
 
 		vector<Operation> sOperation;
@@ -2268,8 +2268,8 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationadd()
 		}
 
 
-		//���ۂɒǉ�����ʒu�Ƃ���iLevel�����߂܂�
-		//�u��Ƃ�ǉ��v�ʒu���I������Ă���ꍇ�́A�V�������(����)�ɒu�������܂��B
+		//実際に追加する位置とそのiLevelを求めます
+		//「作業を追加」位置が選択されている場合は、新しい作業(入換)に置き換えます。
 		if (sOperation[iListSelected].iOperation == 7)
 		{
 			sOperation.clear();
@@ -2282,16 +2282,16 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationadd()
 			{
 				iAddiLevel = sOperation[iListSelected].iLevel;
 				/**
-					������Ƃ̉��ɒǉ�����ꍇ�́A������Ƃ̌��ƌQ���щz��������ɒǉ����s���B
-					�ǉ��ꏊ������
-					(1)iLevel�́AiAddiLevel�̖������ڂ̒l���AiAddiLevel�̓��Y���̒l�ƈقȂ�(�傫��)
-						�����̏ꍇ�́A������Ƃ̈��̍��(���̍�Ƃ������Ȃ�A���̑O��Ƃ̍ŏ��)�̏ꏊ
-					(2)iLevel�̗v�f�����AiAddiLevel�������Ȃ�
-						�����̏ꍇ�́A������Ƃ��A�e�ƂȂ鑝����Ƃ�1�Ԗڂ̎q��Ƃɓ�����ꍇ�A
-					(3)idx=sOperation.size()-1�܂ŒT�����Ă�������Ȃ��ꍇ�͍Ō�(idx=sOperation,size())
-						�����̏ꍇ�́A�Ō�̍�Ƃ��������
+					解結作業の下に追加する場合は、解結作業の後作業群を飛び越した後方に追加を行う。
+					追加場所条件は
+					(1)iLevelの、iAddiLevelの末尾桁目の値が、iAddiLevelの当該桁の値と異なる(大きい)
+						→この場合は、解結作業の一つ後の作業(その作業が増結なら、その前作業の最上位)の場所
+					(2)iLevelの要素数が、iAddiLevelよりも少ない
+						→この場合は、解結作業が、親となる増結作業の1番目の子作業に当たる場合、
+					(3)idx=sOperation.size()-1まで探索しても見つからない場合は最後(idx=sOperation,size())
+						→この場合は、最後の作業が解結作業
 				*/
-				iAddPosition = sOperation.size();//(3)�̏ꍇ�p�A(1)(2)���Y������ꍇ�͂���ŏ㏑�������̂Ŗ��Ȃ�
+				iAddPosition = sOperation.size();//(3)の場合用、(1)(2)が該当する場合はそれで上書きされるので問題ない
 				for (int idx = iListSelected + 1; idx < (int)sOperation.size(); idx++)
 				{
 					int iAddiLevelLastPos = iAddiLevel.size() - 1;
@@ -2306,8 +2306,8 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationadd()
 						break;
 					}
 				}
-				iAddiLevel.back()++;//iAddLevel����L�T���ŗp����̂ŁA�����ŉ��Z���s��
-					//(��ɉ��Z������ŁA���������ς��Ă��悢���Ainsert�Ɣ��莮�����킹�邽��)
+				iAddiLevel.back()++;//iAddLevelを上記探索で用いるので、ここで加算を行う
+					//(先に加算した上で、判定条件を変えてもよいが、insertと判定式を合わせるため)
 			}
 			else
 			{
@@ -2319,16 +2319,16 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationadd()
 			sOperation.insert(sOperation.begin() + iAddPosition, Operation());
 			sOperation[iAddPosition].iLevel = iAddiLevel;
 
-			//�������ڂ�iLevel�̕␳���
+			//既存項目のiLevelの補正作業
 			for (int idx = iAddPosition + 1; idx < (int)sOperation.size(); idx++)
 			{
-				//�܂��A�ǉ����ꂽ�v�f���g�ƁA�ǉ����ꂽ�v�f���e���̗v�f�����O
+				//まず、追加された要素自身と、追加された要素より親側の要素を除外
 				if (/*idx != iAddPosition &&*/
 					sOperation[idx].iLevel.size() >= iAddiLevel.size())
 				{
-					//�ǉ����ꂽ�v�f�ƁA�e��Ƃ����ꂩ�ۂ����`�F�b�N
+					//追加された要素と、親作業が同一か否かをチェック
 					bool bMatch = true;
-					//iAddiLevel.size()��1�̏ꍇ�́Afor�ɓ���Ȃ������Ȃ��B�O���ɒl�������A�Ƃ����Ӗ��ň�v
+					//iAddiLevel.size()が1の場合は、forに入らないが問題ない。前方に値が無い、という意味で一致
 					for (int idxl = 0; idxl < (int)iAddiLevel.size() - 1; idxl++)
 					{
 						if (sOperation[idx].iLevel[idxl] != iAddiLevel[idxl])
@@ -2363,26 +2363,26 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationadd()
 
 void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationinsert()
 {
-	//UiData�ɊO����A�N�Z�X���A���ڍ�Ƃ�}�����܂��B
-	//���̌�iLevel�̕␳���s���܂��B
+	//UiDataに外からアクセスし、直接作業を挿入します。
+	//その後iLevelの補正も行います。
 	bool bSelectedAfter = m_PropEditUiInternal.GetUiData()->bSelectedAfter;
 	int iListSelected = m_PropEditUiInternal.GetUiData()->iListSelected;
 	if ( iListSelected >= 0)
 	{
 		/**
-			�ǉ����ꂽ��Ƃ�����iLevel�ł��B������傫��iLevel�������̂́A��Âl���J�艺����܂�
-			�J�艺�������
-			(0)iAddPosition�������ɂ���
-			(1)iLevel�̗v�f�����AiAddiLevel�ȏ�̕�
-				���̒l��1,1,1�̏ꍇ��0�E1�E1,0�Ȃ�iLevel�̗v�f�������Ȃ����̂͑ΏۊO
-			(2)iLevel�̒l�̂����AiAddiLevel�̖����v�f�ȊO�̒l����v�������
-				���̒l��1,1,1�̏ꍇ��1,2,0�E2,1,1�ȂǁA�O����̒l���قȂ���̂͏��O
-			(3)iAddiLevel�̖����v�f�Ɠ����ʒu�̒l���AiAddiLevel�̖����v�f�̒l�ȏ�̂���
-				���̒l��1,1,1�̏ꍇ��1,1,0�E1,1,0,1�Ȃǂ͏��O
+			追加された作業が持つiLevelです。これより大きなiLevelを持つものは、一つづつ値が繰り下がります
+			繰り下がる条件
+			(0)iAddPositionよりも下にある
+			(1)iLevelの要素数が、iAddiLevel以上の物
+				この値が1,1,1の場合→0・1・1,0などiLevelの要素数が少ないものは対象外
+			(2)iLevelの値のうち、iAddiLevelの末尾要素以外の値が一致するもの
+				この値が1,1,1の場合→1,2,0・2,1,1など、前方二つの値が異なるものは除外
+			(3)iAddiLevelの末尾要素と同じ位置の値が、iAddiLevelの末尾要素の値以上のもの
+				この値が1,1,1の場合→1,1,0・1,1,0,1などは除外
 		*/
 		vector<int> iAddiLevel;
 
-		//��Ƃ�ǉ�����AsOperation��̈ʒu�ł��AiLevel�␳������čs��Ȃ����߂ɂ��p���܂��B
+		//作業を追加する、sOperation上の位置です、iLevel補正を誤って行わないためにも用います。
 		int iAddPosition = 0;
 
 		vector<Operation> sOperation;
@@ -2395,8 +2395,8 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationinsert()
 			sOperation = m_PropEditUiInternal.GetUiData()->sOperationB;
 		}
 
-		//���ۂɒǉ�����ʒu�Ƃ���iLevel�����߂܂�
-		//�u��Ƃ�ǉ��v�ʒu���I������Ă���ꍇ�́A�V�������(����)�ɒu�������܂��B
+		//実際に追加する位置とそのiLevelを求めます
+		//「作業を追加」位置が選択されている場合は、新しい作業(入換)に置き換えます。
 		if (sOperation[iListSelected].iOperation == 7)
 		{
 			sOperation.clear();
@@ -2409,16 +2409,16 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationinsert()
 			{
 				iAddiLevel = sOperation[iListSelected].iLevel;
 				/**
-					������Ƃ̏ꏊ�ɑ}������ꍇ�́A������Ƃ̑O��ƌQ���щz�����O���ɒǉ����s���B
-					�}���ꏊ������
-					(1)iLevel�́AiAddiLevel�̖������ڂ̒l���AiAddiLevel�̓��Y���̒l�ƈقȂ�(������)
-						�����̏ꍇ�́A������Ƃ̈�O�̍��(���̍�Ƃ������Ȃ�A���̌��Ƃ̍ŉ���)�̏ꏊ
-					(2)iLevel�̗v�f�����AiAddiLevel�������Ȃ�
-						�����̏ꍇ�́A������Ƃ��A�e�ƂȂ������Ƃ�1�Ԗڂ̎q��Ƃɓ�����ꍇ�A
-					(3)idx=0�܂ŒT�����Ă�������Ȃ��ꍇ�͍ŏ�(idx=0)
-						�����̏ꍇ�́A�ŏ��̍�Ƃ��������
+					増結作業の場所に挿入する場合は、増結作業の前作業群を飛び越した前方に追加を行う。
+					挿入場所条件は
+					(1)iLevelの、iAddiLevelの末尾桁目の値が、iAddiLevelの当該桁の値と異なる(小さい)
+						→この場合は、増結作業の一つ前の作業(その作業が解結なら、その後作業の最下位)の場所
+					(2)iLevelの要素数が、iAddiLevelよりも少ない
+						→この場合は、増結作業が、親となる解結作業の1番目の子作業に当たる場合、
+					(3)idx=0まで探索しても見つからない場合は最初(idx=0)
+						→この場合は、最初の作業が増結作業
 				*/
-				iAddPosition = 0;//(3)�̏ꍇ�p�A(1)(2)���Y������ꍇ�͂���ŏ㏑�������̂Ŗ��Ȃ�
+				iAddPosition = 0;//(3)の場合用、(1)(2)が該当する場合はそれで上書きされるので問題ない
 				for (int idx = iListSelected - 1; idx >= 0; idx--)
 				{
 					int iAddiLevelLastPos = iAddiLevel.size() - 1;
@@ -2443,16 +2443,16 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationinsert()
 			sOperation.insert(sOperation.begin() + iAddPosition, Operation());
 			sOperation[iAddPosition].iLevel = iAddiLevel;
 
-			//�������ڂ�iLevel�̕␳���
+			//既存項目のiLevelの補正作業
 			for (int idx = iAddPosition + 1; idx < (int)sOperation.size(); idx++)
 			{
-				//�܂��A�ǉ����ꂽ�v�f���g�ƁA�ǉ����ꂽ�v�f���e���̗v�f�����O
+				//まず、追加された要素自身と、追加された要素より親側の要素を除外
 				if (/*idx != iAddPosition &&*/
 					sOperation[idx].iLevel.size() >= iAddiLevel.size())
 				{
-					//�ǉ����ꂽ�v�f�ƁA�e��Ƃ����ꂩ�ۂ����`�F�b�N
+					//追加された要素と、親作業が同一か否かをチェック
 					bool bMatch = true;
-					//iAddiLevel.size()��1�̏ꍇ�́Afor�ɓ���Ȃ������Ȃ��B�O���ɒl�������A�Ƃ����Ӗ��ň�v
+					//iAddiLevel.size()が1の場合は、forに入らないが問題ない。前方に値が無い、という意味で一致
 					for (int idxl = 0; idxl < (int)iAddiLevel.size() - 1; idxl++)
 					{
 						if (sOperation[idx].iLevel[idxl] != iAddiLevel[idxl])
@@ -2488,26 +2488,26 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationinsert()
 
 void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonChildoperationadd()
 {
-	//UiData�ɊO����A�N�Z�X���A���ڍ�Ƃ�}�����܂��B
-	//���̌�iLevel�̕␳���s���܂��B
+	//UiDataに外からアクセスし、直接作業を挿入します。
+	//その後iLevelの補正も行います。
 	bool bSelectedAfter = m_PropEditUiInternal.GetUiData()->bSelectedAfter;
 	int iListSelected = m_PropEditUiInternal.GetUiData()->iListSelected;
 	if (iListSelected >= 0)
 	{
 		/**
-			�ǉ����ꂽ��Ƃ�����iLevel�ł��B������傫��iLevel�������̂́A��Âl���J�艺����܂�
-			�J�艺�������
-			(1)iLevel�̗v�f�����AiAddiLevel�ȏ�̕�
-				���̒l��1,1,1�̏ꍇ��0�E1�E1,0�Ȃ�iLevel�̗v�f�������Ȃ����̂͑ΏۊO
-			(2)iLevel�̒l�̂����AiAddiLevel�̖����v�f�ȊO�̒l����v�������
-				���̒l��1,1,1�̏ꍇ��1,2,0�E2,1,1�ȂǁA�O����̒l���قȂ���̂͏��O
-			(3)iAddiLevel�̖����v�f�Ɠ����ʒu�̒l���AiAddiLevel�̖����v�f�̒l�ȏ�̂���
-				���̒l��1,1,1�̏ꍇ��1,1,0�E1,1,0,1�Ȃǂ͏��O
-			(4)�ǉ����ꂽ��Ǝ��g�͏����BiAddPosition�Ŕ���
+			追加された作業が持つiLevelです。これより大きなiLevelを持つものは、一つづつ値が繰り下がります
+			繰り下がる条件
+			(1)iLevelの要素数が、iAddiLevel以上の物
+				この値が1,1,1の場合→0・1・1,0などiLevelの要素数が少ないものは対象外
+			(2)iLevelの値のうち、iAddiLevelの末尾要素以外の値が一致するもの
+				この値が1,1,1の場合→1,2,0・2,1,1など、前方二つの値が異なるものは除外
+			(3)iAddiLevelの末尾要素と同じ位置の値が、iAddiLevelの末尾要素の値以上のもの
+				この値が1,1,1の場合→1,1,0・1,1,0,1などは除外
+			(4)追加された作業自身は除く。iAddPositionで判定
 		*/
 		vector<int> iAddiLevel;
 
-		//��Ƃ�ǉ�����AsOperation��̈ʒu�ł��AiLevel�␳������čs��Ȃ����߂ɂ��p���܂��B
+		//作業を追加する、sOperation上の位置です、iLevel補正を誤って行わないためにも用います。
 		int iAddPosition = 0;
 
 		vector<Operation> sOperation;
@@ -2520,14 +2520,14 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonChildoperationadd()
 			sOperation = m_PropEditUiInternal.GetUiData()->sOperationB;
 		}
 
-		//���ۂɒǉ�����ʒu�Ƃ���iLevel�����߂܂�
+		//実際に追加する位置とそのiLevelを求めます
 		if (sOperation[iListSelected].iOperation == 1)
 		{
 			/**
-				�I���ʒu�������̏ꍇ�́A�I���ʒu�ɑO��Ƃ�}�����܂�
+				選択位置が増結の場合は、選択位置に前作業を挿入します
 			*/
-			//iAddiLevel�́A�O��ƍŉ��ʂ̂��̂���ɁA�����v�f��1���Z�������̂ł��B
-			//������Ƃ̑O��Ƃɂ́A�K����ȏ�̍�Ƃ������Ă���̂ŁA���ߑł��Ŏ擾�ł��܂��B
+			//iAddiLevelは、前作業最下位のものを基に、末尾要素に1加算したものです。
+			//増結作業の前作業には、必ず一つ以上の作業が入っているので、決め打ちで取得できます。
 			iAddiLevel = sOperation[iListSelected - 1].iLevel;
 			iAddiLevel.back()++;
 			iAddPosition = iListSelected;
@@ -2535,10 +2535,10 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonChildoperationadd()
 		else if (sOperation[iListSelected].iOperation == 2)
 		{
 			/**
-				�I���ʒu�������̏ꍇ�́A�I���ʒu�̈���Ɍ��Ƃ�}�����܂�
+				選択位置が解結の場合は、選択位置の一つ下に後作業を挿入します
 			*/
-			//iAddiLevel�́A���ƍŏ�ʂ̂��̂������p���܂��B
-			//������Ƃ̌��Ƃɂ́A�K����ȏ�̍�Ƃ������Ă���̂ŁA���ߑł��Ŏ擾�ł��܂��B
+			//iAddiLevelは、後作業最上位のものを引き継ぎます。
+			//解結作業の後作業には、必ず一つ以上の作業が入っているので、決め打ちで取得できます。
 			iAddiLevel = sOperation[iListSelected + 1].iLevel;
 			iAddPosition = iListSelected + 1;
 
@@ -2548,16 +2548,16 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonChildoperationadd()
 		sOperation.insert(sOperation.begin() + iAddPosition, Operation());
 		sOperation[iAddPosition].iLevel = iAddiLevel;
 
-		//�������ڂ�iLevel�̕␳���
+		//既存項目のiLevelの補正作業
 		for (int idx = 0; idx < (int)sOperation.size(); idx++)
 		{
-			//�܂��A�ǉ����ꂽ�v�f���g�ƁA�ǉ����ꂽ�v�f���e���̗v�f�����O
+			//まず、追加された要素自身と、追加された要素より親側の要素を除外
 			if (idx != iAddPosition &&
 				sOperation[idx].iLevel.size() >= iAddiLevel.size())
 			{
-				//�ǉ����ꂽ�v�f�ƁA�e��Ƃ����ꂩ�ۂ����`�F�b�N
+				//追加された要素と、親作業が同一か否かをチェック
 				bool bMatch = true;
-				//iAddiLevel.size()��1�̏ꍇ�́Afor�ɓ���Ȃ������Ȃ�.�O���ɒl�������A�Ƃ����Ӗ��ň�v
+				//iAddiLevel.size()が1の場合は、forに入らないが問題ない.前方に値が無い、という意味で一致
 				for (int idxl = 0; idxl < (int)iAddiLevel.size() - 1; idxl++)
 				{
 					if (sOperation[idx].iLevel[idxl] != iAddiLevel[idxl])
@@ -2591,30 +2591,30 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonChildoperationadd()
 
 void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationclear()
 {
-	//UiData�ɊO����A�N�Z�X���A���ڍ�Ƃ��폜���܂��B
-	//�폜�Ώۂ��������̏ꍇ�́A���̎q��Ƃ��폜���܂��B
-	//���̌�iLevel�̕␳���s���܂��B
+	//UiDataに外からアクセスし、直接作業を削除します。
+	//削除対象が増解結の場合は、その子作業も削除します。
+	//その後iLevelの補正も行います。
 	bool bSelectedAfter = m_PropEditUiInternal.GetUiData()->bSelectedAfter;
 	int iListSelected = m_PropEditUiInternal.GetUiData()->iListSelected;
 	if (iListSelected >= 0)
 	{
 		/**
-			�폜���ꂽ��Ƃ�����iLevel�ł��B������傫��iLevel�������̂́A��Âl���J��オ��܂�
-			�J��オ�����
-			(0)iDelPosition�������ɂ���
-			(1)iLevel�̗v�f�����AiDeliLevel�ȏ�̕�
-				���̒l��1,1,1�̏ꍇ��0�E1�E1,0�Ȃ�iLevel�̗v�f�������Ȃ����̂͑ΏۊO
-			(2)iLevel�̒l�̂����AiDeliLevel�̖����v�f�ȊO�̒l����v�������
-				���̒l��1,1,1�̏ꍇ��1,2,0�E2,1,1�ȂǁA�O����̒l���قȂ���̂͏��O
-			(3)iAddiLevel�̖����v�f�Ɠ����ʒu�̒l���AiDeliLevel�̖����v�f�̒l�ȏ�̂���
-				���̒l��1,1,1�̏ꍇ��1,1,0�E1,1,0,1�Ȃǂ͏��O
+			削除された作業が持つiLevelです。これより大きなiLevelを持つものは、一つづつ値が繰り上がります
+			繰り上がり条件
+			(0)iDelPositionよりも下にある
+			(1)iLevelの要素数が、iDeliLevel以上の物
+				この値が1,1,1の場合→0・1・1,0などiLevelの要素数が少ないものは対象外
+			(2)iLevelの値のうち、iDeliLevelの末尾要素以外の値が一致するもの
+				この値が1,1,1の場合→1,2,0・2,1,1など、前方二つの値が異なるものは除外
+			(3)iAddiLevelの末尾要素と同じ位置の値が、iDeliLevelの末尾要素の値以上のもの
+				この値が1,1,1の場合→1,1,0・1,1,0,1などは除外
 		*/
 		vector<int> iDeliLevel;
 
-		//��Ƃ��폜����AsOperation��̈ʒu�ł��AiLevel�␳������čs��Ȃ����߂ɂ��p���܂��B
+		//作業を削除する、sOperation上の位置です、iLevel補正を誤って行わないためにも用います。
 		int iDelPosition = iListSelected;
-		//��Ƃ��폜������ł��B�폜�Ώۂ��������̏ꍇ�́A���̎q��Ƃ��폜����̂ŁA
-		//������܂߂����ɂȂ�܂��B
+		//作業を削除する個数です。削除対象が増解結の場合は、その子作業も削除するので、
+		//それを含めた数になります。
 		int iDelSize = 1;
 
 		vector<Operation> sOperation;
@@ -2632,28 +2632,28 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationclear()
 		if (sOperation[iListSelected].iOperation == 1)
 		{
 			/**
-				�����̏ꍇ�́A�O��Ƃ������č폜���܂�
+				増結の場合は、前作業も併せて削除します
 			*/
 			for (int idxb = iListSelected - 1; idxb >= 0; idxb--)
 			{
 				/**
-					�܂��Aidxb�ʒu��iLevel�̗v�f�����m�F�A�v�f����iDeliLevel�ȉ��Ȃ�A�q��Ƃł͂Ȃ��̂ŒT���I���ł�
+					まず、idxb位置のiLevelの要素数を確認、要素数がiDeliLevel以下なら、子作業ではないので探索終了です
 				*/
 				if (sOperation[idxb].iLevel.size() <= iDeliLevel.size())
 				{
 					break;
 				}
 				/**
-					�v�f����iDeliLevel��葽���ꍇ�́AiDeliLevel�̗v�f���܂ł̒l���A��v���邩�ۂ��𒲂ׂ܂�
+					要素数がiDeliLevelより多い場合は、iDeliLevelの要素数までの値が、一致するか否かを調べます
 				*/
 				bool bMatch = true;
-				//iAddiLevel.size()��1�̏ꍇ�́Afor�ɓ���Ȃ������Ȃ��B�O���ɒl�������A�Ƃ����Ӗ��ň�v
+				//iAddiLevel.size()が1の場合は、forに入らないが問題ない。前方に値が無い、という意味で一致
 				for (int idxl = 0; idxl < (int)iDeliLevel.size() ; idxl++)
 				{
 					if (sOperation[idxb].iLevel[idxl] != iDeliLevel[idxl])
 					{
 						/**
-							�l���s��v�̏ꍇ�A�������ɂ͎q��Ƃ͖����̂ŁAbMatch��false�ɂ��ĒT���𔲂��܂��B
+							値が不一致の場合、それより先には子作業は無いので、bMatchをfalseにして探索を抜けます。
 						*/
 						bMatch = false;
 						break;
@@ -2664,8 +2664,8 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationclear()
 					break;
 				}
 				/**
-					iDeliLevel.size()�̒l����v�����ꍇ�A���̍�Ƃ͎q��Ƃł��A
-					iDelPosition��-1���AiDelSize��+1���܂��B(�폜�͌�ōs��)
+					iDeliLevel.size()個の値が一致した場合、その作業は子作業です、
+					iDelPositionを-1し、iDelSizeを+1します。(削除は後で行う)
 				*/
 				iDelPosition--;
 				iDelSize++;
@@ -2675,28 +2675,28 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationclear()
 		else if (sOperation[iListSelected].iOperation == 2)
 		{
 			/**
-				�����̏ꍇ�́A���Ƃ������č폜���܂�
+				解結の場合は、後作業も併せて削除します
 			*/
 			for (int idxa = iListSelected + 1; idxa < (int)sOperation.size(); idxa++)
 			{
 				/**
-					�܂��Aidxa�ʒu��iLevel�̗v�f�����m�F�A�v�f����iDeliLevel�ȉ��Ȃ�A�q��Ƃł͂Ȃ��̂ŒT���I���ł�
+					まず、idxa位置のiLevelの要素数を確認、要素数がiDeliLevel以下なら、子作業ではないので探索終了です
 				*/
 				if (sOperation[idxa].iLevel.size() <= iDeliLevel.size())
 				{
 					break;
 				}
 				/**
-					�v�f����iDeliLevel��葽���ꍇ�́AiDeliLevel�̗v�f���܂ł̒l���A��v���邩�ۂ��𒲂ׂ܂�
+					要素数がiDeliLevelより多い場合は、iDeliLevelの要素数までの値が、一致するか否かを調べます
 				*/
 				bool bMatch = true;
-				//iAddiLevel.size()��1�̏ꍇ�́Afor�ɓ���Ȃ������Ȃ��B�O���ɒl�������A�Ƃ����Ӗ��ň�v
+				//iAddiLevel.size()が1の場合は、forに入らないが問題ない。前方に値が無い、という意味で一致
 				for (int idxl = 0; idxl < (int)iDeliLevel.size(); idxl++)
 				{
 					if (sOperation[idxa].iLevel[idxl] != iDeliLevel[idxl])
 					{
 						/**
-							�l���s��v�̏ꍇ�A�������ɂ͎q��Ƃ͖����̂ŁAbMatch��false�ɂ��ĒT���𔲂��܂��B
+							値が不一致の場合、それより先には子作業は無いので、bMatchをfalseにして探索を抜けます。
 						*/
 						bMatch = false;
 						break;
@@ -2707,8 +2707,8 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationclear()
 					break;
 				}
 				/**
-					iDeliLevel.size()�̒l����v�����ꍇ�A���̍�Ƃ͎q��Ƃł��A
-					iDelSize��+1���܂��B(�폜�͌�ōs��)
+					iDeliLevel.size()個の値が一致した場合、その作業は子作業です、
+					iDelSizeを+1します。(削除は後で行う)
 				*/
 				iDelSize++;
 			}
@@ -2716,15 +2716,15 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationclear()
 
 		sOperation.erase(sOperation.begin() + iDelPosition, sOperation.begin() + iDelPosition + iDelSize);
 
-		//�������ڂ�iLevel�̕␳���
+		//既存項目のiLevelの補正作業
 		for (int idx = iDelPosition ; idx < (int)sOperation.size(); idx++)
 		{
-			//�ǉ����ꂽ�v�f���e���̗v�f�����O
+			//追加された要素より親側の要素を除外
 			if (sOperation[idx].iLevel.size() >= iDeliLevel.size())
 			{
-				//�ǉ����ꂽ�v�f�ƁA�e��Ƃ����ꂩ�ۂ����`�F�b�N
+				//追加された要素と、親作業が同一か否かをチェック
 				bool bMatch = true;
-				//iDeliLevel.size()��1�̏ꍇ�́Afor�ɓ���Ȃ������Ȃ��B�O���ɒl�������A�Ƃ����Ӗ��ň�v
+				//iDeliLevel.size()が1の場合は、forに入らないが問題ない。前方に値が無い、という意味で一致
 				for (int idxl = 0; idxl < (int)iDeliLevel.size() - 1; idxl++)
 				{
 					if (sOperation[idx].iLevel[idxl] != iDeliLevel[idxl])
@@ -2740,7 +2740,7 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationclear()
 				}
 			}
 		}
-		//�폜��ɁA��Ɛ���0�ɂȂ����ꍇ�́A(��Ƃ�ǉ�)�̍�Ƃ�ǉ����܂�
+		//削除後に、作業数が0になった場合は、(作業を追加)の作業を追加します
 		if (sOperation.size() == 0)
 		{
 			Operation sOperationAdd;
@@ -2768,27 +2768,27 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationclear()
 
 void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationup()
 {
-	//UiData�ɊO����A�N�Z�X���A���ڍ�Ƃ����ւ��܂��B
-	//���̌�iLevel�̕␳���s���܂��B
+	//UiDataに外からアクセスし、直接作業を入れ替えます。
+	//その後iLevelの補正も行います。
 	bool bSelectedAfter = m_PropEditUiInternal.GetUiData()->bSelectedAfter;
 	int iListSelected = m_PropEditUiInternal.GetUiData()->iListSelected;
 	if (iListSelected >= 0)
 	{
 		/**
-			����ւ��ΏۂƂȂ�iLevel�ł��B������傫��iLevel�������̂́A��Âl���J�艺����܂�
-			�J�艺�������
-			(0)iAddPosition�������ɂ���
-			(1)iLevel�̗v�f�����AiAddiLevel�ȏ�̕�
-				���̒l��1,1,1�̏ꍇ��0�E1�E1,0�Ȃ�iLevel�̗v�f�������Ȃ����̂͑ΏۊO
-			(2)iLevel�̒l�̂����AiAddiLevel�̖����v�f�ȊO�̒l����v�������
-				���̒l��1,1,1�̏ꍇ��1,2,0�E2,1,1�ȂǁA�O����̒l���قȂ���̂͏��O
-			(3)iAddiLevel�̖����v�f�Ɠ����ʒu�̒l���AiAddiLevel�̖����v�f�̒l�ȏ�̂���
-				���̒l��1,1,1�̏ꍇ��1,1,0�E1,1,0,1�Ȃǂ͏��O
+			入れ替え対象となるiLevelです。これより大きなiLevelを持つものは、一つづつ値が繰り下がります
+			繰り下がる条件
+			(0)iAddPositionよりも下にある
+			(1)iLevelの要素数が、iAddiLevel以上の物
+				この値が1,1,1の場合→0・1・1,0などiLevelの要素数が少ないものは対象外
+			(2)iLevelの値のうち、iAddiLevelの末尾要素以外の値が一致するもの
+				この値が1,1,1の場合→1,2,0・2,1,1など、前方二つの値が異なるものは除外
+			(3)iAddiLevelの末尾要素と同じ位置の値が、iAddiLevelの末尾要素の値以上のもの
+				この値が1,1,1の場合→1,1,0・1,1,0,1などは除外
 		*/
 		vector<int> iUpperiLevel;
 		vector<int> iLoweriLevel;
 
-		//��Ƃ�ǉ�����AsOperation��̈ʒu�ł��AiLevel�␳������čs��Ȃ����߂ɂ��p���܂��B
+		//作業を追加する、sOperation上の位置です、iLevel補正を誤って行わないためにも用います。
 		int iUpperPosition = 0;
 		int iLowerPosition = iListSelected;
 		int iLowerCount = 1;
@@ -2805,13 +2805,13 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationup()
 			sOperation = m_PropEditUiInternal.GetUiData()->sOperationB;
 		}
 
-		//������̈ʒu�Ƃ���iLevel�����߂܂�
+		//入換先の位置とそのiLevelを求めます
 		{
 			iLoweriLevel = sOperation[iListSelected].iLevel;
 			if (sOperation[iListSelected].iOperation == 1)
 			{
 				/**
-					������Ƃ��ړ�����ꍇ�́A�q��Ƃ��܂Ƃ߂Ĉړ����܂��B
+					増結作業を移動する場合は、子作業もまとめて移動します。
 
 				*/
 				for (int idx = iListSelected - 1; idx >= 0; idx--)
@@ -2840,7 +2840,7 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationup()
 			else if (sOperation[iListSelected].iOperation == 2)
 			{
 				/**
-					������Ƃ��ړ�����ꍇ�́A�q��Ƃ��܂Ƃ߂Ĉړ����܂��B
+					解結作業を移動する場合は、子作業もまとめて移動します。
 
 				*/
 				for (int idx = iListSelected + 1; idx < (int)sOperation.size(); idx++)
@@ -2865,7 +2865,7 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationup()
 				}
 			}
 
-			//����ւ���́A��������iLevel�̖��������A1���Ȃ�����
+			//入れ替え先は、入換元のiLevelの末尾桁が、1少ないもの
 			iUpperiLevel = iLoweriLevel;
 			iUpperiLevel.back()--;
 
@@ -2896,7 +2896,7 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationup()
 			if (sOperation[iUpperPosition].iOperation == 1)
 			{
 				/**
-					����ւ��悪������Ƃ̏ꍇ�́A���̎q��Ƃ̑O������ւ���ƂȂ�܂��B
+					入れ替え先が増結作業の場合は、その子作業の前が入れ替え先となります。
 
 				*/
 				for (int idx = iUpperPosition - 1; idx >= 0; idx--)
@@ -2924,7 +2924,7 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationup()
 			else if (sOperation[iUpperPosition].iOperation == 2)
 			{
 				/**
-					�������
+					解結作業
 
 				*/
 				for (int idx = iUpperPosition + 1; idx < (int)sOperation.size(); idx++)
@@ -2951,7 +2951,7 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationup()
 			vector<Operation> contLower(sOperation.begin() + iLowerPosition, sOperation.begin() + iLowerPosition + iLowerCount);
 			sOperation.erase(sOperation.begin() + iLowerPosition, sOperation.begin() + iLowerPosition + iLowerCount);
 
-			//�������ڂ�iLevel�̕␳���
+			//既存項目のiLevelの補正作業
 			int iLevelAdjustidx = iLoweriLevel.size() - 1;
 			for (int idx = 0; idx < (int)contLower.size(); idx++)
 			{
@@ -2984,27 +2984,27 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationup()
 
 void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationdown()
 {
-	//UiData�ɊO����A�N�Z�X���A���ڍ�Ƃ����ւ��܂��B
-	//���̌�iLevel�̕␳���s���܂��B
+	//UiDataに外からアクセスし、直接作業を入れ替えます。
+	//その後iLevelの補正も行います。
 	bool bSelectedAfter = m_PropEditUiInternal.GetUiData()->bSelectedAfter;
 	int iListSelected = m_PropEditUiInternal.GetUiData()->iListSelected;
 	if (iListSelected >= 0)
 	{
 		/**
-			����ւ��ΏۂƂȂ�iLevel�ł��B������傫��iLevel�������̂́A��Âl���J�艺����܂�
-			�J�艺�������
-			(0)iAddPosition�������ɂ���
-			(1)iLevel�̗v�f�����AiAddiLevel�ȏ�̕�
-				���̒l��1,1,1�̏ꍇ��0�E1�E1,0�Ȃ�iLevel�̗v�f�������Ȃ����̂͑ΏۊO
-			(2)iLevel�̒l�̂����AiAddiLevel�̖����v�f�ȊO�̒l����v�������
-				���̒l��1,1,1�̏ꍇ��1,2,0�E2,1,1�ȂǁA�O����̒l���قȂ���̂͏��O
-			(3)iAddiLevel�̖����v�f�Ɠ����ʒu�̒l���AiAddiLevel�̖����v�f�̒l�ȏ�̂���
-				���̒l��1,1,1�̏ꍇ��1,1,0�E1,1,0,1�Ȃǂ͏��O
+			入れ替え対象となるiLevelです。これより大きなiLevelを持つものは、一つづつ値が繰り下がります
+			繰り下がる条件
+			(0)iAddPositionよりも下にある
+			(1)iLevelの要素数が、iAddiLevel以上の物
+				この値が1,1,1の場合→0・1・1,0などiLevelの要素数が少ないものは対象外
+			(2)iLevelの値のうち、iAddiLevelの末尾要素以外の値が一致するもの
+				この値が1,1,1の場合→1,2,0・2,1,1など、前方二つの値が異なるものは除外
+			(3)iAddiLevelの末尾要素と同じ位置の値が、iAddiLevelの末尾要素の値以上のもの
+				この値が1,1,1の場合→1,1,0・1,1,0,1などは除外
 		*/
 		vector<int> iUpperiLevel;
 		vector<int> iLoweriLevel;
 
-		//��Ƃ�ǉ�����AsOperation��̈ʒu�ł��AiLevel�␳������čs��Ȃ����߂ɂ��p���܂��B
+		//作業を追加する、sOperation上の位置です、iLevel補正を誤って行わないためにも用います。
 		int iUpperPosition = iListSelected;
 		int iLowerPosition = 0;
 		int iLowerCount = 1;
@@ -3021,13 +3021,13 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationdown()
 			sOperation = m_PropEditUiInternal.GetUiData()->sOperationB;
 		}
 
-		//������̈ʒu�Ƃ���iLevel�����߂܂�
+		//入換先の位置とそのiLevelを求めます
 		{
 			iUpperiLevel = sOperation[iListSelected].iLevel;
 			if (sOperation[iListSelected].iOperation == 1)
 			{
 				/**
-					������Ƃ��ړ�����ꍇ�́A�q��Ƃ��܂Ƃ߂Ĉړ����܂��B
+					増結作業を移動する場合は、子作業もまとめて移動します。
 
 				*/
 				for (int idx = iListSelected - 1; idx >= 0; idx--)
@@ -3056,7 +3056,7 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationdown()
 			else if (sOperation[iListSelected].iOperation == 2)
 			{
 				/**
-					������Ƃ��ړ�����ꍇ�́A�q��Ƃ��܂Ƃ߂Ĉړ����܂��B
+					解結作業を移動する場合は、子作業もまとめて移動します。
 
 				*/
 				for (int idx = iListSelected + 1; idx < (int)sOperation.size(); idx++)
@@ -3081,7 +3081,7 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationdown()
 				}
 			}
 
-			//����ւ���́A��������iLevel�̖��������A1�傫������
+			//入れ替え先は、入換元のiLevelの末尾桁が、1大きいもの
 			iLoweriLevel = iUpperiLevel;
 			iLoweriLevel.back()++;
 
@@ -3112,7 +3112,7 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationdown()
 			if (sOperation[iLowerPosition].iOperation == 1)
 			{
 				/**
-					����ւ��悪������Ƃ̏ꍇ�́A���̎q��Ƃ̑O������ւ���ƂȂ�܂��B
+					入れ替え先が増結作業の場合は、その子作業の前が入れ替え先となります。
 
 				*/
 				for (int idx = iLowerPosition - 1; idx >= 0; idx--)
@@ -3140,7 +3140,7 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationdown()
 			else if (sOperation[iLowerPosition].iOperation == 2)
 			{
 				/**
-					�������
+					解結作業
 
 				*/
 				for (int idx = iLowerPosition + 1; idx < (int)sOperation.size(); idx++)
@@ -3167,7 +3167,7 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationdown()
 			vector<Operation> contLower(sOperation.begin() + iLowerPosition, sOperation.begin() + iLowerPosition + iLowerCount);
 			sOperation.erase(sOperation.begin() + iLowerPosition, sOperation.begin() + iLowerPosition + iLowerCount);
 
-			//�������ڂ�iLevel�̕␳���
+			//既存項目のiLevelの補正作業
 			int iLevelAdjustidx = iLoweriLevel.size() - 1;
 			for (int idx = 0; idx < (int)contLower.size(); idx++)
 			{
@@ -3197,7 +3197,7 @@ void ViewJikokuhyou::CDlgOperationProp::OnBnClickedButtonOperationdown()
 	m_PropEditUiInternal.OnUiDataChanged();
 }
 
-/** �_�C�A���O�{�b�N�X�ւ̎����̏�����ێ����܂��B */
+/** ダイアログボックスへの時刻の書式を保持します。 */
 const CdDedJikoku::CConv	g_CdDedJikokuConv(
 	true,		//	NoColon 
 	CdDedJikoku::CConv::EHour_ZeroToNone,		//	HourZeroToNone 

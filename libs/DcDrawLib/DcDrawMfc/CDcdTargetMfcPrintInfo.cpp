@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -81,7 +81,7 @@ Copyright (C) 2006-2017 take-okm
 #include "CDcdTargetMfcPrintInfo.h"
 #include "logmsg/LogMsg.h"
 #include "DcDraw/CDcDeviceUnitSizeY.h"
-#include "DcDraw\CConverter_WinGdi.h"
+#include "DcDraw¥CConverter_WinGdi.h"
 
 namespace DcDrawLib{
 namespace DcDrawMfc{
@@ -92,7 +92,7 @@ using namespace std ;
 //	CDcdTargetMfcPrintInfo
 // ****************************************************************
 // ********************************
-//	�R���X�g���N�^
+//	コンストラクタ
 // ********************************
 CDcdTargetMfcPrintInfo::CDcdTargetMfcPrintInfo( 
 		CDC*			pCDC ,
@@ -109,7 +109,7 @@ CDcdTargetMfcPrintInfo::CDcdTargetMfcPrintInfo(
 	}
 }
 	
-CDcdTargetMfcPrintInfo::~CDcdTargetMfcPrintInfo() 
+CDcdTargetMfcPrintInfo::‾CDcdTargetMfcPrintInfo() 
 {
 }
 
@@ -135,12 +135,12 @@ Ou<CGdiHFontHolder>	CDcdTargetMfcPrintInfo::createGdiHFontHolder(  const CdFontP
 
 	CdFontProp	aCdFontProp( paramCdFontProp ) ;
 	if ( isPreview() && aCdFontProp.getPointTextHeight() > 0 ){
-		//	�`��Ώۂ�����v���r���[�ŁA
-		//	�t�H���g���|�C���g�T�C�Y�ō쐬����ꍇ�A�����
-		//	�v���r���[�E�C���h�E��DC�i���W�ɃY�[�����w�肳��Ă���j�ł͂Ȃ�
-		//	���DC�i�Y�[���̂Ȃ����W�n�j�ŁA�_���P�ʂɊ��Z����悤�ɂ��܂���
-		//	�i�������Ȃ��ƁA�v���r���[��ʂł̃t�H���g�̑傫����
-		//	����������܂���j
+		//	描画対象が印刷プレビューで、
+		//	フォントをポイントサイズで作成する場合、これを
+		//	プレビューウインドウのDC（座標にズームが指定されている）ではなく
+		//	画面DC（ズームのない座標系）で、論理単位に換算するようにしました
+		//	（こうしないと、プレビュー画面でのフォントの大きさが
+		//	正しくありません）
 
 		HDC hDcScreen = GetDC( NULL ) ;
 		
@@ -172,21 +172,21 @@ Ou<CGdiHBrushHolder> CDcdTargetMfcPrintInfo::createGdiHBrushHolder(  const CdBru
 //	CDcdTargetMfcPrintInfo
 // ********************************
 	// ********************************
-	//@name �֘A
+	//@name 関連
 	// ********************************
 HDC CDcdTargetMfcPrintInfo::getPrinterHdc() 
 {
 	return ( m_pCDC->m_hAttribDC ) ;
 }
 	// ********************************
-	//@name ����
+	//@name 操作
 	// ********************************
 bool CDcdTargetMfcPrintInfo::isPreview() 
 {
 	return ( m_pCPrintInfo->m_bPreview != FALSE ) ;
 }
 	// ********************************
-	//@name �f�o�b�O�p�֐�
+	//@name デバッグ用関数
 	// ********************************
 tstring CDcdTargetMfcPrintInfo::stringOf( CPrintInfo* pInfo ) 
 {
@@ -195,31 +195,31 @@ tstring CDcdTargetMfcPrintInfo::stringOf( CPrintInfo* pInfo )
 	{
 		tstringstream	sstrLs ;
 
-		sstrLs << _T("\t m_bDocObject=") << pInfo->m_bDocObject << endl ;
-		// �������h�L�������g�� DocObject �ł��邩�ǂ����������t���O��ێ����܂��B 
-		sstrLs << _T("\t m_dwFlags=") << pInfo->m_dwFlags << endl ;
-		//	DocObject ���������w�肵�܂��B 
-		sstrLs << _T("\t m_nOffsetPage=") << pInfo->m_nOffsetPage << endl ;
-		//	��������Ă��� DocObject ����W���u���ł̓���� DocObject �̐擪�y�[�W�̃I�t�Z�b�g���w�肵�܂��B 
-		//m_pPD [���] �_�C�A���O �{�b�N�X�Ŏg���� CPrintDialog �I�u�W�F�N�g�̃|�C���^��ێ����܂��B 
-		sstrLs << _T("\t m_bDirect=") << pInfo->m_bDirect << endl ;
-		//�h�L�������g�� ([���] �_�C�A���O �{�b�N�X��\��������) ���ڈ������邩�ǂ����������t���O��ێ����܂��B 
-		sstrLs << _T("\t m_bPreview=") << pInfo->m_bPreview << endl ;
-		//	�h�L�������g���v���r���[����Ă��邩�ǂ����������t���O��ێ����܂��B 
-		sstrLs << _T("\t m_bContinuePrinting=") << pInfo->m_bContinuePrinting << endl ;
-		//	�t���[�����[�N������p���[�v�𑱂��邩�ǂ����������t���O��ێ����܂��B 
-		sstrLs << _T("\t m_nCurPage=") << pInfo->m_nCurPage << endl ;
-		//	���݈������Ă���y�[�W�ԍ��������܂��B 
-		sstrLs << _T("\t m_nNumPreviewPages=") << pInfo->m_nNumPreviewPages << endl ;
-		//	�v���r���[�p�E�B���h�E�ɕ\������Ă���y�[�W�̐��������܂��B1�A�܂��� 2 �ł��B 
-		sstrLs << _T("\t m_lpUserData=") << pInfo->m_lpUserData << endl ;
-		//	�Ǝ��ɗp�ӂ����\���̂ւ̃|�C���^��ێ����܂��B 
-		sstrLs << _T("\t m_rectDraw=") <<
+		sstrLs << _T("¥t m_bDocObject=") << pInfo->m_bDocObject << endl ;
+		// 印刷するドキュメントが DocObject であるかどうかを示すフラグを保持します。 
+		sstrLs << _T("¥t m_dwFlags=") << pInfo->m_dwFlags << endl ;
+		//	DocObject 印刷操作を指定します。 
+		sstrLs << _T("¥t m_nOffsetPage=") << pInfo->m_nOffsetPage << endl ;
+		//	結合されている DocObject 印刷ジョブ内での特定の DocObject の先頭ページのオフセットを指定します。 
+		//m_pPD [印刷] ダイアログ ボックスで使われる CPrintDialog オブジェクトのポインタを保持します。 
+		sstrLs << _T("¥t m_bDirect=") << pInfo->m_bDirect << endl ;
+		//ドキュメントが ([印刷] ダイアログ ボックスを表示せずに) 直接印刷されるかどうかを示すフラグを保持します。 
+		sstrLs << _T("¥t m_bPreview=") << pInfo->m_bPreview << endl ;
+		//	ドキュメントがプレビューされているかどうかを示すフラグを保持します。 
+		sstrLs << _T("¥t m_bContinuePrinting=") << pInfo->m_bContinuePrinting << endl ;
+		//	フレームワークが印刷用ループを続けるかどうかを示すフラグを保持します。 
+		sstrLs << _T("¥t m_nCurPage=") << pInfo->m_nCurPage << endl ;
+		//	現在印刷されているページ番号を示します。 
+		sstrLs << _T("¥t m_nNumPreviewPages=") << pInfo->m_nNumPreviewPages << endl ;
+		//	プレビュー用ウィンドウに表示されているページの数を示します。1、または 2 です。 
+		sstrLs << _T("¥t m_lpUserData=") << pInfo->m_lpUserData << endl ;
+		//	独自に用意した構造体へのポインタを保持します。 
+		sstrLs << _T("¥t m_rectDraw=") <<
 			 pInfo->m_rectDraw.left << _T(" ") <<  pInfo->m_rectDraw.top << _T(" ") <<
 			 pInfo->m_rectDraw.right << _T(" ") <<   pInfo->m_rectDraw.bottom << endl  ;
-		//	���ݎg�p�\�ȃy�[�W�̈�Ƃ��Ē�`����Ă��钷���`�̈�������܂��B 
-		sstrLs << _T("\t m_strPageDesc=") << (LPCTSTR)pInfo->m_strPageDesc << endl ;
-		//	�y�[�W�ԍ��̕\���t�H�[�}�b�g���w�肷�镶�����ێ����܂��B 
+		//	現在使用可能なページ領域として定義されている長方形領域を示します。 
+		sstrLs << _T("¥t m_strPageDesc=") << (LPCTSTR)pInfo->m_strPageDesc << endl ;
+		//	ページ番号の表示フォーマットを指定する文字列を保持します。 
 
 		strRv = sstrLs.str() ;
 	}

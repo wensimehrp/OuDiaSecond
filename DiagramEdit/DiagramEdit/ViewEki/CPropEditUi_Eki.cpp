@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍAtake-okmŽ‚ªì¬‚µ‚½OuDia‚ð‰ü‘¢‚µ‚½ƒ\ƒtƒgƒEƒFƒA‚Å‚·B
-‚±‚ÌƒvƒƒOƒ‰ƒ€—˜—p‚É‚Â‚¢‚Ä‚ÍAtake-okmŽ‹LÚ‚Ì‰º‹L•¶‘‚É€‹’‚µ‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã€take-okmæ°ãŒä½œæˆã—ãŸOuDiaã‚’æ”¹é€ ã—ãŸã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ åˆ©ç”¨ã«ã¤ã„ã¦ã¯ã€take-okmæ°è¨˜è¼‰ã®ä¸‹è¨˜æ–‡æ›¸ã«æº–æ‹ ã—ã¾ã™ã€‚
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(–ó: 
+(è¨³: 
 
-	OuDia - —ñŽÔŽž•\‚ð‚à‚Æ‚ÉAƒ_ƒCƒ„ƒOƒ‰ƒ€‚ð•`‰æ‚·‚éWin32ƒAƒvƒŠƒP[ƒV
-ƒ‡ƒ“B
+	OuDia - åˆ—è»Šæ™‚åˆ»è¡¨ã‚’ã‚‚ã¨ã«ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚’æç”»ã™ã‚‹Win32ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·
+ãƒ§ãƒ³ã€‚
 
 Copyright (C) 2006-2017 take-okm 
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍƒtƒŠ[ƒ\ƒtƒgƒEƒFƒA‚Å‚·B‚ ‚È‚½‚Í‚±‚ê‚ðAƒtƒŠ[ƒ\ƒtƒgƒEƒFƒAà
-’c‚É‚æ‚Á‚Ä”­s‚³‚ê‚½GNU ˆê”ÊŒöO—˜—p‹–‘ø‘(ƒo[ƒWƒ‡ƒ“3‚©A‚»‚êˆÈ~‚Ìƒo[ƒWƒ‡
-ƒ“‚Ì‚¤‚¿‚Ç‚ê‚©)‚ª’è‚ß‚éðŒ‚Ì‰º‚ÅÄ”Ð•z‚Ü‚½‚Í‰ü•Ï ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚ã‚ãªãŸã¯ã“ã‚Œã‚’ã€ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢è²¡
+å›£ã«ã‚ˆã£ã¦ç™ºè¡Œã•ã‚ŒãŸGNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸(ãƒãƒ¼ã‚¸ãƒ§ãƒ³3ã‹ã€ãã‚Œä»¥é™ã®ãƒãƒ¼ã‚¸ãƒ§
+ãƒ³ã®ã†ã¡ã©ã‚Œã‹)ãŒå®šã‚ã‚‹æ¡ä»¶ã®ä¸‹ã§å†é ’å¸ƒã¾ãŸã¯æ”¹å¤‰ ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚Í—L—p‚Å‚ ‚é‚±‚Æ‚ðŠè‚Á‚Ä”Ð•z‚³‚ê‚Ü‚·‚ªA*‘S‚­‚Ì–³•ÛØ *‚Å‚·B
-¤‹Æ‰Â”\«‚Ì•ÛØ‚â“Á’è–Ú“I‚Ö‚Ì“K‡«‚ÍAŒ¾ŠO‚ÉŽ¦‚³‚ê‚½‚à‚Ì‚à ŠÜ‚ßA‘S‚­‘¶Ý
-‚µ‚Ü‚¹‚ñBÚ‚µ‚­‚ÍGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ð‚²——‚­‚¾‚³‚¢B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯æœ‰ç”¨ã§ã‚ã‚‹ã“ã¨ã‚’é¡˜ã£ã¦é ’å¸ƒã•ã‚Œã¾ã™ãŒã€*å…¨ãã®ç„¡ä¿è¨¼ *ã§ã™ã€‚
+å•†æ¥­å¯èƒ½æ€§ã®ä¿è¨¼ã‚„ç‰¹å®šç›®çš„ã¸ã®é©åˆæ€§ã¯ã€è¨€å¤–ã«ç¤ºã•ã‚ŒãŸã‚‚ã®ã‚‚ å«ã‚ã€å…¨ãå­˜åœ¨
+ã—ã¾ã›ã‚“ã€‚è©³ã—ãã¯GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã‚’ã”è¦§ãã ã•ã„ã€‚
 
-‚ ‚È‚½‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚Æ‹¤‚ÉAGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ÌƒRƒs[‚ðˆê•” Žó‚¯Žæ‚Á
-‚Ä‚¢‚é‚Í‚¸‚Å‚·B‚à‚µŽó‚¯Žæ‚Á‚Ä‚¢‚È‚¯‚ê‚ÎA<http://www.gnu.org/licenses/> ‚ð
-‚²——‚­‚¾‚³‚¢B
+ã‚ãªãŸã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¨å…±ã«ã€GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã®ã‚³ãƒ”ãƒ¼ã‚’ä¸€éƒ¨ å—ã‘å–ã£
+ã¦ã„ã‚‹ã¯ãšã§ã™ã€‚ã‚‚ã—å—ã‘å–ã£ã¦ã„ãªã‘ã‚Œã°ã€<http://www.gnu.org/licenses/> ã‚’
+ã”è¦§ãã ã•ã„ã€‚
 
 )
 
-  ‰Á‚¦‚ÄA“Á•Ê‚È—áŠO‚Æ‚µ‚ÄAtake-okm ‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÌƒR[ƒh‚ð 
+  åŠ ãˆã¦ã€ç‰¹åˆ¥ãªä¾‹å¤–ã¨ã—ã¦ã€take-okm ã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ã‚³ãƒ¼ãƒ‰ã‚’ 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ‚ ‚é‚¢‚Í "MFC Version 9.0" ‚Æ“¯‚¶ƒ‰ƒCƒZƒ“ƒX‚ª“K—p‚³‚ê‚½
-  "MFC Version 9.0" ‚Ì‰ü•Ï‚³‚ê‚½ƒo[ƒWƒ‡ƒ“)‚ÆƒŠƒ“ƒN‚µA
-  ƒŠƒ“ƒN‚³‚ê‚½—¼ŽÒ‚ðŠÜ‚ÞŒ‹‡’˜ì•¨‚ð”Ð•z‚·‚é‹–‰Â‚ð—^‚¦‚Ü‚·B
-  ‚ ‚È‚½‚Í "MFC" ˆÈŠO‚ÅŽg‚í‚ê‚Ä‚¢‚é‚·‚×‚Ä
-  ‚ÌƒR[ƒh‚ÉŠÖ‚µ‚Ä‚Í‘S–Ê“I‚ÉGNUˆê”ÊŒöO—˜—p‹–‘øŒ_–ñ‘‚É]‚í‚È‚¯‚ê‚Î
-  ‚È‚è‚Ü‚¹‚ñB‚ ‚È‚½‚ª‚±‚Ìƒtƒ@ƒCƒ‹‚ð‰ü•Ï‚µ‚½‚È‚ç‚ÎA‚ ‚È‚½‚Í‚±‚Ì—áŠO
-  ‚ð‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚Ìƒtƒ@ƒCƒ‹‚Éˆø‚«‘±‚«Ý‚¯‚é‚±‚Æ‚à‚Å‚«‚Ü‚·‚ªA‚»
-  ‚¤‚·‚é‹`–±‚Í‚ ‚è‚Ü‚¹‚ñB‚à‚µ—áŠO‚ðÝ‚¯‚½‚­‚È‚¯‚ê‚ÎA‚±‚Ì—áŠOð€‚ð
-  ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚©‚ç‚Ííœ‚µ‚Ä‚­‚¾‚³‚¢B)
+  (  ã‚ã‚‹ã„ã¯ "MFC Version 9.0" ã¨åŒã˜ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ãŒé©ç”¨ã•ã‚ŒãŸ
+  "MFC Version 9.0" ã®æ”¹å¤‰ã•ã‚ŒãŸãƒãƒ¼ã‚¸ãƒ§ãƒ³)ã¨ãƒªãƒ³ã‚¯ã—ã€
+  ãƒªãƒ³ã‚¯ã•ã‚ŒãŸä¸¡è€…ã‚’å«ã‚€çµåˆè‘—ä½œç‰©ã‚’é ’å¸ƒã™ã‚‹è¨±å¯ã‚’ä¸Žãˆã¾ã™ã€‚
+  ã‚ãªãŸã¯ "MFC" ä»¥å¤–ã§ä½¿ã‚ã‚Œã¦ã„ã‚‹ã™ã¹ã¦
+  ã®ã‚³ãƒ¼ãƒ‰ã«é–¢ã—ã¦ã¯å…¨é¢çš„ã«GNUä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾å¥‘ç´„æ›¸ã«å¾“ã‚ãªã‘ã‚Œã°
+  ãªã‚Šã¾ã›ã‚“ã€‚ã‚ãªãŸãŒã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ”¹å¤‰ã—ãŸãªã‚‰ã°ã€ã‚ãªãŸã¯ã“ã®ä¾‹å¤–
+  ã‚’ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®ãƒ•ã‚¡ã‚¤ãƒ«ã«å¼•ãç¶šãè¨­ã‘ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ãŒã€ã
+  ã†ã™ã‚‹ç¾©å‹™ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ã‚‚ã—ä¾‹å¤–ã‚’è¨­ã‘ãŸããªã‘ã‚Œã°ã€ã“ã®ä¾‹å¤–æ¡é …ã‚’
+  ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‹ã‚‰ã¯å‰Šé™¤ã—ã¦ãã ã•ã„ã€‚)
 */
 // ****************************************************************
 //	$Id: CPropEditUi_Eki.cpp
@@ -81,43 +81,43 @@ namespace ViewEki {
 
 
 	// ********************************
-	//@name ƒGƒ‰[ƒƒbƒZ[ƒW
+	//@name ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 	// ********************************
-	/// ‰w–¼‚ª’·‚·‚¬‚Ü‚·
+	/// é§…åãŒé•·ã™ãŽã¾ã™
 const TCHAR* const CPropEditUi_Eki::ERRMSG_EKIMEI_TOO_LONG = _T("Ekimei is too long(Limit is 58 characters).") ;
 
-/// •ªŠò‰wÝ’èON‚ÌŽž‚ÍA‘ÎÛ‰w‚ð‘I‘ð‚µ‚Ä‚­‚¾‚³‚¢
+/// åˆ†å²é§…è¨­å®šONã®æ™‚ã¯ã€å¯¾è±¡é§…ã‚’é¸æŠžã—ã¦ãã ã•ã„
 const TCHAR* const CPropEditUi_Eki::ERRMSG_BRUNCH_EKIINDEX = _T("To enable Brunch-Func need ekiindex.");
 
-/// •ªŠò‰wÝ’èON‚ÌŽž‚ÍA‰w‹K–Í‚ðŽå—v‰w‚É‚µ‚Ä‚­‚¾‚³‚¢
+/// åˆ†å²é§…è¨­å®šONã®æ™‚ã¯ã€é§…è¦æ¨¡ã‚’ä¸»è¦é§…ã«ã—ã¦ãã ã•ã„
 const TCHAR* const CPropEditUi_Eki::ERRMSG_BRUNCH_EKIKIBO = _T("To enable Brunch-Func need Syuyoueki.");
 
-/// •ªŠò‰wÝ’èON‚©‚Â‘ÎÛ‰w‚ªI“_•û‚Ìê‡‚ÍA‰wŽžŒ`Ž®‚ð‰º‚è’…Žž‚É‚µ‚Ä‚­‚¾‚³‚¢
+/// åˆ†å²é§…è¨­å®šONã‹ã¤å¯¾è±¡é§…ãŒçµ‚ç‚¹æ–¹ã®å ´åˆã¯ã€é§…æ™‚åˆ»å½¢å¼ã‚’ä¸‹ã‚Šç€æ™‚åˆ»ã«ã—ã¦ãã ã•ã„
 const TCHAR* const CPropEditUi_Eki::ERRMSG_BRUNCH_EKIJIKOKUKEISIKI_DOWNCHAKU = _T("To enable Brunch-Func need down-chakujikoku.");
 
-/// •ªŠò‰wÝ’èON‚©‚Â‘ÎÛ‰w‚ª‹N“_•û‚Ìê‡‚ÍA‰wŽžŒ`Ž®‚ðã‚è’…Žž‚É‚µ‚Ä‚­‚¾‚³‚¢
+/// åˆ†å²é§…è¨­å®šONã‹ã¤å¯¾è±¡é§…ãŒèµ·ç‚¹æ–¹ã®å ´åˆã¯ã€é§…æ™‚åˆ»å½¢å¼ã‚’ä¸Šã‚Šç€æ™‚åˆ»ã«ã—ã¦ãã ã•ã„
 const TCHAR* const CPropEditUi_Eki::ERRMSG_BRUNCH_EKIJIKOKUKEISIKI_UPCHAKU = _T("To enable Brunch-Func need up-chakujikoku.");
 
-/// ŠÂóüÝ’èON‚ÌŽž‚ÍA‹N“_‰w‚ð‘I‘ð‚µ‚Ä‚­‚¾‚³‚¢
+/// ç’°çŠ¶ç·šè¨­å®šONã®æ™‚ã¯ã€èµ·ç‚¹é§…ã‚’é¸æŠžã—ã¦ãã ã•ã„
 const TCHAR* const CPropEditUi_Eki::ERRMSG_LOOP_EKIINDEX = _T("To enable Loop-Func need ekiindex.");
 
-/// ŠÂóüÝ’èON‚ÌŽž‚ÍA‰w‹K–Í‚ðŽå—v‰w‚É‚µ‚Ä‚­‚¾‚³‚¢
+/// ç’°çŠ¶ç·šè¨­å®šONã®æ™‚ã¯ã€é§…è¦æ¨¡ã‚’ä¸»è¦é§…ã«ã—ã¦ãã ã•ã„
 const TCHAR* const CPropEditUi_Eki::ERRMSG_LOOP_EKIKIBO = _T("To enable Loop-Func need Syuyoueki.");
 
-/// ŠÂóüÝ’èON‚ÌŽž‚ÍA‰wŽžŒ`Ž®‚ð”­’…‚Ü‚½‚Í‰º‚è’…Žž‚É‚µ‚Ä‚­‚¾‚³‚¢
+/// ç’°çŠ¶ç·šè¨­å®šONã®æ™‚ã¯ã€é§…æ™‚åˆ»å½¢å¼ã‚’ç™ºç€ã¾ãŸã¯ä¸‹ã‚Šç€æ™‚åˆ»ã«ã—ã¦ãã ã•ã„
 const TCHAR* const CPropEditUi_Eki::ERRMSG_LOOP_EKIJIKOKUKEISIKI_HATSUCHAKU_DOWNCHAKU = _T("To enable Loop-Func need hatsu-chaku or down-chakujikoku.");
-// ‰w–¼‚ªŽw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ
+// é§…åãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“
 const TCHAR* const CPropEditUi_Eki::ERRMSG_EKIMEI_EMPTY = _T("EKIMEI is empty.");
 
-/// ‰w–¼—ªÌ‚ª’·‚·‚¬‚Ü‚·
+/// é§…åç•¥ç§°ãŒé•·ã™ãŽã¾ã™
 const TCHAR* const CPropEditUi_Eki::ERRMSG_EKIMEIJIKOKUHYOURYAKU_TOO_LONG = _T("EkimeiJikokuhyouRyaku is too long(Limit is 58 characters).");
 
-/// ‰w–¼—ªÌ(‰^—pˆê——)‚ª’·‚·‚¬‚Ü‚·
+/// é§…åç•¥ç§°(é‹ç”¨ä¸€è¦§)ãŒé•·ã™ãŽã¾ã™
 const TCHAR* const CPropEditUi_Eki::ERRMSG_EKIMEIDIAGRAMRYAKU_TOO_LONG = _T("EkimeiDiagramRyaku is too long(Limit is 58 characters).");
 
 
 //	// ================================
-//	//@name ‰º¿ŠÖ”
+//	//@name ä¸‹è«‹é–¢æ•°
 //	// ================================
 //
 void CPropEditUi_Eki::InitUiData(UIDATA * pUiData)
@@ -126,13 +126,13 @@ void CPropEditUi_Eki::InitUiData(UIDATA * pUiData)
 	pUiData->iEkijikokukeisiki = (int)pTarget->getEkijikokukeisiki();
 	EkiTrack2 aEkiTrack2;
 
-	aEkiTrack2.strTrackName = _T("1”Ôü");
+	aEkiTrack2.strTrackName = _T("1ç•ªç·š");
 	aEkiTrack2.strTrackRyakusyou = _T("1");
 	aEkiTrack2.strTrackNoboriRyakusyou = _T("");
 	aEkiTrack2.iMainTrack = 1;
 	pUiData->sEkiTrack2.push_back(aEkiTrack2);
 
-	aEkiTrack2.strTrackName = _T("2”Ôü");
+	aEkiTrack2.strTrackName = _T("2ç•ªç·š");
 	aEkiTrack2.strTrackRyakusyou = _T("2");
 	aEkiTrack2.strTrackNoboriRyakusyou = _T("");
 	aEkiTrack2.iMainTrack = 2;
@@ -143,14 +143,14 @@ void CPropEditUi_Eki::InitUiData(UIDATA * pUiData)
 
 }
 	// ================================
-	//	ƒI[ƒo[ƒ‰ƒCƒg‚Ì•K—v‚Èƒƒ\ƒbƒh1-Target‚ÉˆË‘¶‚·‚éˆ—
+	//	ã‚ªãƒ¼ãƒãƒ¼ãƒ©ã‚¤ãƒˆã®å¿…è¦ãªãƒ¡ã‚½ãƒƒãƒ‰1-Targetã«ä¾å­˜ã™ã‚‹å‡¦ç†
 	// ================================
 void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData ) 
 {
 	for ( int i = 0 ; i < m_pTarget->size() ; i ++ )
 	{
 		const CentDedEki* pTarget = m_pTarget->get( i ) ; 
-		// ‰w–¼ 
+		// é§…å 
 		if ( i == 0 )
 		{
 			pUiData->strEkimei = pTarget->getEkimei() ;
@@ -160,43 +160,43 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->strEkimei = _T("") ;
 		}
 
-		// ‰wŽžŒ`Ž® 
+		// é§…æ™‚åˆ»å½¢å¼ 
 		if ( i == 0 )
 		{
 			pUiData->iEkijikokukeisiki = (int)pTarget->getEkijikokukeisiki() ;
 		}
 		else if ( pUiData->iEkijikokukeisiki != (int)pTarget->getEkijikokukeisiki() )
 		{
-			pUiData->iEkijikokukeisiki = -1 ;	//-1 : •s’è
+			pUiData->iEkijikokukeisiki = -1 ;	//-1 : ä¸å®š
 		}
-		// ‰w‹K–Í 
+		// é§…è¦æ¨¡ 
 		if ( i == 0 )
 		{
 			pUiData->iEkikibo = (int)pTarget->getEkikibo() ;
 		}
 		else if ( pUiData->iEkikibo != (int)pTarget->getEkikibo() )
 		{
-			pUiData->iEkikibo = -1 ;	//	•s’è
+			pUiData->iEkikibo = -1 ;	//	ä¸å®š
 		}
-		// ƒ_ƒCƒ„ƒOƒ‰ƒ€—ñŽÔî•ñ•\Ž¦i‰º‚èj
+		// ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åˆ—è»Šæƒ…å ±è¡¨ç¤ºï¼ˆä¸‹ã‚Šï¼‰
 		if ( i == 0 )
 		{
 			pUiData->iDiagramRessyajouhouHyoujiKudari = (int)pTarget->getDiagramRessyajouhouHyoujiKudari() ;
 		}
 		else if ( pUiData->iDiagramRessyajouhouHyoujiKudari != (int)pTarget->getDiagramRessyajouhouHyoujiKudari() )
 		{
-			pUiData->iDiagramRessyajouhouHyoujiKudari = -1 ;	//-1: •s’è
+			pUiData->iDiagramRessyajouhouHyoujiKudari = -1 ;	//-1: ä¸å®š
 		}
-		// ƒ_ƒCƒ„ƒOƒ‰ƒ€—ñŽÔî•ñ•\Ž¦iã‚èj 
+		// ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åˆ—è»Šæƒ…å ±è¡¨ç¤ºï¼ˆä¸Šã‚Šï¼‰ 
 		if ( i == 0 )
 		{
 			pUiData->iDiagramRessyajouhouHyoujiNobori = (int)pTarget->getDiagramRessyajouhouHyoujiNobori() ;
 		}
 		else if ( pUiData->iDiagramRessyajouhouHyoujiNobori != (int)pTarget->getDiagramRessyajouhouHyoujiNobori() )
 		{
-			pUiData->iDiagramRessyajouhouHyoujiNobori = -1 ;	// •s’è
+			pUiData->iDiagramRessyajouhouHyoujiNobori = -1 ;	// ä¸å®š
 		}
-		//•ªŠò‰wÝ’è,•ªŠò‰wÝ’è‚Ì—LŒø–³Œø
+		//åˆ†å²é§…è¨­å®š,åˆ†å²é§…è¨­å®šã®æœ‰åŠ¹ç„¡åŠ¹
 		if (m_bBrunchFunctionEnable)
 		{
 			if (pTarget->getLoopOriginEkiIndex() >= 0)
@@ -227,11 +227,11 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 		else
 		{
 			pUiData->bBrunchFunctionEnable = false;
-			pUiData->bBrunch = false;	//-1: •s’è
-			pUiData->iBrunchCoreEkiIndex = -1;	//-1: •s’è
+			pUiData->bBrunch = false;	//-1: ä¸å®š
+			pUiData->iBrunchCoreEkiIndex = -1;	//-1: ä¸å®š
 			pUiData->bBrunchOpposite = false;
 		}
-		//ŠÂóüÝ’è,ŠÂóüÝ’è‚Ì—LŒø–³Œø
+		//ç’°çŠ¶ç·šè¨­å®š,ç’°çŠ¶ç·šè¨­å®šã®æœ‰åŠ¹ç„¡åŠ¹
 		if (m_bLoopFunctionEnable)
 		{
 			if (pTarget->getBrunchCoreEkiIndex() >= 0)
@@ -262,13 +262,13 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 		else
 		{
 			pUiData->bLoopFunctionEnable = false;
-			pUiData->bLoop = false;	//-1: •s’è
-			pUiData->iLoopOriginEkiIndex = -1;	//0: •s’è
+			pUiData->bLoop = false;	//-1: ä¸å®š
+			pUiData->iLoopOriginEkiIndex = -1;	//0: ä¸å®š
 			pUiData->bLoopOpposite = false;
 		}
 
 
-		//‰º‚èŽž•\ƒrƒ…[”Ôü•\Ž¦
+		//ä¸‹ã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ç•ªç·šè¡¨ç¤º
 		if (i == 0)
 		{
 			if ((int)pTarget->getEkijikokukeisiki() == 1 ||
@@ -290,7 +290,7 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->iJikokuhyouTrackDisplayKudari = 0;
 			pUiData->bJikokuhyouTrackDisplayKudariEnable = false;
 		}
-		//ã‚èŽž•\ƒrƒ…[”Ôü•\Ž¦
+		//ä¸Šã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ç•ªç·šè¡¨ç¤º
 		if (i == 0)
 		{
 			if ((int)pTarget->getEkijikokukeisiki() == 1 ||
@@ -314,7 +314,7 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 		}
 
 
-		//ƒ_ƒCƒ„ƒOƒ‰ƒ€ƒrƒ…[”Ôü•\Ž¦
+		//ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ãƒ“ãƒ¥ãƒ¼ç•ªç·šè¡¨ç¤º
 		if (i == 0)
 		{
 			if (((int)pTarget->getEkijikokukeisiki() == 1 ||
@@ -337,13 +337,13 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->bDiagramTrackDisplayEnable = false;
 		}
 
-		//Ýü•\È—ªÝ’è
+		//åœ¨ç·šè¡¨çœç•¥è¨­å®š
 		if (i == 0 && m_pTarget->size() == 1)
 		{
 			pUiData->bDiagramTrackOmit = pTarget->getDiagramTrackOmit();
 		}
 
-		// ‰w–¼—ªÌ
+		// é§…åç•¥ç§°
 		if (i == 0)
 		{
 			pUiData->strEkimeiJikokuhyouRyaku = pTarget->getEkimeiJikokuhyouRyaku(false);
@@ -353,7 +353,7 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->strEkimeiJikokuhyouRyaku = _T("");
 		}
 
-		// ‰w–¼—ªÌ(‰^—pˆê——)
+		// é§…åç•¥ç§°(é‹ç”¨ä¸€è¦§)
 		if (i == 0)
 		{
 			pUiData->strEkimeiDiagramRyaku = pTarget->getEkimeiDiagramRyaku(false);
@@ -374,17 +374,17 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 				aEkiTrack2.strTrackName = aCentDedEkiTrack2.getTrackName();
 				aEkiTrack2.strTrackRyakusyou = aCentDedEkiTrack2.getTrackRyakusyou();
 				aEkiTrack2.strTrackNoboriRyakusyou = aCentDedEkiTrack2.getTrackNoboriRyakusyou();
-				//Ver2.0@—ñŽÔ‘¤Žå–{üÝ’è“P”p‚É‚æ‚èA+1ˆ—‚ðíœ
+				//Ver2.0ã€€åˆ—è»Šå´ä¸»æœ¬ç·šè¨­å®šæ’¤å»ƒã«ã‚ˆã‚Šã€+1å‡¦ç†ã‚’å‰Šé™¤
 				if (pTarget->getDownMain() == idx)
 				{
 					if (pTarget->getUpMain() == idx)
 					{
-						//ã‰ºŽå–{ü
+						//ä¸Šä¸‹ä¸»æœ¬ç·š
 						aEkiTrack2.iMainTrack = 3;
 					}
 					else
 					{
-						//‰º‚èŽå–{ü
+						//ä¸‹ã‚Šä¸»æœ¬ç·š
 						aEkiTrack2.iMainTrack = 1;
 					}
 				}
@@ -392,12 +392,12 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 				{
 					if (pTarget->getUpMain() == idx)
 					{
-						//ã‚èŽå–{ü");
+						//ä¸Šã‚Šä¸»æœ¬ç·š");
 						aEkiTrack2.iMainTrack = 2;
 					}
 					else
 					{
-						//•›–{ü/‘¤ü");
+						//å‰¯æœ¬ç·š/å´ç·š");
 						aEkiTrack2.iMainTrack = 0;
 					}
 				}
@@ -418,7 +418,7 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 			}
 		}
 
-		// ŽŸ‰w‚Ü‚Å‚Ì‹——£ 
+		// æ¬¡é§…ã¾ã§ã®è·é›¢ 
 		if (i == 0)
 		{
 			pUiData->iNextEkiDistance = pTarget->getNextEkiDistance();
@@ -428,7 +428,7 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->iNextEkiDistance = 0;
 		}
 
-		//”Ôü•\Ž¦È—ªÝ’è
+		//ç•ªç·šè¡¨ç¤ºçœç•¥è¨­å®š
 		if (i == 0)
 		{
 			if ((int)pTarget->getEkijikokukeisiki() == 0 ||
@@ -450,7 +450,7 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->bJikokuhyouTrackOmitEnable = false;
 		}
 
-		// ì‹Æ•\Ž¦—“Ý’è
+		// ä½œæ¥­è¡¨ç¤ºæ¬„è¨­å®š
 		if (i == 0)
 		{
 			if (pTarget->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu)
@@ -485,7 +485,7 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->bJikokuhyouOperationTerminalDownAfterUpBefore = false;
 		}
 
-		//‰º‚èŽž•\ƒrƒ…[’…Žž•\Ž¦
+		//ä¸‹ã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ç€æ™‚åˆ»è¡¨ç¤º
 		if (i == 0)
 		{
 			if (pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
@@ -507,7 +507,7 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->bJikokuhyouChakuJikokuDisplayKudariEnable = false;
 			pUiData->bJikokuhyouChakuJikokuDisplayKudari = false;
 		}
-		//ã‚èŽž•\ƒrƒ…[’…Žž•\Ž¦
+		//ä¸Šã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ç€æ™‚åˆ»è¡¨ç¤º
 		if (i == 0)
 		{
 			if (pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
@@ -530,7 +530,7 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->bJikokuhyouChakuJikokuDisplayNobori = false;
 		}
 
-		//‰º‚èŽž•\ƒrƒ…[”­Žž•\Ž¦
+		//ä¸‹ã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ç™ºæ™‚åˆ»è¡¨ç¤º
 		if (i == 0)
 		{
 			if (pTarget->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku)
@@ -551,7 +551,7 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->bJikokuhyouHatsuJikokuDisplayKudari = false;
 		}
 
-		//ã‚èŽž•\ƒrƒ…[”­Žž•\Ž¦
+		//ä¸Šã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ç™ºæ™‚åˆ»è¡¨ç¤º
 		if (i == 0)
 		{
 			if (pTarget->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku)
@@ -572,7 +572,7 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->bJikokuhyouHatsuJikokuDisplayNobori = false;
 		}
 
-		//‰º‚èŽž•\ƒrƒ…[Ží•Ê•ÏX•\Ž¦
+		//ä¸‹ã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ç¨®åˆ¥å¤‰æ›´è¡¨ç¤º
 		if (i == 0)
 		{
 			if (pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
@@ -610,7 +610,7 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->iJikokuhyouRessyaSyubetsuDisplayKudari = 0;
 			pUiData->iJikokuhyouRessyameiDisplayKudari = 0;
 		}
-		//ã‚èŽž•\ƒrƒ…[Ží•Ê•ÏX•\Ž¦
+		//ä¸Šã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ç¨®åˆ¥å¤‰æ›´è¡¨ç¤º
 		if (i == 0)
 		{
 			if (pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
@@ -648,17 +648,17 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->iJikokuhyouRessyaSyubetsuDisplayNobori = 0;
 			pUiData->iJikokuhyouRessyameiDisplayNobori = 0;
 		}
-		// ƒ_ƒCƒ„ƒOƒ‰ƒ€”wŒiF
+		// ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ èƒŒæ™¯è‰²
 		if (i == 0)
 		{
 			pUiData->iDiagramColorNextEki = pTarget->getDiagramColorNextEki();
 		}
 		else if (pUiData->iDiagramColorNextEki != pTarget->getDiagramColorNextEki())
 		{
-			pUiData->iDiagramColorNextEki = -1;	// •s’è
+			pUiData->iDiagramColorNextEki = -1;	// ä¸å®š
 		}
 
-		// ” ƒ_ƒCƒ„‚Å•\Ž¦‚·‚é‚©”Û‚© 
+		// ç®±ãƒ€ã‚¤ãƒ¤ã§è¡¨ç¤ºã™ã‚‹ã‹å¦ã‹ 
 		if (i == 0)
 		{
 			if (pTarget->getBrunchCoreEkiIndex() == -1)
@@ -678,7 +678,7 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->bOperationTableDisplayJikoku = false;
 		}
 
-		//‰º‚èƒJƒXƒ^ƒ}ƒCƒYŽž•\ƒrƒ…[‚Ì˜HüŠOE‘O—ñŽÔŽn”­‰w•\Ž¦
+		//ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã®è·¯ç·šå¤–ãƒ»å‰åˆ—è»Šå§‹ç™ºé§…è¡¨ç¤º
 		if (i == 0)
 		{
 			if (pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
@@ -700,7 +700,7 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->bJikokuhyouOuterSihatsuDisplayKudariEnable = false;
 			pUiData->bJikokuhyouOuterSihatsuDisplayKudari = false;
 		}
-		//‰º‚èƒJƒXƒ^ƒ}ƒCƒYŽž•\ƒrƒ…[‚Ì˜HüŠOEŽŸ—ñŽÔI’…‰w•\Ž¦
+		//ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã®è·¯ç·šå¤–ãƒ»æ¬¡åˆ—è»Šçµ‚ç€é§…è¡¨ç¤º
 		if (i == 0)
 		{
 			if (pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
@@ -722,7 +722,7 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->bJikokuhyouOuterShuchakuDisplayKudariEnable = false;
 			pUiData->bJikokuhyouOuterShuchakuDisplayKudari = false;
 		}
-		//ã‚èƒJƒXƒ^ƒ}ƒCƒYŽž•\ƒrƒ…[˜HüŠOE‘O—ñŽÔŽn”­‰w•\Ž¦
+		//ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼è·¯ç·šå¤–ãƒ»å‰åˆ—è»Šå§‹ç™ºé§…è¡¨ç¤º
 		if (i == 0)
 		{
 			if (pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
@@ -744,7 +744,7 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->bJikokuhyouOuterSihatsuDisplayNoboriEnable = false;
 			pUiData->bJikokuhyouOuterSihatsuDisplayNobori = false;
 		}
-		//ã‚èƒJƒXƒ^ƒ}ƒCƒYŽž•\ƒrƒ…[˜HüŠOEŽŸ—ñŽÔI’…‰w•\Ž¦
+		//ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼è·¯ç·šå¤–ãƒ»æ¬¡åˆ—è»Šçµ‚ç€é§…è¡¨ç¤º
 		if (i == 0)
 		{
 			if (pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
@@ -768,7 +768,7 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 		}
 	}
 
-	// [‰wŽž‚ð‰wŽžŒ`Ž®‚Å³‹K‰»]‚ÌÝ’è
+	// [é§…æ™‚åˆ»ã‚’é§…æ™‚åˆ»å½¢å¼ã§æ­£è¦åŒ–]ã®è¨­å®š
 	pUiData->bAdjustByEkijikokukeisiki = *m_pbAdjustByEkijikokukeisiki ;
 }
 	
@@ -777,12 +777,12 @@ void CPropEditUi_Eki::AdjustUiData(
 		const UIDATA* pUiDataPrev , 
 		bool bStartEdit )
 {
-	/* ‰w–¼ */
+	/* é§…å */
 	if ( bStartEdit || pUiDataPrev->strEkimei != pUiData->strEkimei)
 	{
-		// pUiData->ƒƒ“ƒo[–¼ ‚Ì³‹K‰»‚ðs‚¤ƒR[ƒhB
+		// pUiData->ãƒ¡ãƒ³ãƒãƒ¼å ã®æ­£è¦åŒ–ã‚’è¡Œã†ã‚³ãƒ¼ãƒ‰ã€‚
 	}
-	/* ‰wŽžŒ`Ž® */
+	/* é§…æ™‚åˆ»å½¢å¼ */
 	if ( bStartEdit || pUiDataPrev->iEkijikokukeisiki != pUiData->iEkijikokukeisiki)
 	{
 		if (pUiData->iEkikibo == 1 && /*!pUiData->bBrunch &&*/
@@ -989,10 +989,10 @@ void CPropEditUi_Eki::AdjustUiData(
 			pUiData->bJikokuhyouOuterShuchakuDisplayNoboriEnable = false;
 		}
 	}
-	/* ‰w‹K–Í */
+	/* é§…è¦æ¨¡ */
 	if ( bStartEdit || pUiDataPrev->iEkikibo != pUiData->iEkikibo)
 	{
-		// pUiData->ƒƒ“ƒo[–¼ ‚Ì³‹K‰»‚ðs‚¤ƒR[ƒhB
+		// pUiData->ãƒ¡ãƒ³ãƒãƒ¼å ã®æ­£è¦åŒ–ã‚’è¡Œã†ã‚³ãƒ¼ãƒ‰ã€‚
 		if (pUiData->iEkikibo == 1 &&/* !pUiData->bBrunch &&*/
 			m_pTarget->size() == 1 &&
 			(pUiData->iEkijikokukeisiki == 1 ||
@@ -1007,25 +1007,25 @@ void CPropEditUi_Eki::AdjustUiData(
 		}
 	}
 
-	/* ƒ_ƒCƒ„ƒOƒ‰ƒ€—ñŽÔî•ñ•\Ž¦i‰º‚èj */
+	/* ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åˆ—è»Šæƒ…å ±è¡¨ç¤ºï¼ˆä¸‹ã‚Šï¼‰ */
 	if ( bStartEdit || pUiDataPrev->iDiagramRessyajouhouHyoujiKudari != pUiData->iDiagramRessyajouhouHyoujiKudari)
 	{
-		// pUiData->ƒƒ“ƒo[–¼ ‚Ì³‹K‰»‚ðs‚¤ƒR[ƒhB
+		// pUiData->ãƒ¡ãƒ³ãƒãƒ¼å ã®æ­£è¦åŒ–ã‚’è¡Œã†ã‚³ãƒ¼ãƒ‰ã€‚
 	}
 
-	/* ƒ_ƒCƒ„ƒOƒ‰ƒ€—ñŽÔî•ñ•\Ž¦iã‚èj */
+	/* ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åˆ—è»Šæƒ…å ±è¡¨ç¤ºï¼ˆä¸Šã‚Šï¼‰ */
 	if ( bStartEdit || pUiDataPrev->iDiagramRessyajouhouHyoujiNobori != pUiData->iDiagramRessyajouhouHyoujiNobori)
 	{
-		// pUiData->ƒƒ“ƒo[–¼ ‚Ì³‹K‰»‚ðs‚¤ƒR[ƒhB
+		// pUiData->ãƒ¡ãƒ³ãƒãƒ¼å ã®æ­£è¦åŒ–ã‚’è¡Œã†ã‚³ãƒ¼ãƒ‰ã€‚
 	}
 
-	/*	[‰wŽž‚ð‰wŽžŒ`Ž®‚Å³‹K‰»]‚ÌÝ’è‚Å‚·B*/
+	/*	[é§…æ™‚åˆ»ã‚’é§…æ™‚åˆ»å½¢å¼ã§æ­£è¦åŒ–]ã®è¨­å®šã§ã™ã€‚*/
 	if ( bStartEdit || pUiDataPrev->bAdjustByEkijikokukeisiki != pUiData->bAdjustByEkijikokukeisiki)
 	{
-		// pUiData->ƒƒ“ƒo[–¼ ‚Ì³‹K‰»‚ðs‚¤ƒR[ƒhB
+		// pUiData->ãƒ¡ãƒ³ãƒãƒ¼å ã®æ­£è¦åŒ–ã‚’è¡Œã†ã‚³ãƒ¼ãƒ‰ã€‚
 	}
 
-	//•ªŠò‰wÝ’è
+	//åˆ†å²é§…è¨­å®š
 	if (bStartEdit || pUiDataPrev->bBrunch != pUiData->bBrunch)
 	{
 		//if (pUiData->iEkikibo == 1 && !pUiData->bBrunch &&
@@ -1043,8 +1043,8 @@ void CPropEditUi_Eki::AdjustUiData(
 
 		if (pUiData->bBrunch)
 		{
-			pUiData->iEkikibo = 1;//Žå—v‰w‚É‚·‚éB
-			//‰wŽžŒ`Ž®‚ªã‚è’…ˆÈŠO‚Ìê‡A’l‚ð‰º‚è’…‚ÉB
+			pUiData->iEkikibo = 1;//ä¸»è¦é§…ã«ã™ã‚‹ã€‚
+			//é§…æ™‚åˆ»å½¢å¼ãŒä¸Šã‚Šç€ä»¥å¤–ã®å ´åˆã€å€¤ã‚’ä¸‹ã‚Šç€ã«ã€‚
 			if (pUiData->iEkijikokukeisiki != 3 )
 			{
 				pUiData->iEkijikokukeisiki = 2;
@@ -1062,18 +1062,18 @@ void CPropEditUi_Eki::AdjustUiData(
 			}
 		}
 	}
-	//•ªŠò‰wÝ’èŠîŠ²‰wIndex
+	//åˆ†å²é§…è¨­å®šåŸºå¹¹é§…Index
 	if (bStartEdit || pUiDataPrev->iBrunchCoreEkiIndex != pUiData->iBrunchCoreEkiIndex)
 	{
 
 	}
-	//ŠÂóüÝ’è
+	//ç’°çŠ¶ç·šè¨­å®š
 	if (bStartEdit || pUiDataPrev->bLoop != pUiData->bLoop)
 	{
 		if (pUiData->bLoop)
 		{
-			pUiData->iEkikibo = 1;//Žå—v‰w‚É‚·‚éB
-								  //‰wŽžŒ`Ž®‚ª‰º‚è’…ˆÈŠO‚Ìê‡A’l‚ð”­’…‚ÉB
+			pUiData->iEkikibo = 1;//ä¸»è¦é§…ã«ã™ã‚‹ã€‚
+								  //é§…æ™‚åˆ»å½¢å¼ãŒä¸‹ã‚Šç€ä»¥å¤–ã®å ´åˆã€å€¤ã‚’ç™ºç€ã«ã€‚
 			if (pUiData->iEkijikokukeisiki != 2)
 			{
 				pUiData->iEkijikokukeisiki = 1;
@@ -1092,27 +1092,27 @@ void CPropEditUi_Eki::AdjustUiData(
 
 		}
 	}
-	//ŠÂóüIndex
+	//ç’°çŠ¶ç·šIndex
 	if (bStartEdit || pUiDataPrev->iLoopOriginEkiIndex != pUiData->iLoopOriginEkiIndex)
 	{
 
 	}
-	//‰º‚èŽž•\ƒrƒ…[”Ôü•\Ž¦
+	//ä¸‹ã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ç•ªç·šè¡¨ç¤º
 	if (bStartEdit || pUiDataPrev->iJikokuhyouTrackDisplayKudari != pUiData->iJikokuhyouTrackDisplayKudari)
 	{
 	}
-	//ã‚èŽž•\ƒrƒ…[”Ôü•\Ž¦
+	//ä¸Šã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ç•ªç·šè¡¨ç¤º
 	if (bStartEdit || pUiDataPrev->iJikokuhyouTrackDisplayNobori != pUiData->iJikokuhyouTrackDisplayNobori)
 	{
 	}
-	//ƒ_ƒCƒ„ƒOƒ‰ƒ€ƒrƒ…[”Ôü•\Ž¦
+	//ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ãƒ“ãƒ¥ãƒ¼ç•ªç·šè¡¨ç¤º
 	if (bStartEdit || pUiDataPrev->bDiagramTrackDisplayEnable != pUiData->bDiagramTrackDisplayEnable)
 	{
 	}
-	//‰º‚èŽž•\ƒrƒ…[’…Žž•\Ž¦
+	//ä¸‹ã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ç€æ™‚åˆ»è¡¨ç¤º
 	/**
-		’…Žž•\Ž¦‚ªfalse‚É‚È‚Á‚½‚Æ‚«A”­ŽžÝ’èŽ©‘Ì‚ªfalse‚à‚µ‚­‚ÍA”­Žž•\Ž¦‚ªfalse‚Ìê‡‚ÍA’…Žž•\Ž¦‚ðtrue‚É–ß‚µ‚Ü‚·B
-		(’…Žž‚©”­Žž‚Ì‚¢‚¸‚ê‚©‚ªtrue‚Å‚ ‚é•K—v‚ª‚ ‚è‚Ü‚·)
+		ç€æ™‚åˆ»è¡¨ç¤ºãŒfalseã«ãªã£ãŸã¨ãã€ç™ºæ™‚åˆ»è¨­å®šè‡ªä½“ãŒfalseã‚‚ã—ãã¯ã€ç™ºæ™‚åˆ»è¡¨ç¤ºãŒfalseã®å ´åˆã¯ã€ç€æ™‚åˆ»è¡¨ç¤ºã‚’trueã«æˆ»ã—ã¾ã™ã€‚
+		(ç€æ™‚åˆ»ã‹ç™ºæ™‚åˆ»ã®ã„ãšã‚Œã‹ãŒtrueã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™)
 	*/
 	if (bStartEdit ||(pUiDataPrev->bJikokuhyouChakuJikokuDisplayKudari != pUiData->bJikokuhyouChakuJikokuDisplayKudari &&
 		!pUiData->bJikokuhyouChakuJikokuDisplayKudari))
@@ -1123,7 +1123,7 @@ void CPropEditUi_Eki::AdjustUiData(
 			pUiData->bJikokuhyouChakuJikokuDisplayKudari = true;
 		}
 	}
-	//‰º‚èŽž•\ƒrƒ…[”­Žž•\Ž¦
+	//ä¸‹ã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ç™ºæ™‚åˆ»è¡¨ç¤º
 	if (bStartEdit || (pUiDataPrev->bJikokuhyouHatsuJikokuDisplayKudari != pUiData->bJikokuhyouHatsuJikokuDisplayKudari &&
 		!pUiData->bJikokuhyouHatsuJikokuDisplayKudari))
 	{
@@ -1133,7 +1133,7 @@ void CPropEditUi_Eki::AdjustUiData(
 			pUiData->bJikokuhyouHatsuJikokuDisplayKudari = true;
 		}
 	}
-	//ã‚èŽž•\ƒrƒ…[’…Žž•\Ž¦
+	//ä¸Šã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ç€æ™‚åˆ»è¡¨ç¤º
 	if (bStartEdit || (pUiDataPrev->bJikokuhyouChakuJikokuDisplayNobori != pUiData->bJikokuhyouChakuJikokuDisplayNobori &&
 		!pUiData->bJikokuhyouChakuJikokuDisplayNobori))
 	{
@@ -1143,7 +1143,7 @@ void CPropEditUi_Eki::AdjustUiData(
 			pUiData->bJikokuhyouChakuJikokuDisplayNobori = true;
 		}
 	}
-	//ã‚èŽž•\ƒrƒ…[”­Žž•\Ž¦
+	//ä¸Šã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ç™ºæ™‚åˆ»è¡¨ç¤º
 	if (bStartEdit || (pUiDataPrev->bJikokuhyouHatsuJikokuDisplayNobori != pUiData->bJikokuhyouHatsuJikokuDisplayNobori &&
 		!pUiData->bJikokuhyouHatsuJikokuDisplayNobori))
 	{
@@ -1154,7 +1154,7 @@ void CPropEditUi_Eki::AdjustUiData(
 		}
 	}
 
-	//” ƒ_ƒCƒ„•\Ž¦Ý’è
+	//ç®±ãƒ€ã‚¤ãƒ¤è¡¨ç¤ºè¨­å®š
 	if (pUiData->bBrunch)
 	{
 		pUiData->bOperationTableDisplayJikoku = false;
@@ -1167,7 +1167,7 @@ int CPropEditUi_Eki::CheckUiData(
 		const UIDATA* pUiDataStartEdit ) 
 {
 	int iRv = 0 ; 
-	/* ‰w–¼ */
+	/* é§…å */
 	if ( iRv >= 0 )
 	{
 		if ( bNewItem || pUiDataStartEdit->strEkimei != pUiData->strEkimei)
@@ -1176,57 +1176,57 @@ int CPropEditUi_Eki::CheckUiData(
 			{
 				ShowError( ERRMSG_EKIMEI_TOO_LONG ) ;
 				SetFocus( offsetof( UIDATA , strEkimei )) ;
-				iRv = -1 ;	//	‰w–¼‚ª’·‚·‚¬‚Ü‚·B
+				iRv = -1 ;	//	é§…åãŒé•·ã™ãŽã¾ã™ã€‚
 			}
 			else if (pUiData->strEkimei.length() == 0)
 			{
-				iRv = -1;      //  ‰w–¼‚ªŽw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ
+				iRv = -1;      //  é§…åãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“
 				ShowError(ERRMSG_EKIMEI_EMPTY);
 				SetFocus(offsetof(UIDATA, strEkimei));
 			}
 		}
 	}
-	/* ‰wŽžŒ`Ž® */
+	/* é§…æ™‚åˆ»å½¢å¼ */
 	if ( iRv >= 0 )
 	{
 		if ( bNewItem || pUiDataStartEdit->iEkijikokukeisiki != pUiData->iEkijikokukeisiki)
 		{
-			// pUiData->ƒƒ“ƒo[–¼ ‚ÌƒGƒ‰[ƒ`ƒFƒbƒN‚ðs‚¤ƒR[ƒhB
+			// pUiData->ãƒ¡ãƒ³ãƒãƒ¼å ã®ã‚¨ãƒ©ãƒ¼ãƒã‚§ãƒƒã‚¯ã‚’è¡Œã†ã‚³ãƒ¼ãƒ‰ã€‚
 		}
 	}
-	/* ‰w‹K–Í */
+	/* é§…è¦æ¨¡ */
 	if ( iRv >= 0 )
 	{
 		if ( bNewItem || pUiDataStartEdit->iEkikibo != pUiData->iEkikibo)
 		{
-			// pUiData->ƒƒ“ƒo[–¼ ‚ÌƒGƒ‰[ƒ`ƒFƒbƒN‚ðs‚¤ƒR[ƒhB
+			// pUiData->ãƒ¡ãƒ³ãƒãƒ¼å ã®ã‚¨ãƒ©ãƒ¼ãƒã‚§ãƒƒã‚¯ã‚’è¡Œã†ã‚³ãƒ¼ãƒ‰ã€‚
 		}
 	}
-	/* ƒ_ƒCƒ„ƒOƒ‰ƒ€—ñŽÔî•ñ•\Ž¦i‰º‚èj */
+	/* ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åˆ—è»Šæƒ…å ±è¡¨ç¤ºï¼ˆä¸‹ã‚Šï¼‰ */
 	if ( iRv >= 0 )
 	{
 		if ( bNewItem || pUiDataStartEdit->iDiagramRessyajouhouHyoujiKudari != pUiData->iDiagramRessyajouhouHyoujiKudari)
 		{
-			// pUiData->ƒƒ“ƒo[–¼ ‚ÌƒGƒ‰[ƒ`ƒFƒbƒN‚ðs‚¤ƒR[ƒhB
+			// pUiData->ãƒ¡ãƒ³ãƒãƒ¼å ã®ã‚¨ãƒ©ãƒ¼ãƒã‚§ãƒƒã‚¯ã‚’è¡Œã†ã‚³ãƒ¼ãƒ‰ã€‚
 		}
 	}
-	/* ƒ_ƒCƒ„ƒOƒ‰ƒ€—ñŽÔî•ñ•\Ž¦iã‚èj */
+	/* ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åˆ—è»Šæƒ…å ±è¡¨ç¤ºï¼ˆä¸Šã‚Šï¼‰ */
 	if ( iRv >= 0 )
 	{
 		if ( bNewItem || pUiDataStartEdit->iDiagramRessyajouhouHyoujiNobori != pUiData->iDiagramRessyajouhouHyoujiNobori)
 		{
-			// pUiData->ƒƒ“ƒo[–¼ ‚ÌƒGƒ‰[ƒ`ƒFƒbƒN‚ðs‚¤ƒR[ƒhB
+			// pUiData->ãƒ¡ãƒ³ãƒãƒ¼å ã®ã‚¨ãƒ©ãƒ¼ãƒã‚§ãƒƒã‚¯ã‚’è¡Œã†ã‚³ãƒ¼ãƒ‰ã€‚
 		}
 	}
-	/*	[‰wŽž‚ð‰wŽžŒ`Ž®‚Å³‹K‰»]‚ÌÝ’è‚Å‚·B*/
+	/*	[é§…æ™‚åˆ»ã‚’é§…æ™‚åˆ»å½¢å¼ã§æ­£è¦åŒ–]ã®è¨­å®šã§ã™ã€‚*/
 	if ( iRv >= 0 )
 	{
 		if ( bNewItem || pUiDataStartEdit->bAdjustByEkijikokukeisiki != pUiData->bAdjustByEkijikokukeisiki)
 		{
-			// pUiData->ƒƒ“ƒo[–¼ ‚ÌƒGƒ‰[ƒ`ƒFƒbƒN‚ðs‚¤ƒR[ƒhB
+			// pUiData->ãƒ¡ãƒ³ãƒãƒ¼å ã®ã‚¨ãƒ©ãƒ¼ãƒã‚§ãƒƒã‚¯ã‚’è¡Œã†ã‚³ãƒ¼ãƒ‰ã€‚
 		}
 	}
-	//•ªŠò‰wÝ’è
+	//åˆ†å²é§…è¨­å®š
 	if (iRv >= 0 && m_pTarget->size() == 1)
 	{
 		if (pUiData->bBrunch)
@@ -1235,25 +1235,25 @@ int CPropEditUi_Eki::CheckUiData(
 			{
 				ShowError(ERRMSG_BRUNCH_EKIINDEX);
 				SetFocus(offsetof(UIDATA, iBrunchCoreEkiIndex));
-				iRv = -2;//•ªŠò‰wÝ’èON‚ÌŽž‚ÍAŠîŠ²‰w‚ðŽw’è‚µ‚Ä‚­‚¾‚³‚¢B
+				iRv = -2;//åˆ†å²é§…è¨­å®šONã®æ™‚ã¯ã€åŸºå¹¹é§…ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 			}
-			//“–‰w‚Æ‘ÎÛ‰w‚ÌƒCƒ“ƒfƒNƒX‚ð”äŠrA‘å¬ŠÖŒW‚É‚æ‚Á‚ÄA‰wŽžˆµ‚¢‚Ì”»’è‚ðs‚¤
+			//å½“é§…ã¨å¯¾è±¡é§…ã®ã‚¤ãƒ³ãƒ‡ã‚¯ã‚¹ã‚’æ¯”è¼ƒã€å¤§å°é–¢ä¿‚ã«ã‚ˆã£ã¦ã€é§…æ™‚åˆ»æ‰±ã„ã®åˆ¤å®šã‚’è¡Œã†
 			else if (m_iEkiIndex > pUiData->iBrunchCoreEkiIndex)
 			{
-				if (pUiData->iEkijikokukeisiki != 3)//3=ã‚è’…Žž
+				if (pUiData->iEkijikokukeisiki != 3)//3=ä¸Šã‚Šç€æ™‚åˆ»
 				{
 					ShowError(ERRMSG_BRUNCH_EKIJIKOKUKEISIKI_UPCHAKU);
 					SetFocus(offsetof(UIDATA, iEkijikokukeisiki));
-					iRv = -3;//•ªŠò‰wÝ’èON‚ÌŽž‚ÍA‰wŽžŒ`Ž®‚ðã‚è’…‚É‚µ‚Ä‚­‚¾‚³‚¢B
+					iRv = -3;//åˆ†å²é§…è¨­å®šONã®æ™‚ã¯ã€é§…æ™‚åˆ»å½¢å¼ã‚’ä¸Šã‚Šç€ã«ã—ã¦ãã ã•ã„ã€‚
 				}
 			}
 			else if (m_iEkiIndex < pUiData->iBrunchCoreEkiIndex)
 			{
-				if (pUiData->iEkijikokukeisiki != 2)//2=‰º‚è’…Žž
+				if (pUiData->iEkijikokukeisiki != 2)//2=ä¸‹ã‚Šç€æ™‚åˆ»
 				{
 					ShowError(ERRMSG_BRUNCH_EKIJIKOKUKEISIKI_DOWNCHAKU);
 					SetFocus(offsetof(UIDATA, iEkijikokukeisiki));
-					iRv = -4;//•ªŠò‰wÝ’èON‚ÌŽž‚ÍA‰wŽžŒ`Ž®‚ð‰º‚è’…‚É‚µ‚Ä‚­‚¾‚³‚¢B
+					iRv = -4;//åˆ†å²é§…è¨­å®šONã®æ™‚ã¯ã€é§…æ™‚åˆ»å½¢å¼ã‚’ä¸‹ã‚Šç€ã«ã—ã¦ãã ã•ã„ã€‚
 				}
 			}
 
@@ -1261,11 +1261,11 @@ int CPropEditUi_Eki::CheckUiData(
 			{
 				ShowError(ERRMSG_BRUNCH_EKIKIBO);
 				SetFocus(offsetof(UIDATA, iEkikibo));
-				iRv = -5;//•ªŠò‰wÝ’èON‚ÌŽž‚ÍA‰w‹K–Í‚ÍŽå—v‰w‚É‚µ‚Ä‚­‚¾‚³‚¢
+				iRv = -5;//åˆ†å²é§…è¨­å®šONã®æ™‚ã¯ã€é§…è¦æ¨¡ã¯ä¸»è¦é§…ã«ã—ã¦ãã ã•ã„
 			}
 		}
 	}
-	//ŠÂóüÝ’è
+	//ç’°çŠ¶ç·šè¨­å®š
 	if (iRv >= 0 && m_pTarget->size() == 1)
 	{
 		if (pUiData->bLoop)
@@ -1274,27 +1274,27 @@ int CPropEditUi_Eki::CheckUiData(
 			{
 				ShowError(ERRMSG_LOOP_EKIINDEX);
 				SetFocus(offsetof(UIDATA, iLoopOriginEkiIndex));
-				iRv = -2;//ŠÂóüÝ’èON‚ÌŽž‚ÍA‹N“_‰w‚ðŽw’è‚µ‚Ä‚­‚¾‚³‚¢B
+				iRv = -2;//ç’°çŠ¶ç·šè¨­å®šONã®æ™‚ã¯ã€èµ·ç‚¹é§…ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 			}
 
-			//‰wŽžˆµ‚¢‚Ì”»’è‚ðs‚¤
-			if (pUiData->iEkijikokukeisiki != 1 && //1=”­’…
-				pUiData->iEkijikokukeisiki != 2)//3=‰º‚è’…Žž
+			//é§…æ™‚åˆ»æ‰±ã„ã®åˆ¤å®šã‚’è¡Œã†
+			if (pUiData->iEkijikokukeisiki != 1 && //1=ç™ºç€
+				pUiData->iEkijikokukeisiki != 2)//3=ä¸‹ã‚Šç€æ™‚åˆ»
 			{
 				ShowError(ERRMSG_LOOP_EKIJIKOKUKEISIKI_HATSUCHAKU_DOWNCHAKU);
 				SetFocus(offsetof(UIDATA, iEkijikokukeisiki));
-				iRv = -3;//ŠÂóüÝ’èON‚ÌŽž‚ÍA‰wŽžŒ`Ž®‚ð”­’…‚Ü‚½‚Íã‚è’…‚É‚µ‚Ä‚­‚¾‚³‚¢B
+				iRv = -3;//ç’°çŠ¶ç·šè¨­å®šONã®æ™‚ã¯ã€é§…æ™‚åˆ»å½¢å¼ã‚’ç™ºç€ã¾ãŸã¯ä¸Šã‚Šç€ã«ã—ã¦ãã ã•ã„ã€‚
 			}
 
 			if (pUiData->iEkikibo != 1)
 			{
 				ShowError(ERRMSG_LOOP_EKIKIBO);
 				SetFocus(offsetof(UIDATA, iEkikibo));
-				iRv = -5;//ŠÂóüÝ’èON‚ÌŽž‚ÍA‰w‹K–Í‚ÍŽå—v‰w‚É‚µ‚Ä‚­‚¾‚³‚¢
+				iRv = -5;//ç’°çŠ¶ç·šè¨­å®šONã®æ™‚ã¯ã€é§…è¦æ¨¡ã¯ä¸»è¦é§…ã«ã—ã¦ãã ã•ã„
 			}
 		}
 	}
-	/* ‰w–¼—ªÌ */
+	/* é§…åç•¥ç§° */
 	if (iRv >= 0)
 	{
 		if (bNewItem || pUiDataStartEdit->strEkimeiJikokuhyouRyaku != pUiData->strEkimeiJikokuhyouRyaku)
@@ -1303,11 +1303,11 @@ int CPropEditUi_Eki::CheckUiData(
 			{
 				ShowError(ERRMSG_EKIMEIJIKOKUHYOURYAKU_TOO_LONG);
 				SetFocus(offsetof(UIDATA, strEkimeiJikokuhyouRyaku));
-				iRv = -1;	//	‰w–¼‚ª’·‚·‚¬‚Ü‚·B
+				iRv = -1;	//	é§…åãŒé•·ã™ãŽã¾ã™ã€‚
 			}
 		}
 	}
-	/* ‰w–¼—ªÌ(‰^—pˆê——) */
+	/* é§…åç•¥ç§°(é‹ç”¨ä¸€è¦§) */
 	if (iRv >= 0)
 	{
 		if (bNewItem || pUiDataStartEdit->strEkimeiDiagramRyaku != pUiData->strEkimeiDiagramRyaku)
@@ -1316,7 +1316,7 @@ int CPropEditUi_Eki::CheckUiData(
 			{
 				ShowError(ERRMSG_EKIMEIDIAGRAMRYAKU_TOO_LONG);
 				SetFocus(offsetof(UIDATA, strEkimeiDiagramRyaku));
-				iRv = -1;	//	‰w–¼‚ª’·‚·‚¬‚Ü‚·B
+				iRv = -1;	//	é§…åãŒé•·ã™ãŽã¾ã™ã€‚
 			}
 		}
 	}
@@ -1335,36 +1335,36 @@ int CPropEditUi_Eki::UiDataToTarget(
 	for ( int i = 0 ; iRv >= 0 && i < m_pTarget->size() ; i ++ )
 	{
 		CentDedEki* pTarget= m_pTarget->get( i ) ; 
-		/* ‰w–¼ */
+		/* é§…å */
 		if ( bNewItem || pUiDataStartEdit->strEkimei != pUiData->strEkimei)
 		{
 			pTarget->setEkimei( pUiData->strEkimei ) ;
 		}
-		/* ‰wŽžŒ`Ž® */
+		/* é§…æ™‚åˆ»å½¢å¼ */
 		if ( bNewItem || pUiDataStartEdit->iEkijikokukeisiki != pUiData->iEkijikokukeisiki)
 		{
 			pTarget->setEkijikokukeisiki( 
 				(CentDedEki::EEkijikokukeisiki)pUiData->iEkijikokukeisiki ) ;
 		}
-		/* ‰w‹K–Í */
+		/* é§…è¦æ¨¡ */
 		if ( bNewItem || pUiDataStartEdit->iEkikibo != pUiData->iEkikibo)
 		{
 			pTarget->setEkikibo( (CentDedEki::EEkikibo)pUiData->iEkikibo ) ;
 		}
-		/* ƒ_ƒCƒ„ƒOƒ‰ƒ€—ñŽÔî•ñ•\Ž¦i‰º‚èj */
+		/* ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åˆ—è»Šæƒ…å ±è¡¨ç¤ºï¼ˆä¸‹ã‚Šï¼‰ */
 		if ( bNewItem || pUiDataStartEdit->iDiagramRessyajouhouHyoujiKudari != pUiData->iDiagramRessyajouhouHyoujiKudari)
 		{
 			pTarget->setDiagramRessyajouhouHyoujiKudari(
 				(CentDedEki::EDiagramRessyajouhouHyouji)pUiData->iDiagramRessyajouhouHyoujiKudari ) ;
 		}
-		/* ƒ_ƒCƒ„ƒOƒ‰ƒ€—ñŽÔî•ñ•\Ž¦iã‚èj */
+		/* ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åˆ—è»Šæƒ…å ±è¡¨ç¤ºï¼ˆä¸Šã‚Šï¼‰ */
 		if ( bNewItem || pUiDataStartEdit->iDiagramRessyajouhouHyoujiNobori != pUiData->iDiagramRessyajouhouHyoujiNobori)
 		{
 			pTarget->setDiagramRessyajouhouHyoujiNobori(
 				(CentDedEki::EDiagramRessyajouhouHyouji)pUiData->iDiagramRessyajouhouHyoujiNobori ) ;
 		}
 
-		//•ªŠò‰wÝ’è
+		//åˆ†å²é§…è¨­å®š
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bBrunchFunctionEnable)
@@ -1386,7 +1386,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 				pTarget->setBrunchOpposite(false);
 			}
 		}
-		//ŠÂóüÝ’è
+		//ç’°çŠ¶ç·šè¨­å®š
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bLoopFunctionEnable)
@@ -1408,7 +1408,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 				pTarget->setLoopOpposite(false);
 			}
 		}
-		//‰º‚èŽž•\ƒrƒ…[”Ôü•\Ž¦
+		//ä¸‹ã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ç•ªç·šè¡¨ç¤º
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bJikokuhyouTrackDisplayKudariEnable)
@@ -1429,7 +1429,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 		//{
 		//	pTarget->setJikokuhyouTrackDisplayKudari( false );
 		//}
-		//ã‚èŽž•\ƒrƒ…[”Ôü•\Ž¦
+		//ä¸Šã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ç•ªç·šè¡¨ç¤º
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bJikokuhyouTrackDisplayNoboriEnable)
@@ -1450,7 +1450,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 		//{
 		//	pTarget->setJikokuhyouTrackDisplayNobori(false);
 		//}
-		//ƒ_ƒCƒ„ƒOƒ‰ƒ€ƒrƒ…[”Ôü•\Ž¦
+		//ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ãƒ“ãƒ¥ãƒ¼ç•ªç·šè¡¨ç¤º
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bDiagramTrackDisplayEnable)
@@ -1472,18 +1472,18 @@ int CPropEditUi_Eki::UiDataToTarget(
 		//	pTarget->setDiagramTrackDisplay(false);
 		//}
 
-		//Ýü•\È—ªÝ’è
+		//åœ¨ç·šè¡¨çœç•¥è¨­å®š
 		if (m_pTarget->size() == 1)
 		{
 			pTarget->setDiagramTrackOmit(pUiData->bDiagramTrackOmit);
 		}
 
-		/* ‰w–¼—ªÌ */
+		/* é§…åç•¥ç§° */
 		if (bNewItem || pUiDataStartEdit->strEkimeiJikokuhyouRyaku != pUiData->strEkimeiJikokuhyouRyaku)
 		{
 			pTarget->setEkimeiJikokuhyouRyaku(pUiData->strEkimeiJikokuhyouRyaku);
 		}
-		/* ‰w–¼—ªÌ(‰^—pˆê——) */
+		/* é§…åç•¥ç§°(é‹ç”¨ä¸€è¦§) */
 		if (bNewItem || pUiDataStartEdit->strEkimeiDiagramRyaku != pUiData->strEkimeiDiagramRyaku)
 		{
 			pTarget->setEkimeiDiagramRyaku(pUiData->strEkimeiDiagramRyaku);
@@ -1501,7 +1501,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 					pUiData->sEkiTrack2[idx].strTrackName,
 					pUiData->sEkiTrack2[idx].strTrackRyakusyou,
 					pUiData->sEkiTrack2[idx].strTrackNoboriRyakusyou);
-				//Ver2.0@—ñŽÔ‘¤Žå–{üÝ’è“P”p‚É‚æ‚èA+1ˆ—‚ðíœ
+				//Ver2.0ã€€åˆ—è»Šå´ä¸»æœ¬ç·šè¨­å®šæ’¤å»ƒã«ã‚ˆã‚Šã€+1å‡¦ç†ã‚’å‰Šé™¤
 				if (iMainDown == -1 &&
 					(pUiData->sEkiTrack2[idx].iMainTrack == 1 ||
 					pUiData->sEkiTrack2[idx].iMainTrack == 3))
@@ -1560,12 +1560,12 @@ int CPropEditUi_Eki::UiDataToTarget(
 				pTarget->eraseOuterTerminalEkimei(pUiData->sOuterTerminalEkimei.size(), INT_MAX);
 			}
 		}
-		/* ŽŸ‰w‚Ü‚Å‚Ì‹——£  */
+		/* æ¬¡é§…ã¾ã§ã®è·é›¢  */
 		if (bNewItem || pUiDataStartEdit->iNextEkiDistance != pUiData->iNextEkiDistance)
 		{
 			pTarget->setNextEkiDistance(pUiData->iNextEkiDistance);
 		}
-		//”Ôü•\Ž¦È—ªÝ’è
+		//ç•ªç·šè¡¨ç¤ºçœç•¥è¨­å®š
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bJikokuhyouTrackOmitEnable)
@@ -1587,7 +1587,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 		//	pTarget->setJikokuhyouTrackOmit(false);
 		//}
 
-		/* ì‹Æ•\Ž¦—“Ý’èi‹N“_‘¤j */
+		/* ä½œæ¥­è¡¨ç¤ºæ¬„è¨­å®šï¼ˆèµ·ç‚¹å´ï¼‰ */
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bJikokuhyouOperationEnable)
@@ -1622,7 +1622,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 		//{
 		//	pTarget->setJikokuhyouOperationOrigin(0);
 		//}
-		/* ì‹Æ•\Ž¦—“Ý’èiI“_‘¤j */
+		/* ä½œæ¥­è¡¨ç¤ºæ¬„è¨­å®šï¼ˆçµ‚ç‚¹å´ï¼‰ */
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bJikokuhyouOperationEnable)
@@ -1658,7 +1658,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 		//	pTarget->setJikokuhyouOperationTerminal(0);
 		//}
 
-		//‰º‚èŽž•\ƒrƒ…[’…Žž•\Ž¦
+		//ä¸‹ã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ç€æ™‚åˆ»è¡¨ç¤º
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bJikokuhyouChakuJikokuDisplayKudariEnable)
@@ -1691,7 +1691,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 		//{
 		//	pTarget->setJikokuhyouChakuJikokuDisplayKudari(false);
 		//}
-		//ã‚èŽž•\ƒrƒ…[’…Žž•\Ž¦
+		//ä¸Šã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ç€æ™‚åˆ»è¡¨ç¤º
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bJikokuhyouChakuJikokuDisplayNoboriEnable)
@@ -1724,7 +1724,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 		//	pTarget->setJikokuhyouChakuJikokuDisplayNobori(false);
 		//}
 
-		//‰º‚èŽž•\ƒrƒ…[”­Žž•\Ž¦
+		//ä¸‹ã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ç™ºæ™‚åˆ»è¡¨ç¤º
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bJikokuhyouHatsuJikokuDisplayKudariEnable)
@@ -1757,7 +1757,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 		//	pTarget->setJikokuhyouHatsuJikokuDisplayKudari(false);
 		//}
 
-		//ã‚èŽž•\ƒrƒ…[”­Žž•\Ž¦
+		//ä¸Šã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ç™ºæ™‚åˆ»è¡¨ç¤º
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bJikokuhyouHatsuJikokuDisplayNoboriEnable)
@@ -1790,7 +1790,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 		//	pTarget->setJikokuhyouHatsuJikokuDisplayNobori(false);
 		//}
 
-		//‰º‚èŽž•\ƒrƒ…[—ñŽÔ”Ô†•\Ž¦
+		//ä¸‹ã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼åˆ—è»Šç•ªå·è¡¨ç¤º
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bJikokuhyouSyubetsuChangeDisplayKudariEnable)
@@ -1812,7 +1812,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 		//	pTarget->setJikokuhyouRessyabangouDisplayKudari(0);
 		//}
 
-		//ã‚èŽž•\ƒrƒ…[—ñŽÔ”Ô†•\Ž¦
+		//ä¸Šã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼åˆ—è»Šç•ªå·è¡¨ç¤º
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bJikokuhyouSyubetsuChangeDisplayNoboriEnable)
@@ -1834,7 +1834,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 		//	pTarget->setJikokuhyouRessyabangouDisplayNobori(0);
 		//}
 
-		//‰º‚èŽž•\ƒrƒ…[‰^—p”Ô†•\Ž¦
+		//ä¸‹ã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼é‹ç”¨ç•ªå·è¡¨ç¤º
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bJikokuhyouSyubetsuChangeDisplayKudariEnable)
@@ -1858,7 +1858,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 		//	pTarget->setJikokuhyouOperationNumberDisplayKudari(0);
 		//}
 
-		//ã‚èŽž•\ƒrƒ…[‰^—p”Ô†•\Ž¦
+		//ä¸Šã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼é‹ç”¨ç•ªå·è¡¨ç¤º
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bJikokuhyouSyubetsuChangeDisplayNoboriEnable)
@@ -1882,7 +1882,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 		//	pTarget->setJikokuhyouOperationNumberDisplayNobori(0);
 		//}
 
-		//‰º‚èŽž•\ƒrƒ…[—ñŽÔŽí•Ê•\Ž¦
+		//ä¸‹ã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼åˆ—è»Šç¨®åˆ¥è¡¨ç¤º
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bJikokuhyouSyubetsuChangeDisplayKudariEnable)
@@ -1904,7 +1904,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 		//	pTarget->setJikokuhyouRessyaSyubetsuDisplayKudari(0);
 		//}
 
-		//ã‚èŽž•\ƒrƒ…[—ñŽÔŽí•Ê•\Ž¦
+		//ä¸Šã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼åˆ—è»Šç¨®åˆ¥è¡¨ç¤º
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bJikokuhyouSyubetsuChangeDisplayNoboriEnable)
@@ -1926,7 +1926,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 		//	pTarget->setJikokuhyouRessyaSyubetsuDisplayNobori(0);
 		//}
 
-		//‰º‚èŽž•\ƒrƒ…[—ñŽÔ–¼•\Ž¦
+		//ä¸‹ã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼åˆ—è»Šåè¡¨ç¤º
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bJikokuhyouSyubetsuChangeDisplayKudariEnable)
@@ -1948,7 +1948,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 		//	pTarget->setJikokuhyouRessyameiDisplayKudari(0);
 		//}
 
-		//ã‚èŽž•\ƒrƒ…[—ñŽÔ–¼•\Ž¦
+		//ä¸Šã‚Šæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼åˆ—è»Šåè¡¨ç¤º
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bJikokuhyouSyubetsuChangeDisplayNoboriEnable)
@@ -1970,7 +1970,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 		//	pTarget->setJikokuhyouRessyameiDisplayNobori(0);
 		//}
 
-		//‰º‚èƒJƒXƒ^ƒ}ƒCƒYŽž•\ƒrƒ…[‚Å‚Ì˜HüŠOE‘O—ñŽÔŽn”­‰w•\Ž¦
+		//ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®è·¯ç·šå¤–ãƒ»å‰åˆ—è»Šå§‹ç™ºé§…è¡¨ç¤º
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bJikokuhyouOuterSihatsuDisplayKudariEnable)
@@ -1983,7 +1983,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 			}
 		}
 
-		//‰º‚èƒJƒXƒ^ƒ}ƒCƒYŽž•\ƒrƒ…[‚Å‚Ì˜HüŠOEŽŸ—ñŽÔI’…‰w•\Ž¦
+		//ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®è·¯ç·šå¤–ãƒ»æ¬¡åˆ—è»Šçµ‚ç€é§…è¡¨ç¤º
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bJikokuhyouOuterShuchakuDisplayKudariEnable)
@@ -1996,7 +1996,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 			}
 		}
 
-		//ã‚èƒJƒXƒ^ƒ}ƒCƒYŽž•\ƒrƒ…[‚Å‚Ì˜HüŠOE‘O—ñŽÔŽn”­‰w•\Ž¦
+		//ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®è·¯ç·šå¤–ãƒ»å‰åˆ—è»Šå§‹ç™ºé§…è¡¨ç¤º
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bJikokuhyouOuterSihatsuDisplayNoboriEnable)
@@ -2009,7 +2009,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 			}
 		}
 
-		//ã‚èƒJƒXƒ^ƒ}ƒCƒYŽž•\ƒrƒ…[‚Å‚Ì˜HüŠOEŽŸ—ñŽÔI’…‰w•\Ž¦
+		//ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®è·¯ç·šå¤–ãƒ»æ¬¡åˆ—è»Šçµ‚ç€é§…è¡¨ç¤º
 		if (m_pTarget->size() == 1)
 		{
 			if (pUiData->bJikokuhyouOuterShuchakuDisplayNoboriEnable)
@@ -2022,13 +2022,13 @@ int CPropEditUi_Eki::UiDataToTarget(
 			}
 		}
 
-		/* ƒ_ƒCƒ„ƒOƒ‰ƒ€”wŒiF */
+		/* ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ èƒŒæ™¯è‰² */
 		if (bNewItem || pUiDataStartEdit->iDiagramColorNextEki != pUiData->iDiagramColorNextEki)
 		{
 			pTarget->setDiagramColorNextEki(pUiData->iDiagramColorNextEki);
 		}
 
-		/* ” ƒ_ƒCƒ„‚Å•\Ž¦‚·‚é‚©”Û‚© */
+		/* ç®±ãƒ€ã‚¤ãƒ¤ã§è¡¨ç¤ºã™ã‚‹ã‹å¦ã‹ */
 		if (m_pTarget->size() == 1)
 		{
 			//if (pUiData->bOperationTableDisplayJikokuEnable)
@@ -2042,12 +2042,12 @@ int CPropEditUi_Eki::UiDataToTarget(
 		}
 
 	}
-	/*	[‰wŽž‚ð‰wŽžŒ`Ž®‚Å³‹K‰»]‚ÌÝ’è‚Å‚·B*/
+	/*	[é§…æ™‚åˆ»ã‚’é§…æ™‚åˆ»å½¢å¼ã§æ­£è¦åŒ–]ã®è¨­å®šã§ã™ã€‚*/
 	if ( iRv >= 0 )
 	{
 		if ( bNewItem || pUiDataStartEdit->bAdjustByEkijikokukeisiki != pUiData->bAdjustByEkijikokukeisiki)
 		{
-			// [‰wŽž‚ð‰wŽžŒ`Ž®‚Å³‹K‰»]‚ÌÝ’è
+			// [é§…æ™‚åˆ»ã‚’é§…æ™‚åˆ»å½¢å¼ã§æ­£è¦åŒ–]ã®è¨­å®š
 			*m_pbAdjustByEkijikokukeisiki = pUiData->bAdjustByEkijikokukeisiki ;
 		}
 	}
@@ -2056,7 +2056,7 @@ int CPropEditUi_Eki::UiDataToTarget(
 
 
 	// ********************************
-	//	ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	//	ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 	// ********************************
 CPropEditUi_Eki::CPropEditUi_Eki( 
 	bool bNewItem , 

@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -78,8 +78,8 @@ Copyright (C) 2006-2017 take-okm
 #define  CconvCdDedDispProp_h
 /** @file */
 #include "CDedRosenFileData.h"
-#include "str\OuPropertiesText\CNodeContainer.h"
-#include "str\OuPropertiesText\ErrorInfo\COuErrorInfoContainer.h"
+#include "str¥OuPropertiesText¥CNodeContainer.h"
+#include "str¥OuPropertiesText¥ErrorInfo¥COuErrorInfoContainer.h"
 
 namespace DedRosenFileData{
 	using namespace OuLib::Str;
@@ -88,78 +88,78 @@ namespace DedRosenFileData{
 // ****************************************************************
 /**
 @brief
-	  CdDedDispProp �I�u�W�F�N�g
-	�iDiagramEdit �̕\���Ɋ֌W����v���p�e�B��ێ�����
-	�P���f�[�^�N���X�j
-	�ƁA���̃f�[�^�`���Ƃ̊Ԃ̑��ݕϊ����s���܂��B
+	  CdDedDispProp オブジェクト
+	（DiagramEdit の表示に関係するプロパティを保持する
+	単純データクラス）
+	と、他のデータ形式との間の相互変換を行います。
 	
-	OuPropertiesText::CNodeContainer �I�u�W�F�N�g�Ƃ̊Ԃ̕ϊ����T�|�[�g���Ă��܂��B 
+	OuPropertiesText::CNodeContainer オブジェクトとの間の変換をサポートしています。 
 
  */
 class CconvCdDedDispProp
 {
 public:
 	/**
-		OuErrorInfo::m_strReason �Ɏw�肷�邽�߂̃G���[������ł��B
-		�u�l���s���v
+		OuErrorInfo::m_strReason に指定するためのエラー文字列です。
+		「値が不正」
 	@param Name
-		�l�̖��O
+		値の名前
 	@param Value
-		�s���ȃp�����[�^�̒l
+		不正なパラメータの値
 	*/
 	static const TCHAR* ERRREASON_InvalidValue(){	return _T("Invalid value.") ;};
 	static const TCHAR* ERRPROP_Name(){	return _T("Name") ;};
 	static const TCHAR* ERRPROP_Value(){	return _T("Value") ;};
 public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	CconvCdDedDispProp(){};
 
 public:
 	// ********************************
-	///@name CconvCdDedDispProp-����
+	///@name CconvCdDedDispProp-操作
 	// ********************************
 	///@{
 	/**
-		  OuPropertiesText �I�u�W�F�N�g�ɁA
-		  CdDedDispProp �̑�����ǉ����܂��B
+		  OuPropertiesText オブジェクトに、
+		  CdDedDispProp の属性を追加します。
 	@param aCdDedDispProp [in]
-		  CdDedDispProp ���w�肵�Ă��������B
+		  CdDedDispProp を指定してください。
 	@param pCNodeContainer [out]
-		  ���̊֐��́A���̃I�u�W�F�N�g�ɁAaCentDedEki �̓��e�𔽉f���܂��B
-		  pCNodeContainer ������܂ŕێ����Ă����I�u�W�F�N�g�͔j�����܂��B
+		  この関数は、このオブジェクトに、aCentDedEki の内容を反映します。
+		  pCNodeContainer がそれまで保持していたオブジェクトは破棄します。
 	@return
-		  ���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-		  �A���A���݂͕��̐����Ԃ���邱�Ƃ͂���܂���B
+		  成功したら 0 以上、エラーなら負の数です。
+		  但し、現在は負の数が返されることはありません。
 	 */
 	int toOuPropertiesText( 
 			const CdDedDispProp& aCdDedDispProp , 
 			OuPropertiesText::CNodeContainer* pCNodeContainer ) ;
 	
 	/**
-		  OuPropertiesText �I�u�W�F�N�g����A
-		  toOuPropertiesText() �֐��ɂ���č쐬���ꂽ
-		�A�C�e����ǂݍ��݁A CdDedDispProp �I�u�W�F�N�g�ɔ��f���܂��B
+		  OuPropertiesText オブジェクトから、
+		  toOuPropertiesText() 関数によって作成された
+		アイテムを読み込み、 CdDedDispProp オブジェクトに反映します。
 		
 	@param pCdDedDispProp [out]
-		  ���̊֐��͂��̃I�u�W�F�N�g�ɁA�����𔽉f���܂��B
+		  この関数はこのオブジェクトに、属性を反映します。
 	@param pCNodeContainer [in]
-		  ������ێ����Ă��� OuPropertiesText �I�u�W�F�N�g���w�肵�Ă��������B
+		  属性を保持している OuPropertiesText オブジェクトを指定してください。
 	@param pCOuErrorInfoContainer [out]
-		  ���̊֐��̓G���[������������A�G���[�̏������̃I�u�W�F�N�g��
-		  �ǉ����܂��B
+		  この関数はエラーが発生したら、エラーの情報をこのオブジェクトに
+		  追加します。
 	@return
-		  ���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	-12 ;	//	JikokuhyouFont �̓��e���s���ł��B
-		-	-13 ;	//	JikokuhyouVFont �̓��e���s���ł��B
-		-	-14 ;	//	HalfWidthCharInTextV �̓��e���s���ł��B
-		-	-22 ;	//	DiaEkimeiFont �̓��e���s���ł��B
-		-	-32 ;	//	DiaJikokuFont �̓��e���s���ł��B
-		-	-82 ;	//	DisplayRessyabangou ���s���ł��B
-		-	-92 ;	//	DisplayRessyamei ���s���ł��B
-		-	-102 ;	//	DiaRessyajouhouHyoujiEkiOrderKudari ���s���ł��B
-		-	-112 ;	//	DiaRessyajouhouHyoujiEkiOrderNobori ���s���ł��B
+		  成功したら 0 以上、エラーなら負の数です。
+		-	-12 ;	//	JikokuhyouFont の内容が不正です。
+		-	-13 ;	//	JikokuhyouVFont の内容が不正です。
+		-	-14 ;	//	HalfWidthCharInTextV の内容が不正です。
+		-	-22 ;	//	DiaEkimeiFont の内容が不正です。
+		-	-32 ;	//	DiaJikokuFont の内容が不正です。
+		-	-82 ;	//	DisplayRessyabangou が不正です。
+		-	-92 ;	//	DisplayRessyamei が不正です。
+		-	-102 ;	//	DiaRessyajouhouHyoujiEkiOrderKudari が不正です。
+		-	-112 ;	//	DiaRessyajouhouHyoujiEkiOrderNobori が不正です。
 	 */
 	int fromOuPropertiesText( 
 		CdDedDispProp* pCdDedDispProp ,

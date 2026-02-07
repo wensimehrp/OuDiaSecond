@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,43 +35,43 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 #if !defined(AFX_CDEDALLOPERATIONTABLE2VIEW_H__6A6702AD_CDFE_44B8_A0A7_5B837BCEFB81__INCLUDED_)
 #define AFX_CDEDALLOPERATIONTABLE2VIEW_H__6A6702AD_CDFE_44B8_A0A7_5B837BCEFB81__INCLUDED_
 
-// CDedAllOperationTable2View.h : �w�b�_�[ �t�@�C��
+// CDedAllOperationTable2View.h : ヘッダー ファイル
 //	$Id: CDedAllOperationTable2View.h 
 /** @file */
 
@@ -82,68 +82,68 @@ Copyright (C) 2006-2017 take-okm
 #include "NsOu/Ou.h"
 
 #include "DiagramEdit.h"
-//#include "..\entDgr\CentDedDgrDia.h"
+//#include "..¥entDgr¥CentDedDgrDia.h"
 #include "CWndAllOperationTable2.h"
-#include "DedRosenFileData\EditCmd\CRfEditCmd_Ressya.h"
+#include "DedRosenFileData¥EditCmd¥CRfEditCmd_Ressya.h"
 
 namespace ViewAllOperationTable2 {
 	using namespace DedRosenFileData::EditCmd;
 	using namespace entDed;
 
 /////////////////////////////////////////////////////////////////////////////
-// CDedAllOperationTable2View �r���[
+// CDedAllOperationTable2View ビュー
 /**
 	@brief
-	�^�p�ꗗ�}�r���[�ł��B
+	運用一覧図ビューです。
  */
 class CDedAllOperationTable2View : public CView
 {
 public:
-	/** �^�p�ꗗ�ł́u���בւ��v�̃��[�h��\���񋓂ł��B */
+	/** 運用一覧での「並べ替え」のモードを表す列挙です。 */
 	enum EOperationSort
 	{
-		EOperationSort_OperationNumber = 0,	///< �^�p�ԍ��ł̃\�[�g
-		EOperationSort_OutEki,	///< �o��w�\�[�g
-		EOperationSort_OutJikoku,	///< �o�掞���\�[�g
-		EOperationSort_InEki,	///< ����w�\�[�g
-		EOperationSort_InJikoku,	///< ���掞���\�[�g
+		EOperationSort_OperationNumber = 0,	///< 運用番号でのソート
+		EOperationSort_OutEki,	///< 出区駅ソート
+		EOperationSort_OutJikoku,	///< 出区時刻ソート
+		EOperationSort_InEki,	///< 入区駅ソート
+		EOperationSort_InJikoku,	///< 入区時刻ソート
 	};
 
 	// ********************************
-	///@name ���
+	///@name 包含
 	// ********************************
 	///@{
 
 private:
 
 	/**
-		�^�p�ԍ����Am_eOperationSort��m_bCompareBottom�Ɋ�Â��ĕ��ёւ������̂ł�
-		���̏��Ԃŉ^�p�ꗗ�ɕ\�����܂�
+		運用番号を、m_eOperationSortとm_bCompareBottomに基づいて並び替えたものです
+		この順番で運用一覧に表示します
 	*/
 	vector<tstring> m_strOperationNumber;
 
 
 	/**
-		�^�p�̕��я��ł��A�^�p�ꗗ�̃v���p�e�B�Őݒ肵�܂��B
+		運用の並び順です、運用一覧のプロパティで設定します。
 	*/
 	EOperationSort m_eOperationSort;
 
 	/**
-		�^�p�ԍ�����ёւ���Ƃ��̃��[���ł��B�^�p�ꗗ�̃v���p�e�B�Őݒ肵�܂��B
+		運用番号を並び替えるときのルールです。運用一覧のプロパティで設定します。
 	*/
 	bool m_bCompareBottom;
 
 	/**
-		�^�p�ꗗ�}�͈̔͂ł��B
-		�������́A�N�_��������n�܂�24����
-		�c�����́ADEFAULT_YSIZE_PER_ONEOPERATION()�~�^�p���ł��B
+		運用一覧図の範囲です。
+		横方向は、起点時刻から始まる24時間
+		縦方向は、DEFAULT_YSIZE_PER_ONEOPERATION()×運用数です。
 	*/
 	CdDcdZoneXy m_CdDcdZoneXy;
 
 	/**
-		�^�p�ꗗ�}��`�悷��q�E�C���h�E�B
-		OnCreate() �Ő������A OnDestroy() �Ŕj�����܂��B
-		���̃I�u�W�F�N�g�̔j���̐Ӗ��� this �ɂ���܂��B
+		運用一覧図を描画する子ウインドウ。
+		OnCreate() で生成し、 OnDestroy() で破棄します。
+		このオブジェクトの破棄の責務は this にあります。
 		
 	*/
 	CWndAllOperationTable2* m_pCWndAllOperationTable2;
@@ -151,37 +151,37 @@ private:
 
 private:
 	// --------------------------------
-	///@name �����f�[�^
+	///@name 内部データ
 	// --------------------------------
 	///@{
 	/**
-		�S�X�V���ۗ�����Ă����� true �B
+		全更新が保留されていたら true 。
 
-		�ʏ�� false �B
-		���̃r���[���A�N�e�B�u�łȂ��Ƃ��� 
-		�S�X�V�i OnUpdate_All() ���Ăяo���j���K�v�ɂȂ��Ă���A
-		�r���[���A�N�e�B�u�ɂȂ�܂ł̊Ԃ��� true �ɂȂ�܂��B
+		通常は false 。
+		このビューがアクティブでないときに 
+		全更新（ OnUpdate_All() を呼び出す）が必要になってから、
+		ビューがアクティブになるまでの間だけ true になります。
 		
-		���̕ϐ��� true �̂Ƃ��́A
-		�r���[�̍X�V���A���Ƀr���[���A�N�e�B�u�������܂�
-		�ۗ����Ă��邱�Ƃ������܂��B
+		この変数が true のときは、
+		ビューの更新を、次にビューがアクティブ化されるまで
+		保留していることを示します。
 	
-		�r���[���A�N�e�B�u�łȂ��Ƃ��� OnUpdate_All() ��
-		�v�����ꂽ��A���̕ϐ��� true �ɂ��A
-		OnUpdate_All() �͎��s���܂���B
+		ビューがアクティブでないときに OnUpdate_All() が
+		要求されたら、この変数を true にし、
+		OnUpdate_All() は実行しません。
 	
-		���̒l�� true �̂Ƃ��ɁA�r���[���A�N�e�B�u�����ꂽ��A
-		OnUpdate_All() �����s���܂��B
+		この値が true のときに、ビューがアクティブ化されたら、
+		OnUpdate_All() を実行します。
 	*/
 	bool m_bUpdate_All_Requested ;
 
 	/**
-		������ɁA�P�y�[�W�Ɉ������_�C���O�����͈̔͂��A
-		�_�C���O�����G���e�B�e�B���W�ŕێ����܂��B
+		印刷時に、１ページに印刷するダイヤグラムの範囲を、
+		ダイヤグラムエンティティ座標で保持します。
 
-		���̒l�́A���[�U�[�����j���[�R�}���h
-		[���][����v���r���[]��I���������_��
-		�r���[�ɕ\������Ă���_�C���O�����͈̔͂ɂȂ�܂��B
+		この値は、ユーザーがメニューコマンド
+		[印刷][印刷プレビュー]を選択した時点で
+		ビューに表示されているダイヤグラムの範囲になります。
 	*/
 	CdDcdSizeXy	m_sizePrintSize_Dgr ;
 	CdDcdSizeXy	m_sizePrintSize_DgrLeft;
@@ -191,12 +191,12 @@ private:
 	///@}
 protected:
 	// --------------------------------
-	///@name �����֐�
+	///@name 下請関数
 	// --------------------------------
 	///@{
 	/**
 	 @return
-		�Ή�����h�L�������g�I�u�W�F�N�g��Ԃ��܂��B
+		対応するドキュメントオブジェクトを返します。
 	 */
 	CDedAllOperationTable2Doc*	GetDocument() {
 		CView* pCView = this ;
@@ -204,7 +204,7 @@ protected:
 	
 	/**
 	 @return
-		CentDedDia �I�u�W�F�N�g��Ԃ��܂��B
+		CentDedDia オブジェクトを返します。
 	 */
 	const CentDedDia*	getCentDedDia()
 	{
@@ -219,13 +219,13 @@ protected:
 	///@}
 private:
 	// --------------------------------
-	///@name OnUpdate�����֐�
+	///@name OnUpdate下請関数
 	// --------------------------------
 	///@{
 
 	/**
-		��Ԕԍ��𐔎��̉�Ɛ����ȊO�̉�ɕ������܂��B
-		CentDedRessya���ɂ�����̂Ɠ��l�̓���ł��B
+		列車番号を数字の塊と数字以外の塊に分割します。
+		CentDedRessya内にあるものと同様の動作です。
 	*/
 	void splitOperationNumber(
 		const tstring strOperationNumberIn,
@@ -233,23 +233,23 @@ private:
 		vector<tstring>& strOperationNumberOut)const;
 
 	/**
-		��̉^�p�ԍ��ɂ��āA���̕��я��𒲂ׂ܂�
-		true��Ԃ����ꍇ�́AstrOperationNumber1����Afalse�̏ꍇ��2������Ӗ����܂��B
+		二つの運用番号について、その並び順を調べます
+		trueを返した場合は、strOperationNumber1が先、falseの場合は2が先を意味します。
 	*/
 	bool SortOperationNumber(
 		const tstring strOperationNumber1,
 		const tstring strOperationNumber2);
 
 	/**
-		��̉^�p�ɂ��āAm_eOperationSort�����ƂɁA���̕��я��𒲂ׂ܂�
-		true��Ԃ����ꍇ�́AstrOperationNumber1����Afalse�̏ꍇ��strOperationNumber2������Ӗ����܂��B
-		strOperationNumber:��r�ΏۂƂȂ�^�p�ԍ��ł�
-		iEkiIndex:��r�ΏۂƂȂ�̏o��w�E����wIndex�ł��B�\�ߋ��߂Ă����܂��B
-		iOuterIndex:��r�ΏۂƂȂ�̘H���O�n���E�I���w��Index�ł��B�\�ߋ��߂Ă����܂��B
-			�H���O�����łȂ��ꍇ��INT_MIN������܂��B
-		Jikoku:��r�ΏۂƂȂ�̏o��w�������E����w�������ł��B
+		二つの運用について、m_eOperationSortをもとに、その並び順を調べます
+		trueを返した場合は、strOperationNumber1が先、falseの場合はstrOperationNumber2が先を意味します。
+		strOperationNumber:比較対象となる運用番号です
+		iEkiIndex:比較対象となるの出区駅・入区駅Indexです。予め求めておきます。
+		iOuterIndex:比較対象となるの路線外始発・終着駅のIndexです。予め求めておきます。
+			路線外発着でない場合はINT_MINが入ります。
+		Jikoku:比較対象となるの出区駅発時刻・入区駅着時刻です。
 
-		KitenJikoku:�_�C���O�����̋N�_�����ł��B�������ł̔�r�ɗp���܂��B
+		KitenJikoku:ダイヤグラムの起点時刻です。時刻順での比較に用います。
 	*/
 	bool SortOperation(
 		const tstring strOperationNumber1,
@@ -264,112 +264,112 @@ private:
 
 	void SortOperation();
 	/**
-		OnUpdate() �� pHint �� CHint_CentDedRessya �I�u�W�F�N�g��
-		�Ȃ��ꍇ�ł��B
+		OnUpdate() の pHint が CHint_CentDedRessya オブジェクトで
+		ない場合です。
 	
-		m_pCentDedDgrDia �I�u�W�F�N�g�����S�ɍX�V���A
-		�E�C���h�E m_pCWndDiagram �ɔ��f�����܂��B
+		m_pCentDedDgrDia オブジェクトを完全に更新し、
+		ウインドウ m_pCWndDiagram に反映させます。
 	 */
 	void OnUpdate_All() ;
 	///@}
 private:
 	// --------------------------------
-	///@name MFC�R�}���h�n���h�������֐�
+	///@name MFCコマンドハンドラ下請関数
 	// --------------------------------
 	///@{
-	/** [�\��]-[���������k��]
+	/** [表示]-[横軸方向縮小]
 	@param bQueryEnable [in]
-		- TRUE ;	�R�}���h�����ݎ��s�ł��邩�ۂ��̔��肾�����s���܂��B@n
-					�G���[���b�Z�[�W�̕\���͍s���܂���B
-		- FALSE ;	�R�}���h�����s���܂��B @n
-				�G���[�����������ꍇ�́A�G���[���b�Z�[�W�{�b�N�X��\�����܂��B
+		- TRUE ;	コマンドが現在実行できるか否かの判定だけを行います。@n
+					エラーメッセージの表示は行いません。
+		- FALSE ;	コマンドを実行します。 @n
+				エラーが発生した場合は、エラーメッセージボックスを表示します。
 	@return
-		-	0 :	����
-		-	-1 :	���݂͎��s�ł��܂���B(�G���[���b�Z�[�W�͕\�����܂���)
-		-	-2 ;	//	�_�C���O�����͕\������Ă��܂���B
+		-	0 :	成功
+		-	-1 :	現在は実行できません。(エラーメッセージは表示しません)
+		-	-2 ;	//	ダイヤグラムは表示されていません。
 	*/
 	int OnAllOperationTable2XDgrSizeInc_Process( BOOL bQueryEnable );
-	/** [�\��]-[���������g��]
+	/** [表示]-[横軸方向拡大]
 	@return
-		-	0 :	����
-		-	-1 :	���݂͎��s�ł��܂���B(�G���[���b�Z�[�W�͕\�����܂���)
-		-	-2 ;	//	�_�C���O�����͕\������Ă��܂���B
+		-	0 :	成功
+		-	-1 :	現在は実行できません。(エラーメッセージは表示しません)
+		-	-2 ;	//	ダイヤグラムは表示されていません。
 	*/
 	int OnAllOperationTable2XDgrSizeDec_Process( BOOL bQueryEnable );
-	/** [�\��]-[�����������Z�b�g]
+	/** [表示]-[横軸方向リセット]
 	@return
-		-	0 :	����
-		-	-2 ;	//	�_�C���O�����͕\������Ă��܂���B
+		-	0 :	成功
+		-	-2 ;	//	ダイヤグラムは表示されていません。
 	*/
 	int OnAllOperationTable2XDgrSizeReset_Process( BOOL bQueryEnable );
 	// --------------------------------
-	/** [�\��]-[�ڐ����ׂ�������]
+	/** [表示]-[目盛を細かくする]
 	@return
-		-	0 :	����
-		-	-1 ;	//	�R�}���h�𖳌�
+		-	0 :	成功
+		-	-1 ;	//	コマンドを無効
 	*/
 	int OnAllOperationTable2MemoriDown_Process( BOOL bQueryEnable );
-	/** [�\��]-[�ڐ���e������]
+	/** [表示]-[目盛を粗くする]
 	@return
-		-	0 :	����
-		-	-1 ;	//	�R�}���h�𖳌�
+		-	0 :	成功
+		-	-1 ;	//	コマンドを無効
 	*/
 	int OnAllOperationTable2MemoriUp_Process( BOOL bQueryEnable );
 	// --------------------------------
-	/** [�\��]-[�n���E�I���w�������̕\��]
+	/** [表示]-[始発・終着駅名時刻の表示]
 	@return
-		0�ȏ�͐����A�G���[�Ȃ畉�̐��ł��B
-		-	1 	(bQueryEnable==TRUE�̏ꍇ)���̃��j���[�R�}���h���L���ł��B
-		-	0 	(bQueryEnable==TRUE�̏ꍇ)���̃��j���[�R�}���h�������ł��B
+		0以上は成功、エラーなら負の数です。
+		-	1 	(bQueryEnable==TRUEの場合)このメニューコマンドが有効です。
+		-	0 	(bQueryEnable==TRUEの場合)このメニューコマンドが無効です。
 	*/
 	int OnAllOperationTable2EkimeiJikoku_Process(BOOL bQueryEnable);
 	// --------------------------------
-	/** [�\��]-[��Ԕԍ��̕\��]
+	/** [表示]-[列車番号の表示]
 	@return
-		0�ȏ�͐����A�G���[�Ȃ畉�̐��ł��B
-		-	1 	(bQueryEnable==TRUE�̏ꍇ)���̃��j���[�R�}���h���L���ł��B
-		-	0 	(bQueryEnable==TRUE�̏ꍇ)���̃��j���[�R�}���h�������ł��B
+		0以上は成功、エラーなら負の数です。
+		-	1 	(bQueryEnable==TRUEの場合)このメニューコマンドが有効です。
+		-	0 	(bQueryEnable==TRUEの場合)このメニューコマンドが無効です。
 	*/
 	int OnAllOperationTable2Ressyabangou_Process( BOOL bQueryEnable );
 
-	/** [�\��]-[��ʖ��̕\��]
+	/** [表示]-[種別名の表示]
 	@return
-		0�ȏ�͐����A�G���[�Ȃ畉�̐��ł��B
-		-	1 	(bQueryEnable==TRUE�̏ꍇ)���̃��j���[�R�}���h���L���ł��B
-		-	0 	(bQueryEnable==TRUE�̏ꍇ)���̃��j���[�R�}���h�������ł��B
+		0以上は成功、エラーなら負の数です。
+		-	1 	(bQueryEnable==TRUEの場合)このメニューコマンドが有効です。
+		-	0 	(bQueryEnable==TRUEの場合)このメニューコマンドが無効です。
 	*/
 	int OnUpdateAllOperationTable2SyubetsuRyakusyou_Process(BOOL bQueryEnable);
 
-	/** [�\��]-[��Ԗ��̕\��]
+	/** [表示]-[列車名の表示]
 	@return
-		0�ȏ�͐����A�G���[�Ȃ畉�̐��ł��B
-		-	1 	(bQueryEnable==TRUE�̏ꍇ)���̃��j���[�R�}���h���L���ł��B
-		-	0 	(bQueryEnable==TRUE�̏ꍇ)���̃��j���[�R�}���h�������ł��B
+		0以上は成功、エラーなら負の数です。
+		-	1 	(bQueryEnable==TRUEの場合)このメニューコマンドが有効です。
+		-	0 	(bQueryEnable==TRUEの場合)このメニューコマンドが無効です。
 	*/
 	int OnUpdateAllOperationTable2Ressyamei_Process( BOOL bQueryEnable );
 
-	/** [�\��]-[�e��Ԃ̎����\��]
+	/** [表示]-[各列車の時刻表示]
 	@return
-		0�ȏ�͐����A�G���[�Ȃ畉�̐��ł��B
-		-	1 	(bQueryEnable==TRUE�̏ꍇ)���̃��j���[�R�}���h���L���ł��B
-		-	0 	(bQueryEnable==TRUE�̏ꍇ)���̃��j���[�R�}���h�������ł��B
+		0以上は成功、エラーなら負の数です。
+		-	1 	(bQueryEnable==TRUEの場合)このメニューコマンドが有効です。
+		-	0 	(bQueryEnable==TRUEの場合)このメニューコマンドが無効です。
 	*/
 	int OnUpdateAllOperationTable2JikokuMinute_Process(BOOL bQueryEnable);
 
-	/** [�\��]-[�e��ʂɂ��\����L��]
+	/** [表示]-[親種別による表示を有効]
 	@return
-	0�ȏ�͐����A�G���[�Ȃ畉�̐��ł��B
-	-	1 	(bQueryEnable==TRUE�̏ꍇ)���̃��j���[�R�}���h���L���ł��B
-	-	0 	(bQueryEnable==TRUE�̏ꍇ)���̃��j���[�R�}���h�������ł��B
+	0以上は成功、エラーなら負の数です。
+	-	1 	(bQueryEnable==TRUEの場合)このメニューコマンドが有効です。
+	-	0 	(bQueryEnable==TRUEの場合)このメニューコマンドが無効です。
 	*/
 	int OneDisplayParentSyubetsu_Process(BOOL bQueryEnable);
 	// --------------------------------
-	/** [�\��]-[�X�V]
+	/** [表示]-[更新]
 	@see OnAllOperationTable2XDgrSizeInc_Process  
 	*/
 	int OnViewUpdate_Process( BOOL bQueryEnable );
 	// --------------------------------
-	/** [�\��]-[�_�C���O�����r���[�̃v���p�e�B]
+	/** [表示]-[ダイヤグラムビューのプロパティ]
 	@see OnAllOperationTable2XDgrSizeInc_Process  
 	*/
 	int OnAllOperationTable2ViewProp_Process( BOOL bQueryEnable );
@@ -380,27 +380,27 @@ private:
 // ********************************
 public:
 	// ********************************
-	///@name CDedAllOperationTable2View-����
+	///@name CDedAllOperationTable2View-操作
 	// ********************************
 	///@{
 	/**
-		�_�C���O�����r���[�̕\���ʒu���A
-		�w��̎����A�w��̉wOrder�Ɉړ������܂��B
+		ダイヤグラムビューの表示位置を、
+		指定の時刻、指定の駅Orderに移動させます。
 	 @param aCdDedJikoku [in]
-		�������w�肵�Ă��������B
-		���̊֐��́A�_�C���O�����r���[�̍��[���A���̎����ɂ��܂��B
-		NULL �������w�肵���ꍇ�A�_�C���O�����r���[��X�����̈ʒu��
-		�ύX���܂���B
+		時刻を指定してください。
+		この関数は、ダイヤグラムビューの左端を、この時刻にします。
+		NULL 時刻を指定した場合、ダイヤグラムビューのX方向の位置を
+		変更しません。
 	 @param iEkiIndex [in]
-		�w�wIndex�x���w�肵�Ă��������B
-		���̊֐��́A�_�C���O�����̏�[�E���[���A���́w�wIndex�x�ɂ��܂��B
-		���̐����w�肵���ꍇ�A�_�C���O�����r���[��Y�����̈ʒu��
-		�ύX���܂���B
-		�_�C���O�����̏�[�E���[�̂ǂ�������́w�wIndex�x�ɂ��邩�́A
-		bEkiOrderIsBottom �Ŏw�肵�܂��B
+		『駅Index』を指定してください。
+		この関数は、ダイヤグラムの上端・下端を、この『駅Index』にします。
+		負の数を指定した場合、ダイヤグラムビューのY方向の位置を
+		変更しません。
+		ダイヤグラムの上端・下端のどちらをこの『駅Index』にするかは、
+		bEkiOrderIsBottom で指定します。
 	 @param bEkiIndexIsBottom [in]
-		- false ;	//	���̊֐��� iEkiIndex ���A�_�C���O�����̏�[�ɂ��܂��B
-		- true ;	//	���̊֐��� iEkiIndex ���A�_�C���O�����̉��[�ɂ��܂��B
+		- false ;	//	この関数は iEkiIndex を、ダイヤグラムの上端にします。
+		- true ;	//	この関数は iEkiIndex を、ダイヤグラムの下端にします。
 	 */
 	virtual int setZone_Dgr( 
 		const CdDedJikoku& aCdDedJikoku ,
@@ -410,23 +410,23 @@ public:
 
 // ----------------------------------------------------------------
 protected:
-	CDedAllOperationTable2View();           // ���I�����Ɏg�p�����v���e�N�g �R���X�g���N�^
+	CDedAllOperationTable2View();           // 動的生成に使用されるプロテクト コンストラクタ
 	DECLARE_DYNCREATE(CDedAllOperationTable2View)
 
-// �A�g���r���[�g
+// アトリビュート
 public:
 
-// �I�y���[�V����
+// オペレーション
 public:
 
-// �I�[�o�[���C�h
-	// ClassWizard �͉��z�֐��̃I�[�o�[���C�h�𐶐����܂��B
+// オーバーライド
+	// ClassWizard は仮想関数のオーバーライドを生成します。
 
 	//{{AFX_VIRTUAL(CDedAllOperationTable2View)
 	public:
 	virtual void OnPrepareDC(CDC* pDC, CPrintInfo* pInfo = NULL);
 	protected:
-	virtual void OnDraw(CDC* pDC);      // ���̃r���[��`�悷�邽�߂ɃI�[�o�[���C�h���܂����B
+	virtual void OnDraw(CDC* pDC);      // このビューを描画するためにオーバーライドしました。
 	virtual void OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint);
 	virtual BOOL OnPreparePrinting(CPrintInfo* pInfo);
 	virtual void OnBeginPrinting(CDC* pDC, CPrintInfo* pInfo);
@@ -435,9 +435,9 @@ public:
 	virtual void OnActivateView(BOOL bActivate, CView* pActivateView, CView* pDeactiveView);
 	//}}AFX_VIRTUAL
 
-// �C���v�������e�[�V����
+// インプリメンテーション
 protected:
-	virtual ~CDedAllOperationTable2View();
+	virtual ‾CDedAllOperationTable2View();
 #ifdef _DEBUG
 	virtual void AssertValid() const;
 	virtual void Dump(CDumpContext& dc) const;
@@ -446,7 +446,7 @@ protected:
 private:
 
 private:
-	// �������ꂽ���b�Z�[�W �}�b�v�֐�
+	// 生成されたメッセージ マップ関数
 
 	//{{AFX_MSG(CDedAllOperationTable2View)
 	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
@@ -487,7 +487,7 @@ private:
 /////////////////////////////////////////////////////////////////////////////
 
 //{{AFX_INSERT_LOCATION}}
-// Microsoft Visual C++ �͑O�s�̒��O�ɒǉ��̐錾��}�����܂��B
+// Microsoft Visual C++ は前行の直前に追加の宣言を挿入します。
 
 } //namespace ViewAllOperationTable2
 

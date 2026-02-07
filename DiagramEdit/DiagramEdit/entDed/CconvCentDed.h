@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍAtake-okm‚ªì¬‚µ‚½OuDia‚ğ‰ü‘¢‚µ‚½ƒ\ƒtƒgƒEƒFƒA‚Å‚·B
-‚±‚ÌƒvƒƒOƒ‰ƒ€—˜—p‚É‚Â‚¢‚Ä‚ÍAtake-okm‹LÚ‚Ì‰º‹L•¶‘‚É€‹’‚µ‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã€take-okmæ°ãŒä½œæˆã—ãŸOuDiaã‚’æ”¹é€ ã—ãŸã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ åˆ©ç”¨ã«ã¤ã„ã¦ã¯ã€take-okmæ°è¨˜è¼‰ã®ä¸‹è¨˜æ–‡æ›¸ã«æº–æ‹ ã—ã¾ã™ã€‚
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(–ó: 
+(è¨³: 
 
-	OuDia - —ñÔ•\‚ğ‚à‚Æ‚ÉAƒ_ƒCƒ„ƒOƒ‰ƒ€‚ğ•`‰æ‚·‚éWin32ƒAƒvƒŠƒP[ƒV
-ƒ‡ƒ“B
+	OuDia - åˆ—è»Šæ™‚åˆ»è¡¨ã‚’ã‚‚ã¨ã«ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚’æç”»ã™ã‚‹Win32ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·
+ãƒ§ãƒ³ã€‚
 
 Copyright (C) 2006-2017 take-okm 
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍƒtƒŠ[ƒ\ƒtƒgƒEƒFƒA‚Å‚·B‚ ‚È‚½‚Í‚±‚ê‚ğAƒtƒŠ[ƒ\ƒtƒgƒEƒFƒAà
-’c‚É‚æ‚Á‚Ä”­s‚³‚ê‚½GNU ˆê”ÊŒöO—˜—p‹–‘ø‘(ƒo[ƒWƒ‡ƒ“3‚©A‚»‚êˆÈ~‚Ìƒo[ƒWƒ‡
-ƒ“‚Ì‚¤‚¿‚Ç‚ê‚©)‚ª’è‚ß‚éğŒ‚Ì‰º‚ÅÄ”Ğ•z‚Ü‚½‚Í‰ü•Ï ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚ã‚ãªãŸã¯ã“ã‚Œã‚’ã€ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢è²¡
+å›£ã«ã‚ˆã£ã¦ç™ºè¡Œã•ã‚ŒãŸGNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸(ãƒãƒ¼ã‚¸ãƒ§ãƒ³3ã‹ã€ãã‚Œä»¥é™ã®ãƒãƒ¼ã‚¸ãƒ§
+ãƒ³ã®ã†ã¡ã©ã‚Œã‹)ãŒå®šã‚ã‚‹æ¡ä»¶ã®ä¸‹ã§å†é ’å¸ƒã¾ãŸã¯æ”¹å¤‰ ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚Í—L—p‚Å‚ ‚é‚±‚Æ‚ğŠè‚Á‚Ä”Ğ•z‚³‚ê‚Ü‚·‚ªA*‘S‚­‚Ì–³•ÛØ *‚Å‚·B
-¤‹Æ‰Â”\«‚Ì•ÛØ‚â“Á’è–Ú“I‚Ö‚Ì“K‡«‚ÍAŒ¾ŠO‚É¦‚³‚ê‚½‚à‚Ì‚à ŠÜ‚ßA‘S‚­‘¶İ
-‚µ‚Ü‚¹‚ñBÚ‚µ‚­‚ÍGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ğ‚²——‚­‚¾‚³‚¢B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯æœ‰ç”¨ã§ã‚ã‚‹ã“ã¨ã‚’é¡˜ã£ã¦é ’å¸ƒã•ã‚Œã¾ã™ãŒã€*å…¨ãã®ç„¡ä¿è¨¼ *ã§ã™ã€‚
+å•†æ¥­å¯èƒ½æ€§ã®ä¿è¨¼ã‚„ç‰¹å®šç›®çš„ã¸ã®é©åˆæ€§ã¯ã€è¨€å¤–ã«ç¤ºã•ã‚ŒãŸã‚‚ã®ã‚‚ å«ã‚ã€å…¨ãå­˜åœ¨
+ã—ã¾ã›ã‚“ã€‚è©³ã—ãã¯GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã‚’ã”è¦§ãã ã•ã„ã€‚
 
-‚ ‚È‚½‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚Æ‹¤‚ÉAGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ÌƒRƒs[‚ğˆê•” ó‚¯æ‚Á
-‚Ä‚¢‚é‚Í‚¸‚Å‚·B‚à‚µó‚¯æ‚Á‚Ä‚¢‚È‚¯‚ê‚ÎA<http://www.gnu.org/licenses/> ‚ğ
-‚²——‚­‚¾‚³‚¢B
+ã‚ãªãŸã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¨å…±ã«ã€GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã®ã‚³ãƒ”ãƒ¼ã‚’ä¸€éƒ¨ å—ã‘å–ã£
+ã¦ã„ã‚‹ã¯ãšã§ã™ã€‚ã‚‚ã—å—ã‘å–ã£ã¦ã„ãªã‘ã‚Œã°ã€<http://www.gnu.org/licenses/> ã‚’
+ã”è¦§ãã ã•ã„ã€‚
 
 )
 
-  ‰Á‚¦‚ÄA“Á•Ê‚È—áŠO‚Æ‚µ‚ÄAtake-okm ‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÌƒR[ƒh‚ğ 
+  åŠ ãˆã¦ã€ç‰¹åˆ¥ãªä¾‹å¤–ã¨ã—ã¦ã€take-okm ã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ã‚³ãƒ¼ãƒ‰ã‚’ 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ‚ ‚é‚¢‚Í "MFC Version 9.0" ‚Æ“¯‚¶ƒ‰ƒCƒZƒ“ƒX‚ª“K—p‚³‚ê‚½
-  "MFC Version 9.0" ‚Ì‰ü•Ï‚³‚ê‚½ƒo[ƒWƒ‡ƒ“)‚ÆƒŠƒ“ƒN‚µA
-  ƒŠƒ“ƒN‚³‚ê‚½—¼Ò‚ğŠÜ‚ŞŒ‹‡’˜ì•¨‚ğ”Ğ•z‚·‚é‹–‰Â‚ğ—^‚¦‚Ü‚·B
-  ‚ ‚È‚½‚Í "MFC" ˆÈŠO‚Åg‚í‚ê‚Ä‚¢‚é‚·‚×‚Ä
-  ‚ÌƒR[ƒh‚ÉŠÖ‚µ‚Ä‚Í‘S–Ê“I‚ÉGNUˆê”ÊŒöO—˜—p‹–‘øŒ_–ñ‘‚É]‚í‚È‚¯‚ê‚Î
-  ‚È‚è‚Ü‚¹‚ñB‚ ‚È‚½‚ª‚±‚Ìƒtƒ@ƒCƒ‹‚ğ‰ü•Ï‚µ‚½‚È‚ç‚ÎA‚ ‚È‚½‚Í‚±‚Ì—áŠO
-  ‚ğ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚Ìƒtƒ@ƒCƒ‹‚Éˆø‚«‘±‚«İ‚¯‚é‚±‚Æ‚à‚Å‚«‚Ü‚·‚ªA‚»
-  ‚¤‚·‚é‹`–±‚Í‚ ‚è‚Ü‚¹‚ñB‚à‚µ—áŠO‚ğİ‚¯‚½‚­‚È‚¯‚ê‚ÎA‚±‚Ì—áŠOğ€‚ğ
-  ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚©‚ç‚Ííœ‚µ‚Ä‚­‚¾‚³‚¢B)
+  (  ã‚ã‚‹ã„ã¯ "MFC Version 9.0" ã¨åŒã˜ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ãŒé©ç”¨ã•ã‚ŒãŸ
+  "MFC Version 9.0" ã®æ”¹å¤‰ã•ã‚ŒãŸãƒãƒ¼ã‚¸ãƒ§ãƒ³)ã¨ãƒªãƒ³ã‚¯ã—ã€
+  ãƒªãƒ³ã‚¯ã•ã‚ŒãŸä¸¡è€…ã‚’å«ã‚€çµåˆè‘—ä½œç‰©ã‚’é ’å¸ƒã™ã‚‹è¨±å¯ã‚’ä¸ãˆã¾ã™ã€‚
+  ã‚ãªãŸã¯ "MFC" ä»¥å¤–ã§ä½¿ã‚ã‚Œã¦ã„ã‚‹ã™ã¹ã¦
+  ã®ã‚³ãƒ¼ãƒ‰ã«é–¢ã—ã¦ã¯å…¨é¢çš„ã«GNUä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾å¥‘ç´„æ›¸ã«å¾“ã‚ãªã‘ã‚Œã°
+  ãªã‚Šã¾ã›ã‚“ã€‚ã‚ãªãŸãŒã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ”¹å¤‰ã—ãŸãªã‚‰ã°ã€ã‚ãªãŸã¯ã“ã®ä¾‹å¤–
+  ã‚’ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®ãƒ•ã‚¡ã‚¤ãƒ«ã«å¼•ãç¶šãè¨­ã‘ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ãŒã€ã
+  ã†ã™ã‚‹ç¾©å‹™ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ã‚‚ã—ä¾‹å¤–ã‚’è¨­ã‘ãŸããªã‘ã‚Œã°ã€ã“ã®ä¾‹å¤–æ¡é …ã‚’
+  ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‹ã‚‰ã¯å‰Šé™¤ã—ã¦ãã ã•ã„ã€‚)
 */
 /*
 // ****************************************************************
@@ -79,11 +79,11 @@ Copyright (C) 2006-2017 take-okm
 
 /** @file */
 
-#include "str\OuPropertiesText\CNodeContainer.h"
-#include "str\OuPropertiesText\ErrorInfo\COuErrorInfoContainer.h"
-#include "str\CEnumToString.h"
-#include "DcdCd\DcDrawProp\CdDcdFreeLineProp.h"
-#include "DcdCd\DcDrawProp\CdColorProp.h"
+#include "strÂ¥OuPropertiesTextÂ¥CNodeContainer.h"
+#include "strÂ¥OuPropertiesTextÂ¥ErrorInfoÂ¥COuErrorInfoContainer.h"
+#include "strÂ¥CEnumToString.h"
+#include "DcdCdÂ¥DcDrawPropÂ¥CdDcdFreeLineProp.h"
+#include "DcdCdÂ¥DcDrawPropÂ¥CdColorProp.h"
 
 #include "CentDedEki.h"
 #include "CentDedRessyasyubetsu.h"
@@ -101,130 +101,130 @@ namespace entDed{
 // ****************************************************************
 /**
 	@brief
-	  DiagramEdit ‚ÌƒGƒ“ƒeƒBƒeƒBƒNƒ‰ƒX‚ÌƒIƒuƒWƒFƒNƒg‚Ì‘®«ƒf[ƒ^‚Ì“à—e‚ğA
-	‘¼‚Ìƒf[ƒ^Œ`®‚É•ÏŠ·‚·‚éŠÖ”‚ğû˜^‚µ‚Ä‚¢‚Ü‚·B
+	  DiagramEdit ã®ã‚¨ãƒ³ãƒ†ã‚£ãƒ†ã‚£ã‚¯ãƒ©ã‚¹ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®å±æ€§ãƒ‡ãƒ¼ã‚¿ã®å†…å®¹ã‚’ã€
+	ä»–ã®ãƒ‡ãƒ¼ã‚¿å½¢å¼ã«å¤‰æ›ã™ã‚‹é–¢æ•°ã‚’åéŒ²ã—ã¦ã„ã¾ã™ã€‚
 
-	OuPropertiesText::CNodeContainer ƒIƒuƒWƒFƒNƒg‚Æ‚ÌŠÔ‚Ì•ÏŠ·‚ğƒTƒ|[ƒg‚µ‚Ä‚¢‚Ü‚·B 
+	OuPropertiesText::CNodeContainer ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¨ã®é–“ã®å¤‰æ›ã‚’ã‚µãƒãƒ¼ãƒˆã—ã¦ã„ã¾ã™ã€‚ 
 	
 */
 class CconvCentDed
 {
 public:
 	// ********************************
-	///@name COuErrorInfo::m_strReason , m_Prop ‚Ì Name
+	///@name COuErrorInfo::m_strReason , m_Prop ã® Name
 	// ********************************
 	///@{
 	
 
 	/**
-	"TrackName" ‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+	"TrackName" ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 	@param TrackName
-	w’è‚³‚ê‚Ä‚¢‚éí•Ê–¼
+	æŒ‡å®šã•ã‚Œã¦ã„ã‚‹ç¨®åˆ¥å
 	*/
 	static const TCHAR* ERRREASON_TrackNameIsInvalid() { return _T("TrackName is invalid."); };
 
 	/**
-	"TrackRyakusyou" ‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+	"TrackRyakusyou" ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 	@param TrackRyakusyou
-	w’è‚³‚ê‚Ä‚¢‚éí•Ê–¼
+	æŒ‡å®šã•ã‚Œã¦ã„ã‚‹ç¨®åˆ¥å
 	*/
 	static const TCHAR* ERRREASON_TrackRyakusyouIsInvalid() { return _T("TrackRyakusyou is invalid."); };
 
 	/**
-	"TrackNoboriRyakusyou" ‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+	"TrackNoboriRyakusyou" ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 	@param TrackNoboriRyakusyou
-	w’è‚³‚ê‚Ä‚¢‚éí•Ê–¼
+	æŒ‡å®šã•ã‚Œã¦ã„ã‚‹ç¨®åˆ¥å
 	*/
 	static const TCHAR* ERRREASON_TrackNoboriRyakusyouIsInvalid() { return _T("TrackNoboriRyakusyou is invalid."); };
 
 	/**
-		"Ekijikokukeisiki" ‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+		"Ekijikokukeisiki" ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		@param Ekijikokukeisiki
-			w’è‚³‚ê‚Ä‚¢‚é‰wŒ`®
+			æŒ‡å®šã•ã‚Œã¦ã„ã‚‹é§…æ™‚åˆ»å½¢å¼
 	*/
 	static const TCHAR* ERRREASON_EkijikokukeisikiIsInvalid(){	return _T("Ekijikokukeisiki is invalid.") ;};
 
 	/**
-		"Ekikibo" ‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+		"Ekikibo" ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		@param Ekikibo
-			w’è‚³‚ê‚Ä‚¢‚é‰w‹K–Í
+			æŒ‡å®šã•ã‚Œã¦ã„ã‚‹é§…è¦æ¨¡
 	*/
 	static const TCHAR* ERRREASON_EkikiboIsInvalid(){	return _T("Ekikibo is invalid.") ;};
 
 	/**
-		"DiagramRessyajouhouHyouji" ‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+		"DiagramRessyajouhouHyouji" ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		@param DiagramRessyajouhouHyoujiKudari
-			w’è‚³‚ê‚Ä‚¢‚é“à—e
+			æŒ‡å®šã•ã‚Œã¦ã„ã‚‹å†…å®¹
 		@param DiagramRessyajouhouHyoujiNobori
-			w’è‚³‚ê‚Ä‚¢‚é“à—e
+			æŒ‡å®šã•ã‚Œã¦ã„ã‚‹å†…å®¹
 	*/
 	static const TCHAR* ERRREASON_DiagramRessyajouhouHyoujiIsInvalid(){	return _T("DiagramRessyajouhouHyouji is invalid.") ;};
 
 	/**
-		"Eki" ‚ªƒfƒBƒŒƒNƒgƒŠ‚Å‚Í‚ ‚è‚Ü‚¹‚ñB
+		"Eki" ãŒãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
 		@param Index
-			‘ÎÛ‚Æ‚È‚é Eki ‚Ì”Ô†(0‹N“_)‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+			å¯¾è±¡ã¨ãªã‚‹ Eki ã®ç•ªå·(0èµ·ç‚¹)ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 	*/
 	static const TCHAR* ERRREASON_EkiIsNotDirectory(){	return _T("Eki Is Not Directory.") ;};
 	static const TCHAR* ERRPROP_Index(){	return _T("Index") ;};
 
 	/**
-		"Syubetsumei" ‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+		"Syubetsumei" ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		@param Syubetsumei
-			w’è‚³‚ê‚Ä‚¢‚éí•Ê–¼
+			æŒ‡å®šã•ã‚Œã¦ã„ã‚‹ç¨®åˆ¥å
 	*/
 	static const TCHAR* ERRREASON_SyubetsumeiIsInvalid(){	return _T("Syubetsumei is invalid.") ;};
 	/**
-		"DiagramSenStyle" ‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+		"DiagramSenStyle" ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		@param DiagramSenStyle
-			w’è‚³‚ê‚Ä‚¢‚é’l
+			æŒ‡å®šã•ã‚Œã¦ã„ã‚‹å€¤
 	*/
 	static const TCHAR* ERRREASON_DiagramSenStyleIsInvalid(){	return _T("DiagramSenStyle is invalid.") ;};
 
 	/**
-		"Ressyasyubetsu" ‚ªƒfƒBƒŒƒNƒgƒŠ‚Å‚Í‚ ‚è‚Ü‚¹‚ñB
+		"Ressyasyubetsu" ãŒãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
 		@param Index
-			‘ÎÛ‚Æ‚È‚é Ressyasyubetsu ‚Ì”Ô†(0‹N“_)‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+			å¯¾è±¡ã¨ãªã‚‹ Ressyasyubetsu ã®ç•ªå·(0èµ·ç‚¹)ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 	*/
 	static const TCHAR* ERRREASON_RessyasyubetsuIsNotDirectory(){	return _T("Ressyasyubetsu is invalid.") ;};
 
 	/**
-		"DiaName" ‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+		"DiaName" ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 	*/
 	static const TCHAR* ERRREASON_DiaNameInvalid(){	return _T("DiaName is invalid.") ;};
 
 	/**
-		"RessyaCont" ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB
+		"RessyaCont" ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚
 		@param Ressyahoukou
-			Œ©‚Â‚©‚ç‚È‚©‚Á‚½RessyaCont‚Ì—ñÔ•ûŒüB "Kudari" ‚© "Nobori" ‚Ì‚¢‚¸‚ê‚©‚Å‚·B
+			è¦‹ã¤ã‹ã‚‰ãªã‹ã£ãŸRessyaContã®åˆ—è»Šæ–¹å‘ã€‚ "Kudari" ã‹ "Nobori" ã®ã„ãšã‚Œã‹ã§ã™ã€‚
 	*/
 	static const TCHAR* ERRREASON_ResyaContIsNotExist(){	return _T("Ressyahoukou is Not Exist.") ;};
 
 	static const TCHAR* ERRPROP_Ressyahoukou(){	return _T("Ressyahoukou") ;};
 
 	/**
-		‹N“_‚ª•s³‚Å‚·B
+		èµ·ç‚¹æ™‚åˆ»ãŒä¸æ­£ã§ã™ã€‚
 	@param Jikoku
-		w’è‚³‚ê‚½
+		æŒ‡å®šã•ã‚ŒãŸæ™‚åˆ»
 	*/
 	static const TCHAR* ERRREASON_KitenjikokuIsInvalid(){	return _T("Kitenjikoku Is Invelid.") ;};
 
 	static const TCHAR* ERRPROP_Jikoku(){	return _T("Jikoku") ;};
 
 	/**
-		ƒ_ƒCƒ„ƒOƒ‰ƒ€‚ÌŠù’è‚Ì‰wŠÔ•‚ª•s³‚Å‚·B
+		ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã®æ—¢å®šã®é§…é–“å¹…ãŒä¸æ­£ã§ã™ã€‚
 	@param Value
-		İ’è‚³‚ê‚Ä‚¢‚é’l
+		è¨­å®šã•ã‚Œã¦ã„ã‚‹å€¤
 	*/
 	static const TCHAR* ERRREASON_DiagramDgrYZahyouKyoriDefaultIsInvalid(){	return _T("DiagramDgrYZahyouKyoriDefault Is Invelid.") ;};
 
 	static const TCHAR* ERRPROP_Value(){	return _T("Value") ;};
 	/**
-		’l‚ÌŒ`®‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+		å€¤ã®å½¢å¼ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 	@param Name
-		€–Ú–¼
+		é …ç›®å
 	@param Value
-		İ’è‚³‚ê‚Ä‚¢‚é’l
+		è¨­å®šã•ã‚Œã¦ã„ã‚‹å€¤
 	*/
 	static const TCHAR* ERRREASON_InvalidValueFormat(){	return _T("Invalid Value Format.") ;};
 
@@ -239,38 +239,38 @@ public:
 	 //	CentDedEkiTrack2
 	 // ********************************
 	 /**
-	 OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ÉA
-	 CentDedEkiTrack2 ‚Ì‘®«‚ğ’Ç‰Á‚µ‚Ü‚·B
+	 OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€
+	 CentDedEkiTrack2 ã®å±æ€§ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 	 @param aCentDedEkiTrack2 [in]
-	 CentDedEkiTrack2 ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+	 CentDedEkiTrack2 ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 	 @param pCNodeContainer [in,out]
-	 ‚±‚ÌŠÖ”‚ÍA‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉAaCentDedEkiTrack2 ‚Ì“à—e‚ğ’Ç‰Á‚µ‚Ü‚·B
+	 ã“ã®é–¢æ•°ã¯ã€ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€aCentDedEkiTrack2 ã®å†…å®¹ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 	 @return
-	 ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-	 -	-11 ;	//	TrackName ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
-	 -	-21 ;	//	TrackRyakusyou ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
-	 -	-31 ;	//	TrackNoboirRyakusyou ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
+	 æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+	 -	-11 ;	//	TrackName ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
+	 -	-21 ;	//	TrackRyakusyou ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
+	 -	-31 ;	//	TrackNoboirRyakusyou ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
 	 */
 	 int CentDedEkiTrack2_To_OuPropertiesText(
 		 const CentDedEkiTrack2& aCentDedEkiTrack2,
 		 OuPropertiesText::CNodeContainer* pCNodeContainer);
 
 	 /**
-	 OuPropertiesText ƒIƒuƒWƒFƒNƒg‚©‚çA
-	 CentDedEkiTrack2_To_OuPropertiesText() ŠÖ”‚É‚æ‚Á‚Äì¬‚³‚ê‚½
-	 ƒAƒCƒeƒ€‚ğ“Ç‚İ‚İA CentDedEkiTrack2 ƒIƒuƒWƒFƒNƒg‚É”½‰f‚µ‚Ü‚·B
+	 OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‹ã‚‰ã€
+	 CentDedEkiTrack2_To_OuPropertiesText() é–¢æ•°ã«ã‚ˆã£ã¦ä½œæˆã•ã‚ŒãŸ
+	 ã‚¢ã‚¤ãƒ†ãƒ ã‚’èª­ã¿è¾¼ã¿ã€ CentDedEkiTrack2 ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«åæ˜ ã—ã¾ã™ã€‚
 
 	 @param pCentDedEkiTrack2 [out]
-	 ‚±‚ÌŠÖ”‚Í‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉA‘®«‚ğ”½‰f‚µ‚Ü‚·B
+	 ã“ã®é–¢æ•°ã¯ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€å±æ€§ã‚’åæ˜ ã—ã¾ã™ã€‚
 	 @param pCNodeContainer [in]
-	 ‘®«‚ğ•Û‚µ‚Ä‚¢‚é OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+	 å±æ€§ã‚’ä¿æŒã—ã¦ã„ã‚‹ OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 	 @param pCOuErrorInfoContainer [in,out]
-	 ‚±‚ÌŠÖ”‚ÍƒGƒ‰[‚ª”­¶‚µ‚½‚çAƒGƒ‰[‚Ìî•ñ‚ğ‚±‚ÌƒIƒuƒWƒFƒNƒg‚É’Ç‰Á‚µ‚Ü‚·B
+	 ã“ã®é–¢æ•°ã¯ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ãŸã‚‰ã€ã‚¨ãƒ©ãƒ¼ã®æƒ…å ±ã‚’ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«è¿½åŠ ã—ã¾ã™ã€‚
 	 @return
-	 ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-	 -	-11 ;	//	TrackName ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
-	 -	-21 ;	//	TrackRyakusyou ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
-	 -	-31 ;	//	TrackNoboirRyakusyou ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
+	 æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+	 -	-11 ;	//	TrackName ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
+	 -	-21 ;	//	TrackRyakusyou ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
+	 -	-31 ;	//	TrackNoboirRyakusyou ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
 	 */
 	 int CentDedEkiTrack2_From_OuPropertiesText(
 		 CentDedEkiTrack2* pCentDedEkiTrack2,
@@ -282,41 +282,41 @@ public:
 	 // ********************************
 
 	 /**
-	 OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ÉA
-	 CentDedEkiTrack2Cont ‚Ì‘®«‚ğ’Ç‰Á‚µ‚Ü‚·B
+	 OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€
+	 CentDedEkiTrack2Cont ã®å±æ€§ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 
-	 ‚±‚ÌŠÖ”‚ÍA CentDedEkiTrack2 ƒIƒuƒWƒFƒNƒg‚ğ "EkiTrack2" Directory ‚Æ‚µ‚Ä’Ç‰Á‚µ‚Ü‚·B
+	 ã“ã®é–¢æ•°ã¯ã€ CentDedEkiTrack2 ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ "EkiTrack2" Directory ã¨ã—ã¦è¿½åŠ ã—ã¾ã™ã€‚
 	 @param aCentDedEkiTrack2Cont [in]
-	 CentDedEkiTrack2Cont ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+	 CentDedEkiTrack2Cont ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 	 @param pCNodeContainer [in,out]
-	 ‚±‚ÌŠÖ”‚ÍA‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉAaCentDedEkiTrack2Cont ‚Ì“à—e‚ğ’Ç‰Á‚µ‚Ü‚·B
+	 ã“ã®é–¢æ•°ã¯ã€ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€aCentDedEkiTrack2Cont ã®å†…å®¹ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 	 @return
-	 ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-	 -	-11 ;	//	TrackName ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
-	 -	-21 ;	//	TrackRyakusyou ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
-	 -	-31 ;	//	TrackNoboirRyakusyou ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
+	 æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+	 -	-11 ;	//	TrackName ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
+	 -	-21 ;	//	TrackRyakusyou ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
+	 -	-31 ;	//	TrackNoboirRyakusyou ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
 	 */
 	 int CentDedEkiTrack2Cont_To_OuPropertiesText(
 		 const CentDedEkiTrack2Cont& aCentDedEkiTrack2Cont,
 		 OuPropertiesText::CNodeContainer* pCNodeContainer);
 
 	 /**
-	 OuPropertiesText ƒIƒuƒWƒFƒNƒg‚©‚çA
-	 CentDedEkiTrack2_To_OuPropertiesText() ŠÖ”‚É‚æ‚Á‚Äì¬‚³‚ê‚½
-	 ƒAƒCƒeƒ€‚ğ“Ç‚İ‚İA CentDedEkiTrack2 ƒIƒuƒWƒFƒNƒg‚É”½‰f‚µ‚Ü‚·B
+	 OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‹ã‚‰ã€
+	 CentDedEkiTrack2_To_OuPropertiesText() é–¢æ•°ã«ã‚ˆã£ã¦ä½œæˆã•ã‚ŒãŸ
+	 ã‚¢ã‚¤ãƒ†ãƒ ã‚’èª­ã¿è¾¼ã¿ã€ CentDedEkiTrack2 ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«åæ˜ ã—ã¾ã™ã€‚
 
 	 @param pCentDedEkiTrack2Cont [in,out]
-	 ‚±‚ÌŠÖ”‚Í‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉA‘®«‚ğ’Ç‰Á‚µ‚Ü‚·B
+	 ã“ã®é–¢æ•°ã¯ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€å±æ€§ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 	 @param pCNodeContainer [in]
-	 ‘®«‚ğ•Û‚µ‚Ä‚¢‚é OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+	 å±æ€§ã‚’ä¿æŒã—ã¦ã„ã‚‹ OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 	 @param pCOuErrorInfoContainer [in,out]
-	 ‚±‚ÌŠÖ”‚ÍƒGƒ‰[‚ª”­¶‚µ‚½‚çAƒGƒ‰[‚Ìî•ñ‚ğ‚±‚ÌƒIƒuƒWƒFƒNƒg‚É’Ç‰Á‚µ‚Ü‚·B
+	 ã“ã®é–¢æ•°ã¯ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ãŸã‚‰ã€ã‚¨ãƒ©ãƒ¼ã®æƒ…å ±ã‚’ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«è¿½åŠ ã—ã¾ã™ã€‚
 	 @return
-	 ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-	 -	-11 ;	//	TrackName ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
-	 -	-21 ;	//	TrackRyakusyou ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
-	 -	-31 ;	//	TrackNoboirRyakusyou ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
-	 -	-101 ;	//	Eki ‚ªƒfƒBƒŒƒNƒgƒŠ‚Å‚Í‚ ‚è‚Ü‚¹‚ñB
+	 æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+	 -	-11 ;	//	TrackName ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
+	 -	-21 ;	//	TrackRyakusyou ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
+	 -	-31 ;	//	TrackNoboirRyakusyou ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
+	 -	-101 ;	//	Eki ãŒãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
 	 */
 	 int CentDedEkiTrack2Cont_From_OuPropertiesText(
 		 CentDedEkiTrack2Cont* aCentDedEkiTrack2Cont,
@@ -328,38 +328,38 @@ public:
 	 //	CentDedEkiTrack2
 	 // ********************************
 	 /**
-	 OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ÉA
-	 CrossingCheckRule ‚Ì‘®«‚ğ’Ç‰Á‚µ‚Ü‚·B
+	 OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€
+	 CrossingCheckRule ã®å±æ€§ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 	 @param aCrossingCheckRule [in]
-	 CrossingCheckRule ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+	 CrossingCheckRule ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 	 @param pCNodeContainer [in,out]
-	 ‚±‚ÌŠÖ”‚ÍA‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉAaCrossingCheckRule ‚Ì“à—e‚ğ’Ç‰Á‚µ‚Ü‚·B
+	 ã“ã®é–¢æ•°ã¯ã€ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€aCrossingCheckRule ã®å†…å®¹ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 	 @return
-	 ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-	 -	-1;	//	strCaption ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
+	 æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+	 -	-1;	//	strCaption ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
 	 */
 	 int CrossingCheckRule_To_OuPropertiesText(
 		 const CrossingCheckRule& aCrossingCheckRule,
 		 OuPropertiesText::CNodeContainer* pCNodeContainer);
 
 	 /**
-	 OuPropertiesText ƒIƒuƒWƒFƒNƒg‚©‚çA
-	 CrossingCheckRule_To_OuPropertiesText() ŠÖ”‚É‚æ‚Á‚Äì¬‚³‚ê‚½
-	 ƒAƒCƒeƒ€‚ğ“Ç‚İ‚İA CrossingCheckRule ƒIƒuƒWƒFƒNƒg‚É”½‰f‚µ‚Ü‚·B
+	 OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‹ã‚‰ã€
+	 CrossingCheckRule_To_OuPropertiesText() é–¢æ•°ã«ã‚ˆã£ã¦ä½œæˆã•ã‚ŒãŸ
+	 ã‚¢ã‚¤ãƒ†ãƒ ã‚’èª­ã¿è¾¼ã¿ã€ CrossingCheckRule ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«åæ˜ ã—ã¾ã™ã€‚
 
 	 @param pCrossingCheckRule [out]
-	 ‚±‚ÌŠÖ”‚Í‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉA‘®«‚ğ”½‰f‚µ‚Ü‚·B
+	 ã“ã®é–¢æ•°ã¯ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€å±æ€§ã‚’åæ˜ ã—ã¾ã™ã€‚
 	 @param pCNodeContainer [in]
-	 ‘®«‚ğ•Û‚µ‚Ä‚¢‚é OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+	 å±æ€§ã‚’ä¿æŒã—ã¦ã„ã‚‹ OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 	 @param pCOuErrorInfoContainer [in,out]
-	 ‚±‚ÌŠÖ”‚ÍƒGƒ‰[‚ª”­¶‚µ‚½‚çAƒGƒ‰[‚Ìî•ñ‚ğ‚±‚ÌƒIƒuƒWƒFƒNƒg‚É’Ç‰Á‚µ‚Ü‚·B
+	 ã“ã®é–¢æ•°ã¯ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ãŸã‚‰ã€ã‚¨ãƒ©ãƒ¼ã®æƒ…å ±ã‚’ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«è¿½åŠ ã—ã¾ã™ã€‚
 	 @return
-	 ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-	 -	-1;	//	strCaption ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
-	 -	-2 ;	//	BeforeFromTrackContentCont ‚ª‹ó‚Å‚·
-	 -	-3 ;	//	BeforeToTrackContentCont ‚ª‹ó‚Å‚·
-	 -	-4 ;	//	AfterFromTrackContentCont ‚ª‹ó‚Å‚·
-	 -	-5 ;	//	AfterToTrackContentCont ‚ª‹ó‚Å‚·B
+	 æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+	 -	-1;	//	strCaption ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
+	 -	-2 ;	//	BeforeFromTrackContentCont ãŒç©ºã§ã™
+	 -	-3 ;	//	BeforeToTrackContentCont ãŒç©ºã§ã™
+	 -	-4 ;	//	AfterFromTrackContentCont ãŒç©ºã§ã™
+	 -	-5 ;	//	AfterToTrackContentCont ãŒç©ºã§ã™ã€‚
 	 */
 	 int CrossingCheckRule_From_OuPropertiesText(
 		 CrossingCheckRule* pCrossingCheckRule,
@@ -371,54 +371,54 @@ public:
 	// ********************************
 	/**
 	@return
-		CentDedEki::EEkijikokukeisiki ‚Æ•¶š—ñ‚ÌŠÔ‚ÌƒRƒ“ƒo[ƒ^ƒIƒuƒWƒFƒNƒg‚ğ•Ô‚µ‚Ü‚·B
+		CentDedEki::EEkijikokukeisiki ã¨æ–‡å­—åˆ—ã®é–“ã®ã‚³ãƒ³ãƒãƒ¼ã‚¿ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
 	*/
 	static const CEnumToString< CentDedEki::EEkijikokukeisiki >& getEEkijikokukeisikiToString();
 
 	/**
 	@return
-		CentDedEki::EEkikibo ‚Æ•¶š—ñ‚ÌŠÔ‚ÌƒRƒ“ƒo[ƒ^ƒIƒuƒWƒFƒNƒg‚ğ•Ô‚µ‚Ü‚·B
+		CentDedEki::EEkikibo ã¨æ–‡å­—åˆ—ã®é–“ã®ã‚³ãƒ³ãƒãƒ¼ã‚¿ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
 	*/
 	static const CEnumToString< CentDedEki::EEkikibo >& getEEkikiboToString();
 
 	/**
 	@return
-		CentDedEki::EDiagramRessyajouhouHyouji ‚Æ•¶š—ñ‚ÌŠÔ‚ÌƒRƒ“ƒo[ƒ^ƒIƒuƒWƒFƒNƒg‚ğ•Ô‚µ‚Ü‚·B
+		CentDedEki::EDiagramRessyajouhouHyouji ã¨æ–‡å­—åˆ—ã®é–“ã®ã‚³ãƒ³ãƒãƒ¼ã‚¿ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
 	*/
 	static const CEnumToString< CentDedEki::EDiagramRessyajouhouHyouji >& 
 		getEDiagramRessyajouhouHyoujiToString() ;
 
 	/**
-		  OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ÉA
-		  CentDedEki ‚Ì‘®«‚ğ’Ç‰Á‚µ‚Ü‚·B
+		  OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€
+		  CentDedEki ã®å±æ€§ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 		@param aCentDedEki [in]
-		  CentDedEki ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		  CentDedEki ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 		@param pCNodeContainer [in,out]
-		  ‚±‚ÌŠÖ”‚ÍA‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉAaCentDedEki ‚Ì“à—e‚ğ’Ç‰Á‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã€ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€aCentDedEki ã®å†…å®¹ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 		@return
-		  ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
+		  æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
 	 */
 	int CentDedEki_To_OuPropertiesText( 
 			const CentDedEki& aCentDedEki , 
 			OuPropertiesText::CNodeContainer* pCNodeContainer ) ;
 	
 	/**
-		  OuPropertiesText ƒIƒuƒWƒFƒNƒg‚©‚çA
-		  CentDedEki_To_OuPropertiesText() ŠÖ”‚É‚æ‚Á‚Äì¬‚³‚ê‚½
-		ƒAƒCƒeƒ€‚ğ“Ç‚İ‚İA CentDedEki ƒIƒuƒWƒFƒNƒg‚É”½‰f‚µ‚Ü‚·B
+		  OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‹ã‚‰ã€
+		  CentDedEki_To_OuPropertiesText() é–¢æ•°ã«ã‚ˆã£ã¦ä½œæˆã•ã‚ŒãŸ
+		ã‚¢ã‚¤ãƒ†ãƒ ã‚’èª­ã¿è¾¼ã¿ã€ CentDedEki ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«åæ˜ ã—ã¾ã™ã€‚
 		
 		@param pCentDedEki [out]
-		  ‚±‚ÌŠÖ”‚Í‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉA‘®«‚ğ”½‰f‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€å±æ€§ã‚’åæ˜ ã—ã¾ã™ã€‚
 		@param pCNodeContainer [in]
-		  ‘®«‚ğ•Û‚µ‚Ä‚¢‚é OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		  å±æ€§ã‚’ä¿æŒã—ã¦ã„ã‚‹ OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 		@param pCOuErrorInfoContainer [in,out]
-		  ‚±‚ÌŠÖ”‚ÍƒGƒ‰[‚ª”­¶‚µ‚½‚çAƒGƒ‰[‚Ìî•ñ‚ğ‚±‚ÌƒIƒuƒWƒFƒNƒg‚É’Ç‰Á‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ãŸã‚‰ã€ã‚¨ãƒ©ãƒ¼ã®æƒ…å ±ã‚’ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«è¿½åŠ ã—ã¾ã™ã€‚
 		@return
-		  ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-			-	-22 ;	//	Ekijikokukeisiki ‚Ì’l‚ª•s³‚Å‚·B
-			-	-32 ;	//	Ekikibo ‚Ì’l‚ª•s³‚Å‚·B
-			-	-41 ;	//	DiagramRessyajouhouHyoujiKudari ‚Ì’l‚ª•s³‚Å‚·B
-			-	-42 ;	//	DiagramRessyajouhouHyoujiNobori ‚Ì’l‚ª•s³‚Å‚·B
+		  æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+			-	-22 ;	//	Ekijikokukeisiki ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
+			-	-32 ;	//	Ekikibo ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
+			-	-41 ;	//	DiagramRessyajouhouHyoujiKudari ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
+			-	-42 ;	//	DiagramRessyajouhouHyoujiNobori ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
 	 */
 	int CentDedEki_From_OuPropertiesText( 
 			CentDedEki* pCentDedEki ,
@@ -430,39 +430,39 @@ public:
 	// ********************************
 	
 	/**
-		  OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ÉA
-		  CentDedEkiCont ‚Ì‘®«‚ğ’Ç‰Á‚µ‚Ü‚·B
+		  OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€
+		  CentDedEkiCont ã®å±æ€§ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 
-		  ‚±‚ÌŠÖ”‚ÍA CentDedEki ƒIƒuƒWƒFƒNƒg‚ğ "Eki" Directory ‚Æ‚µ‚Ä’Ç‰Á‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã€ CentDedEki ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ "Eki" Directory ã¨ã—ã¦è¿½åŠ ã—ã¾ã™ã€‚
 		@param aCentDedEkiCont [in]
-		  CentDedEkiCont ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		  CentDedEkiCont ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 		@param pCNodeContainer [in,out]
-		  ‚±‚ÌŠÖ”‚ÍA‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉAaCentDedEkiCont ‚Ì“à—e‚ğ’Ç‰Á‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã€ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€aCentDedEkiCont ã®å†…å®¹ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 		@return
-		  ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
+		  æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
 	 */
 	int CentDedEkiCont_To_OuPropertiesText( 
 			const CentDedEkiCont& aCentDedEkiCont , 
 			OuPropertiesText::CNodeContainer* pCNodeContainer ) ;
 	
 	/**
-		  OuPropertiesText ƒIƒuƒWƒFƒNƒg‚©‚çA
-		  CentDedEki_To_OuPropertiesText() ŠÖ”‚É‚æ‚Á‚Äì¬‚³‚ê‚½
-		ƒAƒCƒeƒ€‚ğ“Ç‚İ‚İA CentDedEki ƒIƒuƒWƒFƒNƒg‚É”½‰f‚µ‚Ü‚·B
+		  OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‹ã‚‰ã€
+		  CentDedEki_To_OuPropertiesText() é–¢æ•°ã«ã‚ˆã£ã¦ä½œæˆã•ã‚ŒãŸ
+		ã‚¢ã‚¤ãƒ†ãƒ ã‚’èª­ã¿è¾¼ã¿ã€ CentDedEki ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«åæ˜ ã—ã¾ã™ã€‚
 		
 		@param pCentDedEkiCont [in,out]
-		  ‚±‚ÌŠÖ”‚Í‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉA‘®«‚ğ’Ç‰Á‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€å±æ€§ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 		@param pCNodeContainer [in]
-		  ‘®«‚ğ•Û‚µ‚Ä‚¢‚é OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		  å±æ€§ã‚’ä¿æŒã—ã¦ã„ã‚‹ OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 		@param pCOuErrorInfoContainer [in,out]
-		  ‚±‚ÌŠÖ”‚ÍƒGƒ‰[‚ª”­¶‚µ‚½‚çAƒGƒ‰[‚Ìî•ñ‚ğ‚±‚ÌƒIƒuƒWƒFƒNƒg‚É’Ç‰Á‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ãŸã‚‰ã€ã‚¨ãƒ©ãƒ¼ã®æƒ…å ±ã‚’ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«è¿½åŠ ã—ã¾ã™ã€‚
 		@return
-		  ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-			-	-22 ;	//	Ekijikokukeisiki ‚Ì’l‚ª•s³‚Å‚·B
-			-	-32 ;	//	Ekikibo ‚Ì’l‚ª•s³‚Å‚·B
-			-	-41 ;	//	DiagramRessyajouhouHyoujiKudari ‚Ì’l‚ª•s³‚Å‚·B
-			-	-42 ;	//	DiagramRessyajouhouHyoujiNobori ‚Ì’l‚ª•s³‚Å‚·B
-			-	-101 ;	//	Eki ‚ªƒfƒBƒŒƒNƒgƒŠ‚Å‚Í‚ ‚è‚Ü‚¹‚ñB
+		  æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+			-	-22 ;	//	Ekijikokukeisiki ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
+			-	-32 ;	//	Ekikibo ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
+			-	-41 ;	//	DiagramRessyajouhouHyoujiKudari ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
+			-	-42 ;	//	DiagramRessyajouhouHyoujiNobori ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
+			-	-101 ;	//	Eki ãŒãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
 	 */
 	int CentDedEkiCont_From_OuPropertiesText( 
 			CentDedEkiCont* aCentDedEkiCont ,
@@ -474,8 +474,8 @@ public:
 	// ********************************
 	/**
 	@return
-		CentDedRessyasyubetsu::ESenStyle ‚Æ •¶š—ñ‚Æ‚ÌŠÔ‚ÌƒRƒ“ƒo[ƒ^ƒIƒuƒWƒFƒNƒg‚ğ
-		•Ô‚µ‚Ü‚·B
+		CentDedRessyasyubetsu::ESenStyle ã¨ æ–‡å­—åˆ—ã¨ã®é–“ã®ã‚³ãƒ³ãƒãƒ¼ã‚¿ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’
+		è¿”ã—ã¾ã™ã€‚
 	*/
 	static const CEnumToString< CentDedRessyasyubetsu::ESenStyle >& 
 		getESenStyleToString();
@@ -483,34 +483,34 @@ public:
 		getEStopMarkDrawTypeToString() ;
 
 	/**
-		  OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ÉA
-		  CentDedRessyasyubetsu::CdDiagramLineStyle ‚Ì‘®«‚ğ’Ç‰Á‚µ‚Ü‚·B
+		  OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€
+		  CentDedRessyasyubetsu::CdDiagramLineStyle ã®å±æ€§ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 		@param aCdDiagramLineStyle [in]
-		  CentDedRessyasyubetsu::CdDiagramLineStyle ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		  CentDedRessyasyubetsu::CdDiagramLineStyle ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 		@param pCNodeContainer [in,out]
-		  ‚±‚ÌŠÖ”‚ÍA‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉA“à—e‚ğ’Ç‰Á‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã€ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€å†…å®¹ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 		@return
-		  ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-		  Œ»İ‚Ì‚Æ‚±‚ëA 0 ‚µ‚©•Ô‚µ‚Ü‚¹‚ñB
+		  æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+		  ç¾åœ¨ã®ã¨ã“ã‚ã€ 0 ã—ã‹è¿”ã—ã¾ã›ã‚“ã€‚
 	 */
 	int CdDiagramLineStyle_To_OuPropertiesText( 
 			const CentDedRessyasyubetsu::CdDiagramLineStyle& aCdDiagramLineStyle , 
 			OuPropertiesText::CNodeContainer* pCNodeContainer ) ;
 
 	/**
-		  OuPropertiesText ƒIƒuƒWƒFƒNƒg‚©‚çA
-		  CentDedRessyasyubetsu_To_OuPropertiesText() ŠÖ”‚É‚æ‚Á‚Äì¬‚³‚ê‚½
-		ƒAƒCƒeƒ€‚ğ“Ç‚İ‚İA CentDedRessyasyubetsu ƒIƒuƒWƒFƒNƒg‚É”½‰f‚µ‚Ü‚·B
+		  OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‹ã‚‰ã€
+		  CentDedRessyasyubetsu_To_OuPropertiesText() é–¢æ•°ã«ã‚ˆã£ã¦ä½œæˆã•ã‚ŒãŸ
+		ã‚¢ã‚¤ãƒ†ãƒ ã‚’èª­ã¿è¾¼ã¿ã€ CentDedRessyasyubetsu ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«åæ˜ ã—ã¾ã™ã€‚
 		
 		@param pCdDiagramLineStyle [out]
-		  ‚±‚ÌŠÖ”‚Í‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉA‘®«‚ğ”½‰f‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€å±æ€§ã‚’åæ˜ ã—ã¾ã™ã€‚
 		@param pCNodeContainer [in]
-		  ‘®«‚ğ•Û‚µ‚Ä‚¢‚é OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		  å±æ€§ã‚’ä¿æŒã—ã¦ã„ã‚‹ OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 		@param pCOuErrorInfoContainer [in,out]
-		  ‚±‚ÌŠÖ”‚ÍƒGƒ‰[‚ª”­¶‚µ‚½‚çAƒGƒ‰[‚Ìî•ñ‚ğ‚±‚ÌƒIƒuƒWƒFƒNƒg‚É’Ç‰Á‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ãŸã‚‰ã€ã‚¨ãƒ©ãƒ¼ã®æƒ…å ±ã‚’ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«è¿½åŠ ã—ã¾ã™ã€‚
 		@return
-		  ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-			-	-52 ;	//	DiagramSenStyle ‚Ì’l‚ª•s³‚Å‚·B
+		  æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+			-	-52 ;	//	DiagramSenStyle ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
 	 */
 	int CdDiagramLineStyle_From_OuPropertiesText( 
 			CentDedRessyasyubetsu::CdDiagramLineStyle* pCdDiagramLineStyle ,
@@ -518,37 +518,37 @@ public:
 			OuPropertiesText::ErrorInfo::COuErrorInfoContainer* pCOuErrorInfoContainer ) ;
 
 	/**
-		  OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ÉA
-		  CentDedRessyasyubetsu ‚Ì‘®«‚ğ’Ç‰Á‚µ‚Ü‚·B
+		  OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€
+		  CentDedRessyasyubetsu ã®å±æ€§ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 		@param aCentDedRessyasyubetsu [in]
-		  CentDedRessyasyubetsu ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		  CentDedRessyasyubetsu ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 		@param pCNodeContainer [in,out]
-		  ‚±‚ÌŠÖ”‚ÍA‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉACDedRosenFileData ‚Ì“à—e‚ğ’Ç‰Á‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã€ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€CDedRosenFileData ã®å†…å®¹ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 		@return
-		  ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-			-	-11 ;	//	Syubetsumei ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
-			-	-52 ;	//	DiagramSenStyle ‚Ì’l‚ª•s³‚Å‚·B
+		  æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+			-	-11 ;	//	Syubetsumei ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
+			-	-52 ;	//	DiagramSenStyle ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
 	 */
 	int CentDedRessyasyubetsu_To_OuPropertiesText( 
 			const CentDedRessyasyubetsu& aCentDedRessyasyubetsu , 
 			OuPropertiesText::CNodeContainer* pCNodeContainer ) ;
 	
 	/**
-		  OuPropertiesText ƒIƒuƒWƒFƒNƒg‚©‚çA
-		  CentDedRessyasyubetsu_To_OuPropertiesText() ŠÖ”‚É‚æ‚Á‚Äì¬‚³‚ê‚½
-		ƒAƒCƒeƒ€‚ğ“Ç‚İ‚İA CentDedRessyasyubetsu ƒIƒuƒWƒFƒNƒg‚É”½‰f‚µ‚Ü‚·B
+		  OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‹ã‚‰ã€
+		  CentDedRessyasyubetsu_To_OuPropertiesText() é–¢æ•°ã«ã‚ˆã£ã¦ä½œæˆã•ã‚ŒãŸ
+		ã‚¢ã‚¤ãƒ†ãƒ ã‚’èª­ã¿è¾¼ã¿ã€ CentDedRessyasyubetsu ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«åæ˜ ã—ã¾ã™ã€‚
 		
 		@param pCentDedRessyasyubetsu [out]
-		  ‚±‚ÌŠÖ”‚Í‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉA‘®«‚ğ”½‰f‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€å±æ€§ã‚’åæ˜ ã—ã¾ã™ã€‚
 		@param pCNodeContainer [in]
-		  ‘®«‚ğ•Û‚µ‚Ä‚¢‚é OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		  å±æ€§ã‚’ä¿æŒã—ã¦ã„ã‚‹ OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 		@param pCOuErrorInfoContainer [in,out]
-		  ‚±‚ÌŠÖ”‚ÍƒGƒ‰[‚ª”­¶‚µ‚½‚çAƒGƒ‰[‚Ìî•ñ‚ğ‚±‚ÌƒIƒuƒWƒFƒNƒg‚É’Ç‰Á‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ãŸã‚‰ã€ã‚¨ãƒ©ãƒ¼ã®æƒ…å ±ã‚’ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«è¿½åŠ ã—ã¾ã™ã€‚
 		@return
-		  ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-			-	-11 ;	//	Syubetsumei ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
-			-	-52 ;	//	DiagramSenStyle ‚Ì’l‚ª•s³‚Å‚·B
-			-	-101 ;	//	’l‚ÌŒ`®‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+		  æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+			-	-11 ;	//	Syubetsumei ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
+			-	-52 ;	//	DiagramSenStyle ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
+			-	-101 ;	//	å€¤ã®å½¢å¼ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 	 */
 	int CentDedRessyasyubetsu_From_OuPropertiesText( 
 			CentDedRessyasyubetsu* pCentDedRessyasyubetsu ,
@@ -557,14 +557,14 @@ public:
 	
 
 	/**
-		CentDedRessyasyubetsu::CdDiagramLineStyle ‚Ì’l‚ğ‚à‚Æ‚ÉA
-		CDcdFreeLine::CdLineProp ƒIƒuƒWƒFƒNƒg‚É‘®«‚ğ
-		İ’è‚µ‚Ü‚·B
+		CentDedRessyasyubetsu::CdDiagramLineStyle ã®å€¤ã‚’ã‚‚ã¨ã«ã€
+		CDcdFreeLine::CdLineProp ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«å±æ€§ã‚’
+		è¨­å®šã—ã¾ã™ã€‚
 	 @param aLineStyle
-		ü‚ÌŒ`ó‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		ç·šã®å½¢çŠ¶ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 	 @param pCdLineProp [out]
-		‚±‚ÌŠÖ”‚Í‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉA
-		‘®«‚ğİ’è‚µ‚Ü‚·B
+		ã“ã®é–¢æ•°ã¯ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€
+		å±æ€§ã‚’è¨­å®šã—ã¾ã™ã€‚
 
 	 */
 	void CentDedRessyasyubetsu_to_CDcdFreeLineProp(
@@ -576,41 +576,41 @@ public:
 	// ********************************
 	
 	/**
-	  OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ÉA
-	  CentDedRessyasyubetsuCont ‚Ì“à—e‚ğ’Ç‰Á‚µ‚Ü‚·B
-	  ‚±‚ÌŠÖ”‚ÍA CentDedRessyasyubetsu ƒIƒuƒWƒFƒNƒg‚ğ 
-	  "Ressyasyubetsu" Directory ‚Æ‚µ‚Ä’Ç‰Á‚µ‚Ü‚·B
+	  OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€
+	  CentDedRessyasyubetsuCont ã®å†…å®¹ã‚’è¿½åŠ ã—ã¾ã™ã€‚
+	  ã“ã®é–¢æ•°ã¯ã€ CentDedRessyasyubetsu ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ 
+	  "Ressyasyubetsu" Directory ã¨ã—ã¦è¿½åŠ ã—ã¾ã™ã€‚
 	@param aCentDedRessyasyubetsuCont [in]
-	  CentDedRessyasyubetsuCont ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+	  CentDedRessyasyubetsuCont ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 	@param pCNodeContainer [in,out]
-	  ‚±‚ÌŠÖ”‚ÍA‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉACDedRosenFileData ‚Ì“à—e‚ğ’Ç‰Á‚µ‚Ü‚·B
+	  ã“ã®é–¢æ•°ã¯ã€ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€CDedRosenFileData ã®å†…å®¹ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 	@return
-	  ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-		-	-11 ;	//	Syubetsumei ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
-		-	-52 ;	//	DiagramSenStyle ‚Ì’l‚ª•s³‚Å‚·B
+	  æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+		-	-11 ;	//	Syubetsumei ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
+		-	-52 ;	//	DiagramSenStyle ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
 	 */
 	int CentDedRessyasyubetsuCont_To_OuPropertiesText( 
 			const CentDedRessyasyubetsuCont& aCentDedRessyasyubetsuCont , 
 			OuPropertiesText::CNodeContainer* pCNodeContainer ) ;
 	
 	/**
-	  OuPropertiesText ƒIƒuƒWƒFƒNƒg‚©‚çA
-	  CentDedRessyasyubetsuCont_To_OuPropertiesText() ŠÖ”‚É‚æ‚Á‚Äì¬‚³‚ê‚½
-	ƒAƒCƒeƒ€‚ğ“Ç‚İ‚İA CentDedRessyasyubetsu ƒIƒuƒWƒFƒNƒg‚É”½‰f‚µ‚Ü‚·B
+	  OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‹ã‚‰ã€
+	  CentDedRessyasyubetsuCont_To_OuPropertiesText() é–¢æ•°ã«ã‚ˆã£ã¦ä½œæˆã•ã‚ŒãŸ
+	ã‚¢ã‚¤ãƒ†ãƒ ã‚’èª­ã¿è¾¼ã¿ã€ CentDedRessyasyubetsu ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«åæ˜ ã—ã¾ã™ã€‚
 	
 	@param pCentDedRessyasyubetsuCont [in,out]
-	  ‚±‚ÌŠÖ”‚Í‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉA‘®«‚ğã‘‚«‚µ‚Ü‚·B
-	  pCentDedRessyasyubetsuCont ‚Ì—v‘f”‚ª­‚È‚¢ê‡‚ÍA
-	  —v‘f‚ğ’Ç‰Á‚µ‚Ü‚·B
+	  ã“ã®é–¢æ•°ã¯ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€å±æ€§ã‚’ä¸Šæ›¸ãã—ã¾ã™ã€‚
+	  pCentDedRessyasyubetsuCont ã®è¦ç´ æ•°ãŒå°‘ãªã„å ´åˆã¯ã€
+	  è¦ç´ ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 	@param pCNodeContainer [in]
-	  ‘®«‚ğ•Û‚µ‚Ä‚¢‚é OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+	  å±æ€§ã‚’ä¿æŒã—ã¦ã„ã‚‹ OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 	@param pCOuErrorInfoContainer [in,out]
-	  ‚±‚ÌŠÖ”‚ÍƒGƒ‰[‚ª”­¶‚µ‚½‚çAƒGƒ‰[‚Ìî•ñ‚ğ‚±‚ÌƒIƒuƒWƒFƒNƒg‚É’Ç‰Á‚µ‚Ü‚·B
+	  ã“ã®é–¢æ•°ã¯ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ãŸã‚‰ã€ã‚¨ãƒ©ãƒ¼ã®æƒ…å ±ã‚’ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«è¿½åŠ ã—ã¾ã™ã€‚
 	@return
-	  ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-		-	-11 ;	//	Syubetsumei ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
-		-	-52 ;	//	DiagramSenStyle ‚Ì’l‚ª•s³‚Å‚·B
-		-	-101 ;	//	Ressyasyubetsu ‚ªƒfƒBƒŒƒNƒgƒŠ‚Å‚Í‚ ‚è‚Ü‚¹‚ñB
+	  æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+		-	-11 ;	//	Syubetsumei ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
+		-	-52 ;	//	DiagramSenStyle ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
+		-	-101 ;	//	Ressyasyubetsu ãŒãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
 	 */
 	int CentDedRessyasyubetsuCont_From_OuPropertiesText( 
 			CentDedRessyasyubetsuCont* pCentDedRessyasyubetsuCont ,
@@ -622,29 +622,29 @@ public:
 	//	CentDedEkiJikoku
 	// ********************************
 	/**
-		CentDedEkijikoku ‚Ì‘®«‚ğ•¶š—ñ‚É•ÏŠ·‚µ‚Ü‚·B
+		CentDedEkijikoku ã®å±æ€§ã‚’æ–‡å­—åˆ—ã«å¤‰æ›ã—ã¾ã™ã€‚
 	@param pCentDedEkijikoku[in]
-		•ÏŠ·‚ğs‚¤ƒIƒuƒWƒFƒNƒg‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		å¤‰æ›ã‚’è¡Œã†ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 	@return
-		•ÏŠ·Œ‹‰Ê‚ğ•Ô‚µ‚Ü‚·B
+		å¤‰æ›çµæœã‚’è¿”ã—ã¾ã™ã€‚
 	*/
 	tstring CentDedEkiJikoku_To_string( 
 		const CentDedEkiJikoku* pCentDedEkijikoku ) ;
 
 	/**
-		CentDedEkijikoku_To_string() ‚Å¶¬‚µ‚½•¶š—ñ‚ğA
-		CentDedEkijikoku ‚Ì‘®«‚É”½‰f‚µ‚Ü‚·B
+		CentDedEkijikoku_To_string() ã§ç”Ÿæˆã—ãŸæ–‡å­—åˆ—ã‚’ã€
+		CentDedEkijikoku ã®å±æ€§ã«åæ˜ ã—ã¾ã™ã€‚
 		@param pCentDedEkijikoku[out]
-			‚±‚ÌŠÖ”‚Í‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉA‘®«‚ğ”½‰f‚µ‚Ü‚·B
+			ã“ã®é–¢æ•°ã¯ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€å±æ€§ã‚’åæ˜ ã—ã¾ã™ã€‚
 		@param iEkiTrack2Count[in]
-			‰w”Ôü”‚Å‚·A—ñÔ”Ôü‚ª‰w”Ôü‚ğ’´‚¦‚È‚¢‚æ‚¤‚É‚·‚é‚½‚ß‚ÉQÆ‚µ‚Ü‚·
+			é§…ç•ªç·šæ•°ã§ã™ã€åˆ—è»Šç•ªç·šãŒé§…ç•ªç·šã‚’è¶…ãˆãªã„ã‚ˆã†ã«ã™ã‚‹ãŸã‚ã«å‚ç…§ã—ã¾ã™
 		@param iMainTrack[in]
-			å–{ü‚Å‚·A—ñÔ”Ôü‚ª‰w”Ôü‚Ì”ÍˆÍŠO‚¾‚Á‚½ê‡A‚±‚Ì”Ôü‚ªŠ„‚è“–‚Ä‚ç‚ê‚Ü‚·
+			ä¸»æœ¬ç·šã§ã™ã€åˆ—è»Šç•ªç·šãŒé§…ç•ªç·šã®ç¯„å›²å¤–ã ã£ãŸå ´åˆã€ã“ã®ç•ªç·šãŒå‰²ã‚Šå½“ã¦ã‚‰ã‚Œã¾ã™
 		@param strValue[in]
-			‘®«‚ğ•Û‚·‚é•¶š—ñ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+			å±æ€§ã‚’ä¿æŒã™ã‚‹æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 		@return
-			¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-			- Œ»İ‚Ì‚Æ‚±‚ëAƒGƒ‰[‚Í‚ ‚è‚Ü‚¹‚ñB
+			æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+			- ç¾åœ¨ã®ã¨ã“ã‚ã€ã‚¨ãƒ©ãƒ¼ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
 		
 	*/
 	int CentDedEkiJikoku_From_string( 
@@ -657,36 +657,36 @@ public:
 	//	CentDedBeforeOperationCont
 	// ********************************
 	/**
-		CentDedBeforeOperationCont ‚Ì‘®«‚ğ•¶š—ñ‚É•ÏŠ·‚µ‚Ü‚·B
+		CentDedBeforeOperationCont ã®å±æ€§ã‚’æ–‡å­—åˆ—ã«å¤‰æ›ã—ã¾ã™ã€‚
 		@param pCentDedBeforeOperationCont[in]
-			•ÏŠ·‚ğs‚¤ƒIƒuƒWƒFƒNƒg‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+			å¤‰æ›ã‚’è¡Œã†ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 		@param strParentIndex[in]
-			pCentDedBeforeOperationCont‚ÌŠK‘w‚ğ•\‚·•¶š—ñ‚Å‚·
-			‚±‚Ì•¶š—ñ‚ğ‚à‚Æ‚ÉApCNodeContainer‚É‘‚«‚İ‚Ü‚·
+			pCentDedBeforeOperationContã®éšå±¤ã‚’è¡¨ã™æ–‡å­—åˆ—ã§ã™
+			ã“ã®æ–‡å­—åˆ—ã‚’ã‚‚ã¨ã«ã€pCNodeContainerã«æ›¸ãè¾¼ã¿ã¾ã™
 		@return
-			•ÏŠ·Œ‹‰Ê‚ğ•Ô‚µ‚Ü‚·B
+			å¤‰æ›çµæœã‚’è¿”ã—ã¾ã™ã€‚
 	*/
 	vector<vector<tstring>> CentDedBeforeOperationCont_To_string(
 		const CentDedBeforeOperationCont* pCentDedBeforeOperationCont,
 		const tstring strParentIndex);
 
 	/**
-		CentDedBeforeOperationCont_To_string() ‚Å¶¬‚µ‚½•¶š—ñ‚ğA
-		CentDedEkijikoku ‚Ì‘®«‚É”½‰f‚µ‚Ü‚·B
+		CentDedBeforeOperationCont_To_string() ã§ç”Ÿæˆã—ãŸæ–‡å­—åˆ—ã‚’ã€
+		CentDedEkijikoku ã®å±æ€§ã«åæ˜ ã—ã¾ã™ã€‚
 		@param pCentDedBeforeOperationCont[out]
-			‚±‚ÌŠÖ”‚Í‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉA‘®«‚ğ”½‰f‚µ‚Ü‚·B
+			ã“ã®é–¢æ•°ã¯ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€å±æ€§ã‚’åæ˜ ã—ã¾ã™ã€‚
 		@param strParentIndex[in]
-			pCentDedBeforeOperationCont‚ÌŠK‘w‚ğ•\‚·•¶š—ñ‚Å‚·
-			‚±‚Ì•¶š—ñ‚ğ‚à‚Æ‚ÉApCNodeContainer‚©‚ç“Ç‚İo‚µ‚Ü‚·
+			pCentDedBeforeOperationContã®éšå±¤ã‚’è¡¨ã™æ–‡å­—åˆ—ã§ã™
+			ã“ã®æ–‡å­—åˆ—ã‚’ã‚‚ã¨ã«ã€pCNodeContainerã‹ã‚‰èª­ã¿å‡ºã—ã¾ã™
 		@param iEkiTrack2Count[in]
-			Še‰w‚Ì‰w”Ôü”‚Å‚·A“üŠ·”Ôü‚ª‰w”Ôü”‚ğ’´‚¦‚È‚¢‚æ‚¤‚É‚·‚é‚½‚ß‚ÉQÆ‚µ‚Ü‚·
+			å„é§…ã®é§…ç•ªç·šæ•°ã§ã™ã€å…¥æ›ç•ªç·šãŒé§…ç•ªç·šæ•°ã‚’è¶…ãˆãªã„ã‚ˆã†ã«ã™ã‚‹ãŸã‚ã«å‚ç…§ã—ã¾ã™
 		@param iOuterTerminalCount[in]
-			Še‰w‚Ì˜HüŠO”­’…‰w”‚Å‚·A˜HüŠO”­’…‰wIndex‚ª‰w”‚ğ’´‚¦‚È‚¢‚æ‚¤‚É‚·‚é‚½‚ß‚ÉQÆ‚µ‚Ü‚·
+			å„é§…ã®è·¯ç·šå¤–ç™ºç€é§…æ•°ã§ã™ã€è·¯ç·šå¤–ç™ºç€é§…IndexãŒé§…æ•°ã‚’è¶…ãˆãªã„ã‚ˆã†ã«ã™ã‚‹ãŸã‚ã«å‚ç…§ã—ã¾ã™
 		@param pCNodeContainer [in]
-		  ‘®«‚ğ•Û‚µ‚Ä‚¢‚é OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		  å±æ€§ã‚’ä¿æŒã—ã¦ã„ã‚‹ OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 		@return
-			¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-			- Œ»İ‚Ì‚Æ‚±‚ëAƒGƒ‰[‚Í‚ ‚è‚Ü‚¹‚ñB
+			æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+			- ç¾åœ¨ã®ã¨ã“ã‚ã€ã‚¨ãƒ©ãƒ¼ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
 
 	*/
 	int CentDedBeforeOperationCont_From_string(
@@ -699,36 +699,36 @@ public:
 	//	CentDedAfterOperationCont
 	// ********************************
 	/**
-		CentDedAfterOperationCont ‚Ì‘®«‚ğ•¶š—ñ‚É•ÏŠ·‚µ‚Ü‚·B
+		CentDedAfterOperationCont ã®å±æ€§ã‚’æ–‡å­—åˆ—ã«å¤‰æ›ã—ã¾ã™ã€‚
 		@param pCentDedAfterOperationCont[in]
-			•ÏŠ·‚ğs‚¤ƒIƒuƒWƒFƒNƒg‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+			å¤‰æ›ã‚’è¡Œã†ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 		@param strParentIndex[in]
-			pCentDedAfterOperationCont‚ÌŠK‘w‚ğ•\‚·•¶š—ñ‚Å‚·
-			‚±‚Ì•¶š—ñ‚ğ‚à‚Æ‚ÉApCNodeContainer‚É‘‚«‚İ‚Ü‚·
+			pCentDedAfterOperationContã®éšå±¤ã‚’è¡¨ã™æ–‡å­—åˆ—ã§ã™
+			ã“ã®æ–‡å­—åˆ—ã‚’ã‚‚ã¨ã«ã€pCNodeContainerã«æ›¸ãè¾¼ã¿ã¾ã™
 		@return
-			•ÏŠ·Œ‹‰Ê‚ğ•Ô‚µ‚Ü‚·B
+			å¤‰æ›çµæœã‚’è¿”ã—ã¾ã™ã€‚
 	*/
 	vector<vector<tstring>> CentDedAfterOperationCont_To_string(
 		const CentDedAfterOperationCont* pCentDedAfterOperationCont,
 		const tstring strParentIndex);
 
 	/**
-		CentDedAfterOperationCont_To_string() ‚Å¶¬‚µ‚½•¶š—ñ‚ğA
-		CentDedEkijikoku ‚Ì‘®«‚É”½‰f‚µ‚Ü‚·B
+		CentDedAfterOperationCont_To_string() ã§ç”Ÿæˆã—ãŸæ–‡å­—åˆ—ã‚’ã€
+		CentDedEkijikoku ã®å±æ€§ã«åæ˜ ã—ã¾ã™ã€‚
 		@param pCentDedAfterOperationCont[out]
-			‚±‚ÌŠÖ”‚Í‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉA‘®«‚ğ”½‰f‚µ‚Ü‚·B
+			ã“ã®é–¢æ•°ã¯ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€å±æ€§ã‚’åæ˜ ã—ã¾ã™ã€‚
 		@param strParentIndex[in]
-			pCentDedAfterOperationCont‚ÌŠK‘w‚ğ•\‚·•¶š—ñ‚Å‚·
-			‚±‚Ì•¶š—ñ‚ğ‚à‚Æ‚ÉApCNodeContainer‚©‚ç“Ç‚İo‚µ‚Ü‚·
+			pCentDedAfterOperationContã®éšå±¤ã‚’è¡¨ã™æ–‡å­—åˆ—ã§ã™
+			ã“ã®æ–‡å­—åˆ—ã‚’ã‚‚ã¨ã«ã€pCNodeContainerã‹ã‚‰èª­ã¿å‡ºã—ã¾ã™
 		@param iEkiTrack2Count[in]
-			Še‰w‚Ì‰w”Ôü”‚Å‚·A“üŠ·”Ôü‚ª‰w”Ôü”‚ğ’´‚¦‚È‚¢‚æ‚¤‚É‚·‚é‚½‚ß‚ÉQÆ‚µ‚Ü‚·
+			å„é§…ã®é§…ç•ªç·šæ•°ã§ã™ã€å…¥æ›ç•ªç·šãŒé§…ç•ªç·šæ•°ã‚’è¶…ãˆãªã„ã‚ˆã†ã«ã™ã‚‹ãŸã‚ã«å‚ç…§ã—ã¾ã™
 		@param iOuterTerminalCountt[in]
-			Še‰w‚Ì˜HüŠO”­’…‰w”‚Å‚·A˜HüŠO”­’…‰wIndex‚ª‰w”‚ğ’´‚¦‚È‚¢‚æ‚¤‚É‚·‚é‚½‚ß‚ÉQÆ‚µ‚Ü‚·
+			å„é§…ã®è·¯ç·šå¤–ç™ºç€é§…æ•°ã§ã™ã€è·¯ç·šå¤–ç™ºç€é§…IndexãŒé§…æ•°ã‚’è¶…ãˆãªã„ã‚ˆã†ã«ã™ã‚‹ãŸã‚ã«å‚ç…§ã—ã¾ã™
 		@param pCNodeContainer [in]
-		  ‘®«‚ğ•Û‚µ‚Ä‚¢‚é OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		  å±æ€§ã‚’ä¿æŒã—ã¦ã„ã‚‹ OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 		@return
-			¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-			- Œ»İ‚Ì‚Æ‚±‚ëAƒGƒ‰[‚Í‚ ‚è‚Ü‚¹‚ñB
+			æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+			- ç¾åœ¨ã®ã¨ã“ã‚ã€ã‚¨ãƒ©ãƒ¼ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
 
 	*/
 	int CentDedAfterOperationCont_From_string(
@@ -743,24 +743,24 @@ public:
 	// ********************************
 	/**
 	@return
-		ERessyahoukou ‚Æ•¶š—ñ‚Æ‚ÌŠÔ‚ÌƒRƒ“ƒo[ƒ^ƒIƒuƒWƒFƒNƒg‚ğ•Ô‚µ‚Ü‚·B
+		ERessyahoukou ã¨æ–‡å­—åˆ—ã¨ã®é–“ã®ã‚³ãƒ³ãƒãƒ¼ã‚¿ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
 	*/
 	static const CEnumToString<ERessyahoukou>& getERessyahoukouToString() ;
 
 	/**
-		  OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ÉA
-		  CentDedRessya ‚Ì‘®«‚ğ’Ç‰Á‚µ‚Ü‚·B
+		  OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€
+		  CentDedRessya ã®å±æ€§ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 		@param pCentDedRessya [in]
-		  CentDedRessya ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		  CentDedRessya ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 		@param iEnableOperation[in]
-		  ‰^—p‹@”\‚Ì—LŒø–³Œø‚ğ¦‚µ‚Ü‚·B
-		  ‚±‚Ì’l‚ªtrue‚Ì‚Ì‚İA‰^—p”Ô†‚ğo—Í‚µ‚Ü‚·B
-		  (V2 ‰^—p”Ô†o—Í‚Íˆê•Û—¯)
+		  é‹ç”¨æ©Ÿèƒ½ã®æœ‰åŠ¹ç„¡åŠ¹ã‚’ç¤ºã—ã¾ã™ã€‚
+		  ã“ã®å€¤ãŒtrueã®æ™‚ã®ã¿ã€é‹ç”¨ç•ªå·ã‚’å‡ºåŠ›ã—ã¾ã™ã€‚
+		  (V2 é‹ç”¨ç•ªå·å‡ºåŠ›ã¯ä¸€æ™‚ä¿ç•™)
 		@param pCNodeContainer [in,out]
-		  ‚±‚ÌŠÖ”‚ÍA‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉA CentDedRessya ‚Ì“à—e‚ğ’Ç‰Á‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã€ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€ CentDedRessya ã®å†…å®¹ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 		@return
-		  ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-			-	-12 ;	//	Ressyahoukou ‚Ì’l‚ª•s³‚Å‚·B
+		  æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+			-	-12 ;	//	Ressyahoukou ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
 	 */
 	int CentDedRessya_To_OuPropertiesText( 
 		const CentDedRessya* pCentDedRessya ,
@@ -768,35 +768,35 @@ public:
 		OuPropertiesText::CNodeContainer* pCNodeContainer ) ;
 	
 	/**
-		  OuPropertiesText ƒIƒuƒWƒFƒNƒg‚©‚çA
-		  CentDedRessya_To_OuPropertiesText() ŠÖ”‚É‚æ‚Á‚Äì¬‚³‚ê‚½
-		ƒAƒCƒeƒ€‚ğ“Ç‚İ‚İA CentDedRessya ƒIƒuƒWƒFƒNƒg‚É”½‰f‚µ‚Ü‚·B
+		  OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‹ã‚‰ã€
+		  CentDedRessya_To_OuPropertiesText() é–¢æ•°ã«ã‚ˆã£ã¦ä½œæˆã•ã‚ŒãŸ
+		ã‚¢ã‚¤ãƒ†ãƒ ã‚’èª­ã¿è¾¼ã¿ã€ CentDedRessya ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«åæ˜ ã—ã¾ã™ã€‚
 		
-		  ‚½‚¾‚µA
+		  ãŸã ã—ã€
 	
-			- —ñÔ•ûŒü
-			- ƒIƒuƒWƒFƒNƒg‚ª•ïŠÜ‚·‚é w‰wx ‚Ì”
+			- åˆ—è»Šæ–¹å‘
+			- ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒåŒ…å«ã™ã‚‹ ã€é§…æ™‚åˆ»ã€ ã®æ•°
 	
-		‚ÍA•ÏX‚µ‚Ü‚¹‚ñB‚±‚Ì’l‚ÍAŠÖ”ŒÄoŒ³‚É‚æ‚Á‚Äİ’è‚³‚ê‚Ä‚¢‚é
-		•K—v‚ª‚ ‚è‚Ü‚·B
+		ã¯ã€å¤‰æ›´ã—ã¾ã›ã‚“ã€‚ã“ã®å€¤ã¯ã€é–¢æ•°å‘¼å‡ºå…ƒã«ã‚ˆã£ã¦è¨­å®šã•ã‚Œã¦ã„ã‚‹
+		å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚
 		@param pCentDedRessya [in,out]
-		  ‚±‚ÌŠÖ”‚Í‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉA—ñÔ‚Ì‘®«‚ğ”½‰f‚µ‚Ü‚·B
-			‚½‚¾‚µAƒIƒuƒWƒFƒNƒg‚Ì‘®«w—ñÔ•ûŒüx‚Æ
-			•ïŠÜ‚·‚é w‰wx ‚Ì”‚Í•ÏX‚µ‚Ü‚¹‚ñB
-			‚±‚Ì’l‚ÍAŠÖ”ŒÄoŒ³‚É‚æ‚Á‚Äİ’è‚³‚ê‚Ä‚¢‚é•K—v‚ª‚ ‚è‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€åˆ—è»Šã®å±æ€§ã‚’åæ˜ ã—ã¾ã™ã€‚
+			ãŸã ã—ã€ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®å±æ€§ã€åˆ—è»Šæ–¹å‘ã€ã¨
+			åŒ…å«ã™ã‚‹ ã€é§…æ™‚åˆ»ã€ ã®æ•°ã¯å¤‰æ›´ã—ã¾ã›ã‚“ã€‚
+			ã“ã®å€¤ã¯ã€é–¢æ•°å‘¼å‡ºå…ƒã«ã‚ˆã£ã¦è¨­å®šã•ã‚Œã¦ã„ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚
 		@param iEkiTrack2CountCont[in]
-			Še‰w‚Ì‰w”Ôü”‚Å‚·A—ñÔ”Ôü‚ª‰w”Ôü‚ğ’´‚¦‚È‚¢‚æ‚¤‚É‚·‚é‚½‚ß‚ÉQÆ‚µ‚Ü‚·
+			å„é§…ã®é§…ç•ªç·šæ•°ã§ã™ã€åˆ—è»Šç•ªç·šãŒé§…ç•ªç·šã‚’è¶…ãˆãªã„ã‚ˆã†ã«ã™ã‚‹ãŸã‚ã«å‚ç…§ã—ã¾ã™
 		@param iMainTrackCont[in]
-			Še‰w‚Ìå–{ü‚Å‚·A—ñÔ”Ôü‚ª‰w”Ôü‚Ì”ÍˆÍŠO‚¾‚Á‚½ê‡A‚±‚Ì”Ôü‚ªŠ„‚è“–‚Ä‚ç‚ê‚Ü‚·
+			å„é§…ã®ä¸»æœ¬ç·šã§ã™ã€åˆ—è»Šç•ªç·šãŒé§…ç•ªç·šã®ç¯„å›²å¤–ã ã£ãŸå ´åˆã€ã“ã®ç•ªç·šãŒå‰²ã‚Šå½“ã¦ã‚‰ã‚Œã¾ã™
 		@param iOuterTerminalCountCont[in]
-			Še‰w‚Ì˜HüŠO”­’…‰w”‚Å‚·A˜HüŠO”­’…‰wIndex‚ª‰w”‚ğ’´‚¦‚È‚¢‚æ‚¤‚É‚·‚é‚½‚ß‚ÉQÆ‚µ‚Ü‚·
+			å„é§…ã®è·¯ç·šå¤–ç™ºç€é§…æ•°ã§ã™ã€è·¯ç·šå¤–ç™ºç€é§…IndexãŒé§…æ•°ã‚’è¶…ãˆãªã„ã‚ˆã†ã«ã™ã‚‹ãŸã‚ã«å‚ç…§ã—ã¾ã™
 		@param pCNodeContainer [in]
-		  ‘®«‚ğ•Û‚µ‚Ä‚¢‚é OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		  å±æ€§ã‚’ä¿æŒã—ã¦ã„ã‚‹ OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 		@param pCOuErrorInfoContainer [out]
-		  ‚±‚ÌŠÖ”‚ÍƒGƒ‰[‚ª”­¶‚µ‚½‚çAƒGƒ‰[‚Ìî•ñ‚ğ‚±‚ÌƒIƒuƒWƒFƒNƒg‚É’Ç‰Á‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ãŸã‚‰ã€ã‚¨ãƒ©ãƒ¼ã®æƒ…å ±ã‚’ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«è¿½åŠ ã—ã¾ã™ã€‚
 		@return
-		  ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-			- Œ»İ‚Ì‚Æ‚±‚ëAƒGƒ‰[‚Í‚ ‚è‚Ü‚¹‚ñB
+		  æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+			- ç¾åœ¨ã®ã¨ã“ã‚ã€ã‚¨ãƒ©ãƒ¼ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
 	 */
 	int CentDedRessya_From_OuPropertiesText( 
 		CentDedRessya* pCentDedRessya ,
@@ -812,18 +812,18 @@ public:
 	// ********************************
 	
 	/**
-		  OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ÉA
-		  CentDedRessyaCont ‚Ì‘®«‚ğ’Ç‰Á‚µ‚Ü‚·B
+		  OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€
+		  CentDedRessyaCont ã®å±æ€§ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 		@param pCentDedRessyaCont [in]
-		  CentDedRessya ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		  CentDedRessya ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 		@param iEnableOperation[in]
-		  ‰^—p‹@”\‚Ì—LŒø–³Œø‚ğ¦‚µ‚Ü‚·B
-		  ‚±‚Ì’l‚ªtrue‚Ì‚Ì‚İA‰^—p”Ô†‚ğo—Í‚µ‚Ü‚·B
+		  é‹ç”¨æ©Ÿèƒ½ã®æœ‰åŠ¹ç„¡åŠ¹ã‚’ç¤ºã—ã¾ã™ã€‚
+		  ã“ã®å€¤ãŒtrueã®æ™‚ã®ã¿ã€é‹ç”¨ç•ªå·ã‚’å‡ºåŠ›ã—ã¾ã™ã€‚
 		@param pCNodeContainer [in,out]
-		  ‚±‚ÌŠÖ”‚ÍA‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉA CDedRosenFileData ‚Ì“à—e‚ğ’Ç‰Á‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã€ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€ CDedRosenFileData ã®å†…å®¹ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 		@return
-		  ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-			-	-12 ;	//	Ressyahoukou ‚Ì’l‚ª•s³‚Å‚·B
+		  æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+			-	-12 ;	//	Ressyahoukou ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
 	 */
 	int CentDedRessyaCont_To_OuPropertiesText( 
 		const CentDedRessyaCont* pCentDedRessyaCont ,
@@ -831,31 +831,31 @@ public:
 		OuPropertiesText::CNodeContainer* pCNodeContainer ) ;
 	
 	/**
-		  OuPropertiesText ƒIƒuƒWƒFƒNƒg‚©‚çA
-		  CentDedRessya_To_OuPropertiesText() ŠÖ”‚É‚æ‚Á‚Äì¬‚³‚ê‚½
-		ƒAƒCƒeƒ€‚ğ“Ç‚İ‚İA CentDedRessyaCont ƒIƒuƒWƒFƒNƒg‚É”½‰f‚µ‚Ü‚·B
+		  OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‹ã‚‰ã€
+		  CentDedRessya_To_OuPropertiesText() é–¢æ•°ã«ã‚ˆã£ã¦ä½œæˆã•ã‚ŒãŸ
+		ã‚¢ã‚¤ãƒ†ãƒ ã‚’èª­ã¿è¾¼ã¿ã€ CentDedRessyaCont ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«åæ˜ ã—ã¾ã™ã€‚
 		
 		@param pCentDedRessyaCont [in,out]
-			‚±‚ÌŠÖ”‚Í‚±‚ÌƒRƒ“ƒeƒi‚Ì––”ö‚ÉA
-			OuPropertiesText ƒIƒuƒWƒFƒNƒg‚É•Û‘¶‚³‚ê‚Ä‚¢‚é‘®«‚ÌƒIƒuƒWƒFƒNƒg‚ğ
-			’Ç‰Á‚µ‚Ü‚·B\n
-			‚½‚¾‚µA’Ç‰Á‚³‚ê‚éƒIƒuƒWƒFƒNƒg‚Ì w‰wx ‚Ì”‚ÍA
-			m_iEkiCount ‚ÉŒˆ‚Ü‚Á‚Ä‚¢‚Ü‚·B aCdConectedString ‚É•Û‘¶‚³‚ê‚Ä‚¢‚é
-			—ñÔ‚ª‚±‚ê‚æ‚è‘½‚¢w‰wx‚ğ•Û‚µ‚Ä‚¢‚½ê‡‚ÍAI’…‰wŠñ‚è‚Ì‚ª
-			ØÌ‚Ä‚Æ‚È‚è‚Ü‚·B
+			ã“ã®é–¢æ•°ã¯ã“ã®ã‚³ãƒ³ãƒ†ãƒŠã®æœ«å°¾ã«ã€
+			OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ä¿å­˜ã•ã‚Œã¦ã„ã‚‹å±æ€§ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’
+			è¿½åŠ ã—ã¾ã™ã€‚Â¥n
+			ãŸã ã—ã€è¿½åŠ ã•ã‚Œã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã® ã€é§…æ™‚åˆ»ã€ ã®æ•°ã¯ã€
+			m_iEkiCount ã«æ±ºã¾ã£ã¦ã„ã¾ã™ã€‚ aCdConectedString ã«ä¿å­˜ã•ã‚Œã¦ã„ã‚‹
+			åˆ—è»ŠãŒã“ã‚Œã‚ˆã‚Šå¤šã„ã€é§…æ™‚åˆ»ã€ã‚’ä¿æŒã—ã¦ã„ãŸå ´åˆã¯ã€çµ‚ç€é§…å¯„ã‚Šã®æ™‚åˆ»ãŒ
+			åˆ‡æ¨ã¦ã¨ãªã‚Šã¾ã™ã€‚
 		@param iEkiTrack2CountCont[in]
-			Še‰w‚Ì‰w”Ôü”‚Å‚·A—ñÔ”Ôü‚ª‰w”Ôü‚ğ’´‚¦‚È‚¢‚æ‚¤‚É‚·‚é‚½‚ß‚ÉQÆ‚µ‚Ü‚·
+			å„é§…ã®é§…ç•ªç·šæ•°ã§ã™ã€åˆ—è»Šç•ªç·šãŒé§…ç•ªç·šã‚’è¶…ãˆãªã„ã‚ˆã†ã«ã™ã‚‹ãŸã‚ã«å‚ç…§ã—ã¾ã™
 		@param iMainTrackCont[in]
-			Še‰w‚Ìå–{ü‚Å‚·A—ñÔ”Ôü‚ª‰w”Ôü‚Ì”ÍˆÍŠO‚¾‚Á‚½ê‡A‚±‚Ì”Ôü‚ªŠ„‚è“–‚Ä‚ç‚ê‚Ü‚·
+			å„é§…ã®ä¸»æœ¬ç·šã§ã™ã€åˆ—è»Šç•ªç·šãŒé§…ç•ªç·šã®ç¯„å›²å¤–ã ã£ãŸå ´åˆã€ã“ã®ç•ªç·šãŒå‰²ã‚Šå½“ã¦ã‚‰ã‚Œã¾ã™
 		@param iOuterTerminalCountCont[in]
-			Še‰w‚Ì˜HüŠO”­’…‰w”‚Å‚·A˜HüŠO”­’…‰wIndex‚ª‰w”‚ğ’´‚¦‚È‚¢‚æ‚¤‚É‚·‚é‚½‚ß‚ÉQÆ‚µ‚Ü‚·
+			å„é§…ã®è·¯ç·šå¤–ç™ºç€é§…æ•°ã§ã™ã€è·¯ç·šå¤–ç™ºç€é§…IndexãŒé§…æ•°ã‚’è¶…ãˆãªã„ã‚ˆã†ã«ã™ã‚‹ãŸã‚ã«å‚ç…§ã—ã¾ã™
 		@param pCNodeContainer [in]
-		  ‘®«‚ğ•Û‚µ‚Ä‚¢‚é OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		  å±æ€§ã‚’ä¿æŒã—ã¦ã„ã‚‹ OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 		@param pCOuErrorInfoContainer [out]
-		  ‚±‚ÌŠÖ”‚ÍƒGƒ‰[‚ª”­¶‚µ‚½‚çAƒGƒ‰[‚Ìî•ñ‚ğ‚±‚ÌƒIƒuƒWƒFƒNƒg‚É’Ç‰Á‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ãŸã‚‰ã€ã‚¨ãƒ©ãƒ¼ã®æƒ…å ±ã‚’ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«è¿½åŠ ã—ã¾ã™ã€‚
 		@return
-		  ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-			- Œ»İ‚Ì‚Æ‚±‚ëAƒGƒ‰[‚Í‚ ‚è‚Ü‚¹‚ñB
+		  æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+			- ç¾åœ¨ã®ã¨ã“ã‚ã€ã‚¨ãƒ©ãƒ¼ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
 	 */
 	int CentDedRessyaCont_From_OuPropertiesText( 
 		CentDedRessyaCont* pCentDedRessyaCont ,
@@ -871,18 +871,18 @@ public:
 	// ********************************
 	
 	/**
-		  OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ÉA
-		  CentDedDia ‚Ì‘®«‚ğ’Ç‰Á‚µ‚Ü‚·B
+		  OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€
+		  CentDedDia ã®å±æ€§ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 		@param pCentDedDia [in]
-		  CentDedDia ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		  CentDedDia ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 		@param iEnableOperation[in]
-		  ‰^—p‹@”\‚Ì—LŒø–³Œø‚ğ¦‚µ‚Ü‚·B
-		  ‚±‚Ì’l‚ªtrue‚Ì‚Ì‚İA‰^—p”Ô†‚ğo—Í‚µ‚Ü‚·B
+		  é‹ç”¨æ©Ÿèƒ½ã®æœ‰åŠ¹ç„¡åŠ¹ã‚’ç¤ºã—ã¾ã™ã€‚
+		  ã“ã®å€¤ãŒtrueã®æ™‚ã®ã¿ã€é‹ç”¨ç•ªå·ã‚’å‡ºåŠ›ã—ã¾ã™ã€‚
 		@param pCNodeContainer [in,out]
-		  ‚±‚ÌŠÖ”‚ÍA‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉA pCentDedDia ‚Ì“à—e‚ğ’Ç‰Á‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã€ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€ pCentDedDia ã®å†…å®¹ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 		@return
-		  ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-		-	-12 ;	//	DiagramEkiatsukai ‚Ì’l‚ª•s³‚Å‚·B
+		  æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+		-	-12 ;	//	DiagramEkiatsukai ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
 	 */
 	int CentDedDia_To_OuPropertiesText( 
 			const CentDedDia* pCentDedDia ,
@@ -890,24 +890,24 @@ public:
 			OuPropertiesText::CNodeContainer* pCNodeContainer ) ;
 	
 	/**
-		  OuPropertiesText ƒIƒuƒWƒFƒNƒg‚©‚çA
-		  CentDedDia_To_OuPropertiesText() ŠÖ”‚É‚æ‚Á‚Äì¬‚³‚ê‚½
-		ƒAƒCƒeƒ€‚ğ“Ç‚İ‚İA CentDedDia ƒIƒuƒWƒFƒNƒg‚É”½‰f‚µ‚Ü‚·B
+		  OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‹ã‚‰ã€
+		  CentDedDia_To_OuPropertiesText() é–¢æ•°ã«ã‚ˆã£ã¦ä½œæˆã•ã‚ŒãŸ
+		ã‚¢ã‚¤ãƒ†ãƒ ã‚’èª­ã¿è¾¼ã¿ã€ CentDedDia ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«åæ˜ ã—ã¾ã™ã€‚
 		
 		@param pCentDedDia [in,out]
-		  ‚±‚ÌŠÖ”‚Í‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉA‘®«‚ğ”½‰f‚µ‚Ü‚·B
-		  ‚±‚ÌƒIƒuƒWƒFƒNƒg‚É‚ÍA‚ ‚ç‚©‚¶‚ß w‰w‚Ì”xEw—ñÔí•Ê”x
-		‚ªİ’è‚³‚ê‚Ä‚¢‚È‚­‚Ä‚Í‚È‚è‚Ü‚¹‚ñB
+		  ã“ã®é–¢æ•°ã¯ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€å±æ€§ã‚’åæ˜ ã—ã¾ã™ã€‚
+		  ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã¯ã€ã‚ã‚‰ã‹ã˜ã‚ ã€é§…ã®æ•°ã€ãƒ»ã€åˆ—è»Šç¨®åˆ¥æ•°ã€
+		ãŒè¨­å®šã•ã‚Œã¦ã„ãªãã¦ã¯ãªã‚Šã¾ã›ã‚“ã€‚
 		@param pCentDedEkiCont[in]
-		‰wƒRƒ“ƒeƒi‚Å‚·B‚±‚ÌŠÖ”‚ªŒÄ‚Ño‚³‚ê‚éˆÈ‘O‚ÉA‰wƒRƒ“ƒeƒi‚ª³‚µ‚­“Ç‚İ‚Ü‚ê‚Ä‚¢‚é•K—v‚ª‚ ‚è‚Ü‚·B
+		é§…ã‚³ãƒ³ãƒ†ãƒŠã§ã™ã€‚ã“ã®é–¢æ•°ãŒå‘¼ã³å‡ºã•ã‚Œã‚‹ä»¥å‰ã«ã€é§…ã‚³ãƒ³ãƒ†ãƒŠãŒæ­£ã—ãèª­ã¿è¾¼ã¾ã‚Œã¦ã„ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚
 		@param pCNodeContainer [in]
-		  ‘®«‚ğ•Û‚µ‚Ä‚¢‚é OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		  å±æ€§ã‚’ä¿æŒã—ã¦ã„ã‚‹ OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 		@param pCOuErrorInfoContainer [out]
-		  ‚±‚ÌŠÖ”‚ÍƒGƒ‰[‚ª”­¶‚µ‚½‚çAƒGƒ‰[‚Ìî•ñ‚ğ‚±‚ÌƒIƒuƒWƒFƒNƒg‚É’Ç‰Á‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ãŸã‚‰ã€ã‚¨ãƒ©ãƒ¼ã®æƒ…å ±ã‚’ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«è¿½åŠ ã—ã¾ã™ã€‚
 		@return
-		  ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-		-	-11 ;	//	DiaName ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
-		-	-12 ;	//	RessyaCont‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB
+		  æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+		-	-11 ;	//	DiaName ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
+		-	-12 ;	//	RessyaContãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚
 	 */
 	int CentDedDia_From_OuPropertiesText( 
 			CentDedDia* pCentDedDia ,
@@ -920,18 +920,18 @@ public:
 	// ********************************
 	
 	/**
-		  OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ÉA
-		  CentDedDiaCont ‚Ì‘®«‚ğ’Ç‰Á‚µ‚Ü‚·B
+		  OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€
+		  CentDedDiaCont ã®å±æ€§ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 		@param pCentDedDiaCont [in]
-		  CentDedDiaCont ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		  CentDedDiaCont ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 		@param iEnableOperation[in]
-		  ‰^—p‹@”\‚Ì—LŒø–³Œø‚ğ¦‚µ‚Ü‚·B
-		  ‚±‚Ì’l‚ªtrue‚Ì‚Ì‚İA‰^—p”Ô†‚ğo—Í‚µ‚Ü‚·B
+		  é‹ç”¨æ©Ÿèƒ½ã®æœ‰åŠ¹ç„¡åŠ¹ã‚’ç¤ºã—ã¾ã™ã€‚
+		  ã“ã®å€¤ãŒtrueã®æ™‚ã®ã¿ã€é‹ç”¨ç•ªå·ã‚’å‡ºåŠ›ã—ã¾ã™ã€‚
 		@param pCNodeContainer [in,out]
-		  ‚±‚ÌŠÖ”‚ÍA‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉA CDedRosenFileData ‚Ì“à—e‚ğ’Ç‰Á‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã€ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€ CDedRosenFileData ã®å†…å®¹ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 		@return
-		  ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-		-	-12 ;	//	DiagramEkiatsukai ‚Ì’l‚ª•s³‚Å‚·B
+		  æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+		-	-12 ;	//	DiagramEkiatsukai ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
 	 */
 	int CentDedDiaCont_To_OuPropertiesText( 
 			const CentDedDiaCont* pCentDedDiaCont ,
@@ -939,25 +939,25 @@ public:
 			OuPropertiesText::CNodeContainer* pCNodeContainer ) ;
 	
 	/**
-		  OuPropertiesText ƒIƒuƒWƒFƒNƒg‚©‚çA
-		  CentDedDiaCont_To_OuPropertiesText() ŠÖ”‚É‚æ‚Á‚Äì¬‚³‚ê‚½
-		ƒAƒCƒeƒ€‚ğ“Ç‚İ‚İA CentDedDiaCont ƒIƒuƒWƒFƒNƒg‚É”½‰f‚µ‚Ü‚·B
+		  OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‹ã‚‰ã€
+		  CentDedDiaCont_To_OuPropertiesText() é–¢æ•°ã«ã‚ˆã£ã¦ä½œæˆã•ã‚ŒãŸ
+		ã‚¢ã‚¤ãƒ†ãƒ ã‚’èª­ã¿è¾¼ã¿ã€ CentDedDiaCont ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«åæ˜ ã—ã¾ã™ã€‚
 		
 		@param pCentDedDiaCont [in,out]
-		  ‚±‚ÌŠÖ”‚Í‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉA‘®«‚ğ”½‰f‚µ‚Ü‚·B
-		  ‚±‚ÌƒIƒuƒWƒFƒNƒg‚É‚ÍA‚ ‚ç‚©‚¶‚ß w‰w‚Ì”xEw—ñÔí•Ê”x
-		‚ªİ’è‚³‚ê‚Ä‚¢‚È‚­‚Ä‚Í‚È‚è‚Ü‚¹‚ñB
+		  ã“ã®é–¢æ•°ã¯ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€å±æ€§ã‚’åæ˜ ã—ã¾ã™ã€‚
+		  ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã¯ã€ã‚ã‚‰ã‹ã˜ã‚ ã€é§…ã®æ•°ã€ãƒ»ã€åˆ—è»Šç¨®åˆ¥æ•°ã€
+		ãŒè¨­å®šã•ã‚Œã¦ã„ãªãã¦ã¯ãªã‚Šã¾ã›ã‚“ã€‚
 		@param pCentDedEkiCont[in]
-		‰wƒRƒ“ƒeƒi‚Å‚·B‚±‚ÌŠÖ”‚ªŒÄ‚Ño‚³‚ê‚éˆÈ‘O‚ÉA‰wƒRƒ“ƒeƒi‚ª³‚µ‚­“Ç‚İ‚Ü‚ê‚Ä‚¢‚é•K—v‚ª‚ ‚è‚Ü‚·B
-		Še‰w‚Ì‰w”Ôü”‚Å‚·A—ñÔ”Ôü‚ª‰w”Ôü‚ğ’´‚¦‚È‚¢‚æ‚¤‚É‚·‚é‚½‚ß‚ÉQÆ‚µ‚Ü‚·
+		é§…ã‚³ãƒ³ãƒ†ãƒŠã§ã™ã€‚ã“ã®é–¢æ•°ãŒå‘¼ã³å‡ºã•ã‚Œã‚‹ä»¥å‰ã«ã€é§…ã‚³ãƒ³ãƒ†ãƒŠãŒæ­£ã—ãèª­ã¿è¾¼ã¾ã‚Œã¦ã„ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚
+		å„é§…ã®é§…ç•ªç·šæ•°ã§ã™ã€åˆ—è»Šç•ªç·šãŒé§…ç•ªç·šã‚’è¶…ãˆãªã„ã‚ˆã†ã«ã™ã‚‹ãŸã‚ã«å‚ç…§ã—ã¾ã™
 		@param pCNodeContainer [in]
-		  ‘®«‚ğ•Û‚µ‚Ä‚¢‚é OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		  å±æ€§ã‚’ä¿æŒã—ã¦ã„ã‚‹ OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 		@param pCOuErrorInfoContainer [out]
-		  ‚±‚ÌŠÖ”‚ÍƒGƒ‰[‚ª”­¶‚µ‚½‚çAƒGƒ‰[‚Ìî•ñ‚ğ‚±‚ÌƒIƒuƒWƒFƒNƒg‚É’Ç‰Á‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ãŸã‚‰ã€ã‚¨ãƒ©ãƒ¼ã®æƒ…å ±ã‚’ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«è¿½åŠ ã—ã¾ã™ã€‚
 		@return
-		  ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-		-	-11 ;	//	DiaName ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
-		-	-12 ;	//	RessyaCont‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB
+		  æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+		-	-11 ;	//	DiaName ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
+		-	-12 ;	//	RessyaContãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚
 	 */
 	int CentDedDiaCont_From_OuPropertiesText( 
 			CentDedDiaCont* pCentDedDiaCont ,
@@ -970,50 +970,50 @@ public:
 	// ********************************
 	
 	/**
-		  OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ÉA
-		  CentDedRosen ‚Ì‘®«‚ğ’Ç‰Á‚µ‚Ü‚·B
+		  OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€
+		  CentDedRosen ã®å±æ€§ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 		@param pCentDedRosen [in]
-		  CentDedRosen ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		  CentDedRosen ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 		@param pCNodeContainer [in,out]
-		  ‚±‚ÌŠÖ”‚ÍA‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉA CDedRosenFileData ‚Ì“à—e‚ğ”½‰f‚µ‚Ü‚·B
-		  pCNodeContainer ‚ª‚»‚ê‚Ü‚Å•Û‚µ‚Ä‚¢‚½ƒIƒuƒWƒFƒNƒg‚Í”jŠü‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã€ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€ CDedRosenFileData ã®å†…å®¹ã‚’åæ˜ ã—ã¾ã™ã€‚
+		  pCNodeContainer ãŒãã‚Œã¾ã§ä¿æŒã—ã¦ã„ãŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¯ç ´æ£„ã—ã¾ã™ã€‚
 		@return
-		  ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-			-	-22 ;	//	Ekijikokukeisiki ‚Ì’l‚ª•s³‚Å‚·B
-			-	-32 ;	//	Ekikibo ‚Ì’l‚ª•s³‚Å‚·B
-			-	-111 ;	//	Syubetsumei ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
-			-	-152 ;	//	DiagramSenStyle ‚Ì’l‚ª•s³‚Å‚·B
-			-	-212 ;	//	DiagramEkiatsukai ‚Ì’l‚ª•s³‚Å‚·B
+		  æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+			-	-22 ;	//	Ekijikokukeisiki ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
+			-	-32 ;	//	Ekikibo ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
+			-	-111 ;	//	Syubetsumei ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
+			-	-152 ;	//	DiagramSenStyle ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
+			-	-212 ;	//	DiagramEkiatsukai ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
 	 */
 	int CentDedRosen_To_OuPropertiesText( 
 			const CentDedRosen* pCentDedRosen , 
 			OuPropertiesText::CNodeContainer* pCNodeContainer ) ;
 	
 	/**
-		  OuPropertiesText ƒIƒuƒWƒFƒNƒg‚©‚çA
-		  CentDedRosen_To_OuPropertiesText() ŠÖ”‚É‚æ‚Á‚Äì¬‚³‚ê‚½
-		ƒAƒCƒeƒ€‚ğ“Ç‚İ‚İA CentDedRosen ƒIƒuƒWƒFƒNƒg‚É”½‰f‚µ‚Ü‚·B
+		  OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‹ã‚‰ã€
+		  CentDedRosen_To_OuPropertiesText() é–¢æ•°ã«ã‚ˆã£ã¦ä½œæˆã•ã‚ŒãŸ
+		ã‚¢ã‚¤ãƒ†ãƒ ã‚’èª­ã¿è¾¼ã¿ã€ CentDedRosen ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«åæ˜ ã—ã¾ã™ã€‚
 		
 		@param pCentDedRosen [out]
-		  ‚±‚ÌŠÖ”‚Í‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÉA‘®«‚ğ”½‰f‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€å±æ€§ã‚’åæ˜ ã—ã¾ã™ã€‚
 		@param pCNodeContainer [in]
-		  ‘®«‚ğ•Û‚µ‚Ä‚¢‚é OuPropertiesText ƒIƒuƒWƒFƒNƒg‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		  å±æ€§ã‚’ä¿æŒã—ã¦ã„ã‚‹ OuPropertiesText ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 		@param pCOuErrorInfoContainer [out]
-		  ‚±‚ÌŠÖ”‚ÍƒGƒ‰[‚ª”­¶‚µ‚½‚çAƒGƒ‰[‚Ìî•ñ‚ğ‚±‚ÌƒIƒuƒWƒFƒNƒg‚É’Ç‰Á‚µ‚Ü‚·B
+		  ã“ã®é–¢æ•°ã¯ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ãŸã‚‰ã€ã‚¨ãƒ©ãƒ¼ã®æƒ…å ±ã‚’ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«è¿½åŠ ã—ã¾ã™ã€‚
 		@return
-		  ¬Œ÷‚µ‚½‚ç 0 ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
-			-	-22 ;	//	Ekijikokukeisiki ‚Ì’l‚ª•s³‚Å‚·B
-			-	-32 ;	//	Ekikibo ‚Ì’l‚ª•s³‚Å‚·B
-			-	-41 ;	//	DiagramRessyajouhouHyoujiKudari ‚Ì’l‚ª•s³‚Å‚·B
-			-	-42 ;	//	DiagramRessyajouhouHyoujiNobori ‚Ì’l‚ª•s³‚Å‚·B
-			-	-101 ;	//	Eki ‚ªƒfƒBƒŒƒNƒgƒŠ‚Å‚Í‚ ‚è‚Ü‚¹‚ñB
-			-	-111 ;	//	Syubetsumei ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
-			-	-152 ;	//	DiagramSenStyle ‚Ì’l‚ª•s³‚Å‚·B
-			-	-201 ;	//	Ressyasyubetsu ‚ªƒfƒBƒŒƒNƒgƒŠ‚Å‚Í‚ ‚è‚Ü‚¹‚ñB
-			-	-211 ;	//	DiaName ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
-			-	-212 ;	//	RessyaCont‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB
-			-	-352 ;	//	‹N“_‚Ìİ’è‚ª•s“KØ‚Å‚·B
-			-	-353 ;	//	ƒ_ƒCƒ„ƒOƒ‰ƒ€‚ÌŠù’è‚Ì‰wŠÔ•‚ª•s³‚Å‚·B
+		  æˆåŠŸã—ãŸã‚‰ 0 ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
+			-	-22 ;	//	Ekijikokukeisiki ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
+			-	-32 ;	//	Ekikibo ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
+			-	-41 ;	//	DiagramRessyajouhouHyoujiKudari ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
+			-	-42 ;	//	DiagramRessyajouhouHyoujiNobori ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
+			-	-101 ;	//	Eki ãŒãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
+			-	-111 ;	//	Syubetsumei ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
+			-	-152 ;	//	DiagramSenStyle ã®å€¤ãŒä¸æ­£ã§ã™ã€‚
+			-	-201 ;	//	Ressyasyubetsu ãŒãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
+			-	-211 ;	//	DiaName ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
+			-	-212 ;	//	RessyaContãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚
+			-	-352 ;	//	èµ·ç‚¹æ™‚åˆ»ã®è¨­å®šãŒä¸é©åˆ‡ã§ã™ã€‚
+			-	-353 ;	//	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã®æ—¢å®šã®é§…é–“å¹…ãŒä¸æ­£ã§ã™ã€‚
 	 */
 	int CentDedRosen_From_OuPropertiesText( 
 			CentDedRosen* pCentDedRosen ,

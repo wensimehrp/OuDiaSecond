@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -69,9 +69,9 @@ Copyright (C) 2006-2017 take-okm
 */
 /** @file */
 #include "CWndDcdGrid.h"
-#include "DcDraw\CDcdTargetGetDC.h"
-#include "WinUtil\CconvWinUser.h"
-#include "LogMsg\LogMsg.h"
+#include "DcDraw¥CDcdTargetGetDC.h"
+#include "WinUtil¥CconvWinUser.h"
+#include "LogMsg¥LogMsg.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -87,21 +87,21 @@ namespace WndDcdGrid3{
 //	WndDcdGrid3::CXDcdGrid
 // ----------------------------------------------------------------
 // ********************************
-//	�R���X�g���N�^
+//	コンストラクタ
 // ********************************
 CXDcdGrid::CXDcdGrid( CWndDcdGrid* pCWndDcdGrid ) 
 	: m_bUpdateCWndDcdGrid( true ) 
 	, m_pCWndDcdGrid( pCWndDcdGrid ) 
 {
 }
-CXDcdGrid::~CXDcdGrid() 
+CXDcdGrid::‾CXDcdGrid() 
 {
 }
 // ********************************
 //	CDcdGrid
 // ********************************
 	// --------------------------------
-	//@name �s�E��E�Z���̏�����
+	//@name 行・列・セルの初期化
 	// --------------------------------
 void CXDcdGrid::OnCreateXColumn( int iXColumnNumber , 
 		CDcdGridXColumn* pCDcdGridXColumn ) 
@@ -150,7 +150,7 @@ void CXDcdGrid::OnDeleteCell(
 }
 	
 	// ********************************
-	//	@name Y��EX��̐�
+	//	@name Y列・X列の数
 	// ********************************
 int CXDcdGrid::getYColumnCount() 
 {
@@ -183,21 +183,21 @@ CDcdGrid& CXDcdGrid::setXColumnCount( int ev )
 };
 
 	// ********************************
-	//	@name Y��EX���}��/�폜
+	//	@name Y列・X列を挿入/削除
 	// ********************************
 int CXDcdGrid::insertYColumn( int iYColumnNumber , 
 		bool bFixafterColumnNumberChange ) 
 {
 	int iRv = CDcdGrid::insertYColumn( iYColumnNumber ) ;
-	//	�t�H�[�J�X�ʒu�E�X�N���[���ʒu�E�I�����Đݒ�
+	//	フォーカス位置・スクロール位置・選択を再設定
 	m_pCWndDcdGrid->InvalidateGrid() ;
 
 	if ( iRv >= 0 )
 	{
 
-		//	�t�H�[�J�X�Z���̂����E�܂��͂������Index�̏������ꏊ��
-		//	�񂪒ǉ����ꂽ�ꍇ�́A�t�H�[�J�X�Z����
-		//	�}���ɂ���Ă��ꂽ��ɒǏ]�����܂��B
+		//	フォーカスセルのある列・またはそれより列Indexの小さい場所に
+		//	列が追加された場合は、フォーカスセルを
+		//	挿入によってずれた列に追従させます。
 		CDcdGridCell* pCell = m_pCWndDcdGrid->getCFocus()->getFocusCell() ;
 		int iFocusCellXColumnNumber = getXColumnNumberOfCell( pCell ) ; 
 		int iFocusCellYColumnNumber = getYColumnNumberOfCell( pCell ) ; 
@@ -214,14 +214,14 @@ int CXDcdGrid::insertXColumn( int iXColumnNumber ,
 		bool bFixafterColumnNumberChange ) 
 {
 	int iRv = CDcdGrid::insertXColumn( iXColumnNumber ) ;
-	//	�t�H�[�J�X�ʒu�E�X�N���[���ʒu�E�I�����Đݒ�
+	//	フォーカス位置・スクロール位置・選択を再設定
 	m_pCWndDcdGrid->InvalidateGrid() ;
 
 	if ( iRv >= 0 )
 	{
-		//	�t�H�[�J�X�Z���̂����E�܂��͂������Index�̏������ꏊ��
-		//	�񂪒ǉ����ꂽ�ꍇ�́A�t�H�[�J�X�Z����
-		//	�}���ɂ���Ă��ꂽ��ɒǏ]�����܂��B
+		//	フォーカスセルのある列・またはそれより列Indexの小さい場所に
+		//	列が追加された場合は、フォーカスセルを
+		//	挿入によってずれた列に追従させます。
 		CDcdGridCell* pCell = m_pCWndDcdGrid->getCFocus()->getFocusCell() ;
 		int iFocusCellXColumnNumber = getXColumnNumberOfCell( pCell ) ; 
 		int iFocusCellYColumnNumber = getYColumnNumberOfCell( pCell ) ; 
@@ -237,20 +237,20 @@ int CXDcdGrid::insertXColumn( int iXColumnNumber ,
 int CXDcdGrid::eraseYColumn( int iYColumnNumber ) 
 {
 	int iRv = CDcdGrid::eraseYColumn( iYColumnNumber ) ;
-	//	�t�H�[�J�X�ʒu�E�X�N���[���ʒu�E�I�����Đݒ�
+	//	フォーカス位置・スクロール位置・選択を再設定
 	m_pCWndDcdGrid->InvalidateGrid() ;
 
 	if ( iRv >= 0 )
 	{
 
 		CDcdGridCell* pCell = m_pCWndDcdGrid->getCFocus()->getFocusCell() ;
-		//	�Z���̐���0�ɂȂ�������́A���̖߂�l��NULL�ɂȂ�܂��B
+		//	セルの数が0になった直後は、この戻り値はNULLになります。
 
 		if ( pCell != NULL )
 		{
-			//	�t�H�[�J�X�Z���̂�������Index�̏������ꏊ����
-			//	�񂪍폜���ꂽ�ꍇ�́A�t�H�[�J�X�Z����
-			//	�폜�ɂ���Ă��ꂽ��ɒǏ]�����܂��B
+			//	フォーカスセルのある列より列Indexの小さい場所から
+			//	列が削除された場合は、フォーカスセルを
+			//	削除によってずれた列に追従させます。
 			int iFocusCellXColumnNumber = getXColumnNumberOfCell( pCell ) ; 
 			int iFocusCellYColumnNumber = getYColumnNumberOfCell( pCell ) ; 
 			if ( iFocusCellYColumnNumber > iYColumnNumber )
@@ -268,20 +268,20 @@ int CXDcdGrid::eraseYColumn( int iYColumnNumber )
 int CXDcdGrid::eraseXColumn( int iXColumnNumber ) 
 {
 	int iRv = CDcdGrid::eraseXColumn( iXColumnNumber ) ;
-	//	�t�H�[�J�X�ʒu�E�X�N���[���ʒu�E�I�����Đݒ�
+	//	フォーカス位置・スクロール位置・選択を再設定
 	m_pCWndDcdGrid->InvalidateGrid() ;
 
 	if ( iRv >= 0 )
 	{
 
 		CDcdGridCell* pCell = m_pCWndDcdGrid->getCFocus()->getFocusCell() ;
-		//	�Z���̐���0�ɂȂ�������́A���̖߂�l��NULL�ɂȂ�܂��B
+		//	セルの数が0になった直後は、この戻り値はNULLになります。
 
 		if ( pCell != NULL )
 		{
-			//	�t�H�[�J�X�Z���̂�������Index�̏������ꏊ����
-			//	�񂪍폜���ꂽ�ꍇ�́A�t�H�[�J�X�Z����
-			//	�폜�ɂ���Ă��ꂽ��ɒǏ]�����܂��B
+			//	フォーカスセルのある列より列Indexの小さい場所から
+			//	列が削除された場合は、フォーカスセルを
+			//	削除によってずれた列に追従させます。
 			int iFocusCellXColumnNumber = getXColumnNumberOfCell( pCell ) ; 
 			int iFocusCellYColumnNumber = getYColumnNumberOfCell( pCell ) ; 
 			if ( iFocusCellXColumnNumber > iXColumnNumber )
@@ -298,7 +298,7 @@ int CXDcdGrid::eraseXColumn( int iXColumnNumber )
 
 
 	// ********************************
-	//	@name	�X�N���[��
+	//	@name	スクロール
 	// ********************************
 int	CXDcdGrid::getXFixColumnCount() 
 {
@@ -321,7 +321,7 @@ CDcdGrid& CXDcdGrid::setXFixafterColumnNumber( int ev )
 {
 	CDcdGrid::setXFixafterColumnNumber( ev ) ;
 
-	//	�����̕ύX�����ƂɁA�E�C���h�E�\���̍X�V�������s���܂��B
+	//	属性の変更をもとに、ウインドウ表示の更新処理を行います。
 	if ( m_bUpdateCWndDcdGrid )
 	{
 		m_pCWndDcdGrid->update() ;
@@ -349,7 +349,7 @@ CDcdGrid& CXDcdGrid::setYFixafterColumnNumber( int ev )
 {
 	CDcdGrid::setYFixafterColumnNumber( ev ) ;
 	
-	//	�����̕ύX�����ƂɁA�E�C���h�E�\���̍X�V�������s���܂��B
+	//	属性の変更をもとに、ウインドウ表示の更新処理を行います。
 	if ( m_bUpdateCWndDcdGrid )
 	{
 		m_pCWndDcdGrid->update() ;
@@ -372,21 +372,21 @@ bool CXDcdGrid::update_updateScreen()
 
 
 	// ----------------------------------------------------------------
-	//	�C�x���g�����̂��߂̉��z�֐��Ăяo��
+	//	イベント処理のための仮想関数呼び出し
 	// ----------------------------------------------------------------
 	if ( getXFixafterColumnNumber() != m_CdScrollbarPropX_Sid.getPos() ) 
 	{
-		//	�C�x���g�����̂��߂̉��z�֐�
+		//	イベント処理のための仮想関数
 		m_pCWndDcdGrid->OnSetXFixafterColumnNumber( getXFixafterColumnNumber() ) ;
 	}
 	if ( getYFixafterColumnNumber() != m_CdScrollbarPropY_Sid.getPos() ) 
 	{
-		//	�C�x���g�����̂��߂̉��z�֐�
+		//	イベント処理のための仮想関数
 		m_pCWndDcdGrid->OnSetYFixafterColumnNumber( getYFixafterColumnNumber() ) ;
 	}
 
 	// ----------------------------------------------------------------
-	//	X�����N���C�A���g�̈�X�N���[��
+	//	X方向クライアント領域スクロール
 	// ----------------------------------------------------------------
 	if ( !m_CdScrollbarPropX_Sid.isNull() && 
 		m_CdScrollbarPropX_Sid.getPos() != 
@@ -394,7 +394,7 @@ bool CXDcdGrid::update_updateScreen()
 	{
 		{
 			// --------------------------------
-			//	�X�N���[������̈�����߂�
+			//	スクロールする領域を求める
 			// --------------------------------
 			CRect	rectScroll ;
 			{
@@ -408,11 +408,11 @@ bool CXDcdGrid::update_updateScreen()
 					rectScroll.left = sizeFix ;
 				}
 			}
-			//rectScroll = �E�C���h�E��ŁA�X�N���[�����s���̈�
-			//	�i�Œ�񕔕����������̈�j
+			//rectScroll = ウインドウ上で、スクロールを行う領域
+			//	（固定列部分を除いた領域）
 
 			// --------------------------------
-			//	�X�N���[���ʂ����߂�
+			//	スクロール量を求める
 			// --------------------------------
 			int iAmount = 0 ;
 			CRect	rectScrollSrc ;
@@ -445,17 +445,17 @@ bool CXDcdGrid::update_updateScreen()
 					rectScrollSrc.right -= iAmount ;
 				}
 			}
-			//iAmount = �X�N���[����(���̐��͍�/��ɃX�N���[��)
-			//rectScrollSrc = �X�N���[���ňړ��ƂȂ�̈�ł��B
-			//	rectScroll �̈悩��A�X�N���[���Ŕ�\���ɂȂ�̈�����������̂ł��B
-			//	�������A���̒l�� left >= right �ɂȂ����ꍇ�A�X�N���[���ňړ��ƂȂ�
-			//	�̈悪�S���Ȃ����Ƃ������܂��B
-			//	���̏ꍇ�́A�X�N���[���̈�S�̂𖳌�������
-			//	�ĕ`����s�킹�܂��B
+			//iAmount = スクロール量(負の数は左/上にスクロール)
+			//rectScrollSrc = スクロールで移動となる領域です。
+			//	rectScroll 領域から、スクロールで非表示になる領域を除いたものです。
+			//	ただし、この値が left >= right になった場合、スクロールで移動となる
+			//	領域が全くないことを示します。
+			//	この場合は、スクロール領域全体を無効化して
+			//	再描画を行わせます。
 
 			// --------------------------------
-			//	��ʂ��X�N���[���E�܂��͖������ɂ��
-			//	�X�V
+			//	画面をスクロール・または無効化により
+			//	更新
 			// --------------------------------
 			if ( iAmount != 0 )
 			{
@@ -465,7 +465,7 @@ bool CXDcdGrid::update_updateScreen()
 				}
 				else
 				{
-					//	����́A�����ɂȂ�Ȃ��̈悪����܂��B
+					//	これは、無効にならない領域があります。
 					//m_pCWndDcdGrid->ScrollWindow( iAmount , 0 , &rectScrollSrc ) ;
 		
 					m_pCWndDcdGrid->ScrollWindow( iAmount , 0 , &rectScroll , &rectScroll ) ;
@@ -475,7 +475,7 @@ bool CXDcdGrid::update_updateScreen()
 		}
 	}
 	// ----------------------------------------------------------------
-	//	X�����X�N���[���o�[������ݒ�
+	//	X方向スクロールバー属性を設定
 	// ----------------------------------------------------------------
 	{
 		WinUtil::CdScrollbarProp	aScrollbarPropX ;
@@ -484,14 +484,14 @@ bool CXDcdGrid::update_updateScreen()
 			getXColumnNumberMaxInDcdTarget( &aCDcdTarget ) - 
 			getXFixafterColumnNumber() + 1 ;
 
-		//	�X�N���[���o��\������ꍇ�A�X�N���[���o�[�̃y�[�W���́A�P�Ƃ��܂��B
+		//	スクロールバを表示する場合、スクロールバーのページ数は、１とします。
 		//
-		//	�y�[�W�����A��Œ�񐔂�菬�����ꍇ�́A
-		//	�X�N���[���o�[�̕\�����K�v�ł��B
-		//	���̏ꍇ�̓y�[�W����1�Ƃ��܂��B
+		//	ページ幅が、非固定列数より小さい場合は、
+		//	スクロールバーの表示が必要です。
+		//	この場合はページ幅は1とします。
 		if ( iPage < getXColumnCount() - 
 				getXFixColumnCount() ){
-			//	�X�N���[���o�[���K�v
+			//	スクロールバーが必要
 			iPage = 1 ;
 		}
 
@@ -512,7 +512,7 @@ bool CXDcdGrid::update_updateScreen()
 
 	}
 	// ----------------------------------------------------------------
-	//	Y�����N���C�A���g�̈�X�N���[��
+	//	Y方向クライアント領域スクロール
 	// ----------------------------------------------------------------
 	if ( !m_CdScrollbarPropY_Sid.isNull() &&
 		m_CdScrollbarPropY_Sid.getPos() != 
@@ -521,7 +521,7 @@ bool CXDcdGrid::update_updateScreen()
 
 		{ 
 			// --------------------------------
-			//	�X�N���[������̈�����߂�
+			//	スクロールする領域を求める
 			// --------------------------------
 			CRect	rectScroll ;
 			{
@@ -535,11 +535,11 @@ bool CXDcdGrid::update_updateScreen()
 					rectScroll.top = sizeFix ;
 				}
 			}
-			//rectScroll = �E�C���h�E��ŁA�X�N���[�����s���̈�
-			//	�i�Œ�񕔕����������̈�j
+			//rectScroll = ウインドウ上で、スクロールを行う領域
+			//	（固定列部分を除いた領域）
 		
 			// --------------------------------
-			//	�X�N���[���ʂ����߂�
+			//	スクロール量を求める
 			// --------------------------------
 			int iAmount = 0 ;
 			CRect	rectScrollSrc ;
@@ -571,23 +571,23 @@ bool CXDcdGrid::update_updateScreen()
 					rectScrollSrc.bottom -= iAmount ;
 				}
 			}
-			//iAmount = �X�N���[����(���̐��͍�/��ɃX�N���[��)
-			//rectScrollSrc = �X�N���[���ňړ��ƂȂ�̈�ł��B
-			//	rectScroll �̈悩��A�X�N���[���Ŕ�\���ɂȂ�̈�����������̂ł��B
-			//	�������A���̒l�� top >= bottom �ɂȂ����ꍇ�A�X�N���[���ňړ��ƂȂ�
-			//	�̈悪�S���Ȃ����Ƃ������܂��B
-			//	���̏ꍇ�́A�X�N���[���̈�S�̂𖳌�������
-			//	�ĕ`����s�킹�܂��B
+			//iAmount = スクロール量(負の数は左/上にスクロール)
+			//rectScrollSrc = スクロールで移動となる領域です。
+			//	rectScroll 領域から、スクロールで非表示になる領域を除いたものです。
+			//	ただし、この値が top >= bottom になった場合、スクロールで移動となる
+			//	領域が全くないことを示します。
+			//	この場合は、スクロール領域全体を無効化して
+			//	再描画を行わせます。
 		
 			// --------------------------------
-			//	��ʂ��X�N���[���E�܂��͖������ɂ��
-			//	�X�V
+			//	画面をスクロール・または無効化により
+			//	更新
 			// --------------------------------
 			if ( iAmount != 0 ){
 				if ( rectScrollSrc.top >= rectScrollSrc.bottom ){
 					m_pCWndDcdGrid->InvalidateRect( rectScroll ) ;
 				}	else	{
-					//	����́A�����ɂȂ�Ȃ��̈悪����܂�
+					//	これは、無効にならない領域があります
 					//ScrollWindow( 0 , iAmount , &rectScrollSrc ) ;	
 					
 					m_pCWndDcdGrid->ScrollWindow(  0 , iAmount , &rectScroll , &rectScroll ) ;
@@ -597,7 +597,7 @@ bool CXDcdGrid::update_updateScreen()
 		}
 	}
 	// ----------------------------------------------------------------
-	//	Y�����X�N���[���o�[������ݒ�
+	//	Y方向スクロールバー属性を設定
 	// ----------------------------------------------------------------
 	{
 		WinUtil::CdScrollbarProp	aScrollbarPropY ;
@@ -606,14 +606,14 @@ bool CXDcdGrid::update_updateScreen()
 			getYColumnNumberMaxInDcdTarget( &aCDcdTarget ) - 
 			getYFixafterColumnNumber() + 1 ;
 
-		//	�X�N���[���o��\������ꍇ�A�X�N���[���o�[�̃y�[�W���́A�P�Ƃ��܂��B
+		//	スクロールバを表示する場合、スクロールバーのページ数は、１とします。
 		//
-		//	�y�[�W�����A��Œ�񐔂�菬�����ꍇ�́A
-		//	�X�N���[���o�[�̕\�����K�v�ł��B
-		//	���̏ꍇ�̓y�[�W����1�Ƃ��܂��B
+		//	ページ幅が、非固定列数より小さい場合は、
+		//	スクロールバーの表示が必要です。
+		//	この場合はページ幅は1とします。
 		if ( iPage < getYColumnCount() - 
 				getYFixColumnCount() ){
-			//	�X�N���[���o�[���K�v
+			//	スクロールバーが必要
 			iPage = 1 ;
 		}
 
@@ -640,13 +640,13 @@ bool CXDcdGrid::update_updateScreen()
 void CXDcdGrid::InvalidateGrid( 
 		bool bErase ) 
 {
-	//	���S�ȍĕ`��̂��߁A���ׂĂ̑O��l���N���A���܂��B
+	//	完全な再描画のため、すべての前回値をクリアします。
 	m_CdScrollbarPropX_Sid.setNull() ;
 	m_CdScrollbarPropY_Sid.setNull() ;
 }
 
 // ********************************
-//@name CXDcdGrid ����
+//@name CXDcdGrid 属性
 // ********************************
 bool CXDcdGrid::getUpdateCWndDcdGrid()const 
 {
@@ -656,7 +656,7 @@ void CXDcdGrid::setUpdateCWndDcdGrid( bool value )
 {
 	if ( m_bUpdateCWndDcdGrid != value )
 	{
-		//�@������ false ���� true �ɕύX�����ꍇ�́ACWndDcdGrid �S�̂��X�V���܂��B
+		//　属性を false から true に変更した場合は、CWndDcdGrid 全体を更新します。
 		if ( value )
 		{
 			m_pCWndDcdGrid->update() ;
@@ -666,7 +666,7 @@ void CXDcdGrid::setUpdateCWndDcdGrid( bool value )
 	}
 }
 	// ================================
-	//@name CXDcdGrid_ZoneCacheTemp �ɁAcreateZoneCache�����J
+	//@name CXDcdGrid_ZoneCacheTemp に、createZoneCacheを公開
 	// ================================
 bool CXDcdGrid::createZoneCache( IfDcdTarget* pIfDcdTarger )
 {

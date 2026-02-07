@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -77,7 +77,7 @@ Copyright (C) 2006-2017 take-okm
 #ifndef  CdDedJikoku_h
 #define  CdDedJikoku_h
 #include <string>
-#include "str\tstring.h"
+#include "str¥tstring.h"
 
 namespace entDed{
 
@@ -86,37 +86,37 @@ namespace entDed{
 // ****************************************************************
 /**
  @brief
- �y�T�v�z
-	  �b�P�ʂ̎�����\���P���f�[�^�N���X�ł��B
+ 【概要】
+	  秒単位の時刻を表す単純データクラスです。
 	
-	  ���t�̊T�O�͂���܂���B
-	  ����̊Ԃ́A00:00 ����̂Q�S���Ԃ̎�����\���܂��B
-	  00:00�ȑO�E24:00�ȍ~�̎������w�肵���ꍇ�́A�T�C�N���b�N�����l��
-	�ێ����܂��B
-	  ���Ƃ��΁A���̃N���X�̃I�u�W�F�N�g�� 25:00 ��ݒ肵�悤�Ƃ���ƁA
-	�I�u�W�F�N�g�� 1:00 ��ێ����܂��B
+	  日付の概念はありません。
+	  一日の間の、00:00 からの２４時間の時刻を表します。
+	  00:00以前・24:00以降の時刻を指定した場合は、サイクリックした値を
+	保持します。
+	  たとえば、このクラスのオブジェクトに 25:00 を設定しようとすると、
+	オブジェクトは 1:00 を保持します。
 	
-	  ���̃N���X�́A�����I�ɂ� 00:00 ����̌o�ߕb���𑮐� m_iTotalSeconds 
-	�ŕێ����܂��B���E���E�b�́A���̃N���X�̔h�������Ƃ��Ĉʒu�t�����܂��B
+	  このクラスは、内部的には 00:00 からの経過秒数を属性 m_iTotalSeconds 
+	で保持します。時・分・秒は、このクラスの派生属性として位置付けられます。
 
-	  ���̃N���X�́A�wNull��ԁx�������Ƃ��ł��܂��B����́A
-	�uthis ���L���Ȏ�����ێ����Ă��Ȃ��v���Ƃ������l�ł��B
+	  このクラスは、『Null状態』を持つことができます。これは、
+	「this が有効な時刻を保持していない」ことを示す値です。
 
-	���̃N���X���ێ����鎞���́A CConv::encode() �ŕ����񉻂��邱�Ƃ��ł��܂��B
+	このクラスが保持する時刻は、 CConv::encode() で文字列化することができます。
 
-	(��)  "10:30:45"
+	(例)  "10:30:45"
 
-	�܂��ACConv::encode() �ō쐬������������A deocde() �ŉ��߂��邱�Ƃ�
-	�ł��܂��B
+	また、CConv::encode() で作成した文字列を、 deocde() で解釈することが
+	できます。
  */
 class CdDedJikoku
 {
 public:
 	// ********************************
-	//	�萔
+	//	定数
 	// ********************************
 	/**
-		24���Ԃ̕b��
+		24時間の秒数
 	*/
 	static const int TOTALSECONDS_A_DAY = 24*60*60 ;
 
@@ -125,62 +125,62 @@ public:
 	//	CdDedJikoku::CConv
 	// ****************************************************************
 	/**
-		CdDedJikoku �̓��e�𕶎��񉻂���N���X�ł��B
-		�����Ƃ��āA������̃t�H�[�}�b�g��ێ����܂��B
+		CdDedJikoku の内容を文字列化するクラスです。
+		属性として、文字列のフォーマットを保持します。
 	*/
 	class CConv
 	{
 	public:
-		/** ���̕ϊ����@ */
+		/** 時の変換方法 */
 		enum EHour
 		{
-			/** ���� 00 ���� 09 �̏ꍇ�A10�̈ʂ� "0" �Ƃ��܂��B*/ 
+			/** 時が 00 から 09 の場合、10の位を "0" とします。*/ 
 			EHour_Zero =0,
-			/** ���� 00 ���� 09 �̏ꍇ�A10�̈ʂ� "0" ���폜���܂��B */
+			/** 時が 00 から 09 の場合、10の位の "0" を削除します。 */
 			EHour_ZeroToNone ,	
-			/** ���� 00 ���� 09 �̏ꍇ�A10�̈ʂ� "0" ���X�y�[�X�ɂ��܂��B*/ 
+			/** 時が 00 から 09 の場合、10の位の "0" をスペースにします。*/ 
 			EHour_ZeroToSpace ,
 		};
-		/** �b�̕ϊ����@ */
+		/** 秒の変換方法 */
 		enum ESecond
 		{
-			/** �b����ɏo�͂��܂��B */
+			/** 秒を常に出力します。 */
 			ESecond_Output =0,
-			/** �b����ɏo�͂��܂���B */
+			/** 秒を常に出力しません。 */
 			ESecond_NoSecond ,
-			/** �b��0�Ȃ�A�b���o�͂��܂���B */
+			/** 秒が0なら、秒を出力しません。 */
 			ESecond_NotIfZero ,
 		};
-		/** �b�P�ʂ̏������@ */
+		/** 秒単位の処理方法 */
 		enum ESecondRound
 		{
-			/** �b����ɐ؂�̂Ă܂��B */
+			/** 秒を常に切り捨てます。 */
 			ESecondRound_RoundDown = 0,
-			/** �b���ۂ߂܂�(30�b�����؂�̂�)�B */
+			/** 秒を丸めます(30秒未満切り捨て)。 */
 			ESecondRound_Round,
-			/** �b����ɐ؂�グ�܂��B */
+			/** 秒を常に切り上げます。 */
 			ESecondRound_RoundUp,
 		};
 	private:
 		/** 
-			- true: ���F���F�b �̊Ԃ̃R���� ":" ���o�͂��܂��� 
-			- false: ���F���F�b �̊Ԃ̃R���� ":" ���o�͂��܂� 
+			- true: 時：分：秒 の間のコロン ":" を出力しません 
+			- false: 時：分：秒 の間のコロン ":" を出力します 
 		*/
 		bool m_bNoColon ;
 
-		/** ���̕ϊ����@ */
+		/** 時の変換方法 */
 		EHour	m_eHour ;
 		
-		/** �b�̕ϊ����@ */
+		/** 秒の変換方法 */
 		ESecond m_eSecond ;
 
-		/** �b�P�ʂ̏������@(������) */
+		/** 秒単位の処理方法(着時刻) */
 		ESecondRound m_eSecondRoundChaku;
 
-		/** �b�P�ʂ̏������@(������) */
+		/** 秒単位の処理方法(発時刻) */
 		ESecondRound m_eSecondRoundHatsu;
 
-		/** ����������0��0���̂Ƃ��A2400�\�L���邩�ۂ� */
+		/** 着時刻かつ0時0分のとき、2400表記するか否か */
 		bool m_bDisplay2400;
 
 	public:
@@ -188,11 +188,11 @@ public:
 
 		/**
 		@param bNoColon [in]
-			 ���F���F�b �̊Ԃ̃R���� ":" ���o�͂��܂��� 
+			 時：分：秒 の間のコロン ":" を出力しません 
 		@param eHour [in]
-			���̕ϊ����@���w�肵�Ă��������B
+			時の変換方法を指定してください。
 		@param eSecond [in]
-			�b�̕ϊ����@���w�肵�Ă��������B
+			秒の変換方法を指定してください。
 		*/
 		CConv(
 			bool bNoColon,
@@ -217,18 +217,18 @@ public:
 
 
 		/**
-			�����𕶎���ŕ\�����܂��B
+			時刻を文字列で表現します。
 		 @param aJikoku [in]
-			�������w�肵�Ă��������B
+			時刻を指定してください。
 		 @param bIsChakuJikoku [in]
-			�\�����悤�Ƃ��鎞�������������ۂ��������܂��B
-			2400�\�L�̗L�������y�сAaCompareJikoku�Ƃ̔�r���@�̎w��ɗp���܂�
+			表示しようとする時刻が着時刻か否かを示します。
+			2400表記の有効無効及び、aCompareJikokuとの比較方法の指定に用います
 		 @param aCompareJikoku [in]
-			�������w�肵�Ă��������B
-			�b�P�ʕ\��OFF���ɁA�������̓���ւ���h�����߂̔�r�Ώۂł�
+			時刻を指定してください。
+			秒単位表示OFF時に、時刻順の入れ替わりを防ぐための比較対象です
 		 @return
-			aJikoku �𕶎��񉻂������̂�Ԃ��܂��B
-			aJikoku ���wNull��ԁx�̏ꍇ�́A�󕶎����Ԃ��܂��B
+			aJikoku を文字列化したものを返します。
+			aJikoku が『Null状態』の場合は、空文字列を返します。
 		*/
 		tstring encode( const CdDedJikoku& aJikoku ,
 			const bool& bIsChakuJikoku = false,
@@ -238,85 +238,85 @@ public:
 
 private:
 	// ********************************
-	///@name ����
+	///@name 属性
 	// ********************************
 	///@{
 	/**
-		 00:00 ����̌o�ߕb����ێ����܂��B
-		�L���Ȓl�͈̔͂́A 0 �ȏ� 24*60*60 ����
-		( 0:00 �ȏ� 24:00 ����)�ł��B
+		 00:00 からの経過秒数を保持します。
+		有効な値の範囲は、 0 以上 24*60*60 未満
+		( 0:00 以上 24:00 未満)です。
 	
-		�������A�wNull��ԁx�̂Ƃ��́AINT_MIN �ƂȂ�܂��B
-		�f�t�H���g�R���X�g���N�^�ł́A�wNull��ԁx�Ƃ��܂��B
+		ただし、『Null状態』のときは、INT_MIN となります。
+		デフォルトコンストラクタでは、『Null状態』とします。
 	 */
 	int	m_iTotalSeconds ;
 	///@}
 
  protected:
 	// --------------------------------
-	///@name �����֐�
+	///@name 下請関数
 	// --------------------------------
 	///@{
 	/**
-		�o�ߕb���𐳋K�����܂��B
+		経過秒数を正規化します。
 	
-		�l�� 0 �ȏ� 24*60*60 ����
-		( 0:00 �ȏ� 24:00 ����)�Ƃ��܂��B
+		値を 0 以上 24*60*60 未満
+		( 0:00 以上 24:00 未満)とします。
 		
 	 @param iTotalSeconds [in]
-		���K���O�̌o�ߕb�����w�肵�Ă��������B
-		���̐��ł����܂��܂���B
-			-1 �́A�wNull��ԁx�Ƃ݂͂Ȃ��܂���B
+		正規化前の経過秒数を指定してください。
+		負の数でもかまいません。
+			-1 は、『Null状態』とはみなしません。
 	 @return
-		���K����̒l��Ԃ��܂��B
+		正規化後の値を返します。
 	 
-		�i��j
+		（例）
 	
-		- iTotalSeconds = -1 �̏ꍇ�̖߂�l�́A 23:59:59 
-		- iTotalSeconds = 24*60*60 �̏ꍇ�̖߂�l�́A 0  
+		- iTotalSeconds = -1 の場合の戻り値は、 23:59:59 
+		- iTotalSeconds = 24*60*60 の場合の戻り値は、 0  
 	 */
 	static int adjustTotalSeconds( int iTotalSeconds ) ;
 
 	///@}
  public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	/**
-		�wNull��ԁx�ɏ��������܂��B
+		『Null状態』に初期化します。
 	 */
 	CdDedJikoku() ;
 	
 	/**
 	 @param iTotalSeconds [in]
-		 00:00 ����̌o�ߕb�����w�肵�Ă��������B
-		0 �ȏ� 24*60*60 ����( 0:00 �ȏ� 24:00 ����)
-		�͈̔͊O�̒l���w�肵���ꍇ�́A���̊֐���
-		������	0 �ȏ� 24*60*60 ����( 0:00 �ȏ� 24:00 ����)
-		�ɐ��K�����Ă��� m_iTotalSeconds ��
-		�ݒ肵�܂��B
+		 00:00 からの経過秒数を指定してください。
+		0 以上 24*60*60 未満( 0:00 以上 24:00 未満)
+		の範囲外の値を指定した場合は、この関数は
+		引数を	0 以上 24*60*60 未満( 0:00 以上 24:00 未満)
+		に正規化してから m_iTotalSeconds に
+		設定します。
 	 @attention
-		-1 �́A�wNull��ԁx�Ƃ݂͂Ȃ����A23:59:59 ��
-		�݂Ȃ��܂��B
+		-1 は、『Null状態』とはみなさず、23:59:59 と
+		みなします。
 	*/
 	CdDedJikoku( int iTotalSeconds ) ;
 	
 	/**
 	 @param iHour [in]
-		���B�͈͂� 0 �ȏ� 24 �����B
+		時。範囲は 0 以上 24 未満。
 	 @param iMinute [in]
-		���B�͈͂� 0 �ȏ� 60 �����B
+		分。範囲は 0 以上 60 未満。
 	 @param iSecond [in]
-		�b�B�͈͂� 0 �ȏ� 60 �����B
+		秒。範囲は 0 以上 60 未満。
 	 */
 	CdDedJikoku( int iHour , int iMinute , int iSecond = 0 ) ;
 
 	/**
-		������������g���ď��������܂��B
+		時刻文字列を使って初期化します。
 	 @param value [in]
-		������������w�肵�Ă��������B
+		時刻文字列を指定してください。
 		
-	 (��)����������̗�
+	 (例)時刻文字列の例
 		-	"13:15:45"
 		-	"13:15"
 		-	"131545"
@@ -333,106 +333,106 @@ public:
 	//	CdDedJikoku
 	// ********************************
 	// ********************************
-	///@name CdDedJikoku-����
+	///@name CdDedJikoku-属性
 	// ********************************
 	///@{
 
 	int getTotalSeconds()const{	return m_iTotalSeconds ; } ;
 	/**
 	 @param iTotalSeconds [in]
-		 00:00 ����̌o�ߕb�����w�肵�Ă��������B
-		0 �ȏ� 24*60*60 ����( 0:00 �ȏ� 24:00 ����)
-		�͈̔͊O�̒l���w�肵���ꍇ�́A���̊֐���
-		������	0 �ȏ� 24*60*60 ����( 0:00 �ȏ� 24:00 ����)
-		�ɐ��K�����Ă��� m_iTotalSeconds ��
-		�ݒ肵�܂��B
+		 00:00 からの経過秒数を指定してください。
+		0 以上 24*60*60 未満( 0:00 以上 24:00 未満)
+		の範囲外の値を指定した場合は、この関数は
+		引数を	0 以上 24*60*60 未満( 0:00 以上 24:00 未満)
+		に正規化してから m_iTotalSeconds に
+		設定します。
 	*/
 	CdDedJikoku& setTotalSeconds( int value ) ;
 	
 	/**
 	 @return
-		���B
+		時。
 	 @attention
-		this �� �wNull��ԁx�̏ꍇ�́A0��Ԃ��܂��B
+		this が 『Null状態』の場合は、0を返します。
 	 */
 	int getHour()const{	return m_iTotalSeconds / ( 60 * 60 )  ; } ;
 	
 	/**
 	 @return
-		���B
+		分。
 	 @attention
-		this �� �wNull��ԁx�̏ꍇ�́A0��Ԃ��܂��B
+		this が 『Null状態』の場合は、0を返します。
 	 */
 	int getMinute()const{	return m_iTotalSeconds / ( 60 ) % ( 60 )  ; } ;
 	
 	/**
 	 @return
-		�b�B
+		秒。
 	 @attention
-		this �� �wNull��ԁx�̏ꍇ�́A0��Ԃ��܂��B
+		this が 『Null状態』の場合は、0を返します。
 	 */
 	int getSecond()const{	return m_iTotalSeconds % ( 60 )  ; } ;
 	
 	/**
-		�������A�ݒ肵�܂��B
+		時刻を、設定します。
 	 @param iHour [in]
-		���B�͈͂� 0 �ȏ� 24 �����B
+		時。範囲は 0 以上 24 未満。
 	 @param iMinute [in]
-		���B�͈͂� 0 �ȏ� 60 �����B
+		分。範囲は 0 以上 60 未満。
 	 @param iSecond [in]
-		�b�B�͈͂� 0 �ȏ� 60 �����B
+		秒。範囲は 0 以上 60 未満。
 	 */
 	CdDedJikoku& setTime( int iHour , int iMinute , int iSecond = 0 ) ;
 	
 	/**
 	 @return
-		this ���wNull��ԁx�Ȃ�^��Ԃ��܂��B
+		this が『Null状態』なら真を返します。
 	 */
 	bool isNull()const{	return m_iTotalSeconds == INT_MIN ; } ;
 
 	/**
-		this ���wNull��ԁx�Ƃ��܂��B
+		this を『Null状態』とします。
 	 */
 	CdDedJikoku& setNull() ;
 	
 	///@}
 	
 	// ********************************
-	///@name CdDedJikoku-����
+	///@name CdDedJikoku-操作
 	// ********************************
 	///@{
 	/**
-		�Q�̎������A��r���܂��B
+		２つの時刻を、比較します。
 	 @param value [in]
-		��r�Ώۂ̃I�u�W�F�N�g���w�肵�Ă��������B
+		比較対象のオブジェクトを指定してください。
 	 @return
-		this - value ���s�������ʂ̕�����Ԃ��܂��B
-		-	+1 ;	//	this > value�B
-					//	�܂��́A this ����wNull��ԁx�� value �� �wNull��ԁx
-		-	0 ;		//	this == value�B
-					//	�܂��́A this �� value �� �wNull��ԁx
-		-	-1 ;	//	this < value�B
-					//	�܂��́A this ���wNull��ԁx�� value �� ��wNull��ԁx
+		this - value を行った結果の符号を返します。
+		-	+1 ;	//	this > value。
+					//	または、 this が非『Null状態』で value が 『Null状態』
+		-	0 ;		//	this == value。
+					//	または、 this も value も 『Null状態』
+		-	-1 ;	//	this < value。
+					//	または、 this が『Null状態』で value が 非『Null状態』
 	*/
 	int compare( const CdDedJikoku& value )const ;
 	
 	/**
-		�Q�̎������A��r���܂��B
+		２つの時刻を、比較します。
 	 @param value [in]
-		��r�Ώۂ̃I�u�W�F�N�g���w�肵�Ă��������B
+		比較対象のオブジェクトを指定してください。
 	 @param jikokuKitenJikoku [in]
-		�_�C���O�����N�_�������w�肵�Ă��������B
-		���̊֐��́A�\�[�g���ɁA���̒l���ł�������������
-		�݂Ȃ��܂��B
-		(��F���̎�����5:00���w�肳�ꂽ�ꍇ�́A5:00<23:59<0:00<4:59 �Ƃ��Ĕ�r���s���܂�)
+		ダイヤグラム起点時刻を指定してください。
+		この関数は、ソート時に、この値を最も小さい時刻と
+		みなします。
+		(例：この時刻に5:00が指定された場合は、5:00<23:59<0:00<4:59 として比較を行います)
 	 @return
-		this - value ���s�������ʂ̕�����Ԃ��܂��B
-		-	+1 ;	//	this > value�B
-					//	�܂��́A this ����wNull��ԁx�� value �� �wNull��ԁx
-		-	0 ;		//	this == value�B
-					//	�܂��́A this �� value �� �wNull��ԁx
-		-	-1 ;	//	this < value�B
-					//	�܂��́A this ���wNull��ԁx�� value �� ��wNull��ԁx
+		this - value を行った結果の符号を返します。
+		-	+1 ;	//	this > value。
+					//	または、 this が非『Null状態』で value が 『Null状態』
+		-	0 ;		//	this == value。
+					//	または、 this も value も 『Null状態』
+		-	-1 ;	//	this < value。
+					//	または、 this が『Null状態』で value が 非『Null状態』
 	*/
 	int compare( 
 		const CdDedJikoku& value , 
@@ -440,79 +440,79 @@ public:
 	
 
 
-	/**	compare() �Ɠ����ł��B	 */
+	/**	compare() と等価です。	 */
 	bool operator>( const CdDedJikoku& value )const{
 		return ( compare( value ) == 1 ) ; } ;
-	/**	compare() �Ɠ����ł��B	 */
+	/**	compare() と等価です。	 */
 	bool operator>=( const CdDedJikoku& value )const{
 		return ( compare( value ) != -1  ) ; } ;
-	/**	compare() �Ɠ����ł��B	 */
+	/**	compare() と等価です。	 */
 	bool operator==( const CdDedJikoku& value )const{
 		return ( compare( value ) == 0 ) ; } ;
-	/**	compare() �Ɠ����ł��B	 */
+	/**	compare() と等価です。	 */
 	bool operator<=( const CdDedJikoku& value )const{
 		return ( compare( value ) != 1  ) ; } ;
-	/**	compare() �Ɠ����ł��B	 */
+	/**	compare() と等価です。	 */
 	bool operator<( const CdDedJikoku& value )const{
 		return ( compare( value ) == -1 ) ; } ;
 
 	/**
-		this ���ێ����Ă��鎞���ɑ΂��āA�b�������Z���܂��B
+		this が保持している時刻に対して、秒数を加算します。
 	 @param value [in]
-		���Z����b�����w�肵�Ă��������B
-		���̐����w�肷�邱�Ƃ��ł��܂��B
+		加算する秒数を指定してください。
+		負の数を指定することもできます。
 	 @attention
-		this �� �wNull��ԁx�̏ꍇ�́A�wNull��ԁx�̂܂ܕς��܂���B
+		this が 『Null状態』の場合は、『Null状態』のまま変わりません。
 	 */
 	CdDedJikoku& addSeconds( int value ) ;
 
-	/** addSeconds() �Ɠ����ł� */
+	/** addSeconds() と等価です */
 	CdDedJikoku& operator+=( int value ) {
 		return addSeconds( value ) ; } ;
-	/** addSeconds() �Ɠ����ł��B*/
+	/** addSeconds() と等価です。*/
 	CdDedJikoku& operator-=( int value ) {
 		return addSeconds( -value ) ; } ;
 
 
 
 	/**
-		�Q�̎����̍����A�b���ŕԂ��܂��B
-		���́A��Βl���P�Q���Ԉȉ��̑��Ƃ��܂��B
+		２つの時刻の差を、秒数で返します。
+		差は、絶対値が１２時間以下の側とします。
 	 @param value [in]
-		��r�Ώۂ̃I�u�W�F�N�g���w�肵�Ă��������B
+		比較対象のオブジェクトを指定してください。
 	 @return
-		this - value ���s�������ʂ̕b����Ԃ��܂��B
-		this < value �̏ꍇ�́A���̐���Ԃ��܂��B\n
-		�������Athis - value �̐�Βl���P�Q���Ԃ𒴂��Ă���ꍇ�́A
-		�t����łP�Q���Ԗ����̒l��Ԃ��܂��B
+		this - value を行った結果の秒数を返します。
+		this < value の場合は、負の数を返します。¥n
+		ただし、this - value の絶対値が１２時間を超えている場合は、
+		逆周りで１２時間未満の値を返します。
 		
-		(��) 
+		(例) 
 		
-		this �� 1:00 �� value �� 23:00 �̏ꍇ�A�P���v�Z�ł� -22 ���Ԃł����A
-		���̒l�̐�Βl��12���Ԃ𒴂��Ă��܂��B���̏ꍇ�A+2 ���Ԃ�Ԃ��܂�
+		this が 1:00 で value が 23:00 の場合、単純計算では -22 時間ですが、
+		この値の絶対値は12時間を超えています。この場合、+2 時間を返します
 	
-		��  1:00 ��23:00 �̂Q�Q���ԑO�ł�����܂����A
-		�i�����́j1:00 �� 23:00�̂Q���Ԍ�ł���Ƃ������܂��B
-		���̊֐����Ԃ��̂́A��Βl�̏��������̒l�ł��B
+		※  1:00 は23:00 の２２時間前でもありますし、
+		（翌日の）1:00 は 23:00の２時間後であるともいえます。
+		この関数が返すのは、絶対値の小さい方の値です。
 	 @attention
-		this �E value �̂����ꂩ�� �wNull��ԁx�̏ꍇ�́A0��Ԃ��܂��B
+		this ・ value のいずれかが 『Null状態』の場合は、0を返します。
 	 */
 	int subJikoku( const CdDedJikoku& value  )const ;
 
 	/**
-		encode() �ɂ���Đ������ꂽ�����������
-		��͂��Athis �̑����ɔ��f���܂��B
+		encode() によって生成された時刻文字列を
+		解析し、this の属性に反映します。
 	
-		���������񂪉��ߕs�\�ȏꍇ�́Athis �� �wNull��ԁx
-		�ƂȂ�܂��B
+		時刻文字列が解釈不可能な場合は、this は 『Null状態』
+		となります。
 	 @param value [in]
-		������������w�肵�Ă��������B
+		時刻文字列を指定してください。
 	 @return
-		���������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	-1 ;	//	���ڐ����s�����Ă��܂��B
-		-	-2 ;	//	���E���E�b�̕\�L���s���ł��B
+		成功すれば0以上、エラーなら負の数です。
+		-	-1 ;	//	項目数が不足しています。
+		-	-2 ;	//	時・分・秒の表記が不正です。
 	
-	 (��)����������̗�
+	 (例)時刻文字列の例
 		-	"13:15:45"
 		-	"13:15"
 		-	"131545"

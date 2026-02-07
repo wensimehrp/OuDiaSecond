@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 //****************************************************************
@@ -76,7 +76,7 @@ namespace DcDraw{
 //	CdWinGdi_DrawText_Format
 // ****************************************************************
 // ********************************
-//	�R���X�g���N�^
+//	コンストラクタ
 // ********************************
 CdWinGdi_DrawText_Format::CdWinGdi_DrawText_Format( UINT uiFormat ) : 
 	m_uiDrawTextFormat( uiFormat )
@@ -134,7 +134,7 @@ CdWinGdi_DrawText_Format&
 CdWinGdi_DrawText_Format::setHorizontal( 
 	CdWinGdi_DrawText_Format::EHolizontal ev )
 {
-	m_uiDrawTextFormat &=~ g_HorizontalMASK ;
+	m_uiDrawTextFormat &=‾ g_HorizontalMASK ;
 	if ( ev == H_CENTER ){
 		m_uiDrawTextFormat |=  DT_CENTER ;
 	}	else if ( ev == H_RIGHT ){
@@ -175,7 +175,7 @@ CdWinGdi_DrawText_Format&
 CdWinGdi_DrawText_Format::setVertical( 
 	CdWinGdi_DrawText_Format::EVertical ev )
 {
-	m_uiDrawTextFormat &=~g_VerticalMASK ;
+	m_uiDrawTextFormat &=‾g_VerticalMASK ;
 
 	if ( ev == V_SINGLELINE_TOP ){
 		m_uiDrawTextFormat |= ( DT_SINGLELINE | DT_TOP ) ;
@@ -208,7 +208,7 @@ CdWinGdi_DrawText_Format&
 CdWinGdi_DrawText_Format::setClipping( 
 	CdWinGdi_DrawText_Format::EClipping ev )
 {
-	m_uiDrawTextFormat &=~ g_ClipMASK ;
+	m_uiDrawTextFormat &=‾ g_ClipMASK ;
 
 	if ( ev == C_NOCLIP ){
 		m_uiDrawTextFormat |= ( DT_NOCLIP ) ;
@@ -233,7 +233,7 @@ CdWinGdi_DrawText_Format&
 CdWinGdi_DrawText_Format::setEditControl( 
 	CdWinGdi_DrawText_Format::EEditControl ev )
 {
-	m_uiDrawTextFormat &=~ g_EditControlMASK ;
+	m_uiDrawTextFormat &=‾ g_EditControlMASK ;
 
 	if ( ev == EDITCONTROL ){
 		m_uiDrawTextFormat |= ( DT_EDITCONTROL ) ;
@@ -265,7 +265,7 @@ CdWinGdi_DrawText_Format&
 CdWinGdi_DrawText_Format::setEllipses( 
 	CdWinGdi_DrawText_Format::EEllipses ev )
 {
-	m_uiDrawTextFormat &=~ g_EllipsesMASK ;
+	m_uiDrawTextFormat &=‾ g_EllipsesMASK ;
 	if ( ev == END_ELLIPSIS ){
 		m_uiDrawTextFormat |= ( DT_END_ELLIPSIS ) ;
 	}	else if ( ev == PATH_ELLIPSIS ){
@@ -297,7 +297,7 @@ int CdWinGdi_DrawText_Format::getTabStop()const
 CdWinGdi_DrawText_Format&
 CdWinGdi_DrawText_Format::setTabStop( int ev )
 {
-	m_uiDrawTextFormat &=~ g_TabStopMASK ;
+	m_uiDrawTextFormat &=‾ g_TabStopMASK ;
 	if ( ev != 0 ){
 		m_uiDrawTextFormat |= ( DT_EXPANDTABS ) ;
 		if ( ev > 0 ){
@@ -326,7 +326,7 @@ CdWinGdi_DrawText_Format&
 CdWinGdi_DrawText_Format::setExternalLeading( 
 	CdWinGdi_DrawText_Format::EExternalLeading ev )
 {
-	m_uiDrawTextFormat &=~ g_ExternalLeadingMASK  ;
+	m_uiDrawTextFormat &=‾ g_ExternalLeadingMASK  ;
 	if ( ev == EXTERNALLEADING ){
 		m_uiDrawTextFormat |= ( DT_EXTERNALLEADING ) ;
 	}
@@ -351,7 +351,7 @@ CdWinGdi_DrawText_Format&
 CdWinGdi_DrawText_Format::setReading( 
 	CdWinGdi_DrawText_Format::EReading ev )
 {
-	m_uiDrawTextFormat &=~ g_EReadingMASK  ;
+	m_uiDrawTextFormat &=‾ g_EReadingMASK  ;
 	if ( ev == R_RIGHT ){
 		m_uiDrawTextFormat |= ( DT_RTLREADING ) ;
 	}
@@ -360,10 +360,10 @@ CdWinGdi_DrawText_Format::setReading(
 
 const UINT g_EPrefixMASK = 
 	( DT_NOPREFIX  
-	| DT_HIDEPREFIX		//���̃t���O�����p�\��Windows��
-						//	�o�[�W�����͌��肳��܂��BWindows 2000/XP
-	| DT_PREFIXONLY		//���̃t���O�����p�\��Windows��
-						//�o�[�W�����͌��肳��܂��BWindows 2000/XP
+	| DT_HIDEPREFIX		//このフラグが利用可能なWindowsの
+						//	バージョンは限定されます。Windows 2000/XP
+	| DT_PREFIXONLY		//このフラグが利用可能なWindowsの
+						//バージョンは限定されます。Windows 2000/XP
 	) ;
 
 CdWinGdi_DrawText_Format::EPrefix
@@ -386,7 +386,7 @@ CdWinGdi_DrawText_Format::getPrefix()const
 CdWinGdi_DrawText_Format&
 CdWinGdi_DrawText_Format::setPrefix( CdWinGdi_DrawText_Format::EPrefix ev )
 {
-	m_uiDrawTextFormat &=~ g_EPrefixMASK  ;
+	m_uiDrawTextFormat &=‾ g_EPrefixMASK  ;
 	if ( ev == NOPREFIX  ){
 		m_uiDrawTextFormat |= ( DT_NOPREFIX ) ;
 	}	else if ( ev == HIDEPREFIX ){
@@ -420,7 +420,7 @@ CdWinGdi_DrawText_Format&
 CdWinGdi_DrawText_Format::setCalcrect( 
 	CdWinGdi_DrawText_Format::ECalcrect ev )
 {
-	setFormat( getFormat() &~ g_ECalcrectMASK ) ;
+	setFormat( getFormat() &‾ g_ECalcrectMASK ) ;
 	if ( ev == CALCRECT ){
 		setFormat( getFormat() | ( DT_CALCRECT ) );
 	}	else if ( ev == CALCRECT_INTERNAL ){
@@ -447,7 +447,7 @@ CdWinGdi_DrawText_Format&
 CdWinGdi_DrawText_Format::setModifystring( 
 	CdWinGdi_DrawText_Format::EModifystring ev )
 {
-	setFormat( getFormat() &~ g_EModifystringMASK ) ;
+	setFormat( getFormat() &‾ g_EModifystringMASK ) ;
 	if ( ev == MODIFYSTRING ){
 		setFormat( getFormat() | ( DT_MODIFYSTRING ) ) ;
 	}

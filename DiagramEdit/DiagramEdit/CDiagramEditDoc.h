@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,40 +35,40 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
-// CDiagramEditDoc.h : CDiagramEditDoc �N���X�̐錾����уC���^�[�t�F�C�X�̒�`�����܂��B
+// CDiagramEditDoc.h : CDiagramEditDoc クラスの宣言およびインターフェイスの定義をします。
 //	$Id: CDiagramEditDoc.h 
 /////////////////////////////////////////////////////////////////////////////
 /** @file */
@@ -81,10 +81,10 @@ Copyright (C) 2006-2017 take-okm
 
 #include "NsMu/CMup_deque.h"
 #include "NsOu/Ou.h"
-#include "Hidemdi\Hidemdi.h"
-#include "DedRosenFileData\CDedRosenFileData.h"
-#include "DedRosenFileData\EditCmd\CRfEditCmd.h"
-#include "entDed\CdDedRessyaProperty.h"
+#include "Hidemdi¥Hidemdi.h"
+#include "DedRosenFileData¥CDedRosenFileData.h"
+#include "DedRosenFileData¥EditCmd¥CRfEditCmd.h"
+#include "entDed¥CdDedRessyaProperty.h"
 #include <chrono>
 #include <ctime>
 #include <shlwapi.h>
@@ -94,45 +94,45 @@ using namespace DedRosenFileData;
 using namespace DedRosenFileData::EditCmd;
 using namespace std::chrono;
 
-/** oud �t�@�C������ FiltTypeAppComment ���ږ� */
+/** oud ファイル内の FiltTypeAppComment 項目名 */
 static const TCHAR nameFileTypeAppComment[] = _T("FileTypeAppComment") ;
 
 struct ChildWindow
 {
 	/**
-		�E�C���h�E���
-		0:���莞���\
-		1:��莞���\
-		2:�_�C���O����
-		3:����J�X�^�}�C�Y�����\
-		4:���J�X�^�}�C�Y�����\
-		5:�^�p�ꗗ�\
-		6:�^�p�ꗗ�}
+		ウインドウ種類
+		0:下り時刻表
+		1:上り時刻表
+		2:ダイヤグラム
+		3:下りカスタマイズ時刻表
+		4:上りカスタマイズ時刻表
+		5:運用一覧表
+		6:運用一覧図
 	*/
 	int iWindowType;
 
 	/**
-		�_�C���C���f�N�X
+		ダイヤインデクス
 	*/
 	int iDiaIndex;
 
 	/**
-		X�����̈ʒu
+		X方向の位置
 	*/
 	int iXPos;
 
 	/**
-		Y�����̈ʒu
+		Y方向の位置
 	*/
 	int iYPos;
 
 	/**
-		X�����̃T�C�Y
+		X方向のサイズ
 	*/
 	int iXSize;
 
 	/**
-		Y�����̃T�C�Y
+		Y方向のサイズ
 	*/
 	int iYSize;
 
@@ -164,153 +164,153 @@ struct ChildWindow
 
 /**
 @brief
-�y�T�v�z  DiagramEdit �̃��[�g�h�L�������g�N���X�ł��B
-MFC �� CDocument ���p�����܂��B
+【概要】  DiagramEdit のルートドキュメントクラスです。
+MFC の CDocument を継承します。
 
-���̃N���X�́A .oud �t�@�C���̓��e��ێ�����
-CDedRosenFileData ��
-�C���X�^���X���W�񂵂Ă��܂�( m_CDedRosenFileData )�B
+このクラスは、 .oud ファイルの内容を保持する
+CDedRosenFileData の
+インスタンスを集約しています( m_CDedRosenFileData )。
 
-m_CDedRosenFileData ���ێ����Ă���H���t�@�C���̃f�[�^���Q�Ƃ���ɂ́A
-CDiagramEditDoc::getCDedRosenFileData() �� const CDedRosenFileData* ���擾���A
- ���̃|�C���^��	CDedRosenFileData �̃��\�b�h�ɃA�N�Z�X���Ă��������B
+m_CDedRosenFileData が保持している路線ファイルのデータを参照するには、
+CDiagramEditDoc::getCDedRosenFileData() で const CDedRosenFileData* を取得し、
+ そのポインタで	CDedRosenFileData のメソッドにアクセスしてください。
 
-CDiagramEditDoc::getCDedRosenFileData() �Ŏ擾�ł���|�C���^�� const* �ł��B
-���̂��߁A m_CDedRosenFileData �A����ɂ͂����ɏW�񂳂��e��I�u�W�F�N�g��
-��Ԃ�ς��邱�Ƃ͂ł��܂���B
+CDiagramEditDoc::getCDedRosenFileData() で取得できるポインタは const* です。
+このため、 m_CDedRosenFileData 、さらにはそれらに集約される各種オブジェクトの
+状態を変えることはできません。
 
-m_CDedRosenFileData �̓��e��ύX���邽�߂ɂ́A
-�ύX���e�ɉ����� CRfEditCmd �h���N���X�I�u�W�F�N�g�𐶐����A
-���̃C���X�^���X�ւ� Ou(�X�}�[�g�|�C���^) �������ɂ��� executeEditCmd() ��
-�Ăяo���Ă��������B
+m_CDedRosenFileData の内容を変更するためには、
+変更内容に応じた CRfEditCmd 派生クラスオブジェクトを生成し、
+そのインスタンスへの Ou(スマートポインタ) を引数にして executeEditCmd() を
+呼び出してください。
 */ 
 class CDiagramEditDoc : public CHidemdiRootDoc
 {
 public:
 	// ********************************
-	//	�C���i�[�^�C�v
+	//	インナータイプ
 	// ********************************
 	typedef CHidemdiRootDoc	super ;
 private:
 	// ********************************
-	///@name ���
+	///@name 包含
 	// ********************************
 	///@{
 	/**
-	�y�T�v�z  DiagramEdit �̃A�v���P�[�V�������ǂݏ�������
-	�w�H���t�@�C���x�Ɋ܂܂��f�[�^��ێ�����N���X�ł��B
+	【概要】  DiagramEdit のアプリケーションが読み書きする
+	『路線ファイル』に含まれるデータを保持するクラスです。
 	 */
 	CDedRosenFileData	m_CDedRosenFileData ;
 	///@}
 private:
 	// --------------------------------
-	///@name Undo,Redo�֌W�����f�[�^ 
+	///@name Undo,Redo関係内部データ 
 	// --------------------------------
 	///@{
 	/**
-	 	Undo �̂��߂̏���ێ�����L���[�ł��B
+	 	Undo のための情報を保持するキューです。
 	 
-	 	executeEditCmd() �́A CRfEditCmd �I�u�W�F�N�g��
-	 	���̃L���[�̖����ɒǉ����܂��B
+	 	executeEditCmd() は、 CRfEditCmd オブジェクトを
+	 	このキューの末尾に追加します。
 	 
-	 	Undo �����s����ꍇ�́A
+	 	Undo を実行する場合は、
 	 
-	 	�P�D  m_contUndo �̖����� CRfEditCmd �I�u�W�F�N�g
-	 	�� createUndoCmd() �Ő��������R�}���h�� execute() ����B
+	 	１．  m_contUndo の末尾の CRfEditCmd オブジェクト
+	 	の createUndoCmd() で生成したコマンドを execute() する。
 	 
-	 	�Q�D  m_contUndo �̖����� CHint_CDedRosenFileData �I�u�W�F�N�g��
-	 	�̂Ă�B
+	 	２．  m_contUndo の末尾の CHint_CDedRosenFileData オブジェクトを
+	 	捨てる。
 	 */
 	CMup_deque< Ou< CRfEditCmd > > m_contUndo ;
 	
 	/**
-		Redo �̂��߂̏���ێ�����L���[�ł��B
+		Redo のための情報を保持するキューです。
 	
-		undo() �́A CRfEditCmd �I�u�W�F�N�g��
-		���̃L���[�̖����ɒǉ����܂��B
+		undo() は、 CRfEditCmd オブジェクトを
+		このキューの末尾に追加します。
 
-		executeEditCmd() �́A���̃R���e�i����ɂ��܂��B
+		executeEditCmd() は、このコンテナを空にします。
 	
-		Redo �����s����ꍇ�́A
+		Redo を実行する場合は、
 	
-		�P�D  m_contRedo �̖����� CRfEditCmd �I�u�W�F�N�g
-		�̃R�}���h�� execute() ����B
+		１．  m_contRedo の末尾の CRfEditCmd オブジェクト
+		のコマンドを execute() する。
 	
-		�Q�D  ���̃R�}���h�� m_contRedo �̖�������͍폜���A
-		m_contUndo �̖����ɒǉ�����B
+		２．  そのコマンドを m_contRedo の末尾からは削除し、
+		m_contUndo の末尾に追加する。
 	
-		�R�D  m_contRedo �̖����� CHint_CDedRosenFileData �I�u�W�F�N�g��
-		�̂Ă�B
+		３．  m_contRedo の末尾の CHint_CDedRosenFileData オブジェクトを
+		捨てる。
 	*/
 	CMup_deque< Ou< CRfEditCmd > > m_contRedo ;
 
 	/**
-�@�@���݂̃h�L�������g�́A
-	�w�ύX�t���O�xOFF�̏�Ԃ�����s���ꂽ�ύX/Undo�̉� 
-	�������܂��B 
+　　現在のドキュメントの、
+	『変更フラグ』OFFの状態から実行された変更/Undoの回数 
+	を示します。 
 
-	����{���� 
+	◎基本操作 
 
-�@	   ModifyCountFromSave �́A�h�L�������g���V�K�쐬���ꂽ���ƁA�܂��͕ۑ����ꂽ�Ƃ��� 0 �Ƀ��Z�b�g����܂��B 
-�@	  ���̌� 
-			�ύX����/REDO���s��ꂽ�Ƃ���1���Z 
-			UNDO���s��ꂽ�Ƃ���1���Z 
-	���s���܂��B 
-�@	  �w�ύX�t���O�x�͂��̒l�ɓ�����������̂Ƃ��܂��B�A�v���P�[�V�����́A�ȉ��̋K���ɏ]���āA�w�ύX�t���O�x�𐧌䂵�܂��B 
-			ModifyCountFromSave == 0 �̂Ƃ��E�E�E�w�ύX�t���O�x��OFF 
-			ModifyCountFromSave != 0 �̂Ƃ��E�E�E�w�ύX�t���O�x��ON 
+　	   ModifyCountFromSave は、ドキュメントが新規作成されたあと、または保存されたときに 0 にリセットされます。 
+　	  その後 
+			変更動作/REDOが行われたときに1加算 
+			UNDOが行われたときに1減算 
+	が行われます。 
+　	  『変更フラグ』はこの値に同期させるものとします。アプリケーションは、以下の規則に従って、『変更フラグ』を制御します。 
+			ModifyCountFromSave == 0 のとき・・・『変更フラグ』はOFF 
+			ModifyCountFromSave != 0 のとき・・・『変更フラグ』はON 
 
-	����O����|�P 
+	◎例外操作−１ 
 
-	�@ModifyCountFromSave �� INT_MAX �ɒB������A���̌�͕ύX�EUNDO�EREDO���s���Ă��l�͕ς��܂���B���̏�Ԃ́A�u�����Ȃ�UNDO�EREDO���s���Ă��A�h�L�������g�̏�Ԃ��w�ύX�t���OOFF�x�ɖ߂����Ƃ͂ł��Ȃ��v���Ƃ������܂��B 
+	　ModifyCountFromSave が INT_MAX に達したら、その後は変更・UNDO・REDOが行われても値は変わりません。この状態は、「いかなるUNDO・REDOを行っても、ドキュメントの状態を『変更フラグOFF』に戻すことはできない」ことを示します。 
 
-	����O����|2 
+	◎例外操作−2 
 
-�@	  ModifyCountFromSave �����̂Ƃ��ɐV�����ύX���s��ꂽ�ꍇ(UNDO,REDO�ȊO�̕ҏW���삪�s��ꂽ�ꍇ)�́AModifyCountFromSave�� INT_MAX �Ƃ��܂��B 
+　	  ModifyCountFromSave が負のときに新しい変更が行われた場合(UNDO,REDO以外の編集操作が行われた場合)は、ModifyCountFromSaveは INT_MAX とします。 
 
-�@	  ���̗�O���삪�K�p�����ꍇ�̈��́A 
+　	  この例外操作が適用される場合の一例は、 
 
-�@	  �u�h�L�������g���t�@�C���ɕۑ��������ƁAUNDO���s���A���̌�ҏW������s�����v 
+　	  「ドキュメントをファイルに保存したあと、UNDOを行い、その後編集操作を行った」 
 
-	�Ƃ������̂ł��B�ȉ��̗�ł́A6.�̑��삪���̏ꍇ�ɂ�����܂��B 
+	というものです。以下の例では、6.の操作がこの場合にあたります。 
 
 	@code
 	// -------------------------------- 
-	1.������� 
-		�h�L�������g�@"" 
-		UNDO�X�^�b�N 
+	1.初期状態 
+		ドキュメント　"" 
+		UNDOスタック 
 		ModifyCountFromSave=0 
 
-	2.1��ڂ̕ҏW  �@"ABC" 
-		�h�L�������g  "ABC" �ɍX�V 
-		UNDO�X�^�b�N    "" 
+	2.1回目の編集  　"ABC" 
+		ドキュメント  "ABC" に更新 
+		UNDOスタック    "" 
 		ModifyCountFromSave=1 
 
-	3.2��ڂ̕ҏW�@"ABCDEF" 
-		�h�L�������g  "ABCDEF"  �ɍX�V 
-		UNDO�X�^�b�N    "","ABC" 
+	3.2回目の編集　"ABCDEF" 
+		ドキュメント  "ABCDEF"  に更新 
+		UNDOスタック    "","ABC" 
 		ModifyCountFromSave=2 
 
-	4.�h�L�������g���t�@�C���ɕۑ��@ 
-		�h�L�������g  "ABCDEF"  �ɍX�V 
-		UNDO�X�^�b�N    "","ABC" 
+	4.ドキュメントをファイルに保存　 
+		ドキュメント  "ABCDEF"  に更新 
+		UNDOスタック    "","ABC" 
 		ModifyCountFromSave=0 
 
 	5.Undo 
-		�h�L�������g  "ABC" 
-		UNDO�X�^�b�N    "" 
-		REDO�X�^�b�N    "ABCDEF" 
+		ドキュメント  "ABC" 
+		UNDOスタック    "" 
+		REDOスタック    "ABCDEF" 
 		ModifyCountFromSave=-1 
 
-	6.�ҏW "ABCGHI" 
-		�h�L�������g  "ABCGHI" 
-		UNDO�X�^�b�N    "" "ABC" 
-		REDO�X�^�b�N     
+	6.編集 "ABCGHI" 
+		ドキュメント  "ABCGHI" 
+		UNDOスタック    "" "ABC" 
+		REDOスタック     
 		ModifyCountFromSave=INT_MAX 
 	// -------------------------------- 
 	@endcode
 
-�@	  6.�̕ҏW�ɍۂ��� ModifyCountFromSave �������ǂ��� +1 ����ƁA ModifyCountFromSave �� 0�ƂȂ�A�h�L�������g�́w�ύX�t���OOFF�x�ɂȂ��Ă��܂��܂��B����͐���������܂���B 
+　	  6.の編集に際して ModifyCountFromSave を原則どおり +1 すると、 ModifyCountFromSave は 0となり、ドキュメントは『変更フラグOFF』になってしまいます。これは正しくありません。 
 
 	*/
 	int m_iModifyCountFromDoc ;	
@@ -319,15 +319,15 @@ private:
 private:
 	
 	/**
-		�O��o�b�N�A�b�v���s���������ł��B
-		�t�@�C���I�[�v�����y�ѐV�K�쐬���ɏ���������A
-		�o�b�N�A�b�v�����s�����ƍX�V���܂��B
+		前回バックアップを行った時刻です。
+		ファイルオープン時及び新規作成時に初期化され、
+		バックアップが実行されると更新します。
 	*/
 	time_t m_ttPrevBackup;
 
 	/**
-		�o�b�N�A�b�v��̐�΃A�h���X�ł��B
-		�o�b�N�A�b�v�����s�����ƍX�V���܂��B
+		バックアップ先の絶対アドレスです。
+		バックアップが実行されると更新します。
 	*/
 	CString m_strBackupPathName;
 	
@@ -343,53 +343,53 @@ public:
 
 protected:
 	// --------------------------------
-	///@name	�����֐�-�t�@�C�����J���E�ۑ�
+	///@name	下請関数-ファイルを開く・保存
 	// --------------------------------
 	///@{
 	/**
-	 	OnOpenDocument() �̉����֐��ł��B
-	 	WinDia �`���̃t�@�C����ǂݍ���ŁAm_CDedRosenFileData ��
-	 	���f���܂��B
+	 	OnOpenDocument() の下請関数です。
+	 	WinDia 形式のファイルを読み込んで、m_CDedRosenFileData に
+	 	反映します。
 	  @param lpszPathName [in]
-	  	�ǂݍ��ރt�@�C�������w�肵�ĉ������B
-	 	���̃t�@�C�����́A WinDia �`���łȂ��Ă͂Ȃ�܂���B
+	  	読み込むファイル名を指定して下さい。
+	 	このファイル名は、 WinDia 形式でなくてはなりません。
 	  @return
-	 	���������� TRUE �E �G���[�Ȃ� FALSE �ł��B
+	 	成功したら TRUE ・ エラーなら FALSE です。
 	 
-	 	���̊֐��́A�G���[�̏ꍇ�̓��b�Z�[�W�{�b�N�X��\�����܂��B
+	 	この関数は、エラーの場合はメッセージボックスを表示します。
 	 */
 	//virtual BOOL OnOpenDocument_WinDia( LPCTSTR lpszPathName ) ;
 	
 	/**
-	 	OnSaveDocument() �̉����֐��ł��B
-	 	�h�L�������g�̓��e���AWinDia �`���̃t�@�C���ɕۑ����܂��B
+	 	OnSaveDocument() の下請関数です。
+	 	ドキュメントの内容を、WinDia 形式のファイルに保存します。
 	  @param lpszPathName [in]
-	  	�ۑ�����t�@�C�������w�肵�ĉ������B
+	  	保存するファイル名を指定して下さい。
 	  @return
-	 	���������� TRUE �E �G���[�Ȃ� FALSE �ł��B
+	 	成功したら TRUE ・ エラーなら FALSE です。
 	 
-	 	���̊֐��́A�G���[�̏ꍇ�̓��b�Z�[�W�{�b�N�X��\�����܂��B
+	 	この関数は、エラーの場合はメッセージボックスを表示します。
 	 */
 	//virtual BOOL OnSaveDocument_WinDia( LPCTSTR lpszPathName ) ;
 	
 	/**
 		
 	@param lpszDllFilename [in]
-		�t�@�C���ϊ�DLL�̃t�@�C�������w�肵�Ă��������B
+		ファイル変換DLLのファイル名を指定してください。
 	@param pbinFileContent [in,out]
-		�ϊ����s���t�@�C���R���e���c���w�肵�Ă��������B
-		���̊֐��͂��̃o�C�i���f�[�^��ϊ����A�ϊ����ʂ��㏑�����܂��B
+		変換を行うファイルコンテンツを指定してください。
+		この関数はこのバイナリデータを変換し、変換結果を上書きします。
 	@param pstrError [out]
-		���̊֐��́A�ϊ��ŃG���[������������A�G���[���b�Z�[�W��
-		�����ɏ������݂܂��B
-		���̃��b�Z�[�W�́A�����Ƀ��b�Z�[�W�{�b�N�X�ŕ\���\�Ȍ`���ł��B
+		この関数は、変換でエラーが発生したら、エラーメッセージを
+		ここに書き込みます。
+		このメッセージは、すぐにメッセージボックスで表示可能な形式です。
 	@return 
-		-	0 : �����ɐ������܂����B
-		-	-1 : ����DLL���T�|�[�g����t�@�C���`���ł͂���܂���ł����B
-		-	-101: DLL���݂���܂���ł����B
-		-	-102: �t�@�C���̕ϊ��Ɏ��s���܂����B
+		-	0 : 処理に成功しました。
+		-	-1 : このDLLがサポートするファイル形式ではありませんでした。
+		-	-101: DLLがみつかりませんでした。
+		-	-102: ファイルの変換に失敗しました。
 	@attention
-�@	  �߂�l�� -1 �̏ꍇ�́A *pstrError �ɂ̓G���[���b�Z�[�W���i�[����܂���B
+　	  戻り値が -1 の場合は、 *pstrError にはエラーメッセージが格納されません。
 	*/
 	//int OnOpenDocument_ConvFile( 
 	//	LPCTSTR lpszDllFilename , 
@@ -403,24 +403,24 @@ public:
 	//	CHidemdiRootDoc
 	// ********************************
 	/**
-	  	���ׂẴT�uDocview�ƁA���[�gDocview�ɑ΂��āA
-	 	UpdateAllViews()�����s���܂�
+	  	すべてのサブDocviewと、ルートDocviewに対して、
+	 	UpdateAllViews()を実行します
 	   @param pSender
-	  	�h�L�������g��ύX�����r���[�ւ̃|�C���^�B
-	  ���ׂẴr���[���X�V����Ƃ��ɂ� NULL ���w�肵�܂��B
+	  	ドキュメントを変更したビューへのポインタ。
+	  すべてのビューを更新するときには NULL を指定します。
 	   @param lHint
-	  	�ύX�Ɋւ�������w�肵�܂��B
-	  	�������A((LPARAM)-1)���w�肳�ꂽ�ꍇ�́A���ׂĂ�Docview�ɑ΂��āA
-	  	���e�����[�g�h�L�������g�ɔ��f���A�K�v�Ȃ�΃��[�gDoc�ɑ΂���
-	  	SetModifiedFlag()�����s�����܂��B
+	  	変更に関する情報を指定します。
+	  	ただし、((LPARAM)-1)が指定された場合は、すべてのDocviewに対して、
+	  	内容をルートドキュメントに反映し、必要ならばルートDocに対して
+	  	SetModifiedFlag()を実行させます。
 	   @param pHint
-	  	�ύX�Ɋւ����񂪊i�[����Ă���I�u�W�F�N�g�ւ̃|�C���^�B
+	  	変更に関する情報が格納されているオブジェクトへのポインタ。
 	 
-	  [�I�[�o���C�h]
-	 	UpdateAllSubDocviews() �ł́ACJikokuhyouDoc �I�u�W�F�N�g�ɑΉ�����
-	 	CentDedDia �I�u�W�F�N�g�����邩�ǂ��������؂��܂��B
-	 	�Ή����� CentDedDia ���폜����Ă���ꍇ�́A
-	 	CJikokuhyouDoc �I�u�W�F�N�g���폜���܂��B
+	  [オーバライド]
+	 	UpdateAllSubDocviews() では、CJikokuhyouDoc オブジェクトに対応する
+	 	CentDedDia オブジェクトがあるかどうかを検証します。
+	 	対応する CentDedDia が削除されている場合は、
+	 	CJikokuhyouDoc オブジェクトを削除します。
 	 */
 	virtual void UpdateAllSubDocviews( CView* pSender , LPARAM lHint = 0 , CObject* pHint = NULL );
 
@@ -429,54 +429,54 @@ public:
 // ********************************
 public:
 	// ********************************
-	///@name CDiagramEditDoc-���
+	///@name CDiagramEditDoc-包含
 	// ********************************
 	///@{
 	const CDedRosenFileData*	getCDedRosenFileData()const ;
 	///@}
 	// ********************************
-	///@name �N���b�v�{�[�h����
+	///@name クリップボード操作
 	// ********************************
 	///@{
 
 	/**
 	 @return
-		�N���b�v�{�[�h�ɁA UNICODETEXT �I�u�W�F�N�g��
-		���e���i�[����Ă�����A�^��Ԃ��܂��B
+		クリップボードに、 UNICODETEXT オブジェクトの
+		内容が格納されていたら、真を返します。
 	 */
 	static bool UnicodeText_IsClipboardFormatAvailable();
 
 	/**
 	@return
-		CentDedEki �I�u�W�F�N�g�̓��e��ێ�����
-		�N���b�v�{�[�h�t�H�[�}�b�g�l��Ԃ��܂��B
+		CentDedEki オブジェクトの内容を保持する
+		クリップボードフォーマット値を返します。
 	*/
 	static UINT getCF_CentDedEki() ;
 
 
 	/**
-	 �w�肳�ꂽ CentDedEki �I�u�W�F�N�g�̓��e���A
-	�N���b�v�{�[�h�ɕۑ����܂��B
+	 指定された CentDedEki オブジェクトの内容を、
+	クリップボードに保存します。
 	@param pMuCentDedEki [in]
-		�w�I�u�W�F�N�g���w�肵�Ă��������B
+		駅オブジェクトを指定してください。
 	@return 
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B	
-		-	-1 ;	//	CentDedEki �̓��e���s���ł��B
-		-	-11 ;	//	�N���b�v�{�[�h�ւ̃f�[�^�ݒ肪���s
+		成功したら 0 以上、エラーなら負の数です。	
+		-	-1 ;	//	CentDedEki の内容が不正です。
+		-	-11 ;	//	クリップボードへのデータ設定が失敗
 	*/
 	static int CentDedEki_To_Cliboard( const Mu<CentDedEki>* pMuCentDedEki ) ;
 	/**
-	�@�N���b�v�{�[�h�ɁA CentDedEki �I�u�W�F�N�g��
-	���e���i�[����Ă�����A������擾���܂��B
+	　クリップボードに、 CentDedEki オブジェクトの
+	内容が格納されていたら、それを取得します。
 	@param pCentDedEki [out]
-		���̊֐��͐���������A���̉w�I�u�W�F�N�g��
-		�N���b�v�{�[�h�̓��e��ǉ����܂��B
+		この関数は成功したら、この駅オブジェクトに
+		クリップボードの内容を追加します。
 	@return 
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B	
-			-	-1 ;	//	�N���b�v�{�[�h�ɂ͗L���ȃf�[�^�͂���܂���B
-			-	-2 ;	//	�N���b�v�{�[�h����̓ǂݍ��݂Ɏ��s���܂����B	
-			-	-3 ;	//	�N���b�v�{�[�h�̓��e���s���ł��B
-			-	-4 ;	//	CentDedEki �̓��e���s���ł��B
+		成功したら 0 以上、エラーなら負の数です。	
+			-	-1 ;	//	クリップボードには有効なデータはありません。
+			-	-2 ;	//	クリップボードからの読み込みに失敗しました。	
+			-	-3 ;	//	クリップボードの内容が不正です。
+			-	-4 ;	//	CentDedEki の内容が不正です。
 	*/
 	static int CentDedEki_From_Cliboard( 
 		Mui<CentDedEki>* pCentDedEki ) ;
@@ -485,45 +485,45 @@ public:
 
 	/**
 	 @return 
-		�N���b�v�{�[�h�ɁA CentDedEki �I�u�W�F�N�g��
-		���e���i�[����Ă�����A�^��Ԃ��܂��B
+		クリップボードに、 CentDedEki オブジェクトの
+		内容が格納されていたら、真を返します。
 	 */
 	static bool CentDedEki_IsClipboardFormatAvailable() ;
 
 	/**
 	@return
-		CentDedRessyasyubetsu �I�u�W�F�N�g�̓��e��ێ�����
-		�N���b�v�{�[�h�t�H�[�}�b�g�l��Ԃ��܂��B
+		CentDedRessyasyubetsu オブジェクトの内容を保持する
+		クリップボードフォーマット値を返します。
 	 */
 	static UINT getCF_CentDedRessyasyubetsu() ;
 
 	/**
-	 �w�肳�ꂽ CentDedRessyasyubetsu �I�u�W�F�N�g�̓��e���A
-	�N���b�v�{�[�h�ɕۑ����܂��B
+	 指定された CentDedRessyasyubetsu オブジェクトの内容を、
+	クリップボードに保存します。
 	@param pMuCentDedRessyasyubetsu [in]
-		��Ԏ�ʂ�ێ������R���e�i���w�肵�Ă��������B
+		列車種別を保持したコンテナを指定してください。
 	@return 
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B	
-			-	-1 ;	//	CentDedRessyasyubetsu �̓��e���s���ł��B
-			-	-11 ;	//	�N���b�v�{�[�h�ւ̃f�[�^�ݒ肪���s
+		成功したら 0 以上、エラーなら負の数です。	
+			-	-1 ;	//	CentDedRessyasyubetsu の内容が不正です。
+			-	-11 ;	//	クリップボードへのデータ設定が失敗
 	 */
 	static int CentDedRessyasyubetsu_To_Cliboard( 
 		const Mu<CentDedRessyasyubetsu>* pMuCentDedRessyasyubetsu ) ;
 
 	/**
-	 �N���b�v�{�[�h�ɁA CentDedRessyasyubetsu �I�u�W�F�N�g��
-	���e���i�[����Ă�����A������擾���܂��B
+	 クリップボードに、 CentDedRessyasyubetsu オブジェクトの
+	内容が格納されていたら、それを取得します。
 
 	@param pMuCentDedRessyasyubetsu [out]
-		���̊֐��͐���������A���̃R���e�i�ɁA
-		��Ԏ�ʂ�ǉ����܂��B
+		この関数は成功したら、このコンテナに、
+		列車種別を追加します。
 
 	@return 
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B	
-			-	-1 ;	//	�N���b�v�{�[�h�ɂ͗L���ȃf�[�^�͂���܂���B
-			-	-2 ;	//	�N���b�v�{�[�h����̓ǂݍ��݂Ɏ��s���܂����B	
-			-	-3 ;	//	�N���b�v�{�[�h�̓��e���s���ł��B
-			-	-4 ;	//	CentDedRessyasyubetsu �̓��e���s���ł��B
+		成功したら 0 以上、エラーなら負の数です。	
+			-	-1 ;	//	クリップボードには有効なデータはありません。
+			-	-2 ;	//	クリップボードからの読み込みに失敗しました。	
+			-	-3 ;	//	クリップボードの内容が不正です。
+			-	-4 ;	//	CentDedRessyasyubetsu の内容が不正です。
 	 */
 	static int CentDedRessyasyubetsu_From_Cliboard( 
 		Mui<CentDedRessyasyubetsu>* pMuCentDedRessyasyubetsu ) ;
@@ -532,91 +532,91 @@ public:
 
 	/**
 	  @return 
-	 	�N���b�v�{�[�h�ɁA CentDedRessyasyubetsu �I�u�W�F�N�g��
-	 	���e���i�[����Ă�����A�^��Ԃ��܂��B
+	 	クリップボードに、 CentDedRessyasyubetsu オブジェクトの
+	 	内容が格納されていたら、真を返します。
 	 */
 	static bool CentDedRessyasyubetsu_IsClipboardFormatAvailable() ;
 
 	/**
 	  @return
-	 	CentDedRessyaCont �I�u�W�F�N�g�̓��e��ێ�����
-	 	�N���b�v�{�[�h�t�H�[�}�b�g�l��Ԃ��܂��B
+	 	CentDedRessyaCont オブジェクトの内容を保持する
+	 	クリップボードフォーマット値を返します。
 	 */
 	static UINT getCF_CentDedRessyaCont() ;
 
 	/**
-	�w�肳�ꂽ CentDedRessyaCont �I�u�W�F�N�g�̓��e���A
-	�N���b�v�{�[�h�ɕۑ����܂��B
+	指定された CentDedRessyaCont オブジェクトの内容を、
+	クリップボードに保存します。
 	 @param aCentDedRessyaCont [in]
-		�w�I�u�W�F�N�g���w�肵�Ă��������B
+		駅オブジェクトを指定してください。
 	 @return 
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B	
-			-	-1 ;	//	aCentDedRessyaCont �̓��e���s���ł��B
-			-	-11 ;	//	�N���b�v�{�[�h�ւ̃f�[�^�ݒ肪���s
+		成功したら 0 以上、エラーなら負の数です。	
+			-	-1 ;	//	aCentDedRessyaCont の内容が不正です。
+			-	-11 ;	//	クリップボードへのデータ設定が失敗
 	 */
 	static int CentDedRessyaCont_To_Cliboard( 
 		const CentDedRessyaCont& aCentDedRessyaCont ) ;
 
 	/**
-	�N���b�v�{�[�h�ɁA CentDedRessyaCont �I�u�W�F�N�g��
-	���e���i�[����Ă�����A������擾���A
-	pCentDedRessyaCont �ɒǉ����܂��B
+	クリップボードに、 CentDedRessyaCont オブジェクトの
+	内容が格納されていたら、それを取得し、
+	pCentDedRessyaCont に追加します。
 	 @param pCentDedRessyaCont [in,out]
-		���̊֐��͐���������A���� CentDedRessyaCont �R���e�i�̖�����
-		�N���b�v�{�[�h�Ɋi�[����Ă����Ԃ�ǉ����܂��B
-		���̃R���e�i�ɂ���܂Ŋi�[����Ă�����Ԃ́A�ێ����܂��B
-		pCentDedRessyaCont �ɑ΂��Ă͂��炩���߁A
-		�w��ԕ����x m_eRessyaHoukou ��
-		�w�w�������x m_iEkiCount ��
-		�������ݒ肳��Ă��Ȃ��Ă͂Ȃ�܂���B
+		この関数は成功したら、この CentDedRessyaCont コンテナの末尾に
+		クリップボードに格納されている列車を追加します。
+		このコンテナにそれまで格納されていた列車は、維持します。
+		pCentDedRessyaCont に対してはあらかじめ、
+		『列車方向』 m_eRessyaHoukou と
+		『駅時刻数』 m_iEkiCount が
+		正しく設定されていなくてはなりません。
 	 @return 
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B	
-			-	-1 ;	//	�N���b�v�{�[�h�ɂ͗L���ȃf�[�^�͂���܂���B
-			-	-2 ;	//	�N���b�v�{�[�h����̓ǂݍ��݂Ɏ��s���܂����B	
-			-	-3 ;	//	�N���b�v�{�[�h�̓��e���s���ł��B
-			-	-4 ;	//	CentDedRessyaCont �̓��e���s���ł��B
+		成功したら 0 以上、エラーなら負の数です。	
+			-	-1 ;	//	クリップボードには有効なデータはありません。
+			-	-2 ;	//	クリップボードからの読み込みに失敗しました。	
+			-	-3 ;	//	クリップボードの内容が不正です。
+			-	-4 ;	//	CentDedRessyaCont の内容が不正です。
 	 */
 	static int CentDedRessyaCont_From_Cliboard( 
 		CentDedRessyaCont* pCentDedRessyaCont ) ;
 
 	/**
 	  @return 
-	 	�N���b�v�{�[�h�ɁA CentDedRessyaCont �I�u�W�F�N�g��
-	 	���e���i�[����Ă�����A�^��Ԃ��܂��B
+	 	クリップボードに、 CentDedRessyaCont オブジェクトの
+	 	内容が格納されていたら、真を返します。
 	 */
 	static bool CentDedRessyaCont_IsClipboardFormatAvailable() ;
 
 	///**
 	//@return
-	//CentDedEkiTrack2 �I�u�W�F�N�g�̓��e��ێ�����
-	//�N���b�v�{�[�h�t�H�[�}�b�g�l��Ԃ��܂��B
+	//CentDedEkiTrack2 オブジェクトの内容を保持する
+	//クリップボードフォーマット値を返します。
 	//*/
 	//static UINT getCF_CentDedEkiTrack2();
 
 
 	///**
-	//�w�肳�ꂽ CentDedEkiTrack2 �I�u�W�F�N�g�̓��e���A
-	//�N���b�v�{�[�h�ɕۑ����܂��B
+	//指定された CentDedEkiTrack2 オブジェクトの内容を、
+	//クリップボードに保存します。
 	//@param pMuCentDedEkiTrack2 [in]
-	//�w�I�u�W�F�N�g���w�肵�Ă��������B
+	//駅オブジェクトを指定してください。
 	//@return
-	//���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-	//-	-1 ;	//	CentDedEkiTrack2 �̓��e���s���ł��B
-	//-	-11 ;	//	�N���b�v�{�[�h�ւ̃f�[�^�ݒ肪���s
+	//成功したら 0 以上、エラーなら負の数です。
+	//-	-1 ;	//	CentDedEkiTrack2 の内容が不正です。
+	//-	-11 ;	//	クリップボードへのデータ設定が失敗
 	//*/
 	//static int CentDedEkiTrack2_To_Cliboard(const Mu<CentDedEkiTrack2>* pMuCentDedEkiTrack2);
 	///**
-	//�@�N���b�v�{�[�h�ɁA CentDedEkiTrack2 �I�u�W�F�N�g��
-	// ���e���i�[����Ă�����A������擾���܂��B
+	//　クリップボードに、 CentDedEkiTrack2 オブジェクトの
+	// 内容が格納されていたら、それを取得します。
 	// @param pCentDedEkiTrack2 [out]
-	// ���̊֐��͐���������A���̉w�I�u�W�F�N�g��
-	// �N���b�v�{�[�h�̓��e��ǉ����܂��B
+	// この関数は成功したら、この駅オブジェクトに
+	// クリップボードの内容を追加します。
 	// @return
-	// ���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-	// -	-1 ;	//	�N���b�v�{�[�h�ɂ͗L���ȃf�[�^�͂���܂���B
-	// -	-2 ;	//	�N���b�v�{�[�h����̓ǂݍ��݂Ɏ��s���܂����B
-	// -	-3 ;	//	�N���b�v�{�[�h�̓��e���s���ł��B
-	// -	-4 ;	//	CentDedEki �̓��e���s���ł��B
+	// 成功したら 0 以上、エラーなら負の数です。
+	// -	-1 ;	//	クリップボードには有効なデータはありません。
+	// -	-2 ;	//	クリップボードからの読み込みに失敗しました。
+	// -	-3 ;	//	クリップボードの内容が不正です。
+	// -	-4 ;	//	CentDedEki の内容が不正です。
 	// */
 	//static int CentDedEkiTrack2_From_Cliboard(
 	//	Mui<CentDedEkiTrack2>* pCentDedEkiTrack2);
@@ -625,47 +625,47 @@ public:
 
 	///**
 	//@return
-	//�N���b�v�{�[�h�ɁA CentDedEkiTrack2 �I�u�W�F�N�g��
-	//���e���i�[����Ă�����A�^��Ԃ��܂��B
+	//クリップボードに、 CentDedEkiTrack2 オブジェクトの
+	//内容が格納されていたら、真を返します。
 	//*/
 	//static bool CentDedEkiTrack2_IsClipboardFormatAvailable();
 
 	/**
 	@return
-	�w������\���`���ɕϊ�����I�u�W�F�N�g��Ԃ��܂��B
-	@note static �����o�֐��ɂ��邱�Ƃ��ł��܂��B
+	駅時刻を表示形式に変換するオブジェクトを返します。
+	@note static メンバ関数にすることができます。
 	*/
 	//const CdDedJikoku::CConv&	getCdDedJikokuConv(
 	//	const bool bDisplaySecondEkiJikoku,
 	//	const bool bDisplayColonEkiJikoku)const;
 
 	/**
-	�w�肳�ꂽ �^�p�\ �I�u�W�F�N�g�̓��e���A
-	�N���b�v�{�[�h�ɕۑ����܂��B
+	指定された 運用表 オブジェクトの内容を、
+	クリップボードに保存します。
 	@param strData [in]
-		�N���b�v�{�[�h�ɕۑ����镶����ł��A�Ăяo�����ō쐬���܂��B
+		クリップボードに保存する文字列です、呼び出し側で作成します。
 	@return
-	���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-	-	-1 ;	//	CentDedEkiTrack2 �̓��e���s���ł��B
-	-	-11 ;	//	�N���b�v�{�[�h�ւ̃f�[�^�ݒ肪���s
+	成功したら 0 以上、エラーなら負の数です。
+	-	-1 ;	//	CentDedEkiTrack2 の内容が不正です。
+	-	-11 ;	//	クリップボードへのデータ設定が失敗
 	*/
 	static int CentDedOperationTable_To_Cliboard(
 		const tstring& strData);
 	/**
-	�w�肳�ꂽ �^�p�\ �I�u�W�F�N�g�̓��e���A
-	�N���b�v�{�[�h�ɕۑ����܂��B
+	指定された 運用表 オブジェクトの内容を、
+	クリップボードに保存します。
 	@param iDiaIndex [in]
-		�R�s�[����^�p���܂ރ_�C���̃C���f�N�X
+		コピーする運用を含むダイヤのインデクス
 	@param ListOperationTableContent [in]
-		�^�p�\�I�u�W�F�N�g���w�肵�Ă��������B
+		運用表オブジェクトを指定してください。
 	@param bDisplaySecondEkiJikoku [in]
-		�����\���ŕb�P�ʂ�\�����邩�ۂ�
+		時刻表示で秒単位を表示するか否か
 	@param bDisplayColonEkiJikoku [in]
-		�����\���ŃR������\�����邩�ۂ�
+		時刻表示でコロンを表示するか否か
 	@return
-	���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-	-	-1 ;	//	CentDedEkiTrack2 �̓��e���s���ł��B
-	-	-11 ;	//	�N���b�v�{�[�h�ւ̃f�[�^�ݒ肪���s
+	成功したら 0 以上、エラーなら負の数です。
+	-	-1 ;	//	CentDedEkiTrack2 の内容が不正です。
+	-	-11 ;	//	クリップボードへのデータ設定が失敗
 	*/
 	//static int CentDedOperationTable_To_Cliboard(
 	//	const int iDiaIndex,
@@ -676,22 +676,22 @@ public:
 
 	/**
 	  @return
-		CentDedBeforeOperationCont,AfterOperationCont �I�u�W�F�N�g�̓��e��ێ�����
-		�N���b�v�{�[�h�t�H�[�}�b�g�l��Ԃ��܂��B
+		CentDedBeforeOperationCont,AfterOperationCont オブジェクトの内容を保持する
+		クリップボードフォーマット値を返します。
 	 */
 	static UINT getCF_CentDedOperation();
 
 	/**
-	�w�肳�ꂽ CentDedBeforeOperationCont,AfterOperationCont �I�u�W�F�N�g�̓��e���A
-	�N���b�v�{�[�h�ɕۑ����܂��B
+	指定された CentDedBeforeOperationCont,AfterOperationCont オブジェクトの内容を、
+	クリップボードに保存します。
 	 @param aCentDedEkiJikoku [in]
-		��Ƃ��܂މw�����I�u�W�F�N�g���w�肵�Ă��������B
+		作業を含む駅時刻オブジェクトを指定してください。
 	bSyubetsuChange[in]
-		��ʕύX���L�����ۂ��A���̉w�̍�Ɩ����Ɏ���Ԑڑ�������ꍇ�A��ʕύX�̒l�������o���܂�
+		種別変更が有効か否か、この駅の作業末尾に次列車接続がある場合、種別変更の値も書き出します
 	 @return
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-			-	-1 ;	//	aCentDedRessyaCont �̓��e���s���ł��B
-			-	-11 ;	//	�N���b�v�{�[�h�ւ̃f�[�^�ݒ肪���s
+		成功したら 0 以上、エラーなら負の数です。
+			-	-1 ;	//	aCentDedRessyaCont の内容が不正です。
+			-	-11 ;	//	クリップボードへのデータ設定が失敗
 	 */
 	static int CentDedOperation_To_Cliboard(
 		const CentDedEkiJikoku& aCentDedEkiJikoku,
@@ -699,23 +699,23 @@ public:
 		const int iEkiOrder);
 
 	/**
-	�N���b�v�{�[�h�ɁA CentDedBeforeOperationCont,AfterOperationCont �I�u�W�F�N�g��
-	���e���i�[����Ă�����A������擾���A
-	pCentDedRessya �ɒǉ����܂��B
+	クリップボードに、 CentDedBeforeOperationCont,AfterOperationCont オブジェクトの
+	内容が格納されていたら、それを取得し、
+	pCentDedRessya に追加します。
 	 @param aCentDedEkiJikoku [out]
-		���̊֐��͐���������A���� aCentDedEkiJikoku�̑O���Ƃ�
-		�N���b�v�{�[�h�Ɋi�[����Ă����Ƃ�ǉ����܂��B
-		���̃R���e�i�ɂ���܂Ŋi�[����Ă�����Ƃ́A�폜����܂��B
-		�������ݒ肳��Ă��Ȃ��Ă͂Ȃ�܂���B
+		この関数は成功したら、この aCentDedEkiJikokuの前後作業に
+		クリップボードに格納されている作業を追加します。
+		このコンテナにそれまで格納されていた作業は、削除されます。
+		正しく設定されていなくてはなりません。
 	 @return
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-			-	-1 ;	//	�N���b�v�{�[�h�ɂ͗L���ȃf�[�^�͂���܂���B
-			-	-2 ;	//	�N���b�v�{�[�h����̓ǂݍ��݂Ɏ��s���܂����B
-			-	-3 ;	//	�N���b�v�{�[�h�̓��e���s���ł��B
-			-	-4 ;	//	iEkiOrder���͈͊O�ł��B
-			-	-5 ;	//	CentDedEkiJikoku�̓ǂݏo���Ɏ��s���܂���
-			-	-6 ;	//	�O��Ƃ̓ǂݏo���Ɏ��s���܂���
-			-	-7 ;	//	���Ƃ̓ǂݏo���Ɏ��s���܂���
+		成功したら 0 以上、エラーなら負の数です。
+			-	-1 ;	//	クリップボードには有効なデータはありません。
+			-	-2 ;	//	クリップボードからの読み込みに失敗しました。
+			-	-3 ;	//	クリップボードの内容が不正です。
+			-	-4 ;	//	iEkiOrderが範囲外です。
+			-	-5 ;	//	CentDedEkiJikokuの読み出しに失敗しました
+			-	-6 ;	//	前作業の読み出しに失敗しました
+			-	-7 ;	//	後作業の読み出しに失敗しました
 	 */
 	static int CentDedOperation_From_Cliboard(
 		CentDedEkiJikoku& aCentDedEkiJikoku,
@@ -724,113 +724,113 @@ public:
 
 	/**
 	  @return
-		�N���b�v�{�[�h�ɁA CentDedBeforeOperationCont,AfterOperationCont �I�u�W�F�N�g��
-		���e���i�[����Ă�����A�^��Ԃ��܂��B
+		クリップボードに、 CentDedBeforeOperationCont,AfterOperationCont オブジェクトの
+		内容が格納されていたら、真を返します。
 	 */
 	static bool CentDedOperation_IsClipboardFormatAvailable();
 
 	/**
 	  @return
-		CentDedBeforeOperationCont,AfterOperationCont �I�u�W�F�N�g�̓��e��ێ�����
-		�N���b�v�{�[�h�t�H�[�}�b�g�l��Ԃ��܂��B
+		CentDedBeforeOperationCont,AfterOperationCont オブジェクトの内容を保持する
+		クリップボードフォーマット値を返します。
 	 */
 	static UINT getCF_RessyaJouhou();
 
 	/**
-	�w�肳�ꂽ CentDedBeforeOperationCont,AfterOperationCont �I�u�W�F�N�g�̓��e���A
-	�N���b�v�{�[�h�ɕۑ����܂��B
+	指定された CentDedBeforeOperationCont,AfterOperationCont オブジェクトの内容を、
+	クリップボードに保存します。
 	 @param aCentDedEkiJikoku [in]
-		��Ƃ��܂މw�����I�u�W�F�N�g���w�肵�Ă��������B
+		作業を含む駅時刻オブジェクトを指定してください。
 	bSyubetsuChange[in]
-		��ʕύX���L�����ۂ��A���̉w�̍�Ɩ����Ɏ���Ԑڑ�������ꍇ�A��ʕύX�̒l�������o���܂�
+		種別変更が有効か否か、この駅の作業末尾に次列車接続がある場合、種別変更の値も書き出します
 	 @return
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-			-	-1 ;	//	aCentDedRessyaCont �̓��e���s���ł��B
-			-	-11 ;	//	�N���b�v�{�[�h�ւ̃f�[�^�ݒ肪���s
+		成功したら 0 以上、エラーなら負の数です。
+			-	-1 ;	//	aCentDedRessyaCont の内容が不正です。
+			-	-11 ;	//	クリップボードへのデータ設定が失敗
 	 */
 	static int RessyaJouhou_To_Cliboard(
 		const CentDedRessya* pCentDedRessya);
 
 	/**
-	�N���b�v�{�[�h�ɁA CentDedBeforeOperationCont,AfterOperationCont �I�u�W�F�N�g��
-	���e���i�[����Ă�����A������擾���A
-	pCentDedRessya �ɒǉ����܂��B
+	クリップボードに、 CentDedBeforeOperationCont,AfterOperationCont オブジェクトの
+	内容が格納されていたら、それを取得し、
+	pCentDedRessya に追加します。
 	 @param aCentDedEkiJikoku [out]
-		���̊֐��͐���������A���� aCentDedEkiJikoku�̑O���Ƃ�
-		�N���b�v�{�[�h�Ɋi�[����Ă����Ƃ�ǉ����܂��B
-		���̃R���e�i�ɂ���܂Ŋi�[����Ă�����Ƃ́A�폜����܂��B
-		�������ݒ肳��Ă��Ȃ��Ă͂Ȃ�܂���B
+		この関数は成功したら、この aCentDedEkiJikokuの前後作業に
+		クリップボードに格納されている作業を追加します。
+		このコンテナにそれまで格納されていた作業は、削除されます。
+		正しく設定されていなくてはなりません。
 	 @return
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-			-	-1 ;	//	�N���b�v�{�[�h�ɂ͗L���ȃf�[�^�͂���܂���B
-			-	-2 ;	//	�N���b�v�{�[�h����̓ǂݍ��݂Ɏ��s���܂����B
-			-	-3 ;	//	�N���b�v�{�[�h�̓��e���s���ł��B
-			-	-4 ;	//	iEkiOrder���͈͊O�ł��B
-			-	-5 ;	//	CentDedEkiJikoku�̓ǂݏo���Ɏ��s���܂���
-			-	-6 ;	//	�O��Ƃ̓ǂݏo���Ɏ��s���܂���
-			-	-7 ;	//	���Ƃ̓ǂݏo���Ɏ��s���܂���
+		成功したら 0 以上、エラーなら負の数です。
+			-	-1 ;	//	クリップボードには有効なデータはありません。
+			-	-2 ;	//	クリップボードからの読み込みに失敗しました。
+			-	-3 ;	//	クリップボードの内容が不正です。
+			-	-4 ;	//	iEkiOrderが範囲外です。
+			-	-5 ;	//	CentDedEkiJikokuの読み出しに失敗しました
+			-	-6 ;	//	前作業の読み出しに失敗しました
+			-	-7 ;	//	後作業の読み出しに失敗しました
 	 */
 	static int RessyaJouhou_From_Cliboard(
 		CentDedRessya* pCentDedRessya);
 
 	/**
 	  @return
-		�N���b�v�{�[�h�ɁA CentDedBeforeOperationCont,AfterOperationCont �I�u�W�F�N�g��
-		���e���i�[����Ă�����A�^��Ԃ��܂��B
+		クリップボードに、 CentDedBeforeOperationCont,AfterOperationCont オブジェクトの
+		内容が格納されていたら、真を返します。
 	 */
 	static bool RessyaJouhou_IsClipboardFormatAvailable();
 	///@}
 public:
 	// ********************************
-	///@name CDiagramEditDoc-����
+	///@name CDiagramEditDoc-操作
 	// ********************************
 	///@{
 	/**
-	 	�h�L�������g�̍X�V���s���܂��B
+	 	ドキュメントの更新を行います。
 	 
-	 	���̊֐��́A�ڍׂɂ͈ȉ��̂��Ƃ��s���܂��B
+	 	この関数は、詳細には以下のことを行います。
 	 	
-	 	- �P�D  �R�}���h�I�u�W�F�N�g pCmd �̎w��ɏ]���āA�h�L�������g
-	 	m_CDedRosenFileData ���X�V���܂��B
-	 	- �Q�D�@�X�V�t���O�̐ݒ� SetModifiedFlag( TRUE ) ���s���܂��B
-	 	- �R�D  UpdateAllSubDocviews() �ŁA���ׂĂ� View �ɍX�V���s�킹�܂��B
-	 	���̂Ƃ��A  pHint ������ pCmd ��n���܂��B�e View �́ApCmd �̓��e��
-	 	���ƂɁA��ʍX�V�̏������s���܂��B
-	 	- �S�D  pCmd �́A m_contUndo �ɕۑ����܂��B���̒l�́Aundo() �̍ۂ�
-	 	�g���܂��B
+	 	- １．  コマンドオブジェクト pCmd の指定に従って、ドキュメント
+	 	m_CDedRosenFileData を更新します。
+	 	- ２．　更新フラグの設定 SetModifiedFlag( TRUE ) を行います。
+	 	- ３．  UpdateAllSubDocviews() で、すべての View に更新を行わせます。
+	 	このとき、  pHint 引数に pCmd を渡します。各 View は、pCmd の内容を
+	 	もとに、画面更新の処理を行います。
+	 	- ４．  pCmd は、 m_contUndo に保存します。この値は、undo() の際に
+	 	使います。
 	 */
 	virtual int executeEditCmd( Ou< CRfEditCmd > pCmd ) ;
 	/**
 	 @return
-		���[�g Document �ɑ΂���
-		Undo ���\�Ȃ�^�ł��B
+		ルート Document に対する
+		Undo が可能なら真です。
 	*/
 	virtual bool canUndo() ; 
 
 	/**
-	���[�g Document �ɑ΂���
-	Undo �����s���A��������ׂẴr���[�ɓ`�B���܂��B
+	ルート Document に対する
+	Undo を実行し、それをすべてのビューに伝達します。
 	 @return
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	-1 ;	//	undo ��񂪂���܂���B
-		-	-2 ;	//	undo �̎��s�Ɏ��s
+		成功したら 0 以上、エラーなら負の数です。
+		-	-1 ;	//	undo 情報がありません。
+		-	-2 ;	//	undo の実行に失敗
 	*/
 	virtual int undo() ; 
 
 	/**
 	 @return
-		���[�g Document �ɑ΂���
-		Redo ���\�Ȃ�^�ł��B
+		ルート Document に対する
+		Redo が可能なら真です。
 	*/
 	virtual bool canRedo() ; 
 
 	/**
-	���[�g Document �ɑ΂���
-	Redo �����s���A��������ׂẴr���[�ɓ`�B���܂��B
+	ルート Document に対する
+	Redo を実行し、それをすべてのビューに伝達します。
 	 @return
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	-1 ;	//	redo ��񂪂���܂���B
-		-	-2 ;	//	redo �̎��s�Ɏ��s
+		成功したら 0 以上、エラーなら負の数です。
+		-	-1 ;	//	redo 情報がありません。
+		-	-2 ;	//	redo の実行に失敗
 	 */
 	virtual int redo() ; 
 
@@ -877,18 +877,18 @@ public:
 // ----------------------------------------------------------------
 //	MFC
 // ----------------------------------------------------------------
-protected: // �V���A���C�Y�@�\�݂̂���쐬���܂��B
+protected: // シリアライズ機能のみから作成します。
 	CDiagramEditDoc();
 	DECLARE_DYNCREATE(CDiagramEditDoc)
 
-// �A�g���r���[�g
+// アトリビュート
 public:
 
-// �I�y���[�V����
+// オペレーション
 public:
 
-//�I�[�o�[���C�h
-	// ClassWizard �͉��z�֐��̃I�[�o�[���C�h�𐶐����܂��B
+//オーバーライド
+	// ClassWizard は仮想関数のオーバーライドを生成します。
 	//{{AFX_VIRTUAL(CDiagramEditDoc)
 	public:
 	virtual BOOL OnNewDocument();
@@ -898,9 +898,9 @@ public:
 	virtual void SetPathName(LPCTSTR lpszPathName, BOOL bAddToMRU = TRUE);
 	//}}AFX_VIRTUAL
 
-// �C���v�������e�[�V����
+// インプリメンテーション
 public:
-	virtual ~CDiagramEditDoc();
+	virtual ‾CDiagramEditDoc();
 #ifdef _DEBUG
 	virtual void AssertValid() const;
 	virtual void Dump(CDumpContext& dc) const;
@@ -908,17 +908,17 @@ public:
 
 protected:
 
-// �������ꂽ���b�Z�[�W �}�b�v�֐�
+// 生成されたメッセージ マップ関数
 protected:
 	DECLARE_MESSAGE_MAP()
 
 	//{{AFX_MSG(CDiagramEditDoc)
 	afx_msg void OnFileSaveAs();
-	//	[�t�@�C��]
+	//	[ファイル]
 	afx_msg void OnUpdateFileSaveAs(CCmdUI *pCmdUI);
 	//afx_msg void OnUpdateFileSave(CCmdUI *pCmdUI);
 
-	//	[�ҏW]
+	//	[編集]
 	afx_msg void OnUpdateEditUndo(CCmdUI *pCmdUI);
 	afx_msg void OnEditUndo();
 	afx_msg void OnUpdateEditRedo(CCmdUI *pCmdUI);
@@ -929,6 +929,6 @@ protected:
 /////////////////////////////////////////////////////////////////////////////
 
 //{{AFX_INSERT_LOCATION}}
-// Microsoft Visual C++ �͑O�s�̒��O�ɒǉ��̐錾��}�����܂��B
+// Microsoft Visual C++ は前行の直前に追加の宣言を挿入します。
 
 #endif // !defined(AFX_CDIAGRAMEDITDOC_H__A4879B96_62E6_4298_B7DB_8F991F72EC7F__INCLUDED_)

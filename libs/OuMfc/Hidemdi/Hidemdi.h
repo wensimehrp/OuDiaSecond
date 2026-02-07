@@ -29,44 +29,44 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 //$Id: Hidemdi.h 299 2016-06-11 06:15:08Z okm $
 /**
  @file 
  @brief
-	���O��Ԃ̊֐��Q�E�N���X�Q�̂��ׂĂ��C���N���[�h���܂��B
+	名前空間の関数群・クラス群のすべてをインクルードします。
 */
 #ifndef  HideMdi_H
 #define  HideMdi_H
@@ -75,22 +75,22 @@ namespace OuMfc{
 
 /**
 @brief
-  HIDEMDI�A�v���P�[�V�������\������N���X���܂��܂��B
+  HIDEMDIアプリケーションを構成するクラスを包含します。
 
 <H3>
-HIDEMDI�A�v���P�[�V�����̊T�v
+HIDEMDIアプリケーションの概要
 </H3>
 
-  HIDEMDI�A�v���P�[�V�����́ASDI�̂悤�ɂP�̃A�v���P�[�V�����łP�̃t�@�C����ҏW����A�v���P�[�V�����ł���Ȃ���AMDI�̂悤�ɕ�����ށE�����̕ҏW�E�C���h�E���J�����Ƃ̂ł���A�v���P�[�V�����ł��B
+  HIDEMDIアプリケーションは、SDIのように１つのアプリケーションで１つのファイルを編集するアプリケーションでありながら、MDIのように複数種類・複数個の編集ウインドウを開くことのできるアプリケーションです。
 
-  Hidemdi�A�v���P�[�V�����̎d�l�̗�������܂��B
+  Hidemdiアプリケーションの仕様の例を示します。
 
-�P�D  �t�@�C���ɂ́A�����f�[�^�ƊG�̃f�[�^�̗������i�[����Ă��܂��B
+１．  ファイルには、文字データと絵のデータの両方が格納されています。
 
-�Q�D  ���̃t�@�C�����A�v���P�[�V�����ŊJ�����ꍇ�A���̃A�v���P�[�V������ł�
-	�u�����f�[�^��ҏW����MDI�q�E�C���h�E�v��
-	�u�G��ҏW����MDI�q�E�C���h�E�v
-���A���ꂼ��J�����Ƃ��ł��܂��B
+２．  このファイルをアプリケーションで開いた場合、そのアプリケーション上では
+	「文字データを編集するMDI子ウインドウ」と
+	「絵を編集するMDI子ウインドウ」
+を、それぞれ開くことができます。
 
 */
 namespace Hidemdi{
@@ -98,15 +98,15 @@ namespace Hidemdi{
 
 } //namespace OuMfc
 
-#include "Hidemdi\CDropTargetDoctmpl.h"
-#include "Hidemdi\CHidemdiApp.h"
-#include "Hidemdi\CHidemdiDoctmplDocstrAlone.h"
-#include "Hidemdi\CHidemdiMainFrm.h"
-#include "Hidemdi\CHidemdiRootDoc.h"
-#include "Hidemdi\CHidemdiRootDoctmpl.h"
-#include "Hidemdi\CHidemdiRootFrame.h"
-#include "Hidemdi\CHidemdiRootView.h"
-#include "Hidemdi\CHidemdiSubDoc.h"
-#include "Hidemdi\CHidemdiSubDoctmpl.h"
+#include "Hidemdi¥CDropTargetDoctmpl.h"
+#include "Hidemdi¥CHidemdiApp.h"
+#include "Hidemdi¥CHidemdiDoctmplDocstrAlone.h"
+#include "Hidemdi¥CHidemdiMainFrm.h"
+#include "Hidemdi¥CHidemdiRootDoc.h"
+#include "Hidemdi¥CHidemdiRootDoctmpl.h"
+#include "Hidemdi¥CHidemdiRootFrame.h"
+#include "Hidemdi¥CHidemdiRootView.h"
+#include "Hidemdi¥CHidemdiSubDoc.h"
+#include "Hidemdi¥CHidemdiSubDoctmpl.h"
 
 #endif //HideMdi_H

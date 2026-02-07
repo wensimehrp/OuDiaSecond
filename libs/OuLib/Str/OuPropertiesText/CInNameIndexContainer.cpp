@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /** @file */
 //$Id: CInNameIndexContainer.cpp 286 2016-06-05 08:57:24Z okm $
@@ -77,13 +77,13 @@ namespace OuPropertiesText{
 
 
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 CInNameIndexContainer::CInNameIndexContainer():
 	m_iNodeCount( 0 ) 
 {
 }
-CInNameIndexContainer::~CInNameIndexContainer()
+CInNameIndexContainer::‾CInNameIndexContainer()
 {
 }
 	// ********************************
@@ -108,13 +108,13 @@ int CInNameIndexContainer::insert( const tstring& element , int iIndex )
 	}
 
 	// --------------------------------
-	// iIndex �ȏ�̒l������ Index �͂��ׂĉ��Z
+	// iIndex 以上の値を持つ Index はすべて加算
 	// --------------------------------
 
 	int iAddCount = m_iNodeCount - iIndex ;
-	//iAddCount = iIndex�ȏ�̒l������ m_NameIndexCont[][] �̐�
-	//	���̒l�́A iIndex�ȏ�̒l�������邽�тɌ��Z���܂��B
-	//	0�ɂȂ�����A���̏����͒��f���܂��B
+	//iAddCount = iIndex以上の値を持つ m_NameIndexCont[][] の数
+	//	この値は、 iIndex以上の値を見つけるたびに減算します。
+	//	0になったら、この処理は中断します。
 
 	for ( NameIndexCont::iterator ite = m_NameIndexCont.begin() ;
 		0 < iAddCount && ite != m_NameIndexCont.end() ;
@@ -135,7 +135,7 @@ int CInNameIndexContainer::insert( const tstring& element , int iIndex )
 	}
 
 	// --------------------------------
-	// iIndex ��}��
+	// iIndex を挿入
 	// --------------------------------
 	{
 		NameIndexCont::iterator ite = m_NameIndexCont.find( element ) ;
@@ -164,33 +164,33 @@ int CInNameIndexContainer::insert( const tstring& element , int iIndex )
 			}
 		}
 		//  3   5    7
-		//	�ƕ���ł��鎞�� 4 ����������ƁA
+		//	と並んでいる時に 4 を検索すると、
 		//  L   C    R
 		//  LCR
-		//	�ƂȂ�A���́A
+		//	となり、次は、
 		//  CR  L
-		//	�ƂȂ�܂��B���̏ꍇ�́A�}�����ׂ��ʒu��L�̏ꏊ�ł�
+		//	となります。この場合は、挿入すべき位置はLの場所です
 		//
 		//  3   5    7
-		//	�ƕ���ł��鎞�� 2 ����������ƁA
+		//	と並んでいる時に 2 を検索すると、
 		//  L   C    R
 		//  LCR
-		//	�ƂȂ�A���́A
+		//	となり、次は、
 		//R CL
-		//	�ƂȂ�܂��B���̏ꍇ�ł��A�}�����ׂ��ʒu��L�̏ꏊ�ł�
+		//	となります。この場合でも、挿入すべき位置はLの場所です
 		//
 		//  3   5    7
-		//	�ƕ���ł��鎞�� 9 ����������ƁA
+		//	と並んでいる時に 9 を検索すると、
 		//  L   C    R
 		//          LCR
-		//	�ƂȂ�A���́A
+		//	となり、次は、
 		//          RC    L
-		//	�ƂȂ�܂��B���̏ꍇ�ł��A�}�����ׂ��ʒu��L�̏ꏊ�ł�
+		//	となります。この場合でも、挿入すべき位置はLの場所です
 		//
 		//
 		if ( idxRight < idxLeft )
 		{
-			//	�}���ʒu������
+			//	挿入位置を決定
 			idxInNameIndex = idxLeft ;
 		}
 		aInNameIndexCont.insert( 
@@ -222,8 +222,8 @@ int CInNameIndexContainer::erase( int iIndex  , int iSize )
 	}
 
 
-	//iIndex �ȏ�AiIndex + iSize �����̒l���폜
-	//iIndex + iSize �ȏ�̒l�́A iSize �����Z
+	//iIndex 以上、iIndex + iSize 未満の値を削除
+	//iIndex + iSize 以上の値は、 iSize を減算
 	{
 		for ( NameIndexCont::iterator ite = m_NameIndexCont.begin() ;
 			ite != m_NameIndexCont.end() ;
@@ -250,7 +250,7 @@ int CInNameIndexContainer::erase( int iIndex  , int iSize )
 			}
 		}
 	}
-	//	��̃R���e�i���폜
+	//	空のコンテナを削除
 	{
 		for ( NameIndexCont::iterator ite = m_NameIndexCont.begin() ;
 			ite != m_NameIndexCont.end() ; ) 
@@ -269,13 +269,13 @@ int CInNameIndexContainer::erase( int iIndex  , int iSize )
 	return 0 ;
 }
 	// ********************************
-	//@name	CNodeContainer-InNameIndex�ł̃A�N�Z�X
+	//@name	CNodeContainer-InNameIndexでのアクセス
 	// ********************************
 int	CInNameIndexContainer::sizeInName( const tstring& element )const 
 {
 	int iRv = 0 ;
 
-	// iIndex ��}��
+	// iIndex を挿入
 	{
 		NameIndexCont::const_iterator ite = m_NameIndexCont.find( element ) ;
 		if ( ite == m_NameIndexCont.end() )
@@ -296,12 +296,12 @@ int CInNameIndexContainer::indexOfInNameIndex(
 		int iInNameIndex )const 
 {
 	int iRv = 0 ;
-	// iIndex ��}��
+	// iIndex を挿入
 	{
 		NameIndexCont::const_iterator ite = m_NameIndexCont.find( element ) ;
 		if ( ite == m_NameIndexCont.end() )
 		{
-			iRv = -1 ;	//	�C���f�N�X���s���ł��B
+			iRv = -1 ;	//	インデクスが不正です。
 		}
 		else
 		{
@@ -313,7 +313,7 @@ int CInNameIndexContainer::indexOfInNameIndex(
 			
 			if ( !( 0 <= iInNameIndex && iInNameIndex < (int)aInNameIndexCont.size() ) )
 			{
-				iRv = -1 ;	//	�C���f�N�X���s���ł��B
+				iRv = -1 ;	//	インデクスが不正です。
 			}
 			else
 			{
@@ -340,7 +340,7 @@ int CInNameIndexContainer::indexToInNameIndex(
 
 
 	int iRv = 0 ;
-	// iIndex ������
+	// iIndex を検索
 	{
 		
 		NameIndexCont::const_iterator ite = m_NameIndexCont.find( element ) ;

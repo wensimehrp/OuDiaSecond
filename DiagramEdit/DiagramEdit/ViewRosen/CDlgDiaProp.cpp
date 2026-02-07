@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,40 +35,40 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
-// CDlgDiaProp.cpp : �C���v�������e�[�V���� �t�@�C��
+// CDlgDiaProp.cpp : インプリメンテーション ファイル
 //
 
 #include "stdafx.h"
@@ -76,9 +76,9 @@ Copyright (C) 2006-2017 take-okm
 #include "DcDraw/CDcdTargetOnPaint.h"
 #include "DcDraw/CaDcdTargetItemPosition.h"
 #include "DcDraw/CConverter_WinGdi.h"
-#include "..\DiagramEdit.h"
+#include "..¥DiagramEdit.h"
 #include "CDlgDiaProp.h"
-#include "MfcUtil\MfcUtil.h"
+#include "MfcUtil¥MfcUtil.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -92,13 +92,13 @@ using namespace OuMfc::MfcUtil;
 using namespace std ;
 
 /////////////////////////////////////////////////////////////////////////////
-// CDlgDiaProp �_�C�A���O
+// CDlgDiaProp ダイアログ
 
 
 void CDlgDiaProp::updateUIState()
 {
 	// --------------------------------
-	//	�J���[
+	//	カラー
 	// --------------------------------
 	{
 		CComboBox* pComboBox = (CComboBox*)GetDlgItem(IDC_COMBO_JikokuhyouMainBackColorIndex);
@@ -193,16 +193,16 @@ BEGIN_MESSAGE_MAP(CDlgDiaProp, CDialog)
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
-// CDlgDiaProp ���b�Z�[�W �n���h��
+// CDlgDiaProp メッセージ ハンドラ
 
 void CDlgDiaProp::OnOK() 
 {
 	// --------------------------------
-	//	UpdateData()�̑O����
+	//	UpdateData()の前処理
 	// --------------------------------
 	////IDC_EDIT_PasteZoubun 
 	//{
-	//	//	�󕶎���Ȃ�A0��₢�܂��B
+	//	//	空文字列なら、0を補います。
 	//	CWnd* pCWnd = GetDlgItem(IDC_EDIT_CycleMinute);
 	//	CString	strLs;
 	//	pCWnd->GetWindowText(strLs);
@@ -216,7 +216,7 @@ void CDlgDiaProp::OnOK()
 	//}
 	////IDC_EDIT_PasteZoubunSecond
 	//{
-	//	//	�󕶎���Ȃ�A0��₢�܂��B
+	//	//	空文字列なら、0を補います。
 	//	CWnd* pCWnd = GetDlgItem(IDC_EDIT_CycleSecond);
 	//	CString	strLs;
 	//	pCWnd->GetWindowText(strLs);
@@ -231,10 +231,10 @@ void CDlgDiaProp::OnOK()
 
 	UpdateData() ;
 	/**
-		�p�^�[���_�C���v���r���[�̕b���̓��͒l�̏C�����s���܂�
-		���F0�`180
-		�b�F0�`10800(3����)
-		�܂��A��L�̒ʂ�ɏC��������ŁA���ƕb�����킹�āA60�`10800�b�ɂȂ�悤�ɏC�����܂��B
+		パターンダイヤプレビューの秒数の入力値の修正を行います
+		分：0〜180
+		秒：0〜10800(3時間)
+		まず、上記の通りに修正した上で、分と秒を合わせて、60〜10800秒になるように修正します。
 	*/
 	if (m_iEDIT_PatternDiagramPreviewCycleMinute < 0)
 	{
@@ -270,7 +270,7 @@ void CDlgDiaProp::OnOK()
 	if ( iRv >= 0 ){
 		if ( m_strEDIT_Name.GetLength() == 0 ){
 			GetDlgItemText( IDC_STATIC_ERROR_NameNotSet , strError ) ; 
-			iRv = -1 ;	//	�_�C�������ݒ肳��Ă��܂���B
+			iRv = -1 ;	//	ダイヤ名が設定されていません。
 		}	else	{
 			m_strName = (LPCTSTR)m_strEDIT_Name ;
 		}
@@ -285,14 +285,14 @@ void CDlgDiaProp::OnOK()
 BOOL CDlgDiaProp::OnInitDialog() 
 {
 	
-	// TODO: ���̈ʒu�ɏ������̕⑫������ǉ����Ă�������
+	// TODO: この位置に初期化の補足処理を追加してください
 
 	m_pdcdrawMainBackColor = new CDcdRectangle(
 		CdPenProp(1));
 	m_pdcdrawSubBackColor = new CDcdRectangle(
 		CdPenProp(1));
 
-	// �R���{�{�b�N�X
+	// コンボボックス
 	{
 		CComboBox*	pCComboBox = (CComboBox*)GetDlgItem(IDC_COMBO_JikokuhyouMainBackColorIndex);
 		CComboBox*	pCComboBox2 = (CComboBox*)GetDlgItem(IDC_COMBO_JikokuhyouSubBackColorIndex);
@@ -311,21 +311,21 @@ BOOL CDlgDiaProp::OnInitDialog()
 		pCComboBox2->AddString(strTemp.c_str());
 		//1;2;3;4;
 	}
-	// �R���{�{�b�N�X
+	// コンボボックス
 	{
 		CComboBox*	pCComboBox = (CComboBox*)GetDlgItem(IDC_COMBO_JikokuhyouBackPatternIndex);
 
-		tstring strTemp = _T("�P�F");
+		tstring strTemp = _T("単色");
 		pCComboBox->AddString(strTemp.c_str());
-		strTemp = _T("��ʐF");
+		strTemp = _T("種別色");
 		pCComboBox->AddString(strTemp.c_str());
-		strTemp = _T("�c��");
+		strTemp = _T("縦縞");
 		pCComboBox->AddString(strTemp.c_str());
-		strTemp = _T("����");
+		strTemp = _T("横縞");
 		pCComboBox->AddString(strTemp.c_str());
-		strTemp = _T("�s���͗l");
+		strTemp = _T("市松模様");
 		pCComboBox->AddString(strTemp.c_str());
-		//�P�F;��ʐF;�c��;����;�s���͗l;
+		//単色;種別色;縦縞;横縞;市松模様;
 	}
 
 	CDialog::OnInitDialog();
@@ -333,17 +333,17 @@ BOOL CDlgDiaProp::OnInitDialog()
 	// --------------------------------
 	updateUIState();
 
-	return TRUE;  // �R���g���[���Ƀt�H�[�J�X��ݒ肵�Ȃ��Ƃ��A�߂�l�� TRUE �ƂȂ�܂�
-	              // ��O: OCX �v���p�e�B �y�[�W�̖߂�l�� FALSE �ƂȂ�܂�
+	return TRUE;  // コントロールにフォーカスを設定しないとき、戻り値は TRUE となります
+	              // 例外: OCX プロパティ ページの戻り値は FALSE となります
 }
 
 void CDlgDiaProp::OnPaint()
 {
-	CPaintDC dc(this); // �`��p�̃f�o�C�X �R���e�L�X�g
+	CPaintDC dc(this); // 描画用のデバイス コンテキスト
 
 	CDcdTargetOnPaint	aDcdTarget(GetSafeHwnd(), &dc.m_ps);
 	// --------------------------------
-	//	�F�̌��{�\��
+	//	色の見本表示
 	// --------------------------------
 	{
 		CRect	aRect = GetDlgControlRect(this, IDC_STATIC_JikokuhyouMainBackColor);
@@ -385,13 +385,13 @@ void CDlgDiaProp::OnDestroy()
 
 void ViewRosen::CDlgDiaProp::OnCbnSelchangeComboJikokuhyoumainbackcolorindex()
 {
-	// TODO: �����ɃR���g���[���ʒm�n���h���[ �R�[�h��ǉ����܂��B
+	// TODO: ここにコントロール通知ハンドラー コードを追加します。
 	updateUIState();
 }
 
 
 void ViewRosen::CDlgDiaProp::OnCbnSelchangeComboJikokuhyousubbackcolorindex()
 {
-	// TODO: �����ɃR���g���[���ʒm�n���h���[ �R�[�h��ǉ����܂��B
+	// TODO: ここにコントロール通知ハンドラー コードを追加します。
 	updateUIState();
 }

@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ file, but you are not obligated to do so.  If you do not wish to
 do so, delete this exception statement from your version.
 
 
-(��:
+(訳:
 
-OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-�����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h��
+加えて、特別な例外として、take-okm はこのプログラムのコードを
 "MFC(Microsoft Foundation Class library) Version 9.0"
-(  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-"MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-�����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-�̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-�Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-�����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+(  あるいは "MFC Version 9.0" と同じライセンスが適用された
+"MFC Version 9.0" の改変されたバージョン)とリンクし、
+リンクされた両者を含む結合著作物を頒布する許可を与えます。
+あなたは "MFC" 以外で使われているすべて
+のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+うする義務はありません。もし例外を設けたくなければ、この例外条項を
+あなたのバージョンからは削除してください。)
 */
 #include "stdafx.h"
 #include "CentDedEkiTrack2.h"
@@ -89,8 +89,8 @@ namespace entDed {
 	CentDedEkiTrack2Cont&
 		CentDedEkiTrack2Cont::operator=(const CentDedEkiTrack2Cont& value)
 	{
-		//	���R���e�i�̑��(operator=):�R���e�i���H���̈ꕔ�ł���ꍇ�ŁA�E�ӂ̗v�f����0�̏ꍇ�́A
-		//	�C���f�N�X0�Ԃ̗�Ԏ�ʂ�ǉ����āA��Ԏ�ʂ̐���0�ɂȂ�Ȃ��悤�ɂ���
+		//	△コンテナの代入(operator=):コンテナが路線の一部である場合で、右辺の要素数が0の場合は、
+		//	インデクス0番の列車種別を追加して、列車種別の数が0にならないようにする
 		if (value.size() == 0 && getRosen() != NULL)
 		{
 			insert(CentDedEkiTrack2(_T("00"), _T("00"), _T("")));
@@ -112,18 +112,18 @@ namespace entDed {
 		}
 
 		//rinji
-		//	����Ԏ�ʂ̒ǉ�(insert):���̃R���e�i���H���̈ꕔ�ł���ꍇ�A���O����̔Ԑ��̒ǉ��̓G���[
+		//	△列車種別の追加(insert):このコンテナが路線の一部である場合、名前が空の番線の追加はエラー
 		if (getRosen() != NULL && element.getTrackName().length() == 0)
 		{
-			iRv = -11;	//	name����� CentDedRessyasyubetsu���㏑������ƃG���[�B
+			iRv = -11;	//	nameが空の CentDedRessyasyubetsuを上書きするとエラー。
 		}
 		if (iRv >= 0)
 		{
 			iRv = super::insert(element, iIndex);
 		}
-		//	  ���̃R���e�i�� CentDedRosen �ɕ�܂���Ă���ꍇ�A insert() 
-		//	���\�b�h�́ACentDedRosen::onRessyasyubetsuInsert( iEkiIndex ) 
-		//	�ɏ������Ϗ����܂��B
+		//	  このコンテナが CentDedRosen に包含されている場合、 insert() 
+		//	メソッドは、CentDedRosen::onRessyasyubetsuInsert( iEkiIndex ) 
+		//	に処理を委譲します。
 		//if (iRv >= 0)
 		//{
 		//	CentDedRosen* pRosen = getRosen();
@@ -153,13 +153,13 @@ namespace entDed {
 		// --------------------------------	
 		if (!(0 <= iIndex && iIndex + iSize <= size()))
 		{
-			iRv = -1;	//	�C���f�N�X���͈͊O�ł��B
+			iRv = -1;	//	インデクスが範囲外です。
 		}
 		if (iRv >= 0)
 		{
 			if (size() <= iSize && getRosen() != NULL)
 			{
-				iRv = -11;	//	����Ԏ�ʂ̍폜(erase):�@��Ԏ�ʂ�0�ɂȂ�悤�ȍ폜�̓G���[
+				iRv = -11;	//	△列車種別の削除(erase):　列車種別が0個になるような削除はエラー
 
 			}
 		}
@@ -167,9 +167,9 @@ namespace entDed {
 		{
 			iRv = super::erase(iIndex, iSize);
 		}
-		//	  ���̃R���e�i��  CentDedRosen �ɕ�܂���Ă���ꍇ�A erase() 
-		//	���\�b�h�́ACentDedRosen::onEkiErase( iEkiIndex )
-		//	�ɏ������Ϗ����܂��B
+		//	  このコンテナが  CentDedRosen に包含されている場合、 erase() 
+		//	メソッドは、CentDedRosen::onEkiErase( iEkiIndex )
+		//	に処理を委譲します。
 		//if (iRv >= 0)
 		//{
 		//	CentDedRosen* pRosen = getRosen();
@@ -179,7 +179,7 @@ namespace entDed {
 		//		int iEkiIndex = pRosen->getCentDedEkiCont()->getIndex(pEki);
 		//		for (int idx = iIndex + iSize - 1; idx >= iIndex; idx--)
 		//		{
-		//			//��Ŋm�F
+		//			//後で確認
 		//			pRosen->onEkiTrack2Erase(iEkiIndex,idx);
 		//		}
 		//	}
@@ -224,7 +224,7 @@ namespace entDed {
 
 		if (element.getTrackName().length() == 0)
 		{
-			//���Ԑ��̏㏑��(set): name����� CentDedRessyasyubetsu���㏑������ƃG���[�B
+			//○番線の上書き(set): nameが空の CentDedRessyasyubetsuを上書きするとエラー。
 			iRv = -11;	//	
 		}
 

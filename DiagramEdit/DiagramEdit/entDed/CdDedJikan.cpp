@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -118,7 +118,7 @@ tstring CdDedJikan::CConv::encode( const CdDedJikan& aJikan )const
 {
 	tstring	strRv ;
 	{
-		//  ����
+		//  符号
 		if ( m_bPlusDisplay )
 		{
 			strRv += _T("- +")[ sign( aJikan.getTotalSeconds() ) + 1 ] ;
@@ -135,18 +135,18 @@ tstring CdDedJikan::CConv::encode( const CdDedJikan& aJikan )const
 			}
 		}
 
-		//	��
+		//	時
 		{
 			//char	szLs[16] ;
 			//sprintf( szLs , "%d" , aJikan.getHour() ) ;
 			//strRv += szLs ;
 			strRv += strprintf(_T("%d") , aJikan.getHour() ) ;
 		}
-		//	���̂��̃R����
+		//	時のつぎのコロン
 		{
 			strRv += _T(":") ;
 		}
-		//	��
+		//	分
 		{
 			//char	szLs[16] ;
 			//sprintf( szLs , "%02d" , aJikan.getMinute() ) ;
@@ -155,11 +155,11 @@ tstring CdDedJikan::CConv::encode( const CdDedJikan& aJikan )const
 		}
 		if ( !m_bNoSecond )
 		{
-			//	���̂��̃R����
+			//	分のつぎのコロン
 			{
 				strRv += _T(":") ;
 			}
-			//	�b
+			//	秒
 			{
 				//char	szLs[16] ;
 				//sprintf( szLs , "%02d" , aJikan.getSecond() ) ;
@@ -179,7 +179,7 @@ tstring CdDedJikan::CConv::encode( const CdDedJikan& aJikan )const
 // ****************************************************************
 
 // ********************************
-//	�R���X�g���N�^
+//	コンストラクタ
 // ********************************
 	
 CdDedJikan::CdDedJikan( int iSign , int iHour , int iMinute , int iSecond ) :
@@ -197,7 +197,7 @@ CdDedJikan::CdDedJikan( const tstring& strTime )
 //	CdDedJikan
 // ********************************
 	// ********************************
-	//@name ����
+	//@name 属性
 	// ********************************
 	
 CdDedJikan& CdDedJikan::setTime( int iSign , int iHour , int iMinute , int iSecond ) 
@@ -209,7 +209,7 @@ CdDedJikan& CdDedJikan::setTime( int iSign , int iHour , int iMinute , int iSeco
 	
 	
 	// ********************************
-	//@name ����
+	//@name 操作
 	// ********************************
 int CdDedJikan::compare( const CdDedJikan& value )const 
 {
@@ -243,18 +243,18 @@ int CdDedJikan::decode( const tstring& value )
 	
 	deque<tstring>	contstrValue = 
 		splitc< deque<tstring> >( ':' , value ) ;
-	//contstrValue = strValue �� ":" �ŋ�؂�܂��B
-	//	�i��j 
-	//	strValue = "13:15:45" �̏ꍇ�A
+	//contstrValue = strValue を ":" で区切ります。
+	//	（例） 
+	//	strValue = "13:15:45" の場合、
 	//		contstrValue[0]="13"
 	//		contstrValue[1]="15"
 	//		contstrValue[2]="45"
-	//	strValue = "-9:15" �̏ꍇ�A
+	//	strValue = "-9:15" の場合、
 	//		contstrValue[0]="-9"
 	//		contstrValue[1]="15"
 	
 
-	//	�b���Ȃ��ꍇ�͒ǉ�
+	//	秒がない場合は追加
 	if ( contstrValue.size() == 2 ){
 		contstrValue.push_back(_T("00") ) ;
 	}
@@ -262,9 +262,9 @@ int CdDedJikan::decode( const tstring& value )
 	//
 
 	if ( contstrValue.size() != 3 ){
-		//	contstrValue ���A���E���E�b�łȂ��ꍇ�́A�s���ł��B
+		//	contstrValue が、時・分・秒でない場合は、不正です。
 		m_iTotalSeconds = 0 ;
-		iRv = -1 ;	//	���ڐ����s�����Ă��܂��B
+		iRv = -1 ;	//	項目数が不足しています。
 		return ( iRv ) ;
 	}
 	// --------------------------------
@@ -274,7 +274,7 @@ int CdDedJikan::decode( const tstring& value )
 	int iSecond = -1 ;
 
 
-	//	+ ������ǉ����܂��B
+	//	+ 符号を追加します。
 	{
 		tstring	strLs = contstrValue[0] ;
 
@@ -293,7 +293,7 @@ int CdDedJikan::decode( const tstring& value )
 	//strValue = "13:15:45","09:15:00"
 
 	{
-		//	�����E��
+		//	符号・時
 		{
 			tstring	strLs = contstrValue[0] ;
 			if ( strLs.length() > 0 ){
@@ -308,7 +308,7 @@ int CdDedJikan::decode( const tstring& value )
 				}
 			}
 		}
-		//	��
+		//	分
 		{
 			tstring	strLs = contstrValue[1] ;
 			if ( strLs.length() > 0 ){
@@ -317,7 +317,7 @@ int CdDedJikan::decode( const tstring& value )
 				}
 			}
 		}
-		//	�b
+		//	秒
 		{
 			tstring	strLs = contstrValue[2] ;
 			if ( strLs.length() > 0 ){
@@ -332,7 +332,7 @@ int CdDedJikan::decode( const tstring& value )
 		setTime( iSign , iHour , iMinute , iSecond ) ;
 	}	else	{
 		m_iTotalSeconds = 0 ;
-		iRv = -2 ;	//	���E���E�b�̕\�L���s���ł��B
+		iRv = -2 ;	//	時・分・秒の表記が不正です。
 	}
 	
 	return ( iRv ) ;

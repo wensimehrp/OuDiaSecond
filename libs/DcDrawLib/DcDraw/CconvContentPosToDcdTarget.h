@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(–ó: 
+(è¨³: 
 
-	OuDia - —ñÔ•\‚ğ‚à‚Æ‚ÉAƒ_ƒCƒ„ƒOƒ‰ƒ€‚ğ•`‰æ‚·‚éWin32ƒAƒvƒŠƒP[ƒV
-ƒ‡ƒ“B
+	OuDia - åˆ—è»Šæ™‚åˆ»è¡¨ã‚’ã‚‚ã¨ã«ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚’æç”»ã™ã‚‹Win32ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·
+ãƒ§ãƒ³ã€‚
 
 Copyright (C) 2006-2017 take-okm 
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍƒtƒŠ[ƒ\ƒtƒgƒEƒFƒA‚Å‚·B‚ ‚È‚½‚Í‚±‚ê‚ğAƒtƒŠ[ƒ\ƒtƒgƒEƒFƒAà
-’c‚É‚æ‚Á‚Ä”­s‚³‚ê‚½GNU ˆê”ÊŒöO—˜—p‹–‘ø‘(ƒo[ƒWƒ‡ƒ“3‚©A‚»‚êˆÈ~‚Ìƒo[ƒWƒ‡
-ƒ“‚Ì‚¤‚¿‚Ç‚ê‚©)‚ª’è‚ß‚éğŒ‚Ì‰º‚ÅÄ”Ğ•z‚Ü‚½‚Í‰ü•Ï ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚ã‚ãªãŸã¯ã“ã‚Œã‚’ã€ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢è²¡
+å›£ã«ã‚ˆã£ã¦ç™ºè¡Œã•ã‚ŒãŸGNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸(ãƒãƒ¼ã‚¸ãƒ§ãƒ³3ã‹ã€ãã‚Œä»¥é™ã®ãƒãƒ¼ã‚¸ãƒ§
+ãƒ³ã®ã†ã¡ã©ã‚Œã‹)ãŒå®šã‚ã‚‹æ¡ä»¶ã®ä¸‹ã§å†é ’å¸ƒã¾ãŸã¯æ”¹å¤‰ ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚Í—L—p‚Å‚ ‚é‚±‚Æ‚ğŠè‚Á‚Ä”Ğ•z‚³‚ê‚Ü‚·‚ªA*‘S‚­‚Ì–³•ÛØ *‚Å‚·B
-¤‹Æ‰Â”\«‚Ì•ÛØ‚â“Á’è–Ú“I‚Ö‚Ì“K‡«‚ÍAŒ¾ŠO‚É¦‚³‚ê‚½‚à‚Ì‚à ŠÜ‚ßA‘S‚­‘¶İ
-‚µ‚Ü‚¹‚ñBÚ‚µ‚­‚ÍGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ğ‚²——‚­‚¾‚³‚¢B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯æœ‰ç”¨ã§ã‚ã‚‹ã“ã¨ã‚’é¡˜ã£ã¦é ’å¸ƒã•ã‚Œã¾ã™ãŒã€*å…¨ãã®ç„¡ä¿è¨¼ *ã§ã™ã€‚
+å•†æ¥­å¯èƒ½æ€§ã®ä¿è¨¼ã‚„ç‰¹å®šç›®çš„ã¸ã®é©åˆæ€§ã¯ã€è¨€å¤–ã«ç¤ºã•ã‚ŒãŸã‚‚ã®ã‚‚ å«ã‚ã€å…¨ãå­˜åœ¨
+ã—ã¾ã›ã‚“ã€‚è©³ã—ãã¯GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã‚’ã”è¦§ãã ã•ã„ã€‚
 
-‚ ‚È‚½‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚Æ‹¤‚ÉAGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ÌƒRƒs[‚ğˆê•” ó‚¯æ‚Á
-‚Ä‚¢‚é‚Í‚¸‚Å‚·B‚à‚µó‚¯æ‚Á‚Ä‚¢‚È‚¯‚ê‚ÎA<http://www.gnu.org/licenses/> ‚ğ
-‚²——‚­‚¾‚³‚¢B
+ã‚ãªãŸã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¨å…±ã«ã€GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã®ã‚³ãƒ”ãƒ¼ã‚’ä¸€éƒ¨ å—ã‘å–ã£
+ã¦ã„ã‚‹ã¯ãšã§ã™ã€‚ã‚‚ã—å—ã‘å–ã£ã¦ã„ãªã‘ã‚Œã°ã€<http://www.gnu.org/licenses/> ã‚’
+ã”è¦§ãã ã•ã„ã€‚
 
 )
 
-  ‰Á‚¦‚ÄA“Á•Ê‚È—áŠO‚Æ‚µ‚ÄAtake-okm ‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÌƒR[ƒh‚ğ 
+  åŠ ãˆã¦ã€ç‰¹åˆ¥ãªä¾‹å¤–ã¨ã—ã¦ã€take-okm ã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ã‚³ãƒ¼ãƒ‰ã‚’ 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ‚ ‚é‚¢‚Í "MFC Version 9.0" ‚Æ“¯‚¶ƒ‰ƒCƒZƒ“ƒX‚ª“K—p‚³‚ê‚½
-  "MFC Version 9.0" ‚Ì‰ü•Ï‚³‚ê‚½ƒo[ƒWƒ‡ƒ“)‚ÆƒŠƒ“ƒN‚µA
-  ƒŠƒ“ƒN‚³‚ê‚½—¼Ò‚ğŠÜ‚ŞŒ‹‡’˜ì•¨‚ğ”Ğ•z‚·‚é‹–‰Â‚ğ—^‚¦‚Ü‚·B
-  ‚ ‚È‚½‚Í "MFC" ˆÈŠO‚Åg‚í‚ê‚Ä‚¢‚é‚·‚×‚Ä
-  ‚ÌƒR[ƒh‚ÉŠÖ‚µ‚Ä‚Í‘S–Ê“I‚ÉGNUˆê”ÊŒöO—˜—p‹–‘øŒ_–ñ‘‚É]‚í‚È‚¯‚ê‚Î
-  ‚È‚è‚Ü‚¹‚ñB‚ ‚È‚½‚ª‚±‚Ìƒtƒ@ƒCƒ‹‚ğ‰ü•Ï‚µ‚½‚È‚ç‚ÎA‚ ‚È‚½‚Í‚±‚Ì—áŠO
-  ‚ğ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚Ìƒtƒ@ƒCƒ‹‚Éˆø‚«‘±‚«İ‚¯‚é‚±‚Æ‚à‚Å‚«‚Ü‚·‚ªA‚»
-  ‚¤‚·‚é‹`–±‚Í‚ ‚è‚Ü‚¹‚ñB‚à‚µ—áŠO‚ğİ‚¯‚½‚­‚È‚¯‚ê‚ÎA‚±‚Ì—áŠOğ€‚ğ
-  ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚©‚ç‚Ííœ‚µ‚Ä‚­‚¾‚³‚¢B)
+  (  ã‚ã‚‹ã„ã¯ "MFC Version 9.0" ã¨åŒã˜ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ãŒé©ç”¨ã•ã‚ŒãŸ
+  "MFC Version 9.0" ã®æ”¹å¤‰ã•ã‚ŒãŸãƒãƒ¼ã‚¸ãƒ§ãƒ³)ã¨ãƒªãƒ³ã‚¯ã—ã€
+  ãƒªãƒ³ã‚¯ã•ã‚ŒãŸä¸¡è€…ã‚’å«ã‚€çµåˆè‘—ä½œç‰©ã‚’é ’å¸ƒã™ã‚‹è¨±å¯ã‚’ä¸ãˆã¾ã™ã€‚
+  ã‚ãªãŸã¯ "MFC" ä»¥å¤–ã§ä½¿ã‚ã‚Œã¦ã„ã‚‹ã™ã¹ã¦
+  ã®ã‚³ãƒ¼ãƒ‰ã«é–¢ã—ã¦ã¯å…¨é¢çš„ã«GNUä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾å¥‘ç´„æ›¸ã«å¾“ã‚ãªã‘ã‚Œã°
+  ãªã‚Šã¾ã›ã‚“ã€‚ã‚ãªãŸãŒã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ”¹å¤‰ã—ãŸãªã‚‰ã°ã€ã‚ãªãŸã¯ã“ã®ä¾‹å¤–
+  ã‚’ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®ãƒ•ã‚¡ã‚¤ãƒ«ã«å¼•ãç¶šãè¨­ã‘ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ãŒã€ã
+  ã†ã™ã‚‹ç¾©å‹™ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ã‚‚ã—ä¾‹å¤–ã‚’è¨­ã‘ãŸããªã‘ã‚Œã°ã€ã“ã®ä¾‹å¤–æ¡é …ã‚’
+  ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‹ã‚‰ã¯å‰Šé™¤ã—ã¦ãã ã•ã„ã€‚)
 */
 /*
 // ****************************************************************
@@ -70,9 +70,9 @@ Copyright (C) 2006-2017 take-okm
 /** @file */
 #ifndef  DcDrawa_DcdCd_Pos_CconvContentPosToDcdTarget_h
 #define  DcDrawa_DcdCd_Pos_CconvContentPosToDcdTarget_h
-#include "DcdCd\Pos\CconvContentPosToTargetXy.h"
-#include "DcDraw\CaContentPosToDcdTarget_Dim.h"
-#include "DcDraw\IfDcdTarget.h"
+#include "DcdCdÂ¥PosÂ¥CconvContentPosToTargetXy.h"
+#include "DcDrawÂ¥CaContentPosToDcdTarget_Dim.h"
+#include "DcDrawÂ¥IfDcdTarget.h"
 
 namespace DcDrawLib{
 namespace DcDraw{
@@ -82,14 +82,14 @@ namespace DcDraw{
 // ****************************************************************
 /**
 @brief
-  X,Y À•WŒn‚ÌŠÔ‚ÅAContentPos(ƒRƒ“ƒeƒ“ƒgÀ•W)‚ğ
-•`‰æ‘ÎÛ‚Ì IfDcdTarget ‚ÌÀ•W‚É•ÏŠ·‚·‚é•û–@‚ğ’ñ‹Ÿ‚·‚éƒNƒ‰ƒX‚Å‚·B
+  X,Y åº§æ¨™ç³»ã®é–“ã§ã€ContentPos(ã‚³ãƒ³ãƒ†ãƒ³ãƒˆåº§æ¨™)ã‚’
+æç”»å¯¾è±¡ã® IfDcdTarget ã®åº§æ¨™ã«å¤‰æ›ã™ã‚‹æ–¹æ³•ã‚’æä¾›ã™ã‚‹ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
  */
 class CconvContentPosToDcdTarget
 {
 public:
 	// ********************************
-	//	 “à•”ƒNƒ‰ƒX
+	//	 å†…éƒ¨ã‚¯ãƒ©ã‚¹
 	// ********************************
 	// ****************************************************************
 	//	CaConvX
@@ -98,24 +98,24 @@ public:
 	{
 	protected:
 		// --------------------------------
-		///@name ƒI[ƒoƒ‰ƒCƒh
+		///@name ã‚ªãƒ¼ãƒãƒ©ã‚¤ãƒ‰
 		// --------------------------------
 		///@{
 		/**
 		@return 
-			IfDcdTarget ‚Ì•`‰æ—Ìˆæ‚ğ•Ô‚µ‚Ü‚·B
+			IfDcdTarget ã®æç”»é ˜åŸŸã‚’è¿”ã—ã¾ã™ã€‚
 		*/
 		virtual CdDcdZone calcCdDcdZone( IfDcdTarget* pIfDcdTarget ) ;
 		///@}
 
 	public:
 		// ********************************
-		//	ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+		//	ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 		// ********************************
 		CaConvX(
 			DcdSize sizeDcdMargin );
 		// ********************************
-		///@name CconvContentPosToTargetDim-ŠÖ˜A
+		///@name CconvContentPosToTargetDim-é–¢é€£
 		// ********************************
 		///@{
 		virtual CconvContentPosToTarget* getCconvContentPosToTarget() ;
@@ -130,24 +130,24 @@ public:
 	{
 	protected:
 		// --------------------------------
-		///@name ƒI[ƒoƒ‰ƒCƒh
+		///@name ã‚ªãƒ¼ãƒãƒ©ã‚¤ãƒ‰
 		// --------------------------------
 		///@{
 		/**
 		@return 
-			IfDcdTarget ‚Ì•`‰æ—Ìˆæ‚ğ•Ô‚µ‚Ü‚·B
+			IfDcdTarget ã®æç”»é ˜åŸŸã‚’è¿”ã—ã¾ã™ã€‚
 		*/
 		virtual CdDcdZone calcCdDcdZone( IfDcdTarget* pIfDcdTarget ) ;
 		///@}
 
 	public:
 		// ********************************
-		//	ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+		//	ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 		// ********************************
 		CaConvY(
 			DcdSize sizeDcdMargin );
 		// ********************************
-		///@name CconvContentPosToTargetDim-ŠÖ˜A
+		///@name CconvContentPosToTargetDim-é–¢é€£
 		// ********************************
 		///@{
 		virtual CconvContentPosToTarget* getCconvContentPosToTarget() ;
@@ -157,61 +157,61 @@ public:
 	friend class CaConvY ;
 private:
 	// ********************************
-	///@name W–ñ
+	///@name é›†ç´„
 	// ********************************
 	///@{
 	/**
-		À•W‚ğ•ÏŠ·‚·‚é CconvContentPosToTarget ƒIƒuƒWƒFƒNƒg‚Å‚·B
+		åº§æ¨™ã‚’å¤‰æ›ã™ã‚‹ CconvContentPosToTarget ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ã™ã€‚
 	 */
 	CconvContentPosToTargetXy	m_CconvContentPosToTargetXy ;
 	
 	/**
-		XÀ•W‚ğ•ÏŠ·‚·‚é CconvContentPosToTarget ƒIƒuƒWƒFƒNƒg‚Å‚·B
-		‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÍAÀÛ‚É‚Í 
-		m_CconvContentPosToTargetXy.m_convX ‚Ö‚ÌƒAƒ_ƒvƒ^‚Å‚·B
+		Xåº§æ¨™ã‚’å¤‰æ›ã™ã‚‹ CconvContentPosToTarget ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ã™ã€‚
+		ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¯ã€å®Ÿéš›ã«ã¯ 
+		m_CconvContentPosToTargetXy.m_convX ã¸ã®ã‚¢ãƒ€ãƒ—ã‚¿ã§ã™ã€‚
 	*/
 	CaConvX	m_convX ;
 
 	/**
-		XÀ•W‚ğ•ÏŠ·‚·‚é CconvContentPosToTarget ƒIƒuƒWƒFƒNƒg‚Å‚·B
-		‚±‚ÌƒIƒuƒWƒFƒNƒg‚ÍAÀÛ‚É‚Í 
-		m_CconvContentPosToTargetXy.m_convY ‚Ö‚ÌƒAƒ_ƒvƒ^‚Å‚·B
+		Xåº§æ¨™ã‚’å¤‰æ›ã™ã‚‹ CconvContentPosToTarget ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ã™ã€‚
+		ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¯ã€å®Ÿéš›ã«ã¯ 
+		m_CconvContentPosToTargetXy.m_convY ã¸ã®ã‚¢ãƒ€ãƒ—ã‚¿ã§ã™ã€‚
 	*/
 	CaConvY	m_convY ;
 	///@}
 private:
 	// ********************************
-	///@name ‘®«
+	///@name å±æ€§
 	// ********************************
 	///@{
 	///@}
 protected:
 	// --------------------------------
-	///@name ‰º¿ŠÖ”
+	///@name ä¸‹è«‹é–¢æ•°
 	// --------------------------------
 	///@{
 	/**
-		m_sizeDcdMarginXRight , m_sizeDcdMarginYBottom ‚ª
-		“K—p‚³‚ê‚½—Ìˆæ‚ğZo‚µ‚Ü‚·B
+		m_sizeDcdMarginXRight , m_sizeDcdMarginYBottom ãŒ
+		é©ç”¨ã•ã‚ŒãŸé ˜åŸŸã‚’ç®—å‡ºã—ã¾ã™ã€‚
 	@param pIfDcdTarget [in]
-		•`‰æ‘ÎÛ‚Ì IfDcdTarget ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
-		NULL ‚Íw’è‚Å‚«‚Ü‚¹‚ñB
+		æç”»å¯¾è±¡ã® IfDcdTarget ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
+		NULL ã¯æŒ‡å®šã§ãã¾ã›ã‚“ã€‚
 	@return
-		ZoŒã‚Ì—Ìˆæ‚Å‚·B
+		ç®—å‡ºå¾Œã®é ˜åŸŸã§ã™ã€‚
 	*/
 	virtual CdDcdZoneXy calcMarginAppliedZone( IfDcdTarget* pIfDcdTarget ) ;
 	///@}
 public:
 	// ********************************
-	//	ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	//	ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 	// ********************************
-	/** m_convX,m_convY ‚Ì—¼•û‚ÉAƒ‚[ƒh‚ğİ’è‚µ‚Ü‚· */
+	/** m_convX,m_convY ã®ä¸¡æ–¹ã«ã€ãƒ¢ãƒ¼ãƒ‰ã‚’è¨­å®šã—ã¾ã™ */
 	CconvContentPosToDcdTarget( 
 		CconvContentPosToTarget::EMode	eMode ,
 		DcdSize	sizeDcdMarginXRight = 0 ,
 		DcdSize	sizeDcdMarginYBottom = 0 );
 
-	/** m_convX,m_convY ‚ğ EModePosAndRate ‚Æ‚µ‚Ä‰Šú‰»‚µ‚Ü‚·B*/
+	/** m_convX,m_convY ã‚’ EModePosAndRate ã¨ã—ã¦åˆæœŸåŒ–ã—ã¾ã™ã€‚*/
 	CconvContentPosToDcdTarget( 
 		DcdPos	iContentPosX ,
 		double dTargetPosPerContentX ,
@@ -221,9 +221,9 @@ public:
 		DcdSize	sizeDcdMarginYBottom = 0 ) ;
 
 	/**
-		m_convX,m_convY ‚ğ EModeZone ‚Æ‚µ‚Ä‰Šú‰»‚µ‚Ü‚·B
+		m_convX,m_convY ã‚’ EModeZone ã¨ã—ã¦åˆæœŸåŒ–ã—ã¾ã™ã€‚
 	@param zoneContent[in]
-		TargetZone‚É•\¦‚·‚éƒRƒ“ƒeƒ“ƒg‚Ìn“_‚Æ‘å‚«‚³B
+		TargetZoneã«è¡¨ç¤ºã™ã‚‹ã‚³ãƒ³ãƒ†ãƒ³ãƒˆã®å§‹ç‚¹ã¨å¤§ãã•ã€‚
 	*/
 	CconvContentPosToDcdTarget( 
 		const CdDcdZoneXy&	zonexyContent ,
@@ -232,11 +232,11 @@ public:
 
 	CconvContentPosToDcdTarget() ;
 
-	virtual ~CconvContentPosToDcdTarget() ;
+	virtual â€¾CconvContentPosToDcdTarget() ;
 
 public:
 	// ********************************
-	///@name CconvContentPosToDcdTarget-W–ñ
+	///@name CconvContentPosToDcdTarget-é›†ç´„
 	// ********************************
 	///@{
 	CaConvX* getX()
@@ -258,7 +258,7 @@ public:
 	///@}
 	
 	// ********************************
-	///@name CconvContentPosToDcdTarget-‘®«
+	///@name CconvContentPosToDcdTarget-å±æ€§
 	// ********************************
 	///@{
 	DcdSize	getDcdMarginXRight()const ;
@@ -267,51 +267,51 @@ public:
 	void setDcdMarginYBottom( DcdSize value ) ;
 	///@}
 	// ********************************
-	///@name CconvContentPosToDcdTarget-‘€ì
+	///@name CconvContentPosToDcdTarget-æ“ä½œ
 	// ********************************
 	///@{
 	/**
 	@return
-		m_convX,m_convY ‚ÌA TargetPos‚Ö‚Ì•ÏŠ·ƒ‚[ƒhB
+		m_convX,m_convY ã®ã€ TargetPosã¸ã®å¤‰æ›ãƒ¢ãƒ¼ãƒ‰ã€‚
 	@attention
-		m_convX,m_convY ‚Å•ÏŠ·ƒ‚[ƒh‚ªˆÙ‚È‚éê‡‚ÍA‚±‚ÌŠÖ”‚Ì–ß‚è’l‚Í
-		–¢’è‹`‚Å‚·B
+		m_convX,m_convY ã§å¤‰æ›ãƒ¢ãƒ¼ãƒ‰ãŒç•°ãªã‚‹å ´åˆã¯ã€ã“ã®é–¢æ•°ã®æˆ»ã‚Šå€¤ã¯
+		æœªå®šç¾©ã§ã™ã€‚
 	*/
 	virtual CconvContentPosToTarget::EMode	getMode()const ;
 
 	/**
 	@param value [in]
-		m_convX,m_convY ‚ÌA TargetPos‚Ö‚Ì•ÏŠ·ƒ‚[ƒh‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		m_convX,m_convY ã®ã€ TargetPosã¸ã®å¤‰æ›ãƒ¢ãƒ¼ãƒ‰ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 	*/
 	virtual void setMode( CconvContentPosToTarget::EMode	value ) ;
 
 	/**
 	@return 
-		TargetPos‚Ì¶ã‚É•`‰æ‚³‚ê‚éContent‚ÌAContentPosÀ•WB
+		TargetPosã®å·¦ä¸Šã«æç”»ã•ã‚Œã‚‹Contentã®ã€ContentPosåº§æ¨™ã€‚
 	*/
 	virtual CdDcdPosXy getContentPos()const ;
 
 	/**
 	@param value [in]
-		TargetPos‚Ì¶ã‚É•`‰æ‚³‚ê‚éContent‚ÌAContentPosÀ•W‚ğİ’èB
+		TargetPosã®å·¦ä¸Šã«æç”»ã•ã‚Œã‚‹Contentã®ã€ContentPosåº§æ¨™ã‚’è¨­å®šã€‚
 	*/
 	virtual void setContentPos( const CdDcdPosXy& value ) ;
 
 	/**
-		TargetZone‚É•\¦‚·‚éƒRƒ“ƒeƒ“ƒg‚Ìn“_‚ÆŠg‘å—¦‚ğİ’è‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+		TargetZoneã«è¡¨ç¤ºã™ã‚‹ã‚³ãƒ³ãƒ†ãƒ³ãƒˆã®å§‹ç‚¹ã¨æ‹¡å¤§ç‡ã‚’è¨­å®šã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 	@param posContentPos [in]
-		TargetPos‚Ì¶ã‚É•`‰æ‚³‚ê‚éContent‚ÌAContentPosÀ•WB
+		TargetPosã®å·¦ä¸Šã«æç”»ã•ã‚Œã‚‹Contentã®ã€ContentPosåº§æ¨™ã€‚
 	@param dTargetPosPerContentX [in]
-		X•ûŒü‚ÌŠg‘å—¦BƒRƒ“ƒeƒ“ƒgÀ•W‚P‚ ‚½‚è‚ÌATargetPos ‚Ì”B
+		Xæ–¹å‘ã®æ‹¡å¤§ç‡ã€‚ã‚³ãƒ³ãƒ†ãƒ³ãƒˆåº§æ¨™ï¼‘ã‚ãŸã‚Šã®ã€TargetPos ã®æ•°ã€‚
 	@param dTargetPosPerContentY [in]
-		Y•ûŒü‚ÌŠg‘å—¦BƒRƒ“ƒeƒ“ƒgÀ•W‚P‚ ‚½‚è‚ÌATargetPos ‚Ì”B
+		Yæ–¹å‘ã®æ‹¡å¤§ç‡ã€‚ã‚³ãƒ³ãƒ†ãƒ³ãƒˆåº§æ¨™ï¼‘ã‚ãŸã‚Šã®ã€TargetPos ã®æ•°ã€‚
 	@param pIfDcdTarget [in]
-		•`‰æ‘ÎÛ‚Ì IfDcdTarget ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		æç”»å¯¾è±¡ã® IfDcdTarget ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 	@note
-		‚±‚ê‚ç’l‚ğæ“¾‚·‚é‚Æ‚«‚ÍA 
-		getX() , getY() ‚ğg—p‚µ‚ÄA
-		m_convX,m_convY ‚Ìƒ|ƒCƒ“ƒ^‚ğæ“¾‚µA‚»‚ÌƒIƒuƒWƒFƒNƒg‚©‚ç
-		’l‚ğæ“¾‚µ‚Ä‚­‚¾‚³‚¢B
+		ã“ã‚Œã‚‰å€¤ã‚’å–å¾—ã™ã‚‹ã¨ãã¯ã€ 
+		getX() , getY() ã‚’ä½¿ç”¨ã—ã¦ã€
+		m_convX,m_convY ã®ãƒã‚¤ãƒ³ã‚¿ã‚’å–å¾—ã—ã€ãã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‹ã‚‰
+		å€¤ã‚’å–å¾—ã—ã¦ãã ã•ã„ã€‚
 	*/
 	virtual void setContentPosAndRate( 
 		const CdDcdPosXy& posContentPos , 
@@ -321,81 +321,81 @@ public:
 
 
 	/** 
-		TargetZone‚É•\¦‚·‚éƒRƒ“ƒeƒ“ƒg‚Ìn“_‚Æ‘å‚«‚³‚ğæ“¾‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+		TargetZoneã«è¡¨ç¤ºã™ã‚‹ã‚³ãƒ³ãƒ†ãƒ³ãƒˆã®å§‹ç‚¹ã¨å¤§ãã•ã‚’å–å¾—ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 	@param pIfDcdTarget [in]
-		•`‰æ‘ÎÛ‚Ì IfDcdTarget ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		æç”»å¯¾è±¡ã® IfDcdTarget ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 	@return
-		TargetZone‚É•\¦‚·‚éƒRƒ“ƒeƒ“ƒg‚ÌˆÊ’u‚Æ‘å‚«‚³B
+		TargetZoneã«è¡¨ç¤ºã™ã‚‹ã‚³ãƒ³ãƒ†ãƒ³ãƒˆã®ä½ç½®ã¨å¤§ãã•ã€‚
 	*/
 	CdDcdZoneXy getContentZone( IfDcdTarget* pIfDcdTarget ) ;
 
 	/**
-		TargetZone‚É•\¦‚·‚éƒRƒ“ƒeƒ“ƒg‚Ìn“_‚Æ‘å‚«‚³‚ğİ’è‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+		TargetZoneã«è¡¨ç¤ºã™ã‚‹ã‚³ãƒ³ãƒ†ãƒ³ãƒˆã®å§‹ç‚¹ã¨å¤§ãã•ã‚’è¨­å®šã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 	@param zoneContent[in]
-		TargetZone‚É•\¦‚·‚éƒRƒ“ƒeƒ“ƒg‚Ìn“_‚Æ‘å‚«‚³B
+		TargetZoneã«è¡¨ç¤ºã™ã‚‹ã‚³ãƒ³ãƒ†ãƒ³ãƒˆã®å§‹ç‚¹ã¨å¤§ãã•ã€‚
 	@param pIfDcdTarget [in]
-		•`‰æ‘ÎÛ‚Ì IfDcdTarget ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		æç”»å¯¾è±¡ã® IfDcdTarget ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 	*/
 	virtual void setContentZone( const CdDcdZoneXy& zoneContent , 
 		IfDcdTarget* pIfDcdTarget ) ;
 	///@}
 	// ********************************
-	///@name CconvContentPosToDcdTarget-À•W•ÏŠ·
+	///@name CconvContentPosToDcdTarget-åº§æ¨™å¤‰æ›
 	// ********************************
 	///@{
 	/**
-		ContentPos ã‚ÌÀ•W
-		‚ğA
-		TargetZone ã‚ÌÀ•W
-		‚É•ÏŠ·‚µ‚Ü‚·B
+		ContentPos ä¸Šã®åº§æ¨™
+		ã‚’ã€
+		TargetZone ä¸Šã®åº§æ¨™
+		ã«å¤‰æ›ã—ã¾ã™ã€‚
 	@param value [in]
-  		•ÏŠ·‘O‚Ì’l‚ğw’è‚µ‚Ä‰º‚³‚¢B
+  		å¤‰æ›å‰ã®å€¤ã‚’æŒ‡å®šã—ã¦ä¸‹ã•ã„ã€‚
 	@param pIfDcdTarget [in]
-		•`‰æ‘ÎÛ‚Ì IfDcdTarget ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		æç”»å¯¾è±¡ã® IfDcdTarget ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 	@return
-  		•ÏŠ·Œã‚Ì’l‚ğ•Ô‚µ‚Ü‚·B
+  		å¤‰æ›å¾Œã®å€¤ã‚’è¿”ã—ã¾ã™ã€‚
 	 */
 	virtual CdDcdPosXy ContentPosToTarget( 
 		const CdDcdPosXy& value ,
 		IfDcdTarget* pIfDcdTarget ) ;
 	
 	/**
-		TargetZone ã‚ÌÀ•W
-		‚ğA
-		ContentPos ã‚ÌÀ•W
-		‚É•ÏŠ·‚µ‚Ü‚·B
+		TargetZone ä¸Šã®åº§æ¨™
+		ã‚’ã€
+		ContentPos ä¸Šã®åº§æ¨™
+		ã«å¤‰æ›ã—ã¾ã™ã€‚
 	@param value [in]
-  		•ÏŠ·‘O‚Ì’l‚ğw’è‚µ‚Ä‰º‚³‚¢B
+  		å¤‰æ›å‰ã®å€¤ã‚’æŒ‡å®šã—ã¦ä¸‹ã•ã„ã€‚
 	@param pIfDcdTarget [in]
-		•`‰æ‘ÎÛ‚Ì IfDcdTarget ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		æç”»å¯¾è±¡ã® IfDcdTarget ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 	 */
 	virtual CdDcdPosXy ContentPosFromTarget( 
 		const CdDcdPosXy& value ,
 		IfDcdTarget* pIfDcdTarget ) ;
 
 	/**
-		ContentPos ã‚ÌÀ•W
-		‚ğA
-		TargetZone ã‚ÌÀ•W
-		‚É•ÏŠ·‚µ‚Ü‚·B
+		ContentPos ä¸Šã®åº§æ¨™
+		ã‚’ã€
+		TargetZone ä¸Šã®åº§æ¨™
+		ã«å¤‰æ›ã—ã¾ã™ã€‚
 	@param value [in]
-  		•ÏŠ·‘O‚Ì’l‚ğw’è‚µ‚Ä‰º‚³‚¢B
+  		å¤‰æ›å‰ã®å€¤ã‚’æŒ‡å®šã—ã¦ä¸‹ã•ã„ã€‚
 	@param pIfDcdTarget [in]
-		•`‰æ‘ÎÛ‚Ì IfDcdTarget ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		æç”»å¯¾è±¡ã® IfDcdTarget ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 	 */
 	virtual CdDcdZoneXy ContentZoneToTarget( 
 		const CdDcdZoneXy& value ,
 		IfDcdTarget* pIfDcdTarget ) ;
 	
 	/**
-		TargetZone ã‚ÌÀ•W
-		‚ğA
-		ContentPos ã‚ÌÀ•W
-		‚É•ÏŠ·‚µ‚Ü‚·B
+		TargetZone ä¸Šã®åº§æ¨™
+		ã‚’ã€
+		ContentPos ä¸Šã®åº§æ¨™
+		ã«å¤‰æ›ã—ã¾ã™ã€‚
 	@param value [in]
-  		•ÏŠ·‘O‚Ì’l‚ğw’è‚µ‚Ä‰º‚³‚¢B
+  		å¤‰æ›å‰ã®å€¤ã‚’æŒ‡å®šã—ã¦ä¸‹ã•ã„ã€‚
 	@param pIfDcdTarget [in]
-		•`‰æ‘ÎÛ‚Ì IfDcdTarget ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B
+		æç”»å¯¾è±¡ã® IfDcdTarget ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
 	 */
 	virtual CdDcdZoneXy ContentZoneFromTarget( 
 		const CdDcdZoneXy& value ,

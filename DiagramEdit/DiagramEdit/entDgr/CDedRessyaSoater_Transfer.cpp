@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -77,9 +77,9 @@ Copyright (C) 2006-2017 take-okm
 #include "stdafx.h"
 #include <algorithm>
 #include "CDedRessyaSoater_Transfer.h"
-#include "NsMu\CaMui.h"
-#include "NsMu\CMup_vector.h"
-#include "NsMu\CaMup_vector.h"
+#include "NsMu¥CaMui.h"
+#include "NsMu¥CMup_vector.h"
+#include "NsMu¥CaMup_vector.h"
 #include "CentDedDgrRessya.h"
 
 
@@ -91,7 +91,7 @@ using namespace std ;
 //	CDedRessyaSoater_Transfer
 // ****************************************************************
 	// --------------------------------
-	//@name �����֐�
+	//@name 下請関数
 	// --------------------------------
 bool CDedRessyaSoater_Transfer::sortRessyaIndex_TransferFromSortedRessyaAtEki( 
 		const CentDedRessyaCont* pEstimateRessyaCont ,
@@ -105,13 +105,13 @@ bool CDedRessyaSoater_Transfer::sortRessyaIndex_TransferFromSortedRessyaAtEki(
 	const CentDedRessyaCont* pRessyaCont = pEstimateRessyaCont ;
 	const CentDedEkiCont* pEkiCont = m_pDedRosen->getCentDedEkiCont() ;
 
-	//�@�@�@�@�@�@���S�\�[�g�O��Ԃ̃��[�v(�����̒x���ق��������ق�)
-	//�@�@�@�@�@�@�@�@���S�\�[�g���Ԃ̃��[�v(�����̒x���ق��������ق�)
-	//�@�@�@�@�@�@�@�@�@�@��[�抷�wIndex�ŁA�\�[�g���ԁ��\�[�g�O��Ԃ�
-	//�@�@�@�@�@�@�@�@�@�@�@�@��p��10���ȓ��ŉ\]
-	//�@�@�@�@�@�@�@�@�@�@�@�@���\�[�g�O��Ԃ��\�[�g�O��ԃR���e�i����폜���A
-	//�@�@�@�@�@�@�@�@�@�@�@�@�@�\�[�g���ԃR���e�i�́A�ΏۂƂȂ����\�[�g���Ԃ̒���ɁA
-	//�@�@�@�@�@�@�@�@�@�@�@�@�@�}��
+	//　　　　　　○全ソート前列車のループ(時刻の遅いほう→早いほう)
+	//　　　　　　　　○全ソート後列車のループ(時刻の遅いほう→早いほう)
+	//　　　　　　　　　　○[乗換駅Indexで、ソート後列車→ソート前列車の
+	//　　　　　　　　　　　　乗継が10分以内で可能]
+	//　　　　　　　　　　　　○ソート前列車をソート前列車コンテナから削除し、
+	//　　　　　　　　　　　　　ソート後列車コンテナの、対象となったソート後列車の直後に、
+	//　　　　　　　　　　　　　挿入
 	for ( int idxRessyaIndexBeforeSort = (int)pcontRessyaIndexBeforeSort->size() - 1 ; 
 		!bAbort && idxRessyaIndexBeforeSort >= 0 ;
 		idxRessyaIndexBeforeSort -- )
@@ -130,33 +130,33 @@ bool CDedRessyaSoater_Transfer::sortRessyaIndex_TransferFromSortedRessyaAtEki(
 			const CentDedRessya*	pRessyaAfterSort = pRessyaCont->getMuPtr()->get( iRessyaIndexAfterSort ) ;
 			CentDedEkiJikoku	aEkiJikokuAfterSort = pRessyaAfterSort->getCentDedEkiJikoku( iEkiOrder ) ;
 
-			//	��p�\�̔���
+			//	乗継可能の判定
 			int iNorikaeSec = calcNorikaeSec( 
 				aEkiJikokuAfterSort , 
 				aEkiJikokuBeforeSort ,
 				m_pDedRosen->getKitenJikoku() ) ;
-			//iNorikaeSec = ��芷������(�b��)
-			//	��芷���s�\�Ȃ�A-1 ;
+			//iNorikaeSec = 乗り換え時間(秒数)
+			//	乗り換え不可能なら、-1 ;
 
 			if ( iNorikaeSec >= 0 && iNorikaeSec <= iMaxTransferSec )
 			{
-				//	��芷���\
+				//	乗り換え可能
 				break ;
 			}
 		}
 		//idxRessyaIndexAfterSort =
-		//	��芷�����ƂȂ�A�\�[�g����
-		//	������Ȃ��ꍇ�́AidxRessyaIndexAfterSort=-1 ; 
+		//	乗り換え元となる、ソート後列車
+		//	見つからない場合は、idxRessyaIndexAfterSort=-1 ; 
 
 		if ( 0 <= idxRessyaIndexAfterSort )
 		{
-			//�@�@�@�@�@�@�@�@�@�@�@�@���\�[�g�O��Ԃ��\�[�g�O��ԃR���e�i����폜���A
-			//�@�@�@�@�@�@�@�@�@�@�@�@�@�\�[�g���ԃR���e�i�́A�ΏۂƂȂ����\�[�g���Ԃ̒���ɁA
-			//�@�@�@�@�@�@�@�@�@�@�@�@�@�}��
+			//　　　　　　　　　　　　○ソート前列車をソート前列車コンテナから削除し、
+			//　　　　　　　　　　　　　ソート後列車コンテナの、対象となったソート後列車の直後に、
+			//　　　　　　　　　　　　　挿入
 			pcontRessyaIndexBeforeSort->erase( 
 					pcontRessyaIndexBeforeSort->begin() + idxRessyaIndexBeforeSort ) ;
 
-			//	�\�[�g���Ԃ̒���ȍ~�ŁA�}���������
+			//	ソート後列車の直後以降で、挿入先を検索
 			for ( idxRessyaIndexAfterSort ++ ;
 				idxRessyaIndexAfterSort < (int)pcontRessyaIndexAfterSort->size() ;
 				idxRessyaIndexAfterSort ++ )
@@ -173,7 +173,7 @@ bool CDedRessyaSoater_Transfer::sortRessyaIndex_TransferFromSortedRessyaAtEki(
 					break ;
 				}
 			}
-			//idxRessyaIndexAfterSort = ��Ԃ̑}����
+			//idxRessyaIndexAfterSort = 列車の挿入先
 
 			pcontRessyaIndexAfterSort->insert( 
 				pcontRessyaIndexAfterSort->begin() + idxRessyaIndexAfterSort ,
@@ -211,13 +211,13 @@ bool CDedRessyaSoater_Transfer::sortRessyaIndex_TransferToSortedRessyaAtEki(
 	const CentDedRessyaCont* pRessyaCont = pEstimateRessyaCont ;
 	const CentDedEkiCont* pEkiCont = m_pDedRosen->getCentDedEkiCont() ;
 
-	//�@�@�@�@�@�@���S�\�[�g�O��Ԃ̃��[�v
-	//�@�@�@�@�@�@�@�@���S�\�[�g���Ԃ̃��[�v(�����̑����ق����x���ق�)
-	//�@�@�@�@�@�@�@�@�@�@��[�抷�wIndex�ŁA�\�[�g�O��ԁ��\�[�g���Ԃ�
-	//�@�@�@�@�@�@�@�@�@�@�@�@��p���w�蕪�ȓ��ŉ\]
-	//�@�@�@�@�@�@�@�@�@�@�@�@���\�[�g�O��Ԃ��\�[�g�O��ԃR���e�i����폜���A
-	//�@�@�@�@�@�@�@�@�@�@�@�@�@�\�[�g���ԃR���e�i�́A�ΏۂƂȂ����\�[�g���Ԃ̒��O�ɁA
-	//�@�@�@�@�@�@�@�@�@�@�@�@�@�}��
+	//　　　　　　○全ソート前列車のループ
+	//　　　　　　　　○全ソート後列車のループ(時刻の早いほう→遅いほう)
+	//　　　　　　　　　　○[乗換駅Indexで、ソート前列車→ソート後列車の
+	//　　　　　　　　　　　　乗継が指定分以内で可能]
+	//　　　　　　　　　　　　○ソート前列車をソート前列車コンテナから削除し、
+	//　　　　　　　　　　　　　ソート後列車コンテナの、対象となったソート後列車の直前に、
+	//　　　　　　　　　　　　　挿入
 	for ( int idxRessyaIndexBeforeSort = 0 ; 
 		!bAbort && idxRessyaIndexBeforeSort < (int)pcontRessyaIndexBeforeSort->size() ;
 		idxRessyaIndexBeforeSort ++ )
@@ -235,29 +235,29 @@ bool CDedRessyaSoater_Transfer::sortRessyaIndex_TransferToSortedRessyaAtEki(
 				pcontRessyaIndexAfterSort->at( idxRessyaIndexAfterSort ) ) ;
 			CentDedEkiJikoku	aEkiJikokuAfterSort = pRessyaAfterSort->getCentDedEkiJikoku( iEkiOrder ) ;
 
-			//	��p�\�̔���
+			//	乗継可能の判定
 			int iNorikaeSec = calcNorikaeSec( 
 				aEkiJikokuBeforeSort , 
 				aEkiJikokuAfterSort ,
 				m_pDedRosen->getKitenJikoku() ) ;
-			//iNorikaeSec = ��芷������(�b��)
-			//	��芷���s�\�Ȃ�A-1 ;
+			//iNorikaeSec = 乗り換え時間(秒数)
+			//	乗り換え不可能なら、-1 ;
 
 			if ( iNorikaeSec >= 0 && iNorikaeSec <= iMaxTransferSec )
 			{
-				//	��芷���\
+				//	乗り換え可能
 				break ;
 			}
 		}
 		//idxRessyaIndexAfterSort =
-		//	��芷����ƂȂ�A�\�[�g����
-		//	������Ȃ��ꍇ�́AidxRessyaIndexAfterSort=pcontRessyaIndexAfterSort->size() ; 
+		//	乗り換え先となる、ソート後列車
+		//	見つからない場合は、idxRessyaIndexAfterSort=pcontRessyaIndexAfterSort->size() ; 
 
 		if ( idxRessyaIndexAfterSort < (int)pcontRessyaIndexAfterSort->size() )
 		{
-			//�@�@�@�@�@�@�@�@�@�@�@�@���\�[�g�O��Ԃ��\�[�g�O��ԃR���e�i����폜���A
-			//�@�@�@�@�@�@�@�@�@�@�@�@�@�\�[�g���ԃR���e�i�́A�ΏۂƂȂ����\�[�g���Ԃ̒���ɁA
-			//�@�@�@�@�@�@�@�@�@�@�@�@�@�}��
+			//　　　　　　　　　　　　○ソート前列車をソート前列車コンテナから削除し、
+			//　　　　　　　　　　　　　ソート後列車コンテナの、対象となったソート後列車の直後に、
+			//　　　　　　　　　　　　　挿入
 			int iRessyaIndexBeforeSort = pcontRessyaIndexBeforeSort->at( idxRessyaIndexBeforeSort ) ;
 			pcontRessyaIndexBeforeSort->erase( 
 					pcontRessyaIndexBeforeSort->begin() + idxRessyaIndexBeforeSort ) ;
@@ -265,7 +265,7 @@ bool CDedRessyaSoater_Transfer::sortRessyaIndex_TransferToSortedRessyaAtEki(
 
 
 
-			//	�\�[�g���Ԃ̒��O�ȑO�ŁA�}���������
+			//	ソート後列車の直前以前で、挿入先を検索
 			for ( idxRessyaIndexAfterSort -- ;
 				idxRessyaIndexAfterSort >= 0 ;
 				idxRessyaIndexAfterSort -- )
@@ -283,7 +283,7 @@ bool CDedRessyaSoater_Transfer::sortRessyaIndex_TransferToSortedRessyaAtEki(
 				}
 			}
 			idxRessyaIndexAfterSort ++ ;
-			//idxRessyaIndexAfterSort = ��Ԃ̑}����
+			//idxRessyaIndexAfterSort = 列車の挿入先
 
 			pcontRessyaIndexAfterSort->insert( 
 				pcontRessyaIndexAfterSort->begin() + idxRessyaIndexAfterSort ,
@@ -320,17 +320,17 @@ bool CDedRessyaSoater_Transfer::sortRessyaIndex_TransferFromSortedRessya(
 	const CentDedRessyaCont* pRessyaCont = pEstimateRessyaCont ;
 	const CentDedEkiCont* pEkiCont = m_pDedRosen->getCentDedEkiCont() ;
 
-	//���\�[�g�O��Ԃ��A�\�[�g�Ώۉw(F)��肠�Ƃ̒�ԉw��10���ȓ��ɏ�芷���̂ł���\�[�g���Ԃ̌��ɔz�u
-	//�@�@����芷���wOrder�̃��[�v(�\�[�g�Ώۉw+1�`�I���w)
-	//�@�@�@�@��[���̉w����v�w]
-	//�@�@�@�@�@�@���S�\�[�g�O��Ԃ̃��[�v
-	//�@�@�@�@�@�@�@�@���S�\�[�g���Ԃ̃��[�v(�����̒x���ق��������ق�)
-	//�@�@�@�@�@�@�@�@�@�@��[�抷�wIndex�ŁA�\�[�g���ԁ��\�[�g�O��Ԃ�
-	//�@�@�@�@�@�@�@�@�@�@�@�@��p��10���ȓ��ŉ\]
-	//�@�@�@�@�@�@�@�@�@�@�@�@���\�[�g�O��Ԃ��\�[�g�O��ԃR���e�i����폜���A
-	//�@�@�@�@�@�@�@�@�@�@�@�@�@�\�[�g���ԃR���e�i�́A�ΏۂƂȂ����\�[�g���Ԃ̒���ɁA
-	//�@�@�@�@�@�@�@�@�@�@�@�@�@�}��
-	//�@�@���\�[�g�O��Ԃ�1�{�ł�����������A���̃��[�v���Ď��s
+	//◎ソート前列車を、ソート対象駅(F)よりあとの停車駅で10分以内に乗り換えのできるソート後列車の後ろに配置
+	//　　○乗り換え駅Orderのループ(ソート対象駅+1〜終着駅)
+	//　　　　○[その駅が主要駅]
+	//　　　　　　○全ソート前列車のループ
+	//　　　　　　　　○全ソート後列車のループ(時刻の遅いほう→早いほう)
+	//　　　　　　　　　　○[乗換駅Indexで、ソート後列車→ソート前列車の
+	//　　　　　　　　　　　　乗継が10分以内で可能]
+	//　　　　　　　　　　　　○ソート前列車をソート前列車コンテナから削除し、
+	//　　　　　　　　　　　　　ソート後列車コンテナの、対象となったソート後列車の直後に、
+	//　　　　　　　　　　　　　挿入
+	//　　○ソート前列車が1本でも減少したら、このループを再実行
 	int iRessyaIndexBeforSortCount ;
 	do{
 		iRessyaIndexBeforSortCount = pcontRessyaIndexBeforeSort->size() ;
@@ -342,8 +342,8 @@ bool CDedRessyaSoater_Transfer::sortRessyaIndex_TransferFromSortedRessya(
 			CentDedEkiCont::CdDedEki	aEki = pEkiCont->getMuPtr(eRessyahoukou)->get( iEkiOrder ) ;
 			if ( aEki.getEkikibo() == CentDedEki::EEkikibo::Ekikibo_Syuyou )
 			{
-				//���\�[�g�O��Ԃ��A�\�[�g�Ώۉw(F)��肠�Ƃ̒�ԉw��
-				//	10���ȓ��ɏ�芷���̂ł���\�[�g���Ԃ̌��ɔz�u
+				//◎ソート前列車を、ソート対象駅(F)よりあとの停車駅で
+				//	10分以内に乗り換えのできるソート後列車の後ろに配置
 				bAbort = sortRessyaIndex_TransferFromSortedRessyaAtEki( 
 					pEstimateRessyaCont ,
 					pcontRessyaIndexBeforeSort , 
@@ -360,16 +360,16 @@ bool CDedRessyaSoater_Transfer::sortRessyaIndex_TransferFromSortedRessya(
 
 
 	//
-	//�@�@����芷���wOrder�̃��[�v(�\�[�g�Ώۉw+1�`�I���w)
-	//�@�@�@�@��[���̉w��NOT(��v�w)]
-	//�@�@�@�@�@�@���S�\�[�g�O��Ԃ̃��[�v
-	//�@�@�@�@�@�@�@�@���S�\�[�g���Ԃ̃��[�v(�����̒x���ق��������ق�)
-	//�@�@�@�@�@�@�@�@�@�@��[�抷�wIndex�ŁA�\�[�g���ԁ��\�[�g�O��Ԃ�
-	//�@�@�@�@�@�@�@�@�@�@�@�@��p��10���ȓ��ŉ\]
-	//�@�@�@�@�@�@�@�@�@�@�@�@���\�[�g�O��Ԃ��\�[�g�O��ԃR���e�i����폜���A
-	//�@�@�@�@�@�@�@�@�@�@�@�@�@�\�[�g���ԃR���e�i�́A�ΏۂƂȂ����\�[�g���Ԃ̒���ɁA
-	//�@�@�@�@�@�@�@�@�@�@�@�@�@�}��
-	//�@�@���\�[�g�O��Ԃ�1�{�ł�����������A���̃��[�v���Ď��s
+	//　　○乗り換え駅Orderのループ(ソート対象駅+1〜終着駅)
+	//　　　　○[その駅がNOT(主要駅)]
+	//　　　　　　○全ソート前列車のループ
+	//　　　　　　　　○全ソート後列車のループ(時刻の遅いほう→早いほう)
+	//　　　　　　　　　　○[乗換駅Indexで、ソート後列車→ソート前列車の
+	//　　　　　　　　　　　　乗継が10分以内で可能]
+	//　　　　　　　　　　　　○ソート前列車をソート前列車コンテナから削除し、
+	//　　　　　　　　　　　　　ソート後列車コンテナの、対象となったソート後列車の直後に、
+	//　　　　　　　　　　　　　挿入
+	//　　○ソート前列車が1本でも減少したら、このループを再実行
 
 	do{
 		iRessyaIndexBeforSortCount = pcontRessyaIndexBeforeSort->size() ;
@@ -381,8 +381,8 @@ bool CDedRessyaSoater_Transfer::sortRessyaIndex_TransferFromSortedRessya(
 			CentDedEkiCont::CdDedEki	aEki = pEkiCont->getMuPtr(eRessyahoukou)->get( iEkiOrder ) ;
 			if ( aEki.getEkikibo() != CentDedEki::EEkikibo::Ekikibo_Syuyou )
 			{
-				//���\�[�g�O��Ԃ��A�\�[�g�Ώۉw(F)��肠�Ƃ̒�ԉw��
-				//	10���ȓ��ɏ�芷���̂ł���\�[�g���Ԃ̌��ɔz�u
+				//◎ソート前列車を、ソート対象駅(F)よりあとの停車駅で
+				//	10分以内に乗り換えのできるソート後列車の後ろに配置
 				bAbort = sortRessyaIndex_TransferFromSortedRessyaAtEki( 
 					pEstimateRessyaCont ,
 					pcontRessyaIndexBeforeSort , 
@@ -398,17 +398,17 @@ bool CDedRessyaSoater_Transfer::sortRessyaIndex_TransferFromSortedRessya(
 
 
 
-	//���\�[�g�O��Ԃ��A�\�[�g�Ώۉw(F)��肠�Ƃ̒�ԉw�ŏ�芷���̂ł���\�[�g���Ԃ�T���B
-	//�@�@����芷���wOrder�̃��[�v(�\�[�g�Ώۉw+1�`�I���w)
-	//�@�@�@�@�@�@���S�\�[�g�O��Ԃ̃��[�v
-	//�@�@�@�@�@�@�@�@���S�\�[�g���Ԃ̃��[�v(�����̒x���ق��������ق�)
-	//�@�@�@�@�@�@�@�@�@�@��[�抷�wIndex�ŁA�\�[�g���ԁ��\�[�g�O��Ԃ̏�p���\]
-	//�@�@�@�@�@�@�@�@�@�@�@�@���\�[�g�O��Ԃ́u���בւ��p�w�����v�ɁA
-	//�@�@�@�@�@�@�@�@�@�@�@�@�@�\�[�g���Ԃ́u���בւ��p�w�����v�̉w�����E�������R�s�[�B
-	//�@�@�@�@�@�@�@�@�@�@�@�@���\�[�g�O��Ԃ��\�[�g�O��ԃR���e�i����폜���A
-	//�@�@�@�@�@�@�@�@�@�@�@�@�@�\�[�g���ԃR���e�i�́A�ΏۂƂȂ����\�[�g���Ԃ̒���ɁA
-	//�@�@�@�@�@�@�@�@�@�@�@�@�@�}��
-	//�@�@���\�[�g�O��Ԃ�1�{�ł�����������A���̃��[�v���Ď��s
+	//◎ソート前列車を、ソート対象駅(F)よりあとの停車駅で乗り換えのできるソート後列車を探す。
+	//　　○乗り換え駅Orderのループ(ソート対象駅+1〜終着駅)
+	//　　　　　　○全ソート前列車のループ
+	//　　　　　　　　○全ソート後列車のループ(時刻の遅いほう→早いほう)
+	//　　　　　　　　　　○[乗換駅Indexで、ソート後列車→ソート前列車の乗継が可能]
+	//　　　　　　　　　　　　○ソート前列車の「並べ替え用駅時刻」に、
+	//　　　　　　　　　　　　　ソート後列車の「並べ替え用駅時刻」の駅時刻・着発をコピー。
+	//　　　　　　　　　　　　○ソート前列車をソート前列車コンテナから削除し、
+	//　　　　　　　　　　　　　ソート後列車コンテナの、対象となったソート後列車の直後に、
+	//　　　　　　　　　　　　　挿入
+	//　　○ソート前列車が1本でも減少したら、このループを再実行
 
 	do{
 		iRessyaIndexBeforSortCount = pcontRessyaIndexBeforeSort->size() ;
@@ -419,8 +419,8 @@ bool CDedRessyaSoater_Transfer::sortRessyaIndex_TransferFromSortedRessya(
 		{
 			CentDedEkiCont::CdDedEki	aEki = pEkiCont->getMuPtr(eRessyahoukou)->get( iEkiOrder ) ;
 			{
-				//���\�[�g�O��Ԃ��A�\�[�g�Ώۉw(F)��肠�Ƃ̒�ԉw��
-				//	��芷���̂ł���\�[�g���Ԃ̌��ɔz�u
+				//◎ソート前列車を、ソート対象駅(F)よりあとの停車駅で
+				//	乗り換えのできるソート後列車の後ろに配置
 				bAbort = sortRessyaIndex_TransferFromSortedRessyaAtEki( 
 					pEstimateRessyaCont ,
 					pcontRessyaIndexBeforeSort , 
@@ -448,17 +448,17 @@ bool CDedRessyaSoater_Transfer::sortRessyaIndex_TransferToSortedRessya(
 	ERessyahoukou	eRessyahoukou = pEstimateRessyaCont->getRessyahoukou() ;
 	const CentDedRessyaCont* pRessyaCont = pEstimateRessyaCont ;
 	const CentDedEkiCont* pEkiCont = m_pDedRosen->getCentDedEkiCont() ;
-	//���\�[�g�O��Ԃ��A�\�[�g�Ώۉw(F)���O�̒�ԉw��10���ȓ��ɏ�芷���̂ł���\�[�g���Ԃ̑O�ɔz�u
-	//�@�@����芷���wOrder�̃��[�v(�\�[�g�Ώۉw-1�`�N�_�w)
-	//�@�@�@�@��[���̉w���I���wor��v�w]
-	//�@�@�@�@�@�@���S�\�[�g�O��Ԃ̃��[�v
-	//�@�@�@�@�@�@�@�@���S�\�[�g���Ԃ̃��[�v(�����̑����ق����x���ق�)
-	//�@�@�@�@�@�@�@�@�@�@��[�抷�wIndex�ŁA�\�[�g�O��ԁ��\�[�g���Ԃ�
-	//�@�@�@�@�@�@�@�@�@�@�@�@��p��10���ȓ��ŉ\]
-	//�@�@�@�@�@�@�@�@�@�@�@�@���\�[�g�O��Ԃ��\�[�g�O��ԃR���e�i����폜���A
-	//�@�@�@�@�@�@�@�@�@�@�@�@�@�\�[�g���ԃR���e�i�́A�ΏۂƂȂ����\�[�g���Ԃ̒��O�ɁA
-	//�@�@�@�@�@�@�@�@�@�@�@�@�@�}��
-	//�@�@���\�[�g�O��Ԃ�1�{�ł�����������A���̃��[�v���Ď��s
+	//◎ソート前列車を、ソート対象駅(F)より前の停車駅で10分以内に乗り換えのできるソート後列車の前に配置
+	//　　○乗り換え駅Orderのループ(ソート対象駅-1〜起点駅)
+	//　　　　○[その駅が終着駅or主要駅]
+	//　　　　　　○全ソート前列車のループ
+	//　　　　　　　　○全ソート後列車のループ(時刻の早いほう→遅いほう)
+	//　　　　　　　　　　○[乗換駅Indexで、ソート前列車→ソート後列車の
+	//　　　　　　　　　　　　乗継が10分以内で可能]
+	//　　　　　　　　　　　　○ソート前列車をソート前列車コンテナから削除し、
+	//　　　　　　　　　　　　　ソート後列車コンテナの、対象となったソート後列車の直前に、
+	//　　　　　　　　　　　　　挿入
+	//　　○ソート前列車が1本でも減少したら、このループを再実行
 
 	int iRessyaIndexBeforSortCount ;
 	do{
@@ -485,16 +485,16 @@ bool CDedRessyaSoater_Transfer::sortRessyaIndex_TransferToSortedRessya(
 
 
 	//
-	//�@�@����芷���wOrder�̃��[�v(�\�[�g�Ώۉw-1�`�N�_�w)
-	//�@�@�@�@��[���̉w��NOT(�I���wor��v�w)]
-	//�@�@�@�@�@�@���S�\�[�g�O��Ԃ̃��[�v
-	//�@�@�@�@�@�@�@�@���S�\�[�g���Ԃ̃��[�v(�����̑����ق����x���ق�)
-	//�@�@�@�@�@�@�@�@�@�@��[�抷�wIndex�ŁA�\�[�g�O��ԁ��\�[�g���Ԃ�
-	//�@�@�@�@�@�@�@�@�@�@�@�@��p��10���ȓ��ŉ\]
-	//�@�@�@�@�@�@�@�@�@�@�@�@���\�[�g�O��Ԃ��\�[�g�O��ԃR���e�i����폜���A
-	//�@�@�@�@�@�@�@�@�@�@�@�@�@�\�[�g���ԃR���e�i�́A�ΏۂƂȂ����\�[�g���Ԃ̒��O�ɁA
-	//�@�@�@�@�@�@�@�@�@�@�@�@�@�}��
-	//�@�@���\�[�g�O��Ԃ�1�{�ł�����������A���̃��[�v���Ď��s
+	//　　○乗り換え駅Orderのループ(ソート対象駅-1〜起点駅)
+	//　　　　○[その駅がNOT(終着駅or主要駅)]
+	//　　　　　　○全ソート前列車のループ
+	//　　　　　　　　○全ソート後列車のループ(時刻の早いほう→遅いほう)
+	//　　　　　　　　　　○[乗換駅Indexで、ソート前列車→ソート後列車の
+	//　　　　　　　　　　　　乗継が10分以内で可能]
+	//　　　　　　　　　　　　○ソート前列車をソート前列車コンテナから削除し、
+	//　　　　　　　　　　　　　ソート後列車コンテナの、対象となったソート後列車の直前に、
+	//　　　　　　　　　　　　　挿入
+	//　　○ソート前列車が1本でも減少したら、このループを再実行
 	do{
 		iRessyaIndexBeforSortCount = pcontRessyaIndexBeforeSort->size() ;
 
@@ -517,15 +517,15 @@ bool CDedRessyaSoater_Transfer::sortRessyaIndex_TransferToSortedRessya(
 
 	} while( !bAbort && iRessyaIndexBeforSortCount > (int)pcontRessyaIndexBeforeSort->size() ) ;
 
-	//���\�[�g�O��Ԃ��A�\�[�g�Ώۉw(F)���O�̒�ԉw�ŏ�芷���̂ł���\�[�g���Ԃ�T���B
-	//�@�@����芷���wOrder�̃��[�v(�\�[�g�Ώۉw-1�`�N�_�w)
-	//�@�@�@�@�@�@���S�\�[�g�O��Ԃ̃��[�v
-	//�@�@�@�@�@�@�@�@���S�\�[�g���Ԃ̃��[�v(�����̒x���ق��������ق�)
-	//�@�@�@�@�@�@�@�@�@�@��[�抷�wIndex�ŁA�\�[�g�O��ԁ��\�[�g���Ԃ̏�p���\]
-	//�@�@�@�@�@�@�@�@�@�@�@�@���\�[�g�O��Ԃ��\�[�g�O��ԃR���e�i����폜���A
-	//�@�@�@�@�@�@�@�@�@�@�@�@�@�\�[�g���ԃR���e�i�́A�ΏۂƂȂ����\�[�g���Ԃ̒��O�ɁA
-	//�@�@�@�@�@�@�@�@�@�@�@�@�@�}��
-	//�@�@���\�[�g�O��Ԃ�1�{�ł�����������A���̃��[�v���Ď��s
+	//◎ソート前列車を、ソート対象駅(F)より前の停車駅で乗り換えのできるソート後列車を探す。
+	//　　○乗り換え駅Orderのループ(ソート対象駅-1〜起点駅)
+	//　　　　　　○全ソート前列車のループ
+	//　　　　　　　　○全ソート後列車のループ(時刻の遅いほう→早いほう)
+	//　　　　　　　　　　○[乗換駅Indexで、ソート前列車→ソート後列車の乗継が可能]
+	//　　　　　　　　　　　　○ソート前列車をソート前列車コンテナから削除し、
+	//　　　　　　　　　　　　　ソート後列車コンテナの、対象となったソート後列車の直前に、
+	//　　　　　　　　　　　　　挿入
+	//　　○ソート前列車が1本でも減少したら、このループを再実行
 	//
 	do{
 		iRessyaIndexBeforSortCount = pcontRessyaIndexBeforeSort->size() ;
@@ -553,7 +553,7 @@ bool CDedRessyaSoater_Transfer::sortRessyaIndex_TransferToSortedRessya(
 
 
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 CDedRessyaSoater_Transfer::CDedRessyaSoater_Transfer(
 	const CentDedRosen* pDedRosen , 
@@ -570,7 +570,7 @@ CDedRessyaSoater_Transfer::CDedRessyaSoater_Transfer(
 {
 }
 
-CDedRessyaSoater_Transfer::~CDedRessyaSoater_Transfer() 
+CDedRessyaSoater_Transfer::‾CDedRessyaSoater_Transfer() 
 {
 	invalidate() ;
 }
@@ -585,11 +585,11 @@ int CDedRessyaSoater_Transfer::validate()
 	}
 	// --------------------------------
 	int iRv = 1 ;
-	//���\�[�g�Ώۂ̗�ԃR���e�i����A���莞������Ԃ�ێ�������Ԃ𐶐�
-	//�@���\�[�g�Ώۂ̗�ԃR���e�i���܂��� CentDedDia ����ACentDedDgrDia �𐶐�
-	//�@���\�[�g�Ώۂ̗�Ԃ̐��莞��CentDedRessyaCont�𐶐�
-	//�@�@	���\�[�g�Ώۂ̑S��Ԃ̃��[�v
-	//�@�@�@�@	��CentDedDgrRessya����A���莞������CentDedRessya�𐶐����A�R���e�i�ɒǉ�
+	//◎ソート対象の列車コンテナから、推定時刻つき列車を保持した列車を生成
+	//　◎ソート対象の列車コンテナを包含する CentDedDia から、CentDedDgrDia を生成
+	//　◎ソート対象の列車の推定時刻CentDedRessyaContを生成
+	//　　	○ソート対象の全列車のループ
+	//　　　　	○CentDedDgrRessyaから、推定時刻つきのCentDedRessyaを生成し、コンテナに追加
 	if ( iRv >= 1 )
 	{
 		m_CentDedDgrDia.readCentDedRosen(
@@ -621,54 +621,54 @@ bool CDedRessyaSoater_Transfer::isValid()
 	return m_bIsValid ;
 }
 	// ********************************
-	//@name ����
+	//@name 操作
 	// ********************************
 
 
 /**
-	���Index���A�w�肳�ꂽ�w����Order�̎����Ŕ�r����֐��I�u�W�F�N�g�ł��B
+	列車Indexを、指定された駅時刻Orderの時刻で比較する関数オブジェクトです。
 */
 class CCompareRessyaIndex_Ekijikoku
 {
 private:
 	// ********************************
-	///@name �֘A
+	///@name 関連
 	// ********************************
 	///@{
 	/**
-		��ԃR���e�i�B
+		列車コンテナ。
 	*/
 	const CentDedRessyaCont* m_pRessyaCont ;
 
 	///@}
 	// ********************************
-	///@name ����
+	///@name 属性
 	// ********************************
 	///@{
 	/**
-		�w����Order�x���w�肵�Ă��������B
+		『時刻Order』を指定してください。
 	*/
 	CdDedJikokuOrder m_JikokuOrder ;
 
 	/**
-		�_�C���O�����N�_�������w�肵�Ă��������B
-		���̊֐��́A�\�[�g���ɁA���̒l���ł�������������
-		�݂Ȃ��܂��B
-		(��F���̎�����5:00���w�肳�ꂽ�ꍇ�́A5:00<23:59<0:00<4:59 �Ƃ��Ĕ�r���s���܂�)
+		ダイヤグラム起点時刻を指定してください。
+		この関数は、ソート時に、この値を最も小さい時刻と
+		みなします。
+		(例：この時刻に5:00が指定された場合は、5:00<23:59<0:00<4:59 として比較を行います)
 	*/
 	CdDedJikoku m_jikokuKitenJikoku ;
 	///@}
 public:
 	/**
 	@param pRessyaCont [in]
-		��ԃR���e�i�B
+		列車コンテナ。
 	@param iJikokuOrder [in]
-		�w����Order�x���w�肵�Ă��������B
+		『時刻Order』を指定してください。
 	@param jikokuKitenJikoku [in]
-		�_�C���O�����N�_�������w�肵�Ă��������B
-		���̊֐��́A�\�[�g���ɁA���̒l���ł�������������
-		�݂Ȃ��܂��B
-		(��F���̎�����5:00���w�肳�ꂽ�ꍇ�́A5:00<23:59<0:00<4:59 �Ƃ��Ĕ�r���s���܂�)
+		ダイヤグラム起点時刻を指定してください。
+		この関数は、ソート時に、この値を最も小さい時刻と
+		みなします。
+		(例：この時刻に5:00が指定された場合は、5:00<23:59<0:00<4:59 として比較を行います)
 	*/
 	CCompareRessyaIndex_Ekijikoku( 
 		const CentDedRessyaCont* pRessyaCont ,
@@ -682,14 +682,14 @@ public:
 	};
 	/**
 	@return
-		left < right �Ȃ�^�ł��B
+		left < right なら真です。
 
 	@note
-	  ��r��́A
-			- �w������NULL�łȂ����̂�NULL�̂��̂Ƃł́ANULL�łȂ����̂���B
-			- Ekijikoku�̏������ق�����B
-			- Ekijikoku�������Ȃ�A����������B
-			- Ekijikoku����/���������Ȃ�RessyaIdx�̏������ق�����B
+	  比較基準は、
+			- 駅時刻がNULLでないものとNULLのものとでは、NULLでないものが先。
+			- Ekijikokuの小さいほうが先。
+			- Ekijikokuが同じなら、着時刻が先。
+			- Ekijikokuも着/発も同じならRessyaIdxの小さいほうが先。
 	*/
 	bool operator()( int left , int right )
 	{
@@ -704,7 +704,7 @@ public:
 
 		if ( m_JikokuOrder.getEkiJikokuItem() == CdDedJikokuOrder::EkiJikokuItem_Chaku )
 		{
-			//	�������ŗD�悵�Ĕ�r
+			//	着時刻で優先して比較
 			aJikokuLeft = aEkiJikokuLeft.getChakujikoku() ;	
 			bLeftIsHatsu = false ;
 			if ( aEkiJikokuLeft.getChakujikoku().isNull() &&
@@ -724,7 +724,7 @@ public:
 		}
 		else
 		{
-			//	�������ŗD�悵�Ĕ�r
+			//	発時刻で優先して比較
 
 			aJikokuLeft = aEkiJikokuLeft.getHatsujikoku() ;	
 			bLeftIsHatsu = true ;
@@ -745,21 +745,21 @@ public:
 
 		}
 		// --------------------------------
-		//	�Е���NULL�̏ꍇ�̔�r
+		//	片方がNULLの場合の比較
 		// --------------------------------
 		if ( !aJikokuLeft.isNull() && aJikokuRight.isNull() )
 		{
-			//	left��NULL�ŁAright�͔�NULL
+			//	leftはNULLで、rightは非NULL
 			return true ;
 		}
 		else if ( aJikokuLeft.isNull() && !aJikokuRight.isNull() )
 		{
-			//	left�͔�NULL�ŁAright��NULL
+			//	leftは非NULLで、rightはNULL
 			return false ;
 		}
 		// --------------------------------
-		//	m_Jikoku �͂ǂ����NULL�ł͂Ȃ��E�������͂ǂ����NULL
-		//	�����̔�r
+		//	m_Jikoku はどちらもNULLではない・もしくはどちらもNULL
+		//	時刻の比較
 		// --------------------------------
 		int iResult = aJikokuLeft.compare( aJikokuRight , m_jikokuKitenJikoku ) ;
 		if ( iResult == -1 )
@@ -771,7 +771,7 @@ public:
 			return false ;
 		}
 		// --------------------------------
-		// 	Ekijikoku�������Ȃ�A����������B
+		// 	Ekijikokuが同じなら、着時刻が先。
 		// --------------------------------
 		if ( !bLeftIsHatsu && bRightIsHatsu )
 		{
@@ -783,7 +783,7 @@ public:
 		}
 
 		// --------------------------------
-		// �����E�����Ƃ��ɓ������ꍇ�́A���Index���������ق�����
+		// 時刻・着発ともに等しい場合は、列車Indexが小さいほうが先
 		// --------------------------------
 		if ( left < right )
 		{
@@ -805,9 +805,9 @@ void CDedRessyaSoater_Transfer::sortRessyaIndex(
 	CdDedJikokuOrder aEkijikokuOrder = m_JikokuOrder ;
 	ERessyahoukou eRessyahoukou = pRessyaCont->getRessyahoukou() ;
 
-	//��pRessyaCont����A���莞������ԃR���e�i���쐬
-	//	validate() �ŁAm_pDedRosen�� m_pDedDia �Ɋ܂܂��S��Ԃ�
-	//	���莞�� CentDedRessya �𐶐����A���̓��e��ێ����܂��B
+	//◎pRessyaContから、推定時刻つき列車コンテナを作成
+	//	validate() で、m_pDedRosenと m_pDedDia に含まれる全列車の
+	//	推定時刻 CentDedRessya を生成し、その内容を保持します。
 
 	CentDedRessyaCont aEstimateRessyaCont = pRessyaCont->createEmptyCont() ;
 	for ( int idxRessya = 0 ; idxRessya < pRessyaCont->size() ; idxRessya ++ )
@@ -826,10 +826,10 @@ void CDedRessyaSoater_Transfer::sortRessyaIndex(
 			pEkiCont) ;
 		aEstimateRessyaCont.insert( aEstimateRessya ) ;
 	}
-	//aEstimateRessyaCont = pRessyaCont �ɐ��莞����ǉ����܂����B
+	//aEstimateRessyaCont = pRessyaCont に推定時刻を追加しました。
 	CentDedRessyaCont*	pEstimateRessyaCont = &aEstimateRessyaCont ;
 
-	////���\�[�g�O�w�C���f�N�X�R���e�i�𐶐�
+	////◎ソート前駅インデクスコンテナを生成
 	vector<int>	contRessyaIndexBeforSort ;
 	vector<int>	contRessyaIndexAfterSort ;
 	{
@@ -840,7 +840,7 @@ void CDedRessyaSoater_Transfer::sortRessyaIndex(
 
 	list<vector<int>> contRessyaIndexOrder;
 	//list<vector<int>> contRessyaIndexAfterSort2;
-	//Ver2.06.18 �p�^�[���_�C���v���r���[�@�\���L���ȏꍇ�́A���̒T���͖����ɂ���B
+	//Ver2.06.18 パターンダイヤプレビュー機能が有効な場合は、この探索は無効にする。
 	if (m_pDedRosen->getEnableOperation() > 0 && !m_pDedDia->getPatternDiagramPreviewEnable())
 	{
 		const vector<CustomizeJikokuhyouContent>& contCustomizeJikokuhyouContent = m_pDedDia->getcontCustomizeRessyaIndex(eRessyahoukou);
@@ -855,9 +855,9 @@ void CDedRessyaSoater_Transfer::sortRessyaIndex(
 			if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
 			{
 				/**
-					���̗񂪁A���̗�֕������Ă���ꍇ�A����2��̓\�[�g������я����ێ�����悤�ɂ��܂��B
-					�����ł́AcontConnectRessyaIndex�ɂ��̗��iRessyaIndexCont�����߂āA���̗�Ɉڂ�܂�
-					���̂Ƃ��A�����񂪕������Ă���\�����l�����Ainsert��p���܂��B
+					この列が、次の列へ併合している場合、この2列はソート後も並び順を維持するようにします。
+					ここでは、contConnectRessyaIndexにこの列のiRessyaIndexContを収めて、次の列に移ります
+					このとき、複数列が併合している可能性を考慮し、insertを用います。
 				*/
 				contConnectRessyaIndex.insert(
 					contConnectRessyaIndex.end(),
@@ -866,15 +866,15 @@ void CDedRessyaSoater_Transfer::sortRessyaIndex(
 			else if (aCustomizeJikokuhyouContent.iReleaseEkiOrder >= 0)
 			{
 				/**
-					���̗񂪁A�O�̗񂩂番�����Ă���ꍇ�A����2��̓\�[�g������я����ێ�����悤�ɂ��܂��B
-					contRessyaIndexOrder�̖����v�f�ɁA���̗��iRessyaIndexCont��t�������܂��B
+					この列が、前の列から分割している場合、この2列はソート後も並び順を維持するようにします。
+					contRessyaIndexOrderの末尾要素に、この列のiRessyaIndexContを付け加えます。
 				*/
 
-				//contRessyaIndexOrder�̖����v�f�����o��
+				//contRessyaIndexOrderの末尾要素を取り出す
 				contConnectRessyaIndex = contRessyaIndexOrder.back();
 				contRessyaIndexOrder.pop_back();
 
-				//contConnectRessyaIndex�̖����v�f�����o��(�����Index)
+				//contConnectRessyaIndexの末尾要素を取り出す(軸列車Index)
 				int iMainRessyaIndex = contConnectRessyaIndex.back();
 				contConnectRessyaIndex.pop_back();
 
@@ -882,7 +882,7 @@ void CDedRessyaSoater_Transfer::sortRessyaIndex(
 					contConnectRessyaIndex.end(),
 					aCustomizeJikokuhyouContent.iRessyaIndexCont.begin(), aCustomizeJikokuhyouContent.iRessyaIndexCont.end());
 
-				//contConnectRessyaIndex�̖����Ɏ����Index��t�^����B
+				//contConnectRessyaIndexの末尾に軸列車Indexを付与する。
 				contConnectRessyaIndex.emplace_back(iMainRessyaIndex);
 
 				contRessyaIndexOrder.emplace_back(contConnectRessyaIndex);
@@ -891,15 +891,15 @@ void CDedRessyaSoater_Transfer::sortRessyaIndex(
 			else
 			{
 				/**
-					����ȊO�̏ꍇ�AcontConnectRessyaIndex�ɒl������ꍇ�́A���̌��ɂ��̗��iRessyaIndexCont���Ȃ��Ă���contRessyaIndexOrder�Ɏ��߂܂��B
+					それ以外の場合、contConnectRessyaIndexに値がある場合は、その後ろにこの列のiRessyaIndexContをつなげてからcontRessyaIndexOrderに収めます。
 				*/
 
-				//iMainRessyaIndex contConnectRessyaIndex���Ŏ��ƂȂ��Ԃ�contConnectRessyaIndex�ɂ�����C���f�N�X
+				//iMainRessyaIndex contConnectRessyaIndex内で軸となる列車のcontConnectRessyaIndexにおけるインデクス
 				int iMainRessyaPos = contConnectRessyaIndex.size();
 				contConnectRessyaIndex.insert(
 					contConnectRessyaIndex.end(),
 					aCustomizeJikokuhyouContent.iRessyaIndexCont.begin(), aCustomizeJikokuhyouContent.iRessyaIndexCont.end());
-				//contConnectRessyaIndex�̖����Ɏ����Index��t�^����B
+				//contConnectRessyaIndexの末尾に軸列車Indexを付与する。
 				contConnectRessyaIndex.emplace_back(iMainRessyaPos);
 
 				contRessyaIndexOrder.emplace_back(contConnectRessyaIndex);
@@ -912,17 +912,17 @@ void CDedRessyaSoater_Transfer::sortRessyaIndex(
 			bool bErased = false;
 			if (itrOrder->size() <= 2)
 			{
-				//�T�C�Y��2�̏ꍇ�́A���Index�Ǝ����Index�̂�(�܂�1��Ԃ̂�)�Ȃ̂ŁA�폜���܂��B
+				//サイズが2の場合は、列車Indexと軸列車Indexのみ(つまり1列車のみ)なので、削除します。
 				itrOrder = contRessyaIndexOrder.erase(itrOrder);
 				bErased = true;
 			}
 			else
 			{
-				//�T�C�Y��3�ȏ�̏ꍇ�A����ԂƘA�����Ă����Ԃ̂ݎc���܂��B
-				//�܂��A����Ԃ�����A���ɑO�������܂�
-				//Ver2.06.18 �ꕔ��Ԃ݂̂�I��������ԂŎ��s���ꂽ�ꍇ�̕␳��ǉ�
-				//(1)�I��͈͈ȊO���܂܂�Ă���ꍇ�͍폜
-				//(2)�I��͈͓��̏ꍇ�A�I���J�n�ʒu�̕���␳����
+				//サイズが3以上の場合、軸列車と連続している列車のみ残します。
+				//まず、軸列車より後方、次に前方を見ます
+				//Ver2.06.18 一部列車のみを選択した状態で実行された場合の補正を追加
+				//(1)選択範囲以外が含まれている場合は削除
+				//(2)選択範囲内の場合、選択開始位置の分を補正する
 
 				for (int itrIndex = 0; itrIndex < itrOrder->size() - 1; itrIndex++)
 				{
@@ -962,8 +962,8 @@ void CDedRessyaSoater_Transfer::sortRessyaIndex(
 						}
 					}
 
-					//�O����폜�������ʁA�T�C�Y��1�ɂȂ����ꍇ�́A����Ԃ݂̂Ȃ̂ō폜���܂��B
-					//�T�C�Y��2�ȏ�̏ꍇ�́A����ԈʒuIndex��t�^���ďI�����܂��B
+					//前後を削除した結果、サイズが1になった場合は、軸列車のみなので削除します。
+					//サイズが2以上の場合は、軸列車位置Indexを付与して終了します。
 					if (itrOrder->size() == 1)
 					{
 						itrOrder = contRessyaIndexOrder.erase(itrOrder);
@@ -983,7 +983,7 @@ void CDedRessyaSoater_Transfer::sortRessyaIndex(
 		}
 	}
 
-	//���w�����̂���(���)���̂��A�\�[�g��R���e�i�Ɉڂ�
+	//◎駅時刻のある(停車)ものを、ソート後コンテナに移す
 	if ( !bAbort )
 	{
 		for ( int idx = 0 ; idx < (int)contRessyaIndexBeforSort.size() ; idx++ )
@@ -1018,20 +1018,20 @@ void CDedRessyaSoater_Transfer::sortRessyaIndex(
 		}
 	}	
 
-	//���\�[�g��R���e�i���A�w�����Ń\�[�g����B
+	//◎ソート後コンテナを、駅時刻でソートする。
 	//
 	//@code
-	//�\�[�g��
-	//RessyaIdx ��2   ��5   ��
-	//G         ��0012��0020��
-	//��/�� �@�@�����@����  ��
+	//ソート後
+	//RessyaIdx │2   │5   │
+	//G         │0012│0020│
+	//着/発 　　│発　│発  │
 	//@endcode	        
 	//
 	//@code
-	//�\�[�g�O
-	//RessyaIdx ��0   ��1   ��3   ��4   ��6   ��
-	//G         ��NULL��NULL��NULL��NULL��NULL��
-	//��/�� �@�@����  ����  ����  ����  ����  ��
+	//ソート前
+	//RessyaIdx │0   │1   │3   │4   │6   │
+	//G         │NULL│NULL│NULL│NULL│NULL│
+	//着/発 　　│着  │着  │着  │着  │着  │
 	//@endcode	        
 	if ( !bAbort )
 	{
@@ -1049,9 +1049,9 @@ void CDedRessyaSoater_Transfer::sortRessyaIndex(
 
 	if ( aEkijikokuOrder.getEkiJikokuItem() == CdDedJikokuOrder::EkiJikokuItem_Chaku)
 	{
-		//	�������Ń\�[�g�̏ꍇ
+		//	着時刻でソートの場合
 
-		//���\�[�g�O��Ԃ��A�\�[�g�Ώۉw���O�̒�ԉw�ŏ�芷���̂ł���\�[�g���Ԃ̑O�ɔz�u
+		//◎ソート前列車を、ソート対象駅より前の停車駅で乗り換えのできるソート後列車の前に配置
 		if ( !bAbort )
 		{
 			bAbort = sortRessyaIndex_TransferToSortedRessya( 
@@ -1062,7 +1062,7 @@ void CDedRessyaSoater_Transfer::sortRessyaIndex(
 				pIfProgress ) ; 
 		}
 
-		//���\�[�g�O��Ԃ��A�\�[�g�Ώۉw��肠�Ƃ̒�ԉw�ŏ�芷���̂ł���\�[�g���Ԃ̌��ɔz�u
+		//◎ソート前列車を、ソート対象駅よりあとの停車駅で乗り換えのできるソート後列車の後ろに配置
 		if ( !bAbort )
 		{
 			bAbort = sortRessyaIndex_TransferFromSortedRessya( 
@@ -1073,7 +1073,7 @@ void CDedRessyaSoater_Transfer::sortRessyaIndex(
 				pIfProgress ) ; 
 		}
 
-		//���\�[�g�O��Ԃ��A���ׂĂ̒�ԉw�ŏ�芷���̂ł���\�[�g���Ԃ̌��ɔz�u
+		//◎ソート前列車を、すべての停車駅で乗り換えのできるソート後列車の後ろに配置
 		if ( !bAbort )
 		{
 			bAbort = sortRessyaIndex_TransferFromSortedRessya( 
@@ -1086,9 +1086,9 @@ void CDedRessyaSoater_Transfer::sortRessyaIndex(
 	}
 	else
 	{
-		//	�������Ń\�[�g
+		//	発時刻でソート
 
-		//���\�[�g�O��Ԃ��A�\�[�g�Ώۉw��肠�Ƃ̒�ԉw�ŏ�芷���̂ł���\�[�g���Ԃ̌��ɔz�u
+		//◎ソート前列車を、ソート対象駅よりあとの停車駅で乗り換えのできるソート後列車の後ろに配置
 		if ( !bAbort )
 		{
 			bAbort = sortRessyaIndex_TransferFromSortedRessya( 
@@ -1099,7 +1099,7 @@ void CDedRessyaSoater_Transfer::sortRessyaIndex(
 				pIfProgress ) ; 
 		}
 
-		//���\�[�g�O��Ԃ��A�\�[�g�Ώۉw���O�̒�ԉw�ŏ�芷���̂ł���\�[�g���Ԃ̑O�ɔz�u
+		//◎ソート前列車を、ソート対象駅より前の停車駅で乗り換えのできるソート後列車の前に配置
 		if ( !bAbort )
 		{
 			bAbort = sortRessyaIndex_TransferToSortedRessya( 
@@ -1109,7 +1109,7 @@ void CDedRessyaSoater_Transfer::sortRessyaIndex(
 				aEkijikokuOrder , 
 				pIfProgress ) ; 
 		}
-		//���\�[�g�O��Ԃ��A���ׂĂ̒�ԉw�ŏ�芷���̂ł���\�[�g���Ԃ̑O�ɔz�u
+		//◎ソート前列車を、すべての停車駅で乗り換えのできるソート後列車の前に配置
 		if ( !bAbort )
 		{
 			bAbort = sortRessyaIndex_TransferToSortedRessya( 
@@ -1123,12 +1123,12 @@ void CDedRessyaSoater_Transfer::sortRessyaIndex(
 	}
 
 
-	//���c�����\�[�g�O���(�\�[�g�Ώۉw(F)����̗��p���s�\�ȗ��)���\�[�g���ԂɈړ�
-	//�@�@�@�@�@�@���S�\�[�g�O��Ԃ̃��[�v
-	//�@�@�@�@�@�@�@�@��[�I���w���\�[�g�Ώۉw����]�\�[�g�O��Ԃ��\�[�g�O��ԃR���e�i����폜���A
-	//�@�@�@�@�@�@�@�@�@�@�@�@�@�\�[�g���ԃR���e�i�̐擪�ɑ}��
-	//�@�@�@�@�@�@�@�@��[else]�\�[�g�O��Ԃ��\�[�g�O��ԃR���e�i����폜���A
-	//�@�@�@�@�@�@�@�@�@�@�@�@�@�\�[�g���ԃR���e�i�̖����ɑ}��
+	//◎残ったソート前列車(ソート対象駅(F)からの利用が不可能な列車)をソート後列車に移動
+	//　　　　　　○全ソート前列車のループ
+	//　　　　　　　　○[終着駅がソート対象駅より後]ソート前列車をソート前列車コンテナから削除し、
+	//　　　　　　　　　　　　　ソート後列車コンテナの先頭に挿入
+	//　　　　　　　　○[else]ソート前列車をソート前列車コンテナから削除し、
+	//　　　　　　　　　　　　　ソート後列車コンテナの末尾に挿入
 	if ( !bAbort )
 	{
 		int idxTo = 0 ;
@@ -1154,7 +1154,7 @@ void CDedRessyaSoater_Transfer::sortRessyaIndex(
 	
 
 
-	//�ŏI�I�Ƀ\�[�g�ł��Ȃ��������Index�́A�����ɒǉ�
+	//最終的にソートできなかった列車Indexは、末尾に追加
 	{
 		contRessyaIndexAfterSort.insert( 
 			contRessyaIndexAfterSort.end() ,
@@ -1163,11 +1163,11 @@ void CDedRessyaSoater_Transfer::sortRessyaIndex(
 		contRessyaIndexBeforSort.clear() ;
 	}
 
-	//contRessyaIndexOrder�Ɋ�Â��A���ёւ����s���܂��B
-	//(1)����Ԃ̈ʒu��T��(itrAfter)
-	//(2)contRessyaIndexAfterSort����A����ԈȊO���폜����
-	//(3)����Ԃ̈ʒu�ɁAcontRessyaIndexTemp(contRessyaIndexOrder�̊e�v�f����A�����̎����Pos���폜��������)��}������
-	//(4)����Ԃ��d�����Ă���̂ŁA�����炠������폜����
+	//contRessyaIndexOrderに基づき、並び替えを行います。
+	//(1)軸列車の位置を探す(itrAfter)
+	//(2)contRessyaIndexAfterSortから、軸列車以外を削除する
+	//(3)軸列車の位置に、contRessyaIndexTemp(contRessyaIndexOrderの各要素から、末尾の軸列車Posを削除したもの)を挿入する
+	//(4)軸列車が重複しているので、元からある方を削除する
 	{
 		for (auto itrOrder = contRessyaIndexOrder.begin(); itrOrder != contRessyaIndexOrder.end(); itrOrder++)
 		{
@@ -1220,7 +1220,7 @@ void CDedRessyaSoater_Transfer::sortRessyaIndex(
 		}
 	}
 
-	//�\�[�g���ʂ� muRessyaIndexOrder �Ɋi�[
+	//ソート結果を muRessyaIndexOrder に格納
 	{
 		muRessyaIndexOrder->erase( 0 , INT_MAX ) ;
 		CaMui<int>( muRessyaIndexOrder ).insert( &CaMup_vector<vector<int>>( &contRessyaIndexAfterSort ) ) ; ;
@@ -1240,7 +1240,7 @@ int CDedRessyaSoater_Transfer::calcNorikaeSec(
 		aEkiJikokuTo.getEkiatsukai() != CentDedEkiJikoku::Ekiatsukai_None )
 	{
 
-		//	��芷������Ԓ���������芷�����Ԕ�����
+		//	乗り換え元列車着時刻→乗り換え先列車発時刻
 		CdDedJikoku	jikokuFrom = aEkiJikokuFrom.getChakujikoku() ;
 		CdDedJikoku	jikokuTo = aEkiJikokuTo.getHatsujikoku() ;
 		// --------------------------------
@@ -1249,7 +1249,7 @@ int CDedRessyaSoater_Transfer::calcNorikaeSec(
 			int iComp = jikokuTo.compare( jikokuFrom , jikokuKitenJikoku ) ;
 			if ( iComp >= 0 )
 			{
-				//	�������͒�������肠��(�_�C���O�����N�_�������܂����ł��Ȃ�)
+				//	発時刻は着時刻よりあと(ダイヤグラム起点時刻をまたいでいない)
 
 				iNorikaeSec = jikokuTo.subJikoku( jikokuFrom ) ;
 				if ( iNorikaeSec < 0 )
@@ -1259,8 +1259,8 @@ int CDedRessyaSoater_Transfer::calcNorikaeSec(
 			}
 		}
 	}
-		//iNorikaeSec = ��芷������(�b��)
-		//	��芷���s�\�Ȃ�A-1 ;
+		//iNorikaeSec = 乗り換え時間(秒数)
+		//	乗り換え不可能なら、-1 ;
 
 	return iNorikaeSec ;
 }

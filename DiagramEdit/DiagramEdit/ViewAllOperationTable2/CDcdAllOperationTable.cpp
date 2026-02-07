@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -80,13 +80,13 @@ Copyright (C) 2006-2017 take-okm
 #include "DcDraw/CaDcdTargetClip.h"
 #include "DcdCd/Pos/CLineFunc.h"
 #include "DcdCd/Pos/CconvDcdPosOnZone_PosOrgAndRate.h"
-#include "LogMsg\LogMsg.h"
-#include "DcDraw\CaDcdTargetItemPosition.h"
+#include "LogMsg¥LogMsg.h"
+#include "DcDraw¥CaDcdTargetItemPosition.h"
 #include "str/strprintf.h"
 
 #include "CDcdAllOperationTable.h"
-#include "..\resource.h"
-#include "..\DiagramEdit.h"
+#include "..¥resource.h"
+#include "..¥DiagramEdit.h"
 
 namespace ViewAllOperationTable2 {
 
@@ -94,24 +94,24 @@ namespace ViewAllOperationTable2 {
 //	CDcdAllOperationTable
 // ****************************************************************
 /**
-	�_�C���O�����r���[�́AEndPos��\�����邽�߂�
-	�E�E�����̗]�T�̈���A
-	DcDraw���W�n�Ŏw�肵�܂��B
+	ダイヤグラムビューの、EndPosを表示するための
+	右・下側の余裕領域を、
+	DcDraw座標系で指定します。
 	
-	���̒l��0�̏ꍇ��
-	�I���w(�_�C���O�������W��X.EndPos)�ƁA
-	����̍Ō�̎���(�_�C���O�������W��Y.EndPos)
-	���A��ʊO�ɂȂ�A�\������܂���B
+	この値が0の場合は
+	終着駅(ダイヤグラム座標のX.EndPos)と、
+	一日の最後の時刻(ダイヤグラム座標のY.EndPos)
+	が、画面外になり、表示されません。
 */
 const int DIAGRAM_SIZE_MARGIN_DCD=2 ;
 
 
 	// ********************************
-	//@name �萔
+	//@name 定数
 	// ********************************
 /**
-*	�_�C���O������
-*	�c�r�̊Ԋu�̑I������ێ�����e�[�u���ł��B
+*	ダイヤグラムの
+*	縦罫の間隔の選択肢を保持するテーブルです。
 */
 const CDcdAllOperationTable::VLINE	CDcdAllOperationTable::m_arVline[8] =
 {
@@ -127,18 +127,18 @@ const CDcdAllOperationTable::VLINE	CDcdAllOperationTable::m_arVline[8] =
 
 
 // --------------------------------
-//@name �����֐�
+//@name 下請関数
 // --------------------------------
 void CDcdAllOperationTable::adjustProp() 
 {
 	// --------------------------------
-	//DcdPerDgrX,DcdPerDgrY �̒l���K��
+	//DcdPerDgrX,DcdPerDgrY の値正規化
 	// --------------------------------
 
 	CconvContentPosToDcdTarget::CaConvX* pConvX = 
 		m_CconvContentPosToDcdTarget.getX() ;
-	// m_dwDcdPerDgrX<0.0001 �Ȃ�A0.0001
-	// m_dwDcdPerDgrX �́A10�Ő���
+	// m_dwDcdPerDgrX<0.0001 なら、0.0001
+	// m_dwDcdPerDgrX は、10で制限
 	if ( pConvX->getTargetPosPerContent() < 0.0001 )
 	{
 		pConvX->setTargetPosPerContent( 0.0001 , NULL ) ;
@@ -161,7 +161,7 @@ void CDcdAllOperationTable::adjustProp()
 }
 
 // ********************************
-//	�R���X�g���N�^
+//	コンストラクタ
 // ********************************
 CDcdAllOperationTable::CDcdAllOperationTable( 
 		tstring strName,
@@ -170,8 +170,8 @@ CDcdAllOperationTable::CDcdAllOperationTable(
 		const CdDedDispProp& aCdDedDispProp ) :
 	m_fontpropOperationTableFont(9, _T("Meiryo UI")),
 	m_fontpropAllOperationTableJikokuFont(8, _T("Meiryo UI")),
-	//m_fontpropOperationTableFont(9, _T("�l�r �S�V�b�N")),
-	//m_fontpropAllOperationTableJikokuFont(8, _T("�l�r �S�V�b�N")),
+	//m_fontpropOperationTableFont(9, _T("ＭＳ ゴシック")),
+	//m_fontpropAllOperationTableJikokuFont(8, _T("ＭＳ ゴシック")),
 	m_colorDiaJikuColor( CdColorProp( 0 , 0 , 0 ) ) ,
 	m_colorGridColor(CdColorProp(0, 0, 0)),
 	m_colorStringColor(CdColorProp(0, 0, 0)),
@@ -194,8 +194,8 @@ CDcdAllOperationTable::CDcdAllOperationTable(
 CDcdAllOperationTable::CDcdAllOperationTable() :
 	m_fontpropOperationTableFont(9, _T("Meiryo UI")),
 	m_fontpropAllOperationTableJikokuFont(8, _T("Meiryo UI")),
-	//m_fontpropOperationTableFont(9, _T("�l�r �S�V�b�N")),
-	//m_fontpropAllOperationTableJikokuFont(8, _T("�l�r �S�V�b�N")),
+	//m_fontpropOperationTableFont(9, _T("ＭＳ ゴシック")),
+	//m_fontpropAllOperationTableJikokuFont(8, _T("ＭＳ ゴシック")),
 	m_colorDiaJikuColor( CdColorProp( 0 , 0 , 0 ) ) ,
 	m_colorGridColor(CdColorProp(0, 0, 0)),
 	m_colorStringColor(CdColorProp(0, 0, 0)),
@@ -212,7 +212,7 @@ CDcdAllOperationTable::CDcdAllOperationTable() :
 {
 }
 
-CDcdAllOperationTable::~CDcdAllOperationTable() 
+CDcdAllOperationTable::‾CDcdAllOperationTable() 
 {
 }
 	
@@ -230,23 +230,23 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 	CdDcdFreeLineProp	linepropGridBold(2, m_colorGridColor);
 
 	// --------------------------------
-	//	DcdTarget�̗̈��
-	//	�N���b�s���O���s���܂��B			
+	//	DcdTargetの領域に
+	//	クリッピングを行います。			
 	// --------------------------------
 	CaDcdTargetClip*	pTargetClip = NULL;
 	{
 		//CdDcdZoneXy	zonexyAllOperationTable = getCentDedDgrDia()->getZone();
 		//CdDcdZoneXy	zonexyAllOperationTable = *m_CdDcdZoneXy;
-		//zonexyAllOperationTable = �_�C���O�����͈̔͂��A
-		//	�w�_�C���O�����G���e�B�e�B���W�n�x�ŕێ����܂��B
-		//	X���W��24���ԕ��AY���W�͋N�_����I�_�܂ł�\���܂��B
+		//zonexyAllOperationTable = ダイヤグラムの範囲を、
+		//	『ダイヤグラムエンティティ座標系』で保持します。
+		//	X座標は24時間分、Y座標は起点から終点までを表します。
 
 		CdDcdZoneXy	zonexyDcd_CentDedDgrDia =
 			DgrToDcd(pIfDcdTarget, *m_CdDcdZone);
 		//zonexyDcd_CentDedDgrDia = 
-		//	�_�C���O�����͈̔͂��A�wDcDraw���W�n�x�ŕێ����܂��B
-		//	�A���A���̒l���N���b�v�̈�ɂ���ƁA
-		//	EndPos�̓N���b�v�̈�Ɋ܂܂�܂���B
+		//	ダイヤグラムの範囲を、『DcDraw座標系』で保持します。
+		//	但し、この値をクリップ領域にすると、
+		//	EndPosはクリップ領域に含まれません。
 		zonexyDcd_CentDedDgrDia.setX(
 			CdDcdZone(
 				zonexyDcd_CentDedDgrDia.getX().getPos(),
@@ -257,12 +257,12 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 				zonexyDcd_CentDedDgrDia.getY().getPos(),
 				zonexyDcd_CentDedDgrDia.getY().getSize()
 				+ DIAGRAM_SIZE_MARGIN_DCD));
-		//zonexyDcd_CentDedDgrDia = �_�C���O�����͈̔͂�
-		//	�wDcDraw���W�n�x�ŕێ����܂��B
+		//zonexyDcd_CentDedDgrDia = ダイヤグラムの範囲を
+		//	『DcDraw座標系』で保持します。
 
-		//�N���b�v�̈�́A
-		//	IfDcdTarget�̗̈��
-		//	�_�C���O�����͈̔͂̌����̈�ł��B
+		//クリップ領域は、
+		//	IfDcdTargetの領域と
+		//	ダイヤグラムの範囲の交差領域です。
 		CdDcdZoneXy	zonexyClip =
 			pIfDcdTarget->getZone().CrossZone(zonexyDcd_CentDedDgrDia);
 
@@ -270,23 +270,23 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 		pTargetClip->validate();
 	}
 	// --------------------------------
-	//	�`����s���̈�̌v�Z	
+	//	描画を行う領域の計算	
 	// --------------------------------
 	CdDcdZoneXy	zonexyAllOperationTable = *m_CdDcdZone;
-	//zonexyAllOperationTable = �_�C���O�����͈̔͂��A
-	//	�w�_�C���O�����G���e�B�e�B���W�n�x�ŕێ����܂��B
-	//	X���W��24���ԕ��AY���W�͋N�_����I�_�܂ł�\���܂��B
+	//zonexyAllOperationTable = ダイヤグラムの範囲を、
+	//	『ダイヤグラムエンティティ座標系』で保持します。
+	//	X座標は24時間分、Y座標は起点から終点までを表します。
 	CdDcdZoneXy	zonexyZone_Dgr = getZone_Dgr(pIfDcdTarget);
 //#pragma omp parallel sections
 	{
 		// --------------------------------
-		//	�c�r����`�悵�܂��B
+		//	縦罫線を描画します。
 		// --------------------------------
 //#pragma omp section
 		{
 
-			//	�c�r���́A�_�C���O�����N�_�����̎��́A�c�r���`�掞������J�n
-			//	(4:01��2���ڂȂ�4:02�A1���ڂȂ�4:01�A10���ڂȂ�4:10)
+			//	縦罫線は、ダイヤグラム起点時刻の次の、縦罫線描画時刻から開始
+			//	(4:01で2分目なら4:02、1分目なら4:01、10分目なら4:10)
 			DcdPos posDgrXVlineOrg = m_CdDcdZone->getX().getPos();
 			{
 				int iMod = zonexyAllOperationTable.getX().getPos() % getVlinePitch();
@@ -295,8 +295,8 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 					posDgrXVlineOrg += getVlinePitch() - iMod;
 				}
 			}
-			//posDgrXVlineOrg = �����\���̊J�n�ʒu
-			//	�_�C���O�����N�_�����̎��̐�������J�n(4:59�Ȃ�5:00�A5:00�Ȃ�5:00)
+			//posDgrXVlineOrg = 時刻表示の開始位置
+			//	ダイヤグラム起点時刻の次の正時から開始(4:59なら5:00、5:00なら5:00)
 
 
 			DcdPos iXEndPos = zonexyAllOperationTable.getX().getEndPos();
@@ -306,8 +306,8 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 				posDgrX <= iXEndPos;
 				posDgrX += iIncrement)
 			{
-				//posDgrX = �_�C���O�����G���e�B�e�B���W�ł́A
-				//	�c�r���̈ʒu
+				//posDgrX = ダイヤグラムエンティティ座標での、
+				//	縦罫線の位置
 				CDcdFreeLine	aCDcdFreeLine;
 				if (posDgrX % getVlineBoldPitch() == 0)
 				{
@@ -321,7 +321,7 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 				{
 					aCDcdFreeLine.setCdLineProp(linepropDiaJikuDot);
 				}
-				//	���W���ADgr��Dcd�ɕϊ�
+				//	座標を、Dgr→Dcdに変換
 				DcdPos posDcdX = XDgrToDcd(pTargetClip, posDgrX);
 
 				DcdPos posDgrY = zonexyZone_Dgr.getY().getPos();
@@ -346,7 +346,7 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 				if (pTargetClip->getZone().getX().getPos() - 1 <= posDcdX &&
 					posDcdX < pTargetClip->getZone().getX().getEndPos() + 1)
 				{
-					//�r���̏㉺���A�\���̈�O�ɏo�Ă���ꍇ�́A�\���̈�̊O1�s�N�Z���܂ŁA���̕`�ʔ͈͂��k�߂�B
+					//罫線の上下が、表示領域外に出ている場合は、表示領域の外1ピクセルまで、線の描写範囲を縮める。
 					if (pTargetClip->getZone().getY().getPos() > zoneDcdY.getPos())
 					{
 						//zoneDcdY.setPos(pTargetClip->getZone().getY().getPos() - 1);
@@ -370,7 +370,7 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 			}
 		}
 		// --------------------------------
-		//	���r����`�悵�܂��B
+		//	横罫線を描画します。
 		// --------------------------------
 //#pragma omp section
 		{
@@ -389,7 +389,7 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 					CDcdFreeLine	aCDcdFreeLine;
 					aCDcdFreeLine.setCdLineProp(linepropGridNormal);
 
-					//	���W���ADgr��Dcd�ɕϊ�
+					//	座標を、Dgr→Dcdに変換
 					//DcdPos	posDcdY = /*posDcdYOffset +*/ (posDgrY * getDcdPerDgrY() + pTargetClip->getZone().getY().getPos());
 					DcdPos	posDcdY = YDgrToDcd(pTargetClip, posDgrY);
 					posDcdY -= linepropGridNormal.getLogicalunitWidth();
@@ -398,7 +398,7 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 					if (pTargetClip->getZone().getY().getPos() - 1 <= posDcdY &&
 						posDcdY < pTargetClip->getZone().getY().getEndPos() + 1)
 					{
-						//�r���̍��E���A�\���̈�O�ɏo�Ă���ꍇ�́A�\���̈�̊O1�s�N�Z���܂ŁA���̕`�ʔ͈͂��k�߂�B
+						//罫線の左右が、表示領域外に出ている場合は、表示領域の外1ピクセルまで、線の描写範囲を縮める。
 						if (pTargetClip->getZone().getX().getPos() > zoneDcdX.getPos())
 						{
 							//zoneDcdX.setPos(pTargetClip->getZone().getX().getPos() - 1);
@@ -421,7 +421,7 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 			}
 		}
 	}
-	//��ԕ\��
+	//列車表示
 
 	int iOperationCount = getOperationNumber()->size();
 	DcdSize iOneOperationSize = DEFAULT_YSIZE_PER_ONEOPERATION();
@@ -509,7 +509,7 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 				strSihatsuEkimei = pCdDedEkiConts[itr->aRessyaProperty.getRessyahoukou()]
 					->get(iSihatsuEkiOrder).getEkimeiDiagramRyaku(true);
 				/**
-					��ʕύX�E��ԏ��ύX�̏ꍇ�́A�O��Ԃ̏I�_��������̎n�_�ɂ��܂��B
+					種別変更・列車情報変更の場合は、前列車の終点時刻を線の始点にします。
 				*/
 				if (bClassPropertyChange)
 				{
@@ -528,11 +528,11 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 
 			/**
 				SyuuchakuJikokuPrev
-				�^�p�̈��Ԗڂ̏ꍇ�́AOutJikoku��TempJikoku�Ɏn�������������ďI��
-				���Ԗڈȍ~�̏ꍇ�ATempJikoku�ɂ͑O��Ԃ̏I�������������Ă���̂ŁA
-				TempJikoku����OutJikoku�̊ԂɁA�n�����������邩�ۂ����m�F�B
-				�Ԃɂ���ꍇ��TempJikoku�Ɏn�������������ĕ`�ʂցA
-				�����ꍇ�A�����ŏI���Ƃ���B
+				運用の一列車目の場合は、OutJikokuとTempJikokuに始発時刻を代入して終了
+				二列車目以降の場合、TempJikokuには前列車の終着時刻が入っているので、
+				TempJikokuからOutJikokuの間に、始発時刻があるか否かを確認。
+				間にある場合はTempJikokuに始発時刻を代入して描写へ、
+				無い場合、ここで終了とする。
 			*/
 			if (SyuuchakuJikokuPrev.isNull())
 			{
@@ -571,13 +571,13 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 					if (itrNext == ListOperationTableContent.end() ||
 						itrNext->eBeforeType != EBeforeAfterType::BeforeAfterType_PropertySame)
 					{
-						//���̗�Ԃ������𒴂����ꍇ�A��������
-						//���̗�Ԃ̑O�^�C�v�������Ԉ����ȊO�Ȃ�A��̉��͖������̑O�̗�ԂŏI�����܂��B
+						//次の列車が末尾を超えた場合、もしくは
+						//次の列車の前タイプが同一列車扱い以外なら、一体化は無効その前の列車で終了します。
 						break;
 					}
 					else/* if (itrNext->eBeforeType == EBeforeAfterType::BeforeAfterType_PropertySame)*/
 					{
-						//���̗�Ԃ̑O�^�C�v�������Ԉ����̏ꍇ�A�ʏ펞����є��_�C���ŗ�ԕ�����v�A�I�����n�����w���̏ꍇ�́A���̗�Ԃ͈�̉����m�肷��B
+						//次の列車の前タイプが同一列車扱いの場合、通常時および箱ダイヤで列車方向一致、終着→始発が駅順の場合は、次の列車は一体化が確定する。
 
 						itr++;
 
@@ -610,12 +610,12 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 
 						if (itrNext->eAfterType == EBeforeAfterType::BeforeAfterType_PropertySame)
 						{
-							//���̗�Ԃ̌�^�C�v�������Ԉ����Ȃ�A����Ɏ��̗�Ԃ̌������s���B
+							//次の列車の後タイプが同一列車扱いなら、さらに次の列車の検索を行う。
 							continue;
 						}
 						else
 						{
-							//���̗�Ԃ̌�^�C�v�������Ԉ����ȊO�Ȃ�A���̗�Ԃ���̉��̖����ƂȂ�
+							//次の列車の後タイプが同一列車扱い以外なら、この列車が一体化の末尾となる
 							break;
 						}
 					}
@@ -641,10 +641,10 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 			}
 			SyuuchakuJikokuPrev = SyuuchakuJikoku;
 			/**
-				���̎��_�ŁA�n�������͗L���͈�(�o�悩��ۈ���o�߂��Ă��Ȃ�)�ɂ��邱�Ƃ͊m���B
-				�܂��A�I���������L���͈͂ɂ��邩�̃`�F�b�N��
-				�n�������ƏI�������̊ԂɋN�_���������邩���m�F(�n����������яI���������N�_�����̏ꍇ�͏���)
-				�N�_����������ł���ꍇ�́A����񕪊����ĕ`�ʂ���K�v������B
+				この時点で、始発時刻は有効範囲(出区から丸一日経過していない)にあることは確実。
+				まず、終着時刻が有効範囲にあるかのチェックと
+				始発時刻と終着時刻の間に起点時刻があるかを確認(始発時刻および終着時刻が起点時刻の場合は除く)
+				起点時刻を挟んでいる場合は、線を二分割して描写する必要がある。
 			*/
 			bool bLineSplit = false;
 			if (OutJikoku == SihatsuJikoku ||
@@ -665,7 +665,7 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 			}
 
 
-			//�n���w����\������A�������A�O��Ԃ̒i�K�ŁA�I���E�n���w�����܂Ƃ߂ĕ\�������ꍇ�͏ȗ�
+			//始発駅名を表示する、ただし、前列車の段階で、終着・始発駅名をまとめて表示した場合は省略
 			if (!bCompleteSihatsuEkimeiDisplay)
 			{
 				CDcdText textSihatsuEkimei(strSihatsuEkimei,
@@ -675,7 +675,7 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 				textSihatsuEkimei.getItemSize(pIfDcdTarget, &sizeSihatsuEkimei);
 
 
-				//	���W���ADgr��Dcd�ɕϊ�
+				//	座標を、Dgr→Dcdに変換
 				DcdPos posDcdX = XDgrToDcd(pIfDcdTarget, SecondOfSihatsuJikoku);
 				DcdPos posDcdY = YDgrToDcd(pIfDcdTarget, posDgrY) + linepropDiaJikuBold.getLogicalunitWidth();
 
@@ -691,8 +691,8 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 					}
 				}
 			}
-			//�n���w������\������A�������A�O��Ԃ̒i�K�ŁA�I���E�n���w�������܂Ƃ߂ĕ\�������ꍇ�͏ȗ��A
-			//�܂��A��ʕύX�E��ԏ��ύX�̏ꍇ���ȗ�
+			//始発駅時刻を表示する、ただし、前列車の段階で、終着・始発駅時刻をまとめて表示した場合は省略、
+			//また、種別変更・列車情報変更の場合も省略
 			if (!bCompleteSihatsuMinuteDisplay && getDisplayJikokuMinute() && !bClassPropertyChange)
 			{
 				tstring strTemp = strprintf(_T("%02d"), SihatsuJikoku.getMinute());
@@ -703,7 +703,7 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 				textSihatsuMinute.getItemSize(pIfDcdTarget, &sizeSihatsuMinute);
 
 
-				//	���W���ADgr��Dcd�ɕϊ�
+				//	座標を、Dgr→Dcdに変換
 				DcdPos posDcdX = XDgrToDcd(pIfDcdTarget, SecondOfSihatsuJikoku);
 				DcdPos posDcdY = YDgrToDcd(pIfDcdTarget, posDgrY);
 
@@ -722,7 +722,7 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 
 
 			// --------------------------------
-			//	�����̌`�������
+			//	直線の形状を決定
 			// --------------------------------
 			CdDcdFreeLineProp	aCdLineProp;
 			{
@@ -738,7 +738,7 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 
 
 			// --------------------------------
-			//	�����̕`��ʒu������
+			//	直線の描画位置を決定
 			// --------------------------------
 			CDcdFreeLine	aCDcdFreeLine(aCdLineProp);
 			if (bLineSplit)
@@ -768,7 +768,7 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 			}
 
 
-			//��Ԕԍ��\��
+			//列車番号表示
 			tstring strRessyaInformation;
 			if (getDisplayRessyabangou() && !pCentDedRessya->getRessyabangou().empty())
 			{
@@ -799,7 +799,7 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 						strRessyaInformation += _T(" ");
 					}
 					strRessyaInformation += pCentDedRessya->getGousuu();
-					strRessyaInformation += _T("��");
+					strRessyaInformation += _T("号");
 				}
 			}
 			if(!strRessyaInformation.empty())
@@ -865,7 +865,7 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 
 
 
-			//�I���w���\��
+			//終着駅名表示
 			{
 				CDcdText textSyuuchakuEkimei(strSyuuchakuEkimei,
 					CdDrawTextProp(getOperationTableFont(), getStringColor()),
@@ -874,19 +874,19 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 				textSyuuchakuEkimei.getItemSize(pIfDcdTarget, &sizeSyuuchakuEkimei);
 
 
-				//	���W���ADgr��Dcd�ɕϊ�
+				//	座標を、Dgr→Dcdに変換
 				DcdPos posDcdX = XDgrToDcd(pIfDcdTarget, SecondOfSyuuchakuJikoku);
 				DcdPos posDcdY = YDgrToDcd(pIfDcdTarget, posDgrY) + linepropDiaJikuBold.getLogicalunitWidth();
 
-				//���̗�Ԃ��^�p�Ō�̗�Ԃł͂Ȃ��ꍇ�A����Ԃ�ǂݍ��݁A�ȉ��̔�����s���܂�
-				//(1)����Ԃ̎n���w�Ƃ��̗�Ԃ̏I���w���������ۂ��A�قȂ�ꍇ�́A������\������
-				//(2)�����ꍇ�A���ꂼ��̕\���ʒu���v�Z���A���̊Ԋu��������T�C�Y�����菬�����ꍇ�́A��ɂ܂Ƃ߂ĕ\������B
-				//(3)�Ⴄ�ꍇ�����ꂼ��̕\���ʒu���v�Z���A���̊Ԋu��������T�C�Y�̔�����菬�����ꍇ�́A
-				//	�Ԋu�𕶎���T�C�Y�̔����m�ۂ���悤�ɒ�������B
+				//この列車が運用最後の列車ではない場合、次列車を読み込み、以下の判定を行います
+				//(1)次列車の始発駅とこの列車の終着駅が同じか否か、異なる場合は、両方を表示する
+				//(2)同じ場合、それぞれの表示位置を計算し、その間隔が文字列サイズ二つ分より小さい場合は、一つにまとめて表示する。
+				//(3)違う場合もそれぞれの表示位置を計算し、その間隔が文字列サイズの半分より小さい場合は、
+				//	間隔を文字列サイズの半分確保するように調整する。
 
-				//Ver2.05 ����Ԑڑ��^�C�v����ʕύX�E��ԏ��ύX�̏ꍇ�́A����Ԃ̐��̎n�_���I���w�����܂ŉ��΂��B
-				//�w���͏�Ɉ�݂̂ƂȂ�B�����͕\�����Ȃ��B
-				//�����Ԉ����̏ꍇ�́A�w���������ɕ\�������A����Ԃ̐��̎n�_���I���w�����܂ŉ��΂��B
+				//Ver2.05 次列車接続タイプが種別変更・列車情報変更の場合は、次列車の線の始点を終着駅時刻まで延ばす。
+				//駅名は常に一つのみとなる。時刻は表示しない。
+				//同一列車扱いの場合は、駅名時刻共に表示せず、次列車の線の始点を終着駅時刻まで延ばす。
 				//
 
 				bClassPropertyChange = false;
@@ -924,7 +924,7 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 					}
 					else if (bClassPropertyChange)
 					{
-						//��ʕύX�E��ԏ��ύX�̏ꍇ�A����Ԃ̎n���w�����́A���̗�Ԃ̏I���w�����Ƃ݂Ȃ��܂��B
+						//種別変更・列車情報変更の場合、次列車の始発駅時刻は、この列車の終着駅時刻とみなします。
 						strSihatsuEkimeiNext = strSyuuchakuEkimei;
 						SihatsuJikokuNext = SyuuchakuJikoku;
 						SecondOfSihatsuJikokuNext = SihatsuJikokuNext.getTotalSeconds();
@@ -948,23 +948,23 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 					}
 
 					/**
-						����Ԏn���������I����������o�掞���̊Ԃɂ��邩�ۂ����܂��m�F�B
-						�����ꍇ�͏I���w����������P�ƕ\�L���ďI��
-						����ꍇ�́A�I�������Ǝ���Ԏn�������̊ԂɋN�_���������邩���m�F�B
-						�����ꍇ�́A�K�v�ɉ����ĉw���\���̕������s���A����ꍇ�͉w���������͌X�̕\�L�ƂȂ�
+						次列車始発時刻が終着時刻から出区時刻の間にあるか否かをまず確認。
+						無い場合は終着駅名＆時刻を単独表記して終了
+						ある場合は、終着時刻と次列車始発時刻の間に起点時刻があるかを確認。
+						無い場合は、必要に応じて駅名表示の併合を行い、ある場合は駅名＆時刻は個々の表記となる
 					*/
 
 					if (SihatsuJikokuNext.compare(SyuuchakuJikoku, OutJikoku) >= 0)
 					{
 						if (SihatsuJikokuNext.compare(KitenJikoku, SyuuchakuJikoku) >= 0)
 						{
-							//�I�������Ǝ���Ԏn�������̊ԂɋN�_����������̂ŁA����ԕ`�ʂ͕ʌ��{�B�P�Ƃŉw���E�����`�ʂ��s���B
+							//終着時刻と次列車始発時刻の間に起点時刻があるので、次列車描写は別個実施。単独で駅名・時刻描写を行う。
 							bCompleteSihatsuEkimeiDisplay = false;
 							bCompleteSihatsuMinuteDisplay = false;
 						}
 						else
 						{
-							//�܂��A����Ԃ̏I���������擾����
+							//まず、次列車の終着時刻を取得する
 							CdDedJikoku SyuuchakuJikokuNext;
 							//int SecondOfSyuuchakuJikokuNext;
 							if (itrNext->iOuterShuchakuekiIndex != INT_MIN)
@@ -983,14 +983,14 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 								SyuuchakuJikokuNext = pCentDedRessyaNext->getCentDedEkiJikoku(iSyuuchakuEkiOrderNext).getChakujikoku();
 							}
 							/**
-								����ԏI���������A����Ԏn�������Əo�掞���̊Ԃɂ��邩�ǂ����𒲂ׂ�
-								����ꍇ�́A�K�v�ɉ����ĉw���\���̕������s���A�����ꍇ�͎���Ԃ̕`�ʎ��̂������Ȃ�
+								次列車終着時刻が、次列車始発時刻と出区時刻の間にあるかどうかを調べる
+								ある場合は、必要に応じて駅名表示の併合を行い、無い場合は次列車の描写自体が無くなる
 							*/
 							if (SyuuchakuJikokuNext.compare(SihatsuJikokuNext, OutJikoku) >= 0)
 							{
-								//�����ɂ��ǂ蒅������
-								//(1)�I�������̌�A�o�掞���̑O�܂łɁA����Ԃ����܂��Ă���
-								//(2)�I�������Ǝ���Ԏn�������̊ԂɁA�N�_�������Ȃ�
+								//ここにたどり着く条件
+								//(1)終着時刻の後、出区時刻の前までに、次列車が収まっている
+								//(2)終着時刻と次列車始発時刻の間に、起点時刻がない
 
 
 								DcdPos posDcdX_Next = XDgrToDcd(pIfDcdTarget, SecondOfSihatsuJikokuNext);
@@ -1001,11 +1001,11 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 								if (pCentDedEkiCont->isSameBrunchLoopGroup(iSyuuchakuEkiIndex, iSihatsuEkiIndex) &&
 									itr->iOuterShuchakuekiIndex == itrNext->iOuterShihatsuekiIndex)
 								{
-									//�I���w�Ǝn���w������ŁA�H���O��������v�����ꍇ(�ǂ�����H���O�����łȂ��ꍇ�܂�)
-									//��̉w���\���𓝍����邪�A�Ԋu���������������L���ꍇ�͕ʌ\������
+									//終着駅と始発駅が同一で、路線外発着も一致した場合(どちらも路線外発着でない場合含む)
+									//二つの駅名表示を統合するが、間隔が文字列一つ分よりも広い場合は別個表示する
 
-									//posDcdX��posDcdX_Next�́A���̋N�I�_�ʒu��\���Ă���̂ŁA������̒��Ԉʒu�ɑ�������
-									//�Ȃ̂ŁA�����񓯎m�̊Ԋu������������posDcdX��posDcdX_Next�̊Ԋu�����������ƂȂ�
+									//posDcdXとposDcdX_Nextは、線の起終点位置を表しているので、文字列の中間位置に相当する
+									//なので、文字列同士の間隔が文字列一つ分＝posDcdXとposDcdX_Nextの間隔が文字列二つ分となる
 									if (posDcdX + (sizeSyuuchakuEkimei.getX() * 3) > posDcdX_Next)
 									{
 										CdDcdZoneXy	zonexyDcdZoneXy(
@@ -1018,18 +1018,18 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 											textSyuuchakuEkimei.DcDraw(&aTarget);
 											bRv = true;
 										}
-										//�I���w���Ǝ���Ԏn���w���𕹍����ĕ\������
+										//終着駅名と次列車始発駅名を併合して表示完了
 										bCompleteSihatsuEkimeiDisplay = true;
 									}
 									else
 									{
-										//�I���w���Ǝ���Ԏn���w��������Ă���̂ŁA����ԕ`�ʂ͕ʌ��{�B�P�Ƃŉw���`�ʂ��s���B
+										//終着駅名と次列車始発駅名が離れているので、次列車描写は別個実施。単独で駅名描写を行う。
 										bCompleteSihatsuEkimeiDisplay = false;
 									}
 								}
 								else
 								{
-									//�I���w�Ǝ���Ԏn���w���قȂ�ꍇ
+									//終着駅と次列車始発駅が異なる場合
 
 									CDcdText textSihatsuEkimeiNext(strSihatsuEkimeiNext,
 										CdDrawTextProp(getOperationTableFont(), getStringColor()),
@@ -1037,12 +1037,12 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 									CdDcdSizeXy	sizeSihatsuEkimeiNext;
 									textSihatsuEkimeiNext.getItemSize(pIfDcdTarget, &sizeSihatsuEkimeiNext);
 
-									//posDcdX��posDcdX_Next�́A���̋N�I�_�ʒu��\���Ă���̂ŁA������̒��Ԉʒu�ɑ�������
-									//posDcdX + sizeSyuuchakuEkimei.getX() �́A�I���w���̉E�[���炳��ɕ����񔼕��E�̈ʒu���A
-									//posDcdX_Next - (sizeSihatsuEkimeiNext.getX() /2) �́A�n���w���̍��[�ʒu������
+									//posDcdXとposDcdX_Nextは、線の起終点位置を表しているので、文字列の中間位置に相当する
+									//posDcdX + sizeSyuuchakuEkimei.getX() は、終着駅名の右端からさらに文字列半分右の位置を、
+									//posDcdX_Next - (sizeSihatsuEkimeiNext.getX() /2) は、始発駅名の左端位置を示す
 									if (posDcdX + sizeSyuuchakuEkimei.getX() > posDcdX_Next - (sizeSihatsuEkimeiNext.getX() / 2))
 									{
-										//��̍��������߁A���̔������␳�l�ɂȂ�
+										//二つの差分を求め、その半分が補正値になる
 										DcdSize SizeCorrection = ((posDcdX + sizeSyuuchakuEkimei.getX()) - (posDcdX_Next - (sizeSihatsuEkimeiNext.getX() / 2))) / 2;
 										
 										CdDcdZoneXy	zonexyDcdZoneXySyuuchaku(
@@ -1066,19 +1066,19 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 											textSihatsuEkimeiNext.DcDraw(&aTargetSihatsu);
 											bRv = true;
 										}
-										//�I���w���Ǝ���Ԏn���w�����Ԋu�𒲐�������ŕʌł̕\������
+										//終着駅名と次列車始発駅名を間隔を調整した上で別個での表示完了
 										bCompleteSihatsuEkimeiDisplay = true;
 									}
 									else
 									{
-										//�I���w���Ǝ���Ԏn���w��������Ă���̂ŁA����ԕ`�ʂ͕ʌ��{�B�P�Ƃŉw���`�ʂ��s���B
+										//終着駅名と次列車始発駅名が離れているので、次列車描写は別個実施。単独で駅名描写を行う。
 										bCompleteSihatsuEkimeiDisplay = false;
 									}
 
 								}
 
 								/**
-									��ʕύX�E��ԏ��ύX�̏ꍇ�͎����\���͍s��Ȃ�
+									種別変更・列車情報変更の場合は時刻表示は行わない
 								*/
 								if (getDisplayJikokuMinute() &&
 									!bClassPropertyChange)
@@ -1098,13 +1098,13 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 									textSihatsuMinuteNext.getItemSize(pIfDcdTarget, &sizeSihatsuMinuteNext);
 
 
-									//	���W���ADgr��Dcd�ɕϊ�
+									//	座標を、Dgr→Dcdに変換
 									DcdPos posDcdX_Next = XDgrToDcd(pIfDcdTarget, SecondOfSihatsuJikokuNext);
 									DcdPos posDcdYJikoku = YDgrToDcd(pIfDcdTarget, posDgrY);
 
 									if (posDcdX + sizeSyuuchakuMinute.getX() > posDcdX_Next - (sizeSihatsuMinuteNext.getX() / 2))
 									{
-										//��̍��������߁A���̔������␳�l�ɂȂ�
+										//二つの差分を求め、その半分が補正値になる
 										DcdSize SizeCorrection = ((posDcdX + sizeSyuuchakuMinute.getX()) - (posDcdX_Next - (sizeSihatsuMinuteNext.getX() / 2))) / 2;
 										CdDcdZoneXy	zonexyDcdZoneXy(
 											CdDcdZone(posDcdX - (sizeSyuuchakuMinute.getX() / 2) - SizeCorrection, sizeSyuuchakuMinute.getX()),
@@ -1127,19 +1127,19 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 											textSihatsuMinuteNext.DcDraw(&aTargetNext);
 											bRv = true;
 										}
-										//�I�������Ǝ���Ԏn���������Ԋu�𒲐�������ŕʌł̕\������
+										//終着時刻と次列車始発時刻を間隔を調整した上で別個での表示完了
 										bCompleteSihatsuMinuteDisplay = true;
 									}
 									else
 									{
-										//�I�������Ǝ���Ԏn������������Ă���̂ŁA����ԕ`�ʂ͕ʌ��{�B�P�Ƃŉw���`�ʂ��s���B
+										//終着時刻と次列車始発時刻が離れているので、次列車描写は別個実施。単独で駅名描写を行う。
 										bCompleteSihatsuMinuteDisplay = false;
 									}
 								}
 							}
 							else
 							{
-								//����Ԏn�������Ǝ���ԏI�������̊Ԃɏo�掞��������̂ŁA����ԕ`�ʂ͖����B�P�Ƃŉw���E�����`�ʂ��s���B
+								//次列車始発時刻と次列車終着時刻の間に出区時刻があるので、次列車描写は無し。単独で駅名・時刻描写を行う。
 								bCompleteSihatsuEkimeiDisplay = false;
 								bCompleteSihatsuMinuteDisplay = false;
 							}
@@ -1149,12 +1149,12 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 				}
 				else
 				{
-					//���̗�Ԃ������ԂȂ̂ŁA����ԕ`�ʂ͖����B�P�Ƃŉw���E�����`�ʂ��s���B
+					//この列車が入区列車なので、次列車描写は無し。単独で駅名・時刻描写を行う。
 					bCompleteSihatsuEkimeiDisplay = false;
 					bCompleteSihatsuMinuteDisplay = false;
 				}
 				
-				//(����Ԃ�)�n���w���\�����Z��ł���ꍇ�́A�I���w�����ς�ł���̂ŁA��΂��Ă悢
+				//(次列車の)始発駅名表示が住んでいる場合は、終着駅名も済んでいるので、飛ばしてよい
 				if(!bCompleteSihatsuEkimeiDisplay)
 				{
 					CdDcdZoneXy	zonexyDcdZoneXy(
@@ -1168,7 +1168,7 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 					}
 				}
 				/**
-					��ʕύX�E��ԏ��ύX�̏ꍇ�͎����\���͍s��Ȃ�
+					種別変更・列車情報変更の場合は時刻表示は行わない
 				*/
 				if (!bCompleteSihatsuMinuteDisplay && getDisplayJikokuMinute() && !bClassPropertyChange)
 				{
@@ -1180,7 +1180,7 @@ bool CDcdAllOperationTable::DcDraw(IfDcdTarget* pIfDcdTarget)
 					textSyuuchakuMinute.getItemSize(pIfDcdTarget, &sizeSyuuchakuMinute);
 
 
-					//	���W���ADgr��Dcd�ɕϊ�
+					//	座標を、Dgr→Dcdに変換
 					DcdPos posDcdYJikoku = YDgrToDcd(pIfDcdTarget, posDgrY);
 
 					CdDcdZoneXy	zonexyDcdZoneXy(
@@ -1219,7 +1219,7 @@ bool CDcdAllOperationTable::getItemSize( IfDcdTarget* pIfDcdTarget ,
 //	CdDedDispProp
 // ********************************
 	// ********************************
-	//@name CDcdAllOperationTable-�֘A
+	//@name CDcdAllOperationTable-関連
 	// ********************************
 vector<tstring>* CDcdAllOperationTable::getOperationNumber()
 {
@@ -1258,7 +1258,7 @@ CDcdAllOperationTable& CDcdAllOperationTable::setName(tstring value)
 ;
 
 	// ********************************
-	//@name CDcdAllOperationTable-����-CdDedDispProp ����ǂݍ��݉\
+	//@name CDcdAllOperationTable-属性-CdDedDispProp から読み込み可能
 	// ********************************
 CdFontProp	CDcdAllOperationTable::getOperationTableFont()const {
 	return 	m_fontpropOperationTableFont;
@@ -1294,7 +1294,7 @@ CDcdAllOperationTable& CDcdAllOperationTable::setStringColor(CdColorProp value) 
 }
 
 	// ********************************
-	//@name CDcdAllOperationTable-����-CdDedDispProp �ɂ͂Ȃ�����
+	//@name CDcdAllOperationTable-属性-CdDedDispProp にはないもの
 	// ********************************
 bool	CDcdAllOperationTable::getDisplayRessyabangou()const{
 		return m_bDisplayRessyabangou ;};
@@ -1419,7 +1419,7 @@ CDcdAllOperationTable& CDcdAllOperationTable::setClippingCount(int value)
 }
 ;
 	// ********************************
-	//@name CDcdAllOperationTable-����
+	//@name CDcdAllOperationTable-操作
 	// ********************************
 
 CDcdAllOperationTable& CDcdAllOperationTable::readCdDedDispProp( const CdDedDispProp& value ) 
@@ -1512,7 +1512,7 @@ int CDcdAllOperationTable::calcCentDedRessyaOfPoint(
 
 	if (ListOperationTableContent.size() == 1)
 	{
-		//��Ԗ{������{�̏ꍇ�́A���̗�Ԃ�Ԃ�
+		//列車本数が一本の場合は、その列車を返す
 		*pERessyahoukou = ListOperationTableContent.begin()->aRessyaProperty.getRessyahoukou();
 		*piRessyaIdx = ListOperationTableContent.begin()->aRessyaProperty.getRessyaIndex();
 		iRv = 1;
@@ -1554,20 +1554,20 @@ int CDcdAllOperationTable::calcCentDedRessyaOfPoint(
 
 			SyuuchakuJikoku = pCentDedRessya->getCentDedEkiJikoku(iSyuuchakuEkiOrder).getChakujikoku();
 		}
-		//��Ԃ̎n���E�I���������擾������́A�܂���Ԃ��\���͈͂ɂ��邩�ǂ������m�F���܂�
-		//(�o���Ԃł���A�������́A�o�掞������24���Ԃ𒴂��Ă��Ȃ�)
+		//列車の始発・終着時刻を取得した後は、まず列車が表示範囲にあるかどうかを確認します
+		//(出区列車である、もしくは、出区時刻から24時間を超えていない)
 
 		if (PrevSyuuchakuJikoku.isNull())
 		{
 			/**
-				�O��ԏI��������NULL�̏ꍇ�́ASihatsuJikoku��SyuuchakuJikoku�̊�(�܂�SihatsuJikoku��SyuuchakuJikoku)��
-				SearchJikoku�����邩�ǂ����𒲂ׂ�B
-				����ꍇ�́A���̗�Ԃ�Ԃ��B
-				�����ꍇ�͏o�掞���Ɏn���������A�O��ԏI�������ɏI�������������Ď���
+				前列車終着時刻がNULLの場合は、SihatsuJikokuとSyuuchakuJikokuの間(含むSihatsuJikokuとSyuuchakuJikoku)に
+				SearchJikokuがあるかどうかを調べる。
+				ある場合は、この列車を返す。
+				無い場合は出区時刻に始発時刻を、前列車終着時刻に終着時刻を代入して次へ
 			*/
 			if (SearchJikoku.compare(SyuuchakuJikoku, SihatsuJikoku) <= 0)
 			{
-				//���̗�Ԃ�Ԃ�
+				//この列車を返す
 				*pERessyahoukou = itr->aRessyaProperty.getRessyahoukou();
 				*piRessyaIdx = itr->aRessyaProperty.getRessyaIndex();
 				iRv = 1;
@@ -1582,20 +1582,20 @@ int CDcdAllOperationTable::calcCentDedRessyaOfPoint(
 		else
 		{
 			/**
-				�O��ԏI����������NULL�̏ꍇ�́A
-				(1)PrevSyuuchakuJikoku��SihatsuJikoku�̊�(�܂�SihatsuJikoku)��OutJikoku�����邩�ǂ����𒲂ׂ�
-				(2)�����ꍇ��SihatsuJikoku��SyuuchakuJikoku�̊�(�܂�SyuuchakuJikoku)��OutJikoku�����邩�ǂ����𒲂ׂ�
-					��PrevSyuuchakuJikoku��SyuuchakuJikoku�̊ԂŃ`�F�b�N���s���ƁA24���Ԃ𒴂���\��������̂ŁA�K���ʁX�ɍs��
-				�ǂ��炩�����Ă͂܂�΁A���̗�Ԃ͐}���Ŕ�\���Ȃ̂ŁA�W�����v�Ώۂ�������O�ƂȂ�A
-				���̏ꍇ�́A�o���ԂƑO��Ԃ̂����ꂩ��Ԃ����ƂɂȂ�
-				�ǂ�������Ă͂܂�Ȃ������ꍇ�́A
-				(1)PrevSyuuchakuJikoku��SihatsuJikoku�̊�(����SihatsuJikoku)��SearchJikoku�����邩�ǂ����𒲂ׂ�
-					���Ă͂܂�ꍇ�A�O��ԂƂ��̗�Ԃ̂����ꂩ��Ԃ����ƂɂȂ�
-				(2)SihatsuJikoku��SyuuchakuJikoku�̊�(�܂�SyuuchakuJikoku)��SearchJikoku�����邩�ǂ����𒲂ׂ�
-					���Ă͂܂�ꍇ�A���̗�Ԃ�Ԃ�
-				�ǂ�������Ă͂܂�Ȃ������ꍇ�́A
-				(1)���̗�Ԃ������Ԃ̏ꍇ�A�o���ԂƂ��̗�Ԃ̂����ꂩ��Ԃ����ƂɂȂ�
-				(2)����Ԃ�����ꍇ�APrevSyuuchakuJikoku��SyuuchakuJikoku�ŏ㏑�����A����ԂցB
+				前列車終着時刻が非NULLの場合は、
+				(1)PrevSyuuchakuJikokuとSihatsuJikokuの間(含むSihatsuJikoku)にOutJikokuがあるかどうかを調べる
+				(2)無い場合はSihatsuJikokuとSyuuchakuJikokuの間(含むSyuuchakuJikoku)にOutJikokuがあるかどうかを調べる
+					※PrevSyuuchakuJikokuとSyuuchakuJikokuの間でチェックを行うと、24時間を超える可能性があるので、必ず別々に行う
+				どちらかが当てはまれば、この列車は図中で非表示なので、ジャンプ対象からも除外となる、
+				その場合は、出区列車と前列車のいずれかを返すことになる
+				どちらも当てはまらなかった場合は、
+				(1)PrevSyuuchakuJikokuとSihatsuJikokuの間(除くSihatsuJikoku)にSearchJikokuがあるかどうかを調べる
+					当てはまる場合、前列車とこの列車のいずれかを返すことになる
+				(2)SihatsuJikokuとSyuuchakuJikokuの間(含むSyuuchakuJikoku)にSearchJikokuがあるかどうかを調べる
+					当てはまる場合、この列車を返す
+				どちらも当てはまらなかった場合は、
+				(1)この列車が入区列車の場合、出区列車とこの列車のいずれかを返すことになる
+				(2)次列車がある場合、PrevSyuuchakuJikokuをSyuuchakuJikokuで上書きし、次列車へ。
 			*/
 			if (OutJikoku.compare(SihatsuJikoku, PrevSyuuchakuJikoku) <= 0 ||
 				OutJikoku.compare(SyuuchakuJikoku, SihatsuJikoku) <= 0)
@@ -1604,7 +1604,7 @@ int CDcdAllOperationTable::calcCentDedRessyaOfPoint(
 				{
 					if (KitenJikoku.compare(SearchJikoku, PrevSyuuchakuJikoku) <= 0)
 					{
-						//�o���Ԃ�Ԃ�
+						//出区列車を返す
 						*pERessyahoukou = ListOperationTableContent.begin()->aRessyaProperty.getRessyahoukou();
 						*piRessyaIdx = ListOperationTableContent.begin()->aRessyaProperty.getRessyaIndex();
 						iRv = 1;
@@ -1612,7 +1612,7 @@ int CDcdAllOperationTable::calcCentDedRessyaOfPoint(
 					}
 					else
 					{
-						//��O�̗�Ԃ�Ԃ�
+						//一つ前の列車を返す
 						auto itrPrev = itr;
 						itrPrev--;
 						*pERessyahoukou = itrPrev->aRessyaProperty.getRessyahoukou();
@@ -1635,7 +1635,7 @@ int CDcdAllOperationTable::calcCentDedRessyaOfPoint(
 					}
 					if (iDifOut <= iDifPrevSyuuchaku)
 					{
-						//�o���Ԃ�Ԃ�
+						//出区列車を返す
 						*pERessyahoukou = ListOperationTableContent.begin()->aRessyaProperty.getRessyahoukou();
 						*piRessyaIdx = ListOperationTableContent.begin()->aRessyaProperty.getRessyaIndex();
 						iRv = 1;
@@ -1643,7 +1643,7 @@ int CDcdAllOperationTable::calcCentDedRessyaOfPoint(
 					}
 					else
 					{
-						//��O�̗�Ԃ�Ԃ�
+						//一つ前の列車を返す
 						auto itrPrev = itr;
 						itrPrev--;
 						*pERessyahoukou = itrPrev->aRessyaProperty.getRessyahoukou();
@@ -1662,7 +1662,7 @@ int CDcdAllOperationTable::calcCentDedRessyaOfPoint(
 					{
 						if (KitenJikoku.compare(SearchJikoku, PrevSyuuchakuJikoku) <= 0)
 						{
-							//���̗�Ԃ�Ԃ�
+							//この列車を返す
 							*pERessyahoukou = itr->aRessyaProperty.getRessyahoukou();
 							*piRessyaIdx = itr->aRessyaProperty.getRessyaIndex();
 							iRv = 1;
@@ -1670,7 +1670,7 @@ int CDcdAllOperationTable::calcCentDedRessyaOfPoint(
 						}
 						else
 						{
-							//��O�̗�Ԃ�Ԃ�
+							//一つ前の列車を返す
 							auto itrPrev = itr;
 							itrPrev--;
 							*pERessyahoukou = itrPrev->aRessyaProperty.getRessyahoukou();
@@ -1693,7 +1693,7 @@ int CDcdAllOperationTable::calcCentDedRessyaOfPoint(
 						}
 						if (iDifSihatsu <= iDifPrevSyuuchaku)
 						{
-							//���̗�Ԃ�Ԃ�
+							//この列車を返す
 							*pERessyahoukou = itr->aRessyaProperty.getRessyahoukou();
 							*piRessyaIdx = itr->aRessyaProperty.getRessyaIndex();
 							iRv = 1;
@@ -1701,7 +1701,7 @@ int CDcdAllOperationTable::calcCentDedRessyaOfPoint(
 						}
 						else
 						{
-							//��O�̗�Ԃ�Ԃ�
+							//一つ前の列車を返す
 							auto itrPrev = itr;
 							itrPrev--;
 							*pERessyahoukou = itrPrev->aRessyaProperty.getRessyahoukou();
@@ -1713,7 +1713,7 @@ int CDcdAllOperationTable::calcCentDedRessyaOfPoint(
 				}
 				else if (SearchJikoku.compare(SyuuchakuJikoku, SihatsuJikoku) <= 0)
 				{
-					//���̗�Ԃ�Ԃ�
+					//この列車を返す
 					*pERessyahoukou = itr->aRessyaProperty.getRessyahoukou();
 					*piRessyaIdx = itr->aRessyaProperty.getRessyaIndex();
 					iRv = 1;
@@ -1729,7 +1729,7 @@ int CDcdAllOperationTable::calcCentDedRessyaOfPoint(
 						{
 							if (KitenJikoku.compare(SearchJikoku, SyuuchakuJikoku) <= 0)
 							{
-								//�o���Ԃ�Ԃ�
+								//出区列車を返す
 								*pERessyahoukou = ListOperationTableContent.begin()->aRessyaProperty.getRessyahoukou();
 								*piRessyaIdx = ListOperationTableContent.begin()->aRessyaProperty.getRessyaIndex();
 								iRv = 1;
@@ -1737,7 +1737,7 @@ int CDcdAllOperationTable::calcCentDedRessyaOfPoint(
 							}
 							else
 							{
-								//���̗�Ԃ�Ԃ�
+								//この列車を返す
 								*pERessyahoukou = itr->aRessyaProperty.getRessyahoukou();
 								*piRessyaIdx = itr->aRessyaProperty.getRessyaIndex();
 								iRv = 1;
@@ -1758,7 +1758,7 @@ int CDcdAllOperationTable::calcCentDedRessyaOfPoint(
 							}
 							if (iDifOut <= iDifSyuuchaku)
 							{
-								//�o���Ԃ�Ԃ�
+								//出区列車を返す
 								*pERessyahoukou = ListOperationTableContent.begin()->aRessyaProperty.getRessyahoukou();
 								*piRessyaIdx = ListOperationTableContent.begin()->aRessyaProperty.getRessyaIndex();
 								iRv = 1;
@@ -1766,7 +1766,7 @@ int CDcdAllOperationTable::calcCentDedRessyaOfPoint(
 							}
 							else
 							{
-								//���̗�Ԃ�Ԃ�
+								//この列車を返す
 								*pERessyahoukou = itr->aRessyaProperty.getRessyahoukou();
 								*piRessyaIdx = itr->aRessyaProperty.getRessyaIndex();
 								iRv = 1;
@@ -1801,7 +1801,7 @@ int CDcdAllOperationTable::calcOperationIndexOfPoint(
 
 
 	// ********************************
-	//@name CDcdAllOperationTable-�_�C���O�������W�ƁAIfDcdTarget ��̍��W��ϊ�
+	//@name CDcdAllOperationTable-ダイヤグラム座標と、IfDcdTarget 上の座標を変換
 	// ********************************
 DcdPos CDcdAllOperationTable::XDgrToDcd( IfDcdTarget* pIfDcdTarget , DcdPos posSrc ) 
 {

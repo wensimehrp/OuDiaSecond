@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��:
+(訳:
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h��
+  加えて、特別な例外として、take-okm はこのプログラムのコードを
   "MFC(Microsoft Foundation Class library) Version 9.0"
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -77,10 +77,10 @@ Copyright (C) 2006-2017 take-okm
 #ifndef  CentDedDgrRessya_h
 #define  CentDedDgrRessya_h
 
-#include "NsMu\CMuiCopied.h"
-#include "DcDraw\CDcdFreeLine.h"
+#include "NsMu¥CMuiCopied.h"
+#include "DcDraw¥CDcdFreeLine.h"
 
-#include "..\entDed\CentDedRosen.h"
+#include "..¥entDed¥CentDedRosen.h"
 #include "CentDedDgrEkiCont.h"
 #include "CentDedDgrEkiJikoku.h"
 #include "CentDedDgrRessyasen.h"
@@ -99,185 +99,185 @@ class CentDedDgrDia;
 // ****************************************************************
 /**
 	@brief
-	�y�T�v�z
-	�w�_�C���O�����G���e�B�e�B�N���X�Q�x�́w�_�C���O������ԁx�N���X�ł��B
-	�w��ԁx
+	【概要】
+	『ダイヤグラムエンティティクラス群』の『ダイヤグラム列車』クラスです。
+	『列車』
 
-	���̃N���X�́A
-		- �w�_�C���O������Ԑ��x(CentDedDgrRessyasen)
+	このクラスは、
+		- 『ダイヤグラム列車線』(CentDedDgrRessyasen)
 
-	�I�u�W�F�N�g���܂��܂��B
+	オブジェクトを包含します。
 
-	�y�g�����z
+	【使い方】
 
-	�P�D  �R���X�g���N�^�ŃI�u�W�F�N�g�𐶐�������A
-		readCentDedRessya() ���\�b�h�ŁA �w��ԁx CentDedRessya �I�u�W�F�N�g��
-	���e��ǂݎ���Ă��������B
-		���̊֐��́A�w��ԁx CentDedRessya �ɕ�܂���Ă���e�w��
-	�w�w�����x CentDedEkiJikoku ��ǂݎ���āA
-	�Ή�����w��Ԑ��x CentDedDgrRessyasen �I�u�W�F�N�g��
-	�������A�R���e�i�Ɋi�[���܂��B
+	１．  コンストラクタでオブジェクトを生成した後、
+		readCentDedRessya() メソッドで、 『列車』 CentDedRessya オブジェクトの
+	内容を読み取ってください。
+		この関数は、『列車』 CentDedRessya に包含されている各駅の
+	『駅時刻』 CentDedEkiJikoku を読み取って、
+	対応する『列車線』 CentDedDgrRessyasen オブジェクトを
+	生成し、コンテナに格納します。
 
-	�Q�D  �w�_�C���O������Ԑ��x��
+	２．  『ダイヤグラム列車線』の
 
-	- ��Ԑ��N�_�w�̉wOrder
-	- ��Ԑ��I�_�w�̉wOrder
+	- 列車線起点駅の駅Order
+	- 列車線終点駅の駅Order
 
-	����A CentDedDgrDia::getYZahyouOfEki() �֐����g�����Ƃɂ��A
+	から、 CentDedDgrDia::getYZahyouOfEki() 関数を使うことにより、
 
-	- ��Ԑ��N�_�w�́w�_�C���O�����G���e�B�e�BY���W�x
-	- ��Ԑ��I�_�w�́w�_�C���O�����G���e�B�e�BY���W�x
+	- 列車線起点駅の『ダイヤグラムエンティティY座標』
+	- 列車線終点駅の『ダイヤグラムエンティティY座標』
 
-	�����߂邱�Ƃ��ł��܂��B
-	�������Č��肵���N�_�w��X,Y ���W����I�_�w��X,Y���W�܂ł̒������A
-	���̗�Ԃ̗�Ԑ��ɂȂ�܂��B
+	を求めることができます。
+	こうして決定した起点駅のX,Y 座標から終点駅のX,Y座標までの直線が、
+	その列車の列車線になります。
 	*/
 class CentDedDgrRessya
 {
 private:
 	// ********************************
-	///@name ����
+	///@name 属性
 	// ********************************
 	///@{
 	/**
-		���̗�Ԃ��wNull��ԁx�Ȃ�^�A
-		�L���ȗ�ԑ�����ێ����Ă���̂Ȃ�U�ł��B
+		この列車が『Null状態』なら真、
+		有効な列車属性を保持しているのなら偽です。
 
-		���̑������^�̏ꍇ�A���̑S�Ă̑����E
-		����сA�W��I�u�W�F�N�g�́A�Ӗ��������܂���B
+		この属性が真の場合、他の全ての属性・
+		および、集約オブジェクトは、意味を持ちません。
 
-		�R���X�g���N�^�� readCentDedRessya() �� CentDedRessya �����Ƃ�
-		���܂�܂��B
+		コンストラクタか readCentDedRessya() で CentDedRessya をもとに
+		決まります。
 		*/
 	bool m_bIsNull;
 
 	/**
-		���̗�Ԃ̗�ԕ����������܂��B
+		この列車の列車方向を示します。
 
-		�K��l�� Ressyahoukou_Kudari �ł��B
+		規定値は Ressyahoukou_Kudari です。
 
-		�R���X�g���N�^�� readCentDedRessya() �� CentDedRessya �����Ƃ�
-		���܂�܂��B
+		コンストラクタか readCentDedRessya() で CentDedRessya をもとに
+		決まります。
 		*/
 	ERessyahoukou	m_eRessyahoukou;
 
 	/**
-		���̗�Ԃ́w��Ԏ�ʁx���A
-		�w��Ԏ��Index�x�ŕێ����܂��B
+		この列車の『列車種別』を、
+		『列車種別Index』で保持します。
 
-		�K��l�� 0 �ł��B
+		規定値は 0 です。
 	*/
 	int	m_iRessyasyubetsuIndex;
 
 
 	/**
-		���̗�Ԃ́w��Ԕԍ��x�B
+		この列車の『列車番号』。
 
-		�K��l�͋󕶎���ł��B
+		規定値は空文字列です。
 
-		�R���X�g���N�^�� readCentDedRessya() �� CentDedRessya �����Ƃ�
-		���܂�܂��B
+		コンストラクタか readCentDedRessya() で CentDedRessya をもとに
+		決まります。
 		*/
 	tstring m_strRessyabangou;
 
 	/**
-		���̗�Ԃ́w��Ԗ��x�B
+		この列車の『列車名』。
 
-		�K��l�͋󕶎���ł��B
+		規定値は空文字列です。
 
-		�R���X�g���N�^�� readCentDedRessya() �� CentDedRessya �����Ƃ�
-		���܂�܂��B
+		コンストラクタか readCentDedRessya() で CentDedRessya をもとに
+		決まります。
 		*/
 	tstring m_strRessyamei;
 
 	/**
-		���̗�Ԃ́w�����x�B
+		この列車の『号数』。
 
-		�K��l�͋󕶎���ł��B
+		規定値は空文字列です。
 
-		�R���X�g���N�^�� readCentDedRessya() �� CentDedRessya �����Ƃ�
-		���܂�܂��B
+		コンストラクタか readCentDedRessya() で CentDedRessya をもとに
+		決まります。
 		*/
 	tstring m_strGousuu;
 
 	/**
-		���ׂĂ̗�Ԑ����܂ށA�w�_�C���O�����G���e�B�e�BX���W�x�͈̔́B
-		���̗�Ԃ�NULL�Ȃ�APos=0,Size=0 �ɂȂ�܂��B
+		すべての列車線を含む、『ダイヤグラムエンティティX座標』の範囲。
+		この列車がNULLなら、Pos=0,Size=0 になります。
 
-		�N�_�ƏI�_�ƂŁw�_�C���O�����G���e�B�e�BX���W�x�������̏ꍇ�́A
-		��O�I�ɃT�C�Y��1�ɂȂ�܂��B
+		起点と終点とで『ダイヤグラムエンティティX座標』が同じの場合は、
+		例外的にサイズが1になります。
 	*/
 	CdDcdZone	m_DgrXZone;
 	
 	///@}
 	// ********************************
-	///@name �֘A
+	///@name 関連
 	// ********************************
 	///@{
 	/**
-		���̗�Ԃ��܂���w�_�C���O�����_�C���x�ւ̊֘A�B
+		この列車を包含する『ダイヤグラムダイヤ』への関連。
 
-		���̊֘A�́Am_pCentDedDgrRessyasenCont ����A
-		Mu< CdDedDgrEki >�@�ɃA�N�Z�X���邽�߂ɕK�v�ɂȂ�܂��B
+		この関連は、m_pCentDedDgrRessyasenCont から、
+		Mu< CdDedDgrEki >　にアクセスするために必要になります。
 
-		�R���X�g���N�^�Ō��܂�܂��B
+		コンストラクタで決まります。
 	*/
 	const CentDedDgrDia*	m_pCentDedDgrDia;
 
 	///@}
 private:
 	// ********************************
-	///@name ���
+	///@name 包含
 	// ********************************
 	///@{
 	/**
-		���̗�Ԃ̊e�w�̉w�����B
-		�R���X�g���N�^�� readCentDedRessya() �Ō��܂�܂��B
+		この列車の各駅の駅時刻。
+		コンストラクタか readCentDedRessya() で決まります。
 		*/
 	CMuiCopied< CentDedDgrEkiJikoku > m_MuCentDedDgrEkiJikoku;
 	/**
-		���̗�Ԃ̗�Ԑ��B
-		�R���X�g���N�^�� readCentDedRessya() �Ō��܂�܂��B
+		この列車の列車線。
+		コンストラクタか readCentDedRessya() で決まります。
 		*/
 	CentDedDgrRessyasenCont*	m_pCentDedDgrRessyasenCont;
 
 	/**
-		���̗�Ԃ̊e�w�̔Ԑ��A�y�юn�I���w��ƁB
-		�R���X�g���N�^�� readCentDedRessya() �Ō��܂�܂��B
+		この列車の各駅の番線、及び始終着駅作業。
+		コンストラクタか readCentDedRessya() で決まります。
 	*/
 	//CMuiCopied< CentDedDgrRessyaTrack > m_MuCentDedDgrRessyaTrack;
 	/**
-	���̗�Ԃ̍ݐ����B
-	�R���X�g���N�^�� readCentDedRessya() �Ō��܂�܂��B
+	この列車の在線線。
+	コンストラクタか readCentDedRessya() で決まります。
 	*/
 	CentDedDgrRessyaTrackLineCont*	m_pCentDedDgrRessyaTrackLineCont;
 	///@}
 
 private:
 	// --------------------------------
-	///@name readCentDedRessya() �̉����֐�
+	///@name readCentDedRessya() の下請関数
 	// --------------------------------
 	///@{
 	/**
-		readCentDedRessya() �̉����֐�
+		readCentDedRessya() の下請関数
 
-		(01)CentDedDgrRessya�̑����̂����ACentDedRessya �݂̂Ō��肷�鑮����ݒ�
+		(01)CentDedDgrRessyaの属性のうち、CentDedRessya のみで決定する属性を設定
 	*/
 	void readCentDedRessya_01_readProp(
 		const CentDedRessya* pCentDedRessya/*,
 		const bool bWaitOperationConnect = false*/);
 	/**
-		readCentDedRessya() �̉����֐�
+		readCentDedRessya() の下請関数
 
-		(02)CentDedDgrEkiJikoku �𐶐����A CentDedEkiJikoku �Ō��܂鑮��������B
+		(02)CentDedDgrEkiJikoku を生成し、 CentDedEkiJikoku で決まる属性を決定。
 	*/
 	void readCentDedRessya_02_CreateCentDedEkiJikoku(
 		const CentDedRessya* pCentDedRessya);
 
 	/**
-	readCentDedRessya() �̉����֐�
+	readCentDedRessya() の下請関数
 
-	(02)CentDedDgrRessyaTrack �𐶐����A CentDedRessyaTrack �Ō��܂鑮��������B
+	(02)CentDedDgrRessyaTrack を生成し、 CentDedRessyaTrack で決まる属性を決定。
 	*/
 	//void readCentDedRessya_10_updateXPosNext(
 	//	const CentDedDia* pCentDedDia,
@@ -286,108 +286,108 @@ private:
 	//	const CentDedEkiCont* pCentDedEkiCont);
 
 	/**
-		readCentDedRessya() �̉����֐�
+		readCentDedRessya() の下請関数
 
-		(03)CentDedDgrRessya�̈ȉ��̑������ACentDedDgrEkiJikoku�̑��������Ƃɐ����B
+		(03)CentDedDgrRessyaの以下の属性を、CentDedDgrEkiJikokuの属性をもとに生成。
 
 		CdDcdZone	m_zoneDgrXZahyou
 	*/
 	//void readCentDedRessya_03_updateDgrXZone();
 
 	/**
-		readCentDedRessya() �̉����֐�
+		readCentDedRessya() の下請関数
 
-		(04)CentDedDgrEkijikoku�̈ȉ��̑������ACentDedDgrEki �̑��������ƂɌ���B
-		m_bShouldRessyajouhouDraw //��ԏ������̉w�̏ꏊ�ɕ`�悷��Ȃ�^�ł��B
+		(04)CentDedDgrEkijikokuの以下の属性を、CentDedDgrEki の属性をもとに決定。
+		m_bShouldRessyajouhouDraw //列車情報をこの駅の場所に描画するなら真です。
 
-			��ԏ��`��̏����́A��Ԑ��̑��݂���w�Ԃɂ�����A
-			�ȉ��̂����ꂩ�̏����𖞂����w�ԁB
+			列車情報描画の条件は、列車線の存在する駅間における、
+			以下のいずれかの条件を満たす駅間。
 
-			(1)   [���̗�Ԃ̗�ԏ�񂪂܂�1�ӏ����`�悳��Ă��Ȃ�]�ꍇ�́A
-				��ԏ��`�悪�u�\�����Ȃ��v�ȊO�̉w�ԁB
-			(2)  ��ԏ��`�悪�u��ɕ\���v�̉w��
+			(1)   [この列車の列車情報がまだ1箇所も描画されていない]場合は、
+				列車情報描画が「表示しない」以外の駅間。
+			(2)  列車情報描画が「常に表示」の駅間
 
-		���̏����ɍ�����ԏ��`��ʒu���Ȃ��ꍇ�́A
-		�ŏ��̗�Ԑ��ʒu�ɕ`�悵�܂�(�u�\�����Ȃ��v�ł����Ă�)�B
+		この条件に合う列車情報描画位置がない場合は、
+		最初の列車線位置に描画します(「表示しない」であっても)。
 
-		bIsPropertySame:���̒l��true�̏ꍇ�́A���ɍŏ��̕\�����s���Ă�����̂Ƃ��Ĉ����܂��B
-			�����Ƃ��āA���̗�Ԃ��O�̗�Ԃ���A����Ԑڑ��^�C�v�������Ԉ����Őڑ����Ă���A���A
-			�O��ԂƂ��̗�Ԃ̗�ԕ����������ŁA�O��Ԃ̏I�_�w��肱�̗�Ԃ̎n���w�����ɂ���A�������͓����ꍇ�ɁA
-			���̒l��true�Ƃ��܂��B����́A�J�X�^�}�C�Y�����\��2�̗�Ԃ𓯂��s�ɕ\����������Ɠ����ł��B
+		bIsPropertySame:この値がtrueの場合は、既に最初の表示が行われているものとして扱います。
+			原則として、この列車が前の列車から、次列車接続タイプが同一列車扱いで接続している、かつ、
+			前列車とこの列車の列車方向が同じで、前列車の終点駅よりこの列車の始発駅が後ろにある、もしくは同じ場合に、
+			この値をtrueとします。これは、カスタマイズ時刻表で2つの列車を同じ行に表示する条件と同じです。
 	*/
 	void readCentDedRessya_04_updateShouldRessyajouhouDraw(
 		const Mu<CentDedDgrEkiCont::CdDedDgrEki>* pMuCdDedDgrEki,
 		const bool bRessyajouhouOmit = false);
 
 	/**
-		readCentDedRessya() �̉����֐�
+		readCentDedRessya() の下請関数
 
-		(05)�o�R�Ȃ��̑O��̒���������₤
+		(05)経由なしの前後の着発時刻を補う
 
-		- �A�������o�R�Ȃ��̒��O�ɒ��������Ȃ� AND
-			�o�R�Ȃ��̒���ɒ�����������ꍇ�́A���O�̒�������₢�܂��B
-		- �A�������o�R�Ȃ��̒��O�ɔ��������Ȃ� AND
-			�o�R�Ȃ��̒���ɔ�����������ꍇ�́A���O�̔�������₢�܂��B
+		- 連続した経由なしの直前に着時刻がない AND
+			経由なしの直後に着時刻がある場合は、直前の着時刻を補います。
+		- 連続した経由なしの直前に発時刻がない AND
+			経由なしの直後に発時刻がある場合は、直前の発時刻を補います。
 
-		- �A�������o�R�Ȃ��̒��O�ɒ����������� AND
-			�o�R�Ȃ��̒���ɒ��������Ȃ��ꍇ�́A����̒�������₢�܂��B
-		- �A�������o�R�Ȃ��̒��O�ɔ����������� AND
-			�o�R�Ȃ��̒���ɔ��������Ȃ��ꍇ�́A����̔�������₢�܂��B
+		- 連続した経由なしの直前に着時刻がある AND
+			経由なしの直後に着時刻がない場合は、直後の着時刻を補います。
+		- 連続した経由なしの直前に発時刻がある AND
+			経由なしの直後に発時刻がない場合は、直後の発時刻を補います。
 
 	*/
 	void readCentDedRessya_05_complementKeiyunasiSide();
 
 	/**
-		readCentDedRessya() �̉����֐�
+		readCentDedRessya() の下請関数
 
-		(06_01)�����Ԓ�Ԃ�����
-			(�����Ԓ�Ԃ̒�����=�Ȃ��E������=���� �̉w�ɁA��������₤)
+		(06_01)長時間停車を解決
+			(長時間停車の着時刻=なし・発時刻=あり の駅に、着時刻を補う)
 
-		�ȉ��̉w�����̕��т�T���܂��B
-		- (1)������=����A�w��={���,�ʉ�}�̂����ꂩ
-		- (2)�u������=�Ȃ��A������=�Ȃ��A�w��={�ʉ�,�o�R�Ȃ�}�̂����ꂩ�v��
-			0�ȏ�̕���
-		- (3)������=�Ȃ��A������=���� AND ��Ԃ̏I���w�łȂ�
+		以下の駅時刻の並びを探します。
+		- (1)発時刻=あり、駅扱={停車,通過}のいずれか
+		- (2)「着時刻=なし、発時刻=なし、駅扱={通過,経由なし}のいずれか」の
+			0個以上の並び
+		- (3)着時刻=なし、発時刻=あり AND 列車の終着駅でない
 
-		(1)�̔�����+(1)�`(3)�Ԃ̉w�ԍŏ����v�b����(3)�̔�����-60�b�Ȃ�A@n
-		(3)�̒�����=(1)�̔�����+(1)�`(3)�Ԃ̉w�ԍŏ����v�b��
-		�Ƃ��܂��B
+		(1)の発時刻+(1)〜(3)間の駅間最小所要秒数＜(3)の発時刻-60秒なら、@n
+		(3)の着時刻=(1)の発時刻+(1)〜(3)間の駅間最小所要秒数
+		とします。
 	*/
 	void readCentDedRessya_06_complementLongStop_01(
 		const Mu<CentDedDgrEkiCont::CdDedDgrEki>* pMuCdDedDgrEki);
 
 	/**
-		readCentDedRessya() �̉����֐�
+		readCentDedRessya() の下請関数
 
-		(06_02)�����Ԓ�Ԃ�����
-			(�����Ԓ�Ԃ̒�����=����E������=�Ȃ� �̉w�ɁA��������₤)
+		(06_02)長時間停車を解決
+			(長時間停車の着時刻=あり・発時刻=なし の駅に、発時刻を補う)
 
-		�ȉ��̉w�����̕��т�T���܂��B
+		以下の駅時刻の並びを探します。
 
-		- (1)������=����A������=�Ȃ�
-		- (2)�u������=�Ȃ��A������=�Ȃ��A�w��={�ʉ�,�o�R�Ȃ�}�̂����ꂩ�v��
-			0�ȏ�̕���
-		- (3)������=����A�w��={���,�ʉ�}�̂����ꂩ
+		- (1)着時刻=あり、発時刻=なし
+		- (2)「着時刻=なし、発時刻=なし、駅扱={通過,経由なし}のいずれか」の
+			0個以上の並び
+		- (3)着時刻=あり、駅扱={停車,通過}のいずれか
 
-		(1)�̒�������(3)�̒�����-(1)�`(3)�Ԃ̉w�ԍŏ����v�b��-60�b�Ȃ�A@n
-		(1)�̔�����=(3)�̒�����-(1)�`(3)�Ԃ̉w�ԍŏ����v�b��
-		�Ƃ��܂��B
+		(1)の着時刻＜(3)の着時刻-(1)〜(3)間の駅間最小所要秒数-60秒なら、@n
+		(1)の発時刻=(3)の着時刻-(1)〜(3)間の駅間最小所要秒数
+		とします。
 	*/
 	void readCentDedRessya_06_complementLongStop_02(
 		const Mu<CentDedDgrEkiCont::CdDedDgrEki>* pMuCdDedDgrEki);
 
 	/**
-	(08)CentDedDgrRessyasen�̃R���e�i�𐶐����A
+	(08)CentDedDgrRessyasenのコンテナを生成し、
 		CentDedDgrEkijikoku::m_iDgrXPosOnRessyasen
-	���C��
+	を修正
 	*/
 	void readCentDedRessya_08_updateRessyasenCont(
 		const Mu<CentDedDgrEkiCont::CdDedDgrEki>* pMuCdDedDgrEki);
 
 	/**
-	readCentDedRessya() �̉����֐�
+	readCentDedRessya() の下請関数
 
-	(02)CentDedDgrRessyaTrackLine �̃R���e�i�𐶐�����B
+	(02)CentDedDgrRessyaTrackLine のコンテナを生成する。
 	*/
 	void readCentDedRessya_11_updateRessyaTrackLineCont(
 		const CentDedRessya* pCentDedRessya,
@@ -416,98 +416,98 @@ private:
 	///@}
 
 	// --------------------------------
-	///@name readCentDedRessya_08_updateRessyasenCont() �̉����֐�
+	///@name readCentDedRessya_08_updateRessyasenCont() の下請関数
 	// --------------------------------
 	///@{
 
 	/**
-		readCentDedRessya_08_updateRessyasenCont() �̉����֐��ł��B
+		readCentDedRessya_08_updateRessyasenCont() の下請関数です。
 
-	(01)�w��Ԑ��N�_�wOrder�x��T���܂��B
+	(01)『列車線起点駅Order』を探します。
 
 		@param pCentDedRessya [in]
-		�ΏۂƂȂ��ԃI�u�W�F�N�g���w�肵�ĉ������B
+		対象となる列車オブジェクトを指定して下さい。
 		@param iEkiOrder [in]
-		���̊֐��́A���́w�wOrder�x�ȍ~�ŁA
-		�w��Ԑ��N�_�wOrder�x��T���܂��B
+		この関数は、この『駅Order』以降で、
+		『列車線起点駅Order』を探します。
 		@param piRessyasenKitenEkiOrder [out]
-		���̊֐��́A����������A
-		�w��Ԑ��N�_�wOrder�x�����̕ϐ��ɏ������݂܂��B
+		この関数は、成功したら、
+		『列車線起点駅Order』をこの変数に書き込みます。
 		@return
-		����������A0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	0 ;	//	�w��Ԑ��N�_�wOrder�x���݂���܂����B
-		-	-1 ;	//	iEkiOrder �ȍ~�ŁA��Ԑ��N�_�w������܂���B
+		成功したら、0以上、エラーなら負の数です。
+		-	0 ;	//	『列車線起点駅Order』がみつかりました。
+		-	-1 ;	//	iEkiOrder 以降で、列車線起点駅がありません。
 
 
-		�w��Ԑ��N�_�wOrder�x�̏����́A
-		�u�������E�������̂����ꂩ���w�肳��Ă��� AND
-		���́w�wOrder�x�̉w�����w��ԁx���w�ʉ߁x�v
+		『列車線起点駅Order』の条件は、
+		「着時刻・発時刻のいずれかが指定されている AND
+		次の『駅Order』の駅扱が『停車』か『通過』」
 	*/
 	int updateRessyasenCont_01_calcRessyasenKiten(
 		int iEkiOrder,
 		int* piRessyasenKitenEkiOrder);
 
 	/**
-		readCentDedRessya_08_updateRessyasenCont() �̉����֐��ł��B
+		readCentDedRessya_08_updateRessyasenCont() の下請関数です。
 
-		(02)�w��Ԑ��N�_�wOrder�x�ɑΉ�����w��Ԑ��I�_�wOrder�x���������܂��B
+		(02)『列車線起点駅Order』に対応する『列車線終点駅Order』を検索します。
 
-		�@	(1)�@�w��Ԑ��I�_�wOrder�x�̏����́A
-		�u�������E�������̗������w�肳��Ă���v OR
-		�u ���̉w�̉w�������w�^�s�Ȃ��x �v OR
-		�u�u�w�wOrder�x���A���̗�Ԃɂ�����̏I���w�v
-		�@	�Ώۉw���݂���Ȃ���΁A��Ԑ��I�_�wOrder�̌���͎��s�ƂȂ�܂�
-			(�o�R�Ȃ��̒��O�́A��Ԑ��̏I�_�ɂ͂Ȃ�܂���
-			  �@(���̎��_�ł̗�Ԑ��N�_�ƏI�_�́A�o�R�Ȃ����܂������Ƃ�����܂��B)
+		　	(1)　『列車線終点駅Order』の条件は、
+		「着時刻・発時刻の両方が指定されている」 OR
+		「 次の駅の駅扱いが『運行なし』 」 OR
+		「「『駅Order』が、その列車におけるの終着駅」
+		　	対象駅がみつからなければ、列車線終点駅Orderの決定は失敗となります
+			(経由なしの直前は、列車線の終点にはなりません
+			  　(この時点での列車線起点と終点は、経由なしをまたぐことがあります。)
 
-		�@	(2)�@���̎��_�ŁA�w��Ԑ��I�_�wOrder�x�ɒ���������������
-		�ݒ肳��Ă��Ȃ��ꍇ�́A
-		�n���w�����Ɍ������āA�������E�������̂����ꂩ���w�肳��Ă���
-		�w���������܂��B
-	�@		���̌��ʁw��Ԑ��I�_�wOrder�x�ɑ�������w���Ȃ��ꍇ�́A
-		��Ԑ��I�_�wOrder�̌���͎��s�ƂȂ�܂��B
+		　	(2)　この時点で、『列車線終点駅Order』に着時刻も発時刻も
+		設定されていない場合は、
+		始発駅方向に向かって、着時刻・発時刻のいずれかが指定されている
+		駅を検索します。
+	　		この結果『列車線終点駅Order』に相当する駅がない場合は、
+		列車線終点駅Orderの決定は失敗となります。
 
 		@param iRessyasenKitenEkiOrder [in]
-		�w��Ԑ��N�_�wOrder�x���w�肵�ĉ������B
+		『列車線起点駅Order』を指定して下さい。
 		@param piRessyasenSyuutenEkiOrder [out]
-		���̊֐��́A����������A
-		�w��Ԑ��I�_�wOrder�x�����̕ϐ��ɏ������݂܂��B
+		この関数は、成功したら、
+		『列車線終点駅Order』をこの変数に書き込みます。
 		@return
-		����������A0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	0 ;	//	�w��Ԑ��I�_�wOrder�x���݂���܂����B
-		-	-1 ;	//	��Ԑ��I�_�w������܂���B
-					//	���̋�ԂɊւ��ẮA��Ԑ����쐬�ł��܂���B
+		成功したら、0以上、エラーなら負の数です。
+		-	0 ;	//	『列車線終点駅Order』がみつかりました。
+		-	-1 ;	//	列車線終点駅がありません。
+					//	この区間に関しては、列車線を作成できません。
 		*/
 	int updateRessyasenCont_02_calcRessyasenSyuuten(
 		int iRessyasenKitenEkiOrder,
 		int* piRessyasenSyuutenEkiOrder);
 
 	/**
-		readCentDedRessya_08_updateRessyasenCont() �̉����֐��ł��B
+		readCentDedRessya_08_updateRessyasenCont() の下請関数です。
 
-		(04)�w�_�C���O������Ԑ��x�I�u�W�F�N�g����
-		�w��Ԑ��N�_�wOrder�x�Ɓw��Ԑ��I�_�wOrder�x�̊Ԃ�
-		�r���w�ŁA
+		(04)『ダイヤグラム列車線』オブジェクト内の
+		『列車線起点駅Order』と『列車線終点駅Order』の間の
+		途中駅で、
 
-		�u�������E�������̂����ꂩ���w�肳��Ă����v�w�vOR
+		「着時刻・発時刻のいずれかが指定されている主要駅」OR
 
-		�u�ʉ߉w�ŁA
-		���������������̂����ꂩ���w�肳��Ă���v
+		「通過駅で、
+		着時刻か発時刻のいずれかが指定されている」
 
-			������΁A
-		������w��Ԑ��I�_�wOrder�x�ɂ��܂��B
+			があれば、
+		それを『列車線終点駅Order』にします。
 
 		@param pMuCdDedDgrEki [in]
-		�w�_�C���O�����w�x���ւ̃C���^�[�t�F�[�X���w�肵�ĉ������B
+		『ダイヤグラム駅』情報へのインターフェースを指定して下さい。
 		@param iRessyasenKitenEkiOrder [in]
-		�w��Ԑ��N�_�wOrder�x���w�肵�ĉ������B
+		『列車線起点駅Order』を指定して下さい。
 		@param piRessyasenSyuutenEkiOrder [in,out]
-		�w��Ԑ��I�_�wOrder�x���w�肵�Ă��������B
-		���̊֐��́A����������A���̒l���㏑���C�����܂��B
+		『列車線終点駅Order』を指定してください。
+		この関数は、成功したら、この値を上書き修正します。
 		@return
-		����������A0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	0 ;	//	�w��Ԑ��I�_�wOrder�x�̕␳�̕K�v�͂���܂���ł����B
-		-	1 ;	//	�w��Ԑ��I�_�wOrder�x�̕␳���s���܂����B
+		成功したら、0以上、エラーなら負の数です。
+		-	0 ;	//	『列車線終点駅Order』の補正の必要はありませんでした。
+		-	1 ;	//	『列車線終点駅Order』の補正を行いました。
 		*/
 	int updateRessyasenCont_04_adjustRessyasenSyuuten4(
 		const Mu<CentDedDgrEkiCont::CdDedDgrEki>* pMuCdDedDgrEki,
@@ -516,68 +516,68 @@ private:
 
 
 	/**
-		readCentDedRessya_08_updateRessyasenCont() �̉����֐��ł��B
+		readCentDedRessya_08_updateRessyasenCont() の下請関数です。
 
-		(05)�w��Ԑ��R���e�i CentDedDgrRessyasenCont �x�̖�����
-		�w��Ԑ� CentDedDgrRessyasen�x�̓r���w�̒��ŁA
-		��Ԑ��̈ʒu(CentDedDgrEkiJikoku::m_iDgrXPosRessyasen)��
-		�������E������(CentDedDgrEkiJikoku::m_iDgrXPosChaku,m_iDgrXPosHatsu)��
-		����60 �b�ȏ゠��ꍇ�́A���̉w���w��Ԑ��I�_�wOrder�x�Ƃ��܂��B
+		(05)『列車線コンテナ CentDedDgrRessyasenCont 』の末尾の
+		『列車線 CentDedDgrRessyasen』の途中駅の中で、
+		列車線の位置(CentDedDgrEkiJikoku::m_iDgrXPosRessyasen)と
+		着時刻・発時刻(CentDedDgrEkiJikoku::m_iDgrXPosChaku,m_iDgrXPosHatsu)の
+		差が60 秒以上ある場合は、その駅を『列車線終点駅Order』とします。
 		@param pCentDedDgrRessyasen [in,out]
-		�w��Ԑ��I�_�wOrder�x���w�肵�Ă��������B
-		���̊֐��́A����������A���̒l���㏑���C�����܂��B
+		『列車線終点駅Order』を指定してください。
+		この関数は、成功したら、この値を上書き修正します。
 		@return
-		����������A0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	0 ;	//	�w��Ԑ��I�_�wOrder�x�̕␳�̕K�v�͂���܂���ł����B
-		-	1 ;	//	�w��Ԑ��I�_�wOrder�x�̕␳���s���܂����B
+		成功したら、0以上、エラーなら負の数です。
+		-	0 ;	//	『列車線終点駅Order』の補正の必要はありませんでした。
+		-	1 ;	//	『列車線終点駅Order』の補正を行いました。
 		*/
 	int updateRessyasenCont_05_adjustRessyasenSyuuten5(
 		int* piRessyasenSyuutenEkiOrder);
 
 	/**
-		readCentDedRessya_08_updateRessyasenCont()�̉����֐��ł��B
+		readCentDedRessya_08_updateRessyasenCont()の下請関数です。
 
-		(06)�R���e�i�����̗�Ԑ����r���Ɂu�o�R�Ȃ��v���܂ޏꍇ�A
-		���̗�Ԑ����u�o�R�Ȃ��v�܂łɒZ�k���܂��B
+		(06)コンテナ末尾の列車線が途中に「経由なし」を含む場合、
+		その列車線を「経由なし」までに短縮します。
 
-		- (1)�u�o�R�Ȃ��v���O�̉w�E����̉w�̒��E���������u��Ԑ��w�����v
-			�ɒu�������܂��B
-		- (2)��Ԑ��́u�o�R�Ȃ��v���O�܂łɒZ�k���܂��B
-		- (3)��Ԑ��I�_���u�o�R�Ȃ��v�̒��O�Ƃ��܂��B
+		- (1)「経由なし」直前の駅・直後の駅の着・発時刻を「列車線駅時刻」
+			に置き換えます。
+		- (2)列車線は「経由なし」直前までに短縮します。
+		- (3)列車線終点を「経由なし」の直前とします。
 
 
 		@param pCentDedDgrRessyasen [in,out]
-		�w��Ԑ��I�_�wOrder�x���w�肵�Ă��������B
-		���̊֐��́A����������A���̒l���㏑���C�����܂��B
+		『列車線終点駅Order』を指定してください。
+		この関数は、成功したら、この値を上書き修正します。
 		@return
-		����������A0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	0 ;	//	�w��Ԑ��x�w�w�����x�w�I�_�wOrder�x�̕␳�̕K�v��
-			����܂���ł����B
-		-	1 ;	//	�w��Ԑ��x�w�w�����x�w�I�_�wOrder�x�̕␳���s���܂����B
+		成功したら、0以上、エラーなら負の数です。
+		-	0 ;	//	『列車線』『駅時刻』『終点駅Order』の補正の必要は
+			ありませんでした。
+		-	1 ;	//	『列車線』『駅時刻』『終点駅Order』の補正を行いました。
 	*/
 	int updateRessyasenCont_06_reduceToKeiyunasi(
 		int* piRessyasenSyuutenEkiOrder);
 
 	/**
-	readCentDedRessya_08_updateRessyasenCont()�̉����֐��ł��B
+	readCentDedRessya_08_updateRessyasenCont()の下請関数です。
 
-	(07)�R���e�i�����̗�Ԑ����r���Ɂu�ݐ��\�\���w�v���܂ޏꍇ�A
-		//	���̗�Ԑ����u�ݐ��\�\���w�v�܂łɒZ�k���܂��B
+	(07)コンテナ末尾の列車線が途中に「在線表表示駅」を含む場合、
+		//	その列車線を「在線表表示駅」までに短縮します。
 
-	- (1)�u�ݐ��\�\���w�v�̒��E���������u��Ԑ��w�����v��
-			�u�������܂��B
-	- (2)��Ԑ��́u�ݐ��\�\���w�v�܂łɒZ�k���܂��B
-	- (3)��Ԑ��I�_���u�ݐ��\�\���w�v�Ƃ��܂��B
+	- (1)「在線表表示駅」の着・発時刻を「列車線駅時刻」に
+			置き換えます。
+	- (2)列車線は「在線表表示駅」までに短縮します。
+	- (3)列車線終点を「在線表表示駅」とします。
 
 
 	@param pCentDedDgrRessyasen [in,out]
-	�w��Ԑ��I�_�wOrder�x���w�肵�Ă��������B
-	���̊֐��́A����������A���̒l���㏑���C�����܂��B
+	『列車線終点駅Order』を指定してください。
+	この関数は、成功したら、この値を上書き修正します。
 	@return
-	����������A0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-	-	0 ;	//	�w��Ԑ��x�w�w�����x�w�I�_�wOrder�x�̕␳�̕K�v��
-	����܂���ł����B
-	-	1 ;	//	�w��Ԑ��x�w�w�����x�w�I�_�wOrder�x�̕␳���s���܂����B
+	成功したら、0以上、エラーなら負の数です。
+	-	0 ;	//	『列車線』『駅時刻』『終点駅Order』の補正の必要は
+	ありませんでした。
+	-	1 ;	//	『列車線』『駅時刻』『終点駅Order』の補正を行いました。
 	*/
 	int updateRessyasenCont_07_reduceToTrackDisplay(
 		const Mu<CentDedDgrEkiCont::CdDedDgrEki>* pMuCdDedDgrEki,
@@ -586,25 +586,25 @@ private:
 	
 public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	/**
-		readCentDedRessya() ���s���܂��B
+		readCentDedRessya() を行います。
 		@param pCentDedRosen [in]
-		CentDedRessya �I�u�W�F�N�g���܂��Ă���
-		CentDedRosen �I�u�W�F�N�g���w�肵�Ă��������B
-		���̃I�u�W�F�N�g�́A��Ԏ�ʂɊւ��鑮��
+		CentDedRessya オブジェクトを包含している
+		CentDedRosen オブジェクトを指定してください。
+		このオブジェクトは、列車種別に関する属性
 		- m_CdLineProp
 		- m_CdDrawTextProp
-		�����肷��̂Ɏg���܂��B
+		を決定するのに使います。
 		@param pCentDedDgrDia [in]
-		this ���܂��Ă���w�_�C���O�����w�x�I�u�W�F�N�g��
-		�w�_�C���x�I�u�W�F�N�g���w�肵�Ă��������B
-		���̃I�u�W�F�N�g�́A�w�Ԃ̊T�Z���v���������߂�̂Ɏg���܂��B
+		this を包含している『ダイヤグラム駅』オブジェクトの
+		『ダイヤ』オブジェクトを指定してください。
+		このオブジェクトは、駅間の概算所要時分を求めるのに使います。
 		@param pCentDedRessya [in]
-		�ΏۂƂȂ��ԃI�u�W�F�N�g���w�肵�Ă��������B
+		対象となる列車オブジェクトを指定してください。
 	@param bSimplifyRead
-		�ǂݎ��̓��A����ԗ��݂��ȗ����܂��B
+		読み取りの内、次列車絡みを省略します。
 	*/
 	CentDedDgrRessya(
 		const CentDedRosen* pCentDedRosen,
@@ -615,30 +615,30 @@ public:
 		const bool bWaitOperationConnect = false);
 
 	/**
-		NULL �̗�Ԃ𐶐����܂��B
+		NULL の列車を生成します。
 		@param pCentDedDgrDia [in]
-		this ���܂��Ă���w�_�C���O�����w�x�I�u�W�F�N�g��
-		�w�_�C���x�I�u�W�F�N�g���w�肵�Ă��������B
-		���̃I�u�W�F�N�g�́A�w�Ԃ̊T�Z���v���������߂�̂Ɏg���܂��B
+		this を包含している『ダイヤグラム駅』オブジェクトの
+		『ダイヤ』オブジェクトを指定してください。
+		このオブジェクトは、駅間の概算所要時分を求めるのに使います。
 	*/
 	CentDedDgrRessya(
 		const CentDedDgrDia* pCentDedDgrDia);
 
 	/**
-		�R�s�[�R���X�g���N�^�Ŏw��ł���̂́A
-		���� m_pCentDedDgrDia ������ԂɌ��肳��܂��B
+		コピーコンストラクタで指定できるのは、
+		同じ m_pCentDedDgrDia を持つ列車に限定されます。
 	*/
 	CentDedDgrRessya(const CentDedDgrRessya& value);
 private:
 	CentDedDgrRessya& operator=(const CentDedDgrRessya& value);
 public:
-	virtual ~CentDedDgrRessya();
+	virtual ‾CentDedDgrRessya();
 
 	// ********************************
 	//	CentDedDgrRessya
 	// ********************************
 		// ********************************
-		///@name CentDedDgrRessya-����
+		///@name CentDedDgrRessya-属性
 		// ********************************
 		///@{
 	bool getIsNull()const;
@@ -656,16 +656,16 @@ public:
 	CdDcdZone	getDgrXZone()const;
 	///@}
 	// ********************************
-	///@name �֘A
+	///@name 関連
 	// ********************************
 	///@{
 	/**
-		���̗�Ԃ��܂���w�_�C���O�����_�C���x�ւ̊֘A�B
+		この列車を包含する『ダイヤグラムダイヤ』への関連。
 
-		m_pCentDedDgrRessyasenCont ��
-		CentDedEkiCont �ւ̊֘A��K�v�Ƃ��܂��B
+		m_pCentDedDgrRessyasenCont が
+		CentDedEkiCont への関連を必要とします。
 
-		�R���X�g���N�^�Ō��܂�܂��B
+		コンストラクタで決まります。
 	*/
 	const CentDedDgrDia*	getCentDedDgrDia()const
 	{
@@ -675,7 +675,7 @@ public:
 	///@}
 
 	// ********************************
-	///@name CentDedDgrRessya-���
+	///@name CentDedDgrRessya-包含
 	// ********************************
 	///@{
 	Mu< CentDedDgrEkiJikoku* >* getMuCentDedDgrEkiJikoku();
@@ -688,39 +688,39 @@ public:
 	const Mu< const CentDedDgrRessyaTrackLine* >* getCentDedDgrRessyaTrackLineCont()const;
 	///@}
 	// ********************************
-	///@name CentDedDgrRessya-����
+	///@name CentDedDgrRessya-操作
 	// ********************************
 	///@{
 	/**
-		���ׂĂ̑����E��܃I�u�W�F�N�g���N���A���܂��B
-		���̗�Ԃ́A NULL �ƂȂ�܂��B
+		すべての属性・包含オブジェクトをクリアします。
+		この列車は、 NULL となります。
 	*/
 	void clear();
 
 
 	/**
-		CentDedRessya �I�u�W�F�N�g�̓��e�����ƂɁA
-		this �̑����E�y�� �w�_�C���O������Ԑ��x (CentDedDgrRessyasen)
-		�I�u�W�F�N�g�𐶐����܂��B
+		CentDedRessya オブジェクトの内容をもとに、
+		this の属性・及び 『ダイヤグラム列車線』 (CentDedDgrRessyasen)
+		オブジェクトを生成します。
 		@param pCentDedRosen [in]
-		CentDedRessya �I�u�W�F�N�g���܂��Ă���
-		CentDedRosen �I�u�W�F�N�g���w�肵�Ă��������B
-		���̃I�u�W�F�N�g�́A��Ԏ�ʂɊւ��鑮��
+		CentDedRessya オブジェクトを包含している
+		CentDedRosen オブジェクトを指定してください。
+		このオブジェクトは、列車種別に関する属性
 		- m_CdLineProp
 		- m_CdDrawTextProp
-		�����肷��̂Ɏg���܂��B
+		を決定するのに使います。
 		@param pCentDedDia [in]
-		CentDedRessya �I�u�W�F�N�g���܂��Ă���
-		CentDedDia �I�u�W�F�N�g���w�肵�Ă��������B
-		���̃I�u�W�F�N�g�́A����ԊJ�n�����̐ݒ�Ɏg���܂��B
+		CentDedRessya オブジェクトを包含している
+		CentDedDia オブジェクトを指定してください。
+		このオブジェクトは、次列車開始時刻の設定に使います。
 		@param pCentDedDgrDia [in]
-		this ���܂��Ă���w�_�C���O�����w�x�I�u�W�F�N�g��
-		�w�_�C���x�I�u�W�F�N�g���w�肵�Ă��������B
-		���̃I�u�W�F�N�g�́A�w�Ԃ̊T�Z���v���������߂�̂Ɏg���܂��B
+		this を包含している『ダイヤグラム駅』オブジェクトの
+		『ダイヤ』オブジェクトを指定してください。
+		このオブジェクトは、駅間の概算所要時分を求めるのに使います。
 		@param pCentDedRessya [in]
-		�ΏۂƂȂ��ԃI�u�W�F�N�g���w�肵�Ă��������B
+		対象となる列車オブジェクトを指定してください。
 	@param bSimplifyRead
-		�ǂݎ��̓��A����ԗ��݂��ȗ����܂��B
+		読み取りの内、次列車絡みを省略します。
 		*/
 	virtual int readCentDedRessya(
 		const CentDedRosen* pCentDedRosen,
@@ -732,57 +732,57 @@ public:
 
 	/**
 		@return
-		���̗�Ԃ̎n���w�́w�wOrder�x��Ԃ��܂��B
-		���ׂẮw�w�����x���w�^�s�Ȃ��x�̏ꍇ�́A-1 ��Ԃ��܂��B
-		���̏ꍇ�A���̗�Ԏ��̂��w�^�s�Ȃ��x�ƂȂ�܂��B
+		この列車の始発駅の『駅Order』を返します。
+		すべての『駅時刻』が『運行なし』の場合は、-1 を返します。
+		この場合、この列車自体が『運行なし』となります。
 		*/
 	int getSihatsuEki()const;
 
 	/**
 		@return
-		���̗�Ԃ̏I���w�́w�wOrder�x��Ԃ��܂��B
-		���ׂẮw�w�����x���w�^�s�Ȃ��x�̏ꍇ�́A-1 ��Ԃ��܂��B
-		���̏ꍇ�A���̗�Ԏ��̂��w�^�s�Ȃ��x�ƂȂ�܂��B
+		この列車の終着駅の『駅Order』を返します。
+		すべての『駅時刻』が『運行なし』の場合は、-1 を返します。
+		この場合、この列車自体が『運行なし』となります。
 		*/
 	int getSyuuchakuEki()const;
 
 	/**
-		��Ԃ��w��� �w�wOrder�x�ƁA���́w�wOrder�x�̊Ԃ�
-		�^�s���Ă��邩�ۂ��𒲂ׂ܂��B
+		列車が指定の 『駅Order』と、次の『駅Order』の間を
+		運行しているか否かを調べます。
 
-		�u�w��� �w�wOrder�x�ƁA���́w�wOrder�x�̊Ԃ�
-		�^�s���Ă���v�́A
-		�w��� �w�wOrder�x�ƁA���́w�wOrder�x�̗�����
-		�w��ԁx�܂��́w�ʉ߁x�̏ꍇ���A����ɊY�����܂��B
-		�_�C���O�����r���[�ł́A���̗�Ԃ̂��̉w�Ԃɂ͗�Ԑ���
-		�`�悳��܂��B
+		「指定の 『駅Order』と、次の『駅Order』の間を
+		運行している」は、
+		指定の 『駅Order』と、次の『駅Order』の両方が
+		『停車』または『通過』の場合が、これに該当します。
+		ダイヤグラムビューでは、この列車のこの駅間には列車線が
+		描画されます。
 
 	@param iEkiOrder [in]
-		�ΏۂƂȂ�w�Ԃ̋N�_���́w�wOrder�x���w�肵�Ă��������B
-		�͈͂́A0�ȏ�A(�w�̐�-1)�����ł��B
+		対象となる駅間の起点側の『駅Order』を指定してください。
+		範囲は、0以上、(駅の数-1)未満です。
 	@return
-		��Ԃ� iEkiOrder �Ǝ��̉w�̊Ԃ��^�s���Ă���Ȃ� true �ł��B
-		�����łȂ��ꍇ�́A false �ł��B
-		�������͈͊O�̏ꍇ���Afalse �ł��B
+		列車が iEkiOrder と次の駅の間を運行しているなら true です。
+		そうでない場合は、 false です。
+		引数が範囲外の場合も、false です。
 	@attention
-		�ǂ��炩�̉w�E�܂��͗����̉w���w�o�R�Ȃ��x�̏ꍇ�́A
-		�u�w�̊Ԃ��^�s���Ă���v�Ƃ݂͂Ȃ��܂���B
-		���̏ꍇ�A���̃��\�b�h�̖߂�l�͋U�ƂȂ�܂��B
+		どちらかの駅・または両方の駅が『経由なし』の場合は、
+		「駅の間を運行している」とはみなしません。
+		この場合、このメソッドの戻り値は偽となります。
 	*/
 	bool isRunBetweenNextEki(int iEkiOrder)const;
 
 	/**
-		�w��̂Q�̉w�Ԃ̊Ԃ́A�w�ԍŏ����v�b�����Z�o���܂��B
-		�^�s�Ȃ��E�o�R�Ȃ��̉w��(�_�C���O������Ԑ��̕`�悳��Ȃ��w��)��
-		���v�b���͊܂݂܂���B
+		指定の２つの駅間の間の、駅間最小所要秒数を算出します。
+		運行なし・経由なしの駅間(ダイヤグラム列車線の描画されない駅間)の
+		所要秒数は含みません。
 	@param pMuCdDedDgrEki [in]
-		�w�̏��̃}���`�I�u�W�F�N�g���w�肵�Ă��������B
+		駅の情報のマルチオブジェクトを指定してください。
 	@param iEkiOrderBefore [in]
-		�n���w���̉wOrder���w�肵�Ă��������B
+		始発駅寄りの駅Orderを指定してください。
 	@param iEkiOrderAfter [in]
-		�I���w���̉wOrder���w�肵�Ă��������B
+		終着駅寄りの駅Orderを指定してください。
 	@return
-		�ŏ����v�b���̘a��Ԃ��܂��B
+		最小所要秒数の和を返します。
 	*/
 	int calcEkikanSaisyouSec(
 		const Mu<CentDedDgrEkiCont::CdDedDgrEki>* pMuCdDedDgrEki,
@@ -790,18 +790,18 @@ public:
 		int iEkiOrderAfter)const;
 
 	/**
-		�w��̂Q�̉w�̉w�Ԃ́ADgrY���W�����Z�o���܂��B
-		�^�s�Ȃ��E�o�R�Ȃ��̉w��(�_�C���O������Ԑ��̕`�悳��Ȃ��w��)�E
-		�w��DgrY���W�T�C�Y(��Ԑ����`�悳��Ȃ��̈�)��
-		�܂݂܂���B
+		指定の２つの駅の駅間の、DgrY座標幅を算出します。
+		運行なし・経由なしの駅間(ダイヤグラム列車線の描画されない駅間)・
+		駅のDgrY座標サイズ(列車線が描画されない領域)は
+		含みません。
 	@param pMuCdDedDgrEki [in]
-		�w�̏��̃}���`�I�u�W�F�N�g���w�肵�Ă��������B
+		駅の情報のマルチオブジェクトを指定してください。
 	@param iEkiOrderBefore [in]
-		�n���w���̉wOrder���w�肵�Ă��������B
+		始発駅寄りの駅Orderを指定してください。
 	@param iEkiOrderAfter [in]
-		�I���w���̉wOrder���w�肵�Ă��������B
+		終着駅寄りの駅Orderを指定してください。
 	@return
-		�ŏ����v�b���̘a��Ԃ��܂��B
+		最小所要秒数の和を返します。
 	*/
 	int calcDgrYEkikanSize(
 		const Mu<CentDedDgrEkiCont::CdDedDgrEki>* pMuCdDedDgrEki,
@@ -810,80 +810,80 @@ public:
 
 
 	/**
-		���ׂẮw�_�C���O�����w�����x�I�u�W�F�N�g��
-		�w�_�C���O�����G���e�B�e�BX���W�x�����Z�E���Z���܂�(NULL������ INT_MIN �͏����B
+		すべての『ダイヤグラム駅時刻』オブジェクトの
+		『ダイヤグラムエンティティX座標』を加算・減算します(NULLを示す INT_MIN は除く。
 		@param iSeconds [in]
-		���Z�E���Z����l�i�b���E�w�_�C���O�����G���e�B�e�BX���W�x�j
-		���w�肵�ĉ������B
+		加算・減算する値（秒数・『ダイヤグラムエンティティX座標』）
+		を指定して下さい。
 		*/
 	virtual void modifyDgrXPos(int iSeconds);
 
 
 	/**
-		�w��Ԑ��x�I�u�W�F�N�g�����Ƃɂ��āA
-		�w����Order�x�ɑΉ�����	�w�_�C���O�����G���e�B�e�BX���W�x���擾���܂��B
+		『列車線』オブジェクトをもとにして、
+		『時刻Order』に対応する	『ダイヤグラムエンティティX座標』を取得します。
 		@param aCdDcdJikokuOrder [in]
-		�w����Order�x���w�肵�ĉ������B
+		『時刻Order』を指定して下さい。
 		@param piDgrXPos [out]
-		���̊֐��́A����������A
-		�w����Order�x�ɑΉ�����A�w�_�C���O�����G���e�B�e�BX���W�x��
-		���̃A�h���X�ɏ������݂܂��i���̐��̏ꍇ������܂��j�B
+		この関数は、成功したら、
+		『時刻Order』に対応する、『ダイヤグラムエンティティX座標』を
+		このアドレスに書き込みます（負の数の場合があります）。
 		@return
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	-1 ;	//	��Ԃ��w��́w����Order�x���܂�
-		�w��Ԑ��x�I�u�W�F�N�g���������Ă��܂���B
+		成功したら 0 以上、エラーなら負の数です。
+		-	-1 ;	//	列車が指定の『時刻Order』を含む
+		『列車線』オブジェクトを所持していません。
 
-		�w��́w����Order�x���(������)�ŁA���ꂪ�w�_�C���O������Ԑ��x��
-		�N�_�ɂȂ��Ă���ꍇ�E�E�E
-		�w�_�C���O������Ԑ��x�̋N�_�̉w����
+		指定の『時刻Order』が奇数(発時刻)で、それが『ダイヤグラム列車線』の
+		起点になっている場合・・・
+		『ダイヤグラム列車線』の起点の駅時刻
 
-		�w��́w����Order�x���w�_�C���O������Ԑ��x��
-		���ԓ_�ɂȂ��Ă���ꍇ�E�E�E
-		���́w����Order�x���w�wOrder�x�ɕϊ����A��Ԑ���̍��W�����Ƃ�
-		�T�Z���������B
+		指定の『時刻Order』が『ダイヤグラム列車線』の
+		中間点になっている場合・・・
+		その『時刻Order』を『駅Order』に変換し、列車線上の座標をもとに
+		概算した時刻。
 
-		�w��́w����Order�x�������ŁA���ꂪ�w�_�C���O������Ԑ��x��
-		�I�_�ɂȂ��Ă���ꍇ�E�E�E
-		�w�_�C���O������Ԑ��x�̏I�_�̉w����
+		指定の『時刻Order』が偶数で、それが『ダイヤグラム列車線』の
+		終点になっている場合・・・
+		『ダイヤグラム列車線』の終点の駅時刻
 
 	@todo
-		�߂�l�̎d�l��ύX���܂��BpiDgrXPos��߂�l�ɂ��A�����͌��炵�܂��B
+		戻り値の仕様を変更します。piDgrXPosを戻り値にし、引数は減らします。
 	*/
 	virtual int getDgrXPosOfJikokuOrder(
 		CdDedJikokuOrder aCdDedJikokuOrder,
 		int* piDgrXPos)const;
 
 	/**
-		�w��Ԑ��x�I�u�W�F�N�g�����Ƃɂ��āA
-		�w�wOrder�x�ɑΉ�����A��������
-		�w�_�C���O�����G���e�B�e�BX���W�x���擾���܂��B
+		『列車線』オブジェクトをもとにして、
+		『駅Order』に対応する、発時刻の
+		『ダイヤグラムエンティティX座標』を取得します。
 		@param iEkiOrder [in]
-		�w�wOrder�x���w�肵�ĉ������B
+		『駅Order』を指定して下さい。
 		@param piDgrXPos [out]
-		���̊֐��́A����������A
-		�w�wOrder�x�ɑΉ�����A�w�_�C���O�����G���e�B�e�BX���W�x��
-		���̃A�h���X�ɏ������݂܂��i���̐��̏ꍇ������܂��j�B
+		この関数は、成功したら、
+		『駅Order』に対応する、『ダイヤグラムエンティティX座標』を
+		このアドレスに書き込みます（負の数の場合があります）。
 		@return
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	-1 ;	//	��Ԃ��w��́w�wOrder�x���܂�
-		�w��Ԑ��x�I�u�W�F�N�g���������Ă��܂���B
+		成功したら 0 以上、エラーなら負の数です。
+		-	-1 ;	//	列車が指定の『駅Order』を含む
+		『列車線』オブジェクトを所持していません。
 
-		���̊֐��́A�_�C���O������Ɂw��ԏ��x��
-		�`�悷��ہA�e�L�X�g�̈ʒu�����߂�̂Ɏg�����Ƃ�
-		�z�肵�Ă��܂��B
-		���̊֐����Ԃ��l�́A�ȉ��̃��[���ɑ���܂��B
+		この関数は、ダイヤグラム上に『列車情報』を
+		描画する際、テキストの位置を決めるのに使うことを
+		想定しています。
+		この関数が返す値は、以下のルールに則ります。
 
-		�w��́w�wOrder�x���w�_�C���O������Ԑ��x��
-		�N�_�ɂȂ��Ă���ꍇ�E�E�E
-		�w�_�C���O������Ԑ��x�̋N�_�̉w����
+		指定の『駅Order』が『ダイヤグラム列車線』の
+		起点になっている場合・・・
+		『ダイヤグラム列車線』の起点の駅時刻
 
-		�w��́w�wOrder�x���w�_�C���O������Ԑ��x��
-		���ԓ_�ɂȂ��Ă���ꍇ�E�E�E
-		���́w�wOrder�x�����ƂɁA�T�Z��������
+		指定の『駅Order』が『ダイヤグラム列車線』の
+		中間点になっている場合・・・
+		その『駅Order』をもとに、概算した時刻
 
-		�w��́w�wOrder�x���w�_�C���O������Ԑ��x��
-		�N�_�ɂ͂Ȃ��Ă��Ȃ����A�I�_�ɂ͂Ȃ��Ă���ꍇ�E�E�E
-		�w�_�C���O������Ԑ��x�̏I�_�̉w����
+		指定の『駅Order』が『ダイヤグラム列車線』の
+		起点にはなっていないが、終点にはなっている場合・・・
+		『ダイヤグラム列車線』の終点の駅時刻
 	*/
 	virtual int getDgrXPosOfEkiOrder(
 		int iEkiOrder,

@@ -2,8 +2,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍAtake-okm‚ªì¬‚µ‚½OuDia‚ğ‰ü‘¢‚µ‚½ƒ\ƒtƒgƒEƒFƒA‚Å‚·B
-‚±‚ÌƒvƒƒOƒ‰ƒ€—˜—p‚É‚Â‚¢‚Ä‚ÍAtake-okm‹LÚ‚Ì‰º‹L•¶‘‚É€‹’‚µ‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã€take-okmæ°ãŒä½œæˆã—ãŸOuDiaã‚’æ”¹é€ ã—ãŸã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ åˆ©ç”¨ã«ã¤ã„ã¦ã¯ã€take-okmæ°è¨˜è¼‰ã®ä¸‹è¨˜æ–‡æ›¸ã«æº–æ‹ ã—ã¾ã™ã€‚
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -36,38 +36,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(–ó: 
+(è¨³: 
 
-	OuDia - —ñÔ•\‚ğ‚à‚Æ‚ÉAƒ_ƒCƒ„ƒOƒ‰ƒ€‚ğ•`‰æ‚·‚éWin32ƒAƒvƒŠƒP[ƒV
-ƒ‡ƒ“B
+	OuDia - åˆ—è»Šæ™‚åˆ»è¡¨ã‚’ã‚‚ã¨ã«ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚’æç”»ã™ã‚‹Win32ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·
+ãƒ§ãƒ³ã€‚
 
 Copyright (C) 2006-2017 take-okm 
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍƒtƒŠ[ƒ\ƒtƒgƒEƒFƒA‚Å‚·B‚ ‚È‚½‚Í‚±‚ê‚ğAƒtƒŠ[ƒ\ƒtƒgƒEƒFƒAà
-’c‚É‚æ‚Á‚Ä”­s‚³‚ê‚½GNU ˆê”ÊŒöO—˜—p‹–‘ø‘(ƒo[ƒWƒ‡ƒ“3‚©A‚»‚êˆÈ~‚Ìƒo[ƒWƒ‡
-ƒ“‚Ì‚¤‚¿‚Ç‚ê‚©)‚ª’è‚ß‚éğŒ‚Ì‰º‚ÅÄ”Ğ•z‚Ü‚½‚Í‰ü•Ï ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚ã‚ãªãŸã¯ã“ã‚Œã‚’ã€ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢è²¡
+å›£ã«ã‚ˆã£ã¦ç™ºè¡Œã•ã‚ŒãŸGNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸(ãƒãƒ¼ã‚¸ãƒ§ãƒ³3ã‹ã€ãã‚Œä»¥é™ã®ãƒãƒ¼ã‚¸ãƒ§
+ãƒ³ã®ã†ã¡ã©ã‚Œã‹)ãŒå®šã‚ã‚‹æ¡ä»¶ã®ä¸‹ã§å†é ’å¸ƒã¾ãŸã¯æ”¹å¤‰ ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚Í—L—p‚Å‚ ‚é‚±‚Æ‚ğŠè‚Á‚Ä”Ğ•z‚³‚ê‚Ü‚·‚ªA*‘S‚­‚Ì–³•ÛØ *‚Å‚·B
-¤‹Æ‰Â”\«‚Ì•ÛØ‚â“Á’è–Ú“I‚Ö‚Ì“K‡«‚ÍAŒ¾ŠO‚É¦‚³‚ê‚½‚à‚Ì‚à ŠÜ‚ßA‘S‚­‘¶İ
-‚µ‚Ü‚¹‚ñBÚ‚µ‚­‚ÍGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ğ‚²——‚­‚¾‚³‚¢B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯æœ‰ç”¨ã§ã‚ã‚‹ã“ã¨ã‚’é¡˜ã£ã¦é ’å¸ƒã•ã‚Œã¾ã™ãŒã€*å…¨ãã®ç„¡ä¿è¨¼ *ã§ã™ã€‚
+å•†æ¥­å¯èƒ½æ€§ã®ä¿è¨¼ã‚„ç‰¹å®šç›®çš„ã¸ã®é©åˆæ€§ã¯ã€è¨€å¤–ã«ç¤ºã•ã‚ŒãŸã‚‚ã®ã‚‚ å«ã‚ã€å…¨ãå­˜åœ¨
+ã—ã¾ã›ã‚“ã€‚è©³ã—ãã¯GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã‚’ã”è¦§ãã ã•ã„ã€‚
 
-‚ ‚È‚½‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚Æ‹¤‚ÉAGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ÌƒRƒs[‚ğˆê•” ó‚¯æ‚Á
-‚Ä‚¢‚é‚Í‚¸‚Å‚·B‚à‚µó‚¯æ‚Á‚Ä‚¢‚È‚¯‚ê‚ÎA<http://www.gnu.org/licenses/> ‚ğ
-‚²——‚­‚¾‚³‚¢B
+ã‚ãªãŸã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¨å…±ã«ã€GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã®ã‚³ãƒ”ãƒ¼ã‚’ä¸€éƒ¨ å—ã‘å–ã£
+ã¦ã„ã‚‹ã¯ãšã§ã™ã€‚ã‚‚ã—å—ã‘å–ã£ã¦ã„ãªã‘ã‚Œã°ã€<http://www.gnu.org/licenses/> ã‚’
+ã”è¦§ãã ã•ã„ã€‚
 
 )
 
-  ‰Á‚¦‚ÄA“Á•Ê‚È—áŠO‚Æ‚µ‚ÄAtake-okm ‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÌƒR[ƒh‚ğ 
+  åŠ ãˆã¦ã€ç‰¹åˆ¥ãªä¾‹å¤–ã¨ã—ã¦ã€take-okm ã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ã‚³ãƒ¼ãƒ‰ã‚’ 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ‚ ‚é‚¢‚Í "MFC Version 9.0" ‚Æ“¯‚¶ƒ‰ƒCƒZƒ“ƒX‚ª“K—p‚³‚ê‚½
-  "MFC Version 9.0" ‚Ì‰ü•Ï‚³‚ê‚½ƒo[ƒWƒ‡ƒ“)‚ÆƒŠƒ“ƒN‚µA
-  ƒŠƒ“ƒN‚³‚ê‚½—¼Ò‚ğŠÜ‚ŞŒ‹‡’˜ì•¨‚ğ”Ğ•z‚·‚é‹–‰Â‚ğ—^‚¦‚Ü‚·B
-  ‚ ‚È‚½‚Í "MFC" ˆÈŠO‚Åg‚í‚ê‚Ä‚¢‚é‚·‚×‚Ä
-  ‚ÌƒR[ƒh‚ÉŠÖ‚µ‚Ä‚Í‘S–Ê“I‚ÉGNUˆê”ÊŒöO—˜—p‹–‘øŒ_–ñ‘‚É]‚í‚È‚¯‚ê‚Î
-  ‚È‚è‚Ü‚¹‚ñB‚ ‚È‚½‚ª‚±‚Ìƒtƒ@ƒCƒ‹‚ğ‰ü•Ï‚µ‚½‚È‚ç‚ÎA‚ ‚È‚½‚Í‚±‚Ì—áŠO
-  ‚ğ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚Ìƒtƒ@ƒCƒ‹‚Éˆø‚«‘±‚«İ‚¯‚é‚±‚Æ‚à‚Å‚«‚Ü‚·‚ªA‚»
-  ‚¤‚·‚é‹`–±‚Í‚ ‚è‚Ü‚¹‚ñB‚à‚µ—áŠO‚ğİ‚¯‚½‚­‚È‚¯‚ê‚ÎA‚±‚Ì—áŠOğ€‚ğ
-  ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚©‚ç‚Ííœ‚µ‚Ä‚­‚¾‚³‚¢B)
+  (  ã‚ã‚‹ã„ã¯ "MFC Version 9.0" ã¨åŒã˜ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ãŒé©ç”¨ã•ã‚ŒãŸ
+  "MFC Version 9.0" ã®æ”¹å¤‰ã•ã‚ŒãŸãƒãƒ¼ã‚¸ãƒ§ãƒ³)ã¨ãƒªãƒ³ã‚¯ã—ã€
+  ãƒªãƒ³ã‚¯ã•ã‚ŒãŸä¸¡è€…ã‚’å«ã‚€çµåˆè‘—ä½œç‰©ã‚’é ’å¸ƒã™ã‚‹è¨±å¯ã‚’ä¸ãˆã¾ã™ã€‚
+  ã‚ãªãŸã¯ "MFC" ä»¥å¤–ã§ä½¿ã‚ã‚Œã¦ã„ã‚‹ã™ã¹ã¦
+  ã®ã‚³ãƒ¼ãƒ‰ã«é–¢ã—ã¦ã¯å…¨é¢çš„ã«GNUä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾å¥‘ç´„æ›¸ã«å¾“ã‚ãªã‘ã‚Œã°
+  ãªã‚Šã¾ã›ã‚“ã€‚ã‚ãªãŸãŒã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ”¹å¤‰ã—ãŸãªã‚‰ã°ã€ã‚ãªãŸã¯ã“ã®ä¾‹å¤–
+  ã‚’ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®ãƒ•ã‚¡ã‚¤ãƒ«ã«å¼•ãç¶šãè¨­ã‘ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ãŒã€ã
+  ã†ã™ã‚‹ç¾©å‹™ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ã‚‚ã—ä¾‹å¤–ã‚’è¨­ã‘ãŸããªã‘ã‚Œã°ã€ã“ã®ä¾‹å¤–æ¡é …ã‚’
+  ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‹ã‚‰ã¯å‰Šé™¤ã—ã¦ãã ã•ã„ã€‚)
 */
 /*
 // ****************************************************************
@@ -77,19 +77,19 @@ Copyright (C) 2006-2017 take-okm
 /** @file */
 #include "stdafx.h"
 
-#include "str\StrToInt.h"
-#include "DcDraw\CDcdText.h"
-#include "DcDraw\CDcdTargetGetDC.h"
-#include "DcDraw\CDcdLine.h"
-#include "DcDraw\CaDcdTargetItemPosition.h"
-#include "DcDraw\CaDcdTargetClip.h"
-#include "DcdCd\DcDrawProp/CdPenProp.h"
-#include "LogMsg\LogMsg.h"
-#include "DcDraw\CConverter_WinGdi.h"
-#include "DcDraw\CDcdFillrect.h"
+#include "strÂ¥StrToInt.h"
+#include "DcDrawÂ¥CDcdText.h"
+#include "DcDrawÂ¥CDcdTargetGetDC.h"
+#include "DcDrawÂ¥CDcdLine.h"
+#include "DcDrawÂ¥CaDcdTargetItemPosition.h"
+#include "DcDrawÂ¥CaDcdTargetClip.h"
+#include "DcdCdÂ¥DcDrawProp/CdPenProp.h"
+#include "LogMsgÂ¥LogMsg.h"
+#include "DcDrawÂ¥CConverter_WinGdi.h"
+#include "DcDrawÂ¥CDcdFillrect.h"
 
 #include "CDcdAllOperationTable2.h"
-#include "..\DiagramEdit.h"
+#include "..Â¥DiagramEdit.h"
 
 namespace ViewAllOperationTable2 {
 
@@ -99,7 +99,7 @@ using namespace OuLib::Str;
 //	CDcdAllOperationTable2
 // ****************************************************************
 	// --------------------------------
-	//@name ‰º¿ŠÖ”
+	//@name ä¸‹è«‹é–¢æ•°
 	// --------------------------------
 CdDcdFreeLineProp	CDcdAllOperationTable2::getCdLinePropGridNormal()const
 {
@@ -133,7 +133,7 @@ vector<CDcdText>	CDcdAllOperationTable2::getCDcdTextHeader()const
 	//tstring strExtent;
 	vector<CDcdText> CDcdTextCont;
 	{
-		//—ñ”Ô†
+		//åˆ—ç•ªå·
 		tstring strExtent = _T("000");
 		CDcdTextCont.push_back(
 			CDcdText(_T(""),
@@ -141,7 +141,7 @@ vector<CDcdText>	CDcdAllOperationTable2::getCDcdTextHeader()const
 				strExtent));
 	}
 	{
-		//‰^—p”Ô†
+		//é‹ç”¨ç•ªå·
 		tstring strExtent(
 			getCDiagramEditDoc()->getCDedRosenFileData()->getCdDedDispProp().getJikokuhyouRessyaWidth(), '0');
 		if (strExtent.length() < 8)
@@ -155,12 +155,12 @@ vector<CDcdText>	CDcdAllOperationTable2::getCDcdTextHeader()const
 	}
 	if (getDisplayEkimeiJikoku())
 	{
-		//‰w–¼‚Ì–ÚˆÀ•¶š—ñ
+		//é§…åã®ç›®å®‰æ–‡å­—åˆ—
 		tstring strExtentEkimei;
 		for (int idx = 0; idx < m_iEkimeiLength; idx++) {
-			strExtentEkimei += _T("‰ª");
+			strExtentEkimei += _T("å²¡");
 		}
-		//‚Ì–ÚˆÀ•¶š—ñ
+		//æ™‚åˆ»ã®ç›®å®‰æ–‡å­—åˆ—
 		tstring strExtentJikoku(
 			getCDiagramEditDoc()->getCDedRosenFileData()->getCdDedDispProp().getJikokuhyouRessyaWidth(), '0');
 		if (strExtentJikoku.length() < 6)
@@ -168,31 +168,31 @@ vector<CDcdText>	CDcdAllOperationTable2::getCDcdTextHeader()const
 			strExtentJikoku = tstring(6, '0');
 		}
 
-		//o‹æ‰w–¼
+		//å‡ºåŒºé§…å
 		CDcdTextCont.push_back(
 			CDcdText(_T(""),
 				CdDrawTextProp(getOperationTableFont(), getStringColor()),
 				strExtentEkimei));
 
-		//o‹æ
+		//å‡ºåŒºæ™‚åˆ»
 		CDcdTextCont.push_back(
 			CDcdText(_T(""),
 				CdDrawTextProp(getOperationTableFont(), getStringColor()),
 				strExtentJikoku));
 
-		//–îˆó
+		//çŸ¢å°
 		CDcdTextCont.push_back(
 			CDcdText(_T(""),
 				CdDrawTextProp(getOperationTableFont(), getStringColor()),
-				_T("¨")));
+				_T("â†’")));
 
-		//“ü‹æ‰w–¼
+		//å…¥åŒºé§…å
 		CDcdTextCont.push_back(
 			CDcdText(_T(""),
 				CdDrawTextProp(getOperationTableFont(), getStringColor()),
 				strExtentEkimei));
 
-		//“ü‹æ
+		//å…¥åŒºæ™‚åˆ»
 		CDcdTextCont.push_back(
 			CDcdText(_T(""),
 				CdDrawTextProp(getOperationTableFont(), getStringColor()),
@@ -210,7 +210,7 @@ void	CDcdAllOperationTable2::setCdDcdZone_X(IfDcdTarget* pIfDcdTarget)
 
 	DcdPos aDcdPosTemp = linepropNormal.getLogicalunitWidth();
 
-	//—ñ”Ô†
+	//åˆ—ç•ªå·
 	CdDcdSizeXy	sizeTemp;
 	CDcdTextCont[0].getItemSize(pIfDcdTarget, &sizeTemp);
 
@@ -219,7 +219,7 @@ void	CDcdAllOperationTable2::setCdDcdZone_X(IfDcdTarget* pIfDcdTarget)
 
 	aDcdPosTemp += linepropNormal.getLogicalunitWidth();
 
-	//‰^—p”Ô†
+	//é‹ç”¨ç•ªå·
 	CDcdTextCont[1].getItemSize(pIfDcdTarget, &sizeTemp);
 	m_CdDcdZone_X_Left[1] = CdDcdZone(aDcdPosTemp, sizeTemp.getX());
 	aDcdPosTemp += sizeTemp.getX();
@@ -228,13 +228,13 @@ void	CDcdAllOperationTable2::setCdDcdZone_X(IfDcdTarget* pIfDcdTarget)
 	{
 		aDcdPosTemp += linepropNormal.getLogicalunitWidth();
 
-		//o‹æ‰w–¼
+		//å‡ºåŒºé§…å
 		CDcdTextCont[2].getItemSize(pIfDcdTarget, &sizeTemp);
 		m_CdDcdZone_X_Left[2] = CdDcdZone(aDcdPosTemp, sizeTemp.getX());
 		aDcdPosTemp += sizeTemp.getX();
 
 		aDcdPosTemp += linepropNormal.getLogicalunitWidth();
-		//o‹æ
+		//å‡ºåŒºæ™‚åˆ»
 		CDcdTextCont[3].getItemSize(pIfDcdTarget, &sizeTemp);
 		m_CdDcdZone_X_Left[3] = CdDcdZone(aDcdPosTemp, sizeTemp.getX());
 		aDcdPosTemp += sizeTemp.getX();
@@ -243,14 +243,14 @@ void	CDcdAllOperationTable2::setCdDcdZone_X(IfDcdTarget* pIfDcdTarget)
 
 
 		DcdPos aDcdPosTempRight = linepropBold.getLogicalunitWidth();
-		//“ü‹æ‰w–¼
+		//å…¥åŒºé§…å
 		CDcdTextCont[5].getItemSize(pIfDcdTarget, &sizeTemp);
 		m_CdDcdZone_X_Right[0] = CdDcdZone(aDcdPosTempRight, sizeTemp.getX());
 		aDcdPosTempRight += sizeTemp.getX();
 
 		aDcdPosTempRight += linepropNormal.getLogicalunitWidth();
 
-		//“ü‹æ
+		//å…¥åŒºæ™‚åˆ»
 		CDcdTextCont[6].getItemSize(pIfDcdTarget, &sizeTemp);
 		m_CdDcdZone_X_Right[1] = CdDcdZone(aDcdPosTempRight, sizeTemp.getX());
 		aDcdPosTempRight += sizeTemp.getX();
@@ -269,14 +269,14 @@ void	CDcdAllOperationTable2::setCdDcdZone_X(IfDcdTarget* pIfDcdTarget)
 }
 
 	// ********************************
-	//	ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	//	ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 	// ********************************
 CDcdAllOperationTable2::CDcdAllOperationTable2( 
 		tstring strName,
 		vector<tstring>* strOperationNumber,
 		CdDcdZoneXy* aCdDcdZone,
 		const CdDedDispProp& aCdDedDispProp )
-	//: m_fontpropDiaJikokuFont(9, _T("‚l‚r ƒSƒVƒbƒN"))
+	//: m_fontpropDiaJikokuFont(9, _T("ï¼­ï¼³ ã‚´ã‚·ãƒƒã‚¯"))
 	: m_fontpropDiaJikokuFont( 9 , _T("Meiryo UI")  )
 	, m_iEkimeiLength( 6 )
 	, m_bDisplayEkimeiJikoku(true)
@@ -294,7 +294,7 @@ CDcdAllOperationTable2::CDcdAllOperationTable2(
 
 
 CDcdAllOperationTable2::CDcdAllOperationTable2() 
-	//: m_fontpropDiaJikokuFont( 9 , _T("‚l‚r ƒSƒVƒbƒN")  )
+	//: m_fontpropDiaJikokuFont( 9 , _T("ï¼­ï¼³ ã‚´ã‚·ãƒƒã‚¯")  )
 	: m_fontpropDiaJikokuFont(9, _T("Meiryo UI"))
 	, m_iEkimeiLength( 6 )
 	, m_bDisplayEkimeiJikoku(true)
@@ -304,7 +304,7 @@ CDcdAllOperationTable2::CDcdAllOperationTable2()
 {
 	m_pCDcdAllOperationTable = new CDcdAllOperationTable() ;
 }
-CDcdAllOperationTable2::~CDcdAllOperationTable2() 
+CDcdAllOperationTable2::â€¾CDcdAllOperationTable2() 
 {
 	if ( m_pCDcdAllOperationTable != NULL ){
 		delete m_pCDcdAllOperationTable ;
@@ -324,29 +324,29 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 
 
 	// --------------------------------
-	//	ƒ_ƒCƒ„ƒOƒ‰ƒ€‚ÌŠe\¬—v‘f‚ÌƒTƒCƒY‚ğŒvZ
+	//	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã®å„æ§‹æˆè¦ç´ ã®ã‚µã‚¤ã‚ºã‚’è¨ˆç®—
 	// --------------------------------
 	CdDcdFreeLineProp	linepropGridNormal(getCdLinePropGridNormal());
 	CdDcdFreeLineProp	linepropGridBold(getCdLinePropGridBold());
 	CdDcdFreeLineProp	linepropDiaJikuNormal(getCdLinePropDiaJikuNormal());
 	CdDcdFreeLineProp	linepropDiaJikuBold(getCdLinePropDiaJikuBold());
 
-	//DcdPerDgrY‚ğİ’è‚µ‚Ü‚·BDgrÀ•W‚Å‚Íˆês‚Ì‚‚³‚ªDEFAULT_YSIZE_PER_ONEOPERATION()‚É‚È‚Á‚Ä‚¢‚Ü‚·‚ªA
-	//À•\¦‚·‚é‚Æ‚«‚Ì”ä—¦‚ğ‹‚ß‚Ä‚¨‚«‚Ü‚·B
+	//DcdPerDgrYã‚’è¨­å®šã—ã¾ã™ã€‚Dgråº§æ¨™ã§ã¯ä¸€è¡Œã®é«˜ã•ãŒDEFAULT_YSIZE_PER_ONEOPERATION()ã«ãªã£ã¦ã„ã¾ã™ãŒã€
+	//å®Ÿè¡¨ç¤ºã™ã‚‹ã¨ãã®æ¯”ç‡ã‚’æ±‚ã‚ã¦ãŠãã¾ã™ã€‚
 	{
 		CDcdText dcdText(_T(""),
 			CdDrawTextProp(getOperationTableFont(), 
 				getStringColor()),
-			_T("‰ª"));
+			_T("å²¡"));
 		CdDcdSizeXy	sizeTemp;
 		dcdText.getItemSize(pIfDcdTarget, &sizeTemp);
 
-		//ã‰º‚Ì•¶šƒXƒy[ƒX
+		//ä¸Šä¸‹ã®æ–‡å­—ã‚¹ãƒšãƒ¼ã‚¹
 		DcdSize Size_Y = sizeTemp.getY() * 2;
 
-		//—ñÔü‚Ì‘¾‚³
+		//åˆ—è»Šç·šã®å¤ªã•
 		Size_Y += linepropGridBold.getLogicalunitWidth() + 1;
-		//‰º•”Œrü‚Ì‘¾‚³
+		//ä¸‹éƒ¨ç½«ç·šã®å¤ªã•
 		Size_Y += linepropGridNormal.getLogicalunitWidth();
 		m_pCDcdAllOperationTable->setDcdPerDgrY(pIfDcdTarget, (double)Size_Y / (double)DEFAULT_YSIZE_PER_ONEOPERATION());
 	}
@@ -354,24 +354,24 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 
 	CdDcdZoneXy	zonexyDiagram = calcDiagramZoneDcd(pIfDcdTarget);
 
-	//zonexyDiagram = ƒ_ƒCƒ„ƒOƒ‰ƒ€‚Ì•`‰æ‚ğs‚¤—Ìˆæi˜_—À•Wj
+	//zonexyDiagram = ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã®æç”»ã‚’è¡Œã†é ˜åŸŸï¼ˆè«–ç†åº§æ¨™ï¼‰
 	// --------------------------------
 	CaDcdTargetItemPosition	targetDiagram(pIfDcdTarget, zonexyDiagram);
-	//targetDiagram = ƒ_ƒCƒ„ƒOƒ‰ƒ€‚Ì•`‰æ‚ğs‚¤—Ìˆæ‚ÌDcDrawƒIƒuƒWƒFƒNƒg
+	//targetDiagram = ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã®æç”»ã‚’è¡Œã†é ˜åŸŸã®DcDrawã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 
 
 
 
 // --------------------------------
-//	•`‰æ‚ğs‚¤—Ìˆæ‚ÌŒvZ	
+//	æç”»ã‚’è¡Œã†é ˜åŸŸã®è¨ˆç®—	
 // --------------------------------
 	CdDcdZoneXy	zonexyAllOperationTable = *getCdDcdZone();
 
-	//‹N“_‚©‚ç24ŠÔ‚ğŠÛX•\¦‚·‚é‚½‚ß‚É•K—v‚È—Ìˆæ
+	//èµ·ç‚¹æ™‚åˆ»ã‹ã‚‰24æ™‚é–“ã‚’ä¸¸ã€…è¡¨ç¤ºã™ã‚‹ãŸã‚ã«å¿…è¦ãªé ˜åŸŸ
 	CdDcdZone zoneDcdAllOperationTable = XDgrToDcd(pIfDcdTarget, zonexyAllOperationTable.getX());
-	//zoneDcdAllOperationTable‚Ì‰E’[‚ªAzonexyDiagram‚Ì‰E’[‚æ‚è‚à¶‘¤(“à‘¤)‚É‚ ‚éê‡‚ÍA
-	//ƒwƒbƒ_[E‰^—pî•ñ•”(‰E‘¤)‚ÌˆÊ’u‚ğ’²®‚µ‚ÄA‹ó”’ƒXƒy[ƒX‚ª–³‚­‚È‚é‚æ‚¤‚É‚µ‚Ü‚·B
-	//‚»‚ÌÛADIAGRAM_SIZE_MARGIN_DCD‚ğl—¶‚µ‚Ü‚·B
+	//zoneDcdAllOperationTableã®å³ç«¯ãŒã€zonexyDiagramã®å³ç«¯ã‚ˆã‚Šã‚‚å·¦å´(å†…å´)ã«ã‚ã‚‹å ´åˆã¯ã€
+	//ãƒ˜ãƒƒãƒ€ãƒ¼ãƒ»é‹ç”¨æƒ…å ±éƒ¨(å³å´)ã®ä½ç½®ã‚’èª¿æ•´ã—ã¦ã€ç©ºç™½ã‚¹ãƒšãƒ¼ã‚¹ãŒç„¡ããªã‚‹ã‚ˆã†ã«ã—ã¾ã™ã€‚
+	//ãã®éš›ã€DIAGRAM_SIZE_MARGIN_DCDã‚’è€ƒæ…®ã—ã¾ã™ã€‚
 	DcdSize SizeShiftRightZone = 0;
 	if (getNoDisplayAllOperationTableSpace())
 	{
@@ -382,29 +382,29 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 	{
 		SizeShiftRightZone = zonexyDiagram.getX().getEndPos() - zoneDcdAllOperationTable.getEndPos() - 2;
 	}
-	//‚Ü‚¸A‰^—pˆê——}•\¦—Ìˆæ‚ÌƒgƒŠƒ~ƒ“ƒO‚ğs‚¢‚Ü‚·B
+	//ã¾ãšã€é‹ç”¨ä¸€è¦§å›³è¡¨ç¤ºé ˜åŸŸã®ãƒˆãƒªãƒŸãƒ³ã‚°ã‚’è¡Œã„ã¾ã™ã€‚
 	CdDcdZone	zoneXDiagramDcd(
 		zonexyDiagram.getX().getPos(),
 		zonexyDiagram.getX().getSize() - SizeShiftRightZone);
 	zonexyDiagram.setX(zoneXDiagramDcd);
 
-	//zonexyAllOperationTable = ‰^—pˆê——}‚Ì”ÍˆÍ‚ğA
-	//	wƒ_ƒCƒ„ƒOƒ‰ƒ€ƒGƒ“ƒeƒBƒeƒBÀ•WŒnx‚Å•Û‚µ‚Ü‚·B
-	//	XÀ•W‚Í24ŠÔ•ªAYÀ•W‚Í‘S‰^—p•ª‚Ì•\¦ƒXƒy[ƒX‚ğ•\‚µ‚Ü‚·B
+	//zonexyAllOperationTable = é‹ç”¨ä¸€è¦§å›³ã®ç¯„å›²ã‚’ã€
+	//	ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚¨ãƒ³ãƒ†ã‚£ãƒ†ã‚£åº§æ¨™ç³»ã€ã§ä¿æŒã—ã¾ã™ã€‚
+	//	Xåº§æ¨™ã¯24æ™‚é–“åˆ†ã€Yåº§æ¨™ã¯å…¨é‹ç”¨åˆ†ã®è¡¨ç¤ºã‚¹ãƒšãƒ¼ã‚¹ã‚’è¡¨ã—ã¾ã™ã€‚
 
 	// --------------------------------
-	//	ƒwƒbƒ_[•”(¶‘¤)‚Ì•`‰æ
+	//	ãƒ˜ãƒƒãƒ€ãƒ¼éƒ¨(å·¦å´)ã®æç”»
 	// --------------------------------
 	if (!getNoDisplayLeftSpace())
 	{
 		CdDcdZoneXy	zonexyHeaderLeftDcd = calcHeaderLeftZoneDcd(pIfDcdTarget);
-		//zonexyOperationLeftDcd = •\¦•”•ª‚ÌDcDrawÀ•W‚É‚æ‚é”ÍˆÍ
+		//zonexyOperationLeftDcd = æ™‚è¡¨ç¤ºéƒ¨åˆ†ã®DcDrawåº§æ¨™ã«ã‚ˆã‚‹ç¯„å›²
 
 		CaDcdTargetItemPosition	targetitemposHeaderLeft(pIfDcdTarget, zonexyHeaderLeftDcd);
 		CaDcdTargetClip targetHeaderLeft(&targetitemposHeaderLeft, zonexyHeaderLeftDcd);
 
 		// --------------------------------
-		//	ƒwƒbƒ_[•”‚Ì”wŒiFİ’è
+		//	ãƒ˜ãƒƒãƒ€ãƒ¼éƒ¨ã®èƒŒæ™¯è‰²è¨­å®š
 		// --------------------------------
 		CConverter_WinGdi aCConverter_WinGdi;
 		CdBrushProp	aCdBrushProp(
@@ -413,7 +413,7 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 		aCDcdFillrect.DcDraw(&targetHeaderLeft);
 
 		// --------------------------------
-		//	ƒwƒbƒ_[ã‰º‚Ì‰¡ü
+		//	ãƒ˜ãƒƒãƒ€ãƒ¼ä¸Šä¸‹ã®æ¨ªç·š
 		// --------------------------------
 		CDcdFreeLine	aCDcdFreeLine;
 		aCDcdFreeLine.setCdLineProp(linepropGridNormal);
@@ -438,7 +438,7 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 		}
 
 		// --------------------------------
-		//CDcdLine ‚ğg‚Á‚½cŒrü•`‰æ
+		//CDcdLine ã‚’ä½¿ã£ãŸç¸¦ç½«ç·šæç”»
 		// --------------------------------
 		{
 			CDcdLine	aCDcdLine(
@@ -538,15 +538,15 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 
 
 		// --------------------------------
-		// ƒwƒbƒ_[(¶)‚Ì€–Ú–¼•`Ê
+		// ãƒ˜ãƒƒãƒ€ãƒ¼(å·¦)ã®é …ç›®åæå†™
 		// --------------------------------
 		CdDrawTextFormat aCdDrawTextFormat;
 		aCdDrawTextFormat.setHorizontal(CdDrawTextFormat::H_CENTER);
 		{
-			//‰^—p”Ô†
-			CDcdText dcdText(_T("‰^—p”Ô†"),
+			//é‹ç”¨ç•ªå·
+			CDcdText dcdText(_T("é‹ç”¨ç•ªå·"),
 				CdDrawTextProp(getOperationTableFont(), getStringColor(), aCdDrawTextFormat),
-				_T("‰^—p”Ô†"));
+				_T("é‹ç”¨ç•ªå·"));
 
 			CdDcdZoneXy	zonexyDcdZoneXy(
 				CdDcdZone(zonexyHeaderLeftDcd.getX().getPos() + m_CdDcdZone_X_Left[1].getPos(),
@@ -563,10 +563,10 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 		if (m_bDisplayEkimeiJikoku)
 		{
 			{
-				//o‹æ‰w–¼
-				CDcdText dcdText(_T("o‹æ‰w–¼"),
+				//å‡ºåŒºé§…å
+				CDcdText dcdText(_T("å‡ºåŒºé§…å"),
 					CdDrawTextProp(getOperationTableFont(), getStringColor(), aCdDrawTextFormat),
-					_T("o‹æ‰w–¼"));
+					_T("å‡ºåŒºé§…å"));
 
 				CdDcdZoneXy	zonexyDcdZoneXy(
 					CdDcdZone(zonexyHeaderLeftDcd.getX().getPos() + m_CdDcdZone_X_Left[2].getPos(),
@@ -581,10 +581,10 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 			}
 
 			{
-				//”­
-				CDcdText dcdText(_T("”­"),
+				//ç™ºæ™‚åˆ»
+				CDcdText dcdText(_T("ç™ºæ™‚åˆ»"),
 					CdDrawTextProp(getOperationTableFont(), getStringColor(), aCdDrawTextFormat),
-					_T("”­"));
+					_T("ç™ºæ™‚åˆ»"));
 
 				CdDcdZoneXy	zonexyDcdZoneXy(
 					CdDcdZone(zonexyHeaderLeftDcd.getX().getPos() + m_CdDcdZone_X_Left[3].getPos(),
@@ -600,7 +600,7 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 		}
 	}
 	// --------------------------------
-	//	ƒwƒbƒ_[•”(‰E‘¤)‚Ì•`‰æ
+	//	ãƒ˜ãƒƒãƒ€ãƒ¼éƒ¨(å³å´)ã®æç”»
 	// --------------------------------
 	if (!getNoDisplayRightSpace())
 	{
@@ -609,13 +609,13 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 			zonexyHeaderRightDcd.getX().getPos() - SizeShiftRightZone, 
 			zonexyHeaderRightDcd.getX().getSize());
 		zonexyHeaderRightDcd.setX(zoneXHeaderRightDcd);
-		//zonexyOperationLeftDcd = •\¦•”•ª‚ÌDcDrawÀ•W‚É‚æ‚é”ÍˆÍ
+		//zonexyOperationLeftDcd = æ™‚è¡¨ç¤ºéƒ¨åˆ†ã®DcDrawåº§æ¨™ã«ã‚ˆã‚‹ç¯„å›²
 
 		CaDcdTargetItemPosition	targetitemposHeaderRight(pIfDcdTarget, zonexyHeaderRightDcd);
 		CaDcdTargetClip targetHeaderRight(&targetitemposHeaderRight, zonexyHeaderRightDcd);
 
 		// --------------------------------
-		//	ƒwƒbƒ_[•”‚Ì”wŒiFİ’è
+		//	ãƒ˜ãƒƒãƒ€ãƒ¼éƒ¨ã®èƒŒæ™¯è‰²è¨­å®š
 		// --------------------------------
 		CConverter_WinGdi aCConverter_WinGdi;
 		CdBrushProp	aCdBrushProp(
@@ -624,7 +624,7 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 		aCDcdFillrect.DcDraw(&targetHeaderRight);
 
 		// --------------------------------
-		//	ƒwƒbƒ_[ã‰º‚Ì‰¡ü
+		//	ãƒ˜ãƒƒãƒ€ãƒ¼ä¸Šä¸‹ã®æ¨ªç·š
 		// --------------------------------
 		CDcdFreeLine	aCDcdFreeLine;
 		aCDcdFreeLine.setCdLineProp(linepropGridNormal);
@@ -651,7 +651,7 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 		}
 
 		// --------------------------------
-		//CDcdLine ‚ğg‚Á‚½cŒrü•`‰æ
+		//CDcdLine ã‚’ä½¿ã£ãŸç¸¦ç½«ç·šæç”»
 		// --------------------------------
 		{
 			CDcdLine	aCDcdLine(
@@ -720,7 +720,7 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 
 
 		// --------------------------------
-		// ƒwƒbƒ_[(‰E)‚Ì€–Ú–¼•`Ê
+		// ãƒ˜ãƒƒãƒ€ãƒ¼(å³)ã®é …ç›®åæå†™
 		// --------------------------------
 		CdDrawTextFormat aCdDrawTextFormat;
 		aCdDrawTextFormat.setHorizontal(CdDrawTextFormat::H_CENTER);
@@ -728,10 +728,10 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 		if (getDisplayEkimeiJikoku())
 		{
 			{
-				//“ü‹æ‰w–¼
-				CDcdText dcdText(_T("“ü‹æ‰w–¼"),
+				//å…¥åŒºé§…å
+				CDcdText dcdText(_T("å…¥åŒºé§…å"),
 					CdDrawTextProp(getOperationTableFont(), getStringColor(), aCdDrawTextFormat),
-					_T("“ü‹æ‰w–¼"));
+					_T("å…¥åŒºé§…å"));
 
 				CdDcdZoneXy	zonexyDcdZoneXy(
 					CdDcdZone(zonexyHeaderRightDcd.getX().getPos() + m_CdDcdZone_X_Right[0].getPos(),
@@ -747,10 +747,10 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 			}
 
 			{
-				//’…
-				CDcdText dcdText(_T("’…"),
+				//ç€æ™‚åˆ»
+				CDcdText dcdText(_T("ç€æ™‚åˆ»"),
 					CdDrawTextProp(getOperationTableFont(), getStringColor(), aCdDrawTextFormat),
-					_T("’…"));
+					_T("ç€æ™‚åˆ»"));
 
 				CdDcdZoneXy	zonexyDcdZoneXy(
 					CdDcdZone(zonexyHeaderRightDcd.getX().getPos() + m_CdDcdZone_X_Right[1].getPos(),
@@ -767,7 +767,7 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 		}
 	}
 	// --------------------------------
-	//	‚Ì•`‰æ
+	//	æ™‚ã®æç”»
 	// --------------------------------
 	if (!getNoDisplayAllOperationTableSpace())
 	{
@@ -776,14 +776,14 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 			zonexyJikokuDcd.getX().getPos(),
 			zonexyJikokuDcd.getX().getSize() - SizeShiftRightZone);
 		zonexyJikokuDcd.setX(zoneXJikokuDcd);
-		//zonexyOperationLeftDcd = •\¦•”•ª‚ÌDcDrawÀ•W‚É‚æ‚é”ÍˆÍ
+		//zonexyOperationLeftDcd = æ™‚è¡¨ç¤ºéƒ¨åˆ†ã®DcDrawåº§æ¨™ã«ã‚ˆã‚‹ç¯„å›²
 
 		CaDcdTargetItemPosition	targetitemposJikoku(pIfDcdTarget, zonexyJikokuDcd);
 		CaDcdTargetClip targetJikoku(&targetitemposJikoku, zonexyJikokuDcd);
 		targetJikoku.validate();
 
 		// --------------------------------
-		//	•”ã‰º‚Ì‰¡ü
+		//	æ™‚éƒ¨ä¸Šä¸‹ã®æ¨ªç·š
 		// --------------------------------
 		CDcdFreeLine	aCDcdFreeLine;
 		aCDcdFreeLine.setCdLineProp(linepropGridNormal);
@@ -809,7 +809,7 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 			aCDcdFreeLine.DcDraw(&targetJikoku);
 		}
 
-		//	•\¦‚ÍAƒ_ƒCƒ„ƒOƒ‰ƒ€‹N“_‚ÌŸ‚Ì³‚©‚çŠJn(4:59‚È‚ç5:00A5:00‚È‚ç5:00)
+		//	æ™‚åˆ»è¡¨ç¤ºã¯ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ èµ·ç‚¹æ™‚åˆ»ã®æ¬¡ã®æ­£æ™‚ã‹ã‚‰é–‹å§‹(4:59ãªã‚‰5:00ã€5:00ãªã‚‰5:00)
 		DcdPos posDgrXJikokuhyoujiOrg = zonexyAllOperationTable.getX().getPos();
 		{
 			int iMod = zonexyAllOperationTable.getX().getPos() % (60 * 60);
@@ -818,8 +818,8 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 				posDgrXJikokuhyoujiOrg += (60 * 60) - iMod;
 			}
 		}
-		//posDgrXJikokuhyoujiOrg = •\¦‚ÌŠJnˆÊ’u
-		//	ƒ_ƒCƒ„ƒOƒ‰ƒ€‹N“_‚ÌŸ‚Ì³‚©‚çŠJn(4:59‚È‚ç5:00A5:00‚È‚ç5:00)
+		//posDgrXJikokuhyoujiOrg = æ™‚åˆ»è¡¨ç¤ºã®é–‹å§‹ä½ç½®
+		//	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ èµ·ç‚¹æ™‚åˆ»ã®æ¬¡ã®æ­£æ™‚ã‹ã‚‰é–‹å§‹(4:59ãªã‚‰5:00ã€5:00ãªã‚‰5:00)
 
 		DcdPos posDcdX_Left = XDgrToDcd(pIfDcdTarget, zonexyAllOperationTable.getX().getPos());
 		DcdPos posDcdX_Right = XDgrToDcd(pIfDcdTarget, zonexyAllOperationTable.getX().getEndPos());
@@ -827,10 +827,10 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 			posDgrX <= zonexyAllOperationTable.getX().getEndPos();
 			posDgrX += 60 * 60)
 		{
-			//posDgrX = ƒ_ƒCƒ„ƒOƒ‰ƒ€ƒGƒ“ƒeƒBƒeƒBÀ•W‚Å‚ÌA
-			//	•\¦‚ÌˆÊ’u
+			//posDgrX = ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚¨ãƒ³ãƒ†ã‚£ãƒ†ã‚£åº§æ¨™ã§ã®ã€
+			//	æ™‚åˆ»è¡¨ç¤ºã®ä½ç½®
 
-			//	‚ÌƒeƒLƒXƒg‚ğİ’è
+			//	æ™‚åˆ»ã®ãƒ†ã‚­ã‚¹ãƒˆã‚’è¨­å®š
 			CDcdText textJikoku(stringOf(CdDedJikoku(posDgrX).getHour()),
 				CdDrawTextProp(m_fontpropDiaJikokuFont, getStringColor()),
 				stringOf(CdDedJikoku(posDgrX).getHour()));
@@ -838,7 +838,7 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 			textJikoku.getItemSize(pIfDcdTarget, &sizetextJikoku);
 
 
-			//	À•W‚ğADgr¨Dcd‚É•ÏŠ·
+			//	åº§æ¨™ã‚’ã€Dgrâ†’Dcdã«å¤‰æ›
 			DcdPos posDcdX = XDgrToDcd(pIfDcdTarget, posDgrX);
 			{
 				CdDcdZoneXy	zonexyDcdZoneXy(
@@ -862,13 +862,13 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 		}
 	}
 	// --------------------------------
-	//	‰^—pî•ñ•”(¶‘¤)‚ÌŒrü
+	//	é‹ç”¨æƒ…å ±éƒ¨(å·¦å´)ã®ç½«ç·š
 	// --------------------------------
 	if (!getNoDisplayLeftSpace())
 	{
 
 		CdDcdZoneXy	zonexyOperationLeftDcd = calcOperationLeftZoneDcd(pIfDcdTarget);
-		//zonexyOperationLeftDcd = ‰w–¼•\¦•”•ª‚ÌDcDrawÀ•W‚É‚æ‚é”ÍˆÍ
+		//zonexyOperationLeftDcd = é§…åè¡¨ç¤ºéƒ¨åˆ†ã®DcDrawåº§æ¨™ã«ã‚ˆã‚‹ç¯„å›²
 
 		CaDcdTargetItemPosition	targetitemposOperationLeft(pIfDcdTarget, zonexyOperationLeftDcd);
 		CaDcdTargetClip targetOperationLeft(&targetitemposOperationLeft, zonexyOperationLeftDcd);
@@ -876,14 +876,14 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 
 		CdDcdZoneXy	zonexyZone_Dgr = getZone_Dgr(pIfDcdTarget);
 		// --------------------------------
-		//CDcdLine ‚ğg‚Á‚½Œrü•`‰æ
+		//CDcdLine ã‚’ä½¿ã£ãŸç½«ç·šæç”»
 		// --------------------------------
 		{
 			CdDcdZone	zoneDcdY;
 			{
 				DcdPos posDgrY = zonexyZone_Dgr.getY().getPos();
 				CdDcdZone	zoneDgrY(posDgrY,getOperationNumber()->size() * m_pCDcdAllOperationTable->DEFAULT_YSIZE_PER_ONEOPERATION()- posDgrY);
-				//zoneDgrY = ‘S‰^—p•ª‚Ìƒ_ƒCƒ„ƒOƒ‰ƒ€À•W‚É‚æ‚éYÀ•W”ÍˆÍ
+				//zoneDgrY = å…¨é‹ç”¨åˆ†ã®ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åº§æ¨™ã«ã‚ˆã‚‹Yåº§æ¨™ç¯„å›²
 				if (getClippingCount()>0)
 				{ 
 					DcdSize YSize = getClippingCount() * m_pCDcdAllOperationTable->DEFAULT_YSIZE_PER_ONEOPERATION();
@@ -895,11 +895,11 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 				}
 				zoneDcdY = YDgrToDcd(pIfDcdTarget, zoneDgrY);
 
-				//zoneDcdY = ‘S‰^—p•ª‚ÌDcDraweÀ•W‚É‚æ‚éYÀ•W”ÍˆÍ
+				//zoneDcdY = å…¨é‹ç”¨åˆ†ã®DcDraweåº§æ¨™ã«ã‚ˆã‚‹Yåº§æ¨™ç¯„å›²
 				zoneDcdY = zonexyOperationLeftDcd.getY().CrossZone(zoneDcdY);
-				//zoneDcdY =	cü‚ğ•`‰æ‚·‚é”ÍˆÍ‚Ì DcDrawÀ•W
+				//zoneDcdY =	ç¸¦ç·šã‚’æç”»ã™ã‚‹ç¯„å›²ã® DcDrawåº§æ¨™
 			}
-			//zoneDcdY =	cü‚ğ•`‰æ‚·‚é”ÍˆÍ‚Ì DcDrawÀ•W
+			//zoneDcdY =	ç¸¦ç·šã‚’æç”»ã™ã‚‹ç¯„å›²ã® DcDrawåº§æ¨™
 
 			CDcdLine	aCDcdLine(
 				CdPenProp(
@@ -998,7 +998,7 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 		}
 
 		// --------------------------------
-		//	‰^—pî•ñ‰º‚ÌŒrü
+		//	é‹ç”¨æƒ…å ±ä¸‹ã®ç½«ç·š
 		// --------------------------------
 		int iOperationCount = m_pCDcdAllOperationTable->getOperationNumber()->size();
 		DcdSize iOneOperationSize = DEFAULT_YSIZE_PER_ONEOPERATION();
@@ -1014,12 +1014,12 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 				CDcdFreeLine	aCDcdFreeLine;
 				aCDcdFreeLine.setCdLineProp(linepropGridNormal);
 
-				//	À•W‚ğADgr¨Dcd‚É•ÏŠ·
+				//	åº§æ¨™ã‚’ã€Dgrâ†’Dcdã«å¤‰æ›
 				DcdPos	posDcdY = YDgrToDcd(pIfDcdTarget, posDgrY);
 				posDcdY -= linepropGridNormal.getLogicalunitWidth();
 				CdDcdZone	zoneDcdX = zonexyOperationLeftDcd.getX();
 
-				//	‰ºŒrü•`‰æ
+				//	ä¸‹ç½«ç·šæç”»
 				if (targetOperationLeft.getZone().getY().getPos() - 1 <= posDcdY &&
 					posDcdY < targetOperationLeft.getZone().getY().getEndPos() + 1)
 				{
@@ -1034,7 +1034,7 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 			}
 		}
 		// --------------------------------
-		//	‰^—p”Ô†
+		//	é‹ç”¨ç•ªå·
 		// --------------------------------
 
 
@@ -1077,10 +1077,10 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 
 			CdDcdZone aCdDcdZone_Dgr(posDgrY, iOneOperationSize);
 
-			//	À•W‚ğADgr¨Dcd‚É•ÏŠ·
+			//	åº§æ¨™ã‚’ã€Dgrâ†’Dcdã«å¤‰æ›
 			CdDcdZone aCdDcdZone_Dcd = YDgrToDcd(pIfDcdTarget, aCdDcdZone_Dgr);
 			{
-				//’Ê‚µ”Ô†
+				//é€šã—ç•ªå·
 				CDcdText dcdText(to_tstring(iOperationIndex + 1),
 					CdDrawTextProp(getOperationTableFont(), getStringColor(), aCdDrawTextFormat),
 					to_tstring(iOperationIndex + 1));
@@ -1102,7 +1102,7 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 				continue;
 			}
 			{
-				//‰^—p”Ô†
+				//é‹ç”¨ç•ªå·
 				CDcdText dcdText(strOperationNumber,
 					CdDrawTextProp(getOperationTableFont(), getStringColor(), aCdDrawTextFormat),
 					strOperationNumber);
@@ -1139,7 +1139,7 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 					CdDedJikoku::CConv::ESecondRound_RoundDown,
 					false);
 
-				//	o‹æ‰w–¼&o‹æ‰w
+				//	å‡ºåŒºé§…å&å‡ºåŒºé§…æ™‚åˆ»
 				tstring strOutEkimei;
 				CdDedJikoku aOutJikoku;
 				if (ListOperationTableContent.front().iOuterShihatsuekiIndex != INT_MIN)
@@ -1191,9 +1191,9 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 				}
 
 
-				//CDcdText dcdText_Arrow(_T("¨"),
+				//CDcdText dcdText_Arrow(_T("â†’"),
 				//	CdDrawTextProp(getOperationTableFont(), getStringColor(), aCdDrawTextFormat),
-				//	_T("¨"));
+				//	_T("â†’"));
 
 				//zonexyDcdZoneXy.setX(m_CdDcdZone_X[4]);
 				//aTarget = CaDcdTargetItemPosition(&targetOperationLeft, zonexyDcdZoneXy);
@@ -1206,7 +1206,7 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 		}
 	}
 	// --------------------------------
-	//	‰^—pî•ñ•”(‰E‘¤)‚ÌŒrü
+	//	é‹ç”¨æƒ…å ±éƒ¨(å³å´)ã®ç½«ç·š
 	// --------------------------------
 	if (!getNoDisplayRightSpace())
 	{
@@ -1215,7 +1215,7 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 			zonexyOperationRightDcd.getX().getPos() - SizeShiftRightZone,
 			zonexyOperationRightDcd.getX().getSize());
 		zonexyOperationRightDcd.setX(zoneXOperationRightDcd);
-		//zonexyOperationLeftDcd = ‰w–¼•\¦•”•ª‚ÌDcDrawÀ•W‚É‚æ‚é”ÍˆÍ
+		//zonexyOperationLeftDcd = é§…åè¡¨ç¤ºéƒ¨åˆ†ã®DcDrawåº§æ¨™ã«ã‚ˆã‚‹ç¯„å›²
 
 		CaDcdTargetItemPosition	targetitemposOperationRight(pIfDcdTarget, zonexyOperationRightDcd);
 		CaDcdTargetClip targetOperationRight(&targetitemposOperationRight, zonexyOperationRightDcd);
@@ -1223,14 +1223,14 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 
 		CdDcdZoneXy	zonexyZone_Dgr = getZone_Dgr(pIfDcdTarget);
 		// --------------------------------
-		//CDcdLine ‚ğg‚Á‚½Œrü•`‰æ
+		//CDcdLine ã‚’ä½¿ã£ãŸç½«ç·šæç”»
 		// --------------------------------
 		{
 			CdDcdZone	zoneDcdY;
 			{
 				DcdPos posDgrY = zonexyZone_Dgr.getY().getPos();
 				CdDcdZone	zoneDgrY(posDgrY, getOperationNumber()->size()* m_pCDcdAllOperationTable->DEFAULT_YSIZE_PER_ONEOPERATION() - posDgrY);
-				//zoneDgrY = ‘S‰^—p•ª‚Ìƒ_ƒCƒ„ƒOƒ‰ƒ€À•W‚É‚æ‚éYÀ•W”ÍˆÍ
+				//zoneDgrY = å…¨é‹ç”¨åˆ†ã®ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åº§æ¨™ã«ã‚ˆã‚‹Yåº§æ¨™ç¯„å›²
 				if (getClippingCount() > 0)
 				{
 					DcdSize YSize = getClippingCount() * m_pCDcdAllOperationTable->DEFAULT_YSIZE_PER_ONEOPERATION();
@@ -1242,11 +1242,11 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 				}
 				zoneDcdY = YDgrToDcd(pIfDcdTarget, zoneDgrY);
 
-				//zoneDcdY = ‘S‰^—p•ª‚ÌDcDraweÀ•W‚É‚æ‚éYÀ•W”ÍˆÍ
+				//zoneDcdY = å…¨é‹ç”¨åˆ†ã®DcDraweåº§æ¨™ã«ã‚ˆã‚‹Yåº§æ¨™ç¯„å›²
 				zoneDcdY = zonexyOperationRightDcd.getY().CrossZone(zoneDcdY);
-				//zoneDcdY =	cü‚ğ•`‰æ‚·‚é”ÍˆÍ‚Ì DcDrawÀ•W
+				//zoneDcdY =	ç¸¦ç·šã‚’æç”»ã™ã‚‹ç¯„å›²ã® DcDrawåº§æ¨™
 			}
-			//zoneDcdY =	cü‚ğ•`‰æ‚·‚é”ÍˆÍ‚Ì DcDrawÀ•W
+			//zoneDcdY =	ç¸¦ç·šã‚’æç”»ã™ã‚‹ç¯„å›²ã® DcDrawåº§æ¨™
 
 			CDcdLine	aCDcdLine(
 				CdPenProp(
@@ -1314,7 +1314,7 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 		}
 
 		// --------------------------------
-		//	‰^—pî•ñ‰º‚ÌŒrü
+		//	é‹ç”¨æƒ…å ±ä¸‹ã®ç½«ç·š
 		// --------------------------------
 		int iOperationCount = m_pCDcdAllOperationTable->getOperationNumber()->size();
 		DcdSize iOneOperationSize = DEFAULT_YSIZE_PER_ONEOPERATION();
@@ -1330,12 +1330,12 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 				CDcdFreeLine	aCDcdFreeLine;
 				aCDcdFreeLine.setCdLineProp(linepropGridNormal);
 
-				//	À•W‚ğADgr¨Dcd‚É•ÏŠ·
+				//	åº§æ¨™ã‚’ã€Dgrâ†’Dcdã«å¤‰æ›
 				DcdPos	posDcdY = YDgrToDcd(pIfDcdTarget, posDgrY);
 				posDcdY -= linepropGridNormal.getLogicalunitWidth();
 				CdDcdZone	zoneDcdX = zonexyOperationRightDcd.getX();
 
-				//	‰ºŒrü•`‰æ
+				//	ä¸‹ç½«ç·šæç”»
 				if (targetOperationRight.getZone().getY().getPos() - 1 <= posDcdY &&
 					posDcdY < targetOperationRight.getZone().getY().getEndPos() + 1)
 				{
@@ -1350,7 +1350,7 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 			}
 		}
 		// --------------------------------
-		//	‰w–¼
+		//	é§…å
 		// --------------------------------
 
 
@@ -1393,7 +1393,7 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 
 			CdDcdZone aCdDcdZone_Dgr(posDgrY, iOneOperationSize);
 
-			//	À•W‚ğADgr¨Dcd‚É•ÏŠ·
+			//	åº§æ¨™ã‚’ã€Dgrâ†’Dcdã«å¤‰æ›
 			CdDcdZone aCdDcdZone_Dcd = YDgrToDcd(pIfDcdTarget, aCdDcdZone_Dgr);
 			tstring strOperationNumber = getOperationNumber()->at(iOperationIndex);
 			if (contOperationTableContent[strOperationNumber].empty())
@@ -1421,7 +1421,7 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 					CdDedJikoku::CConv::ESecondRound_RoundDown,
 					false);
 
-				//	“ü‹æ—ñÔnI’…‰w–¼&“ü‹æ—ñÔ‰w
+				//	å…¥åŒºåˆ—è»Šå§‹çµ‚ç€é§…å&å…¥åŒºåˆ—è»Šé§…æ™‚åˆ»
 
 				tstring strInEkimei;
 				CdDedJikoku aInJikoku;
@@ -1479,7 +1479,7 @@ bool CDcdAllOperationTable2::DcDraw(IfDcdTarget* pIfDcdTarget)
 	}
 
 	// --------------------------------
-	//	ƒ_ƒCƒ„‚Ì•`‰æ
+	//	ãƒ€ã‚¤ãƒ¤ã®æç”»
 	// --------------------------------
 	if (!getNoDisplayAllOperationTableSpace())
 	{
@@ -1498,7 +1498,7 @@ bool CDcdAllOperationTable2::getItemSize( IfDcdTarget* pIfDcdTarget ,
 //	CDcdAllOperationTable
 // ********************************
 	// ********************************
-	//@name CDcdAllOperationTable-ŠÖ˜A
+	//@name CDcdAllOperationTable-é–¢é€£
 	// ********************************
 CdDcdZoneXy* CDcdAllOperationTable2::getCdDcdZone()const
 {
@@ -1538,7 +1538,7 @@ CDcdAllOperationTable2& CDcdAllOperationTable2::setClippingCount(int value)
 	return *this;
 }
 	// ********************************
-	//@name CDcdAllOperationTable-‘®«-CdDedDispProp ‚©‚ç“Ç‚İ‚İ‰Â”\
+	//@name CDcdAllOperationTable-å±æ€§-CdDedDispProp ã‹ã‚‰èª­ã¿è¾¼ã¿å¯èƒ½
 	// ********************************
 //CdFontProp	CDcdAllOperationTable2::getDiaRessyaFont()const 
 //{
@@ -1600,7 +1600,7 @@ CDcdAllOperationTable2& CDcdAllOperationTable2::setStringColor(CdColorProp value
 	return *this;
 }
 	// ********************************
-	//@name CDcdAllOperationTable-‘®«-CdDedDispProp ‚É‚Í‚È‚¢‚à‚Ì
+	//@name CDcdAllOperationTable-å±æ€§-CdDedDispProp ã«ã¯ãªã„ã‚‚ã®
 	// ********************************
 bool	CDcdAllOperationTable2::getDisplayRessyabangou()const 
 {
@@ -1706,7 +1706,7 @@ CDcdAllOperationTable2 & CDcdAllOperationTable2::setDisplayParentSyubetsu(bool v
 	return *this;
 }
 	// ********************************
-	//@name CDcdAllOperationTable-‘€ì
+	//@name CDcdAllOperationTable-æ“ä½œ
 	// ********************************
 
 CDcdAllOperationTable2& CDcdAllOperationTable2::readCdDedDispProp( const CdDedDispProp& value ) 
@@ -1769,8 +1769,8 @@ int CDcdAllOperationTable2::calcCentDedRessyaOfPoint(
 	}
 
 	CaDcdTargetItemPosition	targetDiagram( pIfDcdTarget , zonexyDiagram ) ;
-	//targetDiagram = ƒ_ƒCƒ„ƒOƒ‰ƒ€‚Ì•`‰æ‚ğs‚¤—Ìˆæ
-	//zonexyDiagram = ƒ_ƒCƒ„ƒOƒ‰ƒ€‚Ì•`‰æ‚ğs‚¤—Ìˆæ
+	//targetDiagram = ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã®æç”»ã‚’è¡Œã†é ˜åŸŸ
+	//zonexyDiagram = ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã®æç”»ã‚’è¡Œã†é ˜åŸŸ
 
 	return m_pCDcdAllOperationTable->calcCentDedRessyaOfPoint(
 		&targetDiagram ,
@@ -1793,8 +1793,8 @@ int CDcdAllOperationTable2::calcOperationIndexOfPoint(
 	}
 
 	CaDcdTargetItemPosition	targetDiagram(pIfDcdTarget, zonexyDiagram);
-	//targetDiagram = ƒ_ƒCƒ„ƒOƒ‰ƒ€‚Ì•`‰æ‚ğs‚¤—Ìˆæ
-	//zonexyDiagram = ƒ_ƒCƒ„ƒOƒ‰ƒ€‚Ì•`‰æ‚ğs‚¤—Ìˆæ
+	//targetDiagram = ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã®æç”»ã‚’è¡Œã†é ˜åŸŸ
+	//zonexyDiagram = ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã®æç”»ã‚’è¡Œã†é ˜åŸŸ
 
 	return m_pCDcdAllOperationTable->calcOperationIndexOfPoint(
 		&targetDiagram,
@@ -1804,7 +1804,7 @@ int CDcdAllOperationTable2::calcOperationIndexOfPoint(
 }
 
 	// ********************************
-	//@name CDcdAllOperationTable-ƒ_ƒCƒ„ƒOƒ‰ƒ€À•W‚ÆAIfDcdTarget ã‚ÌÀ•W‚ğ•ÏŠ·
+	//@name CDcdAllOperationTable-ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åº§æ¨™ã¨ã€IfDcdTarget ä¸Šã®åº§æ¨™ã‚’å¤‰æ›
 	// ********************************
 DcdPos CDcdAllOperationTable2::XDgrToDcd( IfDcdTarget* pIfDcdTarget , DcdPos posSrc ) 
 {
@@ -1926,7 +1926,7 @@ CdDcdZoneXy CDcdAllOperationTable2::DgrFromDcd( IfDcdTarget* pIfDcdTarget ,
 
 
 	// ********************************
-	//@name CDcdAllOperationTable2-‘®«
+	//@name CDcdAllOperationTable2-å±æ€§
 	// ********************************
 //CdFontProp	CDcdAllOperationTable2::getDiaEkimeiFont()const 
 //{
@@ -1984,7 +1984,7 @@ CDcdAllOperationTable2& CDcdAllOperationTable2::setNoDisplayRightSpace(bool valu
 
 	
 	// ********************************
-	//@name CDcdAllOperationTable2-‘€ì
+	//@name CDcdAllOperationTable2-æ“ä½œ
 	// ********************************
 
 
@@ -1992,7 +1992,7 @@ CdDcdZoneXy CDcdAllOperationTable2::calcHeaderLeftZoneDcd(
 	IfDcdTarget* pIfDcdTarget)const
 {
 	// --------------------------------
-	//	ƒwƒbƒ_[•\¦‚Ì•
+	//	ãƒ˜ãƒƒãƒ€ãƒ¼è¡¨ç¤ºã®å¹…
 	// --------------------------------
 	DcdSize	sizeHeaderX = 0;
 	DcdSize	sizeHeaderY = 0;
@@ -2002,12 +2002,12 @@ CdDcdZoneXy CDcdAllOperationTable2::calcHeaderLeftZoneDcd(
 
 
 		// --------------------------------
-		//	ƒeƒLƒXƒg‚Ì•
+		//	ãƒ†ã‚­ã‚¹ãƒˆã®å¹…
 		CdDcdSizeXy	sizeTextHeader;
 		vector<CDcdText>	dcdtextHeader(getCDcdTextHeader());
 		dcdtextHeader[0].getItemSize(pIfDcdTarget, &sizeTextHeader);
-		//dcdtextEkimei = ƒwƒbƒ_[‚Ì•`‰æ‚ğs‚¤ DcDraw ƒIƒuƒWƒFƒNƒg
-		//sizeTextHeaderRight = ƒwƒbƒ_[‚Ì•`‰æ‚ğs‚¤ DcDraw ƒIƒuƒWƒFƒNƒg‚Ì‘å‚«‚³
+		//dcdtextEkimei = ãƒ˜ãƒƒãƒ€ãƒ¼ã®æç”»ã‚’è¡Œã† DcDraw ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+		//sizeTextHeaderRight = ãƒ˜ãƒƒãƒ€ãƒ¼ã®æç”»ã‚’è¡Œã† DcDraw ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®å¤§ãã•
 
 		if (!getNoDisplayLeftSpace())
 		{
@@ -2020,7 +2020,7 @@ CdDcdZoneXy CDcdAllOperationTable2::calcHeaderLeftZoneDcd(
 				sizeHeaderX = m_CdDcdZone_X_Left[1].getEndPos();
 			}
 			// --------------------------------
-			//	ƒeƒLƒXƒg‚Ì‰E‚Ì‘¾ü
+			//	ãƒ†ã‚­ã‚¹ãƒˆã®å³ã®å¤ªç·š
 			sizeHeaderX += linepropBold.getLogicalunitWidth();
 		}
 
@@ -2028,14 +2028,14 @@ CdDcdZoneXy CDcdAllOperationTable2::calcHeaderLeftZoneDcd(
 		CDcdText	dcdtextJikoku(getCDcdTextJikoku());
 		dcdtextJikoku.getItemSize(pIfDcdTarget, &sizeTextJikoku);
 
-		//ã‘¤Œrü
+		//ä¸Šå´ç½«ç·š
 		sizeHeaderY += linepropNormal.getLogicalunitWidth();
-		//ƒwƒbƒ_[•”‚Æ•”‚ÅƒtƒHƒ“ƒg‚ªˆÙ‚È‚é‚½‚ßA‘å‚«‚¢•û‚É‚‚³‚ğ‡‚í‚¹‚Ü‚·B
+		//ãƒ˜ãƒƒãƒ€ãƒ¼éƒ¨ã¨æ™‚éƒ¨ã§ãƒ•ã‚©ãƒ³ãƒˆãŒç•°ãªã‚‹ãŸã‚ã€å¤§ãã„æ–¹ã«é«˜ã•ã‚’åˆã‚ã›ã¾ã™ã€‚
 		sizeHeaderY += max(sizeTextHeader.getY(), sizeTextJikoku.getY());
-		//‰º‘¤Œrü
+		//ä¸‹å´ç½«ç·š
 		sizeHeaderY += linepropNormal.getLogicalunitWidth();
 	}
-	//sizeHeaderRightX = ‰w–¼—“‚Ì•
+	//sizeHeaderRightX = é§…åæ¬„ã®å¹…
 
 	// --------------------------------
 	CdDcdZoneXy	zonexyHeader;
@@ -2064,7 +2064,7 @@ CdDcdZoneXy CDcdAllOperationTable2::calcHeaderRightZoneDcd(
 {
 	CdDcdZoneXy	zonexyHeaderLeft = calcHeaderLeftZoneDcd(pIfDcdTarget);
 	// --------------------------------
-	//	ƒwƒbƒ_[•\¦‚Ì•
+	//	ãƒ˜ãƒƒãƒ€ãƒ¼è¡¨ç¤ºã®å¹…
 	// --------------------------------
 	DcdSize	sizeHeaderRightX = 0;
 	if (!getNoDisplayRightSpace())
@@ -2073,12 +2073,12 @@ CdDcdZoneXy CDcdAllOperationTable2::calcHeaderRightZoneDcd(
 		CdDcdFreeLineProp	linepropNormal(getCdLinePropGridNormal());
 
 		// --------------------------------
-		//	ƒeƒLƒXƒg‚Ì•
+		//	ãƒ†ã‚­ã‚¹ãƒˆã®å¹…
 		CdDcdSizeXy	sizeTextHeaderRight;
 		vector<CDcdText>	dcdtextHeader(getCDcdTextHeader());
 		dcdtextHeader[0].getItemSize(pIfDcdTarget, &sizeTextHeaderRight);
-		//dcdtextEkimei = ƒwƒbƒ_[‚Ì•`‰æ‚ğs‚¤ DcDraw ƒIƒuƒWƒFƒNƒg
-		//sizeTextHeaderRight = ƒwƒbƒ_[‚Ì•`‰æ‚ğs‚¤ DcDraw ƒIƒuƒWƒFƒNƒg‚Ì‘å‚«‚³
+		//dcdtextEkimei = ãƒ˜ãƒƒãƒ€ãƒ¼ã®æç”»ã‚’è¡Œã† DcDraw ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+		//sizeTextHeaderRight = ãƒ˜ãƒƒãƒ€ãƒ¼ã®æç”»ã‚’è¡Œã† DcDraw ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®å¤§ãã•
 
 		if (getDisplayEkimeiJikoku())
 		{
@@ -2093,7 +2093,7 @@ CdDcdZoneXy CDcdAllOperationTable2::calcHeaderRightZoneDcd(
 			sizeHeaderRightX = linepropNormal.getLogicalunitWidth();
 		}
 	}
-	//sizeHeaderRightX = ‰w–¼—“‚Ì•
+	//sizeHeaderRightX = é§…åæ¬„ã®å¹…
 
 	// --------------------------------
 	CdDcdZoneXy	zonexyHeaderRight;
@@ -2123,8 +2123,8 @@ CdDcdZoneXy CDcdAllOperationTable2::calcJikokuZoneDcd(
 	CdDcdZoneXy	zonexyHeaderRight = calcHeaderRightZoneDcd(pIfDcdTarget);
 
 	// --------------------------------
-	//X²‚ÍA‘S‘Ì‚©‚çƒwƒbƒ_[•”‚Ì‰¡•‚ğ”²‚¢‚½‚à‚Ì
-	//Y²‚ÍAƒwƒbƒ_[•”‚Æ“¯‚¶c•
+	//Xè»¸ã¯ã€å…¨ä½“ã‹ã‚‰ãƒ˜ãƒƒãƒ€ãƒ¼éƒ¨ã®æ¨ªå¹…ã‚’æŠœã„ãŸã‚‚ã®
+	//Yè»¸ã¯ã€ãƒ˜ãƒƒãƒ€ãƒ¼éƒ¨ã¨åŒã˜ç¸¦å¹…
 	CdDcdZoneXy	zonexyJikoku;
 	if (!getNoDisplayAllOperationTableSpace())
 	{
@@ -2151,14 +2151,14 @@ CdDcdZoneXy CDcdAllOperationTable2::calcOperationLeftZoneDcd(
 			IfDcdTarget* pIfDcdTarget )const 
 {
 	// --------------------------------
-	//	ƒwƒbƒ_[‚Ì‚‚³
+	//	ãƒ˜ãƒƒãƒ€ãƒ¼ã®é«˜ã•
 	// --------------------------------
 	CdDcdZoneXy	zonexyHeader = calcHeaderLeftZoneDcd(pIfDcdTarget);
 
 	// --------------------------------
 	CdDcdZoneXy	zonexyOperationLeft ;
 	zonexyOperationLeft.setX(zonexyHeader.getX());
-	//ƒwƒbƒ_[•”•ª‚ğ“Æ—§‚³‚¹‚é‚½‚ß‚ÉAƒwƒbƒ_[‚Ì‚‚³•ª‚¾‚¯ã‚ğƒgƒŠƒ~ƒ“ƒO‚·‚é
+	//ãƒ˜ãƒƒãƒ€ãƒ¼éƒ¨åˆ†ã‚’ç‹¬ç«‹ã•ã›ã‚‹ãŸã‚ã«ã€ãƒ˜ãƒƒãƒ€ãƒ¼ã®é«˜ã•åˆ†ã ã‘ä¸Šã‚’ãƒˆãƒªãƒŸãƒ³ã‚°ã™ã‚‹
 	zonexyOperationLeft.setY(CdDcdZone(
 		pIfDcdTarget->getZone().getY().getPos() + zonexyHeader.getY().getSize(),
 		pIfDcdTarget->getZone().getY().getSize() - zonexyHeader.getY().getSize()));
@@ -2180,14 +2180,14 @@ CdDcdZoneXy CDcdAllOperationTable2::calcOperationRightZoneDcd(
 	IfDcdTarget* pIfDcdTarget)const
 {
 	// --------------------------------
-	//	ƒwƒbƒ_[‚Ì‚‚³
+	//	ãƒ˜ãƒƒãƒ€ãƒ¼ã®é«˜ã•
 	// --------------------------------
 	CdDcdZoneXy	zonexyHeaderRight = calcHeaderRightZoneDcd(pIfDcdTarget);
 
 	// --------------------------------
 	CdDcdZoneXy	zonexyOperationRight;
 	zonexyOperationRight.setX(zonexyHeaderRight.getX());
-	//ƒwƒbƒ_[•”•ª‚ğ“Æ—§‚³‚¹‚é‚½‚ß‚ÉAƒwƒbƒ_[‚Ì‚‚³•ª‚¾‚¯ã‚ğƒgƒŠƒ~ƒ“ƒO‚·‚é
+	//ãƒ˜ãƒƒãƒ€ãƒ¼éƒ¨åˆ†ã‚’ç‹¬ç«‹ã•ã›ã‚‹ãŸã‚ã«ã€ãƒ˜ãƒƒãƒ€ãƒ¼ã®é«˜ã•åˆ†ã ã‘ä¸Šã‚’ãƒˆãƒªãƒŸãƒ³ã‚°ã™ã‚‹
 	zonexyOperationRight.setY(CdDcdZone(
 		pIfDcdTarget->getZone().getY().getPos() + zonexyHeaderRight.getY().getSize(),
 		pIfDcdTarget->getZone().getY().getSize() - zonexyHeaderRight.getY().getSize()));
@@ -2209,7 +2209,7 @@ CdDcdZoneXy CDcdAllOperationTable2::calcDiagramZoneDcd(
 	IfDcdTarget* pIfDcdTarget)const
 {
 	// --------------------------------
-	//	‰w–¼•\¦E‚Ì—Ìˆæ
+	//	é§…åè¡¨ç¤ºãƒ»æ™‚åˆ»ã®é ˜åŸŸ
 	// --------------------------------
 	CdDcdZoneXy	zonexyJikoku = calcJikokuZoneDcd(pIfDcdTarget);
 
@@ -2236,7 +2236,7 @@ CdDcdZoneXy CDcdAllOperationTable2::calcDiagramZoneDcd(
 	const int iType)const
 {
 	// --------------------------------
-	//	‰w–¼•\¦E‚Ì—Ìˆæ
+	//	é§…åè¡¨ç¤ºãƒ»æ™‚åˆ»ã®é ˜åŸŸ
 	// --------------------------------
 	CdDcdZoneXy	zonexyJikoku = calcJikokuZoneDcd(pIfDcdTarget);
 

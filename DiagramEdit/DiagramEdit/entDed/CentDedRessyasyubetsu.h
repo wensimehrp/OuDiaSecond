@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -78,9 +78,9 @@ Copyright (C) 2006-2017 take-okm
 #define  CentDedRessyasyubetsu_h
 
 #include <string>
-#include "str\tstring.h"
-#include "NsMu\CChildBase.h"
-#include "DcdCd\DcDrawProp\CdColorProp.h"
+#include "str¥tstring.h"
+#include "NsMu¥CChildBase.h"
+#include "DcdCd¥DcDrawProp¥CdColorProp.h"
 
 
 namespace entDed{
@@ -93,30 +93,30 @@ namespace entDed{
 // ****************************************************************
 /**
 @brief
-  DiagramEdit �́A�H���ɂ���w��Ԏ�ʁx�P��ނ�\���܂��B
+  DiagramEdit の、路線にある『列車種別』１種類を表します。
 
-  �����Ƃ��āA�w��ʖ��x�ƁA���̗�Ԏ�ʂ�\�����鎞���\�r���[�E
-�_�C���O�����r���[�ł̕`��F�E���X�^�C����ێ����܂��B
+  属性として、『種別名』と、その列車種別を表示する時刻表ビュー・
+ダイヤグラムビューでの描画色・線スタイルを保持します。
 
 
-����
+制約
  -------------------------------- 
-�����̃I�u�W�F�N�g���e�I�u�W�F�N�gCentDedRessyasyubetsuCont �̎q�ł���ꍇ�A��Ԏ�ʖ��͋󕶎���ł����Ă͂Ȃ�܂���B
+△このオブジェクトが親オブジェクトCentDedRessyasyubetsuCont の子である場合、列車種別名は空文字列であってはなりません。
 
-��m_iJikokuhyouFontIndex �́A0�ȏ� JIKOKUHYOUFONT_COUNT �����ł��B
+○m_iJikokuhyouFontIndex は、0以上 JIKOKUHYOUFONT_COUNT 未満です。
 
-����̃G���[�����E�C��
+操作のエラー検査・修正
  -------------------------------- 
-���㏑��(operator=): ���̃I�u�W�F�N�g���e�I�u�W�F�N�gCentDedRessyasyubetsuCont �̎q�ł���ꍇ�ŁA������̗�Ԏ�ʖ����󕶎���ł���ꍇ�A����͗�O�X���[�Ƃ��܂��B(CentDedRessyasyubetsuCont::set()�ŃG���[�ɂȂ�I�u�W�F�N�g�̑���͗�O�X���[�Ƃ��܂��B)
+△上書き(operator=): このオブジェクトが親オブジェクトCentDedRessyasyubetsuCont の子である場合で、代入元の列車種別名が空文字列である場合、代入は例外スローとします。(CentDedRessyasyubetsuCont::set()でエラーになるオブジェクトの代入は例外スローとします。)
 
-���e�I�u�W�F�N�g���ύX(setParent):adjust�����s����
+○親オブジェクトが変更(setParent):adjustを実行する
 
-��setName:���̃I�u�W�F�N�g���A�e�I�u�W�F�N�g CentDedRessyasyubetsu �̎q�ł���ꍇ�A�󕶎���ւ̕ύX�̓G���[�Ƃ��܂��B
-(CentDedRessyasyubetsuCont::set()�ŃG���[�ɂȂ�悤�ȑ����ύX�̓G���[�Ƃ��܂��B)
-��setJikokuhyouFontIndex() : 0�ȏ� JIKOKUHYOUFONT_COUNT �͈̔͂ɂȂ��ꍇ�́A�G���[�ł��B
+△setName:このオブジェクトが、親オブジェクト CentDedRessyasyubetsu の子である場合、空文字列への変更はエラーとします。
+(CentDedRessyasyubetsuCont::set()でエラーになるような属性変更はエラーとします。)
+○setJikokuhyouFontIndex() : 0以上 JIKOKUHYOUFONT_COUNT の範囲にない場合は、エラーです。
 
 
-����ɍ����悤�ɑ������C��(adjust)
+制約に合うように属性を修正(adjust)
  -------------------------------- 
 
  */
@@ -124,62 +124,62 @@ class CentDedRessyasyubetsu: public CChildBase
 {
  public:
 	// ****************************************************************
-	//	�C���i�[�^�C�v
+	//	インナータイプ
 	// ****************************************************************
 	typedef CChildBase super ;
 
 	/**
-		��Ԑ�(����)�̌`���\���񋓂ł��B
+		列車線(直線)の形状を表す列挙です。
 	*/
 	enum ESenStyle
 	{
-		/// ����
+		/// 実線
 		SenStyle_Jissen = 0 ,
-		/// �j��
+		/// 破線
 		SenStyle_Hasen ,
-		/// �_��
+		/// 点線
 		SenStyle_Tensen ,
-		/// ��_����
+		/// 一点鎖線
 		SenStyle_Ittensasen ,
 	};
 	/**
 	@brief
-		��Ԑ�(����)�̐��̌`�󑮐���\���P���f�[�^�N���X�B
+		列車線(直線)の線の形状属性を表す単純データクラス。
 	*/
 	class CdDiagramLineStyle
 	{
 	private:
 		// ********************************
-		///@name ����
+		///@name 属性
 		// ********************************
 		///@{
 		/**
-	  		�_�C���O�����̐��F�B
+	  		ダイヤグラムの線色。
 		  
-	  		�K��l�́A���B
+	  		規定値は、黒。
 		 */
 		CdColorProp	m_colorDiagramSenColor ;
 
 		/**
-			�_�C���O�����̐��X�^�C���B
+			ダイヤグラムの線スタイル。
 		  
-	  		�K��l�́A SenStyle_Jissen
+	  		規定値は、 SenStyle_Jissen
 		 */
 		ESenStyle	m_eDiagramSenStyle ;
 		
 		/**
-	  		�_�C���O�����̐��̑����B
+	  		ダイヤグラムの線の太さ。
 		  
-	  		�_�C���O�����̐��������ł���� true�B
-	  		�א��Ȃ� false �ł��B
+	  		ダイヤグラムの線が太線であれば true。
+	  		細線なら false です。
 		  
-	  		�K��l�́A false �ł��B
+	  		規定値は、 false です。
 		 */
 		bool m_bDiagramSenIsBold ;
 
 	public:
 		// ********************************
-		//	�R���X�g���N�^
+		//	コンストラクタ
 		// ********************************
 		CdDiagramLineStyle( 
 			const CdColorProp& colorDiagramSenColor ,
@@ -198,7 +198,7 @@ class CentDedRessyasyubetsu: public CChildBase
 		{};
 
 		// ********************************
-		///@name CdDiagramLineStyle::����
+		///@name CdDiagramLineStyle::属性
 		// ********************************
 		///@{
 		CdColorProp	getDiagramSenColor()const
@@ -217,46 +217,46 @@ class CentDedRessyasyubetsu: public CChildBase
 
 
 	/**
-		��Ԏ�ʖ��́A��ԉw�����̕��@�̑I������\���񋓂ł��B
+		列車種別毎の、停車駅明示の方法の選択肢を表す列挙です。
 	*/
 	enum EStopMarkDrawType
 	{
 		/**
-			��ԉw����=��ԉw�𖾎��@
+			停車駅明示=停車駅を明示　
 			
-			����l�B�_�C���O�����r���[�Œ�ԉw������ON�̏ꍇ�́A
-			�Z���Ԓ�ԉw�Ɂ���`�悵�܂��B
+			既定値。ダイヤグラムビューで停車駅明示がONの場合は、
+			短時間停車駅に○を描画します。
 		*/
 		EStopMarkDrawType_DrawOnStop = 0 ,
 		
 		/**
-			��ԉw����=�������Ȃ�
+			停車駅明示=明示しない
 		
-			��ԉw�������s���܂���B
+			停車駅明示を行いません。
 			
-			�e�w��ԂȂǁA��ԉw�����̕K�v�̂Ȃ���Ԏ�ʂł��邱�Ƃ�
-			�����܂��B
+			各駅停車など、停車駅明示の必要のない列車種別であることを
+			示します。
 			
-			�_�C���O�����r���[�̑�������ԉw����=ON
+			ダイヤグラムビューの属性が停車駅明示=ON
 			(CDcdDiagram::m_eStopMarkDraw==
 				CDcdDiagram::EStopMarkDraw_DrawOnBriefStop )
-			���s���ꍇ�ł��A���̗�Ԏ�ʂ̗�Ԃɂ́A
-			��ԉw�����͍s���܂���B
+			を行う場合でも、この列車種別の列車には、
+			停車駅明示は行われません。
 		*/
 		EStopMarkDrawType_Nothing ,
 
 		/**
-			���݂͎g���Ă��܂���B�����ɗ\�񂳂�Ă��܂��B
+			現在は使われていません。将来に予約されています。
 			
-			��ԉw����=�ʉ߉w�𖾎�
+			停車駅明示=通過駅を明示
 
-			�_�C���O�����r���[�Œ�ԉw������ON�̏ꍇ�́A
-			�ʉ߉w�ɋL����`�悵�܂��B��ԉw�ւ̕`��͍s���܂���B
+			ダイヤグラムビューで停車駅明示がONの場合は、
+			通過駅に記号を描画します。停車駅への描画は行われません。
 		*/
 		EStopMarkDrawType_DrawOnPass ,
 	};
 	/**
-		���̃N���X���X���[�����O
+		このクラスがスローする例外
 	*/
 	class LException
 	{
@@ -268,7 +268,7 @@ class CentDedRessyasyubetsu: public CChildBase
 
 public:
 	/**
-		�����\��ʃt�H���g�̐��B
+		時刻表画面フォントの数。
 	*/
 	static const int JIKOKUHYOUFONT_COUNT = 8 ;
 
@@ -276,92 +276,92 @@ public:
 
 private:
 	// ********************************
-	///@name ����
+	///@name 属性
 	// ********************************
 	///@{
 	/**
-	  	��ʖ��B
+	  	種別名。
 	  
-	  	�K��l�́A�󕶎���B
+	  	規定値は、空文字列。
 	  
-	  	���̒l���󕶎���̏ꍇ�A���̃I�u�W�F�N�g�͖����ł��B
+	  	この値が空文字列の場合、このオブジェクトは無効です。
 	 */
 	tstring	m_strSyubetsumei ;
 	
 	/**
-	  	���́i��ʖ��̗��́j�B
+	  	略称（種別名の略称）。
 	  
-	  	�K��l�́A�󕶎���B
+	  	規定値は、空文字列。
 	 */
 	tstring	m_strRyakusyou ;
 	
 	/**
-	  	�����\�����F(�_�C���O�����̗�ԏ��̕����F�����˂܂�)
+	  	時刻表文字色(ダイヤグラムの列車情報の文字色を兼ねます)
 	  
-	  	�K��l�́A���B
+	  	規定値は、黒。
 	 */
 	CdColorProp	m_colorJikokuhyouMojiColor ;
 
 	/**
-		�����\�r���[�ŁA���̗�Ԏ�ʂ̎�����\�����邽�߂̎����\�t�H���g�B
-		�͈͂́A 0 �ȏ�A JIKOKUHYOUFONT_COUNT �����ł��B
+		時刻表ビューで、この列車種別の時刻を表示するための時刻表フォント。
+		範囲は、 0 以上、 JIKOKUHYOUFONT_COUNT 未満です。
 	
-	- 0�F�w�����\�r���[ 1�x
-	- 1: �w�����\�r���[ 2�x
-	- 2: �w�����\�r���[ 3�x
+	- 0：『時刻表ビュー 1』
+	- 1: 『時刻表ビュー 2』
+	- 2: 『時刻表ビュー 3』
 	*/
 	int m_iJikokuhyouFontIndex ;
 
 	/**
-		�����\�w�i�F�A�_�C���̃v���p�e�B�ɂ����āA�w�i�F�p�^�[������ʐF�̏ꍇ�ɎQ�Ƃ���܂��B
+		時刻表背景色、ダイヤのプロパティにおいて、背景色パターンが種別色の場合に参照されます。
 
-		�K��l�́A���B
+		規定値は、白。
 	*/
 	CdColorProp	m_colorJikokuhyouBackColor;
 
 	/**
-		��Ԑ�(����)�̐��̌`�󑮐��B
+		列車線(直線)の線の形状属性。
 	*/
 	CdDiagramLineStyle	m_CdDiagramLineStyle ;
 
 	/**
-		��Ԏ�ʖ��́A��ԉw�����̕��@�B
-		����l�́A EStopMarkDrawType_DrawOnStop �B
+		列車種別毎の、停車駅明示の方法。
+		既定値は、 EStopMarkDrawType_DrawOnStop 。
 	*/
 	EStopMarkDrawType m_eStopMarkDrawType ;
 
 	/**
-		�e���Index�ł��B
-		�K��l(OFF)��-1�ł��B
-		�l��0�ȏ��ʐ������̎��A�e��ʂ��L���ɂȂ�܂��B
+		親種別Indexです。
+		規定値(OFF)は-1です。
+		値が0以上種別数未満の時、親種別が有効になります。
 	*/
 	int m_iParentSyubetsuIndex;
 
 	/**
-		�B����ʂ̐ݒ�
-		���̒l��True�̏ꍇ�A�J�X�^�}�C�Y�����\�Ɖw�����\�ł��̎�ʂ̗�Ԃ���\���ɂȂ�܂��B
+		隠し種別の設定
+		この値がTrueの場合、カスタマイズ時刻表と駅時刻表でこの種別の列車が非表示になります。
 	*/
 	bool m_bHidden;
 	///@}
  public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	/**
 	   @param strSyubetsumei [in]
-	  	��ʖ��B
+	  	種別名。
 	   @param strRyakusyou [in]
-	  	���́i��ʖ��̗��́j�B
+	  	略称（種別名の略称）。
 	   @param colorJikokuhyouMojiColor [in]
-	  	�����\�����F�B
+	  	時刻表文字色。
 	   @param colorDiagramSenColor [in] 
-	  	�_�C���O�����̐��F�B
+	  	ダイヤグラムの線色。
 	   @param eDiagramSenStyle [in]
-	  	�_�C���O�����̐��X�^�C���B
+	  	ダイヤグラムの線スタイル。
 	   @param bDiagramSenIsBold [in]
-	  	�_�C���O�����̐��̑����B
-	  	�_�C���O�����̐��������ł���� true�B
-	  	�א��Ȃ� false �ł��B
+	  	ダイヤグラムの線の太さ。
+	  	ダイヤグラムの線が太線であれば true。
+	  	細線なら false です。
 	 */
 	CentDedRessyasyubetsu( 
 			const tstring& strSyubetsumei ,
@@ -375,27 +375,27 @@ private:
 	CentDedRessyasyubetsu() ;
 
 	/** 
-		���̃I�u�W�F�N�g���A�e�I�u�W�F�N�gCentDedEkiCont ��
-		�q�ł���ꍇ�ŁA������� CentDedEkiCont::set() �ŃG���[��
-		�Ȃ�ꍇ�A��O�X���[�ɂȂ�܂��B
+		このオブジェクトが、親オブジェクトCentDedEkiCont の
+		子である場合で、代入元が CentDedEkiCont::set() でエラーに
+		なる場合、例外スローになります。
 	@param value 
-		�����
+		代入元
 	@exception LException 
 	*/
 	CentDedRessyasyubetsu& operator=( const CentDedRessyasyubetsu& value ) ;
 
 public:
 	// ********************************
-	///@name CParentBase-����
+	///@name CParentBase-操作
 	// ********************************
 	///@{
-	/** ���e�I�u�W�F�N�g�̕ύX(setParent()):  adjust()�����s���� */
+	/** ○親オブジェクトの変更(setParent()):  adjust()を実行する */
 	virtual void setParent( CParentBase* pParent ) ;
 	///@}
 
  public:
 	// ********************************
-	///@name CentDedRessyasyubetsu-����
+	///@name CentDedRessyasyubetsu-属性
 	// ********************************
 	///@{
 	/** @see m_strSyubetsumei  */
@@ -423,7 +423,7 @@ public:
 	/**
 	@see m_iJikokuhyouFontIndex
 	@exception LException
-		value >= JIKOKUHYOUFONT_COUNT �̏ꍇ�ɃX���[����܂��B
+		value >= JIKOKUHYOUFONT_COUNT の場合にスローされます。
 	*/
 	CentDedRessyasyubetsu& setJikokuhyouFontIndex( int value );
 
@@ -445,22 +445,22 @@ public:
 	void setCdDiagramLineStyle( const CdDiagramLineStyle& value )
 	{	m_CdDiagramLineStyle = value ;};
 
-	/// getCdDiagramLineStyle(),getDiagramSenColor() �Ɠ����ł��B�݊����̂��߂Ɏc����Ă��܂��B
+	/// getCdDiagramLineStyle(),getDiagramSenColor() と等価です。互換性のために残されています。
 	CdColorProp	getDiagramSenColor()const{
 		return 	m_CdDiagramLineStyle.getDiagramSenColor() ;};
-	/// setCdDiagramLineStyle() �ő�ւł��܂��B�݊����̂��߂Ɏc����Ă��܂��B
+	/// setCdDiagramLineStyle() で代替できます。互換性のために残されています。
 	CentDedRessyasyubetsu& setDiagramSenColor( const CdColorProp&	value ){
 		m_CdDiagramLineStyle.setDiagramSenColor( value ); return *this ; } ;
-	/// getCdDiagramLineStyle(),getDiagramSenStyle() �Ɠ����ł��B�݊����̂��߂Ɏc����Ă��܂��B
+	/// getCdDiagramLineStyle(),getDiagramSenStyle() と等価です。互換性のために残されています。
 	ESenStyle	getDiagramSenStyle()const{
 		return m_CdDiagramLineStyle.getDiagramSenStyle() ;};
-	/// setCdDiagramLineStyle() �ő�ւł��܂��B�݊����̂��߂Ɏc����Ă��܂��B
+	/// setCdDiagramLineStyle() で代替できます。互換性のために残されています。
 	CentDedRessyasyubetsu& setDiagramSenStyle( ESenStyle value ){
 		m_CdDiagramLineStyle.setDiagramSenStyle( value ); return *this ;};
-	/// getCdDiagramLineStyle(),getDiagramSenIsBold() �Ɠ����ł��B�݊����̂��߂Ɏc����Ă��܂��B
+	/// getCdDiagramLineStyle(),getDiagramSenIsBold() と等価です。互換性のために残されています。
 	bool getDiagramSenIsBold()const{ 
 		return m_CdDiagramLineStyle.getDiagramSenIsBold() ; };
-	/// setCdDiagramLineStyle() �ő�ւł��܂��B�݊����̂��߂Ɏc����Ă��܂��B
+	/// setCdDiagramLineStyle() で代替できます。互換性のために残されています。
 	CentDedRessyasyubetsu& setDiagramSenIsBold( bool value ){
 		m_CdDiagramLineStyle.setDiagramSenIsBold( value ) ; return *this ;};
 
@@ -494,21 +494,21 @@ public:
 	///@}
 
 	// ********************************
-	///@name CentDedRessyasyubetsu-����
+	///@name CentDedRessyasyubetsu-操作
 	// ********************************
 	///@{
 	/**
-		this �̑���������ɔ����Ă���ꍇ�A����ɍ����悤�ɁA������
-		�C�����܂��B
+		this の属性が制約に反している場合、制約に合うように、属性を
+		修正します。
 
-		���̃N���X�ł́A�����͂���܂���B
+		このクラスでは、処理はありません。
 
 	*/
 	void adjust() ;
 
 	/**
 	@return
-		this������( m_strSyubetsumei ���󕶎���)�Ȃ�^�ł��B
+		thisが無効( m_strSyubetsumei が空文字列)なら真です。
 	*/
 	bool isNull()const{	return m_strSyubetsumei.empty() ;};
 	///@}

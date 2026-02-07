@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍAtake-okm‚ªì¬‚µ‚½OuDia‚ğ‰ü‘¢‚µ‚½ƒ\ƒtƒgƒEƒFƒA‚Å‚·B
-‚±‚ÌƒvƒƒOƒ‰ƒ€—˜—p‚É‚Â‚¢‚Ä‚ÍAtake-okm‹LÚ‚Ì‰º‹L•¶‘‚É€‹’‚µ‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã€take-okmæ°ãŒä½œæˆã—ãŸOuDiaã‚’æ”¹é€ ã—ãŸã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ åˆ©ç”¨ã«ã¤ã„ã¦ã¯ã€take-okmæ°è¨˜è¼‰ã®ä¸‹è¨˜æ–‡æ›¸ã«æº–æ‹ ã—ã¾ã™ã€‚
 */
 #if !defined(AFX_CEKIJIKOKUHYOUVIEW_H__69F2D214_3000_4E10_97F0_8F68B467F234__INCLUDED_)
 #define AFX_CEKIJIKOKUHYOUVIEW_H__69F2D214_3000_4E10_97F0_8F68B467F234__INCLUDED_
@@ -11,7 +11,7 @@ OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 #if _MSC_VER > 1000
 #pragma once
 #endif // _MSC_VER > 1000
-// CEkiJikokuhyouView.h : ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹
+// CEkiJikokuhyouView.h : ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«
 //
 
 
@@ -20,22 +20,22 @@ OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 namespace ViewEkiJikokuhyou {
 
 	/////////////////////////////////////////////////////////////////////////////
-	// CEkiJikokuhyouView ƒrƒ…[
+	// CEkiJikokuhyouView ãƒ“ãƒ¥ãƒ¼
 	
 	/**
 	* @brief
-	*	‰w•\ƒrƒ…[‚ÌAView ƒNƒ‰ƒX‚Å‚·B
+	*	é§…æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã®ã€View ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
 	*/
 	class CEkiJikokuhyouView : public CView
 	{
 		// ********************************
-		///@name •ïŠÜ
+		///@name åŒ…å«
 		// ********************************
 		///@{
 	private:
 		/**
-		*	ƒOƒŠƒbƒhƒEƒCƒ“ƒhƒEƒIƒuƒWƒFƒNƒgB
-		*	OnCreate() ‚Å¶¬EOnDestroy() ‚Å”jŠü‚µ‚Ü‚·B
+		*	ã‚°ãƒªãƒƒãƒ‰ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã€‚
+		*	OnCreate() ã§ç”Ÿæˆãƒ»OnDestroy() ã§ç ´æ£„ã—ã¾ã™ã€‚
 		*/
 		CWndDcdGridEkiJikokuhyou* m_pCWndDcdGrid;
 
@@ -44,24 +44,24 @@ namespace ViewEkiJikokuhyou {
 
 		// ----------------------------------------------------------------
 	protected:
-		CEkiJikokuhyouView();           // “®“I¶¬‚Ég—p‚³‚ê‚éƒvƒƒeƒNƒg ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+		CEkiJikokuhyouView();           // å‹•çš„ç”Ÿæˆã«ä½¿ç”¨ã•ã‚Œã‚‹ãƒ—ãƒ­ãƒ†ã‚¯ãƒˆ ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 		DECLARE_DYNCREATE(CEkiJikokuhyouView)
 
-		// ƒAƒgƒŠƒrƒ…[ƒg
+		// ã‚¢ãƒˆãƒªãƒ“ãƒ¥ãƒ¼ãƒˆ
 	public:
 
-		// ƒIƒyƒŒ[ƒVƒ‡ƒ“
+		// ã‚ªãƒšãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³
 	public:
 
-		// ƒI[ƒo[ƒ‰ƒCƒh
-		// ClassWizard ‚Í‰¼‘zŠÖ”‚ÌƒI[ƒo[ƒ‰ƒCƒh‚ğ¶¬‚µ‚Ü‚·B
+		// ã‚ªãƒ¼ãƒãƒ¼ãƒ©ã‚¤ãƒ‰
+		// ClassWizard ã¯ä»®æƒ³é–¢æ•°ã®ã‚ªãƒ¼ãƒãƒ¼ãƒ©ã‚¤ãƒ‰ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
 		//{{AFX_VIRTUAL(CEkiJikokuhyouView)
 	public:
 		virtual void OnPrepareDC(CDC* pDC, CPrintInfo* pInfo = NULL);
 		virtual BOOL OnCmdMsg(UINT nID, int nCode, void* pExtra, AFX_CMDHANDLERINFO* pHandlerInfo);
 	protected:
-		virtual void OnDraw(CDC* pDC);      // ‚±‚Ìƒrƒ…[‚ğ•`‰æ‚·‚é‚½‚ß‚ÉƒI[ƒo[ƒ‰ƒCƒh‚µ‚Ü‚µ‚½B
+		virtual void OnDraw(CDC* pDC);      // ã“ã®ãƒ“ãƒ¥ãƒ¼ã‚’æç”»ã™ã‚‹ãŸã‚ã«ã‚ªãƒ¼ãƒãƒ¼ãƒ©ã‚¤ãƒ‰ã—ã¾ã—ãŸã€‚
 		virtual void OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint);
 		virtual BOOL OnPreparePrinting(CPrintInfo* pInfo);
 		virtual void OnBeginPrinting(CDC* pDC, CPrintInfo* pInfo);
@@ -70,15 +70,15 @@ namespace ViewEkiJikokuhyou {
 		virtual void OnActivateView(BOOL bActivate, CView* pActivateView, CView* pDeactiveView);
 		//}}AFX_VIRTUAL
 
-		// ƒCƒ“ƒvƒŠƒƒ“ƒe[ƒVƒ‡ƒ“
+		// ã‚¤ãƒ³ãƒ—ãƒªãƒ¡ãƒ³ãƒ†ãƒ¼ã‚·ãƒ§ãƒ³
 	protected:
-		virtual ~CEkiJikokuhyouView();
+		virtual â€¾CEkiJikokuhyouView();
 #ifdef _DEBUG
 		virtual void AssertValid() const;
 		virtual void Dump(CDumpContext& dc) const;
 #endif
 
-		// ¶¬‚³‚ê‚½ƒƒbƒZ[ƒW ƒ}ƒbƒvŠÖ”
+		// ç”Ÿæˆã•ã‚ŒãŸãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ ãƒãƒƒãƒ—é–¢æ•°
 	protected:
 		//{{AFX_MSG(CEkiJikokuhyouView)
 		afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
@@ -92,7 +92,7 @@ namespace ViewEkiJikokuhyou {
 	/////////////////////////////////////////////////////////////////////////////
 
 	//{{AFX_INSERT_LOCATION}}
-	// Microsoft Visual C++ ‚Í‘Os‚Ì’¼‘O‚É’Ç‰Á‚ÌéŒ¾‚ğ‘}“ü‚µ‚Ü‚·B
+	// Microsoft Visual C++ ã¯å‰è¡Œã®ç›´å‰ã«è¿½åŠ ã®å®£è¨€ã‚’æŒ¿å…¥ã—ã¾ã™ã€‚
 
 } //namespace ViewEkiJikokuhyou
 

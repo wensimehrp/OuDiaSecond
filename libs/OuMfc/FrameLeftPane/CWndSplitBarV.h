@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 #if !defined(AFX_CWNDSPLITBARV_H__4D5499AB_1C6F_4AA9_9F02_12CC9B690B84__INCLUDED_)
 #define AFX_CWNDSPLITBARV_H__4D5499AB_1C6F_4AA9_9F02_12CC9B690B84__INCLUDED_
@@ -71,101 +71,101 @@ Copyright (C) 2006-2017 take-okm
 
 #include <afxwin.h>
 
-// CWndSplitBarV.h : �w�b�_�[ �t�@�C��
+// CWndSplitBarV.h : ヘッダー ファイル
 //
 
 namespace OuMfc{
 namespace FrameLeftPane{
 
 /////////////////////////////////////////////////////////////////////////////
-// CWndSplitBarV �E�B���h�E
+// CWndSplitBarV ウィンドウ
 /**
 @brief
- MDIClient �E�C���h�E�̍����y�C���Ƃ̊Ԃɂ���
-�X�v���b�g�o�[�̃E�C���h�E�ł��B
+ MDIClient ウインドウの左側ペインとの間にある
+スプリットバーのウインドウです。
 
-�yMDIFrameLeftPane �A�v���P�[�V�����̊T�v�z
+【MDIFrameLeftPane アプリケーションの概要】
 	
-  MDIFrameLeftPane �A�v���P�[�V�����́A�����Ɂu�����y�C���v�q�E�C���h�E
-�i�c���[�r���[�Ȃǁj�E�E���� MDIClient �E�C���h�E�������A
-MDIClient �E�C���h�E���ɂ� MDI�q�E�C���h�E���J�����Ƃ̂ł���
-�A�v���P�[�V�����ł��B
-  �����y�C����MDIClient�E�C���h�E�̊Ԃɂ́A�u�X�v���b�g�o�[�v��
-����܂��B�u�X�v���b�g�o�[�v���h���b�O���邱�Ƃɂ��A�u�����y�C���v��
- MDIClient �̋��E�i�傫���j�𒲐߂��邱�Ƃ��ł��܂��B
+  MDIFrameLeftPane アプリケーションは、左側に「左側ペイン」子ウインドウ
+（ツリービューなど）・右側に MDIClient ウインドウを持ち、
+MDIClient ウインドウ内には MDI子ウインドウを開くことのできる
+アプリケーションです。
+  左側ペインとMDIClientウインドウの間には、「スプリットバー」が
+あります。「スプリットバー」をドラッグすることにより、「左側ペイン」と
+ MDIClient の境界（大きさ）を調節することができます。
 	
-  ���̃A�v���P�[�V�����̃��C���E�C���h�E�́A CMDIFrameWnd �̔h���N���X
-�Ƃ��Ď������܂��B�u�����y�C���v�E�u�X�v���b�g�o�[�v�́A
-���C���E�C���h�E�̎q�E�C���h�E�Ƃ��܂��B
- �u�����y�C���v�́A CWnd �̔h���N���X�Ƃ��Ď������܂��B
- �u�X�v���b�g�o�[�v�́A CWndSplitBar �N���X�̃I�u�W�F�N�g�𐶐����܂��B
+  このアプリケーションのメインウインドウは、 CMDIFrameWnd の派生クラス
+として実装します。「左側ペイン」・「スプリットバー」は、
+メインウインドウの子ウインドウとします。
+ 「左側ペイン」は、 CWnd の派生クラスとして実装します。
+ 「スプリットバー」は、 CWndSplitBar クラスのオブジェクトを生成します。
 	
 
-�y�g�����z
+【使い方】
 
-�P�D  ���炩���߁A�u�����y�C���v�̃E�C���h�E�̓�����A
- CWnd �̔h���N���X�Ƃ��Ď������Ă��������B
+１．  あらかじめ、「左側ペイン」のウインドウの動作を、
+ CWnd の派生クラスとして実装してください。
 	
-�Q�D  ���C���t���[���E�C���h�E�̃N���X�́A CMDIFrameWnd ��
-�h���N���X�Ƃ��Ă��������B
-  ���̃N���X�ɂ́A�u�����y�C���v�̃N���X�̃C���X�^���X(CWnd�h���N���X)
-�ƁA�u�X�v���b�g�o�[�v�N���X�̃C���X�^���X�iCWndSpkitterV�j��
-�����o�ϐ��Ƃ��ĕێ����Ă��������B  @n
-  ���C���t���[���E�C���h�E�� OnCreate() �ł́A �u�����y�C���v�E
-�u�X�v���b�g�o�[�v�ɑ΂��� Create() ���Ăяo���āA�q�E�C���h�E��
- HWND �𐶐����Ă��������B
+２．  メインフレームウインドウのクラスは、 CMDIFrameWnd の
+派生クラスとしてください。
+  このクラスには、「左側ペイン」のクラスのインスタンス(CWnd派生クラス)
+と、「スプリットバー」クラスのインスタンス（CWndSpkitterV）を
+メンバ変数として保持してください。  @n
+  メインフレームウインドウの OnCreate() では、 「左側ペイン」・
+「スプリットバー」に対して Create() を呼び出して、子ウインドウの
+ HWND を生成してください。
 	
-�R�D  ���C���t���[���E�C���h�E�̃N���X�i CMDIFrameWnd �h���N���X ) �ł́A
-�K�� RecalcLayout() ���I�[�o���C�h���āA���̃N���X��
- CMDIFrameWnd_RecalcLayout() �ɏ������Ϗ����Ă��������B
+３．  メインフレームウインドウのクラス（ CMDIFrameWnd 派生クラス ) では、
+必ず RecalcLayout() をオーバライドして、このクラスの
+ CMDIFrameWnd_RecalcLayout() に処理を委譲してください。
  */
 class CWndSplitBarV : public CWnd
 {
  private:
 	// ********************************
-	///@name	�֘A
+	///@name	関連
 	// ********************************
 	///@{
 	/**
-		�����y�C���̃E�C���h�E�ւ̃|�C���^�ł��B
-		���̃I�u�W�F�N�g�̔j���̐Ӗ��́A�N���X���[�U�ɂ���܂��B
-		���̃I�u�W�F�N�g�́A this ��蒷��
-		�������Ȃ��Ă͂Ȃ�܂���B
+		左側ペインのウインドウへのポインタです。
+		このオブジェクトの破棄の責務は、クラスユーザにあります。
+		このオブジェクトは、 this より長く
+		生存しなくてはなりません。
 	*/
 	CWnd*	m_pwndLeftPane ;
 	///@}
  private:
 	// --------------------------------
-	///@name	�����f�[�^
+	///@name	内部データ
 	// --------------------------------
 	///@{
 	/**
-		�ʏ�� -1 �B
-		���̃E�C���h�E���h���b�O���Ă���Œ������́A
-		�h���b�O���J�n�����Ƃ��̃}�E�X�̍��W���A
-		���̃E�C���h�E��̍��W�ŕێ����܂��i0�ȏ�j�B
+		通常は -1 。
+		このウインドウをドラッグしている最中だけは、
+		ドラッグを開始したときのマウスの座標を、
+		このウインドウ上の座標で保持します（0以上）。
 	 */
 	int	m_iDragPosX ;
 	///@}
  public:
 	// ********************************
-	//	�\�z
+	//	構築
 	// ********************************
 	///@{
 	/**
-		�E�C���h�E�𐶐����܂��B
+		ウインドウを生成します。
 	@param pParentWnd [in]
-		�e�E�C���h�E���w�肵�Ă��������B
+		親ウインドウを指定してください。
 	@param pwndLeftPane [in]
-		�����y�C���̃E�C���h�E�ւ̃|�C���^�ł��B
-		���̃I�u�W�F�N�g�̔j���̐Ӗ��́A�N���X���[�U�ɂ���܂��B
-		���̃I�u�W�F�N�g�́A this ��蒷��
-		�������Ȃ��Ă͂Ȃ�܂���B
+		左側ペインのウインドウへのポインタです。
+		このオブジェクトの破棄の責務は、クラスユーザにあります。
+		このオブジェクトは、 this より長く
+		生存しなくてはなりません。
 	@param nID [in]
-		���̃E�C���h�E�i�X�v���b�g�o�[�j��
-		�q�E�C���h�EID ���w�肵�Ă��������B
+		このウインドウ（スプリットバー）の
+		子ウインドウID を指定してください。
 	@return
-		����I�������ꍇ�� 0 �ȊO��Ԃ��܂��B����ȊO�̏ꍇ�� 0 ��Ԃ��܂��B
+		正常終了した場合は 0 以外を返します。それ以外の場合は 0 を返します。
 	 */
 	BOOL Create( CWnd* pParentWnd, 	
 		CWnd* pwndLeftPane ,
@@ -174,32 +174,32 @@ class CWndSplitBarV : public CWnd
 	///@}
  public:
 	// ********************************
-	///@name	����
+	///@name	操作
 	// ********************************
 	///@{
 	/**
-		 CMDIFrameWnd �̂Ȃ��� �����y�C���ƁA
-		�X�v���b�g�o�[(CWndSplitBarV)��z�u����A�v���P�[�V�����́A
-		���C���E�C���h�E�I�u�W�F�N�g�̃N���X�iCMDIFrameWnd �h���N���X�j
-		�� CFrameWnd::RecalcLayout() ���I�[�o���C�h���A
-		���̊֐��ɏ������Ϗ����Ă��������B
-		���̂Ƃ��A��{�N���X�̎����iCFrameWnd::RecalcLayout()�j��
-		�Ăяo���͍s��Ȃ��ł��������B
+		 CMDIFrameWnd のなかに 左側ペインと、
+		スプリットバー(CWndSplitBarV)を配置するアプリケーションは、
+		メインウインドウオブジェクトのクラス（CMDIFrameWnd 派生クラス）
+		で CFrameWnd::RecalcLayout() をオーバライドし、
+		この関数に処理を委譲してください。
+		このとき、基本クラスの実装（CFrameWnd::RecalcLayout()）の
+		呼び出しは行わないでください。
 	
-		���̊֐��́A�����y�C���E�X�v���b�g�o�[�EMDIClient �E�C���h�E��
-		�K�؂ɍĔz�u���܂��B
+		この関数は、左側ペイン・スプリットバー・MDIClient ウインドウを
+		適切に再配置します。
 	
 	@param pCMDIFrameWnd [in]
-		���C���E�C���h�E�� CMDIFrameWnd �I�u�W�F�N�g��
-		�w�肵�Ă��������B
-		�ʏ�́A this ���w�肷�邱�ƂɂȂ�܂��B
+		メインウインドウの CMDIFrameWnd オブジェクトを
+		指定してください。
+		通常は、 this を指定することになります。
 	@param pwndLeftPane [in]
-		�����y�C���̃I�u�W�F�N�g���w�肵�Ă��������B
+		左側ペインのオブジェクトを指定してください。
 	@param pCWndSplitBarV [in]
-		�X�v���b�g�o�[ �̃I�u�W�F�N�g���w�肵�Ă��������B
+		スプリットバー のオブジェクトを指定してください。
 	@param bNotify [in]
-		 CFrameWnd �h���N���X�� RecalcLayout( BOOL bNotify ) ��
-		�n���ꂽ bNotify ���A���̂܂ܓn���Ă��������B
+		 CFrameWnd 派生クラスの RecalcLayout( BOOL bNotify ) で
+		渡された bNotify を、そのまま渡してください。
 	 */
 	static void CMDIFrameWnd_RecalcLayout(
 			CMDIFrameWnd* pCMDIFrameWnd ,
@@ -212,27 +212,27 @@ class CWndSplitBarV : public CWnd
 // ----------------------------------------------------------------
 //	MFC
 // ----------------------------------------------------------------
-// �R���X�g���N�V����
+// コンストラクション
 public:
 	CWndSplitBarV();
 
-// �A�g���r���[�g
+// アトリビュート
 public:
 
-// �I�y���[�V����
+// オペレーション
 public:
 
-// �I�[�o�[���C�h
-	// ClassWizard �͉��z�֐��̃I�[�o�[���C�h�𐶐����܂��B
+// オーバーライド
+	// ClassWizard は仮想関数のオーバーライドを生成します。
 
 	//{{AFX_VIRTUAL(CWndSplitBarV)
 	//}}AFX_VIRTUAL
 
-// �C���v�������e�[�V����
+// インプリメンテーション
 public:
-	virtual ~CWndSplitBarV();
+	virtual ‾CWndSplitBarV();
 
-	// �������ꂽ���b�Z�[�W �}�b�v�֐�
+	// 生成されたメッセージ マップ関数
 protected:
 	//{{AFX_MSG(CWndSplitBarV)
 	afx_msg void OnPaint();
@@ -246,7 +246,7 @@ protected:
 /////////////////////////////////////////////////////////////////////////////
 
 //{{AFX_INSERT_LOCATION}}
-// Microsoft Visual C++ �͑O�s�̒��O�ɒǉ��̐錾��}�����܂��B
+// Microsoft Visual C++ は前行の直前に追加の宣言を挿入します。
 
 } //namespace FrameLeftPane
 } //namespace OuMfc

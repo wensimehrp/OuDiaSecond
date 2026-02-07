@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,53 +35,53 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
-// CDlgOperationTableExport.cpp : �C���v�������e�[�V���� �t�@�C��
+// CDlgOperationTableExport.cpp : インプリメンテーション ファイル
 //
 
 #include "stdafx.h"
-#include "MfcUtil\MfcUtil.h"
-#include "str\CsvDocument\CdCsvDocument.h"
-#include "str\CsvDocument\CconvCsvDocument.h"
-#include "str\strtoint.h"
-#include "str\vectorToFile.h"
+#include "MfcUtil¥MfcUtil.h"
+#include "str¥CsvDocument¥CdCsvDocument.h"
+#include "str¥CsvDocument¥CconvCsvDocument.h"
+#include "str¥strtoint.h"
+#include "str¥vectorToFile.h"
 
-#include "..\diagramedit.h"
-#include "..\resource.h"
+#include "..¥diagramedit.h"
+#include "..¥resource.h"
 #include "CDlgOperationTableCsvExport.h"
-#include "..\entDed\CdDedRessyaProperty.h"
+#include "..¥entDed¥CdDedRessyaProperty.h"
 #include <algorithm>
 
 
@@ -95,7 +95,7 @@ namespace ViewAllOperationTable {
 using namespace std ;
 
 /////////////////////////////////////////////////////////////////////////////
-// CDlgOperationTableCsvExport �_�C�A���O
+// CDlgOperationTableCsvExport ダイアログ
 
 
 CDlgOperationTableCsvExport::CDlgOperationTableCsvExport(
@@ -167,7 +167,7 @@ void CDlgOperationTableCsvExport::splitOperationNumber(
 				strOperationNumberOut.push_back(tstring());
 				break;
 			}
-			//�����̏ꍇ
+			//数字の場合
 			bIsDigit = true;
 		}
 		else
@@ -178,7 +178,7 @@ void CDlgOperationTableCsvExport::splitOperationNumber(
 				strOperationNumberOut.push_back(strOperationNumberTemp);
 				break;
 			}
-			//����ȊO�̏ꍇ
+			//それ以外の場合
 			bIsDigit = false;
 		}
 		idx++;
@@ -207,7 +207,7 @@ void CDlgOperationTableCsvExport::splitOperationNumber(
 			}
 			if (_istdigit(strOperationNumberTemp[idx]) != 0)
 			{
-				//idx�ʒu�������ŁA�擪�������̏ꍇ
+				//idx位置が数字で、先頭が文字の場合
 				if (!bIsDigit)
 				{
 					iOperationNumber.push_back(INT_MIN);
@@ -219,7 +219,7 @@ void CDlgOperationTableCsvExport::splitOperationNumber(
 			}
 			else
 			{
-				//idx�ʒu�������ŁA�擪�������̏ꍇ
+				//idx位置が文字で、先頭が数字の場合
 				if (bIsDigit)
 				{
 					iOperationNumber.push_back(
@@ -263,7 +263,7 @@ bool CDlgOperationTableCsvExport::SortOperationNumber(
 		for (int idx = 1; idx <= iMin; idx++)
 		{
 			// --------------------------------
-			//	- �����Ƃ���ȊO�ł͐����̕�����
+			//	- 数字とそれ以外では数字の方が先
 			// --------------------------------
 			{
 				if (iOperationNumber1[iSize1 - idx] != INT_MIN && iOperationNumber2[iSize2 - idx] == INT_MIN)
@@ -278,9 +278,9 @@ bool CDlgOperationTableCsvExport::SortOperationNumber(
 
 			if (iOperationNumber1[iSize1 - idx] == INT_MIN)
 			{
-				//���ɐ����ȊO�̏ꍇ�A��������������
+				//共に数字以外の場合、文字数→辞書順
 				// --------------------------------
-				//	- �������̒������Z��������
+				//	- 文字部の長さが短い方が先
 				// --------------------------------
 				{
 					if (strOperationNumber1Part[iSize1 - idx].length() < strOperationNumber2Part[iSize2 - idx].length())
@@ -293,7 +293,7 @@ bool CDlgOperationTableCsvExport::SortOperationNumber(
 					}
 				}
 				// --------------------------------
-				//	- ���������������ő���������B
+				//	- 文字部が辞書順で早い方が先。
 				// --------------------------------
 				{
 					if (strOperationNumber1Part[iSize1 - idx] < strOperationNumber2Part[iSize2 - idx])
@@ -308,9 +308,9 @@ bool CDlgOperationTableCsvExport::SortOperationNumber(
 			}
 			else
 			{
-				//���ɐ����̏ꍇ�A�����̑召
+				//共に数字の場合、数字の大小
 				// --------------------------------
-				//	- ���������������̂���
+				//	- 数字が小さいものが先
 				// --------------------------------
 				{
 					if (iOperationNumber1[iSize1 - idx] < iOperationNumber2[iSize2 - idx])
@@ -332,7 +332,7 @@ bool CDlgOperationTableCsvExport::SortOperationNumber(
 		for (int idx = 0; idx < iMin; idx++)
 		{
 			// --------------------------------
-			//	- �����Ƃ���ȊO�ł͐����̕�����
+			//	- 数字とそれ以外では数字の方が先
 			// --------------------------------
 			{
 				if (iOperationNumber1[idx] != INT_MIN && iOperationNumber2[idx] == INT_MIN)
@@ -347,9 +347,9 @@ bool CDlgOperationTableCsvExport::SortOperationNumber(
 
 			if (iOperationNumber1[idx] == INT_MIN)
 			{
-				//���ɐ����ȊO�̏ꍇ�A��������������
+				//共に数字以外の場合、文字数→辞書順
 				// --------------------------------
-				//	- �������̒������Z��������
+				//	- 文字部の長さが短い方が先
 				// --------------------------------
 				{
 					if (strOperationNumber1Part[idx].length() < strOperationNumber2Part[idx].length())
@@ -362,7 +362,7 @@ bool CDlgOperationTableCsvExport::SortOperationNumber(
 					}
 				}
 				// --------------------------------
-				//	- ���������������ő���������B
+				//	- 文字部が辞書順で早い方が先。
 				// --------------------------------
 				{
 					if (strOperationNumber1Part[idx] < strOperationNumber2Part[idx])
@@ -377,9 +377,9 @@ bool CDlgOperationTableCsvExport::SortOperationNumber(
 			}
 			else
 			{
-				//���ɐ����̏ꍇ�A�����̑召
+				//共に数字の場合、数字の大小
 				// --------------------------------
-				//	- ���������������̂���
+				//	- 数字が小さいものが先
 				// --------------------------------
 				{
 					if (iOperationNumber1[idx] < iOperationNumber2[idx])
@@ -396,7 +396,7 @@ bool CDlgOperationTableCsvExport::SortOperationNumber(
 		}
 	}
 	// --------------------------------
-	//	- �v�f�������Ȃ����̂���
+	//	- 要素数が少ないものが先
 	// --------------------------------
 	{
 		if (iOperationNumber1.size() < iOperationNumber2.size())
@@ -430,9 +430,9 @@ bool CDlgOperationTableCsvExport::SortOperation(
 	if (m_iOperationOrder == (int)CWndDcdGridAllOperationTable::EOperationSort_OperationNumber)
 	{
 		/**
-			�^�p�ԍ���
-			�^�p�ԍ���CompareBottom�Ɋ�Â����Ŕ��肵�܂�
-			����̉^�p�ԍ��͖����̂ŁA���ʂ͈�ӂɌ��܂�܂�
+			運用番号順
+			運用番号をCompareBottomに基づく順で判定します
+			同一の運用番号は無いので、結果は一意に決まります
 		*/
 		return SortOperationNumber(strOperationNumber1, strOperationNumber2);
 	}
@@ -440,16 +440,16 @@ bool CDlgOperationTableCsvExport::SortOperation(
 		m_iOperationOrder == (int)CWndDcdGridAllOperationTable::EOperationSort_InEki)
 	{
 		/**
-			�o��w��
-			(1)�o��w��
-			(2)��������
-			(3)�^�p�ԍ����ŕ��ׂ܂�
-			(1)�o��w���́A����w�̏ꍇiPosition=0�̉w�ɏW�񂵂܂��B
-				�܂��A�H���O�n���̏ꍇ�A�����ȏo�������ɂȂ�A
-				�H���O�n�����m�̏ꍇ�A�H���O�n���wIndex�����������̂���ɂȂ�܂�
-			(2)�o��w����v���Ă���ꍇ�A���������ŕ��ׂ܂��B
-				�Ȃ��A�H���O�n���w����v���Ă���ꍇ�́A�H���O�n���w�������Ŕ�r���܂�
-			(3)�o��w�i�H���O�n���w�j�A����������v���Ă���ꍇ�́A�^�p�ԍ����ŕ��ׂ܂��B
+			出区駅順
+			(1)出区駅順
+			(2)発時刻順
+			(3)運用番号順で並べます
+			(1)出区駅順は、分岐駅の場合iPosition=0の駅に集約します。
+				また、路線外始発の場合、純粋な出区よりも後になり、
+				路線外始発同士の場合、路線外始発駅Indexが小さいものが先になります
+			(2)出区駅が一致している場合、発時刻順で並べます。
+				なお、路線外始発駅が一致している場合は、路線外始発駅発時刻で比較します
+			(3)出区駅（路線外始発駅）、発時刻が一致している場合は、運用番号順で並べます。
 		*/
 
 		if (iEkiIndex1 < iEkiIndex2)
@@ -485,10 +485,10 @@ bool CDlgOperationTableCsvExport::SortOperation(
 		m_iOperationOrder == (int)CWndDcdGridAllOperationTable::EOperationSort_InJikoku)
 	{
 		/**
-			��������
-			(1)��������
-			(2)�^�p�ԍ����ŕ��ׂ܂��B
-			(1)���������́A�H���O�n���̏ꍇ�A�H���O�n���w��������p���Ĕ�r���܂�
+			発時刻順
+			(1)発時刻順
+			(2)運用番号順で並べます。
+			(1)発時刻順は、路線外始発の場合、路線外始発駅発時刻を用いて比較します
 		*/
 
 		if (Jikoku1.compare(Jikoku2, KitenJikoku) < 0)
@@ -514,14 +514,14 @@ bool CDlgOperationTableCsvExport::CheckSatisfyConditions(
 	if (m_iRadioOperationTarget == 0)
 	{
 		/**
-			�S�^�p�o��
+			全運用出力
 		*/
 		return true;
 	}
 	else if (m_iRadioOperationTarget == 1)
 	{
 		/**
-			�^�p�ԍ���v�o��
+			運用番号一致出力
 		*/
 		if (m_strOperationNumberInput.IsEmpty())
 		{
@@ -533,15 +533,15 @@ bool CDlgOperationTableCsvExport::CheckSatisfyConditions(
 		{
 			return false;
 		}
-		if (m_iTypeOfSearch == 0) //������v
+		if (m_iTypeOfSearch == 0) //部分一致
 		{
 			return strOperationNumber.find(strOperationNumberInput) != tstring::npos;
 		}
-		else if (m_iTypeOfSearch == 1)//���S��v
+		else if (m_iTypeOfSearch == 1)//完全一致
 		{
 			return strOperationNumber == strOperationNumberInput;
 		}
-		else if (m_iTypeOfSearch == 2)//�O����v
+		else if (m_iTypeOfSearch == 2)//前方一致
 		{
 			return strOperationNumber.compare(
 				0,
@@ -549,7 +549,7 @@ bool CDlgOperationTableCsvExport::CheckSatisfyConditions(
 				strOperationNumberInput) == 0;
 
 		}
-		else if (m_iTypeOfSearch == 3)//�����v
+		else if (m_iTypeOfSearch == 3)//後方一致
 		{
 			return strOperationNumber.compare(
 				strOperationNumber.size()-strOperationNumberInput.size(),
@@ -561,7 +561,7 @@ bool CDlgOperationTableCsvExport::CheckSatisfyConditions(
 	else if (m_iRadioOperationTarget == 2)
 	{
 		/**
-			�o��E����w�w��o��
+			出区・入区駅指定出力
 		*/
 		if (m_iInOrOut == 0)
 		{
@@ -574,7 +574,7 @@ bool CDlgOperationTableCsvExport::CheckSatisfyConditions(
 			}
 			/**
 				Ver2.02
-				�^�p�̐擪��Ԃ̍�Ƃ��u�o��v�u�H���O�n���v�ȊO(�O��Ԑڑ�)�ł��ɂ��܂��B
+				運用の先頭列車の作業が「出区」「路線外始発」以外(前列車接続)でも可にします。
 			*/
 			//else if (ListOperationTableContent.front().aRessyaProperty.getJikoku().isNull())
 			//{
@@ -602,7 +602,7 @@ bool CDlgOperationTableCsvExport::CheckSatisfyConditions(
 			}
 			/**
 				Ver2.02
-				�^�p�̐擪��Ԃ̍�Ƃ��u����v�u�H���O�I���v�ȊO(����Ԑڑ�)�ł��ɂ��܂��B
+				運用の先頭列車の作業が「入区」「路線外終着」以外(次列車接続)でも可にします。
 			*/
 			//else if (ListOperationTableContent.back().AfterOperation != NULL)
 			//{
@@ -648,7 +648,7 @@ BEGIN_MESSAGE_MAP(CDlgOperationTableCsvExport, CDialog)
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
-// CDlgOuJikokuhyouCsvExport ���b�Z�[�W �n���h��
+// CDlgOuJikokuhyouCsvExport メッセージ ハンドラ
 
 BOOL CDlgOperationTableCsvExport::OnInitDialog()
 {
@@ -661,7 +661,7 @@ BOOL CDlgOperationTableCsvExport::OnInitDialog()
 		//pCentDedDia = m_pCentDedRosen->getCentDedDiaCont()->getMuPtr()->get( m_iDiaIndex ) ;
 		if ( m_pCentDedDia == NULL )
 		{
-			iRv = -11 ;	//	m_pCentDedDia ���s���ł��B
+			iRv = -11 ;	//	m_pCentDedDia が不正です。
 		}
 	}
 	if 	( iRv >= 0 )
@@ -681,45 +681,45 @@ BOOL CDlgOperationTableCsvExport::OnInitDialog()
 		//pCComboBox->SetCurSel(m_iStationIndex);
 	}
 
-	// �R���{�{�b�N�X
+	// コンボボックス
 	{
 		CComboBox*	pCComboBox = (CComboBox*)GetDlgItem(IDC_OperationExport_COMBO_TypeOfSearch);
 
-		tstring strTemp = _T("�ƈ�v����");
+		tstring strTemp = _T("と一致する");
 		pCComboBox->AddString(strTemp.c_str());
-		strTemp = _T("���܂�");
+		strTemp = _T("を含む");
 		pCComboBox->AddString(strTemp.c_str());
-		strTemp = _T("���O����v����");
+		strTemp = _T("が前方一致する");
 		pCComboBox->AddString(strTemp.c_str());
-		strTemp = _T("�������v����");
+		strTemp = _T("が後方一致する");
 		pCComboBox->AddString(strTemp.c_str());
-		//�ƈ�v����;���܂�;���O����v����;�������v����;
+		//と一致する;を含む;が前方一致する;が後方一致する;
 	}
-	// �R���{�{�b�N�X
+	// コンボボックス
 	{
 		CComboBox*	pCComboBox = (CComboBox*)GetDlgItem(IDC_OperationExport_COMBO_OutOrIn);
 
-		tstring strTemp = _T("�o��");
+		tstring strTemp = _T("出区");
 		pCComboBox->AddString(strTemp.c_str());
-		strTemp = _T("����");
+		strTemp = _T("入区");
 		pCComboBox->AddString(strTemp.c_str());
-		//�o��;����;
+		//出区;入区;
 	}
-	// �R���{�{�b�N�X
+	// コンボボックス
 	{
 		CComboBox*	pCComboBox = (CComboBox*)GetDlgItem(IDC_OperationExport_COMBO_Order);
 
-		tstring strTemp = _T("�^�p�ԍ����ɕ��ׂ�");
+		tstring strTemp = _T("運用番号順に並べる");
 		pCComboBox->AddString(strTemp.c_str());
-		strTemp = _T("�o��w���ɕ��ׂ�");
+		strTemp = _T("出区駅順に並べる");
 		pCComboBox->AddString(strTemp.c_str());
-		strTemp = _T("���������ɕ��ׂ�");
+		strTemp = _T("発時刻順に並べる");
 		pCComboBox->AddString(strTemp.c_str());
-		strTemp = _T("����w���ɕ��ׂ�");
+		strTemp = _T("入区駅順に並べる");
 		pCComboBox->AddString(strTemp.c_str());
-		strTemp = _T("���������ɕ��ׂ�");
+		strTemp = _T("着時刻順に並べる");
 		pCComboBox->AddString(strTemp.c_str());
-		//�^�p�ԍ����ɕ��ׂ�;�o��w�������ɕ��ׂ�;
+		//運用番号順に並べる;出区駅時刻順に並べる;
 	}
 
 
@@ -727,8 +727,8 @@ BOOL CDlgOperationTableCsvExport::OnInitDialog()
 
 	// --------------------------------
 	
-	return TRUE;  // �R���g���[���Ƀt�H�[�J�X��ݒ肵�Ȃ��Ƃ��A�߂�l�� TRUE �ƂȂ�܂�
-	              // ��O: OCX �v���p�e�B �y�[�W�̖߂�l�� FALSE �ƂȂ�܂�
+	return TRUE;  // コントロールにフォーカスを設定しないとき、戻り値は TRUE となります
+	              // 例外: OCX プロパティ ページの戻り値は FALSE となります
 }
 
 void CDlgOperationTableCsvExport::OnOK()
@@ -744,18 +744,18 @@ void CDlgOperationTableCsvExport::OnOK()
 		//pCentDedDia = m_pCentDedRosen->getCentDedDiaCont()->getMuPtr()->get( m_iDiaIndex ) ;
 		if ( m_pCentDedDia == NULL )
 		{
-			iRv = -11 ;	//	m_iDiaIndex ���s���ł��B
+			iRv = -11 ;	//	m_iDiaIndex が不正です。
 		}
 	}
 	//if 	( iRv >= 0 )
 	//{
 	//	pCentDedRessyaContGet = pCentDedDia->getCentDedRessyaCont( m_eRessyahoukou )->getMuPtr() ;
 	//}
-	//pCentDedRessyaContGet = �ΏۂƂȂ��ԃR���e�i
+	//pCentDedRessyaContGet = 対象となる列車コンテナ
 	
 	
 	// --------------------------------
-	//	���͒l�̎擾
+	//	入力値の取得
 	// --------------------------------
 	const CdDedJikoku KitenJikoku = m_pCentDedRosen->getKitenJikoku();
 	
@@ -939,7 +939,7 @@ void CDlgOperationTableCsvExport::OnOK()
 
 	
 	// --------------------------------
-	//	�o�̓t�@�C�������͒l�̎擾
+	//	出力ファイル名入力値の取得
 	// --------------------------------
 	if ( iRv >= 0 )
 	{
@@ -952,17 +952,17 @@ void CDlgOperationTableCsvExport::OnOK()
 			this );
 		if ( aDlg.DoModal() != IDOK )
 		{
-			iRv = -2 ;	//	Cancel����܂����B
+			iRv = -2 ;	//	Cancelされました。
 		}
 		else
 		{
 			m_strCsvFilename = aDlg.GetPathName() ;
 		}
 	}
-	//m_strCsvFilename = �w�肳�ꂽCSV�t�@�C����
+	//m_strCsvFilename = 指定されたCSVファイル名
 
 	// --------------------------------
-	//	CSV�t�@�C���̏o��
+	//	CSVファイルの出力
 	// --------------------------------
 	CWaitCursor aCursor ;
 	if ( iRv >= 0 )
@@ -1005,7 +1005,7 @@ void CDlgOperationTableCsvExport::OnOK()
 		if ( iResult < 0 )
 		{
 			GetDlgItemText( IDC_TEXT_ENCODE_ERROR , strError ) ;
-			//strError="CSV�ւ̕ϊ��Ɏ��s���܂����B"
+			//strError="CSVへの変換に失敗しました。"
 
 			strError.Format( _T( "%s(%d)" ) , CString( strError ), iResult ) ; 
 			iRv = iResult - 10 ;
@@ -1019,9 +1019,9 @@ void CDlgOperationTableCsvExport::OnOK()
 			if ( iResult < 0 )
 			{
 				GetDlgItemText( IDC_TEXT_FILE_SAVE_FAILED , strError ) ;
-				//strError="�t�@�C���ւ̕ۑ��Ɏ��s���܂����B"
+				//strError="ファイルへの保存に失敗しました。"
 
-				iRv = -21 ; // �t�@�C���ւ̕ۑ��Ɏ��s���܂����B
+				iRv = -21 ; // ファイルへの保存に失敗しました。
 
 			}
 		}

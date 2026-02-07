@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -79,11 +79,11 @@ Copyright (C) 2006-2017 take-okm
 
 /** @file */
 
-#include "str\OuPropertiesText\CNodeContainer.h"
-#include "str\OuPropertiesText\ErrorInfo\COuErrorInfoContainer.h"
-#include "str\CEnumToString.h"
-#include "DcdCd\DcDrawProp\CdDcdFreeLineProp.h"
-#include "DcdCd\DcDrawProp\CdColorProp.h"
+#include "str¥OuPropertiesText¥CNodeContainer.h"
+#include "str¥OuPropertiesText¥ErrorInfo¥COuErrorInfoContainer.h"
+#include "str¥CEnumToString.h"
+#include "DcdCd¥DcDrawProp¥CdDcdFreeLineProp.h"
+#include "DcdCd¥DcDrawProp¥CdColorProp.h"
 
 #include "CentDedEki.h"
 #include "CentDedRessyasyubetsu.h"
@@ -101,130 +101,130 @@ namespace entDed{
 // ****************************************************************
 /**
 	@brief
-	  DiagramEdit �̃G���e�B�e�B�N���X�̃I�u�W�F�N�g�̑����f�[�^�̓��e���A
-	���̃f�[�^�`���ɕϊ�����֐������^���Ă��܂��B
+	  DiagramEdit のエンティティクラスのオブジェクトの属性データの内容を、
+	他のデータ形式に変換する関数を収録しています。
 
-	OuPropertiesText::CNodeContainer �I�u�W�F�N�g�Ƃ̊Ԃ̕ϊ����T�|�[�g���Ă��܂��B 
+	OuPropertiesText::CNodeContainer オブジェクトとの間の変換をサポートしています。 
 	
 */
 class CconvCentDedS05
 {
 public:
 	// ********************************
-	///@name COuErrorInfo::m_strReason , m_Prop �� Name
+	///@name COuErrorInfo::m_strReason , m_Prop の Name
 	// ********************************
 	///@{
 	
 
 	/**
-	"TrackName" ������������܂���B
+	"TrackName" が正しくありません。
 	@param TrackName
-	�w�肳��Ă����ʖ�
+	指定されている種別名
 	*/
 	static const TCHAR* ERRREASON_TrackNameIsInvalid() { return _T("TrackName is invalid."); };
 
 	/**
-	"TrackRyakusyou" ������������܂���B
+	"TrackRyakusyou" が正しくありません。
 	@param TrackRyakusyou
-	�w�肳��Ă����ʖ�
+	指定されている種別名
 	*/
 	static const TCHAR* ERRREASON_TrackRyakusyouIsInvalid() { return _T("TrackRyakusyou is invalid."); };
 
 	/**
-	"TrackNoboriRyakusyou" ������������܂���B
+	"TrackNoboriRyakusyou" が正しくありません。
 	@param TrackNoboriRyakusyou
-	�w�肳��Ă����ʖ�
+	指定されている種別名
 	*/
 	static const TCHAR* ERRREASON_TrackNoboriRyakusyouIsInvalid() { return _T("TrackNoboriRyakusyou is invalid."); };
 
 	/**
-		"Ekijikokukeisiki" ������������܂���B
+		"Ekijikokukeisiki" が正しくありません。
 		@param Ekijikokukeisiki
-			�w�肳��Ă���w�����`��
+			指定されている駅時刻形式
 	*/
 	static const TCHAR* ERRREASON_EkijikokukeisikiIsInvalid(){	return _T("Ekijikokukeisiki is invalid.") ;};
 
 	/**
-		"Ekikibo" ������������܂���B
+		"Ekikibo" が正しくありません。
 		@param Ekikibo
-			�w�肳��Ă���w�K��
+			指定されている駅規模
 	*/
 	static const TCHAR* ERRREASON_EkikiboIsInvalid(){	return _T("Ekikibo is invalid.") ;};
 
 	/**
-		"DiagramRessyajouhouHyouji" ������������܂���B
+		"DiagramRessyajouhouHyouji" が正しくありません。
 		@param DiagramRessyajouhouHyoujiKudari
-			�w�肳��Ă�����e
+			指定されている内容
 		@param DiagramRessyajouhouHyoujiNobori
-			�w�肳��Ă�����e
+			指定されている内容
 	*/
 	static const TCHAR* ERRREASON_DiagramRessyajouhouHyoujiIsInvalid(){	return _T("DiagramRessyajouhouHyouji is invalid.") ;};
 
 	/**
-		"Eki" ���f�B���N�g���ł͂���܂���B
+		"Eki" がディレクトリではありません。
 		@param Index
-			�ΏۂƂȂ� Eki �̔ԍ�(0�N�_)���w�肵�Ă��������B
+			対象となる Eki の番号(0起点)を指定してください。
 	*/
 	static const TCHAR* ERRREASON_EkiIsNotDirectory(){	return _T("Eki Is Not Directory.") ;};
 	static const TCHAR* ERRPROP_Index(){	return _T("Index") ;};
 
 	/**
-		"Syubetsumei" ������������܂���B
+		"Syubetsumei" が正しくありません。
 		@param Syubetsumei
-			�w�肳��Ă����ʖ�
+			指定されている種別名
 	*/
 	static const TCHAR* ERRREASON_SyubetsumeiIsInvalid(){	return _T("Syubetsumei is invalid.") ;};
 	/**
-		"DiagramSenStyle" ������������܂���B
+		"DiagramSenStyle" が正しくありません。
 		@param DiagramSenStyle
-			�w�肳��Ă���l
+			指定されている値
 	*/
 	static const TCHAR* ERRREASON_DiagramSenStyleIsInvalid(){	return _T("DiagramSenStyle is invalid.") ;};
 
 	/**
-		"Ressyasyubetsu" ���f�B���N�g���ł͂���܂���B
+		"Ressyasyubetsu" がディレクトリではありません。
 		@param Index
-			�ΏۂƂȂ� Ressyasyubetsu �̔ԍ�(0�N�_)���w�肵�Ă��������B
+			対象となる Ressyasyubetsu の番号(0起点)を指定してください。
 	*/
 	static const TCHAR* ERRREASON_RessyasyubetsuIsNotDirectory(){	return _T("Ressyasyubetsu is invalid.") ;};
 
 	/**
-		"DiaName" ������������܂���B
+		"DiaName" が正しくありません。
 	*/
 	static const TCHAR* ERRREASON_DiaNameInvalid(){	return _T("DiaName is invalid.") ;};
 
 	/**
-		"RessyaCont" ��������܂���B
+		"RessyaCont" が見つかりません。
 		@param Ressyahoukou
-			������Ȃ�����RessyaCont�̗�ԕ����B "Kudari" �� "Nobori" �̂����ꂩ�ł��B
+			見つからなかったRessyaContの列車方向。 "Kudari" か "Nobori" のいずれかです。
 	*/
 	static const TCHAR* ERRREASON_ResyaContIsNotExist(){	return _T("Ressyahoukou is Not Exist.") ;};
 
 	static const TCHAR* ERRPROP_Ressyahoukou(){	return _T("Ressyahoukou") ;};
 
 	/**
-		�N�_�������s���ł��B
+		起点時刻が不正です。
 	@param Jikoku
-		�w�肳�ꂽ����
+		指定された時刻
 	*/
 	static const TCHAR* ERRREASON_KitenjikokuIsInvalid(){	return _T("Kitenjikoku Is Invelid.") ;};
 
 	static const TCHAR* ERRPROP_Jikoku(){	return _T("Jikoku") ;};
 
 	/**
-		�_�C���O�����̊���̉w�ԕ����s���ł��B
+		ダイヤグラムの既定の駅間幅が不正です。
 	@param Value
-		�ݒ肳��Ă���l
+		設定されている値
 	*/
 	static const TCHAR* ERRREASON_DiagramDgrYZahyouKyoriDefaultIsInvalid(){	return _T("DiagramDgrYZahyouKyoriDefault Is Invelid.") ;};
 
 	static const TCHAR* ERRPROP_Value(){	return _T("Value") ;};
 	/**
-		�l�̌`��������������܂���B
+		値の形式が正しくありません。
 	@param Name
-		���ږ�
+		項目名
 	@param Value
-		�ݒ肳��Ă���l
+		設定されている値
 	*/
 	static const TCHAR* ERRREASON_InvalidValueFormat(){	return _T("Invalid Value Format.") ;};
 
@@ -240,21 +240,21 @@ public:
 	 // ********************************
 
 	 /**
-	 OuPropertiesText �I�u�W�F�N�g����A
-	 CentDedEkiTrack2_To_OuPropertiesText() �֐��ɂ���č쐬���ꂽ
-	 �A�C�e����ǂݍ��݁A CentDedEkiTrack2 �I�u�W�F�N�g�ɔ��f���܂��B
+	 OuPropertiesText オブジェクトから、
+	 CentDedEkiTrack2_To_OuPropertiesText() 関数によって作成された
+	 アイテムを読み込み、 CentDedEkiTrack2 オブジェクトに反映します。
 
 	 @param pCentDedEkiTrack2 [out]
-	 ���̊֐��͂��̃I�u�W�F�N�g�ɁA�����𔽉f���܂��B
+	 この関数はこのオブジェクトに、属性を反映します。
 	 @param pCNodeContainer [in]
-	 ������ێ����Ă��� OuPropertiesText �I�u�W�F�N�g���w�肵�Ă��������B
+	 属性を保持している OuPropertiesText オブジェクトを指定してください。
 	 @param pCOuErrorInfoContainer [in,out]
-	 ���̊֐��̓G���[������������A�G���[�̏������̃I�u�W�F�N�g�ɒǉ����܂��B
+	 この関数はエラーが発生したら、エラーの情報をこのオブジェクトに追加します。
 	 @return
-	 ���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-	 -	-11 ;	//	TrackName ���w�肳��Ă��܂���B
-	 -	-21 ;	//	TrackRyakusyou ���w�肳��Ă��܂���B
-	 -	-31 ;	//	TrackNoboirRyakusyou ���w�肳��Ă��܂���B
+	 成功したら 0 以上、エラーなら負の数です。
+	 -	-11 ;	//	TrackName が指定されていません。
+	 -	-21 ;	//	TrackRyakusyou が指定されていません。
+	 -	-31 ;	//	TrackNoboirRyakusyou が指定されていません。
 	 */
 	 int CentDedEkiTrack2_From_OuPropertiesText(
 		 CentDedEkiTrack2* pCentDedEkiTrack2,
@@ -266,22 +266,22 @@ public:
 	 // ********************************
 
 	 /**
-	 OuPropertiesText �I�u�W�F�N�g����A
-	 CentDedEkiTrack2_To_OuPropertiesText() �֐��ɂ���č쐬���ꂽ
-	 �A�C�e����ǂݍ��݁A CentDedEkiTrack2 �I�u�W�F�N�g�ɔ��f���܂��B
+	 OuPropertiesText オブジェクトから、
+	 CentDedEkiTrack2_To_OuPropertiesText() 関数によって作成された
+	 アイテムを読み込み、 CentDedEkiTrack2 オブジェクトに反映します。
 
 	 @param pCentDedEkiTrack2Cont [in,out]
-	 ���̊֐��͂��̃I�u�W�F�N�g�ɁA������ǉ����܂��B
+	 この関数はこのオブジェクトに、属性を追加します。
 	 @param pCNodeContainer [in]
-	 ������ێ����Ă��� OuPropertiesText �I�u�W�F�N�g���w�肵�Ă��������B
+	 属性を保持している OuPropertiesText オブジェクトを指定してください。
 	 @param pCOuErrorInfoContainer [in,out]
-	 ���̊֐��̓G���[������������A�G���[�̏������̃I�u�W�F�N�g�ɒǉ����܂��B
+	 この関数はエラーが発生したら、エラーの情報をこのオブジェクトに追加します。
 	 @return
-	 ���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-	 -	-11 ;	//	TrackName ���w�肳��Ă��܂���B
-	 -	-21 ;	//	TrackRyakusyou ���w�肳��Ă��܂���B
-	 -	-31 ;	//	TrackNoboirRyakusyou ���w�肳��Ă��܂���B
-	 -	-101 ;	//	Eki ���f�B���N�g���ł͂���܂���B
+	 成功したら 0 以上、エラーなら負の数です。
+	 -	-11 ;	//	TrackName が指定されていません。
+	 -	-21 ;	//	TrackRyakusyou が指定されていません。
+	 -	-31 ;	//	TrackNoboirRyakusyou が指定されていません。
+	 -	-101 ;	//	Eki がディレクトリではありません。
 	 */
 	 int CentDedEkiTrack2Cont_From_OuPropertiesText(
 		 CentDedEkiTrack2Cont* aCentDedEkiTrack2Cont,
@@ -293,40 +293,40 @@ public:
 	// ********************************
 	/**
 	@return
-		CentDedEki::EEkijikokukeisiki �ƕ�����̊Ԃ̃R���o�[�^�I�u�W�F�N�g��Ԃ��܂��B
+		CentDedEki::EEkijikokukeisiki と文字列の間のコンバータオブジェクトを返します。
 	*/
 	static const CEnumToString< CentDedEki::EEkijikokukeisiki >& getEEkijikokukeisikiToString();
 
 	/**
 	@return
-		CentDedEki::EEkikibo �ƕ�����̊Ԃ̃R���o�[�^�I�u�W�F�N�g��Ԃ��܂��B
+		CentDedEki::EEkikibo と文字列の間のコンバータオブジェクトを返します。
 	*/
 	static const CEnumToString< CentDedEki::EEkikibo >& getEEkikiboToString();
 
 	/**
 	@return
-		CentDedEki::EDiagramRessyajouhouHyouji �ƕ�����̊Ԃ̃R���o�[�^�I�u�W�F�N�g��Ԃ��܂��B
+		CentDedEki::EDiagramRessyajouhouHyouji と文字列の間のコンバータオブジェクトを返します。
 	*/
 	static const CEnumToString< CentDedEki::EDiagramRessyajouhouHyouji >& 
 		getEDiagramRessyajouhouHyoujiToString() ;
 	
 	/**
-		  OuPropertiesText �I�u�W�F�N�g����A
-		  CentDedEki_To_OuPropertiesText() �֐��ɂ���č쐬���ꂽ
-		�A�C�e����ǂݍ��݁A CentDedEki �I�u�W�F�N�g�ɔ��f���܂��B
+		  OuPropertiesText オブジェクトから、
+		  CentDedEki_To_OuPropertiesText() 関数によって作成された
+		アイテムを読み込み、 CentDedEki オブジェクトに反映します。
 		
 		@param pCentDedEki [out]
-		  ���̊֐��͂��̃I�u�W�F�N�g�ɁA�����𔽉f���܂��B
+		  この関数はこのオブジェクトに、属性を反映します。
 		@param pCNodeContainer [in]
-		  ������ێ����Ă��� OuPropertiesText �I�u�W�F�N�g���w�肵�Ă��������B
+		  属性を保持している OuPropertiesText オブジェクトを指定してください。
 		@param pCOuErrorInfoContainer [in,out]
-		  ���̊֐��̓G���[������������A�G���[�̏������̃I�u�W�F�N�g�ɒǉ����܂��B
+		  この関数はエラーが発生したら、エラーの情報をこのオブジェクトに追加します。
 		@return
-		  ���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-			-	-22 ;	//	Ekijikokukeisiki �̒l���s���ł��B
-			-	-32 ;	//	Ekikibo �̒l���s���ł��B
-			-	-41 ;	//	DiagramRessyajouhouHyoujiKudari �̒l���s���ł��B
-			-	-42 ;	//	DiagramRessyajouhouHyoujiNobori �̒l���s���ł��B
+		  成功したら 0 以上、エラーなら負の数です。
+			-	-22 ;	//	Ekijikokukeisiki の値が不正です。
+			-	-32 ;	//	Ekikibo の値が不正です。
+			-	-41 ;	//	DiagramRessyajouhouHyoujiKudari の値が不正です。
+			-	-42 ;	//	DiagramRessyajouhouHyoujiNobori の値が不正です。
 	 */
 	int CentDedEki_From_OuPropertiesText( 
 			CentDedEki* pCentDedEki ,
@@ -338,23 +338,23 @@ public:
 	// ********************************
 	
 	/**
-		  OuPropertiesText �I�u�W�F�N�g����A
-		  CentDedEki_To_OuPropertiesText() �֐��ɂ���č쐬���ꂽ
-		�A�C�e����ǂݍ��݁A CentDedEki �I�u�W�F�N�g�ɔ��f���܂��B
+		  OuPropertiesText オブジェクトから、
+		  CentDedEki_To_OuPropertiesText() 関数によって作成された
+		アイテムを読み込み、 CentDedEki オブジェクトに反映します。
 		
 		@param pCentDedEkiCont [in,out]
-		  ���̊֐��͂��̃I�u�W�F�N�g�ɁA������ǉ����܂��B
+		  この関数はこのオブジェクトに、属性を追加します。
 		@param pCNodeContainer [in]
-		  ������ێ����Ă��� OuPropertiesText �I�u�W�F�N�g���w�肵�Ă��������B
+		  属性を保持している OuPropertiesText オブジェクトを指定してください。
 		@param pCOuErrorInfoContainer [in,out]
-		  ���̊֐��̓G���[������������A�G���[�̏������̃I�u�W�F�N�g�ɒǉ����܂��B
+		  この関数はエラーが発生したら、エラーの情報をこのオブジェクトに追加します。
 		@return
-		  ���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-			-	-22 ;	//	Ekijikokukeisiki �̒l���s���ł��B
-			-	-32 ;	//	Ekikibo �̒l���s���ł��B
-			-	-41 ;	//	DiagramRessyajouhouHyoujiKudari �̒l���s���ł��B
-			-	-42 ;	//	DiagramRessyajouhouHyoujiNobori �̒l���s���ł��B
-			-	-101 ;	//	Eki ���f�B���N�g���ł͂���܂���B
+		  成功したら 0 以上、エラーなら負の数です。
+			-	-22 ;	//	Ekijikokukeisiki の値が不正です。
+			-	-32 ;	//	Ekikibo の値が不正です。
+			-	-41 ;	//	DiagramRessyajouhouHyoujiKudari の値が不正です。
+			-	-42 ;	//	DiagramRessyajouhouHyoujiNobori の値が不正です。
+			-	-101 ;	//	Eki がディレクトリではありません。
 	 */
 	int CentDedEkiCont_From_OuPropertiesText( 
 			CentDedEkiCont* aCentDedEkiCont ,
@@ -366,8 +366,8 @@ public:
 	// ********************************
 	/**
 	@return
-		CentDedRessyasyubetsu::ESenStyle �� ������Ƃ̊Ԃ̃R���o�[�^�I�u�W�F�N�g��
-		�Ԃ��܂��B
+		CentDedRessyasyubetsu::ESenStyle と 文字列との間のコンバータオブジェクトを
+		返します。
 	*/
 	static const CEnumToString< CentDedRessyasyubetsu::ESenStyle >& 
 		getESenStyleToString();
@@ -375,19 +375,19 @@ public:
 		getEStopMarkDrawTypeToString() ;
 
 	/**
-		  OuPropertiesText �I�u�W�F�N�g����A
-		  CentDedRessyasyubetsu_To_OuPropertiesText() �֐��ɂ���č쐬���ꂽ
-		�A�C�e����ǂݍ��݁A CentDedRessyasyubetsu �I�u�W�F�N�g�ɔ��f���܂��B
+		  OuPropertiesText オブジェクトから、
+		  CentDedRessyasyubetsu_To_OuPropertiesText() 関数によって作成された
+		アイテムを読み込み、 CentDedRessyasyubetsu オブジェクトに反映します。
 		
 		@param pCdDiagramLineStyle [out]
-		  ���̊֐��͂��̃I�u�W�F�N�g�ɁA�����𔽉f���܂��B
+		  この関数はこのオブジェクトに、属性を反映します。
 		@param pCNodeContainer [in]
-		  ������ێ����Ă��� OuPropertiesText �I�u�W�F�N�g���w�肵�Ă��������B
+		  属性を保持している OuPropertiesText オブジェクトを指定してください。
 		@param pCOuErrorInfoContainer [in,out]
-		  ���̊֐��̓G���[������������A�G���[�̏������̃I�u�W�F�N�g�ɒǉ����܂��B
+		  この関数はエラーが発生したら、エラーの情報をこのオブジェクトに追加します。
 		@return
-		  ���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-			-	-52 ;	//	DiagramSenStyle �̒l���s���ł��B
+		  成功したら 0 以上、エラーなら負の数です。
+			-	-52 ;	//	DiagramSenStyle の値が不正です。
 	 */
 	int CdDiagramLineStyle_From_OuPropertiesText( 
 			CentDedRessyasyubetsu::CdDiagramLineStyle* pCdDiagramLineStyle ,
@@ -395,21 +395,21 @@ public:
 			OuPropertiesText::ErrorInfo::COuErrorInfoContainer* pCOuErrorInfoContainer ) ;
 		
 	/**
-		  OuPropertiesText �I�u�W�F�N�g����A
-		  CentDedRessyasyubetsu_To_OuPropertiesText() �֐��ɂ���č쐬���ꂽ
-		�A�C�e����ǂݍ��݁A CentDedRessyasyubetsu �I�u�W�F�N�g�ɔ��f���܂��B
+		  OuPropertiesText オブジェクトから、
+		  CentDedRessyasyubetsu_To_OuPropertiesText() 関数によって作成された
+		アイテムを読み込み、 CentDedRessyasyubetsu オブジェクトに反映します。
 		
 		@param pCentDedRessyasyubetsu [out]
-		  ���̊֐��͂��̃I�u�W�F�N�g�ɁA�����𔽉f���܂��B
+		  この関数はこのオブジェクトに、属性を反映します。
 		@param pCNodeContainer [in]
-		  ������ێ����Ă��� OuPropertiesText �I�u�W�F�N�g���w�肵�Ă��������B
+		  属性を保持している OuPropertiesText オブジェクトを指定してください。
 		@param pCOuErrorInfoContainer [in,out]
-		  ���̊֐��̓G���[������������A�G���[�̏������̃I�u�W�F�N�g�ɒǉ����܂��B
+		  この関数はエラーが発生したら、エラーの情報をこのオブジェクトに追加します。
 		@return
-		  ���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-			-	-11 ;	//	Syubetsumei ���w�肳��Ă��܂���B
-			-	-52 ;	//	DiagramSenStyle �̒l���s���ł��B
-			-	-101 ;	//	�l�̌`��������������܂���B
+		  成功したら 0 以上、エラーなら負の数です。
+			-	-11 ;	//	Syubetsumei が指定されていません。
+			-	-52 ;	//	DiagramSenStyle の値が不正です。
+			-	-101 ;	//	値の形式が正しくありません。
 	 */
 	int CentDedRessyasyubetsu_From_OuPropertiesText( 
 			CentDedRessyasyubetsu* pCentDedRessyasyubetsu ,
@@ -421,23 +421,23 @@ public:
 	// ********************************
 	
 	/**
-	  OuPropertiesText �I�u�W�F�N�g����A
-	  CentDedRessyasyubetsuCont_To_OuPropertiesText() �֐��ɂ���č쐬���ꂽ
-	�A�C�e����ǂݍ��݁A CentDedRessyasyubetsu �I�u�W�F�N�g�ɔ��f���܂��B
+	  OuPropertiesText オブジェクトから、
+	  CentDedRessyasyubetsuCont_To_OuPropertiesText() 関数によって作成された
+	アイテムを読み込み、 CentDedRessyasyubetsu オブジェクトに反映します。
 	
 	@param pCentDedRessyasyubetsuCont [in,out]
-	  ���̊֐��͂��̃I�u�W�F�N�g�ɁA�������㏑�����܂��B
-	  pCentDedRessyasyubetsuCont �̗v�f�������Ȃ��ꍇ�́A
-	  �v�f��ǉ����܂��B
+	  この関数はこのオブジェクトに、属性を上書きします。
+	  pCentDedRessyasyubetsuCont の要素数が少ない場合は、
+	  要素を追加します。
 	@param pCNodeContainer [in]
-	  ������ێ����Ă��� OuPropertiesText �I�u�W�F�N�g���w�肵�Ă��������B
+	  属性を保持している OuPropertiesText オブジェクトを指定してください。
 	@param pCOuErrorInfoContainer [in,out]
-	  ���̊֐��̓G���[������������A�G���[�̏������̃I�u�W�F�N�g�ɒǉ����܂��B
+	  この関数はエラーが発生したら、エラーの情報をこのオブジェクトに追加します。
 	@return
-	  ���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	-11 ;	//	Syubetsumei ���w�肳��Ă��܂���B
-		-	-52 ;	//	DiagramSenStyle �̒l���s���ł��B
-		-	-101 ;	//	Ressyasyubetsu ���f�B���N�g���ł͂���܂���B
+	  成功したら 0 以上、エラーなら負の数です。
+		-	-11 ;	//	Syubetsumei が指定されていません。
+		-	-52 ;	//	DiagramSenStyle の値が不正です。
+		-	-101 ;	//	Ressyasyubetsu がディレクトリではありません。
 	 */
 	int CentDedRessyasyubetsuCont_From_OuPropertiesText( 
 			CentDedRessyasyubetsuCont* pCentDedRessyasyubetsuCont ,
@@ -450,17 +450,17 @@ public:
 	// ********************************
 
 	/**
-		CentDedEkijikoku_To_string() �Ő���������������A
-		CentDedEkijikoku �̑����ɔ��f���܂��B
+		CentDedEkijikoku_To_string() で生成した文字列を、
+		CentDedEkijikoku の属性に反映します。
 	@param pCentDedEkijikoku[out]
-		���̊֐��͂��̃I�u�W�F�N�g�ɁA�����𔽉f���܂��B
+		この関数はこのオブジェクトに、属性を反映します。
 	@param strValue[in]
-		����(�w����)��ێ����镶������w�肵�Ă��������B
+		属性(駅時刻)を保持する文字列を指定してください。
 	@param strValue2[in]
-		����(�Ԑ��E���)��ێ����镶������w�肵�Ă��������B
+		属性(番線・作業)を保持する文字列を指定してください。
 	@return
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-		- ���݂̂Ƃ���A�G���[�͂���܂���B
+		成功したら 0 以上、エラーなら負の数です。
+		- 現在のところ、エラーはありません。
 		
 	*/
 	int CentDedEkiJikoku_From_string( 
@@ -475,17 +475,17 @@ public:
 	// ********************************
 
 	/**
-	CentDedRessyaTrack_To_string() �Ő���������������A
-	CentDedRessyaTrack �̑����ɔ��f���܂��B
+	CentDedRessyaTrack_To_string() で生成した文字列を、
+	CentDedRessyaTrack の属性に反映します。
 	@param pCentDedRessyaTrack[out]
-	���̊֐��͂��̃I�u�W�F�N�g�ɁA�����𔽉f���܂��B
+	この関数はこのオブジェクトに、属性を反映します。
 	@param iEkiTrack2Size[in]
-	�w�Ԑ����ł��A��ԔԐ����w�Ԑ��𒴂��Ȃ��悤�ɂ��邽�߂ɎQ�Ƃ��܂�
+	駅番線数です、列車番線が駅番線を超えないようにするために参照します
 	@param strValue[in]
-	������ێ����镶������w�肵�Ă��������B
+	属性を保持する文字列を指定してください。
 	@return
-	���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-	- ���݂̂Ƃ���A�G���[�͂���܂���B
+	成功したら 0 以上、エラーなら負の数です。
+	- 現在のところ、エラーはありません。
 
 	*/
 	int BeforeOperation_From_string(
@@ -503,36 +503,36 @@ public:
 	// ********************************
 	/**
 	@return
-		ERessyahoukou �ƕ�����Ƃ̊Ԃ̃R���o�[�^�I�u�W�F�N�g��Ԃ��܂��B
+		ERessyahoukou と文字列との間のコンバータオブジェクトを返します。
 	*/
 	static const CEnumToString<ERessyahoukou>& getERessyahoukouToString() ;
 		
 	/**
-		  OuPropertiesText �I�u�W�F�N�g����A
-		  CentDedRessya_To_OuPropertiesText() �֐��ɂ���č쐬���ꂽ
-		�A�C�e����ǂݍ��݁A CentDedRessya �I�u�W�F�N�g�ɔ��f���܂��B
+		  OuPropertiesText オブジェクトから、
+		  CentDedRessya_To_OuPropertiesText() 関数によって作成された
+		アイテムを読み込み、 CentDedRessya オブジェクトに反映します。
 		
-		  �������A
+		  ただし、
 	
-			- ��ԕ���
-			- �I�u�W�F�N�g����܂��� �w�w�����x �̐�
+			- 列車方向
+			- オブジェクトが包含する 『駅時刻』 の数
 	
-		�́A�ύX���܂���B���̒l�́A�֐��ďo���ɂ���Đݒ肳��Ă���
-		�K�v������܂��B
+		は、変更しません。この値は、関数呼出元によって設定されている
+		必要があります。
 		@param pCentDedRessya [in,out]
-		  ���̊֐��͂��̃I�u�W�F�N�g�ɁA��Ԃ̑����𔽉f���܂��B
-			�������A�I�u�W�F�N�g�̑����w��ԕ����x��
-			��܂��� �w�w�����x �̐��͕ύX���܂���B
-			���̒l�́A�֐��ďo���ɂ���Đݒ肳��Ă���K�v������܂��B
+		  この関数はこのオブジェクトに、列車の属性を反映します。
+			ただし、オブジェクトの属性『列車方向』と
+			包含する 『駅時刻』 の数は変更しません。
+			この値は、関数呼出元によって設定されている必要があります。
 	@param iEkiTrack2Size[in]
-	�e�w�̉w�Ԑ����ł��A��ԔԐ����w�Ԑ��𒴂��Ȃ��悤�ɂ��邽�߂ɎQ�Ƃ��܂�
+	各駅の駅番線数です、列車番線が駅番線を超えないようにするために参照します
 		@param pCNodeContainer [in]
-		  ������ێ����Ă��� OuPropertiesText �I�u�W�F�N�g���w�肵�Ă��������B
+		  属性を保持している OuPropertiesText オブジェクトを指定してください。
 		@param pCOuErrorInfoContainer [out]
-		  ���̊֐��̓G���[������������A�G���[�̏������̃I�u�W�F�N�g�ɒǉ����܂��B
+		  この関数はエラーが発生したら、エラーの情報をこのオブジェクトに追加します。
 		@return
-		  ���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-			- ���݂̂Ƃ���A�G���[�͂���܂���B
+		  成功したら 0 以上、エラーなら負の数です。
+			- 現在のところ、エラーはありません。
 	 */
 	int CentDedRessya_From_OuPropertiesText( 
 			CentDedRessya* pCentDedRessya ,
@@ -547,27 +547,27 @@ public:
 	// ********************************
 	
 	/**
-		  OuPropertiesText �I�u�W�F�N�g����A
-		  CentDedRessya_To_OuPropertiesText() �֐��ɂ���č쐬���ꂽ
-		�A�C�e����ǂݍ��݁A CentDedRessyaCont �I�u�W�F�N�g�ɔ��f���܂��B
+		  OuPropertiesText オブジェクトから、
+		  CentDedRessya_To_OuPropertiesText() 関数によって作成された
+		アイテムを読み込み、 CentDedRessyaCont オブジェクトに反映します。
 		
 		@param pCentDedRessyaCont [in,out]
-			���̊֐��͂��̃R���e�i�̖����ɁA
-			OuPropertiesText �I�u�W�F�N�g�ɕۑ�����Ă��鑮���̃I�u�W�F�N�g��
-			�ǉ����܂��B\n
-			�������A�ǉ������I�u�W�F�N�g�� �w�w�����x �̐��́A
-			m_iEkiCount �Ɍ��܂��Ă��܂��B aCdConectedString �ɕۑ�����Ă���
-			��Ԃ������葽���w�w�����x��ێ����Ă����ꍇ�́A�I���w���̎�����
-			�؎̂ĂƂȂ�܂��B
+			この関数はこのコンテナの末尾に、
+			OuPropertiesText オブジェクトに保存されている属性のオブジェクトを
+			追加します。¥n
+			ただし、追加されるオブジェクトの 『駅時刻』 の数は、
+			m_iEkiCount に決まっています。 aCdConectedString に保存されている
+			列車がこれより多い『駅時刻』を保持していた場合は、終着駅寄りの時刻が
+			切捨てとなります。
 	@param iEkiTrack2Size[in]
-	�e�w�̉w�Ԑ����ł��A��ԔԐ����w�Ԑ��𒴂��Ȃ��悤�ɂ��邽�߂ɎQ�Ƃ��܂�
+	各駅の駅番線数です、列車番線が駅番線を超えないようにするために参照します
 		@param pCNodeContainer [in]
-		  ������ێ����Ă��� OuPropertiesText �I�u�W�F�N�g���w�肵�Ă��������B
+		  属性を保持している OuPropertiesText オブジェクトを指定してください。
 		@param pCOuErrorInfoContainer [out]
-		  ���̊֐��̓G���[������������A�G���[�̏������̃I�u�W�F�N�g�ɒǉ����܂��B
+		  この関数はエラーが発生したら、エラーの情報をこのオブジェクトに追加します。
 		@return
-		  ���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-			- ���݂̂Ƃ���A�G���[�͂���܂���B
+		  成功したら 0 以上、エラーなら負の数です。
+			- 現在のところ、エラーはありません。
 	 */
 	int CentDedRessyaCont_From_OuPropertiesText( 
 			CentDedRessyaCont* pCentDedRessyaCont ,
@@ -582,25 +582,25 @@ public:
 	// ********************************
 	
 	/**
-		  OuPropertiesText �I�u�W�F�N�g����A
-		  CentDedDia_To_OuPropertiesText() �֐��ɂ���č쐬���ꂽ
-		�A�C�e����ǂݍ��݁A CentDedDia �I�u�W�F�N�g�ɔ��f���܂��B
+		  OuPropertiesText オブジェクトから、
+		  CentDedDia_To_OuPropertiesText() 関数によって作成された
+		アイテムを読み込み、 CentDedDia オブジェクトに反映します。
 		
 		@param pCentDedDia [in,out]
-		  ���̊֐��͂��̃I�u�W�F�N�g�ɁA�����𔽉f���܂��B
-		  ���̃I�u�W�F�N�g�ɂ́A���炩���� �w�w�̐��x�E�w��Ԏ�ʐ��x
-		���ݒ肳��Ă��Ȃ��Ă͂Ȃ�܂���B
+		  この関数はこのオブジェクトに、属性を反映します。
+		  このオブジェクトには、あらかじめ 『駅の数』・『列車種別数』
+		が設定されていなくてはなりません。
 		@param pCentDedEkiCont[in]
-		�w�R���e�i�ł��B���̊֐����Ăяo�����ȑO�ɁA�w�R���e�i���������ǂݍ��܂�Ă���K�v������܂��B
-		�e�w�̉w�Ԑ����ł��A��ԔԐ����w�Ԑ��𒴂��Ȃ��悤�ɂ��邽�߂ɎQ�Ƃ��܂�
+		駅コンテナです。この関数が呼び出される以前に、駅コンテナが正しく読み込まれている必要があります。
+		各駅の駅番線数です、列車番線が駅番線を超えないようにするために参照します
 		@param pCNodeContainer [in]
-		  ������ێ����Ă��� OuPropertiesText �I�u�W�F�N�g���w�肵�Ă��������B
+		  属性を保持している OuPropertiesText オブジェクトを指定してください。
 		@param pCOuErrorInfoContainer [out]
-		  ���̊֐��̓G���[������������A�G���[�̏������̃I�u�W�F�N�g�ɒǉ����܂��B
+		  この関数はエラーが発生したら、エラーの情報をこのオブジェクトに追加します。
 		@return
-		  ���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	-11 ;	//	DiaName ���w�肳��Ă��܂���B
-		-	-12 ;	//	RessyaCont��������܂���B
+		  成功したら 0 以上、エラーなら負の数です。
+		-	-11 ;	//	DiaName が指定されていません。
+		-	-12 ;	//	RessyaContが見つかりません。
 	 */
 	int CentDedDia_From_OuPropertiesText( 
 			CentDedDia* pCentDedDia ,
@@ -613,25 +613,25 @@ public:
 	// ********************************
 	
 	/**
-		  OuPropertiesText �I�u�W�F�N�g����A
-		  CentDedDiaCont_To_OuPropertiesText() �֐��ɂ���č쐬���ꂽ
-		�A�C�e����ǂݍ��݁A CentDedDiaCont �I�u�W�F�N�g�ɔ��f���܂��B
+		  OuPropertiesText オブジェクトから、
+		  CentDedDiaCont_To_OuPropertiesText() 関数によって作成された
+		アイテムを読み込み、 CentDedDiaCont オブジェクトに反映します。
 		
 		@param pCentDedDiaCont [in,out]
-		  ���̊֐��͂��̃I�u�W�F�N�g�ɁA�����𔽉f���܂��B
-		  ���̃I�u�W�F�N�g�ɂ́A���炩���� �w�w�̐��x�E�w��Ԏ�ʐ��x
-		���ݒ肳��Ă��Ȃ��Ă͂Ȃ�܂���B
+		  この関数はこのオブジェクトに、属性を反映します。
+		  このオブジェクトには、あらかじめ 『駅の数』・『列車種別数』
+		が設定されていなくてはなりません。
 		@param pCentDedEkiCont[in]
-		�w�R���e�i�ł��B���̊֐����Ăяo�����ȑO�ɁA�w�R���e�i���������ǂݍ��܂�Ă���K�v������܂��B
-		�e�w�̉w�Ԑ����ł��A��ԔԐ����w�Ԑ��𒴂��Ȃ��悤�ɂ��邽�߂ɎQ�Ƃ��܂�
+		駅コンテナです。この関数が呼び出される以前に、駅コンテナが正しく読み込まれている必要があります。
+		各駅の駅番線数です、列車番線が駅番線を超えないようにするために参照します
 		@param pCNodeContainer [in]
-		  ������ێ����Ă��� OuPropertiesText �I�u�W�F�N�g���w�肵�Ă��������B
+		  属性を保持している OuPropertiesText オブジェクトを指定してください。
 		@param pCOuErrorInfoContainer [out]
-		  ���̊֐��̓G���[������������A�G���[�̏������̃I�u�W�F�N�g�ɒǉ����܂��B
+		  この関数はエラーが発生したら、エラーの情報をこのオブジェクトに追加します。
 		@return
-		  ���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	-11 ;	//	DiaName ���w�肳��Ă��܂���B
-		-	-12 ;	//	RessyaCont��������܂���B
+		  成功したら 0 以上、エラーなら負の数です。
+		-	-11 ;	//	DiaName が指定されていません。
+		-	-12 ;	//	RessyaContが見つかりません。
 	 */
 	int CentDedDiaCont_From_OuPropertiesText( 
 			CentDedDiaCont* pCentDedDiaCont ,
@@ -644,30 +644,30 @@ public:
 	// ********************************
 	
 	/**
-		  OuPropertiesText �I�u�W�F�N�g����A
-		  CentDedRosen_To_OuPropertiesText() �֐��ɂ���č쐬���ꂽ
-		�A�C�e����ǂݍ��݁A CentDedRosen �I�u�W�F�N�g�ɔ��f���܂��B
+		  OuPropertiesText オブジェクトから、
+		  CentDedRosen_To_OuPropertiesText() 関数によって作成された
+		アイテムを読み込み、 CentDedRosen オブジェクトに反映します。
 		
 		@param pCentDedRosen [out]
-		  ���̊֐��͂��̃I�u�W�F�N�g�ɁA�����𔽉f���܂��B
+		  この関数はこのオブジェクトに、属性を反映します。
 		@param pCNodeContainer [in]
-		  ������ێ����Ă��� OuPropertiesText �I�u�W�F�N�g���w�肵�Ă��������B
+		  属性を保持している OuPropertiesText オブジェクトを指定してください。
 		@param pCOuErrorInfoContainer [out]
-		  ���̊֐��̓G���[������������A�G���[�̏������̃I�u�W�F�N�g�ɒǉ����܂��B
+		  この関数はエラーが発生したら、エラーの情報をこのオブジェクトに追加します。
 		@return
-		  ���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-			-	-22 ;	//	Ekijikokukeisiki �̒l���s���ł��B
-			-	-32 ;	//	Ekikibo �̒l���s���ł��B
-			-	-41 ;	//	DiagramRessyajouhouHyoujiKudari �̒l���s���ł��B
-			-	-42 ;	//	DiagramRessyajouhouHyoujiNobori �̒l���s���ł��B
-			-	-101 ;	//	Eki ���f�B���N�g���ł͂���܂���B
-			-	-111 ;	//	Syubetsumei ���w�肳��Ă��܂���B
-			-	-152 ;	//	DiagramSenStyle �̒l���s���ł��B
-			-	-201 ;	//	Ressyasyubetsu ���f�B���N�g���ł͂���܂���B
-			-	-211 ;	//	DiaName ���w�肳��Ă��܂���B
-			-	-212 ;	//	RessyaCont��������܂���B
-			-	-352 ;	//	�N�_�����̐ݒ肪�s�K�؂ł��B
-			-	-353 ;	//	�_�C���O�����̊���̉w�ԕ����s���ł��B
+		  成功したら 0 以上、エラーなら負の数です。
+			-	-22 ;	//	Ekijikokukeisiki の値が不正です。
+			-	-32 ;	//	Ekikibo の値が不正です。
+			-	-41 ;	//	DiagramRessyajouhouHyoujiKudari の値が不正です。
+			-	-42 ;	//	DiagramRessyajouhouHyoujiNobori の値が不正です。
+			-	-101 ;	//	Eki がディレクトリではありません。
+			-	-111 ;	//	Syubetsumei が指定されていません。
+			-	-152 ;	//	DiagramSenStyle の値が不正です。
+			-	-201 ;	//	Ressyasyubetsu がディレクトリではありません。
+			-	-211 ;	//	DiaName が指定されていません。
+			-	-212 ;	//	RessyaContが見つかりません。
+			-	-352 ;	//	起点時刻の設定が不適切です。
+			-	-353 ;	//	ダイヤグラムの既定の駅間幅が不正です。
 	 */
 	int CentDedRosen_From_OuPropertiesText( 
 			CentDedRosen* pCentDedRosen ,

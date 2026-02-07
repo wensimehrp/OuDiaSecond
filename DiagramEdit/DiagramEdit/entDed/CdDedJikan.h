@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -77,7 +77,7 @@ Copyright (C) 2006-2017 take-okm
 #ifndef  CdDedJikan_h
 #define  CdDedJikan_h
 #include <string>
-#include "str\tstring.h"
+#include "str¥tstring.h"
 
 namespace entDed{
 
@@ -86,20 +86,20 @@ namespace entDed{
 // ****************************************************************
 /**
  @brief
- �y�T�v�z
-	  �b�P�ʂ̌o�ߎ��Ԃ�\���P���f�[�^�N���X�ł��B
+ 【概要】
+	  秒単位の経過時間を表す単純データクラスです。
 	
-	  ���̃N���X�́A�u����A���玞��B�܂ł̊Ԃ̎��ԁv�Ƃ������A
-	���Ԃ̑��Βl��\���܂��B���̐������݂��܂��B
+	  このクラスは、「時刻Aから時刻Bまでの間の時間」といった、
+	時間の相対値を表します。負の数も存在します。
 
-	  ���̃N���X�́A�����I�ɂ͕b���𑮐� m_iTotalSeconds 
-	�ŕێ����܂��B
-	  ���ԁE���E�b�́A���̃N���X�̔h�������Ƃ��Ĉʒu�t�����܂��B
+	  このクラスは、内部的には秒数を属性 m_iTotalSeconds 
+	で保持します。
+	  時間・分・秒は、このクラスの派生属性として位置付けられます。
 
-	���̃N���X���ێ����鎞�Ԃ́A encode() �ŕ����񉻂��邱�Ƃ��ł��܂��B\n
- (��)  "10:30:45"\n
-	�܂��Aencode() �ō쐬������������A deocde() �ŉ��߂��邱�Ƃ�
-	�ł��܂��B
+	このクラスが保持する時間は、 encode() で文字列化することができます。¥n
+ (例)  "10:30:45"¥n
+	また、encode() で作成した文字列を、 deocde() で解釈することが
+	できます。
 
  */
 class CdDedJikan
@@ -109,21 +109,21 @@ public:
 	//	CdDedJikan::CConv
 	// ****************************************************************
 	/**
-		CdDedJikoku �̓��e�𕶎��񉻂���N���X�ł��B
-		�����Ƃ��āA������̃t�H�[�}�b�g��ێ����܂��B
+		CdDedJikoku の内容を文字列化するクラスです。
+		属性として、文字列のフォーマットを保持します。
 	*/
 	class CConv
 	{
-		/**	�b���o�͂��܂��� */
+		/**	秒を出力しません */
 		bool m_bNoSecond ;
 
-		/** �������̐��̏ꍇ�́A�擪�� "+" ��t�^���܂��B */
+		/** 時が正の数の場合は、先頭に "+" を付与します。 */
 		bool m_bPlusDisplay ;
 		/** 
-			�������̐��̏ꍇ�́A�擪�ɃX�y�[�X��t�^���܂��B
+			時が正の数の場合は、先頭にスペースを付与します。
 		
-			Format_PlusToNone �� Format_PlusToSpace ��
-			�r���I�ł��B
+			Format_PlusToNone と Format_PlusToSpace は
+			排他的です。
 		 */
 		bool m_bPlusToSpace ;
 
@@ -131,11 +131,11 @@ public:
 		CConv() ;
 		/**
 		@param bNoSecond [in]
-			�b���o�͂��܂��� 
+			秒を出力しません 
 		@param bPlusDisplay [in]
-			 �������̐��̏ꍇ�́A�擪�� "+" ��t�^���܂��B 
+			 時が正の数の場合は、先頭に "+" を付与します。 
 		@param bPlusToSpace [in]
-			�������̐��̏ꍇ�́A�擪�ɃX�y�[�X��t�^���܂��B 
+			時が正の数の場合は、先頭にスペースを付与します。 
 		*/
 		CConv( 
 			bool bNoSecond ,
@@ -158,14 +158,14 @@ public:
 		{	m_bPlusToSpace = value ; return *this ;};
 
 		/**
-			���Ԃ𕶎���ŕ\�����܂��B
+			時間を文字列で表現します。
 		 @param aJikoku [in]
-			������̏����̃I�v�V�������w�肵�܂��B
-			���̒l�̓r�b�g���ƂɈӖ��������܂��B
-			�r�b�g�̈Ӗ��́A EFormat ���Q�Ƃ��Ă��������B
+			文字列の書式のオプションを指定します。
+			この値はビットごとに意味を持ちます。
+			ビットの意味は、 EFormat を参照してください。
 		 @return
-			�����񉻂������̂�Ԃ��܂��B
-			this ���wNull��ԁx�̏ꍇ�́A�󕶎����Ԃ��܂��B
+			文字列化したものを返します。
+			this が『Null状態』の場合は、空文字列を返します。
 		*/
 		tstring encode( const CdDedJikan& aJikan )const ;
 
@@ -173,29 +173,29 @@ public:
 
 private:
 	// ********************************
-	///@name ����
+	///@name 属性
 	// ********************************
 	///@{
 	/**
-		 �b����ێ����܂��B
-		���̐��̏ꍇ������܂��B
+		 秒数を保持します。
+		負の数の場合もあります。
 	 */
 	int	m_iTotalSeconds ;
 	///@}
 	// --------------------------------
-	///@name �����֐�
+	///@name 下請関数
 	// --------------------------------
 	///@{
 	/**
-		�l�̕�����Ԃ��܂��B
+		値の符号を返します。
 		
-		�l�����̒l�̐�Βl�Ŋ��������ɂȂ�܂��B
+		値をその値の絶対値で割った数になります。
 	 @param value [in]
-		�ΏۂƂȂ�l���w�肵�Ă��������B
+		対象となる値を指定してください。
 	 @return
-		-	value > 0 �̂Ƃ��A +1
-		-	value == 0 �̂Ƃ��A 0
-		-	value < 0 �̂Ƃ��A -1
+		-	value > 0 のとき、 +1
+		-	value == 0 のとき、 0
+		-	value < 0 のとき、 -1
 	 */
 	static int sign( int value ){
 		if ( value > 0 ){	return +1 ; } 
@@ -207,55 +207,55 @@ private:
 	///@}
 public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	/**
-		0 �ɏ��������܂��B
+		0 に初期化します。
 	 */
 	CdDedJikan() : m_iTotalSeconds( 0 ){};
 	
 	/**
 	 @param iTotalSeconds [in]
-		�b�����w�肵�Ă��������B
+		秒数を指定してください。
 	 */
 	CdDedJikan( int iTotalSeconds ) : m_iTotalSeconds( iTotalSeconds ){};
 	
 	/**
-		���F���F�b���w�肵�āA���Ԃ����������܂��B
+		時：分：秒を指定して、時間を初期化します。
 	 @param iSign [in]
-		�������w�肵�Ă��������B
-		-	1 ;	//	���̐�
-		-	0 ;	//	�[��
-		-	-1 ;	//	���̐�
+		符号を指定してください。
+		-	1 ;	//	正の数
+		-	0 ;	//	ゼロ
+		-	-1 ;	//	負の数
 	 @param iHour [in]
-		���B�͈͂� 0 �ȏ� �B
+		時。範囲は 0 以上 。
 	 @param iMinute [in]
-		���B�͈͂� 0 �ȏ� 60 �����B
+		分。範囲は 0 以上 60 未満。
 	 @param iSecond [in]
-		�b�B�͈͂� 0 �ȏ� 60 �����B
+		秒。範囲は 0 以上 60 未満。
 	
-		���̐���ݒ肷��ꍇ�́A iSign �� -1 ���w�肵�A
-		iHour , iMinute , iSecond �ɂ͐��̐����w�肵�Ă��������B
+		負の数を設定する場合は、 iSign に -1 を指定し、
+		iHour , iMinute , iSecond には正の数を指定してください。
 		
-	 (��)
+	 (例)
 	
-		�u�Q���ԑO�v��ݒ肷��ꍇ�́A	\n
+		「２時間前」を設定する場合は、	¥n
 		CdDedJikan( -1 , 2 , 0 , 0 ) 
-		\n�ƂȂ�܂��B
+		¥nとなります。
 	
-		�u�Q���Ԍ�v��ݒ肷��ꍇ�́A	\n
+		「２時間後」を設定する場合は、	¥n
 		CdDedJikan( +1 , 2 , 0 , 0 ) 
-		\n�ƂȂ�܂��B
+		¥nとなります。
 		
 	 */
 	CdDedJikan( int iSign , int iHour , int iMinute , int iSecond = 0 ) ;
 
 	/**
-		������������g���ď��������܂��B
+		時刻文字列を使って初期化します。
 	 @param value [in]
-		������������w�肵�Ă��������B
+		時刻文字列を指定してください。
 		
-	 (��)����������̗�
+	 (例)時刻文字列の例
 		-	"13:15:45"
 		-	"13:15"
 		-	"131545"
@@ -272,7 +272,7 @@ public:
 	//	CdDedJikan
 	// ********************************
 	// ********************************
-	///@name CdDedJikan-����
+	///@name CdDedJikan-属性
 	// ********************************
 	///@{
 	int getTotalSeconds()const{	return m_iTotalSeconds ; } ;
@@ -283,59 +283,59 @@ public:
 	
 	/** 
 	 @return
-		m_iTotalSeconds ��Ԃ��܂��B 
+		m_iTotalSeconds を返します。 
 	 */
 	operator int()const{	return getTotalSeconds() ; } ;
 	
 	/**
 	 @return
-		�l�̕�����Ԃ��܂��B
-		-	1 ;	//	���̐�
-		-	0 ;	//	�[��
-		-	-1 ;	//	���̐�
+		値の符号を返します。
+		-	1 ;	//	正の数
+		-	0 ;	//	ゼロ
+		-	-1 ;	//	負の数
 	 */
 	int getSign()const{	return sign( m_iTotalSeconds ) ; } ;
 	
 	/**
 	 @return
-		���B�l��0�ȏ�B
+		時。値は0以上。
 	 @attention
-		this �����̐��̏ꍇ�ł��A���̒l�͐��i��Βl�j�ł��B
+		this が負の数の場合でも、この値は正（絶対値）です。
 	 */
 	int getHour()const{	return abs( m_iTotalSeconds / ( 60 * 60 ) ) ; } ;
 	
 	/**
 	 @return
-		���B
+		分。
 	 @attention
-		this �����̐��̏ꍇ�ł��A���̒l�͐��i��Βl�j�ł��B
+		this が負の数の場合でも、この値は正（絶対値）です。
 	 */
 	int getMinute()const{	return abs( m_iTotalSeconds / ( 60 ) % ( 60 ) ) ; } ;
 	
 	/**
 	 @return
-		�b�B
+		秒。
 	 @attention
-		this �����̐��̏ꍇ�ł��A���̒l�͐��i��Βl�j�ł��B
+		this が負の数の場合でも、この値は正（絶対値）です。
 	 */
 	int getSecond()const{	return abs( m_iTotalSeconds % ( 60 ) ) ; } ;
 	
 	/**
-		���Ԃ��A�ݒ肵�܂��B
+		時間を、設定します。
 	 @param iSign [in]
-		�������w�肵�Ă��������B
-		-	1 ;	//	���̐�
-		-	0 ;	//	�[��
-		-	-1 ;	//	���̐�
+		符号を指定してください。
+		-	1 ;	//	正の数
+		-	0 ;	//	ゼロ
+		-	-1 ;	//	負の数
 	 @param iHour [in]
-		���B�͈͂� 0 �ȏ� �B
+		時。範囲は 0 以上 。
 	 @param iMinute [in]
-		���B�͈͂� 0 �ȏ� 60 �����B
+		分。範囲は 0 以上 60 未満。
 	 @param iSecond [in]
-		�b�B�͈͂� 0 �ȏ� 60 �����B
+		秒。範囲は 0 以上 60 未満。
 	
-		���̐���ݒ肷��ꍇ�́A iSign �� -1 ���w�肵�A
-		iHour , iMinute , iSecond �ɂ͐��̐����w�肵�Ă��������B
+		負の数を設定する場合は、 iSign に -1 を指定し、
+		iHour , iMinute , iSecond には正の数を指定してください。
 		
 	 */
 	CdDedJikan& setTime( int iSign , 
@@ -345,84 +345,84 @@ public:
 	///@}
 	
 	// ********************************
-	///@name CdDedJikan-����
+	///@name CdDedJikan-操作
 	// ********************************
 	///@{
 	/**
-		�Q�̎��Ԃ��A��r���܂��B
+		２つの時間を、比較します。
 	 @param value [in]
-		��r�Ώۂ̃I�u�W�F�N�g���w�肵�Ă��������B
+		比較対象のオブジェクトを指定してください。
 	 @return
-		this - value ���s�������ʂ̕�����Ԃ��܂��B
-		-	+1 ;	//	this > value�B
-		-	0 ;		//	this == value�B
-		-	-1 ;	//	this < value�B
+		this - value を行った結果の符号を返します。
+		-	+1 ;	//	this > value。
+		-	0 ;		//	this == value。
+		-	-1 ;	//	this < value。
 	 */
 	int compare( const CdDedJikan& value )const ;
 	
-	/**	compare() �Ɠ����ł��B	 */
+	/**	compare() と等価です。	 */
 	bool operator>( const CdDedJikan& value )const{
 		return ( compare( value ) == 1 ) ; } ;
-	/**	compare() �Ɠ����ł��B	 */
+	/**	compare() と等価です。	 */
 	bool operator>=( const CdDedJikan& value )const{
 		return ( compare( value ) != -1  ) ; } ;
-	/**	compare() �Ɠ����ł��B	 */
+	/**	compare() と等価です。	 */
 	bool operator==( const CdDedJikan& value )const{
 		return ( compare( value ) == 0 ) ; } ;
-	/**	compare() �Ɠ����ł��B	 */
+	/**	compare() と等価です。	 */
 	bool operator<=( const CdDedJikan& value )const{
 		return ( compare( value ) != 1  ) ; } ;
-	/**	compare() �Ɠ����ł��B	 */
+	/**	compare() と等価です。	 */
 	bool operator<( const CdDedJikan& value )const{
 		return ( compare( value ) == -1 ) ; } ;
 	
 	/**
-		this ���ێ����Ă��鎞�Ԃɑ΂��āA�b�������Z���܂��B
+		this が保持している時間に対して、秒数を加算します。
 	 @param value [in]
-		���Z����b�����w�肵�Ă��������B
-		���̐����w�肷�邱�Ƃ��ł��܂��B
+		加算する秒数を指定してください。
+		負の数を指定することもできます。
 	 */
 	CdDedJikan& addSeconds( int value ) ;
 
-	/** addSeconds() �Ɠ����ł� */
+	/** addSeconds() と等価です */
 	CdDedJikan& operator+=( int value ) {
 		return addSeconds( value ) ; } ;
 
-	/** addSeconds() �Ɠ����ł��B
+	/** addSeconds() と等価です。
 	
-		this ���ێ����Ă��鎞�Ԃɑ΂��āA�b�������Z���܂��B
+		this が保持している時間に対して、秒数を減算します。
 	 @param value [in]
-		���Z����b�����w�肵�Ă��������B
+		減算する秒数を指定してください。
 	 */
 	CdDedJikan& operator-=( int value ) {
 		return addSeconds( -value ) ; } ;
 
 	
 	/**
-		�Q�̎��Ԃ̍����A�b���ŕԂ��܂��B
+		２つの時間の差を、秒数で返します。
 	 @param value [in]
-		��r�Ώۂ̃I�u�W�F�N�g���w�肵�Ă��������B
+		比較対象のオブジェクトを指定してください。
 	 @return
-		this - value ���s�������ʂ̕b����Ԃ��܂��B
-		this < value �̏ꍇ�́A���̐���Ԃ��܂��B
+		this - value を行った結果の秒数を返します。
+		this < value の場合は、負の数を返します。
 	
 	 */
 	int subJikan( const CdDedJikan& value )const ;
 
 	/**
-		encode() �ɂ���Đ������ꂽ�����������
-		��͂��Athis �̑����ɔ��f���܂��B
+		encode() によって生成された時刻文字列を
+		解析し、this の属性に反映します。
 	
-		���������񂪉��ߕs�\�ȏꍇ�́Athis �� �wNull��ԁx
-		�ƂȂ�܂��B
+		時刻文字列が解釈不可能な場合は、this は 『Null状態』
+		となります。
 	 @param value [in]
-		������������w�肵�Ă��������B
+		時刻文字列を指定してください。
 	 @return
-		���������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	-1 ;	//	���ڐ����s�����Ă��܂��B
-		-	-2 ;	//	���E���E�b�̕\�L���s���ł��B
+		成功すれば0以上、エラーなら負の数です。
+		-	-1 ;	//	項目数が不足しています。
+		-	-2 ;	//	時・分・秒の表記が不正です。
 		
-	 (��)����������̗�
+	 (例)時刻文字列の例
 		-	"13:15:45"
 		-	"13:15"
 		-	"131545"

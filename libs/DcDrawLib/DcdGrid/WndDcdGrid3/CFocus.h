@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -79,17 +79,17 @@ Copyright (C) 2006-2017 take-okm
 #endif // _MSC_VER > 1000
 /**
 @file
-���̃w�b�_�t�@�C����P�̂ŃC���N���[�h���邱�Ƃ͂ł��܂���B
-����ɁA CWndDcdGrid.h ���C���N���[�h���Ă��������B
+このヘッダファイルを単体でインクルードすることはできません。
+代わりに、 CWndDcdGrid.h をインクルードしてください。
 
-���̃w�b�_�t�@�C���́ACWndDcdGrid.h �̖����ŃC���N���[�h���Ă��܂��B
-���̂��߁A���̃N���X���� CWndDcdGrid.h ���C���N���[�h���邱�Ƃ͂ł��܂���B
+このヘッダファイルは、CWndDcdGrid.h の末尾でインクルードしています。
+このため、このクラスから CWndDcdGrid.h をインクルードすることはできません。
 */
 
 #include <afxwin.h>
-#include "NsOu\Ou.h"
-#include "DcDraw\IfDcDraw.h"
-#include "DcdGrid\CDcdGridCell.h"
+#include "NsOu¥Ou.h"
+#include "DcDraw¥IfDcDraw.h"
+#include "DcdGrid¥CDcdGridCell.h"
 
 namespace DcDrawLib{
 namespace DcdGrid{
@@ -100,309 +100,309 @@ namespace WndDcdGrid3{
 // ----------------------------------------------------------------
 /**
  @brief
-	CWndDcdGrid �̃t�H�[�J�X�E�X�N���[���̐�����N���X���������̂ł��B
+	CWndDcdGrid のフォーカス・スクロールの制御をクラス化したものです。
 	
-	���̃N���X�́A CWndDcdGrid  �������I�ɐ������邽�߂ɑ��݂��܂��B
-	����ȊO�̗��p���l�͂���܂���B
+	このクラスは、 CWndDcdGrid  が内部的に生成するために存在します。
+	それ以外の利用価値はありません。
  */
 class CFocus
 {
 	friend class CWndDcdGrid ;
 public:
 	// ********************************
-	///@name �萔
+	///@name 定数
 	// ********************************
 	///@{
 	/**
 	@return
-		�Z���̗�ԍ���NULL�l�B
+		セルの列番号のNULL値。
 
-		�Z���̗�ԍ��́A
-		x,y������INT_MIN�Ȃ�ANULL�ł��邱�Ƃ������܂��B
+		セルの列番号は、
+		x,y両方がINT_MINなら、NULLであることを示します。
 	*/
 	static CdDcdPosXy	ColumnNumberPosXy_NULL()
 	{	return CdDcdPosXy( INT_MIN , INT_MIN ) ;};
 private:
 	// ********************************
-	///@name �֘A
+	///@name 関連
 	// ********************************
 	///@{
 	/**
-		�O���́A CWndDcdGrid �ւ̊֘A�ł��B
-		���̃I�u�W�F�N�g�̔j���̐Ӗ��́A�N���X���[�U�[�ɂ���܂��B
-		���̃I�u�W�F�N�g�́A this ��蒷���������Ȃ��Ă͂Ȃ�܂���B
-		�R���X�g���N�^�Ō��܂�܂��B
+		外側の、 CWndDcdGrid への関連です。
+		このオブジェクトの破棄の責務は、クラスユーザーにあります。
+		このオブジェクトは、 this より長く生存しなくてはなりません。
+		コンストラクタで決まります。
 	 */
 	CWndDcdGrid*	m_pCWndDcdGrid ;
 	/**
-		�t�H�[�J�X�Z���ɑ΂��āA�t�H�[�J�X�}�[�N��`�悷��
-		DcDraw �I�u�W�F�N�g�ł��B
+		フォーカスセルに対して、フォーカスマークを描画する
+		DcDraw オブジェクトです。
 	
-		�ʏ�́Athis �� CreateDcDrawFocusCell() ���z�֐����A
-		CDcdRectangle �I�u�W�F�N�g�𐶐��E�o�^���܂��B
-		�܂��A DeleteDcDrawFocusCell() ���z�֐����A
-		���̃I�u�W�F�N�g��o�^�����E�j�����܂��B
+		通常は、this の CreateDcDrawFocusCell() 仮想関数が、
+		CDcdRectangle オブジェクトを生成・登録します。
+		また、 DeleteDcDrawFocusCell() 仮想関数が、
+		このオブジェクトを登録解除・破棄します。
 		
 	 */
 	Ou<IfDcDraw>	m_pIfDcDrawFocusCell ;
 	///@}
 private:
 	// ********************************
-	///@name ����
+	///@name 属性
 	// ********************************
 	///@{
 	/**
-		FocusCell �� XColumnNumber
+		FocusCell の XColumnNumber
 		
-		 CDcdGridWnd �E�C���h�E�́A�O���b�h�E�C���h�E�̂��ׂĂ�Cell��
-		�����̂ЂƂ� FocusCell �Ƃ��Ďw�肵�܂��BFocusCell�͓_����
-		�g���Ŏ�����܂��B
-		(Cell���ЂƂ��Ȃ��ꍇ�́A�l�͂O�Ƃ��܂����A
-		���̒l�͈Ӗ��������܂���)
+		 CDcdGridWnd ウインドウは、グリッドウインドウのすべてのCellの
+		うちのひとつを FocusCell として指定します。FocusCellは点線の
+		枠線で示されます。
+		(Cellがひとつもない場合は、値は０としますが、
+		この値は意味を持ちません)
 	
-		  FocusCell��ColumnNumber �́A�K���E�C���h�E��
-		�iIfDcdTarget �I�u�W�F�N�g�̗̈���j�ɑ��݂��܂��B
-		Scrollout����Ă���Z���E�E�C���h�E�̊O���ɂ���Z����
-		FocusCell�ɂȂ邱�Ƃ͂���܂���B
-		  �܂��AAttachedCell�i�팋���Z���j��FocusCell�ɂȂ邱�Ƃ͂���܂���B
+		  FocusCellのColumnNumber は、必ずウインドウ内
+		（IfDcdTarget オブジェクトの領域内）に存在します。
+		Scrolloutされているセル・ウインドウの外側にあるセルが
+		FocusCellになることはありません。
+		  また、AttachedCell（被結合セル）がFocusCellになることはありません。
 		
-		  ���̏����𖞂������߁AFocusCell �ƁACDcdGrid��
-		 FixafterColumnNumber �́A��ɐ��K������܂��B
-		(���̐��K���́A adjustProp() �ōs���܂�)�B
+		  この条件を満たすため、FocusCell と、CDcdGridの
+		 FixafterColumnNumber は、常に正規化されます。
+		(この正規化は、 adjustProp() で行います)。
 	 */
 	int	m_iFocusCellXColumnNumber ;
 
 	/**
-		FocusCell �� YColumnNumber
+		FocusCell の YColumnNumber
 		
-		 CDcdGridWnd �E�C���h�E�́A�O���b�h�E�C���h�E�̂��ׂĂ�Cell��
-		�����̂ЂƂ� FocusCell �Ƃ��Ďw�肵�܂��BFocusCell�͓_����
-		�g���Ŏ�����܂��B
-		(Cell���ЂƂ��Ȃ��ꍇ�́A�l�͂O�Ƃ��܂����A
-		���̒l�͈Ӗ��������܂���)
+		 CDcdGridWnd ウインドウは、グリッドウインドウのすべてのCellの
+		うちのひとつを FocusCell として指定します。FocusCellは点線の
+		枠線で示されます。
+		(Cellがひとつもない場合は、値は０としますが、
+		この値は意味を持ちません)
 	
-		  FocusCell��ColumnNumber �́A�K���E�C���h�E��
-		�iIfDcdTarget �I�u�W�F�N�g�̗̈���j�ɑ��݂��܂��B
-		Scrollout����Ă���Z���E�E�C���h�E�̊O���ɂ���Z����
-		FocusCell�ɂȂ邱�Ƃ͂���܂���B
-		  �܂��AAttachedCell�i�팋���Z���j��FocusCell�ɂȂ邱�Ƃ͂���܂���B
+		  FocusCellのColumnNumber は、必ずウインドウ内
+		（IfDcdTarget オブジェクトの領域内）に存在します。
+		Scrolloutされているセル・ウインドウの外側にあるセルが
+		FocusCellになることはありません。
+		  また、AttachedCell（被結合セル）がFocusCellになることはありません。
 		
-		  ���̏����𖞂������߁AFocusCell �ƁACDcdGrid��
-		 FixafterColumnNumber �́A��ɐ��K������܂��B
-		(���̐��K���́A adjustProp() �ōs���܂�)�B
+		  この条件を満たすため、FocusCell と、CDcdGridの
+		 FixafterColumnNumber は、常に正規化されます。
+		(この正規化は、 adjustProp() で行います)。
 	 */
 	int	m_iFocusCellYColumnNumber ; 
 
 
 	/**
-	  �t�H�[�J�X�Z�����E�C���h�E�O�ɂȂ�ꍇ�́A
-	  �t�H�[�J�X�Z���ƃX�N���[���ʒu�̒�����@���w�肵�܂��B
+	  フォーカスセルがウインドウ外になる場合の、
+	  フォーカスセルとスクロール位置の調停方法を指定します。
 
-		- false; �t�H�[�J�X�Z�����E�C���h�E���Ɉړ�������B
-		- true; (�f�t�H���g)�t�H�[�J�X�Z�����E�C���h�E���ɂȂ�悤��@n
-		�X�N���[���ʒu��ύX����B
+		- false; フォーカスセルをウインドウ内に移動させる。
+		- true; (デフォルト)フォーカスセルがウインドウ内になるように@n
+		スクロール位置を変更する。
 	*/
 	bool m_bFixafterColumnNumberChange ;
 
 	/**
-		- false: (�f�t�H���g)�E�C���h�E�Ƀt�H�[�J�X���Ȃ��Ƃ��́A@n
-			�t�H�[�J�X�}�[�N���������܂��B
-		- true: �E�C���h�E�Ƀt�H�[�J�X���Ȃ��Ƃ��ɂ��A@n
-			�t�H�[�J�X�}�[�N���������܂���B
+		- false: (デフォルト)ウインドウにフォーカスがないときは、@n
+			フォーカスマークを消去します。
+		- true: ウインドウにフォーカスがないときにも、@n
+			フォーカスマークを消去しません。
 	 */
 	bool	m_bIsFocusmarkShowEvery ;
 	///@}
 private:
 	// --------------------------------
-	///@name �����f�[�^
+	///@name 内部データ
 	// --------------------------------
 	///@{
 	/** 
-		�����l��ۑ����܂��B
+		属性値を保存します。
 	
-		�����l�� -1 �i�����l�j�ł��B
+		初期値は -1 （無効値）です。
 	
-		���̒l�́A update_updateDisplay() ���ɁA�O��l��r���s���̂Ɏg���܂��B
-		�O��l��r���s������́A�l���X�V���܂��B
+		この値は、 update_updateDisplay() 時に、前回値比較を行うのに使います。
+		前回値比較を行った後は、値を更新します。
 	
-		�܂��AOnPaint() �ł��A�l���X�V���܂��B
+		また、OnPaint() でも、値を更新します。
 	 */
 	int	m_iFocusCellXColumnNumber_Sid ;
 	/** 
-		�����l��ۑ����܂��B
+		属性値を保存します。
 	
-		�����l�� -1 �i�����l�j�ł��B
+		初期値は -1 （無効値）です。
 	
-		���̒l�́A update_updateDisplay() ���ɁA�O��l��r���s���̂Ɏg���܂��B
-		�O��l��r���s������́A�l���X�V���܂��B
+		この値は、 update_updateDisplay() 時に、前回値比較を行うのに使います。
+		前回値比較を行った後は、値を更新します。
 	
-		�܂��AOnPaint() �ł��A�l���X�V���܂��B
+		また、OnPaint() でも、値を更新します。
 	 */
 	int m_iFocusCellYColumnNumber_Sid ;
 	///@}
 
 protected:
 	// --------------------------------
-	///@name	WndDcdGrid3-�t�H�[�J�X-�����֐�
+	///@name	WndDcdGrid3-フォーカス-下請関数
 	// --------------------------------
 	///@{
 	/**
-		this �́AOnCreate() ���炱�̊֐����Ăяo���܂��B
+		this は、OnCreate() からこの関数を呼び出します。
 	
-		m_pIfDcDrawFocusCell �̐����E�o�^���s���܂��B
+		m_pIfDcDrawFocusCell の生成・登録を行います。
 	 */
 	virtual void CreateDcDrawFocusCell() ;
 	/**
-		this �́AOnDestroy() ���炱�̊֐����Ăяo���܂��B
+		this は、OnDestroy() からこの関数を呼び出します。
 	
-		CWndDcdGrid �ɑ΂��āA m_pIfDcDrawFocusCell 
-		�̓o�^�����E�j�����s���܂��B
+		CWndDcdGrid に対して、 m_pIfDcDrawFocusCell 
+		の登録解除・破棄を行います。
 	 */	
 	virtual void DeleteDcDrawFocusCell() ;
 	///@}
 protected:
 	// --------------------------------
-	///@name CWndDcdGrid ����̈Ϗ�
+	///@name CWndDcdGrid からの委譲
 	// --------------------------------
 	///@{
 	/**
-	- �����̕␳
-	- �����̕ω���CWndDcdGrid�ɒʒm
+	- 属性の補正
+	- 属性の変化をCWndDcdGridに通知
 
-	���s���܂��B
+	を行います。
 
-	�y1.�����̕␳�z
+	【1.属性の補正】
 
-	  �ΏۂƂȂ�̂́A�ȉ��̑����ł��B
+	  対象となるのは、以下の属性です。
 		
 	- m_iFocusCellXColumnNumber 
 	- m_iFocusCellYColumnNumber 
 	- m_pCDcdGrid->m_iXFixafterColumnNumber
 	- m_pCDcdGrid->m_iYFixafterColumnNumber
 
-	  ���K���ɍۂ��āAm_iFocurCellXColumnNumber �� m_pCDcdGrid->m_iXFixafterColumnNumber 
-	�̒l�����������ꍇ�A�ǂ����ύX���邩���A�t���O�őI���ł��܂��B
+	  正規化に際して、m_iFocurCellXColumnNumber と m_pCDcdGrid->m_iXFixafterColumnNumber 
+	の値が競合した場合、どちらを変更するかを、フラグで選択できます。
 
-	- [FocurCellColumnNumber �ύX]  �t�H�[�J�X�Z�����A�E�C���h�E����
-	�ړ����܂��B
-	�X�N���[���ʒu��ύX�����Ƃ��́A��������g�p���܂��B
-	- [FixafterColumnNumber �ύX]  �t�H�[�J�X�Z����
-	�E�C���h�E���
-	�\�������悤�ɁA FixafterColumnNumber ��ύX���܂��B
-	�t�H�[�J�X�ʒu��ύX�����Ƃ��́A��������g�p���܂��B
+	- [FocurCellColumnNumber 変更]  フォーカスセルを、ウインドウ内に
+	移動します。
+	スクロール位置を変更したときは、こちらを使用します。
+	- [FixafterColumnNumber 変更]  フォーカスセルが
+	ウインドウ上に
+	表示されるように、 FixafterColumnNumber を変更します。
+	フォーカス位置を変更したときは、こちらを使用します。
 		
 
-	�P�DFocusCell ���팋���Z���ɂȂ����ꍇ�E�E�EFocusCell��	�����Z���Ɉړ����܂��B
+	１．FocusCell が被結合セルになった場合・・・FocusCellは	結合セルに移動します。
 
-	�Q�DFocusCellColumnNumber �� �E�C���h�E�͈̔�
-		�iIfDcdTarget::getZone()�̗̈�)�Ɏ��܂��Ă��Ȃ��ꍇ�E�E�E
+	２．FocusCellColumnNumber が ウインドウの範囲
+		（IfDcdTarget::getZone()の領域)に収まっていない場合・・・
 
-	- [FixafterColumnNumber �ύX]
-	FocusCellColumnNumber ���A��ʏ�̈�ԉE���� ColumnNumber �ɂ��܂��B
-	- [FocurCellColumnNumber �ύX]
-	FocusCellColumnNumber ���E�C���h�E�͈̔͂Ɏ��܂�܂ŁA
-	FixafterColumnNumber�����Z���܂��B
-	���̌��ʂƂȂ� FixafterColumnNumber ���A
-	 FixafterColumnNumberMaxForColumn �ƌĂт܂��B
+	- [FixafterColumnNumber 変更]
+	FocusCellColumnNumber を、画面上の一番右下の ColumnNumber にします。
+	- [FocurCellColumnNumber 変更]
+	FocusCellColumnNumber がウインドウの範囲に収まるまで、
+	FixafterColumnNumberを加算します。
+	この結果となる FixafterColumnNumber を、
+	 FixafterColumnNumberMaxForColumn と呼びます。
 		
-	�R�D FocusCellColumnNumber �� ColumnScrollout �ɂȂ����ꍇ�E�E�E
-		- [FixafterColumnNumber �ύX]
-		FocusCellColumnNumber �� FixafterColumnNumber �Ɠ����ɂ��܂��B
-		- [FocurCellColumnNumber �ύX]
-		�X�N���[���ʒu�𐳋K�����āA�t�H�[�J�X�Z�����\�������悤�ɂ��܂��B
-		FixafterColumnNumber���AFocusCell��ColumnNumber�Ɠ����ɂ��܂��B
+	３． FocusCellColumnNumber が ColumnScrollout になった場合・・・
+		- [FixafterColumnNumber 変更]
+		FocusCellColumnNumber を FixafterColumnNumber と同じにします。
+		- [FocurCellColumnNumber 変更]
+		スクロール位置を正規化して、フォーカスセルが表示されるようにします。
+		FixafterColumnNumberを、FocusCellのColumnNumberと同じにします。
 
-	�S�DFocusCell ��0�ȏ� ColumnCount�����łȂ��ꍇ�E�E�EFocusCell��
-		�����̒l�ɂ��܂��B
+	４．FocusCell が0以上 ColumnCount未満でない場合・・・FocusCellは
+		内側の値にします。
 		
-	�T�DFocusCell ���팋���Z���ɂȂ����ꍇ�E�E�EFocusCell��
-		�����Z���Ɉړ����܂��B
+	５．FocusCell が被結合セルになった場合・・・FocusCellは
+		結合セルに移動します。
 
-	�y2.�����̕ω���CWndDcdGrid�ɒʒm�z
+	【2.属性の変化をCWndDcdGridに通知】
 
-	  �������ω������ꍇ�́ACWndDcdGrid �ɑ΂��āA�ȉ��̃��\�b�h��
-	�Ăяo���܂��B�A
+	  属性が変化した場合は、CWndDcdGrid に対して、以下のメソッドを
+	呼び出します。、
 
 	- CWndDcdGrid::OnSetFocusCell()
 	- CWndDcdGrid::OnSetXFixafterColumnNumber()
 	- CWndDcdGrid::OnSetYFixafterColumnNumber()
 
 	 @return 
-		���K���̌��ʁA���炩�̒l��ω��������ꍇ�͐^�ł��B
+		正規化の結果、何らかの値を変化させた場合は真です。
 	 */
 	bool update_adjustProp() ;
 
 	/**
-	  update() �̉����֐��ł��B
+	  update() の下請関数です。
 
-	  �����̕ω����A��ʏ�ɔ��f���܂��B
-	  �ΏۂƂȂ�̂́A�ȉ��̑����ł��B
+	  属性の変化を、画面上に反映します。
+	  対象となるのは、以下の属性です。
 
 	- m_iFocusCellXColumnNumber 
 	- m_iFocusCellYColumnNumber 
 	- m_pCDcdGrid->m_iXFixafterColumnNumber
 	- m_pCDcdGrid->m_iYFixafterColumnNumber
 
-	  ���̕ω����@�m���邽�߂ɁAthis �͈ȉ��̑����ɑO��l��ێ����Ă��܂��B
+	  この変化を察知するために、this は以下の属性に前回値を保持しています。
 
 	- m_iFocusCellXColumnNumber_Sid
 	- m_iFocusCellYColumnNumber_Sid
 	- m_CdScrollbarPropX_Sid
 	- m_CdScrollbarPropY_Sid
 
-	m_iFocusCellColumnNumber�E�E�E�ύX�O�ƕύX��̃Z���𖳌������A
-	�ĕ`����s�킹�܂��B
+	m_iFocusCellColumnNumber・・・変更前と変更後のセルを無効化し、
+	再描画を行わせます。
 
-	FixafterColumnNumber�E�E�E�E�C���h�E���Grid���X�N���[�����܂��B
-	�܂��A�X�N���[���o�[������ύX���܂��B
+	FixafterColumnNumber・・・ウインドウ上のGridをスクロールします。
+	また、スクロールバー属性を変更します。
 
 
 	@return 
-		���炩�̒l�̕ω�����ʏ�ɔ��f�������ꍇ�͐^�ł��B
+		何らかの値の変化を画面上に反映させた場合は真です。
 	 */
 	bool update_updateScreen() ;
 	/**
-	  CWndDcdGrid �̓��ꃁ�\�b�h�̈Ϗ����󂯂܂��B
-  	  pIfDcdTarget �ɁA�`����s���܂��B
+	  CWndDcdGrid の同一メソッドの委譲を受けます。
+  	  pIfDcdTarget に、描画を行います。
 
-	�y�I�[�o���C�h�z
-	  m_pIfDcDrawFocusCell �ŁA�t�H�[�J�X�}�[�N��`�悵�܂��B
+	【オーバライド】
+	  m_pIfDcDrawFocusCell で、フォーカスマークを描画します。
 
 	@param pIfDcdTarget  [in]
-	 	���̃I�u�W�F�N�g�ɕ`����s�킹����DC�Ɨ̈���w�肵�Ă��������B
-	 	CWndDcdGrid�̃N���C�A���g�̈�� IfDcdTarget ���w�肵�Ă��������B
+	 	このオブジェクトに描画を行わせたいDCと領域を指定してください。
+	 	CWndDcdGridのクライアント領域の IfDcdTarget を指定してください。
 	@return
-	 	�`����s�����ꍇ�͐^�E���̗̈�ւ̕`�悪�ł��Ȃ������ꍇ�͋U�ł��B
+	 	描画を行った場合は真・この領域への描画ができなかった場合は偽です。
 	*/
 	virtual bool OnPaint( IfDcdTarget* pIfDcdTarget ) ;
 	
 	/**
-		CWndDcdGrid �̓��ꃁ�\�b�h�̈Ϗ����󂯂܂��B
+		CWndDcdGrid の同一メソッドの委譲を受けます。
 
-		�X�N���[���E�t�H�[�J�X�𐳋K���E�Đݒ肵�܂��B
+		スクロール・フォーカスを正規化・再設定します。
 	*/
 	void OnSize(UINT nType, int cx, int cy);
 
 	/**
-		CWndDcdGrid �̓��ꃁ�\�b�h�̈Ϗ����󂯂܂��B
+		CWndDcdGrid の同一メソッドの委譲を受けます。
 
-		�t�H�[�J�X�Z���̈ʒu���X�V���܂��B
+		フォーカスセルの位置を更新します。
 	*/
 	void OnSetFocus(CWnd* pOldWnd);
 	/**
-		CWndDcdGrid �̓��ꃁ�\�b�h�̈Ϗ����󂯂܂��B
+		CWndDcdGrid の同一メソッドの委譲を受けます。
 
-		�t�H�[�J�X�Z���̈ʒu���X�V���܂��B
+		フォーカスセルの位置を更新します。
 	*/
 	void OnKillFocus(CWnd* pNewWnd);
 
 	/**
-		CWndDcdGrid �̓��ꃁ�\�b�h�̈Ϗ����󂯂܂��B
+		CWndDcdGrid の同一メソッドの委譲を受けます。
 
-		�E�C���h�E�S��𖳌������A
-		�ĕ`���v�����܂��B
-		���̂Ƃ��A�X�N���[���o�[�̑����̍Đݒ�E
-		�t�H�[�J�X�Z���̐��K�����s���܂��B
+		ウインドウ全域を無効化し、
+		再描画を要求します。
+		このとき、スクロールバーの属性の再設定・
+		フォーカスセルの正規化も行います。
 	 */
 	virtual void InvalidateGrid() ;
 	///@}
@@ -410,13 +410,13 @@ protected:
 
 public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	CFocus( CWndDcdGrid* pCWndDcdGrid ) ;
-	virtual ~CFocus() ;
+	virtual ‾CFocus() ;
 public:
 	// ********************************
-	///@name �֘A
+	///@name 関連
 	// ********************************
 	///@{
 	virtual Ou<IfDcDraw>	getIfDcDrawFocusCell() ;
@@ -424,32 +424,32 @@ public:
 	///@}
 public:
 	// ********************************
-	///@name CWndDcdGrid::CFocus ����
+	///@name CWndDcdGrid::CFocus 属性
 	// ********************************
 	///@{
 	/**
 	@return
-		�t�H�[�J�X�Z���̗�ԍ���Ԃ��܂��B
-		�t�H�[�J�X�Z���ʒu���s��̏ꍇ�́A
-		ColumnNumberPosXy_NULL() ��Ԃ��܂��B
+		フォーカスセルの列番号を返します。
+		フォーカスセル位置が不定の場合は、
+		ColumnNumberPosXy_NULL() を返します。
 	*/
 	CdDcdPosXy	getFocusCellColumnNumber() ;
 
 	/**
 	@return
-		�t�H�[�J�X�Z���̗�ԍ����w�肵�܂��B
+		フォーカスセルの列番号を指定します。
 	*/
 	void setFocusCellColumnNumber( const CdDcdPosXy& value ) ;
 
 	/**
 	 @return
-		�t�H�[�J�X�Z���̈ʒu��Ԃ��܂��B
+		フォーカスセルの位置を返します。
 	 */
 	CDcdGridCell*	getFocusCell() ;
 
 	/**
 	 @param value [in]
-		�t�H�[�J�X�Z�����w�肵�܂��B
+		フォーカスセルを指定します。
 	 */
 	void setFocusCell( 
 		CDcdGridCell* value ) ;

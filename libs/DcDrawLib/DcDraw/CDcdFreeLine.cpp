@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -68,9 +68,9 @@ Copyright (C) 2006-2017 take-okm
 // ****************************************************************
 */
 #include "CDcdFreeLine.h"
-#include "DcDraw\CConverter_WinGdi.h"
-#include "DcDraw\CDcDeviceUnitSizeX.h"
-#include "DcdCd\Pos\CLineFunc.h"
+#include "DcDraw¥CConverter_WinGdi.h"
+#include "DcDraw¥CDcDeviceUnitSizeX.h"
+#include "DcdCd¥Pos¥CLineFunc.h"
 
 namespace DcDrawLib{
 namespace DcDraw{
@@ -81,13 +81,13 @@ using namespace std ;
 //	CDcdFreeLine
 // ****************************************************************
 /**
- *	�����̕��������߂܂��B
+ *	整数の符号を求めます。
  * @param i [in]
- *	���ƂɂȂ鐮�����w�肵�Ă��������B
+ *	もとになる整数を指定してください。
  * @return
- *	-	i>0 �Ȃ� +1 ;	
- *	-	i==0 �Ȃ� 0 ;	
- *	-	i<0 �Ȃ� -1 ;	
+ *	-	i>0 なら +1 ;	
+ *	-	i==0 なら 0 ;	
+ *	-	i<0 なら -1 ;	
  */
 inline int sign( int i )
 {
@@ -107,8 +107,8 @@ bool CDcdFreeLine::DcDraw( IfDcdTarget* pIfDcdTarget )
 	CConverter_WinGdi	aConverter ;
 
 	// --------------------------------
-	//	m_iLogicalunitWidth ��
-	//	0 �Ȃ�A�����`�悵�܂���B
+	//	m_iLogicalunitWidth が
+	//	0 なら、何も描画しません。
 	// --------------------------------
 	if ( m_CdLineProp.getLogicalunitWidth() <= 0 ){
 		return ( false ) ;
@@ -117,8 +117,8 @@ bool CDcdFreeLine::DcDraw( IfDcdTarget* pIfDcdTarget )
 
 	
 	// --------------------------------
-	//	�`��̂��߂̘_���y���𐶐�
-	//	(�T�C�Y�́A�������W�Ƃ��܂�)
+	//	描画のための論理ペンを生成
+	//	(サイズは、物理座標とします)
 	// --------------------------------
 	Ou<CGdiHPenHolder>	pHPenHolder ;
 	int iDeviceunitPenWidth = 
@@ -136,37 +136,37 @@ bool CDcdFreeLine::DcDraw( IfDcdTarget* pIfDcdTarget )
 		aCdPenProp.setStyle( CdPenProp::SOLID ) ;
 		pHPenHolder = pIfDcdTarget->createGdiHPenHolder( aCdPenProp ) ;
 	}
-	//iDeviceunitPenWidth  = �f�o�C�X���W�n�ł�
-	//	�y���̑���
+	//iDeviceunitPenWidth  = デバイス座標系での
+	//	ペンの太さ
 
 
 	// --------------------------------
 	CdDcdPosXy	posOrg = m_posOrg ;
 	CdDcdPosXy	posDst = m_posDst ;
-	//posOrg,posDst = �N�_�ƏI�_�̍��W�i�_�����W�j
+	//posOrg,posDst = 起点と終点の座標（論理座標）
 
 	// --------------------------------
-	//	DcdTarget�͈̔͂ɁA�N�_�ƏI�_��␳
+	//	DcdTargetの範囲に、起点と終点を補正
 	// --------------------------------
 	if ( m_bAdjustForDcdTarget ){
-		//X������DcdTarget�͈̔͂Ɏ��߂�
+		//X方向をDcdTargetの範囲に収める
 		{
 			CdDcdZone	zoneX( posOrg.getX() , posDst.getX() - posOrg.getX() );
 			CdDcdZone	zoneXTarget = pIfDcdTarget->getZone().getX() ;
 			CdDcdZone	zoneXCrossed = zoneX.CrossZone( zoneXTarget ) ;
-			//X���W���A�f�o�C�X�̈���ɐ��K�����܂����B
+			//X座標を、デバイス領域内に正規化しました。
 			if ( zoneXCrossed.getSize() != 0 ){
 				CLineFunc	aCLineFunc( m_posOrg , m_posDst ) ;
 				
-				//	zoneXCrossed ���`��̈�ɂ���A
-				//	�������ΐ��ł���ꍇ�́A
-				//	�N�_�E�I�_���ꂼ��ɂ����āA
-				//	�f�o�C�X�̈���ɐ��K������
-				//	X���W����Y���W�����߂܂��B
+				//	zoneXCrossed が描画領域にあり、
+				//	しかも斜線である場合は、
+				//	起点・終点それぞれにおいて、
+				//	デバイス領域内に正規化した
+				//	X座標からY座標を求めます。
 				//
-				//	(zoneXCrossed.Size��0�̏ꍇ�i�����̏ꍇ�j�́A
-				//	�Ή���������Y���W�����߂邱�Ƃ��ł��܂���̂ŁA
-				//	calcLineYofX() ���Ăяo���Ă͂����܂���)
+				//	(zoneXCrossed.Sizeが0の場合（垂線の場合）は、
+				//	対応する特定のY座標を求めることができませんので、
+				//	calcLineYofX() を呼び出してはいけません)
 				if ( zoneX.getPos() != zoneXCrossed.getPos() ){
 					posOrg.setX( zoneXCrossed.getPos() ) ;
 					posOrg.setY( aCLineFunc.calcYofX( 
@@ -180,30 +180,30 @@ bool CDcdFreeLine::DcDraw( IfDcdTarget* pIfDcdTarget )
 			}
 			if ( zoneXCrossed.getSize() == 0 && 
 					!zoneXTarget.IsInner( zoneXCrossed.getPos() ) ){
-				//	zoneXCrossed ���`��̈�O�ł���ꍇ�́A
-				//	�����̕`��͂ł��܂���̂ŁA�U�Ń��^�[�����܂��B
+				//	zoneXCrossed が描画領域外である場合は、
+				//	直線の描画はできませんので、偽でリターンします。
 				return ( false ) ;
 			}
 	
 		}
-		//Y������DcdTarget�͈̔͂Ɏ��߂�
+		//Y方向をDcdTargetの範囲に収める
 		{
 			CdDcdZone	zoneY( posOrg.getY() , posDst.getY() - posOrg.getY() );
 			CdDcdZone	zoneYTarget = pIfDcdTarget->getZone().getY() ;
 			CdDcdZone	zoneYCrossed = zoneY.CrossZone( zoneYTarget ) ;
-			//Y���W���A�f�o�C�X�̈���ɐ��K�����܂����B
+			//Y座標を、デバイス領域内に正規化しました。
 			if ( zoneYCrossed.getSize() != 0 ){
 				CLineFunc	aCLineFunc( m_posOrg , m_posDst ) ;
 
-				//	zoneYCrossed ���`��̈�ɂ���A
-				//	�������ΐ��ł���ꍇ�́A
-				//	�N�_�E�I�_���ꂼ��ɂ����āA
-				//	�f�o�C�X�̈���ɐ��K������
-				//	Y���W����X���W�����߂܂��B
+				//	zoneYCrossed が描画領域にあり、
+				//	しかも斜線である場合は、
+				//	起点・終点それぞれにおいて、
+				//	デバイス領域内に正規化した
+				//	Y座標からX座標を求めます。
 				//
-				//	(zoneYCrossed.Size��0�̏ꍇ�i�������̏ꍇ�j�́A
-				//	�Ή���������X���W�����߂邱�Ƃ��ł��܂���̂ŁA
-				//	calcLineXofY() ���Ăяo���Ă͂����܂���)
+				//	(zoneYCrossed.Sizeが0の場合（水平線の場合）は、
+				//	対応する特定のX座標を求めることができませんので、
+				//	calcLineXofY() を呼び出してはいけません)
 				if ( zoneY.getPos() != zoneYCrossed.getPos() ){
 					posOrg.setX( aCLineFunc.calcXofY(
 						zoneYCrossed.getPos() ) ) ;
@@ -217,18 +217,18 @@ bool CDcdFreeLine::DcDraw( IfDcdTarget* pIfDcdTarget )
 			}
 			if ( zoneYCrossed.getSize() == 0 && 
 					!zoneYTarget.IsInner( zoneYCrossed.getPos() ) ){
-				//	zoneYCrossed ���`��̈�O�ł���ꍇ�́A
-				//	�����̕`��͂ł��܂���̂ŁA�U�Ń��^�[�����܂��B
+				//	zoneYCrossed が描画領域外である場合は、
+				//	直線の描画はできませんので、偽でリターンします。
 				return ( false ) ;
 			}
 		}
 		//posOrg,posDst = 
-		//	DcdTarget�͈̔͂ɁA�N�_�ƏI�_��␳���܂����B
+		//	DcdTargetの範囲に、起点と終点を補正しました。
 	}
 
 	// --------------------------------
-	//	�f�o�C�X���W�n�ł�
-	//	���̍��W�����߂�
+	//	デバイス座標系での
+	//	線の座標を求める
 	// --------------------------------
 	{
 		POINT	aPoint = aConverter.POINTOf( posOrg ) ;
@@ -240,38 +240,38 @@ bool CDcdFreeLine::DcDraw( IfDcdTarget* pIfDcdTarget )
 		::LPtoDP( pIfDcdTarget->getHdc() , &aPoint ,1 ) ;
 		posDst = aConverter.CdDcdPosXyOf( aPoint ) ;
 	}
-	//posOrg,posDst = �f�o�C�X���W�ɕϊ����܂����B
+	//posOrg,posDst = デバイス座標に変換しました。
 	
 	// --------------------------------
-	//	DC�̑�����ύX
+	//	DCの属性を変更
 	// --------------------------------
 	int idSave = SaveDC(  pIfDcdTarget->getHdc() ) ;
 	int iMapModePrev = SetMapMode(  pIfDcdTarget->getHdc() , MM_TEXT ) ;
-	//	SetMapMode() �� MM_TEXT ���[�h�Ɉڍs����ƁA
-	//	�_���P�ʂƃf�o�C�X�P�ʂ̔�͂P�F�P�ɕύX����܂����A
-	//	���W�̌��_�l�͕ύX����܂���B
+	//	SetMapMode() で MM_TEXT モードに移行すると、
+	//	論理単位とデバイス単位の比は１：１に変更されますが、
+	//	座標の原点値は変更されません。
 	//
-	//	LPtoDP() �ŕϊ����ꂽ�f�o�C�X���W�́A�f�o�C�X�R���e�L�X�g��
-	//	����������_�Ƃ������W��Ԃ��܂��B
-	//	���̍��W���g���ĕ`����s�����߂ɂ́A�f�o�C�X�R���e�L�X�g��
-	//	�_�����W�̌��_���A�f�o�C�X���W 0,0 (�����)�ɐݒ肵�Ȃ��Ă�
-	//	�Ȃ�܂���B
-	//��  ���_�̐ݒ�́A�}�b�s���O���[�h�� MM_TEXT �ł����Ă��\�ł��B
-	//	�������ASetViewportExtEx() , SetWindowExtEx() �Ƃ̈Ⴂ�ł��B
+	//	LPtoDP() で変換されたデバイス座標は、デバイスコンテキストの
+	//	左上隅を原点とした座標を返します。
+	//	この座標を使って描画を行うためには、デバイスコンテキストの
+	//	論理座標の原点も、デバイス座標 0,0 (左上隅)に設定しなくては
+	//	なりません。
+	//※  原点の設定は、マッピングモードが MM_TEXT であっても可能です。
+	//	ここが、SetViewportExtEx() , SetWindowExtEx() との違いです。
 	SetViewportOrgEx( pIfDcdTarget->getHdc() , 0 , 0 , NULL ) ;
 
 	HPEN	hPenSid = (HPEN)SelectObject( pIfDcdTarget->getHdc() , pHPenHolder->getHPen() ) ;
 
 	// --------------------------------
-	//	���̕`��
+	//	線の描画
 	// --------------------------------
 	int iLongWidth = 0 ;
 	bool	bYIsLong = false ;
 	{
 		int iXWidth = abs( posDst.getX() - posOrg.getX() ) ;	
 		int iYWidth = abs( posDst.getY() - posOrg.getY() ) ;	
-		//iXWidth, iYWidth = X,Y�̗����W�̍��B
-		//	�N�_�E�I�_��������W�̏ꍇ��0
+		//iXWidth, iYWidth = X,Yの両座標の差。
+		//	起点・終点が同一座標の場合は0
 		if ( iXWidth > iYWidth ){
 			iLongWidth = iXWidth ;
 			bYIsLong = false ;
@@ -280,23 +280,23 @@ bool CDcdFreeLine::DcDraw( IfDcdTarget* pIfDcdTarget )
 			bYIsLong = true ;
 		}
 	}
-	//iLongWidth = X,Y �̍��W�̍��̂����A�����ق�
-	//iShortWidth = X,Y �̍��W�̍��̂����A�Z���ق�
-	//	�N�_�E�I�_��������W�̏ꍇ��0
-	//bYIsLong = false iLongWidth��X,iShortWidth��Y
-	//	true iLongWidth��Y,iShortWidth��X
+	//iLongWidth = X,Y の座標の差のうち、長いほう
+	//iShortWidth = X,Y の座標の差のうち、短いほう
+	//	起点・終点が同一座標の場合は0
+	//bYIsLong = false iLongWidthがX,iShortWidthがY
+	//	true iLongWidthがY,iShortWidthがX
 
 	
 	if ( m_CdLineProp.isSolidLineStyle() ){
 		// ********************************
-		//	����
+		//	実線
 		// ********************************
 		MoveToEx( pIfDcdTarget->getHdc() , posOrg.getX() , posOrg.getY() , 
 			NULL ) ;
 		LineTo(pIfDcdTarget->getHdc() , posDst.getX() , posDst.getY() ) ;
 	}	else	{
 		// ********************************
-		//	�j��
+		//	破線
 		// ********************************
 		tstring	aLINESTYLE = m_CdLineProp.getLinestyle() ;
 
@@ -305,7 +305,7 @@ bool CDcdFreeLine::DcDraw( IfDcdTarget* pIfDcdTarget )
 		for ( iLongCurr = 0 ; iLongCurr < iLongWidth ; ){
 			CLineFunc	aCLineFunc( posOrg , posDst ) ;
 			// --------------------------------
-			//	�j������
+			//	破線部分
 			// --------------------------------
 			{
 				int iLongDst = iLongCurr + 
@@ -321,7 +321,7 @@ bool CDcdFreeLine::DcDraw( IfDcdTarget* pIfDcdTarget )
 					iLongDst = iLongWidth ;
 				}
 				//iLongDst = 
-				//	����`����s�����́AiLongCurr �` iLongDst �͈̔͂ł��B
+				//	今回描画を行う線は、iLongCurr 〜 iLongDst の範囲です。
 
 				
 				int iXSrc = 0 ;
@@ -349,7 +349,7 @@ bool CDcdFreeLine::DcDraw( IfDcdTarget* pIfDcdTarget )
 				iLongCurr = iLongDst ;
 			}
 			// --------------------------------
-			//	�󔒕���
+			//	空白部分
 			// --------------------------------
 			{
 				int iLongDst = iLongCurr + 
@@ -369,7 +369,7 @@ bool CDcdFreeLine::DcDraw( IfDcdTarget* pIfDcdTarget )
 
 	}
 	// --------------------------------
-	//	DC�̑����𕜋A
+	//	DCの属性を復帰
 	// --------------------------------
 	SelectObject( pIfDcdTarget->getHdc() , hPenSid ) ;
 	hPenSid = NULL ;

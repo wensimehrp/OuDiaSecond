@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -73,7 +73,7 @@ Copyright (C) 2006-2017 take-okm
 
 #include <windows.h>
 
-#include "DcdCd\Pos\DcdType.h"
+#include "DcdCd¥Pos¥DcdType.h"
 
 namespace DcDrawLib{
 namespace DcDraw{
@@ -84,77 +84,77 @@ namespace DcDraw{
 // ****************************************************************
 /**
  * @brief
- * �y�T�v�z
- * 	�f�o�C�X�P�ʁi�s�N�Z�����j�ł̃T�C�Y��ێ����܂��B
+ * 【概要】
+ * 	デバイス単位（ピクセル数）でのサイズを保持します。
  *
- *	���̃N���X�́ADPI�i�C���`������̃s�N�Z�����j�̒l�����ƂɁA
+ *	このクラスは、DPI（インチ当たりのピクセル数）の値をもとに、
  *
- *		�f�o�C�X�P�ʁ|�����P��
+ *		デバイス単位−物理単位
  *
- *	�̕ϊ����s���܂��B
- *	  �����P�ʂ́A�ȉ��̂��̂��T�|�[�g���܂��B
+ *	の変換を行います。
+ *	  物理単位は、以下のものをサポートします。
  *
- *	- �|�C���g(1�C���`=72�|�C���g)
- *	- Twip(�P�C���`=72*20 Twip)
- *	- 1/1000 �C���`
- *	- �C���`�i�����j
- *	- ��m(1/1000 mm)(�P�C���`��25.4mm)
- *	- �����i�����j(�P�C���`��25.4mm)
+ *	- ポイント(1インチ=72ポイント)
+ *	- Twip(１インチ=72*20 Twip)
+ *	- 1/1000 インチ
+ *	- インチ（実数）
+ *	- μm(1/1000 mm)(１インチ＝25.4mm)
+ *	- ｍｍ（実数）(１インチ＝25.4mm)
  *	
- *	�h���N���X�ƂȂ� CdDeviceUnitSizeX �E CdDeviceUnitSizeY �ł́A
- *	�f�o�C�X�P�ʁ|�_���P�� �̕ϊ����ł���悤�ɂȂ�܂��B@n
- *	�����P�ʁ|�_���P�ʂ̕ϊ��́A
+ *	派生クラスとなる CdDeviceUnitSizeX ・ CdDeviceUnitSizeY では、
+ *	デバイス単位−論理単位 の変換もできるようになります。@n
+ *	物理単位−論理単位の変換は、
  *
- *		�����P�ʁ|�f�o�C�X�P�ʁ|�_���P��
+ *		物理単位−デバイス単位−論理単位
  *		
- *	�̂悤�ɁA��U�f�o�C�X�P�ʂ��o�R����Ή\�ł��B
+ *	のように、一旦デバイス単位を経由すれば可能です。
  *
- * �y�g�����z
+ * 【使い方】
  *
- * �P�D  �R���X�g���N�^�ł́ADPI���w�肵�Ă��������B
+ * １．  コンストラクタでは、DPIを指定してください。
  *
- * �Q�D  ����Ȍ�́A�P���f�[�^�N���X�Ɠ��l�̎g�������ł��܂��B
+ * ２．  これ以後は、単純データクラスと同様の使い方ができます。
  *
- *	�ʏ�́A�h���N���X�ƂȂ� CdDeviceUnitSizeX �E CdDeviceUnitSizeY ��
- *	�g���܂��B
+ *	通常は、派生クラスとなる CdDeviceUnitSizeX ・ CdDeviceUnitSizeY を
+ *	使います。
  */
 class CdDeviceUnitSize
 {
 // ********************************
-/// @name ����
+/// @name 属性
 // ********************************
 ///@{
  private:
 	/**
-	 *	DPI �̒l�i�P�C���`������̃s�N�Z�����j�ł��B
+	 *	DPI の値（１インチあたりのピクセル数）です。
 	 *
-	 *	����͒ʏ�ADC�����Ƃ�
+	 *	これは通常、DCをもとに
 	 *	( GetDeviceCaps(LOGPIXELSX) , GetDeviceCaps(LOGPIXELSY) )
-	 *	���肵�܂��B
-	 *	�R���X�g���N�^�Ō��܂�܂��B
+	 *	決定します。
+	 *	コンストラクタで決まります。
 	 * @attention
-	 *	���̒l�� 0 �ɂ��Ă���ƁA���R�[������Z�ɂȂ�܂��B
+	 *	この値を 0 にしていると、当然ゼロ割り算になります。
 	 */
 	int m_iDpi ;
 
 	/**
-	 * 	�f�o�C�X�P�ʂł̃T�C�Y�ł��B
+	 * 	デバイス単位でのサイズです。
 	 */
 	DcdSize	m_sizeDeviceUnitSize ;
 ///@}
 	
 // ********************************
-//	�R���X�g���N�^
+//	コンストラクタ
 // ********************************
  public:
 	/**
 	 * @param iDpi [in]
-	 *	DPI �̒l�ł��B@n
-	 *	����͒ʏ�ADC�����Ƃ�
+	 *	DPI の値です。@n
+	 *	これは通常、DCをもとに
 	 *	( GetDeviceCaps(LOGPIXELSX) , GetDeviceCaps(LOGPIXELSY) )
-	 *	���肵�܂��B
+	 *	決定します。
 	 * @param sizeDeviceUnitSize [in]
-	 * 	�f�o�C�X�P�ʂł̃T�C�Y�ł��B
+	 * 	デバイス単位でのサイズです。
 	 */
 	CdDeviceUnitSize( 
 		int iDpi ,
@@ -162,7 +162,7 @@ class CdDeviceUnitSize
 		m_iDpi( iDpi ) ,
 		m_sizeDeviceUnitSize( sizeDeviceUnitSize ){};
 	
-	virtual ~CdDeviceUnitSize(){};
+	virtual ‾CdDeviceUnitSize(){};
 
 // ********************************
 //	CdDeviceUnitSize
@@ -170,7 +170,7 @@ class CdDeviceUnitSize
  public:
 	
 	// ********************************
-	///@name CdDeviceUnitSize-����
+	///@name CdDeviceUnitSize-属性
 	// ********************************
 	///@{
 	int getDpi()const{	return m_iDpi ;};
@@ -179,28 +179,28 @@ class CdDeviceUnitSize
 	CdDeviceUnitSize& setDeviceUnitSize( DcdSize value ){
 		m_sizeDeviceUnitSize = value ;	return *this ;	} ;
 	
-	/** setDeviceUnitSize() �Ɠ����ł� */
+	/** setDeviceUnitSize() と等価です */
 	CdDeviceUnitSize& operator=( DcdSize value ){
 		return setDeviceUnitSize( value ) ; } ;
-	/** getDeviceUnitSize() �Ɠ����ł� */
+	/** getDeviceUnitSize() と等価です */
 	operator DcdSize()const{	return getDeviceUnitSize() ; } ;
 	///@}
 
 	// ********************************
-	///@name CdDeviceUnitSize-����
+	///@name CdDeviceUnitSize-操作
 	// ********************************
 	///@{
 	/**
 	 * @return
-	 * 	�|�C���g�P�ʂŁA�T�C�Y���擾���܂�
+	 * 	ポイント単位で、サイズを取得します
 	 */
 	DcdSize	getPointSize()const{
 		return MulDiv( m_sizeDeviceUnitSize , 72 , m_iDpi ) ;
 	};
 	/**
-	 * 	�|�C���g�P�ʂŁA�T�C�Y��ݒ肵�܂�
+	 * 	ポイント単位で、サイズを設定します
 	 * @param value [in]
-	 *	�|�C���g�P�ʂł̃T�C�Y���w�肵�Ă��������B
+	 *	ポイント単位でのサイズを指定してください。
 	 */
 	CdDeviceUnitSize& setPointSize( DcdSize	value ){
 		m_sizeDeviceUnitSize = MulDiv( value , m_iDpi ,72 ) ;	
@@ -209,15 +209,15 @@ class CdDeviceUnitSize
 	
 	/**
 	 * @return
-	 * 	Twip�P�ʂŁA�T�C�Y���擾���܂�
+	 * 	Twip単位で、サイズを取得します
 	 */
 	DcdSize	getTwipSize()const{
 		return MulDiv( m_sizeDeviceUnitSize , 72*20 , m_iDpi ) ;
 	};
 	/**
-	 * 	Twip �P�ʂŁA�T�C�Y��ݒ肵�܂�
+	 * 	Twip 単位で、サイズを設定します
 	 * @param ev [in]
-	 *	Twip�P�ʂł̃T�C�Y���w�肵�Ă��������B
+	 *	Twip単位でのサイズを指定してください。
 	 */
 	CdDeviceUnitSize& setTwipSize( DcdSize	value ){
 		m_sizeDeviceUnitSize = MulDiv( value , m_iDpi , 72*20 ) ;
@@ -225,15 +225,15 @@ class CdDeviceUnitSize
 	
 	/**
 	 * @return
-	 * 	1/1000 �C���`�P�ʂŁA�T�C�Y���擾���܂�
+	 * 	1/1000 インチ単位で、サイズを取得します
 	 */
 	DcdSize	getMilliInchSize()const{
 		return MulDiv( m_sizeDeviceUnitSize , 1000 , m_iDpi ) ;
 	};
 	/**
-	 * 	1/1000 �C���` �P�ʂŁA�T�C�Y��ݒ肵�܂�
+	 * 	1/1000 インチ 単位で、サイズを設定します
 	 * @param ev [in]
-	 *	1/1000 �C���`�P�ʂł̃T�C�Y���w�肵�Ă��������B
+	 *	1/1000 インチ単位でのサイズを指定してください。
 	 */
 	CdDeviceUnitSize& setMilliInchSize( DcdSize	value ){
 		m_sizeDeviceUnitSize = MulDiv( value , m_iDpi , 1000 ) ;
@@ -242,15 +242,15 @@ class CdDeviceUnitSize
 	
 	/**
 	 * @return
-	 * 	�ʂ��P�ʂŁA�T�C�Y���擾���܂�
+	 * 	μｍ単位で、サイズを取得します
 	 */
 	DcdSize	getMicroMetersSize()const{
 		return MulDiv( m_sizeDeviceUnitSize , 25400 , m_iDpi ) ;
 	};
 	/**
-	 * 	�ʂ� �P�ʂŁA�T�C�Y��ݒ肵�܂�
+	 * 	μｍ 単位で、サイズを設定します
 	 * @param ev [in]
-	 *	�ʂ� �P�ʂł̃T�C�Y���w�肵�Ă��������B
+	 *	μｍ 単位でのサイズを指定してください。
 	 */
 	CdDeviceUnitSize& setMicroMetersSize( DcdSize	value ){
 		m_sizeDeviceUnitSize = MulDiv( value , m_iDpi , 25400 ) ;
@@ -258,15 +258,15 @@ class CdDeviceUnitSize
 	
 	/**
 	 * @return
-	 * 	�C���`�P�ʁi�����j�ŁA�T�C�Y���擾���܂�
+	 * 	インチ単位（実数）で、サイズを取得します
 	 */
 	double	getInchSize()const{
 		return (double)m_sizeDeviceUnitSize * 1 / m_iDpi ;
 	};
 	/**
-	 * 	�C���` �P��(����)�ŁA�T�C�Y��ݒ肵�܂�
+	 * 	インチ 単位(実数)で、サイズを設定します
 	 * @param ev [in]
-	 *	�C���`�P�ʂł̃T�C�Y���w�肵�Ă��������B
+	 *	インチ単位でのサイズを指定してください。
 	 */
 	CdDeviceUnitSize& setInchSize( double value ){
 		m_sizeDeviceUnitSize = (DcdSize)( value * m_iDpi / 1 ) ;
@@ -275,15 +275,15 @@ class CdDeviceUnitSize
 	
 	/**
 	 * @return
-	 * 	�����P�ʁi�����j�ŁA�T�C�Y���擾���܂�
+	 * 	ｍｍ単位（実数）で、サイズを取得します
 	 */
 	double	getMmSize()const{
 		return (double)m_sizeDeviceUnitSize * 25.4 / m_iDpi ;
 	};
 	/**
-	 * 	���� �P�ʁi�����j�ŁA�T�C�Y��ݒ肵�܂�
+	 * 	ｍｍ 単位（実数）で、サイズを設定します
 	 * @param ev [in]
-	 *	���� �P�ʂł̃T�C�Y���w�肵�Ă��������B
+	 *	ｍｍ 単位でのサイズを指定してください。
 	 */
 	CdDeviceUnitSize& setMmSize( double	value ){
 		m_sizeDeviceUnitSize = (DcdSize)( value * m_iDpi / 25.4 ) ;

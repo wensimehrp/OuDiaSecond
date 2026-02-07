@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -78,8 +78,8 @@ Copyright (C) 2006-2017 take-okm
 #ifndef  CRfEditCmd_DedRosenFileDataProp_h
 #define  CRfEditCmd_DedRosenFileDataProp_h
 
-#include "..\EditCmd\CRfEditCmd.h"
-#include "Str\tstring.h"
+#include "..¥EditCmd¥CRfEditCmd.h"
+#include "Str¥tstring.h"
 
 namespace DedRosenFileData{ namespace EditCmd{
 
@@ -88,9 +88,9 @@ namespace DedRosenFileData{ namespace EditCmd{
 // ****************************************************************
 /**
  * @brief
-  CDedRosenFileData �I�u�W�F�N�g�̑���
-�w�H���t�@�C���̃v���p�e�B�x�_�C�A���O�ōX�V�ł��鑮��
-���㏑������ҏW����ł��B
+  CDedRosenFileData オブジェクトの属性
+『路線ファイルのプロパティ』ダイアログで更新できる属性
+を上書きする編集動作です。
 
  */
 class CRfEditCmd_DedRosenFileDataProp :
@@ -98,196 +98,196 @@ class CRfEditCmd_DedRosenFileDataProp :
 {
 private:
 	// ********************************
-	///@name ����
+	///@name 属性
 	// ********************************
 	///@{
 	/**
-	 *	�V����
-	 *	�H�����B
-	 *	�R���X�g���N�^�Ō��܂�܂��B
+	 *	新しい
+	 *	路線名。
+	 *	コンストラクタで決まります。
 	 */
 	tstring	m_strRosenName ;
 
 	/**
-	 *	�V����
-	 *	�_�C���̋N�_�����ł��B
-	 *	�R���X�g���N�^�Ō��܂�܂��B
+	 *	新しい
+	 *	ダイヤの起点時刻です。
+	 *	コンストラクタで決まります。
 	 */
 	CdDedJikoku	m_jikokuKitenJikoku ;
 
 	/**
-		�_�C���O�����̊���̉w�ԕ��B
+		ダイヤグラムの既定の駅間幅。
 
-		��Ԑݒ�̂Ȃ��w�Ԃ́A�_�C���O�����r���[��ł�
-		�c�����̕����w�_�C���O�����G���e�B�e�BY���W�x�P��(�b)�Ŏw�肵�܂��B
+		列車設定のない駅間の、ダイヤグラムビュー上での
+		縦方向の幅を『ダイヤグラムエンティティY座標』単位(秒)で指定します。
 	
-		����l�� 60 �ł��B
-		�R���X�g���N�^�ŏ���������܂��B���̒l�́A�_�C�A���O�\������
-		�����l�Ƃ��Ďg���܂��B
-		OnOK() �́A�_�C�A���O�̒l�ŏ㏑�����܂��B�N���X���[�U�[�́A
-		 DoModal() �����^�[��������ɁA���̒l���Q�Ƃ��邱�Ƃ��ł��܂��B
+		既定値は 60 です。
+		コンストラクタで初期化されます。この値は、ダイアログ表示時に
+		初期値として使われます。
+		OnOK() は、ダイアログの値で上書きします。クラスユーザーは、
+		 DoModal() がリターンした後に、この値を参照することができます。
 	*/
 	int	m_iDiagramDgrYZahyouKyoriDefault ;
 
 	/**
-	�^�p�@�\�̗L������
-		0:�^�p�@�\�͖����ł�
-		1:�^�p�@�\�͒ʏ탂�[�h�ł�
-		2:�^�p�@�\�͌y�ʃ��[�h�ł�
-		�K��l��0�ł�
+	運用機能の有効無効
+		0:運用機能は無効です
+		1:運用機能は通常モードです
+		2:運用機能は軽量モードです
+		規定値は0です
 	*/
 	int m_iEnableOperation;
 	/**
-	*	�V����
-	*	����_�C���ʖ�
-	*	�R���X�g���N�^�Ō��܂�܂��B
+	*	新しい
+	*	下りダイヤ別名
+	*	コンストラクタで決まります。
 	*/
 	tstring	m_strKudariDiaAlias;
 	/**
-	*	�V����
-	*	���_�C���ʖ�
-	*	�R���X�g���N�^�Ō��܂�܂��B
+	*	新しい
+	*	上りダイヤ別名
+	*	コンストラクタで決まります。
 	*/
 	tstring	m_strNoboriDiaAlias;
 
 	/**
-		�܂�Ԃ����ɉ^�p�ԍ��𔽓]�����邩�ۂ�
-		���̒l��true�̎��A�^�p�T���ŉ���̏��̐ڑ����s����ƁA
-		�^�p�ԍ��̕��т𔽓]�����܂��B
-		(��)�܂�Ԃ��O�� "01A","21B"�̏ꍇ�A
-		�܂�Ԃ����"21B","01A"�ɂȂ�܂�
+		折り返し時に運用番号を反転させるか否か
+		この値がtrueの時、運用探索で下り⇔上りの接続が行われると、
+		運用番号の並びを反転させます。
+		(例)折り返し前が "01A","21B"の場合、
+		折り返し後は"21B","01A"になります
 	*/
 	bool m_bOperationNumberReverse;
 
 	/**
-		�^�p�ڑ����ɋN�_�������ׂ����ۂ�
-		�K��l��true�ł��B
+		運用接続時に起点時刻を跨ぐか否か
+		規定値はtrueです。
 	*/
 	bool m_bOperationCrossKitenJikoku;
 
 	/**
-		��^�]�������擾����_�C����Index�ł��B
-		�K��l��0�ł��B
+		基準運転時分を取得するダイヤのIndexです。
+		規定値は0です。
 	*/
 	int m_iKijunDiaIndex;
 
 	/**
-		�B����ʂ��J�X�^�}�C�Y�����\�E�w�����\�ŕ\�����邩�ۂ�
-		�K��l��true�ł��B
+		隠し種別をカスタマイズ時刻表・駅時刻表で表示するか否か
+		規定値はtrueです。
 	*/
 	bool m_bDisableHiddenSyubetsu;
 
 	/**
-	 *	�V����
-	 *	DiagramEdit �̕\���Ɋ֌W����v���p�e�B��ێ�����
-	 *	�P���f�[�^�N���X�ł��B
-	 *	�R���X�g���N�^�Ō��܂�܂��B
+	 *	新しい
+	 *	DiagramEdit の表示に関係するプロパティを保持する
+	 *	単純データクラスです。
+	 *	コンストラクタで決まります。
 	 */
 	CdDedDispProp	m_CdDedDispProp ;
 	///@}
 private:
 	// --------------------------------
-	///@name �����f�[�^
+	///@name 内部データ
 	// --------------------------------
 	///@{
 	/**
-	 *	������Ԃł͋�B
-	 *	execute() ���s������́Aexecute() ���s�����O�̒l�ƂȂ�܂��B
+	 *	初期状態では空。
+	 *	execute() を行った後は、execute() を行う直前の値となります。
 	 */
 	tstring	m_strRosenNameOld ;
 
 	/**
-	 *	������Ԃł͋�B
-	 *	execute() ���s������́Aexecute() ���s�����O�̒l�ƂȂ�܂��B
+	 *	初期状態では空。
+	 *	execute() を行った後は、execute() を行う直前の値となります。
 	 */
 	CdDedJikoku	m_jikokuKitenJikokuOld ;
 
 	/**
-	 *	������Ԃł͋�B
-	 *	execute() ���s������́Aexecute() ���s�����O�̒l�ƂȂ�܂��B
+	 *	初期状態では空。
+	 *	execute() を行った後は、execute() を行う直前の値となります。
 	 */
 	int m_iDiagramDgrYZahyouKyoriDefaultOld ;
 
 	/**
-	 *	������Ԃł͋�B
-	 *	execute() ���s������́Aexecute() ���s�����O�̒l�ƂȂ�܂��B
+	 *	初期状態では空。
+	 *	execute() を行った後は、execute() を行う直前の値となります。
 	*/
 	int m_iEnableOperationOld;
 	/**
-	 *	������Ԃł͋�B
-	 *	execute() ���s������́Aexecute() ���s�����O�̒l�ƂȂ�܂��B
+	 *	初期状態では空。
+	 *	execute() を行った後は、execute() を行う直前の値となります。
 	*/
 	tstring	m_strKudariDiaAliasOld;
 	/**
-	 *	������Ԃł͋�B
-	 *	execute() ���s������́Aexecute() ���s�����O�̒l�ƂȂ�܂��B
+	 *	初期状態では空。
+	 *	execute() を行った後は、execute() を行う直前の値となります。
 	*/
 	tstring	m_strNoboriDiaAliasOld;
 	/**
-	 *	������Ԃł͋�B
-	 *	execute() ���s������́Aexecute() ���s�����O�̒l�ƂȂ�܂��B
+	 *	初期状態では空。
+	 *	execute() を行った後は、execute() を行う直前の値となります。
 	*/
 	bool	m_bOperationNumberReverseOld;
 	/**
-	 *	������Ԃł͋�B
-	 *	execute() ���s������́Aexecute() ���s�����O�̒l�ƂȂ�܂��B
+	 *	初期状態では空。
+	 *	execute() を行った後は、execute() を行う直前の値となります。
 	*/
 	bool m_bOperationCrossKitenJikokuOld;;
 
 	/**
-	 *	������Ԃł͋�B
-	 *	execute() ���s������́Aexecute() ���s�����O�̒l�ƂȂ�܂��B
+	 *	初期状態では空。
+	 *	execute() を行った後は、execute() を行う直前の値となります。
 	*/
 	int m_iKijunDiaIndexOld;
 	/**
-	 *	������Ԃł͋�B
-	 *	execute() ���s������́Aexecute() ���s�����O�̒l�ƂȂ�܂��B
+	 *	初期状態では空。
+	 *	execute() を行った後は、execute() を行う直前の値となります。
 	*/
 	bool m_bDisableHiddenSyubetsuOld;;
 
 	/**
-	 *	������Ԃł͋�B
-	 *	execute() ���s������́Aexecute() ���s�����O�̒l�ƂȂ�܂��B
+	 *	初期状態では空。
+	 *	execute() を行った後は、execute() を行う直前の値となります。
 	 */
 	CdDedDispProp	m_CdDedDispPropOld ;
 	///@}
 
 public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	/**
 	 @param strRosenName [in]
-		�V����
-		�H�����B
-		�R���X�g���N�^�Ō��܂�܂��B
+		新しい
+		路線名。
+		コンストラクタで決まります。
 	 @param jikokuKitenJikoku [in]
-		�V����
-		�_�C���̋N�_�����ł��B
-		�R���X�g���N�^�Ō��܂�܂��B
+		新しい
+		ダイヤの起点時刻です。
+		コンストラクタで決まります。
 	 @param iDiagramDgrYZahyouKyoriDefault [in]
-		�_�C���O�����̊���̉w�ԕ��B
+		ダイヤグラムの既定の駅間幅。
 	 @param iEnableOperation [in]
-		�^�p�@�\�̃��[�h�ݒ�
+		運用機能のモード設定
 	 @param strKudariDiaAlias [in]
-		����_�C���̕ʖ�
+		下りダイヤの別名
 	 @param strNoboriDiaAlias [in]
-		���_�C���̕ʖ�
+		上りダイヤの別名
 	 @param bOperationNumberReverse [in]
-		�܂�Ԃ��ŉ^�p�ԍ��𔽓]�����邩�ǂ����̐ݒ�
+		折り返しで運用番号を反転させるかどうかの設定
 	 @param iOperationNumberRows [in]
-		�^�p�ԍ����̒i��
+		運用番号欄の段数
 	 @param bOperationCrossKitenJikoku [in]
-		�^�p�ڑ����ɋN�_�������ׂ����ۂ�
+		運用接続時に起点時刻を跨ぐか否か
 	 @param iKijunDiaIndex [in]
-		��^�]�������擾����_�C����Index
+		基準運転時分を取得するダイヤのIndex
 	 @param bDisableHiddenSyubetsu [in]
-		�B����ʂ��J�X�^�}�C�Y�����\�E�w�����\�ŕ\�����邩�ۂ�
+		隠し種別をカスタマイズ時刻表・駅時刻表で表示するか否か
 	 @param aCdDedDispProp [in]
-		�V����
-		DiagramEdit �̕\���Ɋ֌W����v���p�e�B��ێ�����
-		�P���f�[�^�N���X�ł��B
-		�R���X�g���N�^�Ō��܂�܂��B
+		新しい
+		DiagramEdit の表示に関係するプロパティを保持する
+		単純データクラスです。
+		コンストラクタで決まります。
 	*/
 	CRfEditCmd_DedRosenFileDataProp( 
 		const tstring& strRosenName ,
@@ -301,54 +301,54 @@ public:
 		int iKijunDiaIndex,
 		bool bDisableHiddenSyubetsu,
 		const CdDedDispProp& aCdDedDispProp ) ;
-	virtual ~CRfEditCmd_DedRosenFileDataProp() ;
+	virtual ‾CRfEditCmd_DedRosenFileDataProp() ;
 	
 public:
 	// ********************************
-	///@name	CRfEditCmd-����
+	///@name	CRfEditCmd-操作
 	// ********************************
 	///@{
 	/**
-	 *	CDedRosenFileData �I�u�W�F�N�g�ɑ΂��āA�ҏW��������s���܂��B
-	 *	�@�܂��A�ҏW����ɐ��������ꍇ�A this �́Aundo
-	 *	�i�ҏW����̎������j���s���̂ɕK�v�ȃf�[�^���A
-	 *	�����o�ϐ��ɕێ����܂��B
+	 *	CDedRosenFileData オブジェクトに対して、編集操作を実行します。
+	 *	　また、編集動作に成功した場合、 this は、undo
+	 *	（編集動作の取り消し）を行うのに必要なデータを、
+	 *	メンバ変数に保持します。
 	 * @param pCDedRosenFileData [in,out]
-	 *	���̊֐��͂��̃I�u�W�F�N�g�ɑ΂��āA�ҏW��������s���܂��B
+	 *	この関数はこのオブジェクトに対して、編集操作を実行します。
 	 * @return
-	 *	���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
+	 *	成功したら 0 以上、エラーなら負の数です。
 	 *	<H4>
-	 *	�y�I�[�o���C�h�z
+	 *	【オーバライド】
 	 *	</H4>
-	 *	pCDedRosenFileData �I�u�W�F�N�g�ɑ΂��āA�ҏW��������s���Ă��������B
+	 *	pCDedRosenFileData オブジェクトに対して、編集動作を実行してください。
 	 */
 	virtual int execute( CDedRosenFileData* pCDedRosenFileData ) ;
 	
 	/**
-	 *	�u this->execute() �ōs�����ҏW�����������
-	 *	�i this->execute() �ŕҏW������s��������� CDedRosenFileData 
-	 *	�I�u�W�F�N�g���A this->execute() ���s�����O�̏�Ԃ�
-	 *	����j�v���߂̕ҏW�R�}���h�I�u�W�F�N�g�𐶐����܂��B
+	 *	「 this->execute() で行った編集操作を取り消す
+	 *	（ this->execute() で編集動作を行った直後の CDedRosenFileData 
+	 *	オブジェクトを、 this->execute() を行う直前の状態に
+	 *	する）」ための編集コマンドオブジェクトを生成します。
 	 *
-	 *	���̃����o�֐����Ԃ����I�u�W�F�N�g���g���� execute() ��
-	 *	�Ăяo�����Ƃɂ��A this->execute() ����̏�Ԃ� CentDedRosen
-	 *	 �I�u�W�F�N�g���A this->execute() ���O�̏�Ԃɖ߂����Ƃ��ł��܂��B
+	 *	このメンバ関数が返したオブジェクトを使って execute() を
+	 *	呼び出すことにより、 this->execute() 直後の状態の CentDedRosen
+	 *	 オブジェクトを、 this->execute() 直前の状態に戻すことができます。
 	 * @return
-	 *	execute() �ōs�����ҏW������������A
-	 *	 CDedRosenFileData �I�u�W�F�N�g�� execute() ���s�����O�̏�Ԃ�
-	 *	���邽�߂̃R�}���h�I�u�W�F�N�g�𐶐����܂��B
+	 *	execute() で行った編集操作を取り消し、
+	 *	 CDedRosenFileData オブジェクトを execute() を行う直前の状態に
+	 *	するためのコマンドオブジェクトを生成します。
 	 *	<H4>
-	 *	�y�I�[�o���C�h�z
+	 *	【オーバライド】
 	 *	</H4>
-	 *	execute() �Ŏ��s�����ҏW���e�����ɖ߂��悤�ȃI�u�W�F�N�g��
-	 *	�������ĕԂ��Ă��������B
+	 *	execute() で実行した編集内容を元に戻すようなオブジェクトを
+	 *	生成して返してください。
 	 */
 	virtual Ou<CRfEditCmd> createUndoCmd()  ;
 	
 	///@}
 public:
 	// ********************************
-	///@name CRfEditCmd_DedRosenFileDataProp-����
+	///@name CRfEditCmd_DedRosenFileDataProp-属性
 	// ********************************
 	///@{
 	tstring	getRosenName()const{	return m_strRosenName ;};

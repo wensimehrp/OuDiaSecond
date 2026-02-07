@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,40 +35,40 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
-// CDedCommentView.cpp : �C���v�������e�[�V���� �t�@�C��
+// CDedCommentView.cpp : インプリメンテーション ファイル
 // $Id: CDedCommentView.cpp 295 2016-06-11 05:14:13Z okm $
 
 #include "stdafx.h"
@@ -77,16 +77,16 @@ Copyright (C) 2006-2017 take-okm
 #include "NsOu/dynamic_castOu.h"
 #include "str/strLf.h"
 #include "str/strToInt.h"
-#include "LogMsg\LogMsg.h"
-#include "DcDraw\CConverter_WinGdi.h"
+#include "LogMsg¥LogMsg.h"
+#include "DcDraw¥CConverter_WinGdi.h"
 #include "DcDrawMfc/CDcdTargetMfcPrintInfo.h"
 #include "DcDraw/CaDcdTargetItemPosition.h"
 #include "DcDraw/print/CaDcdTargetZoomDisplay.h"
 
-#include "..\DiagramEdit.h"
-#include "..\CRfEditCmdHolder.h"
-#include "..\DedRosenFileData\EditCmd\EditCmd.h"
-#include "..\Print\CconvCdPrintPageProp.h"
+#include "..¥DiagramEdit.h"
+#include "..¥CRfEditCmdHolder.h"
+#include "..¥DedRosenFileData¥EditCmd¥EditCmd.h"
+#include "..¥Print¥CconvCdPrintPageProp.h"
 #include "CDedCommentView.h"
 
 
@@ -106,11 +106,11 @@ using namespace std ;
 void CDedCommentView::OnUpdate_All() 
 {
 
-	LogMsg(_T("CDedCommentView::OnUpdate_All() View�̍X�V") ) ;
+	LogMsg(_T("CDedCommentView::OnUpdate_All() Viewの更新") ) ;
 
 	CDiagramEditDoc* pRootDoc = getCDiagramEditDoc() ;
 
-	//	�t�H���g���ύX����Ă�����A�t�H���g��ݒ�
+	//	フォントが変更されていたら、フォントを設定
 	CdFontProp	aCdFontProp = pRootDoc->getCDedRosenFileData()->getCdDedDispProp().getViewCommentFont() ;
 	if ( m_CdFontProp != aCdFontProp ){
 		if ( m_CFont.GetSafeHandle() != NULL ){
@@ -130,7 +130,7 @@ void CDedCommentView::OnUpdate_All()
 		m_CdFontProp = aCdFontProp ;
 	}
 	
-	//	�e�L�X�g���X�V	
+	//	テキストを更新	
 	tstring strLs = pRootDoc->getCDedRosenFileData()->getCentDedRosen()->getComment() ;
 	{
 		int iLineNum = GetEditCtrl().GetFirstVisibleLine() ;
@@ -162,7 +162,7 @@ void CDedCommentView::OnUpdate_Comment( Ou<CRfEditCmd_Comment> pCommand )
 	if ( this != pView )
 	{
 		LogMsg(_T("CDedCommentView::OnUpdate_Comment() ")
-			_T("���̃r���[�ɂ��X�V��this �ɔ��f���܂��B") ) ;
+			_T("他のビューによる更新をthis に反映します。") ) ;
 
 		int iLineNum = GetEditCtrl().GetFirstVisibleLine() ;
 		int iStartChar , iEndChar ;
@@ -181,7 +181,7 @@ void CDedCommentView::OnUpdate_Comment( Ou<CRfEditCmd_Comment> pCommand )
 	else
 	{
 		LogMsg(_T("CDedCommentView::OnUpdate_Comment() ")
-			_T("this�ɂ��X�V�Ȃ̂ŁA���̃r���[�ɂ͔��f���܂���B") ) ;
+			_T("thisによる更新なので、このビューには反映しません。") ) ;
 	}
 
 }
@@ -194,7 +194,7 @@ CDedCommentView::CDedCommentView():
 {
 }
 
-CDedCommentView::~CDedCommentView()
+CDedCommentView::‾CDedCommentView()
 {
 }
 
@@ -208,16 +208,16 @@ BEGIN_MESSAGE_MAP(CDedCommentView, CDedCommentView::super)
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
-// CDedCommentView �`��
+// CDedCommentView 描画
 
 void CDedCommentView::OnDraw(CDC* pDC)
 {
 	CDocument* pDoc = GetDocument();
-	// TODO: ���̈ʒu�ɕ`��p�̃R�[�h��ǉ����Ă�������
+	// TODO: この位置に描画用のコードを追加してください
 }
 
 /////////////////////////////////////////////////////////////////////////////
-// CDedCommentView �f�f
+// CDedCommentView 診断
 
 #ifdef _DEBUG
 void CDedCommentView::AssertValid() const
@@ -232,20 +232,20 @@ void CDedCommentView::Dump(CDumpContext& dc) const
 #endif //_DEBUG
 
 /////////////////////////////////////////////////////////////////////////////
-// CDedCommentView ���b�Z�[�W �n���h��
+// CDedCommentView メッセージ ハンドラ
 
 void CDedCommentView::OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint) 
 {
 	if ( lHint ==  LHINT_SUBVIEW_TO_ROOTDOC  )
 	{
 		//[Attention]
-		//	(lHint== LHINT_SUBVIEW_TO_ROOTDOC )�̏ꍇ�́A
-		//	�r���[�̓��e�����[�gDoc�ɔ��f����
-		//	���������B
+		//	(lHint== LHINT_SUBVIEW_TO_ROOTDOC )の場合は、
+		//	ビューの内容をルートDocに反映して
+		//	ください。
 		if ( m_bIsChanged )
 		{
 			// --------------------------------
-			//	�R�}���h�̐����E���s
+			//	コマンドの生成・実行
 			// --------------------------------
 			CString	strLs ;
 			GetEditCtrl().GetWindowText( strLs ) ;
@@ -259,20 +259,20 @@ void CDedCommentView::OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint)
 		}
 	}	else	{
 		//[Attention]
-		//	(lHint!= LHINT_SUBVIEW_TO_ROOTDOC )�̏ꍇ�́A
-		//	���[�gDoc�̓��e���r���[��
-		//	���f���Ă��������B
+		//	(lHint!= LHINT_SUBVIEW_TO_ROOTDOC )の場合は、
+		//	ルートDocの内容をビューに
+		//	反映してください。
 
 		//pHint= 
-		//	pHint�� CRfEditCmdHolder �I�u�W�F�N�g�Ȃ�A
-		//	�Ή�����ҏW�R�}���h CRfEditCmd ��ێ����Ă��܂��B
-		//	���̏ꍇ�Athis �� CRfEditCmd �̓��e�ɍœK������
-		//	�X�V���s���܂��B
-		//	NULL�Ȃ�A�S�X�V���v������Ă��܂��B
+		//	pHintが CRfEditCmdHolder オブジェクトなら、
+		//	対応する編集コマンド CRfEditCmd を保持しています。
+		//	この場合、this は CRfEditCmd の内容に最適化した
+		//	更新を行います。
+		//	NULLなら、全更新が要求されています。
 		if ( m_bUpdate_All_Requested )
 		{
-			//	�S�X�V���ۗ�����Ă���ꍇ�́A
-			//	���̌�̓R�}���h�ɂ��œK�����ꂽ�P�̂̂����Ȃ�X�V�v���ɑ΂��Ă��A�S�X�V���s���܂��B
+			//	全更新が保留されている場合は、
+			//	その後はコマンドによる最適化された単体のいかなる更新要求に対しても、全更新を行います。
 			pHint = NULL ;
 		}
 
@@ -285,8 +285,8 @@ void CDedCommentView::OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint)
 			if ( 
 				dynamic_castOu<CRfEditCmd_Comment>( pCmd ) 
 			) {
-				//	�R�����g���ύX���ꂽ��A�����ݒ肵�܂��B
-				//	�A���A���̃r���[���A�N�e�B�u�ȏꍇ�́A���̍X�V�͍s���܂���B
+				//	コメントが変更されたら、それを設定します。
+				//	但し、このビューがアクティブな場合は、この更新は行いません。
 				Ou<CRfEditCmd_Comment>	pCommand = 
 					dynamic_castOu<CRfEditCmd_Comment>( pCmd ) ;
 				OnUpdate_Comment( pCommand ) ;
@@ -298,40 +298,40 @@ void CDedCommentView::OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint)
 				dynamic_castOu<CRfEditCmd_Ressyasyubetsu>( pCmd ) ||
 				dynamic_castOu<CRfEditCmd_RessyasyubetsuSwap>( pCmd ) 
 			){
-				//	���̃r���[�́A
-				//		�_�C���̕ύX
-				//		�_�C���̃v���p�e�B�̕ύX
-				//		�w�̕ύX
-				//		��Ԃ̕ύX
-				//		��Ԃ̒��ʉ�
-				//		��Ԏ�ʂ̕ύX
-				//		��Ԏ�ʂ̓���
-				//	�̏ꍇ�́A�X�V���s���܂���B
+				//	このビューは、
+				//		ダイヤの変更
+				//		ダイヤのプロパティの変更
+				//		駅の変更
+				//		列車の変更
+				//		列車の直通化
+				//		列車種別の変更
+				//		列車種別の入替
+				//	の場合は、更新を行いません。
 			}
 			else
 			{
-				//	�S�X�V����
+				//	全更新扱い
 				//CRfEditCmd_DedRosenFileDataProp
-				//	�t�H���g���X�V�����ꍇ������܂��̂ŁA�S�X�V���K�v�ł�
+				//	フォントが更新される場合がありますので、全更新が必要です
 				//CRfEditCmd_Rosen
 				//CRfEditCmd_RosenFileData
-				//	CentDedRosen ���܂���I�u�W�F�N�g�̒u�����B
+				//	CentDedRosen を包含するオブジェクトの置換え。
 				pHint = NULL ;
 			}
 		}
 		
-		//	�œK�����ꂽ�X�V���Ȃ��ꍇ�́A
-		//	�S�X�V�v��
+		//	最適化された更新がない場合は、
+		//	全更新要求
 		if ( pHint == NULL ){
 			if ( getCDiagramEditApp()->getCMainFrame()->getMDIChildActiveView() != this ){
-				//	���̃r���[����A�X�V���v������܂����B
-				//	�r���[�̍X�V�́A���̃r���[���A�N�e�B�u�ɂȂ�܂�
-				//	�ۗ����܂��B
-				LogMsg(_T("CDedCommentView::OnUpdate() View�̍X�V��ۗ�") ) ;
+				//	他のビューから、更新が要求されました。
+				//	ビューの更新は、このビューがアクティブになるまで
+				//	保留します。
+				LogMsg(_T("CDedCommentView::OnUpdate() Viewの更新を保留") ) ;
 				m_bUpdate_All_Requested = true ;
 				return ;
 			}
-			//	�r���[�̑S�X�V
+			//	ビューの全更新
 			OnUpdate_All() ;
 		}
 	}
@@ -339,10 +339,10 @@ void CDedCommentView::OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint)
 
 void CDedCommentView::OnChange() 
 {
-	// TODO: ���ꂪ RICHEDIT �R���g���[���̏ꍇ�A�R���g���[���́A lParam �}�X�N
-	// ���ł̘_���a�� ENM_CHANGE �t���O�t���� CRichEditCrtl().SetEventMask()
-	// ���b�Z�[�W���R���g���[���֑��邽�߂� CEditView::OnInitDialog() �֐����I�[�o�[
-	// ���C�h���Ȃ����肱�̒ʒm�𑗂�܂���B
+	// TODO: これが RICHEDIT コントロールの場合、コントロールは、 lParam マスク
+	// 内での論理和の ENM_CHANGE フラグ付きで CRichEditCrtl().SetEventMask()
+	// メッセージをコントロールへ送るために CEditView::OnInitDialog() 関数をオーバー
+	// ライドしない限りこの通知を送りません。
 	
 	getCDiagramEditDoc()->SetModifiedFlag( TRUE ) ;
 	m_bIsChanged = true ;
@@ -351,7 +351,7 @@ void CDedCommentView::OnChange()
 
 void CDedCommentView::OnFilePrintPreview() 
 {
-	//	�v���r���[��L���ɂ��܂��B
+	//	プレビューを有効にします。
 	super::OnFilePrintPreview() ;
 }
 
@@ -359,24 +359,24 @@ void CDedCommentView::OnActivateView(BOOL bActivate, CView* pActivateView, CView
 {
 	if ( !bActivate ){
 		//[Attention]
-		//	���̃r���[����A�N�e�B�u�ɂȂ����Ƃ��ɂ́A
-		//	OnUpdate(lHint=LHINT_SUBVIEW_TO_ROOTDOC)���Ăяo���āA
-		//	���̃r���[�̓��e��
-		//	���[�gDoc�ɔ��f�����������ŁA����Ƀ��[�gDoc�̓��e��
-		//	���ׂẴT�uDoc/View�ɔ��f�����Ă��������B
+		//	このビューが非アクティブになったときには、
+		//	OnUpdate(lHint=LHINT_SUBVIEW_TO_ROOTDOC)を呼び出して、
+		//	このビューの内容を
+		//	ルートDocに反映させたうえで、さらにルートDocの内容を
+		//	すべてのサブDoc/Viewに反映させてください。
 
 
 		// --------------------------------
-		//	�w�H���x�h�L�������g�̍X�V
+		//	『路線』ドキュメントの更新
 		// --------------------------------
 		OnUpdate( this , LHINT_SUBVIEW_TO_ROOTDOC , NULL ) ;
 
 
 	}
 	if ( m_bUpdate_All_Requested && bActivate ){
-		//	�r���[�̍X�V���ۗ�����Ă����ԂŁA
-		//	�r���[���A�N�e�B�u�ɂȂ����Ƃ��́A
-		//	�r���[�̍X�V���s�킹�܂��B
+		//	ビューの更新が保留されている状態で、
+		//	ビューがアクティブになったときは、
+		//	ビューの更新を行わせます。
 		OnUpdate_All() ;
 	}
 	
@@ -387,8 +387,8 @@ void CDedCommentView::OnActivateView(BOOL bActivate, CView* pActivateView, CView
 void CDedCommentView::OnBeginPrinting(CDC* pDC, CPrintInfo* pInfo) 
 {
 	if ( m_bUpdate_All_Requested ){
-		//	�r���[�̍X�V���ۗ�����Ă���ꍇ�́A
-		//	�r���[�̍X�V���s�킹�܂��B
+		//	ビューの更新が保留されている場合は、
+		//	ビューの更新を行わせます。
 		OnUpdate_All() ;
 	}
 	
@@ -410,11 +410,11 @@ BOOL CDedCommentView::PreCreateWindow(CREATESTRUCT& cs)
 	
 	BOOL bRv = super::PreCreateWindow(cs);
 
-	//	�����X�N���[���o�[���폜���A
-	//	�e�L�X�g���E�[�Ő܂�Ԃ��悤�ɕύX
+	//	水平スクロールバーを削除し、
+	//	テキストを右端で折り返すように変更
 	if ( bRv ){
-		cs.style &=~( WS_HSCROLL ) ;
-		cs.style &=~( ES_AUTOHSCROLL ) ;
+		cs.style &=‾( WS_HSCROLL ) ;
+		cs.style &=‾( ES_AUTOHSCROLL ) ;
 	}
 	return ( bRv ) ;
 }
@@ -439,32 +439,32 @@ void CDedCommentView::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 	return ;
 
 
-	//	�ȉ��̃R�[�h�́A�y�[�W�ԍ���
-	//	�\�����悤�Ƃ������̂ł����A
-	//	ASSERT�ɂȂ��Ă��܂��܂��B
-	//	���̂��߁A���ʂ͓��삳���܂���B
+	//	以下のコードは、ページ番号を
+	//	表示しようとしたものですが、
+	//	ASSERTになってしまいます。
+	//	このため、当面は動作させません。
 /*
 	//attention
-	//	���̃N���X�́A�y�[�W���Ƃ̊J�n�ʒu��
-	//	�L���b�V�����Ă��܂��iCEditView::m_aPageStart�j�B
-	//	�Ƃ��낪�A�}�b�v���[�h��
-	//	�ύX���Ă���ꍇ�A�v���r���[�\�����ɃE�C���h�E�T�C�Y��
-	//	�ύX����ƁA�L���b�V���Ǝ��ۂ̕\�����H�������
-	//	���܂��AASSERT�ɂȂ��Ă��܂��܂��B
-	//	�ȉ��̂R�֐������s���邱�Ƃɂ��A�L���b�V�����N���A�ł���
-	//	���Ƃ�������܂����B
+	//	このクラスは、ページごとの開始位置を
+	//	キャッシュしています（CEditView::m_aPageStart）。
+	//	ところが、マップモードを
+	//	変更している場合、プレビュー表示中にウインドウサイズを
+	//	変更すると、キャッシュと実際の表示が食い違って
+	//	しまい、ASSERTになってしまいます。
+	//	以下の３関数を実行することにより、キャッシュをクリアできる
+	//	ことが分かりました。
 	//	
-	//	OnPrepareDC ����� ���̊֐����Ăяo����܂��B
-	//	OnPrepareDC����Ăяo���ꂽ�ꍇ�́A
-	//	���̋�Ԃ̎��s�͔�����ׂ��ł��B
-	//	b �́AOnPrepareDC�����s���ł��邱�Ƃ������t���O�ł��B
+	//	OnPrepareDC からは この関数が呼び出されます。
+	//	OnPrepareDCから呼び出された場合は、
+	//	この区間の実行は避けるべきです。
+	//	b は、OnPrepareDCが実行中であることを示すフラグです。
 	static bool b = false ;
 	if ( !b ){
 		b = true ;
 
 		//attention
-		//	�ȉ������s����ƁA�v�����^DC�����܂��B
-		//	���R�͕s���ł��B
+		//	以下を実行すると、プリンタDCが壊れます。
+		//	理由は不明です。
 		//
 		//	CPrintInfo	aCPrintInfo = *pInfo ;
 		
@@ -475,8 +475,8 @@ void CDedCommentView::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 		b = false ;
 
 		//attention
-		//	��������ƁA�v�����^DC�����܂��B
-		//	���R�͓�ł��B
+		//	これをやると、プリンタDCが壊れます。
+		//	理由は謎です。
 		//
 		//	*pInfo = aCPrintInfo ;
 	}
@@ -487,14 +487,14 @@ void CDedCommentView::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 	LogMsg( CDcdTargetMfcPrintInfo::stringOf( pInfo ).c_str() ) ;
 
 	// --------------------------------
-	//	�`��ʂ��쐬
+	//	描画面を作成
 	// --------------------------------
 	CDcdTargetMfcPrintInfo	aCDcdTargetMfcPrintInfo( pDC, pInfo ) ;
 
 	LogMsg( "CDedCommentView::OnPrint()1" ) ;
 
 	// --------------------------------
-	//	�]�����������̈���쐬
+	//	余白を除いた領域を作成
 	// --------------------------------
 	CaDcdTargetItemPosition	aTargetInnerMargin( &aCDcdTargetMfcPrintInfo , 
 		CdDcdZoneXy() ) ;
@@ -520,31 +520,31 @@ void CDedCommentView::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 
 	}
 
-	//aTargetInnerMargin = �]���������������`��̈�B
-	//	�P�ʂ̓v�����^�̃s�N�Z���ł��B
+	//aTargetInnerMargin = 余白部分を除いた描画領域。
+	//	単位はプリンタのピクセルです。
 
 
 	LogMsg( "CDedCommentView::OnPrint()2" ) ;
 
 	// --------------------------------
-	//	�_�����W��ݒ�
+	//	論理座標を設定
 	// --------------------------------
 	CaDcdTargetZoomDisplay	aCaDcdTargetZoomDisplay( 
 		&aTargetInnerMargin , 
 		aCDcdTargetMfcPrintInfo.getPrinterHdc() ) ;
-	//aCaDcdTargetZoomDisplay = �]���������������`��̈�B
-	//	�P�ʂ́A��ʏ�̂P�s�N�Z�������ɂȂ�܂����B
+	//aCaDcdTargetZoomDisplay = 余白部分を除いた描画領域。
+	//	単位は、画面上の１ピクセル相当になりました。
 	IfDcdTarget*	pTarget =  &aCaDcdTargetZoomDisplay ;
 	
-	//pTarget = �`����s���̈�B
-	//	�P�ʂ́A��ʏ�̂P�s�N�Z�������ɂȂ�܂����B
+	//pTarget = 描画を行う領域。
+	//	単位は、画面上の１ピクセル相当になりました。
 
 	LogMsg( "CDedCommentView::OnPrint()3" ) ;
 	// --------------------------------
-	//	�y�[�W�ԍ���DcDraw�I�u�W�F�N�g���i���쐬
+	//	ページ番号のDcDrawオブジェクト部品を作成
 	// --------------------------------
 	
-	//memo: �L���v�V�����̈���͍s��Ȃ����Ƃɂ��܂����B
+	//memo: キャプションの印刷は行わないことにしました。
 	//	Ou<CDcdText>	pdcdCaption ;
 	//	{
 	//		const CentDedRosen* pCentDedRosen = 
@@ -554,7 +554,7 @@ void CDedCommentView::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 	//				(CJikokuhyouDoc*)GetDocument() ;
 	//		
 	//			string	strText ;
-	//			//	�H����
+	//			//	路線名
 	//			if ( !pCentDedRosen->getName().empty() ){
 	//				strText += pCentDedRosen->getName() ;
 	//				strText += " " ;
@@ -572,42 +572,42 @@ void CDedCommentView::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 		aProp.setCdDrawTextFormat( aFormat ) ;
 		pdcdPage = OuNew<CDcdText>( new CDcdText( "" ,aProp , "99" ) ) ;
 	}
-	//pdcdPage = �y�[�W�ԍ���DcDraw�I�u�W�F�N�g
+	//pdcdPage = ページ番号のDcDrawオブジェクト
 	
 	// --------------------------------
-	//	�y�[�W�ԍ��̕��i�E
-	//	CEditView �e�L�X�g�̃��C�A�E�g�����߂�	
+	//	ページ番号の部品・
+	//	CEditView テキストのレイアウトを決める	
 	// --------------------------------
 	
-	//memo: �L���v�V�����̈���͍s��Ȃ����Ƃɂ��܂����B
+	//memo: キャプションの印刷は行わないことにしました。
 	//	Ou<CaDcdTargetItemPosition>	pTargetCaption ;
 
 	Ou<CaDcdTargetItemPosition>	pTargetEditView ;
 	Ou<CaDcdTargetItemPosition>	pTargetPage ;
 	{
 		CdDcdZoneXy	zoneEditView = pTarget->getZone() ;
-		//zoneEditView=�]���������������`��̈�B
-		//	��������y�[�W�ԍ������������̂��A
-		//	�ŏI�I�ɃG�f�B�b�g�r���[�ɋL���ꂽ���e��
-		//	�������̈�ł��B
+		//zoneEditView=余白部分を除いた描画領域。
+		//	ここからページ番号を除いたものが、
+		//	最終的にエディットビューに記された内容を
+		//	印刷する領域です。
 
 
-		//memo: �L���v�V�����̈���͍s��Ȃ����Ƃɂ��܂����B
+		//memo: キャプションの印刷は行わないことにしました。
 		//	pdcdCaption->getItemSize( pTarget , &aSize ) ;
 		//	CdDcdZoneXy zoneCaption( zoneEditView.getX() , 
 		//		CdDcdZone( zoneEditView.getY().getPos() , aSize.getY() ) ) ;
 		//	zoneEditView.setY( CdDcdZone().setBeginEndPos( 
 		//		zoneCaption.getY().getEndPos() + aSize.getY() , 
 		//		zoneEditView.getY().getEndPos() ) ) ;
-		//	//zoneCaption = �S�̈�̏㕔���A�L���v�V�����p�Ɋ��蓖�ĂĂ��܂��B
-		//	//zoneEditView = �S�̈悩��A�㕔�̃L���v�V�����̈��������
-		//	//	�̈�ł��B
+		//	//zoneCaption = 全領域の上部を、キャプション用に割り当てています。
+		//	//zoneEditView = 全領域から、上部のキャプション領域を除いた
+		//	//	領域です。
 		//	
 		//	pTargetCaption = OuNew<CaDcdTargetItemPosition>( 
 		//		new CaDcdTargetItemPosition( pTarget , zoneCaption ) ) ;
 
 		// --------------------------------
-		//	�y�[�W�ԍ��̗̈� IfDcdTarget
+		//	ページ番号の領域 IfDcdTarget
 		// --------------------------------
 		{
 			CdDcdSizeXy	aSize ;
@@ -615,36 +615,36 @@ void CDedCommentView::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 			CdDcdZoneXy zonePage( zoneEditView.getX() , 
 				CdDcdZone( zoneEditView.getY().getEndPos() - aSize.getY() ,
 				aSize.getY() ) ) ;
-			//zonePage = �S�̈�̉������A�y�[�W�p�Ɋ��蓖�ĂĂ��܂��B
+			//zonePage = 全領域の下部を、ページ用に割り当てています。
 			pTargetPage = OuNew<CaDcdTargetItemPosition>(
 				new CaDcdTargetItemPosition( pTarget , zonePage ) ) ;
-			//pTargetPage=�y�[�W�p��IfDcdTarget
+			//pTargetPage=ページ用のIfDcdTarget
 
 			zoneEditView.setY( CdDcdZone().setBeginEndPos( 
 				zoneEditView.getY().getPos() , //zoneCaption.getY().getEndPos() , 
 				zonePage.getY().getPos() - aSize.getY()) ) ;
-			//zoneEditView = �㕔�̃L���v�V�����ɑ����āA�����̃y�[�W�̈���������̈�ł��B
+			//zoneEditView = 上部のキャプションに続いて、下部のページ領域も除いた領域です。
 		}
 
 		// --------------------------------
-		//	�R���e���c�̈� IfDcdTarget
+		//	コンテンツ領域 IfDcdTarget
 		// --------------------------------
 		pTargetEditView = OuNew<CaDcdTargetItemPosition>( 
 			new CaDcdTargetItemPosition( pTarget , zoneEditView ) ) ;
 	}
 	// --------------------------------
-	//	CEditView��̃e�L�X�g��`��
+	//	CEditView上のテキストを描画
 	// --------------------------------
 	int iPage = 0 ;
 	{
 		CRect	rectDrawSid = pInfo->m_rectDraw ;
 
 		// --------------------------------
-		//	�v�����^�p�̃t�H���g��ݒ�
-		//	�i���̊֐�����DC�̃}�b�v���[�h��ύX���Ă��܂��B
-		//	CEdit �̃f�t�H���g�̃t�H���g�́A���̕ύX���l�����Ă��Ȃ����߁A
-		//	�v�����^�p�̃t�H���g��V�����}�b�v���[�h��
-		//	���킹�����̂ɕύX����K�v������܂��j
+		//	プリンタ用のフォントを設定
+		//	（この関数内でDCのマップモードを変更しています。
+		//	CEdit のデフォルトのフォントは、この変更を考慮していないため、
+		//	プリンタ用のフォントを新しいマップモードに
+		//	合わせたものに変更する必要があります）
 		// --------------------------------
 		Ou<CGdiHFontHolder>	pHFontHolder ;
 		CFont	aCFont ;
@@ -656,22 +656,22 @@ void CDedCommentView::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 			SetPrinterFont( &aCFont ) ;
 		}
 		// --------------------------------
-		//	pInfo->m_rectDraw ���A
-		//	�y�[�W���������̈�ɏC�����܂��B
+		//	pInfo->m_rectDraw を、
+		//	ページを除いた領域に修正します。
 		// --------------------------------
 		CConverter_WinGdi	aConv ;
 		pInfo->m_rectDraw = aConv.RECTOf( pTargetEditView->getZone() ) ;
 		// --------------------------------
-		//	�������
+		//	印刷処理
 		// --------------------------------
 		super::OnPrint(pDC, pInfo);
 		// --------------------------------
-		//	pInfo->m_rectDraw �𕜋A
+		//	pInfo->m_rectDraw を復帰
 		// --------------------------------
 		pInfo->m_rectDraw = rectDrawSid ;
 
 		// --------------------------------
-		//	�v�����^�p�̃t�H���g��߂�
+		//	プリンタ用のフォントを戻す
 		// --------------------------------
 		{
 			SetPrinterFont( pFontSid ) ;
@@ -683,13 +683,13 @@ void CDedCommentView::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 		// --------------------------------
 		iPage = pInfo->m_nCurPage - 1 ;
 	}
-	//iPage = �y�[�W�ԍ�(0�N�_)
+	//iPage = ページ番号(0起点)
 	LogMsg( "CDedCommentView::OnPrint()6" ) ;
 	// --------------------------------
-	//	�y�[�W�ԍ��̃e�L�X�g���쐬
+	//	ページ番号のテキストを作成
 	// --------------------------------
 	{
-		//�y�[�W�ԍ�������
+		//ページ番号も決定
 		{
 			string	strPage = OuLib::stringOf( iPage + 1) ;
 			pdcdPage->setText( strPage ) ;
@@ -698,10 +698,10 @@ void CDedCommentView::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 
 	LogMsg( "CDedCommentView::OnPrint()7" ) ;
 	// --------------------------------
-	//	�y�[�W�ԍ���`��
+	//	ページ番号を描画
 	// --------------------------------
 	{
-		//memo: �L���v�V�����̈���͍s��Ȃ����Ƃɂ��܂����B
+		//memo: キャプションの印刷は行わないことにしました。
 		//
 		//	pdcdCaption->DcDraw( pTargetCaption ) ;
 

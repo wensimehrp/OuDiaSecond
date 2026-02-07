@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -70,8 +70,8 @@ Copyright (C) 2006-2017 take-okm
 /** @file */
 #ifndef  Ou_h
 #define  Ou_h
-#include "NsOu\OuBase.h"
-#include "NsOu\OuHolder.h"
+#include "NsOu¥OuBase.h"
+#include "NsOu¥OuHolder.h"
 
 namespace OuLib{
 
@@ -84,8 +84,8 @@ namespace NsOu{
 // ****************************************************************
 /**
 @brief
-  	  TargetType �^�̃I�u�W�F�N�g���Q�Ƃ���
-	�X�}�[�g�|�C���^�ł��B
+  	  TargetType 型のオブジェクトを参照する
+	スマートポインタです。
 
 @ref page_oumodel 
 
@@ -95,7 +95,7 @@ template< class TargetType1 >
 class Ou : public OuBase
 {
 // ********************************
-//	�N���X����`
+//	クラス内定義
 // ********************************
  public:
 	typedef OuBase	super ;
@@ -103,35 +103,35 @@ class Ou : public OuBase
 
 
 // ********************************
-///@name �֘A
+///@name 関連
 // ********************************
 ///@{
  private:
 	/**
-	 	�^�[�Q�b�g�I�u�W�F�N�g�ւ̃|�C���^�ł��B
-	 	�R���X�g���N�^�E������Z�q�Ō��肵�܂��B
+	 	ターゲットオブジェクトへのポインタです。
+	 	コンストラクタ・代入演算子で決定します。
 	 */
 	TargetType*		m_pTarget ;
 
 ///@}
 // ********************************
-//	�R���X�g���N�^�E�f�X�g���N�^
+//	コンストラクタ・デストラクタ
 // ********************************
  public:
 	/**
-	 	  �f�t�H���g�R���X�g���N�^�ł��B
-	 	  �^�[�Q�b�g�I�u�W�F�N�g��NULL�ƂȂ�܂��B
+	 	  デフォルトコンストラクタです。
+	 	  ターゲットオブジェクトはNULLとなります。
 	 */
 	Ou() : 
 		m_pTarget( NULL ) 
 	{
 	};
 	/**
-	 	  �V�����^�[�Q�b�g�I�u�W�F�N�g���Q�Ƃ�����Ƃ��̃R���X�g���N�^�ł��B
-	 	  new �Ő������� OuHolder�I�u�W�F�N�g��o�^���܂��B
+	 	  新しいターゲットオブジェクトを参照させるときのコンストラクタです。
+	 	  new で生成した OuHolderオブジェクトを登録します。
 	 @param pHolder [in]
-	 	�V�����^�[�Q�b�g�I�u�W�F�N�g��ێ����Ă���A OuHolder �I�u�W�F�N�g
-	 	���w�肵�Ă��������B
+	 	新しいターゲットオブジェクトを保持している、 OuHolder オブジェクト
+	 	を指定してください。
 	 */
 	template< class TargetTypeSrc >
 	Ou( OuHolder<TargetTypeSrc>* pHolder ) 
@@ -142,11 +142,11 @@ class Ou : public OuBase
 	
 	
 	/**
-	 	�ϊ��R���X�g���N�^
-	 	������ Ou �I�u�W�F�N�g�i�܂��́AOu�̔h���N���X�̃I�u�W�F�N�g�j��
-	 	�Q�Ƃ��Ă���^�[�Q�b�g�I�u�W�F�N�g���Q�Ƃ��܂��B
+	 	変換コンストラクタ
+	 	既存の Ou オブジェクト（または、Ouの派生クラスのオブジェクト）が
+	 	参照しているターゲットオブジェクトを参照します。
 	 @param ev [in]
-	 	������ Ou  �I�u�W�F�N�g���w�肵�Ă��������B
+	 	既存の Ou  オブジェクトを指定してください。
 	 */
 	template< class TargetTypeSrc >
 	Ou( Ou<TargetTypeSrc>& ev )
@@ -156,13 +156,13 @@ class Ou : public OuBase
 	};
 	
 	/**
-		������Z�q�ł��B
-		������ Ou �I�u�W�F�N�g�i�܂��́AOu�̔h���N���X�̃I�u�W�F�N�g�j��
-		�Q�Ƃ��Ă���^�[�Q�b�g�I�u�W�F�N�g���Q�Ƃ��܂��B
-		���̂Ƃ��A����܂ł��� Ou �I�u�W�F�N�g���Q�Ƃ��Ă����^�[�Q�b�g
-		�I�u�W�F�N�g�ɑ΂��ẮA�Q�ƃJ�E���^�����炵�A�K�v�Ȃ�폜���s���܂��B
+		代入演算子です。
+		既存の Ou オブジェクト（または、Ouの派生クラスのオブジェクト）が
+		参照しているターゲットオブジェクトを参照します。
+		このとき、それまでこの Ou オブジェクトが参照していたターゲット
+		オブジェクトに対しては、参照カウンタを減らし、必要なら削除を行います。
 	@param ev [in]
-		������ Ou  �I�u�W�F�N�g���w�肵�Ă��������B
+		既存の Ou  オブジェクトを指定してください。
 	*/
 	template< class TargetTypeSrc >
 	Ou& operator=( Ou<TargetTypeSrc>& ev ) 
@@ -175,11 +175,11 @@ class Ou : public OuBase
 
 
 	/**
-		�R�s�[�R���X�g���N�^
-		������ Ou �I�u�W�F�N�g�i�܂��́AOu�̔h���N���X�̃I�u�W�F�N�g�j��
-		�Q�Ƃ��Ă���^�[�Q�b�g�I�u�W�F�N�g���Q�Ƃ��܂��B
+		コピーコンストラクタ
+		既存の Ou オブジェクト（または、Ouの派生クラスのオブジェクト）が
+		参照しているターゲットオブジェクトを参照します。
 	@param ev [in]
-		������ Ou  �I�u�W�F�N�g���w�肵�Ă��������B
+		既存の Ou  オブジェクトを指定してください。
 	*/
 	Ou( const Ou& ev )
 		: super( ev ) 
@@ -188,13 +188,13 @@ class Ou : public OuBase
 	};
 	
 	/**
-		������Z�q�ł��B
-		������ Ou �I�u�W�F�N�g�i�܂��́AOu�̔h���N���X�̃I�u�W�F�N�g�j��
-		�Q�Ƃ��Ă���^�[�Q�b�g�I�u�W�F�N�g���Q�Ƃ��܂��B
-		���̂Ƃ��A����܂ł��� Ou �I�u�W�F�N�g���Q�Ƃ��Ă����^�[�Q�b�g
-		�I�u�W�F�N�g�ɑ΂��ẮA�Q�ƃJ�E���^�����炵�A�K�v�Ȃ�폜���s���܂��B
+		代入演算子です。
+		既存の Ou オブジェクト（または、Ouの派生クラスのオブジェクト）が
+		参照しているターゲットオブジェクトを参照します。
+		このとき、それまでこの Ou オブジェクトが参照していたターゲット
+		オブジェクトに対しては、参照カウンタを減らし、必要なら削除を行います。
 	@param ev [in]
-		������ Ou  �I�u�W�F�N�g���w�肵�Ă��������B
+		既存の Ou  オブジェクトを指定してください。
 	 */
 	Ou& operator=( const Ou& ev ) 
 	{
@@ -204,8 +204,8 @@ class Ou : public OuBase
 		return ( *this ) ;
 	};
 
-	//	�f�X�g���N�^
-	virtual ~Ou()
+	//	デストラクタ
+	virtual ‾Ou()
 	{
 	};
 
@@ -214,59 +214,59 @@ class Ou : public OuBase
 // ********************************
  public:
 	// ********************************
-	///@name "Ou< TargetType >"-�֘A
+	///@name "Ou< TargetType >"-関連
 	// ********************************
 	///@{
 	TargetType* getTarget(){	return ( m_pTarget ) ; 	} ;
 	const TargetType* getTarget()const{	return ( m_pTarget ) ; 	} ;
 	///@}
 	// ********************************
-	///@name "Ou< TargetType >"-���Z�q
+	///@name "Ou< TargetType >"-演算子
 	// ********************************
 	///@{
 
 	/**
-		  �^�[�Q�b�g�I�u�W�F�N�g�ւ̃L���X�g���Z�q�ł��B
-		  ����ɂ��AOu�I�u�W�F�N�g�𕁒ʂ̃|�C���^�̑����
-		�֐��̈����Ƃ��ēn�����Ƃ��ł��܂��B
+		  ターゲットオブジェクトへのキャスト演算子です。
+		  これにより、Ouオブジェクトを普通のポインタの代わりに
+		関数の引数として渡すことができます。
 	*/
 	operator  TargetType*(){	return ( getTarget() ) ; } ;
 	operator  const TargetType*()const{	return ( getTarget() ) ; } ;
 	
 	/**
-		  "->"���Z�q
-		�^�[�Q�b�g�I�u�W�F�N�g�̃|�C���^��Ԃ��܂��B
-		  ����ɂ��AOu�I�u�W�F�N�g�� "->" �����āA�^�[�Q�b�g�I�u�W�F�N�g��
-		�����o�ɃA�N�Z�X�ł��܂��B
+		  "->"演算子
+		ターゲットオブジェクトのポインタを返します。
+		  これにより、Ouオブジェクトに "->" をつけて、ターゲットオブジェクトの
+		メンバにアクセスできます。
 	*/
 	TargetType* operator->(){	return ( getTarget() ) ; } ;
 	const TargetType* operator->()const{	return ( getTarget() ) ; } ;
 	
 	/**
-		  "*"���Z�q
-		  ����ɂ��A Ou �I�u�W�F�N�g�� "*" �����āA�^�[�Q�b�g�I�u�W�F�N�g
-		�̎��̂�\�����Ƃ��ł��܂��B
+		  "*"演算子
+		  これにより、 Ou オブジェクトに "*" をつけて、ターゲットオブジェクト
+		の実体を表すことができます。
 	*/
 	TargetType& operator*(){	return ( *getTarget() ) ; } ;
 	const TargetType& operator*()const{	return ( *getTarget() ) ; } ;
 	
 	/**
-		  ��r���Z�q
-		  �^�[�Q�b�g�I�u�W�F�N�g�̃|�C���^�ƁA�ʏ�̃|�C���^�̔�r��
-		�s���܂��B
-		  ��r�Ώۂɂ� NULL ���w�肷�邱�Ƃ��ł��܂��B
+		  比較演算子
+		  ターゲットオブジェクトのポインタと、通常のポインタの比較を
+		行います。
+		  比較対象には NULL を指定することもできます。
 	@param ev [in]
-		��r�Ώۂ̃|�C���^���w�肵�Ă��������B
+		比較対象のポインタを指定してください。
 	@return
-		- (operator==)�ΏۂƂȂ�I�u�W�F�N�g�̃|�C���^�������ł���ΐ^�ł�
-		- (operator!=)�ΏۂƂȂ�I�u�W�F�N�g�̃|�C���^���قȂ�ΐ^�ł�
+		- (operator==)対象となるオブジェクトのポインタが同じであれば真です
+		- (operator!=)対象となるオブジェクトのポインタが異なれば真です
 	*/
 	bool operator==( TargetType* ev )const
 	{
 		return ( m_pTarget == ev ) ;
 	};	
 	/**
-		@see operator==( TargetType* ev ) ���Q�Ƃ��Ă��������B
+		@see operator==( TargetType* ev ) を参照してください。
 	*/
 	bool operator!=( TargetType* ev )const
 	{
@@ -274,14 +274,14 @@ class Ou : public OuBase
 	};	
 
 	/**
-		  ��r���Z�q
-		  this �ƁA�w���Ou�I�u�W�F�N�g�Ƃ̊ԂŁA�^�[�Q�b�g�I�u�W�F�N�g��
-		�|�C���^�̔�r���s���܂��B
+		  比較演算子
+		  this と、指定のOuオブジェクトとの間で、ターゲットオブジェクトの
+		ポインタの比較を行います。
 	@param ev [in]
-		��r�Ώۂ� Ou �I�u�W�F�N�g���w�肵�Ă��������B
+		比較対象の Ou オブジェクトを指定してください。
 	@return
-		- (operator==)�ΏۂƂȂ�I�u�W�F�N�g�̃|�C���^�������ł���ΐ^�ł�
-		- (operator!=)�ΏۂƂȂ�I�u�W�F�N�g�̃|�C���^���قȂ�ΐ^�ł�
+		- (operator==)対象となるオブジェクトのポインタが同じであれば真です
+		- (operator!=)対象となるオブジェクトのポインタが異なれば真です
 	*/
 	template< class TargetTypeSrc >
 	bool operator==( Ou<TargetTypeSrc>& ev )const
@@ -289,7 +289,7 @@ class Ou : public OuBase
 		return ( m_pTarget == ev.getTarget() ) ;
 	};	
 	/**
-		@see operator!=() ���Q�Ƃ��Ă��������B
+		@see operator!=() を参照してください。
 	*/
 	template< class TargetTypeSrc >
 	bool operator!=( Ou<TargetTypeSrc>& ev )const
@@ -299,12 +299,12 @@ class Ou : public OuBase
 
 	///@}
 	// ********************************
-	///@name "Ou< TargetType >"-����
+	///@name "Ou< TargetType >"-操作
 	// ********************************
 	///@{
 	/**
 	@return
-		�^�[�Q�b�g�I�u�W�F�N�g��NULL�Ȃ�A�^��Ԃ��܂��B
+		ターゲットオブジェクトがNULLなら、真を返します。
 	*/
 	virtual bool isNull() const
 	{
@@ -312,9 +312,9 @@ class Ou : public OuBase
 	};
 
 	/**
-		���� Ou �I�u�W�F�N�g��
-		�^�[�Q�b�g�I�u�W�F�N�g�ɑ΂���Q�Ƃ𒆎~���A
-		������Ԃɖ߂��܂��B
+		この Ou オブジェクトの
+		ターゲットオブジェクトに対する参照を中止し、
+		初期状態に戻します。
 	*/
 	virtual void clear() 
 	{

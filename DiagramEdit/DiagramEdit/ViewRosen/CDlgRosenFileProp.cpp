@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,49 +35,49 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��:
+(訳:
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h��
+  加えて、特別な例外として、take-okm はこのプログラムのコードを
   "MFC(Microsoft Foundation Class library) Version 9.0"
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
-// CDlgRosenFileProp.cpp : �C���v�������e�[�V���� �t�@�C��
+// CDlgRosenFileProp.cpp : インプリメンテーション ファイル
 //
 
 #include "stdafx.h"
 
 #include "str/CStrCharSizeMb.h"
-#include "DcDraw\CConverter_WinGdi.h"
+#include "DcDraw¥CConverter_WinGdi.h"
 
-#include "..\DiagramEdit.h"
-#include "..\DedRosenFileData\EditCmd\CRfEditCmd_DedRosenFileDataProp.h"
+#include "..¥DiagramEdit.h"
+#include "..¥DedRosenFileData¥EditCmd¥CRfEditCmd_DedRosenFileDataProp.h"
 #include "CDlgRosenFileProp.h"
 #include "NsOu/OuNew.h"
 
@@ -94,11 +94,11 @@ namespace ViewRosen {
 	//	CPropEditorData
 	// ****************************************************************
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	/**
 	 @param pCDedRosenFileData [in]
-		�w�H���t�@�C���x�̃f�[�^
+		『路線ファイル』のデータ
 	 */
 	CDlgRosenFileProp::CPropEditorData::CPropEditorData(
 		const CDedRosenFileData* pCDedRosenFileData) :
@@ -117,7 +117,7 @@ namespace ViewRosen {
 	}
 
 	// ********************************
-	//@name UI�\���f�[�^���擾�E�ݒ�
+	//@name UI表示データを取得・設定
 	// ********************************
 	tstring	CDlgRosenFileProp::CPropEditorData::getUIRosenName()const
 	{
@@ -231,7 +231,7 @@ namespace ViewRosen {
 
 
 	// ********************************
-	//@name �ҏW�Ώۃf�[�^��K�p
+	//@name 編集対象データを適用
 	// ********************************
 	void CDlgRosenFileProp::CPropEditorData::applyTo(CDedRosenFileData* pApplyTo)
 	{
@@ -271,7 +271,7 @@ namespace ViewRosen {
 
 
 	/////////////////////////////////////////////////////////////////////////////
-	// CDlgRosenFileProp �_�C�A���O
+	// CDlgRosenFileProp ダイアログ
 	void CDlgRosenFileProp::UpdateChildWindowShow()
 	{
 		int	iLCurSel = m_tabMAIN.GetCurSel();
@@ -305,11 +305,11 @@ namespace ViewRosen {
 
 	}
 
-	/** �����̏�����ێ����܂��B */
+	/** 時刻の書式を保持します。 */
 	const CdDedJikoku::CConv	g_CdDedJikokuConv(
 		false,		//	NoColon 
-		CdDedJikoku::CConv::EHour_Zero,	// ���� 00 ���� 09 �̏ꍇ�A10�̈ʂ� "0" �Ƃ��܂�
-		CdDedJikoku::CConv::ESecond_NoSecond 	// �b����ɏo�͂��܂���B 
+		CdDedJikoku::CConv::EHour_Zero,	// 時が 00 から 09 の場合、10の位を "0" とします
+		CdDedJikoku::CConv::ESecond_NoSecond 	// 秒を常に出力しません。 
 	);
 
 
@@ -326,7 +326,7 @@ namespace ViewRosen {
 		, m_PropEditorData(pCDedRosenFileData)
 	{
 		//{{AFX_DATA_INIT(CDlgRosenFileProp)
-			// ���� - ClassWizard �͂��̈ʒu�Ƀ}�b�s���O�p�̃}�N����ǉ��܂��͍폜���܂��B
+			// メモ - ClassWizard はこの位置にマッピング用のマクロを追加または削除します。
 		//}}AFX_DATA_INIT
 
 	}
@@ -349,7 +349,7 @@ namespace ViewRosen {
 	END_MESSAGE_MAP()
 
 	/////////////////////////////////////////////////////////////////////////////
-	// CDlgRosenFileProp ���b�Z�[�W �n���h��
+	// CDlgRosenFileProp メッセージ ハンドラ
 
 	BOOL CDlgRosenFileProp::OnInitDialog()
 	{
@@ -358,7 +358,7 @@ namespace ViewRosen {
 		CWaitCursor	aCursor;
 
 		//--------------------------------
-		//	�q�_�C�A���O�𐶐�
+		//	子ダイアログを生成
 		//--------------------------------
 		{
 			m_CDlgRosenFileProp_Rosen.Create(m_CDlgRosenFileProp_Rosen.IDD, this);
@@ -367,9 +367,9 @@ namespace ViewRosen {
 			m_CDlgRosenFileProp_Diagram.Create(m_CDlgRosenFileProp_Diagram.IDD, this);
 		}
 		// --------------------------------	
-		//	�^�u�ɃA�C�e����ǉ�
-		//	(���̏����́A�q�_�C�A���O������Ɏ��s����K�v������܂��B
-		//	���R�F�q�_�C�A���O�̃R���g���[������^�u�����擾���邽��)
+		//	タブにアイテムを追加
+		//	(この処理は、子ダイアログ生成後に実行する必要があります。
+		//	理由：子ダイアログのコントロールからタブ名を取得するため)
 		// --------------------------------	
 		{
 			CString	aStr;
@@ -409,7 +409,7 @@ namespace ViewRosen {
 		}
 
 		//--------------------------------
-		//	�q�_�C�A���O�̈ʒu������
+		//	子ダイアログの位置を決定
 		//--------------------------------
 		{
 			WINDOWPLACEMENT	LWindowplacement;
@@ -436,7 +436,7 @@ namespace ViewRosen {
 				, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE);
 		}
 		//--------------------------------
-		//	�ҏW�Ώۃf�[�^��UI�ɔ��f����
+		//	編集対象データをUIに反映する
 		//--------------------------------
 		{
 			m_CDlgRosenFileProp_Rosen.updateUI();
@@ -447,8 +447,8 @@ namespace ViewRosen {
 		// --------------------------------
 		UpdateChildWindowShow();
 
-		return TRUE;  // �R���g���[���Ƀt�H�[�J�X��ݒ肵�Ȃ��Ƃ��A�߂�l�� TRUE �ƂȂ�܂�
-					  // ��O: OCX �v���p�e�B �y�[�W�̖߂�l�� FALSE �ƂȂ�܂�
+		return TRUE;  // コントロールにフォーカスを設定しないとき、戻り値は TRUE となります
+					  // 例外: OCX プロパティ ページの戻り値は FALSE となります
 	}
 
 	void CDlgRosenFileProp::OnOK()

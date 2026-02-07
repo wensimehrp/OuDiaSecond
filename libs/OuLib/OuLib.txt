@@ -1,55 +1,55 @@
 $Id: OuLib.txt 355 2016-08-18 16:41:28Z okm $
 
 
-ƒ1„tag
+ï¼œ1ï¼tag
 
-Mu_Add
+â—Mu_Add
 	2009/02/22
-	Mu ‚ğ’Ç‰Á‚µ‚Ü‚µ‚½B
+	Mu ã‚’è¿½åŠ ã—ã¾ã—ãŸã€‚
 
-Mu
+â—Mu
 	2009/02/22
-	Mu ‚ğ Str,OuDia ‚É“K—p‚µ‚Ü‚µ‚½B
+	Mu ã‚’ Str,OuDia ã«é©ç”¨ã—ã¾ã—ãŸã€‚
 	
-D091114_erase_using_from_h
-	E‚·‚×‚Ä‚Ì.hƒtƒ@ƒCƒ‹‚©‚çAusing namespace‚ğœ‹
+â—D091114_erase_using_from_h
+	ãƒ»ã™ã¹ã¦ã®.hãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰ã€using namespaceã‚’é™¤å»
 
-D091205_CMuiCopied
-	CMuiCopied‚ğ’Ç‰Á
-	CMup_deque,CMup_vector‚ğACaMup_vector‚Ì”h¶ƒNƒ‰ƒX‚©‚ç‰ğœ‚µ‚Ü‚µ‚½B
+â—D091205_CMuiCopied
+	CMuiCopiedã‚’è¿½åŠ 
+	CMup_deque,CMup_vectorã‚’ã€CaMup_vectorã®æ´¾ç”Ÿã‚¯ãƒ©ã‚¹ã‹ã‚‰è§£é™¤ã—ã¾ã—ãŸã€‚
 
-D091205_CInNameIndexContainer
-	CInNameIndexContainer::insert()‚ğ‚‘¬‰»
-	LogMsg‚ÌLOGMSGARG‚ğ”p~B
+â—D091205_CInNameIndexContainer
+	CInNameIndexContainer::insert()ã‚’é«˜é€ŸåŒ–
+	LogMsgã®LOGMSGARGã‚’å»ƒæ­¢ã€‚
 
-D120901_Before_Namespace
-	OuLib\Str ‘¼‚É–¼‘O‹óŠÔ‚ğ“K—p‚·‚é‘O
+â—D120901_Before_Namespace
+	OuLibÂ¥Str ä»–ã«åå‰ç©ºé–“ã‚’é©ç”¨ã™ã‚‹å‰
 
-D120921_Namespace
-	OuLib\Str ‘¼‚É–¼‘O‹óŠÔ‚ğ“K—p
+â—D120921_Namespace
+	OuLibÂ¥Str ä»–ã«åå‰ç©ºé–“ã‚’é©ç”¨
 	
-D120930_PreCompiledHeader
-	OuDia\trunk\libs\OuLib Rev.91` ‚Ì•ÏX‚ğAOuLib\trunk ‚É“K—p
-	ƒ‰ƒCƒuƒ‰ƒŠƒRƒ“ƒpƒCƒ‹‚ÌAƒvƒŠƒRƒ“ƒpƒCƒ‹ƒwƒbƒ_g—p‚ğŠg‘å
+â—D120930_PreCompiledHeader
+	OuDiaÂ¥trunkÂ¥libsÂ¥OuLib Rev.91ã€œ ã®å¤‰æ›´ã‚’ã€OuLibÂ¥trunk ã«é©ç”¨
+	ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã®ã€ãƒ—ãƒªã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ãƒ˜ãƒƒãƒ€ä½¿ç”¨ã‚’æ‹¡å¤§
 
-D140202_CaMuSelect
-	CaMuSelect‚ğ’Ç‰Á‚µ‚Ü‚µ‚½B
-	CaMuSelectTest ‚ªƒpƒX‚µ‚Ü‚µ‚½B
-	OuLib\Mu\test“à‚ÌƒeƒXƒg‚ÉA–¼‘O‹óŠÔ OuLib::NsMu::NsMuTest ‚ğ’Ç‰Á
+â—D140202_CaMuSelect
+	CaMuSelectã‚’è¿½åŠ ã—ã¾ã—ãŸã€‚
+	CaMuSelectTest ãŒãƒ‘ã‚¹ã—ã¾ã—ãŸã€‚
+	OuLibÂ¥MuÂ¥testå†…ã®ãƒ†ã‚¹ãƒˆã«ã€åå‰ç©ºé–“ OuLib::NsMu::NsMuTest ã‚’è¿½åŠ 
 
-D160605_BEFORE_OuLib_REBUILD
-	  ì‹Æ‘Oƒ^ƒO	
-	@Cont,OuDowncast,OuTRY‚ğƒŠƒ|ƒWƒgƒŠ‚©‚çíœ
-	@ƒ‰ƒCƒuƒ‰ƒŠƒrƒ‹ƒhƒvƒƒWƒFƒNƒg‚ğíœ
+â—D160605_BEFORE_OuLib_REBUILD
+	  ä½œæ¥­å‰ã‚¿ã‚°	
+	ã€€Cont,OuDowncast,OuTRYã‚’ãƒªãƒã‚¸ãƒˆãƒªã‹ã‚‰å‰Šé™¤
+	ã€€ãƒ©ã‚¤ãƒ–ãƒ©ãƒªãƒ“ãƒ«ãƒ‰ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã‚’å‰Šé™¤
 
-D160817_OuLib_NsMu_CMuiCopiedParent
-	¡develop\libs\cpp\OuLib\job\NsMu\160807_NsMu‚ÉeqŠÖŒW“±“ü
+â—D160817_OuLib_NsMu_CMuiCopiedParent
+	â– developÂ¥libsÂ¥cppÂ¥OuLibÂ¥jobÂ¥NsMuÂ¥160807_NsMuã«è¦ªå­é–¢ä¿‚å°å…¥
 
-D160819_OuLib_NsMu_CConvTable
-	develop\libs\cpp\OuLib\job\NsMu\CConvTable ‚ğ’Ç‰Á
+â—D160819_OuLib_NsMu_CConvTable
+	developÂ¥libsÂ¥cppÂ¥OuLibÂ¥jobÂ¥NsMuÂ¥CConvTable ã‚’è¿½åŠ 
 
 
-ƒ2„branch
-Branch_OuDia
-	Libs‚É•t—^‚³‚ê‚½AOuDiaƒrƒ‹ƒh—pƒ^ƒO
+ï¼œ2ï¼branch
+â—Branch_OuDia
+	Libsã«ä»˜ä¸ã•ã‚ŒãŸã€OuDiaãƒ“ãƒ«ãƒ‰ç”¨ã‚¿ã‚°
 	

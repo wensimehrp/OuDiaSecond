@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,40 +35,40 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
-// DiagramEdit.h : DIAGRAMEDIT �A�v���P�[�V�����̃��C�� �w�b�_�[ �t�@�C��
+// DiagramEdit.h : DIAGRAMEDIT アプリケーションのメイン ヘッダー ファイル
 //
 /** @file */
 
@@ -83,38 +83,38 @@ Copyright (C) 2006-2017 take-okm
 	#error include 'stdafx.h' before including this file for PCH
 #endif
 
-#include "resource.h"       // ���C�� �V���{��
+#include "resource.h"       // メイン シンボル
 
 #include "CMainFrame.h"
 #include "CDiagramEditDoc.h"
-#include "Print\CdPrintPageProp.h"
-#include "ConvJikokuhyouCsv\CconvJikokuhyouCsv.h"
-#include "ConvJikokuhyouCsv\CconvJikokuhyouCustomizeCsv.h"
-#include "ViewOperationTable\CconvOperationTableCsv.h"
-#include "ViewEki\CEkiDoc.h"
-#include "ViewEki\CEkiView.h"
-#include "ViewRessyasyubetsu\CRessyasyubetsuDoc.h"
-#include "ViewJikokuhyou\CJikokuhyouDoc.h"
-#include "ViewJikokuhyou\CJikokuhyouView.h"
-#include "ViewJikokuhyou\WndJikokuhyou\CWndJikokuhyou.h"
-#include "ViewDiagram\CDedDiagramDoc.h"
-#include "ViewDiagram\CWndDiagram.h"
-#include "ViewComment\CDedCommentDoc.h"
-#include "ViewOperationTable\COperationTableDoc.h"
-#include "ViewOperationTable\CWndDcdGridOperationTable.h"
-#include "ViewAllOperationTable\CAllOperationTableDoc.h"
-#include "ViewAllOperationTable\CWndDcdGridAllOperationTable.h"
-#include "ViewAllOperationTable2\CDedAllOperationTable2Doc.h"
-#include "ViewAllOperationTable2\CWndAllOperationTable2.h"
-#include "ViewEkiJikokuhyou\CEkiJikokuhyouView.h"
-#include "ViewEkiJikokuhyou\CEkiJikokuhyouDoc.h"
-#include "ViewEkiJikokuhyou\CWndDcdGridEkiJikokuhyou.h"
-#include "ViewEkiJikokuhyou\CEkiJikokuhyouListView.h"
-#include "ViewEkiJikokuhyou\CEkiJikokuhyouListDoc.h"
-#include "ViewEkiJikokuhyou\CWndDcdGridEkiJikokuhyouList.h"
-#include "ViewInOutLinkCodeList\CInOutLinkCodeListDoc.h"
+#include "Print¥CdPrintPageProp.h"
+#include "ConvJikokuhyouCsv¥CconvJikokuhyouCsv.h"
+#include "ConvJikokuhyouCsv¥CconvJikokuhyouCustomizeCsv.h"
+#include "ViewOperationTable¥CconvOperationTableCsv.h"
+#include "ViewEki¥CEkiDoc.h"
+#include "ViewEki¥CEkiView.h"
+#include "ViewRessyasyubetsu¥CRessyasyubetsuDoc.h"
+#include "ViewJikokuhyou¥CJikokuhyouDoc.h"
+#include "ViewJikokuhyou¥CJikokuhyouView.h"
+#include "ViewJikokuhyou¥WndJikokuhyou¥CWndJikokuhyou.h"
+#include "ViewDiagram¥CDedDiagramDoc.h"
+#include "ViewDiagram¥CWndDiagram.h"
+#include "ViewComment¥CDedCommentDoc.h"
+#include "ViewOperationTable¥COperationTableDoc.h"
+#include "ViewOperationTable¥CWndDcdGridOperationTable.h"
+#include "ViewAllOperationTable¥CAllOperationTableDoc.h"
+#include "ViewAllOperationTable¥CWndDcdGridAllOperationTable.h"
+#include "ViewAllOperationTable2¥CDedAllOperationTable2Doc.h"
+#include "ViewAllOperationTable2¥CWndAllOperationTable2.h"
+#include "ViewEkiJikokuhyou¥CEkiJikokuhyouView.h"
+#include "ViewEkiJikokuhyou¥CEkiJikokuhyouDoc.h"
+#include "ViewEkiJikokuhyou¥CWndDcdGridEkiJikokuhyou.h"
+#include "ViewEkiJikokuhyou¥CEkiJikokuhyouListView.h"
+#include "ViewEkiJikokuhyou¥CEkiJikokuhyouListDoc.h"
+#include "ViewEkiJikokuhyou¥CWndDcdGridEkiJikokuhyouList.h"
+#include "ViewInOutLinkCodeList¥CInOutLinkCodeListDoc.h"
 #include "ViewInOutLinkCodeList/CWndDcdGridInOutLinkCodeList.h"
-#include "ViewCrossingCheck\CCrossingCheckDoc.h"
+#include "ViewCrossingCheck¥CCrossingCheckDoc.h"
 #include "ViewCrossingCheck/CWndDcdGridCrossingCheck.h"
 
 using namespace Print;
@@ -132,115 +132,115 @@ using namespace ViewCrossingCheck;
 using namespace ConvJikokuhyouCsv;
 /////////////////////////////////////////////////////////////////////////////
 // CDiagramEditApp:
-// ���̃N���X�̓���̒�`�Ɋւ��Ă� DiagramEdit.cpp �t�@�C�����Q�Ƃ��Ă��������B
+// このクラスの動作の定義に関しては DiagramEdit.cpp ファイルを参照してください。
 //
 /**
- @brief DiagramEdit �̃A�v���P�[�V�����N���X�ł��B
-	CWinApp �̔h���N���X�ƂȂ�܂��B
+ @brief DiagramEdit のアプリケーションクラスです。
+	CWinApp の派生クラスとなります。
 
-	���[�gDoc/View�E�e��T�uDoc/View �ւ̃A�N�Z�X�̎�i��񋟂��܂��B
+	ルートDoc/View・各種サブDoc/View へのアクセスの手段を提供します。
  */
 class CDiagramEditApp : public CHidemdiApp
 {
 	// ********************************
-	///@name	�W��
+	///@name	集約
 	// ********************************
 	///@{
 	/**
-		�w�w�x�T�u DocView �ւ̃|�C���^�ł��B
-		InitInstance() �Ő��������I�u�W�F�N�g���w���܂��B
+		『駅』サブ DocView へのポインタです。
+		InitInstance() で生成したオブジェクトを指します。
 	 */
 	CHidemdiSubDoctmpl* m_pdoctmplEki ;
 	/**
-		�w��Ԏ�ʁx�T�u DocView �ւ̃|�C���^�ł��B
-		InitInstance() �Ő��������I�u�W�F�N�g���w���܂��B
+		『列車種別』サブ DocView へのポインタです。
+		InitInstance() で生成したオブジェクトを指します。
 	 */
 	CHidemdiSubDoctmpl* m_pdoctmplResssyasyubetsu ;
 
 	/**
-		�w�����\�x�T�u DocView �ւ̃|�C���^�ł��B
-		InitInstance() �Ő��������I�u�W�F�N�g���w���܂�
+		『時刻表』サブ DocView へのポインタです。
+		InitInstance() で生成したオブジェクトを指します
 	 */
 	CHidemdiSubDoctmpl* m_pdoctmplJikokuhyou ;
 
 	/**
-		�w�_�C���O�����x�T�u DocView �ւ̃|�C���^�ł��B
-		InitInstance() �Ő��������I�u�W�F�N�g���w���܂�
+		『ダイヤグラム』サブ DocView へのポインタです。
+		InitInstance() で生成したオブジェクトを指します
 	 */
 	CHidemdiSubDoctmpl* m_pdoctmplDiagram ;
 
 	/**
-		�w�R�����g�x�T�u DocView �ւ̃|�C���^�ł��B
-		InitInstance() �Ő��������I�u�W�F�N�g���w���܂�
+		『コメント』サブ DocView へのポインタです。
+		InitInstance() で生成したオブジェクトを指します
 	 */
 	CHidemdiSubDoctmpl* m_pdoctmplComment ;
 	
 	/**
-	�w�^�p�\�x�T�u DocView �ւ̃|�C���^�ł��B
-	InitInstance() �Ő��������I�u�W�F�N�g���w���܂�
+	『運用表』サブ DocView へのポインタです。
+	InitInstance() で生成したオブジェクトを指します
 	*/
 	CHidemdiSubDoctmpl* m_pdoctmplOperationTable;
 
 	/**
-	�w�^�p�ꗗ�x�T�u DocView �ւ̃|�C���^�ł��B
-	InitInstance() �Ő��������I�u�W�F�N�g���w���܂�
+	『運用一覧』サブ DocView へのポインタです。
+	InitInstance() で生成したオブジェクトを指します
 	*/
 	CHidemdiSubDoctmpl* m_pdoctmplAllOperationTable;
 
 	/**
-	�w�^�p�ꗗ�x�T�u DocView �ւ̃|�C���^�ł��B
-	InitInstance() �Ő��������I�u�W�F�N�g���w���܂�
+	『運用一覧』サブ DocView へのポインタです。
+	InitInstance() で生成したオブジェクトを指します
 	*/
 	CHidemdiSubDoctmpl* m_pdoctmplAllOperationTable2;
 
 	/**
-		�w�w�����\�x�T�u DocView �ւ̃|�C���^�ł��B
-		InitInstance() �Ő��������I�u�W�F�N�g���w���܂�
+		『駅時刻表』サブ DocView へのポインタです。
+		InitInstance() で生成したオブジェクトを指します
 	 */
 	CHidemdiSubDoctmpl* m_pdoctmplEkiJikokuhyou;
 
 	/**
-		�w�w�����\�ꗗ�x�T�u DocView �ւ̃|�C���^�ł��B
-		InitInstance() �Ő��������I�u�W�F�N�g���w���܂�
+		『駅時刻表一覧』サブ DocView へのポインタです。
+		InitInstance() で生成したオブジェクトを指します
 	 */
 	CHidemdiSubDoctmpl* m_pdoctmplEkiJikokuhyouList;
 
 	/**
-		�w���o��A�g�R�[�h�ꗗ�x�T�u DocView �ւ̃|�C���^�ł��B
-		InitInstance() �Ő��������I�u�W�F�N�g���w���܂�
+		『入出区連携コード一覧』サブ DocView へのポインタです。
+		InitInstance() で生成したオブジェクトを指します
 	 */
 	CHidemdiSubDoctmpl* m_pdoctmplInOutLinkCodeList;
 
 	/**
-		�w�����x��`�F�b�N�x�T�u DocView �ւ̃|�C���^�ł��B
-		InitInstance() �Ő��������I�u�W�F�N�g���w���܂�
+		『交差支障チェック』サブ DocView へのポインタです。
+		InitInstance() で生成したオブジェクトを指します
 	 */
 	CHidemdiSubDoctmpl* m_pdoctmplCrossingCheck;
 
 	///@}
 private:
 	// ********************************
-	///@name ����
+	///@name 属性
 	// ********************************
 	///@{
 	/**
-		  �P���f�[�^�N���X�ł��B
-		  ����y�[�W�Ɋւ���v���p�e�B��ێ����܂��B
+		  単純データクラスです。
+		  印刷ページに関するプロパティを保持します。
 	 */
 	CdPrintPageProp	m_CdPrintPageProp ;
 	
 	///@}
 private:
 	// ================================
-	//	�����֐�
+	//	下請関数
 	// ================================
 	/**
-		�o�[�W�������\�[�X����A�o�[�W�����ԍ����擾���܂��B
+		バージョンリソースから、バージョン番号を取得します。
 	@param pstrFileVersion [out]
-		���[�g�u���b�N�̃o�[�W�����ԍ����擾���܂��B
-		(��F"0.05.03" ) 
+		ルートブロックのバージョン番号を取得します。
+		(例："0.05.03" ) 
 	@param pstrLegalCopyright [out]
-		lang-codepage="041104b0"�� "LegalCopyright" ���擾���܂��B
+		lang-codepage="041104b0"の "LegalCopyright" を取得します。
 	*/
 	static void readVersionResource( 
 		tstring* pstrFileVersion , 
@@ -248,7 +248,7 @@ private:
 
  public:
 	// ********************************
-	///@name CDiagramEditApp-����
+	///@name CDiagramEditApp-属性
 	// ********************************
 	///@{
 	CdPrintPageProp	getCdPrintPageProp(){
@@ -257,64 +257,64 @@ private:
 	///@}
 
 	// ********************************
-	///@name CDiagramEditApp-����
+	///@name CDiagramEditApp-操作
 	// ********************************
 	///@{
 	/**
 	 @return
-		���C���t���[���E�C���h�E�I�u�W�F�N�g�ւ�
-		�|�C���^��Ԃ��܂��B
+		メインフレームウインドウオブジェクトへの
+		ポインタを返します。
 	 */
 	CMainFrame*	getCMainFrame() ;
 
 	/**
 	 @return
-		�w�H���x�r���[�i�����y�C���j��Ԃ��܂��B
+		『路線』ビュー（左側ペイン）を返します。
 	 */
 	CDlgRosenView*	getCDlgRosenView() ;
 	
 	/**
-		�w�w�x�h�L�������g�ƃr���[���J���A�ҏW�\�ɂ��܂��B
+		『駅』ドキュメントとビューを開き、編集可能にします。
 	@param ppEkiView [out]
-		���̊֐��͂��̃|�C���^�ɁACEkiView �̃A�h���X���������݂܂��B
-		�r���[�������J���Ă���ꍇ�́A�ŏ��̃r���[���������݂܂��B
-		�G���[�̏ꍇ�́ANULL���������݂܂��B
-		�s�v�̏ꍇ�́ANULL���w�肵�Ă��������B
+		この関数はこのポインタに、CEkiView のアドレスを書き込みます。
+		ビューが複数開いている場合は、最初のビューを書き込みます。
+		エラーの場合は、NULLを書き込みます。
+		不要の場合は、NULLを指定してください。
 	@return
-		����������A�w�T�u�h�L�������g�x�I�u�W�F�N�g��Ԃ��܂��B
-		�G���[�Ȃ�NULL�ł��B
+		成功したら、『サブドキュメント』オブジェクトを返します。
+		エラーならNULLです。
 	 */
 	CEkiDoc* openCEkiDoc( CEkiView** ppEkiView = NULL ) ;
 	
 	/**
-		�w��Ԏ�ʁx�h�L�������g�ƃr���[���J���A�ҏW�\�ɂ��܂��B
+		『列車種別』ドキュメントとビューを開き、編集可能にします。
 	 @return
-		����������A�w�T�u�h�L�������g�x�I�u�W�F�N�g��Ԃ��܂��B
-		�G���[�Ȃ�NULL�ł��B
+		成功したら、『サブドキュメント』オブジェクトを返します。
+		エラーならNULLです。
 	 */
 	CRessyasyubetsuDoc* openCRessyasyubetsuDoc() ;
 
 	/**
-		�w�����\�x�h�L�������g�ƃr���[���J���A�ҏW�\�ɂ��܂��B
+		『時刻表』ドキュメントとビューを開き、編集可能にします。
 	 @param pCentDedDia [in]
-		�ҏW�ΏۂƂȂ�_�C���I�u�W�F�N�g��
-		�w�肵�Ă��������B
+		編集対象となるダイヤオブジェクトを
+		指定してください。
 	 @param eRessyahoukou [in]
-		��ԕ������w�肵�Ă��������B
-		- ���� =Ressyahoukou_Kudari
-		- ��� =Ressyahoukou_Nobori 
+		列車方向を指定してください。
+		- 下り =Ressyahoukou_Kudari
+		- 上り =Ressyahoukou_Nobori 
 	 @param bCustomDisplayMode [in]
-		�J�X�^���\�����[�h���ۂ����w�肵�Ă��������B
-		- �ҏW false
-		- �J�X�^���\�� true
+		カスタム表示モードか否かを指定してください。
+		- 編集 false
+		- カスタム表示 true
 	@param ppJikokuhyouView [out]
-		���̊֐��͂��̃|�C���^�ɁACJikokuhyouView �̃A�h���X���������݂܂��B
-		�r���[�������J���Ă���ꍇ�́A�ŏ��̃r���[���������݂܂��B
-		�G���[�̏ꍇ�́ANULL���������݂܂��B
-		�s�v�̏ꍇ�́ANULL���w�肵�Ă��������B
+		この関数はこのポインタに、CJikokuhyouView のアドレスを書き込みます。
+		ビューが複数開いている場合は、最初のビューを書き込みます。
+		エラーの場合は、NULLを書き込みます。
+		不要の場合は、NULLを指定してください。
 	 @return
-		����������A�w�T�u�h�L�������g�x�I�u�W�F�N�g��Ԃ��܂��B
-		�G���[�Ȃ畉�̐��ł��B
+		成功したら、『サブドキュメント』オブジェクトを返します。
+		エラーなら負の数です。
 	 */
 	CJikokuhyouDoc* openCJikokuhyouDoc( 
 		const CentDedDia* pCentDedDia , 
@@ -323,73 +323,73 @@ private:
 		CJikokuhyouView** ppJikokuhyouView ) ;
 
 	/**
-		�w�_�C���O�����x�h�L�������g�ƃr���[���J���A�ҏW�\�ɂ��܂��B
+		『ダイヤグラム』ドキュメントとビューを開き、編集可能にします。
 	 @param pCentDedDia [in]
-		�ҏW�ΏۂƂȂ�_�C���I�u�W�F�N�g��
-		�w�肵�Ă��������B
+		編集対象となるダイヤオブジェクトを
+		指定してください。
 	 @return
-		����������A�w�T�u�h�L�������g�x�I�u�W�F�N�g��Ԃ��܂��B
-		�G���[�Ȃ畉�̐��ł��B
+		成功したら、『サブドキュメント』オブジェクトを返します。
+		エラーなら負の数です。
 	 */
 	CDedDiagramDoc* openCDedDiagramDoc( const CentDedDia* pCentDedDia ) ;
 
 	/**
-		�w�R�����g�x�h�L�������g�ƃr���[���J���A�ҏW�\�ɂ��܂��B
+		『コメント』ドキュメントとビューを開き、編集可能にします。
 	 @return
-		����������A�w�T�u�h�L�������g�x�I�u�W�F�N�g��Ԃ��܂��B
-		�G���[�Ȃ畉�̐��ł��B
+		成功したら、『サブドキュメント』オブジェクトを返します。
+		エラーなら負の数です。
 	 */
 	CDedCommentDoc* openCDedCommentDoc() ;
 	
 	/**
-	�w�^�p�\�x�h�L�������g�ƃr���[���J���A�ҏW�\�ɂ��܂��B
+	『運用表』ドキュメントとビューを開き、編集可能にします。
 	@return
-	����������A�w�T�u�h�L�������g�x�I�u�W�F�N�g��Ԃ��܂��B
-	�G���[�Ȃ畉�̐��ł��B
+	成功したら、『サブドキュメント』オブジェクトを返します。
+	エラーなら負の数です。
 	*/
 	COperationTableDoc* openCOperationTableDoc(
 		const CentDedDia* pCentDedDia,
 		const tstring strOperationNumber);
 
 	/**
-	�w�^�p�ꗗ�x�h�L�������g�ƃr���[���J���A�ҏW�\�ɂ��܂��B
+	『運用一覧』ドキュメントとビューを開き、編集可能にします。
 	@return
-	����������A�w�T�u�h�L�������g�x�I�u�W�F�N�g��Ԃ��܂��B
-	�G���[�Ȃ畉�̐��ł��B
+	成功したら、『サブドキュメント』オブジェクトを返します。
+	エラーなら負の数です。
 	*/
 	CAllOperationTableDoc* openCAllOperationTableDoc(
 		const CentDedDia* pCentDedDia);
 
 	/**
-		�w�_�C���O�����x�h�L�������g�ƃr���[���J���A�ҏW�\�ɂ��܂��B
+		『ダイヤグラム』ドキュメントとビューを開き、編集可能にします。
 	 @param pCentDedDia [in]
-		�ҏW�ΏۂƂȂ�_�C���I�u�W�F�N�g��
-		�w�肵�Ă��������B
+		編集対象となるダイヤオブジェクトを
+		指定してください。
 	 @return
-		����������A�w�T�u�h�L�������g�x�I�u�W�F�N�g��Ԃ��܂��B
-		�G���[�Ȃ畉�̐��ł��B
+		成功したら、『サブドキュメント』オブジェクトを返します。
+		エラーなら負の数です。
 	 */
 	CDedAllOperationTable2Doc* openCDedAllOperationTable2Doc(const CentDedDia* pCentDedDia);
 
 	/**
-		�w�w�����\�x�h�L�������g�ƃr���[���J���A�ҏW�\�ɂ��܂��B
+		『駅時刻表』ドキュメントとビューを開き、編集可能にします。
 	 @param pCentDedDia [in]
-		�ҏW�ΏۂƂȂ�_�C���I�u�W�F�N�g��
-		�w�肵�Ă��������B
+		編集対象となるダイヤオブジェクトを
+		指定してください。
 	 @param eRessyahoukou [in]
-		��ԕ������w�肵�Ă��������B
-		- ���� =Ressyahoukou_Kudari
-		- ��� =Ressyahoukou_Nobori
+		列車方向を指定してください。
+		- 下り =Ressyahoukou_Kudari
+		- 上り =Ressyahoukou_Nobori
 	 @param iEkiIndex [in]
-		�J���w�̉wIndex���w�肵�Ă�������
+		開く駅の駅Indexを指定してください
 	@param ppEkiJikokuhyouView [out]
-		���̊֐��͂��̃|�C���^�ɁACEkiJikokuhyouView �̃A�h���X���������݂܂��B
-		�r���[�������J���Ă���ꍇ�́A�ŏ��̃r���[���������݂܂��B
-		�G���[�̏ꍇ�́ANULL���������݂܂��B
-		�s�v�̏ꍇ�́ANULL���w�肵�Ă��������B
+		この関数はこのポインタに、CEkiJikokuhyouView のアドレスを書き込みます。
+		ビューが複数開いている場合は、最初のビューを書き込みます。
+		エラーの場合は、NULLを書き込みます。
+		不要の場合は、NULLを指定してください。
 	 @return
-		����������A�w�T�u�h�L�������g�x�I�u�W�F�N�g��Ԃ��܂��B
-		�G���[�Ȃ畉�̐��ł��B
+		成功したら、『サブドキュメント』オブジェクトを返します。
+		エラーなら負の数です。
 	 */
 	CEkiJikokuhyouDoc* openCEkiJikokuhyouDoc(
 		const CentDedDia* pCentDedDia,
@@ -398,35 +398,35 @@ private:
 		CEkiJikokuhyouView** ppEkiJikokuhyouView);
 
 	/**
-		�w�w�����\�ꗗ�x�h�L�������g�ƃr���[���J���A�ҏW�\�ɂ��܂��B
+		『駅時刻表一覧』ドキュメントとビューを開き、編集可能にします。
 	 @param pCentDedDia [in]
-		�ҏW�ΏۂƂȂ�_�C���I�u�W�F�N�g��
-		�w�肵�Ă��������B
+		編集対象となるダイヤオブジェクトを
+		指定してください。
 	@param ppEkiJikokuhyouView [out]
-		���̊֐��͂��̃|�C���^�ɁACEkiJikokuhyouView �̃A�h���X���������݂܂��B
-		�r���[�������J���Ă���ꍇ�́A�ŏ��̃r���[���������݂܂��B
-		�G���[�̏ꍇ�́ANULL���������݂܂��B
-		�s�v�̏ꍇ�́ANULL���w�肵�Ă��������B
+		この関数はこのポインタに、CEkiJikokuhyouView のアドレスを書き込みます。
+		ビューが複数開いている場合は、最初のビューを書き込みます。
+		エラーの場合は、NULLを書き込みます。
+		不要の場合は、NULLを指定してください。
 	 @return
-		����������A�w�T�u�h�L�������g�x�I�u�W�F�N�g��Ԃ��܂��B
-		�G���[�Ȃ畉�̐��ł��B
+		成功したら、『サブドキュメント』オブジェクトを返します。
+		エラーなら負の数です。
 	 */
 	CEkiJikokuhyouListDoc* openCEkiJikokuhyouListDoc(
 		const CentDedDia* pCentDedDia,
 		CEkiJikokuhyouListView** ppEkiJikokuhyouListView);
 	/**
-	�w���o��A�g�R�[�h�ꗗ�x�h�L�������g�ƃr���[���J���A�ҏW�\�ɂ��܂��B
+	『入出区連携コード一覧』ドキュメントとビューを開き、編集可能にします。
 	@return
-	����������A�w�T�u�h�L�������g�x�I�u�W�F�N�g��Ԃ��܂��B
-	�G���[�Ȃ畉�̐��ł��B
+	成功したら、『サブドキュメント』オブジェクトを返します。
+	エラーなら負の数です。
 	*/
 	CInOutLinkCodeListDoc* openCInOutLinkCodeListDoc(
 		const CentDedDia* pCentDedDia);
 	/**
-	�w���o��A�g�R�[�h�ꗗ�x�h�L�������g�ƃr���[���J���A�ҏW�\�ɂ��܂��B
+	『入出区連携コード一覧』ドキュメントとビューを開き、編集可能にします。
 	@return
-	����������A�w�T�u�h�L�������g�x�I�u�W�F�N�g��Ԃ��܂��B
-	�G���[�Ȃ畉�̐��ł��B
+	成功したら、『サブドキュメント』オブジェクトを返します。
+	エラーなら負の数です。
 	*/
 	CCrossingCheckDoc* openCCrossingCheckDoc(
 		const CentDedDia* pCentDedDia,
@@ -435,516 +435,516 @@ private:
 	//edit_by_d_mania
 	/**
 	@return
-		OuDiaSecond/OuDia �t�@�C���E"*.*" �̃t�B���^�������
-		�Ԃ��܂��B
-		���̕�����́A CFileDialog �̈����ɓn�����Ƃ��ł��܂��B
-		[�J��]�y��[�H���̑g�ݓ���]�ɗp���܂�
+		OuDiaSecond/OuDia ファイル・"*.*" のフィルタ文字列を
+		返します。
+		この文字列は、 CFileDialog の引数に渡すことができます。
+		[開く]及び[路線の組み入れ]に用います
 	*/
 	virtual CString getCFileDialogFilterOpen();
 
 	/**
 	@return
-		OuDiaSecond �t�@�C���E"*.*" �̃t�B���^�������
-		�Ԃ��܂��B
-		���̕�����́A CFileDialog �̈����ɓn�����Ƃ��ł��܂��B
-		[���O��t���ĕۑ�]�y��[�H���̐؂�o��]�ɗp���܂�
+		OuDiaSecond ファイル・"*.*" のフィルタ文字列を
+		返します。
+		この文字列は、 CFileDialog の引数に渡すことができます。
+		[名前を付けて保存]及び[路線の切り出し]に用います
 	*/
 	virtual CString getCFileDialogFilterSave();
 	
 
 	/**
 	 @return
-		CSV�t�@�C���E"*.*" �̃t�B���^�������
-		�Ԃ��܂��B
-		���̕�����́A CFileDialog �̈����ɓn�����Ƃ��ł��܂��B
+		CSVファイル・"*.*" のフィルタ文字列を
+		返します。
+		この文字列は、 CFileDialog の引数に渡すことができます。
 	 */
 	virtual CString getCFileDialogFilterCsv() ;
 
 	/**
 	@return
-		CconvJikokuhyouCsv �𐶐����܂��B
+		CconvJikokuhyouCsv を生成します。
 	*/
 	virtual CconvJikokuhyouCsv createCconvJikokuhyouCsv() ;
 
 	/**
 	@return
-		CconvJikokuhyouCustomizeCsv �𐶐����܂��B
+		CconvJikokuhyouCustomizeCsv を生成します。
 	*/
 	virtual CconvJikokuhyouCustomizeCsv createCconvJikokuhyouCustomizeCsv();
 
 	/**
 	@return
-	CconvOperationTableCsv �𐶐����܂��B
+	CconvOperationTableCsv を生成します。
 	*/
 	virtual CconvOperationTableCsv createCconvOperationTableCsv();
 
 	///@}
 	// ********************************
-	///@name CDiagramEditApp-�t�@�C����
+	///@name CDiagramEditApp-ファイル名
 	// ********************************
 	///@{
 	/**
-		�t�@�C���^�C�g��+�g���q �`���̃t�@�C��������A
-		�v���O�����f�B���N�g��(.exe�t�@�C���Ɠ����ꏊ�̃f�B���N�g��)��
-		�t�^�����t���p�X�����쐬���܂��B
+		ファイルタイトル+拡張子 形式のファイル名から、
+		プログラムディレクトリ(.exeファイルと同じ場所のディレクトリ)を
+		付与したフルパス名を作成します。
 	@param strFilename [in]
-		�t�@�C�������w�肵�Ă��������B(��:"sub.dll" )
+		ファイル名を指定してください。(例:"sub.dll" )
 	@return
-		�t���p�X����Ԃ��܂��B(��:"c:\program files\oudia\sub.dll" )
+		フルパス名を返します。(例:"c:¥program files¥oudia¥sub.dll" )
 
-		strFilename �ɋ󕶎�����w�肷��ƁA
-		�߂�l�̓v���O�����f�B���N�g���ɂȂ�܂�
-		(��:"c:\program files\oudia\" )�B
+		strFilename に空文字列を指定すると、
+		戻り値はプログラムディレクトリになります
+		(例:"c:¥program files¥oudia¥" )。
 	*/
 	CString makeProgramDirFilename( const CString& strFilename ) ;
 
 	/**
-		�t�@�C���^�C�g��+�g���q �`���̃t�@�C��������A
-		LOCAL_APPDATA �f�B���N�g������ \oudia �f�B���N�g����
-		�t�^�����t���p�X�����쐬���܂��B
+		ファイルタイトル+拡張子 形式のファイル名から、
+		LOCAL_APPDATA ディレクトリ内の ¥oudia ディレクトリを
+		付与したフルパス名を作成します。
 	@param strFilename [in]
-		�t�@�C�������w�肵�Ă��������B(��:"profile.ini" )
+		ファイル名を指定してください。(例:"profile.ini" )
 	@return
-		�t���p�X����Ԃ��܂��B
-		(��:"c:\documents and settings\username\local settings\application data\oudia\profile.ini" )
+		フルパス名を返します。
+		(例:"c:¥documents and settings¥username¥local settings¥application data¥oudia¥profile.ini" )
 
-		strFilename �ɋ󕶎�����w�肷��ƁA
-		�߂�l�̓v���O�����f�B���N�g���ɂȂ�܂�
-		(��:"c:\documents and settings\username\local settings\application data\getCDiagramEditAppia\" )�B
+		strFilename に空文字列を指定すると、
+		戻り値はプログラムディレクトリになります
+		(例:"c:¥documents and settings¥username¥local settings¥application data¥getCDiagramEditAppia¥" )。
 	*/
 	CString makeLocalAppdataFilename( const CString& strFilename ) ;
 
 	/**
-		�g�s�b�N������AHtmlHelp() API�̑�3�����Ɏw�肷�邽�߂́A
-		HTML Help URL ���쐬���܂��B
+		トピック名から、HtmlHelp() APIの第3引数に指定するための、
+		HTML Help URL を作成します。
 	@param strTopic [in]
-		�g�s�b�N�����w�肵�Ă��������B (��:"/Topic.htm" ) ;
+		トピック名を指定してください。 (例:"/Topic.htm" ) ;
 	@return
-		Html Help URL��Ԃ��܂��B
-		(��:"c:\program files\oudia\oudia.chm::/Topic.htm" )�B
+		Html Help URLを返します。
+		(例:"c:¥program files¥oudia¥oudia.chm::/Topic.htm" )。
 
-		strTopic�ɋ󕶎�����w�肷��ƁA.chm �t�@�C���̃t���p�X����Ԃ��܂��B
-		(��:"c:\program files\oudia\oudia.chm" )�B
+		strTopicに空文字列を指定すると、.chm ファイルのフルパス名を返します。
+		(例:"c:¥program files¥oudia¥oudia.chm" )。
 	*/
 	CString makeHtmlHelpUrl( const CString& strTopic ) ;
 
 	///@}
 	// ********************************
-	///@name CDiagramEditApp-.ini �t�@�C��
+	///@name CDiagramEditApp-.ini ファイル
 	// ********************************
 	///@{
 	/**
-	�w�_�C���O�����x�E�C���h�E CWndDiagram �́A
-	�\���ݒ�� PrivateProfile (.ini �t�@�C��) �ɕۑ����܂��B
+	『ダイヤグラム』ウインドウ CWndDiagram の、
+	表示設定を PrivateProfile (.ini ファイル) に保存します。
 
-	�ۑ��Ώۂ́A�Z�N�V����[AppProp]�́A�ȉ��̃G���g���ł��B
+	保存対象は、セクション[AppProp]の、以下のエントリです。
 
 	- "DiagramPosDgr" @n
-	 TargetPos�̍���ɕ`�悳���w�_�C���O�������W�x�B 
-	 �J���}��؂�ŁAX,Y���W���L�q���܂��B
+	 TargetPosの左上に描画される『ダイヤグラム座標』。 
+	 カンマ区切りで、X,Y座標を記述します。
 
 	- "DcdPerDgrX" @n
-	 �w�_�C���O�������W�x��1�ɑΉ�����A�wDcDraw���W(�_�����W)�x�̐�
+	 『ダイヤグラム座標』の1に対応する、『DcDraw座標(論理座標)』の数
 
 	- "DcdPerDgrY" @n
-	 �w�_�C���O�������W�x��1�ɑΉ�����A�wDcDraw���W(�_�����W)�x�̐�
+	 『ダイヤグラム座標』の1に対応する、『DcDraw座標(論理座標)』の数
 
 	- "DiagramVlineMode" @n
-		�c�r�̊Ԋu�̃��[�h�BCDcdDiagram::m_arVline[8] �̓Y�����ł��B
+		縦罫の間隔のモード。CDcdDiagram::m_arVline[8] の添え字です。
 
 	- "DiagramDisplayRessyabangou" @n 
-		 �_�C����ʗ�Ԕԍ��\��
-		- 1 ;	//	�_�C����ʂɗ�Ԕԍ���\������
-		- 0 ;	//	�_�C����ʂɗ�Ԕԍ���\�����Ȃ�
+		 ダイヤ画面列車番号表示
+		- 1 ;	//	ダイヤ画面に列車番号を表示する
+		- 0 ;	//	ダイヤ画面に列車番号を表示しない
 	
 	- "DiagramDisplayRessyamei" @n
-		 �_�C����ʗ�Ԗ��\��
-		- 1 ;	//	�_�C����ʂɗ�Ԗ���\������
-		- 0 ;	//	�_�C����ʂɗ�Ԗ���\�����Ȃ�
+		 ダイヤ画面列車名表示
+		- 1 ;	//	ダイヤ画面に列車名を表示する
+		- 0 ;	//	ダイヤ画面に列車名を表示しない
 
 	- "DiagramDisplayRessyasen" @n
-		��Ԑ���\�����邩�ۂ����w�肵�܂��B�J���}��؂�ŁA����,�����L�q���܂��B
-		- 1 ;	//	��Ԑ���\������
-		- 0 ;	//	��Ԑ���\�����Ȃ�
+		列車線を表示するか否かを指定します。カンマ区切りで、下り,上りを記述します。
+		- 1 ;	//	列車線を表示する
+		- 0 ;	//	列車線を表示しない
 
 	- "DiagramHideIppanekiEkimei" @n
-		��ʉw�̉w���\�����B���w��ł��B
-		- 1 ;	//	���ׂẲw����\�����܂��B(default)
-		- 0 ;	//	��ʉw�̉w����\�����܂���B
+		一般駅の駅名表示を隠す指定です。
+		- 1 ;	//	すべての駅名を表示します。(default)
+		- 0 ;	//	一般駅の駅名を表示しません。
 
 	- "DiagramStopMarkDraw" @n
-		��ԉw�\���̗L�����w�肵�܂��B
-		- 0: ��ԉw����=OFF�B��ԉw�������s���܂���B
-		- 1: ��ԉw����=ON�B�Z���Ԓ�Ԃ̉w�ɁA��ԉw�������L��(��)��`�悵�܂��B
+		停車駅表示の有無を指定します。
+		- 0: 停車駅明示=OFF。停車駅明示を行いません。
+		- 1: 停車駅明示=ON。短時間停車の駅に、停車駅を示す記号(○)を描画します。
 
 	- "DiagramKeepZoneDgrOnSize" @n 
-		�E�C���h�E�T�C�Y�ύX���̓���B
-		- false:�\���͈͂�ύX(OuDia Ver.1.00.04 ����)
-		- true: �\���͈͂�ύX���Ȃ�(OuDia Ver.1.00.04 �݊�)
+		ウインドウサイズ変更時の動作。
+		- false:表示範囲を変更(OuDia Ver.1.00.04 より後)
+		- true: 表示範囲を変更しない(OuDia Ver.1.00.04 互換)
 
 	@param pCWndDiagram [in]
-		�w�_�C���O�����x�E�C���h�E�I�u�W�F�N�g���w�肵�Ă��������B
-		���̊֐��́A���̃I�u�W�F�N�g�̑������A�t�@�C���ɕۑ����܂��B
+		『ダイヤグラム』ウインドウオブジェクトを指定してください。
+		この関数は、このオブジェクトの属性を、ファイルに保存します。
 	 @return	
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
+		成功したら 0 以上、エラーなら負の数です。
 	*/
 	virtual int writeCWndDiagramViewProp( const CWndDiagram* pCWndDiagram ) ;
 
 	/**
-	�w�_�C���O�����x�E�C���h�E CWndDiagram �́A
-	�\���ݒ�� PrivateProfile (.ini �t�@�C��) ����
-	�ǂݍ��݂܂��B
+	『ダイヤグラム』ウインドウ CWndDiagram の、
+	表示設定を PrivateProfile (.ini ファイル) から
+	読み込みます。
 	
 	 @param pCWndDiagram [in]
-		�w�_�C���O�����x�E�C���h�E�I�u�W�F�N�g���w�肵�Ă��������B
-		���̊֐��́A���̃I�u�W�F�N�g�̑������A�t�@�C���ɕۑ����܂��B
+		『ダイヤグラム』ウインドウオブジェクトを指定してください。
+		この関数は、このオブジェクトの属性を、ファイルに保存します。
 	 @return	
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	-1 ;	//	DiagramZoneDgr ���w�肳��Ă��܂���B
-		-	-2 ;	//	DiagramVlineMode ���w�肳��Ă��܂���B
-		-	-3 ;	//	DisplayRessyabangou ���w�肳��Ă��܂���B
-		-	-4 ;	//	DisplayRessyamei ���w�肳��Ă��܂���B
-		-	-5 ;	//	DisplayRessyasen ���w�肳��Ă��܂���B
-		-	-6 ;	//	HideIppanekiEkimei ���w�肳��Ă��܂���B
+		成功したら 0 以上、エラーなら負の数です。
+		-	-1 ;	//	DiagramZoneDgr が指定されていません。
+		-	-2 ;	//	DiagramVlineMode が指定されていません。
+		-	-3 ;	//	DisplayRessyabangou が指定されていません。
+		-	-4 ;	//	DisplayRessyamei が指定されていません。
+		-	-5 ;	//	DisplayRessyasen が指定されていません。
+		-	-6 ;	//	HideIppanekiEkimei が指定されていません。
 	*/
 	virtual int readCWndDiagramViewProp( CWndDiagram* pCWndDiagram ) ;
 
 
 	/**
-	�w�_�C���O�����x�E�C���h�E CWndJikokuhyou �́A
-	�\���ݒ�� PrivateProfile (.ini �t�@�C��) �ɕۑ����܂��B
+	『ダイヤグラム』ウインドウ CWndJikokuhyou の、
+	表示設定を PrivateProfile (.ini ファイル) に保存します。
 
-	�ۑ��Ώۂ́A�Z�N�V����[AppProp]�́A�ȉ��̃G���g���ł��B
+	保存対象は、セクション[AppProp]の、以下のエントリです。
 
 	- "Jikokuhyou_DisplayTsuukaEkiJikoku" @n
-		�ʉ߉w�̉w�����\���̗L���̎w��
-		- 1 ; �ʉ߉w�̉w������\�����܂��B(default)
-		- 0 ; �ʉ߉w�̉w������\�������ɁA�ʉ߃}�[�N "�" ��\�����܂��B
+		通過駅の駅時刻表示の有無の指定
+		- 1 ; 通過駅の駅時刻を表示します。(default)
+		- 0 ; 通過駅の駅時刻を表示せずに、通過マーク "ﾚ" を表示します。
 	- "Jikokuhyou_DisplayAllEkiJikoku" @n
-		�S�w�̉w������\�����邩�ۂ��̎w��
+		全駅の駅時刻を表示するか否かの指定
 
-		- 1 ; �w�̉w�����`��(CentDedEki::m_eEkijikokukeisiki )�Ƃ͖��֌W�ɁA
-			�����\�r���[�ɑS�w�̒���������\�����܂��B
-		- 0 ; �S�w�\�����s���܂���B
+		- 1 ; 駅の駅時刻形式(CentDedEki::m_eEkijikokukeisiki )とは無関係に、
+			時刻表ビューに全駅の着発時刻を表示します。
+		- 0 ; 全駅表示を行いません。
 	- "Jikokuhyou_EkijikokuSort" @n
-		�����\�r���[�̉w�����ł́u���בւ��v�̃��[�h�B 
-		����́A�w���ł̃\�[�g�ł��B
-		- 0 : �w���ł̃\�[�g
-		- 1 : ��p�\�[�g
+		時刻表ビューの駅時刻での「並べ替え」のモード。 
+		既定は、駅扱でのソートです。
+		- 0 : 駅扱でのソート
+		- 1 : 乗継ソート
 	- "Jikokuhyou_ModifyEkiJikoku" @n
-		�J�グ�E�J�艺���̗L���E�����������܂��B
-		- 1: �L��
-		- 0: ����
+		繰上げ・繰り下げの有効・無効を示します。
+		- 1: 有効
+		- 0: 無効
 		//add_by_d_mania
 	- "Jikokuhyou_DisplaySecondEkiJikoku" @n
-		�b�P�ʎ����\���̗L���̎w��
-		- 1 ; ������b�P�ʂ܂ŕ\�����܂��B
-		- 0 ; �����𕪒P�ʂŕ\�����܂��B(default)
+		秒単位時刻表示の有無の指定
+		- 1 ; 時刻を秒単位まで表示します。
+		- 0 ; 時刻を分単位で表示します。(default)
 		//add_by_d_mania
 	- "Jikokuhyou_StandardOperationTimeFunction" @n
-		��^�]�����@�\�̗L���̎w��
-		- 1 ; ��^�]�����@�\��L���ɂ��܂��B
-		- 0 ; ��^�]�����@�\�𖳌��ɂ��܂��B(default)
+		基準運転時分機能の有無の指定
+		- 1 ; 基準運転時分機能を有効にします。
+		- 0 ; 基準運転時分機能を無効にします。(default)
 	- "Jikokuhyou_DisplayAllTrack" @n
-		�S�w�̗�ԔԐ���\�����邩�ۂ��̎w��
+		全駅の列車番線を表示するか否かの指定
 
-		- 1 ; �w�̔Ԑ��\���`��(CentDedEki:: )�Ƃ͖��֌W�ɁA
-		�����\�r���[�ɑS�w�̒����Ԑ���\�����܂��B
-		- 0 ; �S�w�\�����s���܂���B
+		- 1 ; 駅の番線表示形式(CentDedEki:: )とは無関係に、
+		時刻表ビューに全駅の着発番線を表示します。
+		- 0 ; 全駅表示を行いません。
 	- "Jikokuhyou_DisplayShihatsuShuchakuEkimei" @n
-		�n�I���w���̗L���̎w��
-		- 1 ;�����\�r���[�Ɏn�I���w����\�����܂��B
-		- 0 ; �n�I���w���\�����s���܂���B(default)
+		始終着駅名の有無の指定
+		- 1 ;時刻表ビューに始終着駅名を表示します。
+		- 0 ; 始終着駅名表示を行いません。(default)
 	- "Jikokuhyou_DisplayColonEkiJikoku" @n
-		�R�����t�������\���̗L���̎w��
-		- 1 ; �������R�����t���ŕ\�����܂��B
-		- 0 ; �������R���������ŕ\�����܂��B(default)
+		コロン付き時刻表示の有無の指定
+		- 1 ; 時刻をコロン付きで表示します。
+		- 0 ; 時刻をコロン無しで表示します。(default)
 	
 	@param pCWndJikokuhyou [in]
-		�w�����\�x�E�C���h�E�I�u�W�F�N�g���w�肵�Ă��������B
-		���̊֐��́A���̃I�u�W�F�N�g�̑������A�t�@�C���ɕۑ����܂��B
+		『時刻表』ウインドウオブジェクトを指定してください。
+		この関数は、このオブジェクトの属性を、ファイルに保存します。
 	 @return	
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
+		成功したら 0 以上、エラーなら負の数です。
 	*/
 	virtual int writeCWndJikokuhyouViewProp( 
 		const CWndJikokuhyou* pCWndJikokuhyou ) ;
 
 	/**
-	�w�_�C���O�����x�E�C���h�E CWndJikokuhyou �́A
-	�\���ݒ�� PrivateProfile (.ini �t�@�C��) ����
-	�ǂݍ��݂܂��B
+	『ダイヤグラム』ウインドウ CWndJikokuhyou の、
+	表示設定を PrivateProfile (.ini ファイル) から
+	読み込みます。
 	
 	 @param pCWndJikokuhyou [in]
-		�w�_�C���O�����x�E�C���h�E�I�u�W�F�N�g���w�肵�Ă��������B
-		���̊֐��́A���̃I�u�W�F�N�g�̑������A�t�@�C���ɕۑ����܂��B
+		『ダイヤグラム』ウインドウオブジェクトを指定してください。
+		この関数は、このオブジェクトの属性を、ファイルに保存します。
 	 @return	
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
+		成功したら 0 以上、エラーなら負の数です。
 	*/
 	virtual int readCWndJikokuhyouViewProp( 
 		CWndJikokuhyou* pCWndJikokuhyou ) ;
 	/**
-	�w�^�p�\�x�E�C���h�E CWndDcdGridOperationTable �́A
-	�\���ݒ�� PrivateProfile (.ini �t�@�C��) �ɕۑ����܂��B
+	『運用表』ウインドウ CWndDcdGridOperationTable の、
+	表示設定を PrivateProfile (.ini ファイル) に保存します。
 
-	�ۑ��Ώۂ́A�Z�N�V����[AppProp]�́A�ȉ��̃G���g���ł��B
+	保存対象は、セクション[AppProp]の、以下のエントリです。
 
 	- "Jikokuhyou_DisplaySecondEkiJikoku" @n
-	�b�P�ʎ����\���̗L���̎w��
-	- 1 ; ������b�P�ʂ܂ŕ\�����܂��B
-	- 0 ; �����𕪒P�ʂŕ\�����܂��B(default)
+	秒単位時刻表示の有無の指定
+	- 1 ; 時刻を秒単位まで表示します。
+	- 0 ; 時刻を分単位で表示します。(default)
 
 	- "Jikokuhyou_DisplayColonEkiJikoku" @n
-	�R�����t�������\���̗L���̎w��
-	- 1 ; �������R�����t���ŕ\�����܂��B
-	- 0 ; �������R���������ŕ\�����܂��B(default)
+	コロン付き時刻表示の有無の指定
+	- 1 ; 時刻をコロン付きで表示します。
+	- 0 ; 時刻をコロン無しで表示します。(default)
 
 	@param pCWndJikokuhyou [in]
-	�w�^�p�\�x�E�C���h�E�I�u�W�F�N�g���w�肵�Ă��������B
-	���̊֐��́A���̃I�u�W�F�N�g�̑������A�t�@�C���ɕۑ����܂��B
+	『運用表』ウインドウオブジェクトを指定してください。
+	この関数は、このオブジェクトの属性を、ファイルに保存します。
 	@return
-	���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
+	成功したら 0 以上、エラーなら負の数です。
 	*/
 	virtual int writeCWndDcdGridOperationTableViewProp(
 		const CWndDcdGridOperationTable* pCWndDcdGridOperationTable);
 
 	/**
-	�w�^�p�\�x�E�C���h�E CWndDcdGridOperationTable �́A
-	�\���ݒ�� PrivateProfile (.ini �t�@�C��) ����
-	�ǂݍ��݂܂��B
+	『運用表』ウインドウ CWndDcdGridOperationTable の、
+	表示設定を PrivateProfile (.ini ファイル) から
+	読み込みます。
 
 	@param pCWndDcdGridOperationTable [in]
-	�w�^�p�\�x�E�C���h�E�I�u�W�F�N�g���w�肵�Ă��������B
-	���̊֐��́A���̃I�u�W�F�N�g�̑������A�t�@�C���ɕۑ����܂��B
+	『運用表』ウインドウオブジェクトを指定してください。
+	この関数は、このオブジェクトの属性を、ファイルに保存します。
 	@return
-	���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
+	成功したら 0 以上、エラーなら負の数です。
 	*/
 	virtual int readCWndDcdGridOperationTableViewProp(
 		CWndDcdGridOperationTable* pCWndDcdGridOperationTable);
 	/**
-	�w�^�p�ꗗ�x�E�C���h�E CWndDcdGridAllOperationTable �́A
-	�\���ݒ�� PrivateProfile (.ini �t�@�C��) �ɕۑ����܂��B
+	『運用一覧』ウインドウ CWndDcdGridAllOperationTable の、
+	表示設定を PrivateProfile (.ini ファイル) に保存します。
 
-	�ۑ��Ώۂ́A�Z�N�V����[AppProp]�́A�ȉ��̃G���g���ł��B
+	保存対象は、セクション[AppProp]の、以下のエントリです。
 
 	- "Jikokuhyou_DisplaySecondEkiJikoku" @n
-	�b�P�ʎ����\���̗L���̎w��
-	- 1 ; ������b�P�ʂ܂ŕ\�����܂��B
-	- 0 ; �����𕪒P�ʂŕ\�����܂��B(default)
+	秒単位時刻表示の有無の指定
+	- 1 ; 時刻を秒単位まで表示します。
+	- 0 ; 時刻を分単位で表示します。(default)
 
 	- "Jikokuhyou_DisplayColonEkiJikoku" @n
-	�R�����t�������\���̗L���̎w��
-	- 1 ; �������R�����t���ŕ\�����܂��B
-	- 0 ; �������R���������ŕ\�����܂��B(default)
+	コロン付き時刻表示の有無の指定
+	- 1 ; 時刻をコロン付きで表示します。
+	- 0 ; 時刻をコロン無しで表示します。(default)
 
 	@param pCWndJikokuhyou [in]
-	�w�^�p�\�x�E�C���h�E�I�u�W�F�N�g���w�肵�Ă��������B
-	���̊֐��́A���̃I�u�W�F�N�g�̑������A�t�@�C���ɕۑ����܂��B
+	『運用表』ウインドウオブジェクトを指定してください。
+	この関数は、このオブジェクトの属性を、ファイルに保存します。
 	@return
-	���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
+	成功したら 0 以上、エラーなら負の数です。
 	*/
 	virtual int writeCWndDcdGridAllOperationTableViewProp(
 		const CWndDcdGridAllOperationTable* pCWndDcdGridAllOperationTable);
 
 	/**
-	�w�^�p�ꗗ�x�E�C���h�E CWndDcdGridAllOperationTable �́A
-	�\���ݒ�� PrivateProfile (.ini �t�@�C��) ����
-	�ǂݍ��݂܂��B
+	『運用一覧』ウインドウ CWndDcdGridAllOperationTable の、
+	表示設定を PrivateProfile (.ini ファイル) から
+	読み込みます。
 
 	@param pCWndDcdGridOperationTable [in]
-	�w�^�p�\�x�E�C���h�E�I�u�W�F�N�g���w�肵�Ă��������B
-	���̊֐��́A���̃I�u�W�F�N�g�̑������A�t�@�C���ɕۑ����܂��B
+	『運用表』ウインドウオブジェクトを指定してください。
+	この関数は、このオブジェクトの属性を、ファイルに保存します。
 	@return
-	���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
+	成功したら 0 以上、エラーなら負の数です。
 	*/
 	virtual int readCWndDcdGridAllOperationTableViewProp(
 		CWndDcdGridAllOperationTable* pCWndDcdGridAllOperationTable);
 
 	/**
-	�w�w�x�E�C���h�E CWndDcdGridEki �́A
-	�\���ݒ�� PrivateProfile (.ini �t�@�C��) �ɕۑ����܂��B
+	『駅』ウインドウ CWndDcdGridEki の、
+	表示設定を PrivateProfile (.ini ファイル) に保存します。
 
-	�ۑ��Ώۂ́A�Z�N�V����[AppProp]�́A�ȉ��̃G���g���ł��B
+	保存対象は、セクション[AppProp]の、以下のエントリです。
 
 	- "EkiProp_AdjustByEkijikokukeisiki" @n
-		- 1; �w�̃v���p�e�B���ύX���ꂽ�Ƃ��A
-			���ׂẴ_�C���E��Ԃ̉w�������A
-			�w�����`���ɐ��K�����܂��B
-		- 0; �w�̃v���p�e�B���ύX���ꂽ�Ƃ����A
-			��Ԃ̉w������ύX���܂���B
+		- 1; 駅のプロパティが変更されたとき、
+			すべてのダイヤ・列車の駅時刻を、
+			駅時刻形式に正規化します。
+		- 0; 駅のプロパティが変更されたときも、
+			列車の駅時刻を変更しません。
 
 	@param pCWndDcdGridEki [in]
-		�w�w�x�E�C���h�E�I�u�W�F�N�g���w�肵�Ă��������B
-		���̊֐��́A���̃I�u�W�F�N�g�̑������A�t�@�C���ɕۑ����܂��B
+		『駅』ウインドウオブジェクトを指定してください。
+		この関数は、このオブジェクトの属性を、ファイルに保存します。
 	 @return	
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
+		成功したら 0 以上、エラーなら負の数です。
 	*/
 	virtual int writeCWndDcdGridEkiProp( 
 		const CWndDcdGridEki* pCWndDcdGridEki ) ;
 
 	/**
-		�w�w�x�E�C���h�E CWndDcdGridEki �́A
-		�\���ݒ�� PrivateProfile (.ini �t�@�C��) ����
-		�ǂݍ��݂܂��B
+		『駅』ウインドウ CWndDcdGridEki の、
+		表示設定を PrivateProfile (.ini ファイル) から
+		読み込みます。
 	
 	 @param pCWndDcdGridEki [in]
-		�w�w�x�E�C���h�E�I�u�W�F�N�g���w�肵�Ă��������B
-		���̊֐��́A���̃I�u�W�F�N�g�̑������A�t�@�C���ɕۑ����܂��B
+		『駅』ウインドウオブジェクトを指定してください。
+		この関数は、このオブジェクトの属性を、ファイルに保存します。
 	 @return	
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
+		成功したら 0 以上、エラーなら負の数です。
 	*/
 	virtual int readCWndDcdGridEkiProp( 
 		CWndDcdGridEki* pCWndDcdGridEki ) ;
 	/**
-	�w�w�����\�x�E�C���h�E CWndDcdGridEkiJikokuhyou �́A
-	�\���ݒ�� PrivateProfile (.ini �t�@�C��) �ɕۑ����܂��B
+	『駅時刻表』ウインドウ CWndDcdGridEkiJikokuhyou の、
+	表示設定を PrivateProfile (.ini ファイル) に保存します。
 
-	�ۑ��Ώۂ́A�Z�N�V����[AppProp]�́A�ȉ��̃G���g���ł��B
+	保存対象は、セクション[AppProp]の、以下のエントリです。
 
 	DisplayParentSyubetsu
 
 	@param CWndDcdGridEkiJikokuhyou [in]
-		�w�w�x�E�C���h�E�I�u�W�F�N�g���w�肵�Ă��������B
-		���̊֐��́A���̃I�u�W�F�N�g�̑������A�t�@�C���ɕۑ����܂��B
+		『駅』ウインドウオブジェクトを指定してください。
+		この関数は、このオブジェクトの属性を、ファイルに保存します。
 	 @return
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
+		成功したら 0 以上、エラーなら負の数です。
 	*/
 	virtual int writeCWndDcdGridEkiJikokuhyouProp(
 		const CWndDcdGridEkiJikokuhyou* pCWndDcdGridEkiJikokuhyou);
 
 	/**
-		�w�w�����\�x�E�C���h�E CWndDcdGridEkiJikokuhyou �́A
-		�\���ݒ�� PrivateProfile (.ini �t�@�C��) ����
-		�ǂݍ��݂܂��B
+		『駅時刻表』ウインドウ CWndDcdGridEkiJikokuhyou の、
+		表示設定を PrivateProfile (.ini ファイル) から
+		読み込みます。
 
 	 @param CWndDcdGridEkiJikokuhyou [in]
-		�w�w�x�E�C���h�E�I�u�W�F�N�g���w�肵�Ă��������B
-		���̊֐��́A���̃I�u�W�F�N�g�̑������A�t�@�C���ɕۑ����܂��B
+		『駅』ウインドウオブジェクトを指定してください。
+		この関数は、このオブジェクトの属性を、ファイルに保存します。
 	 @return
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
+		成功したら 0 以上、エラーなら負の数です。
 	*/
 	virtual int readCWndDcdGridEkiJikokuhyouProp(
 		CWndDcdGridEkiJikokuhyou* pCWndDcdGridEkiJikokuhyou);
 	/**
-		�w�w�����\�ꗗ�x�E�C���h�E CWndDcdGridEkiJikokuhyouList �́A
-		�\���ݒ�� PrivateProfile (.ini �t�@�C��) ����
-		�ǂݍ��݂܂��B
+		『駅時刻表一覧』ウインドウ CWndDcdGridEkiJikokuhyouList の、
+		表示設定を PrivateProfile (.ini ファイル) から
+		読み込みます。
 
 	 @param CWndDcdGridEkiJikokuhyouList [in]
-		�w�w�x�E�C���h�E�I�u�W�F�N�g���w�肵�Ă��������B
-		���̊֐��́A���̃I�u�W�F�N�g�̑������A�t�@�C���ɕۑ����܂��B
+		『駅』ウインドウオブジェクトを指定してください。
+		この関数は、このオブジェクトの属性を、ファイルに保存します。
 	 @return
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
+		成功したら 0 以上、エラーなら負の数です。
 	*/
 	virtual int readCWndDcdGridEkiJikokuhyouListProp(
 		CWndDcdGridEkiJikokuhyouList* pCWndDcdGridEkiJikokuhyouList);
 
 	/**
-	�w�w�x�E�C���h�E CWndDcdGridEki �́A
-	�\���ݒ�� PrivateProfile (.ini �t�@�C��) �ɕۑ����܂��B
+	『駅』ウインドウ CWndDcdGridEki の、
+	表示設定を PrivateProfile (.ini ファイル) に保存します。
 
-	�ۑ��Ώۂ́A�Z�N�V����[AppProp]�́A�ȉ��̃G���g���ł��B
+	保存対象は、セクション[AppProp]の、以下のエントリです。
 
 	- "EkiProp_AdjustByEkijikokukeisiki" @n
-		- 1; �w�̃v���p�e�B���ύX���ꂽ�Ƃ��A
-			���ׂẴ_�C���E��Ԃ̉w�������A
-			�w�����`���ɐ��K�����܂��B
-		- 0; �w�̃v���p�e�B���ύX���ꂽ�Ƃ����A
-			��Ԃ̉w������ύX���܂���B
+		- 1; 駅のプロパティが変更されたとき、
+			すべてのダイヤ・列車の駅時刻を、
+			駅時刻形式に正規化します。
+		- 0; 駅のプロパティが変更されたときも、
+			列車の駅時刻を変更しません。
 
 	@param pCWndDcdGridEki [in]
-		�w�w�x�E�C���h�E�I�u�W�F�N�g���w�肵�Ă��������B
-		���̊֐��́A���̃I�u�W�F�N�g�̑������A�t�@�C���ɕۑ����܂��B
+		『駅』ウインドウオブジェクトを指定してください。
+		この関数は、このオブジェクトの属性を、ファイルに保存します。
 	 @return
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
+		成功したら 0 以上、エラーなら負の数です。
 	*/
 	virtual int writeCDiagramEditProp();
 
 	/**
-		�w�w�x�E�C���h�E CWndDcdGridEki �́A
-		�\���ݒ�� PrivateProfile (.ini �t�@�C��) ����
-		�ǂݍ��݂܂��B
+		『駅』ウインドウ CWndDcdGridEki の、
+		表示設定を PrivateProfile (.ini ファイル) から
+		読み込みます。
 
 	 @param pCWndDcdGridEki [in]
-		�w�w�x�E�C���h�E�I�u�W�F�N�g���w�肵�Ă��������B
-		���̊֐��́A���̃I�u�W�F�N�g�̑������A�t�@�C���ɕۑ����܂��B
+		『駅』ウインドウオブジェクトを指定してください。
+		この関数は、このオブジェクトの属性を、ファイルに保存します。
 	 @return
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
+		成功したら 0 以上、エラーなら負の数です。
 	*/
 	virtual int readCDiagramEditProp();
 
 	/**
-	�w�_�C���O�����x�E�C���h�E CWndDiagram �́A
-	�\���ݒ�� PrivateProfile (.ini �t�@�C��) �ɕۑ����܂��B
+	『ダイヤグラム』ウインドウ CWndDiagram の、
+	表示設定を PrivateProfile (.ini ファイル) に保存します。
 
-	�ۑ��Ώۂ́A�Z�N�V����[AppProp]�́A�ȉ��̃G���g���ł��B
+	保存対象は、セクション[AppProp]の、以下のエントリです。
 
 	- "DiagramPosDgr" @n
-	 TargetPos�̍���ɕ`�悳���w�_�C���O�������W�x�B
-	 �J���}��؂�ŁAX,Y���W���L�q���܂��B
+	 TargetPosの左上に描画される『ダイヤグラム座標』。
+	 カンマ区切りで、X,Y座標を記述します。
 
 	- "DcdPerDgrX" @n
-	 �w�_�C���O�������W�x��1�ɑΉ�����A�wDcDraw���W(�_�����W)�x�̐�
+	 『ダイヤグラム座標』の1に対応する、『DcDraw座標(論理座標)』の数
 
 	- "DcdPerDgrY" @n
-	 �w�_�C���O�������W�x��1�ɑΉ�����A�wDcDraw���W(�_�����W)�x�̐�
+	 『ダイヤグラム座標』の1に対応する、『DcDraw座標(論理座標)』の数
 
 	- "DiagramVlineMode" @n
-		�c�r�̊Ԋu�̃��[�h�BCDcdDiagram::m_arVline[8] �̓Y�����ł��B
+		縦罫の間隔のモード。CDcdDiagram::m_arVline[8] の添え字です。
 
 	- "DiagramDisplayRessyabangou" @n
-		 �_�C����ʗ�Ԕԍ��\��
-		- 1 ;	//	�_�C����ʂɗ�Ԕԍ���\������
-		- 0 ;	//	�_�C����ʂɗ�Ԕԍ���\�����Ȃ�
+		 ダイヤ画面列車番号表示
+		- 1 ;	//	ダイヤ画面に列車番号を表示する
+		- 0 ;	//	ダイヤ画面に列車番号を表示しない
 
 	- "DiagramDisplayRessyamei" @n
-		 �_�C����ʗ�Ԗ��\��
-		- 1 ;	//	�_�C����ʂɗ�Ԗ���\������
-		- 0 ;	//	�_�C����ʂɗ�Ԗ���\�����Ȃ�
+		 ダイヤ画面列車名表示
+		- 1 ;	//	ダイヤ画面に列車名を表示する
+		- 0 ;	//	ダイヤ画面に列車名を表示しない
 
 	- "DiagramDisplayRessyasen" @n
-		��Ԑ���\�����邩�ۂ����w�肵�܂��B�J���}��؂�ŁA����,�����L�q���܂��B
-		- 1 ;	//	��Ԑ���\������
-		- 0 ;	//	��Ԑ���\�����Ȃ�
+		列車線を表示するか否かを指定します。カンマ区切りで、下り,上りを記述します。
+		- 1 ;	//	列車線を表示する
+		- 0 ;	//	列車線を表示しない
 
 	- "DiagramHideIppanekiEkimei" @n
-		��ʉw�̉w���\�����B���w��ł��B
-		- 1 ;	//	���ׂẲw����\�����܂��B(default)
-		- 0 ;	//	��ʉw�̉w����\�����܂���B
+		一般駅の駅名表示を隠す指定です。
+		- 1 ;	//	すべての駅名を表示します。(default)
+		- 0 ;	//	一般駅の駅名を表示しません。
 
 	- "DiagramStopMarkDraw" @n
-		��ԉw�\���̗L�����w�肵�܂��B
-		- 0: ��ԉw����=OFF�B��ԉw�������s���܂���B
-		- 1: ��ԉw����=ON�B�Z���Ԓ�Ԃ̉w�ɁA��ԉw�������L��(��)��`�悵�܂��B
+		停車駅表示の有無を指定します。
+		- 0: 停車駅明示=OFF。停車駅明示を行いません。
+		- 1: 停車駅明示=ON。短時間停車の駅に、停車駅を示す記号(○)を描画します。
 
 	- "DiagramKeepZoneDgrOnSize" @n
-		�E�C���h�E�T�C�Y�ύX���̓���B
-		- false:�\���͈͂�ύX(OuDia Ver.1.00.04 ����)
-		- true: �\���͈͂�ύX���Ȃ�(OuDia Ver.1.00.04 �݊�)
+		ウインドウサイズ変更時の動作。
+		- false:表示範囲を変更(OuDia Ver.1.00.04 より後)
+		- true: 表示範囲を変更しない(OuDia Ver.1.00.04 互換)
 
 	@param pCWndDiagram [in]
-		�w�_�C���O�����x�E�C���h�E�I�u�W�F�N�g���w�肵�Ă��������B
-		���̊֐��́A���̃I�u�W�F�N�g�̑������A�t�@�C���ɕۑ����܂��B
+		『ダイヤグラム』ウインドウオブジェクトを指定してください。
+		この関数は、このオブジェクトの属性を、ファイルに保存します。
 	 @return
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
+		成功したら 0 以上、エラーなら負の数です。
 	*/
 	virtual int writeCWndAllOperationTable2ViewProp(const CWndAllOperationTable2* pCWndAllOperationTable2);
 
 	/**
-	�w�_�C���O�����x�E�C���h�E CWndDiagram �́A
-	�\���ݒ�� PrivateProfile (.ini �t�@�C��) ����
-	�ǂݍ��݂܂��B
+	『ダイヤグラム』ウインドウ CWndDiagram の、
+	表示設定を PrivateProfile (.ini ファイル) から
+	読み込みます。
 
 	 @param pCWndDiagram [in]
-		�w�_�C���O�����x�E�C���h�E�I�u�W�F�N�g���w�肵�Ă��������B
-		���̊֐��́A���̃I�u�W�F�N�g�̑������A�t�@�C���ɕۑ����܂��B
+		『ダイヤグラム』ウインドウオブジェクトを指定してください。
+		この関数は、このオブジェクトの属性を、ファイルに保存します。
 	 @return
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	-1 ;	//	DiagramZoneDgr ���w�肳��Ă��܂���B
-		-	-2 ;	//	DiagramVlineMode ���w�肳��Ă��܂���B
-		-	-3 ;	//	DisplayRessyabangou ���w�肳��Ă��܂���B
-		-	-4 ;	//	DisplayRessyamei ���w�肳��Ă��܂���B
-		-	-5 ;	//	DisplayRessyasen ���w�肳��Ă��܂���B
-		-	-6 ;	//	HideIppanekiEkimei ���w�肳��Ă��܂���B
+		成功したら 0 以上、エラーなら負の数です。
+		-	-1 ;	//	DiagramZoneDgr が指定されていません。
+		-	-2 ;	//	DiagramVlineMode が指定されていません。
+		-	-3 ;	//	DisplayRessyabangou が指定されていません。
+		-	-4 ;	//	DisplayRessyamei が指定されていません。
+		-	-5 ;	//	DisplayRessyasen が指定されていません。
+		-	-6 ;	//	HideIppanekiEkimei が指定されていません。
 	*/
 	virtual int readCWndAllOperationTable2ViewProp(CWndAllOperationTable2* pCWndAllOperationTable2);
 
@@ -958,15 +958,15 @@ private:
 public:
 	CDiagramEditApp();
 
-// �I�[�o�[���C�h
-	// ClassWizard �͉��z�֐��̃I�[�o�[���C�h�𐶐����܂��B
+// オーバーライド
+	// ClassWizard は仮想関数のオーバーライドを生成します。
 	//{{AFX_VIRTUAL(CDiagramEditApp)
 	public:
 	virtual BOOL InitInstance();
 	virtual int ExitInstance();
 	//}}AFX_VIRTUAL
 
-// �C���v�������e�[�V����
+// インプリメンテーション
 protected:
 	//{{AFX_MSG(CDiagramEditApp)
 	afx_msg void OnAppAbout();
@@ -985,7 +985,7 @@ public:
 
 /**
  @return 
-	�A�v���P�[�V�����I�u�W�F�N�g��Ԃ��܂��B
+	アプリケーションオブジェクトを返します。
  */
 inline CDiagramEditApp*	getCDiagramEditApp(){
 	return (CDiagramEditApp*)AfxGetApp() ; 
@@ -993,7 +993,7 @@ inline CDiagramEditApp*	getCDiagramEditApp(){
 
 /**
  @return 
-	�w���[�g�h�L�������g�x�I�u�W�F�N�g��Ԃ��܂��B
+	『ルートドキュメント』オブジェクトを返します。
  */
 inline CDiagramEditDoc*	getCDiagramEditDoc(){
 	return (CDiagramEditDoc*)getCDiagramEditApp()->pRootDoc() ; 
@@ -1002,7 +1002,7 @@ inline CDiagramEditDoc*	getCDiagramEditDoc(){
 
 
 //{{AFX_INSERT_LOCATION}}
-// Microsoft Visual C++ �͑O�s�̒��O�ɒǉ��̐錾��}�����܂��B
+// Microsoft Visual C++ は前行の直前に追加の宣言を挿入します。
 
 
 

@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 #if !defined(AFX_CDLGOPERATIONTABLECSVEXPORT_H__A3C4DA85_B17C_473C_9692_578C72A74830__INCLUDED_)
 #define AFX_CDLGOPERATIONTABLECSVEXPORT_H__A3C4DA85_B17C_473C_9692_578C72A74830__INCLUDED_
@@ -74,37 +74,37 @@ Copyright (C) 2006-2017 take-okm
 #if _MSC_VER > 1000
 #pragma once
 #endif // _MSC_VER > 1000
-// CDlgOuJikokuhyouCsvExport.h : �w�b�_�[ �t�@�C��
+// CDlgOuJikokuhyouCsvExport.h : ヘッダー ファイル
 // $Id: CDlgOuJikokuhyouCsvExport.h 261 2016-01-23 03:59:53Z okm $
 /** @file */
 
 namespace ViewAllOperationTable{
 
-#include "..\entDed\CentDedRosen.h"
+#include "..¥entDed¥CentDedRosen.h"
 /////////////////////////////////////////////////////////////////////////////
-// CDlgOperationTableExport �_�C�A���O
+// CDlgOperationTableExport ダイアログ
 /**
 @brief
-	�����\�r���[�̓��e��CSV�t�@�C���ɃG�N�X�|�[�g����_�C�A���O�ł��B
+	時刻表ビューの内容をCSVファイルにエクスポートするダイアログです。
 */
 class CDlgOperationTableCsvExport : public CDialog
 {
 private:
 	// ********************************
-	///@name �֘A
+	///@name 関連
 	// ********************************
 	///@{
 	/**
-		�����f�[�^��ێ����Ă��� CentDedRosen �I�u�W�F�N�g�ւ̊֘A�ł��B
+		時刻データを保持している CentDedRosen オブジェクトへの関連です。
 
-		���̃I�u�W�F�N�g�̔j���̐Ӗ��́A�N���X���[�U�[�ɂ���܂��B
-		���̃I�u�W�F�N�g�́Athis ���������Ă���Ԃ�
-		�������Ȃ��Ă͂Ȃ�܂���B
+		このオブジェクトの破棄の責務は、クラスユーザーにあります。
+		このオブジェクトは、this が生存している間は
+		生存しなくてはなりません。
 	*/
 	const CentDedRosen* m_pCentDedRosen ;
 
 	/**
-		���o�ΏۂƂȂ�_�C���I�u�W�F�N�g
+		抽出対象となるダイヤオブジェクト
 	*/
 	const CentDedDia* m_pCentDedDia;
 
@@ -112,63 +112,63 @@ private:
 	const CdDedDispProp m_aCdDedDispProp;
 	///@}
 	// ********************************
-	///@name ����
+	///@name 属性
 	// ********************************
 	///@{
 	/**
-		�^�p�ꗗ�Ńt�H�[�J�X������^�p�ԍ��B
-		�R���X�g���N�^�Ō��܂�܂��B
+		運用一覧でフォーカスがある運用番号。
+		コンストラクタで決まります。
 	*/
 	tstring  m_strOperationNumber ;
 
 	/**
-		�Ō�Ƀ��[�U�[�����͂���CSV�t�@�C����
+		最後にユーザーが入力したCSVファイル名
 	*/
 	CString	m_strCsvFilename ;
 
 	/**
-		�w�����̕b�P�ʂ�\�����邩�ǂ����B
-		�R���X�g���N�^�Ō��܂�܂��B
+		駅時刻の秒単位を表示するかどうか。
+		コンストラクタで決まります。
 	*/
 	bool m_bDisplaySecondEkiJikoku;
 
 	/**
-	�w�������R�����t���ŕ\�����邩�ǂ����B
-	�R���X�g���N�^�Ō��܂�܂��B
+	駅時刻をコロン付きで表示するかどうか。
+	コンストラクタで決まります。
 	*/
 	bool m_bDisplayColonEkiJikoku;
 
 	/**
-	��Ԃ̕\����e��ʂōs�����ۂ��̎w��
-	�R���X�g���N�^�Ō��܂�܂��B
+	列車の表示を親種別で行うか否かの指定
+	コンストラクタで決まります。
 	*/
 	bool m_bDisplayParentSyubetsu;
 
 	/**
-	����Ԃ̎n���w�������ɂ��ĕ`�ʂ���̏����l
-	�R���X�g���N�^�Ō��܂�܂��B
+	上り列車の始発駅を左側にして描写するの初期値
+	コンストラクタで決まります。
 	*/
 	//bool m_bDisplayNoboriLeftToRight;
 
 	bool m_bCompareBottom;
 	///@}
 	// ********************************
-	///@name ����
+	///@name 操作
 	// ********************************
 	///@{
 	///@}
 // ----------------------------------------------------------------
-// �R���X�g���N�V����
+// コンストラクション
 	/**
 		strOperationNumber:
-			�^�p�ԍ��G�f�B�b�g�Ƀf�t�H���g�ŕ\������^��
+			運用番号エディットにデフォルトで表示する運番
 		iStationIndex:
-			�w�I���R���{�{�^���̃f�t�H���g�l
-			eOperationSort������w�E���掞�����̏ꍇ�́A�^�p�ꗗ�ł̃t�H�[�J�X��̓���w�A����ȊO�̏ꍇ�͏o��w
+			駅選択コンボボタンのデフォルト値
+			eOperationSortが入区駅・入区時刻順の場合は、運用一覧でのフォーカス列の入区駅、それ以外の場合は出区駅
 		eOperationSort
-			���я��R���{�{�^���̃f�t�H���g�l
+			並び順コンボボタンのデフォルト値
 		bCompareBottom
-			�^�p�ԍ��̕��ёւ����[���A���̃_�C�A���O���ł͕ύX�ł��܂���
+			運用番号の並び替えルール、このダイアログ中では変更できません
 
 	*/
 public:
@@ -187,11 +187,11 @@ public:
 		bool bDisplayExtensionOperationTable,
 		bool bDisplayTrackName,
 		bool bDisplayTsuukaEkiJikoku,
-		CWnd* pParent = NULL);   // �W���̃R���X�g���N�^
+		CWnd* pParent = NULL);   // 標準のコンストラクタ
 
 private:
 	/**
-		�^�p�ԍ��𐔎��̉�Ɛ����ȊO�̉�ɕ������܂��B
+		運用番号を数字の塊と数字以外の塊に分割します。
 	*/
 	void splitOperationNumber(
 		const tstring strOperationNumberIn,
@@ -199,7 +199,7 @@ private:
 		vector<tstring>& strOperationNumberOut)const;
 
 	/**
-		��̉^�p�ԍ��̕��я���Ԃ��܂��B
+		二つの運用番号の並び順を返します。
 	*/
 	bool SortOperationNumber(
 		const tstring strOperationNumber1,
@@ -222,23 +222,23 @@ private:
 		list< OperationTableContent> ListOperationTableContent,
 		const deque<int>& iEkiIndexGroup);
 
-// �_�C�A���O �f�[�^
+// ダイアログ データ
 	//{{AFX_DATA(CDlgOuJikokuhyouCsvExport)
 	enum { IDD = IDD_OperationTable_CsvExport };
 	//}}AFX_DATA
 
 
-// �I�[�o�[���C�h
-	// ClassWizard �͉��z�֐��̃I�[�o�[���C�h�𐶐����܂��B
+// オーバーライド
+	// ClassWizard は仮想関数のオーバーライドを生成します。
 	//{{AFX_VIRTUAL(CDlgOuJikokuhyouCsvExport)
 	protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV �T�|�[�g
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV サポート
 	//}}AFX_VIRTUAL
 
-// �C���v�������e�[�V����
+// インプリメンテーション
 protected:
 
-	// �������ꂽ���b�Z�[�W �}�b�v�֐�
+	// 生成されたメッセージ マップ関数
 	//{{AFX_MSG(CDlgOuJikokuhyouCsvExport)
 	virtual BOOL OnInitDialog();
 	virtual void OnOK();
@@ -259,7 +259,7 @@ private:
 };
 
 //{{AFX_INSERT_LOCATION}}
-// Microsoft Visual C++ �͑O�s�̒��O�ɒǉ��̐錾��}�����܂��B
+// Microsoft Visual C++ は前行の直前に追加の宣言を挿入します。
 
 } //namespace ViewAllOperationTable
 

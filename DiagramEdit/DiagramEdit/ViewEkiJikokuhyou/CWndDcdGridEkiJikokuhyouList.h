@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -78,16 +78,16 @@ Copyright (C) 2006-2017 take-okm
 #ifndef  CWndDcdGridEkiJikokuhyouList_h
 #define  CWndDcdGridEkiJikokuhyouList_h
 
-#include "DcDraw\CDcdTextbox.h"
-#include "DcdGrid\WndDcdGrid3\CWndDcdGrid.h"
-#include "OuDlg\CKeyinputSenderToModalDlg.h"
-#include "str\stringSplit.h"
-#include "LogMsg\LogMsg.h"
+#include "DcDraw¥CDcdTextbox.h"
+#include "DcdGrid¥WndDcdGrid3¥CWndDcdGrid.h"
+#include "OuDlg¥CKeyinputSenderToModalDlg.h"
+#include "str¥stringSplit.h"
+#include "LogMsg¥LogMsg.h"
 
-#include "..\entDed\CentDedEki.h"
-#include "..\DedRosenFileData\EditCmd\CRfEditCmd_Eki.h"
-//#include "EkiColSpec\CdEkiYColSpecCont.h"
-//#include "EkiColSpec\CdEkiXColSpecCont.h"
+#include "..¥entDed¥CentDedEki.h"
+#include "..¥DedRosenFileData¥EditCmd¥CRfEditCmd_Eki.h"
+//#include "EkiColSpec¥CdEkiYColSpecCont.h"
+//#include "EkiColSpec¥CdEkiXColSpecCont.h"
 #include "CEkiJikokuhyouListDoc.h"
 
 namespace ViewEkiJikokuhyou {
@@ -103,365 +103,365 @@ namespace ViewEkiJikokuhyou {
 // ****************************************************************
 /**
 	@brief
-	�y�T�v�z CEkiView �ŗp����A�O���b�h�E�C���h�E�ł��B
+	【概要】 CEkiView で用いる、グリッドウインドウです。
  */
 class CWndDcdGridEkiJikokuhyouList : public CWndDcdGrid
 {
 public:
 	// ********************************
-	//	�C���i�[�^�C�v
+	//	インナータイプ
 	// ********************************
 	typedef CWndDcdGrid super ;
 
 	/** 
-		createCmd() ���\�b�h�Ő�������R�}���h�I�u�W�F�N�g�̎�ނ��w�肵�܂��B
+		createCmd() メソッドで生成するコマンドオブジェクトの種類を指定します。
 	*/
 	enum ECreateCmd
 	{
 		/**
-		�@�r���[�̃t�H�[�J�X�ʒu�ɐV�K�A�C�e����}�����邽�߂̃R�}���h�𐶐����܂��B
+		　ビューのフォーカス位置に新規アイテムを挿入するためのコマンドを生成します。
 
-		�@�r���[��ŕ����I����OFF�E�t�H�[�J�X�Z���������A�C�e����ɂ���ꍇ: 
+		　ビュー上で複数選択がOFF・フォーカスセルが既存アイテム上にある場合: 
 		 
-		 - m_iDiaIndex = �t�H�[�J�X�Z���̃A�C�e��Index�Am_iIndexSize = 0
-		 - m_CentDedEkiCont = �V�K�쐬���̃A�C�e���̊���l
-		 - CaMuiSelect = ���Y�A�C�e����I���B
+		 - m_iDiaIndex = フォーカスセルのアイテムIndex、m_iIndexSize = 0
+		 - m_CentDedEkiCont = 新規作成時のアイテムの既定値
+		 - CaMuiSelect = 当該アイテムを選択。
 
-		 �@�r���[��ŕ����I����OFF�E�t�H�[�J�X�Z�����V�K�A�C�e���ʒu�ɂ���ꍇ:
+		 　ビュー上で複数選択がOFF・フォーカスセルが新規アイテム位置にある場合:
 
-		 - m_iDiaIndex = �����A�C�e��Index+1�Am_iIndexSize = 0
-		 - m_CentDedEkiCont = �V�K�쐬���̃A�C�e���̊���l
-		 - CaMuiSelect = ���Y�A�C�e����I���B
+		 - m_iDiaIndex = 末尾アイテムIndex+1、m_iIndexSize = 0
+		 - m_CentDedEkiCont = 新規作成時のアイテムの既定値
+		 - CaMuiSelect = 当該アイテムを選択。
 
-		 �@�r���[��ŕ����I��ON:
+		 　ビュー上で複数選択ON:
 
-		 - NULL��Ԃ��܂�([14/05/18]��:�����I��OFF�̏ꍇ�Ɠ�������)
+		 - NULLを返します([14/05/18]旧:複数選択OFFの場合と同じ動作)
 
-		�@�ȉ��̃��j���[�R�}���h�Ŏg�p���܂��B
+		　以下のメニューコマンドで使用します。
 
-		 - �\��t���E�A�C�e���̃v���p�e�B(��)�E�A�C�e����}�� @n
-		    ��=�t�H�[�J�X�ʒu���V�K�A�C�e���ɂ���ꍇ�̂�
+		 - 貼り付け・アイテムのプロパティ(※)・アイテムを挿入 @n
+		    ※=フォーカス位置が新規アイテムにある場合のみ
 		*/
 		ECreateCmd_NewItem , 
 
 		/**
-		�@�t�H�[�J�X�Z����̃A�C�e��1��ΏۂƂ����R�}���h�𐶐����܂��B
+		　フォーカスセル上のアイテム1つを対象としたコマンドを生成します。
 
-		�@�r���[��ŕ����I����OFF�E�t�H�[�J�X�Z���������A�C�e����ɂ���ꍇ: 
+		　ビュー上で複数選択がOFF・フォーカスセルが既存アイテム上にある場合: 
 
-		 - m_iDiaIndex = �t�H�[�J�X�Z���̃A�C�e��Index�Am_iIndexSize = 1
-		 - m_CentDedRessyaCont = �t�H�[�J�X�Z����̃A�C�e��1�̃R�s�[
-		 - m_CaMuiSelect = �t�H�[�J�X�Z����̃A�C�e����I���B
+		 - m_iDiaIndex = フォーカスセルのアイテムIndex、m_iIndexSize = 1
+		 - m_CentDedRessyaCont = フォーカスセル上のアイテム1個のコピー
+		 - m_CaMuiSelect = フォーカスセル上のアイテムを選択。
 
-		�@�r���[��ŕ����I����OFF�E�t�H�[�J�X�Z�����V�K�A�C�e���ʒu�ɂ���ꍇ: 
+		　ビュー上で複数選択がOFF・フォーカスセルが新規アイテム位置にある場合: 
 
-		 - NULL��Ԃ��܂��B
+		 - NULLを返します。
 
-		�@�r���[��ŕ����I��ON
+		　ビュー上で複数選択ON
 
-		 - NULL��Ԃ��܂�([14/05/18]��:�����I��OFF�̏ꍇ�Ɠ�������)
+		 - NULLを返します([14/05/18]旧:複数選択OFFの場合と同じ動作)
 
-		�@�ȉ��̃��j���[�R�}���h�Ŏg�p���܂��B
+		　以下のメニューコマンドで使用します。
 
-		 - �b��[�u�Ƃ��āA�؂���E�����Ŏg�p
+		 - 暫定措置として、切り取り・消去で使用
 
 		*/
 		ECreateCmd_Focus , 
 
 		/**
-		�@�����̒P���܂��͕����I������Ă���A�C�e����ΏۂƂ���
-		�R�}���h�𐶐����܂��B
+		　既存の単数または複数選択されているアイテムを対象とした
+		コマンドを生成します。
 
-		�@�r���[��ŕ����I����OFF�E�t�H�[�J�X�Z���������A�C�e����ɂ���ꍇ: 
+		　ビュー上で複数選択がOFF・フォーカスセルが既存アイテム上にある場合: 
 
-		 - m_iDiaIndex = �t�H�[�J�X�Z���̃A�C�e��Index�Am_iIndexSize = 1
-		 - m_CentDedRessyaCont = �t�H�[�J�X�Z���̂���A�C�e��1�̃R�s�[
-		 - CaMuiSelect = ���Y��Ԃ�I���B
+		 - m_iDiaIndex = フォーカスセルのアイテムIndex、m_iIndexSize = 1
+		 - m_CentDedRessyaCont = フォーカスセルのあるアイテム1個のコピー
+		 - CaMuiSelect = 当該列車を選択。
 
-		�@�r���[��ŕ����I����OFF�E�t�H�[�J�X�Z�����V�K�A�C�e���ʒu�ɂ���ꍇ: 
+		　ビュー上で複数選択がOFF・フォーカスセルが新規アイテム位置にある場合: 
 
-		 - NULL��Ԃ��܂��B
+		 - NULLを返します。
 
-		�@�r���[��ŕ����I��ON
+		　ビュー上で複数選択ON
 
-		 - m_iDiaIndex = �I������Ă���A�C�e���̐擪index
-		 - m_iIndexSize = �I������Ă���A�C�e���̖���index-�擪index+1
-		 - m_CentDedRessyaCont = �I������Ă���A�C�e���̐擪index����
-		  ����index�܂ł̃A�C�e���̃R�s�[
-		 - CaMuiSelect �́A�Z���I���ɍ��킹�ăA�C�e����I���B
+		 - m_iDiaIndex = 選択されているアイテムの先頭index
+		 - m_iIndexSize = 選択されているアイテムの末尾index-先頭index+1
+		 - m_CentDedRessyaCont = 選択されているアイテムの先頭indexから
+		  末尾indexまでのアイテムのコピー
+		 - CaMuiSelect は、セル選択に合わせてアイテムを選択。
 		
-		�@�ȉ��̃��j���[�R�}���h�Ŏg�p���܂��B
+		　以下のメニューコマンドで使用します。
 
-		 - �؂���E�R�s�[�E�����E
-		  - �A�C�e���̃v���p�e�B(��) @n
-		    ��=�t�H�[�J�X�ʒu�������A�C�e���ɂ���ꍇ�̂�
+		 - 切り取り・コピー・消去・
+		  - アイテムのプロパティ(※) @n
+		    ※=フォーカス位置が既存アイテムにある場合のみ
 		*/
 		ECreateCmd_Select , 
 
 		/**
-		�@�S�A�C�e����ΏۂƂ����R�}���h�𐶐����܂��B
+		　全アイテムを対象としたコマンドを生成します。
 
-		  �r���[��ŕ����I����OFF�E�t�H�[�J�X�Z���������A�C�e����ɂ���ꍇ: 
+		  ビュー上で複数選択がOFF・フォーカスセルが既存アイテム上にある場合: 
 		
-		 - m_iDiaIndex = 0�Am_iIndexSize = �A�C�e���̐�
-		 - m_CentDedRessyaCont = �S�A�C�e���̃R�s�[
-		 - m_CaMuiSelect �́A�S�A�C�e����I���B
+		 - m_iDiaIndex = 0、m_iIndexSize = アイテムの数
+		 - m_CentDedRessyaCont = 全アイテムのコピー
+		 - m_CaMuiSelect は、全アイテムを選択。
 
-		  �r���[��ŕ����I����OFF�E�t�H�[�J�X�Z�����V�K�A�C�e���ʒu�ɂ���ꍇ: 
+		  ビュー上で複数選択がOFF・フォーカスセルが新規アイテム位置にある場合: 
 		 
-		 - m_iDiaIndex = 0�Am_iIndexSize = �A�C�e���̐�
-		 - m_CentDedRessyaCont = �S�A�C�e���̃R�s�[
-		 - CaMuiSelect �́A�S�A�C�e����I���B
+		 - m_iDiaIndex = 0、m_iIndexSize = アイテムの数
+		 - m_CentDedRessyaCont = 全アイテムのコピー
+		 - CaMuiSelect は、全アイテムを選択。
 
-		  �r���[��ŕ����I��ON
+		  ビュー上で複数選択ON
 		
-		 - m_iDiaIndex = �I������Ă���A�C�e���̐擪index
-		 - m_iIndexSize = �I������Ă���A�C�e���̖���index-�擪index+1
-		 - m_CentDedRessyaCont = �I������Ă���A�C�e���̐擪index����
-			����index�܂ł̃A�C�e���̃R�s�[
-		 - m_CaMuiSelect �́A�Z���̑I���ɍ��킹�ăA�C�e����I���B
+		 - m_iDiaIndex = 選択されているアイテムの先頭index
+		 - m_iIndexSize = 選択されているアイテムの末尾index-先頭index+1
+		 - m_CentDedRessyaCont = 選択されているアイテムの先頭indexから
+			末尾indexまでのアイテムのコピー
+		 - m_CaMuiSelect は、セルの選択に合わせてアイテムを選択。
 
-		  �ȉ��̃��j���[�R�}���h�Ŏg�p���܂��B
+		  以下のメニューコマンドで使用します。
 			
-		 - (�ΏۂȂ�)
+		 - (対象なし)
 		*/
 		ECreateCmd_All ,
 	};
 private:
 	// ********************************
-	///@name	���
+	///@name	包含
 	// ********************************
 	///@{
 	/**
-	  �e�E�C���h�E�ւ̃L�[���͂��_�@�� ModalDialog ���J���ꍇ�A
-	 ���[�_���_�C�A���O�̓���̃G�f�B�b�g�R���g���[���ɁA
-	 �L�[���̓��b�Z�[�W�i WM_KEYDOWN , WM_KEYUP �j��]�����܂��B
+	  親ウインドウへのキー入力を契機に ModalDialog を開く場合、
+	 モーダルダイアログの特定のエディットコントロールに、
+	 キー入力メッセージ（ WM_KEYDOWN , WM_KEYUP ）を転送します。
 	
-		���̃I�u�W�F�N�g�̔j���̐Ӗ��́A�N���X���[�U�[�i�w�]�����E�C���h�E�x�j
-		�ɂ���܂��B
-		���̃I�u�W�F�N�g�́A this ��蒷���������Ȃ��Ă͂Ȃ�܂���B
-		�s�v�ł���� NULL �ł����܂��܂���B
-		�R���X�g���N�^�Ō��܂�܂��B
+		このオブジェクトの破棄の責務は、クラスユーザー（『転送元ウインドウ』）
+		にあります。
+		このオブジェクトは、 this より長く生存しなくてはなりません。
+		不要であれば NULL でもかまいません。
+		コンストラクタで決まります。
 	 */
 	CKeyinputSenderToModalDlg	m_CKeyinputSenderToModalDlg ;
 	///@}
 	// ********************************
-	///@name	����
+	///@name	属性
 	// ********************************
 	///@{
 
 	///@}
 	// --------------------------------
-	///@name �����f�[�^
+	///@name 内部データ
 	// --------------------------------
 	///@{
 	/**
-		���̕ϐ��� true �̂Ƃ��́A
-		�r���[�̍X�V���A���Ƀr���[���A�N�e�B�u�������܂�
-		�ۗ����Ă��܂��B
+		この変数が true のときは、
+		ビューの更新を、次にビューがアクティブ化されるまで
+		保留しています。
 		
-		�ʏ�� false �B
-		�u�r���[���A�N�e�B�u�łȂ��Ƃ��̑S�X�V�v���i OnUpdate_All() �j�v
-		����A
-		�u�r���[���A�N�e�B�u�ɂȂ����Ƃ��v�܂ł� true �ɂȂ�܂��B
+		通常は false 。
+		「ビューがアクティブでないときの全更新要求（ OnUpdate_All() ）」
+		から、
+		「ビューがアクティブになったとき」までは true になります。
 		
-		�r���[���A�N�e�B�u�ȂƂ��� OnUpdate_All() ���Ăяo�����
-		�r���[�̑S�X�V���s��ꂽ��A false�ɂȂ�܂��B
+		ビューがアクティブなときに OnUpdate_All() が呼び出されて
+		ビューの全更新が行われたら、 falseになります。
 		
-		�r���[����A�N�e�B�u�ȂƂ��� OnUpdate_All() ���Ăяo���ꂽ��
-		true �ɂȂ�܂��B
+		ビューが非アクティブなときに OnUpdate_All() が呼び出されたら
+		true になります。
 		
-		���̒l�� true �̏ꍇ�́AOnUpdate_All() �ȊO�̕����X�V��
-		�S�čs���܂���B
+		この値が true の場合は、OnUpdate_All() 以外の部分更新は
+		全て行われません。
 		
-		�����l�� true �ł��B
-		���R�F OnUpdate_All()�ɂ��r���[�̍X�V����x���s���Ă��Ȃ�
-		�ꍇ�́A�r���[�̕����I�ȍX�V�͂ł��Ȃ����߂ł��B
+		初期値は true です。
+		理由： OnUpdate_All()によるビューの更新が一度も行われていない
+		場合は、ビューの部分的な更新はできないためです。
 	 */
 	bool m_bWaitForActivate  ;
 
 	/**
-		�����l��false�A����� OnUpdate() ���I�������� true �ɂȂ�܂��B
+		初期値はfalse、初回の OnUpdate() が終了したら true になります。
 	*/
 	bool m_bInitialUpdateComplete ;
 	///@}
  public:
 	// --------------------------------
-	///@name �����֐�
+	///@name 下請関数
 	// --------------------------------
 	///@{
 	/**
 	@return
-		�wIndex�ɍ��킹������������ CDcdTextbox �I�u�W�F�N�g��
-		�Ԃ��܂��B
+		駅Indexに合わせた属性を持つ CDcdTextbox オブジェクトを
+		返します。
 	*/
 	//CDcdTextbox	getCDcdEkiIndex()const;
 
 	/**
 	 @return
-		�w����ɍ��킹������������ CDcdTextbox �I�u�W�F�N�g��
-		�Ԃ��܂��B
+		駅名列に合わせた属性を持つ CDcdTextbox オブジェクトを
+		返します。
 	 */
 	CDcdTextbox	getCDcdEkimei()const ;
 
 	/**
 	 @return
-		�w�����`��
-		�̗�ɍ��킹������������ CDcdTextbox �I�u�W�F�N�g��
-		�Ԃ��܂��B
+		駅時刻形式
+		の列に合わせた属性を持つ CDcdTextbox オブジェクトを
+		返します。
 	 */
 	CDcdTextbox	getCDcdEkiJikokuhyou()const ;
 
 	/**
 	 @return
-		�w�����`��
-		�̗�ɍ��킹������������ CDcdTextbox �I�u�W�F�N�g��
-		�Ԃ��܂��B
+		駅時刻形式
+		の列に合わせた属性を持つ CDcdTextbox オブジェクトを
+		返します。
 	 */
 	//CDcdTextbox	getCDcdEkikibo()const ;
 
 	/**
 	@return
-		�w�Ԑ���
-		�̗�ɍ��킹������������ CDcdTextbox �I�u�W�F�N�g��
-		�Ԃ��܂��B
+		駅番線数
+		の列に合わせた属性を持つ CDcdTextbox オブジェクトを
+		返します。
 	*/
 	//CDcdTextbox	getCDcdEkiTrack2Count()const;
 
 	/**
 	@return
-		����w�ݒ�E����ݒ�
-		�̗�ɍ��킹������������ CDcdTextbox �I�u�W�F�N�g��
-		�Ԃ��܂��B
+		分岐駅設定・環状線設定
+		の列に合わせた属性を持つ CDcdTextbox オブジェクトを
+		返します。
 	*/
 	//CDcdTextbox	getCDcdBrunchLoop()const;
 
 	/**
 	 @return
-		�w�̗�̉��̌r���Ɏg�p����y���̑�����Ԃ��܂��B\n
-		�w�̑����Ɂw���E���x���ݒ肳��Ă��Ȃ��ꍇ�́A
-		�w�̉��̌r���ɁA���̃y�����g���܂��B
+		駅の列の下の罫線に使用するペンの属性を返します。¥n
+		駅の属性に『境界線』が設定されていない場合は、
+		駅の下の罫線に、このペンを使います。
 	 */
 	CdPenProp getCdPenPropNormal()const{	return CdPenProp( 1 ) ; } ; 
 	/**
 	 @return
-		�w�̗�̉��̌r���Ɏg�p����y���̑�����Ԃ��܂��B\n
-		�w�̑����Ɂw���E���x���ݒ肳��Ă���ꍇ�́A
-		�w�̉��̌r���ɁA���̃y�����g���܂��B
+		駅の列の下の罫線に使用するペンの属性を返します。¥n
+		駅の属性に『境界線』が設定されている場合は、
+		駅の下の罫線に、このペンを使います。
 	 */
 	//CdPenProp getCdPenPropBold()const{	return CdPenProp( 2 ) ; } ; 
 
 
 	/**
-		�S�Ă�X��ɂ��Ă� �w��ԍ�-�\�����e�x�̑Ή��\�𐶐����܂��B
-		�������ꂽ CdXColSpecCont() ����
-		CdXColSpec �I�u�W�F�N�g��
-		�擾���邱�Ƃɂ��A�e�񖈂ɕK�v�ȕ\�����e���擾���邱�Ƃ��ł��܂��B
+		全てのX列についての 『列番号-表示内容』の対応表を生成します。
+		生成された CdXColSpecCont() から
+		CdXColSpec オブジェクトを
+		取得することにより、各列毎に必要な表示内容を取得することができます。
 	@return 
-		�S�Ă�X��ɂ��Ă� �w��ԍ�-�\�����e�x�̑Ή��\�ł���
-		 CdXColSpecCont �I�u�W�F�N�g��Ԃ��܂��B
+		全てのX列についての 『列番号-表示内容』の対応表である
+		 CdXColSpecCont オブジェクトを返します。
 		
 	@attention
-	 	���̊֐��� OnCreate() �E�y�т���ȑO��
-	 	�Ăяo�����Ƃ��́A�߂�l��NULL��ԂɂȂ�܂��B
-	 	�Ăяo�������ɒ��ӂ��Ă��������B
+	 	この関数を OnCreate() ・及びそれ以前に
+	 	呼び出したときは、戻り値はNULL状態になります。
+	 	呼び出し時期に注意してください。
 
 	@attention
-		���̑Ή��\�́A CentDedEkiCont �ɕύX������
-		�����疳���ɂȂ�܂��B���̂��߁ACentDedEkiCont  ��
-		�ύX�̉\��������󋵂ł́A�Ή��\���č쐬����K�v������܂��B	
+		この対応表は、 CentDedEkiCont に変更が発生
+		したら無効になります。このため、CentDedEkiCont  に
+		変更の可能性がある状況では、対応表を再作成する必要があります。	
 	*/
 	//CdEkiXColSpecCont createXColSpecCont();
 
 
 	/**
-		�S�Ă�Y��ɂ��Ă� �w��ԍ�-�\�����e�x�̑Ή��\�𐶐����܂��B
-		�������ꂽ CdYColSpecCont() ����
-		CdYColSpec �I�u�W�F�N�g��
-		�擾���邱�Ƃɂ��A�e�񖈂ɕK�v�ȕ\�����e���擾���邱�Ƃ��ł��܂��B
+		全てのY列についての 『列番号-表示内容』の対応表を生成します。
+		生成された CdYColSpecCont() から
+		CdYColSpec オブジェクトを
+		取得することにより、各列毎に必要な表示内容を取得することができます。
 	@return 
-		�S�Ă�Y��ɂ��Ă� �w��ԍ�-�\�����e�x�̑Ή��\�ł���
-		 CdYColSpecCont �I�u�W�F�N�g��Ԃ��܂��B
+		全てのY列についての 『列番号-表示内容』の対応表である
+		 CdYColSpecCont オブジェクトを返します。
 		
 	@attention
-	 	���̊֐��� OnCreate() �E�y�т���ȑO��
-	 	�Ăяo�����Ƃ��́A�߂�l��NULL��ԂɂȂ�܂��B
-	 	�Ăяo�������ɒ��ӂ��Ă��������B
+	 	この関数を OnCreate() ・及びそれ以前に
+	 	呼び出したときは、戻り値はNULL状態になります。
+	 	呼び出し時期に注意してください。
 
 	@attention
-		���̑Ή��\�́A CentDedEkiCont �ɕύX������
-		�����疳���ɂȂ�܂��B���̂��߁ACentDedEkiCont  ��
-		�ύX�̉\��������󋵂ł́A�Ή��\���č쐬����K�v������܂��B	
+		この対応表は、 CentDedEkiCont に変更が発生
+		したら無効になります。このため、CentDedEkiCont  に
+		変更の可能性がある状況では、対応表を再作成する必要があります。	
 	*/
 	//CdEkiYColSpecCont createYColSpecCont();
 
 	/**
 	@return 
-		�t�H�[�J�X�Z���̗�̕\�����e��Ԃ��܂��B
+		フォーカスセルの列の表示内容を返します。
 	*/
 	//CdEkiXColSpec getXColSpecOfFocus();
 
 	/**
 	@return 
-		�t�H�[�J�X�Z���̗�̕\�����e��Ԃ��܂��B
+		フォーカスセルの列の表示内容を返します。
 	*/
 	//CdEkiYColSpec getYColSpecOfFocus() ;
 
 	
 	/**
-	DcdGrid�ł̑I����e�ɉ������A�ҏW�R�}���h�I�u�W�F�N�g
-	(CRfEditCmd_Eki)�𐶐����܂��B
+	DcdGridでの選択内容に応じた、編集コマンドオブジェクト
+	(CRfEditCmd_Eki)を生成します。
 	@param eCreateCmd [in]
-		��������R�}���h�̎�ނ��w�肵�Ă��������B
+		生成するコマンドの種類を指定してください。
 	@param ppCmd [out] 
-		���������R�}���h��Ԃ��܂��B
-		NULL ���w�肷�邱�Ƃ��ł��܂��B���̏ꍇ�A���̊֐���
-		�R�}���h�𐶐������ɁA�R�}���h�̐������\���ۂ�������Ԃ��܂��B
+		生成したコマンドを返します。
+		NULL を指定することもできます。この場合、この関数は
+		コマンドを生成せずに、コマンドの生成が可能か否かだけを返します。
 	@return
-		ppCmd���L����Ou�ł���ꍇ�́A�R�}���h�̐����ɐ��������� true��Ԃ��܂��B
-		ppCmd=NULL �̏ꍇ�́A�R�}���h�̐������\�ł����true��Ԃ��܂��B
-		�R�}���h�������ł��Ȃ��ꍇ�� false ��Ԃ��܂��B
-		�t�H�[�J�X�Z����I���Z������Ԃ̈ʒu�ɂȂ��ꍇ�́Afalse�ƂȂ�܂��B
+		ppCmdが有効なOuである場合は、コマンドの生成に成功したら trueを返します。
+		ppCmd=NULL の場合は、コマンドの生成が可能であればtrueを返します。
+		コマンドが生成できない場合は false を返します。
+		フォーカスセルや選択セルが列車の位置にない場合は、falseとなります。
 	*/
 	//bool createCmd( ECreateCmd eCreateCmd , Ou<DedRosenFileData::EditCmd::CRfEditCmd_Eki>* ppCmd );
 
 	///@}
 protected:
 	// --------------------------------
-	///@name OnUpdate �̉����֐�
+	///@name OnUpdate の下請関数
 	// --------------------------------
 	///@{
 	/**
-		�O���b�h�� Y��ԍ��Ŏw�肳�ꂽ��ɁA
-		�w�w�x�̓��e��ݒ肵�܂��B
+		グリッドの Y列番号で指定された列に、
+		『駅』の内容を設定します。
 
-		�O���b�h�S�̂��X�V�̈�Ƃ��܂�( InvalidateGrid() )�B
+		グリッド全体を更新領域とします( InvalidateGrid() )。
 	 @note
-		�w�����̒��̋��E���̑������ϓ������ꍇ�́A
-		Y��ԍ��Ŏw�肳�ꂽ�Z�������ł͂Ȃ��A
-		���E���E����т����艺�̂��ׂẴZ���̍X�V���K�v�ɂȂ�܂��B
-		����ɑΉ����邽�߁A CWndDcdGridEki �ł́A
-		�w�̑����̍X�V�̂��тɃO���b�h�S����X�V���Ă��܂��B
+		駅属性の中の境界線の太さが変動した場合は、
+		Y列番号で指定されたセルだけではなく、
+		境界線・およびそれより下のすべてのセルの更新が必要になります。
+		これに対応するため、 CWndDcdGridEki では、
+		駅の属性の更新のたびにグリッド全域を更新しています。
 	 @param iYColumnNumber [in]
-		Y��ԍ����w�肵�Ă��������B
+		Y列番号を指定してください。
 	 @param aCentDedEki [in]
-		�w�w�x�I�u�W�F�N�g���w�肵�Ă��������B
+		『駅』オブジェクトを指定してください。
 	 @param aCentDedEkiNext [in]
-		���́w�w�x�I�u�W�F�N�g���w�肵�Ă��������B
-		���E���ݒ�Ɏg�p���܂��B
+		一つ先の『駅』オブジェクトを指定してください。
+		境界線設定に使用します。
 	*/
 	void OnUpdate_setCentDedEki_To_Column( int iYColumnNumber , 
 			const CentDedEki& aCentDedEki/* ,
 			const CentDedEki& aCentDedEkiNext*/) ;
 
 	/**
-		OnUpdate() �̉����֐��ł��B
-		�֘A����h�L�������g�̓��e���A���̃E�C���h�E�Ɋ��S��
-		���f���܂��B
+		OnUpdate() の下請関数です。
+		関連するドキュメントの内容を、このウインドウに完全に
+		反映します。
 	
-		OnUpdate() �� pHint �� NULL �̍ۂ̓���ł��B
+		OnUpdate() で pHint が NULL の際の動作です。
 		
-		���̂Ƃ��A�E�C���h�E�̍X�V�ĕ`����������܂��B
+		このとき、ウインドウの更新再描画も発生します。
 	 */
 	virtual void  OnUpdate_All() ;
 
@@ -470,58 +470,58 @@ protected:
 	
 protected:
 	// --------------------------------
-	///@name ���j���[�R�}���h�̉����֐�
+	///@name メニューコマンドの下請関数
 	// --------------------------------
 	///@{
 	/**	
-		[�ҏW]-[�؂���]
+		[編集]-[切り取り]
 	@param bQueryEnable [in]
-		- TRUE ;	�R�}���h�����ݎ��s�ł��邩�ۂ��̔��肾�����s���܂��B@n
-					�G���[���b�Z�[�W�̕\���͍s���܂���B
-		- FALSE ;	�R�}���h�����s���܂��B @n
-					�G���[�����������ꍇ�́A�G���[���b�Z�[�W�{�b�N�X��\�����܂�	@return
-		����������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
+		- TRUE ;	コマンドが現在実行できるか否かの判定だけを行います。@n
+					エラーメッセージの表示は行いません。
+		- FALSE ;	コマンドを実行します。 @n
+					エラーが発生した場合は、エラーメッセージボックスを表示します	@return
+		成功したら0以上、エラーなら負の数です。
 	*/
 	//int OnEditCut_Process( BOOL bQueryEnable );
 	/**	
-		[�ҏW]-[�R�s�[]
+		[編集]-[コピー]
 	*/
 	//int OnEditCopy_Process( BOOL bQueryEnable );
 	/**	
-		[�ҏW]-[�\��t��]
+		[編集]-[貼り付け]
 	@return
-		����������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	-1 ;	//	�t�H�[�J�X�Z���̈ʒu���s���ł��B
-		-	-2 ;	//	�N���b�v�{�[�h�ɉw�̃f�[�^������܂���
-		-	-3 ;	//	�N���b�v�{�[�h����̃f�[�^�擾�Ɏ��s  ;
+		成功したら0以上、エラーなら負の数です。
+		-	-1 ;	//	フォーカスセルの位置が不正です。
+		-	-2 ;	//	クリップボードに駅のデータがありません
+		-	-3 ;	//	クリップボードからのデータ取得に失敗  ;
 	*/
 	//int OnEditPaste_Process( BOOL bQueryEnable );
 
 	/**	
-		[�ҏW]-[����]
+		[編集]-[消去]
 	*/
 	//int OnEditClear_Process( BOOL bQueryEnable );
 
 	/**	
-		[�ҏW]-[�w��}��]
+		[編集]-[駅を挿入]
 	@return
-		����������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
+		成功したら0以上、エラーなら負の数です。
 	*/
 	//int  OnEDITEkiInsert_Process( BOOL bQueryEnable );
 
 	/**	
-		[�ҏW]-[�w�̔��]]
+		[編集]-[駅の反転]
 	@return
-		����������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	-1 :	���݂͎��s�ł��܂���B(�G���[���b�Z�[�W�͕\�����܂���)
-		-	-2�ȉ�:	�G���[
+		成功したら0以上、エラーなら負の数です。
+		-	-1 :	現在は実行できません。(エラーメッセージは表示しません)
+		-	-2以下:	エラー
 	*/
 	//int  OnEditEkiInvert_Process( BOOL bQueryEnable );
 
 	/**	
-		[�ҏW]-[�w�̃v���p�e�B]
+		[編集]-[駅のプロパティ]
 	@return
-		����������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
+		成功したら0以上、エラーなら負の数です。
 	*/
 	//int  OnEDITEkiProp_Process( BOOL bQueryEnable );
 
@@ -531,19 +531,19 @@ protected:
 
 	//void ChangeNextEkiDistance(CentDedEki* pCentDedEki, int iShiftSecond);
 
-	//�����\�ֈړ�
+	//時刻表へ移動
 	int OnEkiJikokuhyouListMovetoEkiJikokuhyou_Process(BOOL bQueryEnable);
 
-	//�S�w�����\CSV�G�N�X�|�[�g
+	//全駅時刻表CSVエクスポート
 	int OnFileExportAllEkiJikokuhyouCsv_Process(BOOL bQueryEnable);
 	///@}
 
  public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	 CWndDcdGridEkiJikokuhyouList();
-	virtual ~CWndDcdGridEkiJikokuhyouList();
+	virtual ‾CWndDcdGridEkiJikokuhyouList();
 
  protected:
 	// ********************************
@@ -553,38 +553,38 @@ protected:
 	///@}
  public:
 	// ********************************
-	///@name CWndDcdGridEkiJikokuhyouList-����
+	///@name CWndDcdGridEkiJikokuhyouList-属性
 	// ********************************
 	///@{
 	/**
-	��Ԃ̕\����e��ʂōs�����ۂ��̎w��
+	列車の表示を親種別で行うか否かの指定
 
-	-true ; �^�p�\�r���[�ŗ�Ԃ̕\����e��ʂŕ\�����܂��B
+	-true ; 運用表ビューで列車の表示を親種別で表示します。
 	-false ; (default)
 	*/
 	 bool m_bDisplayParentSyubetsu;
 
 	 /**
-	 ��Ԃ̔��ԔԐ���\�����邩�ۂ��̎w��
+	 列車の発車番線を表示するか否かの指定
 
-	 -true ; ��Ԃ̔��ԔԐ���\�����܂��B
+	 -true ; 列車の発車番線を表示します。
 	 -false ; (default)
 	 */
 	 bool m_bDisplayTrack;
 
 
 	 /**
-	 ���w�n����ԂɁ����\�����邩�ۂ��̎w��
+	 当駅始発列車に●印を表示するか否かの指定
 
-	 -true ; ���w�n����ԂɁ����\�����܂��B
+	 -true ; 当駅始発列車に●印を表示します。
 	 -false ; (default)
 	 */
 	 bool m_bDisplayIsShihatsu;
 
 	 /**
-	 ��ʕύX��\�����邩�ۂ��̎w��
+	 種別変更を表示するか否かの指定
 
-	 -true ; ��ʕύX��\�����܂��B
+	 -true ; 種別変更を表示します。
 	 -false ; (default)
 	 */
 	 bool m_bDisplayClassChange;
@@ -592,23 +592,23 @@ protected:
 	///@}
 public:
 	// ********************************
-	///@name CEkiView ����̈Ϗ�
+	///@name CEkiView からの委譲
 	// ********************************
 	///@{
 	/**
-		View��OnUpdate���Ϗ�����܂��B
+		ViewのOnUpdateが委譲されます。
 	*/
 	virtual void OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint);
 
 	/**
-		View��OnActivateView���Ϗ�����܂��B
+		ViewのOnActivateViewが委譲されます。
 	*/
 	virtual void OnActivateView(BOOL bActivate, CView* pActivateView, CView* pDeactiveView) ;
 	///@}
 
 public:
 	// ********************************
-	///@name CWndDcdGridEki-����
+	///@name CWndDcdGridEki-操作
 	// ********************************
 	///@{
 
@@ -661,24 +661,24 @@ public:
 	}
 
 	/**
-		���݃t�H�[�J�X�̂���Z���ɑΉ����āA
-		�w�w�x�v���p�e�B�_�C�A���O���J���A
-		�w�v���p�e�B�̕ҏW���s���܂��B
+		現在フォーカスのあるセルに対応して、
+		『駅』プロパティダイアログを開き、
+		駅プロパティの編集を行います。
 	@param bInsert [in]
-		- true ;	�t�H�[�J�X�̂���Z���̈ʒu�ɁA
-		�V�����w��}�����܂��B 
-		- false ;	�t�H�[�J�X�̂���Z���̈ʒu�́A
-		�w�̃v���p�e�B���X�V���܂��B
-		(�t�H�[�J�X�Z�����A��ԉ��̋󔒂̗�ɂ���ꍇ�́A
-		�����ւ̑}���Ƃ��ē��삵�܂�)
+		- true ;	フォーカスのあるセルの位置に、
+		新しい駅を挿入します。 
+		- false ;	フォーカスのあるセルの位置の、
+		駅のプロパティを更新します。
+		(フォーカスセルが、一番下の空白の列にある場合は、
+		末尾への挿入として動作します)
 	@param bQueryEnable [in]
-		- TRUE ;	�R�}���h�����ݎ��s�ł��邩�ۂ��̔��肾�����s���܂��B@n
-					�G���[���b�Z�[�W�̕\���͍s���܂���B
-		- FALSE ;	�R�}���h�����s���܂��B @n
-					�G���[�����������ꍇ�́A�G���[���b�Z�[�W�{�b�N�X��\�����܂�	@return
-		����������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	-1 ;	//	�t�H�[�J�X�Z���̈ʒu���s���ł��B
-		-	-2 ;	//	�_�C�A���O�{�b�N�X�� Cancel ����܂����B
+		- TRUE ;	コマンドが現在実行できるか否かの判定だけを行います。@n
+					エラーメッセージの表示は行いません。
+		- FALSE ;	コマンドを実行します。 @n
+					エラーが発生した場合は、エラーメッセージボックスを表示します	@return
+		成功したら0以上、エラーなら負の数です。
+		-	-1 ;	//	フォーカスセルの位置が不正です。
+		-	-2 ;	//	ダイアログボックスで Cancel されました。
 	*/
 	//int execEkiPropDlg( bool bInsert , BOOL bQueryEnable ) ;
 
@@ -686,19 +686,19 @@ public:
 private:
 
 	/**
-		�\���ݒ胂�[�h�ɂ��邩�ۂ�
-		false:�\���ݒ胂�[�h�ɂ��܂���
-		true:�\���ݒ胂�[�h�ɂ��܂�
+		表示設定モードにするか否か
+		false:表示設定モードにしません
+		true:表示設定モードにします
 	*/
 	//bool m_bDisplaySettingMode;
 
 protected:
 
-	/**[�\��] - [�\���ݒ胂�[�h�ɂ���]
+	/**[表示] - [表示設定モードにする]
 		@return
-		0�ȏ�͐����A�G���[�Ȃ畉�̐��ł��B
-		- 1 	(bQueryEnable == TRUE�̏ꍇ)[�\���ݒ胂�[�h�ɂ��邪�L���ł��B
-		- 0 	(bQueryEnable == TRUE�̏ꍇ)[�\���ݒ胂�[�h�ɂ���ɂ��܂���]�������ł��B
+		0以上は成功、エラーなら負の数です。
+		- 1 	(bQueryEnable == TRUEの場合)[表示設定モードにするが有効です。
+		- 0 	(bQueryEnable == TRUEの場合)[表示設定モードにするにしません]が無効です。
 		*/
 	//int OnViewDisplaySettingMode_Process(BOOL bQueryEnable);
 
@@ -707,13 +707,13 @@ public:
 	//bool getDisplaySettingMode()const;
 	/**
 	@return
-	- 1 ;	�ݒ��ύX���āA�E�C���h�E���ĕ`�悵�܂����B
-	- 0 ;	�\�����e�͕ω����܂���ł����B
+	- 1 ;	設定を変更して、ウインドウを再描画しました。
+	- 0 ;	表示内容は変化しませんでした。
 	*/
 	//int setDisplaySettingMode(bool value);
 
 	/**
-		�Ō�Ƀ��[�U�[�����͂���CSV�t�@�C����
+		最後にユーザーが入力したCSVファイル名
 	*/
 	CString	m_strCsvFilename;
 	///@}
@@ -721,10 +721,10 @@ public:
 // ----------------------------------------------------------------
 //	MFC
 // ----------------------------------------------------------------
-// �A�g���r���[�g
+// アトリビュート
 public:
 
-// �I�y���[�V����
+// オペレーション
 public:
 	//{{AFX_VIRTUAL(CWndDcdGridEki)
 	//}}AFX_VIRTUAL
@@ -735,7 +735,7 @@ protected:
 	afx_msg void OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags);
 	afx_msg void OnLButtonDblClk(UINT nFlags, CPoint point);
 	afx_msg void OnKeyUp(UINT nChar, UINT nRepCnt, UINT nFlags);
-	//[�ҏW]
+	//[編集]
 	//afx_msg void OnEditCut();
 	//afx_msg void OnUpdateEditCut(CCmdUI* pCmdUI);
 	//afx_msg void OnEditCopy();

@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -90,59 +90,59 @@ namespace DcdGrid{
 // ****************************************************************
 /**
 @brief
- �O���b�h��`�悷��N���X�ł��B
+ グリッドを描画するクラスです。
   
-  �C�ӂ̐���Y��EX����쐬���A�Z���Ƀe�L�X�g��z�u���邱�Ƃ��ł��܂��B
-  �e�L�X�g��z�u�������ƁA DcDraw() ���\�b�h���g���āA�C�ӂ�DC
-(IfDcdTarget�I�u�W�F�N�g)�ɑ΂��ăO���b�h�̕`����s�����Ƃ��ł��܂��B
+  任意の数のY列・X列を作成し、セルにテキストを配置することができます。
+  テキストを配置したあと、 DcDraw() メソッドを使って、任意のDC
+(IfDcdTargetオブジェクト)に対してグリッドの描画を行うことができます。
 
-�g�����|�O���b�h���`�����ăZ���Ƀe�L�X�g��`��
+使い方−グリッドを形成してセルにテキストを描画
  ================================================================
 
-�P�D  setYColumnCount() �E setXColumnCount() ���g���A�O���b�h��Y�񐔁E
-X�񐔂��w�肵�Ă��������B
+１．  setYColumnCount() ・ setXColumnCount() を使い、グリッドのY列数・
+X列数を指定してください。
 
-�Q�D  �eY��EX��̃T�C�Y�i�����E���j��ݒ肵�Ă��������BY��ԍ��EX��ԍ���
-�w�肵�āi���ォ��0�N�_�̐����j getYColumn() �E getXColumn() ��
-�Ăяo�����Ƃɂ��AY��EX���\�� CDcdGridYColumn �E CDcdGridXColumn �I�u�W�F�N�g��
-�|�C���^���擾���邱�Ƃ��ł��܂��B
-�eY��EX��̃T�C�Y�́A�����I�u�W�F�N�g�ɑ΂���
+２．  各Y列・X列のサイズ（高さ・幅）を設定してください。Y列番号・X列番号を
+指定して（左上から0起点の整数） getYColumn() ・ getXColumn() を
+呼び出すことにより、Y列・X列を表す CDcdGridYColumn ・ CDcdGridXColumn オブジェクトの
+ポインタを取得することができます。
+各Y列・X列のサイズは、これらオブジェクトに対して
  CDcdGridXColumn::setColumnSize() , CDcdGridYColumn::setColumnSize() 
-�Őݒ肵�Ă��������B�P�ʂ́A�_���P�ʂł��B
+で設定してください。単位は、論理単位です。
 
-�R�D  Y��ԍ��EX��ԍ����w�肵�� getCell() ���Ăяo�����Ƃɂ��A�Z����\��
- CDcdGridCell �I�u�W�F�N�g�̃|�C���^���擾���邱�Ƃ��ł��܂��B
-CDcdGridCell �́A�Z���̒��g��`�悷�� IfDcDraw �I�u�W�F�N�g��
-�֘A�������Ă���A
-�֘A���� IfDcDraw �I�u�W�F�N�g���g���ĕ`����s���܂��B
-  this �́A�f�t�H���g�ł� CDcdGridCell �I�u�W�F�N�g��
- IfDcDraw �I�u�W�F�N�g�Ƃ��āA CDcdTextbox �I�u�W�F�N�g�𐶐�����
-�o�^���܂�����̂��߁A CDcdTextbox �I�u�W�F�N�g�� m_strText ������
-�e�L�X�g��ݒ肷��ƁA CDcdGrid �̓Z���̒��Ƀe�L�X�g��`�悵�܂��B
+３．  Y列番号・X列番号を指定して getCell() を呼び出すことにより、セルを表す
+ CDcdGridCell オブジェクトのポインタを取得することができます。
+CDcdGridCell は、セルの中身を描画する IfDcDraw オブジェクトと
+関連を持っており、
+関連する IfDcDraw オブジェクトを使って描画を行います。
+  this は、デフォルトでは CDcdGridCell オブジェクトの
+ IfDcDraw オブジェクトとして、 CDcdTextbox オブジェクトを生成して
+登録します｡このため、 CDcdTextbox オブジェクトの m_strText 属性に
+テキストを設定すると、 CDcdGrid はセルの中にテキストを描画します。
 
-(��) �Z���ԍ� (1,0) �ɁA������ "0000" ���Z�b�g���Ă��܂��B
+(例) セル番号 (1,0) に、文字列 "0000" をセットしています。
 @code
 Ou<CDcdTextbox>(pCDcdGrid->getCell( 1 , 0 )->getIfDcDraw())->setText( "0000" )  ;	
 @endcode
 
-�S�D  getItemSize() ���Ăяo�����Ƃɂ��A���̃O���b�h�̑傫����
-�_���P�ʂŎ擾���邱�Ƃ��ł��܂��B�܂��A DcDraw() �ŔC�ӂ�DC�ɃO���b�h��
-�`�悳���邱�Ƃ��ł��܂��B
+４．  getItemSize() を呼び出すことにより、このグリッドの大きさを
+論理単位で取得することができます。また、 DcDraw() で任意のDCにグリッドを
+描画させることができます。
 
 @attention
-CDcdGridXColumn , CDcdGridYColumn �́A�f�t�H���g�ł�
- m_bAutoColumnSize , m_bAutoColumnBorderSize ���^�ɂȂ��Ă��܂��B
-���̑������^���ƁA�O���b�h�̕`��Ɏ��Ԃ�������܂��B
-��̐��������ꍇ�́A CDcdGridXColumn ,  CDcdGridYColumn ��
-m_bAutoColumnSize,m_bAutoColumnBorderSize ���U�ɂ��������ŁA
-m_iColumnSize,m_iColumnBorderSize �ɖ����I��
-�l��ݒ肷�邱�Ƃ������߂��܂��B
+CDcdGridXColumn , CDcdGridYColumn は、デフォルトでは
+ m_bAutoColumnSize , m_bAutoColumnBorderSize が真になっています。
+この属性が真だと、グリッドの描画に時間がかかります。
+列の数が多い場合は、 CDcdGridXColumn ,  CDcdGridYColumn の
+m_bAutoColumnSize,m_bAutoColumnBorderSize を偽にしたうえで、
+m_iColumnSize,m_iColumnBorderSize に明示的に
+値を設定することをお勧めします。
  */
 class CDcdGrid : public IfDcDraw
 {
 private:
 	// --------------------------------
-	//	�C���i�[�^�C�v
+	//	インナータイプ
 	// --------------------------------
 	typedef	std::deque<CDcdGridYColumn*>	CDcdGridYColumnCont ;
 	typedef	std::deque<CDcdGridXColumn*>	CDcdGridXColumnCont ;
@@ -156,190 +156,190 @@ private:
 	
  private:
 	// ********************************
-	///	@name �W��
+	///	@name 集約
 	// ********************************
 	///@{
 
 	/**
-		Y��̐擪(��[)�̌r����\���I�u�W�F�N�g�ł��B
+		Y列の先頭(上端)の罫線を表すオブジェクトです。
 	*/
 	CDcdGridYBorder	m_CDcdGridYBorderTop ;
 
 	/**
-	  	Y��I�u�W�F�N�g��ێ�����R���e�i�ł��B�v�f���́A���  Y�� 
-	  	�ł��B
+	  	Y列オブジェクトを保持するコンテナです。要素数は、常に  Y列数 
+	  	です。
 	  
-	  	�擪�̗v�f(�Y����0)��Y��ԍ�0�A
-	  	2�Ԗځi�Y����1�j��Y��ԍ�1�A
-	  	3�Ԗ�(�Y����2)��Y��ԍ�2�E�E�E�ƂȂ�܂��B
+	  	先頭の要素(添え字0)はY列番号0、
+	  	2番目（添え字1）がY列番号1、
+	  	3番目(添え字2)がY列番号2・・・となります。
 	  
-	  	  �R���X�g���N�^�ł́A��ƂȂ�܂��B
-	  	���̌�́A
+	  	  コンストラクタでは、空となります。
+	  	その後は、
 	  		setYColumnCount() 
-	  	���A�R���e�i�ɑ΂���Y��I�u�W�F�N�g�̒ǉ��E�폜���s���܂��B
+	  	が、コンテナに対してY列オブジェクトの追加・削除を行います。
 	  
-	  	�R���e�i���̃I�u�W�F�N�g�̔j���̐Ӗ��́Athis�ɂ���܂��B
+	  	コンテナ内のオブジェクトの破棄の責務は、thisにあります。
 	 */
 	CDcdGridYColumnCont		m_CDcdGridYColumnCont ;
 
 
 	/**
-		Y��̖���(���[)�̌r����\���I�u�W�F�N�g�ł��B
+		Y列の末尾(下端)の罫線を表すオブジェクトです。
 	*/
 	CDcdGridYBorder	m_CDcdGridYBorderBottom ;
 
 	/**
-		X��̐擪(���[)�̌r����\���I�u�W�F�N�g�ł��B
+		X列の先頭(左端)の罫線を表すオブジェクトです。
 	*/
 	CDcdGridXBorder	m_CDcdGridXBorderTop ;
 
 	/**
-	  	X��I�u�W�F�N�g��ێ�����R���e�i�ł��B�v�f���́A���  X�� 
-	  	�ł��B
+	  	X列オブジェクトを保持するコンテナです。要素数は、常に  X列数 
+	  	です。
 	  
-	  	�擪�̗v�f(�Y����0)��X��ԍ�0�A
-	  	2�Ԗځi�Y����1�j��X��ԍ�1�A
-	  	3�Ԗ�(�Y����2)��X��ԍ�2�E�E�E�ƂȂ�܂��B
+	  	先頭の要素(添え字0)はX列番号0、
+	  	2番目（添え字1）がX列番号1、
+	  	3番目(添え字2)がX列番号2・・・となります。
 	  
-	  	  �R���X�g���N�^�ł́A��ƂȂ�܂��B
-	  	���̌�́A
+	  	  コンストラクタでは、空となります。
+	  	その後は、
 	  		setYColumnCount() 
-	  	���A�R���e�i�ɑ΂���X��I�u�W�F�N�g�̒ǉ��E�폜��X�񂢂܂��B
+	  	が、コンテナに対してX列オブジェクトの追加・削除をX列います。
 	  
-	  	�R���e�i���̃I�u�W�F�N�g�̔j���̐Ӗ��́Athis�ɂ���܂��B
+	  	コンテナ内のオブジェクトの破棄の責務は、thisにあります。
 	 */
 	CDcdGridXColumnCont 	m_CDcdGridXColumnCont ;
 
 	/**
-		X��̖���(�E�[)�̌r����\���I�u�W�F�N�g�ł��B
+		X列の末尾(右端)の罫線を表すオブジェクトです。
 	*/
 	CDcdGridXBorder	m_CDcdGridXBorderBottom ;
 
 	
 	/**
-	  	�Z���I�u�W�F�N�g��ێ�����R���e�i�ł��B
+	  	セルオブジェクトを保持するコンテナです。
 	  	
-	  	���̃R���e�i�̗v�f���́AYColumn �̐��ɓ������Ȃ�܂��B
-	  	���̃R���e�i�̊e�v�f�́A XColumn ���� CDcdGridCell ��ێ�����
-	  	�R���e�i�ł��B
+	  	このコンテナの要素数は、YColumn の数に等しくなります。
+	  	このコンテナの各要素は、 XColumn 分の CDcdGridCell を保持する
+	  	コンテナです。
 	  	
-	  	���������āA
+	  	したがって、
 	  
-	  	m_CDcdGridCellCont[Y��ԍ�][X��ԍ�]
+	  	m_CDcdGridCellCont[Y列番号][X列番号]
 	  
-	  	�̌`���ŁA�Ή����� CDcdGridCell �I�u�W�F�N�g�ɃA�N�Z�X���ł��܂��B
+	  	の形式で、対応する CDcdGridCell オブジェクトにアクセスができます。
 	  
-	  	�R���e�i���̃I�u�W�F�N�g�̔j���̐Ӗ��́Athis�ɂ���܂��B
+	  	コンテナ内のオブジェクトの破棄の責務は、thisにあります。
 	 */
 	CDcdGridCellCont 	m_CDcdGridCellCont ;
 	///@}
 	// ********************************
-	/// @name ����
+	/// @name 属性
 	// ********************************
 	///@{
 
 	/**
-	  	�X�N���[���@�\�ɂ�����A�Œ�Y��
-	  	�i�X�N���[���̑Ώۂ��珜�O�����Y��j�̐��ł��B
+	  	スクロール機能における、固定Y列
+	  	（スクロールの対象から除外されるY列）の数です。
 	  
-	  	�͈͂́A0�ȏ� Y�񐔈ȉ��ł��B
-	  	Y�񐔂��ω������Ƃ��Athis�͂��̑��������͈̔͂ɐ��K�����܂��B
+	  	範囲は、0以上 Y列数以下です。
+	  	Y列数が変化したとき、thisはこの属性をこの範囲に正規化します。
 	  	
-	  	�����l��0�ł��B
+	  	初期値は0です。
 	 */
 	int	m_iYFixColumnCount ;
 
 	/**
-	  	�X�N���[���@�\�ɂ����āA��ԏ㑤�Ɉʒu����Y��ԍ��ł��B
-	  	�������A�Œ�Y��̐����P�ȏ�ł���ꍇ�A���̒l�͌Œ�Y��̉��ׂ�Y��ԍ�
-	  	�ƂȂ�܂��B
+	  	スクロール機能において、一番上側に位置するY列番号です。
+	  	ただし、固定Y列の数が１以上である場合、この値は固定Y列の下隣のY列番号
+	  	となります。
 	  	
-	  	�Ⴆ�΁Am_iYFixColumnCount ��1�ŁA���̒l��2�̏ꍇ�A
-	  	DcDraw() �ł̕`�挋�ʂ́A�ォ��Y��ԍ�0�EY��ԍ�2�̏��ł��B
+	  	例えば、m_iYFixColumnCount が1で、この値が2の場合、
+	  	DcDraw() での描画結果は、上からY列番号0・Y列番号2の順です。
 	  	
-	  	�͈͂́Am_iFixRiwCount �ȏ� Y�񐔖����ł��B
-	  	Y�񐔂��ω������Ƃ��A����� m_iYFixColumnCount ���ω������Ƃ��ɁA
-	  	this�͂��̑��������͈̔͂ɐ��K�����܂��B
+	  	範囲は、m_iFixRiwCount 以上 Y列数未満です。
+	  	Y列数が変化したとき、および m_iYFixColumnCount が変化したときに、
+	  	thisはこの属性をこの範囲に正規化します。
 	  	
-	  	�����l��0�ł��B
+	  	初期値は0です。
 	 */
 	int	m_iYFixafterColumnNumber ;
 
 	/**
-	  	�X�N���[���@�\�ɂ�����A�Œ�X��
-	  	�i�X�N���[���̑Ώۂ��珜�O�����X��j�̐��ł��B
+	  	スクロール機能における、固定X列
+	  	（スクロールの対象から除外されるX列）の数です。
 	  
-	  	�͈͂́A0�ȏ� X�񐔈ȉ��ł��B
-	  	X�񐔂��ω������Ƃ��Athis�͂��̑��������͈̔͂ɐ��K�����܂��B
+	  	範囲は、0以上 X列数以下です。
+	  	X列数が変化したとき、thisはこの属性をこの範囲に正規化します。
 	  	
-	  	�����l��0�ł��B
+	  	初期値は0です。
 	 */
 	int	m_iXFixColumnCount ;
 	
 	/**
-	  	�X�N���[���@�\�ɂ����āA��ԍ����Ɉʒu����X��ԍ��ł��B
-	  	�������A�Œ�X��̐����P�ȏ�ł���ꍇ�A���̒l�͌Œ�X��̉E�ׂ�X��ԍ�
-	  	�ƂȂ�܂��B
+	  	スクロール機能において、一番左側に位置するX列番号です。
+	  	ただし、固定X列の数が１以上である場合、この値は固定X列の右隣のX列番号
+	  	となります。
 	  	
-	  	�Ⴆ�΁Am_iXFixColumnCount ��1�ŁA���̒l��2�̏ꍇ�A
-	  	DcDraw() �ł̕`�挋�ʂ́A������X��ԍ�0�EX��ԍ�2�̏��ł��B
+	  	例えば、m_iXFixColumnCount が1で、この値が2の場合、
+	  	DcDraw() での描画結果は、左からX列番号0・X列番号2の順です。
 	  	
-	  	�͈͂́Am_iXFixColumnCount �ȏ� X�񐔖����ł��B
-	  	X�񐔂��ω������Ƃ��A����� m_iXFixColumnCount ���ω������Ƃ��ɁA
-	  	this�͂��̑��������͈̔͂ɐ��K�����܂��B
+	  	範囲は、m_iXFixColumnCount 以上 X列数未満です。
+	  	X列数が変化したとき、および m_iXFixColumnCount が変化したときに、
+	  	thisはこの属性をこの範囲に正規化します。
 	  	
-	  	�����l��0�ł��B
+	  	初期値は0です。
 	 */
 	int	m_iXFixafterColumnNumber ;
 
 	///@}
 private:
 	// --------------------------------
-	///@name	�����f�[�^( createZoneCache() )
+	///@name	内部データ( createZoneCache() )
 	// --------------------------------
 	///@{
 	/**
-	  	�ʏ�͗v�f�O�ł��B
-	  	createZoneCache() ���� destroyZoneCache() �܂ł̊��Ԃ�
-	  	getXColumnBorderZone() �̌��ʂ�ێ����܂��B
-	  	�Y�����́A��ԍ��{�P�ƂȂ�܂��B
+	  	通常は要素０です。
+	  	createZoneCache() から destroyZoneCache() までの期間は
+	  	getXColumnBorderZone() の結果を保持します。
+	  	添え字は、列番号＋１となります。
 	 */
 	std::deque< CdDcdZone >	m_zonecontXColumnBorderZoneCache ;
 	/**
-	  	�ʏ�͗v�f�O�ł��B
-	  	createZoneCache() ���� destroyZoneCache() �܂ł̊��Ԃ�
-	  	getXColumnZone() �̌��ʂ�ێ����܂��B
-	  	�Y�����́A��ԍ��ƂȂ�܂��B
+	  	通常は要素０です。
+	  	createZoneCache() から destroyZoneCache() までの期間は
+	  	getXColumnZone() の結果を保持します。
+	  	添え字は、列番号となります。
 	 */
 	std::deque< CdDcdZone >	m_zonecontXColumnZoneCache ;
 
 	/**
-	  	�ʏ�͗v�f�O�ł��B
-	  	createZoneCache() ���� destroyZoneCache() �܂ł̊��Ԃ�
-	  	getXColumnZoneOverlap() �̌��ʂ�ێ����܂��B
-	  	�Y�����́A��ԍ��ƂȂ�܂��B
+	  	通常は要素０です。
+	  	createZoneCache() から destroyZoneCache() までの期間は
+	  	getXColumnZoneOverlap() の結果を保持します。
+	  	添え字は、列番号となります。
 	 */
 	std::deque< CdDcdZone >	m_zonecontXColumnZoneOverlapCache ;
 
 	/**
-	  	�ʏ�͗v�f�O�ł��B
-	  	createZoneCache() ���� destroyZoneCache() �܂ł̊��Ԃ�
-	  	getYColumnBorderZone() �̌��ʂ�ێ����܂��B
-	  	�Y�����́A��ԍ��{�P�ƂȂ�܂��B
+	  	通常は要素０です。
+	  	createZoneCache() から destroyZoneCache() までの期間は
+	  	getYColumnBorderZone() の結果を保持します。
+	  	添え字は、列番号＋１となります。
 	 */
 	std::deque< CdDcdZone >	m_zonecontYColumnBorderZoneCache ;
 	/**
-	  	�ʏ�͗v�f�O�ł��B
-	  	createZoneCache() ���� destroyZoneCache() �܂ł̊��Ԃ�
-	  	getYColumnZone() �̌��ʂ�ێ����܂��B
-	  	�Y�����́A��ԍ��ƂȂ�܂��B
+	  	通常は要素０です。
+	  	createZoneCache() から destroyZoneCache() までの期間は
+	  	getYColumnZone() の結果を保持します。
+	  	添え字は、列番号となります。
 	 */
 	std::deque< CdDcdZone >	m_zonecontYColumnZoneCache ;
 	/**
-	  	�ʏ�͗v�f�O�ł��B
-	  	createZoneCache() ���� destroyZoneCache() �܂ł̊��Ԃ�
-	  	getYColumnZoneOverlap() �̌��ʂ�ێ����܂��B
-	  	�Y�����́A��ԍ��ƂȂ�܂��B
+	  	通常は要素０です。
+	  	createZoneCache() から destroyZoneCache() までの期間は
+	  	getYColumnZoneOverlap() の結果を保持します。
+	  	添え字は、列番号となります。
 	 */
 	std::deque< CdDcdZone >	m_zonecontYColumnZoneOverlapCache ;
 	///@}
@@ -347,154 +347,154 @@ private:
 
 protected:
 	// --------------------------------
-	///@name	�����֐�
+	///@name	下請関数
 	// --------------------------------
 	///@{
 	/**
-	  	�w���X��͈̔͂̑傫�������߂܂��B
+	  	指定のX列の範囲の大きさを求めます。
 	   @param pIfDcdTarget [in]
-	  	�`��Ώۂ��w�肵�Ă��������B 
+	  	描画対象を指定してください。 
 	   @param iXColumnNumberSrc [in]
-	  	�N�_��X��ԍ����w�肵�Ă��������B
-	  	bSrcIsBorder ���^�̏ꍇ�����A-1���w��ł��܂��B
-	  	INT_MAX �́A�ŏI����w�肵�����̂Ƃ݂Ȃ��܂��B
+	  	起点のX列番号を指定してください。
+	  	bSrcIsBorder が真の場合だけ、-1が指定できます。
+	  	INT_MAX は、最終列を指定したものとみなします。
 	   @param bSrcIsBorder [in]
-	  	�N�_��X��ԍ����A����X��ԍ��̋��E�������w�肵�Ă���Ȃ�^
+	  	起点のX列番号が、そのX列番号の境界部分を指定しているなら真
 	   @param iXColumnNumberDst [in]
-	  	�I�_��X��ԍ����w�肵�Ă��������B
-	  	bDstIsBorder ���^�̏ꍇ�����A-1���w��ł��܂��B
-	  	INT_MAX �́A�ŏI����w�肵�����̂Ƃ݂Ȃ��܂��B
+	  	終点のX列番号を指定してください。
+	  	bDstIsBorder が真の場合だけ、-1が指定できます。
+	  	INT_MAX は、最終列を指定したものとみなします。
 	   @param bDstIsBorder [in]
-	  	�I�_��X��ԍ����A����X��ԍ��̋��E�������w�肵�Ă���Ȃ�^
+	  	終点のX列番号が、そのX列番号の境界部分を指定しているなら真
 	   @return
-	  	�T�C�Y��Ԃ��܂��B
+	  	サイズを返します。
 	  
-	  	�i��j
+	  	（例）
 	  
-	  	��ԍ�-1�̋��E������A��ԍ�2�̗�܂ł͈̔͂����߂�ꍇ�́A
+	  	列番号-1の境界線から、列番号2の列までの範囲を求める場合は、
 	  	( iXColumnNumberSrc ,bSrcIsBorder ,
 	  		iXColumnNumberDst ,bDstIsBorder) = ( -1 , true , 2 , false )
-	  	�ƂȂ�܂�
+	  	となります
 	 */
 	int getXColumnsSize( 	IfDcdTarget* pIfDcdTarget ,
 			int iXColumnNumberSrc , bool bSrcIsBorder ,
 			int iXColumnNumberDst , bool bDstIsBorder) ;
 
 	/**
-	  	�w���Y��͈̔͂̑傫�������߂܂��B
+	  	指定のY列の範囲の大きさを求めます。
 	   @param pIfDcdTarget [in]
-	  	�`��Ώۂ��w�肵�Ă��������B 
+	  	描画対象を指定してください。 
 	   @param iYColumnNumberSrc [in]
-	  	�N�_��Y��ԍ����w�肵�Ă��������B
-	  	bSrcIsBorder ���^�̏ꍇ�����A-1���w��ł��܂��B
-	  	INT_MAX �́A�ŏI����w�肵�����̂Ƃ݂Ȃ��܂��B
+	  	起点のY列番号を指定してください。
+	  	bSrcIsBorder が真の場合だけ、-1が指定できます。
+	  	INT_MAX は、最終列を指定したものとみなします。
 	   @param bSrcIsBorder [in]
-	  	�N�_��Y��ԍ����A����Y��ԍ��̋��E�������w�肵�Ă���Ȃ�^
+	  	起点のY列番号が、そのY列番号の境界部分を指定しているなら真
 	   @param iYColumnNumberDst [in]
-	  	�I�_��Y��ԍ����w�肵�Ă��������B
-	  	bDstIsBorder ���^�̏ꍇ�����A-1���w��ł��܂��B
-	  	INT_MAX �́A�ŏI����w�肵�����̂Ƃ݂Ȃ��܂��B
+	  	終点のY列番号を指定してください。
+	  	bDstIsBorder が真の場合だけ、-1が指定できます。
+	  	INT_MAX は、最終列を指定したものとみなします。
 	   @param bDstIsBorder [in]
-	  	�I�_��Y��ԍ����A����Y��ԍ��̋��E�������w�肵�Ă���Ȃ�^
+	  	終点のY列番号が、そのY列番号の境界部分を指定しているなら真
 	   @return
-	  	�T�C�Y��Ԃ��܂��B
+	  	サイズを返します。
 	  
-	  	�i��j
+	  	（例）
 	  
-	  	��ԍ�-1�̋��E������A��ԍ�2�̗�܂ł͈̔͂����߂�ꍇ�́A
+	  	列番号-1の境界線から、列番号2の列までの範囲を求める場合は、
 	  	( iYColumnNumberSrc ,bSrcIsBorder ,
 	  		iYColumnNumberDst ,bDstIsBorder) = ( -1 , true , 2 , false )
-	  	�ƂȂ�܂�
+	  	となります
 	 */
 	int getYColumnsSize( 	IfDcdTarget* pIfDcdTarget ,
 			int iYColumnNumberSrc , bool bSrcIsBorder ,
 			int iYColumnNumberDst , bool bDstIsBorder) ;
 
 	/**
-	  	setYColumnCount() �� insertYColumn() �̉����֐��ł��B
+	  	setYColumnCount() と insertYColumn() の下請関数です。
 	  
-	  	Y����P�A�w��̈ʒu�ɒǉ����܂��B
-	  	���̊֐��́A 
+	  	Y列を１つ、指定の位置に追加します。
+	  	この関数は、 
 	  	m_CDcdGridXColumnCont,m_CDcdGridYColumnCont,
 	  	m_CDcdGridCellCont
-	  	�̑����������s���܂��B
-	  	adjustProp() �͍s���܂���B
+	  	の増減だけを行います。
+	  	adjustProp() は行いません。
 	   @param iYColumnNumber
-	  	Y��ԍ����w�肵�Ă��������B
-	  	�V�����ǉ����ꂽY�񂪁A����Y��ԍ��ɂȂ�܂��B
-	  	�͈͂� 0 �ȏ� getYColumnNumber() �ȉ��ŁA
-	  	0 �Ȃ�擪�EgetYColumnNumber() �Ȃ疖���ւ̒ǉ��ƂȂ�܂��B
-	  	  �������A INT_MAX ���w�肷��ƁA�������w�肵�����ƂɂȂ�܂��B
+	  	Y列番号を指定してください。
+	  	新しく追加されたY列が、このY列番号になります。
+	  	範囲は 0 以上 getYColumnNumber() 以下で、
+	  	0 なら先頭・getYColumnNumber() なら末尾への追加となります。
+	  	  ただし、 INT_MAX を指定すると、末尾を指定したことになります。
 	   @return
-	  	����������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-	   -	-2 ;	//	�C���f�N�X���s��
+	  	成功したら0以上、エラーなら負の数です。
+	   -	-2 ;	//	インデクスが不正
 	 */
 	int insertYColumn_insertColumnCell( int iYColumnNumber ) ;
 
 	/**
-	  	setXColumnCount() �� insertXColumn() �̉����֐��ł��B
+	  	setXColumnCount() と insertXColumn() の下請関数です。
 	  
-	  	X����P�A�w��̈ʒu�ɒǉ����܂��B
-	  	���̊֐��́A 
+	  	X列を１つ、指定の位置に追加します。
+	  	この関数は、 
 	  	m_CDcdGridXColumnCont,m_CDcdGridYColumnCont,
 	  	m_CDcdGridCellCont
-	  	�̑����������s���܂��B
-	  	adjustProp() �͍s���܂���B
+	  	の増減だけを行います。
+	  	adjustProp() は行いません。
 	   @param iXColumnNumber
-	  	X��ԍ����w�肵�Ă��������B
-	  	�V�����ǉ����ꂽX�񂪁A����X��ԍ��ɂȂ�܂��B
-	  	�͈͂� 0 �ȏ� getXColumnNumber() �ȉ��ŁA
-	  	0 �Ȃ�擪�EgetXColumnNumber() �Ȃ疖���ւ̒ǉ��ƂȂ�܂��B
-	  	  �������A INT_MAX ���w�肷��ƁA�������w�肵�����ƂɂȂ�܂��B
+	  	X列番号を指定してください。
+	  	新しく追加されたX列が、このX列番号になります。
+	  	範囲は 0 以上 getXColumnNumber() 以下で、
+	  	0 なら先頭・getXColumnNumber() なら末尾への追加となります。
+	  	  ただし、 INT_MAX を指定すると、末尾を指定したことになります。
 	   @return
-	  	����������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-	   -	-2 ;	//	�C���f�N�X���s��
+	  	成功したら0以上、エラーなら負の数です。
+	   -	-2 ;	//	インデクスが不正
 	 */
 	int insertXColumn_insertColumnCell( int iXColumnNumber ) ;
 	
 	/**
-	  	setYColumnCount() �� eraseYColumn() �̉����֐��ł��B
+	  	setYColumnCount() と eraseYColumn() の下請関数です。
 	  
-	  	Y����P�A�폜���܂��B
-	  	���̊֐��́A 
+	  	Y列を１つ、削除します。
+	  	この関数は、 
 	  	m_CDcdGridXColumnCont,m_CDcdGridYColumnCont,
 	  	m_CDcdGridCellCont
-	  	�̑����������s���܂��B
-	  	adjustProp() �͍s���܂���B
+	  	の増減だけを行います。
+	  	adjustProp() は行いません。
 	   @param iYColumnNumber
-	  	Y��ԍ����w�肵�Ă��������B
-	  	�͈͂� 0 �ȏ� getYColumnNumber() �����ł��B
-	  	  �������A INT_MAX ���w�肷��ƁA�������w�肵�����ƂɂȂ�܂��B
+	  	Y列番号を指定してください。
+	  	範囲は 0 以上 getYColumnNumber() 未満です。
+	  	  ただし、 INT_MAX を指定すると、末尾を指定したことになります。
 	   @return
-	  	����������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-	   -	-2 ;	//	�C���f�N�X���s��
+	  	成功したら0以上、エラーなら負の数です。
+	   -	-2 ;	//	インデクスが不正
 	 */
 	int eraseYColumn_eraseColumnCell( int iYColumnNumber ) ;
 
 	/**
-	  	setXColumnCount() �� eraseXColumn() �̉����֐��ł��B
+	  	setXColumnCount() と eraseXColumn() の下請関数です。
 	  
-	  	X����P�A�폜���܂��B
-	  	���̊֐��́A 
+	  	X列を１つ、削除します。
+	  	この関数は、 
 	  	m_CDcdGridXColumnCont,m_CDcdGridYColumnCont,
 	  	m_CDcdGridCellCont
-	  	�̑����������s���܂��B
-	  	adjustProp() �͍s���܂���B
+	  	の増減だけを行います。
+	  	adjustProp() は行いません。
 	   @param iXColumnNumber
-	  	X��ԍ����w�肵�Ă��������B
-	  	�͈͂� 0 �ȏ� getXColumnNumber() �����ł��B
-	  	  �������A INT_MAX ���w�肷��ƁA�������w�肵�����ƂɂȂ�܂��B
+	  	X列番号を指定してください。
+	  	範囲は 0 以上 getXColumnNumber() 未満です。
+	  	  ただし、 INT_MAX を指定すると、末尾を指定したことになります。
 	   @return
-	  	����������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-	   -	-2 ;	//	�C���f�N�X���s��
+	  	成功したら0以上、エラーなら負の数です。
+	   -	-2 ;	//	インデクスが不正
 	 */
 	int eraseXColumn_eraseColumnCell( int iXColumnNumber ) ;
 
 	/**
-	  	Y��ԍ��EX��ԍ��Ɋ֌W���鑮���̐��K�����s���܂��B
-	  	Y���X���ǉ��E�폜�����ꍇ�ɂ́A���̊֐����g����Y��ԍ��E
-	  	X��ԍ��̐��K�����s���܂��B
-	  	���K���́A�ȉ��̏��ɍs���܂��B
+	  	Y列番号・X列番号に関係する属性の正規化を行います。
+	  	Y列やX列を追加・削除した場合には、この関数を使ってY列番号・
+	  	X列番号の正規化を行います。
+	  	正規化は、以下の順に行います。
 	  
 	  
 	  	- m_iXFixColumnCount
@@ -512,7 +512,7 @@ protected:
 	/**
 	  	getXColumnZone(),getXColumnBorderZone(),getXColumnZoneOverlap()
 	  	getYColumnZone(),getYColumnBorderZone(),getYColumnZoneOverlap()
-	  	�̌��ʂ̃L���b�V����
+	  	の結果のキャッシュを
 	  
 	  	-	m_zonecontXColumnBorderZoneCache ;
 	  	-	m_zonecontXColumnZoneCache ;
@@ -521,19 +521,19 @@ protected:
 	  	-	m_zonecontYColumnZoneCache ;
 	  	-	m_zonecontXYColumnZoneOverlapCache ;
 	  
-	  	�ɍ쐬���܂��B
+	  	に作成します。
 	@param pIfDcdTarget [in]
-	  	�`��Ώۂ��w�肵�Ă��������B 
+	  	描画対象を指定してください。 
 	@return
-		- true : �L���b�V�����쐬���܂����B
-		- false: �L���b�V�������łɑ��݂��܂��B
+		- true : キャッシュを作成しました。
+		- false: キャッシュがすでに存在します。
 	*/
 	bool createZoneCache( IfDcdTarget* pIfDcdTarget ) ;
 
 	/**
 	  	getXColumnZone(),getXColumnBorderZone(),getXColumnZoneOverlap()
 	  	getYColumnZone(),getYColumnBorderZone(),getYColumnZoneOverlap()
-	  	�̌��ʂ̃L���b�V��
+	  	の結果のキャッシュ
 	  
 	  	-	m_zonecontXColumnBorderZoneCache ;
 	  	-	m_zonecontXColumnZoneCache ;
@@ -542,87 +542,87 @@ protected:
 	  	-	m_zonecontYColumnZoneCache ;
 	  	-	m_zonecontXYColumnZoneOverlapCache ;
 	  
-	  	��j�����܂��B
+	  	を破棄します。
 	 */
 	void destroyZoneCache() ;
 	///@}
 	// --------------------------------
-	///@name	DcDraw�̉����֐�
+	///@name	DcDrawの下請関数
 	// --------------------------------
 	///@{
 
 	/**
-		�u�w���X�r��(�c�r��)�́A�w���Y��̈ʒu���A�����Z���ɂ���ĕ\������Ȃ��v
-		�ꍇ�𔻒肵�܂��B
+		「指定のX罫線(縦罫線)の、指定のY列の位置が、結合セルによって表示されない」
+		場合を判定します。
 	@param iXColumnNumber
-		�Ώۂ̌r����X��Index���w�肵�Ă��������B
+		対象の罫線のX列Indexを指定してください。
 	@param iYColumnNumber
-		�`��ꏊ��Y��Index���w�肵�Ă��������B
+		描画場所のY列Indexを指定してください。
 	*/
 	bool IsXBorderOverlappedByAttachedCell( int iXColumnNumber , int iYColumnNumber ) ;
 
 
 	/**
-		�u�w���Y�r��(���r��)�́A�w���X��̈ʒu���A�����Z���ɂ���ĕ\������Ȃ��v
-		�ꍇ�𔻒肵�܂��B
+		「指定のY罫線(横罫線)の、指定のX列の位置が、結合セルによって表示されない」
+		場合を判定します。
 	@param iXColumnNumber
-		�`��ꏊ��X��Index���w�肵�Ă��������B
+		描画場所のX列Indexを指定してください。
 	@param iYColumnNumber
-		Y�r��(���r��)�̗�Index���w�肵�Ă��������B
+		Y罫線(横罫線)の列Indexを指定してください。
 	*/
 	bool IsYBorderOverlappedByAttachedCell( int iXColumnNumber , int iYColumnNumber ) ;
 
 
 	/**
-		DcDraw�̉������֐��ł��B
-		X��̌r����`�悵�܂��B
-		Y��̌Œ�񑤂ւ̕`��E�X�N���[���\�񑤂ւ̕`��̂Q����I�����邱�Ƃ��ł��܂��B
+		DcDrawの下請け関数です。
+		X列の罫線を描画します。
+		Y列の固定列側への描画・スクロール可能列側への描画の２つから選択することができます。
 	@param isYFixColumn
-		- true: Y��̌Œ�񑤂ւ̕`��
-		- false: Y��̃X�N���[���\�񑤂ւ̕`��
+		- true: Y列の固定列側への描画
+		- false: Y列のスクロール可能列側への描画
 	@param pTarget 
-		�`��̈���w�肵�Ă��������B
-		���̕`��̈�́A�N���b�s���O����Ă���K�v������܂��B
+		描画領域を指定してください。
+		この描画領域は、クリッピングされている必要があります。
 	@param iXColumnNumber
-	  	 X��ԍ����w�肵�Ă��������B�͈͂́A-1�ȏ� getXColumnCount() �����ł��B
-	  	-	-1 ;	���[�̌r���I�u�W�F�N�g�ɑ΂���`��B
+	  	 X列番号を指定してください。範囲は、-1以上 getXColumnCount() 未満です。
+	  	-	-1 ;	左端の罫線オブジェクトに対する描画。
 	  	-	getXColumnCount()-1 , INT_MAX ;	
-	  		�E�[�̌r���I�u�W�F�N�g�ɑ΂���`��B
+	  		右端の罫線オブジェクトに対する描画。
 	@return
-		- true:���炩�̕`����s���܂����B
-		- false:�`����s���܂���ł����B
+		- true:何らかの描画を行いました。
+		- false:描画を行いませんでした。
 	*/
 	bool DcDraw_DrawXColumn( bool isYFixColumn , CaDcdTargetClip* pTarget , int iXColumnNumber ) ;
 
 
 	/**
-		DcDraw�̉������֐��ł��B
-		Y��̌r����`�悵�܂��B
-		X��̌Œ�񑤂ւ̕`��E�X�N���[���\�񑤂ւ̕`��̂Q����I�����邱�Ƃ��ł��܂��B
+		DcDrawの下請け関数です。
+		Y列の罫線を描画します。
+		X列の固定列側への描画・スクロール可能列側への描画の２つから選択することができます。
 	@param isXFixColumn
-		- true: X��̌Œ�񑤂ւ̕`��
-		- false: X��̃X�N���[���\�񑤂ւ̕`��
+		- true: X列の固定列側への描画
+		- false: X列のスクロール可能列側への描画
 	@param pTarget 
-		�`��̈���w�肵�Ă��������B
-		���̕`��̈�́A�N���b�s���O����Ă���K�v������܂��B
+		描画領域を指定してください。
+		この描画領域は、クリッピングされている必要があります。
 	@param iYColumnNumber
-	  	 Y��ԍ����w�肵�Ă��������B�͈͂́A-1�ȏ� getYColumnCount() �����ł��B
-	  	-	-1 ;	���[�̌r���I�u�W�F�N�g�ɑ΂���`��B
+	  	 Y列番号を指定してください。範囲は、-1以上 getYColumnCount() 未満です。
+	  	-	-1 ;	左端の罫線オブジェクトに対する描画。
 	  	-	getYColumnCount()-1 , INT_MAX ;	
-	  		�E�[�̌r���I�u�W�F�N�g�ɑ΂���`��B
+	  		右端の罫線オブジェクトに対する描画。
 	@return
-		- true:���炩�̕`����s���܂����B
-		- false:�`����s���܂���ł����B
+		- true:何らかの描画を行いました。
+		- false:描画を行いませんでした。
 	*/
 	bool DcDraw_DrawYColumn( bool isXFixColumn , CaDcdTargetClip* pTarget , int iYColumnNumber ) ;
 
 	///@}
  public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	CDcdGrid() ;
-	virtual ~CDcdGrid() ;
+	virtual ‾CDcdGrid() ;
 	
  private:
 	CDcdGrid( const CDcdGrid& ev ){} ;
@@ -634,32 +634,32 @@ protected:
 	// ********************************
 	///@{
 	/**
-	 	�`���v�����܂��B
-	 	���̊֐��́A pIfDcdTarget �ɁA�`����s���܂��B
+	 	描画を要求します。
+	 	この関数は、 pIfDcdTarget に、描画を行います。
 	 @param pIfDcdTarget  [in]
-	 	���̃I�u�W�F�N�g�ɕ`����s�킹����DC�Ɨ̈���w�肵�Ă��������B
+	 	このオブジェクトに描画を行わせたいDCと領域を指定してください。
 	 @return
-	 	�`����s�����ꍇ�͐^�E���̗̈�ւ̕`�悪�ł��Ȃ������ꍇ�͋U�ł��B
+	 	描画を行った場合は真・この領域への描画ができなかった場合は偽です。
 	*/
 	virtual bool DcDraw( IfDcdTarget* pIfDcdTarget ) ;
 	
 	/**
-	 	���̃I�u�W�F�N�g���`�悷��A�C�e���̑傫�������܂��Ă���ꍇ�́A
-	 	���̑傫���𒲂ׂ邱�Ƃ��ł��܂��B
-	 	�֐��Ăяo������������ IfDcDraw �I�u�W�F�N�g��`�悷��ꍇ�ɂ́A
-	 	�֐��Ăяo�����́A���̊֐��ŃA�C�e���̑傫���𒲂ׂāA
-	 	�K�؂ȃ��C�A�E�g���l���Ă���ADcDraw() �����s���邱�Ƃ��ł��܂��B
+	 	このオブジェクトが描画するアイテムの大きさが決まっている場合は、
+	 	その大きさを調べることができます。
+	 	関数呼び出し元が複数の IfDcDraw オブジェクトを描画する場合には、
+	 	関数呼び出し元は、この関数でアイテムの大きさを調べて、
+	 	適切なレイアウトを考えてから、DcDraw() を実行することができます。
 	 @param pIfDcdTarget [in]
-	 	���̃I�u�W�F�N�g�ɕ`����s�킹����DC�Ɨ̈���w�肵�Ă��������B
+	 	このオブジェクトに描画を行わせたいDCと領域を指定してください。
 	 @param pCdDcdSizeXy [out]
-	 	���̃I�u�W�F�N�g�̕`�悷��A�C�e���̑傫�������܂��Ă���ꍇ�́A
-	 	���̊֐��͂��̃A�h���X�ɁA���̃A�C�e���̃T�C�Y��Ԃ��܂��B
-	 	���̃I�u�W�F�N�g�̕`�悷��A�C�e���̑傫�������܂��Ă��Ȃ��ꍇ�́A
-	 	���̒l�͕s��ł��B
+	 	このオブジェクトの描画するアイテムの大きさが決まっている場合は、
+	 	この関数はこのアドレスに、そのアイテムのサイズを返します。
+	 	このオブジェクトの描画するアイテムの大きさが決まっていない場合は、
+	 	この値は不定です。
 	 @return
-	 	���̃I�u�W�F�N�g�̕`�悷��A�C�e���̑傫�������܂��Ă��āA
-	 	���̑傫���� *pCdDcdSizeXy�ɏ������񂾏ꍇ�͐^�ł��B
-	 	�����łȂ��ꍇ�́A�U�ł��B
+	 	このオブジェクトの描画するアイテムの大きさが決まっていて、
+	 	その大きさを *pCdDcdSizeXyに書き込んだ場合は真です。
+	 	そうでない場合は、偽です。
 	*/
 	virtual bool getItemSize( IfDcdTarget* pIfDcdTarget , 
 							CdDcdSizeXy* pCdDcdSizeXy ) ;
@@ -667,185 +667,185 @@ protected:
 	///@}
  protected:
 	// --------------------------------
-	///@name �s�E��E�Z���̏�����
+	///@name 行・列・セルの初期化
 	// --------------------------------
 	///@{
 	/**
-	  	this �́A�V���� Column ���������ꂽ����ɁA���̊֐����Ăяo���܂��B
-	  	�V���� Column �ɑ΂��āA IfDcDraw �C���^�[�t�F�[�X�I�u�W�F�N�g
-	  	�̐����E�o�^���͂��߂Ƃ���
-	  	���������s���܂��B
+	  	this は、新しい Column が生成された直後に、この関数を呼び出します。
+	  	新しい Column に対して、 IfDcDraw インターフェースオブジェクト
+	  	の生成・登録をはじめとした
+	  	初期化を行います。
 	  
-	  	���̊֐����I�[�o���C�h���邱�Ƃɂ��A Column �ɓ��L�̏�������
-	  	�s�����Ƃ��ł��܂��B
+	  	この関数をオーバライドすることにより、 Column に特有の初期化を
+	  	行うことができます。
 	  	
 	   @param iXColumnNumber [in]
-	  	  �V���� Column �̗�ԍ��ł��B
+	  	  新しい Column の列番号です。
 	   @param pCDcdGridXColumn [in,out]
-	  	  �V�����������ꂽ CDcdGridXColumn �I�u�W�F�N�g�ł��B
-	  	  ���̊֐��͂��̃I�u�W�F�N�g�ɑ΂��āA���������s�����Ƃ��ł��܂��B
+	  	  新しく生成された CDcdGridXColumn オブジェクトです。
+	  	  この関数はこのオブジェクトに対して、初期化を行うことができます。
 	  	
-	   [�I�[�o���C�h]
-	  	   CDcdLine �I�u�W�F�N�g�� new �Ő������A
-	  	pCDcdGridXColumn �� IfDcDraw �C���^�[�t�F�[�X�ɓo�^���܂��B
-	  	���̂Ƃ��̑����́A�����P�̍��̎���
-	  	�ƂȂ�܂��B
+	   [オーバライド]
+	  	   CDcdLine オブジェクトを new で生成し、
+	  	pCDcdGridXColumn の IfDcDraw インターフェースに登録します。
+	  	このときの属性は、太さ１の黒の実線
+	  	となります。
 	 */
 	virtual void OnCreateXColumn( int iXColumnNumber , 
 		CDcdGridXColumn* pCDcdGridXColumn ) ;
 	
 	/**
-	  	this �́AColumn ���j������钼�O�ɁA���̊֐����Ăяo���܂��B
-	  	�j������� Column �ɑ΂��āA IfDcDraw �C���^�[�t�F�[�X�I�u�W�F�N�g��
-	  	�o�^�����E�j�����͂��߂Ƃ���
-	  	��n�����s���܂��B
+	  	this は、Column が破棄される直前に、この関数を呼び出します。
+	  	破棄される Column に対して、 IfDcDraw インターフェースオブジェクトの
+	  	登録解除・破棄をはじめとした
+	  	後始末を行います。
 	  
-	  	���̊֐����I�[�o���C�h���邱�Ƃɂ��A Column �ɓ��L�̌�n����
-	  	�s�����Ƃ��ł��܂��B
+	  	この関数をオーバライドすることにより、 Column に特有の後始末を
+	  	行うことができます。
 	  	
 	   @param iXColumnNumber [in]
-	  	  �j������� Column �̗�ԍ��ł��B
+	  	  破棄される Column の列番号です。
 	   @param pCDcdGridXColumn [in,out]
-	  	  �j������� CDcdGridXColumn �I�u�W�F�N�g�ł��B
-	  	  ���̊֐��͂��̃I�u�W�F�N�g�ɑ΂��āA��n�����s�����Ƃ��ł��܂��B
+	  	  破棄される CDcdGridXColumn オブジェクトです。
+	  	  この関数はこのオブジェクトに対して、後始末を行うことができます。
 	  	
-	   [�I�[�o���C�h]
-	  	pCDcdGridXColumn �� IfDcDraw �C���^�[�t�F�[�X��o�^�������A
-	  	�I�u�W�F�N�g�� delete �Ŕj�����܂��B
+	   [オーバライド]
+	  	pCDcdGridXColumn の IfDcDraw インターフェースを登録解除し、
+	  	オブジェクトを delete で破棄します。
 	 */
 	virtual void OnDeleteXColumn( int iXColumnNumber , 
 		CDcdGridXColumn* pCDcdGridXColumn ) ;
 
 	/**
-	  	this �́A�V���� Column ���������ꂽ����ɁA���̊֐����Ăяo���܂��B
-	  	�V���� Column �ɑ΂��āA IfDcDraw �C���^�[�t�F�[�X�I�u�W�F�N�g
-	  	�̐����E�o�^���͂��߂Ƃ���
-	  	���������s���܂��B
+	  	this は、新しい Column が生成された直後に、この関数を呼び出します。
+	  	新しい Column に対して、 IfDcDraw インターフェースオブジェクト
+	  	の生成・登録をはじめとした
+	  	初期化を行います。
 	  
-	  	���̊֐����I�[�o���C�h���邱�Ƃɂ��A Column �ɓ��L�̏�������
-	  	�s�����Ƃ��ł��܂��B
+	  	この関数をオーバライドすることにより、 Column に特有の初期化を
+	  	行うことができます。
 	  	
 	   @param iYColumnNumber [in]
-	  	  �V���� Column �̗�ԍ��ł��B
+	  	  新しい Column の列番号です。
 	   @param pCDcdGridYColumn [in,out]
-	  	  �V�����������ꂽ CDcdGridYColumn �I�u�W�F�N�g�ł��B
-	  	  ���̊֐��͂��̃I�u�W�F�N�g�ɑ΂��āA���������s�����Ƃ��ł��܂��B
+	  	  新しく生成された CDcdGridYColumn オブジェクトです。
+	  	  この関数はこのオブジェクトに対して、初期化を行うことができます。
 	  	
-	   [�I�[�o���C�h]
-	  	   CDcdLine �I�u�W�F�N�g�� new �Ő������A
-	  	pCDcdGridYColumn �� IfDcDraw �C���^�[�t�F�[�X�ɓo�^���܂��B
-	  	���̂Ƃ��̑����́A�����P�̍��̎���
-	  	�ƂȂ�܂��B
+	   [オーバライド]
+	  	   CDcdLine オブジェクトを new で生成し、
+	  	pCDcdGridYColumn の IfDcDraw インターフェースに登録します。
+	  	このときの属性は、太さ１の黒の実線
+	  	となります。
 	 */
 	virtual void OnCreateYColumn( int iYColumnNumber , 
 		CDcdGridYColumn* pCDcdGridYColumn ) ;
 	
 	/**
-	  	this �́AColumn ���j������钼�O�ɁA���̊֐����Ăяo���܂��B
-	  	�j������� Column �ɑ΂��āA IfDcDraw �C���^�[�t�F�[�X�I�u�W�F�N�g��
-	  	�o�^�����E�j�����͂��߂Ƃ���
-	  	��n�����s���܂��B
+	  	this は、Column が破棄される直前に、この関数を呼び出します。
+	  	破棄される Column に対して、 IfDcDraw インターフェースオブジェクトの
+	  	登録解除・破棄をはじめとした
+	  	後始末を行います。
 	  
-	  	���̊֐����I�[�o���C�h���邱�Ƃɂ��A Column �ɓ��L�̌�n����
-	  	�s�����Ƃ��ł��܂��B
+	  	この関数をオーバライドすることにより、 Column に特有の後始末を
+	  	行うことができます。
 	  	
 	   @param iYColumnNumber [in]
-	  	  �j������� Column �̗�ԍ��ł��B
+	  	  破棄される Column の列番号です。
 	   @param pCDcdGridYColumn [in,out]
-	  	  �j������� CDcdGridYColumn �I�u�W�F�N�g�ł��B
-	  	  ���̊֐��͂��̃I�u�W�F�N�g�ɑ΂��āA��n�����s�����Ƃ��ł��܂��B
+	  	  破棄される CDcdGridYColumn オブジェクトです。
+	  	  この関数はこのオブジェクトに対して、後始末を行うことができます。
 	  	
-	   [�I�[�o���C�h]
-	  	pCDcdGridYColumn �� IfDcDraw �C���^�[�t�F�[�X��o�^�������A
-	  	�I�u�W�F�N�g�� delete �Ŕj�����܂��B
+	   [オーバライド]
+	  	pCDcdGridYColumn の IfDcDraw インターフェースを登録解除し、
+	  	オブジェクトを delete で破棄します。
 	 */
 	virtual void OnDeleteYColumn( int iYColumnNumber , 
 		CDcdGridYColumn* pCDcdGridYColumn ) ;
 
 	/**
-	  	this �́A�V���� Cell ���������ꂽ����ɁA���̊֐����Ăяo���܂��B
-	  	�V���� Cell �ɑ΂��āA IfDcDraw �C���^�[�t�F�[�X�I�u�W�F�N�g
-	  	�̐����E�o�^���͂��߂Ƃ���
-	  	���������s���܂��B
+	  	this は、新しい Cell が生成された直後に、この関数を呼び出します。
+	  	新しい Cell に対して、 IfDcDraw インターフェースオブジェクト
+	  	の生成・登録をはじめとした
+	  	初期化を行います。
 	  
-	  	���̊֐����I�[�o���C�h���邱�Ƃɂ��A Cell �ɓ��L�̏�������
-	  	�s�����Ƃ��ł��܂��B
+	  	この関数をオーバライドすることにより、 Cell に特有の初期化を
+	  	行うことができます。
 	  	
 	   @param iXColumnNumber [in]
-	  	  �V���� Cell ��X��ԍ��ł��B
+	  	  新しい Cell のX列番号です。
 	   @param iYColumnNumber [in]
-	  	  �V���� Cell ��Y��ԍ��ł��B
+	  	  新しい Cell のY列番号です。
 	   @param pCDcdGridCell [in,out]
-	  	  �V�����������ꂽ CDcdGridCell �I�u�W�F�N�g�ł��B
-	  	  ���̊֐��͂��̃I�u�W�F�N�g�ɑ΂��āA���������s�����Ƃ��ł��܂��B
+	  	  新しく生成された CDcdGridCell オブジェクトです。
+	  	  この関数はこのオブジェクトに対して、初期化を行うことができます。
 	  	
-	   [�I�[�o���C�h]
-	  	   CDcdTextbox �I�u�W�F�N�g�� new �Ő������A
-	  	pCDcdGridCell �� IfDcDraw �C���^�[�t�F�[�X�ɓo�^���܂��B
-	  	���̂Ƃ��̑����́A
+	   [オーバライド]
+	  	   CDcdTextbox オブジェクトを new で生成し、
+	  	pCDcdGridCell の IfDcDraw インターフェースに登録します。
+	  	このときの属性は、
 	  
-	  		- �t�H���g�̓X�g�b�N�I�u�W�F�N�g�� DEFAULT_GUI_FONT 
-	  		- �e�L�X�g�z�u�� 
+	  		- フォントはストックオブジェクトの DEFAULT_GUI_FONT 
+	  		- テキスト配置は 
 	  			CdDrawTextFormat::H_LEFT | 
 	  			CdDrawTextFormat::V_SINGLELINT_CENTER
-	  		- �w�i�F�� ��
-	  		- �e�L�X�g�̏㉺�E���E�̘g�̈�̑����͘_���P�ʂłP
+	  		- 背景色は 白
+	  		- テキストの上下・左右の枠領域の太さは論理単位で１
 	  
-	  	�ƂȂ�܂��B
+	  	となります。
 	 */
 	virtual void OnCreateCell( int iXColumnNumber , int iYColumnNumber , 
 		CDcdGridCell* pCDcdGridCell ) ;
 	
 	/**
-	  	this �́ACell ���j������钼�O�ɁA���̊֐����Ăяo���܂��B
-	  	�j������� Cell �ɑ΂��āA IfDcDraw �C���^�[�t�F�[�X�I�u�W�F�N�g��
-	  	�o�^�����E�j�����͂��߂Ƃ���
-	  	��n�����s���܂��B
+	  	this は、Cell が破棄される直前に、この関数を呼び出します。
+	  	破棄される Cell に対して、 IfDcDraw インターフェースオブジェクトの
+	  	登録解除・破棄をはじめとした
+	  	後始末を行います。
 	  
-	  	���̊֐����I�[�o���C�h���邱�Ƃɂ��A Cell �ɓ��L�̌�n����
-	  	�s�����Ƃ��ł��܂��B
+	  	この関数をオーバライドすることにより、 Cell に特有の後始末を
+	  	行うことができます。
 	  	
 	   @param iXColumnNumber [in]
-	  	  �j������� Cell ��X��ԍ��ł��B
+	  	  破棄される Cell のX列番号です。
 	   @param iYColumnNumber [in]
-	  	  �j������� Cell ��Y��ԍ��ł��B
+	  	  破棄される Cell のY列番号です。
 	   @param pCDcdGridCell [in,out]
-	  	  �j������� CDcdGridCell �I�u�W�F�N�g�ł��B
-	  	  ���̊֐��͂��̃I�u�W�F�N�g�ɑ΂��āA��n�����s�����Ƃ��ł��܂��B
+	  	  破棄される CDcdGridCell オブジェクトです。
+	  	  この関数はこのオブジェクトに対して、後始末を行うことができます。
 	  	
-	   [�I�[�o���C�h]
-	  	pCDcdGridCell �� IfDcDraw �C���^�[�t�F�[�X��o�^�������A
-	  	�I�u�W�F�N�g�� delete �Ŕj�����܂��B
+	   [オーバライド]
+	  	pCDcdGridCell の IfDcDraw インターフェースを登録解除し、
+	  	オブジェクトを delete で破棄します。
 	 */
 	virtual void OnDeleteCell( int iXColumnNumber , int iYColumnNumber , 
 		CDcdGridCell* pCDcdGridCell ) ;
 	///@}
  public:
 	// ********************************
-	///	@name Y��EX��̐�
+	///	@name Y列・X列の数
 	// ********************************
 	///@{
 	/**
 	   @return
-	  	���݂�Y��̐���Ԃ��܂��B������Ԃł́A�O��Ԃ��܂��B
+	  	現在のY列の数を返します。初期状態では、０を返します。
 	 */
 	virtual int		getYColumnCount() ;
 	
 	/**
 	   @param ev [in]
-	  	Y��̐����w�肵�Ă��������B
+	  	Y列の数を指定してください。
 	 */
 	virtual CDcdGrid& setYColumnCount( int ev ) ;
 	
 	/**
 	   @return
-	  	���݂�X��̐���Ԃ��܂��B������Ԃł́A�O��Ԃ��܂��B
+	  	現在のX列の数を返します。初期状態では、０を返します。
 	 */
 	virtual int		getXColumnCount() ;
 
 	/**
 	   @param ev [in]
-	  	X��̐����w�肵�Ă��������B
+	  	X列の数を指定してください。
 	 */
 	virtual CDcdGrid& setXColumnCount( int ev ) ;
 
@@ -853,180 +853,180 @@ protected:
 	
  public:
 	// ********************************
-	///	@name Y��EX���}��/�폜
+	///	@name Y列・X列を挿入/削除
 	// ********************************
 	///@{
 	/**
-	  	Y����P�A�w��̈ʒu�ɒǉ����܂��B
+	  	Y列を１つ、指定の位置に追加します。
 	   @param iYColumnNumber
-	  	Y��ԍ����w�肵�Ă��������B
-	  	�V�����ǉ����ꂽY�񂪁A����Y��ԍ��ɂȂ�܂��B
-	  	�͈͂� 0 �ȏ� getYColumnNumber() �ȉ��ŁA
-	  	0 �Ȃ�擪�EgetYColumnNumber() �Ȃ疖���ւ̒ǉ��ƂȂ�܂��B
-	  	  �������A INT_MAX ���w�肷��ƁA�������w�肵�����ƂɂȂ�܂��B
+	  	Y列番号を指定してください。
+	  	新しく追加されたY列が、このY列番号になります。
+	  	範囲は 0 以上 getYColumnNumber() 以下で、
+	  	0 なら先頭・getYColumnNumber() なら末尾への追加となります。
+	  	  ただし、 INT_MAX を指定すると、末尾を指定したことになります。
 	   @return
-	  	����������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-	   -	-2 ;	//	�C���f�N�X���s��
+	  	成功したら0以上、エラーなら負の数です。
+	   -	-2 ;	//	インデクスが不正
 	 */
 	virtual int insertYColumn( int iYColumnNumber ) ;
 
 	/**
-	  	X����P�A�w��̈ʒu�ɒǉ����܂��B
+	  	X列を１つ、指定の位置に追加します。
 	   @param iXColumnNumber
-	  	X��ԍ����w�肵�Ă��������B
-	  	�V�����ǉ����ꂽX�񂪁A����X��ԍ��ɂȂ�܂��B
-	  	�͈͂� 0 �ȏ� getXColumnNumber() �ȉ��ŁA
-	  	0 �Ȃ�擪�EgetXColumnNumber() �Ȃ疖���ւ̒ǉ��ƂȂ�܂��B
-	  	  �������A INT_MAX ���w�肷��ƁA�������w�肵�����ƂɂȂ�܂��B
+	  	X列番号を指定してください。
+	  	新しく追加されたX列が、このX列番号になります。
+	  	範囲は 0 以上 getXColumnNumber() 以下で、
+	  	0 なら先頭・getXColumnNumber() なら末尾への追加となります。
+	  	  ただし、 INT_MAX を指定すると、末尾を指定したことになります。
 	   @return
-	  	����������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-	   -	-2 ;	//	�C���f�N�X���s��
+	  	成功したら0以上、エラーなら負の数です。
+	   -	-2 ;	//	インデクスが不正
 	 */
 	virtual int insertXColumn( int iXColumnNumber ) ;
 	
 	/**
-	  	Y����P�A�폜���܂��B
+	  	Y列を１つ、削除します。
 	   @param iYColumnNumber
-	  	Y��ԍ����w�肵�Ă��������B
-	  	�͈͂� 0 �ȏ� getYColumnNumber() �����ł��B
-	  	  �������A INT_MAX ���w�肷��ƁA�������w�肵�����ƂɂȂ�܂��B
+	  	Y列番号を指定してください。
+	  	範囲は 0 以上 getYColumnNumber() 未満です。
+	  	  ただし、 INT_MAX を指定すると、末尾を指定したことになります。
 	   @return
-	  	����������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-	   -	-2 ;	//	�C���f�N�X���s��
+	  	成功したら0以上、エラーなら負の数です。
+	   -	-2 ;	//	インデクスが不正
 	 */
 	virtual int eraseYColumn( int iYColumnNumber ) ;
 	/**
-	  	X����P�A�폜���܂��B
+	  	X列を１つ、削除します。
 	   @param iXColumnNumber
-	  	X��ԍ����w�肵�Ă��������B
-	  	�͈͂� 0 �ȏ� getXColumnNumber() �����ł��B
-	  	  �������A INT_MAX ���w�肷��ƁA�������w�肵�����ƂɂȂ�܂��B
+	  	X列番号を指定してください。
+	  	範囲は 0 以上 getXColumnNumber() 未満です。
+	  	  ただし、 INT_MAX を指定すると、末尾を指定したことになります。
 	   @return
-	  	����������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-	   -	-2 ;	//	�C���f�N�X���s��
+	  	成功したら0以上、エラーなら負の数です。
+	   -	-2 ;	//	インデクスが不正
 	 */
 	virtual int eraseXColumn( int iXColumnNumber ) ;
 	///@}
 	
  public:
 	// ********************************
-	///	@name Y��EX��E�Z���I�u�W�F�N�g
+	///	@name Y列・X列・セルオブジェクト
 	// ********************************
 	///@{
 	/**
 	@return
-		�O���b�h�̊O�g�̘g���I�u�W�F�N�g��Ԃ��܂��B
-		��[�̃I�u�W�F�N�g��Ԃ��܂��B
+		グリッドの外枠の枠線オブジェクトを返します。
+		上端のオブジェクトを返します。
 	*/
 	virtual CDcdGridYBorder* getCDcdGridYBorderTop()
 	{	return &m_CDcdGridYBorderTop ;};
 
 	/**
-	 	  �w�肳�ꂽY��ԍ��́AY��I�u�W�F�N�g CDcdGridYColumn �̃|�C���^��
-	  	�擾���邱�Ƃ��ł��܂��B���̃|�C���^���g���āAY��ɑ΂��鑀���
-	  	Y�񂤂��Ƃ��ł��܂��B
+	 	  指定されたY列番号の、Y列オブジェクト CDcdGridYColumn のポインタを
+	  	取得することができます。このポインタを使って、Y列に対する操作を
+	  	Y列うことができます。
 	   @param iYColumnNumber [in] 
-	  	 Y��ԍ����w�肵�Ă��������B�͈͂́A-1�ȏ� getYColumnCount() �����ł��B
-	  	 �������A INT_MAX ���w�肷��ƁA�ŏIY����w�肵�����ƂɂȂ�܂��B
+	  	 Y列番号を指定してください。範囲は、-1以上 getYColumnCount() 未満です。
+	  	 ただし、 INT_MAX を指定すると、最終Y列を指定したことになります。
 	   @return
-	  	  �Ή�����Y��I�u�W�F�N�g��Ԃ��܂��B
-	  	  �C���f�N�X���s���ȏꍇ�́ANULL��Ԃ��܂��B
+	  	  対応するY列オブジェクトを返します。
+	  	  インデクスが不正な場合は、NULLを返します。
 	  
-	  	  �Ԃ��ꂽ�I�u�W�F�N�g�̔j���̐Ӗ��́Athis�ɂ���܂��B
-	  	  �Y������Y�� CDcdGrid �̕ʂ̃��\�b�h�ɂ���č폜�����ƁA�Ԃ��ꂽ
-	  	�|�C���^�͖����ɂȂ�܂��B
-	  	   this���j�����ꂽ�Ƃ��ɂ��A�Ԃ��ꂽ�|�C���^�͖����ɂȂ�܂��B
+	  	  返されたオブジェクトの破棄の責務は、thisにあります。
+	  	  該当するY列が CDcdGrid の別のメソッドによって削除されると、返された
+	  	ポインタは無効になります。
+	  	   thisが破棄されたときにも、返されたポインタは無効になります。
 	 */
 	virtual CDcdGridYColumn*	getYColumn( int iYColumnNumber )  ;
 
 	/**
-	  	  �w�肳�ꂽY��ԍ��́A�r���I�u�W�F�N�g CDcdGridYBorder �̃|�C���^��
-	  	�擾���邱�Ƃ��ł��܂��B���̃|�C���^���g���āAY��̌r���ɑ΂��鑀���
-	  	�s�����Ƃ��ł��܂��B
+	  	  指定されたY列番号の、罫線オブジェクト CDcdGridYBorder のポインタを
+	  	取得することができます。このポインタを使って、Y列の罫線に対する操作を
+	  	行うことができます。
 	   @param iYColumnNumber [in] 
-	  	 Y��ԍ����w�肵�Ă��������B�͈͂́A-1�ȏ� getYColumnCount() �����ł��B
-	  	-	-1 ;	��[�̌r���I�u�W�F�N�g�im_CDcdGridYBorderTop�j��Ԃ��܂��B
+	  	 Y列番号を指定してください。範囲は、-1以上 getYColumnCount() 未満です。
+	  	-	-1 ;	上端の罫線オブジェクト（m_CDcdGridYBorderTop）を返します。
 	  	-	getYColumnCount()-1 , INT_MAX ;	
-	  		���[�̌r���I�u�W�F�N�g�im_CDcdGridYBorderBottom�j��Ԃ��܂��B
+	  		下端の罫線オブジェクト（m_CDcdGridYBorderBottom）を返します。
 	   @return
-	  	 �Ή�����Y��r���I�u�W�F�N�g��Ԃ��܂��B
-	  	 �C���f�N�X���s���ȏꍇ�́ANULL��Ԃ��܂��B
+	  	 対応するY列罫線オブジェクトを返します。
+	  	 インデクスが不正な場合は、NULLを返します。
 	  
-	  	  �Ԃ��ꂽ�I�u�W�F�N�g�̔j���̐Ӗ��́Athis�ɂ���܂��B
-	  	  �Y������Y�� CDcdGrid �̕ʂ̃��\�b�h�ɂ���č폜�����ƁA�Ԃ��ꂽ
-	  	�|�C���^�͖����ɂȂ�܂��B
-	  	   this���j�����ꂽ�Ƃ��ɂ��A�Ԃ��ꂽ�|�C���^�͖����ɂȂ�܂��B
+	  	  返されたオブジェクトの破棄の責務は、thisにあります。
+	  	  該当するY列が CDcdGrid の別のメソッドによって削除されると、返された
+	  	ポインタは無効になります。
+	  	   thisが破棄されたときにも、返されたポインタは無効になります。
 	 */
 	virtual CDcdGridYBorder*	getYBorder( int iYColumnNumber )  ;
 
 	/**
 	@return
-		�O���b�h�̊O�g�̘g���I�u�W�F�N�g��Ԃ��܂��B
-		���[�̃I�u�W�F�N�g��Ԃ��܂��B
+		グリッドの外枠の枠線オブジェクトを返します。
+		下端のオブジェクトを返します。
 	*/
 	virtual CDcdGridYBorder* getCDcdGridYBorderBottom(){ return &m_CDcdGridYBorderBottom ;};
 
 	/**
 	@return
-		�O���b�h�̊O�g�̘g���I�u�W�F�N�g��Ԃ��܂��B
-		���[�̃I�u�W�F�N�g��Ԃ��܂��B
+		グリッドの外枠の枠線オブジェクトを返します。
+		左端のオブジェクトを返します。
 	*/
 	virtual CDcdGridXBorder* getCDcdGridXBorderTop(){	return &m_CDcdGridXBorderTop ;};
 
 	/**
-	  	  �w�肳�ꂽX��ԍ��́AX��I�u�W�F�N�g CDcdGridYColumn �̃|�C���^��
-	  	�擾���邱�Ƃ��ł��܂��B���̃|�C���^���g���āAX��ɑ΂��鑀���
-	  	�s�����Ƃ��ł��܂��B
+	  	  指定されたX列番号の、X列オブジェクト CDcdGridYColumn のポインタを
+	  	取得することができます。このポインタを使って、X列に対する操作を
+	  	行うことができます。
 	   @param iXColumnNumber [in] 
-	  	 X��ԍ����w�肵�Ă��������B�͈͂́A-1�ȏ� getXColumnCount() �����ł��B
-	  	 �������A INT_MAX ���w�肷��ƁA�ŏIX����w�肵�����ƂɂȂ�܂��B
+	  	 X列番号を指定してください。範囲は、-1以上 getXColumnCount() 未満です。
+	  	 ただし、 INT_MAX を指定すると、最終X列を指定したことになります。
 	   @return
-	  	 �Ή�����X��I�u�W�F�N�g��Ԃ��܂��B
-	  	 �C���f�N�X���s���ȏꍇ�́ANULL��Ԃ��܂��B
+	  	 対応するX列オブジェクトを返します。
+	  	 インデクスが不正な場合は、NULLを返します。
 	  
-	  	  �Ԃ��ꂽ�I�u�W�F�N�g�̔j���̐Ӗ��́Athis�ɂ���܂��B
-	  	  �Y������X�� CDcdGrid �̕ʂ̃��\�b�h�ɂ���č폜�����ƁA�Ԃ��ꂽ
-	  	�|�C���^�͖����ɂȂ�܂��B
-	  	   this���j�����ꂽ�Ƃ��ɂ��A�Ԃ��ꂽ�|�C���^�͖����ɂȂ�܂��B
+	  	  返されたオブジェクトの破棄の責務は、thisにあります。
+	  	  該当するX列が CDcdGrid の別のメソッドによって削除されると、返された
+	  	ポインタは無効になります。
+	  	   thisが破棄されたときにも、返されたポインタは無効になります。
 	 */
 	virtual CDcdGridXColumn*	getXColumn( int iXColumnNumber )  ;
 
 	/**
-	  	  �w�肳�ꂽX��ԍ��́A�r���I�u�W�F�N�g CDcdGridXBorder �̃|�C���^��
-	  	�擾���邱�Ƃ��ł��܂��B���̃|�C���^���g���āAX��̌r���ɑ΂��鑀���
-	  	�s�����Ƃ��ł��܂��B
+	  	  指定されたX列番号の、罫線オブジェクト CDcdGridXBorder のポインタを
+	  	取得することができます。このポインタを使って、X列の罫線に対する操作を
+	  	行うことができます。
 	   @param iXColumnNumber [in] 
-	  	 X��ԍ����w�肵�Ă��������B�͈͂́A-1�ȏ� getYColumnCount() �����ł��B
-	  	-	-1 ;	���[�̌r���I�u�W�F�N�g�im_CDcdGridXBorderTop�j��Ԃ��܂��B
+	  	 X列番号を指定してください。範囲は、-1以上 getYColumnCount() 未満です。
+	  	-	-1 ;	左端の罫線オブジェクト（m_CDcdGridXBorderTop）を返します。
 	  	-	getXColumnCount()-1 , INT_MAX ;	
-	  		�E�[�̌r���I�u�W�F�N�g�im_CDcdGridXBorderBottom�j��Ԃ��܂��B
+	  		右端の罫線オブジェクト（m_CDcdGridXBorderBottom）を返します。
 	   @return
-	  	 �Ή�����X��r���I�u�W�F�N�g��Ԃ��܂��B
-	  	 �C���f�N�X���s���ȏꍇ�́ANULL��Ԃ��܂��B
+	  	 対応するX列罫線オブジェクトを返します。
+	  	 インデクスが不正な場合は、NULLを返します。
 	  
-	  	  �Ԃ��ꂽ�I�u�W�F�N�g�̔j���̐Ӗ��́Athis�ɂ���܂��B
-	  	  �Y������X�� CDcdGrid �̕ʂ̃��\�b�h�ɂ���č폜�����ƁA�Ԃ��ꂽ
-	  	�|�C���^�͖����ɂȂ�܂��B
-	  	   this���j�����ꂽ�Ƃ��ɂ��A�Ԃ��ꂽ�|�C���^�͖����ɂȂ�܂��B
+	  	  返されたオブジェクトの破棄の責務は、thisにあります。
+	  	  該当するX列が CDcdGrid の別のメソッドによって削除されると、返された
+	  	ポインタは無効になります。
+	  	   thisが破棄されたときにも、返されたポインタは無効になります。
 	 */
 	virtual CDcdGridXBorder*	getXBorder( int iXColumnNumber )  ;
 
 	/**
 	@return
-		�O���b�h�̊O�g�̘g���I�u�W�F�N�g��Ԃ��܂��B
-		�E�[�̃I�u�W�F�N�g��Ԃ��܂��B
+		グリッドの外枠の枠線オブジェクトを返します。
+		右端のオブジェクトを返します。
 	*/
 	virtual CDcdGridXBorder* getCDcdGridXBorderBottom()
 	{ return &m_CDcdGridXBorderBottom ;};
 
 	/**
-		�w��� CDcdGridYColumn �I�u�W�F�N�g�́A��ԍ���Ԃ��܂��B
+		指定の CDcdGridYColumn オブジェクトの、列番号を返します。
 	@param pCDcdGridYColumn [in]
-		YColumn �I�u�W�F�N�g���w�肵�Ă��������B
+		YColumn オブジェクトを指定してください。
 	@return
-		��ԍ���Ԃ��܂��B�͈͂� 0 �ȏ� getYColumnCount() �����ł��B
-		Y��I�u�W�F�N�g�� CDcdGrid �I�u�W�F�N�g�ɏW�񂳂�Ă��Ȃ��ꍇ�́A
-		INT_MIN ��Ԃ��܂��B
+		列番号を返します。範囲は 0 以上 getYColumnCount() 未満です。
+		Y列オブジェクトが CDcdGrid オブジェクトに集約されていない場合は、
+		INT_MIN を返します。
 	*/
 	virtual int getYColumnNumberOfCoulmn( CDcdGridYColumn*	pCDcdGridYColumn ) ;
 	/**
@@ -1035,75 +1035,75 @@ protected:
 	virtual int getXColumnNumberOfCoulmn( CDcdGridXColumn*	pCDcdGridXColumn ) ;
 
 	/**
-		�w��� CDcdGridYBorder �I�u�W�F�N�g�́A��ԍ���Ԃ��܂��B
+		指定の CDcdGridYBorder オブジェクトの、列番号を返します。
 	@param pCDcdGridYBorder [in]
-		YBorder �I�u�W�F�N�g���w�肵�Ă��������B
+		YBorder オブジェクトを指定してください。
 	@return
-		��ԍ���Ԃ��܂��B�͈͂� -1 �ȏ� getYColumnCount() �����ł��B
-		�I�u�W�F�N�g�� CDcdGrid �I�u�W�F�N�g�ɏW�񂳂�Ă��Ȃ��ꍇ�́A
-		INT_MIN ��Ԃ��܂��B
-	 	-	-1 ;	��[�̌r���I�u�W�F�N�g�im_CDcdGridYBorderTop�j
-	 	-	getYColumnCount()-1  ;	���[�̌r���I�u�W�F�N�g�im_CDcdGridYBorderBottom�j�E	@n
-		�������� m_CDcdGridYColumnCont �̖����̗v�f�ł��B
+		列番号を返します。範囲は -1 以上 getYColumnCount() 未満です。
+		オブジェクトが CDcdGrid オブジェクトに集約されていない場合は、
+		INT_MIN を返します。
+	 	-	-1 ;	上端の罫線オブジェクト（m_CDcdGridYBorderTop）
+	 	-	getYColumnCount()-1  ;	下端の罫線オブジェクト（m_CDcdGridYBorderBottom）・	@n
+		もしくは m_CDcdGridYColumnCont の末尾の要素です。
 	*/
 	virtual int getYColumnNumberOfBorder( CDcdGridYBorder*	pCDcdGridYBorder ) ;
 
 	
 	/**
-		�w��� CDcdGridXBorder �I�u�W�F�N�g�́A��ԍ���Ԃ��܂��B
+		指定の CDcdGridXBorder オブジェクトの、列番号を返します。
 	@param pCDcdGridXBorder [in]
-		XBorder �I�u�W�F�N�g���w�肵�Ă��������B
+		XBorder オブジェクトを指定してください。
 	@return
-		��ԍ���Ԃ��܂��B�͈͂� -1 �ȏ� getXColumnCount() �����ł��B
-		�I�u�W�F�N�g�� CDcdGrid �I�u�W�F�N�g�ɏW�񂳂�Ă��Ȃ��ꍇ�́A
-		INT_MIN ��Ԃ��܂��B
-	 	-	-1 ;	���[�̌r���I�u�W�F�N�g�im_CDcdGridXBorderTop�j
-	 	-	getXColumnCount()-1  ;	�E�[�̌r���I�u�W�F�N�g�im_CDcdGridXBorderBottom�j�E	@n
-		�������� m_CDcdGridXColumnCont �̖����̗v�f�ł��B
+		列番号を返します。範囲は -1 以上 getXColumnCount() 未満です。
+		オブジェクトが CDcdGrid オブジェクトに集約されていない場合は、
+		INT_MIN を返します。
+	 	-	-1 ;	左端の罫線オブジェクト（m_CDcdGridXBorderTop）
+	 	-	getXColumnCount()-1  ;	右端の罫線オブジェクト（m_CDcdGridXBorderBottom）・	@n
+		もしくは m_CDcdGridXColumnCont の末尾の要素です。
 	*/
 	virtual int getXColumnNumberOfBorder( CDcdGridXBorder*	pCDcdGridXBorder ) ;
 
 	/**
-	  	  �w�肳�ꂽY��EX��ԍ��́A�Z���I�u�W�F�N�g CDcdGridCell �̃|�C���^��
-	  	�擾���邱�Ƃ��ł��܂��B���̃|�C���^���g���āA�Z���ɑ΂��鑀���
-	  	�s�����Ƃ��ł��܂��B
+	  	  指定されたY列・X列番号の、セルオブジェクト CDcdGridCell のポインタを
+	  	取得することができます。このポインタを使って、セルに対する操作を
+	  	行うことができます。
 	   @param iXColumnNumber [in] 
-	  	 X��ԍ����w�肵�Ă��������B�͈͂́A0�ȏ� getYColumnCount() �����ł��B
-	  	INT_MAX �́A�ŏI����w�肵�����̂Ƃ݂Ȃ��܂��B
+	  	 X列番号を指定してください。範囲は、0以上 getYColumnCount() 未満です。
+	  	INT_MAX は、最終列を指定したものとみなします。
 	   @param iYColumnNumber [in] 
-	  	 Y��ԍ����w�肵�Ă��������B�͈͂́A0�ȏ� getYColumnCount() �����ł��B
-	  	INT_MAX �́A�ŏI����w�肵�����̂Ƃ݂Ȃ��܂��B
+	  	 Y列番号を指定してください。範囲は、0以上 getYColumnCount() 未満です。
+	  	INT_MAX は、最終列を指定したものとみなします。
 	   @return
-	  	  �Ή�����Z���I�u�W�F�N�g��Ԃ��܂��B
-	  	  �C���f�N�X���s���ȏꍇ�́ANULL��Ԃ��܂��B
+	  	  対応するセルオブジェクトを返します。
+	  	  インデクスが不正な場合は、NULLを返します。
 	  
-	  	  �Ԃ��ꂽ�I�u�W�F�N�g�̔j���̐Ӗ��́Athis�ɂ���܂��B
-	  	  �Y������X�� CDcdGrid �̕ʂ̃��\�b�h�ɂ���č폜�����ƁA�Ԃ��ꂽ
-	  	�|�C���^�͖����ɂȂ�܂��B
-	  	   this���j�����ꂽ�Ƃ��ɂ��A�Ԃ��ꂽ�|�C���^�͖����ɂȂ�܂��B
+	  	  返されたオブジェクトの破棄の責務は、thisにあります。
+	  	  該当するX列が CDcdGrid の別のメソッドによって削除されると、返された
+	  	ポインタは無効になります。
+	  	   thisが破棄されたときにも、返されたポインタは無効になります。
 	 */
 	virtual CDcdGridCell*	getCell( int iXColumnNumber , int iYColumnNumber );
  
 
 	/**
-		�w��� CDcdGridCell �I�u�W�F�N�g�́A��ԍ���Ԃ��܂��B
+		指定の CDcdGridCell オブジェクトの、列番号を返します。
 	@param pCDcdGridCell [in]
-		CDcdGridCell �I�u�W�F�N�g���w�肵�Ă��������B
+		CDcdGridCell オブジェクトを指定してください。
 	@return
-		X��ԍ���Ԃ��܂��B
-		�I�u�W�F�N�g�� CDcdGrid �I�u�W�F�N�g�ɏW�񂳂�Ă��Ȃ��ꍇ�́A
-		INT_MIN �ł��B
+		X列番号を返します。
+		オブジェクトが CDcdGrid オブジェクトに集約されていない場合は、
+		INT_MIN です。
 	*/
 	virtual int getXColumnNumberOfCell( 
 		CDcdGridCell* pCDcdGridCell ) ;
 	/**
-		�w��� CDcdGridCell �I�u�W�F�N�g�́A��ԍ���Ԃ��܂��B
+		指定の CDcdGridCell オブジェクトの、列番号を返します。
 	@param pCDcdGridCell [in]
-		CDcdGridCell �I�u�W�F�N�g���w�肵�Ă��������B
+		CDcdGridCell オブジェクトを指定してください。
 	@return
-		Y��ԍ���Ԃ��܂��B
-		�I�u�W�F�N�g�� CDcdGrid �I�u�W�F�N�g�ɏW�񂳂�Ă��Ȃ��ꍇ�́A
-		INT_MIN �ł��B
+		Y列番号を返します。
+		オブジェクトが CDcdGrid オブジェクトに集約されていない場合は、
+		INT_MIN です。
 	*/
 	virtual int getYColumnNumberOfCell( 
 		CDcdGridCell* pCDcdGridCell ) ;
@@ -1113,183 +1113,183 @@ protected:
  public:
 	
 	// ********************************
-	///	@name Y��EX��̈ʒu
+	///	@name Y列・X列の位置
 	// ********************************
 	///@{
 	/**
-	  	Y��̈ʒu��Ԃ��܂��B
+	  	Y列の位置を返します。
 	   @param pIfDcdTarget [in]
-	  	�`��Ώۂ��w�肵�Ă��������B 
+	  	描画対象を指定してください。 
 	   @param iYColumnNumber [in]
-	  	Y��ԍ����w�肵�Ă��������B
-	  	INT_MAX �́A�ŏI����w�肵�����̂Ƃ݂Ȃ��܂��B
+	  	Y列番号を指定してください。
+	  	INT_MAX は、最終列を指定したものとみなします。
 	   @return
-	  	Y��͈̔͂�Ԃ��܂��B
+	  	Y列の範囲を返します。
 	  
 	   @attention
-	  	���̊֐��́AcreateZoneCacne�̉e�����󂯂܂��B
-	  	�����̊֐� ��A�����ČĂяo���ꍇ�́A
-	  	�O������ createZoneCache() ���Ăяo���ƁA
-	  	�p�t�H�[�}���X�����P����܂��B
+	  	この関数は、createZoneCacneの影響を受けます。
+	  	これらの関数 を連続して呼び出す場合は、
+	  	前もって createZoneCache() を呼び出すと、
+	  	パフォーマンスが改善されます。
 	  	
 	 */
 	virtual CdDcdZone	getYColumnZone( 
 			IfDcdTarget* pIfDcdTarget , int iYColumnNumber ) ;
 	/**
-	  	X��̈ʒu��Ԃ��܂��B
+	  	X列の位置を返します。
 	   @param pIfDcdTarget [in]
-	  	�`��Ώۂ��w�肵�Ă��������B 
+	  	描画対象を指定してください。 
 	   @param iXColumnNumber [in]
-	  	X��ԍ����w�肵�Ă��������B
-	  	INT_MAX �́A�ŏI����w�肵�����̂Ƃ݂Ȃ��܂��B
+	  	X列番号を指定してください。
+	  	INT_MAX は、最終列を指定したものとみなします。
 	   @return
-	  	X��͈̔͂�Ԃ��܂��B
+	  	X列の範囲を返します。
 	  
 	   @attention
-	  	���̊֐��́AcreateZoneCacne�̉e�����󂯂܂��B
-	  	�����̊֐� ��A�����ČĂяo���ꍇ�́A
-	  	�O������ createZoneCache() ���Ăяo���ƁA
-	  	�p�t�H�[�}���X�����P����܂��B
+	  	この関数は、createZoneCacneの影響を受けます。
+	  	これらの関数 を連続して呼び出す場合は、
+	  	前もって createZoneCache() を呼び出すと、
+	  	パフォーマンスが改善されます。
 	 */
 	virtual CdDcdZone	getXColumnZone( 
 			IfDcdTarget* pIfDcdTarget , int iXColumnNumber ) ;
 	
 	/**
-	  	Y��̉����̋��E���̈ʒu��Ԃ��܂��B
+	  	Y列の下側の境界線の位置を返します。
 	   @param pIfDcdTarget [in]
-	  	�`��Ώۂ��w�肵�Ă��������B 
+	  	描画対象を指定してください。 
 	   @param iYColumnNumber [in]
-	  	Y��ԍ����w�肵�Ă��������B�͈͂�-1�ȏ� getYColumnCount() �����ł��B
-	  	INT_MAX �́A�ŏI����w�肵�����̂Ƃ݂Ȃ��܂��B
+	  	Y列番号を指定してください。範囲は-1以上 getYColumnCount() 未満です。
+	  	INT_MAX は、最終列を指定したものとみなします。
 	   @return
-	  	Y��̋��E���͈̔͂�Ԃ��܂��B
+	  	Y列の境界線の範囲を返します。
 	  
 	   @attention
-	  	���̊֐��́AcreateZoneCacne�̉e�����󂯂܂��B
-	  	�����̊֐� ��A�����ČĂяo���ꍇ�́A
-	  	�O������ createZoneCache() ���Ăяo���ƁA
-	  	�p�t�H�[�}���X�����P����܂��B
+	  	この関数は、createZoneCacneの影響を受けます。
+	  	これらの関数 を連続して呼び出す場合は、
+	  	前もって createZoneCache() を呼び出すと、
+	  	パフォーマンスが改善されます。
 	 */
 	virtual CdDcdZone	getYColumnBorderZone( 
 			IfDcdTarget* pIfDcdTarget , int iYColumnNumber ) ;
 
 	/**
-	  	X��̉E���̋��E���̈ʒu��Ԃ��܂��B
+	  	X列の右側の境界線の位置を返します。
 	   @param pIfDcdTarget [in]
-	  	�`��Ώۂ��w�肵�Ă��������B 
+	  	描画対象を指定してください。 
 	   @param iXColumnNumber [in]
-	  	X��ԍ����w�肵�Ă��������B�͈͂�-1�ȏ� getXColumnCount() �����ł��B
-	  	INT_MAX �́A�ŏI����w�肵�����̂Ƃ݂Ȃ��܂��B
+	  	X列番号を指定してください。範囲は-1以上 getXColumnCount() 未満です。
+	  	INT_MAX は、最終列を指定したものとみなします。
 	   @return
-	  	X��̋��E���͈̔͂�Ԃ��܂��B
+	  	X列の境界線の範囲を返します。
 	  
 	   @attention
-	  	���̊֐��́AcreateZoneCacne�̉e�����󂯂܂��B
-	  	�����̊֐� ��A�����ČĂяo���ꍇ�́A
-	  	�O������ createZoneCache() ���Ăяo���ƁA
-	  	�p�t�H�[�}���X�����P����܂��B
+	  	この関数は、createZoneCacneの影響を受けます。
+	  	これらの関数 を連続して呼び出す場合は、
+	  	前もって createZoneCache() を呼び出すと、
+	  	パフォーマンスが改善されます。
 	 */
 	virtual CdDcdZone	getXColumnBorderZone( 
 			IfDcdTarget* pIfDcdTarget , int iXColumnNumber ) ;
 
 	/**
-	  	�Z���̈ʒu��Ԃ��܂��B
+	  	セルの位置を返します。
 	   @param pIfDcdTarget [in]
-	  	�`��Ώۂ��w�肵�Ă��������B 
+	  	描画対象を指定してください。 
 	   @param iXColumnNumber [in]
-	  	X��ԍ����w�肵�Ă��������B�͈͂�0�ȏ� getXColumnCount() �����ł��B
-	  	INT_MAX �́A�ŏI����w�肵�����̂Ƃ݂Ȃ��܂��B
+	  	X列番号を指定してください。範囲は0以上 getXColumnCount() 未満です。
+	  	INT_MAX は、最終列を指定したものとみなします。
 	   @param iYColumnNumber [in]
-	  	Y��ԍ����w�肵�Ă��������B�͈͂�0�ȏ� getYColumnCount() �����ł��B
-	  	INT_MAX �́A�ŏI����w�肵�����̂Ƃ݂Ȃ��܂��B
+	  	Y列番号を指定してください。範囲は0以上 getYColumnCount() 未満です。
+	  	INT_MAX は、最終列を指定したものとみなします。
 	   @return
-	  	�Z���̈ʒu��Ԃ��܂��B
+	  	セルの位置を返します。
 	  
 	   @attention
-	  	���̊֐��́AcreateZoneCacne�̉e�����󂯂܂��B
-	  	�����̊֐� ��A�����ČĂяo���ꍇ�́A
-	  	�O������ createZoneCache() ���Ăяo���ƁA
-	  	�p�t�H�[�}���X�����P����܂��B
+	  	この関数は、createZoneCacneの影響を受けます。
+	  	これらの関数 を連続して呼び出す場合は、
+	  	前もって createZoneCache() を呼び出すと、
+	  	パフォーマンスが改善されます。
 	 */
 	virtual CdDcdZoneXy	getCellZone( 
 		IfDcdTarget* pIfDcdTarget , int iXColumnNumber , int iYColumnNumber ) ;
 
 	/**
-	  	Y���W�ɑΉ�����AY��ԍ��𒲂ׂ܂��B
+	  	Y座標に対応する、Y列番号を調べます。
 	   @param pIfDcdTarget [in]
-	  	�`��Ώۂ��w�肵�Ă��������B 
+	  	描画対象を指定してください。 
 	   @param iPos [in]
-	  	Y���W���w�肵�Ă��������B
+	  	Y座標を指定してください。
 	   @param pbIsBorder [out]
-	  	���̊֐��́A iPos �����E����ɂ���ꍇ�� true �A
-	  	 iPos ����͈̔͂ɂ���Ȃ� false �ł��B
+	  	この関数は、 iPos が境界線上にある場合は true 、
+	  	 iPos が列の範囲にあるなら false です。
 	   @return
-	  	Y��ԍ���Ԃ��܂��B
+	  	Y列番号を返します。
 	  
-	  	- Y��ԍ� = -1 , *pbIsBorder=false : �O���b�h�̏�̊O���ł��B
-		- Y��ԍ� = -1 , *pbIsBorder=true : �O���b�h�̏�̋��E���ł��B
-		- Y��ԍ� = 0 �ȏ� getYColumnCount()���� , *pbIsBorder = false : 
-	  		�O���b�h��Y��͈͂ł��B
-	  	- Y��ԍ� = 0 �ȏ� getYColumnCount()���� , *pbIsBorder = true : 
-	  		�O���b�h��Y�񉺑��̋��E���͈̔͂ł��B
-	  	- Y��ԍ� = getYColumnCount() , *pbIsBorder = false : 
-	  		�O���b�h�̉��̊O���ł��B
+	  	- Y列番号 = -1 , *pbIsBorder=false : グリッドの上の外側です。
+		- Y列番号 = -1 , *pbIsBorder=true : グリッドの上の境界線です。
+		- Y列番号 = 0 以上 getYColumnCount()未満 , *pbIsBorder = false : 
+	  		グリッドのY列範囲です。
+	  	- Y列番号 = 0 以上 getYColumnCount()未満 , *pbIsBorder = true : 
+	  		グリッドのY列下側の境界線の範囲です。
+	  	- Y列番号 = getYColumnCount() , *pbIsBorder = false : 
+	  		グリッドの下の外側です。
 	  
 	   @attention
-	  	���̊֐��́AcreateZoneCacne�̉e�����󂯂܂��B
-	  	�����̊֐� ��A�����ČĂяo���ꍇ�́A
-	  	�O������ createZoneCache() ���Ăяo���ƁA
-	  	�p�t�H�[�}���X�����P����܂��B
+	  	この関数は、createZoneCacneの影響を受けます。
+	  	これらの関数 を連続して呼び出す場合は、
+	  	前もって createZoneCache() を呼び出すと、
+	  	パフォーマンスが改善されます。
 	 */
 	virtual int getYColumnNumberOfPos( 
 		IfDcdTarget* pIfDcdTarget , int iPos , bool* pbIsBorder ) ;
 
 	/**
-	  	X���W�ɑΉ�����AX��ԍ��𒲂ׂ܂��B
+	  	X座標に対応する、X列番号を調べます。
 	   @param pIfDcdTarget [in]
-	  	�`��Ώۂ��w�肵�Ă��������B 
+	  	描画対象を指定してください。 
 	   @param iPos [in]
-	  	X���W���w�肵�Ă��������B
+	  	X座標を指定してください。
 	   @param pbIsBorder [out]
-	  	���̊֐��́A iPos �����E����ɂ���ꍇ�� true �A
-	  	 iPos ����͈̔͂ɂ���Ȃ� false �ł��B
+	  	この関数は、 iPos が境界線上にある場合は true 、
+	  	 iPos が列の範囲にあるなら false です。
 	   @return
-	  	X��ԍ���Ԃ��܂��B
+	  	X列番号を返します。
 	  
-	  	- X��ԍ� = -1 , *pbIsBorder=false : �O���b�h�̍��̊O���ł��B
-	  	- X��ԍ� = -1 , *pbIsBorder=true : �O���b�h�̍��̋��E���ł��B
-	  	- X��ԍ� = 0 �ȏ� getXColumnCount()���� , *pbIsBorder = false : 
-	  		�O���b�h��X��͈͂ł��B
-	  	- X��ԍ� = 0 �ȏ� getXColumnCount()���� , *pbIsBorder = true : 
-	  		�O���b�h��X��E���̋��E���͈̔͂ł��B
-	  	- X��ԍ� = getXColumnCount() , *pbIsBorder = false : 
-	  		�O���b�h�̉E�̊O���ł��B
+	  	- X列番号 = -1 , *pbIsBorder=false : グリッドの左の外側です。
+	  	- X列番号 = -1 , *pbIsBorder=true : グリッドの左の境界線です。
+	  	- X列番号 = 0 以上 getXColumnCount()未満 , *pbIsBorder = false : 
+	  		グリッドのX列範囲です。
+	  	- X列番号 = 0 以上 getXColumnCount()未満 , *pbIsBorder = true : 
+	  		グリッドのX列右側の境界線の範囲です。
+	  	- X列番号 = getXColumnCount() , *pbIsBorder = false : 
+	  		グリッドの右の外側です。
 	  
 	   @attention
-	  	���̊֐��́AcreateZoneCacne�̉e�����󂯂܂��B
-	  	�����̊֐� ��A�����ČĂяo���ꍇ�́A
-	  	�O������ createZoneCache() ���Ăяo���ƁA
-	  	�p�t�H�[�}���X�����P����܂��B
+	  	この関数は、createZoneCacneの影響を受けます。
+	  	これらの関数 を連続して呼び出す場合は、
+	  	前もって createZoneCache() を呼び出すと、
+	  	パフォーマンスが改善されます。
 	 */
 	virtual int getXColumnNumberOfPos( 
 		IfDcdTarget* pIfDcdTarget , int iPos , bool* pbIsBorder ) ;
 
 
 	/**
-	  	X,Y ���W�ɑΉ�����A�Z���𒲂ׂ܂��B
+	  	X,Y 座標に対応する、セルを調べます。
 	   @param pIfDcdTarget [in]
-	  	�`��Ώۂ��w�肵�Ă��������B 
+	  	描画対象を指定してください。 
 	   @param aCdDcdPosXy [in]
-	  	XY���W���w�肵�Ă��������B
+	  	XY座標を指定してください。
 	   @return
-	  	�Z���I�u�W�F�N�g��Ԃ��܂��B
-	  	�w��̍��W���Z���͈̔͂Ɉʒu���Ă��Ȃ��ꍇ�́ANULL��Ԃ��܂��B
+	  	セルオブジェクトを返します。
+	  	指定の座標がセルの範囲に位置していない場合は、NULLを返します。
 	  
 	   @attention
-	  	���̊֐��́AcreateZoneCacne�̉e�����󂯂܂��B
-	  	�����̊֐� ��A�����ČĂяo���ꍇ�́A
-	  	�O������ createZoneCache() ���Ăяo���ƁA
-	  	�p�t�H�[�}���X�����P����܂��B
+	  	この関数は、createZoneCacneの影響を受けます。
+	  	これらの関数 を連続して呼び出す場合は、
+	  	前もって createZoneCache() を呼び出すと、
+	  	パフォーマンスが改善されます。
 	 */
 	virtual CDcdGridCell* getCellOfPos( 
 		IfDcdTarget* pIfDcdTarget , const CdDcdPosXy& aCdDcdPosXy ) ;
@@ -1297,7 +1297,7 @@ protected:
 	///@}
  public:
 	// ********************************
-	///	@name	�X�N���[��
+	///	@name	スクロール
 	// ********************************
 	///@{
 	
@@ -1319,120 +1319,120 @@ protected:
 	virtual CDcdGrid& setYFixafterColumnNumber( int ev ) ;
 	
 	/**
-	  	�w��̕`��̈�ɂ����āA�P�y�[�W���̃X�N���[�����s�����ꍇ��
-	  	 FixafterColumnNumber �����߂܂��B
+	  	指定の描画領域において、１ページ分のスクロールを行った場合の
+	  	 FixafterColumnNumber を求めます。
 	  
-	  	���̊֐��́A FixafterColumnNumber ���w�肵���l�ɂȂ��Ă���ꍇ��
-	  	�����āA�u�P�y�[�W���̃X�N���[��������ɂ́A FixafterColumnNumber 
-	  	�������ɕύX����΂悢���v�����߂܂��B
+	  	この関数は、 FixafterColumnNumber が指定した値になっている場合に
+	  	おいて、「１ページ分のスクロールをするには、 FixafterColumnNumber 
+	  	をいくつに変更すればよいか」を求めます。
 	   @param pIfDcdTarget [in]
-	  	�`��̈���w�肵�Ă��������B
+	  	描画領域を指定してください。
 	   @param iFixafterColumnNumber [in]
-	  	�P�y�[�W���̃X�N���[�����s���ꍇ�̊�ɂȂ�A FixafterColumnNumber
-	  	���w�肵�Ă��������B
+	  	１ページ分のスクロールを行う場合の基準になる、 FixafterColumnNumber
+	  	を指定してください。
 	   @param bPagedown [in]
-	  	- false ;	//	Pageup����(-����)�̃X�N���[��
-	  	- true ;	//	Pagedown����(+����)�̃X�N���[��
+	  	- false ;	//	Pageup方向(-方向)のスクロール
+	  	- true ;	//	Pagedown方向(+方向)のスクロール
 	   @return 
-	  	�P�y�[�W���̃X�N���[�����s�����߂́A�V����
-	  	 FixafterColumnNumber ��Ԃ��܂��B@n
-	  	bPagedown ���^�� getXColumnCount() �A
-	  	bPagedown ���U�� getXFixColumnCount() - 1 �̏ꍇ�A
-	  	����ȏ�̃X�N���[�����삪�ł��Ȃ����Ƃ������܂��B
+	  	１ページ分のスクロールを行うための、新しい
+	  	 FixafterColumnNumber を返します。@n
+	  	bPagedown が真で getXColumnCount() 、
+	  	bPagedown が偽で getXFixColumnCount() - 1 の場合、
+	  	これ以上のスクロール操作ができないことを示します。
 	 */
 	int calcXFixafterColumnNumberPagemove( IfDcdTarget* pIfDcdTarget , 
 		int iFixafterColumnNumber , bool bPagedown ) ;
 	
 	/**
-	  	�w��̕`��̈�ɂ����āA�P�y�[�W���̃X�N���[�����s�����ꍇ��
-	  	 FixafterColumnNumber �����߂܂��B
+	  	指定の描画領域において、１ページ分のスクロールを行った場合の
+	  	 FixafterColumnNumber を求めます。
 	  
-	  	���̊֐��́A FixafterColumnNumber ���w�肵���l�ɂȂ��Ă���ꍇ��
-	  	�����āA�u�P�y�[�W���̃X�N���[��������ɂ́A FixafterColumnNumber 
-	  	�������ɕύX����΂悢���v�����߂܂��B
+	  	この関数は、 FixafterColumnNumber が指定した値になっている場合に
+	  	おいて、「１ページ分のスクロールをするには、 FixafterColumnNumber 
+	  	をいくつに変更すればよいか」を求めます。
 	   @param pIfDcdTarget [in]
-	  	�`��̈���w�肵�Ă��������B
+	  	描画領域を指定してください。
 	   @param iFixafterColumnNumber [in]
-	  	�P�y�[�W���̃X�N���[�����s���ꍇ�̊�ɂȂ�A FixafterColumnNumber
-	  	���w�肵�Ă��������B
+	  	１ページ分のスクロールを行う場合の基準になる、 FixafterColumnNumber
+	  	を指定してください。
 	   @param bPagedown [in]
-	  	- false ;	//	Pageup����(-����)�̃X�N���[��
-	  	- true ;	//	Pagedown����(+����)�̃X�N���[��
+	  	- false ;	//	Pageup方向(-方向)のスクロール
+	  	- true ;	//	Pagedown方向(+方向)のスクロール
 	   @return 
-	  	�P�y�[�W���̃X�N���[�����s�����߂́A�V����
-	  	 FixafterColumnNumber ��Ԃ��܂��B@n
-	  	bPagedown ���^�� getXColumnCount() �A
-	  	bPagedown ���U�� getXFixColumnCount() - 1 �̏ꍇ�A
-	  	����ȏ�̃X�N���[�����삪�ł��Ȃ����Ƃ������܂��B
+	  	１ページ分のスクロールを行うための、新しい
+	  	 FixafterColumnNumber を返します。@n
+	  	bPagedown が真で getXColumnCount() 、
+	  	bPagedown が偽で getXFixColumnCount() - 1 の場合、
+	  	これ以上のスクロール操作ができないことを示します。
 	 */
 	int calcYFixafterColumnNumberPagemove( IfDcdTarget* pIfDcdTarget , 
 		int iFixafterColumnNumber , bool bPagedown ) ;
 
 	/**
-	  	Y��̈ʒu��Ԃ��܂����A�X�N���[���@�\�ɂ���Ĕ�\���ɂȂ��Ă���
-	  	Y��i YFixafterColumnNumber �����j�̈ʒu���Ԃ��܂��B���̏ꍇ�A
-	  	����Y��̈ʒu�́A�Œ�Y��ɏd�Ȃ�����A�O���b�h�̈�ԏ�������
-	  	�Ȃ邱�Ƃ�����܂��B
+	  	Y列の位置を返しますが、スクロール機能によって非表示になっている
+	  	Y列（ YFixafterColumnNumber 未満）の位置も返します。この場合、
+	  	このY列の位置は、固定Y列に重なったり、グリッドの一番上よりも上に
+	  	なることがあります。
 	   @param pIfDcdTarget [in]
-	  	�`��Ώۂ��w�肵�Ă��������B 
+	  	描画対象を指定してください。 
 	   @param iYColumnNumber [in]
-	  	Y��ԍ����w�肵�Ă��������B
-	  	INT_MAX �́A�ŏI����w�肵�����̂Ƃ݂Ȃ��܂��B
+	  	Y列番号を指定してください。
+	  	INT_MAX は、最終列を指定したものとみなします。
 	   @return
-	  	Y��͈̔͂�Ԃ��܂��B
+	  	Y列の範囲を返します。
 	  
 	   @attention
-	  	���̊֐��́AcreateZoneCacne�̉e�����󂯂܂��B
-	  	�����̊֐� ��A�����ČĂяo���ꍇ�́A
-	  	�O������ createZoneCache() ���Ăяo���ƁA
-	  	�p�t�H�[�}���X�����P����܂��B
+	  	この関数は、createZoneCacneの影響を受けます。
+	  	これらの関数 を連続して呼び出す場合は、
+	  	前もって createZoneCache() を呼び出すと、
+	  	パフォーマンスが改善されます。
 	 */
 	virtual CdDcdZone	getYColumnZoneOverlap( 
 			IfDcdTarget* pIfDcdTarget , int iYColumnNumber ) ;
 	/**
-	  	X��̈ʒu��Ԃ��܂����A�X�N���[���@�\�ɂ���Ĕ�\���ɂȂ��Ă���
-	  	X��i XFixafterColumnNumber �����j�̈ʒu���Ԃ��܂��B���̏ꍇ�A
-	  	����X��̈ʒu�́A�Œ�X��ɏd�Ȃ�����A�O���b�h�̈�ԍ���������
-	  	�Ȃ邱�Ƃ�����܂��B
+	  	X列の位置を返しますが、スクロール機能によって非表示になっている
+	  	X列（ XFixafterColumnNumber 未満）の位置も返します。この場合、
+	  	このX列の位置は、固定X列に重なったり、グリッドの一番左よりも左に
+	  	なることがあります。
 	   @param pIfDcdTarget [in]
-	  	�`��Ώۂ��w�肵�Ă��������B 
+	  	描画対象を指定してください。 
 	   @param iXColumnNumber [in]
-	  	X��ԍ����w�肵�Ă��������B
-	  	INT_MAX �́A�ŏI����w�肵�����̂Ƃ݂Ȃ��܂��B
+	  	X列番号を指定してください。
+	  	INT_MAX は、最終列を指定したものとみなします。
 	   @return
-	  	X��͈̔͂�Ԃ��܂��B
+	  	X列の範囲を返します。
 	  
 	   @attention
-	  	���̊֐��́AcreateZoneCacne�̉e�����󂯂܂��B
-	  	�����̊֐� ��A�����ČĂяo���ꍇ�́A
-	  	�O������ createZoneCache() ���Ăяo���ƁA
-	  	�p�t�H�[�}���X�����P����܂��B
+	  	この関数は、createZoneCacneの影響を受けます。
+	  	これらの関数 を連続して呼び出す場合は、
+	  	前もって createZoneCache() を呼び出すと、
+	  	パフォーマンスが改善されます。
 	 */
 	virtual CdDcdZone	getXColumnZoneOverlap( 
 			IfDcdTarget* pIfDcdTarget , int iXColumnNumber ) ;
 
 	/**
-	  	�Z���̈ʒu��Ԃ��܂����A�X�N���[���@�\�ɂ���Ĕ�\���ɂȂ��Ă���
-	  	�Z���̈ʒu���Ԃ��܂��B���̏ꍇ�A
-	  	���̃Z���̈ʒu�́A�Œ�Y��EX��ɏd�Ȃ�����A
-	  	�O���b�h�̈�ԍ��������E��ԏ�������
-	  	�Ȃ邱�Ƃ�����܂��B
+	  	セルの位置を返しますが、スクロール機能によって非表示になっている
+	  	セルの位置も返します。この場合、
+	  	このセルの位置は、固定Y列・X列に重なったり、
+	  	グリッドの一番左よりも左・一番上よりも上に
+	  	なることがあります。
 	   @param pIfDcdTarget [in]
-	  	�`��Ώۂ��w�肵�Ă��������B 
+	  	描画対象を指定してください。 
 	   @param iXColumnNumber [in]
-	  	X��ԍ����w�肵�Ă��������B
-	  	INT_MAX �́A�ŏI����w�肵�����̂Ƃ݂Ȃ��܂��B
+	  	X列番号を指定してください。
+	  	INT_MAX は、最終列を指定したものとみなします。
 	   @param iYColumnNumber [in]
-	  	Y��ԍ����w�肵�Ă��������B
-	  	INT_MAX �́A�ŏI����w�肵�����̂Ƃ݂Ȃ��܂��B
+	  	Y列番号を指定してください。
+	  	INT_MAX は、最終列を指定したものとみなします。
 	   @return
-	  	�Z���͈̔͂�Ԃ��܂��B
+	  	セルの範囲を返します。
 	  
 	   @attention
-	  	���̊֐��́AcreateZoneCacne�̉e�����󂯂܂��B
-	  	�����̊֐� ��A�����ČĂяo���ꍇ�́A
-	  	�O������ createZoneCache() ���Ăяo���ƁA
-	  	�p�t�H�[�}���X�����P����܂��B
+	  	この関数は、createZoneCacneの影響を受けます。
+	  	これらの関数 を連続して呼び出す場合は、
+	  	前もって createZoneCache() を呼び出すと、
+	  	パフォーマンスが改善されます。
 	 */
 	virtual CdDcdZoneXy	getCellZoneOverlap( 
 		IfDcdTarget* pIfDcdTarget , int iXColumnNumber , int iYColumnNumber ) ;
@@ -1440,35 +1440,35 @@ protected:
 	///@}
  public:
 	// ********************************
-	///	@name	CDcdGrid-����
+	///	@name	CDcdGrid-操作
 	// ********************************
 	///@{
 	/**
-		���� Cell ����A�w�肳�ꂽ XColumn,YColumn�̐������ړ������ꏊ��
-		Cell �����߂邱�Ƃ��ł��܂��B
-		  �ړ��̍ۂ́AAttachedCell �̓X�L�b�v���Ĉړ����܂��B
-		  �ړ��́A��� XColumn �E ���� YColumn ���ړ����܂��B
-		  CDcdGrid �͈̔͂��z���Ă̈ړ��͍s���܂���B
-		�͈͂��z���Ă̈ړ������悤�Ƃ����ꍇ�A
-		�ړ���� Cell �� ColumnNumber �́A 0 �E 
-		�܂��� ColumnCount - 1 �ƂȂ�܂��B
+		ある Cell から、指定された XColumn,YColumnの数だけ移動した場所の
+		Cell を求めることができます。
+		  移動の際は、AttachedCell はスキップして移動します。
+		  移動は、先に XColumn ・ 次に YColumn を移動します。
+		  CDcdGrid の範囲を越えての移動は行いません。
+		範囲を越えての移動をしようとした場合、
+		移動先の Cell の ColumnNumber は、 0 ・ 
+		または ColumnCount - 1 となります。
 	 @param pCDcdGridCell [in]
-		�ړ����̃Z�����w�肵�Ă��������B
+		移動元のセルを指定してください。
 	 @param iXColumnMoveCount [in]
-		�ړ����� XColumn �̗ʂ��w�肵�Ă��������B
-		XColumn �� ���̐��̏ꍇ�͍��ւ̈ړ��A
-		���̐��̏ꍇ�͉E�ւ̈ړ��ƂȂ�܂��B
+		移動する XColumn の量を指定してください。
+		XColumn が 負の数の場合は左への移動、
+		正の数の場合は右への移動となります。
 	 @param iYColumnMoveCount [in]
-		�ړ����� YColumn �̗ʂ��w�肵�Ă��������B
-		YColumn �� ���̐��̏ꍇ�͏�ւ̈ړ��A
-		���̐��̏ꍇ�͉��ւ̈ړ��ƂȂ�܂��B
+		移動する YColumn の量を指定してください。
+		YColumn が 負の数の場合は上への移動、
+		正の数の場合は下への移動となります。
 	 @param bSkipScrolloutColumn [in]
-		�^�Ȃ�AScrolloutColumn ���щz���Ĉړ����܂��B
-		�U�Ȃ�AScrolloutColumn �ւ��ړ����܂��B
-		���̂Ƃ��A�K�v�Ȃ� �X�N���[�����܂�
-		�iFixafterColumnNumber ��ύX���܂��j�B
+		真なら、ScrolloutColumn を飛び越えて移動します。
+		偽なら、ScrolloutColumn へも移動します。
+		このとき、必要なら スクロールします
+		（FixafterColumnNumber を変更します）。
 	 @return 
-		�ړ���̃Z����Ԃ��܂��B
+		移動先のセルを返します。
 	 */
 	CDcdGridCell* calcMovedCell( CDcdGridCell* pCDcdGridCell , 
 		int iXColumnMoveCount , int iYColumnMoveCount ,
@@ -1476,71 +1476,71 @@ protected:
 
 
 	/**
-		��ԍ� iXColumnNumber �S�̂��AIfDcdTarget�̗̈�Ɋ��S��
-		�\�����邱�Ƃ̂ł���A�ŏ��� 
-		XFixafterColumnNumber �����߂܂��B
+		列番号 iXColumnNumber 全体を、IfDcdTargetの領域に完全に
+		表示することのできる、最小の 
+		XFixafterColumnNumber を求めます。
 	 @param pIfDcdTarget [in]
-		�`��Ώۂ� pIfDcTarget �C���^�[�t�F�[�X���w�肵�Ă��������B
+		描画対象の pIfDcTarget インターフェースを指定してください。
 	 @param iXColumnNumber [in]
-		�\�����s��������̗�ԍ����w�肵�Ă��������B
+		表示を行いたい列の列番号を指定してください。
 	 @return 
-		��ԍ� iXColumnNumber �ɑ΂���
+		列番号 iXColumnNumber に対する
 		"XFixafterColumnNumberMinForColumn"
-		�i��ɑ΂���ŏ���FixafterColumnNumber�j��Ԃ��܂��B
-		���̒l�̍ő�l�́A iXColumnNumber �ł��B
-		FixafterColumnNumnberForColumnNumber �� iXColumnNumber ��
-		�������ꍇ�AFocusCellColumnNumber �̗�S�̂��E�C���h�E��
-		�\�������Ƃ͌���܂���B
-		�i��̕����E�C���h�E�̃T�C�Y������قǑ傫���ꍇ��
-		����ɂ�����܂��j@n
-		iXColumnNumber �� FixColumn �̏ꍇ�́A�G���[������ -1 ��Ԃ��܂��B
+		（列に対する最小のFixafterColumnNumber）を返します。
+		この値の最大値は、 iXColumnNumber です。
+		FixafterColumnNumnberForColumnNumber が iXColumnNumber に
+		等しい場合、FocusCellColumnNumber の列全体がウインドウに
+		表示されるとは限りません。
+		（列の幅がウインドウのサイズを上回るほど大きい場合が
+		これにあたります）@n
+		iXColumnNumber が FixColumn の場合は、エラーを示す -1 を返します。
 	 */
 	int calcXFixafterColumnNumberMinForColumn( 
 		IfDcdTarget* pIfDcdTarget , int iXColumnNumber ) ;
 	
 	/**
-		��ԍ� iYColumnNumber �S�̂��AIfDcdTarget�̗̈�Ɋ��S��
-		�\�����邱�Ƃ̂ł���A�ŏ��� 
-		YFixafterColumnNumber �����߂܂��B
+		列番号 iYColumnNumber 全体を、IfDcdTargetの領域に完全に
+		表示することのできる、最小の 
+		YFixafterColumnNumber を求めます。
 	 @param pIfDcdTarget [in]
-		�`��Ώۂ� pIfDcTarget �C���^�[�t�F�[�X���w�肵�Ă��������B
+		描画対象の pIfDcTarget インターフェースを指定してください。
 	 @param iYColumnNumber [in]
-		�\�����s��������̗�ԍ����w�肵�Ă��������B
+		表示を行いたい列の列番号を指定してください。
 	 @return 
-		��ԍ� iYColumnNumber �ɑ΂���
+		列番号 iYColumnNumber に対する
 		"YFixafterColumnNumberMinForColumn"
-		�i��ɑ΂���ŏ���FixafterColumnNumber�j��Ԃ��܂��B
-		���̒l�̍ő�l�́A iYColumnNumber �ł��B
-		FixafterColumnNumnberForColumnNumber �� iYColumnNumber ��
-		�������ꍇ�AFocusCellColumnNumber �̗�S�̂��E�C���h�E��
-		�\�������Ƃ͌���܂���B
-		�i��̕����E�C���h�E�̃T�C�Y������قǑ傫���ꍇ��
-		����ɂ�����܂��j@n
-		iYColumnNumber �� FixColumn �̏ꍇ�́A�G���[������ -1 ��Ԃ��܂��B
+		（列に対する最小のFixafterColumnNumber）を返します。
+		この値の最大値は、 iYColumnNumber です。
+		FixafterColumnNumnberForColumnNumber が iYColumnNumber に
+		等しい場合、FocusCellColumnNumber の列全体がウインドウに
+		表示されるとは限りません。
+		（列の幅がウインドウのサイズを上回るほど大きい場合が
+		これにあたります）@n
+		iYColumnNumber が FixColumn の場合は、エラーを示す -1 を返します。
 	 */
 	int calcYFixafterColumnNumberMinForColumn(
 		IfDcdTarget* pIfDcdTarget , int iYColumnNumber ) ;
 
 	/**
-		IfDcdTarget�̗̈���őS���\���ł��Ă���
-		�ő�� ColumnNumber �������߂܂��B
+		IfDcdTargetの領域内で全域を表示できている
+		最大の ColumnNumber をを求めます。
 	 @param pIfDcdTarget [in]
-		�`��Ώۂ� pIfDcTarget �C���^�[�t�F�[�X���w�肵�Ă��������B
+		描画対象の pIfDcTarget インターフェースを指定してください。
 	 @return 
-		��ԍ� ��Ԃ��܂��B
-		-	-1 ;	//	�S���\���ł��Ă���񂪂ЂƂ��Ȃ��ꍇ
+		列番号 を返します。
+		-	-1 ;	//	全域を表示できている列がひとつもない場合
 	 */
 	int getXColumnNumberMaxInDcdTarget( 
 		IfDcdTarget* pIfDcdTarget ) ;
 	
 	/**
-		IfDcdTarget�̗̈���őS���\���ł��Ă���
-		�ő�� ColumnNumber �������߂܂��B
+		IfDcdTargetの領域内で全域を表示できている
+		最大の ColumnNumber をを求めます。
 	 @param pIfDcdTarget [in]
-		�`��Ώۂ� pIfDcTarget �C���^�[�t�F�[�X���w�肵�Ă��������B
+		描画対象の pIfDcTarget インターフェースを指定してください。
 	 @return 
-		��ԍ� ��Ԃ��܂��B
-		-	-1 ;	//	�S���\���ł��Ă���񂪂ЂƂ��Ȃ��ꍇ
+		列番号 を返します。
+		-	-1 ;	//	全域を表示できている列がひとつもない場合
 	 */
 	int getYColumnNumberMaxInDcdTarget( 
 		IfDcdTarget* pIfDcdTarget ) ;

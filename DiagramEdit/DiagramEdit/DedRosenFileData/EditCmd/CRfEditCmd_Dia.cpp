@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -94,7 +94,7 @@ namespace DedRosenFileData{ namespace EditCmd{
 // ****************************************************************
 
 // ********************************
-//	�R���X�g���N�^
+//	コンストラクタ
 // ********************************
 CRfEditCmd_Dia::CRfEditCmd_Dia( 
 		int iIndexDst ,
@@ -108,7 +108,7 @@ CRfEditCmd_Dia::CRfEditCmd_Dia(
 		m_bIsSwap(bIsSwap)
 {
 };
-CRfEditCmd_Dia::~CRfEditCmd_Dia()
+CRfEditCmd_Dia::‾CRfEditCmd_Dia()
 {
 	if ( m_pCentDedDiaContOld != NULL ){
 		delete m_pCentDedDiaContOld ;
@@ -117,7 +117,7 @@ CRfEditCmd_Dia::~CRfEditCmd_Dia()
 }
 
 // ********************************
-//@name	CRfEditCmd-����
+//@name	CRfEditCmd-操作
 // ********************************
 int CRfEditCmd_Dia::execute( 
 		CDedRosenFileData* pCDedRosenFileData ) 
@@ -128,7 +128,7 @@ int CRfEditCmd_Dia::execute(
 	CentDedDiaCont*	pCentDedDiaCont = pCentDedRosen->getCentDedDiaCont() ;
 	if ( iRv >= 0 ){
 		if ( m_iIndexDst == INT_MAX && m_iSizeDst == INT_MAX ){
-			iRv = -1 ;	//	m_iDiaIndex �̒l���s���ł��B
+			iRv = -1 ;	//	m_iDiaIndex の値が不正です。
 		}	else	{
 			if ( m_iIndexDst == INT_MAX ){
 				m_iIndexDst = pCentDedDiaCont->size()  - m_iSizeDst ;
@@ -137,12 +137,12 @@ int CRfEditCmd_Dia::execute(
 			}
 			if ( !( 0 <= m_iIndexDst && 
 				m_iIndexDst + m_iSizeDst<= pCentDedDiaCont->size() ) ){
-				iRv = -1 ;	//	m_iDiaIndex �̒l���s���ł��B
+				iRv = -1 ;	//	m_iDiaIndex の値が不正です。
 			}
 		}
 	}
 	// --------------------------------
-	//	�폜�f�[�^��ۑ�
+	//	削除データを保存
 	// --------------------------------
 	if ( iRv >= 0 ){
 		if ( m_pCentDedDiaContOld != NULL ){
@@ -161,16 +161,16 @@ int CRfEditCmd_Dia::execute(
 			m_iSizeDst , 0 ) ;
 	}
 	// --------------------------------
-	//	�����f�[�^�̍폜
+	//	既存データの削除
 	// --------------------------------
 	if ( iRv >= 0 ){
 		int iResult = pCentDedDiaCont->erase( m_iIndexDst , m_iSizeDst ) ;
 		if ( iResult < 0 ){
-			iRv = -11 ;	//	�v�f�̍폜�Ɏ��s���܂����B
+			iRv = -11 ;	//	要素の削除に失敗しました。
 		}
 	}
 	// --------------------------------
-	//	�V�K�f�[�^��ǉ�
+	//	新規データを追加
 	// --------------------------------
 	if ( iRv >= 0 ){
 		CaMui<CentDedDia>	aCaCont( pCentDedDiaCont ) ;
@@ -180,21 +180,21 @@ int CRfEditCmd_Dia::execute(
 			m_CentDedDiaContSrc.size() , 
 			m_iIndexDst ) ;
 		if ( iResult < 0 ){
-			iRv = -12 ;	//	�v�f�̒ǉ��Ɏ��s���܂����B
+			iRv = -12 ;	//	要素の追加に失敗しました。
 		}
 
 	}
 
 	// --------------------------------
-	//	��^�]�����擾�_�C���C���f�N�X�̕ύX
+	//	基準運転時分取得ダイヤインデクスの変更
 	// --------------------------------
 	if (iRv >= 0) {
 		if (m_bIsSwap && m_iSizeDst == m_CentDedDiaContSrc.size())
 		{
 			/**
-				����ւ��̏ꍇ�A�擾�_�C���C���f�N�X������ւ��͈�(iIndexDst�`iIndexDst+iSizeDst-1)�̐擪������
-				(���ۂɂ́A����ւ��͈�(iSizeDst)��2�Ȃ̂ŁA�͈͂̂ǂ��炩)�̏ꍇ�A�擪�Ȃ疖���ʒu�ɁA�����Ȃ�擪�ʒu�̃C���f�N�X�ɕύX���܂��B
-				�Ȃ��Am_bIsSwap��True�ł��A�폜���ƒǉ������H���Ⴄ�ꍇ�́A���̏ꍇ�Ɠ��l�ɏ������܂��B
+				入れ替えの場合、取得ダイヤインデクスが入れ替え範囲(iIndexDst〜iIndexDst+iSizeDst-1)の先頭か末尾
+				(実際には、入れ替え範囲(iSizeDst)は2なので、範囲のどちらか)の場合、先頭なら末尾位置に、末尾なら先頭位置のインデクスに変更します。
+				なお、m_bIsSwapがTrueでも、削除数と追加数が食い違う場合は、他の場合と同様に処理します。
 			*/
 			int iKijunDiaIndex = pCentDedRosen->getKijunDiaIndex();
 			if (iKijunDiaIndex == m_iIndexDst)
@@ -209,13 +209,13 @@ int CRfEditCmd_Dia::execute(
 		else
 		{
 			/**
-				����ւ��ȊO�̏ꍇ�A�擾�_�C���C���f�N�X��m_iIndexDst�ȏ�̏ꍇ�́A�␳���s���܂��B
+				入れ替え以外の場合、取得ダイヤインデクスがm_iIndexDst以上の場合は、補正を行います。
 			*/
 			int iKijunDiaIndex = pCentDedRosen->getKijunDiaIndex();
 			if (m_iSizeDst > m_CentDedDiaContSrc.size())
 			{
-				//�폜�����傫���ꍇ�A�폜���ꂽ�͈͂̓��A�ǉ����ꂽ���������������Ɏ擾�_�C���C���f�N�X������ꍇ�́A�擾�_�C���C���f�N�X��0(�擪�̃_�C��)�ɂ��܂��B
-				//�폜���ꂽ�͈͂������Ɏ擾�_�C���C���f�N�X������ꍇ�́A�擾�_�C���C���f�N�X���폜��-�ǉ����������Z���܂��B
+				//削除側が大きい場合、削除された範囲の内、追加された数よりも多い部分に取得ダイヤインデクスがある場合は、取得ダイヤインデクスを0(先頭のダイヤ)にします。
+				//削除された範囲よりも後ろに取得ダイヤインデクスがある場合は、取得ダイヤインデクスを削除数-追加数だけ減算します。
 				if (iKijunDiaIndex >= m_iIndexDst + m_CentDedDiaContSrc.size() && iKijunDiaIndex < m_iIndexDst + m_iSizeDst)
 				{
 					pCentDedRosen->setKijunDiaIndex(0);
@@ -227,8 +227,8 @@ int CRfEditCmd_Dia::execute(
 			}
 			else if (m_iSizeDst < m_CentDedDiaContSrc.size())
 			{
-				//�ǉ������傫���ꍇ�A�폜���ꂽ�͈͂�����Ɏ擾�_�C���C���f�N�X������ꍇ�́A�擾�_�C���C���f�N�X��ǉ���-�폜���������Z���܂��B
-				//�������A���̃_�C������̏ꍇ�͏����܂��B
+				//追加側が大きい場合、削除された範囲よりも後に取得ダイヤインデクスがある場合は、取得ダイヤインデクスを追加数-削除数だけ加算します。
+				//ただし、元のダイヤが空の場合は除きます。
 				if (iKijunDiaIndex >= m_iIndexDst + m_iSizeDst && pCentDedDiaCont->size() == 0)
 				{
 					pCentDedRosen->setKijunDiaIndex(iKijunDiaIndex + m_CentDedDiaContSrc.size() - m_iSizeDst);
@@ -236,7 +236,7 @@ int CRfEditCmd_Dia::execute(
 			}
 		}
 	}
-	//�V�K�쐬�E�폜�E�㉺���������Ȃ̂ŁA�^�p�T������K�v�͖���
+	//新規作成・削除・上下入換だけなので、運用探索する必要は無し
 //	for (int idx = 0; idx < m_CentDedDiaContSrc->size(); idx++)
 //	{
 //		pCentDedRosen->OperationConnect(idx + m_iDiaIndex);

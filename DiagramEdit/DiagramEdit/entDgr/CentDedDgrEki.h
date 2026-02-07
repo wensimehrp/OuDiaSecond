@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -82,7 +82,7 @@ Copyright (C) 2006-2017 take-okm
 #include "CentDedDgrEkiTrack2.h"
 
 #include <string>
-#include "str\tstring.h"
+#include "str¥tstring.h"
 #include <vector>
 
 namespace entDgr{
@@ -92,34 +92,34 @@ namespace entDgr{
 // ****************************************************************
 /**
 @brief
-�y�T�v�z
-�w�_�C���O�����G���e�B�e�B�N���X�Q�x�́w�_�C���O�����w�x�N���X�ł��B
-�w�_�C���x (CentDedDgrDia) �Ɋ܂܂��w�w�x�P��\���܂��B
+【概要】
+『ダイヤグラムエンティティクラス群』の『ダイヤグラム駅』クラスです。
+『ダイヤ』 (CentDedDgrDia) に含まれる『駅』１つを表します。
 
-���̃N���X�́A�w�_�C���O�����_�C���x (CentDedDgrDia) �ɕ�܂���܂��B
+このクラスは、『ダイヤグラムダイヤ』 (CentDedDgrDia) に包含されます。
 
-CentDedDgrDia : CentDedDgrEki �̑��d�x�́A
+CentDedDgrDia : CentDedDgrEki の多重度は、
 
-�P�F�i�w�w�x�̐��j 
+１：（『駅』の数） 
 
-�ƂȂ�܂��B
+となります。
 
-����́A
+これは、
 
-�i�w�H���x(CentDedRosen)�j�F�i�w�w�x�iCentDedEki�j�j
+（『路線』(CentDedRosen)）：（『駅』（CentDedEki））
 
-�̑��d�x�Ɠ����ł��B
+の多重度と同じです。
 
-���̃N���X�̑����Ƃ��āA�w���w�܂ł̉w�ԍŏ��b���x������܂��B
-�w���w�܂ł̉w�ԍŏ��b���x����A�w�_�C���O�����G���e�B�e�BY���W�x�𓱏o���܂��B
+このクラスの属性として、『次駅までの駅間最小秒数』があります。
+『次駅までの駅間最小秒数』から、『ダイヤグラムエンティティY座標』を導出します。
 
-�y�g�����z
+【使い方】
 
-  �����ł́A���̃N���X�̃I�u�W�F�N�g�𐶐�����̂́A
-�w�_�C���O�����_�C���x (CentDedDgrDia) �N���X�ɂ̃��\�b�h�����ł��B
-�N���X���[�U�[�͂��̃N���X�̃I�u�W�F�N�g�𒼐ڐ�������p���͂Ȃ��A
-�w�_�C���O�����_�C���x (CentDedDgrDia) �N���X�ɂ���Đ������ꂽ
-�I�u�W�F�N�g�̑������Q�Ƃ��邾���ł��B
+  原則では、このクラスのオブジェクトを生成するのは、
+『ダイヤグラムダイヤ』 (CentDedDgrDia) クラスにのメソッドだけです。
+クラスユーザーはこのクラスのオブジェクトを直接生成する用事はなく、
+『ダイヤグラムダイヤ』 (CentDedDgrDia) クラスによって生成された
+オブジェクトの属性を参照するだけです。
 
 
  */
@@ -127,172 +127,172 @@ class CentDedDgrEki
 {
 public:
 	/**
-		�_�C���O������ԏ��\��
+		ダイヤグラム列車情報表示
 	*/
 	enum EDiagramRessyajouhouHyouji
 	{
 		/**
-			�n���w�̏ꍇ�ɂ͕\��(����l)
+			始発駅の場合には表示(既定値)
 		*/
 		DiagramRessyajouhouHyouji_Origin ,
 		/**
-			��ɕ\������B
+			常に表示する。
 		*/
 		DiagramRessyajouhouHyouji_Anytime ,
 		/**
-			�\�����Ȃ��B
+			表示しない。
 		*/
 		DiagramRessyajouhouHyouji_Not ,
 	};
 
 private:	
 	// ********************************
-	///@name	����
+	///@name	属性
 	// ********************************
 	///@{
 	/**
-	 	�w���B
+	 	駅名。
 	 */
 	tstring  m_strEkimei ;
 	
 	/**
-	 	��v�w�Ȃ�^�ł��B
+	 	主要駅なら真です。
 	 */
 	bool  m_bIsSyuyoueki ;
 	
 	/**
-	 	�����Ԃ̉w�ԍŏ��b���B
+	 	下り列車の駅間最小秒数。
 	 
-	 	���̑����́A���̉w�Ǝ��̉wIndex�܂ł̊Ԃ́A
-		�����Ԃ̍ŏ����v�b���ł��B
+	 	この属性は、この駅と次の駅Indexまでの間の、
+		下り列車の最小所要秒数です。
 	 
-	 	���̒l�́A�w�_�C���O����Y���W�x�ł́A�w�ԕ��Ƃ���
-	 	�g���܂��B�w�_�C���O�����x�ł̉w�ԕ��iY���W�j�́A
-	 	m_iEkikanSaisyouSecKudari,m_iEkikanSaisyouSecNobori�̂���
-	 	�������ق��̒l�ƂȂ�܂��B
+	 	この値は、『ダイヤグラムY座標』での、駅間幅として
+	 	使います。『ダイヤグラム』での駅間幅（Y座標）は、
+	 	m_iEkikanSaisyouSecKudari,m_iEkikanSaisyouSecNoboriのうち
+	 	小さいほうの値となります。
 	 
-	 	�����Ԃ��猩�Ă̏I�_�w�ł́A���̒l�� 0 �ł��B
+	 	下り列車から見ての終点駅では、この値は 0 です。
 	 
-	 	�܂��A���̉w�Ԃł̉w�ԍŏ����v�b�����v�Z�s�\�i�f�[�^�Ȃ��j�̏ꍇ�́A
-	 	 0 �ł��B
+	 	また、この駅間での駅間最小所要秒数が計算不能（データなし）の場合は、
+	 	 0 です。
 	 */
 	int m_iEkikanSaisyouSecKudari ;
 	/**
-	 	����Ԃ̉w�ԍŏ��b���B
+	 	上り列車の駅間最小秒数。
 	 
-	 	���̑����́A���̉w�Ǝ��̉wIndex�܂ł̊Ԃ́A
-		����Ԃ̍ŏ����v�b���ł��B
+	 	この属性は、この駅と次の駅Indexまでの間の、
+		上り列車の最小所要秒数です。
 	 
-	 	�����Ԃ��猩�Ă̏I�_�w�ł́A���̒l�� 0 �ł��B
+	 	下り列車から見ての終点駅では、この値は 0 です。
 	 
-	 	�܂��A���̉w�Ԃł̉w�ԍŏ����v�b�����v�Z�s�\�i�f�[�^�Ȃ��j�̏ꍇ�́A
-	 	 0 �ł��B
+	 	また、この駅間での駅間最小所要秒数が計算不能（データなし）の場合は、
+	 	 0 です。
 	 */
 	int m_iEkikanSaisyouSecNobori ;
 
 	/**
-		�_�C���O�����̊���̉w�ԕ��B
+		ダイヤグラムの既定の駅間幅。
 
-		��Ԑݒ�̂Ȃ��w�Ԃ́A�_�C���O�����r���[��ł�
-		�c�����̕����w�_�C���O�����G���e�B�e�BY���W�x�P��(�b)�Ŏw�肵�܂��B
+		列車設定のない駅間の、ダイヤグラムビュー上での
+		縦方向の幅を『ダイヤグラムエンティティY座標』単位(秒)で指定します。
 	
-		����l�� 60 �ł��B
+		既定値は 60 です。
 	*/
 	int	m_iDgrYSizeEkikanDefault ;
 
 	/**
-		�_�C���O������ԏ��\���i����j
+		ダイヤグラム列車情報表示（下り）
 	
-		����l�� DiagramRessyajouhouHyouji_Origin �ł��B
+		既定値は DiagramRessyajouhouHyouji_Origin です。
 	*/	
 	EDiagramRessyajouhouHyouji m_eDiagramRessyajouhouHyoujiKudari ;
 	
 	/**
-		�_�C���O������ԏ��\���i���j
+		ダイヤグラム列車情報表示（上り）
 	
-		����l�� DiagramRessyajouhouHyouji_Origin �ł��B
+		既定値は DiagramRessyajouhouHyouji_Origin です。
 	*/
 	EDiagramRessyajouhouHyouji m_eDiagramRessyajouhouHyoujiNobori ;
 
 	/**
-		���̉w��Y���W�̍����B
-		���ʂ́A0�ł��B
+		この駅のY座標の高さ。
+		当面は、0です。
 	*/
 	int m_iDgrYSize ;
 
 	/**
-		����w�ݒ�
-		-1:����w�ݒ�͖���
-		0�ȏ�:��w��EkiIndex
+		分岐駅設定
+		-1:分岐駅設定は無効
+		0以上:基幹駅のEkiIndex
 	*/
 	int m_iBrunchCoreEkiIndex;
 
 	/**
-	����w�ݒ肪�L���Ȏ��A�ʏ�Ƃ͔��Ό����ɍ������Ă���Ƃ݂Ȃ��܂��B
-	��̓I�ɂ́A���蒅�����w���牺���̉w�ɑ΂��A����w�w�肵�Ă���ꍇ�A
-	�ʏ��[Y]�^�̘H�����Ӗ����܂����A���̒l��true�̏ꍇ�A
-	[u]�̉E�����ɐL�т������̘H���`��C���[�W�ɂȂ�܂��B
+	分岐駅設定が有効な時、通常とは反対向きに合流しているとみなします。
+	具体的には、下り着時刻駅から下方の駅に対し、分岐駅指定している場合、
+	通常は[Y]型の路線を意味しますが、この値がtrueの場合、
+	[u]の右が下に伸びた感じの路線形状イメージになります。
 	*/
 	bool m_bBrunchOpposite;
 
 	/**
-	����ݒ�
-	-1:����ݒ�͖���
-	0�ȏ�:�N�_�w��EkiIndex
+	環状線設定
+	-1:環状線設定は無効
+	0以上:起点駅のEkiIndex
 	*/
 	int m_iLoopOriginEkiIndex;
 
 	/**
-		��w�ݒ肪�L���Ȏ��A�ʏ�Ƃ͔��Ό����ɍ������Ă���Ƃ݂Ȃ��܂��B
-		���̒l���L���̎��͊�������ł͂Ȃ����^�̘H���C���[�W�ɂȂ�܂��B
-		�Ȃ��ACentDedDgrEki�ɂ����邱�̒l�́ACentDedEki�ɂ�����l�ƈӖ����قȂ�܂��B
-		CentDedEki:�I�_�w(����ݒ���s����)�ŁALoopOpposite���L���ȏꍇ��True
-		CentDedDgrEki:�_�C����`�ʂ���H���ɂ����āA�֗��Ȃ悤�ɒl��ύX���Ă��܂��B
-			�N�_�w�E�I�_�w�Ƃ��ɔ����̏ꍇ�́A�����Ƃ���LoopOpposite��false�ɂȂ�܂��B
-			�N�_�w����蒅�ŏI�_�w�����蒅�̏ꍇ�A�I�_�w�݂̂�True�ɂȂ�܂��B
-			�N�_�w����蒅�ŏI�_�w�������̏ꍇ�A�N�_�w�݂̂�True�ɂȂ�܂��B
-			�N�_�w�������ŏI�_�w�����蒅�̏ꍇ�A�I�_�w�݂̂�True�ɂȂ�܂��B
-			�܂��蒅�`�����E�E�E�����`���蒅�ƘA�Ȃ����̂����ALoopOpposite���L���Ȃ͈̂�ԏ�ƈ�ԉ��̊���݂̂ł��B
-			�܂��A��蒅�`���蒅�Ɗ������Ŋ������Ă���ꍇ�́A���蒅��LoopOpposite��True�ɂȂ�܂��B
-			����́A�����w��LoopOpposite��L���ɂ���ƁA�H���̂��܂�����Ȃ��Ȃ邩��ł��B
+		環状駅設定が有効な時、通常とは反対向きに合流しているとみなします。
+		この値が有効の時は環状線が○ではなく雫型の路線イメージになります。
+		なお、CentDedDgrEkiにおけるこの値は、CentDedEkiにおける値と意味が異なります。
+		CentDedEki:終点駅(環状線設定を行う側)で、LoopOppositeが有効な場合にTrue
+		CentDedDgrEki:ダイヤを描写する工程において、便利なように値を変更しています。
+			起点駅・終点駅ともに発着の場合は、原則としてLoopOppositeがfalseになります。
+			起点駅が上り着で終点駅が下り着の場合、終点駅のみがTrueになります。
+			起点駅が上り着で終点駅が発着の場合、起点駅のみがTrueになります。
+			起点駅が発着で終点駅が下り着の場合、終点駅のみがTrueになります。
+			つまり上り着〜発着・・・発着〜下り着と連なる環状線のうち、LoopOppositeが有効なのは一番上と一番下の環状線のみです。
+			また、上り着〜下り着と環状線が一つで完結している場合は、下り着がLoopOppositeがTrueになります。
+			これは、発着駅でLoopOppositeを有効にすると、路線のつじつまが合わなくなるからです。
 	*/
 	bool m_bLoopOpposite;
 
 	/**
-		�ݐ��\�\���ݒ�
-		����w�ݒ肪�L���̏ꍇ�A���̐ݒ�͖����ƂȂ�܂��B
-		(�b�菈�u�A�\�ɂ��邩�ǂ����͍��㌟��)
+		在線表表示設定
+		分岐駅設定が有効の場合、この設定は無効となります。
+		(暫定処置、可能にするかどうかは今後検討)
 
-		CentDedEki�̉w�����`���������E���蒅�����E��蒅�����̎��̂ݗL���ƂȂ�܂��A
-		�������A���蒅�����̏ꍇ�́A����̉w���h���w�̏ꍇ�������́A�H���̏I���w�̏ꍇ�̂ݗL���A
-		��蒅�����̏ꍇ�͈��̉w���h���w�̏ꍇ�������́A�H���̎n���w�̏ꍇ�̂ݗL���ƂȂ�܂��B
+		CentDedEkiの駅時刻形式が発着・下り着時刻・上り着時刻の時のみ有効となります、
+		ただし、下り着時刻の場合は、一つ下の駅が派生駅の場合もしくは、路線の終着駅の場合のみ有効、
+		上り着時刻の場合は一つ上の駅が派生駅の場合もしくは、路線の始発駅の場合のみ有効となります。
 
-		0:�ݐ��\��\�����܂���
-		1:���������w�Ƃ��āA�ݐ��\��\�����܂��B
-			���̏ꍇ�́A�w�̉��r���́A�ݐ��\�̏㉺�A�N�_���p�ƏI�_���p��\�����܂�
-		2:�����������w�Ƃ��āA�ݐ��\��\�����܂�
-			�ݐ��\�́A�w�̉��r���̉����ɕ\�����܂�
-		3:��蒅�����w�Ƃ��āA�ݐ��\��\�����܂�
-			�ݐ��\�́A�w�̉��r���̏���ɕ\�����܂�
+		0:在線表を表示しません
+		1:発着時刻駅として、在線表を表示します。
+			この場合は、駅の横罫線は、在線表の上下、起点方用と終点方用を表示します
+		2:下リ着時刻駅として、在線表を表示します
+			在線表は、駅の横罫線の下方に表示します
+		3:上り着時刻駅として、在線表を表示します
+			在線表は、駅の横罫線の上方に表示します
 	*/
 	int m_iDiagramTrackDisplay;
 
 	/**
-		�_�C���O�����r���[�ōݐ��\��\������Ƃ��ɁA�\�����ȗ�����Ԑ����������C���f�N�X
-		�ȗ�����Ԑ��ɂ�INT_MIN������܂�
-		(��)0�A�P�C2�̎O�̔Ԑ�������A1�Ԑ����ȗ��̏ꍇ�B�����ɂ́A�u0�AINT_MIN�A1�v������܂�
+		ダイヤグラムビューで在線表を表示するときに、表示を省略する番線を除いたインデクス
+		省略する番線にはINT_MINが入ります
+		(例)0、１，2の三つの番線があり、1番線が省略の場合。ここには、「0、INT_MIN、1」が入ります
 	*/
 	vector<int> m_iDiagramTrackIndex;
 
 	/**
-		�w�̕��ł��B�w�̍ŏ㕔�̐��ƍŉ����̐��Ƃ̕��������܂��B
+		駅の幅です。駅の最上部の線と最下部の線との幅を示します。
 	*/
 	int m_iEkiTrackDisplaySpace;
 
 	/**
-		���̉w���玟�̉w�܂ł̔w�i�F�ł�
-		0:��{�F���g�p
-		1-4:�ʐF���g�p
+		この駅から次の駅までの背景色です
+		0:基本色を使用
+		1-4:個別色を使用
 	*/
 	int m_iDiagramColorNextEki;
 
@@ -302,12 +302,12 @@ private:
 
 private:
 	// ********************************
-	///@name ���
+	///@name 包含
 	// ********************************
 	///@{
 
 	/**
-	�w�_�C���O�����w�Ԑ��x�I�u�W�F�N�g��ێ����܂��B
+	『ダイヤグラム駅番線』オブジェクトを保持します。
 
 	*/
 	CMuiCopied< CentDedDgrEkiTrack2 >	m_MuCentDedDgrEkiTrack2;
@@ -315,38 +315,38 @@ private:
 	///@}
 
 // ********************************
-//	�R���X�g���N�^
+//	コンストラクタ
 // ********************************
  public:
 	/**
 	 @param strEkimei [in]
-		�w���B
+		駅名。
 	 @param bIsSyuyoueki [in]
-		��v�w�Ȃ�^
+		主要駅なら真
 	 @param iEkikanSaisyouSecKudari [in]
-		�����Ԃ̉w�ԍŏ��b���B
+		下り列車の駅間最小秒数。
 	 @param iEkikanSaisyouSecNobori [in]
-		����Ԃ̉w�ԍŏ��b���B
+		上り列車の駅間最小秒数。
 	 @param iDiagramDgrYZahyouKyoriDefault [in]
-		�_�C���O�����̊���̉w�ԕ��B
+		ダイヤグラムの既定の駅間幅。
 	 @param eDiagramRessyajouhouHyoujiKudari [in]
-		�_�C���O������ԏ��\���i����j
+		ダイヤグラム列車情報表示（下り）
 	 @param eDiagramRessyajouhouHyoujiNobori [in]
-		�_�C���O������ԏ��\���i���j
+		ダイヤグラム列車情報表示（上り）
 	 @param iBrunchCoreEkiIndex [in]
-		���w�w�ݒ�̊�w�wIndex
+		分駅駅設定の基幹駅駅Index
 	 @param bBrunchOpposite [in]
-		���w�w�ݒ�̔��]�w�ݒ�
+		分駅駅設定の反転駅設定
 	 @param iLoopOriginEkiIndex [in]
-		����ݒ�̋N�_�w�wIndex
+		環状線設定の起点駅駅Index
 	 @param iBrunchCoreEkiIndex [in]
-		����ݒ�̔��]�w�ݒ�
+		環状線設定の反転駅設定
 	 @param bLoopOpposite [in]
-		�ݐ��\�\���ݒ�
+		在線表表示設定
 	 @param strOuterTerminalEkimei [in]
-		�H���O�����w��(�_�C������)
+		路線外発着駅名(ダイヤ略称)
 	 @param pCentDedEkiTrack2Cont [in]
-		�w�Ԑ��R���e�i�B��������CentDedDgrEkiTrack2�����������܂�
+		駅番線コンテナ。これを基にCentDedDgrEkiTrack2を初期化します
 	*/
 	CentDedDgrEki( const tstring&  strEkimei ,
 		bool bIsSyuyoueki , 
@@ -369,14 +369,14 @@ private:
 
 	CentDedDgrEki() ;
 	
-	virtual ~CentDedDgrEki();
+	virtual ‾CentDedDgrEki();
 	
 // ********************************
 //	CentDedDgrEki
 // ********************************
  public:
 	// ********************************
-	///@name	CentDedDgrEki-����
+	///@name	CentDedDgrEki-属性
 	// ********************************
 	///@{
 	tstring  getEkimei()const{ return m_strEkimei ;};
@@ -409,65 +409,65 @@ private:
 	{	return m_MuCentDedDgrEkiTrack2;	};
 	///@}
 	// ********************************
-	///@name	CentDedDgrEki-����
+	///@name	CentDedDgrEki-操作
 	// ********************************
 	///@{
 	/**
 		@param bIsOrigin [in]
-		true:�Ԃ�l�ɍݐ��\�̕\���X�y�[�X�������Z���ĕԂ��܂��B
-			m_iDiagramTrackDisplay>0�̎��́A�ݐ��\�\���w�Ȃ̂ŁA
-			�N�_���̉w���E�Ԑ��ʍݐ����A�I�_���̉w�����K�v�ƂȂ�܂��B
-			�]���āAm_iDgrYSizeEkikanDefault*(�Ԑ���+1)�̋�Ԃ����Z����܂��B
-		false:�]���ʂ�̋����A���̉w�Ǝ��̉w�̊Ԃ̋�����Ԃ��܂��B
-		m_iDiagramTrackDisplay==0�̎��́Atrue,false�Ƃ������l��Ԃ��܂��B
+		true:返り値に在線表の表示スペース分を加算して返します。
+			m_iDiagramTrackDisplay>0の時は、在線表表示駅なので、
+			起点方の駅線・番線別在線線、終点方の駅線が必要となります。
+			従って、m_iDgrYSizeEkikanDefault*(番線数+1)の空間が加算されます。
+		false:従来通りの挙動、この駅と次の駅の間の距離を返します。
+		m_iDiagramTrackDisplay==0の時は、true,falseとも同じ値を返します。
 	  @return
-		���̉w�̍ݐ��\�\���X�؁[�X�ƁA
-	 	���̉w���牺������̎��̉w�i�w�wIndex�x�����̉w�j�܂ł́A
-	 	�w�_�C���O�����G���e�B�e�BY���W�x�ł̋����̍��v��Ԃ��܂��B
+		この駅の在線表表示スぺースと、
+	 	この駅から下り方向の次の駅（『駅Index』が次の駅）までの、
+	 	『ダイヤグラムエンティティY座標』での距離の合計を返します。
 	 
-	 	  ���̒l�́A�w�����Ԃ̉w�ԍŏ��b���x�Ɓw����Ԃ̉w�ԍŏ��b���x��
-	 	�����̏������ق��ł��B
+	 	  この値は、『下り列車の駅間最小秒数』と『上り列車の駅間最小秒数』の
+	 	うちの小さいほうです。
 	 
-	 	  �A���A�w�����Ԃ̉w�ԍŏ��b���x�� 0 �ȉ��E�w����Ԃ̉w�ԍŏ��b���x
-	 	�� 1 �ȏ�̏ꍇ�́A���̒l�́w����Ԃ̉w�ԍŏ��b���x�ƂȂ�܂��B
-	 	���΂ɁA�w����Ԃ̉w�ԍŏ��b���x�� 0 �ȉ��E
-	 	�w�����Ԃ̉w�ԍŏ��b���x�� 1 �ȏ�̏ꍇ�́A���̒l��
-	 	�w�����Ԃ̉w�ԍŏ��b���x�ƂȂ�܂��B
+	 	  但し、『下り列車の駅間最小秒数』が 0 以下・『上り列車の駅間最小秒数』
+	 	が 1 以上の場合は、この値は『上り列車の駅間最小秒数』となります。
+	 	反対に、『上り列車の駅間最小秒数』が 0 以下・
+	 	『下り列車の駅間最小秒数』が 1 以上の場合は、この値は
+	 	『下り列車の駅間最小秒数』となります。
 	 
-	 	  ���̒l�̍ŏ��l��60�ł��B
+	 	  この値の最小値は60です。
 	 */
 	int getDgrYZahyouKyoriOrg()const;
 	/**
 		@param bIsOrigin [in]
-		true:�Ԃ�l�ɍݐ��\�̕\���X�y�[�X�������Z���ĕԂ��܂��B
-			m_iDiagramTrackDisplay>0�̎��́A�ݐ��\�\���w�Ȃ̂ŁA
-			�N�_���̉w���E�Ԑ��ʍݐ����A�I�_���̉w�����K�v�ƂȂ�܂��B
-			�]���āAm_iDgrYSizeEkikanDefault*(�Ԑ���+1)�̋�Ԃ����Z����܂��B
-		false:�]���ʂ�̋����A���̉w�Ǝ��̉w�̊Ԃ̋�����Ԃ��܂��B
-		m_iDiagramTrackDisplay==0�̎��́Atrue,false�Ƃ������l��Ԃ��܂��B
+		true:返り値に在線表の表示スペース分を加算して返します。
+			m_iDiagramTrackDisplay>0の時は、在線表表示駅なので、
+			起点方の駅線・番線別在線線、終点方の駅線が必要となります。
+			従って、m_iDgrYSizeEkikanDefault*(番線数+1)の空間が加算されます。
+		false:従来通りの挙動、この駅と次の駅の間の距離を返します。
+		m_iDiagramTrackDisplay==0の時は、true,falseとも同じ値を返します。
 	  @return
-		���̉w���牺������̎��̉w�i�w�wIndex�x�����̉w�j�܂ł́A
-		�w�_�C���O�����G���e�B�e�BY���W�x�ł̋�����Ԃ��܂��B
+		この駅から下り方向の次の駅（『駅Index』が次の駅）までの、
+		『ダイヤグラムエンティティY座標』での距離を返します。
 
-		  ���̒l�́A�w�����Ԃ̉w�ԍŏ��b���x�Ɓw����Ԃ̉w�ԍŏ��b���x��
-		�����̏������ق��ł��B
+		  この値は、『下り列車の駅間最小秒数』と『上り列車の駅間最小秒数』の
+		うちの小さいほうです。
 
-		  �A���A�w�����Ԃ̉w�ԍŏ��b���x�� 0 �ȉ��E�w����Ԃ̉w�ԍŏ��b���x
-		�� 1 �ȏ�̏ꍇ�́A���̒l�́w����Ԃ̉w�ԍŏ��b���x�ƂȂ�܂��B
-		���΂ɁA�w����Ԃ̉w�ԍŏ��b���x�� 0 �ȉ��E
-		�w�����Ԃ̉w�ԍŏ��b���x�� 1 �ȏ�̏ꍇ�́A���̒l��
-		�w�����Ԃ̉w�ԍŏ��b���x�ƂȂ�܂��B
+		  但し、『下り列車の駅間最小秒数』が 0 以下・『上り列車の駅間最小秒数』
+		が 1 以上の場合は、この値は『上り列車の駅間最小秒数』となります。
+		反対に、『上り列車の駅間最小秒数』が 0 以下・
+		『下り列車の駅間最小秒数』が 1 以上の場合は、この値は
+		『下り列車の駅間最小秒数』となります。
 
-		  ���̒l�̍ŏ��l��60�ł��B
+		  この値の最小値は60です。
 	 */
 	int getDgrYZahyouKyoriTer()const;
 
 	/**
-		�w�̍ݐ��\�\���X�y�[�X�̕\���͈͋�����Ԃ��܂��B
-			m_iDiagramTrackDisplay>0�̎��́A�ݐ��\�\���w�Ȃ̂ŁA
-			�N�_���̉w���E�Ԑ��ʍݐ����A�I�_���̉w�����K�v�ƂȂ�܂��B
-			�]���āAm_iDgrYSizeEkikanDefault*(�Ԑ���+1)�̋�Ԃ����Z����܂��B
-			m_iDiagramTrackDisplay=0�̎���0��Ԃ��܂�
+		駅の在線表表示スペースの表示範囲距離を返します。
+			m_iDiagramTrackDisplay>0の時は、在線表表示駅なので、
+			起点方の駅線・番線別在線線、終点方の駅線が必要となります。
+			従って、m_iDgrYSizeEkikanDefault*(番線数+1)の空間が加算されます。
+			m_iDiagramTrackDisplay=0の時は0を返します
 	*/
 	int getDgrEkiTrackDisplaySpace()const;
 	void setEkiTrackDisplaySpace(int value)

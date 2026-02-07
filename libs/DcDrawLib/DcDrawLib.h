@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 //$Id: DcDrawLib.h 92 2012-09-21 10:56:03Z okm $
 #ifndef  DcDrawLib_h
@@ -68,49 +68,49 @@ Copyright (C) 2006-2017 take-okm
 /**
  @file 
  @brief
-	���O��Ԃ̊֐��Q�E�N���X�Q�̂��ׂĂ��C���N���[�h���܂��B
+	名前空間の関数群・クラス群のすべてをインクルードします。
 */
 
 
 /**
 @brief
-  DcDraw���f�����\������N���X�Q�ł��B
-  DcDraw���f���́AGDI�ɂ��O���t�B�b�N�������������邽�߂�
-�t���[�����[�N�ł��B
+  DcDrawモデルを構成するクラス群です。
+  DcDrawモデルは、GDIによるグラフィック処理を実現するための
+フレームワークです。
 
-  DcDraw���f���ł́A���̂Q�̃C���^�[�t�F�[�X��p���āA�O���t�B�b�N������
-���{���܂��B
+  DcDrawモデルでは、次の２つのインターフェースを用いて、グラフィック処理を
+実施します。
 
 - IfDcdTarget:
-  DcDraw���f���ɂ�����A�`����s���̈��\���I�u�W�F�N�g�̃C���^�[�t�F�[�X
-�ł��B���̃C���^�[�t�F�[�X�́ADC��ێ����܂��B
-  ���̃C���^�[�t�F�[�X���T�|�[�g����N���X�̈��́A CDcdTargetOnPaint �ł��B
-  CDcdTargetOnPaint �́AWin32 �̃E�C���h�E�ɂ����āA WM_PAINT �œn�����
-�f�o�C�X�R���e�L�X�g��ێ�����N���X�ł��B
+  DcDrawモデルにおける、描画を行う領域を表すオブジェクトのインターフェース
+です。このインターフェースは、DCを保持します。
+  このインターフェースをサポートするクラスの一例は、 CDcdTargetOnPaint です。
+  CDcdTargetOnPaint は、Win32 のウインドウにおいて、 WM_PAINT で渡される
+デバイスコンテキストを保持するクラスです。
 - IfDcDraw:
-  DcDraw���f���ɂ�����A�`�揈����\���N���X���T�|�[�g����C���^�[�t�F�[�X
-�ł��B
-  ���̃C���^�[�t�F�[�X���T�|�[�g����N���X�̈��́A CDcdFillRectangleText
-�ł��B���̃N���X�́A�w�i�F���E�g���ł̃e�L�X�g�̕`����s���܂��B
+  DcDrawモデルにおける、描画処理を表すクラスがサポートするインターフェース
+です。
+  このインターフェースをサポートするクラスの一例は、 CDcdFillRectangleText
+です。このクラスは、背景色つき・枠つきでのテキストの描画を行います。
 
 
- IfDcdTarget �I�u�W�F�N�g�� IfDcDraw::DcDraw() �ɓn���ƁA IfDcDraw::DcDraw() 
-���\�b�h�́A IfDcdTarget ���\���̈�ɃO���t�B�b�N�̕`����s���܂��B
+ IfDcdTarget オブジェクトを IfDcDraw::DcDraw() に渡すと、 IfDcDraw::DcDraw() 
+メソッドは、 IfDcdTarget が表す領域にグラフィックの描画を行います。
 
-(��)  WM_PAINT ���b�Z�[�W�n���h���� CDcdTargetOnPaint �I�u�W�F�N�g�𐶐����A
-CDcdFillRectangleText::DcDraw() ���\�b�h�ɓn�����Ƃɂ��A
-CDcdFillRectangleText �I�u�W�F�N�g�� DC �ɁA�w�i�F���E�g���e�L�X�g��
-�`����s���܂��B
+(例)  WM_PAINT メッセージハンドラで CDcdTargetOnPaint オブジェクトを生成し、
+CDcdFillRectangleText::DcDraw() メソッドに渡すことにより、
+CDcdFillRectangleText オブジェクトは DC に、背景色つき・枠つきテキストの
+描画を行います。
 
 */
 namespace DcDrawLib{
 } //namespace DcDrawLib
 
-#include "DcdCd\DcdCd.h"
-#include "DcdGrid\DcdGrid.h"
-#include "DcDraw\DcDraw.h"
-#include "DcDrawMfc\DcDrawMfc.h"
-#include "WinUtil\WinUtil.h"
+#include "DcdCd¥DcdCd.h"
+#include "DcdGrid¥DcdGrid.h"
+#include "DcDraw¥DcDraw.h"
+#include "DcDrawMfc¥DcDrawMfc.h"
+#include "WinUtil¥WinUtil.h"
 
 
 #endif //DcDrawLib_h

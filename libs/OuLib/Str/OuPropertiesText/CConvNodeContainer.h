@@ -29,44 +29,44 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /** @file */
 //$Id: CConvNodeContainer.h 63 2012-09-01 08:54:26Z okm $
 #pragma once
-#include "str\OuPropertiesText\CNodeContainer.h"
-#include "str\tstring.h"
+#include "str¥OuPropertiesText¥CNodeContainer.h"
+#include "str¥tstring.h"
 
 namespace OuLib{
 namespace Str{
@@ -75,26 +75,26 @@ namespace OuPropertiesText{
 
 /**
 @brief
-	CNodeContainer �̓��e��OuPropertiesText(������)�̊Ԃ̕ϊ����s���܂��B
+	CNodeContainer の内容とOuPropertiesText(文字列)の間の変換を行います。
 
-�yErrorInfoString�z
+【ErrorInfoString】
 
-  ErrorInfoString �́A�G���[�̌���������������ł��B
-  ���̕�����́A 
+  ErrorInfoString は、エラーの原因を示す文字列です。
+  この文字列は、 
 
-	- 1��ErrReason ������(�G���[����������)�ƁA
-	- 0�ȏ��ErrProp(�G���[�T�u����)
+	- 1つのErrReason 文字列(エラー原因文字列)と、
+	- 0個以上のErrProp(エラーサブ属性)
  
- �ō\������܂��B
+ で構成されます。
 
-  ErrReason ������́A ERRREASON_ �̂����̂����ꂩ�ł��B
+  ErrReason 文字列は、 ERRREASON_ のうちのいずれかです。
 
-  ErrProp �́A 
+  ErrProp は、 
  
-	- ������=�l
+	- 属性名=値
  
- �̌`���ł��B�������́AERRPROP_ �̂����̂����ꂩ�ł��B
-   ErrReason��ErrProp�̊ԁEErrProp���m�̊Ԃ́A�^�u�ŋ�؂�܂��B
+ の形式です。属性名は、ERRPROP_ のうちのいずれかです。
+   ErrReasonとErrPropの間・ErrProp同士の間は、タブで区切ります。
 */
 class CConvNodeContainer  
 {
@@ -104,84 +104,84 @@ public:
 	// ********************************
 	///@{
 	/**
-		�����񂪃f�R�[�h�ł��܂���B
+		文字列がデコードできません。
 	@param ERRPROP_Text
-		�ΏۂƂȂ镶����
+		対象となる文字列
 	*/
 	static const TCHAR* const ERRREASON_Undecoded_Text ;
 	/**
-		�f�B���N�g�����r���ŕ��Ă��܂��B
+		ディレクトリが途中で閉じています。
 	*/
 	static const TCHAR* const ERRREASON_ContainerAborted ;
 	/**
-		�f�B���N�g�������Ă��܂���
+		ディレクトリが閉じていません
 	*/
 	static const TCHAR* const ERRREASON_ContainerIsNotClosed ;
 
 	/**
-		�s�e�L�X�g
+		行テキスト
 	*/
 	static const TCHAR* const ERRPROP_Text ;
 	///@}
 public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	CConvNodeContainer();
-	virtual ~CConvNodeContainer();
+	virtual ‾CConvNodeContainer();
 
 protected:
 	// --------------------------------
-	///@name �������֐�
+	///@name 下請け関数
 	// --------------------------------
 	///@{
 	/**
-		Property �� Value ���AOuPropertiesText�p�ɃG�X�P�[�v���܂��B
-			- ���s���� �� "\n" 
-			- "\" �� "\\" 
+		Property の Value を、OuPropertiesText用にエスケープします。
+			- 改行文字 → "¥n" 
+			- "¥" → "¥¥" 
 	@param strValue [in]
-		�ϊ��O�̕�������w�肵�Ă��������B
+		変換前の文字列を指定してください。
 	@return 
-		�ϊ���̕������Ԃ��܂��B
+		変換後の文字列を返します。
 	*/
 	tstring encodePropertyString_escapePropertyValue( 
 		const tstring& strValue ); 
 
 	/**
-		OuPropertiesText�p�ɃG�X�P�[�v���ꂽProperty �� Value ���A�ϊ����܂��B
-			- ���s���� �� "\n" 
-			- "\" �� "\\" 
+		OuPropertiesText用にエスケープされたProperty の Value を、変換します。
+			- 改行文字 ← "¥n" 
+			- "¥" ← "¥¥" 
 	@param strValue [in]
-		�ϊ��O�̕�������w�肵�Ă��������B
+		変換前の文字列を指定してください。
 	@return 
-		�ϊ���̕������Ԃ��܂��B
+		変換後の文字列を返します。
 	*/
 	tstring decodePropertyString_unescapePropertyValue(
 			const tstring& strValue ) ;
 
 	/**
-		OuPropertiesText �̎w��̈ʒu����n�܂� 
-		NodeContainer 1�����߂��A���̓��e�����Ƃ� CNodeContainer �I�u�W�F�N�g��
-		�\�z���܂��B
+		OuPropertiesText の指定の位置から始まる 
+		NodeContainer 1個を解釈し、その内容をもとに CNodeContainer オブジェクトを
+		構築します。
 	@param strContent [in]
-		OuPropertiesText��������w�肵�Ă��������B
+		OuPropertiesText文字列を指定してください。
 	@param iPosBegin [in]
-		OuPropertiesText������̒��ł̈ʒu���A0����n�܂�C���f�N�X�Ŏw�肵�Ă��������B
+		OuPropertiesText文字列の中での位置を、0から始まるインデクスで指定してください。
 	@param piPosNext [out]
-		���̊֐��́A���߂ɐ���������A���ߏI������ OuPropertiesText ������̈ʒu
-		(�������ڂ܂ł����߂�����)���������݂܂��B
-		����͒ʏ�AOuPropertiesText �̖������ADirectry�I�[�s�̐擪���w���܂��B
-		�s�v�Ȃ�NULL�ł����܂��܂���B
+		この関数は、解釈に成功したら、解釈終了した OuPropertiesText 文字列の位置
+		(何文字目までを解釈したか)を書き込みます。
+		これは通常、OuPropertiesText の末尾か、Directry終端行の先頭を指します。
+		不要ならNULLでもかまいません。
 	@param pCNodeContainer [out]
-		���̊֐��͂��̃I�u�W�F�N�g�ɁANodeContainer �̓��e��
-		�\�����܂��B
+		この関数はこのオブジェクトに、NodeContainer の内容を
+		構成します。
 	@param pstrErrorInfoString [out]
-		���̊֐��́A�G���[�����������ꍇ�́AErrorInfoString ���������݂܂��B
-		�s�v�ł����NULL���w�肵�Ă����܂��܂���B
+		この関数は、エラーが発生した場合は、ErrorInfoString を書き込みます。
+		不要であればNULLを指定してもかまいません。
 	@return
-		-	1 ;	//	����
-		-	0 ;	//	���ł� iPosBegin ���R���e���c�̖����ɂ���܂��B
-		-	-1 ;	//	�����񂪃f�R�[�h�ł��܂���B	
+		-	1 ;	//	成功
+		-	0 ;	//	すでに iPosBegin がコンテンツの末尾にあります。
+		-	-1 ;	//	文字列がデコードできません。	
 	*/
 	int decodeNodeContainer(
 		const tstring& strContent , 	int iPosBegin  , int* piPosNext , 
@@ -189,28 +189,28 @@ protected:
 			tstring* pstrErrorInfoString ) ;
 
 	/**
-		OuPropertiesText �̎w��̈ʒu����n�܂� 
-		Property 1�����߂��A���̓��e�����Ƃ� CPropertyString �I�u�W�F�N�g��
-		�\�z���܂��B
+		OuPropertiesText の指定の位置から始まる 
+		Property 1個を解釈し、その内容をもとに CPropertyString オブジェクトを
+		構築します。
 	@param strContent [in]
-		OuPropertiesText��������w�肵�Ă��������B
+		OuPropertiesText文字列を指定してください。
 	@param iPosBegin [in]
-		OuPropertiesText������̒��ł̈ʒu���A0����n�܂�C���f�N�X�Ŏw�肵�Ă��������B
+		OuPropertiesText文字列の中での位置を、0から始まるインデクスで指定してください。
 	@param piPosNext [out]
-		���̊֐��́A���߂ɐ���������A���ߏI������ OuPropertiesText ������̈ʒu
-		(�������ڂ܂ł����߂�����)���������݂܂��B
-		����͒ʏ�AOuPropertiesText �̖������ADirectry�I�[�s�̐擪���w���܂��B
-		�s�v�Ȃ�NULL�ł����܂��܂���B
+		この関数は、解釈に成功したら、解釈終了した OuPropertiesText 文字列の位置
+		(何文字目までを解釈したか)を書き込みます。
+		これは通常、OuPropertiesText の末尾か、Directry終端行の先頭を指します。
+		不要ならNULLでもかまいません。
 	@param ppCPropertyString [out]
-		���̊֐��́A���߂ɐ���������A���̓��e��ێ����� CPropertyString 
-		�I�u�W�F�N�g�𐶐����A���̃I�u�W�F�N�g�ւ̃A�h���X��
-		���̃|�C���^�ɏ������݂܂��B
+		この関数は、解釈に成功したら、その内容を保持した CPropertyString 
+		オブジェクトを生成し、そのオブジェクトへのアドレスを
+		このポインタに書き込みます。
 	@param pstrErrorInfoString [out]
-		���̊֐��́A�G���[�����������ꍇ�́AErrorInfoString ���������݂܂��B
-		�s�v�ł����NULL���w�肵�Ă����܂��܂���B
+		この関数は、エラーが発生した場合は、ErrorInfoString を書き込みます。
+		不要であればNULLを指定してもかまいません。
 	@return
-		-	1 ;	//	����
-		-	0 ;	//	���ł� iPosBegin ���R���e���c�̖����ɂ���܂��B
+		-	1 ;	//	成功
+		-	0 ;	//	すでに iPosBegin がコンテンツの末尾にあります。
 	*/
 	int decodePropertyString(
 		const tstring& strContent , 	int iPosBegin  , int* piPosNext , 
@@ -218,20 +218,20 @@ protected:
 		tstring* pstrErrorInfoString ) ;
 
 	/**
-		�R���e���c�̎w��̈ʒu����n�܂�1�s�̕������Ԃ��܂��B
+		コンテンツの指定の位置から始まる1行の文字列を返します。
 	@param strContent [in]
-		�R���e���c��������w�肵�Ă��������B
+		コンテンツ文字列を指定してください。
 	@param iPosBegin [in]
-		�R���e���c������̒��ł̈ʒu���A0����n�܂�C���f�N�X�Ŏw�肵�Ă��������B
+		コンテンツ文字列の中での位置を、0から始まるインデクスで指定してください。
 	@param piPosNext [out]
-		���̊֐��́A�R���e���c��������ł́A���̍s�̈ʒu���������݂܂��B
-		�s�v�Ȃ�NULL�ł����܂��܂���B
+		この関数は、コンテンツ文字列内での、次の行の位置を書き込みます。
+		不要ならNULLでもかまいません。
 	@param pstrLine [out]
-		���̊֐��͂��̃I�u�W�F�N�g�ɁA�P�s���̕������Ԃ��܂��B
-		�s���̋�؂�� '\n' �́A���̕�����ɂ͊܂߂܂���B
+		この関数はこのオブジェクトに、１行分の文字列を返します。
+		行末の区切りの '¥n' は、この文字列には含めません。
 	@return
-		-	1 ;	//	����
-		-	0 ;	//	���ł� iPosBegin ���R���e���c�̖����ɂ���܂��B
+		-	1 ;	//	成功
+		-	0 ;	//	すでに iPosBegin がコンテンツの末尾にあります。
 	*/
 	int getLine( 
 		const tstring& strContent , 
@@ -245,40 +245,40 @@ public:
 	// ********************************
 	///@{
 	/**
-		IfNodeContainerConst�̓��e�𕶎���(OuPropertiesText) �ɕϊ����܂��B
+		IfNodeContainerConstの内容を文字列(OuPropertiesText) に変換します。
 	@param pIfNodeContainerConst [in]
-		�ϊ����� CNodeContainer ���w�肵�Ă��������B
+		変換する CNodeContainer を指定してください。
 	@return
-		�ϊ����OuPropertiesText��Ԃ��܂��B
+		変換後のOuPropertiesTextを返します。
 	*/
 	virtual tstring encode( 
 		const IfNodeContainerConst* pIfNodeContainerConst ) ;
 
 	/**
-		CNodeContainer�̓��e�𕶎���(OuPropertiesText) �ɕϊ����܂��B
+		CNodeContainerの内容を文字列(OuPropertiesText) に変換します。
 	@param pCNodeContainer [in]
-		�ϊ����� CNodeContainer ���w�肵�Ă��������B
+		変換する CNodeContainer を指定してください。
 	@return
-		�ϊ����OuPropertiesText��Ԃ��܂��B
+		変換後のOuPropertiesTextを返します。
 	*/
 	virtual tstring encode( 
 		const CNodeContainer* pCNodeContainer ) 
 	{	return encode( pCNodeContainer->getIfNodeContainerConst() ) ; } ;
 
 	/**
-		������(OuPropertiesText) �̓��e��CNodeContainer�ɔ��f���܂��B
+		文字列(OuPropertiesText) の内容をCNodeContainerに反映します。
 	@param strContent [in]
-		�ϊ����� OuPropertiesText�B
+		変換する OuPropertiesText。
 	@param pCNodeContainer [out]
-		���̊֐��́A���� CNodeContainer �ɁAOuPropertiesText ��
-		���e�𔽉f���܂��B
-		���̊֐�������܂ŕێ����Ă������e�͔j�����܂��B
+		この関数は、この CNodeContainer に、OuPropertiesText の
+		内容を反映します。
+		この関数がそれまで保持していた内容は破棄します。
 	@param pstrErrorInfoString [out]
-		���̊֐��́A�G���[�����������ꍇ�́AErrorInfoString ���������݂܂��B
-		�s�v�ł����NULL���w�肵�Ă����܂��܂���B
+		この関数は、エラーが発生した場合は、ErrorInfoString を書き込みます。
+		不要であればNULLを指定してもかまいません。
 	@return
-		����������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	-1 ;	//	�f�B���N�g�����r���ŕ��Ă��܂��B
+		成功したら0以上、エラーなら負の数です。
+		-	-1 ;	//	ディレクトリが途中で閉じています。
 	*/
 	virtual int decode(
 		const tstring& strContent , 

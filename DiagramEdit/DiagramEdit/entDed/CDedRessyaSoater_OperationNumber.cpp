@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -78,9 +78,9 @@ Copyright (C) 2006-2017 take-okm
 #include "stdafx.h"
 #include <algorithm>
 
-#include "str\strtoint.h"
-#include "NsMu\CMup_vector.h"
-#include "NsMu\CaMui.h"
+#include "str¥strtoint.h"
+#include "NsMu¥CMup_vector.h"
+#include "NsMu¥CaMui.h"
 #include "CDedRessyaSoater_OperationNumber.h"
 
 namespace entDed{
@@ -89,30 +89,30 @@ namespace entDed{
 //	CdRessyaForSort_OperationNumber
 // ****************************************************************
 	/**
-		Mu<CentDedRessyaCont*> ���̗��(��Index)���A
-		�^�p�ԍ��Ŕ�r����֐��I�u�W�F�N�g�ł��B
+		Mu<CentDedRessyaCont*> 内の列車(のIndex)を、
+		運用番号で比較する関数オブジェクトです。
 	*/
 	class CentDedRessyaIdxCompare_OperationNumber
 	{
 		// ********************************
-		///@name �֘A
+		///@name 関連
 		// ********************************
 		///@{
 		/**
-			��ԃR���e�i�B
+			列車コンテナ。
 		*/
 		const Mu<const CentDedRessya*>* m_pCentDedRessyaCont  ; 
 
 		/**
-		�_�C���O�����N�_�������w�肵�Ă��������B
-		���̊֐��́A�\�[�g���ɁA���̒l���ł�������������
-		�݂Ȃ��܂��B
-		(��F���̎�����5:00���w�肳�ꂽ�ꍇ�́A5:00<23:59<0:00<4:59 �Ƃ��Ĕ�r���s���܂�)
+		ダイヤグラム起点時刻を指定してください。
+		この関数は、ソート時に、この値を最も小さい時刻と
+		みなします。
+		(例：この時刻に5:00が指定された場合は、5:00<23:59<0:00<4:59 として比較を行います)
 		*/
 		CdDedJikoku m_jikokuKitenJikoku;
 
 		/**
-			��Ԕԍ����r����Ƃ��A�������̗v�f�����r���邩�ǂ������w�肵�܂�
+			列車番号を比較するとき、末尾側の要素から比較するかどうかを指定します
 
 		*/
 		bool m_bCompareBottom;
@@ -130,19 +130,19 @@ namespace entDed{
 		/**
 		@return
 			*m_pCentDedRessyaCont->get(idxleft ) < *m_pCentDedRessyaCont->get(idxright ) 
-			�Ȃ�^�ł��B
+			なら真です。
 
 		@note
-		  ��r��́A
-			- NULL�łȂ����̂�NULL�̂��̂Ƃł́ANULL�łȂ����̂���B
-				- ������NULL��Ԃ̏ꍇ�́A���Index�̏������ق�����B
-			- �L���n���w���Ȃ����̂Ƃ�����̂Ƃł́A������̂���B
-				- �������L���n���w���Ȃ��ꍇ�́A���Index�̏������ق�����B
-			- �^�p�ԍ����Ȃ����̂Ƃ�����̂Ƃł́A������̂���B
-				- �������^�p�ԍ����Ȃ��ꍇ�́A���Index�̏������ق�����B
-			- �^�p�ԍ����������ő���������B�󔒂̂��̂͌�B
-			- �n���w����������������B
-			- ���Index�̏�����������B
+		  比較基準は、
+			- NULLでないものとNULLのものとでは、NULLでないものが先。
+				- 両方がNULL列車の場合は、列車Indexの小さいほうが先。
+			- 有効始発駅がないものとあるものとでは、あるものが先。
+				- 両方が有効始発駅がない場合は、列車Indexの小さいほうが先。
+			- 運用番号がないものとあるものとでは、あるものが先。
+				- 両方が運用番号がない場合は、列車Indexの小さいほうが先。
+			- 運用番号が辞書順で早い方が先。空白のものは後。
+			- 始発駅時刻が早い方が先。
+			- 列車Indexの小さい方が先。
 		*/
 		bool operator()( 
 			int idxleft , 
@@ -151,23 +151,23 @@ namespace entDed{
 			const CentDedRessya& left  = *m_pCentDedRessyaCont->get(idxleft ) ;
 			const CentDedRessya& right = *m_pCentDedRessyaCont->get(idxright ) ;
 			// --------------------------------
-			//	�Е���NULL�̏ꍇ�̔�r
-			//	- NULL�łȂ����̂�NULL�̂��̂Ƃł́ANULL�łȂ����̂���B
+			//	片方がNULLの場合の比較
+			//	- NULLでないものとNULLのものとでは、NULLでないものが先。
 			// --------------------------------
 			if ( !left.isNull() && right.isNull() )
 			{
-				//	left�͔�NULL�ŁAright��NULL
+				//	leftは非NULLで、rightはNULL
 				return true ;
 			}
 			else if ( left.isNull() && !right.isNull() )
 			{
-				//	left��NULL�ŁAright�͔�NULL
+				//	leftはNULLで、rightは非NULL
 				return false ;
 			}
 			else if (left.isNull() && right.isNull())
 			{
 				// --------------------------------
-				//	- ������NULL��Ԃ̏ꍇ�́A���Index�̏������ق�����B
+				//	- 両方がNULL列車の場合は、列車Indexの小さいほうが先。
 				// --------------------------------
 				if (idxleft < idxright)
 				{
@@ -176,27 +176,27 @@ namespace entDed{
 				return false;
 			}
 
-			//�L���n���w�����݂��邩�ǂ���
+			//有効始発駅が存在するかどうか
 			int iLeftValidSihatsuEki = left.getValidSihatsuEki();
 			int iRightValidSihatsuEki = right.getValidSihatsuEki();
 			// --------------------------------
-			//	�Е��̗L���n���w���Ȃ��ꍇ�̔�r
-			//	- �L���n���w���Ȃ����̂Ƃ�����̂Ƃł́A������̂���B
+			//	片方の有効始発駅がない場合の比較
+			//	- 有効始発駅がないものとあるものとでは、あるものが先。
 			// --------------------------------
 			if (iLeftValidSihatsuEki != -1 && iRightValidSihatsuEki == -1)
 			{
-				//	left�͗L���n���w����ŁAright�͗L���n���w�Ȃ�
+				//	leftは有効始発駅ありで、rightは有効始発駅なし
 				return true;
 			}
 			else if (iLeftValidSihatsuEki == -1 && iRightValidSihatsuEki == -1)
 			{
-				//	left�͗L���n���w�Ȃ��ŁAright�͗L���n���w����
+				//	leftは有効始発駅なしで、rightは有効始発駅あり
 				return false;
 			}
 			else if (iLeftValidSihatsuEki == -1 && iRightValidSihatsuEki == -1)
 			{
 				// --------------------------------
-				//	- �����̗L���n���w���Ȃ��ꍇ�́A���Index�̏������ق�����B
+				//	- 両方の有効始発駅がない場合は、列車Indexの小さいほうが先。
 				// --------------------------------
 				if (idxleft < idxright)
 				{
@@ -206,23 +206,23 @@ namespace entDed{
 			}
 
 			// --------------------------------
-			//	�^�p�ԍ������邩�Ȃ����ł̔�r
-			//	- �^�p�ԍ����Ȃ����̂Ƃ�����̂Ƃł́A������̂���B
+			//	運用番号があるかないかでの比較
+			//	- 運用番号がないものとあるものとでは、あるものが先。
 			// --------------------------------
 			if (!left.getOperationNumber(iLeftValidSihatsuEki).empty() && right.getOperationNumber(iRightValidSihatsuEki).empty())
 			{
-				//	left�͉^�p�ԍ�����ŁAright�͉^�p�ԍ��Ȃ�
+				//	leftは運用番号ありで、rightは運用番号なし
 				return true;
 			}
 			else if (left.getOperationNumber(iLeftValidSihatsuEki).empty() && !right.getOperationNumber(iRightValidSihatsuEki).empty())
 			{
-				//	left�͉^�p�ԍ��Ȃ��ŁAright�͉^�p�ԍ�����
+				//	leftは運用番号なしで、rightは運用番号あり
 				return false;
 			}
 			else if (left.getOperationNumber(iLeftValidSihatsuEki).empty() && right.getOperationNumber(iRightValidSihatsuEki).empty())
 			{
 				// --------------------------------
-				//	- �����̉^�p�ԍ����Ȃ��ꍇ�́A���Index�̏������ق�����B
+				//	- 両方の運用番号がない場合は、列車Indexの小さいほうが先。
 				// --------------------------------
 				if (idxleft < idxright)
 				{
@@ -234,23 +234,23 @@ namespace entDed{
 			tstring strLeftOperationNumberFront = left.getOperationNumber(left.getValidSihatsuEki()).front();
 			tstring strRightOperationNumberFront = right.getOperationNumber(right.getValidSihatsuEki()).front();
 			// --------------------------------
-			//	�Е��̉^�p�ԍ����󔒂̏ꍇ�̔�r
-			//	- �󔒂łȂ����̂Ƌ󔒂̂��̂Ƃł́A�󔒂łȂ����̂���B
+			//	片方の運用番号が空白の場合の比較
+			//	- 空白でないものと空白のものとでは、空白でないものが先。
 			// --------------------------------
 			if (!strLeftOperationNumberFront.empty() && strRightOperationNumberFront.empty())
 			{
-				//	left�͔�󔒂ŁAright�͋�
+				//	leftは非空白で、rightは空白
 				return true;
 			}
 			else if (strLeftOperationNumberFront.empty() && !strRightOperationNumberFront.empty())
 			{
-				//	left�͋󔒂ŁAright�͔��
+				//	leftは空白で、rightは非空白
 				return false;
 			}
 			else if (strLeftOperationNumberFront.empty() && strRightOperationNumberFront.empty())
 			{
 				// --------------------------------
-				//	- �����̉^�p�ԍ����󔒂̏ꍇ�́A���Index�̏������ق�����B
+				//	- 両方の運用番号が空白の場合は、列車Indexの小さいほうが先。
 				// --------------------------------
 				if (idxleft < idxright)
 				{
@@ -275,7 +275,7 @@ namespace entDed{
 				for (int idx = 1; idx <= iMin; idx++)
 				{
 					// --------------------------------
-					//	- �����Ƃ���ȊO�ł͐����̕�����
+					//	- 数字とそれ以外では数字の方が先
 					// --------------------------------
 					{
 						if (iLeftOperationNumber[iLeftSize - idx] != INT_MIN && iRightOperationNumber[iRightSize - idx] == INT_MIN)
@@ -290,9 +290,9 @@ namespace entDed{
 
 					if (iLeftOperationNumber[iLeftSize - idx] == INT_MIN)
 					{
-						//���ɐ����ȊO�̏ꍇ�A��������������
+						//共に数字以外の場合、文字数→辞書順
 						// --------------------------------
-						//	- �������̒������Z��������
+						//	- 文字部の長さが短い方が先
 						// --------------------------------
 						{
 							if (strLeftOperationNumberPart[iLeftSize - idx].length() < strRightOperationNumberPart[iRightSize - idx].length())
@@ -305,7 +305,7 @@ namespace entDed{
 							}
 						}
 						// --------------------------------
-						//	- ���������������ő���������B
+						//	- 文字部が辞書順で早い方が先。
 						// --------------------------------
 						{
 							if (strLeftOperationNumberPart[iLeftSize - idx] < strRightOperationNumberPart[iRightSize - idx])
@@ -320,9 +320,9 @@ namespace entDed{
 					}
 					else
 					{
-						//���ɐ����̏ꍇ�A�����̑召
+						//共に数字の場合、数字の大小
 						// --------------------------------
-						//	- ���������������̂���
+						//	- 数字が小さいものが先
 						// --------------------------------
 						{
 							if (iLeftOperationNumber[iLeftSize - idx] < iRightOperationNumber[iRightSize - idx])
@@ -344,7 +344,7 @@ namespace entDed{
 				for (int idx = 0; idx < iMin; idx++)
 				{
 					// --------------------------------
-					//	- �����Ƃ���ȊO�ł͐����̕�����
+					//	- 数字とそれ以外では数字の方が先
 					// --------------------------------
 					{
 						if (iLeftOperationNumber[idx] != INT_MIN && iRightOperationNumber[idx] == INT_MIN)
@@ -359,9 +359,9 @@ namespace entDed{
 
 					if (iLeftOperationNumber[idx] == INT_MIN)
 					{
-						//���ɐ����ȊO�̏ꍇ�A��������������
+						//共に数字以外の場合、文字数→辞書順
 						// --------------------------------
-						//	- �������̒������Z��������
+						//	- 文字部の長さが短い方が先
 						// --------------------------------
 						{
 							if (strLeftOperationNumberPart[idx].length() < strRightOperationNumberPart[idx].length())
@@ -374,7 +374,7 @@ namespace entDed{
 							}
 						}
 						// --------------------------------
-						//	- ���������������ő���������B
+						//	- 文字部が辞書順で早い方が先。
 						// --------------------------------
 						{
 							if (strLeftOperationNumberPart[idx] < strRightOperationNumberPart[idx])
@@ -389,9 +389,9 @@ namespace entDed{
 					}
 					else
 					{
-						//���ɐ����̏ꍇ�A�����̑召
+						//共に数字の場合、数字の大小
 						// --------------------------------
-						//	- ���������������̂���
+						//	- 数字が小さいものが先
 						// --------------------------------
 						{
 							if (iLeftOperationNumber[idx] < iRightOperationNumber[idx])
@@ -408,7 +408,7 @@ namespace entDed{
 				}
 			}
 			// --------------------------------
-			//	- �v�f�������Ȃ����̂���
+			//	- 要素数が少ないものが先
 			// --------------------------------
 			{
 				if (iLeftOperationNumber.size() < iRightOperationNumber.size())
@@ -422,35 +422,35 @@ namespace entDed{
 			}
 			
 			// --------------------------------
-			//	- �n���w������������������B
+			//	- 始発駅発時刻が早い方が先。
 			// --------------------------------
 			CdDedJikoku aJikokuLeft = left.getCentDedEkiJikoku(iLeftValidSihatsuEki).getHatsujikoku(true);
 			CdDedJikoku aJikokuRight = right.getCentDedEkiJikoku(iRightValidSihatsuEki).getHatsujikoku(true);
-			//�L���n���w�̔�������NULL�ɂȂ邱�Ƃ͂Ȃ��B
+			//有効始発駅の発時刻がNULLになることはない。
 			//if (!aJikokuLeft.isNull() && aJikokuRight.isNull())
 			//{
-			//	//	aJikokuLeft�͔�NULL�ŁAaJikokuRight��NULL
+			//	//	aJikokuLeftは非NULLで、aJikokuRightはNULL
 			//	return true;
 			//}
 			//else if (aJikokuLeft.isNull() && !aJikokuRight.isNull())
 			//{
-			//	//	aJikokuLeft��NULL�ŁAaJikokuRight�͔�NULL
+			//	//	aJikokuLeftはNULLで、aJikokuRightは非NULL
 			//	return false;
 			//}
 
 			if (aJikokuLeft.compare(aJikokuRight, m_jikokuKitenJikoku) < 0)
 			{
-				//	aJikokuLeft�̕���aJikokuRight�����O
+				//	aJikokuLeftの方がaJikokuRightよりも前
 				return true;
 			}
 			else if (aJikokuLeft.compare(aJikokuRight, m_jikokuKitenJikoku) > 0)
 			{
-				//	aJikokuRight�̕���aJikokuLeft�����O
+				//	aJikokuRightの方がaJikokuLeftよりも前
 				return false;
 			}
 
 			// --------------------------------
-			//	- ���Index�̏������ق�����B
+			//	- 列車Indexの小さいほうが先。
 			// --------------------------------
 			if ( idxleft < idxright )
 			{
@@ -466,17 +466,17 @@ namespace entDed{
 //	CDedRessyaSoater_OperationNumber
 // ****************************************************************
 	// ********************************
-	//@name �W��
+	//@name 集約
 	// ********************************
 
 	// ********************************
-	//@name ���
+	//@name 状態
 	// ********************************
 	// --------------------------------
-	//@name �����֐�
+	//@name 下請関数
 	// --------------------------------
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 CDedRessyaSoater_OperationNumber::CDedRessyaSoater_OperationNumber(
 	const CdDedJikoku&  jikokuKitenJikoku,
@@ -486,12 +486,12 @@ CDedRessyaSoater_OperationNumber::CDedRessyaSoater_OperationNumber(
 {
 }
 
-CDedRessyaSoater_OperationNumber::~CDedRessyaSoater_OperationNumber()
+CDedRessyaSoater_OperationNumber::‾CDedRessyaSoater_OperationNumber()
 {
 }
 	
 	// --------------------------------
-	//@name sort �̉����֐�(template�p�^�[��)
+	//@name sort の下請関数(templateパターン)
 	// --------------------------------
 void CDedRessyaSoater_OperationNumber::sortRessyaIndex(
 		const CentDedRessyaCont* pRessyaCont , 
@@ -501,20 +501,20 @@ void CDedRessyaSoater_OperationNumber::sortRessyaIndex(
 	bool bAbort = false ;
 
 	const Mu<const CentDedRessya*>* pCentDedRessyaCont = pRessyaCont->getMuPtr() ; 
-	//pCentDedRessyaCont = CentDedRessyaCont �I�u�W�F�N�g�ւ̃|�C���^��ێ�����
-	//	�R���e�i�ł��B
+	//pCentDedRessyaCont = CentDedRessyaCont オブジェクトへのポインタを保持する
+	//	コンテナです。
 
 	// --------------------------------
-	//	�\�[�g�p�w�����̃R���e�i�̓��e�ɏ]���A
-	//	�C���f�N�X���\�[�g
+	//	ソート用駅時刻のコンテナの内容に従い、
+	//	インデクスをソート
 	// --------------------------------
 	{
-		//	�\�[�g�� std::sort ���g�����߁A
-		//	�C���f�N�X�R���e�i�� std::vector �Ɉ�U�R�s�[����
+		//	ソートは std::sort を使うため、
+		//	インデクスコンテナを std::vector に一旦コピーする
 		CMup_vector<int>	contiRessyaIndexOrder ;
 		CaMui<int>( &contiRessyaIndexOrder ).insert( muRessyaIndexOrder , 0 , INT_MAX ) ;
 
-		//	std::vector �̓��e���\�[�g
+		//	std::vector の内容をソート
 		std::sort( 
 			contiRessyaIndexOrder.getAdaptee()->begin() ,
 			contiRessyaIndexOrder.getAdaptee()->end() ,
@@ -524,7 +524,7 @@ void CDedRessyaSoater_OperationNumber::sortRessyaIndex(
 				m_bCompareBottom) ) ;
 
 
-		//	�\�[�g���ʂ��A���̃R���e�i�ɖ߂�
+		//	ソート結果を、元のコンテナに戻す
 		muRessyaIndexOrder->erase( 0 , INT_MAX ) ;
 		CaMui<int>( muRessyaIndexOrder ).insert( &contiRessyaIndexOrder , 0 , INT_MAX ) ;
 	}

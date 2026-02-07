@@ -1,12 +1,12 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍAtake-okm‚ªì¬‚µ‚½OuDia‚ğ‰ü‘¢‚µ‚½ƒ\ƒtƒgƒEƒFƒA‚Å‚·B
-‚±‚ÌƒvƒƒOƒ‰ƒ€—˜—p‚É‚Â‚¢‚Ä‚ÍAtake-okm‹LÚ‚Ì‰º‹L•¶‘‚É€‹’‚µ‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã€take-okmæ°ãŒä½œæˆã—ãŸOuDiaã‚’æ”¹é€ ã—ãŸã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ åˆ©ç”¨ã«ã¤ã„ã¦ã¯ã€take-okmæ°è¨˜è¼‰ã®ä¸‹è¨˜æ–‡æ›¸ã«æº–æ‹ ã—ã¾ã™ã€‚
 */
 #include "stdafx.h"
 
-#include "..\DiagramEdit.h"
+#include "..Â¥DiagramEdit.h"
 #include "CInOutLinkCodeListDoc.h"
 //#include "str/stringSplit.h"
 
@@ -28,7 +28,7 @@ namespace ViewInOutLinkCodeList {
 		m_strDiaName = lpszTitle;
 
 		// --------------------------------
-		//	ƒ^ƒCƒgƒ‹•¶š—ñ‚Ìì¬
+		//	ã‚¿ã‚¤ãƒˆãƒ«æ–‡å­—åˆ—ã®ä½œæˆ
 		// --------------------------------
 		{
 			CString	strDiamei = m_strDiaName.c_str();
@@ -51,19 +51,19 @@ namespace ViewInOutLinkCodeList {
 		return TRUE;
 	}
 
-	CInOutLinkCodeListDoc::~CInOutLinkCodeListDoc()
+	CInOutLinkCodeListDoc::â€¾CInOutLinkCodeListDoc()
 	{
 	}
 
 
 	BEGIN_MESSAGE_MAP(CInOutLinkCodeListDoc, CHidemdiSubDoc)
 		//{{AFX_MSG_MAP(CInOutLinkCodeListDoc)
-		// ƒƒ‚ - ClassWizard ‚Í‚±‚ÌˆÊ’u‚Éƒ}ƒbƒsƒ“ƒO—p‚Ìƒ}ƒNƒ‚ğ’Ç‰Á‚Ü‚½‚Ííœ‚µ‚Ü‚·B
+		// ãƒ¡ãƒ¢ - ClassWizard ã¯ã“ã®ä½ç½®ã«ãƒãƒƒãƒ”ãƒ³ã‚°ç”¨ã®ãƒã‚¯ãƒ­ã‚’è¿½åŠ ã¾ãŸã¯å‰Šé™¤ã—ã¾ã™ã€‚
 		//}}AFX_MSG_MAP
 	END_MESSAGE_MAP()
 
 	/////////////////////////////////////////////////////////////////////////////
-	// CInOutLinkCodeListDoc f’f
+	// CInOutLinkCodeListDoc è¨ºæ–­
 
 #ifdef _DEBUG
 	void CInOutLinkCodeListDoc::AssertValid() const
@@ -78,21 +78,21 @@ namespace ViewInOutLinkCodeList {
 #endif //_DEBUG
 
 	/////////////////////////////////////////////////////////////////////////////
-	// CInOutLinkCodeListDoc ƒVƒŠƒAƒ‰ƒCƒY
+	// CInOutLinkCodeListDoc ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚º
 
 	void CInOutLinkCodeListDoc::Serialize(CArchive& ar)
 	{
 		if (ar.IsStoring())
 		{
-			// TODO: ‚±‚ÌˆÊ’u‚É•Û‘¶—p‚ÌƒR[ƒh‚ğ’Ç‰Á‚µ‚Ä‚­‚¾‚³‚¢
+			// TODO: ã“ã®ä½ç½®ã«ä¿å­˜ç”¨ã®ã‚³ãƒ¼ãƒ‰ã‚’è¿½åŠ ã—ã¦ãã ã•ã„
 		}
 		else
 		{
-			// TODO: ‚±‚ÌˆÊ’u‚É“Ç‚İ‚İ—p‚ÌƒR[ƒh‚ğ’Ç‰Á‚µ‚Ä‚­‚¾‚³‚¢
+			// TODO: ã“ã®ä½ç½®ã«èª­ã¿è¾¼ã¿ç”¨ã®ã‚³ãƒ¼ãƒ‰ã‚’è¿½åŠ ã—ã¦ãã ã•ã„
 		}
 	}
 
 	/////////////////////////////////////////////////////////////////////////////
-	// CInOutLinkCodeListDoc ƒRƒ}ƒ“ƒh
+	// CInOutLinkCodeListDoc ã‚³ãƒãƒ³ãƒ‰
 
 } //namespace ViewInOutLinkCodeList

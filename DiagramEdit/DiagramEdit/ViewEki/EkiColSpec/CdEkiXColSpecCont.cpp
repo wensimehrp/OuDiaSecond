@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍAtake-okm‚ªì¬‚µ‚½OuDia‚ğ‰ü‘¢‚µ‚½ƒ\ƒtƒgƒEƒFƒA‚Å‚·B
-‚±‚ÌƒvƒƒOƒ‰ƒ€—˜—p‚É‚Â‚¢‚Ä‚ÍAtake-okm‹LÚ‚Ì‰º‹L•¶‘‚É€‹’‚µ‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã€take-okmæ°ãŒä½œæˆã—ãŸOuDiaã‚’æ”¹é€ ã—ãŸã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ åˆ©ç”¨ã«ã¤ã„ã¦ã¯ã€take-okmæ°è¨˜è¼‰ã®ä¸‹è¨˜æ–‡æ›¸ã«æº–æ‹ ã—ã¾ã™ã€‚
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(–ó: 
+(è¨³: 
 
-	OuDia - —ñÔ•\‚ğ‚à‚Æ‚ÉAƒ_ƒCƒ„ƒOƒ‰ƒ€‚ğ•`‰æ‚·‚éWin32ƒAƒvƒŠƒP[ƒV
-ƒ‡ƒ“B
+	OuDia - åˆ—è»Šæ™‚åˆ»è¡¨ã‚’ã‚‚ã¨ã«ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚’æç”»ã™ã‚‹Win32ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·
+ãƒ§ãƒ³ã€‚
 
 Copyright (C) 2006-2017 take-okm 
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍƒtƒŠ[ƒ\ƒtƒgƒEƒFƒA‚Å‚·B‚ ‚È‚½‚Í‚±‚ê‚ğAƒtƒŠ[ƒ\ƒtƒgƒEƒFƒAà
-’c‚É‚æ‚Á‚Ä”­s‚³‚ê‚½GNU ˆê”ÊŒöO—˜—p‹–‘ø‘(ƒo[ƒWƒ‡ƒ“3‚©A‚»‚êˆÈ~‚Ìƒo[ƒWƒ‡
-ƒ“‚Ì‚¤‚¿‚Ç‚ê‚©)‚ª’è‚ß‚éğŒ‚Ì‰º‚ÅÄ”Ğ•z‚Ü‚½‚Í‰ü•Ï ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚ã‚ãªãŸã¯ã“ã‚Œã‚’ã€ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢è²¡
+å›£ã«ã‚ˆã£ã¦ç™ºè¡Œã•ã‚ŒãŸGNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸(ãƒãƒ¼ã‚¸ãƒ§ãƒ³3ã‹ã€ãã‚Œä»¥é™ã®ãƒãƒ¼ã‚¸ãƒ§
+ãƒ³ã®ã†ã¡ã©ã‚Œã‹)ãŒå®šã‚ã‚‹æ¡ä»¶ã®ä¸‹ã§å†é ’å¸ƒã¾ãŸã¯æ”¹å¤‰ ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚Í—L—p‚Å‚ ‚é‚±‚Æ‚ğŠè‚Á‚Ä”Ğ•z‚³‚ê‚Ü‚·‚ªA*‘S‚­‚Ì–³•ÛØ *‚Å‚·B
-¤‹Æ‰Â”\«‚Ì•ÛØ‚â“Á’è–Ú“I‚Ö‚Ì“K‡«‚ÍAŒ¾ŠO‚É¦‚³‚ê‚½‚à‚Ì‚à ŠÜ‚ßA‘S‚­‘¶İ
-‚µ‚Ü‚¹‚ñBÚ‚µ‚­‚ÍGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ğ‚²——‚­‚¾‚³‚¢B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯æœ‰ç”¨ã§ã‚ã‚‹ã“ã¨ã‚’é¡˜ã£ã¦é ’å¸ƒã•ã‚Œã¾ã™ãŒã€*å…¨ãã®ç„¡ä¿è¨¼ *ã§ã™ã€‚
+å•†æ¥­å¯èƒ½æ€§ã®ä¿è¨¼ã‚„ç‰¹å®šç›®çš„ã¸ã®é©åˆæ€§ã¯ã€è¨€å¤–ã«ç¤ºã•ã‚ŒãŸã‚‚ã®ã‚‚ å«ã‚ã€å…¨ãå­˜åœ¨
+ã—ã¾ã›ã‚“ã€‚è©³ã—ãã¯GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã‚’ã”è¦§ãã ã•ã„ã€‚
 
-‚ ‚È‚½‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚Æ‹¤‚ÉAGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ÌƒRƒs[‚ğˆê•” ó‚¯æ‚Á
-‚Ä‚¢‚é‚Í‚¸‚Å‚·B‚à‚µó‚¯æ‚Á‚Ä‚¢‚È‚¯‚ê‚ÎA<http://www.gnu.org/licenses/> ‚ğ
-‚²——‚­‚¾‚³‚¢B
+ã‚ãªãŸã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¨å…±ã«ã€GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã®ã‚³ãƒ”ãƒ¼ã‚’ä¸€éƒ¨ å—ã‘å–ã£
+ã¦ã„ã‚‹ã¯ãšã§ã™ã€‚ã‚‚ã—å—ã‘å–ã£ã¦ã„ãªã‘ã‚Œã°ã€<http://www.gnu.org/licenses/> ã‚’
+ã”è¦§ãã ã•ã„ã€‚
 
 )
 
-  ‰Á‚¦‚ÄA“Á•Ê‚È—áŠO‚Æ‚µ‚ÄAtake-okm ‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÌƒR[ƒh‚ğ 
+  åŠ ãˆã¦ã€ç‰¹åˆ¥ãªä¾‹å¤–ã¨ã—ã¦ã€take-okm ã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ã‚³ãƒ¼ãƒ‰ã‚’ 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ‚ ‚é‚¢‚Í "MFC Version 9.0" ‚Æ“¯‚¶ƒ‰ƒCƒZƒ“ƒX‚ª“K—p‚³‚ê‚½
-  "MFC Version 9.0" ‚Ì‰ü•Ï‚³‚ê‚½ƒo[ƒWƒ‡ƒ“)‚ÆƒŠƒ“ƒN‚µA
-  ƒŠƒ“ƒN‚³‚ê‚½—¼Ò‚ğŠÜ‚ŞŒ‹‡’˜ì•¨‚ğ”Ğ•z‚·‚é‹–‰Â‚ğ—^‚¦‚Ü‚·B
-  ‚ ‚È‚½‚Í "MFC" ˆÈŠO‚Åg‚í‚ê‚Ä‚¢‚é‚·‚×‚Ä
-  ‚ÌƒR[ƒh‚ÉŠÖ‚µ‚Ä‚Í‘S–Ê“I‚ÉGNUˆê”ÊŒöO—˜—p‹–‘øŒ_–ñ‘‚É]‚í‚È‚¯‚ê‚Î
-  ‚È‚è‚Ü‚¹‚ñB‚ ‚È‚½‚ª‚±‚Ìƒtƒ@ƒCƒ‹‚ğ‰ü•Ï‚µ‚½‚È‚ç‚ÎA‚ ‚È‚½‚Í‚±‚Ì—áŠO
-  ‚ğ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚Ìƒtƒ@ƒCƒ‹‚Éˆø‚«‘±‚«İ‚¯‚é‚±‚Æ‚à‚Å‚«‚Ü‚·‚ªA‚»
-  ‚¤‚·‚é‹`–±‚Í‚ ‚è‚Ü‚¹‚ñB‚à‚µ—áŠO‚ğİ‚¯‚½‚­‚È‚¯‚ê‚ÎA‚±‚Ì—áŠOğ€‚ğ
-  ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚©‚ç‚Ííœ‚µ‚Ä‚­‚¾‚³‚¢B)
+  (  ã‚ã‚‹ã„ã¯ "MFC Version 9.0" ã¨åŒã˜ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ãŒé©ç”¨ã•ã‚ŒãŸ
+  "MFC Version 9.0" ã®æ”¹å¤‰ã•ã‚ŒãŸãƒãƒ¼ã‚¸ãƒ§ãƒ³)ã¨ãƒªãƒ³ã‚¯ã—ã€
+  ãƒªãƒ³ã‚¯ã•ã‚ŒãŸä¸¡è€…ã‚’å«ã‚€çµåˆè‘—ä½œç‰©ã‚’é ’å¸ƒã™ã‚‹è¨±å¯ã‚’ä¸ãˆã¾ã™ã€‚
+  ã‚ãªãŸã¯ "MFC" ä»¥å¤–ã§ä½¿ã‚ã‚Œã¦ã„ã‚‹ã™ã¹ã¦
+  ã®ã‚³ãƒ¼ãƒ‰ã«é–¢ã—ã¦ã¯å…¨é¢çš„ã«GNUä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾å¥‘ç´„æ›¸ã«å¾“ã‚ãªã‘ã‚Œã°
+  ãªã‚Šã¾ã›ã‚“ã€‚ã‚ãªãŸãŒã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ”¹å¤‰ã—ãŸãªã‚‰ã°ã€ã‚ãªãŸã¯ã“ã®ä¾‹å¤–
+  ã‚’ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®ãƒ•ã‚¡ã‚¤ãƒ«ã«å¼•ãç¶šãè¨­ã‘ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ãŒã€ã
+  ã†ã™ã‚‹ç¾©å‹™ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ã‚‚ã—ä¾‹å¤–ã‚’è¨­ã‘ãŸããªã‘ã‚Œã°ã€ã“ã®ä¾‹å¤–æ¡é …ã‚’
+  ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‹ã‚‰ã¯å‰Šé™¤ã—ã¦ãã ã•ã„ã€‚)
 */
 // ****************************************************************
 // $Id: CdEkiXColSpecCont.cpp 261 2016-01-23 03:59:53Z okm $
@@ -78,7 +78,7 @@ namespace ViewEki{ namespace EkiColSpec{
 
 
 	// ********************************
-	//	ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	//	ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 	// ********************************
 CdEkiXColSpecCont::CdEkiXColSpecCont( 
 		const CentDedEkiCont* pCentDedEkiCont,
@@ -92,11 +92,11 @@ CdEkiXColSpecCont::CdEkiXColSpecCont()
 }
 
 	// ********************************
-	//@name CdEkiXColSpecc-‘®«
+	//@name CdEkiXColSpecc-å±æ€§
 	// ********************************
 
 	// ********************************
-	//@name CWndJikokuhyou_CdXColSpecCont-‘€ì
+	//@name CWndJikokuhyou_CdXColSpecCont-æ“ä½œ
 	// ********************************
 void CdEkiXColSpecCont::scan( 
 		const CentDedEkiCont* pCentDedEkiCont,
@@ -122,194 +122,194 @@ CdEkiXColSpec CdEkiXColSpecCont::ColumnNumberToSpec(
 {
 	CdEkiXColSpec	aSpec ;
 	
-	//	‰wIndex
+	//	é§…Index
 	if ( iColumnNumber == 0 )
 	{
 		aSpec.set( CdEkiXColSpec::EColumnType::ColumnType_EkiIndex ) ;
 	}
-	//	‰w–¼
+	//	é§…å
 	else if ( iColumnNumber == 1 )
 	{
 		aSpec.set( CdEkiXColSpec::EColumnType::ColumnType_Ekimei) ;
 	}
-	//	‰wŒ`®
+	//	é§…æ™‚åˆ»å½¢å¼
 	else if ( iColumnNumber == 2 )
 	{
 		aSpec.set( CdEkiXColSpec::EColumnType::ColumnType_Ekijikokukeisiki) ;
 	}
-	//	‰w‹K–Í
+	//	é§…è¦æ¨¡
 	else if (iColumnNumber == 3)
 	{
 		aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_Ekikibo);
 	}
-	//	”Ôü”
+	//	ç•ªç·šæ•°
 	else if (iColumnNumber == 4)
 	{
 		aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_EkiTrack2Count);
 	}
 	else if (getDisplaySettingMode())
 	{
-		//	‹N“_‘¤‰º‚è‘Œ‹ã‚è‰ğŒ‹ì‹Æ—“
+		//	èµ·ç‚¹å´ä¸‹ã‚Šå¢—çµä¸Šã‚Šè§£çµä½œæ¥­æ¬„
 		if (iColumnNumber == 5)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OperationOriginDownBeforeUpAfter);
 		}
-		//	‘OŒãì‹Æ—“(‹N“_‘¤)
+		//	å‰å¾Œä½œæ¥­æ¬„(èµ·ç‚¹å´)
 		else if (iColumnNumber == 6)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OperationOrigin);
 		}
-		//	‹N“_‘¤‰º‚è‰ğŒ‹ã‚è‘Œ‹ì‹Æ—“
+		//	èµ·ç‚¹å´ä¸‹ã‚Šè§£çµä¸Šã‚Šå¢—çµä½œæ¥­æ¬„
 		else if (iColumnNumber == 7)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OperationOriginDownAfterUpBefore);
 		}
-		//	I“_‘¤‰º‚è‘Œ‹ã‚è‰ğŒ‹ì‹Æ—“
+		//	çµ‚ç‚¹å´ä¸‹ã‚Šå¢—çµä¸Šã‚Šè§£çµä½œæ¥­æ¬„
 		else if (iColumnNumber == 8)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OperationTerminalDownBeforeUpAfter);
 		}
-		//	‘OŒãì‹Æ—“(I“_‘¤)
+		//	å‰å¾Œä½œæ¥­æ¬„(çµ‚ç‚¹å´)
 		else if (iColumnNumber == 9)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OperationTerminal);
 		}
-		//	I“_‘¤‰º‚è‰ğŒ‹ã‚è‘Œ‹ì‹Æ—“
+		//	çµ‚ç‚¹å´ä¸‹ã‚Šè§£çµä¸Šã‚Šå¢—çµä½œæ¥­æ¬„
 		else if (iColumnNumber == 10)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OperationTerminalDownAfterUpBefore);
 		}
-		//	”Ôü•\¦È—ªİ’è
+		//	ç•ªç·šè¡¨ç¤ºçœç•¥è¨­å®š
 		else if (iColumnNumber == 11)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_TrackOmit);
 		}
-		//	‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì’…•\¦İ’è
+		//	ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®ç€æ™‚åˆ»è¡¨ç¤ºè¨­å®š
 		else if (iColumnNumber == 12)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayKudari);
 		}
-		//	‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì”­’…”Ôü•\¦İ’è
+		//	ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®ç™ºç€ç•ªç·šè¡¨ç¤ºè¨­å®š
 		else if (iColumnNumber == 13)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayKudari);
 		}
-		//	 ‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì”­•\¦İ’è
+		//	 ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®ç™ºæ™‚åˆ»è¡¨ç¤ºè¨­å®š
 		else if (iColumnNumber == 14)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayKudari);
 		}
-		//	‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì—ñÔ”Ô†•\¦İ’è
+		//	ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®åˆ—è»Šç•ªå·è¡¨ç¤ºè¨­å®š
 		else if (iColumnNumber == 15)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayKudari);
 		}
-		//	‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì‰^—p”Ô†•\¦İ’è
+		//	ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®é‹ç”¨ç•ªå·è¡¨ç¤ºè¨­å®š
 		else if (iColumnNumber == 16)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayKudari);
 		}
-		//	‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì‰^—p”Ô†•\¦’i”İ’è
+		//	ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®é‹ç”¨ç•ªå·è¡¨ç¤ºæ®µæ•°è¨­å®š
 		else if (iColumnNumber == 17)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsKudari);
 		}
-		//	‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì—ñÔí•Ê•\¦İ’è
+		//	ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®åˆ—è»Šç¨®åˆ¥è¡¨ç¤ºè¨­å®š
 		else if (iColumnNumber == 18)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayKudari);
 		}
-		//	‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì—ñÔ–¼E†”•\¦İ’è
+		//	ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®åˆ—è»Šåãƒ»å·æ•°è¡¨ç¤ºè¨­å®š
 		else if (iColumnNumber == 19)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayKudari);
 		}
-		//	‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì˜HüŠOE‘O—ñÔn”­‰w•\¦İ’è
+		//	ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®è·¯ç·šå¤–ãƒ»å‰åˆ—è»Šå§‹ç™ºé§…è¡¨ç¤ºè¨­å®š
 		else if (iColumnNumber == 20)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayKudari);
 		}
-		//	‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì˜HüŠOEŸ—ñÔI’…‰w•\¦İ’è
+		//	ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®è·¯ç·šå¤–ãƒ»æ¬¡åˆ—è»Šçµ‚ç€é§…è¡¨ç¤ºè¨­å®š
 		else if (iColumnNumber == 21)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayKudari);
 		}
-		//	ã‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì’…•\¦İ’è 
+		//	ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®ç€æ™‚åˆ»è¡¨ç¤ºè¨­å®š 
 		else if (iColumnNumber == 22)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayNobori);
 		}
-		//	ã‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì”­’…”Ôü•\¦İ’è
+		//	ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®ç™ºç€ç•ªç·šè¡¨ç¤ºè¨­å®š
 		else if (iColumnNumber == 23)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayNobori);
 		}
-		//	ã‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì”­•\¦İ’è
+		//	ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®ç™ºæ™‚åˆ»è¡¨ç¤ºè¨­å®š
 		else if (iColumnNumber == 24)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayNobori);
 		}
-		//	ã‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì—ñÔ”Ô†•\¦İ’è
+		//	ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®åˆ—è»Šç•ªå·è¡¨ç¤ºè¨­å®š
 		else if (iColumnNumber == 25)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayNobori);
 		}
-		//	ã‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì‰^—p”Ô†•\¦İ’è
+		//	ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®é‹ç”¨ç•ªå·è¡¨ç¤ºè¨­å®š
 		else if (iColumnNumber == 26)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayNobori);
 		}
-		//	ã‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì‰^—p”Ô†•\¦’i”İ’è
+		//	ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®é‹ç”¨ç•ªå·è¡¨ç¤ºæ®µæ•°è¨­å®š
 		else if (iColumnNumber == 27)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsNobori);
 		}
-		//	ã‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì—ñÔí•Ê•\¦İ’è
+		//	ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®åˆ—è»Šç¨®åˆ¥è¡¨ç¤ºè¨­å®š
 		else if (iColumnNumber == 28)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayNobori);
 		}
-		//	ã‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì—ñÔ–¼E†”•\¦İ’è
+		//	ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®åˆ—è»Šåãƒ»å·æ•°è¡¨ç¤ºè¨­å®š
 		else if (iColumnNumber == 29)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayNobori);
 		}
-		//	ã‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì˜HüŠOE‘O—ñÔn”­‰w•\¦İ’è
+		//	ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®è·¯ç·šå¤–ãƒ»å‰åˆ—è»Šå§‹ç™ºé§…è¡¨ç¤ºè¨­å®š
 		else if (iColumnNumber == 30)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayNobori);
 		}
-		//	ã‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì˜HüŠOEŸ—ñÔI’…‰w•\¦İ’è
+		//	ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®è·¯ç·šå¤–ãƒ»æ¬¡åˆ—è»Šçµ‚ç€é§…è¡¨ç¤ºè¨­å®š
 		else if (iColumnNumber == 31)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayNobori);
 		}
-		//	ƒ_ƒCƒ„ƒOƒ‰ƒ€ƒrƒ…[‚Å‚Ìİü•\•\¦İ’è
+		//	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ãƒ“ãƒ¥ãƒ¼ã§ã®åœ¨ç·šè¡¨è¡¨ç¤ºè¨­å®š
 		else if (iColumnNumber == 32)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_DiagramTrackDisplay);
 		}
-		//	ƒ_ƒCƒ„ƒOƒ‰ƒ€—ñÔî•ñ•\¦i‰º‚èj
+		//	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åˆ—è»Šæƒ…å ±è¡¨ç¤ºï¼ˆä¸‹ã‚Šï¼‰
 		else if (iColumnNumber == 33)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_DiagramRessyajouhouHyoujiKudari);
 		}
-		//	ƒ_ƒCƒ„ƒOƒ‰ƒ€—ñÔî•ñ•\¦iã‚èj
+		//	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åˆ—è»Šæƒ…å ±è¡¨ç¤ºï¼ˆä¸Šã‚Šï¼‰
 		else if (iColumnNumber == 34)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_DiagramRessyajouhouHyoujiNobori);
 		}
-		//	‚±‚Ì‰w‚©‚çŸ‚Ì‰w‚Ü‚Å‚Ì‹——£
+		//	ã“ã®é§…ã‹ã‚‰æ¬¡ã®é§…ã¾ã§ã®è·é›¢
 		else if (iColumnNumber == 35)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_NextEkiDistance);
 		}
-		//	‚±‚Ì‰w‚©‚çŸ‚Ì‰w‚Ü‚Å‚Ì”wŒiFİ’è
+		//	ã“ã®é§…ã‹ã‚‰æ¬¡ã®é§…ã¾ã§ã®èƒŒæ™¯è‰²è¨­å®š
 		else if (iColumnNumber == 36)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_DiagramColorNextEki);
 		}
-		//	” ƒ_ƒCƒ„‚Å•\¦‚·‚é‚©”Û‚©
+		//	ç®±ãƒ€ã‚¤ãƒ¤ã§è¡¨ç¤ºã™ã‚‹ã‹å¦ã‹
 		else if (iColumnNumber == 37)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OperationTableDisplayJikoku);
@@ -318,12 +318,12 @@ CdEkiXColSpec CdEkiXColSpecCont::ColumnNumberToSpec(
 	}
 	else
 	{
-		//	•ªŠò‰wİ’è
+		//	åˆ†å²é§…è¨­å®š
 		if (iColumnNumber == 5)
 		{
 		aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_EkiBrunch);
 		}
-		//	ŠÂóüİ’è
+		//	ç’°çŠ¶ç·šè¨­å®š
 		else if (iColumnNumber == 6)
 		{
 		aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_EkiLoop);
@@ -336,31 +336,31 @@ int CdEkiXColSpecCont::ColumnNumberFromSpec(
 		const CdEkiXColSpec& aSpec ) 
 {
 	int iColumnNumber= -1 ;
-	//	‰wIndex
+	//	é§…Index
 	if ( aSpec.getColumnType() == 
 		CdEkiXColSpec::EColumnType::ColumnType_EkiIndex)
 	{
 		iColumnNumber = 0 ;
 	}
-	//	‰w–¼
+	//	é§…å
 	else if ( aSpec.getColumnType() == 
 		CdEkiXColSpec::EColumnType::ColumnType_Ekimei)
 	{
 		iColumnNumber = 1 ;
 	}
-	//	‰wŒ`®
+	//	é§…æ™‚åˆ»å½¢å¼
 	else if ( aSpec.getColumnType() == 
 		CdEkiXColSpec::EColumnType::ColumnType_Ekijikokukeisiki)
 	{
 		iColumnNumber = 2 ;
 	}
-	//	‰w‹K–Í
+	//	é§…è¦æ¨¡
 	else if (aSpec.getColumnType() ==
 		CdEkiXColSpec::EColumnType::ColumnType_Ekikibo)
 	{
 		iColumnNumber = 3;
 	}
-	//	”Ôü”
+	//	ç•ªç·šæ•°
 	else if (aSpec.getColumnType() ==
 		CdEkiXColSpec::EColumnType::ColumnType_EkiTrack2Count)
 	{
@@ -368,199 +368,199 @@ int CdEkiXColSpecCont::ColumnNumberFromSpec(
 	}
 	else if (getDisplaySettingMode())
 	{
-		//	‹N“_‘¤‰º‚è‘Œ‹ã‚è‰ğŒ‹ì‹Æ—“
+		//	èµ·ç‚¹å´ä¸‹ã‚Šå¢—çµä¸Šã‚Šè§£çµä½œæ¥­æ¬„
 		if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_OperationOriginDownBeforeUpAfter)
 		{
 			iColumnNumber = 5;
 		}
-		//	‘OŒãì‹Æ—“(‹N“_‘¤)
+		//	å‰å¾Œä½œæ¥­æ¬„(èµ·ç‚¹å´)
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_OperationOrigin)
 		{
 			iColumnNumber = 6;
 		}
-		//	‹N“_‘¤‰º‚è‰ğŒ‹ã‚è‘Œ‹‰ğŒ‹ì‹Æ—“
+		//	èµ·ç‚¹å´ä¸‹ã‚Šè§£çµä¸Šã‚Šå¢—çµè§£çµä½œæ¥­æ¬„
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_OperationOriginDownAfterUpBefore)
 		{
 			iColumnNumber = 7;
 		}
-		//	I“_‘¤‰º‚è‘Œ‹ã‚è‰ğŒ‹ì‹Æ—“
+		//	çµ‚ç‚¹å´ä¸‹ã‚Šå¢—çµä¸Šã‚Šè§£çµä½œæ¥­æ¬„
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_OperationTerminalDownBeforeUpAfter)
 		{
 			iColumnNumber = 8;
 		}
-		//	‘OŒãì‹Æ—“(I“_‘¤)
+		//	å‰å¾Œä½œæ¥­æ¬„(çµ‚ç‚¹å´)
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_OperationTerminal)
 		{
 			iColumnNumber = 9;
 		}
-		//	I“_‘¤‰º‚è‰ğŒ‹ã‚è‘Œ‹ì‹Æ—“
+		//	çµ‚ç‚¹å´ä¸‹ã‚Šè§£çµä¸Šã‚Šå¢—çµä½œæ¥­æ¬„
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_OperationTerminalDownAfterUpBefore)
 		{
 			iColumnNumber = 10;
 		}
-		//	”Ôü•\¦È—ªİ’è
+		//	ç•ªç·šè¡¨ç¤ºçœç•¥è¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_TrackOmit)
 		{
 			iColumnNumber = 11;
 		}
-		//	‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì’…•\¦İ’è
+		//	ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®ç€æ™‚åˆ»è¡¨ç¤ºè¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayKudari)
 		{
 			iColumnNumber = 12;
 		}
-		//	‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì”­’…”Ôü•\¦İ’è
+		//	ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®ç™ºç€ç•ªç·šè¡¨ç¤ºè¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayKudari)
 		{
 			iColumnNumber = 13;
 		}
-		//	‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì”­•\¦İ’è
+		//	ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®ç™ºæ™‚åˆ»è¡¨ç¤ºè¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayKudari)
 		{
 			iColumnNumber = 14;
 		}
-		//	‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì—ñÔ”Ô†•\¦İ’è
+		//	ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®åˆ—è»Šç•ªå·è¡¨ç¤ºè¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayKudari)
 		{
 			iColumnNumber = 15;
 		}
-		//	‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì‰^—p”Ô†•\¦İ’è
+		//	ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®é‹ç”¨ç•ªå·è¡¨ç¤ºè¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayKudari)
 		{
 			iColumnNumber = 16;
 		}
-		//	‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì‰^—p”Ô†•\¦’i”İ’è
+		//	ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®é‹ç”¨ç•ªå·è¡¨ç¤ºæ®µæ•°è¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsKudari)
 		{
 			iColumnNumber = 17;
 		}
-		//	‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì—ñÔí•Ê•\¦İ’è
+		//	ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®åˆ—è»Šç¨®åˆ¥è¡¨ç¤ºè¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayKudari)
 		{
 			iColumnNumber = 18;
 		}
-		//	‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì—ñÔ–¼E†”•\¦İ’è
+		//	ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®åˆ—è»Šåãƒ»å·æ•°è¡¨ç¤ºè¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayKudari)
 		{
 			iColumnNumber = 19;
 		}
-		//	‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì˜HüŠOE‘O—ñÔn”­‰w•\¦İ’è
+		//	ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®è·¯ç·šå¤–ãƒ»å‰åˆ—è»Šå§‹ç™ºé§…è¡¨ç¤ºè¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayKudari)
 		{
 			iColumnNumber = 20;
 		}
-		//	‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì˜HüŠOEŸ—ñÔI’…‰w•\¦İ’è
+		//	ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®è·¯ç·šå¤–ãƒ»æ¬¡åˆ—è»Šçµ‚ç€é§…è¡¨ç¤ºè¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayKudari)
 		{
 			iColumnNumber = 21;
 		}
-		//	ã‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì’…•\¦İ’è
+		//	ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®ç€æ™‚åˆ»è¡¨ç¤ºè¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayNobori)
 		{
 			iColumnNumber = 22;
 		}
-		//	ã‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì”­’…”Ôü•\¦İ’è
+		//	ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®ç™ºç€ç•ªç·šè¡¨ç¤ºè¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayNobori)
 		{
 			iColumnNumber = 23;
 		}
-		//	ã‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì”­•\¦İ’è
+		//	ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®ç™ºæ™‚åˆ»è¡¨ç¤ºè¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayNobori)
 		{
 			iColumnNumber = 24;
 		}
-		//	ã‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì—ñÔ”Ô†•\¦İ’è
+		//	ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®åˆ—è»Šç•ªå·è¡¨ç¤ºè¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayNobori)
 		{
 			iColumnNumber = 25;
 		}
-		//	ã‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì‰^—p”Ô†•\¦İ’è
+		//	ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®é‹ç”¨ç•ªå·è¡¨ç¤ºè¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayNobori)
 		{
 			iColumnNumber = 26;
 		}
-		//	ã‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì‰^—p”Ô†•\¦’i”İ’è
+		//	ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®é‹ç”¨ç•ªå·è¡¨ç¤ºæ®µæ•°è¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsNobori)
 		{
 			iColumnNumber = 27;
 		}
-		//	ã‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì—ñÔí•Ê•\¦İ’è
+		//	ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®åˆ—è»Šç¨®åˆ¥è¡¨ç¤ºè¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayNobori)
 		{
 			iColumnNumber = 28;
 		}
-		//	ã‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì—ñÔ–¼E†”•\¦İ’è
+		//	ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®åˆ—è»Šåãƒ»å·æ•°è¡¨ç¤ºè¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayNobori)
 		{
 			iColumnNumber = 29;
 		}
-		//	ã‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì˜HüŠOE‘O—ñÔn”­‰w•\¦İ’è
+		//	ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®è·¯ç·šå¤–ãƒ»å‰åˆ—è»Šå§‹ç™ºé§…è¡¨ç¤ºè¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayNobori)
 		{
 			iColumnNumber = 30;
 		}
-		//	ã‚èƒJƒXƒ^ƒ}ƒCƒY•\ƒrƒ…[‚Å‚Ì˜HüŠOEŸ—ñÔI’…‰w•\¦İ’è
+		//	ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã®è·¯ç·šå¤–ãƒ»æ¬¡åˆ—è»Šçµ‚ç€é§…è¡¨ç¤ºè¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayNobori)
 		{
 			iColumnNumber = 31;
 		}
-		//	ƒ_ƒCƒ„ƒOƒ‰ƒ€ƒrƒ…[‚Å‚Ìİü•\•\¦İ’è
+		//	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ãƒ“ãƒ¥ãƒ¼ã§ã®åœ¨ç·šè¡¨è¡¨ç¤ºè¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_DiagramTrackDisplay)
 		{
 			iColumnNumber = 32;
 		}
-		//	ƒ_ƒCƒ„ƒOƒ‰ƒ€—ñÔî•ñ•\¦i‰º‚èj
+		//	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åˆ—è»Šæƒ…å ±è¡¨ç¤ºï¼ˆä¸‹ã‚Šï¼‰
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_DiagramRessyajouhouHyoujiKudari)
 		{
 			iColumnNumber = 33;
 		}
-		//	ƒ_ƒCƒ„ƒOƒ‰ƒ€—ñÔî•ñ•\¦iã‚èj
+		//	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åˆ—è»Šæƒ…å ±è¡¨ç¤ºï¼ˆä¸Šã‚Šï¼‰
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_DiagramRessyajouhouHyoujiNobori)
 		{
 			iColumnNumber = 34;
 		}
-		//	‚±‚Ì‰w‚©‚çŸ‚Ì‰w‚Ü‚Å‚Ì‹——£
+		//	ã“ã®é§…ã‹ã‚‰æ¬¡ã®é§…ã¾ã§ã®è·é›¢
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_NextEkiDistance)
 		{
 			iColumnNumber = 35;
 		}
-		//	‚±‚Ì‰w‚©‚çŸ‚Ì‰w‚Ü‚Å‚Ì”wŒiFİ’è
+		//	ã“ã®é§…ã‹ã‚‰æ¬¡ã®é§…ã¾ã§ã®èƒŒæ™¯è‰²è¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_DiagramColorNextEki)
 		{
 			iColumnNumber = 36;
 		}
-		//	” ƒ_ƒCƒ„‚Å•\¦‚·‚é‚©”Û‚©
+		//	ç®±ãƒ€ã‚¤ãƒ¤ã§è¡¨ç¤ºã™ã‚‹ã‹å¦ã‹
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_OperationTableDisplayJikoku)
 		{
@@ -569,13 +569,13 @@ int CdEkiXColSpecCont::ColumnNumberFromSpec(
 	}
 	else
 	{
-		//	•ªŠò‰wİ’è
+		//	åˆ†å²é§…è¨­å®š
 		if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_EkiBrunch)
 		{
 			iColumnNumber = 5;
 		}
-		//	ŠÂóüİ’è
+		//	ç’°çŠ¶ç·šè¨­å®š
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_EkiLoop)
 		{

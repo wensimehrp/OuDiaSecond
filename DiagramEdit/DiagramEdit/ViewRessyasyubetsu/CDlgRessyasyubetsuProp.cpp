@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍAtake-okm‚ªì¬‚µ‚½OuDia‚ğ‰ü‘¢‚µ‚½ƒ\ƒtƒgƒEƒFƒA‚Å‚·B
-‚±‚ÌƒvƒƒOƒ‰ƒ€—˜—p‚É‚Â‚¢‚Ä‚ÍAtake-okm‹LÚ‚Ì‰º‹L•¶‘‚É€‹’‚µ‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã€take-okmæ°ãŒä½œæˆã—ãŸOuDiaã‚’æ”¹é€ ã—ãŸã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ åˆ©ç”¨ã«ã¤ã„ã¦ã¯ã€take-okmæ°è¨˜è¼‰ã®ä¸‹è¨˜æ–‡æ›¸ã«æº–æ‹ ã—ã¾ã™ã€‚
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,52 +35,52 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(–ó: 
+(è¨³: 
 
-	OuDia - —ñÔ•\‚ğ‚à‚Æ‚ÉAƒ_ƒCƒ„ƒOƒ‰ƒ€‚ğ•`‰æ‚·‚éWin32ƒAƒvƒŠƒP[ƒV
-ƒ‡ƒ“B
+	OuDia - åˆ—è»Šæ™‚åˆ»è¡¨ã‚’ã‚‚ã¨ã«ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚’æç”»ã™ã‚‹Win32ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·
+ãƒ§ãƒ³ã€‚
 
 Copyright (C) 2006-2017 take-okm 
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍƒtƒŠ[ƒ\ƒtƒgƒEƒFƒA‚Å‚·B‚ ‚È‚½‚Í‚±‚ê‚ğAƒtƒŠ[ƒ\ƒtƒgƒEƒFƒAà
-’c‚É‚æ‚Á‚Ä”­s‚³‚ê‚½GNU ˆê”ÊŒöO—˜—p‹–‘ø‘(ƒo[ƒWƒ‡ƒ“3‚©A‚»‚êˆÈ~‚Ìƒo[ƒWƒ‡
-ƒ“‚Ì‚¤‚¿‚Ç‚ê‚©)‚ª’è‚ß‚éğŒ‚Ì‰º‚ÅÄ”Ğ•z‚Ü‚½‚Í‰ü•Ï ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚ã‚ãªãŸã¯ã“ã‚Œã‚’ã€ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢è²¡
+å›£ã«ã‚ˆã£ã¦ç™ºè¡Œã•ã‚ŒãŸGNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸(ãƒãƒ¼ã‚¸ãƒ§ãƒ³3ã‹ã€ãã‚Œä»¥é™ã®ãƒãƒ¼ã‚¸ãƒ§
+ãƒ³ã®ã†ã¡ã©ã‚Œã‹)ãŒå®šã‚ã‚‹æ¡ä»¶ã®ä¸‹ã§å†é ’å¸ƒã¾ãŸã¯æ”¹å¤‰ ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚Í—L—p‚Å‚ ‚é‚±‚Æ‚ğŠè‚Á‚Ä”Ğ•z‚³‚ê‚Ü‚·‚ªA*‘S‚­‚Ì–³•ÛØ *‚Å‚·B
-¤‹Æ‰Â”\«‚Ì•ÛØ‚â“Á’è–Ú“I‚Ö‚Ì“K‡«‚ÍAŒ¾ŠO‚É¦‚³‚ê‚½‚à‚Ì‚à ŠÜ‚ßA‘S‚­‘¶İ
-‚µ‚Ü‚¹‚ñBÚ‚µ‚­‚ÍGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ğ‚²——‚­‚¾‚³‚¢B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯æœ‰ç”¨ã§ã‚ã‚‹ã“ã¨ã‚’é¡˜ã£ã¦é ’å¸ƒã•ã‚Œã¾ã™ãŒã€*å…¨ãã®ç„¡ä¿è¨¼ *ã§ã™ã€‚
+å•†æ¥­å¯èƒ½æ€§ã®ä¿è¨¼ã‚„ç‰¹å®šç›®çš„ã¸ã®é©åˆæ€§ã¯ã€è¨€å¤–ã«ç¤ºã•ã‚ŒãŸã‚‚ã®ã‚‚ å«ã‚ã€å…¨ãå­˜åœ¨
+ã—ã¾ã›ã‚“ã€‚è©³ã—ãã¯GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã‚’ã”è¦§ãã ã•ã„ã€‚
 
-‚ ‚È‚½‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚Æ‹¤‚ÉAGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ÌƒRƒs[‚ğˆê•” ó‚¯æ‚Á
-‚Ä‚¢‚é‚Í‚¸‚Å‚·B‚à‚µó‚¯æ‚Á‚Ä‚¢‚È‚¯‚ê‚ÎA<http://www.gnu.org/licenses/> ‚ğ
-‚²——‚­‚¾‚³‚¢B
+ã‚ãªãŸã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¨å…±ã«ã€GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã®ã‚³ãƒ”ãƒ¼ã‚’ä¸€éƒ¨ å—ã‘å–ã£
+ã¦ã„ã‚‹ã¯ãšã§ã™ã€‚ã‚‚ã—å—ã‘å–ã£ã¦ã„ãªã‘ã‚Œã°ã€<http://www.gnu.org/licenses/> ã‚’
+ã”è¦§ãã ã•ã„ã€‚
 
 )
 
-  ‰Á‚¦‚ÄA“Á•Ê‚È—áŠO‚Æ‚µ‚ÄAtake-okm ‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÌƒR[ƒh‚ğ 
+  åŠ ãˆã¦ã€ç‰¹åˆ¥ãªä¾‹å¤–ã¨ã—ã¦ã€take-okm ã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ã‚³ãƒ¼ãƒ‰ã‚’ 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ‚ ‚é‚¢‚Í "MFC Version 9.0" ‚Æ“¯‚¶ƒ‰ƒCƒZƒ“ƒX‚ª“K—p‚³‚ê‚½
-  "MFC Version 9.0" ‚Ì‰ü•Ï‚³‚ê‚½ƒo[ƒWƒ‡ƒ“)‚ÆƒŠƒ“ƒN‚µA
-  ƒŠƒ“ƒN‚³‚ê‚½—¼Ò‚ğŠÜ‚ŞŒ‹‡’˜ì•¨‚ğ”Ğ•z‚·‚é‹–‰Â‚ğ—^‚¦‚Ü‚·B
-  ‚ ‚È‚½‚Í "MFC" ˆÈŠO‚Åg‚í‚ê‚Ä‚¢‚é‚·‚×‚Ä
-  ‚ÌƒR[ƒh‚ÉŠÖ‚µ‚Ä‚Í‘S–Ê“I‚ÉGNUˆê”ÊŒöO—˜—p‹–‘øŒ_–ñ‘‚É]‚í‚È‚¯‚ê‚Î
-  ‚È‚è‚Ü‚¹‚ñB‚ ‚È‚½‚ª‚±‚Ìƒtƒ@ƒCƒ‹‚ğ‰ü•Ï‚µ‚½‚È‚ç‚ÎA‚ ‚È‚½‚Í‚±‚Ì—áŠO
-  ‚ğ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚Ìƒtƒ@ƒCƒ‹‚Éˆø‚«‘±‚«İ‚¯‚é‚±‚Æ‚à‚Å‚«‚Ü‚·‚ªA‚»
-  ‚¤‚·‚é‹`–±‚Í‚ ‚è‚Ü‚¹‚ñB‚à‚µ—áŠO‚ğİ‚¯‚½‚­‚È‚¯‚ê‚ÎA‚±‚Ì—áŠOğ€‚ğ
-  ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚©‚ç‚Ííœ‚µ‚Ä‚­‚¾‚³‚¢B)
+  (  ã‚ã‚‹ã„ã¯ "MFC Version 9.0" ã¨åŒã˜ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ãŒé©ç”¨ã•ã‚ŒãŸ
+  "MFC Version 9.0" ã®æ”¹å¤‰ã•ã‚ŒãŸãƒãƒ¼ã‚¸ãƒ§ãƒ³)ã¨ãƒªãƒ³ã‚¯ã—ã€
+  ãƒªãƒ³ã‚¯ã•ã‚ŒãŸä¸¡è€…ã‚’å«ã‚€çµåˆè‘—ä½œç‰©ã‚’é ’å¸ƒã™ã‚‹è¨±å¯ã‚’ä¸ãˆã¾ã™ã€‚
+  ã‚ãªãŸã¯ "MFC" ä»¥å¤–ã§ä½¿ã‚ã‚Œã¦ã„ã‚‹ã™ã¹ã¦
+  ã®ã‚³ãƒ¼ãƒ‰ã«é–¢ã—ã¦ã¯å…¨é¢çš„ã«GNUä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾å¥‘ç´„æ›¸ã«å¾“ã‚ãªã‘ã‚Œã°
+  ãªã‚Šã¾ã›ã‚“ã€‚ã‚ãªãŸãŒã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ”¹å¤‰ã—ãŸãªã‚‰ã°ã€ã‚ãªãŸã¯ã“ã®ä¾‹å¤–
+  ã‚’ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®ãƒ•ã‚¡ã‚¤ãƒ«ã«å¼•ãç¶šãè¨­ã‘ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ãŒã€ã
+  ã†ã™ã‚‹ç¾©å‹™ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ã‚‚ã—ä¾‹å¤–ã‚’è¨­ã‘ãŸããªã‘ã‚Œã°ã€ã“ã®ä¾‹å¤–æ¡é …ã‚’
+  ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‹ã‚‰ã¯å‰Šé™¤ã—ã¦ãã ã•ã„ã€‚)
 */
-// CDlgRessyasyubetsuProp.cpp : ƒCƒ“ƒvƒŠƒƒ“ƒe[ƒVƒ‡ƒ“ ƒtƒ@ƒCƒ‹
+// CDlgRessyasyubetsuProp.cpp : ã‚¤ãƒ³ãƒ—ãƒªãƒ¡ãƒ³ãƒ†ãƒ¼ã‚·ãƒ§ãƒ³ ãƒ•ã‚¡ã‚¤ãƒ«
 //
 
 #include "stdafx.h"
 
-#include "MfcUtil\MfcUtil.h"
-#include "DcDraw\CConverter_WinGdi.h"
-#include "DcDraw\CDcdTargetOnPaint.h"
-#include "DcDraw\CaDcdTargetItemPosition.h"
-#include "LogMsg\LogMsg.h"
+#include "MfcUtilÂ¥MfcUtil.h"
+#include "DcDrawÂ¥CConverter_WinGdi.h"
+#include "DcDrawÂ¥CDcdTargetOnPaint.h"
+#include "DcDrawÂ¥CaDcdTargetItemPosition.h"
+#include "LogMsgÂ¥LogMsg.h"
 
-#include "..\DiagramEdit.h"
-#include "..\entDed\CconvCentDed.h"
+#include "..Â¥DiagramEdit.h"
+#include "..Â¥entDedÂ¥CconvCentDed.h"
 #include "CDlgRessyasyubetsuProp.h"
 
 
@@ -99,7 +99,7 @@ using namespace OuMfc;
 //	CDlgRessyasyubetsuProp::CPropEditUiInternal
 // ================================================================
 		// ================================
-		// ƒI[ƒo[ƒ‰ƒCƒg‚Ì•K—v‚Èƒƒ\ƒbƒh2-UI‚ÉˆË‘¶‚·‚éˆ—
+		// ã‚ªãƒ¼ãƒãƒ¼ãƒ©ã‚¤ãƒˆã®å¿…è¦ãªãƒ¡ã‚½ãƒƒãƒ‰2-UIã«ä¾å­˜ã™ã‚‹å‡¦ç†
 		// ================================
 void CDlgRessyasyubetsuProp::CPropEditUiInternal::
 UiDataToUi( const UIDATA* pUiData ) 
@@ -107,83 +107,83 @@ UiDataToUi( const UIDATA* pUiData )
 	CDlgRessyasyubetsuProp* pOuter = (CDlgRessyasyubetsuProp*)( (char*)this - offsetof( CDlgRessyasyubetsuProp , m_PropEditUiInternal ) ) ;
 
 	// --------------------------------
-	//	DDX‚ğ—p‚¢‚½AUiControl‚Ö‚Ìİ’è
+	//	DDXã‚’ç”¨ã„ãŸã€UiControlã¸ã®è¨­å®š
 	// --------------------------------
 	{
-		//	‚±‚±‚ÅADDX•Ï”‚Éİ’è
+		//	ã“ã“ã§ã€DDXå¤‰æ•°ã«è¨­å®š
 
 		pOuter->UpdateData( FALSE ) ;
 	}
 	// --------------------------------
-	//	DDX‚ğ—p‚¢‚È‚¢AUiControl‚Ö‚Ìİ’è
-	//	‚±‚ê‚ç‚ÍADDX‚É‚æ‚é’lİ’è‚ÌŒã‚Å
-	//	s‚í‚È‚­‚Ä‚Í‚È‚è‚Ü‚¹‚ñB
+	//	DDXã‚’ç”¨ã„ãªã„ã€UiControlã¸ã®è¨­å®š
+	//	ã“ã‚Œã‚‰ã¯ã€DDXã«ã‚ˆã‚‹å€¤è¨­å®šã®å¾Œã§
+	//	è¡Œã‚ãªãã¦ã¯ãªã‚Šã¾ã›ã‚“ã€‚
 	// --------------------------------
 
-	// —ñÔí•Ê–¼ 
+	// åˆ—è»Šç¨®åˆ¥å 
 	{
 		CEdit* pEdit = (CEdit*)pOuter->GetDlgItem( IDC_EDIT_Syubetsumei ) ;
 		pEdit->EnableWindow(  pUiData->bSyubetsumeiIsEnable ? TRUE : FALSE ) ;
 		pEdit->SetWindowText( pUiData->strSyubetsumei.c_str() ) ;
 		pEdit->SetSel( 0 , -1 ) ;
 	}
-	// —ªÌií•Ê–¼‚Ì—ªÌj
+	// ç•¥ç§°ï¼ˆç¨®åˆ¥åã®ç•¥ç§°ï¼‰
 	{
 		CEdit* pEdit = (CEdit*)pOuter->GetDlgItem( IDC_EDIT_Ryakusyou ) ;
 		pEdit->SetWindowText( pUiData->strRyakusyou.c_str() ) ;
 		pEdit->SetSel( 0 , -1 ) ;
 	}
 	
-	//	•\•¶šF(ƒ_ƒCƒ„ƒOƒ‰ƒ€‚Ì—ñÔî•ñ‚Ì•¶šF‚ğŒ“‚Ë‚Ü‚·)
+	//	æ™‚åˆ»è¡¨æ–‡å­—è‰²(ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã®åˆ—è»Šæƒ…å ±ã®æ–‡å­—è‰²ã‚’å…¼ã­ã¾ã™)
 	{
-		//	‚±‚Ì€–Ú‚ÍAƒRƒ“ƒgƒ[ƒ‹‚É‚Í‹L‰¯‚³‚ê‚Ü‚¹‚ñB
+		//	ã“ã®é …ç›®ã¯ã€ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã«ã¯è¨˜æ†¶ã•ã‚Œã¾ã›ã‚“ã€‚
 	}
-	//•\ƒrƒ…[‚ÅA‚±‚Ì—ñÔí•Ê‚Ì‚ğ•\¦‚·‚é‚½‚ß‚Ì•\ƒtƒHƒ“ƒg
+	//æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã€ã“ã®åˆ—è»Šç¨®åˆ¥ã®æ™‚åˆ»ã‚’è¡¨ç¤ºã™ã‚‹ãŸã‚ã®æ™‚åˆ»è¡¨ãƒ•ã‚©ãƒ³ãƒˆ
 	{
 		CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem( IDC_COMBO_JikokuhyouFontIndex ) ;
 		pComboBox->SetCurSel( pUiData->iJikokuhyouFontIndex ) ;
 	}
 
-	// ƒ_ƒCƒ„ƒOƒ‰ƒ€ü‚ÌF
+	// ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ç·šã®è‰²
 	{
-		//	‚±‚Ì€–Ú‚ÍAƒRƒ“ƒgƒ[ƒ‹‚É‚Í‹L‰¯‚³‚ê‚Ü‚¹‚ñB
+		//	ã“ã®é …ç›®ã¯ã€ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã«ã¯è¨˜æ†¶ã•ã‚Œã¾ã›ã‚“ã€‚
 	}
 
-	// ƒ_ƒCƒ„ƒOƒ‰ƒ€ü‚ÌüƒXƒ^ƒCƒ‹	
+	// ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ç·šã®ç·šã‚¹ã‚¿ã‚¤ãƒ«	
 	{
 		CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem( IDC_COMBO_DiagramSenStyle ) ;
 		pComboBox->SetCurSel( pUiData->iDiagramSenStyle ) ;
 	}
 
-	// ƒ_ƒCƒ„ƒOƒ‰ƒ€ü‚ÌüƒXƒ^ƒCƒ‹‚ª‘¾ü‚©”Û‚©‚ğw’è‚µ‚Ü‚·B
+	// ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ç·šã®ç·šã‚¹ã‚¿ã‚¤ãƒ«ãŒå¤ªç·šã‹å¦ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 	{
 		CButton* pButton = (CButton*)pOuter->GetDlgItem( IDC_CHECK_DiagramSenStyleIsBold ) ;
 		int nCheck = BST_INDETERMINATE ;
 		switch( pUiData->iDiagramSenIsBold )
 		{
-		case 1: // ‹«ŠEü‚ ‚è
+		case 1: // å¢ƒç•Œç·šã‚ã‚Š
 			nCheck = BST_CHECKED ;
 			break ;
-		case 0: //‚È‚µ
+		case 0: //ãªã—
 			nCheck = BST_UNCHECKED ;
 			break ;
 		}
 		pButton->SetCheck( nCheck ) ;
 	}
 	
-	// ’âÔ‰w–¾¦‚Ì•û–@
+	// åœè»Šé§…æ˜ç¤ºã®æ–¹æ³•
 	{
 		CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem( IDC_COMBO_StopMarkDrawType ) ;
 		pComboBox->SetCurSel( pUiData->iStopMarkDrawType ) ;
 	}
 
-	//eí•Êİ’è
+	//è¦ªç¨®åˆ¥è¨­å®š
 	{
 		CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_ParentSyubetsu);
 
 		if (pUiData->iParentSyubetsuIndex < 0)
 		{
-			int isel = pComboBox->FindString(0, _T("eí•Ê–³‚µ"));
+			int isel = pComboBox->FindString(0, _T("è¦ªç¨®åˆ¥ç„¡ã—"));
 
 			if (isel == -1)
 			{
@@ -211,16 +211,16 @@ UiDataToUi( const UIDATA* pUiData )
 		}
 	}
 
-	// ‰B‚µí•Êİ’è
+	// éš ã—ç¨®åˆ¥è¨­å®š
 	{
 		CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_Hidden);
 		int nCheck = BST_INDETERMINATE;
 		switch (pUiData->iHidden)
 		{
-		case 1: // ”ñ•\¦
+		case 1: // éè¡¨ç¤º
 			nCheck = BST_CHECKED;
 			break;
-		case 0: //‚È‚µ
+		case 0: //ãªã—
 			nCheck = BST_UNCHECKED;
 			break;
 		}
@@ -228,40 +228,40 @@ UiDataToUi( const UIDATA* pUiData )
 	}
 
 	// --------------------------------	
-	//	DcDraw ‚Ö‚Ìİ’è
+	//	DcDraw ã¸ã®è¨­å®š
 	// --------------------------------	
-	//	•¶šF‚Ìİ’è
+	//	æ–‡å­—è‰²ã®è¨­å®š
 	{
 		pOuter->m_pdcdJikokuhyouMojiColor->setCdBrushProp( 
 			pUiData->colorJikokuhyouMojiColor ) ;
 		CRect	aRect = MfcUtil::GetDlgControlRect( pOuter , IDC_STATIC_JikokuhyouMojiColor ) ;
 		pOuter->InvalidateRect( &aRect ) ;
 	}
-	//	”wŒiF‚Ìİ’è
+	//	èƒŒæ™¯è‰²ã®è¨­å®š
 	{
 		pOuter->m_pdcdJikokuhyouBackColor->setCdBrushProp(
 			pUiData->colorJikokuhyouBackColor);
 		CRect	aRect = MfcUtil::GetDlgControlRect(pOuter, IDC_STATIC_JikokuhyouBackColor);
 		pOuter->InvalidateRect(&aRect);
 	}
-	//	•\ƒtƒHƒ“ƒg(•¶šF‚Æ•\ƒtƒHƒ“ƒg)
+	//	æ™‚åˆ»è¡¨ãƒ•ã‚©ãƒ³ãƒˆ(æ–‡å­—è‰²ã¨æ™‚åˆ»è¡¨ãƒ•ã‚©ãƒ³ãƒˆ)
 	{
 		CdDrawTextProp	aCdDrawTextProp = pOuter->m_pdcdJikokuhyouFont->getCdDrawTextProp() ;
 		aCdDrawTextProp.setTextColor( pUiData->colorJikokuhyouMojiColor ) ;
 		
 		// --------------------------------
-		//	•\ƒtƒHƒ“ƒg‚ªİ’è‚³‚ê‚Ä‚¢‚éê‡‚ÍA
-		//	³‚µ‚¢ƒTƒ“ƒvƒ‹‚ª•\¦‚Å‚«‚Ü‚·B
+		//	æ™‚åˆ»è¡¨ãƒ•ã‚©ãƒ³ãƒˆãŒè¨­å®šã•ã‚Œã¦ã„ã‚‹å ´åˆã¯ã€
+		//	æ­£ã—ã„ã‚µãƒ³ãƒ—ãƒ«ãŒè¡¨ç¤ºã§ãã¾ã™ã€‚
 		if ( pUiData->iJikokuhyouFontIndex >= 0 )
 		{
 			aCdDrawTextProp.setCdFontProp( pOuter->m_fontpropJikokuhyouFont[pUiData->iJikokuhyouFontIndex] );
 		}
-		//	•\ƒtƒHƒ“ƒg‚ªİ’è‚³‚ê‚Ä‚¢‚È‚¢ê‡‚ÍA
-		//	³‚µ‚¢ƒTƒ“ƒvƒ‹‚ª•\¦‚Å‚«‚Ü‚¹‚ñB
+		//	æ™‚åˆ»è¡¨ãƒ•ã‚©ãƒ³ãƒˆãŒè¨­å®šã•ã‚Œã¦ã„ãªã„å ´åˆã¯ã€
+		//	æ­£ã—ã„ã‚µãƒ³ãƒ—ãƒ«ãŒè¡¨ç¤ºã§ãã¾ã›ã‚“ã€‚
 		else
 		{
-			//	•\ƒtƒHƒ“ƒg‚ÌƒTƒ“ƒvƒ‹‚ª•\¦‚Å‚«‚Ü‚¹‚ñB
-			//	‚±‚Ì‚Æ‚«‚ÍAƒfƒtƒHƒ‹ƒgƒtƒHƒ“ƒg‚Å•\¦‚µ‚Ü‚·B
+			//	æ™‚åˆ»è¡¨ãƒ•ã‚©ãƒ³ãƒˆã®ã‚µãƒ³ãƒ—ãƒ«ãŒè¡¨ç¤ºã§ãã¾ã›ã‚“ã€‚
+			//	ã“ã®ã¨ãã¯ã€ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆãƒ•ã‚©ãƒ³ãƒˆã§è¡¨ç¤ºã—ã¾ã™ã€‚
 			//CConverter_WinGdi	aConv ;
 			aCdDrawTextProp.setCdFontProp(CdFontProp(9, _T("Meiryo UI")));
 			//aCdDrawTextProp.setCdFontProp( aConv.CdFontPropOf( DEFAULT_GUI_FONT ) );
@@ -273,24 +273,24 @@ UiDataToUi( const UIDATA* pUiData )
 		CRect	aRect = MfcUtil::GetDlgControlRect( pOuter , IDC_STATIC_JikokuhyouFont ) ;
 		pOuter->InvalidateRect( &aRect ) ;
 	}
-	//	•\ƒtƒHƒ“ƒg2(•¶šF‚Æ•\ƒtƒHƒ“ƒg)(”wŒiF‚ğí•ÊF‚É‚µ‚Ü‚·)
+	//	æ™‚åˆ»è¡¨ãƒ•ã‚©ãƒ³ãƒˆ2(æ–‡å­—è‰²ã¨æ™‚åˆ»è¡¨ãƒ•ã‚©ãƒ³ãƒˆ)(èƒŒæ™¯è‰²ã‚’ç¨®åˆ¥è‰²ã«ã—ã¾ã™)
 	{
 		CdDrawTextProp	aCdDrawTextProp = pOuter->m_pdcdJikokuhyouFont2->getCdDrawTextProp();
 		aCdDrawTextProp.setTextColor(pUiData->colorJikokuhyouMojiColor);
 
 		// --------------------------------
-		//	•\ƒtƒHƒ“ƒg‚ªİ’è‚³‚ê‚Ä‚¢‚éê‡‚ÍA
-		//	³‚µ‚¢ƒTƒ“ƒvƒ‹‚ª•\¦‚Å‚«‚Ü‚·B
+		//	æ™‚åˆ»è¡¨ãƒ•ã‚©ãƒ³ãƒˆãŒè¨­å®šã•ã‚Œã¦ã„ã‚‹å ´åˆã¯ã€
+		//	æ­£ã—ã„ã‚µãƒ³ãƒ—ãƒ«ãŒè¡¨ç¤ºã§ãã¾ã™ã€‚
 		if (pUiData->iJikokuhyouFontIndex >= 0)
 		{
 			aCdDrawTextProp.setCdFontProp(pOuter->m_fontpropJikokuhyouFont[pUiData->iJikokuhyouFontIndex]);
 		}
-		//	•\ƒtƒHƒ“ƒg‚ªİ’è‚³‚ê‚Ä‚¢‚È‚¢ê‡‚ÍA
-		//	³‚µ‚¢ƒTƒ“ƒvƒ‹‚ª•\¦‚Å‚«‚Ü‚¹‚ñB
+		//	æ™‚åˆ»è¡¨ãƒ•ã‚©ãƒ³ãƒˆãŒè¨­å®šã•ã‚Œã¦ã„ãªã„å ´åˆã¯ã€
+		//	æ­£ã—ã„ã‚µãƒ³ãƒ—ãƒ«ãŒè¡¨ç¤ºã§ãã¾ã›ã‚“ã€‚
 		else
 		{
-			//	•\ƒtƒHƒ“ƒg‚ÌƒTƒ“ƒvƒ‹‚ª•\¦‚Å‚«‚Ü‚¹‚ñB
-			//	‚±‚Ì‚Æ‚«‚ÍAƒfƒtƒHƒ‹ƒgƒtƒHƒ“ƒg‚Å•\¦‚µ‚Ü‚·B
+			//	æ™‚åˆ»è¡¨ãƒ•ã‚©ãƒ³ãƒˆã®ã‚µãƒ³ãƒ—ãƒ«ãŒè¡¨ç¤ºã§ãã¾ã›ã‚“ã€‚
+			//	ã“ã®ã¨ãã¯ã€ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆãƒ•ã‚©ãƒ³ãƒˆã§è¡¨ç¤ºã—ã¾ã™ã€‚
 			//CConverter_WinGdi	aConv;
 			aCdDrawTextProp.setCdFontProp(CdFontProp(9, _T("Meiryo UI")));
 			//aCdDrawTextProp.setCdFontProp(aConv.CdFontPropOf(DEFAULT_GUI_FONT));
@@ -307,12 +307,12 @@ UiDataToUi( const UIDATA* pUiData )
 		CRect	aRect = MfcUtil::GetDlgControlRect(pOuter, IDC_STATIC_JikokuhyouFont2);
 		pOuter->InvalidateRect(&aRect);
 	}
-	//	ƒ_ƒCƒ„ƒOƒ‰ƒ€ü
-	// (ƒ_ƒCƒ„ƒOƒ‰ƒ€ü‚ÌFEüƒXƒ^ƒCƒ‹E‘¾ü)
+	//	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ç·š
+	// (ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ç·šã®è‰²ãƒ»ç·šã‚¹ã‚¿ã‚¤ãƒ«ãƒ»å¤ªç·š)
 	{
 		CdDcdFreeLineProp	aCdLineProp ;
-		//	üƒXƒ^ƒCƒ‹E‘¾ü‚ª‚Ç‚¿‚ç‚àİ’è‚³‚ê‚Ä‚¢‚éê‡‚ÍA
-		//	³‚µ‚¢ƒTƒ“ƒvƒ‹‚ª•\¦‚Å‚«‚Ü‚·B
+		//	ç·šã‚¹ã‚¿ã‚¤ãƒ«ãƒ»å¤ªç·šãŒã©ã¡ã‚‰ã‚‚è¨­å®šã•ã‚Œã¦ã„ã‚‹å ´åˆã¯ã€
+		//	æ­£ã—ã„ã‚µãƒ³ãƒ—ãƒ«ãŒè¡¨ç¤ºã§ãã¾ã™ã€‚
 		if ( pUiData->iDiagramSenStyle >= 0 && pUiData->iDiagramSenIsBold  >= 0 )
 		{
 			CconvCentDed aCconvCentDed ;
@@ -323,12 +323,12 @@ UiDataToUi( const UIDATA* pUiData )
 					pUiData->iDiagramSenIsBold == 1 ) ,
 				&aCdLineProp ) ;
 		}
-		//	üƒXƒ^ƒCƒ‹E‘¾ü‚Ì‚¢‚¸‚ê‚©‚ª•s’è‚Ìê‡‚ÍA
-		//	ƒTƒ“ƒvƒ‹‚ª•\¦‚Å‚«‚Ü‚¹‚ñ
+		//	ç·šã‚¹ã‚¿ã‚¤ãƒ«ãƒ»å¤ªç·šã®ã„ãšã‚Œã‹ãŒä¸å®šã®å ´åˆã¯ã€
+		//	ã‚µãƒ³ãƒ—ãƒ«ãŒè¡¨ç¤ºã§ãã¾ã›ã‚“
 		else
 		{
-			//	ƒTƒ“ƒvƒ‹‚ª•\¦‚Å‚«‚Ü‚¹‚ñB
-			//	‚±‚Ìê‡‚ÍAü‚ğ•\¦‚µ‚Ü‚¹‚ñ(”’ü‚È‚Ì‚ÅAŒ©‚¦‚Ü‚¹‚ñ)
+			//	ã‚µãƒ³ãƒ—ãƒ«ãŒè¡¨ç¤ºã§ãã¾ã›ã‚“ã€‚
+			//	ã“ã®å ´åˆã¯ã€ç·šã‚’è¡¨ç¤ºã—ã¾ã›ã‚“(ç™½ç·šãªã®ã§ã€è¦‹ãˆã¾ã›ã‚“)
 			aCdLineProp = CdDcdFreeLineProp().setColor( CdColorProp( 255 , 255 , 255 ) ) ;
 			
 		}
@@ -344,19 +344,19 @@ void CDlgRessyasyubetsuProp::CPropEditUiInternal::UiDataFromUi( UIDATA* pUiData 
 	CDlgRessyasyubetsuProp* pOuter = (CDlgRessyasyubetsuProp*)( (char*)this - offsetof( CDlgRessyasyubetsuProp , m_PropEditUiInternal ) ) ;
 	int iRv = 0 ;
 	// --------------------------------
-	//	DDX‚ğ—p‚¢‚½AUiControl‚Ö‚Ìİ’è
+	//	DDXã‚’ç”¨ã„ãŸã€UiControlã¸ã®è¨­å®š
 	// --------------------------------
 	if ( !pOuter->UpdateData( TRUE ) )
 	{
-		iRv = -1 ;	//	UpdateData ‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B
+		iRv = -1 ;	//	UpdateData ã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚
 	}
 	// --------------------------------
-	//	DDX‚ğ—p‚¢‚È‚¢AUiControl‚Ö‚Ìİ’è
-	//	‚±‚ê‚ç‚ÍADDX‚É‚æ‚é’lİ’è‚ÌŒã‚Å
-	//	s‚í‚È‚­‚Ä‚Í‚È‚è‚Ü‚¹‚ñB
+	//	DDXã‚’ç”¨ã„ãªã„ã€UiControlã¸ã®è¨­å®š
+	//	ã“ã‚Œã‚‰ã¯ã€DDXã«ã‚ˆã‚‹å€¤è¨­å®šã®å¾Œã§
+	//	è¡Œã‚ãªãã¦ã¯ãªã‚Šã¾ã›ã‚“ã€‚
 	// --------------------------------
 
-	// —ñÔí•Ê–¼ 
+	// åˆ—è»Šç¨®åˆ¥å 
 	if ( iRv >= 0 )
 	{
 		{
@@ -366,7 +366,7 @@ void CDlgRessyasyubetsuProp::CPropEditUiInternal::UiDataFromUi( UIDATA* pUiData 
 			pUiData->strSyubetsumei = (LPCTSTR)aString ;
 		}
 	}
-	// —ªÌií•Ê–¼‚Ì—ªÌj
+	// ç•¥ç§°ï¼ˆç¨®åˆ¥åã®ç•¥ç§°ï¼‰
 	if ( iRv >= 0 )
 	{
 		{
@@ -377,12 +377,12 @@ void CDlgRessyasyubetsuProp::CPropEditUiInternal::UiDataFromUi( UIDATA* pUiData 
 		}
 	}
 	
-	//	•\•¶šF(ƒ_ƒCƒ„ƒOƒ‰ƒ€‚Ì—ñÔî•ñ‚Ì•¶šF‚ğŒ“‚Ë‚Ü‚·)
+	//	æ™‚åˆ»è¡¨æ–‡å­—è‰²(ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã®åˆ—è»Šæƒ…å ±ã®æ–‡å­—è‰²ã‚’å…¼ã­ã¾ã™)
 	if ( iRv >= 0 )
 	{
-		//	‚±‚Ì€–Ú‚ÍAƒRƒ“ƒgƒ[ƒ‹‚É‚Í‹L‰¯‚³‚ê‚Ü‚¹‚ñB
+		//	ã“ã®é …ç›®ã¯ã€ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã«ã¯è¨˜æ†¶ã•ã‚Œã¾ã›ã‚“ã€‚
 	}
-	//•\ƒrƒ…[‚ÅA‚±‚Ì—ñÔí•Ê‚Ì‚ğ•\¦‚·‚é‚½‚ß‚Ì•\ƒtƒHƒ“ƒg
+	//æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã€ã“ã®åˆ—è»Šç¨®åˆ¥ã®æ™‚åˆ»ã‚’è¡¨ç¤ºã™ã‚‹ãŸã‚ã®æ™‚åˆ»è¡¨ãƒ•ã‚©ãƒ³ãƒˆ
 	if ( iRv >= 0 )
 	{
 		{
@@ -395,13 +395,13 @@ void CDlgRessyasyubetsuProp::CPropEditUiInternal::UiDataFromUi( UIDATA* pUiData 
 		}
 	}
 
-	// ƒ_ƒCƒ„ƒOƒ‰ƒ€ü‚ÌF
+	// ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ç·šã®è‰²
 	if ( iRv >= 0 )
 	{
-		//	‚±‚Ì€–Ú‚ÍAƒRƒ“ƒgƒ[ƒ‹‚É‚Í‹L‰¯‚³‚ê‚Ü‚¹‚ñB
+		//	ã“ã®é …ç›®ã¯ã€ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã«ã¯è¨˜æ†¶ã•ã‚Œã¾ã›ã‚“ã€‚
 	}
 
-	// ƒ_ƒCƒ„ƒOƒ‰ƒ€ü‚ÌüƒXƒ^ƒCƒ‹	
+	// ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ç·šã®ç·šã‚¹ã‚¿ã‚¤ãƒ«	
 	if ( iRv >= 0 )
 	{
 		{
@@ -414,31 +414,31 @@ void CDlgRessyasyubetsuProp::CPropEditUiInternal::UiDataFromUi( UIDATA* pUiData 
 		}
 	}
 
-	// ƒ_ƒCƒ„ƒOƒ‰ƒ€ü‚ÌüƒXƒ^ƒCƒ‹‚ª‘¾ü‚©”Û‚©‚ğw’è‚µ‚Ü‚·B
+	// ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ç·šã®ç·šã‚¹ã‚¿ã‚¤ãƒ«ãŒå¤ªç·šã‹å¦ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 	if ( iRv >= 0 )
 	{
 		CButton* pButton = (CButton*)pOuter->GetDlgItem( IDC_CHECK_DiagramSenStyleIsBold ) ;
 		int nCheck =  pButton->GetCheck() ; 
 		switch( nCheck )
 		{
-		case BST_CHECKED: // ‹«ŠEü‚ ‚è
+		case BST_CHECKED: // å¢ƒç•Œç·šã‚ã‚Š
 			pUiData->iDiagramSenIsBold = 1 ;
 			break ;
-		case BST_UNCHECKED: //‚È‚µ
+		case BST_UNCHECKED: //ãªã—
 			pUiData->iDiagramSenIsBold = 0 ;
 			break ;
 		}
 
-		//	ƒ`ƒFƒbƒNƒ{ƒbƒNƒX‚ÍA’†ŠÔó‘Ô‚Ö‚Ì•ÏX‚ğ”F‚ß‚Ü‚¹‚ñB
-		//	ƒ†[ƒU[‚É‚æ‚Á‚Ä’†ŠÔó‘ÔˆÈŠO¨’†ŠÔó‘Ô‚Ö•ÏX‚³‚ê‚½ê‡‚ÍA
-		//	ƒ`ƒFƒbƒN‚È‚µó‘Ô‚É•ÏX‚µ‚Ü‚·B
+		//	ãƒã‚§ãƒƒã‚¯ãƒœãƒƒã‚¯ã‚¹ã¯ã€ä¸­é–“çŠ¶æ…‹ã¸ã®å¤‰æ›´ã‚’èªã‚ã¾ã›ã‚“ã€‚
+		//	ãƒ¦ãƒ¼ã‚¶ãƒ¼ã«ã‚ˆã£ã¦ä¸­é–“çŠ¶æ…‹ä»¥å¤–â†’ä¸­é–“çŠ¶æ…‹ã¸å¤‰æ›´ã•ã‚ŒãŸå ´åˆã¯ã€
+		//	ãƒã‚§ãƒƒã‚¯ãªã—çŠ¶æ…‹ã«å¤‰æ›´ã—ã¾ã™ã€‚
 		if ( pUiData->iDiagramSenIsBold != -1 && nCheck == BST_INDETERMINATE )
 		{
 			pUiData->iDiagramSenIsBold = 0 ;
 		}
 	}
 	
-	// ’âÔ‰w–¾¦‚Ì•û–@
+	// åœè»Šé§…æ˜ç¤ºã®æ–¹æ³•
 	if ( iRv >= 0 )
 	{
 		{
@@ -451,7 +451,7 @@ void CDlgRessyasyubetsuProp::CPropEditUiInternal::UiDataFromUi( UIDATA* pUiData 
 		}
 	}
 
-	//eí•Êİ’è
+	//è¦ªç¨®åˆ¥è¨­å®š
 	if (iRv >= 0)
 	{
 		CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_ParentSyubetsu);
@@ -468,24 +468,24 @@ void CDlgRessyasyubetsuProp::CPropEditUiInternal::UiDataFromUi( UIDATA* pUiData 
 		}
 	}
 
-	// ‰B‚µí•Ê
+	// éš ã—ç¨®åˆ¥
 	if (iRv >= 0)
 	{
 		CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_Hidden);
 		int nCheck = pButton->GetCheck();
 		switch (nCheck)
 		{
-		case BST_CHECKED: // ”ñ•\¦
+		case BST_CHECKED: // éè¡¨ç¤º
 			pUiData->iHidden = 1;
 			break;
-		case BST_UNCHECKED: //‚È‚µ
+		case BST_UNCHECKED: //ãªã—
 			pUiData->iHidden = 0;
 			break;
 		}
 
-		//	ƒ`ƒFƒbƒNƒ{ƒbƒNƒX‚ÍA’†ŠÔó‘Ô‚Ö‚Ì•ÏX‚ğ”F‚ß‚Ü‚¹‚ñB
-		//	ƒ†[ƒU[‚É‚æ‚Á‚Ä’†ŠÔó‘ÔˆÈŠO¨’†ŠÔó‘Ô‚Ö•ÏX‚³‚ê‚½ê‡‚ÍA
-		//	ƒ`ƒFƒbƒN‚È‚µó‘Ô‚É•ÏX‚µ‚Ü‚·B
+		//	ãƒã‚§ãƒƒã‚¯ãƒœãƒƒã‚¯ã‚¹ã¯ã€ä¸­é–“çŠ¶æ…‹ã¸ã®å¤‰æ›´ã‚’èªã‚ã¾ã›ã‚“ã€‚
+		//	ãƒ¦ãƒ¼ã‚¶ãƒ¼ã«ã‚ˆã£ã¦ä¸­é–“çŠ¶æ…‹ä»¥å¤–â†’ä¸­é–“çŠ¶æ…‹ã¸å¤‰æ›´ã•ã‚ŒãŸå ´åˆã¯ã€
+		//	ãƒã‚§ãƒƒã‚¯ãªã—çŠ¶æ…‹ã«å¤‰æ›´ã—ã¾ã™ã€‚
 		if (pUiData->iHidden != -1 && nCheck == BST_INDETERMINATE)
 		{
 			pUiData->iHidden = 0;
@@ -518,14 +518,14 @@ void CDlgRessyasyubetsuProp::CPropEditUiInternal::
 	CDlgRessyasyubetsuProp* pOuter = (CDlgRessyasyubetsuProp*)( (char*)this - offsetof( CDlgRessyasyubetsuProp , m_PropEditUiInternal ) ) ;
 	CWnd* pControl = NULL ;
 
-	// —ñÔí•Ê–¼ 
+	// åˆ—è»Šç¨®åˆ¥å 
 	{
 		if ( iOffsetofUiDataMember == offsetof( UIDATA , strSyubetsumei ) )
 		{
 			pControl = (CEdit*)pOuter->GetDlgItem( IDC_EDIT_Syubetsumei ) ;
 		}
 	}
-	// —ªÌií•Ê–¼‚Ì—ªÌj
+	// ç•¥ç§°ï¼ˆç¨®åˆ¥åã®ç•¥ç§°ï¼‰
 	{
 		if (iOffsetofUiDataMember == offsetof( UIDATA , strRyakusyou ) )
 		{
@@ -533,11 +533,11 @@ void CDlgRessyasyubetsuProp::CPropEditUiInternal::
 		}
 	}
 	
-	//	•\•¶šF(ƒ_ƒCƒ„ƒOƒ‰ƒ€‚Ì—ñÔî•ñ‚Ì•¶šF‚ğŒ“‚Ë‚Ü‚·)
+	//	æ™‚åˆ»è¡¨æ–‡å­—è‰²(ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã®åˆ—è»Šæƒ…å ±ã®æ–‡å­—è‰²ã‚’å…¼ã­ã¾ã™)
 	{
-		//	‚±‚Ì€–Ú‚ÍAƒRƒ“ƒgƒ[ƒ‹‚É‚Í‹L‰¯‚³‚ê‚Ü‚¹‚ñB
+		//	ã“ã®é …ç›®ã¯ã€ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã«ã¯è¨˜æ†¶ã•ã‚Œã¾ã›ã‚“ã€‚
 	}
-	//•\ƒrƒ…[‚ÅA‚±‚Ì—ñÔí•Ê‚Ì‚ğ•\¦‚·‚é‚½‚ß‚Ì•\ƒtƒHƒ“ƒg
+	//æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã§ã€ã“ã®åˆ—è»Šç¨®åˆ¥ã®æ™‚åˆ»ã‚’è¡¨ç¤ºã™ã‚‹ãŸã‚ã®æ™‚åˆ»è¡¨ãƒ•ã‚©ãƒ³ãƒˆ
 	{
 		if ( iOffsetofUiDataMember == offsetof( UIDATA , iJikokuhyouFontIndex ) )
 		{
@@ -545,12 +545,12 @@ void CDlgRessyasyubetsuProp::CPropEditUiInternal::
 		}
 	}
 
-	// ƒ_ƒCƒ„ƒOƒ‰ƒ€ü‚ÌF
+	// ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ç·šã®è‰²
 	{
-		//	‚±‚Ì€–Ú‚ÍAƒRƒ“ƒgƒ[ƒ‹‚É‚Í‹L‰¯‚³‚ê‚Ü‚¹‚ñB
+		//	ã“ã®é …ç›®ã¯ã€ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã«ã¯è¨˜æ†¶ã•ã‚Œã¾ã›ã‚“ã€‚
 	}
 
-	// ƒ_ƒCƒ„ƒOƒ‰ƒ€ü‚ÌüƒXƒ^ƒCƒ‹	
+	// ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ç·šã®ç·šã‚¹ã‚¿ã‚¤ãƒ«	
 	{
 		if ( iOffsetofUiDataMember == offsetof( UIDATA , iDiagramSenStyle ) )
 		{
@@ -558,7 +558,7 @@ void CDlgRessyasyubetsuProp::CPropEditUiInternal::
 		}
 	}
 
-	// ƒ_ƒCƒ„ƒOƒ‰ƒ€ü‚ÌüƒXƒ^ƒCƒ‹‚ª‘¾ü‚©”Û‚©‚ğw’è‚µ‚Ü‚·B
+	// ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ç·šã®ç·šã‚¹ã‚¿ã‚¤ãƒ«ãŒå¤ªç·šã‹å¦ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 	{
 		if ( iOffsetofUiDataMember == offsetof( UIDATA , iDiagramSenIsBold ) )
 		{
@@ -566,21 +566,21 @@ void CDlgRessyasyubetsuProp::CPropEditUiInternal::
 		}
 	}
 	
-	// ’âÔ‰w–¾¦‚Ì•û–@
+	// åœè»Šé§…æ˜ç¤ºã®æ–¹æ³•
 	{
 		if ( iOffsetofUiDataMember == offsetof( UIDATA , iStopMarkDrawType ) )
 		{
 			pControl = (CComboBox*)pOuter->GetDlgItem( IDC_COMBO_StopMarkDrawType ) ;
 		}
 	}
-	// eí•Ê
+	// è¦ªç¨®åˆ¥
 	{
 		if (iOffsetofUiDataMember == offsetof(UIDATA, iParentSyubetsuIndex))
 		{
 			pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_ParentSyubetsu);
 		}
 	}
-	// ‰B‚µí•Ê
+	// éš ã—ç¨®åˆ¥
 	{
 		if (iOffsetofUiDataMember == offsetof(UIDATA, iHidden))
 		{
@@ -596,7 +596,7 @@ void CDlgRessyasyubetsuProp::CPropEditUiInternal::
 }
 
 		// ********************************
-		//	ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+		//	ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 		// ********************************
 CDlgRessyasyubetsuProp::CPropEditUiInternal::
 CPropEditUiInternal( bool bNewItem , Mu<CentDedRessyasyubetsu*>* pTarget )
@@ -607,7 +607,7 @@ CPropEditUiInternal( bool bNewItem , Mu<CentDedRessyasyubetsu*>* pTarget )
 
 
 /////////////////////////////////////////////////////////////////////////////
-// CDlgRessyasyubetsuProp ƒ_ƒCƒAƒƒO
+// CDlgRessyasyubetsuProp ãƒ€ã‚¤ã‚¢ãƒ­ã‚°
 
 
 // ----------------------------------------------------------------
@@ -641,7 +641,7 @@ CDlgRessyasyubetsuProp::CDlgRessyasyubetsuProp(
 	//}}AFX_DATA_INIT
 
 	// --------------------------------
-	//	DcDraw(ƒ_ƒCƒAƒƒOã‚É•`‰æ‚ğs‚¤ƒIƒuƒWƒFƒNƒg)‚Ì¶¬
+	//	DcDraw(ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ä¸Šã«æç”»ã‚’è¡Œã†ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ)ã®ç”Ÿæˆ
 	// --------------------------------
 	//CConverter_WinGdi aCConverter_WinGdi ;
 	m_pdcdJikokuhyouMojiColor = new CDcdRectangle( 
@@ -684,7 +684,7 @@ CDlgRessyasyubetsuProp::CDlgRessyasyubetsuProp(
 
 }
 
-CDlgRessyasyubetsuProp::~CDlgRessyasyubetsuProp()
+CDlgRessyasyubetsuProp::â€¾CDlgRessyasyubetsuProp()
 {
 	delete m_pdcdDiagramSen ;
 	delete m_pdcdJikokuhyouFont ;
@@ -721,7 +721,7 @@ BEGIN_MESSAGE_MAP(CDlgRessyasyubetsuProp, CDialog)
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
-// CDlgRessyasyubetsuProp ƒƒbƒZ[ƒW ƒnƒ“ƒhƒ‰
+// CDlgRessyasyubetsuProp ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ ãƒãƒ³ãƒ‰ãƒ©
 
 BOOL CDlgRessyasyubetsuProp::OnInitDialog() 
 {
@@ -733,7 +733,7 @@ BOOL CDlgRessyasyubetsuProp::OnInitDialog()
 		const Mu<const CentDedRessyasyubetsu*>* pMuCentDedRessyasyubetsu =
 			pCentDedRosen->getCentDedRessyasyubetsuCont()->getMuPtr();
 		CComboBox*	pCComboBox = (CComboBox*)GetDlgItem(IDC_COMBO_ParentSyubetsu);
-		pCComboBox->AddString(_T("eí•Ê–³‚µ"));
+		pCComboBox->AddString(_T("è¦ªç¨®åˆ¥ç„¡ã—"));
 
 		for (int idx = 0; idx < pMuCentDedRessyasyubetsu->size(); idx++)
 		{
@@ -757,7 +757,7 @@ BOOL CDlgRessyasyubetsuProp::OnInitDialog()
 		GetDlgItem(IDC_COMBO_ParentSyubetsu)->EnableWindow(false);
 	}
 
-	// ƒRƒ“ƒ{ƒ{ƒbƒNƒX
+	// ã‚³ãƒ³ãƒœãƒœãƒƒã‚¯ã‚¹
 	{
 		CComboBox*	pCComboBox = (CComboBox*)GetDlgItem(IDC_COMBO_JikokuhyouFontIndex);
 
@@ -779,37 +779,37 @@ BOOL CDlgRessyasyubetsuProp::OnInitDialog()
 		pCComboBox->AddString(strTemp.c_str());
 		//1;2;3;4;5;6;7;8;
 	}
-	// ƒRƒ“ƒ{ƒ{ƒbƒNƒX
+	// ã‚³ãƒ³ãƒœãƒœãƒƒã‚¯ã‚¹
 	{
 		CComboBox*	pCComboBox = (CComboBox*)GetDlgItem(IDC_COMBO_DiagramSenStyle);
 
-		tstring strTemp = _T("Àü");
+		tstring strTemp = _T("å®Ÿç·š");
 		pCComboBox->AddString(strTemp.c_str());
-		strTemp = _T("”jü");
+		strTemp = _T("ç ´ç·š");
 		pCComboBox->AddString(strTemp.c_str());
-		strTemp = _T("“_ü");
+		strTemp = _T("ç‚¹ç·š");
 		pCComboBox->AddString(strTemp.c_str());
-		strTemp = _T("ˆê“_½ü");
+		strTemp = _T("ä¸€ç‚¹é–ç·š");
 		pCComboBox->AddString(strTemp.c_str());
-		//Àü;”jü;“_ü;ˆê“_½ü;
+		//å®Ÿç·š;ç ´ç·š;ç‚¹ç·š;ä¸€ç‚¹é–ç·š;
 	}
-	// ƒRƒ“ƒ{ƒ{ƒbƒNƒX
+	// ã‚³ãƒ³ãƒœãƒœãƒƒã‚¯ã‚¹
 	{
 		CComboBox*	pCComboBox = (CComboBox*)GetDlgItem(IDC_COMBO_StopMarkDrawType);
 
-		tstring strTemp = _T("’âÔ‰w‚ğ–¾¦");
+		tstring strTemp = _T("åœè»Šé§…ã‚’æ˜ç¤º");
 		pCComboBox->AddString(strTemp.c_str());
-		strTemp = _T("–¾¦‚µ‚È‚¢");
+		strTemp = _T("æ˜ç¤ºã—ãªã„");
 		pCComboBox->AddString(strTemp.c_str());
-		//’âÔ‰w‚ğ–¾¦;–¾¦‚µ‚È‚¢;
+		//åœè»Šé§…ã‚’æ˜ç¤º;æ˜ç¤ºã—ãªã„;
 	}
 
-	//	•ÒW‚ğŠJn
+	//	ç·¨é›†ã‚’é–‹å§‹
 	m_PropEditUiInternal.StartEdit() ;
 
 	
-	return TRUE;  // ƒRƒ“ƒgƒ[ƒ‹‚ÉƒtƒH[ƒJƒX‚ğİ’è‚µ‚È‚¢‚Æ‚«A–ß‚è’l‚Í TRUE ‚Æ‚È‚è‚Ü‚·
-	              // —áŠO: OCX ƒvƒƒpƒeƒB ƒy[ƒW‚Ì–ß‚è’l‚Í FALSE ‚Æ‚È‚è‚Ü‚·
+	return TRUE;  // ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã«ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’è¨­å®šã—ãªã„ã¨ãã€æˆ»ã‚Šå€¤ã¯ TRUE ã¨ãªã‚Šã¾ã™
+	              // ä¾‹å¤–: OCX ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ ãƒšãƒ¼ã‚¸ã®æˆ»ã‚Šå€¤ã¯ FALSE ã¨ãªã‚Šã¾ã™
 }
 
 void CDlgRessyasyubetsuProp::OnShowWindow(BOOL bShow, UINT nStatus) 
@@ -819,11 +819,11 @@ void CDlgRessyasyubetsuProp::OnShowWindow(BOOL bShow, UINT nStatus)
 	if ( bShow )
 	{
 		// --------------------------------
-		//	ƒtƒH[ƒJƒX‚ğˆÚ“®
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’ç§»å‹•
 		// --------------------------------
 		switch( m_iFocusItem )
 		{
-		 //—ñÔí•Ê–¼
+		 //åˆ—è»Šç¨®åˆ¥å
 		 case 0 :
 			{
 				CWnd*	pControl = GetDlgItem( IDC_EDIT_Syubetsumei );
@@ -834,7 +834,7 @@ void CDlgRessyasyubetsuProp::OnShowWindow(BOOL bShow, UINT nStatus)
 				}
 			}
 			break ;
-		 //—ªÌ
+		 //ç•¥ç§°
 		 case 1 :
 			{
 				CWnd*	pControl = GetDlgItem( IDC_EDIT_Ryakusyou );
@@ -846,7 +846,7 @@ void CDlgRessyasyubetsuProp::OnShowWindow(BOOL bShow, UINT nStatus)
 			}
 			break ;
 	
-		 //üƒXƒ^ƒCƒ‹
+		 //ç·šã‚¹ã‚¿ã‚¤ãƒ«
 		 case 2 :
 			{
 				CWnd*	pControl = GetDlgItem( IDC_BUTTON_DiagramSeniColor );
@@ -858,7 +858,7 @@ void CDlgRessyasyubetsuProp::OnShowWindow(BOOL bShow, UINT nStatus)
 			}
 			break ;
 
-			//”wŒiF
+			//èƒŒæ™¯è‰²
 		 case 3:
 		 {
 			 CWnd*	pControl = GetDlgItem(IDC_BUTTON_JikokuhyouBackColor);
@@ -869,7 +869,7 @@ void CDlgRessyasyubetsuProp::OnShowWindow(BOOL bShow, UINT nStatus)
 			 }
 		 }
 
-		 //eí•Ê
+		 //è¦ªç¨®åˆ¥
 		 case 4:
 		 {
 			 CWnd*	pControl = GetDlgItem(IDC_COMBO_ParentSyubetsu);
@@ -880,7 +880,7 @@ void CDlgRessyasyubetsuProp::OnShowWindow(BOOL bShow, UINT nStatus)
 			 }
 		 }
 
-		 //‰B‚µí•Ê
+		 //éš ã—ç¨®åˆ¥
 		 case 5:
 		 {
 			 CWnd* pControl = GetDlgItem(IDC_CHECK_Hidden);
@@ -898,11 +898,11 @@ void CDlgRessyasyubetsuProp::OnShowWindow(BOOL bShow, UINT nStatus)
 
 void CDlgRessyasyubetsuProp::OnPaint() 
 {
-	CPaintDC dc(this); // •`‰æ—p‚ÌƒfƒoƒCƒX ƒRƒ“ƒeƒLƒXƒg
+	CPaintDC dc(this); // æç”»ç”¨ã®ãƒ‡ãƒã‚¤ã‚¹ ã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆ
 	CDcdTargetOnPaint	aCDcdTargetOnPaint( GetSafeHwnd() , &dc.m_ps ) ; 
 	
 	{
-		//•\•¶šF
+		//æ™‚åˆ»è¡¨æ–‡å­—è‰²
 		CConverter_WinGdi	aConverter ;
 
 		CRect	aRect = MfcUtil::GetDlgControlRect( this , IDC_STATIC_JikokuhyouMojiColor ) ;
@@ -911,7 +911,7 @@ void CDlgRessyasyubetsuProp::OnPaint()
 		m_pdcdJikokuhyouMojiColor->DcDraw( &aTarget ) ;
 	}
 	{
-		//•\ƒtƒHƒ“ƒg
+		//æ™‚åˆ»è¡¨ãƒ•ã‚©ãƒ³ãƒˆ
 		CConverter_WinGdi	aConverter ;
 
 		CRect	aRect = MfcUtil::GetDlgControlRect( this , IDC_STATIC_JikokuhyouFont ) ;
@@ -920,7 +920,7 @@ void CDlgRessyasyubetsuProp::OnPaint()
 		m_pdcdJikokuhyouFont->DcDraw( &aTarget ) ;
 	}
 	{
-		//•\”wŒiF
+		//æ™‚åˆ»è¡¨èƒŒæ™¯è‰²
 		CConverter_WinGdi	aConverter;
 
 		CRect	aRect = MfcUtil::GetDlgControlRect(this, IDC_STATIC_JikokuhyouBackColor);
@@ -929,7 +929,7 @@ void CDlgRessyasyubetsuProp::OnPaint()
 		m_pdcdJikokuhyouBackColor->DcDraw(&aTarget);
 	}
 	{
-		//•\ƒtƒHƒ“ƒg2
+		//æ™‚åˆ»è¡¨ãƒ•ã‚©ãƒ³ãƒˆ2
 		CConverter_WinGdi	aConverter;
 
 		CRect	aRect = MfcUtil::GetDlgControlRect(this, IDC_STATIC_JikokuhyouFont2);
@@ -938,7 +938,7 @@ void CDlgRessyasyubetsuProp::OnPaint()
 		m_pdcdJikokuhyouFont2->DcDraw(&aTarget);
 	}
 	{
-		//ƒ_ƒCƒ„ƒOƒ‰ƒ€üƒXƒ^ƒCƒ‹
+		//ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ç·šã‚¹ã‚¿ã‚¤ãƒ«
 		CConverter_WinGdi	aConverter ;
 
 		CRect	aRect = MfcUtil::GetDlgControlRect( this , IDC_STATIC_DiagramSen ) ;

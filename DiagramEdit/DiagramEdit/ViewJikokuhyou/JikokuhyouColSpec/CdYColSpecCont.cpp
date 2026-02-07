@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍAtake-okm‚ªì¬‚µ‚½OuDia‚ğ‰ü‘¢‚µ‚½ƒ\ƒtƒgƒEƒFƒA‚Å‚·B
-‚±‚ÌƒvƒƒOƒ‰ƒ€—˜—p‚É‚Â‚¢‚Ä‚ÍAtake-okm‹LÚ‚Ì‰º‹L•¶‘‚É€‹’‚µ‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã€take-okmæ°ãŒä½œæˆã—ãŸOuDiaã‚’æ”¹é€ ã—ãŸã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ åˆ©ç”¨ã«ã¤ã„ã¦ã¯ã€take-okmæ°è¨˜è¼‰ã®ä¸‹è¨˜æ–‡æ›¸ã«æº–æ‹ ã—ã¾ã™ã€‚
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(–ó: 
+(è¨³: 
 
-	OuDia - —ñÔ•\‚ğ‚à‚Æ‚ÉAƒ_ƒCƒ„ƒOƒ‰ƒ€‚ğ•`‰æ‚·‚éWin32ƒAƒvƒŠƒP[ƒV
-ƒ‡ƒ“B
+	OuDia - åˆ—è»Šæ™‚åˆ»è¡¨ã‚’ã‚‚ã¨ã«ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚’æç”»ã™ã‚‹Win32ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·
+ãƒ§ãƒ³ã€‚
 
 Copyright (C) 2006-2017 take-okm 
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍƒtƒŠ[ƒ\ƒtƒgƒEƒFƒA‚Å‚·B‚ ‚È‚½‚Í‚±‚ê‚ğAƒtƒŠ[ƒ\ƒtƒgƒEƒFƒAà
-’c‚É‚æ‚Á‚Ä”­s‚³‚ê‚½GNU ˆê”ÊŒöO—˜—p‹–‘ø‘(ƒo[ƒWƒ‡ƒ“3‚©A‚»‚êˆÈ~‚Ìƒo[ƒWƒ‡
-ƒ“‚Ì‚¤‚¿‚Ç‚ê‚©)‚ª’è‚ß‚éğŒ‚Ì‰º‚ÅÄ”Ğ•z‚Ü‚½‚Í‰ü•Ï ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚ã‚ãªãŸã¯ã“ã‚Œã‚’ã€ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢è²¡
+å›£ã«ã‚ˆã£ã¦ç™ºè¡Œã•ã‚ŒãŸGNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸(ãƒãƒ¼ã‚¸ãƒ§ãƒ³3ã‹ã€ãã‚Œä»¥é™ã®ãƒãƒ¼ã‚¸ãƒ§
+ãƒ³ã®ã†ã¡ã©ã‚Œã‹)ãŒå®šã‚ã‚‹æ¡ä»¶ã®ä¸‹ã§å†é ’å¸ƒã¾ãŸã¯æ”¹å¤‰ ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚Í—L—p‚Å‚ ‚é‚±‚Æ‚ğŠè‚Á‚Ä”Ğ•z‚³‚ê‚Ü‚·‚ªA*‘S‚­‚Ì–³•ÛØ *‚Å‚·B
-¤‹Æ‰Â”\«‚Ì•ÛØ‚â“Á’è–Ú“I‚Ö‚Ì“K‡«‚ÍAŒ¾ŠO‚É¦‚³‚ê‚½‚à‚Ì‚à ŠÜ‚ßA‘S‚­‘¶İ
-‚µ‚Ü‚¹‚ñBÚ‚µ‚­‚ÍGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ğ‚²——‚­‚¾‚³‚¢B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯æœ‰ç”¨ã§ã‚ã‚‹ã“ã¨ã‚’é¡˜ã£ã¦é ’å¸ƒã•ã‚Œã¾ã™ãŒã€*å…¨ãã®ç„¡ä¿è¨¼ *ã§ã™ã€‚
+å•†æ¥­å¯èƒ½æ€§ã®ä¿è¨¼ã‚„ç‰¹å®šç›®çš„ã¸ã®é©åˆæ€§ã¯ã€è¨€å¤–ã«ç¤ºã•ã‚ŒãŸã‚‚ã®ã‚‚ å«ã‚ã€å…¨ãå­˜åœ¨
+ã—ã¾ã›ã‚“ã€‚è©³ã—ãã¯GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã‚’ã”è¦§ãã ã•ã„ã€‚
 
-‚ ‚È‚½‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚Æ‹¤‚ÉAGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ÌƒRƒs[‚ğˆê•” ó‚¯æ‚Á
-‚Ä‚¢‚é‚Í‚¸‚Å‚·B‚à‚µó‚¯æ‚Á‚Ä‚¢‚È‚¯‚ê‚ÎA<http://www.gnu.org/licenses/> ‚ğ
-‚²——‚­‚¾‚³‚¢B
+ã‚ãªãŸã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¨å…±ã«ã€GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã®ã‚³ãƒ”ãƒ¼ã‚’ä¸€éƒ¨ å—ã‘å–ã£
+ã¦ã„ã‚‹ã¯ãšã§ã™ã€‚ã‚‚ã—å—ã‘å–ã£ã¦ã„ãªã‘ã‚Œã°ã€<http://www.gnu.org/licenses/> ã‚’
+ã”è¦§ãã ã•ã„ã€‚
 
 )
 
-  ‰Á‚¦‚ÄA“Á•Ê‚È—áŠO‚Æ‚µ‚ÄAtake-okm ‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÌƒR[ƒh‚ğ 
+  åŠ ãˆã¦ã€ç‰¹åˆ¥ãªä¾‹å¤–ã¨ã—ã¦ã€take-okm ã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ã‚³ãƒ¼ãƒ‰ã‚’ 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ‚ ‚é‚¢‚Í "MFC Version 9.0" ‚Æ“¯‚¶ƒ‰ƒCƒZƒ“ƒX‚ª“K—p‚³‚ê‚½
-  "MFC Version 9.0" ‚Ì‰ü•Ï‚³‚ê‚½ƒo[ƒWƒ‡ƒ“)‚ÆƒŠƒ“ƒN‚µA
-  ƒŠƒ“ƒN‚³‚ê‚½—¼Ò‚ğŠÜ‚ŞŒ‹‡’˜ì•¨‚ğ”Ğ•z‚·‚é‹–‰Â‚ğ—^‚¦‚Ü‚·B
-  ‚ ‚È‚½‚Í "MFC" ˆÈŠO‚Åg‚í‚ê‚Ä‚¢‚é‚·‚×‚Ä
-  ‚ÌƒR[ƒh‚ÉŠÖ‚µ‚Ä‚Í‘S–Ê“I‚ÉGNUˆê”ÊŒöO—˜—p‹–‘øŒ_–ñ‘‚É]‚í‚È‚¯‚ê‚Î
-  ‚È‚è‚Ü‚¹‚ñB‚ ‚È‚½‚ª‚±‚Ìƒtƒ@ƒCƒ‹‚ğ‰ü•Ï‚µ‚½‚È‚ç‚ÎA‚ ‚È‚½‚Í‚±‚Ì—áŠO
-  ‚ğ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚Ìƒtƒ@ƒCƒ‹‚Éˆø‚«‘±‚«İ‚¯‚é‚±‚Æ‚à‚Å‚«‚Ü‚·‚ªA‚»
-  ‚¤‚·‚é‹`–±‚Í‚ ‚è‚Ü‚¹‚ñB‚à‚µ—áŠO‚ğİ‚¯‚½‚­‚È‚¯‚ê‚ÎA‚±‚Ì—áŠOğ€‚ğ
-  ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚©‚ç‚Ííœ‚µ‚Ä‚­‚¾‚³‚¢B)
+  (  ã‚ã‚‹ã„ã¯ "MFC Version 9.0" ã¨åŒã˜ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ãŒé©ç”¨ã•ã‚ŒãŸ
+  "MFC Version 9.0" ã®æ”¹å¤‰ã•ã‚ŒãŸãƒãƒ¼ã‚¸ãƒ§ãƒ³)ã¨ãƒªãƒ³ã‚¯ã—ã€
+  ãƒªãƒ³ã‚¯ã•ã‚ŒãŸä¸¡è€…ã‚’å«ã‚€çµåˆè‘—ä½œç‰©ã‚’é ’å¸ƒã™ã‚‹è¨±å¯ã‚’ä¸ãˆã¾ã™ã€‚
+  ã‚ãªãŸã¯ "MFC" ä»¥å¤–ã§ä½¿ã‚ã‚Œã¦ã„ã‚‹ã™ã¹ã¦
+  ã®ã‚³ãƒ¼ãƒ‰ã«é–¢ã—ã¦ã¯å…¨é¢çš„ã«GNUä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾å¥‘ç´„æ›¸ã«å¾“ã‚ãªã‘ã‚Œã°
+  ãªã‚Šã¾ã›ã‚“ã€‚ã‚ãªãŸãŒã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ”¹å¤‰ã—ãŸãªã‚‰ã°ã€ã‚ãªãŸã¯ã“ã®ä¾‹å¤–
+  ã‚’ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®ãƒ•ã‚¡ã‚¤ãƒ«ã«å¼•ãç¶šãè¨­ã‘ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ãŒã€ã
+  ã†ã™ã‚‹ç¾©å‹™ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ã‚‚ã—ä¾‹å¤–ã‚’è¨­ã‘ãŸããªã‘ã‚Œã°ã€ã“ã®ä¾‹å¤–æ¡é …ã‚’
+  ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‹ã‚‰ã¯å‰Šé™¤ã—ã¦ãã ã•ã„ã€‚)
 */
 // ****************************************************************
 // $Id: CdYColSpecCont.cpp 261 2016-01-23 03:59:53Z okm $
@@ -78,7 +78,7 @@ Copyright (C) 2006-2017 take-okm
 namespace ViewJikokuhyou{ namespace JikokuhyouColSpec{
 
 	// ********************************
-	//	ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	//	ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 	// ********************************
 CdYColSpecCont::CdYColSpecCont( 
 	const CentDedEkiCont* pCentDedEkiCont , 
@@ -126,11 +126,11 @@ CdYColSpecCont::CdYColSpecCont( )
 }
 
 	// ********************************
-	//@name CdYColSpec-ŠÖ˜A
+	//@name CdYColSpec-é–¢é€£
 	// ********************************
 
 	// ********************************
-	//@name ‘®«
+	//@name å±æ€§
 	// ********************************
 ERessyahoukou	CdYColSpecCont::getRessyahoukou()const 
 {
@@ -183,7 +183,7 @@ bool CdYColSpecCont::getDisplayInOutLinkCode()const
 }
 
 	// ********************************
-	//@name CdYColSpec-‘€ì
+	//@name CdYColSpec-æ“ä½œ
 	// ********************************
 void CdYColSpecCont::scan( 
 		const CentDedEkiCont* pCentDedEkiCont ,
@@ -199,44 +199,44 @@ void CdYColSpecCont::scan(
 		bool bDisplayInOutLinkCode)
 {
 	// --------------------------------
-	//	Šù‘¶ƒf[ƒ^‚Ìíœ
+	//	æ—¢å­˜ãƒ‡ãƒ¼ã‚¿ã®å‰Šé™¤
 	// --------------------------------
 	clear() ;
 
 	// --------------------------------
-	//	w—ñ”Ô†-•\¦“à—ex‚Ì‘Î‰•\‚ğ\’z
+	//	ã€åˆ—ç•ªå·-è¡¨ç¤ºå†…å®¹ã€ã®å¯¾å¿œè¡¨ã‚’æ§‹ç¯‰
 	// --------------------------------
-	//	—ñÔ”Ô†
+	//	åˆ—è»Šç•ªå·
 	m_contColumnSpec.insert( 
 		CdYColSpec( CdYColSpec::ColumnType_Ressyabangou ) ) ;
-	//@‰^—p”Ô†
+	//ã€€é‹ç”¨ç•ªå·
 	for (int idx = 0; idx < iOperationNumberRows && iEnableOperation > 1; idx++)
 	{
 		m_contColumnSpec.insert(
 			CdYColSpec(CdYColSpec::ColumnType_OperationNumber, -1, idx));
 	}
-	//	—ñÔí•Ê 
+	//	åˆ—è»Šç¨®åˆ¥ 
 	m_contColumnSpec.insert( 
 		CdYColSpec( CdYColSpec::ColumnType_Ressyasyubetsu ) ) ;
 	if (bDisplayRessyamei)
 	{
-		//	—ñÔ–¼
+		//	åˆ—è»Šå
 		m_contColumnSpec.insert(
 			CdYColSpec(CdYColSpec::ColumnType_Ressyamei));
-		//	†” 
+		//	å·æ•° 
 		m_contColumnSpec.insert(
 			CdYColSpec(CdYColSpec::ColumnType_Gousuu));
-		//	u†v•\¦ 
+		//	ã€Œå·ã€è¡¨ç¤º 
 		m_contColumnSpec.insert(
 			CdYColSpec(CdYColSpec::ColumnType_Gou));
 	}
-	//n”­‰w–¼
+	//å§‹ç™ºé§…å
 	if (bDisplayShihatsuShuchakuEkimei || !bCustomizeDisplayMode)
 	{
 		m_contColumnSpec.insert(
 			CdYColSpec(CdYColSpec::ColumnType_ShihatsuEkimei));
 	}
-	//n”­‰wì‹Æ
+	//å§‹ç™ºé§…ä½œæ¥­
 	if (!bCustomizeDisplayMode)
 	{
 		m_contColumnSpec.insert(
@@ -254,13 +254,13 @@ void CdYColSpecCont::scan(
 			}
 		}
 	}
-	//I’…‰w–¼
+	//çµ‚ç€é§…å
 	if (bDisplayShihatsuShuchakuEkimei || !bCustomizeDisplayMode)
 	{
 		m_contColumnSpec.insert(
 			CdYColSpec(CdYColSpec::ColumnType_ShuchakuEkimei));
 	}
-	//I’…‰wì‹Æ
+	//çµ‚ç€é§…ä½œæ¥­
 	if (!bCustomizeDisplayMode)
 	{
 		m_contColumnSpec.insert(
@@ -273,7 +273,7 @@ void CdYColSpecCont::scan(
 				CdYColSpec(CdYColSpec::ColumnType_Operation_Shuchaku3));
 		}
 	}
-	//˜HüŠOn”­‰w(•ÒWƒ‚[ƒh‚Ìê‡)
+	//è·¯ç·šå¤–å§‹ç™ºé§…(ç·¨é›†ãƒ¢ãƒ¼ãƒ‰ã®å ´åˆ)
 	if (bDisplayOuterTerminalShihatsu && !bCustomizeDisplayMode)
 	{
 		m_contColumnSpec.insert(
@@ -281,9 +281,9 @@ void CdYColSpecCont::scan(
 		m_contColumnSpec.insert(
 			CdYColSpec(CdYColSpec::ColumnType_Outer_Shihatsu2));
 	}
-	//	‰w‚Ìæ“ª—ñ‚Ì—ñ”Ô†B
+	//	é§…æ™‚åˆ»ã®å…ˆé ­åˆ—ã®åˆ—ç•ªå·ã€‚
 	m_iColumnNumber_Ekijikoku_begin = m_contColumnSpec.size();
-	//	‰w
+	//	é§…æ™‚åˆ»
 	{
 		const Mu<CentDedEkiCont::CdDedEki>* muEki = 
 			pCentDedEkiCont->getMuPtr( eRessyahoukou ) ;
@@ -293,7 +293,7 @@ void CdYColSpecCont::scan(
 		{
 			CentDedEkiCont::CdDedEki	aEki = muEki->get( iEkiOrder ) ;
 
-			//ƒJƒXƒ^ƒ}ƒCƒY•\‚Ìê‡A‰w•Ê‚Ì˜HüŠOE‘O—ñÔn”­‰w—“‚ğ’Ç‰Á
+			//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ã®å ´åˆã€é§…åˆ¥ã®è·¯ç·šå¤–ãƒ»å‰åˆ—è»Šå§‹ç™ºé§…æ¬„ã‚’è¿½åŠ 
 			if (bCustomizeDisplayMode && aEki.getJikokuhyouOuterSihatsuDisplay())
 			{
 				m_contColumnSpec.insert(
@@ -301,8 +301,8 @@ void CdYColSpecCont::scan(
 				m_contColumnSpec.insert(
 					CdYColSpec(CdYColSpec::ColumnType_EkiOuter_Shihatsu2, iEkiOrder));
 			}
-			//	•ÒWƒ‚[ƒh‚Å‚ÍA’…•\¦‚ ‚è ‚Ü‚½‚Í[‘S‚ğ•\¦] ƒ‚[ƒh‚È‚çA’…—ñ‚ğ’Ç‰Á
-			//@ƒJƒXƒ^ƒ}ƒCƒY•\‚Å‚ÍA’…•\¦‚ ‚è‚È‚çA’…—ñ‚ğ’Ç‰Á
+			//	ç·¨é›†ãƒ¢ãƒ¼ãƒ‰ã§ã¯ã€ç€æ™‚åˆ»è¡¨ç¤ºã‚ã‚Š ã¾ãŸã¯[å…¨æ™‚åˆ»ã‚’è¡¨ç¤º] ãƒ¢ãƒ¼ãƒ‰ãªã‚‰ã€ç€æ™‚åˆ»åˆ—ã‚’è¿½åŠ 
+			//ã€€ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ã§ã¯ã€ç€æ™‚åˆ»è¡¨ç¤ºã‚ã‚Šãªã‚‰ã€ç€æ™‚åˆ»åˆ—ã‚’è¿½åŠ 
 			if (bCustomizeDisplayMode)
 			{
 				if (aEki.getJikokuhyouChakuJikokuDisplay())
@@ -320,7 +320,7 @@ void CdYColSpecCont::scan(
 				}
 			}
 
-			//•ÒWƒ‚[ƒh‚©‚ÂA‘Oì‹Æ•\¦‚ª1ˆÈã‚È‚çAì‹Æ—ñ‚ğ’Ç‰Á
+			//ç·¨é›†ãƒ¢ãƒ¼ãƒ‰ã‹ã¤ã€å‰ä½œæ¥­è¡¨ç¤ºãŒ1ä»¥ä¸Šãªã‚‰ã€ä½œæ¥­åˆ—ã‚’è¿½åŠ 
 			if (!bCustomizeDisplayMode)
 			{
 				if (aEki.getJikokuhyouBeforeOperationBefore())
@@ -344,7 +344,7 @@ void CdYColSpecCont::scan(
 						}
 					}
 				}
-				//getJikokuhyouBeforeOperation‚ª0‚Ìê‡‚ÍAfor‚Ì’†‚ğÀs‚µ‚È‚¢‚Ì‚ÅA”»’èÈ—ª
+				//getJikokuhyouBeforeOperationãŒ0ã®å ´åˆã¯ã€forã®ä¸­ã‚’å®Ÿè¡Œã—ãªã„ã®ã§ã€åˆ¤å®šçœç•¥
 				for (int idxb = 0; idxb < aEki.getJikokuhyouBeforeOperation(); idxb++)
 				{
 					m_contColumnSpec.insert(
@@ -370,7 +370,7 @@ void CdYColSpecCont::scan(
 					}
 				}
 			}
-			//@”Ôü•\¦‚ ‚èA‚Ü‚½‚Í[”Ôü•ÒW]ƒ‚[ƒh‚©‚Â•\¦È—ª‚ªFalse‚È‚çA”Ôü—ñ‚ğ’Ç‰Á
+			//ã€€ç•ªç·šè¡¨ç¤ºã‚ã‚Šã€ã¾ãŸã¯[ç•ªç·šç·¨é›†]ãƒ¢ãƒ¼ãƒ‰ã‹ã¤è¡¨ç¤ºçœç•¥ãŒFalseãªã‚‰ã€ç•ªç·šåˆ—ã‚’è¿½åŠ 
 			if(aEki.getJikokuhyouTrackDisplay() || 
 				(!bCustomizeDisplayMode &&
 					!aEki.getJikokuhyouTrackOmit()))
@@ -378,7 +378,7 @@ void CdYColSpecCont::scan(
 				m_contColumnSpec.insert(
 					CdYColSpec(CdYColSpec::ColumnType_Track, iEkiOrder));
 			}
-			//•ÒWƒ‚[ƒh‚©‚ÂA‘Oì‹Æ•\¦‚ª1ˆÈã‚È‚çAì‹Æ—ñ‚ğ’Ç‰Á
+			//ç·¨é›†ãƒ¢ãƒ¼ãƒ‰ã‹ã¤ã€å‰ä½œæ¥­è¡¨ç¤ºãŒ1ä»¥ä¸Šãªã‚‰ã€ä½œæ¥­åˆ—ã‚’è¿½åŠ 
 			if (!bCustomizeDisplayMode)
 			{
 				if (aEki.getJikokuhyouAfterOperationBefore())
@@ -402,7 +402,7 @@ void CdYColSpecCont::scan(
 						}
 					}
 				}
-				//getJikokuhyouAfterOperation‚ª0‚Ìê‡‚ÍAfor‚Ì’†‚ğÀs‚µ‚È‚¢‚Ì‚ÅA”»’èÈ—ª
+				//getJikokuhyouAfterOperationãŒ0ã®å ´åˆã¯ã€forã®ä¸­ã‚’å®Ÿè¡Œã—ãªã„ã®ã§ã€åˆ¤å®šçœç•¥
 				for (int idxa = 0; idxa < aEki.getJikokuhyouAfterOperation(); idxa++)
 				{
 					m_contColumnSpec.insert(
@@ -428,7 +428,7 @@ void CdYColSpecCont::scan(
 					}
 				}
 			}
-			//ƒJƒXƒ^ƒ}ƒCƒY•\‚Ìê‡Aí•Ê•ÏX—p•\¦—“‚ğ’Ç‰Á
+			//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ã®å ´åˆã€ç¨®åˆ¥å¤‰æ›´ç”¨è¡¨ç¤ºæ¬„ã‚’è¿½åŠ 
 			if (bCustomizeDisplayMode)
 			{
 				if (aEki.getJikokuhyouRessyabangouDisplay() >= 1)
@@ -457,8 +457,8 @@ void CdYColSpecCont::scan(
 						CdYColSpec(CdYColSpec::ColumnType_EkiGou, iEkiOrder));
 				}
 			}
-			//	•ÒWƒ‚[ƒh‚Å‚ÍA”­•\¦‚ ‚è ‚Ü‚½‚Í[‘S‚ğ•\¦] ƒ‚[ƒh‚È‚çA”­—ñ‚ğ’Ç‰Á
-			//@ƒJƒXƒ^ƒ}ƒCƒY•\‚Å‚ÍA”­•\¦‚ ‚è‚È‚çA”­—ñ‚ğ’Ç‰Á
+			//	ç·¨é›†ãƒ¢ãƒ¼ãƒ‰ã§ã¯ã€ç™ºæ™‚åˆ»è¡¨ç¤ºã‚ã‚Š ã¾ãŸã¯[å…¨æ™‚åˆ»ã‚’è¡¨ç¤º] ãƒ¢ãƒ¼ãƒ‰ãªã‚‰ã€ç™ºæ™‚åˆ»åˆ—ã‚’è¿½åŠ 
+			//ã€€ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ã§ã¯ã€ç™ºæ™‚åˆ»è¡¨ç¤ºã‚ã‚Šãªã‚‰ã€ç™ºæ™‚åˆ»åˆ—ã‚’è¿½åŠ 
 			if (bCustomizeDisplayMode)
 			{
 				if (aEki.getJikokuhyouHatsuJikokuDisplay())
@@ -475,7 +475,7 @@ void CdYColSpecCont::scan(
 						CdYColSpec(CdYColSpec::ColumnType_Ekijikoku_Hatsu, iEkiOrder));
 				}
 			}
-			//ƒJƒXƒ^ƒ}ƒCƒY•\‚Ìê‡A‰w•Ê‚Ì˜HüŠOEŸ—ñÔI’…‰w—“‚ğ’Ç‰Á
+			//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ã®å ´åˆã€é§…åˆ¥ã®è·¯ç·šå¤–ãƒ»æ¬¡åˆ—è»Šçµ‚ç€é§…æ¬„ã‚’è¿½åŠ 
 			if (bCustomizeDisplayMode && aEki.getJikokuhyouOuterShuchakuDisplay())
 			{
 				m_contColumnSpec.insert(
@@ -485,9 +485,9 @@ void CdYColSpecCont::scan(
 			}
 		}
 	}
-	/* 		‰w—ñ‚Ì I’[(‚ÌŸ) ‚Ì —ñ”Ô†B*/
+	/* 		é§…æ™‚åˆ»åˆ—ã® çµ‚ç«¯(ã®æ¬¡) ã® åˆ—ç•ªå·ã€‚*/
 	m_iColumnNumber_Ekijikoku_end = m_contColumnSpec.size()  ;
-	//˜HüŠOI’…‰w(•ÒWƒ‚[ƒh‚Ìê‡)
+	//è·¯ç·šå¤–çµ‚ç€é§…(ç·¨é›†ãƒ¢ãƒ¼ãƒ‰ã®å ´åˆ)
 	if (bDisplayOuterTerminalShuchaku && !bCustomizeDisplayMode)
 	{
 		m_contColumnSpec.insert(
@@ -495,7 +495,7 @@ void CdYColSpecCont::scan(
 		m_contColumnSpec.insert(
 			CdYColSpec(CdYColSpec::ColumnType_Outer_Shuchaku2));
 	}
-	/**	”õl */
+	/**	å‚™è€ƒ */
 	m_contColumnSpec.insert( 
 		CdYColSpec( CdYColSpec::ColumnType_Bikou ) ) ;
 }
@@ -528,7 +528,7 @@ int CdYColSpecCont::ColumnNumberFromSpec(
 {
 	int iRv = -1 ;
 	// --------------------------------
-	//	•\¦“à—e‚Ìˆê’v‚·‚é—ñ‚ğŒŸõ
+	//	è¡¨ç¤ºå†…å®¹ã®ä¸€è‡´ã™ã‚‹åˆ—ã‚’æ¤œç´¢
 	// --------------------------------
 	for ( int iColumnNumber = 0 ; 
 		iRv == -1 && iColumnNumber < m_contColumnSpec.size() ; 
@@ -540,13 +540,13 @@ int CdYColSpecCont::ColumnNumberFromSpec(
 		}
 	}
 	// --------------------------------
-	//	‘Î‰‚·‚é•\¦€–Ú‚ª”ñ•\¦‚Å‚ ‚éê‡A‘ã‚í‚è‚Ì—ñ”Ô†‚ğ•Ô‚µ‚Ü‚·B
+	//	å¯¾å¿œã™ã‚‹è¡¨ç¤ºé …ç›®ãŒéè¡¨ç¤ºã§ã‚ã‚‹å ´åˆã€ä»£ã‚ã‚Šã®åˆ—ç•ªå·ã‚’è¿”ã—ã¾ã™ã€‚
 	// --------------------------------
 	if ( iRv == -1 && bResolveSameStation )
 	{
-		//- aCdYColumnSpec ‚ªAColumnType_Ressyabangou(—ñÔ”Ô†)`ColumnType_Gou(u†v•\¦) 
-		//‚Ü‚Å‚È‚çAColumnType_Ressyabangou`ColumnType_Gou ‚Ì‚¤‚¿‚Ì‚¢‚¸‚ê‚©‚ªŒ©‚Â‚©‚Á‚½
-		//Å‰‚Ì—ñ”Ô†‚ğ•Ô‚µ‚Ü‚·B
+		//- aCdYColumnSpec ãŒã€ColumnType_Ressyabangou(åˆ—è»Šç•ªå·)ã€œColumnType_Gou(ã€Œå·ã€è¡¨ç¤º) 
+		//ã¾ã§ãªã‚‰ã€ColumnType_Ressyabangouã€œColumnType_Gou ã®ã†ã¡ã®ã„ãšã‚Œã‹ãŒè¦‹ã¤ã‹ã£ãŸ
+		//æœ€åˆã®åˆ—ç•ªå·ã‚’è¿”ã—ã¾ã™ã€‚
 		if ( aCdYColumnSpec.isRessyaProp() )
 		{
 			for ( int iColumnNumber = 0 ; 
@@ -559,12 +559,12 @@ int CdYColSpecCont::ColumnNumberFromSpec(
 				}
 			}
 		}
-		//- aCdYColumnSpec ‚ª	ColumnType_Ekijikoku_Chaku(’…)‚È‚ç‚ÎA
-		//“¯‚¶‰wOrder‚Ì ColumnType_Ekijikoku_Hatsu(”­)‚ğ•Ô‚µ‚Ü‚·B‚»‚Ì—ñ‚à”ñ•\¦‚È‚çA
-		//‰wOrder‚ªaCdYColumnSpec –¢–‚ÅAColumnType_Ekijikoku_Chaku ‚© 
-		//ColumnType_Ekijikoku_Hatsu ‚Ì—ñ‚Ì‚¤‚¿Aˆê”Ô‘å‚«‚¢—ñ”Ô†‚ğ•Ô‚µ‚Ü‚·B
-		//- aCdYColumnSpec ‚ª	ColumnType_Ekijikoku_Hatsu(”­)‚Ìê‡‚àA
-		//ColumnType_Ekijikoku_Chaku ‚Ìê‡‚Æ“¯—l‚Å‚·B
+		//- aCdYColumnSpec ãŒ	ColumnType_Ekijikoku_Chaku(ç€æ™‚åˆ»)ãªã‚‰ã°ã€
+		//åŒã˜é§…Orderã® ColumnType_Ekijikoku_Hatsu(ç™ºæ™‚åˆ»)ã‚’è¿”ã—ã¾ã™ã€‚ãã®åˆ—ã‚‚éè¡¨ç¤ºãªã‚‰ã€
+		//é§…OrderãŒaCdYColumnSpec æœªæº€ã§ã€ColumnType_Ekijikoku_Chaku ã‹ 
+		//ColumnType_Ekijikoku_Hatsu ã®åˆ—ã®ã†ã¡ã€ä¸€ç•ªå¤§ãã„åˆ—ç•ªå·ã‚’è¿”ã—ã¾ã™ã€‚
+		//- aCdYColumnSpec ãŒ	ColumnType_Ekijikoku_Hatsu(ç™ºæ™‚åˆ»)ã®å ´åˆã‚‚ã€
+		//ColumnType_Ekijikoku_Chaku ã®å ´åˆã¨åŒæ§˜ã§ã™ã€‚
 		else if ( aCdYColumnSpec.isEkiJikoku() )
 		{
 			for ( int iColumnNumber = m_contColumnSpec.size() - 1 ;

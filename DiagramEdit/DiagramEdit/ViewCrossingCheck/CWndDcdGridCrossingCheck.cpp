@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍAtake-okm‚ªì¬‚µ‚½OuDia‚ğ‰ü‘¢‚µ‚½ƒ\ƒtƒgƒEƒFƒA‚Å‚·B
-‚±‚ÌƒvƒƒOƒ‰ƒ€—˜—p‚É‚Â‚¢‚Ä‚ÍAtake-okm‹LÚ‚Ì‰º‹L•¶‘‚É€‹’‚µ‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã€take-okmæ°ãŒä½œæˆã—ãŸOuDiaã‚’æ”¹é€ ã—ãŸã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ åˆ©ç”¨ã«ã¤ã„ã¦ã¯ã€take-okmæ°è¨˜è¼‰ã®ä¸‹è¨˜æ–‡æ›¸ã«æº–æ‹ ã—ã¾ã™ã€‚
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(–ó: 
+(è¨³: 
 
-	OuDia - —ñÔ•\‚ğ‚à‚Æ‚ÉAƒ_ƒCƒ„ƒOƒ‰ƒ€‚ğ•`‰æ‚·‚éWin32ƒAƒvƒŠƒP[ƒV
-ƒ‡ƒ“B
+	OuDia - åˆ—è»Šæ™‚åˆ»è¡¨ã‚’ã‚‚ã¨ã«ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚’æç”»ã™ã‚‹Win32ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·
+ãƒ§ãƒ³ã€‚
 
 Copyright (C) 2006-2017 take-okm 
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍƒtƒŠ[ƒ\ƒtƒgƒEƒFƒA‚Å‚·B‚ ‚È‚½‚Í‚±‚ê‚ğAƒtƒŠ[ƒ\ƒtƒgƒEƒFƒAà
-’c‚É‚æ‚Á‚Ä”­s‚³‚ê‚½GNU ˆê”ÊŒöO—˜—p‹–‘ø‘(ƒo[ƒWƒ‡ƒ“3‚©A‚»‚êˆÈ~‚Ìƒo[ƒWƒ‡
-ƒ“‚Ì‚¤‚¿‚Ç‚ê‚©)‚ª’è‚ß‚éğŒ‚Ì‰º‚ÅÄ”Ğ•z‚Ü‚½‚Í‰ü•Ï ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚ã‚ãªãŸã¯ã“ã‚Œã‚’ã€ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢è²¡
+å›£ã«ã‚ˆã£ã¦ç™ºè¡Œã•ã‚ŒãŸGNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸(ãƒãƒ¼ã‚¸ãƒ§ãƒ³3ã‹ã€ãã‚Œä»¥é™ã®ãƒãƒ¼ã‚¸ãƒ§
+ãƒ³ã®ã†ã¡ã©ã‚Œã‹)ãŒå®šã‚ã‚‹æ¡ä»¶ã®ä¸‹ã§å†é ’å¸ƒã¾ãŸã¯æ”¹å¤‰ ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚Í—L—p‚Å‚ ‚é‚±‚Æ‚ğŠè‚Á‚Ä”Ğ•z‚³‚ê‚Ü‚·‚ªA*‘S‚­‚Ì–³•ÛØ *‚Å‚·B
-¤‹Æ‰Â”\«‚Ì•ÛØ‚â“Á’è–Ú“I‚Ö‚Ì“K‡«‚ÍAŒ¾ŠO‚É¦‚³‚ê‚½‚à‚Ì‚à ŠÜ‚ßA‘S‚­‘¶İ
-‚µ‚Ü‚¹‚ñBÚ‚µ‚­‚ÍGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ğ‚²——‚­‚¾‚³‚¢B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯æœ‰ç”¨ã§ã‚ã‚‹ã“ã¨ã‚’é¡˜ã£ã¦é ’å¸ƒã•ã‚Œã¾ã™ãŒã€*å…¨ãã®ç„¡ä¿è¨¼ *ã§ã™ã€‚
+å•†æ¥­å¯èƒ½æ€§ã®ä¿è¨¼ã‚„ç‰¹å®šç›®çš„ã¸ã®é©åˆæ€§ã¯ã€è¨€å¤–ã«ç¤ºã•ã‚ŒãŸã‚‚ã®ã‚‚ å«ã‚ã€å…¨ãå­˜åœ¨
+ã—ã¾ã›ã‚“ã€‚è©³ã—ãã¯GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã‚’ã”è¦§ãã ã•ã„ã€‚
 
-‚ ‚È‚½‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚Æ‹¤‚ÉAGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ÌƒRƒs[‚ğˆê•” ó‚¯æ‚Á
-‚Ä‚¢‚é‚Í‚¸‚Å‚·B‚à‚µó‚¯æ‚Á‚Ä‚¢‚È‚¯‚ê‚ÎA<http://www.gnu.org/licenses/> ‚ğ
-‚²——‚­‚¾‚³‚¢B
+ã‚ãªãŸã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¨å…±ã«ã€GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã®ã‚³ãƒ”ãƒ¼ã‚’ä¸€éƒ¨ å—ã‘å–ã£
+ã¦ã„ã‚‹ã¯ãšã§ã™ã€‚ã‚‚ã—å—ã‘å–ã£ã¦ã„ãªã‘ã‚Œã°ã€<http://www.gnu.org/licenses/> ã‚’
+ã”è¦§ãã ã•ã„ã€‚
 
 )
 
-  ‰Á‚¦‚ÄA“Á•Ê‚È—áŠO‚Æ‚µ‚ÄAtake-okm ‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÌƒR[ƒh‚ğ 
+  åŠ ãˆã¦ã€ç‰¹åˆ¥ãªä¾‹å¤–ã¨ã—ã¦ã€take-okm ã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ã‚³ãƒ¼ãƒ‰ã‚’ 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ‚ ‚é‚¢‚Í "MFC Version 9.0" ‚Æ“¯‚¶ƒ‰ƒCƒZƒ“ƒX‚ª“K—p‚³‚ê‚½
-  "MFC Version 9.0" ‚Ì‰ü•Ï‚³‚ê‚½ƒo[ƒWƒ‡ƒ“)‚ÆƒŠƒ“ƒN‚µA
-  ƒŠƒ“ƒN‚³‚ê‚½—¼Ò‚ğŠÜ‚ŞŒ‹‡’˜ì•¨‚ğ”Ğ•z‚·‚é‹–‰Â‚ğ—^‚¦‚Ü‚·B
-  ‚ ‚È‚½‚Í "MFC" ˆÈŠO‚Åg‚í‚ê‚Ä‚¢‚é‚·‚×‚Ä
-  ‚ÌƒR[ƒh‚ÉŠÖ‚µ‚Ä‚Í‘S–Ê“I‚ÉGNUˆê”ÊŒöO—˜—p‹–‘øŒ_–ñ‘‚É]‚í‚È‚¯‚ê‚Î
-  ‚È‚è‚Ü‚¹‚ñB‚ ‚È‚½‚ª‚±‚Ìƒtƒ@ƒCƒ‹‚ğ‰ü•Ï‚µ‚½‚È‚ç‚ÎA‚ ‚È‚½‚Í‚±‚Ì—áŠO
-  ‚ğ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚Ìƒtƒ@ƒCƒ‹‚Éˆø‚«‘±‚«İ‚¯‚é‚±‚Æ‚à‚Å‚«‚Ü‚·‚ªA‚»
-  ‚¤‚·‚é‹`–±‚Í‚ ‚è‚Ü‚¹‚ñB‚à‚µ—áŠO‚ğİ‚¯‚½‚­‚È‚¯‚ê‚ÎA‚±‚Ì—áŠOğ€‚ğ
-  ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚©‚ç‚Ííœ‚µ‚Ä‚­‚¾‚³‚¢B)
+  (  ã‚ã‚‹ã„ã¯ "MFC Version 9.0" ã¨åŒã˜ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ãŒé©ç”¨ã•ã‚ŒãŸ
+  "MFC Version 9.0" ã®æ”¹å¤‰ã•ã‚ŒãŸãƒãƒ¼ã‚¸ãƒ§ãƒ³)ã¨ãƒªãƒ³ã‚¯ã—ã€
+  ãƒªãƒ³ã‚¯ã•ã‚ŒãŸä¸¡è€…ã‚’å«ã‚€çµåˆè‘—ä½œç‰©ã‚’é ’å¸ƒã™ã‚‹è¨±å¯ã‚’ä¸ãˆã¾ã™ã€‚
+  ã‚ãªãŸã¯ "MFC" ä»¥å¤–ã§ä½¿ã‚ã‚Œã¦ã„ã‚‹ã™ã¹ã¦
+  ã®ã‚³ãƒ¼ãƒ‰ã«é–¢ã—ã¦ã¯å…¨é¢çš„ã«GNUä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾å¥‘ç´„æ›¸ã«å¾“ã‚ãªã‘ã‚Œã°
+  ãªã‚Šã¾ã›ã‚“ã€‚ã‚ãªãŸãŒã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ”¹å¤‰ã—ãŸãªã‚‰ã°ã€ã‚ãªãŸã¯ã“ã®ä¾‹å¤–
+  ã‚’ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®ãƒ•ã‚¡ã‚¤ãƒ«ã«å¼•ãç¶šãè¨­ã‘ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ãŒã€ã
+  ã†ã™ã‚‹ç¾©å‹™ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ã‚‚ã—ä¾‹å¤–ã‚’è¨­ã‘ãŸããªã‘ã‚Œã°ã€ã“ã®ä¾‹å¤–æ¡é …ã‚’
+  ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‹ã‚‰ã¯å‰Šé™¤ã—ã¦ãã ã•ã„ã€‚)
 */
 /*
 // ****************************************************************
@@ -77,25 +77,25 @@ Copyright (C) 2006-2017 take-okm
 /** @file */
 #include "stdafx.h"
 
-#include "logmsg\LogMsg.h"
-#include "NsOu\OuNew.h"
-#include "NsOu\dynamic_castOu.h"
-#include "str\strtoint.h"
-#include "DcDraw\CDcdTargetGetDC.h"
-#include "DcDraw\CConverter_WinGdi.h"
+#include "logmsgÂ¥LogMsg.h"
+#include "NsOuÂ¥OuNew.h"
+#include "NsOuÂ¥dynamic_castOu.h"
+#include "strÂ¥strtoint.h"
+#include "DcDrawÂ¥CDcdTargetGetDC.h"
+#include "DcDrawÂ¥CConverter_WinGdi.h"
 #include "MfcUtil/MfcUtil.h"
 #include "Str/strToWstr.h"
-#include "DcDraw\CDcdLine.h"
-#include "str\strprintf.h"
+#include "DcDrawÂ¥CDcdLine.h"
+#include "strÂ¥strprintf.h"
 
-#include "..\resource.h"
-#include "..\entDed\CentDedRosen.h"
-#include "..\entDed\CentDedDia.h"
-#include "..\DiagramEdit.h"
-#include "..\CRfEditCmdHolder.h"
-//#include "..\DedRosenFileData\EditCmd\EditCmd.h"
+#include "..Â¥resource.h"
+#include "..Â¥entDedÂ¥CentDedRosen.h"
+#include "..Â¥entDedÂ¥CentDedDia.h"
+#include "..Â¥DiagramEdit.h"
+#include "..Â¥CRfEditCmdHolder.h"
+//#include "..Â¥DedRosenFileDataÂ¥EditCmdÂ¥EditCmd.h"
 #include "CWndDcdGridCrossingCheck.h"
-#include "CrossingCheckColSpec\CrossingCheckColSpec.h"
+#include "CrossingCheckColSpecÂ¥CrossingCheckColSpec.h"
 
 
 // ****************************************************************
@@ -111,22 +111,22 @@ using namespace std ;
 
 
 // --------------------------------
-///@name	Y—ñ”Ô†
+///@name	Yåˆ—ç•ªå·
 // --------------------------------
 ///@{
 /**
-Y—ñ”Ô†Fƒwƒbƒ_—ñ
+Yåˆ—ç•ªå·ï¼šãƒ˜ãƒƒãƒ€åˆ—
 */
 const int YCOLUMNNNO_HEADER = 0 ;
 /**
-Y—ñ”Ô†F‰^—p‚Ì0”Ô–Ú
+Yåˆ—ç•ªå·ï¼šé‹ç”¨ã®0ç•ªç›®
 */
 const int YCOLUMNNNO_OPERATION_0 = 1 ;
 ///@}
 
 /**
 @return
-	‰w•\ƒrƒ…[‚ÌƒtƒHƒ“ƒg‚Ì‘®«‚ğ•Ô‚µ‚Ü‚·B
+	é§…æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã®ãƒ•ã‚©ãƒ³ãƒˆã®å±æ€§ã‚’è¿”ã—ã¾ã™ã€‚
 */
 static CdFontProp createFontProp()
 {
@@ -137,7 +137,7 @@ static CdFontProp createFontProp()
 }
 /**
 @return
-	‰w•\ƒrƒ…[‚Ì•¶š‚ÌF‚ğ•Ô‚µ‚Ü‚·B
+	é§…æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã®æ–‡å­—ã®è‰²ã‚’è¿”ã—ã¾ã™ã€‚
 */
 static CdColorProp createStringColorProp()
 {
@@ -148,7 +148,7 @@ static CdColorProp createStringColorProp()
 }
 /**
 @return
-	‰w•\ƒrƒ…[‚ÌŒrü‚ÌF‚ğ•Ô‚µ‚Ü‚·B
+	é§…æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã®ç½«ç·šã®è‰²ã‚’è¿”ã—ã¾ã™ã€‚
 */
 static CdColorProp createGridColorProp()
 {
@@ -160,7 +160,7 @@ static CdColorProp createGridColorProp()
 
 
 	// --------------------------------
-	//@name	‰º¿ŠÖ”
+	//@name	ä¸‹è«‹é–¢æ•°
 	// --------------------------------
 CdCrossingCheckXColSpecCont
 CWndDcdGridCrossingCheck::createXColSpecCont()
@@ -248,21 +248,21 @@ void CWndDcdGridCrossingCheck::InsertCrossingCheckSearch(
 	{
 		if (aCrossingCheckSearch.aRessyaProperty.getJikoku().compare(itr->aRessyaProperty.getJikoku(), m_KitenJikoku) <= 0)
 		{
-			//aCrossingCheckSearch‚ª”äŠr‘ÎÛ‚æ‚è‚à‘O•ûE“¯‚É‚ ‚éê‡A‚»‚ÌˆÊ’u‚É‘}“ü‚µ‚Ü‚·
+			//aCrossingCheckSearchãŒæ¯”è¼ƒå¯¾è±¡ã‚ˆã‚Šã‚‚å‰æ–¹ãƒ»åŒæ™‚åˆ»ã«ã‚ã‚‹å ´åˆã€ãã®ä½ç½®ã«æŒ¿å…¥ã—ã¾ã™
 			pListCrossingCheckSearch->insert(itr, aCrossingCheckSearch);
 			bInsert = true;
 			break;
 		}
-		//aCrossingCheckSearch‚ª”äŠr‘ÎÛ‚æ‚è‚àŒã•û‚É‚ ‚éê‡AŸ‚Ì”äŠr‚ÉˆÚ‚è‚Ü‚·
+		//aCrossingCheckSearchãŒæ¯”è¼ƒå¯¾è±¡ã‚ˆã‚Šã‚‚å¾Œæ–¹ã«ã‚ã‚‹å ´åˆã€æ¬¡ã®æ¯”è¼ƒã«ç§»ã‚Šã¾ã™
 	}
 
-	//for‚ğ”²‚¯‚½ê‡‚ÍAList’†‚Ì‚Ç‚ê‚æ‚è‚àŒã‚Ì‚Å‚ ‚é‚Æ‚¢‚¤‚±‚Æ‚È‚Ì‚ÅAList‚ÌÅŒã”ö‚É’Ç‰Á‚µ‚Ä–ß‚é
+	//forã‚’æŠœã‘ãŸå ´åˆã¯ã€Listä¸­ã®ã©ã‚Œã‚ˆã‚Šã‚‚å¾Œã®æ™‚åˆ»ã§ã‚ã‚‹ã¨ã„ã†ã“ã¨ãªã®ã§ã€Listã®æœ€å¾Œå°¾ã«è¿½åŠ ã—ã¦æˆ»ã‚‹
 	if (!bInsert)
 	{
 		pListCrossingCheckSearch->push_back(aCrossingCheckSearch);
 	}
 
-	//ƒpƒ^[ƒ“ƒ_ƒCƒ„ƒvƒŒƒrƒ…[‹@”\‘Î‰Aã‹L‚Ìì‹Æ‚ğAƒpƒ^[ƒ“ƒ_ƒCƒ„‚Ì”ÍˆÍ•ªŒJ‚è•Ô‚·
+	//ãƒ‘ã‚¿ãƒ¼ãƒ³ãƒ€ã‚¤ãƒ¤ãƒ—ãƒ¬ãƒ“ãƒ¥ãƒ¼æ©Ÿèƒ½å¯¾å¿œã€ä¸Šè¨˜ã®ä½œæ¥­ã‚’ã€ãƒ‘ã‚¿ãƒ¼ãƒ³ãƒ€ã‚¤ãƒ¤ã®ç¯„å›²åˆ†ç¹°ã‚Šè¿”ã™
 	if (m_iPatternDiagramPreviewCycleSecond > 0)
 	{
 		for (int iShiftSecond = m_iPatternDiagramPreviewCycleSecond; iShiftSecond <= m_iPatternDiagramPreviewRange; iShiftSecond += m_iPatternDiagramPreviewCycleSecond)
@@ -277,15 +277,15 @@ void CWndDcdGridCrossingCheck::InsertCrossingCheckSearch(
 			{
 				if (aCrossingCheckSearchTemp.aRessyaProperty.getJikoku().compare(itr->aRessyaProperty.getJikoku(), m_KitenJikoku) <= 0)
 				{
-					//aCrossingCheckSearch‚ª”äŠr‘ÎÛ‚æ‚è‚à‘O•ûE“¯‚É‚ ‚éê‡A‚»‚ÌˆÊ’u‚É‘}“ü‚µ‚Ü‚·
+					//aCrossingCheckSearchãŒæ¯”è¼ƒå¯¾è±¡ã‚ˆã‚Šã‚‚å‰æ–¹ãƒ»åŒæ™‚åˆ»ã«ã‚ã‚‹å ´åˆã€ãã®ä½ç½®ã«æŒ¿å…¥ã—ã¾ã™
 					pListCrossingCheckSearch->insert(itr, aCrossingCheckSearchTemp);
 					bInsert = true;
 					break;
 				}
-				//aCrossingCheckSearch‚ª”äŠr‘ÎÛ‚æ‚è‚àŒã•û‚É‚ ‚éê‡AŸ‚Ì”äŠr‚ÉˆÚ‚è‚Ü‚·
+				//aCrossingCheckSearchãŒæ¯”è¼ƒå¯¾è±¡ã‚ˆã‚Šã‚‚å¾Œæ–¹ã«ã‚ã‚‹å ´åˆã€æ¬¡ã®æ¯”è¼ƒã«ç§»ã‚Šã¾ã™
 			}
 
-			//for‚ğ”²‚¯‚½ê‡‚ÍAList’†‚Ì‚Ç‚ê‚æ‚è‚àŒã‚Ì‚Å‚ ‚é‚Æ‚¢‚¤‚±‚Æ‚È‚Ì‚ÅAList‚ÌÅŒã”ö‚É’Ç‰Á‚µ‚Ä–ß‚é
+			//forã‚’æŠœã‘ãŸå ´åˆã¯ã€Listä¸­ã®ã©ã‚Œã‚ˆã‚Šã‚‚å¾Œã®æ™‚åˆ»ã§ã‚ã‚‹ã¨ã„ã†ã“ã¨ãªã®ã§ã€Listã®æœ€å¾Œå°¾ã«è¿½åŠ ã—ã¦æˆ»ã‚‹
 			if (!bInsert)
 			{
 				pListCrossingCheckSearch->push_back(aCrossingCheckSearchTemp);
@@ -302,15 +302,15 @@ void CWndDcdGridCrossingCheck::InsertCrossingCheckSearch(
 			{
 				if (aCrossingCheckSearchTemp.aRessyaProperty.getJikoku().compare(itr->aRessyaProperty.getJikoku(), m_KitenJikoku) <= 0)
 				{
-					//aCrossingCheckSearch‚ª”äŠr‘ÎÛ‚æ‚è‚à‘O•ûE“¯‚É‚ ‚éê‡A‚»‚ÌˆÊ’u‚É‘}“ü‚µ‚Ü‚·
+					//aCrossingCheckSearchãŒæ¯”è¼ƒå¯¾è±¡ã‚ˆã‚Šã‚‚å‰æ–¹ãƒ»åŒæ™‚åˆ»ã«ã‚ã‚‹å ´åˆã€ãã®ä½ç½®ã«æŒ¿å…¥ã—ã¾ã™
 					pListCrossingCheckSearch->insert(itr, aCrossingCheckSearchTemp);
 					bInsert = true;
 					break;
 				}
-				//aCrossingCheckSearch‚ª”äŠr‘ÎÛ‚æ‚è‚àŒã•û‚É‚ ‚éê‡AŸ‚Ì”äŠr‚ÉˆÚ‚è‚Ü‚·
+				//aCrossingCheckSearchãŒæ¯”è¼ƒå¯¾è±¡ã‚ˆã‚Šã‚‚å¾Œæ–¹ã«ã‚ã‚‹å ´åˆã€æ¬¡ã®æ¯”è¼ƒã«ç§»ã‚Šã¾ã™
 			}
 
-			//for‚ğ”²‚¯‚½ê‡‚ÍAList’†‚Ì‚Ç‚ê‚æ‚è‚àŒã‚Ì‚Å‚ ‚é‚Æ‚¢‚¤‚±‚Æ‚È‚Ì‚ÅAList‚ÌÅŒã”ö‚É’Ç‰Á‚µ‚Ä–ß‚é
+			//forã‚’æŠœã‘ãŸå ´åˆã¯ã€Listä¸­ã®ã©ã‚Œã‚ˆã‚Šã‚‚å¾Œã®æ™‚åˆ»ã§ã‚ã‚‹ã¨ã„ã†ã“ã¨ãªã®ã§ã€Listã®æœ€å¾Œå°¾ã«è¿½åŠ ã—ã¦æˆ»ã‚‹
 			if (!bInsert)
 			{
 				pListCrossingCheckSearch->push_back(aCrossingCheckSearchTemp);
@@ -330,14 +330,14 @@ void CWndDcdGridCrossingCheck::SearchBeforeOperationCont(
 	const CdDedJikoku aCdDedJikoku)
 {
 	/**
-		aCdDedJikoku‚É‚Â‚¢‚ÄA
-		pBeforeCont‚Ìæ“ª‚ªAŠJnì‹Æ‚Ìê‡(=‘Œ‹•Ò¬‘Oì‹Æ)‚ÍA‘Œ‹‚ğˆÓ–¡‚µ‚Ü‚·B
-		‚»‚êˆÈŠO‚Ìê‡‚ÍA“–‰w’…‚ğˆÓ–¡‚µ‚Ü‚·B
+		aCdDedJikokuã«ã¤ã„ã¦ã€
+		pBeforeContã®å…ˆé ­ãŒã€é–‹å§‹ä½œæ¥­ã®å ´åˆ(=å¢—çµç·¨æˆå‰ä½œæ¥­)ã¯ã€å¢—çµæ™‚åˆ»ã‚’æ„å‘³ã—ã¾ã™ã€‚
+		ãã‚Œä»¥å¤–ã®å ´åˆã¯ã€å½“é§…ç€æ™‚åˆ»ã‚’æ„å‘³ã—ã¾ã™ã€‚
 	*/
-	//iNextRessyaTrackIndex@Šeì‹ÆŒã‚Ì”Ôü‚Å‚·B“üŠ·ì‹Æ‚É‚Â‚¢‚ÄAiNextRessyaTrackIndex‚Æ“üŠ·Œ³”Ôü‚ª“™‚µ‚¢ê‡‚ÍA“üŠ·ì‹Æ©‘Ì‚ª–³Œø‚Æ‚È‚è‚Ü‚·B
-	//‚Ü‚½A‰w\ŠOE˜HüŠO‚©‚ç“–‰w‚É“’…‚µ‚½‚Æ‚«‚Ì”Ôü‚ÍA‚±‚ê‚É‚È‚è‚Ü‚·B
+	//iNextRessyaTrackIndexã€€å„ä½œæ¥­å¾Œã®ç•ªç·šã§ã™ã€‚å…¥æ›ä½œæ¥­ã«ã¤ã„ã¦ã€iNextRessyaTrackIndexã¨å…¥æ›å…ƒç•ªç·šãŒç­‰ã—ã„å ´åˆã¯ã€å…¥æ›ä½œæ¥­è‡ªä½“ãŒç„¡åŠ¹ã¨ãªã‚Šã¾ã™ã€‚
+	//ã¾ãŸã€é§…æ§‹å¤–ãƒ»è·¯ç·šå¤–ã‹ã‚‰å½“é§…ã«åˆ°ç€ã—ãŸã¨ãã®ç•ªç·šã¯ã€ã“ã‚Œã«ãªã‚Šã¾ã™ã€‚
 	int iNextRessyaTrackIndex = iRessyaTrackIndex;
-	//OperationJikokuTemp ŠJnì‹Æ‚ª˜HüŠOn”­‚©‚ÂA“–‰w’…‚ª‹ó‚Ìê‡‚ÍA‚±‚Ì‚ğ’…‚Æ‚İ‚È‚µ‚Ü‚·B“üŠ·‚â‘Œ‹“™‚Åã‘‚«‚µ‚Ä‚¢‚«‚Ü‚·B
+	//OperationJikokuTemp é–‹å§‹ä½œæ¥­ãŒè·¯ç·šå¤–å§‹ç™ºã‹ã¤ã€å½“é§…ç€æ™‚åˆ»ãŒç©ºã®å ´åˆã¯ã€ã“ã®æ™‚åˆ»ã‚’ç€æ™‚åˆ»ã¨ã¿ãªã—ã¾ã™ã€‚å…¥æ›æ™‚åˆ»ã‚„å¢—çµæ™‚åˆ»ç­‰ã§ä¸Šæ›¸ãã—ã¦ã„ãã¾ã™ã€‚
 	CdDedJikoku OperationJikokuTemp = aCdDedJikoku;
 	for (int idxb = pBeforeCont->size() - 1; idxb >= 0; idxb--)
 	{
@@ -404,8 +404,8 @@ void CWndDcdGridCrossingCheck::SearchBeforeOperationCont(
 		!pBeforeCont->getMuPtr()->get(0)->isFirstOperation())
 	{
 		/**
-			pBeforeCont‚ª‹óA‚à‚µ‚­‚Íæ“ª—v‘f‚ªŠJnì‹Æ‚Å‚Í‚È‚¢ê‡‚ÍA‚±‚ÌpBeforeCont‚Í“r’†‰wEI’…‰w‚Ì‘Oì‹Æ‚È‚Ì‚ÅA
-			‰w\ŠO‚©‚çiNextRessyaTrackIndex‚Ö‚Ì“’…“®ì‚ğInsertCrossingCheckSearch‚µ‚Ü‚·B
+			pBeforeContãŒç©ºã€ã‚‚ã—ãã¯å…ˆé ­è¦ç´ ãŒé–‹å§‹ä½œæ¥­ã§ã¯ãªã„å ´åˆã¯ã€ã“ã®pBeforeContã¯é€”ä¸­é§…ãƒ»çµ‚ç€é§…ã®å‰ä½œæ¥­ãªã®ã§ã€
+			é§…æ§‹å¤–ã‹ã‚‰iNextRessyaTrackIndexã¸ã®åˆ°ç€å‹•ä½œã‚’InsertCrossingCheckSearchã—ã¾ã™ã€‚
 		*/
 
 		CrossingCheckSearch aCrossingCheckSearch;
@@ -439,7 +439,7 @@ void CWndDcdGridCrossingCheck::SearchBeforeOperationCont(
 	else if (pBeforeCont->getMuPtr()->get(0)->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Outer)
 	{
 		/**
-			æ“ª—v‘f‚ª˜HüŠOn”­‚Ìê‡‚ÍA˜HüŠO‚©‚çiNextRessyaTrackIndex‚Ö‚Ì“’…“®ì‚ğInsertCrossingCheckSearch‚µ‚Ü‚·B
+			å…ˆé ­è¦ç´ ãŒè·¯ç·šå¤–å§‹ç™ºã®å ´åˆã¯ã€è·¯ç·šå¤–ã‹ã‚‰iNextRessyaTrackIndexã¸ã®åˆ°ç€å‹•ä½œã‚’InsertCrossingCheckSearchã—ã¾ã™ã€‚
 		*/
 		const CentDedBeforeOperation* pBeforeOperation = pBeforeCont->getMuPtr()->get(0);
 
@@ -478,14 +478,14 @@ void CWndDcdGridCrossingCheck::SearchAfterOperationCont(
 	const CdDedJikoku aCdDedJikoku)
 {
 	/**
-		aCdDedJikoku‚É‚Â‚¢‚ÄA
-		pAfterCont‚Ì––”ö‚ªAI—¹ì‹Æ‚Ìê‡(=‰ğŒ‹•Ò¬Œãì‹Æ)‚ÍA‰ğŒ‹‚ğˆÓ–¡‚µ‚Ü‚·B
-		‚»‚êˆÈŠO‚Ìê‡‚ÍA“–‰w”­‚ğˆÓ–¡‚µ‚Ü‚·B
+		aCdDedJikokuã«ã¤ã„ã¦ã€
+		pAfterContã®æœ«å°¾ãŒã€çµ‚äº†ä½œæ¥­ã®å ´åˆ(=è§£çµç·¨æˆå¾Œä½œæ¥­)ã¯ã€è§£çµæ™‚åˆ»ã‚’æ„å‘³ã—ã¾ã™ã€‚
+		ãã‚Œä»¥å¤–ã®å ´åˆã¯ã€å½“é§…ç™ºæ™‚åˆ»ã‚’æ„å‘³ã—ã¾ã™ã€‚
 	*/
-	//iPrevRessyaTrackIndex@Šeì‹Æ‘O‚Ì”Ôü‚Å‚·B“üŠ·ì‹Æ‚É‚Â‚¢‚ÄAiPrevRessyaTrackIndex‚Æ“üŠ·æ”Ôü‚ª“™‚µ‚¢ê‡‚ÍA“üŠ·ì‹Æ©‘Ì‚ª–³Œø‚Æ‚È‚è‚Ü‚·B
-	//‚Ü‚½A“–‰w‚©‚ç‰w\ŠOE˜HüŠO‚Öo”­‚·‚é‚Æ‚«‚Ì”Ôü‚ÍA‚±‚ê‚É‚È‚è‚Ü‚·B
+	//iPrevRessyaTrackIndexã€€å„ä½œæ¥­å‰ã®ç•ªç·šã§ã™ã€‚å…¥æ›ä½œæ¥­ã«ã¤ã„ã¦ã€iPrevRessyaTrackIndexã¨å…¥æ›å…ˆç•ªç·šãŒç­‰ã—ã„å ´åˆã¯ã€å…¥æ›ä½œæ¥­è‡ªä½“ãŒç„¡åŠ¹ã¨ãªã‚Šã¾ã™ã€‚
+	//ã¾ãŸã€å½“é§…ã‹ã‚‰é§…æ§‹å¤–ãƒ»è·¯ç·šå¤–ã¸å‡ºç™ºã™ã‚‹ã¨ãã®ç•ªç·šã¯ã€ã“ã‚Œã«ãªã‚Šã¾ã™ã€‚
 	int iPrevRessyaTrackIndex = iRessyaTrackIndex;
-	//OperationJikokuTemp I—¹ì‹Æ‚ª˜HüŠOI’…‚©‚ÂA“–‰w”­‚ª‹ó‚Ìê‡‚ÍA‚±‚Ì‚ğ”­‚Æ‚İ‚È‚µ‚Ü‚·B“üŠ·‚â‘Œ‹“™‚Åã‘‚«‚µ‚Ä‚¢‚«‚Ü‚·B
+	//OperationJikokuTemp çµ‚äº†ä½œæ¥­ãŒè·¯ç·šå¤–çµ‚ç€ã‹ã¤ã€å½“é§…ç™ºæ™‚åˆ»ãŒç©ºã®å ´åˆã¯ã€ã“ã®æ™‚åˆ»ã‚’ç™ºæ™‚åˆ»ã¨ã¿ãªã—ã¾ã™ã€‚å…¥æ›æ™‚åˆ»ã‚„å¢—çµæ™‚åˆ»ç­‰ã§ä¸Šæ›¸ãã—ã¦ã„ãã¾ã™ã€‚
 	CdDedJikoku OperationJikokuTemp = aCdDedJikoku;
 	for (int idxa = 0; idxa < pAfterCont->size(); idxa++)
 	{
@@ -552,8 +552,8 @@ void CWndDcdGridCrossingCheck::SearchAfterOperationCont(
 		!pAfterCont->getMuPtr()->get(INT_MAX)->isLastOperation())
 	{
 		/**
-			pAfterCont‚ª‹óA‚à‚µ‚­‚Í––”ö—v‘f‚ªI—¹ì‹Æ‚Å‚Í‚È‚¢ê‡‚ÍA‚±‚ÌpAfterCont‚Ín”­‰wE“r’†‰w‚ÌŒãì‹Æ‚È‚Ì‚ÅA
-			ÅŒã‚ÉAiPrevRessyaTrackIndex‚©‚ç‰w\ŠO‚Ö‚Ìo”­“®ì‚ğInsertCrossingCheckSearch‚µ‚Ü‚·B
+			pAfterContãŒç©ºã€ã‚‚ã—ãã¯æœ«å°¾è¦ç´ ãŒçµ‚äº†ä½œæ¥­ã§ã¯ãªã„å ´åˆã¯ã€ã“ã®pAfterContã¯å§‹ç™ºé§…ãƒ»é€”ä¸­é§…ã®å¾Œä½œæ¥­ãªã®ã§ã€
+			æœ€å¾Œã«ã€iPrevRessyaTrackIndexã‹ã‚‰é§…æ§‹å¤–ã¸ã®å‡ºç™ºå‹•ä½œã‚’InsertCrossingCheckSearchã—ã¾ã™ã€‚
 		*/
 
 		CrossingCheckSearch aCrossingCheckSearch;
@@ -588,7 +588,7 @@ void CWndDcdGridCrossingCheck::SearchAfterOperationCont(
 	else if (pAfterCont->getMuPtr()->get(INT_MAX)->getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Outer)
 	{
 		/**
-			––”ö—v‘f‚ª˜HüŠOI’…‚Ìê‡‚ÍAiPrevRessyaTrackIndex‚©‚ç˜HüŠO‚Ö‚Ìo”­“®ì‚ğInsertCrossingCheckSearch‚µ‚Ü‚·B
+			æœ«å°¾è¦ç´ ãŒè·¯ç·šå¤–çµ‚ç€ã®å ´åˆã¯ã€iPrevRessyaTrackIndexã‹ã‚‰è·¯ç·šå¤–ã¸ã®å‡ºç™ºå‹•ä½œã‚’InsertCrossingCheckSearchã—ã¾ã™ã€‚
 		*/
 		const CentDedAfterOperation* pAfterOperation = pAfterCont->getMuPtr()->get(INT_MAX);
 
@@ -655,7 +655,7 @@ void CWndDcdGridCrossingCheck::MergeCrossingCheckSearchCont(
 }
 	
 	// --------------------------------
-	//@name OnUpdate ‚Ì‰º¿ŠÖ”
+	//@name OnUpdate ã®ä¸‹è«‹é–¢æ•°
 	// --------------------------------
 
 const CdDedJikoku::CConv
@@ -666,20 +666,20 @@ CWndDcdGridCrossingCheck::getCdDedJikokuConv()const
 	//	if (m_bDisplayColonEkiJikoku)
 	//	{
 	//		static CdDedJikoku::CConv aConv(
-	//			false,		//	ƒRƒƒ“—L
-	//						// ‚ª 00 ‚©‚ç 09 ‚Ìê‡A10‚ÌˆÊ‚Ì "0" ‚ğƒXƒy[ƒX‚É‚µ‚Ü‚·B
+	//			false,		//	ã‚³ãƒ­ãƒ³æœ‰
+	//						// æ™‚ãŒ 00 ã‹ã‚‰ 09 ã®å ´åˆã€10ã®ä½ã® "0" ã‚’ã‚¹ãƒšãƒ¼ã‚¹ã«ã—ã¾ã™ã€‚
 	//			CdDedJikoku::CConv::EHour_ZeroToSpace,
-	//			CdDedJikoku::CConv::ESecond_Output 	// •b‚ğ•\¦‚µ‚Ü‚·
+	//			CdDedJikoku::CConv::ESecond_Output 	// ç§’ã‚’è¡¨ç¤ºã—ã¾ã™
 	//		);
 	//		return aConv;
 	//	}
 	//	else
 	//	{
 			static CdDedJikoku::CConv aConv(
-				false,		//	ƒRƒƒ“–³
-							// ‚ª 00 ‚©‚ç 09 ‚Ìê‡A10‚ÌˆÊ‚Ì "0" ‚ğƒXƒy[ƒX‚É‚µ‚Ü‚·B
+				false,		//	ã‚³ãƒ­ãƒ³ç„¡
+							// æ™‚ãŒ 00 ã‹ã‚‰ 09 ã®å ´åˆã€10ã®ä½ã® "0" ã‚’ã‚¹ãƒšãƒ¼ã‚¹ã«ã—ã¾ã™ã€‚
 				CdDedJikoku::CConv::EHour_ZeroToSpace,
-				CdDedJikoku::CConv::ESecond_Output 	// •b‚ğ•\¦‚µ‚Ü‚·
+				CdDedJikoku::CConv::ESecond_Output 	// ç§’ã‚’è¡¨ç¤ºã—ã¾ã™
 			);
 			return aConv;
 	//	}
@@ -689,20 +689,20 @@ CWndDcdGridCrossingCheck::getCdDedJikokuConv()const
 	//	if (m_bDisplayColonEkiJikoku)
 	//	{
 	//		static CdDedJikoku::CConv aConv(
-	//			false,		//	ƒRƒƒ“—L
-	//						// ‚ª 00 ‚©‚ç 09 ‚Ìê‡A10‚ÌˆÊ‚Ì "0" ‚ğƒXƒy[ƒX‚É‚µ‚Ü‚·B
+	//			false,		//	ã‚³ãƒ­ãƒ³æœ‰
+	//						// æ™‚ãŒ 00 ã‹ã‚‰ 09 ã®å ´åˆã€10ã®ä½ã® "0" ã‚’ã‚¹ãƒšãƒ¼ã‚¹ã«ã—ã¾ã™ã€‚
 	//			CdDedJikoku::CConv::EHour_ZeroToSpace,
-	//			CdDedJikoku::CConv::ESecond_NoSecond 	// •b‚ğí‚Éo—Í‚µ‚Ü‚¹‚ñB
+	//			CdDedJikoku::CConv::ESecond_NoSecond 	// ç§’ã‚’å¸¸ã«å‡ºåŠ›ã—ã¾ã›ã‚“ã€‚
 	//		);
 	//		return aConv;
 	//	}
 	//	else
 	//	{
 	//		static CdDedJikoku::CConv aConv(
-	//			true,		//	ƒRƒƒ“–³
-	//						// ‚ª 00 ‚©‚ç 09 ‚Ìê‡A10‚ÌˆÊ‚Ì "0" ‚ğƒXƒy[ƒX‚É‚µ‚Ü‚·B
+	//			true,		//	ã‚³ãƒ­ãƒ³ç„¡
+	//						// æ™‚ãŒ 00 ã‹ã‚‰ 09 ã®å ´åˆã€10ã®ä½ã® "0" ã‚’ã‚¹ãƒšãƒ¼ã‚¹ã«ã—ã¾ã™ã€‚
 	//			CdDedJikoku::CConv::EHour_ZeroToSpace,
-	//			CdDedJikoku::CConv::ESecond_NoSecond 	// •b‚ğí‚Éo—Í‚µ‚Ü‚¹‚ñB
+	//			CdDedJikoku::CConv::ESecond_NoSecond 	// ç§’ã‚’å¸¸ã«å‡ºåŠ›ã—ã¾ã›ã‚“ã€‚
 	//		);
 	//		return aConv;
 	//	}
@@ -746,13 +746,13 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckContent_To_Column(
 		CdCrossingCheckYColSpec(CdCrossingCheckYColSpec::EColumnType::ColumnType_Ressya, iRuleIndex, iRessyaIndex));
 
 	// --------------------------------
-	//	s‚ÌY•ûŒüƒTƒCƒY‚ğİ’è
+	//	è¡Œã®Yæ–¹å‘ã‚µã‚¤ã‚ºã‚’è¨­å®š
 	// --------------------------------
 	{
 		CDcdTargetGetDC	aCDcdTarget( NULL ) ;
 
 		CdDcdSizeXy	sizeRessya ;
-		CDcdTextbox	aCDcdTextbox(_T("‹“s‹") ,
+		CDcdTextbox	aCDcdTextbox(_T("äº¬éƒ½äº¬") ,
 			fontpropDefault , 
 			_T("") , 1 , 2 , 2 ) ;
 		aCDcdTextbox.getItemSize( &aCDcdTarget , &sizeRessya) ;
@@ -766,7 +766,7 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckContent_To_Column(
 
 
 	// --------------------------------
-	//	‘®«‚ğİ’è
+	//	å±æ€§ã‚’è¨­å®š
 	// --------------------------------
 	//const Mu<CentDedEkiCont::CdDedEki>* pCdDedEkiConts[2];
 	//for (int iRessyahoukou = Ressyahoukou_Kudari;
@@ -805,12 +805,12 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckContent_To_Column(
 
 	//const CentDedRessyaCont* pCentDedRessyaCont = getCentDedRessyaCont(
 	//	GetDocument()->getRessyahoukou());
-	//tstring strRessya = _T("‹“s‹");
+	//tstring strRessya = _T("äº¬éƒ½äº¬");
 
 	CdCrossingCheckXColSpecCont aXColSpecCont = createXColSpecCont();
 
 	{
-		//	‘O“®ì‘¤•ûŒüE—ñÔ”Ô†Eí•Ê
+		//	å‰å‹•ä½œå´æ–¹å‘ãƒ»åˆ—è»Šç•ªå·ãƒ»ç¨®åˆ¥
 		int iXColumnNumber1 = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 			CdCrossingCheckXColSpec::EColumnType::ColumnType_BeforeRessyahoukou));
 		int iXColumnNumber2 = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
@@ -844,7 +844,7 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckContent_To_Column(
 			pCentDedRessyasyubetsuCont->getMuPtr()->get(pCentDedRessya->getRessyasyubetsuIndex());
 		strRessyaSyubetsu = pCentDedRessyasyubetsu->getSyubetsumei();
 
-		//	ƒtƒHƒ“ƒg‘®«
+		//	ãƒ•ã‚©ãƒ³ãƒˆå±æ€§
 		CdDrawTextProp	aCdDrawTextProp =
 			pCDcdTextbox1->getCdDrawTextProp();
 		aCdDrawTextProp.setCdFontProp(fontpropDefault);
@@ -859,7 +859,7 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckContent_To_Column(
 		aCdDrawTextProp2.setCdDrawTextFormat(CdDrawTextFormat(CdDrawTextFormat::H_CENTER));
 		pCDcdTextbox2->setCdDrawTextProp(aCdDrawTextProp2);
 
-		//í•Ê‚ÌƒtƒHƒ“ƒg‘®«
+		//ç¨®åˆ¥ã®ãƒ•ã‚©ãƒ³ãƒˆå±æ€§
 		CdDrawTextProp	aCdDrawTextProp3 =
 			pCDcdTextbox3->getCdDrawTextProp();
 		aCdDrawTextProp3.setCdFontProp(fontpropDefault);
@@ -878,13 +878,13 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckContent_To_Column(
 		pCDcdTextbox2->setText(strRessyabangou);
 		pCDcdTextbox3->setText(strRessyaSyubetsu);
 
-		//	ƒZƒ‹‚ğ–³Œø‰»
+		//	ã‚»ãƒ«ã‚’ç„¡åŠ¹åŒ–
 		InvalidateCell(iXColumnNumber1, iYColumnNumber);
 		InvalidateCell(iXColumnNumber2, iYColumnNumber);
 		InvalidateCell(iXColumnNumber3, iYColumnNumber);
 	}
 	{
-		//		(‘O“®ì‘¤)
+		//		æ™‚åˆ»(å‰å‹•ä½œå´)
 		int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 			CdCrossingCheckXColSpec::EColumnType::ColumnType_BeforeJikoku));
 		Ou<CDcdTextbox> pCDcdTextbox =
@@ -893,7 +893,7 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckContent_To_Column(
 		pCDcdTextbox->
 			setText(getCdDedJikokuConv().encode(aCrossingCheckContent.BeforeRessyaProperty.getJikoku()));
 
-		//	ƒtƒHƒ“ƒg‘®«
+		//	ãƒ•ã‚©ãƒ³ãƒˆå±æ€§
 		CdDrawTextProp	aCdDrawTextProp =
 			pCDcdTextbox->getCdDrawTextProp();
 		aCdDrawTextProp.setCdFontProp(fontpropDefault);
@@ -902,11 +902,11 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckContent_To_Column(
 		pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 
 
-		//	ƒZƒ‹‚ğ–³Œø‰»
+		//	ã‚»ãƒ«ã‚’ç„¡åŠ¹åŒ–
 		InvalidateCell(iXColumnNumber, iYColumnNumber);
 	}
 	{
-		//	ˆÚ“®Œ³”ÔüEËEˆÚ“®æ”Ôü
+		//	ç§»å‹•å…ƒç•ªç·šãƒ»â‡’ãƒ»ç§»å‹•å…ˆç•ªç·š
 		int iXColumnNumber1 = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 			CdCrossingCheckXColSpec::EColumnType::ColumnType_BeforeFrom));
 		int iXColumnNumber2 = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
@@ -924,12 +924,12 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckContent_To_Column(
 			setText(m_strTrackNameCont[m_MapTrackContentToList[(int)aCrossingCheckContent.BeforeFromTrackContent.eTrackType]
 				[aCrossingCheckContent.BeforeFromTrackContent.iTrackIndex]]);
 		pCDcdTextbox2->
-			setText(_T("¨"));
+			setText(_T("â†’"));
 		pCDcdTextbox3->
 			setText(m_strTrackNameCont[m_MapTrackContentToList[(int)aCrossingCheckContent.BeforeToTrackContent.eTrackType]
 				[aCrossingCheckContent.BeforeToTrackContent.iTrackIndex]]);
 
-		//	ƒtƒHƒ“ƒg‘®«
+		//	ãƒ•ã‚©ãƒ³ãƒˆå±æ€§
 		CdDrawTextProp	aCdDrawTextProp1 =
 			pCDcdTextbox1->getCdDrawTextProp();
 		aCdDrawTextProp1.setCdFontProp(fontpropDefault);
@@ -952,13 +952,13 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckContent_To_Column(
 		pCDcdTextbox3->setCdDrawTextProp(aCdDrawTextProp3);
 
 
-		//	ƒZƒ‹‚ğ–³Œø‰»
+		//	ã‚»ãƒ«ã‚’ç„¡åŠ¹åŒ–
 		InvalidateCell(iXColumnNumber1, iYColumnNumber);
 		InvalidateCell(iXColumnNumber2, iYColumnNumber);
 		InvalidateCell(iXColumnNumber3, iYColumnNumber);
 	}
 	{
-		//	Šu
+		//	æ™‚éš”
 		int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 			CdCrossingCheckXColSpec::EColumnType::ColumnType_Headway));
 		Ou<CDcdTextbox> pCDcdTextbox =
@@ -967,7 +967,7 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckContent_To_Column(
 		pCDcdTextbox->
 			setText(to_tstring(aCrossingCheckContent.iHeadway));
 
-		//	ƒtƒHƒ“ƒg‘®«
+		//	ãƒ•ã‚©ãƒ³ãƒˆå±æ€§
 		CdDrawTextProp	aCdDrawTextProp =
 			pCDcdTextbox->getCdDrawTextProp();
 		aCdDrawTextProp.setCdFontProp(fontpropDefault);
@@ -976,11 +976,11 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckContent_To_Column(
 		pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 
 
-		//	ƒZƒ‹‚ğ–³Œø‰»
+		//	ã‚»ãƒ«ã‚’ç„¡åŠ¹åŒ–
 		InvalidateCell(iXColumnNumber, iYColumnNumber);
 	}
 	{
-		//	Œã“®ì‘¤•ûŒüE—ñÔ”Ô†Eí•Ê
+		//	å¾Œå‹•ä½œå´æ–¹å‘ãƒ»åˆ—è»Šç•ªå·ãƒ»ç¨®åˆ¥
 		int iXColumnNumber1 = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 			CdCrossingCheckXColSpec::EColumnType::ColumnType_AfterRessyahoukou));
 		int iXColumnNumber2 = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
@@ -1014,7 +1014,7 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckContent_To_Column(
 			pCentDedRessyasyubetsuCont->getMuPtr()->get(pCentDedRessya->getRessyasyubetsuIndex());
 		strRessyaSyubetsu = pCentDedRessyasyubetsu->getSyubetsumei();
 
-		//	ƒtƒHƒ“ƒg‘®«
+		//	ãƒ•ã‚©ãƒ³ãƒˆå±æ€§
 		CdDrawTextProp	aCdDrawTextProp =
 			pCDcdTextbox1->getCdDrawTextProp();
 		aCdDrawTextProp.setCdFontProp(fontpropDefault);
@@ -1029,7 +1029,7 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckContent_To_Column(
 		aCdDrawTextProp2.setCdDrawTextFormat(CdDrawTextFormat(CdDrawTextFormat::H_CENTER));
 		pCDcdTextbox2->setCdDrawTextProp(aCdDrawTextProp2);
 
-		//í•Ê‚ÌƒtƒHƒ“ƒg‘®«
+		//ç¨®åˆ¥ã®ãƒ•ã‚©ãƒ³ãƒˆå±æ€§
 		CdDrawTextProp	aCdDrawTextProp3 =
 			pCDcdTextbox3->getCdDrawTextProp();
 		aCdDrawTextProp3.setCdFontProp(fontpropDefault);
@@ -1048,13 +1048,13 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckContent_To_Column(
 		pCDcdTextbox2->setText(strRessyabangou);
 		pCDcdTextbox3->setText(strRessyaSyubetsu);
 
-		//	ƒZƒ‹‚ğ–³Œø‰»
+		//	ã‚»ãƒ«ã‚’ç„¡åŠ¹åŒ–
 		InvalidateCell(iXColumnNumber1, iYColumnNumber);
 		InvalidateCell(iXColumnNumber2, iYColumnNumber);
 		InvalidateCell(iXColumnNumber3, iYColumnNumber);
 	}
 	{
-		//		(‘O“®ì‘¤)
+		//		æ™‚åˆ»(å‰å‹•ä½œå´)
 		int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 			CdCrossingCheckXColSpec::EColumnType::ColumnType_AfterJikoku));
 		Ou<CDcdTextbox> pCDcdTextbox =
@@ -1063,7 +1063,7 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckContent_To_Column(
 		pCDcdTextbox->
 			setText(getCdDedJikokuConv().encode(aCrossingCheckContent.AfterRessyaProperty.getJikoku()));
 
-		//	ƒtƒHƒ“ƒg‘®«
+		//	ãƒ•ã‚©ãƒ³ãƒˆå±æ€§
 		CdDrawTextProp	aCdDrawTextProp =
 			pCDcdTextbox->getCdDrawTextProp();
 		aCdDrawTextProp.setCdFontProp(fontpropDefault);
@@ -1072,11 +1072,11 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckContent_To_Column(
 		pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 
 
-		//	ƒZƒ‹‚ğ–³Œø‰»
+		//	ã‚»ãƒ«ã‚’ç„¡åŠ¹åŒ–
 		InvalidateCell(iXColumnNumber, iYColumnNumber);
 	}
 	{
-		//	ˆÚ“®Œ³”ÔüEËEˆÚ“®æ”Ôü
+		//	ç§»å‹•å…ƒç•ªç·šãƒ»â‡’ãƒ»ç§»å‹•å…ˆç•ªç·š
 		int iXColumnNumber1 = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 			CdCrossingCheckXColSpec::EColumnType::ColumnType_AfterFrom));
 		int iXColumnNumber2 = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
@@ -1094,12 +1094,12 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckContent_To_Column(
 			setText(m_strTrackNameCont[m_MapTrackContentToList[(int)aCrossingCheckContent.AfterFromTrackContent.eTrackType]
 				[aCrossingCheckContent.AfterFromTrackContent.iTrackIndex]]);
 		pCDcdTextbox2->
-			setText(_T("¨"));
+			setText(_T("â†’"));
 		pCDcdTextbox3->
 			setText(m_strTrackNameCont[m_MapTrackContentToList[(int)aCrossingCheckContent.AfterToTrackContent.eTrackType]
 				[aCrossingCheckContent.AfterToTrackContent.iTrackIndex]]);
 
-		//	ƒtƒHƒ“ƒg‘®«
+		//	ãƒ•ã‚©ãƒ³ãƒˆå±æ€§
 		CdDrawTextProp	aCdDrawTextProp1 =
 			pCDcdTextbox1->getCdDrawTextProp();
 		aCdDrawTextProp1.setCdFontProp(fontpropDefault);
@@ -1122,7 +1122,7 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckContent_To_Column(
 		pCDcdTextbox3->setCdDrawTextProp(aCdDrawTextProp3);
 
 
-		//	ƒZƒ‹‚ğ–³Œø‰»
+		//	ã‚»ãƒ«ã‚’ç„¡åŠ¹åŒ–
 		InvalidateCell(iXColumnNumber1, iYColumnNumber);
 		InvalidateCell(iXColumnNumber2, iYColumnNumber);
 		InvalidateCell(iXColumnNumber3, iYColumnNumber);
@@ -1141,13 +1141,13 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckRule_To_Column(
 		CdCrossingCheckYColSpec(CdCrossingCheckYColSpec::EColumnType::ColumnType_Caption, iRuleIndex));
 
 	// --------------------------------
-	//	s‚ÌY•ûŒüƒTƒCƒY‚ğİ’è
+	//	è¡Œã®Yæ–¹å‘ã‚µã‚¤ã‚ºã‚’è¨­å®š
 	// --------------------------------
 	{
 		CDcdTargetGetDC	aCDcdTarget(NULL);
 
 		CdDcdSizeXy	sizeRessya;
-		CDcdTextbox	aCDcdTextbox(_T("‹“s‹"),
+		CDcdTextbox	aCDcdTextbox(_T("äº¬éƒ½äº¬"),
 			fontpropDefault,
 			_T(""), 1, 2, 2);
 		aCDcdTextbox.getItemSize(&aCDcdTarget, &sizeRessya);
@@ -1161,12 +1161,12 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckRule_To_Column(
 
 
 	// --------------------------------
-	//	‘®«‚ğİ’è
+	//	å±æ€§ã‚’è¨­å®š
 	// --------------------------------
 	CdCrossingCheckXColSpecCont aXColSpecCont = createXColSpecCont();
 
 	{
-		//	‘O“®ì‘¤•ûŒüE—ñÔ”Ô†Eí•Ê
+		//	å‰å‹•ä½œå´æ–¹å‘ãƒ»åˆ—è»Šç•ªå·ãƒ»ç¨®åˆ¥
 		int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 			CdCrossingCheckXColSpec::EColumnType::ColumnType_BeforeRessyahoukou));
 		Ou<CDcdTextbox> pCDcdTextbox =
@@ -1175,7 +1175,7 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckRule_To_Column(
 		tstring strCaption;
 		if (!aCrossingCheckRule.bEnable)
 		{
-			strCaption += _T("[–³Œø] ");
+			strCaption += _T("[ç„¡åŠ¹] ");
 
 		}
 		strCaption += _T("[");
@@ -1187,42 +1187,42 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckRule_To_Column(
 		strCaption += _T(" (");
 		if (aCrossingCheckRule.bBeforeIsArrival)
 		{
-			strCaption += _T("“’…E");
+			strCaption += _T("åˆ°ç€æ™‚åˆ»ãƒ»");
 		}
 		else
 		{
-			strCaption += _T("o”­E");
+			strCaption += _T("å‡ºç™ºæ™‚åˆ»ãƒ»");
 		}
 		if (aCrossingCheckRule.bBeforeIsTsuuka)
 		{
-			strCaption += _T("’Ê‰ß¨");
+			strCaption += _T("é€šéâ†’");
 		}
 		else
 		{
-			strCaption += _T("’âÔ¨");
+			strCaption += _T("åœè»Šâ†’");
 		}
 		if (aCrossingCheckRule.bAfterIsArrival)
 		{
-			strCaption += _T("“’…E");
+			strCaption += _T("åˆ°ç€æ™‚åˆ»ãƒ»");
 		}
 		else
 		{
-			strCaption += _T("o”­E");
+			strCaption += _T("å‡ºç™ºæ™‚åˆ»ãƒ»");
 		}
 		if (aCrossingCheckRule.bAfterIsTsuuka)
 		{
-			strCaption += _T("’Ê‰ß ");
+			strCaption += _T("é€šé ");
 		}
 		else
 		{
-			strCaption += _T("’âÔ ");
+			strCaption += _T("åœè»Š ");
 		}
 		strCaption += to_tstring(aCrossingCheckRule.iHeadwaySecondMinimum);
-		strCaption += _T("`");
+		strCaption += _T("ã€œ");
 		strCaption += to_tstring(aCrossingCheckRule.iHeadwaySecond);
-		strCaption += _T("•b)");
+		strCaption += _T("ç§’)");
 
-		//	ƒtƒHƒ“ƒg‘®«
+		//	ãƒ•ã‚©ãƒ³ãƒˆå±æ€§
 		CdDrawTextProp	aCdDrawTextProp =
 			pCDcdTextbox->getCdDrawTextProp();
 		aCdDrawTextProp.setCdFontProp(fontpropDefault);
@@ -1234,7 +1234,7 @@ void CWndDcdGridCrossingCheck::OnUpdate_setCrossingCheckRule_To_Column(
 
 		getCXDcdGrid()->getCell(iXColumnNumber, iYColumnNumber)->setAttachCellCount(aXColSpecCont.size(), 1);
 
-		//	ƒZƒ‹‚ğ–³Œø‰»
+		//	ã‚»ãƒ«ã‚’ç„¡åŠ¹åŒ–
 		InvalidateCell(iXColumnNumber, iYColumnNumber);
 	}
 }
@@ -1244,8 +1244,8 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 	CWaitCursor	aCWaitCursor ;	
 	
 	{
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒgÀs‚É‚æ‚éƒZƒ‹ˆÚ“®‚ÅƒZƒ‹‘I‘ğ‚É‚È‚ç‚È‚¢‚æ‚¤‚ÉA
-		//	ƒZƒ‹‘I‘ğ‚ğ‰ğœ‚µAƒZƒ‹‘I‘ğ‹@”\‚àˆê“I‚É’†~‚µ‚Ü‚·B
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆå®Ÿè¡Œã«ã‚ˆã‚‹ã‚»ãƒ«ç§»å‹•ã§ã‚»ãƒ«é¸æŠã«ãªã‚‰ãªã„ã‚ˆã†ã«ã€
+		//	ã‚»ãƒ«é¸æŠã‚’è§£é™¤ã—ã€ã‚»ãƒ«é¸æŠæ©Ÿèƒ½ã‚‚ä¸€æ™‚çš„ã«ä¸­æ­¢ã—ã¾ã™ã€‚
 		clearSelect();
 		CPropStack aPropStack(this);
 		aPropStack
@@ -1253,7 +1253,7 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 			.CRandomSelect_setIsEnable(false);
 
 		// --------------------------------		
-		//	‘S—v‘f‚ğXV
+		//	å…¨è¦ç´ ã‚’æ›´æ–°
 		// --------------------------------
 		m_KitenJikoku = getCDiagramEditDoc()->
 			getCDedRosenFileData()->getCentDedRosen()->getKitenJikoku();
@@ -1264,7 +1264,7 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 		const CentDedEki* pCentDedEki = pCentDedEkiCont->getMuPtr()->get(iEkiIndex);
 
 		/**
-			m_MapTrackContentToList,m_MapListToTrackContent‚ğ‰Šú‰»
+			m_MapTrackContentToList,m_MapListToTrackContentã‚’åˆæœŸåŒ–
 		*/
 
 		m_MapTrackContentToList.clear();
@@ -1289,7 +1289,7 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 		pCentDedEkiCont->getEkiIndexBrunchLoop(iEkiIndex, iEkiIndexBranchLoop);
 		sort(iEkiIndexBranchLoop.begin(), iEkiIndexBranchLoop.end());
 
-		//MapTrackContentToList‚Ì“àA“–‰w‚ÆŠÖŒW‚È‚¢‰w‚Ì•”•ª‚ğ–„‚ß‚é‚½‚ß‚É—p‚¢‚Ü‚·B
+		//MapTrackContentToListã®å†…ã€å½“é§…ã¨é–¢ä¿‚ãªã„é§…ã®éƒ¨åˆ†ã‚’åŸ‹ã‚ã‚‹ãŸã‚ã«ç”¨ã„ã¾ã™ã€‚
 		//int iPrevPushBack = 0;
 		vector<int> MapTrackContentToList1;
 		vector<int> MapTrackContentToList2;
@@ -1304,9 +1304,9 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 				m_MapListToTrackContent[iListIndex] = TrackContent(ETrackType::TrackType_Origin, iEkiIndexBranchLoop[idx]);
 
 				/**
-					ˆÚ“®Œ³Eæ”Ôü—“‚É•\¦‚·‚é‚½‚ß‚Ì•¶š—ñ‚ğ‹‚ß‚éB
-					``•û–Ê(‹N“_‘¤)‚ÌA``‚É“ü‚é‰w‚ÍA‚±‚Ì‰w‚©‚ç‘k‚Á‚Äˆê”Ô‹ß‚¢å—v‰w‚ğ—p‚¢‚Ü‚·B‚½‚¾‚µAiEkiIndexBranchLoop[idx - 1]‚æ‚è‚àŒã‚ë(ŠÜ‚Ş)‚Íœ‚«‚Ü‚·
-					å—v‰w‚ªŒ©‚Â‚©‚ç‚È‚¢ê‡‚ÍA’¼‘O‚Ì‰w‚ğ—p‚¢‚Ü‚·
+					ç§»å‹•å…ƒãƒ»å…ˆç•ªç·šæ¬„ã«è¡¨ç¤ºã™ã‚‹ãŸã‚ã®æ–‡å­—åˆ—ã‚’æ±‚ã‚ã‚‹ã€‚
+					ã€œã€œæ–¹é¢(èµ·ç‚¹å´)ã®ã€ã€œã€œã«å…¥ã‚‹é§…ã¯ã€ã“ã®é§…ã‹ã‚‰é¡ã£ã¦ä¸€ç•ªè¿‘ã„ä¸»è¦é§…ã‚’ç”¨ã„ã¾ã™ã€‚ãŸã ã—ã€iEkiIndexBranchLoop[idx - 1]ã‚ˆã‚Šã‚‚å¾Œã‚(å«ã‚€)ã¯é™¤ãã¾ã™
+					ä¸»è¦é§…ãŒè¦‹ã¤ã‹ã‚‰ãªã„å ´åˆã¯ã€ç›´å‰ã®é§…ã‚’ç”¨ã„ã¾ã™
 				*/
 				int iEkiIndexLoopPrev = -1;
 				if (idx > 0)
@@ -1328,7 +1328,7 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 					const CentDedEki* pCentDedEkiPrev = pCentDedEkiCont->getMuPtr()->get(iEkiIndexBranchLoop[idx] - 1);
 					strTemp = pCentDedEkiPrev->getEkimei();
 				}
-				strTemp += _T("•û–Ê(‹N)");
+				strTemp += _T("æ–¹é¢(èµ·)");
 				m_strTrackNameCont.push_back(strTemp);
 				iListIndex++;
 			}
@@ -1340,9 +1340,9 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 				m_MapListToTrackContent[iListIndex] = TrackContent(ETrackType::TrackType_Terminal, iEkiIndexBranchLoop[idx]);
 
 				/**
-					ˆÚ“®Œ³Eæ”Ôü—“‚É•\¦‚·‚é‚½‚ß‚Ì•¶š—ñ‚ğ‹‚ß‚éB
-					``•û–Ê(‹N“_‘¤)‚ÌA``‚É“ü‚é‰w‚ÍA‚±‚Ì‰w‚©‚ç‘k‚Á‚Äˆê”Ô‹ß‚¢å—v‰w‚ğ—p‚¢‚Ü‚·B‚½‚¾‚µAiEkiIndexBranchLoop[idx - 1]‚æ‚è‚àŒã‚ë(ŠÜ‚Ş)‚Íœ‚«‚Ü‚·
-					å—v‰w‚ªŒ©‚Â‚©‚ç‚È‚¢ê‡‚ÍA’¼‘O‚Ì‰w‚ğ—p‚¢‚Ü‚·
+					ç§»å‹•å…ƒãƒ»å…ˆç•ªç·šæ¬„ã«è¡¨ç¤ºã™ã‚‹ãŸã‚ã®æ–‡å­—åˆ—ã‚’æ±‚ã‚ã‚‹ã€‚
+					ã€œã€œæ–¹é¢(èµ·ç‚¹å´)ã®ã€ã€œã€œã«å…¥ã‚‹é§…ã¯ã€ã“ã®é§…ã‹ã‚‰é¡ã£ã¦ä¸€ç•ªè¿‘ã„ä¸»è¦é§…ã‚’ç”¨ã„ã¾ã™ã€‚ãŸã ã—ã€iEkiIndexBranchLoop[idx - 1]ã‚ˆã‚Šã‚‚å¾Œã‚(å«ã‚€)ã¯é™¤ãã¾ã™
+					ä¸»è¦é§…ãŒè¦‹ã¤ã‹ã‚‰ãªã„å ´åˆã¯ã€ç›´å‰ã®é§…ã‚’ç”¨ã„ã¾ã™
 				*/
 				int iEkiIndexLoopNext = pCentDedEkiCont->size();
 				if (idx < (int)iEkiIndexBranchLoop.size() - 1)
@@ -1364,7 +1364,7 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 					const CentDedEki* pCentDedEkiNext = pCentDedEkiCont->getMuPtr()->get(iEkiIndexBranchLoop[idx] + 1);
 					strTemp = pCentDedEkiNext->getEkimei();
 				}
-				strTemp += _T("•û–Ê(I)");
+				strTemp += _T("æ–¹é¢(çµ‚)");
 				m_strTrackNameCont.push_back(strTemp);
 				iListIndex++;
 
@@ -1373,7 +1373,7 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 		m_MapTrackContentToList.push_back(MapTrackContentToList1);
 		m_MapTrackContentToList.push_back(MapTrackContentToList2);
 
-		//˜HüŠOI’…‰w
+		//è·¯ç·šå¤–çµ‚ç€é§…
 		const vector<OuterTerminal> OuterTerminalCont = pCentDedEki->getOuterTerminalEkimeiCont();
 		vector<int> MapTrackContentToList3;
 		for (int iOuterTerminalIndex = 0; iOuterTerminalIndex < (int)OuterTerminalCont.size(); iOuterTerminalIndex++)
@@ -1381,7 +1381,7 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 			MapTrackContentToList3.push_back(iListIndex);
 			m_MapListToTrackContent[iListIndex] = TrackContent(ETrackType::TrackType_Outer, iOuterTerminalIndex);
 			tstring strTemp = OuterTerminalCont[iOuterTerminalIndex].OuterTerminalEkimei;
-			strTemp += _T("•û–Ê(ŠO)");
+			strTemp += _T("æ–¹é¢(å¤–)");
 			m_strTrackNameCont.push_back(strTemp);
 			iListIndex++;
 		}
@@ -1397,8 +1397,8 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 			m_CrossingCheckSearchContTsuuka[idx].assign(iListIndex, list<CrossingCheckSearch>());
 		}
 
-		//ƒpƒ^[ƒ“ƒ_ƒCƒ„ƒvƒŒƒrƒ…[‹@”\‘Î‰
-		//—LŒø‚Èê‡‚ÍAm_iPatternDiagramPreviewCycleSecond‚É•b”‚ğ‘ã“ü‚µ‚Ä‚¨‚­
+		//ãƒ‘ã‚¿ãƒ¼ãƒ³ãƒ€ã‚¤ãƒ¤ãƒ—ãƒ¬ãƒ“ãƒ¥ãƒ¼æ©Ÿèƒ½å¯¾å¿œ
+		//æœ‰åŠ¹ãªå ´åˆã¯ã€m_iPatternDiagramPreviewCycleSecondã«ç§’æ•°ã‚’ä»£å…¥ã—ã¦ãŠã
 		if (getCentDedDia()->getPatternDiagramPreviewEnable())
 		{
 			m_iPatternDiagramPreviewCycleSecond = getCentDedDia()->getPatternDiagramPreviewCycleSecond();
@@ -1453,8 +1453,8 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 					if (iSearchEkiOrder == iValidSihatsuEkiOrder)
 					{
 						/**
-							n”­‰w
-							‚Ü‚¸‚ÍA˜HüŠOn”­+’Ê‰ß(“–‰w’…‚È‚µ)‚ğ‹æ•Ê‚µ‚Ü‚·B
+							å§‹ç™ºé§…
+							ã¾ãšã¯ã€è·¯ç·šå¤–å§‹ç™º+é€šé(å½“é§…ç€æ™‚åˆ»ãªã—)ã‚’åŒºåˆ¥ã—ã¾ã™ã€‚
 						*/
 						const CentDedEkiJikoku* pEkiJikoku =
 							pCentDedRessya->getCentDedEkiJikokuCont()->getMuPtr()->get(iSearchEkiOrder);
@@ -1487,16 +1487,16 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 						else
 						{
 							/**
-								æ‚ÉŒãì‹Æ‚©‚çs‚¢‚Ü‚·B‚±‚ê‚ÍA˜HüŠOn”­‚©‚Â“–‰w’…‚ª‚È‚¢ê‡‚É‘ã—p‚·‚é‚ğæ“¾‚·‚é•K—v‚ª‚ ‚é‚©‚ç‚Å‚·B
-								Œãì‹Æ‚Í‘O•û‚©‚çŒŸ¸‚·‚é‚Ì‚ÅAÅ‰‚ÉŒ©‚Â‚©‚Á‚½‚Ì‚İæ“¾‚µ‚Ü‚·BŒãì‹Æ’†‚É‚ª‚È‚¢ê‡‚ÍA“–‰w”­‚ğæ“¾‚µ‚Ü‚·B
-								‚¢‚¸‚ê‚Ìê‡‚àA‘Oì‹Æ‚É‚ª‚ ‚ê‚Î‚»‚ê‚Åã‘‚«‚µ‚Ä‚¢‚«‚Ü‚·B
+								å…ˆã«å¾Œä½œæ¥­ã‹ã‚‰è¡Œã„ã¾ã™ã€‚ã“ã‚Œã¯ã€è·¯ç·šå¤–å§‹ç™ºã‹ã¤å½“é§…ç€æ™‚åˆ»ãŒãªã„å ´åˆã«ä»£ç”¨ã™ã‚‹æ™‚åˆ»ã‚’å–å¾—ã™ã‚‹å¿…è¦ãŒã‚ã‚‹ã‹ã‚‰ã§ã™ã€‚
+								å¾Œä½œæ¥­ã¯å‰æ–¹ã‹ã‚‰æ¤œæŸ»ã™ã‚‹ã®ã§ã€æœ€åˆã«è¦‹ã¤ã‹ã£ãŸæ™‚åˆ»ã®ã¿å–å¾—ã—ã¾ã™ã€‚å¾Œä½œæ¥­ä¸­ã«æ™‚åˆ»ãŒãªã„å ´åˆã¯ã€å½“é§…ç™ºæ™‚åˆ»ã‚’å–å¾—ã—ã¾ã™ã€‚
+								ã„ãšã‚Œã®å ´åˆã‚‚ã€å‰ä½œæ¥­ã«æ™‚åˆ»ãŒã‚ã‚Œã°ãã‚Œã§ä¸Šæ›¸ãã—ã¦ã„ãã¾ã™ã€‚
 							*/
 							const CentDedAfterOperationCont* pAfterCont = pEkiJikoku->getCentDedAfterOperationCont();
-							//iPrevRessyaTrackIndex@Šeì‹Æ‘O‚Ì”Ôü‚Å‚·B“üŠ·ì‹Æ‚É‚Â‚¢‚ÄAiPrevRessyaTrackIndex‚Æ“üŠ·æ”Ôü‚ª“™‚µ‚¢ê‡‚ÍA“üŠ·ì‹Æ©‘Ì‚ª–³Œø‚Æ‚È‚è‚Ü‚·B
-							//‚Ü‚½A“–‰w‚©‚ç‰w\ŠOE˜HüŠO‚Öo”­‚·‚é‚Æ‚«‚Ì”Ôü‚ÍA‚±‚ê‚É‚È‚è‚Ü‚·B
+							//iPrevRessyaTrackIndexã€€å„ä½œæ¥­å‰ã®ç•ªç·šã§ã™ã€‚å…¥æ›ä½œæ¥­ã«ã¤ã„ã¦ã€iPrevRessyaTrackIndexã¨å…¥æ›å…ˆç•ªç·šãŒç­‰ã—ã„å ´åˆã¯ã€å…¥æ›ä½œæ¥­è‡ªä½“ãŒç„¡åŠ¹ã¨ãªã‚Šã¾ã™ã€‚
+							//ã¾ãŸã€å½“é§…ã‹ã‚‰é§…æ§‹å¤–ãƒ»è·¯ç·šå¤–ã¸å‡ºç™ºã™ã‚‹ã¨ãã®ç•ªç·šã¯ã€ã“ã‚Œã«ãªã‚Šã¾ã™ã€‚
 							int iPrevRessyaTrackIndex = pEkiJikoku->getRessyaTrackIndex();
 
-							//OperationJikokuTemp ŠJnì‹Æ‚ª˜HüŠOn”­‚©‚ÂA“–‰w’…‚ª‹ó‚Ìê‡‚ÍA‚±‚Ì‚ğ’…‚Æ‚İ‚È‚µ‚Ü‚·B“üŠ·‚â‘Œ‹“™‚Åã‘‚«‚µ‚Ä‚¢‚«‚Ü‚·B
+							//OperationJikokuTemp é–‹å§‹ä½œæ¥­ãŒè·¯ç·šå¤–å§‹ç™ºã‹ã¤ã€å½“é§…ç€æ™‚åˆ»ãŒç©ºã®å ´åˆã¯ã€ã“ã®æ™‚åˆ»ã‚’ç€æ™‚åˆ»ã¨ã¿ãªã—ã¾ã™ã€‚å…¥æ›æ™‚åˆ»ã‚„å¢—çµæ™‚åˆ»ç­‰ã§ä¸Šæ›¸ãã—ã¦ã„ãã¾ã™ã€‚
 							CdDedJikoku OperationJikokuTemp;
 							for (int idxa = 0; idxa < pAfterCont->size(); idxa++)
 							{
@@ -1569,7 +1569,7 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 							}
 
 							/**
-								iPrevRessyaTrackIndex‚©‚ç‰w\ŠO‚Ö‚Ìo”­“®ì‚ğInsertCrossingCheckSearch‚µ‚Ü‚·B
+								iPrevRessyaTrackIndexã‹ã‚‰é§…æ§‹å¤–ã¸ã®å‡ºç™ºå‹•ä½œã‚’InsertCrossingCheckSearchã—ã¾ã™ã€‚
 							*/
 
 							CrossingCheckSearch aCrossingCheckSearch;
@@ -1607,8 +1607,8 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 							}
 
 
-							//iNextRessyaTrackIndex@Šeì‹ÆŒã‚Ì”Ôü‚Å‚·B“üŠ·ì‹Æ‚É‚Â‚¢‚ÄAiNextRessyaTrackIndex‚Æ“üŠ·Œ³”Ôü‚ª“™‚µ‚¢ê‡‚ÍA“üŠ·ì‹Æ©‘Ì‚ª–³Œø‚Æ‚È‚è‚Ü‚·B
-							//‚Ü‚½A‰w\ŠOE˜HüŠO‚©‚ç“–‰w‚É“’…‚µ‚½‚Æ‚«‚Ì”Ôü‚ÍA‚±‚ê‚É‚È‚è‚Ü‚·B
+							//iNextRessyaTrackIndexã€€å„ä½œæ¥­å¾Œã®ç•ªç·šã§ã™ã€‚å…¥æ›ä½œæ¥­ã«ã¤ã„ã¦ã€iNextRessyaTrackIndexã¨å…¥æ›å…ƒç•ªç·šãŒç­‰ã—ã„å ´åˆã¯ã€å…¥æ›ä½œæ¥­è‡ªä½“ãŒç„¡åŠ¹ã¨ãªã‚Šã¾ã™ã€‚
+							//ã¾ãŸã€é§…æ§‹å¤–ãƒ»è·¯ç·šå¤–ã‹ã‚‰å½“é§…ã«åˆ°ç€ã—ãŸã¨ãã®ç•ªç·šã¯ã€ã“ã‚Œã«ãªã‚Šã¾ã™ã€‚
 							int iNextRessyaTrackIndex = pEkiJikoku->getRessyaTrackIndex();
 
 							for (int idxb = pBeforeCont->size() - 1; idxb > 0; idxb--)
@@ -1674,7 +1674,7 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 							if (pBeforeCont->getMuPtr()->get(0)->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Outer)
 							{
 								/**
-									æ“ª—v‘f‚ª˜HüŠOn”­‚Ìê‡‚ÍA˜HüŠO‚©‚çiNextRessyaTrackIndex‚Ö‚Ì“’…“®ì‚ğInsertCrossingCheckSearch‚µ‚Ü‚·B
+									å…ˆé ­è¦ç´ ãŒè·¯ç·šå¤–å§‹ç™ºã®å ´åˆã¯ã€è·¯ç·šå¤–ã‹ã‚‰iNextRessyaTrackIndexã¸ã®åˆ°ç€å‹•ä½œã‚’InsertCrossingCheckSearchã—ã¾ã™ã€‚
 								*/
 								const CentDedBeforeOperation* pBeforeOperation = pBeforeCont->getMuPtr()->get(0);
 
@@ -1706,8 +1706,8 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 					else if (iSearchEkiOrder == iValidSyuuchakuEkiOrder)
 					{
 						/**
-							I’…‰w
-							‚Ü‚¸‚ÍA˜HüŠOI’…+’Ê‰ß(“–‰w”­‚È‚µ)‚ğ‹æ•Ê‚µ‚Ü‚·B
+							çµ‚ç€é§…
+							ã¾ãšã¯ã€è·¯ç·šå¤–çµ‚ç€+é€šé(å½“é§…ç™ºæ™‚åˆ»ãªã—)ã‚’åŒºåˆ¥ã—ã¾ã™ã€‚
 						*/
 						const CentDedEkiJikoku* pEkiJikoku =
 							pCentDedRessya->getCentDedEkiJikokuCont()->getMuPtr()->get(iSearchEkiOrder);
@@ -1739,16 +1739,16 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 						else
 						{
 							/**
-								æ‚É‘Oì‹Æ‚©‚çs‚¢‚Ü‚·B‚±‚ê‚ÍA˜HüŠOI’…‚©‚Â“–‰w”­‚ª‚È‚¢ê‡‚É‘ã—p‚·‚é‚ğæ“¾‚·‚é•K—v‚ª‚ ‚é‚©‚ç‚Å‚·B
-								‘Oì‹Æ‚ÍŒã•û‚©‚çŒŸ¸‚·‚é‚Ì‚ÅAÅ‰‚ÉŒ©‚Â‚©‚Á‚½‚Ì‚İæ“¾‚µ‚Ü‚·B‘Oì‹Æ’†‚É‚ª‚È‚¢ê‡‚ÍA“–‰w’…‚ğæ“¾‚µ‚Ü‚·B
-								‚¢‚¸‚ê‚Ìê‡‚àAŒãì‹Æ‚É‚ª‚ ‚ê‚Î‚»‚ê‚Åã‘‚«‚µ‚Ä‚¢‚«‚Ü‚·B
+								å…ˆã«å‰ä½œæ¥­ã‹ã‚‰è¡Œã„ã¾ã™ã€‚ã“ã‚Œã¯ã€è·¯ç·šå¤–çµ‚ç€ã‹ã¤å½“é§…ç™ºæ™‚åˆ»ãŒãªã„å ´åˆã«ä»£ç”¨ã™ã‚‹æ™‚åˆ»ã‚’å–å¾—ã™ã‚‹å¿…è¦ãŒã‚ã‚‹ã‹ã‚‰ã§ã™ã€‚
+								å‰ä½œæ¥­ã¯å¾Œæ–¹ã‹ã‚‰æ¤œæŸ»ã™ã‚‹ã®ã§ã€æœ€åˆã«è¦‹ã¤ã‹ã£ãŸæ™‚åˆ»ã®ã¿å–å¾—ã—ã¾ã™ã€‚å‰ä½œæ¥­ä¸­ã«æ™‚åˆ»ãŒãªã„å ´åˆã¯ã€å½“é§…ç€æ™‚åˆ»ã‚’å–å¾—ã—ã¾ã™ã€‚
+								ã„ãšã‚Œã®å ´åˆã‚‚ã€å¾Œä½œæ¥­ã«æ™‚åˆ»ãŒã‚ã‚Œã°ãã‚Œã§ä¸Šæ›¸ãã—ã¦ã„ãã¾ã™ã€‚
 							*/
 							const CentDedBeforeOperationCont* pBeforeCont = pEkiJikoku->getCentDedBeforeOperationCont();
 
-							//iNextRessyaTrackIndex@Šeì‹ÆŒã‚Ì”Ôü‚Å‚·B“üŠ·ì‹Æ‚É‚Â‚¢‚ÄAiNextRessyaTrackIndex‚Æ“üŠ·Œ³”Ôü‚ª“™‚µ‚¢ê‡‚ÍA“üŠ·ì‹Æ©‘Ì‚ª–³Œø‚Æ‚È‚è‚Ü‚·B
-							//‚Ü‚½A‰w\ŠOE˜HüŠO‚©‚ç“–‰w‚É“’…‚µ‚½‚Æ‚«‚Ì”Ôü‚ÍA‚±‚ê‚É‚È‚è‚Ü‚·B
+							//iNextRessyaTrackIndexã€€å„ä½œæ¥­å¾Œã®ç•ªç·šã§ã™ã€‚å…¥æ›ä½œæ¥­ã«ã¤ã„ã¦ã€iNextRessyaTrackIndexã¨å…¥æ›å…ƒç•ªç·šãŒç­‰ã—ã„å ´åˆã¯ã€å…¥æ›ä½œæ¥­è‡ªä½“ãŒç„¡åŠ¹ã¨ãªã‚Šã¾ã™ã€‚
+							//ã¾ãŸã€é§…æ§‹å¤–ãƒ»è·¯ç·šå¤–ã‹ã‚‰å½“é§…ã«åˆ°ç€ã—ãŸã¨ãã®ç•ªç·šã¯ã€ã“ã‚Œã«ãªã‚Šã¾ã™ã€‚
 							int iNextRessyaTrackIndex = pEkiJikoku->getRessyaTrackIndex();
-							//OperationJikokuTemp I—¹ì‹Æ‚ª˜HüŠOI’…‚©‚ÂA“–‰w”­‚ª‹ó‚Ìê‡‚ÍA‚±‚Ì‚ğ”­‚Æ‚İ‚È‚µ‚Ü‚·B“üŠ·‚â‘Œ‹“™‚Åã‘‚«‚µ‚Ä‚¢‚«‚Ü‚·B
+							//OperationJikokuTemp çµ‚äº†ä½œæ¥­ãŒè·¯ç·šå¤–çµ‚ç€ã‹ã¤ã€å½“é§…ç™ºæ™‚åˆ»ãŒç©ºã®å ´åˆã¯ã€ã“ã®æ™‚åˆ»ã‚’ç™ºæ™‚åˆ»ã¨ã¿ãªã—ã¾ã™ã€‚å…¥æ›æ™‚åˆ»ã‚„å¢—çµæ™‚åˆ»ç­‰ã§ä¸Šæ›¸ãã—ã¦ã„ãã¾ã™ã€‚
 							CdDedJikoku OperationJikokuTemp;
 							for (int idxb = pBeforeCont->size() - 1; idxb >= 0; idxb--)
 							{
@@ -1821,7 +1821,7 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 							}
 
 							/**
-								‰w\ŠO‚©‚çiNextRessyaTrackIndex‚Ö‚Ì“’…“®ì‚ğInsertCrossingCheckSearch‚µ‚Ü‚·B
+								é§…æ§‹å¤–ã‹ã‚‰iNextRessyaTrackIndexã¸ã®åˆ°ç€å‹•ä½œã‚’InsertCrossingCheckSearchã—ã¾ã™ã€‚
 							*/
 
 							CrossingCheckSearch aCrossingCheckSearch;
@@ -1857,11 +1857,11 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 								OperationJikokuTemp = pEkiJikoku->getChakujikoku();
 							}
 
-							//iPrevRessyaTrackIndex@Šeì‹Æ‘O‚Ì”Ôü‚Å‚·B“üŠ·ì‹Æ‚É‚Â‚¢‚ÄAiPrevRessyaTrackIndex‚Æ“üŠ·æ”Ôü‚ª“™‚µ‚¢ê‡‚ÍA“üŠ·ì‹Æ©‘Ì‚ª–³Œø‚Æ‚È‚è‚Ü‚·B
-							//‚Ü‚½A“–‰w‚©‚ç‰w\ŠOE˜HüŠO‚Öo”­‚·‚é‚Æ‚«‚Ì”Ôü‚ÍA‚±‚ê‚É‚È‚è‚Ü‚·B
+							//iPrevRessyaTrackIndexã€€å„ä½œæ¥­å‰ã®ç•ªç·šã§ã™ã€‚å…¥æ›ä½œæ¥­ã«ã¤ã„ã¦ã€iPrevRessyaTrackIndexã¨å…¥æ›å…ˆç•ªç·šãŒç­‰ã—ã„å ´åˆã¯ã€å…¥æ›ä½œæ¥­è‡ªä½“ãŒç„¡åŠ¹ã¨ãªã‚Šã¾ã™ã€‚
+							//ã¾ãŸã€å½“é§…ã‹ã‚‰é§…æ§‹å¤–ãƒ»è·¯ç·šå¤–ã¸å‡ºç™ºã™ã‚‹ã¨ãã®ç•ªç·šã¯ã€ã“ã‚Œã«ãªã‚Šã¾ã™ã€‚
 							int iPrevRessyaTrackIndex = pEkiJikoku->getRessyaTrackIndex();
 
-							//OperationJikokuTemp ŠJnì‹Æ‚ª˜HüŠOn”­‚©‚ÂA“–‰w’…‚ª‹ó‚Ìê‡‚ÍA‚±‚Ì‚ğ’…‚Æ‚İ‚È‚µ‚Ü‚·B“üŠ·‚â‘Œ‹“™‚Åã‘‚«‚µ‚Ä‚¢‚«‚Ü‚·B
+							//OperationJikokuTemp é–‹å§‹ä½œæ¥­ãŒè·¯ç·šå¤–å§‹ç™ºã‹ã¤ã€å½“é§…ç€æ™‚åˆ»ãŒç©ºã®å ´åˆã¯ã€ã“ã®æ™‚åˆ»ã‚’ç€æ™‚åˆ»ã¨ã¿ãªã—ã¾ã™ã€‚å…¥æ›æ™‚åˆ»ã‚„å¢—çµæ™‚åˆ»ç­‰ã§ä¸Šæ›¸ãã—ã¦ã„ãã¾ã™ã€‚
 							for (int idxa = 0; idxa < pAfterCont->size()-1; idxa++)
 							{
 								const CentDedAfterOperation* pAfterOperation = pAfterCont->getMuPtr()->get(idxa);
@@ -1925,7 +1925,7 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 							if (pAfterCont->getMuPtr()->get(INT_MAX)->getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Outer)
 							{
 								/**
-									––”ö—v‘f‚ª˜HüŠOI’…‚Ìê‡‚ÍAiPrevRessyaTrackIndex‚©‚ç˜HüŠO‚Ö‚Ìo”­“®ì‚ğInsertCrossingCheckSearch‚µ‚Ü‚·B
+									æœ«å°¾è¦ç´ ãŒè·¯ç·šå¤–çµ‚ç€ã®å ´åˆã¯ã€iPrevRessyaTrackIndexã‹ã‚‰è·¯ç·šå¤–ã¸ã®å‡ºç™ºå‹•ä½œã‚’InsertCrossingCheckSearchã—ã¾ã™ã€‚
 								*/
 								const CentDedAfterOperation* pAfterOperation = pAfterCont->getMuPtr()->get(INT_MAX);
 
@@ -1955,13 +1955,13 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 						}
 					}
 					/**
-						n”­‰wˆÈŠO‚ÅA‘O‚Ì‰w‚©‚ç‚±‚Ì‰w‚ÌŠÔ‚ª‰^s‚È‚µ‚Ìê‡‚ÍA”ò‚Î‚µ‚Ü‚·(•ªŠò‰wŠÖŒW‚Ìê‡‚ÍA’…‘¤‚Ì’iŠK‚Ås‚¤‚Ì‚Å)
+						å§‹ç™ºé§…ä»¥å¤–ã§ã€å‰ã®é§…ã‹ã‚‰ã“ã®é§…ã®é–“ãŒé‹è¡Œãªã—ã®å ´åˆã¯ã€é£›ã°ã—ã¾ã™(åˆ†å²é§…é–¢ä¿‚ã®å ´åˆã¯ã€ç€å´ã®æ®µéšã§è¡Œã†ã®ã§)
 					*/
 					else if (pCentDedRessya->isRunBetweenNextEki(iSearchEkiOrder - 1))
 					{
 						/**
-							‚±‚Ì‰w‚©‚çŸ‚Ì‰w‚ÌŠÔ‚ª‰^s‚È‚µ‚Ìê‡‚ÍAI“_‘¤‚©‚çisRunBetweenNextEki‚ªtrue‚Ì‰w‚ğ’T‚µA‚»‚Ì‰w‚Æ‚±‚Ì‰w‚ª•ªŠòEŠÂóŠÖŒW‚Å‚ ‚é‚©‚Ç‚¤‚©‚ğŠm‚©‚ß‚Ü‚·B
-							•ªŠòEŠÂóŠÖŒW‚È‚çA‚»‚Ì‰w‚©‚ç”­‘¤(”­EŒãì‹Æ)‚ğæ“¾‚µ‚Ü‚·B
+							ã“ã®é§…ã‹ã‚‰æ¬¡ã®é§…ã®é–“ãŒé‹è¡Œãªã—ã®å ´åˆã¯ã€çµ‚ç‚¹å´ã‹ã‚‰isRunBetweenNextEkiãŒtrueã®é§…ã‚’æ¢ã—ã€ãã®é§…ã¨ã“ã®é§…ãŒåˆ†å²ãƒ»ç’°çŠ¶é–¢ä¿‚ã§ã‚ã‚‹ã‹ã©ã†ã‹ã‚’ç¢ºã‹ã‚ã¾ã™ã€‚
+							åˆ†å²ãƒ»ç’°çŠ¶é–¢ä¿‚ãªã‚‰ã€ãã®é§…ã‹ã‚‰ç™ºå´(ç™ºæ™‚åˆ»ãƒ»å¾Œä½œæ¥­)ã‚’å–å¾—ã—ã¾ã™ã€‚
 						*/
 						int iHatsuEkiOrder = iSearchEkiOrder;
 						if (!pCentDedRessya->isRunBetweenNextEki(iSearchEkiOrder))
@@ -1974,7 +1974,7 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 							}
 							else
 							{
-								//idx‚ğiHatsuEkiOrder‚ÌˆÊ’u‚Ü‚Åi‚ß‚Ä‚¨‚«‚Ü‚·
+								//idxã‚’iHatsuEkiOrderã®ä½ç½®ã¾ã§é€²ã‚ã¦ãŠãã¾ã™
 
 								for (idx++; idx < (int)iEkiOrderBranchLoop.size(); idx++)
 								{
@@ -1991,13 +1991,13 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 						const CentDedEkiJikoku* pEkiJikokuHatsu =
 							pCentDedRessya->getCentDedEkiJikokuCont()->getMuPtr()->get(iHatsuEkiOrder);
 						/**
-							’âÔE‰^“]’âÔ‚Æ’Ê‰ß‚Ì‹æ•Ê‚ğs‚¢‚Ü‚·B‚Ü‚½A’Ê‰ß‚Ìê‡A’…‘¤”­‘¤‚Æ‚à‚É‚È‚µ‚Ìê‡‚Í”ò‚Î‚µ‚Ü‚·B
-							’âÔ‚Ìê‡‚ÍA—¼•û‚Æ‚à‚ª‚ ‚é‚±‚Æ‚ğ•K{‚Æ‚µ‚Ü‚·B
+							åœè»Šãƒ»é‹è»¢åœè»Šã¨é€šéã®åŒºåˆ¥ã‚’è¡Œã„ã¾ã™ã€‚ã¾ãŸã€é€šéã®å ´åˆã€ç€å´ç™ºå´ã¨ã‚‚ã«æ™‚åˆ»ãªã—ã®å ´åˆã¯é£›ã°ã—ã¾ã™ã€‚
+							åœè»Šã®å ´åˆã¯ã€ä¸¡æ–¹ã¨ã‚‚æ™‚åˆ»ãŒã‚ã‚‹ã“ã¨ã‚’å¿…é ˆã¨ã—ã¾ã™ã€‚
 						*/
 						if (pEkiJikokuChaku->getChakujikoku().isNull() &&
 							pEkiJikokuHatsu->getHatsujikoku().isNull())
 						{
-							//—¼‚Æ‚à–³‚¢‚Ì‚Å’Ê‰ß‚©‚Â”ò‚Î‚µ
+							//ä¸¡æ™‚åˆ»ã¨ã‚‚ç„¡ã„ã®ã§é€šéã‹ã¤é£›ã°ã—
 							continue;
 						}
 						else if (!pEkiJikokuChaku->getChakujikoku().isNull() &&
@@ -2030,7 +2030,7 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 
 							{
 								/**
-									‰w\ŠO‚©‚ç‚Ì“’…“®ì‚ğInsertCrossingCheckSearch‚µ‚Ü‚·B
+									é§…æ§‹å¤–ã‹ã‚‰ã®åˆ°ç€å‹•ä½œã‚’InsertCrossingCheckSearchã—ã¾ã™ã€‚
 								*/
 
 								CrossingCheckSearch aCrossingCheckSearch;
@@ -2063,7 +2063,7 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 							}
 							{
 								/**
-									‰w\ŠO‚Ö‚Ìo”­“®ì‚ğInsertCrossingCheckSearch‚µ‚Ü‚·B
+									é§…æ§‹å¤–ã¸ã®å‡ºç™ºå‹•ä½œã‚’InsertCrossingCheckSearchã—ã¾ã™ã€‚
 								*/
 								CrossingCheckSearch aCrossingCheckSearch;
 
@@ -2100,7 +2100,7 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 							if (pEkiJikokuChaku->getChakujikoku().isNull())
 							{
 								/**
-									‰w\ŠO‚Ö‚Ìo”­“®ì‚ğInsertCrossingCheckSearch‚µ‚Ü‚·B
+									é§…æ§‹å¤–ã¸ã®å‡ºç™ºå‹•ä½œã‚’InsertCrossingCheckSearchã—ã¾ã™ã€‚
 								*/
 								CrossingCheckSearch aCrossingCheckSearch;
 
@@ -2134,7 +2134,7 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 							else
 							{
 								/**
-									‰w\ŠO‚©‚ç‚Ì“’…“®ì‚ğInsertCrossingCheckSearch‚µ‚Ü‚·B
+									é§…æ§‹å¤–ã‹ã‚‰ã®åˆ°ç€å‹•ä½œã‚’InsertCrossingCheckSearchã—ã¾ã™ã€‚
 								*/
 
 								CrossingCheckSearch aCrossingCheckSearch;
@@ -2173,7 +2173,7 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 		}
 
 		/**
-			Šeƒ‹[ƒ‹‚ÉŠî‚Ã‚«A‘O“®ì‚ÆŒã“®ì‚ÉŠY“–‚·‚é“®ì‚ğ‚»‚ê‚¼‚êˆê‚Â‚É‚Ü‚Æ‚ßAŠÔ‡‚É•À‚×‚Ü‚·B
+			å„ãƒ«ãƒ¼ãƒ«ã«åŸºã¥ãã€å‰å‹•ä½œã¨å¾Œå‹•ä½œã«è©²å½“ã™ã‚‹å‹•ä½œã‚’ãã‚Œãã‚Œä¸€ã¤ã«ã¾ã¨ã‚ã€æ™‚é–“é †ã«ä¸¦ã¹ã¾ã™ã€‚
 		*/
 		m_CrossingCheckContentCont.clear();
 		m_CrossingCheckContentCont.assign(pCentDedEki->getCrossingCheckRuleSize(), vector< CrossingCheckContent>());
@@ -2241,17 +2241,17 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 			}
 			/**
 				itrAfterTemp
-				ƒŠƒXƒg‚Ì’Tõ—Ê‚ğŒ¸‚ç‚·‚½‚ß‚É—p‚¢‚Ü‚·B
-				Before,After‚Æ‚à‚ÉAƒŠƒXƒg‚Í‡‚É•À‚ñ‚Å‚¢‚Ü‚·B
-				]‚Á‚ÄABeforeList‚Ì”CˆÓ‚Ì—v‘f‚Ì‚æ‚è‚àA‚ª‘O‚ÌAfterList‚Ì—v‘f‚ÍA
-				BeforeList‚Ì‚»‚êˆÈ~‚Ì—v‘f‚Ì‚æ‚è‚àA•K‚¸‚ª‘O‚É‚È‚è‚Ü‚·B
-				]‚Á‚ÄAˆê“x‚ª‘O‚É‚È‚Á‚½After‚Ì—v‘f‚ÍA‚»‚êˆÈ~QÆ‚·‚é•K—v‚ª–³‚­‚È‚è‚Ü‚·B
-				‚È‚Ì‚ÅA‚ª‘O‚É‚È‚Á‚½‚à‚Ì‚ğitrAfterTemp‚Éû‚ß‚Ä‚¨‚«AitrBefore‚Ì’Tõ‚ªŸ—v‘f‚ÉˆÚ‚Á‚½‚Æ‚«‚ÍAAfter—v‘f‚ğitrAfterTemp‚©‚ç’Tõ‚µ‚Ü‚·B
+				ãƒªã‚¹ãƒˆã®æ¢ç´¢é‡ã‚’æ¸›ã‚‰ã™ãŸã‚ã«ç”¨ã„ã¾ã™ã€‚
+				Before,Afterã¨ã‚‚ã«ã€ãƒªã‚¹ãƒˆã¯æ™‚åˆ»é †ã«ä¸¦ã‚“ã§ã„ã¾ã™ã€‚
+				å¾“ã£ã¦ã€BeforeListã®ä»»æ„ã®è¦ç´ ã®æ™‚åˆ»ã‚ˆã‚Šã‚‚ã€æ™‚åˆ»ãŒå‰ã®AfterListã®è¦ç´ ã¯ã€
+				BeforeListã®ãã‚Œä»¥é™ã®è¦ç´ ã®æ™‚åˆ»ã‚ˆã‚Šã‚‚ã€å¿…ãšæ™‚åˆ»ãŒå‰ã«ãªã‚Šã¾ã™ã€‚
+				å¾“ã£ã¦ã€ä¸€åº¦æ™‚åˆ»ãŒå‰ã«ãªã£ãŸAfterã®è¦ç´ ã¯ã€ãã‚Œä»¥é™å‚ç…§ã™ã‚‹å¿…è¦ãŒç„¡ããªã‚Šã¾ã™ã€‚
+				ãªã®ã§ã€æ™‚åˆ»ãŒå‰ã«ãªã£ãŸã‚‚ã®ã‚’itrAfterTempã«åã‚ã¦ãŠãã€itrBeforeã®æ¢ç´¢ãŒæ¬¡è¦ç´ ã«ç§»ã£ãŸã¨ãã¯ã€Afterè¦ç´ ã‚’itrAfterTempã‹ã‚‰æ¢ç´¢ã—ã¾ã™ã€‚
 			*/
 			auto itrAfterTemp = AfterCrossingCheckSearchCont.begin();
 			for (auto itrBefore = BeforeCrossingCheckSearchCont.begin(); itrBefore != BeforeCrossingCheckSearchCont.end(); itrBefore++)
 			{
-				//ƒpƒ^[ƒ“ƒ_ƒCƒ„ƒvƒŒƒrƒ…[‹@”\‚ª—LŒø‚Èê‡ACrossingCheckContent‚ğ¶¬‚·‚é‚Ì‚ÍA‘Oì‹Æ‚ªŒ³—ñÔ(iShiftSecond==0)‚Ìê‡‚Ì‚İ‚Å‚·B
+				//ãƒ‘ã‚¿ãƒ¼ãƒ³ãƒ€ã‚¤ãƒ¤ãƒ—ãƒ¬ãƒ“ãƒ¥ãƒ¼æ©Ÿèƒ½ãŒæœ‰åŠ¹ãªå ´åˆã€CrossingCheckContentã‚’ç”Ÿæˆã™ã‚‹ã®ã¯ã€å‰ä½œæ¥­ãŒå…ƒåˆ—è»Š(iShiftSecond==0)ã®å ´åˆã®ã¿ã§ã™ã€‚
 				if (itrBefore->iShiftSecond != 0)
 				{
 					continue;
@@ -2269,9 +2269,9 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 					else if (itrAfter->aRessyaProperty.getJikoku().compare(MaximumJikoku, m_KitenJikoku) < 0)
 					{
 						/**
-							“¯ˆê‚Ì“®ì“¯m‚Ìê‡‚ÍƒXƒ‹[‚µ‚Ü‚·
-							E—ñÔƒvƒƒpƒeƒB‚ªˆê’v(ŠÜ‚Ş)
-							E‘O“®ì‚ÆŒã“®ì‚ÌAˆÚ“®Œ³EˆÚ“®æ”Ôü‚ª‚»‚ê‚¼‚êˆê’vB
+							åŒä¸€ã®å‹•ä½œåŒå£«ã®å ´åˆã¯ã‚¹ãƒ«ãƒ¼ã—ã¾ã™
+							ãƒ»åˆ—è»Šãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãŒä¸€è‡´(æ™‚åˆ»å«ã‚€)
+							ãƒ»å‰å‹•ä½œã¨å¾Œå‹•ä½œã®ã€ç§»å‹•å…ƒãƒ»ç§»å‹•å…ˆç•ªç·šãŒãã‚Œãã‚Œä¸€è‡´ã€‚
 						*/
 						if (itrBefore->aRessyaProperty == itrAfter->aRessyaProperty &&
 							itrBefore->FromTrackContent.equal(itrAfter->FromTrackContent) &&
@@ -2303,9 +2303,9 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 					//	if (iHeadway >= 0 && iHeadway < aCrossingCheckRule.iHeadwaySecond)
 					//	{
 					//		/**
-					//			“¯ˆê‚Ì“®ì“¯m‚Ìê‡‚ÍƒXƒ‹[‚µ‚Ü‚·
-					//			E—ñÔƒvƒƒpƒeƒB‚ªˆê’v(ŠÜ‚Ş)
-					//			E‘O“®ì‚ÆŒã“®ì‚ÌAˆÚ“®Œ³EˆÚ“®æ”Ôü‚ª‚»‚ê‚¼‚êˆê’vB
+					//			åŒä¸€ã®å‹•ä½œåŒå£«ã®å ´åˆã¯ã‚¹ãƒ«ãƒ¼ã—ã¾ã™
+					//			ãƒ»åˆ—è»Šãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãŒä¸€è‡´(æ™‚åˆ»å«ã‚€)
+					//			ãƒ»å‰å‹•ä½œã¨å¾Œå‹•ä½œã®ã€ç§»å‹•å…ƒãƒ»ç§»å‹•å…ˆç•ªç·šãŒãã‚Œãã‚Œä¸€è‡´ã€‚
 					//		*/
 					//		if (itrBefore->aRessyaProperty == itrAfter->aRessyaProperty &&
 					//			itrBefore->FromTrackContent.equal(itrAfter->FromTrackContent) &&
@@ -2343,12 +2343,12 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 
 
 
-		//	X—ñ”‚ğ‘Œ¸‚³‚¹‚é
+		//	Xåˆ—æ•°ã‚’å¢—æ¸›ã•ã›ã‚‹
 		//CdAllOperationTableXColSpecCont aXColSpecCont = createXColSpecCont();
 		//int iXCount = getCXDcdGrid()->getXColumnCount();
 		//if (iXCount != aXColSpecCont.size())
 		//{
-			//ƒtƒHƒ“ƒg•ÏX‚Ìê‡Aƒwƒbƒ_[XV‚·‚é•K—v‚ª‚ ‚é‚Ì‚ÅA‘SXV‚Íí‚ÉXV‚·‚é‚æ‚¤‚É‚·‚éB
+			//ãƒ•ã‚©ãƒ³ãƒˆå¤‰æ›´ã®å ´åˆã€ãƒ˜ãƒƒãƒ€ãƒ¼æ›´æ–°ã™ã‚‹å¿…è¦ãŒã‚ã‚‹ã®ã§ã€å…¨æ›´æ–°æ™‚ã¯å¸¸ã«æ›´æ–°ã™ã‚‹ã‚ˆã†ã«ã™ã‚‹ã€‚
 			OnCreate_Header();
 		//}
 
@@ -2356,7 +2356,7 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 		getCXDcdGrid()->setYColumnCount(
 			aCdEkiJikokuhyouYColSpecCont.size());
 
-			//	ŠeƒZƒ‹‚ÉAƒf[ƒ^‚ğİ’è
+			//	å„ã‚»ãƒ«ã«ã€ãƒ‡ãƒ¼ã‚¿ã‚’è¨­å®š
 
 		for (int idx = 0; idx < pCentDedEki->getCrossingCheckRuleSize(); idx++)
 		{
@@ -2377,7 +2377,7 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 		}
 
 		// --------------------------------		
-		//	Œrü‚ÌF‚ğİ’è
+		//	ç½«ç·šã®è‰²ã‚’è¨­å®š
 		// --------------------------------
 		for (int idx = -1; idx < getCXDcdGrid()->getXColumnCount(); idx++)
 		{
@@ -2408,33 +2408,33 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 void CWndDcdGridCrossingCheck::OnCreate_Header()
 {
 	// --------------------------------
-	//	Œğ·xáƒ`ƒFƒbƒNƒrƒ…[‚Ég—p‚·‚éƒtƒHƒ“ƒg
+	//	äº¤å·®æ”¯éšœãƒã‚§ãƒƒã‚¯ãƒ“ãƒ¥ãƒ¼ã«ä½¿ç”¨ã™ã‚‹ãƒ•ã‚©ãƒ³ãƒˆ
 	// --------------------------------
 	CdFontProp fontpropDefault = createFontProp();
 	//CdColorProp colorpropDefault = createStringColorProp();
 
 	CdCrossingCheckXColSpecCont aXColSpecCont = createXColSpecCont();
 	// --------------------------------
-	//	—ñ‚Ì”‚ğw’è
+	//	åˆ—ã®æ•°ã‚’æŒ‡å®š
 	// --------------------------------
 
 	getCXDcdGrid()->setXColumnCount(aXColSpecCont.size());
 	getCXDcdGrid()->setXFixColumnCount(0);
 
 	// --------------------------------
-	//	—ñ‚ÌƒTƒCƒY‚ğİ’è
+	//	åˆ—ã®ã‚µã‚¤ã‚ºã‚’è¨­å®š
 	// --------------------------------
 	{
 		CDcdTargetGetDC	aCDcdTarget(NULL);
 		// --------------------------------
-		//	X—ñ
+		//	Xåˆ—
 		// --------------------------------
 		tstring strCellHeadwayWidth(_T("0000"));
 
 		CdDedDispProp aCdDedDispProp =
 			getCDiagramEditDoc()->getCDedRosenFileData()->getCdDedDispProp();
 		tstring strCellRessyaWidth(aCdDedDispProp.getJikokuhyouRessyaWidth(), '0');
-		//tstring strCellRessyaWidth = _T("‹“s‹");
+		//tstring strCellRessyaWidth = _T("äº¬éƒ½äº¬");
 
 
 		tstring strCellRessyaBangouWidth(
@@ -2446,7 +2446,7 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 
 		const CentDedRessyasyubetsuCont* pRessyasyubetsuCont = getCDiagramEditDoc()->getCDedRosenFileData()
 			->getCentDedRosen()->getCentDedRessyasyubetsuCont();
-		tstring strCellRessyasyubetsuWidth = _T("‹“s‹“s‹“s");
+		tstring strCellRessyasyubetsuWidth = _T("äº¬éƒ½äº¬éƒ½äº¬éƒ½");
 		for (int idxSyubetsu = 0; idxSyubetsu < pRessyasyubetsuCont->size(); idxSyubetsu++)
 		{
 			if (strCellRessyasyubetsuWidth.length() < pRessyasyubetsuCont->get(idxSyubetsu).getSyubetsumei().length())
@@ -2478,7 +2478,7 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 			getCDiagramEditDoc()->getCDedRosenFileData()->getCdDedDispProp().getEkimeiLength() * 2, '0');
 
 		{
-			//	—ñÔ•ûŒü(‘O“®ì‘¤)
+			//	åˆ—è»Šæ–¹å‘(å‰å‹•ä½œå´)
 			int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 				CdCrossingCheckXColSpec::EColumnType::ColumnType_BeforeRessyahoukou));
 			CdDcdSizeXy	sizeRessyahoukou;
@@ -2490,7 +2490,7 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 			getCXDcdGrid()->getXColumn(iXColumnNumber)->setColumnSize(sizeRessyahoukou.getX());
 		}
 		{
-			//	—ñÔ”Ô†(‘O“®ì‘¤)
+			//	åˆ—è»Šç•ªå·(å‰å‹•ä½œå´)
 			int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 				CdCrossingCheckXColSpec::EColumnType::ColumnType_BeforeRessyabangou));
 			CdDcdSizeXy	sizeRessyaBangou;
@@ -2502,7 +2502,7 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 			getCXDcdGrid()->getXColumn(iXColumnNumber)->setColumnSize(sizeRessyaBangou.getX());
 		}
 		{
-			//	í•Ê(‘O“®ì‘¤)
+			//	ç¨®åˆ¥(å‰å‹•ä½œå´)
 			int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 				CdCrossingCheckXColSpec::EColumnType::ColumnType_BeforeRessyasyubetsu));
 			CdDcdSizeXy	sizeRessyasyubetsu;
@@ -2514,7 +2514,7 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 			getCXDcdGrid()->getXColumn(iXColumnNumber)->setColumnSize(sizeRessyasyubetsu.getX());
 		}
 		{
-			//	(‘O“®ì‘¤)
+			//	æ™‚åˆ»(å‰å‹•ä½œå´)
 			int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 				CdCrossingCheckXColSpec::EColumnType::ColumnType_BeforeJikoku));
 			CdDcdSizeXy	sizeEkijikoku;
@@ -2526,7 +2526,7 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 			getCXDcdGrid()->getXColumn(iXColumnNumber)->setColumnSize(sizeEkijikoku.getX());
 		}
 		{
-			//	ˆÚ“®Œ³”Ôü
+			//	ç§»å‹•å…ƒç•ªç·š
 			int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 				CdCrossingCheckXColSpec::EColumnType::ColumnType_BeforeFrom));
 			CdDcdSizeXy	sizeTrackContent;
@@ -2538,19 +2538,19 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 			getCXDcdGrid()->getXColumn(iXColumnNumber)->setColumnSize(sizeTrackContent.getX());
 		}
 		{
-			//	–îˆó
+			//	çŸ¢å°
 			int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 				CdCrossingCheckXColSpec::EColumnType::ColumnType_BeforeArrow));
 			CdDcdSizeXy	sizeArrow;
 			CDcdTextbox	aCDcdTextbox(
-				_T("¨"),
+				_T("â†’"),
 				fontpropDefault,
 				_T(""), 1, 2, 2);
 			aCDcdTextbox.getItemSize(&aCDcdTarget, &sizeArrow);
 			getCXDcdGrid()->getXColumn(iXColumnNumber)->setColumnSize(sizeArrow.getX());
 		}
 		{
-			//	ˆÚ“®æ”Ôü
+			//	ç§»å‹•å…ˆç•ªç·š
 			int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 				CdCrossingCheckXColSpec::EColumnType::ColumnType_BeforeTo));
 			CdDcdSizeXy	sizeTrackContent;
@@ -2563,7 +2563,7 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 		}
 
 		{
-			//	Šu
+			//	æ™‚éš”
 			int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 				CdCrossingCheckXColSpec::EColumnType::ColumnType_Headway));
 			CdDcdSizeXy	sizeHeadway;
@@ -2576,7 +2576,7 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 		}
 
 		{
-			//	—ñÔ•ûŒü(Œã“®ì‘¤)
+			//	åˆ—è»Šæ–¹å‘(å¾Œå‹•ä½œå´)
 			int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 				CdCrossingCheckXColSpec::EColumnType::ColumnType_AfterRessyahoukou));
 			CdDcdSizeXy	sizeRessyahoukou;
@@ -2588,7 +2588,7 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 			getCXDcdGrid()->getXColumn(iXColumnNumber)->setColumnSize(sizeRessyahoukou.getX());
 		}
 		{
-			//	—ñÔ”Ô†(Œã“®ì‘¤)
+			//	åˆ—è»Šç•ªå·(å¾Œå‹•ä½œå´)
 			int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 				CdCrossingCheckXColSpec::EColumnType::ColumnType_AfterRessyabangou));
 			CdDcdSizeXy	sizeRessyaBangou;
@@ -2600,7 +2600,7 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 			getCXDcdGrid()->getXColumn(iXColumnNumber)->setColumnSize(sizeRessyaBangou.getX());
 		}
 		{
-			//	í•Ê(Œã“®ì‘¤)
+			//	ç¨®åˆ¥(å¾Œå‹•ä½œå´)
 			int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 				CdCrossingCheckXColSpec::EColumnType::ColumnType_AfterRessyasyubetsu));
 			CdDcdSizeXy	sizeRessyasyubetsu;
@@ -2612,7 +2612,7 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 			getCXDcdGrid()->getXColumn(iXColumnNumber)->setColumnSize(sizeRessyasyubetsu.getX());
 		}
 		{
-			//	(Œã“®ì‘¤)
+			//	æ™‚åˆ»(å¾Œå‹•ä½œå´)
 			int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 				CdCrossingCheckXColSpec::EColumnType::ColumnType_AfterJikoku));
 			CdDcdSizeXy	sizeEkijikoku;
@@ -2624,7 +2624,7 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 			getCXDcdGrid()->getXColumn(iXColumnNumber)->setColumnSize(sizeEkijikoku.getX());
 		}
 		{
-			//	ˆÚ“®Œ³”Ôü
+			//	ç§»å‹•å…ƒç•ªç·š
 			int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 				CdCrossingCheckXColSpec::EColumnType::ColumnType_AfterFrom));
 			CdDcdSizeXy	sizeTrackContent;
@@ -2636,19 +2636,19 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 			getCXDcdGrid()->getXColumn(iXColumnNumber)->setColumnSize(sizeTrackContent.getX());
 		}
 		{
-			//	–îˆó
+			//	çŸ¢å°
 			int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 				CdCrossingCheckXColSpec::EColumnType::ColumnType_AfterArrow));
 			CdDcdSizeXy	sizeArrow;
 			CDcdTextbox	aCDcdTextbox(
-				_T("¨"),
+				_T("â†’"),
 				fontpropDefault,
 				_T(""), 1, 2, 2);
 			aCDcdTextbox.getItemSize(&aCDcdTarget, &sizeArrow);
 			getCXDcdGrid()->getXColumn(iXColumnNumber)->setColumnSize(sizeArrow.getX());
 		}
 		{
-			//	ˆÚ“®æ”Ôü
+			//	ç§»å‹•å…ˆç•ªç·š
 			int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 				CdCrossingCheckXColSpec::EColumnType::ColumnType_AfterTo));
 			CdDcdSizeXy	sizeTrackContent;
@@ -2661,12 +2661,12 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 		}
 
 		// --------------------------------
-		//	Y—ñ
+		//	Yåˆ—
 		// --------------------------------
 		{
 			CdDcdSizeXy	sizeHeader;
 			CDcdTextbox	aCDcdTextbox(
-				_T("‹“s‹"),
+				_T("äº¬éƒ½äº¬"),
 				fontpropDefault,
 				_T(""), 1, 2, 2);
 			aCDcdTextbox.getItemSize(&aCDcdTarget, &sizeHeader);
@@ -2675,10 +2675,10 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 		}
 	}
 	// --------------------------------
-	//	Åã—ñ‚É‘®«‚ÆƒeƒLƒXƒg‚ğİ’è
+	//	æœ€ä¸Šåˆ—ã«å±æ€§ã¨ãƒ†ã‚­ã‚¹ãƒˆã‚’è¨­å®š
 	// --------------------------------
 	{
-		// —ñÔ•ûŒü(‘O“®ì‘¤)
+		// åˆ—è»Šæ–¹å‘(å‰å‹•ä½œå´)
 		int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 			CdCrossingCheckXColSpec::EColumnType::ColumnType_BeforeRessyahoukou));
 
@@ -2696,13 +2696,13 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 
 		pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 		pCDcdTextbox->setCdBrushProp(aCdBrushProp);
-		pCDcdTextbox->setText(_T("‘O"));
+		pCDcdTextbox->setText(_T("å‰"));
 		Ou<CDcdLine>
 			(getCXDcdGrid()->getXBorder(iXColumnNumber)->getIfDcDraw())
 			->setCdPenProp(getCdPenPropDotLine());
 	}
 	{
-		// —ñÔ”Ô†(‘O“®ì‘¤)
+		// åˆ—è»Šç•ªå·(å‰å‹•ä½œå´)
 		int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 			CdCrossingCheckXColSpec::EColumnType::ColumnType_BeforeRessyabangou));
 
@@ -2720,13 +2720,13 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 
 		pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 		pCDcdTextbox->setCdBrushProp(aCdBrushProp);
-		pCDcdTextbox->setText(_T("—ñÔ”Ô†"));
+		pCDcdTextbox->setText(_T("åˆ—è»Šç•ªå·"));
 		Ou<CDcdLine>
 			(getCXDcdGrid()->getXBorder(iXColumnNumber)->getIfDcDraw())
 			->setCdPenProp(getCdPenPropDotLine());
 	}
 	{
-		// í•Ê(‘O“®ì‘¤)
+		// ç¨®åˆ¥(å‰å‹•ä½œå´)
 		int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 			CdCrossingCheckXColSpec::EColumnType::ColumnType_BeforeRessyasyubetsu));
 
@@ -2744,13 +2744,13 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 
 		pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 		pCDcdTextbox->setCdBrushProp(aCdBrushProp);
-		pCDcdTextbox->setText(_T("í•Ê"));
+		pCDcdTextbox->setText(_T("ç¨®åˆ¥"));
 		Ou<CDcdLine>
 			(getCXDcdGrid()->getXBorder(iXColumnNumber)->getIfDcDraw())
 			->setCdPenProp(getCdPenPropDotLine());
 	}
 	{
-		// (‘O“®ì‘¤)
+		// æ™‚åˆ»(å‰å‹•ä½œå´)
 		int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 			CdCrossingCheckXColSpec::EColumnType::ColumnType_BeforeJikoku));
 
@@ -2768,13 +2768,13 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 
 		pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 		pCDcdTextbox->setCdBrushProp(aCdBrushProp);
-		pCDcdTextbox->setText(_T(""));
+		pCDcdTextbox->setText(_T("æ™‚åˆ»"));
 		Ou<CDcdLine>
 			(getCXDcdGrid()->getXBorder(iXColumnNumber)->getIfDcDraw())
 			->setCdPenProp(getCdPenPropDotLine());
 	}
 	{
-		// ˆÚ“®Œ³”Ôü(‘O“®ì‘¤)
+		// ç§»å‹•å…ƒç•ªç·š(å‰å‹•ä½œå´)
 		int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 			CdCrossingCheckXColSpec::EColumnType::ColumnType_BeforeFrom));
 
@@ -2792,7 +2792,7 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 
 		pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 		pCDcdTextbox->setCdBrushProp(aCdBrushProp);
-		pCDcdTextbox->setText(_T("‘O“®ì”ÔüˆÚ“®"));
+		pCDcdTextbox->setText(_T("å‰å‹•ä½œç•ªç·šç§»å‹•"));
 
 		Ou<CDcdLine>
 			(getCXDcdGrid()->getXBorder(iXColumnNumber)->getIfDcDraw())
@@ -2805,7 +2805,7 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 	}
 
 	{
-		// Šu
+		// æ™‚éš”
 		int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 			CdCrossingCheckXColSpec::EColumnType::ColumnType_Headway));
 
@@ -2823,11 +2823,11 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 
 		pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 		pCDcdTextbox->setCdBrushProp(aCdBrushProp);
-		pCDcdTextbox->setText(_T("Šu"));
+		pCDcdTextbox->setText(_T("æ™‚éš”"));
 	}
 
 	{
-		// —ñÔ•ûŒü(Œã“®ì‘¤)
+		// åˆ—è»Šæ–¹å‘(å¾Œå‹•ä½œå´)
 		int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 			CdCrossingCheckXColSpec::EColumnType::ColumnType_AfterRessyahoukou));
 
@@ -2845,13 +2845,13 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 
 		pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 		pCDcdTextbox->setCdBrushProp(aCdBrushProp);
-		pCDcdTextbox->setText(_T("Œã"));
+		pCDcdTextbox->setText(_T("å¾Œ"));
 		Ou<CDcdLine>
 			(getCXDcdGrid()->getXBorder(iXColumnNumber)->getIfDcDraw())
 			->setCdPenProp(getCdPenPropDotLine());
 	}
 	{
-		// —ñÔ”Ô†(Œã“®ì‘¤)
+		// åˆ—è»Šç•ªå·(å¾Œå‹•ä½œå´)
 		int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 			CdCrossingCheckXColSpec::EColumnType::ColumnType_AfterRessyabangou));
 
@@ -2869,13 +2869,13 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 
 		pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 		pCDcdTextbox->setCdBrushProp(aCdBrushProp);
-		pCDcdTextbox->setText(_T("—ñÔ”Ô†"));
+		pCDcdTextbox->setText(_T("åˆ—è»Šç•ªå·"));
 		Ou<CDcdLine>
 			(getCXDcdGrid()->getXBorder(iXColumnNumber)->getIfDcDraw())
 			->setCdPenProp(getCdPenPropDotLine());
 	}
 	{
-		// í•Ê(Œã“®ì‘¤)
+		// ç¨®åˆ¥(å¾Œå‹•ä½œå´)
 		int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 			CdCrossingCheckXColSpec::EColumnType::ColumnType_AfterRessyasyubetsu));
 
@@ -2893,13 +2893,13 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 
 		pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 		pCDcdTextbox->setCdBrushProp(aCdBrushProp);
-		pCDcdTextbox->setText(_T("í•Ê"));
+		pCDcdTextbox->setText(_T("ç¨®åˆ¥"));
 		Ou<CDcdLine>
 			(getCXDcdGrid()->getXBorder(iXColumnNumber)->getIfDcDraw())
 			->setCdPenProp(getCdPenPropDotLine());
 	}
 	{
-		// (Œã“®ì‘¤)
+		// æ™‚åˆ»(å¾Œå‹•ä½œå´)
 		int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 			CdCrossingCheckXColSpec::EColumnType::ColumnType_AfterJikoku));
 
@@ -2917,13 +2917,13 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 
 		pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 		pCDcdTextbox->setCdBrushProp(aCdBrushProp);
-		pCDcdTextbox->setText(_T(""));
+		pCDcdTextbox->setText(_T("æ™‚åˆ»"));
 		Ou<CDcdLine>
 			(getCXDcdGrid()->getXBorder(iXColumnNumber)->getIfDcDraw())
 			->setCdPenProp(getCdPenPropDotLine());
 	}
 	{
-		// ˆÚ“®Œ³”Ôü(‘O“®ì‘¤)
+		// ç§»å‹•å…ƒç•ªç·š(å‰å‹•ä½œå´)
 		int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdCrossingCheckXColSpec(
 			CdCrossingCheckXColSpec::EColumnType::ColumnType_AfterFrom));
 
@@ -2941,7 +2941,7 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 
 		pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 		pCDcdTextbox->setCdBrushProp(aCdBrushProp);
-		pCDcdTextbox->setText(_T("Œã“®ì”ÔüˆÚ“®"));
+		pCDcdTextbox->setText(_T("å¾Œå‹•ä½œç•ªç·šç§»å‹•"));
 
 		Ou<CDcdLine>
 			(getCXDcdGrid()->getXBorder(iXColumnNumber)->getIfDcDraw())
@@ -2955,7 +2955,7 @@ void CWndDcdGridCrossingCheck::OnCreate_Header()
 }
 
 	// --------------------------------
-	//@name ƒƒjƒ…[ƒRƒ}ƒ“ƒh‚Ì‰º¿ŠÖ”
+	//@name ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚³ãƒãƒ³ãƒ‰ã®ä¸‹è«‹é–¢æ•°
 	// --------------------------------
 
 int CWndDcdGridCrossingCheck::OnCrossingCheckMovetojikokuhyou_Process(BOOL bQueryEnable)
@@ -2965,7 +2965,7 @@ int CWndDcdGridCrossingCheck::OnCrossingCheckMovetojikokuhyou_Process(BOOL bQuer
 	//{
 	//	if (getCentDedDia()->getWaitOperationUpdate())
 	//	{
-	//		iRv = -1;	//‰^—pXV—}~ó‘Ô‚Å‚·
+	//		iRv = -1;	//é‹ç”¨æ›´æ–°æŠ‘æ­¢çŠ¶æ…‹ã§ã™
 	//	}
 	//}
 	CdCrossingCheckYColSpec aCdCrossingCheckYColSpec = getYColSpecOfFocus();
@@ -2977,7 +2977,7 @@ int CWndDcdGridCrossingCheck::OnCrossingCheckMovetojikokuhyou_Process(BOOL bQuer
 			if (aCdCrossingCheckYColSpec.getColumnType() !=
 				CdCrossingCheckYColSpec::EColumnType::ColumnType_Ressya)
 			{
-				iRv = -3;	//ƒtƒH[ƒJƒX‚ª—ñÔˆÊ’uˆÈŠO‚È‚ç•s‰Â
+				iRv = -3;	//ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ãŒåˆ—è»Šä½ç½®ä»¥å¤–ãªã‚‰ä¸å¯
 			}
 			else if (aCdCrossingCheckXColSpec.getColumnType() ==
 				CdCrossingCheckXColSpec::EColumnType::ColumnType_Headway)
@@ -2987,7 +2987,7 @@ int CWndDcdGridCrossingCheck::OnCrossingCheckMovetojikokuhyou_Process(BOOL bQuer
 		}
 		else
 		{
-			iRv = -5; //•¡”‘I‘ğ‚Í•s‰Â
+			iRv = -5; //è¤‡æ•°é¸æŠã¯ä¸å¯
 		}
 
 	}
@@ -3008,7 +3008,7 @@ int CWndDcdGridCrossingCheck::OnCrossingCheckMovetojikokuhyou_Process(BOOL bQuer
 			iEkiIndex = aCrossingCheckContent.iAfterEkiIndex;
 		}
 		// --------------------------------
-		//	•\ƒrƒ…[‚ğŠJ‚­
+		//	æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã‚’é–‹ã
 		// --------------------------------
 		CJikokuhyouView* pCJikokuhyouView = NULL;
 		if (iRv >= 0)
@@ -3024,11 +3024,11 @@ int CWndDcdGridCrossingCheck::OnCrossingCheckMovetojikokuhyou_Process(BOOL bQuer
 						&pCJikokuhyouView);
 				if (pCJikokuhyouView == NULL)
 				{
-					iRv = -11;	//	•\ƒrƒ…[‚ÌƒI[ƒvƒ“‚É¸”s‚µ‚Ü‚µ‚½
+					iRv = -11;	//	æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã®ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ
 				}
 			}
-			//pCJikokuhyouDoc = •\ƒhƒLƒ…ƒƒ“ƒg
-			//pCJikokuhyouView = •\ƒrƒ…[
+			//pCJikokuhyouDoc = æ™‚åˆ»è¡¨ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆ
+			//pCJikokuhyouView = æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼
 		}
 
 		if (iRv >= 0)
@@ -3039,7 +3039,7 @@ int CWndDcdGridCrossingCheck::OnCrossingCheckMovetojikokuhyou_Process(BOOL bQuer
 			pCJikokuhyouView->setFocusToRessyaIndex(aRessyaProperty.getRessyaIndex(),
 				getCentDedDia()->getCentDedRessyaCont(aRessyaProperty.getRessyahoukou())
 				->EkiOrderOfEkiIndex(iEkiIndex));
-			iRv = 1;	//	•\ƒrƒ…[‚ÖˆÚ“®‚µ‚Ü‚µ‚½
+			iRv = 1;	//	æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã¸ç§»å‹•ã—ã¾ã—ãŸ
 		}
 	}
 	return iRv;
@@ -3052,7 +3052,7 @@ int CWndDcdGridCrossingCheck::OnCrossingCheckMovetodiagram_Process(BOOL bQueryEn
 	//{
 	//	if (getCentDedDia()->getWaitOperationUpdate())
 	//	{
-	//		iRv = -1;	//‰^—pXV—}~ó‘Ô‚Å‚·
+	//		iRv = -1;	//é‹ç”¨æ›´æ–°æŠ‘æ­¢çŠ¶æ…‹ã§ã™
 	//	}
 	//}
 	CdCrossingCheckYColSpec aCdCrossingCheckYColSpec = getYColSpecOfFocus();
@@ -3064,7 +3064,7 @@ int CWndDcdGridCrossingCheck::OnCrossingCheckMovetodiagram_Process(BOOL bQueryEn
 			if (aCdCrossingCheckYColSpec.getColumnType() !=
 				CdCrossingCheckYColSpec::EColumnType::ColumnType_Ressya)
 			{
-				iRv = -3;	//ƒtƒH[ƒJƒX‚ª—ñÔˆÊ’uˆÈŠO‚È‚ç•s‰Â
+				iRv = -3;	//ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ãŒåˆ—è»Šä½ç½®ä»¥å¤–ãªã‚‰ä¸å¯
 			}
 			else if (aCdCrossingCheckXColSpec.getColumnType() ==
 				CdCrossingCheckXColSpec::EColumnType::ColumnType_Headway)
@@ -3074,7 +3074,7 @@ int CWndDcdGridCrossingCheck::OnCrossingCheckMovetodiagram_Process(BOOL bQueryEn
 		}
 		else
 		{
-			iRv = -5; //•¡”‘I‘ğ‚Í•s‰Â
+			iRv = -5; //è¤‡æ•°é¸æŠã¯ä¸å¯
 		}
 
 	}
@@ -3095,7 +3095,7 @@ int CWndDcdGridCrossingCheck::OnCrossingCheckMovetodiagram_Process(BOOL bQueryEn
 			iEkiIndex = aCrossingCheckContent.iAfterEkiIndex;
 		}
 		// --------------------------------
-		//	ƒ_ƒCƒ„ƒOƒ‰ƒ€ƒrƒ…[‚ğŠJ‚­
+		//	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ãƒ“ãƒ¥ãƒ¼ã‚’é–‹ã
 		// --------------------------------
 		CDedDiagramView* pCDedDiagramView = NULL;
 		if (iRv >= 0) {
@@ -3106,11 +3106,11 @@ int CWndDcdGridCrossingCheck::OnCrossingCheckMovetodiagram_Process(BOOL bQueryEn
 					getCDiagramEditApp()->openCDedDiagramDoc(
 						getCentDedDia());
 				if (pCDedDiagramDoc == NULL) {
-					iRv = -11;	//	ƒ_ƒCƒ„ƒOƒ‰ƒ€ƒrƒ…[‚ÌƒI[ƒvƒ“‚É¸”s‚µ‚Ü‚µ‚½
+					iRv = -11;	//	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ãƒ“ãƒ¥ãƒ¼ã®ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ
 				}
 			}
-			//pCDedDiagramDoc = ƒ_ƒCƒ„ƒOƒ‰ƒ€ƒhƒLƒ…ƒƒ“ƒg
-			//	ƒrƒ…[‚ªƒAƒNƒeƒBƒu‚É‚È‚Á‚Ä‚¢‚Ü‚·B
+			//pCDedDiagramDoc = ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆ
+			//	ãƒ“ãƒ¥ãƒ¼ãŒã‚¢ã‚¯ãƒ†ã‚£ãƒ–ã«ãªã£ã¦ã„ã¾ã™ã€‚
 
 			if (iRv >= 0) {
 				POSITION aPOSITION = pCDedDiagramDoc->GetFirstViewPosition();
@@ -3118,11 +3118,11 @@ int CWndDcdGridCrossingCheck::OnCrossingCheckMovetodiagram_Process(BOOL bQueryEn
 					pCDedDiagramView = (CDedDiagramView*)pCDedDiagramDoc->GetNextView(aPOSITION);
 				}
 				if (pCDedDiagramView == NULL) {
-					iRv = -4;	//	ƒ_ƒCƒ„ƒOƒ‰ƒ€ƒrƒ…[‚ÌƒI[ƒvƒ“‚É¸”s‚µ‚Ü‚µ‚½
+					iRv = -4;	//	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ãƒ“ãƒ¥ãƒ¼ã®ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ
 				}
 			}
 		}
-		//pCDedDiagramView = ƒ_ƒCƒ„ƒOƒ‰ƒ€ƒrƒ…[
+		//pCDedDiagramView = ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ãƒ“ãƒ¥ãƒ¼
 		if (iRv >= 0) {
 		//	pCDedDiagramView->setZone_Dgr(aRessyaProperty.getJikoku(),
 		//		iEkiIndex, aRessyaProperty.getRessyahoukou() == ERessyahoukou::Ressyahoukou_Nobori);
@@ -3134,7 +3134,7 @@ int CWndDcdGridCrossingCheck::OnCrossingCheckMovetodiagram_Process(BOOL bQueryEn
 }
 
 // ********************************
-//	ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+//	ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 // ********************************
 CWndDcdGridCrossingCheck::CWndDcdGridCrossingCheck()
 	: m_bUpdate_All_Requested( false )
@@ -3143,7 +3143,7 @@ CWndDcdGridCrossingCheck::CWndDcdGridCrossingCheck()
 	//getCSelect()->setSelectMode( CSelect::SelectMode_YColumn ) ;
 	getCSelect()->setSelectMode(CSelect::SelectMode_NONE);
 }
-CWndDcdGridCrossingCheck::~CWndDcdGridCrossingCheck()
+CWndDcdGridCrossingCheck::â€¾CWndDcdGridCrossingCheck()
 {
 }
 
@@ -3156,7 +3156,7 @@ CWndDcdGridCrossingCheck::~CWndDcdGridCrossingCheck()
 // ********************************
 
 	// ********************************
-	//@name CWndDcdGridCrossingCheck-‘€ì
+	//@name CWndDcdGridCrossingCheck-æ“ä½œ
 	// ********************************
 
 CCrossingCheckDoc * CWndDcdGridCrossingCheck::GetDocument()
@@ -3212,12 +3212,12 @@ int CWndDcdGridCrossingCheck::OnCreate(LPCREATESTRUCT lpCreateStruct)
 		return -1;
 	
 	//// --------------------------------
-	////	—ñÔí•Êƒrƒ…[‚Ég—p‚·‚éƒtƒHƒ“ƒg
+	////	åˆ—è»Šç¨®åˆ¥ãƒ“ãƒ¥ãƒ¼ã«ä½¿ç”¨ã™ã‚‹ãƒ•ã‚©ãƒ³ãƒˆ
 	//// --------------------------------
 	//CdFontProp fontpropDefault = createFontProp() ;
 	//CdOperationTableXColSSpecCont = createXColSpecCont();
 	//// --------------------------------
-	////	—ñ‚Ì”‚ğw’è
+	////	åˆ—ã®æ•°ã‚’æŒ‡å®š
 	//// --------------------------------
 
 	//getCXDcdGrid()->setXColumnCount(aXColSpecCont.size()) ;
@@ -3227,11 +3227,11 @@ int CWndDcdGridCrossingCheck::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 
 	// --------------------------------
-	//	ƒtƒH[ƒJƒXƒZƒ‹‚Ì‰ŠúˆÊ’u‚ğİ’è
+	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®åˆæœŸä½ç½®ã‚’è¨­å®š
 	// --------------------------------
 	getCFocus()->setFocusCell( getCXDcdGrid()->getCell( 0 , YCOLUMNNNO_OPERATION_0) ) ;
 	// --------------------------------
-	//	•\¦XV
+	//	è¡¨ç¤ºæ›´æ–°
 	// --------------------------------
 	InvalidateGrid() ;
 
@@ -3251,8 +3251,8 @@ void CWndDcdGridCrossingCheck::OnUpdate(CView* pSender, LPARAM lHint, CObject* p
 	// --------------------------------
 
 	// --------------------------------
-	//	‰‰ñ‚ÌOnUpdate()
-	//	.iniƒtƒ@ƒCƒ‹‚©‚çƒvƒƒpƒeƒB‚ğ“Ç‚İ‚İ
+	//	åˆå›ã®OnUpdate()
+	//	.iniãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã‚’èª­ã¿è¾¼ã¿
 	// --------------------------------
 	if (!m_bInitialUpdateComplete)
 	{
@@ -3265,15 +3265,15 @@ void CWndDcdGridCrossingCheck::OnUpdate(CView* pSender, LPARAM lHint, CObject* p
 	}
 
 	//pHint= 
-	//	pHint‚ª CRfEditCmdHolder ƒIƒuƒWƒFƒNƒg‚È‚çA
-	//	‘Î‰‚·‚é•ÒWƒRƒ}ƒ“ƒh CRfEditCmd ‚ğ•Û‚µ‚Ä‚¢‚Ü‚·B
-	//	‚±‚Ìê‡Athis ‚Í CRfEditCmd ‚Ì“à—e‚ÉÅ“K‰»‚µ‚½
-	//	XV‚ğs‚¢‚Ü‚·B
-	//	NULL‚È‚çA‘SXV‚ª—v‹‚³‚ê‚Ä‚¢‚Ü‚·B
+	//	pHintãŒ CRfEditCmdHolder ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãªã‚‰ã€
+	//	å¯¾å¿œã™ã‚‹ç·¨é›†ã‚³ãƒãƒ³ãƒ‰ CRfEditCmd ã‚’ä¿æŒã—ã¦ã„ã¾ã™ã€‚
+	//	ã“ã®å ´åˆã€this ã¯ CRfEditCmd ã®å†…å®¹ã«æœ€é©åŒ–ã—ãŸ
+	//	æ›´æ–°ã‚’è¡Œã„ã¾ã™ã€‚
+	//	NULLãªã‚‰ã€å…¨æ›´æ–°ãŒè¦æ±‚ã•ã‚Œã¦ã„ã¾ã™ã€‚
 	if (m_bUpdate_All_Requested)
 	{
-		//	‘SXV‚ª•Û—¯‚³‚ê‚Ä‚¢‚éê‡‚ÍA
-		//	‚»‚ÌŒã‚ÍƒRƒ}ƒ“ƒh‚É‚æ‚éÅ“K‰»‚³‚ê‚½’P‘Ì‚Ì‚¢‚©‚È‚éXV—v‹‚É‘Î‚µ‚Ä‚àA‘SXV‚ğs‚¢‚Ü‚·B
+		//	å…¨æ›´æ–°ãŒä¿ç•™ã•ã‚Œã¦ã„ã‚‹å ´åˆã¯ã€
+		//	ãã®å¾Œã¯ã‚³ãƒãƒ³ãƒ‰ã«ã‚ˆã‚‹æœ€é©åŒ–ã•ã‚ŒãŸå˜ä½“ã®ã„ã‹ãªã‚‹æ›´æ–°è¦æ±‚ã«å¯¾ã—ã¦ã‚‚ã€å…¨æ›´æ–°ã‚’è¡Œã„ã¾ã™ã€‚
 		pHint = NULL;
 	}
 
@@ -3296,14 +3296,14 @@ void CWndDcdGridCrossingCheck::OnUpdate(CView* pSender, LPARAM lHint, CObject* p
 	//		dynamic_castOu<CRfEditCmd_DiaProp>(pCmd) ||
 	//		dynamic_castOu<CRfEditCmd_RessyasyubetsuSwap>( pCmd ))
 	//	{
-	//		//	‚±‚Ìƒrƒ…[‚ÍA
-	//		//		ƒRƒƒ“ƒg‚Ì•ÏX
-	//		//		ƒ_ƒCƒ„‚Ì•ÏX
-	//		//		ƒ_ƒCƒ„‚Ì‘®«‚Ì•ÏX
-	//		//		‰w”Ôü‚Ì•ÏX
-	//		//		‰w”Ôü‚Ì“üŠ·
-	//		//		—ñÔí•Ê‚Ì“üŠ·
-	//		//	‚Ìê‡‚ÍAXV‚ğs‚¢‚Ü‚¹‚ñB
+	//		//	ã“ã®ãƒ“ãƒ¥ãƒ¼ã¯ã€
+	//		//		ã‚³ãƒ¡ãƒ³ãƒˆã®å¤‰æ›´
+	//		//		ãƒ€ã‚¤ãƒ¤ã®å¤‰æ›´
+	//		//		ãƒ€ã‚¤ãƒ¤ã®å±æ€§ã®å¤‰æ›´
+	//		//		é§…ç•ªç·šã®å¤‰æ›´
+	//		//		é§…ç•ªç·šã®å…¥æ›
+	//		//		åˆ—è»Šç¨®åˆ¥ã®å…¥æ›
+	//		//	ã®å ´åˆã¯ã€æ›´æ–°ã‚’è¡Œã„ã¾ã›ã‚“ã€‚
 	//	}
 	//	else if (dynamic_castOu<CRfEditCmd_Ressya>(pCmd))
 	//	{
@@ -3334,22 +3334,22 @@ void CWndDcdGridCrossingCheck::OnUpdate(CView* pSender, LPARAM lHint, CObject* p
 	//	else
 	//	{
 	//		//CRfEditCmd_DedRosenFileDataProp
-	//		//	  ˜Hüƒtƒ@ƒCƒ‹‚ÌƒvƒƒpƒeƒB‚Ì•ÏX‚ÍA
-	//		//	ƒtƒHƒ“ƒg‚Ì•Ï‰»‚ğ”º‚¤‚½‚ßA‘SXV‚ª•K—v‚Å‚·B
+	//		//	  è·¯ç·šãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å¤‰æ›´ã¯ã€
+	//		//	ãƒ•ã‚©ãƒ³ãƒˆã®å¤‰åŒ–ã‚’ä¼´ã†ãŸã‚ã€å…¨æ›´æ–°ãŒå¿…è¦ã§ã™ã€‚
 	//		//CRfEditCmd_Eki
 	//		//CRfEditCmd_RessyaSyubetsu
 	//		//CRfEditCmd_Rosen
 	//		//CRfEditCmd_RosenFileData
 	//		//CRfEditCmd_Dia
-	//		//	—ñÔí•Ê‚ğ•ïŠÜ‚·‚éƒIƒuƒWƒFƒNƒg‚Å‚·B‚±‚ê‚ªXV‚³‚ê‚½ê‡‚ÍA
-	//		//	‘SXV‚ª•K—v‚Å‚·B
+	//		//	åˆ—è»Šç¨®åˆ¥ã‚’åŒ…å«ã™ã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ã™ã€‚ã“ã‚ŒãŒæ›´æ–°ã•ã‚ŒãŸå ´åˆã¯ã€
+	//		//	å…¨æ›´æ–°ãŒå¿…è¦ã§ã™ã€‚
 	//		pHint = NULL ;
 	//	}
 	//}
 	if ( pHint == NULL )
 	{
 		// --------------------------------		
-		//	‘S—v‘f‚ğXV
+		//	å…¨è¦ç´ ã‚’æ›´æ–°
 		// --------------------------------
 		CView *pView = getCDiagramEditApp()->getCMainFrame()->
 			getMDIChildActiveView() ;
@@ -3399,11 +3399,11 @@ void CWndDcdGridCrossingCheck::OnContextMenu(CWnd* pWnd, CPoint point)
 	aMenu.LoadMenu( IDR_MENU_CROSSINGCHECK_CONTEXT ) ;
 	CMenu* pContextMenu = aMenu.GetSubMenu( 0 ) ;
 
-	//	ƒRƒ“ƒeƒLƒXƒgƒƒjƒ…[‚ªƒ}ƒEƒXˆÈŠO‚ÅŒÄ‚Ño‚³‚ê‚½ê‡‚ÍA
-	//	ƒRƒ“ƒeƒLƒXƒgƒƒjƒ…[‚Ì•\¦ˆÊ’u‚ÍAƒtƒH[ƒJƒXƒZƒ‹‚Ì’†‰›‚ÌˆÊ’u‚Æ‚µ‚Ü‚·B
+	//	ã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ãŒãƒã‚¦ã‚¹ä»¥å¤–ã§å‘¼ã³å‡ºã•ã‚ŒãŸå ´åˆã¯ã€
+	//	ã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®è¡¨ç¤ºä½ç½®ã¯ã€ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ä¸­å¤®ã®ä½ç½®ã¨ã—ã¾ã™ã€‚
 	if ( point.x ==-1 || point.y == -1 )
 	{
-		//	ƒRƒ“ƒeƒLƒXƒgƒƒjƒ…[‚ªƒ}ƒEƒXˆÈŠO‚ÅŒÄ‚Ño‚³‚ê‚Ü‚µ‚½
+		//	ã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ãŒãƒã‚¦ã‚¹ä»¥å¤–ã§å‘¼ã³å‡ºã•ã‚Œã¾ã—ãŸ
 		CdDcdPosXy posxyFocusCellColumnNumber = getCFocus()->getFocusCellColumnNumber() ;
 		if ( posxyFocusCellColumnNumber !=  
 				CFocus::ColumnNumberPosXy_NULL() )
@@ -3416,16 +3416,16 @@ void CWndDcdGridCrossingCheck::OnContextMenu(CWnd* pWnd, CPoint point)
 			ClientToScreen( &point ) ;
 		}
 	}
-	//point = ƒRƒ“ƒeƒLƒXƒgƒƒjƒ…[‚Ì•\¦ˆÊ’uB
-	//	-1‚Ìê‡‚ÍAƒRƒ“ƒeƒLƒXƒgƒƒjƒ…[‚Í•\¦‚Å‚«‚Ü‚¹‚ñB
+	//point = ã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®è¡¨ç¤ºä½ç½®ã€‚
+	//	-1ã®å ´åˆã¯ã€ã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ã¯è¡¨ç¤ºã§ãã¾ã›ã‚“ã€‚
 
 	if ( point.x >= 0 &&  point.y >= 0 )
 	{
 		pContextMenu->TrackPopupMenu( 
 			TPM_LEFTALIGN | TPM_RIGHTBUTTON ,
 			point.x , point.y , 
-			AfxGetMainWnd() ) ;	//	this ‚ğw’è‚·‚é‚ÆAApp¨Doc¨View ‚Ì
-								//ƒRƒ}ƒ“ƒhƒ`ƒF[ƒ“‚ª“®ì‚µ‚Ü‚¹‚ñB
+			AfxGetMainWnd() ) ;	//	this ã‚’æŒ‡å®šã™ã‚‹ã¨ã€Appâ†’Docâ†’View ã®
+								//ã‚³ãƒãƒ³ãƒ‰ãƒã‚§ãƒ¼ãƒ³ãŒå‹•ä½œã—ã¾ã›ã‚“ã€‚
 	}
 	else
 	{
@@ -3449,7 +3449,7 @@ void CWndDcdGridCrossingCheck::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
 	//	{
 	//		if (getCentDedDia()->getWaitOperationUpdate())
 	//		{
-	//			iRv = -1;	//‰^—pXV—}~ó‘Ô‚Å‚·
+	//			iRv = -1;	//é‹ç”¨æ›´æ–°æŠ‘æ­¢çŠ¶æ…‹ã§ã™
 	//		}
 	//	}
 	//	CdAllOperationTableYColSpec aCdAllOperationTableYColSpec = getYColSpecOfFocus();
@@ -3460,12 +3460,12 @@ void CWndDcdGridCrossingCheck::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
 	//			if (aCdAllOperationTableYColSpec.getColumnType() !=
 	//				CdAllOperationTableYColSpec::ColumnType_Operation)
 	//			{
-	//				iRv = -2;	//ƒtƒH[ƒJƒX‚ª—ñÔˆÊ’uˆÈŠO‚È‚ç•s‰Â
+	//				iRv = -2;	//ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ãŒåˆ—è»Šä½ç½®ä»¥å¤–ãªã‚‰ä¸å¯
 	//			}
 	//		}
 	//		else
 	//		{
-	//			iRv = -1; //•¡”‘I‘ğ‚Í•s‰Â
+	//			iRv = -1; //è¤‡æ•°é¸æŠã¯ä¸å¯
 	//		}
 	//	}
 
@@ -3479,7 +3479,7 @@ void CWndDcdGridCrossingCheck::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
 	//	//	ERessyahoukou eRessyahoukou = itr->aRessyaProperty.getRessyahoukou();
 	//	//	int iRessyaidx = itr->aRessyaProperty.getRessyaIndex();
 	//	//	// --------------------------------
-	//	//	//	•\ƒrƒ…[‚ğŠJ‚­
+	//	//	//	æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã‚’é–‹ã
 	//	//	// --------------------------------
 	//	//	CJikokuhyouView* pCJikokuhyouView = NULL;
 	//	//	if (iRv >= 0)
@@ -3495,11 +3495,11 @@ void CWndDcdGridCrossingCheck::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
 	//	//					&pCJikokuhyouView);
 	//	//			if (pCJikokuhyouView == NULL)
 	//	//			{
-	//	//				iRv = -3;	//	•\ƒrƒ…[‚ÌƒI[ƒvƒ“‚É¸”s‚µ‚Ü‚µ‚½
+	//	//				iRv = -3;	//	æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã®ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ
 	//	//			}
 	//	//		}
-	//	//		//pCJikokuhyouDoc = •\ƒhƒLƒ…ƒƒ“ƒg
-	//	//		//pCJikokuhyouView = •\ƒrƒ…[
+	//	//		//pCJikokuhyouDoc = æ™‚åˆ»è¡¨ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆ
+	//	//		//pCJikokuhyouView = æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼
 	//	//	}
 
 	//	//	if (iRv >= 0)
@@ -3558,7 +3558,7 @@ void CWndDcdGridCrossingCheck::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
 	//	//			CentDedRessya aCentDedRessya = getCentDedRessyaCont(eRessyahoukou)->get(iRessyaidx);
 	//	//			pCJikokuhyouView->setFocusToRessyaIndex(iRessyaidx, aCentDedRessya.getValidSihatsuEki());
 	//	//		}
-	//	//		iRv = 1;	//	•\ƒrƒ…[‚ÖˆÚ“®‚µ‚Ü‚µ‚½
+	//	//		iRv = 1;	//	æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ã¸ç§»å‹•ã—ã¾ã—ãŸ
 	//	//	}
 	//	//}
 
@@ -3584,14 +3584,14 @@ void CWndDcdGridCrossingCheck::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
 
 //void CWndDcdGridCrossingCheck::OnAllOperationtableProp()
 //{
-//	// TODO: ‚±‚±‚ÉƒRƒ}ƒ“ƒh ƒnƒ“ƒhƒ‰[ ƒR[ƒh‚ğ’Ç‰Á‚µ‚Ü‚·B
+//	// TODO: ã“ã“ã«ã‚³ãƒãƒ³ãƒ‰ ãƒãƒ³ãƒ‰ãƒ©ãƒ¼ ã‚³ãƒ¼ãƒ‰ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 //	OnAllOperationTableProp_Process(FALSE);
 //}
 //
 //
 //void CWndDcdGridCrossingCheck::OnUpdateAllOperationtableProp(CCmdUI* pCmdUI)
 //{
-//	// TODO:‚±‚±‚ÉƒRƒ}ƒ“ƒhXV UI ƒnƒ“ƒhƒ‰[ ƒR[ƒh‚ğ’Ç‰Á‚µ‚Ü‚·B
+//	// TODO:ã“ã“ã«ã‚³ãƒãƒ³ãƒ‰æ›´æ–° UI ãƒãƒ³ãƒ‰ãƒ©ãƒ¼ ã‚³ãƒ¼ãƒ‰ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 //	pCmdUI->Enable(OnAllOperationTableProp_Process(TRUE) >= 0);
 //}
 
@@ -3599,28 +3599,28 @@ void CWndDcdGridCrossingCheck::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
 
 void CWndDcdGridCrossingCheck::OnCrossingCheckMovetojikokuhyou()
 {
-	// TODO: ‚±‚±‚ÉƒRƒ}ƒ“ƒh ƒnƒ“ƒhƒ‰[ ƒR[ƒh‚ğ’Ç‰Á‚µ‚Ü‚·B
+	// TODO: ã“ã“ã«ã‚³ãƒãƒ³ãƒ‰ ãƒãƒ³ãƒ‰ãƒ©ãƒ¼ ã‚³ãƒ¼ãƒ‰ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 	OnCrossingCheckMovetojikokuhyou_Process(FALSE);
 }
 
 
 void CWndDcdGridCrossingCheck::OnUpdateCrossingCheckMovetojikokuhyou(CCmdUI *pCmdUI)
 {
-	// TODO:‚±‚±‚ÉƒRƒ}ƒ“ƒhXV UI ƒnƒ“ƒhƒ‰[ ƒR[ƒh‚ğ’Ç‰Á‚µ‚Ü‚·B
+	// TODO:ã“ã“ã«ã‚³ãƒãƒ³ãƒ‰æ›´æ–° UI ãƒãƒ³ãƒ‰ãƒ©ãƒ¼ ã‚³ãƒ¼ãƒ‰ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 	pCmdUI->Enable(OnCrossingCheckMovetojikokuhyou_Process(TRUE) >= 0);
 }
 
 
 void CWndDcdGridCrossingCheck::OnCrossingCheckMovetodiagram()
 {
-	// TODO: ‚±‚±‚ÉƒRƒ}ƒ“ƒh ƒnƒ“ƒhƒ‰[ ƒR[ƒh‚ğ’Ç‰Á‚µ‚Ü‚·B
+	// TODO: ã“ã“ã«ã‚³ãƒãƒ³ãƒ‰ ãƒãƒ³ãƒ‰ãƒ©ãƒ¼ ã‚³ãƒ¼ãƒ‰ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 	OnCrossingCheckMovetodiagram_Process(FALSE);
 }
 
 
 void CWndDcdGridCrossingCheck::OnUpdateCrossingCheckMovetodiagram(CCmdUI *pCmdUI)
 {
-	// TODO:‚±‚±‚ÉƒRƒ}ƒ“ƒhXV UI ƒnƒ“ƒhƒ‰[ ƒR[ƒh‚ğ’Ç‰Á‚µ‚Ü‚·B
+	// TODO:ã“ã“ã«ã‚³ãƒãƒ³ãƒ‰æ›´æ–° UI ãƒãƒ³ãƒ‰ãƒ©ãƒ¼ ã‚³ãƒ¼ãƒ‰ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 	pCmdUI->Enable(OnCrossingCheckMovetodiagram_Process(TRUE) >= 0);
 }
 

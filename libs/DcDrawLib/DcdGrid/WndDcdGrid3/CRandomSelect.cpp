@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -70,10 +70,10 @@ Copyright (C) 2006-2017 take-okm
 */
 /** @file */
 
-#include "DcdGrid\WndDcdGrid3\CRandomSelect.h"
-#include "DcdGrid\WndDcdGrid3\CFocus.h"
-#include "DcdGrid\WndDcdGrid3\CXDcdGrid.h"
-#include "DcdGrid\WndDcdGrid3\CWndDcdGrid.h"
+#include "DcdGrid¥WndDcdGrid3¥CRandomSelect.h"
+#include "DcdGrid¥WndDcdGrid3¥CFocus.h"
+#include "DcdGrid¥WndDcdGrid3¥CXDcdGrid.h"
+#include "DcdGrid¥WndDcdGrid3¥CWndDcdGrid.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -86,7 +86,7 @@ namespace DcdGrid{
 namespace WndDcdGrid3{
 
 	// --------------------------------
-	//@name �����֐�
+	//@name 下請関数
 	// --------------------------------
 CSelectCell* CRandomSelect::getFocusSelectCell() 
 {
@@ -104,26 +104,26 @@ CSelectCell* CRandomSelect::getFocusSelectCell()
 }
 
 	// --------------------------------
-	//@name update_adjustProp �����֐�
+	//@name update_adjustProp 下請関数
 	// --------------------------------
 bool CRandomSelect::update_adjustProp_updateColumnNumberSelect() 
 {
 	bool bRv = false ;
 
-	//	�ύX�Ώۂ̒l�̃L���b�V��
+	//	変更対象の値のキャッシュ
 	CdDcdPosXy posxyColumnNumberAnchorCellNew = m_ColumnNumberAnchorCell ;
 
-	//	�����l��false�B
-	//	���ׂẴZ���̑I����Ԃ���������K�v������Ɣ��f���ꂽ���_�� true �B
+	//	初期値はfalse。
+	//	すべてのセルの選択状態を解除する必要があると判断された時点で true 。
 	bool bClearSelectRequired = false ;
 
 	CdDcdPosXy	aColumnNumberFocus = 
 		m_pCWndDcdGrid->getCFocus()->getFocusCellColumnNumber() ;
-	//aColumnNumberFocus = �t�H�[�J�X�Z���̗�ԍ�
+	//aColumnNumberFocus = フォーカスセルの列番号
 
 	// ----------------------------------------------------------------
-	//	�A���J�[�Z���̐��K��(�A���J�[�Z�����O���b�h�͈̔͊O�Ȃ�A
-	//	NULL �ɏC��
+	//	アンカーセルの正規化(アンカーセルがグリッドの範囲外なら、
+	//	NULL に修正
 	// ----------------------------------------------------------------
 	if ( posxyColumnNumberAnchorCellNew != ColumnNumberPosXy_NULL() )
 	{
@@ -138,50 +138,50 @@ bool CRandomSelect::update_adjustProp_updateColumnNumberSelect()
 	}
 
 	// ----------------------------------------------------------------
-	//	�t�H�[�J�X�Z���̈ړ��ɏ]����
-	//	m_ColumnNumberSelect,m_ColumnNumberAnchorCell ���X�V���܂��B
+	//	フォーカスセルの移動に従って
+	//	m_ColumnNumberSelect,m_ColumnNumberAnchorCell を更新します。
 	// ----------------------------------------------------------------
 
 	CSelect*	pCSelect = m_pCWndDcdGrid->getCSelect() ;
 	CdDcdZoneXy	zonexyColumnNumberSelectLimit = 
 		pCSelect->getColumnNumberSelectLimitRegularized() ;
-	//zonexyColumnNumberSelectLimit = �I���\�ȃZ���̗�ԍ��͈̔́B
+	//zonexyColumnNumberSelectLimit = 選択可能なセルの列番号の範囲。
 
 	// --------------------------------
-	//��Ctrl��Shift��������Ȃ���ԂŁA�h���b�O(MouseMove,�^�C�}�X�N���[��)�ȊO�ɂ��t�H�[�J�X�ړ�
-	//�@�� �A���J�[�Z���͍X�V�B���ׂẴZ���̑I����Ԃ������B
+	//□CtrlもShiftも押されない状態で、ドラッグ(MouseMove,タイマスクロール)以外によるフォーカス移動
+	//　→ アンカーセルは更新。すべてのセルの選択状態を解除。
 	// --------------------------------
 
 	if ( m_ColumnNumberFocus_Old != aColumnNumberFocus )
-	{	//	�t�H�[�J�X�Z�����ړ�
+	{	//	フォーカスセルが移動
 		if ( !m_pCWndDcdGrid->isCtrlPressed() && 
 			!m_pCWndDcdGrid->isShiftPressed() && 
 			!m_pCWndDcdGrid->isDragging() )
-		{	//��Ctrl��Shift��������Ȃ���ԂŁA
-			//	�h���b�O(MouseMove,�^�C�}�X�N���[��)�ȊO�ɂ��t�H�[�J�X�ړ�
+		{	//□CtrlもShiftも押されない状態で、
+			//	ドラッグ(MouseMove,タイマスクロール)以外によるフォーカス移動
 			
-			//�A���J�[�Z���͍X�V�B
+			//アンカーセルは更新。
 			posxyColumnNumberAnchorCellNew = aColumnNumberFocus ;
 
-			// ���ׂẴZ���̑I����Ԃ�����
+			// すべてのセルの選択状態を解除
 			bClearSelectRequired = true ;
 		}
 		// --------------------------------
 	}
 	
 	// --------------------------------
-	//	��Ctrl�������ꂽ��ԂŁA�h���b�O�ȊO�ɂ��t�H�[�J�X�ړ�
-	//	�@���A���J�[�Z���̑I����Ԃ�I���ɂ���B
-	//	�@�@�A���J�[�Z����NULL�ɂ���B(RandomSelect�̃A���J�[�Z���́A
-	//	�@�@RandomSelect�ɂ�鏉��̑I���g�O�����s��ꂽ��ɁA
-	//	�@�@1�񂾂��I����Ԃɂ��܂��B)
+	//	□Ctrlが押された状態で、ドラッグ以外によるフォーカス移動
+	//	　→アンカーセルの選択状態を選択にする。
+	//	　　アンカーセルをNULLにする。(RandomSelectのアンカーセルは、
+	//	　　RandomSelectによる初回の選択トグルが行われた後に、
+	//	　　1回だけ選択状態にします。)
 	// --------------------------------
 	if ( m_ColumnNumberFocus_Old != aColumnNumberFocus )
-	{	//	�t�H�[�J�X�Z�����ړ�
+	{	//	フォーカスセルが移動
 		if ( m_pCWndDcdGrid->isCtrlPressed() && 
 			!m_pCWndDcdGrid->isDragging() )
 		{
-				//	���A���J�[�Z���̑I����Ԃ�I���ɂ���B
+				//	→アンカーセルの選択状態を選択にする。
 				{
 					CSelectCell* pCell = NULL ;
 					if ( m_ColumnNumberAnchorCell != CFocus::ColumnNumberPosXy_NULL() )
@@ -202,21 +202,21 @@ bool CRandomSelect::update_adjustProp_updateColumnNumberSelect()
 
 
 	// ----------------------------------------------------------------
-	//	�����̍X�V
+	//	属性の更新
 	// ----------------------------------------------------------------
 	if ( m_ColumnNumberAnchorCell != posxyColumnNumberAnchorCellNew )
 	{
 		m_ColumnNumberAnchorCell = posxyColumnNumberAnchorCellNew ;
 		bRv = true ;
 	}
-	if ( bClearSelectRequired )		// ���ׂẴZ���̑I����Ԃ�����
+	if ( bClearSelectRequired )		// すべてのセルの選択状態を解除
 	{
 		m_pCWndDcdGrid->getCSelect()->clearSelect() ;
 		bRv = true ;
 	}
 
 	// --------------------------------
-	//	�O��l���X�V
+	//	前回値を更新
 	// --------------------------------
 	m_ColumnNumberFocus_Old = aColumnNumberFocus ;
 
@@ -225,26 +225,26 @@ bool CRandomSelect::update_adjustProp_updateColumnNumberSelect()
 
 bool CRandomSelect::update_adjustProp_updateCSelectCell() 
 {
-	//	�Z���I����Ԃ̍X�V�́A OnLButtonDown(),OnKeyDown() �ōs�����߁A
-	//	�����ł͏����͂���܂���B
+	//	セル選択状態の更新は、 OnLButtonDown(),OnKeyDown() で行うため、
+	//	ここでは処理はありません。
 	return false ;
 }
 
 	// --------------------------------
-	//@name CWndDcdGrid ����̈Ϗ�
+	//@name CWndDcdGrid からの委譲
 	// --------------------------------
 bool CRandomSelect::update_adjustProp() 
 {
 	bool	bRv = false ;
 	if ( m_bIsEnable )
 	{
-		//	�t�H�[�J�X�Z���̈ړ��ɏ]���āA
-		//	m_ColumnNumberAnchorCell , m_ColumnNumberSelect ���X�V���܂��B
+		//	フォーカスセルの移動に従って、
+		//	m_ColumnNumberAnchorCell , m_ColumnNumberSelect を更新します。
 		//	
-		//	m_ColumnNumberAnchorCell�Em_ColumnNumberSelect �𐳋K�����܂��B
+		//	m_ColumnNumberAnchorCell・m_ColumnNumberSelect を正規化します。
 		bRv |= update_adjustProp_updateColumnNumberSelect() ;
 
-		//	�I���Z���̏�Ԃ��ACSelectCell �ɔ��f����
+		//	選択セルの状態を、CSelectCell に反映する
 		bRv |= update_adjustProp_updateCSelectCell() ;
 	}
 	else
@@ -258,29 +258,29 @@ bool CRandomSelect::update_adjustProp()
 bool CRandomSelect::update_updateScreen() 
 {
 	bool bRv = false ;
-	//	���̃N���X�ł͏����͂���܂���(�ĕ`��́ACSelect �ɂčs���܂�)
+	//	このクラスでは処理はありません(再描画は、CSelect にて行われます)
 	return bRv ;
 }
 bool CRandomSelect::OnPaint( IfDcdTarget* pIfDcdTarget ) 
 {
 	bool bRv = false ;
-	//	���̃N���X�ł͏����͂���܂���(�ĕ`��́ACSelect �ɂčs���܂�)
+	//	このクラスでは処理はありません(再描画は、CSelect にて行われます)
 	return bRv ;
 }
 
 void CRandomSelect::OnSize(UINT nType, int cx, int cy)
 {
-	//	���̃N���X�ł͏����͂���܂���
+	//	このクラスでは処理はありません
 }
 
 void CRandomSelect::OnSetFocus(CWnd* pOldWnd)
 {
-	//	���̃N���X�ł́A�����͂���܂���B
+	//	このクラスでは、処理はありません。
 }
 
 void CRandomSelect::OnKillFocus(CWnd* pNewWnd)
 {
-	//	���̃N���X�ł́A�����͂���܂���B
+	//	このクラスでは、処理はありません。
 }
 
 
@@ -288,24 +288,24 @@ void CRandomSelect::OnKillFocus(CWnd* pNewWnd)
 
 void CRandomSelect::OnLButtonDown(UINT nFlags, CPoint point) 
 {
-	//	CWndDcdGrid �̓��ꃁ�\�b�h�̈Ϗ����󂯂܂��B
+	//	CWndDcdGrid の同一メソッドの委譲を受けます。
 
-	//��Ctrl+�O���b�h��ł̃}�E�X�N���b�N@n
-	//	�@���A���J�[�Z���̑I����Ԃ�I���ɂ���B
-	//	�@�� �t�H�[�J�X�Z���̑I����Ԃ��g�O������
-	if ( m_bIsEnable )	//	�����_���I�����L��
+	//□Ctrl+グリッド上でのマウスクリック@n
+	//	　→アンカーセルの選択状態を選択にする。
+	//	　→ フォーカスセルの選択状態をトグルする
+	if ( m_bIsEnable )	//	ランダム選択が有効
 	{
 		CdDcdPosXy	posCursorPos( point.x , point.y ) ;
 		CDcdGridCell* pCell = 
 			m_pCWndDcdGrid->getCellOfPos( posCursorPos ) ;
 		if ( pCell != NULL )
 		{
-			//	�}�E�X���Z����ɂ����ԂŃN���b�N
-			if ( m_pCWndDcdGrid->isCtrlPressed() )	//	Ctrl��������
+			//	マウスがセル上にある状態でクリック
+			if ( m_pCWndDcdGrid->isCtrlPressed() )	//	Ctrl押し下げ
 			{
-				//	Ctrl+�O���b�h��ł̃}�E�X�N���b�N
+				//	Ctrl+グリッド上でのマウスクリック
 
-				//	�� �t�H�[�J�X�Z���̑I����Ԃ��g�O������
+				//	→ フォーカスセルの選択状態をトグルする
 				{
 					CSelectCell* pCSelectCell = getFocusSelectCell() ;
 					if ( pCSelectCell != NULL )
@@ -315,14 +315,14 @@ void CRandomSelect::OnLButtonDown(UINT nFlags, CPoint point)
 					}
 				}
 
-				//	���A���J�[�Z���̑I����Ԃ�I���ɂ���B
+				//	→アンカーセルの選択状態を選択にする。
 				//note:
-				//	���̏����́A�u�t�H�[�J�X�Z���̑I����Ԃ��g�O������v�������
-				//	�s���K�v������܂��B
-				//	�������t�̏ꍇ�́A
-				//		�����_���Z���I���̂Ȃ���ԂŁACtrl+Space������
-				//		�����_���Z���I���̂Ȃ���ԂŁACtrl�������Ȃ���t�H�[�J�X�Z�����N���b�N
-				//	�̂����ꂩ�����s�����Ƃ��ɁA�t�H�[�J�X�Z������I����ԂɂȂ�܂��B
+				//	この処理は、「フォーカスセルの選択状態をトグルする」よりも後に
+				//	行う必要があります。
+				//	順序が逆の場合は、
+				//		ランダムセル選択のない状態で、Ctrl+Spaceを押す
+				//		ランダムセル選択のない状態で、Ctrlを押しながらフォーカスセルをクリック
+				//	のいずれかを実行したときに、フォーカスセルが非選択状態になります。
 				{
 					CSelectCell* pCell = NULL ;
 					if ( m_ColumnNumberAnchorCell != CFocus::ColumnNumberPosXy_NULL() )
@@ -344,32 +344,32 @@ void CRandomSelect::OnLButtonDown(UINT nFlags, CPoint point)
 
 void CRandomSelect::OnLButtonUp(UINT nFlags, CPoint point) 
 {
-	//	CWndDcdGrid �̓��ꃁ�\�b�h�̈Ϗ����󂯂܂��B
+	//	CWndDcdGrid の同一メソッドの委譲を受けます。
 	//
-	//	���̃N���X�ł́A�����͂���܂���B
+	//	このクラスでは、処理はありません。
 }
 
 void CRandomSelect::OnMouseMove(UINT nFlags, CPoint point) 
 {
-	//	CWndDcdGrid �̓��ꃁ�\�b�h�̈Ϗ����󂯂܂��B
+	//	CWndDcdGrid の同一メソッドの委譲を受けます。
 	//
-	//	���̃N���X�ł́A�����͂���܂���B
+	//	このクラスでは、処理はありません。
 }
 
 void CRandomSelect::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags) 
 {
-	//	CWndDcdGrid �̓��ꃁ�\�b�h�̈Ϗ����󂯂܂��B
+	//	CWndDcdGrid の同一メソッドの委譲を受けます。
 	//
-	//��Ctrl+Space�L�[@n
-	//�@���t�H�[�J�X�Z���̑I����Ԃ��g�O������
-	if ( m_bIsEnable )	//	�����_���I�����L��
+	//□Ctrl+Spaceキー@n
+	//　→フォーカスセルの選択状態をトグルする
+	if ( m_bIsEnable )	//	ランダム選択が有効
 	{
 		if ( m_pCWndDcdGrid->isCtrlPressed() && 
 			nChar == VK_SPACE )
 		{
-				//	Ctrl+Space�L�[
+				//	Ctrl+Spaceキー
 				
-				//	�� �t�H�[�J�X�Z���̑I����Ԃ��g�O������
+				//	→ フォーカスセルの選択状態をトグルする
 				{
 					CSelectCell* pCSelectCell = getFocusSelectCell() ;
 					if ( pCSelectCell != NULL )
@@ -378,14 +378,14 @@ void CRandomSelect::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
 							!pCSelectCell->getIsSelected() ) ;
 					}
 				}
-				//	���A���J�[�Z���̑I����Ԃ�I���ɂ���B
+				//	→アンカーセルの選択状態を選択にする。
 				//note:
-				//	���̏����́A�u�t�H�[�J�X�Z���̑I����Ԃ��g�O������v�������
-				//	�s���K�v������܂��B
-				//	�������t�̏ꍇ�́A
-				//		�����_���Z���I���̂Ȃ���ԂŁACtrl+Space������
-				//		�����_���Z���I���̂Ȃ���ԂŁACtrl�������Ȃ���t�H�[�J�X�Z�����N���b�N
-				//	�̂����ꂩ�����s�����Ƃ��ɁA�t�H�[�J�X�Z������I����ԂɂȂ�܂��B
+				//	この処理は、「フォーカスセルの選択状態をトグルする」よりも後に
+				//	行う必要があります。
+				//	順序が逆の場合は、
+				//		ランダムセル選択のない状態で、Ctrl+Spaceを押す
+				//		ランダムセル選択のない状態で、Ctrlを押しながらフォーカスセルをクリック
+				//	のいずれかを実行したときに、フォーカスセルが非選択状態になります。
 				{
 					CSelectCell* pCell = NULL ;
 					if ( m_ColumnNumberAnchorCell != CFocus::ColumnNumberPosXy_NULL() )
@@ -404,11 +404,11 @@ void CRandomSelect::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
 
 void CRandomSelect::InvalidateGrid( ) 
 {
-	//	���̃N���X�ł͏����͂���܂���(�ĕ`��́ACSelect �ɂčs���܂�)
+	//	このクラスでは処理はありません(再描画は、CSelect にて行われます)
 }
 
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 CRandomSelect::CRandomSelect( CWndDcdGrid* pCWndDcdGrid ) 
 	: m_pCWndDcdGrid( pCWndDcdGrid )
@@ -416,12 +416,12 @@ CRandomSelect::CRandomSelect( CWndDcdGrid* pCWndDcdGrid )
 	, m_ColumnNumberFocus_Old( ColumnNumberPosXy_NULL() ) 
 {
 }
-CRandomSelect::~CRandomSelect() 
+CRandomSelect::‾CRandomSelect() 
 {
 }
 
 	// ********************************
-	//@name CSelect �֘A
+	//@name CSelect 関連
 	// ********************************
 CWndDcdGrid* CRandomSelect::getCWndDcdGrid() 
 {
@@ -429,7 +429,7 @@ CWndDcdGrid* CRandomSelect::getCWndDcdGrid()
 }
 
 	// ********************************
-	//@name CSelect ����
+	//@name CSelect 属性
 	// ********************************
 bool CRandomSelect::getIsEnable() 
 {

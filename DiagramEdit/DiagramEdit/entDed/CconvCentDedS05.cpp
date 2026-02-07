@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -78,20 +78,20 @@ Copyright (C) 2006-2017 take-okm
 #include <map>
 using namespace std ;
 
-#include "str\strToInt.h"
-#include "str\stringSplit.h"
-#include "str\tstring.h"
-#include "NsOu\OuNew.h"
-#include "NsOu\dynamic_castOu.h"
-#include "NsMu\CaMui.h"
-#include "DcdCd\DcDrawProp\CconvDcDrawProp.h"
+#include "str¥strToInt.h"
+#include "str¥stringSplit.h"
+#include "str¥tstring.h"
+#include "NsOu¥OuNew.h"
+#include "NsOu¥dynamic_castOu.h"
+#include "NsMu¥CaMui.h"
+#include "DcdCd¥DcDrawProp¥CconvDcDrawProp.h"
 #include "CconvCentDedS05.h"
 
 using namespace OuLib::Str ;
 using namespace OuLib::Str::OuPropertiesText;
 using namespace OuLib::Str::OuPropertiesText::ErrorInfo;
 
-/*delete �x���̂ŗ}�~
+/*delete 遅いので抑止
 #ifndef _CONSOLE
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -103,7 +103,7 @@ static TCHAR THIS_FILE[] = __FILE__;
 
 namespace entDed{
 
-/** �����̏�����ێ����܂��B */
+/** 時刻の書式を保持します。 */
 const CdDedJikoku::CConv	g_CdDedJikokuConv(
 	true ,		//	NoColon 
 	CdDedJikoku::CConv::EHour_ZeroToNone ,
@@ -113,11 +113,11 @@ const CdDedJikoku::CConv	g_CdDedJikokuConv(
 // ********************************
 
 /**
-	aCdColorProp �𕶎���ɕϊ����܂��B
+	aCdColorProp を文字列に変換します。
 @param aCdColorProp [in]
-	�ϊ����̒l���w�肵�Ă��������B
+	変換元の値を指定してください。
 @return
-	�ϊ����ʂ�Ԃ��܂��B
+	変換結果を返します。
 */
 static tstring CdColorProp_to_string( const CdColorProp& aCdColorProp )
 {
@@ -128,11 +128,11 @@ static tstring CdColorProp_to_string( const CdColorProp& aCdColorProp )
 
 
 /**
-	������� aCdColorProp �ɕϊ����܂��B
+	文字列を aCdColorProp に変換します。
 @param aString [in]
-	�ϊ����̒l���w�肵�Ă��������B
+	変換元の値を指定してください。
 @return
-	�ϊ����ʂ�Ԃ��܂��B
+	変換結果を返します。
  */
 static CdColorProp CdColorProp_from_string( const tstring& aString  )
 {
@@ -165,7 +165,7 @@ int CconvCentDedS05::CentDedEkiTrack2_From_OuPropertiesText(
 			COuErrorInfo	aCOuErrorInfo(ERRREASON_TrackNameIsInvalid());
 			aCOuErrorInfo.getProp()->setValue(nameTrackName, strValue);
 			pCOuErrorInfoContainer->insert(aCOuErrorInfo);
-			iRv = -11;	//	TrackName ���w�肳��Ă��܂���B
+			iRv = -11;	//	TrackName が指定されていません。
 		}
 		else
 		{
@@ -181,7 +181,7 @@ int CconvCentDedS05::CentDedEkiTrack2_From_OuPropertiesText(
 			COuErrorInfo	aCOuErrorInfo(ERRREASON_TrackRyakusyouIsInvalid());
 			aCOuErrorInfo.getProp()->setValue(nameTrackRyakusyou, strValue);
 			pCOuErrorInfoContainer->insert(aCOuErrorInfo);
-			iRv = -21;	//	TrackRyakusyou ���w�肳��Ă��܂���B
+			iRv = -21;	//	TrackRyakusyou が指定されていません。
 		}
 		else
 		{
@@ -197,7 +197,7 @@ int CconvCentDedS05::CentDedEkiTrack2_From_OuPropertiesText(
 		//	COuErrorInfo	aCOuErrorInfo(ERRREASON_TrackNoboriRyakusyouIsInvalid());
 		//	aCOuErrorInfo.getProp()->setValue(nameTrackNoboriRyakusyou, strValue);
 		//	pCOuErrorInfoContainer->insert(aCOuErrorInfo);
-		//	iRv = -31;	//	TrackNoboriRyakusyou ���w�肳��Ă��܂���B
+		//	iRv = -31;	//	TrackNoboriRyakusyou が指定されていません。
 		//}
 		//else
 		if (!strValue.empty())
@@ -239,11 +239,11 @@ int CconvCentDedS05::CentDedEkiTrack2Cont_From_OuPropertiesText(
 					aCOuErrorInfo.getProp()->setValue(
 						ERRPROP_Index(), stringOf(idx));
 					pCOuErrorInfoContainer->insert(aCOuErrorInfo);
-					iRv = -101;	//	EkiTrack2 ���f�B���N�g���ł͂���܂���B
+					iRv = -101;	//	EkiTrack2 がディレクトリではありません。
 
 				}
 			}
-			//pCDirectory = �Ή�����f�B���N�g��
+			//pCDirectory = 対応するディレクトリ
 
 			CentDedEkiTrack2 aCentDedEkiTrack2;
 			if (iRv >= 0)
@@ -255,12 +255,12 @@ int CconvCentDedS05::CentDedEkiTrack2Cont_From_OuPropertiesText(
 				if (iResult < 0)
 				{
 					iRv = iResult;
-					//	-	-11 ;	//	TrackName ���w�肳��Ă��܂���B
-					//	-	-21 ;	//	TrackRyakusyou ���w�肳��Ă��܂���B
-					//	-	-31 ;	//	TrackNoboriRyakusyou ���w�肳��Ă��܂���B
+					//	-	-11 ;	//	TrackName が指定されていません。
+					//	-	-21 ;	//	TrackRyakusyou が指定されていません。
+					//	-	-31 ;	//	TrackNoboriRyakusyou が指定されていません。
 				}
 			}
-			//aCentDedEki = Directory �̓��e�𔽉f���܂����B
+			//aCentDedEki = Directory の内容を反映しました。
 			if (iRv >= 0)
 			{
 				pCentDedEkiTrack2Cont->insert(aCentDedEkiTrack2);
@@ -370,13 +370,13 @@ int CconvCentDedS05::CentDedEki_From_OuPropertiesText(
 			COuErrorInfo aCOuErrorInfo( ERRREASON_EkijikokukeisikiIsInvalid() ) ;
 			aCOuErrorInfo.getProp()->setValue( nameEkijikokukeisiki , strValue ) ;
 			pCOuErrorInfoContainer->insert( aCOuErrorInfo ) ;
-			iRv = -22 ;	//	Ekijikokukeisiki �̒l���s���ł��B
+			iRv = -22 ;	//	Ekijikokukeisiki の値が不正です。
 		}
 		else
 		{
 			aCentDedEki.setEkijikokukeisiki( eValue ) ; 
 			/**
-				�w�����`�������ƂɁA�J�X�^���\�����[�h���̎����\����ݒ肵�܂�
+				駅時刻形式をもとに、カスタム表示モード時の時刻表示を設定します
 			*/
 			if (eValue == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 				eValue == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
@@ -423,7 +423,7 @@ int CconvCentDedS05::CentDedEki_From_OuPropertiesText(
 				aCentDedEki.setJikokuhyouHatsuJikokuDisplayNobori(false);
 			}
 
-			//Ver2.00.05 ���t�@�C����ǂݍ��񂾎��A�������̂݉w�̔Ԑ��\���ȗ���ON�ɂ���
+			//Ver2.00.05 旧ファイルを読み込んだ時、発時刻のみ駅の番線表示省略をONにする
 			if (eValue == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu ||
 				eValue == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku ||
 				eValue == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -444,7 +444,7 @@ int CconvCentDedS05::CentDedEki_From_OuPropertiesText(
 			COuErrorInfo aCOuErrorInfo( ERRREASON_EkikiboIsInvalid() ) ;
 			aCOuErrorInfo.getProp()->setValue( nameEkikibo , strValue ) ;
 			pCOuErrorInfoContainer->insert( aCOuErrorInfo ) ;
-			iRv = -32 ;	//	Ekikibo �̒l���s���ł��B
+			iRv = -32 ;	//	Ekikibo の値が不正です。
 		}
 		else
 		{
@@ -464,7 +464,7 @@ int CconvCentDedS05::CentDedEki_From_OuPropertiesText(
 			COuErrorInfo aCOuErrorInfo( ERRREASON_DiagramRessyajouhouHyoujiIsInvalid() ) ;
 			aCOuErrorInfo.getProp()->setValue( nameDiagramRessyajouhouHyoujiKudari , strValue ) ;
 			pCOuErrorInfoContainer->insert( aCOuErrorInfo ) ;
-			iRv = -41 ;	//	DiagramRessyajouhouHyoujiKudari �̒l���s���ł��B
+			iRv = -41 ;	//	DiagramRessyajouhouHyoujiKudari の値が不正です。
 		}
 		else
 		{
@@ -483,7 +483,7 @@ int CconvCentDedS05::CentDedEki_From_OuPropertiesText(
 			COuErrorInfo aCOuErrorInfo( ERRREASON_DiagramRessyajouhouHyoujiIsInvalid() ) ;
 			aCOuErrorInfo.getProp()->setValue( nameDiagramRessyajouhouHyoujiNobori , strValue ) ;
 			pCOuErrorInfoContainer->insert( aCOuErrorInfo ) ;
-			iRv = -42 ;	//	DiagramRessyajouhouHyoujiNobori �̒l���s���ł��B
+			iRv = -42 ;	//	DiagramRessyajouhouHyoujiNobori の値が不正です。
 		}
 		else
 		{
@@ -492,8 +492,8 @@ int CconvCentDedS05::CentDedEki_From_OuPropertiesText(
 	}
 
 	/**
-		Ver2.0�ŁA�Ԑ�Index�̎d�l��ύX�����̂ŁA
-		���`������ǂݍ��ޏꍇ�́A-1����K�v������܂��B
+		Ver2.0で、番線Indexの仕様を変更したので、
+		旧形式から読み込む場合は、-1する必要があります。
 	*/
 	//7.DownMain 
 	if (iRv >= 0)
@@ -614,7 +614,7 @@ int CconvCentDedS05::CentDedEki_From_OuPropertiesText(
 		aCentDedEki.setNextEkiDistance(iValue);
 	}
 
-	//Ver2.00.05 ���t�@�C����ǂݍ��񂾎��A�������̂݉w�̔Ԑ��\���ȗ���ON�ɂ���d�l�ɔ����A���̏������ꎞ�ۗ���
+	//Ver2.00.05 旧ファイルを読み込んだ時、発時刻のみ駅の番線表示省略をONにする仕様に伴い、この処理を一時保留に
 	//17.JikokuhyouTrackOmit
 	//if (iRv >= 0)
 	//{
@@ -637,7 +637,7 @@ int CconvCentDedS05::CentDedEki_From_OuPropertiesText(
 				&aCentDedEkiTrack2Cont,
 				pCDirectory->getIfNodeContainerConst(),
 				pCOuErrorInfoContainer);
-			//iResult = ���݁A���̒l�����̐��ɂȂ邱�Ƃ͂���܂���
+			//iResult = 現在、この値が負の数になることはありません
 			if (iResult < 0)
 			{
 				iRv = iResult;
@@ -686,11 +686,11 @@ int CconvCentDedS05::CentDedEkiCont_From_OuPropertiesText(
 					aCOuErrorInfo.getProp()->setValue( 
 						ERRPROP_Index() , stringOf( idxEki ) ) ;
 					pCOuErrorInfoContainer->insert( aCOuErrorInfo ) ;
-					iRv = -101 ;	//	Eki ���f�B���N�g���ł͂���܂���B
+					iRv = -101 ;	//	Eki がディレクトリではありません。
 
 				}
 			}
-			//pCDirectory = �Ή�����f�B���N�g��
+			//pCDirectory = 対応するディレクトリ
 
 			CentDedEki aCentDedEki ;
 			if ( iRv >= 0 )
@@ -702,13 +702,13 @@ int CconvCentDedS05::CentDedEkiCont_From_OuPropertiesText(
 				if ( iResult < 0 )
 				{
 					iRv = iResult ;
-					//	-	-22 ;	//	Ekijikokukeisiki �̒l���s���ł��B
-					//	-	-32 ;	//	Ekikibo �̒l���s���ł��B
-					//	-	-41 ;	//	DiagramRessyajouhouHyoujiKudari �̒l���s���ł��B
-					//	-	-42 ;	//	DiagramRessyajouhouHyoujiNobori �̒l���s���ł��B
+					//	-	-22 ;	//	Ekijikokukeisiki の値が不正です。
+					//	-	-32 ;	//	Ekikibo の値が不正です。
+					//	-	-41 ;	//	DiagramRessyajouhouHyoujiKudari の値が不正です。
+					//	-	-42 ;	//	DiagramRessyajouhouHyoujiNobori の値が不正です。
 				}
 			}
-			//aCentDedEki = Directory �̓��e�𔽉f���܂����B
+			//aCentDedEki = Directory の内容を反映しました。
 			if ( iRv >= 0 )
 			{
 				pCentDedEkiCont->insert( aCentDedEki ) ;
@@ -795,7 +795,7 @@ int CconvCentDedS05::CdDiagramLineStyle_From_OuPropertiesText(
 			COuErrorInfo	aCOuErrorInfo( ERRREASON_DiagramSenStyleIsInvalid() ) ;
 			aCOuErrorInfo.getProp()->setValue( nameDiagramSenStyle , strValue ) ;
 			pCOuErrorInfoContainer->insert( aCOuErrorInfo ) ;
-			iRv = -52 ;	//	DiagramSenStyle �̒l���s���ł��B
+			iRv = -52 ;	//	DiagramSenStyle の値が不正です。
 		}
 		else
 		{
@@ -838,7 +838,7 @@ int CconvCentDedS05::CentDedRessyasyubetsu_From_OuPropertiesText(
 			COuErrorInfo	aCOuErrorInfo( ERRREASON_SyubetsumeiIsInvalid() ) ;
 			aCOuErrorInfo.getProp()->setValue( nameSyubetsumei , strValue ) ;
 			pCOuErrorInfoContainer->insert( aCOuErrorInfo ) ;
-			iRv = -11 ;	//	Syubetsumei ���w�肳��Ă��܂���B
+			iRv = -11 ;	//	Syubetsumei が指定されていません。
 		}
 		else
 		{
@@ -877,7 +877,7 @@ int CconvCentDedS05::CentDedRessyasyubetsu_From_OuPropertiesText(
 				aCOuErrorInfo.getProp()->setValue( ERRPROP_Name() , nameJikokuhyouFontIndex ) ;
 				aCOuErrorInfo.getProp()->setValue( ERRPROP_Value() , strValue ) ;
 				pCOuErrorInfoContainer->insert( aCOuErrorInfo ) ;
-				iRv = -101 ;	//	�l�̌`��������������܂���B
+				iRv = -101 ;	//	値の形式が正しくありません。
 			}
 			else
 			{
@@ -906,12 +906,12 @@ int CconvCentDedS05::CentDedRessyasyubetsu_From_OuPropertiesText(
 			pCNodeContainer ,
 			pCOuErrorInfoContainer ) ;
 		//iResult = 
-		//	-52 ;	//	DiagramSenStyle �̒l���s���ł��B
+		//	-52 ;	//	DiagramSenStyle の値が不正です。
 		if ( iResult < 0 )
 		{
 			iRv = iResult ;
 			//iRv = 
-			//	-52 ;	//	DiagramSenStyle �̒l���s���ł��B
+			//	-52 ;	//	DiagramSenStyle の値が不正です。
 		}
 		else
 		{
@@ -985,11 +985,11 @@ int CconvCentDedS05::CentDedRessyasyubetsuCont_From_OuPropertiesText(
 					aCOuErrorInfo.getProp()->setValue( 
 						ERRPROP_Index() , stringOf( idx ) ) ;
 					pCOuErrorInfoContainer->insert( aCOuErrorInfo ) ;
-					iRv = -101 ;	//	Ressyasyubetsu ���f�B���N�g���ł͂���܂���B
+					iRv = -101 ;	//	Ressyasyubetsu がディレクトリではありません。
 
 				}
 			}
-			//pCDirectory = �Ή�����f�B���N�g��
+			//pCDirectory = 対応するディレクトリ
 
 			CentDedRessyasyubetsu aCentDedRessyasyubetsu ;
 			if ( iRv >= 0 )
@@ -998,20 +998,20 @@ int CconvCentDedS05::CentDedRessyasyubetsuCont_From_OuPropertiesText(
 					&aCentDedRessyasyubetsu , 
 					pCDirectory->getIfNodeContainerConst() , 
 					pCOuErrorInfoContainer ) ;
-				//	-	-11 ;	//	Syubetsumei ���w�肳��Ă��܂���B
-				//	-	-52 ;	//	DiagramSenStyle �̒l���s���ł��B
+				//	-	-11 ;	//	Syubetsumei が指定されていません。
+				//	-	-52 ;	//	DiagramSenStyle の値が不正です。
 				if ( iResult < 0 )
 				{
 					iRv = iResult ;
-					//	-	-11 ;	//	Syubetsumei ���w�肳��Ă��܂���B
-					//	-	-52 ;	//	DiagramSenStyle �̒l���s���ł��B
+					//	-	-11 ;	//	Syubetsumei が指定されていません。
+					//	-	-52 ;	//	DiagramSenStyle の値が不正です。
 				}
 			}
-			//aCentDedRessyasyubetsu = Directory �̓��e�𔽉f���܂����B
+			//aCentDedRessyasyubetsu = Directory の内容を反映しました。
 			if ( iRv >= 0 )
 			{
-				//	��Ԏ�ʃR���e�i�Ɋ��Ƀf�[�^������ꍇ�́A������㏑�����܂�
-				//	��Ԏ�ʃR���e�i�́A���Ȃ��Ƃ�1�̗v�f�������Ă��܂��B
+				//	列車種別コンテナに既にデータがある場合は、それを上書きします
+				//	列車種別コンテナは、少なくとも1つの要素を持っています。
 				if ( idx < pCentDedRessyasyubetsuCont->size() )
 				{
 					pCentDedRessyasyubetsuCont->set( aCentDedRessyasyubetsu , idx ) ;
@@ -1064,9 +1064,9 @@ int CconvCentDedS05::CentDedEkiJikoku_From_string(
 		strEkiatsukai = strEkijikoku ;
 	}
 
-	//strEkiatsukai = �w���E�󕶎���́w�^�s�Ȃ��x�B"1"�`"3" ;
-	//strChaku = ������
-	//strHatsu = ������
+	//strEkiatsukai = 駅扱・空文字列は『運行なし』。"1"〜"3" ;
+	//strChaku = 着時刻
+	//strHatsu = 発時刻
 
 	tstring strRessyaTrack = strValue2;
 	tstring strRessyaTrackIndex;
@@ -1086,12 +1086,12 @@ int CconvCentDedS05::CentDedEkiJikoku_From_string(
 		iRessyaTrackIndex = _ttoi(strRessyaTrackIndex.c_str());
 		if (!(1 <= iRessyaTrackIndex && iRessyaTrackIndex <= iEkiTrack2Size))
 		{
-			//iRessyaTrackIndex==0(��{��)�̏ꍇ���܂ށB
+			//iRessyaTrackIndex==0(主本線)の場合も含む。
 			iRessyaTrackIndex = iMainTrack;
 		}
 		else
 		{
-			//Ver2.0�ȑO�́A0����{��,1�`size���ʎw��Ȃ̂ŁA-1����B
+			//Ver2.0以前は、0が主本線,1〜sizeが個別指定なので、-1する。
 			iRessyaTrackIndex--;
 		}
 	}
@@ -1102,7 +1102,7 @@ int CconvCentDedS05::CentDedEkiJikoku_From_string(
 		iEkiatsukai = _ttoi( strEkiatsukai.c_str() ) ;
 	}
 	/**
-		Ver2.0 �o�R�Ȃ��폜�ɔ����A�o�R�Ȃ�(3)�͉^�s�Ȃ��ɕύX�B
+		Ver2.0 経由なし削除に伴い、経由なし(3)は運行なしに変更。
 	*/
 	if ( !( 0 <= iEkiatsukai && iEkiatsukai <= 2 ) )
 	{
@@ -1192,14 +1192,14 @@ int CconvCentDedS05::BeforeOperation_From_string(
 		}
 	}
 
-	//strRessyaTrackIndex = ��ԔԐ�Index�A�w�������^�s�����̏ꍇ��
-	//strOperation = ��ƁA0-2
-	//strOperationPara1 = ��Ƃɂ�镍�������A0:�����̏ꍇ�͖����A1:�����̏ꍇ�͔Ԑ��A
-	//2:���o��̏ꍇ�́A�����܂��͏o��̏ꍇ�̂݉^��
-	//strOperationPara2 = ��Ƃɂ�镍�������A0:�����̏ꍇ�͖����A1:�����̏ꍇ�͔������������͂Ȃ��A
-	//2:���o��̏ꍇ�͖���
-	//strOperationPara3 = ��Ƃɂ�镍�������A0:�����̏ꍇ�͖����A1:�����̏ꍇ�͒������������͂Ȃ��A
-	//2:���o��̏ꍇ�͖���
+	//strRessyaTrackIndex = 列車番線Index、駅扱いが運行無しの場合空白
+	//strOperation = 作業、0-2
+	//strOperationPara1 = 作業による附則事項、0:無しの場合は無し、1:入換の場合は番線、
+	//2:入出区の場合は、無しまたは出区の場合のみ運番
+	//strOperationPara2 = 作業による附則事項、0:無しの場合は無し、1:入換の場合は発時刻もしくはなし、
+	//2:入出区の場合は無し
+	//strOperationPara3 = 作業による附則事項、0:無しの場合は無し、1:入換の場合は着時刻もしくはなし、
+	//2:入出区の場合は無し
 
 	int iOperation = 0;
 	if (!strOperation.empty())
@@ -1234,7 +1234,7 @@ int CconvCentDedS05::BeforeOperation_From_string(
 		}
 		else
 		{
-			//Ver2.0�ȑO�́A0����{��,1�`size���ʎw��Ȃ̂ŁA-1����B
+			//Ver2.0以前は、0が主本線,1〜sizeが個別指定なので、-1する。
 			iShuntTrackIndex--;
 		}
 		OperationHatsuJikoku.decode(strOperationPara2);
@@ -1399,14 +1399,14 @@ int CconvCentDedS05::AfterOperation_From_string(
 		}
 	}
 
-	//strRessyaTrackIndex = ��ԔԐ�Index�A�w�������^�s�����̏ꍇ��
-	//strOperation = ��ƁA0-2
-	//strOperationPara1 = ��Ƃɂ�镍�������A0:�����̏ꍇ�͖����A1:�����̏ꍇ�͔Ԑ��A
-	//2:���o��̏ꍇ�́A�����܂��͏o��̏ꍇ�̂݉^��
-	//strOperationPara2 = ��Ƃɂ�镍�������A0:�����̏ꍇ�͖����A1:�����̏ꍇ�͔������������͂Ȃ��A
-	//2:���o��̏ꍇ�͖���
-	//strOperationPara3 = ��Ƃɂ�镍�������A0:�����̏ꍇ�͖����A1:�����̏ꍇ�͒������������͂Ȃ��A
-	//2:���o��̏ꍇ�͖���
+	//strRessyaTrackIndex = 列車番線Index、駅扱いが運行無しの場合空白
+	//strOperation = 作業、0-2
+	//strOperationPara1 = 作業による附則事項、0:無しの場合は無し、1:入換の場合は番線、
+	//2:入出区の場合は、無しまたは出区の場合のみ運番
+	//strOperationPara2 = 作業による附則事項、0:無しの場合は無し、1:入換の場合は発時刻もしくはなし、
+	//2:入出区の場合は無し
+	//strOperationPara3 = 作業による附則事項、0:無しの場合は無し、1:入換の場合は着時刻もしくはなし、
+	//2:入出区の場合は無し
 
 	int iOperation = 0;
 	if (!strOperation.empty())
@@ -1434,7 +1434,7 @@ int CconvCentDedS05::AfterOperation_From_string(
 		}
 		else
 		{
-			//Ver2.0�ȑO�́A0����{��,1�`size���ʎw��Ȃ̂ŁA-1����B
+			//Ver2.0以前は、0が主本線,1〜sizeが個別指定なので、-1する。
 			iShuntTrackIndex--;
 		}
 		OperationHatsuJikoku.decode(strOperationPara2);
@@ -1572,9 +1572,9 @@ int CconvCentDedS05::CentDedRessya_From_OuPropertiesText(
 			bIsNull = true ;
 		}
 	}
-	//bIsNull = ���̗�ԂɊւ���L�q���Ȃ��ꍇ�́A�^�ł��B
-	//eRessyahoukou = 1.Ressyahoukou�̒l�B
-	//	�A���AbIsNull ���^�̏ꍇ�́A���̒l�͖����ł��B
+	//bIsNull = この列車に関する記述がない場合は、真です。
+	//eRessyahoukou = 1.Ressyahoukouの値。
+	//	但し、bIsNull が真の場合は、この値は無効です。
 	
 	if ( !bIsNull )
 	{
@@ -1588,8 +1588,8 @@ int CconvCentDedS05::CentDedRessya_From_OuPropertiesText(
 			pCentDedRessya->setRessyasyubetsuIndex( iValue ) ;
 		}
 		
-		//iRessyasyubetsuIndex = 2.RessyasyubetsuIndex�̒l�B
-		//	�A���AbIsNull ���^�̏ꍇ�́A���̒l�͖����ł��B
+		//iRessyasyubetsuIndex = 2.RessyasyubetsuIndexの値。
+		//	但し、bIsNull が真の場合は、この値は無効です。
 
 		//4."Ressyabangou" ;
 		if ( iRv >= 0 )
@@ -1648,7 +1648,7 @@ int CconvCentDedS05::CentDedRessya_From_OuPropertiesText(
 				}
 			}
 		}
-		//8.�n���I���w��Ƃ̓K�p
+		//8.始発終着駅作業の適用
 		if (iRv >= 0) 
 		{
 			tstring strRessyaTrack = pCNodeContainer->getValue(
@@ -1739,7 +1739,7 @@ int CconvCentDedS05::CentDedRessyaCont_From_OuPropertiesText(
 					iMainTrackCont,
 					pCDirectory->getIfNodeContainerConst() , 
 					pCOuErrorInfoContainer ) ;
-				//iResult = ���݁A���̒l�����̐��ɂȂ邱�Ƃ͂���܂���
+				//iResult = 現在、この値が負の数になることはありません
 				if (iResult < 0)
 				{
 					iRv = iResult;
@@ -1785,7 +1785,7 @@ int CconvCentDedS05::CentDedDia_From_OuPropertiesText(
 		{
 			ErrorInfo::COuErrorInfo aCOuErrorInfo( ERRREASON_DiaNameInvalid() ) ;
 			pCOuErrorInfoContainer->insert( aCOuErrorInfo ) ;
-			iRv = -11 ;	//	DiaName ���w�肳��Ă��܂���B
+			iRv = -11 ;	//	DiaName が指定されていません。
 		}
 		else
 		{
@@ -1853,10 +1853,10 @@ int CconvCentDedS05::CentDedDia_From_OuPropertiesText(
 					ErrorInfo::COuErrorInfo aCOuErrorInfo( ERRREASON_ResyaContIsNotExist() ) ;
 					aCOuErrorInfo.getProp()->setValue( ERRPROP_Ressyahoukou() , strRessyahoukou ) ;
 					pCOuErrorInfoContainer->insert( aCOuErrorInfo ) ;
-					iRv = -12 ;	//	RessyaCont��������܂���B
+					iRv = -12 ;	//	RessyaContが見つかりません。
 				}
 			}
-			//pCDirectory = Kudari,Nobori��RessyaCont
+			//pCDirectory = Kudari,NoboriのRessyaCont
 			if ( iRv >= 0 )
 			{
 				CentDedRessyaCont	aCentDedRessyaCont( 
@@ -1910,12 +1910,12 @@ int CconvCentDedS05::CentDedDiaCont_From_OuPropertiesText(
 					pCentDedEkiCont,
 					pCDirectory->getIfNodeContainerConst() , 
 					pCOuErrorInfoContainer ) ;
-				//	-	-11 ;	//	DiaName ���w�肳��Ă��܂���B
-				//	-	-12 ;	//	RessyaCont��������܂���B
+				//	-	-11 ;	//	DiaName が指定されていません。
+				//	-	-12 ;	//	RessyaContが見つかりません。
 				if ( iResult < 0 )
 				{
-					//	-	-11 ;	//	DiaName ���w�肳��Ă��܂���B
-					//	-	-12 ;	//	RessyaCont��������܂���B
+					//	-	-11 ;	//	DiaName が指定されていません。
+					//	-	-12 ;	//	RessyaContが見つかりません。
 					iRv = iResult ;
 				}
 				else
@@ -1974,18 +1974,18 @@ int CconvCentDedS05::CentDedRosen_From_OuPropertiesText(
 			&aCentDedEkiCont , 
 			pCNodeContainer , 
 			pCOuErrorInfoContainer ) ;
-		//	-	-22 ;	//	Ekijikokukeisiki �̒l���s���ł��B
-		//	-	-32 ;	//	Ekikibo �̒l���s���ł��B
-		//	-	-41 ;	//	DiagramRessyajouhouHyoujiKudari �̒l���s���ł��B
-		//	-	-42 ;	//	DiagramRessyajouhouHyoujiNobori �̒l���s���ł��B
-		//	-	-101 ;	//	Eki ���f�B���N�g���ł͂���܂���B
+		//	-	-22 ;	//	Ekijikokukeisiki の値が不正です。
+		//	-	-32 ;	//	Ekikibo の値が不正です。
+		//	-	-41 ;	//	DiagramRessyajouhouHyoujiKudari の値が不正です。
+		//	-	-42 ;	//	DiagramRessyajouhouHyoujiNobori の値が不正です。
+		//	-	-101 ;	//	Eki がディレクトリではありません。
 		if ( iResult < 0 )
 		{
-			//	-	-22 ;	//	Ekijikokukeisiki �̒l���s���ł��B
-			//	-	-32 ;	//	Ekikibo �̒l���s���ł��B
-			//	-	-41 ;	//	DiagramRessyajouhouHyoujiKudari �̒l���s���ł��B
-			//	-	-42 ;	//	DiagramRessyajouhouHyoujiNobori �̒l���s���ł��B
-			//	-	-101 ;	//	Eki ���f�B���N�g���ł͂���܂���B
+			//	-	-22 ;	//	Ekijikokukeisiki の値が不正です。
+			//	-	-32 ;	//	Ekikibo の値が不正です。
+			//	-	-41 ;	//	DiagramRessyajouhouHyoujiKudari の値が不正です。
+			//	-	-42 ;	//	DiagramRessyajouhouHyoujiNobori の値が不正です。
+			//	-	-101 ;	//	Eki がディレクトリではありません。
 			iRv = iResult ;
 		}
 		else
@@ -2004,14 +2004,14 @@ int CconvCentDedS05::CentDedRosen_From_OuPropertiesText(
 			&aCentDedRessyasyubetsuCont , 
 			pCNodeContainer , 
 			pCOuErrorInfoContainer ) ;
-		//	-	-11 ;	//	Syubetsumei ���w�肳��Ă��܂���B
-		//	-	-52 ;	//	DiagramSenStyle �̒l���s���ł��B
-		//	-	-101 ;	//	Ressyasyubetsu ���f�B���N�g���ł͂���܂���B
+		//	-	-11 ;	//	Syubetsumei が指定されていません。
+		//	-	-52 ;	//	DiagramSenStyle の値が不正です。
+		//	-	-101 ;	//	Ressyasyubetsu がディレクトリではありません。
 		if ( iResult < 0 )
 		{
-			//	-	-111 ;	//	Syubetsumei ���w�肳��Ă��܂���B
-			//	-	-152 ;	//	DiagramSenStyle �̒l���s���ł��B
-			//	-	-201 ;	//	Ressyasyubetsu ���f�B���N�g���ł͂���܂���B
+			//	-	-111 ;	//	Syubetsumei が指定されていません。
+			//	-	-152 ;	//	DiagramSenStyle の値が不正です。
+			//	-	-201 ;	//	Ressyasyubetsu がディレクトリではありません。
 			iRv = iResult - 100 ;
 		}
 		else
@@ -2030,12 +2030,12 @@ int CconvCentDedS05::CentDedRosen_From_OuPropertiesText(
 			pCentDedRosen->getCentDedEkiCont(),
 			pCNodeContainer , 
 			pCOuErrorInfoContainer ) ;
-		//	-	-11 ;	//	DiaName ���w�肳��Ă��܂���B
-		//	-	-12 ;	//	RessyaCont��������܂���B
+		//	-	-11 ;	//	DiaName が指定されていません。
+		//	-	-12 ;	//	RessyaContが見つかりません。
 		if ( iResult < 0 )
 		{
-			//	-	-211 ;	//	DiaName ���w�肳��Ă��܂���B
-			//	-	-212 ;	//	RessyaCont��������܂���B
+			//	-	-211 ;	//	DiaName が指定されていません。
+			//	-	-212 ;	//	RessyaContが見つかりません。
 			iRv = iResult - 200 ;
 		}
 		else
@@ -2058,7 +2058,7 @@ int CconvCentDedS05::CentDedRosen_From_OuPropertiesText(
 				ErrorInfo::COuErrorInfo aCOuErrorInfo( ERRREASON_KitenjikokuIsInvalid() ) ;
 				aCOuErrorInfo.getProp()->setValue( ERRPROP_Jikoku() , strValue ) ;
 				pCOuErrorInfoContainer->insert( aCOuErrorInfo ) ;
-				iRv = -352 ;	//	�N�_�����̐ݒ肪�s�K�؂ł��B
+				iRv = -352 ;	//	起点時刻の設定が不適切です。
 			}
 		}
 		if ( iRv >= 0 )
@@ -2079,7 +2079,7 @@ int CconvCentDedS05::CentDedRosen_From_OuPropertiesText(
 				ErrorInfo::COuErrorInfo aCOuErrorInfo( ERRREASON_DiagramDgrYZahyouKyoriDefaultIsInvalid() ) ;
 				aCOuErrorInfo.getProp()->setValue( ERRPROP_Value() , strValue ) ;
 				pCOuErrorInfoContainer->insert( aCOuErrorInfo ) ;
-				iRv = -353 ;	//	�_�C���O�����̊���̉w�ԕ����s���ł��B
+				iRv = -353 ;	//	ダイヤグラムの既定の駅間幅が不正です。
 			}
 		}
 		if ( iRv >= 0 )

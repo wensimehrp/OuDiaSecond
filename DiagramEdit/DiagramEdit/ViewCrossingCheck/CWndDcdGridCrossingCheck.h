@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -80,9 +80,9 @@ Copyright (C) 2006-2017 take-okm
 
 #include "DcdGrid/WndDcdGrid3/WndDcdGrid3.h"
 
-//#include "..\entDed\CconvCentDed.h"
-#include "CrossingCheckColSpec\CrossingCheckColSpec.h"
-//#include "..\entDed\CdDedRessyaProperty.h"
+//#include "..¥entDed¥CconvCentDed.h"
+#include "CrossingCheckColSpec¥CrossingCheckColSpec.h"
+//#include "..¥entDed¥CdDedRessyaProperty.h"
 #include "CCrossingCheckDoc.h"
 
 namespace ViewCrossingCheck {
@@ -94,17 +94,17 @@ namespace ViewCrossingCheck {
 // ****************************************************************
 
 /**
-	�����x��`�F�b�N1�s�ɕ\��������e�ł�
-	BeforeRessyaProperty:�O����̗�ԃv���p�e�B
-	iBeforeEkiIndex:�O���삪�s���Ă���wIndex�ł�(����E�����ʂ��邽��)
-	BeforeFromTrackContent:�O����̈ړ����Ԑ��ł��B
-	BeforeToTrackContent:�O����̈ړ���Ԑ��ł��B
-	AfterRessyaProperty:�㓮��̗�ԃv���p�e�B
-	iAfterEkiIndex:�㓮�삪�s���Ă���wIndex�ł�(����E�����ʂ��邽��)
-	AfterFromTrackContent:�㓮��̈ړ����Ԑ��ł��B
-	AfterToTrackContent:�㓮��̈ړ���Ԑ��ł��B
+	交差支障チェック1行に表示する内容です
+	BeforeRessyaProperty:前動作の列車プロパティ
+	iBeforeEkiIndex:前動作が行われている駅Indexです(分岐・環状を区別するため)
+	BeforeFromTrackContent:前動作の移動元番線です。
+	BeforeToTrackContent:前動作の移動先番線です。
+	AfterRessyaProperty:後動作の列車プロパティ
+	iAfterEkiIndex:後動作が行われている駅Indexです(分岐・環状を区別するため)
+	AfterFromTrackContent:後動作の移動元番線です。
+	AfterToTrackContent:後動作の移動先番線です。
 
-	iHeadway: �O����ƌ㓮��Ԃ̎��u�ł��B
+	iHeadway: 前動作と後動作間の時隔です。
 */
 
 struct CrossingCheckContent {
@@ -131,17 +131,17 @@ struct CrossingCheckContent {
 	{}
 };
 /**
-	�����x��`�F�b�N1�s�ɕ\��������e�ł�
-	BeforeRessyaProperty:�O����̗�ԃv���p�e�B
-	iBeforeEkiIndex:�O���삪�s���Ă���wIndex�ł�(����E�����ʂ��邽��)
-	BeforeFromTrackContent:�O����̈ړ����Ԑ��ł��B
-	BeforeToTrackContent:�O����̈ړ���Ԑ��ł��B
-	AfterRessyaProperty:�㓮��̗�ԃv���p�e�B
-	iAfterEkiIndex:�㓮�삪�s���Ă���wIndex�ł�(����E�����ʂ��邽��)
-	AfterFromTrackContent:�㓮��̈ړ����Ԑ��ł��B
-	AfterToTrackContent:�㓮��̈ړ���Ԑ��ł��B
+	交差支障チェック1行に表示する内容です
+	BeforeRessyaProperty:前動作の列車プロパティ
+	iBeforeEkiIndex:前動作が行われている駅Indexです(分岐・環状を区別するため)
+	BeforeFromTrackContent:前動作の移動元番線です。
+	BeforeToTrackContent:前動作の移動先番線です。
+	AfterRessyaProperty:後動作の列車プロパティ
+	iAfterEkiIndex:後動作が行われている駅Indexです(分岐・環状を区別するため)
+	AfterFromTrackContent:後動作の移動元番線です。
+	AfterToTrackContent:後動作の移動先番線です。
 
-	iHeadway: �O����ƌ㓮��Ԃ̎��u�ł��B
+	iHeadway: 前動作と後動作間の時隔です。
 */
 
 struct CrossingCheckSearch {
@@ -177,136 +177,136 @@ struct CrossingCheckSearch {
 //};
 /**
 @brief
- �y�T�v�z CCrossingCheckView �ŗp����A�O���b�h�E�C���h�E�ł��B
+ 【概要】 CCrossingCheckView で用いる、グリッドウインドウです。
  */
 class CWndDcdGridCrossingCheck : public CWndDcdGrid
 {
 public:
 	// ********************************
-	//	�C���i�[�^�C�v
+	//	インナータイプ
 	// ********************************
 	typedef CWndDcdGrid super ;
 
 
 private:
 	// ********************************
-	///@name	���
+	///@name	包含
 	// ********************************
 	///@{
 	/**
-	  �e�E�C���h�E�ւ̃L�[���͂��_�@�� ModalDialog ���J���ꍇ�A
-	 ���[�_���_�C�A���O�̓���̃G�f�B�b�g�R���g���[���ɁA
-	 �L�[���̓��b�Z�[�W�i WM_KEYDOWN , WM_KEYUP �j��]�����܂��B
+	  親ウインドウへのキー入力を契機に ModalDialog を開く場合、
+	 モーダルダイアログの特定のエディットコントロールに、
+	 キー入力メッセージ（ WM_KEYDOWN , WM_KEYUP ）を転送します。
 	
-		���̃I�u�W�F�N�g�̔j���̐Ӗ��́A�N���X���[�U�[�i�w�]�����E�C���h�E�x�j
-		�ɂ���܂��B
-		���̃I�u�W�F�N�g�́A this ��蒷���������Ȃ��Ă͂Ȃ�܂���B
-		�s�v�ł���� NULL �ł����܂��܂���B
-		�R���X�g���N�^�Ō��܂�܂��B
+		このオブジェクトの破棄の責務は、クラスユーザー（『転送元ウインドウ』）
+		にあります。
+		このオブジェクトは、 this より長く生存しなくてはなりません。
+		不要であれば NULL でもかまいません。
+		コンストラクタで決まります。
 	 */
 	//CKeyinputSenderToModalDlg	m_CKeyinputSenderToModalDlg ;
 	///@}
 
 	// --------------------------------
-	///@name �����f�[�^
+	///@name 内部データ
 	// --------------------------------
 	///@{
 	/**
-	 �ʏ�� false �B
-	���̃r���[���A�N�e�B�u�łȂ��Ƃ��� 
-	�S�X�V�i OnUpdate_All() ���Ăяo���j���K�v�ɂȂ��Ă���A
-	�r���[���A�N�e�B�u�ɂȂ�܂ł̊Ԃ��� true �ɂȂ�܂��B
+	 通常は false 。
+	このビューがアクティブでないときに 
+	全更新（ OnUpdate_All() を呼び出す）が必要になってから、
+	ビューがアクティブになるまでの間だけ true になります。
 
-	 ���̕ϐ��� true �̂Ƃ��́A
-	�r���[�̍X�V���A���Ƀr���[���A�N�e�B�u�������܂�
-	�ۗ����Ă��邱�Ƃ������܂��B
+	 この変数が true のときは、
+	ビューの更新を、次にビューがアクティブ化されるまで
+	保留していることを示します。
 
-	 �r���[���A�N�e�B�u�łȂ��Ƃ��� OnUpdate_All() ��
-	�v�����ꂽ��A���̕ϐ��� true �ɂ��A
-	OnUpdate_All() �͎��s���܂���B
+	 ビューがアクティブでないときに OnUpdate_All() が
+	要求されたら、この変数を true にし、
+	OnUpdate_All() は実行しません。
 
-	 ���̒l�� true �̂Ƃ��ɁA�r���[���A�N�e�B�u�����ꂽ��A
-	OnUpdate_All() �����s���܂��B
+	 この値が true のときに、ビューがアクティブ化されたら、
+	OnUpdate_All() を実行します。
 	 */
 	bool m_bUpdate_All_Requested ;
 
 	/**
-	�����l��false�A����� OnUpdate() ���I�������� true �ɂȂ�܂��B
+	初期値はfalse、初回の OnUpdate() が終了したら true になります。
 	*/
 	bool m_bInitialUpdateComplete;
 	///@}
 	
 protected:
 	// --------------------------------
-	///@name	�����֐�
+	///@name	下請関数
 	// --------------------------------
 	///@{
 
 
 	/**
-		�S�Ă�X��ɂ��Ă� �w��ԍ�-�\�����e�x�̑Ή��\�𐶐����܂��B
-		�������ꂽ CdXColSpecCont() ����
-		CdXColSpec �I�u�W�F�N�g��
-		�擾���邱�Ƃɂ��A�e�񖈂ɕK�v�ȕ\�����e���擾���邱�Ƃ��ł��܂��B
+		全てのX列についての 『列番号-表示内容』の対応表を生成します。
+		生成された CdXColSpecCont() から
+		CdXColSpec オブジェクトを
+		取得することにより、各列毎に必要な表示内容を取得することができます。
 	@return 
-		�S�Ă�X��ɂ��Ă� �w��ԍ�-�\�����e�x�̑Ή��\�ł���
-		 CdXColSpecCont �I�u�W�F�N�g��Ԃ��܂��B
+		全てのX列についての 『列番号-表示内容』の対応表である
+		 CdXColSpecCont オブジェクトを返します。
 		
 	@attention
-	 	���̊֐��� OnCreate() �E�y�т���ȑO��
-	 	�Ăяo�����Ƃ��́A�߂�l��NULL��ԂɂȂ�܂��B
-	 	�Ăяo�������ɒ��ӂ��Ă��������B
+	 	この関数を OnCreate() ・及びそれ以前に
+	 	呼び出したときは、戻り値はNULL状態になります。
+	 	呼び出し時期に注意してください。
 
 	@attention
-		���̑Ή��\�́A CentDedEkiCont �ɕύX������
-		�����疳���ɂȂ�܂��B���̂��߁ACentDedEkiCont  ��
-		�ύX�̉\��������󋵂ł́A�Ή��\���č쐬����K�v������܂��B	
+		この対応表は、 CentDedEkiCont に変更が発生
+		したら無効になります。このため、CentDedEkiCont  に
+		変更の可能性がある状況では、対応表を再作成する必要があります。	
 	*/
 	CdCrossingCheckXColSpecCont createXColSpecCont();
 
 
 	/**
-		�S�Ă�Y��ɂ��Ă� �w��ԍ�-�\�����e�x�̑Ή��\�𐶐����܂��B
-		�������ꂽ CdYColSpecCont() ����
-		CdYColSpec �I�u�W�F�N�g��
-		�擾���邱�Ƃɂ��A�e�񖈂ɕK�v�ȕ\�����e���擾���邱�Ƃ��ł��܂��B
+		全てのY列についての 『列番号-表示内容』の対応表を生成します。
+		生成された CdYColSpecCont() から
+		CdYColSpec オブジェクトを
+		取得することにより、各列毎に必要な表示内容を取得することができます。
 	@return 
-		�S�Ă�Y��ɂ��Ă� �w��ԍ�-�\�����e�x�̑Ή��\�ł���
-		 CdYColSpecCont �I�u�W�F�N�g��Ԃ��܂��B
+		全てのY列についての 『列番号-表示内容』の対応表である
+		 CdYColSpecCont オブジェクトを返します。
 		
 	@attention
-	 	���̊֐��� OnCreate() �E�y�т���ȑO��
-	 	�Ăяo�����Ƃ��́A�߂�l��NULL��ԂɂȂ�܂��B
-	 	�Ăяo�������ɒ��ӂ��Ă��������B
+	 	この関数を OnCreate() ・及びそれ以前に
+	 	呼び出したときは、戻り値はNULL状態になります。
+	 	呼び出し時期に注意してください。
 
 	@attention
-		���̑Ή��\�́A CentDedEkiCont �ɕύX������
-		�����疳���ɂȂ�܂��B���̂��߁ACentDedEkiCont  ��
-		�ύX�̉\��������󋵂ł́A�Ή��\���č쐬����K�v������܂��B	
+		この対応表は、 CentDedEkiCont に変更が発生
+		したら無効になります。このため、CentDedEkiCont  に
+		変更の可能性がある状況では、対応表を再作成する必要があります。	
 	*/
 	CdCrossingCheckYColSpecCont createYColSpecCont();
 
 	/**
 	@return 
-		�t�H�[�J�X�Z���̗�̕\�����e��Ԃ��܂��B
+		フォーカスセルの列の表示内容を返します。
 	*/
 	CdCrossingCheckXColSpec getXColSpecOfFocus();
 
 	/**
 	@return 
-		�t�H�[�J�X�Z���̗�̕\�����e��Ԃ��܂��B
+		フォーカスセルの列の表示内容を返します。
 	*/
 	CdCrossingCheckYColSpec getYColSpecOfFocus() ;
 	
 	///@}
 	// --------------------------------
-	///@name OnUpdate �̉����֐�
+	///@name OnUpdate の下請関数
 	// --------------------------------
 	///@{
 	/**
 	@return
-	�w������\���`���ɕϊ�����I�u�W�F�N�g��Ԃ��܂��B
-	@note static �����o�֐��ɂ��邱�Ƃ��ł��܂��B
+	駅時刻を表示形式に変換するオブジェクトを返します。
+	@note static メンバ関数にすることができます。
 	*/
 	const CdDedJikoku::CConv	getCdDedJikokuConv()const;
 
@@ -335,7 +335,7 @@ protected:
 	);
 
 	/**
-		CrossingCheckSearchContA��CrossingCheckSearchContB�̒��g��}�����܂��B
+		CrossingCheckSearchContAにCrossingCheckSearchContBの中身を挿入します。
 	*/
 	void MergeCrossingCheckSearchCont(
 		list<CrossingCheckSearch>* CrossingCheckSearchContA,
@@ -343,13 +343,13 @@ protected:
 	);
 
 	/**
-	 �O���b�h�� �w���Y��ɁA
-	�w�^�p�x�̓��e��ݒ肵�܂��B
-	�ݒ���s�����Z���́A�X�V�̈�Ƃ��܂��B
+	 グリッドの 指定のY列に、
+	『運用』の内容を設定します。
+	設定を行ったセルは、更新領域とします。
 	@param iYColumnNumber [in]
-		Y��ԍ����w�肵�Ă��������B
+		Y列番号を指定してください。
 	@param aCentDedRessya [in]
-		�w�^�p�x�I�u�W�F�N�g���w�肵�Ă��������B
+		『運用』オブジェクトを指定してください。
 	*/
 	void OnUpdate_setCrossingCheckContent_To_Column(
 		int iRuleIndex,
@@ -361,13 +361,13 @@ protected:
 		const CrossingCheckRule& aCrossingCheckRule);
 
 	/**
-	 OnUpdate() �̉����֐��ł��B
-	�֘A����h�L�������g�̓��e���A���̃E�C���h�E�Ɋ��S��
-	���f���܂��B
+	 OnUpdate() の下請関数です。
+	関連するドキュメントの内容を、このウインドウに完全に
+	反映します。
 
-	 OnUpdate() �� pHint �� NULL �̍ۂ̓���ł��B
+	 OnUpdate() で pHint が NULL の際の動作です。
 
-	 ���̂Ƃ��A�E�C���h�E�̍X�V�ĕ`����������܂��B
+	 このとき、ウインドウの更新再描画も発生します。
 	 */
 	virtual void  OnUpdate_All() ;
 
@@ -375,23 +375,23 @@ protected:
 	///@}
 protected:
 	// --------------------------------
-	///@name ���j���[�R�}���h�̉����֐�
+	///@name メニューコマンドの下請関数
 	// --------------------------------
 	///@{
 
-	//�����\�ֈړ�
+	//時刻表へ移動
 	int OnCrossingCheckMovetojikokuhyou_Process(BOOL bQueryEnable);
 
-	//�_�C���O�����ֈړ�
+	//ダイヤグラムへ移動
 	int OnCrossingCheckMovetodiagram_Process(BOOL bQueryEnable);
 	///@}
 
 public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	CWndDcdGridCrossingCheck();
-	virtual ~CWndDcdGridCrossingCheck();
+	virtual ‾CWndDcdGridCrossingCheck();
 
 	// ********************************
 	///@name	CDcdGrid
@@ -405,13 +405,13 @@ protected:
 	///@{
 
 	// --------------------------------
-	///@name	�C�x���g�����̂��߂̉��z�֐�
+	///@name	イベント処理のための仮想関数
 	// --------------------------------
 	///@{
 	///@}
  public:
 	// ********************************
-	///@name  CAllOperationTableView ����̈Ϗ�
+	///@name  CAllOperationTableView からの委譲
 	// ********************************
 	///@{
 	virtual void OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint);
@@ -419,7 +419,7 @@ protected:
 	///@}
 public:
 	// ********************************
-	///@name CWndDcdGridCrossingCheck-����
+	///@name CWndDcdGridCrossingCheck-操作
 	// ********************************
 	///@{
 	///@}
@@ -436,8 +436,8 @@ private:
 
 	CdDedJikoku m_KitenJikoku;
 	/**
-		TrackContent��List�ɕ��ׂ�Ƃ��̑Ώƕ\�ł�
-		[eTrackType][iTrackIndex]�ŃA�N�Z�X����ƁArossingCheckSearchCont�ł�Index��Ԃ��܂��B
+		TrackContentをListに並べるときの対照表です
+		[eTrackType][iTrackIndex]でアクセスすると、rossingCheckSearchContでのIndexを返します。
 	*/
 	vector<vector<int>> m_MapTrackContentToList;
 
@@ -446,17 +446,17 @@ private:
 	vector<tstring> m_strTrackNameCont;
 
 	/**
-		CrossingCheckSearch���ړ����Ԑ��ƈړ���Ԑ���TrackContent��Â��AList�ɓ���܂��B
-		TrackContent����vector��index�ւ̕ϊ��ɂ́Am_MapTrackContentToList��p���܂�
-		List���͎������ɕ��ׂ܂��B
+		CrossingCheckSearchを移動元番線と移動先番線のTrackContent基づき、Listに入れます。
+		TrackContentからvectorのindexへの変換には、m_MapTrackContentToListを用います
+		List内は時刻順に並べます。
 
 		[m_MapTrackContentToList[(int)FromTrackContent.eTrackType][FromTrackContent.iTrackIndex]]
-			[m_MapTrackContentToList[(int)ToTrackContent.eTrackType][ToTrackContent.iTrackIndex]]��List�ɃA�N�Z�X���܂��B
+			[m_MapTrackContentToList[(int)ToTrackContent.eTrackType][ToTrackContent.iTrackIndex]]でListにアクセスします。
 
-		m_CrossingCheckSearchContArrival�́A��ԁE����������
-		m_CrossingCheckSearchContDeparture�́A��ԁE���Ԏ�����
-		m_CrossingCheckSearchContTsuuka�́A�ʉ߂ɗp���܂��B
-		�ʉ߂̏ꍇ�A�����͉w�\�O�E�H���O���Ԑ��A�o���͂��̋t�Ɍ����Ă���̂ŁA��ŗ��Ή����܂��B
+		m_CrossingCheckSearchContArrivalは、停車・到着時刻に
+		m_CrossingCheckSearchContDepartureは、停車・発車時刻に
+		m_CrossingCheckSearchContTsuukaは、通過に用います。
+		通過の場合、到着は駅構外・路線外→番線、出発はその逆に限られているので、一つで両対応します。
 	*/
 	vector<vector<list<CrossingCheckSearch>>> m_CrossingCheckSearchContArrival;
 
@@ -468,13 +468,13 @@ private:
 
 
 	/**
-		�p�^�[���_�C���v���r���[�@�\�ɂ�����A1�T�C�N���̕b���B
-		0�̏ꍇ�͋@�\������
+		パターンダイヤプレビュー機能における、1サイクルの秒数。
+		0の場合は機能が無効
 	*/
 	int m_iPatternDiagramPreviewCycleSecond;
 
 	/**
-		�p�^�[���_�C���v���r���[�@�\�ɂ�����A�O��e�����ւ̃R�s�[�͈́B
+		パターンダイヤプレビュー機能における、前後各方向へのコピー範囲。
 	*/
 	int m_iPatternDiagramPreviewRange;
 
@@ -508,10 +508,10 @@ public:
 // ----------------------------------------------------------------
 //	MFC
 // ----------------------------------------------------------------
-// �A�g���r���[�g
+// アトリビュート
 public:
 
-// �I�y���[�V����
+// オペレーション
 public:
 	//{{AFX_VIRTUAL(CWndDcdGridCrossingCheck)
 	//}}AFX_VIRTUAL
@@ -519,7 +519,7 @@ public:
 protected:
 	//{{AFX_MSG(CWndDcdGridCrossingCheck)
 	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
-	//[�ҏW]
+	//[編集]
 	afx_msg void OnContextMenu(CWnd* /*pWnd*/, CPoint /*point*/);
 	afx_msg void OnLButtonDblClk(UINT nFlags, CPoint point);
 	afx_msg void OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags);

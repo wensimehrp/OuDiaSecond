@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -77,7 +77,7 @@ Copyright (C) 2006-2017 take-okm
 /** @file */
 #ifndef CentDedDgrEkiJikoku_h
 #define CentDedDgrEkiJikoku_h
-#include "entDed\CentDedEkiJikoku.h"
+#include "entDed¥CentDedEkiJikoku.h"
 
 namespace entDgr{
 	using namespace entDed;
@@ -86,93 +86,93 @@ namespace entDgr{
 // ****************************************************************
 /**
 @brief 
-  �_�C���O������ɂ�����A��Ԃ̊e�w�ł̉w������\���܂��B
+  ダイヤグラム上における、列車の各駅での駅時刻を表します。
   
-  ���̃N���X�́A CentDedDgrRessya �ɏW�񂳂�܂��B
+  このクラスは、 CentDedDgrRessya に集約されます。
 
-  CentDedDgrRessya : CentDedDgrEkiJikoku �̑��d�x�́A1 : �w�� �ł��B
+  CentDedDgrRessya : CentDedDgrEkiJikoku の多重度は、1 : 駅数 です。
 */
 class CentDedDgrEkiJikoku
 {
 private:
 	// ********************************
-	///@name	����
+	///@name	属性
 	// ********************************
 	///@{
 	/**
-		�w���B
+		駅扱。
 	 */
 	CentDedEkiJikoku::EEkiatsukai	m_eEkiatsukai ;
 	
 	/**
-		�������ɑΉ�����_�C���O����X���W�B
-		���̐��E24:00:00 �ȏ��\�����Ƃ�����܂��B
+		着時刻に対応するダイヤグラムX座標。
+		負の数・24:00:00 以上を表すこともあります。
 
-		�A���A INT_MIN ��NULL(�w��Ȃ�)��\���܂��B
+		但し、 INT_MIN はNULL(指定なし)を表します。
 	
-		m_eEkiatsukai ��
-		�^�s�Ȃ� ( Ekiatsukai_None ) �̏ꍇ�́A
-		���̒l�͈Ӗ��������܂���B
+		m_eEkiatsukai が
+		運行なし ( Ekiatsukai_None ) の場合は、
+		この値は意味を持ちません。
 	 */
 	int m_iDgrXPosChaku ;
 	
 	/**
-		�������ɑΉ�����_�C���O����X���W�B
+		発時刻に対応するダイヤグラムX座標。
 
-		�A���A INT_MIN ��NULL(�w��Ȃ�)��\���܂��B
+		但し、 INT_MIN はNULL(指定なし)を表します。
 	
-		m_eEkiatsukai ��
-		�^�s�Ȃ� ( Ekiatsukai_None ) �̏ꍇ�́A
-		���̒l�͈Ӗ��������܂���B
+		m_eEkiatsukai が
+		運行なし ( Ekiatsukai_None ) の場合は、
+		この値は意味を持ちません。
 	 */
 	int m_iDgrXPosHatsu ;
 	
 	
 	/**
-		�_�C���O������Ԑ���X���W
+		ダイヤグラム列車線のX座標
 
-		���̉w�������_�C���O������Ԑ��̒��ԂɂȂ�ꍇ�́A
-		�_�C���O������Ԑ��ƁA���̉w(��Y���W�E����)�Ƃ̌�_��
-		�_�C���O����X���W��ێ����܂��B
-		�����łȂ��ꍇ�́AINT_MIN �ł��B
-		INT_MIN ��NULL(�w��Ȃ�)��\���܂��B
+		この駅時刻がダイヤグラム列車線の中間になる場合は、
+		ダイヤグラム列車線と、この駅(のY座標・横軸)との交点の
+		ダイヤグラムX座標を保持します。
+		そうでない場合は、INT_MIN です。
+		INT_MIN はNULL(指定なし)を表します。
 
-		���̐��E24:00:00 �ȏ��\�����Ƃ�����܂��B
+		負の数・24:00:00 以上を表すこともあります。
 		
 		
-		���̉w�������_�C���O������Ԑ��̒[�_�ɂ���ꍇ���A
-		���̒l�� NULL �ɂȂ�܂��B
+		この駅時刻がダイヤグラム列車線の端点にある場合も、
+		この値は NULL になります。
 
-		m_eEkiatsukai ��
-		�^�s�Ȃ� ( Ekiatsukai_None ) �̏ꍇ�́A
-		���̒l�͈Ӗ��������܂���B
+		m_eEkiatsukai が
+		運行なし ( Ekiatsukai_None ) の場合は、
+		この値は意味を持ちません。
 		
-		(��j
+		(例）
 		
-		�O�w����̉w�ԍŏ����v�������ȉ��̂Ƃ���̘H�����������Ƃ��܂��B
+		前駅からの駅間最小所要分数が以下のとおりの路線があったとします。
 
 		@code
 		-------------------
-		�wOrder0 �� 
-		�wOrder1 �� 01
-		�wOrder2 �� 01
+		駅Order0 発 
+		駅Order1 発 01
+		駅Order2 着 01
 		-------------------
 		@endcode
 
-		�����Ɉȉ��̂悤�ȗ�Ԃ��ݒ肳��A��Ԑ����wOrder0-�wOrder2��
-		�ݒ肳�ꂽ�ꍇ�A
+		ここに以下のような列車が設定され、列車線が駅Order0-駅Order2に
+		設定された場合、
 
 		@code
 		-------------------
-		�wOrder0 �� 10:00
-		�wOrder1 �� 10:01
-		�wOrder2 �� 10:03
+		駅Order0 発 10:00
+		駅Order1 発 10:01
+		駅Order2 着 10:03
 		-------------------
 		@endcode
 
-		�wOrder1�� m_iDgrXPosRessyasen �́A 10:01:30
-		(10:00�`10:03�����Ԓ����� �wOrder1 �̌�_)
-		�ɂȂ�܂��B
+		駅Order1の m_iDgrXPosRessyasen は、 10:01:30
+		(10:00〜10:03を結ぶ直線と 駅Order1 の交点)
+		になります。
 		
 	 */
 	int m_iDgrXPosRessyasen ;
@@ -181,17 +181,17 @@ private:
 
 
 	/**
-		���̉w�����̈ʒu�ɗ�ԏ��(��Ԕԍ��E��Ԗ��E����)��
-		�`�悷��K�v������Ȃ� true �B
+		この駅時刻の位置に列車情報(列車番号・列車名・号数)を
+		描画する必要があるなら true 。
 
-		����� false �ł����A CentDedDgrRessya::readCentDedRessya() 
-		�ɂ���Đݒ肳��܂��B
+		既定は false ですが、 CentDedDgrRessya::readCentDedRessya() 
+		によって設定されます。
 	*/
 	bool m_bShouldRessyajouhouDraw ;
 	///@}
 public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	CentDedDgrEkiJikoku() :
 		m_eEkiatsukai( CentDedEkiJikoku::Ekiatsukai_None ),
@@ -220,17 +220,17 @@ public:
 
 public:
 	// ********************************
-	///@name CentDedDgrEkiJikoku-����
+	///@name CentDedDgrEkiJikoku-属性
 	// ********************************
 	///@{
 	CentDedEkiJikoku::EEkiatsukai getEkiatsukai()const 
 	{	return 	m_eEkiatsukai ;};
 	
 	/**
-		�������� X���W �ł��B
+		着時刻の X座標 です。
 	@param bHatsuIfNull [in]
-		-	false ;	//	��������NULL�Ȃ� NULL(INT_MIX) ��Ԃ��܂��B
-		-	true  ;	//	��������NULL�Ȃ� ������(INT_MIX) ��Ԃ��܂��B
+		-	false ;	//	着時刻がNULLなら NULL(INT_MIX) を返します。
+		-	true  ;	//	着時刻がNULLなら 発時刻(INT_MIX) を返します。
 	*/
 	int getDgrXPosChaku( bool bHatsuIfNull = false )const
 	{
@@ -245,10 +245,10 @@ public:
 	{	m_iDgrXPosChaku = value ;};
 
 	/**
-		�������� X���W �ł��B
+		発時刻の X座標 です。
 	@param bChakuIfNull [in]
-		-	false ;	//	��������NULL�Ȃ� NULL(INT_MIX) ��Ԃ��܂��B
-		-	true  ;	//	��������NULL�Ȃ� ������(INT_MIX) ��Ԃ��܂��B
+		-	false ;	//	発時刻がNULLなら NULL(INT_MIX) を返します。
+		-	true  ;	//	発時刻がNULLなら 発時刻(INT_MIX) を返します。
 	*/
 	int getDgrXPosHatsu( bool bChakuIfNull = false )const
 	{
@@ -283,15 +283,15 @@ public:
 
 	///@}
 	// ********************************
-	///@name CentDedDgrEkiJikoku-����
+	///@name CentDedDgrEkiJikoku-操作
 	// ********************************
 	///@{
 	/**
-		���ׂẮw�_�C���O�����w�����x�I�u�W�F�N�g��
-		�w�_�C���O�����G���e�B�e�BX���W�x�����Z�E���Z���܂�(NULL������ INT_MIN �͏����B
+		すべての『ダイヤグラム駅時刻』オブジェクトの
+		『ダイヤグラムエンティティX座標』を加算・減算します(NULLを示す INT_MIN は除く。
 	 @param iSeconds [in]
-		���Z�E���Z����l�i�b���E�w�_�C���O�����G���e�B�e�BX���W�x�j	
-		���w�肵�ĉ������B
+		加算・減算する値（秒数・『ダイヤグラムエンティティX座標』）	
+		を指定して下さい。
 	 */
 	virtual void modifyDgrXPos( int iSeconds ) 
 	{

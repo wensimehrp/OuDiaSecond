@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -77,7 +77,7 @@ Copyright (C) 2006-2017 take-okm
 #ifndef  CRessyaDraw_h
 #define  CRessyaDraw_h
 #include "CDcdDiagram.h"
-//#include "entDgr\CentDedDgrDia.h"
+//#include "entDgr¥CentDedDgrDia.h"
 
 namespace ViewDiagram {
 
@@ -86,132 +86,132 @@ namespace ViewDiagram {
 // ****************************************************************
 /**
 @brief
-	�w�肳�ꂽ�w�_�C���O�����G���e�B�e�B���W�x�ƌ������邷�ׂĂ̗�Ԑ���
-	�񋓂��܂��B
+	指定された『ダイヤグラムエンティティ座標』と交差するすべての列車線を
+	列挙します。
 
 
-	���̃N���X�́A CDcdDiagram �̃w���p�[�N���X�ł��B
-	�w�_�C���O������Ԑ��x���̃��[�v�������s���ꍇ�́A���[�v��
-	�G���W���ƂȂ�܂��i���[�v�����͌��\���G������ł��j�B
+	このクラスは、 CDcdDiagram のヘルパークラスです。
+	『ダイヤグラム列車線』毎のループ処理を行う場合の、ループの
+	エンジンとなります（ループ条件は結構複雑だからです）。
 
-	�w�_�C���O�����_�C���x�I�u�W�F�N�g�ɕ�܂���Ă���
-	�w�_�C���O������ԁx CentDedRessya�E
-	�w�_�C���O������Ԑ��x CentDedRessyasen�E
-	�w�_�C���O�����w�����x CentDedEkiJikoku
-	�I�u�W�F�N�g�̂����A
-	�w�肳�ꂽ�`��̈� CdDcdZoneXy ��
-	�ꕔ��ʉ߂���\���̂���I�u�W�F�N�g��񋓂��܂��B
+	『ダイヤグラムダイヤ』オブジェクトに包含されている
+	『ダイヤグラム列車』 CentDedRessya・
+	『ダイヤグラム列車線』 CentDedRessyasen・
+	『ダイヤグラム駅時刻』 CentDedEkiJikoku
+	オブジェクトのうち、
+	指定された描画領域 CdDcdZoneXy の
+	一部を通過する可能性のあるオブジェクトを列挙します。
 
-�y�g�����z
+【使い方】
 
-	�P�D  ���̃N���X�̔h���N���X���`���A
-	���z�֐� onCentDedDgrRessyasen() ��
-	�w�_�C���O������Ԑ��x CentDedDgrRessyasen ���̏����A
-	onCentDedDgrEkijikoku() �Łw�_�C���O�����w�����xCentDedDgrEkiJikoku ���Ƃ�
-	�������L�q���Ă��������B
+	１．  このクラスの派生クラスを定義し、
+	仮想関数 onCentDedDgrRessyasen() で
+	『ダイヤグラム列車線』 CentDedDgrRessyasen 毎の処理、
+	onCentDedDgrEkijikoku() で『ダイヤグラム駅時刻』CentDedDgrEkiJikoku ごとの
+	処理を記述してください。
 
-	�Q�D  �h���N���X�̃C���X�^���X�𐶐����Ă��������B
-	�R���X�g���N�^�ł́A
-	�w�_�C���O�����_�C���x�I�u�W�F�N�g�ƁA�`���ƂȂ�
-	IfDcdTarget �I�u�W�F�N�g�ւ̃|�C���^���w�肵�ĉ������B
+	２．  派生クラスのインスタンスを生成してください。
+	コンストラクタでは、
+	『ダイヤグラムダイヤ』オブジェクトと、描画先となる
+	IfDcdTarget オブジェクトへのポインタを指定して下さい。
 
-	�R�D  execute() ���Ăяo���ƁA���̃N���X��
-	�`��\�̈�ɂ���w�_�C���O������Ԑ��x���ɁA
-	���z�֐� onCentDedDgrRessyasen() ���Ăяo���܂��B
+	３．  execute() を呼び出すと、このクラスは
+	描画可能領域にある『ダイヤグラム列車線』毎に、
+	仮想関数 onCentDedDgrRessyasen() を呼び出します。
 */
 class CRessyaDraw
 {
 private:
 	// ********************************
-	///@name �֘A
+	///@name 関連
 	// ********************************
 	///@{
 	/**
-		�w�_�C���O�����_�C���x�Ƃ̊֘A�ł��B
+		『ダイヤグラムダイヤ』との関連です。
 
-		���̃I�u�W�F�N�g�̔j���̐Ӗ��́A�N���X���[�U�[�ɂ���܂��B
-		���̃I�u�W�F�N�g�́A this �̔j������������܂�
-		�������Ȃ��Ă͂Ȃ�܂���B
-		�R���X�g���N�^�Ō��܂�܂��B
+		このオブジェクトの破棄の責務は、クラスユーザーにあります。
+		このオブジェクトは、 this の破棄が完了するまで
+		生存しなくてはなりません。
+		コンストラクタで決まります。
 	 */
 	const CentDedDgrDia*	m_pCentDedDgrDia ;
 	// ********************************
-	///@name ����
+	///@name 属性
 	// ********************************
 	///@{
 	/**
-		�ΏۂƂȂ�`��̈���A
-		�w�_�C���O�����G���e�B�e�B���W�n�x�ŕێ����܂��B
-		����́A����`����s���͈͂�\���Ă��܂��B
+		対象となる描画領域を、
+		『ダイヤグラムエンティティ座標系』で保持します。
+		これは、今回描画を行う範囲を表しています。
 	
-		�R���X�g���N�^�Ō��܂�܂��B
+		コンストラクタで決まります。
 	 */
 	CdDcdZoneXy	m_zonexyDgrZone ;
 
 	/**
-		�����Ԃ̏������s�����ۂ����w�肵�܂��B
-		- true ;	//	�����Ԃ̏������s���B
-		- false ;	//	����Ԃ̏������s���B
+		下り列車の処理を行うか否かを指定します。
+		- true ;	//	下り列車の処理を行う。
+		- false ;	//	上り列車の処理を行う。
 		
-		����l�� true 
+		既定値は true 
 	 */
 	bool m_bDisplayRessyasenKudari ;
 	/**
-		����Ԃ̏������s�����ۂ����w�肵�܂��B
+		上り列車の処理を行うか否かを指定します。
 	 @see m_bDisplayRessyasenKudari
 	 */
 	bool m_bDisplayRessyasenNobori ;
 
 	/**
-		�e��ʂɊ�Â��\����L���ɂ��邩�ۂ����w�肵�܂��B
+		親種別に基づく表示を有効にするか否かを指定します。
 	*/
 	bool m_bDisplayParentSyubetsu;
 	/**
-	DcdGrid�̕`����s���I�u�W�F�N�g�B
-	���̃I�u�W�F�N�g�̔j���̐Ӗ��́A�N���X���[�U�[�ɂ���܂��B
-	���̃I�u�W�F�N�g�́A this �̔j������������܂�
-	�������Ȃ��Ă͂Ȃ�܂���B
+	DcdGridの描画を行うオブジェクト。
+	このオブジェクトの破棄の責務は、クラスユーザーにあります。
+	このオブジェクトは、 this の破棄が完了するまで
+	生存しなくてはなりません。
 	*/
 	CDcdDiagram*	m_pCDcdDiagram;
 	/**
-	DcdGrid�̕`���B
-	���̃I�u�W�F�N�g�̔j���̐Ӗ��́A�N���X���[�U�[�ɂ���܂��B
-	���̃I�u�W�F�N�g�́A this �̔j������������܂�
-	�������Ȃ��Ă͂Ȃ�܂���B
+	DcdGridの描画先。
+	このオブジェクトの破棄の責務は、クラスユーザーにあります。
+	このオブジェクトは、 this の破棄が完了するまで
+	生存しなくてはなりません。
 	*/
 	IfDcdTarget*	m_pIfDcdTarget;
 
 	/**
-		�e�w�̋N�_���E�I�_�������W��\�ߎ擾���ĕێ����Ă����܂��B
-		m_DcdYCache[iEkiIndex][Origin,Terminal]�Ŋi�[����Ă��܂�
+		各駅の起点側・終点側実座標を予め取得して保持しておきます。
+		m_DcdYCache[iEkiIndex][Origin,Terminal]で格納されています
 	*/
 	vector<vector<DcdPos>> m_DcdYCache;
 
 	/**
-		�ݐ��\�\���w�̊e�w�̊e�Ԑ����Ƃ̎����W��\�ߎ擾���ĕێ����Ă����܂��B
-		m_DcdYEkiTrackCache[iEkiIndex][iEkiTrackIndex]�Ŋi�[����Ă��܂�
+		在線表表示駅の各駅の各番線ごとの実座標を予め取得して保持しておきます。
+		m_DcdYEkiTrackCache[iEkiIndex][iEkiTrackIndex]で格納されています
 	*/
 	vector<vector<DcdPos>> m_DcdYEkiTrackCache;
 
 	/**
-		�_�C���O�������W���L�[�Ƃ��āA�����W��ێ����܂��iX����)
-		�����������ʖ��g�p
+		ダイヤグラム座標をキーとして、実座標を保持します（X方向)
+		※ただし当面未使用
 	*/
 	unordered_map<DcdPos, DcdPos> m_DcdXCache;
 
 	/**
-		�����W��Y�����ɂ�����A30�b�����̒�����\���܂�
+		実座標のY方向における、30秒相当の長さを表します
 	*/
 	int m_iYDcd30SecondLength;
 
 	/**
-		�����W��Y�����ɂ�����A�_�C���O�����̃f�t�H���g�w��(�ݐ��\�̔Ԑ��Ԋu)�̒�����\���܂�
+		実座標のY方向における、ダイヤグラムのデフォルト駅間(在線表の番線間隔)の長さを表します
 	*/
 	int m_iYDcdDiagramDefaultSecondLength;
 
 	/**
-		�`��̈撆�Ɋ܂܂��w�͈̔͂�ێ����Ă����܂��B
-		���̉w�͈̔͊O�ɂ���ꍇ�́A�`�ʎ菇���ȗ��ł��܂��B
+		描画領域中に含まれる駅の範囲を保持しておきます。
+		この駅の範囲外にある場合は、描写手順を省略できます。
 	*/
 	int m_iDisplayOriginSideEkiOrder[2];
 	int m_iDisplayTerminalSideEkiOrder[2];
@@ -219,23 +219,23 @@ private:
 	///@}
 public:
 	//*******************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	//*******************************
 	/**
 	 @param pCentDedDgrDia [in]
-		�w�_�C���O�����_�C���x�Ƃ̊֘A�ł��B
-		���̃I�u�W�F�N�g�̔j���̐Ӗ��́A�N���X���[�U�[�ɂ���܂��B
-		���̃I�u�W�F�N�g�́A this �̔j������������܂�
-		�������Ȃ��Ă͂Ȃ�܂���B
+		『ダイヤグラムダイヤ』との関連です。
+		このオブジェクトの破棄の責務は、クラスユーザーにあります。
+		このオブジェクトは、 this の破棄が完了するまで
+		生存しなくてはなりません。
 	 @param zonexyDgrZone [in]
-		�ΏۂƂȂ�`��̈���A
-		�w�_�C���O�����G���e�B�e�B���W�n�x�Ŏw�肵�Ă��������B
+		対象となる描画領域を、
+		『ダイヤグラムエンティティ座標系』で指定してください。
 	 @param bDisplayRessyasenKudari [in]
-		�����Ԃ̏������s�����ۂ����w�肵�܂��B
-		- true ;	//	�����Ԃ̏������s���B
-		- false ;	//	�����Ԃ̏������s��Ȃ��B
+		下り列車の処理を行うか否かを指定します。
+		- true ;	//	下り列車の処理を行う。
+		- false ;	//	下り列車の処理を行わない。
 	 @param bDisplayRessyasenNobori [in]
-		����Ԃ̏������s�����ۂ����w�肵�܂��B
+		上り列車の処理を行うか否かを指定します。
 	 */
 	//CRessyaDraw(
 	//	const CentDedDgrDia* pCentDedDgrDia ,
@@ -247,7 +247,7 @@ public:
 		bool bDisplayRessyasenKudari,
 		bool bDisplayRessyasenNobori,
 		bool bDisplayParentSyubetsu);
-	virtual ~CRessyaDraw() ;
+	virtual ‾CRessyaDraw() ;
 
 protected:
 	// --------------------------------
@@ -255,24 +255,24 @@ protected:
 	// --------------------------------
 	///@{
 	/**
-		execute() ����Ăяo�����֐��ł��B
+		execute() から呼び出される関数です。
 	
-		execute() �́A�`��\�̈�ɂ���
-		�w�_�C���O������ԁx CentDedDgrRessya �I�u�W�F�N�g���ɁA
-		���̊֐����Ăяo���܂��B
+		execute() は、描画可能領域にある
+		『ダイヤグラム列車』 CentDedDgrRessya オブジェクト毎に、
+		この関数を呼び出します。
 		
 	 @param eRessyahoukou [in]
-		��ԕ����ł��B
+		列車方向です。
 	 @param iRessyaIdx [in]
-		��ԃC���f�N�X�ł��B
+		列車インデクスです。
 	 @param pCentDedDgrRessya [in]
-		�w�_�C���O������ԁx CentDedDgrRessya �I�u�W�F�N�g���w�肵�܂��B
+		『ダイヤグラム列車』 CentDedDgrRessya オブジェクトを指定します。
 		
-	 �y�I�[�o���C�h�z
-		���̃N���X�́A�w�_�C���O������ԁx CentDedDgrRessya ��
-		��܂���Ă��� �w�_�C���O������Ԑ��x CentDedDgrRessyasen 
-		�I�u�W�F�N�g�̂����A�`��\�̈�ɂ�����̂�񋓂��A
-		onCentDedDgrRessyasen() ���Ăяo���܂��B
+	 【オーバライド】
+		このクラスは、『ダイヤグラム列車』 CentDedDgrRessya に
+		包含されている 『ダイヤグラム列車線』 CentDedDgrRessyasen 
+		オブジェクトのうち、描画可能領域にあるものを列挙し、
+		onCentDedDgrRessyasen() を呼び出します。
 	
 	 */
 	virtual void onCentDedDgrRessya( 
@@ -283,31 +283,31 @@ protected:
 
 	/**
 		execute() -> onCentDedDgrRessya() -> onCentDedDgrRessyasen() 
-	 �̏��ŌĂяo�����	�֐��ł��B
+	 の順で呼び出される	関数です。
 	
-		execute() �́A�`��\�̈�ɂ���
-		�w�_�C���O������Ԑ��x CentDedDgrRessyasen �I�u�W�F�N�g���ɁA
-		���̊֐����Ăяo���܂��B
+		execute() は、描画可能領域にある
+		『ダイヤグラム列車線』 CentDedDgrRessyasen オブジェクト毎に、
+		この関数を呼び出します。
 		
 	 @param eRessyahoukou [in]
-		��ԕ����ł��B
+		列車方向です。
 	 @param iRessyaIdx [in]
-		��ԃC���f�N�X�ł��B
+		列車インデクスです。
 	 @param aCentDedDgrRessya [in]
-		�w�_�C���O������ԁx CentDedDgrRessya �I�u�W�F�N�g���w�肵�܂��B
+		『ダイヤグラム列車』 CentDedDgrRessya オブジェクトを指定します。
 	 @param iRessyasenIdx [in]
-		��Ԑ��C���f�N�X�ł��B
+		列車線インデクスです。
 	 @param pCentDedDgrRessya [in]
-		�w�_�C���O������Ԑ��x CentDedDgrRessyasen 
-		�I�u�W�F�N�g���w�肵�܂��B
+		『ダイヤグラム列車線』 CentDedDgrRessyasen 
+		オブジェクトを指定します。
 		
-	 �y�I�[�o���C�h�z
-		���̃N���X�́A�w�_�C���O������Ԑ��xCentDedDgrRessyasen ��
-		�͈͓��́w�_�C���O�����w�����xCentDedDgrEkiJikoku 
-		�I�u�W�F�N�g��� ���A onCentDedDgrEkiJikoku() ���Ăяo���܂��B
-		�I�[�o���C�h���āA
-		�w�_�C���O������Ԑ��x CentDedDgrRessyasen �I�u�W�F�N�g����
-		�������L�q���Ă��������B
+	 【オーバライド】
+		このクラスは、『ダイヤグラム列車線』CentDedDgrRessyasen の
+		範囲内の『ダイヤグラム駅時刻』CentDedDgrEkiJikoku 
+		オブジェクトを列挙 し、 onCentDedDgrEkiJikoku() を呼び出します。
+		オーバライドして、
+		『ダイヤグラム列車線』 CentDedDgrRessyasen オブジェクト毎の
+		処理を記述してください。
 	*/
 	virtual void onCentDedDgrRessyasen( 
 		ERessyahoukou eRessyahoukou ,
@@ -318,33 +318,33 @@ protected:
 		const int& iShiftSecond = 0) ;
 	/**
 		execute() -> onCentDedDgrRessya() -> onCentDedDgrRessyasen() -> onCentDedDgrRessyasenEki()
-	 �̏��ŌĂяo�����	�֐��ł��B
+	 の順で呼び出される	関数です。
 	
-		execute() �́A�`��\�̈�ɂ���
-		�w�_�C���O������Ԑ��̉w�x CentDedDgrRessyasenEki �I�u�W�F�N�g���ɁA
-		���̊֐����Ăяo���܂��B
+		execute() は、描画可能領域にある
+		『ダイヤグラム列車線の駅』 CentDedDgrRessyasenEki オブジェクト毎に、
+		この関数を呼び出します。
 		
 	 @param eRessyahoukou [in]
-		��ԕ����ł��B
+		列車方向です。
 	 @param iRessyaIdx [in]
-		��ԃC���f�N�X�ł��B
+		列車インデクスです。
 	 @param aCentDedDgrRessya [in]
-		�w�_�C���O������ԁx CentDedDgrRessya �I�u�W�F�N�g���w�肵�܂��B
+		『ダイヤグラム列車』 CentDedDgrRessya オブジェクトを指定します。
 	 @param iRessyasenIdx [in]
-		��Ԑ��C���f�N�X�ł��B
+		列車線インデクスです。
 	 @param pCentDedDgrRessya [in]
-		�w�_�C���O������Ԑ��x CentDedDgrRessyasen 
-		�I�u�W�F�N�g���w�肵�܂��B
+		『ダイヤグラム列車線』 CentDedDgrRessyasen 
+		オブジェクトを指定します。
 	 @param iRessyasenEkiIdx [in]
-		��Ԑ��̉w�C���f�N�X�ł��B
+		列車線の駅インデクスです。
 	 @param pCentDedDgrRessya [in]
-		�w�_�C���O������Ԑ��̉w�x pCentDedDgrRessyasenEki 
-		�I�u�W�F�N�g���w�肵�܂��B
+		『ダイヤグラム列車線の駅』 pCentDedDgrRessyasenEki 
+		オブジェクトを指定します。
 		
-	 �y�I�[�o���C�h�z
-		�I�[�o���C�h���āA
-		�w�_�C���O������Ԑ��̉w�x CentDedDgrRessyasenEki �I�u�W�F�N�g����
-		�������L�q���Ă��������B
+	 【オーバライド】
+		オーバライドして、
+		『ダイヤグラム列車線の駅』 CentDedDgrRessyasenEki オブジェクト毎の
+		処理を記述してください。
 	*/
 	//virtual void onCentDedDgrEkiJikoku( 
 	//	ERessyahoukou eRessyahoukou ,
@@ -359,37 +359,37 @@ protected:
 
 public:
 	// ********************************
-	///@name CEnumRessyasen-�֘A
+	///@name CEnumRessyasen-関連
 	// ********************************
 	///@{
 	const CentDedDgrDia*	getCentDedDgrDia() ;
 	///@}
 	// ********************************
-	///@name CEnumRessyasen-����
+	///@name CEnumRessyasen-属性
 	// ********************************
 	///@{
 	CdDcdZoneXy	getDgrZone() ;
 
 	/**
 		m_bDisplayRessyasenKudari , m_bDisplayRessyasenNobori 
-		�̒l���擾���܂��B
+		の値を取得します。
 	 @param eRessyahoukou [in]
-		��ԕ������w�肵�Ă��������B
-		- Ressyahoukou_Kudari ;	//	������ (m_bDisplayRessyasenKudari)
-		- Ressyahoukou_Nobori ; //	����� (m_bDisplayRessyasenNobori)
+		列車方向を指定してください。
+		- Ressyahoukou_Kudari ;	//	下り列車 (m_bDisplayRessyasenKudari)
+		- Ressyahoukou_Nobori ; //	上り列車 (m_bDisplayRessyasenNobori)
 	 @return 
-		- true ;	//	��Ԃ���������
-		- false ;	//	��Ԃ��������Ȃ��B
+		- true ;	//	列車を処理する
+		- false ;	//	列車を処理しない。
 	 */
 	bool getDisplayRessyasen(  ERessyahoukou eRessyahoukou )const ;
 	///@}
 	// ********************************
-	///@name CEnumRessyasen-����
+	///@name CEnumRessyasen-操作
 	// ********************************
 	///@{
 	/**
-		�`��\�̈�ɂ���w�_�C���O������Ԑ��x���ɁA
-		���z�֐� onCentDedDgrRessyasen() ���Ăяo���܂��B
+		描画可能領域にある『ダイヤグラム列車線』毎に、
+		仮想関数 onCentDedDgrRessyasen() を呼び出します。
 	 */
 	virtual void execute() ;
 
@@ -421,24 +421,24 @@ public:
 		const int& iShiftSecond = 0);
 
 	/**
-	execute() ����Ăяo�����֐��ł��B
+	execute() から呼び出される関数です。
 
-	execute() �́A�`��\�̈�ɂ���
-	�w�_�C���O������ԁx CentDedDgrRessya �I�u�W�F�N�g���ɁA
-	���̊֐����Ăяo���܂��B
+	execute() は、描画可能領域にある
+	『ダイヤグラム列車』 CentDedDgrRessya オブジェクト毎に、
+	この関数を呼び出します。
 
 	@param eRessyahoukou [in]
-	��ԕ����ł��B
+	列車方向です。
 	@param iRessyaIdx [in]
-	��ԃC���f�N�X�ł��B
+	列車インデクスです。
 	@param pCentDedDgrRessya [in]
-	�w�_�C���O������ԁx CentDedDgrRessya �I�u�W�F�N�g���w�肵�܂��B
+	『ダイヤグラム列車』 CentDedDgrRessya オブジェクトを指定します。
 
-	�y�I�[�o���C�h�z
-	���̃N���X�́A�w�_�C���O������ԁx CentDedDgrRessya ��
-	��܂���Ă��� �w�_�C���O������Ԑ��x CentDedDgrRessyasen
-	�I�u�W�F�N�g�̂����A�`��\�̈�ɂ�����̂�񋓂��A
-	onCentDedDgrRessyasen() ���Ăяo���܂��B
+	【オーバライド】
+	このクラスは、『ダイヤグラム列車』 CentDedDgrRessya に
+	包含されている 『ダイヤグラム列車線』 CentDedDgrRessyasen
+	オブジェクトのうち、描画可能領域にあるものを列挙し、
+	onCentDedDgrRessyasen() を呼び出します。
 
 	*/
 	virtual void RessyaTrackLineDraw(
@@ -455,21 +455,21 @@ public:
 		const DcdPos& posxDgrSyuuten)const;
 
 	/**
-	�Ԑ����̂����A��1�����̕`�ʂɎg�p���܂��B
+	番線線のうち、幅1直線の描写に使用します。
 	@param posRessyaTrackKiten
-	���̋N�_�̘_�����W�ł��B
+	線の起点の論理座標です。
 	@param posRessyaTrackSyuuten
-	���̏I�_�̘_�����W�ł��B
+	線の終点の論理座標です。
 	@param pCentDedDgrRessya
-	�Ԑ����̐e�ł����Ԃł��B
+	番線線の親である列車です。
 	@param iYShiftKiten
-	�N�_��Y�����ɃV�t�g���镨���ʂł��B
-	�I�_�Ƃ̑召�֌W�����āAY�����̕��̑����ʂ��A
-	iYShiftKiten�ƕ�������v����悤�ɂ��܂�
+	起点をY方向にシフトする物理量です。
+	終点との大小関係を見て、Y方向の幅の増減量が、
+	iYShiftKitenと符号が一致するようにします
 	@param iYShiftSyuuten
-	�I�_��Y�����ɃV�t�g���镨���ʂł��B
-	�N�_�Ƃ̑召�֌W�����āAY�����̕��̑����ʂ��A
-	iYShiftSyuuten�ƕ�������v����悤�ɂ��܂�
+	終点をY方向にシフトする物理量です。
+	起点との大小関係を見て、Y方向の幅の増減量が、
+	iYShiftSyuutenと符号が一致するようにします
 	*/
 	virtual void RessyaTrackVerticalLineDraw(
 		CdDcdPosXy posRessyaTrackKiten,
@@ -478,22 +478,22 @@ public:
 		int iYShiftKiten = 0,
 		int iYShiftSyuuten = 0);
 	/**
-	�Ԑ����̓��A��3�̐������̕`�ʂɎg�p���܂�
+	番線線の内、幅3の水平線の描写に使用します
 	@param iX_Left_Dcd
-	���̍��[�̕���X���W�ł��B
+	線の左端の物理X座標です。
 	@param iX_Right_Dcd
-	���̉E�[�̕���X���W�ł��B
+	線の右端の物理X座標です。
 	@param iY_Dcd
-	����Y���W�ł�
+	線のY座標です
 	@param pCentDedDgrRessya
-	�Ԑ����̐e�ł����Ԃł��B
+	番線線の親である列車です。
 	@param iYChamferLeft
-	���̍����̊p�����܂��B
-	-1:�I�_��(��ԕ����)�̊p�����܂�
-	0:�p�����܂���
-	1:�N�_���̊p�����܂�
+	線の左側の角を削ります。
+	-1:終点側(列車方向基準)の角を削ります
+	0:角を削りません
+	1:起点側の角を削ります
 	@param iYChamferRight
-	���̉E���̊p�����܂��B
+	線の右側の角を削ります。
 	*/
 	virtual void RessyaTrackHorizontalLineDraw(
 		int iX_Left_Dcd,
@@ -513,12 +513,12 @@ public:
 
 	/**
 		@param iLeftShape
-			�~�ʂ̍����̌`��ł��B
-			-1:��Ԃ��N�_���ɔ������Ă���ꍇ�A�~�ʂ͏I�_���ɓ˂��o���܂��B
-			1:��Ԃ��I�_���ɔ������Ă���ꍇ�A�~�ʂ͋N�_���ɓ˂��o���܂��B
+			円弧の左側の形状です。
+			-1:列車が起点側に発着している場合、円弧は終点側に突き出します。
+			1:列車が終点側に発着している場合、円弧は起点側に突き出します。
 		@param iRightShape
-			�~�ʂ̉E���̌`��ł��B
-			iLeftShape�Ɠ����ł����A�������pCentDedDgrRessya�ƂȂ�܂��B
+			円弧の右側の形状です。
+			iLeftShapeと同じですが、基準方向はpCentDedDgrRessyaとなります。
 	*/
 	virtual void ConnectNextNoDisplayDraw(
 		const CentDedDgrRessya* pCentDedDgrRessya,

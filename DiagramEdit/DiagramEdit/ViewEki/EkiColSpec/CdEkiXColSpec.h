@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 // ****************************************************************
 // $Id: CdEkiXColSpec.h 179 2014-05-05 13:50:33Z okm $
@@ -79,129 +79,129 @@ Copyright (C) 2006-2017 take-okm
 namespace ViewEki{ namespace EkiColSpec{
 /**
 @brief
-  �w�r���[�� CWndDcdGridEki �ɂ����āA�O���b�h��X��ɕ\��
-  ���ׂ����e���L�q�����A�P���f�[�^�N���X�ł��B
+  駅ビューの CWndDcdGridEki において、グリッドのX列に表示
+  すべき内容を記述した、単純データクラスです。
 
-  ���̒l�� NULL ��Ԃ������܂��B
+  この値は NULL 状態を持ちます。
 */
 class CdEkiXColSpec
 {
 public:
 	// ********************************
-	//	�C���i�[�^�C�v
+	//	インナータイプ
 	// ********************************
-	/** ��̎�� */
+	/** 列の種類 */
 	enum class EColumnType
 	{
-		/** �wIndex�� */
+		/** 駅Index列 */
 		ColumnType_EkiIndex = 0,
-		/**	�w���� */
+		/**	駅名列 */
 		ColumnType_Ekimei  ,
-		/**	�w�����`�� */
+		/**	駅時刻形式 */
 		ColumnType_Ekijikokukeisiki ,
-		/**	�w�K�� */
+		/**	駅規模 */
 		ColumnType_Ekikibo ,
-		/** �Ԑ��� */
+		/** 番線数 */
 		ColumnType_EkiTrack2Count,
-		/** ����w�ݒ� */
+		/** 分岐駅設定 */
 		ColumnType_EkiBrunch,
-		/** ����ݒ� */
+		/** 環状線設定 */
 		ColumnType_EkiLoop,
 
-		//��������\���ݒ胂�[�h�p
+		//ここから表示設定モード用
 
-		/** �N�_�����葝����������Ɨ� */
+		/** 起点側下り増結上り解結作業欄 */
 		ColumnType_OperationOriginDownBeforeUpAfter,
-		/** �O���Ɨ�(�N�_��) */
+		/** 前後作業欄(起点側) */
 		ColumnType_OperationOrigin,
-		/** �N�_�����������葝����Ɨ� */
+		/** 起点側下り解結上り増結作業欄 */
 		ColumnType_OperationOriginDownAfterUpBefore,
 
-		/** �I�_�����葝����������Ɨ� */
+		/** 終点側下り増結上り解結作業欄 */
 		ColumnType_OperationTerminalDownBeforeUpAfter,
-		/** �O���Ɨ�(�I�_��) */
+		/** 前後作業欄(終点側) */
 		ColumnType_OperationTerminal,
-		/** �I�_�����������葝����Ɨ� */
+		/** 終点側下り解結上り増結作業欄 */
 		ColumnType_OperationTerminalDownAfterUpBefore,
-		/** �Ԑ��\���ȗ��ݒ� */
+		/** 番線表示省略設定 */
 		ColumnType_TrackOmit,
 
-		/** ����J�X�^�}�C�Y�����\�r���[�ł̒������\���ݒ� */
+		/** 下りカスタマイズ時刻表ビューでの着時刻表示設定 */
 		ColumnType_ChakuJikokuDisplayKudari,
-		/** ����J�X�^�}�C�Y�����\�r���[�ł̔����Ԑ��\���ݒ� */
+		/** 下りカスタマイズ時刻表ビューでの発着番線表示設定 */
 		ColumnType_TrackDisplayKudari,
-		/** ����J�X�^�}�C�Y�����\�r���[�ł̔������\���ݒ� */
+		/** 下りカスタマイズ時刻表ビューでの発時刻表示設定 */
 		ColumnType_HatsuJikokuDisplayKudari,
-		/** ����J�X�^�}�C�Y�����\�r���[�ł̗�Ԕԍ��\���ݒ� */
+		/** 下りカスタマイズ時刻表ビューでの列車番号表示設定 */
 		ColumnType_RessyabangouDisplayKudari,
-		/** ����J�X�^�}�C�Y�����\�r���[�ł̉^�p�ԍ��\���ݒ� */
+		/** 下りカスタマイズ時刻表ビューでの運用番号表示設定 */
 		ColumnType_OperationNumberDisplayKudari,
-		/** ����J�X�^�}�C�Y�����\�r���[�ł̉^�p�ԍ��\���i���ݒ� */
+		/** 下りカスタマイズ時刻表ビューでの運用番号表示段数設定 */
 		ColumnType_OperationNumberDisplayRowsKudari,
-		/** ����J�X�^�}�C�Y�����\�r���[�ł̗�Ԏ�ʕ\���ݒ� */
+		/** 下りカスタマイズ時刻表ビューでの列車種別表示設定 */
 		ColumnType_RessyaSyubetsuDisplayKudari,
-		/** ����J�X�^�}�C�Y�����\�r���[�ł̗�Ԗ��E�����\���ݒ� */
+		/** 下りカスタマイズ時刻表ビューでの列車名・号数表示設定 */
 		ColumnType_RessyameiDisplayKudari,
-		/** ����J�X�^�}�C�Y�����\�r���[�ł̘H���O�E�O��Ԏn���w�\���ݒ� */
+		/** 下りカスタマイズ時刻表ビューでの路線外・前列車始発駅表示設定 */
 		ColumnType_OuterSihatsuDisplayKudari,
-		/** ����J�X�^�}�C�Y�����\�r���[�ł̘H���O�E����ԏI���w�\���ݒ� */
+		/** 下りカスタマイズ時刻表ビューでの路線外・次列車終着駅表示設定 */
 		ColumnType_OuterShuchakuDisplayKudari,
 
-		/** ���J�X�^�}�C�Y�����\�r���[�ł̒������\���ݒ� */
+		/** 上りカスタマイズ時刻表ビューでの着時刻表示設定 */
 		ColumnType_ChakuJikokuDisplayNobori,
-		/** ���J�X�^�}�C�Y�����\�r���[�ł̔����Ԑ��\���ݒ� */
+		/** 上りカスタマイズ時刻表ビューでの発着番線表示設定 */
 		ColumnType_TrackDisplayNobori,
-		/** ���J�X�^�}�C�Y�����\�r���[�ł̔������\���ݒ� */
+		/** 上りカスタマイズ時刻表ビューでの発時刻表示設定 */
 		ColumnType_HatsuJikokuDisplayNobori,
-		/** ���J�X�^�}�C�Y�����\�r���[�ł̗�Ԕԍ��\���ݒ� */
+		/** 上りカスタマイズ時刻表ビューでの列車番号表示設定 */
 		ColumnType_RessyabangouDisplayNobori,
-		/** ���J�X�^�}�C�Y�����\�r���[�ł̉^�p�ԍ��\���ݒ� */
+		/** 上りカスタマイズ時刻表ビューでの運用番号表示設定 */
 		ColumnType_OperationNumberDisplayNobori,
-		/** ���J�X�^�}�C�Y�����\�r���[�ł̉^�p�ԍ��\���i���ݒ� */
+		/** 上りカスタマイズ時刻表ビューでの運用番号表示段数設定 */
 		ColumnType_OperationNumberDisplayRowsNobori,
-		/** ���J�X�^�}�C�Y�����\�r���[�ł̗�Ԏ�ʕ\���ݒ� */
+		/** 上りカスタマイズ時刻表ビューでの列車種別表示設定 */
 		ColumnType_RessyaSyubetsuDisplayNobori,
-		/** ���J�X�^�}�C�Y�����\�r���[�ł̗�Ԗ��E�����\���ݒ� */
+		/** 上りカスタマイズ時刻表ビューでの列車名・号数表示設定 */
 		ColumnType_RessyameiDisplayNobori,
-		/** ����J�X�^�}�C�Y�����\�r���[�ł̘H���O�E�O��Ԏn���w�\���ݒ� */
+		/** 下りカスタマイズ時刻表ビューでの路線外・前列車始発駅表示設定 */
 		ColumnType_OuterSihatsuDisplayNobori,
-		/** ����J�X�^�}�C�Y�����\�r���[�ł̘H���O�E����ԏI���w�\���ݒ� */
+		/** 下りカスタマイズ時刻表ビューでの路線外・次列車終着駅表示設定 */
 		ColumnType_OuterShuchakuDisplayNobori,
 
-		/** �_�C���O�����r���[�ł̍ݐ��\�\���ݒ� */
+		/** ダイヤグラムビューでの在線表表示設定 */
 		ColumnType_DiagramTrackDisplay,
-		/** �_�C���O������ԏ��\���i����j */
+		/** ダイヤグラム列車情報表示（下り） */
 		ColumnType_DiagramRessyajouhouHyoujiKudari,
-		/** �_�C���O������ԏ��\���i���j */
+		/** ダイヤグラム列車情報表示（上り） */
 		ColumnType_DiagramRessyajouhouHyoujiNobori,
-		/** ���̉w���玟�̉w�܂ł̋��� */
+		/** この駅から次の駅までの距離 */
 		ColumnType_NextEkiDistance,
-		/** ���̉w���玟�̉w�܂ł̔w�i�F�ݒ� */
+		/** この駅から次の駅までの背景色設定 */
 		ColumnType_DiagramColorNextEki,
-		/** ���_�C���ŕ\�����邩�ۂ� */
+		/** 箱ダイヤで表示するか否か */
 		ColumnType_OperationTableDisplayJikoku,
 
 
 
-		/**	NULL��Ԃ������܂� */
+		/**	NULL状態を示します */
 		ColumnType_NULL = -1 
 	};
 private:
 	// ********************************
-	///@name ����
+	///@name 属性
 	// ********************************
 	///@{
-	/** ��̎�� */
+	/** 列の種類 */
 	EColumnType	m_eColumnType ;
 	
 	///@}
 public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	/**
 	@param eColumnType 
-		��̎�� 
+		列の種類 
 	*/
 	CdEkiXColSpec( 
 		EColumnType eColumnType ) 
@@ -212,16 +212,16 @@ public:
 	
 public:
 	// ********************************
-	///@name CdEkiYColSpec-����
+	///@name CdEkiYColSpec-属性
 	// ********************************
 	EColumnType	getColumnType()const{	return m_eColumnType ;};
 
 	/**
-		�l��ݒ肵�܂��B
+		値を設定します。
 	@param eColumnType 
-		��̎�� 
+		列の種類 
 	@param iEkiIndex 
-		�wIndex 
+		駅Index 
 	*/
 	void set( EColumnType eColumnType ) 
 	{
@@ -230,16 +230,16 @@ public:
 
 	bool isNull()const{	return m_eColumnType == EColumnType::ColumnType_NULL ;};
 	/* 
-		this ��NULL��Ԃɂ��܂��B
+		this をNULL状態にします。
 	*/
 	void setNull(){	*this = CdEkiXColSpec() ;};	
 
 	/**
-		���̃I�u�W�F�N�g�Ƃ̊ԂŁA���������ꂩ�ۂ��𔻒肵�܂��B
+		他のオブジェクトとの間で、属性が同一か否かを判定します。
 	@param value
-		��r�Ώۂ��w�肵�Ă��������B
+		比較対象を指定してください。
 	@return
-		����������ł���� true 
+		属性が同一であれば true 
 	*/
 	bool isEqualTo( const CdEkiXColSpec& value )const
 	{

@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -77,9 +77,9 @@ Copyright (C) 2006-2017 take-okm
 #endif // _MSC_VER > 1000
 
 #include <afxwin.h>
-#include "NsOu\Ou.h"
-#include "DcDraw\IfDcDraw.h"
-#include "DcdGrid\WndDcdGrid3\CSelectCell.h"
+#include "NsOu¥Ou.h"
+#include "DcDraw¥IfDcDraw.h"
+#include "DcdGrid¥WndDcdGrid3¥CSelectCell.h"
 
 namespace DcDrawLib{
 namespace DcdGrid{
@@ -92,23 +92,23 @@ class CPropStack ;
 // ****************************************************************
 /**
 @brief
-	CWndDcdGrid ��CellSelect(�Z���I��)���N���X���������̂ł��B
+	CWndDcdGrid のCellSelect(セル選択)をクラス化したものです。
 
- WndDcdGrid3::CWndDcdGrid ��̂��ׂẴZ���I����Ԃ�ێ�����N���X�ł��B
- �Z���P�̑I����Ԃ�ێ����� CSelectCell ���A�Z���̐������W�񂵂܂��B
+ WndDcdGrid3::CWndDcdGrid 上のすべてのセル選択状態を保持するクラスです。
+ セル１つの選択状態を保持する CSelectCell を、セルの数だけ集約します。
  
- ���̃N���X�́A CWndDcdGrid  �������I�ɐ������邽�߂ɑ��݂��܂��B
-����ȊO�̗��p���l�͂���܂���B
+ このクラスは、 CWndDcdGrid  が内部的に生成するために存在します。
+それ以外の利用価値はありません。
 
- �y�g�����z
+ 【使い方】
 
-(1) ���̃N���X�̃I�u�W�F�N�g�́A WndDcdGrid3::CWndDcdGrid �Ő�������܂��B
-WndDcdGrid3::CWndDcdGrid::getCSelect() �ŁA�I�u�W�F�N�g�ɃA�N�Z�X�ł��܂��B
+(1) このクラスのオブジェクトは、 WndDcdGrid3::CWndDcdGrid で生成されます。
+WndDcdGrid3::CWndDcdGrid::getCSelect() で、オブジェクトにアクセスできます。
 
-(2) �@WndDcdGrid3::CSelect::getCell() ���\�b�h�ŁA�Z���̑I���󋵂�
-�\�� WndDcdGrid3::CSelectCell �I�u�W�F�N�g���擾���邱�Ƃ��ł��܂��B
- WndDcdGrid3::CSelectCell::setIsSelected() ���\�b�h��p���邱�Ƃɂ��A
-�Z����I����Ԃɂ��邱�Ƃ��ł��܂��B
+(2) 　WndDcdGrid3::CSelect::getCell() メソッドで、セルの選択状況を
+表す WndDcdGrid3::CSelectCell オブジェクトを取得することができます。
+ WndDcdGrid3::CSelectCell::setIsSelected() メソッドを用いることにより、
+セルを選択状態にすることができます。
 
 */
 class CSelect
@@ -119,152 +119,152 @@ public:
 	//	CWndDcdGrid::CSelect::ESelectMode
 	// ****************************************************************
 	/**
-		CWndDcdGrid�̃Z���I���̃��[�h��\���܂��B
+		CWndDcdGridのセル選択のモードを表します。
 	*/
 	enum ESelectMode
 	{ 
-		/// (�f�t�H���g)�I���͕s�\�ł��B(CSelectCell::m_bIsSelected �͖���)
+		/// (デフォルト)選択は不可能です。(CSelectCell::m_bIsSelected は無効)
 		SelectMode_NONE , 	
-		/// X��EY�񗼕��̑I�����\�ł��B
+		/// X列・Y列両方の選択が可能です。
 		SelectMode_XY , 
-		/// X��̑I���̂݉\�ł��BY��͏펞�S��I���ƂȂ�܂��B
+		/// X列の選択のみ可能です。Y列は常時全域選択となります。
 		SelectMode_XColumn , 
-		/// Y��̑I���̂݉\�ł��BX��͏펞�S��I���ƂȂ�܂��B
+		/// Y列の選択のみ可能です。X列は常時全域選択となります。
 		SelectMode_YColumn ,
 	};
 protected:
 	// --------------------------------
-	//	�C���i�[�^�C�v
+	//	インナータイプ
 	// --------------------------------
 	typedef	std::deque< CSelectCell* > CSelectYColumnCellCont ;
 	typedef	std::deque< CSelectYColumnCellCont* > CSelectCellCont ;
 private:
 	// ********************************
-	///@name �֘A
+	///@name 関連
 	// ********************************
 	///@{
 	/**
-		�O���́A CWndDcdGrid �ւ̊֘A�ł��B
-		���̃I�u�W�F�N�g�̔j���̐Ӗ��́A�N���X���[�U�[�ɂ���܂��B
-		���̃I�u�W�F�N�g�́A this ��蒷���������Ȃ��Ă͂Ȃ�܂���B
-		�R���X�g���N�^�Ō��܂�܂��B
+		外側の、 CWndDcdGrid への関連です。
+		このオブジェクトの破棄の責務は、クラスユーザーにあります。
+		このオブジェクトは、 this より長く生存しなくてはなりません。
+		コンストラクタで決まります。
 	 */
 	CWndDcdGrid*	m_pCWndDcdGrid ;
 
 	/**
-		�I���Z���ɑ΂��āA�I���}�[�N��`�悷��
-		DcDraw �I�u�W�F�N�g�ł��B
+		選択セルに対して、選択マークを描画する
+		DcDraw オブジェクトです。
 	 */
 	Ou<IfDcDraw>	m_pIfDcDrawSelect ;
 	///@}
 
 private:
 	// ********************************
-	///@name ����
+	///@name 属性
 	// ********************************
 	///@{
 	/**
-		�I���}�[�N�̕`��̈�Ɍr�����܂߂邩�ۂ��̎w��ł��B
-		- true: �I���}�[�N�̕`��̈�ɁA�Z���̉E���A�����̌r�����܂߂܂��B
-			��ԍ��E���̌r��(�O���b�h�S�̂̍��E���̌r��)�͔͈͂Ɋ܂߂܂���B
-		- false: �I���}�[�N�̕`��̈�ɁA�Z���̉E���A�����̌r�����܂߂܂���B
+		選択マークの描画領域に罫線を含めるか否かの指定です。
+		- true: 選択マークの描画領域に、セルの右側、下側の罫線を含めます。
+			一番左・下の罫線(グリッド全体の左・下の罫線)は範囲に含めません。
+		- false: 選択マークの描画領域に、セルの右側、下側の罫線を含めません。
 
-		����l�� true �ł��B
+		既定値は true です。
 	*/
 	bool m_bIncludeRbBorder ;
 
 	/**
-		CWndDcdGrid�̃Z���I���̃��[�h��\���܂��B
-		����l�́A SelectMode_NONE �ł��B
+		CWndDcdGridのセル選択のモードを表します。
+		既定値は、 SelectMode_NONE です。
 	*/
 	ESelectMode	m_eSelectMode ;
 
 	/**
-		�I���\�����͈́B
-		�P�ʂ̓Z���ԍ��ł��B
+		選択可能制限範囲。
+		単位はセル番号です。
 
-		���̑����́A�Z���̐����傫���l���Ƃ邱�Ƃ��ł��܂��B@n
+		この属性は、セルの数より大きい値をとることができます。@n
 		(m_ColumnNumberSelectLimit.getX().getEndPos()
 			>CDcdGrid::getXColumnCount()
-		�ɂȂ邱�Ƃ��ł��܂��BY������l�ł��B)
+		になることができます。Y列も同様です。)
 
-		�I���\�Ȕ͈́B�f�t�H���g�́AX,Y�Ƃ� 
-		Pos�� 0 �ASize��INT_MAX�ƂȂ�܂��B
+		選択可能な範囲。デフォルトは、X,Yとも 
+		Posが 0 、SizeがINT_MAXとなります。
 	*/
 	CdDcdZoneXy	m_ColumnNumberSelectLimit ;
 
 	/**
-	@brief CWndDcdGrid�S�̂̍X�V�̗L��/����
+	@brief CWndDcdGrid全体の更新の有効/無効
 
-	  �Z���I���̕ύX���� CWndDcdGrid �S�̂��X�V���邩�ۂ����w�肵�܂��B
+	  セル選択の変更時に CWndDcdGrid 全体を更新するか否かを指定します。
 
-	  - true: (�f�t�H���g)�Z���I��(CSelectCell::m_bIsSelected)�̕ύX���ɁA
-	  	CWndDcdGrid �S�̂��X�V���܂�( CWndDcdGrid::update())���Ăяo��)�B
-	  - false: �Z���I��(CSelectCell::m_bIsSelected)�̕ύX���ɂ��A 
-	  	CWndDcdGrid �S�̂̍X�V�͍s���܂���B
+	  - true: (デフォルト)セル選択(CSelectCell::m_bIsSelected)の変更時に、
+	  	CWndDcdGrid 全体を更新します( CWndDcdGrid::update())を呼び出し)。
+	  - false: セル選択(CSelectCell::m_bIsSelected)の変更時にも、 
+	  	CWndDcdGrid 全体の更新は行いません。
 
-	  ������ false ���� true �ɕύX�����ꍇ�́ACWndDcdGrid �S�̂��X�V���܂��B
+	  属性を false から true に変更した場合は、CWndDcdGrid 全体を更新します。
 
-	  �u�Z���I���̕ύX���v�́A
-	  	CSelectCell::m_bIsSelected �̕ω������w���܂��B
+	  「セル選択の変更時」は、
+	  	CSelectCell::m_bIsSelected の変化時を指します。
 	*/
 	bool m_bUpdateCWndDcdGrid ;
 
 	///@}
  private:
 	// ********************************
-	///	@name �W��
+	///	@name 集約
 	// ********************************
 	///@{
 	/**
-	  	�Z���I�u�W�F�N�g��ێ�����R���e�i�ł��B
+	  	セルオブジェクトを保持するコンテナです。
 	  	
-	  	���̃R���e�i�̗v�f���́AYColumn �̐��ɓ������Ȃ�܂��B
-	  	���̃R���e�i�̊e�v�f�́A XColumn ���� CDcdGridCell ��ێ�����
-	  	�R���e�i�ł��B
+	  	このコンテナの要素数は、YColumn の数に等しくなります。
+	  	このコンテナの各要素は、 XColumn 分の CDcdGridCell を保持する
+	  	コンテナです。
 	  	
-	  	���������āA
+	  	したがって、
 	  
-	  	m_CDcdGridCellCont[Y��ԍ�][X��ԍ�]
+	  	m_CDcdGridCellCont[Y列番号][X列番号]
 	  
-	  	�̌`���ŁA�Ή����� CDcdGridCell �I�u�W�F�N�g�ɃA�N�Z�X���ł��܂��B
+	  	の形式で、対応する CDcdGridCell オブジェクトにアクセスができます。
 	  
-	  	�R���e�i���̃I�u�W�F�N�g�̔j���̐Ӗ��́Athis�ɂ���܂��B
+	  	コンテナ内のオブジェクトの破棄の責務は、thisにあります。
 	 */
 	CSelectCellCont 	m_CSelectCellCont ;
 	///@}
 public:
 	// ********************************
-	///@name �萔
+	///@name 定数
 	// ********************************
 	///@{
 	///@}
 
 private:
 	// --------------------------------
-	///@name �����f�[�^
+	///@name 内部データ
 	// --------------------------------
 	///@{
 	/**
-		CWndDcdGrid�̃Z���I���̃��[�h�̑O��l�B
-		update_updateScreen() �ōX�V����܂��B
+		CWndDcdGridのセル選択のモードの前回値。
+		update_updateScreen() で更新されます。
 		
-		���̑����́Am_eSelectMode �� SelectMode_NONE �̂Ƃ��ɁA
-		���̃N���X�̏������y�ʉ����邽�߂Ɏg�p���܂��B
+		この属性は、m_eSelectMode が SelectMode_NONE のときに、
+		このクラスの処理を軽量化するために使用します。
 		
-		m_eSelectMode �� SelectMode_NONE �ɕύX���ꂽ�ꍇ�́A
-		�S�Ă̑I���Z�����������܂��B
+		m_eSelectMode が SelectMode_NONE に変更された場合は、
+		全ての選択セルを解除します。
 		
-		m_eSelectMode �� SelectMode_NONE �ł���Ԃ́A
-		update_adjustProp()�Eupdate_updateScreen()�EOnPaint()��
-		���������Ƀ��^�[�����܂��B
+		m_eSelectMode が SelectMode_NONE である間は、
+		update_adjustProp()・update_updateScreen()・OnPaint()は
+		何もせずにリターンします。
 		
 	*/
 	ESelectMode	m_eSelectMode_Prev ;
 
 	/**
-		�I������Ă���Z���̐��B
-		update_adjustProp() �ōX�V����܂��B
+		選択されているセルの数。
+		update_adjustProp() で更新されます。
 	*/
 	int	m_iSelectedCellCount ;
 
@@ -272,281 +272,281 @@ private:
 
 protected:
 	// --------------------------------
-	///@name �����֐�
+	///@name 下請関数
 	// --------------------------------
 	///@{
 
 
 	/**
-	  setYColumnCount() �� insertYColumn() �̉����֐��ł��B
+	  setYColumnCount() と insertYColumn() の下請関数です。
 
-	  Y����P�A�w��̈ʒu�ɒǉ����܂��B
-	  ���̊֐��́A 
+	  Y列を１つ、指定の位置に追加します。
+	  この関数は、 
 	    m_CDcdGridXColumnCont,m_CDcdGridYColumnCont,
 	    m_CDcdGridCellCont
-	�̑����������s���܂��B
-	adjustProp() �͍s���܂���B
+	の増減だけを行います。
+	adjustProp() は行いません。
 
 	@param iYColumnNumber [in]
-		  Y��ԍ����w�肵�Ă��������B
-		�V�����ǉ����ꂽY�񂪁A����Y��ԍ��ɂȂ�܂��B
-		�͈͂� 0 �ȏ� getYColumnNumber() �ȉ��ŁA
-		0 �Ȃ�擪�EgetYColumnNumber() �Ȃ疖���ւ̒ǉ��ƂȂ�܂��B
-		  �������A INT_MAX ���w�肷��ƁA�������w�肵�����ƂɂȂ�܂��B
+		  Y列番号を指定してください。
+		新しく追加されたY列が、このY列番号になります。
+		範囲は 0 以上 getYColumnNumber() 以下で、
+		0 なら先頭・getYColumnNumber() なら末尾への追加となります。
+		  ただし、 INT_MAX を指定すると、末尾を指定したことになります。
 	@return
-		����������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	-2 ;	//	�C���f�N�X���s��
+		成功したら0以上、エラーなら負の数です。
+		-	-2 ;	//	インデクスが不正
 	 */
 	int insertYColumn_insertColumnCell( int iYColumnNumber ) ;
 
 	/**
-	  setXColumnCount() �� insertXColumn() �̉����֐��ł��B
+	  setXColumnCount() と insertXColumn() の下請関数です。
 
-	  X����P�A�w��̈ʒu�ɒǉ����܂��B
-	  ���̊֐��́A 
+	  X列を１つ、指定の位置に追加します。
+	  この関数は、 
 	    m_CDcdGridXColumnCont,m_CDcdGridYColumnCont,
 	    m_CDcdGridCellCont
-	�̑����������s���܂��B
-	  adjustProp() �͍s���܂���B
+	の増減だけを行います。
+	  adjustProp() は行いません。
 
 	@param iXColumnNumber [in]
-		X��ԍ����w�肵�Ă��������B
-		�V�����ǉ����ꂽX�񂪁A����X��ԍ��ɂȂ�܂��B
-		�͈͂� 0 �ȏ� getXColumnNumber() �ȉ��ŁA
-		0 �Ȃ�擪�EgetXColumnNumber() �Ȃ疖���ւ̒ǉ��ƂȂ�܂��B
-		  �������A INT_MAX ���w�肷��ƁA�������w�肵�����ƂɂȂ�܂��B
+		X列番号を指定してください。
+		新しく追加されたX列が、このX列番号になります。
+		範囲は 0 以上 getXColumnNumber() 以下で、
+		0 なら先頭・getXColumnNumber() なら末尾への追加となります。
+		  ただし、 INT_MAX を指定すると、末尾を指定したことになります。
 	@return
-		����������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	-2 ;	//	�C���f�N�X���s��
+		成功したら0以上、エラーなら負の数です。
+		-	-2 ;	//	インデクスが不正
 	 */
 	int insertXColumn_insertColumnCell( int iXColumnNumber ) ;
 	
 	/**
-  	setYColumnCount() �� eraseYColumn() �̉����֐��ł��B
+  	setYColumnCount() と eraseYColumn() の下請関数です。
   
-  	Y����P�A�폜���܂��B
-  	���̊֐��́A 
+  	Y列を１つ、削除します。
+  	この関数は、 
   	m_CDcdGridXColumnCont,m_CDcdGridYColumnCont,
   	m_CDcdGridCellCont
-  	�̑����������s���܂��B
-  	adjustProp() �͍s���܂���B
+  	の増減だけを行います。
+  	adjustProp() は行いません。
 
 	@param iYColumnNumber [in]
-  		Y��ԍ����w�肵�Ă��������B
-  		�͈͂� 0 �ȏ� getYColumnNumber() �����ł��B
-  		  �������A INT_MAX ���w�肷��ƁA�������w�肵�����ƂɂȂ�܂��B
+  		Y列番号を指定してください。
+  		範囲は 0 以上 getYColumnNumber() 未満です。
+  		  ただし、 INT_MAX を指定すると、末尾を指定したことになります。
 	@return
-	  	����������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-	   -	-2 ;	//	�C���f�N�X���s��
+	  	成功したら0以上、エラーなら負の数です。
+	   -	-2 ;	//	インデクスが不正
 	 */
 	int eraseYColumn_eraseColumnCell( int iYColumnNumber ) ;
 
 	/**
-	setXColumnCount() �� eraseXColumn() �̉����֐��ł��B
+	setXColumnCount() と eraseXColumn() の下請関数です。
 
-	X����P�A�폜���܂��B
-	���̊֐��́A 
+	X列を１つ、削除します。
+	この関数は、 
 	m_CDcdGridXColumnCont,m_CDcdGridYColumnCont,
 	m_CDcdGridCellCont
-	�̑����������s���܂��B
-	adjustProp() �͍s���܂���B
+	の増減だけを行います。
+	adjustProp() は行いません。
 
 	@param iXColumnNumber [in]
-	  	X��ԍ����w�肵�Ă��������B
-	  	�͈͂� 0 �ȏ� getXColumnNumber() �����ł��B
-	  	  �������A INT_MAX ���w�肷��ƁA�������w�肵�����ƂɂȂ�܂��B
+	  	X列番号を指定してください。
+	  	範囲は 0 以上 getXColumnNumber() 未満です。
+	  	  ただし、 INT_MAX を指定すると、末尾を指定したことになります。
 	@return
-	  	����������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-	   -	-2 ;	//	�C���f�N�X���s��
+	  	成功したら0以上、エラーなら負の数です。
+	   -	-2 ;	//	インデクスが不正
 	 */
 	int eraseXColumn_eraseColumnCell( int iXColumnNumber ) ;
 
 	/**
-	�Z���I��ύX���́ACPropStack �C���X�^���X�𐶐����܂��B
-	���̃I�u�W�F�N�g�́A�������Ԓ��͈ȉ��̑�����ݒ肵�܂��B
+	セル選択変更時の、CPropStack インスタンスを生成します。
+	このオブジェクトは、生存期間中は以下の属性を設定します。
 
 	- CSelect::m_bUpdateCWndDcdGrid = false
 
-	 ����ɂ���āA�Z���I��ύX���̕`����œK�����܂��B
-	 (�����̃Z���̑I����ύX����ꍇ�́A���̑�����false�ɂ�����Ԃ�
-	 �Z���̑I����Ԃ�ύX���Ă���A���̑�����true�ɂ���
-	 ��ʂ��ĕ`�悷��ق����A�������悭�Ȃ�܂��B) 
+	 これによって、セル選択変更時の描画を最適化します。
+	 (複数のセルの選択を変更する場合は、この属性をfalseにした状態で
+	 セルの選択状態を変更してから、この属性をtrueにして
+	 画面を再描画するほうが、効率がよくなります。) 
 	*/
 	Ou<CPropStack> createPropStackForSelectChange() ;
 
 	///@}
 protected:
 	// --------------------------------
-	///@name WndDcdGrid3::CDcdGrid ����̈Ϗ�
+	///@name WndDcdGrid3::CDcdGrid からの委譲
 	// --------------------------------
 	///@{
 	/**
-  	  this �́A�V���� Column ���������ꂽ����ɁA���̊֐����Ăяo���܂��B
-  	  �V���� Column �ɑ΂��āA IfDcDraw �C���^�[�t�F�[�X�I�u�W�F�N�g
-  	�̐����E�o�^���͂��߂Ƃ������������s���܂��B
+  	  this は、新しい Column が生成された直後に、この関数を呼び出します。
+  	  新しい Column に対して、 IfDcDraw インターフェースオブジェクト
+  	の生成・登録をはじめとした初期化を行います。
   
-  	���̊֐����I�[�o���C�h���邱�Ƃɂ��A Column �ɓ��L�̏�������
-  	�s�����Ƃ��ł��܂��B
+  	この関数をオーバライドすることにより、 Column に特有の初期化を
+  	行うことができます。
   	
 	@param iXColumnNumber [in]
-	  	  �V���� Column �̗�ԍ��ł��B
+	  	  新しい Column の列番号です。
 	@param pCDcdGridXColumn [in,out]
-	  	  �V�����������ꂽ CDcdGridXColumn �I�u�W�F�N�g�ł��B
-	  	  ���̊֐��͂��̃I�u�W�F�N�g�ɑ΂��āA���������s�����Ƃ��ł��܂��B
+	  	  新しく生成された CDcdGridXColumn オブジェクトです。
+	  	  この関数はこのオブジェクトに対して、初期化を行うことができます。
 	  	
-	[�I�[�o���C�h]
-		 CSelectCell �I�u�W�F�N�g�̒ǉ��E�폜���s���܂��B
+	[オーバライド]
+		 CSelectCell オブジェクトの追加・削除を行います。
 	 */
 	virtual void OnCreateXColumn( int iXColumnNumber ) ;
 	
 	/**
-	  this �́AColumn ���j������钼�O�ɁA���̊֐����Ăяo���܂��B
-	  �j������� Column �ɑ΂��āA IfDcDraw �C���^�[�t�F�[�X�I�u�W�F�N�g��
-	�o�^�����E�j�����͂��߂Ƃ�����n�����s���܂��B
+	  this は、Column が破棄される直前に、この関数を呼び出します。
+	  破棄される Column に対して、 IfDcDraw インターフェースオブジェクトの
+	登録解除・破棄をはじめとした後始末を行います。
 
-	���̊֐����I�[�o���C�h���邱�Ƃɂ��A Column �ɓ��L�̌�n����
-	�s�����Ƃ��ł��܂��B
+	この関数をオーバライドすることにより、 Column に特有の後始末を
+	行うことができます。
 	  	
 	@param iXColumnNumber [in]
-	  	  �j������� Column �̗�ԍ��ł��B
+	  	  破棄される Column の列番号です。
 	  	
-	[�I�[�o���C�h]
-	   CSelectCell �I�u�W�F�N�g�̒ǉ��E�폜���s���܂��B
+	[オーバライド]
+	   CSelectCell オブジェクトの追加・削除を行います。
 	 */
 	virtual void OnDeleteXColumn( int iXColumnNumber ) ;
 
 	/**
-	  this �́A�V���� Column ���������ꂽ����ɁA���̊֐����Ăяo���܂��B
-	  �V���� Column �ɑ΂��āA IfDcDraw �C���^�[�t�F�[�X�I�u�W�F�N�g
-	�̐����E�o�^���͂��߂Ƃ������������s���܂��B
+	  this は、新しい Column が生成された直後に、この関数を呼び出します。
+	  新しい Column に対して、 IfDcDraw インターフェースオブジェクト
+	の生成・登録をはじめとした初期化を行います。
 
-	  ���̊֐����I�[�o���C�h���邱�Ƃɂ��A Column �ɓ��L�̏�������
-	�s�����Ƃ��ł��܂��B
+	  この関数をオーバライドすることにより、 Column に特有の初期化を
+	行うことができます。
 	  	
 	@param iYColumnNumber [in]
-	  �V���� Column �̗�ԍ��ł��B
+	  新しい Column の列番号です。
 
-	[�I�[�o���C�h]
-	   CSelectCell �I�u�W�F�N�g�̒ǉ��E�폜���s���܂��B
+	[オーバライド]
+	   CSelectCell オブジェクトの追加・削除を行います。
 	 */
 	virtual void OnCreateYColumn( int iYColumnNumber ) ;
 	
 	/**
-	  this �́AColumn ���j������钼�O�ɁA���̊֐����Ăяo���܂��B
-	  �j������� Column �ɑ΂��āA IfDcDraw �C���^�[�t�F�[�X�I�u�W�F�N�g��
-	�o�^�����E�j�����͂��߂Ƃ�����n�����s���܂��B
+	  this は、Column が破棄される直前に、この関数を呼び出します。
+	  破棄される Column に対して、 IfDcDraw インターフェースオブジェクトの
+	登録解除・破棄をはじめとした後始末を行います。
 
-	    ���̊֐����I�[�o���C�h���邱�Ƃɂ��A Column �ɓ��L�̌�n����
-	�s�����Ƃ��ł��܂��B
+	    この関数をオーバライドすることにより、 Column に特有の後始末を
+	行うことができます。
 
 	@param iYColumnNumber [in]
-		�j������� Column �̗�ԍ��ł��B
+		破棄される Column の列番号です。
 
-	[�I�[�o���C�h]
-	   CSelectCell �I�u�W�F�N�g�̒ǉ��E�폜���s���܂��B
+	[オーバライド]
+	   CSelectCell オブジェクトの追加・削除を行います。
 	 */
 	virtual void OnDeleteYColumn( int iYColumnNumber ) ;
 
 	///@}
 protected:
 	// --------------------------------
-	///@name CWndDcdGrid ����̈Ϗ�
+	///@name CWndDcdGrid からの委譲
 	// --------------------------------
 	///@{
 	/**
-		CWndDcdGrid::update() �̉����֐��ł��B
+		CWndDcdGrid::update() の下請関数です。
 	
-		- �����̕␳
-		- CSelectCell �ւ̈Ϗ�
+		- 属性の補正
+		- CSelectCell への委譲
 
-		���s���܂��B
+		を行います。
 
-	�y1.�����̕␳�z
+	【1.属性の補正】
 
-	1.ColumnNumberSelectLimit�ɂ��ACSelectCell::m_bIsSelected �̐��K���B
+	1.ColumnNumberSelectLimitによる、CSelectCell::m_bIsSelected の正規化。
 
-	1.1.m_eSelectMode �� SelectMode_NONE �̏ꍇ�A
-	���ׂẴZ�����I���ɂ��܂��B
+	1.1.m_eSelectMode が SelectMode_NONE の場合、
+	すべてのセルを非選択にします。
 
-	1.2.m_eSelectMode �� SelectMode_XColumn �̏ꍇ�A
-	����X��ԍ�(�c����)�̃Z���̑I���󋵂����ׂē���ɂ��܂��B
+	1.2.m_eSelectMode が SelectMode_XColumn の場合、
+	同じX列番号(縦方向)のセルの選択状況をすべて同一にします。
 
-	1.2.1.�����ꂩ�̃Z���� CSelectCell::m_bIsSelected ��true�ɕύX����Ă�����A
-	���ׂẴZ����true�ɂ��܂��B
+	1.2.1.いずれかのセルの CSelectCell::m_bIsSelected がtrueに変更されていたら、
+	すべてのセルをtrueにします。
 
-	1.2.2.�����ꂩ�̃Z���� CSelectCell::m_bIsSelected ��false�ɕύX����Ă�����A
-	���ׂẴZ����false�ɂ��܂��B
+	1.2.2.いずれかのセルの CSelectCell::m_bIsSelected がfalseに変更されていたら、
+	すべてのセルをfalseにします。
 
-	1.2,3.�Z���̑I���󋵂��ύX����Ă��Ȃ��ꍇ�́A
-	�S�ẴZ���̑I���󋵂��Am_ColumnNumberSelectLimit.getY().getPos() ��
-	�I���󋵂Ɠ����ɂ��܂��B
+	1.2,3.セルの選択状況が変更されていない場合は、
+	全てのセルの選択状況を、m_ColumnNumberSelectLimit.getY().getPos() の
+	選択状況と同じにします。
 
-	1.3. m_eSelectMode �� SelectMode_YColumn �̏ꍇ�A
-	����Y��ԍ�(������)�̃Z���̑I���󋵂����ׂē���ɂ��܂��B
-	���K���̕��@�́A SelectMode_XColumn �Ɠ��l�ł��B
+	1.3. m_eSelectMode が SelectMode_YColumn の場合、
+	同じY列番号(横方向)のセルの選択状況をすべて同一にします。
+	正規化の方法は、 SelectMode_XColumn と同様です。
 
-	2.ColumnNumberSelectLimit�ɂ��ACSelectCell::m_bIsSelected �̐��K���B
+	2.ColumnNumberSelectLimitによる、CSelectCell::m_bIsSelected の正規化。
 
-	2.1.m_ColumnNumberSelectLimit �ȊO�̗̈悪�I������Ă����ꍇ��
-	���̑I�����������܂��B
+	2.1.m_ColumnNumberSelectLimit 以外の領域が選択されていた場合は
+	その選択を解除します。
 	
 	 @return 
-		���K���̌��ʁA���炩�̒l��ω��������ꍇ�͐^�ł��B
+		正規化の結果、何らかの値を変化させた場合は真です。
 	 */
 	bool update_adjustProp() ;
 
 	/**
-	CWndDcdGrid::update() �̉����֐��ł��B
-	�����̕ω����A��ʏ�ɔ��f���܂��B
+	CWndDcdGrid::update() の下請関数です。
+	属性の変化を、画面上に反映します。
 
-	CSelectCell::update_updateScreen() �ւ̈Ϗ����s���܂��B
+	CSelectCell::update_updateScreen() への委譲を行います。
 
-	CSelectCell::update_updateScreen() �́Am_bIsSelected ��
-	�ύX���ꂽ��A�Z���̗̈�𖳌������A�X�V���w�����܂��B
+	CSelectCell::update_updateScreen() は、m_bIsSelected が
+	変更されたら、セルの領域を無効化し、更新を指示します。
 		
 	@return 
-		���炩�̒l�̕ω�����ʏ�ɔ��f�������ꍇ�͐^�ł��B
+		何らかの値の変化を画面上に反映させた場合は真です。
 	 */
 	bool update_updateScreen() ;
 
 
 	/**
-	CWndDcdGrid �̓��ꃁ�\�b�h�̈Ϗ����󂯂܂��B
+	CWndDcdGrid の同一メソッドの委譲を受けます。
 
-	�`���v�����܂��B
-	���̊֐��́A pIfDcdTarget �ɁA�`����s���܂��B
+	描画を要求します。
+	この関数は、 pIfDcdTarget に、描画を行います。
 
 	@param pIfDcdTarget  [in]
-	 	���̃I�u�W�F�N�g�ɕ`����s�킹����DC�Ɨ̈���w�肵�Ă��������B
-	 	CWndDcdGrid�̃N���C�A���g�̈�� IfDcdTarget ���w�肵�Ă��������B
+	 	このオブジェクトに描画を行わせたいDCと領域を指定してください。
+	 	CWndDcdGridのクライアント領域の IfDcdTarget を指定してください。
 	@return
-	 	�`����s�����ꍇ�͐^�E���̗̈�ւ̕`�悪�ł��Ȃ������ꍇ�͋U�ł��B
+	 	描画を行った場合は真・この領域への描画ができなかった場合は偽です。
 	*/
 	virtual bool OnPaint( IfDcdTarget* pIfDcdTarget ) ;
 
 	/**
-		CWndDcdGrid �̓��ꃁ�\�b�h�̈Ϗ����󂯂܂��B
+		CWndDcdGrid の同一メソッドの委譲を受けます。
 
-		���̃N���X�ł́A�����͂���܂���B
+		このクラスでは、処理はありません。
 	*/
 	void OnSize(UINT nType, int cx, int cy);
 
 	/**
-		CWndDcdGrid �̓��ꃁ�\�b�h�̈Ϗ����󂯂܂��B
+		CWndDcdGrid の同一メソッドの委譲を受けます。
 
-		���̃N���X�ł́A�����͂���܂���B
+		このクラスでは、処理はありません。
 	*/
 	void OnSetFocus(CWnd* pOldWnd);
 	/**
-		CWndDcdGrid �̓��ꃁ�\�b�h�̈Ϗ����󂯂܂��B
+		CWndDcdGrid の同一メソッドの委譲を受けます。
 
-		���̃N���X�ł́A�����͂���܂���B
+		このクラスでは、処理はありません。
 	*/
 	void OnKillFocus(CWnd* pNewWnd);
 	/**
-		CWndDcdGrid �̓��ꃁ�\�b�h�̈Ϗ����󂯂܂��B
+		CWndDcdGrid の同一メソッドの委譲を受けます。
 
-		�����͂���܂���
+		処理はありません
 	 */
 	virtual void InvalidateGrid( ) ;
 
@@ -554,19 +554,19 @@ protected:
 	///@}
 public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	/**
 	@param pCWndDcdGrid [in]
-		�O���́A CWndDcdGrid �ւ̊֘A�ł��B
-		���̃I�u�W�F�N�g�̔j���̐Ӗ��́A�N���X���[�U�[�ɂ���܂��B
-		���̃I�u�W�F�N�g�́A this ��蒷���������Ȃ��Ă͂Ȃ�܂���B
+		外側の、 CWndDcdGrid への関連です。
+		このオブジェクトの破棄の責務は、クラスユーザーにあります。
+		このオブジェクトは、 this より長く生存しなくてはなりません。
 	 */
 	CSelect( CWndDcdGrid* pCWndDcdGrid ) ;
-	virtual ~CSelect() ;
+	virtual ‾CSelect() ;
 public:
 	// ********************************
-	///@name CSelect �֘A
+	///@name CSelect 関連
 	// ********************************
 	///@{
 	CWndDcdGrid*	getCWndDcdGrid() ;
@@ -576,7 +576,7 @@ public:
 
 
 	// ********************************
-	///@name CSelect ����
+	///@name CSelect 属性
 	// ********************************
 	///@{
 	bool getIncludeRbBorder()const ;
@@ -588,11 +588,11 @@ public:
 
 	/**
 	@return
-		�I���\�����͈́B�P�ʂ̓Z���ԍ��ł��B
-		�߂�l�́A�񐔈ȓ��ɐ��K������܂��B
-		(�߂�l��
-		CdDcdZoneXy::getX().getEndPos() �́A
-		CDcdGrid::getXColumnCount() �ȉ��ɐ��K�����܂��B
+		選択可能制限範囲。単位はセル番号です。
+		戻り値は、列数以内に正規化されます。
+		(戻り値の
+		CdDcdZoneXy::getX().getEndPos() は、
+		CDcdGrid::getXColumnCount() 以下に正規化します。
 	*/
 	CdDcdZoneXy	getColumnNumberSelectLimitRegularized()const ;
  
@@ -601,169 +601,169 @@ public:
 
 	///@}
 	// ********************************
-	///@name CSelect �W��
+	///@name CSelect 集約
 	// ********************************
 	///@{
 	/**
-	  	  �w�肳�ꂽY��EX��ԍ��́A�Z���I�u�W�F�N�g CSelectCell �̃|�C���^��
-	  	�擾���邱�Ƃ��ł��܂��B���̃|�C���^���g���āA�Z���ɑ΂��鑀���
-	  	�s�����Ƃ��ł��܂��B
+	  	  指定されたY列・X列番号の、セルオブジェクト CSelectCell のポインタを
+	  	取得することができます。このポインタを使って、セルに対する操作を
+	  	行うことができます。
 	   @param iXColumnNumber [in] 
-	  	 X��ԍ����w�肵�Ă��������B�͈͂́A0�ȏ� getXColumnCount() �����ł��B
+	  	 X列番号を指定してください。範囲は、0以上 getXColumnCount() 未満です。
 	   @param iYColumnNumber [in] 
-	  	 Y��ԍ����w�肵�Ă��������B�͈͂́A0�ȏ� getYColumnCount() �����ł��B
+	  	 Y列番号を指定してください。範囲は、0以上 getYColumnCount() 未満です。
 	   @return
-	  	  �Ή�����Z���I�u�W�F�N�g��Ԃ��܂��B
-	  	  �C���f�N�X���s���ȏꍇ�́ANULL��Ԃ��܂��B
+	  	  対応するセルオブジェクトを返します。
+	  	  インデクスが不正な場合は、NULLを返します。
 	  
-	  	  �Ԃ��ꂽ�I�u�W�F�N�g�̔j���̐Ӗ��́Athis�ɂ���܂��B
-	  	  �Y������X�� CDcdGrid �̕ʂ̃��\�b�h�ɂ���č폜�����ƁA�Ԃ��ꂽ
-	  	�|�C���^�͖����ɂȂ�܂��B
-	  	   this���j�����ꂽ�Ƃ��ɂ��A�Ԃ��ꂽ�|�C���^�͖����ɂȂ�܂��B
+	  	  返されたオブジェクトの破棄の責務は、thisにあります。
+	  	  該当するX列が CDcdGrid の別のメソッドによって削除されると、返された
+	  	ポインタは無効になります。
+	  	   thisが破棄されたときにも、返されたポインタは無効になります。
 	 */
 	virtual CSelectCell*	getCell( int iXColumnNumber , int iYColumnNumber );
  
 
 	/**
-		�w��� CSelectCell �I�u�W�F�N�g�́A��ԍ���Ԃ��܂��B
+		指定の CSelectCell オブジェクトの、列番号を返します。
 	@param pCSelectCell [in]
-		CDcdGridCell �I�u�W�F�N�g���w�肵�Ă��������B
+		CDcdGridCell オブジェクトを指定してください。
 	@return
-		X��ԍ���Ԃ��܂��B
-		�I�u�W�F�N�g�� CDcdGrid �I�u�W�F�N�g�ɏW�񂳂�Ă��Ȃ��ꍇ�́A
-		INT_MIN �ł��B
+		X列番号を返します。
+		オブジェクトが CDcdGrid オブジェクトに集約されていない場合は、
+		INT_MIN です。
 	*/
 	virtual int getXColumnNumberOfCell( 
 		CSelectCell* pCSelectCell ) ;
 	/**
-		�w��� CSelectCell �I�u�W�F�N�g�́A��ԍ���Ԃ��܂��B
+		指定の CSelectCell オブジェクトの、列番号を返します。
 	@param pCSelectCell [in]
-		CDcdGridCell �I�u�W�F�N�g���w�肵�Ă��������B
+		CDcdGridCell オブジェクトを指定してください。
 	@return
-		Y��ԍ���Ԃ��܂��B
-		�I�u�W�F�N�g�� CDcdGrid �I�u�W�F�N�g�ɏW�񂳂�Ă��Ȃ��ꍇ�́A
-		INT_MIN �ł��B
+		Y列番号を返します。
+		オブジェクトが CDcdGrid オブジェクトに集約されていない場合は、
+		INT_MIN です。
 	*/
 	virtual int getYColumnNumberOfCell( 
 		CSelectCell* pCSelectCell ) ;
 	///@}
 	// ********************************
-	///@name CSelect ����
+	///@name CSelect 操作
 	// ********************************
 	///@{
 	
 
 	/**
-	�w��̃Z���̑I��\�����s���͈͂��A
-	�_���P��(�ʏ�̓s�N�Z���B�N���C�A���g���W)�ŕԂ��܂��B
+	指定のセルの選択表示を行う範囲を、
+	論理単位(通常はピクセル。クライアント座標)で返します。
 
 	@param pIfDcdTarget [in]
-		�`��Ώۂ��w�肵�Ă��������B
+		描画対象を指定してください。
 	@param iXColumnNumber [in]
-		�Z���̗�ԍ����w�肵�Ă��������B
+		セルの列番号を指定してください。
 	@param iYColumnNumber [in]
-		�Z���̗�ԍ����w�肵�Ă��������B
+		セルの列番号を指定してください。
 	@param bIncludeRbBorder [in]
-		true �Ȃ�A�͈͂ɁA�Z���̉E���A�����̌r�����܂߂܂��B
+		true なら、範囲に、セルの右側、下側の罫線を含めます。
 	@return 
-		�Z���̑I��\���͈̔͂�Ԃ��܂��B
+		セルの選択表示の範囲を返します。
 	@attention
-		��ԍ��E���̌r��(�O���b�h�S�̂̍��E���̌r��)�͔͈͂Ɋ܂߂܂���B
+		一番左・下の罫線(グリッド全体の左・下の罫線)は範囲に含めません。
 	*/
 	virtual CdDcdZoneXy getZoneOfCellSelection(
 		IfDcdTarget* pIfDcdTarget , 
 		int iXColumnNumber , int iYColumnNumber , bool bIncludeRbBorder ) ;
 
 	/**
-		�S�ẴZ����I�����܂��B
+		全てのセルを選択します。
 	*/
 	virtual void selectAll() ;
 	/**
-		�S�ẴZ���̑I�����������܂��B
+		全てのセルの選択を解除します。
 	*/
 	virtual void clearSelect() ;
 
 	/**
 	@return 
-		�I������Ă���Z���̐���Ԃ��܂��B
+		選択されているセルの数を返します。
 	*/
 	int getSelectedCellCount()const ;
 
 	/**
 	@return 
-		m_eSelectMode �� SelectMode_XColumn �̏ꍇ�A
-		�I������Ă����̐���Ԃ��܂��B
+		m_eSelectMode が SelectMode_XColumn の場合、
+		選択されている列の数を返します。
 
-		m_eSelectMode �� SelectMode_XColumn �ȊO�̏ꍇ��0�ł��B
+		m_eSelectMode が SelectMode_XColumn 以外の場合は0です。
 	*/
 	int getSelectedXColumnCount()const ;
 
 	/**
 	@return 
-		m_eSelectMode �� SelectMode_YColumn �̏ꍇ�A
-		�I������Ă����̐���Ԃ��܂��B
+		m_eSelectMode が SelectMode_YColumn の場合、
+		選択されている列の数を返します。
 
-		m_eSelectMode �� SelectMode_YColumn �ȊO�̏ꍇ��0�ł��B
+		m_eSelectMode が SelectMode_YColumn 以外の場合は0です。
 	*/
 	int getSelectedYColumnCount()const ;
 
 	/**
-	  m_eSelectMode �� SelectMode_XColumn �̏ꍇ�A
-	�w��̗� Index �̑I����Ԃ��擾���܂��B
+	  m_eSelectMode が SelectMode_XColumn の場合、
+	指定の列 Index の選択状態を取得します。
 
 	@param iColumnNumber [in]
-	  	 X��ԍ����w�肵�Ă��������B�͈͂́A0�ȏ� getXColumnCount() �����ł��B
+	  	 X列番号を指定してください。範囲は、0以上 getXColumnCount() 未満です。
 	@return 
-		�񂪑I������Ă���� true �B
+		列が選択されていれば true 。
 
-		m_eSelectMode �� SelectMode_XColumn �ȊO�̏ꍇ�A
-		���̃��\�b�h�͖����ł��B
+		m_eSelectMode が SelectMode_XColumn 以外の場合、
+		このメソッドは無効です。
 	*/
 	bool getXColumnNumberSelected( int iColumnNumber ) ;
 
 	/**
-	  m_eSelectMode �� SelectMode_XColumn �̏ꍇ�A
-	�w��̗� Index �̑I����Ԃ�ݒ肵�܂��B
-	  ���̃��\�b�h�ɂ��A�w�肳�ꂽ��̃Z���� 
-	CSelectCell::m_bIsSelected �������ς��܂�
+	  m_eSelectMode が SelectMode_XColumn の場合、
+	指定の列 Index の選択状態を設定します。
+	  このメソッドにより、指定された列のセルの 
+	CSelectCell::m_bIsSelected 属性が変わります
 
 	@param iColumnNumber [in]
-	  	 X��ԍ����w�肵�Ă��������B�͈͂́A0�ȏ� getXColumnCount() �����ł��B
+	  	 X列番号を指定してください。範囲は、0以上 getXColumnCount() 未満です。
 	@param bIsSelected [in]
-		�I������ꍇ�� true �A �I����������ꍇ�� false �B
+		選択する場合は true 、 選択解除する場合は false 。
 
-		m_eSelectMode �� SelectMode_XColumn �ȊO�̏ꍇ�A
-		���̃��\�b�h�͖����ł��B
+		m_eSelectMode が SelectMode_XColumn 以外の場合、
+		このメソッドは無効です。
 	*/
 	void setXColumnNumberSelected( int iColumnNumber , bool bIsSelected ) ;
 
 	/**
-	  m_eSelectMode �� SelectMode_XColumn , SelectMode_YColumn �̏ꍇ�A
-	�w��̗� Index �̑I����Ԃ��擾���܂��B
+	  m_eSelectMode が SelectMode_XColumn , SelectMode_YColumn の場合、
+	指定の列 Index の選択状態を取得します。
 
 	@param iColumnNumber [in]
-	  	 Y��ԍ����w�肵�Ă��������B�͈͂́A0�ȏ� getYColumnCount() �����ł��B
+	  	 Y列番号を指定してください。範囲は、0以上 getYColumnCount() 未満です。
 	@return 
-		�񂪑I������Ă���� true �B
+		列が選択されていれば true 。
 
-		m_eSelectMode �� SelectMode_YColumn �ȊO�̏ꍇ�A
-		���̃��\�b�h�͖����ł��B
+		m_eSelectMode が SelectMode_YColumn 以外の場合、
+		このメソッドは無効です。
 	*/
 	bool getYColumnNumberSelected( int iColumnNumber ) ;
 
 	/**
-	  m_eSelectMode �� SelectMode_YColumn �̏ꍇ�A
-	  �w��̗� Index �̑I����Ԃ�ݒ肵�܂��B
-	  ���̃��\�b�h�ɂ��A�w�肳�ꂽ��̃Z���� 
-	CSelectCell::m_bIsSelected �������ς��܂�
+	  m_eSelectMode が SelectMode_YColumn の場合、
+	  指定の列 Index の選択状態を設定します。
+	  このメソッドにより、指定された列のセルの 
+	CSelectCell::m_bIsSelected 属性が変わります
 
 	@param iColumnNumber [in]
-	  	Y��ԍ����w�肵�Ă��������B�͈͂́A0�ȏ� getYColumnCount() �����ł��B
+	  	Y列番号を指定してください。範囲は、0以上 getYColumnCount() 未満です。
 	@param bIsSelected [in]
-		�I������ꍇ�� true �A �I����������ꍇ�� false �B
+		選択する場合は true 、 選択解除する場合は false 。
 
-		m_eSelectMode �� SelectMode_YColumn �ȊO�̏ꍇ�A
-		���̃��\�b�h�͖����ł��B
+		m_eSelectMode が SelectMode_YColumn 以外の場合、
+		このメソッドは無効です。
 	*/
 	void setYColumnNumberSelected( int iColumnNumber , bool bIsSelected ) ;
 

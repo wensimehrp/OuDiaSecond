@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 #if !defined(AFX_CDEDCOMMENTVIEW_H__FBDDE445_4FAC_4AA4_A9CB_3B4100283066__INCLUDED_)
 #define AFX_CDEDCOMMENTVIEW_H__FBDDE445_4FAC_4AA4_A9CB_3B4100283066__INCLUDED_
@@ -74,89 +74,89 @@ Copyright (C) 2006-2017 take-okm
 #if _MSC_VER > 1000
 #pragma once
 #endif // _MSC_VER > 1000
-// CDedCommentView.h : �w�b�_�[ �t�@�C��
+// CDedCommentView.h : ヘッダー ファイル
 //
 #include "NsOu/Ou.h"
 //#include "CDedRosenFileData_CEditCmd_Comment.h"
-#include "DedRosenFileData\EditCmd\EditCmd.h"
+#include "DedRosenFileData¥EditCmd¥EditCmd.h"
 
 namespace ViewComment{
 	using namespace DcDrawLib::DcdCd::DcDrawProp;
 	using namespace OuLib::NsOu;
 	using namespace DedRosenFileData::EditCmd;
 /////////////////////////////////////////////////////////////////////////////
-// CDedCommentView �r���[
+// CDedCommentView ビュー
 
 class CDedCommentView : public CEditView
 {
 // ********************************
-//	�C���i�[�^�C�v
+//	インナータイプ
 // ********************************
 public:
 	typedef CEditView	super ;
 // --------------------------------
-///@name �����f�[�^
+///@name 内部データ
 // --------------------------------
 ///@{
 private:
 	/**
-	 *	���̃r���[�Ŏg�p���Ă���t�H���g�B
-	 *	OnUpdate() �ō쐬���܂��B
+	 *	このビューで使用しているフォント。
+	 *	OnUpdate() で作成します。
 	 */
 	CdFontProp	m_CdFontProp ;
 	CFont	m_CFont ;
 
 	/**
-	 *	�ʏ�� false �B
-	 *	�r���[���A�N�e�B�u�łȂ��Ƃ��ɁA
-	 *	OnUpdate() �ɂ���āA���̃r���[����
-	 *	���Ԃ̂�����X�V���v�����ꂽ�Ƃ�����A
-	 *	�r���[�̑S�X�V�����s����܂ł̊Ԃ��� true �ɂȂ�܂��B
+	 *	通常は false 。
+	 *	ビューがアクティブでないときに、
+	 *	OnUpdate() によって、他のビューから
+	 *	時間のかかる更新が要求されたときから、
+	 *	ビューの全更新を実行するまでの間だけ true になります。
 	 *	
-	 *	���̕ϐ��� true �̂Ƃ��́A
-	 *	�r���[�̍X�V���A���Ƀr���[���A�N�e�B�u�������܂�
-	 *	�ۗ����Ă��邱�Ƃ������܂��B
+	 *	この変数が true のときは、
+	 *	ビューの更新を、次にビューがアクティブ化されるまで
+	 *	保留していることを示します。
 	 *	
-	 *	OnUpdate() �ɂ���āA���̃r���[����
-	 *	���Ԃ̂�����X�V���v�����ꂽ�ꍇ�A
-	 *	���̕ϐ��� true �ɂ��A
-	 *	OnUpdate_All() �͎��s���܂���B
+	 *	OnUpdate() によって、他のビューから
+	 *	時間のかかる更新が要求された場合、
+	 *	この変数を true にし、
+	 *	OnUpdate_All() は実行しません。
 	 *
-	 *	���̒l�� true �̂Ƃ��ɁA�r���[���A�N�e�B�u�����ꂽ��A
-	 *	OnUpdate() �����s���܂��B
+	 *	この値が true のときに、ビューがアクティブ化されたら、
+	 *	OnUpdate() を実行します。
 	 */
 	bool m_bUpdate_All_Requested ;
 
 	/**
-	 *	�ʏ�� false �B
-	 *	�r���[��ύX���Ă���A���̃r���[�̓��e��
-	 *	OnUpdate() �ɂ���āA���[�gDocument()�ɏ������ނ܂ł̊Ԃ���
-	 *	true �ł��B
+	 *	通常は false 。
+	 *	ビューを変更してから、そのビューの内容を
+	 *	OnUpdate() によって、ルートDocument()に書き込むまでの間だけ
+	 *	true です。
 	 */
 	bool m_bIsChanged ;
 
 ///@}
 // --------------------------------
-///@name �������֐�
+///@name 下請け関数
 // --------------------------------
 ///@{
 private:
 	/**
-	 *	OnUpdate() �̉������֐��ł��B
+	 *	OnUpdate() の下請け関数です。
 	 *
-	 *	�h�L�������g�̓��e���r���[�ɔ��f���܂��B
+	 *	ドキュメントの内容をビューに反映します。
 	 */
 	void OnUpdate_All() ; 
 	/**
-	 *	OnUpdate() �̉������֐��ł��B
+	 *	OnUpdate() の下請け関数です。
 	 *
-	 *	pHint �� CRfEditCmd_Comment ����
-	 *	�������s���܂��B
+	 *	pHint が CRfEditCmd_Comment 時の
+	 *	処理を行います。
 	 */
 	void OnUpdate_Comment( Ou<CRfEditCmd_Comment> pCommand );
 
 	/**
-	 *	���̃I�u�W�F�N�g�ɂ�����A�W���̃e�L�X�g�`����@��Ԃ��܂��B
+	 *	このオブジェクトにおける、標準のテキスト描画方法を返します。
 	 */
 	CdDrawTextProp	getCdDrawTextPropStandard() ;
 ///@}
@@ -165,21 +165,21 @@ private:
 //	MFC
 // ----------------------------------------------------------------
 protected:
-	CDedCommentView();           // ���I�����Ɏg�p�����v���e�N�g �R���X�g���N�^
+	CDedCommentView();           // 動的生成に使用されるプロテクト コンストラクタ
 	DECLARE_DYNCREATE(CDedCommentView)
 
-// �A�g���r���[�g
+// アトリビュート
 public:
 
-// �I�y���[�V����
+// オペレーション
 public:
 
-// �I�[�o�[���C�h
-	// ClassWizard �͉��z�֐��̃I�[�o�[���C�h�𐶐����܂��B
+// オーバーライド
+	// ClassWizard は仮想関数のオーバーライドを生成します。
 
 	//{{AFX_VIRTUAL(CDedCommentView)
 	protected:
-	virtual void OnDraw(CDC* pDC);      // ���̃r���[��`�悷�邽�߂ɃI�[�o�[���C�h���܂����B
+	virtual void OnDraw(CDC* pDC);      // このビューを描画するためにオーバーライドしました。
 	virtual void OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint);
 	virtual void OnActivateView(BOOL bActivate, CView* pActivateView, CView* pDeactiveView);
 	virtual void OnBeginPrinting(CDC* pDC, CPrintInfo* pInfo);
@@ -187,15 +187,15 @@ public:
 	virtual void OnPrint(CDC* pDC, CPrintInfo* pInfo);
 	//}}AFX_VIRTUAL
 
-// �C���v�������e�[�V����
+// インプリメンテーション
 protected:
-	virtual ~CDedCommentView();
+	virtual ‾CDedCommentView();
 #ifdef _DEBUG
 	virtual void AssertValid() const;
 	virtual void Dump(CDumpContext& dc) const;
 #endif
 
-	// �������ꂽ���b�Z�[�W �}�b�v�֐�
+	// 生成されたメッセージ マップ関数
 protected:
 	//{{AFX_MSG(CDedCommentView)
 	afx_msg void OnChange();
@@ -208,7 +208,7 @@ protected:
 /////////////////////////////////////////////////////////////////////////////
 
 //{{AFX_INSERT_LOCATION}}
-// Microsoft Visual C++ �͑O�s�̒��O�ɒǉ��̐錾��}�����܂��B
+// Microsoft Visual C++ は前行の直前に追加の宣言を挿入します。
 
 } //namespace ViewComment
 

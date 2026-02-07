@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍAtake-okm‚ªì¬‚µ‚½OuDia‚ğ‰ü‘¢‚µ‚½ƒ\ƒtƒgƒEƒFƒA‚Å‚·B
-‚±‚ÌƒvƒƒOƒ‰ƒ€—˜—p‚É‚Â‚¢‚Ä‚ÍAtake-okm‹LÚ‚Ì‰º‹L•¶‘‚É€‹’‚µ‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã€take-okmæ°ãŒä½œæˆã—ãŸOuDiaã‚’æ”¹é€ ã—ãŸã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ åˆ©ç”¨ã«ã¤ã„ã¦ã¯ã€take-okmæ°è¨˜è¼‰ã®ä¸‹è¨˜æ–‡æ›¸ã«æº–æ‹ ã—ã¾ã™ã€‚
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(–ó: 
+(è¨³: 
 
-	OuDia - —ñÔ•\‚ğ‚à‚Æ‚ÉAƒ_ƒCƒ„ƒOƒ‰ƒ€‚ğ•`‰æ‚·‚éWin32ƒAƒvƒŠƒP[ƒV
-ƒ‡ƒ“B
+	OuDia - åˆ—è»Šæ™‚åˆ»è¡¨ã‚’ã‚‚ã¨ã«ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚’æç”»ã™ã‚‹Win32ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·
+ãƒ§ãƒ³ã€‚
 
 Copyright (C) 2006-2017 take-okm 
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍƒtƒŠ[ƒ\ƒtƒgƒEƒFƒA‚Å‚·B‚ ‚È‚½‚Í‚±‚ê‚ğAƒtƒŠ[ƒ\ƒtƒgƒEƒFƒAà
-’c‚É‚æ‚Á‚Ä”­s‚³‚ê‚½GNU ˆê”ÊŒöO—˜—p‹–‘ø‘(ƒo[ƒWƒ‡ƒ“3‚©A‚»‚êˆÈ~‚Ìƒo[ƒWƒ‡
-ƒ“‚Ì‚¤‚¿‚Ç‚ê‚©)‚ª’è‚ß‚éğŒ‚Ì‰º‚ÅÄ”Ğ•z‚Ü‚½‚Í‰ü•Ï ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚ã‚ãªãŸã¯ã“ã‚Œã‚’ã€ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢è²¡
+å›£ã«ã‚ˆã£ã¦ç™ºè¡Œã•ã‚ŒãŸGNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸(ãƒãƒ¼ã‚¸ãƒ§ãƒ³3ã‹ã€ãã‚Œä»¥é™ã®ãƒãƒ¼ã‚¸ãƒ§
+ãƒ³ã®ã†ã¡ã©ã‚Œã‹)ãŒå®šã‚ã‚‹æ¡ä»¶ã®ä¸‹ã§å†é ’å¸ƒã¾ãŸã¯æ”¹å¤‰ ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚Í—L—p‚Å‚ ‚é‚±‚Æ‚ğŠè‚Á‚Ä”Ğ•z‚³‚ê‚Ü‚·‚ªA*‘S‚­‚Ì–³•ÛØ *‚Å‚·B
-¤‹Æ‰Â”\«‚Ì•ÛØ‚â“Á’è–Ú“I‚Ö‚Ì“K‡«‚ÍAŒ¾ŠO‚É¦‚³‚ê‚½‚à‚Ì‚à ŠÜ‚ßA‘S‚­‘¶İ
-‚µ‚Ü‚¹‚ñBÚ‚µ‚­‚ÍGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ğ‚²——‚­‚¾‚³‚¢B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯æœ‰ç”¨ã§ã‚ã‚‹ã“ã¨ã‚’é¡˜ã£ã¦é ’å¸ƒã•ã‚Œã¾ã™ãŒã€*å…¨ãã®ç„¡ä¿è¨¼ *ã§ã™ã€‚
+å•†æ¥­å¯èƒ½æ€§ã®ä¿è¨¼ã‚„ç‰¹å®šç›®çš„ã¸ã®é©åˆæ€§ã¯ã€è¨€å¤–ã«ç¤ºã•ã‚ŒãŸã‚‚ã®ã‚‚ å«ã‚ã€å…¨ãå­˜åœ¨
+ã—ã¾ã›ã‚“ã€‚è©³ã—ãã¯GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã‚’ã”è¦§ãã ã•ã„ã€‚
 
-‚ ‚È‚½‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚Æ‹¤‚ÉAGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ÌƒRƒs[‚ğˆê•” ó‚¯æ‚Á
-‚Ä‚¢‚é‚Í‚¸‚Å‚·B‚à‚µó‚¯æ‚Á‚Ä‚¢‚È‚¯‚ê‚ÎA<http://www.gnu.org/licenses/> ‚ğ
-‚²——‚­‚¾‚³‚¢B
+ã‚ãªãŸã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¨å…±ã«ã€GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã®ã‚³ãƒ”ãƒ¼ã‚’ä¸€éƒ¨ å—ã‘å–ã£
+ã¦ã„ã‚‹ã¯ãšã§ã™ã€‚ã‚‚ã—å—ã‘å–ã£ã¦ã„ãªã‘ã‚Œã°ã€<http://www.gnu.org/licenses/> ã‚’
+ã”è¦§ãã ã•ã„ã€‚
 
 )
 
-  ‰Á‚¦‚ÄA“Á•Ê‚È—áŠO‚Æ‚µ‚ÄAtake-okm ‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÌƒR[ƒh‚ğ 
+  åŠ ãˆã¦ã€ç‰¹åˆ¥ãªä¾‹å¤–ã¨ã—ã¦ã€take-okm ã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ã‚³ãƒ¼ãƒ‰ã‚’ 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ‚ ‚é‚¢‚Í "MFC Version 9.0" ‚Æ“¯‚¶ƒ‰ƒCƒZƒ“ƒX‚ª“K—p‚³‚ê‚½
-  "MFC Version 9.0" ‚Ì‰ü•Ï‚³‚ê‚½ƒo[ƒWƒ‡ƒ“)‚ÆƒŠƒ“ƒN‚µA
-  ƒŠƒ“ƒN‚³‚ê‚½—¼Ò‚ğŠÜ‚ŞŒ‹‡’˜ì•¨‚ğ”Ğ•z‚·‚é‹–‰Â‚ğ—^‚¦‚Ü‚·B
-  ‚ ‚È‚½‚Í "MFC" ˆÈŠO‚Åg‚í‚ê‚Ä‚¢‚é‚·‚×‚Ä
-  ‚ÌƒR[ƒh‚ÉŠÖ‚µ‚Ä‚Í‘S–Ê“I‚ÉGNUˆê”ÊŒöO—˜—p‹–‘øŒ_–ñ‘‚É]‚í‚È‚¯‚ê‚Î
-  ‚È‚è‚Ü‚¹‚ñB‚ ‚È‚½‚ª‚±‚Ìƒtƒ@ƒCƒ‹‚ğ‰ü•Ï‚µ‚½‚È‚ç‚ÎA‚ ‚È‚½‚Í‚±‚Ì—áŠO
-  ‚ğ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚Ìƒtƒ@ƒCƒ‹‚Éˆø‚«‘±‚«İ‚¯‚é‚±‚Æ‚à‚Å‚«‚Ü‚·‚ªA‚»
-  ‚¤‚·‚é‹`–±‚Í‚ ‚è‚Ü‚¹‚ñB‚à‚µ—áŠO‚ğİ‚¯‚½‚­‚È‚¯‚ê‚ÎA‚±‚Ì—áŠOğ€‚ğ
-  ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚©‚ç‚Ííœ‚µ‚Ä‚­‚¾‚³‚¢B)
+  (  ã‚ã‚‹ã„ã¯ "MFC Version 9.0" ã¨åŒã˜ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ãŒé©ç”¨ã•ã‚ŒãŸ
+  "MFC Version 9.0" ã®æ”¹å¤‰ã•ã‚ŒãŸãƒãƒ¼ã‚¸ãƒ§ãƒ³)ã¨ãƒªãƒ³ã‚¯ã—ã€
+  ãƒªãƒ³ã‚¯ã•ã‚ŒãŸä¸¡è€…ã‚’å«ã‚€çµåˆè‘—ä½œç‰©ã‚’é ’å¸ƒã™ã‚‹è¨±å¯ã‚’ä¸ãˆã¾ã™ã€‚
+  ã‚ãªãŸã¯ "MFC" ä»¥å¤–ã§ä½¿ã‚ã‚Œã¦ã„ã‚‹ã™ã¹ã¦
+  ã®ã‚³ãƒ¼ãƒ‰ã«é–¢ã—ã¦ã¯å…¨é¢çš„ã«GNUä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾å¥‘ç´„æ›¸ã«å¾“ã‚ãªã‘ã‚Œã°
+  ãªã‚Šã¾ã›ã‚“ã€‚ã‚ãªãŸãŒã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ”¹å¤‰ã—ãŸãªã‚‰ã°ã€ã‚ãªãŸã¯ã“ã®ä¾‹å¤–
+  ã‚’ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®ãƒ•ã‚¡ã‚¤ãƒ«ã«å¼•ãç¶šãè¨­ã‘ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ãŒã€ã
+  ã†ã™ã‚‹ç¾©å‹™ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ã‚‚ã—ä¾‹å¤–ã‚’è¨­ã‘ãŸããªã‘ã‚Œã°ã€ã“ã®ä¾‹å¤–æ¡é …ã‚’
+  ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‹ã‚‰ã¯å‰Šé™¤ã—ã¦ãã ã•ã„ã€‚)
 */
 /*
 // ****************************************************************
@@ -75,26 +75,26 @@ Copyright (C) 2006-2017 take-okm
 */
 /** @file */
 #include "stdafx.h"
-#include "NsOu\OuNew.h"
-#include "NsOu\dynamic_castOu.h"
-#include "str\CdConnectedString2.h"
-#include "str\strToInt.h"
-#include "str\CConnectedStringCompress.h"
-#include "str\OuPropertiesText\CConvNodeContainer.h"
-#include "str\OuPropertiesText\CDirectory.h"
-#include "str\OuPropertiesText\ErrorInfo\COuErrorInfoContainer.h"
-#include "logmsg\LogMsg.h"
+#include "NsOuÂ¥OuNew.h"
+#include "NsOuÂ¥dynamic_castOu.h"
+#include "strÂ¥CdConnectedString2.h"
+#include "strÂ¥strToInt.h"
+#include "strÂ¥CConnectedStringCompress.h"
+#include "strÂ¥OuPropertiesTextÂ¥CConvNodeContainer.h"
+#include "strÂ¥OuPropertiesTextÂ¥CDirectory.h"
+#include "strÂ¥OuPropertiesTextÂ¥ErrorInfoÂ¥COuErrorInfoContainer.h"
+#include "logmsgÂ¥LogMsg.h"
 
 #include "CconvCdDedDispProp.h"
 #include "CconvCDedRosenFileDataDigital2.h"
 //#include "../CDiagramEditDoc.h"
 #include "../DiagramEdit.h"
 
-#include "NsMu\CaMui.h"
+#include "NsMuÂ¥CaMui.h"
 //#include "../entDed/CentDedEki.h"
 
 
-/*delete ’x‚¢‚Ì‚Å—}~
+/*delete é…ã„ã®ã§æŠ‘æ­¢
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #undef THIS_FILE
@@ -121,10 +121,10 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 			OuPropertiesText::ErrorInfo::COuErrorInfoContainer* pCOuErrorInfoContainer */) 
 {
 
-	vector<tstring> contString1 = splitc<vector<tstring>>('\n', aString1);
-	vector<tstring> contString2 = splitc<vector<tstring>>('\n', aString2);
-	vector<tstring> contString3 = splitc<vector<tstring>>('\n', aString3);
-	vector<tstring> contString4 = splitc<vector<tstring>>('\n', aString4);
+	vector<tstring> contString1 = splitc<vector<tstring>>('Â¥n', aString1);
+	vector<tstring> contString2 = splitc<vector<tstring>>('Â¥n', aString2);
+	vector<tstring> contString3 = splitc<vector<tstring>>('Â¥n', aString3);
+	vector<tstring> contString4 = splitc<vector<tstring>>('Â¥n', aString4);
 
 
 
@@ -134,20 +134,20 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 	int iRv = 0 ;
 
 	/**
-		“ü—Íƒtƒ@ƒCƒ‹‚Ì®‡«‚ğŠm‚©‚ß‚é
-		EString1-4‚Ì˜Hü‚ªˆê’v
-		EString1E2‚Ì“ú•t‚ªˆê’vA•û–Ê‚ª‹t
-		EString3E4‚Ì“ú•t‚ªˆê’vA•û–Ê‚ª‹t
-		EString1E3‚Ì•û–Ê‚ªˆê’v
-		EString2E4‚Ì•û–Ê‚ªˆê’v
+		å…¥åŠ›ãƒ•ã‚¡ã‚¤ãƒ«ã®æ•´åˆæ€§ã‚’ç¢ºã‹ã‚ã‚‹
+		ãƒ»String1-4ã®è·¯ç·šãŒä¸€è‡´
+		ãƒ»String1ãƒ»2ã®æ—¥ä»˜ãŒä¸€è‡´ã€æ–¹é¢ãŒé€†
+		ãƒ»String3ãƒ»4ã®æ—¥ä»˜ãŒä¸€è‡´ã€æ–¹é¢ãŒé€†
+		ãƒ»String1ãƒ»3ã®æ–¹é¢ãŒä¸€è‡´
+		ãƒ»String2ãƒ»4ã®æ–¹é¢ãŒä¸€è‡´
 	*/
 
-	//“ú•tA—j“ú‚Ì‘ã‚í‚è‚Ég—p
-	tstring strDate[4];//"20xx”NxŒx“ú"
+	//æ—¥ä»˜ã€æ›œæ—¥ã®ä»£ã‚ã‚Šã«ä½¿ç”¨
+	tstring strDate[4];//"20xxå¹´xæœˆxæ—¥"
 
 	//tstring strRosenID=_T("");
-	//Œ©o‚µ‚É•\¦‚³‚ê‚Ä‚¢‚éA•\‚Ì”ÍˆÍ‚©‚çA‰w–¼‚ğ”²‚«o‚µ‚Ä•À‚×‚½‚à‚Ì
-	vector<deque<tstring>> strRoute;//"“V‰¤›/‘åã/‹‹´/“V‰¤›"
+	//è¦‹å‡ºã—ã«è¡¨ç¤ºã•ã‚Œã¦ã„ã‚‹ã€æ™‚åˆ»è¡¨ã®ç¯„å›²ã‹ã‚‰ã€é§…åã‚’æŠœãå‡ºã—ã¦ä¸¦ã¹ãŸã‚‚ã®
+	vector<deque<tstring>> strRoute;//"å¤©ç‹å¯º/å¤§é˜ª/äº¬æ©‹/å¤©ç‹å¯º"
 	strRoute.assign(4, {});
 
 	if (iRv >= 0)
@@ -156,13 +156,13 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 		if (pos != tstring::npos)
 		{
 			tstring::size_type posA = aString1.find(_T(">"), pos);
-			tstring::size_type posB = aString1.find(_T("“ú"), pos);
+			tstring::size_type posB = aString1.find(_T("æ—¥"), pos);
 
 			strDate[0] = aString1.substr(posA + 1, posB - posA);
 		}
 		else
 		{
-			iRv = -21;//	ƒtƒ@ƒCƒ‹1‚Ì˜Hüƒf[ƒ^–³‚µB
+			iRv = -21;//	ãƒ•ã‚¡ã‚¤ãƒ«1ã®è·¯ç·šãƒ‡ãƒ¼ã‚¿ç„¡ã—ã€‚
 		}
 	}
 
@@ -179,9 +179,9 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 			deque<tstring> contTempA;
 			for (int idx = strTemp.size() - 1; idx >= 0; idx--)
 			{
-				if (strTemp[idx] == _T('`') ||
-					strTemp[idx] == _T('^') ||
-					strTemp[idx] == _T('E'))
+				if (strTemp[idx] == _T('ã€œ') ||
+					strTemp[idx] == _T('ï¼') ||
+					strTemp[idx] == _T('ãƒ»'))
 				{
 					contTempA.emplace_front(strTemp.substr(idx + 1));
 					strTemp = strTemp.substr(0, idx);
@@ -193,7 +193,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 		}
 		else
 		{
-			iRv = -21;//	ƒtƒ@ƒCƒ‹1‚Ì˜Hüƒf[ƒ^–³‚µB
+			iRv = -21;//	ãƒ•ã‚¡ã‚¤ãƒ«1ã®è·¯ç·šãƒ‡ãƒ¼ã‚¿ç„¡ã—ã€‚
 		}
 	}
 
@@ -203,18 +203,18 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 		if (pos != tstring::npos)
 		{
 			tstring::size_type posA = aString2.find(_T(">"), pos);
-			tstring::size_type posB = aString2.find(_T("“ú"), pos);
+			tstring::size_type posB = aString2.find(_T("æ—¥"), pos);
 
 			strDate[1] = aString2.substr(posA + 1, posB - posA);
 
 			if (strDate[0] != strDate[1])
 			{
-				iRv = -52;//	ƒtƒ@ƒCƒ‹2‚Ì—j“ú‚ªƒtƒ@ƒCƒ‹1‚Æ•sˆê’vB(‚±‚±‚Å‚Í“ú•t)
+				iRv = -52;//	ãƒ•ã‚¡ã‚¤ãƒ«2ã®æ›œæ—¥ãŒãƒ•ã‚¡ã‚¤ãƒ«1ã¨ä¸ä¸€è‡´ã€‚(ã“ã“ã§ã¯æ—¥ä»˜)
 			}
 		}
 		else
 		{
-			iRv = -22;//	ƒtƒ@ƒCƒ‹2‚Ì˜Hüƒf[ƒ^–³‚µB
+			iRv = -22;//	ãƒ•ã‚¡ã‚¤ãƒ«2ã®è·¯ç·šãƒ‡ãƒ¼ã‚¿ç„¡ã—ã€‚
 		}
 	}
 	if (iRv >= 0 && !aString2.empty())
@@ -230,9 +230,9 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 			deque<tstring> contTempA;
 			for (int idx = strTemp.size() - 1; idx >= 0; idx--)
 			{
-				if (strTemp[idx] == _T('`') ||
-					strTemp[idx] == _T('^') ||
-					strTemp[idx] == _T('E'))
+				if (strTemp[idx] == _T('ã€œ') ||
+					strTemp[idx] == _T('ï¼') ||
+					strTemp[idx] == _T('ãƒ»'))
 				{
 					contTempA.emplace_front(strTemp.substr(idx + 1));
 					strTemp = strTemp.substr(0, idx);
@@ -241,14 +241,14 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 			contTempA.emplace_front(strTemp);
 			strRoute[1] = contTempA;
 
-			//ƒ_ƒCƒ„1‰º‚è‚Æƒ_ƒCƒ„1ã‚è‚Ì˜Hü‚ğ”äŠrA˜HüŠT—v‚Ì‰w”‚ªˆÙ‚È‚éê‡A˜HüŠT—v‚ªŠ®‘Sˆê’v‚·‚éê‡A˜HüŠT—v‚ª‹tŒü‚«‚É‚È‚Á‚Ä‚¢‚È‚¢ê‡‚Í‚»‚ê‚¼‚êƒGƒ‰[
+			//ãƒ€ã‚¤ãƒ¤1ä¸‹ã‚Šã¨ãƒ€ã‚¤ãƒ¤1ä¸Šã‚Šã®è·¯ç·šã‚’æ¯”è¼ƒã€è·¯ç·šæ¦‚è¦ã®é§…æ•°ãŒç•°ãªã‚‹å ´åˆã€è·¯ç·šæ¦‚è¦ãŒå®Œå…¨ä¸€è‡´ã™ã‚‹å ´åˆã€è·¯ç·šæ¦‚è¦ãŒé€†å‘ãã«ãªã£ã¦ã„ãªã„å ´åˆã¯ãã‚Œãã‚Œã‚¨ãƒ©ãƒ¼
 			if (strRoute[0].size() != strRoute[1].size())
 			{
-				iRv = -32;//	ƒtƒ@ƒCƒ‹2‚Ì˜Hü‚ªƒtƒ@ƒCƒ‹1‚Æ•sˆê’vB
+				iRv = -32;//	ãƒ•ã‚¡ã‚¤ãƒ«2ã®è·¯ç·šãŒãƒ•ã‚¡ã‚¤ãƒ«1ã¨ä¸ä¸€è‡´ã€‚
 			}
 			else if (strRoute[0] == strRoute[1])
 			{
-				iRv = -42;//	ƒtƒ@ƒCƒ‹2‚Ì•ûŒü‚ªƒtƒ@ƒCƒ‹1‚Æˆê’vB
+				iRv = -42;//	ãƒ•ã‚¡ã‚¤ãƒ«2ã®æ–¹å‘ãŒãƒ•ã‚¡ã‚¤ãƒ«1ã¨ä¸€è‡´ã€‚
 			}
 			else
 			{
@@ -256,14 +256,14 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 				{
 					if (strRoute[0][idx1] != strRoute[1][idx2])
 					{
-						iRv = -32;//	ƒtƒ@ƒCƒ‹2‚Ì˜Hü‚ªƒtƒ@ƒCƒ‹1‚Æ•sˆê’vB
+						iRv = -32;//	ãƒ•ã‚¡ã‚¤ãƒ«2ã®è·¯ç·šãŒãƒ•ã‚¡ã‚¤ãƒ«1ã¨ä¸ä¸€è‡´ã€‚
 					}
 				}
 			}
 		}
 		else
 		{
-			iRv = -22;//	ƒtƒ@ƒCƒ‹2‚Ì˜Hüƒf[ƒ^–³‚µB
+			iRv = -22;//	ãƒ•ã‚¡ã‚¤ãƒ«2ã®è·¯ç·šãƒ‡ãƒ¼ã‚¿ç„¡ã—ã€‚
 		}
 	}
 
@@ -273,13 +273,13 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 		if (pos != tstring::npos)
 		{
 			tstring::size_type posA = aString3.find(_T(">"), pos);
-			tstring::size_type posB = aString3.find(_T("“ú"), pos);
+			tstring::size_type posB = aString3.find(_T("æ—¥"), pos);
 
 			strDate[2] = aString3.substr(posA + 1, posB - posA);
 		}
 		else
 		{
-			iRv = -23;//	ƒtƒ@ƒCƒ‹3‚Ì˜Hüƒf[ƒ^–³‚µB
+			iRv = -23;//	ãƒ•ã‚¡ã‚¤ãƒ«3ã®è·¯ç·šãƒ‡ãƒ¼ã‚¿ç„¡ã—ã€‚
 		}
 	}
 	if (iRv >= 0 && !aString3.empty())
@@ -295,9 +295,9 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 			deque<tstring> contTempA;
 			for (int idx = strTemp.size() - 1; idx >= 0; idx--)
 			{
-				if (strTemp[idx] == _T('`') ||
-					strTemp[idx] == _T('^') ||
-					strTemp[idx] == _T('E'))
+				if (strTemp[idx] == _T('ã€œ') ||
+					strTemp[idx] == _T('ï¼') ||
+					strTemp[idx] == _T('ãƒ»'))
 				{
 					contTempA.emplace_front(strTemp.substr(idx + 1));
 					strTemp = strTemp.substr(0, idx);
@@ -306,24 +306,24 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 			contTempA.emplace_front(strTemp);
 			strRoute[2] = contTempA;
 
-			//ƒ_ƒCƒ„1‰º‚è‚Æƒ_ƒCƒ„2‰º‚è‚Ì˜Hü‚ğ”äŠrAŠ®‘Sˆê’v‚µ‚È‚¢ê‡‚ÍƒGƒ‰[‚¾‚ªA˜Hü‚ªˆÙ‚È‚éê‡‚ÆAã‰º‹tŒü‚«‚Ìê‡‚Ì‚»‚ê‚¼‚ê‚ÅˆÙ‚È‚éƒGƒ‰[‚Æ‚È‚é
+			//ãƒ€ã‚¤ãƒ¤1ä¸‹ã‚Šã¨ãƒ€ã‚¤ãƒ¤2ä¸‹ã‚Šã®è·¯ç·šã‚’æ¯”è¼ƒã€å®Œå…¨ä¸€è‡´ã—ãªã„å ´åˆã¯ã‚¨ãƒ©ãƒ¼ã ãŒã€è·¯ç·šãŒç•°ãªã‚‹å ´åˆã¨ã€ä¸Šä¸‹é€†å‘ãã®å ´åˆã®ãã‚Œãã‚Œã§ç•°ãªã‚‹ã‚¨ãƒ©ãƒ¼ã¨ãªã‚‹
 			if (strRoute[0] == strRoute[2])
 			{
 				//continue;
 			}
 			else if (strRoute[0].size() != strRoute[2].size())
 			{
-				iRv = -33;//	ƒtƒ@ƒCƒ‹3‚Ì˜Hü‚ªƒtƒ@ƒCƒ‹1‚Æ•sˆê’vB
+				iRv = -33;//	ãƒ•ã‚¡ã‚¤ãƒ«3ã®è·¯ç·šãŒãƒ•ã‚¡ã‚¤ãƒ«1ã¨ä¸ä¸€è‡´ã€‚
 			}
 			else
 			{
-				//ƒGƒ‰[‚Å‚ ‚é‚±‚Æ©‘Ì‚ÍŒˆ‚Ü‚Á‚Ä‚¢‚é‚Ì‚ÅAæ‚Éã‰º‹tŒü‚«‚Æ‰¼’u‚«‚µ‚Ä‚¨‚«A¸¸‚ÌŒ‹‰Ê˜Hü‚ªˆÙ‚È‚éê‡‚ÍAƒGƒ‰[ƒR[ƒh‚ğã‘‚«‚·‚é
-				iRv = -43;//	ƒtƒ@ƒCƒ‹3‚Ì•ûŒü‚ªƒtƒ@ƒCƒ‹1‚Æ•sˆê’vB
+				//ã‚¨ãƒ©ãƒ¼ã§ã‚ã‚‹ã“ã¨è‡ªä½“ã¯æ±ºã¾ã£ã¦ã„ã‚‹ã®ã§ã€å…ˆã«ä¸Šä¸‹é€†å‘ãã¨ä»®ç½®ãã—ã¦ãŠãã€ç²¾æŸ»ã®çµæœè·¯ç·šãŒç•°ãªã‚‹å ´åˆã¯ã€ã‚¨ãƒ©ãƒ¼ã‚³ãƒ¼ãƒ‰ã‚’ä¸Šæ›¸ãã™ã‚‹
+				iRv = -43;//	ãƒ•ã‚¡ã‚¤ãƒ«3ã®æ–¹å‘ãŒãƒ•ã‚¡ã‚¤ãƒ«1ã¨ä¸ä¸€è‡´ã€‚
 				for (int idx1 = 0, idx2 = strRoute[2].size() - 1; idx1 < (int)strRoute[0].size(); idx1++, idx2--)
 				{
 					if (strRoute[0][idx1] != strRoute[2][idx2])
 					{
-						iRv = -33;//	ƒtƒ@ƒCƒ‹3‚Ì˜Hü‚ªƒtƒ@ƒCƒ‹1‚Æ•sˆê’vB
+						iRv = -33;//	ãƒ•ã‚¡ã‚¤ãƒ«3ã®è·¯ç·šãŒãƒ•ã‚¡ã‚¤ãƒ«1ã¨ä¸ä¸€è‡´ã€‚
 						break;
 					}
 				}
@@ -331,7 +331,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 		}
 		else
 		{
-			iRv = -23;//	ƒtƒ@ƒCƒ‹3‚Ì˜Hüƒf[ƒ^–³‚µB
+			iRv = -23;//	ãƒ•ã‚¡ã‚¤ãƒ«3ã®è·¯ç·šãƒ‡ãƒ¼ã‚¿ç„¡ã—ã€‚
 		}
 	}
 
@@ -341,18 +341,18 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 		if (pos != tstring::npos)
 		{
 			tstring::size_type posA = aString4.find(_T(">"), pos);
-			tstring::size_type posB = aString4.find(_T("“ú"), pos);
+			tstring::size_type posB = aString4.find(_T("æ—¥"), pos);
 
 			strDate[3] = aString4.substr(posA + 1, posB - posA);
 
 			if (!aString3.empty() && strDate[3] != strDate[2])
 			{
-				iRv = -64;//	ƒtƒ@ƒCƒ‹4‚Ì—j“ú‚ªƒtƒ@ƒCƒ‹3‚Æ•sˆê’vB(‚±‚±‚Å‚Í“ú•t)
+				iRv = -64;//	ãƒ•ã‚¡ã‚¤ãƒ«4ã®æ›œæ—¥ãŒãƒ•ã‚¡ã‚¤ãƒ«3ã¨ä¸ä¸€è‡´ã€‚(ã“ã“ã§ã¯æ—¥ä»˜)
 			}
 		}
 		else
 		{
-			iRv = -24;//	ƒtƒ@ƒCƒ‹4‚Ì˜Hüƒf[ƒ^–³‚µB
+			iRv = -24;//	ãƒ•ã‚¡ã‚¤ãƒ«4ã®è·¯ç·šãƒ‡ãƒ¼ã‚¿ç„¡ã—ã€‚
 		}
 	}
 
@@ -369,9 +369,9 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 			deque<tstring> contTempA;
 			for (int idx = strTemp.size() - 1; idx >= 0; idx--)
 			{
-				if (strTemp[idx] == _T('`') ||
-					strTemp[idx] == _T('^') ||
-					strTemp[idx] == _T('E'))
+				if (strTemp[idx] == _T('ã€œ') ||
+					strTemp[idx] == _T('ï¼') ||
+					strTemp[idx] == _T('ãƒ»'))
 				{
 					contTempA.emplace_front(strTemp.substr(idx + 1));
 					strTemp = strTemp.substr(0, idx);
@@ -380,14 +380,14 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 			contTempA.emplace_front(strTemp);
 			strRoute[3] = contTempA;
 
-			//ƒ_ƒCƒ„1‰º‚è‚Æƒ_ƒCƒ„2ã‚è‚Ì˜Hü‚ğ”äŠrA˜HüŠT—v‚Ì‰w”‚ªˆÙ‚È‚éê‡A˜HüŠT—v‚ªŠ®‘Sˆê’v‚·‚éê‡A˜HüŠT—v‚ª‹tŒü‚«‚É‚È‚Á‚Ä‚¢‚È‚¢ê‡‚Í‚»‚ê‚¼‚êƒGƒ‰[
+			//ãƒ€ã‚¤ãƒ¤1ä¸‹ã‚Šã¨ãƒ€ã‚¤ãƒ¤2ä¸Šã‚Šã®è·¯ç·šã‚’æ¯”è¼ƒã€è·¯ç·šæ¦‚è¦ã®é§…æ•°ãŒç•°ãªã‚‹å ´åˆã€è·¯ç·šæ¦‚è¦ãŒå®Œå…¨ä¸€è‡´ã™ã‚‹å ´åˆã€è·¯ç·šæ¦‚è¦ãŒé€†å‘ãã«ãªã£ã¦ã„ãªã„å ´åˆã¯ãã‚Œãã‚Œã‚¨ãƒ©ãƒ¼
 			if (strRoute[0].size() != strRoute[3].size())
 			{
-				iRv = -34;//	ƒtƒ@ƒCƒ‹4‚Ì˜Hü‚ªƒtƒ@ƒCƒ‹1‚Æ•sˆê’vB
+				iRv = -34;//	ãƒ•ã‚¡ã‚¤ãƒ«4ã®è·¯ç·šãŒãƒ•ã‚¡ã‚¤ãƒ«1ã¨ä¸ä¸€è‡´ã€‚
 			}
 			else if (strRoute[0] == strRoute[3])
 			{
-				iRv = -54;//	ƒtƒ@ƒCƒ‹4‚Ì•ûŒü‚ªƒtƒ@ƒCƒ‹1‚Æˆê’vB
+				iRv = -54;//	ãƒ•ã‚¡ã‚¤ãƒ«4ã®æ–¹å‘ãŒãƒ•ã‚¡ã‚¤ãƒ«1ã¨ä¸€è‡´ã€‚
 			}
 			else
 			{
@@ -395,14 +395,14 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 				{
 					if (strRoute[0][idx1] != strRoute[3][idx2])
 					{
-						iRv = -34;//	ƒtƒ@ƒCƒ‹4‚Ì˜Hü‚ªƒtƒ@ƒCƒ‹1‚Æ•sˆê’vB
+						iRv = -34;//	ãƒ•ã‚¡ã‚¤ãƒ«4ã®è·¯ç·šãŒãƒ•ã‚¡ã‚¤ãƒ«1ã¨ä¸ä¸€è‡´ã€‚
 					}
 				}
 			}
 		}
 		else
 		{
-			iRv = -24;//	ƒtƒ@ƒCƒ‹4‚Ì˜Hüƒf[ƒ^–³‚µB
+			iRv = -24;//	ãƒ•ã‚¡ã‚¤ãƒ«4ã®è·¯ç·šãƒ‡ãƒ¼ã‚¿ç„¡ã—ã€‚
 		}
 	}
 
@@ -420,9 +420,9 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 
 	CentDedRosen*	pCentDedRosen= pCDedRosenFileData->getCentDedRosen();
 	/**
-		table‚ğ€–Ú‚Æ—ñÔ‚²‚Æ‚É•ª‰ğ‚µ‚Ä‚¢‚­A
-		€–Ú—ñ1F(s‚Ìƒ^ƒCƒgƒ‹)—ñÔ”Ô†A—ñÔ–¼A‰^“]“úB‰w–¼
-		€–Ú—ñ2F’…E”­E”Ôü
+		tableã‚’é …ç›®ã¨åˆ—è»Šã”ã¨ã«åˆ†è§£ã—ã¦ã„ãã€
+		é …ç›®åˆ—1ï¼š(è¡Œã®ã‚¿ã‚¤ãƒˆãƒ«)åˆ—è»Šç•ªå·ã€åˆ—è»Šåã€é‹è»¢æ—¥ã€‚é§…å
+		é …ç›®åˆ—2ï¼šç€ãƒ»ç™ºãƒ»ç•ªç·š
 
 	*/
 	vector<vector<tstring>> contRessya1;
@@ -435,7 +435,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 	vector<DigitalContent> contDigitalContent3;
 	vector<DigitalContent> contDigitalContent4;
 
-	//ŒÂ•Êˆ—‚Í•Û—¯
+	//å€‹åˆ¥å‡¦ç†ã¯ä¿ç•™
 	int iIndividualHandling1 = 0;
 	int iIndividualHandling2 = 0;
 	//if (!bInvalidateIndividualHandling && strRosenID == _T("003"))
@@ -478,35 +478,35 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 	if (iRv >= 0)
 	{
 		/**
-			contDigitalContent1‚ğŠî‚É‚Ü‚¸‚Í‰w‚Ì•À‚Ñ‚ğŠm’è‚³‚¹‚é
+			contDigitalContent1ã‚’åŸºã«ã¾ãšã¯é§…ã®ä¸¦ã³ã‚’ç¢ºå®šã•ã›ã‚‹
 		*/
 		int iEkiIndex = -1;
 		tstring strEkimeiBefore = _T("");
-		//—\‚ßstrContEkimeiRev‚É‰º‚è‚Ì‰w‚ğ‹t‡‚É“ü‚ê‚Ä‚¨‚­Bã‚è‚Ìƒ`ƒFƒbƒN—p
+		//äºˆã‚strContEkimeiRevã«ä¸‹ã‚Šã®é§…ã‚’é€†é †ã«å…¥ã‚Œã¦ãŠãã€‚ä¸Šã‚Šã®ãƒã‚§ãƒƒã‚¯ç”¨
 		vector<tstring> strContEkimei;
 		for (int idx = 0; idx < contDigitalContent1.size(); idx++)
 		{
-			if (contDigitalContent1[idx].strTh1 == _T("—ñÔ”Ô†"))
+			if (contDigitalContent1[idx].strTh1 == _T("åˆ—è»Šç•ªå·"))
 			{
 				contDigitalContent1[idx].eTrType = ETrType::TrType_RessyaBangou;
 			}
-			else if (contDigitalContent1[idx].strTh1 == _T("—ñÔí•Ê"))
+			else if (contDigitalContent1[idx].strTh1 == _T("åˆ—è»Šç¨®åˆ¥"))
 			{
 				contDigitalContent1[idx].eTrType = ETrType::TrType_Ressyasyubetsu;
 			}
-			else if (contDigitalContent1[idx].strTh1 == _T("—ñÔ–¼"))
+			else if (contDigitalContent1[idx].strTh1 == _T("åˆ—è»Šå"))
 			{
 				contDigitalContent1[idx].eTrType = ETrType::TrType_RessyaMei;
 			}
-			else if (contDigitalContent1[idx].strTh1 == _T("†”"))
+			else if (contDigitalContent1[idx].strTh1 == _T("å·æ•°"))
 			{
 				contDigitalContent1[idx].eTrType = ETrType::TrType_GouSuu;
 			}
-			else if (contDigitalContent1[idx].strTh1 == _T("‰^“]“ú’ˆÓ"))
+			else if (contDigitalContent1[idx].strTh1 == _T("é‹è»¢æ—¥æ³¨æ„"))
 			{
 				contDigitalContent1[idx].eTrType = ETrType::TrType_UntenBi;
 			}
-			else if (contDigitalContent1[idx].strTh2 == _T("”­"))
+			else if (contDigitalContent1[idx].strTh2 == _T("ç™º"))
 			{
 				if (contDigitalContent1[idx].strTh1 == strEkimeiBefore)
 				{
@@ -522,7 +522,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 					contDigitalContent1[idx].iEkiIndex = iEkiIndex;
 				}
 			}
-			else if (contDigitalContent1[idx].strTh2 == _T("’…"))
+			else if (contDigitalContent1[idx].strTh2 == _T("ç€"))
 			{
 				if (contDigitalContent1[idx].strTh1 == strEkimeiBefore)
 				{
@@ -538,7 +538,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 					contDigitalContent1[idx].iEkiIndex = iEkiIndex;
 				}
 			}
-			else if (contDigitalContent1[idx].strTh1.find(_T("‚Ì‚è‚Î")) != tstring::npos)
+			else if (contDigitalContent1[idx].strTh1.find(_T("ã®ã‚Šã°")) != tstring::npos)
 			{
 				tstring strEkimei = contDigitalContent1[idx].strTh1.substr(0, contDigitalContent1[idx].strTh1.length() - 3);
 				if (strEkimei == strEkimeiBefore)
@@ -555,17 +555,17 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 					contDigitalContent1[idx].iEkiIndex = iEkiIndex;
 				}
 			}
-			else if (contDigitalContent1[idx].strTh1 == _T("n”­"))
+			else if (contDigitalContent1[idx].strTh1 == _T("å§‹ç™º"))
 			{
 				contDigitalContent1[idx].eTrType = ETrType::TrType_OuterShihatsu;
 			}
-			else if (contDigitalContent1[idx].strTh1 == _T("I’…"))
+			else if (contDigitalContent1[idx].strTh1 == _T("çµ‚ç€"))
 			{
 				contDigitalContent1[idx].eTrType = ETrType::TrType_OuterShuchaku;
 			}
 		}
 
-		//ã‚èƒ_ƒCƒ„1‚ª‹ó‚Ìê‡‚ÍAã‚èƒ_ƒCƒ„2‚ÌcontDigitalContent4‚ğcontDigitalContent2‚ÉƒRƒs[‚µ‚ÄAã‚è‚Ì‰w‚Ì•À‚Ñ‚ğŠm’è‚³‚¹‚éB
+		//ä¸Šã‚Šãƒ€ã‚¤ãƒ¤1ãŒç©ºã®å ´åˆã¯ã€ä¸Šã‚Šãƒ€ã‚¤ãƒ¤2ã®contDigitalContent4ã‚’contDigitalContent2ã«ã‚³ãƒ”ãƒ¼ã—ã¦ã€ä¸Šã‚Šã®é§…ã®ä¸¦ã³ã‚’ç¢ºå®šã•ã›ã‚‹ã€‚
 		if (contDigitalContent2.empty())
 		{
 			contDigitalContent2 = contDigitalContent4;
@@ -575,29 +575,29 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 			int iEkiIndexNobori = strContEkimei.size() - 1;
 			for (int idx = 0; idx < contDigitalContent2.size(); idx++)
 			{
-				if (contDigitalContent2[idx].strTh1 == _T("—ñÔ”Ô†"))
+				if (contDigitalContent2[idx].strTh1 == _T("åˆ—è»Šç•ªå·"))
 				{
 					contDigitalContent2[idx].eTrType = ETrType::TrType_RessyaBangou;
 				}
-				else if (contDigitalContent2[idx].strTh1 == _T("—ñÔí•Ê"))
+				else if (contDigitalContent2[idx].strTh1 == _T("åˆ—è»Šç¨®åˆ¥"))
 				{
 					contDigitalContent2[idx].eTrType = ETrType::TrType_Ressyasyubetsu;
 				}
-				else if (contDigitalContent2[idx].strTh1 == _T("—ñÔ–¼"))
+				else if (contDigitalContent2[idx].strTh1 == _T("åˆ—è»Šå"))
 				{
 					contDigitalContent2[idx].eTrType = ETrType::TrType_RessyaMei;
 				}
-				else if (contDigitalContent2[idx].strTh1 == _T("†”"))
+				else if (contDigitalContent2[idx].strTh1 == _T("å·æ•°"))
 				{
 					contDigitalContent2[idx].eTrType = ETrType::TrType_GouSuu;
 				}
-				else if (contDigitalContent2[idx].strTh1 == _T("‰^“]“ú’ˆÓ"))
+				else if (contDigitalContent2[idx].strTh1 == _T("é‹è»¢æ—¥æ³¨æ„"))
 				{
 					contDigitalContent2[idx].eTrType = ETrType::TrType_UntenBi;
 				}
-				else if (contDigitalContent2[idx].strTh2 == _T("”­"))
+				else if (contDigitalContent2[idx].strTh2 == _T("ç™º"))
 				{
-					//strContEkimei‚Æ”äŠr‚µA‰º‚è‚Æ‰w‡‚ª“¯‚¶‚±‚Æ‚ğŠm‚©‚ß‚éB
+					//strContEkimeiã¨æ¯”è¼ƒã—ã€ä¸‹ã‚Šã¨é§…é †ãŒåŒã˜ã“ã¨ã‚’ç¢ºã‹ã‚ã‚‹ã€‚
 					if (contDigitalContent2[idx].strTh1 == strContEkimei[iEkiIndexNobori])
 					{
 						contDigitalContent2[idx].eTrType = ETrType::TrType_EkiHatsu;
@@ -606,7 +606,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 					else
 					{
 						iEkiIndexNobori--;
-						//‚à‚µA‰º‚è‚Æ‰w‡‚ªˆá‚Á‚Ä‚¢‚½‚çAƒGƒ‰[‚Æ‚·‚é(ŒŸØ—p)
+						//ã‚‚ã—ã€ä¸‹ã‚Šã¨é§…é †ãŒé•ã£ã¦ã„ãŸã‚‰ã€ã‚¨ãƒ©ãƒ¼ã¨ã™ã‚‹(æ¤œè¨¼ç”¨)
 						if (iEkiIndexNobori < 0 || contDigitalContent2[idx].strTh1 == strContEkimei[iEkiIndexNobori])
 						{
 							contDigitalContent2[idx].eTrType = ETrType::TrType_EkiHatsu;
@@ -618,9 +618,9 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 						}
 					}
 				}
-				else if (contDigitalContent2[idx].strTh2 == _T("’…"))
+				else if (contDigitalContent2[idx].strTh2 == _T("ç€"))
 				{
-					//strContEkimei‚Æ”äŠr‚µA‰º‚è‚Æ‰w‡‚ª“¯‚¶‚±‚Æ‚ğŠm‚©‚ß‚éB
+					//strContEkimeiã¨æ¯”è¼ƒã—ã€ä¸‹ã‚Šã¨é§…é †ãŒåŒã˜ã“ã¨ã‚’ç¢ºã‹ã‚ã‚‹ã€‚
 					if (contDigitalContent2[idx].strTh1 == strContEkimei[iEkiIndexNobori])
 					{
 						contDigitalContent2[idx].eTrType = ETrType::TrType_EkiChaku;
@@ -629,7 +629,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 					else
 					{
 						iEkiIndexNobori--;
-						//‚à‚µA‰º‚è‚Æ‰w‡‚ªˆá‚Á‚Ä‚¢‚½‚çAƒGƒ‰[‚Æ‚·‚é(ŒŸØ—p)
+						//ã‚‚ã—ã€ä¸‹ã‚Šã¨é§…é †ãŒé•ã£ã¦ã„ãŸã‚‰ã€ã‚¨ãƒ©ãƒ¼ã¨ã™ã‚‹(æ¤œè¨¼ç”¨)
 						if (iEkiIndexNobori < 0 || contDigitalContent2[idx].strTh1 == strContEkimei[iEkiIndexNobori])
 						{
 							contDigitalContent2[idx].eTrType = ETrType::TrType_EkiChaku;
@@ -641,11 +641,11 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 						}
 					}
 				}
-				else if (contDigitalContent2[idx].strTh1.find(_T("‚Ì‚è‚Î")) != tstring::npos)
+				else if (contDigitalContent2[idx].strTh1.find(_T("ã®ã‚Šã°")) != tstring::npos)
 				{
 					tstring strEkimei = contDigitalContent2[idx].strTh1.substr(0, contDigitalContent2[idx].strTh1.length() - 3);
 
-					//strContEkimei‚Æ”äŠr‚µA‰º‚è‚Æ‰w‡‚ª“¯‚¶‚±‚Æ‚ğŠm‚©‚ß‚éB
+					//strContEkimeiã¨æ¯”è¼ƒã—ã€ä¸‹ã‚Šã¨é§…é †ãŒåŒã˜ã“ã¨ã‚’ç¢ºã‹ã‚ã‚‹ã€‚
 					if (strEkimei == strContEkimei[iEkiIndexNobori])
 					{
 						contDigitalContent2[idx].eTrType = ETrType::TrType_EkiBansen;
@@ -654,7 +654,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 					else
 					{
 						iEkiIndexNobori--;
-						//‚à‚µA‰º‚è‚Æ‰w‡‚ªˆá‚Á‚Ä‚¢‚½‚çAƒGƒ‰[‚Æ‚·‚é(ŒŸØ—p)
+						//ã‚‚ã—ã€ä¸‹ã‚Šã¨é§…é †ãŒé•ã£ã¦ã„ãŸã‚‰ã€ã‚¨ãƒ©ãƒ¼ã¨ã™ã‚‹(æ¤œè¨¼ç”¨)
 						if (iEkiIndexNobori < 0 || strEkimei == strContEkimei[iEkiIndexNobori])
 						{
 							contDigitalContent2[idx].eTrType = ETrType::TrType_EkiBansen;
@@ -666,11 +666,11 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 						}
 					}
 				}
-				else if (contDigitalContent2[idx].strTh1 == _T("n”­"))
+				else if (contDigitalContent2[idx].strTh1 == _T("å§‹ç™º"))
 				{
 					contDigitalContent2[idx].eTrType = ETrType::TrType_OuterShihatsu;
 				}
-				else if (contDigitalContent2[idx].strTh1 == _T("I’…"))
+				else if (contDigitalContent2[idx].strTh1 == _T("çµ‚ç€"))
 				{
 					contDigitalContent2[idx].eTrType = ETrType::TrType_OuterShuchaku;
 				}
@@ -678,7 +678,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 		}
 	}
 	/**
-		EkiCont‚ğì‚é
+		EkiContã‚’ä½œã‚‹
 	*/
 	if (iRv >= 0)
 	{
@@ -686,24 +686,24 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 		CentDedEkiCont aCentDedEkiCont;
 
 		/**
-			Še‰w‚Ì‰w‚ÌŒ`®
-			‰º‚è’…E”­Eã‚è’…E”­
-			ZZZZF”­’…
-			ZZZ~F¦”­’…
-			ZZ~ZF‰º‚è”­’…
-			ZZ~~F(”­’…)
-			Z~ZZF¦”­’…
-			Z~Z~F¦”­’…
-			Z~~ZF‰º‚è’…
-			Z~~~F(‰º‚è’…)
-			~ZZZFã‚è”­’…
-			~ZZ~Fã‚è’…
-			~Z~ZF”­
-			~Z~~F(”­)
-			~~ZZF(ŠY“–‚È‚µ)
-			~~Z~F(ŠY“–‚È‚µ)
-			~~~ZF(ŠY“–‚È‚µ)
-			~~~~F(ŠY“–‚È‚µ)
+			å„é§…ã®é§…ã®æ™‚åˆ»å½¢å¼
+			ä¸‹ã‚Šç€ãƒ»ç™ºãƒ»ä¸Šã‚Šç€ãƒ»ç™º
+			ã€‡ã€‡ã€‡ã€‡ï¼šç™ºç€
+			ã€‡ã€‡ã€‡Ã—ï¼šâ€»ç™ºç€
+			ã€‡ã€‡Ã—ã€‡ï¼šä¸‹ã‚Šç™ºç€
+			ã€‡ã€‡Ã—Ã—ï¼š(ç™ºç€)
+			ã€‡Ã—ã€‡ã€‡ï¼šâ€»ç™ºç€
+			ã€‡Ã—ã€‡Ã—ï¼šâ€»ç™ºç€
+			ã€‡Ã—Ã—ã€‡ï¼šä¸‹ã‚Šç€æ™‚åˆ»
+			ã€‡Ã—Ã—Ã—ï¼š(ä¸‹ã‚Šç€æ™‚åˆ»)
+			Ã—ã€‡ã€‡ã€‡ï¼šä¸Šã‚Šç™ºç€
+			Ã—ã€‡ã€‡Ã—ï¼šä¸Šã‚Šç€æ™‚åˆ»
+			Ã—ã€‡Ã—ã€‡ï¼šç™ºæ™‚åˆ»
+			Ã—ã€‡Ã—Ã—ï¼š(ç™ºæ™‚åˆ»)
+			Ã—Ã—ã€‡ã€‡ï¼š(è©²å½“ãªã—)
+			Ã—Ã—ã€‡Ã—ï¼š(è©²å½“ãªã—)
+			Ã—Ã—Ã—ã€‡ï¼š(è©²å½“ãªã—)
+			Ã—Ã—Ã—Ã—ï¼š(è©²å½“ãªã—)
 		*/
 		int iEkiCount;
 		for (int idx = contDigitalContent1.size() - 1; idx >= 0; idx--)
@@ -780,14 +780,14 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 				{
 					if (bKudariHatsu && !bNoboriChaku && bNoboriHatsu)
 					{
-						//‰º‚è”­’…
+						//ä¸‹ã‚Šç™ºç€
 						aCentDedEki.setEkijikokukeisiki(CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku);
 						aCentDedEki.setJikokuhyouChakuJikokuDisplayKudari(true);
 						aCentDedEki.setJikokuhyouTrackOmit(true);
 					}
 					else
 					{
-						//”­’…
+						//ç™ºç€
 						aCentDedEki.setEkijikokukeisiki(CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku);
 						aCentDedEki.setJikokuhyouChakuJikokuDisplayKudari(true);
 						aCentDedEki.setJikokuhyouChakuJikokuDisplayNobori(true);
@@ -795,7 +795,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 				}
 				else
 				{
-					//‰º‚è’…
+					//ä¸‹ã‚Šç€æ™‚åˆ»
 					aCentDedEki.setEkijikokukeisiki(CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku);
 					aCentDedEki.setJikokuhyouChakuJikokuDisplayKudari(true);
 					aCentDedEki.setJikokuhyouHatsuJikokuDisplayKudari(false);
@@ -808,14 +808,14 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 				{
 					if (bNoboriHatsu)
 					{
-						//ã‚è”­’…
+						//ä¸Šã‚Šç™ºç€
 						aCentDedEki.setEkijikokukeisiki(CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku);
 						aCentDedEki.setJikokuhyouChakuJikokuDisplayNobori(true);
 						aCentDedEki.setJikokuhyouTrackOmit(true);
 					}
 					else
 					{
-						//ã‚è’…
+						//ä¸Šã‚Šç€æ™‚åˆ»
 						aCentDedEki.setEkijikokukeisiki(CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku);
 						aCentDedEki.setJikokuhyouChakuJikokuDisplayNobori(true);
 						aCentDedEki.setJikokuhyouHatsuJikokuDisplayNobori(false);
@@ -823,7 +823,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 				}
 				else
 				{
-					//”­
+					//ç™ºæ™‚åˆ»
 					aCentDedEki.setEkijikokukeisiki(CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu);
 					aCentDedEki.setJikokuhyouTrackOmit(true);
 				}
@@ -851,7 +851,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 							{
 								bFound = true;
 								contTrainCountKudari[idxTN]++;
-								//‚±‚±‚ÅAcontRessya1[idxk][iKudariTrackRow]‚Ì’†g‚ğA(”Ôü)¨RessyaTrackIndex(idxTN)‚É‘‚«Š·‚¦‚Ä‚µ‚Ü‚¤B
+								//ã“ã“ã§ã€contRessya1[idxk][iKudariTrackRow]ã®ä¸­èº«ã‚’ã€(ç•ªç·š)â†’RessyaTrackIndex(idxTN)ã«æ›¸ãæ›ãˆã¦ã—ã¾ã†ã€‚
 								contRessya1[idxk][iKudariTrackRow] = to_tstring(idxTN);
 
 								break;
@@ -859,7 +859,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 						}
 						if (!bFound)
 						{
-							//‚±‚±‚ÅAcontRessya1[idxk][iKudariTrackRow]‚Ì’†g‚ğA(”Ôü)¨RessyaTrackIndex(idxTN)‚É‘‚«Š·‚¦‚Ä‚µ‚Ü‚¤B
+							//ã“ã“ã§ã€contRessya1[idxk][iKudariTrackRow]ã®ä¸­èº«ã‚’ã€(ç•ªç·š)â†’RessyaTrackIndex(idxTN)ã«æ›¸ãæ›ãˆã¦ã—ã¾ã†ã€‚
 							contRessya1[idxk][iKudariTrackRow] = to_tstring(contTrackName.size());
 
 							contTrackName.push_back(TrackNameThis);
@@ -881,7 +881,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 							{
 								bFound = true;
 								contTrainCountKudari[idxTN]++;
-								//‚±‚±‚ÅAcontRessya[idxk][iKudariTrackRow]‚Ì’†g‚ğA(”Ôü)¨RessyaTrackIndex(idxTN)‚É‘‚«Š·‚¦‚Ä‚µ‚Ü‚¤B
+								//ã“ã“ã§ã€contRessya[idxk][iKudariTrackRow]ã®ä¸­èº«ã‚’ã€(ç•ªç·š)â†’RessyaTrackIndex(idxTN)ã«æ›¸ãæ›ãˆã¦ã—ã¾ã†ã€‚
 								contRessya3[idxk][iKudariTrackRow] = to_tstring(idxTN);
 
 								break;
@@ -889,7 +889,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 						}
 						if (!bFound)
 						{
-							//‚±‚±‚ÅAcontRessya[idxk][iKudariTrackRow]‚Ì’†g‚ğA(”Ôü)¨RessyaTrackIndex(idxTN)‚É‘‚«Š·‚¦‚Ä‚µ‚Ü‚¤B
+							//ã“ã“ã§ã€contRessya[idxk][iKudariTrackRow]ã®ä¸­èº«ã‚’ã€(ç•ªç·š)â†’RessyaTrackIndex(idxTN)ã«æ›¸ãæ›ãˆã¦ã—ã¾ã†ã€‚
 							contRessya3[idxk][iKudariTrackRow] = to_tstring(contTrackName.size());
 
 							contTrackName.push_back(TrackNameThis);
@@ -921,7 +921,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 								bFound = true;
 								contTrainCountNobori[idxTN]++;
 
-								//‚±‚±‚ÅAcontRessya[idxn][iNoboriTrackRow]‚Ì’†g‚ğA(”Ôü)¨RessyaTrackIndex(idxTN)‚É‘‚«Š·‚¦‚Ä‚µ‚Ü‚¤B
+								//ã“ã“ã§ã€contRessya[idxn][iNoboriTrackRow]ã®ä¸­èº«ã‚’ã€(ç•ªç·š)â†’RessyaTrackIndex(idxTN)ã«æ›¸ãæ›ãˆã¦ã—ã¾ã†ã€‚
 								contRessya2[idxn][iNoboriTrackRow] = to_tstring(idxTN);
 
 								break;
@@ -929,7 +929,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 						}
 						if (!bFound)
 						{
-							//‚±‚±‚ÅAcontRessya[idxn][iNoboriTrackRow]‚Ì’†g‚ğA(”Ôü)¨RessyaTrackIndex(idxTN)‚É‘‚«Š·‚¦‚Ä‚µ‚Ü‚¤B
+							//ã“ã“ã§ã€contRessya[idxn][iNoboriTrackRow]ã®ä¸­èº«ã‚’ã€(ç•ªç·š)â†’RessyaTrackIndex(idxTN)ã«æ›¸ãæ›ãˆã¦ã—ã¾ã†ã€‚
 							contRessya2[idxn][iNoboriTrackRow] = to_tstring(contTrackName.size());
 
 							contTrackName.push_back(TrackNameThis);
@@ -952,7 +952,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 								bFound = true;
 								contTrainCountNobori[idxTN]++;
 
-								//‚±‚±‚ÅAcontRessya[idxn][iNoboriTrackRow]‚Ì’†g‚ğA(”Ôü)¨RessyaTrackIndex(idxTN)‚É‘‚«Š·‚¦‚Ä‚µ‚Ü‚¤B
+								//ã“ã“ã§ã€contRessya[idxn][iNoboriTrackRow]ã®ä¸­èº«ã‚’ã€(ç•ªç·š)â†’RessyaTrackIndex(idxTN)ã«æ›¸ãæ›ãˆã¦ã—ã¾ã†ã€‚
 								contRessya4[idxn][iNoboriTrackRow] = to_tstring(idxTN);
 
 								break;
@@ -960,7 +960,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 						}
 						if (!bFound)
 						{
-							//‚±‚±‚ÅAcontRessya[idxn][iNoboriTrackRow]‚Ì’†g‚ğA(”Ôü)¨RessyaTrackIndex(idxTN)‚É‘‚«Š·‚¦‚Ä‚µ‚Ü‚¤B
+							//ã“ã“ã§ã€contRessya[idxn][iNoboriTrackRow]ã®ä¸­èº«ã‚’ã€(ç•ªç·š)â†’RessyaTrackIndex(idxTN)ã«æ›¸ãæ›ãˆã¦ã—ã¾ã†ã€‚
 							contRessya4[idxn][iNoboriTrackRow] = to_tstring(contTrackName.size());
 
 							contTrackName.push_back(TrackNameThis);
@@ -968,7 +968,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 						}
 					}
 				}
-				//¦”ÔüƒTƒCƒY‚ª‰º‚èƒã‚è‚Ìê‡—L‚è
+				//â€»ç•ªç·šã‚µã‚¤ã‚ºãŒä¸‹ã‚Šï¼œä¸Šã‚Šã®å ´åˆæœ‰ã‚Š
 				if (contTrackName.size() > 0)
 				{
 					int iMainTrackKudari = 0;
@@ -994,7 +994,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 						}
 					}
 
-					//‰w‚É”Ôü‚ğİ’è‚·‚é
+					//é§…ã«ç•ªç·šã‚’è¨­å®šã™ã‚‹
 					CentDedEkiTrack2Cont* pCentDedEkiTrack2Cont = aCentDedEki.getEkiTrack2Cont();
 					pCentDedEkiTrack2Cont->erase(0, INT_MAX);
 					for (int idxTN = 0; idxTN < contTrackName.size(); idxTN++)
@@ -1019,7 +1019,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 
 	}
 	/**
-		SyubetsuCont‚ğì‚é
+		SyubetsuContã‚’ä½œã‚‹
 	*/
 	if (iRv >= 0)
 	{
@@ -1053,8 +1053,8 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 				//tstring::size_type pos = strRessyasyubetsu.find(' ');
 				//if (pos != tstring::npos)
 				//{
-				//	//strRessyasyubetsu‚É‹ó”’‚ªŠÜ‚Ü‚ê‚éê‡A‹ó”’‚æ‚è‚à‘O‚Ì‚İ‚ªí•Ê–¼‚Æ‚È‚é
-				//	//(—á)“Á‹} —x‚èq53†¨“Á‹}A‚Í‚â‚Ô‚³ 95¨‚Í‚â‚Ô‚³
+				//	//strRessyasyubetsuã«ç©ºç™½ãŒå«ã¾ã‚Œã‚‹å ´åˆã€ç©ºç™½ã‚ˆã‚Šã‚‚å‰ã®ã¿ãŒç¨®åˆ¥åã¨ãªã‚‹
+				//	//(ä¾‹)ç‰¹æ€¥ è¸Šã‚Šå­53å·â†’ç‰¹æ€¥ã€ã¯ã‚„ã¶ã• 95â†’ã¯ã‚„ã¶ã•
 				//	strRessyasyubetsu = strRessyasyubetsu.substr(0, pos);
 				//}
 
@@ -1078,8 +1078,8 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 				//tstring::size_type pos = strRessyasyubetsu.find(' ');
 				//if (pos != tstring::npos)
 				//{
-				//	//strRessyasyubetsu‚É‹ó”’‚ªŠÜ‚Ü‚ê‚éê‡A‹ó”’‚æ‚è‚à‘O‚Ì‚İ‚ªí•Ê–¼‚Æ‚È‚é
-				//	//(—á)“Á‹} —x‚èq53†¨“Á‹}A‚Í‚â‚Ô‚³ 95¨‚Í‚â‚Ô‚³
+				//	//strRessyasyubetsuã«ç©ºç™½ãŒå«ã¾ã‚Œã‚‹å ´åˆã€ç©ºç™½ã‚ˆã‚Šã‚‚å‰ã®ã¿ãŒç¨®åˆ¥åã¨ãªã‚‹
+				//	//(ä¾‹)ç‰¹æ€¥ è¸Šã‚Šå­53å·â†’ç‰¹æ€¥ã€ã¯ã‚„ã¶ã• 95â†’ã¯ã‚„ã¶ã•
 				//	strRessyasyubetsu = strRessyasyubetsu.substr(0, pos);
 				//}
 
@@ -1107,8 +1107,8 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 				//tstring::size_type pos = strRessyasyubetsu.find(' ');
 				//if (pos != tstring::npos)
 				//{
-				//	//strRessyasyubetsu‚É‹ó”’‚ªŠÜ‚Ü‚ê‚éê‡A‹ó”’‚æ‚è‚à‘O‚Ì‚İ‚ªí•Ê–¼‚Æ‚È‚é
-				//	//(—á)“Á‹} —x‚èq53†¨“Á‹}A‚Í‚â‚Ô‚³ 95¨‚Í‚â‚Ô‚³
+				//	//strRessyasyubetsuã«ç©ºç™½ãŒå«ã¾ã‚Œã‚‹å ´åˆã€ç©ºç™½ã‚ˆã‚Šã‚‚å‰ã®ã¿ãŒç¨®åˆ¥åã¨ãªã‚‹
+				//	//(ä¾‹)ç‰¹æ€¥ è¸Šã‚Šå­53å·â†’ç‰¹æ€¥ã€ã¯ã‚„ã¶ã• 95â†’ã¯ã‚„ã¶ã•
 				//	strRessyasyubetsu = strRessyasyubetsu.substr(0, pos);
 				//}
 
@@ -1132,8 +1132,8 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 				//tstring::size_type pos = strRessyasyubetsu.find(' ');
 				//if (pos != tstring::npos)
 				//{
-				//	//strRessyasyubetsu‚É‹ó”’‚ªŠÜ‚Ü‚ê‚éê‡A‹ó”’‚æ‚è‚à‘O‚Ì‚İ‚ªí•Ê–¼‚Æ‚È‚é
-				//	//(—á)“Á‹} —x‚èq53†¨“Á‹}A‚Í‚â‚Ô‚³ 95¨‚Í‚â‚Ô‚³
+				//	//strRessyasyubetsuã«ç©ºç™½ãŒå«ã¾ã‚Œã‚‹å ´åˆã€ç©ºç™½ã‚ˆã‚Šã‚‚å‰ã®ã¿ãŒç¨®åˆ¥åã¨ãªã‚‹
+				//	//(ä¾‹)ç‰¹æ€¥ è¸Šã‚Šå­53å·â†’ç‰¹æ€¥ã€ã¯ã‚„ã¶ã• 95â†’ã¯ã‚„ã¶ã•
 				//	strRessyasyubetsu = strRessyasyubetsu.substr(0, pos);
 				//}
 
@@ -1163,7 +1163,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 
 	}
 	/**
-		Dia‚ğì‚é
+		Diaã‚’ä½œã‚‹
 	*/
 	if (iRv >= 0)
 	{
@@ -1292,39 +1292,39 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 					int iEkiOrder = pCentDedEkiCont->EkiOrderOfEkiIndex(ERessyahoukou::Ressyahoukou_Kudari, contDigitalContent1[idx].iEkiIndex);
 					CentDedEkiJikoku	aCentDedEkiJikoku = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder);
 
-					if (contRessya1[idxk][idx] == _T(""))//‘O‰w~‚Ü‚è
+					if (contRessya1[idxk][idx] == _T("ï¼"))//å‰é§…æ­¢ã¾ã‚Š
 					{
-						//ˆê‚Âã‚Ì‘O‚Ì‰w‚Ì”­‚ğ’…‚ÉƒRƒs[‚·‚é
+						//ä¸€ã¤ä¸Šã®å‰ã®é§…ã®ç™ºæ™‚åˆ»ã‚’ç€æ™‚åˆ»ã«ã‚³ãƒ”ãƒ¼ã™ã‚‹
 						CentDedEkiJikoku	aCentDedEkiJikokuBefore = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder - 1);
 						aCentDedEkiJikokuBefore.setChakujikoku(aCentDedEkiJikokuBefore.getHatsujikoku());
 						aCentDedEkiJikokuBefore.setHatsujikoku(CdDedJikoku());
 						aCentDedRessya.setCentDedEkiJikoku(iEkiOrder - 1, aCentDedEkiJikokuBefore);
 
-						//ˆê‚Â‘O‚Ì‰w‚Ì‰wŒ`®‚ğ’…‚ ‚è‚É•ÏX‚³‚¹‚é
+						//ä¸€ã¤å‰ã®é§…ã®é§…æ™‚åˆ»å½¢å¼ã‚’ç€ã‚ã‚Šã«å¤‰æ›´ã•ã›ã‚‹
 						iEkiIndexAddChakuKudari[contDigitalContent1[idx].iEkiIndex - 1] = true;
 
 						//continue;
 					}
-					else if (contRessya1[idxk][idx] == _T("||"))//Œo—R‚È‚µ
+					else if (contRessya1[idxk][idx] == _T("||"))//çµŒç”±ãªã—
 					{
 						//continue;
 					}
-					else if (contRessya1[idxk][idx] == _T("E"))//˜HüŠO”­’…
+					else if (contRessya1[idxk][idx] == _T("ãƒ»"))//è·¯ç·šå¤–ç™ºç€
 					{
 						//continue;
 					}
-					else if (contRessya1[idxk][idx] == _T("„¢"))//í•Ê•ÏXA•ªŠ„
+					else if (contRessya1[idxk][idx] == _T("â”"))//ç¨®åˆ¥å¤‰æ›´ã€åˆ†å‰²
 					{
 						bIsSyubetsuChange = true;
 					}
-					else if (contRessya1[idxk][idx] == _T("„£"))//•¹‡
+					else if (contRessya1[idxk][idx] == _T("â”˜"))//ä½µåˆ
 					{
 						//continue;
 					}
-					else if (contRessya1[idxk][idx] == _T("ƒŒ"))//’Ê‰ß
+					else if (contRessya1[idxk][idx] == _T("ãƒ¬"))//é€šé
 					{
 						aCentDedEkiJikoku.setEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Tsuuka);
-						//’Ê‰ß‚Ìê‡A”Ôü•\¦‚ª‚È‚¢‚Ì‚ÅAå–{ü‚ğİ’è‚µ‚Ä‚¨‚­B
+						//é€šéã®å ´åˆã€ç•ªç·šè¡¨ç¤ºãŒãªã„ã®ã§ã€ä¸»æœ¬ç·šã‚’è¨­å®šã—ã¦ãŠãã€‚
 						aCentDedEkiJikoku.setRessyaTrackIndex(MainTrackKudari[contDigitalContent1[idx].iEkiIndex]);
 					}
 					else if (contRessya1[idxk][idx].empty())
@@ -1335,7 +1335,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 					{
 						aCentDedEkiJikoku.setEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Teisya);
 						aCentDedEkiJikoku.setChakujikoku(CdDedJikoku(contRessya1[idxk][idx]));
-						//’âÔ‚Ìê‡A”Ôü•\¦‚ª‚ ‚é‰Â”\‚ğl—¶‚µA”Ôü‚ª0–¢–(–¢İ’è)‚È‚çå–{ü‚ğİ’è‚µ‚Ä‚¨‚­B
+						//åœè»Šã®å ´åˆã€ç•ªç·šè¡¨ç¤ºãŒã‚ã‚‹å¯èƒ½ã‚’è€ƒæ…®ã—ã€ç•ªç·šãŒ0æœªæº€(æœªè¨­å®š)ãªã‚‰ä¸»æœ¬ç·šã‚’è¨­å®šã—ã¦ãŠãã€‚
 						if (aCentDedEkiJikoku.getRessyaTrackIndex() < 0)
 						{
 							aCentDedEkiJikoku.setRessyaTrackIndex(MainTrackKudari[contDigitalContent1[idx].iEkiIndex]);
@@ -1346,22 +1346,22 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 				else if (contDigitalContent1[idx].eTrType == ETrType::TrType_EkiBansen)
 				{
 					int iEkiOrder = pCentDedEkiCont->EkiOrderOfEkiIndex(ERessyahoukou::Ressyahoukou_Kudari, contDigitalContent1[idx].iEkiIndex);
-					//contRessya1[idxk][idx]‚Ì’†g‚ªA(”Ôü)‚¾‚Á‚½ê‡‚ÍA”ÔüIndex‚É’u‚«Š·‚¦Ï‚İ‚È‚Ì‚ÅA”š‚É•ÏŠ·‚µ‚Ä”ÔüIndex‚Æ‚µ‚Äw’è‚·‚éB
+					//contRessya1[idxk][idx]ã®ä¸­èº«ãŒã€(ç•ªç·š)ã ã£ãŸå ´åˆã¯ã€ç•ªç·šIndexã«ç½®ãæ›ãˆæ¸ˆã¿ãªã®ã§ã€æ•°å­—ã«å¤‰æ›ã—ã¦ç•ªç·šIndexã¨ã—ã¦æŒ‡å®šã™ã‚‹ã€‚
 					if (!contRessya1[idxk][idx].empty() &&_istdigit(contRessya1[idxk][idx][0]) != 0)
 					{
 						CentDedEkiJikoku	aCentDedEkiJikoku = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder);
 						aCentDedEkiJikoku.setRessyaTrackIndex(_ttoi(contRessya1[idxk][idx].c_str()));
 						aCentDedRessya.setCentDedEkiJikoku(iEkiOrder, aCentDedEkiJikoku);
 					}
-					else if (contRessya1[idxk][idx] == _T(""))//‘O‰w~‚Ü‚è
+					else if (contRessya1[idxk][idx] == _T("ï¼"))//å‰é§…æ­¢ã¾ã‚Š
 					{
-						//ˆê‚Âã‚Ì‘O‚Ì‰w‚Ì”­‚ğ’…‚ÉƒRƒs[‚·‚é
+						//ä¸€ã¤ä¸Šã®å‰ã®é§…ã®ç™ºæ™‚åˆ»ã‚’ç€æ™‚åˆ»ã«ã‚³ãƒ”ãƒ¼ã™ã‚‹
 						CentDedEkiJikoku	aCentDedEkiJikokuBefore = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder - 1);
 						aCentDedEkiJikokuBefore.setChakujikoku(aCentDedEkiJikokuBefore.getHatsujikoku());
 						aCentDedEkiJikokuBefore.setHatsujikoku(CdDedJikoku());
 						aCentDedRessya.setCentDedEkiJikoku(iEkiOrder - 1, aCentDedEkiJikokuBefore);
 
-						//ˆê‚Â‘O‚Ì‰w‚Ì‰wŒ`®‚ğ’…‚ ‚è‚É•ÏX‚³‚¹‚é
+						//ä¸€ã¤å‰ã®é§…ã®é§…æ™‚åˆ»å½¢å¼ã‚’ç€ã‚ã‚Šã«å¤‰æ›´ã•ã›ã‚‹
 						iEkiIndexAddChakuKudari[contDigitalContent1[idx].iEkiIndex - 1] = true;
 
 						//continue;
@@ -1371,43 +1371,43 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 				{
 					int iEkiOrder = pCentDedEkiCont->EkiOrderOfEkiIndex(ERessyahoukou::Ressyahoukou_Kudari, contDigitalContent1[idx].iEkiIndex);
 					CentDedEkiJikoku	aCentDedEkiJikoku = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder);
-					if (contRessya1[idxk][idx] == _T(""))//‘O‰w~‚Ü‚è
+					if (contRessya1[idxk][idx] == _T("ï¼"))//å‰é§…æ­¢ã¾ã‚Š
 					{
-						//‚¨‚Å‚©‚¯ƒlƒbƒg‚Ìê‡A’…”­‚ª‚ ‚é‰w~‚Ü‚è‚Å‚àA”­—“‚É‚ğ•\¦‚·‚é‚Ì‚ÅAˆê‚Âã‚Ì€–Ú‚ª“¯‚¶‰w(‚Ì’…)‚ª‚Ç‚¤‚©‚ğ’²‚×‚é
+						//ãŠã§ã‹ã‘ãƒãƒƒãƒˆã®å ´åˆã€ç€ç™ºæ™‚åˆ»ãŒã‚ã‚‹é§…æ­¢ã¾ã‚Šã§ã‚‚ã€ç™ºæ™‚åˆ»æ¬„ã«ï¼ã‚’è¡¨ç¤ºã™ã‚‹ã®ã§ã€ä¸€ã¤ä¸Šã®é …ç›®ãŒåŒã˜é§…(ã®ç€æ™‚åˆ»)ãŒã©ã†ã‹ã‚’èª¿ã¹ã‚‹
 						if (contDigitalContent1[idx].iEkiIndex != contDigitalContent1[idx - 1].iEkiIndex)
 						{
-							//ˆê‚Âã‚Ì‘O‚Ì‰w‚Ì”­‚ğ’…‚ÉƒRƒs[‚·‚é
+							//ä¸€ã¤ä¸Šã®å‰ã®é§…ã®ç™ºæ™‚åˆ»ã‚’ç€æ™‚åˆ»ã«ã‚³ãƒ”ãƒ¼ã™ã‚‹
 							CentDedEkiJikoku	aCentDedEkiJikokuBefore = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder - 1);
 							aCentDedEkiJikokuBefore.setChakujikoku(aCentDedEkiJikokuBefore.getHatsujikoku());
 							aCentDedEkiJikokuBefore.setHatsujikoku(CdDedJikoku());
 							aCentDedRessya.setCentDedEkiJikoku(iEkiOrder - 1, aCentDedEkiJikokuBefore);
 
-							//ˆê‚Â‘O‚Ì‰w‚Ì‰wŒ`®‚ğ’…‚ ‚è‚É•ÏX‚³‚¹‚é
+							//ä¸€ã¤å‰ã®é§…ã®é§…æ™‚åˆ»å½¢å¼ã‚’ç€ã‚ã‚Šã«å¤‰æ›´ã•ã›ã‚‹
 							iEkiIndexAddChakuKudari[contDigitalContent1[idx].iEkiIndex - 1] = true;
 						}
 
 						//continue;
 					}
-					else if (contRessya1[idxk][idx] == _T("||"))//Œo—R‚È‚µ
+					else if (contRessya1[idxk][idx] == _T("||"))//çµŒç”±ãªã—
 					{
 						//continue;
 					}
-					else if (contRessya1[idxk][idx] == _T("E"))//˜HüŠO”­’…
+					else if (contRessya1[idxk][idx] == _T("ãƒ»"))//è·¯ç·šå¤–ç™ºç€
 					{
 						//continue;
 					}
-					else if (contRessya1[idxk][idx] == _T("„¢"))//í•Ê•ÏXA•ªŠ„
+					else if (contRessya1[idxk][idx] == _T("â”"))//ç¨®åˆ¥å¤‰æ›´ã€åˆ†å‰²
 					{
 						bIsSyubetsuChange = true;
 					}
-					else if (contRessya1[idxk][idx] == _T("„£"))//•¹‡
+					else if (contRessya1[idxk][idx] == _T("â”˜"))//ä½µåˆ
 					{
 						//continue;
 					}
-					else if (contRessya1[idxk][idx] == _T("ƒŒ"))//’Ê‰ß
+					else if (contRessya1[idxk][idx] == _T("ãƒ¬"))//é€šé
 					{
 						aCentDedEkiJikoku.setEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Tsuuka);
-						//’Ê‰ß‚Ìê‡A”Ôü•\¦‚ª‚È‚¢‚Ì‚ÅAå–{ü‚ğİ’è‚µ‚Ä‚¨‚­B
+						//é€šéã®å ´åˆã€ç•ªç·šè¡¨ç¤ºãŒãªã„ã®ã§ã€ä¸»æœ¬ç·šã‚’è¨­å®šã—ã¦ãŠãã€‚
 						aCentDedEkiJikoku.setRessyaTrackIndex(MainTrackKudari[contDigitalContent1[idx].iEkiIndex]);
 					}
 					else if (contRessya1[idxk][idx].empty())
@@ -1418,7 +1418,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 					{
 						aCentDedEkiJikoku.setEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Teisya);
 						aCentDedEkiJikoku.setHatsujikoku(CdDedJikoku(contRessya1[idxk][idx]));
-						//’Ê‰ß‚Ìê‡A”Ôü•\¦‚ª‚ ‚é‰Â”\‚ğl—¶‚µA”Ôü‚ª0–¢–(–¢İ’è)‚È‚çå–{ü‚ğİ’è‚µ‚Ä‚¨‚­B
+						//é€šéã®å ´åˆã€ç•ªç·šè¡¨ç¤ºãŒã‚ã‚‹å¯èƒ½ã‚’è€ƒæ…®ã—ã€ç•ªç·šãŒ0æœªæº€(æœªè¨­å®š)ãªã‚‰ä¸»æœ¬ç·šã‚’è¨­å®šã—ã¦ãŠãã€‚
 						if (aCentDedEkiJikoku.getRessyaTrackIndex() < 0)
 						{
 							aCentDedEkiJikoku.setRessyaTrackIndex(MainTrackKudari[contDigitalContent1[idx].iEkiIndex]);
@@ -1431,8 +1431,8 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 
 			if (bIsSyubetsuChange)
 			{
-				//bIsSyubetsuChange‚È‚çˆê‚Â‘O‚Ì—ñ‚Ì—ñÔ‚ğŒÄ‚Ño‚µA‚»‚Ì—ñÔ‚ÌI’…‰w‚Æ‚±‚Ì—ñÔ‚Ìn”­‰w‚ª“¯ˆê‚È‚çA
-				//í•Ê‚ğŠm”F‚µAí•Ê‚ª“¯‚¶‚È‚ç—ñÔî•ñ•ÏXAˆÙ‚È‚é‚È‚çí•Ê•ÏX‚ğ‘O‚Ì—ñÔ‚Éİ’è‚·‚éB
+				//bIsSyubetsuChangeãªã‚‰ä¸€ã¤å‰ã®åˆ—ã®åˆ—è»Šã‚’å‘¼ã³å‡ºã—ã€ãã®åˆ—è»Šã®çµ‚ç€é§…ã¨ã“ã®åˆ—è»Šã®å§‹ç™ºé§…ãŒåŒä¸€ãªã‚‰ã€
+				//ç¨®åˆ¥ã‚’ç¢ºèªã—ã€ç¨®åˆ¥ãŒåŒã˜ãªã‚‰åˆ—è»Šæƒ…å ±å¤‰æ›´ã€ç•°ãªã‚‹ãªã‚‰ç¨®åˆ¥å¤‰æ›´ã‚’å‰ã®åˆ—è»Šã«è¨­å®šã™ã‚‹ã€‚
 				CentDedRessya* pCentDedRessyaBefore = aCentDedRessyaCont1Kudari.getMuPtr()->get(idxk - 1);
 				if (aCentDedRessya.getValidSihatsuEki() == pCentDedRessyaBefore->getValidSyuuchakuEki())
 				{
@@ -1506,7 +1506,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 			{
 				tstring strEkimei = contRessya1[idxk][iKudariOuterShuchakuRow];
 
-				if (strEkimei == _T("ŠÂó‰^“]"))
+				if (strEkimei == _T("ç’°çŠ¶é‹è»¢"))
 				{
 					int iShuchakuEkiOrder = aCentDedRessya.getSyuuchakuEki();
 					if (iShuchakuEkiOrder >= 0)
@@ -1550,7 +1550,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 						}
 
 						CentDedEkiJikoku aCentDedEkiJikoku = aCentDedRessya.getCentDedEkiJikoku(iShuchakuEkiOrder);
-						//’…‚ª‚È‚¢ê‡‚ğl—¶‚µA’…‚ªNULL‚Ìê‡‚ÍA”­‚ğ’…‚ÉƒRƒs[‚·‚éB
+						//ç€æ™‚åˆ»ãŒãªã„å ´åˆã‚’è€ƒæ…®ã—ã€ç€æ™‚åˆ»ãŒNULLã®å ´åˆã¯ã€ç™ºæ™‚åˆ»ã‚’ç€æ™‚åˆ»ã«ã‚³ãƒ”ãƒ¼ã™ã‚‹ã€‚
 						if (aCentDedEkiJikoku.getChakujikoku().isNull())
 						{
 							aCentDedEkiJikoku.setChakujikoku(aCentDedEkiJikoku.getHatsujikoku());
@@ -1570,7 +1570,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 
 			aCentDedRessyaCont1Kudari.insert(aCentDedRessya);
 
-			//ˆê‚Â‘O‚Ì‰w‚Ì‰wŒ`®‚ğ’…‚ ‚è‚É•ÏX‚³‚¹‚é
+			//ä¸€ã¤å‰ã®é§…ã®é§…æ™‚åˆ»å½¢å¼ã‚’ç€ã‚ã‚Šã«å¤‰æ›´ã•ã›ã‚‹
 			for (int idxe = 0; idxe < iEkiIndexAddChakuKudari.size(); idxe++)
 			{
 				if (iEkiIndexAddChakuKudari[idxe])
@@ -1596,7 +1596,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 		}
 
 
-		//‚±‚±‚©‚çã‚èƒ_ƒCƒ„1
+		//ã“ã“ã‹ã‚‰ä¸Šã‚Šãƒ€ã‚¤ãƒ¤1
 		vector<bool> iEkiIndexAddChakuNobori;
 		iEkiIndexAddChakuNobori.assign(pCentDedEkiCont->size(), false);
 
@@ -1643,39 +1643,39 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 				{
 					int iEkiOrder = pCentDedEkiCont->EkiOrderOfEkiIndex(ERessyahoukou::Ressyahoukou_Nobori, contDigitalContent2[idx].iEkiIndex);
 					CentDedEkiJikoku	aCentDedEkiJikoku = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder);
-					if (contRessya2[idxn][idx] == _T(""))//‘O‰w~‚Ü‚è
+					if (contRessya2[idxn][idx] == _T("ï¼"))//å‰é§…æ­¢ã¾ã‚Š
 					{
-						//ˆê‚Âã‚Ì‘O‚Ì‰w‚Ì”­‚ğ’…‚ÉƒRƒs[‚·‚é
+						//ä¸€ã¤ä¸Šã®å‰ã®é§…ã®ç™ºæ™‚åˆ»ã‚’ç€æ™‚åˆ»ã«ã‚³ãƒ”ãƒ¼ã™ã‚‹
 						CentDedEkiJikoku	aCentDedEkiJikokuBefore = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder - 1);
 						aCentDedEkiJikokuBefore.setChakujikoku(aCentDedEkiJikokuBefore.getHatsujikoku());
 						aCentDedEkiJikokuBefore.setHatsujikoku(CdDedJikoku());
 						aCentDedRessya.setCentDedEkiJikoku(iEkiOrder - 1, aCentDedEkiJikokuBefore);
 
-						//ˆê‚Â‘O(ã‚è‚È‚Ì‚ÅIndex‚Í+1)‚Ì‰w‚Ì‰wŒ`®‚ğ’…‚ ‚è‚É•ÏX‚³‚¹‚é
+						//ä¸€ã¤å‰(ä¸Šã‚Šãªã®ã§Indexã¯+1)ã®é§…ã®é§…æ™‚åˆ»å½¢å¼ã‚’ç€ã‚ã‚Šã«å¤‰æ›´ã•ã›ã‚‹
 						iEkiIndexAddChakuNobori[contDigitalContent2[idx].iEkiIndex + 1] = true;
 
 						//continue;
 					}
-					else if (contRessya2[idxn][idx] == _T("||"))//Œo—R‚È‚µ
+					else if (contRessya2[idxn][idx] == _T("||"))//çµŒç”±ãªã—
 					{
 						//continue;
 					}
-					else if (contRessya2[idxn][idx] == _T("E"))//˜HüŠO”­’…
+					else if (contRessya2[idxn][idx] == _T("ãƒ»"))//è·¯ç·šå¤–ç™ºç€
 					{
 						//continue;
 					}
-					else if (contRessya2[idxn][idx] == _T("„¢"))//í•Ê•ÏXA•ªŠ„
+					else if (contRessya2[idxn][idx] == _T("â”"))//ç¨®åˆ¥å¤‰æ›´ã€åˆ†å‰²
 					{
 						bIsSyubetsuChange = true;
 					}
-					else if (contRessya2[idxn][idx] == _T("„£"))//•¹‡
+					else if (contRessya2[idxn][idx] == _T("â”˜"))//ä½µåˆ
 					{
 						//continue;
 					}
-					else if (contRessya2[idxn][idx] == _T("ƒŒ"))//’Ê‰ß
+					else if (contRessya2[idxn][idx] == _T("ãƒ¬"))//é€šé
 					{
 						aCentDedEkiJikoku.setEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Tsuuka);
-						//’Ê‰ß‚Ìê‡A”Ôü•\¦‚ª‚È‚¢‚Ì‚ÅAå–{ü‚ğİ’è‚µ‚Ä‚¨‚­B
+						//é€šéã®å ´åˆã€ç•ªç·šè¡¨ç¤ºãŒãªã„ã®ã§ã€ä¸»æœ¬ç·šã‚’è¨­å®šã—ã¦ãŠãã€‚
 						aCentDedEkiJikoku.setRessyaTrackIndex(MainTrackNobori[contDigitalContent2[idx].iEkiIndex]);
 					}
 					else if (contRessya2[idxn][idx].empty())
@@ -1686,7 +1686,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 					{
 						aCentDedEkiJikoku.setEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Teisya);
 						aCentDedEkiJikoku.setChakujikoku(CdDedJikoku(contRessya2[idxn][idx]));
-						//’âÔ‚Ìê‡A”Ôü•\¦‚ª‚ ‚é‰Â”\‚ğl—¶‚µA”Ôü‚ª0–¢–(–¢İ’è)‚È‚çå–{ü‚ğİ’è‚µ‚Ä‚¨‚­B
+						//åœè»Šã®å ´åˆã€ç•ªç·šè¡¨ç¤ºãŒã‚ã‚‹å¯èƒ½ã‚’è€ƒæ…®ã—ã€ç•ªç·šãŒ0æœªæº€(æœªè¨­å®š)ãªã‚‰ä¸»æœ¬ç·šã‚’è¨­å®šã—ã¦ãŠãã€‚
 						if (aCentDedEkiJikoku.getRessyaTrackIndex() < 0)
 						{
 							aCentDedEkiJikoku.setRessyaTrackIndex(MainTrackNobori[contDigitalContent2[idx].iEkiIndex]);
@@ -1697,7 +1697,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 				else if (contDigitalContent2[idx].eTrType == ETrType::TrType_EkiBansen)
 				{
 					int iEkiOrder = pCentDedEkiCont->EkiOrderOfEkiIndex(ERessyahoukou::Ressyahoukou_Nobori, contDigitalContent2[idx].iEkiIndex);
-					//contRessya2[idxk][idx]‚Ì’†g‚ªA(”Ôü)‚¾‚Á‚½ê‡‚ÍA”ÔüIndex‚É’u‚«Š·‚¦Ï‚İ‚È‚Ì‚ÅA”š‚É•ÏŠ·‚µ‚Ä”ÔüIndex‚Æ‚µ‚Äw’è‚·‚éB
+					//contRessya2[idxk][idx]ã®ä¸­èº«ãŒã€(ç•ªç·š)ã ã£ãŸå ´åˆã¯ã€ç•ªç·šIndexã«ç½®ãæ›ãˆæ¸ˆã¿ãªã®ã§ã€æ•°å­—ã«å¤‰æ›ã—ã¦ç•ªç·šIndexã¨ã—ã¦æŒ‡å®šã™ã‚‹ã€‚
 					if (!contRessya2[idxn][idx].empty() && _istdigit(contRessya2[idxn][idx][0]) != 0)
 					{
 						CentDedEkiJikoku	aCentDedEkiJikoku = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder);
@@ -1709,15 +1709,15 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 
 						aCentDedRessya.setCentDedEkiJikoku(iEkiOrder, aCentDedEkiJikoku);
 					}
-					else if (contRessya2[idxn][idx] == _T(""))//‘O‰w~‚Ü‚è
+					else if (contRessya2[idxn][idx] == _T("ï¼"))//å‰é§…æ­¢ã¾ã‚Š
 					{
-						//ˆê‚Âã‚Ì‘O‚Ì‰w‚Ì”­‚ğ’…‚ÉƒRƒs[‚·‚é
+						//ä¸€ã¤ä¸Šã®å‰ã®é§…ã®ç™ºæ™‚åˆ»ã‚’ç€æ™‚åˆ»ã«ã‚³ãƒ”ãƒ¼ã™ã‚‹
 						CentDedEkiJikoku	aCentDedEkiJikokuBefore = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder - 1);
 						aCentDedEkiJikokuBefore.setChakujikoku(aCentDedEkiJikokuBefore.getHatsujikoku());
 						aCentDedEkiJikokuBefore.setHatsujikoku(CdDedJikoku());
 						aCentDedRessya.setCentDedEkiJikoku(iEkiOrder - 1, aCentDedEkiJikokuBefore);
 
-						//ˆê‚Â‘O(ã‚è‚È‚Ì‚ÅIndex‚Í+1)‚Ì‰w‚Ì‰wŒ`®‚ğ’…‚ ‚è‚É•ÏX‚³‚¹‚é
+						//ä¸€ã¤å‰(ä¸Šã‚Šãªã®ã§Indexã¯+1)ã®é§…ã®é§…æ™‚åˆ»å½¢å¼ã‚’ç€ã‚ã‚Šã«å¤‰æ›´ã•ã›ã‚‹
 						iEkiIndexAddChakuNobori[contDigitalContent2[idx].iEkiIndex + 1] = true;
 
 						//continue;
@@ -1727,43 +1727,43 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 				{
 					int iEkiOrder = pCentDedEkiCont->EkiOrderOfEkiIndex(ERessyahoukou::Ressyahoukou_Nobori, contDigitalContent2[idx].iEkiIndex);
 					CentDedEkiJikoku	aCentDedEkiJikoku = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder);
-					if (contRessya2[idxn][idx] == _T(""))//‘O‰w~‚Ü‚è
+					if (contRessya2[idxn][idx] == _T("ï¼"))//å‰é§…æ­¢ã¾ã‚Š
 					{
-						//‚¨‚Å‚©‚¯ƒlƒbƒg‚Ìê‡A’…”­‚ª‚ ‚é‰w~‚Ü‚è‚Å‚àA”­—“‚É‚ğ•\¦‚·‚é‚Ì‚ÅAˆê‚Âã‚Ì€–Ú‚ª“¯‚¶‰w(‚Ì’…)‚ª‚Ç‚¤‚©‚ğ’²‚×‚é
+						//ãŠã§ã‹ã‘ãƒãƒƒãƒˆã®å ´åˆã€ç€ç™ºæ™‚åˆ»ãŒã‚ã‚‹é§…æ­¢ã¾ã‚Šã§ã‚‚ã€ç™ºæ™‚åˆ»æ¬„ã«ï¼ã‚’è¡¨ç¤ºã™ã‚‹ã®ã§ã€ä¸€ã¤ä¸Šã®é …ç›®ãŒåŒã˜é§…(ã®ç€æ™‚åˆ»)ãŒã©ã†ã‹ã‚’èª¿ã¹ã‚‹
 						if (contDigitalContent2[idx].iEkiIndex != contDigitalContent2[idx - 1].iEkiIndex)
 						{
-							//ˆê‚Âã‚Ì‘O‚Ì‰w‚Ì”­‚ğ’…‚ÉƒRƒs[‚·‚é
+							//ä¸€ã¤ä¸Šã®å‰ã®é§…ã®ç™ºæ™‚åˆ»ã‚’ç€æ™‚åˆ»ã«ã‚³ãƒ”ãƒ¼ã™ã‚‹
 							CentDedEkiJikoku	aCentDedEkiJikokuBefore = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder - 1);
 							aCentDedEkiJikokuBefore.setChakujikoku(aCentDedEkiJikokuBefore.getHatsujikoku());
 							aCentDedEkiJikokuBefore.setHatsujikoku(CdDedJikoku());
 							aCentDedRessya.setCentDedEkiJikoku(iEkiOrder - 1, aCentDedEkiJikokuBefore);
 
-							//ˆê‚Â‘O(ã‚è‚È‚Ì‚ÅIndex‚Í+1)‚Ì‰w‚Ì‰wŒ`®‚ğ’…‚ ‚è‚É•ÏX‚³‚¹‚é
+							//ä¸€ã¤å‰(ä¸Šã‚Šãªã®ã§Indexã¯+1)ã®é§…ã®é§…æ™‚åˆ»å½¢å¼ã‚’ç€ã‚ã‚Šã«å¤‰æ›´ã•ã›ã‚‹
 							iEkiIndexAddChakuNobori[contDigitalContent2[idx].iEkiIndex + 1] = true;
 						}
 
 						//continue;
 					}
-					else if (contRessya2[idxn][idx] == _T("||"))//Œo—R‚È‚µ
+					else if (contRessya2[idxn][idx] == _T("||"))//çµŒç”±ãªã—
 					{
 						//continue;
 					}
-					else if (contRessya2[idxn][idx] == _T("E"))//˜HüŠO”­’…
+					else if (contRessya2[idxn][idx] == _T("ãƒ»"))//è·¯ç·šå¤–ç™ºç€
 					{
 						//continue;
 					}
-					else if (contRessya2[idxn][idx] == _T("„¢"))//í•Ê•ÏXA•ªŠ„
+					else if (contRessya2[idxn][idx] == _T("â”"))//ç¨®åˆ¥å¤‰æ›´ã€åˆ†å‰²
 					{
 						bIsSyubetsuChange = true;
 					}
-					else if (contRessya2[idxn][idx] == _T("„£"))//•¹‡
+					else if (contRessya2[idxn][idx] == _T("â”˜"))//ä½µåˆ
 					{
 						//continue;
 					}
-					else if (contRessya2[idxn][idx] == _T("ƒŒ"))//’Ê‰ß
+					else if (contRessya2[idxn][idx] == _T("ãƒ¬"))//é€šé
 					{
 						aCentDedEkiJikoku.setEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Tsuuka);
-						//’Ê‰ß‚Ìê‡A”Ôü•\¦‚ª‚È‚¢‚Ì‚ÅAå–{ü‚ğİ’è‚µ‚Ä‚¨‚­B
+						//é€šéã®å ´åˆã€ç•ªç·šè¡¨ç¤ºãŒãªã„ã®ã§ã€ä¸»æœ¬ç·šã‚’è¨­å®šã—ã¦ãŠãã€‚
 						aCentDedEkiJikoku.setRessyaTrackIndex(MainTrackNobori[contDigitalContent2[idx].iEkiIndex]);
 					}
 					else if (contRessya2[idxn][idx].empty())
@@ -1774,7 +1774,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 					{
 						aCentDedEkiJikoku.setEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Teisya);
 						aCentDedEkiJikoku.setHatsujikoku(CdDedJikoku(contRessya2[idxn][idx]));
-						//”Ôü•\¦‚ª‚ ‚é‰Â”\‚ğl—¶‚µA”Ôü‚ª0–¢–(–¢İ’è)‚È‚çå–{ü‚ğİ’è‚µ‚Ä‚¨‚­B
+						//ç•ªç·šè¡¨ç¤ºãŒã‚ã‚‹å¯èƒ½ã‚’è€ƒæ…®ã—ã€ç•ªç·šãŒ0æœªæº€(æœªè¨­å®š)ãªã‚‰ä¸»æœ¬ç·šã‚’è¨­å®šã—ã¦ãŠãã€‚
 						if (aCentDedEkiJikoku.getRessyaTrackIndex() < 0)
 						{
 							aCentDedEkiJikoku.setRessyaTrackIndex(MainTrackNobori[contDigitalContent2[idx].iEkiIndex]);
@@ -1786,8 +1786,8 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 
 			if (bIsSyubetsuChange)
 			{
-				//bIsSyubetsuChange‚È‚çˆê‚Â‘O‚Ì—ñ‚Ì—ñÔ‚ğŒÄ‚Ño‚µA‚»‚Ì—ñÔ‚ÌI’…‰w‚Æ‚±‚Ì—ñÔ‚Ìn”­‰w‚ª“¯ˆê‚È‚çA
-				//í•Ê‚ğŠm”F‚µAí•Ê‚ª“¯‚¶‚È‚ç—ñÔî•ñ•ÏXAˆÙ‚È‚é‚È‚çí•Ê•ÏX‚ğ‘O‚Ì—ñÔ‚Éİ’è‚·‚éB
+				//bIsSyubetsuChangeãªã‚‰ä¸€ã¤å‰ã®åˆ—ã®åˆ—è»Šã‚’å‘¼ã³å‡ºã—ã€ãã®åˆ—è»Šã®çµ‚ç€é§…ã¨ã“ã®åˆ—è»Šã®å§‹ç™ºé§…ãŒåŒä¸€ãªã‚‰ã€
+				//ç¨®åˆ¥ã‚’ç¢ºèªã—ã€ç¨®åˆ¥ãŒåŒã˜ãªã‚‰åˆ—è»Šæƒ…å ±å¤‰æ›´ã€ç•°ãªã‚‹ãªã‚‰ç¨®åˆ¥å¤‰æ›´ã‚’å‰ã®åˆ—è»Šã«è¨­å®šã™ã‚‹ã€‚
 				CentDedRessya* pCentDedRessyaBefore = aCentDedRessyaCont1Nobori.getMuPtr()->get(idxn - 1);
 				if (aCentDedRessya.getValidSihatsuEki() == pCentDedRessyaBefore->getValidSyuuchakuEki())
 				{
@@ -1861,7 +1861,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 			if (iNoboriOuterShuchakuRow >= 0 && !contRessya2[idxn][iNoboriOuterShuchakuRow].empty())
 			{
 				tstring strEkimei = contRessya2[idxn][iNoboriOuterShuchakuRow];
-				if (strEkimei == _T("ŠÂó‰^“]"))
+				if (strEkimei == _T("ç’°çŠ¶é‹è»¢"))
 				{
 					int iShuchakuEkiOrder = aCentDedRessya.getSyuuchakuEki();
 					if (iShuchakuEkiOrder >= 0)
@@ -1905,7 +1905,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 						}
 
 						CentDedEkiJikoku aCentDedEkiJikoku = aCentDedRessya.getCentDedEkiJikoku(iShuchakuEkiOrder);
-						//’…‚ª‚È‚¢ê‡‚ğl—¶‚µA’…‚ªNULL‚Ìê‡‚ÍA”­‚ğ’…‚ÉƒRƒs[‚·‚éB
+						//ç€æ™‚åˆ»ãŒãªã„å ´åˆã‚’è€ƒæ…®ã—ã€ç€æ™‚åˆ»ãŒNULLã®å ´åˆã¯ã€ç™ºæ™‚åˆ»ã‚’ç€æ™‚åˆ»ã«ã‚³ãƒ”ãƒ¼ã™ã‚‹ã€‚
 						if (aCentDedEkiJikoku.getChakujikoku().isNull())
 						{
 							aCentDedEkiJikoku.setChakujikoku(aCentDedEkiJikoku.getHatsujikoku());
@@ -1927,7 +1927,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 
 
 
-			//ˆê‚Â‘O‚Ì‰w‚Ì‰wŒ`®‚ğ’…‚ ‚è‚É•ÏX‚³‚¹‚é
+			//ä¸€ã¤å‰ã®é§…ã®é§…æ™‚åˆ»å½¢å¼ã‚’ç€ã‚ã‚Šã«å¤‰æ›´ã•ã›ã‚‹
 			for (int idxe = 0; idxe < iEkiIndexAddChakuNobori.size(); idxe++)
 			{
 				if (iEkiIndexAddChakuNobori[idxe])
@@ -1963,7 +1963,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 		if (!aString3.empty() || !aString4.empty())
 		{
 			CentDedDia aCentDedDia2;
-			//“ñ‚Â‚Ìƒ_ƒCƒ„‚Í“¯–¼‚Éo—ˆ‚È‚¢‚Ì‚ÅAƒ_ƒCƒ„1‚Ì‹t‚É‚·‚éB
+			//äºŒã¤ã®ãƒ€ã‚¤ãƒ¤ã¯åŒåã«å‡ºæ¥ãªã„ã®ã§ã€ãƒ€ã‚¤ãƒ¤1ã®é€†ã«ã™ã‚‹ã€‚
 			if (!aString3.empty())
 			{
 				aCentDedDia2.setName(strDate[2]);
@@ -2023,39 +2023,39 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 						int iEkiOrder = pCentDedEkiCont->EkiOrderOfEkiIndex(ERessyahoukou::Ressyahoukou_Kudari, contDigitalContent1[idx].iEkiIndex);
 						CentDedEkiJikoku	aCentDedEkiJikoku = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder);
 
-						if (contRessya3[idxk][idx] == _T(""))//‘O‰w~‚Ü‚è
+						if (contRessya3[idxk][idx] == _T("ï¼"))//å‰é§…æ­¢ã¾ã‚Š
 						{
-							//ˆê‚Âã‚Ì‘O‚Ì‰w‚Ì”­‚ğ’…‚ÉƒRƒs[‚·‚é
+							//ä¸€ã¤ä¸Šã®å‰ã®é§…ã®ç™ºæ™‚åˆ»ã‚’ç€æ™‚åˆ»ã«ã‚³ãƒ”ãƒ¼ã™ã‚‹
 							CentDedEkiJikoku	aCentDedEkiJikokuBefore = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder - 1);
 							aCentDedEkiJikokuBefore.setChakujikoku(aCentDedEkiJikokuBefore.getHatsujikoku());
 							aCentDedEkiJikokuBefore.setHatsujikoku(CdDedJikoku());
 							aCentDedRessya.setCentDedEkiJikoku(iEkiOrder - 1, aCentDedEkiJikokuBefore);
 
-							//ˆê‚Â‘O‚Ì‰w‚Ì‰wŒ`®‚ğ’…‚ ‚è‚É•ÏX‚³‚¹‚é
+							//ä¸€ã¤å‰ã®é§…ã®é§…æ™‚åˆ»å½¢å¼ã‚’ç€ã‚ã‚Šã«å¤‰æ›´ã•ã›ã‚‹
 							iEkiIndexAddChakuKudari[contDigitalContent1[idx].iEkiIndex - 1] = true;
 
 							//continue;
 						}
-						else if (contRessya3[idxk][idx] == _T("||"))//Œo—R‚È‚µ
+						else if (contRessya3[idxk][idx] == _T("||"))//çµŒç”±ãªã—
 						{
 							//continue;
 						}
-						else if (contRessya3[idxk][idx] == _T("E"))//˜HüŠO”­’…
+						else if (contRessya3[idxk][idx] == _T("ãƒ»"))//è·¯ç·šå¤–ç™ºç€
 						{
 							//continue;
 						}
-						else if (contRessya3[idxk][idx] == _T("„¢"))//í•Ê•ÏXA•ªŠ„
+						else if (contRessya3[idxk][idx] == _T("â”"))//ç¨®åˆ¥å¤‰æ›´ã€åˆ†å‰²
 						{
 							bIsSyubetsuChange = true;
 						}
-						else if (contRessya3[idxk][idx] == _T("„£"))//•¹‡
+						else if (contRessya3[idxk][idx] == _T("â”˜"))//ä½µåˆ
 						{
 							//continue;
 						}
-						else if (contRessya3[idxk][idx] == _T("ƒŒ"))//’Ê‰ß
+						else if (contRessya3[idxk][idx] == _T("ãƒ¬"))//é€šé
 						{
 							aCentDedEkiJikoku.setEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Tsuuka);
-							//’Ê‰ß‚Ìê‡A”Ôü•\¦‚ª‚È‚¢‚Ì‚ÅAå–{ü‚ğİ’è‚µ‚Ä‚¨‚­B
+							//é€šéã®å ´åˆã€ç•ªç·šè¡¨ç¤ºãŒãªã„ã®ã§ã€ä¸»æœ¬ç·šã‚’è¨­å®šã—ã¦ãŠãã€‚
 							aCentDedEkiJikoku.setRessyaTrackIndex(MainTrackKudari[contDigitalContent1[idx].iEkiIndex]);
 						}
 						else if (contRessya3[idxk][idx].empty())
@@ -2066,7 +2066,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 						{
 							aCentDedEkiJikoku.setEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Teisya);
 							aCentDedEkiJikoku.setChakujikoku(CdDedJikoku(contRessya3[idxk][idx]));
-							//’âÔ‚Ìê‡A”Ôü•\¦‚ª‚ ‚é‰Â”\‚ğl—¶‚µA”Ôü‚ª0–¢–(–¢İ’è)‚È‚çå–{ü‚ğİ’è‚µ‚Ä‚¨‚­B
+							//åœè»Šã®å ´åˆã€ç•ªç·šè¡¨ç¤ºãŒã‚ã‚‹å¯èƒ½ã‚’è€ƒæ…®ã—ã€ç•ªç·šãŒ0æœªæº€(æœªè¨­å®š)ãªã‚‰ä¸»æœ¬ç·šã‚’è¨­å®šã—ã¦ãŠãã€‚
 							if (aCentDedEkiJikoku.getRessyaTrackIndex() < 0)
 							{
 								aCentDedEkiJikoku.setRessyaTrackIndex(MainTrackKudari[contDigitalContent1[idx].iEkiIndex]);
@@ -2077,22 +2077,22 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 					else if (contDigitalContent1[idx].eTrType == ETrType::TrType_EkiBansen)
 					{
 						int iEkiOrder = pCentDedEkiCont->EkiOrderOfEkiIndex(ERessyahoukou::Ressyahoukou_Kudari, contDigitalContent1[idx].iEkiIndex);
-						//contRessya3[idxk][idx]‚Ì’†g‚ªA(”Ôü)‚¾‚Á‚½ê‡‚ÍA”ÔüIndex‚É’u‚«Š·‚¦Ï‚İ‚È‚Ì‚ÅA”š‚É•ÏŠ·‚µ‚Ä”ÔüIndex‚Æ‚µ‚Äw’è‚·‚éB
+						//contRessya3[idxk][idx]ã®ä¸­èº«ãŒã€(ç•ªç·š)ã ã£ãŸå ´åˆã¯ã€ç•ªç·šIndexã«ç½®ãæ›ãˆæ¸ˆã¿ãªã®ã§ã€æ•°å­—ã«å¤‰æ›ã—ã¦ç•ªç·šIndexã¨ã—ã¦æŒ‡å®šã™ã‚‹ã€‚
 						if (!contRessya3[idxk][idx].empty() && _istdigit(contRessya3[idxk][idx][0]) != 0)
 						{
 							CentDedEkiJikoku	aCentDedEkiJikoku = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder);
 							aCentDedEkiJikoku.setRessyaTrackIndex(_ttoi(contRessya3[idxk][idx].c_str()));
 							aCentDedRessya.setCentDedEkiJikoku(iEkiOrder, aCentDedEkiJikoku);
 						}
-						else if (contRessya3[idxk][idx] == _T(""))//‘O‰w~‚Ü‚è
+						else if (contRessya3[idxk][idx] == _T("ï¼"))//å‰é§…æ­¢ã¾ã‚Š
 						{
-							//ˆê‚Âã‚Ì‘O‚Ì‰w‚Ì”­‚ğ’…‚ÉƒRƒs[‚·‚é
+							//ä¸€ã¤ä¸Šã®å‰ã®é§…ã®ç™ºæ™‚åˆ»ã‚’ç€æ™‚åˆ»ã«ã‚³ãƒ”ãƒ¼ã™ã‚‹
 							CentDedEkiJikoku	aCentDedEkiJikokuBefore = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder - 1);
 							aCentDedEkiJikokuBefore.setChakujikoku(aCentDedEkiJikokuBefore.getHatsujikoku());
 							aCentDedEkiJikokuBefore.setHatsujikoku(CdDedJikoku());
 							aCentDedRessya.setCentDedEkiJikoku(iEkiOrder - 1, aCentDedEkiJikokuBefore);
 
-							//ˆê‚Â‘O‚Ì‰w‚Ì‰wŒ`®‚ğ’…‚ ‚è‚É•ÏX‚³‚¹‚é
+							//ä¸€ã¤å‰ã®é§…ã®é§…æ™‚åˆ»å½¢å¼ã‚’ç€ã‚ã‚Šã«å¤‰æ›´ã•ã›ã‚‹
 							iEkiIndexAddChakuKudari[contDigitalContent1[idx].iEkiIndex - 1] = true;
 
 							//continue;
@@ -2102,43 +2102,43 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 					{
 						int iEkiOrder = pCentDedEkiCont->EkiOrderOfEkiIndex(ERessyahoukou::Ressyahoukou_Kudari, contDigitalContent1[idx].iEkiIndex);
 						CentDedEkiJikoku	aCentDedEkiJikoku = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder);
-						if (contRessya3[idxk][idx] == _T(""))//‘O‰w~‚Ü‚è
+						if (contRessya3[idxk][idx] == _T("ï¼"))//å‰é§…æ­¢ã¾ã‚Š
 						{
-							//‚¨‚Å‚©‚¯ƒlƒbƒg‚Ìê‡A’…”­‚ª‚ ‚é‰w~‚Ü‚è‚Å‚àA”­—“‚É‚ğ•\¦‚·‚é‚Ì‚ÅAˆê‚Âã‚Ì€–Ú‚ª“¯‚¶‰w(‚Ì’…)‚ª‚Ç‚¤‚©‚ğ’²‚×‚é
+							//ãŠã§ã‹ã‘ãƒãƒƒãƒˆã®å ´åˆã€ç€ç™ºæ™‚åˆ»ãŒã‚ã‚‹é§…æ­¢ã¾ã‚Šã§ã‚‚ã€ç™ºæ™‚åˆ»æ¬„ã«ï¼ã‚’è¡¨ç¤ºã™ã‚‹ã®ã§ã€ä¸€ã¤ä¸Šã®é …ç›®ãŒåŒã˜é§…(ã®ç€æ™‚åˆ»)ãŒã©ã†ã‹ã‚’èª¿ã¹ã‚‹
 							if (contDigitalContent1[idx].iEkiIndex != contDigitalContent1[idx - 1].iEkiIndex)
 							{
-								//ˆê‚Âã‚Ì‘O‚Ì‰w‚Ì”­‚ğ’…‚ÉƒRƒs[‚·‚é
+								//ä¸€ã¤ä¸Šã®å‰ã®é§…ã®ç™ºæ™‚åˆ»ã‚’ç€æ™‚åˆ»ã«ã‚³ãƒ”ãƒ¼ã™ã‚‹
 								CentDedEkiJikoku	aCentDedEkiJikokuBefore = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder - 1);
 								aCentDedEkiJikokuBefore.setChakujikoku(aCentDedEkiJikokuBefore.getHatsujikoku());
 								aCentDedEkiJikokuBefore.setHatsujikoku(CdDedJikoku());
 								aCentDedRessya.setCentDedEkiJikoku(iEkiOrder - 1, aCentDedEkiJikokuBefore);
 
-								//ˆê‚Â‘O‚Ì‰w‚Ì‰wŒ`®‚ğ’…‚ ‚è‚É•ÏX‚³‚¹‚é
+								//ä¸€ã¤å‰ã®é§…ã®é§…æ™‚åˆ»å½¢å¼ã‚’ç€ã‚ã‚Šã«å¤‰æ›´ã•ã›ã‚‹
 								iEkiIndexAddChakuKudari[contDigitalContent1[idx].iEkiIndex - 1] = true;
 							}
 
 							//continue;
 						}
-						else if (contRessya3[idxk][idx] == _T("||"))//Œo—R‚È‚µ
+						else if (contRessya3[idxk][idx] == _T("||"))//çµŒç”±ãªã—
 						{
 							//continue;
 						}
-						else if (contRessya3[idxk][idx] == _T("E"))//˜HüŠO”­’…
+						else if (contRessya3[idxk][idx] == _T("ãƒ»"))//è·¯ç·šå¤–ç™ºç€
 						{
 							//continue;
 						}
-						else if (contRessya3[idxk][idx] == _T("„¢"))//í•Ê•ÏXA•ªŠ„
+						else if (contRessya3[idxk][idx] == _T("â”"))//ç¨®åˆ¥å¤‰æ›´ã€åˆ†å‰²
 						{
 							bIsSyubetsuChange = true;
 						}
-						else if (contRessya3[idxk][idx] == _T("„£"))//•¹‡
+						else if (contRessya3[idxk][idx] == _T("â”˜"))//ä½µåˆ
 						{
 							//continue;
 						}
-						else if (contRessya3[idxk][idx] == _T("ƒŒ"))//’Ê‰ß
+						else if (contRessya3[idxk][idx] == _T("ãƒ¬"))//é€šé
 						{
 							aCentDedEkiJikoku.setEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Tsuuka);
-							//’Ê‰ß‚Ìê‡A”Ôü•\¦‚ª‚È‚¢‚Ì‚ÅAå–{ü‚ğİ’è‚µ‚Ä‚¨‚­B
+							//é€šéã®å ´åˆã€ç•ªç·šè¡¨ç¤ºãŒãªã„ã®ã§ã€ä¸»æœ¬ç·šã‚’è¨­å®šã—ã¦ãŠãã€‚
 							aCentDedEkiJikoku.setRessyaTrackIndex(MainTrackKudari[contDigitalContent1[idx].iEkiIndex]);
 						}
 						else if (contRessya3[idxk][idx].empty())
@@ -2149,7 +2149,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 						{
 							aCentDedEkiJikoku.setEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Teisya);
 							aCentDedEkiJikoku.setHatsujikoku(CdDedJikoku(contRessya3[idxk][idx]));
-							//’Ê‰ß‚Ìê‡A”Ôü•\¦‚ª‚ ‚é‰Â”\‚ğl—¶‚µA”Ôü‚ª0–¢–(–¢İ’è)‚È‚çå–{ü‚ğİ’è‚µ‚Ä‚¨‚­B
+							//é€šéã®å ´åˆã€ç•ªç·šè¡¨ç¤ºãŒã‚ã‚‹å¯èƒ½ã‚’è€ƒæ…®ã—ã€ç•ªç·šãŒ0æœªæº€(æœªè¨­å®š)ãªã‚‰ä¸»æœ¬ç·šã‚’è¨­å®šã—ã¦ãŠãã€‚
 							if (aCentDedEkiJikoku.getRessyaTrackIndex() < 0)
 							{
 								aCentDedEkiJikoku.setRessyaTrackIndex(MainTrackKudari[contDigitalContent1[idx].iEkiIndex]);
@@ -2162,8 +2162,8 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 
 				if (bIsSyubetsuChange)
 				{
-					//bIsSyubetsuChange‚È‚çˆê‚Â‘O‚Ì—ñ‚Ì—ñÔ‚ğŒÄ‚Ño‚µA‚»‚Ì—ñÔ‚ÌI’…‰w‚Æ‚±‚Ì—ñÔ‚Ìn”­‰w‚ª“¯ˆê‚È‚çA
-					//í•Ê‚ğŠm”F‚µAí•Ê‚ª“¯‚¶‚È‚ç—ñÔî•ñ•ÏXAˆÙ‚È‚é‚È‚çí•Ê•ÏX‚ğ‘O‚Ì—ñÔ‚Éİ’è‚·‚éB
+					//bIsSyubetsuChangeãªã‚‰ä¸€ã¤å‰ã®åˆ—ã®åˆ—è»Šã‚’å‘¼ã³å‡ºã—ã€ãã®åˆ—è»Šã®çµ‚ç€é§…ã¨ã“ã®åˆ—è»Šã®å§‹ç™ºé§…ãŒåŒä¸€ãªã‚‰ã€
+					//ç¨®åˆ¥ã‚’ç¢ºèªã—ã€ç¨®åˆ¥ãŒåŒã˜ãªã‚‰åˆ—è»Šæƒ…å ±å¤‰æ›´ã€ç•°ãªã‚‹ãªã‚‰ç¨®åˆ¥å¤‰æ›´ã‚’å‰ã®åˆ—è»Šã«è¨­å®šã™ã‚‹ã€‚
 					CentDedRessya* pCentDedRessyaBefore = aCentDedRessyaCont2Kudari.getMuPtr()->get(idxk - 1);
 					if (aCentDedRessya.getValidSihatsuEki() == pCentDedRessyaBefore->getValidSyuuchakuEki())
 					{
@@ -2236,7 +2236,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 				if (iKudariOuterShuchakuRow >= 0 && !contRessya3[idxk][iKudariOuterShuchakuRow].empty())
 				{
 					tstring strEkimei = contRessya3[idxk][iKudariOuterShuchakuRow];
-					if (strEkimei == _T("ŠÂó‰^“]"))
+					if (strEkimei == _T("ç’°çŠ¶é‹è»¢"))
 					{
 						int iShuchakuEkiOrder = aCentDedRessya.getSyuuchakuEki();
 						if (iShuchakuEkiOrder >= 0)
@@ -2280,7 +2280,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 							}
 
 							CentDedEkiJikoku aCentDedEkiJikoku = aCentDedRessya.getCentDedEkiJikoku(iShuchakuEkiOrder);
-							//’…‚ª‚È‚¢ê‡‚ğl—¶‚µA’…‚ªNULL‚Ìê‡‚ÍA”­‚ğ’…‚ÉƒRƒs[‚·‚éB
+							//ç€æ™‚åˆ»ãŒãªã„å ´åˆã‚’è€ƒæ…®ã—ã€ç€æ™‚åˆ»ãŒNULLã®å ´åˆã¯ã€ç™ºæ™‚åˆ»ã‚’ç€æ™‚åˆ»ã«ã‚³ãƒ”ãƒ¼ã™ã‚‹ã€‚
 							if (aCentDedEkiJikoku.getChakujikoku().isNull())
 							{
 								aCentDedEkiJikoku.setChakujikoku(aCentDedEkiJikoku.getHatsujikoku());
@@ -2302,7 +2302,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 
 
 
-				//ˆê‚Â‘O‚Ì‰w‚Ì‰wŒ`®‚ğ’…‚ ‚è‚É•ÏX‚³‚¹‚é
+				//ä¸€ã¤å‰ã®é§…ã®é§…æ™‚åˆ»å½¢å¼ã‚’ç€ã‚ã‚Šã«å¤‰æ›´ã•ã›ã‚‹
 				for (int idxe = 0; idxe < iEkiIndexAddChakuKudari.size(); idxe++)
 				{
 					if (iEkiIndexAddChakuKudari[idxe])
@@ -2328,7 +2328,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 			}
 
 
-			//‚±‚±‚©‚çã‚èƒ_ƒCƒ„2
+			//ã“ã“ã‹ã‚‰ä¸Šã‚Šãƒ€ã‚¤ãƒ¤2
 			vector<bool> iEkiIndexAddChakuNobori;
 			iEkiIndexAddChakuNobori.assign(pCentDedEkiCont->size(), false);
 
@@ -2375,39 +2375,39 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 					{
 						int iEkiOrder = pCentDedEkiCont->EkiOrderOfEkiIndex(ERessyahoukou::Ressyahoukou_Nobori, contDigitalContent2[idx].iEkiIndex);
 						CentDedEkiJikoku	aCentDedEkiJikoku = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder);
-						if (contRessya4[idxn][idx] == _T(""))//‘O‰w~‚Ü‚è
+						if (contRessya4[idxn][idx] == _T("ï¼"))//å‰é§…æ­¢ã¾ã‚Š
 						{
-							//ˆê‚Âã‚Ì‘O‚Ì‰w‚Ì”­‚ğ’…‚ÉƒRƒs[‚·‚é
+							//ä¸€ã¤ä¸Šã®å‰ã®é§…ã®ç™ºæ™‚åˆ»ã‚’ç€æ™‚åˆ»ã«ã‚³ãƒ”ãƒ¼ã™ã‚‹
 							CentDedEkiJikoku	aCentDedEkiJikokuBefore = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder - 1);
 							aCentDedEkiJikokuBefore.setChakujikoku(aCentDedEkiJikokuBefore.getHatsujikoku());
 							aCentDedEkiJikokuBefore.setHatsujikoku(CdDedJikoku());
 							aCentDedRessya.setCentDedEkiJikoku(iEkiOrder - 1, aCentDedEkiJikokuBefore);
 
-							//ˆê‚Â‘O(ã‚è‚È‚Ì‚ÅIndex‚Í+1)‚Ì‰w‚Ì‰wŒ`®‚ğ’…‚ ‚è‚É•ÏX‚³‚¹‚é
+							//ä¸€ã¤å‰(ä¸Šã‚Šãªã®ã§Indexã¯+1)ã®é§…ã®é§…æ™‚åˆ»å½¢å¼ã‚’ç€ã‚ã‚Šã«å¤‰æ›´ã•ã›ã‚‹
 							iEkiIndexAddChakuNobori[contDigitalContent2[idx].iEkiIndex + 1] = true;
 
 							//continue;
 						}
-						else if (contRessya4[idxn][idx] == _T("||"))//Œo—R‚È‚µ
+						else if (contRessya4[idxn][idx] == _T("||"))//çµŒç”±ãªã—
 						{
 							//continue;
 						}
-						else if (contRessya4[idxn][idx] == _T("E"))//˜HüŠO”­’…
+						else if (contRessya4[idxn][idx] == _T("ãƒ»"))//è·¯ç·šå¤–ç™ºç€
 						{
 							//continue;
 						}
-						else if (contRessya4[idxn][idx] == _T("„¢"))//í•Ê•ÏXA•ªŠ„
+						else if (contRessya4[idxn][idx] == _T("â”"))//ç¨®åˆ¥å¤‰æ›´ã€åˆ†å‰²
 						{
 							bIsSyubetsuChange = true;
 						}
-						else if (contRessya4[idxn][idx] == _T("„£"))//•¹‡
+						else if (contRessya4[idxn][idx] == _T("â”˜"))//ä½µåˆ
 						{
 							//continue;
 						}
-						else if (contRessya4[idxn][idx] == _T("ƒŒ"))//’Ê‰ß
+						else if (contRessya4[idxn][idx] == _T("ãƒ¬"))//é€šé
 						{
 							aCentDedEkiJikoku.setEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Tsuuka);
-							//’Ê‰ß‚Ìê‡A”Ôü•\¦‚ª‚È‚¢‚Ì‚ÅAå–{ü‚ğİ’è‚µ‚Ä‚¨‚­B
+							//é€šéã®å ´åˆã€ç•ªç·šè¡¨ç¤ºãŒãªã„ã®ã§ã€ä¸»æœ¬ç·šã‚’è¨­å®šã—ã¦ãŠãã€‚
 							aCentDedEkiJikoku.setRessyaTrackIndex(MainTrackNobori[contDigitalContent2[idx].iEkiIndex]);
 						}
 						else if (contRessya4[idxn][idx].empty())
@@ -2418,7 +2418,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 						{
 							aCentDedEkiJikoku.setEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Teisya);
 							aCentDedEkiJikoku.setChakujikoku(CdDedJikoku(contRessya4[idxn][idx]));
-							//’âÔ‚Ìê‡A”Ôü•\¦‚ª‚ ‚é‰Â”\‚ğl—¶‚µA”Ôü‚ª0–¢–(–¢İ’è)‚È‚çå–{ü‚ğİ’è‚µ‚Ä‚¨‚­B
+							//åœè»Šã®å ´åˆã€ç•ªç·šè¡¨ç¤ºãŒã‚ã‚‹å¯èƒ½ã‚’è€ƒæ…®ã—ã€ç•ªç·šãŒ0æœªæº€(æœªè¨­å®š)ãªã‚‰ä¸»æœ¬ç·šã‚’è¨­å®šã—ã¦ãŠãã€‚
 							if (aCentDedEkiJikoku.getRessyaTrackIndex() < 0)
 							{
 								aCentDedEkiJikoku.setRessyaTrackIndex(MainTrackNobori[contDigitalContent2[idx].iEkiIndex]);
@@ -2429,7 +2429,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 					else if (contDigitalContent2[idx].eTrType == ETrType::TrType_EkiBansen)
 					{
 						int iEkiOrder = pCentDedEkiCont->EkiOrderOfEkiIndex(ERessyahoukou::Ressyahoukou_Nobori, contDigitalContent2[idx].iEkiIndex);
-						//contRessya4[idxk][idx]‚Ì’†g‚ªA(”Ôü)‚¾‚Á‚½ê‡‚ÍA”ÔüIndex‚É’u‚«Š·‚¦Ï‚İ‚È‚Ì‚ÅA”š‚É•ÏŠ·‚µ‚Ä”ÔüIndex‚Æ‚µ‚Äw’è‚·‚éB
+						//contRessya4[idxk][idx]ã®ä¸­èº«ãŒã€(ç•ªç·š)ã ã£ãŸå ´åˆã¯ã€ç•ªç·šIndexã«ç½®ãæ›ãˆæ¸ˆã¿ãªã®ã§ã€æ•°å­—ã«å¤‰æ›ã—ã¦ç•ªç·šIndexã¨ã—ã¦æŒ‡å®šã™ã‚‹ã€‚
 						if (!contRessya4[idxn][idx].empty() && _istdigit(contRessya4[idxn][idx][0]) != 0)
 						{
 							CentDedEkiJikoku	aCentDedEkiJikoku = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder);
@@ -2441,15 +2441,15 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 
 							aCentDedRessya.setCentDedEkiJikoku(iEkiOrder, aCentDedEkiJikoku);
 						}
-						else if (contRessya4[idxn][idx] == _T(""))//‘O‰w~‚Ü‚è
+						else if (contRessya4[idxn][idx] == _T("ï¼"))//å‰é§…æ­¢ã¾ã‚Š
 						{
-							//ˆê‚Âã‚Ì‘O‚Ì‰w‚Ì”­‚ğ’…‚ÉƒRƒs[‚·‚é
+							//ä¸€ã¤ä¸Šã®å‰ã®é§…ã®ç™ºæ™‚åˆ»ã‚’ç€æ™‚åˆ»ã«ã‚³ãƒ”ãƒ¼ã™ã‚‹
 							CentDedEkiJikoku	aCentDedEkiJikokuBefore = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder - 1);
 							aCentDedEkiJikokuBefore.setChakujikoku(aCentDedEkiJikokuBefore.getHatsujikoku());
 							aCentDedEkiJikokuBefore.setHatsujikoku(CdDedJikoku());
 							aCentDedRessya.setCentDedEkiJikoku(iEkiOrder - 1, aCentDedEkiJikokuBefore);
 
-							//ˆê‚Â‘O(ã‚è‚È‚Ì‚ÅIndex‚Í+1)‚Ì‰w‚Ì‰wŒ`®‚ğ’…‚ ‚è‚É•ÏX‚³‚¹‚é
+							//ä¸€ã¤å‰(ä¸Šã‚Šãªã®ã§Indexã¯+1)ã®é§…ã®é§…æ™‚åˆ»å½¢å¼ã‚’ç€ã‚ã‚Šã«å¤‰æ›´ã•ã›ã‚‹
 							iEkiIndexAddChakuNobori[contDigitalContent2[idx].iEkiIndex + 1] = true;
 
 							//continue;
@@ -2459,43 +2459,43 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 					{
 						int iEkiOrder = pCentDedEkiCont->EkiOrderOfEkiIndex(ERessyahoukou::Ressyahoukou_Nobori, contDigitalContent2[idx].iEkiIndex);
 						CentDedEkiJikoku	aCentDedEkiJikoku = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder);
-						if (contRessya4[idxn][idx] == _T(""))//‘O‰w~‚Ü‚è
+						if (contRessya4[idxn][idx] == _T("ï¼"))//å‰é§…æ­¢ã¾ã‚Š
 						{
-							//‚¨‚Å‚©‚¯ƒlƒbƒg‚Ìê‡A’…”­‚ª‚ ‚é‰w~‚Ü‚è‚Å‚àA”­—“‚É‚ğ•\¦‚·‚é‚Ì‚ÅAˆê‚Âã‚Ì€–Ú‚ª“¯‚¶‰w(‚Ì’…)‚ª‚Ç‚¤‚©‚ğ’²‚×‚é
+							//ãŠã§ã‹ã‘ãƒãƒƒãƒˆã®å ´åˆã€ç€ç™ºæ™‚åˆ»ãŒã‚ã‚‹é§…æ­¢ã¾ã‚Šã§ã‚‚ã€ç™ºæ™‚åˆ»æ¬„ã«ï¼ã‚’è¡¨ç¤ºã™ã‚‹ã®ã§ã€ä¸€ã¤ä¸Šã®é …ç›®ãŒåŒã˜é§…(ã®ç€æ™‚åˆ»)ãŒã©ã†ã‹ã‚’èª¿ã¹ã‚‹
 							if (contDigitalContent2[idx].iEkiIndex != contDigitalContent2[idx - 1].iEkiIndex)
 							{
-								//ˆê‚Âã‚Ì‘O‚Ì‰w‚Ì”­‚ğ’…‚ÉƒRƒs[‚·‚é
+								//ä¸€ã¤ä¸Šã®å‰ã®é§…ã®ç™ºæ™‚åˆ»ã‚’ç€æ™‚åˆ»ã«ã‚³ãƒ”ãƒ¼ã™ã‚‹
 								CentDedEkiJikoku	aCentDedEkiJikokuBefore = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder - 1);
 								aCentDedEkiJikokuBefore.setChakujikoku(aCentDedEkiJikokuBefore.getHatsujikoku());
 								aCentDedEkiJikokuBefore.setHatsujikoku(CdDedJikoku());
 								aCentDedRessya.setCentDedEkiJikoku(iEkiOrder - 1, aCentDedEkiJikokuBefore);
 
-								//ˆê‚Â‘O(ã‚è‚È‚Ì‚ÅIndex‚Í+1)‚Ì‰w‚Ì‰wŒ`®‚ğ’…‚ ‚è‚É•ÏX‚³‚¹‚é
+								//ä¸€ã¤å‰(ä¸Šã‚Šãªã®ã§Indexã¯+1)ã®é§…ã®é§…æ™‚åˆ»å½¢å¼ã‚’ç€ã‚ã‚Šã«å¤‰æ›´ã•ã›ã‚‹
 								iEkiIndexAddChakuNobori[contDigitalContent2[idx].iEkiIndex + 1] = true;
 							}
 
 							//continue;
 						}
-						else if (contRessya4[idxn][idx] == _T("||"))//Œo—R‚È‚µ
+						else if (contRessya4[idxn][idx] == _T("||"))//çµŒç”±ãªã—
 						{
 							//continue;
 						}
-						else if (contRessya4[idxn][idx] == _T("E"))//˜HüŠO”­’…
+						else if (contRessya4[idxn][idx] == _T("ãƒ»"))//è·¯ç·šå¤–ç™ºç€
 						{
 							//continue;
 						}
-						else if (contRessya4[idxn][idx] == _T("„¢"))//í•Ê•ÏXA•ªŠ„
+						else if (contRessya4[idxn][idx] == _T("â”"))//ç¨®åˆ¥å¤‰æ›´ã€åˆ†å‰²
 						{
 							bIsSyubetsuChange = true;
 						}
-						else if (contRessya4[idxn][idx] == _T("„£"))//•¹‡
+						else if (contRessya4[idxn][idx] == _T("â”˜"))//ä½µåˆ
 						{
 							//continue;
 						}
-						else if (contRessya4[idxn][idx] == _T("ƒŒ"))//’Ê‰ß
+						else if (contRessya4[idxn][idx] == _T("ãƒ¬"))//é€šé
 						{
 							aCentDedEkiJikoku.setEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Tsuuka);
-							//’Ê‰ß‚Ìê‡A”Ôü•\¦‚ª‚È‚¢‚Ì‚ÅAå–{ü‚ğİ’è‚µ‚Ä‚¨‚­B
+							//é€šéã®å ´åˆã€ç•ªç·šè¡¨ç¤ºãŒãªã„ã®ã§ã€ä¸»æœ¬ç·šã‚’è¨­å®šã—ã¦ãŠãã€‚
 							aCentDedEkiJikoku.setRessyaTrackIndex(MainTrackNobori[contDigitalContent2[idx].iEkiIndex]);
 						}
 						else if (contRessya4[idxn][idx].empty())
@@ -2506,7 +2506,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 						{
 							aCentDedEkiJikoku.setEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Teisya);
 							aCentDedEkiJikoku.setHatsujikoku(CdDedJikoku(contRessya4[idxn][idx]));
-							//”Ôü•\¦‚ª‚ ‚é‰Â”\‚ğl—¶‚µA”Ôü‚ª0–¢–(–¢İ’è)‚È‚çå–{ü‚ğİ’è‚µ‚Ä‚¨‚­B
+							//ç•ªç·šè¡¨ç¤ºãŒã‚ã‚‹å¯èƒ½ã‚’è€ƒæ…®ã—ã€ç•ªç·šãŒ0æœªæº€(æœªè¨­å®š)ãªã‚‰ä¸»æœ¬ç·šã‚’è¨­å®šã—ã¦ãŠãã€‚
 							if (aCentDedEkiJikoku.getRessyaTrackIndex() < 0)
 							{
 								aCentDedEkiJikoku.setRessyaTrackIndex(MainTrackNobori[contDigitalContent2[idx].iEkiIndex]);
@@ -2519,8 +2519,8 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 
 				if (bIsSyubetsuChange)
 				{
-					//bIsSyubetsuChange‚È‚çˆê‚Â‘O‚Ì—ñ‚Ì—ñÔ‚ğŒÄ‚Ño‚µA‚»‚Ì—ñÔ‚ÌI’…‰w‚Æ‚±‚Ì—ñÔ‚Ìn”­‰w‚ª“¯ˆê‚È‚çA
-					//í•Ê‚ğŠm”F‚µAí•Ê‚ª“¯‚¶‚È‚ç—ñÔî•ñ•ÏXAˆÙ‚È‚é‚È‚çí•Ê•ÏX‚ğ‘O‚Ì—ñÔ‚Éİ’è‚·‚éB
+					//bIsSyubetsuChangeãªã‚‰ä¸€ã¤å‰ã®åˆ—ã®åˆ—è»Šã‚’å‘¼ã³å‡ºã—ã€ãã®åˆ—è»Šã®çµ‚ç€é§…ã¨ã“ã®åˆ—è»Šã®å§‹ç™ºé§…ãŒåŒä¸€ãªã‚‰ã€
+					//ç¨®åˆ¥ã‚’ç¢ºèªã—ã€ç¨®åˆ¥ãŒåŒã˜ãªã‚‰åˆ—è»Šæƒ…å ±å¤‰æ›´ã€ç•°ãªã‚‹ãªã‚‰ç¨®åˆ¥å¤‰æ›´ã‚’å‰ã®åˆ—è»Šã«è¨­å®šã™ã‚‹ã€‚
 					CentDedRessya* pCentDedRessyaBefore = aCentDedRessyaCont2Nobori.getMuPtr()->get(idxn - 1);
 					if (aCentDedRessya.getValidSihatsuEki() == pCentDedRessyaBefore->getValidSyuuchakuEki())
 					{
@@ -2550,7 +2550,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 				if (iNoboriOuterShihatsuRow >= 0 && !contRessya4[idxn][iNoboriOuterShihatsuRow].empty())
 				{
 					tstring strEkimei = contRessya4[idxn][iNoboriOuterShihatsuRow];
-					if (strEkimei == _T("ŠÂó‰^“]"))
+					if (strEkimei == _T("ç’°çŠ¶é‹è»¢"))
 					{
 						int iShuchakuEkiOrder = aCentDedRessya.getSyuuchakuEki();
 						if (iShuchakuEkiOrder >= 0)
@@ -2611,7 +2611,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 				if (iNoboriOuterShuchakuRow >= 0 && !contRessya4[idxn][iNoboriOuterShuchakuRow].empty())
 				{
 					tstring strEkimei = contRessya4[idxn][iNoboriOuterShuchakuRow];
-					if (strEkimei == _T("ŠÂó‰^“]"))
+					if (strEkimei == _T("ç’°çŠ¶é‹è»¢"))
 					{
 						int iShuchakuEkiOrder = aCentDedRessya.getSyuuchakuEki();
 						if (iShuchakuEkiOrder >= 0)
@@ -2655,7 +2655,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 							}
 
 							CentDedEkiJikoku aCentDedEkiJikoku = aCentDedRessya.getCentDedEkiJikoku(iShuchakuEkiOrder);
-							//’…‚ª‚È‚¢ê‡‚ğl—¶‚µA’…‚ªNULL‚Ìê‡‚ÍA”­‚ğ’…‚ÉƒRƒs[‚·‚éB
+							//ç€æ™‚åˆ»ãŒãªã„å ´åˆã‚’è€ƒæ…®ã—ã€ç€æ™‚åˆ»ãŒNULLã®å ´åˆã¯ã€ç™ºæ™‚åˆ»ã‚’ç€æ™‚åˆ»ã«ã‚³ãƒ”ãƒ¼ã™ã‚‹ã€‚
 							if (aCentDedEkiJikoku.getChakujikoku().isNull())
 							{
 								aCentDedEkiJikoku.setChakujikoku(aCentDedEkiJikoku.getHatsujikoku());
@@ -2678,7 +2678,7 @@ int CconvCDedRosenFileDataDigital2::CDedRosenFileData_from_string(
 
 
 
-				//ˆê‚Â‘O‚Ì‰w‚Ì‰wŒ`®‚ğ’…‚ ‚è‚É•ÏX‚³‚¹‚é
+				//ä¸€ã¤å‰ã®é§…ã®é§…æ™‚åˆ»å½¢å¼ã‚’ç€ã‚ã‚Šã«å¤‰æ›´ã•ã›ã‚‹
 				for (int idxe = 0; idxe < iEkiIndexAddChakuNobori.size(); idxe++)
 				{
 					if (iEkiIndexAddChakuNobori[idxe])
@@ -2754,22 +2754,22 @@ void DedRosenFileData::CconvCDedRosenFileDataDigital2::ReadDigital(
 		tstring::size_type posTdEnd = strTr.find(_T("/td>"));
 		tstring strTd = strTr.substr(posTd, posTdEnd - posTd + 4);
 		strTr = strTr.substr(posTdEnd + 4);
-		//ˆê‚Â–Ú‚ÌstrTd‚Ís‚Ì€–Ú–¼u—ñÔ”Ô†v‚È‚Ç
+		//ä¸€ã¤ç›®ã®strTdã¯è¡Œã®é …ç›®åã€Œåˆ—è»Šç•ªå·ã€ãªã©
 		if (strTd.find(_T("display: none")) != tstring::npos)
 		{
-			//display: none‚ªŠÜ‚Ü‚ê‚éTrs‚ÍA‘O‚Ìs‚ª—ñÔ–¼‚Ìê‡‚Í—ñÔ†”A‚»‚êˆÈŠO‚Ìê‡‚Í’…”­—¼•û‚Ì‚ª‚ ‚é‰w‚Ì”­—“
-			if (strBeforeTh1 == _T("—ñÔ–¼"))
+			//display: noneãŒå«ã¾ã‚Œã‚‹Trè¡Œã¯ã€å‰ã®è¡ŒãŒåˆ—è»Šåã®å ´åˆã¯åˆ—è»Šå·æ•°ã€ãã‚Œä»¥å¤–ã®å ´åˆã¯ç€ç™ºä¸¡æ–¹ã®æ™‚åˆ»ãŒã‚ã‚‹é§…ã®ç™ºæ™‚åˆ»æ¬„
+			if (strBeforeTh1 == _T("åˆ—è»Šå"))
 			{
 				if (contDigitalContent.size() <= iTrIndex)
 				{
 					DigitalContent sDigitalContent;
-					strBeforeTh1= _T("†”");
+					strBeforeTh1= _T("å·æ•°");
 					sDigitalContent.strTh1 = strBeforeTh1;
 					contDigitalContent.push_back(sDigitalContent);
 				}
 				else
 				{
-					strBeforeTh1 = _T("†”");
+					strBeforeTh1 = _T("å·æ•°");
 					contDigitalContent[iTrIndex].strTh1 = strBeforeTh1;
 				}
 			}
@@ -2804,7 +2804,7 @@ void DedRosenFileData::CconvCDedRosenFileDataDigital2::ReadDigital(
 		posTdEnd = strTr.find(_T("/td>"));
 		strTd = strTr.substr(posTd, posTdEnd - posTd + 4);
 		strTr = strTr.substr(posTdEnd + 4);
-		//“ñ‚Â–Ú‚ÌstrTd‚Í‰w‚Ì”­E’…
+		//äºŒã¤ç›®ã®strTdã¯é§…æ™‚åˆ»ã®ç™ºãƒ»ç€
 		if (contDigitalContent.size() <= iTrIndex)
 		{
 			DigitalContent sDigitalContent;
@@ -2827,14 +2827,14 @@ void DedRosenFileData::CconvCDedRosenFileDataDigital2::ReadDigital(
 			posTd = strTr.find(_T("<td"));
 			posTdEnd = strTr.find(_T("/td>"));
 
-			//station-name‚ªŠÜ‚Ü‚ê‚Ä‚¢‚éê‡‚ÍA˜HüŠO”­’…B
+			//station-nameãŒå«ã¾ã‚Œã¦ã„ã‚‹å ´åˆã¯ã€è·¯ç·šå¤–ç™ºç€ã€‚
 			tstring::size_type pos2 = strTd.find(_T("station-name"));
 			if (pos2 != tstring::npos)
 			{
-				tstring strTemp = TrimTag(strTd);//‰w–¼
+				tstring strTemp = TrimTag(strTd);//é§…å
 
-				pos2 = strTd.find(_T("<div class=\"departure-time"));
-				strTemp+= TrimTag(strTd.substr(pos2));//
+				pos2 = strTd.find(_T("<div class=Â¥"departure-time"));
+				strTemp+= TrimTag(strTd.substr(pos2));//æ™‚åˆ»
 
 				if (contRessya.size() <= iTdIndex)
 				{
@@ -2861,7 +2861,7 @@ void DedRosenFileData::CconvCDedRosenFileDataDigital2::ReadDigital(
 	}
 
 
-	//‚±‚±‚©‚çA˜Hü‚²‚Æ‚ÌŒÂ•Êæ‚èˆµ‚¢
+	//ã“ã“ã‹ã‚‰ã€è·¯ç·šã”ã¨ã®å€‹åˆ¥å–ã‚Šæ‰±ã„
 	//if (iIndividualHandling == 1)
 	//{
 	//}

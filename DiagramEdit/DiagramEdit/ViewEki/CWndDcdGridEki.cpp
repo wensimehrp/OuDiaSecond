@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍAtake-okm‚ªì¬‚µ‚½OuDia‚ğ‰ü‘¢‚µ‚½ƒ\ƒtƒgƒEƒFƒA‚Å‚·B
-‚±‚ÌƒvƒƒOƒ‰ƒ€—˜—p‚É‚Â‚¢‚Ä‚ÍAtake-okm‹LÚ‚Ì‰º‹L•¶‘‚É€‹’‚µ‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã€take-okmæ°ãŒä½œæˆã—ãŸOuDiaã‚’æ”¹é€ ã—ãŸã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ åˆ©ç”¨ã«ã¤ã„ã¦ã¯ã€take-okmæ°è¨˜è¼‰ã®ä¸‹è¨˜æ–‡æ›¸ã«æº–æ‹ ã—ã¾ã™ã€‚
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(–ó: 
+(è¨³: 
 
-	OuDia - —ñÔ•\‚ğ‚à‚Æ‚ÉAƒ_ƒCƒ„ƒOƒ‰ƒ€‚ğ•`‰æ‚·‚éWin32ƒAƒvƒŠƒP[ƒV
-ƒ‡ƒ“B
+	OuDia - åˆ—è»Šæ™‚åˆ»è¡¨ã‚’ã‚‚ã¨ã«ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚’æç”»ã™ã‚‹Win32ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·
+ãƒ§ãƒ³ã€‚
 
 Copyright (C) 2006-2017 take-okm 
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍƒtƒŠ[ƒ\ƒtƒgƒEƒFƒA‚Å‚·B‚ ‚È‚½‚Í‚±‚ê‚ğAƒtƒŠ[ƒ\ƒtƒgƒEƒFƒAà
-’c‚É‚æ‚Á‚Ä”­s‚³‚ê‚½GNU ˆê”ÊŒöO—˜—p‹–‘ø‘(ƒo[ƒWƒ‡ƒ“3‚©A‚»‚êˆÈ~‚Ìƒo[ƒWƒ‡
-ƒ“‚Ì‚¤‚¿‚Ç‚ê‚©)‚ª’è‚ß‚éğŒ‚Ì‰º‚ÅÄ”Ğ•z‚Ü‚½‚Í‰ü•Ï ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚ã‚ãªãŸã¯ã“ã‚Œã‚’ã€ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢è²¡
+å›£ã«ã‚ˆã£ã¦ç™ºè¡Œã•ã‚ŒãŸGNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸(ãƒãƒ¼ã‚¸ãƒ§ãƒ³3ã‹ã€ãã‚Œä»¥é™ã®ãƒãƒ¼ã‚¸ãƒ§
+ãƒ³ã®ã†ã¡ã©ã‚Œã‹)ãŒå®šã‚ã‚‹æ¡ä»¶ã®ä¸‹ã§å†é ’å¸ƒã¾ãŸã¯æ”¹å¤‰ ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚Í—L—p‚Å‚ ‚é‚±‚Æ‚ğŠè‚Á‚Ä”Ğ•z‚³‚ê‚Ü‚·‚ªA*‘S‚­‚Ì–³•ÛØ *‚Å‚·B
-¤‹Æ‰Â”\«‚Ì•ÛØ‚â“Á’è–Ú“I‚Ö‚Ì“K‡«‚ÍAŒ¾ŠO‚É¦‚³‚ê‚½‚à‚Ì‚à ŠÜ‚ßA‘S‚­‘¶İ
-‚µ‚Ü‚¹‚ñBÚ‚µ‚­‚ÍGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ğ‚²——‚­‚¾‚³‚¢B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯æœ‰ç”¨ã§ã‚ã‚‹ã“ã¨ã‚’é¡˜ã£ã¦é ’å¸ƒã•ã‚Œã¾ã™ãŒã€*å…¨ãã®ç„¡ä¿è¨¼ *ã§ã™ã€‚
+å•†æ¥­å¯èƒ½æ€§ã®ä¿è¨¼ã‚„ç‰¹å®šç›®çš„ã¸ã®é©åˆæ€§ã¯ã€è¨€å¤–ã«ç¤ºã•ã‚ŒãŸã‚‚ã®ã‚‚ å«ã‚ã€å…¨ãå­˜åœ¨
+ã—ã¾ã›ã‚“ã€‚è©³ã—ãã¯GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã‚’ã”è¦§ãã ã•ã„ã€‚
 
-‚ ‚È‚½‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚Æ‹¤‚ÉAGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ÌƒRƒs[‚ğˆê•” ó‚¯æ‚Á
-‚Ä‚¢‚é‚Í‚¸‚Å‚·B‚à‚µó‚¯æ‚Á‚Ä‚¢‚È‚¯‚ê‚ÎA<http://www.gnu.org/licenses/> ‚ğ
-‚²——‚­‚¾‚³‚¢B
+ã‚ãªãŸã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¨å…±ã«ã€GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã®ã‚³ãƒ”ãƒ¼ã‚’ä¸€éƒ¨ å—ã‘å–ã£
+ã¦ã„ã‚‹ã¯ãšã§ã™ã€‚ã‚‚ã—å—ã‘å–ã£ã¦ã„ãªã‘ã‚Œã°ã€<http://www.gnu.org/licenses/> ã‚’
+ã”è¦§ãã ã•ã„ã€‚
 
 )
 
-  ‰Á‚¦‚ÄA“Á•Ê‚È—áŠO‚Æ‚µ‚ÄAtake-okm ‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÌƒR[ƒh‚ğ 
+  åŠ ãˆã¦ã€ç‰¹åˆ¥ãªä¾‹å¤–ã¨ã—ã¦ã€take-okm ã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ã‚³ãƒ¼ãƒ‰ã‚’ 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ‚ ‚é‚¢‚Í "MFC Version 9.0" ‚Æ“¯‚¶ƒ‰ƒCƒZƒ“ƒX‚ª“K—p‚³‚ê‚½
-  "MFC Version 9.0" ‚Ì‰ü•Ï‚³‚ê‚½ƒo[ƒWƒ‡ƒ“)‚ÆƒŠƒ“ƒN‚µA
-  ƒŠƒ“ƒN‚³‚ê‚½—¼Ò‚ğŠÜ‚ŞŒ‹‡’˜ì•¨‚ğ”Ğ•z‚·‚é‹–‰Â‚ğ—^‚¦‚Ü‚·B
-  ‚ ‚È‚½‚Í "MFC" ˆÈŠO‚Åg‚í‚ê‚Ä‚¢‚é‚·‚×‚Ä
-  ‚ÌƒR[ƒh‚ÉŠÖ‚µ‚Ä‚Í‘S–Ê“I‚ÉGNUˆê”ÊŒöO—˜—p‹–‘øŒ_–ñ‘‚É]‚í‚È‚¯‚ê‚Î
-  ‚È‚è‚Ü‚¹‚ñB‚ ‚È‚½‚ª‚±‚Ìƒtƒ@ƒCƒ‹‚ğ‰ü•Ï‚µ‚½‚È‚ç‚ÎA‚ ‚È‚½‚Í‚±‚Ì—áŠO
-  ‚ğ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚Ìƒtƒ@ƒCƒ‹‚Éˆø‚«‘±‚«İ‚¯‚é‚±‚Æ‚à‚Å‚«‚Ü‚·‚ªA‚»
-  ‚¤‚·‚é‹`–±‚Í‚ ‚è‚Ü‚¹‚ñB‚à‚µ—áŠO‚ğİ‚¯‚½‚­‚È‚¯‚ê‚ÎA‚±‚Ì—áŠOğ€‚ğ
-  ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚©‚ç‚Ííœ‚µ‚Ä‚­‚¾‚³‚¢B)
+  (  ã‚ã‚‹ã„ã¯ "MFC Version 9.0" ã¨åŒã˜ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ãŒé©ç”¨ã•ã‚ŒãŸ
+  "MFC Version 9.0" ã®æ”¹å¤‰ã•ã‚ŒãŸãƒãƒ¼ã‚¸ãƒ§ãƒ³)ã¨ãƒªãƒ³ã‚¯ã—ã€
+  ãƒªãƒ³ã‚¯ã•ã‚ŒãŸä¸¡è€…ã‚’å«ã‚€çµåˆè‘—ä½œç‰©ã‚’é ’å¸ƒã™ã‚‹è¨±å¯ã‚’ä¸ãˆã¾ã™ã€‚
+  ã‚ãªãŸã¯ "MFC" ä»¥å¤–ã§ä½¿ã‚ã‚Œã¦ã„ã‚‹ã™ã¹ã¦
+  ã®ã‚³ãƒ¼ãƒ‰ã«é–¢ã—ã¦ã¯å…¨é¢çš„ã«GNUä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾å¥‘ç´„æ›¸ã«å¾“ã‚ãªã‘ã‚Œã°
+  ãªã‚Šã¾ã›ã‚“ã€‚ã‚ãªãŸãŒã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ”¹å¤‰ã—ãŸãªã‚‰ã°ã€ã‚ãªãŸã¯ã“ã®ä¾‹å¤–
+  ã‚’ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®ãƒ•ã‚¡ã‚¤ãƒ«ã«å¼•ãç¶šãè¨­ã‘ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ãŒã€ã
+  ã†ã™ã‚‹ç¾©å‹™ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ã‚‚ã—ä¾‹å¤–ã‚’è¨­ã‘ãŸããªã‘ã‚Œã°ã€ã“ã®ä¾‹å¤–æ¡é …ã‚’
+  ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‹ã‚‰ã¯å‰Šé™¤ã—ã¦ãã ã•ã„ã€‚)
 */
 /*
 // ****************************************************************
@@ -76,31 +76,31 @@ Copyright (C) 2006-2017 take-okm
 */
 #include "stdafx.h"
 
-#include "..\resource.h"
+#include "..Â¥resource.h"
 
 #include "DcDraw/CDcdTargetGetDC.h"
 #include "logmsg/LogMsg.h"
 #include "NsOu/OuNew.h"
 #include "NsOu/dynamic_castOu.h"
 
-#include "DcdCd\DcDrawProp\CdFontProp.h"
-#include "DcDraw\CDcdTarget.h"
-#include "DcDraw\CDcDeviceUnitSizeX.h"
-#include "DcDraw\CDcDeviceUnitSizeY.h"
-#include "DcDraw\CDcdText.h"
-#include "DcDraw\CaDcdTargetItemPosition.h"
-#include "DcDraw\CDcdLine.h"
-#include "DcDraw\CDcdTargetGetDC.h"
-#include "DcDraw\CConverter_Wingdi.h"
+#include "DcdCdÂ¥DcDrawPropÂ¥CdFontProp.h"
+#include "DcDrawÂ¥CDcdTarget.h"
+#include "DcDrawÂ¥CDcDeviceUnitSizeX.h"
+#include "DcDrawÂ¥CDcDeviceUnitSizeY.h"
+#include "DcDrawÂ¥CDcdText.h"
+#include "DcDrawÂ¥CaDcdTargetItemPosition.h"
+#include "DcDrawÂ¥CDcdLine.h"
+#include "DcDrawÂ¥CDcdTargetGetDC.h"
+#include "DcDrawÂ¥CConverter_Wingdi.h"
 
-#include "..\entDed\CentDedRosen.h"
-#include "..\DiagramEdit.h"
-#include "..\CRfEditCmdHolder.h"
-#include "..\DedRosenFileData\EditCmd\EditCmd.h"
+#include "..Â¥entDedÂ¥CentDedRosen.h"
+#include "..Â¥DiagramEdit.h"
+#include "..Â¥CRfEditCmdHolder.h"
+#include "..Â¥DedRosenFileDataÂ¥EditCmdÂ¥EditCmd.h"
 #include "CDlgEkiProp.h"
 #include "CDlgCrossingCheckRule.h"
 #include "CWndDcdGridEki.h"
-#include <NsMu\CaMui.h>
+#include <NsMuÂ¥CaMui.h>
 
 
 #ifdef _DEBUG
@@ -109,7 +109,7 @@ Copyright (C) 2006-2017 take-okm
 static char THIS_FILE[] = __FILE__;
 #endif
 
-/** ”z—ñ a ‚Ì—v‘f”‚ğ•Ô‚µ‚Ü‚·B */
+/** é…åˆ— a ã®è¦ç´ æ•°ã‚’è¿”ã—ã¾ã™ã€‚ */
 #define arrayof(a) (sizeof(a)/sizeof(a[0]))
 
 
@@ -122,7 +122,7 @@ using namespace std ;
 //	CWndDcdGridEki
 // ****************************************************************
 // --------------------------------
-//@name ‰º¿ŠÖ”
+//@name ä¸‹è«‹é–¢æ•°
 // --------------------------------
 	
 CDcdTextbox	CWndDcdGridEki::getCDcdEkiIndex()const
@@ -133,15 +133,15 @@ CDcdTextbox	CWndDcdGridEki::getCDcdEkiIndex()const
 	CdFontProp aCdFontProp(9, _T("Meiryo UI"));
 	return CDcdTextbox(_T(""),
 		aCdFontProp,
-		_T("‹“s"), 1, 2, 2, CdPenProp(),
+		_T("äº¬éƒ½"), 1, 2, 2, CdPenProp(),
 		CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH));
 };
 
 CDcdTextbox	CWndDcdGridEki::getCDcdEkimei()const
 {
 	tstring strExtent = getCDiagramEditDoc()->getCDedRosenFileData()->getCdDedDispProp().createEkimeiExtentString() ;
-	//strExtent = ˜Hüƒtƒ@ƒCƒ‹ƒf[ƒ^‚É•Û‘¶‚³‚ê‚Ä‚¢‚é’l‚ğ‚à‚Æ‚É‚µ‚ÄA
-	//	ì¬‚µ‚½A•¶š—ñ•‚ÌŠî€•¶š—ñ‚Å‚·B
+	//strExtent = è·¯ç·šãƒ•ã‚¡ã‚¤ãƒ«ãƒ‡ãƒ¼ã‚¿ã«ä¿å­˜ã•ã‚Œã¦ã„ã‚‹å€¤ã‚’ã‚‚ã¨ã«ã—ã¦ã€
+	//	ä½œæˆã—ãŸã€æ–‡å­—åˆ—å¹…ã®åŸºæº–æ–‡å­—åˆ—ã§ã™ã€‚
 
 	//CdFontProp aCdFontProp( getCDiagramEditDoc()->getCDedRosenFileData()->
 	//	getCdDedDispProp().getJikokuhyouFont() ) ;
@@ -161,7 +161,7 @@ CDcdTextbox	CWndDcdGridEki::getCDcdEkijikokukeisiki()const
 	CdFontProp aCdFontProp(9, _T("Meiryo UI"));
 	return CDcdTextbox(_T("") ,
 		aCdFontProp ,
-		_T("‹“s‹“s‹“s") , 1 , 2 , 2 , CdPenProp() ,
+		_T("äº¬éƒ½äº¬éƒ½äº¬éƒ½") , 1 , 2 , 2 , CdPenProp() ,
 		CConverter_WinGdi().CdBrushPropOf( WHITE_BRUSH ) ) ;
 };
 	
@@ -173,7 +173,7 @@ CDcdTextbox	CWndDcdGridEki::getCDcdEkikibo()const
 	CdFontProp aCdFontProp(9, _T("Meiryo UI"));
 	return CDcdTextbox(_T("") ,
 		aCdFontProp ,
-		_T("‹“s‹“s‹“s") , 1 , 2 , 2 , CdPenProp() ,
+		_T("äº¬éƒ½äº¬éƒ½äº¬éƒ½") , 1 , 2 , 2 , CdPenProp() ,
 		CConverter_WinGdi().CdBrushPropOf( WHITE_BRUSH ) ) ;
 };
 
@@ -185,7 +185,7 @@ CDcdTextbox	CWndDcdGridEki::getCDcdEkiTrack2Count()const
 	CdFontProp aCdFontProp(9, _T("Meiryo UI"));
 	return CDcdTextbox(_T(""),
 		aCdFontProp,
-		_T("‹“s‹"), 1, 2, 2, CdPenProp(),
+		_T("äº¬éƒ½äº¬"), 1, 2, 2, CdPenProp(),
 		CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH));
 };
 
@@ -197,7 +197,7 @@ CDcdTextbox	CWndDcdGridEki::getCDcdBrunchLoop()const
 	CdFontProp aCdFontProp(9, _T("Meiryo UI"));
 	return CDcdTextbox(_T(""),
 		aCdFontProp,
-		_T("‹“s‹“s‹“s‹“s"), 1, 2, 2, CdPenProp(),
+		_T("äº¬éƒ½äº¬éƒ½äº¬éƒ½äº¬éƒ½"), 1, 2, 2, CdPenProp(),
 		CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH));
 };
 	
@@ -255,15 +255,15 @@ createCmd( ECreateCmd eCreateCmd , Ou<DedRosenFileData::EditCmd::CRfEditCmd_Eki>
 
 	// ********************************
 	//	ECreateCmd_NewItem
-	//@V‹KƒAƒCƒeƒ€‚ğ‘ÎÛ‚Æ‚µ‚½ƒRƒ}ƒ“ƒh‚ğ¶¬‚µ‚Ü‚·B
+	//ã€€æ–°è¦ã‚¢ã‚¤ãƒ†ãƒ ã‚’å¯¾è±¡ã¨ã—ãŸã‚³ãƒãƒ³ãƒ‰ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 	// ********************************
 	if ( eCreateCmd == ECreateCmd_NewItem )
 	{
-		//ƒrƒ…[ã‚Å•¡”‘I‘ğ‚ªOFF
+		//ãƒ“ãƒ¥ãƒ¼ä¸Šã§è¤‡æ•°é¸æŠãŒOFF
 		if ( getCSelect()->getSelectedCellCount() == 0 )
 		{
-			//	V‹KƒAƒCƒeƒ€‚ÌA‰ŠúƒIƒuƒWƒFƒNƒg
-			//	‰wIndex‚ª0‚Ìê‡‚ÍA‰wŒ`®‚ğuã‚è’…v‚Æ‚µ‚Ü‚·B
+			//	æ–°è¦ã‚¢ã‚¤ãƒ†ãƒ ã®ã€åˆæœŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+			//	é§…IndexãŒ0ã®å ´åˆã¯ã€é§…æ™‚åˆ»å½¢å¼ã‚’ã€Œä¸Šã‚Šç€æ™‚åˆ»ã€ã¨ã—ã¾ã™ã€‚
 			CentDedEki aNewEki ;
 			if ( aCdYColSpecOfFocus.getEkiIndex() == 0 )
 			{
@@ -271,11 +271,11 @@ createCmd( ECreateCmd eCreateCmd , Ou<DedRosenFileData::EditCmd::CRfEditCmd_Eki>
 			}
 
 
-			//	ƒrƒ…[ã‚Å•¡”‘I‘ğ‚ªOFFEƒtƒH[ƒJƒXƒZƒ‹‚ªŠù‘¶ƒAƒCƒeƒ€ã‚É‚ ‚éê‡: 
+			//	ãƒ“ãƒ¥ãƒ¼ä¸Šã§è¤‡æ•°é¸æŠãŒOFFãƒ»ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒæ—¢å­˜ã‚¢ã‚¤ãƒ†ãƒ ä¸Šã«ã‚ã‚‹å ´åˆ: 
 			//
-			//- m_iDiaIndex = ƒtƒH[ƒJƒXƒZƒ‹‚ÌƒAƒCƒeƒ€IndexAm_iIndexSize = 0
-			//- m_CentDedEkiCont = V‹Kì¬‚ÌƒAƒCƒeƒ€‚ÌŠù’è’l
-			//- CaMuiSelect = “–ŠYƒAƒCƒeƒ€‚ğ‘I‘ğB
+			//- m_iDiaIndex = ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ã‚¢ã‚¤ãƒ†ãƒ Indexã€m_iIndexSize = 0
+			//- m_CentDedEkiCont = æ–°è¦ä½œæˆæ™‚ã®ã‚¢ã‚¤ãƒ†ãƒ ã®æ—¢å®šå€¤
+			//- CaMuiSelect = å½“è©²ã‚¢ã‚¤ãƒ†ãƒ ã‚’é¸æŠã€‚
 			if ( aCdYColSpecOfFocus.getColumnType() == CdEkiYColSpec::ColumnType_Eki )
 			{
 				bRv = true ;
@@ -291,10 +291,10 @@ createCmd( ECreateCmd eCreateCmd , Ou<DedRosenFileData::EditCmd::CRfEditCmd_Eki>
 				}
 			}
 
-			//@ƒrƒ…[ã‚Å•¡”‘I‘ğ‚ªOFFEƒtƒH[ƒJƒXƒZƒ‹‚ªV‹KƒAƒCƒeƒ€ˆÊ’u‚É‚ ‚éê‡:
-			//- m_iDiaIndex = ––”öƒAƒCƒeƒ€Index+1Am_iIndexSize = 0
-			//- m_CentDedEkiCont = V‹Kì¬‚ÌƒAƒCƒeƒ€‚ÌŠù’è’l
-			//- CaMuiSelect = “–ŠYƒAƒCƒeƒ€‚ğ‘I‘ğB
+			//ã€€ãƒ“ãƒ¥ãƒ¼ä¸Šã§è¤‡æ•°é¸æŠãŒOFFãƒ»ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒæ–°è¦ã‚¢ã‚¤ãƒ†ãƒ ä½ç½®ã«ã‚ã‚‹å ´åˆ:
+			//- m_iDiaIndex = æœ«å°¾ã‚¢ã‚¤ãƒ†ãƒ Index+1ã€m_iIndexSize = 0
+			//- m_CentDedEkiCont = æ–°è¦ä½œæˆæ™‚ã®ã‚¢ã‚¤ãƒ†ãƒ ã®æ—¢å®šå€¤
+			//- CaMuiSelect = å½“è©²ã‚¢ã‚¤ãƒ†ãƒ ã‚’é¸æŠã€‚
 			else if ( aCdYColSpecOfFocus.getColumnType() == CdEkiYColSpec::ColumnType_NewEki )
 			{
 				bRv = true ;
@@ -310,23 +310,23 @@ createCmd( ECreateCmd eCreateCmd , Ou<DedRosenFileData::EditCmd::CRfEditCmd_Eki>
 				}
 			}
 		}
-		// @ƒrƒ…[ã‚Å•¡”‘I‘ğON:
-		//	 - NULL‚ğ•Ô‚µ‚Ü‚·([14/05/18]‹Œ:•¡”‘I‘ğOFF‚Ìê‡‚Æ“¯‚¶“®ì)
+		// ã€€ãƒ“ãƒ¥ãƒ¼ä¸Šã§è¤‡æ•°é¸æŠON:
+		//	 - NULLã‚’è¿”ã—ã¾ã™([14/05/18]æ—§:è¤‡æ•°é¸æŠOFFã®å ´åˆã¨åŒã˜å‹•ä½œ)
 
 	}
 	// ********************************
 	//	ECreateCmd_Focus
-	//@ƒtƒH[ƒJƒXƒZƒ‹ã‚Ì1—ñÔ‚ğ‘ÎÛ‚Æ‚µ‚½ƒRƒ}ƒ“ƒh‚ğ¶¬‚µ‚Ü‚·B
+	//ã€€ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ä¸Šã®1åˆ—è»Šã‚’å¯¾è±¡ã¨ã—ãŸã‚³ãƒãƒ³ãƒ‰ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 	// ********************************
 	if ( eCreateCmd == ECreateCmd_Focus )
 	{
-		//ƒrƒ…[ã‚Å•¡”‘I‘ğ‚ªOFF
+		//ãƒ“ãƒ¥ãƒ¼ä¸Šã§è¤‡æ•°é¸æŠãŒOFF
 		if ( getCSelect()->getSelectedCellCount() == 0 )
 		{
-			//ƒrƒ…[ã‚Å•¡”‘I‘ğ‚ªOFFEƒtƒH[ƒJƒXƒZƒ‹‚ªŠù‘¶ƒAƒCƒeƒ€ã‚É‚ ‚éê‡: 
-			//- m_iDiaIndex = ƒtƒH[ƒJƒXƒZƒ‹‚ÌƒAƒCƒeƒ€IndexAm_iIndexSize = 1
-			//- m_CentDedRessyaCont = ƒtƒH[ƒJƒXƒZƒ‹ã‚ÌƒAƒCƒeƒ€1ŒÂ‚ÌƒRƒs[
-			//- m_CaMuiSelect = ƒtƒH[ƒJƒXƒZƒ‹ã‚ÌƒAƒCƒeƒ€‚ğ‘I‘ğB
+			//ãƒ“ãƒ¥ãƒ¼ä¸Šã§è¤‡æ•°é¸æŠãŒOFFãƒ»ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒæ—¢å­˜ã‚¢ã‚¤ãƒ†ãƒ ä¸Šã«ã‚ã‚‹å ´åˆ: 
+			//- m_iDiaIndex = ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ã‚¢ã‚¤ãƒ†ãƒ Indexã€m_iIndexSize = 1
+			//- m_CentDedRessyaCont = ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ä¸Šã®ã‚¢ã‚¤ãƒ†ãƒ 1å€‹ã®ã‚³ãƒ”ãƒ¼
+			//- m_CaMuiSelect = ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ä¸Šã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’é¸æŠã€‚
 			if ( aCdYColSpecOfFocus.getColumnType() == CdEkiYColSpec::ColumnType_Eki )
 			{
 				bRv = true ;
@@ -341,24 +341,24 @@ createCmd( ECreateCmd eCreateCmd , Ou<DedRosenFileData::EditCmd::CRfEditCmd_Eki>
 				}
 			}
 
-			//ƒrƒ…[ã‚Å•¡”‘I‘ğ‚ªOFFEƒtƒH[ƒJƒXƒZƒ‹‚ªV‹KƒAƒCƒeƒ€ˆÊ’u‚É‚ ‚éê‡: 
-			//- NULL‚ğ•Ô‚µ‚Ü‚·B
+			//ãƒ“ãƒ¥ãƒ¼ä¸Šã§è¤‡æ•°é¸æŠãŒOFFãƒ»ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒæ–°è¦ã‚¢ã‚¤ãƒ†ãƒ ä½ç½®ã«ã‚ã‚‹å ´åˆ: 
+			//- NULLã‚’è¿”ã—ã¾ã™ã€‚
 		}
-		//ƒrƒ…[ã‚Å•¡”‘I‘ğON
-		// - NULL‚ğ•Ô‚µ‚Ü‚·([14/05/18]‹Œ:•¡”‘I‘ğOFF‚Ìê‡‚Æ“¯‚¶“®ì)
+		//ãƒ“ãƒ¥ãƒ¼ä¸Šã§è¤‡æ•°é¸æŠON
+		// - NULLã‚’è¿”ã—ã¾ã™([14/05/18]æ—§:è¤‡æ•°é¸æŠOFFã®å ´åˆã¨åŒã˜å‹•ä½œ)
 
 	}
 	// ********************************
 	//	ECreateCmd_Sequence
-	//@Šù‘¶‚Ì’P”‚Ü‚½‚Í˜A‘±‚µ‚Ä•¡”‘I‘ğ‚³‚ê‚Ä‚¢‚éƒAƒCƒeƒ€‚ğ‘ÎÛ‚Æ‚µ‚½
-	//	ƒRƒ}ƒ“ƒh‚ğ¶¬‚µ‚Ü‚·B
+	//ã€€æ—¢å­˜ã®å˜æ•°ã¾ãŸã¯é€£ç¶šã—ã¦è¤‡æ•°é¸æŠã•ã‚Œã¦ã„ã‚‹ã‚¢ã‚¤ãƒ†ãƒ ã‚’å¯¾è±¡ã¨ã—ãŸ
+	//	ã‚³ãƒãƒ³ãƒ‰ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 	// ********************************
 	if (eCreateCmd == ECreateCmd_Sequence)
 	{
-		//	ƒrƒ…[ã‚Å•¡”‘I‘ğ‚ªOFFEƒtƒH[ƒJƒXƒZƒ‹‚ªŠù‘¶ƒAƒCƒeƒ€ã‚É‚ ‚éê‡: 
-		//- m_iDiaIndex = ƒtƒH[ƒJƒXƒZƒ‹‚ÌƒAƒCƒeƒ€IndexAm_iIndexSize = 1
-		//- m_CentDedRessyaCont = ƒtƒH[ƒJƒXƒZƒ‹‚Ì‚ ‚éƒAƒCƒeƒ€1ŒÂ‚ÌƒRƒs[
-		//- CaMuiSelect = “–ŠY—ñÔ‚ğ‘I‘ğB
+		//	ãƒ“ãƒ¥ãƒ¼ä¸Šã§è¤‡æ•°é¸æŠãŒOFFãƒ»ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒæ—¢å­˜ã‚¢ã‚¤ãƒ†ãƒ ä¸Šã«ã‚ã‚‹å ´åˆ: 
+		//- m_iDiaIndex = ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ã‚¢ã‚¤ãƒ†ãƒ Indexã€m_iIndexSize = 1
+		//- m_CentDedRessyaCont = ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ã‚ã‚‹ã‚¢ã‚¤ãƒ†ãƒ 1å€‹ã®ã‚³ãƒ”ãƒ¼
+		//- CaMuiSelect = å½“è©²åˆ—è»Šã‚’é¸æŠã€‚
 		if (getCSelect()->getSelectedCellCount() == 0
 			&& aCdYColSpecOfFocus.getColumnType() == CdEkiYColSpec::ColumnType_Eki)
 		{
@@ -374,31 +374,31 @@ createCmd( ECreateCmd eCreateCmd , Ou<DedRosenFileData::EditCmd::CRfEditCmd_Eki>
 			}
 		}
 
-		//	ƒrƒ…[ã‚Å•¡”‘I‘ğ‚ªOFFEƒtƒH[ƒJƒXƒZƒ‹‚ªV‹KƒAƒCƒeƒ€ˆÊ’u‚É‚ ‚éê‡: 
-		//- NULL‚ğ•Ô‚µ‚Ü‚·B
+		//	ãƒ“ãƒ¥ãƒ¼ä¸Šã§è¤‡æ•°é¸æŠãŒOFFãƒ»ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒæ–°è¦ã‚¢ã‚¤ãƒ†ãƒ ä½ç½®ã«ã‚ã‚‹å ´åˆ: 
+		//- NULLã‚’è¿”ã—ã¾ã™ã€‚
 
-		//	ƒrƒ…[ã‚Å•¡”‘I‘ğON
+		//	ãƒ“ãƒ¥ãƒ¼ä¸Šã§è¤‡æ•°é¸æŠON
 		//
-		//- m_iDiaIndex = ‘I‘ğ‚³‚ê‚Ä‚¢‚éƒAƒCƒeƒ€‚Ìæ“ªindex
-		//- m_iIndexSize = ‘I‘ğ‚³‚ê‚Ä‚¢‚éƒAƒCƒeƒ€‚Ì––”öindex-æ“ªindex+1
-		//- m_CentDedRessyaCont = ‘I‘ğ‚³‚ê‚Ä‚¢‚éƒAƒCƒeƒ€‚Ìæ“ªindex‚©‚ç
-		//	––”öindex‚Ü‚Å‚ÌƒAƒCƒeƒ€‚ÌƒRƒs[
-		//- CaMuiSelec = m_CentDedRessyaContB
+		//- m_iDiaIndex = é¸æŠã•ã‚Œã¦ã„ã‚‹ã‚¢ã‚¤ãƒ†ãƒ ã®å…ˆé ­index
+		//- m_iIndexSize = é¸æŠã•ã‚Œã¦ã„ã‚‹ã‚¢ã‚¤ãƒ†ãƒ ã®æœ«å°¾index-å…ˆé ­index+1
+		//- m_CentDedRessyaCont = é¸æŠã•ã‚Œã¦ã„ã‚‹ã‚¢ã‚¤ãƒ†ãƒ ã®å…ˆé ­indexã‹ã‚‰
+		//	æœ«å°¾indexã¾ã§ã®ã‚¢ã‚¤ãƒ†ãƒ ã®ã‚³ãƒ”ãƒ¼
+		//- CaMuiSelec = m_CentDedRessyaContã€‚
 		//
-		//(A)‚ÌˆÊ’u‚Åˆ—‚µ‚Ü‚·B
+		//(A)ã®ä½ç½®ã§å‡¦ç†ã—ã¾ã™ã€‚
 	}
 
 	// ********************************
 	//	ECreateCmd_Select
-	//@Šù‘¶‚Ì’P”‚Ü‚½‚Í•¡”‘I‘ğ‚³‚ê‚Ä‚¢‚é—ñÔ‚ğ‘ÎÛ‚Æ‚µ‚½
-	//	ƒRƒ}ƒ“ƒh‚ğ¶¬‚µ‚Ü‚·B
+	//ã€€æ—¢å­˜ã®å˜æ•°ã¾ãŸã¯è¤‡æ•°é¸æŠã•ã‚Œã¦ã„ã‚‹åˆ—è»Šã‚’å¯¾è±¡ã¨ã—ãŸ
+	//	ã‚³ãƒãƒ³ãƒ‰ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 	// ********************************
 	if ( eCreateCmd == ECreateCmd_Select )
 	{
-		//ƒrƒ…[ã‚Å•¡”‘I‘ğ‚ªOFFEƒtƒH[ƒJƒXƒZƒ‹‚ªŠù‘¶ƒAƒCƒeƒ€ã‚É‚ ‚éê‡: 
-		//- m_iDiaIndex = ƒtƒH[ƒJƒXƒZƒ‹‚ÌƒAƒCƒeƒ€IndexAm_iIndexSize = 1
-		//- m_CentDedRessyaCont = ƒtƒH[ƒJƒXƒZƒ‹‚Ì‚ ‚éƒAƒCƒeƒ€1ŒÂ‚ÌƒRƒs[
-		//- CaMuiSelect = “–ŠY—ñÔ‚ğ‘I‘ğB
+		//ãƒ“ãƒ¥ãƒ¼ä¸Šã§è¤‡æ•°é¸æŠãŒOFFãƒ»ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒæ—¢å­˜ã‚¢ã‚¤ãƒ†ãƒ ä¸Šã«ã‚ã‚‹å ´åˆ: 
+		//- m_iDiaIndex = ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ã‚¢ã‚¤ãƒ†ãƒ Indexã€m_iIndexSize = 1
+		//- m_CentDedRessyaCont = ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ã‚ã‚‹ã‚¢ã‚¤ãƒ†ãƒ 1å€‹ã®ã‚³ãƒ”ãƒ¼
+		//- CaMuiSelect = å½“è©²åˆ—è»Šã‚’é¸æŠã€‚
 		if ( getCSelect()->getSelectedCellCount() == 0 
 			&& aCdYColSpecOfFocus.getColumnType() == CdEkiYColSpec::ColumnType_Eki )
 		{
@@ -414,37 +414,37 @@ createCmd( ECreateCmd eCreateCmd , Ou<DedRosenFileData::EditCmd::CRfEditCmd_Eki>
 			}
 		}
 
-		//@•\ƒrƒ…[ã‚Å•¡”‘I‘ğ‚ªOFFEƒtƒH[ƒJƒXƒZƒ‹‚ªV‹K—ñÔˆÊ’u‚É‚ ‚éê‡: 
-		// - NULL‚ğ•Ô‚µ‚Ü‚·B
+		//ã€€æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ä¸Šã§è¤‡æ•°é¸æŠãŒOFFãƒ»ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒæ–°è¦åˆ—è»Šä½ç½®ã«ã‚ã‚‹å ´åˆ: 
+		// - NULLã‚’è¿”ã—ã¾ã™ã€‚
 
-		//@•\ƒrƒ…[ã‚Å•¡”‘I‘ğON
-		// - m_iDiaIndex = ‘I‘ğ‚³‚ê‚Ä‚¢‚é—ñÔ‚Ìæ“ªindex
-		// - m_iIndexSize = ‘I‘ğ‚³‚ê‚Ä‚¢‚é—ñÔ‚Ì––”öindex-æ“ªindex+1
-		// - m_CentDedRessyaCont = ‘I‘ğ‚³‚ê‚Ä‚¢‚é—ñÔ‚Ìæ“ªindex‚©‚ç
-		//  ––”öindex‚Ü‚Å‚Ì—ñÔ‚ÌƒRƒs[
-		// - CaMuiSelect ‚ÍAƒtƒH[ƒJƒXƒZƒ‹‚É‡‚í‚¹‚Ä—ñÔ‚ğ‘I‘ğB
+		//ã€€æ™‚åˆ»è¡¨ãƒ“ãƒ¥ãƒ¼ä¸Šã§è¤‡æ•°é¸æŠON
+		// - m_iDiaIndex = é¸æŠã•ã‚Œã¦ã„ã‚‹åˆ—è»Šã®å…ˆé ­index
+		// - m_iIndexSize = é¸æŠã•ã‚Œã¦ã„ã‚‹åˆ—è»Šã®æœ«å°¾index-å…ˆé ­index+1
+		// - m_CentDedRessyaCont = é¸æŠã•ã‚Œã¦ã„ã‚‹åˆ—è»Šã®å…ˆé ­indexã‹ã‚‰
+		//  æœ«å°¾indexã¾ã§ã®åˆ—è»Šã®ã‚³ãƒ”ãƒ¼
+		// - CaMuiSelect ã¯ã€ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã«åˆã‚ã›ã¦åˆ—è»Šã‚’é¸æŠã€‚
 		//
-		//(A)‚ÌˆÊ’u‚Åˆ—‚µ‚Ü‚·B
+		//(A)ã®ä½ç½®ã§å‡¦ç†ã—ã¾ã™ã€‚
 	}
 
 
 	// ********************************
 	//		ECreateCmd_All ,
-	//@‘S—ñÔ‚ğ‘ÎÛ‚Æ‚µ‚½ƒRƒ}ƒ“ƒh‚ğ¶¬‚µ‚Ü‚·B
+	//ã€€å…¨åˆ—è»Šã‚’å¯¾è±¡ã¨ã—ãŸã‚³ãƒãƒ³ãƒ‰ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 	// ********************************
 	if ( eCreateCmd == ECreateCmd_All )
 	{
-		// ƒrƒ…[ã‚Å•¡”‘I‘ğ‚ªOFFEƒtƒH[ƒJƒXƒZƒ‹‚ªŠù‘¶ƒAƒCƒeƒ€ã‚É‚ ‚éê‡: 
+		// ãƒ“ãƒ¥ãƒ¼ä¸Šã§è¤‡æ•°é¸æŠãŒOFFãƒ»ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒæ—¢å­˜ã‚¢ã‚¤ãƒ†ãƒ ä¸Šã«ã‚ã‚‹å ´åˆ: 
 		//
-		//- m_iDiaIndex = 0Am_iIndexSize = ƒAƒCƒeƒ€‚Ì”
-		//- m_CentDedRessyaCont = ‘SƒAƒCƒeƒ€‚ÌƒRƒs[
-		//- m_CaMuiSelect ‚ÍA‘SƒAƒCƒeƒ€‚ğ‘I‘ğB
+		//- m_iDiaIndex = 0ã€m_iIndexSize = ã‚¢ã‚¤ãƒ†ãƒ ã®æ•°
+		//- m_CentDedRessyaCont = å…¨ã‚¢ã‚¤ãƒ†ãƒ ã®ã‚³ãƒ”ãƒ¼
+		//- m_CaMuiSelect ã¯ã€å…¨ã‚¢ã‚¤ãƒ†ãƒ ã‚’é¸æŠã€‚
 		//
-		// ƒrƒ…[ã‚Å•¡”‘I‘ğ‚ªOFFEƒtƒH[ƒJƒXƒZƒ‹‚ªV‹KƒAƒCƒeƒ€ˆÊ’u‚É‚ ‚éê‡: 
+		// ãƒ“ãƒ¥ãƒ¼ä¸Šã§è¤‡æ•°é¸æŠãŒOFFãƒ»ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒæ–°è¦ã‚¢ã‚¤ãƒ†ãƒ ä½ç½®ã«ã‚ã‚‹å ´åˆ: 
 		//
-		//- m_iDiaIndex = 0Am_iIndexSize = ƒAƒCƒeƒ€‚Ì”
-		//- m_CentDedRessyaCont = ‘SƒAƒCƒeƒ€‚ÌƒRƒs[
-		//- CaMuiSelect ‚ÍA‘SƒAƒCƒeƒ€‚ğ‘I‘ğB
+		//- m_iDiaIndex = 0ã€m_iIndexSize = ã‚¢ã‚¤ãƒ†ãƒ ã®æ•°
+		//- m_CentDedRessyaCont = å…¨ã‚¢ã‚¤ãƒ†ãƒ ã®ã‚³ãƒ”ãƒ¼
+		//- CaMuiSelect ã¯ã€å…¨ã‚¢ã‚¤ãƒ†ãƒ ã‚’é¸æŠã€‚
 		if ( getCSelect()->getSelectedCellCount() == 0 
 			&& ( aCdYColSpecOfFocus.getColumnType() == CdEkiYColSpec::ColumnType_Eki 
 			|| aCdYColSpecOfFocus.getColumnType() == CdEkiYColSpec::ColumnType_NewEki ) )
@@ -462,21 +462,21 @@ createCmd( ECreateCmd eCreateCmd , Ou<DedRosenFileData::EditCmd::CRfEditCmd_Eki>
 			}
 		}
 
-		// ƒrƒ…[ã‚Å•¡”‘I‘ğON
+		// ãƒ“ãƒ¥ãƒ¼ä¸Šã§è¤‡æ•°é¸æŠON
 		//
-		//- m_iDiaIndex = ‘I‘ğ‚³‚ê‚Ä‚¢‚éƒAƒCƒeƒ€‚Ìæ“ªindex
-		//- m_iIndexSize = ‘I‘ğ‚³‚ê‚Ä‚¢‚éƒAƒCƒeƒ€‚Ì––”öindex-æ“ªindex+1
-		//- m_CentDedRessyaCont = ‘I‘ğ‚³‚ê‚Ä‚¢‚éƒAƒCƒeƒ€‚Ìæ“ªindex‚©‚ç
-		//––”öindex‚Ü‚Å‚ÌƒAƒCƒeƒ€‚ÌƒRƒs[
-		//- m_CaMuiSelect ‚ÍAƒZƒ‹‚Ì‘I‘ğ‚É‡‚í‚¹‚ÄƒAƒCƒeƒ€‚ğ‘I‘ğB
+		//- m_iDiaIndex = é¸æŠã•ã‚Œã¦ã„ã‚‹ã‚¢ã‚¤ãƒ†ãƒ ã®å…ˆé ­index
+		//- m_iIndexSize = é¸æŠã•ã‚Œã¦ã„ã‚‹ã‚¢ã‚¤ãƒ†ãƒ ã®æœ«å°¾index-å…ˆé ­index+1
+		//- m_CentDedRessyaCont = é¸æŠã•ã‚Œã¦ã„ã‚‹ã‚¢ã‚¤ãƒ†ãƒ ã®å…ˆé ­indexã‹ã‚‰
+		//æœ«å°¾indexã¾ã§ã®ã‚¢ã‚¤ãƒ†ãƒ ã®ã‚³ãƒ”ãƒ¼
+		//- m_CaMuiSelect ã¯ã€ã‚»ãƒ«ã®é¸æŠã«åˆã‚ã›ã¦ã‚¢ã‚¤ãƒ†ãƒ ã‚’é¸æŠã€‚
 		//
-		//(A)‚ÌˆÊ’u‚Åˆ—‚µ‚Ü‚·B
+		//(A)ã®ä½ç½®ã§å‡¦ç†ã—ã¾ã™ã€‚
 	}
 
 	// ********************************
-	//	(A)ECreateCmd_Sequence ‚Å
-	//@•¡”‘I‘ğ‚³‚ê‚Ä‚¢‚é—ñÔ‚ğ‘ÎÛ‚Æ‚µ‚½
-	//	ƒRƒ}ƒ“ƒh‚ğ¶¬‚µ‚Ü‚·B
+	//	(A)ECreateCmd_Sequence ã§
+	//ã€€è¤‡æ•°é¸æŠã•ã‚Œã¦ã„ã‚‹åˆ—è»Šã‚’å¯¾è±¡ã¨ã—ãŸ
+	//	ã‚³ãƒãƒ³ãƒ‰ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 	// ********************************
 	if (eCreateCmd == ECreateCmd_Sequence)
 	{
@@ -524,8 +524,8 @@ createCmd( ECreateCmd eCreateCmd , Ou<DedRosenFileData::EditCmd::CRfEditCmd_Eki>
 				bRv = true;
 				if (ppCmd != NULL)
 				{
-					//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg“à‚ÉA‘I‘ğ‚³‚ê‚Ä‚¢‚é‰w‚Ìæ“ª‚©‚ç––”ö‚Ü‚Å‚Ì
-					//	‰w‚ğŠi”[‚µ‚Ü‚·
+					//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆå†…ã«ã€é¸æŠã•ã‚Œã¦ã„ã‚‹é§…ã®å…ˆé ­ã‹ã‚‰æœ«å°¾ã¾ã§ã®
+					//	é§…ã‚’æ ¼ç´ã—ã¾ã™
 					pCmd = OuNew<DedRosenFileData::EditCmd::CRfEditCmd_Eki>(
 						new CRfEditCmd_Eki(
 							*getCDiagramEditDoc()->getCDedRosenFileData(),
@@ -533,8 +533,8 @@ createCmd( ECreateCmd eCreateCmd , Ou<DedRosenFileData::EditCmd::CRfEditCmd_Eki>
 							iSelectSize,
 							m_bAdjustByEkijikokukeisiki));
 
-					//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì
-					//	m_CentDedRessyaContSrc  “à‚Ì—ñÔ‚ğ‘S‘I‘ğ‚µ‚Ü‚·B
+					//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®
+					//	m_CentDedRessyaContSrc  å†…ã®åˆ—è»Šã‚’å…¨é¸æŠã—ã¾ã™ã€‚
 					pCmd->getCaMuiSelect()->setSelectAll(true);
 				}
 			}
@@ -542,16 +542,16 @@ createCmd( ECreateCmd eCreateCmd , Ou<DedRosenFileData::EditCmd::CRfEditCmd_Eki>
 	}
 
 	// ********************************
-	//	(A)ECreateCmd_SelectEECreateCmd_All ‚Å
-	//@•¡”‘I‘ğ‚³‚ê‚Ä‚¢‚é—ñÔ‚ğ‘ÎÛ‚Æ‚µ‚½
-	//	ƒRƒ}ƒ“ƒh‚ğ¶¬‚µ‚Ü‚·B
+	//	(A)ECreateCmd_Selectãƒ»ECreateCmd_All ã§
+	//ã€€è¤‡æ•°é¸æŠã•ã‚Œã¦ã„ã‚‹åˆ—è»Šã‚’å¯¾è±¡ã¨ã—ãŸ
+	//	ã‚³ãƒãƒ³ãƒ‰ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 	// ********************************
 	if ( eCreateCmd == ECreateCmd_Select 
 		|| eCreateCmd == ECreateCmd_All )
 	{
 		if ( getCSelect()->getSelectedCellCount() > 0 )
 		{
-			//	‘I‘ğ‚³‚ê‚Ä‚¢‚éƒAƒCƒeƒ€‚ÌIndex‚ğæ“¾
+			//	é¸æŠã•ã‚Œã¦ã„ã‚‹ã‚¢ã‚¤ãƒ†ãƒ ã®Indexã‚’å–å¾—
 			deque<int> contiEkiIndex ;
 			for ( int iColumnNumber = 0 ; iColumnNumber < getCXDcdGrid()->getYColumnCount() ;iColumnNumber ++ )
 			{
@@ -564,18 +564,18 @@ createCmd( ECreateCmd eCreateCmd , Ou<DedRosenFileData::EditCmd::CRfEditCmd_Eki>
 					}
 				}
 			}
-			//contiEkiIndex = —ñ‚Ì•¡”‘I‘ğ‚ªÀ{‚³‚ê‚Ä‚¢‚éê‡‚ÍA
-			//	‘I‘ğ‚³‚ê‚Ä‚¢‚é‰wIndex‚ªŠi”[‚³‚ê‚Ü‚·B
-			//	‚»‚¤‚Å‚È‚¢ê‡‚ÍA‹ó‚Å‚·B
+			//contiEkiIndex = åˆ—ã®è¤‡æ•°é¸æŠãŒå®Ÿæ–½ã•ã‚Œã¦ã„ã‚‹å ´åˆã¯ã€
+			//	é¸æŠã•ã‚Œã¦ã„ã‚‹é§…IndexãŒæ ¼ç´ã•ã‚Œã¾ã™ã€‚
+			//	ãã†ã§ãªã„å ´åˆã¯ã€ç©ºã§ã™ã€‚
 
 			if ( contiEkiIndex.size() > 1 )
 			{
 				bRv = true ;
 				if ( ppCmd != NULL )
 				{
-					//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg“à‚ÉA‘I‘ğ‚³‚ê‚Ä‚¢‚é‰w‚Ìæ“ª‚©‚ç––”ö‚Ü‚Å‚Ì
-					//	‰w‚ğŠi”[‚µ‚Ü‚·(æ“ªE––”öˆÈŠO‚É‚ÍA‘I‘ğ‚³‚ê‚Ä‚¢‚È‚¢‰w‚ª
-					//	ŠÜ‚Ü‚ê‚Ä‚¢‚éê‡‚à‚ ‚è‚Ü‚·)
+					//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆå†…ã«ã€é¸æŠã•ã‚Œã¦ã„ã‚‹é§…ã®å…ˆé ­ã‹ã‚‰æœ«å°¾ã¾ã§ã®
+					//	é§…ã‚’æ ¼ç´ã—ã¾ã™(å…ˆé ­ãƒ»æœ«å°¾ä»¥å¤–ã«ã¯ã€é¸æŠã•ã‚Œã¦ã„ãªã„é§…ãŒ
+					//	å«ã¾ã‚Œã¦ã„ã‚‹å ´åˆã‚‚ã‚ã‚Šã¾ã™)
 					pCmd = OuNew<DedRosenFileData::EditCmd::CRfEditCmd_Eki>( 
 						new CRfEditCmd_Eki( 
 							*getCDiagramEditDoc()->getCDedRosenFileData() ,
@@ -583,8 +583,8 @@ createCmd( ECreateCmd eCreateCmd , Ou<DedRosenFileData::EditCmd::CRfEditCmd_Eki>
 							contiEkiIndex.back() - contiEkiIndex.front() + 1 ,
 							m_bAdjustByEkijikokukeisiki ) ) ;
 
-					//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì
-					//	m_CentDedRessyaContSrc  “à‚Ì—ñÔ‚ğ‘I‘ğ‚µ‚Ü‚·B
+					//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®
+					//	m_CentDedRessyaContSrc  å†…ã®åˆ—è»Šã‚’é¸æŠã—ã¾ã™ã€‚
 					pCmd->getCaMuiSelect()->setSelectAll( false ) ;
 					for ( int i = 0 ; i < (int)contiEkiIndex.size() ; i ++ )
 					{
@@ -602,12 +602,12 @@ createCmd( ECreateCmd eCreateCmd , Ou<DedRosenFileData::EditCmd::CRfEditCmd_Eki>
 	return bRv ;
 }
 	// --------------------------------
-	//@name OnUpdate ‚Ì‰º¿ŠÖ”
+	//@name OnUpdate ã®ä¸‹è«‹é–¢æ•°
 	// --------------------------------
 
 /**
-	CentDedEki::EEkijikokukeisiki ‚ÆA•¶š—ñƒŠƒ\[ƒXID‚Ì‘Î‰•\
-	17.4.14 ‰º‚è”­’…Eã‚è”­’…‚ğ’Ç‰Á_by_d_mania
+	CentDedEki::EEkijikokukeisiki ã¨ã€æ–‡å­—åˆ—ãƒªã‚½ãƒ¼ã‚¹IDã®å¯¾å¿œè¡¨
+	17.4.14 ä¸‹ã‚Šç™ºç€ãƒ»ä¸Šã‚Šç™ºç€ã‚’è¿½åŠ _by_d_mania
 */
 struct {
 	CentDedEki::EEkijikokukeisiki	m_eValue ;
@@ -622,7 +622,7 @@ struct {
 };
 
 /**
-	CentDedEki::EEkikibo ‚ÆA•¶š—ñƒŠƒ\[ƒXID‚Ì‘Î‰•\
+	CentDedEki::EEkikibo ã¨ã€æ–‡å­—åˆ—ãƒªã‚½ãƒ¼ã‚¹IDã®å¯¾å¿œè¡¨
 */
 struct {
 	CentDedEki::EEkikibo	m_eValue ;
@@ -638,21 +638,21 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 {
 	if ( m_bWaitForActivate )
 	{
-		//	ƒrƒ…[‚ÌXV‚ªXV‚³‚ê‚Ä‚¢‚é‚È‚çAŒã‘±‚Ìˆ—‚Ís‚¢‚Ü‚¹‚ñ
+		//	ãƒ“ãƒ¥ãƒ¼ã®æ›´æ–°ãŒæ›´æ–°ã•ã‚Œã¦ã„ã‚‹ãªã‚‰ã€å¾Œç¶šã®å‡¦ç†ã¯è¡Œã„ã¾ã›ã‚“
 		return;
 	}
 	// ****************************************************************
-	//	ƒrƒ…[‚ÌXV‚ª•Û—¯‚³‚ê‚Ä‚¢‚È‚¢
+	//	ãƒ“ãƒ¥ãƒ¼ã®æ›´æ–°ãŒä¿ç•™ã•ã‚Œã¦ã„ãªã„
 	// ****************************************************************
 
 	bool bIsNull = aCentDedEki.getEkimei().empty() ;
 	// --------------------------------
-	//	—ñ‚ÌƒTƒCƒY‚ğİ’è
+	//	åˆ—ã®ã‚µã‚¤ã‚ºã‚’è¨­å®š
 	// --------------------------------
 	{
 		CDcdTargetGetDC	aCDcdTarget( NULL ) ;
 		// --------------------------------
-		//	Y—ñ
+		//	Yåˆ—
 		// --------------------------------
 		{
 			CdDcdSizeXy	sizeEkimei ;
@@ -666,39 +666,39 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 		}
 	}
 	// --------------------------------
-	//	ƒZƒ‹‚Ì‘®«‚ğİ’è
+	//	ã‚»ãƒ«ã®å±æ€§ã‚’è¨­å®š
 	// --------------------------------
 	CdEkiXColSpecCont aCdEkiXColSpecCont = createXColSpecCont();
 	{
-		//	‰wIndex—ñ‚Ì DcDraw ‚Ì‘®«‚ğİ’è
+		//	é§…Indexåˆ—ã® DcDraw ã®å±æ€§ã‚’è¨­å®š
 		Ou<CDcdTextbox>	pCDcdTextbox =
 			(getCXDcdGrid()->getCell(
 				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_EkiIndex), iYColumnNumber)->getIfDcDraw());
 		*pCDcdTextbox = this->getCDcdEkiIndex();
 	}
 	{
-		//	‰w–¼—ñ‚Ì DcDraw ‚Ì‘®«‚ğİ’è
+		//	é§…ååˆ—ã® DcDraw ã®å±æ€§ã‚’è¨­å®š
 		Ou<CDcdTextbox>	pCDcdTextbox = 
 			(getCXDcdGrid()->getCell(
 				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_Ekimei), iYColumnNumber )->getIfDcDraw());
 		*pCDcdTextbox = this->getCDcdEkimei() ;
 	}
 	{
-		//	‰wŒ`®‚Ì DcDraw ‚Ì‘®«‚ğİ’è
+		//	é§…æ™‚åˆ»å½¢å¼ã® DcDraw ã®å±æ€§ã‚’è¨­å®š
 		Ou<CDcdTextbox>	pCDcdTextbox = 
 			(getCXDcdGrid()->getCell( 
 				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_Ekijikokukeisiki), iYColumnNumber )->getIfDcDraw());
 		*pCDcdTextbox = this->getCDcdEkijikokukeisiki() ;
 	}
 	{
-		//	‰w‹K–Í
+		//	é§…è¦æ¨¡
 		Ou<CDcdTextbox>	pCDcdTextbox = 
 			(getCXDcdGrid()->getCell( 
 				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_Ekikibo), iYColumnNumber )->getIfDcDraw());
 		*pCDcdTextbox = this->getCDcdEkikibo() ;
 	}
 	{
-		//	‰w”Ôü”
+		//	é§…ç•ªç·šæ•°
 		Ou<CDcdTextbox>	pCDcdTextbox =
 			(getCXDcdGrid()->getCell(
 				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_EkiTrack2Count), iYColumnNumber)->getIfDcDraw());
@@ -707,7 +707,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 	if (getDisplaySettingMode())
 	{
 		{
-			//	‘OŒãì‹Æ—“
+			//	å‰å¾Œä½œæ¥­æ¬„
 			Ou<CDcdTextbox>	pCDcdTextbox =
 				(getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationOriginDownBeforeUpAfter), iYColumnNumber)->getIfDcDraw());
@@ -736,14 +736,14 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 			*pCDcdTextbox6 = this->getCDcdEkikibo();
 		}
 		{
-			//	”Ôü•\¦È—ªİ’è
+			//	ç•ªç·šè¡¨ç¤ºçœç•¥è¨­å®š
 			Ou<CDcdTextbox>	pCDcdTextbox =
 				(getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_TrackOmit), iYColumnNumber)->getIfDcDraw());
 			*pCDcdTextbox = this->getCDcdEkikibo();
 		}
 		{
-			//	‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\
+			//	ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨
 			Ou<CDcdTextbox>	pCDcdTextbox =
 				(getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayKudari), iYColumnNumber)->getIfDcDraw());
@@ -786,7 +786,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 			*pCDcdTextbox10 = this->getCDcdEkikibo();
 		}
 		{
-			//	ã‚èƒJƒXƒ^ƒ}ƒCƒY•\
+			//	ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨
 			Ou<CDcdTextbox>	pCDcdTextbox =
 				(getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayNobori), iYColumnNumber)->getIfDcDraw());
@@ -829,14 +829,14 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 			*pCDcdTextbox10 = this->getCDcdEkikibo();
 		}
 		{
-			//	İü•\•\¦İ’è
+			//	åœ¨ç·šè¡¨è¡¨ç¤ºè¨­å®š
 			Ou<CDcdTextbox>	pCDcdTextbox =
 				(getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_DiagramTrackDisplay), iYColumnNumber)->getIfDcDraw());
 			*pCDcdTextbox = this->getCDcdEkikibo();
 		}
 		{
-			//	ƒ_ƒCƒ„ƒOƒ‰ƒ€—ñÔî•ñ•\¦
+			//	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åˆ—è»Šæƒ…å ±è¡¨ç¤º
 			Ou<CDcdTextbox>	pCDcdTextbox =
 				(getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_DiagramRessyajouhouHyoujiKudari), iYColumnNumber)->getIfDcDraw());
@@ -847,21 +847,21 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 			*pCDcdTextbox2 = this->getCDcdEkikibo();
 		}
 		{
-			//	‚±‚Ì‰w‚©‚çŸ‚Ì‰w‚Ü‚Å‚Ì‹——£
+			//	ã“ã®é§…ã‹ã‚‰æ¬¡ã®é§…ã¾ã§ã®è·é›¢
 			Ou<CDcdTextbox>	pCDcdTextbox =
 				(getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_NextEkiDistance), iYColumnNumber)->getIfDcDraw());
 			*pCDcdTextbox = this->getCDcdEkikibo();
 		}
 		{
-			//	‚±‚Ì‰w‚©‚çŸ‚Ì‰w‚Ü‚Å‚Ì”wŒiFİ’è
+			//	ã“ã®é§…ã‹ã‚‰æ¬¡ã®é§…ã¾ã§ã®èƒŒæ™¯è‰²è¨­å®š
 			Ou<CDcdTextbox>	pCDcdTextbox =
 				(getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_DiagramColorNextEki), iYColumnNumber)->getIfDcDraw());
 			*pCDcdTextbox = this->getCDcdEkikibo();
 		}
 		{
-			//	” ƒ_ƒCƒ„‚Å•\¦‚·‚é‚©”Û‚©
+			//	ç®±ãƒ€ã‚¤ãƒ¤ã§è¡¨ç¤ºã™ã‚‹ã‹å¦ã‹
 			Ou<CDcdTextbox>	pCDcdTextbox =
 				(getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationTableDisplayJikoku), iYColumnNumber)->getIfDcDraw());
@@ -871,14 +871,14 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 	else
 	{
 		{
-			//	•ªŠò‰wİ’è
+			//	åˆ†å²é§…è¨­å®š
 			Ou<CDcdTextbox>	pCDcdTextbox =
 				(getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_EkiBrunch), iYColumnNumber)->getIfDcDraw());
 			*pCDcdTextbox = this->getCDcdBrunchLoop();
 		}
 		{
-			//	ŠÂóüİ’è
+			//	ç’°çŠ¶ç·šè¨­å®š
 			Ou<CDcdTextbox>	pCDcdTextbox =
 				(getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_EkiLoop), iYColumnNumber)->getIfDcDraw());
@@ -888,9 +888,9 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 	
 	
 	// --------------------------------
-	//	ƒZƒ‹‚ÌƒeƒLƒXƒg‚ğİ’è
+	//	ã‚»ãƒ«ã®ãƒ†ã‚­ã‚¹ãƒˆã‚’è¨­å®š
 	// --------------------------------
-	//	‰wIndex
+	//	é§…Index
 	{
 		if (!bIsNull)
 		{
@@ -900,14 +900,14 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				->setText(to_tstring(iYColumnNumber - 1));
 		}
 	}
-	//	‰w–¼
+	//	é§…å
 	{
 		Ou<CDcdTextbox>(getCXDcdGrid()
 			->getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_Ekimei),
 				iYColumnNumber )->getIfDcDraw())
 				->setText( aCentDedEki.getEkimei() )  ;	
 	}
-	//	‰wŒ`®
+	//	é§…æ™‚åˆ»å½¢å¼
 	{
 		tstring	strEkijikokukeisiki ;
 		if ( !bIsNull )
@@ -931,7 +931,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				iYColumnNumber )->getIfDcDraw())->
 				setText( strEkijikokukeisiki )  ;	
 	}
-	//	‰w‹K–Í
+	//	é§…è¦æ¨¡
 	{
 		tstring	strEkikibo ;
 		if ( !bIsNull ){
@@ -952,7 +952,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				iYColumnNumber )->getIfDcDraw())
 				->setText( strEkikibo )  ;	
 	}
-	//	‰w”Ôü”
+	//	é§…ç•ªç·šæ•°
 	{
 		if (!bIsNull)
 		{
@@ -964,7 +964,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 	}
 	if (getDisplaySettingMode())
 	{
-		//‹N“_‘¤‰º‚è‘Œ‹ã‚è‰ğŒ‹ì‹Æ—“
+		//èµ·ç‚¹å´ä¸‹ã‚Šå¢—çµä¸Šã‚Šè§£çµä½œæ¥­æ¬„
 		{
 			tstring strText = _T("");
 			if (!bIsNull &&
@@ -974,7 +974,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				case false:
 					strText = _T(""); break;
 				case true:
-					strText = _T("‘‰ğ"); break;
+					strText = _T("å¢—è§£"); break;
 				}
 			}
 			Ou<CDcdTextbox>(getCXDcdGrid()->
@@ -982,20 +982,20 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 					CdEkiXColSpec::EColumnType::ColumnType_OperationOriginDownBeforeUpAfter), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//‘OŒãì‹Æ—“
+		//å‰å¾Œä½œæ¥­æ¬„
 		{
 			tstring strText = _T("");
 			if (!bIsNull) 
 			{
 				switch (aCentDedEki.getJikokuhyouOperationOrigin()) {
 				case 0:
-					strText = _T("–³‚µ"); break;
+					strText = _T("ç„¡ã—"); break;
 				case 1:
-					strText = _T("1ì‹Æ"); break;
+					strText = _T("1ä½œæ¥­"); break;
 				case 2:
-					strText = _T("2ì‹Æ"); break;
+					strText = _T("2ä½œæ¥­"); break;
 				case 3:
-					strText = _T("3ì‹Æ"); break;
+					strText = _T("3ä½œæ¥­"); break;
 				}
 			}
 			Ou<CDcdTextbox>(getCXDcdGrid()->
@@ -1003,7 +1003,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 					CdEkiXColSpec::EColumnType::ColumnType_OperationOrigin), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//‹N“_‘¤‰º‚è‰ğŒ‹ã‚è‘Œ‹ì‹Æ—“
+		//èµ·ç‚¹å´ä¸‹ã‚Šè§£çµä¸Šã‚Šå¢—çµä½œæ¥­æ¬„
 		{
 			tstring strText = _T("");
 			if (!bIsNull &&
@@ -1013,7 +1013,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				case false:
 					strText = _T(""); break;
 				case true:
-					strText = _T("‰ğ‘"); break;
+					strText = _T("è§£å¢—"); break;
 				}
 			}
 			Ou<CDcdTextbox>(getCXDcdGrid()->
@@ -1022,7 +1022,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				->setText(strText);
 		}
 
-		//I“_‘¤‰º‚è‘Œ‹ã‚è‰ğŒ‹ì‹Æ—“
+		//çµ‚ç‚¹å´ä¸‹ã‚Šå¢—çµä¸Šã‚Šè§£çµä½œæ¥­æ¬„
 		{
 			tstring strText = _T("");
 			if (!bIsNull &&
@@ -1032,7 +1032,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				case false:
 					strText = _T(""); break;
 				case true:
-					strText = _T("‘‰ğ"); break;
+					strText = _T("å¢—è§£"); break;
 				}
 			}
 			Ou<CDcdTextbox>(getCXDcdGrid()->
@@ -1040,20 +1040,20 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 					CdEkiXColSpec::EColumnType::ColumnType_OperationTerminalDownBeforeUpAfter), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//‘OŒãì‹Æ—“
+		//å‰å¾Œä½œæ¥­æ¬„
 		{
 			tstring strText = _T("");
 			if (!bIsNull) 
 			{
 				switch (aCentDedEki.getJikokuhyouOperationTerminal()) {
 				case 0:
-					strText = _T("–³‚µ"); break;
+					strText = _T("ç„¡ã—"); break;
 				case 1:
-					strText = _T("1ì‹Æ"); break;
+					strText = _T("1ä½œæ¥­"); break;
 				case 2:
-					strText = _T("2ì‹Æ"); break;
+					strText = _T("2ä½œæ¥­"); break;
 				case 3:
-					strText = _T("3ì‹Æ"); break;
+					strText = _T("3ä½œæ¥­"); break;
 				}
 			}
 			Ou<CDcdTextbox>(getCXDcdGrid()->
@@ -1061,7 +1061,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 					CdEkiXColSpec::EColumnType::ColumnType_OperationTerminal), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//I“_‘¤‰º‚è‰ğŒ‹ã‚è‘Œ‹ì‹Æ—“
+		//çµ‚ç‚¹å´ä¸‹ã‚Šè§£çµä¸Šã‚Šå¢—çµä½œæ¥­æ¬„
 		{
 			tstring strText = _T("");
 			if (!bIsNull &&
@@ -1071,7 +1071,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				case false:
 					strText = _T(""); break;
 				case true:
-					strText = _T("‰ğ‘"); break;
+					strText = _T("è§£å¢—"); break;
 				}
 			}
 			Ou<CDcdTextbox>(getCXDcdGrid()->
@@ -1080,17 +1080,17 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				->setText(strText);
 		}
 
-		//”Ôü•\¦È—ªİ’è
+		//ç•ªç·šè¡¨ç¤ºçœç•¥è¨­å®š
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
 				if (aCentDedEki.getJikokuhyouTrackOmit())
 				{
-					strText = _T("È—ª");
+					strText = _T("çœç•¥");
 				}
 				else
 				{
-					strText = _T("•\¦");
+					strText = _T("è¡¨ç¤º");
 				}
 			}
 			Ou<CDcdTextbox>(getCXDcdGrid()->
@@ -1098,21 +1098,21 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				->setText(strText);
 		}
 
-		//‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\(’…)
+		//ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨(ç€æ™‚åˆ»)
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
 				//if (aCentDedEki.getJikokuhyouChakuJikokuDisplayKudari())
 				//{
-				//	strText = _T("•\¦—L‚è");
+				//	strText = _T("è¡¨ç¤ºæœ‰ã‚Š");
 				//}
 				//else
 				//{
-				//	strText = _T("•\¦–³‚µ");
+				//	strText = _T("è¡¨ç¤ºç„¡ã—");
 				//}
 				if (aCentDedEki.getJikokuhyouChakuJikokuDisplayKudari())
 				{
-					strText = _T("’…");
+					strText = _T("ç€æ™‚åˆ»");
 				}
 				else
 				{
@@ -1123,21 +1123,21 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayKudari), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\(”Ôü)
+		//ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨(ç•ªç·š)
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
 				//if (aCentDedEki.getJikokuhyouTrackDisplayKudari())
 				//{
-				//	strText = _T("•\¦—L‚è");
+				//	strText = _T("è¡¨ç¤ºæœ‰ã‚Š");
 				//}
 				//else
 				//{
-				//	strText = _T("•\¦–³‚µ");
+				//	strText = _T("è¡¨ç¤ºç„¡ã—");
 				//}
 				if (aCentDedEki.getJikokuhyouTrackDisplayKudari())
 				{
-					strText = _T("”Ôü");
+					strText = _T("ç•ªç·š");
 				}
 				else
 				{
@@ -1148,21 +1148,21 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayKudari), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\(”­)
+		//ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨(ç™ºæ™‚åˆ»)
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
 				//if (aCentDedEki.getJikokuhyouHatsuJikokuDisplayKudari())
 				//{
-				//	strText = _T("•\¦—L‚è");
+				//	strText = _T("è¡¨ç¤ºæœ‰ã‚Š");
 				//}
 				//else
 				//{
-				//	strText = _T("•\¦–³‚µ");
+				//	strText = _T("è¡¨ç¤ºç„¡ã—");
 				//}
 				if (aCentDedEki.getJikokuhyouHatsuJikokuDisplayKudari())
 				{
-					strText = _T("”­");
+					strText = _T("ç™ºæ™‚åˆ»");
 				}
 				else
 				{
@@ -1173,7 +1173,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayKudari), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\(—ñÔ”Ô†)
+		//ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨(åˆ—è»Šç•ªå·)
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
@@ -1181,11 +1181,11 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				case 0:
 					strText = _T(""); break;
 				case 1:
-					strText = _T("—ñ”Ôí•Ï‚Ì‚İ"); break;
+					strText = _T("åˆ—ç•ªç¨®å¤‰ã®ã¿"); break;
 				case 2:
-					strText = _T("—ñ”Ôí•Ïî•Ï"); break;
+					strText = _T("åˆ—ç•ªç¨®å¤‰æƒ…å¤‰"); break;
 				case 3:
-					strText = _T("—ñ”Ô‘S—ñÔ"); break;
+					strText = _T("åˆ—ç•ªå…¨åˆ—è»Š"); break;
 				}
 			}
 			Ou<CDcdTextbox>(getCXDcdGrid()->
@@ -1193,7 +1193,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 					CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayKudari), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\(‰^—p”Ô†)
+		//ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨(é‹ç”¨ç•ªå·)
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
@@ -1201,13 +1201,13 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				case 0:
 					strText = _T(""); break;
 				case 1:
-					strText = _T("‰^”Ô“–‰w•ÏX"); break;
+					strText = _T("é‹ç•ªå½“é§…å¤‰æ›´"); break;
 				case 2:
-					strText = _T("‰^”Ôí•Ï‚Ì‚İ"); break;
+					strText = _T("é‹ç•ªç¨®å¤‰ã®ã¿"); break;
 				case 3:
-					strText = _T("‰^”Ôí•Ïî•Ï"); break;
+					strText = _T("é‹ç•ªç¨®å¤‰æƒ…å¤‰"); break;
 				case 4:
-					strText = _T("‰^”Ô‘S—ñÔ"); break;
+					strText = _T("é‹ç•ªå…¨åˆ—è»Š"); break;
 				}
 			}
 			Ou<CDcdTextbox>(getCXDcdGrid()->
@@ -1215,7 +1215,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 					CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayKudari), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\(‰^—p”Ô†’i”)
+		//ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨(é‹ç”¨ç•ªå·æ®µæ•°)
 		{
 			tstring strText = _T("");
 			if (!bIsNull &&
@@ -1228,7 +1228,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 					CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsKudari), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\(í•Ê)
+		//ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨(ç¨®åˆ¥)
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
@@ -1236,18 +1236,18 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				case 0:
 					strText = _T(""); break;
 				case 1:
-					strText = _T("í•Êí•Ï‚Ì‚İ"); break;
+					strText = _T("ç¨®åˆ¥ç¨®å¤‰ã®ã¿"); break;
 				case 2:
-					strText = _T("í•Êí•Ïî•Ï"); break;
+					strText = _T("ç¨®åˆ¥ç¨®å¤‰æƒ…å¤‰"); break;
 				case 3:
-					strText = _T("í•Ê‘S—ñÔ"); break;
+					strText = _T("ç¨®åˆ¥å…¨åˆ—è»Š"); break;
 				}
 			}
 			Ou<CDcdTextbox>(getCXDcdGrid()->
 				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayKudari), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\(—ñÔ–¼)
+		//ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨(åˆ—è»Šå)
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
@@ -1255,11 +1255,11 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				case 0:
 					strText = _T(""); break;
 				case 1:
-					strText = _T("—ñ–¼í•Ï‚Ì‚İ"); break;
+					strText = _T("åˆ—åç¨®å¤‰ã®ã¿"); break;
 				case 2:
-					strText = _T("—ñ–¼í•Ïî•Ï"); break;
+					strText = _T("åˆ—åç¨®å¤‰æƒ…å¤‰"); break;
 				case 3:
-					strText = _T("—ñ–¼‘S—ñÔ"); break;
+					strText = _T("åˆ—åå…¨åˆ—è»Š"); break;
 				}
 			}
 			Ou<CDcdTextbox>(getCXDcdGrid()->
@@ -1267,13 +1267,13 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 					CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayKudari), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\(˜HüŠOE‘O—ñÔn”­‰w)
+		//ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨(è·¯ç·šå¤–ãƒ»å‰åˆ—è»Šå§‹ç™ºé§…)
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
 				if (aCentDedEki.getJikokuhyouOuterSihatsuDisplayKudari())
 				{
-					strText = _T("n”­‰w");
+					strText = _T("å§‹ç™ºé§…");
 				}
 				else
 				{
@@ -1285,13 +1285,13 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 					CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayKudari), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\(˜HüŠOEŸ—ñÔI’…‰w)
+		//ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨(è·¯ç·šå¤–ãƒ»æ¬¡åˆ—è»Šçµ‚ç€é§…)
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
 				if (aCentDedEki.getJikokuhyouOuterShuchakuDisplayKudari())
 				{
-					strText = _T("I’…‰w");
+					strText = _T("çµ‚ç€é§…");
 				}
 				else
 				{
@@ -1304,13 +1304,13 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				->setText(strText);
 		}
 
-		//ã‚èƒJƒXƒ^ƒ}ƒCƒY•\(’…)
+		//ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨(ç€æ™‚åˆ»)
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
 				if (aCentDedEki.getJikokuhyouChakuJikokuDisplayNobori())
 				{
-					strText = _T("’…");
+					strText = _T("ç€æ™‚åˆ»");
 				}
 				else
 				{
@@ -1322,13 +1322,13 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 					CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayNobori), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//ã‚èƒJƒXƒ^ƒ}ƒCƒY•\(”Ôü)
+		//ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨(ç•ªç·š)
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
 				if (aCentDedEki.getJikokuhyouTrackDisplayNobori())
 				{
-					strText = _T("”Ôü");
+					strText = _T("ç•ªç·š");
 				}
 				else
 				{
@@ -1340,13 +1340,13 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 					CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayNobori), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//ã‚èƒJƒXƒ^ƒ}ƒCƒY•\(”­)
+		//ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨(ç™ºæ™‚åˆ»)
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
 				if (aCentDedEki.getJikokuhyouHatsuJikokuDisplayNobori())
 				{
-					strText = _T("”­");
+					strText = _T("ç™ºæ™‚åˆ»");
 				}
 				else
 				{
@@ -1357,7 +1357,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayNobori), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//ã‚èƒJƒXƒ^ƒ}ƒCƒY•\(—ñÔ”Ô†)
+		//ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨(åˆ—è»Šç•ªå·)
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
@@ -1365,18 +1365,18 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				case 0:
 					strText = _T(""); break;
 				case 1:
-					strText = _T("—ñ”Ôí•Ï‚Ì‚İ"); break;
+					strText = _T("åˆ—ç•ªç¨®å¤‰ã®ã¿"); break;
 				case 2:
-					strText = _T("—ñ”Ôí•Ïî•Ï"); break;
+					strText = _T("åˆ—ç•ªç¨®å¤‰æƒ…å¤‰"); break;
 				case 3:
-					strText = _T("—ñ”Ô‘S—ñÔ"); break;
+					strText = _T("åˆ—ç•ªå…¨åˆ—è»Š"); break;
 				}
 			}
 			Ou<CDcdTextbox>(getCXDcdGrid()->
 				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayNobori), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//ã‚èƒJƒXƒ^ƒ}ƒCƒY•\(‰^—p”Ô†)
+		//ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨(é‹ç”¨ç•ªå·)
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
@@ -1384,13 +1384,13 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				case 0:
 					strText = _T(""); break;
 				case 1:
-					strText = _T("‰^”Ô“–‰w•ÏX"); break;
+					strText = _T("é‹ç•ªå½“é§…å¤‰æ›´"); break;
 				case 2:
-					strText = _T("‰^”Ôí•Ï‚Ì‚İ"); break;
+					strText = _T("é‹ç•ªç¨®å¤‰ã®ã¿"); break;
 				case 3:
-					strText = _T("‰^”Ôí•Ïî•Ï"); break;
+					strText = _T("é‹ç•ªç¨®å¤‰æƒ…å¤‰"); break;
 				case 4:
-					strText = _T("‰^”Ô‘S—ñÔ"); break;
+					strText = _T("é‹ç•ªå…¨åˆ—è»Š"); break;
 				}
 			}
 			Ou<CDcdTextbox>(getCXDcdGrid()->
@@ -1398,7 +1398,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 					CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayNobori), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//ã‚èƒJƒXƒ^ƒ}ƒCƒY•\(‰^—p”Ô†’i”)
+		//ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨(é‹ç”¨ç•ªå·æ®µæ•°)
 		{
 			tstring strText = _T("");
 			if (!bIsNull &&
@@ -1411,7 +1411,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 					CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsNobori), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//ã‚èƒJƒXƒ^ƒ}ƒCƒY•\(í•Ê)
+		//ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨(ç¨®åˆ¥)
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
@@ -1419,11 +1419,11 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				case 0:
 					strText = _T(""); break;
 				case 1:
-					strText = _T("í•Êí•Ï‚Ì‚İ"); break;
+					strText = _T("ç¨®åˆ¥ç¨®å¤‰ã®ã¿"); break;
 				case 2:
-					strText = _T("í•Êí•Ïî•Ï"); break;
+					strText = _T("ç¨®åˆ¥ç¨®å¤‰æƒ…å¤‰"); break;
 				case 3:
-					strText = _T("í•Ê‘S—ñÔ"); break;
+					strText = _T("ç¨®åˆ¥å…¨åˆ—è»Š"); break;
 				}
 			}
 			Ou<CDcdTextbox>(getCXDcdGrid()->
@@ -1431,7 +1431,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 					CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayNobori), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//ã‚èƒJƒXƒ^ƒ}ƒCƒY•\(—ñÔ–¼)
+		//ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨(åˆ—è»Šå)
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
@@ -1439,11 +1439,11 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				case 0:
 					strText = _T(""); break;
 				case 1:
-					strText = _T("—ñ–¼í•Ï‚Ì‚İ"); break;
+					strText = _T("åˆ—åç¨®å¤‰ã®ã¿"); break;
 				case 2:
-					strText = _T("—ñ–¼í•Ïî•Ï"); break;
+					strText = _T("åˆ—åç¨®å¤‰æƒ…å¤‰"); break;
 				case 3:
-					strText = _T("—ñ–¼‘S—ñÔ"); break;
+					strText = _T("åˆ—åå…¨åˆ—è»Š"); break;
 				}
 			}
 			Ou<CDcdTextbox>(getCXDcdGrid()->
@@ -1451,13 +1451,13 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 					CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayNobori), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//ã‚èƒJƒXƒ^ƒ}ƒCƒY•\(˜HüŠOE‘O—ñÔn”­‰w)
+		//ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨(è·¯ç·šå¤–ãƒ»å‰åˆ—è»Šå§‹ç™ºé§…)
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
 				if (aCentDedEki.getJikokuhyouOuterSihatsuDisplayNobori())
 				{
-					strText = _T("n”­‰w");
+					strText = _T("å§‹ç™ºé§…");
 				}
 				else
 				{
@@ -1469,13 +1469,13 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 					CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayNobori), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//ã‚èƒJƒXƒ^ƒ}ƒCƒY•\(˜HüŠOEŸ—ñÔI’…‰w)
+		//ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨(è·¯ç·šå¤–ãƒ»æ¬¡åˆ—è»Šçµ‚ç€é§…)
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
 				if (aCentDedEki.getJikokuhyouOuterShuchakuDisplayNobori())
 				{
-					strText = _T("I’…‰w");
+					strText = _T("çµ‚ç€é§…");
 				}
 				else
 				{
@@ -1488,13 +1488,13 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				->setText(strText);
 		}
 
-		//İü•\
+		//åœ¨ç·šè¡¨
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
 				if (aCentDedEki.getDiagramTrackDisplay())
 				{
-					strText = _T("•\¦");
+					strText = _T("è¡¨ç¤º");
 				}
 				else
 				{
@@ -1505,17 +1505,17 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_DiagramTrackDisplay), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//ƒ_ƒCƒ„ƒOƒ‰ƒ€—ñÔî•ñ•\¦
+		//ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åˆ—è»Šæƒ…å ±è¡¨ç¤º
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
 				switch (aCentDedEki.getDiagramRessyajouhouHyoujiKudari()) {
 				case CentDedEki::EDiagramRessyajouhouHyouji::DiagramRessyajouhouHyouji_Origin:
-					strText = _T("n”­•\¦"); break;
+					strText = _T("å§‹ç™ºè¡¨ç¤º"); break;
 				case CentDedEki::EDiagramRessyajouhouHyouji::DiagramRessyajouhouHyouji_Anytime:
-					strText = _T("í‚É•\¦"); break;
+					strText = _T("å¸¸ã«è¡¨ç¤º"); break;
 				case CentDedEki::EDiagramRessyajouhouHyouji::DiagramRessyajouhouHyouji_Not:
-					//strText = _T("•\¦–³‚µ"); break;
+					//strText = _T("è¡¨ç¤ºç„¡ã—"); break;
 					strText = _T(""); break;
 				}
 			}
@@ -1523,17 +1523,17 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_DiagramRessyajouhouHyoujiKudari), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//ƒ_ƒCƒ„ƒOƒ‰ƒ€—ñÔî•ñ•\¦
+		//ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åˆ—è»Šæƒ…å ±è¡¨ç¤º
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
 				switch (aCentDedEki.getDiagramRessyajouhouHyoujiNobori()) {
 				case CentDedEki::EDiagramRessyajouhouHyouji::DiagramRessyajouhouHyouji_Origin:
-					strText = _T("n”­•\¦"); break;
+					strText = _T("å§‹ç™ºè¡¨ç¤º"); break;
 				case CentDedEki::EDiagramRessyajouhouHyouji::DiagramRessyajouhouHyouji_Anytime:
-					strText = _T("í‚É•\¦"); break;
+					strText = _T("å¸¸ã«è¡¨ç¤º"); break;
 				case CentDedEki::EDiagramRessyajouhouHyouji::DiagramRessyajouhouHyouji_Not:
-					//strText = _T("•\¦–³‚µ"); break;
+					//strText = _T("è¡¨ç¤ºç„¡ã—"); break;
 					strText = _T(""); break;
 				}
 			}
@@ -1542,7 +1542,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				->setText(strText);
 		}
 
-		//‚±‚Ì‰w‚©‚çŸ‚Ì‰w‚Ü‚Å‚Ì‹——£
+		//ã“ã®é§…ã‹ã‚‰æ¬¡ã®é§…ã¾ã§ã®è·é›¢
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
@@ -1552,7 +1552,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_NextEkiDistance), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//‚±‚Ì‰w‚©‚çŸ‚Ì‰w‚Ü‚Å‚Ì”wŒiFİ’è
+		//ã“ã®é§…ã‹ã‚‰æ¬¡ã®é§…ã¾ã§ã®èƒŒæ™¯è‰²è¨­å®š
 		{
 			tstring strText = _T("");
 			int iDiagramColorNextEki = 0;
@@ -1561,15 +1561,15 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				iDiagramColorNextEki = aCentDedEki.getDiagramColorNextEki();
 				switch (iDiagramColorNextEki) {
 				case 0:
-					strText = _T("Šî–{F"); break;
+					strText = _T("åŸºæœ¬è‰²"); break;
 				case 1:
-					strText = _T("ŒÂ•ÊF1"); break;
+					strText = _T("å€‹åˆ¥è‰²1"); break;
 				case 2:
-					strText = _T("ŒÂ•ÊF2"); break;
+					strText = _T("å€‹åˆ¥è‰²2"); break;
 				case 3:
-					strText = _T("ŒÂ•ÊF3"); break;
+					strText = _T("å€‹åˆ¥è‰²3"); break;
 				case 4:
-					strText = _T("ŒÂ•ÊF4"); break;
+					strText = _T("å€‹åˆ¥è‰²4"); break;
 				}
 			}
 			Ou<CDcdTextbox>(getCXDcdGrid()->
@@ -1581,13 +1581,13 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				->setCdBrushProp(aCdBrushProp);
 		}
 
-		//” ƒ_ƒCƒ„‚Å•\¦‚·‚é‚©”Û‚©
+		//ç®±ãƒ€ã‚¤ãƒ¤ã§è¡¨ç¤ºã™ã‚‹ã‹å¦ã‹
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
 				if (aCentDedEki.getOperationTableDisplayJikoku())
 				{
-					strText = _T("•\¦");
+					strText = _T("è¡¨ç¤º");
 				}
 				else
 				{
@@ -1606,7 +1606,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 			pCDiagramEditDoc->getCDedRosenFileData()->getCentDedRosen();
 		const Mu<const CentDedEki*>* pCentDedEkiContGet =
 			pCentDedRosen->getCentDedEkiCont()->getMuPtr();
-		//•ªŠò‰wİ’è
+		//åˆ†å²é§…è¨­å®š
 		{
 			tstring strBrunch = _T("");
 			if (!bIsNull) {
@@ -1622,7 +1622,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				getCell(5, iYColumnNumber)->getIfDcDraw())
 				->setText(strBrunch);
 		}
-		//ŠÂóüİ’è
+		//ç’°çŠ¶ç·šè¨­å®š
 		{
 			tstring strLoop = _T("");
 			if (!bIsNull) {
@@ -1640,7 +1640,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 		}
 	}
 	// --------------------------------
-	//	‹«ŠEü
+	//	å¢ƒç•Œç·š
 	// --------------------------------
 	{
 		bool bKyoukaisen = false;
@@ -1671,13 +1671,13 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 	}
 
 	// --------------------------------
-	//	ƒOƒŠƒbƒh‘S‘Ì‚ğXV—Ìˆæ‚Æ‚µ‚Ü‚·
+	//	ã‚°ãƒªãƒƒãƒ‰å…¨ä½“ã‚’æ›´æ–°é ˜åŸŸã¨ã—ã¾ã™
 	// --------------------------------
-	//	‹«ŠEü‚Ì‘¾‚³‚ª•Ï“®‚µ‚½ê‡‚ÍA
-	//	‹«ŠEüE‚¨‚æ‚Ñ‚»‚ê‚æ‚è‰º‚Ì‚·‚×‚Ä‚ÌƒZƒ‹‚ÌXV‚ª•K—v‚Å‚·B
-	//	‚±‚ê‚É‘Î‰‚·‚é‚½‚ßA CWndDcdGridEki ‚Å‚ÍA
-	//	‰w‚Ì‘®«‚ÌXV‚Ì‚½‚Ñ‚É
-	//	ƒOƒŠƒbƒh‘Sˆæ‚ğXV‚µ‚Ü‚·B
+	//	å¢ƒç•Œç·šã®å¤ªã•ãŒå¤‰å‹•ã—ãŸå ´åˆã¯ã€
+	//	å¢ƒç•Œç·šãƒ»ãŠã‚ˆã³ãã‚Œã‚ˆã‚Šä¸‹ã®ã™ã¹ã¦ã®ã‚»ãƒ«ã®æ›´æ–°ãŒå¿…è¦ã§ã™ã€‚
+	//	ã“ã‚Œã«å¯¾å¿œã™ã‚‹ãŸã‚ã€ CWndDcdGridEki ã§ã¯ã€
+	//	é§…ã®å±æ€§ã®æ›´æ–°ã®ãŸã³ã«
+	//	ã‚°ãƒªãƒƒãƒ‰å…¨åŸŸã‚’æ›´æ–°ã—ã¾ã™ã€‚
 	//InvalidateGrid() ;
 }
 
@@ -1688,24 +1688,24 @@ void CWndDcdGridEki::OnUpdate_All()
 	if ( GetParent() != pView )
 	{
 		// ****************************************************************
-		//	ƒrƒ…[‚ªƒAƒNƒeƒBƒu‚Å‚Í‚È‚¢
+		//	ãƒ“ãƒ¥ãƒ¼ãŒã‚¢ã‚¯ãƒ†ã‚£ãƒ–ã§ã¯ãªã„
 		// ****************************************************************
 		m_bWaitForActivate = true ;
 	}
 	else
 	{
 		// ****************************************************************
-		//	ƒrƒ…[‚ªƒAƒNƒeƒBƒu
+		//	ãƒ“ãƒ¥ãƒ¼ãŒã‚¢ã‚¯ãƒ†ã‚£ãƒ–
 		// ****************************************************************
 		CWaitCursor	aCWaitCursor ;	
 
 		// --------------------------------
-		//	ƒrƒ…[‚ÌXV‚ğs‚¤‚½‚ß‚É OnUpdate_XXX() ‚ğŒÄ‚Ño‚·‚È‚ç
-		//	‚ ‚ç‚©‚¶‚ßˆÈ‰º‚Ìƒtƒ‰ƒO‚ğ false ‚É‚µ‚È‚­‚Ä‚Í‚È‚è‚Ü‚¹‚ñ
+		//	ãƒ“ãƒ¥ãƒ¼ã®æ›´æ–°ã‚’è¡Œã†ãŸã‚ã« OnUpdate_XXX() ã‚’å‘¼ã³å‡ºã™ãªã‚‰
+		//	ã‚ã‚‰ã‹ã˜ã‚ä»¥ä¸‹ã®ãƒ•ãƒ©ã‚°ã‚’ false ã«ã—ãªãã¦ã¯ãªã‚Šã¾ã›ã‚“
 		m_bWaitForActivate = false ;
 
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒgÀs‚É‚æ‚éƒZƒ‹ˆÚ“®‚ÅƒZƒ‹‘I‘ğ‚É‚È‚ç‚È‚¢‚æ‚¤‚ÉA
-		//	ƒZƒ‹‘I‘ğ‚ğ‰ğœ‚µAƒZƒ‹‘I‘ğ‹@”\‚àˆê“I‚É’†~‚µ‚Ü‚·B
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆå®Ÿè¡Œã«ã‚ˆã‚‹ã‚»ãƒ«ç§»å‹•ã§ã‚»ãƒ«é¸æŠã«ãªã‚‰ãªã„ã‚ˆã†ã«ã€
+		//	ã‚»ãƒ«é¸æŠã‚’è§£é™¤ã—ã€ã‚»ãƒ«é¸æŠæ©Ÿèƒ½ã‚‚ä¸€æ™‚çš„ã«ä¸­æ­¢ã—ã¾ã™ã€‚
 		clearSelect() ;
 		CPropStack aPropStack( this ) ;
 		aPropStack
@@ -1714,7 +1714,7 @@ void CWndDcdGridEki::OnUpdate_All()
 
 
 		// --------------------------------
-		//	ƒrƒ…[‚ğXV
+		//	ãƒ“ãƒ¥ãƒ¼ã‚’æ›´æ–°
 		// --------------------------------
 		CDiagramEditDoc* pCDiagramEditDoc = getCDiagramEditDoc() ;
 		const CentDedRosen*	pCentDedRosen = 
@@ -1724,11 +1724,11 @@ void CWndDcdGridEki::OnUpdate_All()
 
 		OnCreate_Header();
 
-		//	Y—ñ”‚ğ‘Œ¸‚³‚¹‚é
+		//	Yåˆ—æ•°ã‚’å¢—æ¸›ã•ã›ã‚‹
 		getCXDcdGrid()->setYColumnCount( 
 			pCentDedEkiContGet->size() + 2 ) ;
 
-		//	‰w–¼—ñ‚Ì•‚ğİ’è‚·‚é
+		//	é§…ååˆ—ã®å¹…ã‚’è¨­å®šã™ã‚‹
 		{
 			CDcdTargetGetDC	aTarget ;
 			CDcdTextbox aCDcd = this->getCDcdEkimei() ;
@@ -1738,7 +1738,7 @@ void CWndDcdGridEki::OnUpdate_All()
 				aCdDcdSizeXy.getX() ) ;
 		}
 		int iEkiSize = pCentDedEkiContGet->size();
-		//	ŠeƒZƒ‹‚ÉAƒf[ƒ^‚ğİ’è
+		//	å„ã‚»ãƒ«ã«ã€ãƒ‡ãƒ¼ã‚¿ã‚’è¨­å®š
 //#pragma omp parallel for schedule(static)
 		for (int idxEki = 0 ; idxEki < iEkiSize;
 				idxEki ++ ){
@@ -1774,7 +1774,7 @@ void CWndDcdGridEki::OnUpdate_All()
 void CWndDcdGridEki::OnCreate_Header()
 {
 	// --------------------------------
-	//	—ñ‚Ì”‚ğw’è
+	//	åˆ—ã®æ•°ã‚’æŒ‡å®š
 	// --------------------------------
 	getCXDcdGrid()->setXColumnCount(createXColSpecCont().size());
 	getCXDcdGrid()->setYColumnCount(2);
@@ -1787,15 +1787,15 @@ void CWndDcdGridEki::OnCreate_Header()
 
 	CdEkiXColSpecCont aCdEkiXColSpecCont = createXColSpecCont();
 	// --------------------------------
-	//	—ñ‚ÌƒTƒCƒY‚ğİ’è
+	//	åˆ—ã®ã‚µã‚¤ã‚ºã‚’è¨­å®š
 	// --------------------------------
 	{
 		CDcdTargetGetDC	aCDcdTarget(NULL);
 		// --------------------------------
-		//	X—ñ
+		//	Xåˆ—
 		// --------------------------------
 		{
-			//‰wIndex
+			//é§…Index
 			CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(
 				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_EkiIndex));
 			CdDcdSizeXy	sizeEkiIndex;
@@ -1805,7 +1805,7 @@ void CWndDcdGridEki::OnCreate_Header()
 
 		}
 		{
-			//	‰w–¼
+			//	é§…å
 			CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(
 				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_Ekimei));
 			CdDcdSizeXy	sizeEkimei;
@@ -1814,7 +1814,7 @@ void CWndDcdGridEki::OnCreate_Header()
 			pCDcdGridXColumn->setColumnSize(sizeEkimei.getX());
 		}
 		{
-			//	‰wŒ`®
+			//	é§…æ™‚åˆ»å½¢å¼
 			CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(
 				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_Ekijikokukeisiki));
 			CdDcdSizeXy	sizeEkijikokukeisiki;
@@ -1825,7 +1825,7 @@ void CWndDcdGridEki::OnCreate_Header()
 			pCDcdGridXColumn->setColumnSize(sizeEkijikokukeisiki.getX());
 		}
 		{
-			//	‰w‹K–Í
+			//	é§…è¦æ¨¡
 			CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(
 				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_Ekikibo));
 			CdDcdSizeXy	sizeEkikibo;
@@ -1836,7 +1836,7 @@ void CWndDcdGridEki::OnCreate_Header()
 			pCDcdGridXColumn->setColumnSize(sizeEkikibo.getX());
 		}
 		{
-			//	‰w”Ôü”
+			//	é§…ç•ªç·šæ•°
 			CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(
 				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_EkiTrack2Count));
 			CdDcdSizeXy	sizeEkiTrack2Count;
@@ -1849,7 +1849,7 @@ void CWndDcdGridEki::OnCreate_Header()
 		if (getDisplaySettingMode())
 		{
 			{
-				//‘OŒãì‹Æ—“
+				//å‰å¾Œä½œæ¥­æ¬„
 				CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationOriginDownBeforeUpAfter));
 				CDcdGridXColumn* pCDcdGridXColumn2 = getCXDcdGrid()->getXColumn(
@@ -1866,13 +1866,13 @@ void CWndDcdGridEki::OnCreate_Header()
 				CdDcdSizeXy	sizeHeader4;
 				CDcdTextbox	aCDcdTextbox4(CDcdTextbox(_T(""),
 					CdFontProp(9, _T("Meiryo UI")),
-					_T("‹“s‹“s"), 1, 2, 2, CdPenProp(),
+					_T("äº¬éƒ½äº¬éƒ½"), 1, 2, 2, CdPenProp(),
 					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
 				aCDcdTextbox4.getItemSize(&aCDcdTarget, &sizeHeader4);
 				CdDcdSizeXy	sizeHeader2;
 				CDcdTextbox	aCDcdTextbox2(CDcdTextbox(_T(""),
 					CdFontProp(9, _T("Meiryo UI")),
-					_T("‹“s"), 1, 2, 2, CdPenProp(),
+					_T("äº¬éƒ½"), 1, 2, 2, CdPenProp(),
 					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
 
 				aCDcdTextbox2.getItemSize(&aCDcdTarget, &sizeHeader2);
@@ -1884,20 +1884,20 @@ void CWndDcdGridEki::OnCreate_Header()
 				pCDcdGridXColumn6->setColumnSize(sizeHeader2.getX());
 			}
 			{
-				//”Ôü•\¦È—ªİ’è
+				//ç•ªç·šè¡¨ç¤ºçœç•¥è¨­å®š
 				CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_TrackOmit));
 				CdDcdSizeXy	sizeHeader;
 				CDcdTextbox	aCDcdTextbox(CDcdTextbox(_T(""),
 					CdFontProp(9, _T("Meiryo UI")),
-					_T("‹“s‹“s"), 1, 2, 2, CdPenProp(),
+					_T("äº¬éƒ½äº¬éƒ½"), 1, 2, 2, CdPenProp(),
 					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
 				aCDcdTextbox.getItemSize(&aCDcdTarget, &sizeHeader);
 				pCDcdGridXColumn->setColumnSize(sizeHeader.getX());
 
 			}
 			{
-				//‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\
+				//ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨
 				CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayKudari));
 				CDcdGridXColumn* pCDcdGridXColumn2 = getCXDcdGrid()->getXColumn(
@@ -1921,25 +1921,25 @@ void CWndDcdGridEki::OnCreate_Header()
 				CdDcdSizeXy	sizeHeader1;
 				CDcdTextbox	aCDcdTextbox1(CDcdTextbox(_T(""),
 					CdFontProp(9, _T("Meiryo UI")),
-					_T("‹"), 1, 2, 2, CdPenProp(),
+					_T("äº¬"), 1, 2, 2, CdPenProp(),
 					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
 				aCDcdTextbox1.getItemSize(&aCDcdTarget, &sizeHeader1);
 				CdDcdSizeXy	sizeHeader2;
 				CDcdTextbox	aCDcdTextbox2(CDcdTextbox(_T(""),
 					CdFontProp(9, _T("Meiryo UI")),
-					_T("‹“s"), 1, 2, 2, CdPenProp(),
+					_T("äº¬éƒ½"), 1, 2, 2, CdPenProp(),
 					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
 				aCDcdTextbox2.getItemSize(&aCDcdTarget, &sizeHeader2);
 				CdDcdSizeXy	sizeHeader3;
 				CDcdTextbox	aCDcdTextbox3(CDcdTextbox(_T(""),
 					CdFontProp(9, _T("Meiryo UI")),
-					_T("‹“s‹"), 1, 2, 2, CdPenProp(),
+					_T("äº¬éƒ½äº¬"), 1, 2, 2, CdPenProp(),
 					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
 				aCDcdTextbox3.getItemSize(&aCDcdTarget, &sizeHeader3);
 				CdDcdSizeXy	sizeHeader6;
 				CDcdTextbox	aCDcdTextbox6(CDcdTextbox(_T(""),
 					CdFontProp(9, _T("Meiryo UI")),
-					_T("‹“s‹“s‹“s"), 1, 2, 2, CdPenProp(),
+					_T("äº¬éƒ½äº¬éƒ½äº¬éƒ½"), 1, 2, 2, CdPenProp(),
 					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
 				aCDcdTextbox6.getItemSize(&aCDcdTarget, &sizeHeader6);
 
@@ -1955,7 +1955,7 @@ void CWndDcdGridEki::OnCreate_Header()
 				pCDcdGridXColumn9->setColumnSize(sizeHeader3.getX());
 			}
 			{
-				//ã‚èƒJƒXƒ^ƒ}ƒCƒY•\
+				//ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨
 				CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayNobori));
 				CDcdGridXColumn* pCDcdGridXColumn2 = getCXDcdGrid()->getXColumn(
@@ -1979,25 +1979,25 @@ void CWndDcdGridEki::OnCreate_Header()
 				CdDcdSizeXy	sizeHeader1;
 				CDcdTextbox	aCDcdTextbox1(CDcdTextbox(_T(""),
 					CdFontProp(9, _T("Meiryo UI")),
-					_T("‹"), 1, 2, 2, CdPenProp(),
+					_T("äº¬"), 1, 2, 2, CdPenProp(),
 					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
 				aCDcdTextbox1.getItemSize(&aCDcdTarget, &sizeHeader1);
 				CdDcdSizeXy	sizeHeader2;
 				CDcdTextbox	aCDcdTextbox2(CDcdTextbox(_T(""),
 					CdFontProp(9, _T("Meiryo UI")),
-					_T("‹“s"), 1, 2, 2, CdPenProp(),
+					_T("äº¬éƒ½"), 1, 2, 2, CdPenProp(),
 					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
 				aCDcdTextbox2.getItemSize(&aCDcdTarget, &sizeHeader2);
 				CdDcdSizeXy	sizeHeader3;
 				CDcdTextbox	aCDcdTextbox3(CDcdTextbox(_T(""),
 					CdFontProp(9, _T("Meiryo UI")),
-					_T("‹“s‹"), 1, 2, 2, CdPenProp(),
+					_T("äº¬éƒ½äº¬"), 1, 2, 2, CdPenProp(),
 					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
 				aCDcdTextbox3.getItemSize(&aCDcdTarget, &sizeHeader3);
 				CdDcdSizeXy	sizeHeader6;
 				CDcdTextbox	aCDcdTextbox6(CDcdTextbox(_T(""),
 					CdFontProp(9, _T("Meiryo UI")),
-					_T("‹“s‹“s‹“s"), 1, 2, 2, CdPenProp(),
+					_T("äº¬éƒ½äº¬éƒ½äº¬éƒ½"), 1, 2, 2, CdPenProp(),
 					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
 				aCDcdTextbox6.getItemSize(&aCDcdTarget, &sizeHeader6);
 
@@ -2013,20 +2013,20 @@ void CWndDcdGridEki::OnCreate_Header()
 				pCDcdGridXColumn9->setColumnSize(sizeHeader3.getX());
 			}
 			{
-				//İü•\•\¦İ’è
+				//åœ¨ç·šè¡¨è¡¨ç¤ºè¨­å®š
 				CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_DiagramTrackDisplay));
 				CdDcdSizeXy	sizeHeader;
 				CDcdTextbox	aCDcdTextbox(CDcdTextbox(_T(""),
 					CdFontProp(9, _T("Meiryo UI")),
-					_T("‹“s‹"), 1, 2, 2, CdPenProp(),
+					_T("äº¬éƒ½äº¬"), 1, 2, 2, CdPenProp(),
 					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
 				aCDcdTextbox.getItemSize(&aCDcdTarget, &sizeHeader);
 				pCDcdGridXColumn->setColumnSize(sizeHeader.getX());
 
 			}
 			{
-				//ƒ_ƒCƒ„ƒOƒ‰ƒ€—ñÔî•ñ•\¦
+				//ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åˆ—è»Šæƒ…å ±è¡¨ç¤º
 				CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_DiagramRessyajouhouHyoujiKudari));
 				CDcdGridXColumn* pCDcdGridXColumn2 = getCXDcdGrid()->getXColumn(
@@ -2034,7 +2034,7 @@ void CWndDcdGridEki::OnCreate_Header()
 				CdDcdSizeXy	sizeHeader;
 				CDcdTextbox	aCDcdTextbox(CDcdTextbox(_T(""),
 					CdFontProp(9, _T("Meiryo UI")),
-					_T("‹“s‹“s‹"), 1, 2, 2, CdPenProp(),
+					_T("äº¬éƒ½äº¬éƒ½äº¬"), 1, 2, 2, CdPenProp(),
 					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
 				aCDcdTextbox.getItemSize(&aCDcdTarget, &sizeHeader);
 				pCDcdGridXColumn->setColumnSize(sizeHeader.getX());
@@ -2042,37 +2042,37 @@ void CWndDcdGridEki::OnCreate_Header()
 
 			}
 			{
-				//‚±‚Ì‰w‚©‚çŸ‚Ì‰w‚Ü‚Å‚Ì‹——£
+				//ã“ã®é§…ã‹ã‚‰æ¬¡ã®é§…ã¾ã§ã®è·é›¢
 				CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_NextEkiDistance));
 				CdDcdSizeXy	sizeHeader;
 				CDcdTextbox	aCDcdTextbox(CDcdTextbox(_T(""),
 					CdFontProp(9, _T("Meiryo UI")),
-					_T("‹“s‹“s"), 1, 2, 2, CdPenProp(),
+					_T("äº¬éƒ½äº¬éƒ½"), 1, 2, 2, CdPenProp(),
 					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
 				aCDcdTextbox.getItemSize(&aCDcdTarget, &sizeHeader);
 				pCDcdGridXColumn->setColumnSize(sizeHeader.getX());
 			}
 			{
-				//‚±‚Ì‰w‚©‚çŸ‚Ì‰w‚Ü‚Å‚Ì”wŒiFİ’è
+				//ã“ã®é§…ã‹ã‚‰æ¬¡ã®é§…ã¾ã§ã®èƒŒæ™¯è‰²è¨­å®š
 				CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_DiagramColorNextEki));
 				CdDcdSizeXy	sizeHeader;
 				CDcdTextbox	aCDcdTextbox(CDcdTextbox(_T(""),
 					CdFontProp(9, _T("Meiryo UI")),
-					_T("‹“s‹“s‹"), 1, 2, 2, CdPenProp(),
+					_T("äº¬éƒ½äº¬éƒ½äº¬"), 1, 2, 2, CdPenProp(),
 					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
 				aCDcdTextbox.getItemSize(&aCDcdTarget, &sizeHeader);
 				pCDcdGridXColumn->setColumnSize(sizeHeader.getX());
 			}
 			{
-				//” ƒ_ƒCƒ„‚Å•\¦‚·‚é‚©”Û‚©
+				//ç®±ãƒ€ã‚¤ãƒ¤ã§è¡¨ç¤ºã™ã‚‹ã‹å¦ã‹
 				CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationTableDisplayJikoku));
 				CdDcdSizeXy	sizeHeader;
 				CDcdTextbox	aCDcdTextbox(CDcdTextbox(_T(""),
 					CdFontProp(9, _T("Meiryo UI")),
-					_T("‹“s‹“s"), 1, 2, 2, CdPenProp(),
+					_T("äº¬éƒ½äº¬éƒ½"), 1, 2, 2, CdPenProp(),
 					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
 				aCDcdTextbox.getItemSize(&aCDcdTarget, &sizeHeader);
 				pCDcdGridXColumn->setColumnSize(sizeHeader.getX());
@@ -2082,7 +2082,7 @@ void CWndDcdGridEki::OnCreate_Header()
 		else
 		{
 			{
-				//•ªŠò‰wİ’è
+				//åˆ†å²é§…è¨­å®š
 				CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_EkiBrunch));
 				CdDcdSizeXy	sizeBrunch;
@@ -2092,7 +2092,7 @@ void CWndDcdGridEki::OnCreate_Header()
 
 			}
 			{
-				//ŠÂóüİ’è
+				//ç’°çŠ¶ç·šè¨­å®š
 				CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_EkiLoop));
 				CdDcdSizeXy	sizeLoop;
@@ -2103,7 +2103,7 @@ void CWndDcdGridEki::OnCreate_Header()
 			}
 		}
 		// --------------------------------
-		//	Y—ñ
+		//	Yåˆ—
 		// --------------------------------
 		{
 			CdDcdSizeXy	sizeEkimei;
@@ -2116,7 +2116,7 @@ void CWndDcdGridEki::OnCreate_Header()
 		}
 	}
 	// --------------------------------
-	//	Åãs‚ÉƒeƒLƒXƒg‚ğİ’è
+	//	æœ€ä¸Šè¡Œã«ãƒ†ã‚­ã‚¹ãƒˆã‚’è¨­å®š
 	// --------------------------------
 	{
 		CConverter_WinGdi	aConv;
@@ -2130,7 +2130,7 @@ void CWndDcdGridEki::OnCreate_Header()
 
 
 		{
-			//	‰wIndex
+			//	é§…Index
 			CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_EkiIndex), 0);
 
@@ -2144,7 +2144,7 @@ void CWndDcdGridEki::OnCreate_Header()
 			Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
 		}
 		{
-			//	‰w–¼
+			//	é§…å
 			CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_Ekimei), 0);
 
@@ -2158,7 +2158,7 @@ void CWndDcdGridEki::OnCreate_Header()
 			Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
 		}
 		{
-			//	‰wŒ`®
+			//	é§…æ™‚åˆ»å½¢å¼
 			CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_Ekijikokukeisiki), 0);
 
@@ -2172,7 +2172,7 @@ void CWndDcdGridEki::OnCreate_Header()
 			Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
 		}
 		{
-			//	‰w‹K–Í
+			//	é§…è¦æ¨¡
 			CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_Ekikibo), 0);
 
@@ -2186,7 +2186,7 @@ void CWndDcdGridEki::OnCreate_Header()
 			Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
 		}
 		{
-			//	‰w”Ôü”
+			//	é§…ç•ªç·šæ•°
 			CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_EkiTrack2Count), 0);
 
@@ -2202,7 +2202,7 @@ void CWndDcdGridEki::OnCreate_Header()
 		if (getDisplaySettingMode())
 		{
 			{
-				//	‘OŒãì‹Æ—“(‹N“_‘¤)
+				//	å‰å¾Œä½œæ¥­æ¬„(èµ·ç‚¹å´)
 				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(
 						CdEkiXColSpec::EColumnType::ColumnType_OperationOriginDownBeforeUpAfter), 0);
@@ -2216,10 +2216,10 @@ void CWndDcdGridEki::OnCreate_Header()
 				//CString	aString;
 				//aString.LoadString(IDS_WORD_EkiTrack2Count);
 				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
-				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("ì‹Æ—“(‹N“_‘¤)"));
+				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("ä½œæ¥­æ¬„(èµ·ç‚¹å´)"));
 			}
 			{
-				//	‘OŒãì‹Æ—“(I“_‘¤)
+				//	å‰å¾Œä½œæ¥­æ¬„(çµ‚ç‚¹å´)
 				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(
 						CdEkiXColSpec::EColumnType::ColumnType_OperationTerminalDownBeforeUpAfter), 0);
@@ -2233,10 +2233,10 @@ void CWndDcdGridEki::OnCreate_Header()
 				//CString	aString;
 				//aString.LoadString(IDS_WORD_EkiTrack2Count);
 				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
-				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("ì‹Æ—“(I“_‘¤)"));
+				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("ä½œæ¥­æ¬„(çµ‚ç‚¹å´)"));
 			}
 			{
-				//	”Ôü•\¦È—ªİ’è
+				//	ç•ªç·šè¡¨ç¤ºçœç•¥è¨­å®š
 				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_TrackOmit), 0);
 
@@ -2248,10 +2248,10 @@ void CWndDcdGridEki::OnCreate_Header()
 				//CString	aString;
 				//aString.LoadString(IDS_WORD_EkiTrack2Count);
 				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
-				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("”ÔüÈ—ª"));
+				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("ç•ªç·šçœç•¥"));
 			}
 			{
-				//	‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\
+				//	ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨
 				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayKudari), 0);
 
@@ -2264,10 +2264,10 @@ void CWndDcdGridEki::OnCreate_Header()
 				//CString	aString;
 				//aString.LoadString(IDS_WORD_EkiTrack2Count);
 				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
-				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("‰º‚èƒJƒXƒ^ƒ}ƒCƒY•\(’…/”Ôü/”­/—ñÔ”Ô†/‰^—p”Ô†E’i”/í•Ê/—ñÔ–¼/n”­‰w/I’…‰w)"));
+				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("ä¸‹ã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨(ç€æ™‚åˆ»/ç•ªç·š/ç™ºæ™‚åˆ»/åˆ—è»Šç•ªå·/é‹ç”¨ç•ªå·ãƒ»æ®µæ•°/ç¨®åˆ¥/åˆ—è»Šå/å§‹ç™ºé§…/çµ‚ç€é§…)"));
 			}
 			{
-				//	ã‚èƒJƒXƒ^ƒ}ƒCƒY•\
+				//	ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨
 				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayNobori), 0);
 
@@ -2280,10 +2280,10 @@ void CWndDcdGridEki::OnCreate_Header()
 				//CString	aString;
 				//aString.LoadString(IDS_WORD_EkiTrack2Count);
 				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
-				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("ã‚èƒJƒXƒ^ƒ}ƒCƒY•\(’…/”Ôü/”­/—ñÔ”Ô†/‰^—p”Ô†E’i”/í•Ê/—ñÔ–¼/n”­‰w/I’…‰w)"));
+				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("ä¸Šã‚Šã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨(ç€æ™‚åˆ»/ç•ªç·š/ç™ºæ™‚åˆ»/åˆ—è»Šç•ªå·/é‹ç”¨ç•ªå·ãƒ»æ®µæ•°/ç¨®åˆ¥/åˆ—è»Šå/å§‹ç™ºé§…/çµ‚ç€é§…)"));
 			}
 			{
-				//	İü•\•\¦İ’è
+				//	åœ¨ç·šè¡¨è¡¨ç¤ºè¨­å®š
 				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_DiagramTrackDisplay), 0);
 
@@ -2295,10 +2295,10 @@ void CWndDcdGridEki::OnCreate_Header()
 				//CString	aString;
 				//aString.LoadString(IDS_WORD_EkiTrack2Count);
 				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
-				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("İü•\"));
+				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("åœ¨ç·šè¡¨"));
 			}
 			{
-				//	ƒ_ƒCƒ„ƒOƒ‰ƒ€—ñÔî•ñ•\¦
+				//	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åˆ—è»Šæƒ…å ±è¡¨ç¤º
 				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_DiagramRessyajouhouHyoujiKudari), 0);
 
@@ -2311,10 +2311,10 @@ void CWndDcdGridEki::OnCreate_Header()
 				//CString	aString;
 				//aString.LoadString(IDS_WORD_EkiTrack2Count);
 				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
-				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("—ñÔî•ñ(‰º‚è/ã‚è)"));
+				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("åˆ—è»Šæƒ…å ±(ä¸‹ã‚Š/ä¸Šã‚Š)"));
 			}
 			{
-				//	‚±‚Ì‰w‚©‚çŸ‚Ì‰w‚Ü‚Å‚Ì‹——£
+				//	ã“ã®é§…ã‹ã‚‰æ¬¡ã®é§…ã¾ã§ã®è·é›¢
 				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_NextEkiDistance), 0);
 
@@ -2326,10 +2326,10 @@ void CWndDcdGridEki::OnCreate_Header()
 				//CString	aString;
 				//aString.LoadString(IDS_WORD_EkiTrack2Count);
 				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
-				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("‰wŠÔ‹——£"));
+				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("é§…é–“è·é›¢"));
 			}
 			{
-				//	‚±‚Ì‰w‚©‚çŸ‚Ì‰w‚Ü‚Å‚Ì”wŒiFİ’è
+				//	ã“ã®é§…ã‹ã‚‰æ¬¡ã®é§…ã¾ã§ã®èƒŒæ™¯è‰²è¨­å®š
 				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_DiagramColorNextEki), 0);
 
@@ -2341,10 +2341,10 @@ void CWndDcdGridEki::OnCreate_Header()
 				//CString	aString;
 				//aString.LoadString(IDS_WORD_EkiTrack2Count);
 				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
-				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("‰wŠÔ”wŒiF"));
+				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("é§…é–“èƒŒæ™¯è‰²"));
 			}
 			{
-				//	” ƒ_ƒCƒ„‚Å•\¦‚·‚é‚©”Û‚©
+				//	ç®±ãƒ€ã‚¤ãƒ¤ã§è¡¨ç¤ºã™ã‚‹ã‹å¦ã‹
 				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationTableDisplayJikoku), 0);
 
@@ -2356,13 +2356,13 @@ void CWndDcdGridEki::OnCreate_Header()
 				//CString	aString;
 				//aString.LoadString(IDS_WORD_EkiTrack2Count);
 				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
-				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("” ƒ_ƒCƒ„"));
+				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("ç®±ãƒ€ã‚¤ãƒ¤"));
 			}
 		}
 		else
 		{
 			{
-				//	•ªŠò‰wİ’è
+				//	åˆ†å²é§…è¨­å®š
 				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_EkiBrunch), 0);
 
@@ -2377,7 +2377,7 @@ void CWndDcdGridEki::OnCreate_Header()
 				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
 			}
 			{
-				//	ŠÂóüİ’è
+				//	ç’°çŠ¶ç·šè¨­å®š
 				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_EkiLoop), 0);
 
@@ -2395,7 +2395,7 @@ void CWndDcdGridEki::OnCreate_Header()
 }
 
 	// --------------------------------
-	//@name ƒƒjƒ…[ƒRƒ}ƒ“ƒh‚Ì‰º¿ŠÖ”
+	//@name ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚³ãƒãƒ³ãƒ‰ã®ä¸‹è«‹é–¢æ•°
 	// --------------------------------
 int CWndDcdGridEki::OnEditCut_Process( BOOL bQueryEnable )
 {
@@ -2405,17 +2405,17 @@ int CWndDcdGridEki::OnEditCut_Process( BOOL bQueryEnable )
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;}
 	
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if ( iRv >= 0 )
 	{
 		//if (!createCmd(CWndDcdGridEki::ECreateCmd_Focus, ppCmd))
 		if ( !createCmd( CWndDcdGridEki::ECreateCmd_Sequence , ppCmd ) )
 		{
-			iRv = -1 ;	//	ƒZƒ‹‚ÌˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	ã‚»ãƒ«ã®ä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
-	//ŠîŠ²‰w‚¨‚æ‚ÑI“_‰w‚É‚È‚Á‚Ä‚¢‚éê‡‚ÍAƒRƒ}ƒ“ƒh–³Œø‚Å‚·B
+	//åŸºå¹¹é§…ãŠã‚ˆã³çµ‚ç‚¹é§…ã«ãªã£ã¦ã„ã‚‹å ´åˆã¯ã€ã‚³ãƒãƒ³ãƒ‰ç„¡åŠ¹ã§ã™ã€‚
 	if (iRv >= 0)
 	{
 		if (getCSelect()->getSelectedCellCount() == 0)
@@ -2430,11 +2430,11 @@ int CWndDcdGridEki::OnEditCut_Process( BOOL bQueryEnable )
 				{
 					if (pCentDedEkiCont->get(idx)->getBrunchCoreEkiIndex() == iEkiIndexSelect)
 					{
-						iRv = -2; //‘I‘ğ‚³‚ê‚½‰w‚ÍA‘¼‚Ì‰w‚©‚çŠîŠ²‰w‚Éw’è‚³‚ê‚Ä‚¢‚Ü‚·
+						iRv = -2; //é¸æŠã•ã‚ŒãŸé§…ã¯ã€ä»–ã®é§…ã‹ã‚‰åŸºå¹¹é§…ã«æŒ‡å®šã•ã‚Œã¦ã„ã¾ã™
 					}
 					else if (pCentDedEkiCont->get(idx)->getLoopOriginEkiIndex() == iEkiIndexSelect)
 					{
-						iRv = -3; //‘I‘ğ‚³‚ê‚½‰w‚ÍA‘¼‚Ì‰w‚©‚ç‹N“_‰w‚Éw’è‚³‚ê‚Ä‚¢‚Ü‚·
+						iRv = -3; //é¸æŠã•ã‚ŒãŸé§…ã¯ã€ä»–ã®é§…ã‹ã‚‰èµ·ç‚¹é§…ã«æŒ‡å®šã•ã‚Œã¦ã„ã¾ã™
 					}
 				}
 			}
@@ -2457,11 +2457,11 @@ int CWndDcdGridEki::OnEditCut_Process( BOOL bQueryEnable )
 						{
 							if (pCentDedEkiCont->get(idx)->getBrunchCoreEkiIndex() == iEkiIndexSelect)
 							{
-								iRv = -2; //‘I‘ğ‚³‚ê‚½‰w‚ÍA‘¼‚Ì‰w‚©‚çŠîŠ²‰w‚Éw’è‚³‚ê‚Ä‚¢‚Ü‚·
+								iRv = -2; //é¸æŠã•ã‚ŒãŸé§…ã¯ã€ä»–ã®é§…ã‹ã‚‰åŸºå¹¹é§…ã«æŒ‡å®šã•ã‚Œã¦ã„ã¾ã™
 							}
 							else if (pCentDedEkiCont->get(idx)->getLoopOriginEkiIndex() == iEkiIndexSelect)
 							{
-								iRv = -3; //‘I‘ğ‚³‚ê‚½‰w‚ÍA‘¼‚Ì‰w‚©‚ç‹N“_‰w‚Éw’è‚³‚ê‚Ä‚¢‚Ü‚·
+								iRv = -3; //é¸æŠã•ã‚ŒãŸé§…ã¯ã€ä»–ã®é§…ã‹ã‚‰èµ·ç‚¹é§…ã«æŒ‡å®šã•ã‚Œã¦ã„ã¾ã™
 							}
 						}
 					}
@@ -2473,28 +2473,28 @@ int CWndDcdGridEki::OnEditCut_Process( BOOL bQueryEnable )
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// -------------------------------- 
-		//	ƒNƒŠƒbƒvƒ{[ƒh‚É“]‘—
+		//	ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã«è»¢é€
 		// --------------------------------
 		getCDiagramEditDoc()->CentDedEki_To_Cliboard( 
 			pCmd->getCaMuiSelect() ) ;
 
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†
 		// --------------------------------
 		{
 			pCmd->getCaMuiSelect()->erase( 0 , INT_MAX ) ;
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -2510,40 +2510,40 @@ int CWndDcdGridEki::OnEditCopy_Process( BOOL bQueryEnable )
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;}
 	
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if ( iRv >= 0 )
 	{
 		if ( !createCmd( CWndDcdGridEki::ECreateCmd_Select , ppCmd ) )
 		{
-			iRv = -1 ;	//	ƒZƒ‹‚ÌˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	ã‚»ãƒ«ã®ä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// -------------------------------- 
-		//	ƒNƒŠƒbƒvƒ{[ƒh‚É“]‘—
+		//	ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã«è»¢é€
 		// --------------------------------
 		getCDiagramEditDoc()->CentDedEki_To_Cliboard( 
 			pCmd->getCaMuiSelect() ) ;
 
 		// -------------------------------- 
-		//	ƒtƒH[ƒJƒXƒZƒ‹‚ğA‘I‘ğ—v‘f’†‚ÅÅ‘å‚Ì‰wIndex‚ÌŸˆÊ‚ÉˆÚ“®
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã‚’ã€é¸æŠè¦ç´ ä¸­ã§æœ€å¤§ã®é§…Indexã®æ¬¡ä½ã«ç§»å‹•
 		// --------------------------------
 		{
-			//	ƒZƒ‹‘I‘ğ‚ğƒNƒŠƒA‚µA
-			//	ƒtƒH[ƒJƒXƒZƒ‹‚ÌˆÚ“®‚É‚æ‚éƒZƒ‹‘I‘ğ‚ğ–³Œø‰»‚µ‚Ü‚·B
+			//	ã‚»ãƒ«é¸æŠã‚’ã‚¯ãƒªã‚¢ã—ã€
+			//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ç§»å‹•ã«ã‚ˆã‚‹ã‚»ãƒ«é¸æŠã‚’ç„¡åŠ¹åŒ–ã—ã¾ã™ã€‚
 			clearSelect() ;
 			CPropStack	aPropStack( this ) ;
 			aPropStack
 				.CBoxSelect_setIsEnable( false )
 				.CRandomSelect_setIsEnable( false )  ;
 		
-			//	‘I‘ğ—v‘f’†‚ÅÅ‘å‚Ì‰wIndex ‚ğ‹‚ß‚é
+			//	é¸æŠè¦ç´ ä¸­ã§æœ€å¤§ã®é§…Index ã‚’æ±‚ã‚ã‚‹
 			int iEkiIndexMax = -1 ;
 			{
 				CaMuiSelect<CentDedEki>* pCaMuiSelect = pCmd->getCaMuiSelect() ;
@@ -2556,16 +2556,16 @@ int CWndDcdGridEki::OnEditCopy_Process( BOOL bQueryEnable )
 					}
 				}
 			}
-			//iEkiIndexMax = ‘I‘ğ‚³‚ê‚Ä‚¢‚é—ñÔ‚Ì‚¤‚¿AÅ‘å‚ÌIndex
+			//iEkiIndexMax = é¸æŠã•ã‚Œã¦ã„ã‚‹åˆ—è»Šã®ã†ã¡ã€æœ€å¤§ã®Index
 
-			//	ˆÚ“®æ‚ÌƒtƒH[ƒJƒXƒZƒ‹ˆÊ’u‚ğŒˆ’è
+			//	ç§»å‹•å…ˆã®ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ä½ç½®ã‚’æ±ºå®š
 			int iYColumnNmber = -1 ;
 			{
 				CdEkiYColSpecCont aCdEkiYColSpecCont = createYColSpecCont() ;
 				iYColumnNmber = aCdEkiYColSpecCont.ColumnNumberFromSpec( 
 					CdEkiYColSpec( CdEkiYColSpec::ColumnType_Eki , iEkiIndexMax ) ) + 1 ;
 			}
-			//	ƒtƒH[ƒJƒX‚ğˆÚ“®
+			//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’ç§»å‹•
 			{
 				CdDcdPosXy posxyFocusCellColumnNumber 
 					= getCFocus()->getFocusCellColumnNumber() ;
@@ -2580,7 +2580,7 @@ int CWndDcdGridEki::OnEditCopy_Process( BOOL bQueryEnable )
 
 
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -2597,13 +2597,13 @@ int CWndDcdGridEki::OnEditPaste_Process( BOOL bQueryEnable )
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;}
 	
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if ( iRv >= 0 )
 	{
 		if ( !createCmd( CWndDcdGridEki::ECreateCmd_NewItem , ppCmd ) )
 		{
-			iRv = -1 ;	//	ƒZƒ‹‚ÌˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	ã‚»ãƒ«ã®ä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	if ( iRv >= 0 )
@@ -2611,30 +2611,30 @@ int CWndDcdGridEki::OnEditPaste_Process( BOOL bQueryEnable )
 		if ( !getCDiagramEditDoc()->CentDedEki_IsClipboardFormatAvailable() &&
 			!getCDiagramEditDoc()->UnicodeText_IsClipboardFormatAvailable())
 		{
-			iRv = -2 ;	//	ƒNƒŠƒbƒvƒ{[ƒh‚É‰w‚Ìƒf[ƒ^‚ª‚ ‚è‚Ü‚¹‚ñ
+			iRv = -2 ;	//	ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã«é§…ã®ãƒ‡ãƒ¼ã‚¿ãŒã‚ã‚Šã¾ã›ã‚“
 		}
 	}
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// -------------------------------- 
-		//	ƒNƒŠƒbƒvƒ{[ƒh‚©‚çƒf[ƒ^‚ğæ“¾
+		//	ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã‹ã‚‰ãƒ‡ãƒ¼ã‚¿ã‚’å–å¾—
 		// --------------------------------
 		CentDedEkiCont	aEkiCont ;
 		iRv = getCDiagramEditDoc()->CentDedEki_From_Cliboard( &aEkiCont ) ;
 		if (iRv >= 0 && aEkiCont.size() > 0)
 		{
 			// --------------------------------
-			//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì‰w‚ğ•ÒW
+			//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®é§…ã‚’ç·¨é›†
 			// --------------------------------
-			//	CWndDcdGridEki::ECreateCmd_NewItem ‚É‚æ‚Á‚Ä¶¬‚³‚ê‚½
-			//	V‹KƒAƒCƒeƒ€‚Ííœ‚µ‚Ü‚·B
+			//	CWndDcdGridEki::ECreateCmd_NewItem ã«ã‚ˆã£ã¦ç”Ÿæˆã•ã‚ŒãŸ
+			//	æ–°è¦ã‚¢ã‚¤ãƒ†ãƒ ã¯å‰Šé™¤ã—ã¾ã™ã€‚
 			pCmd->getCaMuiSelect()->erase( 0 , INT_MAX ) ;
 
-			//	ƒRƒ}ƒ“ƒh‚ÉƒNƒŠƒbƒvƒ{[ƒh‚©‚ç‚ÌƒAƒCƒeƒ€‚ğ’Ç‰Á‚µ‚Ü‚·B
+			//	ã‚³ãƒãƒ³ãƒ‰ã«ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã‹ã‚‰ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 			CaMui<CentDedEki> aCaMui( pCmd->getCaMuiSelect() ) ;
 			aCaMui.insert( &aEkiCont , 0 , INT_MAX , 0 ) ;
 
@@ -2648,7 +2648,7 @@ int CWndDcdGridEki::OnEditPaste_Process( BOOL bQueryEnable )
 			//	}
 			//}
 
-			//ƒAƒCƒeƒ€“à‚ÉA•ªŠò‰wİ’èEŠÂóüİ’è‚ª—LŒø‚È‰w‚ª‚ ‚éê‡‚ÍA‚»‚ê‚ğ‰ğœ‚µ‚Ü‚·B
+			//ã‚¢ã‚¤ãƒ†ãƒ å†…ã«ã€åˆ†å²é§…è¨­å®šãƒ»ç’°çŠ¶ç·šè¨­å®šãŒæœ‰åŠ¹ãªé§…ãŒã‚ã‚‹å ´åˆã¯ã€ãã‚Œã‚’è§£é™¤ã—ã¾ã™ã€‚
 			//CaMuiSelect<CentDedEki>* pCaMuiSelect = pCmd->getCaMuiSelect();
 			for (int idx = 0; idx < pCmd->getCaMuiSelect()->/*getMuPtr()->*/size(); idx++)
 			{
@@ -2656,7 +2656,7 @@ int CWndDcdGridEki::OnEditPaste_Process( BOOL bQueryEnable )
 				pCmd->getCaMuiSelect()->getMuPtr()->get(idx)->setLoopOriginEkiIndex(-1);
 			}
 			// --------------------------------
-			//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+			//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 			// --------------------------------
 			{
 				getCDiagramEditDoc()->executeEditCmd(pCmd);
@@ -2675,7 +2675,7 @@ int CWndDcdGridEki::OnEditClear_Process( BOOL bQueryEnable )
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;}
 	
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
@@ -2690,10 +2690,10 @@ int CWndDcdGridEki::OnEditClear_Process( BOOL bQueryEnable )
 		//if (!createCmd(CWndDcdGridEki::ECreateCmd_Focus, ppCmd))
 		if ( !createCmd( CWndDcdGridEki::ECreateCmd_Sequence , ppCmd ) )
 		{
-			iRv = -1 ;	//	ƒZƒ‹‚ÌˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1 ;	//	ã‚»ãƒ«ã®ä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
-	//”í‹¤—L‘ÎÛ‚É‚È‚Á‚Ä‚¢‚éê‡‚ÍAƒRƒ}ƒ“ƒh–³Œø‚Å‚·B
+	//è¢«å…±æœ‰å¯¾è±¡ã«ãªã£ã¦ã„ã‚‹å ´åˆã¯ã€ã‚³ãƒãƒ³ãƒ‰ç„¡åŠ¹ã§ã™ã€‚
 	if (iRv >= 0)
 	{
 		if (getCSelect()->getSelectedCellCount() == 0)
@@ -2708,11 +2708,11 @@ int CWndDcdGridEki::OnEditClear_Process( BOOL bQueryEnable )
 				{
 					if (pCentDedEkiCont->get(idx)->getBrunchCoreEkiIndex() == iEkiIndexSelect)
 					{
-						iRv = -2; //‘I‘ğ‚³‚ê‚½‰w‚ÍA‘¼‚Ì‰w‚©‚çŠîŠ²‰w‚Éw’è‚³‚ê‚Ä‚¢‚Ü‚·
+						iRv = -2; //é¸æŠã•ã‚ŒãŸé§…ã¯ã€ä»–ã®é§…ã‹ã‚‰åŸºå¹¹é§…ã«æŒ‡å®šã•ã‚Œã¦ã„ã¾ã™
 					}
 					else if (pCentDedEkiCont->get(idx)->getLoopOriginEkiIndex() == iEkiIndexSelect)
 					{
-						iRv = -3; //‘I‘ğ‚³‚ê‚½‰w‚ÍA‘¼‚Ì‰w‚©‚ç‹N“_‰w‚Éw’è‚³‚ê‚Ä‚¢‚Ü‚·
+						iRv = -3; //é¸æŠã•ã‚ŒãŸé§…ã¯ã€ä»–ã®é§…ã‹ã‚‰èµ·ç‚¹é§…ã«æŒ‡å®šã•ã‚Œã¦ã„ã¾ã™
 					}
 				}
 			}
@@ -2735,11 +2735,11 @@ int CWndDcdGridEki::OnEditClear_Process( BOOL bQueryEnable )
 						{
 							if (pCentDedEkiCont->get(idx)->getBrunchCoreEkiIndex() == iEkiIndexSelect)
 							{
-								iRv = -2; //‘I‘ğ‚³‚ê‚½‰w‚ÍA‘¼‚Ì‰w‚©‚çŠîŠ²‰w‚Éw’è‚³‚ê‚Ä‚¢‚Ü‚·
+								iRv = -2; //é¸æŠã•ã‚ŒãŸé§…ã¯ã€ä»–ã®é§…ã‹ã‚‰åŸºå¹¹é§…ã«æŒ‡å®šã•ã‚Œã¦ã„ã¾ã™
 							}
 							else if (pCentDedEkiCont->get(idx)->getLoopOriginEkiIndex() == iEkiIndexSelect)
 							{
-								iRv = -3; //‘I‘ğ‚³‚ê‚½‰w‚ÍA‘¼‚Ì‰w‚©‚ç‹N“_‰w‚Éw’è‚³‚ê‚Ä‚¢‚Ü‚·
+								iRv = -3; //é¸æŠã•ã‚ŒãŸé§…ã¯ã€ä»–ã®é§…ã‹ã‚‰èµ·ç‚¹é§…ã«æŒ‡å®šã•ã‚Œã¦ã„ã¾ã™
 							}
 						}
 					}
@@ -2751,22 +2751,22 @@ int CWndDcdGridEki::OnEditClear_Process( BOOL bQueryEnable )
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚Ì—ñÔ‚ğ•ÒW
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆ—è»Šã‚’ç·¨é›†
 		// --------------------------------
 		{
 			pCmd->getCaMuiSelect()->erase( 0 , INT_MAX ) ;
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒg‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å®Ÿè¡Œ
 		// --------------------------------
 		{
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -2776,39 +2776,39 @@ int CWndDcdGridEki::OnEditClear_Process( BOOL bQueryEnable )
 }
 
 	/*	
-		[•ÒW]-[‰w‚ğ‘}“ü]
+		[ç·¨é›†]-[é§…ã‚’æŒ¿å…¥]
 	@return
-		¬Œ÷‚µ‚½‚ç0ˆÈãAƒGƒ‰[‚È‚ç•‰‚Ì”‚Å‚·B
+		æˆåŠŸã—ãŸã‚‰0ä»¥ä¸Šã€ã‚¨ãƒ©ãƒ¼ãªã‚‰è² ã®æ•°ã§ã™ã€‚
 	*/
 int CWndDcdGridEki:: OnEDITEkiInsert_Process( BOOL bQueryEnable )
 {
 	int iRv = 0 ;
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if ( execEkiPropDlg( true , TRUE ) < 0 )
 	{
-		iRv = -1 ;	//	ƒtƒH[ƒJƒX‚ÌˆÊ’u‚ª•s³‚Å‚·B
+		iRv = -1 ;	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã®ä½ç½®ãŒä¸æ­£ã§ã™ã€‚
 	}
 
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		execEkiPropDlg( true , FALSE ) ;
 
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 		if ( iRv < 0 )
 		{
 			CString strErrorMessage ;
 			switch( iRv )
 			{
-			case -1 :	//	Œ»İ‚ÍÀs‚Å‚«‚Ü‚¹‚ñB
+			case -1 :	//	ç¾åœ¨ã¯å®Ÿè¡Œã§ãã¾ã›ã‚“ã€‚
 				break ;
 			default:
 				strErrorMessage.Format( _T( "Error=%d" ) , iRv ) ;
@@ -2829,10 +2829,10 @@ int CWndDcdGridEki::OnEditEkiInvert_Process( BOOL bQueryEnable )
 	int iRv = 0 ;
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚ÌÀs‰Â”Û‚Ì”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œå¯å¦ã®åˆ¤å®š
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚ÌÀs‚Ì‰Â”Û‚ğ”»’è‚µ‚Ü‚·B
-	//	ƒRƒ}ƒ“ƒh‚ªÀs•s‰Â”\‚È‚çA iRv ‚É•‰‚Ì”‚ğİ’è‚µ‚Ä‚­‚¾‚³‚¢B
+	//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œã®å¯å¦ã‚’åˆ¤å®šã—ã¾ã™ã€‚
+	//	ã‚³ãƒãƒ³ãƒ‰ãŒå®Ÿè¡Œä¸å¯èƒ½ãªã‚‰ã€ iRv ã«è² ã®æ•°ã‚’è¨­å®šã—ã¦ãã ã•ã„ã€‚
 
 	const CentDedRosen*	pCentDedRosen = getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen() ;
 	const Mu<const CentDedEki*>* pCentDedEkiContGet = pCentDedRosen->getCentDedEkiCont()->getMuPtr() ;
@@ -2842,16 +2842,16 @@ int CWndDcdGridEki::OnEditEkiInvert_Process( BOOL bQueryEnable )
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ğÀs‚µ‚Ü‚·B
-		//	Œ‹‰Ê‚ªƒGƒ‰[‚È‚çAiRv ‚É•‰‚Ì”‚ğİ’è‚µ‚Ü‚·B
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œã—ã¾ã™ã€‚
+		//	çµæœãŒã‚¨ãƒ©ãƒ¼ãªã‚‰ã€iRv ã«è² ã®æ•°ã‚’è¨­å®šã—ã¾ã™ã€‚
 
 		//CentDedRosen	aRosenNew ;
 		CDedRosenFileData aCDedRosenFileData = *getCDiagramEditDoc()->getCDedRosenFileData();
 		if (iRv >= 0)
 		{
-			//	˜Hü‚ğæ“¾ŒãAã‰º‚ğ”½“]‚µ‚Ü‚·B
+			//	è·¯ç·šã‚’å–å¾—å¾Œã€ä¸Šä¸‹ã‚’åè»¢ã—ã¾ã™ã€‚
 			//aRosenNew = *pCentDedRosen ;
 			//aRosenNew.invert() ;
 
@@ -2865,10 +2865,10 @@ int CWndDcdGridEki::OnEditEkiInvert_Process( BOOL bQueryEnable )
 			aCdDedDispProp.setDisplayOuterTerminalT(bOrigin);
 
 			aCDedRosenFileData.setCdDedDispProp(aCdDedDispProp);
-			//	XVƒRƒ}ƒ“ƒh‚ğ¶¬
+			//	æ›´æ–°ã‚³ãƒãƒ³ãƒ‰ã‚’ç”Ÿæˆ
 		}
 		// --------------------------------
-		//	ƒRƒ}ƒ“ƒh‚ğ¶¬EÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚’ç”Ÿæˆãƒ»å®Ÿè¡Œ
 		// --------------------------------
 		if (iRv >= 0)
 		{
@@ -2886,14 +2886,14 @@ int CWndDcdGridEki::OnEditEkiInvert_Process( BOOL bQueryEnable )
 		//	getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		//}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 		if ( iRv < 0 )
 		{
 			CString strErrorMessage ;
 			switch( iRv )
 			{
-			case -1 :	//	Œ»İ‚ÍÀs‚Å‚«‚Ü‚¹‚ñB
+			case -1 :	//	ç¾åœ¨ã¯å®Ÿè¡Œã§ãã¾ã›ã‚“ã€‚
 				break ;
 			default:
 				strErrorMessage.Format( _T( "Error=%d" ) , iRv ) ;
@@ -2910,18 +2910,18 @@ int CWndDcdGridEki::OnEditEkiInvert_Process( BOOL bQueryEnable )
 }
 
 	/*	
-		[•ÒW]-[‰w‚ÌƒvƒƒpƒeƒB]
+		[ç·¨é›†]-[é§…ã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£]
 	*/
 int CWndDcdGridEki:: OnEDITEkiProp_Process( BOOL bQueryEnable )
 {
 	int iRv = 0 ;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 
-	//	ƒtƒH[ƒJƒXƒZƒ‹‚ªV‹KƒAƒCƒeƒ€ˆÊ’u‚É‚ ‚é‚Æ‚«‚ÍA
-	//	uV‹KƒAƒCƒeƒ€‚ÌƒvƒƒpƒeƒB“ü—Í‚ğs‚¢A‚»‚ê‚ğ––”ö‚É‘}“ü‚·‚év‚Æ‚¢‚¤
-	//	“®ì‚É‚È‚è‚Ü‚·B
+	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒæ–°è¦ã‚¢ã‚¤ãƒ†ãƒ ä½ç½®ã«ã‚ã‚‹ã¨ãã¯ã€
+	//	ã€Œæ–°è¦ã‚¢ã‚¤ãƒ†ãƒ ã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£å…¥åŠ›ã‚’è¡Œã„ã€ãã‚Œã‚’æœ«å°¾ã«æŒ¿å…¥ã™ã‚‹ã€ã¨ã„ã†
+	//	å‹•ä½œã«ãªã‚Šã¾ã™ã€‚
 	bool bInsert = false ;
 	CdEkiYColSpec aYColSpec = getYColSpecOfFocus() ;
 	if ( aYColSpec.getColumnType() == CdEkiYColSpec::ColumnType_NewEki )
@@ -2931,21 +2931,21 @@ int CWndDcdGridEki:: OnEDITEkiProp_Process( BOOL bQueryEnable )
 
 	if ( execEkiPropDlg( bInsert , TRUE ) < 0 )
 	{
-		iRv = -1 ;	//	-1 ;	//	ƒtƒH[ƒJƒXƒZƒ‹‚ÌˆÊ’u‚ª•s³‚Å‚·B
+		iRv = -1 ;	//	-1 ;	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ä½ç½®ãŒä¸æ­£ã§ã™ã€‚
 	}
 	// ****************************************************************
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ğÀs‚µ‚Ü‚·B
-		//	Œ‹‰Ê‚ªƒGƒ‰[‚È‚çAiRv ‚É•‰‚Ì”‚ğİ’è‚µ‚Ü‚·B
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œã—ã¾ã™ã€‚
+		//	çµæœãŒã‚¨ãƒ©ãƒ¼ãªã‚‰ã€iRv ã«è² ã®æ•°ã‚’è¨­å®šã—ã¾ã™ã€‚
 
 		execEkiPropDlg( bInsert , FALSE ) ;
 
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 		// ****************************************************************
 	}
@@ -2953,18 +2953,18 @@ int CWndDcdGridEki:: OnEDITEkiProp_Process( BOOL bQueryEnable )
 }
 
 /*
-	[•ÒW]-[Œğ·xáƒ`ƒFƒbƒNƒ‹[ƒ‹•ÒW]
+	[ç·¨é›†]-[äº¤å·®æ”¯éšœãƒã‚§ãƒƒã‚¯ãƒ«ãƒ¼ãƒ«ç·¨é›†]
 */
 int CWndDcdGridEki::OnEDITCrossingCheckRuleDlg_Process(BOOL bQueryEnable)
 {
 	int iRv = 0;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 
-	//	ƒtƒH[ƒJƒXƒZƒ‹‚ªV‹KƒAƒCƒeƒ€ˆÊ’u‚É‚ ‚é‚Æ‚«‚ÍA
-	//	uV‹KƒAƒCƒeƒ€‚ÌƒvƒƒpƒeƒB“ü—Í‚ğs‚¢A‚»‚ê‚ğ––”ö‚É‘}“ü‚·‚év‚Æ‚¢‚¤
-	//	“®ì‚É‚È‚è‚Ü‚·B
+	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒæ–°è¦ã‚¢ã‚¤ãƒ†ãƒ ä½ç½®ã«ã‚ã‚‹ã¨ãã¯ã€
+	//	ã€Œæ–°è¦ã‚¢ã‚¤ãƒ†ãƒ ã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£å…¥åŠ›ã‚’è¡Œã„ã€ãã‚Œã‚’æœ«å°¾ã«æŒ¿å…¥ã™ã‚‹ã€ã¨ã„ã†
+	//	å‹•ä½œã«ãªã‚Šã¾ã™ã€‚
 	bool bInsert = false;
 	CdEkiYColSpec aYColSpec = getYColSpecOfFocus();
 	if (aYColSpec.getColumnType() == CdEkiYColSpec::ColumnType_NewEki)
@@ -2974,21 +2974,21 @@ int CWndDcdGridEki::OnEDITCrossingCheckRuleDlg_Process(BOOL bQueryEnable)
 
 	if (execCrossingCheckRuleDlg(bInsert, TRUE) < 0)
 	{
-		iRv = -1;	//	-1 ;	//	ƒtƒH[ƒJƒXƒZƒ‹‚ÌˆÊ’u‚ª•s³‚Å‚·B
+		iRv = -1;	//	-1 ;	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ä½ç½®ãŒä¸æ­£ã§ã™ã€‚
 	}
 	// ****************************************************************
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ğÀs‚µ‚Ü‚·B
-		//	Œ‹‰Ê‚ªƒGƒ‰[‚È‚çAiRv ‚É•‰‚Ì”‚ğİ’è‚µ‚Ü‚·B
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œã—ã¾ã™ã€‚
+		//	çµæœãŒã‚¨ãƒ©ãƒ¼ãªã‚‰ã€iRv ã«è² ã®æ•°ã‚’è¨­å®šã—ã¾ã™ã€‚
 
 		execCrossingCheckRuleDlg(bInsert, FALSE);
 
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 		// ****************************************************************
 	}
@@ -3004,20 +3004,20 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 	if (!bQueryEnable) { ppCmd = &pCmd; }
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
 		if (!createCmd(CWndDcdGridEki::ECreateCmd_Select, ppCmd))
 		{
-			iRv = -1;	//	ƒZƒ‹‚ÌˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1;	//	ã‚»ãƒ«ã®ä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	if (iRv >= 0)
 	{
 		if (!getDisplaySettingMode())
 		{
-			iRv = -2;	//	•\¦İ’èƒ‚[ƒh‚Å‚Í‚ ‚è‚Ü‚¹‚ñB
+			iRv = -2;	//	è¡¨ç¤ºè¨­å®šãƒ¢ãƒ¼ãƒ‰ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 
 	}
@@ -3027,7 +3027,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 		if (aXColSpec.getColumnType() < CdEkiXColSpec::EColumnType::ColumnType_OperationOriginDownBeforeUpAfter ||
 			aXColSpec.getColumnType() > CdEkiXColSpec::EColumnType::ColumnType_OperationTableDisplayJikoku)
 		{
-			iRv = -3;	//•ÒW‰Â”\‚È‚Ì‚ÍA‘OŒãì‹Æ—“İ’è`Ÿ‰w‚Ü‚Å‚Ì”wŒiF‚ÌŠÔ‚Å‚·B
+			iRv = -3;	//ç·¨é›†å¯èƒ½ãªã®ã¯ã€å‰å¾Œä½œæ¥­æ¬„è¨­å®šã€œæ¬¡é§…ã¾ã§ã®èƒŒæ™¯è‰²ã®é–“ã§ã™ã€‚
 		}
 
 	}
@@ -3035,7 +3035,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 
 		CdEkiXColSpec	aXColSpec = getXColSpecOfFocus();
@@ -3046,8 +3046,8 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			CentDedEki* pCentDedEki = muCentDedEki->get(idx);
 			if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationOriginDownBeforeUpAfter)
 			{
-				//‘OŒãì‹Æ—“‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­ˆÈŠO‚Ìê‡
-				//‚Ü‚½A‘Oì‹Æ—“‚ª‚È‚¢ê‡‚ÍA‘‰ğŒ‹—“‚à–³‚µ‚É‚È‚éB
+				//å‰å¾Œä½œæ¥­æ¬„ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºæ™‚åˆ»ä»¥å¤–ã®å ´åˆ
+				//ã¾ãŸã€å‰ä½œæ¥­æ¬„ãŒãªã„å ´åˆã¯ã€å¢—è§£çµæ¬„ã‚‚ç„¡ã—ã«ãªã‚‹ã€‚
 				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu&&
 					pCentDedEki->getJikokuhyouOperationOrigin() > 0)
 				{
@@ -3057,7 +3057,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationOrigin)
 			{
-				//‘OŒãì‹Æ—“‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­ˆÈŠO‚Ìê‡
+				//å‰å¾Œä½œæ¥­æ¬„ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºæ™‚åˆ»ä»¥å¤–ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu)
 				{
 					if (pCentDedEki->getJikokuhyouOperationOrigin() >= 3)
@@ -3073,8 +3073,8 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationOriginDownAfterUpBefore)
 			{
-				//‘OŒãì‹Æ—“‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­ˆÈŠO‚Ìê‡
-				//‚Ü‚½A‘Oì‹Æ—“‚ª‚È‚¢ê‡‚ÍA‘‰ğŒ‹—“‚à–³‚µ‚É‚È‚éB
+				//å‰å¾Œä½œæ¥­æ¬„ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºæ™‚åˆ»ä»¥å¤–ã®å ´åˆ
+				//ã¾ãŸã€å‰ä½œæ¥­æ¬„ãŒãªã„å ´åˆã¯ã€å¢—è§£çµæ¬„ã‚‚ç„¡ã—ã«ãªã‚‹ã€‚
 				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu &&
 					pCentDedEki->getJikokuhyouOperationOrigin() > 0)
 				{
@@ -3084,8 +3084,8 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationTerminalDownBeforeUpAfter)
 			{
-				//‘OŒãì‹Æ—“‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­ˆÈŠO‚Ìê‡
-				//‚Ü‚½AŒãì‹Æ—“‚ª‚È‚¢ê‡‚ÍA‘‰ğŒ‹—“‚à–³‚µ‚É‚È‚éB
+				//å‰å¾Œä½œæ¥­æ¬„ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºæ™‚åˆ»ä»¥å¤–ã®å ´åˆ
+				//ã¾ãŸã€å¾Œä½œæ¥­æ¬„ãŒãªã„å ´åˆã¯ã€å¢—è§£çµæ¬„ã‚‚ç„¡ã—ã«ãªã‚‹ã€‚
 				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu &&
 					pCentDedEki->getJikokuhyouOperationTerminal() > 0)
 				{
@@ -3095,7 +3095,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationTerminal)
 			{
-				//‘OŒãì‹Æ—“‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­ˆÈŠO‚Ìê‡
+				//å‰å¾Œä½œæ¥­æ¬„ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºæ™‚åˆ»ä»¥å¤–ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu)
 				{
 					if (pCentDedEki->getJikokuhyouOperationTerminal() >= 3)
@@ -3111,8 +3111,8 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationTerminalDownAfterUpBefore)
 			{
-				//‘OŒãì‹Æ—“‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­ˆÈŠO‚Ìê‡
-				//‚Ü‚½AŒãì‹Æ—“‚ª‚È‚¢ê‡‚ÍA‘‰ğŒ‹—“‚à–³‚µ‚É‚È‚éB
+				//å‰å¾Œä½œæ¥­æ¬„ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºæ™‚åˆ»ä»¥å¤–ã®å ´åˆ
+				//ã¾ãŸã€å¾Œä½œæ¥­æ¬„ãŒãªã„å ´åˆã¯ã€å¢—è§£çµæ¬„ã‚‚ç„¡ã—ã«ãªã‚‹ã€‚
 				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu &&
 					pCentDedEki->getJikokuhyouOperationTerminal() > 0)
 				{
@@ -3122,7 +3122,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_TrackOmit)
 			{
-				//”ÔüÈ—ª‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­E‰º‚è”­’…Eã‚è”­’…‚Ìê‡
+				//ç•ªç·šçœç•¥ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºæ™‚åˆ»ãƒ»ä¸‹ã‚Šç™ºç€ãƒ»ä¸Šã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -3132,8 +3132,8 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayKudari)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\‰º‚è’…‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…E‰º‚è’…E‰º‚è”­’…‚Ìê‡
-				//‚½‚¾‚µA”­•\¦‚ª–³Œø‚Ìê‡‚ÍA’…•\¦‚ğ—LŒø¨–³Œø‚É•ÏX‚µ‚È‚¢
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸‹ã‚Šç€æ™‚åˆ»ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸‹ã‚Šç€æ™‚åˆ»ãƒ»ä¸‹ã‚Šç™ºç€ã®å ´åˆ
+				//ãŸã ã—ã€ç™ºæ™‚åˆ»è¡¨ç¤ºãŒç„¡åŠ¹ã®å ´åˆã¯ã€ç€æ™‚åˆ»è¡¨ç¤ºã‚’æœ‰åŠ¹â†’ç„¡åŠ¹ã«å¤‰æ›´ã—ãªã„
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -3150,7 +3150,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayKudari)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\‰º‚è”Ôü‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…E‰º‚è’…Eã‚è’…E‰º‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸‹ã‚Šç•ªç·šãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸‹ã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç€æ™‚åˆ»ãƒ»ä¸‹ã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
@@ -3162,8 +3162,8 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayKudari)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\‰º‚è”­‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª‰º‚è’…ˆÈŠO‚Ìê‡
-				//‚½‚¾‚µA’…•\¦‚ª–³Œø‚Ìê‡‚ÍA”­•\¦‚ğ—LŒø¨–³Œø‚É•ÏX‚µ‚È‚¢
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸‹ã‚Šç™ºæ™‚åˆ»ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒä¸‹ã‚Šç€æ™‚åˆ»ä»¥å¤–ã®å ´åˆ
+				//ãŸã ã—ã€ç€æ™‚åˆ»è¡¨ç¤ºãŒç„¡åŠ¹ã®å ´åˆã¯ã€ç™ºæ™‚åˆ»è¡¨ç¤ºã‚’æœ‰åŠ¹â†’ç„¡åŠ¹ã«å¤‰æ›´ã—ãªã„
 				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku)
 				{
 					if (!pCentDedEki->getJikokuhyouHatsuJikokuDisplayKudari())
@@ -3178,7 +3178,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayKudari)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\‰º‚è—ñÔ”Ô†‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…Eã‚è’…E‰º‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸‹ã‚Šåˆ—è»Šç•ªå·ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸Šã‚Šç€æ™‚åˆ»ãƒ»ä¸‹ã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -3196,7 +3196,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayKudari)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\‰º‚è‰^—p”Ô†‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…Eã‚è’…E‰º‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸‹ã‚Šé‹ç”¨ç•ªå·ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸Šã‚Šç€æ™‚åˆ»ãƒ»ä¸‹ã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -3214,8 +3214,8 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsKudari)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\‰º‚è‰^—p”Ô†‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…Eã‚è’…E‰º‚è”­’…‚Ìê‡
-				//’i”‚ğ•ÏX‰Â”\‚È‚Ì‚ÍA‰^—p”Ô†—“‚ª‚ ‚éê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸‹ã‚Šé‹ç”¨ç•ªå·ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸Šã‚Šç€æ™‚åˆ»ãƒ»ä¸‹ã‚Šç™ºç€ã®å ´åˆ
+				//æ®µæ•°ã‚’å¤‰æ›´å¯èƒ½ãªã®ã¯ã€é‹ç”¨ç•ªå·æ¬„ãŒã‚ã‚‹å ´åˆ
 				if ((pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku) &&
@@ -3234,7 +3234,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayKudari)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\‰º‚è—ñÔí•Ê‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…Eã‚è’…E‰º‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸‹ã‚Šåˆ—è»Šç¨®åˆ¥ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸Šã‚Šç€æ™‚åˆ»ãƒ»ä¸‹ã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -3252,7 +3252,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayKudari)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\‰º‚è—ñÔ–¼‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…Eã‚è’…E‰º‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸‹ã‚Šåˆ—è»ŠåãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸Šã‚Šç€æ™‚åˆ»ãƒ»ä¸‹ã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -3270,7 +3270,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayKudari)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\‰º‚è˜HüŠOE‘O—ñÔn”­‰w‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…Eã‚è’…E‰º‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸‹ã‚Šè·¯ç·šå¤–ãƒ»å‰åˆ—è»Šå§‹ç™ºé§…ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸Šã‚Šç€æ™‚åˆ»ãƒ»ä¸‹ã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -3281,7 +3281,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayKudari)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\‰º‚è˜HüŠOEŸ—ñÔI’…‰w‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…E‰º‚è’…E‰º‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸‹ã‚Šè·¯ç·šå¤–ãƒ»æ¬¡åˆ—è»Šçµ‚ç€é§…ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸‹ã‚Šç€æ™‚åˆ»ãƒ»ä¸‹ã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -3292,8 +3292,8 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayNobori)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\ã‚è’…‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…Eã‚è’…Eã‚è”­’…‚Ìê‡
-				//‚½‚¾‚µA”­•\¦‚ª–³Œø‚Ìê‡‚ÍA’…•\¦‚ğ—LŒø¨–³Œø‚É•ÏX‚µ‚È‚¢
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸Šã‚Šç€æ™‚åˆ»ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸Šã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç™ºç€ã®å ´åˆ
+				//ãŸã ã—ã€ç™ºæ™‚åˆ»è¡¨ç¤ºãŒç„¡åŠ¹ã®å ´åˆã¯ã€ç€æ™‚åˆ»è¡¨ç¤ºã‚’æœ‰åŠ¹â†’ç„¡åŠ¹ã«å¤‰æ›´ã—ãªã„
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -3310,7 +3310,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayNobori)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\ã‚è”Ôü‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…E‰º‚è’…Eã‚è’…Eã‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸Šã‚Šç•ªç·šãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸‹ã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
@@ -3322,8 +3322,8 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayNobori)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\ã‚è”­‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ªã‚è’…ˆÈŠO‚Ìê‡
-				//‚½‚¾‚µA’…•\¦‚ª–³Œø‚Ìê‡‚ÍA”­•\¦‚ğ—LŒø¨–³Œø‚É•ÏX‚µ‚È‚¢
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸Šã‚Šç™ºæ™‚åˆ»ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒä¸Šã‚Šç€æ™‚åˆ»ä»¥å¤–ã®å ´åˆ
+				//ãŸã ã—ã€ç€æ™‚åˆ»è¡¨ç¤ºãŒç„¡åŠ¹ã®å ´åˆã¯ã€ç™ºæ™‚åˆ»è¡¨ç¤ºã‚’æœ‰åŠ¹â†’ç„¡åŠ¹ã«å¤‰æ›´ã—ãªã„
 				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku)
 				{
 					if (!pCentDedEki->getJikokuhyouHatsuJikokuDisplayNobori())
@@ -3338,7 +3338,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayNobori)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\ã‚è—ñÔ”Ô†‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…E‰º‚è’…Eã‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸Šã‚Šåˆ—è»Šç•ªå·ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸‹ã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -3356,7 +3356,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayNobori)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\ã‚è‰^—p”Ô†‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…E‰º‚è’…Eã‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸Šã‚Šé‹ç”¨ç•ªå·ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸‹ã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -3374,7 +3374,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsNobori)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\ã‚è‰^—p”Ô†‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…E‰º‚è’…Eã‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸Šã‚Šé‹ç”¨ç•ªå·ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸‹ã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç™ºç€ã®å ´åˆ
 				if ((pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)&&
@@ -3393,7 +3393,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayNobori)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\ã‚è—ñÔí•Ê‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…E‰º‚è’…Eã‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸Šã‚Šåˆ—è»Šç¨®åˆ¥ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸‹ã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -3411,7 +3411,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayNobori)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\ã‚è—ñÔ–¼‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…E‰º‚è’…Eã‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸Šã‚Šåˆ—è»ŠåãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸‹ã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -3429,7 +3429,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayNobori)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\ã‚è˜HüŠOE‘O—ñÔn”­‰w‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…E‰º‚è’…Eã‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸Šã‚Šè·¯ç·šå¤–ãƒ»å‰åˆ—è»Šå§‹ç™ºé§…ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸‹ã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -3440,7 +3440,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayNobori)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\ã‚è˜HüŠOEŸ—ñÔI’…‰w‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…Eã‚è’…Eã‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸Šã‚Šè·¯ç·šå¤–ãƒ»æ¬¡åˆ—è»Šçµ‚ç€é§…ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸Šã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -3451,7 +3451,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_DiagramTrackDisplay)
 			{
-				//İü•\•\¦‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…E‰º‚è’…Eã‚è’…‚©‚Âå—v‰w‚Ìê‡
+				//åœ¨ç·šè¡¨è¡¨ç¤ºãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸‹ã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç€æ™‚åˆ»ã‹ã¤ä¸»è¦é§…ã®å ´åˆ
 				if ((pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku) &&
@@ -3462,7 +3462,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_DiagramRessyajouhouHyoujiKudari)
 			{
-				//ƒ_ƒCƒ„ƒOƒ‰ƒ€—ñÔî•ñ•\¦(‰º‚è)
+				//ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åˆ—è»Šæƒ…å ±è¡¨ç¤º(ä¸‹ã‚Š)
 				if (pCentDedEki->getDiagramRessyajouhouHyoujiKudari() == CentDedEki::EDiagramRessyajouhouHyouji::DiagramRessyajouhouHyouji_Origin)
 				{
 					pCentDedEki->setDiagramRessyajouhouHyoujiKudari(CentDedEki::EDiagramRessyajouhouHyouji::DiagramRessyajouhouHyouji_Anytime);
@@ -3478,7 +3478,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_DiagramRessyajouhouHyoujiNobori)
 			{
-				//ƒ_ƒCƒ„ƒOƒ‰ƒ€—ñÔî•ñ•\¦(ã‚è)
+				//ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åˆ—è»Šæƒ…å ±è¡¨ç¤º(ä¸Šã‚Š)
 				if (pCentDedEki->getDiagramRessyajouhouHyoujiNobori() == CentDedEki::EDiagramRessyajouhouHyouji::DiagramRessyajouhouHyouji_Origin)
 				{
 					pCentDedEki->setDiagramRessyajouhouHyoujiNobori(CentDedEki::EDiagramRessyajouhouHyouji::DiagramRessyajouhouHyouji_Anytime);
@@ -3494,8 +3494,8 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_NextEkiDistance)
 			{
-				//‚±‚Ì‰w‚©‚çŸ‚Ì‰w‚Ü‚Å‚Ì‹——£
-				//iType‚É‚æ‚Á‚Ä‰ÁZŠÔ‚ğ•Ï‚¦‚ÄAChangeNextEkiDistance‚ğÀs‚·‚éB
+				//ã“ã®é§…ã‹ã‚‰æ¬¡ã®é§…ã¾ã§ã®è·é›¢
+				//iTypeã«ã‚ˆã£ã¦åŠ ç®—æ™‚é–“ã‚’å¤‰ãˆã¦ã€ChangeNextEkiDistanceã‚’å®Ÿè¡Œã™ã‚‹ã€‚
 				int iShiftSecond = 0;
 				if (iType == 0)
 				{
@@ -3515,7 +3515,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_DiagramColorNextEki)
 			{
-				//‚±‚Ì‰w‚©‚çŸ‚Ì‰w‚Ü‚Å‚Ì”wŒiFİ’è
+				//ã“ã®é§…ã‹ã‚‰æ¬¡ã®é§…ã¾ã§ã®èƒŒæ™¯è‰²è¨­å®š
 				if (pCentDedEki->getDiagramColorNextEki() >= 4)
 				{
 					pCentDedEki->setDiagramColorNextEki(0);
@@ -3528,7 +3528,7 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationTableDisplayJikoku)
 			{
-				//” ƒ_ƒCƒ„‚Å•\¦‚·‚é‚©”Û‚©
+				//ç®±ãƒ€ã‚¤ãƒ¤ã§è¡¨ç¤ºã™ã‚‹ã‹å¦ã‹
 				if (pCentDedEki->getBrunchCoreEkiIndex() == -1)
 				{
 					pCentDedEki->setOperationTableDisplayJikoku(!pCentDedEki->getOperationTableDisplayJikoku());
@@ -3537,12 +3537,12 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 
 			vector<int> iEkiTrack2Map;
 			vector<int> iOuterTerminalEkimeiMap;
-			//‰w”Ôü‚Ì•ÏXˆ—‚Ì‚½‚ß‚ÌMap‚ğ‰Šú‰»‚·‚é
+			//é§…ç•ªç·šã®å¤‰æ›´å‡¦ç†ã®ãŸã‚ã®Mapã‚’åˆæœŸåŒ–ã™ã‚‹
 			for (int idx = 0; idx < pCentDedEki->getEkiTrack2Cont()->size(); idx++)
 			{
 				iEkiTrack2Map.push_back(idx);
 			}
-			//˜HüŠO”­’…‰w‚Ì•ÏXˆ—‚Ì‚½‚ß‚ÌMap‚ğ‰Šú‰»‚·‚é
+			//è·¯ç·šå¤–ç™ºç€é§…ã®å¤‰æ›´å‡¦ç†ã®ãŸã‚ã®Mapã‚’åˆæœŸåŒ–ã™ã‚‹
 			for (int idx = 0; idx < pCentDedEki->getOuterTerminalEkimeiCount(); idx++)
 			{
 				iOuterTerminalEkimeiMap.push_back(idx);
@@ -3554,13 +3554,13 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 		if (iRv >= 0)
 		{
 			// --------------------------------
-			//	•ÒWƒRƒ}ƒ“ƒh‚ğÀs
+			//	ç·¨é›†ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œ
 			// --------------------------------
 			getCDiagramEditDoc()->executeEditCmd(pCmd);
 		}
 
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -3575,20 +3575,20 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 	if (!bQueryEnable) { ppCmd = &pCmd; }
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
 		if (!createCmd(CWndDcdGridEki::ECreateCmd_Select, ppCmd))
 		{
-			iRv = -1;	//	ƒZƒ‹‚ÌˆÊ’u‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB
+			iRv = -1;	//	ã‚»ãƒ«ã®ä½ç½®ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 	}
 	if (iRv >= 0)
 	{
 		if (!getDisplaySettingMode())
 		{
-			iRv = -2;	//	•\¦İ’èƒ‚[ƒh‚Å‚Í‚ ‚è‚Ü‚¹‚ñB
+			iRv = -2;	//	è¡¨ç¤ºè¨­å®šãƒ¢ãƒ¼ãƒ‰ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
 		}
 
 	}
@@ -3598,7 +3598,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 		if (aXColSpec.getColumnType() < CdEkiXColSpec::EColumnType::ColumnType_OperationOriginDownBeforeUpAfter ||
 			aXColSpec.getColumnType() > CdEkiXColSpec::EColumnType::ColumnType_OperationTableDisplayJikoku)
 		{
-			iRv = -3;	//•ÒW‰Â”\‚È‚Ì‚ÍA‘OŒãì‹Æ—“İ’è`Ÿ‰w‚Ü‚Å‚Ì”wŒiF‚ÌŠÔ‚Å‚·B
+			iRv = -3;	//ç·¨é›†å¯èƒ½ãªã®ã¯ã€å‰å¾Œä½œæ¥­æ¬„è¨­å®šã€œæ¬¡é§…ã¾ã§ã®èƒŒæ™¯è‰²ã®é–“ã§ã™ã€‚
 		}
 
 	}
@@ -3606,7 +3606,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 
 		CdEkiXColSpec	aXColSpec = getXColSpecOfFocus();
@@ -3617,8 +3617,8 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			CentDedEki* pCentDedEki = muCentDedEki->get(idx);
 			if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationOriginDownBeforeUpAfter)
 			{
-				//‘OŒãì‹Æ—“‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­ˆÈŠO‚Ìê‡
-				//‚Ü‚½A‘Oì‹Æ—“‚ª‚È‚¢ê‡‚ÍA‘‰ğŒ‹—“‚à–³‚µ‚É‚È‚éB
+				//å‰å¾Œä½œæ¥­æ¬„ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºæ™‚åˆ»ä»¥å¤–ã®å ´åˆ
+				//ã¾ãŸã€å‰ä½œæ¥­æ¬„ãŒãªã„å ´åˆã¯ã€å¢—è§£çµæ¬„ã‚‚ç„¡ã—ã«ãªã‚‹ã€‚
 				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu &&
 					pCentDedEki->getJikokuhyouOperationOrigin() > 0)
 				{
@@ -3628,7 +3628,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationOrigin)
 			{
-				//‘OŒãì‹Æ—“‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­ˆÈŠO‚Ìê‡
+				//å‰å¾Œä½œæ¥­æ¬„ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºæ™‚åˆ»ä»¥å¤–ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu)
 				{
 					if (pCentDedEki->getJikokuhyouOperationOrigin() <= 0)
@@ -3644,8 +3644,8 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationOriginDownAfterUpBefore)
 			{
-				//‘OŒãì‹Æ—“‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­ˆÈŠO‚Ìê‡
-				//‚Ü‚½A‘Oì‹Æ—“‚ª‚È‚¢ê‡‚ÍA‘‰ğŒ‹—“‚à–³‚µ‚É‚È‚éB
+				//å‰å¾Œä½œæ¥­æ¬„ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºæ™‚åˆ»ä»¥å¤–ã®å ´åˆ
+				//ã¾ãŸã€å‰ä½œæ¥­æ¬„ãŒãªã„å ´åˆã¯ã€å¢—è§£çµæ¬„ã‚‚ç„¡ã—ã«ãªã‚‹ã€‚
 				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu &&
 					pCentDedEki->getJikokuhyouOperationOrigin() > 0)
 				{
@@ -3655,8 +3655,8 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationTerminalDownBeforeUpAfter)
 			{
-				//‘OŒãì‹Æ—“‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­ˆÈŠO‚Ìê‡
-				//‚Ü‚½AŒãì‹Æ—“‚ª‚È‚¢ê‡‚ÍA‘‰ğŒ‹—“‚à–³‚µ‚É‚È‚éB
+				//å‰å¾Œä½œæ¥­æ¬„ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºæ™‚åˆ»ä»¥å¤–ã®å ´åˆ
+				//ã¾ãŸã€å¾Œä½œæ¥­æ¬„ãŒãªã„å ´åˆã¯ã€å¢—è§£çµæ¬„ã‚‚ç„¡ã—ã«ãªã‚‹ã€‚
 				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu &&
 					pCentDedEki->getJikokuhyouOperationTerminal() > 0)
 				{
@@ -3666,7 +3666,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationTerminal)
 			{
-				//‘OŒãì‹Æ—“‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­ˆÈŠO‚Ìê‡
+				//å‰å¾Œä½œæ¥­æ¬„ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºæ™‚åˆ»ä»¥å¤–ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu)
 				{
 					if (pCentDedEki->getJikokuhyouOperationTerminal() <= 0)
@@ -3682,8 +3682,8 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationTerminalDownAfterUpBefore)
 			{
-				//‘OŒãì‹Æ—“‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­ˆÈŠO‚Ìê‡
-				//‚Ü‚½AŒãì‹Æ—“‚ª‚È‚¢ê‡‚ÍA‘‰ğŒ‹—“‚à–³‚µ‚É‚È‚éB
+				//å‰å¾Œä½œæ¥­æ¬„ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºæ™‚åˆ»ä»¥å¤–ã®å ´åˆ
+				//ã¾ãŸã€å¾Œä½œæ¥­æ¬„ãŒãªã„å ´åˆã¯ã€å¢—è§£çµæ¬„ã‚‚ç„¡ã—ã«ãªã‚‹ã€‚
 				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu &&
 					pCentDedEki->getJikokuhyouOperationTerminal() > 0)
 				{
@@ -3693,7 +3693,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_TrackOmit)
 			{
-				//”ÔüÈ—ª‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­E‰º‚è”­’…Eã‚è”­’…‚Ìê‡
+				//ç•ªç·šçœç•¥ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºæ™‚åˆ»ãƒ»ä¸‹ã‚Šç™ºç€ãƒ»ä¸Šã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -3703,8 +3703,8 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayKudari)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\‰º‚è’…‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…E‰º‚è’…E‰º‚è”­’…‚Ìê‡
-				//‚½‚¾‚µA”­•\¦‚ª–³Œø‚Ìê‡‚ÍA’…•\¦‚ğ—LŒø¨–³Œø‚É•ÏX‚µ‚È‚¢
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸‹ã‚Šç€æ™‚åˆ»ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸‹ã‚Šç€æ™‚åˆ»ãƒ»ä¸‹ã‚Šç™ºç€ã®å ´åˆ
+				//ãŸã ã—ã€ç™ºæ™‚åˆ»è¡¨ç¤ºãŒç„¡åŠ¹ã®å ´åˆã¯ã€ç€æ™‚åˆ»è¡¨ç¤ºã‚’æœ‰åŠ¹â†’ç„¡åŠ¹ã«å¤‰æ›´ã—ãªã„
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -3721,7 +3721,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayKudari)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\‰º‚è”Ôü‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…E‰º‚è’…Eã‚è’…E‰º‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸‹ã‚Šç•ªç·šãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸‹ã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç€æ™‚åˆ»ãƒ»ä¸‹ã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
@@ -3733,8 +3733,8 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayKudari)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\‰º‚è”­‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª‰º‚è’…ˆÈŠO‚Ìê‡
-				//‚½‚¾‚µA’…•\¦‚ª–³Œø‚Ìê‡‚ÍA”­•\¦‚ğ—LŒø¨–³Œø‚É•ÏX‚µ‚È‚¢
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸‹ã‚Šç™ºæ™‚åˆ»ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒä¸‹ã‚Šç€æ™‚åˆ»ä»¥å¤–ã®å ´åˆ
+				//ãŸã ã—ã€ç€æ™‚åˆ»è¡¨ç¤ºãŒç„¡åŠ¹ã®å ´åˆã¯ã€ç™ºæ™‚åˆ»è¡¨ç¤ºã‚’æœ‰åŠ¹â†’ç„¡åŠ¹ã«å¤‰æ›´ã—ãªã„
 				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku)
 				{
 					if (!pCentDedEki->getJikokuhyouHatsuJikokuDisplayKudari())
@@ -3749,7 +3749,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayKudari)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\‰º‚è—ñÔ”Ô†‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…Eã‚è’…E‰º‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸‹ã‚Šåˆ—è»Šç•ªå·ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸Šã‚Šç€æ™‚åˆ»ãƒ»ä¸‹ã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -3767,7 +3767,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayKudari)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\‰º‚è‰^—p”Ô†‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…Eã‚è’…E‰º‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸‹ã‚Šé‹ç”¨ç•ªå·ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸Šã‚Šç€æ™‚åˆ»ãƒ»ä¸‹ã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -3785,8 +3785,8 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsKudari)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\‰º‚è‰^—p”Ô†‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…Eã‚è’…E‰º‚è”­’…‚Ìê‡
-				//’i”‚ğ•ÏX‰Â”\‚È‚Ì‚ÍA‰^—p”Ô†—“‚ª‚ ‚éê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸‹ã‚Šé‹ç”¨ç•ªå·ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸Šã‚Šç€æ™‚åˆ»ãƒ»ä¸‹ã‚Šç™ºç€ã®å ´åˆ
+				//æ®µæ•°ã‚’å¤‰æ›´å¯èƒ½ãªã®ã¯ã€é‹ç”¨ç•ªå·æ¬„ãŒã‚ã‚‹å ´åˆ
 				if ((pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku) &&
@@ -3805,7 +3805,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayKudari)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\‰º‚è—ñÔí•Ê‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…Eã‚è’…E‰º‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸‹ã‚Šåˆ—è»Šç¨®åˆ¥ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸Šã‚Šç€æ™‚åˆ»ãƒ»ä¸‹ã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -3823,7 +3823,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayKudari)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\‰º‚è—ñÔ–¼‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…Eã‚è’…E‰º‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸‹ã‚Šåˆ—è»ŠåãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸Šã‚Šç€æ™‚åˆ»ãƒ»ä¸‹ã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -3841,7 +3841,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayKudari)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\‰º‚è˜HüŠOE‘O—ñÔn”­‰w‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…Eã‚è’…E‰º‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸‹ã‚Šè·¯ç·šå¤–ãƒ»å‰åˆ—è»Šå§‹ç™ºé§…ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸Šã‚Šç€æ™‚åˆ»ãƒ»ä¸‹ã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -3852,7 +3852,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayKudari)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\‰º‚è˜HüŠOEŸ—ñÔI’…‰w‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…E‰º‚è’…E‰º‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸‹ã‚Šè·¯ç·šå¤–ãƒ»æ¬¡åˆ—è»Šçµ‚ç€é§…ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸‹ã‚Šç€æ™‚åˆ»ãƒ»ä¸‹ã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -3863,8 +3863,8 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayNobori)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\ã‚è’…‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…Eã‚è’…Eã‚è”­’…‚Ìê‡
-				//‚½‚¾‚µA”­•\¦‚ª–³Œø‚Ìê‡‚ÍA’…•\¦‚ğ—LŒø¨–³Œø‚É•ÏX‚µ‚È‚¢
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸Šã‚Šç€æ™‚åˆ»ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸Šã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç™ºç€ã®å ´åˆ
+				//ãŸã ã—ã€ç™ºæ™‚åˆ»è¡¨ç¤ºãŒç„¡åŠ¹ã®å ´åˆã¯ã€ç€æ™‚åˆ»è¡¨ç¤ºã‚’æœ‰åŠ¹â†’ç„¡åŠ¹ã«å¤‰æ›´ã—ãªã„
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -3881,7 +3881,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayNobori)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\ã‚è”Ôü‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…E‰º‚è’…Eã‚è’…Eã‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸Šã‚Šç•ªç·šãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸‹ã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
@@ -3893,8 +3893,8 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayNobori)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\ã‚è”­‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ªã‚è’…ˆÈŠO‚Ìê‡
-				//‚½‚¾‚µA’…•\¦‚ª–³Œø‚Ìê‡‚ÍA”­•\¦‚ğ—LŒø¨–³Œø‚É•ÏX‚µ‚È‚¢
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸Šã‚Šç™ºæ™‚åˆ»ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒä¸Šã‚Šç€æ™‚åˆ»ä»¥å¤–ã®å ´åˆ
+				//ãŸã ã—ã€ç€æ™‚åˆ»è¡¨ç¤ºãŒç„¡åŠ¹ã®å ´åˆã¯ã€ç™ºæ™‚åˆ»è¡¨ç¤ºã‚’æœ‰åŠ¹â†’ç„¡åŠ¹ã«å¤‰æ›´ã—ãªã„
 				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku)
 				{
 					if (!pCentDedEki->getJikokuhyouHatsuJikokuDisplayNobori())
@@ -3909,7 +3909,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayNobori)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\ã‚è—ñÔ”Ô†‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…E‰º‚è’…Eã‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸Šã‚Šåˆ—è»Šç•ªå·ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸‹ã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -3927,7 +3927,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayNobori)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\ã‚è‰^—p”Ô†‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…E‰º‚è’…Eã‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸Šã‚Šé‹ç”¨ç•ªå·ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸‹ã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -3945,7 +3945,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsNobori)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\ã‚è‰^—p”Ô†‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…E‰º‚è’…Eã‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸Šã‚Šé‹ç”¨ç•ªå·ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸‹ã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç™ºç€ã®å ´åˆ
 				if ((pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku) &&
@@ -3964,7 +3964,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayNobori)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\ã‚è—ñÔí•Ê‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…E‰º‚è’…Eã‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸Šã‚Šåˆ—è»Šç¨®åˆ¥ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸‹ã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -3982,7 +3982,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayNobori)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\ã‚è—ñÔ–¼‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…E‰º‚è’…Eã‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸Šã‚Šåˆ—è»ŠåãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸‹ã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -4000,7 +4000,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayNobori)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\ã‚è˜HüŠOE‘O—ñÔn”­‰w‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…E‰º‚è’…Eã‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸Šã‚Šè·¯ç·šå¤–ãƒ»å‰åˆ—è»Šå§‹ç™ºé§…ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸‹ã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -4011,7 +4011,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayNobori)
 			{
-				//ƒJƒXƒ^ƒ}ƒCƒY•\ã‚è˜HüŠOEŸ—ñÔI’…‰w‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…Eã‚è’…Eã‚è”­’…‚Ìê‡
+				//ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºæ™‚åˆ»è¡¨ä¸Šã‚Šè·¯ç·šå¤–ãƒ»æ¬¡åˆ—è»Šçµ‚ç€é§…ãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸Šã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç™ºç€ã®å ´åˆ
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -4022,7 +4022,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_DiagramTrackDisplay)
 			{
-				//İü•\•\¦‚ª—LŒø‚È‚Ì‚ÍA‰wŒ`®‚ª”­’…E‰º‚è’…Eã‚è’…‚©‚Âå—v‰w‚Ìê‡
+				//åœ¨ç·šè¡¨è¡¨ç¤ºãŒæœ‰åŠ¹ãªã®ã¯ã€é§…æ™‚åˆ»å½¢å¼ãŒç™ºç€ãƒ»ä¸‹ã‚Šç€æ™‚åˆ»ãƒ»ä¸Šã‚Šç€æ™‚åˆ»ã‹ã¤ä¸»è¦é§…ã®å ´åˆ
 				if ((pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku) &&
@@ -4033,7 +4033,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_DiagramRessyajouhouHyoujiKudari)
 			{
-				//ƒ_ƒCƒ„ƒOƒ‰ƒ€—ñÔî•ñ•\¦(‰º‚è)
+				//ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åˆ—è»Šæƒ…å ±è¡¨ç¤º(ä¸‹ã‚Š)
 				if (pCentDedEki->getDiagramRessyajouhouHyoujiKudari() == CentDedEki::EDiagramRessyajouhouHyouji::DiagramRessyajouhouHyouji_Origin)
 				{
 					pCentDedEki->setDiagramRessyajouhouHyoujiKudari(CentDedEki::EDiagramRessyajouhouHyouji::DiagramRessyajouhouHyouji_Not);
@@ -4049,7 +4049,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_DiagramRessyajouhouHyoujiNobori)
 			{
-				//ƒ_ƒCƒ„ƒOƒ‰ƒ€—ñÔî•ñ•\¦(ã‚è)
+				//ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åˆ—è»Šæƒ…å ±è¡¨ç¤º(ä¸Šã‚Š)
 				if (pCentDedEki->getDiagramRessyajouhouHyoujiNobori() == CentDedEki::EDiagramRessyajouhouHyouji::DiagramRessyajouhouHyouji_Origin)
 				{
 					pCentDedEki->setDiagramRessyajouhouHyoujiNobori(CentDedEki::EDiagramRessyajouhouHyouji::DiagramRessyajouhouHyouji_Not);
@@ -4065,8 +4065,8 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_NextEkiDistance)
 			{
-				//‚±‚Ì‰w‚©‚çŸ‚Ì‰w‚Ü‚Å‚Ì‹——£
-				//iType‚É‚æ‚Á‚Ä‰ÁZŠÔ‚ğ•Ï‚¦‚ÄAChangeNextEkiDistance‚ğÀs‚·‚éB
+				//ã“ã®é§…ã‹ã‚‰æ¬¡ã®é§…ã¾ã§ã®è·é›¢
+				//iTypeã«ã‚ˆã£ã¦åŠ ç®—æ™‚é–“ã‚’å¤‰ãˆã¦ã€ChangeNextEkiDistanceã‚’å®Ÿè¡Œã™ã‚‹ã€‚
 				int iShiftSecond = 0;
 				if (iType == 0)
 				{
@@ -4086,7 +4086,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_DiagramColorNextEki)
 			{
-				//‚±‚Ì‰w‚©‚çŸ‚Ì‰w‚Ü‚Å‚Ì”wŒiFİ’è
+				//ã“ã®é§…ã‹ã‚‰æ¬¡ã®é§…ã¾ã§ã®èƒŒæ™¯è‰²è¨­å®š
 				if (pCentDedEki->getDiagramColorNextEki() <= 0)
 				{
 					pCentDedEki->setDiagramColorNextEki(4);
@@ -4099,7 +4099,7 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationTableDisplayJikoku)
 			{
-				//” ƒ_ƒCƒ„‚Å•\¦‚·‚é‚©”Û‚©
+				//ç®±ãƒ€ã‚¤ãƒ¤ã§è¡¨ç¤ºã™ã‚‹ã‹å¦ã‹
 				if (pCentDedEki->getBrunchCoreEkiIndex() == -1)
 				{
 					pCentDedEki->setOperationTableDisplayJikoku(!pCentDedEki->getOperationTableDisplayJikoku());
@@ -4108,12 +4108,12 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 
 			vector<int> iEkiTrack2Map;
 			vector<int> iOuterTerminalEkimeiMap;
-			//‰w”Ôü‚Ì•ÏXˆ—‚Ì‚½‚ß‚ÌMap‚ğ‰Šú‰»‚·‚é
+			//é§…ç•ªç·šã®å¤‰æ›´å‡¦ç†ã®ãŸã‚ã®Mapã‚’åˆæœŸåŒ–ã™ã‚‹
 			for (int idx = 0; idx < pCentDedEki->getEkiTrack2Cont()->size(); idx++)
 			{
 				iEkiTrack2Map.push_back(idx);
 			}
-			//˜HüŠO”­’…‰w‚Ì•ÏXˆ—‚Ì‚½‚ß‚ÌMap‚ğ‰Šú‰»‚·‚é
+			//è·¯ç·šå¤–ç™ºç€é§…ã®å¤‰æ›´å‡¦ç†ã®ãŸã‚ã®Mapã‚’åˆæœŸåŒ–ã™ã‚‹
 			for (int idx = 0; idx < pCentDedEki->getOuterTerminalEkimeiCount(); idx++)
 			{
 				iOuterTerminalEkimeiMap.push_back(idx);
@@ -4125,13 +4125,13 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 		if (iRv >= 0)
 		{
 			// --------------------------------
-			//	•ÒWƒRƒ}ƒ“ƒh‚ğÀs
+			//	ç·¨é›†ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œ
 			// --------------------------------
 			getCDiagramEditDoc()->executeEditCmd(pCmd);
 		}
 
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -4153,7 +4153,7 @@ void CWndDcdGridEki::ChangeNextEkiDistance(CentDedEki* pCentDedEki, int iShiftSe
 	pCentDedEki->setNextEkiDistance(iNextEkiDistance);
 }
 // ********************************
-//	ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+//	ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 // ********************************
 CWndDcdGridEki::CWndDcdGridEki()
 	: m_bAdjustByEkijikokukeisiki( true ) 
@@ -4164,12 +4164,12 @@ CWndDcdGridEki::CWndDcdGridEki()
 	getCSelect()->setSelectMode( CSelect::SelectMode_YColumn ) ;
 
 }
-CWndDcdGridEki::~CWndDcdGridEki()
+CWndDcdGridEki::â€¾CWndDcdGridEki()
 {
 }
 
 	// ********************************
-	//@name CWndDcdGridEki-‘®«
+	//@name CWndDcdGridEki-å±æ€§
 	// ********************************
 bool CWndDcdGridEki::getAdjustByEkijikokukeisiki()const 
 {
@@ -4182,7 +4182,7 @@ int CWndDcdGridEki::setAdjustByEkijikokukeisiki( bool value )
 	{
 		m_bAdjustByEkijikokukeisiki = value ;
 
-		//	.ini ƒtƒ@ƒCƒ‹‚É•Û‘¶
+		//	.ini ãƒ•ã‚¡ã‚¤ãƒ«ã«ä¿å­˜
 		getCDiagramEditApp()->writeCWndDcdGridEkiProp( this ) ;
 		
 		iRv = 1 ;
@@ -4193,19 +4193,19 @@ int CWndDcdGridEki::setAdjustByEkijikokukeisiki( bool value )
 
 
 	// ********************************
-	//@name CEkiView ‚©‚ç‚ÌˆÏ÷
+	//@name CEkiView ã‹ã‚‰ã®å§”è­²
 	// ********************************
 void CWndDcdGridEki::OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint) 
 {
 	if ( lHint == LHINT_SUBVIEW_TO_ROOTDOC )
 	{
-		//	ƒrƒ…[‚Ì“à—e‚ğƒhƒLƒ…ƒƒ“ƒg‚É”½‰f‚³‚¹‚éw—ß‚Å‚·B
-		//	Œã‘±‚Ìˆ—‚Ís‚¢‚Ü‚¹‚ñB
+		//	ãƒ“ãƒ¥ãƒ¼ã®å†…å®¹ã‚’ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã«åæ˜ ã•ã›ã‚‹æŒ‡ä»¤ã§ã™ã€‚
+		//	å¾Œç¶šã®å‡¦ç†ã¯è¡Œã„ã¾ã›ã‚“ã€‚
 		return ;
 	}
 	// --------------------------------
-	//	‰‰ñ‚ÌOnUpdate()
-	//	.iniƒtƒ@ƒCƒ‹‚©‚çƒvƒƒpƒeƒB‚ğ“Ç‚İ‚İ
+	//	åˆå›ã®OnUpdate()
+	//	.iniãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã‚’èª­ã¿è¾¼ã¿
 	// --------------------------------
 	if ( !m_bInitialUpdateComplete )
 	{
@@ -4215,7 +4215,7 @@ void CWndDcdGridEki::OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint)
 	}
 
 	// --------------------------------
-	//	XVƒRƒ}ƒ“ƒh‚ğæ“¾
+	//	æ›´æ–°ã‚³ãƒãƒ³ãƒ‰ã‚’å–å¾—
 	// --------------------------------
 	Ou<CRfEditCmd> pCmd ;
 	if ( pHint != NULL 
@@ -4225,20 +4225,20 @@ void CWndDcdGridEki::OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint)
 			(CRfEditCmdHolder*)pHint ;
 		pCmd = pHolder->getCmd() ; 
 	}
-	//pCmd=•ÒWƒRƒ}ƒ“ƒh CRfEditCmd B
-	//	NULL‚È‚çA‘SXV‚ª—v‹‚³‚ê‚Ä‚¢‚Ü‚·B
+	//pCmd=ç·¨é›†ã‚³ãƒãƒ³ãƒ‰ CRfEditCmd ã€‚
+	//	NULLãªã‚‰ã€å…¨æ›´æ–°ãŒè¦æ±‚ã•ã‚Œã¦ã„ã¾ã™ã€‚
 
 	//pHint= 
-	//	pHint‚ª CRfEditCmdHolder ƒIƒuƒWƒFƒNƒg‚È‚çA
-	//	‘Î‰‚·‚é•ÒWƒRƒ}ƒ“ƒh CRfEditCmd ‚ğ•Û‚µ‚Ä‚¢‚Ü‚·B
-	//	‚±‚Ìê‡Athis ‚Í CRfEditCmd ‚Ì“à—e‚ÉÅ“K‰»‚µ‚½
-	//	XV‚ğs‚¢‚Ü‚·B
-	//	NULL‚È‚çA‘SXV‚ª—v‹‚³‚ê‚Ä‚¢‚Ü‚·B
+	//	pHintãŒ CRfEditCmdHolder ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãªã‚‰ã€
+	//	å¯¾å¿œã™ã‚‹ç·¨é›†ã‚³ãƒãƒ³ãƒ‰ CRfEditCmd ã‚’ä¿æŒã—ã¦ã„ã¾ã™ã€‚
+	//	ã“ã®å ´åˆã€this ã¯ CRfEditCmd ã®å†…å®¹ã«æœ€é©åŒ–ã—ãŸ
+	//	æ›´æ–°ã‚’è¡Œã„ã¾ã™ã€‚
+	//	NULLãªã‚‰ã€å…¨æ›´æ–°ãŒè¦æ±‚ã•ã‚Œã¦ã„ã¾ã™ã€‚
 
 	if ( m_bWaitForActivate )
 	{
-		//	‘SXV‚ª•Û—¯‚³‚ê‚Ä‚¢‚éê‡‚ÍA
-		//	ƒRƒ}ƒ“ƒh‚ğ–³‹‚µ‚ÄA‘SXV‚ğs‚¢‚Ü‚·B
+		//	å…¨æ›´æ–°ãŒä¿ç•™ã•ã‚Œã¦ã„ã‚‹å ´åˆã¯ã€
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚’ç„¡è¦–ã—ã¦ã€å…¨æ›´æ–°ã‚’è¡Œã„ã¾ã™ã€‚
 		pCmd = Ou<CRfEditCmd>() ;
 	}
 
@@ -4259,28 +4259,28 @@ void CWndDcdGridEki::OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint)
 			dynamic_castOu<CRfEditCmd_Operation>(pCmd)
 		)
 		{
-			//	‚±‚Ìƒrƒ…[‚ÍA
-			//		ƒRƒƒ“ƒg‚Ì•ÏX
-			//		ƒ_ƒCƒ„‚Ì•ÏX
-			//		ƒ_ƒCƒ„‚ÌƒvƒƒpƒeƒB‚Ì•ÏX
-			//		—ñÔ‚Ì•ÏX
-			//		—ñÔ‚Ì’¼’Ê‰»
-			//		—ñÔí•Ê‚Ì•ÏX
-			//		—ñÔí•Ê‚Ì“ü‘Ö
-			//	‚Ìê‡‚ÍAXV‚ğs‚¢‚Ü‚¹‚ñB
+			//	ã“ã®ãƒ“ãƒ¥ãƒ¼ã¯ã€
+			//		ã‚³ãƒ¡ãƒ³ãƒˆã®å¤‰æ›´
+			//		ãƒ€ã‚¤ãƒ¤ã®å¤‰æ›´
+			//		ãƒ€ã‚¤ãƒ¤ã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å¤‰æ›´
+			//		åˆ—è»Šã®å¤‰æ›´
+			//		åˆ—è»Šã®ç›´é€šåŒ–
+			//		åˆ—è»Šç¨®åˆ¥ã®å¤‰æ›´
+			//		åˆ—è»Šç¨®åˆ¥ã®å…¥æ›¿
+			//	ã®å ´åˆã¯ã€æ›´æ–°ã‚’è¡Œã„ã¾ã›ã‚“ã€‚
 			//
 		}
-		//‰w‚ğ•ÏX‚µ‚½ê‡A‘SXV‚É‚·‚é‚½‚ßAonupdate_all‚É“‡‚µ‚Ü‚·
-		//17.12.6ƒJ[ƒ\ƒ‹ˆÊ’u‚Ì–â‘è‚ª‚ ‚é‚½‚ßA–ß‚µ‚Ü‚·
+		//é§…ã‚’å¤‰æ›´ã—ãŸå ´åˆã€å…¨æ›´æ–°ã«ã™ã‚‹ãŸã‚ã€onupdate_allã«çµ±åˆã—ã¾ã™
+		//17.12.6ã‚«ãƒ¼ã‚½ãƒ«ä½ç½®ã®å•é¡ŒãŒã‚ã‚‹ãŸã‚ã€æˆ»ã—ã¾ã™
 		else if (dynamic_castOu<CRfEditCmd_Eki>(pCmd))
 		{
 
-			//		‰w‚Ì•ÏX
+			//		é§…ã®å¤‰æ›´
 			Ou<CRfEditCmd_Eki>	pCommand
 				= dynamic_castOu<CRfEditCmd_Eki>(pCmd);
 
-			//	ƒRƒ}ƒ“ƒhƒIƒuƒWƒFƒNƒgÀs‚É‚æ‚éƒZƒ‹ˆÚ“®‚ÅƒZƒ‹‘I‘ğ‚É‚È‚ç‚È‚¢‚æ‚¤‚ÉA
-			//	ƒZƒ‹‘I‘ğ‚ğ‰ğœ‚µAƒZƒ‹‘I‘ğ‹@”\‚àˆê“I‚É’†~‚µ‚Ü‚·B
+			//	ã‚³ãƒãƒ³ãƒ‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆå®Ÿè¡Œã«ã‚ˆã‚‹ã‚»ãƒ«ç§»å‹•ã§ã‚»ãƒ«é¸æŠã«ãªã‚‰ãªã„ã‚ˆã†ã«ã€
+			//	ã‚»ãƒ«é¸æŠã‚’è§£é™¤ã—ã€ã‚»ãƒ«é¸æŠæ©Ÿèƒ½ã‚‚ä¸€æ™‚çš„ã«ä¸­æ­¢ã—ã¾ã™ã€‚
 			if (pCommand->getCaMuiSelect()->size() == 1)
 			{
 				clearSelect();
@@ -4291,7 +4291,7 @@ void CWndDcdGridEki::OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint)
 			}
 
 			// --------------------------------
-			//	Œ¸­•ª‚Ì—v‘f‚Ìíœ
+			//	æ¸›å°‘åˆ†ã®è¦ç´ ã®å‰Šé™¤
 			// --------------------------------
 			CentDedEkiCont	aCentDedEkiContSrc 
 				= *pCommand->getCentDedEkiContSrc() ;
@@ -4306,7 +4306,7 @@ void CWndDcdGridEki::OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint)
 				}
 			}
 			// --------------------------------
-			//	‘‰Á•ª‚Ì—v‘f‚Ì’Ç‰Á
+			//	å¢—åŠ åˆ†ã®è¦ç´ ã®è¿½åŠ 
 			// --------------------------------
 			int iOkikaeSize = 0 ;
 			iOkikaeSize = 
@@ -4323,9 +4323,9 @@ void CWndDcdGridEki::OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint)
 				}
 			}
 			// --------------------------------
-			//	—v‘f‚ÌXV
+			//	è¦ç´ ã®æ›´æ–°
 			// --------------------------------
-			//‹«ŠEü‚Ìİ’è‚Ì‚½‚ßAˆê‚Â‘O‚àXV‚·‚éB
+			//å¢ƒç•Œç·šã®è¨­å®šã®ãŸã‚ã€ä¸€ã¤å‰ã‚‚æ›´æ–°ã™ã‚‹ã€‚
 			{
 				/*for ( int cnt = 0 ; cnt < aCentDedEkiContSrc.size() ; cnt ++ )
 				{
@@ -4366,11 +4366,11 @@ void CWndDcdGridEki::OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint)
 							iEkiIndex + 1, *pCentDedEki, CentDedEki());
 					}
 				}*/
-				//‰w‚Ì‘}“üEíœ‚ğs‚¤‚ÆA‰wIndex”Ô†•\¦‚¨‚æ‚Ñ•ªŠò‰wEŠÂóüİ’è‚Ì
-				//‘Šèæ”Ô†‚ª•Ï‚í‚éê‡‚ª‚ ‚é‚Ì‚ÅA‘S‰w‚ğXV‚µ‚Ü‚·
-				//(‘}“üEíœ‚ªs‚í‚ê‚½‰ÓŠ‚æ‚è‚à‰º‘¤‚¾‚¯‚Å‚È‚­A
-				//‚»‚Ì”ÍˆÍ“à‚Ì‰w‚É‘Î‚µA•ªŠò‰wİ’è‚ğs‚Á‚Ä‚¢‚éAã‘¤‚Ì‰w‚à‚ ‚è‚¤‚é‚½‚ß
-				//‹æˆæ‚ğw’è‚·‚é‚æ‚è‚àA‘SXV‚Ì•û‚ªè‚Áæ‚è‘‚¢‚Æ‚¢‚¤”»’f‚Å‚·)
+				//é§…ã®æŒ¿å…¥ãƒ»å‰Šé™¤ã‚’è¡Œã†ã¨ã€é§…Indexç•ªå·è¡¨ç¤ºãŠã‚ˆã³åˆ†å²é§…ãƒ»ç’°çŠ¶ç·šè¨­å®šã®
+				//ç›¸æ‰‹å…ˆç•ªå·ãŒå¤‰ã‚ã‚‹å ´åˆãŒã‚ã‚‹ã®ã§ã€å…¨é§…ã‚’æ›´æ–°ã—ã¾ã™
+				//(æŒ¿å…¥ãƒ»å‰Šé™¤ãŒè¡Œã‚ã‚ŒãŸç®‡æ‰€ã‚ˆã‚Šã‚‚ä¸‹å´ã ã‘ã§ãªãã€
+				//ãã®ç¯„å›²å†…ã®é§…ã«å¯¾ã—ã€åˆ†å²é§…è¨­å®šã‚’è¡Œã£ã¦ã„ã‚‹ã€ä¸Šå´ã®é§…ã‚‚ã‚ã‚Šã†ã‚‹ãŸã‚
+				//åŒºåŸŸã‚’æŒ‡å®šã™ã‚‹ã‚ˆã‚Šã‚‚ã€å…¨æ›´æ–°ã®æ–¹ãŒæ‰‹ã£å–ã‚Šæ—©ã„ã¨ã„ã†åˆ¤æ–­ã§ã™)
 				int iEkiSize = pCentDedEkiContGet->size();
 //#pragma omp parallel for schedule(static)
 				for (int cnt = 0; cnt < iEkiSize; cnt++)
@@ -4420,19 +4420,19 @@ void CWndDcdGridEki::OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint)
 		else
 		{
 			//CRfEditCmd_DedRosenFileDataProp
-			//	  ˜Hüƒtƒ@ƒCƒ‹‚ÌƒvƒƒpƒeƒB‚Ì•ÏX‚ÍA
-			//	ƒtƒHƒ“ƒg‚Ì•Ï‰»‚ğ”º‚¤‚½‚ßA‘SXV‚ª•K—v‚Å‚·B
+			//	  è·¯ç·šãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®å¤‰æ›´ã¯ã€
+			//	ãƒ•ã‚©ãƒ³ãƒˆã®å¤‰åŒ–ã‚’ä¼´ã†ãŸã‚ã€å…¨æ›´æ–°ãŒå¿…è¦ã§ã™ã€‚
 			//CRfEditCmd_Rosen
 			//CRfEditCmd_RosenFileData
-			//	‰w‚ğ•ïŠÜ‚·‚éƒIƒuƒWƒFƒNƒg‚Å‚·B‚±‚ê‚ªXV‚³‚ê‚½ê‡‚ÍA
-			//	‘SXV‚ª•K—v‚Å‚·B
+			//	é§…ã‚’åŒ…å«ã™ã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ã™ã€‚ã“ã‚ŒãŒæ›´æ–°ã•ã‚ŒãŸå ´åˆã¯ã€
+			//	å…¨æ›´æ–°ãŒå¿…è¦ã§ã™ã€‚
 
-			//	‘S—v‘f‚ğXV
+			//	å…¨è¦ç´ ã‚’æ›´æ–°
 			OnUpdate_All() ;
 		}
 	}
 	// --------------------------------
-	//	—ñ‘I‘ğ”ÍˆÍ‚ğİ’è
+	//	åˆ—é¸æŠç¯„å›²ã‚’è¨­å®š
 	// --------------------------------
 	{
 		CDiagramEditDoc* pCDiagramEditDoc = getCDiagramEditDoc() ;
@@ -4464,7 +4464,7 @@ void CWndDcdGridEki::OnActivateView(BOOL bActivate, CView* pActivateView, CView*
 
 
 	// ********************************
-	//@name CWndDcdGridEki-‘€ì
+	//@name CWndDcdGridEki-æ“ä½œ
 	// ********************************
 	
 int CWndDcdGridEki::execEkiPropDlg( bool bInsert , BOOL bQueryEnable ) 
@@ -4475,7 +4475,7 @@ int CWndDcdGridEki::execEkiPropDlg( bool bInsert , BOOL bQueryEnable )
 	if ( !bQueryEnable ){	ppCmd = &pCmd ;};
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚ÌÀs‰Â”Û‚Ì”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œå¯å¦ã®åˆ¤å®š
 	// ****************************************************************
 	if ( iRv >= 0 )
 	{
@@ -4483,7 +4483,7 @@ int CWndDcdGridEki::execEkiPropDlg( bool bInsert , BOOL bQueryEnable )
 		{
 			if ( !createCmd( ECreateCmd_NewItem , ppCmd ) )
 			{
-				iRv = -1 ;	//	ƒZƒ‹‚ÌˆÊ’u‚ª•s³‚Å‚·B
+				iRv = -1 ;	//	ã‚»ãƒ«ã®ä½ç½®ãŒä¸æ­£ã§ã™ã€‚
 			}
 		}
 		else
@@ -4498,7 +4498,7 @@ int CWndDcdGridEki::execEkiPropDlg( bool bInsert , BOOL bQueryEnable )
 	if ( !bQueryEnable && iRv >= 0 )
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		CdEkiXColSpec	aXColSpec = getXColSpecOfFocus() ;
 		int iFocus = -1 ;
@@ -4531,7 +4531,7 @@ int CWndDcdGridEki::execEkiPropDlg( bool bInsert , BOOL bQueryEnable )
 		vector<int> iOuterTerminalEkimeiMap;
 		if (bInsert)
 		{
-			//V‹KƒAƒCƒeƒ€‚Ìê‡AiEkiIndex‚ğ-1‚Æ‚·‚éB
+			//æ–°è¦ã‚¢ã‚¤ãƒ†ãƒ ã®å ´åˆã€iEkiIndexã‚’-1ã¨ã™ã‚‹ã€‚
 			//iEkiIndex = -1;
 			CdEkiYColSpec  aCdYColSpecOfFocus = getYColSpecOfFocus();
 			iEkiIndex = aCdYColSpecOfFocus.getEkiIndex();
@@ -4542,15 +4542,15 @@ int CWndDcdGridEki::execEkiPropDlg( bool bInsert , BOOL bQueryEnable )
 		}
 		else if ( getCSelect()->getSelectedCellCount() == 0)
 		{
-			//’P”‘I‘ğ‚Ìê‡AiEkiIndex‚Í‰wIndex‚É‚È‚éB
+			//å˜æ•°é¸æŠã®å ´åˆã€iEkiIndexã¯é§…Indexã«ãªã‚‹ã€‚
 			//bEkijikokukeisikiAndEkikiboEnable 
-			//	ŠîŠ²‰w‚à‚µ‚­‚Í‹N“_‰w‚Ìê‡Afalse
+			//	åŸºå¹¹é§…ã‚‚ã—ãã¯èµ·ç‚¹é§…ã®å ´åˆã€false
 			//bBrunchFunctionEnable
-			//	ŠîŠ²‰w‚à‚µ‚­‚Í‹N“_‰w‚Ìê‡Afalse
+			//	åŸºå¹¹é§…ã‚‚ã—ãã¯èµ·ç‚¹é§…ã®å ´åˆã€false
 			//bLoopFunctionEnable
-			//	‹N“_•û‚É”h¶‰w‚ğ‚ÂŠîŠ²‰w‚Ìê‡Afalse
-			//¦ƒ_ƒCƒAƒƒOƒI[ƒvƒ“ŒãA•ªŠò‰wİ’è‹y‚ÑŠÂóüİ’è‚ğ•Ï‚¦‚½ê‡‚ÉAtrue‚É‚È‚é‚æ‚¤‚Èê‡‚ÍA
-			//Å‰‚©‚çtrue‚É‚µAFromTarget‚Åfalse‚É‚·‚éB
+			//	èµ·ç‚¹æ–¹ã«æ´¾ç”Ÿé§…ã‚’æŒã¤åŸºå¹¹é§…ã®å ´åˆã€false
+			//â€»ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã‚ªãƒ¼ãƒ—ãƒ³å¾Œã€åˆ†å²é§…è¨­å®šåŠã³ç’°çŠ¶ç·šè¨­å®šã‚’å¤‰ãˆãŸå ´åˆã«ã€trueã«ãªã‚‹ã‚ˆã†ãªå ´åˆã¯ã€
+			//æœ€åˆã‹ã‚‰trueã«ã—ã€FromTargetã§falseã«ã™ã‚‹ã€‚
 			CdEkiYColSpec  aCdYColSpecOfFocus = getYColSpecOfFocus();
 			iEkiIndex = aCdYColSpecOfFocus.getEkiIndex();
 			const Mu< const CentDedEki* >* pCentDedEkiCont = getCDiagramEditDoc()->getCDedRosenFileData()
@@ -4563,7 +4563,7 @@ int CWndDcdGridEki::execEkiPropDlg( bool bInsert , BOOL bQueryEnable )
 				if (pCentDedEki->getBrunchLoopPosition() < (int)pCentDedEki->getEkiIndexLoop().size() - 1)
 				{
 					/**
-						EkiIndexLoop‚ÌiEkiIndex‚æ‚è‚àŒã•û‚É’l‚ª‘¶İ‚·‚éê‡‚ÍAiEkiIndex‚Í"‹N“_‰w"‚É‚È‚éB
+						EkiIndexLoopã®iEkiIndexã‚ˆã‚Šã‚‚å¾Œæ–¹ã«å€¤ãŒå­˜åœ¨ã™ã‚‹å ´åˆã¯ã€iEkiIndexã¯"èµ·ç‚¹é§…"ã«ãªã‚‹ã€‚
 					*/
 					bEkijikokukeisikiAndEkikiboEnable = false;
 					bBrunchFunctionEnable = false;
@@ -4572,8 +4572,8 @@ int CWndDcdGridEki::execEkiPropDlg( bool bInsert , BOOL bQueryEnable )
 					pCentDedEki->getEkiIndexBrunchOriginSide().size() > 0)
 				{
 					/**
-						iEkiIndex‚ªEkiIndexLoop‚Ìæ“ª‚É‚ ‚èAEkiIndexBrunchOriginSide‚Éˆê‚ÂˆÈã‚Ì’l‚ª‚ ‚éê‡‚ÍA
-						‚±‚Ì‰w‚Í"‹N“_•û‚É”h¶‰w‚ğ‚ÂŠîŠ²‰w"‚Æ‚È‚éB
+						iEkiIndexãŒEkiIndexLoopã®å…ˆé ­ã«ã‚ã‚Šã€EkiIndexBrunchOriginSideã«ä¸€ã¤ä»¥ä¸Šã®å€¤ãŒã‚ã‚‹å ´åˆã¯ã€
+						ã“ã®é§…ã¯"èµ·ç‚¹æ–¹ã«æ´¾ç”Ÿé§…ã‚’æŒã¤åŸºå¹¹é§…"ã¨ãªã‚‹ã€‚
 					*/
 					bEkijikokukeisikiAndEkikiboEnable = false;
 					bBrunchFunctionEnable = false;
@@ -4584,8 +4584,8 @@ int CWndDcdGridEki::execEkiPropDlg( bool bInsert , BOOL bQueryEnable )
 					pCentDedEki->getEkiIndexBrunchTerminalSide().size() > 0)
 				{
 					/**
-						iEkiIndex‚ªEkiIndexLoop‚Ì––”ö‚É‚ ‚èAEkiIndexBrunchTerminalSide‚Éˆê‚ÂˆÈã‚Ì’l‚ª‚ ‚éê‡‚ÍA
-						‚±‚Ì‰w‚Í"I“_•û‚É”h¶‰w‚ğ‚ÂŠîŠ²‰w"‚Æ‚È‚éB
+						iEkiIndexãŒEkiIndexLoopã®æœ«å°¾ã«ã‚ã‚Šã€EkiIndexBrunchTerminalSideã«ä¸€ã¤ä»¥ä¸Šã®å€¤ãŒã‚ã‚‹å ´åˆã¯ã€
+						ã“ã®é§…ã¯"çµ‚ç‚¹æ–¹ã«æ´¾ç”Ÿé§…ã‚’æŒã¤åŸºå¹¹é§…"ã¨ãªã‚‹ã€‚
 					*/
 					bEkijikokukeisikiAndEkikiboEnable = false;
 					bBrunchFunctionEnable = false;
@@ -4625,12 +4625,12 @@ int CWndDcdGridEki::execEkiPropDlg( bool bInsert , BOOL bQueryEnable )
 				pCentDedEki->getLoopOriginEkiIndex()
 				//pCentDedEkiCont->get(iEkiIndex)->getLoopOriginEkiIndex()
 			);
-			//‰w”Ôü‚Ì•ÏXˆ—‚Ì‚½‚ß‚ÌMap‚ğ‰Šú‰»‚·‚é
+			//é§…ç•ªç·šã®å¤‰æ›´å‡¦ç†ã®ãŸã‚ã®Mapã‚’åˆæœŸåŒ–ã™ã‚‹
 			for (int idx = 0; idx < pCentDedEkiCont->get(iEkiIndex)->getEkiTrack2Cont()->size(); idx++)
 			{
 				iEkiTrack2Map.push_back(idx);
 			}
-			//˜HüŠO”­’…‰w‚Ì•ÏXˆ—‚Ì‚½‚ß‚ÌMap‚ğ‰Šú‰»‚·‚é
+			//è·¯ç·šå¤–ç™ºç€é§…ã®å¤‰æ›´å‡¦ç†ã®ãŸã‚ã®Mapã‚’åˆæœŸåŒ–ã™ã‚‹
 			for (int idx = 0; idx < pCentDedEkiCont->get(iEkiIndex)->getOuterTerminalEkimeiCount(); idx++)
 			{
 				iOuterTerminalEkimeiMap.push_back(idx);
@@ -4638,11 +4638,11 @@ int CWndDcdGridEki::execEkiPropDlg( bool bInsert , BOOL bQueryEnable )
 		}
 		else
 		{
-			//•¡”‘I‘ğ‚Ìê‡AiEkiIndex‚ğ-2‚Æ‚·‚éB
-			//‘I‘ğ‚³‚ê‚½‰w‚Ì’†‚ÉAŠîŠ²‰w‚ª‚ ‚éê‡A‰wŒ`®‚Æ‰w‹K–Í‚Ì•ÏX‚ğ•s‰Â‚É‚·‚éB
-			//‘I‘ğ‚³‚ê‚½‰w‚Ì’†‚ÉA”h¶‰w‚ª‚ ‚éê‡A‰wŒ`®‚Æ‰w‹K–Í‚Ì•ÏX‚ğ•s‰Â‚É‚·‚éB
-			//‘I‘ğ‚³‚ê‚½‰w‚Ì’†‚ÉA‹N“_‰w‚ª‚ ‚éê‡A‰wŒ`®‚Æ‰w‹K–Í‚Ì•ÏX‚ğ•s‰Â‚É‚·‚éB
-			//‘I‘ğ‚³‚ê‚½‰w‚Ì’†‚ÉAI“_‰w‚ª‚ ‚éê‡A‰wŒ`®‚Æ‰w‹K–Í‚Ì•ÏX‚ğ•s‰Â‚É‚·‚éB
+			//è¤‡æ•°é¸æŠã®å ´åˆã€iEkiIndexã‚’-2ã¨ã™ã‚‹ã€‚
+			//é¸æŠã•ã‚ŒãŸé§…ã®ä¸­ã«ã€åŸºå¹¹é§…ãŒã‚ã‚‹å ´åˆã€é§…æ™‚åˆ»å½¢å¼ã¨é§…è¦æ¨¡ã®å¤‰æ›´ã‚’ä¸å¯ã«ã™ã‚‹ã€‚
+			//é¸æŠã•ã‚ŒãŸé§…ã®ä¸­ã«ã€æ´¾ç”Ÿé§…ãŒã‚ã‚‹å ´åˆã€é§…æ™‚åˆ»å½¢å¼ã¨é§…è¦æ¨¡ã®å¤‰æ›´ã‚’ä¸å¯ã«ã™ã‚‹ã€‚
+			//é¸æŠã•ã‚ŒãŸé§…ã®ä¸­ã«ã€èµ·ç‚¹é§…ãŒã‚ã‚‹å ´åˆã€é§…æ™‚åˆ»å½¢å¼ã¨é§…è¦æ¨¡ã®å¤‰æ›´ã‚’ä¸å¯ã«ã™ã‚‹ã€‚
+			//é¸æŠã•ã‚ŒãŸé§…ã®ä¸­ã«ã€çµ‚ç‚¹é§…ãŒã‚ã‚‹å ´åˆã€é§…æ™‚åˆ»å½¢å¼ã¨é§…è¦æ¨¡ã®å¤‰æ›´ã‚’ä¸å¯ã«ã™ã‚‹ã€‚
 			const Mu< const CentDedEki* >* pCentDedEkiCont = getCDiagramEditDoc()->getCDedRosenFileData()
 				->getCentDedRosen()->getCentDedEkiCont()->getMuPtr();
 			//int iEkiIndexSelect;
@@ -4673,7 +4673,7 @@ int CWndDcdGridEki::execEkiPropDlg( bool bInsert , BOOL bQueryEnable )
 					//			pCentDedEkiCont->get(idx)->getLoopOriginEkiIndex() == iEkiIndexSelect)
 					//		{
 					//			bEkijikokukeisikiAndEkikiboEnable = false;
-					//			//‘I‘ğ‚³‚ê‚½‰w‚ÍA‘¼‚Ì‰w‚©‚ç‹¤—L‘ÎÛ‚Éw’è‚³‚ê‚Ä‚¢‚Ü‚·
+					//			//é¸æŠã•ã‚ŒãŸé§…ã¯ã€ä»–ã®é§…ã‹ã‚‰å…±æœ‰å¯¾è±¡ã«æŒ‡å®šã•ã‚Œã¦ã„ã¾ã™
 					//		}
 					//	}
 					//}
@@ -4701,8 +4701,8 @@ int CWndDcdGridEki::execEkiPropDlg( bool bInsert , BOOL bQueryEnable )
 		{
 			iRv = 1 ;
 
-			//	[‰w‚ğ‰wŒ`®‚Å³‹K‰»]‚Ìİ’è‚ğA
-			//	Ÿ‚ÉÀs‚·‚éƒRƒ}ƒ“ƒh‚É”½‰f‚µ‚Ü‚·B
+			//	[é§…æ™‚åˆ»ã‚’é§…æ™‚åˆ»å½¢å¼ã§æ­£è¦åŒ–]ã®è¨­å®šã‚’ã€
+			//	æ¬¡ã«å®Ÿè¡Œã™ã‚‹ã‚³ãƒãƒ³ãƒ‰ã«åæ˜ ã—ã¾ã™ã€‚
 			pCmd->setAdjustByEkijikokukeisiki( m_bAdjustByEkijikokukeisiki ) ;
 
 			if (getCSelect()->getSelectedCellCount() == 0)
@@ -4735,24 +4735,24 @@ int CWndDcdGridEki::execEkiPropDlg( bool bInsert , BOOL bQueryEnable )
 			pCmd->setOuterTerminalEkimeiMap(iOuterTerminalEkimeiMap);
 		}
 		// --------------------------------
-		//	ƒ_ƒCƒAƒƒOOK‚Ìˆ—
+		//	ãƒ€ã‚¤ã‚¢ãƒ­ã‚°OKæ™‚ã®å‡¦ç†
 		// --------------------------------
 		if ( iRv == 1 )
 		{
 			// --------------------------------
-			//	•ÒWƒRƒ}ƒ“ƒh‚ğÀs
+			//	ç·¨é›†ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œ
 			// --------------------------------
 			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 		if ( iRv < 0 )
 		{
 			CString strErrorMessage ;
 			switch( iRv )
 			{
-			case -1 :	//	Œ»İ‚ÍÀs‚Å‚«‚Ü‚¹‚ñB
+			case -1 :	//	ç¾åœ¨ã¯å®Ÿè¡Œã§ãã¾ã›ã‚“ã€‚
 				break ;
 			default:
 				strErrorMessage.Format( _T( "Error=%d" ) , iRv ) ;
@@ -4776,13 +4776,13 @@ int CWndDcdGridEki::execCrossingCheckRuleDlg(bool bInsert, BOOL bQueryEnable)
 	if (!bQueryEnable) { ppCmd = &pCmd; };
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚ÌÀs‰Â”Û‚Ì”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œå¯å¦ã®åˆ¤å®š
 	// ****************************************************************
 	if (iRv >= 0)
 	{
 		if (bInsert)
 		{
-			iRv = -1;	//	ƒZƒ‹‚ÌˆÊ’u‚ª•s³‚Å‚·B
+			iRv = -1;	//	ã‚»ãƒ«ã®ä½ç½®ãŒä¸æ­£ã§ã™ã€‚
 		}
 		else
 		{
@@ -4796,7 +4796,7 @@ int CWndDcdGridEki::execCrossingCheckRuleDlg(bool bInsert, BOOL bQueryEnable)
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ÌÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 		// ****************************************************************
 		CdEkiXColSpec	aXColSpec = getXColSpecOfFocus();
 		int iEkiIndex = getYColSpecOfFocus().getEkiIndex();
@@ -4811,24 +4811,24 @@ int CWndDcdGridEki::execCrossingCheckRuleDlg(bool bInsert, BOOL bQueryEnable)
 			pCmd->setCrossingCheckRuleEdit(true);
 		}
 		// --------------------------------
-		//	ƒ_ƒCƒAƒƒOOK‚Ìˆ—
+		//	ãƒ€ã‚¤ã‚¢ãƒ­ã‚°OKæ™‚ã®å‡¦ç†
 		// --------------------------------
 		if (iRv == 1)
 		{
 			// --------------------------------
-			//	•ÒWƒRƒ}ƒ“ƒh‚ğÀs
+			//	ç·¨é›†ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œ
 			// --------------------------------
 			getCDiagramEditDoc()->executeEditCmd(pCmd);
 		}
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 		if (iRv < 0)
 		{
 			CString strErrorMessage;
 			switch (iRv)
 			{
-			case -1:	//	Œ»İ‚ÍÀs‚Å‚«‚Ü‚¹‚ñB
+			case -1:	//	ç¾åœ¨ã¯å®Ÿè¡Œã§ãã¾ã›ã‚“ã€‚
 				break;
 			default:
 				strErrorMessage.Format(_T("Error=%d"), iRv);
@@ -4849,22 +4849,22 @@ int CWndDcdGridEki::OnViewDisplaySettingMode_Process(BOOL bQueryEnable)
 {
 	int iRv = 0;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 	if (getDisplaySettingMode())
 	{
-		iRv = 1;	//(bQueryEnable==TRUE‚Ìê‡)[•\¦İ’èƒ‚[ƒh‚É‚·‚é]‚ª—LŒø‚Å‚·B
+		iRv = 1;	//(bQueryEnable==TRUEã®å ´åˆ)[è¡¨ç¤ºè¨­å®šãƒ¢ãƒ¼ãƒ‰ã«ã™ã‚‹]ãŒæœ‰åŠ¹ã§ã™ã€‚
 	}
 	// ****************************************************************
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	ƒRƒ}ƒ“ƒh‚ğÀs
+		//	ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œ
 		// ****************************************************************
 		setDisplaySettingMode(!getDisplaySettingMode());
 
 		// ****************************************************************
-		//	ƒGƒ‰[ƒƒbƒZ[ƒW
+		//	ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		// ****************************************************************
 
 		// ****************************************************************
@@ -4884,13 +4884,13 @@ int CWndDcdGridEki::setDisplaySettingMode(bool value)
 	{
 		m_bDisplaySettingMode = value;
 
-		//	•\¦İ’èƒ‚[ƒh‚Ì—LŒø–³Œø‚ª•Ï‰»‚µ‚½ê‡‚ÍA
-		//	ƒrƒ…[‚ğXV‚µ‚Ü‚·B
+		//	è¡¨ç¤ºè¨­å®šãƒ¢ãƒ¼ãƒ‰ã®æœ‰åŠ¹ç„¡åŠ¹ãŒå¤‰åŒ–ã—ãŸå ´åˆã¯ã€
+		//	ãƒ“ãƒ¥ãƒ¼ã‚’æ›´æ–°ã—ã¾ã™ã€‚
 		OnUpdate_All();
 		InvalidateGrid();
 
-		//	•\¦İ’èƒ‚[ƒh‚Ì—LŒø–³Œø‚ğA
-		//	.ini ƒtƒ@ƒCƒ‹‚É•Û‘¶
+		//	è¡¨ç¤ºè¨­å®šãƒ¢ãƒ¼ãƒ‰ã®æœ‰åŠ¹ç„¡åŠ¹ã‚’ã€
+		//	.ini ãƒ•ã‚¡ã‚¤ãƒ«ã«ä¿å­˜
 		getCDiagramEditApp()->writeCWndDcdGridEkiProp(this);
 	}
 	return (iRv);
@@ -4946,7 +4946,7 @@ int CWndDcdGridEki::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	
 	OnCreate_Header();
 	// --------------------------------
-	//	ƒtƒH[ƒJƒXƒZƒ‹‚Ì‰ŠúˆÊ’u‚ğİ’è
+	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®åˆæœŸä½ç½®ã‚’è¨­å®š
 	// --------------------------------
 	getCFocus()->setFocusCell( getCXDcdGrid()->getCell( 0 , 1 ) ) ;	
 	
@@ -4959,12 +4959,12 @@ void CWndDcdGridEki::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
 
 	int iRv = 0 ;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 
-	//	ƒtƒH[ƒJƒXƒZƒ‹‚ªV‹KƒAƒCƒeƒ€ˆÊ’u‚É‚ ‚é‚Æ‚«‚ÍA
-	//	uV‹KƒAƒCƒeƒ€‚ÌƒvƒƒpƒeƒB“ü—Í‚ğs‚¢A‚»‚ê‚ğ––”ö‚É‘}“ü‚·‚év‚Æ‚¢‚¤
-	//	“®ì‚É‚È‚è‚Ü‚·B
+	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒæ–°è¦ã‚¢ã‚¤ãƒ†ãƒ ä½ç½®ã«ã‚ã‚‹ã¨ãã¯ã€
+	//	ã€Œæ–°è¦ã‚¢ã‚¤ãƒ†ãƒ ã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£å…¥åŠ›ã‚’è¡Œã„ã€ãã‚Œã‚’æœ«å°¾ã«æŒ¿å…¥ã™ã‚‹ã€ã¨ã„ã†
+	//	å‹•ä½œã«ãªã‚Šã¾ã™ã€‚
 	bool bInsert = false ;
 	CdEkiYColSpec aYColSpec = getYColSpecOfFocus() ;
 	if ( aYColSpec.getColumnType() == CdEkiYColSpec::ColumnType_NewEki )
@@ -4975,8 +4975,8 @@ void CWndDcdGridEki::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
 	// ****************************************************************
 
 
-	//	•¶šƒL[‚ª‰Ÿ‚³‚ê‚Ä‚¢‚ÄAƒ_ƒCƒAƒƒOƒ{ƒbƒNƒX‚ªŠJ‚¢‚Ä‚¢‚È‚¢ê‡‚Í
-	//	ƒ_ƒCƒAƒƒOƒ{ƒbƒNƒX‚ğŠJ‚«‚Ü‚·B
+	//	æ–‡å­—ã‚­ãƒ¼ãŒæŠ¼ã•ã‚Œã¦ã„ã¦ã€ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãƒœãƒƒã‚¯ã‚¹ãŒé–‹ã„ã¦ã„ãªã„å ´åˆã¯
+	//	ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãƒœãƒƒã‚¯ã‚¹ã‚’é–‹ãã¾ã™ã€‚
 	if ( CKeyinputSenderToModalDlg::AnyLetterOrDigitKeyIsDown() && 
 			m_CKeyinputSenderToModalDlg.startSend() >= 0 )
 	{
@@ -4984,7 +4984,7 @@ void CWndDcdGridEki::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
 		execEkiPropDlg( bInsert , FALSE ) ;
 		m_CKeyinputSenderToModalDlg.endSend() ;
 	}
-	//	‚·‚Å‚Éƒ_ƒCƒAƒƒO‚ª‹N“®’†¨ƒ_ƒCƒAƒƒOƒ{ƒbƒNƒX‚ÉƒƒbƒZ[ƒW‚ğ“]‘—
+	//	ã™ã§ã«ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãŒèµ·å‹•ä¸­â†’ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãƒœãƒƒã‚¯ã‚¹ã«ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è»¢é€
 	else	
 	{
 		if ( !m_CKeyinputSenderToModalDlg.OnKeyDown( nChar , nRepCnt , nFlags ) )
@@ -4999,12 +4999,12 @@ void CWndDcdGridEki::OnLButtonDblClk(UINT nFlags, CPoint point)
 {
 	int iRv = 0 ;
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚Ì—LŒøE–³Œø”»’è
+	//	ã‚³ãƒãƒ³ãƒ‰ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹åˆ¤å®š
 	// ****************************************************************
 
-	//	ƒtƒH[ƒJƒXƒZƒ‹‚ªV‹KƒAƒCƒeƒ€ˆÊ’u‚É‚ ‚é‚Æ‚«‚ÍA
-	//	uV‹KƒAƒCƒeƒ€‚ÌƒvƒƒpƒeƒB“ü—Í‚ğs‚¢A‚»‚ê‚ğ––”ö‚É‘}“ü‚·‚év‚Æ‚¢‚¤
-	//	“®ì‚É‚È‚è‚Ü‚·B
+	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒæ–°è¦ã‚¢ã‚¤ãƒ†ãƒ ä½ç½®ã«ã‚ã‚‹ã¨ãã¯ã€
+	//	ã€Œæ–°è¦ã‚¢ã‚¤ãƒ†ãƒ ã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£å…¥åŠ›ã‚’è¡Œã„ã€ãã‚Œã‚’æœ«å°¾ã«æŒ¿å…¥ã™ã‚‹ã€ã¨ã„ã†
+	//	å‹•ä½œã«ãªã‚Šã¾ã™ã€‚
 	bool bInsert = false ;
 	CdEkiYColSpec aYColSpec = getYColSpecOfFocus() ;
 	if ( aYColSpec.getColumnType() == CdEkiYColSpec::ColumnType_NewEki )
@@ -5013,11 +5013,11 @@ void CWndDcdGridEki::OnLButtonDblClk(UINT nFlags, CPoint point)
 	}
 
 	// ****************************************************************
-	//	ƒRƒ}ƒ“ƒh‚ÌÀs
+	//	ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œ
 	// ****************************************************************
 	if ( execEkiPropDlg( bInsert , FALSE ) < 0 )
 	{
-		iRv = -1 ;	//	-1 ;	//	ƒtƒH[ƒJƒXƒZƒ‹‚ÌˆÊ’u‚ª•s³‚Å‚·B
+		iRv = -1 ;	//	-1 ;	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ä½ç½®ãŒä¸æ­£ã§ã™ã€‚
 	}
 	// ****************************************************************
 
@@ -5113,11 +5113,11 @@ void CWndDcdGridEki::OnContextMenu(CWnd* pWnd, CPoint point)
 	aMenu.LoadMenu( IDR_MENU_EKIVIEW_CONTEXT ) ;
 	CMenu* pContextMenu = aMenu.GetSubMenu( 0 ) ;
 
-	//	ƒRƒ“ƒeƒLƒXƒgƒƒjƒ…[‚ªƒ}ƒEƒXˆÈŠO‚ÅŒÄ‚Ño‚³‚ê‚½ê‡‚ÍA
-	//	ƒRƒ“ƒeƒLƒXƒgƒƒjƒ…[‚Ì•\¦ˆÊ’u‚ÍAƒtƒH[ƒJƒXƒZƒ‹‚Ì’†‰›‚ÌˆÊ’u‚Æ‚µ‚Ü‚·B
+	//	ã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ãŒãƒã‚¦ã‚¹ä»¥å¤–ã§å‘¼ã³å‡ºã•ã‚ŒãŸå ´åˆã¯ã€
+	//	ã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®è¡¨ç¤ºä½ç½®ã¯ã€ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ä¸­å¤®ã®ä½ç½®ã¨ã—ã¾ã™ã€‚
 	if ( point.x ==-1 || point.y == -1 )
 	{
-		//	ƒRƒ“ƒeƒLƒXƒgƒƒjƒ…[‚ªƒ}ƒEƒXˆÈŠO‚ÅŒÄ‚Ño‚³‚ê‚Ü‚µ‚½
+		//	ã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ãŒãƒã‚¦ã‚¹ä»¥å¤–ã§å‘¼ã³å‡ºã•ã‚Œã¾ã—ãŸ
 		CdDcdPosXy posxyFocusCellColumnNumber = getCFocus()->getFocusCellColumnNumber() ;
 		if ( posxyFocusCellColumnNumber !=  
 				CFocus::ColumnNumberPosXy_NULL() )
@@ -5130,16 +5130,16 @@ void CWndDcdGridEki::OnContextMenu(CWnd* pWnd, CPoint point)
 			ClientToScreen( &point ) ;
 		}
 	}
-	//point = ƒRƒ“ƒeƒLƒXƒgƒƒjƒ…[‚Ì•\¦ˆÊ’uB
-	//	-1‚Ìê‡‚ÍAƒRƒ“ƒeƒLƒXƒgƒƒjƒ…[‚Í•\¦‚Å‚«‚Ü‚¹‚ñB
+	//point = ã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®è¡¨ç¤ºä½ç½®ã€‚
+	//	-1ã®å ´åˆã¯ã€ã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ã¯è¡¨ç¤ºã§ãã¾ã›ã‚“ã€‚
 
 	if ( point.x >= 0 &&  point.y >= 0 )
 	{
 		pContextMenu->TrackPopupMenu( 
 			TPM_LEFTALIGN | TPM_RIGHTBUTTON ,
 			point.x , point.y , 
-			AfxGetMainWnd() ) ;	//	this ‚ğw’è‚·‚é‚ÆAApp¨Doc¨View ‚Ì
-								//ƒRƒ}ƒ“ƒhƒ`ƒF[ƒ“‚ª“®ì‚µ‚Ü‚¹‚ñB
+			AfxGetMainWnd() ) ;	//	this ã‚’æŒ‡å®šã™ã‚‹ã¨ã€Appâ†’Docâ†’View ã®
+								//ã‚³ãƒãƒ³ãƒ‰ãƒã‚§ãƒ¼ãƒ³ãŒå‹•ä½œã—ã¾ã›ã‚“ã€‚
 	}
 	else
 	{

@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍAtake-okm‚ªì¬‚µ‚½OuDia‚ğ‰ü‘¢‚µ‚½ƒ\ƒtƒgƒEƒFƒA‚Å‚·B
-‚±‚ÌƒvƒƒOƒ‰ƒ€—˜—p‚É‚Â‚¢‚Ä‚ÍAtake-okm‹LÚ‚Ì‰º‹L•¶‘‚É€‹’‚µ‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã€take-okmæ°ãŒä½œæˆã—ãŸOuDiaã‚’æ”¹é€ ã—ãŸã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ åˆ©ç”¨ã«ã¤ã„ã¦ã¯ã€take-okmæ°è¨˜è¼‰ã®ä¸‹è¨˜æ–‡æ›¸ã«æº–æ‹ ã—ã¾ã™ã€‚
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(–ó: 
+(è¨³: 
 
-	OuDia - —ñÔ•\‚ğ‚à‚Æ‚ÉAƒ_ƒCƒ„ƒOƒ‰ƒ€‚ğ•`‰æ‚·‚éWin32ƒAƒvƒŠƒP[ƒV
-ƒ‡ƒ“B
+	OuDia - åˆ—è»Šæ™‚åˆ»è¡¨ã‚’ã‚‚ã¨ã«ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚’æç”»ã™ã‚‹Win32ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·
+ãƒ§ãƒ³ã€‚
 
 Copyright (C) 2006-2017 take-okm 
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍƒtƒŠ[ƒ\ƒtƒgƒEƒFƒA‚Å‚·B‚ ‚È‚½‚Í‚±‚ê‚ğAƒtƒŠ[ƒ\ƒtƒgƒEƒFƒAà
-’c‚É‚æ‚Á‚Ä”­s‚³‚ê‚½GNU ˆê”ÊŒöO—˜—p‹–‘ø‘(ƒo[ƒWƒ‡ƒ“3‚©A‚»‚êˆÈ~‚Ìƒo[ƒWƒ‡
-ƒ“‚Ì‚¤‚¿‚Ç‚ê‚©)‚ª’è‚ß‚éğŒ‚Ì‰º‚ÅÄ”Ğ•z‚Ü‚½‚Í‰ü•Ï ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚ã‚ãªãŸã¯ã“ã‚Œã‚’ã€ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢è²¡
+å›£ã«ã‚ˆã£ã¦ç™ºè¡Œã•ã‚ŒãŸGNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸(ãƒãƒ¼ã‚¸ãƒ§ãƒ³3ã‹ã€ãã‚Œä»¥é™ã®ãƒãƒ¼ã‚¸ãƒ§
+ãƒ³ã®ã†ã¡ã©ã‚Œã‹)ãŒå®šã‚ã‚‹æ¡ä»¶ã®ä¸‹ã§å†é ’å¸ƒã¾ãŸã¯æ”¹å¤‰ ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚Í—L—p‚Å‚ ‚é‚±‚Æ‚ğŠè‚Á‚Ä”Ğ•z‚³‚ê‚Ü‚·‚ªA*‘S‚­‚Ì–³•ÛØ *‚Å‚·B
-¤‹Æ‰Â”\«‚Ì•ÛØ‚â“Á’è–Ú“I‚Ö‚Ì“K‡«‚ÍAŒ¾ŠO‚É¦‚³‚ê‚½‚à‚Ì‚à ŠÜ‚ßA‘S‚­‘¶İ
-‚µ‚Ü‚¹‚ñBÚ‚µ‚­‚ÍGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ğ‚²——‚­‚¾‚³‚¢B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯æœ‰ç”¨ã§ã‚ã‚‹ã“ã¨ã‚’é¡˜ã£ã¦é ’å¸ƒã•ã‚Œã¾ã™ãŒã€*å…¨ãã®ç„¡ä¿è¨¼ *ã§ã™ã€‚
+å•†æ¥­å¯èƒ½æ€§ã®ä¿è¨¼ã‚„ç‰¹å®šç›®çš„ã¸ã®é©åˆæ€§ã¯ã€è¨€å¤–ã«ç¤ºã•ã‚ŒãŸã‚‚ã®ã‚‚ å«ã‚ã€å…¨ãå­˜åœ¨
+ã—ã¾ã›ã‚“ã€‚è©³ã—ãã¯GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã‚’ã”è¦§ãã ã•ã„ã€‚
 
-‚ ‚È‚½‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚Æ‹¤‚ÉAGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ÌƒRƒs[‚ğˆê•” ó‚¯æ‚Á
-‚Ä‚¢‚é‚Í‚¸‚Å‚·B‚à‚µó‚¯æ‚Á‚Ä‚¢‚È‚¯‚ê‚ÎA<http://www.gnu.org/licenses/> ‚ğ
-‚²——‚­‚¾‚³‚¢B
+ã‚ãªãŸã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¨å…±ã«ã€GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã®ã‚³ãƒ”ãƒ¼ã‚’ä¸€éƒ¨ å—ã‘å–ã£
+ã¦ã„ã‚‹ã¯ãšã§ã™ã€‚ã‚‚ã—å—ã‘å–ã£ã¦ã„ãªã‘ã‚Œã°ã€<http://www.gnu.org/licenses/> ã‚’
+ã”è¦§ãã ã•ã„ã€‚
 
 )
 
-  ‰Á‚¦‚ÄA“Á•Ê‚È—áŠO‚Æ‚µ‚ÄAtake-okm ‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÌƒR[ƒh‚ğ 
+  åŠ ãˆã¦ã€ç‰¹åˆ¥ãªä¾‹å¤–ã¨ã—ã¦ã€take-okm ã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ã‚³ãƒ¼ãƒ‰ã‚’ 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ‚ ‚é‚¢‚Í "MFC Version 9.0" ‚Æ“¯‚¶ƒ‰ƒCƒZƒ“ƒX‚ª“K—p‚³‚ê‚½
-  "MFC Version 9.0" ‚Ì‰ü•Ï‚³‚ê‚½ƒo[ƒWƒ‡ƒ“)‚ÆƒŠƒ“ƒN‚µA
-  ƒŠƒ“ƒN‚³‚ê‚½—¼Ò‚ğŠÜ‚ŞŒ‹‡’˜ì•¨‚ğ”Ğ•z‚·‚é‹–‰Â‚ğ—^‚¦‚Ü‚·B
-  ‚ ‚È‚½‚Í "MFC" ˆÈŠO‚Åg‚í‚ê‚Ä‚¢‚é‚·‚×‚Ä
-  ‚ÌƒR[ƒh‚ÉŠÖ‚µ‚Ä‚Í‘S–Ê“I‚ÉGNUˆê”ÊŒöO—˜—p‹–‘øŒ_–ñ‘‚É]‚í‚È‚¯‚ê‚Î
-  ‚È‚è‚Ü‚¹‚ñB‚ ‚È‚½‚ª‚±‚Ìƒtƒ@ƒCƒ‹‚ğ‰ü•Ï‚µ‚½‚È‚ç‚ÎA‚ ‚È‚½‚Í‚±‚Ì—áŠO
-  ‚ğ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚Ìƒtƒ@ƒCƒ‹‚Éˆø‚«‘±‚«İ‚¯‚é‚±‚Æ‚à‚Å‚«‚Ü‚·‚ªA‚»
-  ‚¤‚·‚é‹`–±‚Í‚ ‚è‚Ü‚¹‚ñB‚à‚µ—áŠO‚ğİ‚¯‚½‚­‚È‚¯‚ê‚ÎA‚±‚Ì—áŠOğ€‚ğ
-  ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚©‚ç‚Ííœ‚µ‚Ä‚­‚¾‚³‚¢B)
+  (  ã‚ã‚‹ã„ã¯ "MFC Version 9.0" ã¨åŒã˜ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ãŒé©ç”¨ã•ã‚ŒãŸ
+  "MFC Version 9.0" ã®æ”¹å¤‰ã•ã‚ŒãŸãƒãƒ¼ã‚¸ãƒ§ãƒ³)ã¨ãƒªãƒ³ã‚¯ã—ã€
+  ãƒªãƒ³ã‚¯ã•ã‚ŒãŸä¸¡è€…ã‚’å«ã‚€çµåˆè‘—ä½œç‰©ã‚’é ’å¸ƒã™ã‚‹è¨±å¯ã‚’ä¸ãˆã¾ã™ã€‚
+  ã‚ãªãŸã¯ "MFC" ä»¥å¤–ã§ä½¿ã‚ã‚Œã¦ã„ã‚‹ã™ã¹ã¦
+  ã®ã‚³ãƒ¼ãƒ‰ã«é–¢ã—ã¦ã¯å…¨é¢çš„ã«GNUä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾å¥‘ç´„æ›¸ã«å¾“ã‚ãªã‘ã‚Œã°
+  ãªã‚Šã¾ã›ã‚“ã€‚ã‚ãªãŸãŒã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ”¹å¤‰ã—ãŸãªã‚‰ã°ã€ã‚ãªãŸã¯ã“ã®ä¾‹å¤–
+  ã‚’ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®ãƒ•ã‚¡ã‚¤ãƒ«ã«å¼•ãç¶šãè¨­ã‘ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ãŒã€ã
+  ã†ã™ã‚‹ç¾©å‹™ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ã‚‚ã—ä¾‹å¤–ã‚’è¨­ã‘ãŸããªã‘ã‚Œã°ã€ã“ã®ä¾‹å¤–æ¡é …ã‚’
+  ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‹ã‚‰ã¯å‰Šé™¤ã—ã¦ãã ã•ã„ã€‚)
 */
 /*
 // ****************************************************************
@@ -78,13 +78,13 @@ Copyright (C) 2006-2017 take-okm
 #include <chrono>
 
 #include "DcDraw/CaDcdTargetClip.h"
-#include "DcDraw\CaDcdTargetItemPosition.h"
+#include "DcDrawÂ¥CaDcdTargetItemPosition.h"
 #include "DcdCd/Pos/CLineFunc.h"
 #include "DcdCd/Pos/CconvDcdPosOnZone_PosOrgAndRate.h"
-#include "LogMsg\LogMsg.h"
+#include "LogMsgÂ¥LogMsg.h"
 
 #include "CDcdDiagram.h"
-#include "..\resource.h"
+#include "..Â¥resource.h"
 
 #include "CCalcCentDedDgrRessyasenOfPoint.h"
 #include "CRessyajouhouDraw.h"
@@ -92,7 +92,7 @@ Copyright (C) 2006-2017 take-okm
 #include "CRessyaTrackDraw.h"
 #include "CDcdDiagram_CStopMarkDraw.h"
 #include "CRessyaDraw.h"
-#include "DcDraw\CDcdFillrect.h"
+#include "DcDrawÂ¥CDcdFillrect.h"
 
 namespace ViewDiagram{
 
@@ -100,23 +100,23 @@ namespace ViewDiagram{
 //	CDcdDiagram
 // ****************************************************************
 /**
-	ƒ_ƒCƒ„ƒOƒ‰ƒ€ƒrƒ…[‚ÌAEndPos‚ğ•\¦‚·‚é‚½‚ß‚Ì
-	‰EE‰º‘¤‚Ì—]—T—Ìˆæ‚ğA
-	DcDrawÀ•WŒn‚Åw’è‚µ‚Ü‚·B
+	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ãƒ“ãƒ¥ãƒ¼ã®ã€EndPosã‚’è¡¨ç¤ºã™ã‚‹ãŸã‚ã®
+	å³ãƒ»ä¸‹å´ã®ä½™è£•é ˜åŸŸã‚’ã€
+	DcDrawåº§æ¨™ç³»ã§æŒ‡å®šã—ã¾ã™ã€‚
 	
-	‚±‚Ì’l‚ª0‚Ìê‡‚Í
-	I’…‰w(ƒ_ƒCƒ„ƒOƒ‰ƒ€À•W‚ÌX.EndPos)‚ÆA
-	ˆê“ú‚ÌÅŒã‚Ì(ƒ_ƒCƒ„ƒOƒ‰ƒ€À•W‚ÌY.EndPos)
-	‚ªA‰æ–ÊŠO‚É‚È‚èA•\¦‚³‚ê‚Ü‚¹‚ñB
+	ã“ã®å€¤ãŒ0ã®å ´åˆã¯
+	çµ‚ç€é§…(ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åº§æ¨™ã®X.EndPos)ã¨ã€
+	ä¸€æ—¥ã®æœ€å¾Œã®æ™‚åˆ»(ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åº§æ¨™ã®Y.EndPos)
+	ãŒã€ç”»é¢å¤–ã«ãªã‚Šã€è¡¨ç¤ºã•ã‚Œã¾ã›ã‚“ã€‚
 */
 const int DIAGRAM_SIZE_MARGIN_DCD=2 ;
 
 	// ********************************
-	//@name ’è”
+	//@name å®šæ•°
 	// ********************************
 /**
-*	ƒ_ƒCƒ„ƒOƒ‰ƒ€‚Ì
-*	cŒr‚ÌŠÔŠu‚Ì‘I‘ğˆ‚ğ•Û‚·‚éƒe[ƒuƒ‹‚Å‚·B
+*	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã®
+*	ç¸¦ç½«ã®é–“éš”ã®é¸æŠè‚¢ã‚’ä¿æŒã™ã‚‹ãƒ†ãƒ¼ãƒ–ãƒ«ã§ã™ã€‚
 */
 const CDcdDiagram::VLINE	CDcdDiagram::m_arVline[8] =
 {
@@ -132,18 +132,18 @@ const CDcdDiagram::VLINE	CDcdDiagram::m_arVline[8] =
 
 
 // --------------------------------
-//@name ‰º¿ŠÖ”
+//@name ä¸‹è«‹é–¢æ•°
 // --------------------------------
 void CDcdDiagram::adjustProp() 
 {
 	// --------------------------------
-	//DcdPerDgrX,DcdPerDgrY ‚Ì’l³‹K‰»
+	//DcdPerDgrX,DcdPerDgrY ã®å€¤æ­£è¦åŒ–
 	// --------------------------------
 
 	CconvContentPosToDcdTarget::CaConvX* pConvX = 
 		m_CconvContentPosToDcdTarget.getX() ;
-	// m_dwDcdPerDgrX<0.0001 ‚È‚çA0.0001
-	// m_dwDcdPerDgrX ‚ÍA10‚Å§ŒÀ
+	// m_dwDcdPerDgrX<0.0001 ãªã‚‰ã€0.0001
+	// m_dwDcdPerDgrX ã¯ã€10ã§åˆ¶é™
 	if ( pConvX->getTargetPosPerContent() < 0.0001 )
 	{
 		pConvX->setTargetPosPerContent( 0.0001 , NULL ) ;
@@ -166,13 +166,13 @@ void CDcdDiagram::adjustProp()
 }
 
 // ********************************
-//	ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+//	ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 // ********************************
 CDcdDiagram::CDcdDiagram( 
 		CentDedDgrDia*	pCentDedDgrDia , 
 		const CdDedDispProp& aCdDedDispProp ) :
 	m_pCentDedDgrDia( NULL ) ,
-	//m_fontpropDiaRessyaFont( 9 , _T("‚l‚r ƒSƒVƒbƒN")  ) ,
+	//m_fontpropDiaRessyaFont( 9 , _T("ï¼­ï¼³ ã‚´ã‚·ãƒƒã‚¯")  ) ,
 	m_fontpropDiaRessyaFont(9, _T("Meiryo UI")),
 	m_colorDiaHaikeiColor( CdColorProp( 255 , 255 , 255 ) ) ,
 	m_colorDiaJikuColor( CdColorProp( 0 , 0 , 0 ) ) ,
@@ -202,7 +202,7 @@ CDcdDiagram::CDcdDiagram(
 
 CDcdDiagram::CDcdDiagram() :
 	m_pCentDedDgrDia( NULL ) ,
-	//m_fontpropDiaRessyaFont( 9 , _T("‚l‚r ƒSƒVƒbƒN")  ) ,
+	//m_fontpropDiaRessyaFont( 9 , _T("ï¼­ï¼³ ã‚´ã‚·ãƒƒã‚¯")  ) ,
 	m_fontpropDiaRessyaFont(9, _T("Meiryo UI")),
 	m_colorDiaHaikeiColor( CdColorProp( 255 , 255 , 255 ) ) ,
 	m_colorDiaJikuColor( CdColorProp( 0 , 0 , 0 ) ) ,
@@ -226,7 +226,7 @@ CDcdDiagram::CDcdDiagram() :
 	}
 }
 
-CDcdDiagram::~CDcdDiagram() 
+CDcdDiagram::â€¾CDcdDiagram() 
 {
 }
 	
@@ -242,22 +242,22 @@ bool CDcdDiagram::DcDraw(IfDcdTarget* pIfDcdTarget)
 	CdDcdFreeLineProp	linepropBold(2, m_colorDiaJikuColor);
 
 	// --------------------------------
-	//	DcdTarget‚Ì—Ìˆæ‚É
-	//	ƒNƒŠƒbƒsƒ“ƒO‚ğs‚¢‚Ü‚·B			
+	//	DcdTargetã®é ˜åŸŸã«
+	//	ã‚¯ãƒªãƒƒãƒ”ãƒ³ã‚°ã‚’è¡Œã„ã¾ã™ã€‚			
 	// --------------------------------
 	CaDcdTargetClip*	pTargetClip = NULL;
 	{
 		CdDcdZoneXy	zonexyCentDedDgrDia = getCentDedDgrDia()->getZone();
-		//zonexyCentDedDgrDia = ƒ_ƒCƒ„ƒOƒ‰ƒ€‚Ì”ÍˆÍ‚ğA
-		//	wƒ_ƒCƒ„ƒOƒ‰ƒ€ƒGƒ“ƒeƒBƒeƒBÀ•WŒnx‚Å•Û‚µ‚Ü‚·B
-		//	XÀ•W‚Í24ŠÔ•ªAYÀ•W‚Í‹N“_‚©‚çI“_‚Ü‚Å‚ğ•\‚µ‚Ü‚·B
+		//zonexyCentDedDgrDia = ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã®ç¯„å›²ã‚’ã€
+		//	ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚¨ãƒ³ãƒ†ã‚£ãƒ†ã‚£åº§æ¨™ç³»ã€ã§ä¿æŒã—ã¾ã™ã€‚
+		//	Xåº§æ¨™ã¯24æ™‚é–“åˆ†ã€Yåº§æ¨™ã¯èµ·ç‚¹ã‹ã‚‰çµ‚ç‚¹ã¾ã§ã‚’è¡¨ã—ã¾ã™ã€‚
 
 		CdDcdZoneXy	zonexyDcd_CentDedDgrDia =
 			DgrToDcd(pIfDcdTarget, zonexyCentDedDgrDia);
 		//zonexyDcd_CentDedDgrDia = 
-		//	ƒ_ƒCƒ„ƒOƒ‰ƒ€‚Ì”ÍˆÍ‚ğAwDcDrawÀ•WŒnx‚Å•Û‚µ‚Ü‚·B
-		//	’A‚µA‚±‚Ì’l‚ğƒNƒŠƒbƒv—Ìˆæ‚É‚·‚é‚ÆA
-		//	EndPos‚ÍƒNƒŠƒbƒv—Ìˆæ‚ÉŠÜ‚Ü‚ê‚Ü‚¹‚ñB
+		//	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã®ç¯„å›²ã‚’ã€ã€DcDrawåº§æ¨™ç³»ã€ã§ä¿æŒã—ã¾ã™ã€‚
+		//	ä½†ã—ã€ã“ã®å€¤ã‚’ã‚¯ãƒªãƒƒãƒ—é ˜åŸŸã«ã™ã‚‹ã¨ã€
+		//	EndPosã¯ã‚¯ãƒªãƒƒãƒ—é ˜åŸŸã«å«ã¾ã‚Œã¾ã›ã‚“ã€‚
 		zonexyDcd_CentDedDgrDia.setX(
 			CdDcdZone(
 				zonexyDcd_CentDedDgrDia.getX().getPos(),
@@ -268,12 +268,12 @@ bool CDcdDiagram::DcDraw(IfDcdTarget* pIfDcdTarget)
 				zonexyDcd_CentDedDgrDia.getY().getPos(),
 				zonexyDcd_CentDedDgrDia.getY().getSize()
 				+ DIAGRAM_SIZE_MARGIN_DCD));
-		//zonexyDcd_CentDedDgrDia = ƒ_ƒCƒ„ƒOƒ‰ƒ€‚Ì”ÍˆÍ‚ğ
-		//	wDcDrawÀ•WŒnx‚Å•Û‚µ‚Ü‚·B
+		//zonexyDcd_CentDedDgrDia = ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã®ç¯„å›²ã‚’
+		//	ã€DcDrawåº§æ¨™ç³»ã€ã§ä¿æŒã—ã¾ã™ã€‚
 
-		//ƒNƒŠƒbƒv—Ìˆæ‚ÍA
-		//	IfDcdTarget‚Ì—Ìˆæ‚Æ
-		//	ƒ_ƒCƒ„ƒOƒ‰ƒ€‚Ì”ÍˆÍ‚ÌŒğ·—Ìˆæ‚Å‚·B
+		//ã‚¯ãƒªãƒƒãƒ—é ˜åŸŸã¯ã€
+		//	IfDcdTargetã®é ˜åŸŸã¨
+		//	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã®ç¯„å›²ã®äº¤å·®é ˜åŸŸã§ã™ã€‚
 		CdDcdZoneXy	zonexyClip =
 			pIfDcdTarget->getZone().CrossZone(zonexyDcd_CentDedDgrDia);
 
@@ -281,22 +281,22 @@ bool CDcdDiagram::DcDraw(IfDcdTarget* pIfDcdTarget)
 		pTargetClip->validate();
 	}
 	// --------------------------------
-	//	•`‰æ‚ğs‚¤—Ìˆæ‚ÌŒvZ	
+	//	æç”»ã‚’è¡Œã†é ˜åŸŸã®è¨ˆç®—	
 	// --------------------------------
 	CdDcdZoneXy	zonexyCentDedDgrDia = m_pCentDedDgrDia->getZone();
-	//zonexyCentDedDgrDia = ƒ_ƒCƒ„ƒOƒ‰ƒ€‚Ì”ÍˆÍ‚ğA
-	//	wƒ_ƒCƒ„ƒOƒ‰ƒ€ƒGƒ“ƒeƒBƒeƒBÀ•WŒnx‚Å•Û‚µ‚Ü‚·B
-	//	XÀ•W‚Í24ŠÔ•ªAYÀ•W‚Í‹N“_‚©‚çI“_‚Ü‚Å‚ğ•\‚µ‚Ü‚·B
+	//zonexyCentDedDgrDia = ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã®ç¯„å›²ã‚’ã€
+	//	ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚¨ãƒ³ãƒ†ã‚£ãƒ†ã‚£åº§æ¨™ç³»ã€ã§ä¿æŒã—ã¾ã™ã€‚
+	//	Xåº§æ¨™ã¯24æ™‚é–“åˆ†ã€Yåº§æ¨™ã¯èµ·ç‚¹ã‹ã‚‰çµ‚ç‚¹ã¾ã§ã‚’è¡¨ã—ã¾ã™ã€‚
 
 	// --------------------------------
-	//	Šî–{”wŒiF‚ğ•`‰æ‚µ‚Ü‚·B
+	//	åŸºæœ¬èƒŒæ™¯è‰²ã‚’æç”»ã—ã¾ã™ã€‚
 	// --------------------------------
 	CdBrushProp	aCdBrushProp(getDiaBackColor(0));
 	CDcdFillrect aCDcdFillrect(aCdBrushProp);
 	aCDcdFillrect.DcDraw(pTargetClip);
 
 	// --------------------------------
-	//	ŒÂ•Ê”wŒiF‚ğ•`‰æ‚µ‚Ü‚·B
+	//	å€‹åˆ¥èƒŒæ™¯è‰²ã‚’æç”»ã—ã¾ã™ã€‚
 	// --------------------------------
 	if (getDisplayBackColorNextEki())
 	{
@@ -337,13 +337,13 @@ bool CDcdDiagram::DcDraw(IfDcdTarget* pIfDcdTarget)
 #pragma omp parallel sections
 	{
 		// --------------------------------
-		//	cŒrü‚ğ•`‰æ‚µ‚Ü‚·B
+		//	ç¸¦ç½«ç·šã‚’æç”»ã—ã¾ã™ã€‚
 		// --------------------------------
 #pragma omp section
 		{
 
-			//	cŒrü‚ÍAƒ_ƒCƒ„ƒOƒ‰ƒ€‹N“_‚ÌŸ‚ÌAcŒrü•`‰æ‚©‚çŠJn
-			//	(4:01‚Å2•ª–Ú‚È‚ç4:02A1•ª–Ú‚È‚ç4:01A10•ª–Ú‚È‚ç4:10)
+			//	ç¸¦ç½«ç·šã¯ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ èµ·ç‚¹æ™‚åˆ»ã®æ¬¡ã®ã€ç¸¦ç½«ç·šæç”»æ™‚åˆ»ã‹ã‚‰é–‹å§‹
+			//	(4:01ã§2åˆ†ç›®ãªã‚‰4:02ã€1åˆ†ç›®ãªã‚‰4:01ã€10åˆ†ç›®ãªã‚‰4:10)
 			DcdPos posDgrXVlineOrg = zonexyCentDedDgrDia.getX().getPos();
 			{
 				int iMod = zonexyCentDedDgrDia.getX().getPos() % getVlinePitch();
@@ -352,8 +352,8 @@ bool CDcdDiagram::DcDraw(IfDcdTarget* pIfDcdTarget)
 					posDgrXVlineOrg += getVlinePitch() - iMod;
 				}
 			}
-			//posDgrXVlineOrg = •\¦‚ÌŠJnˆÊ’u
-			//	ƒ_ƒCƒ„ƒOƒ‰ƒ€‹N“_‚ÌŸ‚Ì³‚©‚çŠJn(4:59‚È‚ç5:00A5:00‚È‚ç5:00)
+			//posDgrXVlineOrg = æ™‚åˆ»è¡¨ç¤ºã®é–‹å§‹ä½ç½®
+			//	ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ èµ·ç‚¹æ™‚åˆ»ã®æ¬¡ã®æ­£æ™‚ã‹ã‚‰é–‹å§‹(4:59ãªã‚‰5:00ã€5:00ãªã‚‰5:00)
 
 
 			DcdPos iXEndPos = zonexyCentDedDgrDia.getX().getEndPos();
@@ -365,8 +365,8 @@ bool CDcdDiagram::DcDraw(IfDcdTarget* pIfDcdTarget)
 				//		posDgrX <= zonexyCentDedDgrDia.getX().getEndPos() ; 
 				//		posDgrX += getVlinePitch() )
 			{
-				//posDgrX = ƒ_ƒCƒ„ƒOƒ‰ƒ€ƒGƒ“ƒeƒBƒeƒBÀ•W‚Å‚ÌA
-				//	cŒrü‚ÌˆÊ’u
+				//posDgrX = ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚¨ãƒ³ãƒ†ã‚£ãƒ†ã‚£åº§æ¨™ã§ã®ã€
+				//	ç¸¦ç½«ç·šã®ä½ç½®
 				CDcdFreeLine	aCDcdFreeLine;
 				if (posDgrX % getVlineBoldPitch() == 0)
 				{
@@ -380,14 +380,14 @@ bool CDcdDiagram::DcDraw(IfDcdTarget* pIfDcdTarget)
 				{
 					aCDcdFreeLine.setCdLineProp(linepropDot);
 				}
-				//	À•W‚ğADgr¨Dcd‚É•ÏŠ·
+				//	åº§æ¨™ã‚’ã€Dgrâ†’Dcdã«å¤‰æ›
 				DcdPos posDcdX = XDgrToDcd(pTargetClip, posDgrX);
 				CdDcdZone	zoneDcdY =
 					YDgrToDcd(pTargetClip, zonexyCentDedDgrDia.getY());
 				if (pTargetClip->getZone().getX().getPos() - 1 <= posDcdX &&
 					posDcdX < pTargetClip->getZone().getX().getEndPos() + 1)
 				{
-					//Œrü‚Ìã‰º‚ªA•\¦—ÌˆæŠO‚Éo‚Ä‚¢‚éê‡‚ÍA•\¦—Ìˆæ‚ÌŠO1ƒsƒNƒZƒ‹‚Ü‚ÅAü‚Ì•`Ê”ÍˆÍ‚ğk‚ß‚éB
+					//ç½«ç·šã®ä¸Šä¸‹ãŒã€è¡¨ç¤ºé ˜åŸŸå¤–ã«å‡ºã¦ã„ã‚‹å ´åˆã¯ã€è¡¨ç¤ºé ˜åŸŸã®å¤–1ãƒ”ã‚¯ã‚»ãƒ«ã¾ã§ã€ç·šã®æå†™ç¯„å›²ã‚’ç¸®ã‚ã‚‹ã€‚
 					if (pTargetClip->getZone().getY().getPos() > zoneDcdY.getPos())
 					{
 						//zoneDcdY.setPos(pTargetClip->getZone().getY().getPos() - 1);
@@ -411,7 +411,7 @@ bool CDcdDiagram::DcDraw(IfDcdTarget* pIfDcdTarget)
 			}
 		}
 		// --------------------------------
-		//	‰¡Œrü‚ğ•`‰æ‚µ‚Ü‚·B
+		//	æ¨ªç½«ç·šã‚’æç”»ã—ã¾ã™ã€‚
 		// --------------------------------
 #pragma omp section
 		{
@@ -426,7 +426,7 @@ bool CDcdDiagram::DcDraw(IfDcdTarget* pIfDcdTarget)
 				if (pTargetClip->getZone().getY().getPos() - 1 <= posDcdY &&
 					posDcdY < pTargetClip->getZone().getY().getEndPos() + 1)
 				{
-					//Œrü‚Ì¶‰E‚ªA•\¦—ÌˆæŠO‚Éo‚Ä‚¢‚éê‡‚ÍA•\¦—Ìˆæ‚ÌŠO1ƒsƒNƒZƒ‹‚Ü‚ÅAü‚Ì•`Ê”ÍˆÍ‚ğk‚ß‚éB
+					//ç½«ç·šã®å·¦å³ãŒã€è¡¨ç¤ºé ˜åŸŸå¤–ã«å‡ºã¦ã„ã‚‹å ´åˆã¯ã€è¡¨ç¤ºé ˜åŸŸã®å¤–1ãƒ”ã‚¯ã‚»ãƒ«ã¾ã§ã€ç·šã®æå†™ç¯„å›²ã‚’ç¸®ã‚ã‚‹ã€‚
 					if (pTargetClip->getZone().getX().getPos() > zoneDcdX.getPos())
 					{
 						//zoneDcdX.setPos(pTargetClip->getZone().getX().getPos() - 1);
@@ -470,14 +470,14 @@ bool CDcdDiagram::DcDraw(IfDcdTarget* pIfDcdTarget)
 					{
 						aCDcdFreeLine.setCdLineProp(linepropNormal);
 					}
-					//	À•W‚ğADgr¨Dcd‚É•ÏŠ·
+					//	åº§æ¨™ã‚’ã€Dgrâ†’Dcdã«å¤‰æ›
 					DcdPos	posDcdY = YDgrToDcd(pTargetClip, posDgrY);
 					CdDcdZone	zoneDcdX =
 						XDgrToDcd(pTargetClip, zonexyCentDedDgrDia.getX());
 					if (pTargetClip->getZone().getY().getPos() - 1 <= posDcdY &&
 						posDcdY < pTargetClip->getZone().getY().getEndPos() + 1)
 					{
-						//Œrü‚Ì¶‰E‚ªA•\¦—ÌˆæŠO‚Éo‚Ä‚¢‚éê‡‚ÍA•\¦—Ìˆæ‚ÌŠO1ƒsƒNƒZƒ‹‚Ü‚ÅAü‚Ì•`Ê”ÍˆÍ‚ğk‚ß‚éB
+						//ç½«ç·šã®å·¦å³ãŒã€è¡¨ç¤ºé ˜åŸŸå¤–ã«å‡ºã¦ã„ã‚‹å ´åˆã¯ã€è¡¨ç¤ºé ˜åŸŸã®å¤–1ãƒ”ã‚¯ã‚»ãƒ«ã¾ã§ã€ç·šã®æå†™ç¯„å›²ã‚’ç¸®ã‚ã‚‹ã€‚
 						if (pTargetClip->getZone().getX().getPos() > zoneDcdX.getPos())
 						{
 							//zoneDcdX.setPos(pTargetClip->getZone().getX().getPos() - 1);
@@ -506,21 +506,21 @@ bool CDcdDiagram::DcDraw(IfDcdTarget* pIfDcdTarget)
 							ERessyahoukou::Ressyahoukou_Kudari,
 							iEkiIndex,
 							idx);
-						//posDgrY < 0 ‚Ìê‡‚ÍAİü•\”ñ•\¦”Ôü‚Å‚·B
+						//posDgrY < 0 ã®å ´åˆã¯ã€åœ¨ç·šè¡¨éè¡¨ç¤ºç•ªç·šã§ã™ã€‚
 						if (posDgrY < 0)
 						{
 							continue;
 						}
 						CDcdFreeLine	aCDcdFreeLine;
 						aCDcdFreeLine.setCdLineProp(linepropNormal);
-						//	À•W‚ğADgr¨Dcd‚É•ÏŠ·
+						//	åº§æ¨™ã‚’ã€Dgrâ†’Dcdã«å¤‰æ›
 						DcdPos	posDcdY = YDgrToDcd(pTargetClip, posDgrY);
 						CdDcdZone	zoneDcdX =
 							XDgrToDcd(pTargetClip, zonexyCentDedDgrDia.getX());
 						if (pTargetClip->getZone().getY().getPos() - 1 <= posDcdY &&
 							posDcdY < pTargetClip->getZone().getY().getEndPos() + 1)
 						{
-							//Œrü‚Ì¶‰E‚ªA•\¦—ÌˆæŠO‚Éo‚Ä‚¢‚éê‡‚ÍA•\¦—Ìˆæ‚ÌŠO1ƒsƒNƒZƒ‹‚Ü‚ÅAü‚Ì•`Ê”ÍˆÍ‚ğk‚ß‚éB
+							//ç½«ç·šã®å·¦å³ãŒã€è¡¨ç¤ºé ˜åŸŸå¤–ã«å‡ºã¦ã„ã‚‹å ´åˆã¯ã€è¡¨ç¤ºé ˜åŸŸã®å¤–1ãƒ”ã‚¯ã‚»ãƒ«ã¾ã§ã€ç·šã®æå†™ç¯„å›²ã‚’ç¸®ã‚ã‚‹ã€‚
 							if (pTargetClip->getZone().getX().getPos() > zoneDcdX.getPos())
 							{
 								//zoneDcdX.setPos(pTargetClip->getZone().getX().getPos() - 1);
@@ -561,14 +561,14 @@ bool CDcdDiagram::DcDraw(IfDcdTarget* pIfDcdTarget)
 					{
 						aCDcdFreeLine.setCdLineProp(linepropNormal);
 					}
-					//	À•W‚ğADgr¨Dcd‚É•ÏŠ·
+					//	åº§æ¨™ã‚’ã€Dgrâ†’Dcdã«å¤‰æ›
 					DcdPos	posDcdY = YDgrToDcd(pTargetClip, posDgrY);
 					CdDcdZone	zoneDcdX =
 						XDgrToDcd(pTargetClip, zonexyCentDedDgrDia.getX());
 					if (pTargetClip->getZone().getY().getPos() - 1 <= posDcdY &&
 						posDcdY < pTargetClip->getZone().getY().getEndPos() + 1)
 					{
-						//Œrü‚Ì¶‰E‚ªA•\¦—ÌˆæŠO‚Éo‚Ä‚¢‚éê‡‚ÍA•\¦—Ìˆæ‚ÌŠO1ƒsƒNƒZƒ‹‚Ü‚ÅAü‚Ì•`Ê”ÍˆÍ‚ğk‚ß‚éB
+						//ç½«ç·šã®å·¦å³ãŒã€è¡¨ç¤ºé ˜åŸŸå¤–ã«å‡ºã¦ã„ã‚‹å ´åˆã¯ã€è¡¨ç¤ºé ˜åŸŸã®å¤–1ãƒ”ã‚¯ã‚»ãƒ«ã¾ã§ã€ç·šã®æå†™ç¯„å›²ã‚’ç¸®ã‚ã‚‹ã€‚
 						if (pTargetClip->getZone().getX().getPos() > zoneDcdX.getPos())
 						{
 							//zoneDcdX.setPos(pTargetClip->getZone().getX().getPos() - 1);
@@ -603,7 +603,7 @@ bool CDcdDiagram::DcDraw(IfDcdTarget* pIfDcdTarget)
 				if (pTargetClip->getZone().getY().getPos() - 1 <= posDcdY &&
 					posDcdY < pTargetClip->getZone().getY().getEndPos() + 1)
 				{
-					//Œrü‚Ì¶‰E‚ªA•\¦—ÌˆæŠO‚Éo‚Ä‚¢‚éê‡‚ÍA•\¦—Ìˆæ‚ÌŠO1ƒsƒNƒZƒ‹‚Ü‚ÅAü‚Ì•`Ê”ÍˆÍ‚ğk‚ß‚éB
+					//ç½«ç·šã®å·¦å³ãŒã€è¡¨ç¤ºé ˜åŸŸå¤–ã«å‡ºã¦ã„ã‚‹å ´åˆã¯ã€è¡¨ç¤ºé ˜åŸŸã®å¤–1ãƒ”ã‚¯ã‚»ãƒ«ã¾ã§ã€ç·šã®æå†™ç¯„å›²ã‚’ç¸®ã‚ã‚‹ã€‚
 					if (pTargetClip->getZone().getX().getPos() > zoneDcdX.getPos())
 					{
 						//zoneDcdX.setPos(pTargetClip->getZone().getX().getPos() - 1);
@@ -628,7 +628,7 @@ bool CDcdDiagram::DcDraw(IfDcdTarget* pIfDcdTarget)
 
 	//auto p1 = std::chrono::high_resolution_clock::now();
 	// --------------------------------
-	//	—ñÔü,—ñÔî•ñ,’âÔ‹L†‚ğ•`‰æ‚µ‚Ü‚·B
+	//	åˆ—è»Šç·š,åˆ—è»Šæƒ…å ±,åœè»Šè¨˜å·ã‚’æç”»ã—ã¾ã™ã€‚
 	// --------------------------------
 	{
 		CRessyaDraw	aCRessyaDraw(this, pTargetClip,
@@ -637,7 +637,7 @@ bool CDcdDiagram::DcDraw(IfDcdTarget* pIfDcdTarget)
 		aCRessyaDraw.execute();
 	}
 	// --------------------------------
-	//	—ñÔü‚ğ•`‰æ‚µ‚Ü‚·B
+	//	åˆ—è»Šç·šã‚’æç”»ã—ã¾ã™ã€‚
 	// --------------------------------
 	//{
 	//	CRessyasenDraw	aCRessyasenDraw( this , pTargetClip , 
@@ -646,7 +646,7 @@ bool CDcdDiagram::DcDraw(IfDcdTarget* pIfDcdTarget)
 	//}
 	//auto p2 = std::chrono::high_resolution_clock::now();
 	// --------------------------------
-	//	—ñÔî•ñ‚ğ•`‰æ‚µ‚Ü‚·B
+	//	åˆ—è»Šæƒ…å ±ã‚’æç”»ã—ã¾ã™ã€‚
 	// --------------------------------
 	//{
 	//	CRessyajouhouDraw	aCRessyajouhouDraw( this , pTargetClip ,
@@ -656,7 +656,7 @@ bool CDcdDiagram::DcDraw(IfDcdTarget* pIfDcdTarget)
 
 	//auto p3 = std::chrono::high_resolution_clock::now();
 	// --------------------------------
-	//	’âÔ‹L†‚ğ•`‰æ‚µ‚Ü‚·B
+	//	åœè»Šè¨˜å·ã‚’æç”»ã—ã¾ã™ã€‚
 	// --------------------------------
 	//{
 	//	CDcdDiagram_CStopMarkDraw	aCDcdDiagram_CStopMarkDraw( 
@@ -668,7 +668,7 @@ bool CDcdDiagram::DcDraw(IfDcdTarget* pIfDcdTarget)
 
 	//auto p4 = std::chrono::high_resolution_clock::now();
 	// --------------------------------
-	//	İü•\‚ğ•`‰æ‚µ‚Ü‚·B
+	//	åœ¨ç·šè¡¨ã‚’æç”»ã—ã¾ã™ã€‚
 	// --------------------------------
 	//{
 	//	CRessyaTrackDraw	aCRessyaTrackDraw(this, pTargetClip,
@@ -702,7 +702,7 @@ bool CDcdDiagram::getItemSize( IfDcdTarget* pIfDcdTarget ,
 //	CdDedDispProp
 // ********************************
 	// ********************************
-	//@name CDcdDiagram-ŠÖ˜A
+	//@name CDcdDiagram-é–¢é€£
 	// ********************************
 CentDedDgrDia*	CDcdDiagram::getCentDedDgrDia()
 {
@@ -727,7 +727,7 @@ CDcdDiagram& CDcdDiagram::setCentDedDgrDia( CentDedDgrDia* value )
 		else
 		{
 			// --------------------------------
-			//	m_zonexyZone_Dgr ‚ÉƒfƒtƒHƒ‹ƒg’l‚ğİ’è
+			//	m_zonexyZone_Dgr ã«ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤ã‚’è¨­å®š
 			// --------------------------------
 			m_CconvContentPosToDcdTarget.setContentPosAndRate( 
 				CdDcdPosXy() ,
@@ -744,7 +744,7 @@ CDcdDiagram& CDcdDiagram::setCentDedDgrDia( CentDedDgrDia* value )
 } ;
 
 	// ********************************
-	//@name CDcdDiagram-‘®«-CdDedDispProp ‚©‚ç“Ç‚İ‚İ‰Â”\
+	//@name CDcdDiagram-å±æ€§-CdDedDispProp ã‹ã‚‰èª­ã¿è¾¼ã¿å¯èƒ½
 	// ********************************
 CdFontProp	CDcdDiagram::getDiaRessyaFont()const{
 		return 	m_fontpropDiaRessyaFont ;};
@@ -787,7 +787,7 @@ CDcdDiagram & CDcdDiagram::setDiagramDisplayOuterTerminal(int value)
 }
 
 	// ********************************
-	//@name CDcdDiagram-‘®«-CdDedDispProp ‚É‚Í‚È‚¢‚à‚Ì
+	//@name CDcdDiagram-å±æ€§-CdDedDispProp ã«ã¯ãªã„ã‚‚ã®
 	// ********************************
 bool	CDcdDiagram::getDisplayRessyabangou()const{
 		return m_bDisplayRessyabangou ;};
@@ -923,7 +923,7 @@ CDcdDiagram& CDcdDiagram::setDisplayBackColorNextEki(bool value)
 }
 ;
 	// ********************************
-	//@name CDcdDiagram-‘€ì
+	//@name CDcdDiagram-æ“ä½œ
 	// ********************************
 
 CDcdDiagram& CDcdDiagram::readCdDedDispProp( const CdDedDispProp& value ) 
@@ -999,7 +999,7 @@ int CDcdDiagram::calcCentDedDgrRessyasenOfPoint(
 			*piRessyaIdx = aEnum.getRessyaIdx() ; 
 			*piRessyasenIdx = aEnum.getRessyasenIdx() ; 
 
-			LogMsg(_T("\tERessyahoukou=%d iRessyaIdx=%d iRessyasenIdx=%d") ,
+			LogMsg(_T("Â¥tERessyahoukou=%d iRessyaIdx=%d iRessyasenIdx=%d") ,
 				*pERessyahoukou ,
 				*piRessyaIdx ,
 				*piRessyasenIdx ) ;
@@ -1044,7 +1044,7 @@ int CDcdDiagram::calcEkiOrderOfPoint(
 
 
 	// ********************************
-	//@name CDcdDiagram-ƒ_ƒCƒ„ƒOƒ‰ƒ€À•W‚ÆAIfDcdTarget ã‚ÌÀ•W‚ğ•ÏŠ·
+	//@name CDcdDiagram-ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ åº§æ¨™ã¨ã€IfDcdTarget ä¸Šã®åº§æ¨™ã‚’å¤‰æ›
 	// ********************************
 DcdPos CDcdDiagram::XDgrToDcd( IfDcdTarget* pIfDcdTarget , DcdPos posSrc ) 
 {

@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��:
+(訳:
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h��
+  加えて、特別な例外として、take-okm はこのプログラムのコードを
   "MFC(Microsoft Foundation Class library) Version 9.0"
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -78,8 +78,8 @@ Copyright (C) 2006-2017 take-okm
 #ifndef  CDedOperationConnecter_h
 #define  CDedOperationConnecter_h
 
-//#include "..\entDed\CentDedRosen.h"
-//#include "..\entDgr\CentDedDgrDia.h"
+//#include "..¥entDed¥CentDedRosen.h"
+//#include "..¥entDgr¥CentDedDgrDia.h"
 #include "entDed.h"
 #include <unordered_map>
 
@@ -90,14 +90,14 @@ namespace entDed {
 	// ****************************************************************
 	/**
 	@brief
-		�y�T�v�z
-		CentDedDia ���̗�Ԃ́w�^�p�ڑ��x�������s���N���X�B
+		【概要】
+		CentDedDia 内の列車の『運用接続』処理を行うクラス。
 
-		�y�g�����z
+		【使い方】
 
-		1.  �R���X�g���N�^�ŃI�u�W�F�N�g�𐶐����܂��B
-		�K�v�ɉ����āAOperationConnect��������
-		OperationUpdate�̂ǂ��炩���g�������Ă��������B
+		1.  コンストラクタでオブジェクトを生成します。
+		必要に応じて、OperationConnectもしくは
+		OperationUpdateのどちらかを使い分けてください。
 
 	*/
 //struct RessyaList {
@@ -105,17 +105,17 @@ namespace entDed {
 //	CdDedJikoku HatsuJikoku;
 //
 //	/**
-//		���̍\���̂����Ӗ���\��
-//		-1:��ԏI�[
-//			��ԃv���p�e�B���L��
-//		0:�z�[����L
-//			���̎��ԑт́A���w��ʂ蔲�����ԁA
-//			��Ƃ������̏ꍇ�̎唭���Ԑ����g�p�����Ԃ����݂��邽��
-//			�^�p�ڑ��͈̔͊O�ł��邱�Ƃ������B
-//		1:��Ԑ�[
-//			��ԃv���p�e�B���L��
-//		�o��̏ꍇ��0
-//		����̏ꍇ��0
+//		この構造体が持つ意味を表す
+//		-1:列車終端
+//			列車プロパティが有効
+//		0:ホーム占有
+//			この時間帯は、当駅を通り抜ける列車、
+//			作業が入換の場合の主発着番線を使用する列車が存在するため
+//			運用接続の範囲外であることを示す。
+//		1:列車先端
+//			列車プロパティが有効
+//		出区の場合は0
+//		入区の場合も0
 //	*/
 //	int iType;
 //	CdDedRessyaProperty sRessyaProperty;
@@ -151,9 +151,9 @@ namespace entDed {
 //};
 
 	/**
-		RessyaProperty�ƑO��Ƃ������͌��Ƃ̂����ꂩ�̑g�ݍ��킹�ŁA
-		��Ԃ̈�_�������܂��B
-		iShiftSecond�́A�p�^�[���_�C���v���r���[�L�����̂ݎg�p���A����ԂƂ̎��ԍ���ێ����܂�
+		RessyaPropertyと前作業もしくは後作業のいずれかの組み合わせで、
+		列車の一点を示します。
+		iShiftSecondは、パターンダイヤプレビュー有効時のみ使用し、元列車との時間差を保持します
 	*/
 struct RessyaElement {
 	CentDedBeforeOperation* BeforeOperation;
@@ -286,22 +286,22 @@ struct OperationElement {
 };
 
 /**
-	���o��A�g�R�[�h�ɂ��^�p�ڑ����s�����߂ɗp���܂��B
-	���o��A�g�R�[�h���L�[�Ƃ��A���̍\���̂�v�f�Ƃ��ĊǗ����܂��B
-	iStatus:�L�[�ƂȂ���o��A�g�R�[�h�ɑ΂��A�ǂ̎�ނ̗�Ԃ����݂���̂��ƗL�����������܂��B
-		0:�o��(�H���O�n��)��Ԃ݂̂����݂��܂��B
-			�ŏI�I�ɂ��̏󋵂ȏꍇ�A���o��A�g�͖����ƂȂ�܂��B(�o���Ƃɐݒ肳��Ă���^�Ԃ��g�p���ĉ^�p�ڑ����s��)
-		1:����(�H���O�I��)��Ԃ݂̂����݂��܂��B
-			�ŏI�I�ɂ��̏󋵂ȏꍇ�A���o��A�g�͖����ƂȂ�܂��B
-		2:�o��Ɠ��悪�y�A�ɂȂ��Ă��܂��B
-			�ŏI�I�ɂ��̏󋵂ȏꍇ�A���o��A�g�͗L���ƂȂ�܂��B
-		3:�o��������͓���̕Е��܂��͗����̗�Ԃ��A2�{�ȏ㑶�݂��܂��B
-			�ŏI�I�ɂ��̏󋵂ȏꍇ�A���o��A�g�͖����ƂȂ�܂��B
+	入出区連携コードによる運用接続を行うために用います。
+	入出区連携コードをキーとし、この構造体を要素として管理します。
+	iStatus:キーとなる入出区連携コードに対し、どの種類の列車が存在するのかと有効性を示します。
+		0:出区(路線外始発)列車のみが存在します。
+			最終的にこの状況な場合、入出区連携は無効となります。(出区作業に設定されている運番を使用して運用接続を行う)
+		1:入区(路線外終着)列車のみが存在します。
+			最終的にこの状況な場合、入出区連携は無効となります。
+		2:出区と入区がペアになっています。
+			最終的にこの状況な場合、入出区連携は有効となります。
+		3:出区もしくは入区の片方または両方の列車が、2本以上存在します。
+			最終的にこの状況な場合、入出区連携は無効となります。
 	aRessyaElement:
-		�o�摤��Ԃ̏ꍇ�A����RessyaProperty�y��BeforeOperation�����߂܂��B
-		RessyaProperty�ɂ͏o�掞�������߂��A������r�ɗp���܂��B
-		���摤��Ԃ̏ꍇ�ARessyaProperty�̂ݎ��߂��܂��B
-		RessyaProperty�̂����A���掞���݂̂��p�����A����ȊO�̏��͓��ɈӖ��������܂���B
+		出区側列車の場合、そのRessyaProperty及びBeforeOperationを収めます。
+		RessyaPropertyには出区時刻も収められ、時刻比較に用います。
+		入区側列車の場合、RessyaPropertyのみ収められます。
+		RessyaPropertyのうち、入区時刻のみが用いられ、それ以外の情報は特に意味を持ちません。
 */
 //struct InOutLinkCodeElement {
 //	int iStatus;
@@ -383,24 +383,24 @@ struct OuterSearchElement {
 };
 
 /**
-	�J�X�^�}�C�Y�����\�g���ɗp���܂��B�w�����\�r���[����̎؂���̂ł��B
+	カスタマイズ時刻表組立に用います。駅時刻表ビューからの借りものです。
 
-	�w�����\��}�X�ɕ\��������e�ł��B
-	iMinute:��
-	iRessyaSyubetsu:��Ԏ��Index
-	iSyuuchakuEkiOrder:�I���wOrder
-		�������A���̒l��-1�̏ꍇ�́A��^�]�ł��邱�Ƃ��Ӗ����܂��B
-		�܂��A���̒l��-2�̏ꍇ�́A�s���悪����ł��邱�Ƃ��Ӗ����܂��B
-	iOuterShuchakuekiIndex:�H���O�I���̏ꍇ�A�H���O�I���wIndex
-	iRessyaTrackIndex:���ԔԐ�
-	aRessyaProperty:��ԃv���p�e�B
+	駅時刻表一マスに表示する内容です。
+	iMinute:分
+	iRessyaSyubetsu:列車種別Index
+	iSyuuchakuEkiOrder:終着駅Order
+		ただし、この値が-1の場合は、環状運転であることを意味します。
+		また、この値が-2の場合は、行き先が環状線であることを意味します。
+	iOuterShuchakuekiIndex:路線外終着の場合、路線外終着駅Index
+	iRessyaTrackIndex:発車番線
+	aRessyaProperty:列車プロパティ
 
-	��ʕύX�\���̏ꍇ
-	iMinute:�����ɂ�"-1"������܂��B��ʕύX�\���ł��邱�Ƃ��Ӗ����܂�
-	iRessyaSyubetsu:��ʕύX��̗�Ԏ��Index
-	iSyuuchakuEkiOrder:"��ʕύX���s��"�wOrder(���̗�Ԋ)
-	aRessyaProperty:��ʕύX��̗�ԃv���p�e�B
-	iOuterShuchakuekiIndex��iRessyaTrackIndex�͖��g�p�ł�
+	種別変更表示の場合
+	iMinute:ここには"-1"が入ります。種別変更表示であることを意味します
+	iRessyaSyubetsu:種別変更後の列車種別Index
+	iSyuuchakuEkiOrder:"種別変更を行う"駅Order(元の列車基準)
+	aRessyaProperty:種別変更後の列車プロパティ
+	iOuterShuchakuekiIndexとiRessyaTrackIndexは未使用です
 */
 
 struct OuterDisplayContent {
@@ -443,55 +443,55 @@ class CDedOperationConnecter
 {
 private:
 	// ********************************
-	///@name �֘A
+	///@name 関連
 	// ********************************
 	///@{
 	/**
-		�^�p�ڑ��̑ΏۂƂȂ��Ԃ��W�񂷂�H���I�u�W�F�N�g�B
+		運用接続の対象となる列車を集約する路線オブジェクト。
 	*/
 	const CentDedRosen* m_pDedRosen;
 
 	/**
-		�^�p�ڑ��̑ΏۂƂȂ��Ԃ��W�񂷂�_�C���B
+		運用接続の対象となる列車を集約するダイヤ。
 	*/
 	CentDedDia* m_pDedDia;
 
 	///@}
 	// ********************************
-	///@name ����
+	///@name 属性
 	// ********************************
 	///@{
 
 	/**
-		�_�C���O�����N�_����
-		�R���X�g���N�^�Ō��܂�܂�
+		ダイヤグラム起点時刻
+		コンストラクタで決まります
 	*/
 	CdDedJikoku m_KitenJikoku;
 
 	/**
-		�܂�Ԃ����ɉ^�p�ԍ��𔽓]�����邩�ۂ�
-		���̒l��true�̎��A�^�p�T���ŉ���̏��̐ڑ����s����ƁA
-		�^�p�ԍ��̕��т𔽓]�����܂��B
-		(��)�܂�Ԃ��O�� "01A","21B"�̏ꍇ�A
-		�܂�Ԃ����"21B","01A"�ɂȂ�܂�
-		�R���X�g���N�^�Ō��܂�܂�
+		折り返し時に運用番号を反転させるか否か
+		この値がtrueの時、運用探索で下り⇔上りの接続が行われると、
+		運用番号の並びを反転させます。
+		(例)折り返し前が "01A","21B"の場合、
+		折り返し後は"21B","01A"になります
+		コンストラクタで決まります
 	*/
 	bool m_bOperationNumberReverse;
 
 	/**
-		�^�p�ڑ����ɋN�_�������ׂ����ۂ�
-		�R���X�g���N�^�Ō��܂�܂�
+		運用接続時に起点時刻を跨ぐか否か
+		コンストラクタで決まります
 	*/
 	bool m_bOperationCrossKitenJikoku;
 
 	/**
-		�p�^�[���_�C���v���r���[�@�\�ɂ�����A1�T�C�N���̕b���B
-		�ŏ���60�A�ő��10800(3����)�Ƃ��܂��B
+		パターンダイヤプレビュー機能における、1サイクルの秒数。
+		最小は60、最大は10800(3時間)とします。
 	*/
 	int m_iPatternDiagramPreviewCycleSecond = 0;
 
 	/**
-		�p�^�[���_�C���v���r���[�@�\�ɂ�����A�O��e�����ւ̃R�s�[�͈́B
+		パターンダイヤプレビュー機能における、前後各方向へのコピー範囲。
 	*/
 	int m_iPatternDiagramPreviewRange;
 
@@ -499,133 +499,133 @@ private:
 	vector<vector<list<RessyaElement>>> m_contRessyaExist;
 
 	/**
-		�o��y�јH���O�n����Ƃ̈ꗗ�ł��B
-		�^�p�ڑ��̍ŏ��́A�����ɋl�߂�ꂽ��Ƃ��珇�ɍs���܂��B
+		出区及び路線外始発作業の一覧です。
+		運用接続の最初は、ここに詰められた作業から順に行います。
 	*/
 	vector<RessyaElement> m_contOutOuter;
 	/**
-		�^�p�ԍ��ύX��Ƃ̈ꗗ�ł��B
-		m_contOutOuter�ɑ����A�����ɋl�߂�ꂽ��Ƃ���T�����s���܂��B
+		運用番号変更作業の一覧です。
+		m_contOutOuterに続き、ここに詰められた作業から探索を行います。
 	*/
 	vector<RessyaElement> m_contNumberChange;
 
 	/**
-		��ԕ����~��Ԑ����́A�^�p�v�f�z��ł��B
-		�e��Ԃ̂����A��[��ƁE�I�[��ƁE�������݂̂𔲂����A�wOrder�ȂǂƋ��ɂ����Ɏ��߂Ă����܂��B
-		����ɂ��A���̔z������ɒH���Ă������ƂŁA�^�p�ڑ����s�����Ƃ��ł��܂��B
+		列車方向×列車数分の、運用要素配列です。
+		各列車のうち、先端作業・終端作業・増解結のみを抜き取り、駅Orderなどと共にここに収めておきます。
+		これにより、この配列を順に辿っていくことで、運用接続を行うことができます。
 	*/
 	vector<vector<vector<OperationElement>>> m_contRessyaOperationElement;
 
 	/**
-		��Ɛڑ����ɁA�����Ґ����̉^�Ԃ������͂̑�����Ƃ����������ꍇ�A
-		���̃��X�g�Ɏ��߁A��x��Ɛڑ��𒆒f���܂��B
-		���̌�A���̃��X�g�̑�����Ƃ����ɎQ�Ƃ��āA�����Ґ����^�Ԃ����蓖�Ă�ꂽ�ꍇ�́A
-		��Ɛڑ��𑱍s���܂��B
+		作業接続中に、増結編成側の運番が未入力の増結作業が見つかった場合、
+		このリストに収め、一度作業接続を中断します。
+		その後、このリストの増結作業を順に参照して、増結編成側運番が割り当てられた場合は、
+		作業接続を続行します。
 	*/
 	//list< RessyaElement> m_contConnectWaitList;
 	vector< RessyaElement> m_contConnectWaitList;
 
 	/**
-		OperationConnect�ł́A�O��Ԑڑ���Ƃ��i�[���܂��B
-		SearchRessyaElementRev�Ƒg�ݍ��킹�Ďg���A
-		�O��Ԃ�������Ȃ��ꍇ�ɁA�󔒉^�Ԃŉ^�p�ڑ��������I�ɍs���܂��B
-		OperationConnectLight�ł́A����Ԑڑ����i�[���܂��B
-		SearchRessyaElement�Ƒg�ݍ��킹�Ďg���A����Ԑڑ��ƑO��Ԑڑ��̑g���Ȃ��A��ʕύX�⑝�����̏������s���܂��B
+		OperationConnectでは、前列車接続作業を格納します。
+		SearchRessyaElementRevと組み合わせて使い、
+		前列車が見つからない場合に、空白運番で運用接続を強制的に行います。
+		OperationConnectLightでは、次列車接続を格納します。
+		SearchRessyaElementと組み合わせて使い、次列車接続と前列車接続の組をつなぎ、種別変更や増解結の処理も行います。
 	*/
 	vector< RessyaElement> m_contJunctionList;
 
 	/**
-		��ԕ����~��Ԑ����̉^�p�ԍ����^�p�\�p�\�����̘A�z�z��ł��B
-		�����ɂ́A�o��E�H���O�n���E�O��Ԑڑ��T�����ɁA�^�Ԃ��L�[�Ƃ��Ďn����ƁE�wOrder�Ȃǂ����߂Ă����A
-		����E�H��insertOperationTableContentToBuffer�O�I���E����Ԑڑ��T�����ɁA�^�Ԃ��L�[�Ƃ��ď�L�n�������l�����A
-		���̉^�Ԃ��A���̗�Ԃɂ����āA�ǂ̉w�̂ǂ̍�Ƃ��[�Ƃ��A�ǂ̉w�̂ǂ̍�Ƃ��I�[�Ƃ��Ă���̂������߂܂��B
-		���܂������̂́ACentDedDia�ɂ���cont�ɁA�^�ԕʂɎ��[���Ă����A�^�p�\��\�����邽�߂̍ޗ��Ƃ��܂��B
+		列車方向×列車数分の運用番号→運用表用表示情報の連想配列です。
+		ここには、出区・路線外始発・前列車接続探索時に、運番をキーとして始発作業・駅Orderなどを収めておき、
+		入区・路線insertOperationTableContentToBuffer外終着・次列車接続探索時に、運番をキーとして上記始発情報を獲得し、
+		その運番が、この列車において、どの駅のどの作業を先端とし、どの駅のどの作業を終端としているのかを求めます。
+		求まったものは、CentDedDiaにあるcontに、運番別に収納していき、運用表を表示するための材料とします。
 	*/
 	vector<vector<unordered_map<tstring,OperationTableContent>>> m_contOperationTableContentBuffer;
 
 	/**
-		���o��A�g�R�[�h���L�[�Ƃ���A�z�z��ł��B
-		���o��E�H���O�n���I���̂����A���o��A�g�R�[�h�����͂���Ă�����̂��A
-		�����Ɏ��߂Ă����A�y�A�ɂȂ邩�ǂ����A(�N�_�����ׂ����L���ȏꍇ��)�����v���𖞂����Ă��邩���`�F�b�N���܂��B
+		入出区連携コードをキーとする連想配列です。
+		入出区・路線外始発終着のうち、入出区連携コードが入力されているものを、
+		ここに収めておき、ペアになるかどうか、(起点時刻跨ぎが有効な場合は)時刻要件を満たしているかをチェックします。
 	*/
 	//unordered_map<tstring,InOutLinkCodeElement> m_contInOutLinkList;
 
 	/**
-		[��ԕ���][�n��/�I���wOrder]�ŃA�N�Z�X���܂��B
-		�J�X�^�}�C�Y�����\�ɂ����āA�H���O�����\�����s����Ԃ�RessyaProperty����ёΏۉ^�Ԃ��A
-		�����Ɉꎞ�ۑ����āAcompleteCustomizeJikokuhyouContent�ɂāA�H���O�\����g�ݗ��Ă܂��B
-		m_contBeforeContinueList�͎n�������s����ԁA
-		m_contAfterContinueList�͏I�_�����s����Ԃł��B
+		[列車方向][始発/終着駅Order]でアクセスします。
+		カスタマイズ時刻表において、路線外扱い表示を行う列車のRessyaPropertyおよび対象運番を、
+		ここに一時保存して、completeCustomizeJikokuhyouContentにて、路線外表示を組み立てます。
+		m_contBeforeContinueListは始発側を行う列車、
+		m_contAfterContinueListは終点側を行う列車です。
 	*/
 	vector<vector<vector<OuterSearchElement>>> m_contBeforeContinueList;
 	vector<vector<vector<OuterSearchElement>>> m_contAfterContinueList;
 
 	/**
-		[��ԕ���][�����wOrder]�ŃA�N�Z�X���܂��B
-		key1��int�́A���Y��Ԃ�RessyaIndex���A
-		key2��CustomizeJikokuhyouContent�́A���ۂɑ}��������̂����܂��B
-		��1,2,4�ɂ����āA�H���O�n���ŕ��������Ԃ̕\����ǉ�����̂��A
-		���X�g�b�N���Ă����čŌ�ɂ܂Ƃ߂�CustomizeJikokuhyouContent��}�����܂��B
+		[列車方向][併合駅Order]でアクセスします。
+		key1のintは、当該列車のRessyaIndexを、
+		key2のCustomizeJikokuhyouContentは、実際に挿入するものを入れます。
+		☆1,2,4において、路線外始発で併合する列車の表示を追加するのを、
+		一回ストックしておいて最後にまとめてCustomizeJikokuhyouContentを挿入します。
 	*/
 	vector<vector<unordered_multimap<int,CustomizeJikokuhyouContent>>> m_contOuterConnectInsertList;
 
 	/**
-		[��ԕ���][�����wOrder]�ŃA�N�Z�X���܂��B
-		key1��int�́A���Y��Ԃ�RessyaIndex���A
-		key2��CustomizeJikokuhyouContent�́A���ۂɑ}��������̂����܂��B
-		��3�ɂ����āA�H���O�I���ŕ��������Ԃ̕\����ǉ�����̂��A
-		���X�g�b�N���Ă����čŌ�ɂ܂Ƃ߂�CustomizeJikokuhyouContent��}�����܂��B
+		[列車方向][併合駅Order]でアクセスします。
+		key1のintは、当該列車のRessyaIndexを、
+		key2のCustomizeJikokuhyouContentは、実際に挿入するものを入れます。
+		☆3において、路線外終着で分割する列車の表示を追加するのを、
+		一回ストックしておいて最後にまとめてCustomizeJikokuhyouContentを挿入します。
 	*/
 	vector<vector<unordered_multimap<int, CustomizeJikokuhyouContent>>> m_contOuterReleaseInsertList;
 
 	/**
-		[��ԕ���][�����wOrder]�ŃA�N�Z�X���܂��B
-		key1��int�́A������̗��Index���A
-		key2��int�́A������Ԃ̗��Index�����܂��B
-		(key2�̗�Ԃ��Akey1�̒��O�Ɉڂ�)
+		[列車方向][併合駅Order]でアクセスします。
+		key1のintは、併合先の列車Indexを、
+		key2のintは、併合列車の列車Indexを入れます。
+		(key2の列車を、key1の直前に移す)
 	*/
 	vector<vector<unordered_multimap<int, int>>> m_contConnectMoveList;
 	/**
-		[��ԕ���][�����wOrder]�ŃA�N�Z�X���܂��B
-		key1��int�́A�������̗��Index���A
-		key2��int�́A������Ԃ̗��Index�����܂��B
-		(key2�̗�Ԃ��Akey1�̒���Ɉڂ�)
+		[列車方向][分割駅Order]でアクセスします。
+		key1のintは、分割元の列車Indexを、
+		key2のintは、分割列車の列車Indexを入れます。
+		(key2の列車を、key1の直後に移す)
 	*/
 	vector<vector<unordered_multimap<int, int>>> m_contReleaseMoveList;
 
 
 	/**
-		�e��ʂ��A�B����ʂł��邩�ǂ����B
-		�B����ʂ̓J�X�^�}�C�Y�����\�Ŕ�\���Ƃ��܂��B
-		�܂��A�B����ʂƔ�B����ʊԂł͎���Ԑڑ��^�C�v�͑S�āu�ʗ�ԁv�Ƃ݂Ȃ��܂��B
+		各種別が、隠し種別であるかどうか。
+		隠し種別はカスタマイズ時刻表で非表示とします。
+		また、隠し種別と非隠し種別間では次列車接続タイプは全て「別列車」とみなします。
 	*/
 	vector<bool> m_contHidden;
 
 	/**
-		�B����ʂ����݂��邩�ۂ��A�u�B����ʂ�\������v���L���ȏꍇ�ɂ́A�K��false�ɂ��܂��B
+		隠し種別が存在するか否か、「隠し種別を表示する」が有効な場合には、必ずfalseにします。
 	*/
 	bool m_bHiddenExist;
 	///@}
 	// ********************************
-	///@name �W��
+	///@name 集約
 	// ********************************
 	///@{
 	/**
-		�^�p�ڑ��̑ΏۂƂȂ�_�C���̃I�u�W�F�N�g�B
-		�R���X�g���N�^�ō쐬����܂�
+		運用接続の対象となるダイヤのオブジェクト。
+		コンストラクタで作成されます
 	*/
 	//CentDedDgrDia m_CentDedDgrDia;
 
 	///@}
 
 	// ********************************
-	///@name ���
+	///@name 状態
 	// ********************************
 	///@{
 	///@}
 protected:
 	// --------------------------------
-	///@name �����֐�
+	///@name 下請関数
 	// --------------------------------
 	///@{
 
@@ -633,13 +633,13 @@ protected:
 
 protected:
 	/**
-		m_contRessyaExist��RessyaElement��}�����܂�
-		m_contRessyaExist�͉w���~�Ԑ����̔z��ɂȂ��Ă��āA
-		�O��Ԑڑ��܂��͎���Ԑڑ���RessyaProperty���܂Ƃ߂��ARessyaElement���A
-		���̍�Ƃ�����w�ƔԐ��̉ӏ��Ɏ������ɕ��ׂ܂��B
-		iEkiIndexofContExist:�}������w�ԍ��ł��B
-		iRessyaTrackIndex:�}������Ԑ�Index�ł�
-		aRessyaElement:�}������RessyaElement�ł��B
+		m_contRessyaExistにRessyaElementを挿入します
+		m_contRessyaExistは駅数×番線数の配列になっていて、
+		前列車接続または次列車接続とRessyaPropertyをまとめた、RessyaElementを、
+		その作業がある駅と番線の箇所に時刻順に並べます。
+		iEkiIndexofContExist:挿入する駅番号です。
+		iRessyaTrackIndex:挿入する番線Indexです
+		aRessyaElement:挿入するRessyaElementです。
 	*/
 	virtual void InsertRessyaElement(
 		const int iEkiIndexofContExist,
@@ -647,13 +647,13 @@ protected:
 		const RessyaElement aRessyaElement);
 
 	/**
-		m_contRessyaExist��RessyaElement��}�����܂�
-		m_contRessyaExist�͉w���~�Ԑ����̔z��ɂȂ��Ă��āA
-		�O��Ԑڑ��܂��͎���Ԑڑ���RessyaProperty���܂Ƃ߂��ARessyaElement���A
-		���̍�Ƃ�����w�ƔԐ��̉ӏ��Ɏ������ɕ��ׂ܂��B
-		iEkiIndexofContExist:�}������w�ԍ��ł��B
-		iRessyaTrackIndex:�}������Ԑ�Index�ł�
-		aRessyaElement:�}������RessyaElement�ł��B
+		m_contRessyaExistにRessyaElementを挿入します
+		m_contRessyaExistは駅数×番線数の配列になっていて、
+		前列車接続または次列車接続とRessyaPropertyをまとめた、RessyaElementを、
+		その作業がある駅と番線の箇所に時刻順に並べます。
+		iEkiIndexofContExist:挿入する駅番号です。
+		iRessyaTrackIndex:挿入する番線Indexです
+		aRessyaElement:挿入するRessyaElementです。
 	*/
 	//virtual void InsertRessyaElementPatternDiagram(
 	//	const int iEkiIndexofContExist,
@@ -661,11 +661,11 @@ protected:
 	//	const RessyaElement aRessyaElement);
 
 	/**
-		pRessyaExist����aAfterOperation����ɁA��������q����RessyaElement(BeforeOperation���܂�)��Ԃ��܂�
-		pRessyaExist:�����ΏۂƂȂ�m_contRessyaExist�̈�R���e�i
-		aAfterOperation:�������ƂȂ����(����Ԑڑ�)
-		pTerminalJikoku:aAfterOperation���܂�RessyaElement��RessyaProperty�Ɋ܂܂�鎞����Ԃ��܂��B
-		iShiftSecond:�p�^�[���_�C���v���r���[���̌���Ԃ���̃V�t�g�b���BaAfterOperation�ɉ����āA���̒l����r���܂��B
+		pRessyaExistからaAfterOperationを基に、そこから繋がるRessyaElement(BeforeOperationを含む)を返します
+		pRessyaExist:検索対象となるm_contRessyaExistの一コンテナ
+		aAfterOperation:検索元となる後作業(次列車接続)
+		pTerminalJikoku:aAfterOperationを含むRessyaElementのRessyaPropertyに含まれる時刻を返します。
+		iShiftSecond:パターンダイヤプレビュー時の元列車からのシフト秒数。aAfterOperationに加えて、この値も比較します。
 	*/
 	virtual RessyaElement SearchRessyaElement(
 		list<RessyaElement>* pRessyaExist,
@@ -674,42 +674,42 @@ protected:
 		const int iShiftSecond = 0);
 
 	/**
-		pRessyaExist����aBeforeOperation�����ƂɁA��������O�ɂȂ���RessyaElement�����邩�ǂ�����Ԃ��܂�
-		pRessyaExist:�����ΏۂƂȂ�m_contRessyaExist�̈�R���e�i
-		aBeforeOperation:�������ƂȂ�O���(�O��Ԑڑ�)
+		pRessyaExistからaBeforeOperationをもとに、そこから前につながるRessyaElementがあるかどうかを返します
+		pRessyaExist:検索対象となるm_contRessyaExistの一コンテナ
+		aBeforeOperation:検索元となる前作業(前列車接続)
 	*/
 	virtual bool SearchRessyaElementRev(
 		list<RessyaElement>* pRessyaExist,
 		CentDedBeforeOperation* aBeforeOperation);
 		
 	/**
-		�ȈՃ��[�h���̏����ł�
+		簡易モード時の処理です
 	*/
 	virtual void operationConnectLight();
 
 	/**
-		�p�^�[���_�C���v���r���[�L�����̏����ł�
+		パターンダイヤプレビュー有効時の処理です
 	*/
 	virtual void operationConnectPatternDiagram();
 
 	/**
-		�ʏ탂�[�h���̏����ł�
+		通常モード時の処理です
 	*/
 	virtual void operationConnect();
 
 	/**
-		�O��ƃR���e�i��ǂݎ��A��ԍ�Ƃ̊ȗ��}���쐬���܂��B
+		前作業コンテナを読み取り、列車作業の簡略図を作成します。
 
-		pBeforeCont:�ǂݎ��ΏۂƂȂ�O��ƃR���e�i�ł�
-		ConnectJikoku:pBeforeCont�̐e��Ƃł��鑝����Ƃ̑��������ł��B
-			���̃R���e�i�̍ŏ��̍�Ƃ��O��Ԑڑ��̏ꍇ�A�N�_�������o�ɗp���܂��B
-		aRessyaProperty:pBeforeCont���܂ޗ�Ԃł��B
-		iLevelParent:pBeforeCont�̐e��Ƃł��鑝����Ƃ�iLevel�ł��B
-			���̑O��ƃR���e�i���̍�Ƃ�ilevel�͂��̒l�Ɍ��𑝂₵�����̂ɂȂ�܂�
-		iEkiOrder:pBeforeCont�����݂���wOrder�ł�
-		iEkiIndexofContExist:m_contRessyaExist�ɃA�N�Z�X����ۂ�Index�ł��B
-		iRessyaTrackConnect::pBeforeCont�̐e��Ƃł��鑝����Ƃ��s��ꂽ�Ԑ�Index�ł�
-			���̃R���e�i�̍ŏ��̍�Ƃ��O��Ԑڑ��̏ꍇ�A�Ԑ����o�ɗp���܂��B
+		pBeforeCont:読み取り対象となる前作業コンテナです
+		ConnectJikoku:pBeforeContの親作業である増結作業の増結時刻です。
+			このコンテナの最初の作業が前列車接続の場合、起点時刻導出に用います。
+		aRessyaProperty:pBeforeContを含む列車です。
+		iLevelParent:pBeforeContの親作業である増結作業のiLevelです。
+			この前作業コンテナ内の作業のilevelはこの値に桁を増やしたものになります
+		iEkiOrder:pBeforeContが存在する駅Orderです
+		iEkiIndexofContExist:m_contRessyaExistにアクセスする際のIndexです。
+		iRessyaTrackConnect::pBeforeContの親作業である増結作業が行われた番線Indexです
+			このコンテナの最初の作業が前列車接続の場合、番線導出に用います。
 	*/
 	vector<OperationElement> searchBeforeOperationElement(
 		CentDedBeforeOperationCont* pBeforeCont,
@@ -721,7 +721,7 @@ protected:
 		const int iRessyaTrackConnect);
 
 	/**
-		OperationConnectLight�����ł��B
+		OperationConnectLight向けです。
 
 	*/
 	vector<OperationElement> searchBeforeOperationElementLight(
@@ -734,18 +734,18 @@ protected:
 		const int iRessyaTrackConnect);
 
 	/**
-		���ƃR���e�i��ǂݎ��A��ԍ�Ƃ̊ȗ��}���쐬���܂��B
+		後作業コンテナを読み取り、列車作業の簡略図を作成します。
 
-		pAfterCont:�ǂݎ��ΏۂƂȂ���ƃR���e�i�ł�
-		ReleaseJikoku:pAfterCont�̐e��Ƃł��������Ƃ̉��������ł��B
-			���̃R���e�i�̍Ō�̍�Ƃ�����Ԑڑ��̏ꍇ�A�I�_�������o�ɗp���܂��B
-		aRessyaProperty:pAfterCont���܂ޗ�Ԃł��B
-		iLevelParent:pAfterCont�̐e��Ƃł��������Ƃ�iLevel�ł��B
-			���̌��ƃR���e�i���̍�Ƃ�ilevel�͂��̒l�Ɍ��𑝂₵�����̂ɂȂ�܂�
-		iEkiOrder:pAfterCont�����݂���wOrder�ł�
-		iEkiIndexofContExist:m_contRessyaExist�ɃA�N�Z�X����ۂ�Index�ł��B
-		iRessyaTrackRelease::pAfterCont�̐e��Ƃł��������Ƃ��s��ꂽ�Ԑ�Index�ł�
-			���̃R���e�i�̍ŏ��̍�Ƃ�����Ԑڑ��̏ꍇ�A�Ԑ����o�ɗp���܂��B
+		pAfterCont:読み取り対象となる後作業コンテナです
+		ReleaseJikoku:pAfterContの親作業である解結作業の解結時刻です。
+			このコンテナの最後の作業が次列車接続の場合、終点時刻導出に用います。
+		aRessyaProperty:pAfterContを含む列車です。
+		iLevelParent:pAfterContの親作業である解結作業のiLevelです。
+			この後作業コンテナ内の作業のilevelはこの値に桁を増やしたものになります
+		iEkiOrder:pAfterContが存在する駅Orderです
+		iEkiIndexofContExist:m_contRessyaExistにアクセスする際のIndexです。
+		iRessyaTrackRelease::pAfterContの親作業である解結作業が行われた番線Indexです
+			このコンテナの最初の作業が次列車接続の場合、番線導出に用います。
 	*/
 	vector<OperationElement> searchAfterOperationElement(
 		CentDedAfterOperationCont* pAfterCont,
@@ -766,19 +766,19 @@ protected:
 		const int iRessyaTrackRelease);
 
 	/**
-		�^�p�ԍ��̊��蓖�Ă��s���܂��B
-		iLevelSearch�����ƂɁA���̍�Ƃ������A�^�p�ԍ��̊��蓖�Ă��s���܂��B
-		���̍�Ƃ�����Ԑڑ��Ȃ�ASearchRessyaElement�Ŏ���Ԃ������A�ڑ����܂��B
+		運用番号の割り当てを行います。
+		iLevelSearchをもとに、次の作業を見つけ、運用番号の割り当てを行います。
+		次の作業が次列車接続なら、SearchRessyaElementで次列車を見つけ、接続します。
 
-		aRessyaPropertyCurr:���蓖�Ē��̗�Ԃ�RessyaProperty
-		contOperationElementCurr:���蓖�Ē��̗�Ԃ�OperationElement���W�߂�ꂽ�R���e�i�ł��B
-		iLevelSearch:����iLevel������Ƃ��AcontOperationElementCurr����T���āA�ڑ����܂��B
-		strOperationNumber:���蓖�Ă�^�p�ԍ��ł��B
-		pCustomizeJikokuhyouContent:�J�X�^�}�C�Y�����\�̍\���v�f�ł��A
-			������Ԃ���s�ɕ\������ꍇ��A�������̖��\���A�H���O���������̕\���ȂǁA
-			�J�X�^�}�C�Y�����\�ł̕\���ɗp����f�[�^���A�����ō\�����܂��B
-			pCustomizeJikokuhyouContent�́A�e��Ԃ̊J�n���(�o��E�H���O�n���E�O��Ԑڑ�)�ō쐬�������̂��A
-			�|�C���^�Ƃ��Č��̍�Ƃɑ����Ă����܂��B
+		aRessyaPropertyCurr:割り当て中の列車のRessyaProperty
+		contOperationElementCurr:割り当て中の列車のOperationElementが集められたコンテナです。
+		iLevelSearch:このiLevelを持つ作業を、contOperationElementCurrから探して、接続します。
+		strOperationNumber:割り当てる運用番号です。
+		pCustomizeJikokuhyouContent:カスタマイズ時刻表の構成要素です、
+			複数列車を一行に表示する場合や、増解結の矢印表示、路線外発着相当の表示など、
+			カスタマイズ時刻表での表示に用いるデータを、ここで構成します。
+			pCustomizeJikokuhyouContentは、各列車の開始作業(出区・路線外始発・前列車接続)で作成したものを、
+			ポインタとして後ろの作業に送っていきます。
 	*/
 	void junctionOperationElement(
 		const CdDedRessyaProperty aRessyaPropertyCurr,
@@ -788,19 +788,19 @@ protected:
 		CustomizeJikokuhyouContent* pCustomizeJikokuhyouContent*/);
 
 	/**
-		�J�n��Ƃɉ^�p�ԍ������蓖�Ă�ꂽ�Ƃ��ɁA�n�����̏������߂�OperationTableContent��
-		Buffer�Ɏ��߂Ă����܂��B���߂����̂�addOperationTableContent�Ŕ����o����܂��B
-		aRessyaProperty:�T�����̗�Ԃ̃v���p�e�B�ł��BOperationTableContentToBuffer�ɃA�N�Z�X����̂ɗp���܂��B
-		strOperationNumber:���蓖�Ă�ꂽ�^�p�ԍ��ł��B���̉^�p�ԍ���ÂABuffer�Ɏ��߂Ă����܂�
-		iSihatsuEkiOrder:OperationTableContent�Ɏ��߂�n���wOrder�ł��B
-		pBeforeOperation:�O��Ƃ̃|�C���^�ł��B�J�n��Ƃ��H���O�n���̎��ɂ̂ݗp���A
-			�H���O�n���wIndex�Ǝ������擾����OperationTableContent�Ɏ��߂܂��B
-		pAfterOperation:���Ƃ̃|�C���^�ł��B�����p���ƂƂ��܂��B
-			�����p���Ƃ́A���̊֐����O��Ԑڑ��̒T���ŌĂяo���ꂽ�Ƃ��̂ݓn����A
-			addOperationTableContent�ŉ^�p�\��g�ݗ��Ă�Ƃ��A
-			OperationTableContent���ǂ̈ʒu�ɑ}�����邩�����߂�̂Ɏg���܂��B
-		bContinue:���̊J�n���(�O��Ԑڑ��Ɍ���)���A�O�̗�Ԃ���ꑱ���̗�Ԃł��邩�ۂ��������܂��B
-			�ꑱ���̒�`�́A��ʕύX�E�����E�����ł��B
+		開始作業に運用番号が割り当てられたときに、始発側の情報を収めたOperationTableContentを
+		Bufferに収めておきます。収めたものはaddOperationTableContentで抜き出されます。
+		aRessyaProperty:探索中の列車のプロパティです。OperationTableContentToBufferにアクセスするのに用います。
+		strOperationNumber:割り当てられた運用番号です。この運用番号一つづつ、Bufferに収めていきます
+		iSihatsuEkiOrder:OperationTableContentに収める始発駅Orderです。
+		pBeforeOperation:前作業のポインタです。開始作業が路線外始発の時にのみ用い、
+			路線外始発駅Indexと時刻を取得してOperationTableContentに収めます。
+		pAfterOperation:後作業のポインタです。検索用後作業とします。
+			検索用後作業は、この関数が前列車接続の探索で呼び出されたときのみ渡され、
+			addOperationTableContentで運用表を組み立てるとき、
+			OperationTableContentをどの位置に挿入するかを求めるのに使います。
+		bContinue:この開始作業(前列車接続に限る)が、前の列車から一続きの列車であるか否かを示します。
+			一続きの定義は、種別変更・分割・併合です。
 	*/
 	void insertOperationTableContentToBuffer(
 		const CdDedRessyaProperty aRessyaProperty,
@@ -811,13 +811,13 @@ protected:
 		const EBeforeAfterType eBeforeType);
 
 	/**
-		insertOperationTableContentToBuffer�Ŏ��߂�ꂽOperationTableContent�����o���A
-		�I�����̏������߂���ŁACentDedDia��contOperationTableContent�ɓ���A�^�p�\�̌��Ƃ��܂��B
-		aRessyaProperty:�T�����̗�Ԃ̃v���p�e�B�ł��BOperationTableContentToBuffer�ɃA�N�Z�X����̂ɗp���܂��B
-		strOperationNumber:���蓖�Ă�ꂽ�^�p�ԍ��ł��B���̉^�p�ԍ���ÂABuffer�Ɏ��߂Ă����܂�
-		iSyuuchakuEkiOrder:OperationTableContent�Ɏ��߂�I���wOrder�ł��B
-		pAfterOperation:���Ƃ̃|�C���^�ł��B�I����Ƃ��H���O�I���̎��ɂ̂ݗp���A
-			�H���O�I���wIndex�Ǝ������擾����OperationTableContent�Ɏ��߂܂��B
+		insertOperationTableContentToBufferで収められたOperationTableContentを取り出し、
+		終着側の情報を収めた上で、CentDedDiaのcontOperationTableContentに入れ、運用表の元とします。
+		aRessyaProperty:探索中の列車のプロパティです。OperationTableContentToBufferにアクセスするのに用います。
+		strOperationNumber:割り当てられた運用番号です。この運用番号一つづつ、Bufferに収めていきます
+		iSyuuchakuEkiOrder:OperationTableContentに収める終着駅Orderです。
+		pAfterOperation:後作業のポインタです。終了作業が路線外終着の時にのみ用い、
+			路線外終着駅Indexと時刻を取得してOperationTableContentに収めます。
 	*/
 	void addOperationTableContent(
 		const CdDedRessyaProperty aRessyaProperty,
@@ -834,11 +834,11 @@ protected:
 
 public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	/**
-	�@	@param pDedRosen [in]
-			�\�[�g�̑ΏۂƂȂ��Ԃ��W�񂷂�H���I�u�W�F�N�g�B
+	　	@param pDedRosen [in]
+			ソートの対象となる列車を集約する路線オブジェクト。
 	*/
 	CDedOperationConnecter(
 		const CentDedRosen* pDedRosen,
@@ -854,7 +854,7 @@ public:
 		const int iSizeDst,
 		const int iAddSize);
 
-	virtual ~CDedOperationConnecter();
+	virtual ‾CDedOperationConnecter();
 
 
 };

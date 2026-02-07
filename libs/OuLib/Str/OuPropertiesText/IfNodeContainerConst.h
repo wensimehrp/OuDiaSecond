@@ -29,47 +29,47 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /** @file */
 //$Id: IfNodeContainerConst.h 294 2016-06-11 05:10:03Z okm $
 #pragma once
 #include <deque>
-#include "NsMu\Mui.h"
-#include "str\OuPropertiesText\CNode.h"
-#include "str\OuPropertiesText\CPropertyString.h"
-#include "str\OuPropertiesText\CInNameIndexContainer.h"
+#include "NsMu¥Mui.h"
+#include "str¥OuPropertiesText¥CNode.h"
+#include "str¥OuPropertiesText¥CPropertyString.h"
+#include "str¥OuPropertiesText¥CInNameIndexContainer.h"
 
 namespace OuLib{
 namespace Str{
@@ -80,32 +80,32 @@ namespace OuPropertiesText{
 
 /**
 @brief
-	Node �I�u�W�F�N�g��ێ�����R���e�i���Q�Ƃ���C���^�[�t�F�[�X�ł��B
+	Node オブジェクトを保持するコンテナを参照するインターフェースです。
 	
-	���̃C���^�[�t�F�[�X����́ACNodeContainer ���̑S�Ẵm�[�h�ɑ΂���
-	Ou<const CNode> ���擾���邱�Ƃ��ł��܂����A
-	�m�[�h�̒ǉ��E�ύX�E�폜�͂ł��܂���B
+	このインターフェースからは、CNodeContainer 内の全てのノードに対する
+	Ou<const CNode> を取得することができますが、
+	ノードの追加・変更・削除はできません。
 */
 class IfNodeContainerConst : public Mu< Ou<const CNode> >
 {
 public:
 	// ********************************
-	///@name	IfNodeContainerConst-Property�̎擾
+	///@name	IfNodeContainerConst-Propertyの取得
 	// ********************************
 	///@{
 	/**
-		Property �� Name �ɑΉ����� Value ���擾���܂��B
+		Property の Name に対応する Value を取得します。
 	@param strName [in]
-		Property �� Name ���w�肵�Ă��������B
+		Property の Name を指定してください。
 	@return
-		�Ή�����Value��Ԃ��܂��B
+		対応するValueを返します。
 
-		Name�ɑΉ����� Property ��������Ȃ��ꍇ�́A
-		�󕶎����Ԃ��܂��B
+		Nameに対応する Property が見つからない場合は、
+		空文字列を返します。
 
-		Name �ɑΉ����� 2�ȏ��CPropertyString �C���X�^���X������
-		����ꍇ�́AInNameIndex ���ł������� CPropertyString �� Value 
-		��Ԃ��܂��B
+		Name に対応する 2個以上のCPropertyString インスタンスが存在
+		する場合は、InNameIndex が最も小さい CPropertyString の Value 
+		を返します。
 	*/
 	virtual tstring getValue( const tstring& strName )const = 0 ;
 	///@}
@@ -118,19 +118,19 @@ public:
 	
 	/**
 	 * @return
-	 * 	�R���e�i�Ɋi�[����Ă���v�f�̌���Ԃ��܂��B
+	 * 	コンテナに格納されている要素の個数を返します。
 	 */
 	virtual int	size()const = 0 ;
 	/**
-	 * 	�R���e�i���́A�C���f�N�X�Ŏw�肳�ꂽ�ꏊ�Ɋi�[����Ă���
-	 * 	�v�f��Ԃ��܂��B
+	 * 	コンテナ内の、インデクスで指定された場所に格納されている
+	 * 	要素を返します。
 	 *
 	 * @param iIndex [in]
-	 * 	�O����n�܂�C���f�N�X���w�肵�Ă��������B
-	 * 	�͈͂͂O�ȏ� size() �����ł��B
-	 *	�A���AINT_MAX �́A�������w�肵�����̂Ƃ݂Ȃ��܂��B
+	 * 	０から始まるインデクスを指定してください。
+	 * 	範囲は０以上 size() 未満です。
+	 *	但し、INT_MAX は、末尾を指定したものとみなします。
 	 * @return
-	 * 	�C���f�N�X�Ŏw�肳�ꂽ�v�f��Ԃ��܂��B
+	 * 	インデクスで指定された要素を返します。
 	 */
 	virtual Ou<const CNode> get( int iIndex )const = 0 ;
 	
@@ -138,58 +138,58 @@ public:
 	
 public:
 	// ********************************
-	///@name	CNodeContainer-InNameIndex�ł̃A�N�Z�X
+	///@name	CNodeContainer-InNameIndexでのアクセス
 	// ********************************
 	///@{
 	
 	/**
-	 	�w��� Name �����v�f�̌���Ԃ��܂��B
+	 	指定の Name を持つ要素の個数を返します。
 	 @param strName [in]
-		Name ���w�肵�Ă��������B
+		Name を指定してください。
 	 @return
-	 	�v�f�̌���Ԃ��܂��B
+	 	要素の個数を返します。
 	*/
 	virtual int	sizeInName( const tstring& strName )const = 0 ;
 	/**
-	 	�R���e�i���́A�w��� Name �����v�f��Ԃ��܂��B
+	 	コンテナ内の、指定の Name を持つ要素を返します。
 	 @param strName [in]
-		Name ���w�肵�Ă��������B
+		Name を指定してください。
 	 @param iInNameIndex [in]
-	 	InNameIndex ���w�肵�Ă��������B
-		InNameIndex �́A���̃R���e�i���̓��� Name ������ Node ���ł́A
-		�O����n�܂�C���f�N�X�ł��B
-		�͈͂͂O�ȏ� sizeInName() �����ł��B
-		�A���AINT_MAX �́A�������w�肵�����̂Ƃ݂Ȃ��܂��B
+	 	InNameIndex を指定してください。
+		InNameIndex は、このコンテナ内の同じ Name を持つ Node 内での、
+		０から始まるインデクスです。
+		範囲は０以上 sizeInName() 未満です。
+		但し、INT_MAX は、末尾を指定したものとみなします。
 	 @return
-	 	�C���f�N�X�Ŏw�肳�ꂽ�v�f��Ԃ��܂��B
+	 	インデクスで指定された要素を返します。
 	*/
 	virtual Ou<const CNode> getInName( const tstring& strName , int iInNameIndex )const = 0 ;
 	
 	
 
 	/**
-		InNameIndex ���R���e�i�̃C���f�N�X�ɕϊ����܂��B
+		InNameIndex をコンテナのインデクスに変換します。
 	@param strName [in]
-		Name ���w�肵�Ă��������B
+		Name を指定してください。
 	@param iInNameIndex [in]
-	 	�O����n�܂�C���f�N�X���w�肵�Ă��������B
-	 	�͈͂͂O�ȏ� sizeInName() �����ł��B
-	 	�A���AINT_MAX �́A�������w�肵�����̂Ƃ݂Ȃ��܂��B
+	 	０から始まるインデクスを指定してください。
+	 	範囲は０以上 sizeInName() 未満です。
+	 	但し、INT_MAX は、末尾を指定したものとみなします。
 	@return
-		�C���f�N�X ��Ԃ��܂��B
-		-	-1 ;	//	�C���f�N�X���s���ł��B
+		インデクス を返します。
+		-	-1 ;	//	インデクスが不正です。
 	*/
 	virtual int indexOfInNameIndex( 
 		const tstring& strName ,
 		int iInNameIndex )const = 0 ;
 	/**
-		�R���e�i�̃C���f�N�X���AInNameIndex �ɕϊ����܂��B
+		コンテナのインデクスを、InNameIndex に変換します。
 	@param iIndex [in]
-	 	�O����n�܂�C���f�N�X���w�肵�Ă��������B
-	 	�͈͂͂O�ȏ� size() �����ł��B
-	 	�A���AINT_MAX �́A�������w�肵�����̂Ƃ݂Ȃ��܂��B
+	 	０から始まるインデクスを指定してください。
+	 	範囲は０以上 size() 未満です。
+	 	但し、INT_MAX は、末尾を指定したものとみなします。
 	@return
-		InNameIndex ��Ԃ��܂��B
+		InNameIndex を返します。
 	*/
 	virtual int indexToInNameIndex( 
 		int iIndex )const = 0 ;
@@ -198,7 +198,7 @@ public:
 
 
 
-	virtual ~IfNodeContainerConst(){};
+	virtual ‾IfNodeContainerConst(){};
 
 };
 

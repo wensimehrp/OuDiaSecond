@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -92,44 +92,44 @@ namespace entDed{
 // ****************************************************************
 /**
 @brief
-  DiagramEdit �́A�w�H���x�P��\���܂��B
-  ���̃N���X�́A DiagramEdit �̃G���e�B�e�B�N���X CentDed... ��
-���[�g�ƂȂ�N���X�ł��B�ȉ��̃N���X�̃I�u�W�F�N�g���܂��܂��B
+  DiagramEdit の、『路線』１つを表します。
+  このクラスは、 DiagramEdit のエンティティクラス CentDed... の
+ルートとなるクラスです。以下のクラスのオブジェクトを包含します。
 	
-	- �w�w�x ( CentDedEki ) �F 0 �ȏ㕡���̃I�u�W�F�N�g���܂��܂��B
-	- �w��Ԏ�ʁx ( CentDedRessyasyubetsu ) �F 1 �ȏ㕡���̃I�u�W�F�N�g��
-	��܂��܂��B
-	- �w�_�C���x ( CentDedDia ) �F 0 �ȏ㕡���̃I�u�W�F�N�g���܂��܂��B
-	�w�_�C���x ( CentDedDia ) �́A�w��ԁx ( CentDedRessya ) ���O�ȏ㕡��
-	��܂��Ă��܂��B����ɁA�w��ԁx�́A�w�w�����x ( CentDedEkiJikoku ) ��
-	�w�w�x�̐�������܂��Ă��܂��B
+	- 『駅』 ( CentDedEki ) ： 0 以上複数のオブジェクトを包含します。
+	- 『列車種別』 ( CentDedRessyasyubetsu ) ： 1 以上複数のオブジェクトを
+	包含します。
+	- 『ダイヤ』 ( CentDedDia ) ： 0 以上複数のオブジェクトを包含します。
+	『ダイヤ』 ( CentDedDia ) は、『列車』 ( CentDedRessya ) を０以上複数
+	包含しています。さらに、『列車』は、『駅時刻』 ( CentDedEkiJikoku ) を
+	『駅』の数だけ包含しています。
 
-  this �ɕ�܂���� CentDedDia �́A CentDedDia::m_strName ����ӂłȂ��Ă�
-�Ȃ�܂���B������ CentDedDia �� insertCentDedDia() �œo�^���悤�Ƃ���ƁA
-�G���[�ƂȂ�܂��B
+  this に包含される CentDedDia は、 CentDedDia::m_strName が一意でなくては
+なりません。同名の CentDedDia を insertCentDedDia() で登録しようとすると、
+エラーとなります。
 
-  �w�w�x�I�u�W�F�N�g��ǉ��E�폜�����ꍇ�Athis �͕�܂��Ă���
-���ׂẮw��ԁx ( CentDedRessya ) �ɑ΂��āA
-�w�w�����x ( CentDedEkiJikoku )�I�u�W�F�N�g�̒ǉ��E�폜���s���܂��B
+  『駅』オブジェクトを追加・削除した場合、this は包含している
+すべての『列車』 ( CentDedRessya ) に対して、
+『駅時刻』 ( CentDedEkiJikoku )オブジェクトの追加・削除を行います。
 
-  �w��Ԏ�ʁx�I�u�W�F�N�g���폜�����ꍇ�A this �͕�܂��Ă��邷�ׂĂ�
-�w��ԁx�I�u�W�F�N�g�̂����A�폜���ꂽ�w��Ԏ��Index�x�����w��ԁx
-�ɑ΂��āA�w��Ԏ��Index�x��0(����̗�Ԏ��)�ɕύX���܂��B
+  『列車種別』オブジェクトを削除した場合、 this は包含しているすべての
+『列車』オブジェクトのうち、削除された『列車種別Index』を持つ『列車』
+に対して、『列車種別Index』を0(既定の列車種別)に変更します。
 
-  �w�wIndex�x�́A�H���̉����Ԃ̎n���w�i����Ԃ̏I���w�j�� 0 �E 
-�����Ԃ̏I���w�i����Ԃ̎n���w�j �� ( �w�̐� - 1 ) �ƂȂ�܂��B
+  『駅Index』は、路線の下り列車の始発駅（上り列車の終着駅）が 0 ・ 
+下り列車の終着駅（上り列車の始発駅） が ( 駅の数 - 1 ) となります。
 
-����
+制約
  -------------------------------- 
 
-���@�_�C���̋N�_����(m_jikokuKitenJikoku) �́ANULL���w�肷�邱�Ƃ͂ł��܂���B
+○　ダイヤの起点時刻(m_jikokuKitenJikoku) は、NULLを指定することはできません。
 
 
-����̃G���[�����E�C��
+操作のエラー検査・修正
  -------------------------------- 
 
 
-����ɍ����悤�ɑ������C��(adjust)
+制約に合うように属性を修正(adjust)
  -------------------------------- 
 
 
@@ -140,32 +140,32 @@ class CentDedRosen
 
 protected:
 	// ********************************
-	//	�C���i�[�^�C�v
+	//	インナータイプ
 	// ********************************
 	// ----------------------------------------------------------------
 	//	CentDedRosen::CXCentDedEkiCont
 	// ----------------------------------------------------------------
 	/**
 	@brief
-	  �w�H���x�I�u�W�F�N�g�ɕ�܂����A
-		�w�w�x(CentDedEki) �I�u�W�F�N�g�̃R���e�i�ł��B
+	  『路線』オブジェクトに包含される、
+		『駅』(CentDedEki) オブジェクトのコンテナです。
 	
-	  �w�w�x�I�u�W�F�N�g��ǉ��E�폜�����ꍇ�A
-		this �͊֘A����w�H���x����܂��Ă���
-		���ׂẮw��ԁx ( CentDedRessya ) �ɑ΂��āA
-		�w�w�����x ( CentDedEkiJikoku )�I�u�W�F�N�g�̒ǉ��E�폜���s���܂��B
+	  『駅』オブジェクトを追加・削除した場合、
+		this は関連する『路線』が包含している
+		すべての『列車』 ( CentDedRessya ) に対して、
+		『駅時刻』 ( CentDedEkiJikoku )オブジェクトの追加・削除を行います。
 		
 	 */
 	class CXCentDedEkiCont : public CentDedEkiCont
 	{
 	public:
 		// ********************************
-		//	�C���i�[�^�C�v
+		//	インナータイプ
 		// ********************************
 		typedef CentDedEkiCont	super ;
 	public:
 		// ********************************
-		//	�R���X�g���N�^
+		//	コンストラクタ
 		// ********************************
 
 
@@ -175,62 +175,62 @@ protected:
 		// ********************************
 		///@{
 		/**
-		 	�R���e�i���́A�C���f�N�X�Ŏw�肳�ꂽ�ꏊ�ɁA
-		 	�v�f��ǉ����܂��B
+		 	コンテナ内の、インデクスで指定された場所に、
+		 	要素を追加します。
 		 @param element [in]
-		 	�v�f���w�肵�Ă��������B
+		 	要素を指定してください。
 		 @param iIndex [in]
-		 	�O����n�܂�C���f�N�X���w�肵�Ă��������B
-		 	�͈͂͂O�ȏ� size() �ȉ��ł��B
-		 	�O�́A�擪�Esize()�Ȃ疖���ւ̒ǉ��ɂȂ�܂��B
-			�A���AINT_MAX �́A�������w�肵�����̂Ƃ݂Ȃ��܂��B
+		 	０から始まるインデクスを指定してください。
+		 	範囲は０以上 size() 以下です。
+		 	０は、先頭・size()なら末尾への追加になります。
+			但し、INT_MAX は、末尾を指定したものとみなします。
 		 @return
-		 	0�ȏ�͐����A���̐��̓G���[�ł�
+		 	0以上は成功、負の数はエラーです
 		
 			<H4>
-			�y�I�[�o���C�h�z
+			【オーバライド】
 			</H4>
-			CentDedEki �I�u�W�F�N�g��ǉ�����̂ɉ����āA
-			m_pCentDedRosen ����܂��Ă���S�Ă̗�Ԃɑ΂��āA
-			�w�����̒ǉ����s���܂��B
+			CentDedEki オブジェクトを追加するのに加えて、
+			m_pCentDedRosen が包含している全ての列車に対して、
+			駅時刻の追加を行います。
 		 */
 		virtual int insert( const CentDedEki& element , int iIndex = INT_MAX );
 		/**
-		 	�R���e�i���́A�C���f�N�X�Ŏw�肳�ꂽ�ꏊ��
-		 	�v�f���폜���܂��B
+		 	コンテナ内の、インデクスで指定された場所の
+		 	要素を削除します。
 		 @param iIndex [in]
-		 	�O����n�܂�C���f�N�X���w�肵�Ă��������B
-		 	�͈͂͂O�ȏ� size() �����ł��B
-		 	�A���AINT_MAX �́A�������w�肵�����̂Ƃ݂Ȃ��܂��B
+		 	０から始まるインデクスを指定してください。
+		 	範囲は０以上 size() 未満です。
+		 	但し、INT_MAX は、末尾を指定したものとみなします。
 		 @param iSize [in]
-		 	�폜����v�f�̐����w�肵�Ă��������B
-		 	�A���AINT_MAX �́A iIndex ���疖���܂ł�\���܂��B
+		 	削除する要素の数を指定してください。
+		 	但し、INT_MAX は、 iIndex から末尾までを表します。
 		 @attention
-			iIndex �� iSize �̗����� INT_MAX �ɂ��邱�Ƃ͂ł��܂���B
+			iIndex と iSize の両方を INT_MAX にすることはできません。
 		 @return
-		 	0�ȏ�͐����A���̐��̓G���[�ł�
+		 	0以上は成功、負の数はエラーです
 		
 			<H4>
-			�y�I�[�o���C�h�z
+			【オーバライド】
 			</H4>
-			CentDedEki �I�u�W�F�N�g���폜����̂ɉ����āA
-			m_pCentDedRosen ����܂��Ă���S�Ă̗�Ԃɑ΂��āA
-			�w�����̍폜���s���܂��B
+			CentDedEki オブジェクトを削除するのに加えて、
+			m_pCentDedRosen が包含している全ての列車に対して、
+			駅時刻の削除を行います。
 		 */
 		virtual int erase( int iIndex  , int iSize = 1 ) ;
 		///@}
 		// ********************************
-		///@name CentDedEkiCont-�֘A
+		///@name CentDedEkiCont-関連
 		// ********************************
 		///@{
 		/**
 		@return
-			�O���� CentDedRosen �I�u�W�F�N�g��Ԃ��܂��B
+			外側の CentDedRosen オブジェクトを返します。
 		*/
 		CentDedRosen* getRosen();
 		/**
 		@return
-			�O���� CentDedRosen �I�u�W�F�N�g��Ԃ��܂��B
+			外側の CentDedRosen オブジェクトを返します。
 		*/
 		const CentDedRosen* getRosen()const ;
 		///@}
@@ -242,31 +242,31 @@ protected:
 	// ----------------------------------------------------------------
 	/**
 	@brief
-	  �w�H���x�I�u�W�F�N�g�ɕ�܂����A
-		�w��Ԏ�ʁx(CentDedRessyasyubetsu) �I�u�W�F�N�g�̃R���e�i�ł��B
+	  『路線』オブジェクトに包含される、
+		『列車種別』(CentDedRessyasyubetsu) オブジェクトのコンテナです。
 		
-		�ʏ�̗�Ԏ�ʃR���e�i�ɉ����āA�ȉ��̂悤�ȓ��������݂��܂��B
+		通常の列車種別コンテナに加えて、以下のような特性が存在します。
 		
 		
-	�P�D  �w��Ԏ�ʁx�I�u�W�F�N�g��ǉ��E�폜�����ꍇ�A
-		this �͊֘A����w�H���x����܂��Ă���
-		���ׂẮw��ԁx ( CentDedRessya ) �ɑ΂��āA
-		�w��Ԏ��Index�x ( CentDedRessya::m_iRessyasyubetsuIndex )
-		�̏C�����s���܂��B
+	１．  『列車種別』オブジェクトを追加・削除した場合、
+		this は関連する『路線』が包含している
+		すべての『列車』 ( CentDedRessya ) に対して、
+		『列車種別Index』 ( CentDedRessya::m_iRessyasyubetsuIndex )
+		の修正を行います。
 	
-	�Q�D  �w��Ԏ�ʁx�I�u�W�F�N�g���폜�����ꍇ�A���̗�Ԏ�ʂ������
-	�̗�Ԏ�ʃC���f�N�X�́A0�ɕύX����B
+	２．  『列車種別』オブジェクトを削除した場合、その列車種別を持つ列車
+	の列車種別インデクスは、0に変更する。
 	 */
 	class CXCentDedRessyasyubetsuCont : public CentDedRessyasyubetsuCont
 	{
 	public:
 		// ********************************
-		//	�C���i�[�^�C�v
+		//	インナータイプ
 		// ********************************
 		typedef CentDedRessyasyubetsuCont	super ;
 	public:
 		// ********************************
-		//	�R���X�g���N�^
+		//	コンストラクタ
 		// ********************************
 		CXCentDedRessyasyubetsuCont() ;
 	public:
@@ -275,68 +275,68 @@ protected:
 		// ********************************
 		///@{
 		/*kyuusi
-		 	�R���e�i���́A�C���f�N�X�Ŏw�肳�ꂽ�ꏊ�ɁA
-		 	�v�f��ǉ����܂��B
+		 	コンテナ内の、インデクスで指定された場所に、
+		 	要素を追加します。
 		 @param element [in]
-		 	�v�f���w�肵�Ă��������B
+		 	要素を指定してください。
 		 @param iIndex [in]
-		 	�O����n�܂�C���f�N�X���w�肵�Ă��������B
-		 	�͈͂͂O�ȏ� size() �ȉ��ł��B
-		 	�O�́A�擪�Esize()�Ȃ疖���ւ̒ǉ��ɂȂ�܂��B
-			�A���AINT_MAX �́A�������w�肵�����̂Ƃ݂Ȃ��܂��B
+		 	０から始まるインデクスを指定してください。
+		 	範囲は０以上 size() 以下です。
+		 	０は、先頭・size()なら末尾への追加になります。
+			但し、INT_MAX は、末尾を指定したものとみなします。
 		 @return
-		 	0�ȏ�͐����A���̐��̓G���[�ł�
-			-	-1 ;	//	iIndex ���s���ł��B
-			-	-11 ;	//	name����� CentDedRessyasyubetsu���㏑������ƃG���[�B		
+		 	0以上は成功、負の数はエラーです
+			-	-1 ;	//	iIndex が不正です。
+			-	-11 ;	//	nameが空の CentDedRessyasyubetsuを上書きするとエラー。		
 			<H4>
-			�y�I�[�o���C�h�z
+			【オーバライド】
 			</H4>
-			CentDedRessyasyubetsu �I�u�W�F�N�g��ǉ�����̂ɉ����āA
-			���ׂẮw��ԁx ( CentDedRessya ) �ɑ΂��āA
-			�w��Ԏ��Index�x ( CentDedRessya::m_iRessyasyubetsuIndex )
-			�̏C�����s���܂��B
+			CentDedRessyasyubetsu オブジェクトを追加するのに加えて、
+			すべての『列車』 ( CentDedRessya ) に対して、
+			『列車種別Index』 ( CentDedRessya::m_iRessyasyubetsuIndex )
+			の修正を行います。
 		virtual int insert( const CentDedRessyasyubetsu& element , int iIndex = INT_MAX );
 		 */
 		/*kyuusi
-		 	�R���e�i���́A�C���f�N�X�Ŏw�肳�ꂽ�ꏊ��
-		 	�v�f���폜���܂��B
+		 	コンテナ内の、インデクスで指定された場所の
+		 	要素を削除します。
 		 @param iIndex [in]
-		 	�O����n�܂�C���f�N�X���w�肵�Ă��������B
-		 	�͈͂͂O�ȏ� size() �����ł��B
-		 	�A���AINT_MAX �́A�������w�肵�����̂Ƃ݂Ȃ��܂��B
+		 	０から始まるインデクスを指定してください。
+		 	範囲は０以上 size() 未満です。
+		 	但し、INT_MAX は、末尾を指定したものとみなします。
 		 @param iSize [in]
-		 	�폜����v�f�̐����w�肵�Ă��������B
-		 	�A���AINT_MAX �́A iIndex ���疖���܂ł�\���܂��B
+		 	削除する要素の数を指定してください。
+		 	但し、INT_MAX は、 iIndex から末尾までを表します。
 		 @attention
-			iIndex �� iSize �̗����� INT_MAX �ɂ��邱�Ƃ͂ł��܂���B
+			iIndex と iSize の両方を INT_MAX にすることはできません。
 		 @return
-		 	0�ȏ�͐����A���̐��̓G���[�ł�
-			-	-1 ;	//	iIndex ���s���ł��B
-			-	-11 ;	//	�폜�Ώۂ̗�Ԏ�ʂ̗�Ԃ����݂��܂��B
+		 	0以上は成功、負の数はエラーです
+			-	-1 ;	//	iIndex が不正です。
+			-	-11 ;	//	削除対象の列車種別の列車が存在します。
 		
 			<H4>
-			�y�I�[�o���C�h�z
+			【オーバライド】
 			</H4>
-			CentDedRessyasyubetsu �I�u�W�F�N�g���폜����̂ɉ����āA
-			���ׂẮw��ԁx ( CentDedRessya ) �ɑ΂��āA
-			�w��Ԏ��Index�x ( CentDedRessya::m_iRessyasyubetsuIndex )
-			�̏C�����s���܂��B
+			CentDedRessyasyubetsu オブジェクトを削除するのに加えて、
+			すべての『列車』 ( CentDedRessya ) に対して、
+			『列車種別Index』 ( CentDedRessya::m_iRessyasyubetsuIndex )
+			の修正を行います。
 		virtual int erase( int iIndex  , int iSize = 1 ) ;
 		 */
 		///@}
 
 		// ********************************
-		///@name CentDedRessyasyubetsuCont-�֘A
+		///@name CentDedRessyasyubetsuCont-関連
 		// ********************************
 		///@{
 		/**
 		@return
-			�O���� CentDedRosen �I�u�W�F�N�g��Ԃ��܂��B
+			外側の CentDedRosen オブジェクトを返します。
 		*/
 		virtual CentDedRosen* getRosen();
 		/**
 		@return
-			�O���� CentDedRosen �I�u�W�F�N�g��Ԃ��܂��B
+			外側の CentDedRosen オブジェクトを返します。
 		*/
 		virtual const CentDedRosen* getRosen()const ;
 		///@}
@@ -348,8 +348,8 @@ protected:
 	// ----------------------------------------------------------------
 	/**
 	@brief
-	  �w�H���x�I�u�W�F�N�g�ɕ�܂����A
-		�w�_�C���x(CentDedDia) �I�u�W�F�N�g�̃R���e�i�ł��B
+	  『路線』オブジェクトに包含される、
+		『ダイヤ』(CentDedDia) オブジェクトのコンテナです。
 		
 	 */
 	class CXCentDedDiaCont : public CentDedDiaCont
@@ -357,26 +357,26 @@ protected:
 		typedef CentDedDiaCont super ;
 	 public:
 		// ********************************
-		//	�R���X�g���N�^
+		//	コンストラクタ
 		// ********************************
 
 	 public:
 		// ********************************
-		///@name CentDedDiaCont-�֘A
+		///@name CentDedDiaCont-関連
 		// ********************************
 		///@{
 		/**
 		@return
-			���̃R���e�i�� CentDedRosen �ɕ�܂���Ă���ꍇ�́A
-			CentDedRosen �̃A�h���X�B
-			�����łȂ��Ȃ�NULL�B
+			このコンテナが CentDedRosen に包含されている場合は、
+			CentDedRosen のアドレス。
+			そうでないならNULL。
 		*/
 		virtual CentDedRosen* getRosen();
 		/**
 		@return
-			���̃R���e�i�� CentDedRosen �ɕ�܂���Ă���ꍇ�́A
-			CentDedRosen �̃A�h���X�B
-			�����łȂ��Ȃ�NULL�B
+			このコンテナが CentDedRosen に包含されている場合は、
+			CentDedRosen のアドレス。
+			そうでないならNULL。
 		*/
 		virtual const CentDedRosen* getRosen()const ;
 		
@@ -384,140 +384,140 @@ protected:
 	};
 private:
 	// ********************************
-	///@name ����
+	///@name 属性
 	// ********************************
 	///@{
 	/**
-		�H���̖��̂ł��B
-		�i��j "�ߓS����" �Ȃ�
+		路線の名称です。
+		（例） "近鉄大阪線" など
 	 */
 	tstring	m_strName ;
 	
 	/**
-		�_�C���̋N�_�����ł��B
-		���̎����́A�_�C���O�����̍��[�̎����ƂȂ�܂��B
+		ダイヤの起点時刻です。
+		この時刻は、ダイヤグラムの左端の時刻となります。
 	
-		����l�� 00:00:00 �ł��B
+		既定値は 00:00:00 です。
 	 @attention
-		���̒l�́A Null ��Ԃɂ��Ȃ��ł��������B
+		この値は、 Null 状態にしないでください。
 	 */
 	CdDedJikoku	m_jikokuKitenJikoku ;
 	
 	/**
-		�_�C���O�����̊���̉w�ԕ��B
+		ダイヤグラムの既定の駅間幅。
 
-		��Ԑݒ�̂Ȃ��w�Ԃ́A�_�C���O�����r���[��ł�
-		�c�����̕����w�_�C���O�����G���e�B�e�BY���W�x�P��(�b)�Ŏw�肵�܂��B
+		列車設定のない駅間の、ダイヤグラムビュー上での
+		縦方向の幅を『ダイヤグラムエンティティY座標』単位(秒)で指定します。
 	
-		����l�� 60 �ł��B
+		既定値は 60 です。
 	*/
 	int	m_iDiagramDgrYZahyouKyoriDefault ;
 	
 	/**
-		�R�����g�B
-		CDedCommentDoc,CDedCommentView �ŕҏW���܂��B
+		コメント。
+		CDedCommentDoc,CDedCommentView で編集します。
 	 */
 	tstring	m_strComment ;
 
 	/**
-		�^�p�@�\�̗L������
-		�H���t�@�C���̃v���p�e�B�ŕύX�ł��܂�
-		0:�^�p�@�\�͖����ł��B
-		1:�^�p�@�\�͊ȈՃ��[�h�ł��B
-			��Ԃ̐ڑ��݂̂��s���A�^�p�ԍ��͐ݒ肵�܂���B
-		2:�^�p�@�\�͒ʏ탂�[�h�ł�
-		�K��l��0�ł�
+		運用機能の有効無効
+		路線ファイルのプロパティで変更できます
+		0:運用機能は無効です。
+		1:運用機能は簡易モードです。
+			列車の接続のみを行い、運用番号は設定しません。
+		2:運用機能は通常モードです
+		規定値は0です
 	*/
 	int m_iEnableOperation;
 	/**
-		����_�C���̕ʖ��ł��B
-		�i��j "�k�s" �Ȃ�
+		下りダイヤの別名です。
+		（例） "北行" など
 	*/
 	tstring	m_strKudariDiaAlias;
 	/**
-		���_�C���̕ʖ��ł��B
-		�i��j "��s" �Ȃ�
+		上りダイヤの別名です。
+		（例） "南行" など
 	*/
 	tstring	m_strNoboriDiaAlias;
 
 	/**
-		�܂�Ԃ����ɉ^�p�ԍ��𔽓]�����邩�ۂ�
-		���̒l��true�̎��A�^�p�T���ŉ���̏��̐ڑ����s����ƁA
-		�^�p�ԍ��̕��т𔽓]�����܂��B
-		(��)�܂�Ԃ��O�� "01A","21B"�̏ꍇ�A
-		�܂�Ԃ����"21B","01A"�ɂȂ�܂�
+		折り返し時に運用番号を反転させるか否か
+		この値がtrueの時、運用探索で下り⇔上りの接続が行われると、
+		運用番号の並びを反転させます。
+		(例)折り返し前が "01A","21B"の場合、
+		折り返し後は"21B","01A"になります
 	*/
 	bool m_bOperationNumberReverse;
 
 	/**
-		�^�p�ڑ����ɋN�_�������ׂ����ۂ�
-		�K��l��true�ł��B
+		運用接続時に起点時刻を跨ぐか否か
+		規定値はtrueです。
 	*/
 	bool m_bOperationCrossKitenJikoku;
 
 	/**
-		��^�]�������擾����_�C����Index�ł��B
-		�K��l��0�ł��B
+		基準運転時分を取得するダイヤのIndexです。
+		規定値は0です。
 	*/
 	int m_iKijunDiaIndex;
 
 	/**
-		�B����ʂ𖳌��ɂ���
-		�K��l��false�ł��B
+		隠し種別を無効にする
+		規定値はfalseです。
 	*/
 	bool m_bDisableHiddenSyubetsu;
 
 	///@}
 private:
 	// ********************************
-	///@name ���
+	///@name 包含
 	// ********************************
 	///@{
 
 	/**
-		���́w�H���x�ɂ���w�w�x ( CentDedEki ) ��ێ����܂��B
+		この『路線』にある『駅』 ( CentDedEki ) を保持します。
 	
-		���̃R���e�i���� CentDedEki �I�u�W�F�N�g��
-		�����E�j���̐Ӗ���this�ɂ���܂��B
+		このコンテナ内の CentDedEki オブジェクトの
+		生成・破棄の責務はthisにあります。
 	
-		������Ԃł́A�v�f���� 0 �ƂȂ�܂��B
+		初期状態では、要素数は 0 となります。
 	 */
 	CXCentDedEkiCont	m_CentDedEkiCont ;
 	
 	/**
-		���́w�H���x�ɂ���w��Ԏ�ʁx ( CentDedRessyasyubetsu ) ��ێ����܂��B
+		この『路線』にある『列車種別』 ( CentDedRessyasyubetsu ) を保持します。
 	
-		���̃R���e�i���� CentDedRessyasyubetsu �I�u�W�F�N�g��
-		�����E�j���̐Ӗ���this�ɂ���܂��B
+		このコンテナ内の CentDedRessyasyubetsu オブジェクトの
+		生成・破棄の責務はthisにあります。
 	
-		������Ԃł́A�v�f���� 1 �ƂȂ�܂��B
-		�w��Ԏ�ʁx�́A���Ȃ��Ƃ���͑��݂��Ȃ��Ă͂Ȃ�܂���B
+		初期状態では、要素数は 1 となります。
+		『列車種別』は、少なくとも一つは存在しなくてはなりません。
 	 */
 	CXCentDedRessyasyubetsuCont	m_CentDedRessyasyubetsuCont ;
 	
 	/**
-		���́w�H���x�ɂ���w�_�C���x ( CentDedDia ) ��ێ����܂��B
+		この『路線』にある『ダイヤ』 ( CentDedDia ) を保持します。
 	
-		���̃R���e�i���� CentDedDia �I�u�W�F�N�g��
-		�����E�j���̐Ӗ���this�ɂ���܂��B
+		このコンテナ内の CentDedDia オブジェクトの
+		生成・破棄の責務はthisにあります。
 	
 	 @attention
-		this �́A CentDedDia::m_strName ������q�Ƃ��Ĉ����܂��B
-		���̃R���e�i���� CentDedDia �́A CentDedDia::m_strName ��
-		��ӂłȂ��Ă͂Ȃ�܂���B
+		this は、 CentDedDia::m_strName を限定子として扱います。
+		このコンテナ内の CentDedDia は、 CentDedDia::m_strName が
+		一意でなくてはなりません。
 	
-		������Ԃł́A�v�f���� 0 �ƂȂ�܂��B
+		初期状態では、要素数は 0 となります。
 	 */
 	CXCentDedDiaCont	m_CentDedDiaCont ;
 	///@}
 	
  public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	/**
-		������Ԃł́A��Ԏ�ʂ̗v�f���� 1 �ƂȂ�܂��B
-		�w��Ԏ�ʁx�́A���Ȃ��Ƃ���͑��݂��Ȃ��Ă͂Ȃ�܂���B
+		初期状態では、列車種別の要素数は 1 となります。
+		『列車種別』は、少なくとも一つは存在しなくてはなりません。
 	 */
 	CentDedRosen() ;
 	
@@ -531,7 +531,7 @@ private:
 // ********************************
  public:
 	// ********************************
-	///@name CentDedRosen-����
+	///@name CentDedRosen-属性
 	// ********************************
 	///@{
 	/** @see m_strName */
@@ -609,20 +609,20 @@ private:
 	///@}
 	
 	// ********************************
-	///@name CentDedRosen-���
+	///@name CentDedRosen-包含
 	// ********************************
 	///@{
 	/**
 	 @return 
-		�w�w�x ( CentDedEki ) �I�u�W�F�N�g�̃R���e�i�ւ�
-		�C���^�[�t�F�[�X��Ԃ��܂��B
-		���̃C���^�[�t�F�[�X�́A CentDedEki �I�u�W�F�N�g��H����
-		�ǉ��E�폜���邽�߂̃C���^�[�t�F�[�X�ł��B
+		『駅』 ( CentDedEki ) オブジェクトのコンテナへの
+		インターフェースを返します。
+		このインターフェースは、 CentDedEki オブジェクトを路線に
+		追加・削除するためのインターフェースです。
 	@attention
-		���̃R���e�i�ɑ΂��āA������Z�q���g�p���Ă͂����܂���B
-		�K���A�R���e�i�̃��\�b�h���g���ėv�f�̒ǉ��E�폜���s���Ă��������B
-		���� CentDedEkiCont �̓��e��CentDedRosen �ɃR�s�[����ꍇ�́A
-		CaMui::insert() ���g�p���邱�Ƃ��ł��܂��B
+		このコンテナに対して、代入演算子を使用してはいけません。
+		必ず、コンテナのメソッドを使って要素の追加・削除を行ってください。
+		他の CentDedEkiCont の内容をCentDedRosen にコピーする場合は、
+		CaMui::insert() を使用することもできます。
 	@code
 		CaMui<CentDedEki>	aCaCont( aCentDedRosen().getCentDedEkiCont() ) ; 
 		aCaCont.insert( &aCentDedEkiCont ) ;
@@ -634,15 +634,15 @@ private:
 
 	/**
 	@return 
-		�w��Ԏ�ʁx ( CentDedRessyasyubetsu ) �I�u�W�F�N�g�̃R���e�i�ւ�
-		�C���^�[�t�F�[�X��Ԃ��܂��B
-		���̃C���^�[�t�F�[�X�́A CentDedRessyasyubetsu �I�u�W�F�N�g��H����
-		�ǉ��E�폜���邽�߂̃C���^�[�t�F�[�X�ł��B
+		『列車種別』 ( CentDedRessyasyubetsu ) オブジェクトのコンテナへの
+		インターフェースを返します。
+		このインターフェースは、 CentDedRessyasyubetsu オブジェクトを路線に
+		追加・削除するためのインターフェースです。
 	@attention
-		���̃R���e�i�ɑ΂��āA������Z�q���g�p���Ă͂����܂���B
-		�K���A�R���e�i�̃��\�b�h���g���ėv�f�̒ǉ��E�폜���s���Ă��������B
-		���� CentDedRessyasyubetsuCont �̓��e��CentDedRosen �ɃR�s�[����ꍇ�́A
-		CaMui::insert() ���g�p���邱�Ƃ��ł��܂��B
+		このコンテナに対して、代入演算子を使用してはいけません。
+		必ず、コンテナのメソッドを使って要素の追加・削除を行ってください。
+		他の CentDedRessyasyubetsuCont の内容をCentDedRosen にコピーする場合は、
+		CaMui::insert() を使用することもできます。
 	@code
 			CaMui<CentDedRessyasyubetsu>	aCaCont( pCentDedRosen->getCentDedRessyasyubetsuCont() ) ; 
 			aCaCont.insert( &aCentDedRessyasyubetsuCont ) ;
@@ -660,15 +660,15 @@ private:
 	
 	/**
 	 @return 
-		�w�_�C���x ( CentDedDia ) �I�u�W�F�N�g�̃R���e�i�ւ�
-		�C���^�[�t�F�[�X��Ԃ��܂��B
-		���̃C���^�[�t�F�[�X�́A CentDedDia �I�u�W�F�N�g��H����
-		�ǉ��E�폜���邽�߂̃C���^�[�t�F�[�X�ł��B
+		『ダイヤ』 ( CentDedDia ) オブジェクトのコンテナへの
+		インターフェースを返します。
+		このインターフェースは、 CentDedDia オブジェクトを路線に
+		追加・削除するためのインターフェースです。
 	@attention
-		���̃R���e�i�ɑ΂��āA������Z�q���g�p���Ă͂����܂���B
-		�K���A�R���e�i�̃��\�b�h���g���ėv�f�̒ǉ��E�폜���s���Ă��������B
-		���� CentDedRessyasyubetsuCont �̓��e��CentDedRosen �ɃR�s�[����ꍇ�́A
-		CaMui::insert() ���g�p���邱�Ƃ��ł��܂��B
+		このコンテナに対して、代入演算子を使用してはいけません。
+		必ず、コンテナのメソッドを使って要素の追加・削除を行ってください。
+		他の CentDedRessyasyubetsuCont の内容をCentDedRosen にコピーする場合は、
+		CaMui::insert() を使用することもできます。
 	@code
 			CaMui<CentDedDia>	aCaCont( pCentDedRosen->getCentDedDiaCont() ) ; 
 			aCaCont.insert( &aCentDedDia ) ;
@@ -681,222 +681,222 @@ private:
 	///@}
 	
 	// ********************************
-	///@name CentDedRosen-����
+	///@name CentDedRosen-操作
 	// ********************************
 	///@{
 	/**
-		���̘H���t�@�C���ɁA���̘H���t�@�C����g����܂��B
+		この路線ファイルに、他の路線ファイルを組入れます。
 	@param rosenToAdd [in]
-		�ǉ�����H�����w�肵�Ă��������B
+		追加する路線を指定してください。
 	@param iEkiIndexToInsert [in]
-		�H���t�@�C����g�����wIndex���w�肵�Ă��������B
+		路線ファイルを組入れる駅Indexを指定してください。
 
-	(1)�@OuDia�́A�w�ǉ�����H���t�@�C���x�̂��ׂẲw���A
-	�w���ݕҏW���Ă���H���t�@�C���x�́w�g�����x�ɒǉ����܂��B
+	(1)　OuDiaは、『追加する路線ファイル』のすべての駅を、
+	『現在編集している路線ファイル』の『組入れ先』に追加します。
 
-	(1.1)�@�w���ݕҏW���Ă���H���t�@�C���x�̑g�����w��
-	�w�ǉ�����H���t�@�C���x�̋N�_�E�w�������ł���ꍇ�A
-	OuDia�͂���2�w�𓯈�w�Ƃ݂Ȃ��܂��B
-	  �w�ǉ�����H���t�@�C���x�̏I�_�ɂ��Ă��A���l�ł��B
+	(1.1)　『現在編集している路線ファイル』の組入れ先駅と
+	『追加する路線ファイル』の起点・駅が同じである場合、
+	OuDiaはこの2駅を同一駅とみなします。
+	  『追加する路線ファイル』の終点についても、同様です。
 
-	(2)�@OuDia�́A�w�ǉ�����H���t�@�C���x�̂��ׂĂ̗�Ԏ�ʂ�
-	�w���ݕҏW���Ă���H���t�@�C���x�ɒǉ����܂��B
-	  �A���A�����̗�Ԏ�ʂ��w���ݕҏW���Ă���H���t�@�C���x��
-	  ���łɑ��݂��Ă���ꍇ�́AOuDia�͂��̗�Ԏ�ʂ�ǉ����܂���B
+	(2)　OuDiaは、『追加する路線ファイル』のすべての列車種別を
+	『現在編集している路線ファイル』に追加します。
+	  但し、同名の列車種別が『現在編集している路線ファイル』に
+	  すでに存在している場合は、OuDiaはその列車種別を追加しません。
 
-	(3)�@OuDia�́A�w�ǉ�����H���t�@�C���x�̂��ׂẴ_�C����
-	�w���ݕҏW���Ă���H���t�@�C���x�ɒǉ����܂��B
-	  �A���A�����̃_�C�����w���ݕҏW���Ă���H���t�@�C���x��
-	  ���łɑ��݂��Ă���ꍇ�́AOuDia�͂��̃_�C����ǉ����܂���B
+	(3)　OuDiaは、『追加する路線ファイル』のすべてのダイヤを
+	『現在編集している路線ファイル』に追加します。
+	  但し、同名のダイヤが『現在編集している路線ファイル』に
+	  すでに存在している場合は、OuDiaはそのダイヤを追加しません。
 
-	(4)�@OuDia�́A�w�ǉ�����H���t�@�C���x�̂��ׂĂ�
-	�_�C���̂��ׂĂ̗�Ԃ��A�w���ݕҏW���Ă���H���t�@�C���x�́A
-	�����̃_�C���ɒǉ����܂��B
+	(4)　OuDiaは、『追加する路線ファイル』のすべての
+	ダイヤのすべての列車を、『現在編集している路線ファイル』の、
+	同名のダイヤに追加します。
 
-	(5)�@OuDia�́A�w�ǉ�����H���t�@�C���x�̃R�����g���A
-	�w���ݕҏW���Ă���H���t�@�C���x�̃R�����g�̖����ɒǉ����܂��B
+	(5)　OuDiaは、『追加する路線ファイル』のコメントを、
+	『現在編集している路線ファイル』のコメントの末尾に追加します。
 	*/
 	void insert( const CentDedRosen& rosenToAdd , int iEkiIndexToInsert ) ;
 
 	/**
-		���̘H���̈ꕔ�w�Ԃ̘H�����쐬���܂��B
+		この路線の一部駅間の路線を作成します。
 	@param iEkiIndex [in]
-		�쐬����H���̋N�_�w�Ƃ���wIndex���w�肵�Ă��������B
+		作成する路線の起点駅とする駅Indexを指定してください。
 	@param iEkiCount [in]
-		�쐬����H���̉w�����w�肵�Ă��������B
+		作成する路線の駅数を指定してください。
 	@param bEnableOuter [in]
-		�H����؂�o���Ƃ��A�؂�o���͈͊O���n���E�I�������Ԃ��A
-		�؂�o���͈͓��̐V���Ȏn���E�I���w�ŘH���O�����Ƃ��邩�ۂ����w�肵�܂��B
+		路線を切り出すとき、切り出し範囲外を始発・終着する列車を、
+		切り出し範囲内の新たな始発・終着駅で路線外発着とするか否かを指定します。
 	@return
-		�������ꂽ�H����Ԃ��܂��B
+		生成された路線を返します。
 
-	(1)�@�V�������������H���t�@�C���́A
-	�w���ݕҏW���Ă���H���t�@�C���x����A
-	�w�肳�ꂽ�͈͈ȊO�̉w���폜�������̂ɂȂ�܂��B
+	(1)　新しく生成される路線ファイルは、
+	『現在編集している路線ファイル』から、
+	指定された範囲以外の駅を削除したものになります。
 
-	(2)�@�V�������������H�����^�]��ԂɊ܂܂�Ȃ���Ԃ́A�폜���܂��B
+	(2)　新しく生成される路線が運転区間に含まれない列車は、削除します。
 	*/
 	CentDedRosen createSubRosen( 
 		int iEkiIndex , int iEkiCount , bool bEnableOuter)const ;
 
 	/**
-		�S�_�C���E�S��Ԃ́A�w��̉wIndex�̉w�������A
-		�w�����`���E�n���E�I���ɍ��킹�ĕύX���܂��B
+		全ダイヤ・全列車の、指定の駅Indexの駅時刻を、
+		駅時刻形式・始発・終着に合わせて変更します。
 
-		�ύX���e�́A CentDedEkiJikoku::adjustByEkijikokukeisiki()
-		���Q�Ƃ��Ă��������B
+		変更内容は、 CentDedEkiJikoku::adjustByEkijikokukeisiki()
+		を参照してください。
 
 	@see CentDedEkiJikoku::adjustByEkijikokukeisiki 
 
 	@param iEkiIndex [in]
-		�wIndex���w�肵�Ă��������B
+		駅Indexを指定してください。
 	*/
 	void adjustByEkijikokukeisiki( int iEkiIndex ) ;
 
 	/**
-	�H���t�@�C���𔽓]���܂��B
+	路線ファイルを反転します。
 
-	(1)�@�H���t�@�C���̉w�̏����̕��я����t�ɂ��܂��B
+	(1)　路線ファイルの駅の順序の並び順を逆にします。
 
-	(2)�@�w�̃v���p�e�B�́A�ȉ��̕ϊ����s���܂��B
+	(2)　駅のプロパティは、以下の変換を行います。
 
-	(2.1)�w���͂��̂܂�
+	(2.1)駅名はそのまま
 
-	(2.2)�w�����`��
-		- ���蒅��������蒅����
-		- ��蒅���������蒅����
+	(2.2)駅時刻形式
+		- 下り着時刻→上り着時刻
+		- 上り着時刻→下り着時刻
 
-	(2.3)���E��
-		- �w�̏�����ύX��A�N�_��(�wIndex�̏�������)��1�w�V�t�g����B
-		- �V�������葤�I�_(�wIndex�̍ł��傫���w)�̋��E���͖����ɂ���B
+	(2.3)境界線
+		- 駅の順序を変更後、起点側(駅Indexの小さい側)に1駅シフトする。
+		- 新しい下り側終点(駅Indexの最も大きい駅)の境界線は無しにする。
 
-	(2.4)�_�C���O������ԏ��
-	  ����̓��e�Ə��̓��e�����ւ��܂��B
+	(2.4)ダイヤグラム列車情報
+	  下りの内容と上りの内容を入れ替えます。
 
-	(3)�H���t�@�C���Ɋ܂܂�邷�ׂĂ̗�Ԃ̉w�����̕��я����t�ɂ��܂��B
+	(3)路線ファイルに含まれるすべての列車の駅時刻の並び順を逆にします。
 	*/
 	void invert();
 
 	/**
-		�Q�́w��Ԏ�ʁx��Index�����ւ��܂��B
+		２つの『列車種別』のIndexを入れ替えます。
 	
-		�w��̗�Ԏ��Index�������ׂĂ̗�Ԃ�Index���A
-		����ւ��܂��B
+		指定の列車種別Indexを持つすべての列車のIndexも、
+		入れ替わります。
 		
 	 @param iRessyasyubetsuIndexA , iRessyasyubetsuIndexB [in]
-		�w��Ԏ��Index�x���w�肵�Ă��������B
-		�͈͂́A 0 �ȏ� ��Ԏ�ʂ̐������ł��B
-		INT_MAX �́A�����̗�Ԏ�ʂ��w�肵�����̂Ƃ݂Ȃ��܂��B
-		iRessyasyubetsuIndexA �� iRessyasyubetsuIndexB �́A
-		�قȂ�l�łȂ��Ă͂Ȃ�܂���B
-		iRessyasyubetsuSizeA�́AIndexA���N�_�ɉ���ʂ��܂Ƃ߂ē���ւ��邩���w�肵�܂��B
-		iRessyasyubetsuIndexA �� m_iRessyasyubetsuIndexB�̔��́ASize���l�����Ĕ��肵�܂��B
+		『列車種別Index』を指定してください。
+		範囲は、 0 以上 列車種別の数未満です。
+		INT_MAX は、末尾の列車種別を指定したものとみなします。
+		iRessyasyubetsuIndexA と iRessyasyubetsuIndexB は、
+		異なる値でなくてはなりません。
+		iRessyasyubetsuSizeAは、IndexAを起点に何種別をまとめて入れ替えるかを指定します。
+		iRessyasyubetsuIndexA と m_iRessyasyubetsuIndexBの被りは、Sizeを考慮して判定します。
 	 @return 
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-1 ;	//	��Ԏ��Index���s���ł��B
+		成功したら 0 以上、エラーなら負の数です。
+		-1 ;	//	列車種別Indexが不正です。
 	 */
 	int swapRessyasyubetsu( int iRessyasyubetsuIndexA ,
 		int iRessyasyubetsuSizeA,
 		int iRessyasyubetsuIndexB ) ;
 	
 	/**
-		��ԏ�񂪕ύX�ɂȂ����Ƃ��ɁA�O���Ƃ��C�����܂��B
-		����Ƃ́ACentDedEkiJikoku�ֈϏ����܂��B
-		(1)�L���Ȏn���w�ȑO�E�L���ȏI���w�ȍ~�̍�Ƃ��N���A
-		(2)�L���Ȏn���w�̑O��Ɛ擪���A��[���(�O��Ԑڑ�etc)�ɂ���A
-			�L���ȏI���w�̌��Ɩ������A�I�[���(����Ԑڑ�etc)�ɂ���
-		(3)���̑��̐�[��ƁA�I�[��Ƃ��폜
-		(4)��������Ƃ̑O���ƂɁA��[�E�I�[��Ƃ����邩�`�F�b�N
-		�w�ݒ�����āA��Ƃ̗L���E������ύX���܂�
+		列車情報が変更になったときに、前後作業を修正します。
+		実作業は、CentDedEkiJikokuへ委譲します。
+		(1)有効な始発駅以前・有効な終着駅以降の作業をクリア
+		(2)有効な始発駅の前作業先頭を、先端作業(前列車接続etc)にする、
+			有効な終着駅の後作業末尾を、終端作業(次列車接続etc)にする
+		(3)その他の先端作業、終端作業を削除
+		(4)増解結作業の前後作業に、先端・終端作業があるかチェック
+		駅設定を見て、作業の有効・無効を変更します
 	*/
 	void adjustOperation();
 
 	/**
-		���ׂĂ̑�����j�����܂��B
+		すべての属性を破棄します。
 	 */
 	void clear() ;
 	///@}
 public:
 	// ********************************
-	///@name CentDedRosen-�q�I�u�W�F�N�g�̑����̒ʒm
+	///@name CentDedRosen-子オブジェクトの増減の通知
 	// ********************************
 	///@{
 	/**
-		m_CentDedEkiCont �� CentDedEki ���ǉ����ꂽ����A
-		m_CentDedEkiCont ����Ăяo����܂��B
+		m_CentDedEkiCont に CentDedEki が追加された直後、
+		m_CentDedEkiCont から呼び出されます。
 	@param iEkiIndex
-		�ǉ����ꂽ CentDedEki �̃C���f�N�X�B
+		追加された CentDedEki のインデクス。
 	*/
 	virtual void onEkiInsert( int iEkiIndex, const vector<int>& iMainTrack);
 	/**
-		m_CentDedEkiCont ���� CentDedEki ���폜���ꂽ����A
-		m_CentDedEkiCont ����Ăяo����܂��B
+		m_CentDedEkiCont から CentDedEki が削除された直後、
+		m_CentDedEkiCont から呼び出されます。
 	@param iEkiIndex
-		�폜���ꂽ CentDedEki �̃C���f�N�X�B
+		削除された CentDedEki のインデクス。
 	*/
 	virtual void onEkiErase( int iEkiIndex  );
 		
 	/**
-		CentDedRessyasyubetsuCont �� CentDedRessyasyubetsu ���ǉ����ꂽ����A
-		CentDedRessyasyubetsuCont ����Ăяo����܂��B
+		CentDedRessyasyubetsuCont に CentDedRessyasyubetsu が追加された直後、
+		CentDedRessyasyubetsuCont から呼び出されます。
 	@param iRessyasyubetsuIndex
-		�ǉ����ꂽ CentDedRessyasyubetsu  �̃C���f�N�X�B
+		追加された CentDedRessyasyubetsu  のインデクス。
 	*/
 	virtual void onRessyasyubetsuInsert( int iRessyasyubetsuIndex ); 
 
 	/**
-		CentDedRessyasyubetsuCont ���� CentDedRessyasyubetsu ���폜���ꂽ����A
-		CentDedRessyasyubetsuCont ����Ăяo����܂��B
+		CentDedRessyasyubetsuCont から CentDedRessyasyubetsu が削除された直後、
+		CentDedRessyasyubetsuCont から呼び出されます。
 	@param iRessyasyubetsuIndex
-		�폜���ꂽ CentDedRessyasyubetsu  �̃C���f�N�X�B
+		削除された CentDedRessyasyubetsu  のインデクス。
 	*/
 	virtual void onRessyasyubetsuErase( int iRessyasyubetsuIndex ); 
 
 	/**
-	CentDedEki���ύX���ꂽ���ʁA�V���ɕ���w��ݒ肵���A
-	�������͊�w��ύX�����ꍇ�ɁA�Ăяo����܂��B
-	�K�v�ɉ����āA�Ԑ����E��{���ݒ��ύX���܂��B
+	CentDedEkiが変更された結果、新たに分岐駅を設定した、
+	もしくは基幹駅を変更した場合に、呼び出されます。
+	必要に応じて、番線情報・主本線設定を変更します。
 	@param iEkiIndex
-	�ύX���ꂽ�wIndex
-	-�Ԑ����̓���
-		��{���ݒ�͊�w�D��B
-		�Ԑ��ݒ�́A��w�����D��ƂȂ�܂����A
-		�ύX���ꂽ�w�̔Ԑ������A��w���������ꍇ�A���ߕ�����w�y��
-		���̌q�����Ă���w�ɒǉ����܂��B
+	変更された駅Index
+	-番線情報の統一
+		主本線設定は基幹駅優先。
+		番線設定は、基幹駅側が優先となりますが、
+		変更された駅の番線数が、基幹駅よりも多い場合、超過分を基幹駅及び
+		他の繋がっている駅に追加します。
 	@param iEkiIndexBrunchThisSide
-		��w�̉wIndex�y�сA�ύX���ꂽ�w�ƁA��w���猩��
-		�������ɂ���h���w�̉wIndex�̏W���ł��B
+		基幹駅の駅Index及び、変更された駅と、基幹駅から見て
+		同じ側にある派生駅の駅Indexの集合です。
 	@param iEkiIndexLoop
-		��w������̋N�_�E�I�_�ɂȂ��Ă���ꍇ�A�Ή�����I�_�E�N�_�̉wIndex������܂��B
-		����������A�Ȃ��Ă���ꍇ�A���̐������A�wIndex���i�[����܂�
+		基幹駅が環状線の起点・終点になっている場合、対応する終点・起点の駅Indexが入ります。
+		環状線が複数連なっている場合、その数だけ、駅Indexが格納されます
 	@param iEkiIndexBrunchOtherSide
-		��w���猩�āA�ύX���ꂽ�w�Ɣ��Α��ɂ���h���w�̉wIndex�̏W���ł��B
-		�������A�ԂɊ�������܂�ꍇ�́A���̐�[����w�Ƃ���A�h���w�̏W���ɂȂ�܂�
+		基幹駅から見て、変更された駅と反対側にある派生駅の駅Indexの集合です。
+		ただし、間に環状線が挟まる場合は、その先端を基幹駅とする、派生駅の集合になります
 	*/
 	virtual void adjustBrunchLoopByBrunchEdit(
 		int iEkiIndex, 
 		int iBrunchCoreEkiIndex);
 
 	/**
-	CentDedEki���ύX���ꂽ���ʁA�V���Ɋ����ݒ肵���A
-	�������͋N�_�w��ύX�����ꍇ�ɁA�Ăяo����܂��B
-	�K�v�ɉ����āA�Ԑ����E��{���ݒ�E��Ԑݒ��ύX���܂��B
+	CentDedEkiが変更された結果、新たに環状線を設定した、
+	もしくは起点駅を変更した場合に、呼び出されます。
+	必要に応じて、番線情報・主本線設定・列車設定を変更します。
 	@param iEkiIndex
-	�ύX���ꂽ�wIndex
-	-�Ԑ����̓���
-		��{���ݒ�͋N�_�w�D��B
-		�Ԑ��ݒ�́A�N�_�w�����D��ƂȂ�܂����A
-		�ύX���ꂽ�w�̔Ԑ������A�N�_�w���������ꍇ�A���ߕ����N�_�w�y��
-		���̌q�����Ă���w�ɒǉ����܂��B
+	変更された駅Index
+	-番線情報の統一
+		主本線設定は起点駅優先。
+		番線設定は、起点駅側が優先となりますが、
+		変更された駅の番線数が、起点駅よりも多い場合、超過分を起点駅及び
+		他の繋がっている駅に追加します。
 	@param iEkiIndexLoop
-		�ύX���ꂽ�w�y�ыN�_�w���܂ށA����ݒ�ɂ��q�����Ă���w�̉wIndex������܂��B
-		�wIndex�͋N�_��(�Ⴂ����)���O�ɂȂ�悤�ɁA������܂��B
+		変更された駅及び起点駅を含む、環状線設定により繋がっている駅の駅Indexが入ります。
+		駅Indexは起点方(若い数字)が前になるように、入れられます。
 	@param iEkiIndexBrunchOriginSide
-		��L����w�̂����ł��N�_���̉w����w�Ƃ���A�h���w�̉wIndex������܂��B
-		����w�E����̐ݒ�K�����A�h���wIndex�͕K����w�����N�_���ɂȂ�܂��B
+		上記環状線駅のうち最も起点方の駅を基幹駅とする、派生駅の駅Indexが入ります。
+		分岐駅・環状線の設定規則より、派生駅Indexは必ず基幹駅よりも起点方になります。
 	@param iEkiIndexBrunchTerminalSide
-		��L����w�̂����ł��I�_���̉w����w�Ƃ���A�h���w�̉wIndex������܂��B
-		����w�E����̐ݒ�K�����A�h���wIndex�͕K����w�����I�_���ɂȂ�܂��B
+		上記環状線駅のうち最も終点方の駅を基幹駅とする、派生駅の駅Indexが入ります。
+		分岐駅・環状線の設定規則より、派生駅Indexは必ず基幹駅よりも終点方になります。
 	*/
 	virtual void adjustBrunchLoopByLoopEdit(
 		int iEkiIndex, int iLoopOriginEkiIndex);
@@ -912,11 +912,11 @@ public:
 		int iRessyaTrackIndex[])const;
 
 	/**
-		��^�]�����_�C������AiRessyasyubetsuIndex�Ǝ�ʂ���v�����Ԃ�T���A
-		�f�t�H���g�����Ԑ���T���܂��B
-		iChakuEkiOrder����O��ƕ����AiHatsuEkiOrder������ƕ����擾���܂����A
-		iChakuEkiOrder��-1�̏ꍇ�́AiHatsuEkiOrder��L���n���w�Ƃ����Ԃ݂̂��ΏۂɁA
-		iHatsuEkiOrder��-1�̏ꍇ�́AiChakuEkiOrder��L���I���w�Ƃ����Ԃ݂̂��ΏۂɂȂ�܂��B
+		基準運転時分ダイヤから、iRessyasyubetsuIndexと種別が一致する列車を探し、
+		デフォルト入換番線を探します。
+		iChakuEkiOrderから前作業分を、iHatsuEkiOrderから後作業分を取得しますが、
+		iChakuEkiOrderが-1の場合は、iHatsuEkiOrderを有効始発駅とする列車のみが対象に、
+		iHatsuEkiOrderが-1の場合は、iChakuEkiOrderを有効終着駅とする列車のみが対象になります。
 	*/
 	virtual void StandardShuntTrackIndexSearch(
 		const int iRessyasyubetsuIndex,
@@ -926,15 +926,15 @@ public:
 		int iShuntTrackIndex[])const;
 
 	/**
-		��^�]�����_�C������AiRessyasyubetsuIndex�Ǝ�ʂ���v�����Ԃ�T���A
-		�e�H���O�����w�Ƃ̃f�t�H���g���v����&��Ԏ��Ԃ�T���܂��B
-		iOuterTerminalJikan�͘H���O�w��x2��2�����z��ɂȂ��Ă���A
-		���ꂼ��̘H���O�����w�ɑ΂���A�H���O�����w����̏��v���ԂƁA
-		���w�ł̒�Ԏ��Ԃ��i�[���܂��B
-		�f�t�H���g���v���Ԃ̎擾�ɗp����̂́A��Ґ��̊J�n��ƂƏI����Ƃ݂̂ł��B
-		iHatsuEkiOrder����J�n��ƕ����AiChakuEkiOrder����I����ƕ����擾���܂�
-		iChakuEkiOrder��-1�̏ꍇ�́A�I����Ƃ���̎擾�͍s���܂���B
-		iHatsuEkiOrder��-1�̏ꍇ�́A�J�n��Ƃ���̎擾�͍s���܂���B
+		基準運転時分ダイヤから、iRessyasyubetsuIndexと種別が一致する列車を探し、
+		各路線外発着駅とのデフォルト所要時間&停車時間を探します。
+		iOuterTerminalJikanは路線外駅数x2の2次元配列になっており、
+		それぞれの路線外発着駅に対する、路線外発着駅からの所要時間と、
+		当駅での停車時間を格納します。
+		デフォルト所要時間の取得に用いるのは、主編成の開始作業と終了作業のみです。
+		iHatsuEkiOrderから開始作業分を、iChakuEkiOrderから終了作業分を取得します
+		iChakuEkiOrderが-1の場合は、終了作業からの取得は行いません。
+		iHatsuEkiOrderが-1の場合は、開始作業からの取得は行いません。
 
 	*/
 	virtual void StandardOuterTerminalJikanSearch(
@@ -945,28 +945,28 @@ public:
 		vector<vector<int>>& iOuterTerminalJikan)const;
 
 	/**
-	�w�ҏW���Ȃ��ꂽ�ہA�w�Ԑ��E��{���̕ύX���A����w�E����ݒ�Ōq���ꂽ����w�֔��f���܂�
-	�Ȃ��A���̋@�\�ɂ́A��ԔԐ����̒������܂ނ��߁A�P��w�ҏW�̏ꍇ�ɂ����s���K�v�ł��B
+	駅編集がなされた際、駅番線・主本線の変更を、分岐駅・環状線設定で繋がれた同一駅へ反映します
+	なお、この機能には、列車番線側の調整も含むため、単一駅編集の場合にも実行が必要です。
 	@param iEkiIndex[in]
-	�ҏW���s��ꂽ�w�ł��B���̉w���瑼�̉w�ɔ��f���܂��B
+	編集が行われた駅です。この駅から他の駅に反映します。
 	@param iEkiIndexBrunchLoopOld[in]
-	�ҏW���s��ꂽ�w�ƁA"�ҏW�O���_��"����w�����̉w�Q�ł��B
-	�ҏW��ɓ���w�����̉w�Q��ʂɋ��߁A
-	�ҏW�O�E��Ƃ��ɓ���w�Q�̉w�ɑ΂��̂݁A�������s���܂��B
-	(��)�ҏW�O�͓���w�A�ҏW��͖��֌W�̉w
-		�����֌W�ɂȂ�̂őΏۂɊ܂܂Ȃ��B
-	�ҏW�O�͖��֌W�A�ҏW��͓���w
-		���ʓr�AadjustBrunchLoopByBrunchEdit���Œ������s���̂ŁA�����ł͕s�v�B
-	iEkiIndex���̂��܂܂�Ă���̂Œ��ӂ��Ă��������B
+	編集が行われた駅と、"編集前時点で"同一駅扱いの駅群です。
+	編集後に同一駅扱いの駅群を別に求め、
+	編集前・後ともに同一駅群の駅に対しのみ、処理を行います。
+	(注)編集前は同一駅、編集後は無関係の駅
+		→無関係になるので対象に含まない。
+	編集前は無関係、編集後は同一駅
+		→別途、adjustBrunchLoopByBrunchEdit等で調整を行うので、ここでは不要。
+	iEkiIndex自体も含まれているので注意してください。
 	@param iEkiTrack2Map[in]
-	�w�ҏW�J�n���ɑ��݂��Ă����Ԑ���Index���ς�������ǂ������m���߂邽��
-	�T�C�Y�͉w�ҏW�J�n�ɑ��݂����Ԑ����B
-	�e�l�́A�ҏW���Index�B
-	�l��-1�̏ꍇ�͂��̔Ԑ����폜���ꂽ���Ƃ�����
-		���̃}�b�v�Ɋ�Â��āA����w�Q�̗�ԔԐ��̒������s���܂��B
+	駅編集開始時に存在していた番線のIndexが変わったかどうかを確かめるため
+	サイズは駅編集開始に存在した番線数。
+	各値は、編集後のIndex。
+	値が-1の場合はその番線が削除されたことを示す
+		このマップに基づいて、同一駅群の列車番線の調整を行います。
 	@param iOuterTerminalEkimeiMap
-	�H���O�����w�ɂ��āA��Ɠ����p�r�ł��B
-		���̃}�b�v�Ɋ�Â��āA����w�Q�̎n���I���w��Ƃ̒������s���܂��B
+	路線外発着駅について、上と同じ用途です。
+		このマップに基づいて、同一駅群の始発終着駅作業の調整を行います。
 		
 	*/
 	virtual void adjustBrunchLoopEkiTrack2OuterTerminal(
@@ -976,8 +976,8 @@ public:
 		const vector<int>& iOuterTerminalEkimeiMap);
 
 	/**
-		Ver2.0�ȑO�̃t�@�C����ǂݍ��ނƂ��A����E����ݒ�Ōq�������w�ԂŁA
-		�H���O�����w�������ꂼ��Ɨ����Ă������̂��A���ꂵ�ċ��L���邽�߂ɗp���܂��B
+		Ver2.0以前のファイルを読み込むとき、分岐・環状線設定で繋がった駅間で、
+		路線外発着駅名がそれぞれ独立していたものを、統一して共有するために用います。
 	*/
 	virtual void mergeOuterTerminal();
 	///@}

@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -77,7 +77,7 @@ Copyright (C) 2006-2017 take-okm
 #include "stdafx.h"
 #include "CRessyaDraw.h"
 #include <chrono>
-#include "..\entDed\CconvCentDed.h"
+#include "..¥entDed¥CconvCentDed.h"
 #include "DcDraw/CDcdText.h"
 #include "DcDraw/CConverter_WinGdi.h"
 
@@ -87,7 +87,7 @@ namespace ViewDiagram {
 //	CEnumRessyasen
 // ****************************************************************
 	//*******************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	//*******************************
 //	CRessyaDraw::CRessyaDraw(
 //		const CentDedDgrDia* pCentDedDgrDia ,
@@ -119,7 +119,7 @@ namespace ViewDiagram {
 		m_zonexyDgrZone(pCDcdDiagram->DgrFromDcd(pIfDcdTarget, pIfDcdTarget->getZone()))
 	{
 	};
-	CRessyaDraw::~CRessyaDraw()
+	CRessyaDraw::‾CRessyaDraw()
 {
 }
 
@@ -132,9 +132,9 @@ void CRessyaDraw::onCentDedDgrRessya(
 		const CentDedDgrRessya* pCentDedDgrRessya ,
 		const int& iShiftSecond)
 {
-	//	�ΏۂƂȂ�`��̈���A
-	//	�w�_�C���O�����G���e�B�e�B���W�n�x�ŕێ����܂��B
-	//	����́A����`����s���͈͂�\���Ă��܂��B
+	//	対象となる描画領域を、
+	//	『ダイヤグラムエンティティ座標系』で保持します。
+	//	これは、今回描画を行う範囲を表しています。
 	CdDcdZoneXy	zonexyDgrZone = m_zonexyDgrZone ;
 
 	const Mu<const CentDedDgrRessyasen*>* pMuCentDedDgrRessyasen = 
@@ -145,13 +145,13 @@ void CRessyaDraw::onCentDedDgrRessya(
 			iRessyasenIdx ++ )
 	{
 		// --------------------------------
-		//	��Ԑ����̏���
+		//	列車線毎の処理
 		// --------------------------------
 		const CentDedDgrRessyasen*	pCentDedDgrRessyasen = 	
 			pMuCentDedDgrRessyasen->get( iRessyasenIdx ) ;
 
 		// --------------------------------
-		//	��Ԑ���Y�̈悪�`�ʔ͈͓��ɂ��邩�`�F�b�N
+		//	列車線のY領域が描写範囲内にあるかチェック
 		// --------------------------------
 
 		int iEkiOrderRessyasenKiten = pCentDedDgrRessyasen->getRessyasenKitenEkiOrder();
@@ -164,7 +164,7 @@ void CRessyaDraw::onCentDedDgrRessya(
 		}
 
 		// --------------------------------
-		//	��Ԑ���X�̈�����߂�
+		//	列車線のX領域を求める
 		// --------------------------------
 		CentDedDgrEkiJikoku	aEkiJikokuKiten =
 			*pCentDedDgrRessya->getMuCentDedDgrEkiJikoku()->get(iEkiOrderRessyasenKiten);
@@ -176,7 +176,7 @@ void CRessyaDraw::onCentDedDgrRessya(
 
 		if (zonexDgrPosOnDgrZone(posxDgrKiten, posxDgrSyuuten))
 		{
-			//	���̗�Ԑ��́A�`��\�Ȏ��ԑтɂ���܂��B
+			//	この列車線は、描画可能な時間帯にあります。
 
 			CdDcdPosXy	posDcdRessyasenKiten ;
 			CdDcdPosXy	posDcdRessyasenSyuuten ;
@@ -276,14 +276,14 @@ void CRessyaDraw::onCentDedDgrRessyasen(
 //}
 
 	// ********************************
-	//@name CRessyaDraw-�֘A
+	//@name CRessyaDraw-関連
 	// ********************************
 const CentDedDgrDia*	CRessyaDraw::getCentDedDgrDia()
 {	
 		return m_pCentDedDgrDia ; 
 } ;
 	// ********************************
-	//@name CRessyaDraw-����
+	//@name CRessyaDraw-属性
 	// ********************************
 CdDcdZoneXy	CRessyaDraw::getDgrZone()
 {
@@ -301,17 +301,17 @@ bool CRessyaDraw::getDisplayRessyasen(  ERessyahoukou eRessyahoukou )const
 	return ( bRv ) ;
 }
 	// ********************************
-	//@name CRessyaDraw-����
+	//@name CRessyaDraw-操作
 	// ********************************
 void CRessyaDraw::execute()
 {
-	//�L���b�V���̏�����
+	//キャッシュの初期化
 	ReadYDcdCache();
 	m_DcdXCache.clear();
 
-	//	�ΏۂƂȂ�`��̈���A
-	//	�w�_�C���O�����G���e�B�e�B���W�n�x�ŕێ����܂��B
-	//	����́A����`����s���͈͂�\���Ă��܂��B
+	//	対象となる描画領域を、
+	//	『ダイヤグラムエンティティ座標系』で保持します。
+	//	これは、今回描画を行う範囲を表しています。
 	CdDcdZoneXy	zonexyDgrZone = m_zonexyDgrZone ;
 
 	for ( int iRessyahoukou = Ressyahoukou_Kudari ;
@@ -319,16 +319,16 @@ void CRessyaDraw::execute()
 		iRessyahoukou ++ )
 	{
 		// --------------------------------
-		//	��ԕ����̏��������s���邩�ۂ��̔���
+		//	列車方向の処理を実行するか否かの判定
 		// --------------------------------
 		ERessyahoukou	eRessyahoukou = (ERessyahoukou)iRessyahoukou ;
 		if ( !getDisplayRessyasen( eRessyahoukou ) ) 
 		{
-			//	���̕����̏����͍s���܂���B
+			//	この方向の処理は行いません。
 			continue ;
 		}
 		// --------------------------------
-		//	��ԕ������̏���
+		//	列車方向毎の処理
 		// --------------------------------
 		const Mu<const CentDedDgrRessya*>*	pMuCentDedDgrRessya = 
 			m_pCentDedDgrDia->getCentDedDgrRessyaCont( eRessyahoukou );
@@ -341,34 +341,34 @@ void CRessyaDraw::execute()
 			iRessyaIdx++)
 		{
 			// --------------------------------
-			//	��Ԗ��̏���
+			//	列車毎の処理
 			// --------------------------------
 			const CentDedDgrRessya* pCentDedDgrRessya =
 				pMuCentDedDgrRessya->get(iRessyaIdx);
 			if (pCentDedDgrRessya->getIsNull() ||
 				pCentDedDgrRessya->getCentDedDgrRessyasenCont()->size() <= 0)
 			{
-				//	NULL��ԁE��Ԑ��̑S���Ȃ���Ԃ͑ΏۊO
+				//	NULL列車・列車線の全くない列車は対象外
 				continue;
 			}
 			// --------------------------------
 
 			//CentDedDgrRessya	aCentDedDgrRessya(*pCentDedDgrRessya);
-			//	��Ԃ̍ő��DgrX���W���_�C���O������
-			//	���[��DgrX���W�ɂȂ�܂ŁA
-			//	��ԑS�̂�DgrX���W��24���Ԃ����Z����B
+			//	列車の最大のDgrX座標＜ダイヤグラムの
+			//	左端のDgrX座標になるまで、
+			//	列車全体のDgrX座標を24時間ずつ減算する。
 			//
-			//	���̏����́A��Ԃ��_�C���O�������[��
-			//	�ׂ��ł���ꍇ�ɁA�K�v�ł��B
-			//	���Ƃ��΁A�_�C���O�����̍��[�� 00:00:00
-			//	�ɂȂ��Ă���_�C���̏ꍇ�A
-			//	23:00 ���� 01:00 �Ɍ������đ����Ă����Ԃ�
-			//	-01:00��01:00 
-			//	 23:00��25:00
-			//	�̂Q�ӏ��ɗ�Ԑ���`�悵�Ȃ��Ă͂Ȃ�܂���B
-			//	���̃��[�v�ł́A��U��Ԃ̎�����
-			//	-25:00��-23:00 
-			//	�ɂ��܂��B
+			//	この処理は、列車がダイヤグラム左端を
+			//	跨いでいる場合に、必要です。
+			//	たとえば、ダイヤグラムの左端が 00:00:00
+			//	になっているダイヤの場合、
+			//	23:00 から 01:00 に向かって走っている列車は
+			//	-01:00→01:00 
+			//	 23:00→25:00
+			//	の２箇所に列車線を描画しなくてはなりません。
+			//	このループでは、一旦列車の時刻を
+			//	-25:00→-23:00 
+			//	にします。
 			int iShiftSecond = 0;
 			while (!(pCentDedDgrRessya->getDgrXZone().getEndPos() + iShiftSecond <
 				zonexyDgrZone.getX().getPos()))
@@ -376,9 +376,9 @@ void CRessyaDraw::execute()
 				iShiftSecond -= CdDedJikoku::TOTALSECONDS_A_DAY;
 			}
 
-			//	�����ŁA24���ԉ��Z���܂��B����ɂ��A��Ԏ�����
-			//	-01:00��01:00 
-			//	�ƂȂ�܂��B
+			//	ここで、24時間加算します。これにより、列車時刻は
+			//	-01:00→01:00 
+			//	となります。
 			iShiftSecond += CdDedJikoku::TOTALSECONDS_A_DAY;
 
 			for (; pCentDedDgrRessya->getDgrXZone().getPos() + iShiftSecond <
@@ -386,7 +386,7 @@ void CRessyaDraw::execute()
 				iShiftSecond += CdDedJikoku::TOTALSECONDS_A_DAY)
 			{
 				// --------------------------------
-				//	��Ԃ̕\���ʒu�i�Q�S���ԊԊu�j���̏���
+				//	列車の表示位置（２４時間間隔）毎の処理
 				// --------------------------------
 				CdDcdZone DgrXZoneShift(pCentDedDgrRessya->getDgrXZone().getPos() + iShiftSecond,
 					pCentDedDgrRessya->getDgrXZone().getSize());
@@ -394,7 +394,7 @@ void CRessyaDraw::execute()
 					DgrXZoneShift);
 				if (zoneDgrXCross.getSize() > 0)
 				{
-					//	���̗�Ԃ́A�ΏۂƂȂ�`��̈���ɂ���܂��B
+					//	この列車は、対象となる描画領域内にあります。
 					onCentDedDgrRessya(
 						eRessyahoukou,
 						iRessyaIdx,
@@ -412,7 +412,7 @@ void CRessyaDraw::RessyasenDraw(
 	CdDcdPosXy posDcdRessyasenSyuuten)
 {
 	// --------------------------------
-	//	�����̌`�������
+	//	直線の形状を決定
 	// --------------------------------
 	CdDcdFreeLineProp	aCdLineProp;
 	{
@@ -438,7 +438,7 @@ void CRessyaDraw::RessyasenDraw(
 	}
 
 	// --------------------------------
-	//	�����̕`��ʒu������
+	//	直線の描画位置を決定
 	// --------------------------------
 	CDcdFreeLine	aCDcdFreeLine(aCdLineProp);
 	aCDcdFreeLine.setOrg(posDcdRessyasenKiten);
@@ -450,17 +450,17 @@ void CRessyaDraw::RessyasenDraw(
 
 }
 
-///	�~����
+///	円周率
 const double Pi = 3.14159265;
 
 /**
-	�p�x�̒P�ʂ��A�x���烉�W�A���֕ϊ����܂��B
+	角度の単位を、度からラジアンへ変換します。
 
-	180 �x = 1�� ���W�A��
+	180 度 = 1π ラジアン
 	@param value [in]
-	�ϊ��Ώۂ̒l�B
+	変換対象の値。
 	@return
-	�ϊ���̒l�B
+	変換後の値。
 */
 static double DegToRad(double value)
 {
@@ -468,13 +468,13 @@ static double DegToRad(double value)
 }
 
 /**
-	�p�x�̒P�ʂ��A���W�A������x�֕ϊ����܂��B
+	角度の単位を、ラジアンから度へ変換します。
 
-	180 �x = 1�� ���W�A��
+	180 度 = 1π ラジアン
 	@param value [in]
-	�ϊ��Ώۂ̒l�B
+	変換対象の値。
 	@return
-�ϊ���̒l�B
+変換後の値。
 */
 static double RadToDeg(double value)
 {
@@ -493,16 +493,16 @@ void CRessyaDraw::RessyajouhouDraw(
 {
 	if (iEkiOrder == pCentDedDgrRessyasen->getRessyasenSyuutenEkiOrder())
 	{
-		//	��Ԑ��I�_�ɂ́A�e�L�X�g�̕`����s���܂���
+		//	列車線終点には、テキストの描画を行いません
 		return;
 	}
 	if (!pCentDedDgrEkiJikoku->getShouldRessyajouhouDraw())
 	{
-		//	���̉w�����̈ʒu�ɂ́A�e�L�X�g�̕`����s���܂���B
+		//	この駅時刻の位置には、テキストの描画を行いません。
 		return;
 	}
 	// --------------------------------
-	//	�e�L�X�g�̐F��I��
+	//	テキストの色を選択
 	// --------------------------------
 	CdColorProp	colorText;
 	{
@@ -520,11 +520,11 @@ void CRessyaDraw::RessyajouhouDraw(
 			colorText = pCentDedDgrRessyasyubetsu->getJikokuhyouMojiColor();
 		}
 	}
-	//colorText = �e�L�X�g�̐F
+	//colorText = テキストの色
 
 	// --------------------------------
-	//	��ԏ��e�L�X�g�̓��e���쐬��
-	//	�傫�����v��
+	//	列車情報テキストの内容を作成し
+	//	大きさを計測
 	// --------------------------------
 	tstring	strRessyajouhou;
 	if (m_pCDcdDiagram->getDisplayRessyabangou())
@@ -564,7 +564,7 @@ void CRessyaDraw::RessyajouhouDraw(
 	{
 		return;
 	}
-	//strRessyajouhou = �\�������ԏ��̕�����
+	//strRessyajouhou = 表示する列車情報の文字列
 	CdDcdSizeXy	sizexyText_Dcd;
 #pragma omp critical
 	{
@@ -572,10 +572,10 @@ void CRessyaDraw::RessyajouhouDraw(
 			m_pCDcdDiagram->getDiaRessyaFont());
 		dcdText.getItemSize(m_pIfDcdTarget, &sizexyText_Dcd);
 	}
-		//sizexyText_Dcd = ��ԏ��e�L�X�g�̕��ƍ���
-		//	�i�����ɕ`�悵���ꍇ�̐��@�ł��j
+		//sizexyText_Dcd = 列車情報テキストの幅と高さ
+		//	（水平に描画した場合の寸法です）
 	// --------------------------------
-	//	��ԏ��̕`�悳��钼�����Z�o
+	//	列車情報の描画される直線を算出
 	// --------------------------------
 	CdDcdPosXy	posRessyasen_Pos1_Dcd;
 	CdDcdPosXy	posRessyasen_Pos2_Dcd;
@@ -591,8 +591,8 @@ void CRessyaDraw::RessyajouhouDraw(
 				pCentDedDgrRessyasen,
 				iShiftSecond);
 		//posDgrPosRessyasenKiten,posDgrPosRessyasenSyuuten = 
-		//	�w�_�C���O�����G���e�B�e�B��Ԑ��x�̋N�_�ƏI�_�̍��W
-		//	�P�ʂ́A�w�_�C���O�����G���e�B�e�B���W�n�x
+		//	『ダイヤグラムエンティティ列車線』の起点と終点の座標
+		//	単位は、『ダイヤグラムエンティティ座標系』
 
 		posRessyasen_Pos1_Dcd = m_pCDcdDiagram->DgrToDcd(
 			m_pIfDcdTarget,
@@ -602,11 +602,11 @@ void CRessyaDraw::RessyajouhouDraw(
 			posDgrPosRessyasenSyuuten);
 	}
 	//posRessyasen_Pos1_Dcd,posRessyasen_Pos2_Dcd = 
-	//	�w�_�C���O�����G���e�B�e�B��Ԑ��x�̋N�_�ƏI�_�̍��W
-	//	�P�ʂ́A IfDcdTarget �̍��W
+	//	『ダイヤグラムエンティティ列車線』の起点と終点の座標
+	//	単位は、 IfDcdTarget の座標
 
 	// --------------------------------
-	//	��ԏ��̕`�悳���w�̗�Ԑ���ł̈ʒu���Z�o
+	//	列車情報の描画される駅の列車線上での位置を算出
 	// --------------------------------
 	int iX_Dcd = 0;
 	int iY_Dcd = 0;
@@ -618,17 +618,17 @@ void CRessyaDraw::RessyajouhouDraw(
 			return;
 		}
 		iX_Dgr += iShiftSecond;
-		//iX_Dgr,iY_Dgr = ��ԏ���\������w�̔������̍��W
-		//	�P�ʂ́A�w�_�C���O�����G���e�B�e�B���W�n�x
+		//iX_Dgr,iY_Dgr = 列車情報を表示する駅の発時刻の座標
+		//	単位は、『ダイヤグラムエンティティ座標系』
 
 		iX_Dcd = XDgrToDcd(iX_Dgr);
 		iY_Dcd = YDgrToDcd(iEkiOrder, pCentDedDgrRessya->getRessyahoukou(), false);
 	}
-	//iX_Dcd,iY_Dcd = ��ԏ���\������w�̔������̍��W
-	//	�P�ʂ́A IfDcdTarget �̍��W�n
+	//iX_Dcd,iY_Dcd = 列車情報を表示する駅の発時刻の座標
+	//	単位は、 IfDcdTarget の座標系
 
 	// --------------------------------
-	//	�e�L�X�g�̈ʒu�Ɗp�x���v�Z
+	//	テキストの位置と角度を計算
 	// --------------------------------
 	CdDcdPosXy	posText_Dcd;
 	int iDeg = 0;
@@ -661,26 +661,26 @@ void CRessyaDraw::RessyajouhouDraw(
 			iDeg = 90 - c;
 		}
 	}
-	//posText_Dcd = �e�L�X�g�̍�����W
-	//iDeg = �e�L�X�g�̊p�x�i�P�ʂ͓x�j
+	//posText_Dcd = テキストの左上座標
+	//iDeg = テキストの角度（単位は度）
 
 #pragma omp critical
 	{
 	// --------------------------------
-	//	�e�L�X�g�̕`��
+	//	テキストの描画
 	// --------------------------------
 		
-		//	�t�H���g�̑���
-		//	�p�x�w���ǉ����܂��B
+		//	フォントの属性
+		//	角度指定を追加します。
 		CdFontProp	aCdFontProp = m_pCDcdDiagram->getDiaRessyaFont();
 		aCdFontProp.setEscapement(iDeg * 10);
 
-		//	�t�H���g�̐���
+		//	フォントの生成
 		Ou<CGdiHFontHolder>	pHFontHolder = m_pIfDcdTarget->createGdiHFontHolder(
 			aCdFontProp);
 
 		// --------------------------------
-		//	�t�H���g�E�F�E�w�i���[�h�̑I��
+		//	フォント・色・背景モードの選択
 		HFONT	hFontPrev = NULL;
 		hFontPrev = (HFONT)SelectObject(m_pIfDcdTarget->getHdc(),
 			pHFontHolder->getHFont());
@@ -697,7 +697,7 @@ void CRessyaDraw::RessyajouhouDraw(
 			strRessyajouhou.c_str(), strRessyajouhou.size());
 
 		// --------------------------------
-		//	�t�H���g�E�F�E�w�i���[�h�̑I��������
+		//	フォント・色・背景モードの選択を解除
 
 		{
 			SetBkMode(m_pIfDcdTarget->getHdc(), iBkModePrev);
@@ -708,7 +708,7 @@ void CRessyaDraw::RessyajouhouDraw(
 			hFontPrev = NULL;
 		}
 		// --------------------------------
-		//	�t�H���g��j��
+		//	フォントを破棄
 		if (pHFontHolder != NULL)
 		{
 			pHFontHolder = Ou<CGdiHFontHolder>();
@@ -729,16 +729,16 @@ void CRessyaDraw::StopMarkDraw(
 	if (m_pCDcdDiagram->getStopMarkDraw() !=
 		CDcdDiagram::EStopMarkDraw_DrawOnBriefStop)
 	{
-		//	���݂̃��[�h�ł́A��ԃ}�[�N�̕`����s���܂���B
+		//	現在のモードでは、停車マークの描画を行いません。
 		return;
 	}
 	if (iEkiOrder == pCentDedDgrRessyasen->getRessyasenSyuutenEkiOrder())
 	{
-		//	��Ԑ��I�_�ɂ́A�e�L�X�g�̕`����s���܂���
+		//	列車線終点には、テキストの描画を行いません
 		return;
 	}
 	// --------------------------------
-	//	���̗�Ԏ�ʂŕ`����s�����ۂ��𔻒�
+	//	この列車種別で描画を行うか否かを判定
 	// --------------------------------
 	CentDedRessyasyubetsu::EStopMarkDrawType	eStopMarkDrawType =
 		CentDedRessyasyubetsu::EStopMarkDrawType_DrawOnStop;
@@ -757,11 +757,11 @@ void CRessyaDraw::StopMarkDraw(
 			eStopMarkDrawType = pCentDedDgrRessyasyubetsu->getStopMarkDrawType();
 		}
 	}
-	//eStopMarkDrawType = ��ԉw�`�惂�[�h
+	//eStopMarkDrawType = 停車駅描画モード
 
 
 	// --------------------------------
-	//	��ԃ}�[�N��`�悷��ʒu���Z�o
+	//	停車マークを描画する位置を算出
 	// --------------------------------
 	int iX_Dcd = 0;
 	int iY_Dcd = 0;
@@ -773,17 +773,17 @@ void CRessyaDraw::StopMarkDraw(
 			return;
 		}
 		iX_Dgr += iShiftSecond;
-		//iX_Dgr,iY_Dgr = ��ԏ���\������w�̔������̍��W
-		//	�P�ʂ́A�w�_�C���O�����G���e�B�e�B���W�n�x
+		//iX_Dgr,iY_Dgr = 列車情報を表示する駅の発時刻の座標
+		//	単位は、『ダイヤグラムエンティティ座標系』
 
 		iX_Dcd = XDgrToDcd(iX_Dgr);
 		iY_Dcd = YDgrToDcd(iEkiOrder, pCentDedDgrRessya->getRessyahoukou(), false);
 	}
-	//iX_Dcd,iY_Dcd = ��ԏ���\������w�̔������̍��W
-	//	�P�ʂ́A IfDcdTarget �̍��W�n
+	//iX_Dcd,iY_Dcd = 列車情報を表示する駅の発時刻の座標
+	//	単位は、 IfDcdTarget の座標系
 
 	// --------------------------------
-	//	��Ԏ��Ԃ��Z�o
+	//	停車時間を算出
 	// --------------------------------
 	int iStopSeconds = 0;
 	{
@@ -796,9 +796,9 @@ void CRessyaDraw::StopMarkDraw(
 	}
 
 	// --------------------------------
-	//	���w���n���w�ł��I���w�ł��Ȃ�
-	//	��Ԏ�ʂ���ԉw�𖾎� AND ���w���Z���Ԓ��(60�b����)
-	//	�ł���΁A��ԃ}�[�N��`��
+	//	当駅が始発駅でも終着駅でもない
+	//	列車種別が停車駅を明示 AND 当駅が短時間停車(60秒未満)
+	//	であれば、停車マークを描画
 	// --------------------------------
 	if (pCentDedDgrRessya->getSihatsuEki() < iEkiOrder &&
 		iEkiOrder < pCentDedDgrRessya->getSyuuchakuEki() &&
@@ -809,7 +809,7 @@ void CRessyaDraw::StopMarkDraw(
 		iStopSeconds < 60)
 	{
 		// --------------------------------
-		//	��ԃ}�[�N�̕`��(��)
+		//	停車マークの描画(○)
 		// --------------------------------
 #pragma omp critical
 		{
@@ -827,7 +827,7 @@ void CRessyaDraw::StopMarkDraw(
 				iX_Dcd + 3,
 				iY_Dcd + 3);
 			// --------------------------------
-			//	GDI�I�u�W�F�N�g�̑I��������
+			//	GDIオブジェクトの選択を解除
 			if (hPenPrev != NULL)
 			{
 				SelectObject(m_pIfDcdTarget->getHdc(), hPenPrev);
@@ -846,9 +846,9 @@ void CRessyaDraw::RessyaTrackLineDraw(
 	const CentDedDgrRessya* pCentDedDgrRessya,
 	const int& iShiftSecond)
 {
-	//	�ΏۂƂȂ�`��̈���A
-	//	�w�_�C���O�����G���e�B�e�B���W�n�x�ŕێ����܂��B
-	//	����́A����`����s���͈͂�\���Ă��܂��B
+	//	対象となる描画領域を、
+	//	『ダイヤグラムエンティティ座標系』で保持します。
+	//	これは、今回描画を行う範囲を表しています。
 	CdDcdZoneXy	zonexyDgrZone = m_zonexyDgrZone;
 
 	const Mu<const CentDedDgrRessyaTrackLine*>* pMuCentDedDgrRessyaTrackLine =
@@ -867,15 +867,15 @@ void CRessyaDraw::RessyaTrackLineDraw(
 			pCentDedDgrRessyaTrackLine->getZaisenCount()>0)
 		{
 			/**
-				�e�Ԑ��ւ̍ݐ������������ł��B
-				�O��Ԑڑ�����o�擙���܂ށA�S�Ẳ����������ŕ`�ʂ��܂�
-				�܂��A��Ԏ��Ԃ��Z���E�ʉ߂̏ꍇ�́A���~����`�ʂ��܂�
+				各番線への在線を示す横線です。
+				前列車接続や入出区等を含む、全ての横線をここで描写します
+				また、停車時間が短い・通過の場合の、○×印も描写します
 			*/
 			for (int idxz = 0; idxz < pCentDedDgrRessyaTrackLine->getZaisenCount(); idxz++)
 			{
-				//�ݐ��̉�������`�ʂ��܂�
+				//在線の横太線を描写します
 				// --------------------------------
-				//	�ݐ����̍��W�����߂܂�
+				//	在線線の座標を求めます
 				// --------------------------------
 				Zaisen aZaisen = pCentDedDgrRessyaTrackLine->getZaisen(idxz);
 
@@ -892,8 +892,8 @@ void CRessyaDraw::RessyaTrackLineDraw(
 
 				if (zonexDgrPosOnDgrZone(posxDgrKiten, posxDgrSyuuten))
 				{
-					//iX_Dcd,iY_Dcd = ��ԏ���\������w�̔������̍��W
-					//	�P�ʂ́A IfDcdTarget �̍��W�n
+					//iX_Dcd,iY_Dcd = 列車情報を表示する駅の発時刻の座標
+					//	単位は、 IfDcdTarget の座標系
 					int iX_Left_Dcd = XDgrToDcd(posxDgrKiten);
 					int iX_Right_Dcd = XDgrToDcd(posxDgrSyuuten);
 					int iY_Dcd = YEkiTrackDgrToDcd(
@@ -901,7 +901,7 @@ void CRessyaDraw::RessyaTrackLineDraw(
 						pCentDedDgrRessyaTrackLine->getEkiOrder(),
 						aZaisen.iRessyaTrack);
 					/**
-						iY_Dcd < 0 �̏ꍇ�́A���Y�Ԑ�����\���Ȃ̂ŁA���̉����͔�\���ł��B
+						iY_Dcd < 0 の場合は、当該番線が非表示なので、この横線は非表示です。
 					*/
 					int iChamferLeft = 0;
 					int iChamferRight = 0;
@@ -966,7 +966,7 @@ void CRessyaDraw::RessyaTrackLineDraw(
 							iChamferRight = 0;
 						}
 						/**
-							����Ԃ����݂���ꍇ�A����Ԑڑ���Ƃ��s���Ԑ��̉����́A����ԂɈϔC����̂ŁA�����ł͕`�ʂ��܂���B
+							次列車が存在する場合、次列車接続作業を行う番線の横線は、次列車に委任するので、ここでは描写しません。
 						*/
 						else if (pCentDedDgrRessyaTrackLine->getHatsuOperation() == 5)
 						{
@@ -1071,7 +1071,7 @@ void CRessyaDraw::RessyaTrackLineDraw(
 									iX_Right_Dcd + 4,
 									iY_Dcd + 4);
 								// --------------------------------
-								//	GDI�I�u�W�F�N�g�̑I��������
+								//	GDIオブジェクトの選択を解除
 								if (hPenPrev != NULL)
 								{
 									SelectObject(m_pIfDcdTarget->getHdc(), hPenPrev);
@@ -1133,7 +1133,7 @@ void CRessyaDraw::RessyaTrackLineDraw(
 									iY_Dcd - 4);
 
 								// --------------------------------
-								//	GDI�I�u�W�F�N�g�̑I��������
+								//	GDIオブジェクトの選択を解除
 								if (hPenPrev != NULL)
 								{
 									SelectObject(m_pIfDcdTarget->getHdc(), hPenPrev);
@@ -1152,13 +1152,13 @@ void CRessyaDraw::RessyaTrackLineDraw(
 			}
 
 			/**
-				������Ƃ��܂ޏꍇ�́A�Ԑ��Ԉړ��̏c���ł��B
+				入換作業を含む場合の、番線間移動の縦線です。
 			*/
 			for (int idxz = 1; idxz < pCentDedDgrRessyaTrackLine->getZaisenCount(); idxz++)
 			{
-				//������Ƃ̏c����`�ʂ��܂�
+				//入換作業の縦線を描写します
 				// --------------------------------
-				//	�Ԑ������͂ދ�`�̈�����߂�
+				//	番線線を囲む矩形領域を求める
 				// --------------------------------
 				Zaisen aZaisenPrev = pCentDedDgrRessyaTrackLine->getZaisen(idxz - 1);
 				Zaisen aZaisen = pCentDedDgrRessyaTrackLine->getZaisen(idxz);
@@ -1172,9 +1172,9 @@ void CRessyaDraw::RessyaTrackLineDraw(
 					CdDcdPosXy	posDcdRessyaTrackKiten;
 					CdDcdPosXy	posDcdRessyaTrackSyuuten;
 					/**
-						�Ԑ�����\���̏ꍇ�́A�\���`�����ς��܂��B
-						������\���̏ꍇ�͏c�����̂���\���A�Е���\���̏ꍇ�́A�Ԑ��Ԃ̊Ԋu*0.5����"������"�c����\�����܂��B
-						(�����������Ɠ������������قȂ�A�����΂߂ɂȂ�ꍇ���A�����ɂ���)
+						番線が非表示の場合は、表示形式が変わります。
+						両方非表示の場合は縦線自体が非表示、片方非表示の場合は、番線間の間隔*0.5だけ"垂直の"縦線を表示します。
+						(入換発時刻と入換着時刻が異なり、線が斜めになる場合も、垂直にする)
 					*/
 					if (getEkiTrackExsit(pCentDedDgrRessya->getRessyahoukou(),
 						pCentDedDgrRessyaTrackLine->getEkiOrder(),
@@ -1248,19 +1248,19 @@ void CRessyaDraw::RessyaTrackLineDraw(
 			}
 			
 			/**
-				���w�ɓ���������Ԃ́A�������ŏ��̔Ԑ��̏c������сA�⏕��Ԑ��ł��B
+				当駅に到着した列車の、到着→最初の番線の縦線および、補助列車線です。
 			*/
 			if (pCentDedDgrRessyaTrackLine->getChakuOperation() < 0)
 			{
 				// --------------------------------
-				//	�Ԑ������͂ދ�`�̈�����߂�
+				//	番線線を囲む矩形領域を求める
 				// --------------------------------
 				Zaisen aZaisen = pCentDedDgrRessyaTrackLine->getZaisen(0);
 
 				DcdPos posxDgrKiten = aZaisen.iDgrXPosChaku + iShiftSecond;
 
 				/**
-					�����Ԑ�����\���̏ꍇ�́A�c���͕\������܂���B�܂��⏕��Ԑ����\������܂���B
+					到着番線が非表示の場合は、縦線は表示されません。また補助列車線も表示されません。
 				*/
 				if (zonexDgrPosOnDgrZone(posxDgrKiten, posxDgrKiten) && 
 					getEkiTrackExsit(pCentDedDgrRessya->getRessyahoukou(),
@@ -1298,8 +1298,8 @@ void CRessyaDraw::RessyaTrackLineDraw(
 						posDcdRessyaTrackSyuuten,
 						pCentDedDgrRessya);
 
-					//ChakuOperation��-2�̏ꍇ�́A��Ԃ̒����ɕ⏕��Ԑ���`�ʂ��܂�(�ʏ�)
-					//ChakuOperation��-4�̏ꍇ�́A��Ԃ̔����ɕ⏕��Ԑ���`�ʂ��܂�(���])
+					//ChakuOperationが-2の場合は、列車の着側に補助列車線を描写します(通常)
+					//ChakuOperationが-4の場合は、列車の発側に補助列車線を描写します(反転)
 					if (pCentDedDgrRessyaTrackLine->getChakuOperation() == -2 ||
 						pCentDedDgrRessyaTrackLine->getChakuOperation() == -4)
 					{
@@ -1331,18 +1331,18 @@ void CRessyaDraw::RessyaTrackLineDraw(
 			}
 
 			/**
-				�o��̊ۈ󂨂�щ^�p�ԍ��̕`�ʂł��B
+				出区の丸印および運用番号の描写です。
 			*/
 			if (pCentDedDgrRessyaTrackLine->getChakuOperation() == 3)
 			{
 				// --------------------------------
-				//	�o��}�[�N��`�悷��ʒu���Z�o
+				//	出区マークを描画する位置を算出
 				// --------------------------------
 
 				Zaisen aZaisen = pCentDedDgrRessyaTrackLine->getZaisen(0);
 
 				/**
-					�o��Ԑ�����\���̏ꍇ�́A����͕\������܂���B
+					出区番線が非表示の場合は、○印は表示されません。
 				*/
 				if (getEkiTrackExsit(pCentDedDgrRessya->getRessyahoukou(),
 						pCentDedDgrRessyaTrackLine->getEkiOrder(),
@@ -1446,7 +1446,7 @@ void CRessyaDraw::RessyaTrackLineDraw(
 								iY_DcdDown);
 
 							// --------------------------------
-							//	GDI�I�u�W�F�N�g�̑I��������
+							//	GDIオブジェクトの選択を解除
 							if (hPenPrev != NULL)
 							{
 								SelectObject(m_pIfDcdTarget->getHdc(), hPenPrev);
@@ -1479,14 +1479,14 @@ void CRessyaDraw::RessyaTrackLineDraw(
 			}
 
 			/**
-				�H���O�n���ɂ�����΂ߐ�����щw���E�^�p�ԍ��̕`��
+				路線外始発における斜め線および駅名・運用番号の描写
 			*/
 			if (pCentDedDgrRessyaTrackLine->getChakuOperation() == 4)
 			{
 				Zaisen aZaisen = pCentDedDgrRessyaTrackLine->getZaisen(0);
 
 				/**
-					�����Ԑ�����\���̏ꍇ�́A�H���O�n���͕\������܂���B
+					到着番線が非表示の場合は、路線外始発は表示されません。
 				*/
 				if (getEkiTrackExsit(pCentDedDgrRessya->getRessyahoukou(),
 					pCentDedDgrRessyaTrackLine->getEkiOrder(),
@@ -1576,16 +1576,16 @@ void CRessyaDraw::RessyaTrackLineDraw(
 			}
 
 			/**
-				������Ƃɂ�����A���܂��́���̕`�ʂł��B
+				解結作業における、△または▽印の描写です。
 			*/
 			if (pCentDedDgrRessyaTrackLine->getChakuOperation() == 2)
 			{
 				// --------------------------------
-				//	�����}�[�N��`�悷��ʒu���Z�o
+				//	解結マークを描画する位置を算出
 				// --------------------------------
 				Zaisen aZaisen = pCentDedDgrRessyaTrackLine->getZaisen(0);
 				/**
-					�����Ԑ�����\���̏ꍇ�́A����͕\������܂���B
+					解結番線が非表示の場合は、○印は表示されません。
 				*/
 				if (getEkiTrackExsit(pCentDedDgrRessya->getRessyahoukou(),
 					pCentDedDgrRessyaTrackLine->getEkiOrder(),
@@ -1597,8 +1597,8 @@ void CRessyaDraw::RessyaTrackLineDraw(
 
 					if (zonexDgrPosOnDgrZone(posxDgrKiten, posxDgrKiten))
 					{
-						//iX_Dcd,iY_Dcd = ��ԏ���\������w�̔������̍��W
-						//	�P�ʂ́A IfDcdTarget �̍��W�n
+						//iX_Dcd,iY_Dcd = 列車情報を表示する駅の発時刻の座標
+						//	単位は、 IfDcdTarget の座標系
 						// --------------------------------
 						int iY_DcdUp = YEkiTrackDgrToDcd(
 							pCentDedDgrRessya->getRessyahoukou(),
@@ -1663,7 +1663,7 @@ void CRessyaDraw::RessyaTrackLineDraw(
 								pointTriangle,
 								3);
 							// --------------------------------
-							//	GDI�I�u�W�F�N�g�̑I��������
+							//	GDIオブジェクトの選択を解除
 							if (hPenPrev != NULL)
 							{
 								SelectObject(m_pIfDcdTarget->getHdc(), hPenPrev);
@@ -1680,19 +1680,19 @@ void CRessyaDraw::RessyaTrackLineDraw(
 			}
 
 			/**
-				���w���o�������Ԃ́A�Ō�̔Ԑ����o���̏c������сA�⏕��Ԑ��ł��B
+				当駅を出発する列車の、最後の番線→出発の縦線および、補助列車線です。
 			*/
 			if (pCentDedDgrRessyaTrackLine->getHatsuOperation() < 0)
 			{
 				// --------------------------------
-				//	�Ԑ������͂ދ�`�̈�����߂�
+				//	番線線を囲む矩形領域を求める
 				// --------------------------------
 				Zaisen aZaisen = pCentDedDgrRessyaTrackLine->getZaisen(INT_MAX);
 
 				DcdPos posxDgrKiten = aZaisen.iDgrXPosHatsu + iShiftSecond;
 
 				/**
-					�o���Ԑ�����\���̏ꍇ�́A�c���͕\������܂���B�܂��⏕��Ԑ����\������܂���B
+					出発番線が非表示の場合は、縦線は表示されません。また補助列車線も表示されません。
 				*/
 				if (zonexDgrPosOnDgrZone(posxDgrKiten, posxDgrKiten) &&
 					getEkiTrackExsit(pCentDedDgrRessya->getRessyahoukou(),
@@ -1729,8 +1729,8 @@ void CRessyaDraw::RessyaTrackLineDraw(
 						posDcdRessyaTrackSyuuten,
 						pCentDedDgrRessya);
 
-					//HatsuOperation��-2�̏ꍇ�́A��Ԃ̔����ɕ⏕��Ԑ���`�ʂ��܂�(�ʏ�)
-					//HatsuOperation��-4�̏ꍇ�́A��Ԃ̒����ɕ⏕��Ԑ���`�ʂ��܂�(���])
+					//HatsuOperationが-2の場合は、列車の発側に補助列車線を描写します(通常)
+					//HatsuOperationが-4の場合は、列車の着側に補助列車線を描写します(反転)
 					if (pCentDedDgrRessyaTrackLine->getHatsuOperation() == -2 ||
 						pCentDedDgrRessyaTrackLine->getHatsuOperation() == -4)
 					{
@@ -1761,17 +1761,17 @@ void CRessyaDraw::RessyaTrackLineDraw(
 				}
 			}
 			/**
-				�����Ƃɂ�����A���܂��́���̕`�ʂł��B
+				入区作業における、△または▽印の描写です。
 			*/
 			if (pCentDedDgrRessyaTrackLine->getHatsuOperation() == 3)
 			{
 				// --------------------------------
-				//	����}�[�N��`�悷��ʒu���Z�o
+				//	入区マークを描画する位置を算出
 				// --------------------------------
 				Zaisen aZaisen = pCentDedDgrRessyaTrackLine->getZaisen(INT_MAX);
 
 				/**
-					����Ԑ�����\���̏ꍇ�́A����͕\������܂���B
+					入区番線が非表示の場合は、△印は表示されません。
 				*/
 				if (getEkiTrackExsit(pCentDedDgrRessya->getRessyahoukou(),
 					pCentDedDgrRessyaTrackLine->getEkiOrder(),
@@ -1823,8 +1823,8 @@ void CRessyaDraw::RessyaTrackLineDraw(
 					DcdPos posxDgrKiten = aZaisen.iDgrXPosHatsu + iShiftSecond;
 					if (zonexDgrPosOnDgrZone(posxDgrKiten, posxDgrKiten))
 					{
-						//iX_Dcd,iY_Dcd = ��ԏ���\������w�̔������̍��W
-						//	�P�ʂ́A IfDcdTarget �̍��W�n
+						//iX_Dcd,iY_Dcd = 列車情報を表示する駅の発時刻の座標
+						//	単位は、 IfDcdTarget の座標系
 						// --------------------------------
 						int iY_DcdUp = YEkiTrackDgrToDcd(
 							pCentDedDgrRessya->getRessyahoukou(),
@@ -1888,7 +1888,7 @@ void CRessyaDraw::RessyaTrackLineDraw(
 								pointTriangle,
 								3);
 							// --------------------------------
-							//	GDI�I�u�W�F�N�g�̑I��������
+							//	GDIオブジェクトの選択を解除
 							if (hPenPrev != NULL)
 							{
 								SelectObject(m_pIfDcdTarget->getHdc(), hPenPrev);
@@ -1916,15 +1916,15 @@ void CRessyaDraw::RessyaTrackLineDraw(
 			}
 
 			/**
-				�H���O�I���ɂ�����΂ߐ��̕`�ʂ���сA�w���E�^�Ԃ̕`�ʂł�
+				路線外終着における斜め線の描写および、駅名・運番の描写です
 			*/
 			if (pCentDedDgrRessyaTrackLine->getHatsuOperation() == 4)
 			{
-				//�H���O�I���ɂ�����΂ߐ��̕`��
+				//路線外終着における斜め線の描写
 				Zaisen aZaisen = pCentDedDgrRessyaTrackLine->getZaisen(INT_MAX);
 
 				/**
-					�o���Ԑ�����\���̏ꍇ�́A�H���O�I���͕\������܂���B
+					出発番線が非表示の場合は、路線外終着は表示されません。
 				*/
 				if (getEkiTrackExsit(pCentDedDgrRessya->getRessyahoukou(),
 					pCentDedDgrRessyaTrackLine->getEkiOrder(),
@@ -2012,17 +2012,17 @@ void CRessyaDraw::RessyaTrackLineDraw(
 			}
 
 			/**
-				�����̊ۈ�̕`�ʂł��B
+				増結の丸印の描写です。
 			*/
 			if (pCentDedDgrRessyaTrackLine->getHatsuOperation() == 1)
 			{
 				// --------------------------------
-				//	�����}�[�N��`�悷��ʒu���Z�o
+				//	増結マークを描画する位置を算出
 				// --------------------------------
 
 				Zaisen aZaisen = pCentDedDgrRessyaTrackLine->getZaisen(INT_MAX);
 				/**
-					�����Ԑ�����\���̏ꍇ�́A����͕\������܂���B
+					増結番線が非表示の場合は、○印は表示されません。
 				*/
 				if (getEkiTrackExsit(pCentDedDgrRessya->getRessyahoukou(),
 					pCentDedDgrRessyaTrackLine->getEkiOrder(),
@@ -2087,7 +2087,7 @@ void CRessyaDraw::RessyaTrackLineDraw(
 								iY_DcdDown);
 
 							// --------------------------------
-							//	GDI�I�u�W�F�N�g�̑I��������
+							//	GDIオブジェクトの選択を解除
 							if (hPenPrev != NULL)
 							{
 								SelectObject(m_pIfDcdTarget->getHdc(), hPenPrev);
@@ -2107,10 +2107,10 @@ void CRessyaDraw::RessyaTrackLineDraw(
 //================================================================================================================
 //================================================================================================================
 		else if(!pCentDedDgrRessyaTrackLine->getIsTrackDisplay() &&
-			pCentDedDgrRessyaTrackLine->getZaisenCount() > 0)//��������ݐ��\�\���Ȃ��w�̏ꍇ�B
+			pCentDedDgrRessyaTrackLine->getZaisenCount() > 0)//ここから在線表表示なし駅の場合。
 		{
 			/**
-				���w�ɓ���������Ԃ̕⏕��Ԑ��ł��B
+				当駅に到着した列車の補助列車線です。
 			*/
 			if (pCentDedDgrRessyaTrackLine->getChakuOperation() == -2)
 			{
@@ -2177,7 +2177,7 @@ void CRessyaDraw::RessyaTrackLineDraw(
 			}
 
 			/**
-				���w���o�������Ԃ̕⏕��Ԑ��ł��B
+				当駅を出発する列車の補助列車線です。
 			*/
 			if (pCentDedDgrRessyaTrackLine->getHatsuOperation() == -2)
 			{
@@ -2243,12 +2243,12 @@ void CRessyaDraw::RessyaTrackLineDraw(
 			}
 
 			/**
-				�O��Ԑڑ�������ꍇ�́A�O��Ԃ܂ł̉~�ʂ�`�ʂ��܂�
+				前列車接続がある場合の、前列車までの円弧を描写します
 			*/
 			if (pCentDedDgrRessyaTrackLine->getChakuOperation() == 5)
 			{
 				// --------------------------------
-				//	�ݐ����̍��W�����߂܂�
+				//	在線線の座標を求めます
 				// --------------------------------
 				{
 					Zaisen aZaisen = pCentDedDgrRessyaTrackLine->getZaisen(0);
@@ -2286,12 +2286,12 @@ void CRessyaDraw::RessyaTrackLineDraw(
 			}
 
 			/**
-				�o��̊ۈ󂨂�щ^�p�ԍ��̕`�ʂł��B
+				出区の丸印および運用番号の描写です。
 			*/
 			if (pCentDedDgrRessyaTrackLine->getChakuOperation() == 3)
 			{
 				// --------------------------------
-				//	�o��}�[�N��`�悷��ʒu���Z�o
+				//	出区マークを描画する位置を算出
 				// --------------------------------
 
 				Zaisen aZaisen = pCentDedDgrRessyaTrackLine->getZaisen(0);
@@ -2372,7 +2372,7 @@ void CRessyaDraw::RessyaTrackLineDraw(
 							iY_DcdDown);
 
 						// --------------------------------
-						//	GDI�I�u�W�F�N�g�̑I��������
+						//	GDIオブジェクトの選択を解除
 						if (hPenPrev != NULL)
 						{
 							SelectObject(m_pIfDcdTarget->getHdc(), hPenPrev);
@@ -2404,7 +2404,7 @@ void CRessyaDraw::RessyaTrackLineDraw(
 			}
 
 			/**
-				�H���O�n���ɂ�����΂ߐ�����щw���E�^�p�ԍ��̕`��
+				路線外始発における斜め線および駅名・運用番号の描写
 			*/
 			if (pCentDedDgrRessyaTrackLine->getChakuOperation() == 4)
 			{
@@ -2506,12 +2506,12 @@ void CRessyaDraw::RessyaTrackLineDraw(
 			}
 
 			/**
-				������Ƃɂ�����A���܂��́���̕`�ʂł��B
+				解結作業における、△または▽印の描写です。
 			*/
 			if (pCentDedDgrRessyaTrackLine->getChakuOperation() == 2)
 			{
 				// --------------------------------
-				//	�����}�[�N��`�悷��ʒu���Z�o
+				//	解結マークを描画する位置を算出
 				// --------------------------------
 				Zaisen aZaisen = pCentDedDgrRessyaTrackLine->getZaisen(0);
 				CdDcdPosXy	posTriangle_Dcd[3];
@@ -2519,8 +2519,8 @@ void CRessyaDraw::RessyaTrackLineDraw(
 
 				if (zonexDgrPosOnDgrZone(posxDgrKiten, posxDgrKiten))
 				{
-					//iX_Dcd,iY_Dcd = ��ԏ���\������w�̔������̍��W
-					//	�P�ʂ́A IfDcdTarget �̍��W�n
+					//iX_Dcd,iY_Dcd = 列車情報を表示する駅の発時刻の座標
+					//	単位は、 IfDcdTarget の座標系
 					// --------------------------------
 					int iY_DcdUp = YDgrToDcd(
 							pCentDedDgrRessyaTrackLine->getEkiOrder(),
@@ -2586,7 +2586,7 @@ void CRessyaDraw::RessyaTrackLineDraw(
 							pointTriangle,
 							3);
 						// --------------------------------
-						//	GDI�I�u�W�F�N�g�̑I��������
+						//	GDIオブジェクトの選択を解除
 						if (hPenPrev != NULL)
 						{
 							SelectObject(m_pIfDcdTarget->getHdc(), hPenPrev);
@@ -2601,20 +2601,20 @@ void CRessyaDraw::RessyaTrackLineDraw(
 				}
 			}
 			/**
-				�����Ƃɂ�����A���܂��́���̕`�ʂł��B
+				入区作業における、△または▽印の描写です。
 			*/
 			if (pCentDedDgrRessyaTrackLine->getHatsuOperation() == 3)
 			{
 				// --------------------------------
-				//	����}�[�N��`�悷��ʒu���Z�o
+				//	入区マークを描画する位置を算出
 				// --------------------------------
 				Zaisen aZaisen = pCentDedDgrRessyaTrackLine->getZaisen(INT_MAX);
 				CdDcdPosXy	posTriangle_Dcd[3];
 				DcdPos posxDgrKiten = aZaisen.iDgrXPosHatsu + iShiftSecond;
 				if (zonexDgrPosOnDgrZone(posxDgrKiten, posxDgrKiten))
 				{
-					//iX_Dcd,iY_Dcd = ��ԏ���\������w�̔������̍��W
-					//	�P�ʂ́A IfDcdTarget �̍��W�n
+					//iX_Dcd,iY_Dcd = 列車情報を表示する駅の発時刻の座標
+					//	単位は、 IfDcdTarget の座標系
 					// --------------------------------
 					int iY_DcdUp = 0;
 					int iY_DcdDown = 0;
@@ -2698,7 +2698,7 @@ void CRessyaDraw::RessyaTrackLineDraw(
 							pointTriangle,
 							3);
 						// --------------------------------
-						//	GDI�I�u�W�F�N�g�̑I��������
+						//	GDIオブジェクトの選択を解除
 						if (hPenPrev != NULL)
 						{
 							SelectObject(m_pIfDcdTarget->getHdc(), hPenPrev);
@@ -2731,7 +2731,7 @@ void CRessyaDraw::RessyaTrackLineDraw(
 			}
 
 			/**
-				�H���O�I���ɂ�����΂ߐ��̕`�ʂ���сA�w���E�^�Ԃ̕`�ʂł�
+				路線外終着における斜め線の描写および、駅名・運番の描写です
 			*/
 			if (pCentDedDgrRessyaTrackLine->getHatsuOperation() == 4)
 			{
@@ -2834,12 +2834,12 @@ void CRessyaDraw::RessyaTrackLineDraw(
 			}
 
 			/**
-				�����̊ۈ�̕`�ʂł��B
+				増結の丸印の描写です。
 			*/
 			if (pCentDedDgrRessyaTrackLine->getHatsuOperation() == 1)
 			{
 				// --------------------------------
-				//	�����}�[�N��`�悷��ʒu���Z�o
+				//	増結マークを描画する位置を算出
 				// --------------------------------
 
 				Zaisen aZaisen = pCentDedDgrRessyaTrackLine->getZaisen(INT_MAX);
@@ -2900,7 +2900,7 @@ void CRessyaDraw::RessyaTrackLineDraw(
 							iY_DcdDown);
 
 						// --------------------------------
-						//	GDI�I�u�W�F�N�g�̑I��������
+						//	GDIオブジェクトの選択を解除
 						if (hPenPrev != NULL)
 						{
 							SelectObject(m_pIfDcdTarget->getHdc(), hPenPrev);
@@ -2937,14 +2937,14 @@ bool CRessyaDraw::zonexyDgrRessyasenOnDgrZone(
 		{
 			if (zoneDgrX.getSize() == 0)
 			{
-				//	�n�_�ƏI�_��X���W������̏ꍇ(������)�́A��O�I�ɕ���1�Ƃ��܂�
-				//	(0�Ƃ��Ă��܂��ƁA�����`�悳��܂���)
+				//	始点と終点のX座標が同一の場合(垂直線)は、例外的に幅を1とします
+				//	(0としてしまうと、線が描画されません)
 				zoneDgrX.setSize(1);
 			}
 			if (zoneDgrY.getSize() == 0)
 			{
-				//	�n�_�ƏI�_��Y���W������̏ꍇ(������)�́A��O�I�ɕ���1�Ƃ��܂�
-				//	(0�Ƃ��Ă��܂��ƁA�����`�悳��܂���)
+				//	始点と終点のY座標が同一の場合(水平線)は、例外的に幅を1とします
+				//	(0としてしまうと、線が描画されません)
 				zoneDgrY.setSize(1);
 			}
 		}
@@ -2954,8 +2954,8 @@ bool CRessyaDraw::zonexyDgrRessyasenOnDgrZone(
 	}
 	CdDcdZoneXy	zonexyDgrRessyaTrackOnDgrZone = m_zonexyDgrZone.CrossZone(zonexyDgrRessyaTrack);
 	//zonexyDgrRessyasenOnDgrZone
-	//	��Ԑ��ƕ`��̈�́A�����̈�
-	//	���̒l�̃T�C�Y��0�Ȃ�A���̗�Ԑ��͕`��\�ȗ̈�ɂ͂���܂���B
+	//	列車線と描画領域の、交差領域
+	//	この値のサイズが0なら、この列車線は描画可能な領域にはありません。
 
 	if (zonexyDgrRessyaTrackOnDgrZone.getX().getSize() > 0 &&
 		zonexyDgrRessyaTrackOnDgrZone.getY().getSize() > 0)
@@ -2998,7 +2998,7 @@ void CRessyaDraw::RessyaTrackVerticalLineDraw(
 	int iYShiftSyuuten)
 {
 	// --------------------------------
-	//	�����̌`�������
+	//	直線の形状を決定
 	// --------------------------------
 	CdDcdFreeLineProp	aCdLineProp;
 	{
@@ -3021,7 +3021,7 @@ void CRessyaDraw::RessyaTrackVerticalLineDraw(
 	}
 
 	// --------------------------------
-	//	�����̕`��ʒu������
+	//	直線の描画位置を決定
 	// --------------------------------
 	CDcdFreeLine	aCDcdFreeLine(aCdLineProp);
 	//CdDcdPosXy posKitenDcd = m_pCDcdDiagram->DgrToDcd(
@@ -3067,7 +3067,7 @@ void CRessyaDraw::RessyaTrackHorizontalLineDraw(
 	int iYChamferRight)
 {
 	// --------------------------------
-	//	�����̌`�������
+	//	直線の形状を決定
 	// --------------------------------
 	CdDcdFreeLineProp	aCdLineProp;
 	{
@@ -3115,7 +3115,7 @@ void CRessyaDraw::RessyaTrackHorizontalLineDraw(
 			}
 			else
 			{
-				//����A�����A�E���A�E��̏��Őݒ肵�܂�
+				//左上、左下、右下、右上の順で設定します
 				CdDcdPosXy	posQuadrilateral_Dcd[4];
 				if (iYChamferLeft == 0)
 				{
@@ -3180,7 +3180,7 @@ void CRessyaDraw::RessyaTrackHorizontalLineDraw(
 
 			}
 			// --------------------------------
-			//	GDI�I�u�W�F�N�g�̑I��������
+			//	GDIオブジェクトの選択を解除
 			if (hPenPrev != NULL)
 			{
 				SelectObject(m_pIfDcdTarget->getHdc(), hPenPrev);
@@ -3255,18 +3255,18 @@ void CRessyaDraw::OperationNumberDraw(
 #pragma omp critical
 	{
 		// --------------------------------
-		//	�e�L�X�g�̕`��
+		//	テキストの描画
 		// --------------------------------
 
-		//	�t�H���g�̑���
+		//	フォントの属性
 		CdFontProp	aCdFontProp = m_pCDcdDiagram->getDiaRessyaFont();
 
-		//	�t�H���g�̐���
+		//	フォントの生成
 		Ou<CGdiHFontHolder>	pHFontHolder = m_pIfDcdTarget->createGdiHFontHolder(
 			aCdFontProp);
 
 		// --------------------------------
-		//	�t�H���g�E�F�E�w�i���[�h�̑I��
+		//	フォント・色・背景モードの選択
 		HFONT	hFontPrev = NULL;
 		hFontPrev = (HFONT)SelectObject(m_pIfDcdTarget->getHdc(),
 			pHFontHolder->getHFont());
@@ -3284,7 +3284,7 @@ void CRessyaDraw::OperationNumberDraw(
 			strOperationNumber.c_str(), strOperationNumber.size());
 
 		// --------------------------------
-		//	�t�H���g�E�F�E�w�i���[�h�̑I��������
+		//	フォント・色・背景モードの選択を解除
 
 		{
 			SetBkMode(m_pIfDcdTarget->getHdc(), iBkModePrev);
@@ -3295,7 +3295,7 @@ void CRessyaDraw::OperationNumberDraw(
 			hFontPrev = NULL;
 		}
 		// --------------------------------
-		//	�t�H���g��j��
+		//	フォントを破棄
 		if (pHFontHolder != NULL)
 		{
 			pHFontHolder = Ou<CGdiHFontHolder>();
@@ -3374,7 +3374,7 @@ void CRessyaDraw::ConnectNextNoDisplayDraw(
 				pointBezier,
 				4);
 			// --------------------------------
-			//	GDI�I�u�W�F�N�g�̑I��������
+			//	GDIオブジェクトの選択を解除
 			if (hPenPrev != NULL)
 			{
 				SelectObject(m_pIfDcdTarget->getHdc(), hPenPrev);
@@ -3476,7 +3476,7 @@ void CRessyaDraw::ConnectNextNoDisplayDraw(
 				pointBezier,
 				4);
 			// --------------------------------
-			//	GDI�I�u�W�F�N�g�̑I��������
+			//	GDIオブジェクトの選択を解除
 			if (hPenPrev != NULL)
 			{
 				SelectObject(m_pIfDcdTarget->getHdc(), hPenPrev);
@@ -3582,18 +3582,18 @@ void CRessyaDraw::OuterEkimeiAndOperationNumberDraw(
 #pragma omp critical
 	{
 		// --------------------------------
-		//	�e�L�X�g�̕`��
+		//	テキストの描画
 		// --------------------------------
 
-		//	�t�H���g�̑���
+		//	フォントの属性
 		CdFontProp	aCdFontProp = m_pCDcdDiagram->getDiaRessyaFont();
 
-		//	�t�H���g�̐���
+		//	フォントの生成
 		Ou<CGdiHFontHolder>	pHFontHolder = m_pIfDcdTarget->createGdiHFontHolder(
 			aCdFontProp);
 
 		// --------------------------------
-		//	�t�H���g�E�F�E�w�i���[�h�̑I��
+		//	フォント・色・背景モードの選択
 		HFONT	hFontPrev = NULL;
 		hFontPrev = (HFONT)SelectObject(m_pIfDcdTarget->getHdc(),
 			pHFontHolder->getHFont());
@@ -3611,7 +3611,7 @@ void CRessyaDraw::OuterEkimeiAndOperationNumberDraw(
 			strOuterEkimeiAndOperationNumber.c_str(), strOuterEkimeiAndOperationNumber.size());
 
 		// --------------------------------
-		//	�t�H���g�E�F�E�w�i���[�h�̑I��������
+		//	フォント・色・背景モードの選択を解除
 
 		{
 			SetBkMode(m_pIfDcdTarget->getHdc(), iBkModePrev);
@@ -3622,7 +3622,7 @@ void CRessyaDraw::OuterEkimeiAndOperationNumberDraw(
 			hFontPrev = NULL;
 		}
 		// --------------------------------
-		//	�t�H���g��j��
+		//	フォントを破棄
 		if (pHFontHolder != NULL)
 		{
 			pHFontHolder = Ou<CGdiHFontHolder>();

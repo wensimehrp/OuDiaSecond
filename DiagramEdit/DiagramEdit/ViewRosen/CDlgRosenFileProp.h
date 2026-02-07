@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��:
+(訳:
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h��
+  加えて、特別な例外として、take-okm はこのプログラムのコードを
   "MFC(Microsoft Foundation Class library) Version 9.0"
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 #if !defined(AFX_CDLGROSENFILEPROP_H__A77A598D_541C_4EF8_B8EA_587920B81B1E__INCLUDED_)
 #define AFX_CDLGROSENFILEPROP_H__A77A598D_541C_4EF8_B8EA_587920B81B1E__INCLUDED_
@@ -75,12 +75,12 @@ Copyright (C) 2006-2017 take-okm
 #if _MSC_VER > 1000
 #pragma once
 #endif // _MSC_VER > 1000
-// CDlgRosenFileProp.h : �w�b�_�[ �t�@�C��
+// CDlgRosenFileProp.h : ヘッダー ファイル
 //
 
 #include <string>
 
-#include "..\DedRosenFileData\CdDedDispProp.h"
+#include "..¥DedRosenFileData¥CdDedDispProp.h"
 #include "CDlgRosenFileProp_Rosen.h"
 #include "CDlgRosenFileProp_FontColor.h"
 #include "CDlgRosenFileProp_Jikokuhyou.h"
@@ -89,16 +89,16 @@ Copyright (C) 2006-2017 take-okm
 namespace ViewRosen {
 
 	/////////////////////////////////////////////////////////////////////////////
-	// CDlgRosenFileProp �_�C�A���O
+	// CDlgRosenFileProp ダイアログ
 
 	/**
 	@brief
-		�w�H���t�@�C���̃v���p�e�B�x�_�C�A���O�B
+		『路線ファイルのプロパティ』ダイアログ。
 
-		  �_�C�A���O��OK�{�^���ŏI�������Ƃ��́A getPropEditorData() �ŁA
-		 m_PropEditorData �ɃA�N�Z�X���A���͌��ʂ��擾���Ă��������B
-		  this�́A�_�C�A���O��OK�{�^���I�������Ƃ��A�_�C�A���O�ւ̓��͌��ʂ�
-		 m_PropEditorData �I�u�W�F�N�g�Ɋi�[���܂��B
+		  ダイアログがOKボタンで終了したときは、 getPropEditorData() で、
+		 m_PropEditorData にアクセスし、入力結果を取得してください。
+		  thisは、ダイアログがOKボタン終了したとき、ダイアログへの入力結果を
+		 m_PropEditorData オブジェクトに格納します。
 	 */
 	class CDlgRosenFileProp : public CDialog
 	{
@@ -108,259 +108,259 @@ namespace ViewRosen {
 		// ****************************************************************
 		/**
 		@brief
-			�w�H���t�@�C���̃v���p�e�B�x�_�C�A���O�́A
-			�ҏW�Ώۃf�[�^��ێ�����N���X�ł��B
+			『路線ファイルのプロパティ』ダイアログの、
+			編集対象データを保持するクラスです。
 
-			�ҏW�Ώۃf�[�^�́A���̃_�C�A���O�ŕҏW�\�ȃf�[�^�̃R�s�[�ł��B
+			編集対象データは、このダイアログで編集可能なデータのコピーです。
 
-			���̃N���X�́A�ȉ��̐Ӗ��������܂��B
+			このクラスは、以下の責務を持ちます。
 
-			-	CDedRosenFileData�E�������͂��̈ꕔ����A�ҏW�Ώۃf�[�^�𐶐�
-			-	�ҏW�Ώۃf�[�^����AUI�\���f�[�^�𐶐�
-			-	UI�\���f�[�^�����ƂɁA�ҏW�Ώۃf�[�^���X�V
-			-	�ҏW�Ώۃf�[�^���ACRosenFileData�E�������͂��̈ꕔ�ɓK�p���܂��B
-			-	�ҏW�Ώۃf�[�^����A CEditCmd_ �I�u�W�F�N�g�𐶐�����B
+			-	CDedRosenFileData・もしくはその一部から、編集対象データを生成
+			-	編集対象データから、UI表示データを生成
+			-	UI表示データをもとに、編集対象データを更新
+			-	編集対象データを、CRosenFileData・もしくはその一部に適用します。
+			-	編集対象データから、 CEditCmd_ オブジェクトを生成する。
 
-			�_�C�A���O�{�b�N�X�́A�N�����ɁA�����\����UI�\���f�[�^���A
-			���̃I�u�W�F�N�g����擾���܂��B
-			�܂��AOK�{�^���ŏI�������Ƃ��ɁA
-			���͌��ʂ�UI�\���f�[�^���A���̃I�u�W�F�N�g�Ɋi�[���܂��B
+			ダイアログボックスは、起動時に、初期表示のUI表示データを、
+			このオブジェクトから取得します。
+			また、OKボタンで終了されるときに、
+			入力結果のUI表示データを、このオブジェクトに格納します。
 		*/
 		class CPropEditorData
 		{
 		private:
 			// ********************************
-			///@name	����
+			///@name	属性
 			// ********************************
 			///@{
 			/**
-				�H�����B
+				路線名。
 			 */
 			tstring	m_strRosenName;
 
 			/**
-				�_�C���̋N�_�����ł��B
+				ダイヤの起点時刻です。
 			*/
 			CdDedJikoku	m_jikokuKitenJikoku;
 
 			/**
-				�_�C���O�����̊���̉w�ԕ��B
+				ダイヤグラムの既定の駅間幅。
 
-				��Ԑݒ�̂Ȃ��w�Ԃ́A�_�C���O�����r���[��ł�
-				�c�����̕����w�_�C���O�����G���e�B�e�BY���W�x�P��(�b)�Ŏw�肵�܂��B
+				列車設定のない駅間の、ダイヤグラムビュー上での
+				縦方向の幅を『ダイヤグラムエンティティY座標』単位(秒)で指定します。
 
-				����l�� 60 �ł��B
+				既定値は 60 です。
 			*/
 			int	m_iDiagramDgrYZahyouKyoriDefault;
 
 			/**
-				�^�p�@�\�̗L������
-				0:�^�p�@�\�͖����ł�
-				1:�^�p�@�\�͊��S���[�h�ł�
-				2:�^�p�@�\�͌y�ʃ��[�h�ł�
-				�K��l��0�ł�
+				運用機能の有効無効
+				0:運用機能は無効です
+				1:運用機能は完全モードです
+				2:運用機能は軽量モードです
+				規定値は0です
 			*/
 			int m_iEnableOperation;
 
 
 			/**
-				DiagramEdit �̕\���Ɋ֌W����v���p�e�B��ێ�����
-				�P���f�[�^�N���X�ł��B
+				DiagramEdit の表示に関係するプロパティを保持する
+				単純データクラスです。
 			*/
 			CdDedDispProp	m_CdDedDispProp;
 			/**
-				����_�C���ʖ��B
+				下りダイヤ別名。
 			*/
 			tstring	m_strKudariDiaAlias;
 			/**
-				���_�C���ʖ��B
+				上りダイヤ別名。
 			*/
 			tstring	m_strNoboriDiaAlias;
 
 			/**
-				�܂�Ԃ����ɉ^�p�ԍ��𔽓]�����邩�ۂ�
-				���̒l��true�̎��A�^�p�T���ŉ���̏��̐ڑ����s����ƁA
-				�^�p�ԍ��̕��т𔽓]�����܂��B
-				(��)�܂�Ԃ��O�� "01A","21B"�̏ꍇ�A
-				�܂�Ԃ����"21B","01A"�ɂȂ�܂�
+				折り返し時に運用番号を反転させるか否か
+				この値がtrueの時、運用探索で下り⇔上りの接続が行われると、
+				運用番号の並びを反転させます。
+				(例)折り返し前が "01A","21B"の場合、
+				折り返し後は"21B","01A"になります
 			*/
 			bool m_bOperationNumberReverse;
 
 			/**
-				�^�p�ڑ����ɋN�_�������ׂ����ۂ�
-				�K��l��true�ł��B
+				運用接続時に起点時刻を跨ぐか否か
+				規定値はtrueです。
 			*/
 			bool m_bOperationCrossKitenJikoku;
 
 			/**
-				��^�]�������擾����_�C����Index�ł��B
-				�K��l��0�ł��B
+				基準運転時分を取得するダイヤのIndexです。
+				規定値は0です。
 			*/
 			int m_iKijunDiaIndex;
 
 			/**
-				�B����ʂ��J�X�^�}�C�Y�����\�E�w�����\�ŕ\�����邩�ۂ�
-				�K��l��true�ł��B
+				隠し種別をカスタマイズ時刻表・駅時刻表で表示するか否か
+				規定値はtrueです。
 			*/
 			bool m_bDisableHiddenSyubetsu;
 
 			///@}
 		public:
 			// ********************************
-			//	�R���X�g���N�^
+			//	コンストラクタ
 			// ********************************
 			/**
 			 @param pCDedRosenFileData [in]
-				�w�H���t�@�C���x�̃f�[�^
+				『路線ファイル』のデータ
 			 */
 			CPropEditorData(const CDedRosenFileData* pCDedRosenFileData);
 
 		public:
 			// ********************************
-			///@name UI�\���f�[�^���擾�E�ݒ�
+			///@name UI表示データを取得・設定
 			// ********************************
 			///@{
 			/**
 			@return
-				�H������UI�\���f�[�^
+				路線名のUI表示データ
 			 */
 			tstring	getUIRosenName()const;
 			/**
 			@param value [in]
-				�H������UI�\���f�[�^
+				路線名のUI表示データ
 			 */
 			void setUIRosenName(const tstring& value);
 
 			/**
 			@return
-				�_�C���̋N�_������UI�\���f�[�^
+				ダイヤの起点時刻のUI表示データ
 			*/
 			CdDedJikoku	getUIKitenJikoku()const;
 			/**
 			@param value [in]
-				�_�C���̋N�_������UI�\���f�[�^
+				ダイヤの起点時刻のUI表示データ
 			*/
 			void setUIKitenJikoku(const CdDedJikoku& value);
 
 			/**
 			@return
-				�_�C���O�����̊���̉w�ԕ��BUI�\���f�[�^�B
+				ダイヤグラムの既定の駅間幅。UI表示データ。
 			*/
 			int	getUIDiagramDgrYZahyouKyoriDefault()const;
 
 			/**
 			@param value [in]
-				�_�C���O�����̊���̉w�ԕ��BUI�\���f�[�^�B
+				ダイヤグラムの既定の駅間幅。UI表示データ。
 			*/
 			void setUIDiagramDgrYZahyouKyoriDefault(int value);
 
 			/**
 			@return
-				�^�p�@�\�̗L�������BUI�\���f�[�^�B
+				運用機能の有効無効。UI表示データ。
 			*/
 			int getUIEnableOperation()const;
 
 			/**
 			@param value [in]
-				�^�p�@�\�̗L�������BUI�\���f�[�^�B
+				運用機能の有効無効。UI表示データ。
 			*/
 			void setUIEnableOperation(int value);
 
 
 			/**
 			@return
-				DiagramEdit �̕\�������BUI�\���f�[�^�B
+				DiagramEdit の表示属性。UI表示データ。
 			*/
 			CdDedDispProp	getUIDispProp()const;
 			/**
 			@return
-				DiagramEdit �̕\�������BUI�\���f�[�^�B
+				DiagramEdit の表示属性。UI表示データ。
 			*/
 			void setUIDispProp(CdDedDispProp& value);
 			/**
 			@return
-			�H������UI�\���f�[�^
+			路線名のUI表示データ
 			*/
 			tstring	getUIKudariDiaAlias()const;
 			/**
 			@param value [in]
-			�H������UI�\���f�[�^
+			路線名のUI表示データ
 			*/
 			void setUIKudariDiaAlias(const tstring& value);
 			/**
 			@return
-			�H������UI�\���f�[�^
+			路線名のUI表示データ
 			*/
 			tstring	getUINoboriDiaAlias()const;
 			/**
 			@param value [in]
-			�H������UI�\���f�[�^
+			路線名のUI表示データ
 			*/
 			void setUINoboriDiaAlias(const tstring& value);
 
 			/**
 			@return
-				�܂�Ԃ����ɉ^�p�ԍ��𔽓]�����邩�ۂ��BUI�\���f�[�^�B
+				折り返し時に運用番号を反転させるか否か。UI表示データ。
 			*/
 			bool getUIOperationNumberReverse()const;
 
 			/**
 			@param value [in]
-				�܂�Ԃ����ɉ^�p�ԍ��𔽓]�����邩�ۂ��BUI�\���f�[�^�B
+				折り返し時に運用番号を反転させるか否か。UI表示データ。
 			*/
 			void setUIOperationNumberReverse(bool value);
 
 			/**
 			@return
-				�^�p�ڑ����ɋN�_�������ׂ����ۂ��BUI�\���f�[�^�B
+				運用接続時に起点時刻を跨ぐか否か。UI表示データ。
 			*/
 			bool getUIOperationCrossKitenJikoku()const;
 
 			/**
 			@param value [in]
-				�^�p�ڑ����ɋN�_�������ׂ����ۂ��BUI�\���f�[�^�B
+				運用接続時に起点時刻を跨ぐか否か。UI表示データ。
 			*/
 			void setUIOperationCrossKitenJikoku(bool value);
 
 			/**
 			@return
-				��^�]�������擾����_�C����Index�BUI�\���f�[�^�B
+				基準運転時分を取得するダイヤのIndex。UI表示データ。
 			*/
 			int getUIKijunDiaIndex()const;
 
 			/**
 			@param value [in]
-				��^�]�������擾����_�C����Index�BUI�\���f�[�^�B
+				基準運転時分を取得するダイヤのIndex。UI表示データ。
 			*/
 			void setUIKijunDiaIndex(int value);
 
 			/**
 			@return
-				�B����ʂ��J�X�^�}�C�Y�����\�E�w�����\�ŕ\�����邩�ۂ��BUI�\���f�[�^�B
+				隠し種別をカスタマイズ時刻表・駅時刻表で表示するか否か。UI表示データ。
 			*/
 			bool getUIDisableHiddenSyubetsu()const;
 
 			/**
 			@param value [in]
-				�B����ʂ��J�X�^�}�C�Y�����\�E�w�����\�ŕ\�����邩�ۂ��BUI�\���f�[�^�B
+				隠し種別をカスタマイズ時刻表・駅時刻表で表示するか否か。UI表示データ。
 			*/
 			void setUIDisableHiddenSyubetsu(bool value);
 
 		public:
 			// ********************************
-			///@name �ҏW�Ώۃf�[�^��K�p
+			///@name 編集対象データを適用
 			// ********************************
 			///@{
 			/**
-				�ҏW�Ώۃf�[�^���A�H���t�@�C���f�[�^�ɓK�p���܂��B
+				編集対象データを、路線ファイルデータに適用します。
 			@param pApplyTo [in]
-				�ҏW�Ώۃf�[�^�̓K�p����w�肵�Ă��������B
+				編集対象データの適用先を指定してください。
 			*/
 			void applyTo(CDedRosenFileData* pApplyTo);
 
 			/**
-				�ҏW�Ώۃf�[�^�����ƂɁA
-				�H���t�@�C���f�[�^�̍X�V�R�}���h�𐶐����܂��B
+				編集対象データをもとに、
+				路線ファイルデータの更新コマンドを生成します。
 			*/
 			Ou<CRfEditCmd> createEditCmd();
 			///@}
@@ -369,41 +369,41 @@ namespace ViewRosen {
 
 	private:
 		// ********************************
-		///@name	����
+		///@name	属性
 		// ********************************
 		///@{
 		///@}
 	private:
 		// ********************************
-		///@name	���
+		///@name	包含
 		// ********************************
 		///@{
 		/**
-			�ҏW�Ώۃf�[�^��ێ����܂��B
+			編集対象データを保持します。
 		*/
 		CPropEditorData	m_PropEditorData;
 
-		/** �w�H���x�y�[�W */
+		/** 『路線』ページ */
 		CDlgRosenFileProp_Rosen	m_CDlgRosenFileProp_Rosen;
 
-		/** �w�t�H���g�E�F�x�y�[�W */
+		/** 『フォント・色』ページ */
 		CDlgRosenFileProp_FontColor	m_CDlgRosenFileProp_FontColor;
 
-		/** �w�����\�x�y�[�W */
+		/** 『時刻表』ページ */
 		CDlgRosenFileProp_Jikokuhyou	m_CDlgRosenFileProp_Jikokuhyou;
 
-		/** �w�_�C���O�����x�y�[�W */
+		/** 『ダイヤグラム』ページ */
 		CDlgRosenFileProp_Diagram	m_CDlgRosenFileProp_Diagram;
 		///@}
 
 		// --------------------------------
-		///@name	CDlgRosenFileProp-�����֐�
+		///@name	CDlgRosenFileProp-下請関数
 		// --------------------------------
 		///@{
 		/**
-			�^�u�R���g���[���̑���ɏ]���āA
-			�q�_�C�A���O�̕\���E��\����Ԃ�
-			�X�V���܂��B
+			タブコントロールの操作に従って、
+			子ダイアログの表示・非表示状態を
+			更新します。
 		*/
 		void CDlgRosenFileProp::UpdateChildWindowShow();
 		///@}
@@ -412,51 +412,51 @@ namespace ViewRosen {
 	// ********************************
 	public:
 		// ********************************
-		///@name	CDlgRosenFileProp-����
+		///@name	CDlgRosenFileProp-属性
 		// ********************************
 		///@{
 		///@}
 		// ********************************
-		///@name	CDlgRosenFileProp-���
+		///@name	CDlgRosenFileProp-包含
 		// ********************************
 		///@{
 		/**
-			�ҏW�Ώۃf�[�^��ێ����܂��B
+			編集対象データを保持します。
 		*/
 		CPropEditorData* getPropEditorData();
 		///@}
 
 	// ----------------------------------------------------------------
-	// �R���X�g���N�V����
+	// コンストラクション
 	public:
 		/**
 		 @param pCDedRosenFileData [in]
-			�w�H���t�@�C���x�̃f�[�^
+			『路線ファイル』のデータ
 		 @param pParent [in]
-			�e�E�C���h�E���w�肵�Ă��������B
+			親ウインドウを指定してください。
 		 */
 		CDlgRosenFileProp(
 			const CDedRosenFileData*	pCDedRosenFileData,
-			CWnd* pParent = NULL);   // �W���̃R���X�g���N�^
+			CWnd* pParent = NULL);   // 標準のコンストラクタ
 
-	// �_�C�A���O �f�[�^
+	// ダイアログ データ
 		//{{AFX_DATA(CDlgRosenFileProp)
 		enum { IDD = IDD_RosenFileProp };
 		CTabCtrl	m_tabMAIN;
 		//}}AFX_DATA
 
 
-	// �I�[�o�[���C�h
-		// ClassWizard �͉��z�֐��̃I�[�o�[���C�h�𐶐����܂��B
+	// オーバーライド
+		// ClassWizard は仮想関数のオーバーライドを生成します。
 		//{{AFX_VIRTUAL(CDlgRosenFileProp)
 	protected:
-		virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV �T�|�[�g
+		virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV サポート
 		//}}AFX_VIRTUAL
 
-	// �C���v�������e�[�V����
+	// インプリメンテーション
 	protected:
 
-		// �������ꂽ���b�Z�[�W �}�b�v�֐�
+		// 生成されたメッセージ マップ関数
 		//{{AFX_MSG(CDlgRosenFileProp)
 		virtual BOOL OnInitDialog();
 		virtual void OnOK();
@@ -466,7 +466,7 @@ namespace ViewRosen {
 	};
 
 	//{{AFX_INSERT_LOCATION}}
-	// Microsoft Visual C++ �͑O�s�̒��O�ɒǉ��̐錾��}�����܂��B
+	// Microsoft Visual C++ は前行の直前に追加の宣言を挿入します。
 
 } //namespace ViewRosen
 

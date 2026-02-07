@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -80,15 +80,15 @@ namespace Str {
 // ****************************************************************
 /**
  * @brief
- *  m_contiOrderIdx ���Am_pcontItem->strName �̎������Ƀ\�[�g����
- *	�q��ł��B
+ *  m_contiOrderIdx を、m_pcontItem->strName の辞書順にソートする
+ *	述語です。
  *
- *	���̃N���X�́A CdConnectedString2::m_contiOrderIdx ��
- *	�\�[�g����ۂɁA std::sort() �ɓn���֐��I�u�W�F�N�g�ł��B
+ *	このクラスは、 CdConnectedString2::m_contiOrderIdx を
+ *	ソートする際に、 std::sort() に渡す関数オブジェクトです。
  */
 class OrderIdxSort
 {
-	/**	�A�C�e����ێ�����R���e�i�ւ̃����N�ł��B */
+	/**	アイテムを保持するコンテナへのリンクです。 */
 	const CdConnectedString2::CdItemCont*	m_pcontItem ;
  public:
 	OrderIdxSort( const CdConnectedString2::CdItemCont* pcontItem ) 
@@ -122,12 +122,12 @@ CdConnectedString2::CdConnectedString2( const tstring& ev ,
 	decode( ev ) ;
 };
 
-CdConnectedString2::~CdConnectedString2()
+CdConnectedString2::‾CdConnectedString2()
 {
 } 
 
 // ********************************
-//@name	�R���e�i����
+//@name	コンテナ操作
 // ********************************
 int CdConnectedString2::size()const
 {
@@ -145,11 +145,11 @@ int CdConnectedString2::insert( const CdItem& ev , int idx )
 			idx = size() ;
 		}
 		if ( !( 0 <= idx && idx <= size() ) ){
-			return -1 ;	//	�C���f�N�X���͈͊O�ł��B
+			return -1 ;	//	インデクスが範囲外です。
 		}
 		m_contItem.insert( m_contItem.begin() + idx , ev ) ;
 
-		//	�R���e�i�̓��e��ύX�����ꍇ�́A�C���f�N�X���j�����܂��B
+		//	コンテナの内容を変更した場合は、インデクスも破棄します。
 		m_contiOrderIdx.resize( 0 ) ;
 
 		return ( 0 ) ; 
@@ -161,11 +161,11 @@ int CdConnectedString2::erase( int idx )
 			idx = size() - 1 ;
 		}
 		if ( !( 0 <= idx && idx < size() ) ){
-			return -1 ;	//	�C���f�N�X���͈͊O�ł��B
+			return -1 ;	//	インデクスが範囲外です。
 		}
 		m_contItem.erase( m_contItem.begin() + idx ) ;
 
-		//	�R���e�i�̓��e��ύX�����ꍇ�́A�C���f�N�X���j�����܂��B
+		//	コンテナの内容を変更した場合は、インデクスも破棄します。
 		m_contiOrderIdx.resize( 0 ) ;
 
 		return ( 0 ) ; 
@@ -181,7 +181,7 @@ int CdConnectedString2::modify(  const CdItem& ev , int idx )
 		}
 		m_contItem[idx] = ev ;
 
-		//	�R���e�i�̓��e��ύX�����ꍇ�́A�C���f�N�X���j�����܂��B
+		//	コンテナの内容を変更した場合は、インデクスも破棄します。
 		m_contiOrderIdx.resize( 0 ) ;
 
 		return ( 0 ) ; 
@@ -192,7 +192,7 @@ int CdConnectedString2::find( tstring strName )const
 {
 	/*oldcode
 	// ----------------------------------------------------------------	
-	//	���ʂ̃V�[�P���V�����T�[�`
+	//	普通のシーケンシャルサーチ
 	// ----------------------------------------------------------------	
 		int idx ;
 		for ( idx = 0 ; idx < size() && m_contItem[idx].getName() != strName 
@@ -203,11 +203,11 @@ int CdConnectedString2::find( tstring strName )const
 		return ( idx ) ;
 	*/
 	// ----------------------------------------------------------------	
-	//	�������\�[�g�����C���f�N�X m_contiOrderIdx ���g����
-	//	�Q������
+	//	辞書順ソートしたインデクス m_contiOrderIdx を使った
+	//	２分検索
 	// ----------------------------------------------------------------	
 	// --------------------------------
-	//	�C���f�N�X���쐬
+	//	インデクスを作成
 	// --------------------------------
 	if ( m_contiOrderIdx.size() == 0 && m_contItem.size() > 0 ){
 		m_contiOrderIdx.resize( m_contItem.size() ) ;
@@ -220,7 +220,7 @@ int CdConnectedString2::find( tstring strName )const
 			OrderIdxSort( &m_contItem ) ) ;
 	}
 	// --------------------------------
-	//	2������
+	//	2分検索
 	// --------------------------------
 	int iBegin = 0 ;
 	int iEnd = m_contiOrderIdx.size() - 1 ;
@@ -249,15 +249,15 @@ void CdConnectedString2::clear()
 {
 		m_contItem.clear() ;
 
-		//	�R���e�i�̓��e��ύX�����ꍇ�́A�C���f�N�X���j�����܂��B
+		//	コンテナの内容を変更した場合は、インデクスも破棄します。
 		m_contiOrderIdx.resize( 0 ) ;
 };
 	
 // ********************************
-//	CdConnectedString���L
+//	CdConnectedString特有
 // ********************************
 	// ********************************
-	//@name	����
+	//@name	操作
 	// ********************************
 tstring CdConnectedString2::getValue( tstring strName )const
 {
@@ -296,7 +296,7 @@ tstring CdConnectedString2::encode()const
 {
 	tstring	strRv ;
 	// --------------------------------
-	//	���ʕ�����̃T�C�Y���T�Z
+	//	結果文字列のサイズを概算
 	// --------------------------------
 	{
 		long	lSize = 0 ;
@@ -315,8 +315,8 @@ tstring CdConnectedString2::encode()const
 		for ( idx = 0 ; idx < (int)m_contItem.size() ; idx ++ ){
 			CdItem aCdItem = m_contItem[ idx ] ;
 			if ( aCdItem.getValue().empty() && !m_bEncodeNoValue ){
-				// - false ;	//	encode() �́A�w�l�x�̂Ȃ��w�A�C�e���x��
-				//			//	�o�͂��܂���B
+				// - false ;	//	encode() は、『値』のない『アイテム』を
+				//			//	出力しません。
 				continue ;
 			}
 
@@ -332,7 +332,7 @@ tstring CdConnectedString2::encode()const
 	}
 	return ( strRv ) ;
 		/*
-		//	string ��� ������̕����x���Ȃ�܂��B
+		//	string より こちらの方が遅くなります。
 		//
 		std::stringstream	sstrRv ;
 		int	idx ;
@@ -356,37 +356,37 @@ int CdConnectedString2::decode( const tstring&	strEv )
 		int iRv = 0 ;
 		clear() ;
 
-		//	�R���e�i�̓��e��ύX�����ꍇ�́A�C���f�N�X���j�����܂��B
+		//	コンテナの内容を変更した場合は、インデクスも破棄します。
 		m_contiOrderIdx.resize( 0 ) ;
 
 		tstring::size_type len = strEv.length() ;
 		tstring::size_type posItemBegin = 0 ;
 		while ( posItemBegin < len ){
 			// --------------------------------
-			//	CdItem�͈̔͂�����
+			//	CdItemの範囲を決定
 			// --------------------------------
 			tstring::size_type posSplit = 
 				strEv.find( m_chSplit , posItemBegin ) ;
 			if ( posSplit == tstring::npos ){
 				posSplit = len ;
 			}
-			//posSplit = ������̏I�[���A�A�C�e����؂蕶�����w���Ă��܂��B 
-			//posItemBegin�`posSplit = ����̃A�C�e��
+			//posSplit = 文字列の終端か、アイテム区切り文字を指しています。 
+			//posItemBegin〜posSplit = 今回のアイテム
 
 			if ( posItemBegin < posSplit ){
 		
 				tstring strItem = 
 					strEv.substr( posItemBegin , posSplit - posItemBegin ) ;
 				// --------------------------------
-				//	NAME��VALUE�ɕ������܂��B
+				//	NAMEとVALUEに分離します。
 				// --------------------------------
 				tstring::size_type posEqualChar = 
 					strItem.find( m_chEqualChar  ) ;
 				if ( posEqualChar == tstring::npos ){
 					posEqualChar = strItem.size() ;
 				}
-				//posEqualChar = strItem �� ������̏I�[���A
-				//	�A�C�e����؂蕶�����w���Ă��܂��B 
+				//posEqualChar = strItem の 文字列の終端か、
+				//	アイテム区切り文字を指しています。 
 
 				if ( posEqualChar == strItem.size() ){
 					m_contItem.push_back( CdItem( strItem ) ) ;
@@ -429,7 +429,7 @@ int CdConnectedString2::getSubitem( const tstring& strSubitemName ,
 
 	/*oldcode
 	// ----------------------------------------------------------------	
-	//	���ʂ̃V�[�P���V�����T�[�`
+	//	普通のシーケンシャルサーチ
 	// ----------------------------------------------------------------	
 	int idxItem ;
 	for ( idxItem = 0 ; idxItem < size() ; idxItem ++ ){
@@ -449,11 +449,11 @@ int CdConnectedString2::getSubitem( const tstring& strSubitemName ,
 	*/
 	// ----------------------------------------------------------------	
 	// ----------------------------------------------------------------	
-	//	�������\�[�g�����C���f�N�X m_contiOrderIdx ���g����
-	//	�Q������
+	//	辞書順ソートしたインデクス m_contiOrderIdx を使った
+	//	２分検索
 	// ----------------------------------------------------------------	
 	// --------------------------------
-	//	�C���f�N�X���쐬
+	//	インデクスを作成
 	// --------------------------------
 	if ( m_contiOrderIdx.size() == 0 && m_contItem.size() > 0 ){
 		m_contiOrderIdx.resize( m_contItem.size() ) ;
@@ -467,13 +467,13 @@ int CdConnectedString2::getSubitem( const tstring& strSubitemName ,
 	}
 
 	// --------------------------------
-	//	�i�������Łj�ŏ��̃T�u�A�C�e��������
+	//	（辞書順で）最初のサブアイテムを検索
 	// --------------------------------
 	int iOrderBegin = -1 ;
 	{
 		// --------------------------------
-		//	2�������ŁA
-		//	�ŏ��̃T�u�A�C�e���́A�������ł̏��ʂ������܂��B
+		//	2分検索で、
+		//	最初のサブアイテムの、辞書順での順位を見つけます。
 		// --------------------------------
 		{
 			int iBegin = 0 ;
@@ -513,13 +513,13 @@ int CdConnectedString2::getSubitem( const tstring& strSubitemName ,
 			}
 		}
 	}
-	//iOrderBegin = �ŏ��̃T�u�A�C�e���́A�������ł̏��ʁB
-	//	m_contItem[ m_contiOrderIdx[ iCenter ] ] ���A
-	//	�ŏ��̃T�u�A�C�e���ƂȂ�܂��B
-	//	�T�u�A�C�e����������Ȃ��ꍇ�́A -1 �ł��B
+	//iOrderBegin = 最初のサブアイテムの、辞書順での順位。
+	//	m_contItem[ m_contiOrderIdx[ iCenter ] ] が、
+	//	最初のサブアイテムとなります。
+	//	サブアイテムが見つからない場合は、 -1 です。
 	
 	// --------------------------------
-	//	�T�u�A�C�e�������ɑ}��
+	//	サブアイテムを順に挿入
 	// --------------------------------
 	if ( iOrderBegin >= 0 ){
 		int iOrder ;

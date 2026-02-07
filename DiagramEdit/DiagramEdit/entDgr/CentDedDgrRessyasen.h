@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -84,79 +84,79 @@ namespace entDgr{
 // ****************************************************************
 /**
 	@brief
-	�y�T�v�z
-	�w�_�C���O�����G���e�B�e�B�N���X�Q�x�́w��Ԑ��x�N���X�ł��B
-	�w�_�C���O�����x��ł́w��Ԑ��x�i�_�C���O������̗�Ԃ�\�������j
-	�P��\���܂��B
+	【概要】
+	『ダイヤグラムエンティティクラス群』の『列車線』クラスです。
+	『ダイヤグラム』上での『列車線』（ダイヤグラム上の列車を表す直線）
+	１つを表します。
 	
-	���̃N���X�́A�w��Ԑ��R���e�i�x (CentDedDgrRessyasenCont) ��
-	��܂���܂��B���d�x�́A
+	このクラスは、『列車線コンテナ』 (CentDedDgrRessyasenCont) に
+	包含されます。多重度は、
 	
-	�w��ԁx (CentDedDgrRessya):�w��Ԑ��R���e�i�xCentDedDgrRessyasenCont
+	『列車』 (CentDedDgrRessya):『列車線コンテナ』CentDedDgrRessyasenCont
 	=1:1
 
-	�w��Ԑ��R���e�i�xCentDedDgrRessyasenCont :�w��Ԑ��xCentDedDgrRessyasen 
-	=1:�i0�ȏ㕡���j
+	『列車線コンテナ』CentDedDgrRessyasenCont :『列車線』CentDedDgrRessyasen 
+	=1:（0以上複数）
 	
-	�ł��B
-	  �C���X�^���X���̓_�C���ɂ���ĈقȂ�܂��B�ʏ�w��Ԑ��x�͐܂����
-	�Ȃ�܂����A���̃N���X�͐܂���̊p����p�܂ł̒�����\���܂��B
+	です。
+	  インスタンス数はダイヤによって異なります。通常『列車線』は折れ線に
+	なりますが、このクラスは折れ線の角から角までの直線を表します。
 	
-�y�g�����z
+【使い方】
 	
-	  �����ł́A���̃N���X�̃I�u�W�F�N�g�𐶐�����̂́A
-	�w�_�C���O������ԁx(CentDedDgrRessya) �N���X�̃��\�b�h�ł��B
-	�N���X���[�U�[�͂��̃N���X�̃I�u�W�F�N�g�𒼐ڐ�������p����
-	����܂���B�w�_�C���O������ԁx(CentDedDgrRessya) �N���X�ɂ����
-	�������ꂽ�I�u�W�F�N�g�̑������Q�Ƃ��邾���ł��B
+	  原則では、このクラスのオブジェクトを生成するのは、
+	『ダイヤグラム列車』(CentDedDgrRessya) クラスのメソッドです。
+	クラスユーザーはこのクラスのオブジェクトを直接生成する用事は
+	ありません。『ダイヤグラム列車』(CentDedDgrRessya) クラスによって
+	生成されたオブジェクトの属性を参照するだけです。
 */
 class CentDedDgrRessyasen
 {
 private:
 	// ********************************
-	///@name ����
+	///@name 属性
 	// ********************************
 	///@{
 	/**
-		��Ԑ��N�_�wOrder�B
-		�w�wOrder�x�ŕ\���܂��B
+		列車線起点駅Order。
+		『駅Order』で表します。
 	
-		����l��-1�ł��B����́A�l�������ł��邱�Ƃ������܂��B
+		既定値は-1です。これは、値が無効であることを示します。
 	 */
 	int m_iRessyasenKitenEkiOrder ;
 	
 	
 	/**
-		��Ԑ��I�_�wOrder�B
-		�w�wOrder�x�ŕ\���܂��B
+		列車線終点駅Order。
+		『駅Order』で表します。
 	
-		����l��-1�ł��B����́A�l�������ł��邱�Ƃ������܂��B
+		既定値は-1です。これは、値が無効であることを示します。
 	 */
 	int m_iRessyasenSyuutenEkiOrder ;
 	
 	///@}
 public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	/**
 	 @param iRessyasenKitenEkiOrder [in]
-		��Ԑ��N�_�wOrder�B
-		�w�wOrder�x�ŕ\���܂��B
+		列車線起点駅Order。
+		『駅Order』で表します。
 	 @param iRessyasenSyuutenEkiOrder [in]
-		��Ԑ��I�_�wOrder�B
-		�w�wOrder�x�ŕ\���܂��B
+		列車線終点駅Order。
+		『駅Order』で表します。
 	*/
 	CentDedDgrRessyasen(
 		int iRessyasenKitenEkiOrder ,
 		int iRessyasenSyuutenEkiOrder ) ;
 	CentDedDgrRessyasen() ;
 
-	virtual ~CentDedDgrRessyasen() ;
+	virtual ‾CentDedDgrRessyasen() ;
 
 public:
 	// ********************************
-	///@name CentDedDgrRessyasen-����
+	///@name CentDedDgrRessyasen-属性
 	// ********************************
 	///@{
 	int getRessyasenKitenEkiOrder()const
@@ -168,14 +168,14 @@ public:
 	///@}
 public:
 	// ********************************
-	///@name CentDedDgrRessyasen-����
+	///@name CentDedDgrRessyasen-操作
 	// ********************************
 	///@{
 	/**
-		������ݒ肵�܂��B
+		属性を設定します。
 	@param iRessyasenSyuutenEkiOrder [in]
-		��Ԑ��I�_�wOrder�B
-		�w�wOrder�x�ŕ\���܂��B
+		列車線終点駅Order。
+		『駅Order』で表します。
 	*/
 	void setSyuuten(
 		int iRessyasenSyuutenEkiOrder ) ;

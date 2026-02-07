@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 // ****************************************************************
 // $Id: CdCrossingCheckYColSpec.h 
@@ -80,62 +80,62 @@ namespace ViewCrossingCheck { namespace CrossingCheckColSpec{
 
 /**
 @brief
-�@�����\�r���[�� CWndJikokuhyou �ɂ����āA�O���b�h��Y��ɕ\��
-  ���ׂ����e���L�q�����A�P���f�[�^�N���X�ł��B
+　時刻表ビューの CWndJikokuhyou において、グリッドのY列に表示
+  すべき内容を記述した、単純データクラスです。
 
-  ���̒l�� NULL ��Ԃ������܂��B
+  この値は NULL 状態を持ちます。
 */
 class CdCrossingCheckYColSpec
 {
 public:
 	// ********************************
-	//	�C���i�[�^�C�v
+	//	インナータイプ
 	// ********************************
-	/** Y��̎�� */
+	/** Y列の種類 */
 	enum class EColumnType
 	{
-		/**	�w�b�_�� */
+		/**	ヘッダ列 */
 		ColumnType_Head = 0,
-		/**	���[���� */
+		/**	ルール名 */
 		ColumnType_Caption,
-		/**	��ԑg */
+		/**	列車組 */
 		ColumnType_Ressya,
 
-		/**	NULL��Ԃ������܂� */
+		/**	NULL状態を示します */
 		ColumnType_NULL = -1 
 	};
 
 private:
 	// ********************************
-	///@name ����
+	///@name 属性
 	// ********************************
 	///@{
-	/** Y��̎�� */
+	/** Y列の種類 */
 	EColumnType	m_eColumnType ;
 
 	/** 
-		���[���̃C���f�N�X
+		ルールのインデクス
 	*/
 	int m_iRuleIndex;
 	/**
-		�e���[�����Ƃ̗�ԑg�C���f�N�X
+		各ルールごとの列車組インデクス
 	*/
 	int m_iRessyaIndex;
 	///@}
 
 public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 
 	/**
 	@param eColumnType 
-		Y��̎�� 
+		Y列の種類 
 	@param iHour 
-		���B
-		m_eColumnType �� ColumnType_RessyaSyubetsu,
-		ColumnType_Minute, ColumnType_Destination �̏ꍇ�ɂ̂ݗL���ł��B
-		���̑��̏ꍇ�͈Ӗ��������܂���B
+		時。
+		m_eColumnType が ColumnType_RessyaSyubetsu,
+		ColumnType_Minute, ColumnType_Destination の場合にのみ有効です。
+		その他の場合は意味を持ちません。
 	*/
 	CdCrossingCheckYColSpec(
 		EColumnType eColumnType , 
@@ -162,7 +162,7 @@ public:
 
 public:
 	// ********************************
-	///@name CdYColSpec-����
+	///@name CdYColSpec-属性
 	// ********************************
 	EColumnType	getColumnType()const{	return m_eColumnType ;};
 	int getRuleIndex()const { return m_iRuleIndex; };
@@ -171,9 +171,9 @@ public:
 
 
 	/**
-		�l��ݒ肵�܂��B
+		値を設定します。
 	@param eColumnType 
-		Y��̎�� 
+		Y列の種類 
 	@param iHour 
 	*/
 	void set( 
@@ -189,24 +189,24 @@ public:
 
 	bool isNull()const{	return m_eColumnType == EColumnType::ColumnType_NULL ;};
 	/* 
-		this ��NULL��Ԃɂ��܂��B
+		this をNULL状態にします。
 	*/
 	void setNull(){	*this = CdCrossingCheckYColSpec() ;};
 
 	/**
-		���̃I�u�W�F�N�g�Ƃ̊ԂŁA���������ꂩ�ۂ��𔻒肵�܂��B
+		他のオブジェクトとの間で、属性が同一か否かを判定します。
 	@param value
-		��r�Ώۂ��w�肵�Ă��������B
+		比較対象を指定してください。
 	@return
-		����������ł���� true 
+		属性が同一であれば true 
 	*/
 	bool isEqualTo( const CdCrossingCheckYColSpec& value )const
 	{
 		bool bRv = false ;
 		if ( m_eColumnType == value.m_eColumnType )
 		{
-			//	�񂪎�ʁ`�s����̏ꍇ��
-			//	������v���邱�Ƃ��m���߂܂��B
+			//	列が種別〜行き先の場合は
+			//	時も一致することを確かめます。
 			if ( m_eColumnType == EColumnType::ColumnType_Caption ||
 				m_eColumnType == EColumnType::ColumnType_Ressya)
 			{
@@ -221,16 +221,16 @@ public:
 					}
 					else
 					{
-						//	�񂪃��[�����Ȃ�A
-						//	��ԑg�C���f�N�X �͊֌W����܂���B
+						//	列がルール名なら、
+						//	列車組インデクス は関係ありません。
 						bRv = true;
 					}
 				}
 			}
 			else
 			{
-				//	�񂪃w�b�_�[�Ȃ�A
-				//	���[���C���f�N�X�E��ԑg�C���f�N�X �͊֌W����܂���B
+				//	列がヘッダーなら、
+				//	ルールインデクス・列車組インデクス は関係ありません。
 				bRv = true ;
 			}
 		}

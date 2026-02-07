@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 // ****************************************************************
 // $Id: CconvJikokuhyouCsv.h 
@@ -74,9 +74,9 @@ Copyright (C) 2006-2017 take-okm
 #ifndef  CconvJikokuhyouCsv_h
 #define  CconvJikokuhyouCsv_h
 /** @file */
-#include "..\DedRosenFileData\CDedRosenFileData.h"
-#include "Str\CsvDocument\CdCsvDocument.h"
-#include "..\ViewJikokuhyou\JikokuhyouColSpec\CdYColSpecCont.h"
+#include "..¥DedRosenFileData¥CDedRosenFileData.h"
+#include "Str¥CsvDocument¥CdCsvDocument.h"
+#include "..¥ViewJikokuhyou¥JikokuhyouColSpec¥CdYColSpecCont.h"
 
 namespace ConvJikokuhyouCsv{
 using namespace entDed ;
@@ -86,67 +86,67 @@ using ViewJikokuhyou::JikokuhyouColSpec::CdYColSpec;
 
 /**
 @brief
-	�����\�`��CSV�t�@�C���Ƃ̊Ԃ̃f�[�^�ϊ����s���܂��B
+	時刻表形式CSVファイルとの間のデータ変換を行います。
 
-	CentDedRosen�ƁA�����\�`����CSV�t�@�C���𐶐����܂��B
+	CentDedRosenと、時刻表形式のCSVファイルを生成します。
 
-	���΂ɁACentDedRosen�ɁA�����\�`����CSV�t�@�C���̓��e����荞��
-	���Ƃ��ł��܂��B
+	反対に、CentDedRosenに、時刻表形式のCSVファイルの内容を取り込む
+	こともできます。
 */
 class CconvJikokuhyouCsv
 {
 private:
-	/// CSV��̌Œ蕶����u����v
+	/// CSV上の固定文字列「下り」
 	tstring m_nameKudari ;
-	/// CSV��̌Œ蕶����u���v
+	/// CSV上の固定文字列「上り」
 	tstring m_nameNobori ;
-	/// CSV��̌Œ蕶����u��Ԕԍ��v
+	/// CSV上の固定文字列「列車番号」
 	tstring m_nameRessyabangou ;
-	/// CSV��̌Œ蕶����u��Ԏ�ʁv
+	/// CSV上の固定文字列「列車種別」
 	tstring m_nameRessyasyubetsu ;
-	/// CSV��̌Œ蕶����u��Ԗ��v
+	/// CSV上の固定文字列「列車名」
 	tstring m_nameRessyamei ;
-	/// CSV��̌Œ蕶����u�����v
+	/// CSV上の固定文字列「号数」
 	tstring m_nameGousuu ;
-	/// CSV��̌Œ蕶����u���v
+	/// CSV上の固定文字列「号」
 	tstring m_nameGou ;
-	/// CSV��̌Œ蕶����u���l�v
+	/// CSV上の固定文字列「備考」
 	tstring m_nameBikou ;
-	/// CSV��̌Œ蕶����u���v
+	/// CSV上の固定文字列「着」
 	tstring m_nameChaku ;
-	/// CSV��̌Œ蕶����u���v
+	/// CSV上の固定文字列「発」
 	tstring m_nameHatsu ;
-	/// CSV��̌Œ蕶����u���v
+	/// CSV上の固定文字列「レ」
 	tstring m_nameTsuuka ;
-	/// CSV��̌Œ蕶����u||�v
+	/// CSV上の固定文字列「||」
 	tstring m_nameKeiyunasi ;
-	/// CSV��̌Œ蕶����u�Ԑ��v
+	/// CSV上の固定文字列「番線」
 	tstring m_nameTrack;
-	/// CSV��̌Œ蕶����u�^�p�ԍ��v
+	/// CSV上の固定文字列「運用番号」
 	tstring m_nameOperationNumber;
-	/// CSV��̌Œ蕶����u�n���w�v
+	/// CSV上の固定文字列「始発駅」
 	tstring m_nameShihatsuEkimei ;
-	/// CSV��̌Œ蕶����u�n���w��Ɓv
+	/// CSV上の固定文字列「始発駅作業」
 	tstring m_nameOperation_Shihatsu;
-	/// CSV��̌Œ蕶����u�I���w�v
+	/// CSV上の固定文字列「終着駅」
 	tstring m_nameShuchakuEkimei;
-	/// CSV��̌Œ蕶����u�I���w��Ɓv
+	/// CSV上の固定文字列「終着駅作業」
 	tstring m_nameOperation_Shuchaku;
-	/// CSV��̌Œ蕶����u�����v
+	/// CSV上の固定文字列「時刻」
 	tstring m_nameJikoku;
-	/// CSV��̌Œ蕶����u�O��Ɓv
+	/// CSV上の固定文字列「前作業」
 	tstring m_nameBeforeOperation;
-	/// CSV��̌Œ蕶����u���Ɓv
+	/// CSV上の固定文字列「後作業」
 	tstring m_nameAfterOperation;
 
-	tstring m_nameOperationConnectBefore = _T("�����O");
-	tstring m_nameOperationReleaseAfter = _T("������");
+	tstring m_nameOperationConnectBefore = _T("増結前");
+	tstring m_nameOperationReleaseAfter = _T("解結後");
 	
 	CdYColSpecCont m_CdYColSpecCont;
 
 	/**
 	@return
-		�w������\���`���ɕϊ�����I�u�W�F�N�g��Ԃ��܂��B
+		駅時刻を表示形式に変換するオブジェクトを返します。
 	*/
 	//const CdDedJikoku::CConv	getCdDedJikokuConv(
 	//	const bool bDisplaySecondEkiJikoku,
@@ -156,36 +156,36 @@ private:
 	//	const bool bDisplay2400)const;
 protected:
 	// --------------------------------
-	///@name	�w�����Z���̕�����̉���
+	///@name	駅時刻セルの文字列の解釈
 	// --------------------------------
 	///@{
 	/**
-		�w���Ǝ��������ƂɁA������CSV�����ɕ����񉻂��܂��B
+		駅扱と時刻をもとに、時刻をCSV向けに文字列化します。
 		
 	@param eEkiatsukai [in]
-		�w�����w�肵�Ă��������B
+		駅扱を指定してください。
 	@param aCdDedJikoku [in]
-		�������w�肵�Ă��������B
+		時刻を指定してください。
 		
-		eEkiatsukai ��
+		eEkiatsukai が
 		CentDedEkiJikoku::Ekiatsukai_None,
 		CentDedEkiJikoku::Ekiatsukai_Keiyunasi 
-		�ł���ꍇ�́AaCdDedJikoku �͕]������܂���B
+		である場合は、aCdDedJikoku は評価されません。
 		
-		eEkiatsukai��
+		eEkiatsukaiが
 		CentDedEkiJikoku::Ekiatsukai_Teisya, 
-		�̏ꍇ�́A�ʏ�Ɏ������o�͂��܂��B
+		の場合は、通常に時刻を出力します。
 		
-		eEkiatsukai��
+		eEkiatsukaiが
 		CentDedEkiJikoku::Ekiatsukai_Tsuuka, 
-		�ŁAaCdDedJikoku �� Null �łȂ��ꍇ�́A
-		�����̖����� "?" ��t�^���܂��B
+		で、aCdDedJikoku が Null でない場合は、
+		時刻の末尾に "?" を付与します。
 	@param bDisplaySecondEkiJikoku [in] 
-		�w�����̕b�P�ʂ��o�͂��邩�ǂ������w�肵�Ă��������B
+		駅時刻の秒単位を出力するかどうかを指定してください。
 	@param bDisplayColonEkiJikoku [in] 
-		�w�����ɃR������t���Ă��o�͂��邩�ǂ������w�肵�Ă��������B
+		駅時刻にコロンを付けてを出力するかどうかを指定してください。
 	@return
-		�ϊ����ꂽ�������Ԃ��܂��B
+		変換された文字列を返します。
 	*/
 	tstring encode_Ekijikoku( 
 		CentDedEkiJikoku::EEkiatsukai eEkiatsukai , 
@@ -199,12 +199,12 @@ protected:
 		const CdDedJikoku& ReferJikoku = CdDedJikoku()) ;
 
 	// --------------------------------
-	///@name encode() �̉����֐�	
+	///@name encode() の下請関数	
 	// --------------------------------
 	///@{
 
 	/**
-		�O��Ɨ��̕`�ʂ��s���܂�
+		前作業欄の描写を行います
 	*/
 	void encode_BeforeOperation(
 		const CentDedRessya* pCentDedRessya,
@@ -223,7 +223,7 @@ protected:
 		tstring& strText2);
 
 	/**
-		���Ɨ��̕`�ʂ��s���܂�
+		後作業欄の描写を行います
 	*/
 	void encode_AfterOperation(
 		const CentDedRessya* pCentDedRessya,
@@ -243,35 +243,35 @@ protected:
 
 
 	/**
-		CdCsvDocument �ɁANull�łȂ���Ԃ�ǉ����܂��B
+		CdCsvDocument に、Nullでない列車を追加します。
 
 	@param pCentDedRessyasyubetsuContGet [in]
-		��Ԏ�ʃR���e�i���w�肵�Ă��������B
+		列車種別コンテナを指定してください。
 	@param pCentDedRessya [in]
-		��Ԃ��w�肵�Ă��������B
+		列車を指定してください。
 	@param pCdCsvDocument [in,out]
-		���̊֐��͂���CSV�h�L�������g�ɗ�ԏ���ǉ����܂��B
+		この関数はこのCSVドキュメントに列車情報を追加します。
 	@param pCdDedEkiCont
-		�����ɍ��킹���w�ꗗ�ł��B
+		方向に合わせた駅一覧です。
 	@param bDisplayTsuukaEkiJikoku [in] 
-		�ʉ߉w�̎�����\�����邩�ǂ������w�肵�Ă��������B
+		通過駅の時刻を表示するかどうかを指定してください。
 	@param bDisplaySecondEkiJikoku [in] 
-		�w�����̕b�P�ʂ��o�͂��邩�ǂ������w�肵�Ă��������B
+		駅時刻の秒単位を出力するかどうかを指定してください。
 	@param bDisplayColonEkiJikoku [in] 
-		�w�����ɃR������t���Ă��o�͂��邩�ǂ������w�肵�Ă��������B
+		駅時刻にコロンを付けてを出力するかどうかを指定してください。
 	@param bDisplayParentSyubetsu [in] 
-		�e��ʂ�L���ɂ��Ă��o�͂��邩�ǂ������w�肵�Ă��������B
+		親種別を有効にしてを出力するかどうかを指定してください。
 	@param bDisplayRessyamei [in] 
-		��Ԗ��E�������o�͂��邩�ǂ������w�肵�Ă��������B
+		列車名・号数を出力するかどうかを指定してください。
 	@param iEnableOperation [in] 
-		�^�p�@�\�̏�Ԃ��w�肵�Ă��������B
+		運用機能の状態を指定してください。
 	@param bDisplayOuterTerminalShihatsu [in] 
-		�N�_���̘H���O���������o�͂��邩�ǂ������w�肵�Ă��������B
+		起点側の路線外発着欄を出力するかどうかを指定してください。
 	@param bDisplayOuterTerminalShuchaku [in] 
-		�I�_���̘H���O���������o�͂��邩�ǂ������w�肵�Ă��������B
+		終点側の路線外発着欄を出力するかどうかを指定してください。
 	@return
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	-1 ;	//	���̗�Ԃ�NULL�ł��B
+		成功したら 0 以上、エラーなら負の数です。
+		-	-1 ;	//	この列車はNULLです。
 	*/
 	int encode_AddRessya( 
 		const Mu<const CentDedRessyasyubetsu*>* 
@@ -295,20 +295,20 @@ protected:
 		const bool bDisplayInOutLinkCode) ;
 
 	/**
-		CdCsvDocument �ɁANull��Ԃ�ǉ����܂��B
+		CdCsvDocument に、Null列車を追加します。
 	@param bDisplayRessyamei [in] 
-		��Ԗ��E�������o�͂��邩�ǂ������w�肵�Ă��������B
+		列車名・号数を出力するかどうかを指定してください。
 	@param iEnableOperation [in] 
-		�^�p�@�\�̏�Ԃ��w�肵�Ă��������B
+		運用機能の状態を指定してください。
 	@param bDisplayOuterTerminalShihatsu [in] 
-		�N�_���̘H���O���������o�͂��邩�ǂ������w�肵�Ă��������B
+		起点側の路線外発着欄を出力するかどうかを指定してください。
 	@param bDisplayOuterTerminalShuchaku [in] 
-		�I�_���̘H���O���������o�͂��邩�ǂ������w�肵�Ă��������B
+		終点側の路線外発着欄を出力するかどうかを指定してください。
 	@param pCdCsvDocument [in,out]
-		���̊֐��͂���CSV�h�L�������g�ɗ�ԏ���ǉ����܂��B
+		この関数はこのCSVドキュメントに列車情報を追加します。
 	@return
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	���0
+		成功したら 0 以上、エラーなら負の数です。
+		-	常に0
 	*/
 	int encode_AddRessyaNull( 
 		CdCsvDocument* pCdCsvDocument,
@@ -320,7 +320,7 @@ protected:
 	///@}
 public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	CconvJikokuhyouCsv(
 		const tstring& nameKudari ,
@@ -353,52 +353,52 @@ public:
 	// ********************************
 	///@{
 	/**
-		�w��̘H���t�@�C���f�[�^�E�_�C���E��ԕ�����
-		�����\���ACSV�h�L�������g�ɏo�͂��܂��B
+		指定の路線ファイルデータ・ダイヤ・列車方向の
+		時刻表を、CSVドキュメントに出力します。
 
-		*pCdCsvDocument ������܂ŕێ����Ă����f�[�^�͔j�����܂��B
+		*pCdCsvDocument がそれまで保持していたデータは破棄します。
 	@param aCentDedRosen [in]
-		�H�����w�肵�Ă��������B
+		路線を指定してください。
 	@param iDiaIndex [in]
-		�_�C���̃C���f�N�X���w�肵�Ă��������B
+		ダイヤのインデクスを指定してください。
 	@param eRessyahoukou [in]
-		��ԕ������w�肵�Ă��������B
+		列車方向を指定してください。
 	@param iRessyaIndex [in]
-		�o�͂���擪�̗�Ԃ̃C���f�N�X(0�N�_)
-		���w�肵�Ă��������B
+		出力する先頭の列車のインデクス(0起点)
+		を指定してください。
 	@param iRessyaCount [in] 
-		�o�͂����Ԃ̖{�����w�肵�Ă��������B
-		INT_MAX �́A�����̗�Ԃ܂ł��w�肵�����ƂɂȂ�܂��B
+		出力する列車の本数を指定してください。
+		INT_MAX は、末尾の列車までを指定したことになります。
 	@param bDisplayTsuukaEkiJikoku [in] 
-		�ʉ߉w�̎�����\�����邩�ǂ������w�肵�Ă��������B
+		通過駅の時刻を表示するかどうかを指定してください。
 	@param bDisplaySecondEkiJikoku [in] 
-		�w�����̕b�P�ʂ��o�͂��邩�ǂ������w�肵�Ă��������B
+		駅時刻の秒単位を出力するかどうかを指定してください。
 	@param bDisplayColonEkiJikoku [in] 
-		�w�����ɃR������t���Ă��o�͂��邩�ǂ������w�肵�Ă��������B
+		駅時刻にコロンを付けてを出力するかどうかを指定してください。
 	@param bDisplayParentSyubetsu [in] 
-		�e��ʂ�L���ɂ��Ă��o�͂��邩�ǂ������w�肵�Ă��������B
+		親種別を有効にしてを出力するかどうかを指定してください。
 	@param bDisplayRessyamei [in] 
-		��Ԗ��E�������o�͂��邩�ǂ������w�肵�Ă��������B
+		列車名・号数を出力するかどうかを指定してください。
 	@param iEnableOperation [in] 
-		�^�p�@�\�̏�Ԃ��w�肵�Ă��������B
+		運用機能の状態を指定してください。
 	@param bDisplayOuterTerminalShihatsu [in] 
-		�N�_���̘H���O���������o�͂��邩�ǂ������w�肵�Ă��������B
+		起点側の路線外発着欄を出力するかどうかを指定してください。
 	@param bDisplayOuterTerminalShuchaku [in] 
-		�I�_���̘H���O���������o�͂��邩�ǂ������w�肵�Ă��������B
+		終点側の路線外発着欄を出力するかどうかを指定してください。
 	@param iSecondRoundChaku [in] 
-		�b�P�ʕ\��OFF���̕b�P�ʏ������@���w�肵�Ă��������B
+		秒単位表示OFF時の秒単位処理方法を指定してください。
 	@param iSecondRoundHatsu [in] 
-		�b�P�ʕ\��OFF���̕b�P�ʏ������@���w�肵�Ă��������B
+		秒単位表示OFF時の秒単位処理方法を指定してください。
 	@param bDisplay2400 [in] 
-		��������0��0���̎��ɁA2400�ƕ\�L���邩�ۂ����w�肵�Ă��������B
+		着時刻が0時0分の時に、2400と表記するか否かを指定してください。
 	@param pCdCsvDocument [out]
-		���̊֐��͂��� CdCsvDocument �I�u�W�F�N�g�ɁA
-		�����\�f�[�^���������݂܂��B
+		この関数はこの CdCsvDocument オブジェクトに、
+		時刻表データを書き込みます。
 	@return
-		���������� 0 �ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	-1 ;	//	iDiaIndex ���s���ł��B
-		-	-2 ;	//	iRessyaIndex ���s���ł��B
-		-	-3 ;	//	iRessyaCount ���s���ł��B
+		成功したら 0 以上、エラーなら負の数です。
+		-	-1 ;	//	iDiaIndex が不正です。
+		-	-2 ;	//	iRessyaIndex が不正です。
+		-	-3 ;	//	iRessyaCount が不正です。
 	*/
 	int encode( 
 		const CentDedRosen& aCentDedRosen , 

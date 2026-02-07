@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 // ****************************************************************
 //	$Id: CPropEditUI_Operation.h$
@@ -78,10 +78,10 @@ Copyright (C) 2006-2017 take-okm
 #pragma once
 
 #include <string>
-#include "..\entDed\CentDedRessyaCont.h"
-#include "NsMu\Mu.h"
-#include "NsPropEditUi2\CPropEditUi2.h"
-//#include "Str\tstring.h"
+#include "..¥entDed¥CentDedRessyaCont.h"
+#include "NsMu¥Mu.h"
+#include "NsPropEditUi2¥CPropEditUi2.h"
+//#include "Str¥tstring.h"
 #include <tchar.h>
 
 namespace ViewJikokuhyou{
@@ -96,105 +96,105 @@ namespace ViewJikokuhyou{
 //	UIDATA_Operation
 // ********************************
 /**
-	CPropEditUI_Operation �ŕҏW����v���p�e�B�� UIDATA �\���̂ł��B
+	CPropEditUI_Operation で編集するプロパティの UIDATA 構造体です。
 */
 struct Operation
 {
 	/**
-	��Ǝ��
-		0:	����
-		1:	����
-		2:	����
-		3:	����(����)�E�o��(�O���)
-		4:	�H���O�n��(�O���)�E�H���O�I��(����)
-		5:	����Ԑڑ�(����)�E�O��Ԑڑ�(�O���)
-		6:  �^�p�ԍ��ύX
-		7:	(��Ƃ�ǉ��E��Ƃ�����Ȃ��ꍇ�A��������Ă���)
+	作業種類
+		0:	入換
+		1:	増結
+		2:	解結
+		3:	入区(後作業)・出区(前作業)
+		4:	路線外始発(前作業)・路線外終着(後作業)
+		5:	次列車接続(後作業)・前列車接続(前作業)
+		6:  運用番号変更
+		7:	(作業を追加・作業が一つもない場合、これを入れておく)
 	*/
 	int iOperation;
 
 	/**
-		�ݒ�f�[�^(int)1
-		����:�Ԑ�Index
-		����:�����ʒu
-		����:�����ʒu���
-		�H���O����:�����wIndex
-		����Ԑڑ�:����Ԑڑ��^�C�v(Ver2.05����)
+		設定データ(int)1
+		入換:番線Index
+		増結:増結位置
+		解結:解結位置種類
+		路線外発着:発着駅Index
+		次列車接続:次列車接続タイプ(Ver2.05から)
 	*/
 	int iComboData1;
 
 	/**
-		�ݒ�f�[�^(������)1
-		����:����������
-		����:��������(���͏ȗ��E�����⊮)
-		����:�����ʒuIndex
-		�o��:�o�掞��(���͏ȗ��E�����⊮)
-		����:���掞��(���͏ȗ��E�����⊮)
-		�H���O�n��:�n���w������
-		�H���O�I��:���w������(���͏ȗ��E�����⊮)
-		�O��Ԑڑ�:�N�_����(�ȗ���)
-		����Ԑڑ�:�I�_����(�ȗ���)
+		設定データ(文字列)1
+		入換:入換発時刻
+		増結:増結時刻(入力省略可・自動補完)
+		解結:解結位置Index
+		出区:出区時刻(入力省略可・自動補完)
+		入区:入区時刻(入力省略可・自動補完)
+		路線外始発:始発駅発時刻
+		路線外終着:当駅発時刻(入力省略可・自動補完)
+		前列車接続:起点時刻(省略可)
+		次列車接続:終点時刻(省略可)
 	*/
 	tstring strEditData1;
 
 	/**
-		�ݒ�f�[�^(������)2
-		����:����������(�ȗ���)
-		����:��������(���͏ȗ��E�����⊮)
-		�H���O�n��:���w������(���͏ȗ��E�����⊮)
-		�H���O�I��:�I���w������(�ȗ���)
+		設定データ(文字列)2
+		入換:入換着時刻(省略可)
+		解結:解結時刻(入力省略可・自動補完)
+		路線外始発:当駅着時刻(入力省略可・自動補完)
+		路線外終着:終着駅着時刻(省略可)
 
 	*/
 	tstring strEditData2;
 
 	/**
-		�ݒ�f�[�^(bool)1
-		����:������/���������A���w�̒�/�������ɂ���
-		�O��Ԑڑ�:�����\���ȗ�(Ver2.05�폜)
-		����Ԑڑ�:�����\���ȗ�(Ver2.05�폜)
-		�^�p�ԍ��ύX:�^�p�ԍ������](Ver2.06.05�`)
+		設定データ(bool)1
+		入換:入換着/発時刻を、当駅の着/発時刻にする
+		前列車接続:解結表示省略(Ver2.05削除)
+		次列車接続:増結表示省略(Ver2.05削除)
+		運用番号変更:運用番号順反転(Ver2.06.05〜)
 	*/
 	bool bCheckData1;
 
 	/**
-		�ݒ�f�[�^(������z��)
-		�o��E�H���O�n���E�O��Ԑڑ��E�^�p�ԍ��ύX:�^�p�ԍ�
+		設定データ(文字列配列)
+		出区・路線外始発・前列車接続・運用番号変更:運用番号
 	*/
 	vector<tstring> strOperationNumber;
 
 	/**
-		�ݒ�f�[�^(������)3
-		�o��E�H���O�n���E����E�H���O�I��:���o��A�g�R�[�h
+		設定データ(文字列)3
+		出区・路線外始発・入区・路線外終着:入出区連携コード
 
 	*/
 	tstring strInOutLinkCode;
 
 	/**
-		UIData���ɂ�����A���Y��Ƃ̊K�w�ʒu��\���܂��B
-		�ŏ�w(CentDedEkijikoku������CentDedOperationxxxCont)��
-		�v�f��1�ŁACont����Index������܂�
-		���̒��ɑ�����������ꍇ�A���̑�������ƎP����OperationCont��
-		�܂�1�v�f�ڂɐe���(������)��Index������A���̎��̗v�f�ŁA
-		��������ƎP����OperationCont�ɂ�����Index������܂��B
-		����Cont���ɂ���ɑ�����������ꍇ���A���l�ł�
-		(��)
+		UIData内における、当該作業の階層位置を表します。
+		最上層(CentDedEkijikoku直下のCentDedOperationxxxCont)は
+		要素数1で、Cont内のIndexが入ります
+		その中に増解結がある場合、その増解結作業傘下のOperationContは
+		まず1要素目に親作業(増解結)のIndexが入り、その次の要素で、
+		増解結作業傘下のOperationContにおけるIndexが入ります。
+		そのCont内にさらに増解結がある場合も、同様です
+		(例)
 		Ekijikoku
-		������A�A����A�A����B�A����A
-				�@������C�A����A�A�H���O�I��A
-			�@  �o��A�A����D��
+		┗入換A、解結A、入換B、入区A
+				　┗入換C、増結A、路線外終着A
+			　  出区A、入換D┛
 
-		��		0		����A
-		����	1		����A
-		����	1,0		����C
-		������	1,1,0	�o��A
-		������	1,1,1	����D
-		������	1,1		����A
-		����	1,2		�H���O�I��A
-		��		2		����B
-		��		3		����A
-		�_�C�A���O�̃��X�g�ɕ\������ꍇ�͂��̏��ԂɂȂ�܂��B
-		���X�g�ɕ\�����镶����̓��ɂ��A���̗v�f�Ɋ�Â������񂪕t�^����܂�
-		(1.1.1 �����`�@�̂悤�ɕ\��)
+		┃		0		入換A
+		┣┓	1		解結A
+		┃┃	1,0		入換C
+		┃┃┃	1,1,0	出区A
+		┃┃┃	1,1,1	入換D
+		┃┣┛	1,1		増結A
+		┃┃	1,2		路線外終着A
+		┃		2		入換B
+		┃		3		入区A
+		ダイアログのリストに表示する場合はこの順番になります。
+		リストに表示する文字列の頭にも、この要素に基づく文字列が付与されます
+		(1.1.1 入換〜　のように表示)
 	*/
 	vector<int> iLevel;
 
@@ -213,62 +213,62 @@ struct Operation
 struct UIDATA_Operation
 {
 	/**
-		�O���
-		���̔z��ɂ́A���n�񏇂ō�Ƃ̏�񂪊i�[����܂��B
+		前作業
+		この配列には、時系列順で作業の情報が格納されます。
 	*/
 	vector <Operation> sOperationA;
 
 	/**
-		����
+		後作業
 	*/
 	vector <Operation> sOperationB;
 
-	//Ver2.05�폜
+	//Ver2.05削除
 	//bool bSyubetsuChange;
 
 	/**
-		���݂̃��X�g�N���b�N�ʒu
-		�ǉ��̏ꍇ�́A�ǉ����ꂽ��ƈʒu
-		�폜�̏ꍇ�́A�폜���ꂽ��Ƃ��������ʒu
+		現在のリストクリック位置
+		追加の場合は、追加された作業位置
+		削除の場合は、削除された作業があった位置
 	*/
 	int iListSelected;
 
 	/**
-		�O��Ƃƌ��Ƃ̂ǂ���̃��X�g���N���b�N������
-		true:����
-		false:�O���
+		前作業と後作業のどちらのリストをクリックしたか
+		true:後作業
+		false:前作業
 	*/
 	bool bSelectedAfter;
 
 	/**
-		Ui�łǂ̂悤�ȍ�Ƃ��s������
-		0:�ڍוύX(�����̏����A�Ԑ��̕ύXetc)
-		1:�I��ύX(���X�g���N���b�N)
-		2:�ǉ�
-		3:�폜
+		Uiでどのような作業を行ったか
+		0:詳細変更(時刻の書換、番線の変更etc)
+		1:選択変更(リストをクリック)
+		2:追加
+		3:削除
 
 	*/
 	int iUiOperation;
 	
 	/**
-		������
+		着時刻
 	*/
 	tstring strChakujikoku ;
 	
 	/**
-	 strChakujikoku �̕ҏW�̗L���E�����B
-	 true �Ȃ�L���ł� 
+	 strChakujikoku の編集の有効・無効。
+	 true なら有効です 
 	*/
 	//bool bChakujikokuIsEnable ;
 
 	/**
-		������
+		発時刻
 	*/
 	tstring strHatsujikoku ;
 	
 	/**
-	 strHatsujikoku �̕ҏW�̗L���E�����B
-	 true �Ȃ�L���ł� 
+	 strHatsujikoku の編集の有効・無効。
+	 true なら有効です 
 	*/
 	//bool bHatsujikokuIsEnable ;
 
@@ -288,155 +288,155 @@ struct UIDATA_Operation
 
 /**
 @brief
-  ��Ԃ̉w�����̃v���p�e�B�ҏW���s���N���X�ł��B
+  列車の駅時刻のプロパティ編集を行うクラスです。
 
-  ���̃N���X�͒��ۃN���X�ł��B
-  ���̃N���X�́A�g�p����UI��(��FWindows,MFC)�ɂ͈ˑ����܂���B
-�@�N���X���[�U�[�́A���̃N���X���p�����āA
- �w�I�[�o�[���C�g�̕K�v�ȃ��\�b�h2-UI�Ɉˑ����鏈���x�̉��z�֐��ɁA
- UI���Ɉˑ������������������Ă��������B
+  このクラスは抽象クラスです。
+  このクラスは、使用するUI環境(例：Windows,MFC)には依存しません。
+　クラスユーザーは、このクラスを継承して、
+ 『オーバーライトの必要なメソッド2-UIに依存する処理』の仮想関数に、
+ UI環境に依存した処理を実装してください。
 */
 class CPropEditUI_Operation : public CPropEditUi2<UIDATA_Operation>
 {
 
 public:
 	// ********************************
-	///@name �G���[���b�Z�[�W
+	///@name エラーメッセージ
 	// ********************************
 	///@{
-	///// �������̓��͂�����������܂���
+	///// 着時刻の入力が正しくありません
 	//static const TCHAR* const ERRMSG_INVALID_CHAKUJIKOKU ;
 
-	///// �������̓��͂�����������܂���
+	///// 発時刻の入力が正しくありません
 	//static const TCHAR* const ERRMSG_INVALID_HATSUJIKOKU ;
 
-	///// �����Ԑ��̎w�肪����������܂���
+	///// 入換番線の指定が正しくありません
 	//static const TCHAR* const ERRMSG_INVALID_SHUNTTRACK;
 
-	///// �����������̓��͂�����������܂���
+	///// 入換発時刻の入力が正しくありません
 	//static const TCHAR* const ERRMSG_INVALID_OPERATIONHATSUJIKOKU;
 
-	///// �����������̓��͂�����������܂���
+	///// 入換着時刻の入力が正しくありません
 	//static const TCHAR* const ERRMSG_INVALID_OPERATIONCHAKUJIKOKU;
 
-	///// �H���O�����w�����̓��͂�����������܂���
+	///// 路線外発着駅時刻の入力が正しくありません
 	//static const TCHAR* const ERRMSG_INVALID_OUTERHATSUCHAKUJIKOKU;
 
 
-	/// �����������̓��͂�����������܂���
+	/// 入換発時刻の入力が正しくありません
 	static const TCHAR* const ERRMSG_INVALID_SHUNTHATSUJIKOKU;
 
-	/// �����������̓��͂�����������܂���
+	/// 入換着時刻の入力が正しくありません
 	static const TCHAR* const ERRMSG_INVALID_SHUNTCHAKUJIKOKU;
 
-	/// �������������K��͈͊O�ł�
+	/// 入換発時刻が規定範囲外です
 	//static const TCHAR* const ERRMSG_OUTOFRANGE_SHUNTHATSUJIKOKU;
 
-	/// �������������K��͈͊O�ł�
+	/// 入換着時刻が規定範囲外です
 	//static const TCHAR* const ERRMSG_OUTOFRANGE_SHUNTCHAKUJIKOKU;
 
-	/// ���������̓��͂�����������܂���
+	/// 増結時刻の入力が正しくありません
 	static const TCHAR* const ERRMSG_INVALID_CONNECTJIKOKU;
 
-	/// �����������K��͈͊O�ł�
+	/// 増結時刻が規定範囲外です
 	//static const TCHAR* const ERRMSG_OUTOFRANGE_CONNECTJIKOKU;
 
-	/// ���������̓��͂�����������܂���
+	/// 解結時刻の入力が正しくありません
 	static const TCHAR* const ERRMSG_INVALID_RELEASEJIKOKU;
 
-	/// �����������K��͈͊O�ł�
+	/// 解結時刻が規定範囲外です
 	//static const TCHAR* const ERRMSG_OUTOFRANGE_RELEASEJIKOKU;
 
-	/// �����Ґ����̓��͂�����������܂���
+	/// 解結編成数の入力が正しくありません
 	static const TCHAR* const ERRMSG_INVALID_RELEASEINDEX;
 
-	/// �����Ґ�����1�ȏ�10�ȉ��̐�������͂��Ă�������
+	/// 解結編成数は1以上10以下の整数を入力してください
 	static const TCHAR* const ERRMSG_OUTOFRANGE_RELEASEINDEX;
 
-	/// �o�掞���̓��͂�����������܂���
+	/// 出区時刻の入力が正しくありません
 	static const TCHAR* const ERRMSG_INVALID_OUTJIKOKU;
 
-	/// �o�掞�����K��͈͊O�ł�
+	/// 出区時刻が規定範囲外です
 	//static const TCHAR* const ERRMSG_OUTOFRANGE_OUTJIKOKU;
 
-	/// ���掞���̓��͂�����������܂���
+	/// 入区時刻の入力が正しくありません
 	static const TCHAR* const ERRMSG_INVALID_INJIKOKU;
 
-	/// ���掞�����K��͈͊O�ł�
+	/// 入区時刻が規定範囲外です
 	//static const TCHAR* const ERRMSG_OUTOFRANGE_INJIKOKU;
 
-	/// �H���O�n���w�������̓��͂�����������܂���
+	/// 路線外始発駅発時刻の入力が正しくありません
 	static const TCHAR* const ERRMSG_INVALID_OUTERHATSUJIKOKU;
 
-	/// ���w�������̓��͂�����������܂���
+	/// 当駅着時刻の入力が正しくありません
 	static const TCHAR* const ERRMSG_INVALID_CHAKUJIKOKU;
 
-	/// ���w���������K��͈͊O�ł�
+	/// 当駅着時刻が規定範囲外です
 	//static const TCHAR* const ERRMSG_OUTOFRANGE_CHAKUJIKOKU;
 
-	/// �H���O�n���w����������͂��Ă�������
+	/// 路線外始発駅発時刻を入力してください
 	static const TCHAR* const ERRMSG_EMPTY_OUTERHATSUJIKOKU;
 
-	/// ���w�������̓��͂�����������܂���
+	/// 当駅発時刻の入力が正しくありません
 	static const TCHAR* const ERRMSG_INVALID_HATSUJIKOKU;
 
-	/// �H���O�I���w�������̓��͂�����������܂���
+	/// 路線外終着駅着時刻の入力が正しくありません
 	static const TCHAR* const ERRMSG_INVALID_OUTERCHAKUJIKOKU;
 
-	/// ���w���������K��͈͊O�ł�
+	/// 当駅発時刻が規定範囲外です
 	//static const TCHAR* const ERRMSG_OUTOFRANGE_HATSUJIKOKU;
 
-	/// �H���O�I���w����������͂��Ă�������
+	/// 路線外終着駅着時刻を入力してください
 	static const TCHAR* const ERRMSG_EMPTY_OUTERCHAKUJIKOKU;
 
-	/// �N�_�����̓��͂�����������܂���
+	/// 起点時刻の入力が正しくありません
 	static const TCHAR* const ERRMSG_INVALID_ORIGINJIKOKU;
 
-	/// �I�_�����̓��͂�����������܂���
+	/// 終点時刻の入力が正しくありません
 	static const TCHAR* const ERRMSG_INVALID_TERMINALJIKOKU;
 
-	/// �^�p�ԍ��ɃJ���}(,)�͎g�p�ł��܂���
+	/// 運用番号にカンマ(,)は使用できません
 	static const TCHAR* const ERRMSG_UNUSABLE_COMMA;
 
-	/// �H���O�n���w����������͂��Ă�������
+	/// 路線外始発駅発時刻を入力してください
 	static const TCHAR* const ERRMSG_EMPTY_OPERATIONNUMBER;
 
-	/// ���o��A�g�R�[�h�ɃJ���}(,)�͎g�p�ł��܂���
+	/// 入出区連携コードにカンマ(,)は使用できません
 	static const TCHAR* const ERRMSG_UNUSABLE_COMMA_INOUTLINKCODE;
 
-	/// ���o��A�g�R�[�h�ɃX���b�V��(/)�͎g�p�ł��܂���
+	/// 入出区連携コードにスラッシュ(/)は使用できません
 	static const TCHAR* const ERRMSG_UNUSABLE_SLASH;
 
-	/// ���o��A�g�R�[�h�Ƀh���L��($)�͎g�p�ł��܂���
+	/// 入出区連携コードにドル記号($)は使用できません
 	static const TCHAR* const ERRMSG_UNUSABLE_DOLLAR;
 	///@}
 
 private:
 	// ********************************
-	///@name �֘A
+	///@name 関連
 	// ********************************
 	///@{
 	/**
-	�@Target(�ҏW�Ώۂ̃v���p�e�B��ێ�����ϐ��ւ̃|�C���^)�B 
-	�@�R���X�g���N�^�Ō��܂�܂��B
+	　Target(編集対象のプロパティを保持する変数へのポインタ)。 
+	　コンストラクタで決まります。
 
-	 �@��Ԃ��i�[�����R���e�i�ł��B
+	 　列車を格納したコンテナです。
 	*/
 	Mu<CentDedRessya*>* m_pTarget ;
 
 private:
 	// ********************************
-	///@name ����
+	///@name 属性
 	// ********************************
 	///@{
 	/**
-		�ҏW�Ώۂ̉w�����̒��wOrder�ł��B
-		�R���X�g���N�^�Ō��܂�܂��B
+		編集対象の駅時刻の着駅Orderです。
+		コンストラクタで決まります。
 	*/
 	int m_iChakuEkiOrder ;
 	/**
-		�ҏW�Ώۂ̉w�����̔��wOrder�ł��B
-		�R���X�g���N�^�Ō��܂�܂��B
+		編集対象の駅時刻の発駅Orderです。
+		コンストラクタで決まります。
 	*/
 	int m_iHatsuEkiOrder;
 
@@ -454,116 +454,116 @@ private:
 
 protected:
 	// ================================
-	/** @name �I�[�o�[���C�g�̕K�v�ȃ��\�b�h1-Target�Ɉˑ����鏈��
-		Target �� UiData �Ƃ̊Ԃ̃f�[�^�����̂��߂̃��\�b�h�ł��B
-		���̃O���[�v�̃��\�b�h�́A Ui �̊��ɂ͈ˑ����܂���B
+	/** @name オーバーライトの必要なメソッド1-Targetに依存する処理
+		Target と UiData との間のデータ交換のためのメソッドです。
+		このグループのメソッドは、 Ui の環境には依存しません。
 	*/
 	// ================================
 	///@{
 	
 	/**
-		UiData ���A�V�KTarget�̃v���p�e�B�̕ҏW�̂��߂�
-		���������܂��B
+		UiData を、新規Targetのプロパティの編集のために
+		初期化します。
 		
-		m_bNewItem �� true �̏ꍇ�ɂ����A CPropEditUi2::StartEdit() 
-		����Ăяo����܂��B
+		m_bNewItem が true の場合にだけ、 CPropEditUi2::StartEdit() 
+		から呼び出されます。
 	
-		�ʏ�A UiData �́AUIDATA�̃f�t�H���g�R���X�g���N�^�ŏ���������܂��B
-		�N���X���[�U�[�́AUiData �ɁA�f�t�H���g�R���X�g���N�^�ƈقȂ�
-		�����l��^�������ꍇ�́A���̃����o�֐����I�[�o�[���C�h���Ă��������B
+		通常、 UiData は、UIDATAのデフォルトコンストラクタで初期化されます。
+		クラスユーザーは、UiData に、デフォルトコンストラクタと異なる
+		初期値を与えたい場合は、このメンバ関数をオーバーライドしてください。
 
 	@param pUiData [out]
-		UiData �̃I�u�W�F�N�g�B
+		UiData のオブジェクト。
 	*/
 	//virtual void InitUiData( UIDATA* pUiData ) ;
 
 	/**
-		UiDataFromTarget�̕⏕
-		�O��Ƃ̓ǂݍ��݂��s���܂�
+		UiDataFromTargetの補助
+		前作業の読み込みを行います
 		pCentDedBeforeOperationCont
-			�ǂݍ��ݑΏۂƂȂ�BeforeCont�ł��B
+			読み込み対象となるBeforeContです。
 		iLevel
-			�Ăяo�����̊K�w�ł��B
-			�����œǂݍ��܂ꂽ��Ƃ�iLevel�ɂ́A����iLevel+pCentDedBeforeOperationCont����Index���t�^����܂�
+			呼び出し元の階層です。
+			ここで読み込まれた作業のiLevelには、引数iLevel+pCentDedBeforeOperationCont内のIndexが付与されます
 		return vector<Operation>
-			pCentDedBeforeOperationCont����ǂݍ���Operation�z���Ԃ��܂��B
-			�߂��ł́A�󂯎����Operation�z����A�������̑O��ɑ}�����܂��B
+			pCentDedBeforeOperationContから読み込んだOperation配列を返します。
+			戻り先では、受け取ったOperation配列を、増解結の前後に挿入します。
 	*/
 	virtual vector<Operation> BeforeOperationFromTarget(
 		const CentDedBeforeOperationCont* pCentDedBeforeOperationCont,
 		const vector<int> iLevel);
 
 	/**
-		UiDataFromTarget�̕⏕
-		���Ƃ̓ǂݍ��݂��s���܂�
+		UiDataFromTargetの補助
+		後作業の読み込みを行います
 		pCentDedAfterOperationCont
-			�ǂݍ��ݑΏۂƂȂ�AfterCont�ł��B
+			読み込み対象となるAfterContです。
 		iLevel
-			�Ăяo�����̊K�w�ł��B
-			�����œǂݍ��܂ꂽ��Ƃ�iLevel�ɂ́A����iLevel+pCentDedAfterOperationCont����Index���t�^����܂�
+			呼び出し元の階層です。
+			ここで読み込まれた作業のiLevelには、引数iLevel+pCentDedAfterOperationCont内のIndexが付与されます
 		return vector<Operation>
-			pCentDedAfterOperationCont����ǂݍ���Operation�z���Ԃ��܂��B
-			�߂��ł́A�󂯎����Operation�z����A�������̑O��ɑ}�����܂��B
+			pCentDedAfterOperationContから読み込んだOperation配列を返します。
+			戻り先では、受け取ったOperation配列を、増解結の前後に挿入します。
 	*/
 	virtual vector<Operation> AfterOperationFromTarget(
 		const CentDedAfterOperationCont* pCentDedAfterOperationCont,
 		const vector<int> iLevel);
 
 	/**
-		UiData �ɁATarget�̑����𔽉f���܂��B
+		UiData に、Targetの属性を反映します。
 		
-		m_bNewItem �� false �̏ꍇ�ɂ����A CPropEditUi2::StartEdit() 
-		����Ăяo����܂��B
+		m_bNewItem が false の場合にだけ、 CPropEditUi2::StartEdit() 
+		から呼び出されます。
 		
-		�N���X���[�U�[�́A���̊֐����I�[�o�[���C�h���āA
-		Target �̓��e��UiData �ɔ��f���鏈�����������Ă��������B
+		クラスユーザーは、この関数をオーバーライドして、
+		Target の内容をUiData に反映する処理を実装してください。
 
 	@param pUiData [out]
-		UiData �̃I�u�W�F�N�g�B
+		UiData のオブジェクト。
 	*/
 	virtual void UiDataFromTarget( UIDATA* pUiData ) ; 
 
 	/**
-		UiData �̓��e�𐳋K�����܂��B
+		UiData の内容を正規化します。
 		
 		CPropEditUi2::StartEdit(),CPropEditUi2::OnUiChanged(),
 		CPropEditUi2::OnUiDataChanged(),CPropEditUi2::EndEdit()
-		����Ăяo����܂��B
+		から呼び出されます。
 		
-		�N���X���[�U�[�́A���̊֐����I�[�o�[���C�h���āA
-		UiData�̃����o�̓��e�𐳋K�����鏈�����������Ă��������B
+		クラスユーザーは、この関数をオーバーライドして、
+		UiDataのメンバの内容を正規化する処理を実装してください。
 		
-		���̊֐��ł́A���͓��e�ɑ΂���G���[���b�Z�[�W�̕\���͂����߂��܂���B
-		�G���[���b�Z�[�W�̕\���́ACheckUiData() �ōs���Ă��������B
+		この関数では、入力内容に対するエラーメッセージの表示はお勧めしません。
+		エラーメッセージの表示は、CheckUiData() で行ってください。
 	
-	���K���̗�
+	正規化の例
 	 --------------------------------
-	-	�e�L�X�g�{�b�N�X�ɑS�p�œ��͂��ꂽ�e�L�X�g���A���p�ɕϊ�����B
-	-	����`�F�b�N�{�b�N�X��ON�̂Ƃ��ɂ̓e�L�X�g�{�b�N�X��L���A
-		OFF�̎��ɂ͖���(�O���[)�ɂ���
+	-	テキストボックスに全角で入力されたテキストを、半角に変換する。
+	-	あるチェックボックスがONのときにはテキストボックスを有効、
+		OFFの時には無効(グレー)にする
 
 	@param pUiData [in,out]
-		UiData �̃I�u�W�F�N�g�B
+		UiData のオブジェクト。
 	@param pUiDataPrev [in]
-		�O��� AdjustUiData() �I����� UiData �̃R�s�[�ł��B
-		���̊֐��ł́A pUiDataPrev �� pUiData �̒l���r���邱�Ƃɂ��A
-		�u���񃆁[�U�[�ɂ���ĕύX���ꂽUiData�����o�[�v�𔻒f���邱�Ƃ�
-		�ł��܂��B
-		���̊֐��� CPropEditUi2::StartEdit() ����Ăяo���ꂽ�ꍇ�́A
-		���̈�����NULL�ƂȂ�܂��B
+		前回の AdjustUiData() 終了後の UiData のコピーです。
+		この関数では、 pUiDataPrev と pUiData の値を比較することにより、
+		「今回ユーザーによって変更されたUiDataメンバー」を判断することが
+		できます。
+		この関数が CPropEditUi2::StartEdit() から呼び出された場合は、
+		この引数はNULLとなります。
 	@param bStartEdit [in]
-		- true: ���̊֐��́A CPropEditUi2::StartEdit() ����Ăяo����Ă��܂��B
-			���̏ꍇ�́ApUiDataPrev �͖����ł��B
-			�֐��ł́A UiData �̂��ׂẴf�[�^�̐��K�����s���Ă��������B
-		- false: ���̊֐��́A CPropEditUi2::StartEdit() �ȊO����
-			�Ăяo����Ă��܂��B
-			pUiData �� pUiDataPrev ���r���邱�Ƃɂ��
-			����ω����� UiData �����o�[�ϐ��𔻒f���邱�Ƃ��o���܂��B
-			���̊֐��ł́AUiData �̂����A����ω������f�[�^�����o�[������
-			���K�����Ă��������B
+		- true: この関数は、 CPropEditUi2::StartEdit() から呼び出されています。
+			この場合は、pUiDataPrev は無効です。
+			関数では、 UiData のすべてのデータの正規化を行ってください。
+		- false: この関数は、 CPropEditUi2::StartEdit() 以外から
+			呼び出されています。
+			pUiData と pUiDataPrev を比較することにより
+			今回変化した UiData メンバー変数を判断することが出来ます。
+			この関数では、UiData のうち、今回変化したデータメンバーだけを
+			正規化してください。
 	
 	
-	���̊֐��̃R�[�f�B���O�̗�
+	この関数のコーディングの例
 	 --------------------------------
 	@code
 	virtual void AdjustUiData( 
@@ -571,9 +571,9 @@ protected:
 		const UIDATA* pUiDataPrev , 
 		bool bStartEdit )
 	{
-		if ( bStartEdit || pUiDataPrev->�����o�[�� != pUiData->�����o�[��)
+		if ( bStartEdit || pUiDataPrev->メンバー名 != pUiData->メンバー名)
 		{
-			// pUiData->�����o�[�� �̐��K�����s���R�[�h�B
+			// pUiData->メンバー名 の正規化を行うコード。
 		}
 	}
 	@endcode
@@ -584,18 +584,18 @@ protected:
 		bool bStartEdit );
 
 	/**
-		CheckUiData�̕⏕�֐��ł��B
-		UiData�̂ЂƉ�̑O��Ƃɂ��āA
-		�������͂ɕs�����Ȃ����A��Ƃ̎������w��͈̔͂Ɏ��܂��Ă��邩�`�F�b�N���܂��B
+		CheckUiDataの補助関数です。
+		UiDataのひと塊の前作業について、
+		時刻入力に不正がないか、作業の時刻が指定の範囲に収まっているかチェックします。
 		sOperationB[in]
-			�`�F�b�N�ΏۂƂȂ�O��Ƃł�
+			チェック対象となる前作業です
 		iLevelSearch[in]
-			�`�F�b�N�ΏۂƂȂ�O��ƌQ���w�肷�邽�߂ɗp���܂��B
+			チェック対象となる前作業群を指定するために用います。
 		iListErrorPos[out]
-			�G���[�����������ꍇ�A�G���[������������Ƃ�index�������܂��B
+			エラーが発生した場合、エラーが発生した作業のindexを代入します。
 		iLevelErrorPos[out]
-			�G���[�����������ꍇ�A�G���[������������Ƃ�iLevel�������܂��B
-		return �G���[�����������ꍇ�A���̐��̃G���[�R�[�h��Ԃ��܂�
+			エラーが発生した場合、エラーが発生した作業のiLevelを代入します。
+		return エラーが発生した場合、負の数のエラーコードを返します
 	*/
 	virtual int CheckBeforeOperation(
 		const vector<Operation>& sOperationB,
@@ -604,18 +604,18 @@ protected:
 		vector<int>& iLevelErrorPos);
 
 	/**
-		CheckUiData�̕⏕�֐��ł��B
-		UiData�̂ЂƉ�̑O��Ƃɂ��āA
-		�������͂ɕs�����Ȃ����A��Ƃ̎������w��͈̔͂Ɏ��܂��Ă��邩�`�F�b�N���܂��B
+		CheckUiDataの補助関数です。
+		UiDataのひと塊の前作業について、
+		時刻入力に不正がないか、作業の時刻が指定の範囲に収まっているかチェックします。
 		sOperationB[in]
-			�`�F�b�N�ΏۂƂȂ�O��Ƃł�
+			チェック対象となる前作業です
 		iLevelSearch[in]
-			�`�F�b�N�ΏۂƂȂ�O��ƌQ���w�肷�邽�߂ɗp���܂��B
+			チェック対象となる前作業群を指定するために用います。
 		iListErrorPos[out]
-			�G���[�����������ꍇ�A�G���[������������Ƃ�index�������܂��B
+			エラーが発生した場合、エラーが発生した作業のindexを代入します。
 		iLevelErrorPos[out]
-			�G���[�����������ꍇ�A�G���[������������Ƃ�iLevel�������܂��B
-		return �G���[�����������ꍇ�A���̐��̃G���[�R�[�h��Ԃ��܂�
+			エラーが発生した場合、エラーが発生した作業のiLevelを代入します。
+		return エラーが発生した場合、負の数のエラーコードを返します
 	*/
 	virtual int CheckAfterOperation(
 		const vector<Operation>& sOperationA,
@@ -623,42 +623,42 @@ protected:
 		int& iListErrorPos,
 		vector<int>& iLevelErrorPos);
 	/**
-		UiData �̓��e�����؂��A��肪����΃G���[���b�Z�[�W��\�����܂��B
+		UiData の内容を検証し、問題があればエラーメッセージを表示します。
 		
 		CPropEditUi2::EndEdit()
-		����Ăяo����܂��B
+		から呼び出されます。
 		
-		�N���X���[�U�[�́A���̊֐����I�[�o�[���C�h���āA
-		UiData�̃����o�̓��e�����؂��鏈�����������Ă��������B
-		���͓��e�ɖ�肪����΁AShowError()�ŃG���[���b�Z�[�W��\�����A
-		SetFocus2()�ŁA�t�H�[�J�X����̂���UI�ɐݒ肵�Ă��������B
+		クラスユーザーは、この関数をオーバーライドして、
+		UiDataのメンバの内容を検証する処理を実装してください。
+		入力内容に問題があれば、ShowError()でエラーメッセージを表示し、
+		SetFocus2()で、フォーカスを問題のあるUIに設定してください。
 		
-		�V�K�I�u�W�F�N�g�ɑ΂���v���p�e�B�̕ҏW�̏ꍇ�́A
-		UiData�̂��ׂẴ����o�[�����؂���K�v������܂��B
-		�܂��A�K�{�̃����o�[���u�����N�ł���ꍇ�́A
-		�G���[���b�Z�[�W��\������ׂ��ł��B
+		新規オブジェクトに対するプロパティの編集の場合は、
+		UiDataのすべてのメンバーを検証する必要があります。
+		また、必須のメンバーがブランクである場合は、
+		エラーメッセージを表示するべきです。
 
-		�����I�u�W�F�N�g�ɑ΂���v���p�e�B�ҏW�̏ꍇ�́A
-		���[�U�[�ɂ���Ēl�̕ύX���ꂽ�����o�[�݂̂����؂��Ă��������B
-		pUiData �� pUiDataStartEdit �Ƃ̊ԂňႢ�̂���f�[�^�����o�[���A
-		���[�U�[�ɂ���Ēl�̕ύX���ꂽ�����o�[�ł��B
+		既存オブジェクトに対するプロパティ編集の場合は、
+		ユーザーによって値の変更されたメンバーのみを検証してください。
+		pUiData と pUiDataStartEdit との間で違いのあるデータメンバーが、
+		ユーザーによって値の変更されたメンバーです。
 		
 	@param bNewItem
-		-true: �V�K�I�u�W�F�N�g�ɑ΂���A�v���p�e�B�̕ҏW
-		-false: �����I�u�W�F�N�g�ɑ΂���A�v���p�e�B�̕ҏW
+		-true: 新規オブジェクトに対する、プロパティの編集
+		-false: 既存オブジェクトに対する、プロパティの編集
 	@param pUiData [in]
-		UiData �̃I�u�W�F�N�g�B
+		UiData のオブジェクト。
 	@param pUiDataStartEdit [in]
-		StartEdit()�I����� UiData �̃R�s�[�ł��B
-		���̊֐��ł́A pUiDataStartEdit �� pUiData �̒l���r���邱�Ƃɂ��A
-		�u���[�U�[�ɂ���ĕύX���ꂽUiData�����o�[�v�𔻒f���邱�Ƃ�
-		�ł��܂��B
+		StartEdit()終了後の UiData のコピーです。
+		この関数では、 pUiDataStartEdit と pUiData の値を比較することにより、
+		「ユーザーによって変更されたUiDataメンバー」を判断することが
+		できます。
 	@return
-		����������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-		0�ȊO��Ԃ����ꍇ�A�߂�l�́ACPropEditUi2::EndEdit() ��
-		�߂�l�ƂȂ�܂��B
+		成功したら0以上、エラーなら負の数です。
+		0以外を返した場合、戻り値は、CPropEditUi2::EndEdit() の
+		戻り値となります。
 		
-	���̊֐��̃R�[�f�B���O�̗�
+	この関数のコーディングの例
 	 --------------------------------
 	@code
 	virtual int CheckUiData( 
@@ -668,14 +668,14 @@ protected:
 	{
 		int iRv = 0 ; 
 		
-		if ( bNewItem || pUiDataStartEdit->�����o�[�� != pUiData->�����o�[��)
+		if ( bNewItem || pUiDataStartEdit->メンバー名 != pUiData->メンバー名)
 		{
-			//	pUiData->�����o�[�� �̌��؂��s���R�[�h�B
+			//	pUiData->メンバー名 の検証を行うコード。
 			
-			if ( pUiData->�����o�[�� �ɃG���[������ )
+			if ( pUiData->メンバー名 にエラーがあり )
 			{
-				ShowError( �G���[�̗��R������������ );
-				SetFocus2( offsetof( UIDATA , �����o�[�� ) );
+				ShowError( エラーの理由を示す文字列 );
+				SetFocus2( offsetof( UIDATA , メンバー名 ) );
 				iRv = -1 ;
 			}
 		}
@@ -689,19 +689,19 @@ protected:
 		const UIDATA* pUiDataStartEdit ) ;
 
 	/**
-		UiDataToTarget�̕⏕
-		�O��Ƃ̎����⊮���s���܂�
+		UiDataToTargetの補助
+		前作業の時刻補完を行います
 		sOperationB
-			�⊮���s���f�[�^�ł��B
+			補完を行うデータです。
 		iLevelTarget
-			�Ăяo�����̊K�w�ł��B
-			����iLevel�̎q��Ƃɑ��������Ƃɂ̂݁A�⊮���s���܂�
+			呼び出し元の階層です。
+			このiLevelの子作業に相当する作業にのみ、補完を行います
 		pSourceJikoku
-			�󎞍���⊮���邽�߂̊�����ł��A�K�v�ɉ����������s���܂�
+			空時刻を補完するための基準時刻です、必要に応じ書換も行います
 		bSupplyFromFront
-			�����̃`�F�b�N���A��Ƃ̑O��ǂ��炩��s�������w�肵�܂��B
+			時刻のチェックを、作業の前後どちらから行うかを指定します。
 		bIsTeisya
-			�w��������Ԃ��ۂ��B�w��������Ԃ̏ꍇ�̂݁A�H���O�����̓��w���E�������̕⊮���s���܂��B
+			駅扱いが停車か否か。駅扱いが停車の場合のみ、路線外発着の当駅着・発時刻の補完を行います。
 	*/
 	virtual void BeforeOperationComplement(
 		vector<Operation>& sOperationB,
@@ -711,31 +711,31 @@ protected:
 		const bool bIsTeisya);
 
 	/**
-		UiDataToTarget�̕⏕
-		�O��Ƃ̔��f���s���܂�
+		UiDataToTargetの補助
+		前作業の反映を行います
 		pCentDedBeforeOperationCont
-			���f��ƂȂ�BeforeCont�ł��B
+			反映先となるBeforeContです。
 		sOperationB
-			���f���ƂȂ��ƃf�[�^�ł��B
+			反映元となる作業データです。
 	*/
 	virtual void BeforeOperationToTarget(
 		CentDedBeforeOperationCont* pCentDedBeforeOperationCont,
 		const vector<Operation> sOperationB);
 
 	/**
-		UiDataToTarget�̕⏕
-		���Ƃ̎����⊮���s���܂�
+		UiDataToTargetの補助
+		後作業の時刻補完を行います
 		sOperationA
-			�⊮���s���f�[�^�ł��B
+			補完を行うデータです。
 		iLevelTarget
-			�Ăяo�����̊K�w�ł��B
-			����iLevel�̎q��Ƃɑ��������Ƃɂ̂݁A�⊮���s���܂�
+			呼び出し元の階層です。
+			このiLevelの子作業に相当する作業にのみ、補完を行います
 		pSourceJikoku
-			�󎞍���⊮���邽�߂̊�����ł��A�K�v�ɉ����������s���܂�
+			空時刻を補完するための基準時刻です、必要に応じ書換も行います
 		bSupplyFromFront
-			�����̃`�F�b�N���A��Ƃ̑O��ǂ��炩��s�������w�肵�܂��B
+			時刻のチェックを、作業の前後どちらから行うかを指定します。
 		bIsTeisya
-			�w��������Ԃ��ۂ��B�w��������Ԃ̏ꍇ�̂݁A�H���O�����̓��w���E�������̕⊮���s���܂��B
+			駅扱いが停車か否か。駅扱いが停車の場合のみ、路線外発着の当駅着・発時刻の補完を行います。
 	*/
 	virtual void AfterOperationComplement(
 		vector<Operation>& sOperationA,
@@ -745,57 +745,57 @@ protected:
 		const bool bIsTeisya);
 
 	/**
-		UiDataToTarget�̕⏕
-		���Ƃ̔��f���s���܂�
+		UiDataToTargetの補助
+		後作業の反映を行います
 		pCentDedAfterOperationCont
-			���f�ΏۂƂȂ�AfterCont�ł��B
+			反映対象となるAfterContです。
 		sOperationA
-			���f���ƂȂ��ƃf�[�^�ł��B
+			反映元となる作業データです。
 	*/
 	virtual void AfterOperationToTarget(
 		CentDedAfterOperationCont* pCentDedAfterOperationCont,
 		const vector<Operation> sOperationA);
 	/**
-		UiData �̓��e���ATarget�ɔ��f���܂��B
+		UiData の内容を、Targetに反映します。
 		
 		CPropEditUi2::EndEdit()
-		����Ăяo����܂��B
+		から呼び出されます。
 		
-		�N���X���[�U�[�́A���̊֐����I�[�o�[���C�h���āA
-		UiData�̃����o�̓��e���ATarget �̃v���p�e�B�ɔ��f���鏈����
-		�������Ă��������B
+		クラスユーザーは、この関数をオーバーライドして、
+		UiDataのメンバの内容を、Target のプロパティに反映する処理を
+		実装してください。
 		
-		�V�K�I�u�W�F�N�g�ɑ΂���v���p�e�B�̕ҏW�̏ꍇ�́A
-		UiData�̂��ׂẴ����o�[���ATarget�ɔ��f����K�v������܂��B
+		新規オブジェクトに対するプロパティの編集の場合は、
+		UiDataのすべてのメンバーを、Targetに反映する必要があります。
 
-		�����I�u�W�F�N�g�ɑ΂���v���p�e�B�ҏW�̏ꍇ�́A
-		���[�U�[�ɂ���Ēl�̕ύX���ꂽ�����o�[�݂̂�
-		Target�ɔ��f���Ă��������B
-		pUiData �� pUiDataStartEdit �Ƃ̊ԂňႢ�̂���f�[�^�����o�[���A
-		���[�U�[�ɂ���Ēl�̕ύX���ꂽ�����o�[�ł��B
+		既存オブジェクトに対するプロパティ編集の場合は、
+		ユーザーによって値の変更されたメンバーのみを
+		Targetに反映してください。
+		pUiData と pUiDataStartEdit との間で違いのあるデータメンバーが、
+		ユーザーによって値の変更されたメンバーです。
 		
-		CPropEditUi2 �́A CheckUiData() ������I��������ɂ���
-		UiDataToTarget() ���Ăяo���܂��B
-		�]���܂��āA���̊֐��ł́ACheckUiData() �ł���Ă���悤��
-		�l�̌��؂��s���K�v�͂���܂���B
+		CPropEditUi2 は、 CheckUiData() が正常終了した後にだけ
+		UiDataToTarget() を呼び出します。
+		従いまして、この関数では、CheckUiData() でやっているような
+		値の検証を行う必要はありません。
 		
 	@param bNewItem [in]
-		-true: �V�K�I�u�W�F�N�g�ɑ΂���A�v���p�e�B�̕ҏW
-		-false: �����I�u�W�F�N�g�ɑ΂���A�v���p�e�B�̕ҏW
+		-true: 新規オブジェクトに対する、プロパティの編集
+		-false: 既存オブジェクトに対する、プロパティの編集
 	@param pUiData [in]
-		UiData �̃I�u�W�F�N�g�B
+		UiData のオブジェクト。
 	@param pUiDataStartEdit [in]
-		StartEdit()�I����� UiData �̃R�s�[�ł��B
-		���̊֐��ł́A pUiDataStartEdit �� pUiData �̒l���r���邱�Ƃɂ��A
-		�u���[�U�[�ɂ���ĕύX���ꂽUiData�����o�[�v�𔻒f���邱�Ƃ�
-		�ł��܂��B
+		StartEdit()終了後の UiData のコピーです。
+		この関数では、 pUiDataStartEdit と pUiData の値を比較することにより、
+		「ユーザーによって変更されたUiDataメンバー」を判断することが
+		できます。
 	@return
-		����������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-		0�ȊO��Ԃ����ꍇ�A�߂�l�́ACPropEditUi2::EndEdit() ��
-		�߂�l�ƂȂ�܂��B
+		成功したら0以上、エラーなら負の数です。
+		0以外を返した場合、戻り値は、CPropEditUi2::EndEdit() の
+		戻り値となります。
 		
 		
-	���̊֐��̃R�[�f�B���O�̗�
+	この関数のコーディングの例
 	 --------------------------------
 	@code
 	virtual int UiDataToTarget( 
@@ -805,9 +805,9 @@ protected:
 	{
 		int iRv = 0 ; 
 		
-		if ( bNewItem || pUiDataStartEdit->�����o�[�� != pUiData->�����o�[��)
+		if ( bNewItem || pUiDataStartEdit->メンバー名 != pUiData->メンバー名)
 		{
-			//	pUiData->�����o�[�� ���ATarget �ɔ��f����R�[�h
+			//	pUiData->メンバー名 を、Target に反映するコード
 		}
 		return iRv ;
 	}
@@ -820,72 +820,72 @@ protected:
 	///@}
 protected:
 	// ================================
-	/** @name �I�[�o�[���C�g�̕K�v�ȃ��\�b�h2-UI�Ɉˑ����鏈��
-		UiData �� Ui �Ƃ̊Ԃ̃f�[�^�����̂��߂̃��\�b�h�ł��B
-		���̃O���[�v�̃��\�b�h�́A Ui �̊�(Windows,MFC�Ȃ�)
-		�Ɉˑ����鏈���������������܂��B
+	/** @name オーバーライトの必要なメソッド2-UIに依存する処理
+		UiData と Ui との間のデータ交換のためのメソッドです。
+		このグループのメソッドは、 Ui の環境(Windows,MFCなど)
+		に依存する処理だけを実装します。
 	*/
 	// ================================
 	///@{
 	/**
-		UiData�̓��e��Ui�ɔ��f���܂��B
+		UiDataの内容をUiに反映します。
 		
 		CPropEditUi2::StartEdit(),CPropEditUi2::OnUiChanged(),
 		CPropEditUi2::OnUiDataChanged(),CPropEditUi2::EndEdit()
-		����Ăяo����܂��B
+		から呼び出されます。
 		
-		�N���X���[�U�[�́A���̊֐����I�[�o�[���C�h���āA
-		UiData�̃����o�̓��e��Ui�ɕ\�����鏈�����������Ă��������B
+		クラスユーザーは、この関数をオーバーライドして、
+		UiDataのメンバの内容をUiに表示する処理を実装してください。
 	@param pUiData [in]
-		UiData �̃I�u�W�F�N�g�B
+		UiData のオブジェクト。
 	*/
 	virtual void UiDataToUi( const UIDATA* pUiData )=0 ;
 	
 	
 	/**
-		Ui�̓��͓��e��UiData�ɔ��f���܂��B
+		Uiの入力内容をUiDataに反映します。
 		
 		CPropEditUi2::OnUiChanged(),
 		CPropEditUi2::OnUiDataChanged(),CPropEditUi2::EndEdit()
-		����Ăяo����܂��B
+		から呼び出されます。
 		
-		�N���X���[�U�[�́A���̊֐����I�[�o�[���C�h���āA
-		Ui �ւ̕ύX���e��UiData �ɔ��f���鏈�����������Ă��������B
+		クラスユーザーは、この関数をオーバーライドして、
+		Ui への変更内容をUiData に反映する処理を実装してください。
 	@param pUiData [out]
-		UiData �̃I�u�W�F�N�g�B
+		UiData のオブジェクト。
 	*/
 	virtual void UiDataFromUi( UIDATA* pUiData ) =0 ;
 	
 	/**
-		��ʏ�ɃG���[���b�Z�[�W��\�����܂��B
+		画面上にエラーメッセージを表示します。
 
-		�N���X���[�U�[�́A���̊֐����I�[�o�[���C�h���āA
-		�G���[���b�Z�[�W��\�����鏈�����������Ă��������B
+		クラスユーザーは、この関数をオーバーライドして、
+		エラーメッセージを表示する処理を実装してください。
 		
-		MFC�A�v���P�[�V�����ł́A�ʏ�́A���b�Z�[�W�{�b�N�X��\�����܂��B
+		MFCアプリケーションでは、通常は、メッセージボックスを表示します。
 	@param strErrorReason [in]
-		�G���[�̓��e������������
+		エラーの内容を示す文字列
 	@param strInfo [in]
-        �G���[�̕⏕��������������B�s�v�ł���΁A�󕶎����
-        �w�肵�Ă��������B
+        エラーの補助情報を示す文字列。不要であれば、空文字列を
+        指定してください。
 	*/
 	virtual void ShowError( 
 		const tstring& strErrorReason ,
 		const tstring& strInfo = _T("") ) =0 ;
 	
 	/**
-		Ui ��̓���̃R���g���[���ɁA�t�H�[�J�X��ݒ肵�܂��B
+		Ui 上の特定のコントロールに、フォーカスを設定します。
 
-		�N���X���[�U�[�́A���̊֐����I�[�o�[���C�h���āA
-		�w�肳�ꂽ�R���g���[���Ƀt�H�[�J�X��ݒ肷�鏈�����������Ă��������B
+		クラスユーザーは、この関数をオーバーライドして、
+		指定されたコントロールにフォーカスを設定する処理を実装してください。
 		
 	@param iOffsetofUiDataMember [in]
-		�t�H�[�J�X��ݒ肷��ҏW���ڂ��w�肵�Ă��������B
-		UiData���̑ΏۂƂȂ�f�[�^�����o�́A�\���̂̐擪�A�h���X�����
-		�I�t�Z�b�g���w�肵�Ă��������B
+		フォーカスを設定する編集項目を指定してください。
+		UiData内の対象となるデータメンバの、構造体の先頭アドレスからの
+		オフセットを指定してください。
 
-	��:�t�H�[�J�X���AUiData�̃����o strNumber ����͂���R���g���[���ɐݒ�
-		����ꍇ�́A�ȉ��̂悤�ɂ��Ă��������B
+	例:フォーカスを、UiDataのメンバ strNumber を入力するコントロールに設定
+		する場合は、以下のようにしてください。
 	@code
 		SetFocus2( offsetof(UIDATA,strNumber ) ) ;
 	@endcode
@@ -899,20 +899,20 @@ protected:
 
 public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	/**
 	@param bNewItem [in]
-		�ҏW�Ώۂ��w�肵�Ă��������B
-		- true: �V�K�I�u�W�F�N�g�ɑ΂���A�v���p�e�B�̕ҏW
-		- false: �����I�u�W�F�N�g�ɑ΂���A�v���p�e�B�̕ҏW
+		編集対象を指定してください。
+		- true: 新規オブジェクトに対する、プロパティの編集
+		- false: 既存オブジェクトに対する、プロパティの編集
 	@param pTarget [in,out]
-	 �ҏW�ΏہB�R���X�g���N�^�Ō��܂�܂��B
-	 ��Ԃ��i�[�����R���e�i�ł��B
+	 編集対象。コンストラクタで決まります。
+	 列車を格納したコンテナです。
 	@param pbModifyHatsujikoku [in,out]
-	 �����̌J�グ�E�J�艺����ON/OFF��ێ�����ϐ��ւ̃|�C���^�B
+	 時刻の繰上げ・繰り下げのON/OFFを保持する変数へのポインタ。
 	@param iEkiOrder [in]
-		�ҏW�Ώۂ̉w�����̉wOrder�ł��B
+		編集対象の駅時刻の駅Orderです。
 	*/
 	CPropEditUI_Operation( 
 		bool bNewItem , 

@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(–ó: 
+(è¨³: 
 
-	OuDia - —ñÔ•\‚ğ‚à‚Æ‚ÉAƒ_ƒCƒ„ƒOƒ‰ƒ€‚ğ•`‰æ‚·‚éWin32ƒAƒvƒŠƒP[ƒV
-ƒ‡ƒ“B
+	OuDia - åˆ—è»Šæ™‚åˆ»è¡¨ã‚’ã‚‚ã¨ã«ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚’æç”»ã™ã‚‹Win32ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·
+ãƒ§ãƒ³ã€‚
 
 Copyright (C) 2006-2017 take-okm 
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍƒtƒŠ[ƒ\ƒtƒgƒEƒFƒA‚Å‚·B‚ ‚È‚½‚Í‚±‚ê‚ğAƒtƒŠ[ƒ\ƒtƒgƒEƒFƒAà
-’c‚É‚æ‚Á‚Ä”­s‚³‚ê‚½GNU ˆê”ÊŒöO—˜—p‹–‘ø‘(ƒo[ƒWƒ‡ƒ“3‚©A‚»‚êˆÈ~‚Ìƒo[ƒWƒ‡
-ƒ“‚Ì‚¤‚¿‚Ç‚ê‚©)‚ª’è‚ß‚éğŒ‚Ì‰º‚ÅÄ”Ğ•z‚Ü‚½‚Í‰ü•Ï ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚ã‚ãªãŸã¯ã“ã‚Œã‚’ã€ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢è²¡
+å›£ã«ã‚ˆã£ã¦ç™ºè¡Œã•ã‚ŒãŸGNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸(ãƒãƒ¼ã‚¸ãƒ§ãƒ³3ã‹ã€ãã‚Œä»¥é™ã®ãƒãƒ¼ã‚¸ãƒ§
+ãƒ³ã®ã†ã¡ã©ã‚Œã‹)ãŒå®šã‚ã‚‹æ¡ä»¶ã®ä¸‹ã§å†é ’å¸ƒã¾ãŸã¯æ”¹å¤‰ ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚Í—L—p‚Å‚ ‚é‚±‚Æ‚ğŠè‚Á‚Ä”Ğ•z‚³‚ê‚Ü‚·‚ªA*‘S‚­‚Ì–³•ÛØ *‚Å‚·B
-¤‹Æ‰Â”\«‚Ì•ÛØ‚â“Á’è–Ú“I‚Ö‚Ì“K‡«‚ÍAŒ¾ŠO‚É¦‚³‚ê‚½‚à‚Ì‚à ŠÜ‚ßA‘S‚­‘¶İ
-‚µ‚Ü‚¹‚ñBÚ‚µ‚­‚ÍGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ğ‚²——‚­‚¾‚³‚¢B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯æœ‰ç”¨ã§ã‚ã‚‹ã“ã¨ã‚’é¡˜ã£ã¦é ’å¸ƒã•ã‚Œã¾ã™ãŒã€*å…¨ãã®ç„¡ä¿è¨¼ *ã§ã™ã€‚
+å•†æ¥­å¯èƒ½æ€§ã®ä¿è¨¼ã‚„ç‰¹å®šç›®çš„ã¸ã®é©åˆæ€§ã¯ã€è¨€å¤–ã«ç¤ºã•ã‚ŒãŸã‚‚ã®ã‚‚ å«ã‚ã€å…¨ãå­˜åœ¨
+ã—ã¾ã›ã‚“ã€‚è©³ã—ãã¯GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã‚’ã”è¦§ãã ã•ã„ã€‚
 
-‚ ‚È‚½‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚Æ‹¤‚ÉAGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ÌƒRƒs[‚ğˆê•” ó‚¯æ‚Á
-‚Ä‚¢‚é‚Í‚¸‚Å‚·B‚à‚µó‚¯æ‚Á‚Ä‚¢‚È‚¯‚ê‚ÎA<http://www.gnu.org/licenses/> ‚ğ
-‚²——‚­‚¾‚³‚¢B
+ã‚ãªãŸã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¨å…±ã«ã€GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã®ã‚³ãƒ”ãƒ¼ã‚’ä¸€éƒ¨ å—ã‘å–ã£
+ã¦ã„ã‚‹ã¯ãšã§ã™ã€‚ã‚‚ã—å—ã‘å–ã£ã¦ã„ãªã‘ã‚Œã°ã€<http://www.gnu.org/licenses/> ã‚’
+ã”è¦§ãã ã•ã„ã€‚
 
 )
 
-  ‰Á‚¦‚ÄA“Á•Ê‚È—áŠO‚Æ‚µ‚ÄAtake-okm ‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÌƒR[ƒh‚ğ 
+  åŠ ãˆã¦ã€ç‰¹åˆ¥ãªä¾‹å¤–ã¨ã—ã¦ã€take-okm ã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ã‚³ãƒ¼ãƒ‰ã‚’ 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ‚ ‚é‚¢‚Í "MFC Version 9.0" ‚Æ“¯‚¶ƒ‰ƒCƒZƒ“ƒX‚ª“K—p‚³‚ê‚½
-  "MFC Version 9.0" ‚Ì‰ü•Ï‚³‚ê‚½ƒo[ƒWƒ‡ƒ“)‚ÆƒŠƒ“ƒN‚µA
-  ƒŠƒ“ƒN‚³‚ê‚½—¼Ò‚ğŠÜ‚ŞŒ‹‡’˜ì•¨‚ğ”Ğ•z‚·‚é‹–‰Â‚ğ—^‚¦‚Ü‚·B
-  ‚ ‚È‚½‚Í "MFC" ˆÈŠO‚Åg‚í‚ê‚Ä‚¢‚é‚·‚×‚Ä
-  ‚ÌƒR[ƒh‚ÉŠÖ‚µ‚Ä‚Í‘S–Ê“I‚ÉGNUˆê”ÊŒöO—˜—p‹–‘øŒ_–ñ‘‚É]‚í‚È‚¯‚ê‚Î
-  ‚È‚è‚Ü‚¹‚ñB‚ ‚È‚½‚ª‚±‚Ìƒtƒ@ƒCƒ‹‚ğ‰ü•Ï‚µ‚½‚È‚ç‚ÎA‚ ‚È‚½‚Í‚±‚Ì—áŠO
-  ‚ğ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚Ìƒtƒ@ƒCƒ‹‚Éˆø‚«‘±‚«İ‚¯‚é‚±‚Æ‚à‚Å‚«‚Ü‚·‚ªA‚»
-  ‚¤‚·‚é‹`–±‚Í‚ ‚è‚Ü‚¹‚ñB‚à‚µ—áŠO‚ğİ‚¯‚½‚­‚È‚¯‚ê‚ÎA‚±‚Ì—áŠOğ€‚ğ
-  ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚©‚ç‚Ííœ‚µ‚Ä‚­‚¾‚³‚¢B)
+  (  ã‚ã‚‹ã„ã¯ "MFC Version 9.0" ã¨åŒã˜ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ãŒé©ç”¨ã•ã‚ŒãŸ
+  "MFC Version 9.0" ã®æ”¹å¤‰ã•ã‚ŒãŸãƒãƒ¼ã‚¸ãƒ§ãƒ³)ã¨ãƒªãƒ³ã‚¯ã—ã€
+  ãƒªãƒ³ã‚¯ã•ã‚ŒãŸä¸¡è€…ã‚’å«ã‚€çµåˆè‘—ä½œç‰©ã‚’é ’å¸ƒã™ã‚‹è¨±å¯ã‚’ä¸ãˆã¾ã™ã€‚
+  ã‚ãªãŸã¯ "MFC" ä»¥å¤–ã§ä½¿ã‚ã‚Œã¦ã„ã‚‹ã™ã¹ã¦
+  ã®ã‚³ãƒ¼ãƒ‰ã«é–¢ã—ã¦ã¯å…¨é¢çš„ã«GNUä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾å¥‘ç´„æ›¸ã«å¾“ã‚ãªã‘ã‚Œã°
+  ãªã‚Šã¾ã›ã‚“ã€‚ã‚ãªãŸãŒã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ”¹å¤‰ã—ãŸãªã‚‰ã°ã€ã‚ãªãŸã¯ã“ã®ä¾‹å¤–
+  ã‚’ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®ãƒ•ã‚¡ã‚¤ãƒ«ã«å¼•ãç¶šãè¨­ã‘ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ãŒã€ã
+  ã†ã™ã‚‹ç¾©å‹™ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ã‚‚ã—ä¾‹å¤–ã‚’è¨­ã‘ãŸããªã‘ã‚Œã°ã€ã“ã®ä¾‹å¤–æ¡é …ã‚’
+  ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‹ã‚‰ã¯å‰Šé™¤ã—ã¦ãã ã•ã„ã€‚)
 */
 /*
 // ****************************************************************
@@ -69,12 +69,12 @@ Copyright (C) 2006-2017 take-okm
 // ****************************************************************
 */
 /** @file */
-#include "DcdGrid\WndDcdGrid3\CBoxSelect.h"
-#include "DcdGrid\WndDcdGrid3\CWndDcdGrid.h"
-#include "DcdGrid\WndDcdGrid3\CPropStack.h"
-#include "DcdGrid\CDcdGridCell.h"
-#include "logmsg\logmsg.h"
-#include "NsOu\OuNew.h"
+#include "DcdGridÂ¥WndDcdGrid3Â¥CBoxSelect.h"
+#include "DcdGridÂ¥WndDcdGrid3Â¥CWndDcdGrid.h"
+#include "DcdGridÂ¥WndDcdGrid3Â¥CPropStack.h"
+#include "DcdGridÂ¥CDcdGridCell.h"
+#include "logmsgÂ¥logmsg.h"
+#include "NsOuÂ¥OuNew.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -88,27 +88,27 @@ namespace DcdGrid{
 namespace WndDcdGrid3{
 
 	// --------------------------------
-	///@name update_adjustProp ‰º¿ŠÖ”
+	///@name update_adjustProp ä¸‹è«‹é–¢æ•°
 	// --------------------------------
 bool CBoxSelect::update_adjustProp_updateColumnNumberSelect() 
 {
 	bool bRv = false ;
 
-	//	•ÏX‘ÎÛ‚Ì’l‚ÌƒLƒƒƒbƒVƒ…
+	//	å¤‰æ›´å¯¾è±¡ã®å€¤ã®ã‚­ãƒ£ãƒƒã‚·ãƒ¥
 	CdDcdZoneXy	zonexyColumnNumberSelectNew = m_ColumnNumberSelect ;
-	//	•ÏX‘ÎÛ‚Ì’l‚ÌƒLƒƒƒbƒVƒ…
+	//	å¤‰æ›´å¯¾è±¡ã®å€¤ã®ã‚­ãƒ£ãƒƒã‚·ãƒ¥
 	CdDcdPosXy posxyColumnNumberAnchorCellNew = m_ColumnNumberAnchorCell ;
-	//	‰Šú’l‚ÍfalseB
-	//	‚·‚×‚Ä‚ÌƒZƒ‹‚Ì‘I‘ğó‘Ô‚ğ‰ğœ‚·‚é•K—v‚ª‚ ‚é‚Æ”»’f‚³‚ê‚½“_‚Å true B
+	//	åˆæœŸå€¤ã¯falseã€‚
+	//	ã™ã¹ã¦ã®ã‚»ãƒ«ã®é¸æŠçŠ¶æ…‹ã‚’è§£é™¤ã™ã‚‹å¿…è¦ãŒã‚ã‚‹ã¨åˆ¤æ–­ã•ã‚ŒãŸæ™‚ç‚¹ã§ true ã€‚
 	bool bClearSelectRequired = false ;
 
 	CdDcdPosXy	aColumnNumberFocus = 
 		m_pCWndDcdGrid->getCFocus()->getFocusCellColumnNumber() ;
-	//aColumnNumberFocus = ƒtƒH[ƒJƒXƒZƒ‹‚Ì—ñ”Ô†
+	//aColumnNumberFocus = ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®åˆ—ç•ªå·
 
 	// ----------------------------------------------------------------
-	//	ƒAƒ“ƒJ[ƒZƒ‹‚Ì³‹K‰»(ƒAƒ“ƒJ[ƒZƒ‹‚ªƒOƒŠƒbƒh‚Ì”ÍˆÍŠO‚È‚çA
-	//	NULL ‚ÉC³
+	//	ã‚¢ãƒ³ã‚«ãƒ¼ã‚»ãƒ«ã®æ­£è¦åŒ–(ã‚¢ãƒ³ã‚«ãƒ¼ã‚»ãƒ«ãŒã‚°ãƒªãƒƒãƒ‰ã®ç¯„å›²å¤–ãªã‚‰ã€
+	//	NULL ã«ä¿®æ­£
 	// ----------------------------------------------------------------
 	if ( posxyColumnNumberAnchorCellNew != ColumnNumberPosXy_NULL() )
 	{
@@ -123,50 +123,50 @@ bool CBoxSelect::update_adjustProp_updateColumnNumberSelect()
 	}
 
 	// ----------------------------------------------------------------
-	//	ƒtƒH[ƒJƒXƒZƒ‹‚ÌˆÚ“®‚É]‚Á‚Ä
-	//	m_ColumnNumberSelect,m_ColumnNumberAnchorCell ‚ğXV‚µ‚Ü‚·B
+	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ç§»å‹•ã«å¾“ã£ã¦
+	//	m_ColumnNumberSelect,m_ColumnNumberAnchorCell ã‚’æ›´æ–°ã—ã¾ã™ã€‚
 	// ----------------------------------------------------------------
 
 	CSelect*	pCSelect = m_pCWndDcdGrid->getCSelect() ;
 	CdDcdZoneXy	zonexyColumnNumberSelectLimit = 
 		pCSelect->getColumnNumberSelectLimitRegularized() ;
-	//zonexyColumnNumberSelectLimit = ‘I‘ğ‰Â”\‚ÈƒZƒ‹‚Ì—ñ”Ô†‚Ì”ÍˆÍB
+	//zonexyColumnNumberSelectLimit = é¸æŠå¯èƒ½ãªã‚»ãƒ«ã®åˆ—ç•ªå·ã®ç¯„å›²ã€‚
 
 
 	// --------------------------------
-	// Shift‚ª‰Ÿ‚³‚ê‚½ó‘Ô‚ÅAƒhƒ‰ƒbƒOˆÈŠO‚É‚æ‚éƒtƒH[ƒJƒXˆÚ“®
-	//	  ¨BoxSelect ƒAƒ“ƒJ[ƒZƒ‹‚ÍXV‚¹‚¸‚ÉA
-	//		ƒAƒ“ƒJ[ƒZƒ‹‚ÆƒtƒH[ƒJƒXƒZƒ‹‚ÌŠÔ‚ğ‘I‘ğ—Ìˆæ‚Æ‚·‚éB
-	// ƒhƒ‰ƒbƒO‚É‚æ‚éƒtƒH[ƒJƒXˆÚ“®(MouseMove,ƒ^ƒCƒ}ƒXƒNƒ[ƒ‹)
-	//	  ¨BoxSelect@ƒAƒ“ƒJ[ƒZƒ‹‚ÍXV‚¹‚¸‚ÉA
-	//		ƒAƒ“ƒJ[ƒZƒ‹‚ÆƒtƒH[ƒJƒXƒZƒ‹‚ÌŠÔ‚ğ‘I‘ğ—Ìˆæ‚Æ‚·‚éB
+	//â–¡ShiftãŒæŠ¼ã•ã‚ŒãŸçŠ¶æ…‹ã§ã€ãƒ‰ãƒ©ãƒƒã‚°ä»¥å¤–ã«ã‚ˆã‚‹ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ç§»å‹•
+	//	  â†’BoxSelect ã‚¢ãƒ³ã‚«ãƒ¼ã‚»ãƒ«ã¯æ›´æ–°ã›ãšã«ã€
+	//		ã‚¢ãƒ³ã‚«ãƒ¼ã‚»ãƒ«ã¨ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®é–“ã‚’é¸æŠé ˜åŸŸã¨ã™ã‚‹ã€‚
+	//â–¡ãƒ‰ãƒ©ãƒƒã‚°ã«ã‚ˆã‚‹ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ç§»å‹•(MouseMove,ã‚¿ã‚¤ãƒã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«)
+	//	  â†’BoxSelectã€€ã‚¢ãƒ³ã‚«ãƒ¼ã‚»ãƒ«ã¯æ›´æ–°ã›ãšã«ã€
+	//		ã‚¢ãƒ³ã‚«ãƒ¼ã‚»ãƒ«ã¨ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®é–“ã‚’é¸æŠé ˜åŸŸã¨ã™ã‚‹ã€‚
 	// --------------------------------
 	if ( aColumnNumberFocus != CFocus::ColumnNumberPosXy_NULL() && 
 		zonexyColumnNumberSelectLimit.IsInner( aColumnNumberFocus ) &&
 		posxyColumnNumberAnchorCellNew != ColumnNumberPosXy_NULL() )
-	{	//	ƒtƒH[ƒJƒXƒZƒ‹‚ªNULLˆÈŠO‚Å‘I‘ğ‰Â”\—ÌˆæB
-		//	ƒAƒ“ƒJ[ƒZƒ‹‚ªNULLˆÈŠOB
+	{	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒNULLä»¥å¤–ã§é¸æŠå¯èƒ½é ˜åŸŸã€‚
+		//	ã‚¢ãƒ³ã‚«ãƒ¼ã‚»ãƒ«ãŒNULLä»¥å¤–ã€‚
 		bool bBoxSelecting = false ;
 		if ( m_pCWndDcdGrid->isShiftPressed() && 
 			!m_pCWndDcdGrid->isDragging() && 
 			m_ColumnNumberFocus_Old != aColumnNumberFocus ) 
-		{	// Shift‚ª‰Ÿ‚³‚ê‚½ó‘Ô‚ÅAƒhƒ‰ƒbƒOˆÈŠO‚É‚æ‚éƒtƒH[ƒJƒXˆÚ“®
-			//	  ¨BoxSelect ƒAƒ“ƒJ[ƒZƒ‹‚ÍXV‚¹‚¸‚ÉA
-			//		ƒAƒ“ƒJ[ƒZƒ‹‚ÆƒtƒH[ƒJƒXƒZƒ‹‚ÌŠÔ‚ğ‘I‘ğ—Ìˆæ‚Æ‚·‚éB
+		{	//â–¡ShiftãŒæŠ¼ã•ã‚ŒãŸçŠ¶æ…‹ã§ã€ãƒ‰ãƒ©ãƒƒã‚°ä»¥å¤–ã«ã‚ˆã‚‹ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ç§»å‹•
+			//	  â†’BoxSelect ã‚¢ãƒ³ã‚«ãƒ¼ã‚»ãƒ«ã¯æ›´æ–°ã›ãšã«ã€
+			//		ã‚¢ãƒ³ã‚«ãƒ¼ã‚»ãƒ«ã¨ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®é–“ã‚’é¸æŠé ˜åŸŸã¨ã™ã‚‹ã€‚
 			bBoxSelecting = true ;
 		}
 		else if ( m_pCWndDcdGrid->isDragging() && 
 			m_ColumnNumberFocus_Old != aColumnNumberFocus ) 
-		{	// ƒhƒ‰ƒbƒO‚É‚æ‚éƒtƒH[ƒJƒXˆÚ“®(MouseMove,ƒ^ƒCƒ}ƒXƒNƒ[ƒ‹)
-			//	  ¨BoxSelect@ƒAƒ“ƒJ[ƒZƒ‹‚ÍXV‚¹‚¸‚ÉA
-			//		ƒAƒ“ƒJ[ƒZƒ‹‚ÆƒtƒH[ƒJƒXƒZƒ‹‚ÌŠÔ‚ğ‘I‘ğ—Ìˆæ‚Æ‚·‚éB
+		{	//â–¡ãƒ‰ãƒ©ãƒƒã‚°ã«ã‚ˆã‚‹ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ç§»å‹•(MouseMove,ã‚¿ã‚¤ãƒã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«)
+			//	  â†’BoxSelectã€€ã‚¢ãƒ³ã‚«ãƒ¼ã‚»ãƒ«ã¯æ›´æ–°ã›ãšã«ã€
+			//		ã‚¢ãƒ³ã‚«ãƒ¼ã‚»ãƒ«ã¨ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®é–“ã‚’é¸æŠé ˜åŸŸã¨ã™ã‚‹ã€‚
 			bBoxSelecting = true ;
 		}
 		if ( bBoxSelecting )
 		{
 
-			//		ƒAƒ“ƒJ[ƒZƒ‹‚ÆƒtƒH[ƒJƒXƒZƒ‹‚ÌŠÔ‚ğ‘I‘ğ—Ìˆæ‚Æ‚·‚éB
-			//  @›[FocusCell‚ª m_ColumnNumberSelectLimit‚Ì”ÍˆÍ“à]
+			//		ã‚¢ãƒ³ã‚«ãƒ¼ã‚»ãƒ«ã¨ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®é–“ã‚’é¸æŠé ˜åŸŸã¨ã™ã‚‹ã€‚
+			//  ã€€â—‹[FocusCellãŒ m_ColumnNumberSelectLimitã®ç¯„å›²å†…]
 
 			//X
 			{
@@ -180,88 +180,88 @@ bool CBoxSelect::update_adjustProp_updateColumnNumberSelect()
 				int iPosMax = max( aColumnNumberFocus.getY() , posxyColumnNumberAnchorCellNew.getY() ) ;
 				zonexyColumnNumberSelectNew.setY( CdDcdZone( iPosMin , iPosMax - iPosMin + 1 ) ) ;
 			}
-			//bRv‚ÌXV‚ÍA‚±‚ÌŠÖ”‚Ì––”ö‚Ås‚¢‚Ü‚·B
+			//bRvã®æ›´æ–°ã¯ã€ã“ã®é–¢æ•°ã®æœ«å°¾ã§è¡Œã„ã¾ã™ã€‚
 		}
 	}
 	
 	// --------------------------------
-	// Ctrl‚àShift‚à‰Ÿ‚³‚ê‚È‚¢ó‘Ô‚ÅAƒhƒ‰ƒbƒO(MouseMove,ƒ^ƒCƒ}ƒXƒNƒ[ƒ‹)ˆÈŠO‚É‚æ‚éƒtƒH[ƒJƒXˆÚ“®
-	//@¨BoxSelect ƒAƒ“ƒJ[ƒZƒ‹‚ÍXVBBoxSelect—Ìˆæ‚ÍNULLB
-	//              ‚·‚×‚Ä‚ÌƒZƒ‹‚Ì‘I‘ğó‘Ô‚ğ‰ğœ
+	//â–¡Ctrlã‚‚Shiftã‚‚æŠ¼ã•ã‚Œãªã„çŠ¶æ…‹ã§ã€ãƒ‰ãƒ©ãƒƒã‚°(MouseMove,ã‚¿ã‚¤ãƒã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«)ä»¥å¤–ã«ã‚ˆã‚‹ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ç§»å‹•
+	//ã€€â†’BoxSelect ã‚¢ãƒ³ã‚«ãƒ¼ã‚»ãƒ«ã¯æ›´æ–°ã€‚BoxSelecté ˜åŸŸã¯NULLã€‚
+	//              ã™ã¹ã¦ã®ã‚»ãƒ«ã®é¸æŠçŠ¶æ…‹ã‚’è§£é™¤
 	// --------------------------------
 	if ( m_ColumnNumberFocus_Old != aColumnNumberFocus )
 	{
-		//	CRandomSelect::update_adjustProp_updateColumnNumberSelect()‚Æ
-		//	CBoxSelect::update_adjustProp_updateColumnNumberSelect() ‚É
-		//	“¯—l‚ÌğŒ‚ª‚ ‚è‚Ü‚·B
+		//	CRandomSelect::update_adjustProp_updateColumnNumberSelect()ã¨
+		//	CBoxSelect::update_adjustProp_updateColumnNumberSelect() ã«
+		//	åŒæ§˜ã®æ¡ä»¶ãŒã‚ã‚Šã¾ã™ã€‚
 		if ( !m_pCWndDcdGrid->isCtrlPressed() && 
 			!m_pCWndDcdGrid->isShiftPressed() && 
 			!m_pCWndDcdGrid->isDragging() && 
 			m_ColumnNumberFocus_Old != aColumnNumberFocus ) 
 		{
-			// Ctrl‚àShift‚à‰Ÿ‚³‚ê‚È‚¢ó‘Ô‚ÅA
-			//ƒhƒ‰ƒbƒO(MouseMove,ƒ^ƒCƒ}ƒXƒNƒ[ƒ‹)ˆÈŠO‚É‚æ‚éƒtƒH[ƒJƒXˆÚ“®
+			//â–¡Ctrlã‚‚Shiftã‚‚æŠ¼ã•ã‚Œãªã„çŠ¶æ…‹ã§ã€
+			//ãƒ‰ãƒ©ãƒƒã‚°(MouseMove,ã‚¿ã‚¤ãƒã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«)ä»¥å¤–ã«ã‚ˆã‚‹ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ç§»å‹•
 
-			//ƒAƒ“ƒJ[ƒZƒ‹‚ÍXVBBoxSelect—Ìˆæ‚ÍNULLB
+			//ã‚¢ãƒ³ã‚«ãƒ¼ã‚»ãƒ«ã¯æ›´æ–°ã€‚BoxSelecté ˜åŸŸã¯NULLã€‚
 			posxyColumnNumberAnchorCellNew = aColumnNumberFocus ;
 			zonexyColumnNumberSelectNew =  ColumnNumberZoneXy_NULL();
 
-			// ‚·‚×‚Ä‚ÌƒZƒ‹‚Ì‘I‘ğó‘Ô‚ğ‰ğœ
+			// ã™ã¹ã¦ã®ã‚»ãƒ«ã®é¸æŠçŠ¶æ…‹ã‚’è§£é™¤
 			bClearSelectRequired = true ;
 
-			//bRv‚ÌXV‚ÍA‚±‚ÌŠÖ”‚Ì––”ö‚Ås‚¢‚Ü‚·B
+			//bRvã®æ›´æ–°ã¯ã€ã“ã®é–¢æ•°ã®æœ«å°¾ã§è¡Œã„ã¾ã™ã€‚
 		}
 	}
 	// --------------------------------
-	// Ctrl‚ÍONAShift‚ÍOFF‚ÅAƒhƒ‰ƒbƒOˆÈŠO‚É‚æ‚éƒtƒH[ƒJƒXˆÚ“®
-	//@¨BoxSelect ƒAƒ“ƒJ[ƒZƒ‹‚ÍXVBBoxSelect—Ìˆæ‚Í‚»‚Ì‚Ü‚ÜB
+	//â–¡Ctrlã¯ONã€Shiftã¯OFFã§ã€ãƒ‰ãƒ©ãƒƒã‚°ä»¥å¤–ã«ã‚ˆã‚‹ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ç§»å‹•
+	//ã€€â†’BoxSelect ã‚¢ãƒ³ã‚«ãƒ¼ã‚»ãƒ«ã¯æ›´æ–°ã€‚BoxSelecté ˜åŸŸã¯ãã®ã¾ã¾ã€‚
 	// --------------------------------
 	if ( aColumnNumberFocus != CFocus::ColumnNumberPosXy_NULL() && 
 		zonexyColumnNumberSelectLimit.IsInner( aColumnNumberFocus ) )
-	{	//	ƒtƒH[ƒJƒXƒZƒ‹‚ªNULLˆÈŠO‚Å‘I‘ğ‰Â”\—ÌˆæB
-		//	ƒAƒ“ƒJ[ƒZƒ‹‚ªNULLˆÈŠOB
+	{	//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ãŒNULLä»¥å¤–ã§é¸æŠå¯èƒ½é ˜åŸŸã€‚
+		//	ã‚¢ãƒ³ã‚«ãƒ¼ã‚»ãƒ«ãŒNULLä»¥å¤–ã€‚
 
 		if ( m_pCWndDcdGrid->isCtrlPressed() && 
 			!m_pCWndDcdGrid->isShiftPressed() && 
 			!m_pCWndDcdGrid->isDragging() && 
 			m_ColumnNumberFocus_Old != aColumnNumberFocus ) 
-		{	// Ctrl‚àShift‚à‰Ÿ‚³‚ê‚È‚¢ó‘Ô‚ÅA
-			//ƒhƒ‰ƒbƒO(MouseMove,ƒ^ƒCƒ}ƒXƒNƒ[ƒ‹)ˆÈŠO‚É‚æ‚éƒtƒH[ƒJƒXˆÚ“®
+		{	//â–¡Ctrlã‚‚Shiftã‚‚æŠ¼ã•ã‚Œãªã„çŠ¶æ…‹ã§ã€
+			//ãƒ‰ãƒ©ãƒƒã‚°(MouseMove,ã‚¿ã‚¤ãƒã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«)ä»¥å¤–ã«ã‚ˆã‚‹ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ç§»å‹•
 
-			//ƒAƒ“ƒJ[ƒZƒ‹‚ÍXVBBoxSelect—Ìˆæ‚Í‚»‚Ì‚Ü‚ÜB
+			//ã‚¢ãƒ³ã‚«ãƒ¼ã‚»ãƒ«ã¯æ›´æ–°ã€‚BoxSelecté ˜åŸŸã¯ãã®ã¾ã¾ã€‚
 			posxyColumnNumberAnchorCellNew = aColumnNumberFocus ;
 		}
 	}
 
 	// ----------------------------------------------------------------
-	//	posxyColumnNumberAnchorCellNewEm_ColumnNumberSelect ‚ğ³‹K‰»‚µ‚Ü‚·B
+	//	posxyColumnNumberAnchorCellNewãƒ»m_ColumnNumberSelect ã‚’æ­£è¦åŒ–ã—ã¾ã™ã€‚
 	// ----------------------------------------------------------------
 	// --------------------------------
-	//	‘I‘ğƒZƒ‹‚ğA§ŒÀ‚Å•â³
+	//	é¸æŠã‚»ãƒ«ã‚’ã€åˆ¶é™ã§è£œæ­£
 	// --------------------------------
 
 
-	//	‘I‘ğƒZƒ‹‚ÍA‘I‘ğ‰Â”\§ŒÀ”ÍˆÍ“à‚É‚·‚éB
-	//›[m_ColumnNumberSelect!=NULL]
-	//@›m_ColumnNumberSelect ‚ÍA m_ColumnNumberSelectLimit ‚Ì”ÍˆÍ“à‚É‚·‚éB
-	//@›[SelectMode=SelectMode_XColumn]
+	//	é¸æŠã‚»ãƒ«ã¯ã€é¸æŠå¯èƒ½åˆ¶é™ç¯„å›²å†…ã«ã™ã‚‹ã€‚
+	//â—‹[m_ColumnNumberSelect!=NULL]
+	//ã€€â—‹m_ColumnNumberSelect ã¯ã€ m_ColumnNumberSelectLimit ã®ç¯„å›²å†…ã«ã™ã‚‹ã€‚
+	//ã€€â—‹[SelectMode=SelectMode_XColumn]
 	//     m_ColumnNumberSelect.Y = m_ColumnNumberSelectLimit.Y
-	//@›[SelectMode=SelectMode_YColumn]
+	//ã€€â—‹[SelectMode=SelectMode_YColumn]
 	//     m_ColumnNumberSelect.X = m_ColumnNumberSelectLimit.X
 	if ( zonexyColumnNumberSelectNew != ColumnNumberZoneXy_NULL() ) 
 	{
-		//@›m_ColumnNumberSelect ‚ÍA m_ColumnNumberSelectLimit ‚Ì”ÍˆÍ“à‚É‚·‚éB
+		//ã€€â—‹m_ColumnNumberSelect ã¯ã€ m_ColumnNumberSelectLimit ã®ç¯„å›²å†…ã«ã™ã‚‹ã€‚
 		zonexyColumnNumberSelectNew = 
 			zonexyColumnNumberSelectLimit.CrossZone( zonexyColumnNumberSelectNew ) ;
 
 
-		//@›[SelectMode=SelectMode_XColumn]
+		//ã€€â—‹[SelectMode=SelectMode_XColumn]
 		//     m_ColumnNumberSelect.Y = m_ColumnNumberSelectLimit.Y
 		if ( pCSelect->getSelectMode() == CSelect::SelectMode_XColumn )
 		{
 			zonexyColumnNumberSelectNew.setY( zonexyColumnNumberSelectLimit.getY() ) ;
 		}
-		//@›[SelectMode=SelectMode_YColumn]
+		//ã€€â—‹[SelectMode=SelectMode_YColumn]
 		//     m_ColumnNumberSelect.X = m_ColumnNumberSelectLimit.X
 		if ( pCSelect->getSelectMode() == CSelect::SelectMode_YColumn )
 		{
@@ -270,7 +270,7 @@ bool CBoxSelect::update_adjustProp_updateColumnNumberSelect()
 
 	}
 	// ----------------------------------------------------------------
-	//	‘®«‚ÌXV
+	//	å±æ€§ã®æ›´æ–°
 	// ----------------------------------------------------------------
 	if ( m_ColumnNumberSelect != zonexyColumnNumberSelectNew )
 	{
@@ -282,18 +282,18 @@ bool CBoxSelect::update_adjustProp_updateColumnNumberSelect()
 		m_ColumnNumberAnchorCell = posxyColumnNumberAnchorCellNew ;
 		bRv = true ;
 	}
-	if ( bClearSelectRequired ){	// ‚·‚×‚Ä‚ÌƒZƒ‹‚Ì‘I‘ğó‘Ô‚ğ‰ğœ
+	if ( bClearSelectRequired ){	// ã™ã¹ã¦ã®ã‚»ãƒ«ã®é¸æŠçŠ¶æ…‹ã‚’è§£é™¤
 		m_pCWndDcdGrid->getCSelect()->clearSelect() ;
 		bRv = true ;
 	}
 	// --------------------------------
-	//	‘O‰ñ’l‚ÌXV
+	//	å‰å›å€¤ã®æ›´æ–°
 	// --------------------------------
 	m_ColumnNumberFocus_Old = aColumnNumberFocus ;
 	// --------------------------------
 	
-	LogMsg(_T("CBoxSelect::update_adjustProp_updateColumnNumberSelect\n"
-		"\tm_ColumnNumberSelect.x=(%d,%d) y=(%d,%d)\n") ,
+	LogMsg(_T("CBoxSelect::update_adjustProp_updateColumnNumberSelectÂ¥n"
+		"Â¥tm_ColumnNumberSelect.x=(%d,%d) y=(%d,%d)Â¥n") ,
 		m_ColumnNumberSelect.getX().getPos() , 
 		m_ColumnNumberSelect.getX().getSize() , 
 		m_ColumnNumberSelect.getY().getPos() , 
@@ -313,8 +313,8 @@ bool CBoxSelect::update_adjustProp_updateCSelectCell()
 		Ou<CPropStack> pPropStack = createPropStackForSelectChange() ;
 
 		// --------------------------------
-		//	ƒZƒ‹‚Ì‘I‘ğó‹µ‚Ì•Ï‰»‚ğ
-		//	CSelectCell ‚É”½‰f‚µ‚Ü‚·
+		//	ã‚»ãƒ«ã®é¸æŠçŠ¶æ³ã®å¤‰åŒ–ã‚’
+		//	CSelectCell ã«åæ˜ ã—ã¾ã™
 		// --------------------------------
 		for ( int iYColumnNumber = 0 ; 
 			iYColumnNumber < pCXDcdGrid->getYColumnCount() ; 
@@ -354,25 +354,25 @@ Ou<CPropStack> CBoxSelect::createPropStackForSelectChange()
 
 
 	// --------------------------------
-	//@name CWndDcdGrid ‚©‚ç‚ÌˆÏ÷
+	//@name CWndDcdGrid ã‹ã‚‰ã®å§”è­²
 	// --------------------------------
 bool CBoxSelect::update_adjustProp() 
 {
 	bool	bRv = false ;
 	if ( m_bIsEnable )
 	{
-		//	ƒtƒH[ƒJƒXƒZƒ‹‚ÌˆÚ“®‚É]‚Á‚ÄA
-		//	m_ColumnNumberAnchorCell , m_ColumnNumberSelect ‚ğXV‚µ‚Ü‚·B
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ç§»å‹•ã«å¾“ã£ã¦ã€
+		//	m_ColumnNumberAnchorCell , m_ColumnNumberSelect ã‚’æ›´æ–°ã—ã¾ã™ã€‚
 		//	
-		//	m_ColumnNumberAnchorCellEm_ColumnNumberSelect ‚ğ³‹K‰»‚µ‚Ü‚·B
+		//	m_ColumnNumberAnchorCellãƒ»m_ColumnNumberSelect ã‚’æ­£è¦åŒ–ã—ã¾ã™ã€‚
 		bRv |= update_adjustProp_updateColumnNumberSelect() ;
 
-		//	‘I‘ğƒZƒ‹‚Ìó‘Ô‚ğACSelectCell ‚É”½‰f‚·‚é
+		//	é¸æŠã‚»ãƒ«ã®çŠ¶æ…‹ã‚’ã€CSelectCell ã«åæ˜ ã™ã‚‹
 		bRv |= update_adjustProp_updateCSelectCell() ;
 	}
 	else
 	{
-		//	ƒZƒ‹‘I‘ğ‚ğƒNƒŠƒA‚·‚é
+		//	ã‚»ãƒ«é¸æŠã‚’ã‚¯ãƒªã‚¢ã™ã‚‹
 		m_ColumnNumberAnchorCell = ColumnNumberPosXy_NULL() ;
 		m_ColumnNumberSelect = ColumnNumberZoneXy_NULL() ;
 	}
@@ -381,7 +381,7 @@ bool CBoxSelect::update_adjustProp()
 }
 bool CBoxSelect::update_updateScreen() 
 {
-	//	‚±‚ÌƒNƒ‰ƒX‚Å‚Íˆ—‚Í‚ ‚è‚Ü‚¹‚ñ(Ä•`‰æ‚ÍACSelect ‚É‚Äs‚í‚ê‚Ü‚·)
+	//	ã“ã®ã‚¯ãƒ©ã‚¹ã§ã¯å‡¦ç†ã¯ã‚ã‚Šã¾ã›ã‚“(å†æç”»ã¯ã€CSelect ã«ã¦è¡Œã‚ã‚Œã¾ã™)
 	m_ColumnNumberSelect_Old = m_ColumnNumberSelect ;
 	return false ;
 }
@@ -389,30 +389,30 @@ bool CBoxSelect::update_updateScreen()
 
 bool CBoxSelect::OnPaint( IfDcdTarget* pIfDcdTarget ) 
 {
-	//	‚±‚ÌƒNƒ‰ƒX‚Å‚Íˆ—‚Í‚ ‚è‚Ü‚¹‚ñ(Ä•`‰æ‚ÍACSelect ‚É‚Äs‚í‚ê‚Ü‚·)
+	//	ã“ã®ã‚¯ãƒ©ã‚¹ã§ã¯å‡¦ç†ã¯ã‚ã‚Šã¾ã›ã‚“(å†æç”»ã¯ã€CSelect ã«ã¦è¡Œã‚ã‚Œã¾ã™)
 	return false ;
 }
 
 void CBoxSelect::InvalidateGrid( ) 
 {
-	//	‚±‚ÌƒNƒ‰ƒX‚Å‚Íˆ—‚Í‚ ‚è‚Ü‚¹‚ñ(Ä•`‰æ‚ÍACSelect ‚É‚Äs‚í‚ê‚Ü‚·)
+	//	ã“ã®ã‚¯ãƒ©ã‚¹ã§ã¯å‡¦ç†ã¯ã‚ã‚Šã¾ã›ã‚“(å†æç”»ã¯ã€CSelect ã«ã¦è¡Œã‚ã‚Œã¾ã™)
 }
 void CBoxSelect::OnSize(UINT nType, int cx, int cy)
 {
-	//	‚±‚ÌƒNƒ‰ƒX‚Å‚ÍAˆ—‚Í‚ ‚è‚Ü‚¹‚ñB
+	//	ã“ã®ã‚¯ãƒ©ã‚¹ã§ã¯ã€å‡¦ç†ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
 }
 void CBoxSelect::OnSetFocus(CWnd* pOldWnd)
 {
-	//	‚±‚ÌƒNƒ‰ƒX‚Å‚ÍAˆ—‚Í‚ ‚è‚Ü‚¹‚ñB
+	//	ã“ã®ã‚¯ãƒ©ã‚¹ã§ã¯ã€å‡¦ç†ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
 }
 
 void CBoxSelect::OnKillFocus(CWnd* pNewWnd)
 {
-	//	‚±‚ÌƒNƒ‰ƒX‚Å‚ÍAˆ—‚Í‚ ‚è‚Ü‚¹‚ñB
+	//	ã“ã®ã‚¯ãƒ©ã‚¹ã§ã¯ã€å‡¦ç†ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
 }
 
 	// ********************************
-	//	ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	//	ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 	// ********************************
 CBoxSelect::CBoxSelect( CWndDcdGrid* pCWndDcdGrid ) 
 	: m_pCWndDcdGrid( pCWndDcdGrid ) 
@@ -425,11 +425,11 @@ CBoxSelect::CBoxSelect( CWndDcdGrid* pCWndDcdGrid )
 }
 
 
-CBoxSelect::~CBoxSelect() 
+CBoxSelect::â€¾CBoxSelect() 
 {
 }
 	// ********************************
-	//@name CSelect ŠÖ˜A
+	//@name CSelect é–¢é€£
 	// ********************************
 CWndDcdGrid* CBoxSelect::getCWndDcdGrid() 
 {
@@ -437,7 +437,7 @@ CWndDcdGrid* CBoxSelect::getCWndDcdGrid()
 }
 
 	// ********************************
-	//@name CSelect ‘®«
+	//@name CSelect å±æ€§
 	// ********************************
 bool CBoxSelect::getIsEnable()
 {
@@ -462,10 +462,10 @@ void CBoxSelect::setColumnNumberSelect( const CdDcdZoneXy& value )
 }
 
 	// ********************************
-	//@name CSelect W–ñ
+	//@name CSelect é›†ç´„
 	// ********************************
 	// ********************************
-	//@name CSelect ‘€ì
+	//@name CSelect æ“ä½œ
 	// ********************************
 void CBoxSelect::clearSelect() 
 {

@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -76,32 +76,32 @@ Copyright (C) 2006-2017 take-okm
 */
 #include "stdafx.h"
 
-#include "..\resource.h"
+#include "..¥resource.h"
 
 #include "DcDraw/CDcdTargetGetDC.h"
 #include "logmsg/LogMsg.h"
 #include "NsOu/OuNew.h"
 #include "NsOu/dynamic_castOu.h"
 
-#include "DcdCd\DcDrawProp\CdFontProp.h"
-#include "DcDraw\CDcdTarget.h"
-#include "DcDraw\CDcDeviceUnitSizeX.h"
-#include "DcDraw\CDcDeviceUnitSizeY.h"
-#include "DcDraw\CDcdText.h"
-#include "DcDraw\CaDcdTargetItemPosition.h"
-#include "DcDraw\CDcdLine.h"
-#include "DcDraw\CDcdTargetGetDC.h"
-#include "DcDraw\CConverter_Wingdi.h"
+#include "DcdCd¥DcDrawProp¥CdFontProp.h"
+#include "DcDraw¥CDcdTarget.h"
+#include "DcDraw¥CDcDeviceUnitSizeX.h"
+#include "DcDraw¥CDcDeviceUnitSizeY.h"
+#include "DcDraw¥CDcdText.h"
+#include "DcDraw¥CaDcdTargetItemPosition.h"
+#include "DcDraw¥CDcdLine.h"
+#include "DcDraw¥CDcdTargetGetDC.h"
+#include "DcDraw¥CConverter_Wingdi.h"
 
-#include "..\entDed\CentDedRosen.h"
-#include "..\DiagramEdit.h"
-#include "..\CRfEditCmdHolder.h"
-#include "..\DedRosenFileData\EditCmd\EditCmd.h"
+#include "..¥entDed¥CentDedRosen.h"
+#include "..¥DiagramEdit.h"
+#include "..¥CRfEditCmdHolder.h"
+#include "..¥DedRosenFileData¥EditCmd¥EditCmd.h"
 #include "CWndDcdGridEkiJikokuhyouList.h"
-#include <NsMu\CaMui.h>
+#include <NsMu¥CaMui.h>
 #include "CconvEkiJikokuhyouCsv.h"
-#include "str\CsvDocument\CconvCsvDocument.h"
-#include "str\vectorToFile.h"
+#include "str¥CsvDocument¥CconvCsvDocument.h"
+#include "str¥vectorToFile.h"
 
 
 #ifdef _DEBUG
@@ -110,7 +110,7 @@ Copyright (C) 2006-2017 take-okm
 static char THIS_FILE[] = __FILE__;
 #endif
 
-/** �z�� a �̗v�f����Ԃ��܂��B */
+/** 配列 a の要素数を返します。 */
 #define arrayof(a) (sizeof(a)/sizeof(a[0]))
 
 
@@ -123,7 +123,7 @@ using namespace std ;
 //	CWndDcdGridEkiJikokuhyouList
 // ****************************************************************
 // --------------------------------
-//@name �����֐�
+//@name 下請関数
 // --------------------------------
 	
 //CDcdTextbox	CWndDcdGridEkiJikokuhyouList::getCDcdEkiIndex()const
@@ -134,15 +134,15 @@ using namespace std ;
 //	CdFontProp aCdFontProp(9, _T("Meiryo UI"));
 //	return CDcdTextbox(_T(""),
 //		aCdFontProp,
-//		_T("���s"), 1, 2, 2, CdPenProp(),
+//		_T("京都"), 1, 2, 2, CdPenProp(),
 //		CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH));
 //};
 
 CDcdTextbox	CWndDcdGridEkiJikokuhyouList::getCDcdEkimei()const
 {
 	tstring strExtent = getCDiagramEditDoc()->getCDedRosenFileData()->getCdDedDispProp().createEkimeiExtentString() ;
-	//strExtent = �H���t�@�C���f�[�^�ɕۑ�����Ă���l�����Ƃɂ��āA
-	//	�쐬�����A�����񕝂̊������ł��B
+	//strExtent = 路線ファイルデータに保存されている値をもとにして、
+	//	作成した、文字列幅の基準文字列です。
 
 	//CdFontProp aCdFontProp( getCDiagramEditDoc()->getCDedRosenFileData()->
 	//	getCdDedDispProp().getJikokuhyouFont() ) ;
@@ -162,7 +162,7 @@ CDcdTextbox	CWndDcdGridEkiJikokuhyouList::getCDcdEkiJikokuhyou()const
 	CdFontProp aCdFontProp(9, _T("Meiryo UI"));
 	return CDcdTextbox(_T("") ,
 		aCdFontProp ,
-		_T("���s���s���s") , 1 , 2 , 2 , CdPenProp() ,
+		_T("京都京都京都") , 1 , 2 , 2 , CdPenProp() ,
 		CConverter_WinGdi().CdBrushPropOf( WHITE_BRUSH ) ) ;
 };
 //	
@@ -174,7 +174,7 @@ CDcdTextbox	CWndDcdGridEkiJikokuhyouList::getCDcdEkiJikokuhyou()const
 //	CdFontProp aCdFontProp(9, _T("Meiryo UI"));
 //	return CDcdTextbox(_T("") ,
 //		aCdFontProp ,
-//		_T("���s���s���s") , 1 , 2 , 2 , CdPenProp() ,
+//		_T("京都京都京都") , 1 , 2 , 2 , CdPenProp() ,
 //		CConverter_WinGdi().CdBrushPropOf( WHITE_BRUSH ) ) ;
 //};
 //
@@ -186,7 +186,7 @@ CDcdTextbox	CWndDcdGridEkiJikokuhyouList::getCDcdEkiJikokuhyou()const
 //	CdFontProp aCdFontProp(9, _T("Meiryo UI"));
 //	return CDcdTextbox(_T(""),
 //		aCdFontProp,
-//		_T("���s��"), 1, 2, 2, CdPenProp(),
+//		_T("京都京"), 1, 2, 2, CdPenProp(),
 //		CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH));
 //};
 //
@@ -198,7 +198,7 @@ CDcdTextbox	CWndDcdGridEkiJikokuhyouList::getCDcdEkiJikokuhyou()const
 //	CdFontProp aCdFontProp(9, _T("Meiryo UI"));
 //	return CDcdTextbox(_T(""),
 //		aCdFontProp,
-//		_T("���s���s���s���s"), 1, 2, 2, CdPenProp(),
+//		_T("京都京都京都京都"), 1, 2, 2, CdPenProp(),
 //		CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH));
 //};
 //	
@@ -256,15 +256,15 @@ CDcdTextbox	CWndDcdGridEkiJikokuhyouList::getCDcdEkiJikokuhyou()const
 //
 //	// ********************************
 //	//	ECreateCmd_NewItem
-//	//�@�V�K�A�C�e����ΏۂƂ����R�}���h�𐶐����܂��B
+//	//　新規アイテムを対象としたコマンドを生成します。
 //	// ********************************
 //	if ( eCreateCmd == ECreateCmd_NewItem )
 //	{
-//		//�r���[��ŕ����I����OFF
+//		//ビュー上で複数選択がOFF
 //		if ( getCSelect()->getSelectedCellCount() == 0 )
 //		{
-//			//	�V�K�A�C�e���́A�����I�u�W�F�N�g
-//			//	�wIndex��0�̏ꍇ�́A�w�����`�����u��蒅�����v�Ƃ��܂��B
+//			//	新規アイテムの、初期オブジェクト
+//			//	駅Indexが0の場合は、駅時刻形式を「上り着時刻」とします。
 //			CentDedEki aNewEki ;
 //			if ( aCdYColSpecOfFocus.getEkiIndex() == 0 )
 //			{
@@ -272,11 +272,11 @@ CDcdTextbox	CWndDcdGridEkiJikokuhyouList::getCDcdEkiJikokuhyou()const
 //			}
 //
 //
-//			//	�r���[��ŕ����I����OFF�E�t�H�[�J�X�Z���������A�C�e����ɂ���ꍇ: 
+//			//	ビュー上で複数選択がOFF・フォーカスセルが既存アイテム上にある場合: 
 //			//
-//			//- m_iDiaIndex = �t�H�[�J�X�Z���̃A�C�e��Index�Am_iIndexSize = 0
-//			//- m_CentDedEkiCont = �V�K�쐬���̃A�C�e���̊���l
-//			//- CaMuiSelect = ���Y�A�C�e����I���B
+//			//- m_iDiaIndex = フォーカスセルのアイテムIndex、m_iIndexSize = 0
+//			//- m_CentDedEkiCont = 新規作成時のアイテムの既定値
+//			//- CaMuiSelect = 当該アイテムを選択。
 //			if ( aCdYColSpecOfFocus.getColumnType() == CdEkiYColSpec::ColumnType_Eki )
 //			{
 //				bRv = true ;
@@ -292,10 +292,10 @@ CDcdTextbox	CWndDcdGridEkiJikokuhyouList::getCDcdEkiJikokuhyou()const
 //				}
 //			}
 //
-//			//�@�r���[��ŕ����I����OFF�E�t�H�[�J�X�Z�����V�K�A�C�e���ʒu�ɂ���ꍇ:
-//			//- m_iDiaIndex = �����A�C�e��Index+1�Am_iIndexSize = 0
-//			//- m_CentDedEkiCont = �V�K�쐬���̃A�C�e���̊���l
-//			//- CaMuiSelect = ���Y�A�C�e����I���B
+//			//　ビュー上で複数選択がOFF・フォーカスセルが新規アイテム位置にある場合:
+//			//- m_iDiaIndex = 末尾アイテムIndex+1、m_iIndexSize = 0
+//			//- m_CentDedEkiCont = 新規作成時のアイテムの既定値
+//			//- CaMuiSelect = 当該アイテムを選択。
 //			else if ( aCdYColSpecOfFocus.getColumnType() == CdEkiYColSpec::ColumnType_NewEki )
 //			{
 //				bRv = true ;
@@ -311,23 +311,23 @@ CDcdTextbox	CWndDcdGridEkiJikokuhyouList::getCDcdEkiJikokuhyou()const
 //				}
 //			}
 //		}
-//		// �@�r���[��ŕ����I��ON:
-//		//	 - NULL��Ԃ��܂�([14/05/18]��:�����I��OFF�̏ꍇ�Ɠ�������)
+//		// 　ビュー上で複数選択ON:
+//		//	 - NULLを返します([14/05/18]旧:複数選択OFFの場合と同じ動作)
 //
 //	}
 //	// ********************************
 //	//	ECreateCmd_Focus
-//	//�@�t�H�[�J�X�Z�����1��Ԃ�ΏۂƂ����R�}���h�𐶐����܂��B
+//	//　フォーカスセル上の1列車を対象としたコマンドを生成します。
 //	// ********************************
 //	if ( eCreateCmd == ECreateCmd_Focus )
 //	{
-//		//�r���[��ŕ����I����OFF
+//		//ビュー上で複数選択がOFF
 //		if ( getCSelect()->getSelectedCellCount() == 0 )
 //		{
-//			//�r���[��ŕ����I����OFF�E�t�H�[�J�X�Z���������A�C�e����ɂ���ꍇ: 
-//			//- m_iDiaIndex = �t�H�[�J�X�Z���̃A�C�e��Index�Am_iIndexSize = 1
-//			//- m_CentDedRessyaCont = �t�H�[�J�X�Z����̃A�C�e��1�̃R�s�[
-//			//- m_CaMuiSelect = �t�H�[�J�X�Z����̃A�C�e����I���B
+//			//ビュー上で複数選択がOFF・フォーカスセルが既存アイテム上にある場合: 
+//			//- m_iDiaIndex = フォーカスセルのアイテムIndex、m_iIndexSize = 1
+//			//- m_CentDedRessyaCont = フォーカスセル上のアイテム1個のコピー
+//			//- m_CaMuiSelect = フォーカスセル上のアイテムを選択。
 //			if ( aCdYColSpecOfFocus.getColumnType() == CdEkiYColSpec::ColumnType_Eki )
 //			{
 //				bRv = true ;
@@ -342,24 +342,24 @@ CDcdTextbox	CWndDcdGridEkiJikokuhyouList::getCDcdEkiJikokuhyou()const
 //				}
 //			}
 //
-//			//�r���[��ŕ����I����OFF�E�t�H�[�J�X�Z�����V�K�A�C�e���ʒu�ɂ���ꍇ: 
-//			//- NULL��Ԃ��܂��B
+//			//ビュー上で複数選択がOFF・フォーカスセルが新規アイテム位置にある場合: 
+//			//- NULLを返します。
 //		}
-//		//�r���[��ŕ����I��ON
-//		// - NULL��Ԃ��܂�([14/05/18]��:�����I��OFF�̏ꍇ�Ɠ�������)
+//		//ビュー上で複数選択ON
+//		// - NULLを返します([14/05/18]旧:複数選択OFFの場合と同じ動作)
 //
 //	}
 //	// ********************************
 //	//	ECreateCmd_Select
-//	//�@�����̒P���܂��͕����I������Ă����Ԃ�ΏۂƂ���
-//	//	�R�}���h�𐶐����܂��B
+//	//　既存の単数または複数選択されている列車を対象とした
+//	//	コマンドを生成します。
 //	// ********************************
 //	if ( eCreateCmd == ECreateCmd_Select )
 //	{
-//		//�r���[��ŕ����I����OFF�E�t�H�[�J�X�Z���������A�C�e����ɂ���ꍇ: 
-//		//- m_iDiaIndex = �t�H�[�J�X�Z���̃A�C�e��Index�Am_iIndexSize = 1
-//		//- m_CentDedRessyaCont = �t�H�[�J�X�Z���̂���A�C�e��1�̃R�s�[
-//		//- CaMuiSelect = ���Y��Ԃ�I���B
+//		//ビュー上で複数選択がOFF・フォーカスセルが既存アイテム上にある場合: 
+//		//- m_iDiaIndex = フォーカスセルのアイテムIndex、m_iIndexSize = 1
+//		//- m_CentDedRessyaCont = フォーカスセルのあるアイテム1個のコピー
+//		//- CaMuiSelect = 当該列車を選択。
 //		if ( getCSelect()->getSelectedCellCount() == 0 
 //			&& aCdYColSpecOfFocus.getColumnType() == CdEkiYColSpec::ColumnType_Eki )
 //		{
@@ -375,37 +375,37 @@ CDcdTextbox	CWndDcdGridEkiJikokuhyouList::getCDcdEkiJikokuhyou()const
 //			}
 //		}
 //
-//		//�@�����\�r���[��ŕ����I����OFF�E�t�H�[�J�X�Z�����V�K��Ԉʒu�ɂ���ꍇ: 
-//		// - NULL��Ԃ��܂��B
+//		//　時刻表ビュー上で複数選択がOFF・フォーカスセルが新規列車位置にある場合: 
+//		// - NULLを返します。
 //
-//		//�@�����\�r���[��ŕ����I��ON
-//		// - m_iDiaIndex = �I������Ă����Ԃ̐擪index
-//		// - m_iIndexSize = �I������Ă����Ԃ̖���index-�擪index+1
-//		// - m_CentDedRessyaCont = �I������Ă����Ԃ̐擪index����
-//		//  ����index�܂ł̗�Ԃ̃R�s�[
-//		// - CaMuiSelect �́A�t�H�[�J�X�Z���ɍ��킹�ė�Ԃ�I���B
+//		//　時刻表ビュー上で複数選択ON
+//		// - m_iDiaIndex = 選択されている列車の先頭index
+//		// - m_iIndexSize = 選択されている列車の末尾index-先頭index+1
+//		// - m_CentDedRessyaCont = 選択されている列車の先頭indexから
+//		//  末尾indexまでの列車のコピー
+//		// - CaMuiSelect は、フォーカスセルに合わせて列車を選択。
 //		//
-//		//(A)�̈ʒu�ŏ������܂��B
+//		//(A)の位置で処理します。
 //	}
 //
 //
 //	// ********************************
 //	//		ECreateCmd_All ,
-//	//�@�S��Ԃ�ΏۂƂ����R�}���h�𐶐����܂��B
+//	//　全列車を対象としたコマンドを生成します。
 //	// ********************************
 //	if ( eCreateCmd == ECreateCmd_All )
 //	{
-//		// �r���[��ŕ����I����OFF�E�t�H�[�J�X�Z���������A�C�e����ɂ���ꍇ: 
+//		// ビュー上で複数選択がOFF・フォーカスセルが既存アイテム上にある場合: 
 //		//
-//		//- m_iDiaIndex = 0�Am_iIndexSize = �A�C�e���̐�
-//		//- m_CentDedRessyaCont = �S�A�C�e���̃R�s�[
-//		//- m_CaMuiSelect �́A�S�A�C�e����I���B
+//		//- m_iDiaIndex = 0、m_iIndexSize = アイテムの数
+//		//- m_CentDedRessyaCont = 全アイテムのコピー
+//		//- m_CaMuiSelect は、全アイテムを選択。
 //		//
-//		// �r���[��ŕ����I����OFF�E�t�H�[�J�X�Z�����V�K�A�C�e���ʒu�ɂ���ꍇ: 
+//		// ビュー上で複数選択がOFF・フォーカスセルが新規アイテム位置にある場合: 
 //		//
-//		//- m_iDiaIndex = 0�Am_iIndexSize = �A�C�e���̐�
-//		//- m_CentDedRessyaCont = �S�A�C�e���̃R�s�[
-//		//- CaMuiSelect �́A�S�A�C�e����I���B
+//		//- m_iDiaIndex = 0、m_iIndexSize = アイテムの数
+//		//- m_CentDedRessyaCont = 全アイテムのコピー
+//		//- CaMuiSelect は、全アイテムを選択。
 //		if ( getCSelect()->getSelectedCellCount() == 0 
 //			&& ( aCdYColSpecOfFocus.getColumnType() == CdEkiYColSpec::ColumnType_Eki 
 //			|| aCdYColSpecOfFocus.getColumnType() == CdEkiYColSpec::ColumnType_NewEki ) )
@@ -423,28 +423,28 @@ CDcdTextbox	CWndDcdGridEkiJikokuhyouList::getCDcdEkiJikokuhyou()const
 //			}
 //		}
 //
-//		// �r���[��ŕ����I��ON
+//		// ビュー上で複数選択ON
 //		//
-//		//- m_iDiaIndex = �I������Ă���A�C�e���̐擪index
-//		//- m_iIndexSize = �I������Ă���A�C�e���̖���index-�擪index+1
-//		//- m_CentDedRessyaCont = �I������Ă���A�C�e���̐擪index����
-//		//����index�܂ł̃A�C�e���̃R�s�[
-//		//- m_CaMuiSelect �́A�Z���̑I���ɍ��킹�ăA�C�e����I���B
+//		//- m_iDiaIndex = 選択されているアイテムの先頭index
+//		//- m_iIndexSize = 選択されているアイテムの末尾index-先頭index+1
+//		//- m_CentDedRessyaCont = 選択されているアイテムの先頭indexから
+//		//末尾indexまでのアイテムのコピー
+//		//- m_CaMuiSelect は、セルの選択に合わせてアイテムを選択。
 //		//
-//		//(A)�̈ʒu�ŏ������܂��B
+//		//(A)の位置で処理します。
 //	}
 //
 //	// ********************************
-//	//	(A)ECreateCmd_Select�EECreateCmd_All ��
-//	//�@�����I������Ă����Ԃ�ΏۂƂ���
-//	//	�R�}���h�𐶐����܂��B
+//	//	(A)ECreateCmd_Select・ECreateCmd_All で
+//	//　複数選択されている列車を対象とした
+//	//	コマンドを生成します。
 //	// ********************************
 //	if ( eCreateCmd == ECreateCmd_Select 
 //		|| eCreateCmd == ECreateCmd_All )
 //	{
 //		if ( getCSelect()->getSelectedCellCount() > 0 )
 //		{
-//			//	�I������Ă���A�C�e����Index���擾
+//			//	選択されているアイテムのIndexを取得
 //			deque<int> contiEkiIndex ;
 //			for ( int iColumnNumber = 0 ; iColumnNumber < getCXDcdGrid()->getYColumnCount() ;iColumnNumber ++ )
 //			{
@@ -457,18 +457,18 @@ CDcdTextbox	CWndDcdGridEkiJikokuhyouList::getCDcdEkiJikokuhyou()const
 //					}
 //				}
 //			}
-//			//contiEkiIndex = ��̕����I�������{����Ă���ꍇ�́A
-//			//	�I������Ă���wIndex���i�[����܂��B
-//			//	�����łȂ��ꍇ�́A��ł��B
+//			//contiEkiIndex = 列の複数選択が実施されている場合は、
+//			//	選択されている駅Indexが格納されます。
+//			//	そうでない場合は、空です。
 //
 //			if ( contiEkiIndex.size() > 1 )
 //			{
 //				bRv = true ;
 //				if ( ppCmd != NULL )
 //				{
-//					//	�R�}���h�I�u�W�F�N�g���ɁA�I������Ă���w�̐擪���疖���܂ł�
-//					//	�w���i�[���܂�(�擪�E�����ȊO�ɂ́A�I������Ă��Ȃ��w��
-//					//	�܂܂�Ă���ꍇ������܂�)
+//					//	コマンドオブジェクト内に、選択されている駅の先頭から末尾までの
+//					//	駅を格納します(先頭・末尾以外には、選択されていない駅が
+//					//	含まれている場合もあります)
 //					pCmd = OuNew<DedRosenFileData::EditCmd::CRfEditCmd_Eki>( 
 //						new CRfEditCmd_Eki( 
 //							*getCDiagramEditDoc()->getCDedRosenFileData() ,
@@ -476,8 +476,8 @@ CDcdTextbox	CWndDcdGridEkiJikokuhyouList::getCDcdEkiJikokuhyou()const
 //							contiEkiIndex.back() - contiEkiIndex.front() + 1 ,
 //							m_bAdjustByEkijikokukeisiki ) ) ;
 //
-//					//	�R�}���h�I�u�W�F�N�g��
-//					//	m_CentDedRessyaContSrc  ���̗�Ԃ�I�����܂��B
+//					//	コマンドオブジェクトの
+//					//	m_CentDedRessyaContSrc  内の列車を選択します。
 //					pCmd->getCaMuiSelect()->setSelectAll( false ) ;
 //					for ( int i = 0 ; i < (int)contiEkiIndex.size() ; i ++ )
 //					{
@@ -495,12 +495,12 @@ CDcdTextbox	CWndDcdGridEkiJikokuhyouList::getCDcdEkiJikokuhyou()const
 //	return bRv ;
 //}
 	// --------------------------------
-	//@name OnUpdate �̉����֐�
+	//@name OnUpdate の下請関数
 	// --------------------------------
 
 /**
-	CentDedEki::EEkijikokukeisiki �ƁA�����񃊃\�[�XID�̑Ή��\
-	17.4.14 ���蔭���E��蔭����ǉ�_by_d_mania
+	CentDedEki::EEkijikokukeisiki と、文字列リソースIDの対応表
+	17.4.14 下り発着・上り発着を追加_by_d_mania
 */
 //struct {
 //	CentDedEki::EEkijikokukeisiki	m_eValue ;
@@ -515,7 +515,7 @@ CDcdTextbox	CWndDcdGridEkiJikokuhyouList::getCDcdEkiJikokuhyou()const
 //};
 
 /**
-	CentDedEki::EEkikibo �ƁA�����񃊃\�[�XID�̑Ή��\
+	CentDedEki::EEkikibo と、文字列リソースIDの対応表
 */
 //struct {
 //	CentDedEki::EEkikibo	m_eValue ;
@@ -531,21 +531,21 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_setCentDedEki_To_Column(
 {
 	if ( m_bWaitForActivate )
 	{
-		//	�r���[�̍X�V���X�V����Ă���Ȃ�A�㑱�̏����͍s���܂���
+		//	ビューの更新が更新されているなら、後続の処理は行いません
 		return;
 	}
 	// ****************************************************************
-	//	�r���[�̍X�V���ۗ�����Ă��Ȃ�
+	//	ビューの更新が保留されていない
 	// ****************************************************************
 
 	bool bIsNull = aCentDedEki.getEkimei().empty() ;
 	// --------------------------------
-	//	��̃T�C�Y��ݒ�
+	//	列のサイズを設定
 	// --------------------------------
 	{
 		CDcdTargetGetDC	aCDcdTarget( NULL ) ;
 		// --------------------------------
-		//	Y��
+		//	Y列
 		// --------------------------------
 		{
 			CdDcdSizeXy	sizeEkimei ;
@@ -559,37 +559,37 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_setCentDedEki_To_Column(
 		}
 	}
 	// --------------------------------
-	//	�Z���̑�����ݒ�
+	//	セルの属性を設定
 	// --------------------------------
 	{
-		//	�w����� DcDraw �̑�����ݒ�
+		//	駅名列の DcDraw の属性を設定
 		Ou<CDcdTextbox>	pCDcdTextbox = 
 			(getCXDcdGrid()->getCell(0, iYColumnNumber )->getIfDcDraw());
 		*pCDcdTextbox = this->getCDcdEkimei() ;
 	}
 	{
-		//	����w�����\�� DcDraw �̑�����ݒ�
+		//	下り駅時刻表の DcDraw の属性を設定
 		Ou<CDcdTextbox>	pCDcdTextbox = 
 			(getCXDcdGrid()->getCell( 1, iYColumnNumber )->getIfDcDraw());
 		*pCDcdTextbox = this->getCDcdEkiJikokuhyou() ;
 	}
 	{
-		//	���w�����\�� DcDraw �̑�����ݒ�
+		//	上り駅時刻表の DcDraw の属性を設定
 		Ou<CDcdTextbox>	pCDcdTextbox =
 			(getCXDcdGrid()->getCell(2, iYColumnNumber)->getIfDcDraw());
 		*pCDcdTextbox = this->getCDcdEkiJikokuhyou();
 	}
 	
 	// --------------------------------
-	//	�Z���̃e�L�X�g��ݒ�
+	//	セルのテキストを設定
 	// --------------------------------
-	//	�w��
+	//	駅名
 	{
 		Ou<CDcdTextbox>(getCXDcdGrid()
 			->getCell(0,iYColumnNumber )->getIfDcDraw())
 				->setText( aCentDedEki.getEkimei() )  ;	
 	}
-	//	����w�����\
+	//	下り駅時刻表
 	{
 		CString strText;
 		if (aCentDedEki.getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku)
@@ -607,7 +607,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_setCentDedEki_To_Column(
 			->getCell(1,iYColumnNumber)->getIfDcDraw())
 			->setText((LPCTSTR)strText);
 	}
-	//	���w�����\
+	//	上り駅時刻表
 	{
 		CString strText;
 		if (aCentDedEki.getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku)
@@ -626,7 +626,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_setCentDedEki_To_Column(
 			->setText((LPCTSTR)strText);
 	}
 	// --------------------------------
-	//	���E��
+	//	境界線
 	// --------------------------------
 	//{
 	//	bool bKyoukaisen = false;
@@ -657,13 +657,13 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_setCentDedEki_To_Column(
 	//}
 
 	// --------------------------------
-	//	�O���b�h�S�̂��X�V�̈�Ƃ��܂�
+	//	グリッド全体を更新領域とします
 	// --------------------------------
-	//	���E���̑������ϓ������ꍇ�́A
-	//	���E���E����т����艺�̂��ׂẴZ���̍X�V���K�v�ł��B
-	//	����ɑΉ����邽�߁A CWndDcdGridEkiJikokuhyouList �ł́A
-	//	�w�̑����̍X�V�̂��т�
-	//	�O���b�h�S����X�V���܂��B
+	//	境界線の太さが変動した場合は、
+	//	境界線・およびそれより下のすべてのセルの更新が必要です。
+	//	これに対応するため、 CWndDcdGridEkiJikokuhyouList では、
+	//	駅の属性の更新のたびに
+	//	グリッド全域を更新します。
 	//InvalidateGrid() ;
 }
 
@@ -674,24 +674,24 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 	if ( GetParent() != pView )
 	{
 		// ****************************************************************
-		//	�r���[���A�N�e�B�u�ł͂Ȃ�
+		//	ビューがアクティブではない
 		// ****************************************************************
 		m_bWaitForActivate = true ;
 	}
 	else
 	{
 		// ****************************************************************
-		//	�r���[���A�N�e�B�u
+		//	ビューがアクティブ
 		// ****************************************************************
 		CWaitCursor	aCWaitCursor ;	
 
 		// --------------------------------
-		//	�r���[�̍X�V���s�����߂� OnUpdate_XXX() ���Ăяo���Ȃ�
-		//	���炩���߈ȉ��̃t���O�� false �ɂ��Ȃ��Ă͂Ȃ�܂���
+		//	ビューの更新を行うために OnUpdate_XXX() を呼び出すなら
+		//	あらかじめ以下のフラグを false にしなくてはなりません
 		m_bWaitForActivate = false ;
 
-		//	�R�}���h�I�u�W�F�N�g���s�ɂ��Z���ړ��ŃZ���I���ɂȂ�Ȃ��悤�ɁA
-		//	�Z���I�����������A�Z���I���@�\���ꎞ�I�ɒ��~���܂��B
+		//	コマンドオブジェクト実行によるセル移動でセル選択にならないように、
+		//	セル選択を解除し、セル選択機能も一時的に中止します。
 		clearSelect() ;
 		CPropStack aPropStack( this ) ;
 		aPropStack
@@ -700,7 +700,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 
 
 		// --------------------------------
-		//	�r���[���X�V
+		//	ビューを更新
 		// --------------------------------
 		CDiagramEditDoc* pCDiagramEditDoc = getCDiagramEditDoc() ;
 		const CentDedRosen*	pCentDedRosen = 
@@ -711,7 +711,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 		//OnCreate_Header();
 
 	// --------------------------------
-	//	��̐����w��
+	//	列の数を指定
 	// --------------------------------
 		getCXDcdGrid()->setXColumnCount(3);
 		getCXDcdGrid()->setYColumnCount(
@@ -719,15 +719,15 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 		getCXDcdGrid()->setYFixColumnCount(0);
 
 		// --------------------------------
-		//	��̃T�C�Y��ݒ�
+		//	列のサイズを設定
 		// --------------------------------
 		{
 			CDcdTargetGetDC	aCDcdTarget(NULL);
 			// --------------------------------
-			//	X��
+			//	X列
 			// --------------------------------
 			{
-				//	�w��
+				//	駅名
 				CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(0);
 				CdDcdSizeXy	sizeEkimei;
 				CDcdTextbox	aCDcdTextbox(getCDcdEkimei());
@@ -735,7 +735,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 				pCDcdGridXColumn->setColumnSize(sizeEkimei.getX());
 			}
 			{
-				//	����w�����\
+				//	下り駅時刻表
 				CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(1);
 				CdDcdSizeXy	sizeEkiJikokuhyou;
 				CDcdTextbox	aCDcdTextbox(
@@ -744,7 +744,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 				pCDcdGridXColumn->setColumnSize(sizeEkiJikokuhyou.getX());
 			}
 			{
-				//	���w�����\
+				//	上り駅時刻表
 				CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(2);
 				CdDcdSizeXy	sizeEkiJikokuhyou;
 				CDcdTextbox	aCDcdTextbox(
@@ -754,7 +754,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 			}
 		}
 
-		////	�w����̕���ݒ肷��
+		////	駅名列の幅を設定する
 		//{
 		//	CDcdTargetGetDC	aTarget ;
 		//	CDcdTextbox aCDcd = this->getCDcdEkimei() ;
@@ -764,7 +764,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 		//		aCdDcdSizeXy.getX() ) ;
 		//}
 		int iEkiSize = pCentDedEkiContGet->size();
-		//	�e�Z���ɁA�f�[�^��ݒ�
+		//	各セルに、データを設定
 //#pragma omp parallel for schedule(static)
 		for (int idxEki = 0 ; idxEki < iEkiSize;
 				idxEki ++ ){
@@ -788,7 +788,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //void CWndDcdGridEkiJikokuhyouList::OnCreate_Header()
 //{
 //	// --------------------------------
-//	//	��̐����w��
+//	//	列の数を指定
 //	// --------------------------------
 //	getCXDcdGrid()->setXColumnCount(3);
 //	getCXDcdGrid()->setYColumnCount(2);
@@ -797,15 +797,15 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //	//getCXDcdGrid()->setXFixColumnCount(2);
 //
 //	// --------------------------------
-//	//	��̃T�C�Y��ݒ�
+//	//	列のサイズを設定
 //	// --------------------------------
 //	{
 //		CDcdTargetGetDC	aCDcdTarget(NULL);
 //		// --------------------------------
-//		//	X��
+//		//	X列
 //		// --------------------------------
 //		{
-//			//	�w��
+//			//	駅名
 //			CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(0);
 //			CdDcdSizeXy	sizeEkimei;
 //			CDcdTextbox	aCDcdTextbox(getCDcdEkimei());
@@ -813,7 +813,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			pCDcdGridXColumn->setColumnSize(sizeEkimei.getX());
 //		}
 //		{
-//			//	����w�����\
+//			//	下り駅時刻表
 //			CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(1);
 //			CdDcdSizeXy	sizeEkiJikokuhyou;
 //			CDcdTextbox	aCDcdTextbox(
@@ -822,7 +822,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			pCDcdGridXColumn->setColumnSize(sizeEkiJikokuhyou.getX());
 //		}
 //		{
-//			//	���w�����\
+//			//	上り駅時刻表
 //			CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(2);
 //			CdDcdSizeXy	sizeEkiJikokuhyou;
 //			CDcdTextbox	aCDcdTextbox(
@@ -831,7 +831,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			pCDcdGridXColumn->setColumnSize(sizeEkiJikokuhyou.getX());
 //		}
 //		// --------------------------------
-//		//	Y��
+//		//	Y列
 //		// --------------------------------
 //		{
 //			CdDcdSizeXy	sizeEkimei;
@@ -844,7 +844,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //		}
 //	}
 //	// --------------------------------
-//	//	�ŏ�s�Ƀe�L�X�g��ݒ�
+//	//	最上行にテキストを設定
 //	// --------------------------------
 //	{
 //		CConverter_WinGdi	aConv;
@@ -858,7 +858,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //
 //
 //		{
-//			//	�w��
+//			//	駅名
 //			CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(0, 0);
 //
 //			Ou<CDcdTextbox>	pCDcdTextbox =
@@ -871,7 +871,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
 //		}
 //		{
-//			//	����w�����\
+//			//	下り駅時刻表
 //			CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(1, 0);
 //
 //			Ou<CDcdTextbox>	pCDcdTextbox =
@@ -884,7 +884,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
 //		}
 //		{
-//			//	���w�����\
+//			//	上り駅時刻表
 //			CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(1, 0);
 //
 //			Ou<CDcdTextbox>	pCDcdTextbox =
@@ -900,7 +900,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //}
 
 	// --------------------------------
-	//@name ���j���[�R�}���h�̉����֐�
+	//@name メニューコマンドの下請関数
 	// --------------------------------
 //int CWndDcdGridEkiJikokuhyouList::OnEditCut_Process( BOOL bQueryEnable )
 //{
@@ -910,17 +910,17 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //	if ( !bQueryEnable ){	ppCmd = &pCmd ;}
 //	
 //	// ****************************************************************
-//	//	�R�}���h�̗L���E��������
+//	//	コマンドの有効・無効判定
 //	// ****************************************************************
 //	if ( iRv >= 0 )
 //	{
 //		if (!createCmd(CWndDcdGridEkiJikokuhyouList::ECreateCmd_Focus, ppCmd))
 //		//if ( !createCmd( CWndDcdGridEkiJikokuhyouList::ECreateCmd_Select , ppCmd ) )
 //		{
-//			iRv = -1 ;	//	�Z���̈ʒu������������܂���B
+//			iRv = -1 ;	//	セルの位置が正しくありません。
 //		}
 //	}
-//	//��w����яI�_�w�ɂȂ��Ă���ꍇ�́A�R�}���h�����ł��B
+//	//基幹駅および終点駅になっている場合は、コマンド無効です。
 //	if (iRv >= 0)
 //	{
 //		if (getCSelect()->getSelectedCellCount() == 0)
@@ -935,11 +935,11 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //				{
 //					if (pCentDedEkiCont->get(idx)->getBrunchCoreEkiIndex() == iEkiIndexSelect)
 //					{
-//						iRv = -2; //�I�����ꂽ�w�́A���̉w�����w�Ɏw�肳��Ă��܂�
+//						iRv = -2; //選択された駅は、他の駅から基幹駅に指定されています
 //					}
 //					else if (pCentDedEkiCont->get(idx)->getLoopOriginEkiIndex() == iEkiIndexSelect)
 //					{
-//						iRv = -3; //�I�����ꂽ�w�́A���̉w����N�_�w�Ɏw�肳��Ă��܂�
+//						iRv = -3; //選択された駅は、他の駅から起点駅に指定されています
 //					}
 //				}
 //			}
@@ -962,11 +962,11 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //						{
 //							if (pCentDedEkiCont->get(idx)->getBrunchCoreEkiIndex() == iEkiIndexSelect)
 //							{
-//								iRv = -2; //�I�����ꂽ�w�́A���̉w�����w�Ɏw�肳��Ă��܂�
+//								iRv = -2; //選択された駅は、他の駅から基幹駅に指定されています
 //							}
 //							else if (pCentDedEkiCont->get(idx)->getLoopOriginEkiIndex() == iEkiIndexSelect)
 //							{
-//								iRv = -3; //�I�����ꂽ�w�́A���̉w����N�_�w�Ɏw�肳��Ă��܂�
+//								iRv = -3; //選択された駅は、他の駅から起点駅に指定されています
 //							}
 //						}
 //					}
@@ -978,28 +978,28 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //	if ( !bQueryEnable && iRv >= 0 )
 //	{
 //		// ****************************************************************
-//		//	�R�}���h�̎��s
+//		//	コマンドの実行
 //		// ****************************************************************
 //		// -------------------------------- 
-//		//	�N���b�v�{�[�h�ɓ]��
+//		//	クリップボードに転送
 //		// --------------------------------
 //		getCDiagramEditDoc()->CentDedEki_To_Cliboard( 
 //			pCmd->getCaMuiSelect() ) ;
 //
 //		// --------------------------------
-//		//	�R�}���h�I�u�W�F�N�g�̗�Ԃ�ҏW
+//		//	コマンドオブジェクトの列車を編集
 //		// --------------------------------
 //		{
 //			pCmd->getCaMuiSelect()->erase( 0 , INT_MAX ) ;
 //		}
 //		// --------------------------------
-//		//	�R�}���h�I�u�W�F�N�g�����s
+//		//	コマンドオブジェクトを実行
 //		// --------------------------------
 //		{
 //			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 //		}
 //		// ****************************************************************
-//		//	�G���[���b�Z�[�W
+//		//	エラーメッセージ
 //		// ****************************************************************
 //
 //		// ****************************************************************
@@ -1015,40 +1015,40 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //	if ( !bQueryEnable ){	ppCmd = &pCmd ;}
 //	
 //	// ****************************************************************
-//	//	�R�}���h�̗L���E��������
+//	//	コマンドの有効・無効判定
 //	// ****************************************************************
 //	if ( iRv >= 0 )
 //	{
 //		if ( !createCmd( CWndDcdGridEkiJikokuhyouList::ECreateCmd_Select , ppCmd ) )
 //		{
-//			iRv = -1 ;	//	�Z���̈ʒu������������܂���B
+//			iRv = -1 ;	//	セルの位置が正しくありません。
 //		}
 //	}
 //	// ****************************************************************
 //	if ( !bQueryEnable && iRv >= 0 )
 //	{
 //		// ****************************************************************
-//		//	�R�}���h�̎��s
+//		//	コマンドの実行
 //		// ****************************************************************
 //		// -------------------------------- 
-//		//	�N���b�v�{�[�h�ɓ]��
+//		//	クリップボードに転送
 //		// --------------------------------
 //		getCDiagramEditDoc()->CentDedEki_To_Cliboard( 
 //			pCmd->getCaMuiSelect() ) ;
 //
 //		// -------------------------------- 
-//		//	�t�H�[�J�X�Z�����A�I��v�f���ōő�̉wIndex�̎��ʂɈړ�
+//		//	フォーカスセルを、選択要素中で最大の駅Indexの次位に移動
 //		// --------------------------------
 //		{
-//			//	�Z���I�����N���A���A
-//			//	�t�H�[�J�X�Z���̈ړ��ɂ��Z���I���𖳌������܂��B
+//			//	セル選択をクリアし、
+//			//	フォーカスセルの移動によるセル選択を無効化します。
 //			clearSelect() ;
 //			CPropStack	aPropStack( this ) ;
 //			aPropStack
 //				.CBoxSelect_setIsEnable( false )
 //				.CRandomSelect_setIsEnable( false )  ;
 //		
-//			//	�I��v�f���ōő�̉wIndex �����߂�
+//			//	選択要素中で最大の駅Index を求める
 //			int iEkiIndexMax = -1 ;
 //			{
 //				CaMuiSelect<CentDedEki>* pCaMuiSelect = pCmd->getCaMuiSelect() ;
@@ -1061,16 +1061,16 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //					}
 //				}
 //			}
-//			//iEkiIndexMax = �I������Ă����Ԃ̂����A�ő��Index
+//			//iEkiIndexMax = 選択されている列車のうち、最大のIndex
 //
-//			//	�ړ���̃t�H�[�J�X�Z���ʒu������
+//			//	移動先のフォーカスセル位置を決定
 //			int iYColumnNmber = -1 ;
 //			{
 //				CdEkiYColSpecCont aCdEkiYColSpecCont = createYColSpecCont() ;
 //				iYColumnNmber = aCdEkiYColSpecCont.ColumnNumberFromSpec( 
 //					CdEkiYColSpec( CdEkiYColSpec::ColumnType_Eki , iEkiIndexMax ) ) + 1 ;
 //			}
-//			//	�t�H�[�J�X���ړ�
+//			//	フォーカスを移動
 //			{
 //				CdDcdPosXy posxyFocusCellColumnNumber 
 //					= getCFocus()->getFocusCellColumnNumber() ;
@@ -1085,7 +1085,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //
 //
 //		// ****************************************************************
-//		//	�G���[���b�Z�[�W
+//		//	エラーメッセージ
 //		// ****************************************************************
 //
 //		// ****************************************************************
@@ -1102,13 +1102,13 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //	if ( !bQueryEnable ){	ppCmd = &pCmd ;}
 //	
 //	// ****************************************************************
-//	//	�R�}���h�̗L���E��������
+//	//	コマンドの有効・無効判定
 //	// ****************************************************************
 //	if ( iRv >= 0 )
 //	{
 //		if ( !createCmd( CWndDcdGridEkiJikokuhyouList::ECreateCmd_NewItem , ppCmd ) )
 //		{
-//			iRv = -1 ;	//	�Z���̈ʒu������������܂���B
+//			iRv = -1 ;	//	セルの位置が正しくありません。
 //		}
 //	}
 //	if ( iRv >= 0 )
@@ -1116,30 +1116,30 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //		if ( !getCDiagramEditDoc()->CentDedEki_IsClipboardFormatAvailable() &&
 //			!getCDiagramEditDoc()->UnicodeText_IsClipboardFormatAvailable())
 //		{
-//			iRv = -2 ;	//	�N���b�v�{�[�h�ɉw�̃f�[�^������܂���
+//			iRv = -2 ;	//	クリップボードに駅のデータがありません
 //		}
 //	}
 //	// ****************************************************************
 //	if ( !bQueryEnable && iRv >= 0 )
 //	{
 //		// ****************************************************************
-//		//	�R�}���h�̎��s
+//		//	コマンドの実行
 //		// ****************************************************************
 //		// -------------------------------- 
-//		//	�N���b�v�{�[�h����f�[�^���擾
+//		//	クリップボードからデータを取得
 //		// --------------------------------
 //		CentDedEkiCont	aEkiCont ;
 //		iRv = getCDiagramEditDoc()->CentDedEki_From_Cliboard( &aEkiCont ) ;
 //		if (iRv >= 0 && aEkiCont.size() > 0)
 //		{
 //			// --------------------------------
-//			//	�R�}���h�I�u�W�F�N�g�̉w��ҏW
+//			//	コマンドオブジェクトの駅を編集
 //			// --------------------------------
-//			//	CWndDcdGridEkiJikokuhyouList::ECreateCmd_NewItem �ɂ���Đ������ꂽ
-//			//	�V�K�A�C�e���͍폜���܂��B
+//			//	CWndDcdGridEkiJikokuhyouList::ECreateCmd_NewItem によって生成された
+//			//	新規アイテムは削除します。
 //			pCmd->getCaMuiSelect()->erase( 0 , INT_MAX ) ;
 //
-//			//	�R�}���h�ɃN���b�v�{�[�h����̃A�C�e����ǉ����܂��B
+//			//	コマンドにクリップボードからのアイテムを追加します。
 //			CaMui<CentDedEki> aCaMui( pCmd->getCaMuiSelect() ) ;
 //			aCaMui.insert( &aEkiCont , 0 , INT_MAX , 0 ) ;
 //
@@ -1153,7 +1153,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			//	}
 //			//}
 //
-//			//�A�C�e�����ɁA����w�ݒ�E����ݒ肪�L���ȉw������ꍇ�́A������������܂��B
+//			//アイテム内に、分岐駅設定・環状線設定が有効な駅がある場合は、それを解除します。
 //			//CaMuiSelect<CentDedEki>* pCaMuiSelect = pCmd->getCaMuiSelect();
 //			for (int idx = 0; idx < pCmd->getCaMuiSelect()->/*getMuPtr()->*/size(); idx++)
 //			{
@@ -1161,7 +1161,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //				pCmd->getCaMuiSelect()->getMuPtr()->get(idx)->setLoopOriginEkiIndex(-1);
 //			}
 //			// --------------------------------
-//			//	�R�}���h�I�u�W�F�N�g�����s
+//			//	コマンドオブジェクトを実行
 //			// --------------------------------
 //			{
 //				getCDiagramEditDoc()->executeEditCmd(pCmd);
@@ -1180,17 +1180,17 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //	if ( !bQueryEnable ){	ppCmd = &pCmd ;}
 //	
 //	// ****************************************************************
-//	//	�R�}���h�̗L���E��������
+//	//	コマンドの有効・無効判定
 //	// ****************************************************************
 //	if ( iRv >= 0 )
 //	{
 //		if (!createCmd(CWndDcdGridEkiJikokuhyouList::ECreateCmd_Focus, ppCmd))
 //		//if ( !createCmd( CWndDcdGridEkiJikokuhyouList::ECreateCmd_Select , ppCmd ) )
 //		{
-//			iRv = -1 ;	//	�Z���̈ʒu������������܂���B
+//			iRv = -1 ;	//	セルの位置が正しくありません。
 //		}
 //	}
-//	//�틤�L�ΏۂɂȂ��Ă���ꍇ�́A�R�}���h�����ł��B
+//	//被共有対象になっている場合は、コマンド無効です。
 //	if (iRv >= 0)
 //	{
 //		if (getCSelect()->getSelectedCellCount() == 0)
@@ -1205,11 +1205,11 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //				{
 //					if (pCentDedEkiCont->get(idx)->getBrunchCoreEkiIndex() == iEkiIndexSelect)
 //					{
-//						iRv = -2; //�I�����ꂽ�w�́A���̉w�����w�Ɏw�肳��Ă��܂�
+//						iRv = -2; //選択された駅は、他の駅から基幹駅に指定されています
 //					}
 //					else if (pCentDedEkiCont->get(idx)->getLoopOriginEkiIndex() == iEkiIndexSelect)
 //					{
-//						iRv = -3; //�I�����ꂽ�w�́A���̉w����N�_�w�Ɏw�肳��Ă��܂�
+//						iRv = -3; //選択された駅は、他の駅から起点駅に指定されています
 //					}
 //				}
 //			}
@@ -1232,11 +1232,11 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //						{
 //							if (pCentDedEkiCont->get(idx)->getBrunchCoreEkiIndex() == iEkiIndexSelect)
 //							{
-//								iRv = -2; //�I�����ꂽ�w�́A���̉w�����w�Ɏw�肳��Ă��܂�
+//								iRv = -2; //選択された駅は、他の駅から基幹駅に指定されています
 //							}
 //							else if (pCentDedEkiCont->get(idx)->getLoopOriginEkiIndex() == iEkiIndexSelect)
 //							{
-//								iRv = -3; //�I�����ꂽ�w�́A���̉w����N�_�w�Ɏw�肳��Ă��܂�
+//								iRv = -3; //選択された駅は、他の駅から起点駅に指定されています
 //							}
 //						}
 //					}
@@ -1248,22 +1248,22 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //	if ( !bQueryEnable && iRv >= 0 )
 //	{
 //		// ****************************************************************
-//		//	�R�}���h�̎��s
+//		//	コマンドの実行
 //		// ****************************************************************
 //		// --------------------------------
-//		//	�R�}���h�I�u�W�F�N�g�̗�Ԃ�ҏW
+//		//	コマンドオブジェクトの列車を編集
 //		// --------------------------------
 //		{
 //			pCmd->getCaMuiSelect()->erase( 0 , INT_MAX ) ;
 //		}
 //		// --------------------------------
-//		//	�R�}���h�I�u�W�F�N�g�����s
+//		//	コマンドオブジェクトを実行
 //		// --------------------------------
 //		{
 //			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 //		}
 //		// ****************************************************************
-//		//	�G���[���b�Z�[�W
+//		//	エラーメッセージ
 //		// ****************************************************************
 //
 //		// ****************************************************************
@@ -1273,39 +1273,39 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //}
 
 	/*	
-		[�ҏW]-[�w��}��]
+		[編集]-[駅を挿入]
 	@return
-		����������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
+		成功したら0以上、エラーなら負の数です。
 	*/
 //int CWndDcdGridEkiJikokuhyouList:: OnEDITEkiInsert_Process( BOOL bQueryEnable )
 //{
 //	int iRv = 0 ;
 //
 //	// ****************************************************************
-//	//	�R�}���h�̗L���E��������
+//	//	コマンドの有効・無効判定
 //	// ****************************************************************
 //	if ( execEkiPropDlg( true , TRUE ) < 0 )
 //	{
-//		iRv = -1 ;	//	�t�H�[�J�X�̈ʒu���s���ł��B
+//		iRv = -1 ;	//	フォーカスの位置が不正です。
 //	}
 //
 //	// ****************************************************************
 //	if ( !bQueryEnable && iRv >= 0 )
 //	{
 //		// ****************************************************************
-//		//	�R�}���h�̎��s
+//		//	コマンドの実行
 //		// ****************************************************************
 //		execEkiPropDlg( true , FALSE ) ;
 //
 //		// ****************************************************************
-//		//	�G���[���b�Z�[�W
+//		//	エラーメッセージ
 //		// ****************************************************************
 //		if ( iRv < 0 )
 //		{
 //			CString strErrorMessage ;
 //			switch( iRv )
 //			{
-//			case -1 :	//	���݂͎��s�ł��܂���B
+//			case -1 :	//	現在は実行できません。
 //				break ;
 //			default:
 //				strErrorMessage.Format( _T( "Error=%d" ) , iRv ) ;
@@ -1326,10 +1326,10 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //	int iRv = 0 ;
 //
 //	// ****************************************************************
-//	//	�R�}���h�̎��s�ۂ̔���
+//	//	コマンドの実行可否の判定
 //	// ****************************************************************
-//	//	�R�}���h�̎��s�̉ۂ𔻒肵�܂��B
-//	//	�R�}���h�����s�s�\�Ȃ�A iRv �ɕ��̐���ݒ肵�Ă��������B
+//	//	コマンドの実行の可否を判定します。
+//	//	コマンドが実行不可能なら、 iRv に負の数を設定してください。
 //
 //	const CentDedRosen*	pCentDedRosen = getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen() ;
 //	const Mu<const CentDedEki*>* pCentDedEkiContGet = pCentDedRosen->getCentDedEkiCont()->getMuPtr() ;
@@ -1339,16 +1339,16 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //	if ( !bQueryEnable && iRv >= 0 )
 //	{
 //		// ****************************************************************
-//		//	�R�}���h�̎��s
+//		//	コマンドの実行
 //		// ****************************************************************
-//		//	�R�}���h�����s���܂��B
-//		//	���ʂ��G���[�Ȃ�AiRv �ɕ��̐���ݒ肵�܂��B
+//		//	コマンドを実行します。
+//		//	結果がエラーなら、iRv に負の数を設定します。
 //
 //		//CentDedRosen	aRosenNew ;
 //		CDedRosenFileData aCDedRosenFileData = *getCDiagramEditDoc()->getCDedRosenFileData();
 //		if (iRv >= 0)
 //		{
-//			//	�H�����擾��A�㉺�𔽓]���܂��B
+//			//	路線を取得後、上下を反転します。
 //			//aRosenNew = *pCentDedRosen ;
 //			//aRosenNew.invert() ;
 //
@@ -1362,10 +1362,10 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			aCdDedDispProp.setDisplayOuterTerminalT(bOrigin);
 //
 //			aCDedRosenFileData.setCdDedDispProp(aCdDedDispProp);
-//			//	�X�V�R�}���h�𐶐�
+//			//	更新コマンドを生成
 //		}
 //		// --------------------------------
-//		//	�R�}���h�𐶐��E���s
+//		//	コマンドを生成・実行
 //		// --------------------------------
 //		if (iRv >= 0)
 //		{
@@ -1383,14 +1383,14 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //		//	getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 //		//}
 //		// ****************************************************************
-//		//	�G���[���b�Z�[�W
+//		//	エラーメッセージ
 //		// ****************************************************************
 //		if ( iRv < 0 )
 //		{
 //			CString strErrorMessage ;
 //			switch( iRv )
 //			{
-//			case -1 :	//	���݂͎��s�ł��܂���B
+//			case -1 :	//	現在は実行できません。
 //				break ;
 //			default:
 //				strErrorMessage.Format( _T( "Error=%d" ) , iRv ) ;
@@ -1407,18 +1407,18 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //}
 //
 //	/*	
-//		[�ҏW]-[�w�̃v���p�e�B]
+//		[編集]-[駅のプロパティ]
 //	*/
 //int CWndDcdGridEkiJikokuhyouList:: OnEDITEkiProp_Process( BOOL bQueryEnable )
 //{
 //	int iRv = 0 ;
 //	// ****************************************************************
-//	//	�R�}���h�̗L���E��������
+//	//	コマンドの有効・無効判定
 //	// ****************************************************************
 //
-//	//	�t�H�[�J�X�Z�����V�K�A�C�e���ʒu�ɂ���Ƃ��́A
-//	//	�u�V�K�A�C�e���̃v���p�e�B���͂��s���A����𖖔��ɑ}������v�Ƃ���
-//	//	����ɂȂ�܂��B
+//	//	フォーカスセルが新規アイテム位置にあるときは、
+//	//	「新規アイテムのプロパティ入力を行い、それを末尾に挿入する」という
+//	//	動作になります。
 //	bool bInsert = false ;
 //	CdEkiYColSpec aYColSpec = getYColSpecOfFocus() ;
 //	if ( aYColSpec.getColumnType() == CdEkiYColSpec::ColumnType_NewEki )
@@ -1428,21 +1428,21 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //
 //	if ( execEkiPropDlg( bInsert , TRUE ) < 0 )
 //	{
-//		iRv = -1 ;	//	-1 ;	//	�t�H�[�J�X�Z���̈ʒu���s���ł��B
+//		iRv = -1 ;	//	-1 ;	//	フォーカスセルの位置が不正です。
 //	}
 //	// ****************************************************************
 //	if ( !bQueryEnable && iRv >= 0 )
 //	{
 //		// ****************************************************************
-//		//	�R�}���h�̎��s
+//		//	コマンドの実行
 //		// ****************************************************************
-//		//	�R�}���h�����s���܂��B
-//		//	���ʂ��G���[�Ȃ�AiRv �ɕ��̐���ݒ肵�܂��B
+//		//	コマンドを実行します。
+//		//	結果がエラーなら、iRv に負の数を設定します。
 //
 //		execEkiPropDlg( bInsert , FALSE ) ;
 //
 //		// ****************************************************************
-//		//	�G���[���b�Z�[�W
+//		//	エラーメッセージ
 //		// ****************************************************************
 //		// ****************************************************************
 //	}
@@ -1458,20 +1458,20 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //	if (!bQueryEnable) { ppCmd = &pCmd; }
 //
 //	// ****************************************************************
-//	//	�R�}���h�̗L���E��������
+//	//	コマンドの有効・無効判定
 //	// ****************************************************************
 //	if (iRv >= 0)
 //	{
 //		if (!createCmd(CWndDcdGridEkiJikokuhyouList::ECreateCmd_Select, ppCmd))
 //		{
-//			iRv = -1;	//	�Z���̈ʒu������������܂���B
+//			iRv = -1;	//	セルの位置が正しくありません。
 //		}
 //	}
 //	if (iRv >= 0)
 //	{
 //		if (!getDisplaySettingMode())
 //		{
-//			iRv = -2;	//	�\���ݒ胂�[�h�ł͂���܂���B
+//			iRv = -2;	//	表示設定モードではありません。
 //		}
 //
 //	}
@@ -1481,7 +1481,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //		if (aXColSpec.getColumnType() < CdEkiXColSpec::ColumnType_OperationOrigin ||
 //			aXColSpec.getColumnType() > CdEkiXColSpec::ColumnType_DiagramColorNextEki)
 //		{
-//			iRv = -3;	//�ҏW�\�Ȃ̂́A�O���Ɨ��ݒ�`���w�܂ł̔w�i�F�̊Ԃł��B
+//			iRv = -3;	//編集可能なのは、前後作業欄設定〜次駅までの背景色の間です。
 //		}
 //
 //	}
@@ -1489,7 +1489,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //	if (!bQueryEnable && iRv >= 0)
 //	{
 //		// ****************************************************************
-//		//	�R�}���h�̎��s
+//		//	コマンドの実行
 //		// ****************************************************************
 //
 //		CdEkiXColSpec	aXColSpec = getXColSpecOfFocus();
@@ -1500,7 +1500,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			CentDedEki* pCentDedEki = muCentDedEki->get(idx);
 //			if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_OperationOrigin)
 //			{
-//				//�O���Ɨ����L���Ȃ̂́A�w�����`�����������ȊO�̏ꍇ
+//				//前後作業欄が有効なのは、駅時刻形式が発時刻以外の場合
 //				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu)
 //				{
 //					if (pCentDedEki->getJikokuhyouOperationOrigin() >= 3)
@@ -1516,7 +1516,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_OperationTerminal)
 //			{
-//				//�O���Ɨ����L���Ȃ̂́A�w�����`�����������ȊO�̏ꍇ
+//				//前後作業欄が有効なのは、駅時刻形式が発時刻以外の場合
 //				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu)
 //				{
 //					if (pCentDedEki->getJikokuhyouOperationTerminal() >= 3)
@@ -1532,7 +1532,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_TrackOmit)
 //			{
-//				//�Ԑ��ȗ����L���Ȃ̂́A�w�����`�����������E���蔭���E��蔭���̏ꍇ
+//				//番線省略が有効なのは、駅時刻形式が発時刻・下り発着・上り発着の場合
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -1542,8 +1542,8 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_ChakuJikokuDisplayKudari)
 //			{
-//				//�J�X�^�}�C�Y�����\���蒅�������L���Ȃ̂́A�w�����`���������E���蒅�����E���蔭���̏ꍇ
-//				//�������A�������\���������̏ꍇ�́A�������\����L���������ɕύX���Ȃ�
+//				//カスタマイズ時刻表下り着時刻が有効なのは、駅時刻形式が発着・下り着時刻・下り発着の場合
+//				//ただし、発時刻表示が無効の場合は、着時刻表示を有効→無効に変更しない
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -1560,7 +1560,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_TrackDisplayKudari)
 //			{
-//				//�J�X�^�}�C�Y�����\����Ԑ����L���Ȃ̂́A�w�����`���������E���蒅�����E��蒅�����E���蔭���̏ꍇ
+//				//カスタマイズ時刻表下り番線が有効なのは、駅時刻形式が発着・下り着時刻・上り着時刻・下り発着の場合
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
@@ -1572,8 +1572,8 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_HatsuJikokuDisplayKudari)
 //			{
-//				//�J�X�^�}�C�Y�����\���蔭�������L���Ȃ̂́A�w�����`�������蒅�����ȊO�̏ꍇ
-//				//�������A�������\���������̏ꍇ�́A�������\����L���������ɕύX���Ȃ�
+//				//カスタマイズ時刻表下り発時刻が有効なのは、駅時刻形式が下り着時刻以外の場合
+//				//ただし、着時刻表示が無効の場合は、発時刻表示を有効→無効に変更しない
 //				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku)
 //				{
 //					if (!pCentDedEki->getJikokuhyouHatsuJikokuDisplayKudari())
@@ -1588,7 +1588,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_RessyabangouDisplayKudari)
 //			{
-//				//�J�X�^�}�C�Y�����\�����Ԕԍ����L���Ȃ̂́A�w�����`���������E��蒅�����E���蔭���̏ꍇ
+//				//カスタマイズ時刻表下り列車番号が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -1606,7 +1606,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_OperationNumberDisplayKudari)
 //			{
-//				//�J�X�^�}�C�Y�����\����^�p�ԍ����L���Ȃ̂́A�w�����`���������E��蒅�����E���蔭���̏ꍇ
+//				//カスタマイズ時刻表下り運用番号が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -1624,7 +1624,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_RessyaSyubetsuDisplayKudari)
 //			{
-//				//�J�X�^�}�C�Y�����\�����Ԏ�ʂ��L���Ȃ̂́A�w�����`���������E��蒅�����E���蔭���̏ꍇ
+//				//カスタマイズ時刻表下り列車種別が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -1642,7 +1642,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_RessyameiDisplayKudari)
 //			{
-//				//�J�X�^�}�C�Y�����\�����Ԗ����L���Ȃ̂́A�w�����`���������E��蒅�����E���蔭���̏ꍇ
+//				//カスタマイズ時刻表下り列車名が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -1660,8 +1660,8 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_ChakuJikokuDisplayNobori)
 //			{
-//				//�J�X�^�}�C�Y�����\��蒅�������L���Ȃ̂́A�w�����`���������E��蒅�����E��蔭���̏ꍇ
-//				//�������A�������\���������̏ꍇ�́A�������\����L���������ɕύX���Ȃ�
+//				//カスタマイズ時刻表上り着時刻が有効なのは、駅時刻形式が発着・上り着時刻・上り発着の場合
+//				//ただし、発時刻表示が無効の場合は、着時刻表示を有効→無効に変更しない
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -1678,7 +1678,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_TrackDisplayNobori)
 //			{
-//				//�J�X�^�}�C�Y�����\���Ԑ����L���Ȃ̂́A�w�����`���������E���蒅�����E��蒅�����E��蔭���̏ꍇ
+//				//カスタマイズ時刻表上り番線が有効なのは、駅時刻形式が発着・下り着時刻・上り着時刻・上り発着の場合
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
@@ -1690,8 +1690,8 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_HatsuJikokuDisplayNobori)
 //			{
-//				//�J�X�^�}�C�Y�����\��蔭�������L���Ȃ̂́A�w�����`������蒅�����ȊO�̏ꍇ
-//				//�������A�������\���������̏ꍇ�́A�������\����L���������ɕύX���Ȃ�
+//				//カスタマイズ時刻表上り発時刻が有効なのは、駅時刻形式が上り着時刻以外の場合
+//				//ただし、着時刻表示が無効の場合は、発時刻表示を有効→無効に変更しない
 //				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku)
 //				{
 //					if (!pCentDedEki->getJikokuhyouHatsuJikokuDisplayNobori())
@@ -1706,7 +1706,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_RessyabangouDisplayNobori)
 //			{
-//				//�J�X�^�}�C�Y�����\����Ԕԍ����L���Ȃ̂́A�w�����`���������E���蒅�����E��蔭���̏ꍇ
+//				//カスタマイズ時刻表上り列車番号が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -1724,7 +1724,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_OperationNumberDisplayNobori)
 //			{
-//				//�J�X�^�}�C�Y�����\���^�p�ԍ����L���Ȃ̂́A�w�����`���������E���蒅�����E��蔭���̏ꍇ
+//				//カスタマイズ時刻表上り運用番号が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -1742,7 +1742,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_RessyaSyubetsuDisplayNobori)
 //			{
-//				//�J�X�^�}�C�Y�����\����Ԏ�ʂ��L���Ȃ̂́A�w�����`���������E���蒅�����E��蔭���̏ꍇ
+//				//カスタマイズ時刻表上り列車種別が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -1760,7 +1760,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_RessyameiDisplayNobori)
 //			{
-//				//�J�X�^�}�C�Y�����\����Ԗ����L���Ȃ̂́A�w�����`���������E���蒅�����E��蔭���̏ꍇ
+//				//カスタマイズ時刻表上り列車名が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -1778,7 +1778,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_DiagramTrackDisplay)
 //			{
-//				//�ݐ��\�\�����L���Ȃ̂́A�w�����`���������E���蒅�����E��蒅��������v�w�̏ꍇ
+//				//在線表表示が有効なのは、駅時刻形式が発着・下り着時刻・上り着時刻かつ主要駅の場合
 //				if ((pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku) &&
@@ -1789,7 +1789,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_DiagramRessyajouhouHyoujiKudari)
 //			{
-//				//�_�C���O������ԏ��\��(����)
+//				//ダイヤグラム列車情報表示(下り)
 //				if (pCentDedEki->getDiagramRessyajouhouHyoujiKudari() == CentDedEki::EDiagramRessyajouhouHyouji::DiagramRessyajouhouHyouji_Origin)
 //				{
 //					pCentDedEki->setDiagramRessyajouhouHyoujiKudari(CentDedEki::EDiagramRessyajouhouHyouji::DiagramRessyajouhouHyouji_Anytime);
@@ -1805,7 +1805,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_DiagramRessyajouhouHyoujiNobori)
 //			{
-//				//�_�C���O������ԏ��\��(���)
+//				//ダイヤグラム列車情報表示(上り)
 //				if (pCentDedEki->getDiagramRessyajouhouHyoujiNobori() == CentDedEki::EDiagramRessyajouhouHyouji::DiagramRessyajouhouHyouji_Origin)
 //				{
 //					pCentDedEki->setDiagramRessyajouhouHyoujiNobori(CentDedEki::EDiagramRessyajouhouHyouji::DiagramRessyajouhouHyouji_Anytime);
@@ -1821,8 +1821,8 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_NextEkiDistance)
 //			{
-//				//���̉w���玟�̉w�܂ł̋���
-//				//iType�ɂ���ĉ��Z���Ԃ�ς��āAChangeNextEkiDistance�����s����B
+//				//この駅から次の駅までの距離
+//				//iTypeによって加算時間を変えて、ChangeNextEkiDistanceを実行する。
 //				int iShiftSecond = 0;
 //				if (iType == 0)
 //				{
@@ -1842,7 +1842,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_DiagramColorNextEki)
 //			{
-//				//���̉w���玟�̉w�܂ł̔w�i�F�ݒ�
+//				//この駅から次の駅までの背景色設定
 //				if (pCentDedEki->getDiagramColorNextEki() >= 4)
 //				{
 //					pCentDedEki->setDiagramColorNextEki(0);
@@ -1858,13 +1858,13 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //		if (iRv >= 0)
 //		{
 //			// --------------------------------
-//			//	�ҏW�R�}���h�����s
+//			//	編集コマンドを実行
 //			// --------------------------------
 //			getCDiagramEditDoc()->executeEditCmd(pCmd);
 //		}
 //
 //		// ****************************************************************
-//		//	�G���[���b�Z�[�W
+//		//	エラーメッセージ
 //		// ****************************************************************
 //
 //		// ****************************************************************
@@ -1879,20 +1879,20 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //	if (!bQueryEnable) { ppCmd = &pCmd; }
 //
 //	// ****************************************************************
-//	//	�R�}���h�̗L���E��������
+//	//	コマンドの有効・無効判定
 //	// ****************************************************************
 //	if (iRv >= 0)
 //	{
 //		if (!createCmd(CWndDcdGridEkiJikokuhyouList::ECreateCmd_Select, ppCmd))
 //		{
-//			iRv = -1;	//	�Z���̈ʒu������������܂���B
+//			iRv = -1;	//	セルの位置が正しくありません。
 //		}
 //	}
 //	if (iRv >= 0)
 //	{
 //		if (!getDisplaySettingMode())
 //		{
-//			iRv = -2;	//	�\���ݒ胂�[�h�ł͂���܂���B
+//			iRv = -2;	//	表示設定モードではありません。
 //		}
 //
 //	}
@@ -1902,7 +1902,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //		if (aXColSpec.getColumnType() < CdEkiXColSpec::ColumnType_OperationOrigin ||
 //			aXColSpec.getColumnType() > CdEkiXColSpec::ColumnType_DiagramColorNextEki)
 //		{
-//			iRv = -3;	//�ҏW�\�Ȃ̂́A�O���Ɨ��ݒ�`���w�܂ł̔w�i�F�̊Ԃł��B
+//			iRv = -3;	//編集可能なのは、前後作業欄設定〜次駅までの背景色の間です。
 //		}
 //
 //	}
@@ -1910,7 +1910,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //	if (!bQueryEnable && iRv >= 0)
 //	{
 //		// ****************************************************************
-//		//	�R�}���h�̎��s
+//		//	コマンドの実行
 //		// ****************************************************************
 //
 //		CdEkiXColSpec	aXColSpec = getXColSpecOfFocus();
@@ -1921,7 +1921,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			CentDedEki* pCentDedEki = muCentDedEki->get(idx);
 //			if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_OperationOrigin)
 //			{
-//				//�O���Ɨ����L���Ȃ̂́A�w�����`�����������ȊO�̏ꍇ
+//				//前後作業欄が有効なのは、駅時刻形式が発時刻以外の場合
 //				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu)
 //				{
 //					if (pCentDedEki->getJikokuhyouOperationOrigin() <= 0)
@@ -1937,7 +1937,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_OperationTerminal)
 //			{
-//				//�O���Ɨ����L���Ȃ̂́A�w�����`�����������ȊO�̏ꍇ
+//				//前後作業欄が有効なのは、駅時刻形式が発時刻以外の場合
 //				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu)
 //				{
 //					if (pCentDedEki->getJikokuhyouOperationTerminal() <= 0)
@@ -1953,7 +1953,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_TrackOmit)
 //			{
-//				//�Ԑ��ȗ����L���Ȃ̂́A�w�����`�����������E���蔭���E��蔭���̏ꍇ
+//				//番線省略が有効なのは、駅時刻形式が発時刻・下り発着・上り発着の場合
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -1963,8 +1963,8 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_ChakuJikokuDisplayKudari)
 //			{
-//				//�J�X�^�}�C�Y�����\���蒅�������L���Ȃ̂́A�w�����`���������E���蒅�����E���蔭���̏ꍇ
-//				//�������A�������\���������̏ꍇ�́A�������\����L���������ɕύX���Ȃ�
+//				//カスタマイズ時刻表下り着時刻が有効なのは、駅時刻形式が発着・下り着時刻・下り発着の場合
+//				//ただし、発時刻表示が無効の場合は、着時刻表示を有効→無効に変更しない
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -1981,7 +1981,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_TrackDisplayKudari)
 //			{
-//				//�J�X�^�}�C�Y�����\����Ԑ����L���Ȃ̂́A�w�����`���������E���蒅�����E��蒅�����E���蔭���̏ꍇ
+//				//カスタマイズ時刻表下り番線が有効なのは、駅時刻形式が発着・下り着時刻・上り着時刻・下り発着の場合
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
@@ -1993,8 +1993,8 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_HatsuJikokuDisplayKudari)
 //			{
-//				//�J�X�^�}�C�Y�����\���蔭�������L���Ȃ̂́A�w�����`�������蒅�����ȊO�̏ꍇ
-//				//�������A�������\���������̏ꍇ�́A�������\����L���������ɕύX���Ȃ�
+//				//カスタマイズ時刻表下り発時刻が有効なのは、駅時刻形式が下り着時刻以外の場合
+//				//ただし、着時刻表示が無効の場合は、発時刻表示を有効→無効に変更しない
 //				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku)
 //				{
 //					if (!pCentDedEki->getJikokuhyouHatsuJikokuDisplayKudari())
@@ -2009,7 +2009,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_RessyabangouDisplayKudari)
 //			{
-//				//�J�X�^�}�C�Y�����\�����Ԕԍ����L���Ȃ̂́A�w�����`���������E��蒅�����E���蔭���̏ꍇ
+//				//カスタマイズ時刻表下り列車番号が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -2027,7 +2027,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_OperationNumberDisplayKudari)
 //			{
-//				//�J�X�^�}�C�Y�����\����^�p�ԍ����L���Ȃ̂́A�w�����`���������E��蒅�����E���蔭���̏ꍇ
+//				//カスタマイズ時刻表下り運用番号が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -2045,7 +2045,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_RessyaSyubetsuDisplayKudari)
 //			{
-//				//�J�X�^�}�C�Y�����\�����Ԏ�ʂ��L���Ȃ̂́A�w�����`���������E��蒅�����E���蔭���̏ꍇ
+//				//カスタマイズ時刻表下り列車種別が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -2063,7 +2063,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_RessyameiDisplayKudari)
 //			{
-//				//�J�X�^�}�C�Y�����\�����Ԗ����L���Ȃ̂́A�w�����`���������E��蒅�����E���蔭���̏ꍇ
+//				//カスタマイズ時刻表下り列車名が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
@@ -2081,8 +2081,8 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_ChakuJikokuDisplayNobori)
 //			{
-//				//�J�X�^�}�C�Y�����\��蒅�������L���Ȃ̂́A�w�����`���������E��蒅�����E��蔭���̏ꍇ
-//				//�������A�������\���������̏ꍇ�́A�������\����L���������ɕύX���Ȃ�
+//				//カスタマイズ時刻表上り着時刻が有効なのは、駅時刻形式が発着・上り着時刻・上り発着の場合
+//				//ただし、発時刻表示が無効の場合は、着時刻表示を有効→無効に変更しない
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -2099,7 +2099,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_TrackDisplayNobori)
 //			{
-//				//�J�X�^�}�C�Y�����\���Ԑ����L���Ȃ̂́A�w�����`���������E���蒅�����E��蒅�����E��蔭���̏ꍇ
+//				//カスタマイズ時刻表上り番線が有効なのは、駅時刻形式が発着・下り着時刻・上り着時刻・上り発着の場合
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
@@ -2111,8 +2111,8 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_HatsuJikokuDisplayNobori)
 //			{
-//				//�J�X�^�}�C�Y�����\��蔭�������L���Ȃ̂́A�w�����`������蒅�����ȊO�̏ꍇ
-//				//�������A�������\���������̏ꍇ�́A�������\����L���������ɕύX���Ȃ�
+//				//カスタマイズ時刻表上り発時刻が有効なのは、駅時刻形式が上り着時刻以外の場合
+//				//ただし、着時刻表示が無効の場合は、発時刻表示を有効→無効に変更しない
 //				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku)
 //				{
 //					if (!pCentDedEki->getJikokuhyouHatsuJikokuDisplayNobori())
@@ -2127,7 +2127,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_RessyabangouDisplayNobori)
 //			{
-//				//�J�X�^�}�C�Y�����\����Ԕԍ����L���Ȃ̂́A�w�����`���������E���蒅�����E��蔭���̏ꍇ
+//				//カスタマイズ時刻表上り列車番号が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -2145,7 +2145,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_OperationNumberDisplayNobori)
 //			{
-//				//�J�X�^�}�C�Y�����\���^�p�ԍ����L���Ȃ̂́A�w�����`���������E���蒅�����E��蔭���̏ꍇ
+//				//カスタマイズ時刻表上り運用番号が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -2163,7 +2163,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_RessyaSyubetsuDisplayNobori)
 //			{
-//				//�J�X�^�}�C�Y�����\����Ԏ�ʂ��L���Ȃ̂́A�w�����`���������E���蒅�����E��蔭���̏ꍇ
+//				//カスタマイズ時刻表上り列車種別が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -2181,7 +2181,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_RessyameiDisplayNobori)
 //			{
-//				//�J�X�^�}�C�Y�����\����Ԗ����L���Ȃ̂́A�w�����`���������E���蒅�����E��蔭���̏ꍇ
+//				//カスタマイズ時刻表上り列車名が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
 //				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
@@ -2199,7 +2199,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_DiagramTrackDisplay)
 //			{
-//				//�ݐ��\�\�����L���Ȃ̂́A�w�����`���������E���蒅�����E��蒅��������v�w�̏ꍇ
+//				//在線表表示が有効なのは、駅時刻形式が発着・下り着時刻・上り着時刻かつ主要駅の場合
 //				if ((pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 //					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku) &&
@@ -2210,7 +2210,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_DiagramRessyajouhouHyoujiKudari)
 //			{
-//				//�_�C���O������ԏ��\��(����)
+//				//ダイヤグラム列車情報表示(下り)
 //				if (pCentDedEki->getDiagramRessyajouhouHyoujiKudari() == CentDedEki::EDiagramRessyajouhouHyouji::DiagramRessyajouhouHyouji_Origin)
 //				{
 //					pCentDedEki->setDiagramRessyajouhouHyoujiKudari(CentDedEki::EDiagramRessyajouhouHyouji::DiagramRessyajouhouHyouji_Not);
@@ -2226,7 +2226,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_DiagramRessyajouhouHyoujiNobori)
 //			{
-//				//�_�C���O������ԏ��\��(���)
+//				//ダイヤグラム列車情報表示(上り)
 //				if (pCentDedEki->getDiagramRessyajouhouHyoujiNobori() == CentDedEki::EDiagramRessyajouhouHyouji::DiagramRessyajouhouHyouji_Origin)
 //				{
 //					pCentDedEki->setDiagramRessyajouhouHyoujiNobori(CentDedEki::EDiagramRessyajouhouHyouji::DiagramRessyajouhouHyouji_Not);
@@ -2242,8 +2242,8 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_NextEkiDistance)
 //			{
-//				//���̉w���玟�̉w�܂ł̋���
-//				//iType�ɂ���ĉ��Z���Ԃ�ς��āAChangeNextEkiDistance�����s����B
+//				//この駅から次の駅までの距離
+//				//iTypeによって加算時間を変えて、ChangeNextEkiDistanceを実行する。
 //				int iShiftSecond = 0;
 //				if (iType == 0)
 //				{
@@ -2263,7 +2263,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //			}
 //			else if (aXColSpec.getColumnType() == CdEkiXColSpec::ColumnType_DiagramColorNextEki)
 //			{
-//				//���̉w���玟�̉w�܂ł̔w�i�F�ݒ�
+//				//この駅から次の駅までの背景色設定
 //				if (pCentDedEki->getDiagramColorNextEki() <= 0)
 //				{
 //					pCentDedEki->setDiagramColorNextEki(4);
@@ -2279,13 +2279,13 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate_All()
 //		if (iRv >= 0)
 //		{
 //			// --------------------------------
-//			//	�ҏW�R�}���h�����s
+//			//	編集コマンドを実行
 //			// --------------------------------
 //			getCDiagramEditDoc()->executeEditCmd(pCmd);
 //		}
 //
 //		// ****************************************************************
-//		//	�G���[���b�Z�[�W
+//		//	エラーメッセージ
 //		// ****************************************************************
 //
 //		// ****************************************************************
@@ -2314,7 +2314,7 @@ int CWndDcdGridEkiJikokuhyouList::OnEkiJikokuhyouListMovetoEkiJikokuhyou_Process
 	{
 		if (getCentDedDia()->getWaitOperationUpdate())
 		{
-			iRv = -1;	//�^�p�X�V�}�~��Ԃł�
+			iRv = -1;	//運用更新抑止状態です
 		}
 	}
 
@@ -2339,7 +2339,7 @@ int CWndDcdGridEkiJikokuhyouList::OnEkiJikokuhyouListMovetoEkiJikokuhyou_Process
 	//		if (aCdEkiJikokuhyouYColSpec.getColumnType() ==
 	//			CdEkiJikokuhyouYColSpec::ColumnType_Head)
 	//		{
-	//			iRv = -3;	//�t�H�[�J�X����Ԉʒu�ȊO�Ȃ�s��
+	//			iRv = -3;	//フォーカスが列車位置以外なら不可
 	//		}
 	//		else if (aCdEkiJikokuhyouXColSpec.getColumnType() ==
 	//			CdEkiJikokuhyouXColSpec::ColumnType_Hour)
@@ -2349,7 +2349,7 @@ int CWndDcdGridEkiJikokuhyouList::OnEkiJikokuhyouListMovetoEkiJikokuhyou_Process
 	//	}
 	//	else
 	//	{
-	//		iRv = -5; //�����I���͕s��
+	//		iRv = -5; //複数選択は不可
 	//	}
 
 	//}
@@ -2367,7 +2367,7 @@ int CWndDcdGridEkiJikokuhyouList::OnEkiJikokuhyouListMovetoEkiJikokuhyou_Process
 			int iEkiIndex = aPos.getY();
 
 			// ****************************************************************
-			//	�R�}���h�̎��s
+			//	コマンドの実行
 			// ****************************************************************
 			CEkiJikokuhyouView* pCEkiJikokuhyouView = NULL;
 			getCDiagramEditApp()->openCEkiJikokuhyouDoc(
@@ -2385,13 +2385,13 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 	int iRv = 0;
 	CString	strError;
 	// ****************************************************************
-	//	�R�}���h�̗L���E��������
+	//	コマンドの有効・無効判定
 	// ****************************************************************
 	if (iRv >= 0)
 	{
 		if (getCentDedDia()->getWaitOperationUpdate())
 		{
-			iRv = -1;	//�^�p�X�V�}�~��Ԃł�
+			iRv = -1;	//運用更新抑止状態です
 		}
 	}
 
@@ -2399,11 +2399,11 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 	if (!bQueryEnable && iRv >= 0)
 	{
 		// ****************************************************************
-		//	�R�}���h�̎��s
+		//	コマンドの実行
 		// ****************************************************************
 
 	// --------------------------------
-	//	�o�̓t�@�C�������͒l�̎擾
+	//	出力ファイル名入力値の取得
 	// --------------------------------
 		if (iRv >= 0)
 		{
@@ -2416,17 +2416,17 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 				this);
 			if (aDlg.DoModal() != IDOK)
 			{
-				iRv = -2;	//	Cancel����܂����B
+				iRv = -2;	//	Cancelされました。
 			}
 			else
 			{
 				m_strCsvFilename = aDlg.GetPathName();
 			}
 		}
-		//m_strCsvFilename = �w�肳�ꂽCSV�t�@�C����
+		//m_strCsvFilename = 指定されたCSVファイル名
 
 		// --------------------------------
-		//	CSV�t�@�C���̏o��
+		//	CSVファイルの出力
 		// --------------------------------
 		CWaitCursor aCursor;
 		if (iRv >= 0)
@@ -2459,10 +2459,10 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 			}
 
 			/**
-				iEkiOrder->iEkiIndex�Ή��\(����E��Ή�)
-				����E����2���ʁ~�w���̃R���e�i
-				[iEkiOrder][iRessyahoukou]�ŃA�N�Z�X����ƁAcontRessyaExist�ɑΉ�����iEkiIndex��Ԃ��܂�
-				�܂��A�����w�ɂ��ẮAiEkiIndexLoop[0]�w�ɏW�񂵂܂��B�]���āA����Ԃ̏ꍇ��iEkiOrderLoop.back()�ɓ�����܂�
+				iEkiOrder->iEkiIndex対応表(分岐・環状対応)
+				下り・上りの2方面×駅数のコンテナ
+				[iEkiOrder][iRessyahoukou]でアクセスすると、contRessyaExistに対応するiEkiIndexを返します
+				また、分岐環状駅については、iEkiIndexLoop[0]駅に集約します。従って、上り列車の場合はiEkiOrderLoop.back()に当たります
 			*/
 			vector<vector<int>> iEkiOrderTable;
 			iEkiOrderTable.resize(pCentDedEkiCont->size());
@@ -2507,7 +2507,7 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 					const CentDedRessyaCont* pCentDedRessyaCont = getCentDedDia()->getCentDedRessyaCont((ERessyahoukou)iRessyahoukou);
 
 					int iEkiOrder = pCentDedRessyaCont->EkiOrderOfEkiIndex(iEkiIndex);
-					//���̉w�ƁA����w�E����ݒ�Ŋ֘A�t����ꂽ�w��Index�ł��B���Ԕ���ɗp���܂�
+					//この駅と、分岐駅・環状線設定で関連付けられた駅のIndexです。環状列車判定に用います
 					deque<int> iEkiIndexBrunchLoop;
 					pCentDedEkiCont->getEkiIndexBrunchLoop(iEkiIndex, iEkiIndexBrunchLoop);
 
@@ -2602,8 +2602,8 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 
 							aEkiJikokuhyouContent.iRessyaTrackIndex = pCentDedRessya->getCentDedEkiJikoku(iEkiOrder).getRessyaTrackIndex();
 
-							//�ȈՃ��[�h���̏I���w�́A�J�X�^�}�C�Y�����\�œ�����ɂ܂Ƃ߂ĕ\��������݂̂̂��l������
-							//�ȈՃ��[�h�̏ꍇ�̎n���w����́A�L���n���w���H���O�n���ł͂Ȃ����A���̗�Ԃ�CustomizeJikokuhyouContent��iRessyaIndexCont�̐擪�ɂ��邱�Ƃł��B
+							//簡易モード時の終着駅は、カスタマイズ時刻表で同じ列にまとめて表示するもののみを考慮する
+							//簡易モードの場合の始発駅判定は、有効始発駅かつ路線外始発ではないかつ、この列車がCustomizeJikokuhyouContentのiRessyaIndexContの先頭にあることです。
 							bool bIsShihatsu = pCentDedRessya->getValidSihatsuEki() == iEkiOrder;
 							if (bIsShihatsu)
 							{
@@ -2628,18 +2628,18 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 									{
 										if (idx == 0)
 										{
-											//�擪�ɂ���ꍇ�́AbIsShihatsu�����̂܂ܓ���܂�
+											//先頭にある場合は、bIsShihatsuがそのまま入ります
 											aEkiJikokuhyouContent.bIsShihatsu = bIsShihatsu;
 										}
 										else
 										{
-											//�擪�ȊO�̏ꍇ�́A��������false�ɂȂ�܂�
+											//先頭以外の場合は、無条件でfalseになります
 											aEkiJikokuhyouContent.bIsShihatsu = false;
 										}
 
 										if (idx == aCustomizeJikokuhyouContent.iRessyaIndexCont.size() - 1)
 										{
-											//iRessyaIndexCont�̖����ɂ���ꍇ(size1�Ő擪�ɂ���ꍇ���܂�)�́A���̗�Ԃ̍s���悪���̂܂܎g���܂��B
+											//iRessyaIndexContの末尾にある場合(size1で先頭にある場合を含む)は、この列車の行き先がそのまま使われます。
 
 											aEkiJikokuhyouContent.iSyuuchakuEkiOrder = iSyuuchakuEkiOrder;
 											const CentDedAfterOperation aLastOperation = pCentDedRessya->getLastOperation();
@@ -2650,7 +2650,7 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 										}
 										else
 										{
-											//���̗�Ԃ������ɗ�Ԃ�����ꍇ�A�ŏI��Ԃ̍s�����\�����܂��B�܂��A��ʕύX������ꍇ�͂����\�����܂�
+											//この列車よりも後ろに列車がある場合、最終列車の行き先を表示します。また、種別変更がある場合はそれを表示します
 											bool bIsClassChange = pCentDedRessya->getLastOperation().getNextJunctionType() == 1;
 											for (int idx2 = idx + 1; idx2 < (int)aCustomizeJikokuhyouContent.iRessyaIndexCont.size(); idx2++)
 											{
@@ -2658,20 +2658,20 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 												if (bIsClassChange && getDisplayClassChange())
 												{
 													/**
-														�O��^�C�v����ʕύX�̏ꍇ�́A��ʕύX�\�����쐬����B
+														前後タイプが種別変更の場合は、種別変更表示を作成する。
 													*/
 													EkiJikokuhyouContent aEkiJikokuhyouContentClassChange;
-													aEkiJikokuhyouContentClassChange.iMinute = -1;//��ʕύX
+													aEkiJikokuhyouContentClassChange.iMinute = -1;//種別変更
 													aEkiJikokuhyouContentClassChange.iRessyaSyubetsu = pCentDedRessyaNext->getRessyasyubetsuIndex();
-													aEkiJikokuhyouContentClassChange.iSyuuchakuEkiOrder = pCentDedRessyaNext->getValidSihatsuEki();//�ȈՃ��[�h�̏ꍇ�A��ԕ����͕K�������Ȃ̂ŁA���̂܂ܓ����
+													aEkiJikokuhyouContentClassChange.iSyuuchakuEkiOrder = pCentDedRessyaNext->getValidSihatsuEki();//簡易モードの場合、列車方向は必ず同じなので、そのまま入れる
 													aEkiJikokuhyouContentClassChange.aRessyaProperty =
 														CdDedRessyaProperty((ERessyahoukou)iRessyahoukou, aCustomizeJikokuhyouContent.iRessyaIndexCont[idx2]);
 
 													ListEkiJikokuhyouContentTemp.push_back(aEkiJikokuhyouContentClassChange);
 
 												}
-												//������Ԃ̏ꍇ�́A�I���w�ƘH���O�I���w���擾�A
-												//�����ł͂Ȃ��ꍇ�́A��ʕύX���ۂ����擾
+												//末尾列車の場合は、終着駅と路線外終着駅を取得、
+												//末尾ではない場合は、種別変更か否かを取得
 												if (idx2 == (int)aCustomizeJikokuhyouContent.iRessyaIndexCont.size() - 1)
 												{
 													aEkiJikokuhyouContent.iSyuuchakuEkiOrder = pCentDedRessyaNext->getValidSyuuchakuEki();
@@ -2702,7 +2702,7 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 							//aEkiJikokuhyouContent.aRessyaProperty =
 							//	CdDedRessyaProperty(GetDocument()->getRessyahoukou(), iRessyaIndex);
 
-							//�ȈՃ��[�h�̏ꍇ�̎n���w����́A�L���n���w���H���O�n���ł͂Ȃ����A���̗�Ԃ�CustomizeJikokuhyouContent��iRessyaIndexCont�̐擪�ɂ��邱�Ƃł��B
+							//簡易モードの場合の始発駅判定は、有効始発駅かつ路線外始発ではないかつ、この列車がCustomizeJikokuhyouContentのiRessyaIndexContの先頭にあることです。
 							//bool bIsShihatsu = pCentDedRessya->getValidSihatsuEki() == iEkiOrder;
 							//if (bIsShihatsu)
 							//{
@@ -2716,7 +2716,7 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 							//	const vector<CustomizeJikokuhyouContent>& contCustomizeJikokuhyouContent =
 							//		getCentDedDia()->getcontCustomizeRessyaIndex(GetDocument()->getRessyahoukou());
 							//	bool bFound = false;
-							//	//CustomizeJikokuhyouContent��iRessyaIndexCont�̐擪�v�f�������m�F�A�擪�ɂȂ����bIsShihatsu��false�ɂ��܂��B
+							//	//CustomizeJikokuhyouContentのiRessyaIndexContの先頭要素だけを確認、先頭になければbIsShihatsuをfalseにします。
 							//	for (int iCustomizeJikokuhyouContent = 0; iCustomizeJikokuhyouContent < (int)contCustomizeJikokuhyouContent.size() && !bFound; iCustomizeJikokuhyouContent++)
 							//	{
 							//		const CustomizeJikokuhyouContent& aCustomizeJikokuhyouContent = contCustomizeJikokuhyouContent[iCustomizeJikokuhyouContent];
@@ -2778,7 +2778,7 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 							unordered_map<tstring, list<EkiJikokuhyouContent>> MapListEkiJikokuhyouContentBuffer;
 
 							/**
-								�܂��ŏ��ɁA�^�p�@�\OFF���Ɠ��l�̕��@�ŏI���w���擾���āAListEkiJikokuhyouContentTemp�Ɏ��߂�
+								まず最初に、運用機能OFF時と同様の方法で終着駅を取得して、ListEkiJikokuhyouContentTempに収める
 							*/
 							int iSyuuchakuEkiOrder = pCentDedRessya->getValidSyuuchakuEki();
 							if (iSyuuchakuEkiOrder == -1)
@@ -2795,7 +2795,7 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 								}
 							}
 
-							//���̉^�p�ԍ��A�^�p�ԍ��ɂ͎g���Ȃ�";"��p���Ă����B
+							//仮の運用番号、運用番号には使えない";"を用いておく。
 							tstring strOperationNumberMain = _T(";");
 							{
 								EkiJikokuhyouContent aEkiJikokuhyouContentMain;
@@ -2809,8 +2809,8 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 								aRessyaPropertyBufferMain.iSyuuchakuEkiOrder = iSyuuchakuEkiOrder;
 
 								/**
-									���̗�Ԃ̃��[�g�𒲂ׂ�A���[�g�ɗւ��ł��A�ւ̏I�_�����w�Ȃ�A���̗�Ԃ̍s�����"��"�ɂȂ�B
-									�ւ̏I�_�����w�ȊO�Ȃ�A���̗�Ԃ̍s�����"���"�ɂȂ�B
+									この列車のルートを調べる、ルートに輪ができ、輪の終点が当駅なら、この列車の行き先は"環状"になる。
+									輪の終点が当駅以外なら、この列車の行き先は"環状線"になる。
 								*/
 								vector<int> RouteEkiIndex;
 
@@ -2820,9 +2820,9 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 									if (!pCentDedRessya->isRunBetweenNextEki(ord))
 									{
 										/**
-											idx�Ǝ��̉w�Ԃ��^�]���Ă��Ȃ��ꍇ�́A
-											�^�s�Ȃ���Ԃ��΂��A���ɉ^�s����ɂȂ��Ԃֈڂ�A
-											���̍ہA�^�s�Ȃ��̑O�オ����w(����E��֌W)�ł��邱�Ƃ��m�F����B
+											idxと次の駅間を運転していない場合は、
+											運行なし区間を飛ばし、次に運行ありになる区間へ移る、
+											その際、運行なしの前後が同一駅(分岐・環状関係)であることを確認する。
 										*/
 										int iEkiOrderNext = pCentDedRessya->getRunBetweenEkiForward(ord);
 										if (iEkiOrderNext != -1 &&
@@ -2851,21 +2851,21 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 									if (iPosition == -1)
 									{
 										/**
-											iPosition��-1�̏ꍇ�́ARouteEkiIndex�ɑO�w��Index��ǉ����Ď���
+											iPositionが-1の場合は、RouteEkiIndexに前駅のIndexを追加して次へ
 										*/
 										RouteEkiIndex.push_back(iEkiIndexPrev);
 									}
 									else if (iPosition == RouteEkiIndex.size() - 1)
 									{
 										/**
-											iPosition�������̏ꍇ�́A�܂�Ԃ��Ă����ԂȂ̂ŁARouteEkiIndex�̖����v�f���폜���Ď��ցB
+											iPositionが末尾の場合は、折り返している状態なので、RouteEkiIndexの末尾要素を削除して次へ。
 										*/
 										RouteEkiIndex.pop_back();
 									}
 									else if (iPosition == 0)
 									{
 										/**
-											iPosition���擪(�������ł͂Ȃ�)�̏ꍇ�́A���̗�Ԃ̍s�����"��"�ɂȂ�B
+											iPositionが先頭(かつ末尾ではない)の場合は、この列車の行き先は"環状"になる。
 										*/
 										bLoop = true;
 										aEkiJikokuhyouContentMain.iSyuuchakuEkiOrder = -1;
@@ -2876,7 +2876,7 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 									else
 									{
 										/**
-											iPosition�����Ԃ̏ꍇ�́A���̗�Ԃ̍s�����"���"�ɂȂ�B
+											iPositionが中間の場合は、この列車の行き先は"環状線"になる。
 										*/
 										bLoop = true;
 										aEkiJikokuhyouContentMain.iSyuuchakuEkiOrder = -2;
@@ -2900,10 +2900,10 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 							}
 
 							///**
-							//	���ɁA�e�^�p�ԍ��ɑ΂��čs������擾����B
-							//	���̍ہA��Ґ��̏I�_����A��ʕύX�E�����Ő�̗�ԂɂȂ����Ă���ꍇ�A
-							//	�I�_�ŉ������ĘH���O�I���ɂȂ�ꍇ�́A��Ŋl��������Ґ��̏I���w��u��������B
-							//	�Ȃ��A��Ґ����H���O�I���̏ꍇ�͒u�������͋N����Ȃ��B
+							//	次に、各運用番号に対して行き先を取得する。
+							//	その際、主編成の終点から、種別変更・分割で先の列車につながっている場合、
+							//	終点で解結して路線外終着になる場合は、上で獲得した主編成の終着駅を置き換える。
+							//	なお、主編成が路線外終着の場合は置き換えは起こらない。
 							//*/
 
 							for (int idx = 0; idx < (int)strContOperationNumber.size(); idx++)
@@ -2941,14 +2941,14 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 								aEkiJikokuhyouContent.aRessyaProperty = aRessyaProperty;
 
 								/**
-									bIsShihatsu�����߂�
-									�ʏ탂�[�h�ɂ����ẮA(1)bIsSihatsu(���[�J���ϐ���)��false�ȏꍇ(�L���n���w�ł͂Ȃ�or��Ґ����H���O�n���ł͂Ȃ��ꍇ)�́Afalse�m��
-									(2)bIsSihatsu��true�̏ꍇ�AOperationTableContent�����āAeBeforeType����ʕύX�E��ԏ��ύX�E�����Ԉ����E�H���O�n���E�^�p�ԍ��ύX�̏ꍇ��
-											false�m��ƂȂ�AbIsShihatsu��false�ɂ��܂��B
-										����ȊO(�ʗ�ԁE�o��)�̏ꍇ�́AbIsShihatsu��true�̂܂܂Ƃ��A�S�Ẳ^�p�ԍ����AeBeforeType���ʗ�ԁE�o��ŁAbIsShihatsu��true�̂܂܂��������A
-											���̗�Ԃɂ���bIsShihatsu��true�Ɗm�肵�܂�
+									bIsShihatsuを求める
+									通常モードにおいては、(1)bIsSihatsu(ローカル変数の)がfalseな場合(有効始発駅ではないor主編成が路線外始発ではない場合)は、false確定
+									(2)bIsSihatsuがtrueの場合、OperationTableContentを見て、eBeforeTypeが種別変更・列車情報変更・同一列車扱い・路線外始発・運用番号変更の場合は
+											false確定となり、bIsShihatsuをfalseにします。
+										それ以外(別列車・出区)の場合は、bIsShihatsuをtrueのままとし、全ての運用番号が、eBeforeTypeが別列車・出区で、bIsShihatsuがtrueのままだった時、
+											この列車についてbIsShihatsuがtrueと確定します
 
-									�܂�AbIsShihatsu=false����ł���������false�ƂȂ�
+									つまり、bIsShihatsu=falseが一つでもあったらfalseとなる
 								*/
 
 								if (bIsShihatsu)
@@ -2959,11 +2959,11 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 										bIsShihatsu = false;
 									}
 								}
-								//bIsShihatsu�͍Ō�ɏ�������
+								//bIsShihatsuは最後に書き込む
 
 								/**
-									���̗�Ԃ̃��[�g�𒲂ׂ�A���[�g�ɗւ��ł��A�ւ̏I�_�����w�Ȃ�A���̗�Ԃ̍s�����"��"�ɂȂ�B
-									�ւ̏I�_�����w�ȊO�Ȃ�A���̗�Ԃ̍s�����"���"�ɂȂ�B
+									この列車のルートを調べる、ルートに輪ができ、輪の終点が当駅なら、この列車の行き先は"環状"になる。
+									輪の終点が当駅以外なら、この列車の行き先は"環状線"になる。
 								*/
 								vector<int> RouteEkiIndex;
 								bool bLoop = false;
@@ -2976,26 +2976,26 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 										pCentDedRessyaConts[itr->aRessyaProperty.getRessyahoukou()]
 										->get(itr->aRessyaProperty.getRessyaIndex());
 
-									//�s�����itr�ŏ㏑������B
-									//�I���wOrder�́A��x�wIndex�ɒ����Ă���A���X�̗�ԕ����ɍ��킹��Order�ɕύX���Ȃ����B
+									//行き先をitrで上書きする。
+									//終着駅Orderは、一度駅Indexに直してから、元々の列車方向に合わせたOrderに変更しなおす。
 									int iSyuuchakuEkiIndexSearch = pCentDedRessyaSearch->EkiIndexOfEkiOrder(itr->iSyuuchakuEkiOrder);
 									aEkiJikokuhyouContent.iSyuuchakuEkiOrder = pCentDedRessya->EkiOrderOfEkiIndex(iSyuuchakuEkiIndexSearch);
 									aEkiJikokuhyouContent.iOuterShuchakuekiIndex = itr->iOuterShuchakuekiIndex;
 
 									RessyaPropertyBuffer aRessyaPropertyBuffer;
-									//aRessyaPropertyBuffer�̏I���wOrder�͂��̗�Ԋ��ok�Ƃ���(������ԓ��m�Ŕ�r���A�I���w�̉���������K�v������̂�)
+									//aRessyaPropertyBufferの終着駅Orderはその列車基準でokとする(同じ列車同士で比較し、終着駅の遠さを見る必要があるので)
 									aRessyaPropertyBuffer.iSyuuchakuEkiOrder = itr->iSyuuchakuEkiOrder;
 									aRessyaPropertyBuffer.iOuterShuchakuekiIndex = itr->iOuterShuchakuekiIndex;
 									aRessyaPropertyBuffer.aRessyaProperty = itr->aRessyaProperty;
 									/**
-										�O��^�C�v����ʕύX�̏ꍇ�́A��ʕύX�\�����쐬����B
+										前後タイプが種別変更の場合は、種別変更表示を作成する。
 									*/
 									if (!bFirst &&
 										itr->eBeforeType == EBeforeAfterType::BeforeAfterType_ClassChange &&
 										getDisplayClassChange())
 									{
 										EkiJikokuhyouContent aEkiJikokuhyouContentClassChange;
-										aEkiJikokuhyouContentClassChange.iMinute = -1;//��ʕύX
+										aEkiJikokuhyouContentClassChange.iMinute = -1;//種別変更
 										aEkiJikokuhyouContentClassChange.iRessyaSyubetsu = pCentDedRessyaSearch->getRessyasyubetsuIndex();
 										int iClassChangeEkiIndex = pCentDedRessyaSearch->EkiIndexOfEkiOrder(itr->iSihatsuEkiOrder);
 										aEkiJikokuhyouContentClassChange.iSyuuchakuEkiOrder = pCentDedRessya->EkiOrderOfEkiIndex(iClassChangeEkiIndex);
@@ -3015,9 +3015,9 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 										if (!pCentDedRessyaSearch->isRunBetweenNextEki(ord))
 										{
 											/**
-												idx�Ǝ��̉w�Ԃ��^�]���Ă��Ȃ��ꍇ�́A
-												�^�s�Ȃ���Ԃ��΂��A���ɉ^�s����ɂȂ��Ԃֈڂ�A
-												���̍ہA�^�s�Ȃ��̑O�オ����w(����E��֌W)�ł��邱�Ƃ��m�F����B
+												idxと次の駅間を運転していない場合は、
+												運行なし区間を飛ばし、次に運行ありになる区間へ移る、
+												その際、運行なしの前後が同一駅(分岐・環状関係)であることを確認する。
 											*/
 											int iEkiOrderNext = pCentDedRessyaSearch->getRunBetweenEkiForward(ord);
 											if (iEkiOrderNext != -1 &&
@@ -3046,26 +3046,26 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 										if (iPosition == -1)
 										{
 											/**
-												iPosition��-1�̏ꍇ�́ARouteEkiIndex�ɑO�w��Index��ǉ����Ď���
+												iPositionが-1の場合は、RouteEkiIndexに前駅のIndexを追加して次へ
 											*/
 											RouteEkiIndex.push_back(iEkiIndexPrev);
 										}
 										else if (iPosition == RouteEkiIndex.size() - 1)
 										{
 											/**
-												iPosition�������̏ꍇ�́A�܂�Ԃ��Ă����ԂȂ̂ŁARouteEkiIndex�̖����v�f���폜���Ď��ցB
+												iPositionが末尾の場合は、折り返している状態なので、RouteEkiIndexの末尾要素を削除して次へ。
 											*/
 											RouteEkiIndex.pop_back();
 										}
 										else if (iPosition == 0)
 										{
 											/**
-												iPosition���擪(�������ł͂Ȃ�)�̏ꍇ�́A���̗�Ԃ̍s�����"��"�ɂȂ�B
+												iPositionが先頭(かつ末尾ではない)の場合は、この列車の行き先は"環状"になる。
 											*/
 											bLoop = true;
 											aEkiJikokuhyouContent.iSyuuchakuEkiOrder = -1;
 											ListEkiJikokuhyouContentTempPerON.push_front(aEkiJikokuhyouContent);
-											//aRessyaPropertyBufferNext�̏I���wOrder�͂��̗�Ԋ��ok�Ƃ���(������ԓ��m�Ŕ�r���A�I���w�̉���������K�v������̂�)
+											//aRessyaPropertyBufferNextの終着駅Orderはその列車基準でokとする(同じ列車同士で比較し、終着駅の遠さを見る必要があるので)
 											aRessyaPropertyBuffer.iSyuuchakuEkiOrder = ord + 1;
 											aRessyaPropertyBuffer.bLoop = true;
 											//iLoop = -1;
@@ -3074,7 +3074,7 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 										else
 										{
 											/**
-												iPosition�����Ԃ̏ꍇ�́A���̗�Ԃ̍s�����"���"�ɂȂ�B
+												iPositionが中間の場合は、この列車の行き先は"環状線"になる。
 											*/
 											bLoop = true;
 											aEkiJikokuhyouContent.iSyuuchakuEkiOrder = -2;
@@ -3087,8 +3087,8 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 									}
 									ContRessyaPropertyBuffer.push_back(aRessyaPropertyBuffer);
 									/**
-										itr�̏I���w�܂Ō������Ă��A��ɂȂ�Ȃ������ꍇ�́A
-										����Ԑڑ��^�C�v�����āA����ԒT���ɓ��邩�����ŏI�����邩�����߂�
+										itrの終着駅まで検索しても、環状にならなかった場合は、
+										次列車接続タイプを見て、次列車探索に入るかここで終了するかを決める
 									*/
 									if (bLoop)
 									{
@@ -3102,25 +3102,25 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 											itr->eAfterType == EBeforeAfterType::BeforeAfterType_PropertySame) &&
 										itrNext->eBeforeType == itr->eAfterType)
 									{
-										//���̗�Ԃ������ł͂Ȃ��A��^�C�v����ʕύX�E��ԏ��ύX�E�����Ԉ����̂����ꂩ�ŁA
-										//���̗�Ԃƈ�v���Ă���̂Ȃ�A���̗�Ԃ̌������s���B
+										//この列車が末尾ではなく、後タイプが種別変更・列車情報変更・同一列車扱いのいずれかで、
+										//次の列車と一致しているのなら、次の列車の検索を行う。
 										continue;
 									}
 									else
 									{
-										//���̗�Ԃ������A�܂��͌�^�C�v�������Ԉ����ȊO�A�܂��͎���Ԃ̑O�^�C�v�ƈ�v���Ȃ��ꍇ�A
-										//���̗�Ԃ���̉��̖����ƂȂ�̂�
-										//aEkiJikokuhyouContent��List�̐擪�ɓ����B
+										//この列車が末尾、または後タイプが同一列車扱い以外、または次列車の前タイプと一致しない場合、
+										//この列車が一体化の末尾となるので
+										//aEkiJikokuhyouContentをListの先頭に入れる。
 										ListEkiJikokuhyouContentTempPerON.push_front(aEkiJikokuhyouContent);
 										break;
 									}
 								}
 
 								/**
-									ListEkiJikokuhyouContentTempPerON���g�݂���������A
-									ContRessyaPropertyBuffer��MapContRessyaPropertyBuffer��˂����킹��
-									�K�v�ɉ����Ēu��������
-									�܂��A���̉^�Ԃ�������̂���������A�ǉ����s��Ȃ�(bAdd��false�ɂ���)
+									ListEkiJikokuhyouContentTempPerONが組みあがったら、
+									ContRessyaPropertyBufferとMapContRessyaPropertyBufferを突き合わせて
+									必要に応じて置き換える
+									また、この運番を内包するものがあったら、追加を行わない(bAddをfalseにする)
 								*/
 								bool bAdd = true;
 								tstring strReplace = _T("");
@@ -3133,20 +3133,20 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 										if (!ContRessyaPropertyBuffer[idxRPB].aRessyaProperty.isEqualTo(
 											contRessyaPropertyBufferSearch[idxRPB].aRessyaProperty, false))
 										{
-											//idxRPB�Ԗڂ̗�Ԏ��̂��قȂ�ꍇ�́A�قȂ�s����(��̓I�ɂ́A�O��Ԃ̏I���w�ŕ������Ă���p�^�[��)�Ȃ̂ŁA
-											//�u�������Ώۂɂ͂Ȃ�Ȃ��B
+											//idxRPB番目の列車自体が異なる場合は、異なる行き先(具体的には、前列車の終着駅で分割しているパターン)なので、
+											//置き換え対象にはならない。
 											break;
 										}
 										else if (ContRessyaPropertyBuffer[idxRPB].iSyuuchakuEkiOrder >
 											contRessyaPropertyBufferSearch[idxRPB].iSyuuchakuEkiOrder)
 										{
 											/**
-												���̉^�Ԃ̕���������Ԃŉ^�s����Ă���ꍇ�A
-												�T���^�Ԃ��H���O�I���ł͂Ȃ����A
-												�T���^�Ԃ̎���Ԃ��Ȃ��ꍇ(idxRPB�������̏ꍇ)
-												(���S�ɒT���^�Ԃ�iSyuuchakuEkiOrder�ŏI�����Ă���ꍇ)
-												���̉^�ԂŒT���^�Ԃ�u�������܂�
-												�T���̎���Ԃ�����ꍇ�E�T���^�Ԃ��H���O�I���̏ꍇ�́A���^�p�̒T���ɉf��
+												この運番の方が長い区間で運行されている場合、
+												探索運番が路線外終着ではないかつ、
+												探索運番の次列車がない場合(idxRPBが末尾の場合)
+												(完全に探索運番がiSyuuchakuEkiOrderで終了している場合)
+												この運番で探索運番を置き換えます
+												探索の次列車がある場合・探索運番が路線外終着の場合は、次運用の探索に映る
 											*/
 											if (contRessyaPropertyBufferSearch[idxRPB].iOuterShuchakuekiIndex < 0 &&
 												contRessyaPropertyBufferSearch.size() == idxRPB + 1)
@@ -3159,10 +3159,10 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 											contRessyaPropertyBufferSearch[idxRPB].iSyuuchakuEkiOrder)
 										{
 											/**
-												���̉^�Ԃ̕����Z����Ԃŉ^�s����Ă���ꍇ�A
-												���̉^�Ԃ̎���Ԃ��Ȃ��ꍇ(idxRPB�������̏ꍇ)�A�H���O�I���ł��Ȃ��ꍇ��
-												���̉^�Ԃ͒u���������ǉ����s���܂���
-												���̉^�Ԃ̎���Ԃ�����ꍇ�E���̉^�Ԃ��H���O�I���̏ꍇ�́A���^�p�̒T���ɉf��
+												この運番の方が短い区間で運行されている場合、
+												この運番の次列車がない場合(idxRPBが末尾の場合)、路線外終着でもない場合は
+												この運番は置き換えも追加も行いません
+												この運番の次列車がある場合・この運番が路線外終着の場合は、次運用の探索に映る
 
 											*/
 											if (ContRessyaPropertyBuffer[idxRPB].iOuterShuchakuekiIndex < 0 &&
@@ -3172,14 +3172,14 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 											}
 											break;
 										}
-										//���̉^�ԂƒT���^�Ԃ̏I���w�������ꍇ
+										//この運番と探索運番の終着駅が同じ場合
 										else if (ContRessyaPropertyBuffer[idxRPB].iOuterShuchakuekiIndex < 0 &&
 											ContRessyaPropertyBuffer.size() == idxRPB + 1)
 										{
 											/**
-												���̉^�Ԃ̍ŏI��Ԃ̏ꍇ(�����H���O�I��)�́A
-												���̉^�Ԃ͒T���^�Ԃɓ����Ă���A�������͈�v���Ă���̂ŁA
-												�u���������ǉ����s���܂���
+												この運番の最終列車の場合(除く路線外終着)は、
+												この運番は探索運番に内包されている、もしくは一致しているので、
+												置き換えも追加も行いません
 											*/
 											bAdd = false;
 											break;
@@ -3188,20 +3188,20 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 											contRessyaPropertyBufferSearch.size() == idxRPB + 1)
 										{
 											/**
-												�T���^�Ԃ̍ŏI��Ԃ̏ꍇ(�����H���O�I��)�́A
-												�T���^�Ԃ͂��̉^�Ԃɓ����Ă���̂ŁA
-												�u�������܂�
+												探索運番の最終列車の場合(除く路線外終着)は、
+												探索運番はこの運番に内包されているので、
+												置き換えます
 											*/
 											strReplace = itr->first;
 											break;
 										}
-										//���̉^�ԂƒT���^�Ԃ�����Ԃ���ƘH���O�I���̂����ꂩ
+										//この運番と探索運番が次列車ありと路線外終着のいずれか
 										else if (ContRessyaPropertyBuffer[idxRPB].iOuterShuchakuekiIndex >= 0)
 										{
 											/**
-												���̉^�Ԃ��H���O�I���̏ꍇ�A
-												�T���^�Ԃ��H���O�I���ŁA�I���w�������ꍇ�́A��v���Ă���̒u���������ǉ����s���܂���
-												����ȊO�̏ꍇ�́A���򂵂Ă���̂ŁA���^�p�̒T���Ɉڂ�܂�
+												この運番が路線外終着の場合、
+												探索運番も路線外終着で、終着駅が同じ場合は、一致しているの置き換えも追加も行いません
+												それ以外の場合は、分岐しているので、次運用の探索に移ります
 											*/
 											if (ContRessyaPropertyBuffer[idxRPB].iOuterShuchakuekiIndex ==
 												contRessyaPropertyBufferSearch[idxRPB].iOuterShuchakuekiIndex)
@@ -3213,14 +3213,14 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 										else if (contRessyaPropertyBufferSearch[idxRPB].iOuterShuchakuekiIndex >= 0)
 										{
 											/**
-												���̉^�Ԃ��A����ԂɂȂ����Ă��āA
-												���T���^�Ԃ��H���O�I���̏ꍇ�́A���򂵂Ă���̂ŁA���^�p�̒T���Ɉڂ�܂�
+												この運番が、次列車につながっていて、
+												かつ探索運番が路線外終着の場合は、分岐しているので、次運用の探索に移ります
 											*/
 											break;
 										}
 										/**
-											���̉^�ԂƒT���^�Ԃ����Ɏ���ԂɂȂ����Ă���ꍇ�́A
-											����ԓ��m�ł̔�r�ɂȂ�܂��B
+											この運番と探索運番が共に次列車につながっている場合は、
+											次列車同士での比較になります。
 										*/
 									}
 								}
@@ -3237,13 +3237,13 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 								}
 							}
 							/**
-								��{�̗�Ԃ̑S�Ẳ^�ԁ���s����ɂ��Ă̒T�����I�������AMapListEkiJikokuhyouContentBuffer�Ɏ��߂�ꂽ���̂�
-								��ɕ��ёւ��Am_contListEkiJikokuhyouContent�ɑ}�����܂��B
+								一本の列車の全ての運番＆主行き先についての探索が終わったら、MapListEkiJikokuhyouContentBufferに収められたものを
+								一つに並び替え、m_contListEkiJikokuhyouContentに挿入します。
 
-								���ёւ���
-									(1)���̗�ԓ��ŏI���wOrder���傫����
-									(2)��ʕύX�̏��Ȃ���
-									(3)�^�p�ԍ���
+								並び替え順
+									(1)この列車内で終着駅Orderが大きい順
+									(2)種別変更の少ない順
+									(3)運用番号順
 							*/
 							while (!MapListEkiJikokuhyouContentBuffer.empty())
 							{
@@ -3266,7 +3266,7 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 									else if (ContRessyaPropertyBufferFirst.front().iSyuuchakuEkiOrder >
 										ContRessyaPropertyBufferNext.front().iSyuuchakuEkiOrder)
 									{
-										//itrFirst�̕����O��
+										//itrFirstの方が前方
 									}
 									else if (ListEkiJikokuhyouContentBufferFirst.size() >
 										ListEkiJikokuhyouContentBufferNext.size())
@@ -3276,7 +3276,7 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 									else if (ListEkiJikokuhyouContentBufferFirst.size() <
 										ListEkiJikokuhyouContentBufferNext.size())
 									{
-										//itrFirst�̕����O��
+										//itrFirstの方が前方
 									}
 									else if (itrFirst->first == strOperationNumberMain)
 									{
@@ -3284,7 +3284,7 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 									}
 									else if (itrNext->first == strOperationNumberMain)
 									{
-										//itrFirst�̕����O��
+										//itrFirstの方が前方
 									}
 									else
 									{
@@ -3292,7 +3292,7 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 										{
 											if (itrFirst->first == strContOperationNumber[idx])
 											{
-												//itrFirst�̕����O��
+												//itrFirstの方が前方
 												break;
 
 											}
@@ -3315,7 +3315,7 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 							}
 
 							/**
-								�����ŁAbIsShihatsu���������ށB
+								ここで、bIsShihatsuを書き込む。
 							*/
 							for (auto itrListEkiJikokuhyouContent = ListEkiJikokuhyouContentTemp.begin();
 								itrListEkiJikokuhyouContent != ListEkiJikokuhyouContentTemp.end();
@@ -3329,7 +3329,7 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 							
 
 							/**
-								ListEkiJikokuhyouContentTemp�ւ̓ǂݎ�肪�I�������Am_contListEkiJikokuhyouContent�ɑ}������B
+								ListEkiJikokuhyouContentTempへの読み取りが終わったら、m_contListEkiJikokuhyouContentに挿入する。
 							*/
 							if (contListEkiJikokuhyouContent.find(aHatsuJikoku.getHour()) == contListEkiJikokuhyouContent.end())
 							{
@@ -3365,12 +3365,12 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 					}
 
 					/**
-						�w�����\�R���e���c�̓ǂݎ�肪�I�������A
-						�e���т̗�Ԗ{���𒲂ׁA���ۂ̉w�����\�̕\���͈͂����߂�B
-						�N�_�����̂��鎞�ԑс��N�_�����̂��鎞�ԑ�-1�̏��Œ��ׂ�B
-						�ŏ��ɗ�Ԃ����鎞�ԑт�m_iFirstHour�ƂȂ�A�Ō�ɗ�Ԃ����鎞�ԑт܂ł̎�����m_iHourCount�ƂȂ�
-						�����ł́A�r���ɗ�Ԃ��Ȃ����ԑт������Ă��A�\���̃X�L�b�v�͂��Ȃ��B
-						�܂��Am_iMaxRessyaCount(�ł���Ԗ{�����������Ԃ̗�Ԗ{��)�����߂�
+						駅時刻表コンテンツの読み取りが終わったら、
+						各時帯の列車本数を調べ、実際の駅時刻表の表示範囲を決める。
+						起点時刻のある時間帯→起点時刻のある時間帯-1の順で調べる。
+						最初に列車がある時間帯がm_iFirstHourとなり、最後に列車がある時間帯までの時数がm_iHourCountとなる
+						ここでは、途中に列車がない時間帯があっても、表示のスキップはしない。
+						また、m_iMaxRessyaCount(最も列車本数が多い時間の列車本数)も求める
 					*/
 					int iFirstHour = INT_MIN;
 					int iHourCount = INT_MIN;
@@ -3474,7 +3474,7 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 			if (iRv < 0)
 			{
 				GetDlgItemText(IDC_TEXT_ENCODE_ERROR, strError);
-				//strError="CSV�ւ̕ϊ��Ɏ��s���܂����B"
+				//strError="CSVへの変換に失敗しました。"
 
 				strError.Format(_T("%s(%d)"), CString(strError), iRv);
 			}
@@ -3487,16 +3487,16 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 				if (iResult < 0)
 				{
 					GetDlgItemText(IDC_TEXT_FILE_SAVE_FAILED, strError);
-					//strError="�t�@�C���ւ̕ۑ��Ɏ��s���܂����B"
+					//strError="ファイルへの保存に失敗しました。"
 
-					iRv = -21; // �t�@�C���ւ̕ۑ��Ɏ��s���܂����B
+					iRv = -21; // ファイルへの保存に失敗しました。
 
 				}
 			}
 		}
 
 		// ****************************************************************
-		//	�G���[���b�Z�[�W
+		//	エラーメッセージ
 		// ****************************************************************
 
 		// ****************************************************************
@@ -3505,7 +3505,7 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 }
 
 // ********************************
-//	�R���X�g���N�^
+//	コンストラクタ
 // ********************************
 CWndDcdGridEkiJikokuhyouList::CWndDcdGridEkiJikokuhyouList()
 	: m_bWaitForActivate( true )
@@ -3514,31 +3514,31 @@ CWndDcdGridEkiJikokuhyouList::CWndDcdGridEkiJikokuhyouList()
 	getCSelect()->setSelectMode( CSelect::SelectMode_NONE ) ;
 
 }
-CWndDcdGridEkiJikokuhyouList::~CWndDcdGridEkiJikokuhyouList()
+CWndDcdGridEkiJikokuhyouList::‾CWndDcdGridEkiJikokuhyouList()
 {
 }
 
 	// ********************************
-	//@name CWndDcdGridEkiJikokuhyouList-����
+	//@name CWndDcdGridEkiJikokuhyouList-属性
 	// ********************************
 
 
 
 
 	// ********************************
-	//@name CEkiView ����̈Ϗ�
+	//@name CEkiView からの委譲
 	// ********************************
 void CWndDcdGridEkiJikokuhyouList::OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint) 
 {
 	if ( lHint == LHINT_SUBVIEW_TO_ROOTDOC )
 	{
-		//	�r���[�̓��e���h�L�������g�ɔ��f������w�߂ł��B
-		//	�㑱�̏����͍s���܂���B
+		//	ビューの内容をドキュメントに反映させる指令です。
+		//	後続の処理は行いません。
 		return ;
 	}
 	// --------------------------------
-	//	�����OnUpdate()
-	//	.ini�t�@�C������v���p�e�B��ǂݍ���
+	//	初回のOnUpdate()
+	//	.iniファイルからプロパティを読み込み
 	// --------------------------------
 	if ( !m_bInitialUpdateComplete )
 	{
@@ -3548,7 +3548,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate(CView* pSender, LPARAM lHint, CObjec
 	}
 
 	// --------------------------------
-	//	�X�V�R�}���h���擾
+	//	更新コマンドを取得
 	// --------------------------------
 	Ou<CRfEditCmd> pCmd ;
 	if ( pHint != NULL 
@@ -3558,20 +3558,20 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate(CView* pSender, LPARAM lHint, CObjec
 			(CRfEditCmdHolder*)pHint ;
 		pCmd = pHolder->getCmd() ; 
 	}
-	//pCmd=�ҏW�R�}���h CRfEditCmd �B
-	//	NULL�Ȃ�A�S�X�V���v������Ă��܂��B
+	//pCmd=編集コマンド CRfEditCmd 。
+	//	NULLなら、全更新が要求されています。
 
 	//pHint= 
-	//	pHint�� CRfEditCmdHolder �I�u�W�F�N�g�Ȃ�A
-	//	�Ή�����ҏW�R�}���h CRfEditCmd ��ێ����Ă��܂��B
-	//	���̏ꍇ�Athis �� CRfEditCmd �̓��e�ɍœK������
-	//	�X�V���s���܂��B
-	//	NULL�Ȃ�A�S�X�V���v������Ă��܂��B
+	//	pHintが CRfEditCmdHolder オブジェクトなら、
+	//	対応する編集コマンド CRfEditCmd を保持しています。
+	//	この場合、this は CRfEditCmd の内容に最適化した
+	//	更新を行います。
+	//	NULLなら、全更新が要求されています。
 
 	if ( m_bWaitForActivate )
 	{
-		//	�S�X�V���ۗ�����Ă���ꍇ�́A
-		//	�R�}���h�𖳎����āA�S�X�V���s���܂��B
+		//	全更新が保留されている場合は、
+		//	コマンドを無視して、全更新を行います。
 		pCmd = Ou<CRfEditCmd>() ;
 	}
 
@@ -3592,27 +3592,27 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate(CView* pSender, LPARAM lHint, CObjec
 			dynamic_castOu<CRfEditCmd_Operation>(pCmd)
 		)
 		{
-			//	���̃r���[�́A
-			//		�R�����g�̕ύX
-			//		�_�C���̕ύX
-			//		�_�C���̃v���p�e�B�̕ύX
-			//		��Ԃ̕ύX
-			//		��Ԃ̒��ʉ�
-			//		��Ԏ�ʂ̕ύX
-			//		��Ԏ�ʂ̓���
-			//	�̏ꍇ�́A�X�V���s���܂���B
+			//	このビューは、
+			//		コメントの変更
+			//		ダイヤの変更
+			//		ダイヤのプロパティの変更
+			//		列車の変更
+			//		列車の直通化
+			//		列車種別の変更
+			//		列車種別の入替
+			//	の場合は、更新を行いません。
 			//
 		}
-		//�w��ύX�����ꍇ�A�S�X�V�ɂ��邽�߁Aonupdate_all�ɓ������܂�
+		//駅を変更した場合、全更新にするため、onupdate_allに統合します
 //		else if (dynamic_castOu<CRfEditCmd_Eki>(pCmd))
 //		{
 //
-//			//		�w�̕ύX
+//			//		駅の変更
 //			Ou<CRfEditCmd_Eki>	pCommand
 //				= dynamic_castOu<CRfEditCmd_Eki>(pCmd);
 //
-//			//	�R�}���h�I�u�W�F�N�g���s�ɂ��Z���ړ��ŃZ���I���ɂȂ�Ȃ��悤�ɁA
-//			//	�Z���I�����������A�Z���I���@�\���ꎞ�I�ɒ��~���܂��B
+//			//	コマンドオブジェクト実行によるセル移動でセル選択にならないように、
+//			//	セル選択を解除し、セル選択機能も一時的に中止します。
 //			if (pCommand->getCaMuiSelect()->size() == 1)
 //			{
 //				clearSelect();
@@ -3623,7 +3623,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate(CView* pSender, LPARAM lHint, CObjec
 //			}
 //
 //			// --------------------------------
-//			//	�������̗v�f�̍폜
+//			//	減少分の要素の削除
 //			// --------------------------------
 //			CentDedEkiCont	aCentDedEkiContSrc 
 //				= *pCommand->getCentDedEkiContSrc() ;
@@ -3638,7 +3638,7 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate(CView* pSender, LPARAM lHint, CObjec
 //				}
 //			}
 //			// --------------------------------
-//			//	�������̗v�f�̒ǉ�
+//			//	増加分の要素の追加
 //			// --------------------------------
 //			int iOkikaeSize = 0 ;
 //			iOkikaeSize = 
@@ -3655,9 +3655,9 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate(CView* pSender, LPARAM lHint, CObjec
 //				}
 //			}
 //			// --------------------------------
-//			//	�v�f�̍X�V
+//			//	要素の更新
 //			// --------------------------------
-//			//���E���̐ݒ�̂��߁A��O���X�V����B
+//			//境界線の設定のため、一つ前も更新する。
 //			{
 //				/*for ( int cnt = 0 ; cnt < aCentDedEkiContSrc.size() ; cnt ++ )
 //				{
@@ -3698,11 +3698,11 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate(CView* pSender, LPARAM lHint, CObjec
 //							iEkiIndex + 1, *pCentDedEki, CentDedEki());
 //					}
 //				}*/
-//				//�w�̑}���E�폜���s���ƁA�wIndex�ԍ��\������ѕ���w�E����ݒ��
-//				//�����ԍ����ς��ꍇ������̂ŁA�S�w���X�V���܂�
-//				//(�}���E�폜���s��ꂽ�ӏ��������������łȂ��A
-//				//���͈͓̔��̉w�ɑ΂��A����w�ݒ���s���Ă���A�㑤�̉w�����肤�邽��
-//				//�����w�肷������A�S�X�V�̕��������葁���Ƃ������f�ł�)
+//				//駅の挿入・削除を行うと、駅Index番号表示および分岐駅・環状線設定の
+//				//相手先番号が変わる場合があるので、全駅を更新します
+//				//(挿入・削除が行われた箇所よりも下側だけでなく、
+//				//その範囲内の駅に対し、分岐駅設定を行っている、上側の駅もありうるため
+//				//区域を指定するよりも、全更新の方が手っ取り早いという判断です)
 //				int iEkiSize = pCentDedEkiContGet->size();
 ////#pragma omp parallel for schedule(static)
 //				for (int cnt = 0; cnt < iEkiSize; cnt++)
@@ -3748,21 +3748,21 @@ void CWndDcdGridEkiJikokuhyouList::OnUpdate(CView* pSender, LPARAM lHint, CObjec
 		else
 		{
 			//CRfEditCmd_DedRosenFileDataProp
-			//	  �H���t�@�C���̃v���p�e�B�̕ύX�́A
-			//	�t�H���g�̕ω��𔺂����߁A�S�X�V���K�v�ł��B
+			//	  路線ファイルのプロパティの変更は、
+			//	フォントの変化を伴うため、全更新が必要です。
 			//CRfEditCmd_Rosen
 			//CRfEditCmd_RosenFileData
-			//	�w���܂���I�u�W�F�N�g�ł��B���ꂪ�X�V���ꂽ�ꍇ�́A
-			//	�S�X�V���K�v�ł��B
+			//	駅を包含するオブジェクトです。これが更新された場合は、
+			//	全更新が必要です。
 			//CRfEditCmd_Eki
-			//	�S�X�V�Ƃ��܂�
+			//	全更新とします
 
-			//	�S�v�f���X�V
+			//	全要素を更新
 			OnUpdate_All() ;
 		}
 	}
 	// --------------------------------
-	//	��I��͈͂�ݒ�
+	//	列選択範囲を設定
 	// --------------------------------
 	{
 		CDiagramEditDoc* pCDiagramEditDoc = getCDiagramEditDoc() ;
@@ -3794,7 +3794,7 @@ void CWndDcdGridEkiJikokuhyouList::OnActivateView(BOOL bActivate, CView* pActiva
 
 
 	// ********************************
-	//@name CWndDcdGridEkiJikokuhyouList-����
+	//@name CWndDcdGridEkiJikokuhyouList-操作
 	// ********************************
 
 CEkiJikokuhyouListDoc* CWndDcdGridEkiJikokuhyouList::GetDocument()
@@ -3824,7 +3824,7 @@ const CentDedDia* CWndDcdGridEkiJikokuhyouList::getCentDedDia()
 //	if ( !bQueryEnable ){	ppCmd = &pCmd ;};
 //
 //	// ****************************************************************
-//	//	�R�}���h�̎��s�ۂ̔���
+//	//	コマンドの実行可否の判定
 //	// ****************************************************************
 //	if ( iRv >= 0 )
 //	{
@@ -3832,7 +3832,7 @@ const CentDedDia* CWndDcdGridEkiJikokuhyouList::getCentDedDia()
 //		{
 //			if ( !createCmd( ECreateCmd_NewItem , ppCmd ) )
 //			{
-//				iRv = -1 ;	//	�Z���̈ʒu���s���ł��B
+//				iRv = -1 ;	//	セルの位置が不正です。
 //			}
 //		}
 //		else
@@ -3847,7 +3847,7 @@ const CentDedDia* CWndDcdGridEkiJikokuhyouList::getCentDedDia()
 //	if ( !bQueryEnable && iRv >= 0 )
 //	{
 //		// ****************************************************************
-//		//	�R�}���h�̎��s
+//		//	コマンドの実行
 //		// ****************************************************************
 //		CdEkiXColSpec	aXColSpec = getXColSpecOfFocus() ;
 //		int iFocus = -1 ;
@@ -3880,7 +3880,7 @@ const CentDedDia* CWndDcdGridEkiJikokuhyouList::getCentDedDia()
 //		vector<int> iOuterTerminalEkimeiMap;
 //		if (bInsert)
 //		{
-//			//�V�K�A�C�e���̏ꍇ�AiEkiIndex��-1�Ƃ���B
+//			//新規アイテムの場合、iEkiIndexを-1とする。
 //			//iEkiIndex = -1;
 //			CdEkiYColSpec  aCdYColSpecOfFocus = getYColSpecOfFocus();
 //			iEkiIndex = aCdYColSpecOfFocus.getEkiIndex();
@@ -3891,15 +3891,15 @@ const CentDedDia* CWndDcdGridEkiJikokuhyouList::getCentDedDia()
 //		}
 //		else if ( getCSelect()->getSelectedCellCount() == 0)
 //		{
-//			//�P���I���̏ꍇ�AiEkiIndex�͉wIndex�ɂȂ�B
+//			//単数選択の場合、iEkiIndexは駅Indexになる。
 //			//bEkijikokukeisikiAndEkikiboEnable 
-//			//	��w�������͋N�_�w�̏ꍇ�Afalse
+//			//	基幹駅もしくは起点駅の場合、false
 //			//bBrunchFunctionEnable
-//			//	��w�������͋N�_�w�̏ꍇ�Afalse
+//			//	基幹駅もしくは起点駅の場合、false
 //			//bLoopFunctionEnable
-//			//	�N�_���ɔh���w������w�̏ꍇ�Afalse
-//			//���_�C�A���O�I�[�v����A����w�ݒ�y�ъ���ݒ��ς����ꍇ�ɁAtrue�ɂȂ�悤�ȏꍇ�́A
-//			//�ŏ�����true�ɂ��AFromTarget��false�ɂ���B
+//			//	起点方に派生駅を持つ基幹駅の場合、false
+//			//※ダイアログオープン後、分岐駅設定及び環状線設定を変えた場合に、trueになるような場合は、
+//			//最初からtrueにし、FromTargetでfalseにする。
 //			CdEkiYColSpec  aCdYColSpecOfFocus = getYColSpecOfFocus();
 //			iEkiIndex = aCdYColSpecOfFocus.getEkiIndex();
 //			const Mu< const CentDedEki* >* pCentDedEkiCont = getCDiagramEditDoc()->getCDedRosenFileData()
@@ -3912,7 +3912,7 @@ const CentDedDia* CWndDcdGridEkiJikokuhyouList::getCentDedDia()
 //				if (pCentDedEki->getBrunchLoopPosition() < (int)pCentDedEki->getEkiIndexLoop().size() - 1)
 //				{
 //					/**
-//						EkiIndexLoop��iEkiIndex��������ɒl�����݂���ꍇ�́AiEkiIndex��"�N�_�w"�ɂȂ�B
+//						EkiIndexLoopのiEkiIndexよりも後方に値が存在する場合は、iEkiIndexは"起点駅"になる。
 //					*/
 //					bEkijikokukeisikiAndEkikiboEnable = false;
 //					bBrunchFunctionEnable = false;
@@ -3921,8 +3921,8 @@ const CentDedDia* CWndDcdGridEkiJikokuhyouList::getCentDedDia()
 //					pCentDedEki->getEkiIndexBrunchOriginSide().size() > 0)
 //				{
 //					/**
-//						iEkiIndex��EkiIndexLoop�̐擪�ɂ���AEkiIndexBrunchOriginSide�Ɉ�ȏ�̒l������ꍇ�́A
-//						���̉w��"�N�_���ɔh���w������w"�ƂȂ�B
+//						iEkiIndexがEkiIndexLoopの先頭にあり、EkiIndexBrunchOriginSideに一つ以上の値がある場合は、
+//						この駅は"起点方に派生駅を持つ基幹駅"となる。
 //					*/
 //					bEkijikokukeisikiAndEkikiboEnable = false;
 //					bBrunchFunctionEnable = false;
@@ -3933,8 +3933,8 @@ const CentDedDia* CWndDcdGridEkiJikokuhyouList::getCentDedDia()
 //					pCentDedEki->getEkiIndexBrunchTerminalSide().size() > 0)
 //				{
 //					/**
-//						iEkiIndex��EkiIndexLoop�̖����ɂ���AEkiIndexBrunchTerminalSide�Ɉ�ȏ�̒l������ꍇ�́A
-//						���̉w��"�I�_���ɔh���w������w"�ƂȂ�B
+//						iEkiIndexがEkiIndexLoopの末尾にあり、EkiIndexBrunchTerminalSideに一つ以上の値がある場合は、
+//						この駅は"終点方に派生駅を持つ基幹駅"となる。
 //					*/
 //					bEkijikokukeisikiAndEkikiboEnable = false;
 //					bBrunchFunctionEnable = false;
@@ -3974,12 +3974,12 @@ const CentDedDia* CWndDcdGridEkiJikokuhyouList::getCentDedDia()
 //				pCentDedEki->getLoopOriginEkiIndex()
 //				//pCentDedEkiCont->get(iEkiIndex)->getLoopOriginEkiIndex()
 //			);
-//			//�w�Ԑ��̕ύX�����̂��߂�Map������������
+//			//駅番線の変更処理のためのMapを初期化する
 //			for (int idx = 0; idx < pCentDedEkiCont->get(iEkiIndex)->getEkiTrack2Cont()->size(); idx++)
 //			{
 //				iEkiTrack2Map.push_back(idx);
 //			}
-//			//�H���O�����w�̕ύX�����̂��߂�Map������������
+//			//路線外発着駅の変更処理のためのMapを初期化する
 //			for (int idx = 0; idx < pCentDedEkiCont->get(iEkiIndex)->getOuterTerminalEkimeiCount(); idx++)
 //			{
 //				iOuterTerminalEkimeiMap.push_back(idx);
@@ -3987,11 +3987,11 @@ const CentDedDia* CWndDcdGridEkiJikokuhyouList::getCentDedDia()
 //		}
 //		else
 //		{
-//			//�����I���̏ꍇ�AiEkiIndex��-2�Ƃ���B
-//			//�I�����ꂽ�w�̒��ɁA��w������ꍇ�A�w�����`���Ɖw�K�͂̕ύX��s�ɂ���B
-//			//�I�����ꂽ�w�̒��ɁA�h���w������ꍇ�A�w�����`���Ɖw�K�͂̕ύX��s�ɂ���B
-//			//�I�����ꂽ�w�̒��ɁA�N�_�w������ꍇ�A�w�����`���Ɖw�K�͂̕ύX��s�ɂ���B
-//			//�I�����ꂽ�w�̒��ɁA�I�_�w������ꍇ�A�w�����`���Ɖw�K�͂̕ύX��s�ɂ���B
+//			//複数選択の場合、iEkiIndexを-2とする。
+//			//選択された駅の中に、基幹駅がある場合、駅時刻形式と駅規模の変更を不可にする。
+//			//選択された駅の中に、派生駅がある場合、駅時刻形式と駅規模の変更を不可にする。
+//			//選択された駅の中に、起点駅がある場合、駅時刻形式と駅規模の変更を不可にする。
+//			//選択された駅の中に、終点駅がある場合、駅時刻形式と駅規模の変更を不可にする。
 //			const Mu< const CentDedEki* >* pCentDedEkiCont = getCDiagramEditDoc()->getCDedRosenFileData()
 //				->getCentDedRosen()->getCentDedEkiCont()->getMuPtr();
 //			//int iEkiIndexSelect;
@@ -4022,7 +4022,7 @@ const CentDedDia* CWndDcdGridEkiJikokuhyouList::getCentDedDia()
 //					//			pCentDedEkiCont->get(idx)->getLoopOriginEkiIndex() == iEkiIndexSelect)
 //					//		{
 //					//			bEkijikokukeisikiAndEkikiboEnable = false;
-//					//			//�I�����ꂽ�w�́A���̉w���狤�L�ΏۂɎw�肳��Ă��܂�
+//					//			//選択された駅は、他の駅から共有対象に指定されています
 //					//		}
 //					//	}
 //					//}
@@ -4050,8 +4050,8 @@ const CentDedDia* CWndDcdGridEkiJikokuhyouList::getCentDedDia()
 //		{
 //			iRv = 1 ;
 //
-//			//	[�w�������w�����`���Ő��K��]�̐ݒ���A
-//			//	���Ɏ��s����R�}���h�ɔ��f���܂��B
+//			//	[駅時刻を駅時刻形式で正規化]の設定を、
+//			//	次に実行するコマンドに反映します。
 //			pCmd->setAdjustByEkijikokukeisiki( m_bAdjustByEkijikokukeisiki ) ;
 //
 //			if (getCSelect()->getSelectedCellCount() == 0)
@@ -4084,24 +4084,24 @@ const CentDedDia* CWndDcdGridEkiJikokuhyouList::getCentDedDia()
 //			pCmd->setOuterTerminalEkimeiMap(iOuterTerminalEkimeiMap);
 //		}
 //		// --------------------------------
-//		//	�_�C�A���OOK���̏���
+//		//	ダイアログOK時の処理
 //		// --------------------------------
 //		if ( iRv == 1 )
 //		{
 //			// --------------------------------
-//			//	�ҏW�R�}���h�����s
+//			//	編集コマンドを実行
 //			// --------------------------------
 //			getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 //		}
 //		// ****************************************************************
-//		//	�G���[���b�Z�[�W
+//		//	エラーメッセージ
 //		// ****************************************************************
 //		if ( iRv < 0 )
 //		{
 //			CString strErrorMessage ;
 //			switch( iRv )
 //			{
-//			case -1 :	//	���݂͎��s�ł��܂���B
+//			case -1 :	//	現在は実行できません。
 //				break ;
 //			default:
 //				strErrorMessage.Format( _T( "Error=%d" ) , iRv ) ;
@@ -4122,22 +4122,22 @@ const CentDedDia* CWndDcdGridEkiJikokuhyouList::getCentDedDia()
 //{
 //	int iRv = 0;
 //	// ****************************************************************
-//	//	�R�}���h�̗L���E��������
+//	//	コマンドの有効・無効判定
 //	// ****************************************************************
 //	if (getDisplaySettingMode())
 //	{
-//		iRv = 1;	//(bQueryEnable==TRUE�̏ꍇ)[�\���ݒ胂�[�h�ɂ���]���L���ł��B
+//		iRv = 1;	//(bQueryEnable==TRUEの場合)[表示設定モードにする]が有効です。
 //	}
 //	// ****************************************************************
 //	if (!bQueryEnable && iRv >= 0)
 //	{
 //		// ****************************************************************
-//		//	�R�}���h�����s
+//		//	コマンドを実行
 //		// ****************************************************************
 //		setDisplaySettingMode(!getDisplaySettingMode());
 //
 //		// ****************************************************************
-//		//	�G���[���b�Z�[�W
+//		//	エラーメッセージ
 //		// ****************************************************************
 //
 //		// ****************************************************************
@@ -4157,13 +4157,13 @@ const CentDedDia* CWndDcdGridEkiJikokuhyouList::getCentDedDia()
 //	{
 //		m_bDisplaySettingMode = value;
 //
-//		//	�\���ݒ胂�[�h�̗L���������ω������ꍇ�́A
-//		//	�r���[���X�V���܂��B
+//		//	表示設定モードの有効無効が変化した場合は、
+//		//	ビューを更新します。
 //		OnUpdate_All();
 //		InvalidateGrid();
 //
-//		//	�\���ݒ胂�[�h�̗L���������A
-//		//	.ini �t�@�C���ɕۑ�
+//		//	表示設定モードの有効無効を、
+//		//	.ini ファイルに保存
 //		getCDiagramEditApp()->writeCWndDcdGridEkiJikokuhyouListProp(this);
 //	}
 //	return (iRv);
@@ -4218,7 +4218,7 @@ int CWndDcdGridEkiJikokuhyouList::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	
 	//OnCreate_Header();
 	// --------------------------------
-	//	�t�H�[�J�X�Z���̏����ʒu��ݒ�
+	//	フォーカスセルの初期位置を設定
 	// --------------------------------
 	getCFocus()->setFocusCell( getCXDcdGrid()->getCell( 0 , 1 ) ) ;	
 	
@@ -4231,12 +4231,12 @@ void CWndDcdGridEkiJikokuhyouList::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFla
 
 	int iRv = 0 ;
 	// ****************************************************************
-	//	�R�}���h�̗L���E��������
+	//	コマンドの有効・無効判定
 	// ****************************************************************
 
-	//	�t�H�[�J�X�Z�����V�K�A�C�e���ʒu�ɂ���Ƃ��́A
-	//	�u�V�K�A�C�e���̃v���p�e�B���͂��s���A����𖖔��ɑ}������v�Ƃ���
-	//	����ɂȂ�܂��B
+	//	フォーカスセルが新規アイテム位置にあるときは、
+	//	「新規アイテムのプロパティ入力を行い、それを末尾に挿入する」という
+	//	動作になります。
 	//bool bInsert = false ;
 	//CdEkiYColSpec aYColSpec = getYColSpecOfFocus() ;
 	//if ( aYColSpec.getColumnType() == CdEkiYColSpec::ColumnType_NewEki )
@@ -4247,8 +4247,8 @@ void CWndDcdGridEkiJikokuhyouList::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFla
 	// ****************************************************************
 
 
-	//	�����L�[��������Ă��āA�_�C�A���O�{�b�N�X���J���Ă��Ȃ��ꍇ��
-	//	�_�C�A���O�{�b�N�X���J���܂��B
+	//	文字キーが押されていて、ダイアログボックスが開いていない場合は
+	//	ダイアログボックスを開きます。
 	//if ( CKeyinputSenderToModalDlg::AnyLetterOrDigitKeyIsDown() && 
 	//		m_CKeyinputSenderToModalDlg.startSend() >= 0 )
 	//{
@@ -4256,7 +4256,7 @@ void CWndDcdGridEkiJikokuhyouList::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFla
 	//	//execEkiPropDlg( bInsert , FALSE ) ;
 	//	m_CKeyinputSenderToModalDlg.endSend() ;
 	//}
-	////	���łɃ_�C�A���O���N�������_�C�A���O�{�b�N�X�Ƀ��b�Z�[�W��]��
+	////	すでにダイアログが起動中→ダイアログボックスにメッセージを転送
 	//else	
 	//{
 	//	if ( !m_CKeyinputSenderToModalDlg.OnKeyDown( nChar , nRepCnt , nFlags ) )
@@ -4271,12 +4271,12 @@ void CWndDcdGridEkiJikokuhyouList::OnLButtonDblClk(UINT nFlags, CPoint point)
 {
 	int iRv = 0 ;
 	// ****************************************************************
-	//	�R�}���h�̗L���E��������
+	//	コマンドの有効・無効判定
 	// ****************************************************************
 
-	//	�t�H�[�J�X�Z�����V�K�A�C�e���ʒu�ɂ���Ƃ��́A
-	//	�u�V�K�A�C�e���̃v���p�e�B���͂��s���A����𖖔��ɑ}������v�Ƃ���
-	//	����ɂȂ�܂��B
+	//	フォーカスセルが新規アイテム位置にあるときは、
+	//	「新規アイテムのプロパティ入力を行い、それを末尾に挿入する」という
+	//	動作になります。
 	//bool bInsert = false ;
 	//CdEkiYColSpec aYColSpec = getYColSpecOfFocus() ;
 	//if ( aYColSpec.getColumnType() == CdEkiYColSpec::ColumnType_NewEki )
@@ -4285,12 +4285,12 @@ void CWndDcdGridEkiJikokuhyouList::OnLButtonDblClk(UINT nFlags, CPoint point)
 	//}
 
 	// ****************************************************************
-	//	�R�}���h�̎��s
+	//	コマンドの実行
 	// ****************************************************************
 	OnEkiJikokuhyouListMovetoEkiJikokuhyou_Process(FALSE);
 	//if ( execEkiPropDlg( bInsert , FALSE ) < 0 )
 	//{
-	//	iRv = -1 ;	//	-1 ;	//	�t�H�[�J�X�Z���̈ʒu���s���ł��B
+	//	iRv = -1 ;	//	-1 ;	//	フォーカスセルの位置が不正です。
 	//}
 	// ****************************************************************
 
@@ -4386,11 +4386,11 @@ void CWndDcdGridEkiJikokuhyouList::OnContextMenu(CWnd* pWnd, CPoint point)
 	aMenu.LoadMenu( IDR_MENU_EKIJIKOKUHYOULIST_CONTEXT ) ;
 	CMenu* pContextMenu = aMenu.GetSubMenu( 0 ) ;
 
-	//	�R���e�L�X�g���j���[���}�E�X�ȊO�ŌĂяo���ꂽ�ꍇ�́A
-	//	�R���e�L�X�g���j���[�̕\���ʒu�́A�t�H�[�J�X�Z���̒����̈ʒu�Ƃ��܂��B
+	//	コンテキストメニューがマウス以外で呼び出された場合は、
+	//	コンテキストメニューの表示位置は、フォーカスセルの中央の位置とします。
 	if ( point.x ==-1 || point.y == -1 )
 	{
-		//	�R���e�L�X�g���j���[���}�E�X�ȊO�ŌĂяo����܂���
+		//	コンテキストメニューがマウス以外で呼び出されました
 		CdDcdPosXy posxyFocusCellColumnNumber = getCFocus()->getFocusCellColumnNumber() ;
 		if ( posxyFocusCellColumnNumber !=  
 				CFocus::ColumnNumberPosXy_NULL() )
@@ -4403,16 +4403,16 @@ void CWndDcdGridEkiJikokuhyouList::OnContextMenu(CWnd* pWnd, CPoint point)
 			ClientToScreen( &point ) ;
 		}
 	}
-	//point = �R���e�L�X�g���j���[�̕\���ʒu�B
-	//	-1�̏ꍇ�́A�R���e�L�X�g���j���[�͕\���ł��܂���B
+	//point = コンテキストメニューの表示位置。
+	//	-1の場合は、コンテキストメニューは表示できません。
 
 	if ( point.x >= 0 &&  point.y >= 0 )
 	{
 		pContextMenu->TrackPopupMenu( 
 			TPM_LEFTALIGN | TPM_RIGHTBUTTON ,
 			point.x , point.y , 
-			AfxGetMainWnd() ) ;	//	this ���w�肷��ƁAApp��Doc��View ��
-								//�R�}���h�`�F�[�������삵�܂���B
+			AfxGetMainWnd() ) ;	//	this を指定すると、App→Doc→View の
+								//コマンドチェーンが動作しません。
 	}
 	else
 	{

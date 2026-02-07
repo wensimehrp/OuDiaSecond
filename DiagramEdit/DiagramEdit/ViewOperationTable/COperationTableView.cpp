@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍAtake-okm‚ªì¬‚µ‚½OuDia‚ğ‰ü‘¢‚µ‚½ƒ\ƒtƒgƒEƒFƒA‚Å‚·B
-‚±‚ÌƒvƒƒOƒ‰ƒ€—˜—p‚É‚Â‚¢‚Ä‚ÍAtake-okm‹LÚ‚Ì‰º‹L•¶‘‚É€‹’‚µ‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã€take-okmæ°ãŒä½œæˆã—ãŸOuDiaã‚’æ”¹é€ ã—ãŸã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ åˆ©ç”¨ã«ã¤ã„ã¦ã¯ã€take-okmæ°è¨˜è¼‰ã®ä¸‹è¨˜æ–‡æ›¸ã«æº–æ‹ ã—ã¾ã™ã€‚
 */
 #include "stdafx.h"
 
@@ -12,12 +12,12 @@ OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 #include "NsOu/OuNew.h"
 #include "str/strToInt.h"
 #include "DcDraw/print/CaDcdTargetZoomDisplay.h"
-#include "DcDraw\CaDcdTargetItemPosition.h"
-#include "DcDrawMfc\CDcdTargetMfcPrintInfo.h"
-#include "DcdGrid\CaDcdGrid_PageSelector.h"
+#include "DcDrawÂ¥CaDcdTargetItemPosition.h"
+#include "DcDrawMfcÂ¥CDcdTargetMfcPrintInfo.h"
+#include "DcdGridÂ¥CaDcdGrid_PageSelector.h"
 
-#include "..\diagramedit.h"
-#include "..\Print\CconvCdPrintPageProp.h"
+#include "..Â¥diagramedit.h"
+#include "..Â¥PrintÂ¥CconvCdPrintPageProp.h"
 #include "COperationTableView.h"
 
 #ifdef _DEBUG
@@ -43,7 +43,7 @@ namespace ViewOperationTable {
 	{
 	}
 
-	COperationTableView::~COperationTableView()
+	COperationTableView::â€¾COperationTableView()
 	{
 	}
 
@@ -55,23 +55,23 @@ namespace ViewOperationTable {
 		ON_WM_SIZE()
 		ON_WM_SETFOCUS()
 		//}}AFX_MSG_MAP
-	// •W€ˆóüƒRƒ}ƒ“ƒh
+	// æ¨™æº–å°åˆ·ã‚³ãƒãƒ³ãƒ‰
 		ON_COMMAND(ID_FILE_PRINT, CView::OnFilePrint)
 		ON_COMMAND(ID_FILE_PRINT_DIRECT, CView::OnFilePrint)
 		ON_COMMAND(ID_FILE_PRINT_PREVIEW, CView::OnFilePrintPreview)
 	END_MESSAGE_MAP()
 
 	/////////////////////////////////////////////////////////////////////////////
-	// COperationTableView •`‰æ
+	// COperationTableView æç”»
 
 	void COperationTableView::OnDraw(CDC* pDC)
 	{
 		CDocument* pDoc = GetDocument();
-		// TODO: ‚±‚ÌˆÊ’u‚É•`‰æ—p‚ÌƒR[ƒh‚ğ’Ç‰Á‚µ‚Ä‚­‚¾‚³‚¢
+		// TODO: ã“ã®ä½ç½®ã«æç”»ç”¨ã®ã‚³ãƒ¼ãƒ‰ã‚’è¿½åŠ ã—ã¦ãã ã•ã„
 	}
 
 	/////////////////////////////////////////////////////////////////////////////
-	// COperationTableView f’f
+	// COperationTableView è¨ºæ–­
 
 #ifdef _DEBUG
 	void COperationTableView::AssertValid() const
@@ -86,7 +86,7 @@ namespace ViewOperationTable {
 #endif //_DEBUG
 
 	/////////////////////////////////////////////////////////////////////////////
-	// COperationTableView ƒƒbƒZ[ƒW ƒnƒ“ƒhƒ‰
+	// COperationTableView ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ ãƒãƒ³ãƒ‰ãƒ©
 
 	int COperationTableView::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	{
@@ -113,8 +113,8 @@ namespace ViewOperationTable {
 
 	void COperationTableView::OnSize(UINT nType, int cx, int cy)
 	{
-		if (nType == SIZE_MAXIMIZED   //ƒEƒBƒ“ƒhƒE‚ÍÅ‘å•\¦‚³‚ê‚Ü‚·B
-			|| nType == SIZE_RESTORED  // ƒEƒBƒ“ƒhƒE‚ÍƒTƒCƒY•ÏX‚³‚ê‚Ü‚·‚ªASIZE_MINIMIZED ‚Æ SIZE_MAXIMIZED ‚Í“K—p‚³‚ê‚Ü‚¹‚ñB
+		if (nType == SIZE_MAXIMIZED   //ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã¯æœ€å¤§è¡¨ç¤ºã•ã‚Œã¾ã™ã€‚
+			|| nType == SIZE_RESTORED  // ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã¯ã‚µã‚¤ã‚ºå¤‰æ›´ã•ã‚Œã¾ã™ãŒã€SIZE_MINIMIZED ã¨ SIZE_MAXIMIZED ã¯é©ç”¨ã•ã‚Œã¾ã›ã‚“ã€‚
 			) {
 			m_pCWndDcdGrid->MoveWindow(0, 0, cx, cy, TRUE);
 			return;
@@ -135,7 +135,7 @@ namespace ViewOperationTable {
 
 	BOOL COperationTableView::OnPreparePrinting(CPrintInfo* pInfo)
 	{
-		// ƒfƒtƒHƒ‹ƒg‚Ìˆóü€”õ
+		// ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®å°åˆ·æº–å‚™
 		return DoPreparePrinting(pInfo);
 	}
 
@@ -150,7 +150,7 @@ namespace ViewOperationTable {
 	void COperationTableView::OnPrepareDC(CDC* pDC, CPrintInfo* pInfo)
 	{
 		if (pInfo != NULL) {
-			//	ˆóü‚ÉŠÖ‚·‚éˆ—
+			//	å°åˆ·ã«é–¢ã™ã‚‹å‡¦ç†
 			LogMsg(_T("COperationTableView::OnPrepareDC() "));
 			LogMsg(CDcdTargetMfcPrintInfo::stringOf(pInfo).c_str());
 		}
@@ -176,12 +176,12 @@ namespace ViewOperationTable {
 		LogMsg(CDcdTargetMfcPrintInfo::stringOf(pInfo).c_str());
 
 		// --------------------------------
-		//	•`‰æ–Ê‚ğì¬
+		//	æç”»é¢ã‚’ä½œæˆ
 		// --------------------------------
 		CDcdTargetMfcPrintInfo	aCDcdTargetMfcPrintInfo(pDC, pInfo);
 
 		// --------------------------------
-		//	—]”’‚ğœ‚¢‚½—Ìˆæ‚ğì¬
+		//	ä½™ç™½ã‚’é™¤ã„ãŸé ˜åŸŸã‚’ä½œæˆ
 		// --------------------------------
 		CaDcdTargetItemPosition	aTargetInnerMargin(&aCDcdTargetMfcPrintInfo,
 			CdDcdZoneXy());
@@ -207,20 +207,20 @@ namespace ViewOperationTable {
 
 		}
 
-		//aTargetInnerMargin = —]”’•”•ª‚ğœ‚¢‚½•`‰æ—ÌˆæB
-		//	’PˆÊ‚ÍƒvƒŠƒ“ƒ^‚ÌƒsƒNƒZƒ‹‚Å‚·B
+		//aTargetInnerMargin = ä½™ç™½éƒ¨åˆ†ã‚’é™¤ã„ãŸæç”»é ˜åŸŸã€‚
+		//	å˜ä½ã¯ãƒ—ãƒªãƒ³ã‚¿ã®ãƒ”ã‚¯ã‚»ãƒ«ã§ã™ã€‚
 
 		// --------------------------------
-		//	˜_—À•W‚ğİ’è
+		//	è«–ç†åº§æ¨™ã‚’è¨­å®š
 		// --------------------------------
 		CaDcdTargetZoomDisplay	aCaDcdTargetZoomDisplay(
 			&aTargetInnerMargin,
 			aCDcdTargetMfcPrintInfo.getPrinterHdc());
-		//aCaDcdTargetZoomDisplay = —]”’•”•ª‚ğœ‚¢‚½•`‰æ—ÌˆæB
-		//	’PˆÊ‚ÍA‰æ–Êã‚Ì‚PƒsƒNƒZƒ‹‘Š“–‚É‚È‚è‚Ü‚µ‚½B
+		//aCaDcdTargetZoomDisplay = ä½™ç™½éƒ¨åˆ†ã‚’é™¤ã„ãŸæç”»é ˜åŸŸã€‚
+		//	å˜ä½ã¯ã€ç”»é¢ä¸Šã®ï¼‘ãƒ”ã‚¯ã‚»ãƒ«ç›¸å½“ã«ãªã‚Šã¾ã—ãŸã€‚
 
 		// --------------------------------
-		//	ƒLƒƒƒvƒVƒ‡ƒ“‚Æƒy[ƒW”Ô†‚Ì•”•i‚ğì¬
+		//	ã‚­ãƒ£ãƒ—ã‚·ãƒ§ãƒ³ã¨ãƒšãƒ¼ã‚¸ç•ªå·ã®éƒ¨å“ã‚’ä½œæˆ
 		// --------------------------------
 		Ou<CDcdText>	pdcdCaption;
 		Ou<CDcdText>	pdcdPage;
@@ -230,7 +230,7 @@ namespace ViewOperationTable {
 			COperationTableDoc* pCOperationTableDoc = (COperationTableDoc*)GetDocument();
 
 			tstring	strText;
-			//	˜Hü–¼
+			//	è·¯ç·šå
 			if (!pCentDedRosen->getName().empty()) 
 			{
 				strText += pCentDedRosen->getName();
@@ -259,8 +259,8 @@ namespace ViewOperationTable {
 		}
 
 		// --------------------------------
-		//	ƒLƒƒƒvƒVƒ‡ƒ“‚Æƒy[ƒW”Ô†‚Ì•”•iE
-		//	ƒOƒŠƒbƒh‚ÌƒŒƒCƒAƒEƒg‚ğŒˆ‚ß‚é	
+		//	ã‚­ãƒ£ãƒ—ã‚·ãƒ§ãƒ³ã¨ãƒšãƒ¼ã‚¸ç•ªå·ã®éƒ¨å“ãƒ»
+		//	ã‚°ãƒªãƒƒãƒ‰ã®ãƒ¬ã‚¤ã‚¢ã‚¦ãƒˆã‚’æ±ºã‚ã‚‹	
 		// --------------------------------
 		Ou<IfDcdTarget>	pTargetCaption;
 		Ou<IfDcdTarget>	pTargetGrid;
@@ -276,8 +276,8 @@ namespace ViewOperationTable {
 			{
 				zoneGrid.setY(CdDcdZone().setBeginEndPos(
 					zoneCaption.getY().getEndPos(), zoneGrid.getY().getEndPos()));
-				//zoneCaption = ‘S—Ìˆæ‚Ìã•”‚ğAƒLƒƒƒvƒVƒ‡ƒ“—p‚ÉŠ„‚è“–‚Ä‚Ä‚¢‚Ü‚·B
-				//zoneGrid = ‘S—Ìˆæ‚©‚çAã•”‚ÌƒLƒƒƒvƒVƒ‡ƒ“—Ìˆæ‚ğœ‚¢‚½—Ìˆæ‚Å‚·B
+				//zoneCaption = å…¨é ˜åŸŸã®ä¸Šéƒ¨ã‚’ã€ã‚­ãƒ£ãƒ—ã‚·ãƒ§ãƒ³ç”¨ã«å‰²ã‚Šå½“ã¦ã¦ã„ã¾ã™ã€‚
+				//zoneGrid = å…¨é ˜åŸŸã‹ã‚‰ã€ä¸Šéƒ¨ã®ã‚­ãƒ£ãƒ—ã‚·ãƒ§ãƒ³é ˜åŸŸã‚’é™¤ã„ãŸé ˜åŸŸã§ã™ã€‚
 			}
 
 			pdcdPage->getItemSize(&aCaDcdTargetZoomDisplay, &aSize);
@@ -288,8 +288,8 @@ namespace ViewOperationTable {
 				zoneGrid.setY(CdDcdZone().setBeginEndPos(
 					zoneGrid.getY().getPos(), zonePage.getY().getPos()));
 				//zoneCaption.getY().getEndPos(), zonePage.getY().getPos()));
-			//zonePage = ‘S—Ìˆæ‚Ì‰º•”‚ğAƒy[ƒW—p‚ÉŠ„‚è“–‚Ä‚Ä‚¢‚Ü‚·B
-			//zoneGrid = ã•”‚ÌƒLƒƒƒvƒVƒ‡ƒ“‚É‘±‚¢‚ÄA‰º•”‚Ìƒy[ƒW—Ìˆæ‚àœ‚¢‚½—Ìˆæ‚Å‚·B
+			//zonePage = å…¨é ˜åŸŸã®ä¸‹éƒ¨ã‚’ã€ãƒšãƒ¼ã‚¸ç”¨ã«å‰²ã‚Šå½“ã¦ã¦ã„ã¾ã™ã€‚
+			//zoneGrid = ä¸Šéƒ¨ã®ã‚­ãƒ£ãƒ—ã‚·ãƒ§ãƒ³ã«ç¶šã„ã¦ã€ä¸‹éƒ¨ã®ãƒšãƒ¼ã‚¸é ˜åŸŸã‚‚é™¤ã„ãŸé ˜åŸŸã§ã™ã€‚
 			}
 
 
@@ -301,12 +301,12 @@ namespace ViewOperationTable {
 				new CaDcdTargetItemPosition(&aCaDcdTargetZoomDisplay, zonePage));
 		}
 		// --------------------------------
-		//	ƒOƒŠƒbƒh‚ğ•`‰æ
+		//	ã‚°ãƒªãƒƒãƒ‰ã‚’æç”»
 		// --------------------------------
 		int iPage = 0;
 		{
-			//	ˆóü‚É‚ÍAƒXƒNƒ[ƒ‹ƒo[‚ª“®ì‚µ‚È‚¢‚æ‚¤‚É‚µ‚Ü‚·B
-			//	ƒXƒNƒ[ƒ‹‚ÆÄ•`‰æ‚ğ—}~‚µ‚Ü‚·B
+			//	å°åˆ·æ™‚ã«ã¯ã€ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ãƒãƒ¼ãŒå‹•ä½œã—ãªã„ã‚ˆã†ã«ã—ã¾ã™ã€‚
+			//	ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ã¨å†æç”»ã‚’æŠ‘æ­¢ã—ã¾ã™ã€‚
 			CPropStack	aPropStack(m_pCWndDcdGrid);
 			aPropStack.CDcdGrid_setUpdateCWndDcdGrid(false)
 				.CFocus_setFixafterColumnNumberChange(false);
@@ -317,10 +317,10 @@ namespace ViewOperationTable {
 			aCaDcdGrid_PageSelector.DcDraw();
 
 			if ((int)pInfo->m_nCurPage >= aCaDcdGrid_PageSelector.getPageCount()) {
-				//ÅIƒy[ƒW‚ğˆóü‚µ‚½‚çAˆóüƒ‹[ƒv‚ğI‚í‚è‚Ü‚·B
-				//OnPrint() ‚Å 
+				//æœ€çµ‚ãƒšãƒ¼ã‚¸ã‚’å°åˆ·ã—ãŸã‚‰ã€å°åˆ·ãƒ«ãƒ¼ãƒ—ã‚’çµ‚ã‚ã‚Šã¾ã™ã€‚
+				//OnPrint() ã§ 
 				//pInfo->SetMaxPage( aCaDcdGrid_PageSelector.getPageCount() ) ;
-				//	‚ğ‚µ‚Ä‚àŒø‰Ê‚Í‚ ‚è‚Ü‚¹‚ñB
+				//	ã‚’ã—ã¦ã‚‚åŠ¹æœã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
 
 				pInfo->m_bContinuePrinting = false;
 			}
@@ -331,17 +331,17 @@ namespace ViewOperationTable {
 			iPage = aCaDcdGrid_PageSelector.getPage();
 		}
 		// --------------------------------
-		//	ƒLƒƒƒvƒVƒ‡ƒ“‚Æƒy[ƒW”Ô†‚ÌƒeƒLƒXƒg‚ğì¬
+		//	ã‚­ãƒ£ãƒ—ã‚·ãƒ§ãƒ³ã¨ãƒšãƒ¼ã‚¸ç•ªå·ã®ãƒ†ã‚­ã‚¹ãƒˆã‚’ä½œæˆ
 		// --------------------------------
 		{
-			//ƒy[ƒW”Ô†‚ğŒˆ’è
+			//ãƒšãƒ¼ã‚¸ç•ªå·ã‚’æ±ºå®š
 			{
 				tstring	strPage = stringOf(iPage + 1);
 				pdcdPage->setText(strPage);
 			}
 		}
 		// --------------------------------
-		//	ƒLƒƒƒvƒVƒ‡ƒ“‚Æƒy[ƒW”Ô†‚ğ•`‰æ
+		//	ã‚­ãƒ£ãƒ—ã‚·ãƒ§ãƒ³ã¨ãƒšãƒ¼ã‚¸ç•ªå·ã‚’æç”»
 		// --------------------------------
 		{
 			if (getCDiagramEditApp()->getCdPrintPageProp().getPrintHeader() > 0)
@@ -358,13 +358,13 @@ namespace ViewOperationTable {
 
 	void COperationTableView::OnEndPrinting(CDC* pDC, CPrintInfo* pInfo)
 	{
-		//	ˆóüI—¹Œã‚É‰æ–Ê•\¦‚ª•ö‚ê‚é–â‘è‚ğ‰ñ”ğB
+		//	å°åˆ·çµ‚äº†å¾Œã«ç”»é¢è¡¨ç¤ºãŒå´©ã‚Œã‚‹å•é¡Œã‚’å›é¿ã€‚
 		//
-		//	‚±‚ÌƒNƒ‰ƒX‚ÍAˆóü’†‚ÍƒOƒŠƒbƒh‚ÌƒXƒNƒ[ƒ‹ˆÊ’u‚ğ
-		//	ˆê“I‚É•ÏX‚µ‚Ü‚·B
-		//	‚±‚Ì‚Æ‚«‚É m_pCWndDcdGrid ‚ÉÄ•`‰æ‚ª”­¶‚·‚é‚ÆA
-		//	‰æ–Ê‚É‚Íˆê“I‚ÉˆÊ’u‚Ì•ÏX‚³‚ê‚½ƒOƒŠƒbƒh‚ª
-		//	•`‰æ‚³‚ê‚é‚½‚ßA‰æ–Ê‚ª•ö‚ê‚Ü‚·B
+		//	ã“ã®ã‚¯ãƒ©ã‚¹ã¯ã€å°åˆ·ä¸­ã¯ã‚°ãƒªãƒƒãƒ‰ã®ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ä½ç½®ã‚’
+		//	ä¸€æ™‚çš„ã«å¤‰æ›´ã—ã¾ã™ã€‚
+		//	ã“ã®ã¨ãã« m_pCWndDcdGrid ã«å†æç”»ãŒç™ºç”Ÿã™ã‚‹ã¨ã€
+		//	ç”»é¢ã«ã¯ä¸€æ™‚çš„ã«ä½ç½®ã®å¤‰æ›´ã•ã‚ŒãŸã‚°ãƒªãƒƒãƒ‰ãŒ
+		//	æç”»ã•ã‚Œã‚‹ãŸã‚ã€ç”»é¢ãŒå´©ã‚Œã¾ã™ã€‚
 		m_pCWndDcdGrid->InvalidateGrid();
 
 		CView::OnEndPrinting(pDC, pInfo);

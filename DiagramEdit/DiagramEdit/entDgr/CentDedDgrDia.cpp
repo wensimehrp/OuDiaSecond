@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��:
+(訳:
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h��
+  加えて、特別な例外として、take-okm はこのプログラムのコードを
   "MFC(Microsoft Foundation Class library) Version 9.0"
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -78,7 +78,7 @@ Copyright (C) 2006-2017 take-okm
 #include "CentDedDgrEki.h"
 #include "CentDedDgrRessya.h"
 #include "CentDedDgrDia.h"
-#include "DcdCd\Pos\CLineFunc.h"
+#include "DcdCd¥Pos¥CLineFunc.h"
 #include "logmsg/LogMsg.h"
 #include <deque>
 
@@ -97,7 +97,7 @@ using namespace std;
 //	CentDedDgrDia
 // ****************************************************************
 // --------------------------------
-//@name readCentDedRosen() �̉����֐�
+//@name readCentDedRosen() の下請関数
 // --------------------------------
 CentDedDgrEki::EDiagramRessyajouhouHyouji
 	CentDedDgrDia::CentDedEki_to_CentDedDgrEki_EDiagramRessyajouhouHyouji(
@@ -118,8 +118,8 @@ CentDedDgrEki::EDiagramRessyajouhouHyouji
 }
 
 /*
-	readCentDedRosen() �̉����֐��ł��B
-	(1)CentDedDgrDia�̑�����ݒ�
+	readCentDedRosen() の下請関数です。
+	(1)CentDedDgrDiaの属性を設定
 */
 void CentDedDgrDia::readCentDedRosen_01_updateCentDedDgrDiaProp(
 	const CentDedRosen* pCentDedRosen,
@@ -130,8 +130,8 @@ void CentDedDgrDia::readCentDedRosen_01_updateCentDedDgrDiaProp(
 	m_iDgrYSizeEkikanDefault = pCentDedRosen->getDiagramDgrYZahyouKyoriDefault();
 	m_iEnableOperation = pCentDedRosen->getEnableOperation();
 
-	//�p�^�[���_�C���v���r���[�@�\�Ή�
-	//�L���ȏꍇ�́Am_iPatternDiagramPreviewCycleSecond�ɕb���������Ă���
+	//パターンダイヤプレビュー機能対応
+	//有効な場合は、m_iPatternDiagramPreviewCycleSecondに秒数を代入しておく
 	if (pCentDedDia->getPatternDiagramPreviewEnable())
 	{
 		m_iPatternDiagramPreviewCycleSecond = pCentDedDia->getPatternDiagramPreviewCycleSecond();
@@ -152,10 +152,10 @@ void CentDedDgrDia::readCentDedRosen_02_updateEkiCont(
 
 	int iRv = 0;
 	// --------------------------------
-	//	����܂ł�
-	//	�w�_�C���O�����w�x
-	//	�w�_�C���O������ԁx
-	//	�I�u�W�F�N�g�͔j�����܂��B
+	//	それまでの
+	//	『ダイヤグラム駅』
+	//	『ダイヤグラム列車』
+	//	オブジェクトは破棄します。
 	// --------------------------------
 	if (iRv >= 0)
 	{
@@ -165,22 +165,22 @@ void CentDedDgrDia::readCentDedRosen_02_updateEkiCont(
 	}
 
 	// --------------------------------
-	//	�e�w�́w�_�C���O�����w�x
-	//	�I�u�W�F�N�g�𐶐�
+	//	各駅の『ダイヤグラム駅』
+	//	オブジェクトを生成
 	// --------------------------------
 	int iEkiIndex = 0;
 	for (iEkiIndex = 0;
 		iRv >= 0 && iEkiIndex < pCentDedEkiCont->size();
 		iEkiIndex++)
 	{
-		LogMsg(_T("\tEkiIndex[%d]%s"),
+		LogMsg(_T("¥tEkiIndex[%d]%s"),
 			iEkiIndex,
 			pCentDedEkiCont->getMuPtr()->get(iEkiIndex)->getEkimei().c_str());
 
 		const CentDedEki* pCentDedEki = pCentDedEkiCont->getMuPtr()->get(iEkiIndex);
 
 		// --------------------------------
-		//	�����Ԃ̌���(�I�_�͏���)
+		//	下り列車の検索(終点は除く)
 		// --------------------------------
 		int iEkikanSaisyouSecKudari = 0;
 		if (pCentDedEki->getNextEkiDistanceIsDefault())
@@ -200,7 +200,7 @@ void CentDedDgrDia::readCentDedRosen_02_updateEkiCont(
 			iEkikanSaisyouSecKudari = pCentDedEki->getNextEkiDistance();
 		}
 		// --------------------------------
-		//	����Ԃ̌���(�I�_�͏���)
+		//	上り列車の検索(終点は除く)
 		// --------------------------------
 		int iEkikanSaisyouSecNobori = 0;
 
@@ -222,15 +222,15 @@ void CentDedDgrDia::readCentDedRosen_02_updateEkiCont(
 		}
 
 		// --------------------------------
-		LogMsg(_T("\tiEkikanSaisyouSecKudari=%d iEkikanSaisyouSecNobori=%d"),
+		LogMsg(_T("¥tiEkikanSaisyouSecKudari=%d iEkikanSaisyouSecNobori=%d"),
 			iEkikanSaisyouSecKudari, iEkikanSaisyouSecNobori);
 
 
-		//�b�菈�u�Ƃ��āA�r���w�̏��E���蒅�����̏ꍇ�A�O��ɕ���h���w�������Ă��A�ݐ��\��\������
-		//Ver2.06.18 �ݐ��\�d�l�ύX
-		//�������ς�炸1
-		//���蒅�����@����w��1�A�I�_�w��1�A����ȊO��2
-		//��蒅�����@����w��1�A�N�_�w��1�A����ȊO��3
+		//暫定処置として、途中駅の上り・下り着時刻の場合、前後に分岐派生駅が無くても、在線表を表示する
+		//Ver2.06.18 在線表仕様変更
+		//発着→変わらず1
+		//下り着時刻　分岐駅→1、終点駅→1、それ以外→2
+		//上り着時刻　分岐駅→1、起点駅→1、それ以外→3
 		int iDiagramTrackDisplay = 0;
 		if (pCentDedEki->getDiagramTrackDisplay() &&
 			pCentDedEki->getEkikibo() == CentDedEki::EEkikibo::Ekikibo_Syuyou)
@@ -262,9 +262,9 @@ void CentDedDgrDia::readCentDedRosen_02_updateEkiCont(
 				}
 			}
 		}
-		//iDiagramTrackIndex���AbDiagramTrackOmit�����ɓ��o����B
-		//�ȗ������Ԑ��ɂ�INT_MIN�����A����ȊO�̔Ԑ��ɂ́A0���珇�ɔԍ���U��
-		//�����A�S�Ă̔Ԑ����ȗ��Ȃ�΁AiDiagramTrackDisplay = 0(�ݐ��\��\���w)�Ƃ݂Ȃ��A(���[�u)
+		//iDiagramTrackIndexを、bDiagramTrackOmitを元に導出する。
+		//省略される番線にはINT_MINを入れ、それ以外の番線には、0から順に番号を振る
+		//もし、全ての番線が省略ならば、iDiagramTrackDisplay = 0(在線表非表示駅)とみなす、(仮措置)
 		vector<int>iDiagramTrackIndex;
 		int iTemp = 0;
 		if (iDiagramTrackDisplay > 0)
@@ -287,13 +287,13 @@ void CentDedDgrDia::readCentDedRosen_02_updateEkiCont(
 			iDiagramTrackDisplay = 0;
 		}
 		
-		//bLoopOpposite�𓱏o����B
-		//(1)��蒅�w�̏ꍇ�A�I�_���ɂ��̉w���N�_�w�Ƃ���w�����݂��邩�𒲂ׂ�A
-		//	���݂���ꍇ�́A�w�����������̏ꍇ�́A���̉w(�I�_�w)��LoopOpposite�����̂܂܂��̉w��LoopOpposite�ɂȂ�A
-		//	�w���������蒅�̏ꍇ�́A���̉w��LoopOpposite�Ɉ˂炸�A���̉w��LoopOpposite��false�ɂȂ�B
-		//(2)���蒅�w�̏ꍇ�ALoopOpposite�����̂܂܂��̉w��LoopOpposite�ɂȂ�B
-		//	(�����ɂ́A���̉w���I�_�w�ł��邱�Ƃ��`�F�b�N����K�v�͂��邪�A�I�_�w�ł͂Ȃ��ꍇ�́ALoopOpposite��false�Ȃ̂ŏȗ���)
-		//(3)����ȊO�̏ꍇ�ALoopOpposite�͏��false�ɂȂ�B�����w�ŏI�_�w��LoopOpposite��true�̏ꍇ�ł��A�����ł�false�ɂȂ�B
+		//bLoopOppositeを導出する。
+		//(1)上り着駅の場合、終点方にこの駅を起点駅とする駅が存在するかを調べる、
+		//	存在する場合は、駅扱いが発着の場合は、その駅(終点駅)のLoopOppositeがそのままこの駅のLoopOppositeになり、
+		//	駅扱いが下り着の場合は、その駅のLoopOppositeに依らず、この駅のLoopOppositeはfalseになる。
+		//(2)下り着駅の場合、LoopOppositeがそのままこの駅のLoopOppositeになる。
+		//	(厳密には、この駅が終点駅であることをチェックする必要はあるが、終点駅ではない場合は、LoopOppositeがfalseなので省略可)
+		//(3)それ以外の場合、LoopOppositeは常にfalseになる。発着駅で終点駅でLoopOppositeがtrueの場合でも、ここではfalseになる。
 		bool bLoopOpposite = false;
 		if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku)
 		{
@@ -313,10 +313,10 @@ void CentDedDgrDia::readCentDedRosen_02_updateEkiCont(
 		{
 			bLoopOpposite = pCentDedEki->getLoopOpposite();
 		}
-		//bIncludeOpposite�́A����E����ݒ�Ōq�����Ă���w�̒��ɁABrunchOpposite�܂���LoopOpposite��
-		//True�̉w���܂܂�Ă��邩�ǂ����������l�ł��B
-		//���o�ς݂�iDiagramTrackDisplay��1�ȏ�(�ݐ��\�\���w)�̏ꍇ�̂ݗL���Ȓl�ł��B
-		//1.04.08�ύX�@�ݐ��\��\���w�ł����o����
+		//bIncludeOppositeは、分岐・環状線設定で繋がっている駅の中に、BrunchOppositeまたはLoopOppositeが
+		//Trueの駅が含まれているかどうかを示す値です。
+		//導出済みのiDiagramTrackDisplayが1以上(在線表表示駅)の場合のみ有効な値です。
+		//1.04.08変更　在線表非表示駅でも導出する
 		bool bIncludeOpposite = false;
 		deque<int> iEkiIndexBrunchOriginSide;
 		deque<int> iEkiIndexLoop;
@@ -326,13 +326,13 @@ void CentDedDgrDia::readCentDedRosen_02_updateEkiCont(
 			iEkiIndexBrunchOriginSide,
 			iEkiIndexLoop,
 			iEkiIndexBrunchTerminalSide);
-		//�ݐ��\�\���w��iResult�́A-1(�P�Ɖw)��0�ȏ�̂����ꂩ�ł��B
-		//INT_MIN�AINT_MAX(�h���w)�ɂ͂Ȃ�܂���B
+		//在線表表示駅のiResultは、-1(単独駅)と0以上のいずれかです。
+		//INT_MIN、INT_MAX(派生駅)にはなりません。
 		if (iResult != -1)
 		{
-			//iEkiIndexBrunchOriginSide�y��iEkiIndexBrunchTerminalSide�̉w����BrunchOpposite��true
-			//�̉w������������AbIncludeOpposite��true�ɂ��܂��B
-			//��ł�������΁A����ȏ�̒T���͕s�v�ł��B
+			//iEkiIndexBrunchOriginSide及びiEkiIndexBrunchTerminalSideの駅中にBrunchOppositeがtrue
+			//の駅が見つかったら、bIncludeOppositeをtrueにします。
+			//一つでも見つかれば、それ以上の探索は不要です。
 			for (int idxo = 0; idxo < (int)iEkiIndexBrunchOriginSide.size(); idxo++)
 			{
 				if (pCentDedEkiCont->getMuPtr()->get(iEkiIndexBrunchOriginSide[idxo])
@@ -352,9 +352,9 @@ void CentDedDgrDia::readCentDedRosen_02_updateEkiCont(
 					break;
 				}
 			}
-			//iEkiIndexLoop�ɒl����ȏ゠��Ƃ��́A���������̂ŁA
-			//�����Ƃ��I�_���̉w(iEkiIndexLoop.back())��LoopOpposite���m�F���A
-			//true�̏ꍇ��bIncludeOpposite��true�ɂ��܂��B
+			//iEkiIndexLoopに値が二つ以上あるときは、環状線があるので、
+			//もっとも終点側の駅(iEkiIndexLoop.back())のLoopOppositeを確認し、
+			//trueの場合はbIncludeOppositeをtrueにします。
 			if (iEkiIndexLoop.size() >= 2 && !bIncludeOpposite)
 			{
 				if (pCentDedEkiCont->getMuPtr()->get(iEkiIndexLoop.back())
@@ -363,9 +363,9 @@ void CentDedDgrDia::readCentDedRosen_02_updateEkiCont(
 					bIncludeOpposite = true;
 				}
 			}
-			//iEkiIndexLoop�ɒl���O�ȏ゠��Ƃ��́A�����2�ȏ゠��̂ŁA
-			//iEkiIndexLoop��2�Ԗڂ̉w(��ԋN�_���̊���̏I�_�w)��LoopOpposite���m�F���A
-			//true�̏ꍇ��bIncludeOpposite��true�ɂ��܂��B
+			//iEkiIndexLoopに値が三つ以上あるときは、環状線が2つ以上あるので、
+			//iEkiIndexLoopの2番目の駅(一番起点側の環状線の終点駅)のLoopOppositeを確認し、
+			//trueの場合はbIncludeOppositeをtrueにします。
 			if (iEkiIndexLoop.size() >= 3 && !bIncludeOpposite)
 			{
 				if (pCentDedEkiCont->getMuPtr()->get(iEkiIndexLoop[1])
@@ -465,8 +465,8 @@ void CentDedDgrDia::readCentDedRosen_06_updateEkiContForOperation(
 		}
 	}
 
-	//�r���w�ŉ��蒅����蒅�����̕��т̉w������ꍇ�A�ǂ��炩���ݐ��\�\�������Ȃ�A
-	//�w�ԋ������A�f�t�H���g�l��2�{�ɂ��܂�
+	//途中駅で下り着→上り着時刻の並びの駅がある場合、どちらかが在線表表示無しなら、
+	//駅間距離を、デフォルト値の2倍にします
 	for (int idx = 1; idx < pCentDedDgrEkiCont->size() - 1 && getEnableOperation() > 1; idx++)
 	{
 		//CentDedDgrEki* pCentDedDgrEki = pCentDedDgrEkiCont->get(idx);
@@ -494,13 +494,13 @@ void CentDedDgrDia::readCentDedRosen_03_updateMuRessyasyubetsu(
 	const Mu< const CentDedRessyasyubetsu* >* pMuRessyasyubetsu)
 {
 	// --------------------------------
-	//	�w��Ԏ�ʁx�I�u�W�F�N�g��j��
+	//	『列車種別』オブジェクトを破棄
 	// --------------------------------
 	m_MuCentDedDgrRessyasyubetsu.erase(0, INT_MAX);
 
 	// --------------------------------
-	//	�w��Ԏ�ʁx�I�u�W�F�N�g��
-	//	����
+	//	『列車種別』オブジェクトを
+	//	生成
 	// --------------------------------
 	for (int idx = 0; idx < pMuRessyasyubetsu->size(); idx++)
 	{
@@ -524,8 +524,8 @@ void CentDedDgrDia::readCentDedRosen_04_updateRessyaCont(
 
 
 	// --------------------------------
-	//	�e��Ԃ́w�_�C���O������ԁx�I�u�W�F�N�g��
-	//	����
+	//	各列車の『ダイヤグラム列車』オブジェクトを
+	//	生成
 	// --------------------------------
 	for (int iRessyahoukou = Ressyahoukou_Kudari;
 		iRessyahoukou <= Ressyahoukou_Nobori;
@@ -543,12 +543,12 @@ void CentDedDgrDia::readCentDedRosen_04_updateRessyaCont(
 			getCentDedDgrRessyaCont(eRessyahoukou);
 
 		// --------------------------------
-		//	��Ԃ���U�N���A
+		//	列車を一旦クリア
 		// --------------------------------
 		pCentDedDgrRessyaCont->erase(0, INT_MAX);
 
 		// --------------------------------
-		//	��ԃI�u�W�F�N�g�𐶐��E�ǉ�
+		//	列車オブジェクトを生成・追加
 		// --------------------------------
 		bool bWaitOperationUpdate = pCentDedDia->getWaitOperationUpdate();
 		int iSize = pCentDedRessyaContGet->size();
@@ -619,7 +619,7 @@ void CentDedDgrDia::readCentDedRosen_04_updateRessyaCont(
 }
 
 // ********************************
-//	�R���X�g���N�^
+//	コンストラクタ
 // ********************************
 CentDedDgrDia::CentDedDgrDia() :
 	m_iDgrXPosMin(0),
@@ -628,7 +628,7 @@ CentDedDgrDia::CentDedDgrDia() :
 	m_iTerminalExtraDisplaySpace(0)
 {
 }
-CentDedDgrDia::~CentDedDgrDia()
+CentDedDgrDia::‾CentDedDgrDia()
 {
 }
 
@@ -638,7 +638,7 @@ CentDedDgrDia::~CentDedDgrDia()
 
 
 	// ********************************
-	//@name ����
+	//@name 属性
 	// ********************************
 tstring	CentDedDgrDia::getName()const
 {
@@ -681,7 +681,7 @@ int CentDedDgrDia::getPatternDiagramPreviewRange() const
 ;
 
 // ********************************
-//@name ���
+//@name 包含
 // ********************************
 CentDedDgrEkiCont*	CentDedDgrDia::getCentDedDgrEkiCont()
 {
@@ -734,7 +734,7 @@ const Mu< const CentDedDgrRessya* >*
 
 
 // ********************************
-//@name ����
+//@name 操作
 // ********************************
 void CentDedDgrDia::readCentDedRosen(
 	const CentDedRosen* pCentDedRosen,
@@ -743,38 +743,38 @@ void CentDedDgrDia::readCentDedRosen(
 {
 	int iRv = 0;
 
-	//	(1)CentDedDgrDia�̑�����ݒ�
+	//	(1)CentDedDgrDiaの属性を設定
 	if (iRv >= 0)
 	{
 		readCentDedRosen_01_updateCentDedDgrDiaProp(
 			pCentDedRosen,
 			pCentDedDia);
 	}
-	//(2)CentDedDgrEki�𐶐�
-	//�@CentDedDgrEki�̈ȉ��̑������ACentDedEki�̑������琶���B
+	//(2)CentDedDgrEkiを生成
+	//　CentDedDgrEkiの以下の属性を、CentDedEkiの属性から生成。
 	if (iRv >= 0)
 	{
 		readCentDedRosen_02_updateEkiCont(
 			pCentDedRosen->getCentDedEkiCont()/*->getMuPtr()*/,
 			pCentDedDia);
 	}
-	//(6)CentDedDgrEki�̒���
-	//�@�^�p�@�\�L�����ACentDedDgrEki�̉w�ԋ����A�̑������ACentDedEki�̑������琶���B
-	//bSimplifyRead��true�̏ꍇ�͏ȗ�
-	//Ver1.02.92 �^�p�@�\��OFF�̏ꍇ���A�H���̎n�I���w�̂ݑ����ύX���s�����߁A��������getEnableOperation���폜
+	//(6)CentDedDgrEkiの調整
+	//　運用機能有効時、CentDedDgrEkiの駅間距離、の属性を、CentDedEkiの属性から生成。
+	//bSimplifyReadがtrueの場合は省略
+	//Ver1.02.92 運用機能がOFFの場合も、路線の始終着駅のみ属性変更を行うため、条件からgetEnableOperationを削除
 	if (iRv >= 0 && !bSimplifyRead)
 	{
 		readCentDedRosen_06_updateEkiContForOperation(
 			pCentDedRosen->getCentDedEkiCont()->getMuPtr(),
 			pCentDedDia);
 	}
-	//	(3)CentDedDgrRessyasyubetsu�𐶐�
+	//	(3)CentDedDgrRessyasyubetsuを生成
 	if (iRv >= 0)
 	{
 		readCentDedRosen_03_updateMuRessyasyubetsu(
 			pCentDedRosen->getCentDedRessyasyubetsuCont()->getMuPtr());
 	}
-	//	(4)CentDedDgrRessya,CentDedDgrEkiJikoku�𐶐�
+	//	(4)CentDedDgrRessya,CentDedDgrEkiJikokuを生成
 	if (iRv >= 0)
 	{
 		readCentDedRosen_04_updateRessyaCont(
@@ -879,10 +879,10 @@ int CentDedDgrDia::getDgrYSizeEkikanOrg(
 	}
 	// --------------------------------
 	if (!(0 <= iEkiOrderOrg && iEkiOrderOrg < m_CentDedDgrEkiCont.size())) {
-		return (-1);	//		�w�wOrder�x���s��
+		return (-1);	//		『駅Order』が不正
 	}
 	if (!(0 <= iEkiOrderDst && iEkiOrderDst < m_CentDedDgrEkiCont.size())) {
-		return (-1);	//		�w�wOrder�x���s��
+		return (-1);	//		『駅Order』が不正
 	}
 	int iEkiIndexOrg = EkiIndexOfEkiOrder(eRessyahoukou, iEkiOrderOrg);
 	int iEkiIndexDst = EkiIndexOfEkiOrder(eRessyahoukou, iEkiOrderDst);
@@ -914,10 +914,10 @@ int CentDedDgrDia::getDgrYSizeEkikanTer(
 	}
 	// --------------------------------
 	if (!(0 <= iEkiOrderOrg && iEkiOrderOrg < m_CentDedDgrEkiCont.size())) {
-		return (-1);	//		�w�wOrder�x���s��
+		return (-1);	//		『駅Order』が不正
 	}
 	if (!(0 <= iEkiOrderDst && iEkiOrderDst < m_CentDedDgrEkiCont.size())) {
-		return (-1);	//		�w�wOrder�x���s��
+		return (-1);	//		『駅Order』が不正
 	}
 	int iEkiIndexOrg = EkiIndexOfEkiOrder(eRessyahoukou, iEkiOrderOrg);
 	int iEkiIndexDst = EkiIndexOfEkiOrder(eRessyahoukou, iEkiOrderDst);
@@ -985,10 +985,10 @@ int CentDedDgrDia::getEkikanSaisyouSec(
 	}
 	// --------------------------------
 	if (!(0 <= iEkiOrderOrg && iEkiOrderOrg < m_CentDedDgrEkiCont.size())) {
-		return (-1);	//		�w�wOrder�x���s��
+		return (-1);	//		『駅Order』が不正
 	}
 	if (!(0 <= iEkiOrderDst && iEkiOrderDst < m_CentDedDgrEkiCont.size())) {
-		return (-1);	//		�w�wOrder�x���s��
+		return (-1);	//		『駅Order』が不正
 	}
 	int iEkiIndexOrg = EkiIndexOfEkiOrder(eRessyahoukou, iEkiOrderOrg);
 	int iEkiIndexDst = EkiIndexOfEkiOrder(eRessyahoukou, iEkiOrderDst);
@@ -1067,7 +1067,7 @@ void CentDedDgrDia::createEstimateRessya(
 		pCentDedDgrRessya->getRessyahoukou());
 
 	// --------------------------------
-	//	�����̐ݒ�
+	//	属性の設定
 	// --------------------------------
 	{
 		aCentDedRessya.setRessyabangou(
@@ -1079,7 +1079,7 @@ void CentDedDgrDia::createEstimateRessya(
 
 	}
 	// --------------------------------
-	//	�w�����̐ݒ�
+	//	駅時刻の設定
 	// --------------------------------
 	{
 		const Mu<const CentDedDgrEkiJikoku*>*	pMuCentDedDgrEkiJikoku = pCentDedDgrRessya->getMuCentDedDgrEkiJikoku();
@@ -1093,12 +1093,12 @@ void CentDedDgrDia::createEstimateRessya(
 			CentDedEkiJikoku	aEkiJikoku = aCentDedRessya.getCentDedEkiJikoku(iEkiOrder);
 
 			// --------------------------------
-			//	�w����ݒ�
+			//	駅扱を設定
 			// --------------------------------
 			aEkiJikoku.setEkiatsukai(aCentDedDgrEkiJikoku.getEkiatsukai());
 
 			// --------------------------------
-			//	���̉w��[�_�Ƃ����Ԑ�������
+			//	この駅を端点とする列車線を検索
 			// --------------------------------
 			int idxRessyasenChaku = INT_MIN;
 			int idxRessyasenHatsu = INT_MIN;
@@ -1118,34 +1118,34 @@ void CentDedDgrDia::createEstimateRessya(
 				}
 			}
 			//idxRessyasenChaku = 
-			//	���̉wOrder����Ԑ��I�_�Ȃ�A���̗�Ԑ�Order�A�����łȂ��Ȃ�INT_MIN 
+			//	この駅Orderが列車線終点なら、その列車線Order、そうでないならINT_MIN 
 			//idxRessyasenHatsu = 
-			//	���̉wOrder����Ԑ��N�_�Ȃ�A���̗�Ԑ�Order�A�����łȂ��Ȃ�INT_MIN 
+			//	この駅Orderが列車線起点なら、その列車線Order、そうでないならINT_MIN 
 
 			// --------------------------------
-			//	�w������ݒ�
+			//	駅時刻を設定
 			// --------------------------------
 			if (idxRessyasenChaku != INT_MIN && aCentDedDgrEkiJikoku.getDgrXPosChaku(true) != INT_MIN)
 			{
-				//	��Ԑ��̏I�_�Ȃ�A������DgrXPos�����Ƃɒ�������ݒ�
+				//	列車線の終点なら、着時刻DgrXPosをもとに着時刻を設定
 				aEkiJikoku.setChakujikoku(CdDedJikoku(aCentDedDgrEkiJikoku.getDgrXPosChaku(true)));
 			}
 			if (idxRessyasenHatsu != INT_MIN && aCentDedDgrEkiJikoku.getDgrXPosHatsu(true) != INT_MIN)
 			{
-				//	��Ԑ��̋N�_�Ȃ�A������DgrXPos�����Ƃɔ�������ݒ�
+				//	列車線の起点なら、発時刻DgrXPosをもとに発時刻を設定
 				aEkiJikoku.setHatsujikoku(CdDedJikoku(aCentDedDgrEkiJikoku.getDgrXPosHatsu(true)));
 			}
 			if (idxRessyasenChaku == INT_MIN &&
 				idxRessyasenHatsu == INT_MIN &&
 				aCentDedDgrEkiJikoku.getDgrXPosRessyasen() != INT_MIN)
 			{
-				//	��Ԑ��N�_�E�I�_�łȂ� && �w������ DgrXPosRessyasen ������ꍇ�́A
-				//	DgrXPosRessyasen �𒅁E���ɐݒ�
+				//	列車線起点・終点でない && 駅時刻に DgrXPosRessyasen がある場合は、
+				//	DgrXPosRessyasen を着・発に設定
 				aEkiJikoku.setChakujikoku(CdDedJikoku(aCentDedDgrEkiJikoku.getDgrXPosRessyasen()));
 				aEkiJikoku.setHatsujikoku(CdDedJikoku(aCentDedDgrEkiJikoku.getDgrXPosRessyasen()));
 			}
 			// --------------------------------
-			// ��ԔԐ���ݒ�
+			// 列車番線を設定
 			// --------------------------------
 			//CentDedDgrRessyaTrack	aCentDedDgrRessyaTrack = *pMuCentDedDgrRessyaTrack->get(iEkiOrder);
 			aEkiJikoku.setRessyaTrackIndex(aCentDedDgrEkiJikoku.getRessyaTrackIndex());
@@ -1196,29 +1196,29 @@ void CentDedDgrDia::createEstimateRessya2(
 	}
 	// --------------------------------
 	{
-		//	���莞������ԃI�u�W�F�N�g�𐶐�
+		//	推定時刻つき列車オブジェクトを生成
 		createEstimateRessya(
 			pCentDedDgrRessya,
 			pCentDedRessya);
 	}
 	{
-		//	�w���ɃA�N�Z�X���� Mu �𐶐�
+		//	駅情報にアクセスする Mu を生成
 		//const Mu< CentDedDgrEkiCont::CdDedDgrEki >* muEki =	getCentDedDgrEkiCont()->getMuPtr( pCentDedRessya->getRessyahoukou())  ;
 
 
 		// --------------------------------
-		//	�x������w�̏ꍇ�́A�����w��
-		//	����w�������R�s�[����
-		//	(�x������Ԃ̃\�[�g�̐��x���グ�邽��)
+		//	支線分岐駅の場合は、同名駅に
+		//	同一駅時刻をコピーする
+		//	(支線内列車のソートの精度を上げるため)
 		// --------------------------------
 
-		//	�S�����w�ɁA�w�������R�s�[���܂��B
+		//	全同名駅に、駅時刻をコピーします。
 		//
-		//	���̎d�l�́AA-B-C|B-D�`���̎x�����H����
-		//	TransferSort(��p�\�[�g)�̐��x���グ�邽�߂̂��̂ł��B
-		//	B-D�ԗ�Ԃ�B�w�̉w������
-		//	A-B-C�̊Ԃ� B �ɂ��ݒ肷�邱�Ƃɂ��A��p�\�[�g��
-		//	���x�����܂�܂��B
+		//	この仕様は、A-B-C|B-D形式の支線つき路線の
+		//	TransferSort(乗継ソート)の精度を上げるためのものです。
+		//	B-D間列車のB駅の駅時刻を
+		//	A-B-Cの間の B にも設定することにより、乗継ソートの
+		//	精度が高まります。
 
 		//{
 		//	for ( int iEkiOrderSrc = 0 ; iEkiOrderSrc < muEki->size() ; iEkiOrderSrc ++ )

@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(–ó: 
+(è¨³: 
 
-	OuDia - —ñÔ•\‚ğ‚à‚Æ‚ÉAƒ_ƒCƒ„ƒOƒ‰ƒ€‚ğ•`‰æ‚·‚éWin32ƒAƒvƒŠƒP[ƒV
-ƒ‡ƒ“B
+	OuDia - åˆ—è»Šæ™‚åˆ»è¡¨ã‚’ã‚‚ã¨ã«ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚’æç”»ã™ã‚‹Win32ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·
+ãƒ§ãƒ³ã€‚
 
 Copyright (C) 2006-2017 take-okm 
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍƒtƒŠ[ƒ\ƒtƒgƒEƒFƒA‚Å‚·B‚ ‚È‚½‚Í‚±‚ê‚ğAƒtƒŠ[ƒ\ƒtƒgƒEƒFƒAà
-’c‚É‚æ‚Á‚Ä”­s‚³‚ê‚½GNU ˆê”ÊŒöO—˜—p‹–‘ø‘(ƒo[ƒWƒ‡ƒ“3‚©A‚»‚êˆÈ~‚Ìƒo[ƒWƒ‡
-ƒ“‚Ì‚¤‚¿‚Ç‚ê‚©)‚ª’è‚ß‚éğŒ‚Ì‰º‚ÅÄ”Ğ•z‚Ü‚½‚Í‰ü•Ï ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚ã‚ãªãŸã¯ã“ã‚Œã‚’ã€ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢è²¡
+å›£ã«ã‚ˆã£ã¦ç™ºè¡Œã•ã‚ŒãŸGNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸(ãƒãƒ¼ã‚¸ãƒ§ãƒ³3ã‹ã€ãã‚Œä»¥é™ã®ãƒãƒ¼ã‚¸ãƒ§
+ãƒ³ã®ã†ã¡ã©ã‚Œã‹)ãŒå®šã‚ã‚‹æ¡ä»¶ã®ä¸‹ã§å†é ’å¸ƒã¾ãŸã¯æ”¹å¤‰ ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚Í—L—p‚Å‚ ‚é‚±‚Æ‚ğŠè‚Á‚Ä”Ğ•z‚³‚ê‚Ü‚·‚ªA*‘S‚­‚Ì–³•ÛØ *‚Å‚·B
-¤‹Æ‰Â”\«‚Ì•ÛØ‚â“Á’è–Ú“I‚Ö‚Ì“K‡«‚ÍAŒ¾ŠO‚É¦‚³‚ê‚½‚à‚Ì‚à ŠÜ‚ßA‘S‚­‘¶İ
-‚µ‚Ü‚¹‚ñBÚ‚µ‚­‚ÍGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ğ‚²——‚­‚¾‚³‚¢B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯æœ‰ç”¨ã§ã‚ã‚‹ã“ã¨ã‚’é¡˜ã£ã¦é ’å¸ƒã•ã‚Œã¾ã™ãŒã€*å…¨ãã®ç„¡ä¿è¨¼ *ã§ã™ã€‚
+å•†æ¥­å¯èƒ½æ€§ã®ä¿è¨¼ã‚„ç‰¹å®šç›®çš„ã¸ã®é©åˆæ€§ã¯ã€è¨€å¤–ã«ç¤ºã•ã‚ŒãŸã‚‚ã®ã‚‚ å«ã‚ã€å…¨ãå­˜åœ¨
+ã—ã¾ã›ã‚“ã€‚è©³ã—ãã¯GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã‚’ã”è¦§ãã ã•ã„ã€‚
 
-‚ ‚È‚½‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚Æ‹¤‚ÉAGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ÌƒRƒs[‚ğˆê•” ó‚¯æ‚Á
-‚Ä‚¢‚é‚Í‚¸‚Å‚·B‚à‚µó‚¯æ‚Á‚Ä‚¢‚È‚¯‚ê‚ÎA<http://www.gnu.org/licenses/> ‚ğ
-‚²——‚­‚¾‚³‚¢B
+ã‚ãªãŸã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¨å…±ã«ã€GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã®ã‚³ãƒ”ãƒ¼ã‚’ä¸€éƒ¨ å—ã‘å–ã£
+ã¦ã„ã‚‹ã¯ãšã§ã™ã€‚ã‚‚ã—å—ã‘å–ã£ã¦ã„ãªã‘ã‚Œã°ã€<http://www.gnu.org/licenses/> ã‚’
+ã”è¦§ãã ã•ã„ã€‚
 
 )
 
-  ‰Á‚¦‚ÄA“Á•Ê‚È—áŠO‚Æ‚µ‚ÄAtake-okm ‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÌƒR[ƒh‚ğ 
+  åŠ ãˆã¦ã€ç‰¹åˆ¥ãªä¾‹å¤–ã¨ã—ã¦ã€take-okm ã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ã‚³ãƒ¼ãƒ‰ã‚’ 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ‚ ‚é‚¢‚Í "MFC Version 9.0" ‚Æ“¯‚¶ƒ‰ƒCƒZƒ“ƒX‚ª“K—p‚³‚ê‚½
-  "MFC Version 9.0" ‚Ì‰ü•Ï‚³‚ê‚½ƒo[ƒWƒ‡ƒ“)‚ÆƒŠƒ“ƒN‚µA
-  ƒŠƒ“ƒN‚³‚ê‚½—¼Ò‚ğŠÜ‚ŞŒ‹‡’˜ì•¨‚ğ”Ğ•z‚·‚é‹–‰Â‚ğ—^‚¦‚Ü‚·B
-  ‚ ‚È‚½‚Í "MFC" ˆÈŠO‚Åg‚í‚ê‚Ä‚¢‚é‚·‚×‚Ä
-  ‚ÌƒR[ƒh‚ÉŠÖ‚µ‚Ä‚Í‘S–Ê“I‚ÉGNUˆê”ÊŒöO—˜—p‹–‘øŒ_–ñ‘‚É]‚í‚È‚¯‚ê‚Î
-  ‚È‚è‚Ü‚¹‚ñB‚ ‚È‚½‚ª‚±‚Ìƒtƒ@ƒCƒ‹‚ğ‰ü•Ï‚µ‚½‚È‚ç‚ÎA‚ ‚È‚½‚Í‚±‚Ì—áŠO
-  ‚ğ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚Ìƒtƒ@ƒCƒ‹‚Éˆø‚«‘±‚«İ‚¯‚é‚±‚Æ‚à‚Å‚«‚Ü‚·‚ªA‚»
-  ‚¤‚·‚é‹`–±‚Í‚ ‚è‚Ü‚¹‚ñB‚à‚µ—áŠO‚ğİ‚¯‚½‚­‚È‚¯‚ê‚ÎA‚±‚Ì—áŠOğ€‚ğ
-  ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚©‚ç‚Ííœ‚µ‚Ä‚­‚¾‚³‚¢B)
+  (  ã‚ã‚‹ã„ã¯ "MFC Version 9.0" ã¨åŒã˜ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ãŒé©ç”¨ã•ã‚ŒãŸ
+  "MFC Version 9.0" ã®æ”¹å¤‰ã•ã‚ŒãŸãƒãƒ¼ã‚¸ãƒ§ãƒ³)ã¨ãƒªãƒ³ã‚¯ã—ã€
+  ãƒªãƒ³ã‚¯ã•ã‚ŒãŸä¸¡è€…ã‚’å«ã‚€çµåˆè‘—ä½œç‰©ã‚’é ’å¸ƒã™ã‚‹è¨±å¯ã‚’ä¸ãˆã¾ã™ã€‚
+  ã‚ãªãŸã¯ "MFC" ä»¥å¤–ã§ä½¿ã‚ã‚Œã¦ã„ã‚‹ã™ã¹ã¦
+  ã®ã‚³ãƒ¼ãƒ‰ã«é–¢ã—ã¦ã¯å…¨é¢çš„ã«GNUä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾å¥‘ç´„æ›¸ã«å¾“ã‚ãªã‘ã‚Œã°
+  ãªã‚Šã¾ã›ã‚“ã€‚ã‚ãªãŸãŒã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ”¹å¤‰ã—ãŸãªã‚‰ã°ã€ã‚ãªãŸã¯ã“ã®ä¾‹å¤–
+  ã‚’ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®ãƒ•ã‚¡ã‚¤ãƒ«ã«å¼•ãç¶šãè¨­ã‘ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ãŒã€ã
+  ã†ã™ã‚‹ç¾©å‹™ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ã‚‚ã—ä¾‹å¤–ã‚’è¨­ã‘ãŸããªã‘ã‚Œã°ã€ã“ã®ä¾‹å¤–æ¡é …ã‚’
+  ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‹ã‚‰ã¯å‰Šé™¤ã—ã¦ãã ã•ã„ã€‚)
 */
 /*
 // ****************************************************************
@@ -69,16 +69,16 @@ Copyright (C) 2006-2017 take-okm
 // ****************************************************************
 */
 /** @file */
-#include "DcdGrid\WndDcdGrid3\CWndDcdGrid.h"
-#include "DcdGrid\WndDcdGrid3\CPropStack.h"
-#include "DcdGrid\WndDcdGrid3\CXDcdGrid_ZoneCacheTemp.h"
+#include "DcdGridÂ¥WndDcdGrid3Â¥CWndDcdGrid.h"
+#include "DcdGridÂ¥WndDcdGrid3Â¥CPropStack.h"
+#include "DcdGridÂ¥WndDcdGrid3Â¥CXDcdGrid_ZoneCacheTemp.h"
 
-#include "NsOu\OuNew.h"
-#include "DcDraw\CConverter_WinGdi.h"
-#include "DcDraw\CDcdFillrectRop.h"
-#include "DcDraw\CaDcdTargetItemPosition.h"
-#include "DcDraw\CDcdTargetGetDC.h"
-#include "LogMsg\LogMsg.h"
+#include "NsOuÂ¥OuNew.h"
+#include "DcDrawÂ¥CConverter_WinGdi.h"
+#include "DcDrawÂ¥CDcdFillrectRop.h"
+#include "DcDrawÂ¥CaDcdTargetItemPosition.h"
+#include "DcDrawÂ¥CDcdTargetGetDC.h"
+#include "LogMsgÂ¥LogMsg.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -94,7 +94,7 @@ namespace WndDcdGrid3{
 //	WndDcdGrid3::CSelect
 // ----------------------------------------------------------------
 	// --------------------------------
-	//@name ‰º¿ŠÖ”
+	//@name ä¸‹è«‹é–¢æ•°
 	// --------------------------------
 
 int CSelect::insertYColumn_insertColumnCell( int iYColumnNumber ) 
@@ -107,11 +107,11 @@ int CSelect::insertYColumn_insertColumnCell( int iYColumnNumber )
 			iYColumnNumber = pCDcdGrid->getYColumnCount() ;
 		}
 		if ( !( 0 <= iYColumnNumber && iYColumnNumber <= pCDcdGrid->getYColumnCount() ) ){
-			iRv = -2 ;	//	ƒCƒ“ƒfƒNƒX‚ª•s³‚Å‚·	
+			iRv = -2 ;	//	ã‚¤ãƒ³ãƒ‡ã‚¯ã‚¹ãŒä¸æ­£ã§ã™	
 		}
 	}
 	if ( iRv >= 0 ){
-		//	CellƒIƒuƒWƒFƒNƒg
+		//	Cellã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 		m_CSelectCellCont.insert( 
 			m_CSelectCellCont.begin() + iYColumnNumber ,
 			new CSelectYColumnCellCont ) ;
@@ -138,7 +138,7 @@ int CSelect::insertXColumn_insertColumnCell( int iXColumnNumber )
 		}
 		if ( !( 0 <= iXColumnNumber && 
 				iXColumnNumber <= pCDcdGrid->getXColumnCount() ) ){
-			iRv = -2 ;	//	ƒCƒ“ƒfƒNƒX‚ª•s³‚Å‚·	
+			iRv = -2 ;	//	ã‚¤ãƒ³ãƒ‡ã‚¯ã‚¹ãŒä¸æ­£ã§ã™	
 		}
 	}
 	if ( iRv >= 0 ){
@@ -166,7 +166,7 @@ int CSelect::eraseYColumn_eraseColumnCell( int iYColumnNumber )
 		}
 		if ( !( 0 <= iYColumnNumber && 
 				iYColumnNumber < pCDcdGrid->getYColumnCount() ) ){
-			iRv = -2 ;	//	ƒCƒ“ƒfƒNƒX‚ª•s³‚Å‚·	
+			iRv = -2 ;	//	ã‚¤ãƒ³ãƒ‡ã‚¯ã‚¹ãŒä¸æ­£ã§ã™	
 		}
 	}
 	if ( iRv >= 0 ){
@@ -202,7 +202,7 @@ int CSelect::eraseXColumn_eraseColumnCell( int iXColumnNumber )
 		}
 		if ( !( 0 <= iXColumnNumber && 
 				iXColumnNumber < pCDcdGrid->getXColumnCount() ) ){
-			iRv = -2 ;	//	ƒCƒ“ƒfƒNƒX‚ª•s³‚Å‚·	
+			iRv = -2 ;	//	ã‚¤ãƒ³ãƒ‡ã‚¯ã‚¹ãŒä¸æ­£ã§ã™	
 		}
 	}
 	if ( iRv >= 0 ){
@@ -232,7 +232,7 @@ Ou<CPropStack> CSelect::createPropStackForSelectChange()
 }
 
 	// --------------------------------
-	//@name CWndDcdGrid::CDcdGrid ‚©‚ç‚ÌˆÏ÷
+	//@name CWndDcdGrid::CDcdGrid ã‹ã‚‰ã®å§”è­²
 	// --------------------------------
 void CSelect::OnCreateXColumn( int iXColumnNumber )
 {
@@ -254,7 +254,7 @@ void CSelect::OnDeleteYColumn( int iYColumnNumber )
 }
 
 	// --------------------------------
-	//@name CWndDcdGrid ‚©‚ç‚ÌˆÏ÷
+	//@name CWndDcdGrid ã‹ã‚‰ã®å§”è­²
 	// --------------------------------
 bool CSelect::update_adjustProp() 
 {
@@ -265,33 +265,33 @@ bool CSelect::update_adjustProp()
 	if ( m_eSelectMode_Prev == SelectMode_NONE
 		&& m_eSelectMode == SelectMode_NONE )
 	{
-		//	m_eSelectMode ‚ª SelectMode_NONE ‚Å‚ ‚éŠÔ‚ÍA
-		//	update_adjustProp()Eupdate_updateScreen()EOnPaint()‚Í
-		//	‰½‚à‚¹‚¸‚ÉƒŠƒ^[ƒ“‚µ‚Ü‚·B
+		//	m_eSelectMode ãŒ SelectMode_NONE ã§ã‚ã‚‹é–“ã¯ã€
+		//	update_adjustProp()ãƒ»update_updateScreen()ãƒ»OnPaint()ã¯
+		//	ä½•ã‚‚ã›ãšã«ãƒªã‚¿ãƒ¼ãƒ³ã—ã¾ã™ã€‚
 	}	
 	else
 	{
 		CSelect* pCSelect = m_pCWndDcdGrid->getCSelect() ;
 		CdDcdZoneXy	zonexyColumnNumberLimit = 
 			pCSelect->getColumnNumberSelectLimitRegularized() ;
-		//zonexyColumnNumberLimit = ƒZƒ‹‘I‘ğ‰Â”\”ÍˆÍ
+		//zonexyColumnNumberLimit = ã‚»ãƒ«é¸æŠå¯èƒ½ç¯„å›²
 
-		//	ƒZƒ‹‘I‘ğ•ÏX‚Ì•`‰æ‚ğÅ“K‰»‚µ‚Ü‚·B
+		//	ã‚»ãƒ«é¸æŠå¤‰æ›´æ™‚ã®æç”»ã‚’æœ€é©åŒ–ã—ã¾ã™ã€‚
 		Ou<CPropStack> pPropStack = createPropStackForSelectChange() ;
 
 		// --------------------------------
-		//	X—ñƒ‚[ƒhEY—ñƒ‚[ƒh‚É‚æ‚éACSelectCell::m_bIsSelected ‚Ì³‹K‰»B
+		//	Xåˆ—ãƒ¢ãƒ¼ãƒ‰ãƒ»Yåˆ—ãƒ¢ãƒ¼ãƒ‰ã«ã‚ˆã‚‹ã€CSelectCell::m_bIsSelected ã®æ­£è¦åŒ–ã€‚
 		// --------------------------------
-		//1.1.m_eSelectMode ‚ª SelectMode_NONE ‚Ìê‡A
-		//‚·‚×‚Ä‚ÌƒZƒ‹‚ğ”ñ‘I‘ğ‚É‚µ‚Ü‚·B
+		//1.1.m_eSelectMode ãŒ SelectMode_NONE ã®å ´åˆã€
+		//ã™ã¹ã¦ã®ã‚»ãƒ«ã‚’éé¸æŠã«ã—ã¾ã™ã€‚
 		if ( m_pCWndDcdGrid->getCSelect()->getSelectMode() 
 			== CSelect::SelectMode_NONE )
 		{
-			//	‚·‚×‚Ä‚ÌƒZƒ‹‚Ì‘I‘ğ‚ğ‰ğœ‚µ‚Ü‚·B
+			//	ã™ã¹ã¦ã®ã‚»ãƒ«ã®é¸æŠã‚’è§£é™¤ã—ã¾ã™ã€‚
 			clearSelect() ;
 		}
-		//	  1.2. m_eSelectMode ‚ª SelectMode_XColumn ‚Ìê‡A
-		//		“¯‚¶X—ñ”Ô†(c•ûŒü)‚ÌƒZƒ‹‚Ì‘I‘ğó‹µ‚ğ‚·‚×‚Ä“¯ˆê‚É‚µ‚Ü‚·B
+		//	  1.2. m_eSelectMode ãŒ SelectMode_XColumn ã®å ´åˆã€
+		//		åŒã˜Xåˆ—ç•ªå·(ç¸¦æ–¹å‘)ã®ã‚»ãƒ«ã®é¸æŠçŠ¶æ³ã‚’ã™ã¹ã¦åŒä¸€ã«ã—ã¾ã™ã€‚
 		//
 		else if ( m_pCWndDcdGrid->getCSelect()->getSelectMode() 
 			== CSelect::SelectMode_XColumn )
@@ -301,17 +301,17 @@ bool CSelect::update_adjustProp()
 				iXColumnNumber < zonexyColumnNumberLimit.getX().getEndPos() ;
 				iXColumnNumber ++ )
 			{
-				//	ƒZƒ‹‘I‘ğó‹µ‚ªŠm’è‚µ‚½‚ç true ‚Å‚·B
+				//	ã‚»ãƒ«é¸æŠçŠ¶æ³ãŒç¢ºå®šã—ãŸã‚‰ true ã§ã™ã€‚
 				bool bColumnSelectIsFixed = false ;
 				bool bColumnSelect = false ;
 
-				//		1.2.1.‚¢‚¸‚ê‚©‚ÌƒZƒ‹‚Ì CSelectCell::m_bIsSelected ‚ªtrue‚É
-				//		•ÏX‚³‚ê‚Ä‚¢‚½‚çA
-				//		‚·‚×‚Ä‚ÌƒZƒ‹‚ğtrue‚É‚µ‚Ü‚·B
+				//		1.2.1.ã„ãšã‚Œã‹ã®ã‚»ãƒ«ã® CSelectCell::m_bIsSelected ãŒtrueã«
+				//		å¤‰æ›´ã•ã‚Œã¦ã„ãŸã‚‰ã€
+				//		ã™ã¹ã¦ã®ã‚»ãƒ«ã‚’trueã«ã—ã¾ã™ã€‚
 				//
-				//		1.2.2.‚¢‚¸‚ê‚©‚ÌƒZƒ‹‚Ì CSelectCell::m_bIsSelected ‚ª
-				//		false‚É•ÏX‚³‚ê‚Ä‚¢‚½‚çA
-				//		‚·‚×‚Ä‚ÌƒZƒ‹‚ğfalse‚É‚µ‚Ü‚·B
+				//		1.2.2.ã„ãšã‚Œã‹ã®ã‚»ãƒ«ã® CSelectCell::m_bIsSelected ãŒ
+				//		falseã«å¤‰æ›´ã•ã‚Œã¦ã„ãŸã‚‰ã€
+				//		ã™ã¹ã¦ã®ã‚»ãƒ«ã‚’falseã«ã—ã¾ã™ã€‚
 				for ( int iYColumnNumber = zonexyColumnNumberLimit.getY().getPos() ;
 					!bColumnSelectIsFixed && 
 						iYColumnNumber < zonexyColumnNumberLimit.getY().getEndPos() ;
@@ -322,21 +322,21 @@ bool CSelect::update_adjustProp()
 					if ( pCSelectCell->getIsSelected_Prev() != 
 						pCSelectCell->getIsSelected() )
 					{
-						//	ƒZƒ‹‚Ì‘I‘ğó‹µ‚ª•ÏX‚³‚ê‚Ä‚¢‚Ü‚·B
-						//	‚»‚Ì—ñ‚Ì‚·‚×‚Ä‚ÌƒZƒ‹‚Ì‘I‘ğó‹µ‚ğŠm’è‚µ‚Ü‚·B
+						//	ã‚»ãƒ«ã®é¸æŠçŠ¶æ³ãŒå¤‰æ›´ã•ã‚Œã¦ã„ã¾ã™ã€‚
+						//	ãã®åˆ—ã®ã™ã¹ã¦ã®ã‚»ãƒ«ã®é¸æŠçŠ¶æ³ã‚’ç¢ºå®šã—ã¾ã™ã€‚
 						bColumnSelectIsFixed = true ;
 						bColumnSelect = pCSelectCell->getIsSelected() ;
 					}
 				}
-				//		1.2.3.ƒZƒ‹‚Ì‘I‘ğó‹µ‚ª•ÏX‚³‚ê‚Ä‚¢‚È‚¢ê‡‚ÍA
-				//		‘S‚Ä‚ÌƒZƒ‹‚Ì‘I‘ğó‹µ‚ğAm_ColumnNumberSelectLimit.getY().getPos() ‚Ì
-				//		‘I‘ğó‹µ‚Æ“¯‚¶‚É‚µ‚Ü‚·B
+				//		1.2.3.ã‚»ãƒ«ã®é¸æŠçŠ¶æ³ãŒå¤‰æ›´ã•ã‚Œã¦ã„ãªã„å ´åˆã¯ã€
+				//		å…¨ã¦ã®ã‚»ãƒ«ã®é¸æŠçŠ¶æ³ã‚’ã€m_ColumnNumberSelectLimit.getY().getPos() ã®
+				//		é¸æŠçŠ¶æ³ã¨åŒã˜ã«ã—ã¾ã™ã€‚
 				//		
-				if ( !bColumnSelectIsFixed )	//	ƒZƒ‹‚Ì‘I‘ğó‹µ‚ª•ÏX‚³‚ê‚Ä‚¢‚È‚¢
+				if ( !bColumnSelectIsFixed )	//	ã‚»ãƒ«ã®é¸æŠçŠ¶æ³ãŒå¤‰æ›´ã•ã‚Œã¦ã„ãªã„
 				{
 					CSelectCell* pCSelectCell = pCSelect->getCell( 
 						iXColumnNumber , zonexyColumnNumberLimit.getY().getPos() ) ;
-					if ( pCSelectCell != NULL )	//	Y—ñ”‚ª0‚Ìê‡‚ÍApCSelectCell‚ÍNULL‚É‚È‚è‚Ü‚·B
+					if ( pCSelectCell != NULL )	//	Yåˆ—æ•°ãŒ0ã®å ´åˆã¯ã€pCSelectCellã¯NULLã«ãªã‚Šã¾ã™ã€‚
 					{
 						bColumnSelectIsFixed = true ;
 						bColumnSelect = pCSelectCell->getIsSelected() ;
@@ -357,8 +357,8 @@ bool CSelect::update_adjustProp()
 				}
 			}
 		}
-		//	1.3.m_eSelectMode ‚ª SelectMode_YColumn ‚Ìê‡A
-		//	“¯‚¶Y—ñ”Ô†(‰¡•ûŒü)‚ÌƒZƒ‹‚Ì‘I‘ğó‹µ‚ğ‚·‚×‚Ä“¯ˆê‚É‚µ‚Ü‚·B
+		//	1.3.m_eSelectMode ãŒ SelectMode_YColumn ã®å ´åˆã€
+		//	åŒã˜Yåˆ—ç•ªå·(æ¨ªæ–¹å‘)ã®ã‚»ãƒ«ã®é¸æŠçŠ¶æ³ã‚’ã™ã¹ã¦åŒä¸€ã«ã—ã¾ã™ã€‚
 		else if ( m_pCWndDcdGrid->getCSelect()->getSelectMode() 
 			== CSelect::SelectMode_YColumn )
 		{
@@ -366,16 +366,16 @@ bool CSelect::update_adjustProp()
 				iYColumnNumber < zonexyColumnNumberLimit.getY().getEndPos() ;
 				iYColumnNumber ++ )
 			{
-				//	ƒZƒ‹‘I‘ğó‹µ‚ªŠm’è‚µ‚½‚ç true ‚Å‚·B
+				//	ã‚»ãƒ«é¸æŠçŠ¶æ³ãŒç¢ºå®šã—ãŸã‚‰ true ã§ã™ã€‚
 				bool bColumnSelectIsFixed = false ;
 				bool bColumnSelect = false ;
 
-				//		1.1.‚¢‚¸‚ê‚©‚ÌƒZƒ‹‚Ì CSelectCell::m_bIsSelected ‚ªtrue‚É
-				//		•ÏX‚³‚ê‚Ä‚¢‚½‚çA
-				//		‚·‚×‚Ä‚ÌƒZƒ‹‚ğtrue‚É‚µ‚Ü‚·B
+				//		1.1.ã„ãšã‚Œã‹ã®ã‚»ãƒ«ã® CSelectCell::m_bIsSelected ãŒtrueã«
+				//		å¤‰æ›´ã•ã‚Œã¦ã„ãŸã‚‰ã€
+				//		ã™ã¹ã¦ã®ã‚»ãƒ«ã‚’trueã«ã—ã¾ã™ã€‚
 				//
-				//		1.2.‚¢‚¸‚ê‚©‚ÌƒZƒ‹‚Ì CSelectCell::m_bIsSelected ‚ªfalse‚É•ÏX‚³‚ê‚Ä‚¢‚½‚çA
-				//		‚·‚×‚Ä‚ÌƒZƒ‹‚ğfalse‚É‚µ‚Ü‚·B
+				//		1.2.ã„ãšã‚Œã‹ã®ã‚»ãƒ«ã® CSelectCell::m_bIsSelected ãŒfalseã«å¤‰æ›´ã•ã‚Œã¦ã„ãŸã‚‰ã€
+				//		ã™ã¹ã¦ã®ã‚»ãƒ«ã‚’falseã«ã—ã¾ã™ã€‚
 				for ( int iXColumnNumber = zonexyColumnNumberLimit.getX().getPos() ;
 					!bColumnSelectIsFixed && 
 						iXColumnNumber < zonexyColumnNumberLimit.getX().getEndPos() ;
@@ -386,21 +386,21 @@ bool CSelect::update_adjustProp()
 					if ( pCSelectCell->getIsSelected_Prev() != 
 						pCSelectCell->getIsSelected() )
 					{
-						//	ƒZƒ‹‚Ì‘I‘ğó‹µ‚ª•ÏX‚³‚ê‚Ä‚¢‚Ü‚·B
-						//	‚»‚Ì—ñ‚Ì‚·‚×‚Ä‚ÌƒZƒ‹‚Ì‘I‘ğó‹µ‚ğŠm’è‚µ‚Ü‚·B
+						//	ã‚»ãƒ«ã®é¸æŠçŠ¶æ³ãŒå¤‰æ›´ã•ã‚Œã¦ã„ã¾ã™ã€‚
+						//	ãã®åˆ—ã®ã™ã¹ã¦ã®ã‚»ãƒ«ã®é¸æŠçŠ¶æ³ã‚’ç¢ºå®šã—ã¾ã™ã€‚
 						bColumnSelectIsFixed = true ;
 						bColumnSelect = pCSelectCell->getIsSelected() ;
 					}
 				}
-				//		1.3.ƒZƒ‹‚Ì‘I‘ğó‹µ‚ª•ÏX‚³‚ê‚Ä‚¢‚È‚¢ê‡‚ÍA
-				//		‘S‚Ä‚ÌƒZƒ‹‚Ì‘I‘ğó‹µ‚ğAm_ColumnNumberSelectLimit.getY().getPos() ‚Ì
-				//		‘I‘ğó‹µ‚Æ“¯‚¶‚É‚µ‚Ü‚·B
+				//		1.3.ã‚»ãƒ«ã®é¸æŠçŠ¶æ³ãŒå¤‰æ›´ã•ã‚Œã¦ã„ãªã„å ´åˆã¯ã€
+				//		å…¨ã¦ã®ã‚»ãƒ«ã®é¸æŠçŠ¶æ³ã‚’ã€m_ColumnNumberSelectLimit.getY().getPos() ã®
+				//		é¸æŠçŠ¶æ³ã¨åŒã˜ã«ã—ã¾ã™ã€‚
 				//		
-				if ( !bColumnSelectIsFixed )	//	ƒZƒ‹‚Ì‘I‘ğó‹µ‚ª•ÏX‚³‚ê‚Ä‚¢‚È‚¢
+				if ( !bColumnSelectIsFixed )	//	ã‚»ãƒ«ã®é¸æŠçŠ¶æ³ãŒå¤‰æ›´ã•ã‚Œã¦ã„ãªã„
 				{
 					CSelectCell* pCSelectCell = pCSelect->getCell( 
 						zonexyColumnNumberLimit.getX().getPos() , iYColumnNumber ) ;
-					if ( pCSelectCell != NULL )	//	X—ñ”‚ª0‚Ìê‡‚ÍApCSelectCell‚ÍNULL‚É‚È‚è‚Ü‚·B
+					if ( pCSelectCell != NULL )	//	Xåˆ—æ•°ãŒ0ã®å ´åˆã¯ã€pCSelectCellã¯NULLã«ãªã‚Šã¾ã™ã€‚
 					{
 						bColumnSelectIsFixed = true ;
 						bColumnSelect = pCSelectCell->getIsSelected() ;
@@ -423,10 +423,10 @@ bool CSelect::update_adjustProp()
 		}
 			
 		// --------------------------------
-		//	ColumnNumberSelectLimit‚É‚æ‚éACSelectCell::m_bIsSelected ‚Ì³‹K‰»B
+		//	ColumnNumberSelectLimitã«ã‚ˆã‚‹ã€CSelectCell::m_bIsSelected ã®æ­£è¦åŒ–ã€‚
 		// --------------------------------
-		//	  2. m_ColumnNumberSelectLimit ˆÈŠO‚Ì—Ìˆæ‚ª‘I‘ğ‚³‚ê‚Ä‚¢‚½ê‡‚Í
-		//	    ‚»‚Ì‘I‘ğ‚ğ‰ğœ‚µ‚Ü‚·B
+		//	  2. m_ColumnNumberSelectLimit ä»¥å¤–ã®é ˜åŸŸãŒé¸æŠã•ã‚Œã¦ã„ãŸå ´åˆã¯
+		//	    ãã®é¸æŠã‚’è§£é™¤ã—ã¾ã™ã€‚
 		{
 			CXDcdGrid* pCXDcdGrid = m_pCWndDcdGrid->getCXDcdGrid() ;
 
@@ -441,8 +441,8 @@ bool CSelect::update_adjustProp()
 					if ( !zonexyColumnNumberLimit.IsInner( 
 						CdDcdPosXy( iXColumnNumber , iYColumnNumber ) ) )
 					{
-						//	m_ColumnNumberSelectLimit ˆÈŠO‚Ì—Ìˆæ‚Å‚·B
-						//	‚±‚ÌƒZƒ‹‚ÍA‚·‚×‚Ä‘I‘ğ‰ğœ‚É‚µ‚Ü‚·B
+						//	m_ColumnNumberSelectLimit ä»¥å¤–ã®é ˜åŸŸã§ã™ã€‚
+						//	ã“ã®ã‚»ãƒ«ã¯ã€ã™ã¹ã¦é¸æŠè§£é™¤ã«ã—ã¾ã™ã€‚
 						CSelectCell* pCSelectCell = pCSelect->getCell( 
 							iXColumnNumber , iYColumnNumber ) ;
 						if ( pCSelectCell->getIsSelected() )
@@ -455,7 +455,7 @@ bool CSelect::update_adjustProp()
 			}
 		}
 		// --------------------------------
-		//	m_iSelectedCellCount ‚ÌXV
+		//	m_iSelectedCellCount ã®æ›´æ–°
 		// --------------------------------
 		{
 			m_iSelectedCellCount = 0 ;
@@ -479,7 +479,7 @@ bool CSelect::update_adjustProp()
 
 		}
 		// --------------------------------
-		//	CSelectCell ‚ÉˆÏ÷
+		//	CSelectCell ã«å§”è­²
 		// --------------------------------
 		{
 			for ( int iYColumnNumber = 0 ; 
@@ -513,15 +513,15 @@ bool CSelect::update_updateScreen()
 	if ( m_eSelectMode_Prev == SelectMode_NONE
 		&& m_eSelectMode == SelectMode_NONE )
 	{
-		//	m_eSelectMode ‚ª SelectMode_NONE ‚Å‚ ‚éŠÔ‚ÍA
-		//	update_adjustProp()Eupdate_updateScreen()EOnPaint()‚Í
-		//	‰½‚à‚¹‚¸‚ÉƒŠƒ^[ƒ“‚µ‚Ü‚·B
+		//	m_eSelectMode ãŒ SelectMode_NONE ã§ã‚ã‚‹é–“ã¯ã€
+		//	update_adjustProp()ãƒ»update_updateScreen()ãƒ»OnPaint()ã¯
+		//	ä½•ã‚‚ã›ãšã«ãƒªã‚¿ãƒ¼ãƒ³ã—ã¾ã™ã€‚
 	}	
 	else
 	{
-		//	ZoneCache ‚ğ¶¬
-		//	(CSelect::getZoneOfCellSelection()‚É‚æ‚é
-		//	ƒTƒCƒYæ“¾‚ª‘‚­‚È‚è‚Ü‚·)
+		//	ZoneCache ã‚’ç”Ÿæˆ
+		//	(CSelect::getZoneOfCellSelection()ã«ã‚ˆã‚‹
+		//	ã‚µã‚¤ã‚ºå–å¾—ãŒæ—©ããªã‚Šã¾ã™)
 
 		CDcdTargetGetDC	aTarget( getCWndDcdGrid()->GetSafeHwnd() ) ;
 		CXDcdGrid_ZoneCacheTemp aZoneCacheTemp( 
@@ -529,7 +529,7 @@ bool CSelect::update_updateScreen()
 				&aTarget ) ;
 
 		// --------------------------------
-		//	CSelectCell ‚ÉˆÏ÷
+		//	CSelectCell ã«å§”è­²
 		// --------------------------------
 		{
 			CDcdTargetGetDC	aTarget( m_pCWndDcdGrid->GetSafeHwnd() ) ;
@@ -551,7 +551,7 @@ bool CSelect::update_updateScreen()
 		}
 	}
 	// --------------------------------
-	//	‘O‰ñ’l‚ğXV
+	//	å‰å›å€¤ã‚’æ›´æ–°
 	// --------------------------------
 	m_eSelectMode_Prev = m_eSelectMode ;
 
@@ -566,21 +566,21 @@ bool CSelect::OnPaint( IfDcdTarget* pIfDcdTarget )
 
 	if ( m_eSelectMode == SelectMode_NONE )
 	{
-		//	m_eSelectMode ‚ª SelectMode_NONE ‚Å‚ ‚éŠÔ‚ÍA
-		//	update_adjustProp()Eupdate_updateScreen()EOnPaint()‚Í
-		//	‰½‚à‚¹‚¸‚ÉƒŠƒ^[ƒ“‚µ‚Ü‚·B
+		//	m_eSelectMode ãŒ SelectMode_NONE ã§ã‚ã‚‹é–“ã¯ã€
+		//	update_adjustProp()ãƒ»update_updateScreen()ãƒ»OnPaint()ã¯
+		//	ä½•ã‚‚ã›ãšã«ãƒªã‚¿ãƒ¼ãƒ³ã—ã¾ã™ã€‚
 	}	
 	else
 	{
-		//	ZoneCache ‚ğ¶¬
-		//	(CSelect::getZoneOfCellSelection()‚É‚æ‚é
-		//	ƒTƒCƒYæ“¾‚ª‘‚­‚È‚è‚Ü‚·)
+		//	ZoneCache ã‚’ç”Ÿæˆ
+		//	(CSelect::getZoneOfCellSelection()ã«ã‚ˆã‚‹
+		//	ã‚µã‚¤ã‚ºå–å¾—ãŒæ—©ããªã‚Šã¾ã™)
 		CXDcdGrid_ZoneCacheTemp	aZoneCacheTemp( 
 			m_pCWndDcdGrid->getCXDcdGrid() , 
 			pIfDcdTarget ) ;
 
 		// --------------------------------
-		//	CSelectCell ‚ª‘I‘ğó‘Ô‚È‚ç•`‰æ
+		//	CSelectCell ãŒé¸æŠçŠ¶æ…‹ãªã‚‰æç”»
 		// --------------------------------
 		{
 			CDcdGrid* pCDcdGrid = m_pCWndDcdGrid->getCXDcdGrid() ;
@@ -604,8 +604,8 @@ bool CSelect::OnPaint( IfDcdTarget* pIfDcdTarget )
 
 						if ( !( zoneCell.getX().getSize() > 0 && 
 								zoneCell.getY().getSize() > 0 ) ){
-							//	ƒZƒ‹‚ÌƒTƒCƒY‚ª‚O‚Ìê‡‚ÍA
-							//	Œã‘±‚Ìˆ—‚Ís‚¢‚Ü‚¹‚ñ
+							//	ã‚»ãƒ«ã®ã‚µã‚¤ã‚ºãŒï¼ã®å ´åˆã¯ã€
+							//	å¾Œç¶šã®å‡¦ç†ã¯è¡Œã„ã¾ã›ã‚“
 							continue ;
 						}
 
@@ -634,18 +634,18 @@ bool CSelect::OnPaint( IfDcdTarget* pIfDcdTarget )
 void CSelect::OnSize(UINT nType, int cx, int cy)
 {
 	if ( cx == 0 || cy == 0 ){
-		//	‚±‚Ì‚Q‚Â‚Ì‚¤‚¿‚Ì‚¢‚¸‚ê‚©‚ª0‚Ìê‡A‚»‚ê‚Í
-		//	Create() ‚ÅƒTƒCƒY‚ğw’è‚¹‚¸‚ÉƒEƒCƒ“ƒhƒE‚ğ
-		//	¶¬‚µ‚½‚à‚Ì‚Æv‚í‚ê‚Ü‚·B
-		//	‚±‚Ìê‡‚ÍAƒ†[ƒU[‚É‚Í‰½‚àŒ©‚¦‚È‚¢‚í‚¯‚Å‚·‚©‚çA
-		//	ƒtƒH[ƒJƒXƒZƒ‹‚ÌˆÊ’u‚ÌÅ“K‰»‚È‚Ç‚Í‚¨‚±‚È‚¤
-		//	•K—v‚ª‚ ‚è‚Ü‚¹‚ñB
+		//	ã“ã®ï¼’ã¤ã®ã†ã¡ã®ã„ãšã‚Œã‹ãŒ0ã®å ´åˆã€ãã‚Œã¯
+		//	Create() ã§ã‚µã‚¤ã‚ºã‚’æŒ‡å®šã›ãšã«ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã‚’
+		//	ç”Ÿæˆã—ãŸã‚‚ã®ã¨æ€ã‚ã‚Œã¾ã™ã€‚
+		//	ã“ã®å ´åˆã¯ã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ã«ã¯ä½•ã‚‚è¦‹ãˆãªã„ã‚ã‘ã§ã™ã‹ã‚‰ã€
+		//	ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚»ãƒ«ã®ä½ç½®ã®æœ€é©åŒ–ãªã©ã¯ãŠã“ãªã†
+		//	å¿…è¦ãŒã‚ã‚Šã¾ã›ã‚“ã€‚
 		//
-		//	‚Ü‚½A‚±‚Ì‘å‚«‚³‚Ì‚Æ‚«‚É adjustProp() ‚ğ
-		//	s‚¤‚ÆAƒtƒH[ƒJƒXˆÊ’u‚Í–³ğŒ‚É (0,0) ‚É
-		//	ˆÚ“®‚µ‚Ä‚µ‚Ü‚¢‚Ü‚·B‚±‚Ì‚½‚ßA
-		//	adjustProp() ‚Í‚µ‚È‚¢•û‚ª
-		//	‚æ‚¢‚Å‚µ‚å‚¤B
+		//	ã¾ãŸã€ã“ã®å¤§ãã•ã®ã¨ãã« adjustProp() ã‚’
+		//	è¡Œã†ã¨ã€ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ä½ç½®ã¯ç„¡æ¡ä»¶ã« (0,0) ã«
+		//	ç§»å‹•ã—ã¦ã—ã¾ã„ã¾ã™ã€‚ã“ã®ãŸã‚ã€
+		//	adjustProp() ã¯ã—ãªã„æ–¹ãŒ
+		//	ã‚ˆã„ã§ã—ã‚‡ã†ã€‚
 		return ;
 	}
 
@@ -661,14 +661,14 @@ void CSelect::OnKillFocus(CWnd* pNewWnd)
 
 void CSelect::InvalidateGrid( ) 
 {
-	//	‚±‚ÌƒNƒ‰ƒX‚Ì‰æ–Ê•`‰æ‚Í‚·‚×‚ÄOnPaint‚Ås‚í‚ê‚Ü‚·B
-	//	InvalidateGrid‚Å‚ÍA“Á•Ê‚Èˆ—‚Í•s—v‚Å‚·B
+	//	ã“ã®ã‚¯ãƒ©ã‚¹ã®ç”»é¢æç”»ã¯ã™ã¹ã¦OnPaintã§è¡Œã‚ã‚Œã¾ã™ã€‚
+	//	InvalidateGridã§ã¯ã€ç‰¹åˆ¥ãªå‡¦ç†ã¯ä¸è¦ã§ã™ã€‚
 
 }
 
 
 	// ********************************
-	//	ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	//	ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 	// ********************************
 CSelect::CSelect( CWndDcdGrid* pCWndDcdGrid ) 
 	: m_pCWndDcdGrid( pCWndDcdGrid )
@@ -686,9 +686,9 @@ CSelect::CSelect( CWndDcdGrid* pCWndDcdGrid )
 	
 }
 
-CSelect::~CSelect() 
+CSelect::â€¾CSelect() 
 {
-	//	CSelectCell ƒIƒuƒWƒFƒNƒg‚ğ”jŠü‚µ‚Ü‚·B
+	//	CSelectCell ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç ´æ£„ã—ã¾ã™ã€‚
 	while( m_CSelectCellCont.size() > 0 )
 	{
 		CSelectYColumnCellCont* pCSelectYColumnCellCont = m_CSelectCellCont.back() ;
@@ -704,7 +704,7 @@ CSelect::~CSelect()
 }
 
 // ********************************
-//@name ŠÖ˜A
+//@name é–¢é€£
 // ********************************
 CWndDcdGrid*	CSelect::getCWndDcdGrid()
 {
@@ -722,7 +722,7 @@ void CSelect::setIfDcDrawSelect( Ou<IfDcDraw> value )
 
 
 	// ********************************
-	//@name ‘®«
+	//@name å±æ€§
 	// ********************************	
 bool CSelect::getIncludeRbBorder()const 
 {
@@ -757,7 +757,7 @@ CdDcdZoneXy	CSelect::getColumnNumberSelectLimitRegularized()const
 	CdDcdZoneXy	zonexyRv = m_ColumnNumberSelectLimit ;
 	CXDcdGrid* pCXDcdGrid = m_pCWndDcdGrid->getCXDcdGrid() ;
 
-	//	X—ñ
+	//	Xåˆ—
 	{
 		CdDcdZone	aZone = zonexyRv.getX() ;
 		if ( aZone.getEndPos() > pCXDcdGrid->getXColumnCount() )
@@ -766,7 +766,7 @@ CdDcdZoneXy	CSelect::getColumnNumberSelectLimitRegularized()const
 			zonexyRv.setX( aZone ) ;
 		}
 	}
-	//	Y—ñ
+	//	Yåˆ—
 	{
 		CdDcdZone	aZone = zonexyRv.getY() ;
 		if ( aZone.getEndPos() > pCXDcdGrid->getYColumnCount() )
@@ -787,7 +787,7 @@ void CSelect::setUpdateCWndDcdGrid( bool ev )
 {
 	if ( m_bUpdateCWndDcdGrid != ev )
 	{
-		//@‘®«‚ğ false ‚©‚ç true ‚É•ÏX‚µ‚½ê‡‚ÍACWndDcdGrid ‘S‘Ì‚ğXV‚µ‚Ü‚·B
+		//ã€€å±æ€§ã‚’ false ã‹ã‚‰ true ã«å¤‰æ›´ã—ãŸå ´åˆã¯ã€CWndDcdGrid å…¨ä½“ã‚’æ›´æ–°ã—ã¾ã™ã€‚
 		if ( ev )
 		{
 			m_pCWndDcdGrid->update() ;
@@ -799,7 +799,7 @@ void CSelect::setUpdateCWndDcdGrid( bool ev )
 
 
 	// ********************************
-	//@name CWndDcdGrid::CSelect W–ñ
+	//@name CWndDcdGrid::CSelect é›†ç´„
 	// ********************************
 CSelectCell* 
 CSelect::getCell( int iXColumnNumber , int iYColumnNumber )
@@ -862,7 +862,7 @@ int CSelect::getYColumnNumberOfCell(
 }
 
 	// ********************************
-	//@name CSelect ‘€ì
+	//@name CSelect æ“ä½œ
 	// ********************************
 
 CdDcdZoneXy CSelect::getZoneOfCellSelection(
@@ -874,17 +874,17 @@ CdDcdZoneXy CSelect::getZoneOfCellSelection(
 	CDcdGridCell* pCell = pCXDcdGrid->getCell( 
 		iXColumnNumber , iYColumnNumber ) ;
 
-	if ( pCell->getAttachTo() == NULL )	//	Œ‹‡ƒZƒ‹‚Å‚Í‚È‚¢
+	if ( pCell->getAttachTo() == NULL )	//	çµåˆã‚»ãƒ«ã§ã¯ãªã„
 	{
 		aZoneXy = pCXDcdGrid->getCellZone( pIfDcdTarget , iXColumnNumber , iYColumnNumber ) ;
 		
-		//X•ûŒü‚Ì(¶‚Ì)Œrü
+		//Xæ–¹å‘ã®(å·¦ã®)ç½«ç·š
 		{
 
 			if ( bIncludeRbBorder && 
 				iXColumnNumber + pCell->getXAttachCellCount() < pCXDcdGrid->getXColumnCount() )
 			{
-				//	”ÍˆÍ‚ÉŒrü‚ğŠÜ‚ß‚é(ƒOƒŠƒbƒh‘S‘Ì‚ÌŒrü‚Íœ‚­)
+				//	ç¯„å›²ã«ç½«ç·šã‚’å«ã‚ã‚‹(ã‚°ãƒªãƒƒãƒ‰å…¨ä½“ã®ç½«ç·šã¯é™¤ã)
 				CdDcdZone	zoneCurrent = aZoneXy.getX() ;
 
 				CdDcdZone	zoneBorder = pCXDcdGrid->getXColumnBorderZone( 
@@ -895,12 +895,12 @@ CdDcdZoneXy CSelect::getZoneOfCellSelection(
 				aZoneXy.setX( zoneCurrent ) ;
 			}
 		}
-		//Y•ûŒü‚Ì(‰º‚Ì)Œrü
+		//Yæ–¹å‘ã®(ä¸‹ã®)ç½«ç·š
 		{
 			if ( bIncludeRbBorder && 
 				iYColumnNumber + pCell->getYAttachCellCount() < pCXDcdGrid->getYColumnCount() )
 			{
-				//	”ÍˆÍ‚ÉŒrü‚ğŠÜ‚ß‚é(ƒOƒŠƒbƒh‘S‘Ì‚ÌŒrü‚Íœ‚­)
+				//	ç¯„å›²ã«ç½«ç·šã‚’å«ã‚ã‚‹(ã‚°ãƒªãƒƒãƒ‰å…¨ä½“ã®ç½«ç·šã¯é™¤ã)
 				CdDcdZone	zoneCurrent = aZoneXy.getY() ;
 
 				CdDcdZone	zoneBorder = pCXDcdGrid->getYColumnBorderZone( 
@@ -919,7 +919,7 @@ CdDcdZoneXy CSelect::getZoneOfCellSelection(
 void CSelect::selectAll() 
 {
 	{
-		//	ƒZƒ‹‘I‘ğ•ÏX‚Ì•`‰æ‚ğÅ“K‰»‚µ‚Ü‚·B
+		//	ã‚»ãƒ«é¸æŠå¤‰æ›´æ™‚ã®æç”»ã‚’æœ€é©åŒ–ã—ã¾ã™ã€‚
 		Ou<CPropStack> pPropStack = createPropStackForSelectChange() ;
 
 
@@ -935,8 +935,8 @@ void CSelect::selectAll()
 				iXColumnNumber < zonexyColumnNumberSelectLimit.getX().getEndPos() ;
 				iXColumnNumber ++ )
 			{
-				//	m_ColumnNumberSelectLimit ˆÈ“à‚Ì—Ìˆæ‚Å‚·B
-				//	‚±‚ÌƒZƒ‹‚ÍA‚·‚×‚Ä‘I‘ğ‚µ‚Ü‚·B
+				//	m_ColumnNumberSelectLimit ä»¥å†…ã®é ˜åŸŸã§ã™ã€‚
+				//	ã“ã®ã‚»ãƒ«ã¯ã€ã™ã¹ã¦é¸æŠã—ã¾ã™ã€‚
 				CSelectCell* pCSelectCell = pCSelect->getCell( 
 					iXColumnNumber , iYColumnNumber ) ;
 				pCSelectCell->setIsSelected( true ) ;
@@ -948,7 +948,7 @@ void CSelect::selectAll()
 void  CSelect::clearSelect() 
 {
 	{
-		//	ƒZƒ‹‘I‘ğ•ÏX‚Ì•`‰æ‚ğÅ“K‰»‚µ‚Ü‚·B
+		//	ã‚»ãƒ«é¸æŠå¤‰æ›´æ™‚ã®æç”»ã‚’æœ€é©åŒ–ã—ã¾ã™ã€‚
 		Ou<CPropStack> pPropStack = createPropStackForSelectChange() ;
 
 
@@ -964,7 +964,7 @@ void  CSelect::clearSelect()
 					iXColumnNumber < pCXDcdGrid->getXColumnCount() ;
 				iXColumnNumber ++ )
 			{
-				//	‚·‚×‚Ä‚ÌƒZƒ‹‚ğ‘I‘ğ‰ğœ‚É‚µ‚Ü‚·B
+				//	ã™ã¹ã¦ã®ã‚»ãƒ«ã‚’é¸æŠè§£é™¤ã«ã—ã¾ã™ã€‚
 				CSelectCell* pCSelectCell = pCSelect->getCell( 
 					iXColumnNumber , iYColumnNumber ) ;
 				pCSelectCell->setIsSelected( false ) ;

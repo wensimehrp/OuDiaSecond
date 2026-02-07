@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -83,22 +83,22 @@ namespace Hidemdi{
 // ********************************
 void CHidemdiRootDoc::UpdateAllSubDocviews( CView* pSender	
 								, LPARAM lHint , CObject* pHint )
-		//	���ׂẴT�uDocview�ɑ΂��āAUpdateAllViews()�����s���܂�
+		//	すべてのサブDocviewに対して、UpdateAllViews()を実行します
 		//pSender
-		//	�h�L�������g��ύX�����r���[�ւ̃|�C���^�B
-		//���ׂẴr���[���X�V����Ƃ��ɂ� NULL ���w�肵�܂��B
+		//	ドキュメントを変更したビューへのポインタ。
+		//すべてのビューを更新するときには NULL を指定します。
 		//lHint
-		//	�ύX�Ɋւ�������w�肵�܂��B
-		//	�������A LHINT_SUBVIEW_TO_ROOTDOC ���w�肳�ꂽ�ꍇ�́A
-		//	���ׂĂ�Docview�ɑ΂��āA
-		//	���e�����[�g�h�L�������g�ɔ��f���A�K�v�Ȃ�΃��[�gDoc�ɑ΂���
-		//	SetModifiedFlag()�����s�����܂��B
+		//	変更に関する情報を指定します。
+		//	ただし、 LHINT_SUBVIEW_TO_ROOTDOC が指定された場合は、
+		//	すべてのDocviewに対して、
+		//	内容をルートドキュメントに反映し、必要ならばルートDocに対して
+		//	SetModifiedFlag()を実行させます。
 		//pHint
-		//	�ύX�Ɋւ����񂪊i�[����Ă���I�u�W�F�N�g�ւ̃|�C���^�B
+		//	変更に関する情報が格納されているオブジェクトへのポインタ。
 {
 	POSITION	LPosition = AfxGetApp()->GetFirstDocTemplatePosition() ;
 
-	//	���ׂẴT�uDocView�ւ́AUpdateAllViews() �Ăяo��
+	//	すべてのサブDocViewへの、UpdateAllViews() 呼び出し
 	while( LPosition != NULL ){
 		CDocTemplate*	pLDocTemplate = AfxGetApp()
 						->GetNextDocTemplate( LPosition ) ;
@@ -133,7 +133,7 @@ CHidemdiRootDoc::CHidemdiRootDoc()
 
 }
 
-CHidemdiRootDoc::~CHidemdiRootDoc()
+CHidemdiRootDoc::‾CHidemdiRootDoc()
 {
 }
 
@@ -150,9 +150,9 @@ void CHidemdiRootDoc::Dump(CDumpContext& dc) const
 #endif //_DEBUG
 
 BOOL CHidemdiRootDoc::SaveModified() 
-	//	SaveAllModifiedSubDocviews�i�j
-	//	�i���ׂẴT�uDocview�ɑ΂���SaveModofied�����s����j
-	//	�����s���Ă���A�������g��SaveModified�����s���܂�)
+	//	SaveAllModifiedSubDocviews（）
+	//	（すべてのサブDocviewに対してSaveModofiedを実行する）
+	//	を実行してから、自分自身のSaveModifiedを実行します)
 {
 	BOOL	bRv = TRUE ;
 	bRv = ((CHidemdiApp*)AfxGetApp())->pRootDoctmpl()
@@ -169,9 +169,9 @@ BOOL CHidemdiRootDoc::SaveModified()
 void CHidemdiRootDoc::SetTitle(LPCTSTR lpszTitle) 
 {
 	//[Attention]
-	//	�h�L�������g�𖼑O�����ĕۑ������ꍇ�Ȃǂ́A
-	//	������ OnUpdateFrameTitle() ���Ăяo���Ȃ��ƁA
-	//	���C���t���[���E�C���h�E�̃^�C�g���o�[���ς��܂���B
+	//	ドキュメントを名前をつけて保存した場合などは、
+	//	ここで OnUpdateFrameTitle() を呼び出さないと、
+	//	メインフレームウインドウのタイトルバーが変わりません。
 	super::SetTitle(lpszTitle);
 	( (CFrameWnd*)AfxGetMainWnd() )->OnUpdateFrameTitle( TRUE ) ;
 }
@@ -181,11 +181,11 @@ void CHidemdiRootDoc::OnFileSave()
 	BOOL	bRv = TRUE ;
 
 	//[Attention]
-	//	���̃R�}���h���b�Z�[�W�̏ꍇ�́A�����I�ɂ�
-	//	SaveModified()���Ă΂�܂���̂ŁA�����I��
-	//	SaveAllModifiedSubDocviews�i�j
-	//	�i���ׂẴT�uDocview�ɑ΂���SaveModofied�����s����j
-	//	�����s���Ă���A�������g�̏��������s���܂�
+	//	このコマンドメッセージの場合は、自動的には
+	//	SaveModified()が呼ばれませんので、明示的に
+	//	SaveAllModifiedSubDocviews（）
+	//	（すべてのサブDocviewに対してSaveModofiedを実行する）
+	//	を実行してから、自分自身の処理を実行します
 	bRv = ((CHidemdiApp*)AfxGetApp())->pRootDoctmpl()
 								->SaveAllModifiedSubDocviews() ;
 
@@ -200,11 +200,11 @@ void CHidemdiRootDoc::OnFileSaveAs()
 	BOOL	bRv = TRUE ;
 
 	//[Attention]
-	//	���̃R�}���h���b�Z�[�W�̏ꍇ�́A�����I�ɂ�
-	//	SaveModified()���Ă΂�܂���̂ŁA�����I��
-	//	SaveAllModifiedSubDocviews�i�j
-	//	�i���ׂẴT�uDocview�ɑ΂���SaveModofied�����s����j
-	//	�����s���Ă���A�������g�̏��������s���܂�
+	//	このコマンドメッセージの場合は、自動的には
+	//	SaveModified()が呼ばれませんので、明示的に
+	//	SaveAllModifiedSubDocviews（）
+	//	（すべてのサブDocviewに対してSaveModofiedを実行する）
+	//	を実行してから、自分自身の処理を実行します
 	bRv = ((CHidemdiApp*)AfxGetApp())->pRootDoctmpl()
 								->SaveAllModifiedSubDocviews() ;
 
@@ -217,14 +217,14 @@ void CHidemdiRootDoc::OnFileSaveAs()
 void CHidemdiRootDoc::OnFileClose() 
 {
 	//attention
-	// RootDoc �ɑ΂��� ID_FILE_CLOSE �́A
-	//	�������Ă͂����܂���
-	//	�i���[�g�h�L�������g���O�ɂȂ��Ă��܂��܂��B
-	//	Hidemdi �A�v���P�[�V�����́A��ɂP��
-	//	���[�g�h�L�������g�I�u�W�F�N�g�������Ȃ��Ă͂Ȃ�܂���)
+	// RootDoc に対する ID_FILE_CLOSE は、
+	//	処理してはいけません
+	//	（ルートドキュメントが０個になってしまいます。
+	//	Hidemdi アプリケーションは、常に１個の
+	//	ルートドキュメントオブジェクトを持たなくてはなりません)
 	//	
-	//	RootDoc �̃��j���[�����
-	//	 FILE_CLOSE ���폜���Ȃ��Ă͂Ȃ�܂���B
+	//	RootDoc のメニューからは
+	//	 FILE_CLOSE を削除しなくてはなりません。
 	ASSERT( 0 ) ;
 	//CHidemdiRootDoc::super::OnFileClose();
 }

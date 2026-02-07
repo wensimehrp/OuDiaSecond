@@ -29,38 +29,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -68,8 +68,8 @@ Copyright (C) 2006-2017 take-okm
 //	$Id: CaDcdGrid_PageSelector.cpp 324 2016-06-12 03:03:55Z okm $
 // ****************************************************************
 */
-#include "DcdGrid\CaDcdGrid_PageSelector.h"
-#include "DcDraw\CaDcdTargetClip.h"
+#include "DcdGrid¥CaDcdGrid_PageSelector.h"
+#include "DcDraw¥CaDcdTargetClip.h"
 using namespace std ;
 
 #ifdef _DEBUG
@@ -85,7 +85,7 @@ namespace DcdGrid{
 //	CaDcdGrid_PageSelector
 // ****************************************************************
 // ********************************
-//	�R���X�g���N�^
+//	コンストラクタ
 // ********************************
 CaDcdGrid_PageSelector::CaDcdGrid_PageSelector( 
 		CDcdGrid*	pCDcdGrid ,
@@ -120,11 +120,11 @@ CaDcdGrid_PageSelector::CaDcdGrid_PageSelector(
 		}
 	}
 	//contiYFixafterColumnNumber , contiXFixafterColumnNumber =
-	//	�v�����^�̈�����s���ꍇ�́A�y�[�W���� FixafterColumnNumber ��
-	//	�ێ����Ă��܂��B
-	//	  �K�v�ȃy�[�W���́A
+	//	プリンタの印刷を行う場合の、ページ毎の FixafterColumnNumber を
+	//	保持しています。
+	//	  必要なページ数は、
 	//	contiYFixafterColumnNumber.size() *  contiXFixafterColumnNumber.size() 
-	//	�ƂȂ�܂��B
+	//	となります。
 
 	pCDcdGrid->setYFixafterColumnNumber( m_iYFixafterColumnNumberSid ) ;
 	pCDcdGrid->setXFixafterColumnNumber( m_iXFixafterColumnNumberSid ) ;
@@ -133,7 +133,7 @@ CaDcdGrid_PageSelector::CaDcdGrid_PageSelector(
 
 
 	
-CaDcdGrid_PageSelector::~CaDcdGrid_PageSelector() 
+CaDcdGrid_PageSelector::‾CaDcdGrid_PageSelector() 
 {
 	m_pCDcdGrid->setXFixafterColumnNumber( m_iXFixafterColumnNumberSid ) ;
 	m_pCDcdGrid->setYFixafterColumnNumber( m_iYFixafterColumnNumberSid ) ;
@@ -144,7 +144,7 @@ CaDcdGrid_PageSelector::~CaDcdGrid_PageSelector()
 //	CaDcdGrid_PageSelector
 // ********************************
 	// ********************************
-	//@name �֘A
+	//@name 関連
 	// ********************************
 CDcdGrid*	CaDcdGrid_PageSelector::getCDcdGrid() 
 {
@@ -157,7 +157,7 @@ IfDcdTarget* CaDcdGrid_PageSelector::getIfDcdTarget()
 }
 	
 	// ********************************
-	//@name ����
+	//@name 属性
 	// ********************************
 void CaDcdGrid_PageSelector::getYFixafterColumnNumber( deque<int>* pvalue ) 
 {
@@ -272,7 +272,7 @@ CaDcdGrid_PageSelector& CaDcdGrid_PageSelector::setPage( int value )
 
 
 	// ********************************
-	//@name ����
+	//@name 操作
 	// ********************************
 bool CaDcdGrid_PageSelector::DcDraw() 
 {
@@ -288,9 +288,9 @@ bool CaDcdGrid_PageSelector::DcDraw()
 		iYColumnNumberTail = m_contiYFixafterColumnNumber[ m_iYPage + 1 ] - 1 ;
 	}
 	//iXColumnNumberTail =
-	//	���S�ɕ\���ł��Ă���ł��E�̗�ԍ�
+	//	完全に表示できている最も右の列番号
 	//iYColumnNUmberTail = 
-	//	���S�ɕ\���ł��Ă���ł����̗�ԍ�
+	//	完全に表示できている最も下の列番号
 	
 	CdDcdZone	zoneXColumnNumberTail ; 
 	CdDcdZone	zoneYColumnNumberTail ; 
@@ -298,8 +298,8 @@ bool CaDcdGrid_PageSelector::DcDraw()
 		m_pCDcdGrid->getXColumnBorderZone( m_pIfDcdTarget , iXColumnNumberTail ) ;
 	zoneYColumnNumberTail = 
 		m_pCDcdGrid->getYColumnBorderZone( m_pIfDcdTarget , iYColumnNumberTail ) ;
-	//zoneXColumnNumberTail = ���S�ɕ\���ł��Ă���ł��E�̗�̌r���ʒu
-	//zoneYColumnNumberTail = ���S�ɕ\���ł��Ă���ł����̗�̌r���ʒu
+	//zoneXColumnNumberTail = 完全に表示できている最も右の列の罫線位置
+	//zoneYColumnNumberTail = 完全に表示できている最も下の列の罫線位置
 	
 	CdDcdZoneXy	zonexyClip = m_pIfDcdTarget->getZone() ;
 	{
@@ -314,7 +314,7 @@ bool CaDcdGrid_PageSelector::DcDraw()
 			zoneYColumnNumberTail.getEndPos() - zoneClip.getPos() ) ;
 		zonexyClip.setY( zoneClip ) ;
 	}
-	//zonexyClip = �N���b�s���O�̈�Ƃ��܂��B
+	//zonexyClip = クリッピング領域とします。
 	
 	CaDcdTargetClip	aCaDcdTargetClip( m_pIfDcdTarget , zonexyClip ) ;
 	aCaDcdTargetClip.validate() ;

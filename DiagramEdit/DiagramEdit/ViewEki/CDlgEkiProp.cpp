@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,53 +35,53 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��:
+(訳:
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h��
+  加えて、特別な例外として、take-okm はこのプログラムのコードを
   "MFC(Microsoft Foundation Class library) Version 9.0"
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
-// CDlgEkiProp.cpp : �C���v�������e�[�V���� �t�@�C��
+// CDlgEkiProp.cpp : インプリメンテーション ファイル
 //
 
 #include "stdafx.h"
 
-#include "..\DiagramEdit.h"
+#include "..¥DiagramEdit.h"
 #include "CDlgEkiProp.h"
 #include "str/stringSplit.h"
-#include "..\ViewEki\CDlgEkiTrack2Prop2.h"
-#include "..\ViewEki\CDlgOuterEkimeiProp.h"
-//#include "..\DedRosenFileData\EditCmd\EditCmd.h"
-#include "Str\strToWstr.h"
-#include "MfcUtil\MfcUtil.h"
-#include "..\resource.h"
+#include "..¥ViewEki¥CDlgEkiTrack2Prop2.h"
+#include "..¥ViewEki¥CDlgOuterEkimeiProp.h"
+//#include "..¥DedRosenFileData¥EditCmd¥EditCmd.h"
+#include "Str¥strToWstr.h"
+#include "MfcUtil¥MfcUtil.h"
+#include "..¥resource.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -92,31 +92,31 @@ static char THIS_FILE[] = __FILE__;
 
 namespace ViewEki {
 
-	const TCHAR nameDiagramTrackOmit[] = _T("�ȗ�");
+	const TCHAR nameDiagramTrackOmit[] = _T("省略");
 
 	// ================================================================
 	//	CDlgEkiProp::CPropEditUiInternal
 	// ================================================================
 		// ================================
-		//@name CPropEditUi - UiData - UiControl �Ԃ̃f�[�^�]��
+		//@name CPropEditUi - UiData - UiControl 間のデータ転送
 		// ================================
 	void CDlgEkiProp::CPropEditUiInternal::UiDataToUi(const UIDATA* pUiData)
 	{
 		CDlgEkiProp* pOuter = (CDlgEkiProp*)((char*)this - offsetof(CDlgEkiProp, m_PropEditUiInternal));
 
 		// --------------------------------
-		//	DDX��p�����AUiControl�ւ̐ݒ�
+		//	DDXを用いた、UiControlへの設定
 		// --------------------------------
 		{
-			// �w�����`��
+			// 駅時刻形式
 			{
 				pOuter->m_iRADIO_Jikokukeisiki = pUiData->iEkijikokukeisiki;
 			}
-			// �w�K�� 
+			// 駅規模 
 			{
 				pOuter->m_iRADIO_Ekikibo = pUiData->iEkikibo;
 			}
-			// ���w�܂ł̋��� 
+			// 次駅までの距離 
 			{
 				pOuter->m_iEDITNextEkiDistance = pUiData->iNextEkiDistance;
 			}
@@ -124,36 +124,36 @@ namespace ViewEki {
 			pOuter->UpdateData(FALSE);
 		}
 		// --------------------------------
-		//	DDX��p���Ȃ��AUiControl�ւ̐ݒ�
-		//	�����́ADDX�ɂ��l�ݒ�̌��
-		//	�s��Ȃ��Ă͂Ȃ�܂���B
+		//	DDXを用いない、UiControlへの設定
+		//	これらは、DDXによる値設定の後で
+		//	行わなくてはなりません。
 		// --------------------------------
-		// �w�� 
+		// 駅名 
 		{
 			CEdit* pEdit = (CEdit*)pOuter->GetDlgItem(IDC_EDIT_Ekimei);
 			pEdit->SetWindowText(pUiData->strEkimei.c_str());
 			pEdit->SetSel(0, -1);
 		}
 
-		//�_�C���O������ԏ��\���i����j
+		//ダイヤグラム列車情報表示（下り）
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_DiagramRessyajouhouHyoujiKudari);
 			pComboBox->SetCurSel(pUiData->iDiagramRessyajouhouHyoujiKudari);
 		}
-		// �_�C���O������ԏ��\���i���j 
+		// ダイヤグラム列車情報表示（上り） 
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_DiagramRessyajouhouHyoujiNobori);
 			pComboBox->SetCurSel(pUiData->iDiagramRessyajouhouHyoujiNobori);
 		}
 
-		//[�w�������w�����`���Ő��K��]�̐ݒ�ł��B
+		//[駅時刻を駅時刻形式で正規化]の設定です。
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_AdjustByEkijikokukeisiki);
 			int nCheck = (pUiData->bAdjustByEkijikokukeisiki ? BST_CHECKED : BST_UNCHECKED);
 			pButton->SetCheck(nCheck);
 		}
 
-		//����w�ݒ�
+		//分岐駅設定
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_Brunch);
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_BrunchCoreEkiIndex);
@@ -202,7 +202,7 @@ namespace ViewEki {
 				pStatic->EnableWindow(false);
 			}
 		}
-		//����ݒ�
+		//環状線設定
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_Loop);
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_LoopOriginEkiIndex);
@@ -258,61 +258,61 @@ namespace ViewEki {
 			CButton* pButtonO = (CButton*)pOuter->GetDlgItem(IDC_CHECK_BrunchLoopOpposite);
 			pButtonO->EnableWindow(false);
 		}
-		//���莞���\�r���[�Ԑ��\��
+		//下り時刻表ビュー番線表示
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouTrackDisplayKudari);
 			int nCheck = BST_INDETERMINATE;
 			switch (pUiData->iJikokuhyouTrackDisplayKudari)
 			{
-			case 1: // �Ԑ��\������
+			case 1: // 番線表示あり
 				nCheck = BST_CHECKED;
 				break;
-			case 0: //�Ȃ�
+			case 0: //なし
 				nCheck = BST_UNCHECKED;
 				break;
 			}
 			pButton->SetCheck(nCheck);
 			pButton->EnableWindow(pUiData->bJikokuhyouTrackDisplayKudariEnable);
 		}
-		//��莞���\�r���[�Ԑ��\��
+		//上り時刻表ビュー番線表示
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouTrackDisplayNobori);
 			int nCheck = BST_INDETERMINATE;
 			switch (pUiData->iJikokuhyouTrackDisplayNobori)
 			{
-			case 1: // �Ԑ��\������
+			case 1: // 番線表示あり
 				nCheck = BST_CHECKED;
 				break;
-			case 0: //�Ȃ�
+			case 0: //なし
 				nCheck = BST_UNCHECKED;
 				break;
 			}
 			pButton->SetCheck(nCheck);
 			pButton->EnableWindow(pUiData->bJikokuhyouTrackDisplayNoboriEnable);
 		}
-		//�_�C���O�����r���[�Ԑ��\��
+		//ダイヤグラムビュー番線表示
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_DiagramTrackDisplay);
 			int nCheck = BST_INDETERMINATE;
 			switch (pUiData->iDiagramTrackDisplay)
 			{
-			case 1: // �Ԑ��\������
+			case 1: // 番線表示あり
 				nCheck = BST_CHECKED;
 				break;
-			case 0: //�Ȃ�
+			case 0: //なし
 				nCheck = BST_UNCHECKED;
 				break;
 			}
 			pButton->SetCheck(nCheck);
 			pButton->EnableWindow(pUiData->bDiagramTrackDisplayEnable);
 		}
-		// �w������
+		// 駅名略称
 		{
 			CEdit* pEdit = (CEdit*)pOuter->GetDlgItem(IDC_EDIT_EkimeiJikokuhyouRyaku);
 			pEdit->SetWindowText(pUiData->strEkimeiJikokuhyouRyaku.c_str());
 			pEdit->SetSel(0, -1);
 		}
-		// �w������(�^�p�ꗗ)
+		// 駅名略称(運用一覧)
 		{
 			CEdit* pEdit = (CEdit*)pOuter->GetDlgItem(IDC_EDIT_EkimeiDiagramRyaku);
 			pEdit->SetWindowText(pUiData->strEkimeiDiagramRyaku.c_str());
@@ -335,22 +335,22 @@ namespace ViewEki {
 					if (pUiData->sEkiTrack2[idx].iMainTrack == 0)
 					{
 						pListCtrl->SetItemText(idx, 3, (LPCTSTR)MfcUtil::LoadCString(IDS_WORD_SubMain));
-						//pListCtrl->SetItemText(idx, 3, _T("���{��/����"));
+						//pListCtrl->SetItemText(idx, 3, _T("副本線/側線"));
 					}
 					else if (pUiData->sEkiTrack2[idx].iMainTrack == 1)
 					{
 						pListCtrl->SetItemText(idx, 3, (LPCTSTR)MfcUtil::LoadCString(IDS_WORD_DownMain));
-						//pListCtrl->SetItemText(idx, 3, _T("�����{��"));
+						//pListCtrl->SetItemText(idx, 3, _T("下り主本線"));
 					}
 					else if (pUiData->sEkiTrack2[idx].iMainTrack == 2)
 					{
 						pListCtrl->SetItemText(idx, 3, (LPCTSTR)MfcUtil::LoadCString(IDS_WORD_UpMain));
-						//pListCtrl->SetItemText(idx, 3, _T("����{��"));
+						//pListCtrl->SetItemText(idx, 3, _T("上り主本線"));
 					}
 					else if (pUiData->sEkiTrack2[idx].iMainTrack == 3)
 					{
 						pListCtrl->SetItemText(idx, 3, (LPCTSTR)MfcUtil::LoadCString(IDS_WORD_DownUpMain));
-						//pListCtrl->SetItemText(idx, 3, _T("�㉺��{��"));
+						//pListCtrl->SetItemText(idx, 3, _T("上下主本線"));
 					}
 
 					if ((int)pUiData->bDiagramTrackOmit.size() > idx && pUiData->bDiagramTrackOmit[idx])
@@ -371,22 +371,22 @@ namespace ViewEki {
 					if (pUiData->sEkiTrack2[idx].iMainTrack == 0)
 					{
 						pListCtrl->SetItemText(idxList, 3, (LPCTSTR)MfcUtil::LoadCString(IDS_WORD_SubMain));
-						//pListCtrl->SetItemText(idxList, 3, _T("���{��/����"));
+						//pListCtrl->SetItemText(idxList, 3, _T("副本線/側線"));
 					}
 					else if (pUiData->sEkiTrack2[idx].iMainTrack == 1)
 					{
 						pListCtrl->SetItemText(idxList, 3, (LPCTSTR)MfcUtil::LoadCString(IDS_WORD_DownMain));
-						//pListCtrl->SetItemText(idxList, 3, _T("�����{��"));
+						//pListCtrl->SetItemText(idxList, 3, _T("下り主本線"));
 					}
 					else if (pUiData->sEkiTrack2[idx].iMainTrack == 2)
 					{
 						pListCtrl->SetItemText(idxList, 3, (LPCTSTR)MfcUtil::LoadCString(IDS_WORD_UpMain));
-						//pListCtrl->SetItemText(idxList, 3, _T("����{��"));
+						//pListCtrl->SetItemText(idxList, 3, _T("上り主本線"));
 					}
 					else if (pUiData->sEkiTrack2[idx].iMainTrack == 3)
 					{
 						pListCtrl->SetItemText(idxList, 3, (LPCTSTR)MfcUtil::LoadCString(IDS_WORD_DownUpMain));
-						//pListCtrl->SetItemText(idxList, 3, _T("�㉺��{��"));
+						//pListCtrl->SetItemText(idxList, 3, _T("上下主本線"));
 					}
 
 					if ((int)pUiData->bDiagramTrackOmit.size() > idx && pUiData->bDiagramTrackOmit[idx])
@@ -432,23 +432,23 @@ namespace ViewEki {
 				pListCtrl->DeleteItem(idx);
 			}
 		}
-		//�Ԑ��\���ȗ��ݒ�
+		//番線表示省略設定
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouTrackOmit);
 			int nCheck = BST_INDETERMINATE;
 			switch (pUiData->iJikokuhyouTrackOmit)
 			{
-			case 1: // �Ԑ��\���ȗ�
+			case 1: // 番線表示省略
 				nCheck = BST_CHECKED;
 				break;
-			case 0: //�Ȃ�
+			case 0: //なし
 				nCheck = BST_UNCHECKED;
 				break;
 			}
 			pButton->SetCheck(nCheck);
 			pButton->EnableWindow(pUiData->bJikokuhyouTrackOmitEnable);
 		}
-		//��ƕ\�����ݒ�i�N�_���j
+		//作業表示欄設定（起点側）
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouOperationOrigin);
 			pComboBox->SetCurSel(pUiData->iJikokuhyouOperationOrigin);
@@ -466,7 +466,7 @@ namespace ViewEki {
 			pButton2->SetCheck(nCheck2);
 			pButton2->EnableWindow(pUiData->bJikokuhyouOperationEnable);
 		}
-		//��ƕ\�����ݒ�i�I�_���j
+		//作業表示欄設定（終点側）
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouOperationTerminal);
 			pComboBox->SetCurSel(pUiData->iJikokuhyouOperationTerminal);
@@ -485,7 +485,7 @@ namespace ViewEki {
 			pButton2->EnableWindow(pUiData->bJikokuhyouOperationEnable);
 		}
 
-		//���莞���\�r���[�������\��
+		//下り時刻表ビュー着時刻表示
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouChakuJikokuDisplayKudari);
 			int nCheck =
@@ -494,7 +494,7 @@ namespace ViewEki {
 			pButton->EnableWindow(pUiData->bJikokuhyouChakuJikokuDisplayKudariEnable);
 		}
 
-		//��莞���\�r���[�������\��
+		//上り時刻表ビュー着時刻表示
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouChakuJikokuDisplayNobori);
 			int nCheck =
@@ -503,7 +503,7 @@ namespace ViewEki {
 			pButton->EnableWindow(pUiData->bJikokuhyouChakuJikokuDisplayNoboriEnable);
 		}
 
-		//���莞���\�r���[�������\��
+		//下り時刻表ビュー発時刻表示
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouHatsuJikokuDisplayKudari);
 			int nCheck =
@@ -512,7 +512,7 @@ namespace ViewEki {
 			pButton->EnableWindow(pUiData->bJikokuhyouHatsuJikokuDisplayKudariEnable);
 		}
 
-		//��莞���\�r���[�������\��
+		//上り時刻表ビュー発時刻表示
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouHatsuJikokuDisplayNobori);
 			int nCheck =
@@ -521,21 +521,21 @@ namespace ViewEki {
 			pButton->EnableWindow(pUiData->bJikokuhyouHatsuJikokuDisplayNoboriEnable);
 		}
 
-		//���莞���\�r���[��Ԕԍ��\��
+		//下り時刻表ビュー列車番号表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyabangouDisplayKudari);
 			pComboBox->SetCurSel(pUiData->iJikokuhyouRessyabangouDisplayKudari);
 			pComboBox->EnableWindow(pUiData->bJikokuhyouSyubetsuChangeDisplayKudariEnable);
 		}
 
-		//��莞���\�r���[��Ԕԍ��\��
+		//上り時刻表ビュー列車番号表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyabangouDisplayNobori);
 			pComboBox->SetCurSel(pUiData->iJikokuhyouRessyabangouDisplayNobori);
 			pComboBox->EnableWindow(pUiData->bJikokuhyouSyubetsuChangeDisplayNoboriEnable);
 		}
 
-		//���莞���\�r���[�^�p�ԍ��\��
+		//下り時刻表ビュー運用番号表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouOperationNumberDisplayKudari);
 			pComboBox->SetCurSel(pUiData->iJikokuhyouOperationNumberDisplayKudari);
@@ -546,7 +546,7 @@ namespace ViewEki {
 			pComboBox2->EnableWindow(pUiData->bJikokuhyouSyubetsuChangeDisplayKudariEnable);
 		}
 
-		//��莞���\�r���[�^�p�ԍ��\��
+		//上り時刻表ビュー運用番号表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouOperationNumberDisplayNobori);
 			pComboBox->SetCurSel(pUiData->iJikokuhyouOperationNumberDisplayNobori);
@@ -557,35 +557,35 @@ namespace ViewEki {
 			pComboBox2->EnableWindow(pUiData->bJikokuhyouSyubetsuChangeDisplayNoboriEnable);
 		}
 
-		//���莞���\�r���[��Ԏ�ʕ\��
+		//下り時刻表ビュー列車種別表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyaSyubetsuDisplayKudari);
 			pComboBox->SetCurSel(pUiData->iJikokuhyouRessyaSyubetsuDisplayKudari);
 			pComboBox->EnableWindow(pUiData->bJikokuhyouSyubetsuChangeDisplayKudariEnable);
 		}
 
-		//��莞���\�r���[��Ԏ�ʕ\��
+		//上り時刻表ビュー列車種別表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyaSyubetsuDisplayNobori);
 			pComboBox->SetCurSel(pUiData->iJikokuhyouRessyaSyubetsuDisplayNobori);
 			pComboBox->EnableWindow(pUiData->bJikokuhyouSyubetsuChangeDisplayNoboriEnable);
 		}
 
-		//���莞���\�r���[��Ԗ��\��
+		//下り時刻表ビュー列車名表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyameiDisplayKudari);
 			pComboBox->SetCurSel(pUiData->iJikokuhyouRessyameiDisplayKudari);
 			pComboBox->EnableWindow(pUiData->bJikokuhyouSyubetsuChangeDisplayKudariEnable);
 		}
 
-		//��莞���\�r���[��Ԗ��\��
+		//上り時刻表ビュー列車名表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyameiDisplayNobori);
 			pComboBox->SetCurSel(pUiData->iJikokuhyouRessyameiDisplayNobori);
 			pComboBox->EnableWindow(pUiData->bJikokuhyouSyubetsuChangeDisplayNoboriEnable);
 		}
 
-		//����J�X�^�}�C�Y�����\�r���[�ł̘H���O�E�O��Ԏn���w�\��
+		//下りカスタマイズ時刻表ビューでの路線外・前列車始発駅表示
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouOuterSihatsuDisplayKudari);
 			int nCheck =
@@ -594,7 +594,7 @@ namespace ViewEki {
 			pButton->EnableWindow(pUiData->bJikokuhyouOuterSihatsuDisplayKudariEnable);
 		}
 
-		//����J�X�^�}�C�Y�����\�r���[�ł̘H���O�E����ԏI���w�\��
+		//下りカスタマイズ時刻表ビューでの路線外・次列車終着駅表示
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouOuterShuchakuDisplayKudari);
 			int nCheck =
@@ -603,7 +603,7 @@ namespace ViewEki {
 			pButton->EnableWindow(pUiData->bJikokuhyouOuterShuchakuDisplayKudariEnable);
 		}
 
-		//���J�X�^�}�C�Y�����\�r���[�ł̘H���O�E�O��Ԏn���w�\��
+		//上りカスタマイズ時刻表ビューでの路線外・前列車始発駅表示
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouOuterSihatsuDisplayNobori);
 			int nCheck =
@@ -612,7 +612,7 @@ namespace ViewEki {
 			pButton->EnableWindow(pUiData->bJikokuhyouOuterSihatsuDisplayNoboriEnable);
 		}
 
-		//���J�X�^�}�C�Y�����\�r���[�ł̘H���O�E����ԏI���w�\��
+		//上りカスタマイズ時刻表ビューでの路線外・次列車終着駅表示
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouOuterShuchakuDisplayNobori);
 			int nCheck =
@@ -621,23 +621,23 @@ namespace ViewEki {
 			pButton->EnableWindow(pUiData->bJikokuhyouOuterShuchakuDisplayNoboriEnable);
 		}
 
-		//�_�C���O�����w�i�F
+		//ダイヤグラム背景色
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_DiagramColorNextEki);
 			pComboBox->SetCurSel(pUiData->iDiagramColorNextEki);
 		}
 
-		//���_�C���ŕ\�����邩�ۂ� 
+		//箱ダイヤで表示するか否か 
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_OperationTableDisplayJikoku);
 			pButton->EnableWindow(pUiData->bOperationTableDisplayJikokuEnable);
 			int nCheck = BST_INDETERMINATE;
 			switch (pUiData->bOperationTableDisplayJikoku)
 			{
-			case true: // �\������
+			case true: // 表示あり
 				nCheck = BST_CHECKED;
 				break;
-			case false: //�Ȃ�
+			case false: //なし
 				nCheck = BST_UNCHECKED;
 				break;
 			}
@@ -651,34 +651,34 @@ namespace ViewEki {
 		int iRv = 0;
 
 		// --------------------------------
-		//	DDX��p�����AUiControl�ւ̐ݒ�
+		//	DDXを用いた、UiControlへの設定
 		// --------------------------------
 		if (!pOuter->UpdateData(TRUE))
 		{
-			iRv = -1;	//	UpdateData �ŃG���[���������܂����B
+			iRv = -1;	//	UpdateData でエラーが発生しました。
 		}
 
 		if (iRv >= 0)
 		{
-			// �w�����`��
+			// 駅時刻形式
 			{
 				pUiData->iEkijikokukeisiki = pOuter->m_iRADIO_Jikokukeisiki;
 			}
-			// �w�K�� 
+			// 駅規模 
 			{
 				pUiData->iEkikibo = pOuter->m_iRADIO_Ekikibo;
 			}
-			// ���w�܂ł̋��� 
+			// 次駅までの距離 
 			{
 				pUiData->iNextEkiDistance = pOuter->m_iEDITNextEkiDistance;
 			}
 		}
 		// --------------------------------
-		//	DDX��p���Ȃ��AUiControl�ւ̐ݒ�
-		//	�����́ADDX�ɂ��l�ݒ�̌��
-		//	�s��Ȃ��Ă͂Ȃ�܂���B
+		//	DDXを用いない、UiControlへの設定
+		//	これらは、DDXによる値設定の後で
+		//	行わなくてはなりません。
 		// --------------------------------
-		// �w�� 
+		// 駅名 
 		{
 			CEdit* pEdit = (CEdit*)pOuter->GetDlgItem(IDC_EDIT_Ekimei);
 			CString aString;
@@ -686,7 +686,7 @@ namespace ViewEki {
 			pUiData->strEkimei = (LPCTSTR)aString;
 		}
 
-		//�_�C���O������ԏ��\���i����j
+		//ダイヤグラム列車情報表示（下り）
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_DiagramRessyajouhouHyoujiKudari);
 			int iSel = pComboBox->GetCurSel();
@@ -695,7 +695,7 @@ namespace ViewEki {
 				pUiData->iDiagramRessyajouhouHyoujiKudari = iSel;
 			}
 		}
-		// �_�C���O������ԏ��\���i���j 
+		// ダイヤグラム列車情報表示（上り） 
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_DiagramRessyajouhouHyoujiNobori);
 			int iSel = pComboBox->GetCurSel();
@@ -705,7 +705,7 @@ namespace ViewEki {
 			}
 		}
 
-		//[�w�������w�����`���Ő��K��]�̐ݒ�ł��B
+		//[駅時刻を駅時刻形式で正規化]の設定です。
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_AdjustByEkijikokukeisiki);
 			int nCheck = pButton->GetCheck();
@@ -719,7 +719,7 @@ namespace ViewEki {
 				break;
 			}
 		}
-		//����w�ݒ�
+		//分岐駅設定
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_Brunch);
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_BrunchCoreEkiIndex);
@@ -760,7 +760,7 @@ namespace ViewEki {
 				}
 			}
 		}
-		//����ݒ�
+		//環状線設定
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_Loop);
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_LoopOriginEkiIndex);
@@ -801,7 +801,7 @@ namespace ViewEki {
 				}
 			}
 		}
-		//���莞���\�r���[�Ԑ��\��
+		//下り時刻表ビュー番線表示
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouTrackDisplayKudari);
 			int nCheck = pButton->GetCheck();
@@ -815,15 +815,15 @@ namespace ViewEki {
 				break;
 			}
 
-			//	�`�F�b�N�{�b�N�X�́A���ԏ�Ԃւ̕ύX��F�߂܂���B
-			//	���[�U�[�ɂ���Ē��ԏ�Ԃ֕ύX���ꂽ�ꍇ�́A
-			//	�`�F�b�N�Ȃ���ԂɕύX���܂��B
+			//	チェックボックスは、中間状態への変更を認めません。
+			//	ユーザーによって中間状態へ変更された場合は、
+			//	チェックなし状態に変更します。
 			if (pUiData->iJikokuhyouTrackDisplayKudari != -1 && nCheck == BST_INDETERMINATE)
 			{
 				pUiData->iJikokuhyouTrackDisplayKudari = 0;
 			}
 		}
-		//��莞���\�r���[�Ԑ��\��
+		//上り時刻表ビュー番線表示
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouTrackDisplayNobori);
 			int nCheck = pButton->GetCheck();
@@ -837,15 +837,15 @@ namespace ViewEki {
 				break;
 			}
 
-			//	�`�F�b�N�{�b�N�X�́A���ԏ�Ԃւ̕ύX��F�߂܂���B
-			//	���[�U�[�ɂ���Ē��ԏ�Ԃ֕ύX���ꂽ�ꍇ�́A
-			//	�`�F�b�N�Ȃ���ԂɕύX���܂��B
+			//	チェックボックスは、中間状態への変更を認めません。
+			//	ユーザーによって中間状態へ変更された場合は、
+			//	チェックなし状態に変更します。
 			if (pUiData->iJikokuhyouTrackDisplayNobori != -1 && nCheck == BST_INDETERMINATE)
 			{
 				pUiData->iJikokuhyouTrackDisplayNobori = 0;
 			}
 		}
-		//�_�C���O�����r���[�Ԑ��\��
+		//ダイヤグラムビュー番線表示
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_DiagramTrackDisplay);
 			int nCheck = pButton->GetCheck();
@@ -859,22 +859,22 @@ namespace ViewEki {
 				break;
 			}
 
-			//	�`�F�b�N�{�b�N�X�́A���ԏ�Ԃւ̕ύX��F�߂܂���B
-			//	���[�U�[�ɂ���Ē��ԏ�Ԃ֕ύX���ꂽ�ꍇ�́A
-			//	�`�F�b�N�Ȃ���ԂɕύX���܂��B
+			//	チェックボックスは、中間状態への変更を認めません。
+			//	ユーザーによって中間状態へ変更された場合は、
+			//	チェックなし状態に変更します。
 			if (pUiData->iDiagramTrackDisplay != -1 && nCheck == BST_INDETERMINATE)
 			{
 				pUiData->iDiagramTrackDisplay = 0;
 			}
 		}
-		// �w�� 
+		// 駅名 
 		{
 			CEdit* pEdit = (CEdit*)pOuter->GetDlgItem(IDC_EDIT_EkimeiJikokuhyouRyaku);
 			CString aString;
 			pEdit->GetWindowText(aString);
 			pUiData->strEkimeiJikokuhyouRyaku = (LPCTSTR)aString;
 		}
-		// �w�� 
+		// 駅名 
 		{
 			CEdit* pEdit = (CEdit*)pOuter->GetDlgItem(IDC_EDIT_EkimeiDiagramRyaku);
 			CString aString;
@@ -893,22 +893,22 @@ namespace ViewEki {
 				aEkiTrack2.strTrackRyakusyou = pListCtrl->GetItemText(idx, 1);
 				aEkiTrack2.strTrackNoboriRyakusyou = pListCtrl->GetItemText(idx, 2);
 				CString strMainTrack = pListCtrl->GetItemText(idx, 3);
-				//if (strMainTrack == _T("���{��/����"))
+				//if (strMainTrack == _T("副本線/側線"))
 				if (strMainTrack == (LPCTSTR)MfcUtil::LoadCString(IDS_WORD_SubMain))
 				{
 					aEkiTrack2.iMainTrack = 0;
 				}
-				//else if (strMainTrack == _T("�����{��"))
+				//else if (strMainTrack == _T("下り主本線"))
 				else if (strMainTrack == (LPCTSTR)MfcUtil::LoadCString(IDS_WORD_DownMain))
 				{
 					aEkiTrack2.iMainTrack = 1;
 				}
-				//else if (strMainTrack == _T("����{��"))
+				//else if (strMainTrack == _T("上り主本線"))
 				else if (strMainTrack == (LPCTSTR)MfcUtil::LoadCString(IDS_WORD_UpMain))
 				{
 					aEkiTrack2.iMainTrack = 2;
 				}
-				//else if (strMainTrack == _T("�㉺��{��"))
+				//else if (strMainTrack == _T("上下主本線"))
 				else if (strMainTrack == (LPCTSTR)MfcUtil::LoadCString(IDS_WORD_DownUpMain))
 				{
 					aEkiTrack2.iMainTrack = 3;
@@ -963,7 +963,7 @@ namespace ViewEki {
 					pUiData->sOuterTerminalEkimei.end());
 			}
 		}
-		//�Ԑ��\���ȗ��ݒ�
+		//番線表示省略設定
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouTrackOmit);
 			int nCheck = pButton->GetCheck();
@@ -977,16 +977,16 @@ namespace ViewEki {
 				break;
 			}
 
-			//	�`�F�b�N�{�b�N�X�́A���ԏ�Ԃւ̕ύX��F�߂܂���B
-			//	���[�U�[�ɂ���Ē��ԏ�Ԃ֕ύX���ꂽ�ꍇ�́A
-			//	�`�F�b�N�Ȃ���ԂɕύX���܂��B
+			//	チェックボックスは、中間状態への変更を認めません。
+			//	ユーザーによって中間状態へ変更された場合は、
+			//	チェックなし状態に変更します。
 			if (pUiData->iJikokuhyouTrackOmit != -1 && nCheck == BST_INDETERMINATE)
 			{
 				pUiData->iJikokuhyouTrackOmit = 0;
 			}
 		}
 
-		//��ƕ\�����ݒ�i�N�_���j
+		//作業表示欄設定（起点側）
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouOperationOrigin);
 			int iSel = pComboBox->GetCurSel();
@@ -1001,7 +1001,7 @@ namespace ViewEki {
 			CButton* pButton2 = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouOperationOriginDownAfterUpBefore);
 			pUiData->bJikokuhyouOperationOriginDownAfterUpBefore = pButton2->GetCheck() == BST_CHECKED;
 		}
-		//��ƕ\�����ݒ�i�I�_���j
+		//作業表示欄設定（終点側）
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouOperationTerminal);
 			int iSel = pComboBox->GetCurSel();
@@ -1017,31 +1017,31 @@ namespace ViewEki {
 			pUiData->bJikokuhyouOperationTerminalDownAfterUpBefore = pButton2->GetCheck() == BST_CHECKED;
 		}
 
-		//���莞���\�r���[�������\��
+		//下り時刻表ビュー着時刻表示
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouChakuJikokuDisplayKudari);
 			pUiData->bJikokuhyouChakuJikokuDisplayKudari = pButton->GetCheck() == BST_CHECKED;
 		}
 
-		//��莞���\�r���[�������\��
+		//上り時刻表ビュー着時刻表示
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouChakuJikokuDisplayNobori);
 			pUiData->bJikokuhyouChakuJikokuDisplayNobori = pButton->GetCheck() == BST_CHECKED;
 		}
 
-		//���莞���\�r���[�������\��
+		//下り時刻表ビュー発時刻表示
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouHatsuJikokuDisplayKudari);
 			pUiData->bJikokuhyouHatsuJikokuDisplayKudari = pButton->GetCheck() == BST_CHECKED;
 		}
 
-		//��莞���\�r���[�������\��
+		//上り時刻表ビュー発時刻表示
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouHatsuJikokuDisplayNobori);
 			pUiData->bJikokuhyouHatsuJikokuDisplayNobori = pButton->GetCheck() == BST_CHECKED;
 		}
 
-		//���莞���\�r���[��Ԕԍ��\��
+		//下り時刻表ビュー列車番号表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyabangouDisplayKudari);
 			int iSel = pComboBox->GetCurSel();
@@ -1050,7 +1050,7 @@ namespace ViewEki {
 				pUiData->iJikokuhyouRessyabangouDisplayKudari = iSel;
 			}
 		}
-		//��莞���\�r���[��Ԕԍ��\��
+		//上り時刻表ビュー列車番号表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyabangouDisplayNobori);
 			int iSel = pComboBox->GetCurSel();
@@ -1060,7 +1060,7 @@ namespace ViewEki {
 			}
 		}
 
-		//���莞���\�r���[�^�p�ԍ��\��
+		//下り時刻表ビュー運用番号表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouOperationNumberDisplayKudari);
 			int iSel = pComboBox->GetCurSel();
@@ -1076,7 +1076,7 @@ namespace ViewEki {
 				pUiData->iJikokuhyouOperationNumberDisplayRowsKudari = iSel2;
 			}
 		}
-		//��莞���\�r���[�^�p�ԍ��\��
+		//上り時刻表ビュー運用番号表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouOperationNumberDisplayNobori);
 			int iSel = pComboBox->GetCurSel();
@@ -1093,7 +1093,7 @@ namespace ViewEki {
 			}
 		}
 
-		//���莞���\�r���[��Ԏ�ʕ\��
+		//下り時刻表ビュー列車種別表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyaSyubetsuDisplayKudari);
 			int iSel = pComboBox->GetCurSel();
@@ -1102,7 +1102,7 @@ namespace ViewEki {
 				pUiData->iJikokuhyouRessyaSyubetsuDisplayKudari = iSel;
 			}
 		}
-		//��莞���\�r���[��Ԏ�ʕ\��
+		//上り時刻表ビュー列車種別表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyaSyubetsuDisplayNobori);
 			int iSel = pComboBox->GetCurSel();
@@ -1112,7 +1112,7 @@ namespace ViewEki {
 			}
 		}
 
-		//���莞���\�r���[��Ԗ��E�����\��
+		//下り時刻表ビュー列車名・号数表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyameiDisplayKudari);
 			int iSel = pComboBox->GetCurSel();
@@ -1121,7 +1121,7 @@ namespace ViewEki {
 				pUiData->iJikokuhyouRessyameiDisplayKudari = iSel;
 			}
 		}
-		//��莞���\�r���[��Ԗ��E�����\��
+		//上り時刻表ビュー列車名・号数表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyameiDisplayNobori);
 			int iSel = pComboBox->GetCurSel();
@@ -1131,31 +1131,31 @@ namespace ViewEki {
 			}
 		}
 
-		//����J�X�^�}�C�Y�����\�r���[�ł̘H���O�E�O��Ԏn���w�\��
+		//下りカスタマイズ時刻表ビューでの路線外・前列車始発駅表示
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouOuterSihatsuDisplayKudari);
 			pUiData->bJikokuhyouOuterSihatsuDisplayKudari = pButton->GetCheck() == BST_CHECKED;
 		}
 
-		//����J�X�^�}�C�Y�����\�r���[�ł̘H���O�E����ԏI���w�\��
+		//下りカスタマイズ時刻表ビューでの路線外・次列車終着駅表示
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouOuterShuchakuDisplayKudari);
 			pUiData->bJikokuhyouOuterShuchakuDisplayKudari = pButton->GetCheck() == BST_CHECKED;
 		}
 
-		//���J�X�^�}�C�Y�����\�r���[�ł̘H���O�E�O��Ԏn���w�\��
+		//上りカスタマイズ時刻表ビューでの路線外・前列車始発駅表示
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouOuterSihatsuDisplayNobori);
 			pUiData->bJikokuhyouOuterSihatsuDisplayNobori = pButton->GetCheck() == BST_CHECKED;
 		}
 
-		//���J�X�^�}�C�Y�����\�r���[�ł̘H���O�E����ԏI���w�\��
+		//上りカスタマイズ時刻表ビューでの路線外・次列車終着駅表示
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouOuterShuchakuDisplayNobori);
 			pUiData->bJikokuhyouOuterShuchakuDisplayNobori = pButton->GetCheck() == BST_CHECKED;
 		}
 
-		//�_�C���O�����w�i�F
+		//ダイヤグラム背景色
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_DiagramColorNextEki);
 			int iSel = pComboBox->GetCurSel();
@@ -1164,7 +1164,7 @@ namespace ViewEki {
 				pUiData->iDiagramColorNextEki = iSel;
 			}
 		}
-		//���_�C���ŕ\�����邩�ۂ�
+		//箱ダイヤで表示するか否か
 		{
 			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_OperationTableDisplayJikoku);
 			int nCheck = pButton->GetCheck();
@@ -1181,9 +1181,9 @@ namespace ViewEki {
 				break;
 			}
 
-			//	�`�F�b�N�{�b�N�X�́A���ԏ�Ԃւ̕ύX��F�߂܂���B
-			//	���[�U�[�ɂ���Ē��ԏ�Ԃ֕ύX���ꂽ�ꍇ�́A
-			//	�`�F�b�N�Ȃ���ԂɕύX���܂��B
+			//	チェックボックスは、中間状態への変更を認めません。
+			//	ユーザーによって中間状態へ変更された場合は、
+			//	チェックなし状態に変更します。
 			//if (pUiData->iOperationTableDisplayJikoku != -1 && nCheck == BST_INDETERMINATE)
 			//{
 			//	pUiData->iOperationTableDisplayJikoku = false;
@@ -1255,14 +1255,14 @@ namespace ViewEki {
 		CDlgEkiProp* pOuter = (CDlgEkiProp*)((char*)this - offsetof(CDlgEkiProp, m_PropEditUiInternal));
 		CWnd* pControl = NULL;
 
-		// �w�����`��
+		// 駅時刻形式
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iEkijikokukeisiki))
 			{
 				pControl = pOuter->GetDlgItem(IDC_RADIO_Jikokukeisiki);
 			}
 		}
-		// �w�K�� 
+		// 駅規模 
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iEkikibo))
 			{
@@ -1270,7 +1270,7 @@ namespace ViewEki {
 			}
 		}
 		// --------------------------------
-		// �w�� 
+		// 駅名 
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, strEkimei))
 			{
@@ -1278,14 +1278,14 @@ namespace ViewEki {
 			}
 		}
 
-		//�_�C���O������ԏ��\���i����j
+		//ダイヤグラム列車情報表示（下り）
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iDiagramRessyajouhouHyoujiKudari))
 			{
 				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_DiagramRessyajouhouHyoujiKudari);
 			}
 		}
-		// �_�C���O������ԏ��\���i���j 
+		// ダイヤグラム列車情報表示（上り） 
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iDiagramRessyajouhouHyoujiNobori))
 			{
@@ -1293,7 +1293,7 @@ namespace ViewEki {
 			}
 		}
 
-		//[�w�������w�����`���Ő��K��]�̐ݒ�ł��B
+		//[駅時刻を駅時刻形式で正規化]の設定です。
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, bAdjustByEkijikokukeisiki))
 			{
@@ -1301,14 +1301,14 @@ namespace ViewEki {
 			}
 		}
 
-		//����w�ݒ�
+		//分岐駅設定
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, bBrunch))
 			{
 				pControl = (CButton*)pOuter->GetDlgItem(IDC_CHECK_Brunch);
 			}
 		}
-		// ����w�ݒ��wIndex
+		// 分岐駅設定基幹駅Index
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iBrunchCoreEkiIndex))
 			{
@@ -1316,14 +1316,14 @@ namespace ViewEki {
 			}
 		}
 
-		//����ݒ�
+		//環状線設定
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, bLoop))
 			{
 				pControl = (CButton*)pOuter->GetDlgItem(IDC_CHECK_Loop);
 			}
 		}
-		// ����ݒ�I�_�wIndex
+		// 環状線設定終点駅Index
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iLoopOriginEkiIndex))
 			{
@@ -1331,14 +1331,14 @@ namespace ViewEki {
 			}
 		}
 
-		//���莞���\�r���[�Ԑ��\��
+		//下り時刻表ビュー番線表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouTrackDisplayKudari))
 			{
 				pControl = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouTrackDisplayKudari);
 			}
 		}
-		//��莞���\�r���[�Ԑ��\��
+		//上り時刻表ビュー番線表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouTrackDisplayNobori))
 			{
@@ -1346,49 +1346,49 @@ namespace ViewEki {
 			}
 		}
 
-		//�_�C���O�����r���[�Ԑ��\��
+		//ダイヤグラムビュー番線表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iDiagramTrackDisplay))
 			{
 				pControl = (CButton*)pOuter->GetDlgItem(IDC_CHECK_DiagramTrackDisplay);
 			}
 		}
-		//���w�܂ł̋���
+		//次駅までの距離
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iNextEkiDistance))
 			{
 				pControl = (CButton*)pOuter->GetDlgItem(IDC_EDIT_NextEkiDistance);
 			}
 		}
-		//�Ԑ��\���ȗ��ݒ�
+		//番線表示省略設定
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouTrackOmit))
 			{
 				pControl = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouTrackOmit);
 			}
 		}
-		//��ƕ\�����ݒ�i�N�_���j
+		//作業表示欄設定（起点側）
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouOperationOrigin))
 			{
 				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouOperationOrigin);
 			}
 		}
-		//��ƕ\�����ݒ�i�I�_���j
+		//作業表示欄設定（終点側）
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouOperationTerminal))
 			{
 				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouOperationTerminal);
 			}
 		}
-		// �w������
+		// 駅名略称
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, strEkimeiJikokuhyouRyaku))
 			{
 				pControl = (CEdit*)pOuter->GetDlgItem(IDC_EDIT_EkimeiJikokuhyouRyaku);
 			}
 		}
-		// �w������(�^�p�ꗗ)
+		// 駅名略称(運用一覧)
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, strEkimeiDiagramRyaku))
 			{
@@ -1396,14 +1396,14 @@ namespace ViewEki {
 			}
 		}
 
-		//���莞���\�r���[�������\��
+		//下り時刻表ビュー着時刻表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, bJikokuhyouChakuJikokuDisplayKudari))
 			{
 				pControl = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouChakuJikokuDisplayKudari);
 			}
 		}
-		//��莞���\�r���[�������\��
+		//上り時刻表ビュー着時刻表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, bJikokuhyouChakuJikokuDisplayNobori))
 			{
@@ -1411,105 +1411,105 @@ namespace ViewEki {
 			}
 		}
 
-		//���莞���\�r���[�������\��
+		//下り時刻表ビュー発時刻表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, bJikokuhyouHatsuJikokuDisplayKudari))
 			{
 				pControl = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouHatsuJikokuDisplayKudari);
 			}
 		}
-		//��莞���\�r���[�������\��
+		//上り時刻表ビュー発時刻表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, bJikokuhyouHatsuJikokuDisplayNobori))
 			{
 				pControl = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouHatsuJikokuDisplayNobori);
 			}
 		}
-		//���莞���\�r���[��Ԕԍ��\��
+		//下り時刻表ビュー列車番号表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouRessyabangouDisplayKudari))
 			{
 				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyabangouDisplayKudari);
 			}
 		}
-		//��莞���\�r���[��Ԕԍ��\��
+		//上り時刻表ビュー列車番号表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouRessyabangouDisplayNobori))
 			{
 				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyabangouDisplayNobori);
 			}
 		}
-		//���莞���\�r���[��Ԕԍ��\��
+		//下り時刻表ビュー列車番号表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouOperationNumberDisplayKudari))
 			{
 				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouOperationNumberDisplayKudari);
 			}
 		}
-		//��莞���\�r���[��Ԕԍ��\��
+		//上り時刻表ビュー列車番号表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouOperationNumberDisplayNobori))
 			{
 				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouOperationNumberDisplayNobori);
 			}
 		}
-		//���莞���\�r���[��Ԕԍ��\��
+		//下り時刻表ビュー列車番号表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouRessyaSyubetsuDisplayKudari))
 			{
 				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyaSyubetsuDisplayKudari);
 			}
 		}
-		//��莞���\�r���[��Ԕԍ��\��
+		//上り時刻表ビュー列車番号表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouRessyaSyubetsuDisplayNobori))
 			{
 				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyaSyubetsuDisplayNobori);
 			}
 		}
-		//���莞���\�r���[��Ԕԍ��\��
+		//下り時刻表ビュー列車番号表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouRessyameiDisplayKudari))
 			{
 				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyameiDisplayKudari);
 			}
 		}
-		//��莞���\�r���[��Ԕԍ��\��
+		//上り時刻表ビュー列車番号表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouRessyameiDisplayNobori))
 			{
 				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyameiDisplayNobori);
 			}
 		}
-		//����J�X�^�}�C�Y�����\�r���[�ł̘H���O�E�O��Ԏn���w�\��
+		//下りカスタマイズ時刻表ビューでの路線外・前列車始発駅表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, bJikokuhyouOuterSihatsuDisplayKudari))
 			{
 				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouOuterSihatsuDisplayKudari);
 			}
 		}
-		//����J�X�^�}�C�Y�����\�r���[�ł̘H���O�E����ԏI���w�\��
+		//下りカスタマイズ時刻表ビューでの路線外・次列車終着駅表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, bJikokuhyouOuterShuchakuDisplayKudari))
 			{
 				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouOuterShuchakuDisplayKudari);
 			}
 		}
-		//���J�X�^�}�C�Y�����\�r���[�ł̘H���O�E�O��Ԏn���w�\��
+		//上りカスタマイズ時刻表ビューでの路線外・前列車始発駅表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, bJikokuhyouOuterSihatsuDisplayNobori))
 			{
 				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouOuterSihatsuDisplayNobori);
 			}
 		}
-		//���J�X�^�}�C�Y�����\�r���[�ł̘H���O�E����ԏI���w�\��
+		//上りカスタマイズ時刻表ビューでの路線外・次列車終着駅表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, bJikokuhyouOuterShuchakuDisplayNobori))
 			{
 				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouOuterShuchakuDisplayNobori);
 			}
 		}
-		//�_�C���O�����w�i�F
+		//ダイヤグラム背景色
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iDiagramColorNextEki))
 			{
@@ -1524,7 +1524,7 @@ namespace ViewEki {
 	}
 
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	CDlgEkiProp::CPropEditUiInternal::CPropEditUiInternal(
 		bool bNewItem,
@@ -1543,15 +1543,15 @@ namespace ViewEki {
 	}
 
 	/////////////////////////////////////////////////////////////////////////////
-	//// CDlgEkiProp �_�C�A���O
+	//// CDlgEkiProp ダイアログ
 
 		// --------------------------------
-		//@name �����֐�
+		//@name 下請関数
 		// --------------------------------
 
 
 	// ********************************
-		//@name ����
+		//@name 属性
 		// ********************************
 	// ----------------------------------------------------------------
 	//	MFC
@@ -1680,13 +1680,13 @@ namespace ViewEki {
 	END_MESSAGE_MAP()
 
 	/////////////////////////////////////////////////////////////////////////////
-	// CDlgEkiProp ���b�Z�[�W �n���h��
+	// CDlgEkiProp メッセージ ハンドラ
 
 	BOOL CDlgEkiProp::OnInitDialog()
 	{
 		CDialog::OnInitDialog();
 
-		// �w�����`��/�w�K�� 
+		// 駅時刻形式/駅規模 
 		if (!m_bEkijikokukeisikiAndEkikiboEnable)
 		{
 			CButton* pButton1 = (CButton*)GetDlgItem(IDC_RADIO_Jikokukeisiki);
@@ -1723,8 +1723,8 @@ namespace ViewEki {
 			{
 				/**
 					Ver2.0
-					�H���̋N�_�w�E��蒅�̏ꍇ�A��w�ɂł���悤�ɂ��܂��B
-					�܂��A�H���̏I�[�w�E���蒅�̏ꍇ���A��w�ɂł���悤�ɂ��܂��B
+					路線の起点駅・上り着の場合、基幹駅にできるようにします。
+					また、路線の終端駅・下り着の場合も、基幹駅にできるようにします。
 				*/
 				const CentDedEki* pCentDedEki = pMuCentDedEki->get(idx);
 				tstring strEkimei = to_tstring(idx) + _T(". ");
@@ -1735,17 +1735,17 @@ namespace ViewEki {
 					if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku)
 					{
 						/**
-							�����w�̏ꍇ�́A���g���h���w(INT_MIN,INT_MAX)�̉\���͖���
+							発着駅の場合は、自身が派生駅(INT_MIN,INT_MAX)の可能性は無い
 						*/
 						if (pCentDedEki->getBrunchLoopPosition() == -1)
 						{
-							//�P�Ɖw�̏ꍇ
+							//単独駅の場合
 							pCComboBox->AddString(strEkimei.c_str());
 						}
 						else if (pCentDedEki->getEkiIndexLoop().size() >= 2 &&
 							pCentDedEki->getBrunchLoopPosition() != pCentDedEki->getEkiIndexLoop().size() - 1)
 						{
-							//�N�_�w�ł��A�ҏW�Ώۉw���I�_�w�̏ꍇ(���̏ꍇ�A����ݒ����������΁A����ݒ肪��)
+							//起点駅でも、編集対象駅が終点駅の場合(この場合、環状線設定を解除すれば、分岐設定が可に)
 							if (pCentDedEki->getEkiIndexLoop()[pCentDedEki->getBrunchLoopPosition() + 1] == m_iEkiIndex)
 							{
 								pCComboBox->AddString(strEkimei.c_str());
@@ -1753,19 +1753,19 @@ namespace ViewEki {
 						}
 						else
 						{
-							//�P�Ƃ̊�w�������͏I�_�w�̏ꍇ
+							//単独の基幹駅もしくは終点駅の場合
 							pCComboBox->AddString(strEkimei.c_str());
 						}
 
 						if (pCentDedEki->getBrunchLoopPosition() == -1)
 						{
-							//�P�Ɖw�̏ꍇ
+							//単独駅の場合
 							pCComboBox2->AddString(strEkimei.c_str());
 						}
 						else if (pCentDedEki->getEkiIndexLoop().size() >= 2 &&
 							pCentDedEki->getBrunchLoopPosition() != pCentDedEki->getEkiIndexLoop().size() - 1)
 						{
-							//�N�_�w�ł��A�ҏW�Ώۉw���I�_�w�̏ꍇ
+							//起点駅でも、編集対象駅が終点駅の場合
 							if (pCentDedEki->getEkiIndexLoop()[pCentDedEki->getBrunchLoopPosition() + 1] == m_iEkiIndex)
 							{
 								pCComboBox2->AddString(strEkimei.c_str());
@@ -1773,13 +1773,13 @@ namespace ViewEki {
 						}
 						else if (pCentDedEki->getEkiIndexBrunchTerminalSide().size() == 0)
 						{
-							//�P�Ƃ̊�w�������͏I�_�w�ŁA�I�_������w�������ꍇ
+							//単独の基幹駅もしくは終点駅で、終点側分岐駅が無い場合
 							pCComboBox2->AddString(strEkimei.c_str());
 						}
 						else if (pCentDedEki->getEkiIndexBrunchTerminalSide().size() == 1 &&
 							pCentDedEki->getEkiIndexBrunchTerminalSide().front() == m_iEkiIndex)
 						{
-							//�P�Ƃ̊�w�������͏I�_�w�ŁA�I�_������w���ҏW�Ώۉw��݂̂̏ꍇ(���̏ꍇ�A����w�ݒ����������΁A��ݒ肪��)
+							//単独の基幹駅もしくは終点駅で、終点側分岐駅が編集対象駅一つのみの場合(この場合、分岐駅設定を解除すれば、環状設定が可に)
 							pCComboBox2->AddString(strEkimei.c_str());
 						}
 					}
@@ -1787,21 +1787,21 @@ namespace ViewEki {
 					{
 						if (idx == 0)
 						{
-							//idx==0�̏�蒅�̏ꍇ�A�h���w�̉\���͖���
+							//idx==0の上り着の場合、派生駅の可能性は無い
 							if (pCentDedEki->getBrunchLoopPosition() == -1)
 							{
-								//�P�Ɖw�̏ꍇ
+								//単独駅の場合
 								pCComboBox->AddString(strEkimei.c_str());
 							}
 							else if (pCentDedEki->getEkiIndexLoop().size() == 1)
 							{
-								//�P�Ƃ̊�w�̏ꍇ
+								//単独の基幹駅の場合
 								pCComboBox->AddString(strEkimei.c_str());
 							}
 							else if (pCentDedEki->getEkiIndexLoop().size() >= 2 &&
 								pCentDedEki->getBrunchLoopPosition() != pCentDedEki->getEkiIndexLoop().size() - 1)
 							{
-								//�N�_�w�ł��A�ҏW�Ώۉw���I�_�w�̏ꍇ(���̏ꍇ�A����ݒ����������΁A����ݒ肪��)
+								//起点駅でも、編集対象駅が終点駅の場合(この場合、環状線設定を解除すれば、分岐設定が可に)
 								if (pCentDedEki->getEkiIndexLoop()[pCentDedEki->getBrunchLoopPosition() + 1] == m_iEkiIndex)
 								{
 									pCComboBox->AddString(strEkimei.c_str());
@@ -1810,13 +1810,13 @@ namespace ViewEki {
 
 							if (pCentDedEki->getBrunchLoopPosition() == -1)
 							{
-								//�P�Ɖw�̏ꍇ
+								//単独駅の場合
 								pCComboBox2->AddString(strEkimei.c_str());
 							}
 							//else if (pCentDedEki->getEkiIndexLoop().size() >= 2 &&
 							//	pCentDedEki->getBrunchLoopPosition() != pCentDedEki->getEkiIndexLoop().size() - 1)
 							//{
-							//	//�N�_�w�ł��A�ҏW�Ώۉw���I�_�w�̏ꍇ
+							//	//起点駅でも、編集対象駅が終点駅の場合
 							//	if (pCentDedEki->getEkiIndexLoop()[pCentDedEki->getBrunchLoopPosition() + 1] == m_iEkiIndex)
 							//	{
 							//		pCComboBox2->AddString(strEkimei.c_str());
@@ -1824,7 +1824,7 @@ namespace ViewEki {
 							//}
 							else if (pCentDedEki->getEkiIndexLoop().size() >= 2)
 							{
-								//�N�_�w�ł��A�ҏW�Ώۉw���I�_�w�̏ꍇ(��蒅�̋N�_�w�͕K��iPosition���擪(0)�ɂȂ�)
+								//起点駅でも、編集対象駅が終点駅の場合(上り着の起点駅は必ずiPositionが先頭(0)になる)
 								if (pCentDedEki->getEkiIndexLoop()[1] == m_iEkiIndex)
 								{
 									pCComboBox2->AddString(strEkimei.c_str());
@@ -1832,30 +1832,30 @@ namespace ViewEki {
 							}
 							//else if (pCentDedEki->getEkiIndexBrunchTerminalSide().size() == 0)
 							//{
-							//	//�P�Ƃ̊�w�������͏I�_�w�ŁA�I�_������w�������ꍇ
+							//	//単独の基幹駅もしくは終点駅で、終点側分岐駅が無い場合
 							//	pCComboBox2->AddString(strEkimei.c_str());
 							//}
 							else if (pCentDedEki->getEkiIndexBrunchTerminalSide().size() == 1 &&
 								pCentDedEki->getEkiIndexBrunchTerminalSide().front() == m_iEkiIndex)
 							{
-								//�P�Ƃ̊�w�ŁA�I�_������w���ҏW�Ώۉw��݂̂̏ꍇ(���̏ꍇ�A����w�ݒ����������΁A��ݒ肪��)
-								//idx0��蒅�̊�w�́A�K���I�_���h���w����ȏ㑶�݂���
+								//単独の基幹駅で、終点側分岐駅が編集対象駅一つのみの場合(この場合、分岐駅設定を解除すれば、環状設定が可に)
+								//idx0上り着の基幹駅は、必ず終点方派生駅が一つ以上存在する
 								pCComboBox2->AddString(strEkimei.c_str());
 							}
 
 						}
 						else
 						{
-							//idx=0�ȊO�̏ꍇ�́A�I�_���h���w�ɂȂ��Ă���\���ɒ���
+							//idx=0以外の場合は、終点方派生駅になっている可能性に注意
 							if (pCentDedEki->getBrunchLoopPosition() == -1)
 							{
-								//�P�Ɖw�̏ꍇ
+								//単独駅の場合
 								pCComboBox2->AddString(strEkimei.c_str());
 							}
 							else if (pCentDedEki->getBrunchLoopPosition() == 0 &&
 								pCentDedEki->getEkiIndexLoop().size() >= 2)
 							{
-								//�N�_�w�ł��A�ҏW�Ώۉw���I�_�w�̏ꍇ
+								//起点駅でも、編集対象駅が終点駅の場合
 								if (pCentDedEki->getEkiIndexLoop()[1] == m_iEkiIndex)
 								{
 									pCComboBox2->AddString(strEkimei.c_str());
@@ -1871,12 +1871,12 @@ namespace ViewEki {
 					if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku)
 					{
 						/**
-							�����w�̏ꍇ�́A���g���h���w(INT_MIN,INT_MAX)�̉\���͖���
+							発着駅の場合は、自身が派生駅(INT_MIN,INT_MAX)の可能性は無い
 						*/
 						if (pCentDedEki->getBrunchLoopPosition() == -1 ||
 							pCentDedEki->getBrunchLoopPosition() == 0)
 						{
-							//�P�Ɖw�̏ꍇ�܂��͊�wor�N�_�w(�擪)�̏ꍇ
+							//単独駅の場合または基幹駅or起点駅(先頭)の場合
 							pCComboBox->AddString(strEkimei.c_str());
 						}
 
@@ -1884,11 +1884,11 @@ namespace ViewEki {
 					else if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku &&
 						idx == pMuCentDedEki->size() - 1)
 					{
-						//�����̉��蒅�w�͔h���w�̉\���͖����̂ŁA�������Œǉ�����
+						//末尾の下り着駅は派生駅の可能性は無いので、無条件で追加する
 						if (pCentDedEki->getBrunchLoopPosition() == -1 ||
 							pCentDedEki->getBrunchLoopPosition() == 0)
 						{
-							//�P�Ɖw�̏ꍇ�܂��͊�w�̏ꍇ
+							//単独駅の場合または基幹駅の場合
 							pCComboBox->AddString(strEkimei.c_str());
 						}
 					}
@@ -1899,42 +1899,42 @@ namespace ViewEki {
 		if (m_iEkiIndex >= 0)
 		{
 			LVCOLUMN    lvc;
-			TCHAR       strCaption[][32] = { _T("�w�Ԑ���"), _T("������"), _T("�㗪��"), _T("��{���ݒ�"), _T("�ݐ���") };
+			TCHAR       strCaption[][32] = { _T("駅番線名"), _T("下略称"), _T("上略称"), _T("主本線設定"), _T("在線略") };
 			//const int   clmNum = sizeof strCaption / sizeof strCaption[0];
 			int         err = 0;
 			m_ListEkiTrack2.SetExtendedStyle(LVS_EX_FULLROWSELECT);
-			lvc.mask = LVCF_WIDTH | LVCF_TEXT | LVCF_SUBITEM;    // �L���t���O
+			lvc.mask = LVCF_WIDTH | LVCF_TEXT | LVCF_SUBITEM;    // 有効フラグ
 			{
-				lvc.iSubItem = 0;            // �T�u�A�C�e���ԍ�
-				lvc.pszText = strCaption[0];   // ���o���e�L�X�g
-				//lvc.cx = 128;          // ����
-				lvc.cx = 100;          // ����
+				lvc.iSubItem = 0;            // サブアイテム番号
+				lvc.pszText = strCaption[0];   // 見出しテキスト
+				//lvc.cx = 128;          // 横幅
+				lvc.cx = 100;          // 横幅
 				m_ListEkiTrack2.InsertColumn(0, &lvc);
 			}
 			{
-				lvc.iSubItem = 1;            // �T�u�A�C�e���ԍ�
-				lvc.pszText = strCaption[1];   // ���o���e�L�X�g
-				lvc.cx = 48;          // ����
+				lvc.iSubItem = 1;            // サブアイテム番号
+				lvc.pszText = strCaption[1];   // 見出しテキスト
+				lvc.cx = 48;          // 横幅
 				m_ListEkiTrack2.InsertColumn(1, &lvc);
 			}
 			{
-				lvc.iSubItem = 2;            // �T�u�A�C�e���ԍ�
-				lvc.pszText = strCaption[2];   // ���o���e�L�X�g
-				lvc.cx = 48;          // ����
+				lvc.iSubItem = 2;            // サブアイテム番号
+				lvc.pszText = strCaption[2];   // 見出しテキスト
+				lvc.cx = 48;          // 横幅
 				m_ListEkiTrack2.InsertColumn(2, &lvc);
 			}
 			{
-				lvc.iSubItem = 3;            // �T�u�A�C�e���ԍ�
-				lvc.pszText = strCaption[3];   // ���o���e�L�X�g
+				lvc.iSubItem = 3;            // サブアイテム番号
+				lvc.pszText = strCaption[3];   // 見出しテキスト
 				//lvc.cx = 96;          // 
-				lvc.cx = 78;          // ����
+				lvc.cx = 78;          // 横幅
 				m_ListEkiTrack2.InsertColumn(3, &lvc);
 			}
 			{
-				lvc.iSubItem = 4;            // �T�u�A�C�e���ԍ�
-				lvc.pszText = strCaption[4];   // ���o���e�L�X�g
+				lvc.iSubItem = 4;            // サブアイテム番号
+				lvc.pszText = strCaption[4];   // 見出しテキスト
 				//lvc.cx = 96;          // 
-				lvc.cx = 48;          // ����
+				lvc.cx = 48;          // 横幅
 				m_ListEkiTrack2.InsertColumn(4, &lvc);
 			}
 
@@ -1954,28 +1954,28 @@ namespace ViewEki {
 		if (m_iEkiIndex >= 0)
 		{
 			LVCOLUMN    lvc;
-			TCHAR       strCaption[][32] = { _T("�w��"), _T("�����\����"), _T("�_�C����") };
+			TCHAR       strCaption[][32] = { _T("駅名"), _T("時刻表略称"), _T("ダイヤ略") };
 			//const int   clmNum = sizeof strCaption / sizeof strCaption[0];
 			int         err = 0;
 			m_ListOuterTerminalEkimei2.SetExtendedStyle(LVS_EX_FULLROWSELECT);
-			lvc.mask = LVCF_WIDTH | LVCF_TEXT | LVCF_SUBITEM;    // �L���t���O
+			lvc.mask = LVCF_WIDTH | LVCF_TEXT | LVCF_SUBITEM;    // 有効フラグ
 			{
-				lvc.iSubItem = 0;            // �T�u�A�C�e���ԍ�
-				lvc.pszText = strCaption[0];   // ���o���e�L�X�g
-				//lvc.cx = 128;          // ����
-				lvc.cx = 100;          // ����
+				lvc.iSubItem = 0;            // サブアイテム番号
+				lvc.pszText = strCaption[0];   // 見出しテキスト
+				//lvc.cx = 128;          // 横幅
+				lvc.cx = 100;          // 横幅
 				m_ListOuterTerminalEkimei2.InsertColumn(0, &lvc);
 			}
 			{
-				lvc.iSubItem = 1;            // �T�u�A�C�e���ԍ�
-				lvc.pszText = strCaption[1];   // ���o���e�L�X�g
-				lvc.cx = 80;          // ����
+				lvc.iSubItem = 1;            // サブアイテム番号
+				lvc.pszText = strCaption[1];   // 見出しテキスト
+				lvc.cx = 80;          // 横幅
 				m_ListOuterTerminalEkimei2.InsertColumn(1, &lvc);
 			}
 			{
-				lvc.iSubItem = 2;            // �T�u�A�C�e���ԍ�
-				lvc.pszText = strCaption[2];   // ���o���e�L�X�g
-				lvc.cx = 60;          // ����
+				lvc.iSubItem = 2;            // サブアイテム番号
+				lvc.pszText = strCaption[2];   // 見出しテキスト
+				lvc.cx = 60;          // 横幅
 				m_ListOuterTerminalEkimei2.InsertColumn(2, &lvc);
 			}
 		}
@@ -1988,45 +1988,45 @@ namespace ViewEki {
 			GetDlgItem(IDC_BUTTON_OuterEkimeiDown)->EnableWindow(false);
 		}
 
-		// �R���{�{�b�N�X
+		// コンボボックス
 		{
 			CComboBox* pCComboBox = (CComboBox*)GetDlgItem(IDC_COMBO_DiagramRessyajouhouHyoujiKudari);
 			CComboBox* pCComboBox2 = (CComboBox*)GetDlgItem(IDC_COMBO_DiagramRessyajouhouHyoujiNobori);
 
-			tstring strTemp = _T("�n���Ȃ�\��");
+			tstring strTemp = _T("始発なら表示");
 			pCComboBox->AddString(strTemp.c_str());
 			pCComboBox2->AddString(strTemp.c_str());
-			strTemp = _T("��ɕ\��");
+			strTemp = _T("常に表示");
 			pCComboBox->AddString(strTemp.c_str());
 			pCComboBox2->AddString(strTemp.c_str());
-			strTemp = _T("�\�����Ȃ�");
+			strTemp = _T("表示しない");
 			pCComboBox->AddString(strTemp.c_str());
 			pCComboBox2->AddString(strTemp.c_str());
-			//�n���Ȃ�\��;��ɕ\��;�\�����Ȃ�;
+			//始発なら表示;常に表示;表示しない;
 
 		}
 
-		// �R���{�{�b�N�X
+		// コンボボックス
 		{
 			CComboBox* pCComboBox = (CComboBox*)GetDlgItem(IDC_COMBO_JikokuhyouOperationOrigin);
 			CComboBox* pCComboBox2 = (CComboBox*)GetDlgItem(IDC_COMBO_JikokuhyouOperationTerminal);
 
-			tstring strTemp = _T("����");
+			tstring strTemp = _T("無し");
 			pCComboBox->AddString(strTemp.c_str());
 			pCComboBox2->AddString(strTemp.c_str());
-			strTemp = _T("1���");
+			strTemp = _T("1作業");
 			pCComboBox->AddString(strTemp.c_str());
 			pCComboBox2->AddString(strTemp.c_str());
-			strTemp = _T("2���");
+			strTemp = _T("2作業");
 			pCComboBox->AddString(strTemp.c_str());
 			pCComboBox2->AddString(strTemp.c_str());
-			strTemp = _T("3���");
+			strTemp = _T("3作業");
 			pCComboBox->AddString(strTemp.c_str());
 			pCComboBox2->AddString(strTemp.c_str());
 
 		}
 
-		// �R���{�{�b�N�X
+		// コンボボックス
 		{
 			CComboBox* pCComboBox = (CComboBox*)GetDlgItem(IDC_COMBO_JikokuhyouRessyabangouDisplayKudari);
 			CComboBox* pCComboBox2 = (CComboBox*)GetDlgItem(IDC_COMBO_JikokuhyouRessyabangouDisplayNobori);
@@ -2037,7 +2037,7 @@ namespace ViewEki {
 			CComboBox* pCComboBox7 = (CComboBox*)GetDlgItem(IDC_COMBO_JikokuhyouRessyameiDisplayKudari);
 			CComboBox* pCComboBox8 = (CComboBox*)GetDlgItem(IDC_COMBO_JikokuhyouRessyameiDisplayNobori);
 
-			tstring strTemp = _T("�\�����Ȃ�");//�S��
+			tstring strTemp = _T("表示しない");//全種
 			pCComboBox->AddString(strTemp.c_str());
 			pCComboBox2->AddString(strTemp.c_str());
 			pCComboBox3->AddString(strTemp.c_str());
@@ -2046,10 +2046,10 @@ namespace ViewEki {
 			pCComboBox6->AddString(strTemp.c_str());
 			pCComboBox7->AddString(strTemp.c_str());
 			pCComboBox8->AddString(strTemp.c_str());
-			strTemp = _T("�^�p�ԍ����ς���Ԃ̂�");//�^�p�ԍ�
+			strTemp = _T("運用番号が変わる列車のみ");//運用番号
 			pCComboBox3->AddString(strTemp.c_str());
 			pCComboBox4->AddString(strTemp.c_str());
-			strTemp = _T("��ʕύX��Ԃ̂�");//�S��
+			strTemp = _T("種別変更列車のみ");//全種
 			pCComboBox->AddString(strTemp.c_str());
 			pCComboBox2->AddString(strTemp.c_str());
 			pCComboBox3->AddString(strTemp.c_str());
@@ -2058,7 +2058,7 @@ namespace ViewEki {
 			pCComboBox6->AddString(strTemp.c_str());
 			pCComboBox7->AddString(strTemp.c_str());
 			pCComboBox8->AddString(strTemp.c_str());
-			strTemp = _T("��ʁE��ԏ��ύX��Ԃ̂�");//�S��
+			strTemp = _T("種別・列車情報変更列車のみ");//全種
 			pCComboBox->AddString(strTemp.c_str());
 			pCComboBox2->AddString(strTemp.c_str());
 			pCComboBox3->AddString(strTemp.c_str());
@@ -2067,7 +2067,7 @@ namespace ViewEki {
 			pCComboBox6->AddString(strTemp.c_str());
 			pCComboBox7->AddString(strTemp.c_str());
 			pCComboBox8->AddString(strTemp.c_str());
-			strTemp = _T("�S��ԕ\��");//�S��
+			strTemp = _T("全列車表示");//全種
 			pCComboBox->AddString(strTemp.c_str());
 			pCComboBox2->AddString(strTemp.c_str());
 			pCComboBox3->AddString(strTemp.c_str());
@@ -2079,50 +2079,50 @@ namespace ViewEki {
 
 		}
 
-		// �R���{�{�b�N�X
+		// コンボボックス
 		{
 			CComboBox* pCComboBox = (CComboBox*)GetDlgItem(IDC_COMBO_JikokuhyouOperationNumberDisplayRowsKudari);
 			CComboBox* pCComboBox2 = (CComboBox*)GetDlgItem(IDC_COMBO_JikokuhyouOperationNumberDisplayRowsNobori);
 
-			tstring strTemp = _T("1�i");
+			tstring strTemp = _T("1段");
 			pCComboBox->AddString(strTemp.c_str());
 			pCComboBox2->AddString(strTemp.c_str());
-			strTemp = _T("2�i");
+			strTemp = _T("2段");
 			pCComboBox->AddString(strTemp.c_str());
 			pCComboBox2->AddString(strTemp.c_str());
-			strTemp = _T("3�i");
+			strTemp = _T("3段");
 			pCComboBox->AddString(strTemp.c_str());
 			pCComboBox2->AddString(strTemp.c_str());
-			strTemp = _T("4�i");
+			strTemp = _T("4段");
 			pCComboBox->AddString(strTemp.c_str());
 			pCComboBox2->AddString(strTemp.c_str());
-			strTemp = _T("5�i");
+			strTemp = _T("5段");
 			pCComboBox->AddString(strTemp.c_str());
 			pCComboBox2->AddString(strTemp.c_str());
 
 		}
-		// �R���{�{�b�N�X
+		// コンボボックス
 		{
 			CComboBox* pCComboBox = (CComboBox*)GetDlgItem(IDC_COMBO_DiagramColorNextEki);
 
-			tstring strTemp = _T("��{�F");
+			tstring strTemp = _T("基本色");
 			pCComboBox->AddString(strTemp.c_str());
-			strTemp = _T("�ʐF1");
+			strTemp = _T("個別色1");
 			pCComboBox->AddString(strTemp.c_str());
-			strTemp = _T("�ʐF2");
+			strTemp = _T("個別色2");
 			pCComboBox->AddString(strTemp.c_str());
-			strTemp = _T("�ʐF3");
+			strTemp = _T("個別色3");
 			pCComboBox->AddString(strTemp.c_str());
-			strTemp = _T("�ʐF4");
+			strTemp = _T("個別色4");
 			pCComboBox->AddString(strTemp.c_str());
 
 		}
-		//	�ҏW���J�n
+		//	編集を開始
 		m_PropEditUiInternal.StartEdit();
 
 		// --------------------------------
-		return TRUE;  // �R���g���[���Ƀt�H�[�J�X��ݒ肵�Ȃ��Ƃ��A�߂�l�� TRUE �ƂȂ�܂�
-					  // ��O: OCX �v���p�e�B �y�[�W�̖߂�l�� FALSE �ƂȂ�܂�
+		return TRUE;  // コントロールにフォーカスを設定しないとき、戻り値は TRUE となります
+					  // 例外: OCX プロパティ ページの戻り値は FALSE となります
 	}
 
 	void CDlgEkiProp::OnOK()
@@ -2144,9 +2144,9 @@ namespace ViewEki {
 		if (bShow)
 		{
 			// --------------------------------
-			//	�t�H�[�J�X���ړ�
+			//	フォーカスを移動
 			// --------------------------------
-			//�w��
+			//駅名
 			if (m_iFocusItem == 0) {
 				CEdit* pControl = (CEdit*)GetDlgItem(IDC_EDIT_Ekimei);
 				GotoDlgCtrl(pControl);
@@ -2154,7 +2154,7 @@ namespace ViewEki {
 					m_pCKeyinputSenderToModalDlg->registerCtrl(pControl->GetSafeHwnd());
 				}
 			}
-			//�w�����`��
+			//駅時刻形式
 			if (m_iFocusItem == 1) {
 				CWnd* pControl = GetDlgItem(IDC_RADIO_Jikokukeisiki);
 				GotoDlgCtrl(pControl);
@@ -2162,7 +2162,7 @@ namespace ViewEki {
 					m_pCKeyinputSenderToModalDlg->registerCtrl(pControl->GetSafeHwnd());
 				}
 			}
-			//�w�K��
+			//駅規模
 			if (m_iFocusItem == 2) {
 				CWnd* pControl = GetDlgItem(IDC_RADIO_Ekikibo);
 				GotoDlgCtrl(pControl);
@@ -2170,7 +2170,7 @@ namespace ViewEki {
 					m_pCKeyinputSenderToModalDlg->registerCtrl(pControl->GetSafeHwnd());
 				}
 			}
-			//�w�K��
+			//駅規模
 			if (m_iFocusItem == 3) {
 				CWnd* pControl = GetDlgItem(IDC_CHECK_Brunch);
 				GotoDlgCtrl(pControl);
@@ -2178,7 +2178,7 @@ namespace ViewEki {
 					m_pCKeyinputSenderToModalDlg->registerCtrl(pControl->GetSafeHwnd());
 				}
 			}
-			//�w�K��
+			//駅規模
 			if (m_iFocusItem == 4) {
 				CWnd* pControl = GetDlgItem(IDC_CHECK_Loop);
 				GotoDlgCtrl(pControl);
@@ -2310,7 +2310,7 @@ namespace ViewEki {
 		int idx = m_ListEkiTrack2.GetNextItem(-1, LVNI_SELECTED | LVNI_ALL);
 		if (idx >= 0 && idx < m_ListEkiTrack2.GetItemCount())
 		{
-			//idx�������Ԑ��͈͓̔��̏ꍇ�A���̔Ԑ��̔Ԑ����E���̂������l�Ƃ��܂�
+			//idxが既存番線の範囲内の場合、その番線の番線名・略称を初期値とします
 			strTrackName = m_ListEkiTrack2.GetItemText(idx, 0);
 			strTrackRyakusyou = m_ListEkiTrack2.GetItemText(idx, 1);
 			strTrackNoboriRyakusyou = m_ListEkiTrack2.GetItemText(idx, 2);
@@ -2332,7 +2332,7 @@ namespace ViewEki {
 			{
 				m_ListEkiTrack2.SetItemText(idxa, 1, aDlg.getTrackRyakusyou());
 				m_ListEkiTrack2.SetItemText(idxa, 2, aDlg.getTrackNoboriRyakusyou());
-				m_ListEkiTrack2.SetItemText(idxa, 3, _T("���{��/����"));
+				m_ListEkiTrack2.SetItemText(idxa, 3, _T("副本線/側線"));
 				if (aDlg.getDiagramTrackOmit())
 				{
 					m_ListEkiTrack2.SetItemText(idxa, 4, nameDiagramTrackOmit);
@@ -2354,7 +2354,7 @@ namespace ViewEki {
 
 		if (idx < 0 || idx >= m_ListEkiTrack2.GetItemCount())
 		{
-			iRv = -1;//idx���͈͊O�ł�
+			iRv = -1;//idxが範囲外です
 		}
 
 		if (iRv >= 0)
@@ -2399,13 +2399,13 @@ namespace ViewEki {
 
 		if (idx < 0 || idx >= m_ListEkiTrack2.GetItemCount())
 		{
-			iRv = -1;//idx���͈͊O�ł�
+			iRv = -1;//idxが範囲外です
 		}
 		if (iRv >= 0)
 		{
 			if (m_ListEkiTrack2.GetItemCount() == 1)
 			{
-				iRv = -2;//�Ԑ�����1�̏ꍇ�͍폜�ł��܂���
+				iRv = -2;//番線数が1の場合は削除できません
 			}
 		}
 
@@ -2413,15 +2413,15 @@ namespace ViewEki {
 		{
 			if (m_ListEkiTrack2.GetItemText(idx, 3) != MfcUtil::LoadCString(IDS_WORD_SubMain))
 			{
-				iRv = -3;//�Ώ۔Ԑ�����{���̏ꍇ�͍폜�ł��܂���
+				iRv = -3;//対象番線が主本線の場合は削除できません
 			}
 		}
 
 		if (iRv >= 0)
 		{
 			int iEkiTrack2Index = -1;
-			//�I�����ꂽ�Ԑ����A�w�ҏW�J�n���ɑ��݂��Ă������ǂ����𒲂ׂ܂��B
-			//m_iEkiTrack2Map�̒��ɁA"idx"�̒l�������̂�����ꍇ�͍ŏ����瑶�݂��Ă��܂��B
+			//選択された番線が、駅編集開始時に存在していたかどうかを調べます。
+			//m_iEkiTrack2Mapの中に、"idx"の値を持つものがある場合は最初から存在しています。
 			for (int idxm = 0; idxm < (int)m_iEkiTrack2Map.size(); idxm++)
 			{
 				if (m_iEkiTrack2Map[idxm] == idx)
@@ -2430,8 +2430,8 @@ namespace ViewEki {
 					break;
 				}
 			}
-			//�I�����ꂽ�Ԑ����A�w�ҏW�J�n�����瑶�݂���ꍇ�̂݁A
-			//���̔Ԑ����g�p���Ă����Ԃ����݂��邩�𒲂ׂ܂��B
+			//選択された番線が、駅編集開始時から存在する場合のみ、
+			//その番線を使用している列車が存在するかを調べます。
 			if (iEkiTrack2Index >= 0)
 			{
 				int iDiaIndex = -1;
@@ -2450,13 +2450,13 @@ namespace ViewEki {
 							&iDiaIndex, &eRessyahoukou, NULL)
 						!= 0)
 					{
-						iRv = -4;	//�폜���悤�Ƃ��Ă���Ԑ��̗�Ԃ����݂��܂�
+						iRv = -4;	//削除しようとしている番線の列車が存在します
 						break;
 					}
 
 				}
 
-				//	�G���[���b�Z�[�W���\��
+				//	エラーメッセージを構成
 				if (iRv == -4)
 				{
 					CString	strEkiName = pCentDedRosen->getCentDedEkiCont()
@@ -2509,10 +2509,10 @@ namespace ViewEki {
 		{
 			m_ListEkiTrack2.DeleteItem(idx);
 
-			//�폜���ꂽ�Ԑ����A�ҏW�J�n�����瑶�݂��Ă����Ԑ��̏ꍇ�́A
-			//m_iEkiTrack2Map�̓��Y�ӏ���-1�ɂ��܂��B
-			//�܂��A�폜�ӏ������ɂ���A�ҏW�J�n�����瑶�݂��Ă����Ԑ���
-			//m_iEkiTrack2Map�̓��Y�l��-1���܂��B
+			//削除された番線が、編集開始時から存在していた番線の場合は、
+			//m_iEkiTrack2Mapの当該箇所を-1にします。
+			//また、削除箇所より後ろにある、編集開始時から存在していた番線は
+			//m_iEkiTrack2Mapの当該値を-1します。
 			for (int idxm = 0; idxm < (int)m_iEkiTrack2Map.size(); idxm++)
 			{
 				if (m_iEkiTrack2Map[idxm] == idx)
@@ -2536,12 +2536,12 @@ namespace ViewEki {
 
 	void ViewEki::CDlgEkiProp::OnBnClickedButtonEkitrack2up()
 	{
-		// TODO: �����ɃR���g���[���ʒm�n���h���[ �R�[�h��ǉ����܂��B
+		// TODO: ここにコントロール通知ハンドラー コードを追加します。
 		int iRv = 0;
 		int idx = m_ListEkiTrack2.GetNextItem(-1, LVNI_SELECTED | LVNI_ALL);
 		if (idx < 1 || idx >= m_ListEkiTrack2.GetItemCount())
 		{
-			iRv = -1;//idx���͈͊O�ł�
+			iRv = -1;//idxが範囲外です
 		}
 
 		if (iRv >= 0)
@@ -2586,8 +2586,8 @@ namespace ViewEki {
 
 			m_ListEkiTrack2.SetItemState(idx - 1, LVIS_SELECTED, LVIS_SELECTED);
 
-			//��ֈړ������Ԑ��y�ѓ���ւ��ŉ��Ɉړ������Ԑ����A�ҏW�J�n�����炠��Ԑ��̏ꍇ�́A
-			//m_iEkiTrack2Map���X�V���܂��B
+			//上へ移動した番線及び入れ替わりで下に移動した番線が、編集開始時からある番線の場合は、
+			//m_iEkiTrack2Mapを更新します。
 			for (int idxm = 0; idxm < (int)m_iEkiTrack2Map.size(); idxm++)
 			{
 				if (m_iEkiTrack2Map[idxm] == idx)
@@ -2610,12 +2610,12 @@ namespace ViewEki {
 
 	void ViewEki::CDlgEkiProp::OnBnClickedButtonEkitrack2down()
 	{
-		// TODO: �����ɃR���g���[���ʒm�n���h���[ �R�[�h��ǉ����܂��B
+		// TODO: ここにコントロール通知ハンドラー コードを追加します。
 		int iRv = 0;
 		int idx = m_ListEkiTrack2.GetNextItem(-1, LVNI_SELECTED | LVNI_ALL);
 		if (idx < 0 || idx >= m_ListEkiTrack2.GetItemCount() - 1)
 		{
-			iRv = -1;//idx���͈͊O�ł�
+			iRv = -1;//idxが範囲外です
 		}
 
 		if (iRv >= 0)
@@ -2660,8 +2660,8 @@ namespace ViewEki {
 
 			m_ListEkiTrack2.SetItemState(idx + 1, LVIS_SELECTED, LVIS_SELECTED);
 
-			//���ֈړ������Ԑ��y�ѓ���ւ��ŏ�Ɉړ������Ԑ����A�ҏW�J�n�����炠��Ԑ��̏ꍇ�́A
-			//m_iEkiTrack2Map���X�V���܂��B
+			//下へ移動した番線及び入れ替わりで上に移動した番線が、編集開始時からある番線の場合は、
+			//m_iEkiTrack2Mapを更新します。
 			for (int idxm = 0; idxm < (int)m_iEkiTrack2Map.size(); idxm++)
 			{
 				if (m_iEkiTrack2Map[idxm] == idx)
@@ -2688,7 +2688,7 @@ namespace ViewEki {
 		int iSizeEkiTrack2 = m_ListEkiTrack2.GetItemCount();
 		if (idx < 0 || idx >= iSizeEkiTrack2)
 		{
-			iRv = -1;//idx���͈͊O�ł�
+			iRv = -1;//idxが範囲外です
 		}
 
 		if (iRv >= 0)
@@ -2736,7 +2736,7 @@ namespace ViewEki {
 		int iSizeEkiTrack2 = m_ListEkiTrack2.GetItemCount();
 		if (idx < 0 || idx >= iSizeEkiTrack2)
 		{
-			iRv = -1;//idx���͈͊O�ł�
+			iRv = -1;//idxが範囲外です
 		}
 
 		if (iRv >= 0)
@@ -2784,7 +2784,7 @@ namespace ViewEki {
 		int iSizeEkiTrack2 = m_ListEkiTrack2.GetItemCount();
 		if (idx < 0 || idx >= iSizeEkiTrack2)
 		{
-			iRv = -1;//idx���͈͊O�ł�
+			iRv = -1;//idxが範囲外です
 		}
 
 		if (iRv >= 0)
@@ -2809,7 +2809,7 @@ namespace ViewEki {
 	void ViewEki::CDlgEkiProp::OnLvnItemchangedListEkitrack2(NMHDR* pNMHDR, LRESULT* pResult)
 	{
 		LPNMLISTVIEW pNMLV = reinterpret_cast<LPNMLISTVIEW>(pNMHDR);
-		// TODO: �����ɃR���g���[���ʒm�n���h���[ �R�[�h��ǉ����܂��B
+		// TODO: ここにコントロール通知ハンドラー コードを追加します。
 
 		int iRv = 0;
 		int idx = m_ListEkiTrack2.GetNextItem(-1, LVNI_SELECTED | LVNI_ALL);
@@ -2817,14 +2817,14 @@ namespace ViewEki {
 
 		if (idx < 0 || idx >= iSizeEkiTrack2)
 		{
-			iRv = -1;//idx���͈͊O�ł�
+			iRv = -1;//idxが範囲外です
 		}
 
 		if (iRv >= 0)
 		{
 			if (iSizeEkiTrack2 == 1)
 			{
-				//�Ԑ�����1�̏ꍇ�́A�폜�E��ցE���ւ�����
+				//番線数が1の場合は、削除・上へ・下へが無効
 				GetDlgItem(IDC_BUTTON_EkiTrack2Clear)->EnableWindow(false);
 				GetDlgItem(IDC_BUTTON_EkiTrack2Up)->EnableWindow(false);
 				GetDlgItem(IDC_BUTTON_EkiTrack2Down)->EnableWindow(false);
@@ -2833,7 +2833,7 @@ namespace ViewEki {
 			}
 			else if (idx == 0)
 			{
-				//�ŏ�ʔԐ��̏ꍇ�́A��ւ�����+�폜����{���ݒ�ˑ��B
+				//最上位番線の場合は、上へが無効+削除が主本線設定依存。
 				GetDlgItem(IDC_BUTTON_EkiTrack2Up)->EnableWindow(false);
 				GetDlgItem(IDC_BUTTON_EkiTrack2Down)->EnableWindow(true);
 
@@ -2864,7 +2864,7 @@ namespace ViewEki {
 			}
 			else if (idx == iSizeEkiTrack2 - 1)
 			{
-				//�ŉ��ʔԐ��̏ꍇ�́A���ւ�����+�폜����{���ݒ�ˑ��B
+				//最下位番線の場合は、下へが無効+削除が主本線設定依存。
 				GetDlgItem(IDC_BUTTON_EkiTrack2Up)->EnableWindow(true);
 				GetDlgItem(IDC_BUTTON_EkiTrack2Down)->EnableWindow(false);
 
@@ -2896,7 +2896,7 @@ namespace ViewEki {
 			}
 			else if (idx > 0 && idx < iSizeEkiTrack2 - 1)
 			{
-				//���Ԃ̏ꍇ�́A�폜����{���ݒ�ˑ��B
+				//中間の場合は、削除が主本線設定依存。
 				GetDlgItem(IDC_BUTTON_EkiTrack2Up)->EnableWindow(true);
 				GetDlgItem(IDC_BUTTON_EkiTrack2Down)->EnableWindow(true);
 
@@ -2928,7 +2928,7 @@ namespace ViewEki {
 			}
 			else
 			{
-				//����ȊO�̏ꍇ�́A�폜�E��ցE���ւ�����
+				//それ以外の場合は、削除・上へ・下へが無効
 				GetDlgItem(IDC_BUTTON_EkiTrack2Clear)->EnableWindow(false);
 				GetDlgItem(IDC_BUTTON_EkiTrack2Up)->EnableWindow(false);
 				GetDlgItem(IDC_BUTTON_EkiTrack2Down)->EnableWindow(false);
@@ -3039,14 +3039,14 @@ namespace ViewEki {
 		//int idx = pListBox->GetCurSel();
 		if (!(idx >= 0 && idx < m_ListOuterTerminalEkimei2.GetItemCount()))
 		{
-			iRv = -1;//idx���͈͊O�ł�
+			iRv = -1;//idxが範囲外です
 		}
 		if (iRv >= 0)
 		{
 			int iOuterTerminalIndex = -1;
-			//�I�����ꂽ�w�����A�w�ҏW�J�n���ɑ��݂��Ă������ǂ����𒲂ׂ܂��B
-			//m_iOuterTerminalEkimeiMap�̒��ɁA"idx"�̒l�������̂�����ꍇ�͍ŏ����瑶�݂��Ă��܂��B
-			//���̒l������Map��Index���A���X��Index�ɂȂ�܂��B
+			//選択された駅名が、駅編集開始時に存在していたかどうかを調べます。
+			//m_iOuterTerminalEkimeiMapの中に、"idx"の値を持つものがある場合は最初から存在しています。
+			//その値があるMapのIndexが、元々のIndexになります。
 			for (int idxm = 0; idxm < (int)m_iOuterTerminalEkimeiMap.size(); idxm++)
 			{
 				if (m_iOuterTerminalEkimeiMap[idxm] == idx)
@@ -3055,8 +3055,8 @@ namespace ViewEki {
 					break;
 				}
 			}
-			//�I�����ꂽ�w�����A�w�ҏW�J�n�����瑶�݂���ꍇ�̂݁A
-			//���̉w�����g�p���Ă����Ԃ����݂��邩�𒲂ׂ܂��B
+			//選択された駅名が、駅編集開始時から存在する場合のみ、
+			//その駅名を使用している列車が存在するかを調べます。
 			if (iOuterTerminalIndex >= 0)
 			{
 				int iDiaIndex = -1;
@@ -3076,12 +3076,12 @@ namespace ViewEki {
 							&iDiaIndex, &eRessyahoukou, NULL)
 						!= 0)
 					{
-						iRv = -4;	//�폜���悤�Ƃ��Ă���w��H���O���������Ԃ����݂��܂�
+						iRv = -4;	//削除しようとしている駅を路線外発着する列車が存在します
 						break;
 					}
 				}
 
-				//	�G���[���b�Z�[�W���\��
+				//	エラーメッセージを構成
 				if (iRv == -4)
 				{
 					CString	strEkiName = pCentDedRosen->getCentDedEkiCont()
@@ -3123,14 +3123,14 @@ namespace ViewEki {
 						}
 					}
 					CString	strMsg;
-					//%s�w�ŘH���O�����w�u%s�w�v���g�p�����Ԃ����݂��܂�(%s %s)�B\n�H���O�����w�̍폜�͂ł��܂���B
+					//%s駅で路線外発着駅「%s駅」を使用する列車が存在します(%s %s)。¥n路線外発着駅の削除はできません。
 					strMsg.Format(IDS_ERR_ExistRessyaOfOuterTerminal,
 						strEkiName, strOuterTerminalEkiName, strDiaName, strRessyahoukou);
 					MessageBox(strMsg, NULL, MB_ICONSTOP | MB_OK);
 				}
 			}
-			//���Y�H���O�����w���A�g���Ă��邩�ǂ������m�F����B
-			//�g�p����Ă���ꍇ��iRv=-1
+			//当該路線外発着駅が、使われているかどうかを確認する。
+			//使用されている場合はiRv=-1
 		}
 		if (iRv >= 0)
 		{
@@ -3139,10 +3139,10 @@ namespace ViewEki {
 			//CListBox* pListBox = (CListBox*)GetDlgItem(IDC_LIST_OuterTerminalEkimei);
 			//pListBox->DeleteString(idx);
 
-			//�폜���ꂽ�w�����A�ҏW�J�n�����瑶�݂��Ă����ꍇ�́A
-			//m_iOuterTerminalEkimeiMap�̓��Y�ӏ���-1�ɂ��܂��B
-			//�܂��A�폜�ӏ������ɂ���A�ҏW�J�n�����瑶�݂��Ă����w����
-			//m_iOuterTerminalEkimeiMap�̓��Y�l��-1���܂��B
+			//削除された駅名が、編集開始時から存在していた場合は、
+			//m_iOuterTerminalEkimeiMapの当該箇所を-1にします。
+			//また、削除箇所より後ろにある、編集開始時から存在していた駅名は
+			//m_iOuterTerminalEkimeiMapの当該値を-1します。
 
 			for (int idxm = 0; idxm < (int)m_iOuterTerminalEkimeiMap.size(); idxm++)
 			{
@@ -3165,12 +3165,12 @@ namespace ViewEki {
 	}
 	void ViewEki::CDlgEkiProp::OnBnClickedButtonOuterTerminalEkimeiup()
 	{
-		// TODO: �����ɃR���g���[���ʒm�n���h���[ �R�[�h��ǉ����܂��B
+		// TODO: ここにコントロール通知ハンドラー コードを追加します。
 		int iRv = 0;
 		int idx = m_ListOuterTerminalEkimei2.GetNextItem(-1, LVNI_SELECTED | LVNI_ALL);
 		if (idx < 1 || idx >= m_ListOuterTerminalEkimei2.GetItemCount())
 		{
-			iRv = -1;//idx���͈͊O�ł�
+			iRv = -1;//idxが範囲外です
 		}
 
 		if (iRv >= 0)
@@ -3191,8 +3191,8 @@ namespace ViewEki {
 
 			m_ListOuterTerminalEkimei2.SetItemState(idx - 1, LVIS_SELECTED, LVIS_SELECTED);
 
-			//��ֈړ������Ԑ��y�ѓ���ւ��ŉ��Ɉړ������Ԑ����A�ҏW�J�n�����炠��Ԑ��̏ꍇ�́A
-			//m_iEkiTrack2Map���X�V���܂��B
+			//上へ移動した番線及び入れ替わりで下に移動した番線が、編集開始時からある番線の場合は、
+			//m_iEkiTrack2Mapを更新します。
 			for (int idxm = 0; idxm < (int)m_iOuterTerminalEkimeiMap.size(); idxm++)
 			{
 				if (m_iOuterTerminalEkimeiMap[idxm] == idx)
@@ -3215,12 +3215,12 @@ namespace ViewEki {
 
 	void ViewEki::CDlgEkiProp::OnBnClickedButtonOuterTerminalEkimeidown()
 	{
-		// TODO: �����ɃR���g���[���ʒm�n���h���[ �R�[�h��ǉ����܂��B
+		// TODO: ここにコントロール通知ハンドラー コードを追加します。
 		int iRv = 0;
 		int idx = m_ListOuterTerminalEkimei2.GetNextItem(-1, LVNI_SELECTED | LVNI_ALL);
 		if (idx < 0 || idx >= m_ListOuterTerminalEkimei2.GetItemCount() - 1)
 		{
-			iRv = -1;//idx���͈͊O�ł�
+			iRv = -1;//idxが範囲外です
 		}
 
 		if (iRv >= 0)
@@ -3241,8 +3241,8 @@ namespace ViewEki {
 
 			m_ListOuterTerminalEkimei2.SetItemState(idx + 1, LVIS_SELECTED, LVIS_SELECTED);
 
-			//���ֈړ������Ԑ��y�ѓ���ւ��ŏ�Ɉړ������Ԑ����A�ҏW�J�n�����炠��Ԑ��̏ꍇ�́A
-			//m_iEkiTrack2Map���X�V���܂��B
+			//下へ移動した番線及び入れ替わりで上に移動した番線が、編集開始時からある番線の場合は、
+			//m_iEkiTrack2Mapを更新します。
 			for (int idxm = 0; idxm < (int)m_iOuterTerminalEkimeiMap.size(); idxm++)
 			{
 				if (m_iOuterTerminalEkimeiMap[idxm] == idx)
@@ -3265,7 +3265,7 @@ namespace ViewEki {
 	void ViewEki::CDlgEkiProp::OnNMDblclkListEkitrack2(NMHDR* pNMHDR, LRESULT* pResult)
 	{
 		LPNMITEMACTIVATE pNMItemActivate = reinterpret_cast<LPNMITEMACTIVATE>(pNMHDR);
-		// TODO: �����ɃR���g���[���ʒm�n���h���[ �R�[�h��ǉ����܂��B
+		// TODO: ここにコントロール通知ハンドラー コードを追加します。
 		if (pNMItemActivate->iItem != -1)
 		{
 			CString strTrackName = m_ListEkiTrack2.GetItemText(pNMItemActivate->iItem, 0);
@@ -3342,7 +3342,7 @@ namespace ViewEki {
 	void ViewEki::CDlgEkiProp::OnNMDblclkListOuterterminalekimei2(NMHDR* pNMHDR, LRESULT* pResult)
 	{
 		LPNMITEMACTIVATE pNMItemActivate = reinterpret_cast<LPNMITEMACTIVATE>(pNMHDR);
-		// TODO: �����ɃR���g���[���ʒm�n���h���[ �R�[�h��ǉ����܂��B
+		// TODO: ここにコントロール通知ハンドラー コードを追加します。
 		if (pNMItemActivate->iItem != -1)
 		{
 			CString strOuterEkimei = m_ListOuterTerminalEkimei2.GetItemText(pNMItemActivate->iItem, 0);

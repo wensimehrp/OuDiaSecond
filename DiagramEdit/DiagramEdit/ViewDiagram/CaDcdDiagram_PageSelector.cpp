@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -79,26 +79,26 @@ Copyright (C) 2006-2017 take-okm
 namespace ViewDiagram{
 
 /**
-  ����(�␳�Ώےl)���A�����P�ʂ̔{���}��(�덷���e�l) �Ȃ�A
-  �Ŋ�̑����P�ʂ̔{�����x�̒l�ɕ␳���܂��B
+  整数(補正対象値)が、増減単位の倍数±α(誤差許容値) なら、
+  最寄の増減単位の倍数丁度の値に補正します。
 
-(��)iUnit=5,iAllowedDifference=1 �̏ꍇ�Avalue�ɑ΂��錋�ʂ͈ȉ��̂Ƃ���ł��B
+(例)iUnit=5,iAllowedDifference=1 の場合、valueに対する結果は以下のとおりです。
 
-�@- value=3 �Ȃ� return=3
-�@- value=4 �Ȃ� return=5
-�@- value=5 �Ȃ� return=5
-�@- value=6 �Ȃ� return=5
-�@- value=7 �Ȃ� return=7
+　- value=3 なら return=3
+　- value=4 なら return=5
+　- value=5 なら return=5
+　- value=6 なら return=5
+　- value=7 なら return=7
 
 
 @param value [in]
-	�␳�Ώےl���w�肵�Ă��������B�͈͂�0�ȏ�ł��B
+	補正対象値を指定してください。範囲は0以上です。
 @param iUnit [in]
-	�����P�ʂ��w�肵�Ă��������B�͈͂�1�ȏ�ł��B
+	増減単位を指定してください。範囲は1以上です。
 @param iAllowedDifference [in]
-	�덷���e�l
+	誤差許容値
 @return
-	�␳���ꂽ�l��Ԃ��܂��B
+	補正された値を返します。
 */
 static int adjustForNearestUnit( int value , int iUnit , int iAllowedDifference ) 
 {
@@ -107,32 +107,32 @@ static int adjustForNearestUnit( int value , int iUnit , int iAllowedDifference 
 	if ( iMod == 0 )
 	{
 	}
-	//�␳�P�F(���ݒl%�����P��)��(�덷���e�l) �Ȃ�A
-	//�@���ݒl=���ݒl-(���ݒl%�����P��)
+	//補正１：(現在値%増減単位)≦(誤差許容値) なら、
+	//　現在値=現在値-(現在値%増減単位)
 	//
-	//(��)
-	//�@�����P��=1800
-	//�@���ݒl=1801
-	//�@(�덷���e�l)=1
-	//�̏ꍇ
-	//�@(1801%1800)=1 (���ݒl%�����P��)
-	//�@1801-(1801%1800)=1800
+	//(例)
+	//　増減単位=1800
+	//　現在値=1801
+	//　(誤差許容値)=1
+	//の場合
+	//　(1801%1800)=1 (現在値%増減単位)
+	//　1801-(1801%1800)=1800
 	//
 	else if ( iMod <= iAllowedDifference )
 	{
 		value = value - iMod ; 
 	}
 
-	//�␳�Q�F(���ݒl%�����P��)��(�����P��-�덷���e�l) �Ȃ�A
-	//�@���ݒl=���ݒl+(�����P��-(���ݒl%�����P��))
+	//補正２：(現在値%増減単位)≧(増減単位-誤差許容値) なら、
+	//　現在値=現在値+(増減単位-(現在値%増減単位))
 	//
-	//(��)
-	//�@�����P��=1800
-	//�@���ݒl=3599
-	//�@(�덷���e�l)=1
-	//�̏ꍇ
-	//�@(3599%1800)=1799 (���ݒl%�����P��)
-	//�@3599+(1800-(3599%1800))=3600
+	//(例)
+	//　増減単位=1800
+	//　現在値=3599
+	//　(誤差許容値)=1
+	//の場合
+	//　(3599%1800)=1799 (現在値%増減単位)
+	//　3599+(1800-(3599%1800))=3600
 	else if ( iMod >= ( iUnit - iAllowedDifference ) )
 	{
 		value = value + ( iUnit - iMod ) ; 
@@ -144,7 +144,7 @@ static int adjustForNearestUnit( int value , int iUnit , int iAllowedDifference 
 //	CaDcdDiagram_PageSelector
 // ****************************************************************
 // ********************************
-//	�R���X�g���N�^
+//	コンストラクタ
 // ********************************
 CaDcdDiagram_PageSelector::CaDcdDiagram_PageSelector( 
 		CDcdDiagram2*	pCDcdDiagram2 ,
@@ -161,7 +161,7 @@ CaDcdDiagram_PageSelector::CaDcdDiagram_PageSelector(
 
 
 	
-CaDcdDiagram_PageSelector::~CaDcdDiagram_PageSelector() 
+CaDcdDiagram_PageSelector::‾CaDcdDiagram_PageSelector() 
 {
 	*m_pCDcdDiagram2->getCconvContentPosToDcdTarget() =
 		m_CconvContentPosToDcdTargetPrev ;
@@ -173,10 +173,10 @@ CaDcdDiagram_PageSelector::~CaDcdDiagram_PageSelector()
 bool CaDcdDiagram_PageSelector::DcDraw( IfDcdTarget* pIfDcdTarget ) 
 {
 	CdDcdZoneXy	zonexyZone_Dgr = m_pCDcdDiagram2->getZone_Dgr( pIfDcdTarget ) ;
-	//zonexyZone_Dgr=�`����s�� �_�C���O�������W�͈̔�
+	//zonexyZone_Dgr=描画を行う ダイヤグラム座標の範囲
 	
 	// --------------------------------
-	//	�_�C���O�����S�̗̂̈�(�_�C���O�������W)���擾
+	//	ダイヤグラム全体の領域(ダイヤグラム座標)を取得
 	// --------------------------------
 	CdDcdZoneXy	zonexyCentDcdDgrDia = 
 		m_pCDcdDiagram2->getCentDedDgrDia()->getZone() ;
@@ -192,10 +192,10 @@ bool CaDcdDiagram_PageSelector::DcDraw( IfDcdTarget* pIfDcdTarget )
 			CdDcdZone( zonexyCentDcdDgrDia.getY().getPos() , 
 				adjustForNearestUnit( zonexyCentDcdDgrDia.getY().getSize() , m_sizePage_Dgr.getY() , 1 ) ) ) ;
 	}
-	//zonexyCentDcdDgrDia = �_�C���O�����S�̗̂̈�(�_�C���O�������W)
-	//	�������A�����P�y�[�W�̃T�C�Y(�_�C���O�������W)�ɋ߂��ꍇ�́A
-	//	1�y�[�W�̃T�C�Y�Ɠ����ɂ��܂��B
-	//	���݂ł́A�Ӗ����Ȃ��Ȃ��Ă���悤�ł��B
+	//zonexyCentDcdDgrDia = ダイヤグラム全体の領域(ダイヤグラム座標)
+	//	ただし、幅が１ページのサイズ(ダイヤグラム座標)に近い場合は、
+	//	1ページのサイズと同じにします。
+	//	現在では、意味がなくなっているようです。
 
 	// --------------------------------
 
@@ -214,11 +214,11 @@ bool CaDcdDiagram_PageSelector::getItemSize( IfDcdTarget* pIfDcdTarget ,
 							CdDcdSizeXy* pCdDcdSizeXy ) 
 {
 	CdDcdZoneXy	zonexyZone_Dgr = m_pCDcdDiagram2->getZone_Dgr( pIfDcdTarget ) ;
-	//zonexyZone_Dgr=�`����s�� �_�C���O�������W�͈̔�
-	//	(1�y�[�W�ɕ`�悷��_�C���O�����͈̔�)
+	//zonexyZone_Dgr=描画を行う ダイヤグラム座標の範囲
+	//	(1ページに描画するダイヤグラムの範囲)
 
 	// --------------------------------
-	//	�_�C���O�����S�̗̂̈�(�_�C���O�������W)���擾
+	//	ダイヤグラム全体の領域(ダイヤグラム座標)を取得
 	// --------------------------------
 	CdDcdZoneXy	zonexyCentDcdDgrDia = 
 		m_pCDcdDiagram2->getCentDedDgrDia()->getZone() ;
@@ -234,10 +234,10 @@ bool CaDcdDiagram_PageSelector::getItemSize( IfDcdTarget* pIfDcdTarget ,
 			CdDcdZone( zonexyCentDcdDgrDia.getY().getPos() , 
 				adjustForNearestUnit( zonexyCentDcdDgrDia.getY().getSize() , m_sizePage_Dgr.getY() , 1 ) ) ) ;
 	}
-	//zonexyCentDcdDgrDia = �_�C���O�����S�̗̂̈�(�_�C���O�������W)
-	//	�������A�����P�y�[�W�̃T�C�Y(�_�C���O�������W)�ɋ߂��ꍇ�́A
-	//	1�y�[�W�̃T�C�Y�Ɠ����ɂ��܂��B
-	//	���݂ł́A�Ӗ����Ȃ��Ȃ��Ă���悤�ł��B
+	//zonexyCentDcdDgrDia = ダイヤグラム全体の領域(ダイヤグラム座標)
+	//	ただし、幅が１ページのサイズ(ダイヤグラム座標)に近い場合は、
+	//	1ページのサイズと同じにします。
+	//	現在では、意味がなくなっているようです。
 
 	
 	// --------------------------------
@@ -264,7 +264,7 @@ int CaDcdDiagram_PageSelector::getXPageCount()
 	int iRv = 0 ;
 
 	// --------------------------------
-	//	�_�C���O�����S�̗̂̈�(�_�C���O�������W)���擾
+	//	ダイヤグラム全体の領域(ダイヤグラム座標)を取得
 	// --------------------------------
 	CdDcdZoneXy	zonexyCentDcdDgrDia = 
 		m_pCDcdDiagram2->getCentDedDgrDia()->getZone() ;
@@ -280,24 +280,24 @@ int CaDcdDiagram_PageSelector::getXPageCount()
 			CdDcdZone( zonexyCentDcdDgrDia.getY().getPos() , 
 				adjustForNearestUnit( zonexyCentDcdDgrDia.getY().getSize() , m_sizePage_Dgr.getY() , 1 ) ) ) ;
 	}
-	//zonexyCentDcdDgrDia = �_�C���O�����S�̗̂̈�(�_�C���O�������W)
-	//	�������A�����P�y�[�W�̃T�C�Y(�_�C���O�������W)�ɋ߂��ꍇ�́A
-	//	1�y�[�W�̃T�C�Y�Ɠ����ɂ��܂��B
+	//zonexyCentDcdDgrDia = ダイヤグラム全体の領域(ダイヤグラム座標)
+	//	ただし、幅が１ページのサイズ(ダイヤグラム座標)に近い場合は、
+	//	1ページのサイズと同じにします。
 	//
-	//�y���R�z�����\������Ȃ��y�[�W���������Ȃ��悤�ɂ��邽�߂ł��B
+	//【理由】何も表示されないページが発生しないようにするためです。
 	//
-	//�y��z
-	//�@�E�C���h�E�T�C�Y���_�C���O�����S�̂̃T�C�Y��
-	//	�킸����(�P�s�N�Z��)����Ȃ��ꍇ�B
+	//【例】
+	//　ウインドウサイズがダイヤグラム全体のサイズに
+	//	わずかに(１ピクセル)足りない場合。
 	//		zonexyCentDcdDgrDia.m_Y.m_Size =10800
 	//		m_sizePage_Dgr.m_Y.m_Size      =10799
-	//	Y�����ɕK�v�ȃy�[�W���Q�ƌv�Z����Ă��܂��A
-	//	2�y�[�W�ڂ͌����ڏ�󔒂ɂȂ��Ă��܂��܂��B
+	//	Y方向に必要なページが２と計算されてしまい、
+	//	2ページ目は見た目上空白になってしまいます。
 	//
-	//	�����ł́A
-	//		zonexyCentDcdDgrDia.m_Y.m_Size �� 10799 
-	//	�ɕ␳���邱�Ƃɂ��AY�����ɕK�v�ȃy�[�W��
-	//	�P�ƌv�Z�����邱�Ƃ��ł��܂��B
+	//	ここでは、
+	//		zonexyCentDcdDgrDia.m_Y.m_Size を 10799 
+	//	に補正することにより、Y方向に必要なページを
+	//	１と計算させることができます。
 	
 	// --------------------------------
 
@@ -318,7 +318,7 @@ int CaDcdDiagram_PageSelector::getYPageCount()
 	int iRv = 0 ;
 
 	// --------------------------------
-	//	�_�C���O�����S�̗̂̈�(�_�C���O�������W)���擾
+	//	ダイヤグラム全体の領域(ダイヤグラム座標)を取得
 	// --------------------------------
 	CdDcdZoneXy	zonexyCentDcdDgrDia = 
 		m_pCDcdDiagram2->getCentDedDgrDia()->getZone() ;
@@ -334,11 +334,11 @@ int CaDcdDiagram_PageSelector::getYPageCount()
 			CdDcdZone( zonexyCentDcdDgrDia.getY().getPos() , 
 				adjustForNearestUnit( zonexyCentDcdDgrDia.getY().getSize() , m_sizePage_Dgr.getY() , 1 ) ) ) ;
 	}
-	//zonexyCentDcdDgrDia = �_�C���O�����S�̗̂̈�(�_�C���O�������W)
-	//	�������A�����P�y�[�W�̃T�C�Y(�_�C���O�������W)�ɋ߂��ꍇ�́A
-	//	1�y�[�W�̃T�C�Y�Ɠ����ɂ��܂��B
-	//�y���R�z�����\������Ȃ��y�[�W���������Ȃ��悤�ɂ��邽�߂ł��B
-	//	getXPageCount()���Q�Ƃ��Ă��������B
+	//zonexyCentDcdDgrDia = ダイヤグラム全体の領域(ダイヤグラム座標)
+	//	ただし、幅が１ページのサイズ(ダイヤグラム座標)に近い場合は、
+	//	1ページのサイズと同じにします。
+	//【理由】何も表示されないページが発生しないようにするためです。
+	//	getXPageCount()を参照してください。
 
 	// --------------------------------
 

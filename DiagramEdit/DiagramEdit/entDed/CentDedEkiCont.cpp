@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍAtake-okm‚ªì¬‚µ‚½OuDia‚ğ‰ü‘¢‚µ‚½ƒ\ƒtƒgƒEƒFƒA‚Å‚·B
-‚±‚ÌƒvƒƒOƒ‰ƒ€—˜—p‚É‚Â‚¢‚Ä‚ÍAtake-okm‹LÚ‚Ì‰º‹L•¶‘‚É€‹’‚µ‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã€take-okmæ°ãŒä½œæˆã—ãŸOuDiaã‚’æ”¹é€ ã—ãŸã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ åˆ©ç”¨ã«ã¤ã„ã¦ã¯ã€take-okmæ°è¨˜è¼‰ã®ä¸‹è¨˜æ–‡æ›¸ã«æº–æ‹ ã—ã¾ã™ã€‚
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(–ó: 
+(è¨³: 
 
-	OuDia - —ñÔ•\‚ğ‚à‚Æ‚ÉAƒ_ƒCƒ„ƒOƒ‰ƒ€‚ğ•`‰æ‚·‚éWin32ƒAƒvƒŠƒP[ƒV
-ƒ‡ƒ“B
+	OuDia - åˆ—è»Šæ™‚åˆ»è¡¨ã‚’ã‚‚ã¨ã«ã€ãƒ€ã‚¤ãƒ¤ã‚°ãƒ©ãƒ ã‚’æç”»ã™ã‚‹Win32ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·
+ãƒ§ãƒ³ã€‚
 
 Copyright (C) 2006-2017 take-okm 
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍƒtƒŠ[ƒ\ƒtƒgƒEƒFƒA‚Å‚·B‚ ‚È‚½‚Í‚±‚ê‚ğAƒtƒŠ[ƒ\ƒtƒgƒEƒFƒAà
-’c‚É‚æ‚Á‚Ä”­s‚³‚ê‚½GNU ˆê”ÊŒöO—˜—p‹–‘ø‘(ƒo[ƒWƒ‡ƒ“3‚©A‚»‚êˆÈ~‚Ìƒo[ƒWƒ‡
-ƒ“‚Ì‚¤‚¿‚Ç‚ê‚©)‚ª’è‚ß‚éğŒ‚Ì‰º‚ÅÄ”Ğ•z‚Ü‚½‚Í‰ü•Ï ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™ã€‚ã‚ãªãŸã¯ã“ã‚Œã‚’ã€ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢è²¡
+å›£ã«ã‚ˆã£ã¦ç™ºè¡Œã•ã‚ŒãŸGNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸(ãƒãƒ¼ã‚¸ãƒ§ãƒ³3ã‹ã€ãã‚Œä»¥é™ã®ãƒãƒ¼ã‚¸ãƒ§
+ãƒ³ã®ã†ã¡ã©ã‚Œã‹)ãŒå®šã‚ã‚‹æ¡ä»¶ã®ä¸‹ã§å†é ’å¸ƒã¾ãŸã¯æ”¹å¤‰ ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚Í—L—p‚Å‚ ‚é‚±‚Æ‚ğŠè‚Á‚Ä”Ğ•z‚³‚ê‚Ü‚·‚ªA*‘S‚­‚Ì–³•ÛØ *‚Å‚·B
-¤‹Æ‰Â”\«‚Ì•ÛØ‚â“Á’è–Ú“I‚Ö‚Ì“K‡«‚ÍAŒ¾ŠO‚É¦‚³‚ê‚½‚à‚Ì‚à ŠÜ‚ßA‘S‚­‘¶İ
-‚µ‚Ü‚¹‚ñBÚ‚µ‚­‚ÍGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ğ‚²——‚­‚¾‚³‚¢B
+ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯æœ‰ç”¨ã§ã‚ã‚‹ã“ã¨ã‚’é¡˜ã£ã¦é ’å¸ƒã•ã‚Œã¾ã™ãŒã€*å…¨ãã®ç„¡ä¿è¨¼ *ã§ã™ã€‚
+å•†æ¥­å¯èƒ½æ€§ã®ä¿è¨¼ã‚„ç‰¹å®šç›®çš„ã¸ã®é©åˆæ€§ã¯ã€è¨€å¤–ã«ç¤ºã•ã‚ŒãŸã‚‚ã®ã‚‚ å«ã‚ã€å…¨ãå­˜åœ¨
+ã—ã¾ã›ã‚“ã€‚è©³ã—ãã¯GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã‚’ã”è¦§ãã ã•ã„ã€‚
 
-‚ ‚È‚½‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚Æ‹¤‚ÉAGNU ˆê”ÊŒöO—˜—p‹–‘ø‘‚ÌƒRƒs[‚ğˆê•” ó‚¯æ‚Á
-‚Ä‚¢‚é‚Í‚¸‚Å‚·B‚à‚µó‚¯æ‚Á‚Ä‚¢‚È‚¯‚ê‚ÎA<http://www.gnu.org/licenses/> ‚ğ
-‚²——‚­‚¾‚³‚¢B
+ã‚ãªãŸã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¨å…±ã«ã€GNU ä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾æ›¸ã®ã‚³ãƒ”ãƒ¼ã‚’ä¸€éƒ¨ å—ã‘å–ã£
+ã¦ã„ã‚‹ã¯ãšã§ã™ã€‚ã‚‚ã—å—ã‘å–ã£ã¦ã„ãªã‘ã‚Œã°ã€<http://www.gnu.org/licenses/> ã‚’
+ã”è¦§ãã ã•ã„ã€‚
 
 )
 
-  ‰Á‚¦‚ÄA“Á•Ê‚È—áŠO‚Æ‚µ‚ÄAtake-okm ‚Í‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÌƒR[ƒh‚ğ 
+  åŠ ãˆã¦ã€ç‰¹åˆ¥ãªä¾‹å¤–ã¨ã—ã¦ã€take-okm ã¯ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ã‚³ãƒ¼ãƒ‰ã‚’ 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ‚ ‚é‚¢‚Í "MFC Version 9.0" ‚Æ“¯‚¶ƒ‰ƒCƒZƒ“ƒX‚ª“K—p‚³‚ê‚½
-  "MFC Version 9.0" ‚Ì‰ü•Ï‚³‚ê‚½ƒo[ƒWƒ‡ƒ“)‚ÆƒŠƒ“ƒN‚µA
-  ƒŠƒ“ƒN‚³‚ê‚½—¼Ò‚ğŠÜ‚ŞŒ‹‡’˜ì•¨‚ğ”Ğ•z‚·‚é‹–‰Â‚ğ—^‚¦‚Ü‚·B
-  ‚ ‚È‚½‚Í "MFC" ˆÈŠO‚Åg‚í‚ê‚Ä‚¢‚é‚·‚×‚Ä
-  ‚ÌƒR[ƒh‚ÉŠÖ‚µ‚Ä‚Í‘S–Ê“I‚ÉGNUˆê”ÊŒöO—˜—p‹–‘øŒ_–ñ‘‚É]‚í‚È‚¯‚ê‚Î
-  ‚È‚è‚Ü‚¹‚ñB‚ ‚È‚½‚ª‚±‚Ìƒtƒ@ƒCƒ‹‚ğ‰ü•Ï‚µ‚½‚È‚ç‚ÎA‚ ‚È‚½‚Í‚±‚Ì—áŠO
-  ‚ğ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚Ìƒtƒ@ƒCƒ‹‚Éˆø‚«‘±‚«İ‚¯‚é‚±‚Æ‚à‚Å‚«‚Ü‚·‚ªA‚»
-  ‚¤‚·‚é‹`–±‚Í‚ ‚è‚Ü‚¹‚ñB‚à‚µ—áŠO‚ğİ‚¯‚½‚­‚È‚¯‚ê‚ÎA‚±‚Ì—áŠOğ€‚ğ
-  ‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚©‚ç‚Ííœ‚µ‚Ä‚­‚¾‚³‚¢B)
+  (  ã‚ã‚‹ã„ã¯ "MFC Version 9.0" ã¨åŒã˜ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ãŒé©ç”¨ã•ã‚ŒãŸ
+  "MFC Version 9.0" ã®æ”¹å¤‰ã•ã‚ŒãŸãƒãƒ¼ã‚¸ãƒ§ãƒ³)ã¨ãƒªãƒ³ã‚¯ã—ã€
+  ãƒªãƒ³ã‚¯ã•ã‚ŒãŸä¸¡è€…ã‚’å«ã‚€çµåˆè‘—ä½œç‰©ã‚’é ’å¸ƒã™ã‚‹è¨±å¯ã‚’ä¸ãˆã¾ã™ã€‚
+  ã‚ãªãŸã¯ "MFC" ä»¥å¤–ã§ä½¿ã‚ã‚Œã¦ã„ã‚‹ã™ã¹ã¦
+  ã®ã‚³ãƒ¼ãƒ‰ã«é–¢ã—ã¦ã¯å…¨é¢çš„ã«GNUä¸€èˆ¬å…¬è¡†åˆ©ç”¨è¨±è«¾å¥‘ç´„æ›¸ã«å¾“ã‚ãªã‘ã‚Œã°
+  ãªã‚Šã¾ã›ã‚“ã€‚ã‚ãªãŸãŒã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ”¹å¤‰ã—ãŸãªã‚‰ã°ã€ã‚ãªãŸã¯ã“ã®ä¾‹å¤–
+  ã‚’ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®ãƒ•ã‚¡ã‚¤ãƒ«ã«å¼•ãç¶šãè¨­ã‘ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ãŒã€ã
+  ã†ã™ã‚‹ç¾©å‹™ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ã‚‚ã—ä¾‹å¤–ã‚’è¨­ã‘ãŸããªã‘ã‚Œã°ã€ã“ã®ä¾‹å¤–æ¡é …ã‚’
+  ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‹ã‚‰ã¯å‰Šé™¤ã—ã¦ãã ã•ã„ã€‚)
 */
 /*
 // ****************************************************************
@@ -110,7 +110,7 @@ CentDedEkiCont::CdDedEki CentDedEkiCont::ContKudari::get(int iEkiOrder)const
 	{
 		 aCentDedEkiNext = pAdaptee->get(iEkiIndex + 1);
 	}
-	//‰º‚è‚Ì‹«ŠEüF“–‰w‚ª‰º‚è’…•BrunchCoreEkiIndex>=0 ‚à‚µ‚­‚Í Next‚ªã‚è’…•BrunchCoreEkiIndex>=0
+	//ä¸‹ã‚Šã®å¢ƒç•Œç·šï¼šå½“é§…ãŒä¸‹ã‚Šç€ï¼†BrunchCoreEkiIndex>=0 ã‚‚ã—ãã¯ NextãŒä¸Šã‚Šç€ï¼†BrunchCoreEkiIndex>=0
 	bool bKyoukaisen = false;
 	if (aCentDedEki.getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku &&
 		aCentDedEki.getBrunchCoreEkiIndex() >= 0)
@@ -127,7 +127,7 @@ CentDedEkiCont::CdDedEki CentDedEkiCont::ContKudari::get(int iEkiOrder)const
 	{
 		bKyoukaisen = true;
 	}
-	//”Ôü•ÒWƒ‚[ƒh‚Ì”Ôü•\È—ªF“–‰w‚ª”­•\¦‚à‚µ‚­‚Íã‚è”­’…‚Étrue
+	//ç•ªç·šç·¨é›†ãƒ¢ãƒ¼ãƒ‰æ™‚ã®ç•ªç·šè¡¨çœç•¥ï¼šå½“é§…ãŒç™ºæ™‚åˆ»è¡¨ç¤ºã‚‚ã—ãã¯ä¸Šã‚Šç™ºç€æ™‚ã«true
 	bool bJikokuhyouTrackOmit = false;
 	if ((aCentDedEki.getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu ||
 		aCentDedEki.getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku) &&
@@ -136,7 +136,7 @@ CentDedEkiCont::CdDedEki CentDedEkiCont::ContKudari::get(int iEkiOrder)const
 		bJikokuhyouTrackOmit = true;
 	}
 
-	//Šî–{ƒ‚[ƒh‚Ìì‹Æ•\¦—“İ’èB‰wŒ`®‚ªã‚è”­’…(E”­)‚Ìê‡‚ÍA‰º‚è•\‚Ìì‹Æ—“‚Íİ‚¯‚È‚¢
+	//åŸºæœ¬ãƒ¢ãƒ¼ãƒ‰æ™‚ã®ä½œæ¥­è¡¨ç¤ºæ¬„è¨­å®šã€‚é§…å½¢å¼ãŒä¸Šã‚Šç™ºç€(ãƒ»ç™ºæ™‚åˆ»)ã®å ´åˆã¯ã€ä¸‹ã‚Šæ™‚åˆ»è¡¨ã®ä½œæ¥­æ¬„ã¯è¨­ã‘ãªã„
 	int iJikokuhyouOperationOrigin = 0;
 	int iJikokuhyouOperationTerminal = 0;
 	bool bJikokuhyouBeforeOperationBefore = false;
@@ -225,7 +225,7 @@ CentDedEkiCont::CdDedEki CentDedEkiCont::ContNobori::get(int iEkiOrder )const
 	if ( iEkiIndex > 0 ){
 		aCentDedEkiPrev = pAdaptee->get( iEkiIndex - 1 ) ;
 	}
-	//ã‚è‚Ì‹«ŠEüF“–‰w‚ªã‚è’…•BrunchCoreEkiIndex>=0 ‚à‚µ‚­‚Í Prev‚ª‰º‚è’…•BrunchCoreEkiIndex>=0
+	//ä¸Šã‚Šã®å¢ƒç•Œç·šï¼šå½“é§…ãŒä¸Šã‚Šç€ï¼†BrunchCoreEkiIndex>=0 ã‚‚ã—ãã¯ PrevãŒä¸‹ã‚Šç€ï¼†BrunchCoreEkiIndex>=0
 	bool bKyoukaisen = false;
 	if (aCentDedEkiPrev.getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku &&
 		aCentDedEkiPrev.getBrunchCoreEkiIndex() >= 0)
@@ -243,7 +243,7 @@ CentDedEkiCont::CdDedEki CentDedEkiCont::ContNobori::get(int iEkiOrder )const
 		bKyoukaisen = true;
 	}
 
-	//”Ôü•ÒWƒ‚[ƒh‚Ì”Ôü•\È—ªF“–‰w‚ª”­•\¦‚à‚µ‚­‚Í‰º‚è”­’…‚Étrue
+	//ç•ªç·šç·¨é›†ãƒ¢ãƒ¼ãƒ‰æ™‚ã®ç•ªç·šè¡¨çœç•¥ï¼šå½“é§…ãŒç™ºæ™‚åˆ»è¡¨ç¤ºã‚‚ã—ãã¯ä¸‹ã‚Šç™ºç€æ™‚ã«true
 	bool bJikokuhyouTrackOmit = false;
 	if ((aCentDedEki.getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu ||
 		aCentDedEki.getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku) &&
@@ -252,7 +252,7 @@ CentDedEkiCont::CdDedEki CentDedEkiCont::ContNobori::get(int iEkiOrder )const
 		bJikokuhyouTrackOmit = true;
 	}
 
-	//Šî–{ƒ‚[ƒh‚Ìì‹Æ•\¦—“İ’èB‰wŒ`®‚ª‰º‚è”­’…(E”­)‚Ìê‡‚ÍAã‚è•\‚Ìì‹Æ—“‚Íİ‚¯‚È‚¢
+	//åŸºæœ¬ãƒ¢ãƒ¼ãƒ‰æ™‚ã®ä½œæ¥­è¡¨ç¤ºæ¬„è¨­å®šã€‚é§…å½¢å¼ãŒä¸‹ã‚Šç™ºç€(ãƒ»ç™ºæ™‚åˆ»)ã®å ´åˆã¯ã€ä¸Šã‚Šæ™‚åˆ»è¡¨ã®ä½œæ¥­æ¬„ã¯è¨­ã‘ãªã„
 	int iJikokuhyouOperationOrigin = 0;
 	int iJikokuhyouOperationTerminal = 0;
 	bool bJikokuhyouBeforeOperationBefore = false;
@@ -272,7 +272,7 @@ CentDedEkiCont::CdDedEki CentDedEkiCont::ContNobori::get(int iEkiOrder )const
 		bJikokuhyouAfterOperationAfter = aCentDedEki.getJikokuhyouOperationOriginDownBeforeUpAfter();
 	}
 
-	//17.4.14 ‰wŒ`®‚ğ’Ç‰Á_by_d_mania
+	//17.4.14 é§…å½¢å¼ã‚’è¿½åŠ _by_d_mania
 	CentDedEkiCont::CdDedEki aCdDedEki( 
 		aCentDedEki.getEkimei() , 
 		aCentDedEki.getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku || 
@@ -335,9 +335,9 @@ int CentDedEkiCont::insert( const CentDedEki& element ,  int iIndex )
 	{
 		iRv = super::insert( element ,  iIndex ) ;
 	}
-	//m_iID‚ÌƒZƒbƒgAŒ»İ‚Ì’l‚ª0ˆÈã‚Ìê‡‚ÍAƒ_ƒu‚è‚ª‚È‚¢‚©‚ğƒ`ƒFƒbƒNA
-	//d•¡‚·‚éê‡‚Í‹ó‚¢‚Ä‚¢‚é’l‚ğŠ„‚è“–‚Ä
-	//0–¢–‚Ìê‡‚ÍA0ˆÈã‚Å‹ó‚¢‚Ä‚¢‚é’l‚ğŠ„‚è“–‚Ä
+	//m_iIDã®ã‚»ãƒƒãƒˆã€ç¾åœ¨ã®å€¤ãŒ0ä»¥ä¸Šã®å ´åˆã¯ã€ãƒ€ãƒ–ã‚ŠãŒãªã„ã‹ã‚’ãƒã‚§ãƒƒã‚¯ã€
+	//é‡è¤‡ã™ã‚‹å ´åˆã¯ç©ºã„ã¦ã„ã‚‹å€¤ã‚’å‰²ã‚Šå½“ã¦
+	//0æœªæº€ã®å ´åˆã¯ã€0ä»¥ä¸Šã§ç©ºã„ã¦ã„ã‚‹å€¤ã‚’å‰²ã‚Šå½“ã¦
 	if (iRv >= 0)
 	{
 		if (element.getID() < 0)
@@ -359,7 +359,7 @@ int CentDedEkiCont::insert( const CentDedEki& element ,  int iIndex )
 					break;
 				}
 			}
-			//bExist‚ªfalse‚Ì‚Ü‚Ü‚¾‚Á‚½ê‡Afor‚©‚ç”²‚¯AiNewID‚ğID‚Æ‚µ‚ÄƒZƒbƒg‚·‚éB
+			//bExistãŒfalseã®ã¾ã¾ã ã£ãŸå ´åˆã€forã‹ã‚‰æŠœã‘ã€iNewIDã‚’IDã¨ã—ã¦ã‚»ãƒƒãƒˆã™ã‚‹ã€‚
 			getMuPtr()->get(iIndex)->setID(iNewID);
 		}
 		else
@@ -372,8 +372,8 @@ int CentDedEkiCont::insert( const CentDedEki& element ,  int iIndex )
 					bExist = true;
 				}
 			}
-			//bExist‚ªfalse‚Ì‚Ü‚Ü‚È‚çA”í‚Á‚Ä‚¢‚È‚¢‚Ì‚ÅA‚»‚Ì‚Ü‚ÜB
-			//true‚Ìê‡”í‚Á‚Ä‚¢‚é‚Ì‚ÅAV‚µ‚¢ID‚ğ•t—^‚·‚é
+			//bExistãŒfalseã®ã¾ã¾ãªã‚‰ã€è¢«ã£ã¦ã„ãªã„ã®ã§ã€ãã®ã¾ã¾ã€‚
+			//trueã®å ´åˆè¢«ã£ã¦ã„ã‚‹ã®ã§ã€æ–°ã—ã„IDã‚’ä»˜ä¸ã™ã‚‹
 			if (bExist)
 			{
 				int iNewID;
@@ -396,9 +396,9 @@ int CentDedEkiCont::insert( const CentDedEki& element ,  int iIndex )
 			}
 		}
 	}
-	//	  ‚±‚ÌƒRƒ“ƒeƒi‚ª CentDedRosen ‚É•ïŠÜ‚³‚ê‚Ä‚¢‚éê‡A insert() 
-	//	ƒƒ\ƒbƒh‚ÍACentDedRosen::onEkInsert( iEkiIndex ) 
-	//	‚Éˆ—‚ğˆÏ÷‚µ‚Ü‚·B
+	//	  ã“ã®ã‚³ãƒ³ãƒ†ãƒŠãŒ CentDedRosen ã«åŒ…å«ã•ã‚Œã¦ã„ã‚‹å ´åˆã€ insert() 
+	//	ãƒ¡ã‚½ãƒƒãƒ‰ã¯ã€CentDedRosen::onEkInsert( iEkiIndex ) 
+	//	ã«å‡¦ç†ã‚’å§”è­²ã—ã¾ã™ã€‚
 	if ( iRv >= 0 )
 	{
 		CentDedRosen* pRosen = getRosen() ;
@@ -428,7 +428,7 @@ int CentDedEkiCont::erase( int iIndex  , int iSize )
 	}
 	if ( !( 0 <= iIndex && iIndex + iSize <= (int)size() ) )
 	{
-		iRv = -1 ;	//	ƒCƒ“ƒfƒNƒX‚ª”ÍˆÍŠO‚Å‚·B
+		iRv = -1 ;	//	ã‚¤ãƒ³ãƒ‡ã‚¯ã‚¹ãŒç¯„å›²å¤–ã§ã™ã€‚
 	}
 	// --------------------------------	
 	if ( iRv >= 0 )
@@ -436,9 +436,9 @@ int CentDedEkiCont::erase( int iIndex  , int iSize )
 		iRv = super::erase( iIndex , iSize ) ; 
 	}
 	// --------------------------------	
-	//	  ‚±‚ÌƒRƒ“ƒeƒi‚ª  CentDedRosen ‚É•ïŠÜ‚³‚ê‚Ä‚¢‚éê‡A erase() 
-	//	ƒƒ\ƒbƒh‚ÍACentDedRosen::onEkiErase( iEkiIndex )
-	//	‚Éˆ—‚ğˆÏ÷‚µ‚Ü‚·B
+	//	  ã“ã®ã‚³ãƒ³ãƒ†ãƒŠãŒ  CentDedRosen ã«åŒ…å«ã•ã‚Œã¦ã„ã‚‹å ´åˆã€ erase() 
+	//	ãƒ¡ã‚½ãƒƒãƒ‰ã¯ã€CentDedRosen::onEkiErase( iEkiIndex )
+	//	ã«å‡¦ç†ã‚’å§”è­²ã—ã¾ã™ã€‚
 	if ( iRv >= 0 )
 	{
 		CentDedRosen* pRosen = getRosen() ;
@@ -470,9 +470,9 @@ int CentDedEkiCont::set( const CentDedEki& element , int iIndex )
 	{
 		iRv = super::set( element ,  iIndex ) ;
 	}
-	//m_iID‚ÌƒZƒbƒgAŒ»İ‚Ì’l‚ª0ˆÈã‚Ìê‡‚ÍAƒ_ƒu‚è‚ª‚È‚¢‚©‚ğƒ`ƒFƒbƒNA
-	//d•¡‚·‚éê‡‚Í‹ó‚¢‚Ä‚¢‚é’l‚ğŠ„‚è“–‚Ä
-	//0–¢–‚Ìê‡‚ÍA0ˆÈã‚Å‹ó‚¢‚Ä‚¢‚é’l‚ğŠ„‚è“–‚Ä
+	//m_iIDã®ã‚»ãƒƒãƒˆã€ç¾åœ¨ã®å€¤ãŒ0ä»¥ä¸Šã®å ´åˆã¯ã€ãƒ€ãƒ–ã‚ŠãŒãªã„ã‹ã‚’ãƒã‚§ãƒƒã‚¯ã€
+	//é‡è¤‡ã™ã‚‹å ´åˆã¯ç©ºã„ã¦ã„ã‚‹å€¤ã‚’å‰²ã‚Šå½“ã¦
+	//0æœªæº€ã®å ´åˆã¯ã€0ä»¥ä¸Šã§ç©ºã„ã¦ã„ã‚‹å€¤ã‚’å‰²ã‚Šå½“ã¦
 	if (iRv >= 0)
 	{
 		if (element.getID() < 0)
@@ -494,7 +494,7 @@ int CentDedEkiCont::set( const CentDedEki& element , int iIndex )
 					break;
 				}
 			}
-			//bExist‚ªfalse‚Ì‚Ü‚Ü‚¾‚Á‚½ê‡Afor‚©‚ç”²‚¯AiNewID‚ğID‚Æ‚µ‚ÄƒZƒbƒg‚·‚éB
+			//bExistãŒfalseã®ã¾ã¾ã ã£ãŸå ´åˆã€forã‹ã‚‰æŠœã‘ã€iNewIDã‚’IDã¨ã—ã¦ã‚»ãƒƒãƒˆã™ã‚‹ã€‚
 			getMuPtr()->get(iIndex)->setID(iNewID);
 		}
 		else
@@ -507,8 +507,8 @@ int CentDedEkiCont::set( const CentDedEki& element , int iIndex )
 					bExist = true;
 				}
 			}
-			//bExist‚ªfalse‚Ì‚Ü‚Ü‚È‚çA”í‚Á‚Ä‚¢‚È‚¢‚Ì‚ÅA‚»‚Ì‚Ü‚ÜB
-			//true‚Ìê‡”í‚Á‚Ä‚¢‚é‚Ì‚ÅAV‚µ‚¢ID‚ğ•t—^‚·‚é
+			//bExistãŒfalseã®ã¾ã¾ãªã‚‰ã€è¢«ã£ã¦ã„ãªã„ã®ã§ã€ãã®ã¾ã¾ã€‚
+			//trueã®å ´åˆè¢«ã£ã¦ã„ã‚‹ã®ã§ã€æ–°ã—ã„IDã‚’ä»˜ä¸ã™ã‚‹
 			if (bExist)
 			{
 				int iNewID;
@@ -535,7 +535,7 @@ int CentDedEkiCont::set( const CentDedEki& element , int iIndex )
 }
 
 	// ********************************
-	//@name CentDedEkiCont-‘€ì
+	//@name CentDedEkiCont-æ“ä½œ
 	// ********************************
 
 int CentDedEkiCont::setable( const CentDedEki& element , int iIndex )const
@@ -652,14 +652,14 @@ bool CentDedEkiCont::adjustBrunchLoopByBrunchEdit(int iEkiIndex,
 	CentDedEki* pCentDedEkiThis = getMuPtr()->get(iEkiIndex);
 	CentDedEki* pCentDedEkiCore = getMuPtr()->get(iBrunchCoreEkiIndex);
 
-	//”Ôüİ’è‚Ì“ˆê‚ğs‚¤BŒ´‘¥ŠîŠ²‰w‘¤—DæB
+	//ç•ªç·šè¨­å®šã®çµ±ä¸€ã‚’è¡Œã†ã€‚åŸå‰‡åŸºå¹¹é§…å´å„ªå…ˆã€‚
 	CentDedEkiTrack2Cont* pCentDedEkiTrack2ContThis = pCentDedEkiThis->getEkiTrack2Cont();
 	CentDedEkiTrack2Cont* pCentDedEkiTrack2ContCore = pCentDedEkiCore->getEkiTrack2Cont();
 	int iCompareResultEkiTrack2 = pCentDedEkiTrack2ContCore->compareEkiTrack2(pCentDedEkiTrack2ContThis);
 	if (iCompareResultEkiTrack2 > 0)
 	{
-		//ŠîŠ²‰w‚Æ‚Ì”Ôü•å–{üİ’è‚ÅA‚±‚Ì‰w‚Éã‘‚«‚µ‚Ü‚·B
-		//İü•\”ñ•\¦İ’è‚ÍA’Ç‰Á‚³‚ê‚é•ª‚ğfalse‚Å–„‚ß‚Ü‚·B
+		//åŸºå¹¹é§…ã¨ã®ç•ªç·šï¼†ä¸»æœ¬ç·šè¨­å®šã§ã€ã“ã®é§…ã«ä¸Šæ›¸ãã—ã¾ã™ã€‚
+		//åœ¨ç·šè¡¨éè¡¨ç¤ºè¨­å®šã¯ã€è¿½åŠ ã•ã‚Œã‚‹åˆ†ã‚’falseã§åŸ‹ã‚ã¾ã™ã€‚
 		for (int iEkiTrack2Index = 0; iEkiTrack2Index < pCentDedEkiTrack2ContThis->size(); iEkiTrack2Index++)
 		{
 			pCentDedEkiTrack2ContThis->set(pCentDedEkiTrack2ContCore->get(iEkiTrack2Index), iEkiTrack2Index);
@@ -673,9 +673,9 @@ bool CentDedEkiCont::adjustBrunchLoopByBrunchEdit(int iEkiIndex,
 	}
 	else if (iCompareResultEkiTrack2 < 0)
 	{
-		//ŠîŠ²‰w‚Ì”Ôüî•ñ‚ğ‚±‚Ì‰w‚ÉƒRƒs[‚µ‚½ã‚ÅA
-		//‚±‚Ì‰w‚Ì”Ôü‚Ì‚¤‚¿AŠîŠ²‰w‚Ì”Ôü”‚ğ’´‚¦‚é•ª‚ğAŠîŠ²‰w‹y‚Ñ‘¼‚Ì”h¶‰wE˜AŒ‹‚µ‚Ä‚¢‚é‹N“_EI“_‰w‚É‚É’Ç‰Á‚µ‚Ü‚·B
-		//İü•\”ñ•\¦İ’è‚ÍA’Ç‰Á‚³‚ê‚é•ª‚ğfalse‚Å–„‚ß‚Ü‚·B
+		//åŸºå¹¹é§…ã®ç•ªç·šæƒ…å ±ã‚’ã“ã®é§…ã«ã‚³ãƒ”ãƒ¼ã—ãŸä¸Šã§ã€
+		//ã“ã®é§…ã®ç•ªç·šã®ã†ã¡ã€åŸºå¹¹é§…ã®ç•ªç·šæ•°ã‚’è¶…ãˆã‚‹åˆ†ã‚’ã€åŸºå¹¹é§…åŠã³ä»–ã®æ´¾ç”Ÿé§…ãƒ»é€£çµã—ã¦ã„ã‚‹èµ·ç‚¹ãƒ»çµ‚ç‚¹é§…ã«ã«è¿½åŠ ã—ã¾ã™ã€‚
+		//åœ¨ç·šè¡¨éè¡¨ç¤ºè¨­å®šã¯ã€è¿½åŠ ã•ã‚Œã‚‹åˆ†ã‚’falseã§åŸ‹ã‚ã¾ã™ã€‚
 		for (int iEkiTrack2Index = 0; iEkiTrack2Index < pCentDedEkiTrack2ContCore->size(); iEkiTrack2Index++)
 		{
 			pCentDedEkiTrack2ContThis->set(pCentDedEkiTrack2ContCore->get(iEkiTrack2Index), iEkiTrack2Index);
@@ -714,7 +714,7 @@ bool CentDedEkiCont::adjustBrunchLoopByBrunchEdit(int iEkiIndex,
 			}
 		}
 	}
-	//å–{üİ’è‚ğŠîŠ²‰w‚©‚ç‚±‚Ì‰w‚ÉƒRƒs[‚µ‚Ü‚·
+	//ä¸»æœ¬ç·šè¨­å®šã‚’åŸºå¹¹é§…ã‹ã‚‰ã“ã®é§…ã«ã‚³ãƒ”ãƒ¼ã—ã¾ã™
 	int iCompareResultEki = pCentDedEkiThis->compareMainTrack(pCentDedEkiCore);
 	if (iCompareResultEki == 3)
 	{
@@ -730,19 +730,19 @@ bool CentDedEkiCont::adjustBrunchLoopByBrunchEdit(int iEkiIndex,
 		pCentDedEkiThis->setDownMain(pCentDedEkiCore->getDownMain());
 	}
 
-	//˜HüŠO”­’…‰w‚Ì’²®‚ğs‚¢‚Ü‚·B
-	//(1)iOuterTerminalEkimeiMap‚Ì‰Šú‰»‚ğs‚¤
+	//è·¯ç·šå¤–ç™ºç€é§…ã®èª¿æ•´ã‚’è¡Œã„ã¾ã™ã€‚
+	//(1)iOuterTerminalEkimeiMapã®åˆæœŸåŒ–ã‚’è¡Œã†
 	for (int idx = 0; idx < pCentDedEkiThis->getOuterTerminalEkimeiCount(); idx++)
 	{
 		iOuterTerminalEkimeiMap.push_back(idx);
 	}
 
-	//(2)”h¶‰w‚ÆŠîŠ²‰w‚Ì”äŠr‚ğs‚¢A•sˆê’v(!=0)‚Ìê‡‚ÍA—Z‡ì‹Æ‚ğs‚¤
-	//‚Ü‚¸A”h¶‰w‚Ì’†‚ÉAŠîŠ²‰w‚É‚È‚¢‚à‚Ì‚ª‚ ‚Á‚½‚çA‚»‚ê‚ğŠîŠ²‰w‘¤‚É’Ç‰Á‚·‚éB
-	//Ÿ‚ÉA”h¶‰w‚ğŠîŠ²‰w‚Ì—v‘f‚Åã‘‚«‚·‚éB‚±‚Ìã‘‚«‚ÍAŒÀ’èˆê’v(1)‚Ìê‡‚às‚¤
+	//(2)æ´¾ç”Ÿé§…ã¨åŸºå¹¹é§…ã®æ¯”è¼ƒã‚’è¡Œã„ã€ä¸ä¸€è‡´(!=0)ã®å ´åˆã¯ã€èåˆä½œæ¥­ã‚’è¡Œã†
+	//ã¾ãšã€æ´¾ç”Ÿé§…ã®ä¸­ã«ã€åŸºå¹¹é§…ã«ãªã„ã‚‚ã®ãŒã‚ã£ãŸã‚‰ã€ãã‚Œã‚’åŸºå¹¹é§…å´ã«è¿½åŠ ã™ã‚‹ã€‚
+	//æ¬¡ã«ã€æ´¾ç”Ÿé§…ã‚’åŸºå¹¹é§…ã®è¦ç´ ã§ä¸Šæ›¸ãã™ã‚‹ã€‚ã“ã®ä¸Šæ›¸ãã¯ã€é™å®šä¸€è‡´(1)ã®å ´åˆã‚‚è¡Œã†
 	int iCompareResultOuterTerminal = pCentDedEkiThis->compareOuterTerminal(pCentDedEkiCore);
 
-	//iCompareResultOuterTerminal‚ª-1,2,3‚Ì‚ÉA’Ç‰Áì‹Æ‚ğs‚¤
+	//iCompareResultOuterTerminalãŒ-1,2,3ã®æ™‚ã«ã€è¿½åŠ ä½œæ¥­ã‚’è¡Œã†
 	for (int idx = 0; idx < pCentDedEkiThis->getOuterTerminalEkimeiCount() && 
 		(iCompareResultOuterTerminal >= 2 || iCompareResultOuterTerminal <= -1); idx++)
 	{
@@ -797,9 +797,9 @@ bool CentDedEkiCont::adjustBrunchLoopByBrunchEdit(int iEkiIndex,
 	}
 
 	/**
-		Œğ·xáƒ`ƒFƒbƒNƒ‹[ƒ‹‚Ì’²®‚ğs‚¤
-		(1)This‘¤‚Ìƒ‹[ƒ‹‚Ì˜HüŠO”­’…‰wIndex‚ğ•â³‚·‚é
-		(2)—¼‘¤‚Ìƒ‹[ƒ‹‚ğˆê‚Â‚É‚Ü‚Æ‚ß‚é(”h¶‰w‚Ìƒ‹[ƒ‹‚ğŠîŠ²‰w‚ÌŒã‚ë‚É‚Â‚È‚°AŠîŠ²‰w‚Ìƒ‹[ƒ‹‚ğ‘S‰w‚ÉƒRƒs[‚·‚é)
+		äº¤å·®æ”¯éšœãƒã‚§ãƒƒã‚¯ãƒ«ãƒ¼ãƒ«ã®èª¿æ•´ã‚’è¡Œã†
+		(1)Thiså´ã®ãƒ«ãƒ¼ãƒ«ã®è·¯ç·šå¤–ç™ºç€é§…Indexã‚’è£œæ­£ã™ã‚‹
+		(2)ä¸¡å´ã®ãƒ«ãƒ¼ãƒ«ã‚’ä¸€ã¤ã«ã¾ã¨ã‚ã‚‹(æ´¾ç”Ÿé§…ã®ãƒ«ãƒ¼ãƒ«ã‚’åŸºå¹¹é§…ã®å¾Œã‚ã«ã¤ãªã’ã€åŸºå¹¹é§…ã®ãƒ«ãƒ¼ãƒ«ã‚’å…¨é§…ã«ã‚³ãƒ”ãƒ¼ã™ã‚‹)
 	*/
 
 	for (int idx = 0; idx < pCentDedEkiThis->getCrossingCheckRuleSize(); idx++)
@@ -889,15 +889,15 @@ int CentDedEkiCont::adjustBrunchLoopByLoopEdit(int iEkiIndex,
 	CentDedEki* pCentDedEkiThis = getMuPtr()->get(iEkiIndex);
 	CentDedEki* pCentDedEkiOrigin = getMuPtr()->get(iLoopOriginEkiIndex);
 
-	//”Ôüİ’è‚Ì“ˆê‚ğs‚¤BŒ´‘¥‹N“_‰w‘¤—DæB
+	//ç•ªç·šè¨­å®šã®çµ±ä¸€ã‚’è¡Œã†ã€‚åŸå‰‡èµ·ç‚¹é§…å´å„ªå…ˆã€‚
 	CentDedEkiTrack2Cont* pCentDedEkiTrack2ContThis = pCentDedEkiThis->getEkiTrack2Cont();
 	CentDedEkiTrack2Cont* pCentDedEkiTrack2ContOrigin = pCentDedEkiOrigin->getEkiTrack2Cont();
 	int iCompareResultEkiTrack2 = pCentDedEkiTrack2ContOrigin->compareEkiTrack2(pCentDedEkiTrack2ContThis);
 	if (iCompareResultEkiTrack2 > 0)
 	{
-		//‹N“_‰w‚Æ‚Ì”Ôü•å–{üİ’è‚ÅA‚±‚Ì‰w‚Éã‘‚«‚µ‚Ü‚·B
-		//‚Ü‚½A‚±‚Ì‰w‚æ‚è‰º—¬‚Ì‰w‚É‚àã‘‚«‚µ‚Ü‚·
-		//İü•\”ñ•\¦İ’è‚ÍA’Ç‰Á‚³‚ê‚é•ª‚ğfalse‚Å–„‚ß‚Ü‚·B
+		//èµ·ç‚¹é§…ã¨ã®ç•ªç·šï¼†ä¸»æœ¬ç·šè¨­å®šã§ã€ã“ã®é§…ã«ä¸Šæ›¸ãã—ã¾ã™ã€‚
+		//ã¾ãŸã€ã“ã®é§…ã‚ˆã‚Šä¸‹æµã®é§…ã«ã‚‚ä¸Šæ›¸ãã—ã¾ã™
+		//åœ¨ç·šè¡¨éè¡¨ç¤ºè¨­å®šã¯ã€è¿½åŠ ã•ã‚Œã‚‹åˆ†ã‚’falseã§åŸ‹ã‚ã¾ã™ã€‚
 
 		//for (int idxl = 1; idxl < (int)iEkiIndexLoop.size(); idxl++)
 		for (int idxl = iPosition; idxl < (int)iEkiIndexLoop.size(); idxl++)
@@ -935,9 +935,9 @@ int CentDedEkiCont::adjustBrunchLoopByLoopEdit(int iEkiIndex,
 	}
 	else if (iCompareResultEkiTrack2 < 0)
 	{
-		//‹N“_‰w‚Ì”Ôüî•ñ‚ğ‚±‚Ì‰w‹y‚Ñ‰º—¬‚Ì‰w‚ÉƒRƒs[‚µ‚½ã‚ÅA
-		//‚±‚Ì‰w‚Ì”Ôü‚Ì‚¤‚¿A‹N“_‰w‚Ì”Ôü”‚ğ’´‚¦‚é•ª‚ğA‹N“_‰w‹y‚Ñ‚»‚Ìã—¬‚Ì‰w‚É’Ç‰Á‚µ‚Ü‚·B
-		//İü•\”ñ•\¦İ’è‚ÍA’Ç‰Á‚³‚ê‚é•ª‚ğfalse‚Å–„‚ß‚Ü‚·B
+		//èµ·ç‚¹é§…ã®ç•ªç·šæƒ…å ±ã‚’ã“ã®é§…åŠã³ä¸‹æµã®é§…ã«ã‚³ãƒ”ãƒ¼ã—ãŸä¸Šã§ã€
+		//ã“ã®é§…ã®ç•ªç·šã®ã†ã¡ã€èµ·ç‚¹é§…ã®ç•ªç·šæ•°ã‚’è¶…ãˆã‚‹åˆ†ã‚’ã€èµ·ç‚¹é§…åŠã³ãã®ä¸Šæµã®é§…ã«è¿½åŠ ã—ã¾ã™ã€‚
+		//åœ¨ç·šè¡¨éè¡¨ç¤ºè¨­å®šã¯ã€è¿½åŠ ã•ã‚Œã‚‹åˆ†ã‚’falseã§åŸ‹ã‚ã¾ã™ã€‚
 
 		for (int iEkiTrack2Index = 0; iEkiTrack2Index < pCentDedEkiTrack2ContOrigin->size(); iEkiTrack2Index++)
 		{
@@ -981,7 +981,7 @@ int CentDedEkiCont::adjustBrunchLoopByLoopEdit(int iEkiIndex,
 			}
 		}
 	}
-	//å–{üİ’è‚ğ‹N“_‰w‚©‚ç‚±‚Ì‰w‹y‚Ñ‰º—¬‰w‚ÉƒRƒs[‚µ‚Ü‚·
+	//ä¸»æœ¬ç·šè¨­å®šã‚’èµ·ç‚¹é§…ã‹ã‚‰ã“ã®é§…åŠã³ä¸‹æµé§…ã«ã‚³ãƒ”ãƒ¼ã—ã¾ã™
 	int iCompareResultEki = pCentDedEkiThis->compareMainTrack(pCentDedEkiOrigin);
 	if (iCompareResultEki == 3)
 	{
@@ -1034,18 +1034,18 @@ int CentDedEkiCont::adjustBrunchLoopByLoopEdit(int iEkiIndex,
 		}
 	}
 
-	//˜HüŠO”­’…‰w‚Ì’²®‚ğs‚¢‚Ü‚·B
-	//(1)iOuterTerminalEkimeiMap‚Ì‰Šú‰»‚ğs‚¤
+	//è·¯ç·šå¤–ç™ºç€é§…ã®èª¿æ•´ã‚’è¡Œã„ã¾ã™ã€‚
+	//(1)iOuterTerminalEkimeiMapã®åˆæœŸåŒ–ã‚’è¡Œã†
 	for (int idx = 0; idx < pCentDedEkiThis->getOuterTerminalEkimeiCount(); idx++)
 	{
 		iOuterTerminalEkimeiMap.push_back(idx);
 	}
-	//(2)‹N“_‰w‚ÆI“_‰w‚Ì”äŠr‚ğs‚¢A•sˆê’v(!=0)‚Ìê‡‚ÍA—Z‡ì‹Æ‚ğs‚¤
-	//‚Ü‚¸AI“_‰w‚Ì’†‚ÉA‹N“_‰w‚É‚È‚¢‚à‚Ì‚ª‚ ‚Á‚½‚çA‚»‚ê‚ğ‹N“_‰w‘¤‚É’Ç‰Á‚·‚éB
-	//Ÿ‚ÉAI“_‰w‘¤‚ğ‹N“_‰w‚Ì—v‘f‚Åã‘‚«‚·‚éB‚±‚Ìã‘‚«‚ÍAŒÀ’èˆê’v(1)‚Ìê‡‚às‚¤
+	//(2)èµ·ç‚¹é§…ã¨çµ‚ç‚¹é§…ã®æ¯”è¼ƒã‚’è¡Œã„ã€ä¸ä¸€è‡´(!=0)ã®å ´åˆã¯ã€èåˆä½œæ¥­ã‚’è¡Œã†
+	//ã¾ãšã€çµ‚ç‚¹é§…ã®ä¸­ã«ã€èµ·ç‚¹é§…ã«ãªã„ã‚‚ã®ãŒã‚ã£ãŸã‚‰ã€ãã‚Œã‚’èµ·ç‚¹é§…å´ã«è¿½åŠ ã™ã‚‹ã€‚
+	//æ¬¡ã«ã€çµ‚ç‚¹é§…å´ã‚’èµ·ç‚¹é§…ã®è¦ç´ ã§ä¸Šæ›¸ãã™ã‚‹ã€‚ã“ã®ä¸Šæ›¸ãã¯ã€é™å®šä¸€è‡´(1)ã®å ´åˆã‚‚è¡Œã†
 	int iCompareResultOuterTerminal = pCentDedEkiThis->compareOuterTerminal(pCentDedEkiOrigin);
 
-	//iCompareResultOuterTerminal‚ª-1,2,3‚Ì‚ÉA’Ç‰Áì‹Æ‚ğs‚¤
+	//iCompareResultOuterTerminalãŒ-1,2,3ã®æ™‚ã«ã€è¿½åŠ ä½œæ¥­ã‚’è¡Œã†
 	for (int idx = 0; idx < pCentDedEkiThis->getOuterTerminalEkimeiCount() && 
 		(iCompareResultOuterTerminal >= 2 || iCompareResultOuterTerminal <= -1); idx++)
 	{
@@ -1053,7 +1053,7 @@ int CentDedEkiCont::adjustBrunchLoopByLoopEdit(int iEkiIndex,
 		int iOuterTerminalExsit = pCentDedEkiOrigin->searchOuterTerminalEkimei(sOuterTerminal.OuterTerminalEkimei);
 		if (iOuterTerminalExsit < 0)
 		{
-			//‹N“_‰w‚¨‚æ‚Ñ‚»‚ê‚æ‚èã—¬‚Ì‰w‚É’Ç‰Á‚ğs‚¤
+			//èµ·ç‚¹é§…ãŠã‚ˆã³ãã‚Œã‚ˆã‚Šä¸Šæµã®é§…ã«è¿½åŠ ã‚’è¡Œã†
 			for (int idxl = 0; idxl < iPosition; idxl++)
 			{
 				CentDedEki* pCentDedEkiTarget =
@@ -1105,9 +1105,9 @@ int CentDedEkiCont::adjustBrunchLoopByLoopEdit(int iEkiIndex,
 	}
 
 	/**
-		Œğ·xáƒ`ƒFƒbƒNƒ‹[ƒ‹‚Ì’²®‚ğs‚¤
-		(1)This‘¤(‚½‚¾‚µAŒã‚ÅƒRƒs[‚·‚é‚Ì‚ÅAI“_‰w‚¾‚¯‚Å‚æ‚¢)‚Ìƒ‹[ƒ‹‚Ì˜HüŠO”­’…‰wIndex‚ğ•â³‚·‚é
-		(2)—¼‘¤‚Ìƒ‹[ƒ‹‚ğˆê‚Â‚É‚Ü‚Æ‚ß‚é(I“_‰w‚Ìƒ‹[ƒ‹‚ğ‹N“_‰w‚ÌŒã‚ë‚É‚Â‚È‚°A‹N“_‰w‚Ìƒ‹[ƒ‹‚ğ‘S‰w‚ÉƒRƒs[‚·‚é)
+		äº¤å·®æ”¯éšœãƒã‚§ãƒƒã‚¯ãƒ«ãƒ¼ãƒ«ã®èª¿æ•´ã‚’è¡Œã†
+		(1)Thiså´(ãŸã ã—ã€å¾Œã§ã‚³ãƒ”ãƒ¼ã™ã‚‹ã®ã§ã€çµ‚ç‚¹é§…ã ã‘ã§ã‚ˆã„)ã®ãƒ«ãƒ¼ãƒ«ã®è·¯ç·šå¤–ç™ºç€é§…Indexã‚’è£œæ­£ã™ã‚‹
+		(2)ä¸¡å´ã®ãƒ«ãƒ¼ãƒ«ã‚’ä¸€ã¤ã«ã¾ã¨ã‚ã‚‹(çµ‚ç‚¹é§…ã®ãƒ«ãƒ¼ãƒ«ã‚’èµ·ç‚¹é§…ã®å¾Œã‚ã«ã¤ãªã’ã€èµ·ç‚¹é§…ã®ãƒ«ãƒ¼ãƒ«ã‚’å…¨é§…ã«ã‚³ãƒ”ãƒ¼ã™ã‚‹)
 	*/
 
 	for (int idx = 0; idx < pCentDedEkiThis->getCrossingCheckRuleSize(); idx++)
@@ -1186,14 +1186,14 @@ int CentDedEkiCont::adjustBrunchLoopByLoopEdit(int iEkiIndex,
 int CentDedEkiCont::getEkiIndexBrunchLoop(
 	int iEkiIndex, deque<int>& iEkiIndexBrunchLoop)const
 {	
-	//•ÒW‰w‚ÌBrunchCore‹y‚ÑLoopOrigin‚ğŠî‚ÉAê‡•ª‚¯
+	//ç·¨é›†é§…ã®BrunchCoreåŠã³LoopOriginã‚’åŸºã«ã€å ´åˆåˆ†ã‘
 	iEkiIndexBrunchLoop.push_back(iEkiIndex);
 	const CentDedEki* pCentDedEkiThis = getMuPtr()->get(iEkiIndex);
 
 	if (pCentDedEkiThis->getBrunchCoreEkiIndex() >= 0 &&
 		pCentDedEkiThis->getBrunchCoreEkiIndex() > iEkiIndex)
 	{
-		//•ÒW‰w‚ªA‰º•û‚Ö‚Ì”h¶‰w‚Ìê‡BŠîŠ²‰w‚©‚ç‰º‚ÉŒq‚ª‚Á‚Ä‚¢‚é‰Â”\«‚ ‚è
+		//ç·¨é›†é§…ãŒã€ä¸‹æ–¹ã¸ã®æ´¾ç”Ÿé§…ã®å ´åˆã€‚åŸºå¹¹é§…ã‹ã‚‰ä¸‹ã«ç¹‹ãŒã£ã¦ã„ã‚‹å¯èƒ½æ€§ã‚ã‚Š
 		int iEkiIndexCore = pCentDedEkiThis->getBrunchCoreEkiIndex();
 		iEkiIndexBrunchLoop.push_back(iEkiIndexCore);
 		for (int idxu = iEkiIndexCore - 1; idxu >= 0; idxu--)
@@ -1231,7 +1231,7 @@ int CentDedEkiCont::getEkiIndexBrunchLoop(
 	else if (pCentDedEkiThis->getBrunchCoreEkiIndex() >= 0 &&
 		pCentDedEkiThis->getBrunchCoreEkiIndex() < iEkiIndex)
 	{
-		//•ÒW‰w‚ªAã•û‚Ö‚Ì”h¶‰w‚Ìê‡BŠîŠ²‰w‚©‚çã‚É‚Â‚È‚ª‚Á‚Ä‚¢‚é‰Â”\«‚ ‚è
+		//ç·¨é›†é§…ãŒã€ä¸Šæ–¹ã¸ã®æ´¾ç”Ÿé§…ã®å ´åˆã€‚åŸºå¹¹é§…ã‹ã‚‰ä¸Šã«ã¤ãªãŒã£ã¦ã„ã‚‹å¯èƒ½æ€§ã‚ã‚Š
 		int iEkiIndexCore = pCentDedEkiThis->getBrunchCoreEkiIndex();
 		iEkiIndexBrunchLoop.push_back(iEkiIndexCore);
 
@@ -1259,11 +1259,11 @@ int CentDedEkiCont::getEkiIndexBrunchLoop(
 	}
 	else if (pCentDedEkiThis->getLoopOriginEkiIndex() >= 0)
 	{
-		//•ÒW‰w‚ªAI“_‰w‚Ìê‡B‰º•û‚©‚ç‚Ìn“_‰wORŠîŠ²‰w‚Ì‰Â”\«‚ ‚è
+		//ç·¨é›†é§…ãŒã€çµ‚ç‚¹é§…ã®å ´åˆã€‚ä¸‹æ–¹ã‹ã‚‰ã®å§‹ç‚¹é§…ORåŸºå¹¹é§…ã®å¯èƒ½æ€§ã‚ã‚Š
 		int iEkiIndexOrigin = pCentDedEkiThis->getLoopOriginEkiIndex();
 		iEkiIndexBrunchLoop.push_back(iEkiIndexOrigin);
 
-		//ã•û’Tõ
+		//ä¸Šæ–¹æ¢ç´¢
 		int idxl = iEkiIndexOrigin;
 		while (get(idxl).getLoopOriginEkiIndex() >= 0)
 		{
@@ -1278,7 +1278,7 @@ int CentDedEkiCont::getEkiIndexBrunchLoop(
 			}
 		}
 
-		//‰º•û’Tõ
+		//ä¸‹æ–¹æ¢ç´¢
 		idxl = iEkiIndex;
 		bool bSearch;
 		do
@@ -1305,8 +1305,8 @@ int CentDedEkiCont::getEkiIndexBrunchLoop(
 	}
 	else
 	{
-		//•ÒW‰w‚©‚ç‚Í•ªŠò‰wİ’èEŠÂóüİ’è‚ª‚È‚³‚ê‚Ä‚¢‚È‚¢ê‡BŠîŠ²‰w‚à‚µ‚­‚Í‹N“_‰w‚Ì‰Â”\«‚ ‚è
-		//ã•û’Tõ
+		//ç·¨é›†é§…ã‹ã‚‰ã¯åˆ†å²é§…è¨­å®šãƒ»ç’°çŠ¶ç·šè¨­å®šãŒãªã•ã‚Œã¦ã„ãªã„å ´åˆã€‚åŸºå¹¹é§…ã‚‚ã—ãã¯èµ·ç‚¹é§…ã®å¯èƒ½æ€§ã‚ã‚Š
+		//ä¸Šæ–¹æ¢ç´¢
 		for (int idxu = iEkiIndex - 1; idxu >= 0; idxu--)
 		{
 			if (get(idxu).getBrunchCoreEkiIndex() == iEkiIndex)
@@ -1315,7 +1315,7 @@ int CentDedEkiCont::getEkiIndexBrunchLoop(
 			}
 		}
 
-		//‰º•û’Tõ
+		//ä¸‹æ–¹æ¢ç´¢
 		int idxl = iEkiIndex;
 		bool bSearch;
 		do
@@ -1347,13 +1347,13 @@ int CentDedEkiCont::searchEkiIndexBrunchLoop(
 	int iEkiIndex, deque<int>& iEkiIndexBrunchOriginSide, 
 	deque<int>& iEkiIndexLoop, deque<int>& iEkiIndexBrunchTerminalSide) const
 {
-	//•ÒW‰w‚ÌBrunchCore‹y‚ÑLoopOrigin‚ğŠî‚ÉAê‡•ª‚¯
+	//ç·¨é›†é§…ã®BrunchCoreåŠã³LoopOriginã‚’åŸºã«ã€å ´åˆåˆ†ã‘
 	const CentDedEki* pCentDedEkiThis = getMuPtr()->get(iEkiIndex);
 
 	if (pCentDedEkiThis->getBrunchCoreEkiIndex() >= 0 &&
 		pCentDedEkiThis->getBrunchCoreEkiIndex() > iEkiIndex)
 	{
-		//•ÒW‰w‚ªA‹N“_•û”h¶‰w‚Ìê‡BŠîŠ²‰w‚©‚ç‰º‚ÉŒq‚ª‚Á‚Ä‚¢‚é‰Â”\«‚ ‚è
+		//ç·¨é›†é§…ãŒã€èµ·ç‚¹æ–¹æ´¾ç”Ÿé§…ã®å ´åˆã€‚åŸºå¹¹é§…ã‹ã‚‰ä¸‹ã«ç¹‹ãŒã£ã¦ã„ã‚‹å¯èƒ½æ€§ã‚ã‚Š
 		//iEkiIndexBrunchOriginSide.push_back(iEkiIndex);
 		int iEkiIndexCore = pCentDedEkiThis->getBrunchCoreEkiIndex();
 		iEkiIndexLoop.push_back(iEkiIndexCore);
@@ -1395,7 +1395,7 @@ int CentDedEkiCont::searchEkiIndexBrunchLoop(
 	else if (pCentDedEkiThis->getBrunchCoreEkiIndex() >= 0 &&
 		pCentDedEkiThis->getBrunchCoreEkiIndex() < iEkiIndex)
 	{
-		//•ÒW‰w‚ªAã•û‚Ö‚Ì”h¶‰w‚Ìê‡BŠîŠ²‰w‚©‚çã‚É‚Â‚È‚ª‚Á‚Ä‚¢‚é‰Â”\«‚ ‚è
+		//ç·¨é›†é§…ãŒã€ä¸Šæ–¹ã¸ã®æ´¾ç”Ÿé§…ã®å ´åˆã€‚åŸºå¹¹é§…ã‹ã‚‰ä¸Šã«ã¤ãªãŒã£ã¦ã„ã‚‹å¯èƒ½æ€§ã‚ã‚Š
 		//iEkiIndexBrunchTerminalSide.push_back(iEkiIndex);
 		int iEkiIndexCore = pCentDedEkiThis->getBrunchCoreEkiIndex();
 		iEkiIndexLoop.push_back(iEkiIndexCore);
@@ -1427,12 +1427,12 @@ int CentDedEkiCont::searchEkiIndexBrunchLoop(
 	}
 	else if (pCentDedEkiThis->getLoopOriginEkiIndex() >= 0)
 	{
-		//•ÒW‰w‚ªAI“_‰w‚Ìê‡B‰º•û‚©‚ç‚Ìn“_‰wORŠîŠ²‰w‚Ì‰Â”\«‚ ‚è
+		//ç·¨é›†é§…ãŒã€çµ‚ç‚¹é§…ã®å ´åˆã€‚ä¸‹æ–¹ã‹ã‚‰ã®å§‹ç‚¹é§…ORåŸºå¹¹é§…ã®å¯èƒ½æ€§ã‚ã‚Š
 		iEkiIndexLoop.push_back(iEkiIndex);
 		int iEkiIndexOrigin = pCentDedEkiThis->getLoopOriginEkiIndex();
 		iEkiIndexLoop.push_front(iEkiIndexOrigin);
 
-		//ã•û’Tõ
+		//ä¸Šæ–¹æ¢ç´¢
 		int idxl = iEkiIndexOrigin;
 		while (get(idxl).getLoopOriginEkiIndex() >= 0)
 		{
@@ -1448,7 +1448,7 @@ int CentDedEkiCont::searchEkiIndexBrunchLoop(
 			}
 		}
 
-		//‰º•û’Tõ
+		//ä¸‹æ–¹æ¢ç´¢
 		idxl = iEkiIndex;
 		bool bSearch;
 		do
@@ -1483,8 +1483,8 @@ int CentDedEkiCont::searchEkiIndexBrunchLoop(
 	}
 	else
 	{
-		//•ÒW‰w‚©‚ç‚Í•ªŠò‰wİ’èEŠÂóüİ’è‚ª‚È‚³‚ê‚Ä‚¢‚È‚¢ê‡BŠîŠ²‰w‚à‚µ‚­‚Í‹N“_‰w‚Ì‰Â”\«‚ ‚è
-		//ã•û’Tõ
+		//ç·¨é›†é§…ã‹ã‚‰ã¯åˆ†å²é§…è¨­å®šãƒ»ç’°çŠ¶ç·šè¨­å®šãŒãªã•ã‚Œã¦ã„ãªã„å ´åˆã€‚åŸºå¹¹é§…ã‚‚ã—ãã¯èµ·ç‚¹é§…ã®å¯èƒ½æ€§ã‚ã‚Š
+		//ä¸Šæ–¹æ¢ç´¢
 		//for (int idxo = iEkiIndex - 1; idxo >= 0; idxo--)
 		for (int idxo = 0; idxo < iEkiIndex; idxo++)
 		{
@@ -1498,7 +1498,7 @@ int CentDedEkiCont::searchEkiIndexBrunchLoop(
 			}
 		}
 
-		//‰º•û’Tõ
+		//ä¸‹æ–¹æ¢ç´¢
 		int idxl = iEkiIndex;
 		bool bSearch;
 		do
@@ -1625,11 +1625,11 @@ int CentDedEkiCont::getEkiOrderBrunchLoop(
 
 int CentDedEkiCont::getEkiIndexBrunchConvert(int iEkiIndex, deque<int>& iEkiIndexBrunchGroup) const
 {
-	//•ÒW‰w‚ÌBrunchCore‹y‚ÑLoopOrigin‚ğŠî‚ÉAê‡•ª‚¯
+	//ç·¨é›†é§…ã®BrunchCoreåŠã³LoopOriginã‚’åŸºã«ã€å ´åˆåˆ†ã‘
 	const CentDedEki* pCentDedEkiThis = getMuPtr()->get(iEkiIndex);
 	if (pCentDedEkiThis->getBrunchCoreEkiIndex() >= 0 )
 	{
-		//•ÒW‰w‚ªA‰º•û‚Ö‚Ì”h¶‰w‚Ìê‡BŠîŠ²‰w‚©‚ç‰º‚ÉŒq‚ª‚Á‚Ä‚¢‚é‰Â”\«‚ ‚è
+		//ç·¨é›†é§…ãŒã€ä¸‹æ–¹ã¸ã®æ´¾ç”Ÿé§…ã®å ´åˆã€‚åŸºå¹¹é§…ã‹ã‚‰ä¸‹ã«ç¹‹ãŒã£ã¦ã„ã‚‹å¯èƒ½æ€§ã‚ã‚Š
 		iEkiIndexBrunchGroup.push_back(iEkiIndex);
 		int iEkiIndexCore = pCentDedEkiThis->getBrunchCoreEkiIndex();
 		//iEkiIndexBrunchGroup.push_back(iEkiIndexCore);
@@ -1645,7 +1645,7 @@ int CentDedEkiCont::getEkiIndexBrunchConvert(int iEkiIndex, deque<int>& iEkiInde
 	}
 	else
 	{
-		//•ÒW‰w‚©‚ç‚Í•ªŠò‰wİ’èEŠÂóüİ’è‚ª‚È‚³‚ê‚Ä‚¢‚È‚¢ê‡BŠîŠ²‰w‚Ì‰Â”\«‚ ‚è
+		//ç·¨é›†é§…ã‹ã‚‰ã¯åˆ†å²é§…è¨­å®šãƒ»ç’°çŠ¶ç·šè¨­å®šãŒãªã•ã‚Œã¦ã„ãªã„å ´åˆã€‚åŸºå¹¹é§…ã®å¯èƒ½æ€§ã‚ã‚Š
 		for (int idx = 0; idx < size(); idx++)
 		{
 			if (get(idx).getBrunchCoreEkiIndex() == iEkiIndex)
@@ -1731,9 +1731,9 @@ void CentDedEkiCont::adjustBrunchLoopEkiTrack2OuterTerminal(
 
 		if (iCompareResultEkiTrack2 > 0)
 		{
-			//iCompareResultEkiTrack2‚ª1E2‚Ìê‡‚ÍA
-			//•ÒW‚³‚ê‚½‰w‚Ì”Ôü•å–{üİ’è‚ÅAƒOƒ‹[ƒv‚Ì‘¼‚Ì‰w‚Éã‘‚«‚µ‚Ü‚·B
-			//2‚Ìê‡‚ÍA’Ç‰Á‚³‚ê‚½•ª‚ğ––”ö‚Öinsert‚µ‚Ü‚·B
+			//iCompareResultEkiTrack2ãŒ1ãƒ»2ã®å ´åˆã¯ã€
+			//ç·¨é›†ã•ã‚ŒãŸé§…ã®ç•ªç·šï¼†ä¸»æœ¬ç·šè¨­å®šã§ã€ã‚°ãƒ«ãƒ¼ãƒ—ã®ä»–ã®é§…ã«ä¸Šæ›¸ãã—ã¾ã™ã€‚
+			//2ã®å ´åˆã¯ã€è¿½åŠ ã•ã‚ŒãŸåˆ†ã‚’æœ«å°¾ã¸insertã—ã¾ã™ã€‚
 			for (int iEkiTrack2Index = 0; iEkiTrack2Index < pEkiTrack2ContTarget->size(); iEkiTrack2Index++)
 			{
 				pEkiTrack2ContTarget->set(pEkiTrack2ContThis->get(iEkiTrack2Index), iEkiTrack2Index);
@@ -1746,8 +1746,8 @@ void CentDedEkiCont::adjustBrunchLoopEkiTrack2OuterTerminal(
 		}
 		else if (iCompareResultEkiTrack2 < 0)
 		{
-			//iCompareResultEkiTrack2‚ª-1‚Ìê‡‚ÍA
-			//•ÒW‚³‚ê‚½‰w‚Ì”Ôü•å–{üİ’è‚ÅAƒOƒ‹[ƒv‚Ì‘¼‚Ì‰w‚Éã‘‚«‚µAŒ¸­‚µ‚½•ª‚ğtarget‚©‚çerase‚µ‚Ü‚·
+			//iCompareResultEkiTrack2ãŒ-1ã®å ´åˆã¯ã€
+			//ç·¨é›†ã•ã‚ŒãŸé§…ã®ç•ªç·šï¼†ä¸»æœ¬ç·šè¨­å®šã§ã€ã‚°ãƒ«ãƒ¼ãƒ—ã®ä»–ã®é§…ã«ä¸Šæ›¸ãã—ã€æ¸›å°‘ã—ãŸåˆ†ã‚’targetã‹ã‚‰eraseã—ã¾ã™
 			for (int iEkiTrack2Index = 0; iEkiTrack2Index < pEkiTrack2ContThis->size(); iEkiTrack2Index++)
 			{
 				pEkiTrack2ContTarget->set(pEkiTrack2ContThis->get(iEkiTrack2Index), iEkiTrack2Index);
@@ -1760,9 +1760,9 @@ void CentDedEkiCont::adjustBrunchLoopEkiTrack2OuterTerminal(
 
 		if (iCompareResultOuterEkimei > 0)
 		{
-			//iCompareResultOuterEkimei‚ª1-3‚Ìê‡‚ÍA
-			//•ÒW‚³‚ê‚½‰w‚Ì˜HüŠO”­’…‰w‚ÅAƒOƒ‹[ƒv‚Ì‘¼‚Ì‰w‚Éã‘‚«‚µ‚Ü‚·B
-			//3‚Ìê‡‚ÍA’Ç‰Á‚³‚ê‚½•ª‚ğ––”ö‚Öinsert‚µ‚Ü‚·B
+			//iCompareResultOuterEkimeiãŒ1-3ã®å ´åˆã¯ã€
+			//ç·¨é›†ã•ã‚ŒãŸé§…ã®è·¯ç·šå¤–ç™ºç€é§…ã§ã€ã‚°ãƒ«ãƒ¼ãƒ—ã®ä»–ã®é§…ã«ä¸Šæ›¸ãã—ã¾ã™ã€‚
+			//3ã®å ´åˆã¯ã€è¿½åŠ ã•ã‚ŒãŸåˆ†ã‚’æœ«å°¾ã¸insertã—ã¾ã™ã€‚
 			for (int iOuterEkimeiIndex = 0; iOuterEkimeiIndex < pCentDedEkiTarget->getOuterTerminalEkimeiCount(); iOuterEkimeiIndex++)
 			{
 				pCentDedEkiTarget->setOuterTerminalEkimei(pCentDedEkiThis->getOuterTerminal(iOuterEkimeiIndex), iOuterEkimeiIndex);
@@ -1776,8 +1776,8 @@ void CentDedEkiCont::adjustBrunchLoopEkiTrack2OuterTerminal(
 		}
 		else if (iCompareResultOuterEkimei < 0)
 		{
-			//iCompareResultOuterEkimei‚ª-1‚Ìê‡‚ÍA
-			//•ÒW‚³‚ê‚½‰w‚Ì˜HüŠO”­’…‰w‚ÅAƒOƒ‹[ƒv‚Ì‘¼‚Ì‰w‚Éã‘‚«‚µAŒ¸­‚µ‚½•ª‚ğtarget‚©‚çerase‚µ‚Ü‚·
+			//iCompareResultOuterEkimeiãŒ-1ã®å ´åˆã¯ã€
+			//ç·¨é›†ã•ã‚ŒãŸé§…ã®è·¯ç·šå¤–ç™ºç€é§…ã§ã€ã‚°ãƒ«ãƒ¼ãƒ—ã®ä»–ã®é§…ã«ä¸Šæ›¸ãã—ã€æ¸›å°‘ã—ãŸåˆ†ã‚’targetã‹ã‚‰eraseã—ã¾ã™
 			for (int iOuterEkimeiIndex = 0; iOuterEkimeiIndex < pCentDedEkiThis->getOuterTerminalEkimeiCount(); iOuterEkimeiIndex++)
 			{
 				pCentDedEkiTarget->setOuterTerminalEkimei(pCentDedEkiThis->getOuterTerminal(iOuterEkimeiIndex), iOuterEkimeiIndex);
@@ -1787,12 +1787,12 @@ void CentDedEkiCont::adjustBrunchLoopEkiTrack2OuterTerminal(
 
 		if (iCompareResultEkiTrack2 != 0)
 		{
-			//iEkiTrack2Map‚ğ‚à‚Æ‚ÉADiagramTrackOmit‚ğV‚½‚É\’z‚·‚é
+			//iEkiTrack2Mapã‚’ã‚‚ã¨ã«ã€DiagramTrackOmitã‚’æ–°ãŸã«æ§‹ç¯‰ã™ã‚‹
 			vector<bool> bNewDiagramTrackOmit;
 			for (int iEkiTrack2Index = 0; iEkiTrack2Index < pEkiTrack2ContTarget->size(); iEkiTrack2Index++)
 			{
-				//iEkiTrack2Map‚Ì’†‚©‚çAV‚µ‚¢iEkiTrack2Index”Ôü‚ğ’T‚µo‚µAŒ©‚Â‚©‚Á‚½‚çŒ³‚ÌDiagramTrackOmit‚©‚çæ“¾‚µ‚ÄAbNewDiagramTrackOmit‚Éû‚ß‚é
-				//Œ©‚Â‚©‚ç‚È‚©‚Á‚½‚çAV‚µ‚¢”Ôü‚È‚Ì‚ÅAfalse‚ğ“ü‚ê‚Ä‚¨‚­
+				//iEkiTrack2Mapã®ä¸­ã‹ã‚‰ã€æ–°ã—ã„iEkiTrack2Indexç•ªç·šã‚’æ¢ã—å‡ºã—ã€è¦‹ã¤ã‹ã£ãŸã‚‰å…ƒã®DiagramTrackOmitã‹ã‚‰å–å¾—ã—ã¦ã€bNewDiagramTrackOmitã«åã‚ã‚‹
+				//è¦‹ã¤ã‹ã‚‰ãªã‹ã£ãŸã‚‰ã€æ–°ã—ã„ç•ªç·šãªã®ã§ã€falseã‚’å…¥ã‚Œã¦ãŠã
 				bool bFound = false;
 				for (int idx = 0; idx < iEkiTrack2Map.size(); idx++)
 				{
@@ -1933,13 +1933,13 @@ void CentDedEkiCont::mergeOuterTerminal(
 	{
 		const CentDedEki* pCentDedEkiTarget =
 			getMuPtr()->get(iEkiIndexLoop[idxl]);
-		//iOuterTerminalMapCont‚Ì‰Šú‰»
+		//iOuterTerminalMapContã®åˆæœŸåŒ–
 		for (int idxot = 0; idxot < pCentDedEkiTarget->getOuterTerminalEkimeiCount(); idxot++)
 		{
 			iOuterTerminalMapCont[iEkiIndexLoop[idxl]].push_back(idxot);
 		}
 		int iCompareResultOuterTerminal = pCentDedEkiTarget->compareOuterTerminal(pCentDedEkiCore);
-		//”äŠrŒ‹‰Ê‚ª-1,2,3‚¾‚Á‚½ê‡‚ÍACore‚É‚È‚­‚ÄTarget‚É‚ ‚é‚à‚Ì‚ğACore‚É’Ç‰Á‚µ‚Ä‚¢‚­
+		//æ¯”è¼ƒçµæœãŒ-1,2,3ã ã£ãŸå ´åˆã¯ã€Coreã«ãªãã¦Targetã«ã‚ã‚‹ã‚‚ã®ã‚’ã€Coreã«è¿½åŠ ã—ã¦ã„ã
 		for (int idxot = 0; idxot < pCentDedEkiTarget->getOuterTerminalEkimeiCount() && 
 			(iCompareResultOuterTerminal >= 2 || iCompareResultOuterTerminal <= -1); idxot++)
 		{
@@ -1955,19 +1955,19 @@ void CentDedEkiCont::mergeOuterTerminal(
 				iOuterTerminalMapCont[iEkiIndexLoop[idxl]][idxot] = iOuterTerminalExsit;
 			}
 		}
-		//‚±‚±‚Å‚ÍTarget‘¤‚Ö‚Ì’Ç‰ÁiCore‚É‚ ‚Á‚ÄTarget‚É‚È‚¢‚à‚Ì)‚Ís‚í‚È‚¢B
+		//ã“ã“ã§ã¯Targetå´ã¸ã®è¿½åŠ ï¼ˆCoreã«ã‚ã£ã¦Targetã«ãªã„ã‚‚ã®)ã¯è¡Œã‚ãªã„ã€‚
 	}
 	for (int idxo = 0; idxo < (int)iEkiIndexBrunchOriginSide.size(); idxo++)
 	{
 		const CentDedEki* pCentDedEkiTarget =
 			getMuPtr()->get(iEkiIndexBrunchOriginSide[idxo]);
-		//iOuterTerminalMapCont‚Ì‰Šú‰»
+		//iOuterTerminalMapContã®åˆæœŸåŒ–
 		for (int idxot = 0; idxot < pCentDedEkiTarget->getOuterTerminalEkimeiCount(); idxot++)
 		{
 			iOuterTerminalMapCont[iEkiIndexBrunchOriginSide[idxo]].push_back(idxot);
 		}
 		int iCompareResultOuterTerminal = pCentDedEkiTarget->compareOuterTerminal(pCentDedEkiCore);
-		//”äŠrŒ‹‰Ê‚ª-1,2,3‚¾‚Á‚½ê‡‚ÍACore‚É‚È‚­‚ÄTarget‚É‚ ‚é‚à‚Ì‚ğACore‚É’Ç‰Á‚µ‚Ä‚¢‚­
+		//æ¯”è¼ƒçµæœãŒ-1,2,3ã ã£ãŸå ´åˆã¯ã€Coreã«ãªãã¦Targetã«ã‚ã‚‹ã‚‚ã®ã‚’ã€Coreã«è¿½åŠ ã—ã¦ã„ã
 		for (int idxot = 0; idxot < pCentDedEkiTarget->getOuterTerminalEkimeiCount() && 
 			(iCompareResultOuterTerminal >= 2 || iCompareResultOuterTerminal <= -1); idxot++)
 		{
@@ -1983,19 +1983,19 @@ void CentDedEkiCont::mergeOuterTerminal(
 				iOuterTerminalMapCont[iEkiIndexBrunchOriginSide[idxo]][idxot] = iOuterTerminalExsit;
 			}
 		}
-		//‚±‚±‚Å‚ÍTarget‘¤‚Ö‚Ì’Ç‰ÁiCore‚É‚ ‚Á‚ÄTarget‚É‚È‚¢‚à‚Ì)‚Ís‚í‚È‚¢B
+		//ã“ã“ã§ã¯Targetå´ã¸ã®è¿½åŠ ï¼ˆCoreã«ã‚ã£ã¦Targetã«ãªã„ã‚‚ã®)ã¯è¡Œã‚ãªã„ã€‚
 	}
 	for (int idxt = 0; idxt < (int)iEkiIndexBrunchTerminalSide.size(); idxt++)
 	{
 		const CentDedEki* pCentDedEkiTarget =
 			getMuPtr()->get(iEkiIndexBrunchTerminalSide[idxt]);
-		//iOuterTerminalMapCont‚Ì‰Šú‰»
+		//iOuterTerminalMapContã®åˆæœŸåŒ–
 		for (int idxot = 0; idxot < pCentDedEkiTarget->getOuterTerminalEkimeiCount(); idxot++)
 		{
 			iOuterTerminalMapCont[iEkiIndexBrunchTerminalSide[idxt]].push_back(idxot);
 		}
 		int iCompareResultOuterTerminal = pCentDedEkiTarget->compareOuterTerminal(pCentDedEkiCore);
-		//”äŠrŒ‹‰Ê‚ª-1,2,3‚¾‚Á‚½ê‡‚ÍACore‚É‚È‚­‚ÄTarget‚É‚ ‚é‚à‚Ì‚ğACore‚É’Ç‰Á‚µ‚Ä‚¢‚­
+		//æ¯”è¼ƒçµæœãŒ-1,2,3ã ã£ãŸå ´åˆã¯ã€Coreã«ãªãã¦Targetã«ã‚ã‚‹ã‚‚ã®ã‚’ã€Coreã«è¿½åŠ ã—ã¦ã„ã
 		for (int idxot = 0; idxot < pCentDedEkiTarget->getOuterTerminalEkimeiCount() && 
 			(iCompareResultOuterTerminal >= 2 || iCompareResultOuterTerminal <= -1); idxot++)
 		{
@@ -2011,10 +2011,10 @@ void CentDedEkiCont::mergeOuterTerminal(
 				iOuterTerminalMapCont[iEkiIndexBrunchTerminalSide[idxt]][idxot] = iOuterTerminalExsit;
 			}
 		}
-		//‚±‚±‚Å‚ÍTarget‘¤‚Ö‚Ì’Ç‰ÁiCore‚É‚ ‚Á‚ÄTarget‚É‚È‚¢‚à‚Ì)‚Ís‚í‚È‚¢B
+		//ã“ã“ã§ã¯Targetå´ã¸ã®è¿½åŠ ï¼ˆCoreã«ã‚ã£ã¦Targetã«ãªã„ã‚‚ã®)ã¯è¡Œã‚ãªã„ã€‚
 	}
 
-	//Core‚ÉW–ñ‚³‚ê‚½˜HüŠO”­’…‰w–¼‚ğA‘¼‚Ì‰w‚É”½‰f‚³‚¹‚éB
+	//Coreã«é›†ç´„ã•ã‚ŒãŸè·¯ç·šå¤–ç™ºç€é§…åã‚’ã€ä»–ã®é§…ã«åæ˜ ã•ã›ã‚‹ã€‚
 	for (int idxl = 1; idxl < (int)iEkiIndexLoop.size(); idxl++)
 	{
 		CentDedEki* pCentDedEkiTarget =
@@ -2093,7 +2093,7 @@ void CentDedEkiCont::adjustBrunchLoopCrossingCheckRule(
 	{
 		CrossingCheckRule CrossingCheckRuleTemp = pCentDedEkiThis->getCrossingCheckRule(idx);
 		
-		//”Ôüíœ‚È‚Ç‚ÌŒ‹‰ÊATrackContentCont4‚Â‚Ì‚¤‚¿‚Ç‚ê‚©ˆê‚Â‚Å‚à‹ó‚É‚È‚Á‚½‚È‚çA‚±‚Ìƒ‹[ƒ‹©‘Ì‚ğíœ‚µ‚Ü‚·B
+		//ç•ªç·šå‰Šé™¤ãªã©ã®çµæœã€TrackContentCont4ã¤ã®ã†ã¡ã©ã‚Œã‹ä¸€ã¤ã§ã‚‚ç©ºã«ãªã£ãŸãªã‚‰ã€ã“ã®ãƒ«ãƒ¼ãƒ«è‡ªä½“ã‚’å‰Šé™¤ã—ã¾ã™ã€‚
 		//bool bFoundTrackContentContEmpty = false;
 		vector< TrackContent> BeforeFromTrackContentCont = CrossingCheckRuleTemp.BeforeFromTrackContentCont;
 		for (int idxbf = (int)BeforeFromTrackContentCont.size() - 1; idxbf >= 0; idxbf--)

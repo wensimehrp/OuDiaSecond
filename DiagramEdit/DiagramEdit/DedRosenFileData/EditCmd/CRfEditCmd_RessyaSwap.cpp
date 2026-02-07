@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -98,7 +98,7 @@ namespace DedRosenFileData {	namespace EditCmd {
 //	CRfEditCmd_RessyaSwap
 // ****************************************************************
 // ********************************
-//	�R���X�g���N�^
+//	コンストラクタ
 // ********************************
 CRfEditCmd_RessyaSwap::CRfEditCmd_RessyaSwap(
 		int iDiaIndex ,
@@ -117,12 +117,12 @@ CRfEditCmd_RessyaSwap::CRfEditCmd_RessyaSwap(
 
 
 
-CRfEditCmd_RessyaSwap::~CRfEditCmd_RessyaSwap()
+CRfEditCmd_RessyaSwap::‾CRfEditCmd_RessyaSwap()
 {
 }
 
 // ********************************
-///	CRfEditCmd-����
+///	CRfEditCmd-操作
 // ********************************
 int CRfEditCmd_RessyaSwap::execute(
 	CDedRosenFileData* pCDedRosenFileData)
@@ -134,20 +134,20 @@ int CRfEditCmd_RessyaSwap::execute(
 	if (iRv >= 0) {
 		pCentDedDia = pCentDedRosen->getCentDedDiaCont()->getMuPtr()->get(m_iDiaIndex);
 		if (pCentDedDia == NULL) {
-			iRv = -2;	//	m_iDiaIndex �̒l���s���ł��B
+			iRv = -2;	//	m_iDiaIndex の値が不正です。
 		}
 	}
 	CentDedRessyaCont* pCentDedRessyaCont = NULL;
 	if (iRv >= 0) {
 		pCentDedRessyaCont = pCentDedDia->getCentDedRessyaCont(m_ERessyahoukou);
-		//m_iIndexA��INT_MAX�̏ꍇ�́A�������w�肵���Ƃ݂Ȃ��܂��B���̏ꍇ�́Am_iSizeA��1�Ƃ݂Ȃ��܂��B
+		//m_iIndexAがINT_MAXの場合は、末尾を指定したとみなします。その場合は、m_iSizeAも1とみなします。
 		if (m_iIndexA == INT_MAX)
 		{
 			m_iIndexA = pCentDedRessyaCont->size() - 1;
 			m_iSizeA = 1;
 		}
-		//m_iSizeA��INT_MAX�̏ꍇ�́A�����v�f�܂ł�I�������Ƃ݂Ȃ��܂��B
-		//�܂��Am_iIndexA + m_iSizeA���v�f���𒴂���ꍇ���A�����v�f�܂ł�I�������Ƃ݂Ȃ��܂��B
+		//m_iSizeAがINT_MAXの場合は、末尾要素までを選択したとみなします。
+		//また、m_iIndexA + m_iSizeAが要素数を超える場合も、末尾要素までを選択したとみなします。
 		if (m_iSizeA == INT_MAX)
 		{
 			m_iSizeA = pCentDedRessyaCont->size() - m_iIndexA;
@@ -158,9 +158,9 @@ int CRfEditCmd_RessyaSwap::execute(
 		}
 		if (!(0 <= m_iIndexA &&
 			m_iIndexA <= pCentDedRessyaCont->size() - m_iSizeA)) {
-			iRv = -1;	//	m_iDiaIndex �̒l���s���ł��B
+			iRv = -1;	//	m_iDiaIndex の値が不正です。
 		}
-		//m_iIndexB��INT_MAX�̏ꍇ�́A�������w�肵���Ƃ݂Ȃ��܂��B
+		//m_iIndexBがINT_MAXの場合は、末尾を指定したとみなします。
 		if (m_iIndexB == INT_MAX)
 		{
 			m_iIndexB = pCentDedRessyaCont->size() - 1;
@@ -169,7 +169,7 @@ int CRfEditCmd_RessyaSwap::execute(
 
 	if (iRv >= 0)
 	{
-		//��̑I��͈͂��d�����Ă��Ȃ������m���߂܂��B
+		//二つの選択範囲が重複していないかを確かめます。
 		if (m_iIndexB >= m_iIndexA &&
 			m_iIndexB < m_iIndexA + m_iSizeA)
 		{
@@ -180,17 +180,17 @@ int CRfEditCmd_RessyaSwap::execute(
 
 
 	// --------------------------------
-	//	����ւ�
+	//	入れ替え
 	// --------------------------------
 	if (iRv >= 0)
 	{
 		if (m_iIndexA < m_iIndexB)
 		{
-			//����ɂ���B���擾���ATemp�ɓ���AB���폜����
+			//後方にあるBを取得し、Tempに入れ、Bを削除する
 			CentDedRessya aRessyaTempB = pCentDedRessyaCont->get(m_iIndexB);
 			pCentDedRessyaCont->erase(m_iIndexB);
 
-			//�O���ɂ���A���AB�̈ʒu�ɑ}�����Ă����AA���S�đ}�����I�������AA���폜����B
+			//前方にあるAを、Bの位置に挿入していく、Aが全て挿入し終わったら、Aを削除する。
 			for (int iOffset = 0; iOffset < m_iSizeA; iOffset++)
 			{
 				pCentDedRessyaCont->insert(pCentDedRessyaCont->get(m_iIndexA + iOffset), m_iIndexB + iOffset);
@@ -201,12 +201,12 @@ int CRfEditCmd_RessyaSwap::execute(
 			//	pCentDedRessyaCont->erase(m_iIndexA );
 			//}
 
-			//Temp��B��A�̈ʒu�ɑ}������B
+			//TempのBをAの位置に挿入する。
 			pCentDedRessyaCont->insert(aRessyaTempB, m_iIndexA);
 		}
 		else
 		{
-			//����ɂ���A���擾���ATemp�ɓ���AA���폜����B
+			//後方にあるAを取得し、Tempに入れ、Aを削除する。
 			vector<CentDedRessya> aRessyaTempA;
 			for (int iOffset = 0; iOffset < m_iSizeA; iOffset++)
 			{
@@ -214,11 +214,11 @@ int CRfEditCmd_RessyaSwap::execute(
 			}
 			pCentDedRessyaCont->erase(m_iIndexA, m_iSizeA);
 
-			//�O���ɂ���B��A�̈ʒu�ɑ}�����A����B���폜����
+			//前方にあるBをAの位置に挿入し、元のBを削除する
 			pCentDedRessyaCont->insert(pCentDedRessyaCont->get(m_iIndexB), m_iIndexA);
 			pCentDedRessyaCont->erase(m_iIndexB);
 
-			//Temp��A��B�̈ʒu�ɑ}������B
+			//TempのAをBの位置に挿入する。
 			for (int iOffset = 0; iOffset < m_iSizeA; iOffset++)
 			{
 				pCentDedRessyaCont->insert(aRessyaTempA[iOffset], m_iIndexB + iOffset);

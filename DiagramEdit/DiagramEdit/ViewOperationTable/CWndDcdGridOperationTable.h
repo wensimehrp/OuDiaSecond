@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -80,9 +80,9 @@ Copyright (C) 2006-2017 take-okm
 
 #include "DcdGrid/WndDcdGrid3/WndDcdGrid3.h"
 
-#include "..\entDed\CconvCentDed.h"
-#include "OperationTableColSpec\OperationTableColSpec.h"
-#include "..\entDed\CdDedRessyaProperty.h"
+#include "..¥entDed¥CconvCentDed.h"
+#include "OperationTableColSpec¥OperationTableColSpec.h"
+#include "..¥entDed¥CdDedRessyaProperty.h"
 #include "CDcDraw_Extension.h"
 
 namespace ViewOperationTable {
@@ -94,13 +94,13 @@ namespace ViewOperationTable {
 // ****************************************************************
 
 	/**
-		OperationTableContent����ɁA���ۂɕ\������`���ɑg�ݑւ��܂��B
-		��̓I�ɂ́A����Ԑڑ��^�C�v��"�����Ԉ���"�̏ꍇ�ɁA�O���Ԃ��܂Ƃ߂ĕ\�����܂��B
-		eRessyahoukou:��ԕ����ł��B���̍s�ɕ\������iCombineCount����̏ꍇ�͂��̗�Ԃ̗�ԕ��������̂܂ܓ���܂��B
-			�����̏ꍇ�́A�n���w�ƏI���w��Index�̑召�֌W�����āA��ԕ������߂܂��B
-		iCombineCount:���̍s�ɕ\�������Ԃ��A����Ԍ����������������܂��B
-		bIsContinue:���_�C���\�����ɁA�����Ԉ����ɂ�������炸�ʍs�ɕ\������ꍇ�A���̍s�̂��̒l��true�ɂ��Ă����A
-			�`�ʎ��ɂ��̒l��true�Ȃ�A��Ԕԍ������ɉ�����\�����܂��B
+		OperationTableContentを基に、実際に表示する形式に組み替えます。
+		具体的には、次列車接続タイプが"同一列車扱い"の場合に、前後列車をまとめて表示します。
+		eRessyahoukou:列車方向です。その行に表示するiCombineCountが一つの場合はその列車の列車方向がそのまま入ります。
+			複数の場合は、始発駅と終着駅のIndexの大小関係を見て、列車方向を定めます。
+		iCombineCount:その行に表示する列車が、何列車結合したかを示します。
+		bIsContinue:箱ダイヤ表示時に、同一列車扱いにもかかわらず別行に表示する場合、下の行のこの値をtrueにしておき、
+			描写時にこの値がtrueなら、列車番号欄等に下矢印を表示します。
 	*/
 	struct OperationTable {
 		ERessyahoukou eRessyahoukou;
@@ -132,170 +132,170 @@ namespace ViewOperationTable {
 
 /**
 @brief
- �y�T�v�z COperationTableView �ŗp����A�O���b�h�E�C���h�E�ł��B
+ 【概要】 COperationTableView で用いる、グリッドウインドウです。
  */
 class CWndDcdGridOperationTable : public CWndDcdGrid
 {
 public:
 	// ********************************
-	//	�C���i�[�^�C�v
+	//	インナータイプ
 	// ********************************
 	typedef CWndDcdGrid super ;
 
 private:
 	// ********************************
-	///@name	���
+	///@name	包含
 	// ********************************
 	///@{
 	/**
-	  �e�E�C���h�E�ւ̃L�[���͂��_�@�� ModalDialog ���J���ꍇ�A
-	 ���[�_���_�C�A���O�̓���̃G�f�B�b�g�R���g���[���ɁA
-	 �L�[���̓��b�Z�[�W�i WM_KEYDOWN , WM_KEYUP �j��]�����܂��B
+	  親ウインドウへのキー入力を契機に ModalDialog を開く場合、
+	 モーダルダイアログの特定のエディットコントロールに、
+	 キー入力メッセージ（ WM_KEYDOWN , WM_KEYUP ）を転送します。
 	
-		���̃I�u�W�F�N�g�̔j���̐Ӗ��́A�N���X���[�U�[�i�w�]�����E�C���h�E�x�j
-		�ɂ���܂��B
-		���̃I�u�W�F�N�g�́A this ��蒷���������Ȃ��Ă͂Ȃ�܂���B
-		�s�v�ł���� NULL �ł����܂��܂���B
-		�R���X�g���N�^�Ō��܂�܂��B
+		このオブジェクトの破棄の責務は、クラスユーザー（『転送元ウインドウ』）
+		にあります。
+		このオブジェクトは、 this より長く生存しなくてはなりません。
+		不要であれば NULL でもかまいません。
+		コンストラクタで決まります。
 	 */
 	//CKeyinputSenderToModalDlg	m_CKeyinputSenderToModalDlg ;
 	///@}
 
 	// --------------------------------
-	///@name �����f�[�^
+	///@name 内部データ
 	// --------------------------------
 	///@{
 	/**
-	 �ʏ�� false �B
-	���̃r���[���A�N�e�B�u�łȂ��Ƃ��� 
-	�S�X�V�i OnUpdate_All() ���Ăяo���j���K�v�ɂȂ��Ă���A
-	�r���[���A�N�e�B�u�ɂȂ�܂ł̊Ԃ��� true �ɂȂ�܂��B
+	 通常は false 。
+	このビューがアクティブでないときに 
+	全更新（ OnUpdate_All() を呼び出す）が必要になってから、
+	ビューがアクティブになるまでの間だけ true になります。
 
-	 ���̕ϐ��� true �̂Ƃ��́A
-	�r���[�̍X�V���A���Ƀr���[���A�N�e�B�u�������܂�
-	�ۗ����Ă��邱�Ƃ������܂��B
+	 この変数が true のときは、
+	ビューの更新を、次にビューがアクティブ化されるまで
+	保留していることを示します。
 
-	 �r���[���A�N�e�B�u�łȂ��Ƃ��� OnUpdate_All() ��
-	�v�����ꂽ��A���̕ϐ��� true �ɂ��A
-	OnUpdate_All() �͎��s���܂���B
+	 ビューがアクティブでないときに OnUpdate_All() が
+	要求されたら、この変数を true にし、
+	OnUpdate_All() は実行しません。
 
-	 ���̒l�� true �̂Ƃ��ɁA�r���[���A�N�e�B�u�����ꂽ��A
-	OnUpdate_All() �����s���܂��B
+	 この値が true のときに、ビューがアクティブ化されたら、
+	OnUpdate_All() を実行します。
 	 */
 	bool m_bUpdate_All_Requested ;
 
 	/**
-	�����l��false�A����� OnUpdate() ���I�������� true �ɂȂ�܂��B
+	初期値はfalse、初回の OnUpdate() が終了したら true になります。
 	*/
 	bool m_bInitialUpdateComplete;
 	///@}
 	
 protected:
 	// --------------------------------
-	///@name	�����֐�
+	///@name	下請関数
 	// --------------------------------
 	///@{
 
 
 	/**
-		�S�Ă�X��ɂ��Ă� �w��ԍ�-�\�����e�x�̑Ή��\�𐶐����܂��B
-		�������ꂽ CdXColSpecCont() ����
-		CdXColSpec �I�u�W�F�N�g��
-		�擾���邱�Ƃɂ��A�e�񖈂ɕK�v�ȕ\�����e���擾���邱�Ƃ��ł��܂��B
+		全てのX列についての 『列番号-表示内容』の対応表を生成します。
+		生成された CdXColSpecCont() から
+		CdXColSpec オブジェクトを
+		取得することにより、各列毎に必要な表示内容を取得することができます。
 	@return 
-		�S�Ă�X��ɂ��Ă� �w��ԍ�-�\�����e�x�̑Ή��\�ł���
-		 CdXColSpecCont �I�u�W�F�N�g��Ԃ��܂��B
+		全てのX列についての 『列番号-表示内容』の対応表である
+		 CdXColSpecCont オブジェクトを返します。
 		
 	@attention
-	 	���̊֐��� OnCreate() �E�y�т���ȑO��
-	 	�Ăяo�����Ƃ��́A�߂�l��NULL��ԂɂȂ�܂��B
-	 	�Ăяo�������ɒ��ӂ��Ă��������B
+	 	この関数を OnCreate() ・及びそれ以前に
+	 	呼び出したときは、戻り値はNULL状態になります。
+	 	呼び出し時期に注意してください。
 
 	@attention
-		���̑Ή��\�́A CentDedEkiCont �ɕύX������
-		�����疳���ɂȂ�܂��B���̂��߁ACentDedEkiCont  ��
-		�ύX�̉\��������󋵂ł́A�Ή��\���č쐬����K�v������܂��B	
+		この対応表は、 CentDedEkiCont に変更が発生
+		したら無効になります。このため、CentDedEkiCont  に
+		変更の可能性がある状況では、対応表を再作成する必要があります。	
 	*/
 	CdOperationTableXColSpecCont createXColSpecCont();
 
 
 	/**
-		�S�Ă�Y��ɂ��Ă� �w��ԍ�-�\�����e�x�̑Ή��\�𐶐����܂��B
-		�������ꂽ CdYColSpecCont() ����
-		CdYColSpec �I�u�W�F�N�g��
-		�擾���邱�Ƃɂ��A�e�񖈂ɕK�v�ȕ\�����e���擾���邱�Ƃ��ł��܂��B
+		全てのY列についての 『列番号-表示内容』の対応表を生成します。
+		生成された CdYColSpecCont() から
+		CdYColSpec オブジェクトを
+		取得することにより、各列毎に必要な表示内容を取得することができます。
 	@return 
-		�S�Ă�Y��ɂ��Ă� �w��ԍ�-�\�����e�x�̑Ή��\�ł���
-		 CdYColSpecCont �I�u�W�F�N�g��Ԃ��܂��B
+		全てのY列についての 『列番号-表示内容』の対応表である
+		 CdYColSpecCont オブジェクトを返します。
 		
 	@attention
-	 	���̊֐��� OnCreate() �E�y�т���ȑO��
-	 	�Ăяo�����Ƃ��́A�߂�l��NULL��ԂɂȂ�܂��B
-	 	�Ăяo�������ɒ��ӂ��Ă��������B
+	 	この関数を OnCreate() ・及びそれ以前に
+	 	呼び出したときは、戻り値はNULL状態になります。
+	 	呼び出し時期に注意してください。
 
 	@attention
-		���̑Ή��\�́A CentDedEkiCont �ɕύX������
-		�����疳���ɂȂ�܂��B���̂��߁ACentDedEkiCont  ��
-		�ύX�̉\��������󋵂ł́A�Ή��\���č쐬����K�v������܂��B	
+		この対応表は、 CentDedEkiCont に変更が発生
+		したら無効になります。このため、CentDedEkiCont  に
+		変更の可能性がある状況では、対応表を再作成する必要があります。	
 	*/
 	CdOperationTableYColSpecCont createYColSpecCont();
 
 	/**
 	@return 
-		�t�H�[�J�X�Z���̗�̕\�����e��Ԃ��܂��B
+		フォーカスセルの列の表示内容を返します。
 	*/
 	CdOperationTableXColSpec getXColSpecOfFocus();
 
 	/**
 	@return 
-		�t�H�[�J�X�Z���̗�̕\�����e��Ԃ��܂��B
+		フォーカスセルの列の表示内容を返します。
 	*/
 	CdOperationTableYColSpec getYColSpecOfFocus() ;
 	
 	/**
-	DcdGrid�ł̑I����e�ɉ������A�ҏW�R�}���h�I�u�W�F�N�g
-	(CRfEditCmd_Ressyasyubetsu)�𐶐����܂��B
+	DcdGridでの選択内容に応じた、編集コマンドオブジェクト
+	(CRfEditCmd_Ressyasyubetsu)を生成します。
 	@param eCreateCmd [in]
-		��������R�}���h�̎�ނ��w�肵�Ă��������B
+		生成するコマンドの種類を指定してください。
 	@param ppCmd [out] 
-		���������R�}���h��Ԃ��܂��B
-		NULL ���w�肷�邱�Ƃ��ł��܂��B���̏ꍇ�A���̊֐���
-		�R�}���h�𐶐������ɁA�R�}���h�̐������\���ۂ�������Ԃ��܂��B
+		生成したコマンドを返します。
+		NULL を指定することもできます。この場合、この関数は
+		コマンドを生成せずに、コマンドの生成が可能か否かだけを返します。
 	@return
-		ppCmd���L����Ou�ł���ꍇ�́A�R�}���h�̐����ɐ��������� true��Ԃ��܂��B
-		ppCmd=NULL �̏ꍇ�́A�R�}���h�̐������\�ł����true��Ԃ��܂��B
-		�R�}���h�������ł��Ȃ��ꍇ�� false ��Ԃ��܂��B
-		�t�H�[�J�X�Z����I���Z������Ԃ̈ʒu�ɂȂ��ꍇ�́Afalse�ƂȂ�܂��B
+		ppCmdが有効なOuである場合は、コマンドの生成に成功したら trueを返します。
+		ppCmd=NULL の場合は、コマンドの生成が可能であればtrueを返します。
+		コマンドが生成できない場合は false を返します。
+		フォーカスセルや選択セルが列車の位置にない場合は、falseとなります。
 	*/
 	//bool createCmd( ECreateCmd eCreateCmd , Ou<DedRosenFileData::EditCmd::CRfEditCmd_EkiTrack2>* ppCmd );
 
 
 	///@}
 	// --------------------------------
-	///@name OnUpdate �̉����֐�
+	///@name OnUpdate の下請関数
 	// --------------------------------
 	///@{
 	/**
 	@return
-	�w������\���`���ɕϊ�����I�u�W�F�N�g��Ԃ��܂��B
-	@note static �����o�֐��ɂ��邱�Ƃ��ł��܂��B
+	駅時刻を表示形式に変換するオブジェクトを返します。
+	@note static メンバ関数にすることができます。
 	*/
 	const CdDedJikoku::CConv	getCdDedJikokuConv()const;
 
 	/**
-	 �O���b�h�� �w���Y��ɁA
-	�w��ԁx�̓��e��ݒ肵�܂��B
-	�ݒ���s�����Z���́A�X�V�̈�Ƃ��܂��B
+	 グリッドの 指定のY列に、
+	『列車』の内容を設定します。
+	設定を行ったセルは、更新領域とします。
 	@attention
-		�O���b�h�� ��Ԏ�ʔԍ��� X��͍X�V���܂���B
-		���̏����̂��߂ɂ́A�eY��ɑ΂��Ă��̊֐����Ăяo������ɁA
-		�O���b�h�S�̂ɑ΂���
-		OnUpdate_setRessyasyubetsuNoXColumn() ��
-		�Ăяo���K�v������܂��B
+		グリッドの 列車種別番号の X列は更新しません。
+		この処理のためには、各Y列に対してこの関数を呼び出した後に、
+		グリッド全体に対して
+		OnUpdate_setRessyasyubetsuNoXColumn() を
+		呼び出す必要があります。
 	@param iYColumnNumber [in]
-		Y��ԍ����w�肵�Ă��������B
+		Y列番号を指定してください。
 	@param aCentDedRessya [in]
-		�w��ԁx�I�u�W�F�N�g���w�肵�Ă��������B
+		『列車』オブジェクトを指定してください。
 	*/
 	void OnUpdate_setCentDedRessya_To_Column(
 		int iYColumnNumber , 
@@ -306,21 +306,21 @@ protected:
 		const ERessyahoukou eRessyahoukou) ;
 
 	/**
-	 �O���b�h�� �w���Y��ɁA
-	�w��ԁx�̓��e��ݒ肵�܂��B
-	�ݒ���s�����Z���́A�X�V�̈�Ƃ��܂��B
+	 グリッドの 指定のY列に、
+	『列車』の内容を設定します。
+	設定を行ったセルは、更新領域とします。
 	@attention
-		�O���b�h�� ��Ԏ�ʔԍ��� X��͍X�V���܂���B
-		���̏����̂��߂ɂ́A�eY��ɑ΂��Ă��̊֐����Ăяo������ɁA
-		�O���b�h�S�̂ɑ΂���
-		OnUpdate_setRessyasyubetsuNoXColumn() ��
-		�Ăяo���K�v������܂��B
+		グリッドの 列車種別番号の X列は更新しません。
+		この処理のためには、各Y列に対してこの関数を呼び出した後に、
+		グリッド全体に対して
+		OnUpdate_setRessyasyubetsuNoXColumn() を
+		呼び出す必要があります。
 	@param iYColumnNumber [in]
-		Y��ԍ����w�肵�Ă��������B
+		Y列番号を指定してください。
 	@param aCentDedRessya [in]
-		�w��ԁx�I�u�W�F�N�g���w�肵�Ă��������B
-	return:�I���w���򌳃C���f�N�X��Ԃ��܂��B
-		��s�ɕ�����Ԃ�\������ꍇ�A2��Ԗڈȍ~�͑O�̗�Ԃ��Ԃ����w�C���f�N�X�ڍs�̂ݕ`�ʂ��܂��B
+		『列車』オブジェクトを指定してください。
+	return:終着駅分岐元インデクスを返します。
+		一行に複数列車を表示する場合、2列車目以降は前の列車が返した駅インデクス移行のみ描写します。
 	*/
 	void OnUpdate_setCentDedRessya_To_Column_Extension(
 		int iYColumnNumber,
@@ -333,13 +333,13 @@ protected:
 		const bool bIsContinue = false);
 	
 	/**
-	 OnUpdate() �̉����֐��ł��B
-	�֘A����h�L�������g�̓��e���A���̃E�C���h�E�Ɋ��S��
-	���f���܂��B
+	 OnUpdate() の下請関数です。
+	関連するドキュメントの内容を、このウインドウに完全に
+	反映します。
 
-	 OnUpdate() �� pHint �� NULL �̍ۂ̓���ł��B
+	 OnUpdate() で pHint が NULL の際の動作です。
 
-	 ���̂Ƃ��A�E�C���h�E�̍X�V�ĕ`����������܂��B
+	 このとき、ウインドウの更新再描画も発生します。
 	 */
 	virtual void  OnUpdate_All() ;
 
@@ -347,14 +347,14 @@ protected:
 	///@}
 protected:
 	// --------------------------------
-	///@name ���j���[�R�}���h�̉����֐�
+	///@name メニューコマンドの下請関数
 	// --------------------------------
 	///@{
-	/**	[�ҏW]-[�R�s�[]	
+	/**	[編集]-[コピー]	
 	@return
-		����������0�ȏ�A�G���[�Ȃ畉�̐��ł��B
-		-	-1 ;	//	�t�H�[�J�X�Z���̈ʒu���s���ł��B
-		-	-2 :	//�{���Ɏw�肳��Ă���Ԑ��ł�
+		成功したら0以上、エラーなら負の数です。
+		-	-1 ;	//	フォーカスセルの位置が不正です。
+		-	-2 :	//本線に指定されている番線です
 	*/
 	int OnEditCopy_Process( BOOL bQueryEnable );
 
@@ -369,10 +369,10 @@ protected:
 
 public:
 	// ********************************
-	//	�R���X�g���N�^
+	//	コンストラクタ
 	// ********************************
 	CWndDcdGridOperationTable();
-	virtual ~CWndDcdGridOperationTable();
+	virtual ‾CWndDcdGridOperationTable();
 
 	// ********************************
 	///@name	CDcdGrid
@@ -386,13 +386,13 @@ protected:
 	///@{
 
 	// --------------------------------
-	///@name	�C�x���g�����̂��߂̉��z�֐�
+	///@name	イベント処理のための仮想関数
 	// --------------------------------
 	///@{
 	///@}
  public:
 	// ********************************
-	///@name  COperationTableView ����̈Ϗ�
+	///@name  COperationTableView からの委譲
 	// ********************************
 	///@{
 	virtual void OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint);
@@ -400,7 +400,7 @@ protected:
 	///@}
 public:
 	// ********************************
-	///@name CWndDcdGridOperationTable-����
+	///@name CWndDcdGridOperationTable-操作
 	// ********************************
 	///@{
 	///@}
@@ -420,157 +420,157 @@ private:
 
 	vector<OperationTable> m_contOperationTable;
 	/**
-		���_�C�����L���Ȏ��ɁA�\������w�̉wIndex
-		�擪��INT_MIN������ꍇ�́A�N�_���g���X�y�[�X���L��
-		�I�[��INT_MAX������ꍇ�́A�I�_���g���X�y�[�X���L��
+		箱ダイヤが有効な時に、表示する駅の駅Index
+		先頭にINT_MINがある場合は、起点側拡張スペースが有効
+		終端にINT_MAXがある場合は、終点側拡張スペースが有効
 	*/
 	deque<int> m_iDisplayJikokuEkiIndex;
 
 	/**
-	���_�C���`���ŕ\�����邩�ۂ��̎w��
+	箱ダイヤ形式で表示するか否かの指定
 
-	-true ; ���_�C���`���ŕ\�����܂��B
+	-true ; 箱ダイヤ形式で表示します。
 	-false ; (default)
 	*/
 	bool m_bDisplayExtensionOperationTable;
 
 	/**
-	�w�����̕b�P�ʂ�\�����邩�ۂ��̎w��
+	駅時刻の秒単位を表示するか否かの指定
 
-	-true ; �^�p�\�r���[�ŕb�P�ʂ܂Ŏ�����\�����܂��B
+	-true ; 運用表ビューで秒単位まで時刻を表示します。
 	-false ; (default)
 	*/
 	bool m_bDisplaySecondEkiJikoku;
 
 	/**
-	�w�������R�����t���ŕ\�����邩�ۂ��̎w��
+	駅時刻をコロン付きで表示するか否かの指定
 
-	-true ; �^�p�\�r���[�ŃR�����t���Ŏ�����\�����܂��B
+	-true ; 運用表ビューでコロン付きで時刻を表示します。
 	-false ; (default)
 	*/
 	bool m_bDisplayColonEkiJikoku;
 
 	/**
-	��Ԃ̕\����e��ʂōs�����ۂ��̎w��
+	列車の表示を親種別で行うか否かの指定
 
-	-true ; �^�p�\�r���[�ŗ�Ԃ̕\����e��ʂŕ\�����܂��B
+	-true ; 運用表ビューで列車の表示を親種別で表示します。
 	-false ; (default)
 	*/
 	bool m_bDisplayParentSyubetsu;
 
 	/**
-	����Ԃ̎n���w�������ɂ��ĕ`�ʂ���(�]���`����)
+	上り列車の始発駅を左側にして描写する(従来形式時)
 
-	-true ; �^�p�\�r���[�ŏ���Ԃ̎n���w�������ɂ��ĕ`�ʂ��܂��B
+	-true ; 運用表ビューで上り列車の始発駅を左側にして描写します。
 	-false ; (default)
 	*/
 	bool m_bDisplayNoboriLeftToRight;
 
 	/**
-	�����Ԑ�����\������(���_�C����)
+	着発番線名を表示する(箱ダイヤ時)
 
-	-true ; �����Ԑ�����\�����܂��B
+	-true ; 着発番線名を表示します。
 	-false ; (default)
 	*/
 	bool m_bDisplayTrackName;
 	/**
-		�ʉ߉w�̉w������\�����邩�ۂ��̎w��ł��B
+		通過駅の駅時刻を表示するか否かの指定です。
 
-		- true ; �ʉ߉w�̉w������\�����܂��B(default)
-		- false ; �ʉ߉w�̉w������\�������ɁA�ʉ߃}�[�N "�" ��\�����܂��B
+		- true ; 通過駅の駅時刻を表示します。(default)
+		- false ; 通過駅の駅時刻を表示せずに、通過マーク "ﾚ" を表示します。
 	 */
 	bool m_bDisplayTsuukaEkiJikoku;
 
 	/**
-		�Ō�Ƀ��[�U�[�����͂���CSV�t�@�C����
+		最後にユーザーが入力したCSVファイル名
 	*/
 	CString	m_strCsvFilename;
 
 	/**
-	�b�P�ʕ\��OFF���̕b�P�ʏ������@�̎w��(������)
+	秒単位表示OFF時の秒単位処理方法の指定(着時刻)
 
-	0:�b�P�ʂ�؂�̂Ăĕ\�����܂�(�f�t�H���g)
-	1:30�b�ȏ�͐؂�グ�A���ꖢ���͐؂�̂Ăĕ\�����܂��B
-	2:�b�P�ʂ�؂�グ�ĕ\�����܂�
+	0:秒単位を切り捨てて表示します(デフォルト)
+	1:30秒以上は切り上げ、それ未満は切り捨てて表示します。
+	2:秒単位を切り上げて表示します
 	*/
 	int m_iSecondRoundChaku;
 
 	/**
-	�b�P�ʕ\��OFF���̕b�P�ʏ������@�̎w��(������)
+	秒単位表示OFF時の秒単位処理方法の指定(発時刻)
 
-	0:�b�P�ʂ�؂�̂Ăĕ\�����܂�(�f�t�H���g)
-	1:30�b�ȏ�͐؂�グ�A���ꖢ���͐؂�̂Ăĕ\�����܂��B
-	2:�b�P�ʂ�؂�グ�ĕ\�����܂�
+	0:秒単位を切り捨てて表示します(デフォルト)
+	1:30秒以上は切り上げ、それ未満は切り捨てて表示します。
+	2:秒単位を切り上げて表示します
 	*/
 	int m_iSecondRoundHatsu;
 
 	/**
-	��������0��0���̎��ɁA2400�ƕ\�L���邩�ۂ��̎w��
+	着時刻が0時0分の時に、2400と表記するか否かの指定
 
-	- true ; 2400�\�L���s���܂�
-	- false ; 000�\�L�̂܂܂ł�(default)
+	- true ; 2400表記を行います
+	- false ; 000表記のままです(default)
 	*/
 	bool m_bDisplay2400;
 
 
 protected:
-	/**[�\��] - [���_�C����L���ɂ���]
+	/**[表示] - [箱ダイヤを有効にする]
 		@return
-		0�ȏ�͐����A�G���[�Ȃ畉�̐��ł��B
-		- 1 	(bQueryEnable == TRUE�̏ꍇ)[���_�C����L���ɂ���]���L���ł��B
-		- 0 	(bQueryEnable == TRUE�̏ꍇ)[���_�C����L���ɂ���]�������ł��B
+		0以上は成功、エラーなら負の数です。
+		- 1 	(bQueryEnable == TRUEの場合)[箱ダイヤを有効にする]が有効です。
+		- 0 	(bQueryEnable == TRUEの場合)[箱ダイヤを有効にする]が無効です。
 		*/
 	int OnViewDisplayExtensionOperationTable_Process(BOOL bQueryEnable);
 
-	/**[�\��] - [�b�P�ʂ̎�����\��]
+	/**[表示] - [秒単位の時刻を表示]
 		@return
-		0�ȏ�͐����A�G���[�Ȃ畉�̐��ł��B
-		- 1 	(bQueryEnable == TRUE�̏ꍇ)[�b�P�ʂ̎�����\��]���L���ł��B
-		- 0 	(bQueryEnable == TRUE�̏ꍇ)[�b�P�ʂ̎�����\��]�������ł��B
+		0以上は成功、エラーなら負の数です。
+		- 1 	(bQueryEnable == TRUEの場合)[秒単位の時刻を表示]が有効です。
+		- 0 	(bQueryEnable == TRUEの場合)[秒単位の時刻を表示]が無効です。
 		*/
 		int OnViewDisplaySecondEkijikoku_Process(BOOL bQueryEnable);
 
 
-		/**[�\��] - [�R�����t�������\��]
+		/**[表示] - [コロン付き時刻表示]
 		@return
-		0�ȏ�͐����A�G���[�Ȃ畉�̐��ł��B
-		- 1 	(bQueryEnable == TRUE�̏ꍇ)[�R�����t�������\��]���L���ł��B
-		- 0 	(bQueryEnable == TRUE�̏ꍇ)[�R�����t�������\��]�������ł��B
+		0以上は成功、エラーなら負の数です。
+		- 1 	(bQueryEnable == TRUEの場合)[コロン付き時刻表示]が有効です。
+		- 0 	(bQueryEnable == TRUEの場合)[コロン付き時刻表示]が無効です。
 		*/
 		int OnViewDisplayColonEkijikoku_Process(BOOL bQueryEnable);
 
 		/**
-		[�\��] - [�e��ʂ�L���ɂ���]
+		[表示] - [親種別を有効にする]
 		@return
-		0�ȏ�͐����A�G���[�Ȃ畉�̐��ł��B
-		- 1 	(bQueryEnable == TRUE�̏ꍇ)[�e��ʂɂ��\��]���L���ł��B
-		- 0 	(bQueryEnable == TRUE�̏ꍇ)[�e��ʂɂ���\��]�������ł��B
+		0以上は成功、エラーなら負の数です。
+		- 1 	(bQueryEnable == TRUEの場合)[親種別による表示]が有効です。
+		- 0 	(bQueryEnable == TRUEの場合)[親種別によるを表示]が無効です。
 		*/
 		int OnViewDisplayParentSyubetsu_Process(BOOL bQueryEnable);
 
 		/**
-		[�\��] - [����Ԃ̎n���w�������ɂ���]
+		[表示] - [上り列車の始発駅を左側にする]
 		@return
-		0�ȏ�͐����A�G���[�Ȃ畉�̐��ł��B
-		- 1 	(bQueryEnable == TRUE�̏ꍇ)[����Ԃ̎n���w�������ɂ���]���L���ł��B
-		- 0 	(bQueryEnable == TRUE�̏ꍇ)[����Ԃ̎n���w�������ɂ���]�������ł��B
+		0以上は成功、エラーなら負の数です。
+		- 1 	(bQueryEnable == TRUEの場合)[上り列車の始発駅を左側にする]が有効です。
+		- 0 	(bQueryEnable == TRUEの場合)[上り列車の始発駅を左側にする]が無効です。
 		*/
 		int OnViewDisplayNoboriLeftToRight_Process(BOOL bQueryEnable);
 
 		/**
-		[�\��] - [�����Ԑ�����\������]
+		[表示] - [着発番線名を表示する]
 		@return
-		0�ȏ�͐����A�G���[�Ȃ畉�̐��ł��B
-		- 1 	(bQueryEnable == TRUE�̏ꍇ)[�����Ԑ�����\������]���L���ł��B
-		- 0 	(bQueryEnable == TRUE�̏ꍇ)[�����Ԑ�����\������]�������ł��B
+		0以上は成功、エラーなら負の数です。
+		- 1 	(bQueryEnable == TRUEの場合)[着発番線名を表示する]が有効です。
+		- 0 	(bQueryEnable == TRUEの場合)[着発番線名を表示する]が無効です。
 		*/
 		int OnViewDisplayTrackName_Process(BOOL bQueryEnable);
 
-		/** [�\��]-[�ʉ߉w�̉w������\��]
+		/** [表示]-[通過駅の駅時刻を表示]
 		@return
-			0�ȏ�͐����A�G���[�Ȃ畉�̐��ł��B
-			-	1 	(bQueryEnable==TRUE�̏ꍇ)[�S������\��]���L���ł��B
-			-	0 	(bQueryEnable==TRUE�̏ꍇ)[�S������\��]�������ł��B
+			0以上は成功、エラーなら負の数です。
+			-	1 	(bQueryEnable==TRUEの場合)[全時刻を表示]が有効です。
+			-	0 	(bQueryEnable==TRUEの場合)[全時刻を表示]が無効です。
 		*/
 		int OnViewDisplayTsuukaEkiJikoku_Process(BOOL bQueryEnable);
 
@@ -578,56 +578,56 @@ public:
 	bool getDisplayExtensionOperationTable()const;
 	/**
 	@return
-	- 1 ;	�ݒ��ύX���āA�E�C���h�E���ĕ`�悵�܂����B
-	- 0 ;	�\�����e�͕ω����܂���ł����B
+	- 1 ;	設定を変更して、ウインドウを再描画しました。
+	- 0 ;	表示内容は変化しませんでした。
 	*/
 	int setDisplayExtensionOperationTable(bool value);
 
 		bool getDisplaySecondEkiJikoku()const;
 		/**
 		@return
-		- 1 ;	�ݒ��ύX���āA�E�C���h�E���ĕ`�悵�܂����B
-		- 0 ;	�\�����e�͕ω����܂���ł����B
+		- 1 ;	設定を変更して、ウインドウを再描画しました。
+		- 0 ;	表示内容は変化しませんでした。
 		*/
 		int setDisplaySecondEkiJikoku(bool value);
 
 		bool getDisplayColonEkiJikoku()const;
 		/**
 		@return
-		- 1 ;	�ݒ��ύX���āA�E�C���h�E���ĕ`�悵�܂����B
-		- 0 ;	�\�����e�͕ω����܂���ł����B
+		- 1 ;	設定を変更して、ウインドウを再描画しました。
+		- 0 ;	表示内容は変化しませんでした。
 		*/
 		int setDisplayColonEkiJikoku(bool value);
 
 		bool getDisplayParentSyubetsu()const;
 		/**
 		@return
-		- 1 ;	�ݒ��ύX���āA�E�C���h�E���ĕ`�悵�܂����B
-		- 0 ;	�\�����e�͕ω����܂���ł����B
+		- 1 ;	設定を変更して、ウインドウを再描画しました。
+		- 0 ;	表示内容は変化しませんでした。
 		*/
 		int setDisplayParentSyubetsu(bool value);
 
 		bool getDisplayNoboriLeftToRight()const;
 		/**
 		@return
-		- 1 ;	�ݒ��ύX���āA�E�C���h�E���ĕ`�悵�܂����B
-		- 0 ;	�\�����e�͕ω����܂���ł����B
+		- 1 ;	設定を変更して、ウインドウを再描画しました。
+		- 0 ;	表示内容は変化しませんでした。
 		*/
 		int setDisplayNoboriLeftToRight(bool value);
 
 		bool getDisplayTrackName()const;
 		/**
 		@return
-		- 1 ;	�ݒ��ύX���āA�E�C���h�E���ĕ`�悵�܂����B
-		- 0 ;	�\�����e�͕ω����܂���ł����B
+		- 1 ;	設定を変更して、ウインドウを再描画しました。
+		- 0 ;	表示内容は変化しませんでした。
 		*/
 		int setDisplayTrackName(bool value);
 		
 		bool getDisplayTsuukaEkiJikoku()const;
 		/**
 		 @return
-			- 1 ;	�ݒ��ύX���āA�E�C���h�E���ĕ`�悵�܂����B
-			- 0 ;	�\�����e�͕ω����܂���ł����B
+			- 1 ;	設定を変更して、ウインドウを再描画しました。
+			- 0 ;	表示内容は変化しませんでした。
 		*/
 		int setDisplayTsuukaEkiJikoku(bool value);
 
@@ -637,10 +637,10 @@ public:
 // ----------------------------------------------------------------
 //	MFC
 // ----------------------------------------------------------------
-// �A�g���r���[�g
+// アトリビュート
 public:
 
-// �I�y���[�V����
+// オペレーション
 public:
 	//{{AFX_VIRTUAL(CWndDcdGridOperationTable)
 	//}}AFX_VIRTUAL
@@ -648,7 +648,7 @@ public:
 protected:
 	//{{AFX_MSG(CWndDcdGridOperationTable)
 	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
-	//[�ҏW]
+	//[編集]
 	afx_msg void OnEditCopy();
 	afx_msg void OnUpdateEditCopy(CCmdUI* pCmdUI);
 	afx_msg void OnViewDisplayExtensionOperationTable();

@@ -1,8 +1,8 @@
 /*
 	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 /*
 // ****************************************************************
@@ -76,7 +76,7 @@ Copyright (C) 2006-2017 take-okm
 #include "stdafx.h"
 
 #include "CdDedJikoku.h"
-#include "str\strprintf.h"
+#include "str¥strprintf.h"
 #include <tchar.h>
 
 using namespace std ;
@@ -132,15 +132,15 @@ tstring CdDedJikoku::CConv::encode( const CdDedJikoku& aJikoku,
 		if (m_eSecond == ESecond_NoSecond)
 		{
 			/**
-				ESecond_NoSecond�̏ꍇ�́A�b�P�ʊۂߏ������s���܂��B
-				�b�P�ʂ��ۂ߂��ꍇ�A���y�ю��ɂ��e�����y�ڂ��̂Œ��ӂ��K�v�ł��B
+				ESecond_NoSecondの場合は、秒単位丸め処理を行います。
+				秒単位を丸めた場合、分及び時にも影響を及ぼすので注意が必要です。
 			*/
 
 			CdDedJikoku aTempJikoku(aJikoku);
 			if (aCompareJikoku.isNull())
 			{
-				//�؂�グ�̏ꍇ�́A���̎�����59�b�����Z�������̂��A�b�P�ʂ𖳎����邱�ƂŁA���ƕ��������܂�
-				//30�b�ȏ�؂�グ�̏ꍇ�́A30�b�����Z���ē��l�ɏ������܂�
+				//切り上げの場合は、元の時刻に59秒を加算したものを、秒単位を無視することで、時と分が得られます
+				//30秒以上切り上げの場合は、30秒を加算して同様に処理します
 				if (bIsChakuJikoku &&
 					m_eSecondRoundChaku == ESecondRound_RoundUp ||
 					!bIsChakuJikoku &&
@@ -158,8 +158,8 @@ tstring CdDedJikoku::CConv::encode( const CdDedJikoku& aJikoku,
 			}
 			else
 			{
-				//aCompareJikoku��Null�łȂ��ꍇ�́A�������ꂼ��̕b�P�ʏ������@�ɂ���ẮA�����̏������t�]���邱�Ƃ�����܂�
-				//�t�]���N����ꍇ�́A�؂�̂Ă܂��͐؂�グ���~�߂܂�
+				//aCompareJikokuがNullでない場合は、着発それぞれの秒単位処理方法によっては、時刻の順序が逆転することがあります
+				//逆転が起こる場合は、切り捨てまたは切り上げを止めます
 				if (aJikoku.getHour() == aCompareJikoku.getHour() &&
 					aJikoku.getMinute() == aCompareJikoku.getMinute())
 				{
@@ -170,11 +170,11 @@ tstring CdDedJikoku::CConv::encode( const CdDedJikoku& aJikoku,
 						aJikoku.getSecond() > 0 && aJikoku.getSecond() < 30 &&
 						aCompareJikoku.getSecond() > 0 && aCompareJikoku.getSecond() < 30)
 					{
-						//���������؂�グ�ŁA��������30�b�ȏ�؂�グ�܂��͐؂�̂Ă��A
-						//�������������Ƃ���1-29�b�̏ꍇ�A�������t�]����̂ŁA
-						//�������̕b��؂�̂Ă邱�Ƃŏ������ێ����܂��B
+						//着時刻が切り上げで、発時刻が30秒以上切り上げまたは切り捨てかつ、
+						//着時刻発時刻ともに1-29秒の場合、順序が逆転するので、
+						//着時刻の秒を切り捨てることで順序を維持します。
 
-						//�؂�̂ĂȂ̂œ��ɏ����Ȃ�
+						//切り捨てなので特に処理なし
 					}
 					else if(!bIsChakuJikoku &&
 						(m_eSecondRoundChaku == ESecondRound_RoundUp ||
@@ -183,9 +183,9 @@ tstring CdDedJikoku::CConv::encode( const CdDedJikoku& aJikoku,
 						aJikoku.getSecond() >= 30 &&
 						aCompareJikoku.getSecond() >= 30)
 					{
-						//���������ۂ߂܂��͐؂�グ�ŁA���������؂�̂Ă��A
-						//�������������Ƃ���30-59�b�̏ꍇ�A�������t�]����̂ŁA
-						//�������̕b��؂�グ�邱�Ƃŏ������ێ����܂��B
+						//着時刻が丸めまたは切り上げで、発時刻が切り捨てかつ、
+						//着時刻発時刻ともに30-59秒の場合、順序が逆転するので、
+						//発時刻の秒を切り上げることで順序を維持します。
 						aTempJikoku.addSeconds(59);
 					}
 					else if (bIsChakuJikoku &&
@@ -194,9 +194,9 @@ tstring CdDedJikoku::CConv::encode( const CdDedJikoku& aJikoku,
 						aJikoku.getSecond() > 0 && aJikoku.getSecond() < 30 &&
 						aCompareJikoku.getSecond() >= 30)
 					{
-						//���������؂�グ�ŁA���������؂�̂Ă��A
-						//��������1-29�b�Ŕ�������30-59�b�̏ꍇ�A�������t�]����̂ŁA
-						//�b�P�ʂ̕��ς��Ƃ�A���ꂪ30�b�ȏ�Ȃ�؂�グ�A�����Ȃ�؂�̂Ăɓ��ꂵ�܂�
+						//着時刻が切り上げで、発時刻が切り捨てかつ、
+						//着時刻が1-29秒で発時刻が30-59秒の場合、順序が逆転するので、
+						//秒単位の平均をとり、それが30秒以上なら切り上げ、未満なら切り捨てに統一します
 						if (aJikoku.getSecond() + aCompareJikoku.getSecond() >= 60)
 						{
 							aTempJikoku.addSeconds(59);
@@ -208,9 +208,9 @@ tstring CdDedJikoku::CConv::encode( const CdDedJikoku& aJikoku,
 						aJikoku.getSecond() >= 30 &&
 						aCompareJikoku.getSecond() > 0 && aCompareJikoku.getSecond() < 30)
 					{
-						//���������؂�グ�ŁA���������؂�̂Ă��A
-						//��������1-29�b�Ŕ�������30-59�b�̏ꍇ�A�������t�]����̂ŁA
-						//�b�P�ʂ̕��ς��Ƃ�A���ꂪ30�b�ȏ�Ȃ�؂�グ�A�����Ȃ�؂�̂Ăɓ��ꂵ�܂�
+						//着時刻が切り上げで、発時刻が切り捨てかつ、
+						//着時刻が1-29秒で発時刻が30-59秒の場合、順序が逆転するので、
+						//秒単位の平均をとり、それが30秒以上なら切り上げ、未満なら切り捨てに統一します
 						if (aJikoku.getSecond() + aCompareJikoku.getSecond() >= 60)
 						{
 							aTempJikoku.addSeconds(59);
@@ -218,8 +218,8 @@ tstring CdDedJikoku::CConv::encode( const CdDedJikoku& aJikoku,
 					}
 					else
 					{
-						//�O�L�̏����ɍ��v���Ȃ��ꍇ�́AbIsHatsuJikoku�ƁA�Ή�����m_eSecondRound�Ɋ�Â��A
-						//30�b�ȏ�؂�グ�A�܂��͐؂�グ�̏������s���܂�
+						//前記の条件に合致しない場合は、bIsHatsuJikokuと、対応するm_eSecondRoundに基づき、
+						//30秒以上切り上げ、または切り上げの処理を行います
 
 						if (bIsChakuJikoku &&
 							m_eSecondRoundChaku == ESecondRound_RoundUp ||
@@ -239,8 +239,8 @@ tstring CdDedJikoku::CConv::encode( const CdDedJikoku& aJikoku,
 				}
 				else
 				{
-					//��������v���Ȃ��ꍇ�́AbIsChakuJikoku�ƁA�Ή�����m_eSecondRound�Ɋ�Â��A
-					//30�b�ȏ�؂�グ�A�܂��͐؂�グ�̏������s���܂�
+					//時分が一致しない場合は、bIsChakuJikokuと、対応するm_eSecondRoundに基づき、
+					//30秒以上切り上げ、または切り上げの処理を行います
 
 					if (bIsChakuJikoku &&
 						m_eSecondRoundChaku == ESecondRound_RoundUp ||
@@ -259,7 +259,7 @@ tstring CdDedJikoku::CConv::encode( const CdDedJikoku& aJikoku,
 				}
 			}
 
-			//	�� 
+			//	時 
 			int iHour = aTempJikoku.getHour(); 
 			if (m_bDisplay2400 && bIsChakuJikoku &&
 				iHour == 0 && aTempJikoku.getMinute() == 0)
@@ -276,8 +276,8 @@ tstring CdDedJikoku::CConv::encode( const CdDedJikoku& aJikoku,
 			//			m_eSecondRoundHatsu == ESecondRound_Round && aJikoku.getSecond() >= 30))))
 			//{
 			//	/**
-			//		����59�����A�b�؂�グ��0�b�ȊO�E�b�ۂ߂�30�b�ȏ�̏ꍇ�́A�����J��オ��܂��B
-			//		�������A����23���̏ꍇ�́A�J��オ����0�ɂȂ�܂�(2400�\���̏ꍇ�͕�)
+			//		分が59分かつ、秒切り上げで0秒以外・秒丸めで30秒以上の場合は、時も繰り上がります。
+			//		ただし、時が23時の場合は、繰り上がって0になります(2400表示の場合は別)
 			//	*/
 			//	iHour++;
 			//	if (iHour == 24 && 
@@ -290,9 +290,9 @@ tstring CdDedJikoku::CConv::encode( const CdDedJikoku& aJikoku,
 			//	iHour == 0 && aJikoku.getMinute() == 0)
 			//{
 			//	/**
-			//		�����J��オ��Ώۂł͂Ȃ��ꍇ�Am_bDisplay2400��true�Œ������̏ꍇ��0��0���Ȃ�A
-			//		����24�ɕύX���܂��B
-			//		�������A�J��オ���001�ɂȂ�ꍇ�͏����܂�
+			//		時が繰り上がり対象ではない場合、m_bDisplay2400がtrueで着時刻の場合に0時0分なら、
+			//		時を24に変更します。
+			//		ただし、繰り上がりで001になる場合は除きます
 			//	*/
 			//	if (m_eSecondRoundChaku == ESecondRound_RoundDown ||
 			//		m_eSecondRoundChaku == ESecondRound_RoundUp && aJikoku.getSecond() == 0 ||
@@ -322,12 +322,12 @@ tstring CdDedJikoku::CConv::encode( const CdDedJikoku& aJikoku,
 				//strRv += szLs ;
 				strRv += strprintf(_T("%02d"), iHour);
 			}
-			//	���̂��̃R����
+			//	時のつぎのコロン
 			if (!m_bNoColon)
 			{
 				strRv += _T(":");
 			}
-			//	��
+			//	分
 			//int iMinute = aJikoku.getMinute();
 			//if (!bIsChakuJikoku &&
 			//	(m_eSecondRoundChaku == ESecondRound_RoundUp && aJikoku.getSecond() > 0 ||
@@ -337,8 +337,8 @@ tstring CdDedJikoku::CConv::encode( const CdDedJikoku& aJikoku,
 			//		m_eSecondRoundHatsu == ESecondRound_Round && aJikoku.getSecond() >= 30))
 			//{
 			//	/**
-			//		�b�؂�グ��0�b�ȊO�E�b�ۂ߂�30�b�ȏ�̏ꍇ�́A�����J��オ��܂��B
-			//		����60�ɂȂ����ꍇ�́A0�ɕύX���܂��B
+			//		秒切り上げで0秒以外・秒丸めで30秒以上の場合は、分が繰り上がります。
+			//		分が60になった場合は、0に変更します。
 			//	*/
 			//	iMinute++;
 			//	if (iMinute == 60)
@@ -352,14 +352,14 @@ tstring CdDedJikoku::CConv::encode( const CdDedJikoku& aJikoku,
 		}
 		else
 		{
-			//	��
+			//	時
 			int iHour = aJikoku.getHour(); 
 			if (m_bDisplay2400 && bIsChakuJikoku &&
 				iHour == 0 && aJikoku.getMinute() == 0)
 			{
 				/**
-					m_bDisplay2400��true�Œ������̏ꍇ��0��0���Ȃ�A
-					����24�ɕύX���܂��B�b�͍l�����܂���B
+					m_bDisplay2400がtrueで着時刻の場合に0時0分なら、
+					時を24に変更します。秒は考慮しません。
 				*/
 				iHour = 24;
 			}
@@ -384,20 +384,20 @@ tstring CdDedJikoku::CConv::encode( const CdDedJikoku& aJikoku,
 				//strRv += szLs ;
 				strRv += strprintf(_T("%02d"), iHour);
 			}
-			//	���̂��̃R����
+			//	時のつぎのコロン
 			if (!m_bNoColon)
 			{
 				strRv += _T(":");
 			}
-			//	��
+			//	分
 			{
 				strRv += strprintf(_T("%02d"), aJikoku.getMinute());
 			}
-			//	�b
+			//	秒
 			if (m_eSecond == ESecond_Output ||
 				(m_eSecond == ESecond_NotIfZero && aJikoku.getSecond() != 0))
 			{
-				//	���̂��̃R����
+				//	分のつぎのコロン
 				if (!m_bNoColon)
 				{
 					strRv += _T(":");
@@ -421,7 +421,7 @@ tstring CdDedJikoku::CConv::encode( const CdDedJikoku& aJikoku,
 const int iSecondsOfADay = 24 * 60 * 60 ;
 
 // --------------------------------
-//@name �����֐�
+//@name 下請関数
 // --------------------------------
 int CdDedJikoku::adjustTotalSeconds( int iTotalSeconds ) 
 {
@@ -433,7 +433,7 @@ int CdDedJikoku::adjustTotalSeconds( int iTotalSeconds )
 }
 
 // ********************************
-//	�R���X�g���N�^
+//	コンストラクタ
 // ********************************
 CdDedJikoku::CdDedJikoku() : 
 		m_iTotalSeconds( INT_MIN )
@@ -459,7 +459,7 @@ CdDedJikoku::CdDedJikoku( const tstring& strTime )
 //	CdDedJikoku
 // ********************************
 	// ********************************
-	//@name ����
+	//@name 属性
 	// ********************************
 CdDedJikoku& CdDedJikoku::setTotalSeconds( int value ) 
 {
@@ -480,7 +480,7 @@ CdDedJikoku& CdDedJikoku::setNull()
 }
 	
 	// ********************************
-	//@name ����
+	//@name 操作
 	// ********************************
 int CdDedJikoku::compare( const CdDedJikoku& value )const 
 {
@@ -548,17 +548,17 @@ int CdDedJikoku::decode( const tstring& value )
 
 	tstring	strValue = value ;
 
-	//	�����񂪋󕶎���Ȃ�A�wNull��ԁx�Ƃ��܂��B
+	//	文字列が空文字列なら、『Null状態』とします。
 	if ( value.empty() ){
 		setNull() ;
 		return ( 0 ) ;
 	}
 
-	//	�R�������Ȃ��ꍇ�͒ǉ�
+	//	コロンがない場合は追加
 	{
 		tstring::size_type pos = strValue.find(_T(":") ) ;
 		if ( pos == tstring::npos ){
-			//	�R����������܂���B��������2����؂�ŃR������}�����܂��B
+			//	コロンがありません。末尾から2桁区切りでコロンを挿入します。
 			if ( strValue.size() > 2 ){
 				strValue.insert( strValue.size() - 2 , _T(":") ) ;
 			}
@@ -569,17 +569,17 @@ int CdDedJikoku::decode( const tstring& value )
 	}
 	//strValue = "13:15:45","9:15"
 	
-	//	�b���Ȃ��ꍇ�͒ǉ�
+	//	秒がない場合は追加
 	if ( strValue.size() <= 5 ){
 		strValue += _T(":00") ;
 	}
 	//strValue = "13:15:45","9:15:00"
 
-	//	����10�̈ʂ��Ȃ��ꍇ�͒ǉ�
+	//	時の10の位がない場合は追加
 	if ( strValue.size() <= 7 ){
 		strValue = tstring(_T("0") ) + strValue ;
 	}
-	//	����10�̈ʂ��X�y�[�X�̏ꍇ�́A�X�y�[�X�� "0" �ɕύX
+	//	時の10の位がスペースの場合は、スペースを "0" に変更
 	if ( strValue.size() > 0 && strValue[0] == ' ' ){
 		strValue[0] = '0' ;
 	}
@@ -590,21 +590,21 @@ int CdDedJikoku::decode( const tstring& value )
 	int iMinute = -1 ;
 	int iSecond = -1 ;
 	if ( strValue.size() == 8 ){
-		//	��
+		//	時
 		{
 			tstring	strLs = strValue.substr( 0 , 2 ) ;
 			if ( strLs.find_first_not_of(_T("0123456789") ) == tstring::npos ){
 				iHour = _ttoi( strLs.c_str() ) ;
 			}
 		}
-		//	��
+		//	分
 		{
 			tstring	strLs = strValue.substr( 3 , 2 ) ;
 			if ( strLs.find_first_not_of(_T("0123456789") ) == tstring::npos ){
 				iMinute = _ttoi( strLs.c_str() ) ;
 			}
 		}
-		//	�b
+		//	秒
 		{
 			tstring	strLs = strValue.substr( 6 , 2 ) ;
 			if ( strLs.find_first_not_of(_T("0123456789") ) == tstring::npos ){
@@ -612,7 +612,7 @@ int CdDedJikoku::decode( const tstring& value )
 			}
 		}
 	}	else	{
-		iRv = -1 ;	//	���ڐ����s�����Ă��܂��B
+		iRv = -1 ;	//	項目数が不足しています。
 		return ( iRv ) ;
 	}
 	
@@ -621,7 +621,7 @@ int CdDedJikoku::decode( const tstring& value )
 			0 <= iSecond && iSecond < 60 ){
 		setTime( iHour , iMinute , iSecond ) ;
 	}	else	{
-		iRv = -2 ;	//	���E���E�b�̕\�L���s���ł��B
+		iRv = -2 ;	//	時・分・秒の表記が不正です。
 	}
 	
 	return ( iRv ) ;

@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,38 +35,38 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
 #if !defined(AFX_CDLGMODIFYEKIJIKOKUOPERATION2_H__10F94D00_0F5B_43AA_BAAC_6330BDCE7CD9__INCLUDED_)
 #define AFX_CDLGMODIFYEKIJIKOKUOPERATION2_H__10F94D00_0F5B_43AA_BAAC_6330BDCE7CD9__INCLUDED_
@@ -74,85 +74,85 @@ Copyright (C) 2006-2017 take-okm
 #if _MSC_VER > 1000
 #pragma once
 #endif // _MSC_VER > 1000
-// cdlgmodifyekijikokuoperation2.h : �w�b�_�[ �t�@�C��
+// cdlgmodifyekijikokuoperation2.h : ヘッダー ファイル
 //
 /** @file */
-#include "..\entDed\CentDedRessya.h"
-#include "..\entDed\CentDedRessya_EkijikokuModifyOperation2.h"
+#include "..¥entDed¥CentDedRessya.h"
+#include "..¥entDed¥CentDedRessya_EkijikokuModifyOperation2.h"
 
 namespace ViewJikokuhyou{
 
 /////////////////////////////////////////////////////////////////////////////
-// CDlgModifyEkijikokuOperation2 �_�C�A���O
+// CDlgModifyEkijikokuOperation2 ダイアログ
 /**
    @brief
-  	�w�w�����ύX�x���[�_���_�C�A���O�ł��B
+  	『駅時刻変更』モーダルダイアログです。
   
-   �y�g�����z
+   【使い方】
   
-  	�P�D  �R���X�g���N�^�̈����ɂ́A�_�C�A���O�̏����ݒ�l��
-  	�w�肵�Ă��������B
+  	１．  コンストラクタの引数には、ダイアログの初期設定値を
+  	指定してください。
   	
-  	�Q�D  DoModal() �ŁA�_�C�A���O���J�n���Ă��������B
+  	２．  DoModal() で、ダイアログを開始してください。
   	
-  	�R�D  DoModal() �̖߂�l�� IDOK �̏ꍇ�́A
-  	 m_EkijikokuModifyOperation �ɁA�_�C�A���O�ւ̓��͓��e���i�[
-  	����Ă��܂��B
+  	３．  DoModal() の戻り値が IDOK の場合は、
+  	 m_EkijikokuModifyOperation に、ダイアログへの入力内容が格納
+  	されています。
  */
 
 class CDlgModifyEkijikokuOperation2 : public CDialog
 {
 private:
 	// ********************************
-	///@name	����
+	///@name	属性
 	// ********************************
 	///@{
 	/**
-		�w����ێ����܂��B
-		�R���X�g���N�^�� pCentDedEkiContGet �����ƂɌ��܂�܂��B
+		駅名を保持します。
+		コンストラクタで pCentDedEkiContGet をもとに決まります。
 	*/
 	std::deque<tstring>	m_contstrEkimei ;
 	/**
-	  	�R���X�g���N�^�Ō��܂�܂��B
-	  	���̒l�́A�_�C�A���O�̏����l�ɔ��f����܂��B
+	  	コンストラクタで決まります。
+	  	この値は、ダイアログの初期値に反映されます。
 	  
-	    OnOK() �́A�_�C�A���O�̓��͓��e���A���̕ϐ��ɐݒ肵�܂��B
-	    ���̒l�́A���\�b�h�Ŏ擾�ł��܂��B
+	    OnOK() は、ダイアログの入力内容を、この変数に設定します。
+	    この値は、メソッドで取得できます。
 	 */
 	CentDedRessya_EkijikokuModifyOperation2 m_EkijikokuModifyOperation2 ;
 	///@}
 protected:
 	// --------------------------------
-	///@name �����֐�
+	///@name 下請関数
 	// --------------------------------
 	///@{
 	/**
-	  	�R���g���[���̑I���󋵂ɉ����āA�L���E������؂�ւ��܂��B
+	  	コントロールの選択状況に応じて、有効・無効を切り替えます。
 	   @return
-	  	�R���g���[���̏�Ԃ�ύX�����ꍇ�͐^�ł��B
+	  	コントロールの状態を変更した場合は真です。
 	 */
 	virtual bool updateControl() ; 
 
 	/**
-		�R�s�[���R���{�{�b�N�X�̃C���f�N�X���A
-		CdDedJikokuOrder ���瓱�o���܂��B
+		コピー元コンボボックスのインデクスを、
+		CdDedJikokuOrder から導出します。
 	@param aJikokuOrder [in]
-		����Order���w�肵�Ă��������B
+		時刻Orderを指定してください。
 	@return 
-		�Ή�����R���{�{�b�N�X��Index��Ԃ��܂��B
-		�R���{�{�b�N�X�ɑΉ�����A�C�e�����Ȃ��ꍇ�́A-1��Ԃ��܂��B
+		対応するコンボボックスのIndexを返します。
+		コンボボックスに対応するアイテムがない場合は、-1を返します。
 	*/
 	int COMBO_JikokuOuderCopySrcFromJikokuOrder( 
 		const CdDedJikokuOrder& aJikokuOrder ) ;
 
 	/**
-		�R�s�[���R���{�{�b�N�X�̃C���f�N�X����A
-		CdDedJikokuOrder �𓱏o���܂��B
+		コピー元コンボボックスのインデクスから、
+		CdDedJikokuOrder を導出します。
 	@param iComboIndex [in]
-		�R���{�{�b�N�X��Index���w�肵�Ă��������B
+		コンボボックスのIndexを指定してください。
 	@return 
-		�Ή�����CdDedJikokuOrder��Ԃ��܂��B
-		�Ή����鎞��Order���Ȃ��ꍇ�́A NULL��Ԃ�Ԃ��܂��B
+		対応するCdDedJikokuOrderを返します。
+		対応する時刻Orderがない場合は、 NULL状態を返します。
 	*/
 	CdDedJikokuOrder COMBO_JikokuOuderCopySrcToJikokuOrder( 
 		int iComboIndex ) ;
@@ -163,7 +163,7 @@ public:
 	//	CDlgModifyEkijikokuOperation
 	// ********************************
 	// ********************************
-	///@name	����
+	///@name	属性
 	// ********************************
 	///@{
 	CentDedRessya_EkijikokuModifyOperation2 getCentDedRessya_EkijikokuModifyOperation2(){
@@ -174,25 +174,25 @@ public:
 //	MFC
 // ----------------------------------------------------------------
 
-// �R���X�g���N�V����
+// コンストラクション
 public:
 	/**
 	 @param aEkijikokuModifyOperation2 [in]
-		������Ԃ́w�w�����ύX�x������e���w�肵�Ă��������B
+		初期状態の『駅時刻変更』動作内容を指定してください。
 	 @param pCentDedEkiContGet [in]
-		�w����ێ�����R���e�i���w�肵�Ă��������B
-		���̈����Ŏw�肷��R���e�i�́A���p���鎞���\�r���[�̏��E����ɏ�����
-		���̂��w�肵�Ă��������B
-		���̃C���X�^���X�́A�R���X�g���N�^���I���������Ƃ́A�j�����邱�Ƃ��ł��܂��B
+		駅情報を保持するコンテナを指定してください。
+		この引数で指定するコンテナは、利用する時刻表ビューの上り・下りに準じた
+		ものを指定してください。
+		このインスタンスは、コンストラクタが終了したあとは、破棄することができます。
 	 @param pParent [in]
-		�e�E�C���h�E���w�肵�Ă��������B
+		親ウインドウを指定してください。
 	*/
 	CDlgModifyEkijikokuOperation2(
 		CentDedRessya_EkijikokuModifyOperation2& aEkijikokuModifyOperation2 ,
 		const Mu<CentDedEkiCont::CdDedEki>* pCentDedEkiContGet , 
-		CWnd* pParent = NULL);   // �W���̃R���X�g���N�^
+		CWnd* pParent = NULL);   // 標準のコンストラクタ
 
-// �_�C�A���O �f�[�^
+// ダイアログ データ
 	//{{AFX_DATA(CDlgModifyEkijikokuOperation2)
 	enum { IDD = IDD_ModifyEkijikokuOperation2 };
 	int		m_iRADIO_Ekiatsukai;
@@ -206,17 +206,17 @@ public:
 	//}}AFX_DATA
 
 
-// �I�[�o�[���C�h
-	// ClassWizard �͉��z�֐��̃I�[�o�[���C�h�𐶐����܂��B
+// オーバーライド
+	// ClassWizard は仮想関数のオーバーライドを生成します。
 	//{{AFX_VIRTUAL(CDlgModifyEkijikokuOperation2)
 	protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV �T�|�[�g
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV サポート
 	//}}AFX_VIRTUAL
 
-// �C���v�������e�[�V����
+// インプリメンテーション
 protected:
 
-	// �������ꂽ���b�Z�[�W �}�b�v�֐�
+	// 生成されたメッセージ マップ関数
 	//{{AFX_MSG(CDlgModifyEkijikokuOperation2)
 	virtual BOOL OnInitDialog();
 	afx_msg void OnRADIOEkijikokuOperation();
@@ -229,7 +229,7 @@ protected:
 	DECLARE_MESSAGE_MAP()
 };
 //{{AFX_INSERT_LOCATION}}
-// Microsoft Visual C++ �͑O�s�̒��O�ɒǉ��̐錾��}�����܂��B
+// Microsoft Visual C++ は前行の直前に追加の宣言を挿入します。
 
 } //namespace ViewJikokuhyou
 

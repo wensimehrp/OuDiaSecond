@@ -1,8 +1,8 @@
 /*
 OuDiaSecond Copyright (C) 2017-2025 diagram_mania
 
-���̃v���O�����́Atake-okm�����쐬����OuDia�����������\�t�g�E�F�A�ł��B
-���̃v���O�������p�ɂ��ẮAtake-okm���L�ڂ̉��L�����ɏ������܂��B
+このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
+このプログラム利用については、take-okm氏記載の下記文書に準拠します。
 */
 /*
 	OuDia - Win32 Application Software to draw a "Train Service Planning
@@ -35,40 +35,40 @@ You should have received a copy of the GNU General Public License along with
   do so, delete this exception statement from your version.
 
 
-(��: 
+(訳: 
 
-	OuDia - ��Ԏ����\�����ƂɁA�_�C���O������`�悷��Win32�A�v���P�[�V
-�����B
+	OuDia - 列車時刻表をもとに、ダイヤグラムを描画するWin32アプリケーシ
+ョン。
 
 Copyright (C) 2006-2017 take-okm 
 
-���̃v���O�����̓t���[�\�t�g�E�F�A�ł��B���Ȃ��͂�����A�t���[�\�t�g�E�F�A��
-�c�ɂ���Ĕ��s���ꂽGNU ��ʌ��O���p������(�o�[�W����3���A����ȍ~�̃o�[�W��
-���̂����ǂꂩ)����߂�����̉��ōĔЕz�܂��͉��� ���邱�Ƃ��ł��܂��B
+このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財
+団によって発行されたGNU 一般公衆利用許諾書(バージョン3か、それ以降のバージョ
+ンのうちどれか)が定める条件の下で再頒布または改変 することができます。
 
-���̃v���O�����͗L�p�ł��邱�Ƃ�����ĔЕz����܂����A*�S���̖��ۏ� *�ł��B
-���Ɖ\���̕ۏ؂����ړI�ւ̓K�����́A���O�Ɏ����ꂽ���̂� �܂߁A�S������
-���܂���B�ڂ�����GNU ��ʌ��O���p���������������������B
+このプログラムは有用であることを願って頒布されますが、*全くの無保証 *です。
+商業可能性の保証や特定目的への適合性は、言外に示されたものも 含め、全く存在
+しません。詳しくはGNU 一般公衆利用許諾書をご覧ください。
 
-���Ȃ��͂��̃v���O�����Ƌ��ɁAGNU ��ʌ��O���p�������̃R�s�[���ꕔ �󂯎��
-�Ă���͂��ł��B�����󂯎���Ă��Ȃ���΁A<http://www.gnu.org/licenses/> ��
-�������������B
+あなたはこのプログラムと共に、GNU 一般公衆利用許諾書のコピーを一部 受け取っ
+ているはずです。もし受け取っていなければ、<http://www.gnu.org/licenses/> を
+ご覧ください。
 
 )
 
-  �����āA���ʂȗ�O�Ƃ��āAtake-okm �͂��̃v���O�����̃R�[�h�� 
+  加えて、特別な例外として、take-okm はこのプログラムのコードを 
   "MFC(Microsoft Foundation Class library) Version 9.0" 
-  (  ���邢�� "MFC Version 9.0" �Ɠ������C�Z���X���K�p���ꂽ
-  "MFC Version 9.0" �̉��ς��ꂽ�o�[�W����)�ƃ����N���A
-  �����N���ꂽ���҂��܂ތ������앨��Еz���鋖��^���܂��B
-  ���Ȃ��� "MFC" �ȊO�Ŏg���Ă��邷�ׂ�
-  �̃R�[�h�Ɋւ��Ă͑S�ʓI��GNU��ʌ��O���p�����_�񏑂ɏ]��Ȃ����
-  �Ȃ�܂���B���Ȃ������̃t�@�C�������ς����Ȃ�΁A���Ȃ��͂��̗�O
-  �����Ȃ��̃o�[�W�����̃t�@�C���Ɉ��������݂��邱�Ƃ��ł��܂����A��
-  ������`���͂���܂���B������O��݂������Ȃ���΁A���̗�O������
-  ���Ȃ��̃o�[�W��������͍폜���Ă��������B)
+  (  あるいは "MFC Version 9.0" と同じライセンスが適用された
+  "MFC Version 9.0" の改変されたバージョン)とリンクし、
+  リンクされた両者を含む結合著作物を頒布する許可を与えます。
+  あなたは "MFC" 以外で使われているすべて
+  のコードに関しては全面的にGNU一般公衆利用許諾契約書に従わなければ
+  なりません。あなたがこのファイルを改変したならば、あなたはこの例外
+  をあなたのバージョンのファイルに引き続き設けることもできますが、そ
+  うする義務はありません。もし例外を設けたくなければ、この例外条項を
+  あなたのバージョンからは削除してください。)
 */
-// CMainFrame.cpp : CMainFrame �N���X�̓���̒�`���s���܂��B
+// CMainFrame.cpp : CMainFrame クラスの動作の定義を行います。
 //	$Id: CMainFrame.cpp 295 2016-06-11 05:14:13Z okm $
 /** @file */
 
@@ -78,21 +78,21 @@ Copyright (C) 2006-2017 take-okm
 #include "str/vectorToFile.h"
 #include "str/strToWstr.h"
 #include "str/tstring.h"
-#include "str\OuPropertiesText\ErrorInfo\COuErrorInfoContainer.h"
-#include "str\OuPropertiesText\CConvNodeContainer.h"
+#include "str¥OuPropertiesText¥ErrorInfo¥COuErrorInfoContainer.h"
+#include "str¥OuPropertiesText¥CConvNodeContainer.h"
 
 
 #include "DiagramEdit.h"
 #include "CMainFrame.h"
-#include "DedRosenFileData\EditCmd\EditCmd.h"
-#include "DedRosenFileData\CconvCDedRosenFileData.h"
-#include "DedRosenFileData\CconvCDedRosenFileDataDigital.h"
-#include "DedRosenFileData\CconvCDedRosenFileDataDigital2.h"
-#include "DedRosenFileData\CconvCDedRosenFileDataDigital3.h"
-#include "ViewRosen\CDlgRosenFileProp.h"
-#include "ViewRosen\CDlgDiaList.h"
-#include "ViewRosen\CDlgRosenCreateSubRosen.h"
-#include "ViewRosen\CDlgRosenfileInsert.h"
+#include "DedRosenFileData¥EditCmd¥EditCmd.h"
+#include "DedRosenFileData¥CconvCDedRosenFileData.h"
+#include "DedRosenFileData¥CconvCDedRosenFileDataDigital.h"
+#include "DedRosenFileData¥CconvCDedRosenFileDataDigital2.h"
+#include "DedRosenFileData¥CconvCDedRosenFileDataDigital3.h"
+#include "ViewRosen¥CDlgRosenFileProp.h"
+#include "ViewRosen¥CDlgDiaList.h"
+#include "ViewRosen¥CDlgRosenCreateSubRosen.h"
+#include "ViewRosen¥CDlgRosenfileInsert.h"
 
 using namespace std ;
 using namespace OuLib::Str ;
@@ -122,23 +122,23 @@ void CMainFrame::OnSetPreviewMode( BOOL bPreview, CPrintPreviewState* pModeStuff
 	super::OnSetPreviewMode(  bPreview, pModeStuff ) ;
 }
 	// --------------------------------
-	//@name ���j���[�R�}���h�̉����֐�
+	//@name メニューコマンドの下請関数
 	// --------------------------------
-//	[�t�@�C��]-[�H���t�@�C���̑g����]
+//	[ファイル]-[路線ファイルの組入れ]
 int CMainFrame::OnFileRosenFileInsert_Process( BOOL bQueryEnable ) 
 {
 	int iRv = 0; 
 	// ****************************************************************
-	//	�R�}���h�̗L���E��������
+	//	コマンドの有効・無効判定
 	// ****************************************************************
 	const CDedRosenFileData* pRosenFileDataCurrent = getCDiagramEditDoc()->getCDedRosenFileData() ;
 	if ( iRv >= 0 )
 	{
-		//	�w��2�����Ȃ�A���̃R�}���h�͎g�p�ł��܂���B
+		//	駅が2つ未満なら、このコマンドは使用できません。
 		const CentDedEkiCont* pEkiCont = pRosenFileDataCurrent->getCentDedRosen()->getCentDedEkiCont() ;
 		if ( pEkiCont->size() < 2 )
 		{
-			iRv = -21 ;	//	�w��2�����Ȃ�A���̃R�}���h�͎g�p�ł��܂���B
+			iRv = -21 ;	//	駅が2つ未満なら、このコマンドは使用できません。
 		}
 	}
 
@@ -147,11 +147,11 @@ int CMainFrame::OnFileRosenFileInsert_Process( BOOL bQueryEnable )
 		return iRv ;
 	}
 	// ****************************************************************
-	//	�R�}���h�̎��s
+	//	コマンドの実行
 	// ****************************************************************
 	CString strErrorMsgSub ;
 
-	//(2)[�H���t�@�C���̑g����]�_�C�A���O
+	//(2)[路線ファイルの組入れ]ダイアログ
 	CString strOudFilename ;
 	int iEkiIndexToInsert = -1 ;
 	{
@@ -160,7 +160,7 @@ int CMainFrame::OnFileRosenFileInsert_Process( BOOL bQueryEnable )
 		int iResult = aDlg.DoModal() ;
 		if ( iResult != IDOK )
 		{
-			iRv = -1 ;	//	���[�U�[�ɂ��L�����Z��
+			iRv = -1 ;	//	ユーザーによるキャンセル
 		}
 		else
 		{
@@ -168,12 +168,12 @@ int CMainFrame::OnFileRosenFileInsert_Process( BOOL bQueryEnable )
 			strOudFilename = aDlg.getOudFilenameToInsert() ;
 		}
 	}
-	//strOudFilename = �t�@�C���_�C�A���O�Ŏw�肳�ꂽ .oud �t�@�C����
-	//iEkiIndexToInsert = �g�����wIndex
+	//strOudFilename = ファイルダイアログで指定された .oud ファイル名
+	//iEkiIndexToInsert = 組入れ先駅Index
 	
 	// --------------------------------
-	//	.oud�t�@�C����ǂݍ���
-	//	CDedRosenFileData �𐶐�
+	//	.oudファイルを読み込み
+	//	CDedRosenFileData を生成
 	// --------------------------------
 	CDedRosenFileData	rosenfiledataAdd ;
 	if ( iRv >= 0 )
@@ -186,7 +186,7 @@ int CMainFrame::OnFileRosenFileInsert_Process( BOOL bQueryEnable )
 				tstringOf( (LPCTSTR)strOudFilename ) ) ;
 			if ( iResult < 0 )
 			{
-				iRv = -11 ;	//	�t�@�C�����݂���܂���B
+				iRv = -11 ;	//	ファイルがみつかりません。
 			}
 		}
 		if ( iRv >= 0 )
@@ -200,15 +200,15 @@ int CMainFrame::OnFileRosenFileInsert_Process( BOOL bQueryEnable )
 			if ( iResult < 0 )
 			{
 				strErrorMsgSub = aCOuErrorInfoContainer.toOuErrorInfoText().c_str() ;
-				iRv = -12 ;	//	�t�@�C���̌`�����s���ł��B
+				iRv = -12 ;	//	ファイルの形式が不正です。
 			}
 		}
 	}
-	//rosenfiledataAdd = �ǉ����� .oud �̃f�[�^��ێ����Ă��܂��B
+	//rosenfiledataAdd = 追加する .oud のデータを保持しています。
 
 	// --------------------------------
-	//	rosenfiledataCurrent �̘H���̖�����
-	//	rosenfiledataAdd �̘H����ǉ�
+	//	rosenfiledataCurrent の路線の末尾に
+	//	rosenfiledataAdd の路線を追加
 	// --------------------------------
 	CDedRosenFileData rosenfiledataCurrent = *getCDiagramEditDoc()->getCDedRosenFileData() ;
 	if ( iRv >= 0 )
@@ -222,18 +222,18 @@ int CMainFrame::OnFileRosenFileInsert_Process( BOOL bQueryEnable )
 		getCDiagramEditDoc()->executeEditCmd( pCmd ) ;
 	}
 	// ****************************************************************
-	//	�G���[���b�Z�[�W
+	//	エラーメッセージ
 	// ****************************************************************
 	CString strErrorMsg ;
 	if ( iRv < 0 )
 	{
 		switch( iRv )
 		{
-		case -1 :	//	�L�����Z��
+		case -1 :	//	キャンセル
 			break ;
-		case -11 :	//	�t�@�C�����݂���܂���B
+		case -11 :	//	ファイルがみつかりません。
 			strErrorMsg.Format( IDS_ERR_FILENOTFOUND , strOudFilename ) ;
-		case -12 :	//	�t�@�C���̌`�����s���ł��B
+		case -12 :	//	ファイルの形式が不正です。
 			strErrorMsg.Format( IDS_ERR_FILEFORMAT , strOudFilename ) ;
 		default:
 			strErrorMsg.Format( _T( "Error(%d)" ) , iRv ) ;
@@ -242,7 +242,7 @@ int CMainFrame::OnFileRosenFileInsert_Process( BOOL bQueryEnable )
 		if ( !strErrorMsgSub.IsEmpty() )
 		{
 
-			strErrorMsg += _T( "\n" ) ;
+			strErrorMsg += _T( "¥n" ) ;
 			strErrorMsg += strErrorMsgSub ;
 		}
 	}
@@ -253,18 +253,18 @@ int CMainFrame::OnFileRosenFileInsert_Process( BOOL bQueryEnable )
 	return iRv ;
 }
 
-//[�t�@�C��]-[�H���t�@�C���̐؂�o��]
+//[ファイル]-[路線ファイルの切り出し]
 int CMainFrame::OnFileRosenCreateSubRosen_Process( BOOL bQueryEnable ) 
 {
 	int iRv = 0;
 	// ****************************************************************
-	//	�R�}���h�̗L���E��������
+	//	コマンドの有効・無効判定
 	// ****************************************************************
 	{
 		int iEkiCount = getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()->getCentDedEkiCont()->size() ;
 		if ( iEkiCount < 3 )
 		{
-			iRv = -31 ;	//	3�w�����̘H���ł́A�g�p�ł��܂���B
+			iRv = -31 ;	//	3駅未満の路線では、使用できません。
 		}
 	}
 	if ( bQueryEnable || iRv < 0 )
@@ -272,12 +272,12 @@ int CMainFrame::OnFileRosenCreateSubRosen_Process( BOOL bQueryEnable )
 		return iRv ;
 	}
 	// ****************************************************************
-	//	�R�}���h�̎��s
+	//	コマンドの実行
 	// ****************************************************************
 	CString strErrorMsgSub ;
 	CDedRosenFileData rosenfiledataCurrent = *getCDiagramEditDoc()->getCDedRosenFileData() ;
 
-	//(2)[�ꕔ�w�Ԃ̘H���t�@�C�����쐬]�_�C�A���O
+	//(2)[一部駅間の路線ファイルを作成]ダイアログ
 	int iEkiIndex = 0 ;
 	int iEkiCount = 0 ;
 	bool bEnableOuter = false;
@@ -288,7 +288,7 @@ int CMainFrame::OnFileRosenCreateSubRosen_Process( BOOL bQueryEnable )
 		int iResult = aDlg.DoModal() ;
 		if ( iResult != IDOK )
 		{
-			iRv = -1 ;	//	���[�U�[�ɂ��L�����Z��
+			iRv = -1 ;	//	ユーザーによるキャンセル
 		}
 		else
 		{
@@ -297,11 +297,11 @@ int CMainFrame::OnFileRosenCreateSubRosen_Process( BOOL bQueryEnable )
 			bEnableOuter = aDlg.getEnableOuter();
 		}
 	}
-	//iEkiIndex = �V�����H���t�@�C���́A�n���wIndex
-	//iEkiCount = �V�����H���t�@�C���̉w��
+	//iEkiIndex = 新しい路線ファイルの、始発駅Index
+	//iEkiCount = 新しい路線ファイルの駅数
 
 
-	//�@���O�����ĕۑ��_�C�A���O
+	//　名前をつけて保存ダイアログ
 	CString strNewOudFilename ;
 	if ( iRv >= 0 )
 	{
@@ -313,19 +313,19 @@ int CMainFrame::OnFileRosenCreateSubRosen_Process( BOOL bQueryEnable )
 		int iResult = aDlg.DoModal() ;
 		if ( iResult != IDOK )
 		{
-			iRv = -1 ;	//	���[�U�[�ɂ��L�����Z��
+			iRv = -1 ;	//	ユーザーによるキャンセル
 		}
 		else
 		{
 			strNewOudFilename = aDlg.GetPathName() ;
 		}
 	}
-	//strNewOudFilename = �V�����H���t�@�C����
+	//strNewOudFilename = 新しい路線ファイル名
 
 	// --------------------------------
-	//	rosenfiledataCurrent �̘H������A
-	//	�ꕔ��Ԃ̘H��
-	//	rosenfiledataSub �𐶐�
+	//	rosenfiledataCurrent の路線から、
+	//	一部区間の路線
+	//	rosenfiledataSub を生成
 	// --------------------------------
 	CDedRosenFileData	rosenfiledataSub ;
 	if ( iRv >= 0 )
@@ -335,8 +335,8 @@ int CMainFrame::OnFileRosenCreateSubRosen_Process( BOOL bQueryEnable )
 			rosenfiledataCurrent.getCentDedRosen()->createSubRosen( iEkiIndex , iEkiCount , bEnableOuter) ;
 	}
 	// --------------------------------
-	//	CDedRosenFileData ��
-	//	.oud2�t�@�C���ɕۑ�
+	//	CDedRosenFileData を
+	//	.oud2ファイルに保存
 	// --------------------------------
 	OuPropertiesText::CNodeContainer	aCNodeContainer ;  
 	if ( iRv >= 0 )
@@ -347,11 +347,11 @@ int CMainFrame::OnFileRosenCreateSubRosen_Process( BOOL bQueryEnable )
 			&aCNodeContainer ) ;
 		if ( iResult < 0 )
 		{
-			iRv = -11 ;	//	�H���f�[�^�̕ϊ��Ɏ��s���܂����B
+			iRv = -11 ;	//	路線データの変換に失敗しました。
 		}
 	}
 	// --------------------------------
-	//	FileTypeAppComment ��t�^
+	//	FileTypeAppComment を付与
 	// --------------------------------
 	if ( iRv >= 0 )
 	{
@@ -362,7 +362,7 @@ int CMainFrame::OnFileRosenCreateSubRosen_Process( BOOL bQueryEnable )
 		aCNodeContainer.setValue( nameFileTypeAppComment , strFileTypeAppComment );
 	}
 	// --------------------------------
-	//	�t�@�C���ɕۑ�
+	//	ファイルに保存
 	// --------------------------------
 	if ( iRv >= 0 )
 	{
@@ -372,32 +372,32 @@ int CMainFrame::OnFileRosenCreateSubRosen_Process( BOOL bQueryEnable )
 			strOudContent , 
 			tstringOf( (LPCTSTR)strNewOudFilename ) ) ;
 		//iResult 
-		//	-1: �t�@�C�����I�[�v���ł��܂���B
-		//	-2 ; // �������݂Ɏ��s���܂����B 
+		//	-1: ファイルがオープンできません。
+		//	-2 ; // 書き込みに失敗しました。 
 		if ( iResult < 0 )
 		{
 			iRv = iResult - 20 ;
 		}
 		//iRv
-		//	-21: �t�@�C�����I�[�v���ł��܂���B
-		//	-22 ; // �������݂Ɏ��s���܂����B 
+		//	-21: ファイルがオープンできません。
+		//	-22 ; // 書き込みに失敗しました。 
 		
 	}
 	// ****************************************************************
-	//	�G���[���b�Z�[�W
+	//	エラーメッセージ
 	// ****************************************************************
 	CString strErrorMsg ;
 	if ( iRv < 0 )
 	{
 		switch( iRv )
 		{
-		case -21:	//	�t�@�C�����I�[�v���ł��܂���B
+		case -21:	//	ファイルがオープンできません。
 			strErrorMsg.Format( IDS_ERR_FILECREATE , (LPCTSTR)strNewOudFilename ) ;
 			break ;
-		case -22: // �������݂Ɏ��s���܂����B 
+		case -22: // 書き込みに失敗しました。 
 			strErrorMsg.Format( IDS_ERR_FILEWRITE , (LPCTSTR)strNewOudFilename ) ;
 			break ;
-		case -1: // ���[�U�[�ɂ��L�����Z��
+		case -1: // ユーザーによるキャンセル
 			break ;
 		default:
 			strErrorMsg.Format( _T( "Error(%d)" ) , iRv ) ;
@@ -406,7 +406,7 @@ int CMainFrame::OnFileRosenCreateSubRosen_Process( BOOL bQueryEnable )
 		if ( !strErrorMsgSub.IsEmpty() )
 		{
 
-			strErrorMsg += _T( "\n" ) ;
+			strErrorMsg += _T( "¥n" ) ;
 			strErrorMsg += strErrorMsgSub ;
 		}
 	}
@@ -418,12 +418,12 @@ int CMainFrame::OnFileRosenCreateSubRosen_Process( BOOL bQueryEnable )
 
 }
 
-//	[�t�@�C��]-[�O�������\�C���|�[�g]
+//	[ファイル]-[外部時刻表インポート]
 int CMainFrame::OnFileDigitalJikokuhyoufileImport_Process(BOOL bQueryEnable)
 {
 	int iRv = 0;
 	// ****************************************************************
-	//	�R�}���h�̗L���E��������
+	//	コマンドの有効・無効判定
 	// ****************************************************************
 	const CDedRosenFileData* pRosenFileDataCurrent = getCDiagramEditDoc()->getCDedRosenFileData();
 
@@ -432,11 +432,11 @@ int CMainFrame::OnFileDigitalJikokuhyoufileImport_Process(BOOL bQueryEnable)
 		return iRv;
 	}
 	// ****************************************************************
-	//	�R�}���h�̎��s
+	//	コマンドの実行
 	// ****************************************************************
 	CString strErrorMsgSub;
 
-	//(2)[�O�������\�C���|�[�g]�_�C�A���O
+	//(2)[外部時刻表インポート]ダイアログ
 	CString strImportFilenameKudari1;
 	CString strImportFilenameNobori1;
 	CString strImportFilenameKudari2;
@@ -448,7 +448,7 @@ int CMainFrame::OnFileDigitalJikokuhyoufileImport_Process(BOOL bQueryEnable)
 		int iResult = aDlg.DoModal();
 		if (iResult != IDOK)
 		{
-			iRv = -1;	//	���[�U�[�ɂ��L�����Z��
+			iRv = -1;	//	ユーザーによるキャンセル
 		}
 		else
 		{
@@ -459,12 +459,12 @@ int CMainFrame::OnFileDigitalJikokuhyoufileImport_Process(BOOL bQueryEnable)
 			bInvalidateIndividualHandling = aDlg.getInvalidateIndividualHandling();
 		}
 	}
-	//strOudFilename = �t�@�C���_�C�A���O�Ŏw�肳�ꂽ .oud �t�@�C����
-	//iEkiIndexToInsert = �g�����wIndex
+	//strOudFilename = ファイルダイアログで指定された .oud ファイル名
+	//iEkiIndexToInsert = 組入れ先駅Index
 
 	// --------------------------------
-	//	.oud�t�@�C����ǂݍ���
-	//	CDedRosenFileData �𐶐�
+	//	.oudファイルを読み込み
+	//	CDedRosenFileData を生成
 	// --------------------------------
 	CDedRosenFileData	rosenfiledataAdd;
 	if (iRv >= 0)
@@ -487,7 +487,7 @@ int CMainFrame::OnFileDigitalJikokuhyoufileImport_Process(BOOL bQueryEnable)
 				true);
 			if (iResult < 0)
 			{
-				iRv = -11;	//	�t�@�C��1���݂���܂���B
+				iRv = -11;	//	ファイル1がみつかりません。
 			}
 		}
 
@@ -499,7 +499,7 @@ int CMainFrame::OnFileDigitalJikokuhyoufileImport_Process(BOOL bQueryEnable)
 				true);
 			if (iResult < 0)
 			{
-				iRv = -12;	//	�t�@�C��2���݂���܂���B
+				iRv = -12;	//	ファイル2がみつかりません。
 			}
 		}
 
@@ -511,7 +511,7 @@ int CMainFrame::OnFileDigitalJikokuhyoufileImport_Process(BOOL bQueryEnable)
 				true);
 			if (iResult < 0)
 			{
-				iRv = -13;	//	�t�@�C��3���݂���܂���B
+				iRv = -13;	//	ファイル3がみつかりません。
 			}
 		}
 
@@ -523,7 +523,7 @@ int CMainFrame::OnFileDigitalJikokuhyoufileImport_Process(BOOL bQueryEnable)
 				true);
 			if (iResult < 0)
 			{
-				iRv = -14;	//	�t�@�C��4���݂���܂���B
+				iRv = -14;	//	ファイル4がみつかりません。
 			}
 		}
 
@@ -533,10 +533,10 @@ int CMainFrame::OnFileDigitalJikokuhyoufileImport_Process(BOOL bQueryEnable)
 			bool bIsOdekake2 = strFileContent2.find(_T("https://www.jr-odekake.net/")) != tstring::npos;
 			bool bIsOdekake3 = strFileContent3.find(_T("https://www.jr-odekake.net/")) != tstring::npos;
 			bool bIsOdekake4 = strFileContent4.find(_T("https://www.jr-odekake.net/")) != tstring::npos;
-			bool bIsHokkaido1 = strFileContent1.find(_T("�����\|�k�C�����q�S���������")) != tstring::npos;
-			bool bIsHokkaido2 = strFileContent2.find(_T("�����\|�k�C�����q�S���������")) != tstring::npos;
-			bool bIsHokkaido3 = strFileContent3.find(_T("�����\|�k�C�����q�S���������")) != tstring::npos;
-			bool bIsHokkaido4 = strFileContent4.find(_T("�����\|�k�C�����q�S���������")) != tstring::npos;
+			bool bIsHokkaido1 = strFileContent1.find(_T("時刻表|北海道旅客鉄道株式会社")) != tstring::npos;
+			bool bIsHokkaido2 = strFileContent2.find(_T("時刻表|北海道旅客鉄道株式会社")) != tstring::npos;
+			bool bIsHokkaido3 = strFileContent3.find(_T("時刻表|北海道旅客鉄道株式会社")) != tstring::npos;
+			bool bIsHokkaido4 = strFileContent4.find(_T("時刻表|北海道旅客鉄道株式会社")) != tstring::npos;
 			if (bIsOdekake1 && (bIsOdekake2 || strFileContent2.empty())
 				&& (bIsOdekake3 || strFileContent3.empty()) && (bIsOdekake4 || strFileContent4.empty()))
 			{
@@ -552,7 +552,7 @@ int CMainFrame::OnFileDigitalJikokuhyoufileImport_Process(BOOL bQueryEnable)
 				if (iResult < 0)
 				{
 					strErrorMsgSub = aCOuErrorInfoContainer.toOuErrorInfoText().c_str();
-					iRv = iResult;	//	�t�@�C���̌`�����s���ł��B
+					iRv = iResult;	//	ファイルの形式が不正です。
 				}
 			}
 			else if (bIsHokkaido1 && (bIsHokkaido2 || strFileContent2.empty())
@@ -570,7 +570,7 @@ int CMainFrame::OnFileDigitalJikokuhyoufileImport_Process(BOOL bQueryEnable)
 				if (iResult < 0)
 				{
 					strErrorMsgSub = aCOuErrorInfoContainer.toOuErrorInfoText().c_str();
-					iRv = iResult;	//	�t�@�C���̌`�����s���ł��B
+					iRv = iResult;	//	ファイルの形式が不正です。
 				}
 			}
 			else
@@ -587,7 +587,7 @@ int CMainFrame::OnFileDigitalJikokuhyoufileImport_Process(BOOL bQueryEnable)
 				if (iResult < 0)
 				{
 					strErrorMsgSub = aCOuErrorInfoContainer.toOuErrorInfoText().c_str();
-					iRv = iResult;	//	�t�@�C���̌`�����s���ł��B
+					iRv = iResult;	//	ファイルの形式が不正です。
 				}
 			}
 		}
@@ -600,85 +600,85 @@ int CMainFrame::OnFileDigitalJikokuhyoufileImport_Process(BOOL bQueryEnable)
 		getCDiagramEditDoc()->executeEditCmd(pCmd);
 	}
 	// ****************************************************************
-	//	�G���[���b�Z�[�W
+	//	エラーメッセージ
 	// ****************************************************************
 	CString strErrorMsg;
 	if (iRv < 0)
 	{
 		switch (iRv)
 		{
-		case -1:	//	�L�����Z��
+		case -1:	//	キャンセル
 			break;
-		case -31:	//	�t�@�C��1�͕K���w�肵�Ă��������B
-			strErrorMsg = _T("�G���[:�_�C��1����͕K�����͂��Ă��������B");
+		case -31:	//	ファイル1は必ず指定してください。
+			strErrorMsg = _T("エラー:ダイヤ1下りは必ず入力してください。");
 			break;
-		case -11:	//	�t�@�C��1���݂���܂���B
-			strErrorMsg = _T("�G���[:�_�C��1���肪������܂���B");
+		case -11:	//	ファイル1がみつかりません。
+			strErrorMsg = _T("エラー:ダイヤ1下りが見つかりません。");
 			break;
-		case -12:	//	�t�@�C��2���݂���܂���B
-			strErrorMsg = _T("�G���[:�_�C��1��肪������܂���B");
+		case -12:	//	ファイル2がみつかりません。
+			strErrorMsg = _T("エラー:ダイヤ1上りが見つかりません。");
 			break;
-		case -13:	//	�t�@�C��3���݂���܂���B
-			strErrorMsg = _T("�G���[:�_�C��2���肪������܂���B");
+		case -13:	//	ファイル3がみつかりません。
+			strErrorMsg = _T("エラー:ダイヤ2下りが見つかりません。");
 			break;
-		case -14:	//	�t�@�C��4���݂���܂���B
-			strErrorMsg = _T("�G���[:�_�C��2��肪������܂���B");
+		case -14:	//	ファイル4がみつかりません。
+			strErrorMsg = _T("エラー:ダイヤ2上りが見つかりません。");
 			break;
-		case -21:	//	�t�@�C��1�̘H���f�[�^�����B
-			strErrorMsg = _T("�G���[:�_�C��1�����ǂݎ��܂���B");
+		case -21:	//	ファイル1の路線データ無し。
+			strErrorMsg = _T("エラー:ダイヤ1下りを読み取れません。");
 			break;
-		case -22:	//	�t�@�C��2�̘H���f�[�^�����B
-			strErrorMsg = _T("�G���[:�_�C��1����ǂݎ��܂���B");
+		case -22:	//	ファイル2の路線データ無し。
+			strErrorMsg = _T("エラー:ダイヤ1上りを読み取れません。");
 			break;
-		case -23:	//	�t�@�C��3�̘H���f�[�^�����B
-			strErrorMsg = _T("�G���[:�_�C��2�����ǂݎ��܂���B");
+		case -23:	//	ファイル3の路線データ無し。
+			strErrorMsg = _T("エラー:ダイヤ2下りを読み取れません。");
 			break;
-		case -24:	//	�t�@�C��4�̘H���f�[�^�����B
-			strErrorMsg = _T("�G���[:�_�C��2����ǂݎ��܂���B");
-			break;
-
-		case -32:	//	�t�@�C��2�̘H�����t�@�C��1�ƕs��v�B
-			strErrorMsg = _T("�G���[:�_�C��1����ƃ_�C��1��肪�ʘH���ł��B");
-			break;
-		case -33:	//	�t�@�C��3�̘H�����t�@�C��1�ƕs��v�B
-			strErrorMsg = _T("�G���[:�_�C��1����ƃ_�C��2���肪�ʘH���ł��B");
-			break;
-		case -34:	//	�t�@�C��4�̘H�����t�@�C��1�ƕs��v�B
-			strErrorMsg = _T("�G���[:�_�C��1����ƃ_�C��2��肪�ʘH���ł��B");
+		case -24:	//	ファイル4の路線データ無し。
+			strErrorMsg = _T("エラー:ダイヤ2上りを読み取れません。");
 			break;
 
-		case -42:	//	�t�@�C��2�̕������t�@�C��1�ƈ�v�B
-			strErrorMsg = _T("�G���[:�_�C��1����ƃ_�C��1��肪��������ł��B");
+		case -32:	//	ファイル2の路線がファイル1と不一致。
+			strErrorMsg = _T("エラー:ダイヤ1下りとダイヤ1上りが別路線です。");
 			break;
-		case -43:	//	�t�@�C��3�̕������t�@�C��1�ƕs��v�B
-			strErrorMsg = _T("�G���[:�_�C��1����ƃ_�C��2���肪�ʕ����ł��B");
+		case -33:	//	ファイル3の路線がファイル1と不一致。
+			strErrorMsg = _T("エラー:ダイヤ1下りとダイヤ2下りが別路線です。");
 			break;
-		case -44:	//	�t�@�C��4�̕������t�@�C��1�ƈ�v�B
-			strErrorMsg = _T("�G���[:�_�C��1����ƃ_�C��2��肪��������ł��B");
-			break;
-
-		case -52:	//	�t�@�C��2�̗j��(���t)���t�@�C��1�ƕs��v�B
-			strErrorMsg = _T("�G���[:�_�C��1����ƃ_�C��1��肪�ʗj���_�C���ł��B");
-			break;
-		case -53:	//	�t�@�C��3�̗j�����t�@�C��1�ƈ�v�B(���ł����l�b�g�AJR�k�C���ł͖���)
-			strErrorMsg = _T("�G���[:�_�C��1����ƃ_�C��2���肪���j���_�C���ł��B");
-			break;
-		case -54:	//	�t�@�C��4�̗j�����t�@�C��1�ƈ�v�B(���ł����l�b�g�AJR�k�C���ł͖���)
-			strErrorMsg = _T("�G���[:�_�C��1����ƃ_�C��2��肪���j���_�C���ł��B");
+		case -34:	//	ファイル4の路線がファイル1と不一致。
+			strErrorMsg = _T("エラー:ダイヤ1下りとダイヤ2上りが別路線です。");
 			break;
 
-		case -64:	//	�t�@�C��4�̓��t���t�@�C��3�ƕs��v�B(���ł����l�b�g�AJR�k�C���̂�)
-			strErrorMsg = _T("�G���[:�_�C��1����ƃ_�C��2��肪�ʓ��_�C���ł��B");
+		case -42:	//	ファイル2の方向がファイル1と一致。
+			strErrorMsg = _T("エラー:ダイヤ1下りとダイヤ1上りが同一方向です。");
+			break;
+		case -43:	//	ファイル3の方向がファイル1と不一致。
+			strErrorMsg = _T("エラー:ダイヤ1下りとダイヤ2下りが別方向です。");
+			break;
+		case -44:	//	ファイル4の方向がファイル1と一致。
+			strErrorMsg = _T("エラー:ダイヤ1下りとダイヤ2上りが同一方向です。");
 			break;
 
-		case -71:	//	����_�C���Ə��_�C���ŉw�̐������s��v�B
-			strErrorMsg = _T("�G���[:����_�C���Ə��_�C���̐����������܂���B���̃G���[���o���ꍇ�A�H������Y���āA����҂֕񍐊肢�܂�");
+		case -52:	//	ファイル2の曜日(日付)がファイル1と不一致。
+			strErrorMsg = _T("エラー:ダイヤ1下りとダイヤ1上りが別曜日ダイヤです。");
 			break;
-		case -72:	//	����_�C���Ə��_�C���ŉw�̐������s��v�B
-			strErrorMsg = _T("�G���[:����_�C���Ə��_�C���̐����������܂���B���̃G���[���o���ꍇ�A�H������Y���āA����҂֕񍐊肢�܂�");
+		case -53:	//	ファイル3の曜日がファイル1と一致。(おでかけネット、JR北海道では無し)
+			strErrorMsg = _T("エラー:ダイヤ1下りとダイヤ2下りが同曜日ダイヤです。");
 			break;
-		case -73:	//	����_�C���Ə��_�C���ŉw�̐������s��v�B
-			strErrorMsg = _T("�G���[:����_�C���Ə��_�C���̐����������܂���B���̃G���[���o���ꍇ�A�H������Y���āA����҂֕񍐊肢�܂�");
+		case -54:	//	ファイル4の曜日がファイル1と一致。(おでかけネット、JR北海道では無し)
+			strErrorMsg = _T("エラー:ダイヤ1下りとダイヤ2上りが同曜日ダイヤです。");
+			break;
+
+		case -64:	//	ファイル4の日付がファイル3と不一致。(おでかけネット、JR北海道のみ)
+			strErrorMsg = _T("エラー:ダイヤ1下りとダイヤ2上りが別日ダイヤです。");
+			break;
+
+		case -71:	//	下りダイヤと上りダイヤで駅の整合性不一致。
+			strErrorMsg = _T("エラー:下りダイヤと上りダイヤの整合性が取れません。このエラーが出た場合、路線名を添えて、製作者へ報告願います");
+			break;
+		case -72:	//	下りダイヤと上りダイヤで駅の整合性不一致。
+			strErrorMsg = _T("エラー:下りダイヤと上りダイヤの整合性が取れません。このエラーが出た場合、路線名を添えて、製作者へ報告願います");
+			break;
+		case -73:	//	下りダイヤと上りダイヤで駅の整合性不一致。
+			strErrorMsg = _T("エラー:下りダイヤと上りダイヤの整合性が取れません。このエラーが出た場合、路線名を添えて、製作者へ報告願います");
 			break;
 		default:
 			strErrorMsg.Format(_T("Error(%d)"), iRv);
@@ -687,7 +687,7 @@ int CMainFrame::OnFileDigitalJikokuhyoufileImport_Process(BOOL bQueryEnable)
 		if (!strErrorMsgSub.IsEmpty())
 		{
 
-			strErrorMsg += _T("\n");
+			strErrorMsg += _T("¥n");
 			strErrorMsg += strErrorMsgSub;
 		}
 	}
@@ -702,19 +702,19 @@ int CMainFrame::OnFileDigitalJikokuhyoufileImport_Process(BOOL bQueryEnable)
 //	CMainFrame
 // ********************************
 	// ********************************
-	//@name	����
+	//@name	操作
 	// ********************************
 	/**
-	 *	�w�H���t�@�C���̃v���p�e�B�x�_�C�A���O���J���܂��B
+	 *	『路線ファイルのプロパティ』ダイアログを開きます。
 	 *
-	 *	�_�C�A���O���wOK�x�ŕ���ꂽ��A�H���t�@�C����
-	 *	�v���p�e�B���w���[�g�h�L�������g�x CDiagramEditDoc 
-	 *	�ɔ��f���܂��B
+	 *	ダイアログが『OK』で閉じられたら、路線ファイルの
+	 *	プロパティを『ルートドキュメント』 CDiagramEditDoc 
+	 *	に反映します。
 	 * @return
-	 *	0 �ȏ�͐����A�G���[�Ȃ畉�̐��ł��B 
-	 *	-	1 ;	//	�wOK�x��������āA���͓��e��
-	 *		�w���[�g�h�L�������g�x�ɔ��f���܂����B
-	 *	-	0 ;	//	�wCancel�x��������܂����B
+	 *	0 以上は成功、エラーなら負の数です。 
+	 *	-	1 ;	//	『OK』が押されて、入力内容が
+	 *		『ルートドキュメント』に反映しました。
+	 *	-	0 ;	//	『Cancel』が押されました。
 	 *	
 	 */
 int CMainFrame::execCDlgRosenFileProp() 
@@ -722,8 +722,8 @@ int CMainFrame::execCDlgRosenFileProp()
 	int iRv = 0 ;
 	
 	// --------------------------------
-	//	�r���[�̕ҏW���e�����[�g�h�L�������g�ɔ��f
-	//	�i���ɁA�R�����g�r���[�j
+	//	ビューの編集内容をルートドキュメントに反映
+	//	（特に、コメントビュー）
 	// --------------------------------
 	getCDiagramEditDoc()->UpdateAllSubDocviews( NULL , LHINT_SUBVIEW_TO_ROOTDOC ) ;
 	
@@ -736,7 +736,7 @@ int CMainFrame::execCDlgRosenFileProp()
 	int iResult = aPps.DoModal() ;
 	if ( iResult == IDOK ){
 		// --------------------------------
-		//	�R�}���h�I�u�W�F�N�g�̐����E���s
+		//	コマンドオブジェクトの生成・実行
 		// --------------------------------
 		{
 			Ou<CRfEditCmd> pCmd = aPps.getPropEditorData()->createEditCmd() ;
@@ -805,8 +805,8 @@ END_MESSAGE_MAP()
 
 static UINT indicators[] =
 {
-	ID_SEPARATOR,           // �X�e�[�^�X ���C�� �C���W�P�[�^
-	ID_INDICATOR_PasteZoubun , //	�\��t���ړ���
+	ID_SEPARATOR,           // ステータス ライン インジケータ
+	ID_INDICATOR_PasteZoubun , //	貼り付け移動量
 	ID_INDICATOR_KANA,
 	ID_INDICATOR_CAPS,
 	ID_INDICATOR_NUM,
@@ -814,15 +814,15 @@ static UINT indicators[] =
 };
 
 /////////////////////////////////////////////////////////////////////////////
-// CMainFrame �N���X�̍\�z/����
+// CMainFrame クラスの構築/消滅
 
 CMainFrame::CMainFrame()
 {
-	// TODO: ���̈ʒu�Ƀ����o�̏����������R�[�h��ǉ����Ă��������B
+	// TODO: この位置にメンバの初期化処理コードを追加してください。
 	
 }
 
-CMainFrame::~CMainFrame()
+CMainFrame::‾CMainFrame()
 {
 }
 
@@ -835,28 +835,28 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 		| CBRS_GRIPPER | CBRS_TOOLTIPS | CBRS_FLYBY | CBRS_SIZE_DYNAMIC) ||
 		!m_wndToolBar.LoadToolBar(IDR_MAINFRAME))
 	{
-		TRACE0("Failed to create toolbar\n");
-		return -1;      // �쐬�Ɏ��s
+		TRACE0("Failed to create toolbar¥n");
+		return -1;      // 作成に失敗
 	}
 
-	//attention Diagram�c�[���o�[�́AMainFrame�ɓ���
+	//attention Diagramツールバーは、MainFrameに統合
 	//
 	//	if (!m_wndToolBarDiagram.CreateEx(this, TBSTYLE_FLAT, 
 	//		WS_CHILD | WS_VISIBLE | CBRS_TOP
 	//		| CBRS_GRIPPER | CBRS_TOOLTIPS | CBRS_FLYBY | CBRS_SIZE_DYNAMIC) ||
 	//		!m_wndToolBarDiagram.LoadToolBar(IDR_DOCVIEW_Diagram))
 	//	{
-	//		TRACE0("Failed to create toolbar\n");
-	//		return -1;      // �쐬�Ɏ��s
+	//		TRACE0("Failed to create toolbar¥n");
+	//		return -1;      // 作成に失敗
 	//	}
 
 
 
-	// TODO: �c�[�� �o�[���h�b�L���O�\�ɂ��Ȃ��ꍇ�͈ȉ��̂R�s���폜
-	//       ���Ă��������B
+	// TODO: ツール バーをドッキング可能にしない場合は以下の３行を削除
+	//       してください。
 	//EnableDocking(CBRS_ALIGN_ANY);
 
-	//attention Diagram�c�[���o�[�́AMainFrame�ɓ���
+	//attention Diagramツールバーは、MainFrameに統合
 	//	m_wndToolBarDiagram.EnableDocking(CBRS_ALIGN_ANY) ;
 	//	DockControlBar(&m_wndToolBarDiagram);
 
@@ -864,8 +864,8 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 		WS_CHILD | WS_VISIBLE | CBRS_TOP | CBRS_GRIPPER | CBRS_TOOLTIPS | CBRS_FLYBY | CBRS_SIZE_DYNAMIC, IDD_DIALOGBAR)/* ||
 		!m_wndDialogBar.LoadToolBar(IDD_DIALOGBAR)*/)
 	{
-		TRACE0("Failed to create dialogbar\n");
-		return -1;      // �쐬�Ɏ��s
+		TRACE0("Failed to create dialogbar¥n");
+		return -1;      // 作成に失敗
 	}
 
 	m_wndToolBar.EnableDocking(CBRS_ALIGN_ANY);
@@ -901,15 +901,15 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 		!m_wndStatusBar.SetIndicators(indicators,
 			sizeof(indicators) / sizeof(UINT)))
 	{
-		TRACE0("Failed to create status bar\n");
-		return -1;      // �쐬�Ɏ��s
+		TRACE0("Failed to create status bar¥n");
+		return -1;      // 作成に失敗
 	}
 
 	//EnableDocking(CBRS_ALIGN_ANY);
 
 	// ----------------------------------------------------------------
 	// --------------------------------
-	//	�����y�C��	
+	//	左側ペイン	
 	// --------------------------------
 	{
 		m_CDlgRosenView.Create( m_CDlgRosenView.IDD , this ) ;
@@ -917,7 +917,7 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	}
 
 	// --------------------------------
-	//	�����y�C���Ƃ̊Ԃ̃X�v���b�g�o�[	
+	//	左側ペインとの間のスプリットバー	
 	// --------------------------------
 	{
 		m_CWndSplitBarV.Create( this , &m_CDlgRosenView , 0 ) ;
@@ -944,14 +944,14 @@ BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
 {
 	if( !CHidemdiMainfrm::PreCreateWindow(cs) )
 		return FALSE;
-	// TODO: ���̈ʒu�� CREATESTRUCT cs ���C�����āAWindow �N���X��X�^�C����
-	//       �C�����Ă��������B
+	// TODO: この位置で CREATESTRUCT cs を修正して、Window クラスやスタイルを
+	//       修正してください。
 
 	return TRUE;
 }
 
 /////////////////////////////////////////////////////////////////////////////
-// CMainFrame �N���X�̐f�f
+// CMainFrame クラスの診断
 
 #ifdef _DEBUG
 void CMainFrame::AssertValid() const
@@ -967,7 +967,7 @@ void CMainFrame::Dump(CDumpContext& dc) const
 #endif //_DEBUG
 
 /////////////////////////////////////////////////////////////////////////////
-// CMainFrame ���b�Z�[�W �n���h��
+// CMainFrame メッセージ ハンドラ
 
 
 void CMainFrame::OnRosenFileProp() 
@@ -977,34 +977,34 @@ void CMainFrame::OnRosenFileProp()
 
 
 /**
- *	[�E�C���h�E]��[�y�C���̐؂�ւ�]
- *	���j���[�R�}���h�̉����֐��ł��B
+ *	[ウインドウ]→[ペインの切り替え]
+ *	メニューコマンドの応答関数です。
  */
 void CMainFrame::OnWindowRosenView() 
 {
 	if ( ::IsChild( m_CDlgRosenView.GetSafeHwnd() , ::GetFocus() ) ){
-		//	���y�C���Ƀt�H�[�J�X������Ƃ�
-		//	MDIChild�E�C���h�E�Ƀt�H�[�J�X���ړ����܂��B
+		//	左ペインにフォーカスがあるとき
+		//	MDIChildウインドウにフォーカスを移動します。
 		CMDIChildWnd* pActive = MDIGetActive() ;
 		if ( pActive != NULL ){
 			pActive->SetFocus() ;
 		}
 	}	else	{
-		//	���y�C���Ƀt�H�[�J�X���Ȃ��Ƃ�
-		//	���y�C���Ƀt�H�[�J�X���ړ����܂��B
+		//	左ペインにフォーカスがないとき
+		//	左ペインにフォーカスを移動します。
 		m_CDlgRosenView.SetFocus() ;
 	}
 }
 /**
- *	�w�\��t���ړ��ʁx�X�e�[�^�X�o�[�ւ̃e�L�X�g��ݒ肵�܂��B
+ *	『貼り付け移動量』ステータスバーへのテキストを設定します。
  *
- * [�I�[�o���C�h]
- *	�󕶎����ݒ肵�܂��B
+ * [オーバライド]
+ *	空文字列を設定します。
  *
  * @note
- *	CJikokuhyouView ���A�N�e�B�u�ȂƂ��́A
+ *	CJikokuhyouView がアクティブなときは、
  *	CJikokuhyouView::OnUpdateINDICATOR_PasteZoubun()
- *	�Őݒ肳��܂��B
+ *	で設定されます。
  */
 void CMainFrame::OnUpdateINDICATOR_PasteZoubun(CCmdUI *pCmdUI)
 {
@@ -1019,7 +1019,7 @@ void CMainFrame::OnRosenDialist()
 }
 
 
-//	[�t�@�C��]-[�H���t�@�C���̑g����]
+//	[ファイル]-[路線ファイルの組入れ]
 void CMainFrame::OnFileRosenfileInsert()
 {
 	OnFileRosenFileInsert_Process( FALSE ) ;
@@ -1030,7 +1030,7 @@ void CMainFrame::OnUpdateFileRosenfileInsert(CCmdUI *pCmdUI)
 	pCmdUI->Enable( OnFileRosenFileInsert_Process( TRUE ) >= 0 ) ;
 }
 
-//	[�t�@�C��]-[�H���t�@�C���̐؂�o��]
+//	[ファイル]-[路線ファイルの切り出し]
 void CMainFrame::OnFileRosenCreateSubRosen()
 {
 	OnFileRosenCreateSubRosen_Process( FALSE ) ;
@@ -1045,7 +1045,7 @@ void CMainFrame::OnUpdateFileRosenCreateSubRosen(CCmdUI *pCmdUI)
 
 void CMainFrame::OnFileBackup()
 {
-	// TODO: �����ɃR�}���h �n���h���[ �R�[�h��ǉ����܂��B
+	// TODO: ここにコマンド ハンドラー コードを追加します。
 	getCDiagramEditDoc()->setBackupEnable(!getCDiagramEditDoc()->getBackupEnable());
 	getCDiagramEditApp()->writeCDiagramEditProp();
 }
@@ -1053,13 +1053,13 @@ void CMainFrame::OnFileBackup()
 
 void CMainFrame::OnUpdateFileBackup(CCmdUI *pCmdUI)
 {
-	// TODO:�����ɃR�}���h�X�V UI �n���h���[ �R�[�h��ǉ����܂��B
+	// TODO:ここにコマンド更新 UI ハンドラー コードを追加します。
 	pCmdUI->SetCheck(getCDiagramEditDoc()->getBackupEnable());
 }
 
 void CMainFrame::OnFileWindowPlacementRestore()
 {
-	// TODO: �����ɃR�}���h �n���h���[ �R�[�h��ǉ����܂��B
+	// TODO: ここにコマンド ハンドラー コードを追加します。
 	getCDiagramEditDoc()->setWindowPlacementRestore(!getCDiagramEditDoc()->getWindowPlacementRestore());
 	getCDiagramEditApp()->writeCDiagramEditProp();
 }
@@ -1067,25 +1067,25 @@ void CMainFrame::OnFileWindowPlacementRestore()
 
 void CMainFrame::OnUpdateFileWindowPlacementRestore(CCmdUI* pCmdUI)
 {
-	// TODO:�����ɃR�}���h�X�V UI �n���h���[ �R�[�h��ǉ����܂��B
+	// TODO:ここにコマンド更新 UI ハンドラー コードを追加します。
 	pCmdUI->SetCheck(getCDiagramEditDoc()->getWindowPlacementRestore());
 }
 
 
 void CMainFrame::OnEnSetfocusEditRessyabangou()
 {
-	// TODO: �����ɃR���g���[���ʒm�n���h���[ �R�[�h��ǉ����܂��B
+	// TODO: ここにコントロール通知ハンドラー コードを追加します。
 	m_bRessyabangouFocus = true;
 }
 
 
 void CMainFrame::OnEnKillfocusEditRessyabangou()
 {
-	// TODO: �����ɃR���g���[���ʒm�n���h���[ �R�[�h��ǉ����܂��B
+	// TODO: ここにコントロール通知ハンドラー コードを追加します。
 	m_bRessyabangouFocus = false;
 }
 
-//	[�t�@�C��]-[�O�������\�C���|�[�g]
+//	[ファイル]-[外部時刻表インポート]
 void CMainFrame::OnFileDigitalJikokuhyoufileImport()
 {
 	OnFileDigitalJikokuhyoufileImport_Process(FALSE);
