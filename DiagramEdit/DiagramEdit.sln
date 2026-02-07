@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DiagramEdit", "DiagramEdit\DiagramEdit.vcxproj", "{F3C4286C-FD52-4837-BE68-5741C667760F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DiagramEditLibPrj", "DiagramEditLibPrj\DiagramEditLibPrj.vcxproj", "{B50D881D-5DC7-40B4-90FE-3DD6DDA524E2}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "OuDiaSecond_Setup", "OuDiaSecond_setup\OuDiaSecond_setup.vdproj", "{19685686-0F9B-4A0C-9719-5339A3CF4A7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release_Static|Win32 = Release_Static|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3C4286C-FD52-4837-BE68-5741C667760F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F3C4286C-FD52-4837-BE68-5741C667760F}.Debug|Win32.Build.0 = Debug|Win32
+		{F3C4286C-FD52-4837-BE68-5741C667760F}.Release_Static|Win32.ActiveCfg = Release_Static|Win32
+		{F3C4286C-FD52-4837-BE68-5741C667760F}.Release_Static|Win32.Build.0 = Release_Static|Win32
+		{F3C4286C-FD52-4837-BE68-5741C667760F}.Release|Win32.ActiveCfg = Release|Win32
+		{F3C4286C-FD52-4837-BE68-5741C667760F}.Release|Win32.Build.0 = Release|Win32
+		{B50D881D-5DC7-40B4-90FE-3DD6DDA524E2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B50D881D-5DC7-40B4-90FE-3DD6DDA524E2}.Debug|Win32.Build.0 = Debug|Win32
+		{B50D881D-5DC7-40B4-90FE-3DD6DDA524E2}.Release_Static|Win32.ActiveCfg = Release_Static|Win32
+		{B50D881D-5DC7-40B4-90FE-3DD6DDA524E2}.Release_Static|Win32.Build.0 = Release_Static|Win32
+		{B50D881D-5DC7-40B4-90FE-3DD6DDA524E2}.Release|Win32.ActiveCfg = Release|Win32
+		{B50D881D-5DC7-40B4-90FE-3DD6DDA524E2}.Release|Win32.Build.0 = Release|Win32
+		{19685686-0F9B-4A0C-9719-5339A3CF4A7C}.Debug|Win32.ActiveCfg = Debug
+		{19685686-0F9B-4A0C-9719-5339A3CF4A7C}.Debug|Win32.Build.0 = Debug
+		{19685686-0F9B-4A0C-9719-5339A3CF4A7C}.Release_Static|Win32.ActiveCfg = Release
+		{19685686-0F9B-4A0C-9719-5339A3CF4A7C}.Release_Static|Win32.Build.0 = Release
+		{19685686-0F9B-4A0C-9719-5339A3CF4A7C}.Release|Win32.ActiveCfg = Release
+		{19685686-0F9B-4A0C-9719-5339A3CF4A7C}.Release|Win32.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {976260ED-44C7-4B0D-A487-8339CC48AA5E}
+	EndGlobalSection
+EndGlobal

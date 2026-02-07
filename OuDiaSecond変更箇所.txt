@@ -1,0 +1,2273 @@
+OuDiaSecondで作者(diagram_mania)が追加・変更したソースコードの箇所を明記しておきます
+Ver.2.06.19
+DiagramEdit\entDed\CDedOperationConnecter.cpp
+	completeCustomizeJikokuhyouContentで、分割・併合列車を路線外状に表示するときの不具合を修正
+DiagramEdit\entDed\CentDedRessya.cpp
+	operator= から、備考欄のコピーが抜けていたのを修正
+
+DiagramEdit\ViewDiagram\CRessyaDraw.cpp
+	getEkiTrackExsitを修正、非表示番線と表示範囲外(座標マイナス)を区別
+	
+DiagramEdit\ViewAllOperationTable2\CDcdAllOperationTable.cpp
+	縦方向の線が正しく描写されていなかった問題を修正
+DiagramEdit\ViewAllOperationTable2\CDcdAllOperationTable2.cpp
+	縦方向の線が正しく描写されていなかった問題を修正
+
+
+Ver.2.06.18
+DiagramEdit\DedRosenFileData\CconvCDedRosenFileData.cpp
+	FileTypeを更新
+DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_DiaProp.cpp
+	パターンダイヤプレビュー機能に対応
+	
+DiagramEdit\entDed\CconvCentDed.cpp
+	在線表非表示番線の設定を追加
+	パターンダイヤプレビュー機能の設定を追加
+DiagramEdit\entDed\CentDedEki.h
+	m_bDiagramTrackOmitを追加
+DiagramEdit\entDed\CentDedEkiCont.cpp
+	分岐・環状線による番線調整に、在線表非表示番線の調整を追加
+DiagramEdit\entDed\CentDedRosen.cpp
+	駅コンテナのadjustBrunchLoopEkiTrack2OuterTerminal呼び出しの引数に、在線表非表示番線の調整用の、iEkiTrack2Mapを追加
+	insertに在線表非表示番線への対応を追加
+DiagramEdit\entDed\CentDedDia.h
+	m_bPatternDiagramPreviewEnable、m_iPatternDiagramPreviewCycleSecond、m_iPatternDiagramPreviewRangeを追加
+	CustomizeJikokuhyouContentにiShiftSecondを追加
+	copyCustomizeRessyaIndexByPatternDiagramPreviewを追加
+DiagramEdit\entDed\CentDedBeforeOperation.cpp
+	modifyOperationJikokuをパターンダイヤプレビュー機能向けに変更
+DiagramEdit\entDed\CDedOperationConnecter.cpp
+	operationConnectPatternDiagramを追加など、パターンダイヤプレビュー機能へ対応
+	
+	
+DiagramEdit\entDgr\CentDedDgrRessya.cpp
+	readCentDedRessya_02_CreateCentDedEkiJikokuで行っていた、駅作業を参照したm_DgrXZoneの範囲設定を、readCentDedRessya_11_updateRessyaTrackLineContの中に移行、解結後・増結前作業にも対応。
+	readCentDedRessya_11_updateRessyaTrackLineContを分岐駅への在線表表示及び在線表の仕様変更に対応、解結後・増結前作業にも対応。
+DiagramEdit\entDgr\CentDedDgrEki.cpp
+	m_iDiagramTrackIndexを追加
+	在線表の仕様変更に対応
+DiagramEdit\entDgr\CentDedDgrDia.cpp
+	在線表の仕様変更に対応
+	パターンダイヤプレビュー機能に対応
+DiagramEdit\entDgr\CDedRessyaSoater_Transfer.cpp
+	m_iIndexDst、m_iSizeDstを追加
+	一部列車を選択した状態で実行したときに、インデクスずれでエラー落ちする問題を修正
+	
+DiagramEdit\ViewDiagram\CDcdDiagram.cpp
+	在線表の仕様変更に対応
+DiagramEdit\ViewDiagram\CDcdDiagram2.cpp
+	在線表の仕様変更に対応
+DiagramEdit\ViewDiagram\CRessyaDraw.cpp
+	在線表の非表示番線に対応
+DiagramEdit\ViewDiagram\cdeddiagramview.cpp
+	パターンダイヤプレビュー機能に対応
+DiagramEdit\ViewDiagram\CWndDiagram.cpp
+	OnLButtonDblClk_openJikokuhyouViewをパターンダイヤプレビュー機能に対応
+	
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilderCustomize.cpp
+	パターンダイヤプレビュー機能に対応
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu.cpp
+	CDedRessyaSoater_Transferの仕様変更に対応
+	
+DiagramEdit\ViewEki\CDlgEkiProp.cpp
+	在線表の非表示番線設定を追加
+DiagramEdit\ViewEki\CPropEditUi_Eki.cpp
+	在線表の非表示番線設定を追加
+	分岐駅の在線表表示を可能に
+DiagramEdit\ViewEki\CDlgEkiTrack2Prop2.cpp
+	在線表の非表示番線設定を追加
+	
+DiagramEdit\ViewCrossingCheck\CWndDcdGridCrossingCheck.cpp
+	パターンダイヤプレビュー機能に対応
+	
+DiagramEdit\ViewEkiJikokuhyou\CWndDcdGridEkiJikokuhyou.cpp
+	パターンダイヤプレビュー機能に対応
+	
+DiagramEdit\ViewRosen\CDlgDiaList.cpp
+	パターンダイヤプレビュー機能の設定を追加
+DiagramEdit\ViewRosen\CDlgDiaProp.cpp
+	パターンダイヤプレビュー機能の設定を追加
+	
+DiagramEdit\CDiagramEditDoc.cpp
+	UpdateAllSubDocviewsを更新
+	
+DiagramEdit\ConvJikokuhyouCsv\CconvJikokuhyouCustomizeCsv.cpp
+	パターンダイヤプレビュー機能に対応
+	
+Ver.2.06.17
+DiagramEdit\DedRosenFileData\CconvCDedRosenFileDataDigital.cpp
+	特殊処理(設備欄)を追加、IGRいわて銀河鉄道・青い森鉄道の設備欄の特殊処理も左に統合。
+	
+Ver.2.06.16
+DiagramEdit\DedRosenFileData\CconvCDedRosenFileDataDigital.cpp
+	特殊処理(上越・北陸新幹線)を追加
+	
+Ver.2.06.15
+DiagramEdit\entDed\CentDedRosen.cpp
+	invertに交差支障チェックの修正機能を追加。
+	隠し種別機能を無効する設定を追加
+	OperationConnectに運休扱い列車と隠し種別についての処理を追加
+DiagramEdit\entDed\CentDedRessya.cpp
+	m_bIsCanceledを追加
+DiagramEdit\entDed\CentDedDia.cpp
+	omitInvalidRessyaFromCustomizeRessyaIndexに運休扱い列車と隠し種別の削除を追加
+DiagramEdit\entDed\CDedOperationConnecter.cpp
+	運休扱い列車の削除を追加
+	隠し種別の列車を非表示にするように変更
+DiagramEdit\entDed\CconvCentDed.cpp
+	運休扱い設定の読み書きを追加
+DiagramEdit\entDed\CentDedRessyasyubetsu.h
+	隠し種別設定を追加
+	
+DiagramEdit\ViewJikokuhyou\CDlgRessyaProp.cpp
+	運休機能の設定を追加
+DiagramEdit\ViewJikokuhyou\CPropEditUi_Ressya.cpp
+	運休機能の設定を追加
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilder.cpp
+	運休機能有効時の表示を追加
+	運休機能有効時に、運用番号を表示しないように変更
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState.cpp
+	運休機能の設定を追加
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu.cpp
+	運休機能の設定を追加
+\DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWndJikokuhyou.cpp
+	運休機能の設定を追加
+	
+DiagramEdit\entDgr\CentDedDgrRessya.cpp
+	運休列車は列車線を生成しないように変更
+	
+\DiagramEdit\ViewEkiJikokuhyou\CWndDcdGridEkiJikokuhyou.cpp
+	運休扱い列車を表示しないように変更
+	隠し種別の列車を表示しないように変更
+	
+DiagramEdit\ViewCrossingCheck\CWndDcdGridCrossingCheck.cpp
+	運休列車をチェック対象に含まないように変更
+	
+DiagramEdit\DedRosenFileData\CconvCDedRosenFileData.cpp
+	FileTypeを更新
+DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_DedRosenFileDataProp.h
+	隠し種別を強制表示する設定を追加
+DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_Ressyasyubetsu.cpp
+	種別の編集後に、運用を更新するように変更(隠し種別対策)
+	
+DiagramEdit\ViewRessyasyubetsu\CPropEditUi_Ressyasyubetsu.h
+	隠し種別設定を追加
+DiagramEdit\ViewRessyasyubetsu\CDlgRessyasyubetsuProp.cpp
+	隠し種別設定を追加
+DiagramEdit\ViewRessyasyubetsu\RessyasyubetsuColSpec\CdRessyasyubetsuXColSpec.h
+	隠し種別表示欄を追加
+DiagramEdit\ViewRessyasyubetsu\RessyasyubetsuColSpec\CdRessyasyubetsuXColSpecCont.cpp
+	隠し種別表示欄を追加
+DiagramEdit\ViewRessyasyubetsu\CWndDcdGridRessyasyubetsu.cpp
+	隠し種別表示欄を追加
+	
+DiagramEdit\ViewRosen\CDlgRosenFileProp.cpp
+	隠し種別を強制表示する設定を追加
+DiagramEdit\ViewRosen\CDlgRosenFileProp_Rosen.cpp
+	隠し種別を強制表示する設定を追加
+	
+
+Ver2.06.14
+DiagramEdit\ViewEkiJikokuhyou\CWndDcdGridEkiJikokuhyou.cpp
+	有効終着駅後に時刻がある列車を開いたときに、強制終了する問題について対応
+
+DiagramEdit\ViewEki\CWndDcdGridEki.cpp
+	駅ビューにおいて、末尾の駅を含む範囲選択状態で、消去・切り取りを実行したときに強制終了する問題を修正
+	
+DiagramEdit\entDed\CentDedEkiCont.cpp
+	adjustCrossingCheckRuleByEkiEditについて、駅の消去(切り取り)を行ったときの呼び出しで、削除範囲に末尾と分岐駅が含まれている時に強制終了する問題を修正。
+	
+Ver2.06.13
+DiagramEdit\CMainFrame.h
+	JR北海道の分類機能を追加
+	
+DiagramEdit\DedRosenFileData\CconvCDedRosenFileDataDigital3.h
+	JR北海道用に新規作成
+	
+Ver2.06.12
+DiagramEdit\CMainFrame.h
+	JR東日本とおでかけネットとの分類機能を追加
+	エラーコードの再編
+	
+DiagramEdit\DedRosenFileData\CconvCDedRosenFileDataDigital.h
+	エラー判定について修正
+DiagramEdit\DedRosenFileData\CconvCDedRosenFileDataDigital2.h
+	おでかけネット用に新規作成
+	
+Ver2.06.11
+DiagramEdit\DedRosenFileData\CconvCDedRosenFileDataDigital.h
+	特殊処理(IGRいわて銀河鉄道・青い森鉄道)を追加
+各ウィンドウのメニューバー
+	[ウィンドウ]→[左右に並べて表示]機能を追加
+	[ウィンドウ]→[並べて表示]を[上下に並べて表示]に名称変更
+
+Ver2.06.10
+DiagramEdit\DedRosenFileData\CconvCDedRosenFileDataDigital.h
+	路線別の特殊処理の仕組みを追加
+	特殊処理(東北・秋田新幹線)を追加
+	
+DiagramEdit\CMainFrame.h
+	路線別の特殊処理の仕組みを追加
+	
+DiagramEdit\ViewRosen\CDlgDigitalJikokuhyouImport.cpp
+	路線別の特殊処理の仕組みを追加
+	
+Ver2.06.09
+DiagramEdit\DedRosenFileData\CconvCDedRosenFileDataDigital.h
+	路線外発着作成時に、時刻が無い列車でエラーが出るのを修正
+	
+Ver2.06.08
+DiagramEdit\CMainFrame.h
+	外部時刻表インポート機能を追加
+DiagramEdit\DedRosenFileData\CconvCDedRosenFileDataDigital.h
+	外部時刻表インポート機能を追加
+DiagramEdit\ViewRosen\CDlgDigitalJikokuhyouImport.cpp
+	外部時刻表インポート機能ダイアログとして新規作成
+
+Ver2.06.07
+DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_Dia.h
+	基準運転時分取得元ダイヤインデクスの補正動作を追加
+	
+DiagramEdit\DedRosenFileData\CconvCDedRosenFileData.h
+	FileTypeを更新
+	
+DiagramEdit\DiagramEdit\entDed\CconvCentDed.cpp
+	基準運転時分取得元ダイヤインデクスの読み書きを追加
+DiagramEdit\entDed\CentDedRosen.h
+	基準運転時分取得元ダイヤインデクスを追加
+	
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilder.cpp
+	基準運転時分取得元ダイヤインデクスに対応
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu.cpp
+	基準運転時分取得元ダイヤインデクスに対応
+	
+DiagramEdit\ViewRosen\CDlgDiaList.cpp
+	基準運転時分取得元ダイヤインデクスに対応
+DiagramEdit\ViewRosen\CDlgRosenFileProp.cpp
+	基準運転時分取得元ダイヤインデクスに対応
+DiagramEdit\ViewRosen\CDlgRosenFileProp_Rosen.cpp
+	基準運転時分取得元ダイヤインデクスに対応
+	
+Ver2.06.06
+DiagramEdit\ViewEki\CWndDcdGridEki.cpp
+	OnEkiSettingNext_Process、OnEkiSettingPrev_Processで、編集コマンドの駅番線・路線外発着駅マップを設定するように変更
+	
+DiagramEdit\entDgr\CentDedDgrRessya.cpp
+	readCentDedRessya_11_updateRessyaTrackLineContで、iValidSihatsuEki >= iValidSyuuchakuEkiの時はスキップするように変更
+
+Ver2.06.05
+DiagramEdit\ConvJikokuhyouCsv\CconvJikokuhyouCsv.cpp
+	運用番号変更作業の運用番号順反転設定追加に対応
+	増結編成前作業、解結編成後作業欄の経由なし表示を修正
+DiagramEdit\ConvJikokuhyouCsv\CconvJikokuhyouCustomizeCsv.cpp
+	CdYColSpec::ColumnType_EkiRessyameiの表示箇所を修正
+
+DiagramEdit\entDed\CconvCentDed.cpp
+	時隔下限の入出力を追加
+	運用番号変更作業の運用番号順反転設定追加に対応
+DiagramEdit\entDed\CentDedEki.cpp
+	CrossingCheckRuleにiHeadwaySecondMinimumを追加
+DiagramEdit\entDed\CentDedAfterOperation.cpp
+	運用番号変更作業に運用番号順反転設定を追加
+DiagramEdit\entDed\CentDedBeforeOperation.cpp
+	運用番号変更作業に運用番号順反転設定を追加
+DiagramEdit\entDed\CDedOperationConnecter.cpp
+	運用番号変更作業の運用番号順反転設定追加に対応
+
+DiagramEdit\ViewEki\CPropEditUi_CrossingCheckRule.cpp
+	時隔下限関連を追加
+DiagramEdit\ViewEki\CDlgCrossingCheckRule.cpp
+	時隔下限関連を追加
+	
+DiagramEdit\DedRosenFileData\CconvCDedRosenFileData.cpp
+	FileTypeを更新
+
+DiagramEdit\ViewCrossingCheck\CWndDcdGridCrossingCheck.cpp
+	時隔下限の追加に対応
+
+DiagramEdit\ViewJikokuhyou\CPropEditUI_Operation.h
+	運用番号変更作業の運用番号順反転設定追加に対応
+DiagramEdit\ViewJikokuhyou\CDlgOperationProp.h
+	運用番号変更作業の運用番号順反転設定追加に対応
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilder.cpp
+	運用番号変更作業の運用番号順反転設定追加に対応
+	増結編成前作業、解結編成後作業欄の経由なし表示を修正
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilderCustomize.cpp
+	update02_02_02_22_setRessya_Ressyameiを修正
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu.cpp
+	増結編成前作業の作業変更で、出区時刻の取得ができず作業変更ができない問題を修正。
+	路線外発着欄から列車編集を行うとき、駅作業編集を開くように変更。
+	始発駅作業(増結編成前作業)から駅作業編集を開いたときのフォーカスを修正。
+
+DiagramEdit\ViewEkiJikokuhyou\CWndDcdGridEkiJikokuhyou.cpp
+	通常モード時のbIsShihatsuについて修正
+DiagramEdit\ViewEkiJikokuhyou\CWndDcdGridEkiJikokuhyouList.cpp
+	通常モード時のbIsShihatsuについて修正
+	
+DiagramEdit\ViewDiagram\CDcdDiagram.cpp
+	個別背景色有効時に、表示が範囲外にはみ出る問題を修正
+DiagramEdit\ViewDiagram\CDcdDiagram2.cpp
+	個別背景色有効時に、表示が範囲外にはみ出る問題を修正
+	
+	
+Ver2.06.04
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilderCustomize.cpp
+	路線外発着+通過扱いの場合の表示を修正
+
+DiagramEdit\ConvJikokuhyouCsv\CconvJikokuhyouCustomizeCsv.cpp
+	路線外発着+通過扱いの場合の表示を修正
+
+C:\Users\kazu-\Documents\OuDiaSecond\OuDiaSecond.src\DiagramEdit\DiagramEdit\DiagramEdit.cpp
+	駅時刻表ビューでの種別変更の表示設定を追加
+	
+DiagramEdit\ViewEkiJikokuhyou\CWndDcdGridEkiJikokuhyou.cpp
+DiagramEdit\ViewEkiJikokuhyou\CWndDcdGridEkiJikokuhyouList.cpp
+	種別変更の表示設定を追加
+
+Ver2.06.03
+DiagramEdit\entDed\CDedOperationConnecter.cpp
+	m_contBeforeContinueList,m_contAfterContinueListの型を変更
+	m_contOuterConnectInsertList,m_contOuterReleaseInsertList,m_contConnectMoveList,m_contReleaseMoveListを追加
+	上記を利用して、カスタマイズ時刻表での並び替え処理をcompleteCustomizeJikokuhyouContentに一元化、簡易モードにおいては、最後に処理するように変更。
+	
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu.cpp
+	OnEditClear_Processに、列車番号移動の入力欄にカーソルがある場合の処理を追加
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilderCustomize.cpp
+	「====」と「||」の表示条件が誤っているのを修正
+	
+DiagramEdit\ViewEki\CWndDcdGridEki.cpp
+	OnEditClear_Processに、列車番号移動の入力欄にカーソルがある場合の処理を追加
+	
+DiagramEdit\ViewRessyasyubetsu\CWndDcdGridRessyasyubetsu.cpp
+	OnEditClear_Processに、列車番号移動の入力欄にカーソルがある場合の処理を追加
+	
+DiagramEdit\ConvJikokuhyouCsv\CconvJikokuhyouCustomizeCsv.cpp
+	「||」の表示条件が誤っているのを修正
+
+DiagramEdit\DiagramEdit\CMainFrame.h
+	m_bRessyabangouFocus,OnEnSetfocusEditRessyabangou,OnEnKillfocusEditRessyabangouを追加
+	RessyabangouDeleteを追加
+	
+Other
+	DELキーによるショートカット動作の設定を、MainFrame(全体一括)から、各ビュー(時刻表・駅・列車種別)に移行
+	
+Ver2.06.02
+DiagramEdit\DedRosenFileData\CconvCDedRosenFileData.cpp
+	WindowPlacementの書き出し、読み込みを追加
+	FileTypeを更新
+	
+DiagramEdit\ViewEkiJikokuhyou\CWndDcdGridEkiJikokuhyou.cpp
+	発車番線表示有りの時、一本も列車がない時間帯の表示が崩れる問題を修正
+	
+DiagramEdit\CDiagramEditDoc.cpp
+	m_bWindowPlacementRestore、m_iRosenViewWidth、m_contChildWindowを追加
+	OnOpenDocumentにウインドウ位置復元の処理を追加
+DiagramEdit\CMainFrame.h
+	ウインドウ位置を復元する/しない設定を追加
+DiagramEdit\DiagramEdit.cpp
+	writeCDiagramEditProp、readCDiagramEditPropにウインドウ位置を復元する/しない設定を追加
+	
+Ver2.06.01
+DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_RessyaSwap.h
+	列車入れ替えのために新規追加
+DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_RessyasyubetsuSwap.h
+	複数種別をまとめて入れ替える機能を追加
+DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_Ressyasyubetsu.cpp
+	要素を追加するときに、親種別Indexの補正を追加
+	
+DiagramEdit\entDed\CentDedRosen.h
+	swapRessyasyubetsuを複数種別(片側のみ)に対応
+	
+DiagramEdit\entDgr\CDedRessyaSoater_Transfer.cpp
+	停車駅時刻並び替え実行時に、一部条件における並び順補正を追加。
+	
+DiagramEdit\ViewEki\CWndDcdGridEki.cpp
+	「切り取り」「消去」を、複数選択(一続きに限る)に対応
+	
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu.cpp
+	「左へ」「右へ」(列車順の入れ替え)機能を追加
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState.cpp
+	「左へ」「右へ」(列車順の入れ替え)機能を追加
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWndJikokuhyou.cpp
+	「左へ」「右へ」(列車順の入れ替え)機能を追加
+	
+DiagramEdit\ViewRessyasyubetsu\CWndDcdGridRessyasyubetsu.cpp
+	「切り取り」「消去」「上へ」「下へ」を、複数選択(一続きに限る)に対応
+
+Ver2.06
+DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_Eki.h
+	m_bCrossingCheckRuleEditを追加
+	交差支障チェックルールの調整を各種追加
+DiagramEdit\DedRosenFileData\CconvCDedRosenFileData.h
+	FileTypeを更新
+
+DiagramEdit\entDed\CconvCentDed.cpp
+	CrossingCheckRule_To_OuPropertiesText、CrossingCheckRule_From_OuPropertiesTextを追加
+DiagramEdit\entDed\CentDedEki.h
+	enum class ETrackType,struct TrackContent,struct CrossingCheckRuleを追加
+	m_CrossingCheckRuleContを追加
+	getCrossingCheckRuleCont他の関数を追加
+	onEkiInsert,onEkiEraseに交差支障チェックルールの調整を追加
+DiagramEdit\entDed\CentDedEkiCont.h
+	adjustCrossingCheckRule,adjustBrunchLoopCrossingCheckRule,adjustCrossingCheckRuleByEkiEditを追加
+	adjustBrunchLoopByBrunchEdit,adjustBrunchLoopByLoopEditに交差支障チェックルールの調整を追加
+DiagramEdit\entDed\CentDedRosen.cpp
+	adjustBrunchLoopEkiTrack2OuterTerminalにadjustBrunchLoopCrossingCheckRule呼び出しを追加
+	
+DiagramEdit\ViewAllOperationTable\CWndDcdGridAllOperationTable.cpp
+	OnAllOperationtableMovetojikokuhyouOpenOperationDlg_Processを追加
+DiagramEdit\ViewAllOperationTable\CAllOperationTableView.cpp
+	OnPrintにスクロールと再描画の抑止措置を追加
+	
+DiagramEdit\ViewCrossingCheck
+	新規作成
+	
+DiagramEdit\ViewDiagram\cdeddiagramview.cpp
+	setZoneCenter_Dgrを追加
+	
+DiagramEdit\ViewEki\CDlgCrossingCheckRule.cpp
+	新規作成
+DiagramEdit\ViewEki\CPropEditUi_CrossingCheckRule.h
+	新規作成
+DiagramEdit\ViewEki\CWndDcdGridEki.cpp
+	交差支障チェックルール編集ダイアログ関係を追加
+DiagramEdit\ViewEki\CEkiView.cpp
+	OnPrintにスクロールと再描画の抑止措置を追加
+	
+DiagramEdit\ViewEkiJikokuhyou\CEkiJikokuhyouView.cpp
+	OnPrintにスクロールと再描画の抑止措置を追加
+	
+DiagramEdit\ViewInOutLinkCodeList\CInOutLinkCodeListView.cpp
+	OnPrintにスクロールと再描画の抑止措置を追加
+	
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState.cpp
+	OnJikokuhyouOpenCrossingCheck_Processを追加
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu.cpp
+	OnJikokuhyouOpenCrossingCheck_Processを追加
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWndJikokuhyou.cpp
+	OnJikokuhyouOpenCrossingCheck,OnUpdateJikokuhyouOpenCrossingCheckを追加
+DiagramEdit\ViewJikokuhyou\CJikokuhyouView.cpp
+	openCDlgOperationPropを追加
+	
+DiagramEdit\ViewOperationTable\COperationTableView.cpp
+	OnPrintにスクロールと再描画の抑止措置を追加
+	
+DiagramEdit\DiagramEdit.h
+	ViewCrossingCheck関係を追加
+DiagramEdit\StdAfx.h
+	ViewCrossingCheck関係を追加
+	
+Ver2.05.02
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilderCustomize.cpp
+	カスタマイズ時刻表で備考欄が空白になる問題を修正
+	
+Ver2.05.01
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilderCustomize.cpp
+	各項目の描写処理で、pCentDedRessyaがNULLの場合に、pCentDedRessyaから読み込みを行いエラー落ちしていた問題を修正。
+DiagramEdit\ViewJikokuhyou\CPropEditUI_Operation.cpp
+	駅作業設定で、作業種類を次列車接続から路線外終着に変更したときの、路線外終着駅コンボボックスの処理を追加
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWndJikokuhyou.cpp
+	列車番号検索を追加
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState.h
+	列車番号検索を追加
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu.cpp
+	列車番号検索を追加
+	
+DiagramEdit\ViewEkiJikokuhyou\CWndDcdGridEkiJikokuhyou.cpp
+	横スクロールをしたときに、タイトル行の描写不具合を修正
+	当駅始発の列車に●印を表示する設定を追加
+	簡易モードの次列車接続タイプに基づく終着駅および種別変更に一部対応
+DiagramEdit\ViewEkiJikokuhyou\CWndDcdGridEkiJikokuhyouList.cpp
+	横スクロールをしたときに、タイトル行の描写不具合を修正
+	当駅始発の列車に●印を表示する設定を追加
+	簡易モードの次列車接続タイプに基づく終着駅および種別変更に一部対応
+DiagramEdit\ViewEkiJikokuhyou\CconvEkiJikokuhyouCsv.cpp
+	当駅始発の列車に●印を表示する設定に対応
+	
+DiagramEdit\ViewDiagram\CDcdDiagram2.cpp
+	個別背景色が有効な時に、描写が不安定になる問題を修正が崩れる問題を修正
+DiagramEdit\entDgr\CentDedDgrRessya.cpp
+	列車情報表示省略設定に対応
+	
+DiagramEdit\entDed\CentDedBeforeOperation.h
+	前列車接続に列車情報表示省略設定を追加
+DiagramEdit\entDed\CentDedAfterOperation.cpp
+	clearOperationNumberの不具合を修正
+DiagramEdit\entDed\CDedOperationConnecter.cpp
+	列車情報表示省略設定を追加
+	SetIsSyubetsuChangeが抜けていたのを修正。
+	
+DiagramEdit\ViewDiagram\cdeddiagramview.cpp
+	OnDiagramRessyabangouMove_Processを追加
+	setZone_Dgrをダイヤグラム起点時刻に対応
+	
+DiagramEdit\ViewAllOperationTable\CWndDcdGridAllOperationTable.cpp
+	全列車表示時、運用中に次列車接続タイプが同一列車扱いのものが含まれている運用の最終列車の後に不要な矢印が入る問題を修正
+DiagramEdit\ViewAllOperationTable\CconvAllOperationTableCsv.cpp
+	全列車表示時、運用中に次列車接続タイプが同一列車扱いのものが含まれている運用の最終列車の後に不要な矢印が入る問題を修正
+	
+DiagramEdit\DiagramEdit.cpp
+	駅時刻表及び駅時刻表一覧の設定読み書きに、当駅始発の列車に●印を表示する設定を追加
+	iniファイルの設定を、通常版用に変更
+	
+DiagramEdit\CMainFrame.cpp
+	列車番号検索ダイアログバーを追加
+	
+Ver2.05
+DiagramEdit\ConvJikokuhyouCsv\CconvJikokuhyouCsv.cpp
+	運用番号段数設定に対応
+	入出区連携コードに対応
+	次列車接続タイプに対応
+	前後作業欄の増結・解結編成作業欄に対応
+	時刻表示欄について刷新
+DiagramEdit\ConvJikokuhyouCsv\CconvJikokuhyouCustomizeCsv.cpp
+	CustomizeJikokuhyouContentによる表示に対応
+	路線外発着表示スペースの仕様変更に対応
+	運用番号段数設定に対応
+	
+DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_DedRosenFileDataProp.cpp
+	起点時刻跨ぎ運用接続の設定を追加
+DiagramEdit\DedRosenFileData\CdDedDispProp.h
+	運用番号段数設定を追加
+	入出区連携コード欄表示設定を追加
+	時刻表縦書きフォントの初期設定を@メイリオに変更
+DiagramEdit\DedRosenFileData\CconvCdDedDispProp.h
+	運用番号段数設定を追加
+	入出区連携コード欄表示設定を追加
+\DiagramEdit\DedRosenFileData\CconvCDedRosenFileData.cpp
+	FileTypeを更新(1.10に)
+	
+DiagramEdit\entDed\CconvCentDed.cpp
+	前後作業の新パラメータ、駅設定の前後作業欄の増結編成・解結編成作業欄設定および運用番号段数設定、路線設定の起点時刻跨ぎ運用接続設定、各駅での路線外発着表示設定に対応
+DiagramEdit\entDed\CconvCentDedS09.cpp
+	ファイルタイプ変更に伴い新規作成。種別変更の削除、駅作業の変更に対応。
+DiagramEdit\entDed\CDedOperationConnecter.cpp
+	次列車接続タイプに対応
+	CustomizeJikokuhyouContent構成を追加
+	路線設定の起点時刻跨ぎ運用接続設定に対応
+	入出区連携コードに対応
+DiagramEdit\entDed\CentDedAfterOperation.h
+	新しいパラメータ(次列車接続タイプ、入出区リンクコード)を追加、増結表示省略・併合駅Orderを削除。
+DiagramEdit\entDed\CentDedBeforeOperation.cpp
+	新しいパラメータ(入出区連携コード)を追加、解結表示省略・分割駅Orderを削除。
+DiagramEdit\entDed\CentDedAfterOperationCont.cpp
+	CentDedAfterOperationの新しいパラメータに対応
+DiagramEdit\entDed\CentDedBeforeOperationCont.cpp
+	CentDedBeforeOperationの新しいパラメータに対応
+DiagramEdit\entDed\CentDedDia.cpp
+	CustomizeJikokuhyouContentを追加、CustomizeRessyaIndexを置き換え
+	InOutLinkCodeContent,m_contInOutLinkCodeContentを追加
+DiagramEdit\entDed\CentDedEki.h
+	前後作業欄の増結編成・解結編成作業欄設定、運用番号段数設定および路線外発着表示設定を追加
+DiagramEdit\entDed\CentDedEkiCont.h
+	前後作業欄の増結編成・解結編成作業欄設定、運用番号段数設定および路線外発着表示設定を追加
+DiagramEdit\entDed\CentDedRessya.h
+	m_bSyubetsuChangeを削除
+	modifyGouにおいて、号数を減算するときに、0詰めしないように変更
+DiagramEdit\entDed\CentDedRosen.h
+	m_bOperationCrossKitenJikokuを追加
+	createSubRosenで路線外発着を設定する箇所を入出区リンクコードに対応。
+	invertを各駅の運用番号欄段数・路線外発着表示設定・増解結編成前後作業表示欄に対応
+	
+DiagramEdit\ViewAllOperationTable\CconvAllOperationTableCsv.cpp
+	次列車接続タイプに対応
+DiagramEdit\ViewAllOperationTable\CWndDcdGridAllOperationTable.cpp
+	次列車接続タイプに対応
+	
+DiagramEdit\ViewAllOperationTable2\CDcdAllOperationTable.cpp
+	次列車接続タイプに対応
+DiagramEdit\ViewAllOperationTable2\CDcdAllOperationTable2.cpp
+	印刷時の余白処理の不具合を修正
+	
+DiagramEdit\ViewEki\EkiColSpec\CdEkiXColSpec.h
+	前後作業欄の増結編成・解結編成作業欄設定、運用番号段数設定および路線外発着表示設定を追加
+DiagramEdit\ViewEki\EkiColSpec\CdEkiXColSpecCont.cpp
+	前後作業欄の増結編成・解結編成作業欄設定、運用番号段数設定および路線外発着表示設定を追加
+DiagramEdit\ViewEki\CPropEditUi_Eki.cpp
+	前後作業欄の増結編成・解結編成作業欄設定、運用番号段数設定および路線外発着表示設定を追加
+	各駅の種別変更向け表示スペース設定に、選択肢を追加。
+DiagramEdit\ViewEki\CDlgEkiProp.h
+	前後作業欄の増結編成・解結編成作業欄設定、運用番号段数設定および路線外発着表示設定を追加
+	各駅の種別変更向け表示スペース設定に、選択肢を追加。
+DiagramEdit\ViewEki\CWndDcdGridEki.cpp
+	前後作業欄の増結編成・解結編成作業欄設定、運用番号段数設定および路線外発着表示設定を追加
+	
+DiagramEdit\ViewEkiJikokuhyou\EkiJikokuhyouColSpec\CdEkiJikokuhyouYColSpec.h
+	番線表示列を追加
+DiagramEdit\ViewEkiJikokuhyou\EkiJikokuhyouColSpec\CdEkiJikokuhyouYColSpecCont.cpp
+	番線表示列を追加
+DiagramEdit\ViewEkiJikokuhyou\CconvEkiJikokuhyouCsv.cpp
+	環状線に対応
+	番線表示列を追加
+DiagramEdit\ViewEkiJikokuhyou\CWndDcdGridEkiJikokuhyou.cpp
+	次列車接続タイプに対応
+	環状線に対応
+	番線表示列を追加
+	1列車当たりの幅を、時刻表列車幅に変更
+	種別に依らない文字及び枠色を、運用表・運用一覧用の色を用いるように変更。
+DiagramEdit\ViewEkiJikokuhyou\CWndDcdGridEkiJikokuhyouList.cpp
+	次列車接続タイプに対応
+	環状線に対応
+	番線表示列を追加
+	
+DiagramEdit\ViewInOutLinkCodeList\
+	入出区連携コード一覧のために新規作成
+	
+DiagramEdit\ViewJikokuhyou\JikokuhyouColSpec\CdYColSpec.h
+	前後作業欄の増結編成・解結編成作業欄、各駅の路線外発着表示欄を追加
+	運用番号欄段数設定に対応
+	入出区連携コード欄に対応
+DiagramEdit\ViewJikokuhyou\JikokuhyouColSpec\CdYColSpecCont.cpp
+	前後作業欄の増結編成・解結編成作業欄、各駅の路線外発着表示欄を追加
+	運用番号欄段数設定に対応
+	入出区連携コード欄に対応
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilder.cpp
+	通過駅時刻表示に種別ごとのフォントを用いる設定に対応
+	入出区連携コード欄に対応
+	次列車接続タイプ・種別変更の仕様変更に対応
+	前後作業欄の増結編成・解結編成作業欄に対応
+	運用番号欄段数設定に対応
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilderCustomize.cpp
+	通過駅時刻表示に種別ごとのフォントを用いる設定に対応
+	運用番号欄段数設定に対応
+	各駅の路線外発着表示欄に対応
+	CustomizeJikokuhyouContentによる表示に対応
+	次列車接続タイプに対応
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState.cpp
+	OnEditRessyaJouhouCopy_Processを追加
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu.cpp
+	駅作業編集後のカーソル移動の挙動を変更
+	OnEditPaste_Processに列車情報貼り付け動作への遷移を追加
+	OnEditRessyaJouhouPaste_Processを追加
+	OnEditRessyaJouhouCopy_Processを追加
+	OnJikokuhyouEkijikokuDec_Process他に、前後作業欄の増結編成・解結編成作業欄及び列車番号・号数欄での処理を追加
+	OnJikokuhyouMoveToOutRessya_Process等をCustomizeJikokuhyouContentに対応
+	ChangeShihatsuShuchakuOperationTypeNext他に、前後作業欄の増結編成・解結編成作業欄での処理を追加
+	ChangeShihatsuShuchakuOperationDataNext他に、次列車接続タイプ変更処理を追加
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWndJikokuhyou.cpp
+	m_bDisplayTsuukaFontPerSyubetsuを追加
+	上部固定スペースを、運用番号段数設定及び入出区連携コード欄に対応
+	CCellBuilderCustomize及びCCellBuilder呼び出し処理を通過駅時刻表示に種別ごとのフォントを用いる設定及び路線外発着表示設定の変更に対応
+	CDlgOuJikokuhyouCsvExport呼び出し処理を、運用番号段数設定及び入出区連携コード欄に対応
+DiagramEdit\ViewJikokuhyou\CDlgOperationProp.h
+	次列車接続タイプと入出区連携コードの追加、種別変更の削除に対応
+DiagramEdit\ViewJikokuhyou\CDlgOuJikokuhyouCsvExport.cpp
+	運用番号段数設定、入出区連携コード欄に対応
+DiagramEdit\ViewJikokuhyou\CPropEditUI_Operation.h
+	次列車接続タイプと入出区連携コードの追加、種別変更の削除に対応
+	
+DiagramEdit\ViewOperationTable\CconvOperationTableCsv.cpp
+	次列車接続タイプによる同一列車扱いに対応
+DiagramEdit\ViewOperationTable\CWndDcdGridOperationTable.cpp
+	次列車接続タイプによる同一列車扱いに対応
+	クリップボードへのコピー動作を作り直し
+	
+DiagramEdit\ViewRosen\CDlgRosenFileProp.cpp
+	起点時刻跨ぎ運用接続の設定を追加
+DiagramEdit\ViewRosen\CDlgRosenFileProp_Jikokuhyou.cpp
+	入出区連携コード欄表示設定に対応
+DiagramEdit\ViewRosen\CDlgRosenFileProp_Rosen.cpp
+	運用番号段数設定及び起点時刻跨ぎ運用接続の設定を追加
+DiagramEdit\ViewRosen\CDlgRosenView.cpp
+	入出区連携コード一覧関係を追加
+DiagramEdit\ViewRosen\CRosenViewTreeCtrl.h
+	入出区連携コード一覧関係を追加
+	
+DiagramEdit\CDiagramEditDoc.cpp
+	getCF_RessyaJouhou,RessyaJouhou_To_Cliboard,RessyaJouhou_From_Cliboard,RessyaJouhou_IsClipboardFormatAvailableを追加
+	CentDedOperationTable_To_Cliboardを作り直し
+DiagramEdit\DiagramEdit.cpp
+	入出区連携コード一覧関係を追加
+	writeCWndJikokuhyouViewProp,readCWndJikokuhyouViewPropにnameCWndJikokuhyou_DisplayTsuukaFontPerSyubetsuを追加
+	writeCWndDcdGridEkiJikokuhyouProp,readCWndDcdGridEkiJikokuhyouProp,readCWndDcdGridEkiJikokuhyouListPropにnameDisplayTrackを追加
+	
+Ver2.04.06
+DiagramEdit\ConvJikokuhyouCsv\CconvJikokuhyouCsv.cpp
+	運用機能が通常モードの時、始発駅作業欄の運用番号欄の処理が誤っていたのを修正。
+
+Ver2.04.05
+DiagramEdit\DiagramEdit\ViewDiagram\CDcdDiagram2.cpp
+	ダイヤグラム本体部のダブルバッファリングによる処理の有効無効を切り替えられるように変更。
+DiagramEdit\DiagramEdit\ViewDiagram\cdeddiagramview.cpp
+	印刷(プレビュー)時に、ダイヤグラム描写にダブルバッファリングを用いないように変更。
+
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilderCustomize.cpp
+	種別変更向けの列車番号等表示欄で、経由なしの列車でも情報を表示していた問題を修正。
+	
+DiagramEdit\ViewRessyasyubetsu\CPropEditUi_Ressyasyubetsu.cpp
+	種別の複数編集を行ったとき、親種別設定が解除される問題を修正。
+	
+Ver2.04.04
+DiagramEdit\ViewDiagram\CRessyaDraw.cpp
+	RessyajouhouDrawでX座標を求めるときに、iShiftSecondが足されていなかった問題を修正。
+
+Ver2.04.03
+DiagramEdit\ViewDiagram\CRessyaDraw.cpp
+	在線表非表示駅での路線外終着の表示バグを修正。
+
+Ver2.04.02
+DiagramEdit\ViewAllOperationTable2\CaDcdAllOperationTable2_PageSelector.cpp
+	X方面の表示内容が表示領域よりわずかに大きい場合の処理を追加
+
+DiagramEdit\entDed\CentDedAfterOperation.cpp
+	modifyOperationJikokuで、増結時の処理の不具合を修正
+	
+DiagramEdit\entDgr\CentDedDgrRessya.cpp
+	updateRessyaTrackLineBeforeContにおいて、前列車接続時に、前列車の終着駅Orderを取得するように修正(反転駅設定が有効な場合に、ダイヤグラムの在線表で、在線を示す横線の切り欠きの方向が正しく表示されていなかった問題を修正)
+	updateRessyaTrackLineBeforeContにおいて、在線表非表示駅で増結作業を表示する場合に、不要な描写処理を行っていた問題を修正(ダイヤグラムで、増結時は表示しないはずの、列車間をつなぐ円弧を表示しようとしていた。なお、実際のダイヤグラムでは描写直前にはじかれていたので、見た目の影響はこれまでなかった)
+DiagramEdit\ViewDiagram\CDcdDiagram2.cpp
+	ダイヤグラムビューの内、時刻と駅名を覗いた領域に対して、ダブルバッファリングの処理を追加。
+DiagramEdit\ViewDiagram\CRessyaDraw.cpp
+	実画面での座標取得手順を大幅見直し、Y方向については、描写開始前に各駅各番線の座標を予めキャッシュとして取得しておき、そこから座標を求めるように変更。
+	日跨ぎやダイヤグラムの起点時刻に関係する処理において、従来は列車のコピーを作成し、全ての時刻要素に一日分×nの秒数を足し引きしていたものを、実画面のX座標取得時までは足し引きを行わないことで、計算量を削減。
+	
+DiagramEdit\ViewOperationTable\CWndDcdGridOperationTable.cpp
+	分岐駅がデータ上の始発/終着駅かつ路線外始発/終着の場合に、箱ダイヤで路線外始発/終着が正しく表示されない問題を修正
+	
+libs\DcDrawLib\DcDraw\CaDcdTargetItemPosition.cpp
+	ダブルバッファリングの処理を追加
+	
+Ver2.04.01
+DiagramEdit\ConvJikokuhyouCsv\CconvJikokuhyouCustomizeCsv.cpp
+	「入換着時刻を当駅着時刻にする」「入換発時刻を当駅発時刻にする」に基づく時刻取得について、getVirtualChakujikoku,getVirtualHatsujikokuを用いて書き換え。
+	
+DiagramEdit\entDed\CconvCentDed.cpp
+	「箱ダイヤ時に、この駅の時刻を表示する」設定を追加
+DiagramEdit\entDed\CDedOperationConnecter.cpp
+	OperationTableContentのChakuJikoku,HatsuJikoku,bIsOut,bIsIn要素追加に対応
+DiagramEdit\entDed\CentDedDia.h
+	OperationTableContentにChakuJikoku,HatsuJikoku,bIsOut,bIsIn要素を追加
+DiagramEdit\entDed\CentDedEki.h
+	m_bOperationTableDisplayJikoku設定を追加
+DiagramEdit\entDed\CentDedEkiJikoku.cpp
+	getVirtualChakujikoku,getVirtualHatsujikoku関数を追加
+	
+DiagramEdit\ViewAllOperationTable\CWndDcdGridAllOperationTable.cpp
+	運用表CSVエクスポートを箱ダイヤに対応
+	
+DiagramEdit\ViewAllOperationTable2\CDcdAllOperationTable2.cpp
+	特定の動作手順で、エラー落ちする問題を仮修正
+	
+DiagramEdit\ViewDiagram\CDcdDiagram.cpp
+	m_colorDiaMojiColor要素を、CDcdDiagram2から移動
+	個別背景色有効時に、画面描写が乱れる問題を修正
+DiagramEdit\ViewDiagram\CDcdDiagram2.cpp
+	m_colorDiaMojiColor要素を、CDcdDiagramへ移動
+DiagramEdit\ViewDiagram\CRessyaDraw.cpp
+	路線外発着の駅名運用番号色を時刻表文字色に変更
+	運用番号の文字色を「ダイヤ画面文字色」に変更
+	
+DiagramEdit\ViewEki\EkiColSpec\CdEkiXColSpec.h
+	ColumnType_OperationTableDisplayJikokuを追加
+DiagramEdit\ViewEki\EkiColSpec\CdEkiXColSpecCont.cpp
+	ColumnType_OperationTableDisplayJikoku追加に対応
+DiagramEdit\ViewEki\CDlgEkiProp.cpp
+	bOperationTableDisplayJikokuEnableを追加
+DiagramEdit\ViewEki\CPropEditUi_Eki.cpp
+	bOperationTableDisplayJikokuEnableを追加
+DiagramEdit\ViewEki\CWndDcdGridEki.cpp
+	箱ダイヤで表示するか否か設定を追加
+	
+DiagramEdit\ViewEkiJikokuhyou\CWndDcdGridEkiJikokuhyou.cpp
+	時刻の取得を、「入換発時刻を当駅発時刻にする」設定に対応
+DiagramEdit\ViewEkiJikokuhyou\CWndDcdGridEkiJikokuhyouList.cpp
+	時刻の取得を、「入換発時刻を当駅発時刻にする」設定に対応
+	
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilderCustomize.cpp
+	「入換着時刻を当駅着時刻にする」「入換発時刻を当駅発時刻にする」に基づく時刻取得について、getVirtualChakujikoku,getVirtualHatsujikokuを用いて書き換え。
+	
+DiagramEdit\ViewOperationTable\OperationTableColSpec\CdOperationTableXColSpec.h
+	ColumnType_JikokuDisplayEki,ColumnType_RessyahoukouExtension(未使用)とm_iEkiIndexを追加
+DiagramEdit\ViewOperationTable\OperationTableColSpec\CdOperationTableXColSpecCont.cpp
+	箱ダイヤに対応
+DiagramEdit\ViewOperationTable\OperationTableColSpec\CdOperationTableYColSpec.h
+	ColumnType_Line,ColumnType_RessyaHatsuを追加
+DiagramEdit\ViewOperationTable\OperationTableColSpec\CdOperationTableYColSpecCont.cpp
+	箱ダイヤに対応
+DiagramEdit\ViewOperationTable\CconvOperationTableCsv.cpp
+	箱ダイヤに対応
+DiagramEdit\ViewOperationTable\CDcDraw_Extension.cpp
+	箱ダイヤ表示の内、線・記号の描写を行うために追加
+DiagramEdit\ViewOperationTable\CWndDcdGridOperationTable.cpp
+	箱ダイヤに対応
+	m_iDisplayJikokuEkiIndex,m_bDisplayExtensionOperationTable,m_bDisplayTrackName,m_bDisplayTsuukaEkiJikokuを追加
+	
+DiagramEdit\DiagramEdit.cpp
+	箱ダイヤに関する設定の読み書きを追加
+	
+Ver2.04
+DiagramEdit\entDed\CdDedJikoku.cpp
+	round関数を追加。
+DiagramEdit\entDed\CDedOperationConnecter.cpp
+	OperationTableContentのbContinue要素追加に対応
+DiagramEdit\entDed\CentDedDia.h
+	OperationTableContentにbContinue要素を追加
+	
+DiagramEdit\ViewEkiJikokuhyou
+	駅時刻表追加に伴い新規作成
+	
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWndJikokuhyou.h
+	駅時刻表を開く動作を追加
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState.h
+	駅時刻表を開く動作を追加
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu.cpp
+	駅時刻表を開く動作を追加
+	
+DiagramEdit\ViewRosen\CDlgRosenView.h
+	駅時刻表一覧項目を追加
+DiagramEdit\ViewRosen\CRosenViewTreeCtrl.cpp
+	駅時刻表一覧項目を追加
+	
+DiagramEdit\CDiagramEditDoc.cpp
+	編集が行われたときに、必要に応じて駅時刻表・駅時刻表一覧を閉じる動作を追加
+DiagramEdit\DiagramEdit.cpp
+	駅時刻表・駅時刻表一覧ビューの設定を追加
+	
+Ver2.03.01
+DiagramEdit\ViewAllOperationTable\CWndDcdGridAllOperationTable.cpp
+	運用一覧表の入区列車の列車名欄のフォント指定が、出区列車のものになっていたのを修正
+	
+DiagramEdit\ViewEki\EkiColSpec\CdEkiXColSpec.h
+	表示設定モード用の項目を追加
+DiagramEdit\ViewEki\EkiColSpec\CdEkiXColSpecCont.h
+	表示設定モードに対応
+DiagramEdit\ViewEki\CWndDcdGridEki.cpp
+	表示設定モードを追加
+	表示設定モードON/OFFの描写切り替えに対応
+	設定変更コマンドを追加
+	表示設定モードに合わせて、複数選択時に編集を実行した後も、複数選択を維持するように変更
+DiagramEdit\ViewEki\CPropEditUi_Eki.cpp
+	UiDataToTargetを大幅修正、複数選択時に無効になる項目については、書き込みを行わないように修正
+	
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilderCustomize.cpp
+	カスタマイズ時刻表の種別変更の種別欄で、"↓"を表示する場合のフォント指定を変更
+	
+DiagramEdit\ViewRessyasyubetsu\CWndDcdGridRessyasyubetsu.cpp
+	種別番号欄のフォント指定を修正。
+	
+DiagramEdit\DiagramEdit.cpp
+	駅ビューの「表示編集モード」の有効無効の設定の読み書きを追加
+	
+Ver2.03
+DiagramEdit\DedRosenFileData\CconvCdDedDispProp.cpp
+	OperationTableFont,AllOperationTableJikokuFont,DiaBackColor,OperationStringColor,OperationGridColorの設定を追加
+DiagramEdit\DedRosenFileData\CdDedDispProp.cpp
+	OperationTableFont,AllOperationTableJikokuFont,DiaBackColor,OperationStringColor,OperationGridColorの設定を追加
+	各フォント設定のデフォルトフォントを変更
+DiagramEdit\DedRosenFileData\CconvCDedRosenFileData.cpp
+	FileTypeを更新(1.09)
+	
+DiagramEdit\entDed\CconvCentDed.cpp
+	駅名略称(ダイヤグラム・運用一覧図)を追加
+	DiagramColorNextEkiの設定を追加
+DiagramEdit\entDed\CentDedEki.cpp
+	駅名略称(ダイヤグラム・運用一覧図)を追加
+	DiagramColorNextEkiの設定を追加
+DiagramEdit\entDed\CentDedEkiCont.h
+	駅名略称(ダイヤグラム・運用一覧図)を追加
+DiagramEdit\entDed\CentDedRosen.cpp
+	路線の組み入れにおける、駅名略称(ダイヤグラム・運用一覧図)の処理を追加
+	路線の組み入れおよび駅の反転における、個別背景色設定の処理を追加
+	
+DiagramEdit\entDgr\CentDedDgrEki.cpp
+	DiagramColorNextEkiの設定を追加
+DiagramEdit\entDgr\CentDedDgrDia.cpp
+	DiagramColorNextEkiの設定を追加
+	
+DiagramEdit\ViewAllOperationTable\CAllOperationTableView.cpp
+	印刷機能を追加
+DiagramEdit\ViewAllOperationTable\CWndDcdGridAllOperationTable.cpp
+	フォント、文字色、枠線色設定に対応
+	
+DiagramEdit\ViewAllOperationTable2\
+	運用一覧図実装に伴い追加
+	
+DiagramEdit\ViewDiagram\CDcdDiagram.cpp
+	ダイヤグラム背景色に対応
+	デフォルトフォントを変更
+DiagramEdit\ViewDiagram\CDcdDiagram2.cpp
+	ダイヤグラム背景色に対応
+	デフォルトフォントを変更
+	時の描写位置を調整
+DiagramEdit\ViewDiagram\cdeddiagramview.cpp
+	ダイヤグラム個別背景色の設定を追加
+DiagramEdit\ViewDiagram\CWndDiagram.cpp
+	ダイヤグラム個別背景色の設定を追加
+	
+DiagramEdit\ViewEki\CDlgEkiProp.cpp
+	駅名略称(ダイヤグラム・運用一覧図)の設定を追加
+	ダイヤグラム個別背景色の設定を追加
+DiagramEdit\ViewEki\CPropEditUi_Eki.cpp
+	駅名略称(ダイヤグラム・運用一覧図)の設定を追加
+	ダイヤグラム個別背景色の設定を追加
+DiagramEdit\ViewEki\CWndDcdGridEki.cpp
+	フォントを変更
+	
+DiagramEdit\ViewOperationTable\CDedOperationTableDoc.cpp
+	タイトルバーに「運用表」の文言を追加
+DiagramEdit\ViewOperationTable\COperationTableView.cpp
+	印刷機能を追加
+DiagramEdit\ViewOperationTable\CWndDcdGridOperationTable.cpp
+	フォント、文字色、枠線色設定に対応
+	
+DiagramEdit\ViewRessyasyubetsu\CWndDcdGridRessyasyubetsu.cpp
+	フォントを変更
+	
+DiagramEdit\ViewRosen\CDlgRosenFileProp_FontColor.cpp
+	OperationTableFont,AllOperationTableJikokuFont,DiaBackColor,OperationStringColor,OperationGridColorの設定を追加
+DiagramEdit\ViewRosen\CDlgRosenView.cpp
+	運用一覧図を開く動作を追加
+DiagramEdit\ViewRosen\CRosenViewTreeCtrl.cpp
+	運用一覧図を開く動作を追加
+	
+DiagramEdit\CDiagramEditDoc.cpp
+	運用機能がOFFになったときなどに、運用一覧図を自動で閉じる動作を追加
+DiagramEdit\DiagramEdit.cpp
+	運用一覧図を開く動作を追加
+	iniファイルへの設定の読み書きを追加(運用一覧図関係およびダイヤグラム背景色)
+	
+Ver2.02.05
+DiagramEdit\entDed\CconvCentDed.cpp
+	テキスト形式のペーストが可能になったのに合わせて、一部要素が欠落していても正しく動作するように修正。
+
+DiagramEdit\ViewEki\CWndDcdGridEki.cpp
+	テキスト形式のペーストが可能になったのに合わせて、ペーストしたものに駅が含まれていない場合に、処理をスキップするように変更(無動作のときにUndoRedoの対象にならないように)
+	
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu.cpp
+	始発・終着駅名欄および路線外始発・終着欄からダイアログを開こうとしたときに、iValidSihatsu/SyuuchakuEkiが-1の場合の例外処理を追加
+	テキスト形式のペーストが可能になったのに合わせて、ペーストしたものに列車が含まれていない場合に、処理をスキップするように変更
+	「駅時刻を挿入」「駅時刻を削除」コマンドを再実装。番線の処理を追加および、挿入された駅の駅扱いを通過にするか運行なしにするかの選択処理を追加。
+	
+DiagramEdit\ViewRessyasyubetsu\CWndDcdGridRessyasyubetsu.cpp
+	テキスト形式のペーストが可能になったのに合わせて、ペーストしたものに種別が含まれていない場合に、処理をスキップするように変更
+	
+\DiagramEdit\CDiagramEditDoc.cpp
+	テキスト形式のペーストのために、UnicodeText_IsClipboardFormatAvailableを追加。
+	CentDedEki_From_Cliboard、CentDedRessyasyubetsu_From_Cliboard、CentDedRessyaCont_From_Cliboardをテキスト形式のペーストに対応、クリップボードフォーマットのチェック及び改行コードの修正。
+	
+
+Ver2.02.04
+DiagramEdit\ViewRosen\CDlgRosenFileProp_Jikokuhyou.cpp
+	列車名・号数の表示設定に関する箇所を、誤ってコメントアウトしていたのを修正。
+	
+Ver2.02.03
+DiagramEdit\DedRosenFileData\CconvCDedRosenFileData.cpp
+	FileTypeを更新(1.08)
+DiagramEdit\DedRosenFileData\CdDedDispProp.h
+	m_iSecondRoundChaku,m_iSecondRoundHatsu,m_bDisplay2400要素を追加
+DiagramEdit\DedRosenFileData\CconvCdDedDispProp.cpp
+	m_iSecondRoundChaku,m_iSecondRoundHatsu,m_bDisplay2400要素に対応
+	
+DiagramEdit\entDed\CdDedJikoku.h
+	秒単位処理及び2400表示の仕組みを追加
+DiagramEdit\entDed\CentDedRessya.cpp
+	adjustOperationで、有効始発駅と有効終着駅が同一になる場合の例外処理を追加
+DiagramEdit\entDed\CDedOperationConnecter.cpp
+	operationConnectとoperationConnectLightで、有効始発駅が有効終着駅と同じまたは後ろにある場合の例外処理を追加
+	路線外始発（終着）の当駅着時刻（発時刻）がNULLの場合の処理を追加
+DiagramEdit\entDed\CentDedRosen.cpp
+	デフォルト路線外発着時刻機能を、当駅発（着）時刻が空の場合に対応
+	
+DiagramEdit\entDgr\CentDedDgrRessya.cpp
+	readCentDedRessya_02_CreateCentDedEkiJikokuの列車表示範囲指定を、路線外始発（終着）の当駅着時刻（発時刻）がNULLの場合に対応
+	readCentDedRessya_11_updateRessyaTrackLineContの在線表要素探索を、路線外始発（終着）の当駅着時刻（発時刻）がNULLの場合に対応（通過時の他作業無視など)
+	
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilder.cpp
+	m_iSecondRoundChaku,m_iSecondRoundHatsu,m_bDisplay2400要素を追加
+	getCdDedJikokuConvの仕様変更
+	コンストラクタの変数を変更
+	各時刻表示する箇所を、秒単位処理に対応
+	路線外始発の当駅着時刻および路線外終着の当駅発時刻が空の時の処理を追加
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilderCustomize.cpp
+	m_iSecondRoundChaku,m_iSecondRoundHatsu,m_bDisplay2400要素を追加
+	getCdDedJikokuConvの仕様変更
+	コンストラクタの変数を変更
+	各時刻表示する箇所を、秒単位処理に対応
+	路線外始発の当駅着時刻および路線外終着の当駅発時刻が空の時の処理を追加
+	分岐駅で片時刻ありの通過の場合、入力されている時刻を、もう片方の側に表示するように変更
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu.cpp
+	開始・終了作業の種類変更コマンドで、路線外始発・終着の当駅着・発時刻が空の場合の処理を追加
+	開始・終了作業の時刻変更コマンドで、路線外始発・終着の当駅着・発時刻が空の場合に、時刻を補完するように変更
+	開始・終了作業の時刻消去コマンドを、路線外始発・終着の当駅着・発時刻にも適用するように変更
+DiagramEdit\ViewJikokuhyou\CPropEditUI_Operation.cpp
+	路線外始発の当駅着時刻および路線外終着の当駅発時刻が空の時に、駅扱いが通過なら、自動で補完するようにしていたのを行わないように変更（空白を許容するように）
+	
+DiagramEdit\ViewOperationTable\CWndDcdGridOperationTable.cpp
+	m_iSecondRoundChaku,m_iSecondRoundHatsu,m_bDisplay2400要素を追加
+	getCdDedJikokuConvの仕様変更
+	各時刻表示する箇所を、秒単位処理に対応
+	
+DiagramEdit\ViewAllOperationTable\CWndDcdGridAllOperationTable.cpp
+	m_iSecondRoundChaku,m_iSecondRoundHatsu,m_bDisplay2400要素を追加
+	getCdDedJikokuConvの仕様変更
+	各時刻表示する箇所を、秒単位処理に対応
+	
+DiagramEdit\ViewRosen\CDlgRosenFileProp.h
+	時刻表ページ追加に対応
+DiagramEdit\ViewRosen\CDlgRosenFileProp_Jikokuhyou.cpp
+	時刻表ページ追加による新規作成
+DiagramEdit\ViewRosen\CDlgRosenFileProp_Rosen.cpp
+	一部項目について、時刻表ページに移動
+	
+DiagramEdit\ConvJikokuhyouCsv\CconvJikokuhyouCsv.cpp
+	CCellBuilderにおける変更を適用
+	
+DiagramEdit\ConvJikokuhyouCsv\CconvJikokuhyouCustomizeCsv.cpp
+	CCellBuilderCustomizeにおける変更を適用
+
+
+Ver2.02.02
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu.cpp
+	出区列車に移動、前列車に移動、次列車に移動、入区列車に移動の際に、運番に対する運用表要素が存在しない場合の処理を追加
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilderCustomize.cpp
+	update02_02_updateRessyaにおいて、カスタマイズ時刻表用列車Indexが、存在する列車のIndex範囲外の場合の処理を追加
+	(具体的には、運用抑止状態で列車数を減らした場合に、カスタマイズ時刻表用列車Indexが更新されないため、列車コンテナの外側を参照しようとしてしまう問題への対応)
+	updateAllOperationNumberが、カスタマイズ時刻表用列車Indexに対応していなかったのを修正。
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWndJikokuhyou.cpp
+	updateUI_ReplaceRessyaとupdateUI_ReplaceRessyaAndAllOperationNumber処理において、カスタマイズ時刻表の場合、update(全更新)からupdateAllRessya(列車部のみ全更新)に変更。
+
+Ver2.02.01
+DiagramEdit\ViewJikokuhyou\CPropEditUI_Operation.cpp
+	駅作業ダイアログを、設定済みの入換作業をフォーカスして開いたときに、入換番線設定をデフォルト入換番線で初期化してしまう問題を修正
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu.cpp
+	時刻消去コマンドを、着発時刻ともに入力されている通過駅(運転停車)に対して実行したとき、駅扱いを停車に変える処理を削除。
+
+Ver2.02
+DiagramEdit\ViewAllOperationTable\
+	運用一覧ビューのために新規追加
+DiagramEdit\ViewAllOperationTable\CDlgOperationTableCsvExport.cpp
+	運用表から運用一覧の直下に移動し、運用一覧に合わせて各種修正
+DiagramEdit\ViewOperationTable\CWndDcdGridOperationTable.cpp
+	OnFileExportOperationTableCsv_Processを変更、ダイアログによる運用表出力は運用一覧での実行に変更し、表示中の運用を出力するように変更
+DiagramEdit\ViewOperationTable\CconvOperationTableCsv.cpp
+	出力する運番を保持する変数のタイプを、dequeからvectorに変更。
+	
+DiagramEdit\DiagramEdit.h
+	運用一覧に関する要素を追加
+DiagramEdit\DiagramEdit\CDiagramEditDoc.cpp
+	運用一覧に関する要素を追加
+	何らかの編集が行われたときに、運用表を閉じる条件が正しく設定されていなかった問題を修正
+DiagramEdit\ViewRosen\CDlgRosenView.cpp
+	運用一覧に関する要素を追加
+DiagramEdit\ViewRosen\CRosenViewTreeCtrl.cpp
+	運用一覧に関する要素を追加
+
+
+Ver2.01.02
+DiagramEdit\entDed\CentDedRosen.cpp
+	StandardShuntTrackIndexSearch,StandardOuterTerminalJikanSearchを追加。
+	OperationConnectの運用無効時の処理を変更
+DiagramEdit\entDed\CentDedDia.cpp
+	omitInvalidRessyaFromCustomizeRessyaIndexを追加
+DiagramEdit\ViewJikokuhyou\CDlgEkijikokuProp.cpp
+	駅時刻ダイアログに時刻シフトボタンを追加
+DiagramEdit\ViewJikokuhyou\CDlgOperationProp.cpp
+	駅作業ダイアログに時刻シフトボタンを追加
+	デフォルト入換番線とデフォルト路線外発着時分に対応
+DiagramEdit\ViewJikokuhyou\CPropEditUI_Operation.cpp
+	デフォルト入換番線とデフォルト路線外発着時分に対応
+	入換作業が追加されたとき・入換作業に変更したときに、デフォルト入換番線を用いるようにした
+	路線外発着作業に変更、路線外発着駅を変更したときに、デフォルト路線外発着時分を用いて時刻を設定するように変更した
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilderCustomize.cpp
+	主に分岐駅における時刻表示ルールを変更
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu.cpp
+	execCDlgOperationPropをデフォルト入換番線とデフォルト路線外発着時分に対応
+	ChangeShihatsuShuchakuOperationTypeNext・Prevでデフォルト路線外発着時分を用い路線外発着に変更できるようにした
+	ChangeShihatsuShuchakuOperationDataNext・Prev(旧名称OperationTrackNext)で、路線外発着駅を変更したときに、デフォルト路線外発着時分を用いて路線外発着駅の時刻を変更するようにした
+	ChangeShihatsuShuchakuOuterTerminalNext・Prevで、路線外発着駅を変更したときに、デフォルト路線外発着時分を用いて路線外発着駅の時刻を変更するようにした
+	ChangeOperationBefore・AfterTypeNext・Prevで、入換作業に変更・追加したときに、デフォルト入換番線を用いるように変更
+
+Ver2.01.01
+DiagramEdit\entDed\CDedOperationConnecter.cpp
+	増結作業待機部(m_contConnectWaitList)回りの修整。
+DiagramEdit\entDed\CDedRessyaSoater_Ressyasyubetsu.cpp
+	列車番号の並び替え基準を変更
+	列車番号の並び替えを末尾基準にするオプションを追加
+DiagramEdit\entDed\CDedRessyaSoater_Ressyamei.cpp
+DiagramEdit\entDed\CDedRessyaSoater_Ressyabangou.cpp
+	列車種別による並べ替えをベースに、並べ替え基準の順序を変更し、列車名と列車番号を優先基準とした。
+DiagramEdit\entDed\CDedRessyaSoater_OperationNumber.cpp
+	運用番号の並び替え基準を変更
+	強制終了する問題を修正
+DiagramEdit\entDed\CentDedRessya.h
+	splitRessyabangouとsplitOperationNumberを追加
+DiagramEdit\ViewJikokuhyou\CJikokuhyouDoc.cpp
+	タイトル生成に、運用機能の有効無効の表示を追加
+	UpdateTitleを追加
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu.cpp
+	OnUpdateに、路線ファイルのプロパティ変更時のタイトルバー更新呼び出しを追加
+	StdOpeTimeFuncを修正。
+	列車種別変更コマンドを追加
+DiagramEdit\entDed\CconvCentDedS05.cpp
+	始発・終着駅作業読み込みにおいて、始発・終着駅の時刻が不足している場合の処理を追加
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilder.cpp
+	運用番号の表示内容を、カスタマイズ時刻表に合わせ、始発駅発車時のものに変更。
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWndJikokuhyou.cpp
+	列車番号・運用番号の並び替えを末尾要素から比較するオプションを追加
+DiagramEdit\ViewJikokuhyou\CDlgJikokuhyouViewProp.cpp
+	列車番号・運用番号の並び替えを末尾要素から比較するオプションを追加
+DiagramEdit\DiagramEdit.cpp
+	列車番号・運用番号の並び替えを末尾要素から比較するオプションを追加
+
+Ver2.01
+DiagramEdit\ConvJikokuhyouCsv\CconvJikokuhyouCsv.cpp
+	カスタマイズ時刻表導入に伴い、通常時刻表表示に特化
+	インポート機能部の削除
+DiagramEdit\ConvJikokuhyouCsv\CconvJikokuhyouCustomizeCsv.cpp
+	カスタマイズ時刻表エクスポート用に新規追加
+DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_DedRosenFileDataProp.h
+	EnableOperation回りを小修整
+DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_Eki.cpp
+	路線外発着駅名の、分岐環状駅間調整を追加
+DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_Ressya.cpp
+	運用機能アップデートによる調整
+DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_Ressyasyubetsu.cpp
+	親種別Indexの修整を追加。
+DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_RosenFileData.cpp
+	運用機能アップデートによる調整
+DiagramEdit\DedRosenFileData\CconvCDedRosenFileData.cpp
+	ファイル形式アップデートに伴う変更
+
+DiagramEdit\entDed\CconvCentDed.h
+	CentDedBeforeOperationCont_To_string,CentDedBeforeOperationCont_From_string,CentDedAfterOperationCont_To_string,CentDedAfterOperationCont_From_stringを追加
+	ファイル形式アップデートに伴う変更
+	adjustBrunchLoopContの実施場所を、EkiCont読み出しからRosen読み出しに移動
+DiagramEdit\entDed\CconvCentDedS00.cpp
+	CentDedEki_From_OuPropertiesTextにカスタマイズ時刻表表示設定を追加
+	CentDedEkiJikoku_From_stringを経由無し削除に対応
+	CentDedRessya_From_OuPropertiesTextを番線システム変更に対応
+DiagramEdit\entDed\CconvCentDedS05.cpp
+	CentDedEki_From_OuPropertiesTextにカスタマイズ時刻表表示設定を追加、主本線設定、路線外発着駅読み込みの変更
+	CentDedEkiJikoku_From_stringを経由無し削除、番線システム変更に対応
+	BeforeOperation_From_string、AfterOperation_From_stringを追加、従来のRessyaTrackの読み込み
+	CentDedRessya_From_OuPropertiesTextを番線システム、駅作業変更に対応
+	CentDedRosen_From_OuPropertiesTextを運用機能、路線外発着駅変更に対応
+DiagramEdit\entDed\CDedOperationConnecter.cpp
+	駅作業変更に伴う作り直し、運用番号部を除いた簡易モードを作成。
+DiagramEdit\entDed\CDedRessyaSoater_Ekiatsukai.cpp
+	経由無し削除に対応
+DiagramEdit\entDed\CDedRessyaSoater_RessyaTrack.cpp
+	経由無し削除に対応
+DiagramEdit\entDed\CentDedAfterOperation.cpp
+DiagramEdit\entDed\CentDedAfterOperationCont.cpp
+DiagramEdit\entDed\CentDedBeforeOperation.cpp
+DiagramEdit\entDed\CentDedBeforeOperationCont.cpp
+	駅作業変更に伴い追加
+DiagramEdit\entDed\CentDedDia.cpp
+	m_contCustomizeRessyaIndexKudari,m_contCustomizeRessyaIndexNobori,m_contOperationTableContentを追加
+	adjustOperationを追加
+	路線外発着駅を分岐駅間で共有する変更に対応
+DiagramEdit\entDed\CentDedDiaCont.cpp
+	路線外発着駅を分岐駅間で共有する変更に対応
+DiagramEdit\entDed\CentDedEki.h
+	OuterTerminal構造体を追加、路線外発着駅名に略を付けられるように。
+	m_strEkimeiJikokuhyouRyakuを追加
+	m_iJikokuhyouOperationOrigin,m_iJikokuhyouOperationTerminalnを追加
+	m_bJikokuhyouChakuJikokuDisplayKudariなどカスタマイズ時刻表表示設定を追加
+	m_iJikokuhyouRessyabangouDisplayKudariなどカスタマイズ時刻表種別変更表示設定を追加
+	compareOuterTerminalを追加
+DiagramEdit\entDed\CentDedEkiCont.h
+	CdDedEkiをOuterTerminalに対応、m_iJikokuhyouBeforeOperation,m_strEkimeiJikokuhyouRyaku,m_bJikokuhyouChakuJikokuDisplay,m_iJikokuhyouRessyabangouDisplayなどを追加
+	adjustBrunchLoopByBrunchEdit,adjustBrunchLoopByLoopEditを修正(路線外発着駅名etc)
+	adjustBrunchLoopEkiTrack2をadjustBrunchLoopEkiTrack2OuterTerminalに変更
+	mergeOuterTerminalを追加
+DiagramEdit\entDed\CentDedEkiJikoku.h
+	駅扱いの経由無しを削除
+	m_iRessyaTrackIndex,m_CentDedBeforeOperationCont,m_CentDedAfterOperationContを追加、駅作業に対応
+	adjustOperationを追加
+DiagramEdit\entDed\CentDedEkiJikokuCont.cpp
+	adjustBrunchLoopByBrunchEdit等を、CentDedRessyaで行うように変更
+	adjustBrunchLoopOuterTerminalを追加
+DiagramEdit\entDed\CentDedRessya.h
+	CentDedRessyaTrackContを削除、EkiJikokuに集約
+	m_strOperationNumberAssigned,m_iRessyaidxOut等を削除、駅作業に移譲
+	m_bSyubetsuChangeを追加
+	modifyCentDedEkiJikokuを駅作業に対応
+	getValidSihatsuEki、getValidSyuuchakuEkiを追加
+	modifyRessyaJikoku、modifyRessyaJikokuRevを駅作業に対応
+	pasteEkiJikokuを駅作業に対応
+	directを駅作業に対応
+	adjustOperationを追加
+	isExistRessyaOfEkiTrack2、isExistRessyaOfOuterTerminalを駅作業に対応
+	getRunBetweenEkiForward、getRunBetweenEkiBackwardを追加
+	getOperationNumberを、駅作業に対応
+	adjustBrunchLoopByBrunchEdit,adjustBrunchLoopByLoopEdit、adjustBrunchLoopByEkijikokuEditを変更、主たる実行部をここに含めた
+	adjustBrunchConvertを変更
+	adjustBrunchLoopOuterTerminal、mergeOuterTerminalを追加
+DiagramEdit\entDed\CentDedRessyaCont.cpp
+	adjustOperationを追加
+	adjustBrunchLoopOuterTerminal、mergeOuterTerminalを追加
+DiagramEdit\entDed\CentDedRosen.cpp
+	m_iEnableOperation読み出し関数の調整
+	adjustBrunchLoopEkiTrack2をadjustBrunchLoopEkiTrack2OuterTerminalに変更
+	mergeOuterTerminalを追加
+	各関数でRessyaTrackを使用していたもの修整
+	insert（路線の組み込み)を修正
+DiagramEdit\entDed\CRessyaContUnifier.cpp
+	駅作業の変更に対応
+	一本化を行う基準を変更
+	
+DiagramEdit\entDgr\CentDedDgrDia.cpp
+	駅作業の変更に対応
+DiagramEdit\entDgr\CentDedDgrEki.cpp
+	不要変数を削除
+DiagramEdit\entDgr\CentDedDgrEkiCont.cpp
+	不要変数を削除
+DiagramEdit\entDgr\CentDedDgrEkijikoku.h
+	m_iRessyaTrackIndexを追加
+DiagramEdit\entDgr\CentDedDgrRessya.h
+	m_strOperationNumber、m_bExistBefore等を削除、駅作業に移譲
+	m_MuCentDedDgrRessyaTrackを削除、m_pCentDedDgrRessyaTrackLineContに集約
+	readCentDedRessya_09_CreateCentDedRessyaTrack、updateRessyaTrackLine、updateRessyaTrackLineNoDisplayを削除、readCentDedRessya_11_updateRessyaTrackLineContに集約
+	readCentDedRessya_10_updateXPosNextを削除、readCentDedRessya_02_CreateCentDedEkiJikokuに集約
+	updateRessyaTrackLineBeforeCont、updateRessyaTrackLineAfterContを追加
+	readCentDedRessya_02_CreateCentDedEkiJikokuを駅作業に対応
+	readCentDedRessya_04_updateShouldRessyajouhouDrawを番線システム変更に対応
+	readCentDedRessya_05_complementKeiyunasiSide、readCentDedRessya_06_complementLongStop_01、readCentDedRessya_06_complementLongStop_02を経由無し削除に対応
+	readCentDedRessya_11_updateRessyaTrackLineContを追加、番線・駅作業絡みの処理
+	updateRessyasenCont_02_calcRessyasenSyuutenを経由無し削除に対応
+	updateRessyasenCont_06_reduceToKeiyunasiを経由無し削除に対応
+DiagramEdit\entDgr\CentDedDgrRessyaTrackLine.cpp
+	全部作り直し、今まではEkiJikokuから時刻を取得していたものを、時刻も含めてしまうように変更など
+	Zaisenを追加して、複数回入換に対応
+DiagramEdit\ViewDiagram\CRessyaDraw.cpp
+	全部作り直し、CentDedDgrRessyaTrackLineから時刻を取得するように変更など
+	
+DiagramEdit\ViewEki\CDlgEkiProp.cpp
+	駅名略称、作業表示欄設定、カスタマイズ時刻表表示設定を追加
+	路線外発着駅名の編集をアップデート
+DiagramEdit\ViewEki\CDlgOuterEkimeiProp.cpp
+	時刻表略称、ダイヤグラム略称を追加
+DiagramEdit\ViewEki\CPropEditUi_Eki.cpp
+	駅名略称、作業表示欄設定、カスタマイズ時刻表表示設定を追加
+	路線外発着駅名の編集をアップデート
+DiagramEdit\ViewEki\CWndDcdGridEki.cpp
+	並列処理をいったん取りやめ
+	
+DiagramEdit\ViewJikokuhyou\JikokuhyouColSpec\CdXColSpecCont.cpp
+	カスタマイズ時刻表に対応
+DiagramEdit\ViewJikokuhyou\JikokuhyouColSpec\CdYColSpec.h
+	駅作業表示欄、種別変更表示欄を追加
+	始発駅作業欄を三行化(運用番号有効時)
+	m_iOperationIndex(駅作業欄に使用)を追加
+DiagramEdit\ViewJikokuhyou\JikokuhyouColSpec\CdYColSpecCont.cpp
+	駅作業表示欄、種別変更表示欄、カスタマイズ時刻表に対応
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilder.cpp
+	通常時刻表(従来の番線編集モード相当)専用に。
+	駅作業表示欄、種別変更表示欄に対応
+	始発駅作業欄の三行化に対応
+	経由無しの削除に対応
+	基準運転時分部の編集
+	描写手順の大幅見直し
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilderCustomize.cpp
+	カスタマイズ時刻表表示用に新規追加
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState.cpp
+	OnEditOperationCopy_Processを追加
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Renzoku.cpp
+	経由無し削除に対応
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu.cpp
+	各コマンドを、カスタマイズ時刻表時無効に設定
+	execJikokuhyouPropDlgを作業欄に対応
+	execAltJikokuhyouPropDlgを追加
+	execCDlgEkijikokuPropを駅作業編集との兼ね合いを調整
+	execCDlgOperationPropを追加
+	OnEditPaste_Processを駅作業貼り付けに対応
+	OnEditOperationPaste_Processを追加
+	OnEditOperationCopy_Processを追加
+	OnEditOperationInsert_Processを追加
+	OnJikokuhyouOperationProp_Processを追加
+	OnJikokuhyouKeiyunasi_Processを経由無し削除に対応
+	OnJikokuhyouEkijikokuInsert_Processと、OnJikokuhyouEkijikokuErase_Processを無効化
+	OnJikokuhyouEkijikokuDec_Process等を前後作業欄に対応
+	OnJikokuhyouMoveToOutRessya_Process等を、駅作業変更に対応
+	OnJikokuhyouOpenOperationTable_Processを複数運番に対応
+	ChangeRessyaTrackNext等を列車主本線設定削除、入換作業仕様変更に対応
+	ChangeShihatsuShuchakuOperationNext/Prevを削除
+	ChangeShihatsuShuchakuOperationTypeNext/Prevを駅作業変更に対応
+	ChangeShihatsuShuchakuOperationTrackNext/Prevを駅作業変更に対応
+	ChangeShihatsuShuchakuOuterTerminalNext/Prevを駅作業変更に対応
+	ChangeShihatsuShuchakuOuterJikokuを駅作業変更に対応
+	StdOpeTimeFuncを見直し、経由無し削除に対応など
+	ComplementSihatsuStdOpeTime、ComplementSyuuchakuStdOpeTimeを見直し、経由無し削除に対応など
+	ChangeOperation-Before/After-Data/Type-Next/Prevを追加
+	ChangeOperationBefore/AfterJikokuを追加
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWndJikokuhyou.cpp
+	駅作業表示欄、種別変更表示欄に対応
+	始発駅作業欄の三行化に対応
+	カスタマイズ時刻表に対応
+	AllTrack絡みを削除
+DiagramEdit\ViewJikokuhyou\CDlgEkijikokuProp.cpp
+	駅作業部分切り離しによるスリム化
+	経由無し削除に対応
+DiagramEdit\ViewJikokuhyou\CDlgOperationProp.cpp
+	駅作業変更に伴い新規追加
+DiagramEdit\ViewJikokuhyou\CDlgOuJikokuhyouCsvExport.cpp
+	カスタマイズ時刻表に対応
+DiagramEdit\ViewJikokuhyou\CJikokuhyouDoc.cpp
+	カスタマイズ時刻表に対応
+DiagramEdit\ViewJikokuhyou\CPropEditUI_Ekijikoku.cpp
+	駅作業部分切り離しによるスリム化
+	経由無し削除に対応
+DiagramEdit\ViewJikokuhyou\CPropEditUI_Operation.cpp
+	駅作業変更に伴い新規追加
+	
+DiagramEdit\ViewOperationTable\OperationTableColSpec\CdOperationTableYColSpec.h
+	運用機能アップデートに対応
+DiagramEdit\ViewOperationTable\OperationTableColSpec\CdOperationTableYColSpecCont.cpp
+	運用機能アップデートに対応
+DiagramEdit\ViewOperationTable\CconvOperationTableCsv.cpp
+	運用機能アップデートに対応
+DiagramEdit\ViewOperationTable\CDlgOperationTableCsvExport.cpp
+	運用機能アップデートに対応
+DiagramEdit\ViewOperationTable\CWndDcdGridOperationTable.cpp
+	運用機能アップデートに対応
+	種別欄横幅を、種別名長に合わせた可変に変更
+	
+DiagramEdit\ViewRessyasyubetsu\CWndDcdGridRessyasyubetsu.cpp
+	種別番号欄を二桁に変更
+	
+DiagramEdit\ViewRosen\CDlgDiaList.cpp
+	ダイヤの複製を追加(OnBottonCopy)
+DiagramEdit\ViewRosen\CDlgRosenFileProp_Rosen.cpp
+	運用機能アップデートに対応
+DiagramEdit\ViewRosen\CDlgRosenView.cpp
+	カスタマイズ時刻表に対応
+DiagramEdit\ViewRosen\CRosenViewTreeCtrl.cpp
+	カスタマイズ時刻表に対応
+	
+DiagramEdit\CDiagramEditDoc.cpp
+	getCF_CentDedOperation、CentDedOperation_To_Cliboard、CentDedOperation_From_Cliboard、CentDedOperation_IsClipboardFormatAvailableを追加
+	CentDedOperationTable_To_Cliboardを運用機能アップデートに対応
+DiagramEdit\DiagramEdit.cpp
+	openCJikokuhyouDocをカスタマイズ時刻表に対応
+	createCconvJikokuhyouCsvを駅作業変更に対応
+	createCconvJikokuhyouCustomizeCsvをカスタマイズ時刻表向けに追加
+	
+	
+Ver1.04.09
+DiagramEdit\entDed\CentDedRosen.cpp
+	invertにおいて、番線の下り略称と上り略称の入換動作を追加
+	
+DiagramEdit\entDed\CDedOperationConnecter.cpp
+	SearchRessyaListにおいて、任意の列車の始発駅・番線と終着駅・番線が、環状線等の理由により一致していた場合に、
+	次列車探索のため終着駅側を取得したいのに、始発駅側に引っかかってしまいNULLを返していたものを修正。
+		
+DiagramEdit\ViewEki\CWndDcdGridEki.cpp
+	OnEditEkiInvert_Processにおいて、路線外発着駅欄の表示設定を入れ替えるため、
+	発行するコマンドを、CRfEditCmd_RosenからCRfEditCmd_RosenFileDataに変更し、入れ替え動作を追加。
+
+
+Ver1.04.08
+DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_Eki.cpp
+	AdjustBrunchLoopContの実行位置を変更
+DiagramEdit\entDed\CentDedRosen.cpp
+	路線のコピーを行ったときに、AdjustBrunchLoopContを実行するように変更
+
+DiagramEdit\entDed\CentDedRosen.cpp
+	invert(駅の反転)で、下り・上りダイヤ別名を入れ替えるように変更
+
+DiagramEdit\entDgr\CentDedDgrDia.cpp
+	m_iOriginExtraDisplaySpaceとm_iTerminalExtraDisplaySpace要素を追加
+	readCentDedRosen_06_updateEkiContForOperationで、m_iOriginExtraDisplaySpaceとm_iTerminalExtraDisplaySpaceの設定を追加、代わりに、起点・終点駅での、駅番線スペースとしての余白確保を無くした。
+	駅のY座標をもとめる各種関数で、m_iOriginExtraDisplaySpace、m_iTerminalExtraDisplaySpaceに対応
+DiagramEdit\entDgr\CentDedDgrRessya.cpp
+	readCentDedRessya_10_updateXPosNextで、次列車方向を求める方法を刷新。反転駅設定を踏まえるように。
+	
+DiagramEdit\ViewDiagram\CDcdDiagram.cpp
+DiagramEdit\ViewDiagram\CDcdDiagram2.cpp
+	罫線描画を、m_iOriginExtraDisplaySpaceとm_iTerminalExtraDisplaySpaceに対応
+	
+DiagramEdit\ViewDiagram\CRessyaDraw.cpp
+	次列車への接続線を、反転駅設定に対応(ConnectNextNoDisplayDrawなど)
+	
+	
+Ver1.04.07
+DiagramEdit\entDed\CDedOperationConnecter.cpp
+	!isnullで時刻が無い列車への対応
+DiagramEdit\entDed\CentDedRessya.cpp
+	pasteEkiJikokuで空行及び時刻が無い列車へ実行した時にエラー落ちする問題を修正
+	空行へ実行した時に、m_bisnullが更新されない問題を修正
+	
+	
+Ver1.04.06
+DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_Eki.cpp
+DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_Rosen.cpp
+DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_RosenFileData.cpp
+	adjustBrunchLoopCont処理を追加
+DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_DedRosenFileDataProp.cpp
+	EnableOperation項目を変更
+	
+DiagramEdit\entDed\CDedOperationConnecter.cpp
+	operationConnectLightを追加。その補助となるInsertRessyaList,SearchRessyaListを追加
+	構造体RessyaListを追加。
+	EnableOperationによる動作分岐を追加
+	operationConnect2を作成(未使用)
+DiagramEdit\entDed\CentDedEki.h
+	m_iBrunchLoopPosition, m_iEkiIndexBrunchOriginSide,m_iEkiIndexLoop,m_iEkiIndexBrunchTerminalSideを追加、分岐・環状線設定による、駅の繋がりのマップを各駅で保存するように。
+	上記要素の読み込み書き出しを追加。
+DiagramEdit\entDed\CentDedEkiCont.h
+	searchEkiIndexBrunchLoopを追加、従来のgetEkiIndexBrunchLoopを引継ぎ。
+	getEkiIndexBrunchLoopを変更、各CentDedEkiから要素を読み込むように。
+	adjustBrunchLoopContを追加
+DiagramEdit\entDed\CentDedRosen.cpp
+	Insert(路線の組み入れ)で、上り列車の駅扱い・時刻処理が正しくできていなかった問題を修正。
+	Insertで、分岐を含む路線を組み入れる時に、分岐駅設定がずれてしまう問題を修正。
+	EnableOperationをint型にして、軽量モードに対応
+DiagramEdit\entDed\CconvCentDed.cpp
+	CentDedEkiCont_From_OuPropertiesTextにadjustBrunchLoopContを追加
+	EnableOperationの読み書きを変更
+	
+DiagramEdit\ViewRosen\CDlgRosenFileProp.cpp
+	EnableOperationの設定関係を変更
+DiagramEdit\ViewRosen\CDlgRosenFileProp_Rosen.cpp
+	EnableOperationの設定関係を変更
+	
+
+Ver1.04.05
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWndJikokuhyou.cpp
+	execCdModifyEkijikokuCmdの分岐駅・環状線の駅扱い・番線の補正動作において、列車の駅扱いが全て運行無し(NULL列車)の場合、エラー落ちする問題を修正(配列への不正アクセスが原因)
+	
+Ver1.04.04
+DiagramEdit\DiagramEdit\DiagramEdit.cpp
+	writeCDiagramEditProp,readCDiagramEditPropを追加(設定ファイルへのバックアップ有効無効の読み書き)
+DiagramEdit\DiagramEdit\CDiagramEditDoc.cpp
+	m_ttPrevBackup(前回のバックアップ時刻)、m_strBackupPathName(現在のバックアップファイルの絶対パス)、
+	m_bBackupEnable(自動バックアップが有効か否か)の3変数を追加
+	getBackupEnable、setBackupEnableを追加
+	backupを追加(バックアップ実行の本体部)
+	executeEditCmdにbackupの呼び出しを追加
+	OnNewDocumentにバックアップ関係の処理を追加
+	DeleteContentsにバックアップ関係の処理を追加
+	OnOpenDocumentにバックアップ関係の処理を追加
+	OnSaveDocumentにバックアップ関係の処理を追加
+	
+DiagramEdit\DiagramEdit\CMainFrame.cpp
+	バックアップ有効無効の設定関連を追加
+	
+DiagramEdit\DedRosenFileData\CconvCDedRosenFileData.cpp
+	FileTypeを更新(OudiaSecond1.05)
+	
+DiagramEdit\entDed\CconvCentDed.cpp
+	駅の読み書き項目に、NextEkiDistance(次駅までの距離)と、JikokuhyouTrackOmit(番線編集モードにおける番線欄省略設定)を追加
+DiagramEdit\entDed\CentDedEki.cpp
+	m_iNextEkiDistance(次駅までの距離)と、m_bJikokuhyouTrackOmit(番線編集モードにおける番線欄省略設定)を追加
+DiagramEdit\entDed\CentDedEkiCont.cpp
+	CdDedEkiにm_bJikokuhyouTrackOmitを追加
+DiagramEdit\entDed\CentDedRosen.cpp
+	insert、createSubRosen、invertにm_iNextEkiDistance(次駅までの距離)の処理を追加。
+	
+DiagramEdit\entDgr\CentDedDgrDia.cpp
+	readCentDedRosen_02_updateEkiContに、次駅までの距離が設定されている場合の処理を追加
+	
+DiagramEdit\ViewEki\CDlgEkiProp.cpp
+	次駅までの距離と番線表示省略の設定項目を追加
+DiagramEdit\ViewEki\CPropEditUi_Eki.cpp
+	次駅までの距離と番線表示省略の設定項目を追加
+	
+DiagramEdit\ViewJikokuhyou\JikokuhyouColSpec\CdYColSpecCont.cpp
+	番線表示省略時の処理を追加
+
+
+Ver1.04.03
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu.cpp
+	運用番号欄から、Enter/ダブルクリックで運用表へ移動するように設定
+DiagramEdit\ViewOperationTable\CWndDcdGridOperationTable.cpp
+	時刻表へ移動し編集を追加
+	Enter/Shift+Enter/ダブルクリック/キー入力で時刻表へ移動する機能を追加
+	基本フォントを時刻表ビュー1に変更
+	列車番号列と駅時刻列の最低幅を、タイトル文字が隠れないように設定
+	
+DiagramEdit\entDgr\CentDedDgrDia.cpp
+	getDgrEkiTrackDisplaySpaceで、iEkiIndexの値が範囲外にある場合の例外処理を追加。
+	
+DiagramEdit\entDed\CentDedRosen.cpp
+	insertでCentDedRessyaTrackのシフト作業が抜けていたのを修正、駅併合の番線処理を追加
+	createSubRosenで、路線外発着設定時に、始発駅の着時刻・終着駅の発時刻を消していたのを残すように修正(setSihatsuEkiを使わず、ループで新始発駅より前の時刻を一駅ずつ消去。終着側も同)
+	
+DiagramEdit\ViewRosen\CDlgRosenFileProp_Diagram.cpp
+DiagramEdit\ViewRessyasyubetsu\CDlgRessyasyubetsuProp.cpp
+DiagramEdit\ViewOperationTable\CDlgOperationTableCsvExport.cpp
+DiagramEdit\ViewRosen\CDlgDiaProp.cpp
+DiagramEdit\ViewEki\CDlgEkiProp.cpp
+DiagramEdit\ViewDiagram\CDlgDiagramViewProp.cpp
+	ダイアログのコンボボックスの選択肢を、各部品のプロパティで予め設定しておくのではなく、initdialogでの入力に変更
+	(もしかしたらこれで、海外環境における文字化けが無くせるかもしれないが、確認のしようがないので……)
+	
+Ver1.04.02
+DiagramEdit\entDed\CDedOperationConnecter.cpp
+	RessyaConnectCheckで途中駅でホーム一致、時刻がBeforeとCurrentの間の場合に、Currentを上書きし暫定次列車を空にする作業を行うか否かの条件式のバグを修正(探索中の列車が、Currentの列車と一致する場合は行わないが、この判定式が間違っていた)
+	
+Ver1.04.01
+DiagramEdit\ViewJikokuhyou\CPropEditUI_Ekijikoku.cpp
+	入換時刻(始発)の、連動動作を変更。
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWndJikokuhyou.cpp
+	基準運転時分を用いた始発/終着駅変更コマンドを追加
+	連続時刻移動(起点側を修正)のコマンドを追加
+	基準運転時分に合わせる(起点側を修正)のコマンドを追加
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState.cpp
+	基準運転時分を用いた始発/終着駅変更コマンドを追加
+	連続時刻移動(起点側を修正)のコマンドを追加
+	基準運転時分に合わせる(起点側を修正)のコマンドを追加
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu.cpp
+	基準運転時分を用いた始発/終着駅変更コマンドを追加
+	連続時刻移動コマンドに、起点側を修正版コマンドの実行部を追加
+	基準運転時分に合わせるコマンドに、起点側を修正版コマンドの実行部を追加
+	
+DiagramEdit\entDed\CentDedRessya.cpp
+	modifyRessyaJikokuRevを追加、指定時刻Orderより起点側の時刻を変更する
+	
+	
+Ver1.04
+DiagramEdit\DiagramEdit
+	getCFileDialogFilterOpenを更新、oud2ファイルとoudファイルをまとめて表示するように変更
+	writeCWndDiagramViewProp、readCWndDiagramViewPropに親種別機能の有効無効設定を追加
+	writeCWndJikokuhyouViewProp、readCWndJikokuhyouViewPropに親種別機能の有効無効設定を追加
+	writeCWndDcdGridOperationTableViewProp、readCWndDcdGridOperationTableViewPropに親種別機能の有効無効設定を追加
+DiagramEdit\CMainFrame.cpp
+	OnFileRosenCreateSubRosen_Process(路線ファイルの切り出し)で、範囲外を路線外発着にするか否かのパラメータを追加
+	
+DiagramEdit\ViewRosen\CDlgRosenFileProp.cpp
+	m_strKudariDiaAlias、m_strNoboriDiaAlias(下り・上りダイヤ別名)を追加
+DiagramEdit\ViewRosen\CDlgRosenFileProp_Diagram.cpp
+	m_iEDIT_DiagramDisplayOuterTerminal(ダイヤグラムにおける路線外発着の表示形式)を追加
+DiagramEdit\ViewRosen\CDlgRosenFileProp_Rosen.cpp
+	m_bEDIT_DisplayOuterTerminalO、m_bEDIT_DisplayOuterTerminalT(時刻表における路線外発着欄の表示有無)を追加
+	m_strEDIT_KudariDiaAlias、m_strEDIT_NoboriDiaAlias(下り・上りダイヤ別名)を追加
+DiagramEdit\ViewRosen\CDlgRosenView.cpp
+	下り・上りダイヤ別名表示に対応
+DiagramEdit\ViewRosen\CDlgRosenCreateSubRosen.cpp
+	OnFileRosenCreateSubRosen_Process(路線ファイルの切り出し)で、範囲外を路線外発着にするか否かのパラメータを追加
+	
+DiagramEdit\ViewRessyasyubetsu\CWndDcdGridRessyasyubetsu.cpp
+	親種別表示欄追加に対応
+	切り取り・消去コマンドを、親種別に指定されている種別では実行できないように変更
+	切り取り・消去コマンドで、その種別が列車に使用されていることを示すメッセージを、下り・上りダイヤ別名に対応。
+	種別のプロパティを開くとき、親種別欄にフォーカスがある場合の動作を追加
+	親種別表示欄追加に伴い、列車種別の変更・入替があった際の表示更新動作を変更
+DiagramEdit\ViewRessyasyubetsu\CDlgRessyasyubetsuProp.cpp
+	親種別の編集を追加
+	ダイアログオープン時のフォーカス位置に、親種別設定を追加
+DiagramEdit\ViewRessyasyubetsu\CPropEditUi_Ressyasyubetsu.cpp
+	親種別の編集を追加
+DiagramEdit\ViewRessyasyubetsu\RessyasyubetsuColSpec\CdRessyasyubetsuXColSpec.h
+	親種別表示欄のColumnTypeを追加
+DiagramEdit\ViewRessyasyubetsu\RessyasyubetsuColSpec\CdRessyasyubetsuXColSpecCont.cpp
+	親種別表示欄のColumnTypeを追加
+	
+DiagramEdit\ViewEki\CWndDcdGridEki.cpp
+	番線数表示欄追加に対応
+	execEkiPropDlgに、路線外発着駅名の編集用のマップを追加
+DiagramEdit\ViewEki\CDlgEkiProp.h
+	路線外発着駅名の編集用のマップを追加
+	路線外発着駅名編集コマンドを追加
+	反転駅設定を追加
+	駅番線リストをダブルクリックするとプロパティ編集する機能を追加
+	上り番線略称を追加
+DiagramEdit\ViewEki\CPropEditUi_Eki.cpp
+	路線外発着駅名設定を追加
+	反転駅設定を追加
+	上り番線略称を追加
+DiagramEdit\ViewEki\CDlgOuterEkimeiProp.cpp
+	路線外発着駅名設定のために新規追加
+DiagramEdit\ViewEki\CDlgEkiTrack2Prop2.cpp
+	上り番線略称を追加
+DiagramEdit\ViewEki\EkiColSpec\CdEkiXColSpec.h
+	番線数表示欄のColumnTypeを追加
+DiagramEdit\ViewEki\EkiColSpec\CdEkiXColSpecCont.cpp
+	番線数表示欄のColumnTypeを追加
+	
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWndJikokuhyou.cpp
+	列車番号・号数のコピーペーストによる加算機能を追加
+	親種別表示を追加
+	路線外発着表示欄に対応
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu.cpp
+	路線外発着表示欄に対応
+	列車番号・号数のコピーペーストによる加算機能を追加
+	連続時刻修正コマンドを路線外発着駅欄に対応
+	始発終着駅作業欄での連続時刻修正コマンドを路線外発着に対応
+	一部のコマンドを、フォーカスが番線にある状態で実行できるように変更
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilder.cpp
+	路線外発着表示欄に対応
+	親種別表示に対応
+	始発終着駅名表示を、路線外発着に連動するように変更
+	始発終着駅作業欄を路線外発着に対応
+	路線外発着時、運行無しの駅で「||」を表示するように変更
+	上り番線略称に対応
+DiagramEdit\ViewJikokuhyou\JikokuhyouColSpec\CdYColSpec.h
+	路線外始発終着駅欄に対応
+DiagramEdit\ViewJikokuhyou\JikokuhyouColSpec\CdYColSpecCont.cpp
+	路線外始発終着駅欄に対応
+DiagramEdit\ViewJikokuhyou\CDlgEkijikokuProp.cpp
+	路線外発着に対応
+DiagramEdit\ViewJikokuhyou\CPropEditUI_Ekijikoku.cpp
+	路線外発着に対応
+DiagramEdit\ViewJikokuhyou\CDlgJikokuhyouViewProp.cpp
+	列車番号・号数のコピーペーストによる加算機能に対応
+	
+DiagramEdit\ViewOperationTable\CWndDcdGridOperationTable.cpp
+	親種別表示に対応
+DiagramEdit\ViewOperationTable\CDlgOperationTableCsvExport.cpp
+	親種別表示に対応
+DiagramEdit\ViewOperationTable\CconvOperationTableCsv.cpp
+	親種別表示に対応
+	
+DiagramEdit\ViewDiagram\CDcdDiagram.cpp
+	路線外発着駅名の表示形式を追加
+DiagramEdit\ViewDiagram\CDcdDiagram2.cpp
+	親種別表示設定に対応
+DiagramEdit\ViewDiagram\CRessyaDraw.cpp
+	親種別表示に対応
+	反転駅設定に対応
+	路線外発着に対応
+	
+DiagramEdit\entDed\CconvCentDed.cpp
+	路線外発着駅名の読み書きに対応
+	反転駅設定の読み書きに対応
+	親種別設定の読み書きに対応
+	始発終着駅作業への路線外発着追加に対応
+	下り・上りダイヤ別名の読み書きに対応
+	上り番線略称を追加
+DiagramEdit\entDed\CentDedDia.cpp
+	isExistRessyaOfOuterTerminal(路線外発着駅を使用している列車が存在するかを調べる機能)を追加
+	adjustBrunchLoopOuterTerminal(駅編集での路線外発着変更を列車に反映する機能)を追加
+DiagramEdit\entDed\CentDedDiaCont.cpp
+	isExistRessyaOfOuterTerminal(路線外発着駅を使用している列車が存在するかを調べる機能)を追加
+	adjustBrunchLoopOuterTerminal(駅編集での路線外発着変更を列車に反映する機能)を追加
+DiagramEdit\entDed\CentDedEki.cpp
+	m_bBrunchOpposite,m_bLoopOppositeを追加
+	m_strOuterTerminalEkimeiを追加
+DiagramEdit\entDed\CentDedEkiCont.cpp
+	CdDedEkiにm_strOuterTerminalEkimeiを追加
+	isSameBrunchLoopGroupを追加
+DiagramEdit\entDed\CentDedEkiTrack2.cpp
+	上り番線略称を追加
+DiagramEdit\entDed\CentDedEkiTrack2Cont.cpp
+	上り番線略称に対応
+DiagramEdit\entDed\CentDedRessya.cpp
+	貼り付け時に列車番号・号数を加算する機能を追加
+	isExistRessyaOfOuterTerminal(路線外発着駅を使用している列車が存在するかを調べる機能)を追加
+	adjustBrunchLoopOuterTerminal(駅編集での路線外発着変更を列車に反映する機能)を追加
+DiagramEdit\entDed\CentDedRessyaCont.cpp
+	isExistRessyaOfOuterTerminal(路線外発着駅を使用している列車が存在するかを調べる機能)を追加
+	adjustBrunchLoopOuterTerminal(駅編集での路線外発着変更を列車に反映する機能)を追加
+DiagramEdit\entDed\CentDedRessyasyubetsu.cpp
+	m_iParentSyubetsuIndexを追加
+DiagramEdit\entDed\CentDedRessyasyubetsuCont.cpp
+	列車種別の追加・削除による親種別Indexの調整を追加
+DiagramEdit\entDed\CentDedRessyaTrack.cpp
+	作業に路線外発着を追加
+	路線外発着の属性読み書きを追加
+DiagramEdit\entDed\CentDedRosen.cpp
+	m_strKudariDiaAlias、m_strNoboriDiaAliasを追加
+	adjustBrunchLoopOuterTerminal(駅編集での路線外発着変更を列車に反映する機能)を追加
+	swapRessyasyubetsuを親種別機能に対応
+	createSubRosenに、切り出し範囲外を路線外発着にするか否かのパラメータ及び、
+	路線外発着にする処理を追加
+DiagramEdit\entDed\CRessyaContUnifier.cpp
+	路線外発着に対応
+	
+DiagramEdit\entDgr\CentDedDgrDia.cpp
+	calcDgrPosRessyaTrackChakuOpposite、calcDgrPosRessyaTrackHatsuOppositeを追加(反転駅設定に用いる)
+	readCentDedRosen_02_updateEkiContで反転駅設定絡みを追加
+DiagramEdit\entDgr\CentDedDgrEki.cpp
+	m_bBrunchOpposite、m_bLoopOpposite、m_bIncludeOppositeを追加
+	m_strOuterTerminalEkimeiを追加
+	上り番線略称に対応
+DiagramEdit\entDgr\CentDedDgrEkiCont.cpp
+	CdDedDgrEkiにm_bBrunchOpposite、m_bLoopOpposite、m_bIncludeOppositeを追加
+DiagramEdit\entDgr\CentDedDgrRessya.cpp
+	m_iNexthoukouの定義変更、反転駅設定に対応
+	路線外発着に対応
+	updateRessyaTrackLine、updateRessyaTrackLineNoDisplayを変更、反転駅設定に対応
+DiagramEdit\entDgr\CentDedDgrRessyaTrack.h
+	路線外発着に対応
+DiagramEdit\entDgr\CentDedDgrRessyaTrackLine.cpp
+	m_iChakuOperation、m_iHatsuOperationの定義変更、路線外発着・反転駅設定に対応
+DiagramEdit\entDgr\CentDedDgrEkiTrack2.h
+	上り番線略称を追加
+	
+DiagramEdit\DedRosenFileData\CconvCdDedDispProp.cpp
+	路線外発着表示(起点側・終点側・ダイヤグラム形式)を追加
+DiagramEdit\DedRosenFileData\CdDedDispProp.cpp
+	路線外発着表示(起点側・終点側・ダイヤグラム形式)を追加
+DiagramEdit\DedRosenFileData\CconvCDedRosenFileData.cpp
+	FileTypeの値を更新(OuDiaSecond.1.04)
+	
+DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_DedRosenFileDataProp.cpp
+	下り・上りダイヤ別名に対応
+DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_Eki.cpp
+	路線外発着駅名の編集に対応
+	
+DiagramEdit\ConvJikokuhyouCsv\CconvJikokuhyouCsv.cpp
+	上り番線略称に対応
+	親種別機能に対応
+	
+	
+	
+	
+Ver1.03.01
+	リソースのIDR_MENU_RESSYASYUBETSUVIEW_CONTEXT(列車種別ビューにおける右クリックメニュー)の「コピー」に対応するコマンドが、切り取りになっていたのをコピーに修正。
+	
+-----------------------------------------------------------------------------------------
+Ver1.02.90β～1.03
+ソースコード全般
+	std::stringをtstringに置き換え(tstringは文字セットにより、stringとwstringに自動切り替えする)
+	charをTCHARに置き換え
+	文字列に_T()を付与
+	その他全般をマルチバイト・ワイド文字両対応化
+\DiagramEdit\DiagramEdit\DiagramEdit
+	openCOperationTableDocを作成
+	getCFileDialogFilterSaveを、oud形式出力に再対応
+	createCconvOperationTableCsv(運用表CSV出力に関する項目)を作成
+	writeCWndJikokuhyouViewProp及びreadCWndJikokuhyouViewPropに始終着駅名表示およびコロン付き時刻表示の設定を追加
+	CDiagramEditAppに運用表ビュー項目を追加
+	InitInstanceに運用表ビュー項目を追加
+	writeCWndDcdGridOperationTableViewProp、readCWndDcdGridOperationTableViewPropを追加
+\DiagramEdit\DiagramEdit\CDiagramEditDoc
+	UpdateAllSubDocviewsに、運用表ビューに対する操作を追加(運用機能OFF時、ダイヤ削除時、該当運番の列車が無くなったときに、ビューを閉じる)
+	CentDedRessyaCont_From_Cliboardに、番線Indexを番線数内に抑えるための仕組みの一部を追加
+	OnSaveDocumentに、oud出力を再実装、oudとoud2で、ANSIとUTF-8の文字コード使い分けを追加
+	CentDedOperationTable_To_Cliboard(運用表内容をテキスト形式でコピーする機能)を追加
+\DiagramEdit\DiagramEdit\ViewRosen\CDlgRosenView
+	βで一度有効にした、ツリーからの番線設定オープンをコメントアウト
+\DiagramEdit\ViewRosen\CRosenViewTreeCtrl
+	βで一度有効にした、ツリーからの番線設定オープンをコメントアウト
+\DiagramEdit\ViewRosen\CDlgRosenFileProp.cpp
+	運用機能の有効無効設定を追加
+\DiagramEdit\ViewRosen\CDlgRosenFileProp_Diagram.cpp
+	ダイヤグラムの既定の駅間幅の設定下限を30秒に変更
+\DiagramEdit\ViewRosen\CDlgRosenFileProp_Rosen.cpp
+	運用機能の有効無効設定を追加
+	列車名の表示非表示設定を追加
+	列車表示幅の設定上限を9に変更
+\DiagramEdit\ViewRosen\CDlgDiaList.cpp
+	ダイヤを新規作成するとき、既存ダイヤの最下部のダイヤの背景色設定をデフォルトにするように変更
+	
+\DiagramEdit\ViewRessyasyubetsu\CWndDcdGridRessyasyubetsu.cpp
+	種別背景色を列車種別ビューで確認できるように変更
+\DiagramEdit\ViewRessyasyubetsu\CDlgRessyasyubetsuProp.cpp
+	種別背景色確認欄の追加に伴う、ダイアログを開いた時のフォーカス設定を変更
+\DiagramEdit\ViewRessyasyubetsu\RessyasyubetsuColSpec\CdRessyasyubetsuXColSpec.h
+	種別背景色確認欄を追加
+	
+\DiagramEdit\ViewJikokuhyou\CPropEditUI_Ekijikoku.cpp
+	始終着駅作業のダイアログ挙動を変更、終着駅で運用番号を入力不可にするなど
+\DiagramEdit\ViewJikokuhyou\CDlgOuJikokuhyouCsvExport.cpp
+	コロン付き時刻表示に対応
+\DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWndJikokuhyou.cpp
+	始終着駅表示・コロン付き時刻表示の設定を追加
+	列車名表示・運用機能・始終着駅表示・コロン付き時刻表示による表示変化に対応
+	updateUI_ReplaceRessyaAndAllOperationNumberを追加、運用有効時用
+	updateUI_AllOperationNumberを追加、運用有効時の、編集した列車と逆方向用
+	OnFileExportJikokuhyoucsv_Processをコロン付き時刻表示に対応
+	運用機能に付随するコマンド(運用表オープン・次列車移動等)を追加
+	始終着駅作業表示を、画面上部に固定表示するように変更
+\DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState.cpp
+	運用機能に付随するコマンド(運用表オープン・次列車移動等)を追加
+\DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu.cpp
+	OnUpdate_CentDedRessyaに、運用機能有効時向けの表示更新機構を追加
+	execCDlgRessyaPropを、列車名表示・運用機能・始終着駅表示により列番号が不定になることへ対応
+	execCDlgEkijikokuPropを、新規列車やNULL列車で無効になるように変更
+	運用機能に付随するコマンド(運用表オープン・次列車移動等)を追加
+	始終着駅作業欄での、連続時刻修正コマンド使用時の挙動を変更。作業そのものの変更の追加etc
+	「基準運転時分に合わせる」コマンドを、始終着駅作業及び番線欄で使用した場合の動作追加、入換時刻リセット、番線を基準番線にする。
+	execCDlgEkijikokuPropに、番線初期値取得を追加、
+	運用番号ソート、番線ソート呼び出しを追加
+\DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Renzoku.cpp
+	OnChar、OnJikokuhyouTsuuka_Process、OnJikokuhyouTsuukateisya_Processに番線初期値取得を追加。
+\DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilder.cpp
+	運用機能・始終着駅表示・コロン付き時刻表示に対応
+	updateAllRessyaをマルチスレッド対応
+	updateAllOperationNumberを追加、全列車の運用番号欄のみ更新する、運用機能有効時に使用
+	replaceRessyaAndAllOperationNumberを追加、replaceRessyaとupdateAllOperationNumberを実行
+\DiagramEdit\ViewJikokuhyou\JikokuhyouColSpec\CdYColSpec.h
+	運用番号、始発駅名、終着駅名の項目を追加
+\DiagramEdit\ViewJikokuhyou\JikokuhyouColSpec\CdYColSpecCont.cpp
+	運用機能、始終着駅名表示、列車名表示による表示列の変動に対応
+	
+ViewOperationTableフォルダ内は全て新規追加
+	COperationTableView.cpp、COperationTableDoc.cpp
+		おまじないのようなもの。
+	CWndDcdGridOperationTable.cpp
+		運用表表示の細部
+		運用の抽出から、表示、時刻表・ダイヤグラムへの移動機構、CSV出力コマンドなど
+	OperationTableColSpec内
+		運用表の列番号の対応表
+	CDlgOperationTableCsvExport.cpp
+		CSV出力のダイアログ処理
+	CconvOperationTableCsv.cpp
+		運用表をCSV形式へ変換
+		
+\DiagramEdit\ViewDiagram\cdeddiagramview.cpp
+	OnUpdate_CentDedRessya、OnUpdate_CentDedRessya_AllにupdateRessyaTrackLineNoDisplay(在線表非表示駅における折り返し線等の表示)を追加
+	
+\DiagramEdit\ViewDiagram\CRessyaDraw.cpp
+	RessyaTrackLineDrawを運用機能に対応(次列車までの接続横線etc)
+	在線表表示なし駅向けの表示(支線直通への補助線etc)
+	OperationNumberDrawを追加
+	ConnectNextNoDisplayDraw(在線表表示なし駅での、折り返し接続曲線)を追加
+\DiagramEdit\ViewDiagram\CDcdDiagram.cpp
+	ダイヤグラムの罫線のうち、表示領域外を切り捨てる処理を修正。
+	
+\DiagramEdit\ViewEki\CWndDcdGridEki.cpp
+	OnEditPaste_Processにおいて、貼り付ける駅の分岐・環状線設定を解除してから貼り付けるように変更
+	execEkiPropDlgに駅番線編集のための仕組みを追加
+\DiagramEdit\ViewEki\CDlgEkiProp.cpp
+	駅番線編集の仕組みを追加、主本線設定を駅番線編集側に移行
+\DiagramEdit\ViewEki\CPropEditUi_Eki.cpp
+	駅番線編集の仕組みを追加、主本線設定を駅番線編集側に移行
+\DiagramEdit\ViewEki\CDlgEkiTrack2Prop2.cpp
+	駅番線編集用のダイアログ処理、ViewEkiTrack2からコピーして使用
+	
+\DiagramEdit\entDed\CconvCentDed.cpp
+	CentDedRessyaTrack_From_stringでその駅の番線数を超える番線Indexが設定されていた場合、主本線に仮設定する。
+		及びそのために、各駅の番線数を把握するための引数を、呼び出し元含めて追加。
+	CentDedRessyaCont_From_OuPropertiesTextで列車の読み取りをマルチスレッド対応
+	CentDedRosen_To_OuPropertiesText及びCentDedRosen_From_OuPropertiesTextに運用機能の有効無効設定を追加
+	CentDedRessya_To_stringで、運用番号を書き出す機能を呼び出し元含めて追加。
+\DiagramEdit\entDed\CconvCentDedOud.cpp
+	Oud出力再実装のために追加
+\DiagramEdit\entDed\CdDedRessyaProperty.h
+	ダイヤ内の列車を特定するための要素を保持するクラス。
+	列車方向とIndex、及び時刻の要素を持ちます。
+	運用接続や運用表作成などに用いました。
+\DiagramEdit\entDed\CDedOperationConnecter.cpp
+	運用接続。始終着駅作業や番線情報を用いて、運用を確定します。
+	OperationUpdate	既に運用が作られている状態から、列車を編集した時、運用探索範囲を狭めることで探索速度を削減します。
+\DiagramEdit\entDed\CentDedRosen.cpp
+	m_bEnableOperation(運用機能の有効無効設定)を追加
+	OperationConnectを追加、CDedOperationConnecterを呼び出す関数
+	adjustBrunchLoopEkiTrack2を追加、駅番線編集を駅編集に統合したことによる、処理変更。
+\DiagramEdit\entDed\CentDedEkiCont.cpp
+	adjustBrunchLoopEkiTrack2を追加、駅番線編集を駅編集に統合したことによる、処理変更。
+	adjustBrunchLoopByBrunchEditを変更、コードの冗長部を変更。
+	adjustBrunchLoopByLoopEditを変更、コードの冗長部を変更。
+\DiagramEdit\entDed\CentDedDiaCont.cpp
+	adjustBrunchLoopEkiTrack2を追加、駅番線編集を駅編集に統合したことによる、処理変更。
+\DiagramEdit\entDed\CentDedDia.cpp
+	adjustBrunchLoopEkiTrack2を追加、駅番線編集を駅編集に統合したことによる、処理変更。
+	m_bWaitOperationUpdate及び読み書き関数を追加、時刻表における運用更新抑止に使用。
+	adjustBrunchLoopByBrunchEditを変更。
+	adjustBrunchLoopByLoopEditを変更。
+\DiagramEdit\entDed\CentDedRessyaCont.cpp
+	adjustBrunchLoopEkiTrack2を追加、駅番線編集を駅編集に統合したことによる、処理変更。
+\DiagramEdit\entDed\CentDedRessya.cpp
+	adjustBrunchLoopEkiTrack2を追加、駅番線編集を駅編集に統合したことによる、処理変更。
+	m_strOperationNumberAssignedを追加
+	m_iRessyaidxOut・m_eRessyahoukouOutを追加、この列車に運用番号が割り当てられている場合、その運用の出区列車の方向とIndexを格納する。
+	m_iRessyaidxNext・m_eRessyahoukouNextを追加、この列車に運用番号が割り当てられている場合、この列車から繋がる次の列車の方向とIndexを格納する
+\DiagramEdit\entDed\CentDedRessyaTrack.cpp
+	setの処理を一部変更、Operationに合わせて、入換番線等を定めるように。
+\DiagramEdit\entDed\CRessyaContUnifier.cpp
+	列車番号での一本化の条件に、種別が一致することを追加
+\DiagramEdit\entDed\CDedRessyaSoater_OperationNumber.cpp
+	運用番号によるソートの本体部、新規追加
+\DiagramEdit\entDed\CDedRessyaSoater_RessyaTrack.cpp
+	番線によるソートの本体部、新規追加
+	
+\DiagramEdit\entDgr\CentDedDgrDia.h
+	m_bEnableOperationを追加
+	calcDgrPosRessyaTrackNext・calcDgrPosRessyaTrackNextNoDisplayを追加
+	readCentDedRosen_06_updateEkiContForOperationを追加、運用機能有効時に、折り返し線や運用番号の表示スペースを確保するため。
+	readCentDedRosen_05_updateRessyaTrackLineContを、在線表表示なし駅向けの表示に対応
+	readCentDedRessya_01_readPropに運番読み込み追加
+	readCentDedRessya_10_updateXPosNextを追加、運用機能有効時に次列車まで線を接続するために必要な値を求める
+	readCentDedRessya_03_updateDgrXZoneを次列車接続対応
+	updateRessyaTrackLineNoDisplayを追加、在線表表示なし駅向けの表示情報を作成する
+	CentDedDgrRessyaコンストラクタにbSimplifyRead引数を追加、運用接続時に、estimateRessyaを作成するときは、次列車情報等の読み取りを無効にするために使用
+	readCentDedRosen_04_updateRessyaCont及びreadCentDedRosen_05_updateRessyaTrackLineContをマルチスレッド対応
+	readCentDedRosen_04_updateRessyaContからのCentDedDgrRessya生成にbWaitOperationUpdateを追加、時刻表で運用更新抑止状態の場合に使用。
+\DiagramEdit\entDgr\CentDedDgrRessya.cpp
+	m_strOperationNumber・m_bExistBefore・m_iDgrXPosNext・m_iDgrXPosNextNoDisplay・m_iNexthoukou・m_iNexthoukouNoDisplayを追加
+	readCentDedRessya_10_updateXPosNextを追加、運用機能有効時に、次の列車の始発時刻を保持しておき、在線表の表示などに用いる。
+	0:00を跨ぐ始終着駅作業が、在線表で正しくされない問題について、作業時刻取得方法を修正。
+	readCentDedRessya_01_readPropにbWaitOperationConnect引数を追加、運用更新抑止時の処理に使用。
+	CentDedDgrRessyaコンストラクタ及びreadCentDedRessyaにbSimplifyRead、bWaitOperationConnect引数を追加
+	
+\DiagramEdit\DedRosenFileData\CconvCdDedDispProp.cpp
+	列車名表示設定を追加
+\DiagramEdit\DedRosenFileData\CdDedDispProp.cpp
+	列車名表示設定を追加
+	時刻表列車幅を9まで対応
+\DiagramEdit\DedRosenFileData\CconvCDedRosenFileData.cpp
+	getFileTypeを更新、OuDiaSecond.1.03へ
+	getFileTypeS02を追加
+\DiagramEdit\DedRosenFileData\CconvCDedRosenFileDataOud.cpp
+	Oud出力再実装のために追加
+\DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_DedRosenFileDataProp.cpp
+	運用機能の有効無効設定を追加
+	運用有効時に、OperationConnectを実行するように変更
+\DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_Eki.cpp
+	運用有効時に、OperationConnectを実行するように変更
+	駅番線編集を駅編集に統合したことによる、処理変更。
+\DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_Ressya.cpp
+	運用有効時に、変更対象ダイヤに対し、OperationUpdateを実行するように変更
+\DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_Rosen.cpp
+	運用有効時に、OperationConnectを実行するように変更
+\DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_RosenFileData.cpp
+	運用有効時に、OperationConnectを実行するように変更
+	
+\DiagramEdit\ConvJikokuhyouCsv\CconvJikokuhyouCsv.cpp
+	コロン付き時刻表示に対応
+	
+-----------------------------------------------------------------------------------------
+
+Ver1.02.03.01～1.02.03.03
+\DiagramEdit\ViewEki\CWndDcdGridEki
+	駅ビュー表示をマルチスレッド対応
+	ビュー更新動作の位置を変更(マルチスレッド対応)
+	駅編集の時、全更新するように変更
+\DiagramEdit\ViewDiagram\CRessyaDraw
+	ダイヤグラム表示の軽量化のため、ループを一元化するために作成、
+	CRessyasenDraw,CRessyajouhouDraw,CDcdDiagram_CStopMarkDraw,CRessyaTrackDraw,CEnumRessyasenを統合したもの
+	マルチスレッド対応
+\DiagramEdit\ViewDiagram\CDcdDiagram
+	列車線表示の呼び出しをCRessyaDrawに変更、
+	ダイヤの罫線描写範囲を、ウインドウ範囲でクリップするように変更(軽量化)
+	ダイヤの罫線の縦軸と横軸を別スレッドで処理するように変更
+	
+-----------------------------------------------------------------------------------------
+Ver1.02.03
+\DiagramEdit\ViewJikokuhyou\CDlgEkijikokuProp
+	入換着時刻を追加
+\DiagramEdit\ViewJikokuhyou\CPropEditUI_Ekijikoku
+	入換着時刻を追加
+\DiagramEdit\ViewDiagram\CRessyaTrackDraw
+	在線表表示を入換着時刻に対応
+\DiagramEdit\entDed\CentDedRessyaTrack
+	入換着時刻を追加
+\DiagramEdit\entDed\CconvCentDed
+	入換着時刻のファイル入出力に対応
+\DiagramEdit\entDgr\CentDedDgrRessyaTrack
+	入換着時刻を追加
+\DiagramEdit\entDgr\CentDedDgrRessyaTrackLine
+	在線表の元となるデータ構造を変更
+	
+-----------------------------------------------------------------------------------------
+Ver1.02
+\DiagramEdit\DiagramEdit\CDiagramEditDoc
+	駅番線のクリップボードへのコピーペースト関係を追加
+	WinDia形式の入出力機能を削除
+	駅を削除した時に、対応する番線ビューを閉じる機構を追加
+	旧形式ファイルをdllを通して変換する機構回りを削除
+	oud形式では上書き保存できないように変更
+	oud形式で名前を付けて保存しようとしたときは、自動で拡張子をoud2にするように変更
+	
+\DiagramEdit\DiagramEdit\DiagramEdit
+	番線ドキュメント絡みを追加
+	WinDia形式の入出力廃止及びoudファイルの扱い変更にともなう、拡張子フィルターの再構成
+	番線編集モードの設定絡みを追加
+	
+\DiagramEdit\ViewRosen\CDlgRosenViewおよびCRosenViewTreeCtrl
+	ツリービューに駅名から番線ビューを開く機能を実装予定だったが、駅名がずらずら並ぶのがあまりきれいじゃないので、
+	一時凍結、コメントアウトで残しておく。
+\DiagramEdit\ViewRosen\CDlgDiaList
+	ダイヤのプロパティダイアログ呼び出し関数に、背景色絡みを追加
+\DiagramEdit\ViewRosen\CDlgDiaProp
+	背景色とパターンの設定を追加
+\DiagramEdit\ViewRosen\CDlgRosenFileProp_Diagram
+	ダイヤグラム座標距離の設定を、秒単位に変更
+\DiagramEdit\ViewRosen\CDlgRosenFileProp_FontColor
+	時刻表背景色および基準運転時分背景色設定の追加
+\DiagramEdit\ViewRosen\CDlgRosenFileProp_Rosen
+	任意秒移動の秒数設定を、負の数を設定できるように変更
+\DiagramEdit\ViewRosen\CDlgRosenfileInsert
+	ファイル読み込みの拡張子フィルターを変更
+	
+\DiagramEdit\ViewEki\CEkiView
+	印刷時のページレイアウトに、ヘッダーフッター有無設定を反映。
+\DiagramEdit\ViewEki\CWndDcdGridEki
+	右クリックメニューから番線設定を開く機能を追加
+	分岐駅設定及び環状線設定の表示スペースを追加。
+	境界線による太線設定を、分岐駅設定を基に描写するように変更
+	切り取り及び削除コマンドを、分岐駅・環状線設定の対象であるとき無効にするように変更
+	駅編集時のビュー更新動作の変更。
+	駅編集に分岐駅、環状線関連の項目を追加
+\DiagramEdit\ViewEki\CDlgEkiProp
+	主本線設定を追加
+	分岐駅及び環状線の設定を追加
+	時刻表ビューの番線表示設定、ダイヤグラムビューの在線表表示設定を追加
+	境界線設定を削除
+\DiagramEdit\ViewEki\CPropEditUi_Eki
+	主本線設定を追加
+	分岐駅及び環状線の設定を追加
+	時刻表ビューの番線表示設定、ダイヤグラムビューの在線表表示設定を追加
+	境界線設定を削除
+\DiagramEdit\ViewEki\EkiColSpec
+	分岐駅設定及び環状線設定の表示絡みを追加。
+	
+\DiagramEdit\ViewEkiTrack2
+	番線ビュー絡みについて、すべて新規作成
+	番線ビューの表示から、設定ダイアログまで
+	
+\DiagramEdit\ViewRessyasyubetsu\CDlgRessyasyubetsuProp
+	時刻表ビューにおける種別背景色設定の追加
+	種別背景色のプレビューを追加
+\DiagramEdit\ViewRessyasyubetsu\CPropEditUi_Ressyasyubetsu
+	時刻表ビューにおける種別背景色設定の追加
+
+\DiagramEdit\ViewJikokuhyou\CJikokuhyouView
+	印刷時のページレイアウトに、ヘッダーフッター有無設定を反映。
+\DiagramEdit\ViewJikokuhyou\CDlgEkijikokuProp
+	番線設定絡みを追加
+\DiagramEdit\ViewJikokuhyou\CPropEditUI_Ekijikoku
+	番線設定絡みを追加
+\DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWndJikokuhyou
+	番線編集モードの設定追加
+	CCellBuilder呼び出しに番線編集モードの引数追加
+	駅時刻変更機能に、分岐駅・環状線での、番線・駅扱いの調整を行う機構を追加
+\DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilder
+	番線編集モードへの対応
+	時刻表ビューへの番線表示を追加
+	時刻表ビューへの始発駅・終着駅表示を追加
+	時刻表ビューの背景色設定を追加
+	基準運転時分機能の色を、disppropから設定できるように変更
+\DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Renzoku
+	ダイヤのプロパティ(背景色絡み)が変更されたときに、ビューを更新するように変更
+\DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu
+	連続時刻修正の各種に列車番線の前後移動機能を追加
+	列車編集時に、分岐駅・環状線での、番線・駅扱いの調整を行う機構を追加
+	ダイヤのプロパティ(背景色絡み)が変更されたときに、ビューを更新するように変更
+	各種列車編集に、番線絡みの処理を追加	
+\DiagramEdit\ViewJikokuhyou\JikokuhyouColSpec
+	列車番線表示および始発・終着駅作業表示に関する項目を追加
+	
+\DiagramEdit\ViewDiagram\cdeddiagramview
+	印刷時のページレイアウトに、ヘッダーフッター有無設定を反映。
+\DiagramEdit\ViewDiagram\CDcdDiagram
+	在線表の表示機構を追加
+	在線表追加に伴い、座標から対応駅を求める関数を修正。
+\DiagramEdit\ViewDiagram\CDcdDiagram2
+	在線表の表示機構を追加
+\DiagramEdit\ViewDiagram\CRessyaTrackDraw
+	在線表に各列車の線を描写するために新規追加
+\DiagramEdit\ViewDiagram\CRessyajouhouDraw
+	在線表追加に伴い、情報の描写位置を求める関数を修正
+	
+\DiagramEdit\entDed\CentDedRosen
+	onEkiTrack2Insert,onEkiTrack2Eraseを追加
+	分岐・環状線のadjustを追加
+	路線の組み入れを、分岐駅、環状線に対応
+	路線の切り出しを、分岐駅・環状線に対応
+	swapEkiTrack2を追加
+\DiagramEdit\entDed\CentDedEkiCont
+	CdDedEkiに主本線・時刻表/ダイヤグラム番線表示を追加
+	onEkiTrack2Insert,onEkiTrack2Eraseを追加
+	分岐・環状線のadjustを追加
+	同名駅の判別のための簡易ID機構を追加
+\DiagramEdit\entDed\CentDedEki
+	番線コンテナを追加
+	主本線設定を追加
+	同名駅の判別のための簡易ID機構を追加
+	分岐駅設定、環状線設定を追加
+	時刻表ビューでの発着番線表示設定を追加
+	ダイヤグラムビューでの在線表表示設定を追加
+	onEkiTrack2Insert,onEkiTrack2Eraseを追加
+\DiagramEdit\entDed\CentDedEkiTrack2Cont
+\DiagramEdit\entDed\CentDedEkiTrack2
+	番線設定のため、新規追加
+\DiagramEdit\entDed\CentDedRessyasyubetsu
+	時刻表ビューにおける背景色設定を追加
+\DiagramEdit\entDed\CentDedDiaCont
+	分岐・環状線のadjustを追加
+	isExistRessyaOfEkiTrack2を追加
+	onEkiTrack2Insert,onEkiTrack2Eraseを追加
+\DiagramEdit\entDed\CentDedDia
+	時刻表基本/補助背景色・背景色パターンの設定を追加
+	分岐・環状線のadjustを追加
+	isExistRessyaOfEkiTrack2を追加
+	onEkiTrack2Insert,onEkiTrack2Eraseを追加
+\DiagramEdit\entDed\CentDedRessyaCont
+	分岐・環状線のadjustを追加
+	isExistRessyaOfEkiTrack2を追加
+	onEkiTrack2Insert,onEkiTrack2Eraseを追加
+\DiagramEdit\entDed\CentDedRessya
+	列車番線(RessyaTrack)コンテナを追加
+	adjustRessyaTrackを追加
+	分岐・環状線のadjustを追加
+	isExistRessyaOfEkiTrack2を追加
+	onEkiTrack2Insert,onEkiTrack2Eraseを追加
+	setShihatsuEki,SyuuchakuEkiを番線に対応
+	modifyRessyaJikokuを始終着駅作業時刻に対応
+	clearを番線に対応
+	pasteEkiJikokuを始終着駅作業に対応
+	directを始終着駅作業に対応
+\DiagramEdit\entDed\CentDedEkiJikokuCont
+	分岐・環状線のadjustを追加
+\DiagramEdit\entDed\CentDedRessyaTrackCont
+\DiagramEdit\entDed\CentDedRessyaTrack
+	列車番線用に新規追加
+\DiagramEdit\entDed\CentDedRessya_EkijikokuModifyOperation2
+	駅時刻変更後、番線adjust実施を追加
+\DiagramEdit\entDed\CRessyaContUnifier
+	番線に対応
+\DiagramEdit\entDed\CconvCentDed
+	駅番線・列車番線・分岐駅設定・環状線設定・
+	主本線設定・番線表示・種別背景色・時刻表背景色の保存読み込みを追加
+\DiagramEdit\entDed\CconvCentDedS00
+	OuDia1.02及びOuDiaSecond1.00形式のファイルを読み込むために作成
+	
+\DiagramEdit\entDgr\CentDedDgrDia
+	readCentDedRosen_05_updateRessyaTrackLineCont(RessyaからRessyaTrackLineを生成)を追加
+	駅Index,Orderから座標を取得する関数を、在線表に対応
+	createEstimateRessya2(乗り継ぎソート用列車コンテナ生成)を、分岐駅・環状線に対応
+	在線表表示設定・主本線設定・分岐駅設定に対応
+\DiagramEdit\entDgr\CentDedDgrEkiCont
+	主本線設定、在線表表示設定を追加
+\DiagramEdit\entDgr\CentDedDgrEki
+	主本線設定、在線表表示設定を追加
+	番線コンテナを追加
+\DiagramEdit\entDgr\CentDedDgrEkiTrack2
+	駅番線用に新規追加
+\DiagramEdit\entDgr\CentDedDgrRessya
+	列車番線を追加
+	RessyaTrackLine(在線表に表示する線)コンテナを追加
+	updateRessyasenCont_07_reduceToTrackDisplay(列車線を、在線表表示駅で区切る)を追加
+\DiagramEdit\entDgr\CentDedDgrRessyaTrack
+	列車番線用に新規追加
+	各駅での発着番線および始発・終着駅作業を保持
+\DiagramEdit\entDgr\CentDedDgrRessyaTrackLineCont
+\DiagramEdit\entDgr\CentDedDgrRessyaTrackLine
+	在線表に表示する線を列挙するコンテナ、新規作成。
+	
+\DiagramEdit\DedRosenFileData\CconvCDedRosenFileData
+	filetypeをOuDiaSecond.1.01に更新
+	FileTypeS00として、OuDiaSecond.1.00を残置。
+	isEncodeAbleFormatを、読み込みファイルのfiletypeによって異なる値を返すように変更
+	isEncodeAbleFormatの返り値によって、CconvCentDedとCconvCentDedS00を使い分けるように変更
+\DiagramEdit\DedRosenFileData\CconvCdDedDispProp
+	時刻表背景色・基準運転時分背景色の項目を追加
+\DiagramEdit\DedRosenFileData\CdDedDispProp
+	時刻表背景色・基準運転時分背景色の項目を追加
+\DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_DiaProp
+	背景色設定・背景色パターン設定の項目を追加
+\DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_Eki
+	分岐駅・環状線設定によるadjust呼び出しを追加
+\DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_EkiTrack2
+\DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_EkiTrack2Swap
+	駅番線用に新規追加
+	駅番線の編集処理及び駅番線入換の編集処理
+	
+\DiagramEdit\DedRosenFileData\CconvJikokuhyouCsv
+	CsvのファイルタイプをOuDiaSecond.JikokuhyouCsv.1に更新
+	番線の書き出しに対応
+	
+-----------------------------------------------------------------------------------------
+Ver1.01
+\DiagramEdit\DiagramEdit\DiagramEdit.rc
+	Menuの±5秒±15秒を任意秒移動に表記変更
+	Menuに、基準運転時分に合わせるボタンを追加
+	Acceleratorに、基準運転時分に合わせるへのショートカットを追加
+	Dialogの路線ダイヤのプロパティに、任意秒移動の設定欄を追加
+	Dialogの駅のプロパティに、下り発着・上り発着を選ぶラジオボタンを追加
+	String Tableに追加機能に対応するものを追加
+	Toolbarに基準運転機能のON/OFFボタンを追加
+	
+\DiagramEdit\DiagramEdit\resource.h
+	新しい駅形式に関する項目、基準運転時分に合わせる機能に関する項目を追加
+
+\DiagramEdit\DiagramEdit\DedRosenFileData\CconvCDedRosenFileData.cppおよびCconvCDedRosenFileData.h
+	FileTypeの値を変更、OuDia向け書き出し用FileTypeの値を追加
+	ファイル読み込みの時、新Filetypeと従来のFiletypeについては、"そのまま"読み込むように変更
+
+\DiagramEdit\DiagramEdit\DedRosenFileData\CconvCDedRosenFileDataOud.cppおよびCconvCDedRosenFileDataOud.h
+	OuDia互換書き出し用に新たに追加。
+
+\DiagramEdit\DiagramEdit\entDed\CconvCentDed.cpp
+	駅時刻形式に新たな形式を追加(ファイルへ書き出す文字列と、内部形式の対応表)
+
+\DiagramEdit\DiagramEdit\entDed\CconvCentDedOud.cpp
+	OuDia互換書き出し用に新たに追加。
+
+\DiagramEdit\DiagramEdit\DedRosenFileData\CdDedDispProp.cpp及びCdDedDispProp.h
+	任意秒移動の設定・保存項目を追加
+
+\DiagramEdit\DiagramEdit\DedRosenFileData\CconvCdDedDispProp.cpp
+	任意秒移動の設定・保存項目を追加
+	
+\DiagramEdit\DiagramEdit\entDed\CentDedEki.h
+	駅時刻形式に新たな形式を追加(enum EEkijikokukeisikiに追加)
+
+\DiagramEdit\DiagramEdit\entDed\CentDedEkiCont.cpp
+	駅時刻形式に新たな形式を追加(駅形式と、着・発各時刻表示有無の対応表)
+
+\DiagramEdit\DiagramEdit\entDed\CentDedRosen.cpp
+	invert()を、新たな駅形式に対応させた
+
+\DiagramEdit\DiagramEdit\ViewEki\CDlgEkiProp.cpp
+	駅時刻形式に新たな形式を追加(駅ダイアログ)
+
+\DiagramEdit\DiagramEdit\ViewEki\CWndDcdGridEki.cpp
+	駅時刻形式に新たな形式を追加(EEkijikokukeisiki と、文字列リソースIDの対応表)
+
+\DiagramEdit\DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilder.cpp及びCCellBuilder.h
+	基準運転時分機能を大幅に作り直し。
+		下請け関数の一本化、通過駅時刻への対応、通過駅時刻非表示時に機能がOFFになるよう変更、
+		基準時分取得ルールの見直し。
+
+\DiagramEdit\DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState.cpp及びCWjkState.h
+	「基準運転時分に合わせる」機能に関する項目を追加
+	
+\DiagramEdit\DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu.cpp及びCWjkState_Ressyahensyu.h
+	±5秒,±15秒機能を、任意秒移動機能にアップデート
+	「基準運転時分に合わせる」機能を追加
+
+\DiagramEdit\DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWndJikokuhyou.cpp及びCWndJikokuhyou.h
+	基準運転時分機能の有効条件を変更
+		基準運転時分機能をONにするとき、通過駅時刻表示もONになるように設定
+		通過駅時刻表示をOFFにするとき、基準運転時分機能もOFFになるように設定
+	「基準運転時分に合わせる」機能に関する項目を追加
+
+\DiagramEdit\DiagramEdit\ViewRosen\CDlgRosenFileProp_Rosen.cpp及びCDlgRosenFileProp_Rosen.h
+	任意秒移動の設定・保存項目を追加
+	
+\DiagramEdit\DiagramEdit\WinDia\CconvWinDia.cpp
+	新たに追加した駅形式を、WinDia形式で出力するときの、変換ルールを追加
+
+\DiagramEdit\DiagramEdit\CDiagramEditDoc.cpp
+	OnFileSaveAs() を変更(名前を付けて保存の拡張子設定を再度変更、読み込んでいるファイルがoudなら、保存するときの初期選択を、oudにするように無理矢理改造。)
+
+
+-----------------------------------------------------------------------------------------
+Ver1.00
+
+\DiagramEdit\DiagramEdit\DiagramEdit.rc
+	Menuに±5秒,±15秒及び秒単位表示有効・基準運転時分機能有効のボタンを追加
+	Acceleratorに±5秒,±15秒のショートカットを追加
+	Dialogのバージョン情報表示の内容を変更
+	Dialogの貼り付け移動量を秒単位対応に変更
+	Versionを全体的に変更
+	String Tableの
+		IDR_DIATYPE、AFX_IDS_APP_TITLEを変更
+		追加機能に対応するものを追加
+		
+\DiagramEdit\DiagramEdit\DiagramEdit.cpp及びDiagramEdit.h
+	CDiagramEditApp::makeLocalAppdataFilename　のOuDiaフォルダ名を変更
+	CDiagramEditApp::writeCWndJikokuhyouViewProp
+	CDiagramEditApp::readCWndJikokuhyouViewProp　に秒単位表示有効・基準運転時分機能有効の設定の保存読み込みを追加
+	getCFileDialogFilter()を変更(読み込み拡張子の設定を変更)
+	getCFileDialogOud2Filter()を追加(名前を付けて保存の拡張子設定を変更)
+		
+\DiagramEdit\DiagramEdit\resource.h
+	±5秒,±15秒及び秒単位表示・基準運転時分機能に関する項目を追加
+	
+\DiagramEdit\DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWndJikokuhyou.cpp及びCWndJikokuhyou.h
+	±5秒,±15秒及び秒単位表示・基準運転時分機能に関する項目を追加
+	貼り付け移動量を秒単位に対応させるために、OnUpdateINDICATOR_PasteZoubun_Process() を変更
+	
+\DiagramEdit\DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState.cpp及びCWjkState.h
+	±5秒,±15秒機能に関する項目を追加
+	
+\DiagramEdit\DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState_Ressyahensyu.cpp及びCWjkState_Ressyahensyu.h
+	±5秒,±15秒機能の実際の動作(呼び出し)を追加
+	
+\DiagramEdit\DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilder.cpp及びCCellBuilder.h
+	秒単位表示の実装(時刻表示を司る関数の引数を変更)
+	基準運転時分機能を実装
+	
+\DiagramEdit\DiagramEdit\ViewJikokuhyou\CDlgJikokuhyouViewProp.cpp
+	貼り付け移動量を秒単位に対応させるために、
+		CDlgJikokuhyouViewProp(),DoDataExchange(),OnOK()を変更
+		
+\DiagramEdit\DiagramEdit\CDiagramEditDoc.cpp
+	OnFileSaveAs() を変更(名前を付けて保存の拡張子設定を変更)

@@ -1,0 +1,3564 @@
+// Microsoft Visual C++ generated resource script.
+//
+#pragma code_page(65001)
+
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DiagramEdit.rc2""  //\r\n"
+    "#include ""l.jpn\\afxres.rc""          // \n"
+    "#include ""l.jpn\\afxprint.rc""        // \r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\DiagramEdit.ico"
+
+IDR_DIATYPE             ICON                    "res\\CDiagramEditDoc.ico"
+
+IDR_DOCVIEW_Eki         ICON                    "res\\idr_eki.ico"
+
+IDR_DOCVIEW_Ressyasyubetsu ICON                    "res\\idr_docv.ico"
+
+IDR_DOCVIEW_Jikokuhyou  ICON                    "res\\idr_jikoku.ico"
+
+IDR_DOCVIEW_Diagram     ICON                    "res\\idr_dgr.ico"
+
+IDR_DOCVIEW_Comment     ICON                    "res\\idr_comment.ico"
+
+IDR_DOCVIEW_EkiTrack2   ICON                    "res\\idr_ekitrack2.ico"
+
+IDR_DOCVIEW_OperationTable ICON                    "res\\ico00001.ico"
+
+IDR_DOCVIEW_AllOperationTable ICON                    "res\\ico00002.ico"
+
+IDR_DOCVIEW_AllOperationTable2 ICON                    "res\\ico00003.ico"
+
+IDR_DOCVIEW_EkiJikokuhyou ICON                    "res\\ico00004.ico"
+
+IDR_DOCVIEW_EkiJikokuhyouList ICON                    "res\\ico00005.ico"
+
+IDR_DOCVIEW_InOutLinkCodeList ICON                    "res\\ico00006.ico"
+
+IDR_DOCVIEW_CrossingCheck ICON                    "res\\ico00007.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+IDB_TREE_ROSEN          BITMAP                  "res\\tree_ros.bmp"
+
+IDR_DOCVIEW_Diagram     BITMAP                  "res\\tb_diagram.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDO
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_Jikokuhyou_FocusMoveDown
+    BUTTON      ID_Jikokuhyou_FocusMoveRight
+    BUTTON      ID_VIEW_DisplayAllEkiJikoku
+    BUTTON      ID_VIEW_StandardOperationTimeFunction
+    BUTTON      ID_VIEW_OperationUpdateStop
+    SEPARATOR
+    BUTTON      ID_Diagram_XDgrSize_Inc
+    BUTTON      ID_Diagram_XDgrSize_Dec
+    BUTTON      ID_AllOperationTable2_XDgrSize_Reset
+    BUTTON      ID_Diagram_YDgrSize_Inc
+    BUTTON      ID_Diagram_YDgrSize_Dec
+    BUTTON      ID_Diagram_YDgrSize_Reset
+    SEPARATOR
+    BUTTON      ID_Diagram_Memori_Down
+    BUTTON      ID_Diagram_Memori_Up
+    SEPARATOR
+    BUTTON      ID_Diagram_Ressyabangou
+    BUTTON      ID_AllOperationTable2_SyubetsuRyakusyou
+    BUTTON      ID_Diagram_Ressyamei
+    BUTTON      ID_AllOperationTable2_JikokuMinute
+    BUTTON      ID_Diagram_RessyasenKudari
+    BUTTON      ID_Diagram_RessyasenNobori
+    BUTTON      ID_Diagram_StopMarkDraw
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_DOCVIEW_Diagram TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_Diagram_Ressyabangou
+    BUTTON      ID_Diagram_Ressyamei
+    SEPARATOR
+    BUTTON      ID_Diagram_Memori_Down
+    BUTTON      ID_Diagram_Memori_Up
+    SEPARATOR
+    BUTTON      ID_Diagram_XDgrSize_Inc
+    BUTTON      ID_Diagram_XDgrSize_Dec
+    BUTTON      ID_Diagram_YDgrSize_Inc
+    BUTTON      ID_Diagram_YDgrSize_Dec
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "新規作成(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "開く(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "上書き保存(&S)\tCtrl+S",           ID_FILE_SAVE
+        MENUITEM "名前を付けて保存(&A)...",             ID_FILE_SAVE_AS
+        MENUITEM "自動バックアップを有効にする(&B)",          ID_FILE_BACKUP
+        MENUITEM "ウインドウ位置を復元する(&W)",            ID_FILE_WindowPlacementRestore
+        MENUITEM "外部時刻表インポート(&M)",              ID_FILE_DIGITAL_JIKOKUHYOU_IMPORT
+        MENUITEM SEPARATOR
+        MENUITEM "印刷ページ設定(&P)...",              ID_FILE_PrintPageProp
+        MENUITEM "プリンタの設定(&R)...",              ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近使ったファイル",                   ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "路線ファイルのプロパティ(&I)...",         ID_ROSEN_FILE_PROP
+        MENUITEM "ダイヤ一覧(&D)...",                ID_ROSEN_DIALIST
+        MENUITEM SEPARATOR
+        MENUITEM "アプリケーションの終了(&X)",             ID_APP_EXIT
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "ステータス バー(&S)",                ID_VIEW_STATUS_BAR
+        MENUITEM "ツール バー(&T)",                  ID_VIEW_TOOLBAR
+    END
+    POPUP "ウィンドウ(&W)"
+    BEGIN
+        MENUITEM "ペインの切替(&P)",                  ID_WINDOW_ROSEN_VIEW
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "目次...\tF1",                   ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "OuDiaSecond  のバージョン情報(&A)...", ID_APP_ABOUT
+    END
+END
+
+IDR_DOCVIEW_Eki MENU
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "新規作成(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "開く(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "閉じる(&C)",                     ID_FILE_CLOSE
+        MENUITEM "上書き保存(&S)\tCtrl+S",           ID_FILE_SAVE
+        MENUITEM "名前を付けて保存(&A)...",             ID_FILE_SAVE_AS
+        MENUITEM "自動バックアップを有効にする(&B)",          ID_FILE_BACKUP
+        MENUITEM "ウインドウ位置を復元する(&W)",            ID_FILE_WindowPlacementRestore
+        MENUITEM SEPARATOR
+        POPUP "路線ファイルの組入れ/切り出し(&E)"
+        BEGIN
+            MENUITEM "路線ファイルの組入れ(&I)...",           ID_FILE_ROSEN_FILE_INSERT
+            MENUITEM "路線ファイルの切り出し(&E)...",          ID_FILE_ROSEN_CREATE_SUB_ROSEN
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "印刷(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "印刷プレビュー(&V)",                 ID_FILE_PRINT_PREVIEW
+        MENUITEM "印刷ページ設定(&P)...",              ID_FILE_PrintPageProp
+        MENUITEM "プリンタの設定(&R)...",              ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近使ったファイル",                   ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "路線ファイルのプロパティ(&I)...",         ID_ROSEN_FILE_PROP
+        MENUITEM "ダイヤ一覧(&D)...",                ID_ROSEN_DIALIST
+        MENUITEM SEPARATOR
+        MENUITEM "アプリケーションの終了(&X)",             ID_APP_EXIT
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "元に戻す(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "やり直し(&R)\tCtrl+Y",            ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "切り取り(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "コピー(&C)\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "貼り付け(&P)\tCtrl+V",            ID_EDIT_PASTE
+        MENUITEM "消去\tDel",                     ID_EDIT_CLEAR
+        MENUITEM "駅を挿入(&I)...\tCtrl+Ins",       ID_EDIT_EkiInsert
+        MENUITEM SEPARATOR
+        MENUITEM "駅の反転(V)",                     ID_EDIT_EKI_INVERT
+        MENUITEM "駅のプロパティ(&A)...\tCtrl+Enter",  ID_EDIT_EkiProp
+        MENUITEM "交差支障チェックルール編集(&S)...\tAlt+Enter", ID_EDIT_CrossingCheckRuleDlg
+    END
+    POPUP "設定変更(&D)"
+    BEGIN
+        MENUITEM "設定変更/+60秒(&L)\tCtrl+L",       ID_Eki_SettingNext
+        MENUITEM "設定変更/-60秒(&J)\tCtrl+J",       ID_Eki_SettingPrev
+        MENUITEM "設定変更/+任意秒1(&:)\tCtrl+ :",     ID_Eki_SettingNext2
+        MENUITEM "設定変更/-任意秒1(&;)\tCtrl+ ;",     ID_Eki_SettingPrev2
+        MENUITEM "設定変更/+任意秒2(&O)\tCtrl+Shift+ :", ID_Eki_SettingNext3
+        MENUITEM "設定変更/-任意秒2(&U)\tCtrl+Shift+ ;", ID_Eki_SettingPrev3
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "表示設定モードにする(&D)",              ID_VIEW_DisplaySettingMode
+        MENUITEM SEPARATOR
+        MENUITEM "ツール バー(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "ステータス バー(&S)",                ID_VIEW_STATUS_BAR
+    END
+    POPUP "ウィンドウ(&W)"
+    BEGIN
+        MENUITEM "ペインの切替(&P)",                  ID_WINDOW_ROSEN_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "新しいウィンドウを開く(&N)",             ID_WINDOW_NEW
+        MENUITEM "重ねて表示(&C)",                   ID_WINDOW_CASCADE
+        MENUITEM "上下に並べて表示(&T)",                ID_WINDOW_TILE_HORZ
+        MENUITEM "左右に並べて表示(&V)",                ID_WINDOW_TILE_VERT
+        MENUITEM "アイコンの整列(&A)",                 ID_WINDOW_ARRANGE
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "目次...\tF1",                   ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "OuDiaSecond  のバージョン情報(&A)...", ID_APP_ABOUT
+    END
+END
+
+IDR_DOCVIEW_Ressyasyubetsu MENU
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "新規作成(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "開く(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "閉じる(&C)",                     ID_FILE_CLOSE
+        MENUITEM "上書き保存(&S)\tCtrl+S",           ID_FILE_SAVE
+        MENUITEM "名前を付けて保存(&A)...",             ID_FILE_SAVE_AS
+        MENUITEM "自動バックアップを有効にする(&B)",          ID_FILE_BACKUP
+        MENUITEM "ウインドウ位置を復元する(&W)",            ID_FILE_WindowPlacementRestore
+        MENUITEM SEPARATOR
+        MENUITEM "印刷(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "印刷ﾌﾟﾚﾋﾞｭｰ(&V)",               ID_FILE_PRINT_PREVIEW
+        MENUITEM "印刷ページ設定(&P)...",              ID_FILE_PrintPageProp
+        MENUITEM "プリンタの設定(&R)...",              ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近使ったファイル",                   ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "路線ファイルのプロパティ(&I)...",         ID_ROSEN_FILE_PROP
+        MENUITEM "ダイヤ一覧(&D)...",                ID_ROSEN_DIALIST
+        MENUITEM SEPARATOR
+        MENUITEM "アプリケーションの終了(&X)",             ID_APP_EXIT
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "元に戻す(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "やり直し(&R)\tCtrl+Y",            ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "切り取り(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "コピー(&C)\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "貼り付け(&P)\tCtrl+V",            ID_EDIT_PASTE
+        MENUITEM "消去\tDel",                     ID_EDIT_CLEAR
+        MENUITEM "列車種別を挿入(&I)...\tCtrl+Ins",    ID_Ressyasyubetsu_Insert
+        MENUITEM SEPARATOR
+        MENUITEM "上へ(&U)\tCtrl+Up",             ID_Ressyasyubetsu_Up
+        MENUITEM "下へ(&D)\tCtrl+Down",           ID_Ressyasyubetsu_Down
+        MENUITEM SEPARATOR
+        MENUITEM "列車種別のプロパティ(&A)...\tCtrl+Enter", ID_Ressyasyubetsu_Prop
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "ツール バー(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "ステータス バー(&S)",                ID_VIEW_STATUS_BAR
+    END
+    POPUP "ウィンドウ(&W)"
+    BEGIN
+        MENUITEM "ペインの切替(&P)",                  ID_WINDOW_ROSEN_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "新しいウィンドウを開く(&N)",             ID_WINDOW_NEW
+        MENUITEM "重ねて表示(&C)",                   ID_WINDOW_CASCADE
+        MENUITEM "上下に並べて表示(&T)",                ID_WINDOW_TILE_HORZ
+        MENUITEM "左右に並べて表示(&V)",                ID_WINDOW_TILE_VERT
+        MENUITEM "アイコンの整列(&A)",                 ID_WINDOW_ARRANGE
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "目次...\tF1",                   ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "OuDiaSecond  のバージョン情報(&A)...", ID_APP_ABOUT
+    END
+END
+
+IDR_DOCVIEW_Jikokuhyou MENU
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "新規作成(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "開く(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "閉じる(&C)",                     ID_FILE_CLOSE
+        MENUITEM "上書き保存(&S)\tCtrl+S",           ID_FILE_SAVE
+        MENUITEM "名前を付けて保存(&A)...",             ID_FILE_SAVE_AS
+        MENUITEM "自動バックアップを有効にする(&B)",          ID_FILE_BACKUP
+        MENUITEM "ウインドウ位置を復元する(&W)",            ID_FILE_WindowPlacementRestore
+        MENUITEM "時刻表CSVファイルエクスポート(&E)...",     ID_FILE_EXPORT_JIKOKUHYOUCSV
+        MENUITEM SEPARATOR
+        MENUITEM "印刷(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "印刷プレビュー(&V)",                 ID_FILE_PRINT_PREVIEW
+        MENUITEM "印刷ページ設定(&P)...",              ID_FILE_PrintPageProp
+        MENUITEM "プリンタの設定(&R)...",              ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近使ったファイル",                   ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "路線ファイルのプロパティ(&I)...",         ID_ROSEN_FILE_PROP
+        MENUITEM "ダイヤ一覧(&D)...",                ID_ROSEN_DIALIST
+        MENUITEM SEPARATOR
+        MENUITEM "アプリケーションの終了(&X)",             ID_APP_EXIT
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "元に戻す(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "やり直し(&R)\tCtrl+Y",            ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "切り取り(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "コピー(&C)\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "貼り付け(&P)\tCtrl+V",            ID_EDIT_PASTE
+        MENUITEM "消去(&D)\tDel",                 ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "時刻のみ貼り付け(&Q)\tCtrl+Shift+V",  ID_Edit_PasteEkiJikoku
+        MENUITEM SEPARATOR
+        MENUITEM "駅作業のコピー(&O)\tCtrl+Shift+C",   ID_EDIT_OPERATIONCOPY
+        MENUITEM "列車情報のコピー(&B)\tCtrl+Alt+C",    ID_EDIT_RESSYAJOUHOUCOPY
+        MENUITEM SEPARATOR
+        MENUITEM "すべて選択(&A)\tCtrl+A",           ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "左へ(&L)\tCtrl+Left",           ID_Jikokuhyou_Left
+        MENUITEM "右へ(&I)\tCtrl+Right",          33140
+    END
+    POPUP "時刻表(&S)"
+    BEGIN
+        MENUITEM "列車のプロパティ(&A)...\tCtrl+Enter", ID_Jikokuhyou_RessyaProp
+        MENUITEM "列車を挿入(&I)...\tCtrl+Ins",      ID_Jikokuhyou_RessyaInsert
+        MENUITEM "列車を運休扱いにする/解除する(&N)\tCtrl+B", ID_Jikokuhyou_Canceled
+        MENUITEM SEPARATOR
+        MENUITEM "フォーカス下移動(&D)",                ID_Jikokuhyou_FocusMoveDown
+        MENUITEM "フォーカス右移動(&R)",                ID_Jikokuhyou_FocusMoveRight
+        MENUITEM SEPARATOR
+        MENUITEM "最小所要時間列車に移動(&M)",             ID_Jikokuhyou_EKikanSaisyouSec
+        MENUITEM "並べ替え(&S)",                    ID_Jikokuhyou_SORT
+        MENUITEM "列車番号で一本化(&U)",                ID_Jikokuhyou_Unify
+        MENUITEM SEPARATOR
+        MENUITEM "時刻表ビューのプロパティ(&P)...\tShift+Enter", ID_Jikokuhyou_ViewProp
+    END
+    POPUP "駅時刻(&T)"
+    BEGIN
+        MENUITEM "駅時刻のプロパティ(&A)...\tEnter",     ID_Jikokuhyou_EkijikokuProp
+        MENUITEM "駅作業のプロパティ(&N)...\tAlt+Enter", ID_Jikokuhyou_OperationProp
+        MENUITEM SEPARATOR
+        MENUITEM "時刻消去(&D)\tCtrl+Del",          ID_Jikokuhyou_JikokuSakujo
+        MENUITEM "通過(&P)\tCtrl+ '-' , Num-",    ID_Jikokuhyou_Tsuuka
+        MENUITEM "通過-停車(&S)\tAlt+'-'",          ID_Jikokuhyou_TsuukaTeisya
+        MENUITEM "運行なし(&V)\tCtrl+Shift+ '-' , Num/", ID_Jikokuhyou_Keiyunasi
+        MENUITEM SEPARATOR
+        MENUITEM "当駅始発(&O)\tCtrl+U",            ID_Jikokuhyou_Sihatsu
+        MENUITEM "当駅止り(&T)\tCtrl+I",            ID_Jikokuhyou_Syuuchaku
+        MENUITEM "直通化(&Q)\tCtrl+Shift+U",       ID_Jikokuhyou_Direct
+        MENUITEM "分断(&U)\tCtrl+Shift+I",        ID_Jikokuhyou_Undirect
+        MENUITEM SEPARATOR
+        MENUITEM "連続入力(&C)\tCtrl+T",            ID_Jikokuhyou_Renzoku
+        MENUITEM SEPARATOR
+        MENUITEM "駅時刻を挿入(&I)\tCtrl+R",          ID_Jikokuhyou_EkijikokuInsert
+        MENUITEM "駅時刻を削除(&E)\tCtrl+E",          ID_Jikokuhyou_EkijikokuErase
+        MENUITEM "駅時刻変更(&M)...\tCtrl+M",        ID_Jikokuhyou_ModifyEkijikokuCmd
+        MENUITEM "駅時刻変更の再実行(&R)\tCtrl+ .",      ID_Jikokuhyou_ModifyEkijikokuCmdRepeat
+        POPUP "連続時刻修正/番線・作業変更(&1)"
+        BEGIN
+            MENUITEM "-1分し次へ/番線・作業変更(&J)\tCtrl+J",  ID_Jikokuhyou_EkijikokuDec
+            MENUITEM "-1分/番線・作業変更(&U)\tCtrl+Shift+J", ID_Jikokuhyou_EkijikokuDecNoMove
+            MENUITEM "フォーカスを次へ(&K)\tCtrl+K",        ID_Jikokuhyou_EkijikokuNext
+            MENUITEM "フォーカスを前へ(&I)\tCtrl+Shift+K",  ID_Jikokuhyou_EkijikokuPrev
+            MENUITEM "+1分し次へ/番線・作業変更(&L)\tCtrl+L",  ID_Jikokuhyou_EkijikokuInc
+            MENUITEM "+1分/番線・作業変更(&O)\tCtrl+Shift+L", ID_Jikokuhyou_EkijikokuIncNoMove
+            MENUITEM "-任意秒1/番線・作業変更(&;)\tCtrl+ ;",  ID_Jikokuhyou_EkijikokuDecAnySecNoMove
+            MENUITEM "-任意秒2/番線・作業変更(&P)\tCtrl+Shift+ ;", ID_Jikokuhyou_EkijikokuDecAny2SecNoMove
+            MENUITEM "+任意秒1/番線・作業変更(&:)\tCtrl+ :",  ID_Jikokuhyou_EkijikokuIncAnySecNoMove
+            MENUITEM "+任意秒2/番線・作業変更(&@)\tCtrl+Shift+ :", ID_Jikokuhyou_EkijikokuIncAny2SecNoMove
+        END
+        POPUP "連続時刻修正(起点側を修正)(&2)"
+        BEGIN
+            MENUITEM "-1分し次へ(&J)\tCtrl+Alt+J",      ID_Jikokuhyou_EkijikokuDecRev
+            MENUITEM "-1分(&U)\tCtrl+Alt+Shift+J",   ID_Jikokuhyou_EkijikokuDecRevNoMove
+            MENUITEM "+1分し次へ(&L)\tCtrl+Alt+L",      ID_Jikokuhyou_EkijikokuIncRev
+            MENUITEM "+1分(&O)\tCtrl+Alt+Shift+L",   ID_Jikokuhyou_EkijikokuIncRevNoMove
+            MENUITEM "-任意秒1(&;)\tCtrl+Alt+ ;",      ID_Jikokuhyou_EkijikokuDecRevAnySecNoMove
+            MENUITEM "-任意秒2(&P)\tCtrl+Alt+Shift+ ;", ID_Jikokuhyou_EkijikokuDecRevAny2SecNoMove
+            MENUITEM "+任意秒1(&:)\tCtrl+Alt+ :",      ID_Jikokuhyou_EkijikokuIncRevAnySecNoMove
+            MENUITEM "+任意秒2(&@)\tCtrl+Alt+Shift+ :", ID_Jikokuhyou_EkijikokuIncRevAny2SecNoMove
+        END
+        MENUITEM "基準運転時分に合わせる/デフォルト番線に変更(&,)\tCtrl+ ,", ID_Jikokuhyou_EkijikokuAdjustStdOpeTime
+        MENUITEM "基準運転時分に合わせる(起点側を修正)(&3)\tCtrl+Alt+ ,", ID_Jikokuhyou_EkijikokuAdjustStdOpeTimeRev
+        MENUITEM "基準運転時分を基に始発/終着駅を変更する(&F)\tCtrl+Shift+ ,", ID_Jikokuhyou_RessyaComplementStdOpeTime
+        MENUITEM SEPARATOR
+        MENUITEM "ダイヤグラムへ移動(&I)\tF8",           ID_Jikokuhyou_DiagramHeIdou
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "通過駅の駅時刻を表示(&P)",              ID_VIEW_DisplayTsuukaEkiJikoku
+        MENUITEM "全時刻を表示(&A)",                  ID_VIEW_DisplayAllEkiJikoku
+        MENUITEM "秒単位の時刻を表示(&B)",               ID_VIEW_DisplaySecondEkiJikoku
+        MENUITEM "コロン付きの時刻表記をする(&C)",           ID_VIEW_DisplayColonEkiJikoku
+        MENUITEM "始発終着駅名を表示(&E)",               ID_VIEW_DisplayShihatsuShuchakuEkimei
+        MENUITEM "基準運転時分機能を有効にする(&K)",          ID_VIEW_StandardOperationTimeFunction
+        MENUITEM "親種別を有効にする(&O)",               ID_VIEW_DisplayParentSyubetsu
+        MENUITEM "通過駅の駅時刻表示に各種別のフォントを用いる(&F)",  ID_VIEW_DisplayTsuukaFontPerSyubetsu
+        MENUITEM SEPARATOR
+        MENUITEM "運用更新を一時停止する(&O)",             ID_VIEW_OperationUpdateStop
+        MENUITEM "運用手動更新(&R)\tF5",              ID_VIEW_UPDATEOPERATION
+        MENUITEM SEPARATOR
+        MENUITEM "ツール バー(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "ステータス バー(&S)",                ID_VIEW_STATUS_BAR
+    END
+    POPUP "ウィンドウ(&W)"
+    BEGIN
+        MENUITEM "ペインの切替(&P)",                  ID_WINDOW_ROSEN_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "新しいウィンドウを開く(&N)",             ID_WINDOW_NEW
+        MENUITEM "重ねて表示(&C)",                   ID_WINDOW_CASCADE
+        MENUITEM "上下に並べて表示(&T)",                ID_WINDOW_TILE_HORZ
+        MENUITEM "左右に並べて表示(&V)",                ID_WINDOW_TILE_VERT
+        MENUITEM "アイコンの整列(&A)",                 ID_WINDOW_ARRANGE
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "目次...\tF1",                   ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "OuDiaSecond  のバージョン情報(&A)...", ID_APP_ABOUT
+    END
+END
+
+IDR_DOCVIEW_Diagram MENU
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "新規作成(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "開く(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "閉じる(&C)",                     ID_FILE_CLOSE
+        MENUITEM "上書き保存(&S)\tCtrl+S",           ID_FILE_SAVE
+        MENUITEM "名前を付けて保存(&A)...",             ID_FILE_SAVE_AS
+        MENUITEM "自動バックアップを有効にする(&B)",          ID_FILE_BACKUP
+        MENUITEM "ウインドウ位置を復元する(&W)",            ID_FILE_WindowPlacementRestore
+        MENUITEM SEPARATOR
+        MENUITEM "印刷(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "印刷プレビュー(&V)",                 ID_FILE_PRINT_PREVIEW
+        MENUITEM "印刷ページ設定(&P)...",              ID_FILE_PrintPageProp
+        MENUITEM "プリンタの設定(&R)...",              ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近使ったファイル",                   ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "路線ファイルのプロパティ(&I)...",         ID_ROSEN_FILE_PROP
+        MENUITEM "ダイヤ一覧(&D)...",                ID_ROSEN_DIALIST
+        MENUITEM SEPARATOR
+        MENUITEM "アプリケーションの終了(&X)",             ID_APP_EXIT
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "元に戻す(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "やり直し(&R)\tCtrl+Y",            ID_EDIT_REDO
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "横軸方向縮小(&Q)\tShift + ←",       ID_Diagram_XDgrSize_Inc
+        MENUITEM "横軸方向拡大(&W)\tShift + →",       ID_Diagram_XDgrSize_Dec
+        MENUITEM "縦軸方向縮小(&L)\tShift + ↑",       ID_Diagram_YDgrSize_Inc
+        MENUITEM "縦軸方向拡大(&H)\tShift + ↓",       ID_Diagram_YDgrSize_Dec
+        MENUITEM "縦軸方向リセット(&R)",                ID_Diagram_YDgrSize_Reset
+        MENUITEM SEPARATOR
+        MENUITEM "横軸目盛を細かくする(&D)\tCtrl+ '+'",   ID_Diagram_Memori_Down
+        MENUITEM "横軸目盛を粗くする(&G)\tCtrl+ '-'",    ID_Diagram_Memori_Up
+        MENUITEM SEPARATOR
+        MENUITEM "列車番号の表示(&B)\tCtrl+3",         ID_Diagram_Ressyabangou
+        MENUITEM "列車名の表示(&I)\tCtrl+4",          ID_Diagram_Ressyamei
+        MENUITEM "下り列車の表示(&K)",                 ID_Diagram_RessyasenKudari
+        MENUITEM "上り列車の表示(&N)",                 ID_Diagram_RessyasenNobori
+        MENUITEM "一般駅の駅名を表示しない(&Z)",            ID_Diagram_HideIppanekiEkimei
+        MENUITEM "停車駅明示(&M)",                   ID_Diagram_StopMarkDraw
+        MENUITEM "親種別を有効にする(&O)",               ID_VIEW_DisplayParentSyubetsu
+        MENUITEM "個別背景色を有効にする(&C)",             ID_VIEW_DisplayBackColorNextEkiEnable
+        MENUITEM SEPARATOR
+        MENUITEM "更新(&R)\tF5",                  ID_VIEW_UPDATE
+        MENUITEM SEPARATOR
+        MENUITEM "ツール バー(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "ステータス バー(&S)",                ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "ダイヤグラムビューのプロパティ(&P)...\tShift+Enter", ID_Diagram_ViewProp
+    END
+    POPUP "ウィンドウ(&W)"
+    BEGIN
+        MENUITEM "ペインの切替(&P)",                  ID_WINDOW_ROSEN_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "新しいウィンドウを開く(&N)",             ID_WINDOW_NEW
+        MENUITEM "重ねて表示(&C)",                   ID_WINDOW_CASCADE
+        MENUITEM "上下に並べて表示(&T)",                ID_WINDOW_TILE_HORZ
+        MENUITEM "左右に並べて表示(&V)",                ID_WINDOW_TILE_VERT
+        MENUITEM "アイコンの整列(&A)",                 ID_WINDOW_ARRANGE
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "目次...\tF1",                   ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "OuDiaSecond  のバージョン情報(&A)...", ID_APP_ABOUT
+    END
+END
+
+IDR_DOCVIEW_Comment MENU
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "新規作成(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "開く(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "閉じる(&C)",                     ID_FILE_CLOSE
+        MENUITEM "上書き保存(&S)\tCtrl+S",           ID_FILE_SAVE
+        MENUITEM "名前を付けて保存(&A)...",             ID_FILE_SAVE_AS
+        MENUITEM "自動バックアップを有効にする(&B)",          ID_FILE_BACKUP
+        MENUITEM "ウインドウ位置を復元する(&W)",            ID_FILE_WindowPlacementRestore
+        MENUITEM SEPARATOR
+        MENUITEM "印刷(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "印刷プレビュー(&V)",                 ID_FILE_PRINT_PREVIEW
+        MENUITEM "印刷ページ設定(&P)...",              ID_FILE_PrintPageProp
+        MENUITEM "プリンタの設定(&R)...",              ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近使ったファイル",                   ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "路線ファイルのプロパティ(&I)...",         ID_ROSEN_FILE_PROP
+        MENUITEM "ダイヤ一覧(&D)...",                ID_ROSEN_DIALIST
+        MENUITEM SEPARATOR
+        MENUITEM "アプリケーションの終了(&X)",             ID_APP_EXIT
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "元に戻す(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "切り取り(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "コピー(&C)\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "貼り付け(&P)\tCtrl+V",            ID_EDIT_PASTE
+        MENUITEM "消去(&D)\tDel",                 ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "検索(&F)\tCtrl+F",              ID_EDIT_FIND
+        MENUITEM "次を検索(&N)\tF3",                ID_EDIT_REPEAT
+        MENUITEM "置換(&R)\tCtrl+H",              ID_EDIT_REPLACE
+        MENUITEM SEPARATOR
+        MENUITEM "すべて選択(&A)\tCtrl+A",           ID_EDIT_SELECT_ALL
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "ツール バー(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "ステータス バー(&S)",                ID_VIEW_STATUS_BAR
+    END
+    POPUP "ウィンドウ(&W)"
+    BEGIN
+        MENUITEM "ペインの切替(&P)",                  ID_WINDOW_ROSEN_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "新しいウィンドウを開く(&N)",             ID_WINDOW_NEW
+        MENUITEM "重ねて表示(&C)",                   ID_WINDOW_CASCADE
+        MENUITEM "上下に並べて表示(&T)",                ID_WINDOW_TILE_HORZ
+        MENUITEM "左右に並べて表示(&V)",                ID_WINDOW_TILE_VERT
+        MENUITEM "アイコンの整列(&A)",                 ID_WINDOW_ARRANGE
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "目次...\tF1",                   ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "OuDiaSecond  のバージョン情報(&A)...", ID_APP_ABOUT
+    END
+END
+
+IDR_DIATYPE MENU
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "新規作成(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "開く(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "上書き保存(&S)\tCtrl+S",           ID_FILE_SAVE
+        MENUITEM "名前を付けて保存(&A)...",             ID_FILE_SAVE_AS
+        MENUITEM "自動バックアップを有効にする(&B)",          ID_FILE_BACKUP
+        MENUITEM "ウインドウ位置を復元する(&W)",            ID_FILE_WindowPlacementRestore
+        MENUITEM SEPARATOR
+        MENUITEM "印刷ページ設定(&P)...",              ID_FILE_PrintPageProp
+        MENUITEM "プリンタの設定(&R)...",              ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近使ったファイル",                   ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "路線ファイルのプロパティ(&I)...",         ID_ROSEN_FILE_PROP
+        MENUITEM "ダイヤ一覧(&D)...",                ID_ROSEN_DIALIST
+        MENUITEM SEPARATOR
+        MENUITEM "アプリケーションの終了(&X)",             ID_APP_EXIT
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "ステータス バー(&S)",                ID_VIEW_STATUS_BAR
+        MENUITEM "ツール バー(&T)",                  ID_VIEW_TOOLBAR
+    END
+    POPUP "ウィンドウ(&W)"
+    BEGIN
+        MENUITEM "ペインの切替(&P)",                  ID_WINDOW_ROSEN_VIEW
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "目次...\tF1",                   ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "OuDiaSecond のバージョン情報(&A)...", ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_EKIVIEW_CONTEXT MENU
+BEGIN
+    POPUP "CONTEXTMENU"
+    BEGIN
+        MENUITEM "切り取り(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "コピー(&C)\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "貼り付け(&P)\tCtrl+V",            ID_EDIT_PASTE
+        MENUITEM "消去\tDel",                     ID_EDIT_CLEAR
+        MENUITEM "駅を挿入(&I)...\tCtrl+Ins",       ID_EDIT_EkiInsert
+        MENUITEM SEPARATOR
+        MENUITEM "駅のプロパティ(&A)...\tCtrl+Enter",  ID_EDIT_EkiProp
+        MENUITEM "交差支障チェックルール編集(&S)...\tAlt+Enter", ID_EDIT_CrossingCheckRuleDlg
+    END
+END
+
+IDR_MENU_EKITRACK2VIEW_CONTEXT MENU
+BEGIN
+    POPUP "CONTEXTMENU"
+    BEGIN
+        MENUITEM "切り取り(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "コピー(&C)\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "貼り付け(&P)\tCtrl+V",            ID_EDIT_PASTE
+        MENUITEM "消去\tDel",                     ID_EDIT_CLEAR
+        MENUITEM "番線を挿入(&I)...\tCtrl+Ins",      ID_EkiTrack2_Insert
+        MENUITEM SEPARATOR
+        MENUITEM "上へ(&U)",                      ID_EkiTrack2_Up
+        MENUITEM "下へ(&D)",                      ID_EkiTrack2_Down
+        MENUITEM SEPARATOR
+        MENUITEM "番線のプロパティ(&A)...\tCtrl+Enter", ID_EkiTrack2_Prop
+    END
+END
+
+IDR_MENU_JIKOKUHYOUVIEW_CONTEXT MENU
+BEGIN
+    POPUP "CONTEXTMENU_RESSYA"
+    BEGIN
+        MENUITEM "切り取り(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "コピー(&C)\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "貼り付け(&P)\tCtrl+V",            ID_EDIT_PASTE
+        MENUITEM "消去(&D)\tDel",                 ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "時刻のみ貼り付け(&B)\tCtrl+Shift+V",  ID_Edit_PasteEkiJikoku
+        MENUITEM SEPARATOR
+        MENUITEM "列車情報のコピー(&Y)\tCtrl+Alt+C",    ID_EDIT_RESSYAJOUHOUCOPY
+        MENUITEM SEPARATOR
+        MENUITEM "左へ(&L)\tCtrl+Left",           ID_Jikokuhyou_Left
+        MENUITEM "右へ(&I)\tCtrl+Right",          ID_Jikokuhyou_Right
+        MENUITEM SEPARATOR
+        MENUITEM "列車のプロパティ(&A)...\tCtrl+Enter", ID_Jikokuhyou_RessyaProp
+        MENUITEM "列車を挿入(&I)...\tCtrl+Ins",      ID_Jikokuhyou_RessyaInsert
+        MENUITEM "列車を運休扱いにする/解除する(&N)\tCtrl+B", ID_Jikokuhyou_Canceled
+        MENUITEM SEPARATOR
+        MENUITEM "運用表を開く(&R)",                  ID_Jikokuhyou_OpenOperationTable
+    END
+    POPUP "CONTEXTMENU_EKIJIKOKU"
+    BEGIN
+        MENUITEM "切り取り(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "コピー(&C)\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "貼り付け(&P)\tCtrl+V",            ID_EDIT_PASTE
+        MENUITEM "消去(&D)\tDel",                 ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "時刻のみ貼り付け(&B)\tCtrl+Shift+V",  ID_Edit_PasteEkiJikoku
+        MENUITEM SEPARATOR
+        MENUITEM "駅作業のコピー(&E)\tCtrl+Shift+C",   ID_EDIT_OPERATIONCOPY
+        MENUITEM "列車情報のコピー(&Y)\tCtrl+Alt+C",    ID_EDIT_RESSYAJOUHOUCOPY
+        MENUITEM SEPARATOR
+        MENUITEM "左へ(&L)\tCtrl+Left",           ID_Jikokuhyou_Left
+        MENUITEM "右へ(&I)\tCtrl+Right",          ID_Jikokuhyou_Right
+        MENUITEM SEPARATOR
+        MENUITEM "駅時刻のプロパティ(&A)...\tEnter",     ID_Jikokuhyou_EkijikokuProp
+        MENUITEM "駅作業のプロパティ(&N)...\tAlt+Enter", ID_Jikokuhyou_OperationProp
+        MENUITEM SEPARATOR
+        MENUITEM "時刻消去(&D)\tCtrl+Del",          ID_Jikokuhyou_JikokuSakujo
+        MENUITEM "通過(&P)\tCtrl+ '-' , Num-",    ID_Jikokuhyou_Tsuuka
+        MENUITEM "通過-停車(&S)\tAlt+'-'",          ID_Jikokuhyou_TsuukaTeisya
+        MENUITEM "運行なし(&V)\tCtrl+Shift+ '-' , Num/", ID_Jikokuhyou_Keiyunasi
+        MENUITEM SEPARATOR
+        MENUITEM "当駅始発(&O)\tCtrl+U",            ID_Jikokuhyou_Sihatsu
+        MENUITEM "当駅止り(&T)\tCtrl+I",            ID_Jikokuhyou_Syuuchaku
+        MENUITEM "直通化(&Q)\tCtrl+Shift+U",       ID_Jikokuhyou_Direct
+        MENUITEM "分断(&U)\tCtrl+Shift+I",        ID_Jikokuhyou_Undirect
+        MENUITEM SEPARATOR
+        MENUITEM "運用表を開く(&R)",                  ID_Jikokuhyou_OpenOperationTable
+    END
+    POPUP "CONTEXTMENU_OPERATION"
+    BEGIN
+        MENUITEM "切り取り(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "コピー(&C)\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "貼り付け(&P)\tCtrl+V",            ID_EDIT_PASTE
+        MENUITEM "消去(&D)\tDel",                 ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "出区列車に移動(&O)",                 ID_Jikokuhyou_MoveToOutRessya
+        MENUITEM "前列車に移動(&R)",                  ID_Jikokuhyou_MoveToPrevRessya
+        MENUITEM "次列車に移動(&N)",                  ID_Jikokuhyou_MoveToNextRessya
+        MENUITEM "入区列車に移動(&I)",                 ID_Jikokuhyou_MoveToInRessya
+        MENUITEM SEPARATOR
+        MENUITEM "運用表を開く(&A)\tEnter",           ID_Jikokuhyou_OpenOperationTable
+    END
+    POPUP "CONTEXTMENU_EKI"
+    BEGIN
+        MENUITEM "駅のプロパティ(&A)\tEnter",          ID_Jikokuhyou_OpenEki
+        MENUITEM "駅時刻表を開く(&J)",                 ID_Jikokuhyou_OpenEkiJikokuhyou
+        MENUITEM "交差支障チェックリストを開く(&C)",          ID_Jikokuhyou_OpenCrossingCheck
+    END
+    MENUITEM SEPARATOR
+END
+
+IDR_MENU_DIAGRAMVIEW_CONTEXT MENU
+BEGIN
+    POPUP "CONTEXTMENU"
+    BEGIN
+        MENUITEM "横軸方向縮小(&Q)\tShift + ←",       ID_AllOperationTable2_XDgrSize_Inc
+        MENUITEM "横軸方向拡大(&W)\tShift + →",       ID_AllOperationTable2_XDgrSize_Dec
+        MENUITEM "縦軸方向リセット(&R)",                ID_AllOperationTable2_XDgrSize_Reset
+        MENUITEM SEPARATOR
+        MENUITEM "横軸目盛を細かくする(&D)\tCtrl+ '+'",   ID_AllOperationTable2_Memori_Down
+        MENUITEM "横軸目盛を粗くする(&G)\tCtrl+ '-'",    ID_AllOperationTable2_Memori_Up
+    END
+END
+
+IDR_MENU_ROSENVIEW_CONTEXT MENU
+BEGIN
+    POPUP "ROSEN"
+    BEGIN
+        MENUITEM "路線ファイルのプロパティ(&I)...",         ID_ROSEN_FILE_PROP
+    END
+    POPUP "EKI"
+    BEGIN
+        MENUITEM "開く(&O)...",                   ID_MENUITEM_OPEN
+    END
+    POPUP "RESSYASYUBETSU"
+    BEGIN
+        MENUITEM "開く(&O)...",                   ID_MENUITEM_OPEN
+    END
+    POPUP "DIAS"
+    BEGIN
+        MENUITEM "ダイヤ一覧(&D)...",                ID_ROSEN_DIALIST
+    END
+    MENUITEM "DIA",                         ID_DIA
+    POPUP "JIKOKUHYOU"
+    BEGIN
+        MENUITEM "開く(&O)...",                   ID_MENUITEM_OPEN
+    END
+    POPUP "DIAGRAM"
+    BEGIN
+        MENUITEM "開く(&O)...",                   ID_MENUITEM_OPEN
+    END
+    POPUP "COMMENT"
+    BEGIN
+        MENUITEM "開く(&O)...",                   ID_MENUITEM_OPEN
+    END
+    POPUP "ALLOPERTAIONTABLE"
+    BEGIN
+        MENUITEM "一覧表を開く(&H)...",               ID_MENUITEM_OPEN
+        MENUITEM "一覧図を開く(&Z)...",               ID_ALLOPERATIONTABLE2_OPEN
+        MENUITEM "入出区連携コード一覧を開く(&I)...",        ID_INOUTLINKCODELIST_OPEN
+    END
+    POPUP "EKITRACK"
+    BEGIN
+        MENUITEM "開く(&O)...",                   ID_EKITRACK_32900
+    END
+END
+
+IDR_DOCVIEW_EkiTrack2 MENU
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "新規作成(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "開く(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "閉じる(&C)",                     ID_FILE_CLOSE
+        MENUITEM "上書き保存(&S)\tCtrl+S",           ID_FILE_SAVE
+        MENUITEM "名前を付けて保存(&A)...",             ID_FILE_SAVE_AS
+        MENUITEM "自動バックアップを有効にする(&B)",          ID_FILE_BACKUP
+        MENUITEM "ウインドウ位置を復元する(&W)",            ID_FILE_WindowPlacementRestore
+        MENUITEM SEPARATOR
+        MENUITEM "印刷(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "印刷プレビュー(&V)",                 ID_FILE_PRINT_PREVIEW
+        MENUITEM "印刷ページ設定(&P)...",              ID_FILE_PrintPageProp
+        MENUITEM "プリンタの設定(&R)...",              ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近使ったファイル",                   ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "路線ファイルのプロパティ(&I)...",         ID_ROSEN_FILE_PROP
+        MENUITEM "ダイヤ一覧(&D)...",                ID_ROSEN_DIALIST
+        MENUITEM SEPARATOR
+        MENUITEM "アプリケーションの終了(&X)",             ID_APP_EXIT
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "元に戻す(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "やり直し(&R)\tCtrl+Y",            ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "切り取り(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "ｺﾋﾟｰ(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "貼り付け(&P)\tCtrl+V",            ID_EDIT_PASTE
+        MENUITEM "消去\tDel",                     ID_EDIT_CLEAR
+        MENUITEM "番線を挿入(&I)...\tCtrl+Ins",      ID_EkiTrack2_Insert
+        MENUITEM SEPARATOR
+        MENUITEM "上へ(&U)",                      ID_EkiTrack2_Up
+        MENUITEM "下へ(&D)",                      ID_EkiTrack2_Down
+        MENUITEM SEPARATOR
+        MENUITEM "番線のプロパティ(&A)...\tCtrl+Enter", ID_EkiTrack2_Prop
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "ツール バー(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "ステータス バー(&S)",                ID_VIEW_STATUS_BAR
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "目次...\tF1",                   ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "OuDiaSecond  のバージョン情報(&A)...", ID_APP_ABOUT
+    END
+    POPUP "ウィンドウ(&W)"
+    BEGIN
+        MENUITEM "ペインの切替(&P)",                  ID_WINDOW_ROSEN_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "新しいウィンドウを開く(&N)",             ID_WINDOW_NEW
+        MENUITEM "重ねて表示(&C)",                   ID_WINDOW_CASCADE
+        MENUITEM "上下に並べて表示(&T)",                ID_WINDOW_TILE_HORZ
+        MENUITEM "左右に並べて表示(&V)",                ID_WINDOW_TILE_VERT
+        MENUITEM "アイコンの整列(&A)",                 ID_WINDOW_ARRANGE
+    END
+END
+
+IDR_MENU_RESSYASYUBETSUVIEW_CONTEXT MENU
+BEGIN
+    POPUP "CONTEXTMENU"
+    BEGIN
+        MENUITEM "切り取り(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "コピー(&C)\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "貼り付け(&P)\tCtrl+V",            ID_EDIT_PASTE
+        MENUITEM "消去\tDel",                     ID_EDIT_CLEAR
+        MENUITEM "列車種別を挿入(&I)...\tCtrl+Ins",    ID_Ressyasyubetsu_Insert
+        MENUITEM SEPARATOR
+        MENUITEM "上へ(&U)\tCtrl+Up",             ID_Ressyasyubetsu_Up
+        MENUITEM "下へ(&D)\tCtrl+Down",           ID_Ressyasyubetsu_Down
+        MENUITEM SEPARATOR
+        MENUITEM "列車種別のプロパティ(&A)...\tCtrl+Enter", ID_Ressyasyubetsu_Prop
+    END
+END
+
+IDR_MENU_OPERATIONTABLE_CONTEXT MENU
+BEGIN
+    POPUP "CONTEXTMENU"
+    BEGIN
+        MENUITEM "コピー(&C)\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "時刻表に移動(&J)\tF7",              ID_OperationTable_MoveToJikokuhyou
+        MENUITEM "時刻表に移動して編集(&P)\tEnter",       ID_OperationTable_MoveToJikokuhyouOpenDlg
+        MENUITEM "ダイヤグラムに移動(&D)\tF8",           ID_OperationTable_MoveToDiagram
+    END
+END
+
+IDR_DOCVIEW_OperationTable MENU
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "新規作成(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "開く(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "閉じる(&C)",                     ID_FILE_CLOSE
+        MENUITEM "上書き保存(&S)\tCtrl+S",           ID_FILE_SAVE
+        MENUITEM "名前を付けて保存(&A)...",             ID_FILE_SAVE_AS
+        MENUITEM "自動バックアップを有効にする(&B)",          ID_FILE_BACKUP
+        MENUITEM "ウインドウ位置を復元する(&W)",            ID_FILE_WindowPlacementRestore
+        MENUITEM "運用表CSVファイルエクスポート(&E)...",     ID_FILE_EXPORT_OPERATIONTABLECSV
+        MENUITEM SEPARATOR
+        MENUITEM "印刷(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "印刷プレビュー(&V)",                 ID_FILE_PRINT_PREVIEW
+        MENUITEM "印刷ページ設定(&P)...",              ID_FILE_PrintPageProp
+        MENUITEM "プリンタの設定(&R)...",              ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近使ったファイル",                   ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "路線ファイルのプロパティ(&I)...",         ID_ROSEN_FILE_PROP
+        MENUITEM "ダイヤ一覧(&D)...",                ID_ROSEN_DIALIST
+        MENUITEM SEPARATOR
+        MENUITEM "アプリケーションの終了(&X)",             ID_APP_EXIT
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "元に戻す(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "やり直し(&R)\tCtrl+Y",            ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "コピー(&C)\tCtrl+C",             ID_EDIT_COPY
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "箱ダイヤ形式で表示する(&E)",             ID_VIEW_DisplayExtensionOperationTable
+        MENUITEM SEPARATOR
+        MENUITEM "秒単位の時刻表示をする(&B)",             ID_VIEW_DisplaySecondEkiJikoku
+        MENUITEM "コロン付きの時刻表記をする(&C)",           ID_VIEW_DisplayColonEkiJikoku
+        MENUITEM "親種別を有効にする(&O)",               ID_VIEW_DisplayParentSyubetsu
+        MENUITEM "上り列車の始発駅を左側にする(従来形式時のみ)(&N)", ID_VIEW_DisplayNoboriLeftToRight
+        MENUITEM "通過駅の駅時刻を表示する(箱ダイヤ時のみ)(&P)",   ID_VIEW_DisplayTsuukaEkiJikoku
+        MENUITEM "着発番線名を表示する(箱ダイヤ時のみ)(&T)",     ID_VIEW_DisplayTrackName
+        MENUITEM SEPARATOR
+        MENUITEM "ツール バー(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "ステータス バー(&S)",                ID_VIEW_STATUS_BAR
+    END
+    POPUP "移動(&M)"
+    BEGIN
+        MENUITEM "時刻表に移動(&J)\tF7",              ID_OperationTable_MoveToJikokuhyou
+        MENUITEM "時刻表に移動して編集(&P)\tEnter",       ID_OperationTable_MoveToJikokuhyouOpenDlg
+        MENUITEM "ダイヤグラムに移動(&D)\tF8",           ID_OperationTable_MoveToDiagram
+    END
+    POPUP "ウィンドウ(&W)"
+    BEGIN
+        MENUITEM "ペインの切替(&P)",                  ID_WINDOW_ROSEN_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "新しいウィンドウを開く(&N)",             ID_WINDOW_NEW
+        MENUITEM "重ねて表示(&C)",                   ID_WINDOW_CASCADE
+        MENUITEM "上下に並べて表示(&T)",                ID_WINDOW_TILE_HORZ
+        MENUITEM "左右に並べて表示(&V)",                ID_WINDOW_TILE_VERT
+        MENUITEM "アイコンの整列(&A)",                 ID_WINDOW_ARRANGE
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "目次...\tF1",                   ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "OuDiaSecond  のバージョン情報(&A)...", ID_APP_ABOUT
+    END
+END
+
+IDR_DOCVIEW_AllOperationTable MENU
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "新規作成(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "開く(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "閉じる(&C)",                     ID_FILE_CLOSE
+        MENUITEM "上書き保存(&S)\tCtrl+S",           ID_FILE_SAVE
+        MENUITEM "名前を付けて保存(&A)...",             ID_FILE_SAVE_AS
+        MENUITEM "自動バックアップを有効にする(&B)",          ID_FILE_BACKUP
+        MENUITEM "ウインドウ位置を復元する(&W)",            ID_FILE_WindowPlacementRestore
+        MENUITEM "運用表CSVファイルエクスポート(&E)...",     ID_FILE_EXPORT_OPERATIONTABLECSV
+        MENUITEM "運用一覧表CSVファイルエクスポート(&T)...",   ID_FILE_EXPORT_ALLOPERATIONTABLECSV
+        MENUITEM SEPARATOR
+        MENUITEM "印刷(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "印刷プレビュー(&V)",                 ID_FILE_PRINT_PREVIEW
+        MENUITEM "印刷ページ設定(&P)...",              ID_FILE_PrintPageProp
+        MENUITEM "プリンタの設定(&R)...",              ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近使ったファイル",                   ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "路線ファイルのプロパティ(&I)...",         ID_ROSEN_FILE_PROP
+        MENUITEM "ダイヤ一覧(&D)...",                ID_ROSEN_DIALIST
+        MENUITEM SEPARATOR
+        MENUITEM "アプリケーションの終了(&X)",             ID_APP_EXIT
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "元に戻す(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "やり直し(&R)\tCtrl+Y",            ID_EDIT_REDO
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "全列車を表示(&A)",                  ID_VIEW_DisplayAllRessya
+        MENUITEM "秒単位の時刻を表示(&B)",               ID_VIEW_DisplaySecondEkiJikoku
+        MENUITEM "コロン付きの時刻表記をする(&C)",           ID_VIEW_DisplayColonEkiJikoku
+        MENUITEM "親種別を有効にする(&O)",               ID_VIEW_DisplayParentSyubetsu
+        MENUITEM SEPARATOR
+        MENUITEM "運用一覧表のプロパティ(&P)\tShift+Enter", ID_AllOperationTableProp
+        MENUITEM SEPARATOR
+        MENUITEM "ツール バー(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "ステータス バー(&S)",                ID_VIEW_STATUS_BAR
+    END
+    POPUP "移動(&M)"
+    BEGIN
+        MENUITEM "運用表に移動(&O)\tEnter",           ID_AllOperationTable_MoveToOperationTable
+        MENUITEM "時刻表に移動(&J)\tF7",              ID_OperationTable_MoveToJikokuhyou
+        MENUITEM "ダイヤグラムに移動(&D)\tF8",           ID_OperationTable_MoveToDiagram
+        MENUITEM "時刻表に移動して出区駅作業編集(&S)\tF6",     ID_OperationTable_MoveToJikokuhyouOpenOperationDlg
+    END
+    POPUP "ウィンドウ(&W)"
+    BEGIN
+        MENUITEM "ペインの切替(&P)",                  ID_WINDOW_ROSEN_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "新しいウィンドウを開く(&N)",             ID_WINDOW_NEW
+        MENUITEM "重ねて表示(&C)",                   ID_WINDOW_CASCADE
+        MENUITEM "上下に並べて表示(&T)",                ID_WINDOW_TILE_HORZ
+        MENUITEM "左右に並べて表示(&V)",                ID_WINDOW_TILE_VERT
+        MENUITEM "アイコンの整列(&A)",                 ID_WINDOW_ARRANGE
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "目次...\tF1",                   ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "OuDiaSecond  のバージョン情報(&A)...", ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_ALLOPERATIONTABLE_CONTEXT MENU
+BEGIN
+    POPUP "CONTEXTMENU"
+    BEGIN
+        MENUITEM "運用表に移動(&O)\tEnter",           ID_AllOperationTable_MoveToOperationTable
+        MENUITEM "時刻表に移動(&J)\tF7",              ID_OperationTable_MoveToJikokuhyou
+        MENUITEM "ダイヤグラムに移動(&D)\tF8",           ID_OperationTable_MoveToDiagram
+        MENUITEM "時刻表に移動して出区駅作業編集(&S)\tF6",     ID_OperationTable_MoveToJikokuhyouOpenOperationDlg
+    END
+END
+
+IDR_DOCVIEW_AllOperationTable2 MENU
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "新規作成(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "開く(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "閉じる(&C)",                     ID_FILE_CLOSE
+        MENUITEM "上書き保存(&S)\tCtrl+S",           ID_FILE_SAVE
+        MENUITEM "名前を付けて保存(&A)...",             ID_FILE_SAVE_AS
+        MENUITEM "自動バックアップを有効にする(&B)",          ID_FILE_BACKUP
+        MENUITEM "ウインドウ位置を復元する(&W)",            ID_FILE_WindowPlacementRestore
+        MENUITEM SEPARATOR
+        MENUITEM "印刷(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "印刷プレビュー(&V)",                 ID_FILE_PRINT_PREVIEW
+        MENUITEM "印刷ページ設定(&P)...",              ID_FILE_PrintPageProp
+        MENUITEM "プリンタの設定(&R)...",              ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近使ったファイル",                   ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "路線ファイルのプロパティ(&I)...",         ID_ROSEN_FILE_PROP
+        MENUITEM "ダイヤ一覧(&D)...",                ID_ROSEN_DIALIST
+        MENUITEM SEPARATOR
+        MENUITEM "アプリケーションの終了(&X)",             ID_APP_EXIT
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "元に戻す(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "やり直し(&R)\tCtrl+Y",            ID_EDIT_REDO
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "横軸方向縮小(&Q)\tShift + ←",       ID_AllOperationTable2_XDgrSize_Inc
+        MENUITEM "横軸方向拡大(&W)\tShift + →",       ID_AllOperationTable2_XDgrSize_Dec
+        MENUITEM "横軸方向リセット(&R)",                ID_AllOperationTable2_XDgrSize_Reset
+        MENUITEM SEPARATOR
+        MENUITEM "横軸目盛を細かくする(&D)\tCtrl+ '+'",   ID_AllOperationTable2_Memori_Down
+        MENUITEM "横軸目盛を粗くする(&G)\tCtrl+ '-'",    ID_AllOperationTable2_Memori_Up
+        MENUITEM SEPARATOR
+        MENUITEM "出区・入区駅名時刻の表示(&J)\tCtrl+1",    ID_AllOperationTable2_EkimeiJikoku
+        MENUITEM "列車番号の表示(&B)\tCtrl+3",         ID_Diagram_Ressyabangou
+        MENUITEM "種別名の表示(&Y)\tCtrl+2",          ID_AllOperationTable2_SyubetsuRyakusyou
+        MENUITEM "列車名の表示(&I)\tCtrl+4",          ID_Diagram_Ressyamei
+        MENUITEM "始発・終着駅時刻の表示(&H)\tCtrl+5",     ID_AllOperationTable2_JikokuMinute
+        MENUITEM "親種別を有効にする(&O)",               ID_VIEW_DisplayParentSyubetsu
+        MENUITEM SEPARATOR
+        MENUITEM "ツール バー(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "ステータス バー(&S)",                ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "運用一覧図のプロパティ(&P)...\tShift+Enter", ID_AllOperationTable2_ViewProp
+    END
+    POPUP "ウィンドウ(&W)"
+    BEGIN
+        MENUITEM "ペインの切替(&P)",                  ID_WINDOW_ROSEN_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "新しいウィンドウを開く(&N)",             ID_WINDOW_NEW
+        MENUITEM "重ねて表示(&C)",                   ID_WINDOW_CASCADE
+        MENUITEM "上下に並べて表示(&T)",                ID_WINDOW_TILE_HORZ
+        MENUITEM "左右に並べて表示(&V)",                ID_WINDOW_TILE_VERT
+        MENUITEM "アイコンの整列(&A)",                 ID_WINDOW_ARRANGE
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "目次...\tF1",                   ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "OuDiaSecond  のバージョン情報(&A)...", ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_ALLOPERATION2VIEW_CONTEXT MENU
+BEGIN
+    POPUP "CONTEXTMENU"
+    BEGIN
+        MENUITEM "横軸方向縮小(&Q)\tShift + ←",       ID_Diagram_XDgrSize_Inc
+        MENUITEM "横軸方向拡大(&W)\tShift + →",       ID_Diagram_XDgrSize_Dec
+        MENUITEM "縦軸方向縮小(&L)\tShift + ↑",       ID_Diagram_YDgrSize_Inc
+        MENUITEM "縦軸方向拡大(&H)\tShift + ↓",       ID_Diagram_YDgrSize_Dec
+        MENUITEM "縦軸方向リセット(&R)",                ID_Diagram_YDgrSize_Reset
+        MENUITEM SEPARATOR
+        MENUITEM "横軸目盛を細かくする(&D)\tCtrl+ '+'",   ID_Diagram_Memori_Down
+        MENUITEM "横軸目盛を粗くする(&G)\tCtrl+ '-'",    ID_Diagram_Memori_Up
+    END
+END
+
+IDR_DOCVIEW_EkiJikokuhyou MENU
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "新規作成(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "開く(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "閉じる(&C)",                     ID_FILE_CLOSE
+        MENUITEM "上書き保存(&S)\tCtrl+S",           ID_FILE_SAVE
+        MENUITEM "名前を付けて保存(&A)...",             ID_FILE_SAVE_AS
+        MENUITEM "自動バックアップを有効にする(&B)",          ID_FILE_BACKUP
+        MENUITEM "ウインドウ位置を復元する(&W)",            ID_FILE_WindowPlacementRestore
+        MENUITEM "駅時刻表CSVファイルエクスポート(&E)...",    ID_FILE_EXPORT_EKIJIKOKUHYOUCSV
+        MENUITEM SEPARATOR
+        MENUITEM "印刷(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "印刷プレビュー(&V)",                 ID_FILE_PRINT_PREVIEW
+        MENUITEM "印刷ページ設定(&P)...",              ID_FILE_PrintPageProp
+        MENUITEM "プリンタの設定(&R)...",              ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近使ったファイル",                   ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "路線ファイルのプロパティ(&I)...",         ID_ROSEN_FILE_PROP
+        MENUITEM "ダイヤ一覧(&D)...",                ID_ROSEN_DIALIST
+        MENUITEM SEPARATOR
+        MENUITEM "アプリケーションの終了(&X)",             ID_APP_EXIT
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "元に戻す(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "やり直し(&R)\tCtrl+Y",            ID_EDIT_REDO
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "親種別を有効にする(&O)",               ID_VIEW_DisplayParentSyubetsu
+        MENUITEM "発車番線を表示する(&T)",               ID_VIEW_DisplayTrack
+        MENUITEM "当駅始発の列車に●印を表示する(&H)",         ID_VIEW_DisplayIsShihatsu
+        MENUITEM "種別変更を表示する(&C)",               ID_VIEW_DisplayClassChange
+        MENUITEM SEPARATOR
+        MENUITEM "ツール バー(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "ステータス バー(&S)",                ID_VIEW_STATUS_BAR
+    END
+    POPUP "移動(&M)"
+    BEGIN
+        MENUITEM "時刻表に移動(&J)\tEnter",           ID_EkiJikokuhyou_MoveToJikokuhyou
+        MENUITEM "ダイヤグラムに移動(&D)\tF8",           ID_EkiJikokuhyou_MoveToDiagram
+    END
+    POPUP "ウィンドウ(&W)"
+    BEGIN
+        MENUITEM "ペインの切替(&P)",                  ID_WINDOW_ROSEN_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "新しいウィンドウを開く(&N)",             ID_WINDOW_NEW
+        MENUITEM "重ねて表示(&C)",                   ID_WINDOW_CASCADE
+        MENUITEM "上下に並べて表示(&T)",                ID_WINDOW_TILE_HORZ
+        MENUITEM "左右に並べて表示(&V)",                ID_WINDOW_TILE_VERT
+        MENUITEM "アイコンの整列(&A)",                 ID_WINDOW_ARRANGE
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "目次...\tF1",                   ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "OuDiaSecond  のバージョン情報(&A)...", ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_EKIJIKOKUHYOU_CONTEXT MENU
+BEGIN
+    POPUP "CONTEXTMENU"
+    BEGIN
+        MENUITEM "時刻表に移動(&J)\tEnter",           ID_EkiJikokuhyou_MoveToJikokuhyou
+        MENUITEM "ダイヤグラムに移動(&D)\tF8",           ID_EkiJikokuhyou_MoveToDiagram
+    END
+END
+
+IDR_DOCVIEW_EkiJikokuhyouList MENU
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "新規作成(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "開く(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "閉じる(&C)",                     ID_FILE_CLOSE
+        MENUITEM "上書き保存(&S)\tCtrl+S",           ID_FILE_SAVE
+        MENUITEM "名前を付けて保存(&A)...",             ID_FILE_SAVE_AS
+        MENUITEM "自動バックアップを有効にする(&B)",          ID_FILE_BACKUP
+        MENUITEM "ウインドウ位置を復元する(&W)",            ID_FILE_WindowPlacementRestore
+        MENUITEM "全駅時刻表CSVファイルエクスポート(&E)...",   ID_FILE_EXPORT_ALLEKIJIKOKUHYOUCSV
+        MENUITEM SEPARATOR
+        MENUITEM "最近使ったファイル",                   ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "路線ファイルのプロパティ(&I)...",         ID_ROSEN_FILE_PROP
+        MENUITEM "ダイヤ一覧(&D)...",                ID_ROSEN_DIALIST
+        MENUITEM SEPARATOR
+        MENUITEM "アプリケーションの終了(&X)",             ID_APP_EXIT
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "元に戻す(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "やり直し(&R)\tCtrl+Y",            ID_EDIT_REDO
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "ツール バー(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "ステータス バー(&S)",                ID_VIEW_STATUS_BAR
+    END
+    POPUP "移動(&M)"
+    BEGIN
+        MENUITEM "駅時刻表を開く(&J)\tEnter",          ID_EkiJikokuhyouList_OpenEkiJikokuhyou
+    END
+    POPUP "ウィンドウ(&W)"
+    BEGIN
+        MENUITEM "ペインの切替(&P)",                  ID_WINDOW_ROSEN_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "新しいウィンドウを開く(&N)",             ID_WINDOW_NEW
+        MENUITEM "重ねて表示(&C)",                   ID_WINDOW_CASCADE
+        MENUITEM "上下に並べて表示(&T)",                ID_WINDOW_TILE_HORZ
+        MENUITEM "左右に並べて表示(&V)",                ID_WINDOW_TILE_VERT
+        MENUITEM "アイコンの整列(&A)",                 ID_WINDOW_ARRANGE
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "目次...\tF1",                   ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "OuDiaSecond  のバージョン情報(&A)...", ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_EKIJIKOKUHYOULIST_CONTEXT MENU
+BEGIN
+    POPUP "CONTEXTMENU"
+    BEGIN
+        MENUITEM "駅時刻表を開く(&J)\tEnter",          ID_EkiJikokuhyouList_OpenEkiJikokuhyou
+    END
+END
+
+IDR_MENU_INOUTLINKCODELIST_CONTEXT MENU
+BEGIN
+    POPUP "CONTEXTMENU"
+    BEGIN
+        MENUITEM "時刻表に移動(&J)\tEnter",           ID_InOutLinkCodeList_MoveToJikokuhyou
+    END
+END
+
+IDR_DOCVIEW_InOutLinkCodeList MENU
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "新規作成(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "開く(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "閉じる(&C)",                     ID_FILE_CLOSE
+        MENUITEM "上書き保存(&S)\tCtrl+S",           ID_FILE_SAVE
+        MENUITEM "名前を付けて保存(&A)...",             ID_FILE_SAVE_AS
+        MENUITEM "自動バックアップを有効にする(&B)",          ID_FILE_BACKUP
+        MENUITEM "ウインドウ位置を復元する(&W)",            ID_FILE_WindowPlacementRestore
+        MENUITEM SEPARATOR
+        MENUITEM "印刷(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "印刷プレビュー(&V)",                 ID_FILE_PRINT_PREVIEW
+        MENUITEM "印刷ページ設定(&P)...",              ID_FILE_PrintPageProp
+        MENUITEM "プリンタの設定(&R)...",              ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近使ったファイル",                   ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "路線ファイルのプロパティ(&I)...",         ID_ROSEN_FILE_PROP
+        MENUITEM "ダイヤ一覧(&D)...",                ID_ROSEN_DIALIST
+        MENUITEM SEPARATOR
+        MENUITEM "アプリケーションの終了(&X)",             ID_APP_EXIT
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "元に戻す(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "やり直し(&R)\tCtrl+Y",            ID_EDIT_REDO
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "ツール バー(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "ステータス バー(&S)",                ID_VIEW_STATUS_BAR
+    END
+    POPUP "移動(&M)"
+    BEGIN
+        MENUITEM "時刻表に移動(&J)\tEnter",           ID_CrossingCheck_MoveToJikokuhyou
+    END
+    POPUP "ウィンドウ(&W)"
+    BEGIN
+        MENUITEM "ペインの切替(&P)",                  ID_WINDOW_ROSEN_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "新しいウィンドウを開く(&N)",             ID_WINDOW_NEW
+        MENUITEM "重ねて表示(&C)",                   ID_WINDOW_CASCADE
+        MENUITEM "上下に並べて表示(&T)",                ID_WINDOW_TILE_HORZ
+        MENUITEM "左右に並べて表示(&V)",                ID_WINDOW_TILE_VERT
+        MENUITEM "アイコンの整列(&A)",                 ID_WINDOW_ARRANGE
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "目次...\tF1",                   ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "OuDiaSecond  のバージョン情報(&A)...", ID_APP_ABOUT
+    END
+END
+
+IDR_DOCVIEW_CrossingCheck MENU
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "新規作成(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "開く(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "閉じる(&C)",                     ID_FILE_CLOSE
+        MENUITEM "上書き保存(&S)\tCtrl+S",           ID_FILE_SAVE
+        MENUITEM "名前を付けて保存(&A)...",             ID_FILE_SAVE_AS
+        MENUITEM "自動バックアップを有効にする(&B)",          ID_FILE_BACKUP
+        MENUITEM "ウインドウ位置を復元する(&W)",            ID_FILE_WindowPlacementRestore
+        MENUITEM SEPARATOR
+        MENUITEM "印刷(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "印刷プレビュー(&V)",                 ID_FILE_PRINT_PREVIEW
+        MENUITEM "印刷ページ設定(&P)...",              ID_FILE_PrintPageProp
+        MENUITEM "プリンタの設定(&R)...",              ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近使ったファイル",                   ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "路線ファイルのプロパティ(&I)...",         ID_ROSEN_FILE_PROP
+        MENUITEM "ダイヤ一覧(&D)...",                ID_ROSEN_DIALIST
+        MENUITEM SEPARATOR
+        MENUITEM "アプリケーションの終了(&X)",             ID_APP_EXIT
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "元に戻す(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "やり直し(&R)\tCtrl+Y",            ID_EDIT_REDO
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "ツール バー(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "ステータス バー(&S)",                ID_VIEW_STATUS_BAR
+    END
+    POPUP "移動(&M)"
+    BEGIN
+        MENUITEM "時刻表に移動(&J)\tEnter",           ID_CrossingCheck_MoveToJikokuhyou
+        MENUITEM "ダイヤグラムに移動(&D)\tF8",           ID_CrossingCheck_MoveToDiagram
+    END
+    POPUP "ウィンドウ(&W)"
+    BEGIN
+        MENUITEM "ペインの切替(&P)",                  ID_WINDOW_ROSEN_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "新しいウィンドウを開く(&N)",             ID_WINDOW_NEW
+        MENUITEM "重ねて表示(&C)",                   ID_WINDOW_CASCADE
+        MENUITEM "上下に並べて表示(&T)",                ID_WINDOW_TILE_HORZ
+        MENUITEM "左右に並べて表示(&V)",                ID_WINDOW_TILE_VERT
+        MENUITEM "アイコンの整列(&A)",                 ID_WINDOW_ARRANGE
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "目次...\tF1",                   ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "OuDiaSecond  のバージョン情報(&A)...", ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_CROSSINGCHECK_CONTEXT MENU
+BEGIN
+    POPUP "CONTEXTMENU"
+    BEGIN
+        MENUITEM "時刻表に移動(&J)\tEnter",           ID_CrossingCheck_MoveToJikokuhyou
+        MENUITEM "ダイヤグラムに移動(&D)\tF8",           33125
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+END
+
+IDR_DOCVIEW_Eki ACCELERATORS
+BEGIN
+    VK_RETURN,      ID_EDIT_CrossingCheckRuleDlg, VIRTKEY, ALT, NOINVERT
+    VK_INSERT,      ID_EDIT_EkiInsert,      VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      ID_EDIT_EkiProp,        VIRTKEY, NOINVERT
+    VK_RETURN,      ID_EDIT_EkiProp,        VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_EDIT_EKITRACK2OPEN,  VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_Eki_SettingNext,     VIRTKEY, CONTROL, NOINVERT
+    VK_OEM_1,       ID_Eki_SettingNext2,    VIRTKEY, CONTROL, NOINVERT
+    VK_OEM_1,       ID_Eki_SettingNext3,    VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "J",            ID_Eki_SettingPrev,     VIRTKEY, CONTROL, NOINVERT
+    VK_OEM_PLUS,    ID_Eki_SettingPrev2,    VIRTKEY, CONTROL, NOINVERT
+    VK_OEM_PLUS,    ID_Eki_SettingPrev3,    VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CLEAR,          VIRTKEY, NOINVERT
+END
+
+IDR_DOCVIEW_Ressyasyubetsu ACCELERATORS
+BEGIN
+    VK_DOWN,        ID_Ressyasyubetsu_Down, VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_Ressyasyubetsu_Insert, VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      ID_Ressyasyubetsu_Prop, VIRTKEY, NOINVERT
+    VK_RETURN,      ID_Ressyasyubetsu_Prop, VIRTKEY, CONTROL, NOINVERT
+    VK_UP,          ID_Ressyasyubetsu_Up,   VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CLEAR,          VIRTKEY, NOINVERT
+END
+
+IDR_DOCVIEW_Jikokuhyou ACCELERATORS
+BEGIN
+    VK_DELETE,      ID_EDIT_CLEAR,          VIRTKEY, NOINVERT
+    "C",            ID_EDIT_OPERATIONCOPY,  VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "V",            ID_Edit_PasteEkiJikoku, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "C",            ID_EDIT_RESSYAJOUHOUCOPY, VIRTKEY, CONTROL, ALT, NOINVERT
+    VK_OEM_5,       ID_Jikokuhyou_Canceled, VIRTKEY, CONTROL, NOINVERT
+    VK_F8,          ID_Jikokuhyou_DiagramHeIdou, VIRTKEY, NOINVERT
+    "U",            ID_Jikokuhyou_Direct,   VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_OEM_COMMA,   ID_Jikokuhyou_EkijikokuAdjustStdOpeTime, VIRTKEY, CONTROL, NOINVERT
+    VK_OEM_COMMA,   ID_Jikokuhyou_EkijikokuAdjustStdOpeTimeRev, VIRTKEY, CONTROL, ALT, NOINVERT
+    "J",            ID_Jikokuhyou_EkijikokuDec, VIRTKEY, CONTROL, NOINVERT
+    VK_OEM_PLUS,    ID_Jikokuhyou_EkijikokuDecAny2SecNoMove, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_OEM_PLUS,    ID_Jikokuhyou_EkijikokuDecAnySecNoMove, VIRTKEY, CONTROL, NOINVERT
+    "J",            ID_Jikokuhyou_EkijikokuDecNoMove, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "J",            ID_Jikokuhyou_EkijikokuDecRev, VIRTKEY, CONTROL, ALT, NOINVERT
+    VK_OEM_PLUS,    ID_Jikokuhyou_EkijikokuDecRevAny2SecNoMove, VIRTKEY, SHIFT, CONTROL, ALT, NOINVERT
+    VK_OEM_PLUS,    ID_Jikokuhyou_EkijikokuDecRevAnySecNoMove, VIRTKEY, CONTROL, ALT, NOINVERT
+    "J",            ID_Jikokuhyou_EkijikokuDecRevNoMove, VIRTKEY, SHIFT, CONTROL, ALT, NOINVERT
+    "E",            ID_Jikokuhyou_EkijikokuErase, VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_Jikokuhyou_EkijikokuInc, VIRTKEY, CONTROL, NOINVERT
+    VK_OEM_1,       ID_Jikokuhyou_EkijikokuIncAny2SecNoMove, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_OEM_1,       ID_Jikokuhyou_EkijikokuIncAnySecNoMove, VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_Jikokuhyou_EkijikokuIncNoMove, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "L",            ID_Jikokuhyou_EkijikokuIncRev, VIRTKEY, CONTROL, ALT, NOINVERT
+    VK_OEM_1,       ID_Jikokuhyou_EkijikokuIncRevAny2SecNoMove, VIRTKEY, SHIFT, CONTROL, ALT, NOINVERT
+    VK_OEM_1,       ID_Jikokuhyou_EkijikokuIncRevAnySecNoMove, VIRTKEY, CONTROL, ALT, NOINVERT
+    "L",            ID_Jikokuhyou_EkijikokuIncRevNoMove, VIRTKEY, SHIFT, CONTROL, ALT, NOINVERT
+    "R",            ID_Jikokuhyou_EkijikokuInsert, VIRTKEY, CONTROL, NOINVERT
+    "K",            ID_Jikokuhyou_EkijikokuNext, VIRTKEY, CONTROL, NOINVERT
+    "K",            ID_Jikokuhyou_EkijikokuPrev, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_RETURN,      ID_Jikokuhyou_EkijikokuProp, VIRTKEY, NOINVERT
+    VK_DELETE,      ID_Jikokuhyou_JikokuSakujo, VIRTKEY, CONTROL, NOINVERT
+    VK_DIVIDE,      ID_Jikokuhyou_Keiyunasi, VIRTKEY, NOINVERT
+    VK_OEM_MINUS,   ID_Jikokuhyou_Keiyunasi, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_LEFT,        ID_Jikokuhyou_Left,     VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_Jikokuhyou_ModifyEkijikokuCmd, VIRTKEY, CONTROL, NOINVERT
+    VK_OEM_PERIOD,  ID_Jikokuhyou_ModifyEkijikokuCmdRepeat, VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      ID_Jikokuhyou_OperationProp, VIRTKEY, ALT, NOINVERT
+    "T",            ID_Jikokuhyou_Renzoku,  VIRTKEY, CONTROL, NOINVERT
+    VK_OEM_COMMA,   ID_Jikokuhyou_RessyaComplementStdOpeTime, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_INSERT,      ID_Jikokuhyou_RessyaInsert, VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      ID_Jikokuhyou_RessyaProp, VIRTKEY, CONTROL, NOINVERT
+    VK_RIGHT,       ID_Jikokuhyou_Right,    VIRTKEY, CONTROL, NOINVERT
+    "U",            ID_Jikokuhyou_Sihatsu,  VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_Jikokuhyou_Syuuchaku, VIRTKEY, CONTROL, NOINVERT
+    VK_OEM_MINUS,   ID_Jikokuhyou_Tsuuka,   VIRTKEY, CONTROL, NOINVERT
+    VK_SUBTRACT,    ID_Jikokuhyou_Tsuuka,   VIRTKEY, NOINVERT
+    VK_OEM_MINUS,   ID_Jikokuhyou_TsuukaTeisya, VIRTKEY, ALT, NOINVERT
+    "I",            ID_Jikokuhyou_Undirect, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_RETURN,      ID_Jikokuhyou_ViewProp, VIRTKEY, SHIFT, NOINVERT
+    VK_F5,          ID_VIEW_UPDATEOPERATION, VIRTKEY, NOINVERT
+    "B",            ID_Jikokuhyou_Canceled, VIRTKEY, CONTROL, NOINVERT
+END
+
+IDR_DOCVIEW_Diagram ACCELERATORS
+BEGIN
+    VK_OEM_PLUS,    ID_Diagram_Memori_Down, VIRTKEY, CONTROL, NOINVERT
+    VK_OEM_PLUS,    ID_Diagram_Memori_Down, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_OEM_MINUS,   ID_Diagram_Memori_Up,   VIRTKEY, CONTROL, NOINVERT
+    "3",            ID_Diagram_Ressyabangou, VIRTKEY, CONTROL, NOINVERT
+    "4",            ID_Diagram_Ressyamei,   VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      ID_Diagram_ViewProp,    VIRTKEY, SHIFT, NOINVERT
+    VK_RIGHT,       ID_Diagram_XDgrSize_Dec, VIRTKEY, SHIFT, NOINVERT
+    VK_LEFT,        ID_Diagram_XDgrSize_Inc, VIRTKEY, SHIFT, NOINVERT
+    VK_DOWN,        ID_Diagram_YDgrSize_Dec, VIRTKEY, SHIFT, NOINVERT
+    VK_UP,          ID_Diagram_YDgrSize_Inc, VIRTKEY, SHIFT, NOINVERT
+    VK_F5,          ID_VIEW_UPDATE,         VIRTKEY, NOINVERT
+END
+
+IDR_DOCVIEW_Comment ACCELERATORS
+BEGIN
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    VK_F3,          ID_EDIT_REPEAT,         VIRTKEY, NOINVERT
+    "H",            ID_EDIT_REPLACE,        VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+END
+
+IDR_DOCVIEW_EkiTrack2 ACCELERATORS
+BEGIN
+    VK_RETURN,      ID_EkiTrack2_Prop,      VIRTKEY, NOINVERT
+    VK_RETURN,      ID_EkiTrack2_Prop,      VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EkiTrack2_Insert,    VIRTKEY, CONTROL, NOINVERT
+END
+
+IDR_DOCVIEW_AllOperationTable ACCELERATORS
+BEGIN
+    VK_RETURN,      ID_AllOperationTable_MoveToOperationTable, VIRTKEY, NOINVERT
+    VK_RETURN,      ID_AllOperationTableProp, VIRTKEY, SHIFT, NOINVERT
+    VK_F8,          ID_OperationTable_MoveToDiagram, VIRTKEY, NOINVERT
+    VK_F7,          ID_OperationTable_MoveToJikokuhyou, VIRTKEY, NOINVERT
+    VK_F6,          ID_OperationTable_MoveToJikokuhyouOpenOperationDlg, VIRTKEY, NOINVERT
+END
+
+IDR_DOCVIEW_AllOperationTable2 ACCELERATORS
+BEGIN
+    VK_OEM_PLUS,    ID_AllOperationTable2_Memori_Down, VIRTKEY, CONTROL, NOINVERT
+    VK_OEM_MINUS,   ID_AllOperationTable2_Memori_Up, VIRTKEY, CONTROL, NOINVERT
+    "3",            ID_Diagram_Ressyabangou, VIRTKEY, CONTROL, NOINVERT
+    "4",            ID_Diagram_Ressyamei,   VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      ID_AllOperationTable2_ViewProp, VIRTKEY, SHIFT, NOINVERT
+    VK_RIGHT,       ID_AllOperationTable2_XDgrSize_Dec, VIRTKEY, SHIFT, NOINVERT
+    VK_LEFT,        ID_AllOperationTable2_XDgrSize_Inc, VIRTKEY, SHIFT, NOINVERT
+    "1",            ID_AllOperationTable2_EkimeiJikoku, VIRTKEY, CONTROL, NOINVERT
+    "2",            ID_AllOperationTable2_SyubetsuRyakusyou, VIRTKEY, CONTROL, NOINVERT
+    "5",            ID_AllOperationTable2_JikokuMinute, VIRTKEY, CONTROL, NOINVERT
+    VK_OEM_PLUS,    ID_AllOperationTable2_Memori_Down, VIRTKEY, SHIFT, CONTROL, NOINVERT
+END
+
+IDR_DOCVIEW_EkiJikokuhyouList ACCELERATORS
+BEGIN
+    VK_RETURN,      ID_EkiJikokuhyouList_OpenEkiJikokuhyou, VIRTKEY, NOINVERT
+END
+
+IDR_DOCVIEW_InOutLinkCodeList ACCELERATORS
+BEGIN
+    VK_RETURN,      ID_InOutLinkCodeList_MoveToJikokuhyou, VIRTKEY, NOINVERT
+END
+
+IDR_DOCVIEW_CrossingCheck ACCELERATORS
+BEGIN
+    VK_F8,          ID_CrossingCheck_MoveToDiagram, VIRTKEY, NOINVERT
+    VK_RETURN,      ID_CrossingCheck_MoveToJikokuhyou, VIRTKEY, NOINVERT
+END
+
+IDR_DOCVIEW_OperationTable ACCELERATORS
+BEGIN
+    VK_F7,          ID_OperationTable_MoveToJikokuhyou, VIRTKEY, NOINVERT
+    VK_RETURN,      ID_OperationTable_MoveToJikokuhyouOpenDlg, VIRTKEY, NOINVERT
+    VK_F8,          ID_OperationTable_MoveToDiagram, VIRTKEY, NOINVERT
+END
+
+IDR_DOCVIEW_EkiJikokuhyou ACCELERATORS
+BEGIN
+    VK_F8,          ID_EkiJikokuhyou_MoveToDiagram, VIRTKEY, NOINVERT
+    VK_RETURN,      ID_EkiJikokuhyou_MoveToJikokuhyou, VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ROSEN_VIEW DIALOGEX 0, 0, 105, 160
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    CONTROL         "Tree1",IDC_TREE_ROSEN,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_HSCROLL | WS_TABSTOP,1,1,82,128
+END
+
+IDD_RosenFileProp_Rosen DIALOGEX 0, 0, 235, 198
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_BORDER
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    LTEXT           "路線名(&N)：",IDC_STATIC,6,10,40,8
+    EDITTEXT        IDC_EDIT_RosenName,47,7,84,13,ES_AUTOHSCROLL
+    LTEXT           "下りダイヤ名(&D)：",IDC_STATIC,6,27,57,8
+    EDITTEXT        IDC_EDIT_KudariDiaAlias,59,25,50,13,ES_AUTOHSCROLL
+    LTEXT           "上り(&P)：",IDC_STATIC,114,27,33,8
+    EDITTEXT        IDC_EDIT_NoboriDiaAlias,144,25,50,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,6,44,222,1
+    LTEXT           "駅名欄の幅(&S)：",IDC_STATIC,6,54,53,8
+    EDITTEXT        IDC_EDIT_EkimeiLength,74,51,23,13,ES_AUTOHSCROLL
+    LTEXT           "文字（全角）",IDC_STATIC,101,54,44,8
+    LTEXT           "運用機能(&O)：",IDC_STATIC,6,73,45,8
+    COMBOBOX        IDC_COMBO_EnableOperation,52,71,58,54,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "下り⇔上りの折り返しで、運用番号を反転させる(&V)",IDC_EDIT_OperationNumberReverse,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,89,158,10
+    LTEXT           "運用番号欄の段数(&R)：",IDC_STATIC,6,108,76,8
+    EDITTEXT        IDC_EDIT_OperationNumberRows,82,106,23,13,ES_AUTOHSCROLL
+    LTEXT           "段",IDC_STATIC,109,108,14,8
+    CONTROL         "ダイヤグラム起点時刻を挟んで運用を接続する(&K)",IDC_EDIT_OperationCrossKitenJikoku,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,124,158,10
+    LTEXT           "基準運転時分取得元ダイヤ(&U)：",IDC_STATIC,6,142,97,8
+    COMBOBOX        IDC_COMBO_KijunDiaIndex,103,140,101,54,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "隠し種別機能を無効にする(&D)",IDC_EDIT_DisableHiddenSyubetsu,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,158,229,10
+    DEFPUSHBUTTON   "OK",IDOK,137,176,39,14,NOT WS_VISIBLE
+    PUSHBUTTON      "キャンセル",IDCANCEL,189,176,39,14,NOT WS_VISIBLE
+    LTEXT           "路線",IDC_STATIC_TABNAME,213,7,15,8,NOT WS_VISIBLE
+END
+
+IDD_RosenFileProp_FontColor DIALOGEX 0, 0, 248, 170
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    LTEXT           "フォント設定(&F):",-1,6,7,46,8
+    LTEXT           "時刻表ビュー 1,時刻表ビュー 2,時刻表ビュー 3,時刻表ビュー 4,時刻表ビュー 5,時刻表ビュー 6,時刻表ビュー 7,時刻表ビュー 8,時刻表ビュー 縦書き,ダイヤグラムビュー 駅名,ダイヤグラムビュー 時刻,ダイヤグラムビュー 列車,運用・運用一覧,運用一覧図 始発終着分表示,コメント",IDC_LIST_FONT_ITEMS,55,7,114,8,NOT WS_VISIBLE
+    LISTBOX         IDC_LIST_FONT,6,15,113,46,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "変更(&H)...",IDC_BUTTON_FONT_CHANGE,80,64,38,14
+    LTEXT           "Static",IDC_STATIC_FONT,123,16,79,62,NOT WS_VISIBLE | WS_BORDER
+    LTEXT           "色設定(&C):",-1,6,99,45,8
+    LTEXT           "ダイヤ画面文字色,ダイヤ画面縦横軸色,ダイヤ画面背景基本色,ダイヤ画面背景個別色1,ダイヤ画面背景個別色2,ダイヤ画面背景個別色3,ダイヤ画面背景個別色4,時刻表画面背景色1,時刻表画面背景色2,時刻表画面背景色3,時刻表画面背景色4,基準運転時分未満時背景色,基準運転時分超過時背景色,基準運転時分未定義時背景色,基準運転時分不適切時背景色,運用・運用一覧・駅時刻表文字色,運用・運用一覧・駅時刻表枠色",IDC_LIST_COLOR_ITEMS,51,99,142,8,NOT WS_VISIBLE
+    LISTBOX         IDC_LIST_COLOR,6,107,113,35,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "変更(&A)...",IDC_BUTTON_COLOR_CHANGE,81,145,38,14
+    LTEXT           "Static",IDC_STATIC_COLOR,122,107,79,52,NOT WS_VISIBLE | WS_BORDER | NOT WS_GROUP
+    LTEXT           "フォント・色",IDC_STATIC_TABNAME,208,7,33,8,NOT WS_VISIBLE
+END
+
+IDD_RosenFileProp DIALOGEX 0, 0, 263, 218
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "路線ファイルのプロパティ"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_MAIN,"SysTabControl32",WS_TABSTOP,2,1,259,199
+    DEFPUSHBUTTON   "OK",IDOK,154,201,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,209,201,50,14
+END
+
+IDD_RosenFileProp_Diagram DIALOGEX 0, 0, 188, 134
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    LTEXT           "ダイヤグラム起点時刻(&L)：",IDC_STATIC,6,13,90,8
+    EDITTEXT        IDC_EDIT_DiagramKitenJikoku,105,10,35,13,ES_AUTOHSCROLL
+    LTEXT           "ダイヤグラム画面",IDC_STATIC_TABNAME,128,7,52,8,NOT WS_VISIBLE
+    LTEXT           "ダイヤグラム起点時刻の入力が正しくありません。\n00:00 の形式で入力してください。",IDC_STATIC_ERROR_KitenJikoku,6,119,248,8,NOT WS_VISIBLE
+    LTEXT           "ダイヤグラムの既定の駅間幅(&Y)：",IDC_STATIC,6,30,99,8
+    EDITTEXT        IDC_EDIT_DiagramDgrYZahyouKyoriDefault,105,27,35,13,ES_AUTOHSCROLL
+    LTEXT           "(秒相当)",IDC_STATIC,144,30,29,8
+    LTEXT           "ダイヤグラムの既定の駅間隔が正しくありません",IDC_STATIC_ERROR_DiagramDgrYZahyouKyoriDefault,6,109,141,8,NOT WS_VISIBLE
+    COMBOBOX        IDC_COMBO_DisplayOuterTerminal,109,45,71,54,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "路線外発着列車の表示形式(&O)：",IDC_STATIC,6,48,101,8
+END
+
+IDD_EkiProp DIALOGEX 0, 0, 552, 350
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "駅のプロパティ"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    LTEXT           "駅名：",IDC_STATIC,7,8,21,8
+    EDITTEXT        IDC_EDIT_Ekimei,37,6,91,13,ES_AUTOHSCROLL
+    LTEXT           "駅名略称(時刻表)：",IDC_STATIC,132,8,57,8
+    EDITTEXT        IDC_EDIT_EkimeiJikokuhyouRyaku,195,6,49,13,ES_AUTOHSCROLL
+    LTEXT           "駅名略称(運用一覧図)：",IDC_STATIC,132,22,68,8
+    EDITTEXT        IDC_EDIT_EkimeiDiagramRyaku,204,20,40,13,ES_AUTOHSCROLL
+    GROUPBOX        "駅時刻形式",IDC_STATIC,7,24,120,44
+    CONTROL         "発時刻",IDC_RADIO_Jikokukeisiki,"Button",BS_AUTORADIOBUTTON | WS_GROUP,13,32,37,10
+    CONTROL         "発着",IDC_RADIO_Jikokukeisiki2,"Button",BS_AUTORADIOBUTTON,70,32,30,10
+    CONTROL         "下り着時刻",IDC_RADIO_Jikokukeisiki3,"Button",BS_AUTORADIOBUTTON,13,43,49,10
+    CONTROL         "上り着時刻",IDC_RADIO_Jikokukeisiki4,"Button",BS_AUTORADIOBUTTON,70,43,55,10
+    CONTROL         "下り発着",IDC_RADIO_Jikokukeisiki5,"Button",BS_AUTORADIOBUTTON,13,54,42,10
+    CONTROL         "上り発着",IDC_RADIO_Jikokukeisiki6,"Button",BS_AUTORADIOBUTTON,70,54,55,10
+    GROUPBOX        "駅規模",IDC_STATIC,131,34,54,34,WS_GROUP
+    CONTROL         "一般駅",IDC_RADIO_Ekikibo,"Button",BS_AUTORADIOBUTTON | WS_GROUP,137,45,37,10
+    CONTROL         "主要駅",IDC_RADIO_Ekikibo2,"Button",BS_AUTORADIOBUTTON,137,55,37,10
+    GROUPBOX        "ダイヤグラム列車情報",IDC_STATIC,443,258,93,49,WS_GROUP
+    LTEXT           "下り",IDC_STATIC,448,271,13,8
+    COMBOBOX        IDC_COMBO_DiagramRessyajouhouHyoujiKudari,471,269,58,46,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "上り",IDC_STATIC,448,288,13,8
+    COMBOBOX        IDC_COMBO_DiagramRessyajouhouHyoujiNobori,471,286,58,46,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "駅時刻を駅時刻形式で正規化",IDC_CHECK_AdjustByEkijikokukeisiki,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,189,40,58,28
+    GROUPBOX        "路線外始発終着駅設定",IDC_STATIC,7,190,235,91
+    PUSHBUTTON      "駅名追加",IDC_BUTTON_OuterEkimeiAdd,179,199,48,18
+    PUSHBUTTON      "プロパティ",IDC_BUTTON_OuterEkimeiProp,179,219,48,18
+    PUSHBUTTON      "駅名削除",IDC_BUTTON_OuterEkimeiClear,179,239,48,18
+    LTEXT           "次駅までの距離(任意)：",IDC_STATIC,260,278,70,8
+    EDITTEXT        IDC_EDIT_NextEkiDistance,332,275,23,13,ES_AUTOHSCROLL
+    LTEXT           "(0の場合は自動)",IDC_STATIC,387,278,50,8
+    CONTROL         "",IDC_LIST_EkiTrack2,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,12,85,199,73,WS_EX_LEFTSCROLLBAR
+    PUSHBUTTON      "番線追加",IDC_BUTTON_EkiTrack2Add,12,164,48,18
+    PUSHBUTTON      "プロパティ",IDC_BUTTON_EkiTrack2Prop,61,164,48,18
+    PUSHBUTTON      "番線削除",IDC_BUTTON_EkiTrack2Clear,111,164,48,18
+    PUSHBUTTON      "上へ",IDC_BUTTON_EkiTrack2Up,162,164,35,18
+    PUSHBUTTON      "下へ",IDC_BUTTON_EkiTrack2Down,199,164,35,18
+    PUSHBUTTON      "下り主本線を\n変更する",IDC_BUTTON_EkiTrack2DownMain,213,79,49,26,BS_MULTILINE
+    PUSHBUTTON      "上り主本線を\n変更する",IDC_BUTTON_EkiTrack2UpMain,213,106,49,26,BS_MULTILINE
+    GROUPBOX        "分岐・環状線設定",IDC_STATIC,7,284,235,59
+    CONTROL         "この駅を分岐駅にする",IDC_CHECK_Brunch,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,297,95,10
+    LTEXT           "分岐元の駅",IDC_STATIC_BRUNCH,127,298,35,8
+    COMBOBOX        IDC_COMBO_BrunchCoreEkiIndex,175,295,58,79,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "この駅を環状線の終点駅にする",IDC_CHECK_Loop,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,312,110,10
+    LTEXT           "起点駅",IDC_STATIC_LOOP,141,313,31,9
+    COMBOBOX        IDC_COMBO_LoopOriginEkiIndex,175,311,58,79,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "分岐駅・環状線の接続方向を反転させる",IDC_CHECK_BrunchLoopOpposite,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,327,136,10
+    CONTROL         "",IDC_CHECK_JikokuhyouTrackDisplayKudari,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,321,118,16,10
+    CONTROL         "",IDC_CHECK_JikokuhyouTrackDisplayNobori,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,435,118,16,10
+    CONTROL         "この駅の在線表を表示する",IDC_CHECK_DiagramTrackDisplay,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,258,260,95,10
+    CONTROL         "この駅の発着番線を省略する",IDC_CHECK_JikokuhyouTrackOmit,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,277,65,102,10
+    DEFPUSHBUTTON   "OK",IDOK,435,329,40,14,WS_GROUP
+    PUSHBUTTON      "キャンセル",IDCANCEL,481,329,40,14
+    LTEXT           "駅名が長すぎます。\n駅名の長さは58文字(半角)までです。",IDC_ERR_EkimeiTooLong,425,311,52,8,NOT WS_VISIBLE
+    LTEXT           "分岐駅設定を有効にするときは、\n基幹駅を選択してください。",IDC_ERR_BRUNCH_EKIINDEX,509,306,36,14,NOT WS_VISIBLE
+    LTEXT           "分岐駅設定を有効にするときは、\n駅規模を主要駅に指定してください。",IDC_ERR_BRUNCH_EKIKIBO,398,328,37,8,NOT WS_VISIBLE
+    LTEXT           "分岐駅設定を有効にし、下方駅に接続するときは\n駅時刻形式を下り着時刻にしてください。",IDC_ERR_BRUNCH_EKIJIKOKUKEISIKI_DOWNCHAKU,387,318,31,8,NOT WS_VISIBLE
+    LTEXT           "分岐駅設定を有効にし、上方駅に接続するときは\n駅時刻形式を上り着時刻にしてください。",IDC_ERR_BRUNCH_EKIJIKOKUKEISIKI_UPCHAKU,419,320,33,8,NOT WS_VISIBLE
+    LTEXT           "環状線設定を有効にするときは、\n起点駅を選択してください。",IDC_ERR_LOOP_EKIINDEX,385,329,36,14,NOT WS_VISIBLE
+    LTEXT           "環状線設定を有効にするときは、\n駅規模を主要駅に指定してください。",IDC_ERR_LOOP_EKIKIBO,399,335,37,8,NOT WS_VISIBLE
+    LTEXT           "環状線設定を有効にするときは\n駅時刻形式を発着もしくは下り着時刻にしてください。",IDC_ERR_LOOP_EKIJIKOKUKEISIKI_HATSUCHAKU_DOWNCHAKU,381,326,31,8,NOT WS_VISIBLE
+    LTEXT           "駅名が指定されていません。",IDC_ERR_EkimeiEmpty,477,309,32,8,NOT WS_VISIBLE
+    LTEXT           "入力した駅名は既に存在します",IDC_ERROR_OuterEkimeiExist,453,316,25,11,NOT WS_VISIBLE
+    LTEXT           "(秒相当)",IDC_STATIC,359,278,26,8
+    GROUPBOX        "前後作業欄設定",IDC_STATIC,278,17,260,44,WS_GROUP
+    LTEXT           "下り前/上り後作業",IDC_STATIC,283,31,56,8
+    COMBOBOX        IDC_COMBO_JikokuhyouOperationOrigin,353,27,39,85,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "下り後/上り前作業",IDC_STATIC,283,45,56,8
+    COMBOBOX        IDC_COMBO_JikokuhyouOperationTerminal,353,43,39,76,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_LIST_OuterTerminalEkimei2,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,13,202,150,73,WS_EX_LEFTSCROLLBAR
+    PUSHBUTTON      "上へ",IDC_BUTTON_OuterEkimeiUp,168,258,35,18
+    PUSHBUTTON      "下へ",IDC_BUTTON_OuterEkimeiDown,204,258,35,18
+    LTEXT           "着発番線：",IDC_STATIC,274,118,37,8
+    LTEXT           "列車番号：",IDC_STATIC,274,143,37,8
+    LTEXT           "運用番号：",IDC_STATIC,274,158,37,8
+    LTEXT           "列車種別：",IDC_STATIC,274,189,37,8
+    LTEXT           "列車名：",IDC_STATIC,274,204,37,8
+    COMBOBOX        IDC_COMBO_JikokuhyouRessyabangouDisplayKudari,318,142,100,59,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_JikokuhyouOperationNumberDisplayKudari,318,157,100,75,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_JikokuhyouRessyaSyubetsuDisplayKudari,318,187,100,62,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_JikokuhyouRessyameiDisplayKudari,318,202,100,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_JikokuhyouRessyabangouDisplayNobori,431,142,100,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_JikokuhyouOperationNumberDisplayNobori,431,157,100,74,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_JikokuhyouRessyaSyubetsuDisplayNobori,431,187,100,63,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_JikokuhyouRessyameiDisplayNobori,431,202,100,73,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_CHECK_JikokuhyouChakuJikokuDisplayKudari,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,321,105,16,10
+    CONTROL         "",IDC_CHECK_JikokuhyouChakuJikokuDisplayNobori,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,435,105,16,10
+    LTEXT           "着時刻：",IDC_STATIC,274,105,37,8
+    CONTROL         "",IDC_CHECK_JikokuhyouHatsuJikokuDisplayKudari,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,321,130,16,10
+    CONTROL         "",IDC_CHECK_JikokuhyouHatsuJikokuDisplayNobori,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,435,130,16,10
+    LTEXT           "発時刻：",IDC_STATIC,274,130,37,8
+    GROUPBOX        "下り時刻表",IDC_STATIC,314,93,109,148
+    GROUPBOX        "上り時刻表",IDC_STATIC,427,93,109,148
+    GROUPBOX        "番線設定",IDC_STATIC,7,72,258,116
+    GROUPBOX        "時刻表表示設定",IDC_STATIC,270,6,275,74
+    GROUPBOX        "カスタマイズ時刻表表示設定",IDC_STATIC,270,81,271,163
+    GROUPBOX        "ダイヤグラム表示設定",IDC_STATIC,251,249,294,62
+    LTEXT           "駅名略称(時刻表)が長すぎます。\n駅名の長さは58文字(半角)までです。",IDC_ERR_EkimeiJikokuhyouRyakuTooLong,479,321,30,8,NOT WS_VISIBLE
+    LTEXT           "駅名略称(運用一覧)が長すぎます。\n駅名の長さは58文字(半角)までです。",IDC_ERR_EkimeiDiagramRyakuTooLong,515,318,30,8,NOT WS_VISIBLE
+    COMBOBOX        IDC_COMBO_DiagramColorNextEki,347,293,58,46,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "この駅から次駅間の背景色：",IDC_STATIC,260,295,82,8
+    GROUPBOX        "運用表表示設定",IDC_STATIC,251,312,130,31
+    CONTROL         "箱ダイヤ時、この駅の時刻を表示する",IDC_CHECK_OperationTableDisplayJikoku,
+                    "Button",BS_AUTO3STATE | WS_TABSTOP,258,324,118,10
+    COMBOBOX        IDC_COMBO_JikokuhyouOperationNumberDisplayRowsKudari,318,172,33,73,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_JikokuhyouOperationNumberDisplayRowsNobori,431,172,33,73,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "下り増結/上り解結",IDC_CHECK_JikokuhyouOperationOriginDownBeforeUpAfter,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,401,30,65,10
+    CONTROL         "下り解結/上り増結",IDC_CHECK_JikokuhyouOperationOriginDownAfterUpBefore,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,471,30,65,10
+    CONTROL         "下り増結/上り解結",IDC_CHECK_JikokuhyouOperationTerminalDownBeforeUpAfter,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,401,43,67,10
+    CONTROL         "下り解結/上り増結",IDC_CHECK_JikokuhyouOperationTerminalDownAfterUpBefore,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,471,43,64,10
+    CONTROL         "",IDC_CHECK_JikokuhyouOuterSihatsuDisplayKudari,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,321,217,16,10
+    CONTROL         "",IDC_CHECK_JikokuhyouOuterShuchakuDisplayKudari,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,321,230,16,10
+    CONTROL         "",IDC_CHECK_JikokuhyouOuterSihatsuDisplayNobori,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,435,217,16,10
+    CONTROL         "",IDC_CHECK_JikokuhyouOuterShuchakuDisplayNobori,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,435,230,16,10
+    LTEXT           "運番段数：",IDC_STATIC,274,174,37,8
+    LTEXT           "始発駅：",IDC_STATIC,274,219,33,9
+    LTEXT           "終着駅：",IDC_STATIC,274,231,37,8
+    PUSHBUTTON      "在線表省略を\n切り替える",IDC_BUTTON_DiagramTrackOmitSwitch,213,136,49,26,BS_MULTILINE
+END
+
+IDD_RessyasyubetsuProp DIALOGEX 0, 0, 213, 183
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "列車種別のプロパティ"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    LTEXT           "種別名(&N)：",IDC_STATIC,7,9,39,8
+    EDITTEXT        IDC_EDIT_Syubetsumei,47,7,77,13,ES_AUTOHSCROLL
+    LTEXT           "種別略称(&S)：",IDC_STATIC,128,9,45,8
+    EDITTEXT        IDC_EDIT_Ryakusyou,173,7,32,13,ES_AUTOHSCROLL
+    LTEXT           "親種別設定：",IDC_STATIC,7,26,42,8
+    COMBOBOX        IDC_COMBO_ParentSyubetsu,50,24,65,53,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "隠し種別(&H)",IDC_CHECK_Hidden,"Button",BS_AUTO3STATE | WS_GROUP | WS_TABSTOP,130,25,57,10
+    LTEXT           "文字色：",IDC_STATIC,7,45,28,8
+    LTEXT           "Static",IDC_STATIC_JikokuhyouMojiColor,38,42,19,14,NOT WS_VISIBLE | WS_BORDER
+    PUSHBUTTON      "色変更(&T)...",IDC_BUTTON_JikokuhyouMojiColor,60,42,41,14
+    LTEXT           "背景色：",IDC_STATIC,110,45,28,8
+    LTEXT           "Static",IDC_STATIC_JikokuhyouBackColor,140,42,19,14,NOT WS_VISIBLE | WS_BORDER
+    PUSHBUTTON      "色変更(&A)...",IDC_BUTTON_JikokuhyouBackColor,163,42,41,14
+    GROUPBOX        "時刻表",IDC_STATIC,7,58,198,31
+    LTEXT           "Static",IDC_STATIC_JikokuhyouFont,13,69,31,14,NOT WS_VISIBLE | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_JikokuhyouFont2,48,69,31,14,NOT WS_VISIBLE | WS_BORDER
+    LTEXT           "フォント(&F):",IDC_STATIC,84,72,32,8
+    COMBOBOX        IDC_COMBO_JikokuhyouFontIndex,119,70,39,99,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "ダイヤグラム線",IDC_STATIC,7,92,198,67
+    LTEXT           "Static",IDC_STATIC_DiagramSen,13,103,31,14,NOT WS_VISIBLE | WS_BORDER
+    PUSHBUTTON      "色変更(&L)...",IDC_BUTTON_DiagramSeniColor,47,103,41,14
+    LTEXT           "線スタイル(&Y)：",IDC_STATIC,13,124,50,11
+    COMBOBOX        IDC_COMBO_DiagramSenStyle,66,122,53,56,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "太線(&B)",IDC_CHECK_DiagramSenStyleIsBold,"Button",BS_AUTO3STATE | WS_GROUP | WS_TABSTOP,126,123,39,10
+    LTEXT           "停車駅明示(&O)：",IDC_STATIC,13,142,53,11
+    COMBOBOX        IDC_COMBO_StopMarkDrawType,66,140,65,53,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,83,161,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,138,161,50,14
+    LTEXT           "種別名が指定されていません",IDC_ERROR_SyubetsumeiEmpty,118,60,87,8,NOT WS_VISIBLE
+    LTEXT           "略称が長すぎます。\n半角で6文字以下にしてください。",IDC_ERROR_RyakusyouLength,171,93,34,12,NOT WS_VISIBLE
+END
+
+IDD_DiaList DIALOGEX 0, 0, 187, 127
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ダイヤ一覧"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    LTEXT           "ダイヤ",IDC_STATIC,7,7,20,8
+    LISTBOX         IDC_LIST_Dia,7,17,120,88,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "新規作成(&N)...",IDC_BUTTON_NEW,130,7,50,14
+    PUSHBUTTON      "プロパティ(&P)...",IDC_BUTTON_PROP,130,23,50,14
+    PUSHBUTTON      "複製(&C)...",IDC_BUTTON_COPY,130,39,50,14
+    PUSHBUTTON      "削除(&R)",IDC_BUTTON_DELETE,130,55,50,14
+    PUSHBUTTON      "上へ(&U)",IDC_BUTTON_UP,130,71,50,14
+    PUSHBUTTON      "下へ(&D)",IDC_BUTTON_DOWN,130,87,50,14
+    PUSHBUTTON      "閉じる",IDCANCEL,131,103,49,14
+    DEFPUSHBUTTON   "OK",IDOK,115,7,9,14,NOT WS_VISIBLE
+    LTEXT           "ダイヤ %s を削除します。\nよろしいですか？",IDC_STATIC_ERROR_DeleteDiaPrompt,7,99,78,19,NOT WS_VISIBLE
+    LTEXT           "ダイヤの削除",IDC_STATIC_ERROR_DeleteDiaPrompt2,87,99,44,19,NOT WS_VISIBLE
+END
+
+IDD_DiaProp DIALOGEX 0, 0, 162, 148
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ダイヤのプロパティ"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    LTEXT           "ダイヤ名(&N)：",IDC_STATIC,7,7,39,8
+    EDITTEXT        IDC_EDIT_Name,7,19,110,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,44,128,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,105,128,50,14
+    LTEXT           "ダイヤ名が指定されていません",IDC_STATIC_ERROR_NameNotSet,146,7,9,8,NOT WS_VISIBLE
+    LTEXT           "Static",IDC_STATIC_JikokuhyouMainBackColor,7,38,31,14,NOT WS_VISIBLE | WS_BORDER
+    LTEXT           "時刻表基本背景色(&M):",IDC_STATIC,42,41,67,8
+    COMBOBOX        IDC_COMBO_JikokuhyouMainBackColorIndex,111,39,39,99,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Static",IDC_STATIC_JikokuhyouSubBackColor,7,56,31,14,NOT WS_VISIBLE | WS_BORDER
+    LTEXT           "時刻表補助背景色(&S):",IDC_STATIC,42,60,66,8
+    COMBOBOX        IDC_COMBO_JikokuhyouSubBackColorIndex,111,58,39,99,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "時刻表背景色パターン(&P):",IDC_STATIC,7,79,78,8
+    COMBOBOX        IDC_COMBO_JikokuhyouBackPatternIndex,87,77,54,99,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "パターンダイヤプレビューを有効にする",IDC_CHECK_PatternDiagramPreviewEnable,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,7,94,148,12
+    LTEXT           "サイクル(&C):",IDC_STATIC,7,112,42,8
+    EDITTEXT        IDC_EDIT_CycleMinute,46,110,32,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CycleSecond,99,110,32,14,ES_AUTOHSCROLL
+    LTEXT           "分",IDC_STATIC,82,112,14,8
+    LTEXT           "秒",IDC_STATIC,137,112,10,8
+END
+
+IDD_RessyaProp DIALOGEX 0, 0, 183, 113
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "列車のプロパティ"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    LTEXT           "列車番号(&T)：",IDC_STATIC,12,10,47,8
+    EDITTEXT        IDC_EDIT_Ressyabangou,61,7,40,13,ES_AUTOHSCROLL
+    LTEXT           "列車種別(&K)：",IDC_STATIC,12,28,46,8
+    COMBOBOX        IDC_COMBO_Ressyasyubetsu,61,25,73,84,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "列車名(&A)：",IDC_STATIC,12,46,40,8
+    EDITTEXT        IDC_EDIT_Ressyamei,61,43,68,13,ES_AUTOHSCROLL
+    LTEXT           "号(&N)",IDC_STATIC,159,46,17,8
+    EDITTEXT        IDC_EDIT_Gousuu,130,43,28,13,ES_AUTOHSCROLL
+    LTEXT           "備考(&O)：",IDC_STATIC,12,64,40,8
+    EDITTEXT        IDC_EDIT_Bikou,61,62,115,13,ES_AUTOHSCROLL
+    CONTROL         "空行(&E)",IDC_CHECK_IsNull,"Button",BS_AUTO3STATE | WS_TABSTOP,14,79,38,10
+    DEFPUSHBUTTON   "OK",IDOK,78,91,40,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,136,91,40,14
+    CONTROL         "運休扱い(&C)",IDC_CHECK_IsCanceled,"Button",BS_AUTO3STATE | WS_TABSTOP,62,79,54,10
+END
+
+IDD_EkijikokuProp DIALOGEX 0, 0, 246, 104
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "駅時刻"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    GROUPBOX        "駅扱",IDC_STATIC,6,7,69,50
+    CONTROL         "運行なし(&N)",IDC_RADIO_Ekiatsukai,"Button",BS_AUTORADIOBUTTON | WS_GROUP,12,18,50,10
+    CONTROL         "停車(&S)",IDC_RADIO_Ekiatsukai2,"Button",BS_AUTORADIOBUTTON,12,30,38,10
+    CONTROL         "通過(&P)",IDC_RADIO_Ekiatsukai3,"Button",BS_AUTORADIOBUTTON,12,42,38,10
+    LTEXT           "着時刻(&A)：",IDC_STATIC,80,24,35,8
+    EDITTEXT        IDC_EDIT_Chakujikoku,115,22,46,13,ES_AUTOHSCROLL
+    LTEXT           "発時刻(&D)：",IDC_STATIC,80,47,35,8
+    EDITTEXT        IDC_EDIT_Hatsujikoku,115,46,46,13,ES_AUTOHSCROLL
+    CONTROL         "時刻の繰上げ・繰下げ(&M)",IDC_CHECK_MODIFYHATSUJIKOKU,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,87,91,10
+    LTEXT           "発着番線(&T)：",IDC_STATIC,11,68,44,8
+    COMBOBOX        IDC_COMBO_RessyaTrack,51,67,101,81,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,154,83,36,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,201,83,36,14
+    LTEXT           "着時刻の入力が正しくありません",IDC_ERROR_ChakujikokuFormat,41,7,25,8,NOT WS_VISIBLE
+    LTEXT           "発時刻の入力が正しくありません",IDC_ERROR_HatsujikokuFormat,64,7,24,8,NOT WS_VISIBLE
+    PUSHBUTTON      "-",IDC_BUTTON_DecChakujikokuAnySec1,169,17,14,11
+    PUSHBUTTON      "+",IDC_BUTTON_IncChakujikokuAnySec1,169,29,14,11
+    PUSHBUTTON      "-",IDC_BUTTON_DecHatsujikokuAnySec1,169,42,14,11
+    PUSHBUTTON      "+",IDC_BUTTON_IncHatsujikokuAnySec1,169,54,14,11
+    CTEXT           "5秒",IDC_STATIC_AnySec1,166,7,20,8
+    PUSHBUTTON      "-",IDC_BUTTON_DecChakujikokuAnySec2,187,17,14,11
+    PUSHBUTTON      "+",IDC_BUTTON_IncChakujikokuAnySec2,187,29,14,11
+    PUSHBUTTON      "-",IDC_BUTTON_DecHatsujikokuAnySec2,187,42,14,11
+    PUSHBUTTON      "+",IDC_BUTTON_IncHatsujikokuAnySec2,187,54,14,11
+    CTEXT           "15秒",IDC_STATIC_AnySec2,184,7,20,8
+    PUSHBUTTON      "-",IDC_BUTTON_DecChakujikoku1Min,205,17,14,11
+    PUSHBUTTON      "+",IDC_BUTTON_IncChakujikoku1Min,205,29,14,11
+    PUSHBUTTON      "-",IDC_BUTTON_DecHatsujikoku1Min,205,42,14,11
+    PUSHBUTTON      "+",IDC_BUTTON_IncHatsujikoku1Min,205,54,14,11
+    CTEXT           "1分",IDC_STATIC,202,7,20,8
+    PUSHBUTTON      "-",IDC_BUTTON_DecChakujikoku5Min,223,17,14,11
+    PUSHBUTTON      "+",IDC_BUTTON_IncChakujikoku5Min,223,29,14,11
+    PUSHBUTTON      "-",IDC_BUTTON_DecHatsujikoku5Min,223,42,14,11
+    PUSHBUTTON      "+",IDC_BUTTON_IncHatsujikoku5Min,223,54,14,11
+    CTEXT           "5分",IDC_STATIC,220,7,20,8
+END
+
+IDD_JikokuhyouViewProp DIALOGEX 0, 0, 207, 93
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "時刻表ビューのプロパティ"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    LTEXT           "貼り付け移動量（分）(&P)：",IDC_STATIC,11,10,72,8
+    EDITTEXT        IDC_EDIT_PasteZoubun,83,7,32,14,ES_AUTOHSCROLL
+    LTEXT           "（秒）(&S)：",IDC_STATIC,56,27,27,8
+    EDITTEXT        IDC_EDIT_PasteZoubunSecond,83,25,32,14,ES_AUTOHSCROLL
+    GROUPBOX        "駅時刻での並べ替え順序",IDC_STATIC,7,42,96,43
+    CONTROL         "駅扱並べ替え(&E)",IDC_RADIO_EKIJIKOUSORT_0,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,11,55,65,10
+    CONTROL         "停車駅時刻並べ替え(&T)",IDC_RADIO_EKIJIKOUSORT_1,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,11,69,86,10
+    DEFPUSHBUTTON   "OK",IDOK,120,72,38,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,162,72,38,14
+    LTEXT           "（列車番号）(&R)：",IDC_STATIC,120,10,48,8
+    EDITTEXT        IDC_EDIT_PasteZoubunRessyaBangou,168,8,32,14,ES_AUTOHSCROLL
+    LTEXT           "（号数）(&G)：",IDC_STATIC,134,27,34,8
+    EDITTEXT        IDC_EDIT_PasteZoubunGou,168,25,32,14,ES_AUTOHSCROLL
+    CONTROL         "列車番号・運用番号を\n末尾要素から比較する",IDC_CHECK_CompareBottom,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,111,49,80,20
+END
+
+IDD_PrintPageProp DIALOGEX 0, 0, 149, 106
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "印刷ページ設定"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,18,85,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,80,85,50,14
+    LTEXT           "左 :",IDC_STATIC,19,20,11,8
+    EDITTEXT        IDC_EDIT_MarginLeft,31,18,40,12,ES_AUTOHSCROLL
+    LTEXT           "右 :",IDC_STATIC,77,20,11,8
+    EDITTEXT        IDC_EDIT_MarginRight,89,18,40,12,ES_AUTOHSCROLL
+    LTEXT           "上 :",IDC_STATIC,19,37,11,8
+    EDITTEXT        IDC_EDIT_MarginTop,31,34,40,12,ES_AUTOHSCROLL
+    LTEXT           "下 :",IDC_STATIC,77,37,11,8
+    EDITTEXT        IDC_EDIT_MarginBottom,89,34,40,12,ES_AUTOHSCROLL
+    GROUPBOX        "余白(mm)",IDC_STATIC,7,7,135,45
+    CONTROL         "ヘッダーを印刷する(&H)",IDC_EDIT_PrintHeader,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,55,86,10
+    CONTROL         "フッターを印刷する(&F)",IDC_EDIT_PrintFooter,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,70,85,10
+END
+
+IDD_DiagramViewProp DIALOGEX 0, 0, 200, 119
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ダイヤグラムビューのプロパティ"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    LTEXT           "左端(時刻)(&L)：",IDC_STATIC,8,20,53,8
+    EDITTEXT        IDC_EDIT_YokojikuPos,60,17,35,14,ES_AUTOHSCROLL
+    LTEXT           "幅(時:分)(&W)：",IDC_STATIC,100,20,52,8
+    EDITTEXT        IDC_EDIT_YokojikuSize,151,17,35,14,ES_AUTOHSCROLL
+    LTEXT           "上端(%)(&T) ：",IDC_STATIC,8,55,52,8
+    EDITTEXT        IDC_EDIT_TatejikuPos,60,52,35,14,ES_AUTOHSCROLL
+    LTEXT           "幅(%)(&H) ：",IDC_STATIC,100,55,40,8
+    EDITTEXT        IDC_EDIT_TatejikuSize,151,52,35,14,ES_AUTOHSCROLL
+    LTEXT           "時間目盛(&G)：",IDC_STATIC,8,80,49,8
+    COMBOBOX        IDC_COMBO_Jikanmemori,59,77,51,87,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,85,95,41,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,152,95,41,14
+    GROUPBOX        "横軸表示範囲",IDC_STATIC,6,7,187,31
+    GROUPBOX        "縦軸表示範囲",IDC_STATIC,6,41,187,31
+    LTEXT           "横軸表示範囲の左端が、時刻として解釈できません。",IDC_ERR_1,185,7,8,8,NOT WS_VISIBLE
+    LTEXT           "横軸表示範囲の幅が、時間として解釈できません。",IDC_ERR_2,185,17,8,8,NOT WS_VISIBLE
+    LTEXT           "横軸表示範囲の幅が大きすぎます。24時間以下の値を設定してください。",IDC_ERR_3,185,25,8,8,NOT WS_VISIBLE
+    LTEXT           "横軸表示範囲が、ダイヤグラムの起点時刻を越えています。\n\t%s を越えないように設定してください。",IDC_ERR_4,185,37,8,8,NOT WS_VISIBLE
+    LTEXT           "縦軸表示範囲が、1000%を越えています。",IDC_ERR_5,185,47,8,8,NOT WS_VISIBLE
+    LTEXT           "横軸表示範囲の幅が小さすぎます。\n1分以上の値を設定してください。",IDC_ERR_6,185,58,8,8,NOT WS_VISIBLE
+    LTEXT           "縦軸表示範囲の上端が範囲内にありません\n0%以上100%以下の値を指定してください。",IDC_ERR_8,185,68,8,8,NOT WS_VISIBLE
+    LTEXT           "縦軸表示範囲の幅が範囲内にありません\n1%以上1000%以下の値を指定してください。",IDC_ERR_9,185,78,8,8,NOT WS_VISIBLE
+    LTEXT           "エラーが発生しました(%d)",IDC_ERR_X,184,87,9,8,NOT WS_VISIBLE
+END
+
+IDD_DiaSaveSelect DIALOGEX 0, 0, 182, 104
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "保存するダイヤの選択"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    LTEXT           "ファイルに保存するダイヤ(&D) :",IDC_STATIC,7,7,106,10
+    LISTBOX         IDC_LIST_Dia,7,17,120,76,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,134,7,41,14,WS_DISABLED
+    PUSHBUTTON      "キャンセル",IDCANCEL,134,27,41,14
+END
+
+IDD_ModifyEkijikokuOperation2 DIALOGEX 0, 0, 258, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "駅時刻変更"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    GROUPBOX        "駅扱",IDC_STATIC,7,7,183,40
+    CONTROL         "変更する(&M)",IDC_CHECK_EkiatsukaiModify,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,18,52,10
+    CONTROL         "運行なし(&N)",IDC_RADIO_Ekiatsukai,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,11,32,50,10
+    CONTROL         "停車(&S)",IDC_RADIO_Ekiatsukai1,"Button",BS_AUTORADIOBUTTON,61,32,38,10
+    CONTROL         "通過(&P)",IDC_RADIO_Ekiatsukai2,"Button",BS_AUTORADIOBUTTON,99,32,38,10
+    GROUPBOX        "駅時刻",IDC_STATIC,7,53,244,83
+    CONTROL         "変更しない(&O)",IDC_RADIO_EkijikokuOperation,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,9,62,57,10
+    CONTROL         "繰下げ/繰上げ(&E) :",IDC_RADIO_EkijikokuOperation1,"Button",BS_AUTORADIOBUTTON,9,76,70,10
+    CONTROL         "他駅からコピー(&C) :",IDC_RADIO_EkijikokuOperation2,"Button",BS_AUTORADIOBUTTON,9,90,70,10
+    CONTROL         "設定なしにする(&R)",IDC_RADIO_EkijikokuOperation3,"Button",BS_AUTORADIOBUTTON,9,120,69,10
+    LTEXT           "分(&I)",IDC_STATIC,105,77,14,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_Seconds1,81,74,23,14,ES_AUTOHSCROLL
+    LTEXT           "駅(&T)",IDC_STATIC,19,106,28,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_JikokuOrderCopySrc,40,104,72,115,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "の",IDC_STATIC,115,107,8,8,NOT WS_GROUP
+    LTEXT           "分(&U)",IDC_STATIC,153,107,17,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_Seconds2,127,104,23,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,201,7,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,201,26,50,14
+    LTEXT           "秒繰下げ(-なら繰上げ)(&J)",IDC_STATIC,145,78,78,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_Seconds1_2,121,74,23,14,ES_AUTOHSCROLL
+    LTEXT           "秒後(-なら前)(&V)",IDC_STATIC,193,107,51,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_Seconds2_2,166,104,23,14,ES_AUTOHSCROLL
+END
+
+IDD_OUJIKOKUHYOUCSV_EXPORT DIALOGEX 0, 0, 135, 62
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CSVへエクスポート"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    RTEXT           "出力する範囲 :",IDC_STATIC,7,10,44,8
+    LTEXT           "本目(&F)から",IDC_STATIC,79,10,36,8
+    EDITTEXT        IDC_EDIT_RESSYAINDEX,54,8,23,12,ES_AUTOHSCROLL
+    LTEXT           "本(&C)",IDC_STATIC,79,26,27,8
+    EDITTEXT        IDC_EDIT_RESSYACOUNT,54,24,23,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "エクスポート",IDOK,23,41,50,14
+    PUSHBUTTON      "閉じる",IDCANCEL,78,41,50,14
+    LTEXT           "入力内容が正しくありません。",IDC_TEXT_INPUTERROR,120,7,8,8,NOT WS_VISIBLE
+    LTEXT           "CSVへの変換に失敗しました。",IDC_TEXT_ENCODE_ERROR,120,18,8,8,NOT WS_VISIBLE
+    LTEXT           "ファイルへの保存に失敗しました。",IDC_TEXT_FILE_SAVE_FAILED,120,26,8,8,NOT WS_VISIBLE
+END
+
+IDD_AboutBoxGpl DIALOGEX 0, 0, 235, 158
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "OuDiaSecondのバージョン情報"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,15,20,20
+    LTEXT           "OuDiaSecond",IDC_STATIC,40,15,45,8,SS_NOPREFIX
+    LTEXT           "VersionNumber",IDC_STATIC_VERSION,94,15,76,8
+    LTEXT           "Copyright (C) 2005-2016 take-okm",IDC_STATIC_LEGALCOPYRIGHT,40,30,160,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "This program comes with ABSOLUTELY NO WARRANTY. \nThis is free software, and you are welcome to redistribute it under certain conditions.\nFor details, see GNU General Public License.",IDC_STATIC,7,49,221,36
+    PUSHBUTTON      "&Open GNU General Public License",IDC_BUTTON_OPEN_GPL,61,84,167,14
+    LTEXT           "このプログラムは*全くの無保証*で提供されます。\nこれはフリーソフトウェアであり、ある条件の下で再頒布することが奨励されています。\n詳しくは GNU一般公衆利用許諾契約書 を参照してください。",IDC_STATIC,7,101,221,36
+    PUSHBUTTON      "GNU 一般公衆利用許諾契約書(日本語訳) を開く(&J)",IDC_BUTTON_OPEN_GPL_J,61,137,167,14
+END
+
+IDD_FILE_ROSEN_CREATE_SUB_ROSEN DIALOGEX 0, 0, 161, 104
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "路線ファイルの切り出し "
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    LTEXT           "新しい路線ファイルの始発駅(&O)：",IDC_STATIC,7,7,106,8
+    COMBOBOX        IDC_COMBO_SIHATSU_EKIINDEX,7,17,147,96,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "新しい路線ファイルの終着駅(&D)：",IDC_STATIC,7,34,105,8
+    COMBOBOX        IDC_COMBO_SYUUCHAKU_EKIINDEX,7,45,147,96,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,35,83,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,89,83,50,14
+    LTEXT           "始発駅より終着駅を後にしてください",IDC_ERR_EKIINDEX_ORDER,144,7,10,8,NOT WS_VISIBLE
+    LTEXT           "3駅未満の路線では使用できません。",IDC_ERR_EKI_TOO_FEW,141,34,13,8,NOT WS_VISIBLE
+    CONTROL         "切り出し範囲外を路線外発着にする(&U)",IDC_CHECK_OuterTerminalOutput,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,65,142,10
+END
+
+IDD_RosenfileInsert DIALOGEX 0, 0, 151, 87
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "路線ファイルの組入れ"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    LTEXT           "組入れる路線ファイル(&F)：",IDC_STATIC,7,7,82,8
+    EDITTEXT        IDC_EDIT_ADD_ROSENFILENAME,7,18,119,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_ADD_ROSENFILENAME,127,17,16,14
+    LTEXT           "組入れ先(&S)：",IDC_STATIC,7,36,46,8
+    COMBOBOX        IDC_COMBO_EKIINDEX_TO_ADD,7,47,134,113,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,33,66,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,93,66,50,14
+    LTEXT           "組入れ先が選択されていません。",IDC_STATIC_ERR_EKIINDEX_NOT_SELECTED,133,7,10,8,NOT WS_VISIBLE
+END
+
+IDD_PROGRESS DIALOGEX 0, 0, 141, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "実行中..."
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,102,33,22,15,NOT WS_VISIBLE
+    PUSHBUTTON      "キャンセル",IDCANCEL,115,34,19,14,NOT WS_VISIBLE
+    PUSHBUTTON      "中断",IDC_BUTTON_ABORT,45,34,50,14
+    CTEXT           "実行中",IDC_STATIC_PROGRESSTEXT,7,7,127,22
+END
+
+IDD_EkiTrack2Prop DIALOGEX 0, 0, 171, 65
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "番線のプロパティ"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,58,44,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,114,44,50,14
+    LTEXT           "番線名(&N):",IDC_STATIC,10,7,38,8
+    EDITTEXT        IDC_EDIT_TrackName,47,5,103,13,ES_AUTOHSCROLL
+    LTEXT           "番線略称(&R):",IDC_STATIC,9,25,46,8
+    EDITTEXT        IDC_EDIT_TrackRyakusyou,55,23,46,13,ES_AUTOHSCROLL
+    LTEXT           "番線名が指定されていません",IDC_ERROR_TrackNameEmpty,124,18,40,10,NOT WS_VISIBLE
+    LTEXT           "番線略称が指定されていません",IDC_ERROR_TrackRyakusyouEmpty,131,32,33,11,NOT WS_VISIBLE
+    LTEXT           "略称が長すぎます。\n半角で6文字以下にしてください。",IDC_ERROR_TrackRyakusyouLength,3,47,30,11,NOT WS_VISIBLE
+END
+
+IDD_OperationTable_CsvExport DIALOGEX 0, 0, 257, 144
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "運用表CSVエクスポート"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    DEFPUSHBUTTON   "エクスポート",IDOK,145,122,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,200,122,50,14
+    CONTROL         "全運用を出力",IDC_OperationExport_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,8,123,13
+    CONTROL         "",IDC_OperationExport_RADIO2,"Button",BS_AUTORADIOBUTTON,7,24,9,13
+    CONTROL         "",IDC_OperationExport_RADIO3,"Button",BS_AUTORADIOBUTTON,7,40,10,13
+    EDITTEXT        IDC_OperationExport_EDIT_KeyWord,20,24,52,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_OperationExport_COMBO_TypeOfSearch,75,24,74,56,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_OperationExport_COMBO_Station,20,40,74,186,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_OperationExport_COMBO_OutOrIn,117,40,43,35,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "運用番号の運用を抽出する",IDC_STATIC,154,26,96,10
+    LTEXT           "駅を",IDC_STATIC,98,43,16,9
+    LTEXT           "する運用を抽出する",IDC_STATIC,167,43,74,10
+    COMBOBOX        IDC_OperationExport_COMBO_Order,13,65,108,186,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "路線外発着を含む",IDC_OperationExport_CHECK_IncludeOuterTerminal,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,55,77,10
+    CONTROL         "上り列車の始発駅を左側にする(従来形式時のみ)",IDC_OperationExport_CHECK_NoboriLeftToRight,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,96,153,10
+    CONTROL         "箱ダイヤ形式で表示する",IDC_OperationExport_CHECK_ExtensionOperationTable,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,82,116,10
+    CONTROL         "通過駅の駅時刻を表示する(箱ダイヤ時のみ)",IDC_OperationExport_CHECK_TsuukaEkiJikoku,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,110,134,10
+    CONTROL         "着発番線名を表示する(箱ダイヤ時のみ)",IDC_OperationExport_CHECK_TrackName,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,124,132,10
+END
+
+IDD_EkiTrack2Prop2 DIALOGEX 0, 0, 171, 96
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "番線のプロパティ"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,58,75,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,114,75,50,14
+    LTEXT           "番線名(&N):",IDC_STATIC,10,7,38,8
+    EDITTEXT        IDC_EDIT_TrackName2,47,5,103,13,ES_AUTOHSCROLL
+    LTEXT           "下り番線略称(&R):",IDC_STATIC,9,24,59,8
+    EDITTEXT        IDC_EDIT_TrackRyakusyou2,70,22,46,13,ES_AUTOHSCROLL
+    LTEXT           "番線名が指定されていません",IDC_ERROR_TrackNameEmpty,124,18,40,10,NOT WS_VISIBLE
+    LTEXT           "下り番線略称が指定されていません",IDC_ERROR_TrackRyakusyouEmpty,117,28,33,11,NOT WS_VISIBLE
+    LTEXT           "下り略称が長すぎます。\n半角で6文字以下にしてください。",IDC_ERROR_TrackRyakusyouLength,3,78,21,11,NOT WS_VISIBLE
+    LTEXT           "上り番線略称(&U):",IDC_STATIC,9,42,59,8
+    EDITTEXT        IDC_EDIT_TrackNoboriRyakusyou2,70,39,46,13,ES_AUTOHSCROLL
+    LTEXT           "上り略称が長すぎます。\n半角で6文字以下にしてください。",IDC_ERROR_TrackNoboriRyakusyouLength,28,78,21,11,NOT WS_VISIBLE
+    LTEXT           "(省略可能)",IDC_STATIC,120,42,38,8
+    CONTROL         "在線表でこの番線の表示を省略する",IDC_CHECK_DiagramTrackOmit,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,60,144,11
+END
+
+IDD_OuterEkimeiProp DIALOGEX 0, 0, 193, 76
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "路線外発着駅名のプロパティ"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,79,55,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,136,55,50,14
+    LTEXT           "路線外発着駅名(&N):",IDC_STATIC,10,7,70,8
+    EDITTEXT        IDC_EDIT_OuterEkimei,81,5,103,13,ES_AUTOHSCROLL
+    LTEXT           "駅名が指定されていません",IDC_ERROR_OuterEkimeiEmpty,3,56,29,10,NOT WS_VISIBLE
+    LTEXT           "時刻表ビュー略称(&R):",IDC_STATIC,9,23,71,8
+    EDITTEXT        IDC_EDIT_OuterJikokuRyakusyou,83,21,46,13,ES_AUTOHSCROLL
+    LTEXT           "ダイヤグラムビュー略称(&U):",IDC_STATIC,9,40,84,8
+    EDITTEXT        IDC_EDIT_OuterDiaRyakusyou,95,37,46,13,ES_AUTOHSCROLL
+    LTEXT           "(省略可能)",IDC_STATIC,146,40,38,8
+    LTEXT           "(省略可能)",IDC_STATIC,133,23,38,8
+END
+
+IDD_OperationProp DIALOGEX 0, 0, 408, 227
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "駅作業設定"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    LISTBOX         IDC_LIST_OperationBefore,11,39,149,47,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_OperationAfter,11,122,149,47,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "追加(&1)",IDC_BUTTON_OperationAdd,163,19,41,23,BS_MULTILINE
+    PUSHBUTTON      "挿入(&2)",IDC_BUTTON_OperationInsert,163,47,41,24,BS_MULTILINE
+    PUSHBUTTON      "増結編成の作業を挿入(&3)",IDC_BUTTON_ChildOperationAdd,163,75,41,33,BS_MULTILINE
+    PUSHBUTTON      "削除(&4)",IDC_BUTTON_OperationClear,163,113,41,23
+    PUSHBUTTON      "上へ(&5)",IDC_BUTTON_OperationUp,163,141,41,24,BS_MULTILINE
+    PUSHBUTTON      "下へ(&6)",IDC_BUTTON_OperationDown,163,169,41,23
+    CONTROL         "入換(&S)",IDC_RADIO_OperationType,"Button",BS_AUTORADIOBUTTON | WS_GROUP,216,16,34,10
+    CONTROL         "増結(&C)",IDC_RADIO_OperationType2,"Button",BS_AUTORADIOBUTTON,256,16,37,10
+    CONTROL         "解結(&R)",IDC_RADIO_OperationType3,"Button",BS_AUTORADIOBUTTON,296,16,36,10
+    CONTROL         "出区(&K)",IDC_RADIO_OperationType4,"Button",BS_AUTORADIOBUTTON,216,28,36,10
+    CONTROL         "路線外発着(&O)",IDC_RADIO_OperationType5,"Button",BS_AUTORADIOBUTTON,256,28,56,10
+    CONTROL         "次列車接続(&E)",IDC_RADIO_OperationType6,"Button",BS_AUTORADIOBUTTON,319,28,57,10
+    CONTROL         "運用番号変更(&P)",IDC_RADIO_OperationType7,"Button",BS_AUTORADIOBUTTON,336,16,61,10
+    COMBOBOX        IDC_COMBO_Data1_0,283,58,109,88,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_Data1_4,283,58,109,88,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_Data1_1,283,58,109,88,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_Data1_2,283,58,109,88,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_Data1_5,283,58,109,88,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_Data1,278,92,37,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Data2,278,117,37,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OperationNumbers,223,147,100,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_InOutLinkCode,287,178,45,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "-",IDC_BUTTON_DecEdit1AnySec1,323,87,14,11
+    PUSHBUTTON      "-",IDC_BUTTON_DecEdit1AnySec2,341,87,14,11
+    PUSHBUTTON      "-",IDC_BUTTON_DecEdit1_1Min,359,87,14,11
+    PUSHBUTTON      "-",IDC_BUTTON_DecEdit1_5Min,377,87,14,11
+    PUSHBUTTON      "+",IDC_BUTTON_IncEdit1AnySec1,323,99,14,11
+    PUSHBUTTON      "+",IDC_BUTTON_IncEdit1AnySec2,341,99,14,11
+    PUSHBUTTON      "+",IDC_BUTTON_IncEdit1_1Min,359,99,14,11
+    PUSHBUTTON      "+",IDC_BUTTON_IncEdit1_5Min,377,99,14,11
+    PUSHBUTTON      "-",IDC_BUTTON_DecEdit2AnySec1,323,112,14,11
+    PUSHBUTTON      "-",IDC_BUTTON_DecEdit2AnySec2,341,112,14,11
+    PUSHBUTTON      "-",IDC_BUTTON_DecEdit2_1Min,359,112,14,11
+    PUSHBUTTON      "-",IDC_BUTTON_DecEdit2_5Min,377,112,14,11
+    PUSHBUTTON      "+",IDC_BUTTON_IncEdit2AnySec1,323,124,14,11
+    PUSHBUTTON      "+",IDC_BUTTON_IncEdit2AnySec2,341,124,14,11
+    PUSHBUTTON      "+",IDC_BUTTON_IncEdit2_1Min,359,124,14,11
+    PUSHBUTTON      "+",IDC_BUTTON_IncEdit2_5Min,377,124,14,11
+    DEFPUSHBUTTON   "OK",IDOK,277,206,40,14,WS_GROUP
+    PUSHBUTTON      "キャンセル",IDCANCEL,339,206,40,14
+    GROUPBOX        "作業設定",IDC_STATIC,212,46,189,157
+    LTEXT           "着時刻:",IDC_STATIC_ChakuJikokuCaption,7,9,40,16
+    LTEXT           "12:34:56",IDC_STATIC_ChakuJikoku,57,9,38,17
+    LTEXT           "着発番線:",IDC_STATIC_RessyaTrackCaption,7,93,46,13
+    LTEXT           "1番線",IDC_STATIC_RessyaTrack,57,93,86,15
+    LTEXT           "発時刻:",IDC_STATIC_HatsuJikokuCaption,7,175,44,16
+    LTEXT           "12:34:56",IDC_STATIC_HatsuJikoku,57,175,42,17
+    LTEXT           "前作業",IDC_STATIC_OperationBefore,19,26,36,13
+    LTEXT           "後作業",IDC_STATIC_OperationAfter,19,109,37,11
+    GROUPBOX        "作業種類",IDC_STATIC,212,6,189,37
+    LTEXT           "入換番線(&U):",IDC_STATIC_Combo1,218,61,63,8
+    LTEXT           "入換発時刻(&J):",IDC_STATIC_Edit1,220,95,57,8
+    LTEXT           "着時刻(&I):",IDC_STATIC_Edit2,220,120,56,8
+    LTEXT           "運用番号(&O):",IDC_STATIC_OperationNumber,218,135,49,8
+    CONTROL         "入換発時刻を当駅発時刻にする(&M)",IDC_CHECK_JikokuDisplay,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,218,164,113,10
+    LTEXT           "入換発時刻の入力が正しくありません。",IDC_ERR_INVALID_SHUNTHATSUJIKOKU,7,188,31,8,NOT WS_VISIBLE
+    LTEXT           "入換着時刻の入力が正しくありません。",IDC_ERR_INVALID_SHUNTCHAKUJIKOKU,7,212,31,8,NOT WS_VISIBLE
+    LTEXT           "増結時刻の入力が正しくありません。",IDC_ERR_INVALID_CONNECTJIKOKU,35,188,31,8,NOT WS_VISIBLE
+    LTEXT           "解結時刻の入力が正しくありません。",IDC_ERR_INVALID_RELEASEJIKOKU,35,212,31,8,NOT WS_VISIBLE
+    LTEXT           "出区時刻の入力が正しくありません。",IDC_ERR_INVALID_OUTJIKOKU,64,188,31,8,NOT WS_VISIBLE
+    LTEXT           "入区時刻の入力が正しくありません。",IDC_ERR_INVALID_INJIKOKU,63,212,31,8,NOT WS_VISIBLE
+    LTEXT           "路線外始発駅発時刻の入力が正しくありません。",IDC_ERR_INVALID_OUTERHATSUJIKOKU,93,188,31,8,NOT WS_VISIBLE
+    LTEXT           "着時刻の入力が正しくありません。",IDC_ERR_INVALID_CHAKUJIKOKU,90,212,31,8,NOT WS_VISIBLE
+    LTEXT           "路線外終着駅着時刻の入力が正しくありません。",IDC_ERR_INVALID_OUTERCHAKUJIKOKU,121,187,31,8,NOT WS_VISIBLE
+    LTEXT           "発時刻の入力が正しくありません。",IDC_ERR_INVALID_HATSUJIKOKU,118,212,31,8,NOT WS_VISIBLE
+    LTEXT           "起点時刻の入力が正しくありません。",IDC_ERR_INVALID_ORIGINJIKOKU,148,212,31,8,NOT WS_VISIBLE
+    LTEXT           "終点時刻の入力が正しくありません。",IDC_ERR_INVALID_TERMINALJIKOKU,175,212,31,8,NOT WS_VISIBLE
+    LTEXT           "解結編成数の入力が正しくありません。",IDC_ERR_INVALID_RELEASEINDEX,203,189,31,8,NOT WS_VISIBLE
+    LTEXT           "解結編成数は1以上10以下の整数を入力してください。",IDC_ERR_OUTOFRANGE_RELEASEINDEX,205,212,31,8,NOT WS_VISIBLE
+    LTEXT           "路線外始発駅発時刻を入力してください。",IDC_ERR_EMPTY_OUTERHATSUJIKOKU,341,165,31,8,NOT WS_VISIBLE
+    LTEXT           "路線外終着駅着時刻を入力してください。",IDC_ERR_EMPTY_OUTERCHAKUJIKOKU,368,165,31,8,NOT WS_VISIBLE
+    LTEXT           "運用番号にカンマ( , )は使用できません。",IDC_ERR_UNUSABLE_COMMA,343,176,31,8,NOT WS_VISIBLE
+    LTEXT           "(複数運番は ; で区切る)",IDC_STATIC,327,150,71,8
+    LTEXT           "運用番号を入力してください。",IDC_ERR_EMPTY_OPERATIONNUMBER,369,175,31,8,NOT WS_VISIBLE
+    CTEXT           "5秒",IDC_STATIC_AnySec1,320,77,20,8
+    CTEXT           "15秒",IDC_STATIC_AnySec2,338,77,20,8
+    CTEXT           "1分",IDC_STATIC,356,77,20,8
+    CTEXT           "5分",IDC_STATIC,374,77,20,8
+    LTEXT           "入出区連携コード(&C):",IDC_STATIC_InOutLinkCode,218,180,66,8
+END
+
+IDD_AllOperationTableProp DIALOGEX 0, 0, 138, 98
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "運用一覧表のプロパティ"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    GROUPBOX        "運用の並び順序",-1,7,8,122,50
+    CONTROL         "運用番号順(&N)",IDC_RADIO_OPERATIONSORT_0,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,11,18,59,10
+    CONTROL         "出区駅順(&O)",IDC_RADIO_OPERATIONSORT_1,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,11,30,53,10
+    DEFPUSHBUTTON   "OK",IDOK,46,77,38,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,93,77,38,14
+    CONTROL         "運用番号を末尾要素から比較する",IDC_CHECK_CompareBottom,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,9,60,116,16
+    CONTROL         "発時刻順(&H)",IDC_RADIO_OPERATIONSORT_2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,11,42,53,10
+    CONTROL         "入区駅順(&I)",IDC_RADIO_OPERATIONSORT_3,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,71,30,50,10
+    CONTROL         "着時刻順(&C)",IDC_RADIO_OPERATIONSORT_4,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,71,42,53,10
+END
+
+IDD_RosenFileProp_Jikokuhyou DIALOGEX 0, 0, 255, 210
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_BORDER
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    LTEXT           "時刻表の列車の幅(&T)：",IDC_STATIC,6,12,75,8
+    EDITTEXT        IDC_EDIT_JikokuhyouRessyaWidth,82,9,23,13,ES_AUTOHSCROLL
+    LTEXT           "文字（半角）",IDC_STATIC,109,12,41,8
+    LTEXT           "任意秒移動1の秒数(&B)：",IDC_STATIC,6,27,79,8
+    EDITTEXT        IDC_EDIT_AnySecondIncDec1,87,25,23,13,ES_AUTOHSCROLL
+    LTEXT           "秒",IDC_STATIC,116,27,8,8
+    LTEXT           "任意秒移動2の秒数(&Y)：",IDC_STATIC,6,43,77,8
+    EDITTEXT        IDC_EDIT_AnySecondIncDec2,87,41,23,13,ES_AUTOHSCROLL
+    LTEXT           "秒",IDC_STATIC,116,43,8,8
+    CONTROL         "列車名・号数を表示する(&R)",IDC_EDIT_DisplayRessyamei,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,92,93,10
+    CONTROL         "起点側(&K)",IDC_EDIT_DisplayOuterTerminalO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,71,47,10
+    CONTROL         "終点側(&U)",IDC_EDIT_DisplayOuterTerminalT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,63,71,45,10
+    DEFPUSHBUTTON   "OK",IDOK,137,188,39,14,NOT WS_VISIBLE
+    PUSHBUTTON      "キャンセル",IDCANCEL,209,188,39,14,NOT WS_VISIBLE
+    LTEXT           "時刻表画面",IDC_STATIC_TABNAME,213,7,35,8,NOT WS_VISIBLE
+    GROUPBOX        "路線外始発･終着欄表示",IDC_STATIC,6,58,106,29
+    LTEXT           "着時刻(&C)：",IDC_STATIC,13,125,40,8
+    COMBOBOX        IDC_COMBO_ChakuSecond,52,123,71,54,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "発時刻(&H)：",IDC_STATIC,126,125,40,8
+    COMBOBOX        IDC_COMBO_HatsuSecond,165,123,71,54,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "秒単位表示無効時の、秒単位処理方法",IDC_STATIC,6,109,234,33
+    CONTROL         "着時刻が0:00のとき、24:00表記にする(&N)",IDC_EDIT_Display2400,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,148,130,10
+    CONTROL         "入出区連携コード欄を表示する(&I)",IDC_EDIT_DisplayInOutLinkCode,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,162,130,10
+END
+
+IDD_AllOperationTable2ViewProp DIALOGEX 0, 0, 193, 152
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "運用一覧図のプロパティ"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    LTEXT           "左端(時刻)(&L)：",-1,8,89,50,8
+    EDITTEXT        IDC_EDIT_YokojikuPos,59,86,35,14,ES_AUTOHSCROLL
+    LTEXT           "幅(時:分)(&W)：",-1,98,89,50,8
+    EDITTEXT        IDC_EDIT_YokojikuSize,148,86,35,14,ES_AUTOHSCROLL
+    LTEXT           "時間目盛(&G)：",-1,8,115,48,8
+    COMBOBOX        IDC_COMBO_Jikanmemori,58,112,51,87,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,85,128,41,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,145,128,41,14
+    GROUPBOX        "横軸表示範囲",-1,6,74,180,32
+    LTEXT           "横軸表示範囲の左端が、時刻として解釈できません。",IDC_ERR_1,178,7,8,8,NOT WS_VISIBLE
+    LTEXT           "横軸表示範囲の幅が、時間として解釈できません。",IDC_ERR_2,178,17,8,8,NOT WS_VISIBLE
+    LTEXT           "横軸表示範囲の幅が大きすぎます。24時間以下の値を設定してください。",IDC_ERR_3,178,24,8,8,NOT WS_VISIBLE
+    LTEXT           "横軸表示範囲が、ダイヤグラムの起点時刻を越えています。\n\t%s を越えないように設定してください。",IDC_ERR_4,178,37,8,8,NOT WS_VISIBLE
+    LTEXT           "横軸表示範囲の幅が小さすぎます。\n1分以上の値を設定してください。",IDC_ERR_6,178,58,8,8,NOT WS_VISIBLE
+    LTEXT           "エラーが発生しました(%d)",IDC_ERR_X,151,51,9,8,NOT WS_VISIBLE
+    GROUPBOX        "運用の並び順序",-1,7,8,123,48
+    CONTROL         "運用番号順(&N)",IDC_RADIO_OPERATIONSORT_0,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,11,19,59,10
+    CONTROL         "出区駅順(&O)",IDC_RADIO_OPERATIONSORT_1,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,11,30,53,10
+    CONTROL         "運用番号を末尾要素から比較する",IDC_CHECK_CompareBottom,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,9,57,116,14
+    CONTROL         "発時刻順(&H)",IDC_RADIO_OPERATIONSORT_2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,11,41,53,10
+    CONTROL         "入区駅順(&I)",IDC_RADIO_OPERATIONSORT_3,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,71,30,50,10
+    CONTROL         "着時刻順(&C)",IDC_RADIO_OPERATIONSORT_4,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,71,41,53,10
+END
+
+IDD_DIALOGBAR DIALOGEX 0, 0, 132, 14
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    LTEXT           "列車番号:",IDC_STATIC,7,3,30,10
+    EDITTEXT        IDC_EDIT_Ressyabangou,39,1,51,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "検索",IDC_BUTTON_RessyaBangouJump,95,1,24,12
+END
+
+IDD_CrossingCheckRule DIALOGEX 0, 0, 394, 197
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "交差支障チェックルール設定"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    LISTBOX         IDC_LIST_CrossingCheckRule,11,8,181,73,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "追加(&1)",IDC_BUTTON_CrossingCheckRuleAdd,202,8,41,19,BS_MULTILINE
+    PUSHBUTTON      "コピー(&2)",IDC_BUTTON_CrossingCheckRuleCopy,202,28,41,19,BS_MULTILINE
+    PUSHBUTTON      "削除(&3)",IDC_BUTTON_CrossingCheckRuleClear,202,48,41,19
+    PUSHBUTTON      "上へ(&4)",IDC_BUTTON_CrossingCheckRuleUp,249,18,41,24,BS_MULTILINE
+    PUSHBUTTON      "下へ(&5)",IDC_BUTTON_CrossingCheckRuleDown,249,44,41,23
+    EDITTEXT        IDC_EDIT_CrossingCheckRuleCaption,55,90,133,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CrossingCheckRuleHeadwayMinimum,251,73,37,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CrossingCheckRuleHeadway,251,89,37,14,ES_AUTOHSCROLL
+    CONTROL         "有効/無効",IDC_CHECK_Enable,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,315,91,51,10
+    CONTROL         "出発時刻(&D)",IDC_RADIO_BeforeArrDep,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,118,49,10
+    CONTROL         "到着時刻(&A)",IDC_RADIO_BeforeArrDep2,"Button",BS_AUTORADIOBUTTON,17,131,48,10
+    CONTROL         "停車(&S)",IDC_RADIO_BeforeIsTsuuka,"Button",BS_AUTORADIOBUTTON | WS_GROUP,111,118,49,10
+    CONTROL         "通過(&P)",IDC_RADIO_BeforeIsTsuuka2,"Button",BS_AUTORADIOBUTTON,111,131,48,10
+    LISTBOX         IDC_LIST_BeforeFrom,14,157,80,10,LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_BeforeTo,108,157,80,10,LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "出発時刻(&E)",IDC_RADIO_AfterArrDep,"Button",BS_AUTORADIOBUTTON | WS_GROUP,210,118,48,10
+    CONTROL         "到着時刻(&R)",IDC_RADIO_AfterArrDep2,"Button",BS_AUTORADIOBUTTON,210,131,48,10
+    CONTROL         "停車(&T)",IDC_RADIO_AfterIsTsuuka,"Button",BS_AUTORADIOBUTTON | WS_GROUP,304,118,49,10
+    CONTROL         "通過(&G)",IDC_RADIO_AfterIsTsuuka2,"Button",BS_AUTORADIOBUTTON,304,131,48,10
+    LISTBOX         IDC_LIST_AfterFrom,206,157,80,10,LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_AfterTo,300,157,80,10,LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,277,176,40,14,WS_GROUP
+    PUSHBUTTON      "キャンセル",IDCANCEL,339,176,40,14
+    LTEXT           "⇒",IDC_STATIC,98,158,9,9
+    GROUPBOX        "前動作",IDC_STATIC_BeforeFrame,7,108,188,64
+    LTEXT           "ルール名(&C):",IDC_STATIC,12,92,40,8
+    LTEXT           "前動作の移動元番線を一つ以上選択してください。",IDC_ERR_EMPTY_BEFOREFROM,313,6,31,8,NOT WS_VISIBLE
+    LTEXT           "時隔上限の入力が正しくありません。",IDC_ERR_INVALID_HEADWAY,318,35,31,8,NOT WS_VISIBLE
+    LTEXT           "運用番号にカンマ( , )は使用できません。",IDC_ERR_UNUSABLE_COMMA,321,74,31,8,NOT WS_VISIBLE
+    LTEXT           "運用番号を入力してください。",IDC_ERR_EMPTY_OPERATIONNUMBER,345,60,31,8,NOT WS_VISIBLE
+    LTEXT           "時隔上限(&J):",IDC_STATIC,205,92,42,8
+    LTEXT           "(秒)",IDC_STATIC,292,93,18,8
+    GROUPBOX        "後動作",IDC_STATIC_AfterFrame,199,108,188,64
+    LTEXT           "移動元番線",IDC_STATIC,38,146,36,9
+    LTEXT           "移動先番線",IDC_STATIC,131,146,36,9
+    LTEXT           "⇒",IDC_STATIC,290,158,9,9
+    LTEXT           "移動元番線",IDC_STATIC,230,145,36,9
+    LTEXT           "移動先番線",IDC_STATIC,323,145,36,9
+    LTEXT           "前動作の移動先番線を一つ以上選択してください。",IDC_ERR_EMPTY_BEFORETO,321,13,31,8,NOT WS_VISIBLE
+    LTEXT           "後動作の移動元番線を一つ以上選択してください。",IDC_ERR_EMPTY_AFTERFROM,329,21,31,8,NOT WS_VISIBLE
+    LTEXT           "後動作の移動先番線を一つ以上選択してください。",IDC_ERR_EMPTY_AFTERTO,337,28,31,8,NOT WS_VISIBLE
+    LTEXT           "ルール名を入力してください。",IDC_ERR_EMPTY_CAPTION,321,53,31,8,NOT WS_VISIBLE
+    LTEXT           "時隔下限(&M):",IDC_STATIC,205,76,44,8
+    LTEXT           "(秒)",IDC_STATIC,292,76,18,8
+    LTEXT           "時隔下限の入力が正しくありません。",IDC_ERR_INVALID_HEADWAYMINIMUM,326,43,31,8,NOT WS_VISIBLE
+    LTEXT           "時隔上限は時隔下限より大きい値にしてください。",IDC_ERR_INVALID_HEADWAYRELATION,334,50,31,8,NOT WS_VISIBLE
+END
+
+IDD_DigitalJikokuhyouImport DIALOGEX 0, 0, 153, 173
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "外部時刻表インポート"
+FONT 9, "Meiryo UI", 400, 0, 0x80
+BEGIN
+    LTEXT           "ダイヤ1下り(&F)：",IDC_STATIC,7,7,82,8
+    EDITTEXT        IDC_EDIT_ADD_JIKOKUHYOU1KUDARIFILENAME,7,18,119,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_ADD_JIKOKUHYOU1KUDARIFILENAME,129,17,16,14
+    DEFPUSHBUTTON   "OK",IDOK,33,152,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,95,152,50,14
+    LTEXT           "組入れ先が選択されていません。",IDC_STATIC_ERR_EKIINDEX_NOT_SELECTED,135,7,10,8,NOT WS_VISIBLE
+    LTEXT           "ダイヤ1上り(&I)：",IDC_STATIC,7,36,82,8
+    EDITTEXT        IDC_EDIT_ADD_JIKOKUHYOU1NOBORIFILENAME,7,48,119,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_ADD_JIKOKUHYOU1NOBORIFILENAME,129,47,16,14
+    LTEXT           "ダイヤ2下り(&S)：",IDC_STATIC,7,71,82,8
+    EDITTEXT        IDC_EDIT_ADD_JIKOKUHYOU2KUDARIFILENAME,7,82,119,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_ADD_JIKOKUHYOU2KUDARIFILENAME,129,81,16,14
+    LTEXT           "ダイヤ2上り(&E)：",IDC_STATIC,7,101,82,8
+    EDITTEXT        IDC_EDIT_ADD_JIKOKUHYOU2NOBORIFILENAME,7,112,119,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_ADD_JIKOKUHYOU2NOBORIFILENAME,129,111,16,14
+    CONTROL         "路線別の特殊処理を無効にする(&H)",IDC_CHECK_InvalidateIndividualHandling,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,133,142,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,6,19,0
+ PRODUCTVERSION 2,6,19,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "CompanyName", "diagram_mania"
+            VALUE "FileDescription", "OuDiaSecondV2"
+            VALUE "FileVersion", "2.6.19.0"
+            VALUE "InternalName", "OuDiaSecondV2"
+            VALUE "LegalCopyright", "Copyright (C) 2017-2025 diagram_mania"
+            VALUE "OriginalFilename", "OuDiaSecondV2"
+            VALUE "ProductName", "OuDiaSecondV2"
+            VALUE "ProductVersion", "2.6.19.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ROSEN_VIEW, DIALOG
+    BEGIN
+    END
+
+    IDD_RosenFileProp_Rosen, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+
+    IDD_RosenFileProp_FontColor, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 241
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_RosenFileProp, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 261
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_RosenFileProp_Diagram, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_EkiProp, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 545
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 343
+    END
+
+    IDD_RessyasyubetsuProp, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_DiaList, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_DiaProp, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_RessyaProp, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 105
+    END
+
+    IDD_EkijikokuProp, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 97
+    END
+
+    IDD_JikokuhyouViewProp, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_PrintPageProp, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_DiagramViewProp, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 193
+        VERTGUIDE, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_DiaSaveSelect, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_ModifyEkijikokuOperation2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_OUJIKOKUHYOUCSV_EXPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 128
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_AboutBoxGpl, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_FILE_ROSEN_CREATE_SUB_ROSEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 154
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 97
+    END
+
+    IDD_RosenfileInsert, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 143
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 134
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_EkiTrack2Prop, DIALOG
+    BEGIN
+        RIGHTMARGIN, 164
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_OperationTable_CsvExport, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_EkiTrack2Prop2, DIALOG
+    BEGIN
+        RIGHTMARGIN, 164
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_OuterEkimeiProp, DIALOG
+    BEGIN
+        RIGHTMARGIN, 186
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_OperationProp, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 401
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 220
+    END
+
+    IDD_AllOperationTableProp, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 131
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_RosenFileProp_Jikokuhyou, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_AllOperationTable2ViewProp, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_DIALOGBAR, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 13
+    END
+
+    IDD_CrossingCheckRule, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 387
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 190
+    END
+
+    IDD_DigitalJikokuhyouImport, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 145
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_EkiTrack2Prop AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_RessyasyubetsuProp AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EkiProp AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EkijikokuProp AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_PrintPageProp AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_RosenFileProp_FontColor AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DiaProp AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ROSEN_VIEW AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_RosenFileProp_Diagram AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_RosenFileProp_Rosen AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    100, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    100, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0
+END
+
+IDD_OperationTable_CsvExport AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EkiTrack2Prop2 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_OuterEkimeiProp AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_RosenFileProp AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_JikokuhyouViewProp AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_FILE_ROSEN_CREATE_SUB_ROSEN AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DiagramViewProp AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_OperationProp AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ModifyEkijikokuOperation2 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DiaList AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_AboutBoxGpl AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_RessyaProp AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_AllOperationTableProp AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_RosenFileProp_Jikokuhyou AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_AllOperationTable2ViewProp AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DiaSaveSelect AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_OUJIKOKUHYOUCSV_EXPORT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_PROGRESS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_RosenfileInsert AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOGBAR AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_CrossingCheckRule AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DigitalJikokuhyouImport AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "OuDiaSecondV2"
+    IDR_DIATYPE             "OuDia\nDia\n\nOuDiaSecond ﾌｧｲﾙ (*.oud2)\n.oud2\nOuDiaSecond.Document\nOuDiaSecond ファイル"
+    IDR_DOCVIEW_Eki         "\n駅\n\n\n\n\n"
+    IDR_DOCVIEW_Ressyasyubetsu "\n列車種別\n\n\n\n\n"
+    IDR_DOCVIEW_Jikokuhyou  "\n時刻表\n\n\n\n\n"
+    IDR_DOCVIEW_Diagram     "\nダイヤグラム\n\n\n\n\n"
+    IDS_WinDIAFilter        "WinDIA ファイル (*.dia)|*.dia|"
+    IDR_DOCVIEW_Comment     "\nコメント\n\n\n\n\n"
+    IDS_CSVFilter           "CSV ファイル (*.csv)|*.csv|"
+    IDS_OriginalOuDiaFilter "OuDia ファイル (*.oud)|*.oud|"
+    IDS_WORD_ShihatsuOperation "始発駅作業"
+    IDS_WORD_TrackChaku     "到着番線"
+    IDS_WORD_TrackHatsu     "発車番線"
+    IDS_WORD_TrackChakuHatsu "着発番線"
+    IDS_WORD_ShuchakuOperation "終着駅作業"
+    IDS_WORD_OperationOut   "出区"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "OuDiaSecondV2"
+    AFX_IDS_IDLEMESSAGE     "ﾚﾃﾞｨ"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "上書"
+    ID_INDICATOR_REC        "記録"
+    ID_INDICATOR_KANA       "ｶﾅ"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "新規にﾌｧｲﾙを作成\n新規ﾌｧｲﾙ"
+    ID_FILE_OPEN            "既存のﾌｧｲﾙを開く\n開く"
+    ID_FILE_CLOSE           "作業中のﾌｧｲﾙを閉じる\n閉じる"
+    ID_FILE_SAVE            "作業中のﾌｧｲﾙを上書きして保存\n保存"
+    ID_FILE_SAVE_AS         "作業中のﾌｧｲﾙを新しい名前で保存\n名前をつけて保存"
+    ID_FILE_PAGE_SETUP      "印刷ｵﾌﾟｼｮﾝの変更\nﾍﾟｰｼﾞ ﾚｲｱｳﾄの設定"
+    ID_FILE_PRINT_SETUP     "ﾌﾟﾘﾝﾀ/印刷ｵﾌﾟｼｮﾝの変更\n印刷設定"
+    ID_FILE_PRINT           "作業中のﾌｧｲﾙを印刷\n印刷"
+    ID_FILE_PRINT_PREVIEW   "印刷ｲﾒｰｼﾞを表示\n印刷ﾌﾟﾚﾋﾞｭｰ"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "ﾌﾟﾛｸﾞﾗﾑの情報、ﾊﾞｰｼﾞｮﾝそして著作権を表示\nﾊﾞｰｼﾞｮﾝ情報"
+    ID_APP_EXIT             "ｱﾌﾟﾘｹｰｼｮﾝを終了し、ﾌｧｲﾙの保存を指示\n終了"
+    ID_HELP_INDEX           "ヘルプトピックを表示します。\n目次"
+    ID_HELP                 "ヘルプトピックを表示します\n目次"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE2       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE3       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE4       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE5       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE6       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE7       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE8       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE9       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE10      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE11      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE12      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE13      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE14      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE15      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE16      "指定のﾌｧｲﾙを開く"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "次のｳｨﾝﾄﾞｳに切り替える\n次のﾍﾟｲﾝ"
+    ID_PREV_PANE            "前のｳｨﾝﾄﾞｳに切り替える\n前のﾍﾟｲﾝ"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "作業中のｳｨﾝﾄﾞｳを複写して表示\n新規ｳｨﾝﾄﾞｳ"
+    ID_WINDOW_ARRANGE       "ｳｨﾝﾄﾞｳの下部にｱｲｺﾝを整列\nｱｲｺﾝの整列"
+    ID_WINDOW_CASCADE       "ｳｨﾝﾄﾞｳを重ねて表示\n重ねて表示"
+    ID_WINDOW_TILE_HORZ     "ｳｨﾝﾄﾞｳを並べて表示\n上下に並べて表示"
+    ID_WINDOW_TILE_VERT     "ｳｨﾝﾄﾞｳを並べて表示\n左右に並べて表示"
+    ID_WINDOW_SPLIT         "作業中のｳｨﾝﾄﾞｳを分割\n分割"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "選択範囲を消去\n消去"
+    ID_EDIT_CLEAR_ALL       "すべて消去\nすべて消去"
+    ID_EDIT_COPY            "選択範囲をｺﾋﾟｰしてｸﾘｯﾌﾟﾎﾞｰﾄﾞに保存\nｺﾋﾟｰ"
+    ID_EDIT_CUT             "選択範囲を切り取ってｸﾘｯﾌﾟﾎﾞｰﾄﾞに保存\n切り取り"
+    ID_EDIT_FIND            "指定した文字列の検索\n検索"
+    ID_EDIT_PASTE           "ｸﾘｯﾌﾟﾎﾞｰﾄﾞの内容を貼り付け\n貼り付け"
+    ID_EDIT_REPEAT          "直前に行った検索動作を繰り返す\n次を検索"
+    ID_EDIT_REPLACE         "指定した文字列を他の文字列で置換\n置換"
+    ID_EDIT_SELECT_ALL      "ﾌｧｲﾙ内のすべてを選択\nすべて選択"
+    ID_EDIT_UNDO            "直前に行った動作を元に戻す\n元に戻す"
+    ID_EDIT_REDO            "直前に行った動作を繰り返す\n繰り返す"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "ﾂｰﾙ ﾊﾞｰの 表示/非表示\nﾂｰﾙ ﾊﾞｰの表示切り替え"
+    ID_VIEW_STATUS_BAR      "ｽﾃｰﾀｽ ﾊﾞｰの 表示/非表示\nｽﾃｰﾀｽ ﾊﾞｰの表示切り替え"
+    ID_VIEW_UPDATE          "表示を更新\n表示を更新"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "ｳｨﾝﾄﾞｳのｻｲｽﾞを変更"
+    AFX_IDS_SCMOVE          "ｳｨﾝﾄﾞｳの位置を変更"
+    AFX_IDS_SCMINIMIZE      "ｳｨﾝﾄﾞｳを最小化する"
+    AFX_IDS_SCMAXIMIZE      "ｳｨﾝﾄﾞｳを最大化する"
+    AFX_IDS_SCNEXTWINDOW    "次のｳｨﾝﾄﾞｳに切り替える"
+    AFX_IDS_SCPREVWINDOW    "前のｳｨﾝﾄﾞｳに切り替える"
+    AFX_IDS_SCCLOSE         "作業中のｳｨﾝﾄﾞｳを閉じ、変更したﾌｧｲﾙの保存を指示"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "ｳｨﾝﾄﾞｳを通常のｻｲｽﾞに戻す"
+    AFX_IDS_SCTASKLIST      "ｱﾌﾟﾘｹｰｼｮﾝの切り替え"
+    AFX_IDS_MDICHILD        "指定のｳｨﾝﾄﾞｳを表示"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "印刷ﾌﾟﾚﾋﾞｭｰ ﾓｰﾄﾞの終わり\nﾌﾟﾚﾋﾞｭｰのｷｬﾝｾﾙ"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_WORD_JIKOKUHYOU_NUMBERCHANGE "運番変更"
+    IDS_WORD_JIKOKUHYOU_SYUBETSUCHANGE "種別変"
+    IDS_WORD_JIKOKUHYOU_PROPERTYCHANGE "列情変"
+    IDS_WORD_JIKOKUHYOU_PROPERTYSAME "同一扱"
+    IDS_WORD_JIKOKUHYOU_NUMBERREVERSE "運番反転"
+    IDS_ERR_ERRORCODE       "エラーが発生しました(%d)"
+    IDS_ERR_FILENOTFOUND    "ファイル %s を開くことができません。\nファイルが見つからないか、または必要なアクセスの権限がありません。"
+    IDS_ERR_FILEREAD        "ファイル %s の読み込み中にエラーが発生しました。"
+    IDS_ERR_FILEFORMAT      "ファイル %s のファイル形式を認識できませんでした。"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_FILECREATE      "ファイル %s を作成することができません。\n必要なアクセスの権限がありません。"
+    IDS_ERR_FILEWRITE       "ファイル %s の書き込み中にエラーが発生しました。"
+    IDS_ERR_FileTypeAppComment "このファイルは、""%s""によって作成されました。"
+    IDS_ERR_FILECONVERT_FAILED "ファイルの形式の変換に失敗しました。"
+    IDS_ERR_FILEFORMAT_ERRORCODE "ファイル %s は内容が壊れています。(%d)"
+    IDS_ERR_RessyasyubetsuTooMany 
+                            "列車種別の数が多すぎます。\nWinDIA 形式のファイルでは、列車種別は 24 種類以下に制限されています。"
+    IDS_ERR_NoDia           "ダイヤがひとつもありません。\nWinDIA 形式のファイルに保存するためには、ダイヤが１つ作成されていなくてはなりません。"
+    IDS_ERR_RyakusyouTooLong 
+                            "略称の長さが全角２文字を超える列車種別があります。\nWinDIA 形式に保存するためには、すべての列車種別略称は全角２文字以内でなくてはなりません。"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_WORD_EKI            "駅"
+    IDS_WORD_RESSYASYUBETSU "列車種別"
+    IDS_WORD_DIA            "ダイヤ"
+    IDS_WORD_KUDARIJIKOKUHYOU "下り時刻表"
+    IDS_WORD_NOBORIJIKOKUHYOU "上り時刻表"
+    IDS_WORD_DIAGRAM        "ダイヤグラム"
+    IDS_WORD_ROSEN          "路線"
+    IDS_WORD_COMMENT        "コメント"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ROSEN_FILE_PROP      "路線ファイルのプロパティを編集\n路線ファイルのプロパティ"
+    ID_EDIT_EkiProp         "駅のプロパティを編集\n駅のプロパティ"
+    IDD_INSERT_EKI          "駅を挿入\n駅を挿入"
+    ID_EDIT_EkiInsert       "駅を挿入\n駅を挿入"
+    ID_WINDOW_ROSEN_VIEW    "左ペインと右ペインを切り替えます\nペインの切り替え"
+    ID_Ressyasyubetsu_Prop  "列車種別のプロパティを編集\n列車種別のプロパティ"
+    ID_Ressyasyubetsu_Insert "列車種別を挿入\n列車種別を挿入"
+    ID_Jikokuhyou_RessyaProp "列車のプロパティダイアログを開く\n列車・時刻のプロパティ"
+    ID_Jikokuhyou_RessyaInsert "列車を挿入\n列車を挿入"
+    ID_Jikokuhyou_ViewProp  "時刻表ビューのプロパティダイアログを開く\n時刻表ビューのプロパティ"
+    ID_FILE_PrintPageProp   "印刷ページ設定\n印刷ページ設定"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_WORD_KUDARICUSTOMIZEJIKOKUHYOU "下りカスタマイズ時刻表"
+    IDS_WORD_NOBORICUSTOMIZEJIKOKUHYOU "上りカスタマイズ時刻表"
+    IDS_WORD_Jikokukeisiki_Hatsu "発時刻"
+    IDS_WORD_Jikokukeisiki_KudariChaku "下り着時刻"
+    IDS_WORD_Jikokukeisiki_NoboriChaku "上り着時刻"
+    IDS_WORD_Jikokukeisiki_Hatsuchaku "発着"
+    IDS_WORD_Ekikibo_Ippan  "一般駅"
+    IDS_WORD_Ekikibo_Syuyou "主要駅"
+    IDS_WORD_Jikokukeisiki  "駅時刻形式"
+    IDS_WORD_Ekikibo        "駅規模"
+    IDS_WORD_Ekimei         "駅名"
+    IDS_WORD_Jikokukeisiki_KudariHatsuchaku "下り発着"
+    IDS_WORD_Jikokukeisiki_NoboriHatsuchaku "上り発着"
+    IDS_WORD_Track          "番線"
+    IDS_WORD_EkiTrack2Count "番線数"
+    IDS_WORD_CUSTOMIZEJIKOKUHYOU "カスタマイズ時刻表"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_WORD_Ressyasyubetsumei "列車種別名"
+    IDS_WORD_Ryakusyou      "略称"
+    IDS_WORD_Senstyle       "線スタイル"
+    IDS_WORD_ParentSyubetsu "親種別"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_ExistRessyaOfRessyasyubetsu 
+                            "列車種別 %s の列車が存在します(%s %s)。\n列車種別の削除はできません。\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_WORD_Ressyamei      "列車名"
+    IDS_WORD_Bikou          "備考"
+    IDS_WORD_Ressyabangou   "列車番号"
+    IDS_WORD_BackColor      "背景色"
+    IDS_WORD_Chaku          "着"
+    IDS_WORD_Hatsu          "発"
+    IDS_WORD_GOUSUU2        "号"
+    IDS_WORD_Kudari         "下り"
+    IDS_WORD_Nobori         "上り"
+    IDS_WORD_Sono           "その%d"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_PasteZoubun "貼り付け移動量 : %3d 分 %3d 秒 (%3d 分 %3d 秒)"
+    IDS_INDICATOR_Renzoku   "連続入力"
+END
+
+STRINGTABLE
+BEGIN
+    ID_Jikokuhyou_JikokuSakujo "フォーカス位置を『時刻設定なし』にする\n時刻消去"
+    ID_Jikokuhyou_Tsuuka    "フォーカス位置を『通過』にする(着時刻・発時刻は削除)\n通過"
+    ID_Jikokuhyou_Sihatsu   "フォーカス位置を始発駅にする\n当駅始発"
+    ID_Jikokuhyou_Syuuchaku "フォーカス位置を終着駅にする\n当駅止り"
+    ID_Jikokuhyou_Keiyunasi "フォーカス位置を『運行なし』にする\n運行なし"
+    ID_Jikokuhyou_Renzoku   "連続入力モードを開始\n連続入力"
+    ID_Edit_PasteEkiJikoku  "クリップボードの列車の駅時刻だけを、フォーカス位置の列車に上書き貼り付け\n時刻のみ貼り付け"
+    ID_Diagram_ViewProp     "ダイヤグラムビューのプロパティ\nダイヤグラムビューのプロパティ"
+    ID_Diagram_XDgrSize_Inc "ダイヤグラムの表示を横軸方向に縮小\n横軸方向縮小"
+    ID_Diagram_XDgrSize_Dec "ダイヤグラムの表示を横軸方向に拡大\n横軸方向拡大"
+    ID_Diagram_YDgrSize_Inc "ダイヤグラムの表示を縦軸方向に縮小\n縦軸方向縮小"
+    ID_Diagram_YDgrSize_Dec "ダイヤグラムの表示を縦軸方向に拡大\n縦軸方向拡大"
+    ID_Diagram_Memori_Down  "ダイヤグラムの横軸方向の目盛を細かくする\n横軸目盛を細かくする"
+    ID_Diagram_Memori_Up    "ダイヤグラムの横軸方向の目盛を粗くする\n横軸目盛を粗くする"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_ClipboardRessyaMust1 "時刻のみ貼り付け を行うためには、\nクリップボードの列車は１本でなくてはなりません。"
+    IDS_ERR_ChakuModifyFromSelf "操作対象の着時刻が指定されていないため、\n着時刻の変更はできません。"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_ChakuModifyFromPair "操作対象の発時刻が指定されていないため、\n着時刻の変更はできません。"
+    IDS_ERR_HatsuModifyFromSelf "操作対象の発時刻が指定されていないため、\n発時刻の変更はできません。"
+    IDS_ERR_HatsuModifyFromPair "操作対象の着時刻が指定されていないため、\n発時刻の変更はできません。"
+    IDS_ERR_EkikanSaisyouSecIsNone 
+                            "駅間最小所要秒数列車が決定できません。\n時刻が%s駅と%s駅の両方に設定された列車が１本もありません。"
+    IDS_ERR_DiaNameDuplex   "ダイヤ名 %s は、すでに存在します。\nダイヤ名は、重複してはいけません。\n他の名前を指定してください。"
+    IDS_ERR_DLLNOTFOUND     "DLLがみつかりません"
+END
+
+STRINGTABLE
+BEGIN
+    ID_Diagram_Ressyabangou "列車番号の表示/非表示の切り替え\n列車番号の表示"
+    ID_Diagram_Ressyamei    "列車名の表示/非表示の切り替え\n列車名の表示"
+    ID_Ressyasyubetsu_Up    "列車種別を上へ移動\n上へ"
+    ID_Ressyasyubetsu_Down  "列車種別を下へ移動\n下へ"
+    ID_Jikokuhyou_FocusMoveDown "列車・時刻のプロパティ設定後のフォーカスセルが、下に移動します\nフォーカス下移動"
+    ID_Jikokuhyou_FocusMoveRight "列車・時刻のプロパティ設定後のフォーカスセルが、右に移動します\nフォーカス右移動"
+    ID_Jikokuhyou_EkijikokuProp "駅時刻(または駅)のプロパティダイアログを開く\n駅時刻のプロパティ"
+    ID_Jikokuhyou_EkijikokuInsert "フォーカスの位置に駅時刻を挿入します\n駅時刻を挿入"
+END
+
+STRINGTABLE
+BEGIN
+    ID_Jikokuhyou_EkijikokuErase "フォーカスの位置の駅時刻を削除します\n駅時刻を削除"
+    ID_Jikokuhyou_ModifyEkijikokuCmd "駅時刻変更を行う\n駅時刻変更"
+    ID_Jikokuhyou_ModifyEkijikokuCmdRepeat 
+                            "前回実行した駅時刻変更を、フォーカスセルの位置で再実行\n駅時刻変更の再実行"
+    ID_ROSEN_DIALIST        "ダイヤの一覧を表示・編集\nダイヤ一覧"
+    ID_Diagram_YDgrSize_Reset "ダイヤグラムの縦軸表示範囲を起点～終点にリセット\n縦軸方向リセット"
+    ID_Diagram_RessyasenKudari "下り列車の表示/非表示の切り替え\n下り列車の表示"
+    ID_Diagram_RessyasenNobori "上り列車の表示/非表示の切り替え\n上り列車の表示"
+    ID_Jikokuhyou_EkijikokuDec "フォーカス位置以後の駅時刻を-1分し、フォーカスを次へ移動します\n-1分し次へ"
+    ID_Jikokuhyou_EkijikokuNext "駅時刻を変更せずにフォーカスを次へ移動\nフォーカスを次へ"
+    ID_Jikokuhyou_EkijikokuInc "フォーカス位置以後の駅時刻を+1分し、フォーカスを次へ移動します\n+1分し次へ"
+    ID_Jikokuhyou_EKikanSaisyouSec "フォーカスを最小所要時間列車に移動\n最小所要時間列車に移動"
+    ID_Jikokuhyou_DiagramHeIdou "ダイヤグラムを開き、カレントセルのある駅へ移動\nダイヤグラムへ移動"
+    ID_VIEW_DisplayTsuukaEkiJikoku "通過駅の駅時刻を表示する/しないの切り替え\n通過駅の駅時刻を表示"
+END
+
+STRINGTABLE
+BEGIN
+    ID_Diagram_HideIppanekiEkimei "一般駅の駅名を表示する/しないの切り替え\n一般駅の駅名を表示しない"
+    ID_FILE_JIKOKUHYOUCSV_EXPORT "時刻表をCSVファイルにエクスポート\nCSVにエクスポート"
+    ID_FILE_EXPORT_JIKOKUHYOUCSV "時刻表CSVファイルへエクスポート\nCSVへエクスポート"
+    ID_FILE_IMPORT_JIKOKUHYOUCSV "時刻表CSVファイルからインポート\nCSVからインポート"
+    ID_Jikokuhyou_EkijikokuDecNoMove "フォーカス位置以後の駅時刻を-1分します\n-1分"
+    ID_Jikokuhyou_EkijikokuIncNoMove "フォーカス位置以後の駅時刻を+1分します\n+1分"
+    ID_Jikokuhyou_EkijikokuDecAnySecNoMove 
+                            "フォーカス位置以後の駅時刻を路線ファイルのプロパティで指定した秒数+します\n-任意秒1"
+    ID_Jikokuhyou_EkijikokuIncAnySecNoMove 
+                            "フォーカス位置以後の駅時刻を路線ファイルのプロパティで指定した秒数-します\n+任意秒1"
+END
+
+STRINGTABLE
+BEGIN
+    ID_Jikokuhyou_EkijikokuPrev "駅時刻を変更せずにフォーカスを前へ移動\nフォーカスを前へ"
+    ID_Jikokuhyou_EkijikokuDecAny2SecNoMove 
+                            "フォーカス位置以後の駅時刻を路線ファイルのプロパティで指定した秒数-します\n-任意秒2"
+    ID_Jikokuhyou_EkijikokuIncAny2SecNoMove 
+                            "フォーカス位置以後の駅時刻を路線ファイルのプロパティで指定した秒数+します\n+任意秒2"
+    ID_Diagram_StopMarkDraw "停車駅明示の切り替え\n停車駅明示"
+    ID_Jikokuhyou_SORT      "列車をフォーカス位置の駅時刻で並べ替え\n並べ替え"
+    ID_FILE_ROSEN_FILE_INSERT 
+                            "現在編集中の路線ファイルの任意の位置に、他の路線ファイルの内容を組入れます\n路線ファイルの組入れ"
+    ID_FILE_ROSEN_CREATE_SUB_ROSEN 
+                            "現在編集している路線ファイルから、一部駅間の列車のみを保持した路線ファイルを作成します\n路線ファイルの切り出し"
+    ID_Jikokuhyou_TsuukaTeisya "駅扱を[通過]-[停車]の間で切り替える(着時刻・発時刻は変更しない)\n通過-停車"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_WORD_Gousuu         "号数"
+    IDS_WORD_JIKOKUHYOU_TSUUKA " ﾚ"
+    IDS_WORD_JIKOKUHYOU_KEIYUNASI "||"
+    IDS_WORD_JIKOKUHYOU_UNKOUNASI_IPPAN "・・"
+    IDS_WORD_JIKOKUHYOU_UNKOUNASI_SYUYOU "----"
+    IDS_WORD_JIKOKUHYOU_TEISYA "○"
+    IDS_WORD_JIKOKUHYOU_SYUUCHAKU "===="
+    IDS_WORD_JIKOKUHYOU_CONNECT "↳"
+    IDS_WORD_JIKOKUHYOU_RELEASE "↴"
+    IDS_WORD_EkiTrackName   "駅番線名"
+    IDS_WORD_TrackRyakusyou "略称"
+END
+
+STRINGTABLE
+BEGIN
+    ID_Jikokuhyou_Direct    "途中駅止まりの列車と、その途中駅始発の列車を直通化します\n直通化"
+    ID_Jikokuhyou_Undirect  "列車を途中駅止まり・途中駅始発の２本に分断します\n分断"
+    ID_EDIT_EKI_INVERT      "駅の順序を反転\n駅の反転"
+    ID_VIEW_DisplayAllEkiJikoku "駅時刻形式に関わらず、全時刻を表示する/しないの切り替え\n全時刻を表示"
+END
+
+STRINGTABLE
+BEGIN
+    ID_Jikokuhyou_Unify     "全列車を列車番号で一本化\t列車番号で一本化"
+    ID_VIEW_DisplaySecondEkiJikoku "秒単位を表示する/しないの切り替え\n秒単位の時刻を表示"
+    ID_VIEW_StandardOperationTimeFunction 
+                            "基準運転時分機能を有効にする/しないの切り替え\n基準運転時分機能を有効にする"
+    ID_Jikokuhyou_EkijikokuAdjustStdOpeTime 
+                            "フォーカス位置の駅時刻を、基準運転時分に合わせます\n基準運転時分に合わせる"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_WORD_MainTrack      "主本線設定"
+    IDS_WORD_EkiTrack2Config "番線設定"
+    IDS_WORD_EkiIndex       "番号"
+    IDS_WORD_Brunch         "分岐駅設定"
+    IDS_WORD_Loop           "環状線設定"
+    IDS_WORD_OperationNumber "運用番号"
+    IDS_WORD_JIKOKUHYOU     "時刻表"
+    IDS_WORD_JIKOKUHYOU_SHUNT_RYAKU "換"
+    IDS_WORD_JIKOKUHYOU_CONNECT_RYAKU "増"
+    IDS_WORD_JIKOKUHYOU_RELEASE_RYAKU "解"
+    IDS_WORD_JIKOKUHYOU_CONNECT_FRONT "前方"
+    IDS_WORD_JIKOKUHYOU_CONNECT_BACK "後方"
+    IDS_WORD_JIKOKUHYOU_RELEASE_FRONT "前"
+    IDS_WORD_JIKOKUHYOU_RELEASE_BACK "後"
+    IDS_WORD_JIKOKUHYOU_RELEASE_LEAVE "以外"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_DisplayAllTrack "全駅の列車番線を表示する/しないの切り替え"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_ExistRessyaOfEkiTrack "%s駅%sを使用する列車が存在します(%s %s)。\n番線の削除はできません。"
+    IDS_ERR_ExistRessyaOfOuterTerminal 
+                            "%s駅で路線外発着駅「%s駅」を使用する列車が存在します(%s %s)。\n路線外発着駅の削除はできません。"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_EKITRACK2       "番線設定を開く\n番線設定を開く"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_WORD_OperationIn    "入区"
+    IDS_WORD_ShihatsuEkimei "始発駅"
+    IDS_WORD_ShuchakuEkimei "終着駅"
+    IDS_WORD_Ekijikoku      "駅時刻"
+    IDS_WORD_KudariArrow    "→"
+    IDS_WORD_NoboriArrow    "←"
+    IDS_WORD_SubMain        "副本線/側線"
+    IDS_WORD_DownMain       "下り主本線"
+    IDS_WORD_UpMain         "上り主本線"
+    IDS_WORD_DownUpMain     "上下主本線"
+    IDS_WORD_Jikoku         "時刻"
+    IDS_WORD_BeforeOperation "前作業"
+    IDS_WORD_AfterOperation "後作業"
+    IDS_WORD_ALLOPERATIONTABLE "運用一覧表"
+    IDS_WORD_OPERATIONTABLE "運用表"
+    IDS_WORD_ALLOPERATIONTABLE2 "運用一覧図"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_DisplayShihatsuShuchakuEkimei "始発・終着駅名欄を表示する/しないの切り替え\n始終着駅名を表示"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_OperationUpdateStop "運用更新を一時停止する"
+    ID_VIEW_DisplayParentSyubetsu "列車の種別表示を親種別を使用する/しないの切り替え"
+    ID_Jikokuhyou_EkijikokuDecRev "フォーカス位置以前の駅時刻を-1分し、フォーカスを次へ移動します\n-1分し次へ"
+    ID_Jikokuhyou_EkijikokuDecRevNoMove "フォーカス位置以前の駅時刻を-1分します\n-1分"
+END
+
+STRINGTABLE
+BEGIN
+    ID_Jikokuhyou_EkijikokuIncRev "フォーカス位置以前の駅時刻を+1分し、フォーカスを次へ移動します\n+1分し次へ"
+    ID_Jikokuhyou_EkijikokuIncRevNoMove "フォーカス位置以前の駅時刻を+1分します\n+1分"
+    ID_Jikokuhyou_EkijikokuDecRevAnySecNoMove 
+                            "フォーカス位置以前の駅時刻を路線ファイルのプロパティで指定した秒数+します\n-任意秒1"
+    ID_Jikokuhyou_EkijikokuDecRevAny2SecNoMove 
+                            "フォーカス位置以前の駅時刻を路線ファイルのプロパティで指定した秒数-します\n-任意秒2"
+    ID_Jikokuhyou_EkijikokuIncRevAnySecNoMove 
+                            "フォーカス位置以前の駅時刻を路線ファイルのプロパティで指定した秒数-します\n+任意秒1"
+    ID_Jikokuhyou_EkijikokuIncRevAny2SecNoMove 
+                            "フォーカス位置以前の駅時刻を路線ファイルのプロパティで指定した秒数+します\n+任意秒2"
+    ID_Jikokuhyou_EkijikokuAdjustStdOpeTimeRev 
+                            "フォーカス位置の駅時刻を、基準運転時分に合わせます\n基準運転時分に合わせる"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_BACKUP          "自動バックアップ機能のON/OFF切り替え"
+    ID_Jikokuhyou_OperationProp "駅作業のプロパティダイアログを開く\n駅作業のプロパティ"
+    ID_VIEW_DisplayCustomizeDisplayMode "通常の編集モード/カスタム表示モードの切り替え\n編集/表示モード切替"
+    ID_EDIT_OPERATIONCOPY   "選択位置の駅作業をｺﾋﾟｰしてｸﾘｯﾌﾟﾎﾞｰﾄﾞに保存\n駅作業のコピー"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_DisplayNoboriLeftToRight "上り列車の表示を、始発駅を左側にする/しないの設定"
+    ID_VIEW_DisplayAllRessya "運用一覧で、全列車を表示する/しないの切り替え\n全列車を表示"
+    ID_AllOperationTableProp "運用一覧のプロパティ\n運用一覧のプロパティ"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_DisplayColonEkiJikoku "コロン付きの時刻表記をする/しないの切り替え\n秒単位の時刻を表示"
+END
+
+STRINGTABLE
+BEGIN
+    ID_AllOperationTable2_XDgrSize_Reset "運用一覧図の横軸表示範囲を終日にリセット\n横軸方向リセット"
+    ID_AllOperationTable2_SyubetsuRyakusyou "種別名の表示/非表示の切り替え\n種別名の表示"
+    ID_AllOperationTable2_JikokuMinute "始発・終着時刻の表示/非表示の切り替え\n時刻の表示"
+    ID_AllOperationTable2_ViewProp "運用一覧図のプロパティ\n運用一覧図のプロパティ"
+    ID_AllOperationTable2_XDgrSize_Dec "運用一覧図の表示を横軸方向に拡大\n横軸方向拡大"
+    ID_AllOperationTable2_XDgrSize_Inc "運用一覧図の表示を横軸方向に縮小\n横軸方向縮小"
+    ID_AllOperationTable2_Memori_Down "運用一覧図の横軸方向の目盛を細かくする\n横軸目盛を細かくする"
+    ID_AllOperationTable2_Memori_Up "運用一覧図の横軸方向の目盛を粗くする\n横軸目盛を粗くする"
+    ID_AllOperationTable2_EkimeiJikoku "出区・入区駅名時刻の表示/非表示の切り替え\n出区・入区駅名時刻の表示"
+END
+
+STRINGTABLE
+BEGIN
+    33060                   "駅間の背景色を個別の色で表示する/しないの切り替え"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_WORD_KUDARIEKIJIKOKUHYOU "下り駅時刻表"
+    IDS_WORD_NOBORIEKIJIKOKUHYOU "上り駅時刻表"
+    IDS_WORD_EKIJIKOKUHYOU  "駅時刻表"
+    IDS_WORD_ClassChange_From "から"
+    IDS_WORD_EkiJikokuhyou_Loop "環状"
+    IDS_WORD_EkiJikokuhyou_ForLoop "環状線"
+    IDS_WORD_INOUTLINKCODELIST "入出区連携コード一覧"
+    IDS_WORD_CROSSINGCHECK  "交差支障チェックリスト"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_DisplayTrackName "着発番線名を表示する/しないの設定"
+    ID_VIEW_DisplayTrack    "列車の発車番線を表示する/しないの切り替え"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_RESSYABANGOUCOPY "選択位置の列車番号・列車名・号数をｺﾋﾟｰしてｸﾘｯﾌﾟﾎﾞｰﾄﾞに保存\n列車情報のコピー"
+    ID_EDIT_RESSYAJOUHOUCOPY "選択位置の列車番号・列車名・号数をｺﾋﾟｰしてｸﾘｯﾌﾟﾎﾞｰﾄﾞに保存\n列車情報のコピー"
+    ID_VIEW_DisplayTsuukaFontPerSyubetsu "通過駅の駅時刻表示に、各種別のフォントを用いる/用いないの設定"
+    ID_VIEW_DisplayIsShihatsu "当駅始発の列車に●印を表示する/しないの切り替え"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_DisplayBackColorNextEkiEnable "駅間の背景色を個別の色で表示する/しないの切り替え"
+    ID_Jikokuhyou_Left      "列車を左へ移動\n左へ"
+    ID_Jikokuhyou_Right     "列車を右へ移動\n右へ"
+    ID_FILE_WindowPlacementRestore "ウインドウ位置を復元する/しないの設定"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_DisplayClassChange "種別変更を表示する/しないの設定"
+    ID_Jikokuhyou_Canceled  "運休扱いの有効無効を切り替え"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_HTMLFilter          "ウェブページ (*.htm;*.html)|*.htm;*.html|"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE 17, 1
+#pragma code_page(932)
+#endif //_WIN32
+#include "res\DiagramEdit.rc2"  //
+#include "l.jpn\afxres.rc"          // 
+#include "l.jpn\afxprint.rc"        // 
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
