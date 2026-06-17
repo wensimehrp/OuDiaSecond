@@ -1,5 +1,5 @@
 /*
-OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -158,15 +158,17 @@ CentDedDia::CentDedDia(
 	const tstring & strName, 
 	const int & iJikokuhyouMainBackColorIndex, 
 	const int & iJikokuhyouSubBackColorIndex, 
-	const int & iJikokuhyouBackPatternIndex, 
+	const int & iJikokuhyouBackPatternIndex,
+	const bool& bPatternDiagramPreviewEnable,
+	const int& iPatternDiagramPreviewCycleSecond,
 	int iEkiCount) :
 	m_strName(strName),
 	m_iJikokuhyouMainBackColorIndex(iJikokuhyouMainBackColorIndex),
 	m_iJikokuhyouSubBackColorIndex(iJikokuhyouSubBackColorIndex),
 	m_iJikokuhyouBackPatternIndex(iJikokuhyouBackPatternIndex),
 	m_bWaitOperationUpdate(false),
-	m_bPatternDiagramPreviewEnable(false),
-	m_iPatternDiagramPreviewCycleSecond(600),
+	m_bPatternDiagramPreviewEnable(bPatternDiagramPreviewEnable),
+	m_iPatternDiagramPreviewCycleSecond(iPatternDiagramPreviewCycleSecond),
 	m_iPatternDiagramPreviewRange(21600)
 {
 	m_CentDedRessyaCont[0] = new CXRessyaCont(
@@ -175,6 +177,9 @@ CentDedDia::CentDedDia(
 	m_CentDedRessyaCont[1] = new CXRessyaCont(
 		this,
 		iEkiCount, Ressyahoukou_Nobori);
+
+	m_iPatternDiagramPreviewRange =
+		min(iPatternDiagramPreviewCycleSecond * 60, 6 * 60 * 60);
 }
 
 CentDedDia::CentDedDia( const CentDedDia& value ) :

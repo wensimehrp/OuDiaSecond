@@ -1,5 +1,5 @@
 /*
-	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+	OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -419,6 +419,61 @@ public:
 		*/
 		bool m_bJikokuhyouOuterShuchakuDisplay;
 
+		/**
+			カスタマイズ時刻表ビューでの入線時刻表示設定
+
+			true:この駅で入線時刻を表示します
+			false:この駅では入線時刻を表示しません。
+		*/
+		bool m_bJikokuhyouNyuusenJikokuDisplay;
+
+		/**
+			カスタマイズ時刻表ビューでの前列車列車番号表示設定
+
+			3:この駅で全列車の列車番号を表示します
+			2:この駅で種別変更・列車番号変更を行った列車のみ列車番号を表示します
+			1:この駅で種別変更を行った列車のみ列車番号を表示します
+			0:この駅では列車番号を表示しません。
+		*/
+		int m_iJikokuhyouPrevRessyabangouDisplay;
+
+		/**
+			カスタマイズ時刻表ビューでの前列車運用番号表示設定
+
+			4:この駅で全列車の運用番号を表示します
+			3:この駅で運用番号が変わった列車のみ表示します
+			2:この駅で種別変更・列車番号変更を行った列車のみ運用番号を表示します
+			1:この駅で種別変更を行った列車のみ運用番号を表示します
+			0:この駅では列車番号を表示しません。
+		*/
+		int m_iJikokuhyouPrevOperationNumberDisplay;
+
+		/**
+			カスタマイズ時刻表ビューでの前列車運用番号表示段数設定(ver2.05から)
+			値の範囲は1-5です(規定値は1)
+		*/
+		int m_iJikokuhyouPrevOperationNumberDisplayRows;
+
+		/**
+			カスタマイズ時刻表ビューでの前列車列車種別表示設定
+
+			3:この駅で全列車の列車種別を表示します
+			2:この駅で種別変更・列車番号変更を行った列車のみ列車種別を表示します
+			1:この駅で種別変更を行った列車のみ列車種別を表示します
+			0:この駅では列車種別を表示しません。
+		*/
+		int m_iJikokuhyouPrevRessyaSyubetsuDisplay;
+
+		/**
+			カスタマイズ時刻表ビューでの前列車列車名・号数表示設定
+
+			3:この駅で全列車の列車名・号数を表示します
+			2:この駅で種別変更・列車番号変更を行った列車のみ列車名・号数を表示します
+			1:この駅で種別変更を行った列車のみ列車名・号数を表示します
+			0:この駅では列車名・号数を表示しません。
+		*/
+		int m_iJikokuhyouPrevRessyameiDisplay;
+
 		///@}
 	 public:
 		// ********************************
@@ -453,7 +508,13 @@ public:
 			m_iJikokuhyouRessyaSyubetsuDisplay(0),
 			m_iJikokuhyouRessyameiDisplay(0),
 			m_bJikokuhyouOuterSihatsuDisplay(false),
-			m_bJikokuhyouOuterShuchakuDisplay(false) {};
+			m_bJikokuhyouOuterShuchakuDisplay(false),
+			m_bJikokuhyouNyuusenJikokuDisplay(false),
+			m_iJikokuhyouPrevRessyabangouDisplay(0),
+			m_iJikokuhyouPrevOperationNumberDisplay(0),
+			m_iJikokuhyouPrevOperationNumberDisplayRows(1),
+			m_iJikokuhyouPrevRessyaSyubetsuDisplay(0),
+			m_iJikokuhyouPrevRessyameiDisplay(0) {};
 		
 		CdDedEki(
 			const tstring&	strEkimei ,
@@ -485,7 +546,13 @@ public:
 			int iJikokuhyouRessyaSyubetsuDisplay,
 			int iJikokuhyouRessyameiDisplay,
 			bool bJikokuhyouOuterSihatsuDisplay,
-			bool bJikokuhyouOuterShuchakuDisplay):
+			bool bJikokuhyouOuterShuchakuDisplay,
+			bool bJikokuhyouNyuusenJikokuDisplay,
+			int iJikokuhyouPrevRessyabangouDisplay,
+			int iJikokuhyouPrevOperationNumberDisplay,
+			int iJikokuhyouPrevOperationNumberDisplayRows,
+			int iJikokuhyouPrevRessyaSyubetsuDisplay,
+			int iJikokuhyouPrevRessyameiDisplay):
 			//Mu<CentDedEkiTrack2*>* pCentDedEkiTrack2):
 			m_strEkimei( strEkimei ),
 			m_bChakujikokuHyouji( bChakujikokuHyouji ) ,
@@ -515,7 +582,13 @@ public:
 			m_iJikokuhyouRessyaSyubetsuDisplay(iJikokuhyouRessyaSyubetsuDisplay),
 			m_iJikokuhyouRessyameiDisplay(iJikokuhyouRessyameiDisplay),
 				m_bJikokuhyouOuterSihatsuDisplay(bJikokuhyouOuterSihatsuDisplay),
-				m_bJikokuhyouOuterShuchakuDisplay(bJikokuhyouOuterShuchakuDisplay)
+				m_bJikokuhyouOuterShuchakuDisplay(bJikokuhyouOuterShuchakuDisplay),
+				m_bJikokuhyouNyuusenJikokuDisplay(bJikokuhyouNyuusenJikokuDisplay),
+				m_iJikokuhyouPrevRessyabangouDisplay(iJikokuhyouPrevRessyabangouDisplay),
+				m_iJikokuhyouPrevOperationNumberDisplay(iJikokuhyouPrevOperationNumberDisplay),
+				m_iJikokuhyouPrevOperationNumberDisplayRows(iJikokuhyouPrevOperationNumberDisplayRows),
+				m_iJikokuhyouPrevRessyaSyubetsuDisplay(iJikokuhyouPrevRessyaSyubetsuDisplay),
+				m_iJikokuhyouPrevRessyameiDisplay(iJikokuhyouPrevRessyameiDisplay)
 		{
 			//CentDedEkiTrack2Cont* pCentDedEkiTrack2Cont = aCentDedEki.getEkiTrack2Cont();
 			for (int idx = 0; idx < pCentDedEkiTrack2Cont->size(); idx++)
@@ -701,6 +774,31 @@ public:
 			m_bJikokuhyouOuterShuchakuDisplay = value; return *this;
 		};
 		bool getJikokuhyouOuterShuchakuDisplay()const { return m_bJikokuhyouOuterShuchakuDisplay; };
+		CdDedEki& setJikokuhyouNyuusenJikokuDisplay(bool value) {
+			m_bJikokuhyouNyuusenJikokuDisplay = value; return *this;
+		};
+		bool getJikokuhyouNyuusenJikokuDisplay()const { return m_bJikokuhyouNyuusenJikokuDisplay; };
+
+		CdDedEki& setJikokuhyouPrevRessyabangouDisplay(int value) {
+			m_iJikokuhyouPrevRessyabangouDisplay = value; return *this;
+		};
+		int getJikokuhyouPrevRessyabangouDisplay()const { return m_iJikokuhyouPrevRessyabangouDisplay; };
+		CdDedEki& setJikokuhyouPrevOperationNumberDisplay(int value) {
+			m_iJikokuhyouPrevOperationNumberDisplay = value; return *this;
+		};
+		int getJikokuhyouPrevOperationNumberDisplay()const { return m_iJikokuhyouPrevOperationNumberDisplay; };
+		CdDedEki& setJikokuhyouPrevOperationNumberDisplayRows(int value) {
+			m_iJikokuhyouPrevOperationNumberDisplayRows = value; return *this;
+		};
+		int getJikokuhyouPrevOperationNumberDisplayRows()const { return m_iJikokuhyouPrevOperationNumberDisplayRows; };
+		CdDedEki& setJikokuhyouPrevRessyaSyubetsuDisplay(int value) {
+			m_iJikokuhyouPrevRessyaSyubetsuDisplay = value; return *this;
+		};
+		int getJikokuhyouPrevRessyaSyubetsuDisplay()const { return m_iJikokuhyouPrevRessyaSyubetsuDisplay; };
+		CdDedEki& setJikokuhyouPrevRessyameiDisplay(int value) {
+			m_iJikokuhyouPrevRessyameiDisplay = value; return *this;
+		};
+		int getJikokuhyouPrevRessyameiDisplay()const { return m_iJikokuhyouPrevRessyameiDisplay; };
 		/**
 		   @return 
 		  	着発の両方の時刻を表示する駅では真です。

@@ -1,5 +1,5 @@
 /*
-	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+	OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -688,8 +688,12 @@ const TCHAR nameJikokuhyouOperationTerminalDownBeforeUpAfter[] = _T("JikokuhyouO
 const TCHAR nameJikokuhyouOperationTerminalDownAfterUpBefore[] = _T("JikokuhyouOperationTerminalDownAfterUpBefore");
 const TCHAR nameJikokuhyouJikokuDisplayKudari[] = _T("JikokuhyouJikokuDisplayKudari");
 const TCHAR nameJikokuhyouJikokuDisplayNobori[] = _T("JikokuhyouJikokuDisplayNobori");
+const TCHAR nameJikokuhyouNyuusenJikokuDisplayKudari[] = _T("JikokuhyouNyuusenJikokuDisplayKudari");
+const TCHAR nameJikokuhyouNyuusenJikokuDisplayNobori[] = _T("JikokuhyouNyuusenJikokuDisplayNobori");
 const TCHAR nameJikokuhyouSyubetsuChangeDisplayKudari[] = _T("JikokuhyouSyubetsuChangeDisplayKudari");
 const TCHAR nameJikokuhyouSyubetsuChangeDisplayNobori[] = _T("JikokuhyouSyubetsuChangeDisplayNobori");
+const TCHAR nameJikokuhyouPrevSyubetsuChangeDisplayKudari[] = _T("JikokuhyouPrevSyubetsuChangeDisplayKudari");
+const TCHAR nameJikokuhyouPrevSyubetsuChangeDisplayNobori[] = _T("JikokuhyouPrevSyubetsuChangeDisplayNobori");
 const TCHAR nameDiagramColorNextEki[] = _T("DiagramColorNextEki");
 const TCHAR nameOperationTableDisplayJikoku[] = _T("OperationTableDisplayJikoku");
 const TCHAR nameJikokuhyouOuterDisplayKudari[] = _T("JikokuhyouOuterDisplayKudari");
@@ -1184,6 +1188,58 @@ int CconvCentDed::CentDedEki_To_OuPropertiesText(
 			nameJikokuhyouOuterDisplayNobori,
 			strValue);
 	}
+	//29.JikokuhyouPrevSyubetsuChangeDisplayKudari
+	if (iRv >= 0)
+	{
+		tstring strValue;
+		strValue += to_tstring(aCentDedEki.getJikokuhyouPrevRessyabangouDisplayKudari());
+		strValue += _T(",");
+		strValue += to_tstring(aCentDedEki.getJikokuhyouPrevOperationNumberDisplayKudari());
+		strValue += _T(",");
+		strValue += to_tstring(aCentDedEki.getJikokuhyouPrevRessyaSyubetsuDisplayKudari());
+		strValue += _T(",");
+		strValue += to_tstring(aCentDedEki.getJikokuhyouPrevRessyameiDisplayKudari());
+		strValue += _T(",");
+		strValue += to_tstring(aCentDedEki.getJikokuhyouPrevOperationNumberDisplayRowsKudari());
+
+		pCNodeContainer->setValue(
+			nameJikokuhyouPrevSyubetsuChangeDisplayKudari,
+			strValue);
+	}
+	//30.JikokuhyouPrevSyubetsuChangeDisplayNobori
+	if (iRv >= 0)
+	{
+		tstring strValue;
+		strValue += to_tstring(aCentDedEki.getJikokuhyouPrevRessyabangouDisplayNobori());
+		strValue += _T(",");
+		strValue += to_tstring(aCentDedEki.getJikokuhyouPrevOperationNumberDisplayNobori());
+		strValue += _T(",");
+		strValue += to_tstring(aCentDedEki.getJikokuhyouPrevRessyaSyubetsuDisplayNobori());
+		strValue += _T(",");
+		strValue += to_tstring(aCentDedEki.getJikokuhyouPrevRessyameiDisplayNobori());
+		strValue += _T(",");
+		strValue += to_tstring(aCentDedEki.getJikokuhyouPrevOperationNumberDisplayRowsNobori());
+
+		pCNodeContainer->setValue(
+			nameJikokuhyouPrevSyubetsuChangeDisplayNobori,
+			strValue);
+	}
+	//31.JikokuhyouNyuusenJikokuDisplayKudari
+	if (iRv >= 0)
+	{
+		if (aCentDedEki.getJikokuhyouNyuusenJikokuDisplayKudari())
+		{
+			pCNodeContainer->setValue(nameJikokuhyouNyuusenJikokuDisplayKudari, _T("1"));
+		}
+	}
+	//32.JikokuhyouNyuusenJikokuDisplayNobori
+	if (iRv >= 0)
+	{
+		if (aCentDedEki.getJikokuhyouNyuusenJikokuDisplayNobori())
+		{
+			pCNodeContainer->setValue(nameJikokuhyouNyuusenJikokuDisplayNobori, _T("1"));
+		}
+	}
 	//28.CrossingCheckRule
 	if (iRv >= 0)
 	{
@@ -1651,7 +1707,7 @@ int CconvCentDed::CentDedEki_From_OuPropertiesText(
 		}
 		else
 		{
-			aCentDedEki.setJikokuhyouRessyabangouDisplayKudari(1);
+			aCentDedEki.setJikokuhyouRessyabangouDisplayKudari(0);
 		}
 
 		if (contValue.size() >= 2 && !contValue[1].empty())
@@ -1678,7 +1734,7 @@ int CconvCentDed::CentDedEki_From_OuPropertiesText(
 		}
 		else
 		{
-			aCentDedEki.setJikokuhyouOperationNumberDisplayKudari(1);
+			aCentDedEki.setJikokuhyouOperationNumberDisplayKudari(0);
 		}
 
 		if (contValue.size() >= 3 && !contValue[2].empty())
@@ -1793,7 +1849,7 @@ int CconvCentDed::CentDedEki_From_OuPropertiesText(
 		}
 		else
 		{
-			aCentDedEki.setJikokuhyouRessyabangouDisplayNobori(1);
+			aCentDedEki.setJikokuhyouRessyabangouDisplayNobori(0);
 		}
 
 		if (contValue.size() >= 2 && !contValue[1].empty())
@@ -1820,7 +1876,7 @@ int CconvCentDed::CentDedEki_From_OuPropertiesText(
 		}
 		else
 		{
-			aCentDedEki.setJikokuhyouOperationNumberDisplayNobori(1);
+			aCentDedEki.setJikokuhyouOperationNumberDisplayNobori(0);
 		}
 
 		if (contValue.size() >= 3 && !contValue[2].empty())
@@ -2046,6 +2102,302 @@ int CconvCentDed::CentDedEki_From_OuPropertiesText(
 			aCentDedEki.setJikokuhyouOuterShuchakuDisplayNobori(false);
 		}
 	}
+	//29.JikokuhyouPrevSyubetsuChangeDisplayKudari
+	if (iRv >= 0)
+	{
+		tstring	strValue = pCNodeContainer->getValue(
+			nameJikokuhyouPrevSyubetsuChangeDisplayKudari);
+		vector<tstring> contValue = splitc<vector<tstring>>(',', strValue);
+		if (contValue.size() >= 1 && !contValue[0].empty())
+		{
+			int iResult;
+			try
+			{
+				iResult = stoi(contValue[0]);
+
+				if (iResult < 0 || iResult>3)
+				{
+					iResult = 0;
+				}
+			}
+			catch (std::invalid_argument e)
+			{
+				iResult = 0;
+			}
+			catch (std::out_of_range e)
+			{
+				iResult = 0;
+			}
+			aCentDedEki.setJikokuhyouPrevRessyabangouDisplayKudari(iResult);
+		}
+		else
+		{
+			aCentDedEki.setJikokuhyouPrevRessyabangouDisplayKudari(0);
+		}
+
+		if (contValue.size() >= 2 && !contValue[1].empty())
+		{
+			int iResult;
+			try
+			{
+				iResult = stoi(contValue[1]);
+
+				if (iResult < 0 || iResult>4)
+				{
+					iResult = 0;
+				}
+			}
+			catch (std::invalid_argument e)
+			{
+				iResult = 0;
+			}
+			catch (std::out_of_range e)
+			{
+				iResult = 0;
+			}
+			aCentDedEki.setJikokuhyouPrevOperationNumberDisplayKudari(iResult);
+		}
+		else
+		{
+			aCentDedEki.setJikokuhyouPrevOperationNumberDisplayKudari(0);
+		}
+
+		if (contValue.size() >= 3 && !contValue[2].empty())
+		{
+			int iResult;
+			try
+			{
+				iResult = stoi(contValue[2]);
+
+				if (iResult < 0 || iResult>3)
+				{
+					iResult = 0;
+				}
+			}
+			catch (std::invalid_argument e)
+			{
+				iResult = 0;
+			}
+			catch (std::out_of_range e)
+			{
+				iResult = 0;
+			}
+			aCentDedEki.setJikokuhyouPrevRessyaSyubetsuDisplayKudari(iResult);
+		}
+		else
+		{
+			aCentDedEki.setJikokuhyouPrevRessyaSyubetsuDisplayKudari(0);
+		}
+
+		if (contValue.size() >= 4 && !contValue[3].empty())
+		{
+			int iResult;
+			try
+			{
+				iResult = stoi(contValue[3]);
+
+				if (iResult < 0 || iResult>3)
+				{
+					iResult = 0;
+				}
+			}
+			catch (std::invalid_argument e)
+			{
+				iResult = 0;
+			}
+			catch (std::out_of_range e)
+			{
+				iResult = 0;
+			}
+			aCentDedEki.setJikokuhyouPrevRessyameiDisplayKudari(iResult);
+		}
+		else
+		{
+			aCentDedEki.setJikokuhyouPrevRessyameiDisplayKudari(0);
+		}
+
+		if (contValue.size() >= 5 && !contValue[4].empty())
+		{
+			int iResult;
+			try
+			{
+				iResult = stoi(contValue[4]);
+
+				if (iResult < 1 || iResult>5)
+				{
+					iResult = 1;
+				}
+			}
+			catch (std::invalid_argument e)
+			{
+				iResult = 1;
+			}
+			catch (std::out_of_range e)
+			{
+				iResult = 1;
+			}
+			aCentDedEki.setJikokuhyouPrevOperationNumberDisplayRowsKudari(iResult);
+		}
+		else
+		{
+			aCentDedEki.setJikokuhyouPrevOperationNumberDisplayRowsKudari(1);
+		}
+	}
+
+	//30.JikokuhyouPrevSyubetsuChangeDisplayNobori
+	if (iRv >= 0)
+	{
+		tstring	strValue = pCNodeContainer->getValue(
+			nameJikokuhyouPrevSyubetsuChangeDisplayNobori);
+		vector<tstring> contValue = splitc<vector<tstring>>(',', strValue);
+		if (contValue.size() >= 1 && !contValue[0].empty())
+		{
+			int iResult;
+			try
+			{
+				iResult = stoi(contValue[0]);
+
+				if (iResult < 0 || iResult>3)
+				{
+					iResult = 0;
+				}
+			}
+			catch (std::invalid_argument e)
+			{
+				iResult = 0;
+			}
+			catch (std::out_of_range e)
+			{
+				iResult = 0;
+			}
+			aCentDedEki.setJikokuhyouPrevRessyabangouDisplayNobori(iResult);
+		}
+		else
+		{
+			aCentDedEki.setJikokuhyouPrevRessyabangouDisplayNobori(0);
+		}
+
+		if (contValue.size() >= 2 && !contValue[1].empty())
+		{
+			int iResult;
+			try
+			{
+				iResult = stoi(contValue[1]);
+
+				if (iResult < 0 || iResult>4)
+				{
+					iResult = 0;
+				}
+			}
+			catch (std::invalid_argument e)
+			{
+				iResult = 0;
+			}
+			catch (std::out_of_range e)
+			{
+				iResult = 0;
+			}
+			aCentDedEki.setJikokuhyouPrevOperationNumberDisplayNobori(iResult);
+		}
+		else
+		{
+			aCentDedEki.setJikokuhyouPrevOperationNumberDisplayNobori(0);
+		}
+
+		if (contValue.size() >= 3 && !contValue[2].empty())
+		{
+			int iResult;
+			try
+			{
+				iResult = stoi(contValue[2]);
+
+				if (iResult < 0 || iResult>3)
+				{
+					iResult = 0;
+				}
+			}
+			catch (std::invalid_argument e)
+			{
+				iResult = 0;
+			}
+			catch (std::out_of_range e)
+			{
+				iResult = 0;
+			}
+			aCentDedEki.setJikokuhyouPrevRessyaSyubetsuDisplayNobori(iResult);
+		}
+		else
+		{
+			aCentDedEki.setJikokuhyouPrevRessyaSyubetsuDisplayNobori(0);
+		}
+
+		if (contValue.size() >= 4 && !contValue[3].empty())
+		{
+			int iResult;
+			try
+			{
+				iResult = stoi(contValue[3]);
+
+				if (iResult < 0 || iResult>3)
+				{
+					iResult = 0;
+				}
+			}
+			catch (std::invalid_argument e)
+			{
+				iResult = 0;
+			}
+			catch (std::out_of_range e)
+			{
+				iResult = 0;
+			}
+			aCentDedEki.setJikokuhyouPrevRessyameiDisplayNobori(iResult);
+		}
+		else
+		{
+			aCentDedEki.setJikokuhyouPrevRessyameiDisplayNobori(0);
+		}
+
+		if (contValue.size() >= 5 && !contValue[4].empty())
+		{
+			int iResult;
+			try
+			{
+				iResult = stoi(contValue[4]);
+
+				if (iResult < 1 || iResult>5)
+				{
+					iResult = 1;
+				}
+			}
+			catch (std::invalid_argument e)
+			{
+				iResult = 1;
+			}
+			catch (std::out_of_range e)
+			{
+				iResult = 1;
+			}
+			aCentDedEki.setJikokuhyouPrevOperationNumberDisplayRowsNobori(iResult);
+		}
+		else
+		{
+			aCentDedEki.setJikokuhyouPrevOperationNumberDisplayRowsNobori(1);
+		}
+	}
+
+	//31.JikokuhyouNyuusenJikokuDisplayKudari
+	if (iRv >= 0)
+	{
+		tstring	strValue = pCNodeContainer->getValue(nameJikokuhyouNyuusenJikokuDisplayKudari);
+		aCentDedEki.setJikokuhyouNyuusenJikokuDisplayKudari(strValue == _T("1"));
+	}
+	//32.JikokuhyouNyuusenJikokuDisplayNobori
+	if (iRv >= 0)
+	{
+		tstring	strValue = pCNodeContainer->getValue(nameJikokuhyouNyuusenJikokuDisplayNobori);
+		aCentDedEki.setJikokuhyouNyuusenJikokuDisplayNobori(strValue == _T("1"));
+	}
 	//28.CrossingCheckRule
 	if (iRv >= 0)
 	{
@@ -2111,7 +2463,7 @@ int CconvCentDed::CentDedEki_From_OuPropertiesText(
 		vector<bool> bDiagramTrackOmit(aCentDedEkiTrack2Cont.size(), false);
 		for (int iIndex = 0; iIndex < aCentDedEkiTrack2Cont.size(); iIndex++)
 		{
-			if (iIndex < contValue.size())
+			if (iIndex < (int)contValue.size())
 			{
 				bDiagramTrackOmit[iIndex] = contValue[iIndex] == _T("1");
 			}

@@ -1,5 +1,5 @@
 /*
-OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -2109,13 +2109,14 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 								TrackContent ToTrackContent;
 								if (pCentDedRessya->getRessyahoukou() == ERessyahoukou::Ressyahoukou_Kudari)
 								{
-									FromTrackContent.eTrackType = ETrackType::TrackType_Terminal;
+									ToTrackContent.eTrackType = ETrackType::TrackType_Terminal;
 								}
 								else
 								{
-									FromTrackContent.eTrackType = ETrackType::TrackType_Origin;
+									ToTrackContent.eTrackType = ETrackType::TrackType_Origin;
 								}
-								FromTrackContent.iTrackIndex = iHatsuEkiIndex;
+								ToTrackContent.iTrackIndex = iHatsuEkiIndex;
+
 								aCrossingCheckSearch.aRessyaProperty = aRessyaProperty;
 								aCrossingCheckSearch.iEkiIndex = iHatsuEkiIndex;
 								aCrossingCheckSearch.FromTrackContent = FromTrackContent;
@@ -2129,7 +2130,7 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 									iFromTrackContentIndex,
 									iToTrackContentIndex,
 									aCrossingCheckSearch,
-									0);
+									1);
 							}
 							else
 							{
@@ -2163,7 +2164,7 @@ void  CWndDcdGridCrossingCheck::OnUpdate_All()
 									iFromTrackContentIndex,
 									iToTrackContentIndex,
 									aCrossingCheckSearch,
-									1);
+									0);
 
 							}
 						}

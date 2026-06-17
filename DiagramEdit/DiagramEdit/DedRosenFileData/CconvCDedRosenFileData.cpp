@@ -1,5 +1,5 @@
 /*
-	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+	OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -403,7 +403,7 @@ int CconvCDedRosenFileData::CDedRosenFileData_from_OuPropertiesText(
 					pCDirectory->getIfNodeContainerConst(),
 					pCOuErrorInfoContainer);
 			}
-			else if (iFileType == 5)//"OuDiaSecond.1.10","OuDiaSecond.1.11","OuDiaSecond.1.12","OuDiaSecond.1.13","OuDiaSecond.1.14","OuDiaSecond.1.15","OuDiaSecond.1.16"
+			else if (iFileType == 5)//"OuDiaSecond.1.10","OuDiaSecond.1.11","OuDiaSecond.1.12","OuDiaSecond.1.13","OuDiaSecond.1.14","OuDiaSecond.1.15","OuDiaSecond.1.16","OuDiaSecond.1.17"
 			{
 				CconvCentDed aCconvCentDed;
 				iResult = aCconvCentDed.CentDedRosen_From_OuPropertiesText(
@@ -550,7 +550,8 @@ int CconvCDedRosenFileData::isEncodeAbleFormat(
 	if (strFileType == getFileType() || 
 		strFileType == getFileTypeS10() || strFileType == getFileTypeS11() ||
 		strFileType == getFileTypeS12() || strFileType == getFileTypeS13() || 
-		strFileType == getFileTypeS14() || strFileType == getFileTypeS15()
+		strFileType == getFileTypeS14() || strFileType == getFileTypeS15() ||
+		strFileType == getFileTypeS16()
 		)
 	{
 		iRv = 5;
@@ -741,7 +742,7 @@ int CconvCDedRosenFileData::isEncodeAbleFormat(
 		// 2:"OuDiaSecond.1.00"
 		// 3:"OuDiaSecond.1.05","OuDiaSecond.1.04","OuDiaSecond.1.03","OuDiaSecond.1.02","OuDiaSecond.1.01"
 		// 4:"OuDiaSecond.1.09","OuDiaSecond.1.08","OuDiaSecond.1.07","OuDiaSecond.1.06"
-		// 5:"OuDiaSecond.1.10","OuDiaSecond.1.11","OuDiaSecond.1.12","OuDiaSecond.1.13","OuDiaSecond.1.14,"OuDiaSecond.1.15","OuDiaSecond.1.16"
+		// 5:"OuDiaSecond.1.10","OuDiaSecond.1.11","OuDiaSecond.1.12","OuDiaSecond.1.13","OuDiaSecond.1.14,"OuDiaSecond.1.15","OuDiaSecond.1.16","OuDiaSecond.1.17"
 		if ( iResult < 0 )
 		{
 			//-	-1001 ;	//	FileType が正しくありません。

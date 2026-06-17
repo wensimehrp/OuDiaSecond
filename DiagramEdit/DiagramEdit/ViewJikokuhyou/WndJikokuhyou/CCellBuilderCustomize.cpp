@@ -1,5 +1,5 @@
 ﻿/*
-OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -547,7 +547,24 @@ void CCellBuilderCustomize::update01_updateWithoutRessya(
 		//	セル(ColumnType_Ekimei,ColumnType_Track)
 		//	セル(ColumnType_Ekimei,ColumnType_Ekijikoku_Hatsu)
 		// --------------------------------
+
+		update01_03_02_27_setEkimei_PrevRessyabangou(
+			pCWndJikokuhyou);
+		update01_03_02_28_setEkimei_PrevOperationNumber(
+			pCWndJikokuhyou);
+		update01_03_02_29_setEkimei_PrevRessyasyubetsu(
+			pCWndJikokuhyou);
+		update01_03_02_30_setEkimei_PrevRessyamei(
+			pCWndJikokuhyou);
+		update01_03_02_31_setEkimei_PrevGousuu(
+			pCWndJikokuhyou);
+		update01_03_02_32_setEkimei_PrevGou(
+			pCWndJikokuhyou);
+
 		update01_03_02_25_setEkimei_OuterSihatsu(
+			pCWndJikokuhyou);
+
+		update01_03_02_33_setEkimei_Nyuusen(
 			pCWndJikokuhyou);
 
 		update01_03_02_06_setEkimei_Chaku( 
@@ -1441,6 +1458,642 @@ void CCellBuilderCustomize::update01_03_02_14_setShuchakuEkimei(
 	}
 }
 
+void CCellBuilderCustomize::update01_03_02_27_setEkimei_PrevRessyabangou(
+	CWndJikokuhyou* pCWndJikokuhyou)
+{
+	CDcdGrid* pCDcdGrid = pCWndJikokuhyou->getCXDcdGrid();
+	CDcdTargetGetDC	aCDcdTarget(NULL);
+
+	// --------------------------------
+	const Mu<CentDedEkiCont::CdDedEki>* muCdDedEki =
+		m_pCDedRosenFileData->getCentDedRosen()->getCentDedEkiCont()->getMuPtr(
+			m_pCentDedRessyaCont->getRessyahoukou());
+	CdXColSpec aCdXColSpec(
+		CdXColSpec::ColumnType_Ekimei);
+	int iXColumnNumber =
+		m_CdXColSpecCont.ColumnNumberFromSpec(aCdXColSpec);
+
+	if (iXColumnNumber >= 0)
+	{
+		for (int iEkiOrder = 0; iEkiOrder < muCdDedEki->size();
+			iEkiOrder++)
+		{
+			CentDedEkiCont::CdDedEki aCdDedEki = muCdDedEki->get(iEkiOrder);
+			CdYColSpec aCdYColSpec(
+				CdYColSpec::ColumnType_EkiPrevRessyabangou,
+				iEkiOrder);
+			int iYColumnNumber = m_CdYColSpecCont.ColumnNumberFromSpec(
+				aCdYColSpec, false);
+			CDcdGridCell* pCDcdGridCell = pCDcdGrid->getCell(
+				iXColumnNumber, iYColumnNumber);
+
+			typedef CDcdTextbox CDcDrawCell;
+			Ou<CDcDrawCell> pCDcDrawCell;
+
+			if (pCDcdGridCell != 0)
+			{
+				//(1.3.*.1)　セル(ColumnType_Ekimei,ColumnType_Ressyabangou) 
+				//	の結合セルの属性を設定。
+				pCDcdGridCell->setAttachCellCount(2, 1);
+
+				//	(1.3.*.2)　セル(ColumnType_Ekimei,ColumnType_Ressyabangou) 
+				//	のDcDrawオブジェクトの型を設定
+				//	( CDcdTextbox とする)。
+				{
+					pCDcDrawCell = dynamic_castOu<CDcDrawCell>(
+						pCDcdGridCell->getIfDcDraw());
+					if (pCDcDrawCell == NULL)
+					{
+						pCDcDrawCell = OuNew<CDcDrawCell>(new CDcDrawCell);
+						pCDcdGridCell->setIfDcDraw(pCDcDrawCell);
+					}
+				}
+
+				//(1.3.*.3)　セル(ColumnType_Ekimei,ColumnType_Ressyabangou) 
+				//	DcDrawオブジェクトに、属性を設定。
+				{
+					*pCDcDrawCell = createCDcdXColumn0();
+					pCDcDrawCell->setText(tstringOf(
+						(LPCTSTR)MfcUtil::LoadCString(
+							IDS_WORD_PrevRessyabangou)));
+				}
+			}
+
+			CDcdGridYColumn* pCDcdGridYColumn = pCDcdGrid->getYColumn(
+				iYColumnNumber);
+			if (pCDcdGridYColumn)
+			{
+				//(1.3.*.4)　Y列(ColumnType_Ressyabangou) のセルの高さを設定
+				{
+					CdDcdSizeXy aCdDcdSizeXy;
+					if (pCDcDrawCell->getItemSize(
+						&aCDcdTarget, &aCdDcdSizeXy))
+					{
+						pCDcdGridYColumn->setColumnSize(aCdDcdSizeXy.getY());
+					}
+				}
+				//	　(1.3.*.5)　Y列(ColumnType_Ressyabangou) の境界線の
+				//	DcDrawオブジェクト に属性を設定。
+				//	　(1.3.*.6)　Y列ColumnType_Ressyabangou) の境界線の
+				//	高さを設定
+				{
+					CDcdGridYBorder* pCDcdGridYBorder
+						= pCDcdGridYColumn->getCDcdGridYBorder();
+					Ou<CDcdLine> pCDcdLine = pCDcdGridYBorder->getIfDcDraw();
+
+					CdYColSpec aCdYColSpecNext
+						= m_CdYColSpecCont.ColumnNumberToSpec(
+							iYColumnNumber + 1);
+					if (aCdYColSpecNext.getColumnType() == aCdYColSpec.ColumnType_Bikou)
+					{
+						pCDcdLine->setCdPenProp(getCdPenPropBoldLine());
+					}
+					else if (aCdYColSpec.getEkiOrder()
+						!= aCdYColSpecNext.getEkiOrder()
+						&& aCdDedEki.getKyoukaisen())
+					{
+						pCDcdLine->setCdPenProp(getCdPenPropBoldLine());
+					}
+					else
+					{
+						pCDcdLine->setCdPenProp(getCdPenPropNarrowLine());
+					}
+
+					CdDcdSizeXy aCdDcdSizeXy;
+					if (pCDcdLine->getItemSize(
+						&aCDcdTarget, &aCdDcdSizeXy))
+					{
+						pCDcdGridYBorder->setColumnBorderSize(
+							aCdDcdSizeXy.getX());
+					}
+				}
+			}
+		}
+	}
+}
+
+void CCellBuilderCustomize::update01_03_02_28_setEkimei_PrevOperationNumber(
+	CWndJikokuhyou* pCWndJikokuhyou)
+{
+	CDcdGrid* pCDcdGrid = pCWndJikokuhyou->getCXDcdGrid();
+	CDcdTargetGetDC	aCDcdTarget(NULL);
+
+	// --------------------------------
+	const Mu<CentDedEkiCont::CdDedEki>* muCdDedEki =
+		m_pCDedRosenFileData->getCentDedRosen()->getCentDedEkiCont()->getMuPtr(
+			m_pCentDedRessyaCont->getRessyahoukou());
+	CdXColSpec aCdXColSpec(
+		CdXColSpec::ColumnType_Ekimei);
+	int iXColumnNumber =
+		m_CdXColSpecCont.ColumnNumberFromSpec(aCdXColSpec);
+
+
+	if (iXColumnNumber >= 0)
+	{
+		for (int iEkiOrder = 0; iEkiOrder < muCdDedEki->size();
+			iEkiOrder++)
+		{
+			CentDedEkiCont::CdDedEki aCdDedEki = muCdDedEki->get(iEkiOrder);
+			for (int idx = 0; aCdDedEki.getJikokuhyouPrevOperationNumberDisplay() > 0 &&
+				idx < aCdDedEki.getJikokuhyouPrevOperationNumberDisplayRows(); idx++)
+			{
+				CdYColSpec aCdYColSpec(
+					CdYColSpec::ColumnType_EkiPrevOperationNumber,
+					iEkiOrder, idx);
+				int iYColumnNumber = m_CdYColSpecCont.ColumnNumberFromSpec(
+					aCdYColSpec, false);
+				CDcdGridCell* pCDcdGridCell = pCDcdGrid->getCell(
+					iXColumnNumber, iYColumnNumber);
+
+				typedef CDcdTextbox CDcDrawCell;
+				Ou<CDcDrawCell> pCDcDrawCell;
+
+				if (pCDcdGridCell != NULL)
+				{
+					//(1.3.*.1)　結合セルの属性を設定。
+					if (idx == 0)
+					{
+						pCDcdGridCell->setAttachCellCount(2, aCdDedEki.getJikokuhyouPrevOperationNumberDisplayRows());
+					}
+
+					//	(1.3.*.2)　セル 
+					//	のDcDrawオブジェクトの型を設定
+					//	( CDcdTextbox とする)。
+					{
+						pCDcDrawCell = dynamic_castOu<CDcDrawCell>(
+							pCDcdGridCell->getIfDcDraw());
+						if (pCDcDrawCell == NULL)
+						{
+							pCDcDrawCell = OuNew<CDcDrawCell>(new CDcDrawCell);
+							pCDcdGridCell->setIfDcDraw(pCDcDrawCell);
+						}
+					}
+					//(1.3.*.3)　セルの DcDrawオブジェクトに、属性を設定。
+					{
+						*pCDcDrawCell = createCDcdXColumn0();
+						pCDcDrawCell->setText(tstringOf(
+							(LPCTSTR)MfcUtil::LoadCString(
+								IDS_WORD_PrevOperationNumber)));
+					}
+				}
+				CDcdGridYColumn* pCDcdGridYColumn = pCDcdGrid->getYColumn(
+					iYColumnNumber);
+				if (pCDcdGridYColumn != NULL)
+				{
+					//(1.3.*.4)　Y列 のセルの高さを設定
+					{
+						CdDcdSizeXy aCdDcdSizeXy;
+						if (pCDcDrawCell->getItemSize(
+							&aCDcdTarget, &aCdDcdSizeXy))
+						{
+							pCDcdGridYColumn->setColumnSize(aCdDcdSizeXy.getY());
+						}
+					}
+					//	　(1.3.*.5)　Y列 の境界線の
+					//	DcDrawオブジェクト に属性を設定。
+					//	　(1.3.*.6)　Y列 の境界線の
+					//	高さを設定
+					{
+						CDcdGridYBorder* pCDcdGridYBorder
+							= pCDcdGridYColumn->getCDcdGridYBorder();
+						Ou<CDcdLine> pCDcdLine = pCDcdGridYBorder->getIfDcDraw();
+
+						CdYColSpec aCdYColSpecNext
+							= m_CdYColSpecCont.ColumnNumberToSpec(
+								iYColumnNumber + 1);
+						if (idx < aCdDedEki.getJikokuhyouPrevOperationNumberDisplayRows() - 1)
+						{
+							pCDcdLine->setCdPenProp(getCdPenPropNullLine());
+						}
+						else if (aCdYColSpecNext.getColumnType() == aCdYColSpec.ColumnType_Bikou)
+						{
+							pCDcdLine->setCdPenProp(getCdPenPropBoldLine());
+						}
+						else if (aCdYColSpec.getEkiOrder()
+							!= aCdYColSpecNext.getEkiOrder()
+							&& aCdDedEki.getKyoukaisen())
+						{
+							pCDcdLine->setCdPenProp(getCdPenPropBoldLine());
+						}
+						else
+						{
+							pCDcdLine->setCdPenProp(getCdPenPropNarrowLine());
+						}
+
+						CdDcdSizeXy aCdDcdSizeXy;
+						if (pCDcdLine->getItemSize(
+							&aCDcdTarget, &aCdDcdSizeXy))
+						{
+							pCDcdGridYBorder->setColumnBorderSize(
+								aCdDcdSizeXy.getX());
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+void CCellBuilderCustomize::update01_03_02_29_setEkimei_PrevRessyasyubetsu(
+	CWndJikokuhyou* pCWndJikokuhyou)
+{
+	CDcdGrid* pCDcdGrid = pCWndJikokuhyou->getCXDcdGrid();
+	CDcdTargetGetDC	aCDcdTarget(NULL);
+
+	// --------------------------------
+	const Mu<CentDedEkiCont::CdDedEki>* muCdDedEki =
+		m_pCDedRosenFileData->getCentDedRosen()->getCentDedEkiCont()->getMuPtr(
+			m_pCentDedRessyaCont->getRessyahoukou());
+	CdXColSpec aCdXColSpec(
+		CdXColSpec::ColumnType_Ekimei);
+	int iXColumnNumber =
+		m_CdXColSpecCont.ColumnNumberFromSpec(aCdXColSpec);
+
+
+	if (iXColumnNumber >= 0)
+	{
+		for (int iEkiOrder = 0; iEkiOrder < muCdDedEki->size();
+			iEkiOrder++)
+		{
+			CentDedEkiCont::CdDedEki aCdDedEki = muCdDedEki->get(iEkiOrder);
+			CdYColSpec aCdYColSpec(
+				CdYColSpec::ColumnType_EkiPrevRessyasyubetsu,
+				iEkiOrder);
+			int iYColumnNumber = m_CdYColSpecCont.ColumnNumberFromSpec(
+				aCdYColSpec, false);
+			CDcdGridCell* pCDcdGridCell = pCDcdGrid->getCell(
+				iXColumnNumber, iYColumnNumber);
+
+			typedef CDcdTextbox CDcDrawCell;
+			Ou<CDcDrawCell> pCDcDrawCell;
+
+			if (pCDcdGridCell != NULL)
+			{
+				//(1.3.*.1)　結合セルの属性を設定。
+				pCDcdGridCell->setAttachCellCount(2, 1);
+
+				//	(1.3.*.2)　セル 
+				//	のDcDrawオブジェクトの型を設定
+				//	( CDcdTextbox とする)。
+				{
+					pCDcDrawCell = dynamic_castOu<CDcDrawCell>(
+						pCDcdGridCell->getIfDcDraw());
+					if (pCDcDrawCell == NULL)
+					{
+						pCDcDrawCell = OuNew<CDcDrawCell>(new CDcDrawCell);
+						pCDcdGridCell->setIfDcDraw(pCDcDrawCell);
+					}
+				}
+				//(1.3.*.3)　セルの DcDrawオブジェクトに、属性を設定。
+				{
+					*pCDcDrawCell = createCDcdXColumn0();
+					pCDcDrawCell->setText(tstringOf(
+						(LPCTSTR)MfcUtil::LoadCString(
+							IDS_WORD_PrevRESSYASYUBETSU)));
+				}
+			}
+			CDcdGridYColumn* pCDcdGridYColumn = pCDcdGrid->getYColumn(
+				iYColumnNumber);
+			if (pCDcdGridYColumn != NULL)
+			{
+				//(1.3.*.4)　Y列 のセルの高さを設定
+				{
+					CdDcdSizeXy aCdDcdSizeXy;
+					if (pCDcDrawCell->getItemSize(
+						&aCDcdTarget, &aCdDcdSizeXy))
+					{
+						pCDcdGridYColumn->setColumnSize(aCdDcdSizeXy.getY());
+					}
+				}
+				//	　(1.3.*.5)　Y列 の境界線の
+				//	DcDrawオブジェクト に属性を設定。
+				//	　(1.3.*.6)　Y列 の境界線の
+				//	高さを設定
+				{
+					CDcdGridYBorder* pCDcdGridYBorder
+						= pCDcdGridYColumn->getCDcdGridYBorder();
+					Ou<CDcdLine> pCDcdLine = pCDcdGridYBorder->getIfDcDraw();
+
+					CdYColSpec aCdYColSpecNext
+						= m_CdYColSpecCont.ColumnNumberToSpec(
+							iYColumnNumber + 1);
+					if (aCdYColSpecNext.getColumnType() == aCdYColSpec.ColumnType_Bikou)
+					{
+						pCDcdLine->setCdPenProp(getCdPenPropBoldLine());
+					}
+					else if (aCdYColSpec.getEkiOrder()
+						!= aCdYColSpecNext.getEkiOrder()
+						&& aCdDedEki.getKyoukaisen())
+					{
+						pCDcdLine->setCdPenProp(getCdPenPropBoldLine());
+					}
+					else
+					{
+						pCDcdLine->setCdPenProp(getCdPenPropNarrowLine());
+					}
+
+					CdDcdSizeXy aCdDcdSizeXy;
+					if (pCDcdLine->getItemSize(
+						&aCDcdTarget, &aCdDcdSizeXy))
+					{
+						pCDcdGridYBorder->setColumnBorderSize(
+							aCdDcdSizeXy.getX());
+					}
+				}
+			}
+		}
+	}
+}
+
+
+void CCellBuilderCustomize::update01_03_02_30_setEkimei_PrevRessyamei(
+	CWndJikokuhyou* pCWndJikokuhyou)
+{
+	CDcdGrid* pCDcdGrid = pCWndJikokuhyou->getCXDcdGrid();
+	CDcdTargetGetDC	aCDcdTarget(NULL);
+
+	// --------------------------------
+	const Mu<CentDedEkiCont::CdDedEki>* muCdDedEki =
+		m_pCDedRosenFileData->getCentDedRosen()->getCentDedEkiCont()->getMuPtr(
+			m_pCentDedRessyaCont->getRessyahoukou());
+	CdXColSpec aCdXColSpec(
+		CdXColSpec::ColumnType_Ekimei);
+	int iXColumnNumber =
+		m_CdXColSpecCont.ColumnNumberFromSpec(aCdXColSpec);
+
+	if (iXColumnNumber >= 0)
+	{
+		for (int iEkiOrder = 0; iEkiOrder < muCdDedEki->size();
+			iEkiOrder++)
+		{
+			CdYColSpec aCdYColSpec(
+				CdYColSpec::ColumnType_EkiPrevRessyamei,
+				iEkiOrder);
+			int iYColumnNumber = m_CdYColSpecCont.ColumnNumberFromSpec(
+				aCdYColSpec, false);
+			CDcdGridCell* pCDcdGridCell = pCDcdGrid->getCell(
+				iXColumnNumber, iYColumnNumber);
+
+			typedef CDcdTextboxV3 CDcDrawCell;
+			Ou<CDcDrawCell> pCDcDrawCell;
+
+			if (pCDcdGridCell != NULL)
+			{
+				//(1.3.*.1)　結合セルの属性を設定。
+				pCDcdGridCell->setAttachCellCount(2, 3);
+
+				//	(1.3.*.2)　セル(ColumnType_Ekimei,ColumnType_Ressyabangou) 
+				//	のDcDrawオブジェクトの型を設定
+				//	( CDcdTextbox とする)。
+				{
+					pCDcDrawCell = dynamic_castOu<CDcDrawCell>(
+						pCDcdGridCell->getIfDcDraw());
+					if (pCDcDrawCell == NULL)
+					{
+						pCDcDrawCell = OuNew<CDcDrawCell>(new CDcDrawCell);
+						pCDcdGridCell->setIfDcDraw(pCDcDrawCell);
+					}
+				}
+				//(1.3.*.3)　セル(ColumnType_Ekimei,ColumnType_Ressyabangou) 
+				//	DcDrawオブジェクトに、属性を設定。
+				{
+					*pCDcDrawCell = createCDcdXColumn0V();
+					pCDcDrawCell->setText(tstringOf(
+						(LPCTSTR)MfcUtil::LoadCString(
+							IDS_WORD_PrevRessyamei)));
+				}
+			}
+			CDcdGridYColumn* pCDcdGridYColumn = pCDcdGrid->getYColumn(
+				iYColumnNumber);
+			if (pCDcdGridYColumn != NULL)
+			{
+				//(1.3.*.4)　Y列 のセルの高さを設定
+				{
+					CdDcdSizeXy aCdDcdSizeXy;
+					if (pCDcDrawCell->getItemSize(
+						&aCDcdTarget, &aCdDcdSizeXy))
+					{
+						pCDcdGridYColumn->setColumnSize(aCdDcdSizeXy.getY());
+					}
+				}
+				//	　(1.3.*.5)　Y列 の境界線の
+				//	DcDrawオブジェクト に属性を設定。
+				//	　(1.3.*.6)　Y列 の境界線の
+				//	高さを設定
+				{
+					CDcdGridYBorder* pCDcdGridYBorder
+						= pCDcdGridYColumn->getCDcdGridYBorder();
+					Ou<CDcdLine> pCDcdLine = pCDcdGridYBorder->getIfDcDraw();
+					pCDcdLine->setCdPenProp(getCdPenPropNullLine());
+
+					CdDcdSizeXy aCdDcdSizeXy;
+					if (pCDcdLine->getItemSize(
+						&aCDcdTarget, &aCdDcdSizeXy))
+					{
+						pCDcdGridYBorder->setColumnBorderSize(
+							aCdDcdSizeXy.getX());
+					}
+				}
+			}
+		}
+	}
+}
+
+
+void CCellBuilderCustomize::update01_03_02_31_setEkimei_PrevGousuu(
+	CWndJikokuhyou* pCWndJikokuhyou)
+{
+	CDcdGrid* pCDcdGrid = pCWndJikokuhyou->getCXDcdGrid();
+	CDcdTargetGetDC	aCDcdTarget(NULL);
+
+	// --------------------------------
+	const Mu<CentDedEkiCont::CdDedEki>* muCdDedEki =
+		m_pCDedRosenFileData->getCentDedRosen()->getCentDedEkiCont()->getMuPtr(
+			m_pCentDedRessyaCont->getRessyahoukou());
+	CdXColSpec aCdXColSpec(
+		CdXColSpec::ColumnType_Ekimei);
+	int iXColumnNumber =
+		m_CdXColSpecCont.ColumnNumberFromSpec(aCdXColSpec);
+
+	if (iXColumnNumber >= 0)
+	{
+		for (int iEkiOrder = 0; iEkiOrder < muCdDedEki->size();
+			iEkiOrder++)
+		{
+			CdYColSpec aCdYColSpec(
+				CdYColSpec::ColumnType_EkiPrevGousuu,
+				iEkiOrder);
+			int iYColumnNumber = m_CdYColSpecCont.ColumnNumberFromSpec(
+				aCdYColSpec, false);
+			CDcdGridCell* pCDcdGridCell = pCDcdGrid->getCell(
+				iXColumnNumber, iYColumnNumber);
+
+			typedef CDcdTextbox CDcDrawCell;
+			Ou<CDcDrawCell> pCDcDrawCell;
+
+			if (pCDcdGridCell != NULL)
+			{
+				//(1.3.*.1)　結合セルの属性を設定。
+				pCDcdGridCell->setAttachCellCount(2, 1);
+
+				//	(1.3.*.2)　セルのDcDrawオブジェクトの型を設定
+				{
+					pCDcDrawCell = dynamic_castOu<CDcDrawCell>(
+						pCDcdGridCell->getIfDcDraw());
+					if (pCDcDrawCell == NULL)
+					{
+						pCDcDrawCell = OuNew<CDcDrawCell>(new CDcDrawCell);
+						pCDcdGridCell->setIfDcDraw(pCDcDrawCell);
+					}
+				}
+				//(1.3.*.3)　セルのDcDrawオブジェクトに、属性を設定。
+				{
+					*pCDcDrawCell = createCDcdXColumn0();
+				}
+			}
+			CDcdGridYColumn* pCDcdGridYColumn = pCDcdGrid->getYColumn(
+				iYColumnNumber);
+			if (pCDcdGridYColumn != NULL)
+			{
+				//(1.3.*.4)　Y列 のセルの高さを設定
+				{
+					CdDcdSizeXy aCdDcdSizeXy;
+					if (pCDcDrawCell->getItemSize(
+						&aCDcdTarget, &aCdDcdSizeXy))
+					{
+						pCDcdGridYColumn->setColumnSize(aCdDcdSizeXy.getY());
+					}
+				}
+				//	　(1.3.*.5)　Y列 の境界線の
+				//	DcDrawオブジェクト に属性を設定。
+				//	　(1.3.*.6)　Y列 の境界線の
+				//	高さを設定
+				{
+					CDcdGridYBorder* pCDcdGridYBorder
+						= pCDcdGridYColumn->getCDcdGridYBorder();
+					Ou<CDcdLine> pCDcdLine = pCDcdGridYBorder->getIfDcDraw();
+					pCDcdLine->setCdPenProp(getCdPenPropNullLine());
+
+					CdDcdSizeXy aCdDcdSizeXy;
+					if (pCDcdLine->getItemSize(
+						&aCDcdTarget, &aCdDcdSizeXy))
+					{
+						pCDcdGridYBorder->setColumnBorderSize(
+							aCdDcdSizeXy.getX());
+					}
+				}
+			}
+		}
+	}
+}
+
+
+void CCellBuilderCustomize::update01_03_02_32_setEkimei_PrevGou(
+	CWndJikokuhyou* pCWndJikokuhyou)
+{
+	CDcdGrid* pCDcdGrid = pCWndJikokuhyou->getCXDcdGrid();
+	CDcdTargetGetDC	aCDcdTarget(NULL);
+
+	// --------------------------------
+	const Mu<CentDedEkiCont::CdDedEki>* muCdDedEki =
+		m_pCDedRosenFileData->getCentDedRosen()->getCentDedEkiCont()->getMuPtr(
+			m_pCentDedRessyaCont->getRessyahoukou());
+	CdXColSpec aCdXColSpec(
+		CdXColSpec::ColumnType_Ekimei);
+	int iXColumnNumber =
+		m_CdXColSpecCont.ColumnNumberFromSpec(aCdXColSpec);
+
+	if (iXColumnNumber >= 0)
+	{
+		for (int iEkiOrder = 0; iEkiOrder < muCdDedEki->size();
+			iEkiOrder++)
+		{
+			CentDedEkiCont::CdDedEki aCdDedEki = muCdDedEki->get(iEkiOrder);
+			CdYColSpec aCdYColSpec(
+				CdYColSpec::ColumnType_EkiPrevGou,
+				iEkiOrder);
+			int iYColumnNumber = m_CdYColSpecCont.ColumnNumberFromSpec(
+				aCdYColSpec, false);
+			CDcdGridCell* pCDcdGridCell = pCDcdGrid->getCell(
+				iXColumnNumber, iYColumnNumber);
+
+			typedef CDcdTextbox CDcDrawCell;
+			Ou<CDcDrawCell> pCDcDrawCell;
+
+			if (pCDcdGridCell != NULL)
+			{
+				//(1.3.*.1)　結合セルの属性を設定。
+				pCDcdGridCell->setAttachCellCount(2, 1);
+
+				//	(1.3.*.2)　セルのDcDrawオブジェクトの型を設定
+				{
+					pCDcDrawCell = dynamic_castOu<CDcDrawCell>(
+						pCDcdGridCell->getIfDcDraw());
+					if (pCDcDrawCell == NULL)
+					{
+						pCDcDrawCell = OuNew<CDcDrawCell>(new CDcDrawCell);
+						pCDcdGridCell->setIfDcDraw(pCDcDrawCell);
+					}
+				}
+				//(1.3.*.3)　セルのDcDrawオブジェクトに、属性を設定。
+				{
+					*pCDcDrawCell = createCDcdXColumn0();
+				}
+			}
+			CDcdGridYColumn* pCDcdGridYColumn = pCDcdGrid->getYColumn(
+				iYColumnNumber);
+			if (pCDcdGridYColumn != NULL)
+			{
+				//(1.3.*.4)　Y列 のセルの高さを設定
+				{
+					CdDcdSizeXy aCdDcdSizeXy;
+					if (pCDcDrawCell->getItemSize(
+						&aCDcdTarget, &aCdDcdSizeXy))
+					{
+						pCDcdGridYColumn->setColumnSize(aCdDcdSizeXy.getY());
+					}
+				}
+				//	　(1.3.*.5)　Y列 の境界線の
+				//	DcDrawオブジェクト に属性を設定。
+				//	　(1.3.*.6)　Y列 の境界線の
+				//	高さを設定
+				{
+					CDcdGridYBorder* pCDcdGridYBorder
+						= pCDcdGridYColumn->getCDcdGridYBorder();
+					Ou<CDcdLine> pCDcdLine = pCDcdGridYBorder->getIfDcDraw();
+
+					CdYColSpec aCdYColSpecNext
+						= m_CdYColSpecCont.ColumnNumberToSpec(
+							iYColumnNumber + 1);
+					if (aCdYColSpecNext.getColumnType() == aCdYColSpec.ColumnType_Bikou)
+					{
+						pCDcdLine->setCdPenProp(getCdPenPropBoldLine());
+					}
+					else if (aCdYColSpec.getEkiOrder()
+						!= aCdYColSpecNext.getEkiOrder()
+						&& aCdDedEki.getKyoukaisen())
+					{
+						pCDcdLine->setCdPenProp(getCdPenPropBoldLine());
+					}
+					else
+					{
+						pCDcdLine->setCdPenProp(getCdPenPropNarrowLine());
+					}
+
+					CdDcdSizeXy aCdDcdSizeXy;
+					if (pCDcdLine->getItemSize(
+						&aCDcdTarget, &aCdDcdSizeXy))
+					{
+						pCDcdGridYBorder->setColumnBorderSize(
+							aCdDcdSizeXy.getX());
+					}
+				}
+			}
+		}
+	}
+}
+
 void CCellBuilderCustomize::update01_03_02_25_setEkimei_OuterSihatsu(
 	CWndJikokuhyou* pCWndJikokuhyou)
 {
@@ -1741,6 +2394,122 @@ void CCellBuilderCustomize::update01_03_02_06_setEkimei_Chaku(
 						{
 							pCDcdGridYBorder->setColumnBorderSize((DcdSize)0);
 						}
+					}
+				}
+			}
+		}
+	}
+}
+
+void CCellBuilderCustomize::update01_03_02_33_setEkimei_Nyuusen(
+	CWndJikokuhyou* pCWndJikokuhyou)
+{
+	CDcdGrid* pCDcdGrid = pCWndJikokuhyou->getCXDcdGrid();
+	CDcdTargetGetDC	aCDcdTarget(NULL);
+
+	// --------------------------------
+	const Mu<CentDedEkiCont::CdDedEki>* muCdDedEki =
+		m_pCDedRosenFileData->getCentDedRosen()->getCentDedEkiCont()->getMuPtr(
+			m_pCentDedRessyaCont->getRessyahoukou());
+
+	// --------------------------------
+	CdXColSpec aCdXColSpec(
+		CdXColSpec::ColumnType_Ekimei);
+	int iXColumnNumber =
+		m_CdXColSpecCont.ColumnNumberFromSpec(aCdXColSpec);
+	if (iXColumnNumber >= 0)
+	{
+		for (int iEkiOrder = 0; iEkiOrder < muCdDedEki->size();
+			iEkiOrder++)
+		{
+			CentDedEkiCont::CdDedEki aCdDedEki = muCdDedEki->get(iEkiOrder);
+
+			CdYColSpec aCdYColSpec(
+				CdYColSpec::ColumnType_Ekijikoku_Nyuusen,
+				iEkiOrder);
+			int iYColumnNumber =
+				m_CdYColSpecCont.ColumnNumberFromSpec(aCdYColSpec, false);
+			CDcdGridCell* pCDcdGridCell = pCDcdGrid->getCell(
+				iXColumnNumber, iYColumnNumber);
+
+			typedef CDcdTextbox CDcDrawCell;
+			Ou<CDcDrawCell> pCDcDrawCell;
+			if (pCDcdGridCell != 0)
+			{
+				//(1.3.*.1)　セルの結合セルの属性を設定。
+				pCDcdGridCell->setAttachCellCount(2, 1);
+
+				//	(1.3.*.2)　セルのDcDrawオブジェクトの型を設定
+				//	( CDcdTextbox とする)。
+				{
+					pCDcDrawCell = dynamic_castOu<CDcDrawCell>(
+						pCDcdGridCell->getIfDcDraw());
+					if (pCDcDrawCell == NULL)
+					{
+						pCDcDrawCell = OuNew<CDcDrawCell>(new CDcDrawCell);
+						pCDcdGridCell->setIfDcDraw(pCDcDrawCell);
+					}
+				}
+				//(1.3.*.3)　セルのDcDrawオブジェクトに、属性を設定。
+				{
+					*pCDcDrawCell = createCDcdEkimei();
+					pCDcDrawCell->setText(tstringOf(
+						(LPCTSTR)MfcUtil::LoadCString(
+							IDS_WORD_NyuusenJikoku)));
+				}
+			}
+			CDcdGridYColumn* pCDcdGridYColumn = pCDcdGrid->getYColumn(
+				iYColumnNumber);
+			if (pCDcdGridYColumn)
+			{
+				//(1.3.*.4)　Y列のセルの高さを設定
+				{
+					CdDcdSizeXy aCdDcdSizeXy;
+					if (pCDcDrawCell->getItemSize(
+						&aCDcdTarget, &aCdDcdSizeXy))
+					{
+						pCDcdGridYColumn->setColumnSize(
+							aCdDcdSizeXy.getY());
+					}
+				}
+				//	　(1.3.*.5)　Y列(ColumnType_Ressyabangou) の境界線の
+				//	DcDrawオブジェクト に属性を設定。
+				//	　(1.3.*.6)　Y列ColumnType_Ressyabangou) の境界線の
+				//	高さを設定
+				{
+					CDcdGridYBorder* pCDcdGridYBorder
+						= pCDcdGridYColumn->getCDcdGridYBorder();
+					Ou<CDcdLine> pCDcdLine =
+						pCDcdGridYBorder->getIfDcDraw();
+
+					//	この駅の駅時刻形式が「着発」 AND
+					//	この列が着で、次の列が発なら、下に罫線
+					CdYColSpec aCdYColSpecNext
+						= m_CdYColSpecCont.ColumnNumberToSpec(
+							iYColumnNumber + 1);
+					if (aCdYColSpecNext.getColumnType() == aCdYColSpec.ColumnType_Bikou)
+					{
+						pCDcdLine->setCdPenProp(getCdPenPropBoldLine());
+					}
+					else if (aCdYColSpec.getEkiOrder()
+						!= aCdYColSpecNext.getEkiOrder()
+						&& aCdDedEki.getKyoukaisen())
+					{
+						pCDcdLine->setCdPenProp(getCdPenPropBoldLine());
+					}
+					else
+					{
+						pCDcdLine->setCdPenProp(getCdPenPropNarrowLine());
+					}
+
+					// --------------------------------
+					//	線の幅から、列幅を設定
+					CdDcdSizeXy aCdDcdSizeXy;
+					if (pCDcdLine->getItemSize(
+						&aCDcdTarget, &aCdDcdSizeXy))
+					{
+						pCDcdGridYBorder->setColumnBorderSize(
+							aCdDcdSizeXy.getX());
 					}
 				}
 			}
@@ -3321,6 +4090,144 @@ void CCellBuilderCustomize::update02_02_updateRessya(
 			//		pCWndJikokuhyou);
 			//}
 			//break;
+			case CdYColSpec::ColumnType_EkiPrevRessyabangou:
+			{
+				if (!aCustomizeJikokuhyouContent.iRessyaIndexCont.empty() &&
+					iRessyaIndexContIndex < (int)aCustomizeJikokuhyouContent.iRessyaIndexCont.size() - 1 &&
+					aCdYColSpec.getEkiOrder() > iValidSyuuchakuEki &&
+					iValidSyuuchakuEki != -1)
+				{
+					iRessyaIndexContIndex++;
+					pCentDedRessya =
+						m_pCentDedRessyaCont->getMuPtr()->get(aCustomizeJikokuhyouContent.iRessyaIndexCont[iRessyaIndexContIndex]);
+					iCurrentRessyaShihatsuEkiOrder = iValidSyuuchakuEki;
+					iValidSyuuchakuEki = pCentDedRessya->getValidSyuuchakuEki();
+
+					if (aCustomizeJikokuhyouContent.iShiftSecond != 0)
+					{
+						aCentDedRessya = CentDedRessya(*pCentDedRessya);
+						aCentDedRessya.modifyRessyaJikoku(
+							aCustomizeJikokuhyouContent.iShiftSecond,
+							CdDedJikokuOrder(0, CdDedJikokuOrder::EkiJikokuItem_Chaku));
+						pCentDedRessya = &aCentDedRessya;
+					}
+				}
+				update02_02_02_27_setRessya_PrevRessyabangou(
+					iXColumnNumber,
+					iYColumnNumber,
+					pCentDedRessya,
+					aCustomizeJikokuhyouContent,
+					aCdYColSpec.getEkiOrder(),
+					iCurrentRessyaShihatsuEkiOrder,
+					iRessyaIndexContIndex,
+					pCWndJikokuhyou);
+			}
+			break;
+			case CdYColSpec::ColumnType_EkiPrevRessyasyubetsu:
+			{
+				// --------------------------------
+				//	(2.2.2.29)セル(ColumnType_Ressya, ColumnType_EkiPrevRessyasyubetsu)
+				// --------------------------------
+				if (!aCustomizeJikokuhyouContent.iRessyaIndexCont.empty() &&
+					iRessyaIndexContIndex < (int)aCustomizeJikokuhyouContent.iRessyaIndexCont.size() - 1 &&
+					aCdYColSpec.getEkiOrder() > iValidSyuuchakuEki &&
+					iValidSyuuchakuEki != -1)
+				{
+					iRessyaIndexContIndex++;
+					pCentDedRessya =
+						m_pCentDedRessyaCont->getMuPtr()->get(aCustomizeJikokuhyouContent.iRessyaIndexCont[iRessyaIndexContIndex]);
+					iCurrentRessyaShihatsuEkiOrder = iValidSyuuchakuEki;
+					iValidSyuuchakuEki = pCentDedRessya->getValidSyuuchakuEki();
+
+					if (aCustomizeJikokuhyouContent.iShiftSecond != 0)
+					{
+						aCentDedRessya = CentDedRessya(*pCentDedRessya);
+						aCentDedRessya.modifyRessyaJikoku(
+							aCustomizeJikokuhyouContent.iShiftSecond,
+							CdDedJikokuOrder(0, CdDedJikokuOrder::EkiJikokuItem_Chaku));
+						pCentDedRessya = &aCentDedRessya;
+					}
+
+				}
+				update02_02_02_29_setRessya_PrevRessyasyubetsu(
+					iXColumnNumber,
+					iYColumnNumber,
+					pCentDedRessya,
+					aCustomizeJikokuhyouContent,
+					aCdYColSpec.getEkiOrder(),
+					iCurrentRessyaShihatsuEkiOrder,
+					iRessyaIndexContIndex,
+					pCWndJikokuhyou);
+			}
+			break;
+			case CdYColSpec::ColumnType_EkiPrevOperationNumber:
+			{
+				if (!aCustomizeJikokuhyouContent.iRessyaIndexCont.empty() &&
+					iRessyaIndexContIndex < (int)aCustomizeJikokuhyouContent.iRessyaIndexCont.size() - 1 &&
+					aCdYColSpec.getEkiOrder() > iValidSyuuchakuEki &&
+					iValidSyuuchakuEki != -1)
+				{
+					iRessyaIndexContIndex++;
+					pCentDedRessya =
+						m_pCentDedRessyaCont->getMuPtr()->get(aCustomizeJikokuhyouContent.iRessyaIndexCont[iRessyaIndexContIndex]);
+					iCurrentRessyaShihatsuEkiOrder = iValidSyuuchakuEki;
+					iValidSyuuchakuEki = pCentDedRessya->getValidSyuuchakuEki();
+
+					if (aCustomizeJikokuhyouContent.iShiftSecond != 0)
+					{
+						aCentDedRessya = CentDedRessya(*pCentDedRessya);
+						aCentDedRessya.modifyRessyaJikoku(
+							aCustomizeJikokuhyouContent.iShiftSecond,
+							CdDedJikokuOrder(0, CdDedJikokuOrder::EkiJikokuItem_Chaku));
+						pCentDedRessya = &aCentDedRessya;
+					}
+				}
+				update02_02_02_28_setRessya_PrevOperationNumber(
+					iXColumnNumber,
+					iYColumnNumber,
+					pCentDedRessya,
+					aCustomizeJikokuhyouContent,
+					aCdYColSpec.getEkiOrder(),
+					iCurrentRessyaShihatsuEkiOrder,
+					iRessyaIndexContIndex,
+					pCWndJikokuhyou);
+				//運用番号段数-1の分だけ、iYColumnNumberに加算します
+				iYColumnNumber += muCdDedEki->get(aCdYColSpec.getEkiOrder()).getJikokuhyouPrevOperationNumberDisplayRows() - 1;
+			}
+			break;
+			case CdYColSpec::ColumnType_EkiPrevRessyamei:
+			{
+				if (!aCustomizeJikokuhyouContent.iRessyaIndexCont.empty() &&
+					iRessyaIndexContIndex < (int)aCustomizeJikokuhyouContent.iRessyaIndexCont.size() - 1 &&
+					aCdYColSpec.getEkiOrder() > iValidSyuuchakuEki &&
+					iValidSyuuchakuEki != -1)
+				{
+					iRessyaIndexContIndex++;
+					pCentDedRessya =
+						m_pCentDedRessyaCont->getMuPtr()->get(aCustomizeJikokuhyouContent.iRessyaIndexCont[iRessyaIndexContIndex]);
+					iCurrentRessyaShihatsuEkiOrder = iValidSyuuchakuEki;
+					iValidSyuuchakuEki = pCentDedRessya->getValidSyuuchakuEki();
+
+					if (aCustomizeJikokuhyouContent.iShiftSecond != 0)
+					{
+						aCentDedRessya = CentDedRessya(*pCentDedRessya);
+						aCentDedRessya.modifyRessyaJikoku(
+							aCustomizeJikokuhyouContent.iShiftSecond,
+							CdDedJikokuOrder(0, CdDedJikokuOrder::EkiJikokuItem_Chaku));
+						pCentDedRessya = &aCentDedRessya;
+					}
+				}
+				update02_02_02_30_setRessya_PrevRessyamei(
+					iXColumnNumber,
+					iYColumnNumber,
+					pCentDedRessya,
+					aCustomizeJikokuhyouContent,
+					aCdYColSpec.getEkiOrder(),
+					iCurrentRessyaShihatsuEkiOrder,
+					iRessyaIndexContIndex,
+					pCWndJikokuhyou);
+			}
+			break;
 			case CdYColSpec::ColumnType_EkiOuter_Shihatsu1:
 			{
 				// --------------------------------
@@ -3356,6 +4263,39 @@ void CCellBuilderCustomize::update02_02_updateRessya(
 					iCurrentRessyaShihatsuEkiOrder,
 					pCWndJikokuhyou);
 				iYColumnNumber += 1;
+			}
+			break;
+			case CdYColSpec::ColumnType_Ekijikoku_Nyuusen:
+			{
+				if (!aCustomizeJikokuhyouContent.iRessyaIndexCont.empty() &&
+					iRessyaIndexContIndex < (int)aCustomizeJikokuhyouContent.iRessyaIndexCont.size() - 1 &&
+					aCdYColSpec.getEkiOrder() > iValidSyuuchakuEki &&
+					iValidSyuuchakuEki != -1)
+				{
+					iRessyaIndexContIndex++;
+					pCentDedRessya =
+						m_pCentDedRessyaCont->getMuPtr()->get(aCustomizeJikokuhyouContent.iRessyaIndexCont[iRessyaIndexContIndex]);
+					iCurrentRessyaShihatsuEkiOrder = iValidSyuuchakuEki;
+					iValidSyuuchakuEki = pCentDedRessya->getValidSyuuchakuEki();
+
+					if (aCustomizeJikokuhyouContent.iShiftSecond != 0)
+					{
+						aCentDedRessya = CentDedRessya(*pCentDedRessya);
+						aCentDedRessya.modifyRessyaJikoku(
+							aCustomizeJikokuhyouContent.iShiftSecond,
+							CdDedJikokuOrder(0, CdDedJikokuOrder::EkiJikokuItem_Chaku));
+						pCentDedRessya = &aCentDedRessya;
+					}
+				}
+				update02_02_02_31_setRessya_Nyuusen(
+					iXColumnNumber,
+					iYColumnNumber,
+					pCentDedRessya,
+					aCustomizeJikokuhyouContent,
+					aCdYColSpec.getEkiOrder(),
+					iCurrentRessyaShihatsuEkiOrder,
+					iRessyaIndexContIndex,
+					pCWndJikokuhyou);
 			}
 			break;
 			case CdYColSpec::ColumnType_Ekijikoku_Chaku:
@@ -3899,8 +4839,16 @@ void CCellBuilderCustomize::update02_02_01_setRessya_Ressyabangou(
 			tstring strText;
 			if (pCentDedRessya == NULL)
 			{
-				idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
-				strText = aCustomizeJikokuhyouContent.strRessyabangou;
+				if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+				{
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+					strText = aCustomizeJikokuhyouContent.strPrevRessyabangou;
+				}
+				else
+				{
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+					strText = aCustomizeJikokuhyouContent.strRessyabangou;
+				}
 			}
 			else
 			{
@@ -3937,8 +4885,16 @@ void CCellBuilderCustomize::update02_02_02_12_setRessya_OperationNumber(
 	vector<tstring> strOperationNumber;
 	if (pCentDedRessya == NULL)
 	{
-		idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
-		strOperationNumber = aCustomizeJikokuhyouContent.strOperationNumber;
+		if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+		{
+			idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+			strOperationNumber = aCustomizeJikokuhyouContent.strPrevOperationNumber;
+		}
+		else
+		{
+			idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+			strOperationNumber = aCustomizeJikokuhyouContent.strOperationNumber;
+		}
 	}
 	else
 	{
@@ -4063,7 +5019,14 @@ void CCellBuilderCustomize::update02_02_02_02_setRessya_Ressyasyubetsu(
 			int idxRessyasyubetsu;
 			if (pCentDedRessya == NULL)
 			{
-				idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+				if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+				{
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+				}
+				else
+				{
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+				}
 			}
 			else
 			{
@@ -4093,7 +5056,8 @@ void CCellBuilderCustomize::update02_02_02_02_setRessya_Ressyasyubetsu(
 
 			tstring strText ;
 			if ((pCentDedRessya != NULL && !pCentDedRessya->isNull() ) ||
-				aCustomizeJikokuhyouContent.iRessyasyubetsuIndex != -1)
+				aCustomizeJikokuhyouContent.iRessyasyubetsuIndex != -1 ||
+				aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex != -1)
 			{
 				strText = pCentDedRessyasyubetsu->getRyakusyou() ;
 			}
@@ -4155,8 +5119,16 @@ void CCellBuilderCustomize::update02_02_02_03_setRessya_Ressyamei(
 			tstring strText ;
 			if (pCentDedRessya == NULL)
 			{
-				idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
-				strText = aCustomizeJikokuhyouContent.strRessyamei;
+				if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+				{
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+					strText = aCustomizeJikokuhyouContent.strPrevRessyamei;
+				}
+				else
+				{
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+					strText = aCustomizeJikokuhyouContent.strRessyamei;
+				}
 			}
 			else
 			{
@@ -4225,8 +5197,16 @@ void CCellBuilderCustomize::update02_02_02_04_setRessya_Gousuu(
 			tstring strText;
 			if (pCentDedRessya == NULL)
 			{
-				idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
-				strText = aCustomizeJikokuhyouContent.strGousuu;
+				if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+				{
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+					strText = aCustomizeJikokuhyouContent.strPrevGousuu;
+				}
+				else
+				{
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+					strText = aCustomizeJikokuhyouContent.strGousuu;
+				}
 			}
 			else
 			{
@@ -4292,10 +5272,21 @@ void CCellBuilderCustomize::update02_02_02_05_setRessya_Gou(
 			CString	strText;
 			if (pCentDedRessya == NULL)
 			{
-				idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
-				if (!aCustomizeJikokuhyouContent.strGousuu.empty())
+				if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
 				{
-					strText.LoadString(IDS_WORD_GOUSUU2);
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+					if (!aCustomizeJikokuhyouContent.strPrevGousuu.empty())
+					{
+						strText.LoadString(IDS_WORD_GOUSUU2);
+					}
+				}
+				else
+				{
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+					if (!aCustomizeJikokuhyouContent.strGousuu.empty())
+					{
+						strText.LoadString(IDS_WORD_GOUSUU2);
+					}
 				}
 			}
 			else
@@ -4366,7 +5357,14 @@ void CCellBuilderCustomize::update02_02_02_13_setRessya_ShihatsuEkimei(
 				int idxRessyasyubetsu;
 				if (pCentDedRessya == NULL)
 				{
-					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+					if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+					{
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+					}
+					else
+					{
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+					}
 				}
 				else
 				{
@@ -4470,7 +5468,14 @@ void CCellBuilderCustomize::update02_02_02_14_setRessya_ShuchakuEkimei(
 				int idxRessyasyubetsu;
 				if (pCentDedRessya == NULL)
 				{
-					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+					if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+					{
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+					}
+					else
+					{
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+					}
 				}
 				else
 				{
@@ -4526,6 +5531,1336 @@ void CCellBuilderCustomize::update02_02_02_14_setRessya_ShuchakuEkimei(
 	}
 }
 
+void CCellBuilderCustomize::update02_02_02_27_setRessya_PrevRessyabangou(
+	int iXColumnNumber,
+	int iYColumnNumber,
+	const CentDedRessya* pCentDedRessya,
+	const CustomizeJikokuhyouContent& aCustomizeJikokuhyouContent,
+	int iEkiOrder,
+	int iCurrentRessyaShihatsuEkiOrder,
+	int iRessyaIndexContIndex,
+	CWndJikokuhyou* pCWndJikokuhyou)
+{
+	CDcdGrid* pCDcdGrid = pCWndJikokuhyou->getCXDcdGrid();
+	const CentDedRosen* pCentDedRosen =
+		m_pCDedRosenFileData->getCentDedRosen();
+	const Mu<CentDedEkiCont::CdDedEki>* muCdDedEki =
+		pCentDedRosen->getCentDedEkiCont()->getMuPtr(
+			m_pCentDedRessyaCont->getRessyahoukou());
+	//CDcdTargetGetDC	aCDcdTarget(NULL);
+	// --------------------------------
+	//CdYColSpec aCdYColSpec(
+	//	CdYColSpec::ColumnType_EkiRessyabangou,
+	//	iEkiOrder);
+	//int iYColumnNumber =
+	//	m_CdYColSpecCont.ColumnNumberFromSpec(aCdYColSpec, false);
+	CDcdGridCell* pCDcdGridCell = pCDcdGrid->getCell(
+		iXColumnNumber, iYColumnNumber);
+	// --------------------------------
+	//CdDedDispProp	aCdDedDispProp = m_pCDedRosenFileData->getCdDedDispProp() ;
+	//tstring strCellExtent( aCdDedDispProp.getJikokuhyouRessyaWidth() , '0' ) ;
+	//strCellExtent = セルの大きさの目安となる文字列です。
+	//	時刻表列車セルの幅(文字数) CdDedDispProp::m_iJikokuhyouRessyaWidth
+	//	の数だけ '0' が並んだ文字列です
+
+	if (pCDcdGridCell != 0)
+	{
+		typedef CDcdTextbox CDcDrawCell;
+		Ou<CDcDrawCell> pCDcDrawCell;
+		// --------------------------------
+		//　(2.2.*.1)　セル(ColumnType_Ressya,ColumnType_Ressyabangou) の
+		//	結合セルを設定
+		pCDcdGridCell->setAttachCellCount(1, 1);
+
+		//　(2.2.*.2)　セル の	DcDrawオブジェクトの型を設定
+		//	( CDcdTextbox とする)。
+		{
+			pCDcDrawCell = dynamic_castOu<CDcDrawCell>(
+				pCDcdGridCell->getIfDcDraw());
+			if (pCDcDrawCell == NULL)
+			{
+				pCDcDrawCell = OuNew<CDcDrawCell>(new CDcDrawCell);
+				pCDcdGridCell->setIfDcDraw(pCDcDrawCell);
+			}
+		}
+
+		//　(2.2.*.3)　セルの DcDrawオブジェクトに、属性を設定。
+		{
+			CentDedEkiCont::CdDedEki aCdDedEki = muCdDedEki->get(iEkiOrder);
+			int idxRessyasyubetsu;
+			if (pCentDedRessya == NULL)
+			{
+				if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+				{
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+				}
+				else
+				{
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+				}
+			}
+			else
+			{
+				idxRessyasyubetsu = pCentDedRessya->getRessyasyubetsuIndex();
+			}
+			/**
+				この欄に表示するもの
+				・pCentDedRessya == NULLの場合
+					iReleaseEkiIndex >= 0の場合
+						iReleaseEkiIndex < iEkiOrderかつ路線外終着表示駅>=iEkiOrder
+							「||」(経由無し)
+						それ以外
+							空白
+					iConnectEkiIndex >= 0の場合
+						増結駅の次の駅、増結駅が着時刻のみ表示で、この項が増結駅の直下の場合は↳、
+						それ以外は全て空白(この項が、路線外始発表示欄より下になることは無いので、経由なしを表示することもない)
+
+				・iEkiOrder <iValidSihatsuEkiの場合
+					iRessyaIndexContIndex >= 1(2列車目以降)の場合
+						「||」(経由無し)
+					1列車目の場合
+						路線外始発(相当)で、iEkiOrder == 路線外始発表示駅
+							JikokuhyouPrevRessyabangouDisplayに基づいて、種別名もしくは空白表示(ここでは↓は無し)
+						iReleaseEkiOrder >= 0かつ　iReleaseEkiOrder < iEkiOrderr(iReleaseEkiOrder = iEkiOrderの場合は、この項は↴よりも上にあるので空白)
+							「||」(経由無し)
+				・iValidSihatsuEki == iEkiOrder
+					路線外始発相当の場合
+					getPrevJikokuhyouRessyabangouDisplayが3の場合：種別名
+					2列車目以降で、
+						2の場合：aCustomizeJikokuhyouContent.eEBeforeTypeを見て、種別変更・列車情報変更なら種別名
+						1の場合：aCustomizeJikokuhyouContent.eEBeforeTypeを見て、種別変更なら種別名
+						それ以外は空白
+				・iValidSihatsuEki<iEkiOrder<iValidSyuuchakuEki
+					isRunbetweenがtrueの場合または、
+					getJikokuhyouChakujikokuDisplayがfalseかつisRunbetween(-1)がtrueの場合、表示有りとなる。
+						※発時刻のみ表示で、前駅→当駅が運行あり、当駅→次駅が運行なし(経由なし)の場合は、
+						当駅の発時刻欄(この欄より下部)に、経由なしを超えた先の発時刻を表示するので、
+						この欄が経由なしだと表示が合わないので。
+						getJikokuhyouRessyabangouDisplayが3の場合:列車番号
+						2/1の場合:「↓」
+					その他の場合
+						「||」
+				・iValidSyuuchakuEki == iEkiOrder
+					空白
+				・iValidSyuuchakuEki < iEkiOrder
+					路線外終着(相当)で路線外終着欄がこの駅かこれより下にある場合「||」
+					iConnectEkiOrder >= iEkiOrderの場合「||」
+
+			*/
+			* pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
+			tstring strText = _T("");
+			if (pCentDedRessya == NULL)
+			{
+				/**
+					pCentDedRessya == NULLの場合は、
+					分割+路線外終着または路線外始発+増結のどちらかのパターンです。
+					なお、分割駅に対応する路線外終着表示欄、もしくは解結駅に対応する路線外始発表示欄がない場合は、この列車の描写は行わず、空行となります。
+				*/
+				if (aCustomizeJikokuhyouContent.iReleaseEkiOrder >= 0)
+				{
+					if (iEkiOrder > aCustomizeJikokuhyouContent.iReleaseEkiOrder &&
+						iEkiOrder <= m_iOuterShuchakuDisplayEkiOrder[aCustomizeJikokuhyouContent.iReleaseEkiOrder])
+					{
+						strText = (LPCTSTR)MfcUtil::LoadCString(
+							IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+
+					}
+				}
+				else if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+				{
+					if (iEkiOrder - 1 == aCustomizeJikokuhyouContent.iConnectEkiOrder)
+					{
+						CentDedEkiCont::CdDedEki aCdDedEkiPrev = muCdDedEki->get(iEkiOrder - 1);
+						if (aCdDedEkiPrev.getJikokuhyouChakuJikokuDisplay() &&
+							!aCdDedEkiPrev.getJikokuhyouHatsuJikokuDisplay())
+						{
+							int iYColumnNumberPrev = iYColumnNumber - 1;
+							CdYColSpec aCdYColSpecPrev = m_CdYColSpecCont.ColumnNumberToSpec(iYColumnNumberPrev);
+							if (aCdYColSpecPrev.getEkiOrder() == iEkiOrder - 1)
+							{
+								strText = (LPCTSTR)MfcUtil::LoadCString(
+									IDS_WORD_JIKOKUHYOU_CONNECT);
+							}
+						}
+					}
+				}
+			}
+			else
+			{
+				int iValidSihatsuEki = pCentDedRessya->getValidSihatsuEki();
+				int iValidSyuuchakuEki = pCentDedRessya->getValidSyuuchakuEki();
+				if (iValidSihatsuEki == -1 || iValidSyuuchakuEki == -1)
+				{
+					strText = _T("");
+				}
+				else if (iEkiOrder < iValidSihatsuEki)
+				{
+					if (iCurrentRessyaShihatsuEkiOrder >= 0)
+					{
+						strText = (LPCTSTR)MfcUtil::LoadCString(
+							IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+					}
+					//iCurrentRessyaShihatsuEkiOrder < 0(1列車目)
+					else if (aCustomizeJikokuhyouContent.iSihatsuEkiOrder >= -2 &&
+						m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] >= 0 &&
+						m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] == iEkiOrder)
+					{
+						//路線外始発相当で、この駅が路線外始発表示駅の場合
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+						if (aCdDedEki.getJikokuhyouPrevRessyabangouDisplay() == 3)
+						{
+							strText = aCustomizeJikokuhyouContent.strPrevRessyabangou;
+						}
+						else if (aCustomizeJikokuhyouContent.eEBeforeType == EBeforeAfterType::BeforeAfterType_ClassChange)
+						{
+							strText = aCustomizeJikokuhyouContent.strPrevRessyabangou;
+						}
+						else if (aCustomizeJikokuhyouContent.eEBeforeType == EBeforeAfterType::BeforeAfterType_PropertyChange &&
+							aCdDedEki.getJikokuhyouPrevRessyabangouDisplay() == 2)
+						{
+							strText = aCustomizeJikokuhyouContent.strPrevRessyabangou;
+						}
+					}
+					else if (aCustomizeJikokuhyouContent.iReleaseEkiOrder < iEkiOrder &&
+						aCustomizeJikokuhyouContent.iReleaseEkiOrder >= 0)
+					{
+						//分割列車
+						strText = (LPCTSTR)MfcUtil::LoadCString(
+							IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+					}
+				}
+				else if (iValidSihatsuEki == iEkiOrder)
+				{
+					//2列車目以降かつ、1列車目の終着駅との間に、経由なしがある場合
+					if (iCurrentRessyaShihatsuEkiOrder >= 0 &&
+						iCurrentRessyaShihatsuEkiOrder < iEkiOrder)
+					{
+						strText = (LPCTSTR)MfcUtil::LoadCString(
+							IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+					}
+					//路線外始発相当かつ、始発駅にこの項がある場合は、路線外始発表示も当然この駅にあるので、前列車接続タイプに基づいて表示を行う
+					else if (aCustomizeJikokuhyouContent.iSihatsuEkiOrder >= -2)
+					{
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+
+						if (aCdDedEki.getJikokuhyouPrevRessyabangouDisplay() == 3)
+						{
+							strText = aCustomizeJikokuhyouContent.strPrevRessyabangou;
+						}
+						else if (aCustomizeJikokuhyouContent.eEBeforeType == EBeforeAfterType::BeforeAfterType_ClassChange)
+						{
+							strText = aCustomizeJikokuhyouContent.strPrevRessyabangou;
+						}
+						else if (aCustomizeJikokuhyouContent.eEBeforeType == EBeforeAfterType::BeforeAfterType_PropertyChange &&
+							aCdDedEki.getJikokuhyouPrevRessyabangouDisplay() == 2)
+						{
+							strText = aCustomizeJikokuhyouContent.strPrevRessyabangou;
+						}
+					}
+				}
+				else if (iValidSihatsuEki < iEkiOrder &&
+					iEkiOrder < iValidSyuuchakuEki)
+				{
+					if (!pCentDedRessya->isRunBetweenNextEki(iEkiOrder - 1))
+					{
+						strText = (LPCTSTR)MfcUtil::LoadCString(
+							IDS_WORD_JIKOKUHYOU_KEIYUNASI);
+					}
+				}
+				else if (iValidSyuuchakuEki < iEkiOrder)
+				{
+					if (pCentDedRessya->getLastOperation().getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Outer &&
+						m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= 0 &&
+						m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= iEkiOrder)
+					{
+						//路線外終着
+						strText = (LPCTSTR)MfcUtil::LoadCString(
+							IDS_WORD_JIKOKUHYOU_KEIYUNASI);
+					}
+					else if (aCustomizeJikokuhyouContent.iSyuuchakuEkiOrder >= -2 &&
+						m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= 0 &&
+						m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= iEkiOrder)
+					{
+						//路線外終着相当
+						//書式を次列車の種別にします
+						*pCDcDrawCell = createCDcdRessyabangou(aCustomizeJikokuhyouContent.iRessyasyubetsuIndex);
+						strText = (LPCTSTR)MfcUtil::LoadCString(
+							IDS_WORD_JIKOKUHYOU_KEIYUNASI);
+
+					}
+					else if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= iEkiOrder &&
+						aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+					{
+						strText = (LPCTSTR)MfcUtil::LoadCString(
+							IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+					}
+				}
+
+				/**
+					前駅が増結駅の場合、この欄に↳印を表示することがあります
+					(1)前駅が増結駅かつ有効な終着駅
+					(2)前駅が着時刻又は発時刻のどちらかのみ表示→Ver2.05 前駅が着時刻のみ表示の場合のみに変更
+					(3)この欄の直上が、前駅の項な場合。
+				*/
+				if (iEkiOrder - 1 == iValidSyuuchakuEki &&
+					iEkiOrder - 1 == aCustomizeJikokuhyouContent.iConnectEkiOrder &&
+					iValidSyuuchakuEki != -1)
+				{
+					CentDedEkiCont::CdDedEki aCdDedEkiPrev = muCdDedEki->get(iEkiOrder - 1);
+					if (aCdDedEkiPrev.getJikokuhyouChakuJikokuDisplay() &&
+						!aCdDedEkiPrev.getJikokuhyouHatsuJikokuDisplay())
+					{
+						int iYColumnNumberPrev = iYColumnNumber - 1;
+						CdYColSpec aCdYColSpecPrev = m_CdYColSpecCont.ColumnNumberToSpec(iYColumnNumberPrev);
+						if (aCdYColSpecPrev.getEkiOrder() == iEkiOrder - 1)
+						{
+							strText = (LPCTSTR)MfcUtil::LoadCString(
+								IDS_WORD_JIKOKUHYOU_CONNECT);
+						}
+					}
+				}
+			}
+
+			*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
+			pCDcDrawCell->setText(strText);
+		}
+
+		//セルの背景色を指定します。
+		{
+			pCDcDrawCell->setCdBrushProp(CdColorProp(255, 255, 255));
+		}
+	}
+}
+
+void CCellBuilderCustomize::update02_02_02_28_setRessya_PrevOperationNumber(
+	int iXColumnNumber,
+	int iYColumnNumber,
+	const CentDedRessya* pCentDedRessya,
+	const CustomizeJikokuhyouContent& aCustomizeJikokuhyouContent,
+	int iEkiOrder,
+	int iCurrentRessyaShihatsuEkiOrder,
+	int iRessyaIndexContIndex,
+	CWndJikokuhyou* pCWndJikokuhyou)
+{
+	CDcdGrid* pCDcdGrid = pCWndJikokuhyou->getCXDcdGrid();
+	const CentDedRosen* pCentDedRosen =
+		m_pCDedRosenFileData->getCentDedRosen();
+	const Mu<CentDedEkiCont::CdDedEki>* muCdDedEki =
+		pCentDedRosen->getCentDedEkiCont()->getMuPtr(
+			m_pCentDedRessyaCont->getRessyahoukou());
+	//CDcdTargetGetDC	aCDcdTarget(NULL);
+	// --------------------------------
+	//CdYColSpec aCdYColSpec(
+	//	CdYColSpec::ColumnType_EkiOperationNumber,
+	//	iEkiOrder);
+	//int iYColumnNumber =
+	//	m_CdYColSpecCont.ColumnNumberFromSpec(aCdYColSpec, false);
+	int idxRessyasyubetsu;
+	if (pCentDedRessya == NULL)
+	{
+		if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+		{
+			idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+		}
+		else
+		{
+			idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+		}
+	}
+	else
+	{
+		idxRessyasyubetsu = pCentDedRessya->getRessyasyubetsuIndex();
+	}
+	CentDedEkiCont::CdDedEki aCdDedEki = muCdDedEki->get(iEkiOrder);
+	//0:空白、1:運番、2:経由なし、3:↓、4:分割、5:併合
+	int iDisplayType = 0;
+	vector<tstring> strOperationNumber;
+	/**
+		この欄に表示するもの
+	・pCentDedRessya == NULLの場合
+		iReleaseEkiIndex >= 0の場合
+			iReleaseEkiIndex < iEkiOrderかつ路線外終着表示駅>=iEkiOrder
+				「||」(経由無し)
+			それ以外
+				空白
+		iConnectEkiIndex >= 0の場合
+			増結駅の次の駅、増結駅が着時刻のみ表示で、この項が増結駅の直下の場合は↳、
+			それ以外は全て空白(この項が、路線外始発表示欄より下になることは無いので、経由なしを表示することもない)
+
+	・iEkiOrder < iValidSihatsuEki
+		2列車目以降
+			「||」(経由無し)
+		路線外始発相当で、iEkiOrder == 路線外始発表示駅
+			JikokuhyouPrevOperationNumberDisplayに基づいて、運用番号もしくは空白表示(ここでは↓は無し)
+		分割列車で分割駅と始発駅の間の場合
+			「||」(経由無し)
+	・iValidSihatsuEki == iEkiOrder
+		getJikokuhyouPrevOperationNumberDisplayが4の場合：運用番号
+		3の場合：aCustomizeJikokuhyouContent.eEBeforeTypeを見て、種別変更・列車情報変更なら運用番号。それ以外は空白。
+		2の場合：aCustomizeJikokuhyouContent.eEBeforeTypeを見て、種別変更なら運用番号。それ以外は空白。
+		1の場合：aCustomizeJikokuhyouContent.strPrevOperationNumberとこの駅を発車するときの運用番号を比較して、異なる場合は表示。それ以外は空白。
+	・iValidSihatsuEki<iEkiOrder<iValidSyuuchakuEki
+		isRunbetweenがfalseの場合は「||」(経由無し)、それ以外は空白
+	・iValidSyuuchakuEki == iEkiOrder
+		空白
+	・iValidSyuuchakuEki < iEkiOrder
+		路線外終着かつこの駅が表示駅もしくはそれより下の場合:「||」
+		路線外終着相当かつこの駅が表示駅もしくはそれより下の場合:「||」(次列車の種別で表示)
+		iEkiOrder <= iConnectEkiIndex
+			「||」(経由無し)
+
+
+	*/
+	if (pCentDedRessya == NULL)
+	{
+		/**
+			pCentDedRessya == NULLの場合は、
+			分割+路線外終着または路線外始発+増結のどちらかのパターンです。
+			なお、分割駅に対応する路線外終着表示欄、もしくは解結駅に対応する路線外始発表示欄がない場合は、この列車の描写は行わず、空行となります。
+		*/
+		if (aCustomizeJikokuhyouContent.iReleaseEkiOrder >= 0)
+		{
+			if (iEkiOrder > aCustomizeJikokuhyouContent.iReleaseEkiOrder &&
+				iEkiOrder <= m_iOuterShuchakuDisplayEkiOrder[aCustomizeJikokuhyouContent.iReleaseEkiOrder])
+			{
+				iDisplayType = 2;//||
+			}
+		}
+		else if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+		{
+			if (iEkiOrder - 1 == aCustomizeJikokuhyouContent.iConnectEkiOrder)
+			{
+				CentDedEkiCont::CdDedEki aCdDedEkiPrev = muCdDedEki->get(iEkiOrder - 1);
+				if (aCdDedEkiPrev.getJikokuhyouChakuJikokuDisplay() &&
+					!aCdDedEkiPrev.getJikokuhyouHatsuJikokuDisplay())
+				{
+					int iYColumnNumberPrev = iYColumnNumber - 1;
+					CdYColSpec aCdYColSpecPrev = m_CdYColSpecCont.ColumnNumberToSpec(iYColumnNumberPrev);
+					if (aCdYColSpecPrev.getEkiOrder() == iEkiOrder - 1)
+					{
+						iDisplayType = 5;
+					}
+				}
+			}
+		}
+	}
+	else
+	{
+		int iValidSihatsuEki = pCentDedRessya->getValidSihatsuEki();
+		int iValidSyuuchakuEki = pCentDedRessya->getValidSyuuchakuEki();
+		if (iValidSihatsuEki == -1 || iValidSyuuchakuEki == -1)
+		{
+			iDisplayType = 0;
+		}
+		else if (iEkiOrder < iValidSihatsuEki)
+		{
+			if (iCurrentRessyaShihatsuEkiOrder >= 0)
+			{
+				iDisplayType = 2;//||
+			}
+			//iCurrentRessyaShihatsuEkiOrder < 0(1列車目)
+			else if (aCustomizeJikokuhyouContent.iSihatsuEkiOrder >= -2 &&
+				m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] >= 0 &&
+				m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] == iEkiOrder)
+			{
+				//路線外始発相当
+				idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+				if (aCdDedEki.getJikokuhyouPrevOperationNumberDisplay() == 4)
+				{
+					iDisplayType = 1;//運番
+					strOperationNumber = aCustomizeJikokuhyouContent.strPrevOperationNumber;
+
+				}
+				else if (aCdDedEki.getJikokuhyouPrevOperationNumberDisplay() == 1)
+				{
+					if (aCustomizeJikokuhyouContent.strPrevOperationNumber != pCentDedRessya->getOperationNumber(iEkiOrder))
+					{
+						iDisplayType = 1;//運番
+						strOperationNumber = aCustomizeJikokuhyouContent.strPrevOperationNumber;
+					}
+				}
+				else if (aCustomizeJikokuhyouContent.eEBeforeType == EBeforeAfterType::BeforeAfterType_ClassChange)
+				{
+					iDisplayType = 1;//運番
+					strOperationNumber = aCustomizeJikokuhyouContent.strPrevOperationNumber;
+
+				}
+				else if (aCustomizeJikokuhyouContent.eEBeforeType == EBeforeAfterType::BeforeAfterType_PropertyChange &&
+					aCdDedEki.getJikokuhyouPrevOperationNumberDisplay() == 3)
+				{
+					iDisplayType = 1;//運番
+					strOperationNumber = aCustomizeJikokuhyouContent.strPrevOperationNumber;
+				}
+			}
+			else if (aCustomizeJikokuhyouContent.iReleaseEkiOrder < iEkiOrder &&
+				aCustomizeJikokuhyouContent.iReleaseEkiOrder >= 0)
+			{
+				//分割列車
+				iDisplayType = 2;//||
+			}
+		}
+		else if (iValidSihatsuEki == iEkiOrder)
+		{
+			//2列車目以降かつ、1列車目の終着駅との間に、経由なしがある場合
+			if (iCurrentRessyaShihatsuEkiOrder >= 0 &&
+				iCurrentRessyaShihatsuEkiOrder < iEkiOrder)
+			{
+				iDisplayType = 2;//||
+			}
+			else if (aCustomizeJikokuhyouContent.iSihatsuEkiOrder >= -2)
+			{
+				//路線外始発相当
+				idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+				if (aCdDedEki.getJikokuhyouPrevOperationNumberDisplay() == 4)
+				{
+					iDisplayType = 1;//運番
+					strOperationNumber = aCustomizeJikokuhyouContent.strPrevOperationNumber;
+
+				}
+				else if (aCdDedEki.getJikokuhyouPrevOperationNumberDisplay() == 1)
+				{
+					if (aCustomizeJikokuhyouContent.strPrevOperationNumber != pCentDedRessya->getOperationNumber(iEkiOrder))
+					{
+						iDisplayType = 1;//運番
+						strOperationNumber = aCustomizeJikokuhyouContent.strPrevOperationNumber;
+					}
+				}
+				else if (aCustomizeJikokuhyouContent.eEBeforeType == EBeforeAfterType::BeforeAfterType_ClassChange)
+				{
+					iDisplayType = 1;//運番
+					strOperationNumber = aCustomizeJikokuhyouContent.strPrevOperationNumber;
+
+				}
+				else if (aCustomizeJikokuhyouContent.eEBeforeType == EBeforeAfterType::BeforeAfterType_PropertyChange &&
+					aCdDedEki.getJikokuhyouPrevOperationNumberDisplay() == 3)
+				{
+					iDisplayType = 1;//運番
+					strOperationNumber = aCustomizeJikokuhyouContent.strPrevOperationNumber;
+				}
+			}
+		}
+		else if (iValidSihatsuEki < iEkiOrder &&
+			iEkiOrder < iValidSyuuchakuEki)
+		{
+			if (!pCentDedRessya->isRunBetweenNextEki(iEkiOrder - 1))
+			{
+				iDisplayType = 2;//||
+			}
+		}
+		else if (iValidSyuuchakuEki < iEkiOrder)
+		{
+			if (pCentDedRessya->getLastOperation().getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Outer &&
+				m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= 0 &&
+				m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= iEkiOrder)
+			{
+				//路線外終着
+				iDisplayType = 2;//||
+			}
+			else if (aCustomizeJikokuhyouContent.iSyuuchakuEkiOrder >= -2 &&
+				m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= 0 &&
+				m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= iEkiOrder)
+			{
+				//路線外終着相当
+				//書式を次列車の種別にします
+				idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+				iDisplayType = 2;//||
+			}
+			else if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= iEkiOrder &&
+				aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+			{
+				iDisplayType = 2;//||
+			}
+		}
+
+		/**
+			前駅が増結駅の場合、この欄に↳印を表示することがあります
+			(1)前駅が増結駅かつ有効な終着駅
+			(2)前駅が着時刻又は発時刻のどちらかのみ表示→Ver2.05 前駅が着時刻のみ表示の場合のみに変更
+			(3)この欄の直上が、前駅の項な場合。
+			(4)この欄が運用番号の最上段の場合
+		*/
+		if (iEkiOrder - 1 == iValidSyuuchakuEki &&
+			iEkiOrder - 1 == aCustomizeJikokuhyouContent.iConnectEkiOrder &&
+			iValidSyuuchakuEki != -1)
+		{
+			CentDedEkiCont::CdDedEki aCdDedEkiPrev = muCdDedEki->get(iEkiOrder - 1);
+			if (aCdDedEkiPrev.getJikokuhyouChakuJikokuDisplay() &&
+				!aCdDedEkiPrev.getJikokuhyouHatsuJikokuDisplay())
+			{
+				int iYColumnNumberPrev = iYColumnNumber - 1;
+				CdYColSpec aCdYColSpecPrev = m_CdYColSpecCont.ColumnNumberToSpec(iYColumnNumberPrev);
+				if (aCdYColSpecPrev.getEkiOrder() == iEkiOrder - 1)
+				{
+					iDisplayType = 5;
+				}
+			}
+		}
+	}
+
+	for (int idx = 0; idx < aCdDedEki.getJikokuhyouPrevOperationNumberDisplayRows(); idx++)
+	{
+		CDcdGridCell* pCDcdGridCell = pCDcdGrid->getCell(
+			iXColumnNumber, iYColumnNumber + idx);
+		// --------------------------------
+		if (pCDcdGridCell != 0)
+		{
+			typedef CDcdTextbox CDcDrawCell;
+			Ou<CDcDrawCell> pCDcDrawCell;
+			// --------------------------------
+			//　(2.2.*.1)　セル(ColumnType_Ressya,ColumnType_Ressyabangou) の
+			//	結合セルを設定
+			pCDcdGridCell->setAttachCellCount(1, 1);
+
+			//　(2.2.*.2)　セル の	DcDrawオブジェクトの型を設定
+			//	( CDcdTextbox とする)。
+			{
+				pCDcDrawCell = dynamic_castOu<CDcDrawCell>(
+					pCDcdGridCell->getIfDcDraw());
+				if (pCDcDrawCell == NULL)
+				{
+					pCDcDrawCell = OuNew<CDcDrawCell>(new CDcDrawCell);
+					pCDcdGridCell->setIfDcDraw(pCDcDrawCell);
+				}
+			}
+
+			//　(2.2.*.3)　セルの DcDrawオブジェクトに、属性を設定。
+			{
+				tstring strText;
+				if (iDisplayType == 1)
+				{
+					/**
+						運用番号描写手順
+						1.最初にstrOperationNumberに運番を読み込む
+						2.運番が空の場合は空白を描写する
+						3.空でない場合、表示段数の最下段以外の場合は、strOperationNumberの先頭要素を描写し、先頭要素を削除して次の段へ
+						4.空でない場合、表示段数の最下段に到達したら、strOperationNumberに残っている要素を、'+'で連結して描写する。
+					*/
+					if (strOperationNumber.empty())
+					{
+						strText = _T("");
+					}
+					else if (idx == aCdDedEki.getJikokuhyouPrevOperationNumberDisplayRows() - 1)
+					{
+						if (idx != 0)
+						{
+							strText = _T("+";)
+						}
+						strText += joinc('+', strOperationNumber);
+					}
+					else
+					{
+						if (idx != 0)
+						{
+							strText = _T("+";)
+						}
+						strText += strOperationNumber.front();
+						strOperationNumber.erase(strOperationNumber.begin());
+					}
+				}
+				else if (iDisplayType == 2)
+				{
+					strText = (LPCTSTR)MfcUtil::LoadCString(
+						IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+				}
+				else if (iDisplayType == 3)
+				{
+					strText = _T("↓";)
+				}
+				else if (iDisplayType == 4 &&
+					idx == aCdDedEki.getJikokuhyouPrevOperationNumberDisplayRows() - 1)
+				{
+					strText = (LPCTSTR)MfcUtil::LoadCString(
+						IDS_WORD_JIKOKUHYOU_RELEASE);
+				}
+				else if (iDisplayType == 5 &&
+					idx == 0)
+				{
+					strText = (LPCTSTR)MfcUtil::LoadCString(
+						IDS_WORD_JIKOKUHYOU_CONNECT);
+				}
+				*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
+				pCDcDrawCell->setText(strText);
+
+				//セルの背景色を指定します。
+				{
+					pCDcDrawCell->setCdBrushProp(CdColorProp(255, 255, 255));
+				}
+			}
+		}
+	}
+}
+
+
+void CCellBuilderCustomize::update02_02_02_29_setRessya_PrevRessyasyubetsu(
+	int iXColumnNumber,
+	int iYColumnNumber,
+	const CentDedRessya* pCentDedRessya,
+	const CustomizeJikokuhyouContent& aCustomizeJikokuhyouContent,
+	int iEkiOrder,
+	int iCurrentRessyaShihatsuEkiOrder,
+	int iRessyaIndexContIndex,
+	CWndJikokuhyou* pCWndJikokuhyou)
+{
+	CDcdGrid* pCDcdGrid = pCWndJikokuhyou->getCXDcdGrid();
+	const CentDedRosen* pCentDedRosen =
+		m_pCDedRosenFileData->getCentDedRosen();
+	const Mu<CentDedEkiCont::CdDedEki>* muCdDedEki =
+		pCentDedRosen->getCentDedEkiCont()->getMuPtr(
+			m_pCentDedRessyaCont->getRessyahoukou());
+	// --------------------------------
+	//CDcdTargetGetDC	aCDcdTarget(NULL);
+	// --------------------------------
+	//CdYColSpec aCdYColSpec(
+	//	CdYColSpec::ColumnType_EkiRessyasyubetsu,
+	//	iEkiOrder);
+	//int iYColumnNumber =
+	//	m_CdYColSpecCont.ColumnNumberFromSpec(aCdYColSpec, false);
+	CDcdGridCell* pCDcdGridCell = pCDcdGrid->getCell(
+		iXColumnNumber, iYColumnNumber);
+	// --------------------------------
+	if (pCDcdGridCell != 0)
+	{
+		typedef CDcdTextbox CDcDrawCell;
+		Ou<CDcDrawCell> pCDcDrawCell;
+		// --------------------------------
+		//　(2.2.*.1)　セル(ColumnType_Ressya,ColumnType_Ressyabangou) の
+		//	結合セルを設定
+		pCDcdGridCell->setAttachCellCount(1, 1);
+
+		//　(2.2.*.2)　セル の	DcDrawオブジェクトの型を設定
+		//	( CDcdTextbox とする)。
+		{
+			pCDcDrawCell = dynamic_castOu<CDcDrawCell>(
+				pCDcdGridCell->getIfDcDraw());
+			if (pCDcDrawCell == NULL)
+			{
+				pCDcDrawCell = OuNew<CDcDrawCell>(new CDcDrawCell);
+				pCDcdGridCell->setIfDcDraw(pCDcDrawCell);
+			}
+		}
+
+		//　(2.2.*.3)　セルの DcDrawオブジェクトに、属性を設定。
+		{
+			CentDedEkiCont::CdDedEki aCdDedEki = muCdDedEki->get(iEkiOrder);
+			int idxRessyasyubetsu;
+			if (pCentDedRessya == NULL)
+			{
+				if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+				{
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+				}
+				else
+				{
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+				}
+			}
+			else
+			{
+				idxRessyasyubetsu = pCentDedRessya->getRessyasyubetsuIndex();
+			}
+			const CentDedRessyasyubetsu* pCentDedRessyasyubetsu = NULL;
+			{
+				pCentDedRessyasyubetsu =
+					pCentDedRosen->getCentDedRessyasyubetsuCont()->getMuPtr()
+					->get(idxRessyasyubetsu);
+				if (m_bDisplayParentSyubetsu && pCentDedRessyasyubetsu->getParentSyubetsuIndex() >= 0)
+				{
+					pCentDedRessyasyubetsu
+						= pCentDedRosen->getCentDedRessyasyubetsuCont()->getMuPtr()
+						->get(pCentDedRessyasyubetsu->getParentSyubetsuIndex());
+				}
+				if (pCentDedRessyasyubetsu == NULL)
+				{
+					pCentDedRessyasyubetsu =
+						pCentDedRosen->getCentDedRessyasyubetsuCont()
+						->getMuPtr()->get(0);
+				}
+			}
+			//pCentDedRessyasyubetsu = 列車種別オブジェクト
+			//	(指定がないなら、列車種別[0])
+
+			tstring strRessyasyubetsu;
+			if (pCentDedRessya == NULL || !pCentDedRessya->isNull())
+			{
+				strRessyasyubetsu = pCentDedRessyasyubetsu->getRyakusyou();
+			}
+			/**
+				この欄に表示するもの
+				・pCentDedRessya == NULLの場合
+					iReleaseEkiIndex >= 0の場合
+						iReleaseEkiIndex < iEkiOrderかつ路線外終着表示駅>=iEkiOrder
+							「||」(経由無し)
+						それ以外
+							空白
+					iConnectEkiIndex >= 0の場合
+						増結駅の次の駅、増結駅が着時刻のみ表示で、この項が増結駅の直下の場合は↳、
+						それ以外は全て空白(この項が、路線外始発表示欄より下になることは無いので、経由なしを表示することもない)
+
+
+				・iEkiOrder <iValidSihatsuEkiの場合
+					iRessyaIndexContIndex >= 1(2列車目以降)の場合
+						「||」(経由無し)
+					1列車目の場合
+						路線外始発相当で、iEkiOrder == 路線外始発表示駅
+							JikokuhyouPrevRessyaSyubetsuDisplayに基づいて、種別名もしくは空白表示(ここでは↓は無し)
+						iReleaseEkiOrder >= 0かつ　iReleaseEkiOrder < iEkiOrder(iReleaseEkiOrder = iEkiOrderの場合は、この項は↴よりも上にあるので空白)
+							「||」(経由無し)
+				・iValidSihatsuEki == iEkiOrder
+					路線外始発相当の場合
+					getPrevJikokuhyouRessyasyubetsuDisplayが3の場合：種別名
+					2の場合：aCustomizeJikokuhyouContent.eEBeforeTypeを見て、種別変更・列車情報変更なら種別名
+					1の場合：aCustomizeJikokuhyouContent.eEBeforeTypeを見て、種別変更なら種別名
+					それ以外は空白
+				・iValidSihatsuEki<iEkiOrder<iValidSyuuchakuEki
+					isRunbetweenがfalseの場合は「||」(経由無し)、それ以外は空白
+				・iValidSyuuchakuEki == iEkiOrder
+					空白
+				・iValidSyuuchakuEki < iEkiOrder
+					路線外終着(相当)で路線外終着欄がこの駅かこれより下にある場合「||」
+					iConnectEkiOrder >= iEkiOrderの場合「||」
+
+			*/
+			tstring strText = _T("");
+			*pCDcDrawCell = createCDcdEkijikoku(idxRessyasyubetsu);
+			if (pCentDedRessya == NULL)
+			{
+				/**
+					pCentDedRessya == NULLの場合は、
+					分割+路線外終着または路線外始発+増結のどちらかのパターンです。
+					なお、分割駅に対応する路線外終着表示欄、もしくは解結駅に対応する路線外始発表示欄がない場合は、この列車の描写は行わず、空行となります。
+				*/
+				if (aCustomizeJikokuhyouContent.iReleaseEkiOrder >= 0)
+				{
+					if (iEkiOrder > aCustomizeJikokuhyouContent.iReleaseEkiOrder &&
+						iEkiOrder <= m_iOuterShuchakuDisplayEkiOrder[aCustomizeJikokuhyouContent.iReleaseEkiOrder])
+					{
+						*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
+						strText = (LPCTSTR)MfcUtil::LoadCString(
+							IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+
+					}
+				}
+				else if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+				{
+					if (iEkiOrder - 1 == aCustomizeJikokuhyouContent.iConnectEkiOrder)
+					{
+						CentDedEkiCont::CdDedEki aCdDedEkiPrev = muCdDedEki->get(iEkiOrder - 1);
+						if (aCdDedEkiPrev.getJikokuhyouChakuJikokuDisplay() &&
+							!aCdDedEkiPrev.getJikokuhyouHatsuJikokuDisplay())
+						{
+							int iYColumnNumberPrev = iYColumnNumber - 1;
+							CdYColSpec aCdYColSpecPrev = m_CdYColSpecCont.ColumnNumberToSpec(iYColumnNumberPrev);
+							if (aCdYColSpecPrev.getEkiOrder() == iEkiOrder - 1)
+							{
+								*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
+								strText = (LPCTSTR)MfcUtil::LoadCString(
+									IDS_WORD_JIKOKUHYOU_CONNECT);
+							}
+						}
+					}
+				}
+			}
+			else
+			{
+				int iValidSihatsuEki = pCentDedRessya->getValidSihatsuEki();
+				int iValidSyuuchakuEki = pCentDedRessya->getValidSyuuchakuEki();
+				if (iValidSihatsuEki == -1 || iValidSyuuchakuEki == -1)
+				{
+					strText = _T("");
+				}
+				else if (iEkiOrder < iValidSihatsuEki)
+				{
+					/*
+						始発駅より前の場合
+						1.二列車目
+						→前列車の終着駅では、この項は前列車の責任範囲なので、必然的に前列車終着駅とこの列車の始発駅の"間"になる→経由無し
+						2.路線外始発
+						→大前提として、この項がある＝この駅には路線外始発表示欄がある、ということになる
+						→この項より上にある路線外始発表示欄が使われることはない(少なくともこの項の下にある当駅の表示欄)ので、経由なしを表示することはない
+						→この項は常時空白でOK(要検討)
+						3.路線外始発相当
+						→路線外始発と上記前提は同じ、よって空白OR情報表記
+					*/
+					if (iCurrentRessyaShihatsuEkiOrder >= 0)
+					{
+						//2列車目以降で、始発駅より前の場合は、経由なしになります
+						*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
+						strText = (LPCTSTR)MfcUtil::LoadCString(
+							IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+					}
+					//iCurrentRessyaShihatsuEkiOrder < 0(1列車目)
+					else if (aCustomizeJikokuhyouContent.iSihatsuEkiOrder >= -2 &&
+						m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] >= 0 &&
+						m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] == iEkiOrder)
+					{
+						//路線外始発相当で、この駅が路線外始発表示駅の場合
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+						{
+							pCentDedRessyasyubetsu =
+								pCentDedRosen->getCentDedRessyasyubetsuCont()->getMuPtr()
+								->get(idxRessyasyubetsu);
+							if (m_bDisplayParentSyubetsu && pCentDedRessyasyubetsu->getParentSyubetsuIndex() >= 0)
+							{
+								pCentDedRessyasyubetsu
+									= pCentDedRosen->getCentDedRessyasyubetsuCont()->getMuPtr()
+									->get(pCentDedRessyasyubetsu->getParentSyubetsuIndex());
+							}
+							if (pCentDedRessyasyubetsu == NULL)
+							{
+								pCentDedRessyasyubetsu =
+									pCentDedRosen->getCentDedRessyasyubetsuCont()
+									->getMuPtr()->get(0);
+							}
+						}
+
+						strRessyasyubetsu = pCentDedRessyasyubetsu->getRyakusyou();
+						*pCDcDrawCell = createCDcdEkijikoku(idxRessyasyubetsu);
+
+						if (aCdDedEki.getJikokuhyouPrevRessyaSyubetsuDisplay() == 3)
+						{
+							strText = strRessyasyubetsu;
+						}
+						else if (aCustomizeJikokuhyouContent.eEBeforeType == EBeforeAfterType::BeforeAfterType_ClassChange)
+						{
+							strText = strRessyasyubetsu;
+						}
+						else if (aCustomizeJikokuhyouContent.eEBeforeType == EBeforeAfterType::BeforeAfterType_PropertyChange &&
+							aCdDedEki.getJikokuhyouPrevRessyaSyubetsuDisplay() == 2)
+						{
+							strText = strRessyasyubetsu;
+						}
+					}
+
+					else if (aCustomizeJikokuhyouContent.iReleaseEkiOrder < iEkiOrder &&
+						aCustomizeJikokuhyouContent.iReleaseEkiOrder >= 0)
+					{
+						//分割列車
+						*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
+						strText = (LPCTSTR)MfcUtil::LoadCString(
+							IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+					}
+				}
+				else if (iValidSihatsuEki == iEkiOrder)
+				{
+					//2列車目以降かつ、1列車目の終着駅との間に、経由なしがある場合
+					if (iCurrentRessyaShihatsuEkiOrder >= 0 &&
+						iCurrentRessyaShihatsuEkiOrder < iEkiOrder)
+					{
+						*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
+						strText = (LPCTSTR)MfcUtil::LoadCString(
+							IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+					}
+					//路線外始発相当かつ、始発駅にこの項がある場合は、路線外始発表示も当然この駅にあるので、前列車接続タイプに基づいて表示を行う
+					else if (aCustomizeJikokuhyouContent.iSihatsuEkiOrder >= -2)
+					{
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+						{
+							pCentDedRessyasyubetsu =
+								pCentDedRosen->getCentDedRessyasyubetsuCont()->getMuPtr()
+								->get(idxRessyasyubetsu);
+							if (m_bDisplayParentSyubetsu && pCentDedRessyasyubetsu->getParentSyubetsuIndex() >= 0)
+							{
+								pCentDedRessyasyubetsu
+									= pCentDedRosen->getCentDedRessyasyubetsuCont()->getMuPtr()
+									->get(pCentDedRessyasyubetsu->getParentSyubetsuIndex());
+							}
+							if (pCentDedRessyasyubetsu == NULL)
+							{
+								pCentDedRessyasyubetsu =
+									pCentDedRosen->getCentDedRessyasyubetsuCont()
+									->getMuPtr()->get(0);
+							}
+						}
+
+						strRessyasyubetsu = pCentDedRessyasyubetsu->getRyakusyou();
+						*pCDcDrawCell = createCDcdEkijikoku(idxRessyasyubetsu);
+
+						if (aCdDedEki.getJikokuhyouPrevRessyaSyubetsuDisplay() == 3)
+						{
+							strText = strRessyasyubetsu;
+						}
+						else if (aCustomizeJikokuhyouContent.eEBeforeType == EBeforeAfterType::BeforeAfterType_ClassChange)
+						{
+							strText = strRessyasyubetsu;
+						}
+						else if (aCustomizeJikokuhyouContent.eEBeforeType == EBeforeAfterType::BeforeAfterType_PropertyChange &&
+							aCdDedEki.getJikokuhyouPrevRessyaSyubetsuDisplay() == 2)
+						{
+							strText = strRessyasyubetsu;
+						}
+					}
+				}
+				else if (iValidSihatsuEki < iEkiOrder &&
+					iEkiOrder < iValidSyuuchakuEki)
+				{
+					if (!pCentDedRessya->isRunBetweenNextEki(iEkiOrder - 1))
+					{
+						*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
+						strText = (LPCTSTR)MfcUtil::LoadCString(
+							IDS_WORD_JIKOKUHYOU_KEIYUNASI);
+					}
+				}
+				else if (iValidSyuuchakuEki < iEkiOrder)
+				{
+					if (pCentDedRessya->getLastOperation().getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Outer &&
+						m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= 0 &&
+						m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= iEkiOrder)
+					{
+						//路線外終着
+						*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
+						strText = (LPCTSTR)MfcUtil::LoadCString(
+							IDS_WORD_JIKOKUHYOU_KEIYUNASI);
+					}
+					else if (aCustomizeJikokuhyouContent.iSyuuchakuEkiOrder >= -2 &&
+						m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= 0 &&
+						m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= iEkiOrder)
+					{
+						//路線外終着相当
+						//書式を次列車の種別にします
+						*pCDcDrawCell = createCDcdRessyabangou(aCustomizeJikokuhyouContent.iRessyasyubetsuIndex);
+						strText = (LPCTSTR)MfcUtil::LoadCString(
+							IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+
+					}
+					else if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= iEkiOrder &&
+						aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+					{
+						*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
+						strText = (LPCTSTR)MfcUtil::LoadCString(
+							IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+					}
+				}
+				/**
+					前駅が増結駅の場合、この欄に↳印を表示することがあります
+					(1)前駅が増結駅かつ有効な終着駅
+					(2)前駅が着時刻又は発時刻のどちらかのみ表示→Ver2.05 前駅が着時刻のみ表示の場合のみに変更
+					(3)この欄の直上が、前駅の項な場合。
+				*/
+				if (iEkiOrder - 1 == iValidSyuuchakuEki &&
+					iEkiOrder - 1 == aCustomizeJikokuhyouContent.iConnectEkiOrder &&
+					iValidSyuuchakuEki != -1)
+				{
+					CentDedEkiCont::CdDedEki aCdDedEkiPrev = muCdDedEki->get(iEkiOrder - 1);
+					if (aCdDedEkiPrev.getJikokuhyouChakuJikokuDisplay() &&
+						!aCdDedEkiPrev.getJikokuhyouHatsuJikokuDisplay())
+					{
+						int iYColumnNumberPrev = iYColumnNumber - 1;
+						CdYColSpec aCdYColSpecPrev = m_CdYColSpecCont.ColumnNumberToSpec(iYColumnNumberPrev);
+						if (aCdYColSpecPrev.getEkiOrder() == iEkiOrder - 1)
+						{
+							*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
+							strText = (LPCTSTR)MfcUtil::LoadCString(
+								IDS_WORD_JIKOKUHYOU_CONNECT);
+						}
+					}
+				}
+			}
+			pCDcDrawCell->setText(strText);
+		}
+
+		//セルの背景色を指定します。
+		{
+			pCDcDrawCell->setCdBrushProp(CdColorProp(255, 255, 255));
+		}
+	}
+
+}
+
+void CCellBuilderCustomize::update02_02_02_30_setRessya_PrevRessyamei(
+	int iXColumnNumber,
+	int iYColumnNumber,
+	const CentDedRessya* pCentDedRessya,
+	const CustomizeJikokuhyouContent& aCustomizeJikokuhyouContent,
+	int iEkiOrder,
+	int iCurrentRessyaShihatsuEkiOrder,
+	int iRessyaIndexContIndex,
+	CWndJikokuhyou* pCWndJikokuhyou)
+{
+	CDcdGrid* pCDcdGrid = pCWndJikokuhyou->getCXDcdGrid();
+	const CentDedRosen* pCentDedRosen =
+		m_pCDedRosenFileData->getCentDedRosen();
+	const Mu<CentDedEkiCont::CdDedEki>* muCdDedEki =
+		pCentDedRosen->getCentDedEkiCont()->getMuPtr(
+			m_pCentDedRessyaCont->getRessyahoukou());
+	// --------------------------------
+	//CDcdTargetGetDC	aCDcdTarget(NULL);
+	// --------------------------------
+	//CdYColSpec aCdYColSpec(
+	//	CdYColSpec::ColumnType_EkiRessyamei,
+	//	iEkiOrder);
+	//int iYColumnNumber =
+	//	m_CdYColSpecCont.ColumnNumberFromSpec(aCdYColSpec, false);
+	CDcdGridCell* pCDcdGridCell = pCDcdGrid->getCell(
+		iXColumnNumber, iYColumnNumber);
+	int iYColumnNumber2 = iYColumnNumber + 1;
+	int iYColumnNumber3 = iYColumnNumber + 2;
+	CDcdGridCell* pCDcdGridCell2 = pCDcdGrid->getCell(
+		iXColumnNumber, iYColumnNumber2);
+	CDcdGridCell* pCDcdGridCell3 = pCDcdGrid->getCell(
+		iXColumnNumber, iYColumnNumber3);
+
+	// --------------------------------
+	if (pCDcdGridCell != 0)
+	{
+		typedef CDcdTextboxV3 CDcDrawCellV;
+		Ou<CDcDrawCellV> pCDcDrawCell;
+		typedef CDcdTextbox CDcDrawCell;
+		Ou<CDcDrawCell> pCDcDrawCell2;
+		Ou<CDcDrawCell> pCDcDrawCell3;
+		// --------------------------------
+		//　(2.2.*.1)　セル(ColumnType_Ressya,ColumnType_Ressyabangou) の
+		//	結合セルを設定
+		pCDcdGridCell->setAttachCellCount(1, 1);
+		pCDcdGridCell2->setAttachCellCount(1, 1);
+		pCDcdGridCell3->setAttachCellCount(1, 1);
+
+		//　(2.2.*.2)　セル の	DcDrawオブジェクトの型を設定
+		//	( CDcdTextbox とする)。
+		{
+			pCDcDrawCell = dynamic_castOu<CDcDrawCellV>(
+				pCDcdGridCell->getIfDcDraw());
+			if (pCDcDrawCell == NULL)
+			{
+				pCDcDrawCell = OuNew<CDcDrawCellV>(new CDcDrawCellV);
+				pCDcdGridCell->setIfDcDraw(pCDcDrawCell);
+			}
+			pCDcDrawCell2 = dynamic_castOu<CDcDrawCell>(
+				pCDcdGridCell2->getIfDcDraw());
+			if (pCDcDrawCell2 == NULL)
+			{
+				pCDcDrawCell2 = OuNew<CDcDrawCell>(new CDcDrawCell);
+				pCDcdGridCell2->setIfDcDraw(pCDcDrawCell2);
+			}
+			pCDcDrawCell3 = dynamic_castOu<CDcDrawCell>(
+				pCDcdGridCell3->getIfDcDraw());
+			if (pCDcDrawCell3 == NULL)
+			{
+				pCDcDrawCell3 = OuNew<CDcDrawCell>(new CDcDrawCell);
+				pCDcdGridCell3->setIfDcDraw(pCDcDrawCell3);
+			}
+		}
+		//　(2.2.*.3)　セルの DcDrawオブジェクトに、属性を設定。
+		{
+			CentDedEkiCont::CdDedEki aCdDedEki = muCdDedEki->get(iEkiOrder);
+			int idxRessyasyubetsu;
+			if (pCentDedRessya == NULL)
+			{
+				if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+				{
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+				}
+				else
+				{
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+				}
+			}
+			else
+			{
+				idxRessyasyubetsu = pCentDedRessya->getRessyasyubetsuIndex();
+			}
+			//tstring strText;
+			//if (!pCentDedRessya->isNull())
+			//{
+			//	strText = pCentDedRessya->getRessyamei();
+			//}
+			/**
+				この欄に表示するもの
+				・pCentDedRessya == NULLの場合
+					iReleaseEkiIndex >= 0の場合
+						「空白」
+					iConnectEkiIndex >= 0の場合
+						増結駅の次の駅、増結駅が着時刻のみ表示で、この項が増結駅の直下の場合は↳、
+						それ以外は全て空白(この項が、路線外始発表示欄より下になることは無いので、経由なしを表示することもない)
+
+				・iEkiOrder <iValidSihatsuEkiの場合
+					1列車目の場合
+						路線外始発相当で、iEkiOrder == 路線外始発表示駅
+							JikokuhyouPrevRessyameiDisplayに基づいて、種別名もしくは空白表示(ここでは↓は無し)
+				・iValidSihatsuEki == iEkiOrder
+					路線外始発相当の場合
+					getPrevJikokuhyouRessyameiDisplayが3の場合：列車名
+					2の場合：aCustomizeJikokuhyouContent.eEBeforeTypeを見て、種別変更・列車情報変更なら列車名
+					1の場合：aCustomizeJikokuhyouContent.eEBeforeTypeを見て、種別変更なら列車名
+					それ以外は空白
+			*/
+			tstring strText = _T("");
+			tstring strText2 = _T("");
+			tstring strText3 = _T("");
+			bool bDisplayConnect = false;
+			if (pCentDedRessya == NULL)
+			{
+				/**
+					pCentDedRessya == NULLの場合は、
+					分割+路線外終着または路線外始発+増結のどちらかのパターンです。
+					なお、分割駅に対応する路線外終着表示欄、もしくは解結駅に対応する路線外始発表示欄がない場合は、この列車の描写は行わず、空行となります。
+				*/
+				if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+				{
+					if (iEkiOrder - 1 == aCustomizeJikokuhyouContent.iConnectEkiOrder)
+					{
+						CentDedEkiCont::CdDedEki aCdDedEkiPrev = muCdDedEki->get(iEkiOrder - 1);
+						if (aCdDedEkiPrev.getJikokuhyouChakuJikokuDisplay() &&
+							!aCdDedEkiPrev.getJikokuhyouHatsuJikokuDisplay())
+						{
+							int iYColumnNumberPrev = iYColumnNumber - 1;
+							CdYColSpec aCdYColSpecPrev = m_CdYColSpecCont.ColumnNumberToSpec(iYColumnNumberPrev);
+							if (aCdYColSpecPrev.getEkiOrder() == iEkiOrder - 1)
+							{
+								strText = (LPCTSTR)MfcUtil::LoadCString(
+									IDS_WORD_JIKOKUHYOU_CONNECT);
+								bDisplayConnect = true;
+							}
+						}
+					}
+				}
+			}
+			else
+			{
+				int iValidSihatsuEki = pCentDedRessya->getValidSihatsuEki();
+				int iValidSyuuchakuEki = pCentDedRessya->getValidSyuuchakuEki();
+				if (iValidSihatsuEki == -1 || iValidSyuuchakuEki == -1)
+				{
+					strText = _T("");
+					strText2 = _T("");
+					strText3 = _T("");
+				}
+				else if (iEkiOrder < iValidSihatsuEki)
+				{
+					if (iCurrentRessyaShihatsuEkiOrder < 0 &&
+						aCustomizeJikokuhyouContent.iSihatsuEkiOrder >= -2 &&
+						m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] >= 0 &&
+						m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] == iEkiOrder)
+					{
+						//路線外始発相当で、この駅が路線外始発表示駅の場合
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+						if (aCdDedEki.getJikokuhyouPrevRessyameiDisplay() == 3)
+						{
+							strText = aCustomizeJikokuhyouContent.strPrevRessyamei;
+							strText2 = aCustomizeJikokuhyouContent.strPrevGousuu;
+							if (!strText2.empty())
+							{
+								strText3 = (LPCTSTR)MfcUtil::LoadCString(IDS_WORD_GOUSUU2);
+							}
+						}
+						else if (aCustomizeJikokuhyouContent.eEBeforeType == EBeforeAfterType::BeforeAfterType_ClassChange)
+						{
+							strText = aCustomizeJikokuhyouContent.strPrevRessyamei;
+							strText2 = aCustomizeJikokuhyouContent.strPrevGousuu;
+							if (!strText2.empty())
+							{
+								strText3 = (LPCTSTR)MfcUtil::LoadCString(IDS_WORD_GOUSUU2);
+							}
+						}
+						else if (aCustomizeJikokuhyouContent.eEBeforeType == EBeforeAfterType::BeforeAfterType_PropertyChange &&
+							aCdDedEki.getJikokuhyouPrevRessyameiDisplay() == 2)
+						{
+							strText = aCustomizeJikokuhyouContent.strPrevRessyamei;
+							strText2 = aCustomizeJikokuhyouContent.strPrevGousuu;
+							if (!strText2.empty())
+							{
+								strText3 = (LPCTSTR)MfcUtil::LoadCString(IDS_WORD_GOUSUU2);
+							}
+						}
+					}
+				}
+				else if (iValidSihatsuEki == iEkiOrder)
+				{
+					//路線外始発相当かつ、始発駅にこの項がある場合は、路線外始発表示も当然この駅にあるので、前列車接続タイプに基づいて表示を行う
+					if (aCustomizeJikokuhyouContent.iSihatsuEkiOrder >= -2)
+					{
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+						if (aCdDedEki.getJikokuhyouPrevRessyameiDisplay() == 3)
+						{
+							strText = aCustomizeJikokuhyouContent.strPrevRessyamei;
+							strText2 = aCustomizeJikokuhyouContent.strPrevGousuu;
+							if (!strText2.empty())
+							{
+								strText3 = (LPCTSTR)MfcUtil::LoadCString(IDS_WORD_GOUSUU2);
+							}
+						}
+						else if (aCustomizeJikokuhyouContent.eEBeforeType == EBeforeAfterType::BeforeAfterType_ClassChange)
+						{
+							strText = aCustomizeJikokuhyouContent.strPrevRessyamei;
+							strText2 = aCustomizeJikokuhyouContent.strPrevGousuu;
+							if (!strText2.empty())
+							{
+								strText3 = (LPCTSTR)MfcUtil::LoadCString(IDS_WORD_GOUSUU2);
+							}
+						}
+						else if (aCustomizeJikokuhyouContent.eEBeforeType == EBeforeAfterType::BeforeAfterType_PropertyChange &&
+							aCdDedEki.getJikokuhyouPrevRessyameiDisplay() == 2)
+						{
+							strText = aCustomizeJikokuhyouContent.strPrevRessyamei;
+							strText2 = aCustomizeJikokuhyouContent.strPrevGousuu;
+							if (!strText2.empty())
+							{
+								strText3 = (LPCTSTR)MfcUtil::LoadCString(IDS_WORD_GOUSUU2);
+							}
+						}
+					}
+				}
+
+				/**
+					前駅が増結駅の場合、この欄に↳印を表示することがあります
+					(1)前駅が増結駅かつ有効な終着駅
+					(2)前駅が着時刻又は発時刻のどちらかのみ表示→Ver2.05 前駅が着時刻のみ表示の場合のみに変更
+					(3)この欄の直上が、前駅の項な場合。
+				*/
+				if (iEkiOrder - 1 == iValidSyuuchakuEki &&
+					iEkiOrder - 1 == aCustomizeJikokuhyouContent.iConnectEkiOrder &&
+					iValidSyuuchakuEki != -1)
+				{
+					CentDedEkiCont::CdDedEki aCdDedEkiPrev = muCdDedEki->get(iEkiOrder - 1);
+					if (aCdDedEkiPrev.getJikokuhyouChakuJikokuDisplay() &&
+						!aCdDedEkiPrev.getJikokuhyouHatsuJikokuDisplay())
+					{
+						int iYColumnNumberPrev = iYColumnNumber - 1;
+						CdYColSpec aCdYColSpecPrev = m_CdYColSpecCont.ColumnNumberToSpec(iYColumnNumberPrev);
+						if (aCdYColSpecPrev.getEkiOrder() == iEkiOrder - 1)
+						{
+							strText = (LPCTSTR)MfcUtil::LoadCString(
+								IDS_WORD_JIKOKUHYOU_CONNECT);
+							bDisplayConnect = true;
+						}
+					}
+				}
+			}
+			if (bDisplayConnect)
+			{
+				Ou<CDcDrawCell> pCDcDrawCell1;
+				pCDcDrawCell1 = dynamic_castOu<CDcDrawCell>(
+					pCDcdGridCell->getIfDcDraw());
+				if (pCDcDrawCell1 == NULL)
+				{
+					pCDcDrawCell1 = OuNew<CDcDrawCell>(new CDcDrawCell);
+					pCDcdGridCell->setIfDcDraw(pCDcDrawCell1);
+				}
+				*pCDcDrawCell1 = createCDcdRessyabangou(idxRessyasyubetsu);
+				CdDrawTextProp aCdDrawTextProp = pCDcDrawCell1->getCdDrawTextProp();
+				aCdDrawTextProp.setCdDrawTextFormat(
+					CdDrawTextFormat(CdDrawTextFormat::H_CENTER, CdDrawTextFormat::EVertical::V_SINGLELINT_TOP));
+				pCDcDrawCell1->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcDrawCell1->setText(strText);
+			}
+			else
+			{
+				*pCDcDrawCell = createCDcdRessyamei(idxRessyasyubetsu);
+				pCDcDrawCell->setText(strText);
+			}
+			*pCDcDrawCell2 = createCDcdRessyabangou(idxRessyasyubetsu);
+			pCDcDrawCell2->setText(strText2);
+			*pCDcDrawCell3 = createCDcdRessyabangou(idxRessyasyubetsu);
+			pCDcDrawCell3->setText(strText3);
+		}
+
+		//セルの背景色を指定します。
+		{
+			pCDcDrawCell->setCdBrushProp(CdColorProp(255, 255, 255));
+		}
+	}
+
+
+}
 
 void CCellBuilderCustomize::update02_02_02_25_setRessya_EkiOuterTerminal_Shihatsu(
 	int iXColumnNumber,
@@ -4592,7 +6927,14 @@ void CCellBuilderCustomize::update02_02_02_25_setRessya_EkiOuterTerminal_Shihats
 				int idxRessyasyubetsu;
 				if (pCentDedRessya == NULL)
 				{
-					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+					if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+					{
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+					}
+					else
+					{
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+					}
 				}
 				else
 				{
@@ -4674,6 +7016,7 @@ void CCellBuilderCustomize::update02_02_02_25_setRessya_EkiOuterTerminal_Shihats
 							(2)のパターン　pCentDedRessyaの始発駅Orderで
 							m_iOuterShihatsuDisplayEkiOrderから路線外始発表示駅を取得し、
 							それが当駅ならば、ここで路線外始発表示を行う
+							Ver2.06.21 表示書式を、前列車の種別に変更する
 						*/
 						else if (aCustomizeJikokuhyouContent.iSihatsuEkiOrder >= -2 &&
 							iEkiOrder == m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki])
@@ -4695,6 +7038,10 @@ void CCellBuilderCustomize::update02_02_02_25_setRessya_EkiOuterTerminal_Shihats
 							CdDedJikoku aCdDedJikoku
 								= aCustomizeJikokuhyouContent.OuterShihatsuJikoku;
 							strText2 = getCdDedJikokuConv().encode(aCdDedJikoku, false);
+
+							idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+							*pCDcDrawCell1 = createCDcdRessyabangou(idxRessyasyubetsu);
+							*pCDcDrawCell2 = createCDcdEkijikoku(idxRessyasyubetsu);
 						}
 						/**
 							(1)のパターン　pCentDedRessyaの始発駅Orderで
@@ -4749,9 +7096,12 @@ void CCellBuilderCustomize::update02_02_02_25_setRessya_EkiOuterTerminal_Shihats
 							m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= 0 &&
 							m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= iEkiOrder)
 						{
+							//Ver2.06.21 表示書式を、次列車の種別に変更する
+							idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
 							strText1 = (LPCTSTR)MfcUtil::LoadCString(
 								IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
 							strText2 = strText1;//"||"
+							*pCDcDrawCell1 = createCDcdRessyabangou(idxRessyasyubetsu);
 							*pCDcDrawCell2 = createCDcdRessyabangou(idxRessyasyubetsu);
 						}
 						else if (aCustomizeJikokuhyouContent.iConnectEkiOrder > iEkiOrder &&
@@ -4834,7 +7184,14 @@ void CCellBuilderCustomize::update02_02_02_06_setRessya_Chaku(
 				int idxRessyasyubetsu;
 				if (pCentDedRessya == NULL)
 				{
-					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+					if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+					{
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+					}
+					else
+					{
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+					}
 				}
 				else
 				{
@@ -4951,7 +7308,7 @@ void CCellBuilderCustomize::update02_02_02_06_setRessya_Chaku(
 							tstring strText = getCdDedJikokuConv().encode(aCustomizeJikokuhyouContent.ChakuJikoku, true);
 
 							*pCDcDrawCell = createCDcdEkijikoku(idxRessyasyubetsu,
-								aCustomizeJikokuhyouContent.eEkiatsukai);
+								aCustomizeJikokuhyouContent.ePrevEkiatsukai);
 							pCDcDrawCell->setText(strText);
 						}
 						else if (iEkiOrder >= m_iOuterShihatsuDisplayEkiOrder[aCustomizeJikokuhyouContent.iConnectEkiOrder] &&
@@ -4994,6 +7351,9 @@ void CCellBuilderCustomize::update02_02_02_06_setRessya_Chaku(
 							m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] <= iEkiOrder)
 						{
 							//路線外始発相当
+							//Ver2.06.21 この場合は、セルの書式を前列車種別のものにする
+
+							*pCDcDrawCell = createCDcdRessyabangou(aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex);
 							pCDcDrawCell->setText((LPCTSTR)MfcUtil::LoadCString(
 								IDS_WORD_JIKOKUHYOU_KEIYUNASI));//"||"
 						}
@@ -5076,9 +7436,12 @@ void CCellBuilderCustomize::update02_02_02_06_setRessya_Chaku(
 							m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] >= 0)
 						{
 							//路線外始発相当
+							//Ver2.06.21 この場合は、セルの書式を前列車種別のものにする
+
 							if (aCentDedEkiJikoku.getEkiatsukai() == CentDedEkiJikoku::Ekiatsukai_Tsuuka &&
 								!m_bDisplayTsuukaEkiJikoku)
 							{
+								*pCDcDrawCell = createCDcdRessyabangou(aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex);
 								pCDcDrawCell->setText((LPCTSTR)MfcUtil::LoadCString(
 									IDS_WORD_JIKOKUHYOU_KEIYUNASI));//"||"
 							}
@@ -5098,6 +7461,8 @@ void CCellBuilderCustomize::update02_02_02_06_setRessya_Chaku(
 
 								tstring strText = getCdDedJikokuConv().encode(
 									aCustomizeJikokuhyouContent.ChakuJikoku, true, aHatsuJikoku);
+
+								idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
 								*pCDcDrawCell = createCDcdEkijikoku(idxRessyasyubetsu,
 									aCentDedEkiJikoku.getEkiatsukai());
 								pCDcDrawCell->setText(strText);
@@ -5355,6 +7720,8 @@ void CCellBuilderCustomize::update02_02_02_06_setRessya_Chaku(
 							m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= iEkiOrder)
 						{
 							//路線外終着相当
+							//Ver2.06.21 この場合は、セルの書式を次列車種別のものにする
+							*pCDcDrawCell = createCDcdRessyabangou(aCustomizeJikokuhyouContent.iRessyasyubetsuIndex);
 							pCDcDrawCell->setText((LPCTSTR)MfcUtil::LoadCString(
 								IDS_WORD_JIKOKUHYOU_KEIYUNASI));//"||"
 
@@ -5720,6 +8087,376 @@ void CCellBuilderCustomize::update02_02_02_06_setRessya_Chaku(
 	}
 }
 
+void CCellBuilderCustomize::update02_02_02_31_setRessya_Nyuusen(
+	int iXColumnNumber,
+	int iYColumnNumber,
+	const CentDedRessya* pCentDedRessya,
+	const CustomizeJikokuhyouContent& aCustomizeJikokuhyouContent,
+	int iEkiOrder,
+	int iCurrentRessyaShihatsuEkiOrder,
+	int iRessyaIndexContIndex,
+	CWndJikokuhyou* pCWndJikokuhyou)
+{
+	CDcdGrid* pCDcdGrid = pCWndJikokuhyou->getCXDcdGrid();
+	const CentDedRosen* pCentDedRosen =
+		m_pCDedRosenFileData->getCentDedRosen();
+	const CentDedEkiCont* pCentDedEkiCont =
+		pCentDedRosen->getCentDedEkiCont();
+	const Mu<CentDedEkiCont::CdDedEki>* muCdDedEki =
+		pCentDedEkiCont->getMuPtr(
+			m_pCentDedRessyaCont->getRessyahoukou());
+	// --------------------------------
+	//CDcdTargetGetDC	aCDcdTarget( NULL ) ;
+	// --------------------------------
+	{
+		//CdYColSpec aCdYColSpec( 
+		//	CdYColSpec::ColumnType_Ekijikoku_Chaku , 
+		//	iEkiOrder ) ;
+		//int iYColumnNumber = 
+		//	m_CdYColSpecCont.ColumnNumberFromSpec( aCdYColSpec , false ) ;
+		CDcdGridCell* pCDcdGridCell = pCDcdGrid->getCell(
+			iXColumnNumber, iYColumnNumber);
+		// --------------------------------
+		if (pCDcdGridCell != 0)
+		{
+			typedef CDcdTextbox CDcDrawCell;
+			Ou<CDcDrawCell> pCDcDrawCell;
+			// --------------------------------
+			//　(2.2.*.1)　セルの結合セルを設定
+			pCDcdGridCell->setAttachCellCount(1, 1);
+
+			//　(2.2.*.2)　セル の	DcDrawオブジェクトの型を設定
+			//	( CDcdTextbox とする)。
+			{
+				pCDcDrawCell = dynamic_castOu<CDcDrawCell>(
+					pCDcdGridCell->getIfDcDraw());
+				if (pCDcDrawCell == NULL)
+				{
+					pCDcDrawCell = OuNew<CDcDrawCell>(new CDcDrawCell);
+					pCDcdGridCell->setIfDcDraw(pCDcDrawCell);
+				}
+			}
+			//　(2.2.*.3)　セルの DcDrawオブジェクトに、属性を設定。
+			{
+				CentDedEkiCont::CdDedEki aCdDedEki = muCdDedEki->get(iEkiOrder);
+
+				int idxRessyasyubetsu;
+				if (pCentDedRessya == NULL)
+				{
+					if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+					{
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+					}
+					else
+					{
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+					}
+				}
+				else
+				{
+					idxRessyasyubetsu = pCentDedRessya->getRessyasyubetsuIndex();
+				}
+
+				*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
+				tstring strText = _T("");
+				if (pCentDedRessya == NULL)
+				{
+					/**
+						pCentDedRessya == NULLの場合は、
+						分割+路線外終着または路線外始発+増結のどちらかのパターンです。
+						なお、分割駅に対応する路線外終着表示欄、もしくは解結駅に対応する路線外始発表示欄がない場合は、この列車の描写は行わず、空行となります。
+					*/
+					if (aCustomizeJikokuhyouContent.iReleaseEkiOrder >= 0)
+					{
+						/**
+							分割+路線外終着の場合、
+							分割駅ならば↴を表示します。(当駅発時刻の表示は無しに)
+							分割駅より後かつ、路線外終着表示駅までの場合は、経由なしを表示します。
+							分割駅より一つ上の駅の場合、分割駅が発時刻のみ表示で、この項が分割駅の項の直上なら、ここで↴を表示します。
+						*/
+						if (iEkiOrder + 1 == aCustomizeJikokuhyouContent.iReleaseEkiOrder)
+						{
+							CentDedEkiCont::CdDedEki aCdDedEkiNext = muCdDedEki->get(iEkiOrder + 1);
+							if (!aCdDedEkiNext.getJikokuhyouChakuJikokuDisplay() &&
+								aCdDedEkiNext.getJikokuhyouHatsuJikokuDisplay())
+							{
+								int iYColumnNumberNext = iYColumnNumber + 1;
+								CdYColSpec aCdYColSpecNext = m_CdYColSpecCont.ColumnNumberToSpec(iYColumnNumberNext);
+								if (aCdYColSpecNext.getEkiOrder() == iEkiOrder + 1)
+								{
+									strText = (LPCTSTR)MfcUtil::LoadCString(
+										IDS_WORD_JIKOKUHYOU_RELEASE);
+								}
+							}
+						}
+						else if (iEkiOrder > aCustomizeJikokuhyouContent.iReleaseEkiOrder &&
+							iEkiOrder <= m_iOuterShuchakuDisplayEkiOrder[aCustomizeJikokuhyouContent.iReleaseEkiOrder])
+						{
+							strText = (LPCTSTR)MfcUtil::LoadCString(
+								IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+
+						}
+					}
+					else if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+					{
+						/**
+							路線外始発+併合の場合
+							併合駅ならば当駅着時刻を表示します。
+							路線外始発表示駅から併合駅の前までなら、経由なしを表示します。
+							併合駅の次の駅の場合、併合駅が着時刻のみ表示かつ、この項が併合駅の直下なら、この項に↳を表示します。
+							それ以外の場合は、----もしくは・・を表示します
+						*/
+						if (iEkiOrder - 1 == aCustomizeJikokuhyouContent.iConnectEkiOrder)
+						{
+							CentDedEkiCont::CdDedEki aCdDedEkiPrev = muCdDedEki->get(iEkiOrder - 1);
+							if (aCdDedEkiPrev.getJikokuhyouChakuJikokuDisplay() &&
+								!aCdDedEkiPrev.getJikokuhyouHatsuJikokuDisplay())
+							{
+								int iYColumnNumberPrev = iYColumnNumber - 1;
+								CdYColSpec aCdYColSpecPrev = m_CdYColSpecCont.ColumnNumberToSpec(iYColumnNumberPrev);
+								if (aCdYColSpecPrev.getEkiOrder() == iEkiOrder - 1)
+								{
+									strText = (LPCTSTR)MfcUtil::LoadCString(
+										IDS_WORD_JIKOKUHYOU_CONNECT);
+								}
+							}
+						}
+						//else if (iEkiOrder == aCustomizeJikokuhyouContent.iConnectEkiOrder)
+						//{
+						//	tstring strText = getCdDedJikokuConv().encode(aCustomizeJikokuhyouContent.ChakuJikoku, true);
+
+						//	*pCDcDrawCell = createCDcdEkijikoku(idxRessyasyubetsu,
+						//		aCustomizeJikokuhyouContent.ePrevEkiatsukai);
+						//	pCDcDrawCell->setText(strText);
+						//}
+						else if (iEkiOrder >= m_iOuterShihatsuDisplayEkiOrder[aCustomizeJikokuhyouContent.iConnectEkiOrder] &&
+							iEkiOrder < aCustomizeJikokuhyouContent.iConnectEkiOrder)
+						{
+							strText = (LPCTSTR)MfcUtil::LoadCString(
+								IDS_WORD_JIKOKUHYOU_KEIYUNASI);
+						}
+					}
+				}
+				else
+				{
+
+					// --------------------------------
+					//	駅時刻に合わせて、セルに文字を表示
+					// --------------------------------
+					int iValidSihatsuEki = pCentDedRessya->getValidSihatsuEki();
+					int iValidSyuuchakuEki = pCentDedRessya->getValidSyuuchakuEki();
+					if (iValidSihatsuEki == -1 || iValidSyuuchakuEki == -1)
+					{
+						//空白
+						strText = _T("");
+					}
+					else if (iEkiOrder < iValidSihatsuEki)
+					{
+						if (pCentDedRessya->getFirstOperation().getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Outer &&
+							m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] >= 0 &&
+							m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] <= iEkiOrder)
+						{
+							//路線外始発
+							strText = (LPCTSTR)MfcUtil::LoadCString(
+								IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+
+						}
+						else if (aCustomizeJikokuhyouContent.iSihatsuEkiOrder >= -2 &&
+							m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] >= 0 &&
+							m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] <= iEkiOrder)
+						{
+							//路線外始発相当
+							//Ver2.06.21 この場合は、セルの書式を前列車種別のものにする
+
+							*pCDcDrawCell = createCDcdRessyabangou(aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex);
+							strText = (LPCTSTR)MfcUtil::LoadCString(
+								IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+						}
+						else if (iCurrentRessyaShihatsuEkiOrder != -1)
+						{
+							//一体化の2列車目以降(前の列車との間に、経由なし区間がある場合)
+							strText = (LPCTSTR)MfcUtil::LoadCString(
+								IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+						}
+						//else if (iEkiOrder == aCustomizeJikokuhyouContent.iReleaseEkiOrder)
+						//{
+						//	/**
+						//		発時刻表示の有無にかかわらず、この欄に「↴」を表示する
+						//	*/
+						//	pCDcDrawCell->setText((LPCTSTR)MfcUtil::LoadCString(
+						//		IDS_WORD_JIKOKUHYOU_RELEASE));
+						//}
+						else if (aCustomizeJikokuhyouContent.iReleaseEkiOrder < iEkiOrder &&
+							aCustomizeJikokuhyouContent.iReleaseEkiOrder >= 0)
+						{
+							strText = (LPCTSTR)MfcUtil::LoadCString(
+								IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+						}
+					}
+					else if (iEkiOrder == iValidSihatsuEki)
+					{
+						/**
+							始発駅
+							2列車目以降：iCurrentRessyaShihatsuEkiOrderが当駅の場合空白、当駅より前の場合経由なし
+							路線外始発：当駅が路線外表示の場合空白、当駅より前の場合経由なし
+							路線外始発相当：同上
+							分割列車：分割駅が当駅より前なら経由なし、当駅の場合は着時刻欄がない場合、この項に分割矢印を表示
+
+							それ以外：入線時刻を表示
+						*/
+						if (iCurrentRessyaShihatsuEkiOrder >= 0)
+						{
+							if (iCurrentRessyaShihatsuEkiOrder < iEkiOrder)
+							{
+								strText = (LPCTSTR)MfcUtil::LoadCString(
+									IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+							}
+						}
+						else if (pCentDedRessya->getFirstOperation().getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Outer &&
+							m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] >= 0)
+						{
+							if (m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] < iEkiOrder)
+							{
+								strText = (LPCTSTR)MfcUtil::LoadCString(
+									IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+							}
+						}
+						else if (aCustomizeJikokuhyouContent.iSihatsuEkiOrder >= -2 &&
+							m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] >= 0)
+						{
+							if (m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] < iEkiOrder)
+							{
+								strText = (LPCTSTR)MfcUtil::LoadCString(
+									IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+							}
+						}
+						else if (aCustomizeJikokuhyouContent.iReleaseEkiOrder >= 0)
+						{
+							if (aCustomizeJikokuhyouContent.iReleaseEkiOrder < iEkiOrder)
+							{
+								strText = (LPCTSTR)MfcUtil::LoadCString(
+									IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+							}
+							else if (aCustomizeJikokuhyouContent.iReleaseEkiOrder == iEkiOrder &&
+								!aCdDedEki.getJikokuhyouChakuJikokuDisplay())
+							{
+								strText = (LPCTSTR)MfcUtil::LoadCString(
+									IDS_WORD_JIKOKUHYOU_RELEASE);
+							}
+						}
+						else
+						{
+							CentDedEkiJikoku	aCentDedEkiJikoku =
+								pCentDedRessya->getCentDedEkiJikoku(iEkiOrder);
+							CdDedJikoku aCdDedJikoku = CdDedJikoku();
+							const CentDedBeforeOperationCont* pBeforeOperationCont = aCentDedEkiJikoku.getCentDedBeforeOperationCont();
+
+							int iRessyaTrackIndex = aCentDedEkiJikoku.getRessyaTrackIndex();
+							for (int iOperationIndex = pBeforeOperationCont->size() - 1; iOperationIndex >= 0 && aCdDedJikoku.isNull(); iOperationIndex--)
+							{
+								const CentDedBeforeOperation* pBeforeOperation
+									= pBeforeOperationCont->getMuPtr()->get(iOperationIndex);
+								if (pBeforeOperation->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Shunt)
+								{
+									if (iRessyaTrackIndex != pBeforeOperation->getShuntTrackIndex())
+									{
+										aCdDedJikoku = pBeforeOperation->getOperationChakuJikoku(true);
+									}
+								}
+								else if (pBeforeOperation->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Out)
+								{
+									aCdDedJikoku = pBeforeOperation->getOutJikoku();
+								}
+								else if (pBeforeOperation->getBOperation() == CentDedBeforeOperation::EBOperation::BOperation_Junction)
+								{
+									aCdDedJikoku = pBeforeOperation->getJunctionJikoku();
+								}
+							}
+							if (!aCdDedJikoku.isNull())
+							{
+								strText = getCdDedJikokuConv().encode(aCdDedJikoku, false);
+								*pCDcDrawCell = createCDcdEkijikoku(idxRessyasyubetsu);
+							}
+						}
+					}
+					else if (iValidSihatsuEki < iEkiOrder &&
+						iEkiOrder < iValidSyuuchakuEki)
+					{
+						if (!pCentDedRessya->isRunBetweenNextEki(iEkiOrder - 1))
+						{
+							strText = (LPCTSTR)MfcUtil::LoadCString(
+								IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+						}
+					}
+					else if (iEkiOrder == iValidSyuuchakuEki)
+					{
+						//空白
+						strText = _T("");
+					}
+					else if (iEkiOrder > iValidSyuuchakuEki)
+					{
+						if (pCentDedRessya->getLastOperation().getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Outer &&
+							m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= 0 &&
+							m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= iEkiOrder)
+						{
+							//路線外終着
+							strText = (LPCTSTR)MfcUtil::LoadCString(
+								IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+
+						}
+						else if (aCustomizeJikokuhyouContent.iSyuuchakuEkiOrder >= -2 &&
+							m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= 0 &&
+							m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= iEkiOrder)
+						{
+							//路線外終着相当
+							//Ver2.06.21 この場合は、セルの書式を次列車種別のものにする
+							*pCDcDrawCell = createCDcdRessyabangou(aCustomizeJikokuhyouContent.iRessyasyubetsuIndex);
+							strText = (LPCTSTR)MfcUtil::LoadCString(
+								IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+
+						}
+						else if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= iEkiOrder &&
+							aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+						{
+							strText = (LPCTSTR)MfcUtil::LoadCString(
+								IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
+						}
+					}
+					
+					/**
+						前駅が増結駅の場合、この欄に↳印を表示することがあります
+						(1)前駅が増結駅かつ有効な終着駅
+						(2)前駅が着時刻又は発時刻のどちらかのみ表示→Ver2.05 前駅が着時刻のみ表示の場合のみに変更
+						(3)この欄の直上が、前駅の項な場合。
+					*/
+					if (iEkiOrder - 1 == iValidSyuuchakuEki &&
+						iEkiOrder - 1 == aCustomizeJikokuhyouContent.iConnectEkiOrder &&
+						iValidSyuuchakuEki != -1)
+					{
+						CentDedEkiCont::CdDedEki aCdDedEkiPrev = muCdDedEki->get(iEkiOrder - 1);
+						if (aCdDedEkiPrev.getJikokuhyouChakuJikokuDisplay() &&
+							!aCdDedEkiPrev.getJikokuhyouHatsuJikokuDisplay())
+						{
+							int iYColumnNumberPrev = iYColumnNumber - 1;
+							CdYColSpec aCdYColSpecPrev = m_CdYColSpecCont.ColumnNumberToSpec(iYColumnNumberPrev);
+							if (aCdYColSpecPrev.getEkiOrder() == iEkiOrder - 1)
+							{
+								strText = (LPCTSTR)MfcUtil::LoadCString(
+									IDS_WORD_JIKOKUHYOU_CONNECT);
+							}
+						}
+					}
+				}
+
+				pCDcDrawCell->setText(strText);
+
+				//セルの背景色を指定します。
+				pCDcDrawCell->setCdBrushProp(CdColorProp(255, 255, 255));
+			}
+		}
+	}
+}
+
 void CCellBuilderCustomize::update02_02_02_09_setRessya_Track(
 	int iXColumnNumber,
 	int iYColumnNumber,
@@ -5772,7 +8509,14 @@ void CCellBuilderCustomize::update02_02_02_09_setRessya_Track(
 				int idxRessyasyubetsu;
 				if (pCentDedRessya == NULL)
 				{
-					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+					if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+					{
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+					}
+					else
+					{
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+					}
 				}
 				else
 				{
@@ -5807,8 +8551,8 @@ void CCellBuilderCustomize::update02_02_02_09_setRessya_Track(
 								CdYColSpec aCdYColSpecNext = m_CdYColSpecCont.ColumnNumberToSpec(iYColumnNumberNext);
 								if (aCdYColSpecNext.getEkiOrder() == iEkiOrder + 1)
 								{
-									pCDcDrawCell->setText((LPCTSTR)MfcUtil::LoadCString(
-										IDS_WORD_JIKOKUHYOU_RELEASE));
+									strText = (LPCTSTR)MfcUtil::LoadCString(
+										IDS_WORD_JIKOKUHYOU_RELEASE);
 								}
 							}
 						}
@@ -5823,8 +8567,8 @@ void CCellBuilderCustomize::update02_02_02_09_setRessya_Track(
 						else if (iEkiOrder > aCustomizeJikokuhyouContent.iReleaseEkiOrder &&
 							iEkiOrder <= m_iOuterShuchakuDisplayEkiOrder[aCustomizeJikokuhyouContent.iReleaseEkiOrder])
 						{
-							pCDcDrawCell->setText((LPCTSTR)MfcUtil::LoadCString(
-								IDS_WORD_JIKOKUHYOU_KEIYUNASI));//"||"
+							strText = (LPCTSTR)MfcUtil::LoadCString(
+								IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
 
 						}
 					}
@@ -5847,8 +8591,8 @@ void CCellBuilderCustomize::update02_02_02_09_setRessya_Track(
 								CdYColSpec aCdYColSpecPrev = m_CdYColSpecCont.ColumnNumberToSpec(iYColumnNumberPrev);
 								if (aCdYColSpecPrev.getEkiOrder() == iEkiOrder - 1)
 								{
-									pCDcDrawCell->setText((LPCTSTR)MfcUtil::LoadCString(
-										IDS_WORD_JIKOKUHYOU_CONNECT));
+									strText = (LPCTSTR)MfcUtil::LoadCString(
+										IDS_WORD_JIKOKUHYOU_CONNECT);
 								}
 							}
 						}
@@ -5858,13 +8602,13 @@ void CCellBuilderCustomize::update02_02_02_09_setRessya_Track(
 							CentDedEkiTrack2Cont aCentDedEkiTrack2Cont = aCdDedEki.getCentDedEkiTrack2Cont();
 
 							strText = aCentDedEkiTrack2Cont.get(
-								aCustomizeJikokuhyouContent.iRessyaTrackIndex).getTrackRyakusyou(m_pCentDedRessyaCont->getRessyahoukou());
+								aCustomizeJikokuhyouContent.iPrevRessyaTrackIndex).getTrackRyakusyou(m_pCentDedRessyaCont->getRessyahoukou());
 						}
 						else if (iEkiOrder >= m_iOuterShihatsuDisplayEkiOrder[aCustomizeJikokuhyouContent.iConnectEkiOrder] &&
 							iEkiOrder < aCustomizeJikokuhyouContent.iConnectEkiOrder)
 						{
-							pCDcDrawCell->setText((LPCTSTR)MfcUtil::LoadCString(
-								IDS_WORD_JIKOKUHYOU_KEIYUNASI));
+							strText = (LPCTSTR)MfcUtil::LoadCString(
+								IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
 						}
 					}
 				}
@@ -5894,6 +8638,9 @@ void CCellBuilderCustomize::update02_02_02_09_setRessya_Track(
 							m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] <= iEkiOrder)
 						{
 							//路線外始発相当
+							//Ver2.06.21 この場合は、セルの書式を前列車種別のものにする
+
+							*pCDcDrawCell = createCDcdRessyabangou(aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex);
 							strText = (LPCTSTR)MfcUtil::LoadCString(
 								IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
 						}
@@ -5930,6 +8677,8 @@ void CCellBuilderCustomize::update02_02_02_09_setRessya_Track(
 							m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= iEkiOrder)
 						{
 							//路線外終着相当
+							//Ver2.06.21 この場合は、セルの書式を次列車種別のものにする
+							*pCDcDrawCell = createCDcdRessyabangou(aCustomizeJikokuhyouContent.iRessyasyubetsuIndex);
 							strText = (LPCTSTR)MfcUtil::LoadCString(
 								IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
 
@@ -6095,7 +8844,14 @@ void CCellBuilderCustomize::update02_02_02_19_setRessya_Ressyabangou(
 			int idxRessyasyubetsu;
 			if (pCentDedRessya == NULL)
 			{
-				idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+				if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+				{
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+				}
+				else
+				{
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+				}
 			}
 			else
 			{
@@ -6113,71 +8869,51 @@ void CCellBuilderCustomize::update02_02_02_19_setRessya_Ressyabangou(
 							分割駅の前の駅、分割駅が発時刻のみ表示で、この項が分割駅の直上の場合は↴、それ以外は空白
 					iConnectEkiIndex >= 0の場合
 						iConnectEkiIndex == iEkiOrder
-							「↓」
+							空白
 						iConnectEkiIndex > iEkiOrderかつ路線外始発表示駅<=iEkiOrder
 							「||」(経由無し)
 						それ以外
 							解結駅の次の駅、解結駅が着時刻のみ表示で、この項が解結駅の直下の場合は↳、それ以外は空白
 
-				・iRessyaIndexContIndex >= 1(2列車目以降)の場合
-					iCurrentRessyaShihatsuEkiOrder<= iEkiOrder <iValidSihatsuEki
-						「||」(経由無し)
-					iEkiOrder=iValidSihatsuEki
-							getJikokuhyouRessyabangouDisplayが3の場合：列車番号
-							2の場合：iRessyaIndexContIndex-1の列車の次列車接続タイプを見て、種別変更・列車情報変更なら列車番号
-							1の場合：iRessyaIndexContIndex-1の列車の次列車接続タイプを見て、種別変更なら列車番号
-					iValidSihatsuEki<iEkiOrder<iValidSyuuchakuEki
-						isRunbetweenがtrueの場合または、
-						getJikokuhyouChakujikokuDisplayがfalseかつisRunbetween(-1)がtrueの場合、表示有りとなる。
-							※発時刻のみ表示で、前駅→当駅が運行あり、当駅→次駅が運行なし(経由なし)の場合は、
-							当駅の発時刻欄(この欄より下部)に、経由なしを超えた先の発時刻を表示するので、
-							この欄が経由なしだと表示が合わないので。
-							getJikokuhyouRessyabangouDisplayが3の場合：列車番号
-							2/1の場合:「↓」
-						その他の場合
-							「||」
-					iValidSyuuchakuEki<=iEkiOrder
-						路線外終着(相当)で、iEkiOrder <= 路線外終着表示駅
-							「||」(経由無し)
-						iConnectEkiIndex == iValidSyuuchakuEki( == iEkiOrder)の場合
-							「↓」
-						iConnectEkiIndex > iValidSyuuchakuEkiの場合
-							iEkiOrder >= iValidSyuuchakuEki かつ iEkiOrder < iConnectEkiIndex
-								「||」(経由無し)
-							iEkiOrder == iConnectEkiIndex
-								getJikokuhyouHatsujikokuDisplayがtrueの場合は「↓」、そうでない場合は空白
-								(falseの場合、着時刻欄に↳を表示してしまうので、ここは空白にする)
-
-				・iRessyaIndexContIndex == 0(1列車目)の場合
-					iEkiOrder<iValidSihatsuEki
+				・iEkiOrder <iValidSihatsuEkiの場合
+					iRessyaIndexContIndex >= 1(2列車目以降)の場合
+						iEkiOrder == iCurrentRessyaShihatsuEkiOrder(前列車の終着駅)で、この駅の発時刻欄に時刻が表示されている場合は空白
+						それ以外は「||」(経由無し)
+					1列車目の場合
 						路線外始発(相当)で、iEkiOrder >= 路線外始発表示駅
 							「||」(経由無し)
 						iReleaseEkiOrder >= 0かつ　iReleaseEkiOrder <= iEkiOrder
 							「||」(経由無し)
-					iEkiOrder=iValidSihatsuEki
-						getJikokuhyouRessyabangouDisplayが3の場合列車番号
-						2/1の場合空白
-					iValidSihatsuEki<iEkiOrder<iValidSyuuchakuEki
-						isRunbetweenがtrueの場合または、
-						getJikokuhyouChakujikokuDisplayがfalseかつisRunbetween(-1)がtrueの場合、表示有りとなる。
-							※発時刻のみ表示で、前駅→当駅が運行あり、当駅→次駅が運行なし(経由なし)の場合は、
-							当駅の発時刻欄(この欄より下部)に、経由なしを超えた先の発時刻を表示するので、
-							この欄が経由なしだと表示が合わないので。
-							getJikokuhyouRessyabangouDisplayが3の場合:列車番号
-							2/1の場合:「↓」
-						その他の場合
-							「||」
-					iValidSyuuchakuEki<=iEkiOrder
-						路線外終着(相当)で、iEkiOrder <= 路線外終着表示駅
-							「||」(経由無し)
-						iConnectEkiIndex == iValidSyuuchakuEki( == iEkiOrder)の場合
-							「↓」
-						iConnectEkiIndex > iValidSyuuchakuEkiの場合
-							iEkiOrder >= iValidSyuuchakuEki かつ iEkiOrder < iConnectEkiIndex
-								「||」(経由無し)
-							iEkiOrder == iConnectEkiIndex
-								getJikokuhyouHatsujikokuDisplayがtrueの場合は「↓」、そうでない場合は空白
-								(falseの場合、着時刻欄に↳を表示してしまうので、ここは空白にする)
+				・iValidSihatsuEki == iEkiOrder
+					getJikokuhyouRessyabangouDisplayが3の場合：列車番号
+					2列車目以降で、
+						2の場合：iRessyaIndexContIndex-1の列車の次列車接続タイプを見て、種別変更・列車情報変更なら列車番号
+						1の場合：iRessyaIndexContIndex-1の列車の次列車接続タイプを見て、種別変更なら列車番号
+						それ以外は「↓」
+				・iValidSihatsuEki<iEkiOrder<iValidSyuuchakuEki
+					isRunbetweenがtrueの場合または、
+					getJikokuhyouChakujikokuDisplayがfalseかつisRunbetween(-1)がtrueの場合、表示有りとなる。
+						※発時刻のみ表示で、前駅→当駅が運行あり、当駅→次駅が運行なし(経由なし)の場合は、
+						当駅の発時刻欄(この欄より下部)に、経由なしを超えた先の発時刻を表示するので、
+						この欄が経由なしだと表示が合わないので。
+						getJikokuhyouRessyabangouDisplayが3の場合:列車番号
+						2/1の場合:「↓」
+					その他の場合
+						「||」
+				・iValidSyuuchakuEki == iEkiOrder
+					路線外終着で路線外終着欄がある場合「↓」
+					路線外終着相当で路線外終着欄がある場合
+						getJikokuhyouRessyabangouDisplayが3の場合：次列車の種別名
+						2の場合：aCustomizeJikokuhyouContent.eEAfterTypeを見て、種別変更・列車情報変更なら次列車の列車番号
+						1の場合：aCustomizeJikokuhyouContent.eEAfterTypeを見て、種別変更なら次列車の列車番号
+						それ以外は「↓」
+					iConnectEkiOrder == iValidSyuuchakuEki( == iEkiOrder)の場合空白
+					iConnectEkiOrder > iValidSyuuchakuEkiの場合「||」
+				・iValidSyuuchakuEki < iEkiOrder
+					路線外終着(相当)で路線外終着欄がある場合「||」
+					iConnectEkiOrder > iEkiOrderの場合「||」
+					iEkiOrder == iConnectEkiOrder
+						空白
 
 			*/
 			*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
@@ -6242,10 +8978,6 @@ void CCellBuilderCustomize::update02_02_02_19_setRessya_Ressyabangou(
 							}
 						}
 					}
-					else if (iEkiOrder == aCustomizeJikokuhyouContent.iConnectEkiOrder)
-					{
-						strText = _T("↓");
-					}
 					else if (iEkiOrder >= m_iOuterShihatsuDisplayEkiOrder[aCustomizeJikokuhyouContent.iConnectEkiOrder] &&
 						iEkiOrder < aCustomizeJikokuhyouContent.iConnectEkiOrder)
 					{
@@ -6266,16 +8998,12 @@ void CCellBuilderCustomize::update02_02_02_19_setRessya_Ressyabangou(
 				{
 					if (iCurrentRessyaShihatsuEkiOrder >= 0)
 					{
-						//iEkiOrder = iCurrentRessyaShihatsuEkiOrderで、この駅に発時刻を表示しているときは、経由なしではなく矢印を表示します。
+						//iEkiOrder = iCurrentRessyaShihatsuEkiOrderで、この駅に発時刻を表示しているときは、経由なしではなく空白にします。
 						if (iEkiOrder == iCurrentRessyaShihatsuEkiOrder &&
 							aCdDedEki.getJikokuhyouHatsuJikokuDisplay())
 						{
 							//発時刻欄に時刻が表示されるのは、着時刻表示が無い場合もしくは、前列車の終着駅発時刻が入力されている場合です。
-							if (!aCdDedEki.getJikokuhyouChakuJikokuDisplay())
-							{
-								strText = _T("↓");
-							}
-							else
+							if (aCdDedEki.getJikokuhyouChakuJikokuDisplay())
 							{
 								const CentDedRessya* pPrevRessya =
 									m_pCentDedRessyaCont->getMuPtr()->get(aCustomizeJikokuhyouContent.iRessyaIndexCont[iRessyaIndexContIndex - 1]);
@@ -6283,10 +9011,6 @@ void CCellBuilderCustomize::update02_02_02_19_setRessya_Ressyabangou(
 								{
 									strText = (LPCTSTR)MfcUtil::LoadCString(
 										IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
-								}
-								else
-								{
-									strText = _T("↓");
 								}
 							}
 						}
@@ -6311,6 +9035,8 @@ void CCellBuilderCustomize::update02_02_02_19_setRessya_Ressyabangou(
 						m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] <= iEkiOrder)
 					{
 						//路線外始発相当
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+						*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
 						strText = (LPCTSTR)MfcUtil::LoadCString(
 							IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
 					}
@@ -6374,80 +9100,35 @@ void CCellBuilderCustomize::update02_02_02_19_setRessya_Ressyabangou(
 					if (pCentDedRessya->getLastOperation().getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Outer &&
 						m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= 0 )
 					{
-						//路線外終着
-						/**
-							終着駅と路線外表示駅が同じ場合は、この項は↓とします。
-							終着駅と路線外表示駅の間に他の駅がある場合、発時刻表示がある場合・着時刻表示がないか発時刻が設定されている場合は、↓を表示します。
-						*/
-						if (iValidSyuuchakuEki == m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki])
-						{
-							strText = _T("↓");
-						}
-						else if (aCdDedEki.getJikokuhyouHatsuJikokuDisplay() &&
-							!aCdDedEki.getJikokuhyouChakuJikokuDisplay())
-						{
-							strText = _T("↓");
-						}
-						else if (aCdDedEki.getJikokuhyouHatsuJikokuDisplay() &&
-							aCdDedEki.getJikokuhyouChakuJikokuDisplay())
-						{
-							const CentDedEkiJikoku aCentDedEkiJikoku = pCentDedRessya->getCentDedEkiJikoku(iValidSyuuchakuEki);
-							if (!pCentDedRessya->getLastOperation().getHatsuJikoku().isNull() &&
-								(aCentDedEkiJikoku.getEkiatsukai() == CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Teisya ||
-									m_bDisplayTsuukaEkiJikoku))
-							{
-								strText = _T("↓");
-							}
-							else
-							{
-								strText = (LPCTSTR)MfcUtil::LoadCString(
-									IDS_WORD_JIKOKUHYOU_KEIYUNASI);
-							}
-						}
-						else
-						{
-							//着時刻のみ表示の場合
-							strText = (LPCTSTR)MfcUtil::LoadCString(
-								IDS_WORD_JIKOKUHYOU_KEIYUNASI);
-						}
+						//路線外終着「↓」
+						strText = _T("↓");
 					}
 					else if (aCustomizeJikokuhyouContent.iSyuuchakuEkiOrder >= -2 &&
 						m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= 0)
 					{
 						//路線外終着相当
-						/**
-							終着駅と路線外表示駅が同じ場合は、この項は↓とします。
-							終着駅と路線外表示駅の間に他の駅がある場合、発時刻表示がある場合・着時刻表示がないか発時刻が設定されている場合は、↓を表示します。
-						*/
-						if (iValidSyuuchakuEki == m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki])
+						//書式を次列車の種別にします
+
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+						*pCDcDrawCell = createCDcdEkijikoku(idxRessyasyubetsu);
+
+						if (aCdDedEki.getJikokuhyouRessyabangouDisplay() == 3)
 						{
-							strText = _T("↓");
+							strText = aCustomizeJikokuhyouContent.strRessyabangou;
 						}
-						else if (aCdDedEki.getJikokuhyouHatsuJikokuDisplay() &&
-							!aCdDedEki.getJikokuhyouChakuJikokuDisplay())
+						else if (aCustomizeJikokuhyouContent.eEAfterType == EBeforeAfterType::BeforeAfterType_ClassChange)
 						{
-							strText = _T("↓");
+							strText = aCustomizeJikokuhyouContent.strRessyabangou;
 						}
-						else if (aCdDedEki.getJikokuhyouHatsuJikokuDisplay() &&
-							aCdDedEki.getJikokuhyouChakuJikokuDisplay())
+						else if (aCustomizeJikokuhyouContent.eEAfterType == EBeforeAfterType::BeforeAfterType_PropertyChange &&
+							aCdDedEki.getJikokuhyouRessyabangouDisplay() == 2)
 						{
-							const CentDedEkiJikoku aCentDedEkiJikoku = pCentDedRessya->getCentDedEkiJikoku(iValidSyuuchakuEki);
-							if (aCentDedEkiJikoku.getEkiatsukai() == CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Teisya ||
-								m_bDisplayTsuukaEkiJikoku)
-							{
-								strText = _T("↓");
-							}
-							else
-							{
-								strText = (LPCTSTR)MfcUtil::LoadCString(
-									IDS_WORD_JIKOKUHYOU_KEIYUNASI);
-							}
+							strText = aCustomizeJikokuhyouContent.strRessyabangou;
 						}
 						else
 						{
-							//着時刻のみ表示の場合
-							strText = (LPCTSTR)MfcUtil::LoadCString(
-								IDS_WORD_JIKOKUHYOU_KEIYUNASI);
+							*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
+							strText = _T("↓");
 						}
 
 					}
@@ -6456,11 +9137,6 @@ void CCellBuilderCustomize::update02_02_02_19_setRessya_Ressyabangou(
 					{
 						strText = (LPCTSTR)MfcUtil::LoadCString(
 							IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
-					}
-					else if (aCustomizeJikokuhyouContent.iConnectEkiOrder == iEkiOrder)
-					{
-						//終着駅かつ併合駅の場合は、必ず矢印を表示する(発時刻表示が無い場合は、↳を下駅に表示するので)
-						strText = _T("↓");
 					}
 				}
 				else if (iValidSyuuchakuEki < iEkiOrder)
@@ -6478,6 +9154,8 @@ void CCellBuilderCustomize::update02_02_02_19_setRessya_Ressyabangou(
 						m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= iEkiOrder)
 					{
 						//路線外終着相当
+						//書式を次列車の種別にします
+						*pCDcDrawCell = createCDcdRessyabangou(aCustomizeJikokuhyouContent.iRessyasyubetsuIndex);
 						strText = (LPCTSTR)MfcUtil::LoadCString(
 							IDS_WORD_JIKOKUHYOU_KEIYUNASI);
 
@@ -6487,12 +9165,6 @@ void CCellBuilderCustomize::update02_02_02_19_setRessya_Ressyabangou(
 					{
 						strText = (LPCTSTR)MfcUtil::LoadCString(
 							IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
-					}
-					else if (aCustomizeJikokuhyouContent.iConnectEkiOrder == iEkiOrder &&
-						aCdDedEki.getJikokuhyouHatsuJikokuDisplay())
-					{
-						//併合駅の発時刻表示が無い場合は、↓を表示しない
-						strText = _T("↓");
 					}
 				}
 
@@ -6580,7 +9252,14 @@ void CCellBuilderCustomize::update02_02_02_20_setRessya_OperationNumber(
 	int idxRessyasyubetsu;
 	if (pCentDedRessya == NULL)
 	{
-		idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+		if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+		{
+			idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+		}
+		else
+		{
+			idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+		}
 	}
 	else
 	{
@@ -6602,79 +9281,61 @@ void CCellBuilderCustomize::update02_02_02_20_setRessya_OperationNumber(
 				分割駅の前の駅、分割駅が発時刻のみ表示で、この項が分割駅の直上の場合は↴、それ以外は空白
 		iConnectEkiIndex >= 0の場合
 			iConnectEkiIndex == iEkiOrder
-				「↓」
+				空白
 			iConnectEkiIndex > iEkiOrderかつ路線外始発表示駅<=iEkiOrder
 				「||」(経由無し)
 			それ以外
 				解結駅の次の駅、解結駅が着時刻のみ表示で、この項が解結駅の直下の場合は↳、それ以外は空白
-	・iRessyaIndexContIndex >= 1(2列車目以降)の場合
-		iCurrentRessyaShihatsuEkiOrder<= iEkiOrder <iValidSihatsuEki
+
+	・iEkiOrder < iValidSihatsuEki
+		2列車目以降で、発時刻が表示される場合
+			空白
+		表示されない場合
 			「||」(経由無し)
-		iEkiOrder=iValidSihatsuEki
-				getJikokuhyouOperationNumberDisplayが4の場合：運用番号
-				3の場合：iRessyaIndexContIndex-1の列車の次列車接続タイプを見て、種別変更・列車情報変更なら運用番号
-				2の場合：iRessyaIndexContIndex-1の列車の次列車接続タイプを見て、種別変更なら運用番号
-				1の場合：この列車のiValidSihatsuEki駅を発車するときの運用番号と、前列車の終着駅に到着するときの運用番号を比較して、異なる場合は表示
-		iValidSihatsuEki<iEkiOrder<iValidSyuuchakuEki
-			isRunbetweenがtrueの場合または、
-			getJikokuhyouChakujikokuDisplayがfalseかつisRunbetween(-1)がtrueの場合、表示有りとなる。
-				※発時刻のみ表示で、前駅→当駅が運行あり、当駅→次駅が運行なし(経由なし)の場合は、
-				当駅の発時刻欄(この欄より下部)に、経由なしを超えた先の発時刻を表示するので、
-				この欄が経由なしだと表示が合わないので。
-				getJikokuhyouOperationNumberDisplayが4の場合：運用番号
-				1の場合：この列車のiEkiOrder-1駅を発車するときの運用番号と、iEkiOrder駅を発車するときの運用番号を比較して、異なる場合は表示
-				3/2の場合:「↓」
-			その他の場合
-				「||」
-		iValidSyuuchakuEki<=iEkiOrder
-			路線外終着(相当)で、iEkiOrder <= 路線外終着表示駅
-				iValidSyuuchakuEki==iEkiOrderかつ、路線外終着表示駅==iValidSyuuchakuEkiの場合
-					空白
-				それ以外の場合
-					「||」(経由無し)
-			iConnectEkiIndex == iValidSyuuchakuEki( == iEkiOrder)の場合
-				「↓」
-			iConnectEkiIndex > iValidSyuuchakuEkiの場合
-				iEkiOrder >= iValidSyuuchakuEki かつ iEkiOrder < iConnectEkiIndex
-					「||」(経由無し)
-				iEkiOrder == iConnectEkiIndex
-					getJikokuhyouHatsujikokuDisplayがtrueの場合は「↓」、そうでない場合は空白
-					(falseの場合、着時刻欄に↳を表示してしまうので、ここは空白にする)
+		路線外始発の場合
+			「||」(経由無し)
+		路線外始発相当の場合
+			「||」(経由無し)前列車の種別で表示
+		分割列車で分割駅と始発駅の間の場合
+			「||」(経由無し)
+	・iValidSihatsuEki == iEkiOrder
+		getJikokuhyouOperationNumberDisplayが4の場合：運用番号
+		3の場合：2列車目以降でiRessyaIndexContIndex-1の列車の次列車接続タイプを見て、種別変更・列車情報変更なら運用番号。それ以外は空白。
+		2の場合：2列車目以降でiRessyaIndexContIndex-1の列車の次列車接続タイプを見て、種別変更なら運用番号。それ以外は空白。
+		1の場合：2列車目以降でこの列車のiValidSihatsuEki駅を発車するときの運用番号と、前列車の終着駅に到着するときの運用番号を比較して、異なる場合は表示。それ以外は空白。
+	・iValidSihatsuEki<iEkiOrder<iValidSyuuchakuEki
+		isRunbetweenがtrueの場合または、
+		getJikokuhyouChakujikokuDisplayがfalseかつisRunbetween(-1)がtrueの場合、表示有りとなる。
+			※発時刻のみ表示で、前駅→当駅が運行あり、当駅→次駅が運行なし(経由なし)の場合は、
+			当駅の発時刻欄(この欄より下部)に、経由なしを超えた先の発時刻を表示するので、
+			この欄が経由なしだと表示が合わないので。
+			getJikokuhyouOperationNumberDisplayが4の場合：運用番号
+			1の場合：この列車のiEkiOrder-1駅を発車するときの運用番号と、iEkiOrder駅を発車するときの運用番号を比較して、異なる場合は表示
+			3/2の場合:「↓」
+		その他の場合
+			「||」
+	・iValidSyuuchakuEki == iEkiOrder
+		路線外終着の場合:「↓」
+		路線外終着相当の場合(次列車の種別で表示)
+			getJikokuhyouOperationNumberDisplayが4の場合：運用番号
+			1の場合：この駅に到着するときと出発するときの運用番号を比較して、異なる場合は運用番号を表示、同じ場合は「↓」
+			2・3の場合：aCustomizeJikokuhyouContent.eEAfterTypeを見て表示有無を決定、表示しない場合は「↓」
+		iConnectEkiIndex == iValidSyuuchakuEki( == iEkiOrder)の場合
+			「↓」
+		iConnectEkiIndex > iValidSyuuchakuEkiの場合
+			iEkiOrder >= iValidSyuuchakuEki かつ iEkiOrder < iConnectEkiIndex
+				「||」(経由無し)
+			iEkiOrder == iConnectEkiIndex
+				空白
+	・iValidSyuuchakuEki < iEkiOrder
+		路線外終着かつこの駅が表示駅もしくはそれより前の場合:「||」
+		路線外終着相当かつこの駅が表示駅もしくはそれより前の場合:「||」(次列車の種別で表示)
+		iEkiOrder < iConnectEkiIndex
+			「||」(経由無し)
+		iEkiOrder == iConnectEkiIndex
+			空白
 
 
-	・iRessyaIndexContIndex == 0(1列車目)の場合
-		iEkiOrder<iValidSihatsuEki
-			路線外始発(相当)で、iEkiOrder >= 路線外始発表示駅
-				「||」(経由無し)
-			iReleaseEkiOrder >= 0かつ　iReleaseEkiOrder <= iEkiOrder
-				「||」(経由無し)
-		iEkiOrder=iValidSihatsuEki
-			getJikokuhyouOperationNumberDisplayが4の場合運用番号
-			3/2/1の場合空白
-		iValidSihatsuEki<iEkiOrder<iValidSyuuchakuEki
-			isRunbetweenがtrueの場合または、
-			getJikokuhyouChakujikokuDisplayがfalseかつisRunbetween(-1)がtrueの場合、表示有りとなる。
-				※発時刻のみ表示で、前駅→当駅が運行あり、当駅→次駅が運行なし(経由なし)の場合は、
-				当駅の発時刻欄(この欄より下部)に、経由なしを超えた先の発時刻を表示するので、
-				この欄が経由なしだと表示が合わないので。
-				getJikokuhyouOperationNumberDisplayが4の場合：運用番号
-				3/2の場合:「↓」
-			その他の場合
-				「||」
-		iValidSyuuchakuEki<=iEkiOrder
-			路線外終着(相当)で、iEkiOrder <= 路線外終着表示駅
-				iValidSyuuchakuEki==iEkiOrderかつ、路線外終着表示駅==iValidSyuuchakuEkiの場合
-					空白
-				それ以外の場合
-					「||」(経由無し)
-			iConnectEkiIndex == iValidSyuuchakuEki( == iEkiOrder)の場合
-				「↓」
-			iConnectEkiIndex > iValidSyuuchakuEkiの場合
-				iEkiOrder >= iValidSyuuchakuEki かつ iEkiOrder < iConnectEkiIndex
-					「||」(経由無し)
-				iEkiOrder == iConnectEkiIndex
-					getJikokuhyouHatsujikokuDisplayがtrueの場合は「↓」、そうでない場合は空白
-					(falseの場合、着時刻欄に↳を表示してしまうので、ここは空白にする)
 	*/
 	if (pCentDedRessya == NULL)
 	{
@@ -6734,10 +9395,6 @@ void CCellBuilderCustomize::update02_02_02_20_setRessya_OperationNumber(
 					}
 				}
 			}
-			else if (iEkiOrder == aCustomizeJikokuhyouContent.iConnectEkiOrder)
-			{
-				iDisplayType = 3;//↓
-			}
 			else if (iEkiOrder >= m_iOuterShihatsuDisplayEkiOrder[aCustomizeJikokuhyouContent.iConnectEkiOrder] &&
 				iEkiOrder < aCustomizeJikokuhyouContent.iConnectEkiOrder)
 			{
@@ -6757,26 +9414,19 @@ void CCellBuilderCustomize::update02_02_02_20_setRessya_OperationNumber(
 		{
 			if (iCurrentRessyaShihatsuEkiOrder >= 0)
 			{
-				//iEkiOrder = iCurrentRessyaShihatsuEkiOrderで、この駅に発時刻を表示しているときは、経由なしではなく矢印を表示します。
+				//iEkiOrder = iCurrentRessyaShihatsuEkiOrderで、この駅に発時刻を表示しているときは、経由なしではなく空白にします。
 				if (iEkiOrder == iCurrentRessyaShihatsuEkiOrder &&
 					aCdDedEki.getJikokuhyouHatsuJikokuDisplay())
 				{
 					//発時刻欄に時刻が表示されるのは、着時刻表示が無い場合もしくは、前列車の終着駅発時刻が入力されている場合です。
-					if (!aCdDedEki.getJikokuhyouChakuJikokuDisplay())
-					{
-						iDisplayType = 3;//↓
-					}
-					else
+
+					if (aCdDedEki.getJikokuhyouChakuJikokuDisplay())
 					{
 						const CentDedRessya* pPrevRessya =
 							m_pCentDedRessyaCont->getMuPtr()->get(aCustomizeJikokuhyouContent.iRessyaIndexCont[iRessyaIndexContIndex - 1]);
 						if (pPrevRessya->getCentDedEkiJikoku(iEkiOrder).getHatsujikoku().isNull())
 						{
 							iDisplayType = 2;//||
-						}
-						else
-						{
-							iDisplayType = 3;//↓
 						}
 					}
 				}
@@ -6799,6 +9449,7 @@ void CCellBuilderCustomize::update02_02_02_20_setRessya_OperationNumber(
 				m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] <= iEkiOrder)
 			{
 				//路線外始発相当
+				idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
 				iDisplayType = 2;//||
 			}
 			else if (aCustomizeJikokuhyouContent.iReleaseEkiOrder <= iEkiOrder &&
@@ -6899,87 +9550,58 @@ void CCellBuilderCustomize::update02_02_02_20_setRessya_OperationNumber(
 			if (pCentDedRessya->getLastOperation().getAOperation() == CentDedAfterOperation::EAOperation::AOperation_Outer &&
 				m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= 0 )
 			{
-				//路線外終着
-				/**
-					終着駅と路線外表示駅が同じ場合は、この項は↓とします。
-					終着駅と路線外表示駅の間に他の駅がある場合、発時刻表示がある場合・着時刻表示がないか発時刻が設定されている場合は、↓を表示します。
-				*/
-				if (iValidSyuuchakuEki == m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki])
-				{
-					iDisplayType = 3;//↓
-				}
-				else if (aCdDedEki.getJikokuhyouHatsuJikokuDisplay() &&
-					!aCdDedEki.getJikokuhyouChakuJikokuDisplay())
-				{
-					iDisplayType = 3;//↓
-				}
-				else if (aCdDedEki.getJikokuhyouHatsuJikokuDisplay() &&
-					aCdDedEki.getJikokuhyouChakuJikokuDisplay())
-				{
-					const CentDedEkiJikoku aCentDedEkiJikoku = pCentDedRessya->getCentDedEkiJikoku(iValidSyuuchakuEki);
-					if (!pCentDedRessya->getLastOperation().getHatsuJikoku().isNull() &&
-						(aCentDedEkiJikoku.getEkiatsukai() == CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Teisya ||
-							m_bDisplayTsuukaEkiJikoku))
-					{
-						iDisplayType = 3;//↓
-					}
-					else
-					{
-						iDisplayType = 2;//||
-					}
-				}
-				else
-				{
-					//着時刻のみ表示の場合
-					iDisplayType = 2;//||
-				}
+				//路線外終着「↓」
+				iDisplayType = 3;//↓
 			}
 			else if (aCustomizeJikokuhyouContent.iSyuuchakuEkiOrder >= -2 &&
 				m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= 0)
 			{
 				//路線外終着相当
-				/**
-					終着駅と路線外表示駅が同じ場合は、この項は↓とします。
-					終着駅と路線外表示駅の間に他の駅がある場合、発時刻表示がある場合・着時刻表示がないか発時刻が設定されている場合は、↓を表示します。
-				*/
-				if (iValidSyuuchakuEki == m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki])
+				//書式を次列車の種別にします
+
+				idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+				//*pCDcDrawCell = createCDcdEkijikoku(idxRessyasyubetsu);
+
+				if (aCdDedEki.getJikokuhyouOperationNumberDisplay() == 4)
 				{
-					iDisplayType = 3;//↓
+					iDisplayType = 1;//運番
+					strOperationNumber = aCustomizeJikokuhyouContent.strOperationNumber;
 				}
-				else if (aCdDedEki.getJikokuhyouHatsuJikokuDisplay() &&
-					!aCdDedEki.getJikokuhyouChakuJikokuDisplay())
+				else if (aCdDedEki.getJikokuhyouOperationNumberDisplay() == 1)
 				{
-					iDisplayType = 3;//↓
-				}
-				else if (aCdDedEki.getJikokuhyouHatsuJikokuDisplay() &&
-					aCdDedEki.getJikokuhyouChakuJikokuDisplay())
-				{
-					const CentDedEkiJikoku aCentDedEkiJikoku = pCentDedRessya->getCentDedEkiJikoku(iValidSyuuchakuEki);
-					if (aCentDedEkiJikoku.getEkiatsukai() == CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Teisya ||
-							m_bDisplayTsuukaEkiJikoku)
+					vector<tstring> strOperationNumberArrive =
+						pCentDedRessya->getOperationNumber(iEkiOrder - 1);
+					if (strOperationNumberArrive != aCustomizeJikokuhyouContent.strOperationNumber)
 					{
-						iDisplayType = 3;//↓
+						iDisplayType = 1;//運番
+						strOperationNumber = aCustomizeJikokuhyouContent.strOperationNumber;
 					}
 					else
 					{
-						iDisplayType = 2;//||
+						iDisplayType = 3;//↓
 					}
+				}
+				else if (aCustomizeJikokuhyouContent.eEAfterType == EBeforeAfterType::BeforeAfterType_ClassChange)
+				{
+					iDisplayType = 1;//運番
+					strOperationNumber = aCustomizeJikokuhyouContent.strOperationNumber;
+				}
+				else if (aCustomizeJikokuhyouContent.eEAfterType == EBeforeAfterType::BeforeAfterType_PropertyChange &&
+					aCdDedEki.getJikokuhyouOperationNumberDisplay() == 3)
+				{
+					iDisplayType = 1;//運番
+					strOperationNumber = aCustomizeJikokuhyouContent.strOperationNumber;
 				}
 				else
 				{
-					//着時刻のみ表示の場合
-					iDisplayType = 2;//||
+					iDisplayType = 3;//↓
 				}
+
 			}
 			else if (aCustomizeJikokuhyouContent.iConnectEkiOrder > iEkiOrder &&
 				aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
 			{
 				iDisplayType = 2;//||
-			}
-			else if (aCustomizeJikokuhyouContent.iConnectEkiOrder == iEkiOrder)
-			{
-				//終着駅かつ併合駅の場合は、必ず矢印を表示する(発時刻表示が無い場合は、↳を下駅に表示するので)
-				iDisplayType = 3;//↓
 			}
 		}
 		else if (iValidSyuuchakuEki < iEkiOrder)
@@ -6995,18 +9617,15 @@ void CCellBuilderCustomize::update02_02_02_20_setRessya_OperationNumber(
 				m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= 0 &&
 				m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= iEkiOrder)
 			{
+				//路線外終着相当
+				//書式を次列車の種別にします
+				idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
 				iDisplayType = 2;//||
 			}
 			else if (aCustomizeJikokuhyouContent.iConnectEkiOrder > iEkiOrder &&
 				aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
 			{
 				iDisplayType = 2;//||
-			}
-			else if (aCustomizeJikokuhyouContent.iConnectEkiOrder == iEkiOrder &&
-				aCdDedEki.getJikokuhyouHatsuJikokuDisplay())
-			{
-				//併合駅の発時刻表示が無い場合は、↓を表示しない。
-				iDisplayType = 3;//↓
 			}
 		}
 
@@ -7205,7 +9824,14 @@ void CCellBuilderCustomize::update02_02_02_21_setRessya_Ressyasyubetsu(
 			int idxRessyasyubetsu;
 			if (pCentDedRessya == NULL)
 			{
-				idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+				if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+				{
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+				}
+				else
+				{
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+				}
 			}
 			else
 			{
@@ -7249,72 +9875,53 @@ void CCellBuilderCustomize::update02_02_02_21_setRessya_Ressyasyubetsu(
 							分割駅の前の駅、分割駅が発時刻のみ表示で、この項が分割駅の直上の場合は↴、それ以外は空白
 					iConnectEkiIndex >= 0の場合
 						iConnectEkiIndex == iEkiOrder
-							「↓」
+							空白
 						iConnectEkiIndex > iEkiOrderかつ路線外始発表示駅<=iEkiOrder
 							「||」(経由無し)
 						それ以外
 							解結駅の次の駅、解結駅が着時刻のみ表示で、この項が解結駅の直下の場合は↳、それ以外は空白
 
-				・iRessyaIndexContIndex >= 1(2列車目以降)の場合
-					iCurrentRessyaShihatsuEkiOrder<= iEkiOrder <iValidSihatsuEki
-						「||」(経由無し)
-					iEkiOrder=iValidSihatsuEki
-							getJikokuhyouRessyabangouDisplayが3の場合：種別名
-							2の場合：iRessyaIndexContIndex-1の列車の次列車接続タイプを見て、種別変更・列車情報変更なら種別名
-							1の場合：iRessyaIndexContIndex-1の列車の次列車接続タイプを見て、種別変更なら種別名
-					iValidSihatsuEki<iEkiOrder<iValidSyuuchakuEki
-						isRunbetweenがtrueの場合または、
-						getJikokuhyouChakujikokuDisplayがfalseかつisRunbetween(-1)がtrueの場合、表示有りとなる。
-							※発時刻のみ表示で、前駅→当駅が運行あり、当駅→次駅が運行なし(経由なし)の場合は、
-							当駅の発時刻欄(この欄より下部)に、経由なしを超えた先の発時刻を表示するので、
-							この欄が経由なしだと表示が合わないので。
-							getJikokuhyouRessyabangouDisplayが3の場合：種別名
-							2/1の場合:「↓」
-						その他の場合
-							「||」
-					iValidSyuuchakuEki<=iEkiOrder
-						路線外終着(相当)で、iEkiOrder <= 路線外終着表示駅
-							「||」(経由無し)
-						iConnectEkiIndex == iValidSyuuchakuEki( == iEkiOrder)の場合
-							「↓」
-						iConnectEkiIndex > iValidSyuuchakuEkiの場合
-							iEkiOrder >= iValidSyuuchakuEki かつ iEkiOrder < iConnectEkiIndex
-								「||」(経由無し)
-							iEkiOrder == iConnectEkiIndex
-								getJikokuhyouHatsujikokuDisplayがtrueの場合は「↓」、そうでない場合は空白
-								(falseの場合、着時刻欄に↳を表示してしまうので、ここは空白にする)
 
-
-				・iRessyaIndexContIndex == 0(1列車目)の場合
-					iEkiOrder<iValidSihatsuEki
+				・iEkiOrder <iValidSihatsuEkiの場合
+					iRessyaIndexContIndex >= 1(2列車目以降)の場合
+						iEkiOrder == iCurrentRessyaShihatsuEkiOrder(前列車の終着駅)で、この駅の発時刻欄に時刻が表示されている場合は、空白
+						それ以外は「||」(経由無し)
+					1列車目の場合
 						路線外始発(相当)で、iEkiOrder >= 路線外始発表示駅
 							「||」(経由無し)
 						iReleaseEkiOrder >= 0かつ　iReleaseEkiOrder <= iEkiOrder
 							「||」(経由無し)
-					iEkiOrder=iValidSihatsuEki
-						getJikokuhyouRessyabangouDisplayが3の場合種別名
-						2/1の場合空白
-					iValidSihatsuEki<iEkiOrder<iValidSyuuchakuEki
-						isRunbetweenがtrueの場合または、
-						getJikokuhyouChakujikokuDisplayがfalseかつisRunbetween(-1)がtrueの場合、表示有りとなる。
-							※発時刻のみ表示で、前駅→当駅が運行あり、当駅→次駅が運行なし(経由なし)の場合は、
-							当駅の発時刻欄(この欄より下部)に、経由なしを超えた先の発時刻を表示するので、
-							この欄が経由なしだと表示が合わないので。
-							getJikokuhyouRessyabangouDisplayが3の場合:種別名
-							2/1の場合:「↓」
-						その他の場合
-							「||」
-					iValidSyuuchakuEki<=iEkiOrder
-						路線外終着(相当)で、iEkiOrder <= 路線外終着表示駅
-							「||」(経由無し)
-						iConnectEkiIndex == iValidSyuuchakuEki( == iEkiOrder)の場合
-							「↓」
-						iConnectEkiIndex > iValidSyuuchakuEkiの場合
-							iEkiOrder >= iValidSyuuchakuEki かつ iEkiOrder < iConnectEkiIndex
-								「||」(経由無し)
-							iEkiOrder == iConnectEkiIndex
-								getJikokuhyouHatsujikokuDisplayがtrueの場合は「↓」、そうでない場合は空白
-								(falseの場合、着時刻欄に↳を表示してしまうので、ここは空白にする)
+				・iValidSihatsuEki == iEkiOrder
+					getJikokuhyouRessyabangouDisplayが3の場合：種別名
+					2列車目以降で、
+						2の場合：iRessyaIndexContIndex-1の列車の次列車接続タイプを見て、種別変更・列車情報変更なら種別名
+						1の場合：iRessyaIndexContIndex-1の列車の次列車接続タイプを見て、種別変更なら種別名
+						それ以外は「↓」
+				・iValidSihatsuEki<iEkiOrder<iValidSyuuchakuEki
+					isRunbetweenがtrueの場合または、
+					getJikokuhyouChakujikokuDisplayがfalseかつisRunbetween(-1)がtrueの場合、表示有りとなる。
+						※発時刻のみ表示で、前駅→当駅が運行あり、当駅→次駅が運行なし(経由なし)の場合は、
+						当駅の発時刻欄(この欄より下部)に、経由なしを超えた先の発時刻を表示するので、
+						この欄が経由なしだと表示が合わないので。
+						getJikokuhyouRessyabangouDisplayが3の場合:種別名
+						2/1の場合:「↓」
+					その他の場合
+						「||」
+				・iValidSyuuchakuEki == iEkiOrder
+					路線外終着で路線外終着欄がある場合「↓」
+					路線外終着相当で路線外終着欄がある場合
+						getJikokuhyouRessyabangouDisplayが3の場合：次列車の種別名
+						2の場合：aCustomizeJikokuhyouContent.eEAfterTypeを見て、種別変更・列車情報変更なら次列車の種別名
+						1の場合：aCustomizeJikokuhyouContent.eEAfterTypeを見て、種別変更なら次列車の種別名
+						それ以外は「↓」
+					iConnectEkiOrder == iValidSyuuchakuEki( == iEkiOrder)の場合空白
+					iConnectEkiOrder > iValidSyuuchakuEkiの場合「||」
+				・iValidSyuuchakuEki < iEkiOrder
+					路線外終着(相当)で路線外終着欄がある場合「||」
+					iConnectEkiOrder > iEkiOrderの場合「||」
+					iEkiOrder == iConnectEkiOrder
+						空白
+					
 			*/
 			tstring strText = _T("");
 			*pCDcDrawCell = createCDcdEkijikoku(idxRessyasyubetsu);
@@ -7382,11 +9989,6 @@ void CCellBuilderCustomize::update02_02_02_21_setRessya_Ressyasyubetsu(
 							}
 						}
 					}
-					else if (iEkiOrder == aCustomizeJikokuhyouContent.iConnectEkiOrder)
-					{
-						*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
-						strText = _T("↓");
-					}
 					else if (iEkiOrder >= m_iOuterShihatsuDisplayEkiOrder[aCustomizeJikokuhyouContent.iConnectEkiOrder] &&
 						iEkiOrder < aCustomizeJikokuhyouContent.iConnectEkiOrder)
 					{
@@ -7413,12 +10015,7 @@ void CCellBuilderCustomize::update02_02_02_21_setRessya_Ressyasyubetsu(
 							aCdDedEki.getJikokuhyouHatsuJikokuDisplay())
 						{
 							//発時刻欄に時刻が表示されるのは、着時刻表示が無い場合もしくは、前列車の終着駅発時刻が入力されている場合です。
-							if (!aCdDedEki.getJikokuhyouChakuJikokuDisplay())
-							{
-								*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
-								strText = _T("↓");
-							}
-							else
+							if (aCdDedEki.getJikokuhyouChakuJikokuDisplay())
 							{
 								const CentDedRessya* pPrevRessya =
 									m_pCentDedRessyaCont->getMuPtr()->get(aCustomizeJikokuhyouContent.iRessyaIndexCont[iRessyaIndexContIndex - 1]);
@@ -7427,11 +10024,6 @@ void CCellBuilderCustomize::update02_02_02_21_setRessya_Ressyasyubetsu(
 									*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
 									strText = (LPCTSTR)MfcUtil::LoadCString(
 										IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
-								}
-								else
-								{
-									*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
-									strText = _T("↓");
 								}
 							}
 						}
@@ -7458,6 +10050,7 @@ void CCellBuilderCustomize::update02_02_02_21_setRessya_Ressyasyubetsu(
 						m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] <= iEkiOrder)
 					{
 						//路線外始発相当
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
 						*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
 						strText = (LPCTSTR)MfcUtil::LoadCString(
 							IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
@@ -7527,90 +10120,57 @@ void CCellBuilderCustomize::update02_02_02_21_setRessya_Ressyasyubetsu(
 						m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= 0)
 					{
 						//路線外終着
-						/**
-							終着駅と路線外表示駅が同じ場合は、この項は↓とします。
-							終着駅と路線外表示駅の間に他の駅がある場合、発時刻表示がある場合・着時刻表示がないか発時刻が設定されている場合は、↓を表示します。
-						*/
-						if (iValidSyuuchakuEki == m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki])
-						{
-							*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
-							strText = _T("↓");
-						}
-						else if (aCdDedEki.getJikokuhyouHatsuJikokuDisplay() &&
-							!aCdDedEki.getJikokuhyouChakuJikokuDisplay())
-						{
-							*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
-							strText = _T("↓");
-						}
-						else if (aCdDedEki.getJikokuhyouHatsuJikokuDisplay() &&
-							aCdDedEki.getJikokuhyouChakuJikokuDisplay())
-						{
-							const CentDedEkiJikoku aCentDedEkiJikoku = pCentDedRessya->getCentDedEkiJikoku(iValidSyuuchakuEki);
-							if (!pCentDedRessya->getLastOperation().getHatsuJikoku().isNull() &&
-								(aCentDedEkiJikoku.getEkiatsukai() == CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Teisya ||
-									m_bDisplayTsuukaEkiJikoku))
-							{
-								*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
-								strText = _T("↓");
-							}
-							else
-							{
-								*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
-								strText = (LPCTSTR)MfcUtil::LoadCString(
-									IDS_WORD_JIKOKUHYOU_KEIYUNASI);
-							}
-						}
-						else
-						{
-							//着時刻のみ表示の場合
-							*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
-							strText = (LPCTSTR)MfcUtil::LoadCString(
-								IDS_WORD_JIKOKUHYOU_KEIYUNASI);
-						}
+						//Ver2.06.21 この項は↓とします。(単純化)
+						*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
+						strText = _T("↓");
 					}
 					else if (aCustomizeJikokuhyouContent.iSyuuchakuEkiOrder >= -2 &&
 						m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= 0)
 					{
 						//路線外終着相当
-						/**
-							終着駅と路線外表示駅が同じ場合は、この項は↓とします。
-							終着駅と路線外表示駅の間に他の駅がある場合、発時刻表示がある場合・着時刻表示がないか発時刻が設定されている場合は、↓を表示します。
-						*/
-						if (iValidSyuuchakuEki == m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki])
+						//書式を次列車の種別にします
+
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
 						{
-							*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
-							strText = _T("↓");
-						}
-						else if (aCdDedEki.getJikokuhyouHatsuJikokuDisplay() &&
-							!aCdDedEki.getJikokuhyouChakuJikokuDisplay())
-						{
-							*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
-							strText = _T("↓");
-						}
-						else if (aCdDedEki.getJikokuhyouHatsuJikokuDisplay() &&
-							aCdDedEki.getJikokuhyouChakuJikokuDisplay())
-						{
-							const CentDedEkiJikoku aCentDedEkiJikoku = pCentDedRessya->getCentDedEkiJikoku(iValidSyuuchakuEki);
-							if (aCentDedEkiJikoku.getEkiatsukai() == CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Teisya ||
-								m_bDisplayTsuukaEkiJikoku)
+							pCentDedRessyasyubetsu =
+								pCentDedRosen->getCentDedRessyasyubetsuCont()->getMuPtr()
+								->get(idxRessyasyubetsu);
+							if (m_bDisplayParentSyubetsu && pCentDedRessyasyubetsu->getParentSyubetsuIndex() >= 0)
 							{
-								*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
-								strText = _T("↓");
+								pCentDedRessyasyubetsu
+									= pCentDedRosen->getCentDedRessyasyubetsuCont()->getMuPtr()
+									->get(pCentDedRessyasyubetsu->getParentSyubetsuIndex());
 							}
-							else
+							if (pCentDedRessyasyubetsu == NULL)
 							{
-								*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
-								strText = (LPCTSTR)MfcUtil::LoadCString(
-									IDS_WORD_JIKOKUHYOU_KEIYUNASI);
+								pCentDedRessyasyubetsu =
+									pCentDedRosen->getCentDedRessyasyubetsuCont()
+									->getMuPtr()->get(0);
 							}
+						}
+						
+						strRessyasyubetsu = pCentDedRessyasyubetsu->getRyakusyou();
+						*pCDcDrawCell = createCDcdEkijikoku(idxRessyasyubetsu);
+
+						if (aCdDedEki.getJikokuhyouRessyaSyubetsuDisplay() == 3)
+						{
+							strText = strRessyasyubetsu;
+						}
+						else if (aCustomizeJikokuhyouContent.eEAfterType == EBeforeAfterType::BeforeAfterType_ClassChange)
+						{
+							strText = strRessyasyubetsu;
+						}
+						else if (aCustomizeJikokuhyouContent.eEAfterType == EBeforeAfterType::BeforeAfterType_PropertyChange &&
+							aCdDedEki.getJikokuhyouRessyaSyubetsuDisplay() == 2)
+						{
+							strText = strRessyasyubetsu;
 						}
 						else
 						{
-							//着時刻のみ表示の場合
 							*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
-							strText = (LPCTSTR)MfcUtil::LoadCString(
-								IDS_WORD_JIKOKUHYOU_KEIYUNASI);
+							strText = _T("↓");
 						}
+
 					}
 					else if (aCustomizeJikokuhyouContent.iConnectEkiOrder > iEkiOrder &&
 						aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
@@ -7618,12 +10178,6 @@ void CCellBuilderCustomize::update02_02_02_21_setRessya_Ressyasyubetsu(
 						*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
 						strText = (LPCTSTR)MfcUtil::LoadCString(
 							IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
-					}
-					else if (aCustomizeJikokuhyouContent.iConnectEkiOrder == iEkiOrder)
-					{
-						//終着駅かつ併合駅の場合は、必ず矢印を表示する(発時刻表示が無い場合は、↳を下駅に表示するので)
-						*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
-						strText = _T("↓");
 					}
 				}
 				else if (iValidSyuuchakuEki < iEkiOrder)
@@ -7642,7 +10196,8 @@ void CCellBuilderCustomize::update02_02_02_21_setRessya_Ressyasyubetsu(
 						m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= iEkiOrder)
 					{
 						//路線外終着相当
-						*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
+						//書式を次列車の種別にします
+						*pCDcDrawCell = createCDcdRessyabangou(aCustomizeJikokuhyouContent.iRessyasyubetsuIndex);
 						strText = (LPCTSTR)MfcUtil::LoadCString(
 							IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
 
@@ -7653,13 +10208,6 @@ void CCellBuilderCustomize::update02_02_02_21_setRessya_Ressyasyubetsu(
 						*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
 						strText = (LPCTSTR)MfcUtil::LoadCString(
 							IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
-					}
-					else if (aCustomizeJikokuhyouContent.iConnectEkiOrder == iEkiOrder &&
-							aCdDedEki.getJikokuhyouHatsuJikokuDisplay())
-					{
-						//併合駅の発時刻表示が無い場合は、↓を表示しない。
-						*pCDcDrawCell = createCDcdRessyabangou(idxRessyasyubetsu);
-						strText = _T("↓");
 					}
 				}
 				/**
@@ -7800,7 +10348,14 @@ void CCellBuilderCustomize::update02_02_02_22_setRessya_Ressyamei(
 			int idxRessyasyubetsu;
 			if (pCentDedRessya == NULL)
 			{
-				idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+				if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+				{
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+				}
+				else
+				{
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+				}
 			}
 			else
 			{
@@ -7820,6 +10375,28 @@ void CCellBuilderCustomize::update02_02_02_22_setRessya_Ressyamei(
 						それ以外
 							「空白」
 					iConnectEkiIndex >= 0の場合、常に「空白」
+
+				・iValidSihatsuEki == iEkiOrder
+					getJikokuhyouRessyabangouDisplayが3の場合：列車名
+						2列車目以降かつ2の場合：iRessyaIndexContIndex-1の列車の次列車接続タイプを見て、種別変更・列車情報変更なら列車名
+						2列車目以降かつ1の場合：iRessyaIndexContIndex-1の列車の次列車接続タイプを見て、種別変更なら列車名
+				
+				・iValidSihatsuEki<iEkiOrder<iValidSyuuchakuEki
+					isRunbetweenがtrueの場合または、
+					getJikokuhyouChakujikokuDisplayがfalseかつisRunbetween(-1)がtrueの場合、表示有りとなる。
+						※発時刻のみ表示で、前駅→当駅が運行あり、当駅→次駅が運行なし(経由なし)の場合は、
+						当駅の発時刻欄(この欄より下部)に、経由なしを超えた先の発時刻を表示するので、
+						この欄が経由なしだと表示が合わないので。
+						getJikokuhyouRessyameiDisplayが3の場合:列車名
+						2/1の場合:「空白」
+					その他の場合
+						「空白」
+				・iValidSyuuchakuEki==iEkiOrder
+					路線外終着相当かつ、路線外終着表示欄がある場合
+						getJikokuhyouRessyabangouDisplayが3の場合：次列車名
+						2の場合：aCustomizeJikokuhyouContent.eEAfterTypeを見て、種別変更・列車情報変更なら列車名
+						1の場合：aCustomizeJikokuhyouContent.eEAfterTypeを見て、種別変更なら列車名
+
 
 				・iRessyaIndexContIndex >= 1(2列車目以降)の場合
 					iCurrentRessyaShihatsuEkiOrder<= iEkiOrder <iValidSihatsuEki
@@ -7986,6 +10563,43 @@ void CCellBuilderCustomize::update02_02_02_22_setRessya_Ressyamei(
 					if (!strText2.empty())
 					{
 						strText3 = (LPCTSTR)MfcUtil::LoadCString(IDS_WORD_GOUSUU2);
+					}
+				}
+				else if (iValidSyuuchakuEki == iEkiOrder &&
+					aCustomizeJikokuhyouContent.iSyuuchakuEkiOrder >= -2 &&
+					m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= 0)
+				{
+					//路線外終着相当
+					//書式を次列車の種別にします
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+
+					if (aCdDedEki.getJikokuhyouRessyameiDisplay() == 3)
+					{
+						strText = aCustomizeJikokuhyouContent.strRessyamei;
+						strText2 = aCustomizeJikokuhyouContent.strGousuu;
+						if (!strText2.empty())
+						{
+							strText3 = (LPCTSTR)MfcUtil::LoadCString(IDS_WORD_GOUSUU2);
+						}
+					}
+					else if (aCustomizeJikokuhyouContent.eEAfterType == EBeforeAfterType::BeforeAfterType_ClassChange)
+					{
+						strText = aCustomizeJikokuhyouContent.strRessyamei;
+						strText2 = aCustomizeJikokuhyouContent.strGousuu;
+						if (!strText2.empty())
+						{
+							strText3 = (LPCTSTR)MfcUtil::LoadCString(IDS_WORD_GOUSUU2);
+						}
+					}
+					else if (aCustomizeJikokuhyouContent.eEAfterType == EBeforeAfterType::BeforeAfterType_PropertyChange &&
+						aCdDedEki.getJikokuhyouRessyameiDisplay() == 2)
+					{
+						strText = aCustomizeJikokuhyouContent.strRessyamei;
+						strText2 = aCustomizeJikokuhyouContent.strGousuu;
+						if (!strText2.empty())
+						{
+							strText3 = (LPCTSTR)MfcUtil::LoadCString(IDS_WORD_GOUSUU2);
+						}
 					}
 				}
 
@@ -8460,7 +11074,14 @@ void CCellBuilderCustomize::update02_02_02_07_setRessya_Hatsu(
 				int idxRessyasyubetsu;
 				if (pCentDedRessya == NULL)
 				{
-					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+					if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+					{
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+					}
+					else
+					{
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+					}
 				}
 				else
 				{
@@ -8620,6 +11241,8 @@ void CCellBuilderCustomize::update02_02_02_07_setRessya_Hatsu(
 							m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] <= iEkiOrder)
 						{
 							//路線外始発相当
+							//Ver2.06.21 この場合は、セルの書式を前列車種別のものにする
+							*pCDcDrawCell = createCDcdRessyabangou(aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex);
 							pCDcDrawCell->setText((LPCTSTR)MfcUtil::LoadCString(
 								IDS_WORD_JIKOKUHYOU_KEIYUNASI));//"||"
 						}
@@ -8881,9 +11504,11 @@ void CCellBuilderCustomize::update02_02_02_07_setRessya_Hatsu(
 							m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= 0)
 						{
 							//路線外終着相当
+							//Ver2.06.21 この場合は、セルの書式を次列車種別のものにする
 							if (aCentDedEkiJikoku.getEkiatsukai() == CentDedEkiJikoku::Ekiatsukai_Tsuuka &&
 								!m_bDisplayTsuukaEkiJikoku)
 							{
+								*pCDcDrawCell = createCDcdRessyabangou(aCustomizeJikokuhyouContent.iRessyasyubetsuIndex);
 								pCDcDrawCell->setText((LPCTSTR)MfcUtil::LoadCString(
 									IDS_WORD_JIKOKUHYOU_KEIYUNASI));//"||"
 							}
@@ -8903,6 +11528,8 @@ void CCellBuilderCustomize::update02_02_02_07_setRessya_Hatsu(
 								}
 								tstring strText = getCdDedJikokuConv().encode(aCustomizeJikokuhyouContent.HatsuJikoku,
 									false, aChakuJikoku);
+
+								idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
 								*pCDcDrawCell = createCDcdEkijikoku(idxRessyasyubetsu,
 									aCentDedEkiJikoku.getEkiatsukai());
 								pCDcDrawCell->setText(strText);
@@ -8960,6 +11587,9 @@ void CCellBuilderCustomize::update02_02_02_07_setRessya_Hatsu(
 							m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki] >= iEkiOrder)
 						{
 							//路線外終着相当
+							//Ver2.06.21 この場合は、セルの書式を次列車種別のものにする
+
+							*pCDcDrawCell = createCDcdRessyabangou(aCustomizeJikokuhyouContent.iRessyasyubetsuIndex);
 							pCDcDrawCell->setText((LPCTSTR)MfcUtil::LoadCString(
 								IDS_WORD_JIKOKUHYOU_KEIYUNASI));//"||"
 
@@ -9381,7 +12011,14 @@ void CCellBuilderCustomize::update02_02_02_26_setRessya_EkiOuterTerminal_Shuchak
 				int idxRessyasyubetsu;
 				if (pCentDedRessya == NULL)
 				{
-					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+					if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+					{
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+					}
+					else
+					{
+						idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+					}
 				}
 				else
 				{
@@ -9473,6 +12110,8 @@ void CCellBuilderCustomize::update02_02_02_26_setRessya_EkiOuterTerminal_Shuchak
 							m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] >= 0 &&
 							m_iOuterShihatsuDisplayEkiOrder[iValidSihatsuEki] <= iEkiOrder)
 						{
+							//Ver2.06.21 表示書式を、前列車の種別に変更する
+							idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
 							strText1 = (LPCTSTR)MfcUtil::LoadCString(
 								IDS_WORD_JIKOKUHYOU_KEIYUNASI);//"||"
 							strText2 = strText1;//"||"
@@ -9504,6 +12143,7 @@ void CCellBuilderCustomize::update02_02_02_26_setRessya_EkiOuterTerminal_Shuchak
 							(2)のパターン　pCentDedRessyaの終着駅Orderで
 							m_iOuterShihatsuDisplayEkiOrderから路線外終着表示駅を取得し、
 							それが当駅ならば、ここで路線外終着表示を行う
+							Ver2.06.21 表示書式を、次列車の種別に変更する
 						*/
 						if (aCustomizeJikokuhyouContent.iSyuuchakuEkiOrder >= -2 &&
 							iEkiOrder == m_iOuterShuchakuDisplayEkiOrder[iValidSyuuchakuEki])
@@ -9525,6 +12165,10 @@ void CCellBuilderCustomize::update02_02_02_26_setRessya_EkiOuterTerminal_Shuchak
 							CdDedJikoku aCdDedJikoku
 								= aCustomizeJikokuhyouContent.OuterShuchakuJikoku;
 							strText2 = getCdDedJikokuConv().encode(aCdDedJikoku, true);
+
+							idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+							*pCDcDrawCell1 = createCDcdRessyabangou(idxRessyasyubetsu);
+							*pCDcDrawCell2 = createCDcdEkijikoku(idxRessyasyubetsu);
 
 						}
 						/**
@@ -9613,7 +12257,14 @@ void CCellBuilderCustomize::update02_02_02_08_setRessya_Bikou(
 			int idxRessyasyubetsu;
 			if (pCentDedRessya == NULL)
 			{
-				idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+				if (aCustomizeJikokuhyouContent.iConnectEkiOrder >= 0)
+				{
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iPrevRessyasyubetsuIndex;
+				}
+				else
+				{
+					idxRessyasyubetsu = aCustomizeJikokuhyouContent.iRessyasyubetsuIndex;
+				}
 			}
 			else
 			{

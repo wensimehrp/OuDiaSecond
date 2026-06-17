@@ -1,5 +1,5 @@
 /*
-OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -109,7 +109,7 @@ int CdEkiXColSpecCont::size()
 {
 	if (getDisplaySettingMode())
 	{
-		return 38;
+		return 50;
 	}
 	else
 	{
@@ -164,6 +164,7 @@ CdEkiXColSpec CdEkiXColSpecCont::ColumnNumberToSpec(
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OperationOriginDownAfterUpBefore);
 		}
+
 		//	終点側下り増結上り解結作業欄
 		else if (iColumnNumber == 8)
 		{
@@ -179,138 +180,207 @@ CdEkiXColSpec CdEkiXColSpecCont::ColumnNumberToSpec(
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OperationTerminalDownAfterUpBefore);
 		}
+
 		//	番線表示省略設定
 		else if (iColumnNumber == 11)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_TrackOmit);
 		}
-		//	下りカスタマイズ時刻表ビューでの着時刻表示設定
+
+		//	下りカスタマイズ時刻表ビューでの路線外・前列車始発駅表示設定
 		else if (iColumnNumber == 12)
+		{
+			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayKudari);
+		}
+		//	下りカスタマイズ時刻表ビューでの着時刻表示設定
+		else if (iColumnNumber == 13)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayKudari);
 		}
+		//	下りカスタマイズ時刻表ビューでの入線時刻表示設定
+		else if (iColumnNumber == 14)
+		{
+			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_NyuusenJikokuDisplayKudari);
+		}
 		//	下りカスタマイズ時刻表ビューでの発着番線表示設定
-		else if (iColumnNumber == 13)
+		else if (iColumnNumber == 15)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayKudari);
 		}
 		//	 下りカスタマイズ時刻表ビューでの発時刻表示設定
-		else if (iColumnNumber == 14)
+		else if (iColumnNumber == 16)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayKudari);
 		}
+		//	下りカスタマイズ時刻表ビューでの路線外・次列車終着駅表示設定
+		else if (iColumnNumber == 17)
+		{
+			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayKudari);
+		}
+
+		//	下りカスタマイズ時刻表ビューでの前列車列車番号表示設定
+		else if (iColumnNumber == 18)
+		{
+			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyabangouDisplayKudari);
+		}
+		//	下りカスタマイズ時刻表ビューでの前列車運用番号表示設定
+		else if (iColumnNumber == 19)
+		{
+			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayKudari);
+		}
+		//	下りカスタマイズ時刻表ビューでの前列車運用番号表示段数設定
+		else if (iColumnNumber == 20)
+		{
+			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayRowsKudari);
+		}
+		//	下りカスタマイズ時刻表ビューでの前列車列車種別表示設定
+		else if (iColumnNumber == 21)
+		{
+			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyaSyubetsuDisplayKudari);
+		}
+		//	下りカスタマイズ時刻表ビューでの前列車列車名・号数表示設定
+		else if (iColumnNumber == 22)
+		{
+			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyameiDisplayKudari);
+		}
+
 		//	下りカスタマイズ時刻表ビューでの列車番号表示設定
-		else if (iColumnNumber == 15)
+		else if (iColumnNumber == 23)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayKudari);
 		}
 		//	下りカスタマイズ時刻表ビューでの運用番号表示設定
-		else if (iColumnNumber == 16)
+		else if (iColumnNumber == 24)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayKudari);
 		}
 		//	下りカスタマイズ時刻表ビューでの運用番号表示段数設定
-		else if (iColumnNumber == 17)
+		else if (iColumnNumber == 25)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsKudari);
 		}
 		//	下りカスタマイズ時刻表ビューでの列車種別表示設定
-		else if (iColumnNumber == 18)
+		else if (iColumnNumber == 26)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayKudari);
 		}
 		//	下りカスタマイズ時刻表ビューでの列車名・号数表示設定
-		else if (iColumnNumber == 19)
+		else if (iColumnNumber == 27)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayKudari);
 		}
-		//	下りカスタマイズ時刻表ビューでの路線外・前列車始発駅表示設定
-		else if (iColumnNumber == 20)
+
+		//	上りカスタマイズ時刻表ビューでの路線外・前列車始発駅表示設定
+		else if (iColumnNumber == 28)
 		{
-			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayKudari);
-		}
-		//	下りカスタマイズ時刻表ビューでの路線外・次列車終着駅表示設定
-		else if (iColumnNumber == 21)
-		{
-			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayKudari);
+			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayNobori);
 		}
 		//	上りカスタマイズ時刻表ビューでの着時刻表示設定 
-		else if (iColumnNumber == 22)
+		else if (iColumnNumber == 29)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayNobori);
 		}
+		//	上りカスタマイズ時刻表ビューでの入線時刻表示設定 
+		else if (iColumnNumber == 30)
+		{
+			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_NyuusenJikokuDisplayNobori);
+		}
 		//	上りカスタマイズ時刻表ビューでの発着番線表示設定
-		else if (iColumnNumber == 23)
+		else if (iColumnNumber == 31)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayNobori);
 		}
 		//	上りカスタマイズ時刻表ビューでの発時刻表示設定
-		else if (iColumnNumber == 24)
+		else if (iColumnNumber == 32)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayNobori);
 		}
+		//	上りカスタマイズ時刻表ビューでの路線外・次列車終着駅表示設定
+		else if (iColumnNumber == 33)
+		{
+			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayNobori);
+		}
+
+		//	上りカスタマイズ時刻表ビューでの前列車列車番号表示設定
+		else if (iColumnNumber == 34)
+		{
+		aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyabangouDisplayNobori);
+		}
+		//	上りカスタマイズ時刻表ビューでの前列車運用番号表示設定
+		else if (iColumnNumber == 35)
+		{
+		aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayNobori);
+		}
+		//	上りカスタマイズ時刻表ビューでの前列車運用番号表示段数設定
+		else if (iColumnNumber == 36)
+		{
+		aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayRowsNobori);
+		}
+		//	上りカスタマイズ時刻表ビューでの前列車列車種別表示設定
+		else if (iColumnNumber == 37)
+		{
+		aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyaSyubetsuDisplayNobori);
+		}
+		//	上りカスタマイズ時刻表ビューでの前列車列車名・号数表示設定
+		else if (iColumnNumber == 38)
+		{
+		aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyameiDisplayNobori);
+		}
+
 		//	上りカスタマイズ時刻表ビューでの列車番号表示設定
-		else if (iColumnNumber == 25)
+		else if (iColumnNumber == 39)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayNobori);
 		}
 		//	上りカスタマイズ時刻表ビューでの運用番号表示設定
-		else if (iColumnNumber == 26)
+		else if (iColumnNumber == 40)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayNobori);
 		}
 		//	上りカスタマイズ時刻表ビューでの運用番号表示段数設定
-		else if (iColumnNumber == 27)
+		else if (iColumnNumber == 41)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsNobori);
 		}
 		//	上りカスタマイズ時刻表ビューでの列車種別表示設定
-		else if (iColumnNumber == 28)
+		else if (iColumnNumber == 42)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayNobori);
 		}
 		//	上りカスタマイズ時刻表ビューでの列車名・号数表示設定
-		else if (iColumnNumber == 29)
+		else if (iColumnNumber == 43)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayNobori);
 		}
-		//	上りカスタマイズ時刻表ビューでの路線外・前列車始発駅表示設定
-		else if (iColumnNumber == 30)
-		{
-			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayNobori);
-		}
-		//	上りカスタマイズ時刻表ビューでの路線外・次列車終着駅表示設定
-		else if (iColumnNumber == 31)
-		{
-			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayNobori);
-		}
+
 		//	ダイヤグラムビューでの在線表表示設定
-		else if (iColumnNumber == 32)
+		else if (iColumnNumber == 44)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_DiagramTrackDisplay);
 		}
 		//	ダイヤグラム列車情報表示（下り）
-		else if (iColumnNumber == 33)
+		else if (iColumnNumber == 45)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_DiagramRessyajouhouHyoujiKudari);
 		}
 		//	ダイヤグラム列車情報表示（上り）
-		else if (iColumnNumber == 34)
+		else if (iColumnNumber == 46)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_DiagramRessyajouhouHyoujiNobori);
 		}
 		//	この駅から次の駅までの距離
-		else if (iColumnNumber == 35)
+		else if (iColumnNumber == 47)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_NextEkiDistance);
 		}
 		//	この駅から次の駅までの背景色設定
-		else if (iColumnNumber == 36)
+		else if (iColumnNumber == 48)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_DiagramColorNextEki);
 		}
+
 		//	箱ダイヤで表示するか否か
-		else if (iColumnNumber == 37)
+		else if (iColumnNumber == 49)
 		{
 			aSpec.set(CdEkiXColSpec::EColumnType::ColumnType_OperationTableDisplayJikoku);
 		}
@@ -410,161 +480,240 @@ int CdEkiXColSpecCont::ColumnNumberFromSpec(
 		{
 			iColumnNumber = 11;
 		}
+
+		//	下りカスタマイズ時刻表ビューでの路線外・前列車始発駅表示設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayKudari)
+		{
+			iColumnNumber = 12;
+		}
 		//	下りカスタマイズ時刻表ビューでの着時刻表示設定
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayKudari)
 		{
-			iColumnNumber = 12;
+			iColumnNumber = 13;
+		}
+		//	下りカスタマイズ時刻表ビューでの入線時刻表示設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_NyuusenJikokuDisplayKudari)
+		{
+			iColumnNumber = 14;
 		}
 		//	下りカスタマイズ時刻表ビューでの発着番線表示設定
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayKudari)
 		{
-			iColumnNumber = 13;
+			iColumnNumber = 15;
 		}
 		//	下りカスタマイズ時刻表ビューでの発時刻表示設定
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayKudari)
 		{
-			iColumnNumber = 14;
-		}
-		//	下りカスタマイズ時刻表ビューでの列車番号表示設定
-		else if (aSpec.getColumnType() ==
-			CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayKudari)
-		{
-			iColumnNumber = 15;
-		}
-		//	下りカスタマイズ時刻表ビューでの運用番号表示設定
-		else if (aSpec.getColumnType() ==
-			CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayKudari)
-		{
 			iColumnNumber = 16;
-		}
-		//	下りカスタマイズ時刻表ビューでの運用番号表示段数設定
-		else if (aSpec.getColumnType() ==
-			CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsKudari)
-		{
-			iColumnNumber = 17;
-		}
-		//	下りカスタマイズ時刻表ビューでの列車種別表示設定
-		else if (aSpec.getColumnType() ==
-			CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayKudari)
-		{
-			iColumnNumber = 18;
-		}
-		//	下りカスタマイズ時刻表ビューでの列車名・号数表示設定
-		else if (aSpec.getColumnType() ==
-			CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayKudari)
-		{
-			iColumnNumber = 19;
-		}
-		//	下りカスタマイズ時刻表ビューでの路線外・前列車始発駅表示設定
-		else if (aSpec.getColumnType() ==
-			CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayKudari)
-		{
-			iColumnNumber = 20;
 		}
 		//	下りカスタマイズ時刻表ビューでの路線外・次列車終着駅表示設定
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayKudari)
 		{
+			iColumnNumber = 17;
+		}
+
+		//	下りカスタマイズ時刻表ビューでの前列車列車番号表示設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_PrevRessyabangouDisplayKudari)
+		{
+			iColumnNumber = 18;
+		}
+		//	下りカスタマイズ時刻表ビューでの前列車運用番号表示設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayKudari)
+		{
+			iColumnNumber = 19;
+		}
+		//	下りカスタマイズ時刻表ビューでの前列車運用番号表示段数設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayRowsKudari)
+		{
+			iColumnNumber = 20;
+		}
+		//	下りカスタマイズ時刻表ビューでの前列車列車種別表示設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_PrevRessyaSyubetsuDisplayKudari)
+		{
 			iColumnNumber = 21;
+		}
+		//	下りカスタマイズ時刻表ビューでの前列車列車名・号数表示設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_PrevRessyameiDisplayKudari)
+		{
+			iColumnNumber = 22;
+		}
+
+		//	下りカスタマイズ時刻表ビューでの列車番号表示設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayKudari)
+		{
+			iColumnNumber = 23;
+		}
+		//	下りカスタマイズ時刻表ビューでの運用番号表示設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayKudari)
+		{
+			iColumnNumber = 24;
+		}
+		//	下りカスタマイズ時刻表ビューでの運用番号表示段数設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsKudari)
+		{
+			iColumnNumber = 25;
+		}
+		//	下りカスタマイズ時刻表ビューでの列車種別表示設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayKudari)
+		{
+			iColumnNumber = 26;
+		}
+		//	下りカスタマイズ時刻表ビューでの列車名・号数表示設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayKudari)
+		{
+			iColumnNumber = 27;
+		}
+
+		//	上りカスタマイズ時刻表ビューでの路線外・前列車始発駅表示設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayNobori)
+		{
+			iColumnNumber = 28;
 		}
 		//	上りカスタマイズ時刻表ビューでの着時刻表示設定
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayNobori)
 		{
-			iColumnNumber = 22;
+			iColumnNumber = 29;
+		}
+		//	上りカスタマイズ時刻表ビューでの入線時刻表示設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_NyuusenJikokuDisplayNobori)
+		{
+			iColumnNumber = 30;
 		}
 		//	上りカスタマイズ時刻表ビューでの発着番線表示設定
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayNobori)
 		{
-			iColumnNumber = 23;
+			iColumnNumber = 31;
 		}
 		//	上りカスタマイズ時刻表ビューでの発時刻表示設定
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayNobori)
 		{
-			iColumnNumber = 24;
-		}
-		//	上りカスタマイズ時刻表ビューでの列車番号表示設定
-		else if (aSpec.getColumnType() ==
-			CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayNobori)
-		{
-			iColumnNumber = 25;
-		}
-		//	上りカスタマイズ時刻表ビューでの運用番号表示設定
-		else if (aSpec.getColumnType() ==
-			CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayNobori)
-		{
-			iColumnNumber = 26;
-		}
-		//	上りカスタマイズ時刻表ビューでの運用番号表示段数設定
-		else if (aSpec.getColumnType() ==
-			CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsNobori)
-		{
-			iColumnNumber = 27;
-		}
-		//	上りカスタマイズ時刻表ビューでの列車種別表示設定
-		else if (aSpec.getColumnType() ==
-			CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayNobori)
-		{
-			iColumnNumber = 28;
-		}
-		//	上りカスタマイズ時刻表ビューでの列車名・号数表示設定
-		else if (aSpec.getColumnType() ==
-			CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayNobori)
-		{
-			iColumnNumber = 29;
-		}
-		//	上りカスタマイズ時刻表ビューでの路線外・前列車始発駅表示設定
-		else if (aSpec.getColumnType() ==
-			CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayNobori)
-		{
-			iColumnNumber = 30;
+			iColumnNumber = 32;
 		}
 		//	上りカスタマイズ時刻表ビューでの路線外・次列車終着駅表示設定
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayNobori)
 		{
-			iColumnNumber = 31;
+			iColumnNumber = 33;
 		}
+
+		//	上りカスタマイズ時刻表ビューでの前列車列車番号表示設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_PrevRessyabangouDisplayNobori)
+		{
+			iColumnNumber = 34;
+		}
+		//	上りカスタマイズ時刻表ビューでの前列車運用番号表示設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayNobori)
+		{
+			iColumnNumber = 35;
+		}
+		//	上りカスタマイズ時刻表ビューでの前列車運用番号表示段数設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayRowsNobori)
+		{
+			iColumnNumber = 36;
+		}
+		//	上りカスタマイズ時刻表ビューでの前列車列車種別表示設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_PrevRessyaSyubetsuDisplayNobori)
+		{
+			iColumnNumber = 37;
+		}
+		//	上りカスタマイズ時刻表ビューでの前列車列車名・号数表示設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_PrevRessyameiDisplayNobori)
+		{
+			iColumnNumber = 38;
+		}
+
+		//	上りカスタマイズ時刻表ビューでの列車番号表示設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayNobori)
+		{
+			iColumnNumber = 39;
+		}
+		//	上りカスタマイズ時刻表ビューでの運用番号表示設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayNobori)
+		{
+			iColumnNumber = 40;
+		}
+		//	上りカスタマイズ時刻表ビューでの運用番号表示段数設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsNobori)
+		{
+			iColumnNumber = 41;
+		}
+		//	上りカスタマイズ時刻表ビューでの列車種別表示設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayNobori)
+		{
+			iColumnNumber = 42;
+		}
+		//	上りカスタマイズ時刻表ビューでの列車名・号数表示設定
+		else if (aSpec.getColumnType() ==
+			CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayNobori)
+		{
+			iColumnNumber = 43;
+		}
+
 		//	ダイヤグラムビューでの在線表表示設定
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_DiagramTrackDisplay)
 		{
-			iColumnNumber = 32;
+			iColumnNumber = 44;
 		}
 		//	ダイヤグラム列車情報表示（下り）
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_DiagramRessyajouhouHyoujiKudari)
 		{
-			iColumnNumber = 33;
+			iColumnNumber = 45;
 		}
 		//	ダイヤグラム列車情報表示（上り）
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_DiagramRessyajouhouHyoujiNobori)
 		{
-			iColumnNumber = 34;
+			iColumnNumber = 46;
 		}
 		//	この駅から次の駅までの距離
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_NextEkiDistance)
 		{
-			iColumnNumber = 35;
+			iColumnNumber = 47;
 		}
 		//	この駅から次の駅までの背景色設定
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_DiagramColorNextEki)
 		{
-			iColumnNumber = 36;
+			iColumnNumber = 48;
 		}
 		//	箱ダイヤで表示するか否か
 		else if (aSpec.getColumnType() ==
 			CdEkiXColSpec::EColumnType::ColumnType_OperationTableDisplayJikoku)
 		{
-			iColumnNumber = 37;
+			iColumnNumber = 49;
 		}
 	}
 	else

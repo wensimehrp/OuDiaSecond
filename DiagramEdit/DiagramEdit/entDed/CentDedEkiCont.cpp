@@ -1,5 +1,5 @@
 /*
-	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+	OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -108,7 +108,7 @@ CentDedEkiCont::CdDedEki CentDedEkiCont::ContKudari::get(int iEkiOrder)const
 	CentDedEki aCentDedEkiNext;
 	if (iEkiIndex < size() - 1)
 	{
-		 aCentDedEkiNext = pAdaptee->get(iEkiIndex + 1);
+		aCentDedEkiNext = pAdaptee->get(iEkiIndex + 1);
 	}
 	//下りの境界線：当駅が下り着＆BrunchCoreEkiIndex>=0 もしくは Nextが上り着＆BrunchCoreEkiIndex>=0
 	bool bKyoukaisen = false;
@@ -122,7 +122,7 @@ CentDedEkiCont::CdDedEki CentDedEkiCont::ContKudari::get(int iEkiOrder)const
 	{
 		bKyoukaisen = true;
 	}
-	else if(aCentDedEki.getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku &&
+	else if (aCentDedEki.getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku &&
 		aCentDedEkiNext.getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku)
 	{
 		bKyoukaisen = true;
@@ -155,7 +155,76 @@ CentDedEkiCont::CdDedEki CentDedEkiCont::ContKudari::get(int iEkiOrder)const
 		bJikokuhyouAfterOperationBefore = aCentDedEki.getJikokuhyouOperationTerminalDownBeforeUpAfter();
 		bJikokuhyouAfterOperationAfter = aCentDedEki.getJikokuhyouOperationTerminalDownAfterUpBefore();
 	}
+	//Ver2.06.21 カスタマイズ時刻表の着時刻・発時刻・種別変更欄表示設定を変更。従来無しだった一部駅形式でも、路線外発着欄の有無により表示が可能に。
+	bool bJikokuhyouChakuJikokuDisplayKudari = aCentDedEki.getJikokuhyouChakuJikokuDisplayKudari();
+	if (bJikokuhyouChakuJikokuDisplayKudari &&
+		aCentDedEki.getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku &&
+		!aCentDedEki.getJikokuhyouOuterSihatsuDisplayKudari())
+	{
+		//駅時刻形式が上り着かつ路線外始発欄がない場合は、着時刻表示を無効にする。
+		bJikokuhyouChakuJikokuDisplayKudari = false;
+	}
+	bool bJikokuhyouHatsuJikokuDisplayKudari = aCentDedEki.getJikokuhyouHatsuJikokuDisplayKudari();
+	if (bJikokuhyouHatsuJikokuDisplayKudari &&
+		aCentDedEki.getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku &&
+		!aCentDedEki.getJikokuhyouOuterShuchakuDisplayKudari())
+	{
+		//駅時刻形式が下り着かつ路線外終着欄がない場合は、発時刻表示を無効にする。
+		bJikokuhyouHatsuJikokuDisplayKudari = false;
 
+	}
+
+	int iJikokuhyouRessyabangouDisplayKudari = aCentDedEki.getJikokuhyouRessyabangouDisplayKudari();
+	if (iJikokuhyouRessyabangouDisplayKudari > 0 &&
+		aCentDedEki.getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku &&
+		!aCentDedEki.getJikokuhyouOuterShuchakuDisplayKudari())
+	{
+		//駅時刻形式が下り着かつ路線外終着欄がない場合は、列車番号表示を無効にする。
+		iJikokuhyouRessyabangouDisplayKudari = 0;
+
+	}
+
+	int iJikokuhyouOperationNumberDisplayKudari = aCentDedEki.getJikokuhyouOperationNumberDisplayKudari();
+	if (iJikokuhyouOperationNumberDisplayKudari > 0 &&
+		aCentDedEki.getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku &&
+		!aCentDedEki.getJikokuhyouOuterShuchakuDisplayKudari())
+	{
+		//駅時刻形式が下り着かつ路線外終着欄がない場合は、運用番号表示を無効にする。
+		iJikokuhyouOperationNumberDisplayKudari = 0;
+
+	}
+
+	int iJikokuhyouRessyaSyubetsuDisplayKudari = aCentDedEki.getJikokuhyouRessyaSyubetsuDisplayKudari();
+	if (iJikokuhyouRessyaSyubetsuDisplayKudari > 0 &&
+		aCentDedEki.getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku &&
+		!aCentDedEki.getJikokuhyouOuterShuchakuDisplayKudari())
+	{
+		//駅時刻形式が下り着かつ路線外終着欄がない場合は、列車種別表示を無効にする。
+		iJikokuhyouRessyaSyubetsuDisplayKudari = 0;
+
+	}
+
+	int iJikokuhyouRessyameiDisplayKudari = aCentDedEki.getJikokuhyouRessyameiDisplayKudari();
+	if (iJikokuhyouRessyameiDisplayKudari > 0 &&
+		aCentDedEki.getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku &&
+		!aCentDedEki.getJikokuhyouOuterShuchakuDisplayKudari())
+	{
+		//駅時刻形式が下り着かつ路線外終着欄がない場合は、列車名・号数表示を無効にする。
+		iJikokuhyouRessyameiDisplayKudari = 0;
+
+	}
+
+	int iJikokuhyouPrevRessyabangouDisplayKudari = 0;
+	int iJikokuhyouPrevOperationNumberDisplayKudari = 0;
+	int iJikokuhyouPrevRessyaSyubetsuDisplayKudari = 0;
+	int iJikokuhyouPrevRessyameiDisplayKudari = 0;
+	if (aCentDedEki.getJikokuhyouOuterSihatsuDisplayKudari())
+	{
+		iJikokuhyouPrevRessyabangouDisplayKudari = aCentDedEki.getJikokuhyouPrevRessyabangouDisplayKudari();
+		iJikokuhyouPrevOperationNumberDisplayKudari = aCentDedEki.getJikokuhyouPrevOperationNumberDisplayKudari();
+		iJikokuhyouPrevRessyaSyubetsuDisplayKudari = aCentDedEki.getJikokuhyouPrevRessyaSyubetsuDisplayKudari();
+		iJikokuhyouPrevRessyameiDisplayKudari = aCentDedEki.getJikokuhyouPrevRessyameiDisplayKudari();
+	}
 
 	CentDedEkiCont::CdDedEki aCdDedEki( 
 		aCentDedEki.getEkimei() , 
@@ -186,15 +255,21 @@ CentDedEkiCont::CdDedEki CentDedEkiCont::ContKudari::get(int iEkiOrder)const
 		bJikokuhyouAfterOperationAfter,
 		aCentDedEki.getEkimeiJikokuhyouRyaku(),
 		aCentDedEki.getEkimeiDiagramRyaku(),
-		aCentDedEki.getJikokuhyouChakuJikokuDisplayKudari(),
-		aCentDedEki.getJikokuhyouHatsuJikokuDisplayKudari(),
-		aCentDedEki.getJikokuhyouRessyabangouDisplayKudari(),
-		aCentDedEki.getJikokuhyouOperationNumberDisplayKudari(),
+		bJikokuhyouChakuJikokuDisplayKudari,
+		bJikokuhyouHatsuJikokuDisplayKudari,
+		iJikokuhyouRessyabangouDisplayKudari,
+		iJikokuhyouOperationNumberDisplayKudari,
 		aCentDedEki.getJikokuhyouOperationNumberDisplayRowsKudari(),
-		aCentDedEki.getJikokuhyouRessyaSyubetsuDisplayKudari(),
-		aCentDedEki.getJikokuhyouRessyameiDisplayKudari(),
+		iJikokuhyouRessyaSyubetsuDisplayKudari,
+		iJikokuhyouRessyameiDisplayKudari,
 		aCentDedEki.getJikokuhyouOuterSihatsuDisplayKudari(),
-		aCentDedEki.getJikokuhyouOuterShuchakuDisplayKudari());
+		aCentDedEki.getJikokuhyouOuterShuchakuDisplayKudari(),
+		aCentDedEki.getJikokuhyouNyuusenJikokuDisplayKudari(),
+		iJikokuhyouPrevRessyabangouDisplayKudari,
+		iJikokuhyouPrevOperationNumberDisplayKudari,
+		aCentDedEki.getJikokuhyouPrevOperationNumberDisplayRowsKudari(),
+		iJikokuhyouPrevRessyaSyubetsuDisplayKudari,
+		iJikokuhyouPrevRessyameiDisplayKudari);
 		//aCentDedEki.getEkiTrack2Cont()->getMuPtr());
 
 	//CentDedEkiTrack2Cont* pCentDedEkiTrack2Cont = aCentDedEki.getEkiTrack2Cont();
@@ -272,6 +347,77 @@ CentDedEkiCont::CdDedEki CentDedEkiCont::ContNobori::get(int iEkiOrder )const
 		bJikokuhyouAfterOperationAfter = aCentDedEki.getJikokuhyouOperationOriginDownBeforeUpAfter();
 	}
 
+	//Ver2.06.21 カスタマイズ時刻表の着時刻・発時刻・種別変更欄表示設定を変更。従来無しだった一部駅形式でも、路線外発着欄の有無により表示が可能に。
+	bool bJikokuhyouChakuJikokuDisplayNobori = aCentDedEki.getJikokuhyouChakuJikokuDisplayNobori();
+	if (bJikokuhyouChakuJikokuDisplayNobori &&
+		aCentDedEki.getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku &&
+		!aCentDedEki.getJikokuhyouOuterSihatsuDisplayNobori())
+	{
+		//駅時刻形式が下り着かつ路線外始発欄がない場合は、着時刻表示を無効にする。
+		bJikokuhyouChakuJikokuDisplayNobori = false;
+	}
+	bool bJikokuhyouHatsuJikokuDisplayNobori = aCentDedEki.getJikokuhyouHatsuJikokuDisplayNobori();
+	if (bJikokuhyouHatsuJikokuDisplayNobori &&
+		aCentDedEki.getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku &&
+		!aCentDedEki.getJikokuhyouOuterShuchakuDisplayNobori())
+	{
+		//駅時刻形式が上り着かつ路線外終着欄がない場合は、発時刻表示を無効にする。
+		bJikokuhyouHatsuJikokuDisplayNobori = false;
+
+	}
+
+	int iJikokuhyouRessyabangouDisplayNobori = aCentDedEki.getJikokuhyouRessyabangouDisplayNobori();
+	if (iJikokuhyouRessyabangouDisplayNobori > 0 &&
+		aCentDedEki.getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku &&
+		!aCentDedEki.getJikokuhyouOuterShuchakuDisplayNobori())
+	{
+		//駅時刻形式が上り着かつ路線外終着欄がない場合は、列車番号表示を無効にする。
+		iJikokuhyouRessyabangouDisplayNobori = 0;
+
+	}
+
+	int iJikokuhyouOperationNumberDisplayNobori = aCentDedEki.getJikokuhyouOperationNumberDisplayNobori();
+	if (iJikokuhyouOperationNumberDisplayNobori > 0 &&
+		aCentDedEki.getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku &&
+		!aCentDedEki.getJikokuhyouOuterShuchakuDisplayNobori())
+	{
+		//駅時刻形式が上り着かつ路線外終着欄がない場合は、運用番号表示を無効にする。
+		iJikokuhyouOperationNumberDisplayNobori = 0;
+
+	}
+
+	int iJikokuhyouRessyaSyubetsuDisplayNobori = aCentDedEki.getJikokuhyouRessyaSyubetsuDisplayNobori();
+	if (iJikokuhyouRessyaSyubetsuDisplayNobori > 0 &&
+		aCentDedEki.getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku &&
+		!aCentDedEki.getJikokuhyouOuterShuchakuDisplayNobori())
+	{
+		//駅時刻形式が上り着かつ路線外終着欄がない場合は、列車種別表示を無効にする。
+		iJikokuhyouRessyaSyubetsuDisplayNobori = 0;
+
+	}
+
+	int iJikokuhyouRessyameiDisplayNobori = aCentDedEki.getJikokuhyouRessyameiDisplayNobori();
+	if (iJikokuhyouRessyameiDisplayNobori > 0 &&
+		aCentDedEki.getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku &&
+		!aCentDedEki.getJikokuhyouOuterShuchakuDisplayNobori())
+	{
+		//駅時刻形式が上り着かつ路線外終着欄がない場合は、列車名・号数表示を無効にする。
+		iJikokuhyouRessyameiDisplayNobori = 0;
+
+	}
+
+	int iJikokuhyouPrevRessyabangouDisplayNobori = 0;
+	int iJikokuhyouPrevOperationNumberDisplayNobori = 0;
+	int iJikokuhyouPrevRessyaSyubetsuDisplayNobori = 0;
+	int iJikokuhyouPrevRessyameiDisplayNobori = 0;
+	if (aCentDedEki.getJikokuhyouOuterSihatsuDisplayNobori())
+	{
+		iJikokuhyouPrevRessyabangouDisplayNobori = aCentDedEki.getJikokuhyouPrevRessyabangouDisplayNobori();
+		iJikokuhyouPrevOperationNumberDisplayNobori = aCentDedEki.getJikokuhyouPrevOperationNumberDisplayNobori();
+		iJikokuhyouPrevRessyaSyubetsuDisplayNobori = aCentDedEki.getJikokuhyouPrevRessyaSyubetsuDisplayNobori();
+		iJikokuhyouPrevRessyameiDisplayNobori = aCentDedEki.getJikokuhyouPrevRessyameiDisplayNobori();
+	}
+
 	//17.4.14 駅形式を追加_by_d_mania
 	CentDedEkiCont::CdDedEki aCdDedEki( 
 		aCentDedEki.getEkimei() , 
@@ -302,15 +448,21 @@ CentDedEkiCont::CdDedEki CentDedEkiCont::ContNobori::get(int iEkiOrder )const
 		bJikokuhyouAfterOperationAfter,
 		aCentDedEki.getEkimeiJikokuhyouRyaku(),
 		aCentDedEki.getEkimeiDiagramRyaku(),
-		aCentDedEki.getJikokuhyouChakuJikokuDisplayNobori(),
-		aCentDedEki.getJikokuhyouHatsuJikokuDisplayNobori(),
-		aCentDedEki.getJikokuhyouRessyabangouDisplayNobori(),
-		aCentDedEki.getJikokuhyouOperationNumberDisplayNobori(),
+		bJikokuhyouChakuJikokuDisplayNobori,
+		bJikokuhyouHatsuJikokuDisplayNobori,
+		iJikokuhyouRessyabangouDisplayNobori,
+		iJikokuhyouOperationNumberDisplayNobori,
 		aCentDedEki.getJikokuhyouOperationNumberDisplayRowsNobori(),
-		aCentDedEki.getJikokuhyouRessyaSyubetsuDisplayNobori(),
-		aCentDedEki.getJikokuhyouRessyameiDisplayNobori(),
+		iJikokuhyouRessyaSyubetsuDisplayNobori,
+		iJikokuhyouRessyameiDisplayNobori,
 		aCentDedEki.getJikokuhyouOuterSihatsuDisplayNobori(),
-		aCentDedEki.getJikokuhyouOuterShuchakuDisplayNobori());
+		aCentDedEki.getJikokuhyouOuterShuchakuDisplayNobori(),
+		aCentDedEki.getJikokuhyouNyuusenJikokuDisplayNobori(),
+		iJikokuhyouPrevRessyabangouDisplayNobori,
+		iJikokuhyouPrevOperationNumberDisplayNobori,
+		aCentDedEki.getJikokuhyouPrevOperationNumberDisplayRowsNobori(),
+		iJikokuhyouPrevRessyaSyubetsuDisplayNobori,
+		iJikokuhyouPrevRessyameiDisplayNobori);
 		//aCentDedEki.getEkiTrack2Cont()->getMuPtr());
 
 	return ( aCdDedEki ) ;
@@ -1794,7 +1946,7 @@ void CentDedEkiCont::adjustBrunchLoopEkiTrack2OuterTerminal(
 				//iEkiTrack2Mapの中から、新しいiEkiTrack2Index番線を探し出し、見つかったら元のDiagramTrackOmitから取得して、bNewDiagramTrackOmitに収める
 				//見つからなかったら、新しい番線なので、falseを入れておく
 				bool bFound = false;
-				for (int idx = 0; idx < iEkiTrack2Map.size(); idx++)
+				for (int idx = 0; idx < (int)iEkiTrack2Map.size(); idx++)
 				{
 					if (iEkiTrack2Map[idx] == iEkiTrack2Index)
 					{
@@ -2284,7 +2436,7 @@ void CentDedEkiCont::adjustCrossingCheckRuleByEkiEdit()
 			{
 				if (BeforeFromTrackContentCont[idxbf].eTrackType == ETrackType::TrackType_Origin)
 				{
-					if (BeforeFromTrackContentCont[idxbf].iTrackIndex >= MapTrackContentIsValidOrigin.size())
+					if (BeforeFromTrackContentCont[idxbf].iTrackIndex >= (int)MapTrackContentIsValidOrigin.size())
 					{
 						BeforeFromTrackContentCont.erase(BeforeFromTrackContentCont.begin() + idxbf);
 					}
@@ -2295,7 +2447,7 @@ void CentDedEkiCont::adjustCrossingCheckRuleByEkiEdit()
 				}
 				else if (BeforeFromTrackContentCont[idxbf].eTrackType == ETrackType::TrackType_Terminal)
 				{
-					if (BeforeFromTrackContentCont[idxbf].iTrackIndex >= MapTrackContentIsValidTerminal.size())
+					if (BeforeFromTrackContentCont[idxbf].iTrackIndex >= (int)MapTrackContentIsValidTerminal.size())
 					{
 						BeforeFromTrackContentCont.erase(BeforeFromTrackContentCont.begin() + idxbf);
 					}
@@ -2320,7 +2472,7 @@ void CentDedEkiCont::adjustCrossingCheckRuleByEkiEdit()
 			{
 				if (BeforeToTrackContentCont[idxbt].eTrackType == ETrackType::TrackType_Origin)
 				{
-					if (BeforeToTrackContentCont[idxbt].iTrackIndex >= MapTrackContentIsValidOrigin.size())
+					if (BeforeToTrackContentCont[idxbt].iTrackIndex >= (int)MapTrackContentIsValidOrigin.size())
 					{
 						BeforeToTrackContentCont.erase(BeforeToTrackContentCont.begin() + idxbt);
 					}
@@ -2331,7 +2483,7 @@ void CentDedEkiCont::adjustCrossingCheckRuleByEkiEdit()
 				}
 				else if (BeforeToTrackContentCont[idxbt].eTrackType == ETrackType::TrackType_Terminal)
 				{
-					if (BeforeToTrackContentCont[idxbt].iTrackIndex >= MapTrackContentIsValidTerminal.size())
+					if (BeforeToTrackContentCont[idxbt].iTrackIndex >= (int)MapTrackContentIsValidTerminal.size())
 					{
 						BeforeToTrackContentCont.erase(BeforeToTrackContentCont.begin() + idxbt);
 					}
@@ -2356,7 +2508,7 @@ void CentDedEkiCont::adjustCrossingCheckRuleByEkiEdit()
 			{
 				if (AfterFromTrackContentCont[idxaf].eTrackType == ETrackType::TrackType_Origin)
 				{
-					if (AfterFromTrackContentCont[idxaf].iTrackIndex >= MapTrackContentIsValidOrigin.size())
+					if (AfterFromTrackContentCont[idxaf].iTrackIndex >= (int)MapTrackContentIsValidOrigin.size())
 					{
 						AfterFromTrackContentCont.erase(AfterFromTrackContentCont.begin() + idxaf);
 					}
@@ -2367,7 +2519,7 @@ void CentDedEkiCont::adjustCrossingCheckRuleByEkiEdit()
 				}
 				else if (AfterFromTrackContentCont[idxaf].eTrackType == ETrackType::TrackType_Terminal)
 				{
-					if (AfterFromTrackContentCont[idxaf].iTrackIndex >= MapTrackContentIsValidTerminal.size())
+					if (AfterFromTrackContentCont[idxaf].iTrackIndex >= (int)MapTrackContentIsValidTerminal.size())
 					{
 						AfterFromTrackContentCont.erase(AfterFromTrackContentCont.begin() + idxaf);
 					}
@@ -2392,7 +2544,7 @@ void CentDedEkiCont::adjustCrossingCheckRuleByEkiEdit()
 			{
 				if (AfterToTrackContentCont[idxat].eTrackType == ETrackType::TrackType_Origin)
 				{
-					if (AfterToTrackContentCont[idxat].iTrackIndex >= MapTrackContentIsValidOrigin.size())
+					if (AfterToTrackContentCont[idxat].iTrackIndex >= (int)MapTrackContentIsValidOrigin.size())
 					{
 						AfterToTrackContentCont.erase(AfterToTrackContentCont.begin() + idxat);
 					}
@@ -2403,7 +2555,7 @@ void CentDedEkiCont::adjustCrossingCheckRuleByEkiEdit()
 				}
 				else if (AfterToTrackContentCont[idxat].eTrackType == ETrackType::TrackType_Terminal)
 				{
-					if (AfterToTrackContentCont[idxat].iTrackIndex >= MapTrackContentIsValidTerminal.size())
+					if (AfterToTrackContentCont[idxat].iTrackIndex >= (int)MapTrackContentIsValidTerminal.size())
 					{
 						AfterToTrackContentCont.erase(AfterToTrackContentCont.begin() + idxat);
 					}

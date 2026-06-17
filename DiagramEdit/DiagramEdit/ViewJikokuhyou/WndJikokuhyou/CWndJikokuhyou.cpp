@@ -1,5 +1,5 @@
 /*
-OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -1193,6 +1193,83 @@ CString CWndJikokuhyou::OnUpdateINDICATOR_PasteZoubun_Process()
 		}
 	}
 	return strLs ;
+}
+
+
+CString CWndJikokuhyou::OnUpdateINDICATOR_StdOpeTime_Process()
+{
+	CString	strLs;
+	/*
+		基準運転時分を表示するための条件
+		・列車編集モード
+		・通常の時刻表(カスタマイズ時刻表ではない)
+		・基準運転時分機能が有効
+		・1列車選択状態
+		・カーソルが列車列にある
+		・カーソルが時刻行にある
+		・基準運転時分ダイヤではない
+
+	*/
+	if (m_StateMachine.getCurrentStateIdx() == StateIdx_Ressyahensyu &&
+		!getCustomizeDisplayMode() &&
+		getStandardOperationTimeFunction())
+	{
+		int iDiaIndexStandard = getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()->getKijunDiaIndex();
+
+		CdDedJikokuOrder aCdJikokuOrder = CdDedJikokuOrderOf(getYColSpecOfFocus());
+
+		//const CentDedRessya* pCentDedRessya = NULL;
+		const Mu<const CentDedRessya*>* pCentDedRessyaCont = getCentDedRessyaCont()->getMuPtr();
+		int iRessyaIdx = getXColSpecOfFocus().getRessyaIndex();
+		//if (!(0 <= iRessyaIdx && iRessyaIdx < pCentDedRessyaCont->size())) {
+		//	//	セルの位置が、特定の列車の特定の時刻の場所ではない
+		//	//	エラーにはしません。
+		//}
+		//else 
+		//{
+		//	pCentDedRessya = pCentDedRessyaCont->get(iRessyaIdx);
+		//}
+
+		if (iDiaIndexStandard != GetDocument()->getDiaIndex() &&
+			!aCdJikokuOrder.getIsNull() &&
+			iRessyaIdx >= 0 &&
+			iRessyaIdx < pCentDedRessyaCont->size())
+		{
+
+			const CentDedRessya* pCentDedRessya = pCentDedRessyaCont->get(iRessyaIdx);
+			const Mu<CentDedEkiCont::CdDedEki>* muCdDedEki =
+				getCDiagramEditDoc()->getCDedRosenFileData()->
+				getCentDedRosen()->getCentDedEkiCont()->getMuPtr(
+					pCentDedRessya->getRessyahoukou());
+
+			int iDifferenceTime = m_StateMachine.getCurrentState()->
+				StdOpeTimeFunc(
+					iDiaIndexStandard,
+					aCdJikokuOrder,
+					pCentDedRessya,
+					muCdDedEki
+				);
+			if (iDifferenceTime != 0)
+			{
+				if (abs(iDifferenceTime) < 60)
+				{
+					strLs.Format(ID_INDICATOR_StdOpeTimeSec,
+						-iDifferenceTime);
+
+				}
+				else
+				{
+					strLs.Format(ID_INDICATOR_StdOpeTime,
+						-iDifferenceTime / 60,
+						abs(iDifferenceTime % 60));
+
+				}
+			}
+		}
+		//getCXDcdGrid()->
+	}
+	return strLs;
+	//ID_INDICATOR_StdOpeTime
 }
 
 
@@ -2557,6 +2634,7 @@ BEGIN_MESSAGE_MAP(CWndJikokuhyou,CWndJikokuhyou::super)
 	ON_UPDATE_COMMAND_UI(ID_VIEW_DisplayTsuukaEkiJikoku, OnUpdateVIEWDisplayTsuukaEkiJikoku)
 	ON_COMMAND(ID_FILE_EXPORT_JIKOKUHYOUCSV, OnFileExportJikokuhyoucsv)
 	ON_UPDATE_COMMAND_UI(ID_INDICATOR_PasteZoubun, OnUpdateINDICATOR_PasteZoubun)
+	ON_UPDATE_COMMAND_UI(ID_INDICATOR_StdOpeTime, OnUpdateINDICATOR_StdOpeTime)
 
 	ON_COMMAND(ID_Jikokuhyou_EkijikokuDecNoMove, &CWndJikokuhyou::OnJikokuhyouEkijikokudecnomove)
 	ON_UPDATE_COMMAND_UI(ID_Jikokuhyou_EkijikokuDecNoMove, &CWndJikokuhyou::OnUpdateJikokuhyouEkijikokudecnomove)
@@ -2758,6 +2836,13 @@ void CWndJikokuhyou::OnChar(UINT nChar, UINT nRepCnt, UINT nFlags)
 	
 	
 }
+//void CWndJikokuhyou::OnMouseMove(UINT nFlags, CPoint point)
+//{
+//	m_StateMachine.getCurrentState()->
+//		OnMouseMove( nFlags, point);
+//
+//
+//}
 
 void CWndJikokuhyou::OnLButtonDblClk(UINT nFlags, CPoint point) 
 {
@@ -3126,6 +3211,13 @@ void CWndJikokuhyou::OnUpdateINDICATOR_PasteZoubun(CCmdUI *pCmdUI)
 {
 	pCmdUI->Enable(); 
 	pCmdUI->SetText( OnUpdateINDICATOR_PasteZoubun_Process() ) ;
+}
+
+
+void CWndJikokuhyou::OnUpdateINDICATOR_StdOpeTime(CCmdUI* pCmdUI)
+{
+	pCmdUI->Enable();
+	pCmdUI->SetText(OnUpdateINDICATOR_StdOpeTime_Process());
 }
 
 

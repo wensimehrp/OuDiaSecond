@@ -1,5 +1,87 @@
 OuDiaSecondで作者(diagram_mania)が追加・変更したソースコードの箇所を明記しておきます
-Ver.2.06.19
+Ver2.06.22
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWndJikokuhyou.cpp
+	ステータスバーへの基準運転時分との差分表示を追加。
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWjkState.cpp
+	StdOpeTimeFuncを外から呼び出せるように変更
+	
+DiagramEdit\CMainFrame.cpp
+	ステータスバーへの基準運転時分との差分表示を追加。
+	
+DiagramEdit\ViewRessyasyubetsu\CWndDcdGridRessyasyubetsu.cpp
+	新規種別位置(最下段)の判定が誤っていたのを修正。
+	
+DiagramEdit\ViewEki\CPropEditUi_Eki.h
+	UiDataのうち、2.06.21で追加した変数の初期化忘れを修正
+	新規追加の時に、カスタマイズ時刻表の上り発時刻の表示有無を読み込むように変更
+DiagramEdit\ViewEki\CWndDcdGridEki.cpp
+	駅番号のずれを修正
+	駅の編集を行ったときの、要素の減少・増加位置の誤りを修正
+	新規追加かつ最上部の場合、カスタマイズ時刻表の上り発時刻欄の初期値を非表示に変更
+	
+	
+Ver2.06.21
+DiagramEdit\entDed\CconvCentDed.h
+	入線時刻欄及び前列車情報欄の設定を追加
+	
+DiagramEdit\entDed\CentDedEki.h
+	入線時刻欄及び前列車情報欄の設定を追加
+DiagramEdit\entDed\CentDedEkiCont.cpp
+	入線時刻欄及び前列車情報欄の設定を追加
+	カスタマイズ時刻表での着・発時刻・種別変更表示の条件を変更
+DiagramEdit\entDed\CentDedRosen.cpp
+	invert(駅の反転)を、入線時刻欄及び前列車情報欄の設定に対応
+DiagramEdit\entDed\CentDedDia.h
+	CustomizeJikokuhyouContentに、前列車と次列車プロパティを追加
+DiagramEdit\entDed\CDedOperationConnecter.cpp
+	OuterDisplayContentにeEBeforeAfterTypeとiJunctionEkiOrderを追加
+	CustomizeJikokuhyouContentの要素追加に対応(前後列車の情報や接続タイプなど)
+	
+	
+DiagramEdit\ViewEki\CPropEditUi_Eki.cpp
+	カスタマイズ時刻表での入線時刻欄及び前列車情報欄の設定を追加
+	カスタマイズ時刻表での着・発時刻・種別変更表示の条件を変更
+DiagramEdit\ViewEki\CDlgEkiProp.cpp
+	カスタマイズ時刻表での入線時刻欄及び前列車情報欄の設定を追加
+DiagramEdit\ViewEki\CWndDcdGridEki.cpp
+	ヘッダーを二行に変更
+	表示変更モードを入線時刻欄と前列車情報欄に対応、既存項目の並び順も整理
+DiagramEdit\ViewEki\EkiColSpec\CdEkiYColSpec.h
+	ColumnType_Head2を追加
+DiagramEdit\ViewEki\EkiColSpec\CdEkiYColSpecCont.cpp
+	ColumnType_Head2追加に対応
+DiagramEdit\ViewEki\EkiColSpec\CdEkiXColSpec.h
+	入線時刻及び前列車情報表示欄を追加
+DiagramEdit\ViewEki\EkiColSpec\CdEkiXColSpecCont.cpp
+	入線時刻及び前列車情報表示欄を追加
+	
+DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CCellBuilderCustomize.cpp
+	路線外始発相当・終着相当表示時の描写を変更
+	前の列車情報欄、入線時刻欄を追加
+	種別変更/次列車情報欄の描写内容を見直し
+DiagramEdit\ViewJikokuhyou\JikokuhyouColSpec\CdYColSpec.h
+	カスタマイズ時刻表での入線時刻欄及び前列車情報欄を追加
+DiagramEdit\ViewJikokuhyou\JikokuhyouColSpec\CdYColSpecCont.cpp
+	カスタマイズ時刻表での入線時刻欄及び前列車情報欄を追加
+	
+DiagramEdit\ConvJikokuhyouCsv\CconvJikokuhyouCustomizeCsv.cpp
+	前の列車情報欄、入線時刻欄を追加
+	
+DiagramEdit\DedRosenFileData\CconvCDedRosenFileData.cpp
+	FileTypeをアップデート
+	
+
+Ver2.06.20
+DiagramEdit\ViewCrossingCheck\CWndDcdGridCrossingCheck.cpp
+	停車で発時刻もしくは着時刻のみの場合の処理が誤っていたのを修正
+	
+DiagramEdit\DiagramEdit\entDed\CentDedDia.cpp
+	コンストラクタに、パターンダイヤプレビューの設定値を追加
+	
+DiagramEdit\DiagramEdit\ViewRosen\CDlgDiaList.cpp
+	ダイヤの新規作成、複製時にパターンダイヤプレビューの設定が反映されない問題を修正。
+
+Ver2.06.19
 DiagramEdit\entDed\CDedOperationConnecter.cpp
 	completeCustomizeJikokuhyouContentで、分割・併合列車を路線外状に表示するときの不具合を修正
 DiagramEdit\entDed\CentDedRessya.cpp
@@ -14,7 +96,7 @@ DiagramEdit\ViewAllOperationTable2\CDcdAllOperationTable2.cpp
 	縦方向の線が正しく描写されていなかった問題を修正
 
 
-Ver.2.06.18
+Ver2.06.18
 DiagramEdit\DedRosenFileData\CconvCDedRosenFileData.cpp
 	FileTypeを更新
 DiagramEdit\DedRosenFileData\EditCmd\CRfEditCmd_DiaProp.cpp
@@ -94,7 +176,7 @@ DiagramEdit\CDiagramEditDoc.cpp
 DiagramEdit\ConvJikokuhyouCsv\CconvJikokuhyouCustomizeCsv.cpp
 	パターンダイヤプレビュー機能に対応
 	
-Ver.2.06.17
+Ver2.06.17
 DiagramEdit\DedRosenFileData\CconvCDedRosenFileDataDigital.cpp
 	特殊処理(設備欄)を追加、IGRいわて銀河鉄道・青い森鉄道の設備欄の特殊処理も左に統合。
 	
@@ -102,7 +184,7 @@ Ver.2.06.16
 DiagramEdit\DedRosenFileData\CconvCDedRosenFileDataDigital.cpp
 	特殊処理(上越・北陸新幹線)を追加
 	
-Ver.2.06.15
+Ver2.06.15
 DiagramEdit\entDed\CentDedRosen.cpp
 	invertに交差支障チェックの修正機能を追加。
 	隠し種別機能を無効する設定を追加

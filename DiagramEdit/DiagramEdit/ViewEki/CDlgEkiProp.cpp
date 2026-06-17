@@ -1,5 +1,5 @@
 /*
-	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+	OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -643,6 +643,89 @@ namespace ViewEki {
 			}
 			pButton->SetCheck(nCheck);
 		}
+
+		//下りカスタマイズ時刻表ビュー入線時刻表示
+		{
+			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouNyuusenJikokuDisplayKudari);
+			int nCheck =
+				pUiData->bJikokuhyouNyuusenJikokuDisplayKudari ? BST_CHECKED : BST_UNCHECKED;
+			pButton->SetCheck(nCheck);
+			pButton->EnableWindow(pUiData->bJikokuhyouNyuusenJikokuDisplayKudariEnable);
+		}
+
+		//上りカスタマイズ時刻表ビュー入線時刻表示
+		{
+			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouNyuusenJikokuDisplayNobori);
+			int nCheck =
+				pUiData->bJikokuhyouNyuusenJikokuDisplayNobori ? BST_CHECKED : BST_UNCHECKED;
+			pButton->SetCheck(nCheck);
+			pButton->EnableWindow(pUiData->bJikokuhyouNyuusenJikokuDisplayNoboriEnable);
+		}
+
+		//下りカスタマイズ時刻表ビュー前列車列車番号表示
+		{
+			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouPrevRessyabangouDisplayKudari);
+			pComboBox->SetCurSel(pUiData->iJikokuhyouPrevRessyabangouDisplayKudari);
+			pComboBox->EnableWindow(pUiData->bJikokuhyouPrevSyubetsuChangeDisplayKudariEnable);
+		}
+
+		//上りカスタマイズ時刻表ビュー前列車列車番号表示
+		{
+			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouPrevRessyabangouDisplayNobori);
+			pComboBox->SetCurSel(pUiData->iJikokuhyouPrevRessyabangouDisplayNobori);
+			pComboBox->EnableWindow(pUiData->bJikokuhyouPrevSyubetsuChangeDisplayNoboriEnable);
+		}
+
+		//下りカスタマイズ時刻表ビュー前列車運用番号表示
+		{
+			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouPrevOperationNumberDisplayKudari);
+			pComboBox->SetCurSel(pUiData->iJikokuhyouPrevOperationNumberDisplayKudari);
+			pComboBox->EnableWindow(pUiData->bJikokuhyouPrevSyubetsuChangeDisplayKudariEnable);
+
+			CComboBox* pComboBox2 = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouPrevOperationNumberDisplayRowsKudari);
+			pComboBox2->SetCurSel(pUiData->iJikokuhyouPrevOperationNumberDisplayRowsKudari);
+			pComboBox2->EnableWindow(pUiData->bJikokuhyouPrevSyubetsuChangeDisplayKudariEnable);
+		}
+
+		//上りカスタマイズ時刻表ビュー前列車運用番号表示
+		{
+			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouPrevOperationNumberDisplayNobori);
+			pComboBox->SetCurSel(pUiData->iJikokuhyouPrevOperationNumberDisplayNobori);
+			pComboBox->EnableWindow(pUiData->bJikokuhyouPrevSyubetsuChangeDisplayNoboriEnable);
+
+			CComboBox* pComboBox2 = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouPrevOperationNumberDisplayRowsNobori);
+			pComboBox2->SetCurSel(pUiData->iJikokuhyouPrevOperationNumberDisplayRowsNobori);
+			pComboBox2->EnableWindow(pUiData->bJikokuhyouPrevSyubetsuChangeDisplayNoboriEnable);
+		}
+
+		//下りカスタマイズ時刻表ビュー前列車列車種別表示
+		{
+			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouPrevRessyaSyubetsuDisplayKudari);
+			pComboBox->SetCurSel(pUiData->iJikokuhyouPrevRessyaSyubetsuDisplayKudari);
+			pComboBox->EnableWindow(pUiData->bJikokuhyouPrevSyubetsuChangeDisplayKudariEnable);
+		}
+
+		//上りカスタマイズ時刻表ビュー前列車列車種別表示
+		{
+			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouPrevRessyaSyubetsuDisplayNobori);
+			pComboBox->SetCurSel(pUiData->iJikokuhyouPrevRessyaSyubetsuDisplayNobori);
+			pComboBox->EnableWindow(pUiData->bJikokuhyouPrevSyubetsuChangeDisplayNoboriEnable);
+		}
+
+		//下りカスタマイズ時刻表ビュー前列車列車名表示
+		{
+			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouPrevRessyameiDisplayKudari);
+			pComboBox->SetCurSel(pUiData->iJikokuhyouPrevRessyameiDisplayKudari);
+			pComboBox->EnableWindow(pUiData->bJikokuhyouPrevSyubetsuChangeDisplayKudariEnable);
+		}
+
+		//上りカスタマイズ時刻表ビュー前列車列車名表示
+		{
+			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouPrevRessyameiDisplayNobori);
+			pComboBox->SetCurSel(pUiData->iJikokuhyouPrevRessyameiDisplayNobori);
+			pComboBox->EnableWindow(pUiData->bJikokuhyouPrevSyubetsuChangeDisplayNoboriEnable);
+		}
+
 	}
 
 	void CDlgEkiProp::CPropEditUiInternal::UiDataFromUi(UIDATA* pUiData)
@@ -1041,7 +1124,7 @@ namespace ViewEki {
 			pUiData->bJikokuhyouHatsuJikokuDisplayNobori = pButton->GetCheck() == BST_CHECKED;
 		}
 
-		//下り時刻表ビュー列車番号表示
+		//下りカスタマイズ時刻表ビュー列車番号表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyabangouDisplayKudari);
 			int iSel = pComboBox->GetCurSel();
@@ -1050,7 +1133,7 @@ namespace ViewEki {
 				pUiData->iJikokuhyouRessyabangouDisplayKudari = iSel;
 			}
 		}
-		//上り時刻表ビュー列車番号表示
+		//上りカスタマイズ時刻表ビュー列車番号表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyabangouDisplayNobori);
 			int iSel = pComboBox->GetCurSel();
@@ -1060,7 +1143,7 @@ namespace ViewEki {
 			}
 		}
 
-		//下り時刻表ビュー運用番号表示
+		//下りカスタマイズ時刻表ビュー運用番号表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouOperationNumberDisplayKudari);
 			int iSel = pComboBox->GetCurSel();
@@ -1076,7 +1159,7 @@ namespace ViewEki {
 				pUiData->iJikokuhyouOperationNumberDisplayRowsKudari = iSel2;
 			}
 		}
-		//上り時刻表ビュー運用番号表示
+		//上りカスタマイズ時刻表ビュー運用番号表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouOperationNumberDisplayNobori);
 			int iSel = pComboBox->GetCurSel();
@@ -1093,7 +1176,7 @@ namespace ViewEki {
 			}
 		}
 
-		//下り時刻表ビュー列車種別表示
+		//下りカスタマイズ時刻表ビュー列車種別表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyaSyubetsuDisplayKudari);
 			int iSel = pComboBox->GetCurSel();
@@ -1102,7 +1185,7 @@ namespace ViewEki {
 				pUiData->iJikokuhyouRessyaSyubetsuDisplayKudari = iSel;
 			}
 		}
-		//上り時刻表ビュー列車種別表示
+		//上りカスタマイズ時刻表ビュー列車種別表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyaSyubetsuDisplayNobori);
 			int iSel = pComboBox->GetCurSel();
@@ -1112,7 +1195,7 @@ namespace ViewEki {
 			}
 		}
 
-		//下り時刻表ビュー列車名・号数表示
+		//下りカスタマイズ時刻表ビュー列車名・号数表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyameiDisplayKudari);
 			int iSel = pComboBox->GetCurSel();
@@ -1121,7 +1204,7 @@ namespace ViewEki {
 				pUiData->iJikokuhyouRessyameiDisplayKudari = iSel;
 			}
 		}
-		//上り時刻表ビュー列車名・号数表示
+		//上りカスタマイズ時刻表ビュー列車名・号数表示
 		{
 			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyameiDisplayNobori);
 			int iSel = pComboBox->GetCurSel();
@@ -1188,6 +1271,108 @@ namespace ViewEki {
 			//{
 			//	pUiData->iOperationTableDisplayJikoku = false;
 			//}
+		}
+
+		//下りカスタマイズ時刻表ビュー入線時刻表示
+		{
+			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouNyuusenJikokuDisplayKudari);
+			pUiData->bJikokuhyouNyuusenJikokuDisplayKudari = pButton->GetCheck() == BST_CHECKED;
+		}
+
+		//上りカスタマイズ時刻表ビュー入線時刻表示
+		{
+			CButton* pButton = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouNyuusenJikokuDisplayNobori);
+			pUiData->bJikokuhyouNyuusenJikokuDisplayNobori = pButton->GetCheck() == BST_CHECKED;
+		}
+
+		//下りカスタマイズ時刻表ビュー前列車列車番号表示
+		{
+			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouPrevRessyabangouDisplayKudari);
+			int iSel = pComboBox->GetCurSel();
+			if (iSel != CB_ERR)
+			{
+				pUiData->iJikokuhyouPrevRessyabangouDisplayKudari = iSel;
+			}
+		}
+		//上りカスタマイズ時刻表ビュー前列車列車番号表示
+		{
+			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouPrevRessyabangouDisplayNobori);
+			int iSel = pComboBox->GetCurSel();
+			if (iSel != CB_ERR)
+			{
+				pUiData->iJikokuhyouPrevRessyabangouDisplayNobori = iSel;
+			}
+		}
+
+		//下りカスタマイズ時刻表ビュー前列車運用番号表示
+		{
+			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouPrevOperationNumberDisplayKudari);
+			int iSel = pComboBox->GetCurSel();
+			if (iSel != CB_ERR)
+			{
+				pUiData->iJikokuhyouPrevOperationNumberDisplayKudari = iSel;
+			}
+
+			CComboBox* pComboBox2 = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouPrevOperationNumberDisplayRowsKudari);
+			int iSel2 = pComboBox2->GetCurSel();
+			if (iSel2 != CB_ERR)
+			{
+				pUiData->iJikokuhyouPrevOperationNumberDisplayRowsKudari = iSel2;
+			}
+		}
+		//上りカスタマイズ時刻表ビュー前列車運用番号表示
+		{
+			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouPrevOperationNumberDisplayNobori);
+			int iSel = pComboBox->GetCurSel();
+			if (iSel != CB_ERR)
+			{
+				pUiData->iJikokuhyouPrevOperationNumberDisplayNobori = iSel;
+			}
+
+			CComboBox* pComboBox2 = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouPrevOperationNumberDisplayRowsNobori);
+			int iSel2 = pComboBox2->GetCurSel();
+			if (iSel2 != CB_ERR)
+			{
+				pUiData->iJikokuhyouPrevOperationNumberDisplayRowsNobori = iSel2;
+			}
+		}
+
+		//下りカスタマイズ時刻表ビュー前列車列車種別表示
+		{
+			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouPrevRessyaSyubetsuDisplayKudari);
+			int iSel = pComboBox->GetCurSel();
+			if (iSel != CB_ERR)
+			{
+				pUiData->iJikokuhyouPrevRessyaSyubetsuDisplayKudari = iSel;
+			}
+		}
+		//上りカスタマイズ時刻表ビュー前列車列車種別表示
+		{
+			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouPrevRessyaSyubetsuDisplayNobori);
+			int iSel = pComboBox->GetCurSel();
+			if (iSel != CB_ERR)
+			{
+				pUiData->iJikokuhyouPrevRessyaSyubetsuDisplayNobori = iSel;
+			}
+		}
+
+		//下りカスタマイズ時刻表ビュー前列車列車名・号数表示
+		{
+			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouPrevRessyameiDisplayKudari);
+			int iSel = pComboBox->GetCurSel();
+			if (iSel != CB_ERR)
+			{
+				pUiData->iJikokuhyouPrevRessyameiDisplayKudari = iSel;
+			}
+		}
+		//上りカスタマイズ時刻表ビュー前列車列車名・号数表示
+		{
+			CComboBox* pComboBox = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouPrevRessyameiDisplayNobori);
+			int iSel = pComboBox->GetCurSel();
+			if (iSel != CB_ERR)
+			{
+				pUiData->iJikokuhyouPrevRessyameiDisplayNobori = iSel;
+			}
 		}
 	}
 
@@ -1396,14 +1581,14 @@ namespace ViewEki {
 			}
 		}
 
-		//下り時刻表ビュー着時刻表示
+		//下りカスタマイズ時刻表ビュー着時刻表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, bJikokuhyouChakuJikokuDisplayKudari))
 			{
 				pControl = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouChakuJikokuDisplayKudari);
 			}
 		}
-		//上り時刻表ビュー着時刻表示
+		//上りカスタマイズ時刻表ビュー着時刻表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, bJikokuhyouChakuJikokuDisplayNobori))
 			{
@@ -1411,70 +1596,70 @@ namespace ViewEki {
 			}
 		}
 
-		//下り時刻表ビュー発時刻表示
+		//下りカスタマイズ時刻表ビュー発時刻表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, bJikokuhyouHatsuJikokuDisplayKudari))
 			{
 				pControl = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouHatsuJikokuDisplayKudari);
 			}
 		}
-		//上り時刻表ビュー発時刻表示
+		//上りカスタマイズ時刻表ビュー発時刻表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, bJikokuhyouHatsuJikokuDisplayNobori))
 			{
 				pControl = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouHatsuJikokuDisplayNobori);
 			}
 		}
-		//下り時刻表ビュー列車番号表示
+		//下りカスタマイズ時刻表ビュー列車番号表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouRessyabangouDisplayKudari))
 			{
 				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyabangouDisplayKudari);
 			}
 		}
-		//上り時刻表ビュー列車番号表示
+		//上りカスタマイズ時刻表ビュー列車番号表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouRessyabangouDisplayNobori))
 			{
 				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyabangouDisplayNobori);
 			}
 		}
-		//下り時刻表ビュー列車番号表示
+		//下りカスタマイズ時刻表ビュー運用番号表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouOperationNumberDisplayKudari))
 			{
 				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouOperationNumberDisplayKudari);
 			}
 		}
-		//上り時刻表ビュー列車番号表示
+		//上りカスタマイズ時刻表ビュー運用番号表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouOperationNumberDisplayNobori))
 			{
 				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouOperationNumberDisplayNobori);
 			}
 		}
-		//下り時刻表ビュー列車番号表示
+		//下りカスタマイズ時刻表ビュー列車種別表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouRessyaSyubetsuDisplayKudari))
 			{
 				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyaSyubetsuDisplayKudari);
 			}
 		}
-		//上り時刻表ビュー列車番号表示
+		//上りカスタマイズ時刻表ビュー列車種別表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouRessyaSyubetsuDisplayNobori))
 			{
 				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyaSyubetsuDisplayNobori);
 			}
 		}
-		//下り時刻表ビュー列車番号表示
+		//下りカスタマイズ時刻表ビュー列車名表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouRessyameiDisplayKudari))
 			{
 				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyameiDisplayKudari);
 			}
 		}
-		//上り時刻表ビュー列車番号表示
+		//上りカスタマイズ時刻表ビュー列車名表示
 		{
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouRessyameiDisplayNobori))
 			{
@@ -1514,6 +1699,77 @@ namespace ViewEki {
 			if (iOffsetofUiDataMember == offsetof(UIDATA, iDiagramColorNextEki))
 			{
 				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_DiagramColorNextEki);
+			}
+		}
+
+		//下りカスタマイズ時刻表ビュー入線時刻表示
+		{
+			if (iOffsetofUiDataMember == offsetof(UIDATA, bJikokuhyouNyuusenJikokuDisplayKudari))
+			{
+				pControl = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouNyuusenJikokuDisplayKudari);
+			}
+		}
+		//上りカスタマイズ時刻表ビュー入線時刻表示
+		{
+			if (iOffsetofUiDataMember == offsetof(UIDATA, bJikokuhyouNyuusenJikokuDisplayNobori))
+			{
+				pControl = (CButton*)pOuter->GetDlgItem(IDC_CHECK_JikokuhyouNyuusenJikokuDisplayNobori);
+			}
+		}
+		//下りカスタマイズ時刻表ビュー列車番号表示
+		{
+			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouRessyabangouDisplayKudari))
+			{
+				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyabangouDisplayKudari);
+			}
+		}
+		//上りカスタマイズ時刻表ビュー列車番号表示
+		{
+			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouRessyabangouDisplayNobori))
+			{
+				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyabangouDisplayNobori);
+			}
+		}
+		//下りカスタマイズ時刻表ビュー運用番号表示
+		{
+			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouOperationNumberDisplayKudari))
+			{
+				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouOperationNumberDisplayKudari);
+			}
+		}
+		//上りカスタマイズ時刻表ビュー運用番号表示
+		{
+			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouOperationNumberDisplayNobori))
+			{
+				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouOperationNumberDisplayNobori);
+			}
+		}
+		//下りカスタマイズ時刻表ビュー列車種別表示
+		{
+			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouRessyaSyubetsuDisplayKudari))
+			{
+				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyaSyubetsuDisplayKudari);
+			}
+		}
+		//上りカスタマイズ時刻表ビュー列車種別表示
+		{
+			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouRessyaSyubetsuDisplayNobori))
+			{
+				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyaSyubetsuDisplayNobori);
+			}
+		}
+		//下りカスタマイズ時刻表ビュー列車名表示
+		{
+			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouRessyameiDisplayKudari))
+			{
+				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyameiDisplayKudari);
+			}
+		}
+		//上りカスタマイズ時刻表ビュー列車名表示
+		{
+			if (iOffsetofUiDataMember == offsetof(UIDATA, iJikokuhyouRessyameiDisplayNobori))
+			{
+				pControl = (CComboBox*)pOuter->GetDlgItem(IDC_COMBO_JikokuhyouRessyameiDisplayNobori);
 			}
 		}
 		// --------------------------------
@@ -1677,6 +1933,18 @@ namespace ViewEki {
 		ON_BN_CLICKED(IDC_CHECK_JikokuhyouOuterShuchakuDisplayNobori, &CDlgEkiProp::OnBnClickedCheckJikokuhyououtershuchakudisplaynobori)
 		ON_CBN_SELCHANGE(IDC_COMBO_DiagramColorNextEki, &CDlgEkiProp::OnCbnSelchangeComboDiagramColorNextEki)
 		ON_BN_CLICKED(IDC_CHECK_OperationTableDisplayJikoku, &CDlgEkiProp::OnBnClickedCheckOperationTableDisplayJikoku)
+		ON_BN_CLICKED(IDC_CHECK_JikokuhyouNyuusenJikokuDisplayKudari, &CDlgEkiProp::OnBnClickedCheckJikokuhyounyuusenjikokudisplaykudari)
+		ON_BN_CLICKED(IDC_CHECK_JikokuhyouNyuusenJikokuDisplayNobori, &CDlgEkiProp::OnBnClickedCheckJikokuhyounyuusenjikokudisplaynobori)
+		ON_CBN_SELCHANGE(IDC_COMBO_JikokuhyouPrevRessyabangouDisplayKudari, &CDlgEkiProp::OnCbnSelchangeComboJikokuhyouprevressyabangoudisplaykudari)
+		ON_CBN_SELCHANGE(IDC_COMBO_JikokuhyouPrevRessyabangouDisplayNobori, &CDlgEkiProp::OnCbnSelchangeComboJikokuhyouprevressyabangoudisplaynobori)
+		ON_CBN_SELCHANGE(IDC_COMBO_JikokuhyouPrevOperationNumberDisplayKudari, &CDlgEkiProp::OnCbnSelchangeComboJikokuhyouprevoperationnumberdisplaykudari)
+		ON_CBN_SELCHANGE(IDC_COMBO_JikokuhyouPrevOperationNumberDisplayNobori, &CDlgEkiProp::OnCbnSelchangeComboJikokuhyouprevoperationnumberdisplaynobori)
+		ON_CBN_SELCHANGE(IDC_COMBO_JikokuhyouPrevOperationNumberDisplayRowsKudari, &CDlgEkiProp::OnCbnSelchangeComboJikokuhyouprevoperationnumberdisplayrowskudari)
+		ON_CBN_SELCHANGE(IDC_COMBO_JikokuhyouPrevOperationNumberDisplayRowsNobori, &CDlgEkiProp::OnCbnSelchangeComboJikokuhyouprevoperationnumberdisplayrowsnobori)
+		ON_CBN_SELCHANGE(IDC_COMBO_JikokuhyouPrevRessyaSyubetsuDisplayKudari, &CDlgEkiProp::OnCbnSelchangeComboJikokuhyouprevressyasyubetsudisplaykudari)
+		ON_CBN_SELCHANGE(IDC_COMBO_JikokuhyouPrevRessyaSyubetsuDisplayNobori, &CDlgEkiProp::OnCbnSelchangeComboJikokuhyouprevressyasyubetsudisplaynobori)
+		ON_CBN_SELCHANGE(IDC_COMBO_JikokuhyouPrevRessyameiDisplayKudari, &CDlgEkiProp::OnCbnSelchangeComboJikokuhyouprevressyameidisplaykudari)
+		ON_CBN_SELCHANGE(IDC_COMBO_JikokuhyouPrevRessyameiDisplayNobori, &CDlgEkiProp::OnCbnSelchangeComboJikokuhyouprevressyameidisplaynobori)
 	END_MESSAGE_MAP()
 
 	/////////////////////////////////////////////////////////////////////////////
@@ -2115,6 +2383,82 @@ namespace ViewEki {
 			pCComboBox->AddString(strTemp.c_str());
 			strTemp = _T("個別色4");
 			pCComboBox->AddString(strTemp.c_str());
+
+		}
+
+		// コンボボックス
+		{
+			CComboBox* pCComboBox = (CComboBox*)GetDlgItem(IDC_COMBO_JikokuhyouPrevRessyabangouDisplayKudari);
+			CComboBox* pCComboBox2 = (CComboBox*)GetDlgItem(IDC_COMBO_JikokuhyouPrevRessyabangouDisplayNobori);
+			CComboBox* pCComboBox3 = (CComboBox*)GetDlgItem(IDC_COMBO_JikokuhyouPrevOperationNumberDisplayKudari);
+			CComboBox* pCComboBox4 = (CComboBox*)GetDlgItem(IDC_COMBO_JikokuhyouPrevOperationNumberDisplayNobori);
+			CComboBox* pCComboBox5 = (CComboBox*)GetDlgItem(IDC_COMBO_JikokuhyouPrevRessyaSyubetsuDisplayKudari);
+			CComboBox* pCComboBox6 = (CComboBox*)GetDlgItem(IDC_COMBO_JikokuhyouPrevRessyaSyubetsuDisplayNobori);
+			CComboBox* pCComboBox7 = (CComboBox*)GetDlgItem(IDC_COMBO_JikokuhyouPrevRessyameiDisplayKudari);
+			CComboBox* pCComboBox8 = (CComboBox*)GetDlgItem(IDC_COMBO_JikokuhyouPrevRessyameiDisplayNobori);
+
+			tstring strTemp = _T("表示しない");//全種
+			pCComboBox->AddString(strTemp.c_str());
+			pCComboBox2->AddString(strTemp.c_str());
+			pCComboBox3->AddString(strTemp.c_str());
+			pCComboBox4->AddString(strTemp.c_str());
+			pCComboBox5->AddString(strTemp.c_str());
+			pCComboBox6->AddString(strTemp.c_str());
+			pCComboBox7->AddString(strTemp.c_str());
+			pCComboBox8->AddString(strTemp.c_str());
+			strTemp = _T("運用番号が変わる列車のみ");//運用番号
+			pCComboBox3->AddString(strTemp.c_str());
+			pCComboBox4->AddString(strTemp.c_str());
+			strTemp = _T("種別変更列車のみ");//全種
+			pCComboBox->AddString(strTemp.c_str());
+			pCComboBox2->AddString(strTemp.c_str());
+			pCComboBox3->AddString(strTemp.c_str());
+			pCComboBox4->AddString(strTemp.c_str());
+			pCComboBox5->AddString(strTemp.c_str());
+			pCComboBox6->AddString(strTemp.c_str());
+			pCComboBox7->AddString(strTemp.c_str());
+			pCComboBox8->AddString(strTemp.c_str());
+			strTemp = _T("種別・列車情報変更列車のみ");//全種
+			pCComboBox->AddString(strTemp.c_str());
+			pCComboBox2->AddString(strTemp.c_str());
+			pCComboBox3->AddString(strTemp.c_str());
+			pCComboBox4->AddString(strTemp.c_str());
+			pCComboBox5->AddString(strTemp.c_str());
+			pCComboBox6->AddString(strTemp.c_str());
+			pCComboBox7->AddString(strTemp.c_str());
+			pCComboBox8->AddString(strTemp.c_str());
+			strTemp = _T("全列車表示");//全種
+			pCComboBox->AddString(strTemp.c_str());
+			pCComboBox2->AddString(strTemp.c_str());
+			pCComboBox3->AddString(strTemp.c_str());
+			pCComboBox4->AddString(strTemp.c_str());
+			pCComboBox5->AddString(strTemp.c_str());
+			pCComboBox6->AddString(strTemp.c_str());
+			pCComboBox7->AddString(strTemp.c_str());
+			pCComboBox8->AddString(strTemp.c_str());
+
+		}
+
+		// コンボボックス
+		{
+			CComboBox* pCComboBox = (CComboBox*)GetDlgItem(IDC_COMBO_JikokuhyouPrevOperationNumberDisplayRowsKudari);
+			CComboBox* pCComboBox2 = (CComboBox*)GetDlgItem(IDC_COMBO_JikokuhyouPrevOperationNumberDisplayRowsNobori);
+
+			tstring strTemp = _T("1段");
+			pCComboBox->AddString(strTemp.c_str());
+			pCComboBox2->AddString(strTemp.c_str());
+			strTemp = _T("2段");
+			pCComboBox->AddString(strTemp.c_str());
+			pCComboBox2->AddString(strTemp.c_str());
+			strTemp = _T("3段");
+			pCComboBox->AddString(strTemp.c_str());
+			pCComboBox2->AddString(strTemp.c_str());
+			strTemp = _T("4段");
+			pCComboBox->AddString(strTemp.c_str());
+			pCComboBox2->AddString(strTemp.c_str());
+			strTemp = _T("5段");
+			pCComboBox->AddString(strTemp.c_str());
+			pCComboBox2->AddString(strTemp.c_str());
 
 		}
 		//	編集を開始
@@ -3465,5 +3809,66 @@ namespace ViewEki {
 	{
 		m_PropEditUiInternal.OnUiChanged();
 	}
+
+	void ViewEki::CDlgEkiProp::OnBnClickedCheckJikokuhyounyuusenjikokudisplaykudari()
+	{
+		m_PropEditUiInternal.OnUiChanged();
+	}
+
+	void ViewEki::CDlgEkiProp::OnBnClickedCheckJikokuhyounyuusenjikokudisplaynobori()
+	{
+		m_PropEditUiInternal.OnUiChanged();
+	}
+
+	void ViewEki::CDlgEkiProp::OnCbnSelchangeComboJikokuhyouprevressyabangoudisplaykudari()
+	{
+		m_PropEditUiInternal.OnUiChanged();
+	}
+
+	void ViewEki::CDlgEkiProp::OnCbnSelchangeComboJikokuhyouprevressyabangoudisplaynobori()
+	{
+		m_PropEditUiInternal.OnUiChanged();
+	}
+
+	void ViewEki::CDlgEkiProp::OnCbnSelchangeComboJikokuhyouprevoperationnumberdisplaykudari()
+	{
+		m_PropEditUiInternal.OnUiChanged();
+	}
+
+	void ViewEki::CDlgEkiProp::OnCbnSelchangeComboJikokuhyouprevoperationnumberdisplaynobori()
+	{
+		m_PropEditUiInternal.OnUiChanged();
+	}
+
+	void ViewEki::CDlgEkiProp::OnCbnSelchangeComboJikokuhyouprevoperationnumberdisplayrowskudari()
+	{
+		m_PropEditUiInternal.OnUiChanged();
+	}
+
+	void ViewEki::CDlgEkiProp::OnCbnSelchangeComboJikokuhyouprevoperationnumberdisplayrowsnobori()
+	{
+		m_PropEditUiInternal.OnUiChanged();
+	}
+
+	void ViewEki::CDlgEkiProp::OnCbnSelchangeComboJikokuhyouprevressyasyubetsudisplaykudari()
+	{
+		m_PropEditUiInternal.OnUiChanged();
+	}
+
+	void ViewEki::CDlgEkiProp::OnCbnSelchangeComboJikokuhyouprevressyasyubetsudisplaynobori()
+	{
+		m_PropEditUiInternal.OnUiChanged();
+	}
+
+	void ViewEki::CDlgEkiProp::OnCbnSelchangeComboJikokuhyouprevressyameidisplaykudari()
+	{
+		m_PropEditUiInternal.OnUiChanged();
+	}
+
+	void ViewEki::CDlgEkiProp::OnCbnSelchangeComboJikokuhyouprevressyameidisplaynobori()
+	{
+		m_PropEditUiInternal.OnUiChanged();
+	}
+
 } //namespace ViewEki
 

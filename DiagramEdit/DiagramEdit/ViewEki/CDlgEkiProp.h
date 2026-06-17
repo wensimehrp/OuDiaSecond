@@ -1,5 +1,5 @@
 /*
-	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+	OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -469,6 +469,18 @@ public:
 	afx_msg void OnBnClickedCheckJikokuhyououtershuchakudisplaynobori();
 	afx_msg void OnCbnSelchangeComboDiagramColorNextEki();
 	afx_msg void OnBnClickedCheckOperationTableDisplayJikoku();
+	afx_msg void OnBnClickedCheckJikokuhyounyuusenjikokudisplaykudari();
+	afx_msg void OnBnClickedCheckJikokuhyounyuusenjikokudisplaynobori();
+	afx_msg void OnCbnSelchangeComboJikokuhyouprevressyabangoudisplaykudari();
+	afx_msg void OnCbnSelchangeComboJikokuhyouprevressyabangoudisplaynobori();
+	afx_msg void OnCbnSelchangeComboJikokuhyouprevoperationnumberdisplaykudari();
+	afx_msg void OnCbnSelchangeComboJikokuhyouprevoperationnumberdisplaynobori();
+	afx_msg void OnCbnSelchangeComboJikokuhyouprevoperationnumberdisplayrowskudari();
+	afx_msg void OnCbnSelchangeComboJikokuhyouprevoperationnumberdisplayrowsnobori();
+	afx_msg void OnCbnSelchangeComboJikokuhyouprevressyasyubetsudisplaykudari();
+	afx_msg void OnCbnSelchangeComboJikokuhyouprevressyasyubetsudisplaynobori();
+	afx_msg void OnCbnSelchangeComboJikokuhyouprevressyameidisplaykudari();
+	afx_msg void OnCbnSelchangeComboJikokuhyouprevressyameidisplaynobori();
 };
 
 //{{AFX_INSERT_LOCATION}}

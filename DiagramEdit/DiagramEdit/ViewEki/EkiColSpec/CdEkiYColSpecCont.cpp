@@ -1,5 +1,5 @@
 /*
-OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -77,7 +77,7 @@ Copyright (C) 2006-2017 take-okm
 namespace ViewEki{ namespace EkiColSpec{
 
 /// ヘッダ列の数
-const int HEADER_COUNT = 1 ;	
+const int HEADER_COUNT = 2 ;	
 
 	// ********************************
 	//	コンストラクタ
@@ -122,6 +122,11 @@ CdEkiYColSpec CdEkiYColSpecCont::ColumnNumberToSpec(
 	{
 		aSpec.set( CdEkiYColSpec::ColumnType_Head , -1 ) ;
 	}
+	//	ヘッダ2列
+	else if (iColumnNumber == 1)
+	{
+		aSpec.set(CdEkiYColSpec::ColumnType_Head2, -1);
+	}
 	//	駅列
 	else if ( HEADER_COUNT <= iColumnNumber && 
 		iColumnNumber < HEADER_COUNT + m_iEkiCount )
@@ -144,6 +149,11 @@ int CdEkiYColSpecCont::ColumnNumberFromSpec(
 	if ( aSpec.getColumnType() == CdEkiYColSpec::ColumnType_Head )
 	{
 		iColumnNumber = 0 ;
+	}
+	//	ヘッダ2列 
+	else if (aSpec.getColumnType() == CdEkiYColSpec::ColumnType_Head2)
+	{
+		iColumnNumber = 1;
 	}
 	//	駅列 
 	else if ( aSpec.getColumnType() == 

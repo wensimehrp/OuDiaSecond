@@ -1,5 +1,5 @@
 =================================================
-	OuDiaSecond ver 2.06.19 Source Code
+	OuDiaSecond ver 2.06.22 Source Code
 =================================================
 
 　このアーカイブは、OuDiaSecond のソースコードです。
@@ -7,7 +7,7 @@
 
 ＜1＞OuDiaSecondについて
 
-	Windows10 64bit機にして、制作・動作確認しています
+	Windows11 64bit機にして、制作・動作確認しています
 
 
 ＜2＞ビルド方法
@@ -19,7 +19,7 @@
 ＜3＞利用許諾告知
 
 /*
-OuDiaSecond Copyright (C) 2017-2024 diagram_mania
+OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。

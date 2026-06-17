@@ -1,5 +1,5 @@
 /*
-	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+	OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -500,7 +500,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 		tstring strEkimeiBefore = _T("");
 		//予めstrContEkimeiRevに下りの駅を逆順に入れておく。上りのチェック用
 		vector<tstring> strContEkimei;
-		for (int idx = 0; idx < contDigitalContent1.size(); idx++)
+		for (int idx = 0; idx < (int)contDigitalContent1.size(); idx++)
 		{
 			if (contDigitalContent1[idx].strTh1 == _T("列車番号"))
 			{
@@ -595,7 +595,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 		if (!contDigitalContent2.empty())
 		{
 			int iEkiIndexNobori = strContEkimei.size() - 1;
-			for (int idx = 0; idx < contDigitalContent2.size(); idx++)
+			for (int idx = 0; idx < (int)contDigitalContent2.size(); idx++)
 			{
 				if (contDigitalContent2[idx].strTh1 == _T("列車番号"))
 				{
@@ -756,7 +756,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 		{
 			CentDedEki aCentDedEki;
 
-			for (int idxk = 0; idxk < contDigitalContent1.size(); idxk++)
+			for (int idxk = 0; idxk < (int)contDigitalContent1.size(); idxk++)
 			{
 				if (contDigitalContent1[idxk].iEkiIndex == iEkiIndex &&
 					(contDigitalContent1[idxk].eTrType == ETrType::TrType_EkiChaku ||
@@ -774,7 +774,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 			int iKudariTrackRow = -1;
 			int iNoboriTrackRow = -1;
 
-			for (int idxk = 0; idxk < contDigitalContent1.size(); idxk++)
+			for (int idxk = 0; idxk < (int)contDigitalContent1.size(); idxk++)
 			{
 				if (contDigitalContent1[idxk].eTrType == ETrType::TrType_EkiChaku &&
 					contDigitalContent1[idxk].iEkiIndex == iEkiIndex)
@@ -793,7 +793,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 				}
 			}
 
-			for (int idxn = 0; idxn < contDigitalContent2.size(); idxn++)
+			for (int idxn = 0; idxn < (int)contDigitalContent2.size(); idxn++)
 			{
 				if (contDigitalContent2[idxn].eTrType == ETrType::TrType_EkiChaku &&
 					contDigitalContent2[idxn].iEkiIndex == iEkiIndex)
@@ -874,7 +874,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 				vector<int>contTrainCountNobori;
 				if (iKudariTrackRow >= 0)
 				{
-					for (int idxk = 0; idxk < contRessya1.size(); idxk++)
+					for (int idxk = 0; idxk < (int)contRessya1.size(); idxk++)
 					{
 						if (contRessya1[idxk][iKudariTrackRow].find('(') == tstring::npos)
 						{
@@ -883,7 +883,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 						bool bFound = false;
 						tstring TrackNameThis = contRessya1[idxk][iKudariTrackRow].substr(1, contRessya1[idxk][iKudariTrackRow].length() - 2);
 
-						for (int idxTN = 0; idxTN < contTrackName.size(); idxTN++)
+						for (int idxTN = 0; idxTN < (int)contTrackName.size(); idxTN++)
 						{
 							if (contTrackName[idxTN] == TrackNameThis)
 							{
@@ -904,7 +904,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 							contTrainCountKudari.push_back(1);
 						}
 					}
-					for (int idxk = 0; idxk < contRessya3.size(); idxk++)
+					for (int idxk = 0; idxk < (int)contRessya3.size(); idxk++)
 					{
 						if (contRessya3[idxk][iKudariTrackRow].find('(') == tstring::npos)
 						{
@@ -913,7 +913,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 						bool bFound = false;
 						tstring TrackNameThis = contRessya3[idxk][iKudariTrackRow].substr(1, contRessya3[idxk][iKudariTrackRow].length() - 2);
 
-						for (int idxTN = 0; idxTN < contTrackName.size(); idxTN++)
+						for (int idxTN = 0; idxTN < (int)contTrackName.size(); idxTN++)
 						{
 							if (contTrackName[idxTN] == TrackNameThis)
 							{
@@ -943,7 +943,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 
 				if (iNoboriTrackRow >= 0)
 				{
-					for (int idxn = 0; idxn < contRessya2.size(); idxn++)
+					for (int idxn = 0; idxn < (int)contRessya2.size(); idxn++)
 					{
 						if (contRessya2[idxn][iNoboriTrackRow].find('(') == tstring::npos)
 						{
@@ -952,7 +952,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 						bool bFound = false;
 						tstring TrackNameThis = contRessya2[idxn][iNoboriTrackRow].substr(1, contRessya2[idxn][iNoboriTrackRow].length() - 2);
 
-						for (int idxTN = 0; idxTN < contTrackName.size(); idxTN++)
+						for (int idxTN = 0; idxTN < (int)contTrackName.size(); idxTN++)
 						{
 							if (contTrackName[idxTN] == TrackNameThis)
 							{
@@ -974,7 +974,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 							contTrainCountNobori.push_back(1);
 						}
 					}
-					for (int idxn = 0; idxn < contRessya4.size(); idxn++)
+					for (int idxn = 0; idxn < (int)contRessya4.size(); idxn++)
 					{
 						if (contRessya4[idxn][iNoboriTrackRow].find('(') == tstring::npos)
 						{
@@ -983,7 +983,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 						bool bFound = false;
 						tstring TrackNameThis = contRessya4[idxn][iNoboriTrackRow].substr(1, contRessya4[idxn][iNoboriTrackRow].length() - 2);
 
-						for (int idxTN = 0; idxTN < contTrackName.size(); idxTN++)
+						for (int idxTN = 0; idxTN < (int)contTrackName.size(); idxTN++)
 						{
 							if (contTrackName[idxTN] == TrackNameThis)
 							{
@@ -1014,7 +1014,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 
 					int iMax = -1;
 
-					for (int idxk = 0; idxk < contTrainCountKudari.size(); idxk++)
+					for (int idxk = 0; idxk < (int)contTrainCountKudari.size(); idxk++)
 					{
 						if (contTrainCountKudari[idxk] > iMax)
 						{
@@ -1023,7 +1023,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 						}
 					}
 					iMax = -1;
-					for (int idxn = 0; idxn < contTrainCountNobori.size(); idxn++)
+					for (int idxn = 0; idxn < (int)contTrainCountNobori.size(); idxn++)
 					{
 						if (contTrainCountNobori[idxn] > iMax)
 						{
@@ -1035,7 +1035,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 					//駅に番線を設定する
 					CentDedEkiTrack2Cont* pCentDedEkiTrack2Cont = aCentDedEki.getEkiTrack2Cont();
 					pCentDedEkiTrack2Cont->erase(0, INT_MAX);
-					for (int idxTN = 0; idxTN < contTrackName.size(); idxTN++)
+					for (int idxTN = 0; idxTN < (int)contTrackName.size(); idxTN++)
 					{
 						CentDedEkiTrack2 aCentDedEkiTrack2(contTrackName[idxTN], contTrackName[idxTN],_T(""));
 						pCentDedEkiTrack2Cont->insert(aCentDedEkiTrack2);
@@ -1067,7 +1067,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 		int iKudariRessyameiRow = -1;
 		int iNoboriRessyameiRow = -1;
 
-		for (int idxk = 0; idxk < contDigitalContent1.size(); idxk++)
+		for (int idxk = 0; idxk < (int)contDigitalContent1.size(); idxk++)
 		{
 			if (contDigitalContent1[idxk].eTrType == ETrType::TrType_RessyaMei)
 			{
@@ -1075,7 +1075,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 			}
 		}
 
-		for (int idxn = 0; idxn < contDigitalContent2.size(); idxn++)
+		for (int idxn = 0; idxn < (int)contDigitalContent2.size(); idxn++)
 		{
 			if (contDigitalContent2[idxn].eTrType == ETrType::TrType_RessyaMei)
 			{
@@ -1085,7 +1085,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 
 		if (iKudariRessyameiRow >= 0)
 		{
-			for (int idxk = 0; idxk < contRessya1.size(); idxk++)
+			for (int idxk = 0; idxk < (int)contRessya1.size(); idxk++)
 			{
 				tstring strRessyasyubetsu = contRessya1[idxk][iKudariRessyameiRow];
 				//tstring::size_type pos = strRessyasyubetsu.find(' ');
@@ -1097,7 +1097,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 				//}
 
 				bool bFound = false;
-				for (int idxs = 0; idxs < contStrRessyasyubetsu.size(); idxs++)
+				for (int idxs = 0; idxs < (int)contStrRessyasyubetsu.size(); idxs++)
 				{
 					if (contStrRessyasyubetsu[idxs] == strRessyasyubetsu)
 					{
@@ -1110,7 +1110,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 					contStrRessyasyubetsu.push_back(strRessyasyubetsu);
 				}
 			}
-			for (int idxk = 0; idxk < contRessya3.size(); idxk++)
+			for (int idxk = 0; idxk < (int)contRessya3.size(); idxk++)
 			{
 				tstring strRessyasyubetsu = contRessya3[idxk][iKudariRessyameiRow];
 				//tstring::size_type pos = strRessyasyubetsu.find(' ');
@@ -1122,7 +1122,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 				//}
 
 				bool bFound = false;
-				for (int idxs = 0; idxs < contStrRessyasyubetsu.size(); idxs++)
+				for (int idxs = 0; idxs < (int)contStrRessyasyubetsu.size(); idxs++)
 				{
 					if (contStrRessyasyubetsu[idxs] == strRessyasyubetsu)
 					{
@@ -1139,7 +1139,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 
 		if (iNoboriRessyameiRow >= 0)
 		{
-			for (int idxn = 0; idxn < contRessya2.size(); idxn++)
+			for (int idxn = 0; idxn < (int)contRessya2.size(); idxn++)
 			{
 				tstring strRessyasyubetsu = contRessya2[idxn][iNoboriRessyameiRow];
 				//tstring::size_type pos = strRessyasyubetsu.find(' ');
@@ -1151,7 +1151,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 				//}
 
 				bool bFound = false;
-				for (int idxs = 0; idxs < contStrRessyasyubetsu.size(); idxs++)
+				for (int idxs = 0; idxs < (int)contStrRessyasyubetsu.size(); idxs++)
 				{
 					if (contStrRessyasyubetsu[idxs] == strRessyasyubetsu)
 					{
@@ -1164,7 +1164,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 					contStrRessyasyubetsu.push_back(strRessyasyubetsu);
 				}
 			}
-			for (int idxn = 0; idxn < contRessya4.size(); idxn++)
+			for (int idxn = 0; idxn < (int)contRessya4.size(); idxn++)
 			{
 				tstring strRessyasyubetsu = contRessya4[idxn][iNoboriRessyameiRow];
 				//tstring::size_type pos = strRessyasyubetsu.find(' ');
@@ -1176,7 +1176,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 				//}
 
 				bool bFound = false;
-				for (int idxs = 0; idxs < contStrRessyasyubetsu.size(); idxs++)
+				for (int idxs = 0; idxs < (int)contStrRessyasyubetsu.size(); idxs++)
 				{
 					if (contStrRessyasyubetsu[idxs] == strRessyasyubetsu)
 					{
@@ -1190,7 +1190,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 				}
 			}
 		}
-		for (int idxs = 0; idxs < contStrRessyasyubetsu.size(); idxs++)
+		for (int idxs = 0; idxs < (int)contStrRessyasyubetsu.size(); idxs++)
 		{
 			CentDedRessyasyubetsu aCentDedRessyasyubetsu;
 			aCentDedRessyasyubetsu.setSyubetsumei(contStrRessyasyubetsu[idxs]);
@@ -1236,7 +1236,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 		int iNoboriOuterShihatsuRow = -1;
 		int iNoboriOuterShuchakuRow = -1;
 
-		for (int idxo = 0; idxo < contDigitalContent1.size(); idxo++)
+		for (int idxo = 0; idxo < (int)contDigitalContent1.size(); idxo++)
 		{
 			if (contDigitalContent1[idxo].eTrType == ETrType::TrType_OuterShihatsu)
 			{
@@ -1247,7 +1247,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 				iKudariOuterShuchakuRow = idxo;
 			}
 		}
-		for (int idxo = 0; idxo < contDigitalContent2.size(); idxo++)
+		for (int idxo = 0; idxo < (int)contDigitalContent2.size(); idxo++)
 		{
 			if (contDigitalContent2[idxo].eTrType == ETrType::TrType_OuterShihatsu)
 			{
@@ -1286,13 +1286,13 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 
 
 
-		for (int idxk = 0; idxk < contRessya1.size(); idxk++)
+		for (int idxk = 0; idxk < (int)contRessya1.size(); idxk++)
 		{
 			//CentDedRessya	aCentDedRessya(aCentDedRessyaCont1Kudari.createNullRessya());
 			CentDedRessya	aCentDedRessya(pCentDedEkiCont->size(),ERessyahoukou::Ressyahoukou_Kudari);
 			bool bIsSyubetsuChange = false;
 
-			for (int idx = 0; idx < contDigitalContent1.size(); idx++)
+			for (int idx = 0; idx < (int)contDigitalContent1.size(); idx++)
 			{
 				if (contDigitalContent1[idx].eTrType == ETrType::TrType_RessyaBangou)
 				{
@@ -1548,7 +1548,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 					{
 						int iShihatsuEkiIndex = aCentDedRessya.EkiIndexOfEkiOrder(iShihatsuEkiOrder);
 						int iOuterIndex = -1;
-						for (int idxo = 0; idxo < strOuterEkimei[iShihatsuEkiIndex].size(); idxo++)
+						for (int idxo = 0; idxo < (int)strOuterEkimei[iShihatsuEkiIndex].size(); idxo++)
 						{
 							if (strOuterEkimei[iShihatsuEkiIndex][idxo] == strEkimei)
 							{
@@ -1614,7 +1614,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 					{
 						int iShuchakuEkiIndex = aCentDedRessya.EkiIndexOfEkiOrder(iShuchakuEkiOrder);
 						int iOuterIndex = -1;
-						for (int idxo = 0; idxo < strOuterEkimei[iShuchakuEkiIndex].size(); idxo++)
+						for (int idxo = 0; idxo < (int)strOuterEkimei[iShuchakuEkiIndex].size(); idxo++)
 						{
 							if (strOuterEkimei[iShuchakuEkiIndex][idxo] == strEkimei)
 							{
@@ -1654,7 +1654,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 			aCentDedRessyaCont1Kudari.insert(aCentDedRessya);
 
 			//一つ前の駅の駅時刻形式を着ありに変更させる
-			for (int idxe = 0; idxe < iEkiIndexAddChakuKudari.size(); idxe++)
+			for (int idxe = 0; idxe < (int)iEkiIndexAddChakuKudari.size(); idxe++)
 			{
 				if (iEkiIndexAddChakuKudari[idxe])
 				{
@@ -1683,13 +1683,13 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 		vector<bool> iEkiIndexAddChakuNobori;
 		iEkiIndexAddChakuNobori.assign(pCentDedEkiCont->size(), false);
 
-		for (int idxn = 0; idxn < contRessya2.size(); idxn++)
+		for (int idxn = 0; idxn < (int)contRessya2.size(); idxn++)
 		{
 			//CentDedRessya	aCentDedRessya(aCentDedRessyaCont1Kudari.createNullRessya());
 			CentDedRessya	aCentDedRessya(pCentDedEkiCont->size(), ERessyahoukou::Ressyahoukou_Nobori);
 			bool bIsSyubetsuChange = false;
 
-			for (int idx = 0; idx < contDigitalContent2.size(); idx++)
+			for (int idx = 0; idx < (int)contDigitalContent2.size(); idx++)
 			{
 				if (contDigitalContent2[idx].eTrType == ETrType::TrType_RessyaBangou)
 				{
@@ -1948,7 +1948,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 					{
 						int iShihatsuEkiIndex = aCentDedRessya.EkiIndexOfEkiOrder(iShihatsuEkiOrder);
 						int iOuterIndex = -1;
-						for (int idxo = 0; idxo < strOuterEkimei[iShihatsuEkiIndex].size(); idxo++)
+						for (int idxo = 0; idxo < (int)strOuterEkimei[iShihatsuEkiIndex].size(); idxo++)
 						{
 							if (strOuterEkimei[iShihatsuEkiIndex][idxo] == strEkimei)
 							{
@@ -2014,7 +2014,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 					{
 						int iShuchakuEkiIndex = aCentDedRessya.EkiIndexOfEkiOrder(iShuchakuEkiOrder);
 						int iOuterIndex = -1;
-						for (int idxo = 0; idxo < strOuterEkimei[iShuchakuEkiIndex].size(); idxo++)
+						for (int idxo = 0; idxo < (int)strOuterEkimei[iShuchakuEkiIndex].size(); idxo++)
 						{
 							if (strOuterEkimei[iShuchakuEkiIndex][idxo] == strEkimei)
 							{
@@ -2056,7 +2056,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 
 
 			//一つ前の駅の駅時刻形式を着ありに変更させる
-			for (int idxe = 0; idxe < iEkiIndexAddChakuNobori.size(); idxe++)
+			for (int idxe = 0; idxe < (int)iEkiIndexAddChakuNobori.size(); idxe++)
 			{
 				if (iEkiIndexAddChakuNobori[idxe])
 				{
@@ -2109,11 +2109,11 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 			vector<bool> iEkiIndexAddChakuKudari;
 			iEkiIndexAddChakuKudari.assign(pCentDedEkiCont->size(), false);
 
-			for (int idxk = 0; idxk < contRessya3.size(); idxk++)
+			for (int idxk = 0; idxk < (int)contRessya3.size(); idxk++)
 			{
 				CentDedRessya	aCentDedRessya(pCentDedEkiCont->size(), ERessyahoukou::Ressyahoukou_Kudari);
 				bool bIsSyubetsuChange = false;
-				for (int idx = 0; idx < contDigitalContent1.size(); idx++)
+				for (int idx = 0; idx < (int)contDigitalContent1.size(); idx++)
 				{
 					if (contDigitalContent1[idx].eTrType == ETrType::TrType_RessyaBangou)
 					{
@@ -2369,7 +2369,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 						{
 							int iShihatsuEkiIndex = aCentDedRessya.EkiIndexOfEkiOrder(iShihatsuEkiOrder);
 							int iOuterIndex = -1;
-							for (int idxo = 0; idxo < strOuterEkimei[iShihatsuEkiIndex].size(); idxo++)
+							for (int idxo = 0; idxo < (int)strOuterEkimei[iShihatsuEkiIndex].size(); idxo++)
 							{
 								if (strOuterEkimei[iShihatsuEkiIndex][idxo] == strEkimei)
 								{
@@ -2436,7 +2436,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 						{
 							int iShuchakuEkiIndex = aCentDedRessya.EkiIndexOfEkiOrder(iShuchakuEkiOrder);
 							int iOuterIndex = -1;
-							for (int idxo = 0; idxo < strOuterEkimei[iShuchakuEkiIndex].size(); idxo++)
+							for (int idxo = 0; idxo < (int)strOuterEkimei[iShuchakuEkiIndex].size(); idxo++)
 							{
 								if (strOuterEkimei[iShuchakuEkiIndex][idxo] == strEkimei)
 								{
@@ -2478,7 +2478,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 
 
 				//一つ前の駅の駅時刻形式を着ありに変更させる
-				for (int idxe = 0; idxe < iEkiIndexAddChakuKudari.size(); idxe++)
+				for (int idxe = 0; idxe < (int)iEkiIndexAddChakuKudari.size(); idxe++)
 				{
 					if (iEkiIndexAddChakuKudari[idxe])
 					{
@@ -2507,13 +2507,13 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 			vector<bool> iEkiIndexAddChakuNobori;
 			iEkiIndexAddChakuNobori.assign(pCentDedEkiCont->size(), false);
 
-			for (int idxn = 0; idxn < contRessya4.size(); idxn++)
+			for (int idxn = 0; idxn < (int)contRessya4.size(); idxn++)
 			{
 				//CentDedRessya	aCentDedRessya(aCentDedRessyaCont1Kudari.createNullRessya());
 				CentDedRessya	aCentDedRessya(pCentDedEkiCont->size(), ERessyahoukou::Ressyahoukou_Nobori);
 				bool bIsSyubetsuChange = false;
 
-				for (int idx = 0; idx < contDigitalContent2.size(); idx++)
+				for (int idx = 0; idx < (int)contDigitalContent2.size(); idx++)
 				{
 					if (contDigitalContent2[idx].eTrType == ETrType::TrType_RessyaBangou)
 					{
@@ -2773,7 +2773,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 						{
 							int iShihatsuEkiIndex = aCentDedRessya.EkiIndexOfEkiOrder(iShihatsuEkiOrder);
 							int iOuterIndex = -1;
-							for (int idxo = 0; idxo < strOuterEkimei[iShihatsuEkiIndex].size(); idxo++)
+							for (int idxo = 0; idxo < (int)strOuterEkimei[iShihatsuEkiIndex].size(); idxo++)
 							{
 								if (strOuterEkimei[iShihatsuEkiIndex][idxo] == strEkimei)
 								{
@@ -2839,7 +2839,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 						{
 							int iShuchakuEkiIndex = aCentDedRessya.EkiIndexOfEkiOrder(iShuchakuEkiOrder);
 							int iOuterIndex = -1;
-							for (int idxo = 0; idxo < strOuterEkimei[iShuchakuEkiIndex].size(); idxo++)
+							for (int idxo = 0; idxo < (int)strOuterEkimei[iShuchakuEkiIndex].size(); idxo++)
 							{
 								if (strOuterEkimei[iShuchakuEkiIndex][idxo] == strEkimei)
 								{
@@ -2881,7 +2881,7 @@ int CconvCDedRosenFileDataDigital3::CDedRosenFileData_from_string(
 
 
 				//一つ前の駅の駅時刻形式を着ありに変更させる
-				for (int idxe = 0; idxe < iEkiIndexAddChakuNobori.size(); idxe++)
+				for (int idxe = 0; idxe < (int)iEkiIndexAddChakuNobori.size(); idxe++)
 				{
 					if (iEkiIndexAddChakuNobori[idxe])
 					{
@@ -2958,7 +2958,7 @@ void DedRosenFileData::CconvCDedRosenFileDataDigital3::ReadDigital(
 				//display: noneが含まれるTr行は、前の行が列車名の場合は列車号数、それ以外の場合は着発両方の時刻がある駅の発時刻欄
 			if (strBeforeTh1 == _T("列車名") && TrimTag(strTd).empty())
 			{
-				if (contDigitalContent.size() <= iTrIndexL)
+				if ((int)contDigitalContent.size() <= iTrIndexL)
 				{
 					DigitalContent sDigitalContent;
 					strBeforeTh1 = _T("号数");
@@ -2971,7 +2971,7 @@ void DedRosenFileData::CconvCDedRosenFileDataDigital3::ReadDigital(
 					contDigitalContent[iTrIndexL].strTh1 = strBeforeTh1;
 				}
 			}
-			else if (contDigitalContent.size() <= iTrIndexL)
+			else if ((int)contDigitalContent.size() <= iTrIndexL)
 			{
 				DigitalContent sDigitalContent;
 				strBeforeTh1 = TrimTag(strTd);
@@ -2989,7 +2989,7 @@ void DedRosenFileData::CconvCDedRosenFileDataDigital3::ReadDigital(
 			strTd = strTr.substr(posTd, posTdEnd - posTd + 4);
 			strTr = strTr.substr(posTdEnd + 4);
 			//二つ目のstrTdは駅時刻の発・着
-			if (contDigitalContent.size() <= iTrIndexL)
+			if ((int)contDigitalContent.size() <= iTrIndexL)
 			{
 				DigitalContent sDigitalContent;
 				sDigitalContent.strTh2 = TrimTag(strTd);
@@ -3031,7 +3031,7 @@ void DedRosenFileData::CconvCDedRosenFileDataDigital3::ReadDigital(
 				posTd = strTr.find(_T("<td"));
 				posTdEnd = strTr.find(_T("/td>"));
 
-				if (contRessya.size() <= iTdIndex)
+				if ((int)contRessya.size() <= iTdIndex)
 				{
 					contRessya.push_back({ TrimTag(strTd) });
 				}
@@ -3065,7 +3065,7 @@ void DedRosenFileData::CconvCDedRosenFileDataDigital3::ReadDigital(
 			tstring::size_type posTdEnd = strTr.find(_T("/td>"));
 			tstring strTd = strTr.substr(posTd, posTdEnd - posTd + 4);
 			strTr = strTr.substr(posTdEnd + 4);
-			if (contDigitalContent.size() <= iTrIndexL)
+			if ((int)contDigitalContent.size() <= iTrIndexL)
 			{
 				DigitalContent sDigitalContent;
 				strBeforeTh1 = TrimTag(strTd);
@@ -3095,7 +3095,7 @@ void DedRosenFileData::CconvCDedRosenFileDataDigital3::ReadDigital(
 			strTd = strTr.substr(posTd, posTdEnd - posTd + 4);
 			strTr = strTr.substr(posTdEnd + 4);
 			//二つ目のstrTdは駅時刻の発・着
-			if (contDigitalContent.size() <= iTrIndexL)
+			if ((int)contDigitalContent.size() <= iTrIndexL)
 			{
 				DigitalContent sDigitalContent;
 				sDigitalContent.strTh2 = TrimTag(strTd);
@@ -3163,7 +3163,7 @@ void DedRosenFileData::CconvCDedRosenFileDataDigital3::ReadDigital(
 						strTemp += TrimTag(strTd.substr(pos2));//時刻
 					}
 
-					if (contRessya.size() <= iTdIndex)
+					if ((int)contRessya.size() <= iTdIndex)
 					{
 						contRessya.push_back({ strTemp });
 					}
@@ -3194,7 +3194,7 @@ void DedRosenFileData::CconvCDedRosenFileDataDigital3::ReadDigital(
 						strTemp = TrimTag(strTd);//運転日
 					}
 
-					if (contRessya.size() <= iTdIndex)
+					if ((int)contRessya.size() <= iTdIndex)
 					{
 						contRessya.push_back({ strTemp });
 					}
@@ -3205,7 +3205,7 @@ void DedRosenFileData::CconvCDedRosenFileDataDigital3::ReadDigital(
 
 					continue;
 				}
-				if (contRessya.size() <= iTdIndex)
+				if ((int)contRessya.size() <= iTdIndex)
 				{
 					contRessya.push_back({ TrimTag(strTd) });
 				}

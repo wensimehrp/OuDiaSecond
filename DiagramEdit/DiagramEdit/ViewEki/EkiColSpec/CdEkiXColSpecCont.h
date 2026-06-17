@@ -1,5 +1,5 @@
 /*
-OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -77,6 +77,7 @@ Copyright (C) 2006-2017 take-okm
 #define ViewEki_CdEkiXColSpecCont_h
 
 #include "CdEkiXColSpec.h"
+#include "../../entDed/CentDedEkiCont.h"
 
 namespace ViewEki{ namespace EkiColSpec{
 using namespace entDed;

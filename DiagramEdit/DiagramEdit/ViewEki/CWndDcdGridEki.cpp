@@ -1,5 +1,5 @@
 /*
-	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+	OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -268,6 +268,7 @@ createCmd( ECreateCmd eCreateCmd , Ou<DedRosenFileData::EditCmd::CRfEditCmd_Eki>
 			if ( aCdYColSpecOfFocus.getEkiIndex() == 0 )
 			{
 				aNewEki.setEkijikokukeisiki(CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku);
+				aNewEki.setJikokuhyouHatsuJikokuDisplayNobori(false);
 			}
 
 
@@ -743,35 +744,23 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 			*pCDcdTextbox = this->getCDcdEkikibo();
 		}
 		{
-			//	下りカスタマイズ時刻表
+			//	下りカスタマイズ時刻表(1)
 			Ou<CDcdTextbox>	pCDcdTextbox =
 				(getCXDcdGrid()->getCell(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayKudari), iYColumnNumber)->getIfDcDraw());
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayKudari), iYColumnNumber)->getIfDcDraw());
 			Ou<CDcdTextbox>	pCDcdTextbox2 =
 				(getCXDcdGrid()->getCell(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayKudari), iYColumnNumber)->getIfDcDraw());
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayKudari), iYColumnNumber)->getIfDcDraw());
 			Ou<CDcdTextbox>	pCDcdTextbox3 =
 				(getCXDcdGrid()->getCell(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayKudari), iYColumnNumber)->getIfDcDraw());
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_NyuusenJikokuDisplayKudari), iYColumnNumber)->getIfDcDraw());
 			Ou<CDcdTextbox>	pCDcdTextbox4 =
 				(getCXDcdGrid()->getCell(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayKudari), iYColumnNumber)->getIfDcDraw());
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayKudari), iYColumnNumber)->getIfDcDraw());
 			Ou<CDcdTextbox>	pCDcdTextbox5 =
 				(getCXDcdGrid()->getCell(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayKudari), iYColumnNumber)->getIfDcDraw());
-			Ou<CDcdTextbox>	pCDcdTextbox10 =
-				(getCXDcdGrid()->getCell(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsKudari), iYColumnNumber)->getIfDcDraw());
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayKudari), iYColumnNumber)->getIfDcDraw());
 			Ou<CDcdTextbox>	pCDcdTextbox6 =
-				(getCXDcdGrid()->getCell(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayKudari), iYColumnNumber)->getIfDcDraw());
-			Ou<CDcdTextbox>	pCDcdTextbox7 =
-				(getCXDcdGrid()->getCell(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayKudari), iYColumnNumber)->getIfDcDraw());
-			Ou<CDcdTextbox>	pCDcdTextbox8 =
-				(getCXDcdGrid()->getCell(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayKudari), iYColumnNumber)->getIfDcDraw());
-			Ou<CDcdTextbox>	pCDcdTextbox9 =
 				(getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayKudari), iYColumnNumber)->getIfDcDraw());
 			*pCDcdTextbox = this->getCDcdEkikibo();
@@ -780,41 +769,71 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 			*pCDcdTextbox4 = this->getCDcdEkikibo();
 			*pCDcdTextbox5 = this->getCDcdEkikibo();
 			*pCDcdTextbox6 = this->getCDcdEkikibo();
-			*pCDcdTextbox7 = this->getCDcdEkikibo();
-			*pCDcdTextbox8 = this->getCDcdEkikibo();
-			*pCDcdTextbox9 = this->getCDcdEkikibo();
-			*pCDcdTextbox10 = this->getCDcdEkikibo();
 		}
 		{
-			//	上りカスタマイズ時刻表
+			//	下りカスタマイズ時刻表(2)
 			Ou<CDcdTextbox>	pCDcdTextbox =
 				(getCXDcdGrid()->getCell(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayNobori), iYColumnNumber)->getIfDcDraw());
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyabangouDisplayKudari), iYColumnNumber)->getIfDcDraw());
 			Ou<CDcdTextbox>	pCDcdTextbox2 =
 				(getCXDcdGrid()->getCell(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayNobori), iYColumnNumber)->getIfDcDraw());
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayKudari), iYColumnNumber)->getIfDcDraw());
 			Ou<CDcdTextbox>	pCDcdTextbox3 =
 				(getCXDcdGrid()->getCell(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayNobori), iYColumnNumber)->getIfDcDraw());
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayRowsKudari), iYColumnNumber)->getIfDcDraw());
 			Ou<CDcdTextbox>	pCDcdTextbox4 =
 				(getCXDcdGrid()->getCell(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayNobori), iYColumnNumber)->getIfDcDraw());
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyaSyubetsuDisplayKudari), iYColumnNumber)->getIfDcDraw());
 			Ou<CDcdTextbox>	pCDcdTextbox5 =
 				(getCXDcdGrid()->getCell(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayNobori), iYColumnNumber)->getIfDcDraw());
-			Ou<CDcdTextbox>	pCDcdTextbox10 =
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyameiDisplayKudari), iYColumnNumber)->getIfDcDraw());
+			*pCDcdTextbox = this->getCDcdEkikibo();
+			*pCDcdTextbox2 = this->getCDcdEkikibo();
+			*pCDcdTextbox3 = this->getCDcdEkikibo();
+			*pCDcdTextbox4 = this->getCDcdEkikibo();
+			*pCDcdTextbox5 = this->getCDcdEkikibo();
+		}
+		{
+			//	下りカスタマイズ時刻表(3)
+			Ou<CDcdTextbox>	pCDcdTextbox =
 				(getCXDcdGrid()->getCell(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsNobori), iYColumnNumber)->getIfDcDraw());
-			Ou<CDcdTextbox>	pCDcdTextbox6 =
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayKudari), iYColumnNumber)->getIfDcDraw());
+			Ou<CDcdTextbox>	pCDcdTextbox2 =
 				(getCXDcdGrid()->getCell(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayNobori), iYColumnNumber)->getIfDcDraw());
-			Ou<CDcdTextbox>	pCDcdTextbox7 =
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayKudari), iYColumnNumber)->getIfDcDraw());
+			Ou<CDcdTextbox>	pCDcdTextbox3 =
 				(getCXDcdGrid()->getCell(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayNobori), iYColumnNumber)->getIfDcDraw());
-			Ou<CDcdTextbox>	pCDcdTextbox8 =
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsKudari), iYColumnNumber)->getIfDcDraw());
+			Ou<CDcdTextbox>	pCDcdTextbox4 =
+				(getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayKudari), iYColumnNumber)->getIfDcDraw());
+			Ou<CDcdTextbox>	pCDcdTextbox5 =
+				(getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayKudari), iYColumnNumber)->getIfDcDraw());
+			*pCDcdTextbox = this->getCDcdEkikibo();
+			*pCDcdTextbox2 = this->getCDcdEkikibo();
+			*pCDcdTextbox3 = this->getCDcdEkikibo();
+			*pCDcdTextbox4 = this->getCDcdEkikibo();
+			*pCDcdTextbox5 = this->getCDcdEkikibo();
+		}
+		{
+			//	上りカスタマイズ時刻表(1)
+			Ou<CDcdTextbox>	pCDcdTextbox =
 				(getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayNobori), iYColumnNumber)->getIfDcDraw());
-			Ou<CDcdTextbox>	pCDcdTextbox9 =
+			Ou<CDcdTextbox>	pCDcdTextbox2 =
+				(getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayNobori), iYColumnNumber)->getIfDcDraw());
+			Ou<CDcdTextbox>	pCDcdTextbox3 =
+				(getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_NyuusenJikokuDisplayNobori), iYColumnNumber)->getIfDcDraw());
+			Ou<CDcdTextbox>	pCDcdTextbox4 =
+				(getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayNobori), iYColumnNumber)->getIfDcDraw());
+			Ou<CDcdTextbox>	pCDcdTextbox5 =
+				(getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayNobori), iYColumnNumber)->getIfDcDraw());
+			Ou<CDcdTextbox>	pCDcdTextbox6 =
 				(getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayNobori), iYColumnNumber)->getIfDcDraw());
 			*pCDcdTextbox = this->getCDcdEkikibo();
@@ -823,10 +842,52 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 			*pCDcdTextbox4 = this->getCDcdEkikibo();
 			*pCDcdTextbox5 = this->getCDcdEkikibo();
 			*pCDcdTextbox6 = this->getCDcdEkikibo();
-			*pCDcdTextbox7 = this->getCDcdEkikibo();
-			*pCDcdTextbox8 = this->getCDcdEkikibo();
-			*pCDcdTextbox9 = this->getCDcdEkikibo();
-			*pCDcdTextbox10 = this->getCDcdEkikibo();
+		}
+		{
+			//	上りカスタマイズ時刻表(2)
+			Ou<CDcdTextbox>	pCDcdTextbox =
+				(getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyabangouDisplayNobori), iYColumnNumber)->getIfDcDraw());
+			Ou<CDcdTextbox>	pCDcdTextbox2 =
+				(getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayNobori), iYColumnNumber)->getIfDcDraw());
+			Ou<CDcdTextbox>	pCDcdTextbox3 =
+				(getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayRowsNobori), iYColumnNumber)->getIfDcDraw());
+			Ou<CDcdTextbox>	pCDcdTextbox4 =
+				(getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyaSyubetsuDisplayNobori), iYColumnNumber)->getIfDcDraw());
+			Ou<CDcdTextbox>	pCDcdTextbox5 =
+				(getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyameiDisplayNobori), iYColumnNumber)->getIfDcDraw());
+			*pCDcdTextbox = this->getCDcdEkikibo();
+			*pCDcdTextbox2 = this->getCDcdEkikibo();
+			*pCDcdTextbox3 = this->getCDcdEkikibo();
+			*pCDcdTextbox4 = this->getCDcdEkikibo();
+			*pCDcdTextbox5 = this->getCDcdEkikibo();
+		}
+		{
+			//	上りカスタマイズ時刻表(3)
+			Ou<CDcdTextbox>	pCDcdTextbox =
+				(getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayNobori), iYColumnNumber)->getIfDcDraw());
+			Ou<CDcdTextbox>	pCDcdTextbox2 =
+				(getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayNobori), iYColumnNumber)->getIfDcDraw());
+			Ou<CDcdTextbox>	pCDcdTextbox3 =
+				(getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsNobori), iYColumnNumber)->getIfDcDraw());
+			Ou<CDcdTextbox>	pCDcdTextbox4 =
+				(getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayNobori), iYColumnNumber)->getIfDcDraw());
+			Ou<CDcdTextbox>	pCDcdTextbox5 =
+				(getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayNobori), iYColumnNumber)->getIfDcDraw());
+			*pCDcdTextbox = this->getCDcdEkikibo();
+			*pCDcdTextbox2 = this->getCDcdEkikibo();
+			*pCDcdTextbox3 = this->getCDcdEkikibo();
+			*pCDcdTextbox4 = this->getCDcdEkikibo();
+			*pCDcdTextbox5 = this->getCDcdEkikibo();
 		}
 		{
 			//	在線表表示設定
@@ -897,7 +958,7 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 			Ou<CDcdTextbox>(getCXDcdGrid()
 				->getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_EkiIndex), 
 					iYColumnNumber)->getIfDcDraw())
-				->setText(to_tstring(iYColumnNumber - 1));
+				->setText(to_tstring(iYColumnNumber - 2));
 		}
 	}
 	//	駅名
@@ -1098,6 +1159,24 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				->setText(strText);
 		}
 
+		//下りカスタマイズ時刻表(路線外・前列車始発駅)
+		{
+			tstring strText = _T("");
+			if (!bIsNull) {
+				if (aCentDedEki.getJikokuhyouOuterSihatsuDisplayKudari())
+				{
+					strText = _T("始発駅");
+				}
+				else
+				{
+					strText = _T("");
+				}
+			}
+			Ou<CDcdTextbox>(getCXDcdGrid()->
+				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(
+					CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayKudari), iYColumnNumber)->getIfDcDraw())
+				->setText(strText);
+		}
 		//下りカスタマイズ時刻表(着時刻)
 		{
 			tstring strText = _T("");
@@ -1121,6 +1200,31 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 			}
 			Ou<CDcdTextbox>(getCXDcdGrid()->
 				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayKudari), iYColumnNumber)->getIfDcDraw())
+				->setText(strText);
+		}
+		//下りカスタマイズ時刻表(入線時刻)
+		{
+			tstring strText = _T("");
+			if (!bIsNull) {
+				//if (aCentDedEki.getJikokuhyouNyuusenJikokuDisplayKudari())
+				//{
+				//	strText = _T("表示有り");
+				//}
+				//else
+				//{
+				//	strText = _T("表示無し");
+				//}
+				if (aCentDedEki.getJikokuhyouNyuusenJikokuDisplayKudari())
+				{
+					strText = _T("入線時刻");
+				}
+				else
+				{
+					strText = _T("");
+				}
+			}
+			Ou<CDcdTextbox>(getCXDcdGrid()->
+				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_NyuusenJikokuDisplayKudari), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
 		//下りカスタマイズ時刻表(番線)
@@ -1173,6 +1277,120 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayKudari), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
+		//下りカスタマイズ時刻表(路線外・次列車終着駅)
+		{
+			tstring strText = _T("");
+			if (!bIsNull) {
+				if (aCentDedEki.getJikokuhyouOuterShuchakuDisplayKudari())
+				{
+					strText = _T("終着駅");
+				}
+				else
+				{
+					strText = _T("");
+				}
+			}
+			Ou<CDcdTextbox>(getCXDcdGrid()->
+				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(
+					CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayKudari), iYColumnNumber)->getIfDcDraw())
+				->setText(strText);
+		}
+
+		//下りカスタマイズ時刻表(前列車列車番号)
+		{
+			tstring strText = _T("");
+			if (!bIsNull) {
+				switch (aCentDedEki.getJikokuhyouPrevRessyabangouDisplayKudari()) {
+				case 0:
+					strText = _T(""); break;
+				case 1:
+					strText = _T("列番種変のみ"); break;
+				case 2:
+					strText = _T("列番種変情変"); break;
+				case 3:
+					strText = _T("列番全列車"); break;
+				}
+			}
+			Ou<CDcdTextbox>(getCXDcdGrid()->
+				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(
+					CdEkiXColSpec::EColumnType::ColumnType_PrevRessyabangouDisplayKudari), iYColumnNumber)->getIfDcDraw())
+				->setText(strText);
+		}
+		//下りカスタマイズ時刻表(前列車運用番号)
+		{
+			tstring strText = _T("");
+			if (!bIsNull) {
+				switch (aCentDedEki.getJikokuhyouPrevOperationNumberDisplayKudari()) {
+				case 0:
+					strText = _T(""); break;
+				case 1:
+					strText = _T("運番当駅変更"); break;
+				case 2:
+					strText = _T("運番種変のみ"); break;
+				case 3:
+					strText = _T("運番種変情変"); break;
+				case 4:
+					strText = _T("運番全列車"); break;
+				}
+			}
+			Ou<CDcdTextbox>(getCXDcdGrid()->
+				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(
+					CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayKudari), iYColumnNumber)->getIfDcDraw())
+				->setText(strText);
+		}
+		//下りカスタマイズ時刻表(前列車運用番号段数)
+		{
+			tstring strText = _T("");
+			if (!bIsNull &&
+				aCentDedEki.getJikokuhyouPrevOperationNumberDisplayKudari() > 0)
+			{
+				strText = to_tstring(aCentDedEki.getJikokuhyouPrevOperationNumberDisplayRowsKudari());
+			}
+			Ou<CDcdTextbox>(getCXDcdGrid()->
+				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(
+					CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayRowsKudari), iYColumnNumber)->getIfDcDraw())
+				->setText(strText);
+		}
+		//下りカスタマイズ時刻表(前列車種別)
+		{
+			tstring strText = _T("");
+			if (!bIsNull) {
+				switch (aCentDedEki.getJikokuhyouPrevRessyaSyubetsuDisplayKudari()) {
+				case 0:
+					strText = _T(""); break;
+				case 1:
+					strText = _T("種別種変のみ"); break;
+				case 2:
+					strText = _T("種別種変情変"); break;
+				case 3:
+					strText = _T("種別全列車"); break;
+				}
+			}
+			Ou<CDcdTextbox>(getCXDcdGrid()->
+				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyaSyubetsuDisplayKudari), iYColumnNumber)->getIfDcDraw())
+				->setText(strText);
+		}
+		//下りカスタマイズ時刻表(前列車列車名)
+		{
+			tstring strText = _T("");
+			if (!bIsNull) {
+				switch (aCentDedEki.getJikokuhyouPrevRessyameiDisplayKudari()) {
+				case 0:
+					strText = _T(""); break;
+				case 1:
+					strText = _T("列名種変のみ"); break;
+				case 2:
+					strText = _T("列名種変情変"); break;
+				case 3:
+					strText = _T("列名全列車"); break;
+				}
+			}
+			Ou<CDcdTextbox>(getCXDcdGrid()->
+				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(
+					CdEkiXColSpec::EColumnType::ColumnType_PrevRessyameiDisplayKudari), iYColumnNumber)->getIfDcDraw())
+				->setText(strText);
+		}
+
 		//下りカスタマイズ時刻表(列車番号)
 		{
 			tstring strText = _T("");
@@ -1267,11 +1485,12 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 					CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayKudari), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//下りカスタマイズ時刻表(路線外・前列車始発駅)
+
+		//上りカスタマイズ時刻表(路線外・前列車始発駅)
 		{
 			tstring strText = _T("");
 			if (!bIsNull) {
-				if (aCentDedEki.getJikokuhyouOuterSihatsuDisplayKudari())
+				if (aCentDedEki.getJikokuhyouOuterSihatsuDisplayNobori())
 				{
 					strText = _T("始発駅");
 				}
@@ -1282,28 +1501,9 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 			}
 			Ou<CDcdTextbox>(getCXDcdGrid()->
 				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(
-					CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayKudari), iYColumnNumber)->getIfDcDraw())
+					CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayNobori), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
-		//下りカスタマイズ時刻表(路線外・次列車終着駅)
-		{
-			tstring strText = _T("");
-			if (!bIsNull) {
-				if (aCentDedEki.getJikokuhyouOuterShuchakuDisplayKudari())
-				{
-					strText = _T("終着駅");
-				}
-				else
-				{
-					strText = _T("");
-				}
-			}
-			Ou<CDcdTextbox>(getCXDcdGrid()->
-				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(
-					CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayKudari), iYColumnNumber)->getIfDcDraw())
-				->setText(strText);
-		}
-
 		//上りカスタマイズ時刻表(着時刻)
 		{
 			tstring strText = _T("");
@@ -1320,6 +1520,24 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 			Ou<CDcdTextbox>(getCXDcdGrid()->
 				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(
 					CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayNobori), iYColumnNumber)->getIfDcDraw())
+				->setText(strText);
+		}
+		//上りカスタマイズ時刻表(入線時刻)
+		{
+			tstring strText = _T("");
+			if (!bIsNull) {
+				if (aCentDedEki.getJikokuhyouNyuusenJikokuDisplayNobori())
+				{
+					strText = _T("入線時刻");
+				}
+				else
+				{
+					strText = _T("");
+				}
+			}
+			Ou<CDcdTextbox>(getCXDcdGrid()->
+				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(
+					CdEkiXColSpec::EColumnType::ColumnType_NyuusenJikokuDisplayNobori), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
 		//上りカスタマイズ時刻表(番線)
@@ -1357,6 +1575,120 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayNobori), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
+		//上りカスタマイズ時刻表(路線外・次列車終着駅)
+		{
+			tstring strText = _T("");
+			if (!bIsNull) {
+				if (aCentDedEki.getJikokuhyouOuterShuchakuDisplayNobori())
+				{
+					strText = _T("終着駅");
+				}
+				else
+				{
+					strText = _T("");
+				}
+			}
+			Ou<CDcdTextbox>(getCXDcdGrid()->
+				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(
+					CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayNobori), iYColumnNumber)->getIfDcDraw())
+				->setText(strText);
+		}
+
+		//上りカスタマイズ時刻表(前列車列車番号)
+		{
+			tstring strText = _T("");
+			if (!bIsNull) {
+				switch (aCentDedEki.getJikokuhyouPrevRessyabangouDisplayNobori()) {
+				case 0:
+					strText = _T(""); break;
+				case 1:
+					strText = _T("列番種変のみ"); break;
+				case 2:
+					strText = _T("列番種変情変"); break;
+				case 3:
+					strText = _T("列番全列車"); break;
+				}
+			}
+			Ou<CDcdTextbox>(getCXDcdGrid()->
+				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyabangouDisplayNobori), iYColumnNumber)->getIfDcDraw())
+				->setText(strText);
+		}
+		//上りカスタマイズ時刻表(前列車運用番号)
+		{
+			tstring strText = _T("");
+			if (!bIsNull) {
+				switch (aCentDedEki.getJikokuhyouPrevOperationNumberDisplayNobori()) {
+				case 0:
+					strText = _T(""); break;
+				case 1:
+					strText = _T("運番当駅変更"); break;
+				case 2:
+					strText = _T("運番種変のみ"); break;
+				case 3:
+					strText = _T("運番種変情変"); break;
+				case 4:
+					strText = _T("運番全列車"); break;
+				}
+			}
+			Ou<CDcdTextbox>(getCXDcdGrid()->
+				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(
+					CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayNobori), iYColumnNumber)->getIfDcDraw())
+				->setText(strText);
+		}
+		//上りカスタマイズ時刻表(前列車運用番号段数)
+		{
+			tstring strText = _T("");
+			if (!bIsNull &&
+				aCentDedEki.getJikokuhyouPrevOperationNumberDisplayNobori() > 0)
+			{
+				strText = to_tstring(aCentDedEki.getJikokuhyouPrevOperationNumberDisplayRowsNobori());
+			}
+			Ou<CDcdTextbox>(getCXDcdGrid()->
+				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(
+					CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayRowsNobori), iYColumnNumber)->getIfDcDraw())
+				->setText(strText);
+		}
+		//上りカスタマイズ時刻表(前列車種別)
+		{
+			tstring strText = _T("");
+			if (!bIsNull) {
+				switch (aCentDedEki.getJikokuhyouPrevRessyaSyubetsuDisplayNobori()) {
+				case 0:
+					strText = _T(""); break;
+				case 1:
+					strText = _T("種別種変のみ"); break;
+				case 2:
+					strText = _T("種別種変情変"); break;
+				case 3:
+					strText = _T("種別全列車"); break;
+				}
+			}
+			Ou<CDcdTextbox>(getCXDcdGrid()->
+				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(
+					CdEkiXColSpec::EColumnType::ColumnType_PrevRessyaSyubetsuDisplayNobori), iYColumnNumber)->getIfDcDraw())
+				->setText(strText);
+		}
+		//上りカスタマイズ時刻表(前列車列車名)
+		{
+			tstring strText = _T("");
+			if (!bIsNull) {
+				switch (aCentDedEki.getJikokuhyouPrevRessyameiDisplayNobori()) {
+				case 0:
+					strText = _T(""); break;
+				case 1:
+					strText = _T("列名種変のみ"); break;
+				case 2:
+					strText = _T("列名種変情変"); break;
+				case 3:
+					strText = _T("列名全列車"); break;
+				}
+			}
+			Ou<CDcdTextbox>(getCXDcdGrid()->
+				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(
+					CdEkiXColSpec::EColumnType::ColumnType_PrevRessyameiDisplayNobori), iYColumnNumber)->getIfDcDraw())
+				->setText(strText);
+		}
+
 		//上りカスタマイズ時刻表(列車番号)
 		{
 			tstring strText = _T("");
@@ -1449,42 +1781,6 @@ void CWndDcdGridEki::OnUpdate_setCentDedEki_To_Column(
 			Ou<CDcdTextbox>(getCXDcdGrid()->
 				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(
 					CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayNobori), iYColumnNumber)->getIfDcDraw())
-				->setText(strText);
-		}
-		//上りカスタマイズ時刻表(路線外・前列車始発駅)
-		{
-			tstring strText = _T("");
-			if (!bIsNull) {
-				if (aCentDedEki.getJikokuhyouOuterSihatsuDisplayNobori())
-				{
-					strText = _T("始発駅");
-				}
-				else
-				{
-					strText = _T("");
-				}
-			}
-			Ou<CDcdTextbox>(getCXDcdGrid()->
-				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(
-					CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayNobori), iYColumnNumber)->getIfDcDraw())
-				->setText(strText);
-		}
-		//上りカスタマイズ時刻表(路線外・次列車終着駅)
-		{
-			tstring strText = _T("");
-			if (!bIsNull) {
-				if (aCentDedEki.getJikokuhyouOuterShuchakuDisplayNobori())
-				{
-					strText = _T("終着駅");
-				}
-				else
-				{
-					strText = _T("");
-				}
-			}
-			Ou<CDcdTextbox>(getCXDcdGrid()->
-				getCell(aCdEkiXColSpecCont.ColumnNumberFromSpec(
-					CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayNobori), iYColumnNumber)->getIfDcDraw())
 				->setText(strText);
 		}
 
@@ -1726,7 +2022,7 @@ void CWndDcdGridEki::OnUpdate_All()
 
 		//	Y列数を増減させる
 		getCXDcdGrid()->setYColumnCount( 
-			pCentDedEkiContGet->size() + 2 ) ;
+			pCentDedEkiContGet->size() + 3 ) ;
 
 		//	駅名列の幅を設定する
 		{
@@ -1749,19 +2045,19 @@ void CWndDcdGridEki::OnUpdate_All()
 					const CentDedEki*	pCentDedEkiNext
 						= pCentDedEkiContGet->get(idxEki + 1);
 					OnUpdate_setCentDedEki_To_Column(
-						idxEki + 1, *pCentDedEki, *pCentDedEkiNext);
+						idxEki + 2, *pCentDedEki, *pCentDedEkiNext);
 				}
 				else
 				{
 					OnUpdate_setCentDedEki_To_Column(
-						idxEki + 1, *pCentDedEki, CentDedEki());
+						idxEki + 2, *pCentDedEki, CentDedEki());
 				}
 			}
 
 			//const CentDedEki* pCentDedEkiNext = pCentDedEkiContGet->get(idxEki + 1);
 			//OnUpdate_setCentDedEki_To_Column( idxEki + 1 , *pCentDedEki, *pCentDedEkiNext) ;
 		}
-		OnUpdate_setCentDedEki_To_Column(iEkiSize + 1, CentDedEki(), CentDedEki());
+		OnUpdate_setCentDedEki_To_Column(iEkiSize + 2, CentDedEki(), CentDedEki());
 
 		InvalidateGrid() ;
 
@@ -1777,8 +2073,8 @@ void CWndDcdGridEki::OnCreate_Header()
 	//	列の数を指定
 	// --------------------------------
 	getCXDcdGrid()->setXColumnCount(createXColSpecCont().size());
-	getCXDcdGrid()->setYColumnCount(2);
-	getCXDcdGrid()->setYFixColumnCount(1);
+	getCXDcdGrid()->setYColumnCount(3);
+	getCXDcdGrid()->setYFixColumnCount(2);
 
 	//if (getDisplaySettingMode())
 	//{
@@ -1897,33 +2193,26 @@ void CWndDcdGridEki::OnCreate_Header()
 
 			}
 			{
-				//下りカスタマイズ時刻表
+				//下りカスタマイズ時刻表(1)
 				CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayKudari));
-				CDcdGridXColumn* pCDcdGridXColumn2 = getCXDcdGrid()->getXColumn(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayKudari));
-				CDcdGridXColumn* pCDcdGridXColumn3 = getCXDcdGrid()->getXColumn(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayKudari));
-				CDcdGridXColumn* pCDcdGridXColumn4 = getCXDcdGrid()->getXColumn(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayKudari));
-				CDcdGridXColumn* pCDcdGridXColumn5 = getCXDcdGrid()->getXColumn(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayKudari));
-				CDcdGridXColumn* pCDcdGridXColumn10 = getCXDcdGrid()->getXColumn(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsKudari));
-				CDcdGridXColumn* pCDcdGridXColumn6 = getCXDcdGrid()->getXColumn(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayKudari));
-				CDcdGridXColumn* pCDcdGridXColumn7 = getCXDcdGrid()->getXColumn(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayKudari));
-				CDcdGridXColumn* pCDcdGridXColumn8 = getCXDcdGrid()->getXColumn(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayKudari));
-				CDcdGridXColumn* pCDcdGridXColumn9 = getCXDcdGrid()->getXColumn(
+				CDcdGridXColumn* pCDcdGridXColumn2 = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayKudari));
+				CDcdGridXColumn* pCDcdGridXColumn3 = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_NyuusenJikokuDisplayKudari));
+				CDcdGridXColumn* pCDcdGridXColumn4 = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayKudari));
+				CDcdGridXColumn* pCDcdGridXColumn5 = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayKudari));
+				CDcdGridXColumn* pCDcdGridXColumn6 = getCXDcdGrid()->getXColumn(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayKudari));
-				CdDcdSizeXy	sizeHeader1;
-				CDcdTextbox	aCDcdTextbox1(CDcdTextbox(_T(""),
-					CdFontProp(9, _T("Meiryo UI")),
-					_T("京"), 1, 2, 2, CdPenProp(),
-					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
-				aCDcdTextbox1.getItemSize(&aCDcdTarget, &sizeHeader1);
+
+				//CdDcdSizeXy	sizeHeader1;
+				//CDcdTextbox	aCDcdTextbox1(CDcdTextbox(_T(""),
+				//	CdFontProp(9, _T("Meiryo UI")),
+				//	_T("京"), 1, 2, 2, CdPenProp(),
+				//	CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
+				//aCDcdTextbox1.getItemSize(&aCDcdTarget, &sizeHeader1);
 				CdDcdSizeXy	sizeHeader2;
 				CDcdTextbox	aCDcdTextbox2(CDcdTextbox(_T(""),
 					CdFontProp(9, _T("Meiryo UI")),
@@ -1936,52 +2225,130 @@ void CWndDcdGridEki::OnCreate_Header()
 					_T("京都京"), 1, 2, 2, CdPenProp(),
 					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
 				aCDcdTextbox3.getItemSize(&aCDcdTarget, &sizeHeader3);
-				CdDcdSizeXy	sizeHeader6;
-				CDcdTextbox	aCDcdTextbox6(CDcdTextbox(_T(""),
+				CdDcdSizeXy	sizeHeader4;
+				CDcdTextbox	aCDcdTextbox4(CDcdTextbox(_T(""),
 					CdFontProp(9, _T("Meiryo UI")),
-					_T("京都京都京都"), 1, 2, 2, CdPenProp(),
+					_T("京都京都"), 1, 2, 2, CdPenProp(),
 					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
-				aCDcdTextbox6.getItemSize(&aCDcdTarget, &sizeHeader6);
+				aCDcdTextbox4.getItemSize(&aCDcdTarget, &sizeHeader4);
 
 				pCDcdGridXColumn->setColumnSize(sizeHeader3.getX());
-				pCDcdGridXColumn2->setColumnSize(sizeHeader2.getX());
-				pCDcdGridXColumn3->setColumnSize(sizeHeader3.getX());
-				pCDcdGridXColumn4->setColumnSize(sizeHeader6.getX());
-				pCDcdGridXColumn5->setColumnSize(sizeHeader6.getX());
-				pCDcdGridXColumn10->setColumnSize(sizeHeader1.getX());
-				pCDcdGridXColumn6->setColumnSize(sizeHeader6.getX());
-				pCDcdGridXColumn7->setColumnSize(sizeHeader6.getX());
-				pCDcdGridXColumn8->setColumnSize(sizeHeader3.getX());
-				pCDcdGridXColumn9->setColumnSize(sizeHeader3.getX());
+				pCDcdGridXColumn2->setColumnSize(sizeHeader3.getX());
+				pCDcdGridXColumn3->setColumnSize(sizeHeader4.getX());
+				pCDcdGridXColumn4->setColumnSize(sizeHeader2.getX());
+				pCDcdGridXColumn5->setColumnSize(sizeHeader3.getX());
+				pCDcdGridXColumn6->setColumnSize(sizeHeader3.getX());
 			}
 			{
-				//上りカスタマイズ時刻表
+				//下りカスタマイズ時刻表(2)
 				CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayNobori));
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyabangouDisplayKudari));
 				CDcdGridXColumn* pCDcdGridXColumn2 = getCXDcdGrid()->getXColumn(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayNobori));
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayKudari));
 				CDcdGridXColumn* pCDcdGridXColumn3 = getCXDcdGrid()->getXColumn(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayNobori));
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayRowsKudari));
 				CDcdGridXColumn* pCDcdGridXColumn4 = getCXDcdGrid()->getXColumn(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayNobori));
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyaSyubetsuDisplayKudari));
 				CDcdGridXColumn* pCDcdGridXColumn5 = getCXDcdGrid()->getXColumn(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayNobori));
-				CDcdGridXColumn* pCDcdGridXColumn10 = getCXDcdGrid()->getXColumn(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsNobori));
-				CDcdGridXColumn* pCDcdGridXColumn6 = getCXDcdGrid()->getXColumn(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayNobori));
-				CDcdGridXColumn* pCDcdGridXColumn7 = getCXDcdGrid()->getXColumn(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayNobori));
-				CDcdGridXColumn* pCDcdGridXColumn8 = getCXDcdGrid()->getXColumn(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayNobori));
-				CDcdGridXColumn* pCDcdGridXColumn9 = getCXDcdGrid()->getXColumn(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayNobori));
-				CdDcdSizeXy	sizeHeader1;
-				CDcdTextbox	aCDcdTextbox1(CDcdTextbox(_T(""),
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyameiDisplayKudari));
+
+				//CdDcdSizeXy	sizeHeader1;
+				//CDcdTextbox	aCDcdTextbox1(CDcdTextbox(_T(""),
+				//	CdFontProp(9, _T("Meiryo UI")),
+				//	_T("京"), 1, 2, 2, CdPenProp(),
+				//	CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
+				//aCDcdTextbox1.getItemSize(&aCDcdTarget, &sizeHeader1);
+				CdDcdSizeXy	sizeHeader2;
+				CDcdTextbox	aCDcdTextbox2(CDcdTextbox(_T(""),
 					CdFontProp(9, _T("Meiryo UI")),
-					_T("京"), 1, 2, 2, CdPenProp(),
+					_T("京都"), 1, 2, 2, CdPenProp(),
 					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
-				aCDcdTextbox1.getItemSize(&aCDcdTarget, &sizeHeader1);
+				aCDcdTextbox2.getItemSize(&aCDcdTarget, &sizeHeader2);
+				//CdDcdSizeXy	sizeHeader3;
+				//CDcdTextbox	aCDcdTextbox3(CDcdTextbox(_T(""),
+				//	CdFontProp(9, _T("Meiryo UI")),
+				//	_T("京都京"), 1, 2, 2, CdPenProp(),
+				//	CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
+				//aCDcdTextbox3.getItemSize(&aCDcdTarget, &sizeHeader3);
+				CdDcdSizeXy	sizeHeader6;
+				CDcdTextbox	aCDcdTextbox6(CDcdTextbox(_T(""),
+					CdFontProp(9, _T("Meiryo UI")),
+					_T("京都京都京都"), 1, 2, 2, CdPenProp(),
+					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
+				aCDcdTextbox6.getItemSize(&aCDcdTarget, &sizeHeader6);
+
+				pCDcdGridXColumn->setColumnSize(sizeHeader6.getX());
+				pCDcdGridXColumn2->setColumnSize(sizeHeader6.getX());
+				pCDcdGridXColumn3->setColumnSize(sizeHeader2.getX());
+				pCDcdGridXColumn4->setColumnSize(sizeHeader6.getX());
+				pCDcdGridXColumn5->setColumnSize(sizeHeader6.getX());
+			}
+			{
+				//下りカスタマイズ時刻表(3)
+				CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayKudari));
+				CDcdGridXColumn* pCDcdGridXColumn2 = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayKudari));
+				CDcdGridXColumn* pCDcdGridXColumn3 = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsKudari));
+				CDcdGridXColumn* pCDcdGridXColumn4 = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayKudari));
+				CDcdGridXColumn* pCDcdGridXColumn5 = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayKudari));
+
+				//CdDcdSizeXy	sizeHeader1;
+				//CDcdTextbox	aCDcdTextbox1(CDcdTextbox(_T(""),
+				//	CdFontProp(9, _T("Meiryo UI")),
+				//	_T("京"), 1, 2, 2, CdPenProp(),
+				//	CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
+				//aCDcdTextbox1.getItemSize(&aCDcdTarget, &sizeHeader1);
+				
+				CdDcdSizeXy	sizeHeader2;
+				CDcdTextbox	aCDcdTextbox2(CDcdTextbox(_T(""),
+					CdFontProp(9, _T("Meiryo UI")),
+					_T("京都"), 1, 2, 2, CdPenProp(),
+					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
+				aCDcdTextbox2.getItemSize(&aCDcdTarget, &sizeHeader2);
+				//CdDcdSizeXy	sizeHeader3;
+				//CDcdTextbox	aCDcdTextbox3(CDcdTextbox(_T(""),
+				//	CdFontProp(9, _T("Meiryo UI")),
+				//	_T("京都京"), 1, 2, 2, CdPenProp(),
+				//	CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
+				//aCDcdTextbox3.getItemSize(&aCDcdTarget, &sizeHeader3);
+				CdDcdSizeXy	sizeHeader6;
+				CDcdTextbox	aCDcdTextbox6(CDcdTextbox(_T(""),
+					CdFontProp(9, _T("Meiryo UI")),
+					_T("京都京都京都"), 1, 2, 2, CdPenProp(),
+					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
+				aCDcdTextbox6.getItemSize(&aCDcdTarget, &sizeHeader6);
+
+				pCDcdGridXColumn->setColumnSize(sizeHeader6.getX());
+				pCDcdGridXColumn2->setColumnSize(sizeHeader6.getX());
+				pCDcdGridXColumn3->setColumnSize(sizeHeader2.getX());
+				pCDcdGridXColumn4->setColumnSize(sizeHeader6.getX());
+				pCDcdGridXColumn5->setColumnSize(sizeHeader6.getX());
+			}
+			{
+				//上りカスタマイズ時刻表(1)
+				CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayNobori));
+				CDcdGridXColumn* pCDcdGridXColumn2 = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayNobori));
+				CDcdGridXColumn* pCDcdGridXColumn3 = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_NyuusenJikokuDisplayNobori));
+				CDcdGridXColumn* pCDcdGridXColumn4 = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayNobori));
+				CDcdGridXColumn* pCDcdGridXColumn5 = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayNobori));
+				CDcdGridXColumn* pCDcdGridXColumn6 = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayNobori));
+
+				//CdDcdSizeXy	sizeHeader1;
+				//CDcdTextbox	aCDcdTextbox1(CDcdTextbox(_T(""),
+				//	CdFontProp(9, _T("Meiryo UI")),
+				//	_T("京"), 1, 2, 2, CdPenProp(),
+				//	CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
+				//aCDcdTextbox1.getItemSize(&aCDcdTarget, &sizeHeader1);
 				CdDcdSizeXy	sizeHeader2;
 				CDcdTextbox	aCDcdTextbox2(CDcdTextbox(_T(""),
 					CdFontProp(9, _T("Meiryo UI")),
@@ -1994,6 +2361,52 @@ void CWndDcdGridEki::OnCreate_Header()
 					_T("京都京"), 1, 2, 2, CdPenProp(),
 					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
 				aCDcdTextbox3.getItemSize(&aCDcdTarget, &sizeHeader3);
+				CdDcdSizeXy	sizeHeader4;
+				CDcdTextbox	aCDcdTextbox4(CDcdTextbox(_T(""),
+					CdFontProp(9, _T("Meiryo UI")),
+					_T("京都京都"), 1, 2, 2, CdPenProp(),
+					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
+				aCDcdTextbox4.getItemSize(&aCDcdTarget, &sizeHeader4);
+
+				pCDcdGridXColumn->setColumnSize(sizeHeader3.getX());
+				pCDcdGridXColumn2->setColumnSize(sizeHeader3.getX());
+				pCDcdGridXColumn3->setColumnSize(sizeHeader4.getX());
+				pCDcdGridXColumn4->setColumnSize(sizeHeader2.getX());
+				pCDcdGridXColumn5->setColumnSize(sizeHeader3.getX());
+				pCDcdGridXColumn6->setColumnSize(sizeHeader3.getX());
+			}
+			{
+				//上りカスタマイズ時刻表(2)
+				CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyabangouDisplayNobori));
+				CDcdGridXColumn* pCDcdGridXColumn2 = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayNobori));
+				CDcdGridXColumn* pCDcdGridXColumn3 = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayRowsNobori));
+				CDcdGridXColumn* pCDcdGridXColumn4 = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyaSyubetsuDisplayNobori));
+				CDcdGridXColumn* pCDcdGridXColumn5 = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyameiDisplayNobori));
+
+				//CdDcdSizeXy	sizeHeader1;
+				//CDcdTextbox	aCDcdTextbox1(CDcdTextbox(_T(""),
+				//	CdFontProp(9, _T("Meiryo UI")),
+				//	_T("京"), 1, 2, 2, CdPenProp(),
+				//	CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
+				//aCDcdTextbox1.getItemSize(&aCDcdTarget, &sizeHeader1);
+				
+				CdDcdSizeXy	sizeHeader2;
+				CDcdTextbox	aCDcdTextbox2(CDcdTextbox(_T(""),
+					CdFontProp(9, _T("Meiryo UI")),
+					_T("京都"), 1, 2, 2, CdPenProp(),
+					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
+				aCDcdTextbox2.getItemSize(&aCDcdTarget, &sizeHeader2);
+				//CdDcdSizeXy	sizeHeader3;
+				//CDcdTextbox	aCDcdTextbox3(CDcdTextbox(_T(""),
+				//	CdFontProp(9, _T("Meiryo UI")),
+				//	_T("京都京"), 1, 2, 2, CdPenProp(),
+				//	CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
+				//aCDcdTextbox3.getItemSize(&aCDcdTarget, &sizeHeader3);
 				CdDcdSizeXy	sizeHeader6;
 				CDcdTextbox	aCDcdTextbox6(CDcdTextbox(_T(""),
 					CdFontProp(9, _T("Meiryo UI")),
@@ -2001,16 +2414,56 @@ void CWndDcdGridEki::OnCreate_Header()
 					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
 				aCDcdTextbox6.getItemSize(&aCDcdTarget, &sizeHeader6);
 
-				pCDcdGridXColumn->setColumnSize(sizeHeader3.getX());
-				pCDcdGridXColumn2->setColumnSize(sizeHeader2.getX());
-				pCDcdGridXColumn3->setColumnSize(sizeHeader3.getX());
+				pCDcdGridXColumn->setColumnSize(sizeHeader6.getX());
+				pCDcdGridXColumn2->setColumnSize(sizeHeader6.getX());
+				pCDcdGridXColumn3->setColumnSize(sizeHeader2.getX());
 				pCDcdGridXColumn4->setColumnSize(sizeHeader6.getX());
 				pCDcdGridXColumn5->setColumnSize(sizeHeader6.getX());
-				pCDcdGridXColumn10->setColumnSize(sizeHeader1.getX());
-				pCDcdGridXColumn6->setColumnSize(sizeHeader6.getX());
-				pCDcdGridXColumn7->setColumnSize(sizeHeader6.getX());
-				pCDcdGridXColumn8->setColumnSize(sizeHeader3.getX());
-				pCDcdGridXColumn9->setColumnSize(sizeHeader3.getX());
+			}
+			{
+				//上りカスタマイズ時刻表(3)
+				CDcdGridXColumn* pCDcdGridXColumn = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayNobori));
+				CDcdGridXColumn* pCDcdGridXColumn2 = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayNobori));
+				CDcdGridXColumn* pCDcdGridXColumn3 = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsNobori));
+				CDcdGridXColumn* pCDcdGridXColumn4 = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayNobori));
+				CDcdGridXColumn* pCDcdGridXColumn5 = getCXDcdGrid()->getXColumn(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayNobori));
+
+				//CdDcdSizeXy	sizeHeader1;
+				//CDcdTextbox	aCDcdTextbox1(CDcdTextbox(_T(""),
+				//	CdFontProp(9, _T("Meiryo UI")),
+				//	_T("京"), 1, 2, 2, CdPenProp(),
+				//	CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
+				//aCDcdTextbox1.getItemSize(&aCDcdTarget, &sizeHeader1);
+				
+				CdDcdSizeXy	sizeHeader2;
+				CDcdTextbox	aCDcdTextbox2(CDcdTextbox(_T(""),
+					CdFontProp(9, _T("Meiryo UI")),
+					_T("京都"), 1, 2, 2, CdPenProp(),
+					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
+				aCDcdTextbox2.getItemSize(&aCDcdTarget, &sizeHeader2);
+				//CdDcdSizeXy	sizeHeader3;
+				//CDcdTextbox	aCDcdTextbox3(CDcdTextbox(_T(""),
+				//	CdFontProp(9, _T("Meiryo UI")),
+				//	_T("京都京"), 1, 2, 2, CdPenProp(),
+				//	CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
+				//aCDcdTextbox3.getItemSize(&aCDcdTarget, &sizeHeader3);
+				CdDcdSizeXy	sizeHeader6;
+				CDcdTextbox	aCDcdTextbox6(CDcdTextbox(_T(""),
+					CdFontProp(9, _T("Meiryo UI")),
+					_T("京都京都京都"), 1, 2, 2, CdPenProp(),
+					CConverter_WinGdi().CdBrushPropOf(WHITE_BRUSH)));
+				aCDcdTextbox6.getItemSize(&aCDcdTarget, &sizeHeader6);
+
+				pCDcdGridXColumn->setColumnSize(sizeHeader6.getX());
+				pCDcdGridXColumn2->setColumnSize(sizeHeader6.getX());
+				pCDcdGridXColumn3->setColumnSize(sizeHeader2.getX());
+				pCDcdGridXColumn4->setColumnSize(sizeHeader6.getX());
+				pCDcdGridXColumn5->setColumnSize(sizeHeader6.getX());
 			}
 			{
 				//在線表表示設定
@@ -2113,6 +2566,7 @@ void CWndDcdGridEki::OnCreate_Header()
 
 			getCXDcdGrid()->getYColumn(0)->setColumnSize(sizeEkimei.getY());
 			getCXDcdGrid()->getYColumn(1)->setColumnSize(sizeEkimei.getY());
+			getCXDcdGrid()->getYColumn(2)->setColumnSize(sizeEkimei.getY());
 		}
 	}
 	// --------------------------------
@@ -2133,71 +2587,106 @@ void CWndDcdGridEki::OnCreate_Header()
 			//	駅Index
 			CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_EkiIndex), 0);
+			CDcdGridCell* pCDcdGridCell2 = getCXDcdGrid()->getCell(
+				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_EkiIndex), 1);
 
 			Ou<CDcdTextbox>	pCDcdTextbox =
 				pCDcdGridCell->getIfDcDraw();
 			pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 			pCDcdTextbox->setCdBrushProp(aCdBrushProp);
+			Ou<CDcdTextbox>	pCDcdTextbox2 =
+				pCDcdGridCell2->getIfDcDraw();
+			pCDcdTextbox2->setCdDrawTextProp(aCdDrawTextProp);
+			pCDcdTextbox2->setCdBrushProp(aCdBrushProp);
 
 			CString	aString;
 			aString.LoadString(IDS_WORD_EkiIndex);
 			Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
+			Ou<CDcdTextbox>(pCDcdGridCell2->getIfDcDraw())->setText(_T(""));
 		}
 		{
 			//	駅名
 			CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_Ekimei), 0);
+			CDcdGridCell* pCDcdGridCell2 = getCXDcdGrid()->getCell(
+				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_Ekimei), 1);
 
 			Ou<CDcdTextbox>	pCDcdTextbox =
 				pCDcdGridCell->getIfDcDraw();
 			pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 			pCDcdTextbox->setCdBrushProp(aCdBrushProp);
+			Ou<CDcdTextbox>	pCDcdTextbox2 =
+				pCDcdGridCell2->getIfDcDraw();
+			pCDcdTextbox2->setCdDrawTextProp(aCdDrawTextProp);
+			pCDcdTextbox2->setCdBrushProp(aCdBrushProp);
 
 			CString	aString;
 			aString.LoadString(IDS_WORD_Ekimei);
 			Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
+			Ou<CDcdTextbox>(pCDcdGridCell2->getIfDcDraw())->setText(_T(""));
 		}
 		{
 			//	駅時刻形式
 			CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_Ekijikokukeisiki), 0);
+			CDcdGridCell* pCDcdGridCell2 = getCXDcdGrid()->getCell(
+				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_Ekijikokukeisiki), 1);
 
 			Ou<CDcdTextbox>	pCDcdTextbox =
 				pCDcdGridCell->getIfDcDraw();
 			pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 			pCDcdTextbox->setCdBrushProp(aCdBrushProp);
+			Ou<CDcdTextbox>	pCDcdTextbox2 =
+				pCDcdGridCell2->getIfDcDraw();
+			pCDcdTextbox2->setCdDrawTextProp(aCdDrawTextProp);
+			pCDcdTextbox2->setCdBrushProp(aCdBrushProp);
 
 			CString	aString;
 			aString.LoadString(IDS_WORD_Jikokukeisiki);
 			Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
+			Ou<CDcdTextbox>(pCDcdGridCell2->getIfDcDraw())->setText(_T(""));
 		}
 		{
 			//	駅規模
 			CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_Ekikibo), 0);
+			CDcdGridCell* pCDcdGridCell2 = getCXDcdGrid()->getCell(
+				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_Ekikibo), 1);
 
 			Ou<CDcdTextbox>	pCDcdTextbox =
 				pCDcdGridCell->getIfDcDraw();
 			pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 			pCDcdTextbox->setCdBrushProp(aCdBrushProp);
+			Ou<CDcdTextbox>	pCDcdTextbox2 =
+				pCDcdGridCell2->getIfDcDraw();
+			pCDcdTextbox2->setCdDrawTextProp(aCdDrawTextProp);
+			pCDcdTextbox2->setCdBrushProp(aCdBrushProp);
 
 			CString	aString;
 			aString.LoadString(IDS_WORD_Ekikibo);
 			Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
+			Ou<CDcdTextbox>(pCDcdGridCell2->getIfDcDraw())->setText(_T(""));
 		}
 		{
 			//	駅番線数
 			CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_EkiTrack2Count), 0);
+			CDcdGridCell* pCDcdGridCell2 = getCXDcdGrid()->getCell(
+				aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_EkiTrack2Count), 1);
 
 			Ou<CDcdTextbox>	pCDcdTextbox =
 				pCDcdGridCell->getIfDcDraw();
 			pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 			pCDcdTextbox->setCdBrushProp(aCdBrushProp);
+			Ou<CDcdTextbox>	pCDcdTextbox2 =
+				pCDcdGridCell2->getIfDcDraw();
+			pCDcdTextbox2->setCdDrawTextProp(aCdDrawTextProp);
+			pCDcdTextbox2->setCdBrushProp(aCdBrushProp);
 
 			CString	aString;
 			aString.LoadString(IDS_WORD_EkiTrack2Count);
 			Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
+			Ou<CDcdTextbox>(pCDcdGridCell2->getIfDcDraw())->setText(_T(""));
 		}
 		if (getDisplaySettingMode())
 		{
@@ -2217,6 +2706,42 @@ void CWndDcdGridEki::OnCreate_Header()
 				//aString.LoadString(IDS_WORD_EkiTrack2Count);
 				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
 				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("作業欄(起点側)"));
+
+
+				CDcdGridCell* pCDcdGridCell2 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(
+						CdEkiXColSpec::EColumnType::ColumnType_OperationOriginDownBeforeUpAfter), 1);
+
+				Ou<CDcdTextbox>	pCDcdTextbox2 =
+					pCDcdGridCell2->getIfDcDraw();
+				pCDcdTextbox2->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox2->setCdBrushProp(aCdBrushProp);
+
+				Ou<CDcdTextbox>(pCDcdGridCell2->getIfDcDraw())->setText(_T("増解"));
+
+
+				CDcdGridCell* pCDcdGridCell3= getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(
+						CdEkiXColSpec::EColumnType::ColumnType_OperationOrigin), 1);
+
+				Ou<CDcdTextbox>	pCDcdTextbox3 =
+					pCDcdGridCell3->getIfDcDraw();
+				pCDcdTextbox3->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox3->setCdBrushProp(aCdBrushProp);
+
+				Ou<CDcdTextbox>(pCDcdGridCell3->getIfDcDraw())->setText(_T("作業数"));
+
+
+				CDcdGridCell* pCDcdGridCell4 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(
+						CdEkiXColSpec::EColumnType::ColumnType_OperationOriginDownAfterUpBefore), 1);
+
+				Ou<CDcdTextbox>	pCDcdTextbox4 =
+					pCDcdGridCell4->getIfDcDraw();
+				pCDcdTextbox4->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox4->setCdBrushProp(aCdBrushProp);
+
+				Ou<CDcdTextbox>(pCDcdGridCell4->getIfDcDraw())->setText(_T("解増"));
 			}
 			{
 				//	前後作業欄(終点側)
@@ -2234,28 +2759,71 @@ void CWndDcdGridEki::OnCreate_Header()
 				//aString.LoadString(IDS_WORD_EkiTrack2Count);
 				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
 				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("作業欄(終点側)"));
+
+
+				CDcdGridCell* pCDcdGridCell2 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(
+						CdEkiXColSpec::EColumnType::ColumnType_OperationTerminalDownBeforeUpAfter), 1);
+
+				Ou<CDcdTextbox>	pCDcdTextbox2 =
+					pCDcdGridCell2->getIfDcDraw();
+				pCDcdTextbox2->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox2->setCdBrushProp(aCdBrushProp);
+
+				Ou<CDcdTextbox>(pCDcdGridCell2->getIfDcDraw())->setText(_T("増解"));
+
+
+				CDcdGridCell* pCDcdGridCell3 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(
+						CdEkiXColSpec::EColumnType::ColumnType_OperationTerminal), 1);
+
+				Ou<CDcdTextbox>	pCDcdTextbox3 =
+					pCDcdGridCell3->getIfDcDraw();
+				pCDcdTextbox3->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox3->setCdBrushProp(aCdBrushProp);
+
+				Ou<CDcdTextbox>(pCDcdGridCell3->getIfDcDraw())->setText(_T("作業数"));
+
+
+				CDcdGridCell* pCDcdGridCell4 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(
+						CdEkiXColSpec::EColumnType::ColumnType_OperationTerminalDownAfterUpBefore), 1);
+
+				Ou<CDcdTextbox>	pCDcdTextbox4 =
+					pCDcdGridCell4->getIfDcDraw();
+				pCDcdTextbox4->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox4->setCdBrushProp(aCdBrushProp);
+
+				Ou<CDcdTextbox>(pCDcdGridCell4->getIfDcDraw())->setText(_T("解増"));
 			}
 			{
 				//	番線表示省略設定
 				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_TrackOmit), 0);
+				CDcdGridCell* pCDcdGridCell2 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_TrackOmit), 1);
 
 				Ou<CDcdTextbox>	pCDcdTextbox =
 					pCDcdGridCell->getIfDcDraw();
 				pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 				pCDcdTextbox->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox2 =
+					pCDcdGridCell2->getIfDcDraw();
+				pCDcdTextbox2->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox2->setCdBrushProp(aCdBrushProp);
 
 				//CString	aString;
 				//aString.LoadString(IDS_WORD_EkiTrack2Count);
 				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
 				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("番線省略"));
+				Ou<CDcdTextbox>(pCDcdGridCell2->getIfDcDraw())->setText(_T(""));
 			}
 			{
-				//	下りカスタマイズ時刻表
+				//	下りカスタマイズ時刻表(1)
 				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayKudari), 0);
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayKudari), 0);
 
-				pCDcdGridCell->setAttachCellCount(10, 1);
+				pCDcdGridCell->setAttachCellCount(6, 1);
 				Ou<CDcdTextbox>	pCDcdTextbox =
 					pCDcdGridCell->getIfDcDraw();
 				pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
@@ -2264,14 +2832,60 @@ void CWndDcdGridEki::OnCreate_Header()
 				//CString	aString;
 				//aString.LoadString(IDS_WORD_EkiTrack2Count);
 				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
-				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("下りカスタマイズ時刻表(着時刻/番線/発時刻/列車番号/運用番号・段数/種別/列車名/始発駅/終着駅)"));
+				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("下りカスタマイズ時刻表1"));
+
+
+				CDcdGridCell* pCDcdGridCell2 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayKudari), 1);
+				CDcdGridCell* pCDcdGridCell3 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayKudari), 1);
+				CDcdGridCell* pCDcdGridCell4 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_NyuusenJikokuDisplayKudari), 1);
+				CDcdGridCell* pCDcdGridCell5 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayKudari), 1);
+				CDcdGridCell* pCDcdGridCell6 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayKudari), 1);
+				CDcdGridCell* pCDcdGridCell7 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayKudari), 1);
+
+				Ou<CDcdTextbox>	pCDcdTextbox2 =
+					pCDcdGridCell2->getIfDcDraw();
+				pCDcdTextbox2->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox2->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox3 =
+					pCDcdGridCell3->getIfDcDraw();
+				pCDcdTextbox3->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox3->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox4 =
+					pCDcdGridCell4->getIfDcDraw();
+				pCDcdTextbox4->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox4->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox5 =
+					pCDcdGridCell5->getIfDcDraw();
+				pCDcdTextbox5->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox5->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox6 =
+					pCDcdGridCell6->getIfDcDraw();
+				pCDcdTextbox6->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox6->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox7 =
+					pCDcdGridCell7->getIfDcDraw();
+				pCDcdTextbox7->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox7->setCdBrushProp(aCdBrushProp);
+
+				Ou<CDcdTextbox>(pCDcdGridCell2->getIfDcDraw())->setText(_T("始発駅"));
+				Ou<CDcdTextbox>(pCDcdGridCell3->getIfDcDraw())->setText(_T("着時刻"));
+				Ou<CDcdTextbox>(pCDcdGridCell4->getIfDcDraw())->setText(_T("入線時刻"));
+				Ou<CDcdTextbox>(pCDcdGridCell5->getIfDcDraw())->setText(_T("番線"));
+				Ou<CDcdTextbox>(pCDcdGridCell6->getIfDcDraw())->setText(_T("発時刻"));
+				Ou<CDcdTextbox>(pCDcdGridCell7->getIfDcDraw())->setText(_T("終着駅"));
 			}
 			{
-				//	上りカスタマイズ時刻表
+				//	下りカスタマイズ時刻表(2)
 				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
-					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayNobori), 0);
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyabangouDisplayKudari), 0);
 
-				pCDcdGridCell->setAttachCellCount(10, 1);
+				pCDcdGridCell->setAttachCellCount(5, 1);
 				Ou<CDcdTextbox>	pCDcdTextbox =
 					pCDcdGridCell->getIfDcDraw();
 				pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
@@ -2280,83 +2894,391 @@ void CWndDcdGridEki::OnCreate_Header()
 				//CString	aString;
 				//aString.LoadString(IDS_WORD_EkiTrack2Count);
 				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
-				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("上りカスタマイズ時刻表(着時刻/番線/発時刻/列車番号/運用番号・段数/種別/列車名/始発駅/終着駅)"));
+				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("下りカスタマイズ時刻表2(前列車情報表示)"));
+
+
+				CDcdGridCell* pCDcdGridCell2 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyabangouDisplayKudari), 1);
+				CDcdGridCell* pCDcdGridCell3 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayKudari), 1);
+				CDcdGridCell* pCDcdGridCell4 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayRowsKudari), 1);
+				CDcdGridCell* pCDcdGridCell5 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyaSyubetsuDisplayKudari), 1);
+				CDcdGridCell* pCDcdGridCell6 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyameiDisplayKudari), 1);
+
+				Ou<CDcdTextbox>	pCDcdTextbox2 =
+					pCDcdGridCell2->getIfDcDraw();
+				pCDcdTextbox2->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox2->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox3 =
+					pCDcdGridCell3->getIfDcDraw();
+				pCDcdTextbox3->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox3->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox4 =
+					pCDcdGridCell4->getIfDcDraw();
+				pCDcdTextbox4->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox4->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox5 =
+					pCDcdGridCell5->getIfDcDraw();
+				pCDcdTextbox5->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox5->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox6 =
+					pCDcdGridCell6->getIfDcDraw();
+				pCDcdTextbox6->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox6->setCdBrushProp(aCdBrushProp);
+
+				Ou<CDcdTextbox>(pCDcdGridCell2->getIfDcDraw())->setText(_T("列車番号"));
+				Ou<CDcdTextbox>(pCDcdGridCell3->getIfDcDraw())->setText(_T("運用番号"));
+				Ou<CDcdTextbox>(pCDcdGridCell4->getIfDcDraw())->setText(_T("段数"));
+				Ou<CDcdTextbox>(pCDcdGridCell5->getIfDcDraw())->setText(_T("列車種別"));
+				Ou<CDcdTextbox>(pCDcdGridCell6->getIfDcDraw())->setText(_T("列車名"));
+			}
+			{
+				//	下りカスタマイズ時刻表(3)
+				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayKudari), 0);
+
+				pCDcdGridCell->setAttachCellCount(5, 1);
+				Ou<CDcdTextbox>	pCDcdTextbox =
+					pCDcdGridCell->getIfDcDraw();
+				pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox->setCdBrushProp(aCdBrushProp);
+
+				//CString	aString;
+				//aString.LoadString(IDS_WORD_EkiTrack2Count);
+				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
+				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("下りカスタマイズ時刻表3(種別変更/次列車情報表示)"));
+
+
+				CDcdGridCell* pCDcdGridCell2 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayKudari), 1);
+				CDcdGridCell* pCDcdGridCell3 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayKudari), 1);
+				CDcdGridCell* pCDcdGridCell4 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsKudari), 1);
+				CDcdGridCell* pCDcdGridCell5 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayKudari), 1);
+				CDcdGridCell* pCDcdGridCell6 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayKudari), 1);
+
+				Ou<CDcdTextbox>	pCDcdTextbox2 =
+					pCDcdGridCell2->getIfDcDraw();
+				pCDcdTextbox2->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox2->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox3 =
+					pCDcdGridCell3->getIfDcDraw();
+				pCDcdTextbox3->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox3->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox4 =
+					pCDcdGridCell4->getIfDcDraw();
+				pCDcdTextbox4->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox4->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox5 =
+					pCDcdGridCell5->getIfDcDraw();
+				pCDcdTextbox5->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox5->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox6 =
+					pCDcdGridCell6->getIfDcDraw();
+				pCDcdTextbox6->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox6->setCdBrushProp(aCdBrushProp);
+
+				Ou<CDcdTextbox>(pCDcdGridCell2->getIfDcDraw())->setText(_T("列車番号"));
+				Ou<CDcdTextbox>(pCDcdGridCell3->getIfDcDraw())->setText(_T("運用番号"));
+				Ou<CDcdTextbox>(pCDcdGridCell4->getIfDcDraw())->setText(_T("段数"));
+				Ou<CDcdTextbox>(pCDcdGridCell5->getIfDcDraw())->setText(_T("列車種別"));
+				Ou<CDcdTextbox>(pCDcdGridCell6->getIfDcDraw())->setText(_T("列車名"));
+			}
+			{
+				//	上りカスタマイズ時刻表(1)
+				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayNobori), 0);
+
+				pCDcdGridCell->setAttachCellCount(6, 1);
+				Ou<CDcdTextbox>	pCDcdTextbox =
+					pCDcdGridCell->getIfDcDraw();
+				pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox->setCdBrushProp(aCdBrushProp);
+
+				//CString	aString;
+				//aString.LoadString(IDS_WORD_EkiTrack2Count);
+				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
+				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("上りカスタマイズ時刻表1"));
+
+
+				CDcdGridCell* pCDcdGridCell2 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OuterSihatsuDisplayNobori), 1);
+				CDcdGridCell* pCDcdGridCell3 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_ChakuJikokuDisplayNobori), 1);
+				CDcdGridCell* pCDcdGridCell4 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_NyuusenJikokuDisplayNobori), 1);
+				CDcdGridCell* pCDcdGridCell5 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayNobori), 1);
+				CDcdGridCell* pCDcdGridCell6 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_HatsuJikokuDisplayNobori), 1);
+				CDcdGridCell* pCDcdGridCell7 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OuterShuchakuDisplayNobori), 1);
+
+				Ou<CDcdTextbox>	pCDcdTextbox2 =
+					pCDcdGridCell2->getIfDcDraw();
+				pCDcdTextbox2->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox2->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox3 =
+					pCDcdGridCell3->getIfDcDraw();
+				pCDcdTextbox3->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox3->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox4 =
+					pCDcdGridCell4->getIfDcDraw();
+				pCDcdTextbox4->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox4->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox5 =
+					pCDcdGridCell5->getIfDcDraw();
+				pCDcdTextbox5->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox5->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox6 =
+					pCDcdGridCell6->getIfDcDraw();
+				pCDcdTextbox6->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox6->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox7 =
+					pCDcdGridCell7->getIfDcDraw();
+				pCDcdTextbox7->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox7->setCdBrushProp(aCdBrushProp);
+
+				Ou<CDcdTextbox>(pCDcdGridCell2->getIfDcDraw())->setText(_T("始発駅"));
+				Ou<CDcdTextbox>(pCDcdGridCell3->getIfDcDraw())->setText(_T("着時刻"));
+				Ou<CDcdTextbox>(pCDcdGridCell4->getIfDcDraw())->setText(_T("入線時刻"));
+				Ou<CDcdTextbox>(pCDcdGridCell5->getIfDcDraw())->setText(_T("番線"));
+				Ou<CDcdTextbox>(pCDcdGridCell6->getIfDcDraw())->setText(_T("発時刻"));
+				Ou<CDcdTextbox>(pCDcdGridCell7->getIfDcDraw())->setText(_T("終着駅"));
+			}
+			{
+				//	上りカスタマイズ時刻表(2)
+				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyabangouDisplayNobori), 0);
+
+				pCDcdGridCell->setAttachCellCount(5, 1);
+				Ou<CDcdTextbox>	pCDcdTextbox =
+					pCDcdGridCell->getIfDcDraw();
+				pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox->setCdBrushProp(aCdBrushProp);
+
+				//CString	aString;
+				//aString.LoadString(IDS_WORD_EkiTrack2Count);
+				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
+				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("上りカスタマイズ時刻表2(前列車情報表示)"));
+
+
+				CDcdGridCell* pCDcdGridCell2 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyabangouDisplayNobori), 1);
+				CDcdGridCell* pCDcdGridCell3 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayNobori), 1);
+				CDcdGridCell* pCDcdGridCell4 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayRowsNobori), 1);
+				CDcdGridCell* pCDcdGridCell5 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyaSyubetsuDisplayNobori), 1);
+				CDcdGridCell* pCDcdGridCell6 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_PrevRessyameiDisplayNobori), 1);
+
+				Ou<CDcdTextbox>	pCDcdTextbox2 =
+					pCDcdGridCell2->getIfDcDraw();
+				pCDcdTextbox2->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox2->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox3 =
+					pCDcdGridCell3->getIfDcDraw();
+				pCDcdTextbox3->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox3->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox4 =
+					pCDcdGridCell4->getIfDcDraw();
+				pCDcdTextbox4->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox4->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox5 =
+					pCDcdGridCell5->getIfDcDraw();
+				pCDcdTextbox5->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox5->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox6 =
+					pCDcdGridCell6->getIfDcDraw();
+				pCDcdTextbox6->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox6->setCdBrushProp(aCdBrushProp);
+
+				Ou<CDcdTextbox>(pCDcdGridCell2->getIfDcDraw())->setText(_T("列車番号"));
+				Ou<CDcdTextbox>(pCDcdGridCell3->getIfDcDraw())->setText(_T("運用番号"));
+				Ou<CDcdTextbox>(pCDcdGridCell4->getIfDcDraw())->setText(_T("段数"));
+				Ou<CDcdTextbox>(pCDcdGridCell5->getIfDcDraw())->setText(_T("列車種別"));
+				Ou<CDcdTextbox>(pCDcdGridCell6->getIfDcDraw())->setText(_T("列車名"));
+			}
+			{
+				//	上りカスタマイズ時刻表(3)
+				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayNobori), 0);
+
+				pCDcdGridCell->setAttachCellCount(5, 1);
+				Ou<CDcdTextbox>	pCDcdTextbox =
+					pCDcdGridCell->getIfDcDraw();
+				pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox->setCdBrushProp(aCdBrushProp);
+
+				//CString	aString;
+				//aString.LoadString(IDS_WORD_EkiTrack2Count);
+				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
+				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("上りカスタマイズ時刻表3(種別変更/次列車情報表示)"));
+
+
+				CDcdGridCell* pCDcdGridCell2 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayNobori), 1);
+				CDcdGridCell* pCDcdGridCell3 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayNobori), 1);
+				CDcdGridCell* pCDcdGridCell4 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsNobori), 1);
+				CDcdGridCell* pCDcdGridCell5 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayNobori), 1);
+				CDcdGridCell* pCDcdGridCell6 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayNobori), 1);
+
+				Ou<CDcdTextbox>	pCDcdTextbox2 =
+					pCDcdGridCell2->getIfDcDraw();
+				pCDcdTextbox2->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox2->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox3 =
+					pCDcdGridCell3->getIfDcDraw();
+				pCDcdTextbox3->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox3->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox4 =
+					pCDcdGridCell4->getIfDcDraw();
+				pCDcdTextbox4->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox4->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox5 =
+					pCDcdGridCell5->getIfDcDraw();
+				pCDcdTextbox5->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox5->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox6 =
+					pCDcdGridCell6->getIfDcDraw();
+				pCDcdTextbox6->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox6->setCdBrushProp(aCdBrushProp);
+
+				Ou<CDcdTextbox>(pCDcdGridCell2->getIfDcDraw())->setText(_T("列車番号"));
+				Ou<CDcdTextbox>(pCDcdGridCell3->getIfDcDraw())->setText(_T("運用番号"));
+				Ou<CDcdTextbox>(pCDcdGridCell4->getIfDcDraw())->setText(_T("段数"));
+				Ou<CDcdTextbox>(pCDcdGridCell5->getIfDcDraw())->setText(_T("列車種別"));
+				Ou<CDcdTextbox>(pCDcdGridCell6->getIfDcDraw())->setText(_T("列車名"));
 			}
 			{
 				//	在線表表示設定
 				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_DiagramTrackDisplay), 0);
+				CDcdGridCell* pCDcdGridCell2 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_DiagramTrackDisplay), 1);
 
 				Ou<CDcdTextbox>	pCDcdTextbox =
 					pCDcdGridCell->getIfDcDraw();
 				pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 				pCDcdTextbox->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox2 =
+					pCDcdGridCell2->getIfDcDraw();
+				pCDcdTextbox2->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox2->setCdBrushProp(aCdBrushProp);
 
 				//CString	aString;
 				//aString.LoadString(IDS_WORD_EkiTrack2Count);
 				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
 				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("在線表"));
+				Ou<CDcdTextbox>(pCDcdGridCell2->getIfDcDraw())->setText(_T(""));
 			}
 			{
 				//	ダイヤグラム列車情報表示
 				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_DiagramRessyajouhouHyoujiKudari), 0);
+				CDcdGridCell* pCDcdGridCell2 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_DiagramRessyajouhouHyoujiKudari), 1);
+				CDcdGridCell* pCDcdGridCell3 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_DiagramRessyajouhouHyoujiNobori), 1);
 
 				pCDcdGridCell->setAttachCellCount(2, 1);
 				Ou<CDcdTextbox>	pCDcdTextbox =
 					pCDcdGridCell->getIfDcDraw();
 				pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 				pCDcdTextbox->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox2 =
+					pCDcdGridCell2->getIfDcDraw();
+				pCDcdTextbox2->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox2->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox3 =
+					pCDcdGridCell3->getIfDcDraw();
+				pCDcdTextbox3->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox3->setCdBrushProp(aCdBrushProp);
 
 				//CString	aString;
 				//aString.LoadString(IDS_WORD_EkiTrack2Count);
 				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
-				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("列車情報(下り/上り)"));
+				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("ダイヤグラム列車情報"));
+				Ou<CDcdTextbox>(pCDcdGridCell2->getIfDcDraw())->setText(_T("下り"));
+				Ou<CDcdTextbox>(pCDcdGridCell3->getIfDcDraw())->setText(_T("上り"));
 			}
 			{
 				//	この駅から次の駅までの距離
 				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_NextEkiDistance), 0);
+				CDcdGridCell* pCDcdGridCell2 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_NextEkiDistance), 1);
 
 				Ou<CDcdTextbox>	pCDcdTextbox =
 					pCDcdGridCell->getIfDcDraw();
 				pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 				pCDcdTextbox->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox2 =
+					pCDcdGridCell2->getIfDcDraw();
+				pCDcdTextbox2->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox2->setCdBrushProp(aCdBrushProp);
 
 				//CString	aString;
 				//aString.LoadString(IDS_WORD_EkiTrack2Count);
 				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
 				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("駅間距離"));
+				Ou<CDcdTextbox>(pCDcdGridCell2->getIfDcDraw())->setText(_T(""));
 			}
 			{
 				//	この駅から次の駅までの背景色設定
 				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_DiagramColorNextEki), 0);
+				CDcdGridCell* pCDcdGridCell2 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_DiagramColorNextEki), 1);
 
 				Ou<CDcdTextbox>	pCDcdTextbox =
 					pCDcdGridCell->getIfDcDraw();
 				pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 				pCDcdTextbox->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox2 =
+					pCDcdGridCell2->getIfDcDraw();
+				pCDcdTextbox2->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox2->setCdBrushProp(aCdBrushProp);
 
 				//CString	aString;
 				//aString.LoadString(IDS_WORD_EkiTrack2Count);
 				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
 				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("駅間背景色"));
+				Ou<CDcdTextbox>(pCDcdGridCell2->getIfDcDraw())->setText(_T(""));
 			}
 			{
 				//	箱ダイヤで表示するか否か
 				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationTableDisplayJikoku), 0);
+				CDcdGridCell* pCDcdGridCell2 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_OperationTableDisplayJikoku), 1);
 
 				Ou<CDcdTextbox>	pCDcdTextbox =
 					pCDcdGridCell->getIfDcDraw();
 				pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 				pCDcdTextbox->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox2 =
+					pCDcdGridCell2->getIfDcDraw();
+				pCDcdTextbox2->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox2->setCdBrushProp(aCdBrushProp);
 
 				//CString	aString;
 				//aString.LoadString(IDS_WORD_EkiTrack2Count);
 				//Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
 				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText(_T("箱ダイヤ"));
+				Ou<CDcdTextbox>(pCDcdGridCell2->getIfDcDraw())->setText(_T(""));
 			}
 		}
 		else
@@ -2365,30 +3287,44 @@ void CWndDcdGridEki::OnCreate_Header()
 				//	分岐駅設定
 				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_EkiBrunch), 0);
+				CDcdGridCell* pCDcdGridCell2 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_EkiBrunch), 1);
 
 				pCDcdGridCell->setAttachCellCount(1, 1);
 				Ou<CDcdTextbox>	pCDcdTextbox =
 					pCDcdGridCell->getIfDcDraw();
 				pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 				pCDcdTextbox->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox2 =
+					pCDcdGridCell2->getIfDcDraw();
+				pCDcdTextbox2->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox2->setCdBrushProp(aCdBrushProp);
 
 				CString	aString;
 				aString.LoadString(IDS_WORD_Brunch);
 				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
+				Ou<CDcdTextbox>(pCDcdGridCell2->getIfDcDraw())->setText(_T(""));
 			}
 			{
 				//	環状線設定
 				CDcdGridCell* pCDcdGridCell = getCXDcdGrid()->getCell(
 					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_EkiLoop), 0);
+				CDcdGridCell* pCDcdGridCell2 = getCXDcdGrid()->getCell(
+					aCdEkiXColSpecCont.ColumnNumberFromSpec(CdEkiXColSpec::EColumnType::ColumnType_EkiLoop), 1);
 
 				Ou<CDcdTextbox>	pCDcdTextbox =
 					pCDcdGridCell->getIfDcDraw();
 				pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
 				pCDcdTextbox->setCdBrushProp(aCdBrushProp);
+				Ou<CDcdTextbox>	pCDcdTextbox2 =
+					pCDcdGridCell2->getIfDcDraw();
+				pCDcdTextbox2->setCdDrawTextProp(aCdDrawTextProp);
+				pCDcdTextbox2->setCdBrushProp(aCdBrushProp);
 
 				CString	aString;
 				aString.LoadString(IDS_WORD_Loop);
 				Ou<CDcdTextbox>(pCDcdGridCell->getIfDcDraw())->setText((LPCTSTR)aString);
+				Ou<CDcdTextbox>(pCDcdGridCell2->getIfDcDraw())->setText(_T(""));
 			}
 		}
 	}
@@ -3134,8 +4070,9 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			{
 				//カスタマイズ時刻表下り着時刻が有効なのは、駅時刻形式が発着・下り着時刻・下り発着の場合
 				//ただし、発時刻表示が無効の場合は、着時刻表示を有効→無効に変更しない
+				//Ver2.06.21 上り着時刻の場合でも有効に。また、下り着時刻の場合は無効にできないようにする。（=変更できないようにする) 
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
-					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
 				{
 					if (!pCentDedEki->getJikokuhyouChakuJikokuDisplayKudari())
@@ -3146,6 +4083,17 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 					{
 						pCentDedEki->setJikokuhyouChakuJikokuDisplayKudari(false);
 					}
+				}
+			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_NyuusenJikokuDisplayKudari)
+			{
+				//カスタマイズ時刻表下り入線時刻が有効なのは、駅時刻形式が発着・上り着・下り発着の場合
+				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
+				{
+					pCentDedEki->setJikokuhyouNyuusenJikokuDisplayKudari(
+						!pCentDedEki->getJikokuhyouNyuusenJikokuDisplayKudari());
 				}
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayKudari)
@@ -3164,7 +4112,8 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			{
 				//カスタマイズ時刻表下り発時刻が有効なのは、駅時刻形式が下り着時刻以外の場合
 				//ただし、着時刻表示が無効の場合は、発時刻表示を有効→無効に変更しない
-				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku)
+				//Ver2.06.21 下り着時刻の場合でも有効に。また、上り着時刻の場合は無効にできないようにする。（=変更できないようにする) 
+				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku)
 				{
 					if (!pCentDedEki->getJikokuhyouHatsuJikokuDisplayKudari())
 					{
@@ -3176,10 +4125,104 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 					}
 				}
 			}
-			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayKudari)
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_PrevRessyabangouDisplayKudari)
 			{
 				//カスタマイズ時刻表下り列車番号が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
+				{
+					if (pCentDedEki->getJikokuhyouPrevRessyabangouDisplayKudari() >= 3)
+					{
+						pCentDedEki->setJikokuhyouPrevRessyabangouDisplayKudari(0);
+					}
+					else
+					{
+						pCentDedEki->setJikokuhyouPrevRessyabangouDisplayKudari(
+							pCentDedEki->getJikokuhyouPrevRessyabangouDisplayKudari() + 1);
+					}
+				}
+			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayKudari)
+			{
+				//カスタマイズ時刻表下り前列車運用番号が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
+				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
+				{
+					if (pCentDedEki->getJikokuhyouPrevOperationNumberDisplayKudari() >= 4)
+					{
+						pCentDedEki->setJikokuhyouPrevOperationNumberDisplayKudari(0);
+					}
+					else
+					{
+						pCentDedEki->setJikokuhyouPrevOperationNumberDisplayKudari(
+							pCentDedEki->getJikokuhyouPrevOperationNumberDisplayKudari() + 1);
+					}
+				}
+			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayRowsKudari)
+			{
+				//カスタマイズ時刻表下り前列車運用番号が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
+				//段数を変更可能なのは、運用番号欄がある場合
+				if ((pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku) &&
+					pCentDedEki->getJikokuhyouPrevOperationNumberDisplayKudari() > 0)
+				{
+					if (pCentDedEki->getJikokuhyouPrevOperationNumberDisplayRowsKudari() >= 5)
+					{
+						pCentDedEki->setJikokuhyouPrevOperationNumberDisplayRowsKudari(1);
+					}
+					else
+					{
+						pCentDedEki->setJikokuhyouPrevOperationNumberDisplayRowsKudari(
+							pCentDedEki->getJikokuhyouPrevOperationNumberDisplayRowsKudari() + 1);
+					}
+				}
+			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_PrevRessyaSyubetsuDisplayKudari)
+			{
+				//カスタマイズ時刻表下り前列車列車種別が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
+				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
+				{
+					if (pCentDedEki->getJikokuhyouPrevRessyaSyubetsuDisplayKudari() >= 3)
+					{
+						pCentDedEki->setJikokuhyouPrevRessyaSyubetsuDisplayKudari(0);
+					}
+					else
+					{
+						pCentDedEki->setJikokuhyouPrevRessyaSyubetsuDisplayKudari(
+							pCentDedEki->getJikokuhyouPrevRessyaSyubetsuDisplayKudari() + 1);
+					}
+				}
+			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_PrevRessyameiDisplayKudari)
+			{
+				//カスタマイズ時刻表下り前列車列車名が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
+				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
+				{
+					if (pCentDedEki->getJikokuhyouPrevRessyameiDisplayKudari() >= 3)
+					{
+						pCentDedEki->setJikokuhyouPrevRessyameiDisplayKudari(0);
+					}
+					else
+					{
+						pCentDedEki->setJikokuhyouPrevRessyameiDisplayKudari(
+							pCentDedEki->getJikokuhyouPrevRessyameiDisplayKudari() + 1);
+					}
+				}
+			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayKudari)
+			{
+				//カスタマイズ時刻表下り列車番号が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
+				//Ver2.06.21 下り着時刻の場合も有効に
+				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
 				{
@@ -3197,7 +4240,9 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayKudari)
 			{
 				//カスタマイズ時刻表下り運用番号が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
+				//Ver2.06.21 下り着時刻の場合も有効に
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
 				{
@@ -3216,7 +4261,9 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			{
 				//カスタマイズ時刻表下り運用番号が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
 				//段数を変更可能なのは、運用番号欄がある場合
+				//Ver2.06.21 下り着時刻の場合も有効に
 				if ((pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku) &&
 					pCentDedEki->getJikokuhyouOperationNumberDisplayKudari() > 0)
@@ -3235,7 +4282,9 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayKudari)
 			{
 				//カスタマイズ時刻表下り列車種別が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
+				//Ver2.06.21 下り着時刻の場合も有効に
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
 				{
@@ -3253,7 +4302,9 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayKudari)
 			{
 				//カスタマイズ時刻表下り列車名が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
+				//Ver2.06.21 下り着時刻の場合も有効に
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
 				{
@@ -3294,8 +4345,9 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			{
 				//カスタマイズ時刻表上り着時刻が有効なのは、駅時刻形式が発着・上り着時刻・上り発着の場合
 				//ただし、発時刻表示が無効の場合は、着時刻表示を有効→無効に変更しない
+				//Ver2.06.21 下り着時刻の場合も有効に。上り着時刻の場合は変更不可(常時表示)に。
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
-					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
 				{
 					if (!pCentDedEki->getJikokuhyouChakuJikokuDisplayNobori())
@@ -3306,6 +4358,17 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 					{
 						pCentDedEki->setJikokuhyouChakuJikokuDisplayNobori(false);
 					}
+				}
+			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_NyuusenJikokuDisplayNobori)
+			{
+				//カスタマイズ時刻表上り入線時刻が有効なのは、駅時刻形式が発着・下り着・上り発着の場合
+				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
+				{
+					pCentDedEki->setJikokuhyouNyuusenJikokuDisplayNobori(
+						!pCentDedEki->getJikokuhyouNyuusenJikokuDisplayNobori());
 				}
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayNobori)
@@ -3324,7 +4387,8 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			{
 				//カスタマイズ時刻表上り発時刻が有効なのは、駅時刻形式が上り着時刻以外の場合
 				//ただし、着時刻表示が無効の場合は、発時刻表示を有効→無効に変更しない
-				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku)
+				//Ver2.06.21 上り着時刻の場合も有効に。下り着時刻の場合は変更不可(常時表示)に。
+				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku)
 				{
 					if (!pCentDedEki->getJikokuhyouHatsuJikokuDisplayNobori())
 					{
@@ -3336,11 +4400,104 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 					}
 				}
 			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_PrevRessyabangouDisplayNobori)
+			{
+				//カスタマイズ時刻表上り前列車列車番号が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
+				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
+				{
+					if (pCentDedEki->getJikokuhyouPrevRessyabangouDisplayNobori() >= 3)
+					{
+						pCentDedEki->setJikokuhyouPrevRessyabangouDisplayNobori(0);
+					}
+					else
+					{
+						pCentDedEki->setJikokuhyouPrevRessyabangouDisplayNobori(
+							pCentDedEki->getJikokuhyouPrevRessyabangouDisplayNobori() + 1);
+					}
+				}
+			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayNobori)
+			{
+				//カスタマイズ時刻表上り前列車運用番号が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
+				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
+				{
+					if (pCentDedEki->getJikokuhyouPrevOperationNumberDisplayNobori() >= 4)
+					{
+						pCentDedEki->setJikokuhyouPrevOperationNumberDisplayNobori(0);
+					}
+					else
+					{
+						pCentDedEki->setJikokuhyouPrevOperationNumberDisplayNobori(
+							pCentDedEki->getJikokuhyouPrevOperationNumberDisplayNobori() + 1);
+					}
+				}
+			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayRowsNobori)
+			{
+				//カスタマイズ時刻表上り前列車運用番号が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
+				if ((pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku) &&
+					pCentDedEki->getJikokuhyouPrevOperationNumberDisplayNobori() > 0)
+				{
+					if (pCentDedEki->getJikokuhyouPrevOperationNumberDisplayRowsNobori() >= 5)
+					{
+						pCentDedEki->setJikokuhyouPrevOperationNumberDisplayRowsNobori(1);
+					}
+					else
+					{
+						pCentDedEki->setJikokuhyouPrevOperationNumberDisplayRowsNobori(
+							pCentDedEki->getJikokuhyouPrevOperationNumberDisplayRowsNobori() + 1);
+					}
+				}
+			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_PrevRessyaSyubetsuDisplayNobori)
+			{
+				//カスタマイズ時刻表上り前列車列車種別が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
+				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
+				{
+					if (pCentDedEki->getJikokuhyouPrevRessyaSyubetsuDisplayNobori() >= 3)
+					{
+						pCentDedEki->setJikokuhyouPrevRessyaSyubetsuDisplayNobori(0);
+					}
+					else
+					{
+						pCentDedEki->setJikokuhyouPrevRessyaSyubetsuDisplayNobori(
+							pCentDedEki->getJikokuhyouPrevRessyaSyubetsuDisplayNobori() + 1);
+					}
+				}
+			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_PrevRessyameiDisplayNobori)
+			{
+				//カスタマイズ時刻表上り前列車列車名が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
+				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
+				{
+					if (pCentDedEki->getJikokuhyouPrevRessyameiDisplayNobori() >= 3)
+					{
+						pCentDedEki->setJikokuhyouPrevRessyameiDisplayNobori(0);
+					}
+					else
+					{
+						pCentDedEki->setJikokuhyouPrevRessyameiDisplayNobori(
+							pCentDedEki->getJikokuhyouPrevRessyameiDisplayNobori() + 1);
+					}
+				}
+			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayNobori)
 			{
 				//カスタマイズ時刻表上り列車番号が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
+				//Ver2.06.21 上り着時刻の場合も有効に
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
 				{
 					if (pCentDedEki->getJikokuhyouRessyabangouDisplayNobori() >= 3)
@@ -3357,8 +4514,10 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayNobori)
 			{
 				//カスタマイズ時刻表上り運用番号が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
+				//Ver2.06.21 上り着時刻の場合も有効に
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
 				{
 					if (pCentDedEki->getJikokuhyouOperationNumberDisplayNobori() >= 4)
@@ -3375,8 +4534,10 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsNobori)
 			{
 				//カスタマイズ時刻表上り運用番号が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
+				//Ver2.06.21 上り着時刻の場合も有効に
 				if ((pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)&&
 					pCentDedEki->getJikokuhyouOperationNumberDisplayNobori() > 0)
 				{
@@ -3394,8 +4555,10 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayNobori)
 			{
 				//カスタマイズ時刻表上り列車種別が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
+				//Ver2.06.21 上り着時刻の場合も有効に
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
 				{
 					if (pCentDedEki->getJikokuhyouRessyaSyubetsuDisplayNobori() >= 3)
@@ -3412,8 +4575,10 @@ int CWndDcdGridEki::OnEkiSettingNext_Process(BOOL bQueryEnable, int iType)
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayNobori)
 			{
 				//カスタマイズ時刻表上り列車名が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
+				//Ver2.06.21 上り着時刻の場合も有効に
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
 				{
 					if (pCentDedEki->getJikokuhyouRessyameiDisplayNobori() >= 3)
@@ -3705,8 +4870,9 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			{
 				//カスタマイズ時刻表下り着時刻が有効なのは、駅時刻形式が発着・下り着時刻・下り発着の場合
 				//ただし、発時刻表示が無効の場合は、着時刻表示を有効→無効に変更しない
+				//Ver2.06.21 上り着時刻の場合でも有効に。また、下り着時刻の場合は無効にできないようにする。（=変更できないようにする) 
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
-					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
 				{
 					if (!pCentDedEki->getJikokuhyouChakuJikokuDisplayKudari())
@@ -3717,6 +4883,15 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 					{
 						pCentDedEki->setJikokuhyouChakuJikokuDisplayKudari(false);
 					}
+				}
+			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_NyuusenJikokuDisplayKudari)
+			{
+				//カスタマイズ時刻表下り入線時刻が有効なのは、駅時刻形式が下り着時刻以外の場合
+				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku)
+				{
+					pCentDedEki->setJikokuhyouNyuusenJikokuDisplayKudari(
+						!pCentDedEki->getJikokuhyouNyuusenJikokuDisplayKudari());
 				}
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayKudari)
@@ -3735,7 +4910,8 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			{
 				//カスタマイズ時刻表下り発時刻が有効なのは、駅時刻形式が下り着時刻以外の場合
 				//ただし、着時刻表示が無効の場合は、発時刻表示を有効→無効に変更しない
-				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku)
+				//Ver2.06.21 下り着時刻の場合でも有効に。また、上り着時刻の場合は無効にできないようにする。（=変更できないようにする) 
+				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku)
 				{
 					if (!pCentDedEki->getJikokuhyouHatsuJikokuDisplayKudari())
 					{
@@ -3747,10 +4923,104 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 					}
 				}
 			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_PrevRessyabangouDisplayKudari)
+			{
+				//カスタマイズ時刻表下り前列車列車番号が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
+				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
+				{
+					if (pCentDedEki->getJikokuhyouPrevRessyabangouDisplayKudari() <= 0)
+					{
+						pCentDedEki->setJikokuhyouPrevRessyabangouDisplayKudari(3);
+					}
+					else
+					{
+						pCentDedEki->setJikokuhyouPrevRessyabangouDisplayKudari(
+							pCentDedEki->getJikokuhyouPrevRessyabangouDisplayKudari() - 1);
+					}
+				}
+			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayKudari)
+			{
+				//カスタマイズ時刻表下り前列車運用番号が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
+				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
+				{
+					if (pCentDedEki->getJikokuhyouPrevOperationNumberDisplayKudari() <= 0)
+					{
+						pCentDedEki->setJikokuhyouPrevOperationNumberDisplayKudari(4);
+					}
+					else
+					{
+						pCentDedEki->setJikokuhyouPrevOperationNumberDisplayKudari(
+							pCentDedEki->getJikokuhyouPrevOperationNumberDisplayKudari() - 1);
+					}
+				}
+			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayRowsKudari)
+			{
+				//カスタマイズ時刻表下り前列車運用番号が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
+				//段数を変更可能なのは、運用番号欄がある場合
+				if ((pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku) &&
+					pCentDedEki->getJikokuhyouPrevOperationNumberDisplayKudari() > 0)
+				{
+					if (pCentDedEki->getJikokuhyouPrevOperationNumberDisplayRowsKudari() <= 1)
+					{
+						pCentDedEki->setJikokuhyouPrevOperationNumberDisplayRowsKudari(5);
+					}
+					else
+					{
+						pCentDedEki->setJikokuhyouPrevOperationNumberDisplayRowsKudari(
+							pCentDedEki->getJikokuhyouPrevOperationNumberDisplayRowsKudari() - 1);
+					}
+				}
+			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_PrevRessyaSyubetsuDisplayKudari)
+			{
+				//カスタマイズ時刻表下り前列車列車種別が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
+				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
+				{
+					if (pCentDedEki->getJikokuhyouPrevRessyaSyubetsuDisplayKudari() <= 0)
+					{
+						pCentDedEki->setJikokuhyouPrevRessyaSyubetsuDisplayKudari(3);
+					}
+					else
+					{
+						pCentDedEki->setJikokuhyouPrevRessyaSyubetsuDisplayKudari(
+							pCentDedEki->getJikokuhyouPrevRessyaSyubetsuDisplayKudari() - 1);
+					}
+				}
+			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_PrevRessyameiDisplayKudari)
+			{
+				//カスタマイズ時刻表下り前列車列車名が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
+				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
+				{
+					if (pCentDedEki->getJikokuhyouPrevRessyameiDisplayKudari() <= 0)
+					{
+						pCentDedEki->setJikokuhyouPrevRessyameiDisplayKudari(3);
+					}
+					else
+					{
+						pCentDedEki->setJikokuhyouPrevRessyameiDisplayKudari(
+							pCentDedEki->getJikokuhyouPrevRessyameiDisplayKudari() - 1);
+					}
+				}
+			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayKudari)
 			{
 				//カスタマイズ時刻表下り列車番号が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
+				//Ver2.06.21 下り着時刻の場合も有効に
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
 				{
@@ -3768,7 +5038,9 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayKudari)
 			{
 				//カスタマイズ時刻表下り運用番号が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
+				//Ver2.06.21 下り着時刻の場合も有効に
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
 				{
@@ -3787,7 +5059,9 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			{
 				//カスタマイズ時刻表下り運用番号が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
 				//段数を変更可能なのは、運用番号欄がある場合
+				//Ver2.06.21 下り着時刻の場合も有効に
 				if ((pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku) &&
 					pCentDedEki->getJikokuhyouOperationNumberDisplayKudari() > 0)
@@ -3806,7 +5080,9 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayKudari)
 			{
 				//カスタマイズ時刻表下り列車種別が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
+				//Ver2.06.21 下り着時刻の場合も有効に
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
 				{
@@ -3824,7 +5100,9 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayKudari)
 			{
 				//カスタマイズ時刻表下り列車名が有効なのは、駅時刻形式が発着・上り着時刻・下り発着の場合
+				//Ver2.06.21 下り着時刻の場合も有効に
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
 				{
@@ -3865,8 +5143,9 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			{
 				//カスタマイズ時刻表上り着時刻が有効なのは、駅時刻形式が発着・上り着時刻・上り発着の場合
 				//ただし、発時刻表示が無効の場合は、着時刻表示を有効→無効に変更しない
+				//Ver2.06.21 下り着時刻の場合も有効に。上り着時刻の場合は変更不可(常時表示)に。
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
-					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
 				{
 					if (!pCentDedEki->getJikokuhyouChakuJikokuDisplayNobori())
@@ -3877,6 +5156,15 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 					{
 						pCentDedEki->setJikokuhyouChakuJikokuDisplayNobori(false);
 					}
+				}
+			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_NyuusenJikokuDisplayNobori)
+			{
+				//カスタマイズ時刻表上り入線時刻が有効なのは、駅時刻形式が上り着時刻以外の場合
+				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku)
+				{
+					pCentDedEki->setJikokuhyouNyuusenJikokuDisplayNobori(
+						!pCentDedEki->getJikokuhyouNyuusenJikokuDisplayNobori());
 				}
 			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_TrackDisplayNobori)
@@ -3895,7 +5183,8 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			{
 				//カスタマイズ時刻表上り発時刻が有効なのは、駅時刻形式が上り着時刻以外の場合
 				//ただし、着時刻表示が無効の場合は、発時刻表示を有効→無効に変更しない
-				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku)
+				//Ver2.06.21 上り着時刻の場合も有効に。下り着時刻の場合は変更不可(常時表示)に。
+				if (pCentDedEki->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku)
 				{
 					if (!pCentDedEki->getJikokuhyouHatsuJikokuDisplayNobori())
 					{
@@ -3907,11 +5196,104 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 					}
 				}
 			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_PrevRessyabangouDisplayNobori)
+			{
+				//カスタマイズ時刻表上り前列車列車番号が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
+				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
+				{
+					if (pCentDedEki->getJikokuhyouPrevRessyabangouDisplayNobori() <= 0)
+					{
+						pCentDedEki->setJikokuhyouPrevRessyabangouDisplayNobori(3);
+					}
+					else
+					{
+						pCentDedEki->setJikokuhyouPrevRessyabangouDisplayNobori(
+							pCentDedEki->getJikokuhyouPrevRessyabangouDisplayNobori() - 1);
+					}
+				}
+			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayNobori)
+			{
+				//カスタマイズ時刻表上り前列車運用番号が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
+				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
+				{
+					if (pCentDedEki->getJikokuhyouPrevOperationNumberDisplayNobori() <= 0)
+					{
+						pCentDedEki->setJikokuhyouPrevOperationNumberDisplayNobori(4);
+					}
+					else
+					{
+						pCentDedEki->setJikokuhyouPrevOperationNumberDisplayNobori(
+							pCentDedEki->getJikokuhyouPrevOperationNumberDisplayNobori() - 1);
+					}
+				}
+			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_PrevOperationNumberDisplayRowsNobori)
+			{
+				//カスタマイズ時刻表上り前列車運用番号が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
+				if ((pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku) &&
+					pCentDedEki->getJikokuhyouPrevOperationNumberDisplayNobori() > 0)
+				{
+					if (pCentDedEki->getJikokuhyouPrevOperationNumberDisplayRowsNobori() <= 1)
+					{
+						pCentDedEki->setJikokuhyouPrevOperationNumberDisplayRowsNobori(5);
+					}
+					else
+					{
+						pCentDedEki->setJikokuhyouPrevOperationNumberDisplayRowsNobori(
+							pCentDedEki->getJikokuhyouPrevOperationNumberDisplayRowsNobori() - 1);
+					}
+				}
+			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_PrevRessyaSyubetsuDisplayNobori)
+			{
+				//カスタマイズ時刻表上り前列車列車種別が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
+				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
+				{
+					if (pCentDedEki->getJikokuhyouPrevRessyaSyubetsuDisplayNobori() <= 0)
+					{
+						pCentDedEki->setJikokuhyouPrevRessyaSyubetsuDisplayNobori(3);
+					}
+					else
+					{
+						pCentDedEki->setJikokuhyouPrevRessyaSyubetsuDisplayNobori(
+							pCentDedEki->getJikokuhyouPrevRessyaSyubetsuDisplayNobori() - 1);
+					}
+				}
+			}
+			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_PrevRessyameiDisplayNobori)
+			{
+				//カスタマイズ時刻表上り前列車列車名が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
+				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
+				{
+					if (pCentDedEki->getJikokuhyouPrevRessyameiDisplayNobori() <= 0)
+					{
+						pCentDedEki->setJikokuhyouPrevRessyameiDisplayNobori(3);
+					}
+					else
+					{
+						pCentDedEki->setJikokuhyouPrevRessyameiDisplayNobori(
+							pCentDedEki->getJikokuhyouPrevRessyameiDisplayNobori() - 1);
+					}
+				}
+			}
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyabangouDisplayNobori)
 			{
 				//カスタマイズ時刻表上り列車番号が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
+				//Ver2.06.21 上り着時刻の場合も有効に
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
 				{
 					if (pCentDedEki->getJikokuhyouRessyabangouDisplayNobori() <= 0)
@@ -3928,8 +5310,10 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayNobori)
 			{
 				//カスタマイズ時刻表上り運用番号が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
+				//Ver2.06.21 上り着時刻の場合も有効に
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
 				{
 					if (pCentDedEki->getJikokuhyouOperationNumberDisplayNobori() <= 0)
@@ -3946,8 +5330,10 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_OperationNumberDisplayRowsNobori)
 			{
 				//カスタマイズ時刻表上り運用番号が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
+				//Ver2.06.21 上り着時刻の場合も有効に
 				if ((pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku) &&
 					pCentDedEki->getJikokuhyouOperationNumberDisplayNobori() > 0)
 				{
@@ -3965,8 +5351,10 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyaSyubetsuDisplayNobori)
 			{
 				//カスタマイズ時刻表上り列車種別が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
+				//Ver2.06.21 上り着時刻の場合も有効に
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
 				{
 					if (pCentDedEki->getJikokuhyouRessyaSyubetsuDisplayNobori() <= 0)
@@ -3983,8 +5371,10 @@ int CWndDcdGridEki::OnEkiSettingPrev_Process(BOOL bQueryEnable, int iType)
 			else if (aXColSpec.getColumnType() == CdEkiXColSpec::EColumnType::ColumnType_RessyameiDisplayNobori)
 			{
 				//カスタマイズ時刻表上り列車名が有効なのは、駅時刻形式が発着・下り着時刻・上り発着の場合
+				//Ver2.06.21 上り着時刻の場合も有効に
 				if (pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
 					pCentDedEki->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
 				{
 					if (pCentDedEki->getJikokuhyouRessyameiDisplayNobori() <= 0)
@@ -4302,7 +5692,7 @@ void CWndDcdGridEki::OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint)
 					getCXDcdGrid()->eraseYColumn( 
 						pCommand->getIndexDst() + 
 						pCommand->getSizeDst() - iGensyouSize 
-						+ 1 ) ;
+						+ 2 ) ;
 				}
 			}
 			// --------------------------------
@@ -4318,7 +5708,7 @@ void CWndDcdGridEki::OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint)
 				for ( int cnt = 0 ; cnt < iZoukaSize ; cnt ++ )
 				{
 					getCXDcdGrid()->insertYColumn( 
-						pCommand->getIndexDst() + iOkikaeSize + cnt + 1 , 
+						pCommand->getIndexDst() + iOkikaeSize + cnt + 2 , 
 						true ) ; 
 				}
 			}
@@ -4384,12 +5774,12 @@ void CWndDcdGridEki::OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint)
 						const CentDedEki*	pCentDedEkiNext
 							= pCentDedEkiContGet->get(iEkiIndex + 1);
 						OnUpdate_setCentDedEki_To_Column(
-							iEkiIndex + 1, *pCentDedEki, *pCentDedEkiNext);
+							iEkiIndex + 2, *pCentDedEki, *pCentDedEkiNext);
 					}
 					else if (iEkiIndex == 0)
 					{
 						OnUpdate_setCentDedEki_To_Column(
-							iEkiIndex + 1, *pCentDedEki, CentDedEki());
+							iEkiIndex + 2, *pCentDedEki, CentDedEki());
 					}
 					else if (iEkiIndex < pCentDedEkiContGet->size() - 1)
 					{
@@ -4398,18 +5788,18 @@ void CWndDcdGridEki::OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint)
 						const CentDedEki*	pCentDedEkiNext
 							= pCentDedEkiContGet->get(iEkiIndex + 1);
 						OnUpdate_setCentDedEki_To_Column(
-							iEkiIndex, *pCentDedEkiPrev, *pCentDedEki);
+							iEkiIndex + 1, *pCentDedEkiPrev, *pCentDedEki);
 						OnUpdate_setCentDedEki_To_Column(
-							iEkiIndex + 1, *pCentDedEki, *pCentDedEkiNext);
+							iEkiIndex + 2, *pCentDedEki, *pCentDedEkiNext);
 					}
 					else
 					{
 						const CentDedEki*	pCentDedEkiPrev
 							= pCentDedEkiContGet->get(iEkiIndex - 1);
 						OnUpdate_setCentDedEki_To_Column(
-							iEkiIndex, *pCentDedEkiPrev, *pCentDedEki);
+							iEkiIndex + 1, *pCentDedEkiPrev, *pCentDedEki);
 						OnUpdate_setCentDedEki_To_Column(
-							iEkiIndex + 1, *pCentDedEki, CentDedEki());
+							iEkiIndex + 2, *pCentDedEki, CentDedEki());
 					}
 				}
 				InvalidateGrid();

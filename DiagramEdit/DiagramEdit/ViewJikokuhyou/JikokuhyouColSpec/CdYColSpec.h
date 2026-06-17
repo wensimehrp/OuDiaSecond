@@ -1,5 +1,5 @@
 /*
-OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -129,10 +129,24 @@ public:
 		/**	路線外始発駅2 */
 		ColumnType_Outer_Shihatsu2,
 
+		/**	列車番号(駅・前列車用) */
+		ColumnType_EkiPrevRessyabangou,
+		/**	運用番号(駅・前列車用) */
+		ColumnType_EkiPrevOperationNumber,
+		/**	列車種別(駅・前列車用) */
+		ColumnType_EkiPrevRessyasyubetsu,
+		/**	列車名(駅・前列車用) */
+		ColumnType_EkiPrevRessyamei,
+		/**	号数(駅・前列車用) */
+		ColumnType_EkiPrevGousuu,
+		/**	「号」表示(駅・種別変更用) */
+		ColumnType_EkiPrevGou,
 		/**	路線外・前列車始発駅1 */
 		ColumnType_EkiOuter_Shihatsu1,
 		/**	路線外・前列車始発駅2 */
 		ColumnType_EkiOuter_Shihatsu2,
+		/**	入線時刻 */
+		ColumnType_Ekijikoku_Nyuusen,
 		/**	着時刻 */
 		ColumnType_Ekijikoku_Chaku ,
 		/**	前作業増結編成前作業1 */
@@ -224,7 +238,7 @@ private:
 		作業表示Indexまたは運用番号段数Index。
 		m_eColumnType が ColumnType_Operation_Before1,ColumnType_Operation_Before2,
 		ColumnType_Operation_After1,ColumnType_Operation_After2 または
-		ColumnType_OperationNumber,ColumnType_EkiOperationNumber の場合にのみ有効です。
+		ColumnType_OperationNumber,ColumnType_EkiOperationNumber,ColumnType_EkiPrevOperationNumber の場合にのみ有効です。
 
 		その他の場合は意味を持ちません。-1 となります。
 	*/
@@ -302,12 +316,12 @@ public:
 	/**
 		列の種類が、各駅の要素にあたるものならtrueを返します。
 		具体的には、m_iEkiOrderが有効なもの
-		ColumnType_EkiOuter_Shihatsu1 から ColumnType_EkiOuter_Shuchaku2までです。
+		ColumnType_EkiPrevRessyabangou から ColumnType_EkiOuter_Shuchaku2までです。
 	*/
 	bool isEkiComponent()const
 	{
 		return(
-			(int)CdYColSpec::ColumnType_EkiOuter_Shihatsu1
+			(int)CdYColSpec::ColumnType_EkiPrevRessyabangou
 			<= (int)m_eColumnType &&
 			(int)m_eColumnType
 			<= (int)CdYColSpec::ColumnType_EkiOuter_Shuchaku2);
@@ -378,7 +392,8 @@ public:
 			{
 				if ( m_iEkiOrder == value.m_iEkiOrder )
 				{
-					if (isEkiOperation() || m_eColumnType == ColumnType_EkiOperationNumber)
+					if (isEkiOperation() || m_eColumnType == ColumnType_EkiOperationNumber
+						|| m_eColumnType == ColumnType_EkiPrevOperationNumber)
 					{
 						if (m_iOperationIndex == value.m_iOperationIndex)
 						{

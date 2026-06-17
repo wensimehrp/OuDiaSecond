@@ -1,4 +1,4 @@
-﻿FileType=OuDiaSecond.1.16
+﻿FileType=OuDiaSecond.1.17
 Rosen.
 Rosenmei=Ou2ndサンプル線
 KudariDiaAlias=
@@ -44,6 +44,9 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
+JikokuhyouNyuusenJikokuDisplayKudari=1
 CrossingCheckRule.
 Caption=開通時隔
 Enable=1
@@ -196,6 +199,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=吹加
@@ -222,6 +227,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=佐治冶
@@ -256,6 +263,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=花谷地
@@ -289,6 +298,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=下り追い込み1
 Enable=1
@@ -483,6 +494,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=桃山
@@ -509,6 +522,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=明原
@@ -539,6 +554,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=虎兎
@@ -565,6 +582,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=龍岬
@@ -626,10 +645,12 @@ TrackRyakusyou=引3
 JikokuhyouJikokuDisplayKudari=1,1
 JikokuhyouJikokuDisplayNobori=1,1
 JikokuhyouSyubetsuChangeDisplayKudari=0,0,0,0,1
-JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
+JikokuhyouSyubetsuChangeDisplayNobori=2,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=1,0
 JikokuhyouOuterDisplayNobori=0,1
+JikokuhyouPrevSyubetsuChangeDisplayKudari=2,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=下り優等追い込み
 Enable=1
@@ -768,6 +789,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=あざみが丘
@@ -794,6 +817,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=望川
@@ -820,6 +845,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=竜燕
@@ -846,6 +873,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=天宮
@@ -882,6 +911,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=発着
 Enable=1
@@ -976,6 +1007,9 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=1
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
+JikokuhyouNyuusenJikokuDisplayKudari=1
 CrossingCheckRule.
 Caption=上り優等追い込み
 Enable=1
@@ -1122,6 +1156,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=1
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=寂雨
@@ -1156,6 +1192,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=1
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=圦景
@@ -1190,6 +1228,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=1
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=三管
@@ -1224,6 +1264,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=1
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=龍岬
@@ -1286,11 +1328,13 @@ TrackRyakusyou=引3
 .
 JikokuhyouJikokuDisplayKudari=1,1
 JikokuhyouJikokuDisplayNobori=1,1
-JikokuhyouSyubetsuChangeDisplayKudari=0,0,0,0,2
+JikokuhyouSyubetsuChangeDisplayKudari=2,0,0,0,2
 JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=1
 JikokuhyouOuterDisplayKudari=0,1
 JikokuhyouOuterDisplayNobori=1,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=2,0,0,0,1
 CrossingCheckRule.
 Caption=下り優等追い込み
 Enable=1
@@ -1437,6 +1481,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=1
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=西長井
@@ -1471,6 +1517,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=1
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=荻桜
@@ -1505,6 +1553,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=1
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=若葉園
@@ -1539,6 +1589,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=1
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=羽柄
@@ -1573,6 +1625,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=1
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=もみじ台
@@ -1607,6 +1661,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=1
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=林瑚
@@ -1641,6 +1697,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=1
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=西修羅
@@ -1682,6 +1740,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=3
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=下り優等追い込み
 Enable=1
@@ -1780,6 +1840,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=1
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=下り優等開通
 Enable=1
@@ -1870,6 +1932,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=1
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=轟台
@@ -1904,6 +1968,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=1
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=熊埜御堂公園
@@ -1938,6 +2004,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=1
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=桜田台
@@ -1972,6 +2040,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=1
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=新港台
@@ -2006,6 +2076,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=1
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=団扇町
@@ -2070,6 +2142,9 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
+JikokuhyouNyuusenJikokuDisplayNobori=1
 CrossingCheckRule.
 Caption=引上げ着発
 Enable=1
@@ -2314,6 +2389,9 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
+JikokuhyouNyuusenJikokuDisplayKudari=1
 CrossingCheckRule.
 Caption=追い込み時分
 Enable=1
@@ -2438,6 +2516,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=琴島
@@ -2464,6 +2544,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=香野園
@@ -2497,6 +2579,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=下り追い込み時分
 Enable=1
@@ -2579,6 +2663,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=高滝市
@@ -2612,6 +2698,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=下り追い込み
 Enable=1
@@ -2764,6 +2852,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=川合
@@ -2790,6 +2880,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=団扇町
@@ -2853,6 +2945,8 @@ DiagramColorNextEki=0
 OperationTableDisplayJikoku=1
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=引上げ着発
 Enable=1
@@ -3089,6 +3183,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=坂内
@@ -3122,6 +3218,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=下り追い込み
 Enable=1
@@ -3197,6 +3295,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=下り追い込み
 Enable=1
@@ -3279,6 +3379,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=山田果口
@@ -3305,6 +3407,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=新空星
@@ -3331,6 +3435,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=空星
@@ -3375,6 +3481,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,1,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=下り追い込み
 Enable=1
@@ -3527,6 +3635,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=菅木
@@ -3553,6 +3663,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=大砲山
@@ -3579,6 +3691,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=美澄が丘
@@ -3605,6 +3719,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=船羽口
@@ -3631,6 +3747,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=船羽
@@ -3667,13 +3785,16 @@ OuterTerminalEkimei=鳥屋洲
 OuterTerminalJikokuRyaku=鳥屋
 OuterTerminalDiaRyaku=鳥
 .
-JikokuhyouJikokuDisplayKudari=1,0
-JikokuhyouJikokuDisplayNobori=0,1
+JikokuhyouJikokuDisplayKudari=1,1
+JikokuhyouJikokuDisplayNobori=1,1
 JikokuhyouSyubetsuChangeDisplayKudari=0,0,0,0,1
 JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,1
 JikokuhyouOuterDisplayNobori=1,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
+JikokuhyouNyuusenJikokuDisplayNobori=1
 CrossingCheckRule.
 Caption=起点側追い込み
 Enable=1
@@ -3902,6 +4023,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=引上げ着発
 Enable=1
@@ -4138,6 +4261,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=星之島動物公園
@@ -4164,6 +4289,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=星之島
@@ -4219,6 +4346,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,1,0,0,2
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=下り追い込み
 Enable=1
@@ -4511,6 +4640,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=くろがね神宮
@@ -4537,6 +4668,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=鍛冶屋橋
@@ -4563,6 +4696,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=刀橋
@@ -4589,6 +4724,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=渚橋
@@ -4615,6 +4752,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=新渚橋
@@ -4651,6 +4790,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=下り追い込み
 Enable=1
@@ -4761,6 +4902,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=市後
@@ -4787,6 +4930,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=本桐
@@ -4817,6 +4962,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=下り追い込み
 Enable=1
@@ -4889,6 +5036,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=上り追い込み
 Enable=1
@@ -4984,6 +5133,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=翌檜
@@ -5038,11 +5189,13 @@ JikokuhyouOperationTerminal=1
 JikokuhyouOperationOriginDownAfterUpBefore=1
 JikokuhyouJikokuDisplayKudari=1,1
 JikokuhyouJikokuDisplayNobori=1,1
-JikokuhyouSyubetsuChangeDisplayKudari=0,1,1,0,1
+JikokuhyouSyubetsuChangeDisplayKudari=2,1,1,0,1
 JikokuhyouSyubetsuChangeDisplayNobori=0,1,0,0,2
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,1
 JikokuhyouOuterDisplayNobori=1,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=下り追い込み
 Enable=1
@@ -5195,6 +5348,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=みゆき野
@@ -5221,6 +5376,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=奈高須
@@ -5247,6 +5404,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=よもぎ野
@@ -5273,6 +5432,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=高見原
@@ -5313,6 +5474,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=2
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=発着
 Enable=1
@@ -5366,6 +5529,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=2
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=ルール1
 Enable=1
@@ -5420,6 +5585,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=2
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=部道
@@ -5445,6 +5612,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=2
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=ルール1
 Enable=1
@@ -5498,6 +5667,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=2
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=ルール1
 Enable=1
@@ -5552,6 +5723,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=2
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=戌亥
@@ -5578,6 +5751,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=2
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=高天
@@ -5603,6 +5778,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=2
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=ルール1
 Enable=1
@@ -5657,6 +5834,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=2
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=産土
@@ -5683,6 +5862,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=2
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=餅屋
@@ -5708,6 +5889,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=2
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=ルール1
 Enable=1
@@ -5768,6 +5951,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 CrossingCheckRule.
 Caption=着発
 Enable=1
@@ -5835,6 +6020,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=上逢瀬
@@ -5860,6 +6047,8 @@ JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,0
 JikokuhyouOuterDisplayNobori=0,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=0,0,0,0,1
 .
 Eki.
 Ekimei=翌檜
@@ -5910,13 +6099,15 @@ TrackName=入出区線
 TrackRyakusyou=入出
 .
 .
-JikokuhyouJikokuDisplayKudari=1,0
-JikokuhyouJikokuDisplayNobori=0,1
+JikokuhyouJikokuDisplayKudari=1,1
+JikokuhyouJikokuDisplayNobori=1,1
 JikokuhyouSyubetsuChangeDisplayKudari=0,0,0,0,1
 JikokuhyouSyubetsuChangeDisplayNobori=0,0,0,0,1
 DiagramColorNextEki=0
 JikokuhyouOuterDisplayKudari=0,1
 JikokuhyouOuterDisplayNobori=1,0
+JikokuhyouPrevSyubetsuChangeDisplayKudari=0,0,0,0,1
+JikokuhyouPrevSyubetsuChangeDisplayNobori=2,0,1,0,1
 CrossingCheckRule.
 Caption=下り追い込み
 Enable=1
@@ -29013,4 +29204,4 @@ DisplayInOutLinkCode=1
 WindowPlacement.
 RosenViewWidth=184
 .
-FileTypeAppComment=OuDiaSecondV2 Ver. 2.06.18
+FileTypeAppComment=OuDiaSecondV2 Ver. 2.06.21

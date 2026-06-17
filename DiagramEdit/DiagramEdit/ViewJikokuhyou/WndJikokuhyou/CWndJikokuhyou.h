@@ -1,5 +1,5 @@
 /*
-OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -674,7 +674,14 @@ protected:
 		連続入力モードなら、『連続入力モード』を返します。
 		それ以外なら、貼り付け移動量の文字列を返します。
 	*/
-	CString OnUpdateINDICATOR_PasteZoubun_Process() ; 
+	CString OnUpdateINDICATOR_PasteZoubun_Process() ;
+
+	/** 基準運転時分比ステータスバー
+	@return
+		ステータスバーテキストを返します。
+		基準運転時分比の文字列を返します。
+	*/
+	CString OnUpdateINDICATOR_StdOpeTime_Process();
 
 	/** add_by_d_mania
 	[表示]-[秒単位の時刻を表示] 
@@ -1240,6 +1247,7 @@ protected:
 	afx_msg void OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags);
 	afx_msg void OnKeyUp(UINT nChar, UINT nRepCnt, UINT nFlags);
 	afx_msg void OnChar(UINT nChar, UINT nRepCnt, UINT nFlags);
+	//afx_msg void OnMouseMove(UINT nFlags, CPoint point);
 	afx_msg void OnLButtonDblClk(UINT nFlags, CPoint point);
 	afx_msg void OnContextMenu(CWnd* /*pWnd*/, CPoint /*point*/);
 	afx_msg void OnJikokuhyouRessyaProp();
@@ -1311,6 +1319,7 @@ protected:
 	afx_msg void OnJikokuhyouEkijikokuPrev();
 	afx_msg void OnUpdateJikokuhyouEkijikokuPrev(CCmdUI *pCmdUI);
 	afx_msg void OnUpdateINDICATOR_PasteZoubun(CCmdUI *pCmdUI);
+	afx_msg void OnUpdateINDICATOR_StdOpeTime(CCmdUI* pCmdUI);
 	afx_msg void OnJikokuhyouTsuukateisya();
 	afx_msg void OnUpdateJikokuhyouTsuukateisya(CCmdUI *pCmdUI);
 	afx_msg void OnJikokuhyouDirect();

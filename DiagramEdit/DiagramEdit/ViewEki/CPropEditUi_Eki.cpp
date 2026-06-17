@@ -1,5 +1,5 @@
 /*
-OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -124,6 +124,7 @@ void CPropEditUi_Eki::InitUiData(UIDATA * pUiData)
 {
 	const CentDedEki* pTarget = m_pTarget->get(0);
 	pUiData->iEkijikokukeisiki = (int)pTarget->getEkijikokukeisiki();
+	pUiData->bJikokuhyouHatsuJikokuDisplayNobori = pTarget->getJikokuhyouHatsuJikokuDisplayNobori();
 	EkiTrack2 aEkiTrack2;
 
 	aEkiTrack2.strTrackName = _T("1番線");
@@ -488,15 +489,22 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 		//下り時刻表ビュー着時刻表示
 		if (i == 0)
 		{
+			//Ver2.06.21 上り着の場合も有効に(実際の表示有無は、路線外始発欄次第)、下り着時刻の場合は逆に無効に(表示有りの状態で変更不可とする)
 			if (pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
-				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
-				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
+				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku ||
+				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku)
 			{
 				pUiData->bJikokuhyouChakuJikokuDisplayKudariEnable = true;
 				pUiData->bJikokuhyouChakuJikokuDisplayKudari =
 					pTarget->getJikokuhyouChakuJikokuDisplayKudari();
 			}
-			else
+			else if (pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku)
+			{
+				pUiData->bJikokuhyouChakuJikokuDisplayKudariEnable = false;
+				pUiData->bJikokuhyouChakuJikokuDisplayKudari = true;
+
+			}
+			else//発時刻、上り発着
 			{
 				pUiData->bJikokuhyouChakuJikokuDisplayKudariEnable = false;
 				pUiData->bJikokuhyouChakuJikokuDisplayKudari = false;
@@ -510,15 +518,21 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 		//上り時刻表ビュー着時刻表示
 		if (i == 0)
 		{
+			//Ver2.06.21 下り着の場合も有効に(実際の表示有無は、路線外始発欄次第)、上り着時刻の場合は逆に無効に(表示有りの状態で変更不可とする)
 			if (pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
-				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
-				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
+				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku ||
+				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku)
 			{
 				pUiData->bJikokuhyouChakuJikokuDisplayNoboriEnable = true;
 				pUiData->bJikokuhyouChakuJikokuDisplayNobori =
 					pTarget->getJikokuhyouChakuJikokuDisplayNobori();
 			}
-			else
+			else if(pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku)
+			{
+				pUiData->bJikokuhyouChakuJikokuDisplayNoboriEnable = false;
+				pUiData->bJikokuhyouChakuJikokuDisplayNobori = true;
+			}
+			else//発時刻、下り発着
 			{
 				pUiData->bJikokuhyouChakuJikokuDisplayNoboriEnable = false;
 				pUiData->bJikokuhyouChakuJikokuDisplayNobori = false;
@@ -533,17 +547,27 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 		//下り時刻表ビュー発時刻表示
 		if (i == 0)
 		{
-			if (pTarget->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku)
+			//Ver2.06.21 下り着の場合も有効に、その上で、発時刻・上り着時刻・上り発着の場合は、表示有りの状態で変更不可とする
+			if (pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
 			{
 				pUiData->bJikokuhyouHatsuJikokuDisplayKudariEnable = true;
 				pUiData->bJikokuhyouHatsuJikokuDisplayKudari =
 					pTarget->getJikokuhyouHatsuJikokuDisplayKudari();
 			}
-			else
+			else/* if(pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu ||
+				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
+				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)*/
 			{
 				pUiData->bJikokuhyouHatsuJikokuDisplayKudariEnable = false;
-				pUiData->bJikokuhyouHatsuJikokuDisplayKudari = false;
+				pUiData->bJikokuhyouHatsuJikokuDisplayKudari = true;
 			}
+			//else
+			//{
+			//	pUiData->bJikokuhyouHatsuJikokuDisplayKudariEnable = false;
+			//	pUiData->bJikokuhyouHatsuJikokuDisplayKudari = true;
+			//}
 		}
 		else
 		{
@@ -554,7 +578,10 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 		//上り時刻表ビュー発時刻表示
 		if (i == 0)
 		{
-			if (pTarget->getEkijikokukeisiki() != CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku)
+			//Ver2.06.21 上り着の場合も有効に、その上で、発時刻・下り着時刻・下り発着の場合は、表示有りの状態で変更不可とする
+			if (pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku||
+				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
 			{
 				pUiData->bJikokuhyouHatsuJikokuDisplayNoboriEnable = true;
 				pUiData->bJikokuhyouHatsuJikokuDisplayNobori =
@@ -563,7 +590,7 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 			else
 			{
 				pUiData->bJikokuhyouHatsuJikokuDisplayNoboriEnable = false;
-				pUiData->bJikokuhyouHatsuJikokuDisplayNobori = false;
+				pUiData->bJikokuhyouHatsuJikokuDisplayNobori = true;
 			}
 		}
 		else
@@ -575,9 +602,11 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 		//下り時刻表ビュー種別変更表示
 		if (i == 0)
 		{
+			//Ver2.06.21 下り着の場合も有効に(実際の表示有無は、路線外始発欄次第)
 			if (pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
-				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
+				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku ||
+				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku)
 			{
 				pUiData->bJikokuhyouSyubetsuChangeDisplayKudariEnable = true;
 				pUiData->iJikokuhyouRessyabangouDisplayKudari =
@@ -613,9 +642,11 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 		//上り時刻表ビュー種別変更表示
 		if (i == 0)
 		{
+			//Ver2.06.21 上り着の場合も有効に(実際の表示有無は、路線外始発欄次第)
 			if (pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
 				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
-				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
+				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku ||
+				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku)
 			{
 				pUiData->bJikokuhyouSyubetsuChangeDisplayNoboriEnable = true;
 				pUiData->iJikokuhyouRessyabangouDisplayNobori =
@@ -766,6 +797,129 @@ void CPropEditUi_Eki::UiDataFromTarget( UIDATA* pUiData )
 			pUiData->bJikokuhyouOuterShuchakuDisplayNoboriEnable = false;
 			pUiData->bJikokuhyouOuterShuchakuDisplayNobori = false;
 		}
+
+		//下り時刻表ビュー入線時刻表示
+		if (i == 0)
+		{
+			if (pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
+				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
+			{
+				pUiData->bJikokuhyouNyuusenJikokuDisplayKudariEnable = true;
+				pUiData->bJikokuhyouNyuusenJikokuDisplayKudari =
+					pTarget->getJikokuhyouNyuusenJikokuDisplayKudari();
+			}
+			else
+			{
+				pUiData->bJikokuhyouNyuusenJikokuDisplayKudariEnable = false;
+				pUiData->bJikokuhyouNyuusenJikokuDisplayKudari = false;
+			}
+		}
+		else
+		{
+			pUiData->bJikokuhyouNyuusenJikokuDisplayKudariEnable = false;
+			pUiData->bJikokuhyouNyuusenJikokuDisplayKudari = false;
+		}
+		//上り時刻表ビュー入線時刻表示
+		if (i == 0)
+		{
+			if (pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
+			{
+				pUiData->bJikokuhyouNyuusenJikokuDisplayNoboriEnable = true;
+				pUiData->bJikokuhyouNyuusenJikokuDisplayNobori =
+					pTarget->getJikokuhyouNyuusenJikokuDisplayNobori();
+			}
+			else
+			{
+				pUiData->bJikokuhyouNyuusenJikokuDisplayNoboriEnable = false;
+				pUiData->bJikokuhyouNyuusenJikokuDisplayNobori = false;
+			}
+		}
+		else
+		{
+			pUiData->bJikokuhyouNyuusenJikokuDisplayNoboriEnable = false;
+			pUiData->bJikokuhyouNyuusenJikokuDisplayNobori = false;
+		}
+
+		//下り時刻表ビュー前列車種別変更表示
+		if (i == 0)
+		{
+			if (pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriChaku ||
+				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariHatsuchaku)
+			{
+				pUiData->bJikokuhyouPrevSyubetsuChangeDisplayKudariEnable = true;
+				pUiData->iJikokuhyouPrevRessyabangouDisplayKudari =
+					pTarget->getJikokuhyouPrevRessyabangouDisplayKudari();
+				pUiData->iJikokuhyouPrevOperationNumberDisplayKudari =
+					pTarget->getJikokuhyouPrevOperationNumberDisplayKudari();
+				pUiData->iJikokuhyouPrevOperationNumberDisplayRowsKudari =
+					pTarget->getJikokuhyouPrevOperationNumberDisplayRowsKudari() - 1;
+				pUiData->iJikokuhyouPrevRessyaSyubetsuDisplayKudari =
+					pTarget->getJikokuhyouPrevRessyaSyubetsuDisplayKudari();
+				pUiData->iJikokuhyouPrevRessyameiDisplayKudari =
+					pTarget->getJikokuhyouPrevRessyameiDisplayKudari();
+			}
+			else
+			{
+				pUiData->bJikokuhyouPrevSyubetsuChangeDisplayKudariEnable = false;
+				pUiData->iJikokuhyouPrevRessyabangouDisplayKudari = 0;
+				pUiData->iJikokuhyouPrevOperationNumberDisplayKudari = 0;
+				pUiData->iJikokuhyouPrevOperationNumberDisplayRowsKudari = 0;
+				pUiData->iJikokuhyouPrevRessyaSyubetsuDisplayKudari = 0;
+				pUiData->iJikokuhyouPrevRessyameiDisplayKudari = 0;
+			}
+		}
+		else
+		{
+			pUiData->bJikokuhyouPrevSyubetsuChangeDisplayKudariEnable = false;
+			pUiData->iJikokuhyouPrevRessyabangouDisplayKudari = 0;
+			pUiData->iJikokuhyouPrevOperationNumberDisplayKudari = 0;
+			pUiData->iJikokuhyouPrevOperationNumberDisplayRowsKudari = 0;
+			pUiData->iJikokuhyouPrevRessyaSyubetsuDisplayKudari = 0;
+			pUiData->iJikokuhyouPrevRessyameiDisplayKudari = 0;
+		}
+		//上り時刻表ビュー前列車種別変更表示
+		if (i == 0)
+		{
+			if (pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsuchaku ||
+				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_KudariChaku ||
+				pTarget->getEkijikokukeisiki() == CentDedEki::EEkijikokukeisiki::Jikokukeisiki_NoboriHatsuchaku)
+			{
+				pUiData->bJikokuhyouPrevSyubetsuChangeDisplayNoboriEnable = true;
+				pUiData->iJikokuhyouPrevRessyabangouDisplayNobori =
+					pTarget->getJikokuhyouPrevRessyabangouDisplayNobori();
+				pUiData->iJikokuhyouPrevOperationNumberDisplayNobori =
+					pTarget->getJikokuhyouPrevOperationNumberDisplayNobori();
+				pUiData->iJikokuhyouPrevOperationNumberDisplayRowsNobori =
+					pTarget->getJikokuhyouPrevOperationNumberDisplayRowsNobori() - 1;
+				pUiData->iJikokuhyouPrevRessyaSyubetsuDisplayNobori =
+					pTarget->getJikokuhyouPrevRessyaSyubetsuDisplayNobori();
+				pUiData->iJikokuhyouPrevRessyameiDisplayNobori =
+					pTarget->getJikokuhyouPrevRessyameiDisplayNobori();
+			}
+			else
+			{
+				pUiData->bJikokuhyouPrevSyubetsuChangeDisplayNoboriEnable = false;
+				pUiData->iJikokuhyouPrevRessyabangouDisplayNobori = 0;
+				pUiData->iJikokuhyouPrevOperationNumberDisplayNobori = 0;
+				pUiData->iJikokuhyouPrevOperationNumberDisplayRowsNobori = 0;
+				pUiData->iJikokuhyouPrevRessyaSyubetsuDisplayNobori = 0;
+				pUiData->iJikokuhyouPrevRessyameiDisplayNobori = 0;
+			}
+		}
+		else
+		{
+			pUiData->bJikokuhyouPrevSyubetsuChangeDisplayNoboriEnable = false;
+			pUiData->iJikokuhyouPrevRessyabangouDisplayNobori = 0;
+			pUiData->iJikokuhyouPrevOperationNumberDisplayNobori = 0;
+			pUiData->iJikokuhyouPrevOperationNumberDisplayRowsNobori = 0;
+			pUiData->iJikokuhyouPrevRessyaSyubetsuDisplayNobori = 0;
+			pUiData->iJikokuhyouPrevRessyameiDisplayNobori = 0;
+		}
+
 	}
 
 	// [駅時刻を駅時刻形式で正規化]の設定
@@ -852,47 +1006,57 @@ void CPropEditUi_Eki::AdjustUiData(
 		{
 			pUiData->bJikokuhyouOperationEnable = false;
 		}
-		
+
+		//Ver2.06.21 上り着の場合も有効に(実際の表示有無は、路線外始発欄次第)、下り着時刻の場合は逆に無効に(表示有りの状態で変更不可とする)
 		if (m_pTarget->size() == 1 &&
 			(pUiData->iEkijikokukeisiki == 1 ||
-			pUiData->iEkijikokukeisiki == 2 ||
+			pUiData->iEkijikokukeisiki == 3 ||
 			pUiData->iEkijikokukeisiki == 4 ))
 		{
 			pUiData->bJikokuhyouChakuJikokuDisplayKudariEnable = true;
-			if (pUiData->iEkijikokukeisiki == 2)
-			{
-				pUiData->bJikokuhyouChakuJikokuDisplayKudari = true;
-			}
+		}
+		else if(pUiData->iEkijikokukeisiki == 2 )
+		{
+			pUiData->bJikokuhyouChakuJikokuDisplayKudari = true;
+			pUiData->bJikokuhyouChakuJikokuDisplayKudariEnable = false;
 		}
 		else
 		{
+			pUiData->bJikokuhyouChakuJikokuDisplayKudari = false;
 			pUiData->bJikokuhyouChakuJikokuDisplayKudariEnable = false;
 		}
 
+		//Ver2.06.21 下り着の場合も有効に(実際の表示有無は、路線外始発欄次第)、上り着時刻の場合は逆に無効に(表示有りの状態で変更不可とする)
 		if (m_pTarget->size() == 1 &&
 			(pUiData->iEkijikokukeisiki == 1 ||
-				pUiData->iEkijikokukeisiki == 3 ||
+				pUiData->iEkijikokukeisiki == 2 ||
 				pUiData->iEkijikokukeisiki == 5))
 		{
 			pUiData->bJikokuhyouChakuJikokuDisplayNoboriEnable = true;
-			if (pUiData->iEkijikokukeisiki == 3)
-			{
-				pUiData->bJikokuhyouChakuJikokuDisplayNobori = true;
-			}
+		}
+		else if (pUiData->iEkijikokukeisiki == 3)
+		{
+			pUiData->bJikokuhyouChakuJikokuDisplayNobori = true;
+			pUiData->bJikokuhyouChakuJikokuDisplayNoboriEnable = false;
 		}
 		else
 		{
+			pUiData->bJikokuhyouChakuJikokuDisplayNobori = false;
 			pUiData->bJikokuhyouChakuJikokuDisplayNoboriEnable = false;
 		}
 
-		if (m_pTarget->size() == 1 &&
-			pUiData->iEkijikokukeisiki != 2)
+		//Ver2.06.21 下り着の場合も有効に、その上で、発時刻・上り着時刻・上り発着の場合は、表示有りの状態で変更不可とする
+		if (m_pTarget->size() == 1)
 		{
-			pUiData->bJikokuhyouHatsuJikokuDisplayKudariEnable = true;
-			if (pUiData->iEkijikokukeisiki == 0 || 
-				pUiData->iEkijikokukeisiki == 3 ||
-				pUiData->iEkijikokukeisiki == 5)
+			if (pUiData->iEkijikokukeisiki == 1 ||
+				pUiData->iEkijikokukeisiki == 2 ||
+				pUiData->iEkijikokukeisiki == 4)
 			{
+				pUiData->bJikokuhyouHatsuJikokuDisplayKudariEnable = true;
+			}
+			else
+			{
+				pUiData->bJikokuhyouHatsuJikokuDisplayKudariEnable = false;
 				pUiData->bJikokuhyouHatsuJikokuDisplayKudari = true;
 			}
 		}
@@ -901,14 +1065,18 @@ void CPropEditUi_Eki::AdjustUiData(
 			pUiData->bJikokuhyouHatsuJikokuDisplayKudariEnable = false;
 		}
 
-		if (m_pTarget->size() == 1 &&
-			pUiData->iEkijikokukeisiki != 3)
+		//Ver2.06.21 上り着の場合も有効に、その上で、発時刻・下り着時刻・下り発着の場合は、表示有りの状態で変更不可とする
+		if (m_pTarget->size() == 1)
 		{
-			pUiData->bJikokuhyouHatsuJikokuDisplayNoboriEnable = true;
-			if (pUiData->iEkijikokukeisiki == 0 ||
-				pUiData->iEkijikokukeisiki == 2 ||
-				pUiData->iEkijikokukeisiki == 4)
+			if (pUiData->iEkijikokukeisiki == 1 ||
+				pUiData->iEkijikokukeisiki == 3 ||
+				pUiData->iEkijikokukeisiki == 5)
 			{
+				pUiData->bJikokuhyouHatsuJikokuDisplayNoboriEnable = true;
+			}
+			else
+			{
+				pUiData->bJikokuhyouHatsuJikokuDisplayNoboriEnable = false;
 				pUiData->bJikokuhyouHatsuJikokuDisplayNobori = true;
 			}
 		}
@@ -917,8 +1085,10 @@ void CPropEditUi_Eki::AdjustUiData(
 			pUiData->bJikokuhyouHatsuJikokuDisplayNoboriEnable = false;
 		}
 
+		//Ver2.06.21 下り着の場合も有効に(実際の表示有無は、路線外始発欄次第)
 		if (m_pTarget->size() == 1 &&
 			(pUiData->iEkijikokukeisiki == 1 ||
+				pUiData->iEkijikokukeisiki == 2 ||
 				pUiData->iEkijikokukeisiki == 3 ||
 				pUiData->iEkijikokukeisiki == 4))
 		{
@@ -929,9 +1099,11 @@ void CPropEditUi_Eki::AdjustUiData(
 			pUiData->bJikokuhyouSyubetsuChangeDisplayKudariEnable = false;
 		}
 
+		//Ver2.06.21 上り着の場合も有効に(実際の表示有無は、路線外始発欄次第)
 		if (m_pTarget->size() == 1 &&
 			(pUiData->iEkijikokukeisiki == 1 ||
 				pUiData->iEkijikokukeisiki == 2 ||
+				pUiData->iEkijikokukeisiki == 3 ||
 				pUiData->iEkijikokukeisiki == 5))
 		{
 			pUiData->bJikokuhyouSyubetsuChangeDisplayNoboriEnable = true;
@@ -987,6 +1159,54 @@ void CPropEditUi_Eki::AdjustUiData(
 		else
 		{
 			pUiData->bJikokuhyouOuterShuchakuDisplayNoboriEnable = false;
+		}
+
+		if (m_pTarget->size() == 1 &&
+			(pUiData->iEkijikokukeisiki == 1 ||
+				pUiData->iEkijikokukeisiki == 3 ||
+				pUiData->iEkijikokukeisiki == 4))
+		{
+			pUiData->bJikokuhyouNyuusenJikokuDisplayKudariEnable = true;
+		}
+		else
+		{
+			pUiData->bJikokuhyouNyuusenJikokuDisplayKudariEnable = false;
+		}
+
+		if (m_pTarget->size() == 1 &&
+			(pUiData->iEkijikokukeisiki == 1 ||
+				pUiData->iEkijikokukeisiki == 2 ||
+				pUiData->iEkijikokukeisiki == 5))
+		{
+			pUiData->bJikokuhyouNyuusenJikokuDisplayNoboriEnable = true;
+		}
+		else
+		{
+			pUiData->bJikokuhyouNyuusenJikokuDisplayNoboriEnable = false;
+		}
+
+		if (m_pTarget->size() == 1 &&
+			(pUiData->iEkijikokukeisiki == 1 ||
+				pUiData->iEkijikokukeisiki == 3 ||
+				pUiData->iEkijikokukeisiki == 4))
+		{
+			pUiData->bJikokuhyouPrevSyubetsuChangeDisplayKudariEnable = true;
+		}
+		else
+		{
+			pUiData->bJikokuhyouPrevSyubetsuChangeDisplayKudariEnable = false;
+		}
+
+		if (m_pTarget->size() == 1 &&
+			(pUiData->iEkijikokukeisiki == 1 ||
+				pUiData->iEkijikokukeisiki == 2 ||
+				pUiData->iEkijikokukeisiki == 5))
+		{
+			pUiData->bJikokuhyouPrevSyubetsuChangeDisplayNoboriEnable = true;
+		}
+		else
+		{
+			pUiData->bJikokuhyouPrevSyubetsuChangeDisplayNoboriEnable = false;
 		}
 	}
 	/* 駅規模 */
@@ -1117,7 +1337,7 @@ void CPropEditUi_Eki::AdjustUiData(
 	if (bStartEdit ||(pUiDataPrev->bJikokuhyouChakuJikokuDisplayKudari != pUiData->bJikokuhyouChakuJikokuDisplayKudari &&
 		!pUiData->bJikokuhyouChakuJikokuDisplayKudari))
 	{
-		if (!pUiData->bJikokuhyouHatsuJikokuDisplayKudariEnable ||
+		if (/*!pUiData->bJikokuhyouHatsuJikokuDisplayKudariEnable ||*/
 			!pUiData->bJikokuhyouHatsuJikokuDisplayKudari)
 		{
 			pUiData->bJikokuhyouChakuJikokuDisplayKudari = true;
@@ -1127,7 +1347,7 @@ void CPropEditUi_Eki::AdjustUiData(
 	if (bStartEdit || (pUiDataPrev->bJikokuhyouHatsuJikokuDisplayKudari != pUiData->bJikokuhyouHatsuJikokuDisplayKudari &&
 		!pUiData->bJikokuhyouHatsuJikokuDisplayKudari))
 	{
-		if (!pUiData->bJikokuhyouChakuJikokuDisplayKudariEnable ||
+		if (/*!pUiData->bJikokuhyouChakuJikokuDisplayKudariEnable ||*/
 			!pUiData->bJikokuhyouChakuJikokuDisplayKudari)
 		{
 			pUiData->bJikokuhyouHatsuJikokuDisplayKudari = true;
@@ -1137,7 +1357,7 @@ void CPropEditUi_Eki::AdjustUiData(
 	if (bStartEdit || (pUiDataPrev->bJikokuhyouChakuJikokuDisplayNobori != pUiData->bJikokuhyouChakuJikokuDisplayNobori &&
 		!pUiData->bJikokuhyouChakuJikokuDisplayNobori))
 	{
-		if (!pUiData->bJikokuhyouHatsuJikokuDisplayNoboriEnable ||
+		if (/*!pUiData->bJikokuhyouHatsuJikokuDisplayNoboriEnable ||*/
 			!pUiData->bJikokuhyouHatsuJikokuDisplayNobori)
 		{
 			pUiData->bJikokuhyouChakuJikokuDisplayNobori = true;
@@ -1147,7 +1367,7 @@ void CPropEditUi_Eki::AdjustUiData(
 	if (bStartEdit || (pUiDataPrev->bJikokuhyouHatsuJikokuDisplayNobori != pUiData->bJikokuhyouHatsuJikokuDisplayNobori &&
 		!pUiData->bJikokuhyouHatsuJikokuDisplayNobori))
 	{
-		if (!pUiData->bJikokuhyouChakuJikokuDisplayNoboriEnable ||
+		if (/*!pUiData->bJikokuhyouChakuJikokuDisplayNoboriEnable ||*/
 			!pUiData->bJikokuhyouChakuJikokuDisplayNobori)
 		{
 			pUiData->bJikokuhyouHatsuJikokuDisplayNobori = true;
@@ -1661,14 +1881,14 @@ int CPropEditUi_Eki::UiDataToTarget(
 		//下り時刻表ビュー着時刻表示
 		if (m_pTarget->size() == 1)
 		{
-			if (pUiData->bJikokuhyouChakuJikokuDisplayKudariEnable)
-			{
+			//if (pUiData->bJikokuhyouChakuJikokuDisplayKudariEnable)
+			//{
 				pTarget->setJikokuhyouChakuJikokuDisplayKudari(pUiData->bJikokuhyouChakuJikokuDisplayKudari);
-			}
-			else
-			{
-				pTarget->setJikokuhyouChakuJikokuDisplayKudari(false);
-			}
+			//}
+			//else
+			//{
+			//	pTarget->setJikokuhyouChakuJikokuDisplayKudari(false);
+			//}
 		}
 
 		//if (bNewItem)
@@ -1694,14 +1914,14 @@ int CPropEditUi_Eki::UiDataToTarget(
 		//上り時刻表ビュー着時刻表示
 		if (m_pTarget->size() == 1)
 		{
-			if (pUiData->bJikokuhyouChakuJikokuDisplayNoboriEnable)
-			{
+			//if (pUiData->bJikokuhyouChakuJikokuDisplayNoboriEnable)
+			//{
 				pTarget->setJikokuhyouChakuJikokuDisplayNobori(pUiData->bJikokuhyouChakuJikokuDisplayNobori);
-			}
-			else
-			{
-				pTarget->setJikokuhyouChakuJikokuDisplayNobori(false);
-			}
+			//}
+			//else
+			//{
+			//	pTarget->setJikokuhyouChakuJikokuDisplayNobori(false);
+			//}
 		}
 		//if (bNewItem)
 		//{
@@ -1727,14 +1947,14 @@ int CPropEditUi_Eki::UiDataToTarget(
 		//下り時刻表ビュー発時刻表示
 		if (m_pTarget->size() == 1)
 		{
-			if (pUiData->bJikokuhyouHatsuJikokuDisplayKudariEnable)
-			{
+			//if (pUiData->bJikokuhyouHatsuJikokuDisplayKudariEnable)
+			//{
 				pTarget->setJikokuhyouHatsuJikokuDisplayKudari(pUiData->bJikokuhyouHatsuJikokuDisplayKudari);
-			}
-			else
-			{
-				pTarget->setJikokuhyouHatsuJikokuDisplayKudari(false);
-			}
+			//}
+			//else
+			//{
+			//	pTarget->setJikokuhyouHatsuJikokuDisplayKudari(false);
+			//}
 		}
 		//if (bNewItem)
 		//{
@@ -1760,14 +1980,14 @@ int CPropEditUi_Eki::UiDataToTarget(
 		//上り時刻表ビュー発時刻表示
 		if (m_pTarget->size() == 1)
 		{
-			if (pUiData->bJikokuhyouHatsuJikokuDisplayNoboriEnable)
-			{
+			//if (pUiData->bJikokuhyouHatsuJikokuDisplayNoboriEnable)
+			//{
 				pTarget->setJikokuhyouHatsuJikokuDisplayNobori(pUiData->bJikokuhyouHatsuJikokuDisplayNobori);
-			}
-			else
-			{
-				pTarget->setJikokuhyouHatsuJikokuDisplayNobori(false);
-			}
+			//}
+			//else
+			//{
+			//	pTarget->setJikokuhyouHatsuJikokuDisplayNobori(false);
+			//}
 		}
 		//if (bNewItem)
 		//{
@@ -2041,6 +2261,139 @@ int CPropEditUi_Eki::UiDataToTarget(
 			//}
 		}
 
+		//下りカスタマイズ時刻表ビューでの入線時刻表示
+		if (m_pTarget->size() == 1)
+		{
+			if (pUiData->bJikokuhyouNyuusenJikokuDisplayKudariEnable)
+			{
+				pTarget->setJikokuhyouNyuusenJikokuDisplayKudari(pUiData->bJikokuhyouNyuusenJikokuDisplayKudari);
+			}
+			else
+			{
+				pTarget->setJikokuhyouNyuusenJikokuDisplayKudari(false);
+			}
+		}
+
+		//上りカスタマイズ時刻表ビューでの入線時刻表示
+		if (m_pTarget->size() == 1)
+		{
+			if (pUiData->bJikokuhyouNyuusenJikokuDisplayNoboriEnable)
+			{
+				pTarget->setJikokuhyouNyuusenJikokuDisplayNobori(pUiData->bJikokuhyouNyuusenJikokuDisplayNobori);
+			}
+			else
+			{
+				pTarget->setJikokuhyouNyuusenJikokuDisplayNobori(false);
+			}
+		}
+
+		//下り時刻表ビュー前列車列車番号表示
+		if (m_pTarget->size() == 1)
+		{
+			if (pUiData->bJikokuhyouPrevSyubetsuChangeDisplayKudariEnable)
+			{
+				pTarget->setJikokuhyouPrevRessyabangouDisplayKudari(pUiData->iJikokuhyouPrevRessyabangouDisplayKudari);
+			}
+			else
+			{
+				pTarget->setJikokuhyouPrevRessyabangouDisplayKudari(0);
+			}
+		}
+
+		//上り時刻表ビュー前列車列車番号表示
+		if (m_pTarget->size() == 1)
+		{
+			if (pUiData->bJikokuhyouPrevSyubetsuChangeDisplayNoboriEnable)
+			{
+				pTarget->setJikokuhyouPrevRessyabangouDisplayNobori(pUiData->iJikokuhyouPrevRessyabangouDisplayNobori);
+			}
+			else
+			{
+				pTarget->setJikokuhyouPrevRessyabangouDisplayNobori(0);
+			}
+		}
+
+		//下り時刻表ビュー前列車運用番号表示
+		if (m_pTarget->size() == 1)
+		{
+			if (pUiData->bJikokuhyouPrevSyubetsuChangeDisplayKudariEnable)
+			{
+				pTarget->setJikokuhyouPrevOperationNumberDisplayKudari(pUiData->iJikokuhyouPrevOperationNumberDisplayKudari);
+				pTarget->setJikokuhyouPrevOperationNumberDisplayRowsKudari(pUiData->iJikokuhyouPrevOperationNumberDisplayRowsKudari + 1);
+			}
+			else
+			{
+				pTarget->setJikokuhyouPrevOperationNumberDisplayKudari(0);
+				pTarget->setJikokuhyouPrevOperationNumberDisplayRowsKudari(1);
+			}
+		}
+
+		//上り時刻表ビュー前列車運用番号表示
+		if (m_pTarget->size() == 1)
+		{
+			if (pUiData->bJikokuhyouPrevSyubetsuChangeDisplayNoboriEnable)
+			{
+				pTarget->setJikokuhyouPrevOperationNumberDisplayNobori(pUiData->iJikokuhyouPrevOperationNumberDisplayNobori);
+				pTarget->setJikokuhyouPrevOperationNumberDisplayRowsNobori(pUiData->iJikokuhyouPrevOperationNumberDisplayRowsNobori + 1);
+			}
+			else
+			{
+				pTarget->setJikokuhyouPrevOperationNumberDisplayNobori(0);
+				pTarget->setJikokuhyouPrevOperationNumberDisplayRowsNobori(1);
+			}
+		}
+
+		//下り時刻表ビュー前列車列車種別表示
+		if (m_pTarget->size() == 1)
+		{
+			if (pUiData->bJikokuhyouPrevSyubetsuChangeDisplayKudariEnable)
+			{
+				pTarget->setJikokuhyouPrevRessyaSyubetsuDisplayKudari(pUiData->iJikokuhyouPrevRessyaSyubetsuDisplayKudari);
+			}
+			else
+			{
+				pTarget->setJikokuhyouPrevRessyaSyubetsuDisplayKudari(0);
+			}
+		}
+
+		//上り時刻表ビュー前列車列車種別表示
+		if (m_pTarget->size() == 1)
+		{
+			if (pUiData->bJikokuhyouPrevSyubetsuChangeDisplayNoboriEnable)
+			{
+				pTarget->setJikokuhyouPrevRessyaSyubetsuDisplayNobori(pUiData->iJikokuhyouPrevRessyaSyubetsuDisplayNobori);
+			}
+			else
+			{
+				pTarget->setJikokuhyouPrevRessyaSyubetsuDisplayNobori(0);
+			}
+		}
+
+		//下り時刻表ビュー前列車車名表示
+		if (m_pTarget->size() == 1)
+		{
+			if (pUiData->bJikokuhyouPrevSyubetsuChangeDisplayKudariEnable)
+			{
+				pTarget->setJikokuhyouPrevRessyameiDisplayKudari(pUiData->iJikokuhyouPrevRessyameiDisplayKudari);
+			}
+			else
+			{
+				pTarget->setJikokuhyouPrevRessyameiDisplayKudari(0);
+			}
+		}
+
+		//上り時刻表ビュー前列車列車名表示
+		if (m_pTarget->size() == 1)
+		{
+			if (pUiData->bJikokuhyouPrevSyubetsuChangeDisplayNoboriEnable)
+			{
+				pTarget->setJikokuhyouPrevRessyameiDisplayNobori(pUiData->iJikokuhyouPrevRessyameiDisplayNobori);
+			}
+			else
+			{
+				pTarget->setJikokuhyouPrevRessyameiDisplayNobori(0);
+			}
+		}
 	}
 	/*	[駅時刻を駅時刻形式で正規化]の設定です。*/
 	if ( iRv >= 0 )

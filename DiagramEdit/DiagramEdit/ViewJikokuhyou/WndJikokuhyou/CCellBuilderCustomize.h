@@ -1,5 +1,5 @@
 /*
-OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -691,6 +691,81 @@ protected:
 	/**
 	　(1)　グリッドのうち、列車情報以外のすべての部分を設定します。
 
+		(1.3.1)　セル(ColumnType_Ekimei,ColumnType_Ressyabangou) と、
+			Y列(ColumnType_Ressyabangou)の高さ・Y列境界線・Y列境界線の高さ設定
+
+	@param pCWndJikokuhyou [out]
+		　この関数はこのウインドウのセルを更新します。
+	*/
+	void update01_03_02_27_setEkimei_PrevRessyabangou(
+		CWndJikokuhyou* pCWndJikokuhyou);
+
+
+	/**
+	　(1)　グリッドのうち、列車情報以外のすべての部分を設定します。
+
+	 (1.3.2.12)セル(ColumnType_Ekimei, ColumnType_OperationNumber)
+	 とY列(ColumnType_OperationNumber)の高さ・Y列境界線・Y列境界線の高さ設定
+
+	 @param pCWndJikokuhyou [out]
+	 　この関数はこのウインドウのセルを更新します。
+	  */
+	void update01_03_02_28_setEkimei_PrevOperationNumber(
+		CWndJikokuhyou* pCWndJikokuhyou);
+
+
+	/**
+	　(1)　グリッドのうち、列車情報以外のすべての部分を設定します。
+
+		(1.3.2.2)セル(ColumnType_Ekimei, ColumnType_Ressyasyubetsu)
+		とY列(ColumnType_Ressyasyubetsu)の高さ・Y列境界線・Y列境界線の高さ設定
+
+	@param pCWndJikokuhyou [out]
+		　この関数はこのウインドウのセルを更新します。
+	*/
+	void update01_03_02_29_setEkimei_PrevRessyasyubetsu(
+		CWndJikokuhyou* pCWndJikokuhyou);
+
+
+	/**
+	　(1)　グリッドのうち、列車情報以外のすべての部分を設定します。
+
+		(1.3.2.3)セル(ColumnType_Ekimei, ColumnType_Ressyamei)
+		とY列(ColumnType_Ressyamei)の高さ・Y列境界線・Y列境界線の高さ設定
+
+	@param pCWndJikokuhyou [out]
+		　この関数はこのウインドウのセルを更新します。
+	*/
+	void update01_03_02_30_setEkimei_PrevRessyamei(
+		CWndJikokuhyou* pCWndJikokuhyou);
+
+	/**
+	　(1)　グリッドのうち、列車情報以外のすべての部分を設定します。
+
+		(1.3.2.4)セル(ColumnType_Ekimei, ColumnType_Gousuu)
+		とY列(ColumnType_Gousuu)の高さ・Y列境界線・Y列境界線の高さ設定
+
+	@param pCWndJikokuhyou [out]
+		　この関数はこのウインドウのセルを更新します。
+	*/
+	void update01_03_02_31_setEkimei_PrevGousuu(
+		CWndJikokuhyou* pCWndJikokuhyou);
+
+	/**
+	　(1)　グリッドのうち、列車情報以外のすべての部分を設定します。
+
+		(1.3.2.5)セル(ColumnType_Ekimei, ColumnType_Gou)
+		とY列(ColumnType_Gou)の高さ・Y列境界線・Y列境界線の高さ設定
+
+	@param pCWndJikokuhyou [out]
+		　この関数はこのウインドウのセルを更新します。
+	*/
+	void update01_03_02_32_setEkimei_PrevGou(
+		CWndJikokuhyou* pCWndJikokuhyou);
+
+	/**
+	　(1)　グリッドのうち、列車情報以外のすべての部分を設定します。
+
 	 (1.3.2.22)セル(ColumnType_Ekimei, ColumnType_EkiOuter_Shihatsu1,2)
 	 とY列(ColumnType_EkiOuter_Shihatsu1,2)の高さ・Y列境界線・Y列境界線の高さ設定
 
@@ -712,6 +787,19 @@ protected:
 	*/
 	void update01_03_02_06_setEkimei_Chaku( 
 		CWndJikokuhyou* pCWndJikokuhyou ) ;
+
+
+	/**
+	　(1)　グリッドのうち、列車情報以外のすべての部分を設定します。
+
+		(1.3.2.33)セル(ColumnType_Ekimei, ColumnType_Ekijikoku_Nyuusen)
+		とY列(ColumnType_Gou)の高さ・Y列境界線・Y列境界線の高さ設定
+
+	@param pCWndJikokuhyou [out]
+		　この関数はこのウインドウのセルを更新します。
+	*/
+	void update01_03_02_33_setEkimei_Nyuusen(
+		CWndJikokuhyou* pCWndJikokuhyou);
 
 	/**
 	　(1)　グリッドのうち、列車情報以外のすべての部分を設定します。
@@ -1066,7 +1154,102 @@ protected:
 		const CentDedRessya* pCentDedRessya,
 		const CustomizeJikokuhyouContent& aCustomizeJikokuhyouContent,
 		CWndJikokuhyou* pCWndJikokuhyou);
-	
+
+	/**
+	　(2.2)　X列(ColumnType_Ressya )に、列車情報を設定
+
+	　(2.2.2.1)　セル(ColumnType_Ressya ,ColumnType_Ressyabangou) を設定
+
+	@param iXColumnNumber [in]
+		　列車番号を指定するX列番号を指定してください。
+	@param pCentDedRessya [in]
+		　設定する列車情報を指定して下しa.
+		　NULLなら、空列車を指定したことになります。
+	@param pCWndJikokuhyou [out]
+		　この関数はこのウインドウのセルを更新します。
+	*/
+	void update02_02_02_27_setRessya_PrevRessyabangou(
+		int iXColumnNumber,
+		int iYColumnNumber,
+		const CentDedRessya* pCentDedRessya,
+		const CustomizeJikokuhyouContent& aCustomizeJikokuhyouContent,
+		int iEkiOrder,
+		int iCurrentRessyaShihatsuEkiOrder,
+		int iRessyaIndexContIndex,
+		CWndJikokuhyou* pCWndJikokuhyou);
+
+	/**
+	　(2.2)　X列(ColumnType_Ressya )に、列車情報を設定
+
+	 (2.2.2.2)セル(ColumnType_Ressya, ColumnType_OperationNumber)
+	 を設定。
+
+	 @param iXColumnNumber [in]
+	 　運用番号を指定するX列番号を指定してください。
+	  @param pCentDedRessya [in]
+	  　設定する列車情報を指定して下しa.
+	   　NULLなら、空列車を指定したことになります。
+		@param pCWndJikokuhyou [out]
+		　この関数はこのウインドウのセルを更新します。
+		 */
+	void update02_02_02_28_setRessya_PrevOperationNumber(
+		int iXColumnNumber,
+		int iYColumnNumber,
+		const CentDedRessya* pCentDedRessya,
+		const CustomizeJikokuhyouContent& aCustomizeJikokuhyouContent,
+		int iEkiOrder,
+		int iCurrentRessyaShihatsuEkiOrder,
+		int iRessyaIndexContIndex,
+		CWndJikokuhyou* pCWndJikokuhyou);
+
+	/**
+	　(2.2)　X列(ColumnType_Ressya )に、列車情報を設定
+
+		(2.2.2.2)セル(ColumnType_Ressya, ColumnType_Ressyasyubetsu)
+		 を設定。
+
+	@param iXColumnNumber [in]
+		　列車番号を指定するX列番号を指定してください。
+	@param pCentDedRessya [in]
+		　設定する列車情報を指定して下しa.
+		　NULLなら、空列車を指定したことになります。
+	@param pCWndJikokuhyou [out]
+		　この関数はこのウインドウのセルを更新します。
+	*/
+	void update02_02_02_29_setRessya_PrevRessyasyubetsu(
+		int iXColumnNumber,
+		int iYColumnNumber,
+		const CentDedRessya* pCentDedRessya,
+		const CustomizeJikokuhyouContent& aCustomizeJikokuhyouContent,
+		int iEkiOrder,
+		int iCurrentRessyaShihatsuEkiOrder,
+		int iRessyaIndexContIndex,
+		CWndJikokuhyou* pCWndJikokuhyou);
+
+	/**
+	　(2.2)　X列(ColumnType_Ressya )に、列車情報を設定
+
+		(2.2.2.3)セル(ColumnType_Ressya, ColumnType_Ressyamei)
+		 を設定。
+
+	@param iXColumnNumber [in]
+		　列車番号を指定するX列番号を指定してください。
+	@param pCentDedRessya [in]
+		　設定する列車情報を指定して下しa.
+		　NULLなら、空列車を指定したことになります。
+	@param pCWndJikokuhyou [out]
+		　この関数はこのウインドウのセルを更新します。
+	*/
+	void update02_02_02_30_setRessya_PrevRessyamei(
+		int iXColumnNumber,
+		int iYColumnNumber,
+		const CentDedRessya* pCentDedRessya,
+		const CustomizeJikokuhyouContent& aCustomizeJikokuhyouContent,
+		int iEkiOrder,
+		int iCurrentRessyaShihatsuEkiOrder,
+		int iRessyaIndexContIndex,
+		CWndJikokuhyou* pCWndJikokuhyou);
+
 	/**
 	　(2.2)　X列(ColumnType_Ressya )に、列車情報を設定
 
@@ -1126,6 +1309,41 @@ protected:
 		int iCurrentRessyaShihatsuEkiOrder,
 		int iRessyaIndexContIndex,
 		CWndJikokuhyou* pCWndJikokuhyou ) ;
+
+	/**
+	　(2.2)　X列(ColumnType_Ressya )に、列車情報を設定
+
+		(2.2.2.31)セル(ColumnType_Ressya,ColumnType_Ekijikoku_Nyuusen)
+		 を設定。
+
+	@param iXColumnNumber [in]
+		　列車番号を指定するX列番号を指定してください。
+	@param pCentDedRessya [in]
+		　設定する列車情報を指定して下しa.
+		　NULLなら、空列車を指定したことになります。
+	@param iEkiOrder [in]
+		  駅Orderを指定してください。
+	@param iSyubetsuChangeEkiOrder [in]
+		この列車が、前の列車から種別変更を行っている場合、
+		  前の列車の有効終着駅の駅Orderを指定してください。
+	@param iReleaseEkiOrder [in]
+		この列車が、他の列車から解結された場合、
+		  解結された駅Orderを指定してください。
+	@param iConnectEkiOrder [in]
+		この列車が、他の列車に増結する場合、
+		  増結する駅Orderを指定してください。
+	@param pCWndJikokuhyou [out]
+		　この関数はこのウインドウのセルを更新します。
+	*/
+	void update02_02_02_31_setRessya_Nyuusen(
+		int iXColumnNumber,
+		int iYColumnNumber,
+		const CentDedRessya* pCentDedRessya,
+		const CustomizeJikokuhyouContent& aCustomizeJikokuhyouContent,
+		int iEkiOrder,
+		int iCurrentRessyaShihatsuEkiOrder,
+		int iRessyaIndexContIndex,
+		CWndJikokuhyou* pCWndJikokuhyou);
 
 	/**
 	　(2.2)　X列(ColumnType_Ressya )に、列車情報を設定

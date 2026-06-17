@@ -1,5 +1,5 @@
 /*
-OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -410,6 +410,15 @@ struct CustomizeJikokuhyouContent {
 	vector<tstring> strOperationNumber;
 	CentDedEkiJikoku::EEkiatsukai eEkiatsukai;
 	int iRessyaTrackIndex;
+	EBeforeAfterType eEAfterType;
+	int	iPrevRessyasyubetsuIndex;
+	tstring strPrevRessyabangou;
+	tstring strPrevRessyamei;
+	tstring strPrevGousuu;
+	vector<tstring> strPrevOperationNumber;
+	CentDedEkiJikoku::EEkiatsukai ePrevEkiatsukai;
+	int iPrevRessyaTrackIndex;
+	EBeforeAfterType eEBeforeType;
 	int iShiftSecond;
 
 	CustomizeJikokuhyouContent()
@@ -431,6 +440,15 @@ struct CustomizeJikokuhyouContent {
 		, strOperationNumber(vector<tstring>())
 		, eEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Teisya)
 		, iRessyaTrackIndex(0)
+		, eEAfterType(EBeforeAfterType::BeforeAfterType_Unrelated)
+		, iPrevRessyasyubetsuIndex(-1)
+		, strPrevRessyabangou(tstring())
+		, strPrevRessyamei(tstring())
+		, strPrevGousuu(tstring())
+		, strPrevOperationNumber(vector<tstring>())
+		, ePrevEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Teisya)
+		, iPrevRessyaTrackIndex(0)
+		, eEBeforeType(EBeforeAfterType::BeforeAfterType_Unrelated)
 		, iShiftSecond(0)
 	{}
 
@@ -454,6 +472,15 @@ struct CustomizeJikokuhyouContent {
 		, strOperationNumber(vector<tstring>())
 		, eEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Teisya)
 		, iRessyaTrackIndex(0)
+		, eEAfterType(EBeforeAfterType::BeforeAfterType_Unrelated)
+		, iPrevRessyasyubetsuIndex(-1)
+		, strPrevRessyabangou(tstring())
+		, strPrevRessyamei(tstring())
+		, strPrevGousuu(tstring())
+		, strPrevOperationNumber(vector<tstring>())
+		, ePrevEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Teisya)
+		, iPrevRessyaTrackIndex(0)
+		, eEBeforeType(EBeforeAfterType::BeforeAfterType_Unrelated)
 		, iShiftSecond(0)
 	{}
 
@@ -477,11 +504,21 @@ struct CustomizeJikokuhyouContent {
 		, strOperationNumber(vector<tstring>())
 		, eEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Teisya)
 		, iRessyaTrackIndex(0)
+		, eEAfterType(EBeforeAfterType::BeforeAfterType_Unrelated)
+		, iPrevRessyasyubetsuIndex(-1)
+		, strPrevRessyabangou(tstring())
+		, strPrevRessyamei(tstring())
+		, strPrevGousuu(tstring())
+		, strPrevOperationNumber(vector<tstring>())
+		, ePrevEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Teisya)
+		, iPrevRessyaTrackIndex(0)
+		, eEBeforeType(EBeforeAfterType::BeforeAfterType_Unrelated)
 		, iShiftSecond(0)
 	{}
 
 	CustomizeJikokuhyouContent(
-		const CentDedRessya* pCentDedRessya)
+		const CentDedRessya* pCentDedRessya,
+		const bool bIsPrev = false)
 		: iRessyaIndexCont(vector<int>())
 		, iSihatsuEkiOrder(INT_MIN)
 		, iOuterShihatsuEkiIndex(-1)
@@ -496,16 +533,40 @@ struct CustomizeJikokuhyouContent {
 		, strOperationNumber(vector<tstring>())
 		, eEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Teisya)
 		, iRessyaTrackIndex(0)
+		, eEAfterType(EBeforeAfterType::BeforeAfterType_Unrelated)
+		, strPrevOperationNumber(vector<tstring>())
+		, ePrevEkiatsukai(CentDedEkiJikoku::EEkiatsukai::Ekiatsukai_Teisya)
+		, iPrevRessyaTrackIndex(0)
+		, eEBeforeType(EBeforeAfterType::BeforeAfterType_Unrelated)
 		, iShiftSecond(0)
 		//, iRessyasyubetsuIndex(-1)
 		//, strRessyabangou(tstring())
 		//, strRessyamei(tstring())
 		//, strGousuu(tstring())
 	{
-		iRessyasyubetsuIndex = pCentDedRessya->getRessyasyubetsuIndex();
-		strRessyabangou = pCentDedRessya->getRessyabangou();
-		strRessyamei = pCentDedRessya->getRessyamei();
-		strGousuu = pCentDedRessya->getGousuu();
+		if (bIsPrev)
+		{
+			iPrevRessyasyubetsuIndex = pCentDedRessya->getRessyasyubetsuIndex();
+			strPrevRessyabangou = pCentDedRessya->getRessyabangou();
+			strPrevRessyamei = pCentDedRessya->getRessyamei();
+			strPrevGousuu = pCentDedRessya->getGousuu();
+			iRessyasyubetsuIndex = -1;
+			strRessyabangou = tstring();
+			strRessyamei = tstring();
+			strGousuu = tstring();
+
+		}
+		else
+		{
+			iRessyasyubetsuIndex = pCentDedRessya->getRessyasyubetsuIndex();
+			strRessyabangou = pCentDedRessya->getRessyabangou();
+			strRessyamei = pCentDedRessya->getRessyamei();
+			strGousuu = pCentDedRessya->getGousuu();
+			iPrevRessyasyubetsuIndex = -1;
+			strPrevRessyabangou = tstring();
+			strPrevRessyamei = tstring();
+			strPrevGousuu = tstring();
+		}
 	}
 
 	//todo ケースに応じたコンストラクタ作成
@@ -864,6 +925,8 @@ public:
 		const int& iJikokuhyouMainBackColorIndex,
 		const int& iJikokuhyouSubBackColorIndex,
 		const int& iJikokuhyouBackPatternIndex,
+		const bool& bPatternDiagramPreviewEnable,
+		const int& iPatternDiagramPreviewCycleSecond,
 		int iEkiCount);
 
 

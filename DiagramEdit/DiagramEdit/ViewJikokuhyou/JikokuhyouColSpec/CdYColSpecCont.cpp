@@ -1,5 +1,5 @@
 /*
-OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -293,6 +293,36 @@ void CdYColSpecCont::scan(
 		{
 			CentDedEkiCont::CdDedEki	aEki = muEki->get( iEkiOrder ) ;
 
+			//カスタマイズ時刻表かつ運用機能が通常モードの場合、駅別の前列車情報表示欄を追加
+			if (bCustomizeDisplayMode && iEnableOperation > 1)
+			{
+				if (aEki.getJikokuhyouPrevRessyabangouDisplay() >= 1)
+				{
+					m_contColumnSpec.insert(
+						CdYColSpec(CdYColSpec::ColumnType_EkiPrevRessyabangou, iEkiOrder));
+				}
+				for (int idx = 0; idx < aEki.getJikokuhyouPrevOperationNumberDisplayRows() &&
+					aEki.getJikokuhyouPrevOperationNumberDisplay() >= 1; idx++)
+				{
+					m_contColumnSpec.insert(
+						CdYColSpec(CdYColSpec::ColumnType_EkiPrevOperationNumber, iEkiOrder, idx));
+				}
+				if (aEki.getJikokuhyouPrevRessyaSyubetsuDisplay() >= 1)
+				{
+					m_contColumnSpec.insert(
+						CdYColSpec(CdYColSpec::ColumnType_EkiPrevRessyasyubetsu, iEkiOrder));
+				}
+				if (aEki.getJikokuhyouPrevRessyameiDisplay() >= 1)
+				{
+					m_contColumnSpec.insert(
+						CdYColSpec(CdYColSpec::ColumnType_EkiPrevRessyamei, iEkiOrder));
+					m_contColumnSpec.insert(
+						CdYColSpec(CdYColSpec::ColumnType_EkiPrevGousuu, iEkiOrder));
+					m_contColumnSpec.insert(
+						CdYColSpec(CdYColSpec::ColumnType_EkiPrevGou, iEkiOrder));
+				}
+			}
+
 			//カスタマイズ時刻表の場合、駅別の路線外・前列車始発駅欄を追加
 			if (bCustomizeDisplayMode && aEki.getJikokuhyouOuterSihatsuDisplay())
 			{
@@ -320,6 +350,15 @@ void CdYColSpecCont::scan(
 				}
 			}
 
+			//カスタマイズ時刻表かつ運用機能が通常・簡易モードの場合、入線時刻欄を追加
+			if (bCustomizeDisplayMode && iEnableOperation > 0)
+			{
+				if (aEki.getJikokuhyouNyuusenJikokuDisplay())
+				{
+					m_contColumnSpec.insert(
+						CdYColSpec(CdYColSpec::ColumnType_Ekijikoku_Nyuusen, iEkiOrder));
+				}
+			}
 			//編集モードかつ、前作業表示が1以上なら、作業列を追加
 			if (!bCustomizeDisplayMode)
 			{

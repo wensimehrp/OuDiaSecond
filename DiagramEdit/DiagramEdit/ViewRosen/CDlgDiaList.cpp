@@ -1,5 +1,5 @@
 /*
-OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -329,15 +329,19 @@ void CDlgDiaList::OnButtonNew()
 	int iJikokuhyouMainBackColorIndex = 0;
 	int iJikokuhyouSubBackColorIndex = 1;
 	int iJikokuhyouBackPatternIndex = 0;
+	bool bPatternDiagramPreviewEnable = false;
+	int iPatternDiagramPreviewCycleSecond = 600;
 	if (pCentDedRosen->getCentDedDiaCont()->size() > 0)
 	{
 		iJikokuhyouMainBackColorIndex = pCentDedRosen->getCentDedDiaCont()->get(INT_MAX).getMainBackColorIndex();
 		iJikokuhyouSubBackColorIndex = pCentDedRosen->getCentDedDiaCont()->get(INT_MAX).getSubBackColorIndex();
 		iJikokuhyouBackPatternIndex = pCentDedRosen->getCentDedDiaCont()->get(INT_MAX).getBackPatternIndex();
+		bPatternDiagramPreviewEnable = pCentDedRosen->getCentDedDiaCont()->get(INT_MAX).getPatternDiagramPreviewEnable();
+		iPatternDiagramPreviewCycleSecond = pCentDedRosen->getCentDedDiaCont()->get(INT_MAX).getPatternDiagramPreviewCycleSecond();
 	}
 	CDlgDiaProp	aDlg(_T(""), iJikokuhyouMainBackColorIndex,
 		iJikokuhyouSubBackColorIndex, iJikokuhyouBackPatternIndex,
-		false,600,
+		bPatternDiagramPreviewEnable, iPatternDiagramPreviewCycleSecond,
 		m_pCDiagramEditDoc->getCDedRosenFileData()->getCdDedDispProp(), this);
 	//CDlgDiaProp	aDlg("", 0, 1, 0, 
 	//	m_pCDiagramEditDoc->getCDedRosenFileData()->getCdDedDispProp(),this);
@@ -364,6 +368,8 @@ void CDlgDiaList::OnButtonNew()
 					aDlg.getMainBackColorIndex(),
 					aDlg.getSubBackColorIndex(),
 					aDlg.getBackPatternIndex(),
+					aDlg.getPatternDiagramPreviewEnable(),
+					aDlg.getPatternDiagramPreviewCycleSecond(),
 					pCentDedRosen->getCentDedEkiCont()->getMuPtr()->size()  ) ) ;
 			OuNew<CRfEditCmd>	pCmd( 
 				new CRfEditCmd_Dia( INT_MAX , 0 , aCentDedDiaCont ,false) 
@@ -441,6 +447,8 @@ void CDlgDiaList::OnButtonCopy()
 			aNewDia.setMainBackColorIndex(aDlg.getMainBackColorIndex());
 			aNewDia.setSubBackColorIndex(aDlg.getSubBackColorIndex());
 			aNewDia.setBackPatternIndex(aDlg.getBackPatternIndex());
+			aNewDia.setPatternDiagramPreviewEnable(aDlg.getPatternDiagramPreviewEnable());
+			aNewDia.setPatternDiagramPreviewCycleSecond(aDlg.getPatternDiagramPreviewCycleSecond());
 			aCentDedDiaCont.insert(aNewDia);
 			OuNew<CRfEditCmd>	pCmd(
 				new CRfEditCmd_Dia(INT_MAX, 0, aCentDedDiaCont,false)

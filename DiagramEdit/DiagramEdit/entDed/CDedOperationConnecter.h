@@ -1,5 +1,5 @@
 /*
-OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -342,15 +342,19 @@ struct OperationElement {
 //	//{}
 //
 //};
-
+/**
+	運用機能が通常モード時に、環状線やスイッチバック等によって、始発駅や終着駅を路線外発着状に表示するための、
+	カスタマイズ時刻表での表示を組み立てるために用います
+	aRessyaProperty：当該列車の列車プロパティです
+	strContOperationNumber：対象となる運用番号です
+	iEkiOrder：当該列車の終着駅Orderもしくは始発駅Orderです。
+	bIsConnectOrRelease：表示方法が、分割または併合の場合は、ここがTrueになります
+*/
 struct OuterSearchElement {
 	CdDedRessyaProperty aRessyaProperty;
 	vector<tstring> strContOperationNumber;
 	int iEkiOrder;
 	bool bIsConnectOrRelease;
-	//int iStatus;
-	//RessyaElement aRessyaElement;
-	//CdDedJikoku InOutJikoku;
 
 	OuterSearchElement()
 		:aRessyaProperty(CdDedRessyaProperty())
@@ -395,8 +399,6 @@ struct OuterSearchElement {
 	iRessyaTrackIndex:発車番線
 	aRessyaProperty:列車プロパティ
 
-	種別変更表示の場合
-	iMinute:ここには"-1"が入ります。種別変更表示であることを意味します
 	iRessyaSyubetsu:種別変更後の列車種別Index
 	iSyuuchakuEkiOrder:"種別変更を行う"駅Order(元の列車基準)
 	aRessyaProperty:種別変更後の列車プロパティ
@@ -412,6 +414,8 @@ struct OuterDisplayContent {
 	int iEkiOrder;
 	int iOuterEkiIndex;
 	CdDedRessyaProperty aRessyaProperty;
+	EBeforeAfterType eEBeforeAfterType;
+	int iJunctionEkiOrder;
 
 	OuterDisplayContent()
 		: HatsuJikoku(CdDedJikoku())
@@ -422,6 +426,8 @@ struct OuterDisplayContent {
 		, iEkiOrder(INT_MIN)
 		, iOuterEkiIndex(INT_MIN)
 		, aRessyaProperty(CdDedRessyaProperty())
+		, eEBeforeAfterType(EBeforeAfterType::BeforeAfterType_Unrelated)
+		, iJunctionEkiOrder(INT_MIN)
 	{}
 };
 

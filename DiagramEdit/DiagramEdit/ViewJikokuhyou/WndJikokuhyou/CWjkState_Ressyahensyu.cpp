@@ -1,5 +1,5 @@
 /*
-OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -2585,6 +2585,24 @@ void CWjkState_Ressyahensyu::OnChar(UINT nChar, UINT nRepCnt, UINT nFlags)
 		super::OnChar( nChar, nRepCnt, nFlags ) ;
 	}
 }
+
+//void CWjkState_Ressyahensyu::OnMouseMove(UINT nFlags, CPoint point)
+//{
+//	CToolTipCtrl m_ToolTipCtrl;
+//	m_ToolTipCtrl.Create(super::getCWndDcdGrid());
+//	//super::getCWndDcdGrid()->->EnableToolTips(TRUE);
+//	//m_ToolTipCtrl.UpdateTipText(_T("a"), super::getCWndDcdGrid());
+//	m_ToolTipCtrl.AddTool(super::getCWndDcdGrid(), _T("a"));
+//	m_ToolTipCtrl.SetMaxTipWidth(120);
+//	m_ToolTipCtrl.Activate(TRUE); 
+//	//m_ToolTipCtrl.SetTitle(1, _T("タイトル"));
+//	//CToolInfo toolinfo(TTF_SUBCLASS, *this, 0, 0, _T("テキスト"));
+//	//m_ToolTipCtrl.AddTool(toolinfo);
+//	{
+//		super::OnMouseMove(nFlags, point);
+//	}
+//
+//}
 
 void CWjkState_Ressyahensyu::OnWM_IME_STARTCOMPOSITION() 
 {

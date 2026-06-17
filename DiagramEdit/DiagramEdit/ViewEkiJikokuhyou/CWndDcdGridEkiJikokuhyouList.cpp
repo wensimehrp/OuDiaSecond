@@ -1,5 +1,5 @@
 /*
-	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+	OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -2484,6 +2484,20 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 				}
 			}
 
+
+			const CentDedRessyasyubetsuCont* pCentDedRessyasyubetsuCont =
+				getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()->getCentDedRessyasyubetsuCont();
+
+			vector<bool> contHidden;
+			contHidden.assign(pCentDedRessyasyubetsuCont->size(), false);
+			if (!getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()->getDisableHiddenSyubetsu())
+			{
+				for (int iRessyaSyubetsuIndex = 0; iRessyaSyubetsuIndex < pCentDedRessyasyubetsuCont->size(); iRessyaSyubetsuIndex++)
+				{
+					contHidden[iRessyaSyubetsuIndex] = pCentDedRessyasyubetsuCont->get(iRessyaSyubetsuIndex).getHidden();
+				}
+			}
+
 			for (int iEkiIndex = 0; iEkiIndex < pCentDedEkiCont->size(); iEkiIndex++)
 			{
 				const CentDedEki* pCentDedEki =
@@ -2514,6 +2528,15 @@ int CWndDcdGridEkiJikokuhyouList::OnFileExportAllEkiJikokuhyouCsv_Process(BOOL b
 					for (int iRessyaIndex = 0; iRessyaIndex < pCentDedRessyaCont->size(); iRessyaIndex++)
 					{
 						const CentDedRessya* pCentDedRessya = pCentDedRessyaCont->getMuPtr()->get(iRessyaIndex);
+						if (pCentDedRessya->isCanceled())
+						{
+							continue;
+						}
+						if (contHidden[pCentDedRessya->getRessyasyubetsuIndex()])
+						{
+							continue;
+						}
+
 						if (pCentDedRessya->getCentDedEkiJikoku(iEkiOrder).getEkiatsukai() != CentDedEkiJikoku::Ekiatsukai_Teisya ||
 							pCentDedRessya->getCentDedEkiJikoku(iEkiOrder).getHatsujikoku().isNull())
 						{

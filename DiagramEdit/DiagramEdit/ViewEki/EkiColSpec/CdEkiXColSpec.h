@@ -1,5 +1,5 @@
 /*
-OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -146,6 +146,18 @@ public:
 		ColumnType_OuterSihatsuDisplayKudari,
 		/** 下りカスタマイズ時刻表ビューでの路線外・次列車終着駅表示設定 */
 		ColumnType_OuterShuchakuDisplayKudari,
+		/** 下りカスタマイズ時刻表ビューでの前列車列車番号表示設定 */
+		ColumnType_PrevRessyabangouDisplayKudari,
+		/** 下りカスタマイズ時刻表ビューでの前列車運用番号表示設定 */
+		ColumnType_PrevOperationNumberDisplayKudari,
+		/** 下りカスタマイズ時刻表ビューでの前列車運用番号表示段数設定 */
+		ColumnType_PrevOperationNumberDisplayRowsKudari,
+		/** 下りカスタマイズ時刻表ビューでの前列車列車種別表示設定 */
+		ColumnType_PrevRessyaSyubetsuDisplayKudari,
+		/** 下りカスタマイズ時刻表ビューでの前列車列車名・号数表示設定 */
+		ColumnType_PrevRessyameiDisplayKudari,
+		/** 下りカスタマイズ時刻表ビューでの入線時刻表示設定 */
+		ColumnType_NyuusenJikokuDisplayKudari,
 
 		/** 上りカスタマイズ時刻表ビューでの着時刻表示設定 */
 		ColumnType_ChakuJikokuDisplayNobori,
@@ -163,10 +175,22 @@ public:
 		ColumnType_RessyaSyubetsuDisplayNobori,
 		/** 上りカスタマイズ時刻表ビューでの列車名・号数表示設定 */
 		ColumnType_RessyameiDisplayNobori,
-		/** 下りカスタマイズ時刻表ビューでの路線外・前列車始発駅表示設定 */
+		/** 上りカスタマイズ時刻表ビューでの路線外・前列車始発駅表示設定 */
 		ColumnType_OuterSihatsuDisplayNobori,
-		/** 下りカスタマイズ時刻表ビューでの路線外・次列車終着駅表示設定 */
+		/** 上りカスタマイズ時刻表ビューでの路線外・次列車終着駅表示設定 */
 		ColumnType_OuterShuchakuDisplayNobori,
+		/** 上りカスタマイズ時刻表ビューでの前列車列車番号表示設定 */
+		ColumnType_PrevRessyabangouDisplayNobori,
+		/** 上りカスタマイズ時刻表ビューでの前列車運用番号表示設定 */
+		ColumnType_PrevOperationNumberDisplayNobori,
+		/** 上りカスタマイズ時刻表ビューでの前列車運用番号表示段数設定 */
+		ColumnType_PrevOperationNumberDisplayRowsNobori,
+		/** 上りカスタマイズ時刻表ビューでの前列車列車種別表示設定 */
+		ColumnType_PrevRessyaSyubetsuDisplayNobori,
+		/** 上りカスタマイズ時刻表ビューでの前列車列車名・号数表示設定 */
+		ColumnType_PrevRessyameiDisplayNobori,
+		/** 上りカスタマイズ時刻表ビューでの入線時刻表示設定 */
+		ColumnType_NyuusenJikokuDisplayNobori,
 
 		/** ダイヤグラムビューでの在線表表示設定 */
 		ColumnType_DiagramTrackDisplay,

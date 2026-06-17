@@ -136,11 +136,16 @@ public:
 	// ********************************
 	//	CdDedDispProp
 	// ********************************
+	/** 26.3.10filetype更新_by_d_mania
+	@return
+	PropertyTextアイテム "FileType" の値です。
+	*/
+	static tstring getFileType() { return _T("OuDiaSecond.1.17"); };
 	/** 25.5.27filetype更新_by_d_mania
 	@return
 	PropertyTextアイテム "FileType" の値です。
 	*/
-	static tstring getFileType() { return _T("OuDiaSecond.1.16"); };
+	static tstring getFileTypeS16() { return _T("OuDiaSecond.1.16"); };
 	/** 24.10.7filetype更新_by_d_mania
 	@return
 	PropertyTextアイテム "FileType" の値です。

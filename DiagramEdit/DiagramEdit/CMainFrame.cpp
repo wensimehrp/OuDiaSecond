@@ -1,5 +1,5 @@
 /*
-OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -788,6 +788,7 @@ BEGIN_MESSAGE_MAP(CMainFrame, CHidemdiMainfrm)
 	ON_UPDATE_COMMAND_UI(ID_VIEW_TOOLBAR, &CMainFrame::OnUpdateViewToolbar)
 	//}}AFX_MSG_MAP
 	ON_UPDATE_COMMAND_UI(ID_INDICATOR_PasteZoubun, OnUpdateINDICATOR_PasteZoubun)
+	ON_UPDATE_COMMAND_UI(ID_INDICATOR_StdOpeTime, OnUpdateINDICATOR_StdOpeTime)
 	ON_COMMAND(ID_FILE_ROSEN_FILE_INSERT, &CMainFrame::OnFileRosenfileInsert)
 	ON_UPDATE_COMMAND_UI(ID_FILE_ROSEN_FILE_INSERT, &CMainFrame::OnUpdateFileRosenfileInsert)
 	ON_COMMAND(ID_FILE_ROSEN_CREATE_SUB_ROSEN, &CMainFrame::OnFileRosenCreateSubRosen)
@@ -806,7 +807,8 @@ END_MESSAGE_MAP()
 static UINT indicators[] =
 {
 	ID_SEPARATOR,           // ステータス ライン インジケータ
-	ID_INDICATOR_PasteZoubun , //	貼り付け移動量
+	ID_INDICATOR_PasteZoubun, //	貼り付け移動量
+	ID_INDICATOR_StdOpeTime, //基準運転時分比
 	ID_INDICATOR_KANA,
 	ID_INDICATOR_CAPS,
 	ID_INDICATOR_NUM,
@@ -1010,6 +1012,24 @@ void CMainFrame::OnUpdateINDICATOR_PasteZoubun(CCmdUI *pCmdUI)
 {
     pCmdUI->Enable( FALSE ); 
     pCmdUI->SetText( _T("") ); 
+
+}
+
+/**
+ *	『基準運転時分比』ステータスバーへのテキストを設定します。
+ *
+ * [オーバライド]
+ *	空文字列を設定します。
+ *
+ * @note
+ *	CJikokuhyouView がアクティブなときは、
+ *	CJikokuhyouView::OnUpdateINDICATOR_StdOpeTime()
+ *	で設定されます。
+ */
+void CMainFrame::OnUpdateINDICATOR_StdOpeTime(CCmdUI* pCmdUI)
+{
+	pCmdUI->Enable(FALSE);
+	pCmdUI->SetText(_T(""));
 
 }
 

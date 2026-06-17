@@ -1,5 +1,5 @@
 /*
-OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -524,7 +524,121 @@ struct UIData_Eki
 		箱ダイヤで表示するか否か の設定が有効か否か
 	*/
 	bool bOperationTableDisplayJikokuEnable;
-	
+
+	/**
+		カスタマイズ時刻表における下り時刻表ビューでの入線時刻表示設定
+		駅時刻形式が発着・上り着・下り発着の時のみ有効となります
+
+		true:この駅で入線時刻を表示します
+		false:この駅では入線時刻を表示しません。
+	*/
+	bool bJikokuhyouNyuusenJikokuDisplayKudari;
+	bool bJikokuhyouNyuusenJikokuDisplayKudariEnable;
+
+	/**
+		カスタマイズ時刻表における上り時刻表ビューでの入線時刻表示設定
+		駅時刻形式が発着・下り着・上り発着の時のみ有効となります
+
+		true:この駅で入線時刻を表示します
+		false:この駅では入線時刻を表示しません。
+	*/
+	bool bJikokuhyouNyuusenJikokuDisplayNobori;
+	bool bJikokuhyouNyuusenJikokuDisplayNoboriEnable;
+
+	/**
+		カスタマイズ時刻表における下り時刻表ビューでの前列車列車番号表示設定
+		駅時刻形式が発着・上り着・下り発着の時のみ有効となります
+
+		2:この駅で全列車の列車番号を表示します
+		1:この駅で種別変更を行った列車のみ列車番号を表示します
+		0:この駅では列車番号を表示しません。
+	*/
+	int iJikokuhyouPrevRessyabangouDisplayKudari;
+	bool bJikokuhyouPrevSyubetsuChangeDisplayKudariEnable;
+
+	/**
+		カスタマイズ時刻表における上り時刻表ビューでの前列車列車番号表示設定
+		駅時刻形式が発着・下り着・上り発着の時のみ有効となります
+
+		2:この駅で全列車の列車番号を表示します
+		1:この駅で種別変更を行った列車のみ列車番号を表示します
+		0:この駅では列車番号を表示しません。
+	*/
+	int iJikokuhyouPrevRessyabangouDisplayNobori;
+	bool bJikokuhyouPrevSyubetsuChangeDisplayNoboriEnable;
+
+	/**
+		カスタマイズ時刻表における下り時刻表ビューでの前列車運用番号表示設定
+		駅時刻形式が発着・上り着・下り発着の時のみ有効となります
+
+		2:この駅で全列車の運用番号を表示します
+		1:この駅で種別変更を行った列車のみ運用番号を表示します
+		0:この駅では運用番号を表示しません。
+	*/
+	int iJikokuhyouPrevOperationNumberDisplayKudari;
+
+	/**
+		カスタマイズ時刻表における上り時刻表ビューでの運用番号表示設定
+		駅時刻形式が発着・下り着・上り発着の時のみ有効前列車となります
+
+		2:この駅で全列車の運用番号を表示します
+		1:この駅で種別変更を行った列車のみ運用番号を表示します
+		0:この駅では運用番号を表示しません。
+	*/
+	int iJikokuhyouPrevOperationNumberDisplayNobori;
+
+	/**
+		下りカスタマイズ時刻表ビューでの前列車運用番号表示段数設定
+		コンボボックスに合わせるため。値の範囲は0-4です(規定値は0)
+	*/
+	int iJikokuhyouPrevOperationNumberDisplayRowsKudari;
+
+	/**
+		上りカスタマイズ時刻表ビューでの前列車運用番号表示段数設定
+		コンボボックスに合わせるため。値の範囲は0-4です(規定値は0)
+	*/
+	int iJikokuhyouPrevOperationNumberDisplayRowsNobori;
+
+	/**
+		カスタム表示モードにおける下り時刻表ビューでの前列車列車種別表示設定
+		駅時刻形式が発着・上り着・下り発着の時のみ有効となります
+
+		2:この駅で全列車の列車種別を表示します
+		1:この駅で種別変更を行った列車のみ列車種別を表示します
+		0:この駅では列車種別を表示しません。
+	*/
+	int iJikokuhyouPrevRessyaSyubetsuDisplayKudari;
+
+	/**
+		カスタム表示モードにおける上り時刻表ビューでの前列車列車種別表示設定
+		駅時刻形式が発着・下り着・上り発着の時のみ有効となります
+
+		2:この駅で全列車の列車種別を表示します
+		1:この駅で種別変更を行った列車のみ列車種別を表示します
+		0:この駅では列車種別を表示しません。
+	*/
+	int iJikokuhyouPrevRessyaSyubetsuDisplayNobori;
+
+	/**
+		カスタム表示モードにおける下り時刻表ビューでの前列車列車名・号数表示設定
+		駅時刻形式が発着・上り着・下り発着の時のみ有効となります
+
+		2:この駅で全列車の列車名・号数を表示します
+		1:この駅で種別変更を行った列車のみ列車名・号数を表示します
+		0:この駅では列車名・号数を表示しません。
+	*/
+	int iJikokuhyouPrevRessyameiDisplayKudari;
+
+	/**
+		カスタム表示モードにおける上り時刻表ビューでの前列車列車名・号数表示設定
+		駅時刻形式が発着・下り着・上り発着の時のみ有効となります
+
+		2:この駅で全列車の列車名・号数を表示します
+		1:この駅で種別変更を行った列車のみ列車名・号数を表示します
+		0:この駅では列車名・号数を表示しません。
+	*/
+	int iJikokuhyouPrevRessyameiDisplayNobori;
+
 	UIData_Eki()
 		: iEkijikokukeisiki( (int)CentDedEki::EEkijikokukeisiki::Jikokukeisiki_Hatsu )
 		, iEkikibo( (int)CentDedEki::EEkikibo::Ekikibo_Ippan ) 
@@ -592,6 +706,22 @@ struct UIData_Eki
 		, bJikokuhyouOuterSihatsuDisplayNoboriEnable(false)
 		, bJikokuhyouOuterShuchakuDisplayKudari(false)
 		, bJikokuhyouOuterShuchakuDisplayKudariEnable(false)
+		, bJikokuhyouNyuusenJikokuDisplayKudari(false)
+		, bJikokuhyouNyuusenJikokuDisplayKudariEnable(false)
+		, bJikokuhyouNyuusenJikokuDisplayNobori(false)
+		, bJikokuhyouNyuusenJikokuDisplayNoboriEnable(false)
+		, iJikokuhyouPrevRessyabangouDisplayKudari(0)
+		, bJikokuhyouPrevSyubetsuChangeDisplayKudariEnable(true)
+		, iJikokuhyouPrevRessyabangouDisplayNobori(0)
+		, bJikokuhyouPrevSyubetsuChangeDisplayNoboriEnable(true)
+		, iJikokuhyouPrevOperationNumberDisplayKudari(0)
+		, iJikokuhyouPrevOperationNumberDisplayNobori(0)
+		, iJikokuhyouPrevOperationNumberDisplayRowsKudari(0)
+		, iJikokuhyouPrevOperationNumberDisplayRowsNobori(0)
+		, iJikokuhyouPrevRessyaSyubetsuDisplayKudari(0)
+		, iJikokuhyouPrevRessyaSyubetsuDisplayNobori(0)
+		, iJikokuhyouPrevRessyameiDisplayKudari(0)
+		, iJikokuhyouPrevRessyameiDisplayNobori(0)
 	{
 		sEkiTrack2.clear();
 		sOuterTerminalEkimei.clear();

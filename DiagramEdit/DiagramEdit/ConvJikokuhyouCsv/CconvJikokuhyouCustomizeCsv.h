@@ -1,5 +1,5 @@
 ﻿/*
-OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -144,6 +144,13 @@ private:
 	tstring m_nameRelease = _T("↴");
 	tstring m_nameContinue = _T("↓");
 	tstring m_nameLoop = _T("環状");
+
+	tstring m_nameNyuusen = _T("入線時刻");
+
+	tstring m_namePrevRessyabangou = _T("前の列車番号");
+	tstring m_namePrevRessyasyubetsu = _T("前の列車種別");
+	tstring m_namePrevRessyamei = _T("前の列車名");
+	tstring m_namePrevOperationNumber = _T("前の運用番号");
 
 	CdYColSpecCont m_CdYColSpecCont;
 protected:

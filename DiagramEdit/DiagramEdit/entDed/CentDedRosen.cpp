@@ -1,5 +1,5 @@
 /*
-	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+	OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -1848,6 +1848,32 @@ void CentDedRosen::invert()
 				bTempNobori = pEki->getJikokuhyouOuterShuchakuDisplayNobori();
 				pEki->setJikokuhyouOuterShuchakuDisplayKudari(bTempNobori);
 				pEki->setJikokuhyouOuterShuchakuDisplayNobori(bTempKudari);
+
+				bTempKudari = pEki->getJikokuhyouNyuusenJikokuDisplayKudari();
+				bTempNobori = pEki->getJikokuhyouNyuusenJikokuDisplayNobori();
+				pEki->setJikokuhyouNyuusenJikokuDisplayKudari(bTempNobori);
+				pEki->setJikokuhyouNyuusenJikokuDisplayNobori(bTempKudari);
+
+				iTempKudari = pEki->getJikokuhyouPrevRessyabangouDisplayKudari();
+				iTempNobori = pEki->getJikokuhyouPrevRessyabangouDisplayNobori();
+				pEki->setJikokuhyouPrevRessyabangouDisplayKudari(iTempNobori);
+				pEki->setJikokuhyouPrevRessyabangouDisplayNobori(iTempKudari);
+				iTempKudari = pEki->getJikokuhyouPrevOperationNumberDisplayKudari();
+				iTempNobori = pEki->getJikokuhyouPrevOperationNumberDisplayNobori();
+				pEki->setJikokuhyouPrevOperationNumberDisplayKudari(iTempNobori);
+				pEki->setJikokuhyouPrevOperationNumberDisplayNobori(iTempKudari);
+				iTempKudari = pEki->getJikokuhyouPrevOperationNumberDisplayRowsKudari();
+				iTempNobori = pEki->getJikokuhyouPrevOperationNumberDisplayRowsNobori();
+				pEki->setJikokuhyouPrevOperationNumberDisplayRowsKudari(iTempNobori);
+				pEki->setJikokuhyouPrevOperationNumberDisplayRowsNobori(iTempKudari);
+				iTempKudari = pEki->getJikokuhyouPrevRessyaSyubetsuDisplayKudari();
+				iTempNobori = pEki->getJikokuhyouPrevRessyaSyubetsuDisplayNobori();
+				pEki->setJikokuhyouPrevRessyaSyubetsuDisplayKudari(iTempNobori);
+				pEki->setJikokuhyouPrevRessyaSyubetsuDisplayNobori(iTempKudari);
+				iTempKudari = pEki->getJikokuhyouPrevRessyameiDisplayKudari();
+				iTempNobori = pEki->getJikokuhyouPrevRessyameiDisplayNobori();
+				pEki->setJikokuhyouPrevRessyameiDisplayKudari(iTempNobori);
+				pEki->setJikokuhyouPrevRessyameiDisplayNobori(iTempKudari);
 			}
 			//(2.8)
 			//次の駅までの距離および個別背景色を、反転後基準で一つ先の駅からコピーします。
@@ -1907,7 +1933,7 @@ void CentDedRosen::invert()
 				for (int iRuleIndex = 0; iRuleIndex < pEki->getCrossingCheckRuleSize(); iRuleIndex++)
 				{
 					CrossingCheckRule aCrossingCheckRule = pEki->getCrossingCheckRule(iRuleIndex);
-					for (int i = 0; i < aCrossingCheckRule.BeforeFromTrackContentCont.size(); i++)
+					for (int i = 0; i < (int)aCrossingCheckRule.BeforeFromTrackContentCont.size(); i++)
 					{
 						if (aCrossingCheckRule.BeforeFromTrackContentCont[i].eTrackType == ETrackType::TrackType_Origin)
 						{
@@ -1921,7 +1947,7 @@ void CentDedRosen::invert()
 						}
 					}
 
-					for (int i = 0; i < aCrossingCheckRule.BeforeToTrackContentCont.size(); i++)
+					for (int i = 0; i < (int)aCrossingCheckRule.BeforeToTrackContentCont.size(); i++)
 					{
 						if (aCrossingCheckRule.BeforeToTrackContentCont[i].eTrackType == ETrackType::TrackType_Origin)
 						{
@@ -1935,7 +1961,7 @@ void CentDedRosen::invert()
 						}
 					}
 
-					for (int i = 0; i < aCrossingCheckRule.AfterFromTrackContentCont.size(); i++)
+					for (int i = 0; i < (int)aCrossingCheckRule.AfterFromTrackContentCont.size(); i++)
 					{
 						if (aCrossingCheckRule.AfterFromTrackContentCont[i].eTrackType == ETrackType::TrackType_Origin)
 						{
@@ -1949,7 +1975,7 @@ void CentDedRosen::invert()
 						}
 					}
 
-					for (int i = 0; i < aCrossingCheckRule.AfterToTrackContentCont.size(); i++)
+					for (int i = 0; i < (int)aCrossingCheckRule.AfterToTrackContentCont.size(); i++)
 					{
 						if (aCrossingCheckRule.AfterToTrackContentCont[i].eTrackType == ETrackType::TrackType_Origin)
 						{

@@ -1,5 +1,5 @@
 /*
-OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -174,7 +174,13 @@ void CWjkState::
 {
 	m_pCWndDcdGrid->CWndJikokuhyou::super::
 		OnChar( nChar, nRepCnt, nFlags);
-};
+}
+//void CWjkState::OnMouseMove(UINT nFlags, CPoint point)
+//{
+//	m_pCWndDcdGrid->CWndJikokuhyou::super::
+//		OnMouseMove( nFlags, point);
+//}
+//;
 void CWjkState::OnWM_IME_STARTCOMPOSITION() 
 {
 	 m_pCWndDcdGrid->Default();
@@ -493,6 +499,14 @@ int CWjkState::OnJikokuhyouRight_Process(BOOL bQueryEnable)
 	return -1;	//	このコマンドは選択できません
 }
 int CWjkState::OnJikokuhyouCanceled_Process(BOOL bQueryEnable)
+{
+	return -1;	//	このコマンドは選択できません
+}
+int CWjkState::StdOpeTimeFunc(
+	int iDiaIndexStandard,
+	CdDedJikokuOrder aCdJikokuOrder,
+	const CentDedRessya* pCentDedRessya,
+	const Mu<CentDedEkiCont::CdDedEki>* muCdDedEki)
 {
 	return -1;	//	このコマンドは選択できません
 }

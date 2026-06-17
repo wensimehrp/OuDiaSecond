@@ -1,5 +1,5 @@
 ﻿/*
-OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -5182,7 +5182,7 @@ void CDedOperationConnecter::operationConnect()
 							->get(aRessyaPropertyCurr.getRessyaIndex());
 						const CentDedEkiJikoku aCentDedEkiJikoku =
 							pCentDedRessya->getCentDedEkiJikoku(contOperationElementCurr[iOperationIndex].iEkiOrder);
-						CustomizeJikokuhyouContent aCustomizeJikokuhyouContent(pCentDedRessya);
+						CustomizeJikokuhyouContent aCustomizeJikokuhyouContent(pCentDedRessya,true);
 						aCustomizeJikokuhyouContent.iConnectEkiOrder = contOperationElementCurr[iOperationIndex].iEkiOrder;
 						aCustomizeJikokuhyouContent.ChakuJikoku = pBeforeOperation->getChakuJikoku();
 						if (aCustomizeJikokuhyouContent.ChakuJikoku.isNull())
@@ -5192,9 +5192,10 @@ void CDedOperationConnecter::operationConnect()
 						aCustomizeJikokuhyouContent.OuterShihatsuJikoku = pBeforeOperation->getOuterShihatsuJikoku();
 						aCustomizeJikokuhyouContent.iSihatsuEkiOrder = contOperationElementCurr[iOperationIndex].iEkiOrder;
 						aCustomizeJikokuhyouContent.iOuterShihatsuEkiIndex = pBeforeOperation->getOuterShihatsuekiIndex();;
-						aCustomizeJikokuhyouContent.eEkiatsukai = aCentDedEkiJikoku.getEkiatsukai();
-						aCustomizeJikokuhyouContent.iRessyaTrackIndex = aCentDedEkiJikoku.getRessyaTrackIndex();
-						aCustomizeJikokuhyouContent.strOperationNumber = strOperationNumber;
+						aCustomizeJikokuhyouContent.ePrevEkiatsukai = aCentDedEkiJikoku.getEkiatsukai();
+						aCustomizeJikokuhyouContent.iPrevRessyaTrackIndex = aCentDedEkiJikoku.getRessyaTrackIndex();
+						aCustomizeJikokuhyouContent.strPrevOperationNumber = strOperationNumber;
+						aCustomizeJikokuhyouContent.eEBeforeType = EBeforeAfterType::BeforeAfterType_Outer;
 
 						m_contOuterConnectInsertList[aRessyaPropertyCurr.getRessyahoukou()][contOperationElementCurr[iOperationIndex].iEkiOrder].
 							insert(make_pair(aRessyaPropertyCurr.getRessyaIndex(), aCustomizeJikokuhyouContent));
@@ -6952,7 +6953,7 @@ void CDedOperationConnecter::junctionOperationElement(
 									->get(aRessyaPropertyNext.getRessyaIndex());
 								const CentDedEkiJikoku aCentDedEkiJikoku =
 									pCentDedRessya->getCentDedEkiJikoku(contOperationElementNext[iOperationIndexNext].iEkiOrder);
-								CustomizeJikokuhyouContent aCustomizeJikokuhyouContent(pCentDedRessya);
+								CustomizeJikokuhyouContent aCustomizeJikokuhyouContent(pCentDedRessya,true);
 								aCustomizeJikokuhyouContent.iConnectEkiOrder = contOperationElementNext[iOperationIndexNext].iEkiOrder;
 								aCustomizeJikokuhyouContent.ChakuJikoku = pBeforeOperationNext->getChakuJikoku();
 								if (aCustomizeJikokuhyouContent.ChakuJikoku.isNull())
@@ -6962,9 +6963,10 @@ void CDedOperationConnecter::junctionOperationElement(
 								aCustomizeJikokuhyouContent.OuterShihatsuJikoku = pBeforeOperationNext->getOuterShihatsuJikoku();
 								aCustomizeJikokuhyouContent.iSihatsuEkiOrder = contOperationElementNext[iOperationIndexNext].iEkiOrder;
 								aCustomizeJikokuhyouContent.iOuterShihatsuEkiIndex = pBeforeOperationNext->getOuterShihatsuekiIndex();;
-								aCustomizeJikokuhyouContent.eEkiatsukai = aCentDedEkiJikoku.getEkiatsukai();
-								aCustomizeJikokuhyouContent.iRessyaTrackIndex = aCentDedEkiJikoku.getRessyaTrackIndex();
-								aCustomizeJikokuhyouContent.strOperationNumber = strOperationNumberTemp;
+								aCustomizeJikokuhyouContent.ePrevEkiatsukai = aCentDedEkiJikoku.getEkiatsukai();
+								aCustomizeJikokuhyouContent.iPrevRessyaTrackIndex = aCentDedEkiJikoku.getRessyaTrackIndex();
+								aCustomizeJikokuhyouContent.strPrevOperationNumber = strOperationNumberTemp;
+								aCustomizeJikokuhyouContent.eEBeforeType = EBeforeAfterType::BeforeAfterType_Outer;
 
 								m_contOuterConnectInsertList[aRessyaPropertyNext.getRessyahoukou()][contOperationElementNext[iOperationIndexNext].iEkiOrder].
 									insert(make_pair(aRessyaPropertyNext.getRessyaIndex(), aCustomizeJikokuhyouContent));
@@ -7127,7 +7129,7 @@ void CDedOperationConnecter::junctionOperationElement(
 							->get(aRessyaPropertyCurr.getRessyaIndex());
 						const CentDedEkiJikoku aCentDedEkiJikoku =
 							pCentDedRessya->getCentDedEkiJikoku(contOperationElementCurr[iOperationIndex].iEkiOrder);
-						CustomizeJikokuhyouContent aCustomizeJikokuhyouContent(pCentDedRessya);
+						CustomizeJikokuhyouContent aCustomizeJikokuhyouContent(pCentDedRessya,false);
 						aCustomizeJikokuhyouContent.iReleaseEkiOrder = contOperationElementCurr[iOperationIndex].iEkiOrder;
 						aCustomizeJikokuhyouContent.HatsuJikoku = pAfterOperation->getHatsuJikoku();
 						if (aCustomizeJikokuhyouContent.HatsuJikoku.isNull())
@@ -7140,6 +7142,7 @@ void CDedOperationConnecter::junctionOperationElement(
 						aCustomizeJikokuhyouContent.eEkiatsukai = aCentDedEkiJikoku.getEkiatsukai();
 						aCustomizeJikokuhyouContent.iRessyaTrackIndex = aCentDedEkiJikoku.getRessyaTrackIndex();
 						aCustomizeJikokuhyouContent.strOperationNumber = strOperationNumberTemp;
+						aCustomizeJikokuhyouContent.eEAfterType = EBeforeAfterType::BeforeAfterType_Outer;
 
 						m_contOuterReleaseInsertList[aRessyaPropertyCurr.getRessyahoukou()][contOperationElementCurr[iOperationIndex].iEkiOrder].
 							insert(make_pair(aRessyaPropertyCurr.getRessyaIndex(), aCustomizeJikokuhyouContent));
@@ -7283,7 +7286,7 @@ void CDedOperationConnecter::junctionOperationElement(
 									->get(aRessyaPropertyNext.getRessyaIndex());
 								const CentDedEkiJikoku aCentDedEkiJikoku =
 									pCentDedRessya->getCentDedEkiJikoku(contOperationElementNext[iOperationIndexNext].iEkiOrder);
-								CustomizeJikokuhyouContent aCustomizeJikokuhyouContent(pCentDedRessya);
+								CustomizeJikokuhyouContent aCustomizeJikokuhyouContent(pCentDedRessya,true);
 								aCustomizeJikokuhyouContent.iConnectEkiOrder = contOperationElementNext[iOperationIndexNext].iEkiOrder;
 								aCustomizeJikokuhyouContent.ChakuJikoku = pBeforeOperationNext->getChakuJikoku();
 								if (aCustomizeJikokuhyouContent.ChakuJikoku.isNull())
@@ -7293,9 +7296,10 @@ void CDedOperationConnecter::junctionOperationElement(
 								aCustomizeJikokuhyouContent.OuterShihatsuJikoku = pBeforeOperationNext->getOuterShihatsuJikoku();
 								aCustomizeJikokuhyouContent.iSihatsuEkiOrder = contOperationElementNext[iOperationIndexNext].iEkiOrder;
 								aCustomizeJikokuhyouContent.iOuterShihatsuEkiIndex = pBeforeOperationNext->getOuterShihatsuekiIndex();;
-								aCustomizeJikokuhyouContent.eEkiatsukai = aCentDedEkiJikoku.getEkiatsukai();
-								aCustomizeJikokuhyouContent.iRessyaTrackIndex = aCentDedEkiJikoku.getRessyaTrackIndex();
-								aCustomizeJikokuhyouContent.strOperationNumber = strOperationNumberTemp;
+								aCustomizeJikokuhyouContent.ePrevEkiatsukai = aCentDedEkiJikoku.getEkiatsukai();
+								aCustomizeJikokuhyouContent.iPrevRessyaTrackIndex = aCentDedEkiJikoku.getRessyaTrackIndex();
+								aCustomizeJikokuhyouContent.strPrevOperationNumber = strOperationNumberTemp;
+								aCustomizeJikokuhyouContent.eEBeforeType = EBeforeAfterType::BeforeAfterType_Outer;
 
 								m_contOuterConnectInsertList[aRessyaPropertyNext.getRessyahoukou()][contOperationElementNext[iOperationIndexNext].iEkiOrder].
 									insert(make_pair(aRessyaPropertyNext.getRessyaIndex(), aCustomizeJikokuhyouContent));
@@ -8536,7 +8540,7 @@ void CDedOperationConnecter::completeCustomizeJikokuhyouContent()
 
 						if (bFirst)
 						{
-							//最初の列車(当該列車の前の列車)の場合、列車種別、当該列車終着駅の発時刻、駅扱い、aRessyaPropertyを取得します
+							//最初の列車(当該列車の前の列車)の場合、列車種別、当該列車終着駅の発時刻、駅扱い、aRessyaProperty、前列車との接続タイプ、前列車の終着駅Orderを取得します
 							aOuterDisplayContent.iRessyaSyubetsu = pCentDedRessyaSearch->getRessyasyubetsuIndex();
 							aOuterDisplayContent.ChakuJikoku = pCentDedRessyaSearch->getCentDedEkiJikoku(
 								itrListOperationTableContent->iSyuuchakuEkiOrder).getVirtualChakujikoku();
@@ -8545,6 +8549,10 @@ void CDedOperationConnecter::completeCustomizeJikokuhyouContent()
 							aOuterDisplayContent.iRessyaTrackIndex = pCentDedRessyaSearch->getCentDedEkiJikoku(
 								itrListOperationTableContent->iSyuuchakuEkiOrder).getRessyaTrackIndex();
 							aOuterDisplayContent.aRessyaProperty = itrListOperationTableContent->aRessyaProperty;
+
+							aOuterDisplayContent.eEBeforeAfterType = itrListOperationTableContent->eAfterType;
+							aOuterDisplayContent.iJunctionEkiOrder = itrListOperationTableContent->iSyuuchakuEkiOrder;
+
 							bFirst = false;
 						}
 						//始発駅をitrListOperationTableContentで上書きする。
@@ -8799,7 +8807,7 @@ void CDedOperationConnecter::completeCustomizeJikokuhyouContent()
 					}
 				}
 
-				int iInsertPosition = -1;
+				int iInsertPosition = 1;
 				if (aOuterSearchElement.bIsConnectOrRelease)
 				{
 					iInsertPosition = 0;
@@ -8817,7 +8825,7 @@ void CDedOperationConnecter::completeCustomizeJikokuhyouContent()
 							{
 								continue;
 							}
-							if (iInsertPosition == -1)
+							if (iInsertPosition == 1)
 							{
 								if (contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].iRessyaIndexCont.front() == aRessyaProperty.getRessyaIndex())
 								{
@@ -8826,6 +8834,18 @@ void CDedOperationConnecter::completeCustomizeJikokuhyouContent()
 									contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].OuterShihatsuJikoku = itrOuterDisplayContent->second.HatsuJikoku;
 									contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].iSihatsuEkiOrder = itrOuterDisplayContent->second.iEkiOrder;
 									contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].iOuterShihatsuEkiIndex = itrOuterDisplayContent->second.iOuterEkiIndex;
+									contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].eEBeforeType = itrOuterDisplayContent->second.eEBeforeAfterType;
+
+									const CentDedRessya* pCentDedRessya =
+										pCentDedRessyaConts[itrOuterDisplayContent->second.aRessyaProperty.getRessyahoukou()]
+										->get(itrOuterDisplayContent->second.aRessyaProperty.getRessyaIndex());
+									contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].iPrevRessyasyubetsuIndex = pCentDedRessya->getRessyasyubetsuIndex();
+									contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].strPrevRessyabangou = pCentDedRessya->getRessyabangou();
+									contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].strPrevRessyamei = pCentDedRessya->getRessyamei();
+									contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].strPrevGousuu = pCentDedRessya->getGousuu();
+									//contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].strPrevOperationNumber = aOuterSearchElement.strContOperationNumber;
+									contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].strPrevOperationNumber = 
+										pCentDedRessya->getOperationNumber(itrOuterDisplayContent->second.iJunctionEkiOrder - 1);
 
 									break;
 								}
@@ -8833,7 +8853,7 @@ void CDedOperationConnecter::completeCustomizeJikokuhyouContent()
 							else
 							{
 								bool bFound = false;
-								for (int iRessyaIndex = 0; iRessyaIndex < contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].iRessyaIndexCont.size(); iRessyaIndex++)
+								for (int iRessyaIndex = 0; iRessyaIndex < (int)contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].iRessyaIndexCont.size(); iRessyaIndex++)
 								{
 									if (contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].iRessyaIndexCont[iRessyaIndex] == aRessyaProperty.getRessyaIndex())
 									{
@@ -8841,15 +8861,16 @@ void CDedOperationConnecter::completeCustomizeJikokuhyouContent()
 										const CentDedRessya* pCentDedRessya =
 											pCentDedRessyaConts[itrOuterDisplayContent->second.aRessyaProperty.getRessyahoukou()]
 											->get(itrOuterDisplayContent->second.aRessyaProperty.getRessyaIndex());
-										CustomizeJikokuhyouContent aCustomizeJikokuhyouContent(pCentDedRessya);
+										CustomizeJikokuhyouContent aCustomizeJikokuhyouContent(pCentDedRessya,true);
 										aCustomizeJikokuhyouContent.iConnectEkiOrder = aOuterSearchElement.iEkiOrder;
 										aCustomizeJikokuhyouContent.ChakuJikoku = itrOuterDisplayContent->second.ChakuJikoku;
 										aCustomizeJikokuhyouContent.OuterShihatsuJikoku = itrOuterDisplayContent->second.HatsuJikoku;
 										aCustomizeJikokuhyouContent.iSihatsuEkiOrder = itrOuterDisplayContent->second.iEkiOrder;
 										aCustomizeJikokuhyouContent.iOuterShihatsuEkiIndex = itrOuterDisplayContent->second.iOuterEkiIndex;
-										aCustomizeJikokuhyouContent.eEkiatsukai = itrOuterDisplayContent->second.eEkiatsukai;
-										aCustomizeJikokuhyouContent.iRessyaTrackIndex = itrOuterDisplayContent->second.iRessyaTrackIndex;
-										aCustomizeJikokuhyouContent.strOperationNumber = aOuterSearchElement.strContOperationNumber;
+										aCustomizeJikokuhyouContent.ePrevEkiatsukai = itrOuterDisplayContent->second.eEkiatsukai;
+										aCustomizeJikokuhyouContent.iPrevRessyaTrackIndex = itrOuterDisplayContent->second.iRessyaTrackIndex;
+										aCustomizeJikokuhyouContent.strPrevOperationNumber = aOuterSearchElement.strContOperationNumber;
+										aCustomizeJikokuhyouContent.eEBeforeType = itrOuterDisplayContent->second.eEBeforeAfterType;
 
 										contCustomizeJikokuhyouContent.insert(contCustomizeJikokuhyouContent.begin() + CustomizeJikokuhyouContentIndex + iInsertPosition,
 											aCustomizeJikokuhyouContent);
@@ -9062,6 +9083,10 @@ void CDedOperationConnecter::completeCustomizeJikokuhyouContent()
 							aOuterDisplayContent.iRessyaTrackIndex = pCentDedRessyaSearch->getCentDedEkiJikoku(
 								itrListOperationTableContent->iSihatsuEkiOrder).getRessyaTrackIndex();
 							aOuterDisplayContent.aRessyaProperty = itrListOperationTableContent->aRessyaProperty;
+
+							aOuterDisplayContent.eEBeforeAfterType = itrListOperationTableContent->eBeforeType;
+							aOuterDisplayContent.iJunctionEkiOrder = itrListOperationTableContent->iSihatsuEkiOrder;
+
 							bFirst = false;
 						}
 						//行き先をitrで上書きする。
@@ -9336,6 +9361,18 @@ void CDedOperationConnecter::completeCustomizeJikokuhyouContent()
 									contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].OuterShuchakuJikoku = itrOuterDisplayContent->second.ChakuJikoku;
 									contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].iSyuuchakuEkiOrder = itrOuterDisplayContent->second.iEkiOrder;
 									contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].iOuterShuchakuEkiIndex = itrOuterDisplayContent->second.iOuterEkiIndex;
+									contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].eEAfterType = itrOuterDisplayContent->second.eEBeforeAfterType;
+
+									const CentDedRessya* pCentDedRessya =
+										pCentDedRessyaConts[itrOuterDisplayContent->second.aRessyaProperty.getRessyahoukou()]
+										->get(itrOuterDisplayContent->second.aRessyaProperty.getRessyaIndex());
+									contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].iRessyasyubetsuIndex = pCentDedRessya->getRessyasyubetsuIndex();
+									contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].strRessyabangou = pCentDedRessya->getRessyabangou();
+									contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].strRessyamei = pCentDedRessya->getRessyamei();
+									contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].strGousuu = pCentDedRessya->getGousuu();
+									//contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].strOperationNumber = aOuterSearchElement.strContOperationNumber;
+									contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].strOperationNumber = 
+										pCentDedRessya->getOperationNumber(itrOuterDisplayContent->second.iJunctionEkiOrder);
 
 									break;
 								}
@@ -9343,7 +9380,7 @@ void CDedOperationConnecter::completeCustomizeJikokuhyouContent()
 							else
 							{
 								bool bFound = false;
-								for (int iRessyaIndex = 0; iRessyaIndex < contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].iRessyaIndexCont.size(); iRessyaIndex++)
+								for (int iRessyaIndex = 0; iRessyaIndex < (int)contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].iRessyaIndexCont.size(); iRessyaIndex++)
 								{
 									if (contCustomizeJikokuhyouContent[CustomizeJikokuhyouContentIndex].iRessyaIndexCont[iRessyaIndex] == aRessyaProperty.getRessyaIndex())
 									{
@@ -9351,7 +9388,7 @@ void CDedOperationConnecter::completeCustomizeJikokuhyouContent()
 										const CentDedRessya* pCentDedRessya =
 											pCentDedRessyaConts[itrOuterDisplayContent->second.aRessyaProperty.getRessyahoukou()]
 											->get(itrOuterDisplayContent->second.aRessyaProperty.getRessyaIndex());
-										CustomizeJikokuhyouContent aCustomizeJikokuhyouContent(pCentDedRessya);
+										CustomizeJikokuhyouContent aCustomizeJikokuhyouContent(pCentDedRessya,false);
 										aCustomizeJikokuhyouContent.iReleaseEkiOrder = aOuterSearchElement.iEkiOrder;
 										aCustomizeJikokuhyouContent.HatsuJikoku = itrOuterDisplayContent->second.HatsuJikoku;
 										aCustomizeJikokuhyouContent.OuterShuchakuJikoku = itrOuterDisplayContent->second.ChakuJikoku;
@@ -9360,6 +9397,7 @@ void CDedOperationConnecter::completeCustomizeJikokuhyouContent()
 										aCustomizeJikokuhyouContent.eEkiatsukai = itrOuterDisplayContent->second.eEkiatsukai;
 										aCustomizeJikokuhyouContent.iRessyaTrackIndex = itrOuterDisplayContent->second.iRessyaTrackIndex;
 										aCustomizeJikokuhyouContent.strOperationNumber = aOuterSearchElement.strContOperationNumber;
+										aCustomizeJikokuhyouContent.eEAfterType = itrOuterDisplayContent->second.eEBeforeAfterType;
 
 										contCustomizeJikokuhyouContent.insert(contCustomizeJikokuhyouContent.begin() + CustomizeJikokuhyouContentIndex + iInsertPosition,
 											aCustomizeJikokuhyouContent);

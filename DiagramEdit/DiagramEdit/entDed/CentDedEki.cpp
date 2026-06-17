@@ -1,5 +1,5 @@
 /*
-	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+	OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -156,7 +156,19 @@ CentDedEki::CentDedEki()
 	m_bJikokuhyouOuterSihatsuDisplayNobori(false),
 	m_bJikokuhyouOuterShuchakuDisplayNobori(false),
 	m_iDiagramColorNextEki(0),
-	m_bOperationTableDisplayJikoku(false)
+	m_bOperationTableDisplayJikoku(false),
+	m_bJikokuhyouNyuusenJikokuDisplayKudari(false),
+	m_bJikokuhyouNyuusenJikokuDisplayNobori(false),
+	m_iJikokuhyouPrevRessyabangouDisplayKudari(0),
+	m_iJikokuhyouPrevRessyabangouDisplayNobori(0),
+	m_iJikokuhyouPrevOperationNumberDisplayKudari(0),
+	m_iJikokuhyouPrevOperationNumberDisplayNobori(0),
+	m_iJikokuhyouPrevOperationNumberDisplayRowsKudari(1),
+	m_iJikokuhyouPrevOperationNumberDisplayRowsNobori(1),
+	m_iJikokuhyouPrevRessyaSyubetsuDisplayKudari(0),
+	m_iJikokuhyouPrevRessyaSyubetsuDisplayNobori(0),
+	m_iJikokuhyouPrevRessyameiDisplayKudari(0),
+	m_iJikokuhyouPrevRessyameiDisplayNobori(0)
 
 {
 	m_CentDedEkiTrack2Cont.insert(
@@ -228,7 +240,19 @@ CentDedEki::CentDedEki( const tstring& strEkimei ,
 	m_bJikokuhyouOuterSihatsuDisplayNobori(false),
 	m_bJikokuhyouOuterShuchakuDisplayNobori(false),
 	m_iDiagramColorNextEki(0),
-	m_bOperationTableDisplayJikoku(false)
+	m_bOperationTableDisplayJikoku(false),
+	m_bJikokuhyouNyuusenJikokuDisplayKudari(false),
+	m_bJikokuhyouNyuusenJikokuDisplayNobori(false),
+	m_iJikokuhyouPrevRessyabangouDisplayKudari(0),
+	m_iJikokuhyouPrevRessyabangouDisplayNobori(0),
+	m_iJikokuhyouPrevOperationNumberDisplayKudari(0),
+	m_iJikokuhyouPrevOperationNumberDisplayNobori(0),
+	m_iJikokuhyouPrevOperationNumberDisplayRowsKudari(1),
+	m_iJikokuhyouPrevOperationNumberDisplayRowsNobori(1),
+	m_iJikokuhyouPrevRessyaSyubetsuDisplayKudari(0),
+	m_iJikokuhyouPrevRessyaSyubetsuDisplayNobori(0),
+	m_iJikokuhyouPrevRessyameiDisplayKudari(0),
+	m_iJikokuhyouPrevRessyameiDisplayNobori(0)
 {
 	m_CentDedEkiTrack2Cont.insert(
 		CentDedEkiTrack2(_T("1番線"), _T("1"), _T("")),
@@ -310,6 +334,18 @@ CentDedEki& CentDedEki::operator=( const CentDedEki& value )
 	m_bJikokuhyouOuterShuchakuDisplayNobori = value.m_bJikokuhyouOuterShuchakuDisplayNobori;
 	m_iDiagramColorNextEki = value.m_iDiagramColorNextEki;
 	m_bOperationTableDisplayJikoku = value.m_bOperationTableDisplayJikoku;
+	m_bJikokuhyouNyuusenJikokuDisplayKudari = value.m_bJikokuhyouNyuusenJikokuDisplayKudari;
+	m_bJikokuhyouNyuusenJikokuDisplayNobori = value.m_bJikokuhyouNyuusenJikokuDisplayNobori;
+	m_iJikokuhyouPrevRessyabangouDisplayKudari = value.m_iJikokuhyouPrevRessyabangouDisplayKudari;
+	m_iJikokuhyouPrevRessyabangouDisplayNobori = value.m_iJikokuhyouPrevRessyabangouDisplayNobori;
+	m_iJikokuhyouPrevOperationNumberDisplayKudari = value.m_iJikokuhyouPrevOperationNumberDisplayKudari;
+	m_iJikokuhyouPrevOperationNumberDisplayNobori = value.m_iJikokuhyouPrevOperationNumberDisplayNobori;
+	m_iJikokuhyouPrevOperationNumberDisplayRowsKudari = value.m_iJikokuhyouPrevOperationNumberDisplayRowsKudari;
+	m_iJikokuhyouPrevOperationNumberDisplayRowsNobori = value.m_iJikokuhyouPrevOperationNumberDisplayRowsNobori;
+	m_iJikokuhyouPrevRessyaSyubetsuDisplayKudari = value.m_iJikokuhyouPrevRessyaSyubetsuDisplayKudari;
+	m_iJikokuhyouPrevRessyaSyubetsuDisplayNobori = value.m_iJikokuhyouPrevRessyaSyubetsuDisplayNobori;
+	m_iJikokuhyouPrevRessyameiDisplayKudari = value.m_iJikokuhyouPrevRessyameiDisplayKudari;
+	m_iJikokuhyouPrevRessyameiDisplayNobori = value.m_iJikokuhyouPrevRessyameiDisplayNobori;
 	m_CrossingCheckRuleCont = value.m_CrossingCheckRuleCont;
 	m_bDiagramTrackOmit = value.m_bDiagramTrackOmit;
 
@@ -333,7 +369,7 @@ void CentDedEki::setParent( CParentBase* pParent )
 
 bool CentDedEki::getDiagramTrackOmit(int iIndex) const
 {
-	if (iIndex >= 0 && iIndex < m_bDiagramTrackOmit.size())
+	if (iIndex >= 0 && iIndex < (int)m_bDiagramTrackOmit.size())
 	{
 		return m_bDiagramTrackOmit[iIndex];
 		//return m_strOuterTerminalEkimei[iIndex];

@@ -1,5 +1,5 @@
 /*
-	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+	OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -924,7 +924,7 @@ void CDedRessyaSoater_Transfer::sortRessyaIndex(
 				//(1)選択範囲以外が含まれている場合は削除
 				//(2)選択範囲内の場合、選択開始位置の分を補正する
 
-				for (int itrIndex = 0; itrIndex < itrOrder->size() - 1; itrIndex++)
+				for (int itrIndex = 0; itrIndex < (int)itrOrder->size() - 1; itrIndex++)
 				{
 					if (itrOrder->at(itrIndex) < m_iIndexDst || itrOrder->at(itrIndex) >= m_iIndexDst + m_iSizeDst)
 					{

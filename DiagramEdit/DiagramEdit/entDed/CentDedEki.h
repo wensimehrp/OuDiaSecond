@@ -1,5 +1,5 @@
 /*
-	OuDiaSecond Copyright (C) 2017-2025 diagram_mania
+	OuDiaSecond Copyright (C) 2017-2026 diagram_mania
 
 このプログラムは、take-okm氏が作成したOuDiaを改造したソフトウェアです。
 このプログラム利用については、take-okm氏記載の下記文書に準拠します。
@@ -85,6 +85,7 @@ Copyright (C) 2006-2017 take-okm
 #include <tchar.h>
 
 namespace entDed{
+	using namespace OuLib::NsMu;
 
 	using OuLib::NsMu::CChildBase ;
 
@@ -758,6 +759,13 @@ private:
 	/**
 		下りカスタマイズ時刻表ビューでの着時刻表示設定
 		駅時刻形式が発着・下り着・下り発着の時のみ有効となります
+		(ver2.06.21　駅形式の条件を整理)
+		発時刻(発)：無し
+		発着(発着)：あり
+		下り着(着)：あり
+		上り着(発)：無し→路線外始発欄がある場合のみ、例外的にありにする
+		下り発着(発着)：あり
+		上り発着(発)：無し
 
 		true:この駅で着時刻を表示します
 		false:この駅では着時刻を表示しません。
@@ -767,6 +775,13 @@ private:
 	/**
 		上りカスタマイズ時刻表ビューでの着時刻表示設定
 		駅時刻形式が発着・上り着・上り発着の時のみ有効となります
+		(ver2.06.21　駅形式の条件を整理)
+		発時刻(発)：無し
+		発着(発着)：あり
+		下り着(発)：無し→路線外始発欄がある場合のみ、例外的にありにする
+		上り着(着)：あり
+		下り発着(発)：無し
+		上り発着(発着)：あり
 
 		true:この駅で着時刻を表示します
 		false:この駅では着時刻を表示しません。
@@ -776,6 +791,13 @@ private:
 	/**
 		下りカスタマイズ時刻表ビューでの発時刻表示設定
 		駅時刻形式が下り着以外の時のみ有効となります
+		(ver2.06.21　駅形式の条件を整理)
+		発時刻(発)：あり
+		発着(発着)：あり
+		下り着(着)：無し→路線外終着欄がある場合のみ、例外的にありにする
+		上り着(発)：あり
+		下り発着(発着)：あり
+		上り発着(発)：あり
 
 		true:この駅で発時刻を表示します
 		false:この駅では発時刻を表示しません。
@@ -785,6 +807,13 @@ private:
 	/**
 		上りカスタマイズ時刻表ビューでの発時刻表示設定
 		駅時刻形式が上り着以外の時のみ有効となります
+		(ver2.06.21　駅形式の条件を整理)
+		発時刻(発)：あり
+		発着(発着)：あり
+		下り着(発)：あり
+		上り着(着)：無し→路線外終着欄がある場合のみ、例外的にありにする
+		下り発着(発)：あり
+		上り発着(発着)：あり
 
 		true:この駅で発時刻を表示します
 		false:この駅では発時刻を表示しません。
@@ -794,6 +823,13 @@ private:
 	/**
 		下りカスタマイズ時刻表ビューでの列車番号表示設定
 		駅時刻形式が発着・上り着・下り発着の時のみ有効となります
+		(ver2.06.21　駅形式の条件を整理)
+		発時刻(発)：無し
+		発着(発着)：種別変更・路線外終着ともにあり
+		下り着(着)：無し→路線外終着欄がある場合のみ、例外的にありにする
+		上り着(発)：種別変更のみあり(分岐駅)
+		下り発着(発着)：種別変更・路線外終着ともにあり
+		上り発着(発)：無し
 
 		3:この駅で全列車の列車番号を表示します
 		2:この駅で種別変更・列車番号変更を行った列車のみ列車番号を表示します
@@ -805,6 +841,13 @@ private:
 	/**
 		上りカスタマイズ時刻表ビューでの列車番号表示設定
 		駅時刻形式が発着・下り着・上り発着の時のみ有効となります
+		(ver2.06.21　駅形式の条件を整理)
+		発時刻(発)：無し
+		発着(発着)：種別変更・路線外終着ともにあり
+		下り着(発)：種別変更のみあり(分岐駅)
+		上り着(着)：無し→路線外終着欄がある場合のみ、例外的にありにする
+		下り発着(発)：無し
+		上り発着(発着)：種別変更・路線外終着ともにあり
 
 		3:この駅で全列車の列車番号を表示します
 		2:この駅で種別変更・列車番号変更を行った列車のみ列車番号を表示します
@@ -940,6 +983,143 @@ private:
 		箱ダイヤにおいて、この駅の時刻を表示するか否か
 	*/
 	bool m_bOperationTableDisplayJikoku;
+
+
+	/**
+		下りカスタマイズ時刻表ビューでの入線時刻表示設定
+		駅時刻形式が発着・上り着・下り発着の時のみ有効となります
+
+		true:この駅で入線時刻を表示します
+		false:この駅では入線時刻を表示しません。
+	*/
+	bool m_bJikokuhyouNyuusenJikokuDisplayKudari;
+
+	/**
+		上りカスタマイズ時刻表ビューでの入線時刻表示設定
+		駅時刻形式が発着・下り着・上り発着の時のみ有効となります
+
+		true:この駅で入線時刻を表示します
+		false:この駅では入線時刻を表示しません。
+	*/
+	bool m_bJikokuhyouNyuusenJikokuDisplayNobori;
+
+	/**
+		下りカスタマイズ時刻表ビューでの前列車列車番号表示設定
+		路線外始発状に表示される列車の前列車での列車情報を表示します。
+		路線外・前列車始発駅表示設定が非表示の場合、この項も表示されません。
+		駅時刻形式が発着・上り着・下り発着の時のみ有効となります
+
+		3:この駅で路線外始発状の全列車の列車番号を表示します
+		2:この駅で路線外始発状の内、種別変更・列車番号変更を行った列車のみ列車番号を表示します
+		1:この駅で路線外始発状の内、種別変更を行った列車のみ列車番号を表示します
+		0:この駅では列車番号を表示しません。
+	*/
+	int m_iJikokuhyouPrevRessyabangouDisplayKudari;
+
+	/**
+		上りカスタマイズ時刻表ビューでの前列車列車番号表示設定
+		路線外始発状に表示される列車の前列車での列車情報を表示します。
+		路線外・前列車始発駅表示設定が非表示の場合、この項も表示されません。
+		駅時刻形式が発着・下り着・上り発着の時のみ有効となります
+
+		3:この駅で路線外始発状の全列車の列車番号を表示します
+		2:この駅で路線外始発状の内、種別変更・列車番号変更を行った列車のみ列車番号を表示します
+		1:この駅で路線外始発状の内、種別変更を行った列車のみ列車番号を表示します
+		0:この駅では列車番号を表示しません。
+	*/
+	int m_iJikokuhyouPrevRessyabangouDisplayNobori;
+
+	/**
+		下りカスタマイズ時刻表ビューでの前列車運用番号表示設定
+		路線外始発状に表示される列車の前列車での列車情報を表示します。
+		路線外・前列車始発駅表示設定が非表示の場合、この項も表示されません。
+		駅時刻形式が発着・上り着・下り発着の時のみ有効となります
+
+		4:この駅で路線外始発状の全列車の運用番号を表示します
+		3:この駅で路線外始発状の内、種別変更・列車番号変更を行った列車のみ運用番号を表示します
+		2:この駅で路線外始発状の内、種別変更を行った列車のみ運用番号を表示します
+		1:この駅で路線外始発状の内、運用番号が変わった列車のみ表示します
+		0:この駅では列車番号を表示しません。
+	*/
+	int m_iJikokuhyouPrevOperationNumberDisplayKudari;
+
+	/**
+		上りカスタマイズ時刻表ビューでの前列車運用番号表示設定
+		路線外始発状に表示される列車の前列車での列車情報を表示します。
+		路線外・前列車始発駅表示設定が非表示の場合、この項も表示されません。
+		駅時刻形式が発着・下り着・上り発着の時のみ有効となります
+
+		4:この駅で路線外始発状の全列車の運用番号を表示します
+		3:この駅で路線外始発状の内、種別変更・列車番号変更を行った列車のみ運用番号を表示します
+		2:この駅で路線外始発状の内、種別変更を行った列車のみ運用番号を表示します
+		1:この駅で路線外始発状の内、運用番号が変わった列車のみ表示します
+		0:この駅では列車番号を表示しません。
+	*/
+	int m_iJikokuhyouPrevOperationNumberDisplayNobori;
+
+	/**
+		下りカスタマイズ時刻表ビューでの前列車運用番号表示段数設定
+		値の範囲は1-5です(規定値は1)
+	*/
+	int m_iJikokuhyouPrevOperationNumberDisplayRowsKudari;
+
+	/**
+		上りカスタマイズ時刻表ビューでの前列車運用番号表示段数設定
+		値の範囲は1-5です(規定値は1)
+	*/
+	int m_iJikokuhyouPrevOperationNumberDisplayRowsNobori;
+
+	/**
+		下りカスタマイズ時刻表ビューでの前列車列車種別表示設定
+		路線外始発状に表示される列車の前列車での列車情報を表示します。
+		路線外・前列車始発駅表示設定が非表示の場合、この項も表示されません。
+		駅時刻形式が発着・上り着・下り発着の時のみ有効となります
+
+		3:この駅で路線外始発状の全列車の列車種別を表示します
+		2:この駅で路線外始発状の内、種別変更・列車番号変更を行った列車のみ列車種別を表示します
+		1:この駅で路線外始発状の内、種別変更を行った列車のみ列車種別を表示します
+		0:この駅では列車種別を表示しません。
+	*/
+	int m_iJikokuhyouPrevRessyaSyubetsuDisplayKudari;
+
+	/**
+		上りカスタマイズ時刻表ビューでの前列車列車種別表示設定
+		路線外始発状に表示される列車の前列車での列車情報を表示します。
+		路線外・前列車始発駅表示設定が非表示の場合、この項も表示されません。
+		駅時刻形式が発着・下り着・上り発着の時のみ有効となります
+
+		3:この駅で路線外始発状の全列車の列車種別を表示します
+		2:この駅で路線外始発状の内、種別変更・列車番号変更を行った列車のみ列車種別を表示します
+		1:この駅で路線外始発状の内、種別変更を行った列車のみ列車種別を表示します
+		0:この駅では列車種別を表示しません。
+	*/
+	int m_iJikokuhyouPrevRessyaSyubetsuDisplayNobori;
+
+	/**
+		下りカスタマイズ時刻表ビューでの前列車列車名・号数表示設定
+		路線外始発状に表示される列車の前列車での列車情報を表示します。
+		路線外・前列車始発駅表示設定が非表示の場合、この項も表示されません。
+		駅時刻形式が発着・上り着・下り発着の時のみ有効となります
+
+		3:この駅で路線外始発状の全列車の列車名・号数を表示します
+		2:この駅で路線外始発状の内、種別変更・列車番号変更を行った列車のみ列車名・号数を表示します
+		1:この駅で路線外始発状の内、種別変更を行った列車のみ列車名・号数を表示します
+		0:この駅では列車名・号数を表示しません。
+	*/
+	int m_iJikokuhyouPrevRessyameiDisplayKudari;
+
+	/**
+		上りカスタマイズ時刻表ビューでの前列車列車名・号数表示設定
+		路線外始発状に表示される列車の前列車での列車情報を表示します。
+		路線外・前列車始発駅表示設定が非表示の場合、この項も表示されません。
+		駅時刻形式が発着・下り着・上り発着の時のみ有効となります
+
+		3:この駅で路線外始発状の全列車の列車名・号数を表示します
+		2:この駅で路線外始発状の内、種別変更・列車番号変更を行った列車のみ列車名・号数を表示します
+		1:この駅で路線外始発状の内、種別変更を行った列車のみ列車名・号数を表示します
+		0:この駅では列車名・号数を表示しません。
+	*/
+	int m_iJikokuhyouPrevRessyameiDisplayNobori;
 
 	/**
 		交差支障チェックルール
@@ -1489,6 +1669,113 @@ public:
 	bool getOperationTableDisplayJikoku()const { return m_bOperationTableDisplayJikoku; };
 	/** @see m_bOperationTableDisplayJikoku */
 	void setOperationTableDisplayJikoku(bool value) { m_bOperationTableDisplayJikoku = value; };
+
+	/** @see m_bJikokuhyouNyuusenJikokuDisplayKudari */
+	bool getJikokuhyouNyuusenJikokuDisplayKudari()const { return m_bJikokuhyouNyuusenJikokuDisplayKudari; };
+	/** @see m_bJikokuhyouNyuusenJikokuDisplayKudari */
+	void setJikokuhyouNyuusenJikokuDisplayKudari(bool value) { m_bJikokuhyouNyuusenJikokuDisplayKudari = value; };
+	/** @see m_bJikokuhyouNyuusenJikokuDisplayNobori */
+	bool getJikokuhyouNyuusenJikokuDisplayNobori()const { return m_bJikokuhyouNyuusenJikokuDisplayNobori; };
+	/** @see m_bJikokuhyouNyuusenJikokuDisplayNobori */
+	void setJikokuhyouNyuusenJikokuDisplayNobori(bool value) { m_bJikokuhyouNyuusenJikokuDisplayNobori = value; };
+	/** @see m_bJikokuhyouNyuusenJikokuDisplay */
+	bool getJikokuhyouNyuusenJikokuDisplay(ERessyahoukou eRessyahoukou)const
+	{
+		if (eRessyahoukou == ERessyahoukou::Ressyahoukou_Nobori)
+		{
+			return m_bJikokuhyouNyuusenJikokuDisplayNobori;
+		}
+		return m_bJikokuhyouNyuusenJikokuDisplayKudari;
+	};
+
+	/** @see m_iJikokuhyouPrevRessyabangouDisplayKudari */
+	int getJikokuhyouPrevRessyabangouDisplayKudari()const { return m_iJikokuhyouPrevRessyabangouDisplayKudari; };
+	/** @see m_iJikokuhyouPrevRessyabangouDisplayKudari */
+	void setJikokuhyouPrevRessyabangouDisplayKudari(int value) { m_iJikokuhyouPrevRessyabangouDisplayKudari = value; };
+	/** @see m_iJikokuhyouPrevRessyabangouDisplayNobori */
+	int getJikokuhyouPrevRessyabangouDisplayNobori()const { return m_iJikokuhyouPrevRessyabangouDisplayNobori; };
+	/** @see m_iJikokuhyouPrevRessyabangouDisplayNobori */
+	void setJikokuhyouPrevRessyabangouDisplayNobori(int value) { m_iJikokuhyouPrevRessyabangouDisplayNobori = value; };
+	/** @see m_iJikokuhyouPrevRessyabangouDisplay */
+	int getJikokuhyouPrevRessyabangouDisplay(ERessyahoukou eRessyahoukou)const
+	{
+		if (eRessyahoukou == ERessyahoukou::Ressyahoukou_Nobori)
+		{
+			return m_iJikokuhyouPrevRessyabangouDisplayNobori;
+		}
+		return m_iJikokuhyouPrevRessyabangouDisplayKudari;
+	};
+
+	/** @see m_iJikokuhyouPrevOperationNumberDisplayKudari */
+	int getJikokuhyouPrevOperationNumberDisplayKudari()const { return m_iJikokuhyouPrevOperationNumberDisplayKudari; };
+	/** @see m_iJikokuhyouPrevOperationNumberDisplayKudari */
+	void setJikokuhyouPrevOperationNumberDisplayKudari(int value) { m_iJikokuhyouPrevOperationNumberDisplayKudari = value; };
+	/** @see m_iJikokuhyouPrevOperationNumberDisplayNobori */
+	int getJikokuhyouPrevOperationNumberDisplayNobori()const { return m_iJikokuhyouPrevOperationNumberDisplayNobori; };
+	/** @see m_iJikokuhyouPrevOperationNumberDisplayNobori */
+	void setJikokuhyouPrevOperationNumberDisplayNobori(int value) { m_iJikokuhyouPrevOperationNumberDisplayNobori = value; };
+	/** @see m_iJikokuhyouPrevOperationNumberDisplay */
+	int getJikokuhyouPrevOperationNumberDisplay(ERessyahoukou eRessyahoukou)const
+	{
+		if (eRessyahoukou == ERessyahoukou::Ressyahoukou_Nobori)
+		{
+			return m_iJikokuhyouPrevOperationNumberDisplayNobori;
+		}
+		return m_iJikokuhyouPrevOperationNumberDisplayKudari;
+	};
+
+	/** @see m_iJikokuhyouPrevOperationNumberDisplayRowsKudari */
+	int getJikokuhyouPrevOperationNumberDisplayRowsKudari()const { return m_iJikokuhyouPrevOperationNumberDisplayRowsKudari; };
+	/** @see m_iJikokuhyouPrevOperationNumberDisplayRowsKudari */
+	void setJikokuhyouPrevOperationNumberDisplayRowsKudari(int value) { m_iJikokuhyouPrevOperationNumberDisplayRowsKudari = value; };
+	/** @see m_iJikokuhyouPrevOperationNumberDisplayRowsNobori */
+	int getJikokuhyouPrevOperationNumberDisplayRowsNobori()const { return m_iJikokuhyouPrevOperationNumberDisplayRowsNobori; };
+	/** @see m_iJikokuhyouPrevOperationNumberDisplayRowsNobori */
+	void setJikokuhyouPrevOperationNumberDisplayRowsNobori(int value) { m_iJikokuhyouPrevOperationNumberDisplayRowsNobori = value; };
+	int getJikokuhyouPrevOperationNumberDisplayRows(ERessyahoukou eRessyahoukou)const
+	{
+		if (eRessyahoukou == ERessyahoukou::Ressyahoukou_Nobori)
+		{
+			return m_iJikokuhyouPrevOperationNumberDisplayRowsNobori;
+		}
+		return m_iJikokuhyouPrevOperationNumberDisplayRowsKudari;
+	};
+
+	/** @see m_iJikokuhyouPrevRessyaSyubetsuDisplayKudari */
+	int getJikokuhyouPrevRessyaSyubetsuDisplayKudari()const { return m_iJikokuhyouPrevRessyaSyubetsuDisplayKudari; };
+	/** @see m_iJikokuhyouPrevRessyaSyubetsuDisplayKudari */
+	void setJikokuhyouPrevRessyaSyubetsuDisplayKudari(int value) { m_iJikokuhyouPrevRessyaSyubetsuDisplayKudari = value; };
+	/** @see m_iJikokuhyouPrevRessyaSyubetsuDisplayNobori */
+	int getJikokuhyouPrevRessyaSyubetsuDisplayNobori()const { return m_iJikokuhyouPrevRessyaSyubetsuDisplayNobori; };
+	/** @see m_iJikokuhyouPrevRessyaSyubetsuDisplayNobori */
+	void setJikokuhyouPrevRessyaSyubetsuDisplayNobori(int value) { m_iJikokuhyouPrevRessyaSyubetsuDisplayNobori = value; };
+	/** @see m_iJikokuhyouPrevRessyaSyubetsuDisplay */
+	int getJikokuhyouPrevRessyaSyubetsuDisplay(ERessyahoukou eRessyahoukou)const
+	{
+		if (eRessyahoukou == ERessyahoukou::Ressyahoukou_Nobori)
+		{
+			return m_iJikokuhyouPrevRessyaSyubetsuDisplayNobori;
+		}
+		return m_iJikokuhyouPrevRessyaSyubetsuDisplayKudari;
+	};
+
+	/** @see m_iJikokuhyouPrevRessyameiDisplayKudari */
+	int getJikokuhyouPrevRessyameiDisplayKudari()const { return m_iJikokuhyouPrevRessyameiDisplayKudari; };
+	/** @see m_iJikokuhyouPrevRessyameiDisplayKudari */
+	void setJikokuhyouPrevRessyameiDisplayKudari(int value) { m_iJikokuhyouPrevRessyameiDisplayKudari = value; };
+	/** @see m_iJikokuhyouPrevRessyameiDisplayNobori */
+	int getJikokuhyouPrevRessyameiDisplayNobori()const { return m_iJikokuhyouPrevRessyameiDisplayNobori; };
+	/** @see m_iJikokuhyouPrevRessyameiDisplayNobori */
+	void setJikokuhyouPrevRessyameiDisplayNobori(int value) { m_iJikokuhyouPrevRessyameiDisplayNobori = value; };
+	/** @see m_iJikokuhyouPrevRessyameiDisplay */
+	int getJikokuhyouPrevRessyameiDisplay(ERessyahoukou eRessyahoukou)const
+	{
+		if (eRessyahoukou == ERessyahoukou::Ressyahoukou_Nobori)
+		{
+			return m_iJikokuhyouPrevRessyameiDisplayNobori;
+		}
+		return m_iJikokuhyouPrevRessyameiDisplayKudari;
+	};
 
 	vector< CrossingCheckRule> getCrossingCheckRuleCont()const
 	{
