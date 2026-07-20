@@ -782,7 +782,8 @@ CconvOperationTableCsv CDiagramEditApp::createCconvOperationTableCsv()
 		(LPCTSTR)MfcUtil::LoadCString(IDS_WORD_Ekimei),
 		(LPCTSTR)MfcUtil::LoadCString(IDS_WORD_Ekijikoku),
 		(LPCTSTR)MfcUtil::LoadCString(IDS_WORD_KudariArrow),
-		(LPCTSTR)MfcUtil::LoadCString(IDS_WORD_NoboriArrow)
+		(LPCTSTR)MfcUtil::LoadCString(IDS_WORD_NoboriArrow),
+		(LPCTSTR)MfcUtil::LoadCString(IDS_WORD_Track)
 	);
 
 }

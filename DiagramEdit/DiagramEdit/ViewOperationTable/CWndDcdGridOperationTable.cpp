@@ -227,6 +227,7 @@ CWndDcdGridOperationTable::createXColSpecCont()
 		getDisplayExtensionOperationTable(),
 		getCDiagramEditDoc()->getCDedRosenFileData()
 		->getCdDedDispProp().getDisplayRessyamei(),
+		getDisplayTrackName(),
 		m_iDisplayJikokuEkiIndex);
 	return aSpecCont ;
 }
@@ -251,6 +252,7 @@ CWndDcdGridOperationTable::getXColSpecOfFocus()
 			getDisplayExtensionOperationTable(),
 			getCDiagramEditDoc()->getCDedRosenFileData()
 			->getCdDedDispProp().getDisplayRessyamei(),
+			getDisplayTrackName(),
 			m_iDisplayJikokuEkiIndex);
 		aSpec = aSpecCont.ColumnNumberToSpec( aPos.getX() ) ;
 	}
@@ -603,6 +605,55 @@ void CWndDcdGridOperationTable::OnUpdate_setCentDedRessya_To_Column(
 		//	セルを無効化
 		InvalidateCell(iXColumnNumber1, iYColumnNumber);
 		InvalidateCell(iXColumnNumber2, iYColumnNumber);
+
+		if (getDisplayTrackName())
+		{
+			int iXColumnNumber3;
+
+			if (eRessyahoukou == Ressyahoukou_Kudari ||
+				getDisplayNoboriLeftToRight())
+			{
+				iXColumnNumber3 = aXColSpecCont.ColumnNumberFromSpec(CdOperationTableXColSpec(
+					CdOperationTableXColSpec::EColumnType::ColumnType_OriginSideEkiTrack));
+			}
+			else
+			{
+				iXColumnNumber3 = aXColSpecCont.ColumnNumberFromSpec(CdOperationTableXColSpec(
+					CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkiTrack));
+			}
+			Ou<CDcdTextbox> pCDcdTextbox3 =
+				getCXDcdGrid()->getCell(iXColumnNumber3, iYColumnNumber)->getIfDcDraw();
+
+			tstring strEkiTrackName;
+
+			//路線外始発の場合は、空白のままにする
+			if (aSihatsuOperationTableContent.iOuterShihatsuekiIndex == INT_MIN)
+			{
+				int iValidSihatsuEkiOrder = iSihatsuEkiOrder;
+				if (!aShihatsuRessya.isRunBetweenNextEki(iSihatsuEkiOrder))
+				{
+					iValidSihatsuEkiOrder = aShihatsuRessya.getRunBetweenEkiForward(iSihatsuEkiOrder);
+				}
+
+				strEkiTrackName = pCentDedEkiCont->get(iSihatsuEkiIndex).getEkiTrack2Cont()->get(
+					aShihatsuRessya.getCentDedEkiJikoku(iValidSihatsuEkiOrder).getRessyaTrackIndex()).getTrackRyakusyou(aShihatsuRessya.getRessyahoukou());
+				//strEkiTrackName = pCentDedEkiCont->get(iSihatsuEkiIndex).getEkiTrack2Cont()->get(
+				//	aShihatsuRessya.getCentDedEkiJikoku(iValidSihatsuEkiOrder).getRessyaTrackIndex()).getTrackName();
+			}
+
+			pCDcdTextbox3->setText(strEkiTrackName);
+			//	フォント属性
+			CdDrawTextProp	aCdDrawTextProp3 =
+				pCDcdTextbox3->getCdDrawTextProp();
+			aCdDrawTextProp3.setCdFontProp(fontpropDefault);
+			aCdDrawTextProp3.setTextColor(colorpropDefault);
+			aCdDrawTextProp3.setCdDrawTextFormat(CdDrawTextFormat(CdDrawTextFormat::H_CENTER));
+			pCDcdTextbox3->setCdDrawTextProp(aCdDrawTextProp3);
+
+			getCXDcdGrid()->getCell(iXColumnNumber3, iYColumnNumber)->setAttachCellCount(1, 1);
+			//	セルを無効化
+			InvalidateCell(iXColumnNumber3, iYColumnNumber);
+		}
 	}
 	{
 		//	終着駅名&終着駅時刻
@@ -703,6 +754,56 @@ void CWndDcdGridOperationTable::OnUpdate_setCentDedRessya_To_Column(
 		//	セルを無効化
 		InvalidateCell(iXColumnNumber1, iYColumnNumber);
 		InvalidateCell(iXColumnNumber2, iYColumnNumber);
+
+		if (getDisplayTrackName())
+		{
+			int iXColumnNumber3;
+
+			if (eRessyahoukou == Ressyahoukou_Kudari ||
+				getDisplayNoboriLeftToRight())
+			{
+				iXColumnNumber3 = aXColSpecCont.ColumnNumberFromSpec(CdOperationTableXColSpec(
+					CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkiTrack));
+			}
+			else
+			{
+				iXColumnNumber3 = aXColSpecCont.ColumnNumberFromSpec(CdOperationTableXColSpec(
+					CdOperationTableXColSpec::EColumnType::ColumnType_OriginSideEkiTrack));
+			}
+			Ou<CDcdTextbox> pCDcdTextbox3 =
+				getCXDcdGrid()->getCell(iXColumnNumber3, iYColumnNumber)->getIfDcDraw();
+
+			tstring strEkiTrackName;
+
+			//路線外終着の場合は、空白のままにする
+			if (aShuchakuOperationTableContent.iOuterShuchakuekiIndex == INT_MIN)
+			{
+				int iValidSyuuchakuEkiOrder = iSyuuchakuEkiOrder;
+				if (!aShuchakuRessya.isRunBetweenNextEki(iSyuuchakuEkiOrder - 1))
+				{
+					iValidSyuuchakuEkiOrder = aShuchakuRessya.getRunBetweenEkiBackward(iSyuuchakuEkiOrder);
+				}
+
+				strEkiTrackName = pCentDedEkiCont->get(iSyuuchakuEkiIndex).getEkiTrack2Cont()->get(
+					aShuchakuRessya.getCentDedEkiJikoku(iValidSyuuchakuEkiOrder).getRessyaTrackIndex()).getTrackRyakusyou(aShuchakuRessya.getRessyahoukou());
+
+				//strEkiTrackName = pCentDedEkiCont->get(iSyuuchakuEkiIndex).getEkiTrack2Cont()->get(
+				//	aShuchakuRessya.getCentDedEkiJikoku(iValidSyuuchakuEkiOrder).getRessyaTrackIndex()).getTrackName();
+			}
+
+			pCDcdTextbox3->setText(strEkiTrackName);
+			//	フォント属性
+			CdDrawTextProp	aCdDrawTextProp3 =
+				pCDcdTextbox3->getCdDrawTextProp();
+			aCdDrawTextProp3.setCdFontProp(fontpropDefault);
+			aCdDrawTextProp3.setTextColor(colorpropDefault);
+			aCdDrawTextProp3.setCdDrawTextFormat(CdDrawTextFormat(CdDrawTextFormat::H_CENTER));
+			pCDcdTextbox3->setCdDrawTextProp(aCdDrawTextProp3);
+
+			getCXDcdGrid()->getCell(iXColumnNumber3, iYColumnNumber)->setAttachCellCount(1, 1);
+			//	セルを無効化
+			InvalidateCell(iXColumnNumber3, iYColumnNumber);
+		}
 	}
 	{
 		//	列車方向(矢印)
@@ -3570,6 +3671,32 @@ void CWndDcdGridOperationTable::OnCreate_Header()
 					(getCXDcdGrid()->getXBorder(iXColumnNumber)->getIfDcDraw())
 					->setCdPenProp(aCdPenProp);
 			}
+
+			if (getDisplayTrackName())
+			{
+				//	起点側着発番線
+				int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdOperationTableXColSpec(
+					CdOperationTableXColSpec::EColumnType::ColumnType_OriginSideEkiTrack));
+				CdDcdSizeXy	sizeOperationTable;
+
+				CDcdTextbox	aCDcdTextbox(
+					strCellEkijikokuWidth,
+					//"京都京都京都",
+					fontpropDefault,
+					_T(""), 1, 2, 2);
+				aCDcdTextbox.getItemSize(&aCDcdTarget, &sizeOperationTable);
+
+				getCXDcdGrid()->getXColumn(iXColumnNumber)->setColumnSize(sizeOperationTable.getX());
+
+				CdPenProp aCdPenProp =
+					Ou<CDcdLine>(getCXDcdGrid()->getXBorder(iXColumnNumber)->getIfDcDraw())->getCdPenProp();
+				aCdPenProp.setColor(createGridColorProp());
+				aCdPenProp.setStyle(CdPenProp::EStyle::SOLID);
+				Ou<CDcdLine>
+					(getCXDcdGrid()->getXBorder(iXColumnNumber)->getIfDcDraw())
+					->setCdPenProp(aCdPenProp);
+			}
+
 			{
 				//	起点側駅時刻
 				int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdOperationTableXColSpec(
@@ -3638,6 +3765,32 @@ void CWndDcdGridOperationTable::OnCreate_Header()
 					(getCXDcdGrid()->getXBorder(iXColumnNumber)->getIfDcDraw())
 					->setCdPenProp(aCdPenProp);
 			}
+
+			if(getDisplayTrackName())
+			{
+				//	終点側着発番線
+				int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdOperationTableXColSpec(
+					CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkiTrack));
+				CdDcdSizeXy	sizeOperationTable;
+
+				CDcdTextbox	aCDcdTextbox(
+					strCellEkijikokuWidth,
+					//"京都京都京都",
+					fontpropDefault,
+					_T(""), 1, 2, 2);
+				aCDcdTextbox.getItemSize(&aCDcdTarget, &sizeOperationTable);
+
+				getCXDcdGrid()->getXColumn(iXColumnNumber)->setColumnSize(sizeOperationTable.getX());
+
+				CdPenProp aCdPenProp =
+					Ou<CDcdLine>(getCXDcdGrid()->getXBorder(iXColumnNumber)->getIfDcDraw())->getCdPenProp();
+				aCdPenProp.setColor(createGridColorProp());
+				aCdPenProp.setStyle(CdPenProp::EStyle::SOLID);
+				Ou<CDcdLine>
+					(getCXDcdGrid()->getXBorder(iXColumnNumber)->getIfDcDraw())
+					->setCdPenProp(aCdPenProp);
+			}
+
 			{
 				//	終点側駅時刻
 				int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdOperationTableXColSpec(
@@ -3834,6 +3987,30 @@ void CWndDcdGridOperationTable::OnCreate_Header()
 			pCDcdTextbox->setCdBrushProp(aCdBrushProp);
 			pCDcdTextbox->setText((LPCTSTR)aString);
 		}
+		if (getDisplayTrackName())
+		{
+			// 着発番線
+			int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdOperationTableXColSpec(
+				CdOperationTableXColSpec::EColumnType::ColumnType_OriginSideEkiTrack));
+			CString	aString;
+			aString = _T("番線");
+
+			Ou<CDcdTextbox>	pCDcdTextbox =
+				getCXDcdGrid()->getCell(iXColumnNumber, YCOLUMNNNO_HEADER)->getIfDcDraw();
+
+			CConverter_WinGdi aCConverter_WinGdi;
+
+			CdDrawTextProp	aCdDrawTextProp(
+				fontpropDefault,
+				colorpropDefault);
+			//aCConverter_WinGdi.CdColorPropOfSysColor(COLOR_MENUTEXT));
+			CdBrushProp	aCdBrushProp(
+				aCConverter_WinGdi.CdColorPropOfSysColor(COLOR_MENU));
+
+			pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
+			pCDcdTextbox->setCdBrushProp(aCdBrushProp);
+			pCDcdTextbox->setText((LPCTSTR)aString);
+		}
 		{
 			// 駅時刻
 			int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdOperationTableXColSpec(
@@ -3882,6 +4059,30 @@ void CWndDcdGridOperationTable::OnCreate_Header()
 				CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkimei));
 			CString	aString;
 			aString = _T("駅名");
+
+			Ou<CDcdTextbox>	pCDcdTextbox =
+				getCXDcdGrid()->getCell(iXColumnNumber, YCOLUMNNNO_HEADER)->getIfDcDraw();
+
+			CConverter_WinGdi aCConverter_WinGdi;
+
+			CdDrawTextProp	aCdDrawTextProp(
+				fontpropDefault,
+				colorpropDefault);
+			//aCConverter_WinGdi.CdColorPropOfSysColor(COLOR_MENUTEXT));
+			CdBrushProp	aCdBrushProp(
+				aCConverter_WinGdi.CdColorPropOfSysColor(COLOR_MENU));
+
+			pCDcdTextbox->setCdDrawTextProp(aCdDrawTextProp);
+			pCDcdTextbox->setCdBrushProp(aCdBrushProp);
+			pCDcdTextbox->setText((LPCTSTR)aString);
+		}
+		if (getDisplayTrackName())
+		{
+			// 着発番線
+			int iXColumnNumber = aXColSpecCont.ColumnNumberFromSpec(CdOperationTableXColSpec(
+				CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkiTrack));
+			CString	aString;
+			aString = _T("番線");
 
 			Ou<CDcdTextbox>	pCDcdTextbox =
 				getCXDcdGrid()->getCell(iXColumnNumber, YCOLUMNNNO_HEADER)->getIfDcDraw();
@@ -4019,6 +4220,16 @@ int CWndDcdGridOperationTable::OnEditCopy_Process( BOOL bQueryEnable )
 					getCXDcdGrid()->getCell(iXColumnNumber2, iYColumnNumber)->getIfDcDraw();
 				strData += pCDcdTextbox1->getText();
 				strData += _T(" ");
+				if (getDisplayTrackName())
+				{
+					int iXColumnNumber3 = aXColSpecCont.ColumnNumberFromSpec(CdOperationTableXColSpec(
+						CdOperationTableXColSpec::EColumnType::ColumnType_OriginSideEkiTrack));
+					Ou<CDcdTextbox> pCDcdTextbox3 =
+						getCXDcdGrid()->getCell(iXColumnNumber3, iYColumnNumber)->getIfDcDraw();
+					strData += pCDcdTextbox3->getText();
+					strData += _T(" ");
+
+				}
 				strData += pCDcdTextbox2->getText();
 				strData += _T(" ");
 			}
@@ -4041,6 +4252,16 @@ int CWndDcdGridOperationTable::OnEditCopy_Process( BOOL bQueryEnable )
 					getCXDcdGrid()->getCell(iXColumnNumber2, iYColumnNumber)->getIfDcDraw();
 				strData += pCDcdTextbox1->getText();
 				strData += _T(" ");
+				if (getDisplayTrackName())
+				{
+					int iXColumnNumber3 = aXColSpecCont.ColumnNumberFromSpec(CdOperationTableXColSpec(
+						CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkiTrack));
+					Ou<CDcdTextbox> pCDcdTextbox3 =
+						getCXDcdGrid()->getCell(iXColumnNumber3, iYColumnNumber)->getIfDcDraw();
+					strData += pCDcdTextbox3->getText();
+					strData += _T(" ");
+
+				}
 				strData += pCDcdTextbox2->getText();
 			}
 
@@ -4199,19 +4420,23 @@ int CWndDcdGridOperationTable::OnOperationtableMovetojikokuhyou_Process(BOOL bQu
 		else if ((pOperationTable.eRessyahoukou == ERessyahoukou::Ressyahoukou_Kudari ||
 			getDisplayNoboriLeftToRight()) &&
 			(aCdOperationTableXColSpec.getColumnType() ==
-			CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkimei ||
-			aCdOperationTableXColSpec.getColumnType() ==
-			CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkijikoku) || 
+				CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkimei ||
+				aCdOperationTableXColSpec.getColumnType() ==
+				CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkiTrack ||
+				aCdOperationTableXColSpec.getColumnType() ==
+				CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkijikoku)|| 
 			(pOperationTable.eRessyahoukou == ERessyahoukou::Ressyahoukou_Nobori &&
 				!getDisplayNoboriLeftToRight()) &&
 			(aCdOperationTableXColSpec.getColumnType() ==
 				CdOperationTableXColSpec::EColumnType::ColumnType_OriginSideEkimei ||
 				aCdOperationTableXColSpec.getColumnType() ==
+				CdOperationTableXColSpec::EColumnType::ColumnType_OriginSideEkiTrack ||
+				aCdOperationTableXColSpec.getColumnType() ==
 				CdOperationTableXColSpec::EColumnType::ColumnType_OriginSideEkijikoku))
 		{
 			/**
-				下りまたは上り列車左→右表記の場合は、終点側駅名・時刻欄、
-				上りかつ上り列車右→左表記の場合は、起点側駅名・時刻欄を選択している場合、
+				下りまたは上り列車左→右表記の場合は、終点側駅名・番線・時刻欄、
+				上りかつ上り列車右→左表記の場合は、起点側駅名・番線・時刻欄を選択している場合、
 				複数列車同一行表示の場合、一番最後の列車をフォーカスします。
 			*/
 			for (int iCBIndex = 1; iCBIndex < pOperationTable.iCombineCount; iCBIndex++)
@@ -4359,11 +4584,15 @@ int CWndDcdGridOperationTable::OnOperationtableMovetojikokuhyouOpenDlg_Process(B
 			(aCdOperationTableXColSpec.getColumnType() ==
 				CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkimei ||
 				aCdOperationTableXColSpec.getColumnType() ==
+				CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkiTrack ||
+				aCdOperationTableXColSpec.getColumnType() ==
 				CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkijikoku) ||
 			(pOperationTable.eRessyahoukou == ERessyahoukou::Ressyahoukou_Nobori &&
 				!getDisplayNoboriLeftToRight()) &&
 			(aCdOperationTableXColSpec.getColumnType() ==
 				CdOperationTableXColSpec::EColumnType::ColumnType_OriginSideEkimei ||
+				aCdOperationTableXColSpec.getColumnType() ==
+				CdOperationTableXColSpec::EColumnType::ColumnType_OriginSideEkiTrack ||
 				aCdOperationTableXColSpec.getColumnType() ==
 				CdOperationTableXColSpec::EColumnType::ColumnType_OriginSideEkijikoku))
 		{
@@ -4425,6 +4654,8 @@ int CWndDcdGridOperationTable::OnOperationtableMovetojikokuhyouOpenDlg_Process(B
 			else if (aCdOperationTableXColSpec.getColumnType() ==
 				CdOperationTableXColSpec::EColumnType::ColumnType_OriginSideEkimei ||
 				aCdOperationTableXColSpec.getColumnType() ==
+				CdOperationTableXColSpec::EColumnType::ColumnType_OriginSideEkiTrack ||
+				aCdOperationTableXColSpec.getColumnType() ==
 				CdOperationTableXColSpec::EColumnType::ColumnType_OriginSideEkijikoku)
 			{
 				CentDedRessya aCentDedRessya = getCentDedRessyaCont(eRessyahoukou)->get(iRessyaidx);
@@ -4440,6 +4671,8 @@ int CWndDcdGridOperationTable::OnOperationtableMovetojikokuhyouOpenDlg_Process(B
 			}
 			else if (aCdOperationTableXColSpec.getColumnType() ==
 				CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkimei ||
+				aCdOperationTableXColSpec.getColumnType() ==
+				CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkiTrack ||
 				aCdOperationTableXColSpec.getColumnType() ==
 				CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkijikoku)
 			{
@@ -4561,11 +4794,15 @@ int CWndDcdGridOperationTable::OnOperationtableMovetodiagram_Process(BOOL bQuery
 			(aCdOperationTableXColSpec.getColumnType() ==
 				CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkimei ||
 				aCdOperationTableXColSpec.getColumnType() ==
+				CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkiTrack ||
+				aCdOperationTableXColSpec.getColumnType() ==
 				CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkijikoku) ||
 			(pOperationTable.eRessyahoukou == ERessyahoukou::Ressyahoukou_Nobori &&
 				!getDisplayNoboriLeftToRight()) &&
 			(aCdOperationTableXColSpec.getColumnType() ==
 				CdOperationTableXColSpec::EColumnType::ColumnType_OriginSideEkimei ||
+				aCdOperationTableXColSpec.getColumnType() ==
+				CdOperationTableXColSpec::EColumnType::ColumnType_OriginSideEkiTrack ||
 				aCdOperationTableXColSpec.getColumnType() ==
 				CdOperationTableXColSpec::EColumnType::ColumnType_OriginSideEkijikoku))
 		{
@@ -5161,9 +5398,8 @@ int CWndDcdGridOperationTable::setDisplayTrackName(bool value)
 
 		//	着発番線名を表示が変化した場合は、
 		//	ビューを更新します。
-		//	ただし、運用更新抑止状態かつ従来形式表示の場合は、ビューの更新は行いません
-		if (!getCentDedDia()->getWaitOperationUpdate() &&
-			getDisplayExtensionOperationTable())
+		//	ただし、運用更新抑止状態の場合は、ビューの更新は行いません
+		if (!getCentDedDia()->getWaitOperationUpdate())
 		{
 			OnUpdate_All();
 			InvalidateGrid();
@@ -5429,6 +5665,7 @@ void CWndDcdGridOperationTable::OnUpdate(CView* pSender, LPARAM lHint, CObject* 
 					int iSyuuchakuEkiIndex = getCDiagramEditDoc()->getCDedRosenFileData()->getCentDedRosen()
 						->getCentDedEkiCont()->EkiIndexOfEkiOrder(itr->aRessyaProperty.getRessyahoukou(),
 							itr->iSyuuchakuEkiOrder);
+					ERessyahoukou eSihatsuRessyahoukou = itr->aRessyaProperty.getRessyahoukou();
 					auto itrNext = itr;
 					do {
 						itrNext++;
@@ -5437,11 +5674,14 @@ void CWndDcdGridOperationTable::OnUpdate(CView* pSender, LPARAM lHint, CObject* 
 						{
 							//次の列車が末尾を超えた場合、もしくは
 							//次の列車の前タイプが同一列車扱い以外なら、一体化は無効その前の列車で終了します。
-							if (iSihatsuEkiIndex > iSyuuchakuEkiIndex)
+							//1列車目の列車方向と、最後の列車の列車方向が同じ場合は、1列車目の列車方向をそのまま用いる。
+							if (aOperationTable.eRessyahoukou != itrNext->aRessyaProperty.getRessyahoukou() &&
+								iSihatsuEkiIndex > iSyuuchakuEkiIndex)
 							{
 								aOperationTable.eRessyahoukou = ERessyahoukou::Ressyahoukou_Nobori;
 							}
-							else if (iSihatsuEkiIndex < iSyuuchakuEkiIndex)
+							else if (aOperationTable.eRessyahoukou != itrNext->aRessyaProperty.getRessyahoukou() &&
+								iSihatsuEkiIndex < iSyuuchakuEkiIndex)
 							{
 								aOperationTable.eRessyahoukou = ERessyahoukou::Ressyahoukou_Kudari;
 							}
@@ -5487,11 +5727,14 @@ void CWndDcdGridOperationTable::OnUpdate(CView* pSender, LPARAM lHint, CObject* 
 							else
 							{
 								//次の列車の後タイプが同一列車扱い以外なら、この列車が一体化の末尾となるので、aOperationTableを確定させる。
-								if (iSihatsuEkiIndex > iSyuuchakuEkiIndex)
+								//1列車目の列車方向と、最後の列車の列車方向が同じ場合は、1列車目の列車方向をそのまま用いる。
+								if (aOperationTable.eRessyahoukou != itrNext->aRessyaProperty.getRessyahoukou() &&
+									iSihatsuEkiIndex > iSyuuchakuEkiIndex)
 								{
 									aOperationTable.eRessyahoukou = ERessyahoukou::Ressyahoukou_Nobori;
 								}
-								else if (iSihatsuEkiIndex < iSyuuchakuEkiIndex)
+								else if (aOperationTable.eRessyahoukou != itrNext->aRessyaProperty.getRessyahoukou() && 
+									iSihatsuEkiIndex < iSyuuchakuEkiIndex)
 								{
 									aOperationTable.eRessyahoukou = ERessyahoukou::Ressyahoukou_Kudari;
 								}
@@ -5794,6 +6037,8 @@ void CWndDcdGridOperationTable::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
 				else if (aCdOperationTableXColSpec.getColumnType() ==
 					CdOperationTableXColSpec::EColumnType::ColumnType_OriginSideEkimei ||
 					aCdOperationTableXColSpec.getColumnType() ==
+					CdOperationTableXColSpec::EColumnType::ColumnType_OriginSideEkiTrack ||
+					aCdOperationTableXColSpec.getColumnType() ==
 					CdOperationTableXColSpec::EColumnType::ColumnType_OriginSideEkijikoku)
 				{
 					CentDedRessya aCentDedRessya = getCentDedRessyaCont(eRessyahoukou)->get(iRessyaidx);
@@ -5809,6 +6054,8 @@ void CWndDcdGridOperationTable::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
 				}
 				else if (aCdOperationTableXColSpec.getColumnType() ==
 					CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkimei ||
+					aCdOperationTableXColSpec.getColumnType() ==
+					CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkiTrack ||
 					aCdOperationTableXColSpec.getColumnType() ==
 					CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkijikoku)
 				{

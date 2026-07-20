@@ -1,4 +1,20 @@
 OuDiaSecondで作者(diagram_mania)が追加・変更したソースコードの箇所を明記しておきます
+Ver2.06.23
+DiagramEdit\ViewOperationTable\OperationTableColSpec\CdOperationTableXColSpec.h
+	始発/終着駅番線欄を追加
+DiagramEdit\ViewOperationTable\OperationTableColSpec\CdOperationTableXColSpecCont.h
+	始発/終着駅番線欄に対応
+	着発番線表示設定を追加
+	
+DiagramEdit\ViewOperationTable\CWndDcdGridOperationTable.cpp
+	CdOperationTableXColSpecCont呼び出しに着発番線表示設定を追加
+	従来形式の運用表に、着発番線欄を追加
+	「時刻表に移動」などを従来形式の着発番線欄に対応
+	従来形式の運用表で複数列車を一本化するときの列車方向の扱いを変更。
+DiagramEdit\ViewOperationTable\CconvOperationTableCsv.cpp
+	従来形式の運用表に、着発番線欄を追加
+	従来形式の運用表で、方向が異なる列車が一本化されている時に、異なった駅名が出力されている問題を修正。
+	
 Ver2.06.22
 DiagramEdit\ViewJikokuhyou\WndJikokuhyou\CWndJikokuhyou.cpp
 	ステータスバーへの基準運転時分との差分表示を追加。

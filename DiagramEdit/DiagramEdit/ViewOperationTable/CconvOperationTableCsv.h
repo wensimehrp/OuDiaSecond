@@ -113,6 +113,8 @@ private:
 	tstring m_nameKudariArrow;
 	/// CSV上の固定文字列「←」
 	tstring m_nameNoboriArrow;
+	/// CSV上の固定文字列「番線」
+	tstring m_nameEkiTrack;
 
 protected:
 	// --------------------------------
@@ -185,7 +187,8 @@ public:
 		const tstring& nameEkimei,
 		const tstring& nameEkiJikoku,
 		const tstring& nameKudariArrow,
-		const tstring& nameNoboriArrow) ;
+		const tstring& nameNoboriArrow,
+		const tstring& nameEkiTrack) ;
 
 
 

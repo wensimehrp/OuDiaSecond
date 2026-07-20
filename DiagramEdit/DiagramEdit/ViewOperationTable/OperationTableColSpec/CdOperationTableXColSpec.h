@@ -102,12 +102,16 @@ public:
 		ColumnType_Ressyamei,
 		/**	n”­‰w–¼ */
 		ColumnType_OriginSideEkimei,
+		/**	n”­‰w”Ôü */
+		ColumnType_OriginSideEkiTrack,
 		/**	n”­‰w */
 		ColumnType_OriginSideEkijikoku,
 		/**	—ñÔ•ûŒü */
 		ColumnType_Ressyahoukou,
 		/**	I’…‰w–¼ */
 		ColumnType_TerminalSideEkimei,
+		/**	I’…‰w”Ôü */
+		ColumnType_TerminalSideEkiTrack,
 		/**	I’…‰w */
 		ColumnType_TerminalSideEkijikoku,
 

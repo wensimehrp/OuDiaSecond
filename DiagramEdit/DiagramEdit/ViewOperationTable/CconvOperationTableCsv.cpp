@@ -190,7 +190,8 @@ CconvOperationTableCsv::CconvOperationTableCsv(
 		const tstring& nameEkimei,
 		const tstring& nameEkiJikoku,
 		const tstring& nameKudariArrow,
-		const tstring& nameNoboriArrow) :
+		const tstring& nameNoboriArrow,
+		const tstring& nameEkiTrack) :
 	m_nameRessyabangou( nameRessyabangou ),
 	m_nameRessyasyubetsu( nameRessyasyubetsu ),
 	m_nameRessyamei( nameRessyamei ),
@@ -199,7 +200,8 @@ CconvOperationTableCsv::CconvOperationTableCsv(
 	m_nameEkimei(nameEkimei),
 	m_nameEkiJikoku(nameEkiJikoku),
 	m_nameKudariArrow(nameKudariArrow),
-	m_nameNoboriArrow(nameNoboriArrow)
+	m_nameNoboriArrow(nameNoboriArrow),
+	m_nameEkiTrack(nameEkiTrack)
 {
 }
 
@@ -658,9 +660,17 @@ int CconvOperationTableCsv::encode(
 		else
 		{
 			aRowHeader.getCellCont()->insert(CdCsvCell(m_nameEkimei));
+			if (bDisplayTrackName)
+			{
+				aRowHeader.getCellCont()->insert(CdCsvCell(m_nameEkiTrack));
+			}
 			aRowHeader.getCellCont()->insert(CdCsvCell(m_nameEkiJikoku));
 			aRowHeader.getCellCont()->insert(CdCsvCell());
 			aRowHeader.getCellCont()->insert(CdCsvCell(m_nameEkimei));
+			if (bDisplayTrackName)
+			{
+				aRowHeader.getCellCont()->insert(CdCsvCell(m_nameEkiTrack));
+			}
 			aRowHeader.getCellCont()->insert(CdCsvCell(m_nameEkiJikoku));
 		}
 		pCdCsvDocument->getRowCont()->insert(aRowHeader);
@@ -2640,8 +2650,8 @@ int CconvOperationTableCsv::encode(
 				//int iSyuuchakuEkiIndex = pShuchakuRessya->EkiIndexOfEkiOrder(iSyuuchakuEkiOrder);
 
 				aRow.getCellCont()->insert(CdCsvCell(pShihatsuRessya->getRessyabangou()));
-				aRow2.getCellCont()->insert(CdCsvCell());
-				aRow3.getCellCont()->insert(CdCsvCell());
+				//aRow2.getCellCont()->insert(CdCsvCell());
+				//aRow3.getCellCont()->insert(CdCsvCell());
 
 				int iRessyaSyubetsuIndex = pShihatsuRessya->getRessyasyubetsuIndex();
 				if (pCentDedRessyasyubetsuContGet->get(iRessyaSyubetsuIndex)->getParentSyubetsuIndex() >= 0 &&
@@ -2651,189 +2661,233 @@ int CconvOperationTableCsv::encode(
 				}
 				aRow.getCellCont()->insert(CdCsvCell(
 					pCentDedRessyasyubetsuContGet->get(iRessyaSyubetsuIndex)->getSyubetsumei()));
-				aRow2.getCellCont()->insert(CdCsvCell());
-				aRow3.getCellCont()->insert(CdCsvCell());
+				//aRow2.getCellCont()->insert(CdCsvCell());
+				//aRow3.getCellCont()->insert(CdCsvCell());
 
 				if (bDisplayRessyamei)
 				{
 					aRow.getCellCont()->insert(CdCsvCell(pShihatsuRessya->getRessyamei()));
-					aRow2.getCellCont()->insert(CdCsvCell());
-					aRow3.getCellCont()->insert(CdCsvCell());
+					//aRow2.getCellCont()->insert(CdCsvCell());
+					//aRow3.getCellCont()->insert(CdCsvCell());
 
 					aRow.getCellCont()->insert(CdCsvCell(pShihatsuRessya->getGousuu()));
-					aRow2.getCellCont()->insert(CdCsvCell());
-					aRow3.getCellCont()->insert(CdCsvCell());
+					//aRow2.getCellCont()->insert(CdCsvCell());
+					//aRow3.getCellCont()->insert(CdCsvCell());
 
 					if (pShihatsuRessya->getGousuu().empty())
 					{
 						aRow.getCellCont()->insert(CdCsvCell());
-						aRow2.getCellCont()->insert(CdCsvCell());
-						aRow3.getCellCont()->insert(CdCsvCell());
+						//aRow2.getCellCont()->insert(CdCsvCell());
+						//aRow3.getCellCont()->insert(CdCsvCell());
 					}
 					else
 					{
 						aRow.getCellCont()->insert(CdCsvCell(m_nameGou));
-						aRow2.getCellCont()->insert(CdCsvCell());
-						aRow3.getCellCont()->insert(CdCsvCell());
+						//aRow2.getCellCont()->insert(CdCsvCell());
+						//aRow3.getCellCont()->insert(CdCsvCell());
 					}
 				}
-
-				if (contOperationTable[iOTIndex].eRessyahoukou == ERessyahoukou::Ressyahoukou_Kudari)
+				
+				//下り列車or上り列車を左から右へ表示時　始発駅→終着駅表示
+				if (contOperationTable[iOTIndex].eRessyahoukou == ERessyahoukou::Ressyahoukou_Kudari ||
+					bDisplayNoboriLeftToRight)
 				{
 					tstring strOrgEkimei;
 					tstring strOrgEkijikoku;
 
+					int iShihatsuEkiIndex = pShihatsuRessya->EkiIndexOfEkiOrder(itrShihatsu->iSihatsuEkiOrder);
+
 					if (itrShihatsu->iOuterShihatsuekiIndex != INT_MIN)
 					{
-						strOrgEkimei = pCdDedEkiContKudari->get(itrShihatsu->iSihatsuEkiOrder).getOuterTerminalEkimei(
+						strOrgEkimei = pCentDedEkiCont->get(iShihatsuEkiIndex).getOuterTerminalEkimei(
 							itrShihatsu->iOuterShihatsuekiIndex);
 						strOrgEkijikoku = getCdDedJikokuConv().encode(itrShihatsu->OuterShihatsuJikoku, false);
 					}
 					else
 					{
-						int iSihatsuEkiOrder = itrShihatsu->iSihatsuEkiOrder;
-						if (!pShihatsuRessya->isRunBetweenNextEki(iSihatsuEkiOrder))
+						int iValidSihatsuEkiOrder = itrShihatsu->iSihatsuEkiOrder;
+						if (!pShihatsuRessya->isRunBetweenNextEki(itrShihatsu->iSihatsuEkiOrder))
 						{
-							iSihatsuEkiOrder = pShihatsuRessya->getRunBetweenEkiForward(iSihatsuEkiOrder);
+							iValidSihatsuEkiOrder = pShihatsuRessya->getRunBetweenEkiForward(itrShihatsu->iSihatsuEkiOrder);
 						}
-						strOrgEkimei = pCdDedEkiContKudari->get(iSihatsuEkiOrder).getEkimei();
+
+						strOrgEkimei = pCentDedEkiCont->get(iShihatsuEkiIndex).getEkimei();
 						strOrgEkijikoku = getCdDedJikokuConv().encode(
-							pShihatsuRessya->getCentDedEkiJikoku(iSihatsuEkiOrder).getHatsujikoku(), false);
-						
+							pShihatsuRessya->getCentDedEkiJikoku(iValidSihatsuEkiOrder).getHatsujikoku(), false);
+
 					}
 					aRow.getCellCont()->insert(CdCsvCell(strOrgEkimei));
+					if (bDisplayTrackName)
+					{
+						tstring strOrgEkiTrack;
+
+						if (itrShihatsu->iOuterShihatsuekiIndex == INT_MIN)
+						{
+							int iValidSihatsuEkiOrder = itrShihatsu->iSihatsuEkiOrder;
+							if (!pShihatsuRessya->isRunBetweenNextEki(itrShihatsu->iSihatsuEkiOrder))
+							{
+								iValidSihatsuEkiOrder = pShihatsuRessya->getRunBetweenEkiForward(itrShihatsu->iSihatsuEkiOrder);
+							}
+
+							strOrgEkiTrack = pCentDedEkiCont->get(iShihatsuEkiIndex).getEkiTrack2Cont()->get(
+								pShihatsuRessya->getCentDedEkiJikoku(iValidSihatsuEkiOrder).getRessyaTrackIndex()).getTrackRyakusyou(pShihatsuRessya->getRessyahoukou());
+						}
+
+						aRow.getCellCont()->insert(CdCsvCell(strOrgEkiTrack));
+
+					}
 					aRow.getCellCont()->insert(CdCsvCell(strOrgEkijikoku));
 
 					aRow.getCellCont()->insert(CdCsvCell(m_nameKudariArrow));
 
 					tstring strDstEkimei;
 					tstring strDstEkijikoku;
+
+					int iShuchakuEkiIndex = pShuchakuRessya->EkiIndexOfEkiOrder(itrShuchaku->iSyuuchakuEkiOrder);
+
 					if (itrShuchaku->iOuterShuchakuekiIndex != INT_MIN)
 					{
-						strDstEkimei = pCdDedEkiContKudari->get(itrShuchaku->iSyuuchakuEkiOrder).getOuterTerminalEkimei(
+						strDstEkimei = pCentDedEkiCont->get(iShuchakuEkiIndex).getOuterTerminalEkimei(
 							itrShuchaku->iOuterShuchakuekiIndex);
 						strDstEkijikoku = getCdDedJikokuConv().encode(itrShuchaku->OuterShuchakuJikoku, true);
-						
+
 					}
 					else
 					{
-						int iSyuuchakuEkiOrder = itrShuchaku->iSyuuchakuEkiOrder;
-						if (!pShuchakuRessya->isRunBetweenNextEki(iSyuuchakuEkiOrder - 1))
+						int iValidSyuuchakuEkiOrder = itrShuchaku->iSyuuchakuEkiOrder;
+						if (!pShuchakuRessya->isRunBetweenNextEki(itrShuchaku->iSyuuchakuEkiOrder - 1))
 						{
-							iSyuuchakuEkiOrder = pShuchakuRessya->getRunBetweenEkiBackward(iSyuuchakuEkiOrder);
+							iValidSyuuchakuEkiOrder = pShuchakuRessya->getRunBetweenEkiBackward(itrShuchaku->iSyuuchakuEkiOrder);
 						}
-						strDstEkimei = pCdDedEkiContKudari->get(iSyuuchakuEkiOrder).getEkimei();
+						strDstEkimei = pCentDedEkiCont->get(iShuchakuEkiIndex).getEkimei();
 						strDstEkijikoku = getCdDedJikokuConv().encode(
-							pShuchakuRessya->getCentDedEkiJikoku(iSyuuchakuEkiOrder).getChakujikoku(), true);
-						
+							pShuchakuRessya->getCentDedEkiJikoku(iValidSyuuchakuEkiOrder).getChakujikoku(), true);
+
 					}
 					aRow.getCellCont()->insert(CdCsvCell(strDstEkimei));
-					aRow.getCellCont()->insert(CdCsvCell(strDstEkijikoku));
-				}
-				else if (bDisplayNoboriLeftToRight)
-				{
-					tstring strOrgEkimei;
-					tstring strOrgEkijikoku;
-					if (itrShihatsu->iOuterShihatsuekiIndex != INT_MIN)
+					if (bDisplayTrackName)
 					{
-						strOrgEkimei = pCdDedEkiContNobori->get(itrShihatsu->iSihatsuEkiOrder).getOuterTerminalEkimei(
-							itrShihatsu->iOuterShihatsuekiIndex);
-						strOrgEkijikoku = getCdDedJikokuConv().encode(itrShihatsu->OuterShihatsuJikoku, false);
-						
-					}
-					else
-					{
-						int iSihatsuEkiOrder = itrShihatsu->iSihatsuEkiOrder;
-						if (!pShihatsuRessya->isRunBetweenNextEki(iSihatsuEkiOrder))
-						{
-							iSihatsuEkiOrder = pShihatsuRessya->getRunBetweenEkiForward(iSihatsuEkiOrder);
-						}
-						strOrgEkimei = pCdDedEkiContNobori->get(iSihatsuEkiOrder).getEkimei();
-						strOrgEkijikoku = getCdDedJikokuConv().encode(
-							pShihatsuRessya->getCentDedEkiJikoku(iSihatsuEkiOrder).getHatsujikoku(), false);
-						
-					}
-					aRow.getCellCont()->insert(CdCsvCell(strOrgEkimei));
-					aRow.getCellCont()->insert(CdCsvCell(strOrgEkijikoku));
+						tstring strDstEkiTrack;
 
-					aRow.getCellCont()->insert(CdCsvCell(m_nameKudariArrow));
-
-					tstring strDstEkimei;
-					tstring strDstEkijikoku;
-					if (itrShuchaku->iOuterShuchakuekiIndex != INT_MIN)
-					{
-						strDstEkimei = pCdDedEkiContNobori->get(itrShuchaku->iSyuuchakuEkiOrder).getOuterTerminalEkimei(
-							itrShuchaku->iOuterShuchakuekiIndex);
-						strDstEkijikoku = getCdDedJikokuConv().encode(itrShuchaku->OuterShuchakuJikoku, true);
-						
-					}
-					else
-					{
-						int iSyuuchakuEkiOrder = itrShuchaku->iSyuuchakuEkiOrder;
-						if (!pShuchakuRessya->isRunBetweenNextEki(iSyuuchakuEkiOrder - 1))
+						if (itrShuchaku->iOuterShuchakuekiIndex == INT_MIN)
 						{
-							iSyuuchakuEkiOrder = pShuchakuRessya->getRunBetweenEkiBackward(iSyuuchakuEkiOrder);
+							int iValidSyuuchakuEkiOrder = itrShuchaku->iSyuuchakuEkiOrder;
+							if (!pShuchakuRessya->isRunBetweenNextEki(itrShuchaku->iSyuuchakuEkiOrder - 1))
+							{
+								iValidSyuuchakuEkiOrder = pShuchakuRessya->getRunBetweenEkiBackward(itrShuchaku->iSyuuchakuEkiOrder);
+							}
+
+							strDstEkiTrack = pCentDedEkiCont->get(iShuchakuEkiIndex).getEkiTrack2Cont()->get(
+								pShuchakuRessya->getCentDedEkiJikoku(iValidSyuuchakuEkiOrder).getRessyaTrackIndex()).getTrackRyakusyou(pShuchakuRessya->getRessyahoukou());
 						}
-						strDstEkimei = pCdDedEkiContNobori->get(iSyuuchakuEkiOrder).getEkimei();
-						strDstEkijikoku = getCdDedJikokuConv().encode(
-							pShuchakuRessya->getCentDedEkiJikoku(iSyuuchakuEkiOrder).getChakujikoku(), true);
-						
+
+						aRow.getCellCont()->insert(CdCsvCell(strDstEkiTrack));
+
 					}
-					aRow.getCellCont()->insert(CdCsvCell(strDstEkimei));
 					aRow.getCellCont()->insert(CdCsvCell(strDstEkijikoku));
+
 				}
+				//上り列車で右から左へ表示時 終着駅←始発駅表示
 				else
 				{
 					tstring strOrgEkimei;
 					tstring strOrgEkijikoku;
+
+					int iShuchakuEkiIndex = pShuchakuRessya->EkiIndexOfEkiOrder(itrShuchaku->iSyuuchakuEkiOrder);
+
 					if (itrShuchaku->iOuterShuchakuekiIndex != INT_MIN)
 					{
-						strOrgEkimei = pCdDedEkiContNobori->get(itrShuchaku->iSyuuchakuEkiOrder).getOuterTerminalEkimei(
+						strOrgEkimei = pCentDedEkiCont->get(iShuchakuEkiIndex).getOuterTerminalEkimei(
 							itrShuchaku->iOuterShuchakuekiIndex);
 						strOrgEkijikoku = getCdDedJikokuConv().encode(itrShuchaku->OuterShuchakuJikoku, true);
-						
+
 					}
 					else
 					{
-						int iSyuuchakuEkiOrder = itrShuchaku->iSyuuchakuEkiOrder;
-						if (!pShuchakuRessya->isRunBetweenNextEki(iSyuuchakuEkiOrder - 1))
+						int iValidSyuuchakuEkiOrder = itrShuchaku->iSyuuchakuEkiOrder;
+						if (!pShuchakuRessya->isRunBetweenNextEki(itrShuchaku->iSyuuchakuEkiOrder - 1))
 						{
-							iSyuuchakuEkiOrder = pShuchakuRessya->getRunBetweenEkiBackward(iSyuuchakuEkiOrder);
+							iValidSyuuchakuEkiOrder = pShuchakuRessya->getRunBetweenEkiBackward(itrShuchaku->iSyuuchakuEkiOrder);
 						}
-						strOrgEkimei = pCdDedEkiContNobori->get(iSyuuchakuEkiOrder).getEkimei();
+						strOrgEkimei = pCentDedEkiCont->get(iShuchakuEkiIndex).getEkimei();
 						strOrgEkijikoku = getCdDedJikokuConv().encode(
-							pShuchakuRessya->getCentDedEkiJikoku(iSyuuchakuEkiOrder).getChakujikoku(), true);
-						
+							pShuchakuRessya->getCentDedEkiJikoku(iValidSyuuchakuEkiOrder).getChakujikoku(), true);
+
 					}
 					aRow.getCellCont()->insert(CdCsvCell(strOrgEkimei));
+					if (bDisplayTrackName)
+					{
+						tstring strOrgEkiTrack;
+
+						if (itrShuchaku->iOuterShuchakuekiIndex == INT_MIN)
+						{
+							int iValidSyuuchakuEkiOrder = itrShuchaku->iSyuuchakuEkiOrder;
+							if (!pShuchakuRessya->isRunBetweenNextEki(itrShuchaku->iSyuuchakuEkiOrder - 1))
+							{
+								iValidSyuuchakuEkiOrder = pShuchakuRessya->getRunBetweenEkiBackward(itrShuchaku->iSyuuchakuEkiOrder);
+							}
+
+							strOrgEkiTrack = pCentDedEkiCont->get(iShuchakuEkiIndex).getEkiTrack2Cont()->get(
+								pShuchakuRessya->getCentDedEkiJikoku(iValidSyuuchakuEkiOrder).getRessyaTrackIndex()).getTrackRyakusyou(pShuchakuRessya->getRessyahoukou());
+						}
+
+						aRow.getCellCont()->insert(CdCsvCell(strOrgEkiTrack));
+
+					}
 					aRow.getCellCont()->insert(CdCsvCell(strOrgEkijikoku));
 
 					aRow.getCellCont()->insert(CdCsvCell(m_nameNoboriArrow));
 
 					tstring strDstEkimei;
 					tstring strDstEkijikoku;
+
+					int iShihatsuEkiIndex = pShihatsuRessya->EkiIndexOfEkiOrder(itrShihatsu->iSihatsuEkiOrder);
+
 					if (itrShihatsu->iOuterShihatsuekiIndex != INT_MIN)
 					{
-						strDstEkimei = pCdDedEkiContNobori->get(itrShihatsu->iSihatsuEkiOrder).getOuterTerminalEkimei(
+						strDstEkimei = pCentDedEkiCont->get(iShihatsuEkiIndex).getOuterTerminalEkimei(
 							itrShihatsu->iOuterShihatsuekiIndex);
 						strDstEkijikoku = getCdDedJikokuConv().encode(itrShihatsu->OuterShihatsuJikoku, false);
-						
+
 					}
 					else
 					{
-						int iSihatsuEkiOrder = itrShihatsu->iSihatsuEkiOrder;
-						if (!pShihatsuRessya->isRunBetweenNextEki(iSihatsuEkiOrder))
+						int iValidSihatsuEkiOrder = itrShihatsu->iSihatsuEkiOrder;
+						if (!pShihatsuRessya->isRunBetweenNextEki(itrShihatsu->iSihatsuEkiOrder))
 						{
-							iSihatsuEkiOrder = pShihatsuRessya->getRunBetweenEkiForward(iSihatsuEkiOrder);
+							iValidSihatsuEkiOrder = pShihatsuRessya->getRunBetweenEkiForward(itrShihatsu->iSihatsuEkiOrder);
 						}
-						strDstEkimei = pCdDedEkiContNobori->get(iSihatsuEkiOrder).getEkimei();
+
+						strDstEkimei = pCentDedEkiCont->get(iShihatsuEkiIndex).getEkimei();
 						strDstEkijikoku = getCdDedJikokuConv().encode(
-							pShihatsuRessya->getCentDedEkiJikoku(iSihatsuEkiOrder).getHatsujikoku(), false);
-						
+							pShihatsuRessya->getCentDedEkiJikoku(iValidSihatsuEkiOrder).getHatsujikoku(), false);
+
 					}
 					aRow.getCellCont()->insert(CdCsvCell(strDstEkimei));
+					if (bDisplayTrackName)
+					{
+						tstring strDstEkiTrack;
+
+						if (itrShihatsu->iOuterShihatsuekiIndex == INT_MIN)
+						{
+							int iValidSihatsuEkiOrder = itrShihatsu->iSihatsuEkiOrder;
+							if (!pShihatsuRessya->isRunBetweenNextEki(itrShihatsu->iSihatsuEkiOrder))
+							{
+								iValidSihatsuEkiOrder = pShihatsuRessya->getRunBetweenEkiForward(itrShihatsu->iSihatsuEkiOrder);
+							}
+
+							strDstEkiTrack = pCentDedEkiCont->get(iShihatsuEkiIndex).getEkiTrack2Cont()->get(
+								pShihatsuRessya->getCentDedEkiJikoku(iValidSihatsuEkiOrder).getRessyaTrackIndex()).getTrackRyakusyou(pShihatsuRessya->getRessyahoukou());
+						}
+
+						aRow.getCellCont()->insert(CdCsvCell(strDstEkiTrack));
+
+					}
 					aRow.getCellCont()->insert(CdCsvCell(strDstEkijikoku));
+
 				}
+
+
 			}
 			pCdCsvDocument->getRowCont()->insert(aRow);
 			if (bDisplayExtensionOperationTable)

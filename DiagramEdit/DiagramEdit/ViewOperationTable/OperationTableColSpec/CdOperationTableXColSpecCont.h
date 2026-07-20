@@ -122,6 +122,10 @@ private:
 	- true ;[列車名を表示する] モード
 	*/
 	bool m_bDisplayRessyamei;
+	/**
+	- true ;[着発番線名を表示します] モード
+	*/
+	bool m_bDisplayTrackName;
 
 	deque<int> m_iDisplayJikokuEkiIndex;
 
@@ -152,6 +156,7 @@ public:
 	CdOperationTableXColSpecCont(
 		bool bDisplayExtensionOperationTable,
 		bool bDisplayRessyamei,
+		bool bDisplayTrackName,
 		const deque<int> iDisplayJikokuEkiIndex) ;
 	CdOperationTableXColSpecCont() ;
  
@@ -167,6 +172,7 @@ public:
 	///@{
 	bool getDisplayExtensionOperationTable()const;
 	bool getDisplayRessyamei()const;
+	bool getDisplayTrackName()const;
 
 	///@}
 	// ********************************
@@ -183,6 +189,7 @@ public:
 	void scan(
 		bool bDisplayExtensionOperationTable,
 		bool bDisplayRessyamei,
+		bool bDisplayTrackName,
 		const deque<int> iDisplayJikokuEkiIndex) ;
 
 

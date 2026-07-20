@@ -84,13 +84,16 @@ namespace ViewOperationTable { namespace OperationTableColSpec{
 CdOperationTableXColSpecCont::CdOperationTableXColSpecCont(
 	bool bDisplayExtensionOperationTable,
 	bool bDisplayRessyamei,
+	bool bDisplayTrackName,
 	const deque<int> iDisplayJikokuEkiIndex)
 	:m_bDisplayExtensionOperationTable(bDisplayExtensionOperationTable)
 	,m_bDisplayRessyamei(bDisplayRessyamei)
+	, m_bDisplayTrackName(bDisplayTrackName)
 	, m_iDisplayJikokuEkiIndex(iDisplayJikokuEkiIndex)
 {
 	scan(bDisplayExtensionOperationTable,
 		bDisplayRessyamei,
+		bDisplayTrackName,
 		m_iDisplayJikokuEkiIndex) ;
 }
 
@@ -117,6 +120,7 @@ bool CdOperationTableXColSpecCont::getDisplayRessyamei()const
 void CdOperationTableXColSpecCont::scan(
 		bool bDisplayExtensionOperationTable,
 		bool bDisplayRessyamei,
+		bool bDisplayTrackName,
 	const deque<int> iDisplayJikokuEkiIndex)
 {
 	// --------------------------------
@@ -153,12 +157,22 @@ void CdOperationTableXColSpecCont::scan(
 	{
 		m_contColumnSpec.insert(
 			CdOperationTableXColSpec::EColumnType::ColumnType_OriginSideEkimei);
+		if (bDisplayTrackName)
+		{
+			m_contColumnSpec.insert(
+				CdOperationTableXColSpec::EColumnType::ColumnType_OriginSideEkiTrack);
+		}
 		m_contColumnSpec.insert(
 			CdOperationTableXColSpec::EColumnType::ColumnType_OriginSideEkijikoku);
 		m_contColumnSpec.insert(
 			CdOperationTableXColSpec::EColumnType::ColumnType_Ressyahoukou);
 		m_contColumnSpec.insert(
 			CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkimei);
+		if (bDisplayTrackName)
+		{
+			m_contColumnSpec.insert(
+				CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkiTrack);
+		}
 		m_contColumnSpec.insert(
 			CdOperationTableXColSpec::EColumnType::ColumnType_TerminalSideEkijikoku);
 	}
@@ -210,6 +224,7 @@ void CdOperationTableXColSpecCont::clear()
 {
 	m_bDisplayExtensionOperationTable = false;
 	m_bDisplayRessyamei = true;
+	m_bDisplayTrackName = false;
 	m_contColumnSpec.erase(0, INT_MAX);
 	m_iDisplayJikokuEkiIndex.clear();
 }

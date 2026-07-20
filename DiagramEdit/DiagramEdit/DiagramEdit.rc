@@ -972,7 +972,7 @@ BEGIN
         MENUITEM "親種別を有効にする(&O)",               ID_VIEW_DisplayParentSyubetsu
         MENUITEM "上り列車の始発駅を左側にする(従来形式時のみ)(&N)", ID_VIEW_DisplayNoboriLeftToRight
         MENUITEM "通過駅の駅時刻を表示する(箱ダイヤ時のみ)(&P)",   ID_VIEW_DisplayTsuukaEkiJikoku
-        MENUITEM "着発番線名を表示する(箱ダイヤ時のみ)(&T)",     ID_VIEW_DisplayTrackName
+        MENUITEM "着発番線名を表示する(&T)",              ID_VIEW_DisplayTrackName
         MENUITEM SEPARATOR
         MENUITEM "ツール バー(&T)",                  ID_VIEW_TOOLBAR
         MENUITEM "ステータス バー(&S)",                ID_VIEW_STATUS_BAR
@@ -2231,8 +2231,7 @@ BEGIN
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,82,116,10
     CONTROL         "通過駅の駅時刻を表示する(箱ダイヤ時のみ)",IDC_OperationExport_CHECK_TsuukaEkiJikoku,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,110,134,10
-    CONTROL         "着発番線名を表示する(箱ダイヤ時のみ)",IDC_OperationExport_CHECK_TrackName,
-                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,124,132,10
+    CONTROL         "着発番線名を表示する",IDC_OperationExport_CHECK_TrackName,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,124,132,10
 END
 
 IDD_EkiTrack2Prop2 DIALOGEX 0, 0, 171, 96
@@ -2531,8 +2530,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 2,6,22,0
- PRODUCTVERSION 2,6,22,0
+ FILEVERSION 2,6,23,0
+ PRODUCTVERSION 2,6,23,0
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -2549,12 +2548,12 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "diagram_mania"
             VALUE "FileDescription", "OuDiaSecondV2"
-            VALUE "FileVersion", "2.6.22.0"
+            VALUE "FileVersion", "2.6.23.0"
             VALUE "InternalName", "OuDiaSecondV2"
             VALUE "LegalCopyright", "Copyright (C) 2017-2026 diagram_mania"
             VALUE "OriginalFilename", "OuDiaSecondV2"
             VALUE "ProductName", "OuDiaSecondV2"
-            VALUE "ProductVersion", "2.6.22.0"
+            VALUE "ProductVersion", "2.6.23.0"
         END
     END
     BLOCK "VarFileInfo"
