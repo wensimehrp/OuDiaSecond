@@ -3977,8 +3977,8 @@ const TCHAR nameRessyamei[]=_T("Ressyamei") ;
 const TCHAR nameGousuu[]=_T("Gousuu") ;
 const TCHAR nameBikou[]=_T("Bikou") ;
 const TCHAR nameCanceled[] = _T("Canceled");
+const TCHAR nameOperationNumber[] = _T("OperationNumber");
 //const TCHAR nameRessyaTrack[] = _T("RessyaTrack");
-//const TCHAR nameOperationNumber[] = _T("OperationNumber");
 //const TCHAR nameSyubetsuChange[] = _T("SyubetsuChange");
 
 
@@ -4138,17 +4138,32 @@ int CconvCentDed::CentDedRessya_To_OuPropertiesText(
 				pCNodeContainer->setValue(nameCanceled, _T("1"));
 			}
 		}
-		//当面保留
-		////9."OperationNumber" ;
-		//if (iRv >= 0 && iEnableOperation>0)
-		//{
-		//	tstring strValue = pCentDedRessya->getOperationNumber();
-		//	if (!strValue.empty())
-		//	{
-		//		pCNodeContainer->setValue(nameOperationNumber,
-		//			strValue);
-		//	}
-		//}
+
+		//9."OperationNumber" ;
+		if (iRv >= 0 && iEnableOperation > 1 && pCentDedRessya->getValidSihatsuEki() >= 0 && pCentDedRessya->getValidSyuuchakuEki() >= 0)
+		{
+			vector<tstring> strValuePrev = pCentDedRessya->getOperationNumber(pCentDedRessya->getValidSihatsuEki());
+
+			tstring strName = nameOperationNumber + to_tstring(pCentDedRessya->getValidSihatsuEki());
+
+			pCNodeContainer->setValue(strName,
+				joinc(';', strValuePrev));
+
+			for (int iEkiOrder = pCentDedRessya->getValidSihatsuEki() + 1; iEkiOrder < pCentDedRessya->getValidSyuuchakuEki(); iEkiOrder++)
+			{
+				vector<tstring> strValue = pCentDedRessya->getOperationNumber(iEkiOrder);
+				if (strValuePrev != strValue)
+				{
+					strName = nameOperationNumber + to_tstring(iEkiOrder);
+
+					pCNodeContainer->setValue(strName,
+						joinc(';', strValue));
+
+					strValuePrev = strValue;
+
+				}
+			}
+		}
 	}
 	// --------------------------------
 	return ( iRv ) ;
@@ -4376,6 +4391,148 @@ int CconvCentDed::CentDedRessyaCont_From_OuPropertiesText(
 	return ( iRv ) ;
 }
 
+// ********************************
+//	OperationTableContent
+// ********************************
+
+const TCHAR nameOTOperationNumber[] = _T("OTOperationNumber");
+const TCHAR nameOTRessya[] = _T("OTRessya");
+const TCHAR nameOTHoukou[] = _T("OTHoukou");
+const TCHAR nameOTRessyaIndex[] = _T("OTRessyaIndex");
+const TCHAR nameSihatsuEkiOrder[] = _T("SihatsuEkiOrder");
+const TCHAR nameBeforeType[] = _T("BeforeType");
+const TCHAR nameOuterShihatsuekiIndex[] = _T("OuterShihatsuekiIndex");
+const TCHAR nameOuterShihatsuJikoku[] = _T("OuterShihatsuJikoku");
+const TCHAR nameChakuJikoku[] = _T("ChakuJikoku");
+const TCHAR nameSyuuchakuEkiOrder[] = _T("SyuuchakuEkiOrder");
+const TCHAR nameAfterType[] = _T("AfterType");
+const TCHAR nameOuterShuchakuekiIndex[] = _T("OuterShuchakuekiIndex");
+const TCHAR nameHatsuJikoku[] = _T("HatsuJikoku");
+const TCHAR nameOuterShuchakuJikoku[] = _T("OuterShuchakuJikoku");
+
+const CEnumToString< EBeforeAfterType >&
+CconvCentDed::getEBeforeAfterTypeToString()
+{
+	static CEnumToString< EBeforeAfterType >	aCEnumToString;
+	if (aCEnumToString.size() == 0)
+	{
+		aCEnumToString.add(EBeforeAfterType::BeforeAfterType_Unrelated, _T("BeforeAfterType_Unrelated"));
+		aCEnumToString.add(EBeforeAfterType::BeforeAfterType_ClassChange, _T("BeforeAfterType_ClassChange"));
+		aCEnumToString.add(EBeforeAfterType::BeforeAfterType_PropertyChange, _T("BeforeAfterType_PropertyChange"));
+		aCEnumToString.add(EBeforeAfterType::BeforeAfterType_PropertySame, _T("BeforeAfterType_PropertySame"));
+		aCEnumToString.add(EBeforeAfterType::BeforeAfterType_OutIn, _T("BeforeAfterType_OutIn"));
+		aCEnumToString.add(EBeforeAfterType::BeforeAfterType_Outer, _T("BeforeAfterType_Outer"));
+		aCEnumToString.add(EBeforeAfterType::BeforeAfterType_OperationNumberChange, _T("BeforeAfterType_OperationNumberChange"));
+	}
+	return aCEnumToString;
+}
+
+int CconvCentDed::OperationTableContent_To_OuPropertiesText(
+	const tstring strOperationNumber,
+	const list<OperationTableContent> sOperationTableContent,
+	OuPropertiesText::CNodeContainer* pCNodeContainer)
+{
+	int iRv = 0;
+	//OperationNumber
+	if (iRv >= 0)
+	{
+		pCNodeContainer->setValue(nameOTOperationNumber,strOperationNumber);
+
+	}
+	//OTRessya
+	for (auto itr = sOperationTableContent.begin(); itr != sOperationTableContent.end() && iRv >= 0; itr++)
+	{
+		Ou<CDirectory> pCDirectory = OuNew<CDirectory>(new CDirectory(nameOTRessya));
+		//OTHoukou
+		tstring strValue = getERessyahoukouToString().stringOf(
+			itr->aRessyaProperty.getRessyahoukou());
+		if (strValue.empty())
+		{
+			iRv = -11;	//	Ressyahoukou の値が不正です。
+		}
+		else
+		{
+			pCDirectory->getCNodeContainer()->setValue(nameOTHoukou,
+				strValue);
+		}
+
+		//OTRessyaIndex
+		pCDirectory->getCNodeContainer()->setValue(nameOTRessyaIndex,
+			stringOf(itr->aRessyaProperty.getRessyaIndex()));
+
+		//SihatsuEkiOrder
+		pCDirectory->getCNodeContainer()->setValue(nameSihatsuEkiOrder,
+			stringOf(itr->iSihatsuEkiOrder));
+
+		//BeforeType
+		strValue = getEBeforeAfterTypeToString().stringOf(
+			itr->eBeforeType);
+		if (strValue.empty())
+		{
+			iRv = -12;	//	eBeforeType の値が不正です。
+		}
+		else
+		{
+			pCDirectory->getCNodeContainer()->setValue(nameBeforeType,
+				strValue);
+		}
+
+		if (iRv >= 0 && itr->eBeforeType == EBeforeAfterType::BeforeAfterType_Outer)
+		{
+			//OuterShihatsuekiIndex
+			pCDirectory->getCNodeContainer()->setValue(nameOuterShihatsuekiIndex,
+				stringOf(itr->iOuterShihatsuekiIndex));
+
+			//OuterShihatsuJikoku
+			pCDirectory->getCNodeContainer()->setValue(nameOuterShihatsuJikoku,
+				g_CdDedJikokuConv.encode(itr->OuterShihatsuJikoku));
+
+			//ChakuJikoku
+			pCDirectory->getCNodeContainer()->setValue(nameChakuJikoku,
+				g_CdDedJikokuConv.encode(itr->ChakuJikoku));
+
+		}
+
+		//nameSyuuchakuEkiOrder
+		pCDirectory->getCNodeContainer()->setValue(nameSyuuchakuEkiOrder,
+			stringOf(itr->iSyuuchakuEkiOrder));
+
+		//AfterType
+		strValue = getEBeforeAfterTypeToString().stringOf(
+			itr->eAfterType);
+		if (strValue.empty())
+		{
+			iRv = -13;	//	eAfterType の値が不正です。
+		}
+		else
+		{
+			pCDirectory->getCNodeContainer()->setValue(nameAfterType,
+				strValue);
+		}
+
+		if (iRv >= 0 && itr->eAfterType == EBeforeAfterType::BeforeAfterType_Outer)
+		{
+			//OuterShuchakuekiIndex
+			pCDirectory->getCNodeContainer()->setValue(nameOuterShuchakuekiIndex,
+				stringOf(itr->iOuterShuchakuekiIndex));
+
+			//HatsuJikoku
+			pCDirectory->getCNodeContainer()->setValue(nameHatsuJikoku,
+				g_CdDedJikokuConv.encode(itr->HatsuJikoku));
+
+			//OuterShuchakuJikoku
+			pCDirectory->getCNodeContainer()->setValue(nameOuterShuchakuJikoku,
+				g_CdDedJikokuConv.encode(itr->OuterShuchakuJikoku));
+
+		}
+		if (iRv >= 0)
+		{
+			pCNodeContainer->insert(pCDirectory);
+		}
+	}
+	return iRv;
+}
+
 
 
 // ********************************
@@ -4387,6 +4544,7 @@ const TCHAR nameSubBackColorIndex[] = _T("SubBackColorIndex");
 const TCHAR nameBackPatternIndex[] = _T("BackPatternIndex");
 const TCHAR namePatternDiagramPreviewEnable[] = _T("PatternDiagramPreviewEnable");
 const TCHAR namePatternDiagramPreviewCycleSecond[] = _T("PatternDiagramPreviewCycleSecond");
+const TCHAR nameOperationTable[] = _T("OperationTable");
 
 int CconvCentDed::CentDedDia_To_OuPropertiesText( 
 			const CentDedDia* pCentDedDia ,
@@ -4463,6 +4621,30 @@ int CconvCentDed::CentDedDia_To_OuPropertiesText(
 				pCNodeContainer->insert( pCDirectory ) ;
 			}
 		}
+	}
+
+	//4.OperationTable
+	if (iRv >= 0 && iEnableOperation > 1)
+	{
+		for (auto itr = pCentDedDia->getcontOperationTableContent().begin(); itr != pCentDedDia->getcontOperationTableContent().end(); itr++)
+		{
+
+			Ou<CDirectory> pCDirectory = OuNew<CDirectory>(
+				new CDirectory(nameOperationTable));
+			int iResult = OperationTableContent_To_OuPropertiesText(
+				itr->first,
+				itr->second,
+				pCDirectory->getCNodeContainer());
+			if (iResult < 0)
+			{
+				iRv = iResult;
+			}
+			else
+			{
+				pCNodeContainer->insert(pCDirectory);
+			}
+		}
+
 	}
 	
 	return ( iRv ) ;
@@ -4702,7 +4884,8 @@ const TCHAR nameComment[] = _T("Comment") ;
 
 int CconvCentDed::CentDedRosen_To_OuPropertiesText( 
 			const CentDedRosen* pCentDedRosen , 
-			OuPropertiesText::CNodeContainer* pCNodeContainer ) 
+			OuPropertiesText::CNodeContainer* pCNodeContainer,
+			const bool bExcludeOperationTable)
 {
 	int iRv = 0 ;
 
@@ -4760,9 +4943,14 @@ int CconvCentDed::CentDedRosen_To_OuPropertiesText(
 	//4.Dia[]
 	if ( iRv >= 0 )
 	{
+		int iEnableOperation = 0;
+		if (!bExcludeOperationTable)
+		{
+			iEnableOperation = pCentDedRosen->getEnableOperation();
+		}
 		int iResult = CentDedDiaCont_To_OuPropertiesText(
 			pCentDedRosen->getCentDedDiaCont(),
-			pCentDedRosen->getEnableOperation() > 1,
+			iEnableOperation,
 			pCNodeContainer);
 		//	-	-12 ;	//	DiagramEkiatsukai の値が不正です。
 		if ( iResult < 0 )

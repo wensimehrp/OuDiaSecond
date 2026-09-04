@@ -130,7 +130,8 @@ const TCHAR nameYSize[] = _T("YSize");
 
 int CconvCDedRosenFileData::CDedRosenFileData_to_OuPropertiesText( 
 			const CDedRosenFileData* pCDedRosenFileData , 
-			OuPropertiesText::CNodeContainer* pCNodeContainer ) 
+			OuPropertiesText::CNodeContainer* pCNodeContainer ,
+			const bool bExcludeOperationTable)
 {
 	LogMsg( _T("CDedRosenFileData_to_CdConnectedString()") ) ;
 	int iRv = 0 ;
@@ -148,7 +149,8 @@ int CconvCDedRosenFileData::CDedRosenFileData_to_OuPropertiesText(
 		CconvCentDed aConv ;
 		int iResult = aConv.CentDedRosen_To_OuPropertiesText( 
 			pCDedRosenFileData->getCentDedRosen() ,
-			pCDirectory->getCNodeContainer() ) ;
+			pCDirectory->getCNodeContainer() ,
+			bExcludeOperationTable) ;
 		//	-	-22 ;	//	Ekijikokukeisiki の値が不正です。
 		//	-	-32 ;	//	Ekikibo の値が不正です。
 		//	-	-111 ;	//	Syubetsumei が指定されていません。
@@ -403,7 +405,7 @@ int CconvCDedRosenFileData::CDedRosenFileData_from_OuPropertiesText(
 					pCDirectory->getIfNodeContainerConst(),
 					pCOuErrorInfoContainer);
 			}
-			else if (iFileType == 5)//"OuDiaSecond.1.10","OuDiaSecond.1.11","OuDiaSecond.1.12","OuDiaSecond.1.13","OuDiaSecond.1.14","OuDiaSecond.1.15","OuDiaSecond.1.16","OuDiaSecond.1.17"
+			else if (iFileType == 5)//"OuDiaSecond.1.10","OuDiaSecond.1.11","OuDiaSecond.1.12","OuDiaSecond.1.13","OuDiaSecond.1.14","OuDiaSecond.1.15","OuDiaSecond.1.16","OuDiaSecond.1.17","OuDiaSecond.1.18"
 			{
 				CconvCentDed aCconvCentDed;
 				iResult = aCconvCentDed.CentDedRosen_From_OuPropertiesText(
@@ -551,7 +553,7 @@ int CconvCDedRosenFileData::isEncodeAbleFormat(
 		strFileType == getFileTypeS10() || strFileType == getFileTypeS11() ||
 		strFileType == getFileTypeS12() || strFileType == getFileTypeS13() || 
 		strFileType == getFileTypeS14() || strFileType == getFileTypeS15() ||
-		strFileType == getFileTypeS16()
+		strFileType == getFileTypeS16() || strFileType == getFileTypeS17()
 		)
 	{
 		iRv = 5;
@@ -742,7 +744,7 @@ int CconvCDedRosenFileData::isEncodeAbleFormat(
 		// 2:"OuDiaSecond.1.00"
 		// 3:"OuDiaSecond.1.05","OuDiaSecond.1.04","OuDiaSecond.1.03","OuDiaSecond.1.02","OuDiaSecond.1.01"
 		// 4:"OuDiaSecond.1.09","OuDiaSecond.1.08","OuDiaSecond.1.07","OuDiaSecond.1.06"
-		// 5:"OuDiaSecond.1.10","OuDiaSecond.1.11","OuDiaSecond.1.12","OuDiaSecond.1.13","OuDiaSecond.1.14,"OuDiaSecond.1.15","OuDiaSecond.1.16","OuDiaSecond.1.17"
+		// 5:"OuDiaSecond.1.10","OuDiaSecond.1.11","OuDiaSecond.1.12","OuDiaSecond.1.13","OuDiaSecond.1.14,"OuDiaSecond.1.15","OuDiaSecond.1.16","OuDiaSecond.1.17","OuDiaSecond.1.18"
 		if ( iResult < 0 )
 		{
 			//-	-1001 ;	//	FileType が正しくありません。

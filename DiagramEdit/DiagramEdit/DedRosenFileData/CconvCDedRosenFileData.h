@@ -136,11 +136,16 @@ public:
 	// ********************************
 	//	CdDedDispProp
 	// ********************************
+	/** 26.8.14filetype更新_by_d_mania
+	@return
+	PropertyTextアイテム "FileType" の値です。
+	*/
+	static tstring getFileType() { return _T("OuDiaSecond.1.18"); };
 	/** 26.3.10filetype更新_by_d_mania
 	@return
 	PropertyTextアイテム "FileType" の値です。
 	*/
-	static tstring getFileType() { return _T("OuDiaSecond.1.17"); };
+	static tstring getFileTypeS17() { return _T("OuDiaSecond.1.17"); };
 	/** 25.5.27filetype更新_by_d_mania
 	@return
 	PropertyTextアイテム "FileType" の値です。
@@ -260,9 +265,10 @@ public:
 				-	-152 ;	//	DiagramSenStyle の値が不正です。
 				-	-212 ;	//	DiagramEkiatsukai の値が不正です。
 	*/
-	int CDedRosenFileData_to_OuPropertiesText( 
-			const CDedRosenFileData* pCDedRosenFileData , 
-			OuPropertiesText::CNodeContainer* pCNodeContainer ) ;
+	int CDedRosenFileData_to_OuPropertiesText(
+		const CDedRosenFileData* pCDedRosenFileData,
+		OuPropertiesText::CNodeContainer* pCNodeContainer,
+		const bool bExcludeOperationTable = false);
 	
 	/**
 		  OuPropertiesText オブジェクトから、

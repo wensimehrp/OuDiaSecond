@@ -1,4 +1,15 @@
 OuDiaSecondで作者(diagram_mania)が追加・変更したソースコードの箇所を明記しておきます
+Ver2.06.24
+DiagramEdit\DedRosenFileData\CconvCDedRosenFileData.cpp
+	FileTypeをアップデート
+	CDedRosenFileData_to_OuPropertiesTextにbExcludeOperationTable(運用データ書き出しの有無)引数を追加
+	
+DiagramEdit\entDed\CconvCentDed.cpp
+	運用番号と運用表データの書き出しを追加
+
+DiagramEdit\CDiagramEditDoc.cpp
+	バックアップ保存時に、運用データの書き出しを無効にする処理を追加
+
 Ver2.06.23
 DiagramEdit\ViewOperationTable\OperationTableColSpec\CdOperationTableXColSpec.h
 	始発/終着駅番線欄を追加

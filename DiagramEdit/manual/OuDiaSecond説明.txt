@@ -1,5 +1,5 @@
 ﻿**************************************************************
-OuDiaSecond　追加機能マニュアル　Ver2.06.23
+OuDiaSecond　追加機能マニュアル　Ver2.06.24
 **************************************************************
 このソフトは、take-okm氏が作成・公開している、ダイヤグラム作成ソフト「OuDia」を、
 私、diagram_maniaが改造したソフトです。
@@ -17,9 +17,61 @@ twitter：@diagram_mania
 
 
 ＜ファイル形式について＞
-OuDiaSecondVer2.06.21は、OuDiaSecondVer2.06.20からファイル形式が変更になりました。
+OuDiaSecondVer2.06.24は、OuDiaSecondVer2.06.23からファイル形式が変更になりました。
 ファイルの頭に書き込まれるFiletypeは、
-FileType=OuDiaSecond.1.16　からFileType=OuDiaSecond.1.17　に変更です。
+FileType=OuDiaSecond.1.17　からFileType=OuDiaSecond.1.18　に変更です。
+
+<FileType1.17から1.18での変更点(運用番号と運用表データ出力)>
+FileType1.18で追加された項目は、運用機能が通常モード時のみ出力されます。
+○列車
+OperationNumber[0-]=[string];[string];…
+OperationNumberの後にある数字は、"方向別"の駅順が、0～(駅の数-1)で入ります。その順番の駅を発車した時点での運用番号を示します。
+列車の有効始発駅および運用番号が変わった駅に表示されます。
+運用番号が複数個の場合は、セミコロンで仕切られます。
+○運用表
+OperationTable.
+.
+上で囲まれた範囲に、一つの運用番号に対して、それを構成する列車の情報が入ります。
+OTOperationNumber=[string]
+一つのOperationTable.節に対応する運用番号を示します。
+
+OTRessya.
+.
+上で囲まれた範囲に、運用表内の一つの列車の情報が入ります。
+OTHoukou=[Kudari or Nobori]
+OTRessyaIndex=[0～下り/上り各ダイヤ内の列車本数-1]
+一つのOTRessya節に対応する列車方向と、通常時刻表内での順番を示します。順番は0始まりです。
+SihatsuEkiOrder=[0-]
+この運用番号が、この列車のどの駅から運行が始まっているかを示します。駅順は方向別です。
+基本は列車の始発駅と同値ですが、増結の場合は、列車の途中駅になることもあります。
+BeforeType=[BeforeAfterType(下記参照)]
+この運用番号がこの列車の始発側でどの作業なのか、あるいは前列車との関係はどうなのかを示しています。
+
+OuterShihatsuekiIndex=[0～SihatsuEkiOrder駅の路線外発着駅数-1]
+OuterShihatsuJikoku=[hhmmss]
+ChakuJikoku=[hhmmss]
+この運用番号のこの列車が始発側で路線外始発の場合の、路線外始発駅がどこか、路線外始発駅の発時刻、データ上の始発駅(SihatsuEkiOrder)の着時刻を示しています。
+
+SyuuchakuEkiOrder=[0-]
+この運用番号が、この列車のどの駅で運行が終わっているかを示します。駅順は方向別です。
+基本は列車の終着駅と同値ですが、解結の場合は、列車の途中駅になることもあります。
+AfterType=[BeforeAfterType(下記参照)]
+この運用番号がこの列車の終着側でどの作業なのか、あるいは次列車との関係はどうなのかを示しています。
+
+OuterShuchakuekiIndex=[0～SyuuchakuEkiOrder駅の路線外発着駅数-1]
+HatsuJikoku=[hhmmss]
+OuterShuchakuJikoku=[hhmmss]
+この運用番号のこの列車が終着側で路線外終着の場合の、路線外終着駅がどこか、データ上の終着駅(SyuuchakuEkiOrder)の発時刻、路線外終着駅の着時刻を示しています。
+
+BeforeAfterTypeの詳細
+BeforeAfterType_Unrelated　前後列車との接続タイプが「別列車」であること、もしくは接続相手がいないことを示します。
+BeforeAfterType_ClassChange　前後列車との接続タイプが「種別変更」であることを示します。
+BeforeAfterType_PropertyChange　前後列車との接続タイプが「列車情報変更」であることを示します。
+BeforeAfterType_PropertySame　前後列車との接続タイプが「同一列車」であることを示します。
+BeforeAfterType_OutIn　「出区」「入区」であることを示します。
+BeforeAfterType_Outer　「路線外始発」「路線外終着」であることを示します。
+BeforeAfterType_OperationNumberChange　「運用番号変更」であることを示します。
+運用表ビューでは、BeforeAfterType_PropertySameでつながっている二列車は一行にまとめて表示していますが、運用表データ出力においては別々での表示になっています。
 
 <FileType1.16から1.17での変更点>
 ○駅
@@ -1601,6 +1653,9 @@ JR東日本のホームページで公開されているデジタル時刻表、
 
 
 更新履歴
+Ver2.06.23→Ver2.06.24
+	運用機能が通常モードの時、oud2ファイルに列車の運用番号と運用表データを出力するように変更。
+	
 Ver2.06.22→Ver2.06.23
 	従来形式の運用表に着発番線欄を追加、[表示]→[着発番線名を表示する]で表示非表示を切り替えられるように変更。
 	運用表CSVエクスポートで従来形式で出力する場合、方向が異なる列車が一本化されている時に、異なった駅名が出力されている問題を修正。

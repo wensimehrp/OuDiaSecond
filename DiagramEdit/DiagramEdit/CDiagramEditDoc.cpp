@@ -3270,10 +3270,16 @@ BOOL CDiagramEditDoc::OnSaveDocument(LPCTSTR lpszPathName)
 	{
 		if (iRv >= 0)
 		{
+			bool bExcludeOperationTable = false;
+			if (_tcsicmp(_T("oud2backup"), aCdFilenameStr.Extension().c_str()) == 0)
+			{
+				bExcludeOperationTable = true;
+			}
 			CconvCDedRosenFileData aConv;
 			int iResult = aConv.CDedRosenFileData_to_OuPropertiesText(
 				&m_CDedRosenFileData,
-				&aCNodeContainer);
+				&aCNodeContainer,
+				bExcludeOperationTable);
 			//iResult = 
 			//		-	-22 ;	//	Ekijikokukeisiki の値が不正です。
 			//		-	-32 ;	//	Ekikibo の値が不正です。

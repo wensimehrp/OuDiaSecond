@@ -864,8 +864,36 @@ public:
 		vector<int>& iOuterTerminalCountCont,
 		const OuPropertiesText::IfNodeContainerConst* pCNodeContainer ,
 		OuPropertiesText::ErrorInfo::COuErrorInfoContainer* pCOuErrorInfoContainer ) ;
-	
-	
+
+	// ********************************
+	//	OperarionTable
+	// ********************************
+
+	/**
+	@return
+		EBeforeAfterType と文字列の間のコンバータオブジェクトを返します。
+	*/
+	static const CEnumToString< EBeforeAfterType >& getEBeforeAfterTypeToString();
+
+	/**
+		  OuPropertiesText オブジェクトに、
+		  CentDedRessyaCont の属性を追加します。
+		@param pCentDedRessyaCont [in]
+		  CentDedRessya を指定してください。
+		@param iEnableOperation[in]
+		  運用機能の有効無効を示します。
+		  この値がtrueの時のみ、運用番号を出力します。
+		@param pCNodeContainer [in,out]
+		  この関数は、このオブジェクトに、 CDedRosenFileData の内容を追加します。
+		@return
+		  成功したら 0 以上、エラーなら負の数です。
+			-	-12 ;	//	Ressyahoukou の値が不正です。
+	 */
+	int OperationTableContent_To_OuPropertiesText(
+		const tstring strOperationNumber,
+		const list<OperationTableContent> sOperationTableContent,
+		OuPropertiesText::CNodeContainer* pCNodeContainer);
+
 	// ********************************
 	//	CentDedDia
 	// ********************************
@@ -926,7 +954,7 @@ public:
 		  CentDedDiaCont を指定してください。
 		@param iEnableOperation[in]
 		  運用機能の有効無効を示します。
-		  この値がtrueの時のみ、運用番号を出力します。
+		  この値が2(通常モード)の時のみ、運用番号を出力し、運用表データを出力します。
 		@param pCNodeContainer [in,out]
 		  この関数は、このオブジェクトに、 CDedRosenFileData の内容を追加します。
 		@return
@@ -987,7 +1015,8 @@ public:
 	 */
 	int CentDedRosen_To_OuPropertiesText( 
 			const CentDedRosen* pCentDedRosen , 
-			OuPropertiesText::CNodeContainer* pCNodeContainer ) ;
+			OuPropertiesText::CNodeContainer* pCNodeContainer ,
+			const bool bExcludeOperationTable = false) ;
 	
 	/**
 		  OuPropertiesText オブジェクトから、

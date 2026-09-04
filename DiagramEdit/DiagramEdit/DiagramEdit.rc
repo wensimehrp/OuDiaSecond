@@ -2530,8 +2530,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 2,6,23,0
- PRODUCTVERSION 2,6,23,0
+ FILEVERSION 2,6,24,0
+ PRODUCTVERSION 2,6,24,0
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -2548,12 +2548,12 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "diagram_mania"
             VALUE "FileDescription", "OuDiaSecondV2"
-            VALUE "FileVersion", "2.6.23.0"
+            VALUE "FileVersion", "2.6.24.0"
             VALUE "InternalName", "OuDiaSecondV2"
             VALUE "LegalCopyright", "Copyright (C) 2017-2026 diagram_mania"
             VALUE "OriginalFilename", "OuDiaSecondV2"
             VALUE "ProductName", "OuDiaSecondV2"
-            VALUE "ProductVersion", "2.6.23.0"
+            VALUE "ProductVersion", "2.6.24.0"
         END
     END
     BLOCK "VarFileInfo"
