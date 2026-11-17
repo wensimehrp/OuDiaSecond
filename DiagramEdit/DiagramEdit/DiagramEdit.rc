@@ -1969,6 +1969,13 @@ BEGIN
     CONTROL         "通過(&P)",IDC_RADIO_Ekiatsukai3,"Button",BS_AUTORADIOBUTTON,12,42,38,10
     LTEXT           "着時刻(&A)：",IDC_STATIC,80,24,35,8
     EDITTEXT        IDC_EDIT_Chakujikoku,115,22,46,13,ES_AUTOHSCROLL
+    LTEXT           "発時刻(&D)：",IDC_STATIC,80,47,35,8
+    EDITTEXT        IDC_EDIT_Hatsujikoku,115,46,46,13,ES_AUTOHSCROLL
+    LTEXT           "発着番線(&T)：",IDC_STATIC,11,68,44,8
+    COMBOBOX        IDC_COMBO_RessyaTrack,51,67,101,81,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "時刻の繰上げ・繰下げ(&M)",IDC_CHECK_MODIFYHATSUJIKOKU,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,87,91,10
+    DEFPUSHBUTTON   "OK",IDOK,154,83,36,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,201,83,36,14
     PUSHBUTTON      "-",IDC_BUTTON_DecChakujikokuAnySec1,169,17,14,11
     PUSHBUTTON      "+",IDC_BUTTON_IncChakujikokuAnySec1,169,29,14,11
     PUSHBUTTON      "-",IDC_BUTTON_DecChakujikokuAnySec2,187,17,14,11
@@ -1977,8 +1984,6 @@ BEGIN
     PUSHBUTTON      "+",IDC_BUTTON_IncChakujikoku1Min,205,29,14,11
     PUSHBUTTON      "-",IDC_BUTTON_DecChakujikoku5Min,223,17,14,11
     PUSHBUTTON      "+",IDC_BUTTON_IncChakujikoku5Min,223,29,14,11
-    LTEXT           "発時刻(&D)：",IDC_STATIC,80,47,35,8
-    EDITTEXT        IDC_EDIT_Hatsujikoku,115,46,46,13,ES_AUTOHSCROLL
     PUSHBUTTON      "-",IDC_BUTTON_DecHatsujikokuAnySec1,169,42,14,11
     PUSHBUTTON      "+",IDC_BUTTON_IncHatsujikokuAnySec1,169,54,14,11
     PUSHBUTTON      "-",IDC_BUTTON_DecHatsujikokuAnySec2,187,42,14,11
@@ -1987,11 +1992,6 @@ BEGIN
     PUSHBUTTON      "+",IDC_BUTTON_IncHatsujikoku1Min,205,54,14,11
     PUSHBUTTON      "-",IDC_BUTTON_DecHatsujikoku5Min,223,42,14,11
     PUSHBUTTON      "+",IDC_BUTTON_IncHatsujikoku5Min,223,54,14,11
-    LTEXT           "発着番線(&T)：",IDC_STATIC,11,68,44,8
-    COMBOBOX        IDC_COMBO_RessyaTrack,51,67,101,81,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    CONTROL         "時刻の繰上げ・繰下げ(&M)",IDC_CHECK_MODIFYHATSUJIKOKU,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,87,91,10
-    DEFPUSHBUTTON   "OK",IDOK,154,83,36,14
-    PUSHBUTTON      "キャンセル",IDCANCEL,201,83,36,14
     LTEXT           "着時刻の入力が正しくありません",IDC_ERROR_ChakujikokuFormat,41,7,25,8,NOT WS_VISIBLE
     LTEXT           "発時刻の入力が正しくありません",IDC_ERROR_HatsujikokuFormat,64,7,24,8,NOT WS_VISIBLE
     CTEXT           "5秒",IDC_STATIC_AnySec1,166,7,20,8
@@ -2194,12 +2194,12 @@ STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "番線のプロパティ"
 FONT 9, "Meiryo UI", 400, 0, 0x80
 BEGIN
-    DEFPUSHBUTTON   "OK",IDOK,58,44,50,14
-    PUSHBUTTON      "キャンセル",IDCANCEL,114,44,50,14
     LTEXT           "番線名(&N):",IDC_STATIC,10,7,38,8
     EDITTEXT        IDC_EDIT_TrackName,47,5,103,13,ES_AUTOHSCROLL
     LTEXT           "番線略称(&R):",IDC_STATIC,9,25,46,8
     EDITTEXT        IDC_EDIT_TrackRyakusyou,55,23,46,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,58,44,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,114,44,50,14
     LTEXT           "番線名が指定されていません",IDC_ERROR_TrackNameEmpty,124,18,40,10,NOT WS_VISIBLE
     LTEXT           "番線略称が指定されていません",IDC_ERROR_TrackRyakusyouEmpty,131,32,33,11,NOT WS_VISIBLE
     LTEXT           "略称が長すぎます。\n半角で6文字以下にしてください。",IDC_ERROR_TrackRyakusyouLength,3,47,30,11,NOT WS_VISIBLE
@@ -2530,8 +2530,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 2,6,24,0
- PRODUCTVERSION 2,6,24,0
+ FILEVERSION 2,6,25,0
+ PRODUCTVERSION 2,6,25,0
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -2548,12 +2548,12 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "diagram_mania"
             VALUE "FileDescription", "OuDiaSecondV2"
-            VALUE "FileVersion", "2.6.24.0"
+            VALUE "FileVersion", "2.6.25.0"
             VALUE "InternalName", "OuDiaSecondV2"
             VALUE "LegalCopyright", "Copyright (C) 2017-2026 diagram_mania"
             VALUE "OriginalFilename", "OuDiaSecondV2"
             VALUE "ProductName", "OuDiaSecondV2"
-            VALUE "ProductVersion", "2.6.24.0"
+            VALUE "ProductVersion", "2.6.25.0"
         END
     END
     BLOCK "VarFileInfo"

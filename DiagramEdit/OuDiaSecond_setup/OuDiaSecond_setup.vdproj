@@ -27,26 +27,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_4CB37B0440D3696439796649D84314A7"
-        "OwnerKey" = "8:_02D3F9DCDA854497A2DC227BFC8DC521"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_5A1F78A98650454CB66A1BF68C63945F"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_69D5F376A4545333BEEDBFF95FF8AF4A"
-        "OwnerKey" = "8:_02D3F9DCDA854497A2DC227BFC8DC521"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_6FE8D1A32B4AAFBE3950B3A6127D3CFE"
-        "OwnerKey" = "8:_02D3F9DCDA854497A2DC227BFC8DC521"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -63,18 +45,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_7D65DDD093D7CA4063CF862FA01F3C54"
-        "OwnerKey" = "8:_02D3F9DCDA854497A2DC227BFC8DC521"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_B333A27C8EA6AE9A9FBE31AD17175DF9"
-        "OwnerKey" = "8:_02D3F9DCDA854497A2DC227BFC8DC521"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_B60AC44F14664FD7B4E58EAFE4FE41DA"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -87,20 +57,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_C34284B565B0AB1D16EC684710A68D4F"
-        "OwnerKey" = "8:_02D3F9DCDA854497A2DC227BFC8DC521"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_C92C2DC43A7B4E3F855855FA8E35C53D"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_F7C9DCD92CB1663A5FA32C1376BCB99D"
-        "OwnerKey" = "8:_02D3F9DCDA854497A2DC227BFC8DC521"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -143,7 +101,7 @@
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:Release\\OuDiaSecond_2.06.24.msi"
+        "OutputFilename" = "8:Release\\OuDiaSecond_2.06.25.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -215,26 +173,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4CB37B0440D3696439796649D84314A7"
-            {
-            "SourcePath" = "8:VCOMP140.DLL"
-            "TargetName" = "8:VCOMP140.DLL"
-            "Tag" = "8:"
-            "Folder" = "8:_4C689126850244D483FEE7123C86E920"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5A1F78A98650454CB66A1BF68C63945F"
             {
             "SourcePath" = "8:..\\manual\\oudia.chm"
@@ -253,46 +191,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_69D5F376A4545333BEEDBFF95FF8AF4A"
-            {
-            "SourcePath" = "8:gdiplus.dll"
-            "TargetName" = "8:gdiplus.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_4C689126850244D483FEE7123C86E920"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6FE8D1A32B4AAFBE3950B3A6127D3CFE"
-            {
-            "SourcePath" = "8:MSIMG32.dll"
-            "TargetName" = "8:MSIMG32.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_4C689126850244D483FEE7123C86E920"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_708358E9A8C341B1BF586B161008F2F2"
@@ -335,46 +233,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7D65DDD093D7CA4063CF862FA01F3C54"
-            {
-            "SourcePath" = "8:VERSION.dll"
-            "TargetName" = "8:VERSION.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_4C689126850244D483FEE7123C86E920"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B333A27C8EA6AE9A9FBE31AD17175DF9"
-            {
-            "SourcePath" = "8:IMM32.dll"
-            "TargetName" = "8:IMM32.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_4C689126850244D483FEE7123C86E920"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B60AC44F14664FD7B4E58EAFE4FE41DA"
             {
             "SourcePath" = "8:icon\\folderopen.ico"
@@ -415,26 +273,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C34284B565B0AB1D16EC684710A68D4F"
-            {
-            "SourcePath" = "8:OLEACC.dll"
-            "TargetName" = "8:OLEACC.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_4C689126850244D483FEE7123C86E920"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C92C2DC43A7B4E3F855855FA8E35C53D"
             {
             "SourcePath" = "8:..\\manual\\sample.oud2"
@@ -453,26 +291,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F7C9DCD92CB1663A5FA32C1376BCB99D"
-            {
-            "SourcePath" = "8:UxTheme.dll"
-            "TargetName" = "8:UxTheme.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_4C689126850244D483FEE7123C86E920"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:4"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
         }
@@ -575,21 +393,21 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:OuDiaSecond Ver2.06.24"
-        "ProductCode" = "8:{23244B6D-055B-41A2-B9AA-5DA15B247ACE}"
-        "PackageCode" = "8:{D2682FFE-0522-48D0-87B3-E094200C0CEA}"
+        "ProductName" = "8:OuDiaSecond Ver2.06.25"
+        "ProductCode" = "8:{FC1182BC-FFF6-4771-8645-E40AE9D84A17}"
+        "PackageCode" = "8:{0D35DB4D-B8ED-4F8B-BAA6-DAC02FBEAD2A}"
         "UpgradeCode" = "8:{E0F89143-4366-4041-9CCB-2C0AF3216D24}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:2.06.24"
+        "ProductVersion" = "8:2.06.25"
         "Manufacturer" = "8:diagram_mania"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:http://oudiasecond.seesaa.net/"
-        "Title" = "8:OuDiaSecond Ver2.06.24"
-        "Subject" = "8:OuDiaSecond Ver2.06.24"
+        "Title" = "8:OuDiaSecond Ver2.06.25"
+        "Subject" = "8:OuDiaSecond Ver2.06.25"
         "ARPCONTACT" = "8:diagram_mania"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
